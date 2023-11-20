@@ -12,11 +12,10 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
-    - name: Install dependencies
+    - name: Pytest CI
       run: |
         python -m pip install --upgrade pip
         cd huaweicloud-sdk-core || exit 1
         pip install -r requirements.txt
         pip install -r test-requirements.txt
-    - name: Pytest CI
-      run: pytest -s -v tests/
+        pytest -s -v tests/
