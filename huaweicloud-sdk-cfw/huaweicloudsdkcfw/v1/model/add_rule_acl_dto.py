@@ -35,7 +35,7 @@ class AddRuleAclDto:
 
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
-        :param type: 规则type，0：互联网规则，1:vpc规则，2：nat规则
+        :param type: 规则type，0：互联网规则，1：vpc规则，2：nat规则
         :type type: int
         :param rules: rules
         :type rules: list[:class:`huaweicloudsdkcfw.v1.AddRuleAclDtoRules`]
@@ -78,7 +78,7 @@ class AddRuleAclDto:
     def type(self):
         """Gets the type of this AddRuleAclDto.
 
-        规则type，0：互联网规则，1:vpc规则，2：nat规则
+        规则type，0：互联网规则，1：vpc规则，2：nat规则
 
         :return: The type of this AddRuleAclDto.
         :rtype: int
@@ -89,7 +89,7 @@ class AddRuleAclDto:
     def type(self, type):
         """Sets the type of this AddRuleAclDto.
 
-        规则type，0：互联网规则，1:vpc规则，2：nat规则
+        规则type，0：互联网规则，1：vpc规则，2：nat规则
 
         :param type: The type of this AddRuleAclDto.
         :type type: int

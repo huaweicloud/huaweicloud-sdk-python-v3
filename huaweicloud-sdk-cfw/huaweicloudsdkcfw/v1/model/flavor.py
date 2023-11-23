@@ -47,7 +47,7 @@ class Flavor:
 
         The model defined in huaweicloud sdk
 
-        :param version: 防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版
+        :param version: 防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
         :type version: int
         :param eip_count: eip数量
         :type eip_count: int
@@ -108,7 +108,7 @@ class Flavor:
     def version(self):
         """Gets the version of this Flavor.
 
-        防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版
+        防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
 
         :return: The version of this Flavor.
         :rtype: int
@@ -119,7 +119,7 @@ class Flavor:
     def version(self, version):
         """Sets the version of this Flavor.
 
-        防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版
+        防火墙版本，0：标准版，1：专业版，2：铂金版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
 
         :param version: The version of this Flavor.
         :type version: int

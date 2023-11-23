@@ -95,7 +95,7 @@ class RuleAclListResponseDTODataRecords:
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
         :param service: 
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
-        :param type: 规则type，0：互联网规则，1：vpc规则，2nat规则
+        :param type: 规则type，0：互联网规则，1：vpc规则，2：nat规则
         :type type: int
         :param tag: 
         :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
@@ -500,7 +500,7 @@ class RuleAclListResponseDTODataRecords:
     def type(self):
         """Gets the type of this RuleAclListResponseDTODataRecords.
 
-        规则type，0：互联网规则，1：vpc规则，2nat规则
+        规则type，0：互联网规则，1：vpc规则，2：nat规则
 
         :return: The type of this RuleAclListResponseDTODataRecords.
         :rtype: int
@@ -511,7 +511,7 @@ class RuleAclListResponseDTODataRecords:
     def type(self, type):
         """Sets the type of this RuleAclListResponseDTODataRecords.
 
-        规则type，0：互联网规则，1：vpc规则，2nat规则
+        规则type，0：互联网规则，1：vpc规则，2：nat规则
 
         :param type: The type of this RuleAclListResponseDTODataRecords.
         :type type: int

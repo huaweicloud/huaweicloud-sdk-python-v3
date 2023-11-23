@@ -1,3 +1,32 @@
+# 3.1.69 2023-11-23
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - Support the APIs `ListLogConfig`, `UpdateLogConfig`, `AddLogConfig`, `CreateEastWestFirewall`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlowLogs**
+    - changes of response param
+      - `* data.records.start_time: int32 -> int64`
+      - `* data.records.end_time: int32 -> int64`
+      - `* data.records.src_port: string -> int32`
+      - `* data.records.dst_port: string -> int32`
+  - **ListAccessControlLogs**
+    - changes of response param
+      - `* data.records.hit_time: int32 -> int64`
+      - `* data.records.src_port: string -> int32`
+      - `* data.records.dst_port: string -> int32`
+  - **ChangeIpsSwitchStatus**
+    - changes of request param
+      - `+ X-Language`
+  - **ListAttackLogs**
+    - changes of response param
+      - `* data.records.event_time: string -> int64`
+      - `* data.records.attack_rule_id: int32 -> string`
+      - `* data.records.packet: object<Packet> -> string`
+
 # 3.1.68 2023-11-23
 
 ### HuaweiCloud SDK AOM

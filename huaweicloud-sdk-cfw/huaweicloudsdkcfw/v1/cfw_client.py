@@ -242,6 +242,7 @@ class CfwClient(Client):
     def add_domain_set(self, request):
         """添加域名组
 
+        添加域名组
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -349,6 +350,75 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_log_config(self, request):
+        """创建日志配置
+
+        创建日志配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddLogConfig
+        :type request: :class:`huaweicloudsdkcfw.v1.AddLogConfigRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.AddLogConfigResponse`
+        """
+        http_info = self._add_log_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_log_config_invoker(self, request):
+        http_info = self._add_log_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_log_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cfw/logs/configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddLogConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -519,6 +589,7 @@ class CfwClient(Client):
     def batch_delete_address_items(self, request):
         """批量删除地址组成员
 
+        批量删除地址组成员
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -587,6 +658,7 @@ class CfwClient(Client):
     def batch_delete_service_items(self, request):
         """批量删除服务组成员信息
 
+        批量删除服务组成员信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -677,6 +749,75 @@ class CfwClient(Client):
             "resource_path": "/v1/{project_id}/firewall/east-west/protect",
             "request_type": request.__class__.__name__,
             "response_type": "ChangeEastWestFirewallStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_east_west_firewall(self, request):
+        """创建东西向防火墙
+
+        创建东西向防火墙
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateEastWestFirewall
+        :type request: :class:`huaweicloudsdkcfw.v1.CreateEastWestFirewallRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CreateEastWestFirewallResponse`
+        """
+        http_info = self._create_east_west_firewall_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_east_west_firewall_invoker(self, request):
+        http_info = self._create_east_west_firewall_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_east_west_firewall_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/firewall/east-west",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEastWestFirewallResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -931,6 +1072,7 @@ class CfwClient(Client):
     def delete_domain_set(self, request):
         """删除域名组
 
+        删除域名组
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2327,6 +2469,73 @@ class CfwClient(Client):
 
         return http_info
 
+    def list_log_config(self, request):
+        """获取日志配置
+
+        获取日志配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLogConfig
+        :type request: :class:`huaweicloudsdkcfw.v1.ListLogConfigRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListLogConfigResponse`
+        """
+        http_info = self._list_log_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_log_config_invoker(self, request):
+        http_info = self._list_log_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_log_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_protected_vpcs(self, request):
         """查询防护VPC数
 
@@ -2829,6 +3038,7 @@ class CfwClient(Client):
     def update_domain_set(self, request):
         """更新域名组
 
+        更新域名组
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2867,6 +3077,75 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_log_config(self, request):
+        """更新日志配置
+
+        更新日志配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLogConfig
+        :type request: :class:`huaweicloudsdkcfw.v1.UpdateLogConfigRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.UpdateLogConfigResponse`
+        """
+        http_info = self._update_log_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_log_config_invoker(self, request):
+        http_info = self._update_log_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_log_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cfw/logs/configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -3108,6 +3387,7 @@ class CfwClient(Client):
     def batch_update_acl_rule_actions(self, request):
         """批量更新规则动作
 
+        批量更新规则动作
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3478,6 +3758,7 @@ class CfwClient(Client):
     def list_rule_acl_tags(self, request):
         """查询规则标签
 
+        查询规则标签
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3690,7 +3971,7 @@ class CfwClient(Client):
     def change_eip_status(self, request):
         """弹性IP开启关闭
 
-        开启关闭EIP,客户购买EIP后首次开启EIP防护前需使用ListEips同步EIP资产，sync字段设置为1。
+        开启关闭EIP，客户购买EIP后首次开启EIP防护前需使用ListEips同步EIP资产，sync字段设置为1。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4025,6 +4306,8 @@ class CfwClient(Client):
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
