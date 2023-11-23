@@ -430,6 +430,207 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
+    def create_plugin_draft_async(self, request):
+        """创建插件草稿版本
+
+        创建插件草稿版本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePluginDraft
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePluginDraftRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePluginDraftResponse`
+        """
+        http_info = self._create_plugin_draft_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_plugin_draft_async_invoker(self, request):
+        http_info = self._create_plugin_draft_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_plugin_draft_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/agent-plugin/create-draft",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePluginDraftResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_plugin_version_async(self, request):
+        """创建插件版本
+
+        创建插件版本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePluginVersion
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePluginVersionRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePluginVersionResponse`
+        """
+        http_info = self._create_plugin_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_plugin_version_async_invoker(self, request):
+        http_info = self._create_plugin_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_plugin_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/agent-plugin/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePluginVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_publisher_async(self, request):
+        """创建发布商
+
+        创建发布商
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePublisher
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePublisherRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePublisherResponse`
+        """
+        http_info = self._create_publisher_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_publisher_async_invoker(self, request):
+        http_info = self._create_publisher_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_publisher_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/publisher/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePublisherResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_rule_async(self, request):
         """创建规则
 
@@ -2321,6 +2522,73 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
+    def publish_plugin_draft_async(self, request):
+        """发布插件草稿
+
+        发布插件草稿
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PublishPluginDraft
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.PublishPluginDraftRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PublishPluginDraftResponse`
+        """
+        http_info = self._publish_plugin_draft_http_info(request)
+        return self._call_api(**http_info)
+
+    def publish_plugin_draft_async_invoker(self, request):
+        http_info = self._publish_plugin_draft_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_plugin_draft_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/agent-plugin/publish-draft",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishPluginDraftResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def remove_pipeline_async(self, request):
         """删除流水线
 
@@ -3841,6 +4109,140 @@ class CodeArtsPipelineAsyncClient(Client):
         path_params = {}
         if 'project_id' in local_var_params:
             path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_plugin_base_info_async(self, request):
+        """更新插件基本信息
+
+        更新插件基本信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePluginBaseInfo
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.UpdatePluginBaseInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UpdatePluginBaseInfoResponse`
+        """
+        http_info = self._update_plugin_base_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_plugin_base_info_async_invoker(self, request):
+        http_info = self._update_plugin_base_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_plugin_base_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/agent-plugin/update-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePluginBaseInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_plugin_draft_async(self, request):
+        """更新插件草稿
+
+        更新插件草稿
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePluginDraft
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.UpdatePluginDraftRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UpdatePluginDraftResponse`
+        """
+        http_info = self._update_plugin_draft_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_plugin_draft_async_invoker(self, request):
+        http_info = self._update_plugin_draft_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_plugin_draft_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/agent-plugin/edit-draft",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePluginDraftResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
 
         query_params = []
 

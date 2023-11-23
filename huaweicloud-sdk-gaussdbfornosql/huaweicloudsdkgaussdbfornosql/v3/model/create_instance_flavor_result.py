@@ -35,7 +35,7 @@ class CreateInstanceFlavorResult:
 
         The model defined in huaweicloud sdk
 
-        :param num: 节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
+        :param num: 节点数量。   - GeminiDB Cassandra实例的节点数量可取3~12。   - GeminiDB Mongo4.0版本副本集实例的节点数量可取3。   - GeminiDB Influx实例的节点数量可取3~16。
         :type num: str
         :param storage: 磁盘类型。 取值为“ULTRAHIGH”，表示SSD盘。
         :type storage: str
@@ -66,7 +66,7 @@ class CreateInstanceFlavorResult:
     def num(self):
         """Gets the num of this CreateInstanceFlavorResult.
 
-        节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
+        节点数量。   - GeminiDB Cassandra实例的节点数量可取3~12。   - GeminiDB Mongo4.0版本副本集实例的节点数量可取3。   - GeminiDB Influx实例的节点数量可取3~16。
 
         :return: The num of this CreateInstanceFlavorResult.
         :rtype: str
@@ -77,7 +77,7 @@ class CreateInstanceFlavorResult:
     def num(self, num):
         """Sets the num of this CreateInstanceFlavorResult.
 
-        节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
+        节点数量。   - GeminiDB Cassandra实例的节点数量可取3~12。   - GeminiDB Mongo4.0版本副本集实例的节点数量可取3。   - GeminiDB Influx实例的节点数量可取3~16。
 
         :param num: The num of this CreateInstanceFlavorResult.
         :type num: str

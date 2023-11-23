@@ -196,6 +196,9 @@ from huaweicloudsdkdcs.v2.model.list_tags_of_tenant_response import ListTagsOfTe
 from huaweicloudsdkdcs.v2.model.login_web_cli_body import LoginWebCliBody
 from huaweicloudsdkdcs.v2.model.login_web_cli_request import LoginWebCliRequest
 from huaweicloudsdkdcs.v2.model.login_web_cli_response import LoginWebCliResponse
+from huaweicloudsdkdcs.v2.model.logoff_web_cli_request import LogoffWebCliRequest
+from huaweicloudsdkdcs.v2.model.logoff_web_cli_response import LogoffWebCliResponse
+from huaweicloudsdkdcs.v2.model.logout_web_cli_body import LogoutWebCliBody
 from huaweicloudsdkdcs.v2.model.maintain_windows_entity import MaintainWindowsEntity
 from huaweicloudsdkdcs.v2.model.migration_log import MigrationLog
 from huaweicloudsdkdcs.v2.model.migration_task_list import MigrationTaskList

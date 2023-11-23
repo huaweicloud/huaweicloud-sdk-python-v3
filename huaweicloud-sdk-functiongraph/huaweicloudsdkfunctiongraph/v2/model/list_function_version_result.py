@@ -46,6 +46,8 @@ class ListFunctionVersionResult:
         'strategy_config': 'StrategyConfig',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
+        'pre_stop_handler': 'str',
+        'pre_stop_timeout': 'int',
         'long_time': 'bool',
         'function_async_config': 'FunctionAsyncConfig',
         'type': 'str',
@@ -88,6 +90,8 @@ class ListFunctionVersionResult:
         'strategy_config': 'strategy_config',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
+        'pre_stop_handler': 'pre_stop_handler',
+        'pre_stop_timeout': 'pre_stop_timeout',
         'long_time': 'long_time',
         'function_async_config': 'function_async_config',
         'type': 'type',
@@ -100,7 +104,7 @@ class ListFunctionVersionResult:
         'reserved_instance_idle_mode': 'reserved_instance_idle_mode'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, last_modified=None, func_vpc_id=None, concurrency=None, concurrent_num=None, strategy_config=None, initializer_handler=None, initializer_timeout=None, long_time=None, function_async_config=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, enterprise_project_id=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, last_modified=None, func_vpc_id=None, concurrency=None, concurrent_num=None, strategy_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, long_time=None, function_async_config=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, enterprise_project_id=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None):
         """ListFunctionVersionResult
 
         The model defined in huaweicloud sdk
@@ -125,7 +129,7 @@ class ListFunctionVersionResult:
         :type handler: str
         :param memory_size: 函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
         :type memory_size: int
-        :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
+        :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
         :type cpu: int
         :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
         :type code_type: str
@@ -163,6 +167,10 @@ class ListFunctionVersionResult:
         :type initializer_handler: str
         :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
         :type initializer_timeout: int
+        :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+        :type pre_stop_handler: str
+        :param pre_stop_timeout: 初始化超时时间，超时函数将被强行停止，范围1～90秒。
+        :type pre_stop_timeout: int
         :param long_time: 是否是支持长时间运行
         :type long_time: bool
         :param function_async_config: 
@@ -216,6 +224,8 @@ class ListFunctionVersionResult:
         self._strategy_config = None
         self._initializer_handler = None
         self._initializer_timeout = None
+        self._pre_stop_handler = None
+        self._pre_stop_timeout = None
         self._long_time = None
         self._function_async_config = None
         self._type = None
@@ -269,6 +279,10 @@ class ListFunctionVersionResult:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
             self.initializer_timeout = initializer_timeout
+        if pre_stop_handler is not None:
+            self.pre_stop_handler = pre_stop_handler
+        if pre_stop_timeout is not None:
+            self.pre_stop_timeout = pre_stop_timeout
         if long_time is not None:
             self.long_time = long_time
         if function_async_config is not None:
@@ -514,7 +528,7 @@ class ListFunctionVersionResult:
     def cpu(self):
         """Gets the cpu of this ListFunctionVersionResult.
 
-        函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
+        函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
 
         :return: The cpu of this ListFunctionVersionResult.
         :rtype: int
@@ -525,7 +539,7 @@ class ListFunctionVersionResult:
     def cpu(self, cpu):
         """Sets the cpu of this ListFunctionVersionResult.
 
-        函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
+        函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
 
         :param cpu: The cpu of this ListFunctionVersionResult.
         :type cpu: int
@@ -923,6 +937,50 @@ class ListFunctionVersionResult:
         :type initializer_timeout: int
         """
         self._initializer_timeout = initializer_timeout
+
+    @property
+    def pre_stop_handler(self):
+        """Gets the pre_stop_handler of this ListFunctionVersionResult.
+
+        函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+
+        :return: The pre_stop_handler of this ListFunctionVersionResult.
+        :rtype: str
+        """
+        return self._pre_stop_handler
+
+    @pre_stop_handler.setter
+    def pre_stop_handler(self, pre_stop_handler):
+        """Sets the pre_stop_handler of this ListFunctionVersionResult.
+
+        函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+
+        :param pre_stop_handler: The pre_stop_handler of this ListFunctionVersionResult.
+        :type pre_stop_handler: str
+        """
+        self._pre_stop_handler = pre_stop_handler
+
+    @property
+    def pre_stop_timeout(self):
+        """Gets the pre_stop_timeout of this ListFunctionVersionResult.
+
+        初始化超时时间，超时函数将被强行停止，范围1～90秒。
+
+        :return: The pre_stop_timeout of this ListFunctionVersionResult.
+        :rtype: int
+        """
+        return self._pre_stop_timeout
+
+    @pre_stop_timeout.setter
+    def pre_stop_timeout(self, pre_stop_timeout):
+        """Sets the pre_stop_timeout of this ListFunctionVersionResult.
+
+        初始化超时时间，超时函数将被强行停止，范围1～90秒。
+
+        :param pre_stop_timeout: The pre_stop_timeout of this ListFunctionVersionResult.
+        :type pre_stop_timeout: int
+        """
+        self._pre_stop_timeout = pre_stop_timeout
 
     @property
     def long_time(self):

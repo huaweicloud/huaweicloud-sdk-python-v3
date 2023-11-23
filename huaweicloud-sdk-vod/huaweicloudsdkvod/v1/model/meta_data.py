@@ -20,6 +20,7 @@ class MetaData:
         'pack_type': 'str',
         'codec': 'str',
         'duration': 'int',
+        'duration_ms': 'int',
         'video_size': 'int',
         'width': 'int',
         'hight': 'int',
@@ -33,6 +34,7 @@ class MetaData:
         'pack_type': 'pack_type',
         'codec': 'codec',
         'duration': 'duration',
+        'duration_ms': 'duration_ms',
         'video_size': 'video_size',
         'width': 'width',
         'hight': 'hight',
@@ -42,7 +44,7 @@ class MetaData:
         'audio_channels': 'audio_channels'
     }
 
-    def __init__(self, pack_type=None, codec=None, duration=None, video_size=None, width=None, hight=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
+    def __init__(self, pack_type=None, codec=None, duration=None, duration_ms=None, video_size=None, width=None, hight=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
         """MetaData
 
         The model defined in huaweicloud sdk
@@ -51,8 +53,10 @@ class MetaData:
         :type pack_type: str
         :param codec: 视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
         :type codec: str
-        :param duration: 视频时长。  若视频的原时长为非整数，则该字段值为原时长的向上取整。
+        :param duration: 视频时长。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
         :type duration: int
+        :param duration_ms: 视频时长，单位毫秒。
+        :type duration_ms: int
         :param video_size: 视频文件大小。  单位：字节。
         :type video_size: int
         :param width: 视频宽度（单位：像素）。 - 编码为H.264的取值范围：[32,3840]之间2的倍数。 - 编码为H.265的取值范围：[320,3840]之间4的倍数。
@@ -74,6 +78,7 @@ class MetaData:
         self._pack_type = None
         self._codec = None
         self._duration = None
+        self._duration_ms = None
         self._video_size = None
         self._width = None
         self._hight = None
@@ -89,6 +94,8 @@ class MetaData:
             self.codec = codec
         if duration is not None:
             self.duration = duration
+        if duration_ms is not None:
+            self.duration_ms = duration_ms
         if video_size is not None:
             self.video_size = video_size
         if width is not None:
@@ -152,7 +159,7 @@ class MetaData:
     def duration(self):
         """Gets the duration of this MetaData.
 
-        视频时长。  若视频的原时长为非整数，则该字段值为原时长的向上取整。
+        视频时长。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
 
         :return: The duration of this MetaData.
         :rtype: int
@@ -163,12 +170,34 @@ class MetaData:
     def duration(self, duration):
         """Sets the duration of this MetaData.
 
-        视频时长。  若视频的原时长为非整数，则该字段值为原时长的向上取整。
+        视频时长。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
 
         :param duration: The duration of this MetaData.
         :type duration: int
         """
         self._duration = duration
+
+    @property
+    def duration_ms(self):
+        """Gets the duration_ms of this MetaData.
+
+        视频时长，单位毫秒。
+
+        :return: The duration_ms of this MetaData.
+        :rtype: int
+        """
+        return self._duration_ms
+
+    @duration_ms.setter
+    def duration_ms(self, duration_ms):
+        """Sets the duration_ms of this MetaData.
+
+        视频时长，单位毫秒。
+
+        :param duration_ms: The duration_ms of this MetaData.
+        :type duration_ms: int
+        """
+        self._duration_ms = duration_ms
 
     @property
     def video_size(self):

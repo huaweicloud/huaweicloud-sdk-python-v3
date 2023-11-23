@@ -2582,6 +2582,85 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_inspection_histories_async(self, request):
+        """list_inspection_histories
+
+        查询实例大版本升级检查历史。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInspectionHistories
+        :type request: :class:`huaweicloudsdkrds.v3.ListInspectionHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInspectionHistoriesResponse`
+        """
+        http_info = self._list_inspection_histories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_inspection_histories_async_invoker(self, request):
+        http_info = self._list_inspection_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_inspection_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/major-version/inspection-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInspectionHistoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'target_version' in local_var_params:
+            query_params.append(('target_version', local_var_params['target_version']))
+        if 'is_available' in local_var_params:
+            query_params.append(('is_available', local_var_params['is_available']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instance_diagnosis_async(self, request):
         """获取诊断后的实例数量
 
@@ -4488,6 +4567,81 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_upgrade_histories_async(self, request):
+        """list_upgrade_histories
+
+        查询实例大版本升级历史信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUpgradeHistories
+        :type request: :class:`huaweicloudsdkrds.v3.ListUpgradeHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListUpgradeHistoriesResponse`
+        """
+        http_info = self._list_upgrade_histories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_upgrade_histories_async_invoker(self, request):
+        http_info = self._list_upgrade_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_upgrade_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/major-version/upgrade-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUpgradeHistoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_xellog_files_async(self, request):
         """查询扩展日志文件列表
 
@@ -5727,6 +5881,73 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def show_available_version_async(self, request):
+        """show_available_version
+
+        查询实例可升级的目标版本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAvailableVersion
+        :type request: :class:`huaweicloudsdkrds.v3.ShowAvailableVersionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowAvailableVersionResponse`
+        """
+        http_info = self._show_available_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_available_version_async_invoker(self, request):
+        http_info = self._show_available_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_available_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/major-version/available-version",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAvailableVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_backup_download_link_async(self, request):
         """获取备份下载链接
 
@@ -6569,6 +6790,140 @@ class RdsAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tde_status_async(self, request):
+        """根据实例id查询sqlserver TDE状态
+
+        根据实例id查询sqlserver TDE状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTdeStatus
+        :type request: :class:`huaweicloudsdkrds.v3.ShowTdeStatusRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowTdeStatusResponse`
+        """
+        http_info = self._show_tde_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tde_status_async_invoker(self, request):
+        http_info = self._show_tde_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tde_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tde-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTdeStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_upgrade_db_major_version_status_async(self, request):
+        """show_upgrade_db_major_version_status
+
+        查询大版本检查状态或升级状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowUpgradeDbMajorVersionStatus
+        :type request: :class:`huaweicloudsdkrds.v3.ShowUpgradeDbMajorVersionStatusRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowUpgradeDbMajorVersionStatusResponse`
+        """
+        http_info = self._show_upgrade_db_major_version_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_upgrade_db_major_version_status_async_invoker(self, request):
+        http_info = self._show_upgrade_db_major_version_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_upgrade_db_major_version_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/major-version/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUpgradeDbMajorVersionStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -7721,6 +8076,209 @@ class RdsAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/alias",
             "request_type": request.__class__.__name__,
             "response_type": "UpdatePostgresqlInstanceAliasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_tde_status_async(self, request):
+        """sqlserverTDE开关
+
+        sqlserverTDE开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTdeStatus
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateTdeStatusRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateTdeStatusResponse`
+        """
+        http_info = self._update_tde_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_tde_status_async_invoker(self, request):
+        http_info = self._update_tde_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_tde_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tde",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTdeStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_db_major_version_async(self, request):
+        """upgrade_db_major_version
+
+        PostgreSQL数据库升级大版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpgradeDbMajorVersion
+        :type request: :class:`huaweicloudsdkrds.v3.UpgradeDbMajorVersionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpgradeDbMajorVersionResponse`
+        """
+        http_info = self._upgrade_db_major_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_db_major_version_async_invoker(self, request):
+        http_info = self._upgrade_db_major_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_db_major_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/major-version/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeDbMajorVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_db_major_version_pre_check_async(self, request):
+        """upgrade_db_major_version_pre_check
+
+        大版本升级前进行升级检查。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpgradeDbMajorVersionPreCheck
+        :type request: :class:`huaweicloudsdkrds.v3.UpgradeDbMajorVersionPreCheckRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpgradeDbMajorVersionPreCheckResponse`
+        """
+        http_info = self._upgrade_db_major_version_pre_check_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_db_major_version_pre_check_async_invoker(self, request):
+        http_info = self._upgrade_db_major_version_pre_check_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_db_major_version_pre_check_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/major-version/inspection",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeDbMajorVersionPreCheckResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -21,7 +21,9 @@ class ListTrafficMirrorFiltersRequest:
         'name': 'str',
         'description': 'str',
         'created_at': 'str',
-        'updated_at': 'str'
+        'updated_at': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ListTrafficMirrorFiltersRequest:
         'name': 'name',
         'description': 'description',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, limit=None, marker=None):
         """ListTrafficMirrorFiltersRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ListTrafficMirrorFiltersRequest:
         :type created_at: str
         :param updated_at: 使用更新时间戳排序
         :type updated_at: str
+        :param limit: 功能说明：每页返回的个数 取值范围：0-2000
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
         """
         
         
@@ -56,6 +64,8 @@ class ListTrafficMirrorFiltersRequest:
         self._description = None
         self._created_at = None
         self._updated_at = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if id is not None:
@@ -68,6 +78,10 @@ class ListTrafficMirrorFiltersRequest:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def id(self):
@@ -178,6 +192,50 @@ class ListTrafficMirrorFiltersRequest:
         :type updated_at: str
         """
         self._updated_at = updated_at
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListTrafficMirrorFiltersRequest.
+
+        功能说明：每页返回的个数 取值范围：0-2000
+
+        :return: The limit of this ListTrafficMirrorFiltersRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListTrafficMirrorFiltersRequest.
+
+        功能说明：每页返回的个数 取值范围：0-2000
+
+        :param limit: The limit of this ListTrafficMirrorFiltersRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListTrafficMirrorFiltersRequest.
+
+        分页查询起始的资源ID，为空时查询第一页
+
+        :return: The marker of this ListTrafficMirrorFiltersRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListTrafficMirrorFiltersRequest.
+
+        分页查询起始的资源ID，为空时查询第一页
+
+        :param marker: The marker of this ListTrafficMirrorFiltersRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -45,7 +45,7 @@ class IpGroup:
 
         :param created_at: IP地址组的创建时间。
         :type created_at: str
-        :param description: IP地址组的更新时间。
+        :param description: IP地址组的描述信息。
         :type description: str
         :param id: IP地址组的ID。
         :type id: str
@@ -108,7 +108,7 @@ class IpGroup:
     def description(self):
         """Gets the description of this IpGroup.
 
-        IP地址组的更新时间。
+        IP地址组的描述信息。
 
         :return: The description of this IpGroup.
         :rtype: str
@@ -119,7 +119,7 @@ class IpGroup:
     def description(self, description):
         """Sets the description of this IpGroup.
 
-        IP地址组的更新时间。
+        IP地址组的描述信息。
 
         :param description: The description of this IpGroup.
         :type description: str

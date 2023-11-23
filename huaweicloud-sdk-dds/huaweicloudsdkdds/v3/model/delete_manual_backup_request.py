@@ -29,7 +29,7 @@ class DeleteManualBackupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param backup_id: 备份文件ID。
+        :param backup_id: 备份ID。
         :type backup_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteManualBackupRequest:
     def backup_id(self):
         """Gets the backup_id of this DeleteManualBackupRequest.
 
-        备份文件ID。
+        备份ID。
 
         :return: The backup_id of this DeleteManualBackupRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteManualBackupRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this DeleteManualBackupRequest.
 
-        备份文件ID。
+        备份ID。
 
         :param backup_id: The backup_id of this DeleteManualBackupRequest.
         :type backup_id: str

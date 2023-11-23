@@ -39,17 +39,17 @@ class CertDistinguishedName:
 
         The model defined in huaweicloud sdk
 
-        :param common_name: 证书通用名称（CN）。
+        :param common_name: 证书通用名称（CN），名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、\&quot;*\&quot;、字母、数字、汉字组成，长度不能超过64位字符。
         :type common_name: str
-        :param country: 国家编码，需符合正则\&quot;**[A-Za-z]{2}**\&quot;。若不传入，则默认继承父CA对应的值。
+        :param country: 国家编码，只能由英文组成，长度为2位字符。若不传入，则默认继承父CA对应的值。
         :type country: str
-        :param state: 省市名称。若不传入，则默认继承父CA对应的值。
+        :param state: 省市名称，名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
         :type state: str
-        :param locality: 地区名称。若不传入，则默认继承父CA对应的值。
+        :param locality: 地区名称，名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
         :type locality: str
-        :param organization: 组织名称。若不传入，则默认继承父CA对应的值。
+        :param organization: 组织名称，名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
         :type organization: str
-        :param organizational_unit: 组织单元名称。若不传入，则默认继承父CA对应的值。
+        :param organizational_unit: 组织单元名称，名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
         :type organizational_unit: str
         """
         
@@ -79,7 +79,7 @@ class CertDistinguishedName:
     def common_name(self):
         """Gets the common_name of this CertDistinguishedName.
 
-        证书通用名称（CN）。
+        证书通用名称（CN），名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、\"*\"、字母、数字、汉字组成，长度不能超过64位字符。
 
         :return: The common_name of this CertDistinguishedName.
         :rtype: str
@@ -90,7 +90,7 @@ class CertDistinguishedName:
     def common_name(self, common_name):
         """Sets the common_name of this CertDistinguishedName.
 
-        证书通用名称（CN）。
+        证书通用名称（CN），名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、\"*\"、字母、数字、汉字组成，长度不能超过64位字符。
 
         :param common_name: The common_name of this CertDistinguishedName.
         :type common_name: str
@@ -101,7 +101,7 @@ class CertDistinguishedName:
     def country(self):
         """Gets the country of this CertDistinguishedName.
 
-        国家编码，需符合正则\"**[A-Za-z]{2}**\"。若不传入，则默认继承父CA对应的值。
+        国家编码，只能由英文组成，长度为2位字符。若不传入，则默认继承父CA对应的值。
 
         :return: The country of this CertDistinguishedName.
         :rtype: str
@@ -112,7 +112,7 @@ class CertDistinguishedName:
     def country(self, country):
         """Sets the country of this CertDistinguishedName.
 
-        国家编码，需符合正则\"**[A-Za-z]{2}**\"。若不传入，则默认继承父CA对应的值。
+        国家编码，只能由英文组成，长度为2位字符。若不传入，则默认继承父CA对应的值。
 
         :param country: The country of this CertDistinguishedName.
         :type country: str
@@ -123,7 +123,7 @@ class CertDistinguishedName:
     def state(self):
         """Gets the state of this CertDistinguishedName.
 
-        省市名称。若不传入，则默认继承父CA对应的值。
+        省市名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
 
         :return: The state of this CertDistinguishedName.
         :rtype: str
@@ -134,7 +134,7 @@ class CertDistinguishedName:
     def state(self, state):
         """Sets the state of this CertDistinguishedName.
 
-        省市名称。若不传入，则默认继承父CA对应的值。
+        省市名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
 
         :param state: The state of this CertDistinguishedName.
         :type state: str
@@ -145,7 +145,7 @@ class CertDistinguishedName:
     def locality(self):
         """Gets the locality of this CertDistinguishedName.
 
-        地区名称。若不传入，则默认继承父CA对应的值。
+        地区名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
 
         :return: The locality of this CertDistinguishedName.
         :rtype: str
@@ -156,7 +156,7 @@ class CertDistinguishedName:
     def locality(self, locality):
         """Sets the locality of this CertDistinguishedName.
 
-        地区名称。若不传入，则默认继承父CA对应的值。
+        地区名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
 
         :param locality: The locality of this CertDistinguishedName.
         :type locality: str
@@ -167,7 +167,7 @@ class CertDistinguishedName:
     def organization(self):
         """Gets the organization of this CertDistinguishedName.
 
-        组织名称。若不传入，则默认继承父CA对应的值。
+        组织名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
 
         :return: The organization of this CertDistinguishedName.
         :rtype: str
@@ -178,7 +178,7 @@ class CertDistinguishedName:
     def organization(self, organization):
         """Sets the organization of this CertDistinguishedName.
 
-        组织名称。若不传入，则默认继承父CA对应的值。
+        组织名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
 
         :param organization: The organization of this CertDistinguishedName.
         :type organization: str
@@ -189,7 +189,7 @@ class CertDistinguishedName:
     def organizational_unit(self):
         """Gets the organizational_unit of this CertDistinguishedName.
 
-        组织单元名称。若不传入，则默认继承父CA对应的值。
+        组织单元名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
 
         :return: The organizational_unit of this CertDistinguishedName.
         :rtype: str
@@ -200,7 +200,7 @@ class CertDistinguishedName:
     def organizational_unit(self, organizational_unit):
         """Sets the organizational_unit of this CertDistinguishedName.
 
-        组织单元名称。若不传入，则默认继承父CA对应的值。
+        组织单元名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
 
         :param organizational_unit: The organizational_unit of this CertDistinguishedName.
         :type organizational_unit: str

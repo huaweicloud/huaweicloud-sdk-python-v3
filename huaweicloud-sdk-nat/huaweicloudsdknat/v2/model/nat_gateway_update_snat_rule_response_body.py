@@ -69,7 +69,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
         :type cidr: str
         :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
         :type floating_ip_id: str
-        :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
+        :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param status: SNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
         :type status: str
@@ -260,7 +260,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
     def description(self):
         """Gets the description of this NatGatewayUpdateSnatRuleResponseBody.
 
-        SNAT规则的描述，长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :return: The description of this NatGatewayUpdateSnatRuleResponseBody.
         :rtype: str
@@ -271,7 +271,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
     def description(self, description):
         """Sets the description of this NatGatewayUpdateSnatRuleResponseBody.
 
-        SNAT规则的描述，长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :param description: The description of this NatGatewayUpdateSnatRuleResponseBody.
         :type description: str

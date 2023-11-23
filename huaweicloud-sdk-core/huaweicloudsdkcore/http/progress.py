@@ -114,7 +114,7 @@ class ProgressHTTPResponse(HTTPResponse):
     @classmethod
     def convert(cls, http_response, notifier):
         # type: (HTTPResponse, ProgressNotifier) -> None
-        if not type(http_response) == cls.__base__:
+        if not isinstance(http_response, cls.__base__):
             raise TypeError("can not convert non-HTTPResponse to ProgressHTTPResponse")
         http_response.__class__ = cls
         setattr(http_response, "_notifier", notifier)

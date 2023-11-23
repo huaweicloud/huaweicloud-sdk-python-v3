@@ -20,6 +20,7 @@ class QueryProgressResp:
         'job_id': 'str',
         'progress': 'str',
         'incre_trans_delay': 'str',
+        'incre_trans_delay_millis': 'str',
         'task_mode': 'str',
         'transfer_status': 'str',
         'process_time': 'str',
@@ -33,6 +34,7 @@ class QueryProgressResp:
         'job_id': 'job_id',
         'progress': 'progress',
         'incre_trans_delay': 'incre_trans_delay',
+        'incre_trans_delay_millis': 'incre_trans_delay_millis',
         'task_mode': 'task_mode',
         'transfer_status': 'transfer_status',
         'process_time': 'process_time',
@@ -42,7 +44,7 @@ class QueryProgressResp:
         'error_msg': 'error_msg'
     }
 
-    def __init__(self, job_id=None, progress=None, incre_trans_delay=None, task_mode=None, transfer_status=None, process_time=None, remaining_time=None, progress_map=None, error_code=None, error_msg=None):
+    def __init__(self, job_id=None, progress=None, incre_trans_delay=None, incre_trans_delay_millis=None, task_mode=None, transfer_status=None, process_time=None, remaining_time=None, progress_map=None, error_code=None, error_msg=None):
         """QueryProgressResp
 
         The model defined in huaweicloud sdk
@@ -51,8 +53,10 @@ class QueryProgressResp:
         :type job_id: str
         :param progress: 迁移百分比
         :type progress: str
-        :param incre_trans_delay: 增量迁移时延
+        :param incre_trans_delay: 增量迁移时延。单位：s
         :type incre_trans_delay: str
+        :param incre_trans_delay_millis: 增量迁移时延。单位：ms
+        :type incre_trans_delay_millis: str
         :param task_mode: 迁移模式。 - FULL_TRANS: 全量 - INCR_TRANS: 增量 - FULL_INCR_TRANS: 全量+增量
         :type task_mode: str
         :param transfer_status: 任务状态
@@ -74,6 +78,7 @@ class QueryProgressResp:
         self._job_id = None
         self._progress = None
         self._incre_trans_delay = None
+        self._incre_trans_delay_millis = None
         self._task_mode = None
         self._transfer_status = None
         self._process_time = None
@@ -89,6 +94,8 @@ class QueryProgressResp:
             self.progress = progress
         if incre_trans_delay is not None:
             self.incre_trans_delay = incre_trans_delay
+        if incre_trans_delay_millis is not None:
+            self.incre_trans_delay_millis = incre_trans_delay_millis
         if task_mode is not None:
             self.task_mode = task_mode
         if transfer_status is not None:
@@ -152,7 +159,7 @@ class QueryProgressResp:
     def incre_trans_delay(self):
         """Gets the incre_trans_delay of this QueryProgressResp.
 
-        增量迁移时延
+        增量迁移时延。单位：s
 
         :return: The incre_trans_delay of this QueryProgressResp.
         :rtype: str
@@ -163,12 +170,34 @@ class QueryProgressResp:
     def incre_trans_delay(self, incre_trans_delay):
         """Sets the incre_trans_delay of this QueryProgressResp.
 
-        增量迁移时延
+        增量迁移时延。单位：s
 
         :param incre_trans_delay: The incre_trans_delay of this QueryProgressResp.
         :type incre_trans_delay: str
         """
         self._incre_trans_delay = incre_trans_delay
+
+    @property
+    def incre_trans_delay_millis(self):
+        """Gets the incre_trans_delay_millis of this QueryProgressResp.
+
+        增量迁移时延。单位：ms
+
+        :return: The incre_trans_delay_millis of this QueryProgressResp.
+        :rtype: str
+        """
+        return self._incre_trans_delay_millis
+
+    @incre_trans_delay_millis.setter
+    def incre_trans_delay_millis(self, incre_trans_delay_millis):
+        """Sets the incre_trans_delay_millis of this QueryProgressResp.
+
+        增量迁移时延。单位：ms
+
+        :param incre_trans_delay_millis: The incre_trans_delay_millis of this QueryProgressResp.
+        :type incre_trans_delay_millis: str
+        """
+        self._incre_trans_delay_millis = incre_trans_delay_millis
 
     @property
     def task_mode(self):

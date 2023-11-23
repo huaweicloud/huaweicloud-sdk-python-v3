@@ -42,7 +42,8 @@ class JobDetailResp:
         'compare_result': 'CompareResultInfo',
         'support_import_file_resp': 'SupportImportFileResult',
         'instance_features': 'dict(str, str)',
-        'task_version': 'str'
+        'task_version': 'str',
+        'connection_management': 'ConnectionManagement'
     }
 
     attribute_map = {
@@ -71,10 +72,11 @@ class JobDetailResp:
         'compare_result': 'compare_result',
         'support_import_file_resp': 'support_import_file_resp',
         'instance_features': 'instance_features',
-        'task_version': 'task_version'
+        'task_version': 'task_version',
+        'connection_management': 'connection_management'
     }
 
-    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None):
+    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None):
         """JobDetailResp
 
         The model defined in huaweicloud sdk
@@ -131,6 +133,8 @@ class JobDetailResp:
         :type instance_features: dict(str, str)
         :param task_version: 任务版本。
         :type task_version: str
+        :param connection_management: 
+        :type connection_management: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
         """
         
         
@@ -161,6 +165,7 @@ class JobDetailResp:
         self._support_import_file_resp = None
         self._instance_features = None
         self._task_version = None
+        self._connection_management = None
         self.discriminator = None
 
         if id is not None:
@@ -215,6 +220,8 @@ class JobDetailResp:
             self.instance_features = instance_features
         if task_version is not None:
             self.task_version = task_version
+        if connection_management is not None:
+            self.connection_management = connection_management
 
     @property
     def id(self):
@@ -731,6 +738,24 @@ class JobDetailResp:
         :type task_version: str
         """
         self._task_version = task_version
+
+    @property
+    def connection_management(self):
+        """Gets the connection_management of this JobDetailResp.
+
+        :return: The connection_management of this JobDetailResp.
+        :rtype: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
+        """
+        return self._connection_management
+
+    @connection_management.setter
+    def connection_management(self, connection_management):
+        """Sets the connection_management of this JobDetailResp.
+
+        :param connection_management: The connection_management of this JobDetailResp.
+        :type connection_management: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
+        """
+        self._connection_management = connection_management
 
     def to_dict(self):
         """Returns the model properties as a dict"""

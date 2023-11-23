@@ -19,6 +19,7 @@ class ThumbnailInfo:
     openapi_types = {
         'sample': 'list[ThumbnailRsp]',
         'dots': 'list[ThumbnailRsp]',
+        'quantity': 'list[ThumbnailRsp]',
         'exec_desc': 'str',
         'thumbnail_status': 'str'
     }
@@ -26,11 +27,12 @@ class ThumbnailInfo:
     attribute_map = {
         'sample': 'sample',
         'dots': 'dots',
+        'quantity': 'quantity',
         'exec_desc': 'exec_desc',
         'thumbnail_status': 'thumbnail_status'
     }
 
-    def __init__(self, sample=None, dots=None, exec_desc=None, thumbnail_status=None):
+    def __init__(self, sample=None, dots=None, quantity=None, exec_desc=None, thumbnail_status=None):
         """ThumbnailInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ThumbnailInfo:
         :type sample: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
         :param dots: 
         :type dots: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
+        :param quantity: 视频截图信息，截图类型为数量。
+        :type quantity: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
         :param exec_desc: 执行情况描述。
         :type exec_desc: str
         :param thumbnail_status: 截图状态。  取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
@@ -49,6 +53,7 @@ class ThumbnailInfo:
 
         self._sample = None
         self._dots = None
+        self._quantity = None
         self._exec_desc = None
         self._thumbnail_status = None
         self.discriminator = None
@@ -57,6 +62,8 @@ class ThumbnailInfo:
             self.sample = sample
         if dots is not None:
             self.dots = dots
+        if quantity is not None:
+            self.quantity = quantity
         if exec_desc is not None:
             self.exec_desc = exec_desc
         if thumbnail_status is not None:
@@ -101,6 +108,28 @@ class ThumbnailInfo:
         :type dots: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
         """
         self._dots = dots
+
+    @property
+    def quantity(self):
+        """Gets the quantity of this ThumbnailInfo.
+
+        视频截图信息，截图类型为数量。
+
+        :return: The quantity of this ThumbnailInfo.
+        :rtype: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
+        """
+        return self._quantity
+
+    @quantity.setter
+    def quantity(self, quantity):
+        """Sets the quantity of this ThumbnailInfo.
+
+        视频截图信息，截图类型为数量。
+
+        :param quantity: The quantity of this ThumbnailInfo.
+        :type quantity: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
+        """
+        self._quantity = quantity
 
     @property
     def exec_desc(self):

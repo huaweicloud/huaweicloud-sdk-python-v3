@@ -35,6 +35,8 @@ class UpdateFunctionConfigRequestBody:
         'extend_config': 'str',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
+        'pre_stop_handler': 'str',
+        'pre_stop_timeout': 'int',
         'ephemeral_storage': 'int',
         'enterprise_project_id': 'str',
         'log_config': 'FuncLogConfig',
@@ -66,6 +68,8 @@ class UpdateFunctionConfigRequestBody:
         'extend_config': 'extend_config',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
+        'pre_stop_handler': 'pre_stop_handler',
+        'pre_stop_timeout': 'pre_stop_timeout',
         'ephemeral_storage': 'ephemeral_storage',
         'enterprise_project_id': 'enterprise_project_id',
         'log_config': 'log_config',
@@ -78,7 +82,7 @@ class UpdateFunctionConfigRequestBody:
         'restore_hook_timeout': 'restore_hook_timeout'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None):
         """UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -119,6 +123,10 @@ class UpdateFunctionConfigRequestBody:
         :type initializer_handler: str
         :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
         :type initializer_timeout: int
+        :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+        :type pre_stop_handler: str
+        :param pre_stop_timeout: 初始化超时时间，超时函数将被强行停止，范围1～90秒。
+        :type pre_stop_timeout: int
         :param ephemeral_storage: 临时存储大小, 默认512M, 支持配置10G。
         :type ephemeral_storage: int
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
@@ -161,6 +169,8 @@ class UpdateFunctionConfigRequestBody:
         self._extend_config = None
         self._initializer_handler = None
         self._initializer_timeout = None
+        self._pre_stop_handler = None
+        self._pre_stop_timeout = None
         self._ephemeral_storage = None
         self._enterprise_project_id = None
         self._log_config = None
@@ -204,6 +214,10 @@ class UpdateFunctionConfigRequestBody:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
             self.initializer_timeout = initializer_timeout
+        if pre_stop_handler is not None:
+            self.pre_stop_handler = pre_stop_handler
+        if pre_stop_timeout is not None:
+            self.pre_stop_timeout = pre_stop_timeout
         if ephemeral_storage is not None:
             self.ephemeral_storage = ephemeral_storage
         if enterprise_project_id is not None:
@@ -604,6 +618,50 @@ class UpdateFunctionConfigRequestBody:
         :type initializer_timeout: int
         """
         self._initializer_timeout = initializer_timeout
+
+    @property
+    def pre_stop_handler(self):
+        """Gets the pre_stop_handler of this UpdateFunctionConfigRequestBody.
+
+        函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+
+        :return: The pre_stop_handler of this UpdateFunctionConfigRequestBody.
+        :rtype: str
+        """
+        return self._pre_stop_handler
+
+    @pre_stop_handler.setter
+    def pre_stop_handler(self, pre_stop_handler):
+        """Sets the pre_stop_handler of this UpdateFunctionConfigRequestBody.
+
+        函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+
+        :param pre_stop_handler: The pre_stop_handler of this UpdateFunctionConfigRequestBody.
+        :type pre_stop_handler: str
+        """
+        self._pre_stop_handler = pre_stop_handler
+
+    @property
+    def pre_stop_timeout(self):
+        """Gets the pre_stop_timeout of this UpdateFunctionConfigRequestBody.
+
+        初始化超时时间，超时函数将被强行停止，范围1～90秒。
+
+        :return: The pre_stop_timeout of this UpdateFunctionConfigRequestBody.
+        :rtype: int
+        """
+        return self._pre_stop_timeout
+
+    @pre_stop_timeout.setter
+    def pre_stop_timeout(self, pre_stop_timeout):
+        """Sets the pre_stop_timeout of this UpdateFunctionConfigRequestBody.
+
+        初始化超时时间，超时函数将被强行停止，范围1～90秒。
+
+        :param pre_stop_timeout: The pre_stop_timeout of this UpdateFunctionConfigRequestBody.
+        :type pre_stop_timeout: int
+        """
+        self._pre_stop_timeout = pre_stop_timeout
 
     @property
     def ephemeral_storage(self):

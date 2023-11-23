@@ -2133,6 +2133,333 @@ class AomClient(Client):
 
         return http_info
 
+    def create_prom_instance(self, request):
+        """新增Prometheus实例数据源
+
+        该接口用于新增Prometheus实例数据源
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePromInstance
+        :type request: :class:`huaweicloudsdkaom.v2.CreatePromInstanceRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.CreatePromInstanceResponse`
+        """
+        http_info = self._create_prom_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_prom_instance_invoker(self, request):
+        http_info = self._create_prom_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_prom_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aom/prometheus",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePromInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_recording_rule(self, request):
+        """创建预汇聚规则
+
+        该接口用于创建预汇聚规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateRecordingRule
+        :type request: :class:`huaweicloudsdkaom.v2.CreateRecordingRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.CreateRecordingRuleResponse`
+        """
+        http_info = self._create_recording_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_recording_rule_invoker(self, request):
+        http_info = self._create_recording_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_recording_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{prometheus_instance}/aom/api/v1/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordingRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'prometheus_instance' in local_var_params:
+            path_params['prometheus_instance'] = local_var_params['prometheus_instance']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_prom_instance(self, request):
+        """卸载托管Prometheus
+
+        该接口用于卸载托管Prometheus
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePromInstance
+        :type request: :class:`huaweicloudsdkaom.v2.DeletePromInstanceRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeletePromInstanceResponse`
+        """
+        http_info = self._delete_prom_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_prom_instance_invoker(self, request):
+        http_info = self._delete_prom_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_prom_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/aom/prometheus",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePromInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'prom_id' in local_var_params:
+            query_params.append(('prom_id', local_var_params['prom_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_access_code(self, request):
+        """获取Prometheus监控所需Token-access code
+
+        该接口用于获取Prometheus监控所需Token-access code
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAccessCode
+        :type request: :class:`huaweicloudsdkaom.v2.ListAccessCodeRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListAccessCodeResponse`
+        """
+        http_info = self._list_access_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_access_code_invoker(self, request):
+        http_info = self._list_access_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_access_code_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/access-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_agents(self, request):
+        """查询集群Agent信息
+
+        该接口用于查询集群Agent信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAgents
+        :type request: :class:`huaweicloudsdkaom.v2.ListAgentsRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListAgentsResponse`
+        """
+        http_info = self._list_agents_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_agents_invoker(self, request):
+        http_info = self._list_agents_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_agents_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{cluster_id}/{namespace}/agents",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAgentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instant_query_aom_prom_get(self, request):
         """瞬时数据查询
 
@@ -2494,6 +2821,140 @@ class AomClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_permissions(self, request):
+        """是否开通aom2.0
+
+        该接口用于查询用户是否已经完成aom2.0授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPermissions
+        :type request: :class:`huaweicloudsdkaom.v2.ListPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListPermissionsResponse`
+        """
+        http_info = self._list_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_permissions_invoker(self, request):
+        http_info = self._list_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_permissions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aom/auth/grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_prom_instance(self, request):
+        """获取所有正常实例
+
+        该接口用于获取所有正常prometheus实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPromInstance
+        :type request: :class:`huaweicloudsdkaom.v2.ListPromInstanceRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListPromInstanceResponse`
+        """
+        http_info = self._list_prom_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_prom_instance_invoker(self, request):
+        http_info = self._list_prom_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_prom_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aom/prometheus",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPromInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'prom_id' in local_var_params:
+            query_params.append(('prom_id', local_var_params['prom_id']))
+        if 'prom_type' in local_var_params:
+            query_params.append(('prom_type', local_var_params['prom_type']))
+        if 'cce_cluster_enable' in local_var_params:
+            query_params.append(('cce_cluster_enable', local_var_params['cce_cluster_enable']))
+        if 'prom_status' in local_var_params:
+            query_params.append(('prom_status', local_var_params['prom_status']))
 
         header_params = {}
 

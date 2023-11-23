@@ -1223,6 +1223,140 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def delete_instances_session(self, request):
+        """关闭实例节点会话
+
+        关闭实例节点会话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteInstancesSession
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteInstancesSessionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteInstancesSessionResponse`
+        """
+        http_info = self._delete_instances_session_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_instances_session_invoker(self, request):
+        http_info = self._delete_instances_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_instances_session_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/redis/nodes/{node_id}/sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstancesSessionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_lts_configs(self, request):
+        """解除关联LTS日志流
+
+        将实例日志与LTS日志流解除关联，后台将取消上传实例日志到的LTS日志流里。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLtsConfigs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteLtsConfigsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteLtsConfigsResponse`
+        """
+        http_info = self._delete_lts_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_lts_configs_invoker(self, request):
+        http_info = self._delete_lts_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_lts_configs_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLtsConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def expand_instance_node(self, request):
         """扩容指定集群实例的节点数量
 
@@ -1338,6 +1472,73 @@ class GaussDBforNoSQLClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cassandra_slow_logs(self, request):
+        """查询GeminiDB(for Cassandra)数据库慢日志
+
+        查询GeminiDB(for Cassandra)数据库慢日志信息，支持日志关键字搜索。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCassandraSlowLogs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListCassandraSlowLogsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListCassandraSlowLogsResponse`
+        """
+        http_info = self._list_cassandra_slow_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cassandra_slow_logs_invoker(self, request):
+        http_info = self._list_cassandra_slow_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cassandra_slow_logs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/cassandra/instances/{instance_id}/slow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCassandraSlowLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2303,6 +2504,351 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def list_instances_session(self, request):
+        """获取节点会话列表
+
+        获取节点会话列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstancesSession
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesSessionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesSessionResponse`
+        """
+        http_info = self._list_instances_session_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instances_session_invoker(self, request):
+        http_info = self._list_instances_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instances_session_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redis/nodes/{node_id}/sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesSessionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'addr_prefix' in local_var_params:
+            query_params.append(('addr_prefix', local_var_params['addr_prefix']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instances_session_statistics(self, request):
+        """查询实例节点会话统计信息
+
+        查询实例节点会话统计信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstancesSessionStatistics
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesSessionStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesSessionStatisticsResponse`
+        """
+        http_info = self._list_instances_session_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instances_session_statistics_invoker(self, request):
+        http_info = self._list_instances_session_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instances_session_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redis/nodes/{node_id}/session-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesSessionStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_lts_configs(self, request):
+        """查询LTS日志配置信息
+
+        分页查询实例关联的LTS日志配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLtsConfigs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListLtsConfigsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListLtsConfigsResponse`
+        """
+        http_info = self._list_lts_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_lts_configs_invoker(self, request):
+        http_info = self._list_lts_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lts_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLtsConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_mongodb_error_logs(self, request):
+        """查询GeminiDB(for Mongo)数据库错误日志
+
+        查询GeminiDB(for Mongo)数据库错误日志信息，支持日志关键字搜索。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMongodbErrorLogs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListMongodbErrorLogsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListMongodbErrorLogsResponse`
+        """
+        http_info = self._list_mongodb_error_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_mongodb_error_logs_invoker(self, request):
+        http_info = self._list_mongodb_error_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_mongodb_error_logs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/mongodb/instances/{instance_id}/error-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMongodbErrorLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_mongodb_slow_logs(self, request):
+        """查询GeminiDB(for Mongo)数据库慢日志
+
+        查询GeminiDB(for Mongo)数据库慢日志信息，支持日志关键字搜索。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMongodbSlowLogs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListMongodbSlowLogsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListMongodbSlowLogsResponse`
+        """
+        http_info = self._list_mongodb_slow_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_mongodb_slow_logs_invoker(self, request):
+        http_info = self._list_mongodb_slow_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_mongodb_slow_logs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/mongodb/instances/{instance_id}/slow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMongodbSlowLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_project_tags(self, request):
         """查询项目标签
 
@@ -2414,6 +2960,213 @@ class GaussDBforNoSQLClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_redis_slow_logs(self, request):
+        """查询GeminiDB(for Redis)数据库慢日志
+
+        查询GeminiDB(for Redis)数据库慢日志信息，支持日志关键字搜索。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRedisSlowLogs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRedisSlowLogsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRedisSlowLogsResponse`
+        """
+        http_info = self._list_redis_slow_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_redis_slow_logs_invoker(self, request):
+        http_info = self._list_redis_slow_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_redis_slow_logs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/slow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRedisSlowLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_restore_databases(self, request):
+        """获取GeminiDB(for Cassandra)实例表级恢复的数据库信息
+
+        获取GeminiDB(for Cassandra)实例表级恢复的数据库信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRestoreDatabases
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRestoreDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRestoreDatabasesResponse`
+        """
+        http_info = self._list_restore_databases_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_restore_databases_invoker(self, request):
+        http_info = self._list_restore_databases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_restore_databases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRestoreDatabasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_restore_tables(self, request):
+        """获取GeminiDB(for Cassandra)实例表级恢复的表信息
+
+        获取GeminiDB(for Cassandra)实例表级恢复的表信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRestoreTables
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRestoreTablesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRestoreTablesResponse`
+        """
+        http_info = self._list_restore_tables_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_restore_tables_invoker(self, request):
+        http_info = self._list_restore_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_restore_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRestoreTablesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
 
         form_params = {}
 
@@ -3060,6 +3813,71 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def reset_param_group_template(self, request):
+        """重置自定义参数模板
+
+        重置自定义参数模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetParamGroupTemplate
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetParamGroupTemplateRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetParamGroupTemplateResponse`
+        """
+        http_info = self._reset_param_group_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_param_group_template_invoker(self, request):
+        http_info = self._reset_param_group_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_param_group_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetParamGroupTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_password(self, request):
         """修改实例的管理员密码
 
@@ -3433,6 +4251,75 @@ class GaussDBforNoSQLClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def save_lts_configs(self, request):
+        """关联LTS日志流
+
+        - 将实例日志与LTS日志流关联，后台将自动上传实例日志到关联的LTS日志流里。
+        - 关联成功后，会产生一定费用，具体计费可参考云日志服务（LTS）的定价详情。
+        - 系统会为当前选择的日志流创建对应日志类型的结构化配置，若该日志流已存在其他日志类型的结构化配置，系统会进行覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SaveLtsConfigs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SaveLtsConfigsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SaveLtsConfigsResponse`
+        """
+        http_info = self._save_lts_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_lts_configs_invoker(self, request):
+        http_info = self._save_lts_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _save_lts_configs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveLtsConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -4149,6 +5036,71 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def show_elb_ip_group(self, request):
+        """查询实例负载均衡的IP访问黑白名单
+
+        查询实例负载均衡的IP访问黑白名单。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowElbIpGroup
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowElbIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowElbIpGroupResponse`
+        """
+        http_info = self._show_elb_ip_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_elb_ip_group_invoker(self, request):
+        http_info = self._show_elb_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_elb_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/lb/access-control",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowElbIpGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_error_log(self, request):
         """查询数据库错误日志信息
 
@@ -4694,7 +5646,7 @@ class GaussDBforNoSQLClient(Client):
     def show_quotas(self, request):
         """查询配额
 
-        查询单租户在GaussDBforNoSQL服务下的资源配额。
+        查询单租户在GeminiDB服务下的资源配额。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4982,6 +5934,73 @@ class GaussDBforNoSQLClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/reduce-node",
             "request_type": request.__class__.__name__,
             "response_type": "ShrinkInstanceNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_ip_group(self, request):
+        """设置实例负载均衡的IP访问黑白名单
+
+        设置实例负载均衡的IP访问黑白名单，黑名单、白名单只能选一种，每次调用此接口覆盖之前的设置。关闭后不限制连接的源IP地址。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchIpGroup
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchIpGroupResponse`
+        """
+        http_info = self._switch_ip_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_ip_group_invoker(self, request):
+        http_info = self._switch_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/lb/access-control",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchIpGroupResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

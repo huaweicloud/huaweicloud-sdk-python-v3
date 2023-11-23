@@ -19,35 +19,35 @@ class SwitchStrategyResponse(SdkResponse):
 
     openapi_types = {
         'status': 'bool',
-        'rule_template_instance_id': 'str'
+        'rule_set_id': 'str'
     }
 
     attribute_map = {
         'status': 'status',
-        'rule_template_instance_id': 'rule_template_instance_id'
+        'rule_set_id': 'rule_set_id'
     }
 
-    def __init__(self, status=None, rule_template_instance_id=None):
+    def __init__(self, status=None, rule_set_id=None):
         """SwitchStrategyResponse
 
         The model defined in huaweicloud sdk
 
         :param status: 状态
         :type status: bool
-        :param rule_template_instance_id: 规则模版实例ID
-        :type rule_template_instance_id: str
+        :param rule_set_id: 规则集ID
+        :type rule_set_id: str
         """
         
         super(SwitchStrategyResponse, self).__init__()
 
         self._status = None
-        self._rule_template_instance_id = None
+        self._rule_set_id = None
         self.discriminator = None
 
         if status is not None:
             self.status = status
-        if rule_template_instance_id is not None:
-            self.rule_template_instance_id = rule_template_instance_id
+        if rule_set_id is not None:
+            self.rule_set_id = rule_set_id
 
     @property
     def status(self):
@@ -72,26 +72,26 @@ class SwitchStrategyResponse(SdkResponse):
         self._status = status
 
     @property
-    def rule_template_instance_id(self):
-        """Gets the rule_template_instance_id of this SwitchStrategyResponse.
+    def rule_set_id(self):
+        """Gets the rule_set_id of this SwitchStrategyResponse.
 
-        规则模版实例ID
+        规则集ID
 
-        :return: The rule_template_instance_id of this SwitchStrategyResponse.
+        :return: The rule_set_id of this SwitchStrategyResponse.
         :rtype: str
         """
-        return self._rule_template_instance_id
+        return self._rule_set_id
 
-    @rule_template_instance_id.setter
-    def rule_template_instance_id(self, rule_template_instance_id):
-        """Sets the rule_template_instance_id of this SwitchStrategyResponse.
+    @rule_set_id.setter
+    def rule_set_id(self, rule_set_id):
+        """Sets the rule_set_id of this SwitchStrategyResponse.
 
-        规则模版实例ID
+        规则集ID
 
-        :param rule_template_instance_id: The rule_template_instance_id of this SwitchStrategyResponse.
-        :type rule_template_instance_id: str
+        :param rule_set_id: The rule_set_id of this SwitchStrategyResponse.
+        :type rule_set_id: str
         """
-        self._rule_template_instance_id = rule_template_instance_id
+        self._rule_set_id = rule_set_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

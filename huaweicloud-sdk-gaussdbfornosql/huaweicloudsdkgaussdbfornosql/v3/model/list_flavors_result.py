@@ -49,7 +49,7 @@ class ListFlavorsResult:
         :type vcpus: str
         :param ram: 内存大小，单位为兆字节。
         :type ram: str
-        :param spec_code: 资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GaussDB NoSQL的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
+        :param spec_code: 资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GeminiDB的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
         :type spec_code: str
         :param availability_zone: 支持该规格的可用区ID。   - 该字段已废弃，请不要使用。
         :type availability_zone: list[str]
@@ -168,7 +168,7 @@ class ListFlavorsResult:
     def spec_code(self):
         """Gets the spec_code of this ListFlavorsResult.
 
-        资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GaussDB NoSQL的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
+        资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GeminiDB的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
 
         :return: The spec_code of this ListFlavorsResult.
         :rtype: str
@@ -179,7 +179,7 @@ class ListFlavorsResult:
     def spec_code(self, spec_code):
         """Sets the spec_code of this ListFlavorsResult.
 
-        资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GaussDB NoSQL的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
+        资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GeminiDB的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
 
         :param spec_code: The spec_code of this ListFlavorsResult.
         :type spec_code: str

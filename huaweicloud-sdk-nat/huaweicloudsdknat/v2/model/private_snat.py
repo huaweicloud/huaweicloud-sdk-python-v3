@@ -57,7 +57,7 @@ class PrivateSnat:
         :type cidr: str
         :param virsubnet_id: 功能说明：规则匹配的子网的ID。 取值约束：与cidr参数二选一。
         :type virsubnet_id: str
-        :param description: SNAT规则的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
+        :param description: SNAT规则的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param transit_ip_associations: 关联的中转IP详情列表。
         :type transit_ip_associations: list[:class:`huaweicloudsdknat.v2.AssociatedTransitIp`]
@@ -218,7 +218,7 @@ class PrivateSnat:
     def description(self):
         """Gets the description of this PrivateSnat.
 
-        SNAT规则的描述。长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :return: The description of this PrivateSnat.
         :rtype: str
@@ -229,7 +229,7 @@ class PrivateSnat:
     def description(self, description):
         """Sets the description of this PrivateSnat.
 
-        SNAT规则的描述。长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :param description: The description of this PrivateSnat.
         :type description: str

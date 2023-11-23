@@ -30,7 +30,7 @@ class ShowPublisherResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 发布商详情
         :type body: dict(str, PublisherVO)
         """
         
@@ -46,6 +46,8 @@ class ShowPublisherResponse(SdkResponse):
     def body(self):
         """Gets the body of this ShowPublisherResponse.
 
+        发布商详情
+
         :return: The body of this ShowPublisherResponse.
         :rtype: dict(str, PublisherVO)
         """
@@ -54,6 +56,8 @@ class ShowPublisherResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ShowPublisherResponse.
+
+        发布商详情
 
         :param body: The body of this ShowPublisherResponse.
         :type body: dict(str, PublisherVO)

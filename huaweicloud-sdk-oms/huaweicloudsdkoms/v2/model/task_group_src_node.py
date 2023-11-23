@@ -55,7 +55,7 @@ class TaskGroupSrcNode:
         :type object_key: list[str]
         :param bucket: 源端所在桶
         :type bucket: str
-        :param cloud_type: 源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        :param cloud_type: 源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
         :type cloud_type: str
         :param list_file: 
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`
@@ -226,7 +226,7 @@ class TaskGroupSrcNode:
     def cloud_type(self):
         """Gets the cloud_type of this TaskGroupSrcNode.
 
-        源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
         :return: The cloud_type of this TaskGroupSrcNode.
         :rtype: str
@@ -237,7 +237,7 @@ class TaskGroupSrcNode:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this TaskGroupSrcNode.
 
-        源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
         :param cloud_type: The cloud_type of this TaskGroupSrcNode.
         :type cloud_type: str

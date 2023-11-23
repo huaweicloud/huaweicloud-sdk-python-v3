@@ -29,7 +29,8 @@ class IdCardResult:
         'verification_result': 'IdcardVerificationResult',
         'text_location': 'object',
         'detect_reproduce_result': 'bool',
-        'detect_copy_result': 'bool'
+        'detect_copy_result': 'bool',
+        'portrait_location': 'list[list[int]]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class IdCardResult:
         'verification_result': 'verification_result',
         'text_location': 'text_location',
         'detect_reproduce_result': 'detect_reproduce_result',
-        'detect_copy_result': 'detect_copy_result'
+        'detect_copy_result': 'detect_copy_result',
+        'portrait_location': 'portrait_location'
     }
 
-    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None, detect_reproduce_result=None, detect_copy_result=None):
+    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None, detect_reproduce_result=None, detect_copy_result=None, portrait_location=None):
         """IdCardResult
 
         The model defined in huaweicloud sdk
@@ -77,8 +79,10 @@ class IdCardResult:
         :type text_location: object
         :param detect_reproduce_result: 判断身份证图像是否经过翻拍，“true”表示是翻拍，“false”表示未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
         :type detect_reproduce_result: bool
-        :param detect_copy_result: 判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。           
+        :param detect_copy_result: 判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。 
         :type detect_copy_result: bool
+        :param portrait_location: 身份证头像位置信息的结果，仅在输入参数“return_portrait_location”为true时，返回该字段，当输入身份证背面时返回为空列表。 
+        :type portrait_location: list[list[int]]
         """
         
         
@@ -96,6 +100,7 @@ class IdCardResult:
         self._text_location = None
         self._detect_reproduce_result = None
         self._detect_copy_result = None
+        self._portrait_location = None
         self.discriminator = None
 
         if name is not None:
@@ -124,6 +129,8 @@ class IdCardResult:
             self.detect_reproduce_result = detect_reproduce_result
         if detect_copy_result is not None:
             self.detect_copy_result = detect_copy_result
+        if portrait_location is not None:
+            self.portrait_location = portrait_location
 
     @property
     def name(self):
@@ -389,7 +396,7 @@ class IdCardResult:
     def detect_copy_result(self):
         """Gets the detect_copy_result of this IdCardResult.
 
-        判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。           
+        判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。 
 
         :return: The detect_copy_result of this IdCardResult.
         :rtype: bool
@@ -400,12 +407,34 @@ class IdCardResult:
     def detect_copy_result(self, detect_copy_result):
         """Sets the detect_copy_result of this IdCardResult.
 
-        判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。           
+        判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。 
 
         :param detect_copy_result: The detect_copy_result of this IdCardResult.
         :type detect_copy_result: bool
         """
         self._detect_copy_result = detect_copy_result
+
+    @property
+    def portrait_location(self):
+        """Gets the portrait_location of this IdCardResult.
+
+        身份证头像位置信息的结果，仅在输入参数“return_portrait_location”为true时，返回该字段，当输入身份证背面时返回为空列表。 
+
+        :return: The portrait_location of this IdCardResult.
+        :rtype: list[list[int]]
+        """
+        return self._portrait_location
+
+    @portrait_location.setter
+    def portrait_location(self, portrait_location):
+        """Sets the portrait_location of this IdCardResult.
+
+        身份证头像位置信息的结果，仅在输入参数“return_portrait_location”为true时，返回该字段，当输入身份证背面时返回为空列表。 
+
+        :param portrait_location: The portrait_location of this IdCardResult.
+        :type portrait_location: list[list[int]]
+        """
+        self._portrait_location = portrait_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

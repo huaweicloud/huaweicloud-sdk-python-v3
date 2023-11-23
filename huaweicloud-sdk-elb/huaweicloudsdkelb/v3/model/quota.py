@@ -83,9 +83,9 @@ class Quota:
         :type listeners_per_pool: int
         :param ipgroup: IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup: int
-        :param ipgroup_bindings: IP地址组最大可关联的监听器数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :param ipgroup_bindings: IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup_bindings: int
-        :param ipgroup_max_length: 单个IP地址组最多可设置的ip地址数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :param ipgroup_max_length: IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup_max_length: int
         :param security_policy: 自定义安全策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type security_policy: int
@@ -398,7 +398,7 @@ class Quota:
     def ipgroup_bindings(self):
         """Gets the ipgroup_bindings of this Quota.
 
-        IP地址组最大可关联的监听器数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The ipgroup_bindings of this Quota.
         :rtype: int
@@ -409,7 +409,7 @@ class Quota:
     def ipgroup_bindings(self, ipgroup_bindings):
         """Sets the ipgroup_bindings of this Quota.
 
-        IP地址组最大可关联的监听器数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param ipgroup_bindings: The ipgroup_bindings of this Quota.
         :type ipgroup_bindings: int
@@ -420,7 +420,7 @@ class Quota:
     def ipgroup_max_length(self):
         """Gets the ipgroup_max_length of this Quota.
 
-        单个IP地址组最多可设置的ip地址数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The ipgroup_max_length of this Quota.
         :rtype: int
@@ -431,7 +431,7 @@ class Quota:
     def ipgroup_max_length(self, ipgroup_max_length):
         """Sets the ipgroup_max_length of this Quota.
 
-        单个IP地址组最多可设置的ip地址数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param ipgroup_max_length: The ipgroup_max_length of this Quota.
         :type ipgroup_max_length: int

@@ -33,11 +33,11 @@ class CreateRules:
 
         The model defined in huaweicloud sdk
 
-        :param precedence: precedence
+        :param precedence: 优先级，数字越大，优先级越高。
         :type precedence: int
         :param match: 
         :type match: :class:`huaweicloudsdkcse.v1.CreateMatch`
-        :param route: route
+        :param route: 路由规则列表。
         :type route: list[:class:`huaweicloudsdkcse.v1.CreateRoute`]
         """
         
@@ -59,7 +59,7 @@ class CreateRules:
     def precedence(self):
         """Gets the precedence of this CreateRules.
 
-        precedence
+        优先级，数字越大，优先级越高。
 
         :return: The precedence of this CreateRules.
         :rtype: int
@@ -70,7 +70,7 @@ class CreateRules:
     def precedence(self, precedence):
         """Sets the precedence of this CreateRules.
 
-        precedence
+        优先级，数字越大，优先级越高。
 
         :param precedence: The precedence of this CreateRules.
         :type precedence: int
@@ -99,7 +99,7 @@ class CreateRules:
     def route(self):
         """Gets the route of this CreateRules.
 
-        route
+        路由规则列表。
 
         :return: The route of this CreateRules.
         :rtype: list[:class:`huaweicloudsdkcse.v1.CreateRoute`]
@@ -110,7 +110,7 @@ class CreateRules:
     def route(self, route):
         """Sets the route of this CreateRules.
 
-        route
+        路由规则列表。
 
         :param route: The route of this CreateRules.
         :type route: list[:class:`huaweicloudsdkcse.v1.CreateRoute`]

@@ -33,7 +33,7 @@ class CreateLoadbalancerAutoscalingOption:
 
         :param enable: 负载均衡器弹性扩缩容开关
         :type enable: bool
-        :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID，类型为L7_Elastic，有七层监听器时，该字段不能为空。
+        :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID，类型为L7_elastic，有七层监听器时，该字段不能为空。  该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
         :type min_l7_flavor_id: str
         """
         
@@ -73,7 +73,7 @@ class CreateLoadbalancerAutoscalingOption:
     def min_l7_flavor_id(self):
         """Gets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
 
-        弹性扩缩容的最小七层规格ID，类型为L7_Elastic，有七层监听器时，该字段不能为空。
+        弹性扩缩容的最小七层规格ID，类型为L7_elastic，有七层监听器时，该字段不能为空。  该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
 
         :return: The min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateLoadbalancerAutoscalingOption:
     def min_l7_flavor_id(self, min_l7_flavor_id):
         """Sets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
 
-        弹性扩缩容的最小七层规格ID，类型为L7_Elastic，有七层监听器时，该字段不能为空。
+        弹性扩缩容的最小七层规格ID，类型为L7_elastic，有七层监听器时，该字段不能为空。  该字段已经废弃，但仍然保留兼容性支持，建议不要使用该字段。如果传入该字段，创建的弹性实例将会有保底规格并产生对应保底规格的费用。
 
         :param min_l7_flavor_id: The min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
         :type min_l7_flavor_id: str

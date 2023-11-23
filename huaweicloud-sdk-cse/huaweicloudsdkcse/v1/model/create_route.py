@@ -33,9 +33,9 @@ class CreateRoute:
 
         The model defined in huaweicloud sdk
 
-        :param name: name
+        :param name: 规则名称。
         :type name: str
-        :param weight: weight
+        :param weight: 权重值。
         :type weight: int
         :param tags: 
         :type tags: :class:`huaweicloudsdkcse.v1.CreateRouteTags`
@@ -59,7 +59,7 @@ class CreateRoute:
     def name(self):
         """Gets the name of this CreateRoute.
 
-        name
+        规则名称。
 
         :return: The name of this CreateRoute.
         :rtype: str
@@ -70,7 +70,7 @@ class CreateRoute:
     def name(self, name):
         """Sets the name of this CreateRoute.
 
-        name
+        规则名称。
 
         :param name: The name of this CreateRoute.
         :type name: str
@@ -81,7 +81,7 @@ class CreateRoute:
     def weight(self):
         """Gets the weight of this CreateRoute.
 
-        weight
+        权重值。
 
         :return: The weight of this CreateRoute.
         :rtype: int
@@ -92,7 +92,7 @@ class CreateRoute:
     def weight(self, weight):
         """Sets the weight of this CreateRoute.
 
-        weight
+        权重值。
 
         :param weight: The weight of this CreateRoute.
         :type weight: int

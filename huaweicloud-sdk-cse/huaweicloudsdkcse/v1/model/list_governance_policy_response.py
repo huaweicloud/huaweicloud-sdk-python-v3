@@ -18,7 +18,7 @@ class ListGovernancePolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ListGovernancePolicyResponseBody]'
+        'body': 'list[GovPolicyDetail]'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListGovernancePolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 查询治理策略列表响应结构体
-        :type body: list[:class:`huaweicloudsdkcse.v1.ListGovernancePolicyResponseBody`]
+        :param body: 查询治理策略列表响应结构体。
+        :type body: list[:class:`huaweicloudsdkcse.v1.GovPolicyDetail`]
         """
         
         super(ListGovernancePolicyResponse, self).__init__()
@@ -46,10 +46,10 @@ class ListGovernancePolicyResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListGovernancePolicyResponse.
 
-        查询治理策略列表响应结构体
+        查询治理策略列表响应结构体。
 
         :return: The body of this ListGovernancePolicyResponse.
-        :rtype: list[:class:`huaweicloudsdkcse.v1.ListGovernancePolicyResponseBody`]
+        :rtype: list[:class:`huaweicloudsdkcse.v1.GovPolicyDetail`]
         """
         return self._body
 
@@ -57,10 +57,10 @@ class ListGovernancePolicyResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ListGovernancePolicyResponse.
 
-        查询治理策略列表响应结构体
+        查询治理策略列表响应结构体。
 
         :param body: The body of this ListGovernancePolicyResponse.
-        :type body: list[:class:`huaweicloudsdkcse.v1.ListGovernancePolicyResponseBody`]
+        :type body: list[:class:`huaweicloudsdkcse.v1.GovPolicyDetail`]
         """
         self._body = body
 

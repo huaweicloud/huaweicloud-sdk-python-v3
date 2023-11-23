@@ -19,7 +19,7 @@ class EngineSimpleInfo:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'enterpris_project_id': 'str',
+        'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
         'type': 'str',
         'description': 'str',
@@ -47,32 +47,32 @@ class EngineSimpleInfo:
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'enterpris_project_id': 'enterpris_project_id',
-        'enterprise_project_name': 'enterprise_project_name',
+        'enterprise_project_id': 'enterpriseProjectId',
+        'enterprise_project_name': 'enterpriseProjectName',
         'type': 'type',
         'description': 'description',
         'flavor': 'flavor',
         'payment': 'payment',
-        'auth_type': 'auth_type',
+        'auth_type': 'authType',
         'status': 'status',
-        'external_address': 'external_address',
-        'service_endpoint': 'service_endpoint',
-        'public_address': 'public_address',
-        'public_service_endpoint': 'public_service_endpoint',
-        'total_instance': 'total_instance',
-        'used_instance': 'used_instance',
-        'available_instance': 'available_instance',
+        'external_address': 'externalAddress',
+        'service_endpoint': 'serviceEndpoint',
+        'public_address': 'publicAddress',
+        'public_service_endpoint': 'publicServiceEndpoint',
+        'total_instance': 'totalInstance',
+        'used_instance': 'usedInstance',
+        'available_instance': 'availableInstance',
         'version': 'version',
-        'latest_version': 'latest_version',
-        'create_time': 'create_time',
-        'due_to': 'due_to',
-        'latest_job_id': 'latest_job_id',
-        'engine_additional_actions': 'engine_additional_actions',
-        'spec_type': 'spec_type',
+        'latest_version': 'latestVersion',
+        'create_time': 'createTime',
+        'due_to': 'dueTo',
+        'latest_job_id': 'latestJobId',
+        'engine_additional_actions': 'engineAdditionalActions',
+        'spec_type': 'specType',
         'reference': 'reference'
     }
 
-    def __init__(self, id=None, name=None, enterpris_project_id=None, enterprise_project_name=None, type=None, description=None, flavor=None, payment=None, auth_type=None, status=None, external_address=None, service_endpoint=None, public_address=None, public_service_endpoint=None, total_instance=None, used_instance=None, available_instance=None, version=None, latest_version=None, create_time=None, due_to=None, latest_job_id=None, engine_additional_actions=None, spec_type=None, reference=None):
+    def __init__(self, id=None, name=None, enterprise_project_id=None, enterprise_project_name=None, type=None, description=None, flavor=None, payment=None, auth_type=None, status=None, external_address=None, service_endpoint=None, public_address=None, public_service_endpoint=None, total_instance=None, used_instance=None, available_instance=None, version=None, latest_version=None, create_time=None, due_to=None, latest_job_id=None, engine_additional_actions=None, spec_type=None, reference=None):
         """EngineSimpleInfo
 
         The model defined in huaweicloud sdk
@@ -81,8 +81,8 @@ class EngineSimpleInfo:
         :type id: str
         :param name: 引擎的名称
         :type name: str
-        :param enterpris_project_id: 微服务引擎专享版所属企业项目ID
-        :type enterpris_project_id: str
+        :param enterprise_project_id: 微服务引擎专享版所属企业项目ID
+        :type enterprise_project_id: str
         :param enterprise_project_name: 微服务引擎专享版所属企业项目名称
         :type enterprise_project_name: str
         :param type: 微服务引擎专享版的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
@@ -133,7 +133,7 @@ class EngineSimpleInfo:
 
         self._id = None
         self._name = None
-        self._enterpris_project_id = None
+        self._enterprise_project_id = None
         self._enterprise_project_name = None
         self._type = None
         self._description = None
@@ -162,8 +162,8 @@ class EngineSimpleInfo:
             self.id = id
         if name is not None:
             self.name = name
-        if enterpris_project_id is not None:
-            self.enterpris_project_id = enterpris_project_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if enterprise_project_name is not None:
             self.enterprise_project_name = enterprise_project_name
         if type is not None:
@@ -254,26 +254,26 @@ class EngineSimpleInfo:
         self._name = name
 
     @property
-    def enterpris_project_id(self):
-        """Gets the enterpris_project_id of this EngineSimpleInfo.
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this EngineSimpleInfo.
 
         微服务引擎专享版所属企业项目ID
 
-        :return: The enterpris_project_id of this EngineSimpleInfo.
+        :return: The enterprise_project_id of this EngineSimpleInfo.
         :rtype: str
         """
-        return self._enterpris_project_id
+        return self._enterprise_project_id
 
-    @enterpris_project_id.setter
-    def enterpris_project_id(self, enterpris_project_id):
-        """Sets the enterpris_project_id of this EngineSimpleInfo.
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this EngineSimpleInfo.
 
         微服务引擎专享版所属企业项目ID
 
-        :param enterpris_project_id: The enterpris_project_id of this EngineSimpleInfo.
-        :type enterpris_project_id: str
+        :param enterprise_project_id: The enterprise_project_id of this EngineSimpleInfo.
+        :type enterprise_project_id: str
         """
-        self._enterpris_project_id = enterpris_project_id
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def enterprise_project_name(self):

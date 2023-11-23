@@ -25,10 +25,10 @@ class EntrypointItem:
     }
 
     attribute_map = {
-        'master_entrypoint': 'master_entrypoint',
-        'master_entrypoint_ipv6': 'master_entrypoint_ipv6',
+        'master_entrypoint': 'masterEntrypoint',
+        'master_entrypoint_ipv6': 'masterEntrypointIpv6',
         'slave_entrypoint': 'slave_entrypoint',
-        'slave_entrypoint_ipv6': 'slave_entrypoint_ipv6',
+        'slave_entrypoint_ipv6': 'slaveEntrypointIpv6',
         'type': 'type'
     }
 

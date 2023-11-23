@@ -27,12 +27,12 @@ class TaskSteps:
     }
 
     attribute_map = {
-        'task_name': 'task_name',
-        'task_names': 'task_names',
+        'task_name': 'taskName',
+        'task_names': 'taskNames',
         'status': 'status',
-        'start_time': 'start_time',
-        'end_time': 'end_time',
-        'task_executor_brief': 'task_executor_brief',
+        'start_time': 'startTime',
+        'end_time': 'endTime',
+        'task_executor_brief': 'taskExecutorBrief',
         'tasks': 'tasks'
     }
 

@@ -29,7 +29,7 @@ class ListDatastoresRequest:
 
         The model defined in huaweicloud sdk
 
-        :param datastore_name: 数据库类型。   - GaussDB(for Cassandra)数据库实例，取值为“cassandra”。   - GaussDB(for Mongo)数据库实例，取值为“mongodb”。   - GaussDB(for Influx)数据库实例，取值为“influxdb”。   - GaussDB(for Redis)数据库实例，取值为“redis”。
+        :param datastore_name: 数据库类型。   - GeminiDB Cassandra数据库实例，取值为“cassandra”。   - GeminiDB Mongo数据库实例，取值为“mongodb”。   - GeminiDB Influx数据库实例，取值为“influxdb”。   - GeminiDB Redis数据库实例，取值为“redis”。
         :type datastore_name: str
         """
         
@@ -44,7 +44,7 @@ class ListDatastoresRequest:
     def datastore_name(self):
         """Gets the datastore_name of this ListDatastoresRequest.
 
-        数据库类型。   - GaussDB(for Cassandra)数据库实例，取值为“cassandra”。   - GaussDB(for Mongo)数据库实例，取值为“mongodb”。   - GaussDB(for Influx)数据库实例，取值为“influxdb”。   - GaussDB(for Redis)数据库实例，取值为“redis”。
+        数据库类型。   - GeminiDB Cassandra数据库实例，取值为“cassandra”。   - GeminiDB Mongo数据库实例，取值为“mongodb”。   - GeminiDB Influx数据库实例，取值为“influxdb”。   - GeminiDB Redis数据库实例，取值为“redis”。
 
         :return: The datastore_name of this ListDatastoresRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListDatastoresRequest:
     def datastore_name(self, datastore_name):
         """Sets the datastore_name of this ListDatastoresRequest.
 
-        数据库类型。   - GaussDB(for Cassandra)数据库实例，取值为“cassandra”。   - GaussDB(for Mongo)数据库实例，取值为“mongodb”。   - GaussDB(for Influx)数据库实例，取值为“influxdb”。   - GaussDB(for Redis)数据库实例，取值为“redis”。
+        数据库类型。   - GeminiDB Cassandra数据库实例，取值为“cassandra”。   - GeminiDB Mongo数据库实例，取值为“mongodb”。   - GeminiDB Influx数据库实例，取值为“influxdb”。   - GeminiDB Redis数据库实例，取值为“redis”。
 
         :param datastore_name: The datastore_name of this ListDatastoresRequest.
         :type datastore_name: str

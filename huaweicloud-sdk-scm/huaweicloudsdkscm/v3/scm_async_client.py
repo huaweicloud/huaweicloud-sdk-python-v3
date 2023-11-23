@@ -35,7 +35,7 @@ class ScmAsyncClient(Client):
     def batch_push_certificate_async(self, request):
         """批量推送证书
 
-        批量推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品多个region中。
+        批量推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它云产品多个region中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -143,6 +143,73 @@ class ScmAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def deploy_certificate_async(self, request):
+        """部署证书
+
+        部署SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它云产品中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeployCertificate
+        :type request: :class:`huaweicloudsdkscm.v3.DeployCertificateRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.DeployCertificateResponse`
+        """
+        http_info = self._deploy_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def deploy_certificate_async_invoker(self, request):
+        http_info = self._deploy_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _deploy_certificate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/scm/certificates/{certificate_id}/deploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeployCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

@@ -667,6 +667,75 @@ class SecMasterClient(Client):
 
         return http_info
 
+    def create_dataspace(self, request):
+        """create dataspace (创建数据空间)
+
+        create dataspace
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDataspace
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateDataspaceRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateDataspaceResponse`
+        """
+        http_info = self._create_dataspace_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dataspace_invoker(self, request):
+        http_info = self._create_dataspace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_dataspace_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/dataspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataspaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_incident(self, request):
         """创建事件
 
@@ -788,6 +857,75 @@ class SecMasterClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_pipe(self, request):
+        """create pipe (创建数据管道)
+
+        create pipe
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePipe
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreatePipeRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePipeResponse`
+        """
+        http_info = self._create_pipe_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_pipe_invoker(self, request):
+        http_info = self._create_pipe_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_pipe_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/pipes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePipeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2228,6 +2366,166 @@ class SecMasterClient(Client):
 
         return http_info
 
+    def list_dataclass(self, request):
+        """查询数据类列表
+
+        查询数据类列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDataclass
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataclassRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataclassResponse`
+        """
+        http_info = self._list_dataclass_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dataclass_invoker(self, request):
+        http_info = self._list_dataclass_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dataclass_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/dataclasses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataclassResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'business_code' in local_var_params:
+            query_params.append(('business_code', local_var_params['business_code']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'is_built_in' in local_var_params:
+            query_params.append(('is_built_in', local_var_params['is_built_in']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dataclass_fields(self, request):
+        """查询字段列表
+
+        查询字段列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDataclassFields
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataclassFieldsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataclassFieldsResponse`
+        """
+        http_info = self._list_dataclass_fields_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dataclass_fields_invoker(self, request):
+        http_info = self._list_dataclass_fields_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dataclass_fields_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/dataclasses/{dataclass_id}/fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataclassFieldsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'dataclass_id' in local_var_params:
+            path_params['dataclass_id'] = local_var_params['dataclass_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'is_built_in' in local_var_params:
+            query_params.append(('is_built_in', local_var_params['is_built_in']))
+        if 'field_category' in local_var_params:
+            query_params.append(('field_category', local_var_params['field_category']))
+        if 'mapping' in local_var_params:
+            query_params.append(('mapping', local_var_params['mapping']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_dataobject_relations(self, request):
         """查询关联Dataobject列表
 
@@ -2882,6 +3180,95 @@ class SecMasterClient(Client):
             query_params.append(('dataclass_name', local_var_params['dataclass_name']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_workflows(self, request):
+        """查询流程列表
+
+        查询流程列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListWorkflows
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListWorkflowsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListWorkflowsResponse`
+        """
+        http_info = self._list_workflows_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_workflows_invoker(self, request):
+        http_info = self._list_workflows_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workflows_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/workflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkflowsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'sortby' in local_var_params:
+            query_params.append(('sortby', local_var_params['sortby']))
+        if 'enabled' in local_var_params:
+            query_params.append(('enabled', local_var_params['enabled']))
+        if 'last_version' in local_var_params:
+            query_params.append(('last_version', local_var_params['last_version']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'dataclass_id' in local_var_params:
+            query_params.append(('dataclass_id', local_var_params['dataclass_id']))
+        if 'dataclass_name' in local_var_params:
+            query_params.append(('dataclass_name', local_var_params['dataclass_name']))
+        if 'aop_type' in local_var_params:
+            query_params.append(('aop_type', local_var_params['aop_type']))
 
         header_params = {}
 

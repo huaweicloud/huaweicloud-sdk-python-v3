@@ -109,7 +109,7 @@ class CreateInstanceReq:
         :type ssl_enable: bool
         :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2(专属云)   - dms.physical.storage.ultra.dss.v2(专属云)
         :type storage_spec_code: str
-        :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
+        :param enterprise_project_id: 企业项目ID。若为企业项目账号，该参数必填。
         :type enterprise_project_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
@@ -598,7 +598,7 @@ class CreateInstanceReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateInstanceReq.
 
-        企业项目ID。若为企业项目帐号，该参数必填。
+        企业项目ID。若为企业项目账号，该参数必填。
 
         :return: The enterprise_project_id of this CreateInstanceReq.
         :rtype: str
@@ -609,7 +609,7 @@ class CreateInstanceReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateInstanceReq.
 
-        企业项目ID。若为企业项目帐号，该参数必填。
+        企业项目ID。若为企业项目账号，该参数必填。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceReq.
         :type enterprise_project_id: str
