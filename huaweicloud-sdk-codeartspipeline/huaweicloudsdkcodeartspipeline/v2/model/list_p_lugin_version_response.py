@@ -21,7 +21,7 @@ class ListPLuginVersionResponse(SdkResponse):
         'offset': 'int',
         'limit': 'int',
         'total': 'int',
-        'data': 'list[PageInfoResponseListPluginBasicVOData]'
+        'data': 'list[PluginBasicVO]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListPLuginVersionResponse(SdkResponse):
         :param total: 总数
         :type total: int
         :param data: 结果集
-        :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoResponseListPluginBasicVOData`]
+        :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicVO`]
         """
         
         super(ListPLuginVersionResponse, self).__init__()
@@ -136,7 +136,7 @@ class ListPLuginVersionResponse(SdkResponse):
         结果集
 
         :return: The data of this ListPLuginVersionResponse.
-        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoResponseListPluginBasicVOData`]
+        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicVO`]
         """
         return self._data
 
@@ -147,7 +147,7 @@ class ListPLuginVersionResponse(SdkResponse):
         结果集
 
         :param data: The data of this ListPLuginVersionResponse.
-        :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoResponseListPluginBasicVOData`]
+        :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicVO`]
         """
         self._data = data
 

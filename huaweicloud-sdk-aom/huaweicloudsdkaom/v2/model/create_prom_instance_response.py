@@ -30,7 +30,7 @@ class CreatePromInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param prometheus: 普罗实例列表名称
+        :param prometheus: Prometheus实例名称列表。
         :type prometheus: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`]
         """
         
@@ -46,7 +46,7 @@ class CreatePromInstanceResponse(SdkResponse):
     def prometheus(self):
         """Gets the prometheus of this CreatePromInstanceResponse.
 
-        普罗实例列表名称
+        Prometheus实例名称列表。
 
         :return: The prometheus of this CreatePromInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`]
@@ -57,7 +57,7 @@ class CreatePromInstanceResponse(SdkResponse):
     def prometheus(self, prometheus):
         """Sets the prometheus of this CreatePromInstanceResponse.
 
-        普罗实例列表名称
+        Prometheus实例名称列表。
 
         :param prometheus: The prometheus of this CreatePromInstanceResponse.
         :type prometheus: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`]

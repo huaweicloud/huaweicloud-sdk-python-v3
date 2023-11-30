@@ -19,6 +19,7 @@ class PublisherRequest:
     openapi_types = {
         'name': 'str',
         'user_id': 'str',
+        'description': 'str',
         'logo_url': 'str',
         'website': 'str',
         'support_url': 'str',
@@ -30,6 +31,7 @@ class PublisherRequest:
     attribute_map = {
         'name': 'name',
         'user_id': 'user_id',
+        'description': 'description',
         'logo_url': 'logo_url',
         'website': 'website',
         'support_url': 'support_url',
@@ -38,7 +40,7 @@ class PublisherRequest:
         'publisher_unique_id': 'publisher_unique_id'
     }
 
-    def __init__(self, name=None, user_id=None, logo_url=None, website=None, support_url=None, source_url=None, en_name=None, publisher_unique_id=None):
+    def __init__(self, name=None, user_id=None, description=None, logo_url=None, website=None, support_url=None, source_url=None, en_name=None, publisher_unique_id=None):
         """PublisherRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class PublisherRequest:
         :type name: str
         :param user_id: 用户ID
         :type user_id: str
+        :param description: 描述
+        :type description: str
         :param logo_url: 图标URL
         :type logo_url: str
         :param website: 网页地址
@@ -65,6 +69,7 @@ class PublisherRequest:
 
         self._name = None
         self._user_id = None
+        self._description = None
         self._logo_url = None
         self._website = None
         self._support_url = None
@@ -77,6 +82,8 @@ class PublisherRequest:
             self.name = name
         if user_id is not None:
             self.user_id = user_id
+        if description is not None:
+            self.description = description
         if logo_url is not None:
             self.logo_url = logo_url
         if website is not None:
@@ -133,6 +140,28 @@ class PublisherRequest:
         :type user_id: str
         """
         self._user_id = user_id
+
+    @property
+    def description(self):
+        """Gets the description of this PublisherRequest.
+
+        描述
+
+        :return: The description of this PublisherRequest.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this PublisherRequest.
+
+        描述
+
+        :param description: The description of this PublisherRequest.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def logo_url(self):

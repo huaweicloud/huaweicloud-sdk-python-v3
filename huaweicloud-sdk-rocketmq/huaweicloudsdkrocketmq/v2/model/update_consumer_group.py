@@ -45,9 +45,9 @@ class UpdateConsumerGroup:
         :type broadcast: bool
         :param brokers: 关联的代理列表。
         :type brokers: list[str]
-        :param name: 消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        :param name: 待修改参数的消费组（消费组名称不支持修改）。
         :type name: str
-        :param retry_max_time: 最大重试次数。
+        :param retry_max_time: 最大重试次数，取值范围为1~16。
         :type retry_max_time: float
         :param from_beginning: 是否重头消费。
         :type from_beginning: bool
@@ -143,7 +143,7 @@ class UpdateConsumerGroup:
     def name(self):
         """Gets the name of this UpdateConsumerGroup.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        待修改参数的消费组（消费组名称不支持修改）。
 
         :return: The name of this UpdateConsumerGroup.
         :rtype: str
@@ -154,7 +154,7 @@ class UpdateConsumerGroup:
     def name(self, name):
         """Sets the name of this UpdateConsumerGroup.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        待修改参数的消费组（消费组名称不支持修改）。
 
         :param name: The name of this UpdateConsumerGroup.
         :type name: str
@@ -165,7 +165,7 @@ class UpdateConsumerGroup:
     def retry_max_time(self):
         """Gets the retry_max_time of this UpdateConsumerGroup.
 
-        最大重试次数。
+        最大重试次数，取值范围为1~16。
 
         :return: The retry_max_time of this UpdateConsumerGroup.
         :rtype: float
@@ -176,7 +176,7 @@ class UpdateConsumerGroup:
     def retry_max_time(self, retry_max_time):
         """Sets the retry_max_time of this UpdateConsumerGroup.
 
-        最大重试次数。
+        最大重试次数，取值范围为1~16。
 
         :param retry_max_time: The retry_max_time of this UpdateConsumerGroup.
         :type retry_max_time: float

@@ -33,11 +33,11 @@ class ApplicationModel:
 
         The model defined in huaweicloud sdk
 
-        :param app_id: 应用id
+        :param app_id: 应用id。
         :type app_id: str
-        :param app_name: 应用名称
+        :param app_name: 应用名称。
         :type app_name: str
-        :param app_type: 应用来源
+        :param app_type: 应用来源。
         :type app_type: str
         """
         
@@ -59,7 +59,7 @@ class ApplicationModel:
     def app_id(self):
         """Gets the app_id of this ApplicationModel.
 
-        应用id
+        应用id。
 
         :return: The app_id of this ApplicationModel.
         :rtype: str
@@ -70,7 +70,7 @@ class ApplicationModel:
     def app_id(self, app_id):
         """Sets the app_id of this ApplicationModel.
 
-        应用id
+        应用id。
 
         :param app_id: The app_id of this ApplicationModel.
         :type app_id: str
@@ -81,7 +81,7 @@ class ApplicationModel:
     def app_name(self):
         """Gets the app_name of this ApplicationModel.
 
-        应用名称
+        应用名称。
 
         :return: The app_name of this ApplicationModel.
         :rtype: str
@@ -92,7 +92,7 @@ class ApplicationModel:
     def app_name(self, app_name):
         """Sets the app_name of this ApplicationModel.
 
-        应用名称
+        应用名称。
 
         :param app_name: The app_name of this ApplicationModel.
         :type app_name: str
@@ -103,7 +103,7 @@ class ApplicationModel:
     def app_type(self):
         """Gets the app_type of this ApplicationModel.
 
-        应用来源
+        应用来源。
 
         :return: The app_type of this ApplicationModel.
         :rtype: str
@@ -114,7 +114,7 @@ class ApplicationModel:
     def app_type(self, app_type):
         """Sets the app_type of this ApplicationModel.
 
-        应用来源
+        应用来源。
 
         :param app_type: The app_type of this ApplicationModel.
         :type app_type: str

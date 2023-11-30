@@ -5522,6 +5522,81 @@ class CodeArtsPipelineClient(Client):
 
         return http_info
 
+    def show_pipeline_log(self, request):
+        """查询流水线日志
+
+        查询流水线日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPipelineLog
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowPipelineLogRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowPipelineLogResponse`
+        """
+        http_info = self._show_pipeline_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pipeline_log_invoker(self, request):
+        http_info = self._show_pipeline_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pipeline_log_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/jobs/{job_run_id}/steps/{step_run_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPipelineLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+        if 'job_run_id' in local_var_params:
+            path_params['job_run_id'] = local_var_params['job_run_id']
+        if 'step_run_id' in local_var_params:
+            path_params['step_run_id'] = local_var_params['step_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_pipeline_run_detail(self, request):
         """获取流水线状态/获取流水线执行详情
 

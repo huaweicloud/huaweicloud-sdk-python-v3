@@ -693,7 +693,7 @@ client = IamClient.new_builder() \
 
 ##### 3.3.1 IAM endpoint配置 [:top:](#用户手册-top)
 
-自动获取用户的 projectId 和 domainId 会分别调用统一身份认证服务的 [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) 和 [KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) 接口，默认访问的endpoint为 https://iam.myhuaweicloud.com， **欧洲站用户需要指定 endpoint 为 https://iam.eu-west-101.myhuaweicloud.com**
+自动获取用户的 projectId 和 domainId 会分别调用统一身份认证服务的 [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) 和 [KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) 接口，默认访问的endpoint为 https://iam.myhuaweicloud.com， **欧洲站用户需要指定 endpoint 为 https://iam.eu-west-101.myhuaweicloud.eu**
 
 用户可以通过以下两种方式来修改endpoint
 
@@ -943,29 +943,38 @@ HttpHandler 支持如下方法 `add_request_handler`、`add_response_handler` �
 
 可以根据需要灵活地配置请求头域参数，非必要**请勿**指定诸如`Host`、`Authorization`、`User-Agent`、`Content-Type`等通用请求头，可能会导致接口调用错误。
 
-```python
-ak = os.getenv("HUAWEICLOUD_SDK_AK")
-sk = os.getenv("HUAWEICLOUD_SDK_SK")
-credentials = BasicCredentials(ak, sk)
+**同步调用**
 
+```python
 client = VpcClient.new_builder() \
     .with_credentials(credentials) \
     .with_region(VpcRegion.value_of("cn-north-4")) \
     .build()
 
-try:
-    request = ListVpcsRequest()
-    response = client.list_vpcs_invoker(list_request) \
-        # 自定义请求头
-        .add_header("key1", "value1") \
-        .add_header("key2", "value2") \
-        .invoke()
-    print(response)
-except exceptions.ClientRequestException as e:
-    print(e.status_code)
-    print(e.request_id)
-    print(e.error_code)
-    print(e.error_msg)
+request = ListVpcsRequest()
+response = client.list_vpcs_invoker(request) \
+    # 自定义请求头
+    .add_header("key1", "value1") \
+    .add_header("key2", "value2") \
+    .invoke()
+print(response)
+```
+
+**异步调用**
+
+```python
+client = VpcAsyncClient.new_builder() \
+    .with_credentials(credentials) \
+    .with_region(VpcRegion.value_of("cn-north-4")) \
+    .build()
+
+request = ListVpcsRequest()
+response = client.list_vpcs_async_invoker(request) \
+    # 自定义请求头
+    .add_header("key1", "value1") \
+    .add_header("key2", "value2") \
+    .invoke().result()
+print(response)
 ```
 
 ### 8. 文件上传与下载 [:top:](#用户手册-top)

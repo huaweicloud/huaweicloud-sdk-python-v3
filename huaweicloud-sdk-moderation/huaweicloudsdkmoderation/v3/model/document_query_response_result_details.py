@@ -22,6 +22,9 @@ class DocumentQueryResponseResultDetails:
         'label': 'str',
         'index': 'int',
         'text': 'str',
+        'start_position': 'int',
+        'end_position': 'int',
+        'image_url': 'str',
         'segments': 'list[DocumentQueryResponseResultSegments]',
         'video_image_details': 'list[DocumentVideoImageDetail]',
         'audio_details': 'list[DocumentAudioDetail]'
@@ -33,12 +36,15 @@ class DocumentQueryResponseResultDetails:
         'label': 'label',
         'index': 'index',
         'text': 'text',
+        'start_position': 'start_position',
+        'end_position': 'end_position',
+        'image_url': 'image_url',
         'segments': 'segments',
         'video_image_details': 'video_image_details',
         'audio_details': 'audio_details'
     }
 
-    def __init__(self, suggestion=None, type=None, label=None, index=None, text=None, segments=None, video_image_details=None, audio_details=None):
+    def __init__(self, suggestion=None, type=None, label=None, index=None, text=None, start_position=None, end_position=None, image_url=None, segments=None, video_image_details=None, audio_details=None):
         """DocumentQueryResponseResultDetails
 
         The model defined in huaweicloud sdk
@@ -51,8 +57,14 @@ class DocumentQueryResponseResultDetails:
         :type label: str
         :param index: 当前处理的片段索引
         :type index: int
-        :param text: 当前内容片段中的文本内容
+        :param text: 当前内容片段中的文本内容，仅当type为text时存在
         :type text: str
+        :param start_position: 当前文本内容片段在输入中的起始位置，仅当type为text时存在
+        :type start_position: int
+        :param end_position: 当前文本内容片段在输入中的结束位置，仅当type为text时存在
+        :type end_position: int
+        :param image_url: 网页图片url，仅当type为image且文档格式为webpage时存在
+        :type image_url: str
         :param segments: 命中的风险片段信息列表，仅在有命中敏感词时才返回
         :type segments: list[:class:`huaweicloudsdkmoderation.v3.DocumentQueryResponseResultSegments`]
         :param video_image_details: 网页视频中截帧部分审核详情
@@ -68,6 +80,9 @@ class DocumentQueryResponseResultDetails:
         self._label = None
         self._index = None
         self._text = None
+        self._start_position = None
+        self._end_position = None
+        self._image_url = None
         self._segments = None
         self._video_image_details = None
         self._audio_details = None
@@ -83,6 +98,12 @@ class DocumentQueryResponseResultDetails:
             self.index = index
         if text is not None:
             self.text = text
+        if start_position is not None:
+            self.start_position = start_position
+        if end_position is not None:
+            self.end_position = end_position
+        if image_url is not None:
+            self.image_url = image_url
         if segments is not None:
             self.segments = segments
         if video_image_details is not None:
@@ -182,7 +203,7 @@ class DocumentQueryResponseResultDetails:
     def text(self):
         """Gets the text of this DocumentQueryResponseResultDetails.
 
-        当前内容片段中的文本内容
+        当前内容片段中的文本内容，仅当type为text时存在
 
         :return: The text of this DocumentQueryResponseResultDetails.
         :rtype: str
@@ -193,12 +214,78 @@ class DocumentQueryResponseResultDetails:
     def text(self, text):
         """Sets the text of this DocumentQueryResponseResultDetails.
 
-        当前内容片段中的文本内容
+        当前内容片段中的文本内容，仅当type为text时存在
 
         :param text: The text of this DocumentQueryResponseResultDetails.
         :type text: str
         """
         self._text = text
+
+    @property
+    def start_position(self):
+        """Gets the start_position of this DocumentQueryResponseResultDetails.
+
+        当前文本内容片段在输入中的起始位置，仅当type为text时存在
+
+        :return: The start_position of this DocumentQueryResponseResultDetails.
+        :rtype: int
+        """
+        return self._start_position
+
+    @start_position.setter
+    def start_position(self, start_position):
+        """Sets the start_position of this DocumentQueryResponseResultDetails.
+
+        当前文本内容片段在输入中的起始位置，仅当type为text时存在
+
+        :param start_position: The start_position of this DocumentQueryResponseResultDetails.
+        :type start_position: int
+        """
+        self._start_position = start_position
+
+    @property
+    def end_position(self):
+        """Gets the end_position of this DocumentQueryResponseResultDetails.
+
+        当前文本内容片段在输入中的结束位置，仅当type为text时存在
+
+        :return: The end_position of this DocumentQueryResponseResultDetails.
+        :rtype: int
+        """
+        return self._end_position
+
+    @end_position.setter
+    def end_position(self, end_position):
+        """Sets the end_position of this DocumentQueryResponseResultDetails.
+
+        当前文本内容片段在输入中的结束位置，仅当type为text时存在
+
+        :param end_position: The end_position of this DocumentQueryResponseResultDetails.
+        :type end_position: int
+        """
+        self._end_position = end_position
+
+    @property
+    def image_url(self):
+        """Gets the image_url of this DocumentQueryResponseResultDetails.
+
+        网页图片url，仅当type为image且文档格式为webpage时存在
+
+        :return: The image_url of this DocumentQueryResponseResultDetails.
+        :rtype: str
+        """
+        return self._image_url
+
+    @image_url.setter
+    def image_url(self, image_url):
+        """Sets the image_url of this DocumentQueryResponseResultDetails.
+
+        网页图片url，仅当type为image且文档格式为webpage时存在
+
+        :param image_url: The image_url of this DocumentQueryResponseResultDetails.
+        :type image_url: str
+        """
+        self._image_url = image_url
 
     @property
     def segments(self):

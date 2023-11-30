@@ -35,13 +35,13 @@ class AccessCodeModel:
 
         The model defined in huaweicloud sdk
 
-        :param access_code: access_code
+        :param access_code: access_code。
         :type access_code: str
-        :param access_code_id: access_code_id
+        :param access_code_id: access_code_id。
         :type access_code_id: str
-        :param create_at: 创建时间
+        :param create_at: 创建时间。
         :type create_at: int
-        :param status: 状态 enable:开启 unenable:关闭
+        :param status: 状态。
         :type status: str
         """
         
@@ -66,7 +66,7 @@ class AccessCodeModel:
     def access_code(self):
         """Gets the access_code of this AccessCodeModel.
 
-        access_code
+        access_code。
 
         :return: The access_code of this AccessCodeModel.
         :rtype: str
@@ -77,7 +77,7 @@ class AccessCodeModel:
     def access_code(self, access_code):
         """Sets the access_code of this AccessCodeModel.
 
-        access_code
+        access_code。
 
         :param access_code: The access_code of this AccessCodeModel.
         :type access_code: str
@@ -88,7 +88,7 @@ class AccessCodeModel:
     def access_code_id(self):
         """Gets the access_code_id of this AccessCodeModel.
 
-        access_code_id
+        access_code_id。
 
         :return: The access_code_id of this AccessCodeModel.
         :rtype: str
@@ -99,7 +99,7 @@ class AccessCodeModel:
     def access_code_id(self, access_code_id):
         """Sets the access_code_id of this AccessCodeModel.
 
-        access_code_id
+        access_code_id。
 
         :param access_code_id: The access_code_id of this AccessCodeModel.
         :type access_code_id: str
@@ -110,7 +110,7 @@ class AccessCodeModel:
     def create_at(self):
         """Gets the create_at of this AccessCodeModel.
 
-        创建时间
+        创建时间。
 
         :return: The create_at of this AccessCodeModel.
         :rtype: int
@@ -121,7 +121,7 @@ class AccessCodeModel:
     def create_at(self, create_at):
         """Sets the create_at of this AccessCodeModel.
 
-        创建时间
+        创建时间。
 
         :param create_at: The create_at of this AccessCodeModel.
         :type create_at: int
@@ -132,7 +132,7 @@ class AccessCodeModel:
     def status(self):
         """Gets the status of this AccessCodeModel.
 
-        状态 enable:开启 unenable:关闭
+        状态。
 
         :return: The status of this AccessCodeModel.
         :rtype: str
@@ -143,7 +143,7 @@ class AccessCodeModel:
     def status(self, status):
         """Sets the status of this AccessCodeModel.
 
-        状态 enable:开启 unenable:关闭
+        状态。
 
         :param status: The status of this AccessCodeModel.
         :type status: str

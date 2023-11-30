@@ -20,7 +20,7 @@ class ShowDataSetsResponse(SdkResponse):
     openapi_types = {
         'count': 'float',
         'entities': 'list[Entity]',
-        'facets': 'object',
+        'facets': 'list[object]',
         'metrics': 'object',
         'referred_entities': 'object'
     }
@@ -43,7 +43,7 @@ class ShowDataSetsResponse(SdkResponse):
         :param entities: 资产实体列表
         :type entities: list[:class:`huaweicloudsdkdataartsstudio.v1.Entity`]
         :param facets: 资产分类facets维度信息列表，数据结构List&lt;Map&lt;String, List&lt;Aggregation&gt;&gt;&gt; 取值为count
-        :type facets: object
+        :type facets: list[object]
         :param metrics: 资产分类metrics维度信息列表，数据结构List&lt;Map&lt;String, List&lt;Aggregation&gt;&gt;&gt;  取值为aggregation
         :type metrics: object
         :param referred_entities: 关联资产，数据类型Map&lt;String, Entity&gt;
@@ -121,7 +121,7 @@ class ShowDataSetsResponse(SdkResponse):
         资产分类facets维度信息列表，数据结构List<Map<String, List<Aggregation>>> 取值为count
 
         :return: The facets of this ShowDataSetsResponse.
-        :rtype: object
+        :rtype: list[object]
         """
         return self._facets
 
@@ -132,7 +132,7 @@ class ShowDataSetsResponse(SdkResponse):
         资产分类facets维度信息列表，数据结构List<Map<String, List<Aggregation>>> 取值为count
 
         :param facets: The facets of this ShowDataSetsResponse.
-        :type facets: object
+        :type facets: list[object]
         """
         self._facets = facets
 

@@ -51,9 +51,9 @@ class SlowlogItem:
         :type duration: str
         :param shard_name: 慢命令所在的分片名称，仅在实例类型为集群时支持
         :type shard_name: str
-        :param database_id: 慢日志数据库id
+        :param database_id: 数据库id，当前只对指定客户开放
         :type database_id: int
-        :param username: 慢日志名称
+        :param username: 操作慢日志的账号名称，当前只对指定客户开放
         :type username: str
         """
         
@@ -197,7 +197,7 @@ class SlowlogItem:
     def database_id(self):
         """Gets the database_id of this SlowlogItem.
 
-        慢日志数据库id
+        数据库id，当前只对指定客户开放
 
         :return: The database_id of this SlowlogItem.
         :rtype: int
@@ -208,7 +208,7 @@ class SlowlogItem:
     def database_id(self, database_id):
         """Sets the database_id of this SlowlogItem.
 
-        慢日志数据库id
+        数据库id，当前只对指定客户开放
 
         :param database_id: The database_id of this SlowlogItem.
         :type database_id: int
@@ -219,7 +219,7 @@ class SlowlogItem:
     def username(self):
         """Gets the username of this SlowlogItem.
 
-        慢日志名称
+        操作慢日志的账号名称，当前只对指定客户开放
 
         :return: The username of this SlowlogItem.
         :rtype: str
@@ -230,7 +230,7 @@ class SlowlogItem:
     def username(self, username):
         """Sets the username of this SlowlogItem.
 
-        慢日志名称
+        操作慢日志的账号名称，当前只对指定客户开放
 
         :param username: The username of this SlowlogItem.
         :type username: str

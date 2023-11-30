@@ -1,3 +1,548 @@
+# 3.1.70 2023-11-30
+
+### HuaweiCloud SDK DIS
+
+- _Features_
+  - Support `DIS`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPermissions**
+    - changes of response param
+      - `* : map<string, AuthModel> -> string`
+  - **ListAccessCode**
+    - changes of response param
+      - `- access_codes.status: enum value [enable,unenable]`
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSubCustomerBillDetail**
+    - changes of response param
+      - `* fee_records.usage_amount: double -> bigdecimal`
+      - `* fee_records.free_resource_usage: double -> bigdecimal`
+      - `* fee_records.ri_usage: double -> bigdecimal`
+      - `* fee_records.official_amount: double -> bigdecimal`
+      - `* fee_records.official_discount_amount: double -> bigdecimal`
+      - `* fee_records.payment_amount: double -> bigdecimal`
+      - `* fee_records.cash_amount: double -> bigdecimal`
+      - `* fee_records.credit_amount: double -> bigdecimal`
+      - `* fee_records.coupon_amount: double -> bigdecimal`
+      - `* fee_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* fee_records.stored_value_card_amount: double -> bigdecimal`
+      - `* fee_records.debt_amount: double -> bigdecimal`
+      - `* fee_records.writeoff_amount: double -> bigdecimal`
+
+### HuaweiCloud SDK CC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBandwidthPackageTags**
+    - changes of response param
+      - `+ tags.values`
+      - `- tags.value`
+      - `* tags: list<Tag> -> list<MultivaluedTag>`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the following APIs:
+    - `ShowClusterConfig`
+    - `UpdateClusterLogConfig`
+    - `ListPartitions`
+    - `CreatePartition`
+    - `ShowPartition`
+    - `UpdatePartition`
+    - `ShowNodePoolConfigurations`
+    - `UpdateNodePoolConfiguration`
+    - `ShowClusterConfigurationDetails`
+    - `ListCharts`
+    - `UploadChart`
+    - `ShowChart`
+    - `UpdateChart`
+    - `DeleteChart`
+    - `DownloadChart`
+    - `ShowChartValues`
+    - `ShowUserChartsQuotas`
+    - `ListReleases`
+    - `CreateRelease`
+    - `ShowRelease`
+    - `UpdateRelease`
+    - `DeleteRelease`
+    - `ShowReleaseHistory`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResizeCluster**
+    - changes of request param
+      - `* extendParam: object<ResizeClusterRequestExtendParam> -> object`
+  - **UpdateClusterEip**
+    - changes of request param
+      - `* spec: object -> object<MasterEIPRequestSpec>`
+    - changes of response param
+      - `* spec: object -> object<MasterEIPResponseSpec>`
+  - **ShowClusterEndpoints**
+    - changes of response param
+      - `* spec: object -> object<OpenAPISpec>`
+  - **ShowAddonInstance**
+    - changes of response param
+      - `- status.status: enum value [unknown]`
+  - **UpdateAddonInstance**
+    - changes of response param
+      - `- status.status: enum value [unknown]`
+  - **RollbackAddonInstance**
+    - changes of response param
+      - `- status.status: enum value [unknown]`
+  - **ShowCluster**
+    - changes of response param
+      - `+ spec.enableMasterVolumeEncryption`
+  - **UpdateCluster**
+    - changes of response param
+      - `+ spec.enableMasterVolumeEncryption`
+  - **DeleteCluster**
+    - changes of request param
+      - `+ ondemand_node_policy`
+      - `+ periodic_node_policy`
+    - changes of response param
+      - `+ spec.enableMasterVolumeEncryption`
+  - **CreateAddonInstance**
+    - changes of response param
+      - `- status.status: enum value [unknown]`
+  - **ListAddonInstances**
+    - changes of response param
+      - `- items.status.status: enum value [unknown]`
+  - **CreateCluster**
+    - changes of request param
+      - `+ spec.enableMasterVolumeEncryption`
+    - changes of response param
+      - `+ spec.enableMasterVolumeEncryption`
+  - **ListClusters**
+    - changes of request param
+      - `+ status: enum value [Hibernating,Hibernation,Awaking]`
+    - changes of response param
+      - `+ items.spec.enableMasterVolumeEncryption`
+  - **ShowNode**
+    - changes of response param
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+  - **UpdateNode**
+    - changes of response param
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+  - **DeleteNode**
+    - changes of response param
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+  - **CreateNode**
+    - changes of request param
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+    - changes of response param
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+  - **ListNodes**
+    - changes of response param
+      - `+ items.spec.hostnameConfig`
+      - `+ items.spec.extendParam.kubeReservedMem`
+      - `+ items.spec.extendParam.systemReservedMem`
+      - `+ items.spec.extendParam.init-node-password`
+      - `- items.spec.extendParam.kube-reserved-mem`
+      - `- items.spec.extendParam.system-reserved-mem`
+  - **ShowNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **UpdateNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **DeleteNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **AddNode**
+    - changes of request param
+      - `+ nodeList.spec.hostnameConfig`
+  - **ResetNode**
+    - changes of request param
+      - `+ nodeList.spec.hostnameConfig`
+  - **CreateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+    - changes of response param
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **ListNodePools**
+    - changes of response param
+      - `+ items.spec.nodeTemplate.hostnameConfig`
+      - `+ items.spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ items.spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ items.spec.nodeTemplate.extendParam.init-node-password`
+      - `- items.spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- items.spec.nodeTemplate.extendParam.system-reserved-mem`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - Support the API `ShowPipelineLog`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdatePluginBaseInfo**
+    - changes of request param
+      - `+ plugin_composition_type`
+  - **CreatePublisher**
+    - changes of request param
+      - `+ description`
+  - **ListPublisher**
+    - changes of response param
+      - `+ total`
+      - `+ offset`
+      - `+ data`
+      - `+ limit`
+      - `- tenant_id`
+      - `- website`
+      - `- logo_url`
+      - `- description`
+      - `- last_update_user_id`
+      - `- source_url`
+      - `- is_delete`
+      - `- last_update_time`
+      - `- support_url`
+      - `- user_id`
+      - `- name`
+      - `- en_name`
+      - `- auth_status`
+      - `- publisher_unique_id`
+      - `- last_update_user_name`
+  - **ListBasePluginsNewPost**
+    - changes of response param
+      - `+ data.business_type`
+      - `+ data.display_name`
+      - `+ data.unique_id`
+      - `- data.businessType`
+      - `- data.displayName`
+      - `- data.uniqueId`
+      - `+ data.plugins_list.publisher_unique_id`
+      - `+ data.plugins_list.manifest_version`
+      - `- data.plugins_list.publisherUniqueId`
+      - `- data.plugins_list.manifestVersion`
+  - **ListPlugins**
+    - changes of response param
+      - `+ data.plugin_name`
+      - `+ data.display_name`
+      - `+ data.version_description`
+      - `+ data.version_attribution`
+      - `+ data.unique_id`
+      - `+ data.op_user`
+      - `+ data.op_time`
+      - `+ data.plugin_composition_type`
+      - `+ data.plugin_attribution`
+      - `+ data.workspace_id`
+      - `+ data.business_type`
+      - `+ data.business_type_display_name`
+      - `+ data.icon_url`
+      - `+ data.refer_count`
+      - `+ data.usage_count`
+      - `+ data.runtime_attribution`
+      - `- data.pluginName`
+      - `- data.displayName`
+      - `- data.versionDescription`
+      - `- data.versionAttribution`
+      - `- data.uniqueId`
+      - `- data.opUser`
+      - `- data.opTime`
+      - `- data.pluginCompositionType`
+      - `- data.pluginAttribution`
+      - `- data.workspaceId`
+      - `- data.businessType`
+      - `- data.businessTypeDisplayName`
+      - `- data.iconUrl`
+      - `- data.referCount`
+      - `- data.usageCount`
+      - `- data.runtimeAttribution`
+      - `* data: list<object> -> list<PluginBasicVO>`
+  - **ListPLuginVersion**
+    - changes of response param
+      - `+ data.plugin_name`
+      - `+ data.display_name`
+      - `+ data.version_description`
+      - `+ data.version_attribution`
+      - `+ data.unique_id`
+      - `+ data.op_user`
+      - `+ data.op_time`
+      - `+ data.plugin_composition_type`
+      - `+ data.plugin_attribution`
+      - `+ data.workspace_id`
+      - `+ data.business_type`
+      - `+ data.business_type_display_name`
+      - `+ data.icon_url`
+      - `+ data.refer_count`
+      - `+ data.usage_count`
+      - `+ data.runtime_attribution`
+      - `- data.pluginName`
+      - `- data.displayName`
+      - `- data.versionDescription`
+      - `- data.versionAttribution`
+      - `- data.uniqueId`
+      - `- data.opUser`
+      - `- data.opTime`
+      - `- data.pluginCompositionType`
+      - `- data.pluginAttribution`
+      - `- data.workspaceId`
+      - `- data.businessType`
+      - `- data.businessTypeDisplayName`
+      - `- data.iconUrl`
+      - `- data.referCount`
+      - `- data.usageCount`
+      - `- data.runtimeAttribution`
+      - `* data: list<object> -> list<PluginBasicVO>`
+  - **ShowPublisher**
+    - changes of response param
+      - `+ publisher_detail_map`
+      - `- body`
+  - **CreateBasicPlugin**
+    - changes of request param
+      - `+ plugin_composition_type`
+  - **UpdateBasicPlugin**
+    - changes of request param
+      - `+ plugin_composition_type`
+  - **CreateStrategy**
+    - changes of request param
+      - `- type`
+      - `- rules.type`
+      - `- rules.name`
+      - `- rules.layout_content`
+      - `- rules.plugin_id`
+      - `- rules.plugin_name`
+      - `- rules.plugin_version`
+      - `- rules.content`
+  - **UpdateStrategy**
+    - changes of request param
+      - `- parent_id`
+      - `- rules.type`
+      - `- rules.name`
+      - `- rules.layout_content`
+      - `- rules.plugin_id`
+      - `- rules.plugin_name`
+      - `- rules.plugin_version`
+      - `- rules.content`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SearchAtomicIndexes**
+    - changes of response param
+      - `+ data.value`
+  - **ShowAtomicIndexById**
+    - changes of response param
+      - `+ data.value`
+  - **ListDerivativeIndexes**
+    - changes of response param
+      - `+ data.value`
+  - **ShowDerivativeIndexById**
+    - changes of response param
+      - `+ data.value`
+  - **ListCompoundMetrics**
+    - changes of response param
+      - `+ data.value`
+  - **ShowCompoundMetricById**
+    - changes of response param
+      - `+ data.value`
+  - **ListApiCatalogList**
+    - changes of response param
+      - `+ apis.publish_messages`
+  - **ParseUserBehavior**
+    - changes of request param
+      - `+ params.filter.attribute: enum value [base.DataAsset.sourceType,typeName,classifications.name,tags.name,securityLevel.name,workspaceId]`
+      - `+ params.filter.operator: enum value [IN,EQ]`
+      - `* params.filter.value: object -> list<string>`
+      - `* params.filter.condition: object<ConditionInfo> -> string`
+  - **ShowDataSets**
+    - changes of request param
+      - `+ filter.attribute: enum value [base.DataAsset.sourceType,typeName,classifications.name,tags.name,securityLevel.name,workspaceId]`
+      - `+ filter.operator: enum value [IN,EQ]`
+      - `* filter.value: object -> list<string>`
+      - `* filter.condition: object<ConditionInfo> -> string`
+    - changes of response param
+      - `* facets: object -> list<object>`
+  - **ListApis**
+    - changes of request param
+      - `+ x-return-publish-messages`
+    - changes of response param
+      - `+ records.publish_messages`
+  - **ShowApi**
+    - changes of response param
+      - `+ publish_messages`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSlowlog**
+    - changes of response param
+      - `+ total_num`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support the API `ShowQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListQueueProperties**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+      - `- page`
+      - `- page_size`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - Support the APIs `BatchModifyBandwidth`, `ListEipBandwidths`, `ListBandwidthsLimit`, `UpdatePublicip`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the API `ListInfluxdbSlowLogs`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLtsConfigs**
+    - changes of response param
+      - `+ instance_lts_configs.instance.supported_log_types`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunQueryDocumentModerationJob**
+    - changes of response param
+      - `+ result.details.start_position`
+      - `+ result.details.end_position`
+      - `+ result.details.image_url`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the API `SetInstancesDbShrink`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpgradeDbMajorVersion**
+    - changes of response param
+      - `+ job_id`
+  - **ShowUpgradeDbMajorVersionStatus**
+    - changes of response param
+      - `+ check_expiration_time`
+      - `- report_expiration_time`
+  - **StartResizeFlavorAction**
+    - changes of response param
+      - `+ order_id`
+  - **StartInstanceEnlargeVolumeAction**
+    - changes of response param
+      - `+ order_id`
+  - **StartInstanceSingleToHaAction**
+    - changes of response param
+      - `+ order_id`
+  - **ListHistoryDatabase**
+    - changes of request param
+      - `+ engine`
+      - `- database_name`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - Support the APIs `ShowEngineInstanceExtendProductInfo`, `ResizeInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeFlashAsr**
+    - changes of request param
+      - `* obs_bucket_name: optional -> required`
+      - `* obs_object_key: optional -> required`
+
 # 3.1.69 2023-11-23
 
 ### HuaweiCloud SDK CFW

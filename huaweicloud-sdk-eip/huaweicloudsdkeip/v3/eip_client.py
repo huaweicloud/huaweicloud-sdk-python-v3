@@ -127,6 +127,82 @@ class EipClient(Client):
 
         return http_info
 
+    def list_bandwidths_limit(self, request):
+        """查看租户带宽限制
+
+        获取EIP带宽限制列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBandwidthsLimit
+        :type request: :class:`huaweicloudsdkeip.v3.ListBandwidthsLimitRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListBandwidthsLimitResponse`
+        """
+        http_info = self._list_bandwidths_limit_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bandwidths_limit_invoker(self, request):
+        http_info = self._list_bandwidths_limit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bandwidths_limit_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/eip/eip-bandwidth-limits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthsLimitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'csv'
+        if 'charge_mode' in local_var_params:
+            query_params.append(('charge_mode', local_var_params['charge_mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_common_pools(self, request):
         """查询公共池列表
 
@@ -173,6 +249,103 @@ class EipClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'public_border_group' in local_var_params:
             query_params.append(('public_border_group', local_var_params['public_border_group']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_eip_bandwidths(self, request):
+        """查询带宽列表
+
+        查询带宽列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEipBandwidths
+        :type request: :class:`huaweicloudsdkeip.v3.ListEipBandwidthsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListEipBandwidthsResponse`
+        """
+        http_info = self._list_eip_bandwidths_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_eip_bandwidths_invoker(self, request):
+        http_info = self._list_eip_bandwidths_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_eip_bandwidths_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/eip-bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEipBandwidthsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'bandwidth_type' in local_var_params:
+            query_params.append(('bandwidth_type', local_var_params['bandwidth_type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'name_like' in local_var_params:
+            query_params.append(('name_like', local_var_params['name_like']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'ingress_size' in local_var_params:
+            query_params.append(('ingress_size', local_var_params['ingress_size']))
+        if 'admin_state' in local_var_params:
+            query_params.append(('admin_state', local_var_params['admin_state']))
+        if 'billing_info' in local_var_params:
+            query_params.append(('billing_info', local_var_params['billing_info']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'enable_bandwidth_rules' in local_var_params:
+            query_params.append(('enable_bandwidth_rules', local_var_params['enable_bandwidth_rules']))
+        if 'rule_quota' in local_var_params:
+            query_params.append(('rule_quota', local_var_params['rule_quota']))
+        if 'public_border_group' in local_var_params:
+            query_params.append(('public_border_group', local_var_params['public_border_group']))
+        if 'charge_mode' in local_var_params:
+            query_params.append(('charge_mode', local_var_params['charge_mode']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
 
@@ -1430,6 +1603,73 @@ class EipClient(Client):
             "resource_path": "/v3/{project_id}/eip/publicips/{publicip_id}/disassociate-instance",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateDisassociatePublicipResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'publicip_id' in local_var_params:
+            path_params['publicip_id'] = local_var_params['publicip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_publicip(self, request):
+        """更新弹性公网IP
+
+        更新弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePublicip
+        :type request: :class:`huaweicloudsdkeip.v3.UpdatePublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.UpdatePublicipResponse`
+        """
+        http_info = self._update_publicip_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_publicip_invoker(self, request):
+        http_info = self._update_publicip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_publicip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/eip/publicips/{publicip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicipResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

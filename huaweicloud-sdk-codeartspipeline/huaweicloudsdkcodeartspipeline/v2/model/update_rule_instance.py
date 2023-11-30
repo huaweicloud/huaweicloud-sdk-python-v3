@@ -18,80 +18,35 @@ class UpdateRuleInstance:
 
     openapi_types = {
         'id': 'str',
-        'type': 'str',
-        'name': 'str',
-        'is_valid': 'bool',
-        'layout_content': 'str',
-        'plugin_id': 'str',
-        'plugin_name': 'str',
-        'plugin_version': 'str',
-        'content': 'list[RuleInstanceContent]'
+        'is_valid': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
-        'type': 'type',
-        'name': 'name',
-        'is_valid': 'is_valid',
-        'layout_content': 'layout_content',
-        'plugin_id': 'plugin_id',
-        'plugin_name': 'plugin_name',
-        'plugin_version': 'plugin_version',
-        'content': 'content'
+        'is_valid': 'is_valid'
     }
 
-    def __init__(self, id=None, type=None, name=None, is_valid=None, layout_content=None, plugin_id=None, plugin_name=None, plugin_version=None, content=None):
+    def __init__(self, id=None, is_valid=None):
         """UpdateRuleInstance
 
         The model defined in huaweicloud sdk
 
         :param id: 规则实例ID
         :type id: str
-        :param type: 规则类型ID
-        :type type: str
-        :param name: 规则名称
-        :type name: str
         :param is_valid: 规则实例状态
         :type is_valid: bool
-        :param layout_content: 规则布局
-        :type layout_content: str
-        :param plugin_id: 插件Id
-        :type plugin_id: str
-        :param plugin_name: 规则名称
-        :type plugin_name: str
-        :param plugin_version: 规则版本
-        :type plugin_version: str
-        :param content: 规则属性列表
-        :type content: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstanceContent`]
         """
         
         
 
         self._id = None
-        self._type = None
-        self._name = None
         self._is_valid = None
-        self._layout_content = None
-        self._plugin_id = None
-        self._plugin_name = None
-        self._plugin_version = None
-        self._content = None
         self.discriminator = None
 
-        self.id = id
-        self.type = type
-        self.name = name
+        if id is not None:
+            self.id = id
         if is_valid is not None:
             self.is_valid = is_valid
-        if layout_content is not None:
-            self.layout_content = layout_content
-        if plugin_id is not None:
-            self.plugin_id = plugin_id
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
-        if plugin_version is not None:
-            self.plugin_version = plugin_version
-        self.content = content
 
     @property
     def id(self):
@@ -116,50 +71,6 @@ class UpdateRuleInstance:
         self._id = id
 
     @property
-    def type(self):
-        """Gets the type of this UpdateRuleInstance.
-
-        规则类型ID
-
-        :return: The type of this UpdateRuleInstance.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this UpdateRuleInstance.
-
-        规则类型ID
-
-        :param type: The type of this UpdateRuleInstance.
-        :type type: str
-        """
-        self._type = type
-
-    @property
-    def name(self):
-        """Gets the name of this UpdateRuleInstance.
-
-        规则名称
-
-        :return: The name of this UpdateRuleInstance.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this UpdateRuleInstance.
-
-        规则名称
-
-        :param name: The name of this UpdateRuleInstance.
-        :type name: str
-        """
-        self._name = name
-
-    @property
     def is_valid(self):
         """Gets the is_valid of this UpdateRuleInstance.
 
@@ -180,116 +91,6 @@ class UpdateRuleInstance:
         :type is_valid: bool
         """
         self._is_valid = is_valid
-
-    @property
-    def layout_content(self):
-        """Gets the layout_content of this UpdateRuleInstance.
-
-        规则布局
-
-        :return: The layout_content of this UpdateRuleInstance.
-        :rtype: str
-        """
-        return self._layout_content
-
-    @layout_content.setter
-    def layout_content(self, layout_content):
-        """Sets the layout_content of this UpdateRuleInstance.
-
-        规则布局
-
-        :param layout_content: The layout_content of this UpdateRuleInstance.
-        :type layout_content: str
-        """
-        self._layout_content = layout_content
-
-    @property
-    def plugin_id(self):
-        """Gets the plugin_id of this UpdateRuleInstance.
-
-        插件Id
-
-        :return: The plugin_id of this UpdateRuleInstance.
-        :rtype: str
-        """
-        return self._plugin_id
-
-    @plugin_id.setter
-    def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this UpdateRuleInstance.
-
-        插件Id
-
-        :param plugin_id: The plugin_id of this UpdateRuleInstance.
-        :type plugin_id: str
-        """
-        self._plugin_id = plugin_id
-
-    @property
-    def plugin_name(self):
-        """Gets the plugin_name of this UpdateRuleInstance.
-
-        规则名称
-
-        :return: The plugin_name of this UpdateRuleInstance.
-        :rtype: str
-        """
-        return self._plugin_name
-
-    @plugin_name.setter
-    def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this UpdateRuleInstance.
-
-        规则名称
-
-        :param plugin_name: The plugin_name of this UpdateRuleInstance.
-        :type plugin_name: str
-        """
-        self._plugin_name = plugin_name
-
-    @property
-    def plugin_version(self):
-        """Gets the plugin_version of this UpdateRuleInstance.
-
-        规则版本
-
-        :return: The plugin_version of this UpdateRuleInstance.
-        :rtype: str
-        """
-        return self._plugin_version
-
-    @plugin_version.setter
-    def plugin_version(self, plugin_version):
-        """Sets the plugin_version of this UpdateRuleInstance.
-
-        规则版本
-
-        :param plugin_version: The plugin_version of this UpdateRuleInstance.
-        :type plugin_version: str
-        """
-        self._plugin_version = plugin_version
-
-    @property
-    def content(self):
-        """Gets the content of this UpdateRuleInstance.
-
-        规则属性列表
-
-        :return: The content of this UpdateRuleInstance.
-        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstanceContent`]
-        """
-        return self._content
-
-    @content.setter
-    def content(self, content):
-        """Sets the content of this UpdateRuleInstance.
-
-        规则属性列表
-
-        :param content: The content of this UpdateRuleInstance.
-        :type content: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstanceContent`]
-        """
-        self._content = content
 
     def to_dict(self):
         """Returns the model properties as a dict"""

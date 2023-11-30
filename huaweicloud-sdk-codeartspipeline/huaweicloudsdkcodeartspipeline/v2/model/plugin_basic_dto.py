@@ -27,7 +27,8 @@ class PluginBasicDTO:
         'description': 'str',
         'is_private': 'int',
         'region': 'str',
-        'maintainers': 'str'
+        'maintainers': 'str',
+        'plugin_composition_type': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class PluginBasicDTO:
         'description': 'description',
         'is_private': 'is_private',
         'region': 'region',
-        'maintainers': 'maintainers'
+        'maintainers': 'maintainers',
+        'plugin_composition_type': 'plugin_composition_type'
     }
 
-    def __init__(self, unique_id=None, icon_url=None, runtime_attribution=None, plugin_name=None, display_name=None, business_type=None, business_type_display_name=None, description=None, is_private=None, region=None, maintainers=None):
+    def __init__(self, unique_id=None, icon_url=None, runtime_attribution=None, plugin_name=None, display_name=None, business_type=None, business_type_display_name=None, description=None, is_private=None, region=None, maintainers=None, plugin_composition_type=None):
         """PluginBasicDTO
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class PluginBasicDTO:
         :type region: str
         :param maintainers: 维护者
         :type maintainers: str
+        :param plugin_composition_type: 组合插件类型
+        :type plugin_composition_type: str
         """
         
         
@@ -86,6 +90,7 @@ class PluginBasicDTO:
         self._is_private = None
         self._region = None
         self._maintainers = None
+        self._plugin_composition_type = None
         self.discriminator = None
 
         if unique_id is not None:
@@ -110,6 +115,8 @@ class PluginBasicDTO:
             self.region = region
         if maintainers is not None:
             self.maintainers = maintainers
+        if plugin_composition_type is not None:
+            self.plugin_composition_type = plugin_composition_type
 
     @property
     def unique_id(self):
@@ -352,6 +359,28 @@ class PluginBasicDTO:
         :type maintainers: str
         """
         self._maintainers = maintainers
+
+    @property
+    def plugin_composition_type(self):
+        """Gets the plugin_composition_type of this PluginBasicDTO.
+
+        组合插件类型
+
+        :return: The plugin_composition_type of this PluginBasicDTO.
+        :rtype: str
+        """
+        return self._plugin_composition_type
+
+    @plugin_composition_type.setter
+    def plugin_composition_type(self, plugin_composition_type):
+        """Sets the plugin_composition_type of this PluginBasicDTO.
+
+        组合插件类型
+
+        :param plugin_composition_type: The plugin_composition_type of this PluginBasicDTO.
+        :type plugin_composition_type: str
+        """
+        self._plugin_composition_type = plugin_composition_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

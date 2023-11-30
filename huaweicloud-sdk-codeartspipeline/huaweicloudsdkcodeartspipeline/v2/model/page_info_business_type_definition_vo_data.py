@@ -29,9 +29,9 @@ class PageInfoBusinessTypeDefinitionVOData:
     }
 
     attribute_map = {
-        'business_type': 'businessType',
-        'display_name': 'displayName',
-        'unique_id': 'uniqueId',
+        'business_type': 'business_type',
+        'display_name': 'display_name',
+        'unique_id': 'unique_id',
         'editable': 'editable',
         'removable': 'removable',
         'cloneable': 'cloneable',

@@ -89,7 +89,7 @@ class CreateInstanceByEngineReq:
         :type ssl_enable: bool
         :param storage_spec_code: 存储IO规格。   - dms.physical.storage.high.v2: 高IO类型磁盘   - dms.physical.storage.ultra.v2: 超高IO类型磁盘
         :type storage_spec_code: str
-        :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
+        :param enterprise_project_id: 企业项目ID。若为企业项目账号，该参数必填。
         :type enterprise_project_id: str
         :param enable_acl: 是否开启访问控制列表。
         :type enable_acl: bool
@@ -424,7 +424,7 @@ class CreateInstanceByEngineReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateInstanceByEngineReq.
 
-        企业项目ID。若为企业项目帐号，该参数必填。
+        企业项目ID。若为企业项目账号，该参数必填。
 
         :return: The enterprise_project_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -435,7 +435,7 @@ class CreateInstanceByEngineReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateInstanceByEngineReq.
 
-        企业项目ID。若为企业项目帐号，该参数必填。
+        企业项目ID。若为企业项目账号，该参数必填。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceByEngineReq.
         :type enterprise_project_id: str

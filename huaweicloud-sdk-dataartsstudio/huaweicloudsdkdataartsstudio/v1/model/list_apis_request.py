@@ -19,6 +19,7 @@ class ListApisRequest:
     openapi_types = {
         'workspace': 'str',
         'dlm_type': 'str',
+        'x_return_publish_messages': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -26,11 +27,12 @@ class ListApisRequest:
     attribute_map = {
         'workspace': 'workspace',
         'dlm_type': 'Dlm-Type',
+        'x_return_publish_messages': 'x-return-publish-messages',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, workspace=None, dlm_type=None, offset=None, limit=None):
+    def __init__(self, workspace=None, dlm_type=None, x_return_publish_messages=None, offset=None, limit=None):
         """ListApisRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ListApisRequest:
         :type workspace: str
         :param dlm_type: dlm版本类型
         :type dlm_type: str
+        :param x_return_publish_messages: 是否返回专享版API的发布信息
+        :type x_return_publish_messages: str
         :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整
         :type offset: int
         :param limit: 查询条数, 即查询Y条数据
@@ -49,12 +53,15 @@ class ListApisRequest:
 
         self._workspace = None
         self._dlm_type = None
+        self._x_return_publish_messages = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
         self.workspace = workspace
         self.dlm_type = dlm_type
+        if x_return_publish_messages is not None:
+            self.x_return_publish_messages = x_return_publish_messages
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -103,6 +110,28 @@ class ListApisRequest:
         :type dlm_type: str
         """
         self._dlm_type = dlm_type
+
+    @property
+    def x_return_publish_messages(self):
+        """Gets the x_return_publish_messages of this ListApisRequest.
+
+        是否返回专享版API的发布信息
+
+        :return: The x_return_publish_messages of this ListApisRequest.
+        :rtype: str
+        """
+        return self._x_return_publish_messages
+
+    @x_return_publish_messages.setter
+    def x_return_publish_messages(self, x_return_publish_messages):
+        """Sets the x_return_publish_messages of this ListApisRequest.
+
+        是否返回专享版API的发布信息
+
+        :param x_return_publish_messages: The x_return_publish_messages of this ListApisRequest.
+        :type x_return_publish_messages: str
+        """
+        self._x_return_publish_messages = x_return_publish_messages
 
     @property
     def offset(self):

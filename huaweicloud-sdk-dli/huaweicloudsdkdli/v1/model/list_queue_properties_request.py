@@ -18,41 +18,41 @@ class ListQueuePropertiesRequest:
 
     openapi_types = {
         'queue_name': 'str',
-        'page': 'int',
-        'page_size': 'int'
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'queue_name': 'queue_name',
-        'page': 'page',
-        'page_size': 'page_size'
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, queue_name=None, page=None, page_size=None):
+    def __init__(self, queue_name=None, offset=None, limit=None):
         """ListQueuePropertiesRequest
 
         The model defined in huaweicloud sdk
 
         :param queue_name: 队列名称
         :type queue_name: str
-        :param page: 列表当前页
-        :type page: int
-        :param page_size: 每页显示条数
-        :type page_size: int
+        :param offset: 偏移量
+        :type offset: int
+        :param limit: 每页显示条数
+        :type limit: int
         """
         
         
 
         self._queue_name = None
-        self._page = None
-        self._page_size = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.queue_name = queue_name
-        if page is not None:
-            self.page = page
-        if page_size is not None:
-            self.page_size = page_size
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def queue_name(self):
@@ -77,48 +77,48 @@ class ListQueuePropertiesRequest:
         self._queue_name = queue_name
 
     @property
-    def page(self):
-        """Gets the page of this ListQueuePropertiesRequest.
+    def offset(self):
+        """Gets the offset of this ListQueuePropertiesRequest.
 
-        列表当前页
+        偏移量
 
-        :return: The page of this ListQueuePropertiesRequest.
+        :return: The offset of this ListQueuePropertiesRequest.
         :rtype: int
         """
-        return self._page
+        return self._offset
 
-    @page.setter
-    def page(self, page):
-        """Sets the page of this ListQueuePropertiesRequest.
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListQueuePropertiesRequest.
 
-        列表当前页
+        偏移量
 
-        :param page: The page of this ListQueuePropertiesRequest.
-        :type page: int
+        :param offset: The offset of this ListQueuePropertiesRequest.
+        :type offset: int
         """
-        self._page = page
+        self._offset = offset
 
     @property
-    def page_size(self):
-        """Gets the page_size of this ListQueuePropertiesRequest.
+    def limit(self):
+        """Gets the limit of this ListQueuePropertiesRequest.
 
         每页显示条数
 
-        :return: The page_size of this ListQueuePropertiesRequest.
+        :return: The limit of this ListQueuePropertiesRequest.
         :rtype: int
         """
-        return self._page_size
+        return self._limit
 
-    @page_size.setter
-    def page_size(self, page_size):
-        """Sets the page_size of this ListQueuePropertiesRequest.
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListQueuePropertiesRequest.
 
         每页显示条数
 
-        :param page_size: The page_size of this ListQueuePropertiesRequest.
-        :type page_size: int
+        :param limit: The limit of this ListQueuePropertiesRequest.
+        :type limit: int
         """
-        self._page_size = page_size
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

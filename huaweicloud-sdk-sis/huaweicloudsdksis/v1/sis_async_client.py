@@ -344,6 +344,10 @@ class SisAsyncClient(Client):
             query_params.append(('property', local_var_params['_property']))
         if 'audio_format' in local_var_params:
             query_params.append(('audio_format', local_var_params['audio_format']))
+        if 'obs_bucket_name' in local_var_params:
+            query_params.append(('obs_bucket_name', local_var_params['obs_bucket_name']))
+        if 'obs_object_key' in local_var_params:
+            query_params.append(('obs_object_key', local_var_params['obs_object_key']))
         if 'add_punc' in local_var_params:
             query_params.append(('add_punc', local_var_params['add_punc']))
         if 'digit_norm' in local_var_params:
@@ -352,10 +356,6 @@ class SisAsyncClient(Client):
             query_params.append(('need_word_info', local_var_params['need_word_info']))
         if 'vocabulary_id' in local_var_params:
             query_params.append(('vocabulary_id', local_var_params['vocabulary_id']))
-        if 'obs_bucket_name' in local_var_params:
-            query_params.append(('obs_bucket_name', local_var_params['obs_bucket_name']))
-        if 'obs_object_key' in local_var_params:
-            query_params.append(('obs_object_key', local_var_params['obs_object_key']))
         if 'first_channel_only' in local_var_params:
             query_params.append(('first_channel_only', local_var_params['first_channel_only']))
 

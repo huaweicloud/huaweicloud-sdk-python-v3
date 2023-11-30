@@ -23,7 +23,8 @@ class LogInstanceInfo:
         'mode': 'str',
         'datastore': 'InstancesDatastoreResult',
         'actions': 'list[str]',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'supported_log_types': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class LogInstanceInfo:
         'mode': 'mode',
         'datastore': 'datastore',
         'actions': 'actions',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'supported_log_types': 'supported_log_types'
     }
 
-    def __init__(self, id=None, name=None, status=None, mode=None, datastore=None, actions=None, enterprise_project_id=None):
+    def __init__(self, id=None, name=None, status=None, mode=None, datastore=None, actions=None, enterprise_project_id=None, supported_log_types=None):
         """LogInstanceInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class LogInstanceInfo:
         :type actions: list[str]
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param supported_log_types: 日志类型。slow_log表示慢日志，audit_log表示审计日志。
+        :type supported_log_types: str
         """
         
         
@@ -66,6 +70,7 @@ class LogInstanceInfo:
         self._datastore = None
         self._actions = None
         self._enterprise_project_id = None
+        self._supported_log_types = None
         self.discriminator = None
 
         if id is not None:
@@ -82,6 +87,8 @@ class LogInstanceInfo:
             self.actions = actions
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if supported_log_types is not None:
+            self.supported_log_types = supported_log_types
 
     @property
     def id(self):
@@ -232,6 +239,28 @@ class LogInstanceInfo:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def supported_log_types(self):
+        """Gets the supported_log_types of this LogInstanceInfo.
+
+        日志类型。slow_log表示慢日志，audit_log表示审计日志。
+
+        :return: The supported_log_types of this LogInstanceInfo.
+        :rtype: str
+        """
+        return self._supported_log_types
+
+    @supported_log_types.setter
+    def supported_log_types(self, supported_log_types):
+        """Sets the supported_log_types of this LogInstanceInfo.
+
+        日志类型。slow_log表示慢日志，audit_log表示审计日志。
+
+        :param supported_log_types: The supported_log_types of this LogInstanceInfo.
+        :type supported_log_types: str
+        """
+        self._supported_log_types = supported_log_types
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -47,7 +47,7 @@ class CreateTopicOrBatchDeleteTopicReq:
         :type queue_num: float
         :param permission: 权限。
         :type permission: str
-        :param message_type: 消息类型。
+        :param message_type: 消息类型（RocketMQ实例5.x版本才包含此参数）。
         :type message_type: str
         :param topics: 主题列表，当批量删除主题时使用。
         :type topics: list[str]
@@ -168,7 +168,7 @@ class CreateTopicOrBatchDeleteTopicReq:
     def message_type(self):
         """Gets the message_type of this CreateTopicOrBatchDeleteTopicReq.
 
-        消息类型。
+        消息类型（RocketMQ实例5.x版本才包含此参数）。
 
         :return: The message_type of this CreateTopicOrBatchDeleteTopicReq.
         :rtype: str
@@ -179,7 +179,7 @@ class CreateTopicOrBatchDeleteTopicReq:
     def message_type(self, message_type):
         """Sets the message_type of this CreateTopicOrBatchDeleteTopicReq.
 
-        消息类型。
+        消息类型（RocketMQ实例5.x版本才包含此参数）。
 
         :param message_type: The message_type of this CreateTopicOrBatchDeleteTopicReq.
         :type message_type: str

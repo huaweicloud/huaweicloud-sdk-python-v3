@@ -1,3 +1,548 @@
+# 3.1.70 2023-11-30
+
+### HuaweiCloud SDK DIS
+
+- _新增特性_
+  - 支持数据接入服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPermissions**
+    - 响应参数变更
+      - `* : map<string, AuthModel> -> string`
+  - **ListAccessCode**
+    - 响应参数变更
+      - `- access_codes.status: enum value [enable,unenable]`
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSubCustomerBillDetail**
+    - 响应参数变更
+      - `* fee_records.usage_amount: double -> bigdecimal`
+      - `* fee_records.free_resource_usage: double -> bigdecimal`
+      - `* fee_records.ri_usage: double -> bigdecimal`
+      - `* fee_records.official_amount: double -> bigdecimal`
+      - `* fee_records.official_discount_amount: double -> bigdecimal`
+      - `* fee_records.payment_amount: double -> bigdecimal`
+      - `* fee_records.cash_amount: double -> bigdecimal`
+      - `* fee_records.credit_amount: double -> bigdecimal`
+      - `* fee_records.coupon_amount: double -> bigdecimal`
+      - `* fee_records.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* fee_records.stored_value_card_amount: double -> bigdecimal`
+      - `* fee_records.debt_amount: double -> bigdecimal`
+      - `* fee_records.writeoff_amount: double -> bigdecimal`
+
+### HuaweiCloud SDK CC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBandwidthPackageTags**
+    - 响应参数变更
+      - `+ tags.values`
+      - `- tags.value`
+      - `* tags: list<Tag> -> list<MultivaluedTag>`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowClusterConfig`
+    - `UpdateClusterLogConfig`
+    - `ListPartitions`
+    - `CreatePartition`
+    - `ShowPartition`
+    - `UpdatePartition`
+    - `ShowNodePoolConfigurations`
+    - `UpdateNodePoolConfiguration`
+    - `ShowClusterConfigurationDetails`
+    - `ListCharts`
+    - `UploadChart`
+    - `ShowChart`
+    - `UpdateChart`
+    - `DeleteChart`
+    - `DownloadChart`
+    - `ShowChartValues`
+    - `ShowUserChartsQuotas`
+    - `ListReleases`
+    - `CreateRelease`
+    - `ShowRelease`
+    - `UpdateRelease`
+    - `DeleteRelease`
+    - `ShowReleaseHistory`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResizeCluster**
+    - 请求参数变更
+      - `* extendParam: object<ResizeClusterRequestExtendParam> -> object`
+  - **UpdateClusterEip**
+    - 请求参数变更
+      - `* spec: object -> object<MasterEIPRequestSpec>`
+    - 响应参数变更
+      - `* spec: object -> object<MasterEIPResponseSpec>`
+  - **ShowClusterEndpoints**
+    - 响应参数变更
+      - `* spec: object -> object<OpenAPISpec>`
+  - **ShowAddonInstance**
+    - 响应参数变更
+      - `- status.status: enum value [unknown]`
+  - **UpdateAddonInstance**
+    - 响应参数变更
+      - `- status.status: enum value [unknown]`
+  - **RollbackAddonInstance**
+    - 响应参数变更
+      - `- status.status: enum value [unknown]`
+  - **ShowCluster**
+    - 响应参数变更
+      - `+ spec.enableMasterVolumeEncryption`
+  - **UpdateCluster**
+    - 响应参数变更
+      - `+ spec.enableMasterVolumeEncryption`
+  - **DeleteCluster**
+    - 请求参数变更
+      - `+ ondemand_node_policy`
+      - `+ periodic_node_policy`
+    - 响应参数变更
+      - `+ spec.enableMasterVolumeEncryption`
+  - **CreateAddonInstance**
+    - 响应参数变更
+      - `- status.status: enum value [unknown]`
+  - **ListAddonInstances**
+    - 响应参数变更
+      - `- items.status.status: enum value [unknown]`
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ spec.enableMasterVolumeEncryption`
+    - 响应参数变更
+      - `+ spec.enableMasterVolumeEncryption`
+  - **ListClusters**
+    - 请求参数变更
+      - `+ status: enum value [Hibernating,Hibernation,Awaking]`
+    - 响应参数变更
+      - `+ items.spec.enableMasterVolumeEncryption`
+  - **ShowNode**
+    - 响应参数变更
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+  - **UpdateNode**
+    - 响应参数变更
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+  - **DeleteNode**
+    - 响应参数变更
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+  - **CreateNode**
+    - 请求参数变更
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+    - 响应参数变更
+      - `+ spec.hostnameConfig`
+      - `+ spec.extendParam.kubeReservedMem`
+      - `+ spec.extendParam.systemReservedMem`
+      - `+ spec.extendParam.init-node-password`
+      - `- spec.extendParam.kube-reserved-mem`
+      - `- spec.extendParam.system-reserved-mem`
+  - **ListNodes**
+    - 响应参数变更
+      - `+ items.spec.hostnameConfig`
+      - `+ items.spec.extendParam.kubeReservedMem`
+      - `+ items.spec.extendParam.systemReservedMem`
+      - `+ items.spec.extendParam.init-node-password`
+      - `- items.spec.extendParam.kube-reserved-mem`
+      - `- items.spec.extendParam.system-reserved-mem`
+  - **ShowNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **UpdateNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **DeleteNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **AddNode**
+    - 请求参数变更
+      - `+ nodeList.spec.hostnameConfig`
+  - **ResetNode**
+    - 请求参数变更
+      - `+ nodeList.spec.hostnameConfig`
+  - **CreateNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+    - 响应参数变更
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `- spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **ListNodePools**
+    - 响应参数变更
+      - `+ items.spec.nodeTemplate.hostnameConfig`
+      - `+ items.spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ items.spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ items.spec.nodeTemplate.extendParam.init-node-password`
+      - `- items.spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `- items.spec.nodeTemplate.extendParam.system-reserved-mem`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _新增特性_
+  - 支持接口`ShowPipelineLog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdatePluginBaseInfo**
+    - 请求参数变更
+      - `+ plugin_composition_type`
+  - **CreatePublisher**
+    - 请求参数变更
+      - `+ description`
+  - **ListPublisher**
+    - 响应参数变更
+      - `+ total`
+      - `+ offset`
+      - `+ data`
+      - `+ limit`
+      - `- tenant_id`
+      - `- website`
+      - `- logo_url`
+      - `- description`
+      - `- last_update_user_id`
+      - `- source_url`
+      - `- is_delete`
+      - `- last_update_time`
+      - `- support_url`
+      - `- user_id`
+      - `- name`
+      - `- en_name`
+      - `- auth_status`
+      - `- publisher_unique_id`
+      - `- last_update_user_name`
+  - **ListBasePluginsNewPost**
+    - 响应参数变更
+      - `+ data.business_type`
+      - `+ data.display_name`
+      - `+ data.unique_id`
+      - `- data.businessType`
+      - `- data.displayName`
+      - `- data.uniqueId`
+      - `+ data.plugins_list.publisher_unique_id`
+      - `+ data.plugins_list.manifest_version`
+      - `- data.plugins_list.publisherUniqueId`
+      - `- data.plugins_list.manifestVersion`
+  - **ListPlugins**
+    - 响应参数变更
+      - `+ data.plugin_name`
+      - `+ data.display_name`
+      - `+ data.version_description`
+      - `+ data.version_attribution`
+      - `+ data.unique_id`
+      - `+ data.op_user`
+      - `+ data.op_time`
+      - `+ data.plugin_composition_type`
+      - `+ data.plugin_attribution`
+      - `+ data.workspace_id`
+      - `+ data.business_type`
+      - `+ data.business_type_display_name`
+      - `+ data.icon_url`
+      - `+ data.refer_count`
+      - `+ data.usage_count`
+      - `+ data.runtime_attribution`
+      - `- data.pluginName`
+      - `- data.displayName`
+      - `- data.versionDescription`
+      - `- data.versionAttribution`
+      - `- data.uniqueId`
+      - `- data.opUser`
+      - `- data.opTime`
+      - `- data.pluginCompositionType`
+      - `- data.pluginAttribution`
+      - `- data.workspaceId`
+      - `- data.businessType`
+      - `- data.businessTypeDisplayName`
+      - `- data.iconUrl`
+      - `- data.referCount`
+      - `- data.usageCount`
+      - `- data.runtimeAttribution`
+      - `* data: list<object> -> list<PluginBasicVO>`
+  - **ListPLuginVersion**
+    - 响应参数变更
+      - `+ data.plugin_name`
+      - `+ data.display_name`
+      - `+ data.version_description`
+      - `+ data.version_attribution`
+      - `+ data.unique_id`
+      - `+ data.op_user`
+      - `+ data.op_time`
+      - `+ data.plugin_composition_type`
+      - `+ data.plugin_attribution`
+      - `+ data.workspace_id`
+      - `+ data.business_type`
+      - `+ data.business_type_display_name`
+      - `+ data.icon_url`
+      - `+ data.refer_count`
+      - `+ data.usage_count`
+      - `+ data.runtime_attribution`
+      - `- data.pluginName`
+      - `- data.displayName`
+      - `- data.versionDescription`
+      - `- data.versionAttribution`
+      - `- data.uniqueId`
+      - `- data.opUser`
+      - `- data.opTime`
+      - `- data.pluginCompositionType`
+      - `- data.pluginAttribution`
+      - `- data.workspaceId`
+      - `- data.businessType`
+      - `- data.businessTypeDisplayName`
+      - `- data.iconUrl`
+      - `- data.referCount`
+      - `- data.usageCount`
+      - `- data.runtimeAttribution`
+      - `* data: list<object> -> list<PluginBasicVO>`
+  - **ShowPublisher**
+    - 响应参数变更
+      - `+ publisher_detail_map`
+      - `- body`
+  - **CreateBasicPlugin**
+    - 请求参数变更
+      - `+ plugin_composition_type`
+  - **UpdateBasicPlugin**
+    - 请求参数变更
+      - `+ plugin_composition_type`
+  - **CreateStrategy**
+    - 请求参数变更
+      - `- type`
+      - `- rules.type`
+      - `- rules.name`
+      - `- rules.layout_content`
+      - `- rules.plugin_id`
+      - `- rules.plugin_name`
+      - `- rules.plugin_version`
+      - `- rules.content`
+  - **UpdateStrategy**
+    - 请求参数变更
+      - `- parent_id`
+      - `- rules.type`
+      - `- rules.name`
+      - `- rules.layout_content`
+      - `- rules.plugin_id`
+      - `- rules.plugin_name`
+      - `- rules.plugin_version`
+      - `- rules.content`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SearchAtomicIndexes**
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowAtomicIndexById**
+    - 响应参数变更
+      - `+ data.value`
+  - **ListDerivativeIndexes**
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowDerivativeIndexById**
+    - 响应参数变更
+      - `+ data.value`
+  - **ListCompoundMetrics**
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowCompoundMetricById**
+    - 响应参数变更
+      - `+ data.value`
+  - **ListApiCatalogList**
+    - 响应参数变更
+      - `+ apis.publish_messages`
+  - **ParseUserBehavior**
+    - 请求参数变更
+      - `+ params.filter.attribute: enum value [base.DataAsset.sourceType,typeName,classifications.name,tags.name,securityLevel.name,workspaceId]`
+      - `+ params.filter.operator: enum value [IN,EQ]`
+      - `* params.filter.value: object -> list<string>`
+      - `* params.filter.condition: object<ConditionInfo> -> string`
+  - **ShowDataSets**
+    - 请求参数变更
+      - `+ filter.attribute: enum value [base.DataAsset.sourceType,typeName,classifications.name,tags.name,securityLevel.name,workspaceId]`
+      - `+ filter.operator: enum value [IN,EQ]`
+      - `* filter.value: object -> list<string>`
+      - `* filter.condition: object<ConditionInfo> -> string`
+    - 响应参数变更
+      - `* facets: object -> list<object>`
+  - **ListApis**
+    - 请求参数变更
+      - `+ x-return-publish-messages`
+    - 响应参数变更
+      - `+ records.publish_messages`
+  - **ShowApi**
+    - 响应参数变更
+      - `+ publish_messages`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSlowlog**
+    - 响应参数变更
+      - `+ total_num`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 支持接口`ShowQuota`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListQueueProperties**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+      - `- page`
+      - `- page_size`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 支持接口`BatchModifyBandwidth`、`ListEipBandwidths`、`ListBandwidthsLimit`、`UpdatePublicip`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持接口`ListInfluxdbSlowLogs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLtsConfigs**
+    - 响应参数变更
+      - `+ instance_lts_configs.instance.supported_log_types`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunQueryDocumentModerationJob**
+    - 响应参数变更
+      - `+ result.details.start_position`
+      - `+ result.details.end_position`
+      - `+ result.details.image_url`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`SetInstancesDbShrink`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeDbMajorVersion**
+    - 响应参数变更
+      - `+ job_id`
+  - **ShowUpgradeDbMajorVersionStatus**
+    - 响应参数变更
+      - `+ check_expiration_time`
+      - `- report_expiration_time`
+  - **StartResizeFlavorAction**
+    - 响应参数变更
+      - `+ order_id`
+  - **StartInstanceEnlargeVolumeAction**
+    - 响应参数变更
+      - `+ order_id`
+  - **StartInstanceSingleToHaAction**
+    - 响应参数变更
+      - `+ order_id`
+  - **ListHistoryDatabase**
+    - 请求参数变更
+      - `+ engine`
+      - `- database_name`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 支持接口`ShowEngineInstanceExtendProductInfo`、`ResizeInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeFlashAsr**
+    - 请求参数变更
+      - `* obs_bucket_name: optional -> required`
+      - `* obs_object_key: optional -> required`
+
 # 3.1.69 2023-11-23
 
 ### HuaweiCloud SDK CFW

@@ -18,20 +18,24 @@ class ListSlowlogResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total_num': 'int',
         'count': 'int',
         'slowlogs': 'list[SlowlogItem]'
     }
 
     attribute_map = {
+        'total_num': 'total_num',
         'count': 'count',
         'slowlogs': 'slowlogs'
     }
 
-    def __init__(self, count=None, slowlogs=None):
+    def __init__(self, total_num=None, count=None, slowlogs=None):
         """ListSlowlogResponse
 
         The model defined in huaweicloud sdk
 
+        :param total_num: 慢日志总条数
+        :type total_num: int
         :param count: 总数
         :type count: int
         :param slowlogs: 慢日志列表
@@ -40,14 +44,39 @@ class ListSlowlogResponse(SdkResponse):
         
         super(ListSlowlogResponse, self).__init__()
 
+        self._total_num = None
         self._count = None
         self._slowlogs = None
         self.discriminator = None
 
+        if total_num is not None:
+            self.total_num = total_num
         if count is not None:
             self.count = count
         if slowlogs is not None:
             self.slowlogs = slowlogs
+
+    @property
+    def total_num(self):
+        """Gets the total_num of this ListSlowlogResponse.
+
+        慢日志总条数
+
+        :return: The total_num of this ListSlowlogResponse.
+        :rtype: int
+        """
+        return self._total_num
+
+    @total_num.setter
+    def total_num(self, total_num):
+        """Sets the total_num of this ListSlowlogResponse.
+
+        慢日志总条数
+
+        :param total_num: The total_num of this ListSlowlogResponse.
+        :type total_num: int
+        """
+        self._total_num = total_num
 
     @property
     def count(self):

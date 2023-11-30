@@ -17,26 +17,32 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
-
+try:
+    from typing import TypeVar, Generic
+except ImportError:
+    from typing_extensions import TypeVar, Generic
 from typing import Callable
 
 from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.sdk_response import SdkResponse, FutureSdkResponse
 from huaweicloudsdkcore.exceptions.exceptions import SdkException
 
+_TInvoker = TypeVar("_TInvoker", bound="BaseInvoker")
 
-class BaseInvoker(object):
+
+class BaseInvoker(Generic[_TInvoker]):
     def __init__(self, client, http_info):
         # type: (Client, dict) -> None
         self._client = client
         self._http_info = http_info
 
     def add_header(self, key, value):
-        # type: (str, str) -> BaseInvoker
+        # type: (str, str) -> _TInvoker
         self._http_info.setdefault("header_params", {})[key] = value
         return self
 
     def replace_credential_when(self, func):
-        # type: (Callable) -> BaseInvoker
+        # type: (Callable) -> _TInvoker
         old_cred = self._client.get_credentials()
         new_cred = func(old_cred)
         if not new_cred or not isinstance(new_cred, old_cred.__class__):
@@ -46,15 +52,20 @@ class BaseInvoker(object):
         return self
 
 
-class SyncInvoker(BaseInvoker):
+class SyncInvoker(BaseInvoker["SyncInvoker"]):
     def __init__(self, client, http_info):
         super(SyncInvoker, self).__init__(client, http_info)
 
     def invoke(self):
+        # type: () -> SdkResponse
         return self._client.do_http_request(**self._http_info)
 
 
-class AsyncInvoker(SyncInvoker):
+class AsyncInvoker(BaseInvoker["AsyncInvoker"]):
     def __init__(self, client, http_info):
         http_info["async_request"] = True
         super(AsyncInvoker, self).__init__(client, http_info)
+
+    def invoke(self):
+        # type: () -> FutureSdkResponse
+        return self._client.do_http_request(**self._http_info)

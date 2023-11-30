@@ -21,7 +21,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
         'status': 'str',
         'target_version': 'str',
         'start_time': 'str',
-        'report_expiration_time': 'str',
+        'check_expiration_time': 'str',
         'detail': 'str'
     }
 
@@ -29,11 +29,11 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
         'status': 'status',
         'target_version': 'target_version',
         'start_time': 'start_time',
-        'report_expiration_time': 'report_expiration_time',
+        'check_expiration_time': 'check_expiration_time',
         'detail': 'detail'
     }
 
-    def __init__(self, status=None, target_version=None, start_time=None, report_expiration_time=None, detail=None):
+    def __init__(self, status=None, target_version=None, start_time=None, check_expiration_time=None, detail=None):
         """ShowUpgradeDbMajorVersionStatusResponse
 
         The model defined in huaweicloud sdk
@@ -44,8 +44,8 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
         :type target_version: str
         :param start_time: 开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type start_time: str
-        :param report_expiration_time: 检查成功时，检查报告到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 该字段仅在action为check时返回。
-        :type report_expiration_time: str
+        :param check_expiration_time: 检查成功时，检查报告到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 该字段仅在action为check时返回。
+        :type check_expiration_time: str
         :param detail: 预检查或升级报告信息。
         :type detail: str
         """
@@ -55,7 +55,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
         self._status = None
         self._target_version = None
         self._start_time = None
-        self._report_expiration_time = None
+        self._check_expiration_time = None
         self._detail = None
         self.discriminator = None
 
@@ -65,8 +65,8 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
             self.target_version = target_version
         if start_time is not None:
             self.start_time = start_time
-        if report_expiration_time is not None:
-            self.report_expiration_time = report_expiration_time
+        if check_expiration_time is not None:
+            self.check_expiration_time = check_expiration_time
         if detail is not None:
             self.detail = detail
 
@@ -137,26 +137,26 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
         self._start_time = start_time
 
     @property
-    def report_expiration_time(self):
-        """Gets the report_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
+    def check_expiration_time(self):
+        """Gets the check_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
 
         检查成功时，检查报告到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 该字段仅在action为check时返回。
 
-        :return: The report_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
+        :return: The check_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
         :rtype: str
         """
-        return self._report_expiration_time
+        return self._check_expiration_time
 
-    @report_expiration_time.setter
-    def report_expiration_time(self, report_expiration_time):
-        """Sets the report_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
+    @check_expiration_time.setter
+    def check_expiration_time(self, check_expiration_time):
+        """Sets the check_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
 
         检查成功时，检查报告到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 该字段仅在action为check时返回。
 
-        :param report_expiration_time: The report_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
-        :type report_expiration_time: str
+        :param check_expiration_time: The check_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
+        :type check_expiration_time: str
         """
-        self._report_expiration_time = report_expiration_time
+        self._check_expiration_time = check_expiration_time
 
     @property
     def detail(self):

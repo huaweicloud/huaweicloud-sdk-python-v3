@@ -18,47 +18,51 @@ class UpgradeDbMajorVersionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'job_id': 'job_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, job_id=None):
         """UpgradeDbMajorVersionResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param job_id: 任务ID。
+        :type job_id: str
         """
         
         super(UpgradeDbMajorVersionResponse, self).__init__()
 
-        self._body = None
+        self._job_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
-    def body(self):
-        """Gets the body of this UpgradeDbMajorVersionResponse.
+    def job_id(self):
+        """Gets the job_id of this UpgradeDbMajorVersionResponse.
 
-        :return: The body of this UpgradeDbMajorVersionResponse.
+        任务ID。
+
+        :return: The job_id of this UpgradeDbMajorVersionResponse.
         :rtype: str
         """
-        return self._body
+        return self._job_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this UpgradeDbMajorVersionResponse.
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this UpgradeDbMajorVersionResponse.
 
-        :param body: The body of this UpgradeDbMajorVersionResponse.
-        :type body: str
+        任务ID。
+
+        :param job_id: The job_id of this UpgradeDbMajorVersionResponse.
+        :type job_id: str
         """
-        self._body = body
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

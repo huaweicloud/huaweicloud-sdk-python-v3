@@ -29,7 +29,7 @@ class DeletePromInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param prom_id: 普罗实例id。
+        :param prom_id: Prometheus实例id。
         :type prom_id: str
         """
         
@@ -44,7 +44,7 @@ class DeletePromInstanceRequest:
     def prom_id(self):
         """Gets the prom_id of this DeletePromInstanceRequest.
 
-        普罗实例id。
+        Prometheus实例id。
 
         :return: The prom_id of this DeletePromInstanceRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeletePromInstanceRequest:
     def prom_id(self, prom_id):
         """Sets the prom_id of this DeletePromInstanceRequest.
 
-        普罗实例id。
+        Prometheus实例id。
 
         :param prom_id: The prom_id of this DeletePromInstanceRequest.
         :type prom_id: str

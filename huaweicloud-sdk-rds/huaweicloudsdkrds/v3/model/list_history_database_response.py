@@ -20,7 +20,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
     openapi_types = {
         'database_limit': 'int',
         'table_limit': 'int',
-        'instances': 'list[PostgreSQLHistoryDatabaseInstance]'
+        'instances': 'list[HistoryDatabaseInstance]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
         :param table_limit: 恢复表数量限制个数
         :type table_limit: int
         :param instances: 实例信息
-        :type instances: list[:class:`huaweicloudsdkrds.v3.PostgreSQLHistoryDatabaseInstance`]
+        :type instances: list[:class:`huaweicloudsdkrds.v3.HistoryDatabaseInstance`]
         """
         
         super(ListHistoryDatabaseResponse, self).__init__()
@@ -107,7 +107,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
         实例信息
 
         :return: The instances of this ListHistoryDatabaseResponse.
-        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgreSQLHistoryDatabaseInstance`]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.HistoryDatabaseInstance`]
         """
         return self._instances
 
@@ -118,7 +118,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
         实例信息
 
         :param instances: The instances of this ListHistoryDatabaseResponse.
-        :type instances: list[:class:`huaweicloudsdkrds.v3.PostgreSQLHistoryDatabaseInstance`]
+        :type instances: list[:class:`huaweicloudsdkrds.v3.HistoryDatabaseInstance`]
         """
         self._instances = instances
 

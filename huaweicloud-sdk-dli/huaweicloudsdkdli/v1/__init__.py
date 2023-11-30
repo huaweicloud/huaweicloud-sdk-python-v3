@@ -291,6 +291,10 @@ from huaweicloudsdkdli.v1.model.show_partitions_request import ShowPartitionsReq
 from huaweicloudsdkdli.v1.model.show_partitions_response import ShowPartitionsResponse
 from huaweicloudsdkdli.v1.model.show_queue_request import ShowQueueRequest
 from huaweicloudsdkdli.v1.model.show_queue_response import ShowQueueResponse
+from huaweicloudsdkdli.v1.model.show_quota_properties_body import ShowQuotaPropertiesBody
+from huaweicloudsdkdli.v1.model.show_quota_request import ShowQuotaRequest
+from huaweicloudsdkdli.v1.model.show_quota_response import ShowQuotaResponse
+from huaweicloudsdkdli.v1.model.show_quota_response_body_quotas import ShowQuotaResponseBodyQuotas
 from huaweicloudsdkdli.v1.model.show_resource_info_request import ShowResourceInfoRequest
 from huaweicloudsdkdli.v1.model.show_resource_info_response import ShowResourceInfoResponse
 from huaweicloudsdkdli.v1.model.show_spark_job_request import ShowSparkJobRequest

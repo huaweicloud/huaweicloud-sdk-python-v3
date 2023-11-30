@@ -29,7 +29,7 @@ class MasterEIPRequestSpecSpec:
 
         The model defined in huaweicloud sdk
 
-        :param id: 弹性网卡ID，必选参数
+        :param id: 弹性网卡ID，绑定时必选，解绑时该字段无效
         :type id: str
         """
         
@@ -45,7 +45,7 @@ class MasterEIPRequestSpecSpec:
     def id(self):
         """Gets the id of this MasterEIPRequestSpecSpec.
 
-        弹性网卡ID，必选参数
+        弹性网卡ID，绑定时必选，解绑时该字段无效
 
         :return: The id of this MasterEIPRequestSpecSpec.
         :rtype: str
@@ -56,7 +56,7 @@ class MasterEIPRequestSpecSpec:
     def id(self, id):
         """Sets the id of this MasterEIPRequestSpecSpec.
 
-        弹性网卡ID，必选参数
+        弹性网卡ID，绑定时必选，解绑时该字段无效
 
         :param id: The id of this MasterEIPRequestSpecSpec.
         :type id: str

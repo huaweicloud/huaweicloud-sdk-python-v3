@@ -52,8 +52,8 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
         'icon_url': 'icon_url',
         'multi_step_editable': 'multi_step_editable',
         'location': 'location',
-        'publisher_unique_id': 'publisherUniqueId',
-        'manifest_version': 'manifestVersion'
+        'publisher_unique_id': 'publisher_unique_id',
+        'manifest_version': 'manifest_version'
     }
 
     def __init__(self, unique_id=None, display_name=None, plugin_name=None, disabled=None, group_name=None, group_type=None, plugin_attribution=None, plugin_composition_type=None, runtime_attribution=None, all_steps=None, description=None, version_attribution=None, icon_url=None, multi_step_editable=None, location=None, publisher_unique_id=None, manifest_version=None):

@@ -701,7 +701,7 @@ client = IamClient.new_builder() \
 
 ##### 3.3.1 IAM endpoint configuration [:top:](#user-manual-top)
 
-Automatically acquiring projectId/domainId will invoke the [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) /[KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) interface of IAM service. The default iam enpoint is `https://iam.myhuaweicloud.com`, **European station users need to specify the endpoint as https://iam.eu-west-101.myhuaweicloud.com**, you can modify the endpoint in the following two ways:
+Automatically acquiring projectId/domainId will invoke the [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) /[KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) interface of IAM service. The default iam enpoint is `https://iam.myhuaweicloud.com`, **European station users need to specify the endpoint as https://iam.eu-west-101.myhuaweicloud.eu**, you can modify the endpoint in the following two ways:
 
 ###### 3.3.1.1 Global scope [:top:](#user-manual-top)
 
@@ -953,29 +953,38 @@ HttpHandler supports method `add_request_handler` and `add_response_handler`.
  
 You can flexibly configure request headers as needed. **Do not** specify common request headers such as `Host`, `Authorization`, `User-Agent`, `Content-Type` unless necessary, as this may cause the errors.
 
-```python
-ak = os.getenv("HUAWEICLOUD_SDK_AK")
-sk = os.getenv("HUAWEICLOUD_SDK_SK")
-credentials = BasicCredentials(ak, sk)
+**Sync invoke**
 
+```python
 client = VpcClient.new_builder() \
     .with_credentials(credentials) \
     .with_region(VpcRegion.value_of("cn-north-4")) \
     .build()
 
-try:
-    request = ListVpcsRequest()
-    response = client.list_vpcs_invoker(list_request) \
-        # custom request headers
-        .add_header("key1", "value1") \
-        .add_header("key2", "value2") \
-        .invoke()
-    print(response)
-except exceptions.ClientRequestException as e:
-    print(e.status_code)
-    print(e.request_id)
-    print(e.error_code)
-    print(e.error_msg)
+request = ListVpcsRequest()
+response = client.list_vpcs_invoker(request) \
+    # Custom request headers
+    .add_header("key1", "value1") \
+    .add_header("key2", "value2") \
+    .invoke()
+print(response)
+```
+
+**Async invoke**
+
+```python
+client = VpcAsyncClient.new_builder() \
+    .with_credentials(credentials) \
+    .with_region(VpcRegion.value_of("cn-north-4")) \
+    .build()
+
+request = ListVpcsRequest()
+response = client.list_vpcs_async_invoker(request) \
+    # Custom request headers
+    .add_header("key1", "value1") \
+    .add_header("key2", "value2") \
+    .invoke().result()
+print(response)
 ```
 
 ### 8. Upload and download files [:top:](#user-manual-top)

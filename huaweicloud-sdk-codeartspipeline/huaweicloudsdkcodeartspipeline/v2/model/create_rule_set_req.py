@@ -18,25 +18,21 @@ class CreateRuleSetReq:
 
     openapi_types = {
         'name': 'str',
-        'type': 'str',
         'rules': 'list[RequestRuleInstance]'
     }
 
     attribute_map = {
         'name': 'name',
-        'type': 'type',
         'rules': 'rules'
     }
 
-    def __init__(self, name=None, type=None, rules=None):
+    def __init__(self, name=None, rules=None):
         """CreateRuleSetReq
 
         The model defined in huaweicloud sdk
 
         :param name: 规则集名称
         :type name: str
-        :param type: 规则集类型
-        :type type: str
         :param rules: 规则集合
         :type rules: list[:class:`huaweicloudsdkcodeartspipeline.v2.RequestRuleInstance`]
         """
@@ -44,12 +40,10 @@ class CreateRuleSetReq:
         
 
         self._name = None
-        self._type = None
         self._rules = None
         self.discriminator = None
 
         self.name = name
-        self.type = type
         self.rules = rules
 
     @property
@@ -73,28 +67,6 @@ class CreateRuleSetReq:
         :type name: str
         """
         self._name = name
-
-    @property
-    def type(self):
-        """Gets the type of this CreateRuleSetReq.
-
-        规则集类型
-
-        :return: The type of this CreateRuleSetReq.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this CreateRuleSetReq.
-
-        规则集类型
-
-        :param type: The type of this CreateRuleSetReq.
-        :type type: str
-        """
-        self._type = type
 
     @property
     def rules(self):

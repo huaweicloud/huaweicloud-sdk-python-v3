@@ -43,7 +43,7 @@ class ClusterMetadata:
 
         :param name: 集群名称。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。
         :type name: str
-        :param uid: 集群ID，资源唯一标识，创建成功后自动生成，填写无效
+        :param uid: 集群ID，资源唯一标识，创建成功后自动生成，填写无效。在创建包周期集群时，响应体不返回集群ID。
         :type uid: str
         :param alias: 集群显示名，用于在 CCE 界面显示，该名称创建后可修改。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  在创建集群、更新集群请求体中，集群显示名alias未指定或取值为空，表示与集群名称name一致。在查询集群等响应体中，集群显示名alias将必然返回，未配置时将返回集群名称name。
         :type alias: str
@@ -108,7 +108,7 @@ class ClusterMetadata:
     def uid(self):
         """Gets the uid of this ClusterMetadata.
 
-        集群ID，资源唯一标识，创建成功后自动生成，填写无效
+        集群ID，资源唯一标识，创建成功后自动生成，填写无效。在创建包周期集群时，响应体不返回集群ID。
 
         :return: The uid of this ClusterMetadata.
         :rtype: str
@@ -119,7 +119,7 @@ class ClusterMetadata:
     def uid(self, uid):
         """Sets the uid of this ClusterMetadata.
 
-        集群ID，资源唯一标识，创建成功后自动生成，填写无效
+        集群ID，资源唯一标识，创建成功后自动生成，填写无效。在创建包周期集群时，响应体不返回集群ID。
 
         :param uid: The uid of this ClusterMetadata.
         :type uid: str

@@ -33,7 +33,7 @@ class DocumentQueryResponseRequestParamsData:
 
         The model defined in huaweicloud sdk
 
-        :param url: 创建作业时传的url参数
+        :param url: 创建作业时传的url参数。目前支持：公网HTTP/HTTPS URL。
         :type url: str
         :param format: 创建作业时传的format参数
         :type format: str
@@ -57,7 +57,7 @@ class DocumentQueryResponseRequestParamsData:
     def url(self):
         """Gets the url of this DocumentQueryResponseRequestParamsData.
 
-        创建作业时传的url参数
+        创建作业时传的url参数。目前支持：公网HTTP/HTTPS URL。
 
         :return: The url of this DocumentQueryResponseRequestParamsData.
         :rtype: str
@@ -68,7 +68,7 @@ class DocumentQueryResponseRequestParamsData:
     def url(self, url):
         """Sets the url of this DocumentQueryResponseRequestParamsData.
 
-        创建作业时传的url参数
+        创建作业时传的url参数。目前支持：公网HTTP/HTTPS URL。
 
         :param url: The url of this DocumentQueryResponseRequestParamsData.
         :type url: str

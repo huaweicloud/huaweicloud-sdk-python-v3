@@ -18,25 +18,21 @@ class UpdateRuleSetReq:
 
     openapi_types = {
         'name': 'str',
-        'parent_id': 'str',
         'rules': 'list[UpdateRuleInstance]'
     }
 
     attribute_map = {
         'name': 'name',
-        'parent_id': 'parent_id',
         'rules': 'rules'
     }
 
-    def __init__(self, name=None, parent_id=None, rules=None):
+    def __init__(self, name=None, rules=None):
         """UpdateRuleSetReq
 
         The model defined in huaweicloud sdk
 
         :param name: 规则模版实例名称
         :type name: str
-        :param parent_id: 规则类型
-        :type parent_id: str
         :param rules: 规则实例列表
         :type rules: list[:class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleInstance`]
         """
@@ -44,14 +40,11 @@ class UpdateRuleSetReq:
         
 
         self._name = None
-        self._parent_id = None
         self._rules = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
-        if parent_id is not None:
-            self.parent_id = parent_id
         if rules is not None:
             self.rules = rules
 
@@ -76,28 +69,6 @@ class UpdateRuleSetReq:
         :type name: str
         """
         self._name = name
-
-    @property
-    def parent_id(self):
-        """Gets the parent_id of this UpdateRuleSetReq.
-
-        规则类型
-
-        :return: The parent_id of this UpdateRuleSetReq.
-        :rtype: str
-        """
-        return self._parent_id
-
-    @parent_id.setter
-    def parent_id(self, parent_id):
-        """Sets the parent_id of this UpdateRuleSetReq.
-
-        规则类型
-
-        :param parent_id: The parent_id of this UpdateRuleSetReq.
-        :type parent_id: str
-        """
-        self._parent_id = parent_id
 
     @property
     def rules(self):

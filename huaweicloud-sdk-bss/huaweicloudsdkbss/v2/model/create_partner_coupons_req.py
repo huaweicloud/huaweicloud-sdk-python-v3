@@ -19,7 +19,7 @@ class CreatePartnerCouponsReq:
     openapi_types = {
         'quota_id': 'str',
         'customer_ids': 'list[str]',
-        'face_value': 'float',
+        'face_value': 'decimal.Decimal',
         'valid_time': 'str',
         'expire_time': 'str',
         'cloud_service_types': 'list[str]',
@@ -50,7 +50,7 @@ class CreatePartnerCouponsReq:
         :param customer_ids: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
         :type customer_ids: list[str]
         :param face_value: 代金券面值。 单位：元。取值大于0且精确到小数点后2位。
-        :type face_value: float
+        :type face_value: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param valid_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的生效时间。
         :type valid_time: str
         :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的失效时间。
@@ -145,7 +145,7 @@ class CreatePartnerCouponsReq:
         代金券面值。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The face_value of this CreatePartnerCouponsReq.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._face_value
 
@@ -156,7 +156,7 @@ class CreatePartnerCouponsReq:
         代金券面值。 单位：元。取值大于0且精确到小数点后2位。
 
         :param face_value: The face_value of this CreatePartnerCouponsReq.
-        :type face_value: float
+        :type face_value: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._face_value = face_value
 

@@ -18,7 +18,7 @@ class BatchRestoreDatabaseResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'restore_result': 'list[PostgreSQLRestoreResult]'
+        'restore_result': 'list[RestoreResult]'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class BatchRestoreDatabaseResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param restore_result: 表信息
-        :type restore_result: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreResult`]
+        :type restore_result: list[:class:`huaweicloudsdkrds.v3.RestoreResult`]
         """
         
         super(BatchRestoreDatabaseResponse, self).__init__()
@@ -49,7 +49,7 @@ class BatchRestoreDatabaseResponse(SdkResponse):
         表信息
 
         :return: The restore_result of this BatchRestoreDatabaseResponse.
-        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreResult`]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.RestoreResult`]
         """
         return self._restore_result
 
@@ -60,7 +60,7 @@ class BatchRestoreDatabaseResponse(SdkResponse):
         表信息
 
         :param restore_result: The restore_result of this BatchRestoreDatabaseResponse.
-        :type restore_result: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreResult`]
+        :type restore_result: list[:class:`huaweicloudsdkrds.v3.RestoreResult`]
         """
         self._restore_result = restore_result
 

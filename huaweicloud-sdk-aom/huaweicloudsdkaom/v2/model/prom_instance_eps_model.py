@@ -59,35 +59,35 @@ class PromInstanceEpsModel:
 
         The model defined in huaweicloud sdk
 
-        :param prom_name: 普罗实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100
+        :param prom_name: Prometheus实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100。
         :type prom_name: str
-        :param prom_id: 普罗实例ID
+        :param prom_id: Prometheus实例id。
         :type prom_id: str
-        :param prom_type: 普罗实例类型,DEFAULT,ECS,VPC,CCE,REMOTE_WRITE,KUBERNETES,CLOUD_SERVICE,ACROSS_ACCOUNT
+        :param prom_type: Prometheus实例类型。
         :type prom_type: str
-        :param prom_version: 普罗实例版本号
+        :param prom_version: Prometheus实例版本号。
         :type prom_version: str
-        :param cce_spec: CCE场景特殊字段
+        :param cce_spec: CCE场景特殊字段。
         :type cce_spec: str
         :param prom_config: 
         :type prom_config: :class:`huaweicloudsdkaom.v2.PromConfigModel`
-        :param prom_create_timestamp: 普罗实例创建时间戳
+        :param prom_create_timestamp: Prometheus实例创建时间戳。
         :type prom_create_timestamp: int
-        :param prom_update_timestamp: 普罗实例更新时间戳
+        :param prom_update_timestamp: Prometheus实例更新时间戳。
         :type prom_update_timestamp: int
-        :param prom_status: 普罗实例状态 true/false
+        :param prom_status: Prometheus实例状态。
         :type prom_status: str
-        :param enterprise_project_id: 普罗实例所属的企业项目
+        :param enterprise_project_id: Prometheus实例所属的企业项目。
         :type enterprise_project_id: str
-        :param project_id: 普罗实例所属projectId
+        :param project_id: Prometheus实例所属projectId。
         :type project_id: str
-        :param is_deleted_tag: 删除标记
+        :param is_deleted_tag: 删除标记。
         :type is_deleted_tag: int
-        :param deleted_time: 删除时间
+        :param deleted_time: 删除时间。
         :type deleted_time: int
         :param prom_spec_config: 
         :type prom_spec_config: :class:`huaweicloudsdkaom.v2.PromConfigModel`
-        :param cce_spec_config: 普罗实例所属CCE特殊配置
+        :param cce_spec_config: Prometheus实例所属CCE特殊配置。
         :type cce_spec_config: str
         :param application: 
         :type application: :class:`huaweicloudsdkaom.v2.ApplicationModel`
@@ -148,7 +148,7 @@ class PromInstanceEpsModel:
     def prom_name(self):
         """Gets the prom_name of this PromInstanceEpsModel.
 
-        普罗实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100
+        Prometheus实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100。
 
         :return: The prom_name of this PromInstanceEpsModel.
         :rtype: str
@@ -159,7 +159,7 @@ class PromInstanceEpsModel:
     def prom_name(self, prom_name):
         """Sets the prom_name of this PromInstanceEpsModel.
 
-        普罗实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100
+        Prometheus实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100。
 
         :param prom_name: The prom_name of this PromInstanceEpsModel.
         :type prom_name: str
@@ -170,7 +170,7 @@ class PromInstanceEpsModel:
     def prom_id(self):
         """Gets the prom_id of this PromInstanceEpsModel.
 
-        普罗实例ID
+        Prometheus实例id。
 
         :return: The prom_id of this PromInstanceEpsModel.
         :rtype: str
@@ -181,7 +181,7 @@ class PromInstanceEpsModel:
     def prom_id(self, prom_id):
         """Sets the prom_id of this PromInstanceEpsModel.
 
-        普罗实例ID
+        Prometheus实例id。
 
         :param prom_id: The prom_id of this PromInstanceEpsModel.
         :type prom_id: str
@@ -192,7 +192,7 @@ class PromInstanceEpsModel:
     def prom_type(self):
         """Gets the prom_type of this PromInstanceEpsModel.
 
-        普罗实例类型,DEFAULT,ECS,VPC,CCE,REMOTE_WRITE,KUBERNETES,CLOUD_SERVICE,ACROSS_ACCOUNT
+        Prometheus实例类型。
 
         :return: The prom_type of this PromInstanceEpsModel.
         :rtype: str
@@ -203,7 +203,7 @@ class PromInstanceEpsModel:
     def prom_type(self, prom_type):
         """Sets the prom_type of this PromInstanceEpsModel.
 
-        普罗实例类型,DEFAULT,ECS,VPC,CCE,REMOTE_WRITE,KUBERNETES,CLOUD_SERVICE,ACROSS_ACCOUNT
+        Prometheus实例类型。
 
         :param prom_type: The prom_type of this PromInstanceEpsModel.
         :type prom_type: str
@@ -214,7 +214,7 @@ class PromInstanceEpsModel:
     def prom_version(self):
         """Gets the prom_version of this PromInstanceEpsModel.
 
-        普罗实例版本号
+        Prometheus实例版本号。
 
         :return: The prom_version of this PromInstanceEpsModel.
         :rtype: str
@@ -225,7 +225,7 @@ class PromInstanceEpsModel:
     def prom_version(self, prom_version):
         """Sets the prom_version of this PromInstanceEpsModel.
 
-        普罗实例版本号
+        Prometheus实例版本号。
 
         :param prom_version: The prom_version of this PromInstanceEpsModel.
         :type prom_version: str
@@ -236,7 +236,7 @@ class PromInstanceEpsModel:
     def cce_spec(self):
         """Gets the cce_spec of this PromInstanceEpsModel.
 
-        CCE场景特殊字段
+        CCE场景特殊字段。
 
         :return: The cce_spec of this PromInstanceEpsModel.
         :rtype: str
@@ -247,7 +247,7 @@ class PromInstanceEpsModel:
     def cce_spec(self, cce_spec):
         """Sets the cce_spec of this PromInstanceEpsModel.
 
-        CCE场景特殊字段
+        CCE场景特殊字段。
 
         :param cce_spec: The cce_spec of this PromInstanceEpsModel.
         :type cce_spec: str
@@ -276,7 +276,7 @@ class PromInstanceEpsModel:
     def prom_create_timestamp(self):
         """Gets the prom_create_timestamp of this PromInstanceEpsModel.
 
-        普罗实例创建时间戳
+        Prometheus实例创建时间戳。
 
         :return: The prom_create_timestamp of this PromInstanceEpsModel.
         :rtype: int
@@ -287,7 +287,7 @@ class PromInstanceEpsModel:
     def prom_create_timestamp(self, prom_create_timestamp):
         """Sets the prom_create_timestamp of this PromInstanceEpsModel.
 
-        普罗实例创建时间戳
+        Prometheus实例创建时间戳。
 
         :param prom_create_timestamp: The prom_create_timestamp of this PromInstanceEpsModel.
         :type prom_create_timestamp: int
@@ -298,7 +298,7 @@ class PromInstanceEpsModel:
     def prom_update_timestamp(self):
         """Gets the prom_update_timestamp of this PromInstanceEpsModel.
 
-        普罗实例更新时间戳
+        Prometheus实例更新时间戳。
 
         :return: The prom_update_timestamp of this PromInstanceEpsModel.
         :rtype: int
@@ -309,7 +309,7 @@ class PromInstanceEpsModel:
     def prom_update_timestamp(self, prom_update_timestamp):
         """Sets the prom_update_timestamp of this PromInstanceEpsModel.
 
-        普罗实例更新时间戳
+        Prometheus实例更新时间戳。
 
         :param prom_update_timestamp: The prom_update_timestamp of this PromInstanceEpsModel.
         :type prom_update_timestamp: int
@@ -320,7 +320,7 @@ class PromInstanceEpsModel:
     def prom_status(self):
         """Gets the prom_status of this PromInstanceEpsModel.
 
-        普罗实例状态 true/false
+        Prometheus实例状态。
 
         :return: The prom_status of this PromInstanceEpsModel.
         :rtype: str
@@ -331,7 +331,7 @@ class PromInstanceEpsModel:
     def prom_status(self, prom_status):
         """Sets the prom_status of this PromInstanceEpsModel.
 
-        普罗实例状态 true/false
+        Prometheus实例状态。
 
         :param prom_status: The prom_status of this PromInstanceEpsModel.
         :type prom_status: str
@@ -342,7 +342,7 @@ class PromInstanceEpsModel:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this PromInstanceEpsModel.
 
-        普罗实例所属的企业项目
+        Prometheus实例所属的企业项目。
 
         :return: The enterprise_project_id of this PromInstanceEpsModel.
         :rtype: str
@@ -353,7 +353,7 @@ class PromInstanceEpsModel:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this PromInstanceEpsModel.
 
-        普罗实例所属的企业项目
+        Prometheus实例所属的企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this PromInstanceEpsModel.
         :type enterprise_project_id: str
@@ -364,7 +364,7 @@ class PromInstanceEpsModel:
     def project_id(self):
         """Gets the project_id of this PromInstanceEpsModel.
 
-        普罗实例所属projectId
+        Prometheus实例所属projectId。
 
         :return: The project_id of this PromInstanceEpsModel.
         :rtype: str
@@ -375,7 +375,7 @@ class PromInstanceEpsModel:
     def project_id(self, project_id):
         """Sets the project_id of this PromInstanceEpsModel.
 
-        普罗实例所属projectId
+        Prometheus实例所属projectId。
 
         :param project_id: The project_id of this PromInstanceEpsModel.
         :type project_id: str
@@ -386,7 +386,7 @@ class PromInstanceEpsModel:
     def is_deleted_tag(self):
         """Gets the is_deleted_tag of this PromInstanceEpsModel.
 
-        删除标记
+        删除标记。
 
         :return: The is_deleted_tag of this PromInstanceEpsModel.
         :rtype: int
@@ -397,7 +397,7 @@ class PromInstanceEpsModel:
     def is_deleted_tag(self, is_deleted_tag):
         """Sets the is_deleted_tag of this PromInstanceEpsModel.
 
-        删除标记
+        删除标记。
 
         :param is_deleted_tag: The is_deleted_tag of this PromInstanceEpsModel.
         :type is_deleted_tag: int
@@ -408,7 +408,7 @@ class PromInstanceEpsModel:
     def deleted_time(self):
         """Gets the deleted_time of this PromInstanceEpsModel.
 
-        删除时间
+        删除时间。
 
         :return: The deleted_time of this PromInstanceEpsModel.
         :rtype: int
@@ -419,7 +419,7 @@ class PromInstanceEpsModel:
     def deleted_time(self, deleted_time):
         """Sets the deleted_time of this PromInstanceEpsModel.
 
-        删除时间
+        删除时间。
 
         :param deleted_time: The deleted_time of this PromInstanceEpsModel.
         :type deleted_time: int
@@ -448,7 +448,7 @@ class PromInstanceEpsModel:
     def cce_spec_config(self):
         """Gets the cce_spec_config of this PromInstanceEpsModel.
 
-        普罗实例所属CCE特殊配置
+        Prometheus实例所属CCE特殊配置。
 
         :return: The cce_spec_config of this PromInstanceEpsModel.
         :rtype: str
@@ -459,7 +459,7 @@ class PromInstanceEpsModel:
     def cce_spec_config(self, cce_spec_config):
         """Sets the cce_spec_config of this PromInstanceEpsModel.
 
-        普罗实例所属CCE特殊配置
+        Prometheus实例所属CCE特殊配置。
 
         :param cce_spec_config: The cce_spec_config of this PromInstanceEpsModel.
         :type cce_spec_config: str

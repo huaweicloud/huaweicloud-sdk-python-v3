@@ -29,7 +29,7 @@ class RecordingRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param recording_rule: recordingRule
+        :param recording_rule: 预聚合规则。
         :type recording_rule: str
         """
         
@@ -44,7 +44,7 @@ class RecordingRuleRequest:
     def recording_rule(self):
         """Gets the recording_rule of this RecordingRuleRequest.
 
-        recordingRule
+        预聚合规则。
 
         :return: The recording_rule of this RecordingRuleRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class RecordingRuleRequest:
     def recording_rule(self, recording_rule):
         """Sets the recording_rule of this RecordingRuleRequest.
 
-        recordingRule
+        预聚合规则。
 
         :param recording_rule: The recording_rule of this RecordingRuleRequest.
         :type recording_rule: str

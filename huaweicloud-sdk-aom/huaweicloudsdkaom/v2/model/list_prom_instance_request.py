@@ -35,13 +35,13 @@ class ListPromInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param prom_id: 普罗实例ID
+        :param prom_id: Prometheus实例id。
         :type prom_id: str
-        :param prom_type: 普罗实例类型,DEFAULT,ECS,VPC,CCE,REMOTE_WRITE,KUBERNETES,CLOUD_SERVICE,ACROSS_ACCOUNT
+        :param prom_type: Prometheus实例类型。
         :type prom_type: str
-        :param cce_cluster_enable: cce集群开关 true/false
+        :param cce_cluster_enable: cce集群开关。
         :type cce_cluster_enable: str
-        :param prom_status: 普罗实例状态 true/false
+        :param prom_status: Prometheus实例状态。
         :type prom_status: str
         """
         
@@ -66,7 +66,7 @@ class ListPromInstanceRequest:
     def prom_id(self):
         """Gets the prom_id of this ListPromInstanceRequest.
 
-        普罗实例ID
+        Prometheus实例id。
 
         :return: The prom_id of this ListPromInstanceRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListPromInstanceRequest:
     def prom_id(self, prom_id):
         """Sets the prom_id of this ListPromInstanceRequest.
 
-        普罗实例ID
+        Prometheus实例id。
 
         :param prom_id: The prom_id of this ListPromInstanceRequest.
         :type prom_id: str
@@ -88,7 +88,7 @@ class ListPromInstanceRequest:
     def prom_type(self):
         """Gets the prom_type of this ListPromInstanceRequest.
 
-        普罗实例类型,DEFAULT,ECS,VPC,CCE,REMOTE_WRITE,KUBERNETES,CLOUD_SERVICE,ACROSS_ACCOUNT
+        Prometheus实例类型。
 
         :return: The prom_type of this ListPromInstanceRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class ListPromInstanceRequest:
     def prom_type(self, prom_type):
         """Sets the prom_type of this ListPromInstanceRequest.
 
-        普罗实例类型,DEFAULT,ECS,VPC,CCE,REMOTE_WRITE,KUBERNETES,CLOUD_SERVICE,ACROSS_ACCOUNT
+        Prometheus实例类型。
 
         :param prom_type: The prom_type of this ListPromInstanceRequest.
         :type prom_type: str
@@ -110,7 +110,7 @@ class ListPromInstanceRequest:
     def cce_cluster_enable(self):
         """Gets the cce_cluster_enable of this ListPromInstanceRequest.
 
-        cce集群开关 true/false
+        cce集群开关。
 
         :return: The cce_cluster_enable of this ListPromInstanceRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class ListPromInstanceRequest:
     def cce_cluster_enable(self, cce_cluster_enable):
         """Sets the cce_cluster_enable of this ListPromInstanceRequest.
 
-        cce集群开关 true/false
+        cce集群开关。
 
         :param cce_cluster_enable: The cce_cluster_enable of this ListPromInstanceRequest.
         :type cce_cluster_enable: str
@@ -132,7 +132,7 @@ class ListPromInstanceRequest:
     def prom_status(self):
         """Gets the prom_status of this ListPromInstanceRequest.
 
-        普罗实例状态 true/false
+        Prometheus实例状态。
 
         :return: The prom_status of this ListPromInstanceRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class ListPromInstanceRequest:
     def prom_status(self, prom_status):
         """Sets the prom_status of this ListPromInstanceRequest.
 
-        普罗实例状态 true/false
+        Prometheus实例状态。
 
         :param prom_status: The prom_status of this ListPromInstanceRequest.
         :type prom_status: str

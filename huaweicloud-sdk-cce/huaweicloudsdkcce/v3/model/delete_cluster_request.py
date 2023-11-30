@@ -25,7 +25,9 @@ class DeleteClusterRequest:
         'delete_obs': 'str',
         'delete_sfs': 'str',
         'delete_sfs30': 'str',
-        'tobedeleted': 'str'
+        'tobedeleted': 'str',
+        'ondemand_node_policy': 'str',
+        'periodic_node_policy': 'str'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class DeleteClusterRequest:
         'delete_obs': 'delete_obs',
         'delete_sfs': 'delete_sfs',
         'delete_sfs30': 'delete_sfs30',
-        'tobedeleted': 'tobedeleted'
+        'tobedeleted': 'tobedeleted',
+        'ondemand_node_policy': 'ondemand_node_policy',
+        'periodic_node_policy': 'periodic_node_policy'
     }
 
-    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, delete_sfs30=None, tobedeleted=None):
+    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, delete_sfs30=None, tobedeleted=None, ondemand_node_policy=None, periodic_node_policy=None):
         """DeleteClusterRequest
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class DeleteClusterRequest:
         :type delete_sfs30: str
         :param tobedeleted: 是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。  需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。  使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。  允许重复执行，覆盖预置的删除参数。  枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
         :type tobedeleted: str
+        :param ondemand_node_policy: 集群下所有按需节点处理策略， 枚举取值： - delete (删除服务器) - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
+        :type ondemand_node_policy: str
+        :param periodic_node_policy: 集群下所有包周期节点处理策略， 枚举取值： - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
+        :type periodic_node_policy: str
         """
         
         
@@ -76,6 +84,8 @@ class DeleteClusterRequest:
         self._delete_sfs = None
         self._delete_sfs30 = None
         self._tobedeleted = None
+        self._ondemand_node_policy = None
+        self._periodic_node_policy = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
@@ -95,6 +105,10 @@ class DeleteClusterRequest:
             self.delete_sfs30 = delete_sfs30
         if tobedeleted is not None:
             self.tobedeleted = tobedeleted
+        if ondemand_node_policy is not None:
+            self.ondemand_node_policy = ondemand_node_policy
+        if periodic_node_policy is not None:
+            self.periodic_node_policy = periodic_node_policy
 
     @property
     def cluster_id(self):
@@ -293,6 +307,50 @@ class DeleteClusterRequest:
         :type tobedeleted: str
         """
         self._tobedeleted = tobedeleted
+
+    @property
+    def ondemand_node_policy(self):
+        """Gets the ondemand_node_policy of this DeleteClusterRequest.
+
+        集群下所有按需节点处理策略， 枚举取值： - delete (删除服务器) - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
+
+        :return: The ondemand_node_policy of this DeleteClusterRequest.
+        :rtype: str
+        """
+        return self._ondemand_node_policy
+
+    @ondemand_node_policy.setter
+    def ondemand_node_policy(self, ondemand_node_policy):
+        """Sets the ondemand_node_policy of this DeleteClusterRequest.
+
+        集群下所有按需节点处理策略， 枚举取值： - delete (删除服务器) - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
+
+        :param ondemand_node_policy: The ondemand_node_policy of this DeleteClusterRequest.
+        :type ondemand_node_policy: str
+        """
+        self._ondemand_node_policy = ondemand_node_policy
+
+    @property
+    def periodic_node_policy(self):
+        """Gets the periodic_node_policy of this DeleteClusterRequest.
+
+        集群下所有包周期节点处理策略， 枚举取值： - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
+
+        :return: The periodic_node_policy of this DeleteClusterRequest.
+        :rtype: str
+        """
+        return self._periodic_node_policy
+
+    @periodic_node_policy.setter
+    def periodic_node_policy(self, periodic_node_policy):
+        """Sets the periodic_node_policy of this DeleteClusterRequest.
+
+        集群下所有包周期节点处理策略， 枚举取值： - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
+
+        :param periodic_node_policy: The periodic_node_policy of this DeleteClusterRequest.
+        :type periodic_node_policy: str
+        """
+        self._periodic_node_policy = periodic_node_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

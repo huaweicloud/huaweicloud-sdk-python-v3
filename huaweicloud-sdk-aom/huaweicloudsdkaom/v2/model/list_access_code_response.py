@@ -30,7 +30,7 @@ class ListAccessCodeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_codes: accessCodes
+        :param access_codes: accessCodes。
         :type access_codes: list[:class:`huaweicloudsdkaom.v2.AccessCodeModel`]
         """
         
@@ -46,7 +46,7 @@ class ListAccessCodeResponse(SdkResponse):
     def access_codes(self):
         """Gets the access_codes of this ListAccessCodeResponse.
 
-        accessCodes
+        accessCodes。
 
         :return: The access_codes of this ListAccessCodeResponse.
         :rtype: list[:class:`huaweicloudsdkaom.v2.AccessCodeModel`]
@@ -57,7 +57,7 @@ class ListAccessCodeResponse(SdkResponse):
     def access_codes(self, access_codes):
         """Sets the access_codes of this ListAccessCodeResponse.
 
-        accessCodes
+        accessCodes。
 
         :param access_codes: The access_codes of this ListAccessCodeResponse.
         :type access_codes: list[:class:`huaweicloudsdkaom.v2.AccessCodeModel`]

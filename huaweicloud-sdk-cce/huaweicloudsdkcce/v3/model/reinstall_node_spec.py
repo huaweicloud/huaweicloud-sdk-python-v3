@@ -26,7 +26,8 @@ class ReinstallNodeSpec:
         'k8s_options': 'ReinstallK8sOptionsConfig',
         'lifecycle': 'NodeLifecycleConfig',
         'initialized_conditions': 'list[str]',
-        'extend_param': 'ReinstallExtendParam'
+        'extend_param': 'ReinstallExtendParam',
+        'hostname_config': 'HostnameConfig'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ReinstallNodeSpec:
         'k8s_options': 'k8sOptions',
         'lifecycle': 'lifecycle',
         'initialized_conditions': 'initializedConditions',
-        'extend_param': 'extendParam'
+        'extend_param': 'extendParam',
+        'hostname_config': 'hostnameConfig'
     }
 
-    def __init__(self, os=None, login=None, name=None, server_config=None, volume_config=None, runtime_config=None, k8s_options=None, lifecycle=None, initialized_conditions=None, extend_param=None):
+    def __init__(self, os=None, login=None, name=None, server_config=None, volume_config=None, runtime_config=None, k8s_options=None, lifecycle=None, initialized_conditions=None, extend_param=None, hostname_config=None):
         """ReinstallNodeSpec
 
         The model defined in huaweicloud sdk
@@ -51,7 +53,7 @@ class ReinstallNodeSpec:
         :type os: str
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
-        :param name: 节点名称 &gt; 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        :param name: 节点名称 &gt; 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位。
         :type name: str
         :param server_config: 
         :type server_config: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
@@ -67,6 +69,8 @@ class ReinstallNodeSpec:
         :type initialized_conditions: list[str]
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
+        :param hostname_config: 
+        :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
         """
         
         
@@ -81,6 +85,7 @@ class ReinstallNodeSpec:
         self._lifecycle = None
         self._initialized_conditions = None
         self._extend_param = None
+        self._hostname_config = None
         self.discriminator = None
 
         self.os = os
@@ -101,6 +106,8 @@ class ReinstallNodeSpec:
             self.initialized_conditions = initialized_conditions
         if extend_param is not None:
             self.extend_param = extend_param
+        if hostname_config is not None:
+            self.hostname_config = hostname_config
 
     @property
     def os(self):
@@ -146,7 +153,7 @@ class ReinstallNodeSpec:
     def name(self):
         """Gets the name of this ReinstallNodeSpec.
 
-        节点名称 > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        节点名称 > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位。
 
         :return: The name of this ReinstallNodeSpec.
         :rtype: str
@@ -157,7 +164,7 @@ class ReinstallNodeSpec:
     def name(self, name):
         """Sets the name of this ReinstallNodeSpec.
 
-        节点名称 > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        节点名称 > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位。
 
         :param name: The name of this ReinstallNodeSpec.
         :type name: str
@@ -293,6 +300,24 @@ class ReinstallNodeSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
         """
         self._extend_param = extend_param
+
+    @property
+    def hostname_config(self):
+        """Gets the hostname_config of this ReinstallNodeSpec.
+
+        :return: The hostname_config of this ReinstallNodeSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.HostnameConfig`
+        """
+        return self._hostname_config
+
+    @hostname_config.setter
+    def hostname_config(self, hostname_config):
+        """Sets the hostname_config of this ReinstallNodeSpec.
+
+        :param hostname_config: The hostname_config of this ReinstallNodeSpec.
+        :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
+        """
+        self._hostname_config = hostname_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

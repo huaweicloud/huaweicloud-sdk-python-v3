@@ -50,7 +50,8 @@ class UpgradePgMajorVersion:
 
         self.target_version = target_version
         self.is_change_private_ip = is_change_private_ip
-        self.statistics_collection_mode = statistics_collection_mode
+        if statistics_collection_mode is not None:
+            self.statistics_collection_mode = statistics_collection_mode
 
     @property
     def target_version(self):

@@ -17,7 +17,7 @@ class PostgreSQLRestoreDatabaseRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instances': 'list[PostgreSQLRestoreDatabaseInstance]'
+        'instances': 'list[RestoreDatabaseInstance]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class PostgreSQLRestoreDatabaseRequest:
         The model defined in huaweicloud sdk
 
         :param instances: 库级恢复实例信息
-        :type instances: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreDatabaseInstance`]
+        :type instances: list[:class:`huaweicloudsdkrds.v3.RestoreDatabaseInstance`]
         """
         
         
@@ -48,7 +48,7 @@ class PostgreSQLRestoreDatabaseRequest:
         库级恢复实例信息
 
         :return: The instances of this PostgreSQLRestoreDatabaseRequest.
-        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreDatabaseInstance`]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.RestoreDatabaseInstance`]
         """
         return self._instances
 
@@ -59,7 +59,7 @@ class PostgreSQLRestoreDatabaseRequest:
         库级恢复实例信息
 
         :param instances: The instances of this PostgreSQLRestoreDatabaseRequest.
-        :type instances: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreDatabaseInstance`]
+        :type instances: list[:class:`huaweicloudsdkrds.v3.RestoreDatabaseInstance`]
         """
         self._instances = instances
 

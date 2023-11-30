@@ -36,6 +36,7 @@ class ShowApiResponse(SdkResponse):
         'status': 'str',
         'type': 'str',
         'debug_status': 'str',
+        'publish_messages': 'list[ApiPublishDTO]',
         'request_paras': 'list[RequestPara]',
         'datasource_config': 'DatasourceConfig',
         'backend_config': 'BackendConfig'
@@ -60,12 +61,13 @@ class ShowApiResponse(SdkResponse):
         'status': 'status',
         'type': 'type',
         'debug_status': 'debug_status',
+        'publish_messages': 'publish_messages',
         'request_paras': 'request_paras',
         'datasource_config': 'datasource_config',
         'backend_config': 'backend_config'
     }
 
-    def __init__(self, id=None, name=None, group_id=None, description=None, protocol=None, publish_type=None, log_flag=None, path=None, host=None, hosts=None, request_type=None, create_user=None, create_time=None, update_time=None, manager=None, status=None, type=None, debug_status=None, request_paras=None, datasource_config=None, backend_config=None):
+    def __init__(self, id=None, name=None, group_id=None, description=None, protocol=None, publish_type=None, log_flag=None, path=None, host=None, hosts=None, request_type=None, create_user=None, create_time=None, update_time=None, manager=None, status=None, type=None, debug_status=None, publish_messages=None, request_paras=None, datasource_config=None, backend_config=None):
         """ShowApiResponse
 
         The model defined in huaweicloud sdk
@@ -74,7 +76,7 @@ class ShowApiResponse(SdkResponse):
         :type id: str
         :param name: API名称
         :type name: str
-        :param group_id: API所属分组的ID
+        :param group_id: API所属分组的ID（共享版）
         :type group_id: str
         :param description: API 描述
         :type description: str
@@ -100,12 +102,14 @@ class ShowApiResponse(SdkResponse):
         :type update_time: int
         :param manager: API 审核人名称
         :type manager: str
-        :param status: API的状态
+        :param status: API的状态（共享版）
         :type status: str
         :param type: API 类型
         :type type: str
-        :param debug_status: API调试状态
+        :param debug_status: API调试状态（共享版）
         :type debug_status: str
+        :param publish_messages: 发布信息列表（专享版）
+        :type publish_messages: list[:class:`huaweicloudsdkdataartsstudio.v1.ApiPublishDTO`]
         :param request_paras: API请求参数
         :type request_paras: list[:class:`huaweicloudsdkdataartsstudio.v1.RequestPara`]
         :param datasource_config: 
@@ -134,6 +138,7 @@ class ShowApiResponse(SdkResponse):
         self._status = None
         self._type = None
         self._debug_status = None
+        self._publish_messages = None
         self._request_paras = None
         self._datasource_config = None
         self._backend_config = None
@@ -175,6 +180,8 @@ class ShowApiResponse(SdkResponse):
             self.type = type
         if debug_status is not None:
             self.debug_status = debug_status
+        if publish_messages is not None:
+            self.publish_messages = publish_messages
         if request_paras is not None:
             self.request_paras = request_paras
         if datasource_config is not None:
@@ -230,7 +237,7 @@ class ShowApiResponse(SdkResponse):
     def group_id(self):
         """Gets the group_id of this ShowApiResponse.
 
-        API所属分组的ID
+        API所属分组的ID（共享版）
 
         :return: The group_id of this ShowApiResponse.
         :rtype: str
@@ -241,7 +248,7 @@ class ShowApiResponse(SdkResponse):
     def group_id(self, group_id):
         """Sets the group_id of this ShowApiResponse.
 
-        API所属分组的ID
+        API所属分组的ID（共享版）
 
         :param group_id: The group_id of this ShowApiResponse.
         :type group_id: str
@@ -512,7 +519,7 @@ class ShowApiResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowApiResponse.
 
-        API的状态
+        API的状态（共享版）
 
         :return: The status of this ShowApiResponse.
         :rtype: str
@@ -523,7 +530,7 @@ class ShowApiResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowApiResponse.
 
-        API的状态
+        API的状态（共享版）
 
         :param status: The status of this ShowApiResponse.
         :type status: str
@@ -556,7 +563,7 @@ class ShowApiResponse(SdkResponse):
     def debug_status(self):
         """Gets the debug_status of this ShowApiResponse.
 
-        API调试状态
+        API调试状态（共享版）
 
         :return: The debug_status of this ShowApiResponse.
         :rtype: str
@@ -567,12 +574,34 @@ class ShowApiResponse(SdkResponse):
     def debug_status(self, debug_status):
         """Sets the debug_status of this ShowApiResponse.
 
-        API调试状态
+        API调试状态（共享版）
 
         :param debug_status: The debug_status of this ShowApiResponse.
         :type debug_status: str
         """
         self._debug_status = debug_status
+
+    @property
+    def publish_messages(self):
+        """Gets the publish_messages of this ShowApiResponse.
+
+        发布信息列表（专享版）
+
+        :return: The publish_messages of this ShowApiResponse.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.ApiPublishDTO`]
+        """
+        return self._publish_messages
+
+    @publish_messages.setter
+    def publish_messages(self, publish_messages):
+        """Sets the publish_messages of this ShowApiResponse.
+
+        发布信息列表（专享版）
+
+        :param publish_messages: The publish_messages of this ShowApiResponse.
+        :type publish_messages: list[:class:`huaweicloudsdkdataartsstudio.v1.ApiPublishDTO`]
+        """
+        self._publish_messages = publish_messages
 
     @property
     def request_paras(self):

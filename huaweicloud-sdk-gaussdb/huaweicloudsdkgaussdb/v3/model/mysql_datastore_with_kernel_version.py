@@ -35,7 +35,7 @@ class MysqlDatastoreWithKernelVersion:
 
         :param type: 数据库引擎，现在只支持gaussdb-mysql。
         :type type: str
-        :param version: 数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
+        :param version: 兼容的开源数据库版本号，返回三位开源版本号。
         :type version: str
         :param kernel_version: 数据库内核版本
         :type kernel_version: str
@@ -78,7 +78,7 @@ class MysqlDatastoreWithKernelVersion:
     def version(self):
         """Gets the version of this MysqlDatastoreWithKernelVersion.
 
-        数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
+        兼容的开源数据库版本号，返回三位开源版本号。
 
         :return: The version of this MysqlDatastoreWithKernelVersion.
         :rtype: str
@@ -89,7 +89,7 @@ class MysqlDatastoreWithKernelVersion:
     def version(self, version):
         """Sets the version of this MysqlDatastoreWithKernelVersion.
 
-        数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
+        兼容的开源数据库版本号，返回三位开源版本号。
 
         :param version: The version of this MysqlDatastoreWithKernelVersion.
         :type version: str

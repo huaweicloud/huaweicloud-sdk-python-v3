@@ -37,15 +37,15 @@ class PromConfigModel:
 
         The model defined in huaweicloud sdk
 
-        :param remote_write_url: 普罗实例remote-write地址
+        :param remote_write_url: Prometheus实例remote-write地址。
         :type remote_write_url: str
-        :param remote_read_url: 普罗实例remote-read地址
+        :param remote_read_url: Prometheus实例remote-read地址。
         :type remote_read_url: str
-        :param prom_http_api_endpoint: 普罗实例调用url
+        :param prom_http_api_endpoint: Prometheus实例调用url。
         :type prom_http_api_endpoint: str
-        :param dashboard_id: 普罗实例关联dashboard的dashboard ID
+        :param dashboard_id: Prometheus实例关联dashboard的dashboard id。
         :type dashboard_id: str
-        :param region_id: 普罗实例所属的region
+        :param region_id: Prometheus实例所属的region。
         :type region_id: str
         """
         
@@ -73,7 +73,7 @@ class PromConfigModel:
     def remote_write_url(self):
         """Gets the remote_write_url of this PromConfigModel.
 
-        普罗实例remote-write地址
+        Prometheus实例remote-write地址。
 
         :return: The remote_write_url of this PromConfigModel.
         :rtype: str
@@ -84,7 +84,7 @@ class PromConfigModel:
     def remote_write_url(self, remote_write_url):
         """Sets the remote_write_url of this PromConfigModel.
 
-        普罗实例remote-write地址
+        Prometheus实例remote-write地址。
 
         :param remote_write_url: The remote_write_url of this PromConfigModel.
         :type remote_write_url: str
@@ -95,7 +95,7 @@ class PromConfigModel:
     def remote_read_url(self):
         """Gets the remote_read_url of this PromConfigModel.
 
-        普罗实例remote-read地址
+        Prometheus实例remote-read地址。
 
         :return: The remote_read_url of this PromConfigModel.
         :rtype: str
@@ -106,7 +106,7 @@ class PromConfigModel:
     def remote_read_url(self, remote_read_url):
         """Sets the remote_read_url of this PromConfigModel.
 
-        普罗实例remote-read地址
+        Prometheus实例remote-read地址。
 
         :param remote_read_url: The remote_read_url of this PromConfigModel.
         :type remote_read_url: str
@@ -117,7 +117,7 @@ class PromConfigModel:
     def prom_http_api_endpoint(self):
         """Gets the prom_http_api_endpoint of this PromConfigModel.
 
-        普罗实例调用url
+        Prometheus实例调用url。
 
         :return: The prom_http_api_endpoint of this PromConfigModel.
         :rtype: str
@@ -128,7 +128,7 @@ class PromConfigModel:
     def prom_http_api_endpoint(self, prom_http_api_endpoint):
         """Sets the prom_http_api_endpoint of this PromConfigModel.
 
-        普罗实例调用url
+        Prometheus实例调用url。
 
         :param prom_http_api_endpoint: The prom_http_api_endpoint of this PromConfigModel.
         :type prom_http_api_endpoint: str
@@ -139,7 +139,7 @@ class PromConfigModel:
     def dashboard_id(self):
         """Gets the dashboard_id of this PromConfigModel.
 
-        普罗实例关联dashboard的dashboard ID
+        Prometheus实例关联dashboard的dashboard id。
 
         :return: The dashboard_id of this PromConfigModel.
         :rtype: str
@@ -150,7 +150,7 @@ class PromConfigModel:
     def dashboard_id(self, dashboard_id):
         """Sets the dashboard_id of this PromConfigModel.
 
-        普罗实例关联dashboard的dashboard ID
+        Prometheus实例关联dashboard的dashboard id。
 
         :param dashboard_id: The dashboard_id of this PromConfigModel.
         :type dashboard_id: str
@@ -161,7 +161,7 @@ class PromConfigModel:
     def region_id(self):
         """Gets the region_id of this PromConfigModel.
 
-        普罗实例所属的region
+        Prometheus实例所属的region。
 
         :return: The region_id of this PromConfigModel.
         :rtype: str
@@ -172,7 +172,7 @@ class PromConfigModel:
     def region_id(self, region_id):
         """Sets the region_id of this PromConfigModel.
 
-        普罗实例所属的region
+        Prometheus实例所属的region。
 
         :param region_id: The region_id of this PromConfigModel.
         :type region_id: str

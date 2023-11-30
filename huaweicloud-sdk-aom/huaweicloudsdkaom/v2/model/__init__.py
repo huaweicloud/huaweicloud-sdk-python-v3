@@ -24,7 +24,6 @@ from huaweicloudsdkaom.v2.model.app_rules_body import AppRulesBody
 from huaweicloudsdkaom.v2.model.app_rules_spec import AppRulesSpec
 from huaweicloudsdkaom.v2.model.application_model import ApplicationModel
 from huaweicloudsdkaom.v2.model.application_name_rule import ApplicationNameRule
-from huaweicloudsdkaom.v2.model.auth_model import AuthModel
 from huaweicloudsdkaom.v2.model.count_events_request import CountEventsRequest
 from huaweicloudsdkaom.v2.model.count_events_response import CountEventsResponse
 from huaweicloudsdkaom.v2.model.create_prom_instance_request import CreatePromInstanceRequest

@@ -19,8 +19,8 @@ class DataMapFilterCriteria:
     openapi_types = {
         'attribute': 'str',
         'operator': 'str',
-        'value': 'object',
-        'condition': 'ConditionInfo',
+        'value': 'list[str]',
+        'condition': 'str',
         'criterion': 'list[DataMapFilterCriteria]'
     }
 
@@ -37,14 +37,14 @@ class DataMapFilterCriteria:
 
         The model defined in huaweicloud sdk
 
-        :param attribute: 属性
+        :param attribute: 过滤属性维度，枚举值：typeName、base.DataAsset.sourceType、classifications.name、tags.name、securityLevel.name、workspaceId
         :type attribute: str
-        :param operator: 操作表示，默认值EQ
+        :param operator: 操作表示，枚举值：EQ、IN
         :type operator: str
-        :param value: 值
-        :type value: object
-        :param condition: 
-        :type condition: :class:`huaweicloudsdkdataartsstudio.v1.ConditionInfo`
+        :param value: 属性过滤值，根据attribute变化。如attribute为数据源：base.DataAsset.sourceType，则值可为[\&quot;dws\&quot;, \&quot;hive\&quot;]
+        :type value: list[str]
+        :param condition: 条件拼接准则，取值范围 AND,OR
+        :type condition: str
         :param criterion: 条件准则
         :type criterion: list[:class:`huaweicloudsdkdataartsstudio.v1.DataMapFilterCriteria`]
         """
@@ -73,7 +73,7 @@ class DataMapFilterCriteria:
     def attribute(self):
         """Gets the attribute of this DataMapFilterCriteria.
 
-        属性
+        过滤属性维度，枚举值：typeName、base.DataAsset.sourceType、classifications.name、tags.name、securityLevel.name、workspaceId
 
         :return: The attribute of this DataMapFilterCriteria.
         :rtype: str
@@ -84,7 +84,7 @@ class DataMapFilterCriteria:
     def attribute(self, attribute):
         """Sets the attribute of this DataMapFilterCriteria.
 
-        属性
+        过滤属性维度，枚举值：typeName、base.DataAsset.sourceType、classifications.name、tags.name、securityLevel.name、workspaceId
 
         :param attribute: The attribute of this DataMapFilterCriteria.
         :type attribute: str
@@ -95,7 +95,7 @@ class DataMapFilterCriteria:
     def operator(self):
         """Gets the operator of this DataMapFilterCriteria.
 
-        操作表示，默认值EQ
+        操作表示，枚举值：EQ、IN
 
         :return: The operator of this DataMapFilterCriteria.
         :rtype: str
@@ -106,7 +106,7 @@ class DataMapFilterCriteria:
     def operator(self, operator):
         """Sets the operator of this DataMapFilterCriteria.
 
-        操作表示，默认值EQ
+        操作表示，枚举值：EQ、IN
 
         :param operator: The operator of this DataMapFilterCriteria.
         :type operator: str
@@ -117,10 +117,10 @@ class DataMapFilterCriteria:
     def value(self):
         """Gets the value of this DataMapFilterCriteria.
 
-        值
+        属性过滤值，根据attribute变化。如attribute为数据源：base.DataAsset.sourceType，则值可为[\"dws\", \"hive\"]
 
         :return: The value of this DataMapFilterCriteria.
-        :rtype: object
+        :rtype: list[str]
         """
         return self._value
 
@@ -128,10 +128,10 @@ class DataMapFilterCriteria:
     def value(self, value):
         """Sets the value of this DataMapFilterCriteria.
 
-        值
+        属性过滤值，根据attribute变化。如attribute为数据源：base.DataAsset.sourceType，则值可为[\"dws\", \"hive\"]
 
         :param value: The value of this DataMapFilterCriteria.
-        :type value: object
+        :type value: list[str]
         """
         self._value = value
 
@@ -139,8 +139,10 @@ class DataMapFilterCriteria:
     def condition(self):
         """Gets the condition of this DataMapFilterCriteria.
 
+        条件拼接准则，取值范围 AND,OR
+
         :return: The condition of this DataMapFilterCriteria.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ConditionInfo`
+        :rtype: str
         """
         return self._condition
 
@@ -148,8 +150,10 @@ class DataMapFilterCriteria:
     def condition(self, condition):
         """Sets the condition of this DataMapFilterCriteria.
 
+        条件拼接准则，取值范围 AND,OR
+
         :param condition: The condition of this DataMapFilterCriteria.
-        :type condition: :class:`huaweicloudsdkdataartsstudio.v1.ConditionInfo`
+        :type condition: str
         """
         self._condition = condition
 

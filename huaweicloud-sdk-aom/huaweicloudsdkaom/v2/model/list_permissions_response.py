@@ -18,7 +18,7 @@ class ListPermissionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'dict(str, AuthModel)'
+        'body': 'str'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ListPermissionsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: dict(str, AuthModel)
+        :type body: str
         """
         
         super(ListPermissionsResponse, self).__init__()
@@ -47,7 +47,7 @@ class ListPermissionsResponse(SdkResponse):
         """Gets the body of this ListPermissionsResponse.
 
         :return: The body of this ListPermissionsResponse.
-        :rtype: dict(str, AuthModel)
+        :rtype: str
         """
         return self._body
 
@@ -56,7 +56,7 @@ class ListPermissionsResponse(SdkResponse):
         """Sets the body of this ListPermissionsResponse.
 
         :param body: The body of this ListPermissionsResponse.
-        :type body: dict(str, AuthModel)
+        :type body: str
         """
         self._body = body
 
