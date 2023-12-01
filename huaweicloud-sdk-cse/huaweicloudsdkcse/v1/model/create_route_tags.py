@@ -17,51 +17,51 @@ class CreateRouteTags:
     sensitive_list = []
 
     openapi_types = {
-        'version': 'str'
+        'tag': 'str'
     }
 
     attribute_map = {
-        'version': 'version'
+        'tag': '&lt;tag&gt;'
     }
 
-    def __init__(self, version=None):
+    def __init__(self, tag=None):
         """CreateRouteTags
 
         The model defined in huaweicloud sdk
 
-        :param version: version
-        :type version: str
+        :param tag: 实例标记。满足标记条件的实例放到这一组。
+        :type tag: str
         """
         
         
 
-        self._version = None
+        self._tag = None
         self.discriminator = None
 
-        if version is not None:
-            self.version = version
+        if tag is not None:
+            self.tag = tag
 
     @property
-    def version(self):
-        """Gets the version of this CreateRouteTags.
+    def tag(self):
+        """Gets the tag of this CreateRouteTags.
 
-        version
+        实例标记。满足标记条件的实例放到这一组。
 
-        :return: The version of this CreateRouteTags.
+        :return: The tag of this CreateRouteTags.
         :rtype: str
         """
-        return self._version
+        return self._tag
 
-    @version.setter
-    def version(self, version):
-        """Sets the version of this CreateRouteTags.
+    @tag.setter
+    def tag(self, tag):
+        """Sets the tag of this CreateRouteTags.
 
-        version
+        实例标记。满足标记条件的实例放到这一组。
 
-        :param version: The version of this CreateRouteTags.
-        :type version: str
+        :param tag: The tag of this CreateRouteTags.
+        :type tag: str
         """
-        self._version = version
+        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

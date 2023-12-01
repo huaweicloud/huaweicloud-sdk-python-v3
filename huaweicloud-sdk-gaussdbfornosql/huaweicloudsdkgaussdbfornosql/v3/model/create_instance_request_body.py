@@ -81,7 +81,7 @@ class CreateInstanceRequestBody:
         :type security_group_id: str
         :param password: 数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
         :type password: str
-        :param mode: 实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。   - GaussDB(for Influx)支持单节点类型，取值为“InfluxdbSingle”。   - GaussDB(for redis)支持集群类型，取值为“Cluster”。   - GaussDB(for redis)支持主备类型，取值为“Replication”。
+        :param mode: 实例类型。   - GeminiDB Cassandra支持集群类型，取值为“Cluster”。   - GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   - GeminiDB Influx支持集群类型，取值为“Cluster”。   - GeminiDB Influx支持单节点类型，取值为“InfluxdbSingle”。   - GeminiDB redis支持集群类型，取值为“Cluster”。   - GeminiDB redis支持主备类型，取值为“Replication”。
         :type mode: str
         :param flavor: 实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
         :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
@@ -99,7 +99,7 @@ class CreateInstanceRequestBody:
         :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
         :param restore_info: 
         :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
-        :param port: 数据库访问端口号。 目前仅支持GaussDB(for Redis)实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GaussDB(for Redis)实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+        :param port: 数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
         :type port: str
         :param availability_zone_detail: 
         :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
@@ -333,7 +333,7 @@ class CreateInstanceRequestBody:
     def mode(self):
         """Gets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。   - GaussDB(for Influx)支持单节点类型，取值为“InfluxdbSingle”。   - GaussDB(for redis)支持集群类型，取值为“Cluster”。   - GaussDB(for redis)支持主备类型，取值为“Replication”。
+        实例类型。   - GeminiDB Cassandra支持集群类型，取值为“Cluster”。   - GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   - GeminiDB Influx支持集群类型，取值为“Cluster”。   - GeminiDB Influx支持单节点类型，取值为“InfluxdbSingle”。   - GeminiDB redis支持集群类型，取值为“Cluster”。   - GeminiDB redis支持主备类型，取值为“Replication”。
 
         :return: The mode of this CreateInstanceRequestBody.
         :rtype: str
@@ -344,7 +344,7 @@ class CreateInstanceRequestBody:
     def mode(self, mode):
         """Sets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。   - GaussDB(for Influx)支持单节点类型，取值为“InfluxdbSingle”。   - GaussDB(for redis)支持集群类型，取值为“Cluster”。   - GaussDB(for redis)支持主备类型，取值为“Replication”。
+        实例类型。   - GeminiDB Cassandra支持集群类型，取值为“Cluster”。   - GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   - GeminiDB Influx支持集群类型，取值为“Cluster”。   - GeminiDB Influx支持单节点类型，取值为“InfluxdbSingle”。   - GeminiDB redis支持集群类型，取值为“Cluster”。   - GeminiDB redis支持主备类型，取值为“Replication”。
 
         :param mode: The mode of this CreateInstanceRequestBody.
         :type mode: str
@@ -519,7 +519,7 @@ class CreateInstanceRequestBody:
     def port(self):
         """Gets the port of this CreateInstanceRequestBody.
 
-        数据库访问端口号。 目前仅支持GaussDB(for Redis)实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GaussDB(for Redis)实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+        数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
 
         :return: The port of this CreateInstanceRequestBody.
         :rtype: str
@@ -530,7 +530,7 @@ class CreateInstanceRequestBody:
     def port(self, port):
         """Sets the port of this CreateInstanceRequestBody.
 
-        数据库访问端口号。 目前仅支持GaussDB(for Redis)实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GaussDB(for Redis)实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+        数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
 
         :param port: The port of this CreateInstanceRequestBody.
         :type port: str

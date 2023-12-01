@@ -26,7 +26,9 @@ class PipelineDTO:
         'triggers': 'list[PipelineTrigger]',
         'manifest_version': 'str',
         'definition': 'str',
-        'project_name': 'str'
+        'project_name': 'str',
+        'group_id': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class PipelineDTO:
         'triggers': 'triggers',
         'manifest_version': 'manifest_version',
         'definition': 'definition',
-        'project_name': 'project_name'
+        'project_name': 'project_name',
+        'group_id': 'group_id',
+        'id': 'id'
     }
 
-    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None, schedules=None, triggers=None, manifest_version=None, definition=None, project_name=None):
+    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None, schedules=None, triggers=None, manifest_version=None, definition=None, project_name=None, group_id=None, id=None):
         """PipelineDTO
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class PipelineDTO:
         :type definition: str
         :param project_name: 项目名称
         :type project_name: str
+        :param group_id: 流水线组ID
+        :type group_id: str
+        :param id: 若为复制场景，则为原流水线ID
+        :type id: str
         """
         
         
@@ -81,6 +89,8 @@ class PipelineDTO:
         self._manifest_version = None
         self._definition = None
         self._project_name = None
+        self._group_id = None
+        self._id = None
         self.discriminator = None
 
         if name is not None:
@@ -103,6 +113,10 @@ class PipelineDTO:
             self.definition = definition
         if project_name is not None:
             self.project_name = project_name
+        if group_id is not None:
+            self.group_id = group_id
+        if id is not None:
+            self.id = id
 
     @property
     def name(self):
@@ -323,6 +337,50 @@ class PipelineDTO:
         :type project_name: str
         """
         self._project_name = project_name
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this PipelineDTO.
+
+        流水线组ID
+
+        :return: The group_id of this PipelineDTO.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this PipelineDTO.
+
+        流水线组ID
+
+        :param group_id: The group_id of this PipelineDTO.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def id(self):
+        """Gets the id of this PipelineDTO.
+
+        若为复制场景，则为原流水线ID
+
+        :return: The id of this PipelineDTO.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this PipelineDTO.
+
+        若为复制场景，则为原流水线ID
+
+        :param id: The id of this PipelineDTO.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

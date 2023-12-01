@@ -17,50 +17,50 @@ class EngineConfigureReq:
     sensitive_list = []
 
     openapi_types = {
-        'version': 'str'
+        'auth_type': 'str'
     }
 
     attribute_map = {
-        'version': 'version'
+        'auth_type': 'authType'
     }
 
-    def __init__(self, version=None):
+    def __init__(self, auth_type=None):
         """EngineConfigureReq
 
         The model defined in huaweicloud sdk
 
-        :param version: 版本号
-        :type version: str
+        :param auth_type: authType安全认证类型，支持填写NONE和RBAC。
+        :type auth_type: str
         """
         
         
 
-        self._version = None
+        self._auth_type = None
         self.discriminator = None
 
-        self.version = version
+        self.auth_type = auth_type
 
     @property
-    def version(self):
-        """Gets the version of this EngineConfigureReq.
+    def auth_type(self):
+        """Gets the auth_type of this EngineConfigureReq.
 
-        版本号
+        authType安全认证类型，支持填写NONE和RBAC。
 
-        :return: The version of this EngineConfigureReq.
+        :return: The auth_type of this EngineConfigureReq.
         :rtype: str
         """
-        return self._version
+        return self._auth_type
 
-    @version.setter
-    def version(self, version):
-        """Sets the version of this EngineConfigureReq.
+    @auth_type.setter
+    def auth_type(self, auth_type):
+        """Sets the auth_type of this EngineConfigureReq.
 
-        版本号
+        authType安全认证类型，支持填写NONE和RBAC。
 
-        :param version: The version of this EngineConfigureReq.
-        :type version: str
+        :param auth_type: The auth_type of this EngineConfigureReq.
+        :type auth_type: str
         """
-        self._version = version
+        self._auth_type = auth_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -53,7 +53,7 @@ class ListInstancesNodeResult:
         :type name: str
         :param status: 节点状态。
         :type status: str
-        :param role: 节点角色。 该参数仅对GaussDB(for Mongo)引擎的副本集实例有效。
+        :param role: 节点角色。 该参数仅对GeminiDB Mongo引擎的副本集实例有效。
         :type role: str
         :param subnet_id: 节点所在的子网的ID。
         :type subnet_id: str
@@ -164,7 +164,7 @@ class ListInstancesNodeResult:
     def role(self):
         """Gets the role of this ListInstancesNodeResult.
 
-        节点角色。 该参数仅对GaussDB(for Mongo)引擎的副本集实例有效。
+        节点角色。 该参数仅对GeminiDB Mongo引擎的副本集实例有效。
 
         :return: The role of this ListInstancesNodeResult.
         :rtype: str
@@ -175,7 +175,7 @@ class ListInstancesNodeResult:
     def role(self, role):
         """Sets the role of this ListInstancesNodeResult.
 
-        节点角色。 该参数仅对GaussDB(for Mongo)引擎的副本集实例有效。
+        节点角色。 该参数仅对GeminiDB Mongo引擎的副本集实例有效。
 
         :param role: The role of this ListInstancesNodeResult.
         :type role: str

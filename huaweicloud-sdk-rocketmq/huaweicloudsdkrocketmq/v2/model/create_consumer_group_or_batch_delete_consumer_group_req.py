@@ -55,7 +55,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         :type name: str
         :param group_desc: 消费组描述，长度0~200个字符。
         :type group_desc: str
-        :param retry_max_time: 最大重试次数。
+        :param retry_max_time: 最大重试次数，取值范围为1~16。
         :type retry_max_time: float
         :param from_beginning: 是否重头消费。
         :type from_beginning: bool
@@ -226,7 +226,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def retry_max_time(self):
         """Gets the retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        最大重试次数。
+        最大重试次数，取值范围为1~16。
 
         :return: The retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: float
@@ -237,7 +237,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def retry_max_time(self, retry_max_time):
         """Sets the retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        最大重试次数。
+        最大重试次数，取值范围为1~16。
 
         :param retry_max_time: The retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type retry_max_time: float

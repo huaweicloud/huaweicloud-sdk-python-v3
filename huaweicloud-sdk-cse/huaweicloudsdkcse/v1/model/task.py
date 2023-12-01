@@ -36,22 +36,22 @@ class Task:
     }
 
     attribute_map = {
-        'job_id': 'job_id',
+        'job_id': 'jobId',
         'id': 'id',
         'type': 'type',
         'assigned': 'assigned',
-        'task_name': 'task_name',
-        'engine_name': 'engine_name',
-        'task_order': 'task_order',
+        'task_name': 'taskName',
+        'engine_name': 'engineName',
+        'task_order': 'taskOrder',
         'status': 'status',
-        'start_time': 'start_time',
-        'end_time': 'end_time',
-        'create_time': 'create_time',
-        'update_time': 'update_time',
+        'start_time': 'startTime',
+        'end_time': 'endTime',
+        'create_time': 'createTime',
+        'update_time': 'updateTime',
         'timeout': 'timeout',
         'log': 'log',
         'output': 'output',
-        'task_executor_brief': 'task_executor_brief'
+        'task_executor_brief': 'taskExecutorBrief'
     }
 
     def __init__(self, job_id=None, id=None, type=None, assigned=None, task_name=None, engine_name=None, task_order=None, status=None, start_time=None, end_time=None, create_time=None, update_time=None, timeout=None, log=None, output=None, task_executor_brief=None):

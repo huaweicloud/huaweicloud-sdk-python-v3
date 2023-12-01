@@ -26,7 +26,9 @@ class QueryJobsReq:
         'net_type': 'str',
         'service_name': 'str',
         'status': 'str',
-        'tags': 'dict(str, str)'
+        'tags': 'dict(str, str)',
+        'instance_ids': 'list[str]',
+        'instance_ip': 'str'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class QueryJobsReq:
         'net_type': 'net_type',
         'service_name': 'service_name',
         'status': 'status',
-        'tags': 'tags'
+        'tags': 'tags',
+        'instance_ids': 'instance_ids',
+        'instance_ip': 'instance_ip'
     }
 
-    def __init__(self, cur_page=None, per_page=None, db_use_type=None, engine_type=None, enterprise_project_id=None, name=None, net_type=None, service_name=None, status=None, tags=None):
+    def __init__(self, cur_page=None, per_page=None, db_use_type=None, engine_type=None, enterprise_project_id=None, name=None, net_type=None, service_name=None, status=None, tags=None, instance_ids=None, instance_ip=None):
         """QueryJobsReq
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class QueryJobsReq:
         :type status: str
         :param tags: 标签
         :type tags: dict(str, str)
+        :param instance_ids: 数据库实例ID列表，最多支持10个
+        :type instance_ids: list[str]
+        :param instance_ip: DRS绑定数据库实例IP
+        :type instance_ip: str
         """
         
         
@@ -81,6 +89,8 @@ class QueryJobsReq:
         self._service_name = None
         self._status = None
         self._tags = None
+        self._instance_ids = None
+        self._instance_ip = None
         self.discriminator = None
 
         self.cur_page = cur_page
@@ -100,6 +110,10 @@ class QueryJobsReq:
             self.status = status
         if tags is not None:
             self.tags = tags
+        if instance_ids is not None:
+            self.instance_ids = instance_ids
+        if instance_ip is not None:
+            self.instance_ip = instance_ip
 
     @property
     def cur_page(self):
@@ -320,6 +334,50 @@ class QueryJobsReq:
         :type tags: dict(str, str)
         """
         self._tags = tags
+
+    @property
+    def instance_ids(self):
+        """Gets the instance_ids of this QueryJobsReq.
+
+        数据库实例ID列表，最多支持10个
+
+        :return: The instance_ids of this QueryJobsReq.
+        :rtype: list[str]
+        """
+        return self._instance_ids
+
+    @instance_ids.setter
+    def instance_ids(self, instance_ids):
+        """Sets the instance_ids of this QueryJobsReq.
+
+        数据库实例ID列表，最多支持10个
+
+        :param instance_ids: The instance_ids of this QueryJobsReq.
+        :type instance_ids: list[str]
+        """
+        self._instance_ids = instance_ids
+
+    @property
+    def instance_ip(self):
+        """Gets the instance_ip of this QueryJobsReq.
+
+        DRS绑定数据库实例IP
+
+        :return: The instance_ip of this QueryJobsReq.
+        :rtype: str
+        """
+        return self._instance_ip
+
+    @instance_ip.setter
+    def instance_ip(self, instance_ip):
+        """Sets the instance_ip of this QueryJobsReq.
+
+        DRS绑定数据库实例IP
+
+        :param instance_ip: The instance_ip of this QueryJobsReq.
+        :type instance_ip: str
+        """
+        self._instance_ip = instance_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,7 +33,7 @@ class UpdateFunctionCollectStateRequest:
 
         :param func_urn: 函数URN
         :type func_urn: str
-        :param state: 收藏状态
+        :param state: 置顶状态
         :type state: str
         """
         
@@ -72,7 +72,7 @@ class UpdateFunctionCollectStateRequest:
     def state(self):
         """Gets the state of this UpdateFunctionCollectStateRequest.
 
-        收藏状态
+        置顶状态
 
         :return: The state of this UpdateFunctionCollectStateRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class UpdateFunctionCollectStateRequest:
     def state(self, state):
         """Sets the state of this UpdateFunctionCollectStateRequest.
 
-        收藏状态
+        置顶状态
 
         :param state: The state of this UpdateFunctionCollectStateRequest.
         :type state: str

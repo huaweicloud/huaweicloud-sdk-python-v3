@@ -24,7 +24,8 @@ class PolicyConfig:
         'data_sync_topology_type': 'str',
         'support_ddl_info': 'str',
         'sync_type_policy': 'str',
-        'increment_read_mode': 'str'
+        'increment_read_mode': 'str',
+        'dml_types': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class PolicyConfig:
         'data_sync_topology_type': 'data_sync_topology_type',
         'support_ddl_info': 'support_ddl_info',
         'sync_type_policy': 'sync_type_policy',
-        'increment_read_mode': 'increment_read_mode'
+        'increment_read_mode': 'increment_read_mode',
+        'dml_types': 'dml_types'
     }
 
-    def __init__(self, filter_ddl_policy=None, conflict_policy=None, index_trans=None, ddl_trans=None, data_sync_topology_type=None, support_ddl_info=None, sync_type_policy=None, increment_read_mode=None):
+    def __init__(self, filter_ddl_policy=None, conflict_policy=None, index_trans=None, ddl_trans=None, data_sync_topology_type=None, support_ddl_info=None, sync_type_policy=None, increment_read_mode=None, dml_types=None):
         """PolicyConfig
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class PolicyConfig:
         :type sync_type_policy: str
         :param increment_read_mode: oracle-gausssdb增量读取方式：logminer，xstream
         :type increment_read_mode: str
+        :param dml_types: DML同步类型。
+        :type dml_types: str
         """
         
         
@@ -71,6 +75,7 @@ class PolicyConfig:
         self._support_ddl_info = None
         self._sync_type_policy = None
         self._increment_read_mode = None
+        self._dml_types = None
         self.discriminator = None
 
         if filter_ddl_policy is not None:
@@ -89,6 +94,8 @@ class PolicyConfig:
             self.sync_type_policy = sync_type_policy
         if increment_read_mode is not None:
             self.increment_read_mode = increment_read_mode
+        if dml_types is not None:
+            self.dml_types = dml_types
 
     @property
     def filter_ddl_policy(self):
@@ -265,6 +272,28 @@ class PolicyConfig:
         :type increment_read_mode: str
         """
         self._increment_read_mode = increment_read_mode
+
+    @property
+    def dml_types(self):
+        """Gets the dml_types of this PolicyConfig.
+
+        DML同步类型。
+
+        :return: The dml_types of this PolicyConfig.
+        :rtype: str
+        """
+        return self._dml_types
+
+    @dml_types.setter
+    def dml_types(self, dml_types):
+        """Sets the dml_types of this PolicyConfig.
+
+        DML同步类型。
+
+        :param dml_types: The dml_types of this PolicyConfig.
+        :type dml_types: str
+        """
+        self._dml_types = dml_types
 
     def to_dict(self):
         """Returns the model properties as a dict"""

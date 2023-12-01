@@ -49,7 +49,7 @@ class CreateNatGatewayDnatOption:
 
         The model defined in huaweicloud sdk
 
-        :param description: DNAT规则的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
+        :param description: DNAT规则的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param port_id: 虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
         :type port_id: str
@@ -110,7 +110,7 @@ class CreateNatGatewayDnatOption:
     def description(self):
         """Gets the description of this CreateNatGatewayDnatOption.
 
-        DNAT规则的描述，长度范围小于等于255个字符，不能包含<>
+        DNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :return: The description of this CreateNatGatewayDnatOption.
         :rtype: str
@@ -121,7 +121,7 @@ class CreateNatGatewayDnatOption:
     def description(self, description):
         """Sets the description of this CreateNatGatewayDnatOption.
 
-        DNAT规则的描述，长度范围小于等于255个字符，不能包含<>
+        DNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :param description: The description of this CreateNatGatewayDnatOption.
         :type description: str

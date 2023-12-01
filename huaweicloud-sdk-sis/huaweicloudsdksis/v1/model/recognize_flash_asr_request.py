@@ -19,28 +19,28 @@ class RecognizeFlashAsrRequest:
     openapi_types = {
         '_property': 'str',
         'audio_format': 'str',
+        'obs_bucket_name': 'str',
+        'obs_object_key': 'str',
         'add_punc': 'str',
         'digit_norm': 'str',
         'need_word_info': 'str',
         'vocabulary_id': 'str',
-        'obs_bucket_name': 'str',
-        'obs_object_key': 'str',
         'first_channel_only': 'str'
     }
 
     attribute_map = {
         '_property': 'property',
         'audio_format': 'audio_format',
+        'obs_bucket_name': 'obs_bucket_name',
+        'obs_object_key': 'obs_object_key',
         'add_punc': 'add_punc',
         'digit_norm': 'digit_norm',
         'need_word_info': 'need_word_info',
         'vocabulary_id': 'vocabulary_id',
-        'obs_bucket_name': 'obs_bucket_name',
-        'obs_object_key': 'obs_object_key',
         'first_channel_only': 'first_channel_only'
     }
 
-    def __init__(self, _property=None, audio_format=None, add_punc=None, digit_norm=None, need_word_info=None, vocabulary_id=None, obs_bucket_name=None, obs_object_key=None, first_channel_only=None):
+    def __init__(self, _property=None, audio_format=None, obs_bucket_name=None, obs_object_key=None, add_punc=None, digit_norm=None, need_word_info=None, vocabulary_id=None, first_channel_only=None):
         """RecognizeFlashAsrRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +49,10 @@ class RecognizeFlashAsrRequest:
         :type _property: str
         :param audio_format: 音频格式，audio_format取值范围： wav,mp3,m4a,aac,opus
         :type audio_format: str
+        :param obs_bucket_name: obs桶名
+        :type obs_bucket_name: str
+        :param obs_object_key: obs对象key，经过urlencode编码，长度不超过1024个字符
+        :type obs_object_key: str
         :param add_punc: 是否加标点， 可以为 yes, 默认no
         :type add_punc: str
         :param digit_norm: 是否将音频中的数字使用阿拉伯数字的形式呈现，取值为yes，no，默认为yes
@@ -57,10 +61,6 @@ class RecognizeFlashAsrRequest:
         :type need_word_info: str
         :param vocabulary_id: 热词表id
         :type vocabulary_id: str
-        :param obs_bucket_name: obs桶名
-        :type obs_bucket_name: str
-        :param obs_object_key: obs对象key，经过urlencode编码，长度不超过1024个字符
-        :type obs_object_key: str
         :param first_channel_only: 表示是否在识别中只识别首个声道的音频数据，取值为“yes”和“no”，默认为“no”。
         :type first_channel_only: str
         """
@@ -69,17 +69,19 @@ class RecognizeFlashAsrRequest:
 
         self.__property = None
         self._audio_format = None
+        self._obs_bucket_name = None
+        self._obs_object_key = None
         self._add_punc = None
         self._digit_norm = None
         self._need_word_info = None
         self._vocabulary_id = None
-        self._obs_bucket_name = None
-        self._obs_object_key = None
         self._first_channel_only = None
         self.discriminator = None
 
         self._property = _property
         self.audio_format = audio_format
+        self.obs_bucket_name = obs_bucket_name
+        self.obs_object_key = obs_object_key
         if add_punc is not None:
             self.add_punc = add_punc
         if digit_norm is not None:
@@ -88,10 +90,6 @@ class RecognizeFlashAsrRequest:
             self.need_word_info = need_word_info
         if vocabulary_id is not None:
             self.vocabulary_id = vocabulary_id
-        if obs_bucket_name is not None:
-            self.obs_bucket_name = obs_bucket_name
-        if obs_object_key is not None:
-            self.obs_object_key = obs_object_key
         if first_channel_only is not None:
             self.first_channel_only = first_channel_only
 
@@ -138,6 +136,50 @@ class RecognizeFlashAsrRequest:
         :type audio_format: str
         """
         self._audio_format = audio_format
+
+    @property
+    def obs_bucket_name(self):
+        """Gets the obs_bucket_name of this RecognizeFlashAsrRequest.
+
+        obs桶名
+
+        :return: The obs_bucket_name of this RecognizeFlashAsrRequest.
+        :rtype: str
+        """
+        return self._obs_bucket_name
+
+    @obs_bucket_name.setter
+    def obs_bucket_name(self, obs_bucket_name):
+        """Sets the obs_bucket_name of this RecognizeFlashAsrRequest.
+
+        obs桶名
+
+        :param obs_bucket_name: The obs_bucket_name of this RecognizeFlashAsrRequest.
+        :type obs_bucket_name: str
+        """
+        self._obs_bucket_name = obs_bucket_name
+
+    @property
+    def obs_object_key(self):
+        """Gets the obs_object_key of this RecognizeFlashAsrRequest.
+
+        obs对象key，经过urlencode编码，长度不超过1024个字符
+
+        :return: The obs_object_key of this RecognizeFlashAsrRequest.
+        :rtype: str
+        """
+        return self._obs_object_key
+
+    @obs_object_key.setter
+    def obs_object_key(self, obs_object_key):
+        """Sets the obs_object_key of this RecognizeFlashAsrRequest.
+
+        obs对象key，经过urlencode编码，长度不超过1024个字符
+
+        :param obs_object_key: The obs_object_key of this RecognizeFlashAsrRequest.
+        :type obs_object_key: str
+        """
+        self._obs_object_key = obs_object_key
 
     @property
     def add_punc(self):
@@ -226,50 +268,6 @@ class RecognizeFlashAsrRequest:
         :type vocabulary_id: str
         """
         self._vocabulary_id = vocabulary_id
-
-    @property
-    def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this RecognizeFlashAsrRequest.
-
-        obs桶名
-
-        :return: The obs_bucket_name of this RecognizeFlashAsrRequest.
-        :rtype: str
-        """
-        return self._obs_bucket_name
-
-    @obs_bucket_name.setter
-    def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this RecognizeFlashAsrRequest.
-
-        obs桶名
-
-        :param obs_bucket_name: The obs_bucket_name of this RecognizeFlashAsrRequest.
-        :type obs_bucket_name: str
-        """
-        self._obs_bucket_name = obs_bucket_name
-
-    @property
-    def obs_object_key(self):
-        """Gets the obs_object_key of this RecognizeFlashAsrRequest.
-
-        obs对象key，经过urlencode编码，长度不超过1024个字符
-
-        :return: The obs_object_key of this RecognizeFlashAsrRequest.
-        :rtype: str
-        """
-        return self._obs_object_key
-
-    @obs_object_key.setter
-    def obs_object_key(self, obs_object_key):
-        """Sets the obs_object_key of this RecognizeFlashAsrRequest.
-
-        obs对象key，经过urlencode编码，长度不超过1024个字符
-
-        :param obs_object_key: The obs_object_key of this RecognizeFlashAsrRequest.
-        :type obs_object_key: str
-        """
-        self._obs_object_key = obs_object_key
 
     @property
     def first_channel_only(self):

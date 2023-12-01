@@ -5,6 +5,7 @@ from __future__ import absolute_import
 from huaweicloudsdkaom.v2.aom_client import AomClient
 from huaweicloudsdkaom.v2.aom_async_client import AomAsyncClient
 
+from huaweicloudsdkaom.v2.model.access_code_model import AccessCodeModel
 from huaweicloudsdkaom.v2.model.action_rule import ActionRule
 from huaweicloudsdkaom.v2.model.add_action_rule_request import AddActionRuleRequest
 from huaweicloudsdkaom.v2.model.add_action_rule_response import AddActionRuleResponse
@@ -23,9 +24,14 @@ from huaweicloudsdkaom.v2.model.app_name_rule import AppNameRule
 from huaweicloudsdkaom.v2.model.app_rules import AppRules
 from huaweicloudsdkaom.v2.model.app_rules_body import AppRulesBody
 from huaweicloudsdkaom.v2.model.app_rules_spec import AppRulesSpec
+from huaweicloudsdkaom.v2.model.application_model import ApplicationModel
 from huaweicloudsdkaom.v2.model.application_name_rule import ApplicationNameRule
 from huaweicloudsdkaom.v2.model.count_events_request import CountEventsRequest
 from huaweicloudsdkaom.v2.model.count_events_response import CountEventsResponse
+from huaweicloudsdkaom.v2.model.create_prom_instance_request import CreatePromInstanceRequest
+from huaweicloudsdkaom.v2.model.create_prom_instance_response import CreatePromInstanceResponse
+from huaweicloudsdkaom.v2.model.create_recording_rule_request import CreateRecordingRuleRequest
+from huaweicloudsdkaom.v2.model.create_recording_rule_response import CreateRecordingRuleResponse
 from huaweicloudsdkaom.v2.model.delete_action_rule_request import DeleteActionRuleRequest
 from huaweicloudsdkaom.v2.model.delete_action_rule_response import DeleteActionRuleResponse
 from huaweicloudsdkaom.v2.model.delete_alarm_rule_request import DeleteAlarmRuleRequest
@@ -38,6 +44,8 @@ from huaweicloudsdkaom.v2.model.delete_event2alarm_rule_response import DeleteEv
 from huaweicloudsdkaom.v2.model.delete_mute_rule_name import DeleteMuteRuleName
 from huaweicloudsdkaom.v2.model.delete_mute_rules_request import DeleteMuteRulesRequest
 from huaweicloudsdkaom.v2.model.delete_mute_rules_response import DeleteMuteRulesResponse
+from huaweicloudsdkaom.v2.model.delete_prom_instance_request import DeletePromInstanceRequest
+from huaweicloudsdkaom.v2.model.delete_prom_instance_response import DeletePromInstanceResponse
 from huaweicloudsdkaom.v2.model.deleteservice_discovery_rules_request import DeleteserviceDiscoveryRulesRequest
 from huaweicloudsdkaom.v2.model.deleteservice_discovery_rules_response import DeleteserviceDiscoveryRulesResponse
 from huaweicloudsdkaom.v2.model.dimension import Dimension
@@ -54,8 +62,12 @@ from huaweicloudsdkaom.v2.model.event_query_param2 import EventQueryParam2
 from huaweicloudsdkaom.v2.model.event_query_param2_sort import EventQueryParam2Sort
 from huaweicloudsdkaom.v2.model.event_query_param_sort import EventQueryParamSort
 from huaweicloudsdkaom.v2.model.event_series import EventSeries
+from huaweicloudsdkaom.v2.model.list_access_code_request import ListAccessCodeRequest
+from huaweicloudsdkaom.v2.model.list_access_code_response import ListAccessCodeResponse
 from huaweicloudsdkaom.v2.model.list_action_rule_request import ListActionRuleRequest
 from huaweicloudsdkaom.v2.model.list_action_rule_response import ListActionRuleResponse
+from huaweicloudsdkaom.v2.model.list_agents_request import ListAgentsRequest
+from huaweicloudsdkaom.v2.model.list_agents_response import ListAgentsResponse
 from huaweicloudsdkaom.v2.model.list_alarm_rule_request import ListAlarmRuleRequest
 from huaweicloudsdkaom.v2.model.list_alarm_rule_response import ListAlarmRuleResponse
 from huaweicloudsdkaom.v2.model.list_event2alarm_rule_request import ListEvent2alarmRuleRequest
@@ -82,6 +94,10 @@ from huaweicloudsdkaom.v2.model.list_mute_rule_request import ListMuteRuleReques
 from huaweicloudsdkaom.v2.model.list_mute_rule_response import ListMuteRuleResponse
 from huaweicloudsdkaom.v2.model.list_notified_histories_request import ListNotifiedHistoriesRequest
 from huaweicloudsdkaom.v2.model.list_notified_histories_response import ListNotifiedHistoriesResponse
+from huaweicloudsdkaom.v2.model.list_permissions_request import ListPermissionsRequest
+from huaweicloudsdkaom.v2.model.list_permissions_response import ListPermissionsResponse
+from huaweicloudsdkaom.v2.model.list_prom_instance_request import ListPromInstanceRequest
+from huaweicloudsdkaom.v2.model.list_prom_instance_response import ListPromInstanceResponse
 from huaweicloudsdkaom.v2.model.list_range_query_aom_prom_get_request import ListRangeQueryAomPromGetRequest
 from huaweicloudsdkaom.v2.model.list_range_query_aom_prom_get_response import ListRangeQueryAomPromGetResponse
 from huaweicloudsdkaom.v2.model.list_range_query_aom_prom_post_request import ListRangeQueryAomPromPostRequest
@@ -107,6 +123,8 @@ from huaweicloudsdkaom.v2.model.mute_config import MuteConfig
 from huaweicloudsdkaom.v2.model.mute_rule import MuteRule
 from huaweicloudsdkaom.v2.model.name_rule import NameRule
 from huaweicloudsdkaom.v2.model.notifications import Notifications
+from huaweicloudsdkaom.v2.model.prom_config_model import PromConfigModel
+from huaweicloudsdkaom.v2.model.prom_instance_eps_model import PromInstanceEpsModel
 from huaweicloudsdkaom.v2.model.push_events_request import PushEventsRequest
 from huaweicloudsdkaom.v2.model.push_events_response import PushEventsResponse
 from huaweicloudsdkaom.v2.model.query_alarm_result import QueryAlarmResult
@@ -116,6 +134,7 @@ from huaweicloudsdkaom.v2.model.query_metric_item_option_param import QueryMetri
 from huaweicloudsdkaom.v2.model.query_sample import QuerySample
 from huaweicloudsdkaom.v2.model.query_sample_param import QuerySampleParam
 from huaweicloudsdkaom.v2.model.query_series_option_param import QuerySeriesOptionParam
+from huaweicloudsdkaom.v2.model.recording_rule_request import RecordingRuleRequest
 from huaweicloudsdkaom.v2.model.relation_model import RelationModel
 from huaweicloudsdkaom.v2.model.sample_data_value import SampleDataValue
 from huaweicloudsdkaom.v2.model.search_key import SearchKey

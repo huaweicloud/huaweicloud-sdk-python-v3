@@ -81,7 +81,7 @@ class AddRuleAclDtoRules:
         :type long_connect_enable: int
         :param description: 描述
         :type description: str
-        :param direction: 方向：0表示外到内，1表示内到外
+        :param direction: 方向：0表示外到内，1表示内到外【说明：规则type&#x3D;0：互联网规则 | 2：nat规则时方向值必填】
         :type direction: int
         :param source: 
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
@@ -379,7 +379,7 @@ class AddRuleAclDtoRules:
     def direction(self):
         """Gets the direction of this AddRuleAclDtoRules.
 
-        方向：0表示外到内，1表示内到外
+        方向：0表示外到内，1表示内到外【说明：规则type=0：互联网规则 | 2：nat规则时方向值必填】
 
         :return: The direction of this AddRuleAclDtoRules.
         :rtype: int
@@ -390,7 +390,7 @@ class AddRuleAclDtoRules:
     def direction(self, direction):
         """Sets the direction of this AddRuleAclDtoRules.
 
-        方向：0表示外到内，1表示内到外
+        方向：0表示外到内，1表示内到外【说明：规则type=0：互联网规则 | 2：nat规则时方向值必填】
 
         :param direction: The direction of this AddRuleAclDtoRules.
         :type direction: int

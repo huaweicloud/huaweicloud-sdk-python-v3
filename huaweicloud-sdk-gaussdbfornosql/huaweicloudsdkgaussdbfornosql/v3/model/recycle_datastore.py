@@ -31,7 +31,7 @@ class RecycleDatastore:
 
         The model defined in huaweicloud sdk
 
-        :param type: 数据库类型。   - 取值为“cassandra”，表示GaussDB(for Cassandra)数据库实例。   - 取值为“mongodb”，表示GaussDB(for Mongo)数据库实例。   - 取值为“influxdb”，表示GaussDB(for Influx)数据库实例。   - 取值为“redis”，表示GaussDB(for Redis)数据库实例。
+        :param type: 数据库类型。   - 取值为“cassandra”，表示GeminiDB Cassandra数据库实例。   - 取值为“mongodb”，表示GeminiDB Mongo数据库实例。   - 取值为“influxdb”，表示GeminiDB Influx数据库实例。   - 取值为“redis”，表示GeminiDB Redis数据库实例。
         :type type: str
         :param version: 数据库版本。
         :type version: str
@@ -50,7 +50,7 @@ class RecycleDatastore:
     def type(self):
         """Gets the type of this RecycleDatastore.
 
-        数据库类型。   - 取值为“cassandra”，表示GaussDB(for Cassandra)数据库实例。   - 取值为“mongodb”，表示GaussDB(for Mongo)数据库实例。   - 取值为“influxdb”，表示GaussDB(for Influx)数据库实例。   - 取值为“redis”，表示GaussDB(for Redis)数据库实例。
+        数据库类型。   - 取值为“cassandra”，表示GeminiDB Cassandra数据库实例。   - 取值为“mongodb”，表示GeminiDB Mongo数据库实例。   - 取值为“influxdb”，表示GeminiDB Influx数据库实例。   - 取值为“redis”，表示GeminiDB Redis数据库实例。
 
         :return: The type of this RecycleDatastore.
         :rtype: str
@@ -61,7 +61,7 @@ class RecycleDatastore:
     def type(self, type):
         """Sets the type of this RecycleDatastore.
 
-        数据库类型。   - 取值为“cassandra”，表示GaussDB(for Cassandra)数据库实例。   - 取值为“mongodb”，表示GaussDB(for Mongo)数据库实例。   - 取值为“influxdb”，表示GaussDB(for Influx)数据库实例。   - 取值为“redis”，表示GaussDB(for Redis)数据库实例。
+        数据库类型。   - 取值为“cassandra”，表示GeminiDB Cassandra数据库实例。   - 取值为“mongodb”，表示GeminiDB Mongo数据库实例。   - 取值为“influxdb”，表示GeminiDB Influx数据库实例。   - 取值为“redis”，表示GeminiDB Redis数据库实例。
 
         :param type: The type of this RecycleDatastore.
         :type type: str

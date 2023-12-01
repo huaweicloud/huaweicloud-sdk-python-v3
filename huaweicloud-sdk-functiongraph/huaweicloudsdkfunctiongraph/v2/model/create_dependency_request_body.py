@@ -39,11 +39,11 @@ class CreateDependencyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param depend_file: depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。
+        :param depend_file: depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。上传的文件大小限制为40M，如超过40M，请通过OBS上传。
         :type depend_file: str
         :param depend_link: depend_type为obs类型时，依赖包在obs的存储地址。
         :type depend_link: str
-        :param depend_type: 导入类型,目前支持obs和zip。
+        :param depend_type: 导入类型，目前支持obs和zip。
         :type depend_type: str
         :param runtime: 运行时语言，Java11、Nodejs14:、Python3:在type为v2时支持。
         :type runtime: str
@@ -77,7 +77,7 @@ class CreateDependencyRequestBody:
     def depend_file(self):
         """Gets the depend_file of this CreateDependencyRequestBody.
 
-        depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。
+        depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。上传的文件大小限制为40M，如超过40M，请通过OBS上传。
 
         :return: The depend_file of this CreateDependencyRequestBody.
         :rtype: str
@@ -88,7 +88,7 @@ class CreateDependencyRequestBody:
     def depend_file(self, depend_file):
         """Sets the depend_file of this CreateDependencyRequestBody.
 
-        depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。
+        depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。上传的文件大小限制为40M，如超过40M，请通过OBS上传。
 
         :param depend_file: The depend_file of this CreateDependencyRequestBody.
         :type depend_file: str
@@ -121,7 +121,7 @@ class CreateDependencyRequestBody:
     def depend_type(self):
         """Gets the depend_type of this CreateDependencyRequestBody.
 
-        导入类型,目前支持obs和zip。
+        导入类型，目前支持obs和zip。
 
         :return: The depend_type of this CreateDependencyRequestBody.
         :rtype: str
@@ -132,7 +132,7 @@ class CreateDependencyRequestBody:
     def depend_type(self, depend_type):
         """Sets the depend_type of this CreateDependencyRequestBody.
 
-        导入类型,目前支持obs和zip。
+        导入类型，目前支持obs和zip。
 
         :param depend_type: The depend_type of this CreateDependencyRequestBody.
         :type depend_type: str

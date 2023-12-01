@@ -44,8 +44,7 @@ class CreateOrDeleteInstanceTags:
         self.discriminator = None
 
         self.action = action
-        if tags is not None:
-            self.tags = tags
+        self.tags = tags
 
     @property
     def action(self):

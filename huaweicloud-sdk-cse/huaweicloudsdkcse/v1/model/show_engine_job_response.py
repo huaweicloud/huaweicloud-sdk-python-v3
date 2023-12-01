@@ -33,14 +33,14 @@ class ShowEngineJobResponse(SdkResponse):
 
     attribute_map = {
         'id': 'id',
-        'engine_id': 'engine_id',
+        'engine_id': 'engineId',
         'type': 'type',
         'description': 'description',
         'status': 'status',
         'scheduling': 'scheduling',
-        'create_user': 'create_user',
-        'start_time': 'start_time',
-        'end_time': 'end_time',
+        'create_user': 'createUser',
+        'start_time': 'startTime',
+        'end_time': 'endTime',
         'context': 'context',
         'tasks': 'tasks'
     }

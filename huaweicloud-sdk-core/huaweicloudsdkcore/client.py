@@ -416,7 +416,7 @@ class Client(object):
         return stream_body
 
     def _is_stream(self, response_type):
-        if type(response_type) == str and hasattr(self.model_package, response_type):
+        if isinstance(response_type, str) and hasattr(self.model_package, response_type):
             klass = getattr(self.model_package, response_type)
             if issubclass(klass, SdkStreamResponse):
                 return True
@@ -424,14 +424,16 @@ class Client(object):
 
     @classmethod
     def _post_process_params(cls, params):
-        if type(params) == dict:
+        if isinstance(params, dict):
             for key in list(params.keys()):
                 if params[key] is None:
                     del [params[key]]
             return params
-        elif type(params) == list:
-            list_filter = filter(lambda x: type(x) == tuple and len(x) == 2 and x[1] is not None, params)
+
+        if isinstance(params, list):
+            list_filter = filter(lambda x: isinstance(x, tuple) and len(x) == 2 and x[1] is not None, params)
             return [i for i in list_filter]
+
         return None
 
     def _url_parse(self, cname):
@@ -551,7 +553,7 @@ class Client(object):
                 setattr(concrete_response, attr, response.headers[key_in_response_headers])
 
     def deserialize(self, response, response_type, progress_callback):
-        if type(response_type) == str and hasattr(self.model_package, response_type):
+        if isinstance(response_type, str) and hasattr(self.model_package, response_type):
             klass = getattr(self.model_package, response_type)
             if issubclass(klass, SdkStreamResponse):
                 if progress_callback:
@@ -574,7 +576,7 @@ class Client(object):
         if data is None:
             return None
 
-        if type(klass) == str:
+        if isinstance(klass, str):
             if klass.startswith('list['):
                 if not isinstance(data, list):
                     data = [data]
@@ -642,14 +644,18 @@ class Client(object):
 
     def _deserialize_model(self, data, klass):
         if not klass.openapi_types and not hasattr(klass, 'get_real_child_model'):
-            if type(data) == int and hasattr(klass, "_%s" % data):
-                return getattr(klass, "_%s" % data)
-            if type(data) == str and hasattr(klass, re.sub(r'\W+', '_', data).upper()):
+            if isinstance(data, str) and hasattr(klass, re.sub(r'\W+', '_', data).upper()):
                 return getattr(klass, re.sub(r'\W+', '_', data).upper())
-            if type(data) == bool and hasattr(klass, str(data).upper()):
+
+            if isinstance(data, bool) and hasattr(klass, str(data).upper()):
                 return getattr(klass, str(data).upper())
-            if type(data) == float and hasattr(klass, ("_%s" % data).replace('.', '_')):
+
+            if isinstance(data, float) and hasattr(klass, ("_%s" % data).replace('.', '_')):
                 return getattr(klass, ("_%s" % data).replace('.', '_'))
+
+            if isinstance(data, int) and hasattr(klass, "_%s" % data):
+                return getattr(klass, "_%s" % data)
+
             return klass()
 
         instance = klass(**self._extract_kwargs(data, klass))

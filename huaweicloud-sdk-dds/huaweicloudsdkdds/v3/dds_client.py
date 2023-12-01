@@ -1096,6 +1096,73 @@ class DdsClient(Client):
 
         return http_info
 
+    def create_kill_op_rule(self, request):
+        """创建killOp规则
+
+        创建killOp规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateKillOpRule
+        :type request: :class:`huaweicloudsdkdds.v3.CreateKillOpRuleRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.CreateKillOpRuleResponse`
+        """
+        http_info = self._create_kill_op_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_kill_op_rule_invoker(self, request):
+        http_info = self._create_kill_op_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_kill_op_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/kill-op-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKillOpRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_manual_backup(self, request):
         """创建手动备份
 
@@ -1494,6 +1561,138 @@ class DdsClient(Client):
 
         return http_info
 
+    def delete_kill_op_rule_list(self, request):
+        """删除killOp规则
+
+        删除killOp规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteKillOpRuleList
+        :type request: :class:`huaweicloudsdkdds.v3.DeleteKillOpRuleListRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.DeleteKillOpRuleListResponse`
+        """
+        http_info = self._delete_kill_op_rule_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_kill_op_rule_list_invoker(self, request):
+        http_info = self._delete_kill_op_rule_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_kill_op_rule_list_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/kill-op-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKillOpRuleListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_lts_config(self, request):
+        """解除关联LTS日志流
+
+        将实例日志与LTS日志流解除关联，后台将取消上传实例日志到的LTS日志流里。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLtsConfig
+        :type request: :class:`huaweicloudsdkdds.v3.DeleteLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.DeleteLtsConfigResponse`
+        """
+        http_info = self._delete_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_lts_config_invoker(self, request):
+        http_info = self._delete_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_manual_backup(self, request):
         """删除手动备份
 
@@ -1538,6 +1737,73 @@ class DdsClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_readonly_node(self, request):
+        """删除只读节点
+
+        当副本集添加了只读节点后，需要删除对应的只读节点需要调用此API。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteReadonlyNode
+        :type request: :class:`huaweicloudsdkdds.v3.DeleteReadonlyNodeRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.DeleteReadonlyNodeResponse`
+        """
+        http_info = self._delete_readonly_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_readonly_node_invoker(self, request):
+        http_info = self._delete_readonly_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_readonly_node_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/readonly-node",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteReadonlyNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2857,6 +3123,140 @@ class DdsClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_lts_configs(self, request):
+        """查询LTS日志配置信息
+
+        查询LTS日志配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLtsConfigs
+        :type request: :class:`huaweicloudsdkdds.v3.ListLtsConfigsRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ListLtsConfigsResponse`
+        """
+        http_info = self._list_lts_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_lts_configs_invoker(self, request):
+        http_info = self._list_lts_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lts_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLtsConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_lts_error_logs(self, request):
+        """查询数据库错误日志
+
+        查询数据库错误日志信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLtsErrorLogs
+        :type request: :class:`huaweicloudsdkdds.v3.ListLtsErrorLogsRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ListLtsErrorLogsResponse`
+        """
+        http_info = self._list_lts_error_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_lts_error_logs_invoker(self, request):
+        http_info = self._list_lts_error_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lts_error_logs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/error-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLtsErrorLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -5269,6 +5669,83 @@ class DdsClient(Client):
 
         return http_info
 
+    def show_kill_op_rule_rule_list(self, request):
+        """获取killOp规则列表
+
+        获取killOp规则列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowKillOpRuleRuleList
+        :type request: :class:`huaweicloudsdkdds.v3.ShowKillOpRuleRuleListRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowKillOpRuleRuleListResponse`
+        """
+        http_info = self._show_kill_op_rule_rule_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_kill_op_rule_rule_list_invoker(self, request):
+        http_info = self._show_kill_op_rule_rule_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_kill_op_rule_rule_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/kill-op-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKillOpRuleRuleListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'operation_types' in local_var_params:
+            query_params.append(('operation_types', local_var_params['operation_types']))
+        if 'namespaces' in local_var_params:
+            query_params.append(('namespaces', local_var_params['namespaces']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'plan_summary' in local_var_params:
+            query_params.append(('plan_summary', local_var_params['plan_summary']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_quotas(self, request):
         """查询配额
 
@@ -5793,6 +6270,73 @@ class DdsClient(Client):
 
         return http_info
 
+    def stop_backup(self, request):
+        """停止备份
+
+        支持紧急情况下停止备份功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopBackup
+        :type request: :class:`huaweicloudsdkdds.v3.StopBackupRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.StopBackupResponse`
+        """
+        http_info = self._stop_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_backup_invoker(self, request):
+        http_info = self._stop_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_backup_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'backup_id' in local_var_params:
+            path_params['backup_id'] = local_var_params['backup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def switch_configuration(self, request):
         """应用参数模板
 
@@ -5839,6 +6383,73 @@ class DdsClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_instance_primary(self, request):
+        """强制备节点升主
+
+        支持副本集、shard和config备节点强制升主。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchInstancePrimary
+        :type request: :class:`huaweicloudsdkdds.v3.SwitchInstancePrimaryRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.SwitchInstancePrimaryResponse`
+        """
+        http_info = self._switch_instance_primary_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_instance_primary_invoker(self, request):
+        http_info = self._switch_instance_primary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_instance_primary_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/primary",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchInstancePrimaryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -6499,6 +7110,140 @@ class DdsClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_kill_op_rule(self, request):
+        """启用/禁用killOp规则
+
+        启用/禁用killOp规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateKillOpRule
+        :type request: :class:`huaweicloudsdkdds.v3.UpdateKillOpRuleRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.UpdateKillOpRuleResponse`
+        """
+        http_info = self._update_kill_op_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_kill_op_rule_invoker(self, request):
+        http_info = self._update_kill_op_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_kill_op_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/kill-op-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKillOpRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_lts_config(self, request):
+        """关联LTS日志流
+
+        将实例日志与LTS日志流关联，后台将自动上传实例日志到关联的LTS日志流里。
+        关联成功后，会产生一定费用，具体计费可参考云日志服务（LTS）的定价详情。
+        系统会为当前选择的日志流创建对应日志类型的结构化配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLtsConfig
+        :type request: :class:`huaweicloudsdkdds.v3.UpdateLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.UpdateLtsConfigResponse`
+        """
+        http_info = self._update_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_lts_config_invoker(self, request):
+        http_info = self._update_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

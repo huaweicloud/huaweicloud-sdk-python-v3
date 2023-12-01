@@ -21,7 +21,7 @@ class SpecClusterNode:
     }
 
     attribute_map = {
-        'cluster_nodes': 'cluster_nodes'
+        'cluster_nodes': 'clusterNodes'
     }
 
     def __init__(self, cluster_nodes=None):

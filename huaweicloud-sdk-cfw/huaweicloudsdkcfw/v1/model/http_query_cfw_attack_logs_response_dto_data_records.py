@@ -19,13 +19,13 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     openapi_types = {
         'direction': 'str',
         'action': 'str',
-        'event_time': 'str',
+        'event_time': 'int',
         'attack_type': 'str',
         'attack_rule': 'str',
         'level': 'str',
         'source': 'str',
         'packet_length': 'int',
-        'attack_rule_id': 'int',
+        'attack_rule_id': 'str',
         'hit_time': 'int',
         'log_id': 'str',
         'src_ip': 'str',
@@ -33,7 +33,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         'dst_ip': 'str',
         'dst_port': 'int',
         'protocol': 'str',
-        'packet': 'Packet',
+        'packet': 'str',
         'app': 'str',
         'packet_messages': 'list[PacketMessage]',
         'dst_host': 'str',
@@ -80,7 +80,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :param action: 动作
         :type action: str
         :param event_time: 事件时间
-        :type event_time: str
+        :type event_time: int
         :param attack_type: 攻击类型
         :type attack_type: str
         :param attack_rule: 攻击规则
@@ -92,7 +92,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :param packet_length: 报文长度
         :type packet_length: int
         :param attack_rule_id: 攻击规则id
-        :type attack_rule_id: int
+        :type attack_rule_id: str
         :param hit_time: 命中时间
         :type hit_time: int
         :param log_id: 日志ID
@@ -107,8 +107,8 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type dst_port: int
         :param protocol: 协议
         :type protocol: str
-        :param packet: 
-        :type packet: :class:`huaweicloudsdkcfw.v1.Packet`
+        :param packet: 攻击日志报文
+        :type packet: str
         :param app: 应用协议
         :type app: str
         :param packet_messages: 攻击报文信息
@@ -253,7 +253,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         事件时间
 
         :return: The event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-        :rtype: str
+        :rtype: int
         """
         return self._event_time
 
@@ -264,7 +264,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         事件时间
 
         :param event_time: The event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-        :type event_time: str
+        :type event_time: int
         """
         self._event_time = event_time
 
@@ -385,7 +385,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         攻击规则id
 
         :return: The attack_rule_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-        :rtype: int
+        :rtype: str
         """
         return self._attack_rule_id
 
@@ -396,7 +396,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         攻击规则id
 
         :param attack_rule_id: The attack_rule_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-        :type attack_rule_id: int
+        :type attack_rule_id: str
         """
         self._attack_rule_id = attack_rule_id
 
@@ -558,8 +558,10 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def packet(self):
         """Gets the packet of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
+        攻击日志报文
+
         :return: The packet of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-        :rtype: :class:`huaweicloudsdkcfw.v1.Packet`
+        :rtype: str
         """
         return self._packet
 
@@ -567,8 +569,10 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def packet(self, packet):
         """Sets the packet of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
+        攻击日志报文
+
         :param packet: The packet of this HttpQueryCfwAttackLogsResponseDTODataRecords.
-        :type packet: :class:`huaweicloudsdkcfw.v1.Packet`
+        :type packet: str
         """
         self._packet = packet
 

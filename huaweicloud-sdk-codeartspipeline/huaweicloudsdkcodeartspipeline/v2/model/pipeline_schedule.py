@@ -21,7 +21,7 @@ class PipelineSchedule:
         'type': 'str',
         'name': 'str',
         'enable': 'str',
-        'days_of_week': 'str',
+        'days_of_week': 'list[int]',
         'time_zone': 'str'
     }
 
@@ -48,7 +48,7 @@ class PipelineSchedule:
         :param enable: 是否可用
         :type enable: str
         :param days_of_week: 一周内具体时间
-        :type days_of_week: str
+        :type days_of_week: list[int]
         :param time_zone: 时区
         :type time_zone: str
         """
@@ -171,7 +171,7 @@ class PipelineSchedule:
         一周内具体时间
 
         :return: The days_of_week of this PipelineSchedule.
-        :rtype: str
+        :rtype: list[int]
         """
         return self._days_of_week
 
@@ -182,7 +182,7 @@ class PipelineSchedule:
         一周内具体时间
 
         :param days_of_week: The days_of_week of this PipelineSchedule.
-        :type days_of_week: str
+        :type days_of_week: list[int]
         """
         self._days_of_week = days_of_week
 

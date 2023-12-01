@@ -41,7 +41,7 @@ class ListInstancesDatastoreResult:
         :type version: str
         :param patch_available: 是否有补丁版本的数据库支持升级，返回true时可以通过升级补丁接口进行数据库升级，否则不允许升级补丁。
         :type patch_available: bool
-        :param whole_version: 数据库的完整版本号(目前只有GaussDB(for Cassandra)支持)。
+        :param whole_version: 数据库的完整版本号(目前只有GeminiDB Cassandra支持)。
         :type whole_version: str
         """
         
@@ -128,7 +128,7 @@ class ListInstancesDatastoreResult:
     def whole_version(self):
         """Gets the whole_version of this ListInstancesDatastoreResult.
 
-        数据库的完整版本号(目前只有GaussDB(for Cassandra)支持)。
+        数据库的完整版本号(目前只有GeminiDB Cassandra支持)。
 
         :return: The whole_version of this ListInstancesDatastoreResult.
         :rtype: str
@@ -139,7 +139,7 @@ class ListInstancesDatastoreResult:
     def whole_version(self, whole_version):
         """Sets the whole_version of this ListInstancesDatastoreResult.
 
-        数据库的完整版本号(目前只有GaussDB(for Cassandra)支持)。
+        数据库的完整版本号(目前只有GeminiDB Cassandra支持)。
 
         :param whole_version: The whole_version of this ListInstancesDatastoreResult.
         :type whole_version: str

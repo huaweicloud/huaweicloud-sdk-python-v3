@@ -55,19 +55,19 @@ class BatchUpdateMember:
 
         :param id: 后端服务器ID。 &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
-        :param name: 后端服务器名称。注意：该名称并非ECS名称。
+        :param name: 后端服务器名称。
         :type name: str
         :param project_id: 后端服务器所在的项目ID。
         :type project_id: str
         :param admin_state_up: 后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
-        :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。    若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。    使用说明：   - 该子网和关联的负载均衡器的子网必须在同一VPC下。   [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
         :type subnet_cidr_id: str
-        :param protocol_port: 后端服务器业务端口号。  &gt; 在开启端口透传的pool下的member，该字段不支持更新
+        :param protocol_port: 后端服务器业务端口号。 &gt;在开启端口透传的pool下的member，该字段不支持更新
         :type protocol_port: int
-        :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：    - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
         :type weight: int
-        :param address: 后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :param address: 后端服务器对应的IP地址。   使用说明：   - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。   - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。   [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
         :type address: str
         :param operating_status: 后端云服务器的健康状态。取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
@@ -142,7 +142,7 @@ class BatchUpdateMember:
     def name(self):
         """Gets the name of this BatchUpdateMember.
 
-        后端服务器名称。注意：该名称并非ECS名称。
+        后端服务器名称。
 
         :return: The name of this BatchUpdateMember.
         :rtype: str
@@ -153,7 +153,7 @@ class BatchUpdateMember:
     def name(self, name):
         """Sets the name of this BatchUpdateMember.
 
-        后端服务器名称。注意：该名称并非ECS名称。
+        后端服务器名称。
 
         :param name: The name of this BatchUpdateMember.
         :type name: str
@@ -208,7 +208,7 @@ class BatchUpdateMember:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this BatchUpdateMember.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。    若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。    使用说明：   - 该子网和关联的负载均衡器的子网必须在同一VPC下。   [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :return: The subnet_cidr_id of this BatchUpdateMember.
         :rtype: str
@@ -219,7 +219,7 @@ class BatchUpdateMember:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this BatchUpdateMember.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。    若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。    使用说明：   - 该子网和关联的负载均衡器的子网必须在同一VPC下。   [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this BatchUpdateMember.
         :type subnet_cidr_id: str
@@ -230,7 +230,7 @@ class BatchUpdateMember:
     def protocol_port(self):
         """Gets the protocol_port of this BatchUpdateMember.
 
-        后端服务器业务端口号。  > 在开启端口透传的pool下的member，该字段不支持更新
+        后端服务器业务端口号。 >在开启端口透传的pool下的member，该字段不支持更新
 
         :return: The protocol_port of this BatchUpdateMember.
         :rtype: int
@@ -241,7 +241,7 @@ class BatchUpdateMember:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this BatchUpdateMember.
 
-        后端服务器业务端口号。  > 在开启端口透传的pool下的member，该字段不支持更新
+        后端服务器业务端口号。 >在开启端口透传的pool下的member，该字段不支持更新
 
         :param protocol_port: The protocol_port of this BatchUpdateMember.
         :type protocol_port: int
@@ -252,7 +252,7 @@ class BatchUpdateMember:
     def weight(self):
         """Gets the weight of this BatchUpdateMember.
 
-        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：    - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :return: The weight of this BatchUpdateMember.
         :rtype: int
@@ -263,7 +263,7 @@ class BatchUpdateMember:
     def weight(self, weight):
         """Sets the weight of this BatchUpdateMember.
 
-        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：    - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :param weight: The weight of this BatchUpdateMember.
         :type weight: int
@@ -274,7 +274,7 @@ class BatchUpdateMember:
     def address(self):
         """Gets the address of this BatchUpdateMember.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。   使用说明：   - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。   - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。   [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The address of this BatchUpdateMember.
         :rtype: str
@@ -285,7 +285,7 @@ class BatchUpdateMember:
     def address(self, address):
         """Sets the address of this BatchUpdateMember.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。   使用说明：   - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。   - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡内网IP。   [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this BatchUpdateMember.
         :type address: str

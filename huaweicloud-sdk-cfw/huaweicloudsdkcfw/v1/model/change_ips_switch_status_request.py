@@ -19,16 +19,18 @@ class ChangeIpsSwitchStatusRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'fw_instance_id': 'str',
+        'x_language': 'str',
         'body': 'IpsSwitchDTO'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'fw_instance_id': 'fw_instance_id',
+        'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, enterprise_project_id=None, fw_instance_id=None, body=None):
+    def __init__(self, enterprise_project_id=None, fw_instance_id=None, x_language=None, body=None):
         """ChangeIpsSwitchStatusRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ChangeIpsSwitchStatusRequest:
         :type enterprise_project_id: str
         :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
         :type fw_instance_id: str
+        :param x_language: 语言头部，默认为zh-cn，如需使用英文，请选择en-us
+        :type x_language: str
         :param body: Body of the ChangeIpsSwitchStatusRequest
         :type body: :class:`huaweicloudsdkcfw.v1.IpsSwitchDTO`
         """
@@ -45,6 +49,7 @@ class ChangeIpsSwitchStatusRequest:
 
         self._enterprise_project_id = None
         self._fw_instance_id = None
+        self._x_language = None
         self._body = None
         self.discriminator = None
 
@@ -52,6 +57,8 @@ class ChangeIpsSwitchStatusRequest:
             self.enterprise_project_id = enterprise_project_id
         if fw_instance_id is not None:
             self.fw_instance_id = fw_instance_id
+        if x_language is not None:
+            self.x_language = x_language
         if body is not None:
             self.body = body
 
@@ -98,6 +105,28 @@ class ChangeIpsSwitchStatusRequest:
         :type fw_instance_id: str
         """
         self._fw_instance_id = fw_instance_id
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ChangeIpsSwitchStatusRequest.
+
+        语言头部，默认为zh-cn，如需使用英文，请选择en-us
+
+        :return: The x_language of this ChangeIpsSwitchStatusRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ChangeIpsSwitchStatusRequest.
+
+        语言头部，默认为zh-cn，如需使用英文，请选择en-us
+
+        :param x_language: The x_language of this ChangeIpsSwitchStatusRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     @property
     def body(self):

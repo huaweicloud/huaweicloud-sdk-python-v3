@@ -32,6 +32,8 @@ from huaweicloudsdkeip.v2.model.batch_delete_publicip_tags_request_body import B
 from huaweicloudsdkeip.v2.model.batch_delete_publicip_tags_response import BatchDeletePublicipTagsResponse
 from huaweicloudsdkeip.v2.model.batch_disassociate_publicips_request import BatchDisassociatePublicipsRequest
 from huaweicloudsdkeip.v2.model.batch_disassociate_publicips_response import BatchDisassociatePublicipsResponse
+from huaweicloudsdkeip.v2.model.batch_modify_bandwidth_request import BatchModifyBandwidthRequest
+from huaweicloudsdkeip.v2.model.batch_modify_bandwidth_response import BatchModifyBandwidthResponse
 from huaweicloudsdkeip.v2.model.batch_profile import BatchProfile
 from huaweicloudsdkeip.v2.model.batch_public_ip import BatchPublicIp
 from huaweicloudsdkeip.v2.model.bw_change_to_period_req import BwChangeToPeriodReq
@@ -68,6 +70,7 @@ from huaweicloudsdkeip.v2.model.delete_publicip_tag_request import DeletePublici
 from huaweicloudsdkeip.v2.model.delete_publicip_tag_response import DeletePublicipTagResponse
 from huaweicloudsdkeip.v2.model.delete_shared_bandwidth_request import DeleteSharedBandwidthRequest
 from huaweicloudsdkeip.v2.model.delete_shared_bandwidth_response import DeleteSharedBandwidthResponse
+from huaweicloudsdkeip.v2.model.failure_resources import FailureResources
 from huaweicloudsdkeip.v2.model.floating_ip_resp import FloatingIpResp
 from huaweicloudsdkeip.v2.model.insert_publicip_info import InsertPublicipInfo
 from huaweicloudsdkeip.v2.model.list_bandwidth_pkg_request import ListBandwidthPkgRequest
@@ -85,6 +88,8 @@ from huaweicloudsdkeip.v2.model.list_quotas_request import ListQuotasRequest
 from huaweicloudsdkeip.v2.model.list_quotas_response import ListQuotasResponse
 from huaweicloudsdkeip.v2.model.list_resource_resp import ListResourceResp
 from huaweicloudsdkeip.v2.model.match_req import MatchReq
+from huaweicloudsdkeip.v2.model.modify_bandwidth_option import ModifyBandwidthOption
+from huaweicloudsdkeip.v2.model.modify_bandwidth_request_body import ModifyBandwidthRequestBody
 from huaweicloudsdkeip.v2.model.neutron_create_floating_ip_request import NeutronCreateFloatingIpRequest
 from huaweicloudsdkeip.v2.model.neutron_create_floating_ip_request_body import NeutronCreateFloatingIpRequestBody
 from huaweicloudsdkeip.v2.model.neutron_create_floating_ip_response import NeutronCreateFloatingIpResponse
@@ -124,6 +129,7 @@ from huaweicloudsdkeip.v2.model.show_publicip_tags_response import ShowPublicipT
 from huaweicloudsdkeip.v2.model.show_resources_job_detail_request import ShowResourcesJobDetailRequest
 from huaweicloudsdkeip.v2.model.show_resources_job_detail_response import ShowResourcesJobDetailResponse
 from huaweicloudsdkeip.v2.model.sub_jobs_info import SubJobsInfo
+from huaweicloudsdkeip.v2.model.success_resources import SuccessResources
 from huaweicloudsdkeip.v2.model.tag_req import TagReq
 from huaweicloudsdkeip.v2.model.tag_resp import TagResp
 from huaweicloudsdkeip.v2.model.update_bandwidth_option import UpdateBandwidthOption

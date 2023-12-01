@@ -37,7 +37,7 @@ class GlobalEipInfo:
         :type global_eip_id: str
         :param global_eip_address: global eip的ip地址
         :type global_eip_address: str
-        :param ip_version: IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6 [不支持IPv6，请勿设置为6。]
+        :param ip_version: IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6 [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: int
         """
         
@@ -103,7 +103,7 @@ class GlobalEipInfo:
     def ip_version(self):
         """Gets the ip_version of this GlobalEipInfo.
 
-        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6 [不支持IPv6，请勿设置为6。]
+        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6 [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :return: The ip_version of this GlobalEipInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class GlobalEipInfo:
     def ip_version(self, ip_version):
         """Sets the ip_version of this GlobalEipInfo.
 
-        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6 [不支持IPv6，请勿设置为6。]
+        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6 [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this GlobalEipInfo.
         :type ip_version: int

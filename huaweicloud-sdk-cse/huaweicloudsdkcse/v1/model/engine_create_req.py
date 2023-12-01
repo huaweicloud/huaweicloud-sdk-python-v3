@@ -24,6 +24,7 @@ class EngineCreateReq:
         'az_list': 'list[str]',
         'auth_type': 'str',
         'vpc': 'str',
+        'vpc_id': 'str',
         'network_id': 'str',
         'subnet_cidr': 'str',
         'public_ip_id': 'str',
@@ -40,6 +41,7 @@ class EngineCreateReq:
         'az_list': 'azList',
         'auth_type': 'authType',
         'vpc': 'vpc',
+        'vpc_id': 'vpcId',
         'network_id': 'networkId',
         'subnet_cidr': 'subnetCidr',
         'public_ip_id': 'publicIpId',
@@ -48,7 +50,7 @@ class EngineCreateReq:
         'inputs': 'inputs'
     }
 
-    def __init__(self, name=None, description=None, payment=None, flavor=None, az_list=None, auth_type=None, vpc=None, network_id=None, subnet_cidr=None, public_ip_id=None, auth_cred=None, spec_type=None, inputs=None):
+    def __init__(self, name=None, description=None, payment=None, flavor=None, az_list=None, auth_type=None, vpc=None, vpc_id=None, network_id=None, subnet_cidr=None, public_ip_id=None, auth_cred=None, spec_type=None, inputs=None):
         """EngineCreateReq
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class EngineCreateReq:
         :type auth_type: str
         :param vpc: vpc名称
         :type vpc: str
+        :param vpc_id: vpc标识
+        :type vpc_id: str
         :param network_id: 微服务引擎专享版子网ID
         :type network_id: str
         :param subnet_cidr: 微服务引擎专享版子网划分
@@ -90,6 +94,7 @@ class EngineCreateReq:
         self._az_list = None
         self._auth_type = None
         self._vpc = None
+        self._vpc_id = None
         self._network_id = None
         self._subnet_cidr = None
         self._public_ip_id = None
@@ -106,6 +111,8 @@ class EngineCreateReq:
         self.az_list = az_list
         self.auth_type = auth_type
         self.vpc = vpc
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
         self.network_id = network_id
         self.subnet_cidr = subnet_cidr
         if public_ip_id is not None:
@@ -269,6 +276,28 @@ class EngineCreateReq:
         :type vpc: str
         """
         self._vpc = vpc
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this EngineCreateReq.
+
+        vpc标识
+
+        :return: The vpc_id of this EngineCreateReq.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this EngineCreateReq.
+
+        vpc标识
+
+        :param vpc_id: The vpc_id of this EngineCreateReq.
+        :type vpc_id: str
+        """
+        self._vpc_id = vpc_id
 
     @property
     def network_id(self):

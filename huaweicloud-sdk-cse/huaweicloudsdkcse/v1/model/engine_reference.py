@@ -31,14 +31,14 @@ class EngineReference:
 
     attribute_map = {
         'vpc': 'vpc',
-        'az_list': 'az_list',
-        'network_id': 'network_id',
-        'subnet_cidr': 'subnet_cidr',
-        'subnet_cidr_v6': 'subnet_cidr_v6',
-        'subnet_gateway': 'subnet_gateway',
-        'public_ip_id': 'public_ip_id',
-        'service_limit': 'service_limit',
-        'instance_limit': 'instance_limit',
+        'az_list': 'azList',
+        'network_id': 'networkId',
+        'subnet_cidr': 'subnetCidr',
+        'subnet_cidr_v6': 'subnetCidrV6',
+        'subnet_gateway': 'subnetGateway',
+        'public_ip_id': 'publicIpId',
+        'service_limit': 'serviceLimit',
+        'instance_limit': 'instanceLimit',
         'inputs': 'inputs'
     }
 

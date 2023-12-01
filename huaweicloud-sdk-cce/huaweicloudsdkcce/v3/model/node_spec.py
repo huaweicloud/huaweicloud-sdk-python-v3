@@ -35,7 +35,8 @@ class NodeSpec:
         'user_tags': 'list[UserTag]',
         'runtime': 'Runtime',
         'initialized_conditions': 'list[str]',
-        'extend_param': 'NodeExtendParam'
+        'extend_param': 'NodeExtendParam',
+        'hostname_config': 'HostnameConfig'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class NodeSpec:
         'user_tags': 'userTags',
         'runtime': 'runtime',
         'initialized_conditions': 'initializedConditions',
-        'extend_param': 'extendParam'
+        'extend_param': 'extendParam',
+        'hostname_config': 'hostnameConfig'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None):
         """NodeSpec
 
         The model defined in huaweicloud sdk
@@ -69,7 +71,7 @@ class NodeSpec:
         :type flavor: str
         :param az: 待创建节点所在的可用区，需要指定可用区（AZ）的名称。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk) 
         :type az: str
-        :param os: 节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 &gt; - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 &gt; - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 
+        :param os: 节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 &gt; - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 &gt; - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 &gt; - 创建节点池时，该参数为必选。 
         :type os: str
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -95,7 +97,7 @@ class NodeSpec:
         :type ecs_group_id: str
         :param dedicated_host_id: 指定DeH主机的ID，将节点调度到自己的DeH上。 &gt;创建节点池添加节点时不支持该参数。 
         :type dedicated_host_id: str
-        :param user_tags: 云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 
+        :param user_tags: 云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 &gt; 标签键只能包含大写字母.小写字母、数字和特殊字符(-_)以及Unicode字符，长度不超过36个字符。 
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         :param runtime: 
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -103,6 +105,8 @@ class NodeSpec:
         :type initialized_conditions: list[str]
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
+        :param hostname_config: 
+        :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
         """
         
         
@@ -126,6 +130,7 @@ class NodeSpec:
         self._runtime = None
         self._initialized_conditions = None
         self._extend_param = None
+        self._hostname_config = None
         self.discriminator = None
 
         self.flavor = flavor
@@ -161,6 +166,8 @@ class NodeSpec:
             self.initialized_conditions = initialized_conditions
         if extend_param is not None:
             self.extend_param = extend_param
+        if hostname_config is not None:
+            self.hostname_config = hostname_config
 
     @property
     def flavor(self):
@@ -210,7 +217,7 @@ class NodeSpec:
     def os(self):
         """Gets the os of this NodeSpec.
 
-        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 
+        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 
 
         :return: The os of this NodeSpec.
         :rtype: str
@@ -221,7 +228,7 @@ class NodeSpec:
     def os(self, os):
         """Sets the os of this NodeSpec.
 
-        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 
+        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 
 
         :param os: The os of this NodeSpec.
         :type os: str
@@ -476,7 +483,7 @@ class NodeSpec:
     def user_tags(self):
         """Gets the user_tags of this NodeSpec.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 
+        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 > 标签键只能包含大写字母.小写字母、数字和特殊字符(-_)以及Unicode字符，长度不超过36个字符。 
 
         :return: The user_tags of this NodeSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.UserTag`]
@@ -487,7 +494,7 @@ class NodeSpec:
     def user_tags(self, user_tags):
         """Sets the user_tags of this NodeSpec.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 
+        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 > 标签键只能包含大写字母.小写字母、数字和特殊字符(-_)以及Unicode字符，长度不超过36个字符。 
 
         :param user_tags: The user_tags of this NodeSpec.
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
@@ -551,6 +558,24 @@ class NodeSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
         """
         self._extend_param = extend_param
+
+    @property
+    def hostname_config(self):
+        """Gets the hostname_config of this NodeSpec.
+
+        :return: The hostname_config of this NodeSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.HostnameConfig`
+        """
+        return self._hostname_config
+
+    @hostname_config.setter
+    def hostname_config(self, hostname_config):
+        """Sets the hostname_config of this NodeSpec.
+
+        :param hostname_config: The hostname_config of this NodeSpec.
+        :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
+        """
+        self._hostname_config = hostname_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

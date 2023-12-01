@@ -33,7 +33,7 @@ class CreateEventRequestBody:
 
         :param name: 测试事件名称。只能由字母、数字、中划线和下划线组成，且必须以大写或小写字母开头
         :type name: str
-        :param content: 测试事件content,为json字符串
+        :param content: 测试事件content，为json字符串的base64编码
         :type content: str
         """
         
@@ -72,7 +72,7 @@ class CreateEventRequestBody:
     def content(self):
         """Gets the content of this CreateEventRequestBody.
 
-        测试事件content,为json字符串
+        测试事件content，为json字符串的base64编码
 
         :return: The content of this CreateEventRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateEventRequestBody:
     def content(self, content):
         """Sets the content of this CreateEventRequestBody.
 
-        测试事件content,为json字符串
+        测试事件content，为json字符串的base64编码
 
         :param content: The content of this CreateEventRequestBody.
         :type content: str

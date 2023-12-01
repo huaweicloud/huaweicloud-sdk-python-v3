@@ -35,6 +35,8 @@ from huaweicloudsdkservicestage.v2.model.change_resource_in_environment_response
 from huaweicloudsdkservicestage.v2.model.charge_mode import ChargeMode
 from huaweicloudsdkservicestage.v2.model.commits_commits import CommitsCommits
 from huaweicloudsdkservicestage.v2.model.component_category import ComponentCategory
+from huaweicloudsdkservicestage.v2.model.component_container_parameter import ComponentContainerParameter
+from huaweicloudsdkservicestage.v2.model.component_container_size import ComponentContainerSize
 from huaweicloudsdkservicestage.v2.model.component_create import ComponentCreate
 from huaweicloudsdkservicestage.v2.model.component_modify import ComponentModify
 from huaweicloudsdkservicestage.v2.model.component_mount import ComponentMount
@@ -42,6 +44,7 @@ from huaweicloudsdkservicestage.v2.model.component_probe import ComponentProbe
 from huaweicloudsdkservicestage.v2.model.component_storage import ComponentStorage
 from huaweicloudsdkservicestage.v2.model.component_sub_category import ComponentSubCategory
 from huaweicloudsdkservicestage.v2.model.component_view import ComponentView
+from huaweicloudsdkservicestage.v2.model.configuration_container_spec import ConfigurationContainerSpec
 from huaweicloudsdkservicestage.v2.model.configuration_env_param import ConfigurationEnvParam
 from huaweicloudsdkservicestage.v2.model.configuration_lifecycle import ConfigurationLifecycle
 from huaweicloudsdkservicestage.v2.model.configuration_probes import ConfigurationProbes

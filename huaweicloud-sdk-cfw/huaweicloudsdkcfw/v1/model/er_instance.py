@@ -39,11 +39,11 @@ class ErInstance:
 
         The model defined in huaweicloud sdk
 
-        :param id: Er实例id
+        :param id: ER实例id
         :type id: str
-        :param name: Er名称
+        :param name: ER名称
         :type name: str
-        :param state: Er状态
+        :param state: ER状态
         :type state: str
         :param enterprise_project_id: 企业租户id
         :type enterprise_project_id: str
@@ -80,7 +80,7 @@ class ErInstance:
     def id(self):
         """Gets the id of this ErInstance.
 
-        Er实例id
+        ER实例id
 
         :return: The id of this ErInstance.
         :rtype: str
@@ -91,7 +91,7 @@ class ErInstance:
     def id(self, id):
         """Sets the id of this ErInstance.
 
-        Er实例id
+        ER实例id
 
         :param id: The id of this ErInstance.
         :type id: str
@@ -102,7 +102,7 @@ class ErInstance:
     def name(self):
         """Gets the name of this ErInstance.
 
-        Er名称
+        ER名称
 
         :return: The name of this ErInstance.
         :rtype: str
@@ -113,7 +113,7 @@ class ErInstance:
     def name(self, name):
         """Sets the name of this ErInstance.
 
-        Er名称
+        ER名称
 
         :param name: The name of this ErInstance.
         :type name: str
@@ -124,7 +124,7 @@ class ErInstance:
     def state(self):
         """Gets the state of this ErInstance.
 
-        Er状态
+        ER状态
 
         :return: The state of this ErInstance.
         :rtype: str
@@ -135,7 +135,7 @@ class ErInstance:
     def state(self, state):
         """Sets the state of this ErInstance.
 
-        Er状态
+        ER状态
 
         :param state: The state of this ErInstance.
         :type state: str

@@ -18,8 +18,8 @@ class ListCertsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'default_certs': 'DefaultCertsResource',
-        'custom_certs': 'CustomCertsResource'
+        'default_certs': 'list[DefaultCertsResource]',
+        'custom_certs': 'list[CustomCertsResource]'
     }
 
     attribute_map = {
@@ -32,10 +32,10 @@ class ListCertsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param default_certs: 
-        :type default_certs: :class:`huaweicloudsdkcss.v1.DefaultCertsResource`
-        :param custom_certs: 
-        :type custom_certs: :class:`huaweicloudsdkcss.v1.CustomCertsResource`
+        :param default_certs: 默认证书列表。
+        :type default_certs: list[:class:`huaweicloudsdkcss.v1.DefaultCertsResource`]
+        :param custom_certs: 自定义证书列表。
+        :type custom_certs: list[:class:`huaweicloudsdkcss.v1.CustomCertsResource`]
         """
         
         super(ListCertsResponse, self).__init__()
@@ -53,8 +53,10 @@ class ListCertsResponse(SdkResponse):
     def default_certs(self):
         """Gets the default_certs of this ListCertsResponse.
 
+        默认证书列表。
+
         :return: The default_certs of this ListCertsResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.DefaultCertsResource`
+        :rtype: list[:class:`huaweicloudsdkcss.v1.DefaultCertsResource`]
         """
         return self._default_certs
 
@@ -62,8 +64,10 @@ class ListCertsResponse(SdkResponse):
     def default_certs(self, default_certs):
         """Sets the default_certs of this ListCertsResponse.
 
+        默认证书列表。
+
         :param default_certs: The default_certs of this ListCertsResponse.
-        :type default_certs: :class:`huaweicloudsdkcss.v1.DefaultCertsResource`
+        :type default_certs: list[:class:`huaweicloudsdkcss.v1.DefaultCertsResource`]
         """
         self._default_certs = default_certs
 
@@ -71,8 +75,10 @@ class ListCertsResponse(SdkResponse):
     def custom_certs(self):
         """Gets the custom_certs of this ListCertsResponse.
 
+        自定义证书列表。
+
         :return: The custom_certs of this ListCertsResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.CustomCertsResource`
+        :rtype: list[:class:`huaweicloudsdkcss.v1.CustomCertsResource`]
         """
         return self._custom_certs
 
@@ -80,8 +86,10 @@ class ListCertsResponse(SdkResponse):
     def custom_certs(self, custom_certs):
         """Sets the custom_certs of this ListCertsResponse.
 
+        自定义证书列表。
+
         :param custom_certs: The custom_certs of this ListCertsResponse.
-        :type custom_certs: :class:`huaweicloudsdkcss.v1.CustomCertsResource`
+        :type custom_certs: list[:class:`huaweicloudsdkcss.v1.CustomCertsResource`]
         """
         self._custom_certs = custom_certs
 

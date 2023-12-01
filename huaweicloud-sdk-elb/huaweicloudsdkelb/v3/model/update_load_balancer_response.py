@@ -38,9 +38,9 @@ class UpdateLoadBalancerResponse(SdkResponse):
 
         :param loadbalancer: 
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`
-        :param loadbalancer_id: 负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_ocb,ocb,hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
+        :param loadbalancer_id: 负载均衡器的id[（包周期场景返回该字段）  不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
         :type loadbalancer_id: str
-        :param order_id: 订单号。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
+        :param order_id: 订单号[（包周期规格变更场景返回该字段）  不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
         :type order_id: str
         :param request_id: 请求ID。  注：自动生成 。
         :type request_id: str
@@ -85,7 +85,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this UpdateLoadBalancerResponse.
 
-        负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_ocb,ocb,hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
+        负载均衡器的id[（包周期场景返回该字段）  不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
 
         :return: The loadbalancer_id of this UpdateLoadBalancerResponse.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this UpdateLoadBalancerResponse.
 
-        负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_ocb,ocb,hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
+        负载均衡器的id[（包周期场景返回该字段）  不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
 
         :param loadbalancer_id: The loadbalancer_id of this UpdateLoadBalancerResponse.
         :type loadbalancer_id: str
@@ -107,7 +107,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this UpdateLoadBalancerResponse.
 
-        订单号。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
+        订单号[（包周期规格变更场景返回该字段）  不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
 
         :return: The order_id of this UpdateLoadBalancerResponse.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this UpdateLoadBalancerResponse.
 
-        订单号。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
+        订单号[（包周期规格变更场景返回该字段）  不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
 
         :param order_id: The order_id of this UpdateLoadBalancerResponse.
         :type order_id: str

@@ -61,13 +61,13 @@ class CertificateInfo:
         :type certificate: str
         :param description: 证书的描述。
         :type description: str
-        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过30个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\&quot;*\&quot;。例：*.test.com
+        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\&quot;*\&quot;。例：*.test.com
         :type domain: str
         :param id: 证书ID。
         :type id: str
         :param name: 证书的名称。
         :type name: str
-        :param private_key: HTTPS协议监听器使用的证书私钥。取值范围：PEM编码格式，最大长度8192字符。  使用说明： - 仅当type为server时该字段有效且必选。 - 当type为client时该字段无效，不需要传入。如果传入则必须是符合PEM格式的字符串，但仍然不会生效。
+        :param private_key: 服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
         :type private_key: str
         :param type: SSL证书的类型。分为服务器证书(server)、CA证书(client)。默认值：server。
         :type type: str
@@ -190,7 +190,7 @@ class CertificateInfo:
     def domain(self):
         """Gets the domain of this CertificateInfo.
 
-        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
+        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
 
         :return: The domain of this CertificateInfo.
         :rtype: str
@@ -201,7 +201,7 @@ class CertificateInfo:
     def domain(self, domain):
         """Sets the domain of this CertificateInfo.
 
-        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
+        服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
 
         :param domain: The domain of this CertificateInfo.
         :type domain: str
@@ -256,7 +256,7 @@ class CertificateInfo:
     def private_key(self):
         """Gets the private_key of this CertificateInfo.
 
-        HTTPS协议监听器使用的证书私钥。取值范围：PEM编码格式，最大长度8192字符。  使用说明： - 仅当type为server时该字段有效且必选。 - 当type为client时该字段无效，不需要传入。如果传入则必须是符合PEM格式的字符串，但仍然不会生效。
+        服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
 
         :return: The private_key of this CertificateInfo.
         :rtype: str
@@ -267,7 +267,7 @@ class CertificateInfo:
     def private_key(self, private_key):
         """Sets the private_key of this CertificateInfo.
 
-        HTTPS协议监听器使用的证书私钥。取值范围：PEM编码格式，最大长度8192字符。  使用说明： - 仅当type为server时该字段有效且必选。 - 当type为client时该字段无效，不需要传入。如果传入则必须是符合PEM格式的字符串，但仍然不会生效。
+        服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
 
         :param private_key: The private_key of this CertificateInfo.
         :type private_key: str

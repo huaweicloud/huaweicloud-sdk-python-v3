@@ -50,7 +50,9 @@ class ListLoadBalancersRequest:
         'elb_virsubnet_type': 'list[str]',
         'autoscaling': 'list[str]',
         'protection_status': 'list[str]',
-        'global_eips': 'list[str]'
+        'global_eips': 'list[str]',
+        'log_topic_id': 'str',
+        'log_group_id': 'str'
     }
 
     attribute_map = {
@@ -87,10 +89,12 @@ class ListLoadBalancersRequest:
         'elb_virsubnet_type': 'elb_virsubnet_type',
         'autoscaling': 'autoscaling',
         'protection_status': 'protection_status',
-        'global_eips': 'global_eips'
+        'global_eips': 'global_eips',
+        'log_topic_id': 'log_topic_id',
+        'log_group_id': 'log_group_id'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, provisioning_status=None, operating_status=None, guaranteed=None, vpc_id=None, vip_port_id=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_port_id=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, eips=None, publicips=None, availability_zone_list=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, billing_info=None, member_device_id=None, member_address=None, enterprise_project_id=None, ip_version=None, deletion_protection_enable=None, elb_virsubnet_type=None, autoscaling=None, protection_status=None, global_eips=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, provisioning_status=None, operating_status=None, guaranteed=None, vpc_id=None, vip_port_id=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_port_id=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, eips=None, publicips=None, availability_zone_list=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, billing_info=None, member_device_id=None, member_address=None, enterprise_project_id=None, ip_version=None, deletion_protection_enable=None, elb_virsubnet_type=None, autoscaling=None, protection_status=None, global_eips=None, log_topic_id=None, log_group_id=None):
         """ListLoadBalancersRequest
 
         The model defined in huaweicloud sdk
@@ -153,9 +157,9 @@ class ListLoadBalancersRequest:
         :type enterprise_project_id: list[str]
         :param ip_version: IP版本信息。  取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: list[int]
-        :param deletion_protection_enable: 是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        :param deletion_protection_enable: 是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type deletion_protection_enable: bool
-        :param elb_virsubnet_type: 下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type&#x3D;ipv4&amp;elb_virsubnet_type&#x3D;dualstack*。  [不支持dualstack。](tag:dt,dt_test)
+        :param elb_virsubnet_type: 下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type&#x3D;ipv4&amp;elb_virsubnet_type&#x3D;dualstack*。
         :type elb_virsubnet_type: list[str]
         :param autoscaling: 是否开启弹性扩缩容。示例如下： \&quot;autoscaling\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         }  支持多值查询，查询条件格式：  *autoscaling&#x3D;enable&#x3D;true&amp;autoscaling&#x3D;enable&#x3D;false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type autoscaling: list[str]
@@ -163,6 +167,10 @@ class ListLoadBalancersRequest:
         :type protection_status: list[str]
         :param global_eips: 负载均衡器绑定的公网IP。示例如下：  {     \&quot;global_eips\&quot;: [         {             \&quot;global_eip_id\&quot;: \&quot;24000000-0000-0000-0000-100000000001\&quot;,             \&quot;global_eip_address\&quot;: \&quot;10.10.10.10\&quot;,             \&quot;ip_version\&quot;: 4         }     ] }   支持多值查询，查询条件格式：  - global_eip_id作为查询条件：*global_eips&#x3D;global_eip_id&#x3D;xxx&amp;global_eips&#x3D;global_eip_id&#x3D;xxx*。  - global_eip_address作为查询条件：*global_eips&#x3D;global_eip_address&#x3D;xxx&amp;global_eips&#x3D;global_eip_address&#x3D;xxx*。  - ip_version作为查询条件：*global_eips&#x3D;ip_version&#x3D;xxx&amp;global_eips&#x3D;ip_version&#x3D;xxx*。
         :type global_eips: list[str]
+        :param log_topic_id: LB实例绑定的logtank的topic id信息，支持多值查询，查询条件格式：*log_topic_id&#x3D;xxx&amp;log_topic_id&#x3D;xxx*。
+        :type log_topic_id: str
+        :param log_group_id: LB实例绑定的logtank的group id信息，支持多值查询，查询条件格式：*log_group_id&#x3D;xxx&amp;log_group_id&#x3D;xxx*。
+        :type log_group_id: str
         """
         
         
@@ -201,6 +209,8 @@ class ListLoadBalancersRequest:
         self._autoscaling = None
         self._protection_status = None
         self._global_eips = None
+        self._log_topic_id = None
+        self._log_group_id = None
         self.discriminator = None
 
         if marker is not None:
@@ -271,6 +281,10 @@ class ListLoadBalancersRequest:
             self.protection_status = protection_status
         if global_eips is not None:
             self.global_eips = global_eips
+        if log_topic_id is not None:
+            self.log_topic_id = log_topic_id
+        if log_group_id is not None:
+            self.log_group_id = log_group_id
 
     @property
     def marker(self):
@@ -914,7 +928,7 @@ class ListLoadBalancersRequest:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this ListLoadBalancersRequest.
 
-        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The deletion_protection_enable of this ListLoadBalancersRequest.
         :rtype: bool
@@ -925,7 +939,7 @@ class ListLoadBalancersRequest:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this ListLoadBalancersRequest.
 
-        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param deletion_protection_enable: The deletion_protection_enable of this ListLoadBalancersRequest.
         :type deletion_protection_enable: bool
@@ -936,7 +950,7 @@ class ListLoadBalancersRequest:
     def elb_virsubnet_type(self):
         """Gets the elb_virsubnet_type of this ListLoadBalancersRequest.
 
-        下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。  [不支持dualstack。](tag:dt,dt_test)
+        下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。
 
         :return: The elb_virsubnet_type of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -947,7 +961,7 @@ class ListLoadBalancersRequest:
     def elb_virsubnet_type(self, elb_virsubnet_type):
         """Sets the elb_virsubnet_type of this ListLoadBalancersRequest.
 
-        下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。  [不支持dualstack。](tag:dt,dt_test)
+        下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。
 
         :param elb_virsubnet_type: The elb_virsubnet_type of this ListLoadBalancersRequest.
         :type elb_virsubnet_type: list[str]
@@ -1019,6 +1033,50 @@ class ListLoadBalancersRequest:
         :type global_eips: list[str]
         """
         self._global_eips = global_eips
+
+    @property
+    def log_topic_id(self):
+        """Gets the log_topic_id of this ListLoadBalancersRequest.
+
+        LB实例绑定的logtank的topic id信息，支持多值查询，查询条件格式：*log_topic_id=xxx&log_topic_id=xxx*。
+
+        :return: The log_topic_id of this ListLoadBalancersRequest.
+        :rtype: str
+        """
+        return self._log_topic_id
+
+    @log_topic_id.setter
+    def log_topic_id(self, log_topic_id):
+        """Sets the log_topic_id of this ListLoadBalancersRequest.
+
+        LB实例绑定的logtank的topic id信息，支持多值查询，查询条件格式：*log_topic_id=xxx&log_topic_id=xxx*。
+
+        :param log_topic_id: The log_topic_id of this ListLoadBalancersRequest.
+        :type log_topic_id: str
+        """
+        self._log_topic_id = log_topic_id
+
+    @property
+    def log_group_id(self):
+        """Gets the log_group_id of this ListLoadBalancersRequest.
+
+        LB实例绑定的logtank的group id信息，支持多值查询，查询条件格式：*log_group_id=xxx&log_group_id=xxx*。
+
+        :return: The log_group_id of this ListLoadBalancersRequest.
+        :rtype: str
+        """
+        return self._log_group_id
+
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        """Sets the log_group_id of this ListLoadBalancersRequest.
+
+        LB实例绑定的logtank的group id信息，支持多值查询，查询条件格式：*log_group_id=xxx&log_group_id=xxx*。
+
+        :param log_group_id: The log_group_id of this ListLoadBalancersRequest.
+        :type log_group_id: str
+        """
+        self._log_group_id = log_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -41,7 +41,7 @@ class BatchUpdateMembersOption:
         :type id: str
         :param admin_state_up: 后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
         :type admin_state_up: bool
-        :param name: 后端服务器名称。注意：该名称并非ECS名称。
+        :param name: 后端服务器名称。
         :type name: str
         :param protocol_port: 后端服务器端口号。
         :type protocol_port: int
@@ -116,7 +116,7 @@ class BatchUpdateMembersOption:
     def name(self):
         """Gets the name of this BatchUpdateMembersOption.
 
-        后端服务器名称。注意：该名称并非ECS名称。
+        后端服务器名称。
 
         :return: The name of this BatchUpdateMembersOption.
         :rtype: str
@@ -127,7 +127,7 @@ class BatchUpdateMembersOption:
     def name(self, name):
         """Sets the name of this BatchUpdateMembersOption.
 
-        后端服务器名称。注意：该名称并非ECS名称。
+        后端服务器名称。
 
         :param name: The name of this BatchUpdateMembersOption.
         :type name: str

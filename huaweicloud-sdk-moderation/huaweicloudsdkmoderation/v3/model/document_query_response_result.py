@@ -31,7 +31,7 @@ class DocumentQueryResponseResult:
 
         The model defined in huaweicloud sdk
 
-        :param suggestion: 文档审核结果是否通过。 block：包含敏感信息，不通过 pass：不包含敏感信息，通过 review：需要人工复检
+        :param suggestion: 文档审核结果是否通过。 block：包含敏感信息，不通过 review：需要人工复检 pass：不包含敏感信息，通过
         :type suggestion: str
         :param details: 审核详情
         :type details: list[:class:`huaweicloudsdkmoderation.v3.DocumentQueryResponseResultDetails`]
@@ -52,7 +52,7 @@ class DocumentQueryResponseResult:
     def suggestion(self):
         """Gets the suggestion of this DocumentQueryResponseResult.
 
-        文档审核结果是否通过。 block：包含敏感信息，不通过 pass：不包含敏感信息，通过 review：需要人工复检
+        文档审核结果是否通过。 block：包含敏感信息，不通过 review：需要人工复检 pass：不包含敏感信息，通过
 
         :return: The suggestion of this DocumentQueryResponseResult.
         :rtype: str
@@ -63,7 +63,7 @@ class DocumentQueryResponseResult:
     def suggestion(self, suggestion):
         """Sets the suggestion of this DocumentQueryResponseResult.
 
-        文档审核结果是否通过。 block：包含敏感信息，不通过 pass：不包含敏感信息，通过 review：需要人工复检
+        文档审核结果是否通过。 block：包含敏感信息，不通过 review：需要人工复检 pass：不包含敏感信息，通过
 
         :param suggestion: The suggestion of this DocumentQueryResponseResult.
         :type suggestion: str

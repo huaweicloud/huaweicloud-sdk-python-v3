@@ -18,6 +18,8 @@ class Thumbnail:
 
     openapi_types = {
         'type': 'str',
+        'quantity': 'int',
+        'quantity_time': 'int',
         'time': 'int',
         'dots': 'list[int]',
         'cover_position': 'int',
@@ -28,6 +30,8 @@ class Thumbnail:
 
     attribute_map = {
         'type': 'type',
+        'quantity': 'quantity',
+        'quantity_time': 'quantity_time',
         'time': 'time',
         'dots': 'dots',
         'cover_position': 'cover_position',
@@ -36,14 +40,18 @@ class Thumbnail:
         'max_length': 'max_length'
     }
 
-    def __init__(self, type=None, time=None, dots=None, cover_position=None, format=None, aspect_ratio=None, max_length=None):
+    def __init__(self, type=None, quantity=None, quantity_time=None, time=None, dots=None, cover_position=None, format=None, aspect_ratio=None, max_length=None):
         """Thumbnail
 
         The model defined in huaweicloud sdk
 
-        :param type: 截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。
+        :param type: 截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。 - quantity： 按照指定张数，根据视频时长等分视频截图。
         :type type: str
-        :param time: **type**取值为time时必填。根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
+        :param quantity: **type**取值为quantity时必填。 按照指定张数，根据视频时长等分视频截图。 取值范围：[1,10]之间的整数。
+        :type quantity: int
+        :param quantity_time: **type**取值为quantity时选填。 按照指定时间间隔取指定张数截图。 取值范围：[0,2147483647]之间的整数。
+        :type quantity_time: int
+        :param time: 根据时间间隔采样时的时间间隔值。单位：秒。 **type**取值为time时。 默认值：12 取值范围：[0,100]之间的整数。
         :type time: int
         :param dots: **type**取值为dots时必填。指定时间截图时的时间点数组。
         :type dots: list[int]
@@ -60,6 +68,8 @@ class Thumbnail:
         
 
         self._type = None
+        self._quantity = None
+        self._quantity_time = None
         self._time = None
         self._dots = None
         self._cover_position = None
@@ -69,6 +79,10 @@ class Thumbnail:
         self.discriminator = None
 
         self.type = type
+        if quantity is not None:
+            self.quantity = quantity
+        if quantity_time is not None:
+            self.quantity_time = quantity_time
         if time is not None:
             self.time = time
         if dots is not None:
@@ -86,7 +100,7 @@ class Thumbnail:
     def type(self):
         """Gets the type of this Thumbnail.
 
-        截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。
+        截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。 - quantity： 按照指定张数，根据视频时长等分视频截图。
 
         :return: The type of this Thumbnail.
         :rtype: str
@@ -97,7 +111,7 @@ class Thumbnail:
     def type(self, type):
         """Sets the type of this Thumbnail.
 
-        截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。
+        截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。 - quantity： 按照指定张数，根据视频时长等分视频截图。
 
         :param type: The type of this Thumbnail.
         :type type: str
@@ -105,10 +119,54 @@ class Thumbnail:
         self._type = type
 
     @property
+    def quantity(self):
+        """Gets the quantity of this Thumbnail.
+
+        **type**取值为quantity时必填。 按照指定张数，根据视频时长等分视频截图。 取值范围：[1,10]之间的整数。
+
+        :return: The quantity of this Thumbnail.
+        :rtype: int
+        """
+        return self._quantity
+
+    @quantity.setter
+    def quantity(self, quantity):
+        """Sets the quantity of this Thumbnail.
+
+        **type**取值为quantity时必填。 按照指定张数，根据视频时长等分视频截图。 取值范围：[1,10]之间的整数。
+
+        :param quantity: The quantity of this Thumbnail.
+        :type quantity: int
+        """
+        self._quantity = quantity
+
+    @property
+    def quantity_time(self):
+        """Gets the quantity_time of this Thumbnail.
+
+        **type**取值为quantity时选填。 按照指定时间间隔取指定张数截图。 取值范围：[0,2147483647]之间的整数。
+
+        :return: The quantity_time of this Thumbnail.
+        :rtype: int
+        """
+        return self._quantity_time
+
+    @quantity_time.setter
+    def quantity_time(self, quantity_time):
+        """Sets the quantity_time of this Thumbnail.
+
+        **type**取值为quantity时选填。 按照指定时间间隔取指定张数截图。 取值范围：[0,2147483647]之间的整数。
+
+        :param quantity_time: The quantity_time of this Thumbnail.
+        :type quantity_time: int
+        """
+        self._quantity_time = quantity_time
+
+    @property
     def time(self):
         """Gets the time of this Thumbnail.
 
-        **type**取值为time时必填。根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
+        根据时间间隔采样时的时间间隔值。单位：秒。 **type**取值为time时。 默认值：12 取值范围：[0,100]之间的整数。
 
         :return: The time of this Thumbnail.
         :rtype: int
@@ -119,7 +177,7 @@ class Thumbnail:
     def time(self, time):
         """Sets the time of this Thumbnail.
 
-        **type**取值为time时必填。根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
+        根据时间间隔采样时的时间间隔值。单位：秒。 **type**取值为time时。 默认值：12 取值范围：[0,100]之间的整数。
 
         :param time: The time of this Thumbnail.
         :type time: int

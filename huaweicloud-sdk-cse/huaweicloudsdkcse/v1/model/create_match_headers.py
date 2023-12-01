@@ -17,47 +17,47 @@ class CreateMatchHeaders:
     sensitive_list = []
 
     openapi_types = {
-        'aaaa': 'CreateMatchHeadersAaaa'
+        'header': 'CreateMatchHeadersHeader'
     }
 
     attribute_map = {
-        'aaaa': 'aaaa'
+        'header': '&lt;header&gt;'
     }
 
-    def __init__(self, aaaa=None):
+    def __init__(self, header=None):
         """CreateMatchHeaders
 
         The model defined in huaweicloud sdk
 
-        :param aaaa: 
-        :type aaaa: :class:`huaweicloudsdkcse.v1.CreateMatchHeadersAaaa`
+        :param header: 
+        :type header: :class:`huaweicloudsdkcse.v1.CreateMatchHeadersHeader`
         """
         
         
 
-        self._aaaa = None
+        self._header = None
         self.discriminator = None
 
-        if aaaa is not None:
-            self.aaaa = aaaa
+        if header is not None:
+            self.header = header
 
     @property
-    def aaaa(self):
-        """Gets the aaaa of this CreateMatchHeaders.
+    def header(self):
+        """Gets the header of this CreateMatchHeaders.
 
-        :return: The aaaa of this CreateMatchHeaders.
-        :rtype: :class:`huaweicloudsdkcse.v1.CreateMatchHeadersAaaa`
+        :return: The header of this CreateMatchHeaders.
+        :rtype: :class:`huaweicloudsdkcse.v1.CreateMatchHeadersHeader`
         """
-        return self._aaaa
+        return self._header
 
-    @aaaa.setter
-    def aaaa(self, aaaa):
-        """Sets the aaaa of this CreateMatchHeaders.
+    @header.setter
+    def header(self, header):
+        """Sets the header of this CreateMatchHeaders.
 
-        :param aaaa: The aaaa of this CreateMatchHeaders.
-        :type aaaa: :class:`huaweicloudsdkcse.v1.CreateMatchHeadersAaaa`
+        :param header: The header of this CreateMatchHeaders.
+        :type header: :class:`huaweicloudsdkcse.v1.CreateMatchHeadersHeader`
         """
-        self._aaaa = aaaa
+        self._header = header
 
     def to_dict(self):
         """Returns the model properties as a dict"""

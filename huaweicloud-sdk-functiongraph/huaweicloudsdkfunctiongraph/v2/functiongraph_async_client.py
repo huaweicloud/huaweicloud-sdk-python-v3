@@ -303,7 +303,7 @@ class FunctionGraphAsyncClient(Client):
     def cancel_async_invocation_async(self, request):
         """停止函数异步调用请求
 
-        -| 停止函数异步调用请求 当前仅支持recursive为false且force为true的参数。针对1：N的函数做并发异步调用 停止异步请求时实例同时在执行的其他请求也会被一并停止并返回4208 function invocation canceled 目前仅支持广州和贵阳一
+        -| 当前仅支持参数recursive为false且force为true的函数。 在1：N的函数做并发异步调用的场景下调用停止异步请求接口时，同一函数实例同时在执行的其他请求也会被一并停止并返回4208 function invocation canceled
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -340,6 +340,77 @@ class FunctionGraphAsyncClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_callback_workflow_async(self, request):
+        """回调工作流
+
+        回调工作流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCallbackWorkflow
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateCallbackWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateCallbackWorkflowResponse`
+        """
+        http_info = self._create_callback_workflow_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_callback_workflow_async_invoker(self, request):
+        http_info = self._create_callback_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_callback_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fgs/workflows/{workflow_id}/callback",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCallbackWorkflowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_workflow_run_id' in local_var_params:
+            header_params['X-Workflow-Run-Id'] = local_var_params['x_workflow_run_id']
+        if 'x_workflow_state_id' in local_var_params:
+            header_params['X-Workflow-State-Id'] = local_var_params['x_workflow_state_id']
 
         form_params = {}
 
@@ -589,6 +660,71 @@ class FunctionGraphAsyncClient(Client):
             "resource_path": "/v2/{project_id}/fgs/functions",
             "request_type": request.__class__.__name__,
             "response_type": "CreateFunctionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_function_app_async(self, request):
+        """创建应用程序
+
+        创建应用程序
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFunctionApp
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionAppRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionAppResponse`
+        """
+        http_info = self._create_function_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_function_app_async_invoker(self, request):
+        http_info = self._create_function_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_function_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fgs/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFunctionAppResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1271,6 +1407,71 @@ class FunctionGraphAsyncClient(Client):
         path_params = {}
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_function_app_async(self, request):
+        """删除应用程序
+
+        删除应用程序
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteFunctionApp
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionAppRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionAppResponse`
+        """
+        http_info = self._delete_function_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_function_app_async_invoker(self, request):
+        http_info = self._delete_function_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_function_app_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/fgs/applications/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFunctionAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 
@@ -2047,6 +2248,79 @@ class FunctionGraphAsyncClient(Client):
 
         return http_info
 
+    def list_app_templates_async(self, request):
+        """查询应用程序模板列表
+
+        查询应用程序模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAppTemplates
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListAppTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListAppTemplatesResponse`
+        """
+        http_info = self._list_app_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_app_templates_async_invoker(self, request):
+        http_info = self._list_app_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fgs/application/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'maxitems' in local_var_params:
+            query_params.append(('maxitems', local_var_params['maxitems']))
+        if 'runtime' in local_var_params:
+            query_params.append(('runtime', local_var_params['runtime']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_async_invocations_async(self, request):
         """获取函数异步调用请求列表
 
@@ -2438,6 +2712,69 @@ class FunctionGraphAsyncClient(Client):
         path_params = {}
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_function_applications_async(self, request):
+        """查询应用程序列表
+
+        查询应用程序列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFunctionApplications
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionApplicationsRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionApplicationsResponse`
+        """
+        http_info = self._list_function_applications_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_function_applications_async_invoker(self, request):
+        http_info = self._list_function_applications_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_function_applications_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fgs/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFunctionApplicationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -3572,6 +3909,71 @@ class FunctionGraphAsyncClient(Client):
 
         return http_info
 
+    def show_app_template_async(self, request):
+        """查询应用程序模板详情
+
+        查询应用程序模板详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAppTemplate
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowAppTemplateRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowAppTemplateResponse`
+        """
+        http_info = self._show_app_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_app_template_async_invoker(self, request):
+        http_info = self._show_app_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_app_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fgs/application/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_dependcy_async(self, request):
         """获取指定依赖包
 
@@ -3880,6 +4282,71 @@ class FunctionGraphAsyncClient(Client):
             path_params['function_urn'] = local_var_params['function_urn']
         if 'action' in local_var_params:
             path_params['action'] = local_var_params['action']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_function_app_async(self, request):
+        """查询应用程序详情
+
+        查询应用程序详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFunctionApp
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionAppRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionAppResponse`
+        """
+        http_info = self._show_function_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_function_app_async_invoker(self, request):
+        http_info = self._show_function_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_function_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fgs/applications/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFunctionAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 
@@ -5394,7 +5861,7 @@ class FunctionGraphAsyncClient(Client):
     def update_func_snapshot_async(self, request):
         """禁用/启动函数快照
 
-        禁用/启动函数快照
+        禁用/启动函数快照，仅支持java运行时函数，且为非latest版本才能开启函数快照功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5593,9 +6060,9 @@ class FunctionGraphAsyncClient(Client):
         return http_info
 
     def update_function_collect_state_async(self, request):
-        """更新函数收藏状态
+        """更新函数置顶状态
 
-        更新函数收藏状态
+        更新函数置顶状态
         
         Please refer to HUAWEI cloud API Explorer for details.
 

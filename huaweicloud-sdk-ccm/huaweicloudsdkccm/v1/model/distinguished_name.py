@@ -39,17 +39,17 @@ class DistinguishedName:
 
         The model defined in huaweicloud sdk
 
-        :param common_name: 证书通用名称（CN）。
+        :param common_name: 证书通用名称（CN），名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、\&quot;*\&quot;、字母、数字、汉字组成，长度不能超过64位字符。
         :type common_name: str
-        :param country: 国家编码，需符合正则\&quot;**[A-Za-z]{2}**\&quot;。
+        :param country: 国家编码，只能由英文组成，长度为2位字符。
         :type country: str
-        :param state: 省市名称。
+        :param state: 省市名称，名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、字母、数字、汉字组成，长度不能超过128位字符。
         :type state: str
-        :param locality: 地区名称。
+        :param locality: 地区名称，名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、字母、数字、汉字组成，长度不能超过128位字符。
         :type locality: str
-        :param organization: 组织名称。
+        :param organization: 组织名称，名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、字母、数字、汉字组成，长度不能超过64位字符。
         :type organization: str
-        :param organizational_unit: 组织单元名称。
+        :param organizational_unit: 组织单元名称，名称只能由\&quot;-\&quot;、\&quot;_\&quot;、\&quot; \&quot;、\&quot;.\&quot;、\&quot;,\&quot;、字母、数字、汉字组成，长度不能超过64位字符。
         :type organizational_unit: str
         """
         
@@ -74,7 +74,7 @@ class DistinguishedName:
     def common_name(self):
         """Gets the common_name of this DistinguishedName.
 
-        证书通用名称（CN）。
+        证书通用名称（CN），名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、\"*\"、字母、数字、汉字组成，长度不能超过64位字符。
 
         :return: The common_name of this DistinguishedName.
         :rtype: str
@@ -85,7 +85,7 @@ class DistinguishedName:
     def common_name(self, common_name):
         """Sets the common_name of this DistinguishedName.
 
-        证书通用名称（CN）。
+        证书通用名称（CN），名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、\"*\"、字母、数字、汉字组成，长度不能超过64位字符。
 
         :param common_name: The common_name of this DistinguishedName.
         :type common_name: str
@@ -96,7 +96,7 @@ class DistinguishedName:
     def country(self):
         """Gets the country of this DistinguishedName.
 
-        国家编码，需符合正则\"**[A-Za-z]{2}**\"。
+        国家编码，只能由英文组成，长度为2位字符。
 
         :return: The country of this DistinguishedName.
         :rtype: str
@@ -107,7 +107,7 @@ class DistinguishedName:
     def country(self, country):
         """Sets the country of this DistinguishedName.
 
-        国家编码，需符合正则\"**[A-Za-z]{2}**\"。
+        国家编码，只能由英文组成，长度为2位字符。
 
         :param country: The country of this DistinguishedName.
         :type country: str
@@ -118,7 +118,7 @@ class DistinguishedName:
     def state(self):
         """Gets the state of this DistinguishedName.
 
-        省市名称。
+        省市名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。
 
         :return: The state of this DistinguishedName.
         :rtype: str
@@ -129,7 +129,7 @@ class DistinguishedName:
     def state(self, state):
         """Sets the state of this DistinguishedName.
 
-        省市名称。
+        省市名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。
 
         :param state: The state of this DistinguishedName.
         :type state: str
@@ -140,7 +140,7 @@ class DistinguishedName:
     def locality(self):
         """Gets the locality of this DistinguishedName.
 
-        地区名称。
+        地区名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。
 
         :return: The locality of this DistinguishedName.
         :rtype: str
@@ -151,7 +151,7 @@ class DistinguishedName:
     def locality(self, locality):
         """Sets the locality of this DistinguishedName.
 
-        地区名称。
+        地区名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。
 
         :param locality: The locality of this DistinguishedName.
         :type locality: str
@@ -162,7 +162,7 @@ class DistinguishedName:
     def organization(self):
         """Gets the organization of this DistinguishedName.
 
-        组织名称。
+        组织名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。
 
         :return: The organization of this DistinguishedName.
         :rtype: str
@@ -173,7 +173,7 @@ class DistinguishedName:
     def organization(self, organization):
         """Sets the organization of this DistinguishedName.
 
-        组织名称。
+        组织名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。
 
         :param organization: The organization of this DistinguishedName.
         :type organization: str
@@ -184,7 +184,7 @@ class DistinguishedName:
     def organizational_unit(self):
         """Gets the organizational_unit of this DistinguishedName.
 
-        组织单元名称。
+        组织单元名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。
 
         :return: The organizational_unit of this DistinguishedName.
         :rtype: str
@@ -195,7 +195,7 @@ class DistinguishedName:
     def organizational_unit(self, organizational_unit):
         """Sets the organizational_unit of this DistinguishedName.
 
-        组织单元名称。
+        组织单元名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。
 
         :param organizational_unit: The organizational_unit of this DistinguishedName.
         :type organizational_unit: str

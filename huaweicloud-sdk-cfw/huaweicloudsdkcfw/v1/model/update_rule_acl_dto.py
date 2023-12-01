@@ -67,7 +67,7 @@ class UpdateRuleAclDto:
         :type name: str
         :param sequence: 
         :type sequence: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
-        :param direction: 规则方向
+        :param direction: 方向：0表示外到内，1表示内到外【说明：规则type&#x3D;0：互联网规则 | 2：nat规则时方向值必填】
         :type direction: int
         :param action_type: 动作0：permit,1：deny
         :type action_type: int
@@ -91,7 +91,7 @@ class UpdateRuleAclDto:
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
         :param service: 
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
-        :param type: 规则type，0：互联网规则，1:vpc规则，2：nat规则
+        :param type: 规则type，0：互联网规则，1：vpc规则，2：nat规则
         :type type: int
         :param tag: 
         :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
@@ -219,7 +219,7 @@ class UpdateRuleAclDto:
     def direction(self):
         """Gets the direction of this UpdateRuleAclDto.
 
-        规则方向
+        方向：0表示外到内，1表示内到外【说明：规则type=0：互联网规则 | 2：nat规则时方向值必填】
 
         :return: The direction of this UpdateRuleAclDto.
         :rtype: int
@@ -230,7 +230,7 @@ class UpdateRuleAclDto:
     def direction(self, direction):
         """Sets the direction of this UpdateRuleAclDto.
 
-        规则方向
+        方向：0表示外到内，1表示内到外【说明：规则type=0：互联网规则 | 2：nat规则时方向值必填】
 
         :param direction: The direction of this UpdateRuleAclDto.
         :type direction: int
@@ -471,7 +471,7 @@ class UpdateRuleAclDto:
     def type(self):
         """Gets the type of this UpdateRuleAclDto.
 
-        规则type，0：互联网规则，1:vpc规则，2：nat规则
+        规则type，0：互联网规则，1：vpc规则，2：nat规则
 
         :return: The type of this UpdateRuleAclDto.
         :rtype: int
@@ -482,7 +482,7 @@ class UpdateRuleAclDto:
     def type(self, type):
         """Sets the type of this UpdateRuleAclDto.
 
-        规则type，0：互联网规则，1:vpc规则，2：nat规则
+        规则type，0：互联网规则，1：vpc规则，2：nat规则
 
         :param type: The type of this UpdateRuleAclDto.
         :type type: int

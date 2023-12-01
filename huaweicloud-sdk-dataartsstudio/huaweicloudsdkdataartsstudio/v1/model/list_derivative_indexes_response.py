@@ -18,7 +18,7 @@ class ListDerivativeIndexesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'DerivativeIndexVOSearchResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListDerivativeIndexesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVOSearchResultData`
         """
         
         super(ListDerivativeIndexesResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListDerivativeIndexesResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListDerivativeIndexesResponse.
 
-        返回的数据信息
-
         :return: The data of this ListDerivativeIndexesResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVOSearchResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ListDerivativeIndexesResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListDerivativeIndexesResponse.
 
-        返回的数据信息
-
         :param data: The data of this ListDerivativeIndexesResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVOSearchResultData`
         """
         self._data = data
 

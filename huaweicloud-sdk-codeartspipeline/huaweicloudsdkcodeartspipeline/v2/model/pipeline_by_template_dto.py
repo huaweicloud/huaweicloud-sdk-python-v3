@@ -58,14 +58,11 @@ class PipelineByTemplateDTO:
         self._variables = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if is_publish is not None:
-            self.is_publish = is_publish
-        if sources is not None:
-            self.sources = sources
+        self.is_publish = is_publish
+        self.sources = sources
         if variables is not None:
             self.variables = variables
 

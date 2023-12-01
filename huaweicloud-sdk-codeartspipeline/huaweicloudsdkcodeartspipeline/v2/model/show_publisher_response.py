@@ -18,47 +18,51 @@ class ShowPublisherResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'dict(str, PublisherVO)'
+        'publisher_detail_map': 'dict(str, PublisherVO)'
     }
 
     attribute_map = {
-        'body': 'body'
+        'publisher_detail_map': 'publisher_detail_map'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, publisher_detail_map=None):
         """ShowPublisherResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: dict(str, PublisherVO)
+        :param publisher_detail_map: 发布商详情
+        :type publisher_detail_map: dict(str, PublisherVO)
         """
         
         super(ShowPublisherResponse, self).__init__()
 
-        self._body = None
+        self._publisher_detail_map = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if publisher_detail_map is not None:
+            self.publisher_detail_map = publisher_detail_map
 
     @property
-    def body(self):
-        """Gets the body of this ShowPublisherResponse.
+    def publisher_detail_map(self):
+        """Gets the publisher_detail_map of this ShowPublisherResponse.
 
-        :return: The body of this ShowPublisherResponse.
+        发布商详情
+
+        :return: The publisher_detail_map of this ShowPublisherResponse.
         :rtype: dict(str, PublisherVO)
         """
-        return self._body
+        return self._publisher_detail_map
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ShowPublisherResponse.
+    @publisher_detail_map.setter
+    def publisher_detail_map(self, publisher_detail_map):
+        """Sets the publisher_detail_map of this ShowPublisherResponse.
 
-        :param body: The body of this ShowPublisherResponse.
-        :type body: dict(str, PublisherVO)
+        发布商详情
+
+        :param publisher_detail_map: The publisher_detail_map of this ShowPublisherResponse.
+        :type publisher_detail_map: dict(str, PublisherVO)
         """
-        self._body = body
+        self._publisher_detail_map = publisher_detail_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

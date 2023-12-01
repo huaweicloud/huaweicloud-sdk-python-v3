@@ -148,7 +148,7 @@ class ShowTaskResponse(SdkResponse):
         :type src_node: :class:`huaweicloudsdkoms.v2.SrcNodeResp`
         :param start_time: 任务启动时间（Unix时间戳，毫秒）。
         :type start_time: int
-        :param status: 任务状态。 1：等待调度 2：正在执行 3：停止 4：失败 5：成功
+        :param status: 任务状态。 1：等待调度 2：正在执行 3：停止 4：失败 5：成功 7：等待中
         :type status: int
         :param successful_num: 迁移成功对象数量。
         :type successful_num: int
@@ -788,7 +788,7 @@ class ShowTaskResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowTaskResponse.
 
-        任务状态。 1：等待调度 2：正在执行 3：停止 4：失败 5：成功
+        任务状态。 1：等待调度 2：正在执行 3：停止 4：失败 5：成功 7：等待中
 
         :return: The status of this ShowTaskResponse.
         :rtype: int
@@ -799,7 +799,7 @@ class ShowTaskResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowTaskResponse.
 
-        任务状态。 1：等待调度 2：正在执行 3：停止 4：失败 5：成功
+        任务状态。 1：等待调度 2：正在执行 3：停止 4：失败 5：成功 7：等待中
 
         :param status: The status of this ShowTaskResponse.
         :type status: int

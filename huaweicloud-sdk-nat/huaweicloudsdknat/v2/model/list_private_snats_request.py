@@ -57,7 +57,7 @@ class ListPrivateSnatsRequest:
         :type page_reverse: bool
         :param id: SNAT规则的ID。
         :type id: list[str]
-        :param description: SNAT规则的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
+        :param description: SNAT规则的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: list[str]
         :param gateway_id: 私网NAT网关实例的ID。
         :type gateway_id: list[str]
@@ -203,7 +203,7 @@ class ListPrivateSnatsRequest:
     def description(self):
         """Gets the description of this ListPrivateSnatsRequest.
 
-        SNAT规则的描述。长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :return: The description of this ListPrivateSnatsRequest.
         :rtype: list[str]
@@ -214,7 +214,7 @@ class ListPrivateSnatsRequest:
     def description(self, description):
         """Sets the description of this ListPrivateSnatsRequest.
 
-        SNAT规则的描述。长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :param description: The description of this ListPrivateSnatsRequest.
         :type description: list[str]

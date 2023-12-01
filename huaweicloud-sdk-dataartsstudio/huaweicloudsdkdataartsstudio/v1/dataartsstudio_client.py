@@ -14914,6 +14914,8 @@ class DataArtsStudioClient(Client):
             header_params['workspace'] = local_var_params['workspace']
         if 'dlm_type' in local_var_params:
             header_params['Dlm-Type'] = local_var_params['dlm_type']
+        if 'x_return_publish_messages' in local_var_params:
+            header_params['x-return-publish-messages'] = local_var_params['x_return_publish_messages']
 
         form_params = {}
 

@@ -22,7 +22,8 @@ class InstanceConfiguration:
         'strategy': 'ConfigurationStrategy',
         'lifecycle': 'ConfigurationLifecycle',
         'scheduler': 'ConfigurationScheduler',
-        'probes': 'ConfigurationProbes'
+        'probes': 'ConfigurationProbes',
+        'container_spec': 'ConfigurationContainerSpec'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class InstanceConfiguration:
         'strategy': 'strategy',
         'lifecycle': 'lifecycle',
         'scheduler': 'scheduler',
-        'probes': 'probes'
+        'probes': 'probes',
+        'container_spec': 'container_spec'
     }
 
-    def __init__(self, env=None, storage=None, strategy=None, lifecycle=None, scheduler=None, probes=None):
+    def __init__(self, env=None, storage=None, strategy=None, lifecycle=None, scheduler=None, probes=None, container_spec=None):
         """InstanceConfiguration
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class InstanceConfiguration:
         :type scheduler: :class:`huaweicloudsdkservicestage.v2.ConfigurationScheduler`
         :param probes: 
         :type probes: :class:`huaweicloudsdkservicestage.v2.ConfigurationProbes`
+        :param container_spec: 
+        :type container_spec: :class:`huaweicloudsdkservicestage.v2.ConfigurationContainerSpec`
         """
         
         
@@ -61,6 +65,7 @@ class InstanceConfiguration:
         self._lifecycle = None
         self._scheduler = None
         self._probes = None
+        self._container_spec = None
         self.discriminator = None
 
         if env is not None:
@@ -75,6 +80,8 @@ class InstanceConfiguration:
             self.scheduler = scheduler
         if probes is not None:
             self.probes = probes
+        if container_spec is not None:
+            self.container_spec = container_spec
 
     @property
     def env(self):
@@ -187,6 +194,24 @@ class InstanceConfiguration:
         :type probes: :class:`huaweicloudsdkservicestage.v2.ConfigurationProbes`
         """
         self._probes = probes
+
+    @property
+    def container_spec(self):
+        """Gets the container_spec of this InstanceConfiguration.
+
+        :return: The container_spec of this InstanceConfiguration.
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ConfigurationContainerSpec`
+        """
+        return self._container_spec
+
+    @container_spec.setter
+    def container_spec(self, container_spec):
+        """Sets the container_spec of this InstanceConfiguration.
+
+        :param container_spec: The container_spec of this InstanceConfiguration.
+        :type container_spec: :class:`huaweicloudsdkservicestage.v2.ConfigurationContainerSpec`
+        """
+        self._container_spec = container_spec
 
     def to_dict(self):
         """Returns the model properties as a dict"""

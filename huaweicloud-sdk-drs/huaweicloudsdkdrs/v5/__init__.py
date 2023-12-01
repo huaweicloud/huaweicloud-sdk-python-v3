@@ -59,6 +59,7 @@ from huaweicloudsdkdrs.v5.model.commit_async_job_response import CommitAsyncJobR
 from huaweicloudsdkdrs.v5.model.compare_job_info import CompareJobInfo
 from huaweicloudsdkdrs.v5.model.compare_result_info import CompareResultInfo
 from huaweicloudsdkdrs.v5.model.compare_task_params import CompareTaskParams
+from huaweicloudsdkdrs.v5.model.connection_management import ConnectionManagement
 from huaweicloudsdkdrs.v5.model.content_compare_detail_info import ContentCompareDetailInfo
 from huaweicloudsdkdrs.v5.model.content_compare_overview_info import ContentCompareOverviewInfo
 from huaweicloudsdkdrs.v5.model.copy_job_request import CopyJobRequest
@@ -78,6 +79,9 @@ from huaweicloudsdkdrs.v5.model.db_object_info import DbObjectInfo
 from huaweicloudsdkdrs.v5.model.db_or_table_rename_rule import DbOrTableRenameRule
 from huaweicloudsdkdrs.v5.model.db_param import DbParam
 from huaweicloudsdkdrs.v5.model.db_param_info import DbParamInfo
+from huaweicloudsdkdrs.v5.model.delete_driver_req import DeleteDriverReq
+from huaweicloudsdkdrs.v5.model.delete_jdbc_driver_request import DeleteJdbcDriverRequest
+from huaweicloudsdkdrs.v5.model.delete_jdbc_driver_response import DeleteJdbcDriverResponse
 from huaweicloudsdkdrs.v5.model.delete_job_request import DeleteJobRequest
 from huaweicloudsdkdrs.v5.model.delete_job_resp import DeleteJobResp
 from huaweicloudsdkdrs.v5.model.delete_job_response import DeleteJobResponse
@@ -86,6 +90,8 @@ from huaweicloudsdkdrs.v5.model.download_batch_create_template_request import Do
 from huaweicloudsdkdrs.v5.model.download_batch_create_template_response import DownloadBatchCreateTemplateResponse
 from huaweicloudsdkdrs.v5.model.download_db_object_template_request import DownloadDbObjectTemplateRequest
 from huaweicloudsdkdrs.v5.model.download_db_object_template_response import DownloadDbObjectTemplateResponse
+from huaweicloudsdkdrs.v5.model.driver_info import DriverInfo
+from huaweicloudsdkdrs.v5.model.driver_management import DriverManagement
 from huaweicloudsdkdrs.v5.model.endpoint_ssl_config import EndpointSslConfig
 from huaweicloudsdkdrs.v5.model.enterprise_project import EnterpriseProject
 from huaweicloudsdkdrs.v5.model.error_resp import ErrorResp
@@ -119,6 +125,8 @@ from huaweicloudsdkdrs.v5.model.list_async_jobs_request import ListAsyncJobsRequ
 from huaweicloudsdkdrs.v5.model.list_async_jobs_response import ListAsyncJobsResponse
 from huaweicloudsdkdrs.v5.model.list_db_objects_request import ListDbObjectsRequest
 from huaweicloudsdkdrs.v5.model.list_db_objects_response import ListDbObjectsResponse
+from huaweicloudsdkdrs.v5.model.list_jdbc_drivers_request import ListJdbcDriversRequest
+from huaweicloudsdkdrs.v5.model.list_jdbc_drivers_response import ListJdbcDriversResponse
 from huaweicloudsdkdrs.v5.model.list_jobs_request import ListJobsRequest
 from huaweicloudsdkdrs.v5.model.list_jobs_response import ListJobsResponse
 from huaweicloudsdkdrs.v5.model.list_links_request import ListLinksRequest
@@ -205,6 +213,8 @@ from huaweicloudsdkdrs.v5.model.stop_job_action_req import StopJobActionReq
 from huaweicloudsdkdrs.v5.model.stop_job_action_request import StopJobActionRequest
 from huaweicloudsdkdrs.v5.model.stop_job_action_response import StopJobActionResponse
 from huaweicloudsdkdrs.v5.model.support_import_file_result import SupportImportFileResult
+from huaweicloudsdkdrs.v5.model.sync_jdbc_driver_request import SyncJdbcDriverRequest
+from huaweicloudsdkdrs.v5.model.sync_jdbc_driver_response import SyncJdbcDriverResponse
 from huaweicloudsdkdrs.v5.model.table_line_compare_detail_info import TableLineCompareDetailInfo
 from huaweicloudsdkdrs.v5.model.table_object import TableObject
 from huaweicloudsdkdrs.v5.model.target_root_db import TargetRootDb
@@ -215,6 +225,7 @@ from huaweicloudsdkdrs.v5.model.update_batch_async_jobs_request import UpdateBat
 from huaweicloudsdkdrs.v5.model.update_batch_async_jobs_response import UpdateBatchAsyncJobsResponse
 from huaweicloudsdkdrs.v5.model.update_data_progress_request import UpdateDataProgressRequest
 from huaweicloudsdkdrs.v5.model.update_data_progress_response import UpdateDataProgressResponse
+from huaweicloudsdkdrs.v5.model.update_driver_req import UpdateDriverReq
 from huaweicloudsdkdrs.v5.model.update_job import UpdateJob
 from huaweicloudsdkdrs.v5.model.update_job_req import UpdateJobReq
 from huaweicloudsdkdrs.v5.model.update_job_request import UpdateJobRequest
@@ -224,6 +235,9 @@ from huaweicloudsdkdrs.v5.model.update_start_position_response import UpdateStar
 from huaweicloudsdkdrs.v5.model.upload_db_object_template_request import UploadDbObjectTemplateRequest
 from huaweicloudsdkdrs.v5.model.upload_db_object_template_request_body import UploadDbObjectTemplateRequestBody
 from huaweicloudsdkdrs.v5.model.upload_db_object_template_response import UploadDbObjectTemplateResponse
+from huaweicloudsdkdrs.v5.model.upload_jdbc_driver_request import UploadJdbcDriverRequest
+from huaweicloudsdkdrs.v5.model.upload_jdbc_driver_request_body import UploadJdbcDriverRequestBody
+from huaweicloudsdkdrs.v5.model.upload_jdbc_driver_response import UploadJdbcDriverResponse
 from huaweicloudsdkdrs.v5.model.user_migration_info import UserMigrationInfo
 from huaweicloudsdkdrs.v5.model.user_migration_list import UserMigrationList
 from huaweicloudsdkdrs.v5.model.user_migration_role import UserMigrationRole

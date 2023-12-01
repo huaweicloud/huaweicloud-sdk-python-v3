@@ -31,15 +31,15 @@ class Spec:
 
     attribute_map = {
         'id': 'id',
-        'engine_id': 'engine_id',
-        'spec_type': 'spec_type',
+        'engine_id': 'engineId',
+        'spec_type': 'specType',
         'cluster': 'cluster',
-        'cluster_id': 'cluster_id',
-        'cluster_nodes': 'cluster_nodes',
+        'cluster_id': 'clusterId',
+        'cluster_nodes': 'clusterNodes',
         'flavor': 'flavor',
         'region': 'region',
         'version': 'version',
-        'extend_param': 'extend_param'
+        'extend_param': 'extendParam'
     }
 
     def __init__(self, id=None, engine_id=None, spec_type=None, cluster=None, cluster_id=None, cluster_nodes=None, flavor=None, region=None, version=None, extend_param=None):

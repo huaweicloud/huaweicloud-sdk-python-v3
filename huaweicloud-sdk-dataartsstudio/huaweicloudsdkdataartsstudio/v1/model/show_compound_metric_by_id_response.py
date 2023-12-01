@@ -18,7 +18,7 @@ class ShowCompoundMetricByIdResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'CompoundMetricVODetailData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ShowCompoundMetricByIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVODetailData`
         """
         
         super(ShowCompoundMetricByIdResponse, self).__init__()
@@ -46,10 +46,8 @@ class ShowCompoundMetricByIdResponse(SdkResponse):
     def data(self):
         """Gets the data of this ShowCompoundMetricByIdResponse.
 
-        返回的数据信息
-
         :return: The data of this ShowCompoundMetricByIdResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVODetailData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ShowCompoundMetricByIdResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ShowCompoundMetricByIdResponse.
 
-        返回的数据信息
-
         :param data: The data of this ShowCompoundMetricByIdResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVODetailData`
         """
         self._data = data
 

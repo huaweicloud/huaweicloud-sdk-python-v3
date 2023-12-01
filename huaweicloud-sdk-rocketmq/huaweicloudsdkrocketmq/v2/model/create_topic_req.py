@@ -45,7 +45,7 @@ class CreateTopicReq:
         :type queue_num: float
         :param permission: 权限。
         :type permission: str
-        :param message_type: 消息类型。
+        :param message_type: 消息类型（RocketMQ实例5.x版本才包含此参数）。
         :type message_type: str
         """
         
@@ -161,7 +161,7 @@ class CreateTopicReq:
     def message_type(self):
         """Gets the message_type of this CreateTopicReq.
 
-        消息类型。
+        消息类型（RocketMQ实例5.x版本才包含此参数）。
 
         :return: The message_type of this CreateTopicReq.
         :rtype: str
@@ -172,7 +172,7 @@ class CreateTopicReq:
     def message_type(self, message_type):
         """Sets the message_type of this CreateTopicReq.
 
-        消息类型。
+        消息类型（RocketMQ实例5.x版本才包含此参数）。
 
         :param message_type: The message_type of this CreateTopicReq.
         :type message_type: str

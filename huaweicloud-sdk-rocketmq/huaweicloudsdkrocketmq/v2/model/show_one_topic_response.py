@@ -50,7 +50,7 @@ class ShowOneTopicResponse(SdkResponse):
         :type permission: str
         :param brokers: 关联的代理。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.TopicBrokers`]
-        :param message_type: 消息类型。
+        :param message_type: 消息类型（RocketMQ实例5.x版本才包含此参数）。
         :type message_type: str
         """
         
@@ -191,7 +191,7 @@ class ShowOneTopicResponse(SdkResponse):
     def message_type(self):
         """Gets the message_type of this ShowOneTopicResponse.
 
-        消息类型。
+        消息类型（RocketMQ实例5.x版本才包含此参数）。
 
         :return: The message_type of this ShowOneTopicResponse.
         :rtype: str
@@ -202,7 +202,7 @@ class ShowOneTopicResponse(SdkResponse):
     def message_type(self, message_type):
         """Sets the message_type of this ShowOneTopicResponse.
 
-        消息类型。
+        消息类型（RocketMQ实例5.x版本才包含此参数）。
 
         :param message_type: The message_type of this ShowOneTopicResponse.
         :type message_type: str

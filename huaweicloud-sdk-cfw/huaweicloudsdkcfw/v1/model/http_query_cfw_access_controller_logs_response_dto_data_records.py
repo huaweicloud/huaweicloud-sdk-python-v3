@@ -27,9 +27,9 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         'dst_region_name': 'str',
         'log_id': 'str',
         'src_ip': 'str',
-        'src_port': 'str',
+        'src_port': 'int',
         'dst_ip': 'str',
-        'dst_port': 'str',
+        'dst_port': 'int',
         'protocol': 'str',
         'app': 'str',
         'dst_host': 'str'
@@ -80,11 +80,11 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         :param src_ip: 源IP
         :type src_ip: str
         :param src_port: 源端口
-        :type src_port: str
+        :type src_port: int
         :param dst_ip: 目的IP
         :type dst_ip: str
         :param dst_port: 目的端口
-        :type dst_port: str
+        :type dst_port: int
         :param protocol: 协议类型:TCP为6,UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
         :type protocol: str
         :param app: 应用协议
@@ -373,7 +373,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         源端口
 
         :return: The src_port of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
-        :rtype: str
+        :rtype: int
         """
         return self._src_port
 
@@ -384,7 +384,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         源端口
 
         :param src_port: The src_port of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
-        :type src_port: str
+        :type src_port: int
         """
         self._src_port = src_port
 
@@ -417,7 +417,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         目的端口
 
         :return: The dst_port of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
-        :rtype: str
+        :rtype: int
         """
         return self._dst_port
 
@@ -428,7 +428,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         目的端口
 
         :param dst_port: The dst_port of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
-        :type dst_port: str
+        :type dst_port: int
         """
         self._dst_port = dst_port
 

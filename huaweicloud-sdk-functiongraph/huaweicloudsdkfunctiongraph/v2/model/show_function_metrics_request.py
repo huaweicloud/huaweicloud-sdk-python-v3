@@ -33,7 +33,7 @@ class ShowFunctionMetricsRequest:
 
         :param func_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type func_urn: str
-        :param period: 时间间隔
+        :param period: 时间间隔（单位：min）
         :type period: str
         """
         
@@ -72,7 +72,7 @@ class ShowFunctionMetricsRequest:
     def period(self):
         """Gets the period of this ShowFunctionMetricsRequest.
 
-        时间间隔
+        时间间隔（单位：min）
 
         :return: The period of this ShowFunctionMetricsRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowFunctionMetricsRequest:
     def period(self, period):
         """Sets the period of this ShowFunctionMetricsRequest.
 
-        时间间隔
+        时间间隔（单位：min）
 
         :param period: The period of this ShowFunctionMetricsRequest.
         :type period: str

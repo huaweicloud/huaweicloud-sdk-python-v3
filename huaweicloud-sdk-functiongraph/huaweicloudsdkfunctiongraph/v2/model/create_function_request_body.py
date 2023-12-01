@@ -37,6 +37,8 @@ class CreateFunctionRequestBody:
         'func_code': 'FuncCode',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
+        'pre_stop_handler': 'str',
+        'pre_stop_timeout': 'int',
         'enterprise_project_id': 'str',
         'type': 'str',
         'log_config': 'FuncLogConfig',
@@ -64,13 +66,15 @@ class CreateFunctionRequestBody:
         'func_code': 'func_code',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
+        'pre_stop_handler': 'pre_stop_handler',
+        'pre_stop_timeout': 'pre_stop_timeout',
         'enterprise_project_id': 'enterprise_project_id',
         'type': 'type',
         'log_config': 'log_config',
         'network_controller': 'network_controller'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None):
         """CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -115,6 +119,10 @@ class CreateFunctionRequestBody:
         :type initializer_handler: str
         :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
         :type initializer_timeout: int
+        :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+        :type pre_stop_handler: str
+        :param pre_stop_timeout: 初始化超时时间，超时函数将被强行停止，范围1～90秒。
+        :type pre_stop_timeout: int
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
         :type enterprise_project_id: str
         :param type: 函数版本；部分局点只支持v1函数，缺省值则为v1
@@ -147,6 +155,8 @@ class CreateFunctionRequestBody:
         self._func_code = None
         self._initializer_handler = None
         self._initializer_timeout = None
+        self._pre_stop_handler = None
+        self._pre_stop_timeout = None
         self._enterprise_project_id = None
         self._type = None
         self._log_config = None
@@ -186,6 +196,10 @@ class CreateFunctionRequestBody:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
             self.initializer_timeout = initializer_timeout
+        if pre_stop_handler is not None:
+            self.pre_stop_handler = pre_stop_handler
+        if pre_stop_timeout is not None:
+            self.pre_stop_timeout = pre_stop_timeout
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if type is not None:
@@ -622,6 +636,50 @@ class CreateFunctionRequestBody:
         :type initializer_timeout: int
         """
         self._initializer_timeout = initializer_timeout
+
+    @property
+    def pre_stop_handler(self):
+        """Gets the pre_stop_handler of this CreateFunctionRequestBody.
+
+        函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+
+        :return: The pre_stop_handler of this CreateFunctionRequestBody.
+        :rtype: str
+        """
+        return self._pre_stop_handler
+
+    @pre_stop_handler.setter
+    def pre_stop_handler(self, pre_stop_handler):
+        """Sets the pre_stop_handler of this CreateFunctionRequestBody.
+
+        函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+
+        :param pre_stop_handler: The pre_stop_handler of this CreateFunctionRequestBody.
+        :type pre_stop_handler: str
+        """
+        self._pre_stop_handler = pre_stop_handler
+
+    @property
+    def pre_stop_timeout(self):
+        """Gets the pre_stop_timeout of this CreateFunctionRequestBody.
+
+        初始化超时时间，超时函数将被强行停止，范围1～90秒。
+
+        :return: The pre_stop_timeout of this CreateFunctionRequestBody.
+        :rtype: int
+        """
+        return self._pre_stop_timeout
+
+    @pre_stop_timeout.setter
+    def pre_stop_timeout(self, pre_stop_timeout):
+        """Sets the pre_stop_timeout of this CreateFunctionRequestBody.
+
+        初始化超时时间，超时函数将被强行停止，范围1～90秒。
+
+        :param pre_stop_timeout: The pre_stop_timeout of this CreateFunctionRequestBody.
+        :type pre_stop_timeout: int
+        """
+        self._pre_stop_timeout = pre_stop_timeout
 
     @property
     def enterprise_project_id(self):

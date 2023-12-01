@@ -280,7 +280,6 @@ from huaweicloudsdkcss.v1.model.update_flavor_req import UpdateFlavorReq
 from huaweicloudsdkcss.v1.model.update_flavor_request import UpdateFlavorRequest
 from huaweicloudsdkcss.v1.model.update_flavor_response import UpdateFlavorResponse
 from huaweicloudsdkcss.v1.model.update_instance_request import UpdateInstanceRequest
-from huaweicloudsdkcss.v1.model.update_instance_request_body import UpdateInstanceRequestBody
 from huaweicloudsdkcss.v1.model.update_instance_response import UpdateInstanceResponse
 from huaweicloudsdkcss.v1.model.update_log_setting_req import UpdateLogSettingReq
 from huaweicloudsdkcss.v1.model.update_log_setting_request import UpdateLogSettingRequest

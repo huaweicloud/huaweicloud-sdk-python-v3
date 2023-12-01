@@ -21,7 +21,9 @@ class SlowlogItem:
         'command': 'str',
         'start_time': 'str',
         'duration': 'str',
-        'shard_name': 'str'
+        'shard_name': 'str',
+        'database_id': 'int',
+        'username': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class SlowlogItem:
         'command': 'command',
         'start_time': 'start_time',
         'duration': 'duration',
-        'shard_name': 'shard_name'
+        'shard_name': 'shard_name',
+        'database_id': 'database_id',
+        'username': 'username'
     }
 
-    def __init__(self, id=None, command=None, start_time=None, duration=None, shard_name=None):
+    def __init__(self, id=None, command=None, start_time=None, duration=None, shard_name=None, database_id=None, username=None):
         """SlowlogItem
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class SlowlogItem:
         :type duration: str
         :param shard_name: 慢命令所在的分片名称，仅在实例类型为集群时支持
         :type shard_name: str
+        :param database_id: 数据库id，当前只对指定客户开放
+        :type database_id: int
+        :param username: 操作慢日志的账号名称，当前只对指定客户开放
+        :type username: str
         """
         
         
@@ -56,6 +64,8 @@ class SlowlogItem:
         self._start_time = None
         self._duration = None
         self._shard_name = None
+        self._database_id = None
+        self._username = None
         self.discriminator = None
 
         if id is not None:
@@ -68,6 +78,10 @@ class SlowlogItem:
             self.duration = duration
         if shard_name is not None:
             self.shard_name = shard_name
+        if database_id is not None:
+            self.database_id = database_id
+        if username is not None:
+            self.username = username
 
     @property
     def id(self):
@@ -178,6 +192,50 @@ class SlowlogItem:
         :type shard_name: str
         """
         self._shard_name = shard_name
+
+    @property
+    def database_id(self):
+        """Gets the database_id of this SlowlogItem.
+
+        数据库id，当前只对指定客户开放
+
+        :return: The database_id of this SlowlogItem.
+        :rtype: int
+        """
+        return self._database_id
+
+    @database_id.setter
+    def database_id(self, database_id):
+        """Sets the database_id of this SlowlogItem.
+
+        数据库id，当前只对指定客户开放
+
+        :param database_id: The database_id of this SlowlogItem.
+        :type database_id: int
+        """
+        self._database_id = database_id
+
+    @property
+    def username(self):
+        """Gets the username of this SlowlogItem.
+
+        操作慢日志的账号名称，当前只对指定客户开放
+
+        :return: The username of this SlowlogItem.
+        :rtype: str
+        """
+        return self._username
+
+    @username.setter
+    def username(self, username):
+        """Sets the username of this SlowlogItem.
+
+        操作慢日志的账号名称，当前只对指定客户开放
+
+        :param username: The username of this SlowlogItem.
+        :type username: str
+        """
+        self._username = username
 
     def to_dict(self):
         """Returns the model properties as a dict"""

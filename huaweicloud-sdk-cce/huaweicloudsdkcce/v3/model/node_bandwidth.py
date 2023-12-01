@@ -37,7 +37,7 @@ class NodeBandwidth:
         :type chargemode: str
         :param size: 带宽大小，取值请参见取值请参见申请EIP接口中bandwidth.size说明。 [链接请参见[申请EIP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)](tag:hws) [链接请参见[申请EIP](https://support.huaweicloud.com/intl/zh-cn/api-eip/eip_api_0001.html)](tag:hws_hk) 
         :type size: int
-        :param sharetype: 带宽的共享类型，共享类型枚举：PER，表示独享。WHOLE，表示共享。
+        :param sharetype: 带宽的共享类型，共享类型枚举：PER，表示独享，目前仅支持独享。
         :type sharetype: str
         """
         
@@ -103,7 +103,7 @@ class NodeBandwidth:
     def sharetype(self):
         """Gets the sharetype of this NodeBandwidth.
 
-        带宽的共享类型，共享类型枚举：PER，表示独享。WHOLE，表示共享。
+        带宽的共享类型，共享类型枚举：PER，表示独享，目前仅支持独享。
 
         :return: The sharetype of this NodeBandwidth.
         :rtype: str
@@ -114,7 +114,7 @@ class NodeBandwidth:
     def sharetype(self, sharetype):
         """Sets the sharetype of this NodeBandwidth.
 
-        带宽的共享类型，共享类型枚举：PER，表示独享。WHOLE，表示共享。
+        带宽的共享类型，共享类型枚举：PER，表示独享，目前仅支持独享。
 
         :param sharetype: The sharetype of this NodeBandwidth.
         :type sharetype: str

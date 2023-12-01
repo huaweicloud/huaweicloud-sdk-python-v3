@@ -18,17 +18,15 @@ class UpdateInstanceRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'instance_id': 'str',
-        'body': 'UpdateInstanceRequestBody'
+        'instance_id': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'instance_id': 'instance_id',
-        'body': 'body'
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, cluster_id=None, instance_id=None, body=None):
+    def __init__(self, cluster_id=None, instance_id=None):
         """UpdateInstanceRequest
 
         The model defined in huaweicloud sdk
@@ -37,21 +35,16 @@ class UpdateInstanceRequest:
         :type cluster_id: str
         :param instance_id: 指定替换节点ID。
         :type instance_id: str
-        :param body: Body of the UpdateInstanceRequest
-        :type body: :class:`huaweicloudsdkcss.v1.UpdateInstanceRequestBody`
         """
         
         
 
         self._cluster_id = None
         self._instance_id = None
-        self._body = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.instance_id = instance_id
-        if body is not None:
-            self.body = body
 
     @property
     def cluster_id(self):
@@ -96,24 +89,6 @@ class UpdateInstanceRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
-
-    @property
-    def body(self):
-        """Gets the body of this UpdateInstanceRequest.
-
-        :return: The body of this UpdateInstanceRequest.
-        :rtype: :class:`huaweicloudsdkcss.v1.UpdateInstanceRequestBody`
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this UpdateInstanceRequest.
-
-        :param body: The body of this UpdateInstanceRequest.
-        :type body: :class:`huaweicloudsdkcss.v1.UpdateInstanceRequestBody`
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

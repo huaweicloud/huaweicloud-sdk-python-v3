@@ -41,7 +41,7 @@ class NodePoolMetadata:
         :type name: str
         :param uid: 节点池的uid。创建成功后自动生成，填写无效
         :type uid: str
-        :param annotations: 节点池的注解，以key value对表示。 
+        :param annotations: 节点池的注解，以key value对表示。仅用于查询，不支持请求时传入，填写无效。 
         :type annotations: dict(str, str)
         :param update_timestamp: 更新时间
         :type update_timestamp: str
@@ -116,7 +116,7 @@ class NodePoolMetadata:
     def annotations(self):
         """Gets the annotations of this NodePoolMetadata.
 
-        节点池的注解，以key value对表示。 
+        节点池的注解，以key value对表示。仅用于查询，不支持请求时传入，填写无效。 
 
         :return: The annotations of this NodePoolMetadata.
         :rtype: dict(str, str)
@@ -127,7 +127,7 @@ class NodePoolMetadata:
     def annotations(self, annotations):
         """Sets the annotations of this NodePoolMetadata.
 
-        节点池的注解，以key value对表示。 
+        节点池的注解，以key value对表示。仅用于查询，不支持请求时传入，填写无效。 
 
         :param annotations: The annotations of this NodePoolMetadata.
         :type annotations: dict(str, str)

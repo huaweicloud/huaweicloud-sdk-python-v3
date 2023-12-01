@@ -43,7 +43,7 @@ class CreatePrivateSnatOption:
         :type cidr: str
         :param virsubnet_id: 功能说明：规则匹配的子网的ID。 取值约束：与cidr参数二选一。
         :type virsubnet_id: str
-        :param description: SNAT规则的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
+        :param description: SNAT规则的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param transit_ip_ids: 功能说明：中转IP的ID的列表。 取值约束：中转IP的ID个数不能超过1个。
         :type transit_ip_ids: list[str]
@@ -137,7 +137,7 @@ class CreatePrivateSnatOption:
     def description(self):
         """Gets the description of this CreatePrivateSnatOption.
 
-        SNAT规则的描述。长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :return: The description of this CreatePrivateSnatOption.
         :rtype: str
@@ -148,7 +148,7 @@ class CreatePrivateSnatOption:
     def description(self, description):
         """Sets the description of this CreatePrivateSnatOption.
 
-        SNAT规则的描述。长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :param description: The description of this CreatePrivateSnatOption.
         :type description: str

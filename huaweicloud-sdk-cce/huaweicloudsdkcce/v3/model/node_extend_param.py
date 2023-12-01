@@ -36,7 +36,8 @@ class NodeExtendParam:
         'charging_mode': 'int',
         'agency_name': 'str',
         'kube_reserved_mem': 'int',
-        'system_reserved_mem': 'int'
+        'system_reserved_mem': 'int',
+        'init_node_password': 'str'
     }
 
     attribute_map = {
@@ -58,26 +59,27 @@ class NodeExtendParam:
         'nic_threshold': 'nicThreshold',
         'charging_mode': 'chargingMode',
         'agency_name': 'agency_name',
-        'kube_reserved_mem': 'kube-reserved-mem',
-        'system_reserved_mem': 'system-reserved-mem'
+        'kube_reserved_mem': 'kubeReservedMem',
+        'system_reserved_mem': 'systemReservedMem',
+        'init_node_password': 'init-node-password'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, charging_mode=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, charging_mode=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, init_node_password=None):
         """NodeExtendParam
 
         The model defined in huaweicloud sdk
 
         :param ecsperformancetype: 云服务器规格的分类。响应中会返回此字段。
         :type ecsperformancetype: str
-        :param order_id: 订单ID，节点付费类型为自动付费包周期类型时，响应中会返回此字段。
+        :param order_id: 订单ID，节点付费类型为自动付费包周期类型时，响应中会返回此字段(仅创建场景涉及)。
         :type order_id: str
         :param product_id: 产品ID，节点付费类型为自动付费包周期类型时，响应中会返回此字段。
         :type product_id: str
         :param max_pods: 节点最大允许创建的实例数(Pod)，该数量包含系统默认实例，取值范围为16~256。  该设置的目的为防止节点因管理过多实例而负载过重，请根据您的业务需要进行设置。  节点可以创建多少个Pod，受多个参数影响，具体请参见[节点最多可以创建多少Pod](maxPods.xml)。 
         :type max_pods: int
-        :param period_type: - month：月 - year：年 &gt; billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 
+        :param period_type: - month：月 - year：年 &gt; 作为请求参数，billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 &gt; 作为响应参数，仅在创建包周期节点时返回。 
         :type period_type: str
-        :param period_num: 订购周期数，取值范围： - periodType&#x3D;month（周期类型为月）时，取值为[1-9]。 - periodType&#x3D;year（周期类型为年）时，取值为1。 &gt; billingMode为1或2（已废弃）时生效，且为必选。 
+        :param period_num: 订购周期数，取值范围： - periodType&#x3D;month（周期类型为月）时，取值为[1-9]。 - periodType&#x3D;year（周期类型为年）时，取值为1。 &gt; 作为请求参数，billingMode为1或2（已废弃）时生效，且为必选。 &gt; 作为响应参数，仅在创建包周期节点时返回。 
         :type period_num: int
         :param is_auto_renew: 是否自动续订 - “true”：自动续订 - “false”：不自动续订 &gt; billingMode为1或2（已废弃）时生效，不填写此参数时默认不会自动续费。 
         :type is_auto_renew: str
@@ -101,12 +103,14 @@ class NodeExtendParam:
         :type nic_threshold: str
         :param charging_mode: 节点的计费模式。已废弃，请使用NodeSpec中的billingMode字段。 
         :type charging_mode: int
-        :param agency_name: 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 
+        :param agency_name: 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 作为响应参数仅在创建节点传入时返回该字段。 
         :type agency_name: str
-        :param kube_reserved_mem: 节点内存预留，Kubernetes相关组件预留值。 
+        :param kube_reserved_mem: 节点内存预留，Kubernetes相关组件预留值。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) 
         :type kube_reserved_mem: int
-        :param system_reserved_mem: 节点内存预留，系统组件预留值。 
+        :param system_reserved_mem: 节点内存预留，系统组件预留值。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) 
         :type system_reserved_mem: int
+        :param init_node_password: 节点密码，作为响应参数时，固定展示星号。
+        :type init_node_password: str
         """
         
         
@@ -131,6 +135,7 @@ class NodeExtendParam:
         self._agency_name = None
         self._kube_reserved_mem = None
         self._system_reserved_mem = None
+        self._init_node_password = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -173,6 +178,8 @@ class NodeExtendParam:
             self.kube_reserved_mem = kube_reserved_mem
         if system_reserved_mem is not None:
             self.system_reserved_mem = system_reserved_mem
+        if init_node_password is not None:
+            self.init_node_password = init_node_password
 
     @property
     def ecsperformancetype(self):
@@ -200,7 +207,7 @@ class NodeExtendParam:
     def order_id(self):
         """Gets the order_id of this NodeExtendParam.
 
-        订单ID，节点付费类型为自动付费包周期类型时，响应中会返回此字段。
+        订单ID，节点付费类型为自动付费包周期类型时，响应中会返回此字段(仅创建场景涉及)。
 
         :return: The order_id of this NodeExtendParam.
         :rtype: str
@@ -211,7 +218,7 @@ class NodeExtendParam:
     def order_id(self, order_id):
         """Sets the order_id of this NodeExtendParam.
 
-        订单ID，节点付费类型为自动付费包周期类型时，响应中会返回此字段。
+        订单ID，节点付费类型为自动付费包周期类型时，响应中会返回此字段(仅创建场景涉及)。
 
         :param order_id: The order_id of this NodeExtendParam.
         :type order_id: str
@@ -266,7 +273,7 @@ class NodeExtendParam:
     def period_type(self):
         """Gets the period_type of this NodeExtendParam.
 
-        - month：月 - year：年 > billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 
+        - month：月 - year：年 > 作为请求参数，billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 > 作为响应参数，仅在创建包周期节点时返回。 
 
         :return: The period_type of this NodeExtendParam.
         :rtype: str
@@ -277,7 +284,7 @@ class NodeExtendParam:
     def period_type(self, period_type):
         """Sets the period_type of this NodeExtendParam.
 
-        - month：月 - year：年 > billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 
+        - month：月 - year：年 > 作为请求参数，billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 > 作为响应参数，仅在创建包周期节点时返回。 
 
         :param period_type: The period_type of this NodeExtendParam.
         :type period_type: str
@@ -288,7 +295,7 @@ class NodeExtendParam:
     def period_num(self):
         """Gets the period_num of this NodeExtendParam.
 
-        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > billingMode为1或2（已废弃）时生效，且为必选。 
+        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > 作为请求参数，billingMode为1或2（已废弃）时生效，且为必选。 > 作为响应参数，仅在创建包周期节点时返回。 
 
         :return: The period_num of this NodeExtendParam.
         :rtype: int
@@ -299,7 +306,7 @@ class NodeExtendParam:
     def period_num(self, period_num):
         """Sets the period_num of this NodeExtendParam.
 
-        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > billingMode为1或2（已废弃）时生效，且为必选。 
+        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > 作为请求参数，billingMode为1或2（已废弃）时生效，且为必选。 > 作为响应参数，仅在创建包周期节点时返回。 
 
         :param period_num: The period_num of this NodeExtendParam.
         :type period_num: int
@@ -552,7 +559,7 @@ class NodeExtendParam:
     def agency_name(self):
         """Gets the agency_name of this NodeExtendParam.
 
-        委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 
+        委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 作为响应参数仅在创建节点传入时返回该字段。 
 
         :return: The agency_name of this NodeExtendParam.
         :rtype: str
@@ -563,7 +570,7 @@ class NodeExtendParam:
     def agency_name(self, agency_name):
         """Sets the agency_name of this NodeExtendParam.
 
-        委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 
+        委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 作为响应参数仅在创建节点传入时返回该字段。 
 
         :param agency_name: The agency_name of this NodeExtendParam.
         :type agency_name: str
@@ -574,7 +581,7 @@ class NodeExtendParam:
     def kube_reserved_mem(self):
         """Gets the kube_reserved_mem of this NodeExtendParam.
 
-        节点内存预留，Kubernetes相关组件预留值。 
+        节点内存预留，Kubernetes相关组件预留值。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) 
 
         :return: The kube_reserved_mem of this NodeExtendParam.
         :rtype: int
@@ -585,7 +592,7 @@ class NodeExtendParam:
     def kube_reserved_mem(self, kube_reserved_mem):
         """Sets the kube_reserved_mem of this NodeExtendParam.
 
-        节点内存预留，Kubernetes相关组件预留值。 
+        节点内存预留，Kubernetes相关组件预留值。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) 
 
         :param kube_reserved_mem: The kube_reserved_mem of this NodeExtendParam.
         :type kube_reserved_mem: int
@@ -596,7 +603,7 @@ class NodeExtendParam:
     def system_reserved_mem(self):
         """Gets the system_reserved_mem of this NodeExtendParam.
 
-        节点内存预留，系统组件预留值。 
+        节点内存预留，系统组件预留值。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) 
 
         :return: The system_reserved_mem of this NodeExtendParam.
         :rtype: int
@@ -607,12 +614,34 @@ class NodeExtendParam:
     def system_reserved_mem(self, system_reserved_mem):
         """Sets the system_reserved_mem of this NodeExtendParam.
 
-        节点内存预留，系统组件预留值。 
+        节点内存预留，系统组件预留值。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) 
 
         :param system_reserved_mem: The system_reserved_mem of this NodeExtendParam.
         :type system_reserved_mem: int
         """
         self._system_reserved_mem = system_reserved_mem
+
+    @property
+    def init_node_password(self):
+        """Gets the init_node_password of this NodeExtendParam.
+
+        节点密码，作为响应参数时，固定展示星号。
+
+        :return: The init_node_password of this NodeExtendParam.
+        :rtype: str
+        """
+        return self._init_node_password
+
+    @init_node_password.setter
+    def init_node_password(self, init_node_password):
+        """Sets the init_node_password of this NodeExtendParam.
+
+        节点密码，作为响应参数时，固定展示星号。
+
+        :param init_node_password: The init_node_password of this NodeExtendParam.
+        :type init_node_password: str
+        """
+        self._init_node_password = init_node_password
 
     def to_dict(self):
         """Returns the model properties as a dict"""

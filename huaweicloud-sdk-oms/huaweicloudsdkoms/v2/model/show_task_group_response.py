@@ -154,7 +154,7 @@ class ShowTaskGroupResponse(SdkResponse):
         :type waiting_task_num: int
         :param total_num: 迁移任务组包含的对象总数量
         :type total_num: int
-        :param create_complete_num: 任务创建的对象总数量
+        :param create_complete_num: 已完成任务创建的对象总数量
         :type create_complete_num: int
         :param success_num: 成功的对象数量
         :type success_num: int
@@ -850,7 +850,7 @@ class ShowTaskGroupResponse(SdkResponse):
     def create_complete_num(self):
         """Gets the create_complete_num of this ShowTaskGroupResponse.
 
-        任务创建的对象总数量
+        已完成任务创建的对象总数量
 
         :return: The create_complete_num of this ShowTaskGroupResponse.
         :rtype: int
@@ -861,7 +861,7 @@ class ShowTaskGroupResponse(SdkResponse):
     def create_complete_num(self, create_complete_num):
         """Sets the create_complete_num of this ShowTaskGroupResponse.
 
-        任务创建的对象总数量
+        已完成任务创建的对象总数量
 
         :param create_complete_num: The create_complete_num of this ShowTaskGroupResponse.
         :type create_complete_num: int

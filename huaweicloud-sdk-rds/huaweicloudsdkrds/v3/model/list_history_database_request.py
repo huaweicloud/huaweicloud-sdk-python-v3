@@ -17,24 +17,24 @@ class ListHistoryDatabaseRequest:
     sensitive_list = []
 
     openapi_types = {
-        'database_name': 'str',
+        'engine': 'str',
         'x_language': 'str',
         'body': 'PostgreSQLHistoryDatabaseRequest'
     }
 
     attribute_map = {
-        'database_name': 'database_name',
+        'engine': 'engine',
         'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, database_name=None, x_language=None, body=None):
+    def __init__(self, engine=None, x_language=None, body=None):
         """ListHistoryDatabaseRequest
 
         The model defined in huaweicloud sdk
 
-        :param database_name: 数据库引擎。支持的引擎如下，不区分大小写：postgresql
-        :type database_name: str
+        :param engine: 数据库引擎。支持的引擎如下，不区分大小写：postgresql,mysql
+        :type engine: str
         :param x_language: 语言
         :type x_language: str
         :param body: Body of the ListHistoryDatabaseRequest
@@ -43,38 +43,38 @@ class ListHistoryDatabaseRequest:
         
         
 
-        self._database_name = None
+        self._engine = None
         self._x_language = None
         self._body = None
         self.discriminator = None
 
-        self.database_name = database_name
+        self.engine = engine
         if x_language is not None:
             self.x_language = x_language
         if body is not None:
             self.body = body
 
     @property
-    def database_name(self):
-        """Gets the database_name of this ListHistoryDatabaseRequest.
+    def engine(self):
+        """Gets the engine of this ListHistoryDatabaseRequest.
 
-        数据库引擎。支持的引擎如下，不区分大小写：postgresql
+        数据库引擎。支持的引擎如下，不区分大小写：postgresql,mysql
 
-        :return: The database_name of this ListHistoryDatabaseRequest.
+        :return: The engine of this ListHistoryDatabaseRequest.
         :rtype: str
         """
-        return self._database_name
+        return self._engine
 
-    @database_name.setter
-    def database_name(self, database_name):
-        """Sets the database_name of this ListHistoryDatabaseRequest.
+    @engine.setter
+    def engine(self, engine):
+        """Sets the engine of this ListHistoryDatabaseRequest.
 
-        数据库引擎。支持的引擎如下，不区分大小写：postgresql
+        数据库引擎。支持的引擎如下，不区分大小写：postgresql,mysql
 
-        :param database_name: The database_name of this ListHistoryDatabaseRequest.
-        :type database_name: str
+        :param engine: The engine of this ListHistoryDatabaseRequest.
+        :type engine: str
         """
-        self._database_name = database_name
+        self._engine = engine
 
     @property
     def x_language(self):

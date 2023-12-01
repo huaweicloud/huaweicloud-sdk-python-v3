@@ -63,7 +63,7 @@ class ListNatGatewaySnatRulesRequest:
         :type floating_ip_id: str
         :param id: SNAT规则的ID。
         :type id: str
-        :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
+        :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param created_at: SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
         :type created_at: str
@@ -254,7 +254,7 @@ class ListNatGatewaySnatRulesRequest:
     def description(self):
         """Gets the description of this ListNatGatewaySnatRulesRequest.
 
-        SNAT规则的描述，长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :return: The description of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -265,7 +265,7 @@ class ListNatGatewaySnatRulesRequest:
     def description(self, description):
         """Sets the description of this ListNatGatewaySnatRulesRequest.
 
-        SNAT规则的描述，长度范围小于等于255个字符，不能包含<>
+        SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :param description: The description of this ListNatGatewaySnatRulesRequest.
         :type description: str

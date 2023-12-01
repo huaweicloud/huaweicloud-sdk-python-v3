@@ -54,6 +54,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
+        'pre_stop_handler': 'str',
+        'pre_stop_timeout': 'int',
         'enterprise_project_id': 'str',
         'long_time': 'bool',
         'log_group_id': 'str',
@@ -102,6 +104,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
+        'pre_stop_handler': 'pre_stop_handler',
+        'pre_stop_timeout': 'pre_stop_timeout',
         'enterprise_project_id': 'enterprise_project_id',
         'long_time': 'long_time',
         'log_group_id': 'log_group_id',
@@ -113,7 +117,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         'custom_image': 'custom_image'
     }
 
-    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
+    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
         """ShowFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -144,7 +148,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type memory_size: int
         :param gpu_memory: 函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
         :type gpu_memory: int
-        :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
+        :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
         :type cpu: int
         :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
         :type code_type: str
@@ -190,6 +194,10 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type initializer_handler: str
         :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
         :type initializer_timeout: int
+        :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+        :type pre_stop_handler: str
+        :param pre_stop_timeout: 初始化超时时间，超时函数将被强行停止，范围1～90秒。
+        :type pre_stop_timeout: int
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
         :type enterprise_project_id: str
         :param long_time: 是否允许进行长时间超时设置。
@@ -248,6 +256,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._dependencies = None
         self._initializer_handler = None
         self._initializer_timeout = None
+        self._pre_stop_handler = None
+        self._pre_stop_timeout = None
         self._enterprise_project_id = None
         self._long_time = None
         self._log_group_id = None
@@ -331,6 +341,10 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
             self.initializer_timeout = initializer_timeout
+        if pre_stop_handler is not None:
+            self.pre_stop_handler = pre_stop_handler
+        if pre_stop_timeout is not None:
+            self.pre_stop_timeout = pre_stop_timeout
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if long_time is not None:
@@ -640,7 +654,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def cpu(self):
         """Gets the cpu of this ShowFunctionConfigResponse.
 
-        函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
+        函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
 
         :return: The cpu of this ShowFunctionConfigResponse.
         :rtype: int
@@ -651,7 +665,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def cpu(self, cpu):
         """Sets the cpu of this ShowFunctionConfigResponse.
 
-        函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
+        函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
 
         :param cpu: The cpu of this ShowFunctionConfigResponse.
         :type cpu: int
@@ -1129,6 +1143,50 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type initializer_timeout: int
         """
         self._initializer_timeout = initializer_timeout
+
+    @property
+    def pre_stop_handler(self):
+        """Gets the pre_stop_handler of this ShowFunctionConfigResponse.
+
+        函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+
+        :return: The pre_stop_handler of this ShowFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._pre_stop_handler
+
+    @pre_stop_handler.setter
+    def pre_stop_handler(self, pre_stop_handler):
+        """Sets the pre_stop_handler of this ShowFunctionConfigResponse.
+
+        函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
+
+        :param pre_stop_handler: The pre_stop_handler of this ShowFunctionConfigResponse.
+        :type pre_stop_handler: str
+        """
+        self._pre_stop_handler = pre_stop_handler
+
+    @property
+    def pre_stop_timeout(self):
+        """Gets the pre_stop_timeout of this ShowFunctionConfigResponse.
+
+        初始化超时时间，超时函数将被强行停止，范围1～90秒。
+
+        :return: The pre_stop_timeout of this ShowFunctionConfigResponse.
+        :rtype: int
+        """
+        return self._pre_stop_timeout
+
+    @pre_stop_timeout.setter
+    def pre_stop_timeout(self, pre_stop_timeout):
+        """Sets the pre_stop_timeout of this ShowFunctionConfigResponse.
+
+        初始化超时时间，超时函数将被强行停止，范围1～90秒。
+
+        :param pre_stop_timeout: The pre_stop_timeout of this ShowFunctionConfigResponse.
+        :type pre_stop_timeout: int
+        """
+        self._pre_stop_timeout = pre_stop_timeout
 
     @property
     def enterprise_project_id(self):

@@ -27,7 +27,9 @@ class ListTrafficMirrorFilterRulesRequest:
         'source_port_range': 'str',
         'destination_port_range': 'str',
         'action': 'str',
-        'priority': 'str'
+        'priority': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class ListTrafficMirrorFilterRulesRequest:
         'source_port_range': 'source_port_range',
         'destination_port_range': 'destination_port_range',
         'action': 'action',
-        'priority': 'priority'
+        'priority': 'priority',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, id=None, description=None, traffic_mirror_filter_id=None, direction=None, protocol=None, source_cidr_block=None, destination_cidr_block=None, source_port_range=None, destination_port_range=None, action=None, priority=None):
+    def __init__(self, id=None, description=None, traffic_mirror_filter_id=None, direction=None, protocol=None, source_cidr_block=None, destination_cidr_block=None, source_port_range=None, destination_port_range=None, action=None, priority=None, limit=None, marker=None):
         """ListTrafficMirrorFilterRulesRequest
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class ListTrafficMirrorFilterRulesRequest:
         :type action: str
         :param priority: 使用规则优先级过滤
         :type priority: str
+        :param limit: 功能说明：每页返回的个数 取值范围：0-2000
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
         """
         
         
@@ -86,6 +94,8 @@ class ListTrafficMirrorFilterRulesRequest:
         self._destination_port_range = None
         self._action = None
         self._priority = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if id is not None:
@@ -110,6 +120,10 @@ class ListTrafficMirrorFilterRulesRequest:
             self.action = action
         if priority is not None:
             self.priority = priority
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def id(self):
@@ -352,6 +366,50 @@ class ListTrafficMirrorFilterRulesRequest:
         :type priority: str
         """
         self._priority = priority
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListTrafficMirrorFilterRulesRequest.
+
+        功能说明：每页返回的个数 取值范围：0-2000
+
+        :return: The limit of this ListTrafficMirrorFilterRulesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListTrafficMirrorFilterRulesRequest.
+
+        功能说明：每页返回的个数 取值范围：0-2000
+
+        :param limit: The limit of this ListTrafficMirrorFilterRulesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListTrafficMirrorFilterRulesRequest.
+
+        分页查询起始的资源ID，为空时查询第一页
+
+        :return: The marker of this ListTrafficMirrorFilterRulesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListTrafficMirrorFilterRulesRequest.
+
+        分页查询起始的资源ID，为空时查询第一页
+
+        :param marker: The marker of this ListTrafficMirrorFilterRulesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1390,6 +1390,10 @@ class VpcClient(Client):
             query_params.append(('action', local_var_params['action']))
         if 'priority' in local_var_params:
             query_params.append(('priority', local_var_params['priority']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -1463,6 +1467,10 @@ class VpcClient(Client):
             query_params.append(('created_at', local_var_params['created_at']))
         if 'updated_at' in local_var_params:
             query_params.append(('updated_at', local_var_params['updated_at']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -1552,6 +1560,10 @@ class VpcClient(Client):
             query_params.append(('created_at', local_var_params['created_at']))
         if 'updated_at' in local_var_params:
             query_params.append(('updated_at', local_var_params['updated_at']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

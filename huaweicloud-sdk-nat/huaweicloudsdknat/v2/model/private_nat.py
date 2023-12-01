@@ -55,7 +55,7 @@ class PrivateNat:
         :type project_id: str
         :param name: 私网NAT网关实例的名字。
         :type name: str
-        :param description: 私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
+        :param description: 私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型
         :type spec: str
@@ -171,7 +171,7 @@ class PrivateNat:
     def description(self):
         """Gets the description of this PrivateNat.
 
-        私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含<>
+        私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :return: The description of this PrivateNat.
         :rtype: str
@@ -182,7 +182,7 @@ class PrivateNat:
     def description(self, description):
         """Sets the description of this PrivateNat.
 
-        私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含<>
+        私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :param description: The description of this PrivateNat.
         :type description: str

@@ -38,8 +38,7 @@ class UploadPluginIconRequestBody:
         self._upload_file = None
         self.discriminator = None
 
-        if upload_file is not None:
-            self.upload_file = upload_file
+        self.upload_file = upload_file
 
     @property
     def upload_file(self):

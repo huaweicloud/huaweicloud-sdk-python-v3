@@ -23,7 +23,8 @@ class IdCardRequestBody:
         'return_verification': 'bool',
         'return_text_location': 'bool',
         'detect_reproduce': 'bool',
-        'detect_copy': 'bool'
+        'detect_copy': 'bool',
+        'return_portrait_location': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class IdCardRequestBody:
         'return_verification': 'return_verification',
         'return_text_location': 'return_text_location',
         'detect_reproduce': 'detect_reproduce',
-        'detect_copy': 'detect_copy'
+        'detect_copy': 'detect_copy',
+        'return_portrait_location': 'return_portrait_location'
     }
 
-    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None, detect_copy=None):
+    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None, detect_copy=None, return_portrait_location=None):
         """IdCardRequestBody
 
         The model defined in huaweicloud sdk
@@ -53,8 +55,10 @@ class IdCardRequestBody:
         :type return_text_location: bool
         :param detect_reproduce: 返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否经过翻拍  - false：不返回身份证图像是否经过翻拍 
         :type detect_reproduce: bool
-        :param detect_copy: 返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件             
+        :param detect_copy: 返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件 
         :type detect_copy: bool
+        :param return_portrait_location: 返回头像位置信息的开关，默认false，可选值如下所示：  - true ：开启返回头像位置信息的功能 - false : 关闭返回头像位置信息的功能 
+        :type return_portrait_location: bool
         """
         
         
@@ -66,6 +70,7 @@ class IdCardRequestBody:
         self._return_text_location = None
         self._detect_reproduce = None
         self._detect_copy = None
+        self._return_portrait_location = None
         self.discriminator = None
 
         if image is not None:
@@ -82,6 +87,8 @@ class IdCardRequestBody:
             self.detect_reproduce = detect_reproduce
         if detect_copy is not None:
             self.detect_copy = detect_copy
+        if return_portrait_location is not None:
+            self.return_portrait_location = return_portrait_location
 
     @property
     def image(self):
@@ -219,7 +226,7 @@ class IdCardRequestBody:
     def detect_copy(self):
         """Gets the detect_copy of this IdCardRequestBody.
 
-        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件             
+        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件 
 
         :return: The detect_copy of this IdCardRequestBody.
         :rtype: bool
@@ -230,12 +237,34 @@ class IdCardRequestBody:
     def detect_copy(self, detect_copy):
         """Sets the detect_copy of this IdCardRequestBody.
 
-        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件             
+        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件 
 
         :param detect_copy: The detect_copy of this IdCardRequestBody.
         :type detect_copy: bool
         """
         self._detect_copy = detect_copy
+
+    @property
+    def return_portrait_location(self):
+        """Gets the return_portrait_location of this IdCardRequestBody.
+
+        返回头像位置信息的开关，默认false，可选值如下所示：  - true ：开启返回头像位置信息的功能 - false : 关闭返回头像位置信息的功能 
+
+        :return: The return_portrait_location of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._return_portrait_location
+
+    @return_portrait_location.setter
+    def return_portrait_location(self, return_portrait_location):
+        """Sets the return_portrait_location of this IdCardRequestBody.
+
+        返回头像位置信息的开关，默认false，可选值如下所示：  - true ：开启返回头像位置信息的功能 - false : 关闭返回头像位置信息的功能 
+
+        :param return_portrait_location: The return_portrait_location of this IdCardRequestBody.
+        :type return_portrait_location: bool
+        """
+        self._return_portrait_location = return_portrait_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

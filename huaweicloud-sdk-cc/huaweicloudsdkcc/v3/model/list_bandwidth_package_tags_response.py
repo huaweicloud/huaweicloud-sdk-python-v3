@@ -19,7 +19,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'tags': 'list[Tag]'
+        'tags': 'list[MultivaluedTag]'
     }
 
     attribute_map = {
@@ -35,7 +35,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
         :param request_id: 资源ID标识符。
         :type request_id: str
         :param tags: 带宽包的所有标签。
-        :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
+        :type tags: list[:class:`huaweicloudsdkcc.v3.MultivaluedTag`]
         """
         
         super(ListBandwidthPackageTagsResponse, self).__init__()
@@ -76,7 +76,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
         带宽包的所有标签。
 
         :return: The tags of this ListBandwidthPackageTagsResponse.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.Tag`]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.MultivaluedTag`]
         """
         return self._tags
 
@@ -87,7 +87,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
         带宽包的所有标签。
 
         :param tags: The tags of this ListBandwidthPackageTagsResponse.
-        :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
+        :type tags: list[:class:`huaweicloudsdkcc.v3.MultivaluedTag`]
         """
         self._tags = tags
 

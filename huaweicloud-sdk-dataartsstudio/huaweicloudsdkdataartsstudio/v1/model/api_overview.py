@@ -23,6 +23,7 @@ class ApiOverview:
         'description': 'str',
         'status': 'str',
         'debug_status': 'str',
+        'publish_messages': 'list[ApiPublishDTO]',
         'type': 'str',
         'manager': 'str',
         'create_user': 'str',
@@ -36,13 +37,14 @@ class ApiOverview:
         'description': 'description',
         'status': 'status',
         'debug_status': 'debug_status',
+        'publish_messages': 'publish_messages',
         'type': 'type',
         'manager': 'manager',
         'create_user': 'create_user',
         'create_time': 'create_time'
     }
 
-    def __init__(self, id=None, name=None, group_id=None, description=None, status=None, debug_status=None, type=None, manager=None, create_user=None, create_time=None):
+    def __init__(self, id=None, name=None, group_id=None, description=None, status=None, debug_status=None, publish_messages=None, type=None, manager=None, create_user=None, create_time=None):
         """ApiOverview
 
         The model defined in huaweicloud sdk
@@ -51,14 +53,16 @@ class ApiOverview:
         :type id: str
         :param name: API名称
         :type name: str
-        :param group_id: API分组ID
+        :param group_id: API分组ID（共享版）
         :type group_id: str
         :param description: API描述
         :type description: str
-        :param status: API状态
+        :param status: API状态（共享版）
         :type status: str
-        :param debug_status: API调试状态
+        :param debug_status: API调试状态（共享版）
         :type debug_status: str
+        :param publish_messages: 发布信息列表（专享版）
+        :type publish_messages: list[:class:`huaweicloudsdkdataartsstudio.v1.ApiPublishDTO`]
         :param type: API 类型
         :type type: str
         :param manager: API审核人
@@ -77,6 +81,7 @@ class ApiOverview:
         self._description = None
         self._status = None
         self._debug_status = None
+        self._publish_messages = None
         self._type = None
         self._manager = None
         self._create_user = None
@@ -95,6 +100,8 @@ class ApiOverview:
             self.status = status
         if debug_status is not None:
             self.debug_status = debug_status
+        if publish_messages is not None:
+            self.publish_messages = publish_messages
         if type is not None:
             self.type = type
         if manager is not None:
@@ -152,7 +159,7 @@ class ApiOverview:
     def group_id(self):
         """Gets the group_id of this ApiOverview.
 
-        API分组ID
+        API分组ID（共享版）
 
         :return: The group_id of this ApiOverview.
         :rtype: str
@@ -163,7 +170,7 @@ class ApiOverview:
     def group_id(self, group_id):
         """Sets the group_id of this ApiOverview.
 
-        API分组ID
+        API分组ID（共享版）
 
         :param group_id: The group_id of this ApiOverview.
         :type group_id: str
@@ -196,7 +203,7 @@ class ApiOverview:
     def status(self):
         """Gets the status of this ApiOverview.
 
-        API状态
+        API状态（共享版）
 
         :return: The status of this ApiOverview.
         :rtype: str
@@ -207,7 +214,7 @@ class ApiOverview:
     def status(self, status):
         """Sets the status of this ApiOverview.
 
-        API状态
+        API状态（共享版）
 
         :param status: The status of this ApiOverview.
         :type status: str
@@ -218,7 +225,7 @@ class ApiOverview:
     def debug_status(self):
         """Gets the debug_status of this ApiOverview.
 
-        API调试状态
+        API调试状态（共享版）
 
         :return: The debug_status of this ApiOverview.
         :rtype: str
@@ -229,12 +236,34 @@ class ApiOverview:
     def debug_status(self, debug_status):
         """Sets the debug_status of this ApiOverview.
 
-        API调试状态
+        API调试状态（共享版）
 
         :param debug_status: The debug_status of this ApiOverview.
         :type debug_status: str
         """
         self._debug_status = debug_status
+
+    @property
+    def publish_messages(self):
+        """Gets the publish_messages of this ApiOverview.
+
+        发布信息列表（专享版）
+
+        :return: The publish_messages of this ApiOverview.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.ApiPublishDTO`]
+        """
+        return self._publish_messages
+
+    @publish_messages.setter
+    def publish_messages(self, publish_messages):
+        """Sets the publish_messages of this ApiOverview.
+
+        发布信息列表（专享版）
+
+        :param publish_messages: The publish_messages of this ApiOverview.
+        :type publish_messages: list[:class:`huaweicloudsdkdataartsstudio.v1.ApiPublishDTO`]
+        """
+        self._publish_messages = publish_messages
 
     @property
     def type(self):

@@ -33,7 +33,7 @@ class DocumentCreateRequestData:
 
         The model defined in huaweicloud sdk
 
-        :param url: 文档url
+        :param url: 文档url。目前支持：公网HTTP/HTTPS URL。
         :type url: str
         :param format: 文档格式。可选值： docx pdf doc xls xlsx ppt pptx pps ppsx xltx xltm xlsb xlsm txt csv epub webpage 若format与文档实际格式不一致，则返回报错参数错误
         :type format: str
@@ -57,7 +57,7 @@ class DocumentCreateRequestData:
     def url(self):
         """Gets the url of this DocumentCreateRequestData.
 
-        文档url
+        文档url。目前支持：公网HTTP/HTTPS URL。
 
         :return: The url of this DocumentCreateRequestData.
         :rtype: str
@@ -68,7 +68,7 @@ class DocumentCreateRequestData:
     def url(self, url):
         """Sets the url of this DocumentCreateRequestData.
 
-        文档url
+        文档url。目前支持：公网HTTP/HTTPS URL。
 
         :param url: The url of this DocumentCreateRequestData.
         :type url: str

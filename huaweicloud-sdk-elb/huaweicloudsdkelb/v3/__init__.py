@@ -9,6 +9,9 @@ from huaweicloudsdkelb.v3.model.api_version_info import ApiVersionInfo
 from huaweicloudsdkelb.v3.model.autoscaling_ref import AutoscalingRef
 from huaweicloudsdkelb.v3.model.availability_zone import AvailabilityZone
 from huaweicloudsdkelb.v3.model.bandwidth_ref import BandwidthRef
+from huaweicloudsdkelb.v3.model.batch_add_available_zones_request import BatchAddAvailableZonesRequest
+from huaweicloudsdkelb.v3.model.batch_add_available_zones_request_body import BatchAddAvailableZonesRequestBody
+from huaweicloudsdkelb.v3.model.batch_add_available_zones_response import BatchAddAvailableZonesResponse
 from huaweicloudsdkelb.v3.model.batch_create_members_option import BatchCreateMembersOption
 from huaweicloudsdkelb.v3.model.batch_create_members_request import BatchCreateMembersRequest
 from huaweicloudsdkelb.v3.model.batch_create_members_request_body import BatchCreateMembersRequestBody
@@ -23,6 +26,9 @@ from huaweicloudsdkelb.v3.model.batch_delete_members_request_body import BatchDe
 from huaweicloudsdkelb.v3.model.batch_delete_members_response import BatchDeleteMembersResponse
 from huaweicloudsdkelb.v3.model.batch_delete_members_state import BatchDeleteMembersState
 from huaweicloudsdkelb.v3.model.batch_member import BatchMember
+from huaweicloudsdkelb.v3.model.batch_remove_available_zones_request import BatchRemoveAvailableZonesRequest
+from huaweicloudsdkelb.v3.model.batch_remove_available_zones_request_body import BatchRemoveAvailableZonesRequestBody
+from huaweicloudsdkelb.v3.model.batch_remove_available_zones_response import BatchRemoveAvailableZonesResponse
 from huaweicloudsdkelb.v3.model.batch_update_member import BatchUpdateMember
 from huaweicloudsdkelb.v3.model.batch_update_members_option import BatchUpdateMembersOption
 from huaweicloudsdkelb.v3.model.batch_update_members_request import BatchUpdateMembersRequest
@@ -77,6 +83,12 @@ from huaweicloudsdkelb.v3.model.create_logtank_option import CreateLogtankOption
 from huaweicloudsdkelb.v3.model.create_logtank_request import CreateLogtankRequest
 from huaweicloudsdkelb.v3.model.create_logtank_request_body import CreateLogtankRequestBody
 from huaweicloudsdkelb.v3.model.create_logtank_response import CreateLogtankResponse
+from huaweicloudsdkelb.v3.model.create_master_slave_health_monitor_option import CreateMasterSlaveHealthMonitorOption
+from huaweicloudsdkelb.v3.model.create_master_slave_member_option import CreateMasterSlaveMemberOption
+from huaweicloudsdkelb.v3.model.create_master_slave_pool_option import CreateMasterSlavePoolOption
+from huaweicloudsdkelb.v3.model.create_master_slave_pool_request import CreateMasterSlavePoolRequest
+from huaweicloudsdkelb.v3.model.create_master_slave_pool_request_body import CreateMasterSlavePoolRequestBody
+from huaweicloudsdkelb.v3.model.create_master_slave_pool_response import CreateMasterSlavePoolResponse
 from huaweicloudsdkelb.v3.model.create_member_option import CreateMemberOption
 from huaweicloudsdkelb.v3.model.create_member_request import CreateMemberRequest
 from huaweicloudsdkelb.v3.model.create_member_request_body import CreateMemberRequestBody
@@ -116,6 +128,8 @@ from huaweicloudsdkelb.v3.model.delete_load_balancer_request import DeleteLoadBa
 from huaweicloudsdkelb.v3.model.delete_load_balancer_response import DeleteLoadBalancerResponse
 from huaweicloudsdkelb.v3.model.delete_logtank_request import DeleteLogtankRequest
 from huaweicloudsdkelb.v3.model.delete_logtank_response import DeleteLogtankResponse
+from huaweicloudsdkelb.v3.model.delete_master_slave_pool_request import DeleteMasterSlavePoolRequest
+from huaweicloudsdkelb.v3.model.delete_master_slave_pool_response import DeleteMasterSlavePoolResponse
 from huaweicloudsdkelb.v3.model.delete_member_request import DeleteMemberRequest
 from huaweicloudsdkelb.v3.model.delete_member_response import DeleteMemberResponse
 from huaweicloudsdkelb.v3.model.delete_pool_request import DeletePoolRequest
@@ -157,6 +171,8 @@ from huaweicloudsdkelb.v3.model.list_load_balancers_request import ListLoadBalan
 from huaweicloudsdkelb.v3.model.list_load_balancers_response import ListLoadBalancersResponse
 from huaweicloudsdkelb.v3.model.list_logtanks_request import ListLogtanksRequest
 from huaweicloudsdkelb.v3.model.list_logtanks_response import ListLogtanksResponse
+from huaweicloudsdkelb.v3.model.list_master_slave_pools_request import ListMasterSlavePoolsRequest
+from huaweicloudsdkelb.v3.model.list_master_slave_pools_response import ListMasterSlavePoolsResponse
 from huaweicloudsdkelb.v3.model.list_members_request import ListMembersRequest
 from huaweicloudsdkelb.v3.model.list_members_response import ListMembersResponse
 from huaweicloudsdkelb.v3.model.list_pools_request import ListPoolsRequest
@@ -170,6 +186,7 @@ from huaweicloudsdkelb.v3.model.list_system_security_policies_response import Li
 from huaweicloudsdkelb.v3.model.listener import Listener
 from huaweicloudsdkelb.v3.model.listener_insert_headers import ListenerInsertHeaders
 from huaweicloudsdkelb.v3.model.listener_ip_group import ListenerIpGroup
+from huaweicloudsdkelb.v3.model.listener_member_info import ListenerMemberInfo
 from huaweicloudsdkelb.v3.model.listener_quic_config import ListenerQuicConfig
 from huaweicloudsdkelb.v3.model.listener_ref import ListenerRef
 from huaweicloudsdkelb.v3.model.load_balancer import LoadBalancer
@@ -183,6 +200,9 @@ from huaweicloudsdkelb.v3.model.load_balancer_status_policy import LoadBalancerS
 from huaweicloudsdkelb.v3.model.load_balancer_status_pool import LoadBalancerStatusPool
 from huaweicloudsdkelb.v3.model.load_balancer_status_result import LoadBalancerStatusResult
 from huaweicloudsdkelb.v3.model.logtank import Logtank
+from huaweicloudsdkelb.v3.model.master_slave_health_monitor import MasterSlaveHealthMonitor
+from huaweicloudsdkelb.v3.model.master_slave_member import MasterSlaveMember
+from huaweicloudsdkelb.v3.model.master_slave_pool import MasterSlavePool
 from huaweicloudsdkelb.v3.model.member import Member
 from huaweicloudsdkelb.v3.model.member_ref import MemberRef
 from huaweicloudsdkelb.v3.model.member_status import MemberStatus
@@ -225,6 +245,8 @@ from huaweicloudsdkelb.v3.model.show_load_balancer_status_request import ShowLoa
 from huaweicloudsdkelb.v3.model.show_load_balancer_status_response import ShowLoadBalancerStatusResponse
 from huaweicloudsdkelb.v3.model.show_logtank_request import ShowLogtankRequest
 from huaweicloudsdkelb.v3.model.show_logtank_response import ShowLogtankResponse
+from huaweicloudsdkelb.v3.model.show_master_slave_pool_request import ShowMasterSlavePoolRequest
+from huaweicloudsdkelb.v3.model.show_master_slave_pool_response import ShowMasterSlavePoolResponse
 from huaweicloudsdkelb.v3.model.show_member_request import ShowMemberRequest
 from huaweicloudsdkelb.v3.model.show_member_response import ShowMemberResponse
 from huaweicloudsdkelb.v3.model.show_pool_request import ShowPoolRequest

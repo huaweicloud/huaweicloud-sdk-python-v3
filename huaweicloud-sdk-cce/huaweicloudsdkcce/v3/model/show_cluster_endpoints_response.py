@@ -19,7 +19,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
 
     openapi_types = {
         'metadata': 'Metadata',
-        'spec': 'OpenAPIResponseSpec',
+        'spec': 'OpenAPISpec',
         'status': 'MasterEIPResponseStatus'
     }
 
@@ -37,7 +37,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
         :param spec: 
-        :type spec: :class:`huaweicloudsdkcce.v3.OpenAPIResponseSpec`
+        :type spec: :class:`huaweicloudsdkcce.v3.OpenAPISpec`
         :param status: 
         :type status: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`
         """
@@ -79,7 +79,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
         """Gets the spec of this ShowClusterEndpointsResponse.
 
         :return: The spec of this ShowClusterEndpointsResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.OpenAPIResponseSpec`
+        :rtype: :class:`huaweicloudsdkcce.v3.OpenAPISpec`
         """
         return self._spec
 
@@ -88,7 +88,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
         """Sets the spec of this ShowClusterEndpointsResponse.
 
         :param spec: The spec of this ShowClusterEndpointsResponse.
-        :type spec: :class:`huaweicloudsdkcce.v3.OpenAPIResponseSpec`
+        :type spec: :class:`huaweicloudsdkcce.v3.OpenAPISpec`
         """
         self._spec = spec
 

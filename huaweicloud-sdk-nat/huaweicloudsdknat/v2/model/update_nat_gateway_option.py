@@ -37,7 +37,7 @@ class UpdateNatGatewayOption:
 
         :param name: 公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
         :type name: str
-        :param description: 公网NAT网关的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
+        :param description: 公网NAT网关的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param spec: 公网NAT网关的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 
         :type spec: str
@@ -88,7 +88,7 @@ class UpdateNatGatewayOption:
     def description(self):
         """Gets the description of this UpdateNatGatewayOption.
 
-        公网NAT网关的描述，长度范围小于等于255个字符，不能包含<>
+        公网NAT网关的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :return: The description of this UpdateNatGatewayOption.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateNatGatewayOption:
     def description(self, description):
         """Sets the description of this UpdateNatGatewayOption.
 
-        公网NAT网关的描述，长度范围小于等于255个字符，不能包含<>
+        公网NAT网关的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
         :param description: The description of this UpdateNatGatewayOption.
         :type description: str

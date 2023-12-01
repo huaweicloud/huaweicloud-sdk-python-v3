@@ -35,7 +35,7 @@ class StorageGroups:
 
         The model defined in huaweicloud sdk
 
-        :param name: storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。
+        :param name: storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。 &gt; - 当cceManaged&#x3D;ture时，name必须为：vgpass。 &gt; - 当数据盘作为临时存储卷时：name必须为：vg-everest-localvolume-ephemeral。 &gt; - 当数据盘作为持久存储卷时：name必须为：vg-everest-localvolume-persistent。 
         :type name: str
         :param cce_managed: k8s及runtime所属存储空间。有且仅有一个group被设置为true，不填默认false。
         :type cce_managed: bool
@@ -63,7 +63,7 @@ class StorageGroups:
     def name(self):
         """Gets the name of this StorageGroups.
 
-        storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。
+        storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。 > - 当cceManaged=ture时，name必须为：vgpass。 > - 当数据盘作为临时存储卷时：name必须为：vg-everest-localvolume-ephemeral。 > - 当数据盘作为持久存储卷时：name必须为：vg-everest-localvolume-persistent。 
 
         :return: The name of this StorageGroups.
         :rtype: str
@@ -74,7 +74,7 @@ class StorageGroups:
     def name(self, name):
         """Sets the name of this StorageGroups.
 
-        storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。
+        storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。 > - 当cceManaged=ture时，name必须为：vgpass。 > - 当数据盘作为临时存储卷时：name必须为：vg-everest-localvolume-ephemeral。 > - 当数据盘作为持久存储卷时：name必须为：vg-everest-localvolume-persistent。 
 
         :param name: The name of this StorageGroups.
         :type name: str

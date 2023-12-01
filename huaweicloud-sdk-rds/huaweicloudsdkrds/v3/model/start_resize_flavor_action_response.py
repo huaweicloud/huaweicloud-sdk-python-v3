@@ -18,35 +18,42 @@ class StartResizeFlavorActionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'job_id': 'str',
+        'order_id': 'str'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, job_id=None, order_id=None):
         """StartResizeFlavorActionResponse
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID。
+        :param job_id: 规格变更的任务id。 仅规格变更按需实例时会返回该参数。
         :type job_id: str
+        :param order_id: 订单号，规格变更包年包月时返回该参数。
+        :type order_id: str
         """
         
         super(StartResizeFlavorActionResponse, self).__init__()
 
         self._job_id = None
+        self._order_id = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def job_id(self):
         """Gets the job_id of this StartResizeFlavorActionResponse.
 
-        任务ID。
+        规格变更的任务id。 仅规格变更按需实例时会返回该参数。
 
         :return: The job_id of this StartResizeFlavorActionResponse.
         :rtype: str
@@ -57,12 +64,34 @@ class StartResizeFlavorActionResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this StartResizeFlavorActionResponse.
 
-        任务ID。
+        规格变更的任务id。 仅规格变更按需实例时会返回该参数。
 
         :param job_id: The job_id of this StartResizeFlavorActionResponse.
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this StartResizeFlavorActionResponse.
+
+        订单号，规格变更包年包月时返回该参数。
+
+        :return: The order_id of this StartResizeFlavorActionResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this StartResizeFlavorActionResponse.
+
+        订单号，规格变更包年包月时返回该参数。
+
+        :param order_id: The order_id of this StartResizeFlavorActionResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

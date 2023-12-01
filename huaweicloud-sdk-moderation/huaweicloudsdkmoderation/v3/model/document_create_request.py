@@ -43,7 +43,7 @@ class DocumentCreateRequest:
 
         :param data: 
         :type data: :class:`huaweicloudsdkmoderation.v3.DocumentCreateRequestData`
-        :param event_type: 事件类型，可选值如下： default：默认事件
+        :param event_type: 事件类型，可选值如下： default：默认事件 liberal_arts_education：文科教育 sciences_education：理科教育 news：新闻 forums：论坛 novels：小说
         :type event_type: str
         :param image_categories: 文档中图片需要检测的风险类型，不传或为空时表示不审核图片内容， 可取值如下： politics: 涉政检测 porn：涉黄检测 terrorism: 暴恐检测 bad_scene: 不良场景检测 image_text: 图文检测
         :type image_categories: list[str]
@@ -103,7 +103,7 @@ class DocumentCreateRequest:
     def event_type(self):
         """Gets the event_type of this DocumentCreateRequest.
 
-        事件类型，可选值如下： default：默认事件
+        事件类型，可选值如下： default：默认事件 liberal_arts_education：文科教育 sciences_education：理科教育 news：新闻 forums：论坛 novels：小说
 
         :return: The event_type of this DocumentCreateRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class DocumentCreateRequest:
     def event_type(self, event_type):
         """Sets the event_type of this DocumentCreateRequest.
 
-        事件类型，可选值如下： default：默认事件
+        事件类型，可选值如下： default：默认事件 liberal_arts_education：文科教育 sciences_education：理科教育 news：新闻 forums：论坛 novels：小说
 
         :param event_type: The event_type of this DocumentCreateRequest.
         :type event_type: str

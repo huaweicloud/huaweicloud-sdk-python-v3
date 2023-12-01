@@ -38,22 +38,22 @@ class SubCustomerMonthlyBillDetail:
         'resource_tag': 'str',
         'consume_time': 'str',
         'usage_type': 'str',
-        'usage_amount': 'float',
+        'usage_amount': 'decimal.Decimal',
         'usage_measure_id': 'int',
-        'free_resource_usage': 'float',
+        'free_resource_usage': 'decimal.Decimal',
         'free_resource_measure_id': 'int',
-        'ri_usage': 'float',
+        'ri_usage': 'decimal.Decimal',
         'ri_usage_measure_id': 'int',
-        'official_amount': 'float',
-        'official_discount_amount': 'float',
-        'payment_amount': 'float',
-        'cash_amount': 'float',
-        'credit_amount': 'float',
-        'coupon_amount': 'float',
-        'flexipurchase_coupon_amount': 'float',
-        'stored_value_card_amount': 'float',
-        'debt_amount': 'float',
-        'writeoff_amount': 'float',
+        'official_amount': 'decimal.Decimal',
+        'official_discount_amount': 'decimal.Decimal',
+        'payment_amount': 'decimal.Decimal',
+        'cash_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'flexipurchase_coupon_amount': 'decimal.Decimal',
+        'stored_value_card_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'writeoff_amount': 'decimal.Decimal',
         'period_type': 'int',
         'account_manager_id': 'str',
         'partner_id': 'str',
@@ -164,37 +164,37 @@ class SubCustomerMonthlyBillDetail:
         :param usage_type: 资源使用量的类型，您可以调用查询使用量类型列表接口获取。
         :type usage_type: str
         :param usage_amount: 资源的使用量。
-        :type usage_amount: float
+        :type usage_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param usage_measure_id: 资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
         :type usage_measure_id: int
         :param free_resource_usage: 套餐内使用量。
-        :type free_resource_usage: float
+        :type free_resource_usage: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param free_resource_measure_id: 套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
         :type free_resource_measure_id: int
         :param ri_usage: 预留实例使用量。
-        :type ri_usage: float
+        :type ri_usage: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param ri_usage_measure_id: 预留实例使用量单位。
         :type ri_usage_measure_id: int
         :param official_amount: 官网价。
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param official_discount_amount: 对应官网价折扣金额。
-        :type official_discount_amount: float
+        :type official_discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param payment_amount: 应付金额。
-        :type payment_amount: float
+        :type payment_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param cash_amount: 现金支付金额。
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param credit_amount: 信用额度支付金额。
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param coupon_amount: 代金券支付金额。
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param flexipurchase_coupon_amount: 现金券支付金额。
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param stored_value_card_amount: 储值卡支付金额。
-        :type stored_value_card_amount: float
+        :type stored_value_card_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param debt_amount: 欠费金额。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param writeoff_amount: 欠费核销金额。
-        :type writeoff_amount: float
+        :type writeoff_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param period_type: 周期类型： 19：年20：月24：天25：小时5：一次性
         :type period_type: int
         :param account_manager_id: 客户经理标识。
@@ -832,7 +832,7 @@ class SubCustomerMonthlyBillDetail:
         资源的使用量。
 
         :return: The usage_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._usage_amount
 
@@ -843,7 +843,7 @@ class SubCustomerMonthlyBillDetail:
         资源的使用量。
 
         :param usage_amount: The usage_amount of this SubCustomerMonthlyBillDetail.
-        :type usage_amount: float
+        :type usage_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._usage_amount = usage_amount
 
@@ -876,7 +876,7 @@ class SubCustomerMonthlyBillDetail:
         套餐内使用量。
 
         :return: The free_resource_usage of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._free_resource_usage
 
@@ -887,7 +887,7 @@ class SubCustomerMonthlyBillDetail:
         套餐内使用量。
 
         :param free_resource_usage: The free_resource_usage of this SubCustomerMonthlyBillDetail.
-        :type free_resource_usage: float
+        :type free_resource_usage: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._free_resource_usage = free_resource_usage
 
@@ -920,7 +920,7 @@ class SubCustomerMonthlyBillDetail:
         预留实例使用量。
 
         :return: The ri_usage of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._ri_usage
 
@@ -931,7 +931,7 @@ class SubCustomerMonthlyBillDetail:
         预留实例使用量。
 
         :param ri_usage: The ri_usage of this SubCustomerMonthlyBillDetail.
-        :type ri_usage: float
+        :type ri_usage: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._ri_usage = ri_usage
 
@@ -964,7 +964,7 @@ class SubCustomerMonthlyBillDetail:
         官网价。
 
         :return: The official_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._official_amount
 
@@ -975,7 +975,7 @@ class SubCustomerMonthlyBillDetail:
         官网价。
 
         :param official_amount: The official_amount of this SubCustomerMonthlyBillDetail.
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._official_amount = official_amount
 
@@ -986,7 +986,7 @@ class SubCustomerMonthlyBillDetail:
         对应官网价折扣金额。
 
         :return: The official_discount_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._official_discount_amount
 
@@ -997,7 +997,7 @@ class SubCustomerMonthlyBillDetail:
         对应官网价折扣金额。
 
         :param official_discount_amount: The official_discount_amount of this SubCustomerMonthlyBillDetail.
-        :type official_discount_amount: float
+        :type official_discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._official_discount_amount = official_discount_amount
 
@@ -1008,7 +1008,7 @@ class SubCustomerMonthlyBillDetail:
         应付金额。
 
         :return: The payment_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._payment_amount
 
@@ -1019,7 +1019,7 @@ class SubCustomerMonthlyBillDetail:
         应付金额。
 
         :param payment_amount: The payment_amount of this SubCustomerMonthlyBillDetail.
-        :type payment_amount: float
+        :type payment_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._payment_amount = payment_amount
 
@@ -1030,7 +1030,7 @@ class SubCustomerMonthlyBillDetail:
         现金支付金额。
 
         :return: The cash_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._cash_amount
 
@@ -1041,7 +1041,7 @@ class SubCustomerMonthlyBillDetail:
         现金支付金额。
 
         :param cash_amount: The cash_amount of this SubCustomerMonthlyBillDetail.
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._cash_amount = cash_amount
 
@@ -1052,7 +1052,7 @@ class SubCustomerMonthlyBillDetail:
         信用额度支付金额。
 
         :return: The credit_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._credit_amount
 
@@ -1063,7 +1063,7 @@ class SubCustomerMonthlyBillDetail:
         信用额度支付金额。
 
         :param credit_amount: The credit_amount of this SubCustomerMonthlyBillDetail.
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._credit_amount = credit_amount
 
@@ -1074,7 +1074,7 @@ class SubCustomerMonthlyBillDetail:
         代金券支付金额。
 
         :return: The coupon_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._coupon_amount
 
@@ -1085,7 +1085,7 @@ class SubCustomerMonthlyBillDetail:
         代金券支付金额。
 
         :param coupon_amount: The coupon_amount of this SubCustomerMonthlyBillDetail.
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._coupon_amount = coupon_amount
 
@@ -1096,7 +1096,7 @@ class SubCustomerMonthlyBillDetail:
         现金券支付金额。
 
         :return: The flexipurchase_coupon_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._flexipurchase_coupon_amount
 
@@ -1107,7 +1107,7 @@ class SubCustomerMonthlyBillDetail:
         现金券支付金额。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this SubCustomerMonthlyBillDetail.
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -1118,7 +1118,7 @@ class SubCustomerMonthlyBillDetail:
         储值卡支付金额。
 
         :return: The stored_value_card_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._stored_value_card_amount
 
@@ -1129,7 +1129,7 @@ class SubCustomerMonthlyBillDetail:
         储值卡支付金额。
 
         :param stored_value_card_amount: The stored_value_card_amount of this SubCustomerMonthlyBillDetail.
-        :type stored_value_card_amount: float
+        :type stored_value_card_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._stored_value_card_amount = stored_value_card_amount
 
@@ -1140,7 +1140,7 @@ class SubCustomerMonthlyBillDetail:
         欠费金额。
 
         :return: The debt_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -1151,7 +1151,7 @@ class SubCustomerMonthlyBillDetail:
         欠费金额。
 
         :param debt_amount: The debt_amount of this SubCustomerMonthlyBillDetail.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 
@@ -1162,7 +1162,7 @@ class SubCustomerMonthlyBillDetail:
         欠费核销金额。
 
         :return: The writeoff_amount of this SubCustomerMonthlyBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._writeoff_amount
 
@@ -1173,7 +1173,7 @@ class SubCustomerMonthlyBillDetail:
         欠费核销金额。
 
         :param writeoff_amount: The writeoff_amount of this SubCustomerMonthlyBillDetail.
-        :type writeoff_amount: float
+        :type writeoff_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._writeoff_amount = writeoff_amount
 

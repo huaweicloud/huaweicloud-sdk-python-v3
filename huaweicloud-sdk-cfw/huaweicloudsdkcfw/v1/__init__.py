@@ -23,6 +23,8 @@ from huaweicloudsdkcfw.v1.model.add_domain_set_request import AddDomainSetReques
 from huaweicloudsdkcfw.v1.model.add_domain_set_response import AddDomainSetResponse
 from huaweicloudsdkcfw.v1.model.add_domains_request import AddDomainsRequest
 from huaweicloudsdkcfw.v1.model.add_domains_response import AddDomainsResponse
+from huaweicloudsdkcfw.v1.model.add_log_config_request import AddLogConfigRequest
+from huaweicloudsdkcfw.v1.model.add_log_config_response import AddLogConfigResponse
 from huaweicloudsdkcfw.v1.model.add_rule_acl_dto import AddRuleAclDto
 from huaweicloudsdkcfw.v1.model.add_rule_acl_dto_rules import AddRuleAclDtoRules
 from huaweicloudsdkcfw.v1.model.add_service_items_request import AddServiceItemsRequest
@@ -63,6 +65,9 @@ from huaweicloudsdkcfw.v1.model.change_protect_status_request_body import Change
 from huaweicloudsdkcfw.v1.model.clear_access_log_rule_hit_counts_dto import ClearAccessLogRuleHitCountsDto
 from huaweicloudsdkcfw.v1.model.common_response_dto_data import CommonResponseDTOData
 from huaweicloudsdkcfw.v1.model.covered_ipvo import CoveredIPVO
+from huaweicloudsdkcfw.v1.model.create_east_west_firewall_request import CreateEastWestFirewallRequest
+from huaweicloudsdkcfw.v1.model.create_east_west_firewall_request_body import CreateEastWestFirewallRequestBody
+from huaweicloudsdkcfw.v1.model.create_east_west_firewall_response import CreateEastWestFirewallResponse
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_hit_count_request import DeleteAclRuleHitCountRequest
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_hit_count_response import DeleteAclRuleHitCountResponse
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_request import DeleteAclRuleRequest
@@ -160,6 +165,8 @@ from huaweicloudsdkcfw.v1.model.list_ips_protect_mode_request import ListIpsProt
 from huaweicloudsdkcfw.v1.model.list_ips_protect_mode_response import ListIpsProtectModeResponse
 from huaweicloudsdkcfw.v1.model.list_ips_switch_status_request import ListIpsSwitchStatusRequest
 from huaweicloudsdkcfw.v1.model.list_ips_switch_status_response import ListIpsSwitchStatusResponse
+from huaweicloudsdkcfw.v1.model.list_log_config_request import ListLogConfigRequest
+from huaweicloudsdkcfw.v1.model.list_log_config_response import ListLogConfigResponse
 from huaweicloudsdkcfw.v1.model.list_protected_vpcs_request import ListProtectedVpcsRequest
 from huaweicloudsdkcfw.v1.model.list_protected_vpcs_response import ListProtectedVpcsResponse
 from huaweicloudsdkcfw.v1.model.list_rule_acl_tags_request import ListRuleAclTagsRequest
@@ -171,8 +178,8 @@ from huaweicloudsdkcfw.v1.model.list_service_set_detail_request import ListServi
 from huaweicloudsdkcfw.v1.model.list_service_set_detail_response import ListServiceSetDetailResponse
 from huaweicloudsdkcfw.v1.model.list_service_sets_request import ListServiceSetsRequest
 from huaweicloudsdkcfw.v1.model.list_service_sets_response import ListServiceSetsResponse
+from huaweicloudsdkcfw.v1.model.log_config_dto import LogConfigDto
 from huaweicloudsdkcfw.v1.model.order_rule_acl_dto import OrderRuleAclDto
-from huaweicloudsdkcfw.v1.model.packet import Packet
 from huaweicloudsdkcfw.v1.model.packet_message import PacketMessage
 from huaweicloudsdkcfw.v1.model.protect_object_vo import ProtectObjectVO
 from huaweicloudsdkcfw.v1.model.query_fire_wall_instance_dto import QueryFireWallInstanceDto
@@ -213,6 +220,8 @@ from huaweicloudsdkcfw.v1.model.update_dns_servers_response import UpdateDnsServ
 from huaweicloudsdkcfw.v1.model.update_domain_set_info_dto import UpdateDomainSetInfoDto
 from huaweicloudsdkcfw.v1.model.update_domain_set_request import UpdateDomainSetRequest
 from huaweicloudsdkcfw.v1.model.update_domain_set_response import UpdateDomainSetResponse
+from huaweicloudsdkcfw.v1.model.update_log_config_request import UpdateLogConfigRequest
+from huaweicloudsdkcfw.v1.model.update_log_config_response import UpdateLogConfigResponse
 from huaweicloudsdkcfw.v1.model.update_rule_acl_dto import UpdateRuleAclDto
 from huaweicloudsdkcfw.v1.model.update_security_polcies_action_dto import UpdateSecurityPolciesActionDto
 from huaweicloudsdkcfw.v1.model.update_service_set_request import UpdateServiceSetRequest

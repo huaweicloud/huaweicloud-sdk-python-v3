@@ -24,10 +24,10 @@ class EngineExternalEntrypoint:
     }
 
     attribute_map = {
-        'external_address': 'external_address',
-        'public_address': 'public_address',
-        'service_endpoint': 'service_endpoint',
-        'public_service_endpoint': 'public_service_endpoint'
+        'external_address': 'externalAddress',
+        'public_address': 'publicAddress',
+        'service_endpoint': 'serviceEndpoint',
+        'public_service_endpoint': 'publicServiceEndpoint'
     }
 
     def __init__(self, external_address=None, public_address=None, service_endpoint=None, public_service_endpoint=None):

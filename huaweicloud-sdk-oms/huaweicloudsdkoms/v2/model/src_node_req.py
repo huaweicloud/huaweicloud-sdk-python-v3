@@ -45,7 +45,7 @@ class SrcNodeReq:
 
         The model defined in huaweicloud sdk
 
-        :param cloud_type: 源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        :param cloud_type: 源端云服务提供商，task_type为非url_list时，本参数为URLSource且必选。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
         :type cloud_type: str
         :param region: 源端桶所处的区域，task_type为非url_list时，本参数为必选。
         :type region: str
@@ -101,7 +101,7 @@ class SrcNodeReq:
     def cloud_type(self):
         """Gets the cloud_type of this SrcNodeReq.
 
-        源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商，task_type为非url_list时，本参数为URLSource且必选。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
         :return: The cloud_type of this SrcNodeReq.
         :rtype: str
@@ -112,7 +112,7 @@ class SrcNodeReq:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this SrcNodeReq.
 
-        源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商，task_type为非url_list时，本参数为URLSource且必选。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
         :param cloud_type: The cloud_type of this SrcNodeReq.
         :type cloud_type: str
