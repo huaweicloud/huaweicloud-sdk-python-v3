@@ -19,6 +19,7 @@ class KafkaConnectionDetail:
     openapi_types = {
         'instance_id': 'str',
         'addr': 'str',
+        'security_protocol': 'str',
         'sasl_ssl': 'bool',
         'username': 'str',
         'password': 'str',
@@ -28,13 +29,14 @@ class KafkaConnectionDetail:
     attribute_map = {
         'instance_id': 'instance_id',
         'addr': 'addr',
+        'security_protocol': 'security_protocol',
         'sasl_ssl': 'sasl_ssl',
         'username': 'username',
         'password': 'password',
         'acks': 'acks'
     }
 
-    def __init__(self, instance_id=None, addr=None, sasl_ssl=None, username=None, password=None, acks=None):
+    def __init__(self, instance_id=None, addr=None, security_protocol=None, sasl_ssl=None, username=None, password=None, acks=None):
         """KafkaConnectionDetail
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class KafkaConnectionDetail:
         :type instance_id: str
         :param addr: kafka连接地址。
         :type addr: str
+        :param security_protocol: 安全协议。
+        :type security_protocol: str
         :param sasl_ssl: kafka实例是否开启了SASL_SSL。
         :type sasl_ssl: bool
         :param username: kafka实例用户名。实例开启了SASL_SSL时必填
@@ -57,6 +61,7 @@ class KafkaConnectionDetail:
 
         self._instance_id = None
         self._addr = None
+        self._security_protocol = None
         self._sasl_ssl = None
         self._username = None
         self._password = None
@@ -65,6 +70,8 @@ class KafkaConnectionDetail:
 
         self.instance_id = instance_id
         self.addr = addr
+        if security_protocol is not None:
+            self.security_protocol = security_protocol
         self.sasl_ssl = sasl_ssl
         if username is not None:
             self.username = username
@@ -116,6 +123,28 @@ class KafkaConnectionDetail:
         :type addr: str
         """
         self._addr = addr
+
+    @property
+    def security_protocol(self):
+        """Gets the security_protocol of this KafkaConnectionDetail.
+
+        安全协议。
+
+        :return: The security_protocol of this KafkaConnectionDetail.
+        :rtype: str
+        """
+        return self._security_protocol
+
+    @security_protocol.setter
+    def security_protocol(self, security_protocol):
+        """Sets the security_protocol of this KafkaConnectionDetail.
+
+        安全协议。
+
+        :param security_protocol: The security_protocol of this KafkaConnectionDetail.
+        :type security_protocol: str
+        """
+        self._security_protocol = security_protocol
 
     @property
     def sasl_ssl(self):

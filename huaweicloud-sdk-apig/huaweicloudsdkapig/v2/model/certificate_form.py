@@ -39,7 +39,7 @@ class CertificateForm:
 
         The model defined in huaweicloud sdk
 
-        :param name: 证书名称
+        :param name: 证书名称。支持中文，英文字母，数字，下划线，且只能以英文或汉字开头，4~50个字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type name: str
         :param cert_content: 证书内容
         :type cert_content: str
@@ -77,7 +77,7 @@ class CertificateForm:
     def name(self):
         """Gets the name of this CertificateForm.
 
-        证书名称
+        证书名称。支持中文，英文字母，数字，下划线，且只能以英文或汉字开头，4~50个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The name of this CertificateForm.
         :rtype: str
@@ -88,7 +88,7 @@ class CertificateForm:
     def name(self, name):
         """Sets the name of this CertificateForm.
 
-        证书名称
+        证书名称。支持中文，英文字母，数字，下划线，且只能以英文或汉字开头，4~50个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this CertificateForm.
         :type name: str

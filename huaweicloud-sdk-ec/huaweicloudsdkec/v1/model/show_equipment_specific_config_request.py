@@ -17,50 +17,50 @@ class ShowEquipmentSpecificConfigRequest:
     sensitive_list = []
 
     openapi_types = {
-        'equipment_type': 'str'
+        'equipment_id': 'str'
     }
 
     attribute_map = {
-        'equipment_type': 'equipment_type'
+        'equipment_id': 'equipment_id'
     }
 
-    def __init__(self, equipment_type=None):
+    def __init__(self, equipment_id=None):
         """ShowEquipmentSpecificConfigRequest
 
         The model defined in huaweicloud sdk
 
-        :param equipment_type: 设备类型
-        :type equipment_type: str
+        :param equipment_id: 智能企业网关设备ID
+        :type equipment_id: str
         """
         
         
 
-        self._equipment_type = None
+        self._equipment_id = None
         self.discriminator = None
 
-        self.equipment_type = equipment_type
+        self.equipment_id = equipment_id
 
     @property
-    def equipment_type(self):
-        """Gets the equipment_type of this ShowEquipmentSpecificConfigRequest.
+    def equipment_id(self):
+        """Gets the equipment_id of this ShowEquipmentSpecificConfigRequest.
 
-        设备类型
+        智能企业网关设备ID
 
-        :return: The equipment_type of this ShowEquipmentSpecificConfigRequest.
+        :return: The equipment_id of this ShowEquipmentSpecificConfigRequest.
         :rtype: str
         """
-        return self._equipment_type
+        return self._equipment_id
 
-    @equipment_type.setter
-    def equipment_type(self, equipment_type):
-        """Sets the equipment_type of this ShowEquipmentSpecificConfigRequest.
+    @equipment_id.setter
+    def equipment_id(self, equipment_id):
+        """Sets the equipment_id of this ShowEquipmentSpecificConfigRequest.
 
-        设备类型
+        智能企业网关设备ID
 
-        :param equipment_type: The equipment_type of this ShowEquipmentSpecificConfigRequest.
-        :type equipment_type: str
+        :param equipment_id: The equipment_id of this ShowEquipmentSpecificConfigRequest.
+        :type equipment_id: str
         """
-        self._equipment_type = equipment_type
+        self._equipment_id = equipment_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

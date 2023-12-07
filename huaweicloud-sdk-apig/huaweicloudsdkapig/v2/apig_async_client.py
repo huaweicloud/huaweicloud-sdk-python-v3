@@ -8711,7 +8711,7 @@ class ApigAsyncClient(Client):
     def create_acl_strategy_v2_async(self, request):
         """创建ACL策略
 
-        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\&quot;之类的网络域名。
+        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com”之类的网络域名。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9308,6 +9308,73 @@ class ApigAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'api_id' in local_var_params:
             path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_api_groups_v2_async(self, request):
+        """校验API分组名称是否存在
+
+        校验API分组名称是否存在。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckApiGroupsV2
+        :type request: :class:`huaweicloudsdkapig.v2.CheckApiGroupsV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.CheckApiGroupsV2Response`
+        """
+        http_info = self._check_api_groups_v2_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_api_groups_v2_async_invoker(self, request):
+        http_info = self._check_api_groups_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_api_groups_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckApiGroupsV2Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -9962,7 +10029,7 @@ class ApigAsyncClient(Client):
 
         查询API分组列表。
         
-        如果是租户操作，则查询该租户下所有的分组；如果是管理员权限帐号操作，则查询的是所有租户的分组。
+        如果是租户操作，则查询该租户下所有的分组；如果是管理员权限账号操作，则查询的是所有租户的分组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10412,7 +10479,7 @@ class ApigAsyncClient(Client):
     def list_apis_v2_async(self, request):
         """查询API列表
 
-        查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息。
+        查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息和API请求参数信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10473,6 +10540,8 @@ class ApigAsyncClient(Client):
             query_params.append(('precise_search', local_var_params['precise_search']))
         if 'vpc_channel_name' in local_var_params:
             query_params.append(('vpc_channel_name', local_var_params['vpc_channel_name']))
+        if 'return_data_mode' in local_var_params:
+            query_params.append(('return_data_mode', local_var_params['return_data_mode']))
 
         header_params = {}
 

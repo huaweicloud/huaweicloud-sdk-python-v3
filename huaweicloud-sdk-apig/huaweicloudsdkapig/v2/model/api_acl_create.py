@@ -39,9 +39,9 @@ class ApiAclCreate:
         :type acl_name: str
         :param acl_type: 类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
         :type acl_type: str
-        :param acl_value: ACL策略值，支持一个或多个值，使用英文半角逗号分隔。 - entity_type为IP时，策略值需填写IP地址，最多可支持100个IP地址。 - entity_type为DOMAIN时，策略值需填写账号名，账号支持除英文半角逗号以外的任意ASCII字符，帐号名长度限制在1-64个字符，不支持纯数字。多帐号名字符的总长度不超过1024。 - entity_type为DOMAIN_ID时，策略值需填写账号ID，获取方式请参见API参考的“附录 &gt; 获取帐号ID”章节。 
+        :param acl_value: ACL策略值，支持一个或多个值，使用英文半角逗号分隔。 - entity_type为IP时，策略值需填写IP地址，最多可支持100个IP地址。 - entity_type为DOMAIN时，策略值需填写账号名，账号支持除英文半角逗号以外的任意ASCII字符，账号名长度限制在1-64个字符，不支持纯数字。多账号名字符的总长度不超过1024。 - entity_type为DOMAIN_ID时，策略值需填写账号ID，获取方式请参见API参考的“附录 &gt; 获取账号ID”章节。 
         :type acl_value: str
-        :param entity_type: 对象类型： - IP：IP地址 - DOMAIN：帐号名 - DOMAIN_ID：帐号ID
+        :param entity_type: 对象类型： - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID
         :type entity_type: str
         """
         
@@ -106,7 +106,7 @@ class ApiAclCreate:
     def acl_value(self):
         """Gets the acl_value of this ApiAclCreate.
 
-        ACL策略值，支持一个或多个值，使用英文半角逗号分隔。 - entity_type为IP时，策略值需填写IP地址，最多可支持100个IP地址。 - entity_type为DOMAIN时，策略值需填写账号名，账号支持除英文半角逗号以外的任意ASCII字符，帐号名长度限制在1-64个字符，不支持纯数字。多帐号名字符的总长度不超过1024。 - entity_type为DOMAIN_ID时，策略值需填写账号ID，获取方式请参见API参考的“附录 > 获取帐号ID”章节。 
+        ACL策略值，支持一个或多个值，使用英文半角逗号分隔。 - entity_type为IP时，策略值需填写IP地址，最多可支持100个IP地址。 - entity_type为DOMAIN时，策略值需填写账号名，账号支持除英文半角逗号以外的任意ASCII字符，账号名长度限制在1-64个字符，不支持纯数字。多账号名字符的总长度不超过1024。 - entity_type为DOMAIN_ID时，策略值需填写账号ID，获取方式请参见API参考的“附录 > 获取账号ID”章节。 
 
         :return: The acl_value of this ApiAclCreate.
         :rtype: str
@@ -117,7 +117,7 @@ class ApiAclCreate:
     def acl_value(self, acl_value):
         """Sets the acl_value of this ApiAclCreate.
 
-        ACL策略值，支持一个或多个值，使用英文半角逗号分隔。 - entity_type为IP时，策略值需填写IP地址，最多可支持100个IP地址。 - entity_type为DOMAIN时，策略值需填写账号名，账号支持除英文半角逗号以外的任意ASCII字符，帐号名长度限制在1-64个字符，不支持纯数字。多帐号名字符的总长度不超过1024。 - entity_type为DOMAIN_ID时，策略值需填写账号ID，获取方式请参见API参考的“附录 > 获取帐号ID”章节。 
+        ACL策略值，支持一个或多个值，使用英文半角逗号分隔。 - entity_type为IP时，策略值需填写IP地址，最多可支持100个IP地址。 - entity_type为DOMAIN时，策略值需填写账号名，账号支持除英文半角逗号以外的任意ASCII字符，账号名长度限制在1-64个字符，不支持纯数字。多账号名字符的总长度不超过1024。 - entity_type为DOMAIN_ID时，策略值需填写账号ID，获取方式请参见API参考的“附录 > 获取账号ID”章节。 
 
         :param acl_value: The acl_value of this ApiAclCreate.
         :type acl_value: str
@@ -128,7 +128,7 @@ class ApiAclCreate:
     def entity_type(self):
         """Gets the entity_type of this ApiAclCreate.
 
-        对象类型： - IP：IP地址 - DOMAIN：帐号名 - DOMAIN_ID：帐号ID
+        对象类型： - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID
 
         :return: The entity_type of this ApiAclCreate.
         :rtype: str
@@ -139,7 +139,7 @@ class ApiAclCreate:
     def entity_type(self, entity_type):
         """Sets the entity_type of this ApiAclCreate.
 
-        对象类型： - IP：IP地址 - DOMAIN：帐号名 - DOMAIN_ID：帐号ID
+        对象类型： - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID
 
         :param entity_type: The entity_type of this ApiAclCreate.
         :type entity_type: str

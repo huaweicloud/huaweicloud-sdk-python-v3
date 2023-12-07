@@ -37,7 +37,7 @@ class BatchWindow:
         :type count: int
         :param time: 重试次数
         :type time: int
-        :param interval: 批量推送间隔[0,15](时间：秒)
+        :param interval: 批量推送间隔[0,15]，单位秒
         :type interval: int
         """
         
@@ -103,7 +103,7 @@ class BatchWindow:
     def interval(self):
         """Gets the interval of this BatchWindow.
 
-        批量推送间隔[0,15](时间：秒)
+        批量推送间隔[0,15]，单位秒
 
         :return: The interval of this BatchWindow.
         :rtype: int
@@ -114,7 +114,7 @@ class BatchWindow:
     def interval(self, interval):
         """Sets the interval of this BatchWindow.
 
-        批量推送间隔[0,15](时间：秒)
+        批量推送间隔[0,15]，单位秒
 
         :param interval: The interval of this BatchWindow.
         :type interval: int

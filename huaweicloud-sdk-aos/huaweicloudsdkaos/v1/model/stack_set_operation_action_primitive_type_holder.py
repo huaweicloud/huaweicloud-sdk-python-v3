@@ -29,7 +29,7 @@ class StackSetOperationActionPrimitiveTypeHolder:
 
         The model defined in huaweicloud sdk
 
-        :param action: 用户当前的操作   * &#x60;CREATE_STACK_INSTANCES&#x60; - 创建资源栈实例   * &#x60;DELETE_STACK_INSTANCES&#x60; - 删除资源栈实例   * &#x60;DEPLOY_STACK_SET&#x60; - 部署资源栈集   * &#x60;DEPLOY_STACK_INSTANCES&#x60; - 部署资源栈实例
+        :param action: 用户当前的操作   * &#x60;CREATE_STACK_INSTANCES&#x60; - 创建资源栈实例   * &#x60;DELETE_STACK_INSTANCES&#x60; - 删除资源栈实例   * &#x60;DEPLOY_STACK_SET&#x60; - 部署资源栈集   * &#x60;DEPLOY_STACK_INSTANCES&#x60; - 部署资源栈实例   * &#x60;UPDATE_STACK_INSTANCES&#x60; - 更新资源栈实例
         :type action: str
         """
         
@@ -45,7 +45,7 @@ class StackSetOperationActionPrimitiveTypeHolder:
     def action(self):
         """Gets the action of this StackSetOperationActionPrimitiveTypeHolder.
 
-        用户当前的操作   * `CREATE_STACK_INSTANCES` - 创建资源栈实例   * `DELETE_STACK_INSTANCES` - 删除资源栈实例   * `DEPLOY_STACK_SET` - 部署资源栈集   * `DEPLOY_STACK_INSTANCES` - 部署资源栈实例
+        用户当前的操作   * `CREATE_STACK_INSTANCES` - 创建资源栈实例   * `DELETE_STACK_INSTANCES` - 删除资源栈实例   * `DEPLOY_STACK_SET` - 部署资源栈集   * `DEPLOY_STACK_INSTANCES` - 部署资源栈实例   * `UPDATE_STACK_INSTANCES` - 更新资源栈实例
 
         :return: The action of this StackSetOperationActionPrimitiveTypeHolder.
         :rtype: str
@@ -56,7 +56,7 @@ class StackSetOperationActionPrimitiveTypeHolder:
     def action(self, action):
         """Sets the action of this StackSetOperationActionPrimitiveTypeHolder.
 
-        用户当前的操作   * `CREATE_STACK_INSTANCES` - 创建资源栈实例   * `DELETE_STACK_INSTANCES` - 删除资源栈实例   * `DEPLOY_STACK_SET` - 部署资源栈集   * `DEPLOY_STACK_INSTANCES` - 部署资源栈实例
+        用户当前的操作   * `CREATE_STACK_INSTANCES` - 创建资源栈实例   * `DELETE_STACK_INSTANCES` - 删除资源栈实例   * `DEPLOY_STACK_SET` - 部署资源栈集   * `DEPLOY_STACK_INSTANCES` - 部署资源栈实例   * `UPDATE_STACK_INSTANCES` - 更新资源栈实例
 
         :param action: The action of this StackSetOperationActionPrimitiveTypeHolder.
         :type action: str

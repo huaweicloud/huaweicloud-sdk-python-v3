@@ -25,6 +25,9 @@ from huaweicloudsdkcbh.v1.model.list_cbh_instance_request import ListCbhInstance
 from huaweicloudsdkcbh.v1.model.list_cbh_instance_response import ListCbhInstanceResponse
 from huaweicloudsdkcbh.v1.model.list_quota_status_request import ListQuotaStatusRequest
 from huaweicloudsdkcbh.v1.model.list_quota_status_response import ListQuotaStatusResponse
+from huaweicloudsdkcbh.v1.model.login_cbh_request import LoginCbhRequest
+from huaweicloudsdkcbh.v1.model.login_cbh_request_body import LoginCbhRequestBody
+from huaweicloudsdkcbh.v1.model.login_cbh_response import LoginCbhResponse
 from huaweicloudsdkcbh.v1.model.network_request_body import NetworkRequestBody
 from huaweicloudsdkcbh.v1.model.nics import Nics
 from huaweicloudsdkcbh.v1.model.operate_eip_request_body import OperateEipRequestBody

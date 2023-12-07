@@ -31,7 +31,7 @@ class ResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: 响应的HTTP状态码
+        :param status: 响应的HTTP状态码。范围为200-599，但不允许为444。
         :type status: int
         :param body: 响应的Body模板
         :type body: str
@@ -52,7 +52,7 @@ class ResponseInfo:
     def status(self):
         """Gets the status of this ResponseInfo.
 
-        响应的HTTP状态码
+        响应的HTTP状态码。范围为200-599，但不允许为444。
 
         :return: The status of this ResponseInfo.
         :rtype: int
@@ -63,7 +63,7 @@ class ResponseInfo:
     def status(self, status):
         """Sets the status of this ResponseInfo.
 
-        响应的HTTP状态码
+        响应的HTTP状态码。范围为200-599，但不允许为444。
 
         :param status: The status of this ResponseInfo.
         :type status: int

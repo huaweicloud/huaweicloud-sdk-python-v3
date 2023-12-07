@@ -24,7 +24,7 @@ class LogInstanceInfo:
         'datastore': 'InstancesDatastoreResult',
         'actions': 'list[str]',
         'enterprise_project_id': 'str',
-        'supported_log_types': 'str'
+        'supported_log_types': 'list[str]'
     }
 
     attribute_map = {
@@ -58,7 +58,7 @@ class LogInstanceInfo:
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param supported_log_types: 日志类型。slow_log表示慢日志，audit_log表示审计日志。
-        :type supported_log_types: str
+        :type supported_log_types: list[str]
         """
         
         
@@ -247,7 +247,7 @@ class LogInstanceInfo:
         日志类型。slow_log表示慢日志，audit_log表示审计日志。
 
         :return: The supported_log_types of this LogInstanceInfo.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._supported_log_types
 
@@ -258,7 +258,7 @@ class LogInstanceInfo:
         日志类型。slow_log表示慢日志，audit_log表示审计日志。
 
         :param supported_log_types: The supported_log_types of this LogInstanceInfo.
-        :type supported_log_types: str
+        :type supported_log_types: list[str]
         """
         self._supported_log_types = supported_log_types
 

@@ -114,10 +114,12 @@ class CodeArtsArtifactClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowReleaseProjectFilesRequest`
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowReleaseProjectFilesResponse`
         """
+        warnings.warn("Method 'show_release_project_files' of CodeArtsArtifactClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_release_project_files_http_info(request)
         return self._call_api(**http_info)
 
     def show_release_project_files_invoker(self, request):
+        warnings.warn("Method 'show_release_project_files_invoker' of CodeArtsArtifactClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_release_project_files_http_info(request)
         return SyncInvoker(self, http_info)
 

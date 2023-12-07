@@ -110,6 +110,7 @@ from huaweicloudsdkworkspace.v2.model.delete_user_response import DeleteUserResp
 from huaweicloudsdkworkspace.v2.model.delete_volumes_req import DeleteVolumesReq
 from huaweicloudsdkworkspace.v2.model.desktop import Desktop
 from huaweicloudsdkworkspace.v2.model.desktop_detail_info import DesktopDetailInfo
+from huaweicloudsdkworkspace.v2.model.desktop_subnet import DesktopSubnet
 from huaweicloudsdkworkspace.v2.model.desktop_tags_info import DesktopTagsInfo
 from huaweicloudsdkworkspace.v2.model.desktop_used_hours_info import DesktopUsedHoursInfo
 from huaweicloudsdkworkspace.v2.model.desktop_used_info import DesktopUsedInfo

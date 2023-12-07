@@ -1194,7 +1194,7 @@ class EcAsyncClient(Client):
     def _show_equipment_specific_config_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{domain_id}/enterprise-connect/equipment-specification/{equipment_type}",
+            "resource_path": "/v1/{domain_id}/enterprise-connect/equipment-specification/{equipment_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowEquipmentSpecificConfigResponse"
             }
@@ -1206,8 +1206,8 @@ class EcAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'equipment_type' in local_var_params:
-            path_params['equipment_type'] = local_var_params['equipment_type']
+        if 'equipment_id' in local_var_params:
+            path_params['equipment_id'] = local_var_params['equipment_id']
 
         query_params = []
 
@@ -2360,6 +2360,142 @@ class EcAsyncClient(Client):
             "resource_path": "/v1/{domain_id}/enterprise-connect/intelligent-enterprise-gateway/{ieg_id}/equipment/{equipment_id}/wan-interface",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateEquipmentWanConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ieg_id' in local_var_params:
+            path_params['ieg_id'] = local_var_params['ieg_id']
+        if 'equipment_id' in local_var_params:
+            path_params['equipment_id'] = local_var_params['equipment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_equipment_wlan_async(self, request):
+        """查询智能企业网关设备Wlan配置
+
+        查询智能企业网关设备Wlan配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEquipmentWlan
+        :type request: :class:`huaweicloudsdkec.v1.ShowEquipmentWlanRequest`
+        :rtype: :class:`huaweicloudsdkec.v1.ShowEquipmentWlanResponse`
+        """
+        http_info = self._show_equipment_wlan_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_equipment_wlan_async_invoker(self, request):
+        http_info = self._show_equipment_wlan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_equipment_wlan_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/enterprise-connect/intelligent-enterprise-gateway/{ieg_id}/equipment/{equipment_id}/wlan",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEquipmentWlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ieg_id' in local_var_params:
+            path_params['ieg_id'] = local_var_params['ieg_id']
+        if 'equipment_id' in local_var_params:
+            path_params['equipment_id'] = local_var_params['equipment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_equipment_wlan_async(self, request):
+        """配置智能企业网关设备Wlan
+
+        配置智能企业网关设备Wlan
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateEquipmentWlan
+        :type request: :class:`huaweicloudsdkec.v1.UpdateEquipmentWlanRequest`
+        :rtype: :class:`huaweicloudsdkec.v1.UpdateEquipmentWlanResponse`
+        """
+        http_info = self._update_equipment_wlan_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_equipment_wlan_async_invoker(self, request):
+        http_info = self._update_equipment_wlan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_equipment_wlan_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/enterprise-connect/intelligent-enterprise-gateway/{ieg_id}/equipment/{equipment_id}/wlan",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEquipmentWlanResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -253,10 +253,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.DownloadRegionCarrierExcelRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.DownloadRegionCarrierExcelResponse`
         """
+        warnings.warn("Method 'download_region_carrier_excel' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._download_region_carrier_excel_http_info(request)
         return self._call_api(**http_info)
 
     def download_region_carrier_excel_invoker(self, request):
+        warnings.warn("Method 'download_region_carrier_excel_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._download_region_carrier_excel_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -346,10 +348,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.DownloadStatisticsExcelRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.DownloadStatisticsExcelResponse`
         """
+        warnings.warn("Method 'download_statistics_excel' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._download_statistics_excel_http_info(request)
         return self._call_api(**http_info)
 
     def download_statistics_excel_invoker(self, request):
+        warnings.warn("Method 'download_statistics_excel_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._download_statistics_excel_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -591,10 +595,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowBandwidthCalcRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowBandwidthCalcResponse`
         """
+        warnings.warn("Method 'show_bandwidth_calc' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_bandwidth_calc_http_info(request)
         return self._call_api(**http_info)
 
     def show_bandwidth_calc_invoker(self, request):
+        warnings.warn("Method 'show_bandwidth_calc_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_bandwidth_calc_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1241,10 +1247,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowTopDomainNamesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowTopDomainNamesResponse`
         """
+        warnings.warn("Method 'show_top_domain_names' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_top_domain_names_http_info(request)
         return self._call_api(**http_info)
 
     def show_top_domain_names_invoker(self, request):
+        warnings.warn("Method 'show_top_domain_names_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_top_domain_names_http_info(request)
         return SyncInvoker(self, http_info)
 

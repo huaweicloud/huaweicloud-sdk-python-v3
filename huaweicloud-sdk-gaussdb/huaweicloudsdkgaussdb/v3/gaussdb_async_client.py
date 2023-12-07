@@ -2996,6 +2996,73 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def list_gauss_my_sql_instance_detail_info_unify_status_async(self, request):
+        """批量查询实例详情
+
+        批量查询实例详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGaussMySqlInstanceDetailInfoUnifyStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoUnifyStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoUnifyStatusResponse`
+        """
+        http_info = self._list_gauss_my_sql_instance_detail_info_unify_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_gauss_my_sql_instance_detail_info_unify_status_async_invoker(self, request):
+        http_info = self._list_gauss_my_sql_instance_detail_info_unify_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_gauss_my_sql_instance_detail_info_unify_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/instances/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlInstanceDetailInfoUnifyStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_ids' in local_var_params:
+            query_params.append(('instance_ids', local_var_params['instance_ids']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_gauss_my_sql_instances_async(self, request):
         """查询实例列表
 
@@ -3021,6 +3088,95 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances",
             "request_type": request.__class__.__name__,
             "response_type": "ListGaussMySqlInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'subnet_id' in local_var_params:
+            query_params.append(('subnet_id', local_var_params['subnet_id']))
+        if 'private_ip' in local_var_params:
+            query_params.append(('private_ip', local_var_params['private_ip']))
+        if 'readonly_private_ip' in local_var_params:
+            query_params.append(('readonly_private_ip', local_var_params['readonly_private_ip']))
+        if 'proxy_ip' in local_var_params:
+            query_params.append(('proxy_ip', local_var_params['proxy_ip']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_gauss_my_sql_instances_unify_status_async(self, request):
+        """查询实例列表
+
+        根据指定条件查询实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGaussMySqlInstancesUnifyStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesUnifyStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesUnifyStatusResponse`
+        """
+        http_info = self._list_gauss_my_sql_instances_unify_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_gauss_my_sql_instances_unify_status_async_invoker(self, request):
+        http_info = self._list_gauss_my_sql_instances_unify_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_gauss_my_sql_instances_unify_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlInstancesUnifyStatusResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5124,6 +5280,73 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def show_gauss_my_sql_instance_info_unify_status_async(self, request):
+        """查询实例详情信息
+
+        查询实例详情信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGaussMySqlInstanceInfoUnifyStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoUnifyStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoUnifyStatusResponse`
+        """
+        http_info = self._show_gauss_my_sql_instance_info_unify_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_gauss_my_sql_instance_info_unify_status_async_invoker(self, request):
+        http_info = self._show_gauss_my_sql_instance_info_unify_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_gauss_my_sql_instance_info_unify_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlInstanceInfoUnifyStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_gauss_my_sql_job_info_async(self, request):
         """获取指定ID的任务信息
 
@@ -6060,6 +6283,77 @@ class GaussDBAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_gauss_my_sql_proxy_ssl_async(self, request):
+        """开关数据库代理SSL
+
+        为数据库代理设置SSL数据加密。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchGaussMySqlProxySsl
+        :type request: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlProxySslRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlProxySslResponse`
+        """
+        http_info = self._switch_gauss_my_sql_proxy_ssl_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_gauss_my_sql_proxy_ssl_async_invoker(self, request):
+        http_info = self._switch_gauss_my_sql_proxy_ssl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_gauss_my_sql_proxy_ssl_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/ssl",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchGaussMySqlProxySslResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
 
         query_params = []
 

@@ -11,6 +11,8 @@ from huaweicloudsdkmrs.v2.model.agency_mapping import AgencyMapping
 from huaweicloudsdkmrs.v2.model.agency_mapping_array import AgencyMappingArray
 from huaweicloudsdkmrs.v2.model.assigned_node_group import AssignedNodeGroup
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy import AutoScalingPolicy
+from huaweicloudsdkmrs.v2.model.auto_scaling_policy_delete_req import AutoScalingPolicyDeleteReq
+from huaweicloudsdkmrs.v2.model.auto_scaling_policy_info import AutoScalingPolicyInfo
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy_v2 import AutoScalingPolicyV2
 from huaweicloudsdkmrs.v2.model.batch_delete_jobs_request import BatchDeleteJobsRequest
 from huaweicloudsdkmrs.v2.model.batch_delete_jobs_response import BatchDeleteJobsResponse
@@ -22,6 +24,8 @@ from huaweicloudsdkmrs.v2.model.cluster_data_connector_map import ClusterDataCon
 from huaweicloudsdkmrs.v2.model.component_config import ComponentConfig
 from huaweicloudsdkmrs.v2.model.component_install_mode import ComponentInstallMode
 from huaweicloudsdkmrs.v2.model.config import Config
+from huaweicloudsdkmrs.v2.model.create_auto_scaling_policy_request import CreateAutoScalingPolicyRequest
+from huaweicloudsdkmrs.v2.model.create_auto_scaling_policy_response import CreateAutoScalingPolicyResponse
 from huaweicloudsdkmrs.v2.model.create_cluster_req_v2 import CreateClusterReqV2
 from huaweicloudsdkmrs.v2.model.create_cluster_request import CreateClusterRequest
 from huaweicloudsdkmrs.v2.model.create_cluster_response import CreateClusterResponse
@@ -32,6 +36,8 @@ from huaweicloudsdkmrs.v2.model.create_execute_job_response import CreateExecute
 from huaweicloudsdkmrs.v2.model.data_connector import DataConnector
 from huaweicloudsdkmrs.v2.model.data_connector_detail import DataConnectorDetail
 from huaweicloudsdkmrs.v2.model.data_connector_req import DataConnectorReq
+from huaweicloudsdkmrs.v2.model.delete_auto_scaling_policy_request import DeleteAutoScalingPolicyRequest
+from huaweicloudsdkmrs.v2.model.delete_auto_scaling_policy_response import DeleteAutoScalingPolicyResponse
 from huaweicloudsdkmrs.v2.model.delete_data_connector_request import DeleteDataConnectorRequest
 from huaweicloudsdkmrs.v2.model.delete_data_connector_response import DeleteDataConnectorResponse
 from huaweicloudsdkmrs.v2.model.execute_sql_request import ExecuteSqlRequest
@@ -80,6 +86,8 @@ from huaweicloudsdkmrs.v2.model.tag import Tag
 from huaweicloudsdkmrs.v2.model.trigger import Trigger
 from huaweicloudsdkmrs.v2.model.update_agency_mapping_request import UpdateAgencyMappingRequest
 from huaweicloudsdkmrs.v2.model.update_agency_mapping_response import UpdateAgencyMappingResponse
+from huaweicloudsdkmrs.v2.model.update_auto_scaling_policy_request import UpdateAutoScalingPolicyRequest
+from huaweicloudsdkmrs.v2.model.update_auto_scaling_policy_response import UpdateAutoScalingPolicyResponse
 from huaweicloudsdkmrs.v2.model.update_cluster_name_request import UpdateClusterNameRequest
 from huaweicloudsdkmrs.v2.model.update_cluster_name_response import UpdateClusterNameResponse
 from huaweicloudsdkmrs.v2.model.update_cluster_req import UpdateClusterReq

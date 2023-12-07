@@ -29,7 +29,7 @@ class OperationIdPrimitiveTypeHolder:
 
         The model defined in huaweicloud sdk
 
-        :param operation_id: 资源栈集操作Id。  此Id由资源编排服务在生成资源栈集操作的时候生成，为UUID。
+        :param operation_id: 资源栈集操作Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
         :type operation_id: str
         """
         
@@ -45,7 +45,7 @@ class OperationIdPrimitiveTypeHolder:
     def operation_id(self):
         """Gets the operation_id of this OperationIdPrimitiveTypeHolder.
 
-        资源栈集操作Id。  此Id由资源编排服务在生成资源栈集操作的时候生成，为UUID。
+        资源栈集操作Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
         :return: The operation_id of this OperationIdPrimitiveTypeHolder.
         :rtype: str
@@ -56,7 +56,7 @@ class OperationIdPrimitiveTypeHolder:
     def operation_id(self, operation_id):
         """Sets the operation_id of this OperationIdPrimitiveTypeHolder.
 
-        资源栈集操作Id。  此Id由资源编排服务在生成资源栈集操作的时候生成，为UUID。
+        资源栈集操作Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
         :param operation_id: The operation_id of this OperationIdPrimitiveTypeHolder.
         :type operation_id: str

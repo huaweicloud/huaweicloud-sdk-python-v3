@@ -17,20 +17,24 @@ class InstanceChangeOrderReq:
     sensitive_list = []
 
     openapi_types = {
+        'instance_id': 'str',
         'product_id': 'str',
         'resize_info': 'ResizeInstanceReq'
     }
 
     attribute_map = {
+        'instance_id': 'instance_id',
         'product_id': 'product_id',
         'resize_info': 'resize_info'
     }
 
-    def __init__(self, product_id=None, resize_info=None):
+    def __init__(self, instance_id=None, product_id=None, resize_info=None):
         """InstanceChangeOrderReq
 
         The model defined in huaweicloud sdk
 
+        :param instance_id: 实例ID
+        :type instance_id: str
         :param product_id: 产品编号
         :type product_id: str
         :param resize_info: 
@@ -39,14 +43,39 @@ class InstanceChangeOrderReq:
         
         
 
+        self._instance_id = None
         self._product_id = None
         self._resize_info = None
         self.discriminator = None
 
+        if instance_id is not None:
+            self.instance_id = instance_id
         if product_id is not None:
             self.product_id = product_id
         if resize_info is not None:
             self.resize_info = resize_info
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this InstanceChangeOrderReq.
+
+        实例ID
+
+        :return: The instance_id of this InstanceChangeOrderReq.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this InstanceChangeOrderReq.
+
+        实例ID
+
+        :param instance_id: The instance_id of this InstanceChangeOrderReq.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     @property
     def product_id(self):

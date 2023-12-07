@@ -19,7 +19,6 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     openapi_types = {
         'type': 'str',
-        'model': 'str',
         'wan_interfaces': 'list[str]',
         'lte_interfaces': 'list[str]',
         'lan_interfaces': 'list[str]'
@@ -27,21 +26,18 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     attribute_map = {
         'type': 'type',
-        'model': 'model',
         'wan_interfaces': 'wan_interfaces',
         'lte_interfaces': 'lte_interfaces',
         'lan_interfaces': 'lan_interfaces'
     }
 
-    def __init__(self, type=None, model=None, wan_interfaces=None, lte_interfaces=None, lan_interfaces=None):
+    def __init__(self, type=None, wan_interfaces=None, lte_interfaces=None, lan_interfaces=None):
         """ShowEquipmentSpecificConfigResponse
 
         The model defined in huaweicloud sdk
 
         :param type: 设备类型
         :type type: str
-        :param model: 设备型号
-        :type model: str
         :param wan_interfaces: WAN口列表
         :type wan_interfaces: list[str]
         :param lte_interfaces: LTE口列表
@@ -53,7 +49,6 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
         super(ShowEquipmentSpecificConfigResponse, self).__init__()
 
         self._type = None
-        self._model = None
         self._wan_interfaces = None
         self._lte_interfaces = None
         self._lan_interfaces = None
@@ -61,8 +56,6 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
         if type is not None:
             self.type = type
-        if model is not None:
-            self.model = model
         if wan_interfaces is not None:
             self.wan_interfaces = wan_interfaces
         if lte_interfaces is not None:
@@ -91,28 +84,6 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
         :type type: str
         """
         self._type = type
-
-    @property
-    def model(self):
-        """Gets the model of this ShowEquipmentSpecificConfigResponse.
-
-        设备型号
-
-        :return: The model of this ShowEquipmentSpecificConfigResponse.
-        :rtype: str
-        """
-        return self._model
-
-    @model.setter
-    def model(self, model):
-        """Sets the model of this ShowEquipmentSpecificConfigResponse.
-
-        设备型号
-
-        :param model: The model of this ShowEquipmentSpecificConfigResponse.
-        :type model: str
-        """
-        self._model = model
 
     @property
     def wan_interfaces(self):

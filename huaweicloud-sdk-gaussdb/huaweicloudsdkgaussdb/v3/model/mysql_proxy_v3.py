@@ -38,7 +38,8 @@ class MysqlProxyV3:
         'route_mode': 'int',
         'balance_route_mode_enabled': 'bool',
         'consistence_mode': 'str',
-        'subnet_id': 'str'
+        'subnet_id': 'str',
+        'ssl_option': 'str'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class MysqlProxyV3:
         'route_mode': 'route_mode',
         'balance_route_mode_enabled': 'balance_route_mode_enabled',
         'consistence_mode': 'consistence_mode',
-        'subnet_id': 'subnet_id'
+        'subnet_id': 'subnet_id',
+        'ssl_option': 'ssl_option'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None, subnet_id=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None, subnet_id=None, ssl_option=None):
         """MysqlProxyV3
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class MysqlProxyV3:
         :type consistence_mode: str
         :param subnet_id: 数据库代理所属的子网ID。
         :type subnet_id: str
+        :param ssl_option: SSL数据加密开关设置。  取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
+        :type ssl_option: str
         """
         
         
@@ -141,6 +145,7 @@ class MysqlProxyV3:
         self._balance_route_mode_enabled = None
         self._consistence_mode = None
         self._subnet_id = None
+        self._ssl_option = None
         self.discriminator = None
 
         if pool_id is not None:
@@ -187,6 +192,8 @@ class MysqlProxyV3:
             self.consistence_mode = consistence_mode
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if ssl_option is not None:
+            self.ssl_option = ssl_option
 
     @property
     def pool_id(self):
@@ -671,6 +678,28 @@ class MysqlProxyV3:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def ssl_option(self):
+        """Gets the ssl_option of this MysqlProxyV3.
+
+        SSL数据加密开关设置。  取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
+
+        :return: The ssl_option of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._ssl_option
+
+    @ssl_option.setter
+    def ssl_option(self, ssl_option):
+        """Sets the ssl_option of this MysqlProxyV3.
+
+        SSL数据加密开关设置。  取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
+
+        :param ssl_option: The ssl_option of this MysqlProxyV3.
+        :type ssl_option: str
+        """
+        self._ssl_option = ssl_option
 
     def to_dict(self):
         """Returns the model properties as a dict"""

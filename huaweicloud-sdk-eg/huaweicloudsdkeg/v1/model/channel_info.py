@@ -22,7 +22,8 @@ class ChannelInfo:
         'description': 'str',
         'provider_type': 'str',
         'created_time': 'str',
-        'updated_time': 'str'
+        'updated_time': 'str',
+        'eps_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ChannelInfo:
         'description': 'description',
         'provider_type': 'provider_type',
         'created_time': 'created_time',
-        'updated_time': 'updated_time'
+        'updated_time': 'updated_time',
+        'eps_id': 'eps_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, provider_type=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, name=None, description=None, provider_type=None, created_time=None, updated_time=None, eps_id=None):
         """ChannelInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ChannelInfo:
         :type created_time: str
         :param updated_time: 更新UTC时间
         :type updated_time: str
+        :param eps_id: 企业项目id
+        :type eps_id: str
         """
         
         
@@ -61,6 +65,7 @@ class ChannelInfo:
         self._provider_type = None
         self._created_time = None
         self._updated_time = None
+        self._eps_id = None
         self.discriminator = None
 
         if id is not None:
@@ -75,6 +80,8 @@ class ChannelInfo:
             self.created_time = created_time
         if updated_time is not None:
             self.updated_time = updated_time
+        if eps_id is not None:
+            self.eps_id = eps_id
 
     @property
     def id(self):
@@ -207,6 +214,28 @@ class ChannelInfo:
         :type updated_time: str
         """
         self._updated_time = updated_time
+
+    @property
+    def eps_id(self):
+        """Gets the eps_id of this ChannelInfo.
+
+        企业项目id
+
+        :return: The eps_id of this ChannelInfo.
+        :rtype: str
+        """
+        return self._eps_id
+
+    @eps_id.setter
+    def eps_id(self, eps_id):
+        """Sets the eps_id of this ChannelInfo.
+
+        企业项目id
+
+        :param eps_id: The eps_id of this ChannelInfo.
+        :type eps_id: str
+        """
+        self._eps_id = eps_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

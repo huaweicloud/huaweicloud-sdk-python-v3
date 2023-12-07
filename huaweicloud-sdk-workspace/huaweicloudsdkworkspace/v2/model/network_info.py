@@ -18,10 +18,10 @@ class NetworkInfo:
 
     openapi_types = {
         'vpc_info': 'Vpc',
-        'subnet_info': 'Subnet',
+        'subnet_info': 'DesktopSubnet',
         'port_info': 'Port',
         'public_ip_info': 'PublicIp',
-        'security_groups': 'list[SecurityGroup]'
+        'security_groups': 'list[SecurityGroupInfo]'
     }
 
     attribute_map = {
@@ -40,13 +40,13 @@ class NetworkInfo:
         :param vpc_info: 
         :type vpc_info: :class:`huaweicloudsdkworkspace.v2.Vpc`
         :param subnet_info: 
-        :type subnet_info: :class:`huaweicloudsdkworkspace.v2.Subnet`
+        :type subnet_info: :class:`huaweicloudsdkworkspace.v2.DesktopSubnet`
         :param port_info: 
         :type port_info: :class:`huaweicloudsdkworkspace.v2.Port`
         :param public_ip_info: 
         :type public_ip_info: :class:`huaweicloudsdkworkspace.v2.PublicIp`
         :param security_groups: 桌面绑定的安全组列表
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         
         
@@ -92,7 +92,7 @@ class NetworkInfo:
         """Gets the subnet_info of this NetworkInfo.
 
         :return: The subnet_info of this NetworkInfo.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.Subnet`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopSubnet`
         """
         return self._subnet_info
 
@@ -101,7 +101,7 @@ class NetworkInfo:
         """Sets the subnet_info of this NetworkInfo.
 
         :param subnet_info: The subnet_info of this NetworkInfo.
-        :type subnet_info: :class:`huaweicloudsdkworkspace.v2.Subnet`
+        :type subnet_info: :class:`huaweicloudsdkworkspace.v2.DesktopSubnet`
         """
         self._subnet_info = subnet_info
 
@@ -148,7 +148,7 @@ class NetworkInfo:
         桌面绑定的安全组列表
 
         :return: The security_groups of this NetworkInfo.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         return self._security_groups
 
@@ -159,7 +159,7 @@ class NetworkInfo:
         桌面绑定的安全组列表
 
         :param security_groups: The security_groups of this NetworkInfo.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         self._security_groups = security_groups
 

@@ -601,10 +601,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowFileRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowFileResponse`
         """
+        warnings.warn("Method 'show_file' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_file_http_info(request)
         return self._call_api(**http_info)
 
     def show_file_invoker(self, request):
+        warnings.warn("Method 'show_file_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_file_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -670,10 +672,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdResponse`
         """
+        warnings.warn("Method 'get_all_repository_by_project_id' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._get_all_repository_by_project_id_http_info(request)
         return self._call_api(**http_info)
 
     def get_all_repository_by_project_id_invoker(self, request):
+        warnings.warn("Method 'get_all_repository_by_project_id_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._get_all_repository_by_project_id_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -741,10 +745,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesResponse`
         """
+        warnings.warn("Method 'get_product_templates' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._get_product_templates_http_info(request)
         return self._call_api(**http_info)
 
     def get_product_templates_invoker(self, request):
+        warnings.warn("Method 'get_product_templates_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._get_product_templates_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1220,10 +1226,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyResponse`
         """
+        warnings.warn("Method 'add_deploy_key' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._add_deploy_key_http_info(request)
         return self._call_api(**http_info)
 
     def add_deploy_key_invoker(self, request):
+        warnings.warn("Method 'add_deploy_key_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._add_deploy_key_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1555,10 +1563,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyResponse`
         """
+        warnings.warn("Method 'delete_deploy_key' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_deploy_key_http_info(request)
         return self._call_api(**http_info)
 
     def delete_deploy_key_invoker(self, request):
+        warnings.warn("Method 'delete_deploy_key_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_deploy_key_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1754,10 +1764,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdResponse`
         """
+        warnings.warn("Method 'get_repository_by_project_id' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._get_repository_by_project_id_http_info(request)
         return self._call_api(**http_info)
 
     def get_repository_by_project_id_invoker(self, request):
+        warnings.warn("Method 'get_repository_by_project_id_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._get_repository_by_project_id_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1819,10 +1831,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetTemplatesResponse`
         """
+        warnings.warn("Method 'get_templates' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._get_templates_http_info(request)
         return self._call_api(**http_info)
 
     def get_templates_invoker(self, request):
+        warnings.warn("Method 'get_templates_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._get_templates_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2474,10 +2488,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesResponse`
         """
+        warnings.warn("Method 'share_templates' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._share_templates_http_info(request)
         return self._call_api(**http_info)
 
     def share_templates_invoker(self, request):
+        warnings.warn("Method 'share_templates_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._share_templates_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3361,10 +3377,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitResponse`
         """
+        warnings.warn("Method 'show_statistic_commit' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_statistic_commit_http_info(request)
         return self._call_api(**http_info)
 
     def show_statistic_commit_invoker(self, request):
+        warnings.warn("Method 'show_statistic_commit_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_statistic_commit_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3633,10 +3651,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyResponse`
         """
+        warnings.warn("Method 'delete_s_shkey' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_s_shkey_http_info(request)
         return self._call_api(**http_info)
 
     def delete_s_shkey_invoker(self, request):
+        warnings.warn("Method 'delete_s_shkey_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_s_shkey_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3826,10 +3846,12 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoResponse`
         """
+        warnings.warn("Method 'validate_https_info' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._validate_https_info_http_info(request)
         return self._call_api(**http_info)
 
     def validate_https_info_invoker(self, request):
+        warnings.warn("Method 'validate_https_info_invoker' of CodeHubClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._validate_https_info_http_info(request)
         return SyncInvoker(self, http_info)
 

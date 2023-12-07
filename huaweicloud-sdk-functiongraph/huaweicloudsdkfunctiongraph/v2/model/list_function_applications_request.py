@@ -17,20 +17,80 @@ class ListFunctionApplicationsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'str',
+        'marker': 'str'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self):
+    def __init__(self, limit=None, marker=None):
         """ListFunctionApplicationsRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 本次查询最大返回的数据条数，最大值500，默认值100
+        :type limit: str
+        :param marker: 本次查询起始位置，默认值0
+        :type marker: str
         """
         
         
+
+        self._limit = None
+        self._marker = None
         self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListFunctionApplicationsRequest.
+
+        本次查询最大返回的数据条数，最大值500，默认值100
+
+        :return: The limit of this ListFunctionApplicationsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListFunctionApplicationsRequest.
+
+        本次查询最大返回的数据条数，最大值500，默认值100
+
+        :param limit: The limit of this ListFunctionApplicationsRequest.
+        :type limit: str
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListFunctionApplicationsRequest.
+
+        本次查询起始位置，默认值0
+
+        :return: The marker of this ListFunctionApplicationsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListFunctionApplicationsRequest.
+
+        本次查询起始位置，默认值0
+
+        :param marker: The marker of this ListFunctionApplicationsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

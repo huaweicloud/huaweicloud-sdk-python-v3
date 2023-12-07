@@ -6,6 +6,9 @@ from huaweicloudsdkoms.v2.oms_client import OmsClient
 from huaweicloudsdkoms.v2.oms_async_client import OmsAsyncClient
 
 from huaweicloudsdkoms.v2.model.bandwidth_policy_dto import BandwidthPolicyDto
+from huaweicloudsdkoms.v2.model.batch_update_tasks_req import BatchUpdateTasksReq
+from huaweicloudsdkoms.v2.model.batch_update_tasks_request import BatchUpdateTasksRequest
+from huaweicloudsdkoms.v2.model.batch_update_tasks_response import BatchUpdateTasksResponse
 from huaweicloudsdkoms.v2.model.check_prefix_req import CheckPrefixReq
 from huaweicloudsdkoms.v2.model.check_prefix_request import CheckPrefixRequest
 from huaweicloudsdkoms.v2.model.check_prefix_response import CheckPrefixResponse

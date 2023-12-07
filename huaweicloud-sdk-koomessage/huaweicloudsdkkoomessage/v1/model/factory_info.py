@@ -33,7 +33,7 @@ class FactoryInfo:
 
         The model defined in huaweicloud sdk
 
-        :param factory_type: 厂商类型。  - HUAWEI：表示华为厂商 - XIAOMI：表示小米厂商 - OPPO：表示OPPO厂商 - VIVO：表示VIVO厂商 - MEIZU：表示魅族厂商 
+        :param factory_type: 厂商类型。  - HUAWEI：表示华为厂商 - XIAOMI：表示小米厂商 - OPPO：表示OPPO厂商 - VIVO：表示VIVO厂商 - MEIZU：表示魅族厂商 - SAMSUNG：表示三星厂商 
         :type factory_type: str
         :param state: 模板状态。  - 1：激活  - 其他：未激活 
         :type state: int
@@ -57,7 +57,7 @@ class FactoryInfo:
     def factory_type(self):
         """Gets the factory_type of this FactoryInfo.
 
-        厂商类型。  - HUAWEI：表示华为厂商 - XIAOMI：表示小米厂商 - OPPO：表示OPPO厂商 - VIVO：表示VIVO厂商 - MEIZU：表示魅族厂商 
+        厂商类型。  - HUAWEI：表示华为厂商 - XIAOMI：表示小米厂商 - OPPO：表示OPPO厂商 - VIVO：表示VIVO厂商 - MEIZU：表示魅族厂商 - SAMSUNG：表示三星厂商 
 
         :return: The factory_type of this FactoryInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class FactoryInfo:
     def factory_type(self, factory_type):
         """Sets the factory_type of this FactoryInfo.
 
-        厂商类型。  - HUAWEI：表示华为厂商 - XIAOMI：表示小米厂商 - OPPO：表示OPPO厂商 - VIVO：表示VIVO厂商 - MEIZU：表示魅族厂商 
+        厂商类型。  - HUAWEI：表示华为厂商 - XIAOMI：表示小米厂商 - OPPO：表示OPPO厂商 - VIVO：表示VIVO厂商 - MEIZU：表示魅族厂商 - SAMSUNG：表示三星厂商 
 
         :param factory_type: The factory_type of this FactoryInfo.
         :type factory_type: str

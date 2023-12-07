@@ -31,7 +31,8 @@ class AimPersonalTemplateContent:
         'oppo_background': 'str',
         'vivo_background': 'str',
         'ratio': 'str',
-        'action': 'AimPersonalTemplateContentAction'
+        'action': 'AimPersonalTemplateContentAction',
+        'button_type': 'str'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class AimPersonalTemplateContent:
         'oppo_background': 'oppo_background',
         'vivo_background': 'vivo_background',
         'ratio': 'ratio',
-        'action': 'action'
+        'action': 'action',
+        'button_type': 'button_type'
     }
 
-    def __init__(self, type=None, content=None, content_child=None, src_type=None, src=None, cover=None, is_text_title=None, action_type=None, position_number=None, visible=None, currency_display=None, oppo_background=None, vivo_background=None, ratio=None, action=None):
+    def __init__(self, type=None, content=None, content_child=None, src_type=None, src=None, cover=None, is_text_title=None, action_type=None, position_number=None, visible=None, currency_display=None, oppo_background=None, vivo_background=None, ratio=None, action=None, button_type=None):
         """AimPersonalTemplateContent
 
         The model defined in huaweicloud sdk
@@ -71,7 +73,7 @@ class AimPersonalTemplateContent:
         :type cover: str
         :param is_text_title: 是否为文本标题。  - true：是 - false：不是  &gt; 不填默认为false。 
         :type is_text_title: str
-        :param action_type: 功能类型。  - OPEN_URL：表示跳转H5 - OPEN_QUICK：表示跳转快应用 - OPEN_APP：表示跳转APP - DIAL_PHONE：表示拉起拨号盘 - OPEN_SMS：表示新建短信息 - OPEN_EMAIL：表示打开邮箱 - OPEN_SCHEDULE：表示新建日程 - OPEN_MAP：表示位置定位 - OPEN_BROWSER：表示打开浏览器 - OPEN_POPUP：表示弹窗 - COPY_PARAMETER：表示复制 - VIEW_PIC：表示打开大图  &gt; - type为Image和Button时为必填项，必须绑定事件 &gt; - type为其他类型时则不必填 &gt; - OPPO厂商点击事件类型只支持打开浏览器、打开快应用、打开APP、跳转H5 &gt; - VIVO厂商点击事件类型不支持打开邮箱、打开地图 &gt; - MEIZU厂商点击事件类型不支持打开大图 &gt; - 横滑类1、横滑类2版式的图片不支持绑定事件，默认与按钮事件一致  
+        :param action_type: 功能类型。  - OPEN_URL：表示跳转H5 - OPEN_QUICK：表示跳转快应用 - OPEN_APP：表示跳转APP - DIAL_PHONE：表示拉起拨号盘 - OPEN_SMS：表示新建短信息 - OPEN_EMAIL：表示打开邮箱 - OPEN_SCHEDULE：表示新建日程 - OPEN_MAP：表示位置定位 - OPEN_BROWSER：表示打开浏览器 - OPEN_POPUP：表示弹窗 - COPY_PARAMETER：表示复制 - VIEW_PIC：表示打开大图  &gt; - type为Image和Button时为必填项，必须绑定事件 &gt; - type为其他类型时则不必填 &gt; - OPPO厂商点击事件类型只支持打开浏览器、打开快应用、打开APP、跳转H5 &gt; - VIVO厂商点击事件类型不支持打开邮箱、打开地图 &gt; - MEIZU厂商点击事件类型不支持打开大图 &gt; - 横滑类1、横滑类2版式的图片不支持绑定事件，默认与按钮事件一致 &gt; - 三星厂商点击事件类型不支持新建日程、打开大图  
         :type action_type: str
         :param position_number: 卡片组件的位置序号。 &gt; 资源在卡片上相对的位置序号，按照优先从左到右，再从上到下的编排原则，统一编号。 
         :type position_number: int
@@ -83,10 +85,12 @@ class AimPersonalTemplateContent:
         :type oppo_background: str
         :param vivo_background: VIVO红包背景。  &gt; - 当src_type为1时，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 &gt; - 当src_type为2时，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符 
         :type vivo_background: str
-        :param ratio: 表示短剧视频模板视频和封面的宽高比。即card_id为ShortVideo时，此项有值。 - threeToFour: 宽高比为3:4 - oneToOne: 宽高比为1:1 
+        :param ratio: 表示短视频模板视频和封面的宽高比。即card_id为ShortVideo时，此项有值。 - threeToFour: 宽高比为3:4 - oneToOne: 宽高比为1:1 
         :type ratio: str
         :param action: 
         :type action: :class:`huaweicloudsdkkoomessage.v1.AimPersonalTemplateContentAction`
+        :param button_type: 当模板为电商领券类竖版，即card_id为EcommerceCouponVertical时用于指定按钮类型，具体使用可参考创建电商领券类竖版模板请求示例。 - static：静态按钮 - dynamic：动态按钮 
+        :type button_type: str
         """
         
         
@@ -106,6 +110,7 @@ class AimPersonalTemplateContent:
         self._vivo_background = None
         self._ratio = None
         self._action = None
+        self._button_type = None
         self.discriminator = None
 
         self.type = type
@@ -136,6 +141,8 @@ class AimPersonalTemplateContent:
             self.ratio = ratio
         if action is not None:
             self.action = action
+        if button_type is not None:
+            self.button_type = button_type
 
     @property
     def type(self):
@@ -295,7 +302,7 @@ class AimPersonalTemplateContent:
     def action_type(self):
         """Gets the action_type of this AimPersonalTemplateContent.
 
-        功能类型。  - OPEN_URL：表示跳转H5 - OPEN_QUICK：表示跳转快应用 - OPEN_APP：表示跳转APP - DIAL_PHONE：表示拉起拨号盘 - OPEN_SMS：表示新建短信息 - OPEN_EMAIL：表示打开邮箱 - OPEN_SCHEDULE：表示新建日程 - OPEN_MAP：表示位置定位 - OPEN_BROWSER：表示打开浏览器 - OPEN_POPUP：表示弹窗 - COPY_PARAMETER：表示复制 - VIEW_PIC：表示打开大图  > - type为Image和Button时为必填项，必须绑定事件 > - type为其他类型时则不必填 > - OPPO厂商点击事件类型只支持打开浏览器、打开快应用、打开APP、跳转H5 > - VIVO厂商点击事件类型不支持打开邮箱、打开地图 > - MEIZU厂商点击事件类型不支持打开大图 > - 横滑类1、横滑类2版式的图片不支持绑定事件，默认与按钮事件一致  
+        功能类型。  - OPEN_URL：表示跳转H5 - OPEN_QUICK：表示跳转快应用 - OPEN_APP：表示跳转APP - DIAL_PHONE：表示拉起拨号盘 - OPEN_SMS：表示新建短信息 - OPEN_EMAIL：表示打开邮箱 - OPEN_SCHEDULE：表示新建日程 - OPEN_MAP：表示位置定位 - OPEN_BROWSER：表示打开浏览器 - OPEN_POPUP：表示弹窗 - COPY_PARAMETER：表示复制 - VIEW_PIC：表示打开大图  > - type为Image和Button时为必填项，必须绑定事件 > - type为其他类型时则不必填 > - OPPO厂商点击事件类型只支持打开浏览器、打开快应用、打开APP、跳转H5 > - VIVO厂商点击事件类型不支持打开邮箱、打开地图 > - MEIZU厂商点击事件类型不支持打开大图 > - 横滑类1、横滑类2版式的图片不支持绑定事件，默认与按钮事件一致 > - 三星厂商点击事件类型不支持新建日程、打开大图  
 
         :return: The action_type of this AimPersonalTemplateContent.
         :rtype: str
@@ -306,7 +313,7 @@ class AimPersonalTemplateContent:
     def action_type(self, action_type):
         """Sets the action_type of this AimPersonalTemplateContent.
 
-        功能类型。  - OPEN_URL：表示跳转H5 - OPEN_QUICK：表示跳转快应用 - OPEN_APP：表示跳转APP - DIAL_PHONE：表示拉起拨号盘 - OPEN_SMS：表示新建短信息 - OPEN_EMAIL：表示打开邮箱 - OPEN_SCHEDULE：表示新建日程 - OPEN_MAP：表示位置定位 - OPEN_BROWSER：表示打开浏览器 - OPEN_POPUP：表示弹窗 - COPY_PARAMETER：表示复制 - VIEW_PIC：表示打开大图  > - type为Image和Button时为必填项，必须绑定事件 > - type为其他类型时则不必填 > - OPPO厂商点击事件类型只支持打开浏览器、打开快应用、打开APP、跳转H5 > - VIVO厂商点击事件类型不支持打开邮箱、打开地图 > - MEIZU厂商点击事件类型不支持打开大图 > - 横滑类1、横滑类2版式的图片不支持绑定事件，默认与按钮事件一致  
+        功能类型。  - OPEN_URL：表示跳转H5 - OPEN_QUICK：表示跳转快应用 - OPEN_APP：表示跳转APP - DIAL_PHONE：表示拉起拨号盘 - OPEN_SMS：表示新建短信息 - OPEN_EMAIL：表示打开邮箱 - OPEN_SCHEDULE：表示新建日程 - OPEN_MAP：表示位置定位 - OPEN_BROWSER：表示打开浏览器 - OPEN_POPUP：表示弹窗 - COPY_PARAMETER：表示复制 - VIEW_PIC：表示打开大图  > - type为Image和Button时为必填项，必须绑定事件 > - type为其他类型时则不必填 > - OPPO厂商点击事件类型只支持打开浏览器、打开快应用、打开APP、跳转H5 > - VIVO厂商点击事件类型不支持打开邮箱、打开地图 > - MEIZU厂商点击事件类型不支持打开大图 > - 横滑类1、横滑类2版式的图片不支持绑定事件，默认与按钮事件一致 > - 三星厂商点击事件类型不支持新建日程、打开大图  
 
         :param action_type: The action_type of this AimPersonalTemplateContent.
         :type action_type: str
@@ -427,7 +434,7 @@ class AimPersonalTemplateContent:
     def ratio(self):
         """Gets the ratio of this AimPersonalTemplateContent.
 
-        表示短剧视频模板视频和封面的宽高比。即card_id为ShortVideo时，此项有值。 - threeToFour: 宽高比为3:4 - oneToOne: 宽高比为1:1 
+        表示短视频模板视频和封面的宽高比。即card_id为ShortVideo时，此项有值。 - threeToFour: 宽高比为3:4 - oneToOne: 宽高比为1:1 
 
         :return: The ratio of this AimPersonalTemplateContent.
         :rtype: str
@@ -438,7 +445,7 @@ class AimPersonalTemplateContent:
     def ratio(self, ratio):
         """Sets the ratio of this AimPersonalTemplateContent.
 
-        表示短剧视频模板视频和封面的宽高比。即card_id为ShortVideo时，此项有值。 - threeToFour: 宽高比为3:4 - oneToOne: 宽高比为1:1 
+        表示短视频模板视频和封面的宽高比。即card_id为ShortVideo时，此项有值。 - threeToFour: 宽高比为3:4 - oneToOne: 宽高比为1:1 
 
         :param ratio: The ratio of this AimPersonalTemplateContent.
         :type ratio: str
@@ -462,6 +469,28 @@ class AimPersonalTemplateContent:
         :type action: :class:`huaweicloudsdkkoomessage.v1.AimPersonalTemplateContentAction`
         """
         self._action = action
+
+    @property
+    def button_type(self):
+        """Gets the button_type of this AimPersonalTemplateContent.
+
+        当模板为电商领券类竖版，即card_id为EcommerceCouponVertical时用于指定按钮类型，具体使用可参考创建电商领券类竖版模板请求示例。 - static：静态按钮 - dynamic：动态按钮 
+
+        :return: The button_type of this AimPersonalTemplateContent.
+        :rtype: str
+        """
+        return self._button_type
+
+    @button_type.setter
+    def button_type(self, button_type):
+        """Sets the button_type of this AimPersonalTemplateContent.
+
+        当模板为电商领券类竖版，即card_id为EcommerceCouponVertical时用于指定按钮类型，具体使用可参考创建电商领券类竖版模板请求示例。 - static：静态按钮 - dynamic：动态按钮 
+
+        :param button_type: The button_type of this AimPersonalTemplateContent.
+        :type button_type: str
+        """
+        self._button_type = button_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

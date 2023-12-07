@@ -1284,6 +1284,8 @@ class DgcAsyncClient(Client):
             query_params.append(('jobType', local_var_params['job_type']))
         if 'job_name' in local_var_params:
             query_params.append(('jobName', local_var_params['job_name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
         if 'workspace' in local_var_params:

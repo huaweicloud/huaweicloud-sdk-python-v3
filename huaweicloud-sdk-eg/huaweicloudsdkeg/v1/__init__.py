@@ -11,6 +11,8 @@ from huaweicloudsdkeg.v1.model.api_versions_versions import ApiVersionsVersions
 from huaweicloudsdkeg.v1.model.batch_window import BatchWindow
 from huaweicloudsdkeg.v1.model.catalog_target_info import CatalogTargetInfo
 from huaweicloudsdkeg.v1.model.channel_create_req import ChannelCreateReq
+from huaweicloudsdkeg.v1.model.channel_create_req_policy import ChannelCreateReqPolicy
+from huaweicloudsdkeg.v1.model.channel_create_req_principal import ChannelCreateReqPrincipal
 from huaweicloudsdkeg.v1.model.channel_info import ChannelInfo
 from huaweicloudsdkeg.v1.model.channel_update_req import ChannelUpdateReq
 from huaweicloudsdkeg.v1.model.check_put_events_req import CheckPutEventsReq
@@ -62,7 +64,7 @@ from huaweicloudsdkeg.v1.model.delete_subscription_target_response import Delete
 from huaweicloudsdkeg.v1.model.deliver_detail import DeliverDetail
 from huaweicloudsdkeg.v1.model.deliver_item import DeliverItem
 from huaweicloudsdkeg.v1.model.deliver_target import DeliverTarget
-from huaweicloudsdkeg.v1.model.detail import Detail
+from huaweicloudsdkeg.v1.model.eg_target_detail import EgTargetDetail
 from huaweicloudsdkeg.v1.model.endpoint_connection import EndpointConnection
 from huaweicloudsdkeg.v1.model.endpoint_create_req import EndpointCreateReq
 from huaweicloudsdkeg.v1.model.endpoint_info import EndpointInfo
@@ -77,8 +79,6 @@ from huaweicloudsdkeg.v1.model.event_streaming_sink import EventStreamingSink
 from huaweicloudsdkeg.v1.model.event_streaming_source import EventStreamingSource
 from huaweicloudsdkeg.v1.model.event_streaming_update_req import EventStreamingUpdateReq
 from huaweicloudsdkeg.v1.model.event_sub_metrics_item import EventSubMetricsItem
-from huaweicloudsdkeg.v1.model.header_parameter import HeaderParameter
-from huaweicloudsdkeg.v1.model.invocation_http_parameters import InvocationHttpParameters
 from huaweicloudsdkeg.v1.model.kafka_connection_detail import KafkaConnectionDetail
 from huaweicloudsdkeg.v1.model.kafka_target_detail import KafkaTargetDetail
 from huaweicloudsdkeg.v1.model.kafka_target_detail_key_transform import KafkaTargetDetailKeyTransform
@@ -147,9 +147,11 @@ from huaweicloudsdkeg.v1.model.show_detail_of_subscription_target_response impor
 from huaweicloudsdkeg.v1.model.show_event_streaming_request import ShowEventStreamingRequest
 from huaweicloudsdkeg.v1.model.show_event_streaming_response import ShowEventStreamingResponse
 from huaweicloudsdkeg.v1.model.sink_fg_parameters import SinkFGParameters
+from huaweicloudsdkeg.v1.model.sink_kafka_parameters import SinkKafkaParameters
 from huaweicloudsdkeg.v1.model.smn_target_detail import SmnTargetDetail
 from huaweicloudsdkeg.v1.model.smn_target_detail_subject_transform import SmnTargetDetailSubjectTransform
 from huaweicloudsdkeg.v1.model.source_kafka_mq_parameters import SourceKafkaMQParameters
+from huaweicloudsdkeg.v1.model.source_mobile_mq_parameters import SourceMobileMQParameters
 from huaweicloudsdkeg.v1.model.subscription_create_req import SubscriptionCreateReq
 from huaweicloudsdkeg.v1.model.subscription_info import SubscriptionInfo
 from huaweicloudsdkeg.v1.model.subscription_operate_req import SubscriptionOperateReq

@@ -30,7 +30,7 @@ class ListExecutionPlansResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param execution_plans: 执行计划列表。默认按照生成时间排序，最早生成的在最前
+        :param execution_plans: 执行计划列表。默认按照生成时间降序排序，最新生成的在最前
         :type execution_plans: list[:class:`huaweicloudsdkaos.v1.ExecutionPlan`]
         """
         
@@ -46,7 +46,7 @@ class ListExecutionPlansResponse(SdkResponse):
     def execution_plans(self):
         """Gets the execution_plans of this ListExecutionPlansResponse.
 
-        执行计划列表。默认按照生成时间排序，最早生成的在最前
+        执行计划列表。默认按照生成时间降序排序，最新生成的在最前
 
         :return: The execution_plans of this ListExecutionPlansResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.ExecutionPlan`]
@@ -57,7 +57,7 @@ class ListExecutionPlansResponse(SdkResponse):
     def execution_plans(self, execution_plans):
         """Sets the execution_plans of this ListExecutionPlansResponse.
 
-        执行计划列表。默认按照生成时间排序，最早生成的在最前
+        执行计划列表。默认按照生成时间降序排序，最新生成的在最前
 
         :param execution_plans: The execution_plans of this ListExecutionPlansResponse.
         :type execution_plans: list[:class:`huaweicloudsdkaos.v1.ExecutionPlan`]

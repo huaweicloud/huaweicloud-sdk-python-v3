@@ -21,9 +21,10 @@ class SubscriptionTarget:
         'name': 'str',
         'provider_type': 'str',
         'connection_id': 'str',
-        'detail': 'Detail',
+        'detail': 'object',
         'kafka_detail': 'KafkaTargetDetail',
         'smn_detail': 'SmnTargetDetail',
+        'eg_detail': 'EgTargetDetail',
         'transform': 'TransForm',
         'dead_letter_queue': 'DeadLetterQueue'
     }
@@ -36,11 +37,12 @@ class SubscriptionTarget:
         'detail': 'detail',
         'kafka_detail': 'kafka_detail',
         'smn_detail': 'smn_detail',
+        'eg_detail': 'eg_detail',
         'transform': 'transform',
         'dead_letter_queue': 'dead_letter_queue'
     }
 
-    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, smn_detail=None, transform=None, dead_letter_queue=None):
+    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, smn_detail=None, eg_detail=None, transform=None, dead_letter_queue=None):
         """SubscriptionTarget
 
         The model defined in huaweicloud sdk
@@ -53,12 +55,14 @@ class SubscriptionTarget:
         :type provider_type: str
         :param connection_id: 订阅的事件目标使用的目标链接ID
         :type connection_id: str
-        :param detail: 
-        :type detail: :class:`huaweicloudsdkeg.v1.Detail`
+        :param detail: 订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数(urn、invoke_type、agency_name)、函数流（workflow_id、agency_name）、webhook（url）订阅目标必填，其中函数、函数流委托名称必填
+        :type detail: object
         :param kafka_detail: 
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
         :param smn_detail: 
         :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
+        :param eg_detail: 
+        :type eg_detail: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
         :param transform: 
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         :param dead_letter_queue: 
@@ -74,6 +78,7 @@ class SubscriptionTarget:
         self._detail = None
         self._kafka_detail = None
         self._smn_detail = None
+        self._eg_detail = None
         self._transform = None
         self._dead_letter_queue = None
         self.discriminator = None
@@ -90,6 +95,8 @@ class SubscriptionTarget:
             self.kafka_detail = kafka_detail
         if smn_detail is not None:
             self.smn_detail = smn_detail
+        if eg_detail is not None:
+            self.eg_detail = eg_detail
         self.transform = transform
         if dead_letter_queue is not None:
             self.dead_letter_queue = dead_letter_queue
@@ -186,8 +193,10 @@ class SubscriptionTarget:
     def detail(self):
         """Gets the detail of this SubscriptionTarget.
 
+        订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数(urn、invoke_type、agency_name)、函数流（workflow_id、agency_name）、webhook（url）订阅目标必填，其中函数、函数流委托名称必填
+
         :return: The detail of this SubscriptionTarget.
-        :rtype: :class:`huaweicloudsdkeg.v1.Detail`
+        :rtype: object
         """
         return self._detail
 
@@ -195,8 +204,10 @@ class SubscriptionTarget:
     def detail(self, detail):
         """Sets the detail of this SubscriptionTarget.
 
+        订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数(urn、invoke_type、agency_name)、函数流（workflow_id、agency_name）、webhook（url）订阅目标必填，其中函数、函数流委托名称必填
+
         :param detail: The detail of this SubscriptionTarget.
-        :type detail: :class:`huaweicloudsdkeg.v1.Detail`
+        :type detail: object
         """
         self._detail = detail
 
@@ -235,6 +246,24 @@ class SubscriptionTarget:
         :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
         """
         self._smn_detail = smn_detail
+
+    @property
+    def eg_detail(self):
+        """Gets the eg_detail of this SubscriptionTarget.
+
+        :return: The eg_detail of this SubscriptionTarget.
+        :rtype: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
+        """
+        return self._eg_detail
+
+    @eg_detail.setter
+    def eg_detail(self, eg_detail):
+        """Sets the eg_detail of this SubscriptionTarget.
+
+        :param eg_detail: The eg_detail of this SubscriptionTarget.
+        :type eg_detail: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
+        """
+        self._eg_detail = eg_detail
 
     @property
     def transform(self):

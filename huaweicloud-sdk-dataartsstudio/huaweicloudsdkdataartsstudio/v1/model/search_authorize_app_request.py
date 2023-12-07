@@ -59,7 +59,8 @@ class SearchAuthorizeAppRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         self.api_id = api_id
         if offset is not None:
             self.offset = offset

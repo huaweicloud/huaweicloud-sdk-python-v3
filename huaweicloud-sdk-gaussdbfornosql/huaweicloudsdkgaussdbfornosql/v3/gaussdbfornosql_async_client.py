@@ -3744,6 +3744,73 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         return http_info
 
+    def offline_nodes_async(self, request):
+        """支持节点的开关机
+
+        当底层故障导致节点无法正常工作时，可以对该节点执行关机操作，关机后会由其他节点接管业务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for OfflineNodes
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.OfflineNodesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.OfflineNodesResponse`
+        """
+        http_info = self._offline_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def offline_nodes_async_invoker(self, request):
+        http_info = self._offline_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _offline_nodes_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "OfflineNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def pause_resume_data_synchronization_async(self, request):
         """暂停/恢复具备容灾关系的实例数据同步
 

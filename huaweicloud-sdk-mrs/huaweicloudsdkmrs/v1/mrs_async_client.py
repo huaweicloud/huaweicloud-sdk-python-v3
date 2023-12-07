@@ -193,10 +193,12 @@ class MrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobResponse`
         """
+        warnings.warn("Method 'create_and_execute_job_async' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_and_execute_job_http_info(request)
         return self._call_api(**http_info)
 
     def create_and_execute_job_async_invoker(self, request):
+        warnings.warn("Method 'create_and_execute_job_async_invoker' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_and_execute_job_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -607,10 +609,12 @@ class MrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionResponse`
         """
+        warnings.warn("Method 'delete_job_execution_async' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_job_execution_http_info(request)
         return self._call_api(**http_info)
 
     def delete_job_execution_async_invoker(self, request):
+        warnings.warn("Method 'delete_job_execution_async_invoker' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_job_execution_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -943,10 +947,12 @@ class MrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ListExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListExecuteJobResponse`
         """
+        warnings.warn("Method 'list_execute_job_async' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_execute_job_http_info(request)
         return self._call_api(**http_info)
 
     def list_execute_job_async_invoker(self, request):
+        warnings.warn("Method 'list_execute_job_async_invoker' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_execute_job_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1153,10 +1159,12 @@ class MrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ShowJobExesRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ShowJobExesResponse`
         """
+        warnings.warn("Method 'show_job_exes_async' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_exes_http_info(request)
         return self._call_api(**http_info)
 
     def show_job_exes_async_invoker(self, request):
+        warnings.warn("Method 'show_job_exes_async_invoker' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_exes_http_info(request)
         return AsyncInvoker(self, http_info)
 

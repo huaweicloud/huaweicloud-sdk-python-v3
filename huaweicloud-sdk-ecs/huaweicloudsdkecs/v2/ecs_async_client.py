@@ -2317,10 +2317,12 @@ class EcsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServersByTagRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServersByTagResponse`
         """
+        warnings.warn("Method 'list_servers_by_tag_async' of EcsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_servers_by_tag_http_info(request)
         return self._call_api(**http_info)
 
     def list_servers_by_tag_async_invoker(self, request):
+        warnings.warn("Method 'list_servers_by_tag_async_invoker' of EcsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_servers_by_tag_http_info(request)
         return AsyncInvoker(self, http_info)
 

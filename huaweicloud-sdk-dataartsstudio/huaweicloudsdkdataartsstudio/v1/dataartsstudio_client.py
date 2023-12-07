@@ -509,6 +509,211 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def batch_delete_security_data_classification_rule(self, request):
+        """批量删除识别规则接口
+
+        批量删除识别规则接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSecurityDataClassificationRule
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecurityDataClassificationRuleRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecurityDataClassificationRuleResponse`
+        """
+        http_info = self._batch_delete_security_data_classification_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_security_data_classification_rule_invoker(self, request):
+        http_info = self._batch_delete_security_data_classification_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_security_data_classification_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSecurityDataClassificationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_security_permission_set_members(self, request):
+        """批量删除权限集成员
+
+        批量删除权限集成员
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSecurityPermissionSetMembers
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecurityPermissionSetMembersRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecurityPermissionSetMembersResponse`
+        """
+        http_info = self._batch_delete_security_permission_set_members_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_security_permission_set_members_invoker(self, request):
+        http_info = self._batch_delete_security_permission_set_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_security_permission_set_members_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/members/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSecurityPermissionSetMembersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_security_permission_set_permissions(self, request):
+        """删除权限集的权限
+
+        删除权限集的权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSecurityPermissionSetPermissions
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecurityPermissionSetPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecurityPermissionSetPermissionsResponse`
+        """
+        http_info = self._batch_delete_security_permission_set_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_security_permission_set_permissions_invoker(self, request):
+        http_info = self._batch_delete_security_permission_set_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_security_permission_set_permissions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/permissions/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSecurityPermissionSetPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_templates(self, request):
         """批量删除规则模板
 
@@ -2247,6 +2452,278 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def create_security_data_classification_rule(self, request):
+        """创建识别规则
+
+        创建识别规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSecurityDataClassificationRule
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityDataClassificationRuleRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityDataClassificationRuleResponse`
+        """
+        http_info = self._create_security_data_classification_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_data_classification_rule_invoker(self, request):
+        http_info = self._create_security_data_classification_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_data_classification_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityDataClassificationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_security_permission_set(self, request):
+        """创建权限集
+
+        创建权限集
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSecurityPermissionSet
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityPermissionSetRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityPermissionSetResponse`
+        """
+        http_info = self._create_security_permission_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_permission_set_invoker(self, request):
+        http_info = self._create_security_permission_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_permission_set_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityPermissionSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_security_permission_set_member(self, request):
+        """添加权限集成员
+
+        添加权限集成员
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSecurityPermissionSetMember
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityPermissionSetMemberRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityPermissionSetMemberResponse`
+        """
+        http_info = self._create_security_permission_set_member_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_permission_set_member_invoker(self, request):
+        http_info = self._create_security_permission_set_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_permission_set_member_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityPermissionSetMemberResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_security_permission_set_permission(self, request):
+        """添加权限集的权限
+
+        添加权限集的权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSecurityPermissionSetPermission
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityPermissionSetPermissionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityPermissionSetPermissionResponse`
+        """
+        http_info = self._create_security_permission_set_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_permission_set_permission_invoker(self, request):
+        http_info = self._create_security_permission_set_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_permission_set_permission_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityPermissionSetPermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_service_catalog(self, request):
         """创建服务目录
 
@@ -3527,6 +4004,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def delete_security_data_classification_rule(self, request):
+        """删除识别规则
+
+        删除识别规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSecurityDataClassificationRule
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecurityDataClassificationRuleRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecurityDataClassificationRuleResponse`
+        """
+        http_info = self._delete_security_data_classification_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_security_data_classification_rule_invoker(self, request):
+        http_info = self._delete_security_data_classification_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_security_data_classification_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityDataClassificationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_security_level_from_entity(self, request):
         """移除资产关联密级
 
@@ -3563,6 +4107,73 @@ class DataArtsStudioClient(Client):
         path_params = {}
         if 'guid' in local_var_params:
             path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_security_permission_set(self, request):
+        """删除权限集
+
+        删除权限集
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSecurityPermissionSet
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecurityPermissionSetRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecurityPermissionSetResponse`
+        """
+        http_info = self._delete_security_permission_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_security_permission_set_invoker(self, request):
+        http_info = self._delete_security_permission_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_security_permission_set_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityPermissionSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
 
         query_params = []
 
@@ -7614,6 +8225,429 @@ class DataArtsStudioClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_data_classification_rule_groups(self, request):
+        """查询规则组列表
+
+        查询规则组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityDataClassificationRuleGroups
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDataClassificationRuleGroupsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDataClassificationRuleGroupsResponse`
+        """
+        http_info = self._list_security_data_classification_rule_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_data_classification_rule_groups_invoker(self, request):
+        http_info = self._list_security_data_classification_rule_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_data_classification_rule_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule/group",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityDataClassificationRuleGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'creator' in local_var_params:
+            query_params.append(('creator', local_var_params['creator']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'desc' in local_var_params:
+            query_params.append(('desc', local_var_params['desc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_data_classification_rules(self, request):
+        """查询识别规则列表
+
+        查询识别规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityDataClassificationRules
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDataClassificationRulesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDataClassificationRulesResponse`
+        """
+        http_info = self._list_security_data_classification_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_data_classification_rules_invoker(self, request):
+        http_info = self._list_security_data_classification_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_data_classification_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityDataClassificationRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'secrecy_level' in local_var_params:
+            query_params.append(('secrecy_level', local_var_params['secrecy_level']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'creator' in local_var_params:
+            query_params.append(('creator', local_var_params['creator']))
+        if 'enable' in local_var_params:
+            query_params.append(('enable', local_var_params['enable']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'desc' in local_var_params:
+            query_params.append(('desc', local_var_params['desc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_permission_set_members(self, request):
+        """查询权限集成员列表
+
+        查询权限集成员列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityPermissionSetMembers
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityPermissionSetMembersRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityPermissionSetMembersResponse`
+        """
+        http_info = self._list_security_permission_set_members_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_permission_set_members_invoker(self, request):
+        http_info = self._list_security_permission_set_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_permission_set_members_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityPermissionSetMembersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'member_name' in local_var_params:
+            query_params.append(('member_name', local_var_params['member_name']))
+        if 'member_type' in local_var_params:
+            query_params.append(('member_type', local_var_params['member_type']))
+        if 'order_by_asc' in local_var_params:
+            query_params.append(('order_by_asc', local_var_params['order_by_asc']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_permission_set_permissions(self, request):
+        """查询权限集的权限列表
+
+        查询权限集的权限列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityPermissionSetPermissions
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityPermissionSetPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityPermissionSetPermissionsResponse`
+        """
+        http_info = self._list_security_permission_set_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_permission_set_permissions_invoker(self, request):
+        http_info = self._list_security_permission_set_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_permission_set_permissions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityPermissionSetPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'permission_type' in local_var_params:
+            query_params.append(('permission_type', local_var_params['permission_type']))
+        if 'permission_action' in local_var_params:
+            query_params.append(('permission_action', local_var_params['permission_action']))
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'cluster_name' in local_var_params:
+            query_params.append(('cluster_name', local_var_params['cluster_name']))
+        if 'datasource_type' in local_var_params:
+            query_params.append(('datasource_type', local_var_params['datasource_type']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'column_name' in local_var_params:
+            query_params.append(('column_name', local_var_params['column_name']))
+        if 'sync_status' in local_var_params:
+            query_params.append(('sync_status', local_var_params['sync_status']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order_by_asc' in local_var_params:
+            query_params.append(('order_by_asc', local_var_params['order_by_asc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_permission_sets(self, request):
+        """查询权限集列表
+
+        查询权限集列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityPermissionSets
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityPermissionSetsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityPermissionSetsResponse`
+        """
+        http_info = self._list_security_permission_sets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_permission_sets_invoker(self, request):
+        http_info = self._list_security_permission_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_permission_sets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityPermissionSetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'parent_id' in local_var_params:
+            query_params.append(('parent_id', local_var_params['parent_id']))
+        if 'type_filter' in local_var_params:
+            query_params.append(('type_filter', local_var_params['type_filter']))
+        if 'manager_id' in local_var_params:
+            query_params.append(('manager_id', local_var_params['manager_id']))
+        if 'manager_name' in local_var_params:
+            query_params.append(('manager_name', local_var_params['manager_name']))
+        if 'manager_type' in local_var_params:
+            query_params.append(('manager_type', local_var_params['manager_type']))
+        if 'datasource_type' in local_var_params:
+            query_params.append(('datasource_type', local_var_params['datasource_type']))
+        if 'sync_status' in local_var_params:
+            query_params.append(('sync_status', local_var_params['sync_status']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order_by_asc' in local_var_params:
+            query_params.append(('order_by_asc', local_var_params['order_by_asc']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -12463,6 +13497,207 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_security_data_classification_rule(self, request):
+        """查询特定识别规则
+
+        查询特定识别规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecurityDataClassificationRule
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityDataClassificationRuleRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityDataClassificationRuleResponse`
+        """
+        http_info = self._show_security_data_classification_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_data_classification_rule_invoker(self, request):
+        http_info = self._show_security_data_classification_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_data_classification_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityDataClassificationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_security_data_classification_rule_group(self, request):
+        """查询规则组
+
+        查询规则组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecurityDataClassificationRuleGroup
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityDataClassificationRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityDataClassificationRuleGroupResponse`
+        """
+        http_info = self._show_security_data_classification_rule_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_data_classification_rule_group_invoker(self, request):
+        http_info = self._show_security_data_classification_rule_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_data_classification_rule_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule/group/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityDataClassificationRuleGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_security_permission_set(self, request):
+        """查询权限集
+
+        查询权限集
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecurityPermissionSet
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityPermissionSetRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityPermissionSetResponse`
+        """
+        http_info = self._show_security_permission_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_permission_set_invoker(self, request):
+        http_info = self._show_security_permission_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_permission_set_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityPermissionSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_standard_by_id(self, request):
         """查看数据标准详情
 
@@ -13804,6 +15039,284 @@ class DataArtsStudioClient(Client):
             header_params['Authorization'] = local_var_params['authorization']
         if 'host' in local_var_params:
             header_params['Host'] = local_var_params['host']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_data_classification_rule(self, request):
+        """修改识别规则接口
+
+        修改识别规则接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityDataClassificationRule
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityDataClassificationRuleRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityDataClassificationRuleResponse`
+        """
+        http_info = self._update_security_data_classification_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_data_classification_rule_invoker(self, request):
+        http_info = self._update_security_data_classification_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_data_classification_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityDataClassificationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_permission_set(self, request):
+        """更新权限集
+
+        更新权限集
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityPermissionSet
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityPermissionSetRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityPermissionSetResponse`
+        """
+        http_info = self._update_security_permission_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_permission_set_invoker(self, request):
+        http_info = self._update_security_permission_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_permission_set_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityPermissionSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_permission_set_permission(self, request):
+        """更新权限集的权限
+
+        更新权限集的权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityPermissionSetPermission
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityPermissionSetPermissionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityPermissionSetPermissionResponse`
+        """
+        http_info = self._update_security_permission_set_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_permission_set_permission_invoker(self, request):
+        http_info = self._update_security_permission_set_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_permission_set_permission_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/permission-sets/{permission_set_id}/permissions/{permission_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityPermissionSetPermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_set_id' in local_var_params:
+            path_params['permission_set_id'] = local_var_params['permission_set_id']
+        if 'permission_id' in local_var_params:
+            path_params['permission_id'] = local_var_params['permission_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_rule_enable_status(self, request):
+        """修改识别规则状态接口
+
+        修改识别规则状态接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityRuleEnableStatus
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityRuleEnableStatusRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityRuleEnableStatusResponse`
+        """
+        http_info = self._update_security_rule_enable_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_rule_enable_status_invoker(self, request):
+        http_info = self._update_security_rule_enable_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_rule_enable_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/data-classification/rule/switch-status/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityRuleEnableStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -15298,6 +16811,78 @@ class DataArtsStudioClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_factory_job_tags(self, request):
+        """设置作业标签
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetFactoryJobTags
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.SetFactoryJobTagsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SetFactoryJobTagsResponse`
+        """
+        http_info = self._set_factory_job_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_factory_job_tags_invoker(self, request):
+        http_info = self._set_factory_job_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_factory_job_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/jobs/{job_name}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetFactoryJobTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_name' in local_var_params:
+            path_params['job_name'] = local_var_params['job_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'authorization' in local_var_params:
+            header_params['Authorization'] = local_var_params['authorization']
+        if 'host' in local_var_params:
+            header_params['Host'] = local_var_params['host']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

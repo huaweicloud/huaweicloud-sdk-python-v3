@@ -43,7 +43,7 @@ class ListSubMetricsRequest:
 
         :param filter: 指标数据统计方式
         :type filter: str
-        :param period: 指标数据统计周期（单位minute）
+        :param period: 指标数据统计周期，单位minute。
         :type period: int
         :param start_time: 获取指标数据起始时间
         :type start_time: int
@@ -107,7 +107,7 @@ class ListSubMetricsRequest:
     def period(self):
         """Gets the period of this ListSubMetricsRequest.
 
-        指标数据统计周期（单位minute）
+        指标数据统计周期，单位minute。
 
         :return: The period of this ListSubMetricsRequest.
         :rtype: int
@@ -118,7 +118,7 @@ class ListSubMetricsRequest:
     def period(self, period):
         """Sets the period of this ListSubMetricsRequest.
 
-        指标数据统计周期（单位minute）
+        指标数据统计周期，单位minute。
 
         :param period: The period of this ListSubMetricsRequest.
         :type period: int

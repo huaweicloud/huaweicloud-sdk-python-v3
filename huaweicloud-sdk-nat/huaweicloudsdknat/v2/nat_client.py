@@ -2603,6 +2603,406 @@ class NatClient(Client):
 
         return http_info
 
+    def batch_create_delete_nat_gateway_tag(self, request):
+        """批量添加/删除公网NAT网关资源标签
+
+        - 为指定公网NAT网关实例批量添加或删除标签。 
+        - 标签管理服务需要使用该接口批量管理实例的标签。 
+        - 一个资源上最多有10个标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateDeleteNatGatewayTag
+        :type request: :class:`huaweicloudsdknat.v2.BatchCreateDeleteNatGatewayTagRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.BatchCreateDeleteNatGatewayTagResponse`
+        """
+        http_info = self._batch_create_delete_nat_gateway_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_delete_nat_gateway_tag_invoker(self, request):
+        http_info = self._batch_create_delete_nat_gateway_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_delete_nat_gateway_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/nat_gateways/{nat_gateway_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateDeleteNatGatewayTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'nat_gateway_id' in local_var_params:
+            path_params['nat_gateway_id'] = local_var_params['nat_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_nat_gateway_tag(self, request):
+        """添加公网NAT网关资源标签
+
+        - 添加公网NAT网关资源标签。一个资源上最多有10个标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateNatGatewayTag
+        :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayTagRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayTagResponse`
+        """
+        http_info = self._create_nat_gateway_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_nat_gateway_tag_invoker(self, request):
+        http_info = self._create_nat_gateway_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_nat_gateway_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/nat_gateways/{nat_gateway_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNatGatewayTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'nat_gateway_id' in local_var_params:
+            path_params['nat_gateway_id'] = local_var_params['nat_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_nat_gateway_tag(self, request):
+        """删除公网NAT网关资源标签
+
+        - 删除指定公网NAT网关资源实例的标签信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteNatGatewayTag
+        :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayTagRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayTagResponse`
+        """
+        http_info = self._delete_nat_gateway_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_nat_gateway_tag_invoker(self, request):
+        http_info = self._delete_nat_gateway_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_nat_gateway_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/nat_gateways/{nat_gateway_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNatGatewayTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'nat_gateway_id' in local_var_params:
+            path_params['nat_gateway_id'] = local_var_params['nat_gateway_id']
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_nat_gateway_by_tag(self, request):
+        """查询公网NAT网关资源实例
+
+        - 使用标签过滤公网NAT网关资源实例。
+        - 标签管理服务需要提供按标签过滤公网NAT网关服务实例并汇总显示在列表中，需要公网NAT网关服务提供查询能力。
+        - 资源默认按照创建时间倒序，资源tag也按照创建时间倒序。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNatGatewayByTag
+        :type request: :class:`huaweicloudsdknat.v2.ListNatGatewayByTagRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewayByTagResponse`
+        """
+        http_info = self._list_nat_gateway_by_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_nat_gateway_by_tag_invoker(self, request):
+        http_info = self._list_nat_gateway_by_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_nat_gateway_by_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/nat_gateways/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNatGatewayByTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_nat_gateway_tag(self, request):
+        """查询公网NAT网关项目标签
+
+        - 查询租户在指定项目和公网NAT网关实例类型的所有标签集合。
+        - 标签管理服务需要能够列出当前租户全部已使用的标签集合，为各服务Console打标签和过滤实例时提供标签联想功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNatGatewayTag
+        :type request: :class:`huaweicloudsdknat.v2.ListNatGatewayTagRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewayTagResponse`
+        """
+        http_info = self._list_nat_gateway_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_nat_gateway_tag_invoker(self, request):
+        http_info = self._list_nat_gateway_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_nat_gateway_tag_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/nat_gateways/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNatGatewayTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_nat_gateway_tag(self, request):
+        """查询公网NAT网关资源标签
+
+        - 查询指定公网NAT网关实例的标签信息。
+        - 标签管理服务需要使用该接口查询指定公网NAT网关实例的全部标签数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowNatGatewayTag
+        :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayTagRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayTagResponse`
+        """
+        http_info = self._show_nat_gateway_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_nat_gateway_tag_invoker(self, request):
+        http_info = self._show_nat_gateway_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_nat_gateway_tag_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/nat_gateways/{nat_gateway_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNatGatewayTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'nat_gateway_id' in local_var_params:
+            path_params['nat_gateway_id'] = local_var_params['nat_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_nat_gateway_snat_rule(self, request):
         """创建SNAT规则
 

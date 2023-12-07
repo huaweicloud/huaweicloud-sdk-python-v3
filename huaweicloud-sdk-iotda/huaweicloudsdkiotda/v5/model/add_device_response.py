@@ -29,7 +29,7 @@ class AddDeviceResponse(SdkResponse):
         'fw_version': 'str',
         'sw_version': 'str',
         'device_sdk_version': 'str',
-        'auth_info': 'AuthInfo',
+        'auth_info': 'AuthInfoRes',
         'product_id': 'str',
         'product_name': 'str',
         'status': 'str',
@@ -91,7 +91,7 @@ class AddDeviceResponse(SdkResponse):
         :param device_sdk_version: 设备的sdk信息。
         :type device_sdk_version: str
         :param auth_info: 
-        :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfo`
+        :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfoRes`
         :param product_id: 设备关联的产品ID，用于唯一标识一个产品模型。
         :type product_id: str
         :param product_name: 设备关联的产品名称。
@@ -422,7 +422,7 @@ class AddDeviceResponse(SdkResponse):
         """Gets the auth_info of this AddDeviceResponse.
 
         :return: The auth_info of this AddDeviceResponse.
-        :rtype: :class:`huaweicloudsdkiotda.v5.AuthInfo`
+        :rtype: :class:`huaweicloudsdkiotda.v5.AuthInfoRes`
         """
         return self._auth_info
 
@@ -431,7 +431,7 @@ class AddDeviceResponse(SdkResponse):
         """Sets the auth_info of this AddDeviceResponse.
 
         :param auth_info: The auth_info of this AddDeviceResponse.
-        :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfo`
+        :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfoRes`
         """
         self._auth_info = auth_info
 

@@ -51,7 +51,7 @@ class AppQuotaInfo:
         :type name: str
         :param call_limits: 凭据配额的访问次数限制
         :type call_limits: int
-        :param time_unit: 限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
+        :param time_unit: 限定时间单位：SECOND:秒、MINUTE:分、HOUR:时、DAY:天
         :type time_unit: str
         :param time_interval: 配额的限定时间值
         :type time_interval: int
@@ -167,7 +167,7 @@ class AppQuotaInfo:
     def time_unit(self):
         """Gets the time_unit of this AppQuotaInfo.
 
-        限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
+        限定时间单位：SECOND:秒、MINUTE:分、HOUR:时、DAY:天
 
         :return: The time_unit of this AppQuotaInfo.
         :rtype: str
@@ -178,7 +178,7 @@ class AppQuotaInfo:
     def time_unit(self, time_unit):
         """Sets the time_unit of this AppQuotaInfo.
 
-        限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
+        限定时间单位：SECOND:秒、MINUTE:分、HOUR:时、DAY:天
 
         :param time_unit: The time_unit of this AppQuotaInfo.
         :type time_unit: str

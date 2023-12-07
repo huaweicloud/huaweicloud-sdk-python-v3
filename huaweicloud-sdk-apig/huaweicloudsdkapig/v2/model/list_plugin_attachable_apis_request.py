@@ -89,8 +89,7 @@ class ListPluginAttachableApisRequest:
         if limit is not None:
             self.limit = limit
         self.plugin_id = plugin_id
-        if env_id is not None:
-            self.env_id = env_id
+        self.env_id = env_id
         if api_name is not None:
             self.api_name = api_name
         if api_id is not None:

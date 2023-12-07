@@ -18,21 +18,25 @@ class EventStreamingSink:
 
     openapi_types = {
         'sink_fg': 'SinkFGParameters',
+        'sink_kafka': 'SinkKafkaParameters',
         'name': 'str'
     }
 
     attribute_map = {
         'sink_fg': 'sink_fg',
+        'sink_kafka': 'sink_kafka',
         'name': 'name'
     }
 
-    def __init__(self, sink_fg=None, name=None):
+    def __init__(self, sink_fg=None, sink_kafka=None, name=None):
         """EventStreamingSink
 
         The model defined in huaweicloud sdk
 
         :param sink_fg: 
         :type sink_fg: :class:`huaweicloudsdkeg.v1.SinkFGParameters`
+        :param sink_kafka: 
+        :type sink_kafka: :class:`huaweicloudsdkeg.v1.SinkKafkaParameters`
         :param name: 事件目标类型名称
         :type name: str
         """
@@ -40,11 +44,14 @@ class EventStreamingSink:
         
 
         self._sink_fg = None
+        self._sink_kafka = None
         self._name = None
         self.discriminator = None
 
         if sink_fg is not None:
             self.sink_fg = sink_fg
+        if sink_kafka is not None:
+            self.sink_kafka = sink_kafka
         if name is not None:
             self.name = name
 
@@ -65,6 +72,24 @@ class EventStreamingSink:
         :type sink_fg: :class:`huaweicloudsdkeg.v1.SinkFGParameters`
         """
         self._sink_fg = sink_fg
+
+    @property
+    def sink_kafka(self):
+        """Gets the sink_kafka of this EventStreamingSink.
+
+        :return: The sink_kafka of this EventStreamingSink.
+        :rtype: :class:`huaweicloudsdkeg.v1.SinkKafkaParameters`
+        """
+        return self._sink_kafka
+
+    @sink_kafka.setter
+    def sink_kafka(self, sink_kafka):
+        """Sets the sink_kafka of this EventStreamingSink.
+
+        :param sink_kafka: The sink_kafka of this EventStreamingSink.
+        :type sink_kafka: :class:`huaweicloudsdkeg.v1.SinkKafkaParameters`
+        """
+        self._sink_kafka = sink_kafka
 
     @property
     def name(self):

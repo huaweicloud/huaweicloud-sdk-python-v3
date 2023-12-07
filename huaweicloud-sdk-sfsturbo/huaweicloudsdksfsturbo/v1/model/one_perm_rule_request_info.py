@@ -33,7 +33,7 @@ class OnePermRuleRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param ip_cidr: 授权对象的IP地址或网段
+        :param ip_cidr: 授权对象的IP地址或网段，设置后不支持修改
         :type ip_cidr: str
         :param rw_type: -| 授权对象的读写权限 rw：默认选项，以读写的方式共享 ro：以只读的方式共享
         :type rw_type: str
@@ -59,7 +59,7 @@ class OnePermRuleRequestInfo:
     def ip_cidr(self):
         """Gets the ip_cidr of this OnePermRuleRequestInfo.
 
-        授权对象的IP地址或网段
+        授权对象的IP地址或网段，设置后不支持修改
 
         :return: The ip_cidr of this OnePermRuleRequestInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class OnePermRuleRequestInfo:
     def ip_cidr(self, ip_cidr):
         """Sets the ip_cidr of this OnePermRuleRequestInfo.
 
-        授权对象的IP地址或网段
+        授权对象的IP地址或网段，设置后不支持修改
 
         :param ip_cidr: The ip_cidr of this OnePermRuleRequestInfo.
         :type ip_cidr: str

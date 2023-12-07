@@ -29,7 +29,7 @@ class EndpointPermissionList:
 
         The model defined in huaweicloud sdk
 
-        :param permissions: 权限列表
+        :param permissions: 白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
         :type permissions: list[str]
         """
         
@@ -44,7 +44,7 @@ class EndpointPermissionList:
     def permissions(self):
         """Gets the permissions of this EndpointPermissionList.
 
-        权限列表
+        白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
 
         :return: The permissions of this EndpointPermissionList.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class EndpointPermissionList:
     def permissions(self, permissions):
         """Sets the permissions of this EndpointPermissionList.
 
-        权限列表
+        白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
 
         :param permissions: The permissions of this EndpointPermissionList.
         :type permissions: list[str]

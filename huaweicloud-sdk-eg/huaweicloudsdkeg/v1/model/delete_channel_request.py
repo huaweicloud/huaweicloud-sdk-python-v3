@@ -17,28 +17,35 @@ class DeleteChannelRequest:
     sensitive_list = []
 
     openapi_types = {
-        'channel_id': 'str'
+        'channel_id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
-        'channel_id': 'channel_id'
+        'channel_id': 'channel_id',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, channel_id=None):
+    def __init__(self, channel_id=None, enterprise_project_id=None):
         """DeleteChannelRequest
 
         The model defined in huaweicloud sdk
 
         :param channel_id: 指定查询的事件通道ID
         :type channel_id: str
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
         """
         
         
 
         self._channel_id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.channel_id = channel_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def channel_id(self):
@@ -61,6 +68,28 @@ class DeleteChannelRequest:
         :type channel_id: str
         """
         self._channel_id = channel_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this DeleteChannelRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this DeleteChannelRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this DeleteChannelRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this DeleteChannelRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

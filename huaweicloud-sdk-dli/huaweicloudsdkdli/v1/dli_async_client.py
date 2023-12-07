@@ -440,10 +440,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesResponse`
         """
+        warnings.warn("Method 'show_sql_sample_templates_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_sql_sample_templates_http_info(request)
         return self._call_api(**http_info)
 
     def show_sql_sample_templates_async_invoker(self, request):
+        warnings.warn("Method 'show_sql_sample_templates_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_sql_sample_templates_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -771,10 +773,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansResponse`
         """
+        warnings.warn("Method 'batch_delete_queue_plans_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_delete_queue_plans_http_info(request)
         return self._call_api(**http_info)
 
     def batch_delete_queue_plans_async_invoker(self, request):
+        warnings.warn("Method 'batch_delete_queue_plans_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_delete_queue_plans_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -840,10 +844,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationResponse`
         """
+        warnings.warn("Method 'change_authorization_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_authorization_http_info(request)
         return self._call_api(**http_info)
 
     def change_authorization_async_invoker(self, request):
+        warnings.warn("Method 'change_authorization_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_authorization_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -905,10 +911,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanResponse`
         """
+        warnings.warn("Method 'change_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_queue_plan_http_info(request)
         return self._call_api(**http_info)
 
     def change_queue_plan_async_invoker(self, request):
+        warnings.warn("Method 'change_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_queue_plan_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -974,10 +982,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateAuthInfoResponse`
         """
+        warnings.warn("Method 'create_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_auth_info_http_info(request)
         return self._call_api(**http_info)
 
     def create_auth_info_async_invoker(self, request):
+        warnings.warn("Method 'create_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_auth_info_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1109,10 +1119,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionResponse`
         """
+        warnings.warn("Method 'create_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_datasource_connection_http_info(request)
         return self._call_api(**http_info)
 
     def create_datasource_connection_async_invoker(self, request):
+        warnings.warn("Method 'create_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_datasource_connection_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1174,10 +1186,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDliAgencyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDliAgencyResponse`
         """
+        warnings.warn("Method 'create_dli_agency_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_dli_agency_http_info(request)
         return self._call_api(**http_info)
 
     def create_dli_agency_async_invoker(self, request):
+        warnings.warn("Method 'create_dli_agency_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_dli_agency_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1369,10 +1383,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesResponse`
         """
+        warnings.warn("Method 'create_enhanced_connection_routes_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_enhanced_connection_routes_http_info(request)
         return self._call_api(**http_info)
 
     def create_enhanced_connection_routes_async_invoker(self, request):
+        warnings.warn("Method 'create_enhanced_connection_routes_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_enhanced_connection_routes_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1449,6 +1465,71 @@ class DliAsyncClient(Client):
             "resource_path": "/v1.0/{project_id}/variables",
             "request_type": request.__class__.__name__,
             "response_type": "CreateGlobalVariableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_job_auth_info_async(self, request):
+        """创建跨源认证
+
+        该API用于创建跨源认证。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateJobAuthInfo
+        :type request: :class:`huaweicloudsdkdli.v1.CreateJobAuthInfoRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateJobAuthInfoResponse`
+        """
+        http_info = self._create_job_auth_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_job_auth_info_async_invoker(self, request):
+        http_info = self._create_job_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_job_auth_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateJobAuthInfoResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1566,10 +1647,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePlanResponse`
         """
+        warnings.warn("Method 'create_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_queue_plan_http_info(request)
         return self._call_api(**http_info)
 
     def create_queue_plan_async_invoker(self, request):
+        warnings.warn("Method 'create_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_queue_plan_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1700,10 +1783,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoResponse`
         """
+        warnings.warn("Method 'delete_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_auth_info_http_info(request)
         return self._call_api(**http_info)
 
     def delete_auth_info_async_invoker(self, request):
+        warnings.warn("Method 'delete_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_auth_info_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1767,10 +1852,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionResponse`
         """
+        warnings.warn("Method 'delete_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_datasource_connection_http_info(request)
         return self._call_api(**http_info)
 
     def delete_datasource_connection_async_invoker(self, request):
+        warnings.warn("Method 'delete_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_datasource_connection_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1962,10 +2049,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesResponse`
         """
+        warnings.warn("Method 'delete_enhanced_connection_routes_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_enhanced_connection_routes_http_info(request)
         return self._call_api(**http_info)
 
     def delete_enhanced_connection_routes_async_invoker(self, request):
+        warnings.warn("Method 'delete_enhanced_connection_routes_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_enhanced_connection_routes_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2082,6 +2171,71 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def delete_job_auth_info_async(self, request):
+        """删除跨源认证
+
+        该API用于删除跨源认证信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteJobAuthInfo
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteJobAuthInfoRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteJobAuthInfoResponse`
+        """
+        http_info = self._delete_job_auth_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_job_auth_info_async_invoker(self, request):
+        http_info = self._delete_job_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_job_auth_info_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/datasource/auth-infos/{auth_info_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobAuthInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'auth_info_name' in local_var_params:
+            path_params['auth_info_name'] = local_var_params['auth_info_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_queue_async(self, request):
         """删除队列
 
@@ -2161,10 +2315,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanResponse`
         """
+        warnings.warn("Method 'delete_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_queue_plan_http_info(request)
         return self._call_api(**http_info)
 
     def delete_queue_plan_async_invoker(self, request):
+        warnings.warn("Method 'delete_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_queue_plan_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2295,10 +2451,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteResourceResponse`
         """
+        warnings.warn("Method 'delete_resource_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_resource_http_info(request)
         return self._call_api(**http_info)
 
     def delete_resource_async_invoker(self, request):
+        warnings.warn("Method 'delete_resource_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_resource_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2429,10 +2587,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListAuthInfoResponse`
         """
+        warnings.warn("Method 'list_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_auth_info_http_info(request)
         return self._call_api(**http_info)
 
     def list_auth_info_async_invoker(self, request):
+        warnings.warn("Method 'list_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_auth_info_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2563,10 +2723,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersResponse`
         """
+        warnings.warn("Method 'list_database_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_database_users_http_info(request)
         return self._call_api(**http_info)
 
     def list_database_users_async_invoker(self, request):
+        warnings.warn("Method 'list_database_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_database_users_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2628,10 +2790,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsResponse`
         """
+        warnings.warn("Method 'list_datasource_connections_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_datasource_connections_http_info(request)
         return self._call_api(**http_info)
 
     def list_datasource_connections_async_invoker(self, request):
+        warnings.warn("Method 'list_datasource_connections_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_datasource_connections_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3040,6 +3204,75 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def list_job_auth_infos_async(self, request):
+        """查询增强型跨源授权信息
+
+        该API用于查询跨源认证信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJobAuthInfos
+        :type request: :class:`huaweicloudsdkdli.v1.ListJobAuthInfosRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListJobAuthInfosResponse`
+        """
+        http_info = self._list_job_auth_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_job_auth_infos_async_invoker(self, request):
+        http_info = self._list_job_auth_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_job_auth_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobAuthInfosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'auth_info_name' in local_var_params:
+            query_params.append(('auth_info_name', local_var_params['auth_info_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_queue_plans_async(self, request):
         """查看队列定时扩缩容计划
 
@@ -3052,10 +3285,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueuePlansRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueuePlansResponse`
         """
+        warnings.warn("Method 'list_queue_plans_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_queue_plans_http_info(request)
         return self._call_api(**http_info)
 
     def list_queue_plans_async_invoker(self, request):
+        warnings.warn("Method 'list_queue_plans_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_queue_plans_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3186,10 +3421,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueueUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueueUsersResponse`
         """
+        warnings.warn("Method 'list_queue_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_queue_users_http_info(request)
         return self._call_api(**http_info)
 
     def list_queue_users_async_invoker(self, request):
+        warnings.warn("Method 'list_queue_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_queue_users_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3322,10 +3559,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListResourcesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListResourcesResponse`
         """
+        warnings.warn("Method 'list_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_resources_http_info(request)
         return self._call_api(**http_info)
 
     def list_resources_async_invoker(self, request):
+        warnings.warn("Method 'list_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_resources_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3389,10 +3628,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesResponse`
         """
+        warnings.warn("Method 'list_table_privileges_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_table_privileges_http_info(request)
         return self._call_api(**http_info)
 
     def list_table_privileges_async_invoker(self, request):
+        warnings.warn("Method 'list_table_privileges_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_table_privileges_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3458,10 +3699,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListTableUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListTableUsersResponse`
         """
+        warnings.warn("Method 'list_table_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_table_users_http_info(request)
         return self._call_api(**http_info)
 
     def list_table_users_async_invoker(self, request):
+        warnings.warn("Method 'list_table_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_table_users_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3525,10 +3768,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueResponse`
         """
+        warnings.warn("Method 'register_authorized_queue_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._register_authorized_queue_http_info(request)
         return self._call_api(**http_info)
 
     def register_authorized_queue_async_invoker(self, request):
+        warnings.warn("Method 'register_authorized_queue_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._register_authorized_queue_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3789,10 +4034,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResponse`
         """
+        warnings.warn("Method 'show_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_datasource_connection_http_info(request)
         return self._call_api(**http_info)
 
     def show_datasource_connection_async_invoker(self, request):
+        warnings.warn("Method 'show_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_datasource_connection_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3854,10 +4101,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDliAgencyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDliAgencyResponse`
         """
+        warnings.warn("Method 'show_dli_agency_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_dli_agency_http_info(request)
         return self._call_api(**http_info)
 
     def show_dli_agency_async_invoker(self, request):
+        warnings.warn("Method 'show_dli_agency_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_dli_agency_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4175,10 +4424,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowResourceInfoResponse`
         """
+        warnings.warn("Method 'show_resource_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_resource_info_http_info(request)
         return self._call_api(**http_info)
 
     def show_resource_info_async_invoker(self, request):
+        warnings.warn("Method 'show_resource_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_resource_info_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4242,10 +4493,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoResponse`
         """
+        warnings.warn("Method 'update_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_auth_info_http_info(request)
         return self._call_api(**http_info)
 
     def update_auth_info_async_invoker(self, request):
+        warnings.warn("Method 'update_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_auth_info_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4577,10 +4830,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerResponse`
         """
+        warnings.warn("Method 'update_group_or_resource_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_group_or_resource_owner_http_info(request)
         return self._call_api(**http_info)
 
     def update_group_or_resource_owner_async_invoker(self, request):
+        warnings.warn("Method 'update_group_or_resource_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_group_or_resource_owner_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4590,6 +4845,71 @@ class DliAsyncClient(Client):
             "resource_path": "/v2.0/{project_id}/resources/owner",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateGroupOrResourceOwnerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_job_auth_info_async(self, request):
+        """更新跨源认证
+
+        该API用于更新跨源认证信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateJobAuthInfo
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateJobAuthInfoRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateJobAuthInfoResponse`
+        """
+        http_info = self._update_job_auth_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_job_auth_info_async_invoker(self, request):
+        http_info = self._update_job_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_job_auth_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobAuthInfoResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4644,10 +4964,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrResponse`
         """
+        warnings.warn("Method 'update_queue_cidr_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_queue_cidr_http_info(request)
         return self._call_api(**http_info)
 
     def update_queue_cidr_async_invoker(self, request):
+        warnings.warn("Method 'update_queue_cidr_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_queue_cidr_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4779,10 +5101,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadFilesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadFilesResponse`
         """
+        warnings.warn("Method 'upload_files_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upload_files_http_info(request)
         return self._call_api(**http_info)
 
     def upload_files_async_invoker(self, request):
+        warnings.warn("Method 'upload_files_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upload_files_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4847,10 +5171,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadJarsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadJarsResponse`
         """
+        warnings.warn("Method 'upload_jars_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upload_jars_http_info(request)
         return self._call_api(**http_info)
 
     def upload_jars_async_invoker(self, request):
+        warnings.warn("Method 'upload_jars_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upload_jars_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4915,10 +5241,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadPythonFilesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadPythonFilesResponse`
         """
+        warnings.warn("Method 'upload_python_files_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upload_python_files_http_info(request)
         return self._call_api(**http_info)
 
     def upload_python_files_async_invoker(self, request):
+        warnings.warn("Method 'upload_python_files_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upload_python_files_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4982,10 +5310,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadResourcesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadResourcesResponse`
         """
+        warnings.warn("Method 'upload_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upload_resources_http_info(request)
         return self._call_api(**http_info)
 
     def upload_resources_async_invoker(self, request):
+        warnings.warn("Method 'upload_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upload_resources_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -5179,10 +5509,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportResponse`
         """
+        warnings.warn("Method 'change_flink_job_status_report_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_flink_job_status_report_http_info(request)
         return self._call_api(**http_info)
 
     def change_flink_job_status_report_async_invoker(self, request):
+        warnings.warn("Method 'change_flink_job_status_report_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_flink_job_status_report_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -5506,10 +5838,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelResponse`
         """
+        warnings.warn("Method 'create_ief_message_channel_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_ief_message_channel_http_info(request)
         return self._call_api(**http_info)
 
     def create_ief_message_channel_async_invoker(self, request):
+        warnings.warn("Method 'create_ief_message_channel_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_ief_message_channel_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -5571,10 +5905,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsResponse`
         """
+        warnings.warn("Method 'create_ief_system_events_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_ief_system_events_http_info(request)
         return self._call_api(**http_info)
 
     def create_ief_system_events_async_invoker(self, request):
+        warnings.warn("Method 'create_ief_system_events_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_ief_system_events_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -6056,10 +6392,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RegisterBucketRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RegisterBucketResponse`
         """
+        warnings.warn("Method 'register_bucket_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._register_bucket_http_info(request)
         return self._call_api(**http_info)
 
     def register_bucket_async_invoker(self, request):
+        warnings.warn("Method 'register_bucket_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._register_bucket_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -6121,10 +6459,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackResponse`
         """
+        warnings.warn("Method 'run_ief_job_action_call_back_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._run_ief_job_action_call_back_http_info(request)
         return self._call_api(**http_info)
 
     def run_ief_job_action_call_back_async_invoker(self, request):
+        warnings.warn("Method 'run_ief_job_action_call_back_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._run_ief_job_action_call_back_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -6316,10 +6656,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricResponse`
         """
+        warnings.warn("Method 'show_flink_metric_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_flink_metric_http_info(request)
         return self._call_api(**http_info)
 
     def show_flink_metric_async_invoker(self, request):
+        warnings.warn("Method 'show_flink_metric_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_flink_metric_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -6777,10 +7119,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDatabaseResponse`
         """
+        warnings.warn("Method 'create_database_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_database_http_info(request)
         return self._call_api(**http_info)
 
     def create_database_async_invoker(self, request):
+        warnings.warn("Method 'create_database_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_database_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -6909,10 +7253,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateTableResponse`
         """
+        warnings.warn("Method 'create_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_table_http_info(request)
         return self._call_api(**http_info)
 
     def create_table_async_invoker(self, request):
+        warnings.warn("Method 'create_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_table_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -6976,10 +7322,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatabaseResponse`
         """
+        warnings.warn("Method 'delete_database_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_database_http_info(request)
         return self._call_api(**http_info)
 
     def delete_database_async_invoker(self, request):
+        warnings.warn("Method 'delete_database_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_database_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7045,10 +7393,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteTableResponse`
         """
+        warnings.warn("Method 'delete_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_table_http_info(request)
         return self._call_api(**http_info)
 
     def delete_table_async_invoker(self, request):
+        warnings.warn("Method 'delete_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_table_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7114,10 +7464,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultResponse`
         """
+        warnings.warn("Method 'export_sql_job_result_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._export_sql_job_result_http_info(request)
         return self._call_api(**http_info)
 
     def export_sql_job_result_async_invoker(self, request):
+        warnings.warn("Method 'export_sql_job_result_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._export_sql_job_result_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7181,10 +7533,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportTableResponse`
         """
+        warnings.warn("Method 'export_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._export_table_http_info(request)
         return self._call_api(**http_info)
 
     def export_table_async_invoker(self, request):
+        warnings.warn("Method 'export_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._export_table_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7246,10 +7600,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ImportTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ImportTableResponse`
         """
+        warnings.warn("Method 'import_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._import_table_http_info(request)
         return self._call_api(**http_info)
 
     def import_table_async_invoker(self, request):
+        warnings.warn("Method 'import_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._import_table_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7311,10 +7667,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListAllTablesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListAllTablesResponse`
         """
+        warnings.warn("Method 'list_all_tables_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_all_tables_http_info(request)
         return self._call_api(**http_info)
 
     def list_all_tables_async_invoker(self, request):
+        warnings.warn("Method 'list_all_tables_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_all_tables_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7388,10 +7746,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatabasesResponse`
         """
+        warnings.warn("Method 'list_databases_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_databases_http_info(request)
         return self._call_api(**http_info)
 
     def list_databases_async_invoker(self, request):
+        warnings.warn("Method 'list_databases_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_databases_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7620,10 +7980,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDescribeTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDescribeTableResponse`
         """
+        warnings.warn("Method 'show_describe_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_describe_table_http_info(request)
         return self._call_api(**http_info)
 
     def show_describe_table_async_invoker(self, request):
+        warnings.warn("Method 'show_describe_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_describe_table_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7686,10 +8048,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowPartitionsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowPartitionsResponse`
         """
+        warnings.warn("Method 'show_partitions_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_partitions_http_info(request)
         return self._call_api(**http_info)
 
     def show_partitions_async_invoker(self, request):
+        warnings.warn("Method 'show_partitions_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_partitions_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7952,10 +8316,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowTableContentRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowTableContentResponse`
         """
+        warnings.warn("Method 'show_table_content_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_table_content_http_info(request)
         return self._call_api(**http_info)
 
     def show_table_content_async_invoker(self, request):
+        warnings.warn("Method 'show_table_content_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_table_content_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -8021,10 +8387,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerResponse`
         """
+        warnings.warn("Method 'update_database_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_database_owner_http_info(request)
         return self._call_api(**http_info)
 
     def update_database_owner_async_invoker(self, request):
+        warnings.warn("Method 'update_database_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_database_owner_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -8088,10 +8456,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerResponse`
         """
+        warnings.warn("Method 'update_table_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_table_owner_http_info(request)
         return self._call_api(**http_info)
 
     def update_table_owner_async_invoker(self, request):
+        warnings.warn("Method 'update_table_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_table_owner_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -8372,10 +8742,12 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchLogRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowBatchLogResponse`
         """
+        warnings.warn("Method 'show_batch_log_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_batch_log_http_info(request)
         return self._call_api(**http_info)
 
     def show_batch_log_async_invoker(self, request):
+        warnings.warn("Method 'show_batch_log_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_batch_log_http_info(request)
         return AsyncInvoker(self, http_info)
 

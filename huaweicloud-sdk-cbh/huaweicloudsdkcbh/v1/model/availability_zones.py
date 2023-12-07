@@ -62,8 +62,7 @@ class AvailabilityZones:
         self.display_name = display_name
         self.region_id = region_id
         self.status = status
-        if type is not None:
-            self.type = type
+        self.type = type
 
     @property
     def id(self):

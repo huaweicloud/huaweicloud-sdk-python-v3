@@ -18,8 +18,8 @@ class ConfigNasTarget:
 
     openapi_types = {
         'name': 'str',
-        'type': 'object',
-        'url': 'object'
+        'type': 'str',
+        'url': 'str'
     }
 
     attribute_map = {
@@ -36,9 +36,9 @@ class ConfigNasTarget:
         :param name: nas 配置名
         :type name: str
         :param type: nas 配置协议类型
-        :type type: object
+        :type type: str
         :param url: nas 配置 ip
-        :type url: object
+        :type url: str
         """
         
         
@@ -81,7 +81,7 @@ class ConfigNasTarget:
         nas 配置协议类型
 
         :return: The type of this ConfigNasTarget.
-        :rtype: object
+        :rtype: str
         """
         return self._type
 
@@ -92,7 +92,7 @@ class ConfigNasTarget:
         nas 配置协议类型
 
         :param type: The type of this ConfigNasTarget.
-        :type type: object
+        :type type: str
         """
         self._type = type
 
@@ -103,7 +103,7 @@ class ConfigNasTarget:
         nas 配置 ip
 
         :return: The url of this ConfigNasTarget.
-        :rtype: object
+        :rtype: str
         """
         return self._url
 
@@ -114,7 +114,7 @@ class ConfigNasTarget:
         nas 配置 ip
 
         :param url: The url of this ConfigNasTarget.
-        :type url: object
+        :type url: str
         """
         self._url = url
 

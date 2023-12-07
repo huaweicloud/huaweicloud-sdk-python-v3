@@ -126,7 +126,7 @@ class UpdateInstanceV2Response(SdkResponse):
         :type spec: str
         :param create_time: 实例创建时间。unix时间戳格式。
         :type create_time: int
-        :param enterprise_project_id: 企业项目ID，企业帐号必填
+        :param enterprise_project_id: 企业项目ID，企业账号必填
         :type enterprise_project_id: str
         :param eip_address: 实例绑定的弹性IP地址
         :type eip_address: str
@@ -502,7 +502,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateInstanceV2Response.
 
-        企业项目ID，企业帐号必填
+        企业项目ID，企业账号必填
 
         :return: The enterprise_project_id of this UpdateInstanceV2Response.
         :rtype: str
@@ -513,7 +513,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateInstanceV2Response.
 
-        企业项目ID，企业帐号必填
+        企业项目ID，企业账号必填
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateInstanceV2Response.
         :type enterprise_project_id: str

@@ -51,7 +51,7 @@ class ApiCheckInfo:
         :type match_mode: str
         :param group_id: 分组ID。  校验分组下API定义是否重复时必填
         :type group_id: str
-        :param roma_app_id: 集成应用ID。  校验应用下API定义是否重复时必填
+        :param roma_app_id: 集成应用ID  暂不支持
         :type roma_app_id: str
         :param api_id: 需要对比的API ID
         :type api_id: str
@@ -197,7 +197,7 @@ class ApiCheckInfo:
     def roma_app_id(self):
         """Gets the roma_app_id of this ApiCheckInfo.
 
-        集成应用ID。  校验应用下API定义是否重复时必填
+        集成应用ID  暂不支持
 
         :return: The roma_app_id of this ApiCheckInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class ApiCheckInfo:
     def roma_app_id(self, roma_app_id):
         """Sets the roma_app_id of this ApiCheckInfo.
 
-        集成应用ID。  校验应用下API定义是否重复时必填
+        集成应用ID  暂不支持
 
         :param roma_app_id: The roma_app_id of this ApiCheckInfo.
         :type roma_app_id: str

@@ -30,7 +30,7 @@ class CreateStackInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param stack_set_operation_id: 资源栈集操作（operation）的唯一Id。  此Id由资源编排服务在生成资源栈集操作的时候生成，为UUID。
+        :param stack_set_operation_id: 资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
         :type stack_set_operation_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateStackInstanceResponse(SdkResponse):
     def stack_set_operation_id(self):
         """Gets the stack_set_operation_id of this CreateStackInstanceResponse.
 
-        资源栈集操作（operation）的唯一Id。  此Id由资源编排服务在生成资源栈集操作的时候生成，为UUID。
+        资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
         :return: The stack_set_operation_id of this CreateStackInstanceResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateStackInstanceResponse(SdkResponse):
     def stack_set_operation_id(self, stack_set_operation_id):
         """Sets the stack_set_operation_id of this CreateStackInstanceResponse.
 
-        资源栈集操作（operation）的唯一Id。  此Id由资源编排服务在生成资源栈集操作的时候生成，为UUID。
+        资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
         :param stack_set_operation_id: The stack_set_operation_id of this CreateStackInstanceResponse.
         :type stack_set_operation_id: str
