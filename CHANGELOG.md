@@ -1,3 +1,431 @@
+# 3.1.72 2023-12-14
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - Support the API `DeleteBaremetalServer`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateBareMetalServers**
+    - changes of request param
+      - `+ server.root_volume.volumetype: enum value [GPSSD]`
+      - `+ server.data_volumes.volumetype: enum value [GPSSD]`
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - Support the APIs `ShowMonitorSystem`, `CreateMonitorSystem`, `UpdateMonitorSystem`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListComponentConfigurations**
+    - changes of response param
+      - `+ items.data.spec.instrumentation`
+      - `+ items.data.spec.apm_application`
+      - `+ items.data.spec.type`
+      - `+ items.data.spec.app_name`
+      - `+ items.data.spec.instance_name`
+      - `+ items.data.spec.env_name`
+      - `- items.data.spec.image_pull_policy: enum value [Always,IfNotPresent]`
+  - **CreateComponentConfiguration**
+    - changes of request param
+      - `+ items.data.spec.instrumentation`
+      - `+ items.data.spec.apm_application`
+      - `+ items.data.spec.type`
+      - `+ items.data.spec.app_name`
+      - `+ items.data.spec.instance_name`
+      - `+ items.data.spec.env_name`
+      - `- items.data.spec.image_pull_policy: enum value [Always,IfNotPresent]`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlarmTemplates**
+    - changes of request param
+      - `+ template_type: enum value [system_event,custom_event,system_custom_event]`
+  - **CreateAlarmTemplate**
+    - changes of request param
+      - `+ template_type`
+      - `+ policies.period: enum value [0]`
+  - **UpdateAlarmTemplate**
+    - changes of request param
+      - `+ policies.period: enum value [0]`
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - Support the APIs `CreateFirewall`, `ListJob`, `DeleteFirewall`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudTable
+
+- _Features_
+  - Support the API `CreateCloudTableCluster`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - Support the API `ShowPipelineDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Config
+
+- _Features_
+  - Support the following APIs:
+    - `ListTrackedResources`
+    - `CountTrackedResources`
+    - `ListTrackedResourceTags`
+    - `CollectTrackedResourcesSummary`
+    - `ShowTrackedResourceDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support the APIs `DeleteRouteFromEnhancedConnection`, `CreateRouteToEnhancedConnection`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the following APIs:
+    - `ListLogicalClusterVolumes`
+    - `ResizeClusterWithExistedNodes`
+    - `RestartLogicalCluster`
+    - `ListTopoRings`
+    - `UpdateLogicalCluster`
+    - `DeleteLogicalCluster`
+    - `EnableLogicalCluster`
+    - `ListClusterNodes`
+    - `ConvertToLogicalCluster`
+    - `RestoreRedistribution`
+    - `StopRedistribution`
+    - `ListLogicalClusterTasks`
+    - `ListLogicalClusters`
+    - `CreateLogicalCluster`
+    - `DeleteClusterNodes`
+    - `ListLogicalClusterRings`
+    - `ListLtsLogs`
+    - `ListQueries`
+    - `ListTablesStatistic`
+    - `ShowQueryDetail`
+    - `DisableLtsLogs`
+    - `EnableLtsLogs`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListHostDisk**
+    - changes of request param
+      - `+ instance_id`
+    - changes of response param
+      - `+ instance_id`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowResInstanceInfo**
+    - changes of response param
+      - `+ resources.resource_detail.detailId`
+      - `- resources.resource_detail.resource_id`
+      - `- resources.resource_detail.func_urn`
+      - `- resources.resource_detail.func_name`
+      - `- resources.resource_detail.domain_id`
+      - `- resources.resource_detail.namespace`
+      - `- resources.resource_detail.project_name`
+      - `- resources.resource_detail.package`
+      - `- resources.resource_detail.runtime`
+      - `- resources.resource_detail.timeout`
+      - `- resources.resource_detail.handler`
+      - `- resources.resource_detail.memory_size`
+      - `- resources.resource_detail.gpu_memory`
+      - `- resources.resource_detail.cpu`
+      - `- resources.resource_detail.code_type`
+      - `- resources.resource_detail.code_url`
+      - `- resources.resource_detail.code_filename`
+      - `- resources.resource_detail.code_size`
+      - `- resources.resource_detail.user_data`
+      - `- resources.resource_detail.encrypted_user_data`
+      - `- resources.resource_detail.digest`
+      - `- resources.resource_detail.version`
+      - `- resources.resource_detail.image_name`
+      - `- resources.resource_detail.xrole`
+      - `- resources.resource_detail.app_xrole`
+      - `- resources.resource_detail.description`
+      - `- resources.resource_detail.last_modified`
+      - `- resources.resource_detail.func_vpc_id`
+      - `- resources.resource_detail.strategy_config`
+      - `- resources.resource_detail.extend_config`
+      - `- resources.resource_detail.initializer_handler`
+      - `- resources.resource_detail.initializer_timeout`
+      - `- resources.resource_detail.pre_stop_handler`
+      - `- resources.resource_detail.pre_stop_timeout`
+      - `- resources.resource_detail.enterprise_project_id`
+      - `- resources.resource_detail.long_time`
+      - `- resources.resource_detail.log_group_id`
+      - `- resources.resource_detail.log_stream_id`
+      - `- resources.resource_detail.type`
+      - `- resources.resource_detail.fail_count`
+      - `- resources.resource_detail.is_bridge_function`
+      - `- resources.resource_detail.bind_bridge_funcUrns`
+      - `* resources.resource_detail: object<ListFunctionResult> -> object<ListEnterpriseResourceDetail>`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAsyncCommand**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+  - **ShowAsyncDeviceCommand**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+  - **BroadcastMessage**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+  - **CreateCommand**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+  - **ListProperties**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+    - changes of response param
+      - `+ request_id`
+  - **UpdateProperties**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+    - changes of response param
+      - `+ request_id`
+  - **CloseDeviceTunnel**
+    - changes of request param
+      - `+ Sp-Auth-Token`
+  - **DeleteDeviceTunnel**
+    - changes of request param
+      - `+ Sp-Auth-Token`
+  - **ShowDeviceTunnel**
+    - changes of request param
+      - `+ Sp-Auth-Token`
+  - **AddTunnel**
+    - changes of request param
+      - `+ Sp-Auth-Token`
+  - **ListDeviceTunnels**
+    - changes of request param
+      - `+ Sp-Auth-Token`
+  - **ShowDeviceMessage**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+  - **CreateMessage**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+  - **ListDeviceMessages**
+    - changes of request param
+      - `+ Stage-Auth-Token`
+      - `+ Sp-Auth-Token`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - Support the following APIs:
+    - `ListDelayConfig`
+    - `UpdateDelayConfig`
+    - `ShowPullSourcesConfig`
+    - `UpdatePullSourcesConfig`
+    - `ListGeoBlockingConfig`
+    - `UpdateGeoBlockingConfig`
+    - `CreateUrlAuthchain`
+    - `ListIpAuthList`
+    - `UpdateIpAuthList`
+    - `ListPublishTemplate`
+    - `UpdatePublishTemplate`
+    - `DeletePublishTemplate`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRecordContents**
+    - changes of request param
+      - `+ record_type: enum value [PLAN_RECORD,ON_DEMAND_RECORD]`
+    - changes of response param
+      - `- record_contents.record_type: enum value [PLAN_RECORD,ON_DEMAND_RECORD]`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the API `CreateAgencyAccess`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSqlAlarmRules**
+    - changes of response param
+      - `+ sql_alarm_rules.is_css_sql`
+      - `+ sql_alarm_rules.notification_frequency`
+      - `+ sql_alarm_rules.alarm_action_rule_name`
+      - `+ sql_alarm_rules.status: enum value [RUNNING 启用,STOPPING 停止]`
+      - `- sql_alarm_rules.status: enum value [RUNNING,STOPPING]`
+      - `* sql_alarm_rules.frequency: object<Frequency> -> object<FrequencyRespBody>`
+  - **UpdateSqlAlarmRule**
+    - changes of request param
+      - `+ is_css_sql`
+      - `+ notification_frequency`
+      - `+ alarm_action_rule_name`
+      - `* frequency: object<Frequency> -> object<CreateSqlAlarmRuleFrequency>`
+    - changes of response param
+      - `+ is_css_sql`
+      - `+ alarm_action_rule_name`
+      - `+ notification_frequency`
+      - `+ language: enum value [zh-cn,en-us]`
+      - `* frequency: object<Frequency> -> object<FrequencyRespBody>`
+  - **CreateSqlAlarmRule**
+    - changes of request param
+      - `+ is_css_sql`
+      - `+ notification_frequency`
+      - `+ alarm_action_rule_name`
+      - `* frequency: object<Frequency> -> object<CreateSqlAlarmRuleFrequency>`
+  - **ListKeywordsAlarmRules**
+    - changes of response param
+      - `+ keywords_alarm_rules.notification_frequency`
+      - `+ keywords_alarm_rules.alarm_action_rule_name`
+      - `+ keywords_alarm_rules.status: enum value [RUNNING  启用,STOPPING  停止]`
+      - `- keywords_alarm_rules.status: enum value [RUNNING,STOPPING]`
+  - **UpdateKeywordsAlarmRule**
+    - changes of request param
+      - `+ notification_frequency`
+      - `+ alarm_action_rule_name`
+    - changes of response param
+      - `+ alarm_action_rule_name`
+      - `+ notification_frequency`
+      - `+ language: enum value [zh-cn,en-us]`
+      - `- keywords_requests.search_time_range_unit: enum value [minute]`
+      - `* keywords_requests: list<KeywordsRequest> -> list<KeywordsResBody>`
+      - `* frequency: object<Frequency> -> object<FrequencyRespBody>`
+  - **CreateKeywordsAlarmRule**
+    - changes of request param
+      - `+ notification_frequency`
+      - `+ alarm_action_rule_name`
+      - `+ keywords_alarm_level: enum value [Critical]`
+      - `- keywords_alarm_level: enum value [CRITICAL]`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - Support the API `ShowMrsVersionMetadata`, `SwitchClusterTags`, `ShowTagStatus`, `ShowTagQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK NAT
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateNatGatewayTag**
+    - changes of request param
+      - `+ tag.key`
+      - `+ tag.value`
+      - `* tag: object -> object<TagBody>`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the APIs `ListLogLtsConfigs`, `SetLogLtsConfigs`, `DeleteLogLtsConfigs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateRocketMqMigrationTask**
+    - changes of request param
+      - `+ topicConfigTable`
+      - `+ subscriptionGroupTable`
+      - `+ vhosts`
+      - `+ queues`
+      - `+ exchanges`
+      - `+ bindings`
+      - `* body: map<string, object> -> object<CreateRocketMqMigrationTaskReq>`
+
+### HuaweiCloud SDK SecMaster
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlerts**
+    - changes of request param
+      - `* condition.conditions.data: list<object> -> list<string>`
+      - `* condition.logics: list<object> -> list<string>`
+  - **ListIncidents**
+    - changes of request param
+      - `* condition.conditions.data: list<object> -> list<string>`
+      - `* condition.logics: list<object> -> list<string>`
+  - **ListIndicators**
+    - changes of request param
+      - `* condition: string -> object`
+  - **ListDataobjectRelations**
+    - changes of request param
+      - `* condition.conditions.data: list<object> -> list<string>`
+      - `* condition.logics: list<object> -> list<string>`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - Support the APIs `ShowConsistencyResult`, `UpdateConsistencyResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateTaskStatus**
+    - changes of request param
+      - `+ is_need_consistency_check`
+  - **ListServers**
+    - changes of request param
+      - `+ is_consistency_result_exist`
+    - changes of response param
+      - `+ source_servers.is_consistency_result_exist`
+
 # 3.1.71 2023-12-07
 
 ### HuaweiCloud SDK AOS

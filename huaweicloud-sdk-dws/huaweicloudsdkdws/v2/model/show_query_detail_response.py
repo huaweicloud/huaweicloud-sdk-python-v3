@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DataobjectSearchConditionData:
+class ShowQueryDetailResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,109 +18,105 @@ class DataobjectSearchConditionData:
     sensitive_list = []
 
     openapi_types = {
-        'filed': 'str',
-        'expression': 'str',
-        'value': 'str'
+        'code': 'int',
+        'msg': 'str',
+        'data': 'ListQueriesDto'
     }
 
     attribute_map = {
-        'filed': 'filed',
-        'expression': 'expression',
-        'value': 'value'
+        'code': 'code',
+        'msg': 'msg',
+        'data': 'data'
     }
 
-    def __init__(self, filed=None, expression=None, value=None):
-        """DataobjectSearchConditionData
+    def __init__(self, code=None, msg=None, data=None):
+        """ShowQueryDetailResponse
 
         The model defined in huaweicloud sdk
 
-        :param filed: 字段
-        :type filed: str
-        :param expression: 逻辑表达式
-        :type expression: str
-        :param value: 字段值
-        :type value: str
+        :param code: 响应码。
+        :type code: int
+        :param msg: 响应信息。
+        :type msg: str
+        :param data: 
+        :type data: :class:`huaweicloudsdkdws.v2.ListQueriesDto`
         """
         
-        
+        super(ShowQueryDetailResponse, self).__init__()
 
-        self._filed = None
-        self._expression = None
-        self._value = None
+        self._code = None
+        self._msg = None
+        self._data = None
         self.discriminator = None
 
-        if filed is not None:
-            self.filed = filed
-        if expression is not None:
-            self.expression = expression
-        if value is not None:
-            self.value = value
+        if code is not None:
+            self.code = code
+        if msg is not None:
+            self.msg = msg
+        if data is not None:
+            self.data = data
 
     @property
-    def filed(self):
-        """Gets the filed of this DataobjectSearchConditionData.
+    def code(self):
+        """Gets the code of this ShowQueryDetailResponse.
 
-        字段
+        响应码。
 
-        :return: The filed of this DataobjectSearchConditionData.
-        :rtype: str
+        :return: The code of this ShowQueryDetailResponse.
+        :rtype: int
         """
-        return self._filed
+        return self._code
 
-    @filed.setter
-    def filed(self, filed):
-        """Sets the filed of this DataobjectSearchConditionData.
+    @code.setter
+    def code(self, code):
+        """Sets the code of this ShowQueryDetailResponse.
 
-        字段
+        响应码。
 
-        :param filed: The filed of this DataobjectSearchConditionData.
-        :type filed: str
+        :param code: The code of this ShowQueryDetailResponse.
+        :type code: int
         """
-        self._filed = filed
+        self._code = code
 
     @property
-    def expression(self):
-        """Gets the expression of this DataobjectSearchConditionData.
+    def msg(self):
+        """Gets the msg of this ShowQueryDetailResponse.
 
-        逻辑表达式
+        响应信息。
 
-        :return: The expression of this DataobjectSearchConditionData.
+        :return: The msg of this ShowQueryDetailResponse.
         :rtype: str
         """
-        return self._expression
+        return self._msg
 
-    @expression.setter
-    def expression(self, expression):
-        """Sets the expression of this DataobjectSearchConditionData.
+    @msg.setter
+    def msg(self, msg):
+        """Sets the msg of this ShowQueryDetailResponse.
 
-        逻辑表达式
+        响应信息。
 
-        :param expression: The expression of this DataobjectSearchConditionData.
-        :type expression: str
+        :param msg: The msg of this ShowQueryDetailResponse.
+        :type msg: str
         """
-        self._expression = expression
+        self._msg = msg
 
     @property
-    def value(self):
-        """Gets the value of this DataobjectSearchConditionData.
+    def data(self):
+        """Gets the data of this ShowQueryDetailResponse.
 
-        字段值
-
-        :return: The value of this DataobjectSearchConditionData.
-        :rtype: str
+        :return: The data of this ShowQueryDetailResponse.
+        :rtype: :class:`huaweicloudsdkdws.v2.ListQueriesDto`
         """
-        return self._value
+        return self._data
 
-    @value.setter
-    def value(self, value):
-        """Sets the value of this DataobjectSearchConditionData.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this ShowQueryDetailResponse.
 
-        字段值
-
-        :param value: The value of this DataobjectSearchConditionData.
-        :type value: str
+        :param data: The data of this ShowQueryDetailResponse.
+        :type data: :class:`huaweicloudsdkdws.v2.ListQueriesDto`
         """
-        self._value = value
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -163,7 +160,7 @@ class DataobjectSearchConditionData:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DataobjectSearchConditionData):
+        if not isinstance(other, ShowQueryDetailResponse):
             return False
 
         return self.__dict__ == other.__dict__

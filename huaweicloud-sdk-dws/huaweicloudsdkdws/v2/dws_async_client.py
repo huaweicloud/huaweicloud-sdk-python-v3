@@ -841,6 +841,73 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def convert_to_logical_cluster_async(self, request):
+        """物理集群转换到逻辑集群
+
+        逻辑集群-物理集群转换到逻辑集群
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ConvertToLogicalCluster
+        :type request: :class:`huaweicloudsdkdws.v2.ConvertToLogicalClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ConvertToLogicalClusterResponse`
+        """
+        http_info = self._convert_to_logical_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def convert_to_logical_cluster_async_invoker(self, request):
+        http_info = self._convert_to_logical_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _convert_to_logical_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/convert-to-logical-cluster/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConvertToLogicalClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def copy_snapshot_async(self, request):
         """复制快照
 
@@ -1438,6 +1505,73 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def create_logical_cluster_async(self, request):
+        """创建逻辑集群
+
+        逻辑集群-创建逻辑集群
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateLogicalCluster
+        :type request: :class:`huaweicloudsdkdws.v2.CreateLogicalClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateLogicalClusterResponse`
+        """
+        http_info = self._create_logical_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_logical_cluster_async_invoker(self, request):
+        http_info = self._create_logical_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_logical_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLogicalClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_snapshot_async(self, request):
         """创建快照
 
@@ -1836,6 +1970,73 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def delete_cluster_nodes_async(self, request):
+        """删除节点
+
+        此接口用于删除节点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteClusterNodes
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteClusterNodesRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteClusterNodesResponse`
+        """
+        http_info = self._delete_cluster_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_cluster_nodes_async_invoker(self, request):
+        http_info = self._delete_cluster_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_cluster_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/nodes/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClusterNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_data_source_async(self, request):
         """删除数据源
 
@@ -2004,6 +2205,73 @@ class DwsAsyncClient(Client):
         path_params = {}
         if 'event_sub_id' in local_var_params:
             path_params['event_sub_id'] = local_var_params['event_sub_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_logical_cluster_async(self, request):
+        """删除逻辑集群
+
+        此接口用于删除逻辑集群。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteLogicalCluster
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteLogicalClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteLogicalClusterResponse`
+        """
+        http_info = self._delete_logical_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_logical_cluster_async_invoker(self, request):
+        http_info = self._delete_logical_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_logical_cluster_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters/{logical_cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLogicalClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'logical_cluster_id' in local_var_params:
+            path_params['logical_cluster_id'] = local_var_params['logical_cluster_id']
 
         query_params = []
 
@@ -2366,6 +2634,71 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def disable_lts_logs_async(self, request):
+        """关闭云服务日志
+
+        该接口用于关闭集群LTS云日志服务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisableLtsLogs
+        :type request: :class:`huaweicloudsdkdws.v2.DisableLtsLogsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DisableLtsLogsResponse`
+        """
+        http_info = self._disable_lts_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def disable_lts_logs_async_invoker(self, request):
+        http_info = self._disable_lts_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_lts_logs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/lts-logs/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableLtsLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def disassociate_eip_async(self, request):
         """集群解绑EIP
 
@@ -2471,6 +2804,138 @@ class DwsAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'elb_id' in local_var_params:
             path_params['elb_id'] = local_var_params['elb_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_logical_cluster_async(self, request):
+        """切换逻辑集群开关
+
+        此接口用于切换逻辑集群开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableLogicalCluster
+        :type request: :class:`huaweicloudsdkdws.v2.EnableLogicalClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.EnableLogicalClusterResponse`
+        """
+        http_info = self._enable_logical_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_logical_cluster_async_invoker(self, request):
+        http_info = self._enable_logical_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_logical_cluster_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableLogicalClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_lts_logs_async(self, request):
+        """开启云服务日志
+
+        该接口用于开启集群LTS云日志服务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableLtsLogs
+        :type request: :class:`huaweicloudsdkdws.v2.EnableLtsLogsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.EnableLtsLogsResponse`
+        """
+        http_info = self._enable_lts_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_lts_logs_async_invoker(self, request):
+        http_info = self._enable_lts_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_lts_logs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/lts-logs/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableLtsLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -3509,6 +3974,88 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def list_cluster_nodes_async(self, request):
+        """查询节点列表
+
+        查询节点列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListClusterNodes
+        :type request: :class:`huaweicloudsdkdws.v2.ListClusterNodesRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListClusterNodesResponse`
+        """
+        http_info = self._list_cluster_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cluster_nodes_async_invoker(self, request):
+        http_info = self._list_cluster_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cluster_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'deleted' in local_var_params:
+            query_params.append(('deleted', local_var_params['deleted']))
+        if 'node_ids' in local_var_params:
+            query_params.append(('node_ids', local_var_params['node_ids']))
+            collection_formats['node_ids'] = 'csv'
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'filter_by' in local_var_params:
+            query_params.append(('filter_by', local_var_params['filter_by']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_cluster_scale_in_numbers_async(self, request):
         """查询合适的缩容数
 
@@ -4485,6 +5032,8 @@ class DwsAsyncClient(Client):
         query_params = []
         if 'cluster_id' in local_var_params:
             query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
         if 'instance_name' in local_var_params:
             query_params.append(('instance_name', local_var_params['instance_name']))
         if 'limit' in local_var_params:
@@ -4725,6 +5274,359 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def list_logical_cluster_rings_async(self, request):
+        """查询逻辑集群可用ring环节点信息
+
+        查询逻辑集群可用ring环节点信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLogicalClusterRings
+        :type request: :class:`huaweicloudsdkdws.v2.ListLogicalClusterRingsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListLogicalClusterRingsResponse`
+        """
+        http_info = self._list_logical_cluster_rings_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_logical_cluster_rings_async_invoker(self, request):
+        http_info = self._list_logical_cluster_rings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logical_cluster_rings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters/rings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogicalClusterRingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_logical_cluster_tasks_async(self, request):
+        """查询逻辑集群任务信息
+
+        逻辑集群-查询逻辑集群任务信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLogicalClusterTasks
+        :type request: :class:`huaweicloudsdkdws.v2.ListLogicalClusterTasksRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListLogicalClusterTasksResponse`
+        """
+        http_info = self._list_logical_cluster_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_logical_cluster_tasks_async_invoker(self, request):
+        http_info = self._list_logical_cluster_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logical_cluster_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogicalClusterTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'logical_cluster_name' in local_var_params:
+            query_params.append(('logical_cluster_name', local_var_params['logical_cluster_name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_logical_cluster_volumes_async(self, request):
+        """查询逻辑集群磁盘信息
+
+        逻辑集群-查询逻辑集群磁盘信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLogicalClusterVolumes
+        :type request: :class:`huaweicloudsdkdws.v2.ListLogicalClusterVolumesRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListLogicalClusterVolumesResponse`
+        """
+        http_info = self._list_logical_cluster_volumes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_logical_cluster_volumes_async_invoker(self, request):
+        http_info = self._list_logical_cluster_volumes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logical_cluster_volumes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters/volumes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogicalClusterVolumesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_logical_clusters_async(self, request):
+        """查询逻辑集群列表
+
+        逻辑集群-查询逻辑集群列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLogicalClusters
+        :type request: :class:`huaweicloudsdkdws.v2.ListLogicalClustersRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListLogicalClustersResponse`
+        """
+        http_info = self._list_logical_clusters_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_logical_clusters_async_invoker(self, request):
+        http_info = self._list_logical_clusters_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logical_clusters_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogicalClustersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_lts_logs_async(self, request):
+        """获取LTS日志列表
+
+        获取LTS日志列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLtsLogs
+        :type request: :class:`huaweicloudsdkdws.v2.ListLtsLogsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListLtsLogsResponse`
+        """
+        http_info = self._list_lts_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_lts_logs_async_invoker(self, request):
+        http_info = self._list_lts_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_lts_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/lts-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLtsLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_monitor_indicator_data_async(self, request):
         """openApi查询历史监控数据
 
@@ -4914,6 +5816,73 @@ class DwsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_queries_async(self, request):
+        """查询SQL列表
+
+        该接口用于查询实时SQL列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueries
+        :type request: :class:`huaweicloudsdkdws.v2.ListQueriesRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListQueriesResponse`
+        """
+        http_info = self._list_queries_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_queries_async_invoker(self, request):
+        http_info = self._list_queries_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_queries_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/dms/queries",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -5448,6 +6417,85 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def list_tables_statistic_async(self, request):
+        """查询表倾斜或脏页率信息
+
+        该接口用于查询表倾斜或脏页率信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTablesStatistic
+        :type request: :class:`huaweicloudsdkdws.v2.ListTablesStatisticRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListTablesStatisticResponse`
+        """
+        http_info = self._list_tables_statistic_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tables_statistic_async_invoker(self, request):
+        http_info = self._list_tables_statistic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tables_statistic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/dms/tables/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTablesStatisticResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'rate_type' in local_var_params:
+            query_params.append(('rate_type', local_var_params['rate_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'value' in local_var_params:
+            query_params.append(('value', local_var_params['value']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_tags_async(self, request):
         """查询项目标签
 
@@ -5484,6 +6532,75 @@ class DwsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_topo_rings_async(self, request):
+        """查询集群拓扑ring环节点信息
+
+        查询集群拓扑ring环节点信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTopoRings
+        :type request: :class:`huaweicloudsdkdws.v2.ListTopoRingsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListTopoRingsResponse`
+        """
+        http_info = self._list_topo_rings_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_topo_rings_async_invoker(self, request):
+        http_info = self._list_topo_rings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_topo_rings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/topo/rings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopoRingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -5913,6 +7030,73 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def resize_cluster_with_existed_nodes_async(self, request):
+        """从空闲节点扩容
+
+        此接口用于从空闲节点扩容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResizeClusterWithExistedNodes
+        :type request: :class:`huaweicloudsdkdws.v2.ResizeClusterWithExistedNodesRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ResizeClusterWithExistedNodesResponse`
+        """
+        http_info = self._resize_cluster_with_existed_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def resize_cluster_with_existed_nodes_async_invoker(self, request):
+        http_info = self._resize_cluster_with_existed_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_cluster_with_existed_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/resize-with-existed-nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeClusterWithExistedNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def restart_cluster_async(self, request):
         """重启集群
 
@@ -5966,6 +7150,73 @@ class DwsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restart_logical_cluster_async(self, request):
+        """重启逻辑集群
+
+        此接口用于重启逻辑集群。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestartLogicalCluster
+        :type request: :class:`huaweicloudsdkdws.v2.RestartLogicalClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.RestartLogicalClusterResponse`
+        """
+        http_info = self._restart_logical_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def restart_logical_cluster_async_invoker(self, request):
+        http_info = self._restart_logical_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_logical_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters/{logical_cluster_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartLogicalClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'logical_cluster_id' in local_var_params:
+            path_params['logical_cluster_id'] = local_var_params['logical_cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6083,6 +7334,71 @@ class DwsAsyncClient(Client):
         path_params = {}
         if 'disaster_recovery_id' in local_var_params:
             path_params['disaster_recovery_id'] = local_var_params['disaster_recovery_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restore_redistribution_async(self, request):
+        """恢复重分布
+
+        此接口用于恢复重分布。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestoreRedistribution
+        :type request: :class:`huaweicloudsdkdws.v2.RestoreRedistributionRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.RestoreRedistributionResponse`
+        """
+        http_info = self._restore_redistribution_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_redistribution_async_invoker(self, request):
+        http_info = self._restore_redistribution_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_redistribution_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/redistribution/recovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreRedistributionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -6726,6 +8042,75 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def show_query_detail_async(self, request):
+        """查询SQL执行信息
+
+        查询SQL执行信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowQueryDetail
+        :type request: :class:`huaweicloudsdkdws.v2.ShowQueryDetailRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowQueryDetailResponse`
+        """
+        http_info = self._show_query_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_query_detail_async_invoker(self, request):
+        http_info = self._show_query_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_query_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/dms/queries/{query_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQueryDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
+
+        query_params = []
+        if 'ctime' in local_var_params:
+            query_params.append(('ctime', local_var_params['ctime']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_workload_plan_async(self, request):
         """查询某个工作负载计划详细信息
 
@@ -6963,6 +8348,71 @@ class DwsAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'plan_id' in local_var_params:
             path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_redistribution_async(self, request):
+        """暂停重分布
+
+        此接口用于暂停重分布。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopRedistribution
+        :type request: :class:`huaweicloudsdkdws.v2.StopRedistributionRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.StopRedistributionResponse`
+        """
+        http_info = self._stop_redistribution_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_redistribution_async_invoker(self, request):
+        http_info = self._stop_redistribution_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_redistribution_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/redistribution/suspend",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopRedistributionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -7832,6 +9282,75 @@ class DwsAsyncClient(Client):
         path_params = {}
         if 'event_sub_id' in local_var_params:
             path_params['event_sub_id'] = local_var_params['event_sub_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_logical_cluster_async(self, request):
+        """编辑逻辑集群
+
+        此接口用于编辑修改逻辑集群。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateLogicalCluster
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateLogicalClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateLogicalClusterResponse`
+        """
+        http_info = self._update_logical_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_logical_cluster_async_invoker(self, request):
+        http_info = self._update_logical_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_logical_cluster_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/logical-clusters/{logical_cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogicalClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'logical_cluster_id' in local_var_params:
+            path_params['logical_cluster_id'] = local_var_params['logical_cluster_id']
 
         query_params = []
 

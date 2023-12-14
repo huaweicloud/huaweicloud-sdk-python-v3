@@ -32,601 +32,6 @@ class DliAsyncClient(Client):
 
         return client_builder
 
-    def batch_delete_sql_job_templates_async(self, request):
-        """批量删除SQL模板
-
-        该API用于批量删除SQL模板。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchDeleteSqlJobTemplates
-        :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesResponse`
-        """
-        http_info = self._batch_delete_sql_job_templates_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_delete_sql_job_templates_async_invoker(self, request):
-        http_info = self._batch_delete_sql_job_templates_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_delete_sql_job_templates_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/sqls-deletion",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchDeleteSqlJobTemplatesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_spark_job_template_async(self, request):
-        """创建作业模板
-
-        该API用于创建作业模板。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateSparkJobTemplate
-        :type request: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateResponse`
-        """
-        http_info = self._create_spark_job_template_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_spark_job_template_async_invoker(self, request):
-        http_info = self._create_spark_job_template_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_spark_job_template_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v3/{project_id}/templates",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateSparkJobTemplateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_sql_job_template_async(self, request):
-        """存储指定SQL语句
-
-        该API用于存储指定的SQL语句，后续可以重复使用。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateSqlJobTemplate
-        :type request: :class:`huaweicloudsdkdli.v1.CreateSqlJobTemplateRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlJobTemplateResponse`
-        """
-        http_info = self._create_sql_job_template_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_sql_job_template_async_invoker(self, request):
-        http_info = self._create_sql_job_template_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_sql_job_template_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/sqls",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateSqlJobTemplateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_spark_job_templates_async(self, request):
-        """查询作业模板列表
-
-        该API用于查询作业模板列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListSparkJobTemplates
-        :type request: :class:`huaweicloudsdkdli.v1.ListSparkJobTemplatesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListSparkJobTemplatesResponse`
-        """
-        http_info = self._list_spark_job_templates_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_spark_job_templates_async_invoker(self, request):
-        http_info = self._list_spark_job_templates_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_spark_job_templates_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/{project_id}/templates",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListSparkJobTemplatesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'keyword' in local_var_params:
-            query_params.append(('keyword', local_var_params['keyword']))
-        if 'page_size' in local_var_params:
-            query_params.append(('page-size', local_var_params['page_size']))
-        if 'current_page' in local_var_params:
-            query_params.append(('current-page', local_var_params['current_page']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_sql_job_templates_async(self, request):
-        """查看所有SQL模板
-
-        该API用查看用户保存的所有SQL模板。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListSqlJobTemplates
-        :type request: :class:`huaweicloudsdkdli.v1.ListSqlJobTemplatesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListSqlJobTemplatesResponse`
-        """
-        http_info = self._list_sql_job_templates_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_sql_job_templates_async_invoker(self, request):
-        http_info = self._list_sql_job_templates_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_sql_job_templates_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/sqls",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListSqlJobTemplatesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'keyword' in local_var_params:
-            query_params.append(('keyword', local_var_params['keyword']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_spark_job_template_async(self, request):
-        """获取作业模板
-
-        该API用于获取作业模板。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowSparkJobTemplate
-        :type request: :class:`huaweicloudsdkdli.v1.ShowSparkJobTemplateRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowSparkJobTemplateResponse`
-        """
-        http_info = self._show_spark_job_template_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_spark_job_template_async_invoker(self, request):
-        http_info = self._show_spark_job_template_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_spark_job_template_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/{project_id}/templates/{template_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowSparkJobTemplateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'template_id' in local_var_params:
-            path_params['template_id'] = local_var_params['template_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_sql_sample_templates_async(self, request):
-        """查询所有SQL样例模板
-
-        该API用于查询所有SQL样例模板。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowSqlSampleTemplates
-        :type request: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesResponse`
-        """
-        warnings.warn("Method 'show_sql_sample_templates_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_sql_sample_templates_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_sql_sample_templates_async_invoker(self, request):
-        warnings.warn("Method 'show_sql_sample_templates_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_sql_sample_templates_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_sql_sample_templates_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/sqls/sample",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowSqlSampleTemplatesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_spark_job_template_async(self, request):
-        """修改作业模板
-
-        该API用于修改作业模板。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateSparkJobTemplate
-        :type request: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateResponse`
-        """
-        http_info = self._update_spark_job_template_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_spark_job_template_async_invoker(self, request):
-        http_info = self._update_spark_job_template_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_spark_job_template_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v3/{project_id}/templates/{template_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateSparkJobTemplateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'template_id' in local_var_params:
-            path_params['template_id'] = local_var_params['template_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_sql_job_template_async(self, request):
-        """更新SQL模板
-
-        该API用于更新SQL模板。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateSqlJobTemplate
-        :type request: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateResponse`
-        """
-        http_info = self._update_sql_job_template_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_sql_job_template_async_invoker(self, request):
-        http_info = self._update_sql_job_template_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_sql_job_template_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1.0/{project_id}/sqls/{sql_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateSqlJobTemplateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'sql_id' in local_var_params:
-            path_params['sql_id'] = local_var_params['sql_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def associate_queue_to_elastic_resource_pool_async(self, request):
         """关联队列到弹性资源池
 
@@ -1771,6 +1176,73 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def create_route_to_enhanced_connection_async(self, request):
+        """创建路由
+
+        该API用于创建跨源需要的路由。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRouteToEnhancedConnection
+        :type request: :class:`huaweicloudsdkdli.v1.CreateRouteToEnhancedConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateRouteToEnhancedConnectionResponse`
+        """
+        http_info = self._create_route_to_enhanced_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_route_to_enhanced_connection_async_invoker(self, request):
+        http_info = self._create_route_to_enhanced_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_route_to_enhanced_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/datasource/enhanced-connections/{connection_id}/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRouteToEnhancedConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_auth_info_async(self, request):
         """删除跨源认证
 
@@ -2481,6 +1953,73 @@ class DliAsyncClient(Client):
         query_params = []
         if 'group' in local_var_params:
             query_params.append(('group', local_var_params['group']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_route_from_enhanced_connection_async(self, request):
+        """删除路由
+
+        该API用于删除跨源需要的路由。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRouteFromEnhancedConnection
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteRouteFromEnhancedConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteRouteFromEnhancedConnectionResponse`
+        """
+        http_info = self._delete_route_from_enhanced_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_route_from_enhanced_connection_async_invoker(self, request):
+        http_info = self._delete_route_from_enhanced_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_route_from_enhanced_connection_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/datasource/enhanced-connections/{connection_id}/routes/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRouteFromEnhancedConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+
+        query_params = []
 
         header_params = {}
 
@@ -6977,6 +6516,71 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_sql_job_templates_async(self, request):
+        """批量删除SQL模板
+
+        该API用于批量删除SQL模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteSqlJobTemplates
+        :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesResponse`
+        """
+        http_info = self._batch_delete_sql_job_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_sql_job_templates_async_invoker(self, request):
+        http_info = self._batch_delete_sql_job_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_sql_job_templates_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/sqls-deletion",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSqlJobTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_sql_job_async(self, request):
         """取消作业
 
@@ -7201,6 +6805,71 @@ class DliAsyncClient(Client):
             "resource_path": "/v1.0/{project_id}/jobs/submit-job",
             "request_type": request.__class__.__name__,
             "response_type": "CreateSqlJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_sql_job_template_async(self, request):
+        """存储指定SQL语句
+
+        该API用于存储指定的SQL语句，后续可以重复使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSqlJobTemplate
+        :type request: :class:`huaweicloudsdkdli.v1.CreateSqlJobTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlJobTemplateResponse`
+        """
+        http_info = self._create_sql_job_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_sql_job_template_async_invoker(self, request):
+        http_info = self._create_sql_job_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sql_job_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/sqls",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlJobTemplateResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -7809,6 +7478,71 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def list_sql_job_templates_async(self, request):
+        """查看所有SQL模板
+
+        该API用查看用户保存的所有SQL模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSqlJobTemplates
+        :type request: :class:`huaweicloudsdkdli.v1.ListSqlJobTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListSqlJobTemplatesResponse`
+        """
+        http_info = self._list_sql_job_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_job_templates_async_invoker(self, request):
+        http_info = self._list_sql_job_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sql_job_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/sqls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlJobTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_sql_jobs_async(self, request):
         """查询所有作业
 
@@ -8304,6 +8038,71 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def show_sql_sample_templates_async(self, request):
+        """查询所有SQL样例模板
+
+        该API用于查询所有SQL样例模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSqlSampleTemplates
+        :type request: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesResponse`
+        """
+        warnings.warn("Method 'show_sql_sample_templates_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_sql_sample_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_sample_templates_async_invoker(self, request):
+        warnings.warn("Method 'show_sql_sample_templates_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_sql_sample_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_sample_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/sqls/sample",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlSampleTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_table_content_async(self, request):
         """预览表内容
 
@@ -8413,6 +8212,73 @@ class DliAsyncClient(Client):
         path_params = {}
         if 'database_name' in local_var_params:
             path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sql_job_template_async(self, request):
+        """更新SQL模板
+
+        该API用于更新SQL模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSqlJobTemplate
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateResponse`
+        """
+        http_info = self._update_sql_job_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sql_job_template_async_invoker(self, request):
+        http_info = self._update_sql_job_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sql_job_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/sqls/{sql_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSqlJobTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sql_id' in local_var_params:
+            path_params['sql_id'] = local_var_params['sql_id']
 
         query_params = []
 
@@ -8626,6 +8492,142 @@ class DliAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_spark_job_template_async(self, request):
+        """创建作业模板
+
+        该API用于创建作业模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSparkJobTemplate
+        :type request: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateResponse`
+        """
+        http_info = self._create_spark_job_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_spark_job_template_async_invoker(self, request):
+        http_info = self._create_spark_job_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_spark_job_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSparkJobTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_spark_job_templates_async(self, request):
+        """查询作业模板列表
+
+        该API用于查询作业模板列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSparkJobTemplates
+        :type request: :class:`huaweicloudsdkdli.v1.ListSparkJobTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListSparkJobTemplatesResponse`
+        """
+        http_info = self._list_spark_job_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_spark_job_templates_async_invoker(self, request):
+        http_info = self._list_spark_job_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_spark_job_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSparkJobTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page-size', local_var_params['page_size']))
+        if 'current_page' in local_var_params:
+            query_params.append(('current-page', local_var_params['current_page']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -8914,6 +8916,138 @@ class DliAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_spark_job_template_async(self, request):
+        """获取作业模板
+
+        该API用于获取作业模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSparkJobTemplate
+        :type request: :class:`huaweicloudsdkdli.v1.ShowSparkJobTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowSparkJobTemplateResponse`
+        """
+        http_info = self._show_spark_job_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_spark_job_template_async_invoker(self, request):
+        http_info = self._show_spark_job_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_spark_job_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSparkJobTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_spark_job_template_async(self, request):
+        """修改作业模板
+
+        该API用于修改作业模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSparkJobTemplate
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateResponse`
+        """
+        http_info = self._update_spark_job_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_spark_job_template_async_invoker(self, request):
+        http_info = self._update_spark_job_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_spark_job_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSparkJobTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

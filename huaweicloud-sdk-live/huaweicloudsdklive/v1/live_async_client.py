@@ -618,6 +618,71 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def create_url_authchain_async(self, request):
+        """生成URL鉴权串
+
+        生成URL鉴权串
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateUrlAuthchain
+        :type request: :class:`huaweicloudsdklive.v1.CreateUrlAuthchainRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreateUrlAuthchainResponse`
+        """
+        http_info = self._create_url_authchain_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_url_authchain_async_invoker(self, request):
+        http_info = self._create_url_authchain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_url_authchain_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/auth/chain",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUrlAuthchainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_domain_async(self, request):
         """删除直播域名
 
@@ -788,6 +853,71 @@ class LiveAsyncClient(Client):
             query_params.append(('pull_domain', local_var_params['pull_domain']))
         if 'push_domain' in local_var_params:
             query_params.append(('push_domain', local_var_params['push_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_publish_template_async(self, request):
+        """删除直播推流通知配置
+
+        删除直播推流通知配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePublishTemplate
+        :type request: :class:`huaweicloudsdklive.v1.DeletePublishTemplateRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeletePublishTemplateResponse`
+        """
+        http_info = self._delete_publish_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_publish_template_async_invoker(self, request):
+        http_info = self._delete_publish_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_publish_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/notifications/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePublishTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
 
@@ -1148,6 +1278,204 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def list_delay_config_async(self, request):
+        """查询播放域名延时配置
+
+        查询播放域名延时配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDelayConfig
+        :type request: :class:`huaweicloudsdklive.v1.ListDelayConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListDelayConfigResponse`
+        """
+        http_info = self._list_delay_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_delay_config_async_invoker(self, request):
+        http_info = self._list_delay_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_delay_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain/delay",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDelayConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'play_domain' in local_var_params:
+            query_params.append(('play_domain', local_var_params['play_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_geo_blocking_config_async(self, request):
+        """获取地域限制配置列表
+
+        查询播放域名的地域限制列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGeoBlockingConfig
+        :type request: :class:`huaweicloudsdklive.v1.ListGeoBlockingConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListGeoBlockingConfigResponse`
+        """
+        http_info = self._list_geo_blocking_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_geo_blocking_config_async_invoker(self, request):
+        http_info = self._list_geo_blocking_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_geo_blocking_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain/geo-blocking",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGeoBlockingConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'play_domain' in local_var_params:
+            query_params.append(('play_domain', local_var_params['play_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ip_auth_list_async(self, request):
+        """查询IP黑/白名单
+
+        查询推流/播放域名的IP黑/白名单。
+        - 黑名单模式：禁止指定的IP或网段
+        - 白名单模式：仅允许指定的IP或网段
+        - 默认：全放通。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIpAuthList
+        :type request: :class:`huaweicloudsdklive.v1.ListIpAuthListRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListIpAuthListResponse`
+        """
+        http_info = self._list_ip_auth_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ip_auth_list_async_invoker(self, request):
+        http_info = self._list_ip_auth_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ip_auth_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/guard/ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpAuthListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_live_sample_logs_async(self, request):
         """获取直播播放日志
 
@@ -1263,6 +1591,71 @@ class LiveAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'stream' in local_var_params:
             query_params.append(('stream', local_var_params['stream']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_publish_template_async(self, request):
+        """查询直播推流通知配置
+
+        查询直播推流通知配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPublishTemplate
+        :type request: :class:`huaweicloudsdklive.v1.ListPublishTemplateRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListPublishTemplateResponse`
+        """
+        http_info = self._list_publish_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_publish_template_async_invoker(self, request):
+        http_info = self._list_publish_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_publish_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/notifications/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublishTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
 
@@ -1858,6 +2251,71 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def show_pull_sources_config_async(self, request):
+        """查询直播拉流回源配置
+
+        查询直播拉流回源配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPullSourcesConfig
+        :type request: :class:`huaweicloudsdklive.v1.ShowPullSourcesConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowPullSourcesConfigResponse`
+        """
+        http_info = self._show_pull_sources_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pull_sources_config_async_invoker(self, request):
+        http_info = self._show_pull_sources_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_pull_sources_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain/pull-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPullSourcesConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'play_domain' in local_var_params:
+            query_params.append(('play_domain', local_var_params['play_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_record_callback_config_async(self, request):
         """查询录制回调配置
 
@@ -2059,6 +2517,71 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def update_delay_config_async(self, request):
+        """修改播放域名延时配置
+
+        修改播放域名延时配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDelayConfig
+        :type request: :class:`huaweicloudsdklive.v1.UpdateDelayConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateDelayConfigResponse`
+        """
+        http_info = self._update_delay_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_delay_config_async_invoker(self, request):
+        http_info = self._update_delay_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_delay_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domain/delay",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDelayConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_domain_async(self, request):
         """修改直播域名
 
@@ -2227,6 +2750,273 @@ class LiveAsyncClient(Client):
         query_params = []
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_geo_blocking_config_async(self, request):
+        """修改地域限制配置
+
+        修改播放域名的地域限制，选中地域允许接入。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGeoBlockingConfig
+        :type request: :class:`huaweicloudsdklive.v1.UpdateGeoBlockingConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateGeoBlockingConfigResponse`
+        """
+        http_info = self._update_geo_blocking_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_geo_blocking_config_async_invoker(self, request):
+        http_info = self._update_geo_blocking_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_geo_blocking_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domain/geo-blocking",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGeoBlockingConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'play_domain' in local_var_params:
+            query_params.append(('play_domain', local_var_params['play_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ip_auth_list_async(self, request):
+        """修改IP黑/白名单
+
+        修改推流/播放域名的IP黑/白名单，当前仅支持ipv4。
+        - 黑名单模式：禁止指定的IP或网段
+        - 白名单模式：仅允许指定的IP或网段
+        - 默认：全放通。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateIpAuthList
+        :type request: :class:`huaweicloudsdklive.v1.UpdateIpAuthListRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateIpAuthListResponse`
+        """
+        http_info = self._update_ip_auth_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ip_auth_list_async_invoker(self, request):
+        http_info = self._update_ip_auth_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ip_auth_list_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/guard/ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIpAuthListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_publish_template_async(self, request):
+        """新增、覆盖直播推流通知配置
+
+        新增、覆盖直播推流通知配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePublishTemplate
+        :type request: :class:`huaweicloudsdklive.v1.UpdatePublishTemplateRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdatePublishTemplateResponse`
+        """
+        http_info = self._update_publish_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_publish_template_async_invoker(self, request):
+        http_info = self._update_publish_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_publish_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/notifications/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublishTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_pull_sources_config_async(self, request):
+        """修改直播拉流回源配置
+
+        修改直播拉流回源配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePullSourcesConfig
+        :type request: :class:`huaweicloudsdklive.v1.UpdatePullSourcesConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdatePullSourcesConfigResponse`
+        """
+        http_info = self._update_pull_sources_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_pull_sources_config_async_invoker(self, request):
+        http_info = self._update_pull_sources_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_pull_sources_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domain/pull-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePullSourcesConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 

@@ -1077,6 +1077,8 @@ class SmsClient(Client):
             query_params.append(('connected', local_var_params['connected']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'is_consistency_result_exist' in local_var_params:
+            query_params.append(('is_consistency_result_exist', local_var_params['is_consistency_result_exist']))
 
         header_params = {}
 
@@ -1491,6 +1493,71 @@ class SmsClient(Client):
         query_params = []
         if 'config_key' in local_var_params:
             query_params.append(('config_key', local_var_params['config_key']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_consistency_result(self, request):
+        """获取一致性校验结果
+
+        获取一致性校验结果简报
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowConsistencyResult
+        :type request: :class:`huaweicloudsdksms.v3.ShowConsistencyResultRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowConsistencyResultResponse`
+        """
+        http_info = self._show_consistency_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_consistency_result_invoker(self, request):
+        http_info = self._show_consistency_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_consistency_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks/{task_id}/consistency-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConsistencyResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -2282,6 +2349,73 @@ class SmsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_consistency_result(self, request):
+        """上传一致性校验结果
+
+        Agent 上传一致性校验结果简报
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateConsistencyResult
+        :type request: :class:`huaweicloudsdksms.v3.UpdateConsistencyResultRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateConsistencyResultResponse`
+        """
+        http_info = self._update_consistency_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_consistency_result_invoker(self, request):
+        http_info = self._update_consistency_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_consistency_result_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/{task_id}/consistency-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConsistencyResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

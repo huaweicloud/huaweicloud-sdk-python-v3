@@ -18,7 +18,7 @@ class ListEnterpriseResourceResult:
 
     openapi_types = {
         'resource_id': 'str',
-        'resource_detail': 'ListFunctionResult',
+        'resource_detail': 'ListEnterpriseResourceDetail',
         'tags': 'list[KvItem]',
         'sys_tags': 'list[KvItem]',
         'resource_name': 'str'
@@ -40,7 +40,7 @@ class ListEnterpriseResourceResult:
         :param resource_id: 资源ID
         :type resource_id: str
         :param resource_detail: 
-        :type resource_detail: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionResult`
+        :type resource_detail: :class:`huaweicloudsdkfunctiongraph.v2.ListEnterpriseResourceDetail`
         :param tags: 标签列表
         :type tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         :param sys_tags: 系统标签列表
@@ -96,7 +96,7 @@ class ListEnterpriseResourceResult:
         """Gets the resource_detail of this ListEnterpriseResourceResult.
 
         :return: The resource_detail of this ListEnterpriseResourceResult.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionResult`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListEnterpriseResourceDetail`
         """
         return self._resource_detail
 
@@ -105,7 +105,7 @@ class ListEnterpriseResourceResult:
         """Sets the resource_detail of this ListEnterpriseResourceResult.
 
         :param resource_detail: The resource_detail of this ListEnterpriseResourceResult.
-        :type resource_detail: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionResult`
+        :type resource_detail: :class:`huaweicloudsdkfunctiongraph.v2.ListEnterpriseResourceDetail`
         """
         self._resource_detail = resource_detail
 

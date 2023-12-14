@@ -38,8 +38,7 @@ class PostgreSQLRestoreDatabaseRequest:
         self._instances = None
         self.discriminator = None
 
-        if instances is not None:
-            self.instances = instances
+        self.instances = instances
 
     @property
     def instances(self):

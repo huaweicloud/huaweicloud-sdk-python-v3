@@ -21,8 +21,8 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         'keywords_alarm_rule_id': 'str',
         'keywords_alarm_rule_name': 'str',
         'keywords_alarm_rule_description': 'str',
-        'keywords_requests': 'list[KeywordsRequest]',
-        'frequency': 'Frequency',
+        'keywords_requests': 'list[KeywordsResBody]',
+        'frequency': 'FrequencyRespBody',
         'keywords_alarm_level': 'str',
         'keywords_alarm_send': 'bool',
         'domain_id': 'str',
@@ -32,7 +32,9 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         'project_id': 'str',
         'topics': 'list[Topics]',
         'condition_expression': 'str',
-        'index_id': 'str'
+        'index_id': 'str',
+        'notification_frequency': 'int',
+        'alarm_action_rule_name': 'str'
     }
 
     attribute_map = {
@@ -50,10 +52,12 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         'project_id': 'projectId',
         'topics': 'topics',
         'condition_expression': 'condition_expression',
-        'index_id': 'indexId'
+        'index_id': 'indexId',
+        'notification_frequency': 'notification_frequency',
+        'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None, project_id=None, topics=None, condition_expression=None, index_id=None):
+    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None, project_id=None, topics=None, condition_expression=None, index_id=None, notification_frequency=None, alarm_action_rule_name=None):
         """UpdateKeywordsAlarmRuleResponse
 
         The model defined in huaweicloud sdk
@@ -65,9 +69,9 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         :param keywords_alarm_rule_description: 关键词告警信息描述
         :type keywords_alarm_rule_description: str
         :param keywords_requests: 关键词详细信息
-        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
+        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsResBody`]
         :param frequency: 
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         :param keywords_alarm_level: 告警级别
         :type keywords_alarm_level: str
         :param keywords_alarm_send: 是否发送
@@ -78,16 +82,20 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         :type create_time: int
         :param update_time: 更新时间(毫秒时间戳)
         :type update_time: int
-        :param language: 语言
+        :param language: 邮件附加信息语言
         :type language: str
         :param project_id: 项目id
         :type project_id: str
-        :param topics: 主题信息
+        :param topics: 通知主题
         :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
-        :param condition_expression: 暂无
+        :param condition_expression: 情况表述
         :type condition_expression: str
-        :param index_id: 暂无
+        :param index_id: 索引id
         :type index_id: str
+        :param notification_frequency: 通知频率,单位(分钟)
+        :type notification_frequency: int
+        :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+        :type alarm_action_rule_name: str
         """
         
         super(UpdateKeywordsAlarmRuleResponse, self).__init__()
@@ -107,6 +115,8 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         self._topics = None
         self._condition_expression = None
         self._index_id = None
+        self._notification_frequency = None
+        self._alarm_action_rule_name = None
         self.discriminator = None
 
         if keywords_alarm_rule_id is not None:
@@ -139,6 +149,10 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
             self.condition_expression = condition_expression
         if index_id is not None:
             self.index_id = index_id
+        if notification_frequency is not None:
+            self.notification_frequency = notification_frequency
+        if alarm_action_rule_name is not None:
+            self.alarm_action_rule_name = alarm_action_rule_name
 
     @property
     def keywords_alarm_rule_id(self):
@@ -213,7 +227,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         关键词详细信息
 
         :return: The keywords_requests of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
+        :rtype: list[:class:`huaweicloudsdklts.v2.KeywordsResBody`]
         """
         return self._keywords_requests
 
@@ -224,7 +238,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         关键词详细信息
 
         :param keywords_requests: The keywords_requests of this UpdateKeywordsAlarmRuleResponse.
-        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
+        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsResBody`]
         """
         self._keywords_requests = keywords_requests
 
@@ -233,7 +247,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         """Gets the frequency of this UpdateKeywordsAlarmRuleResponse.
 
         :return: The frequency of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
+        :rtype: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         """
         return self._frequency
 
@@ -242,7 +256,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         """Sets the frequency of this UpdateKeywordsAlarmRuleResponse.
 
         :param frequency: The frequency of this UpdateKeywordsAlarmRuleResponse.
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         """
         self._frequency = frequency
 
@@ -360,7 +374,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def language(self):
         """Gets the language of this UpdateKeywordsAlarmRuleResponse.
 
-        语言
+        邮件附加信息语言
 
         :return: The language of this UpdateKeywordsAlarmRuleResponse.
         :rtype: str
@@ -371,7 +385,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def language(self, language):
         """Sets the language of this UpdateKeywordsAlarmRuleResponse.
 
-        语言
+        邮件附加信息语言
 
         :param language: The language of this UpdateKeywordsAlarmRuleResponse.
         :type language: str
@@ -404,7 +418,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def topics(self):
         """Gets the topics of this UpdateKeywordsAlarmRuleResponse.
 
-        主题信息
+        通知主题
 
         :return: The topics of this UpdateKeywordsAlarmRuleResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
@@ -415,7 +429,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def topics(self, topics):
         """Sets the topics of this UpdateKeywordsAlarmRuleResponse.
 
-        主题信息
+        通知主题
 
         :param topics: The topics of this UpdateKeywordsAlarmRuleResponse.
         :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
@@ -426,7 +440,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def condition_expression(self):
         """Gets the condition_expression of this UpdateKeywordsAlarmRuleResponse.
 
-        暂无
+        情况表述
 
         :return: The condition_expression of this UpdateKeywordsAlarmRuleResponse.
         :rtype: str
@@ -437,7 +451,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def condition_expression(self, condition_expression):
         """Sets the condition_expression of this UpdateKeywordsAlarmRuleResponse.
 
-        暂无
+        情况表述
 
         :param condition_expression: The condition_expression of this UpdateKeywordsAlarmRuleResponse.
         :type condition_expression: str
@@ -448,7 +462,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def index_id(self):
         """Gets the index_id of this UpdateKeywordsAlarmRuleResponse.
 
-        暂无
+        索引id
 
         :return: The index_id of this UpdateKeywordsAlarmRuleResponse.
         :rtype: str
@@ -459,12 +473,56 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def index_id(self, index_id):
         """Sets the index_id of this UpdateKeywordsAlarmRuleResponse.
 
-        暂无
+        索引id
 
         :param index_id: The index_id of this UpdateKeywordsAlarmRuleResponse.
         :type index_id: str
         """
         self._index_id = index_id
+
+    @property
+    def notification_frequency(self):
+        """Gets the notification_frequency of this UpdateKeywordsAlarmRuleResponse.
+
+        通知频率,单位(分钟)
+
+        :return: The notification_frequency of this UpdateKeywordsAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._notification_frequency
+
+    @notification_frequency.setter
+    def notification_frequency(self, notification_frequency):
+        """Sets the notification_frequency of this UpdateKeywordsAlarmRuleResponse.
+
+        通知频率,单位(分钟)
+
+        :param notification_frequency: The notification_frequency of this UpdateKeywordsAlarmRuleResponse.
+        :type notification_frequency: int
+        """
+        self._notification_frequency = notification_frequency
+
+    @property
+    def alarm_action_rule_name(self):
+        """Gets the alarm_action_rule_name of this UpdateKeywordsAlarmRuleResponse.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :return: The alarm_action_rule_name of this UpdateKeywordsAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._alarm_action_rule_name
+
+    @alarm_action_rule_name.setter
+    def alarm_action_rule_name(self, alarm_action_rule_name):
+        """Sets the alarm_action_rule_name of this UpdateKeywordsAlarmRuleResponse.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :param alarm_action_rule_name: The alarm_action_rule_name of this UpdateKeywordsAlarmRuleResponse.
+        :type alarm_action_rule_name: str
+        """
+        self._alarm_action_rule_name = alarm_action_rule_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

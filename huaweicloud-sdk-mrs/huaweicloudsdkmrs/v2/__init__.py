@@ -54,6 +54,7 @@ from huaweicloudsdkmrs.v2.model.job_query_bean import JobQueryBean
 from huaweicloudsdkmrs.v2.model.job_submit_result import JobSubmitResult
 from huaweicloudsdkmrs.v2.model.list_data_connector_request import ListDataConnectorRequest
 from huaweicloudsdkmrs.v2.model.list_data_connector_response import ListDataConnectorResponse
+from huaweicloudsdkmrs.v2.model.modify_default_tags_request_body import ModifyDefaultTagsRequestBody
 from huaweicloudsdkmrs.v2.model.node_group_v2 import NodeGroupV2
 from huaweicloudsdkmrs.v2.model.resources_plan import ResourcesPlan
 from huaweicloudsdkmrs.v2.model.rule import Rule
@@ -77,6 +78,10 @@ from huaweicloudsdkmrs.v2.model.show_sql_result_request import ShowSqlResultRequ
 from huaweicloudsdkmrs.v2.model.show_sql_result_response import ShowSqlResultResponse
 from huaweicloudsdkmrs.v2.model.show_sql_result_with_job_request import ShowSqlResultWithJobRequest
 from huaweicloudsdkmrs.v2.model.show_sql_result_with_job_response import ShowSqlResultWithJobResponse
+from huaweicloudsdkmrs.v2.model.show_tag_quota_request import ShowTagQuotaRequest
+from huaweicloudsdkmrs.v2.model.show_tag_quota_response import ShowTagQuotaResponse
+from huaweicloudsdkmrs.v2.model.show_tag_status_request import ShowTagStatusRequest
+from huaweicloudsdkmrs.v2.model.show_tag_status_response import ShowTagStatusResponse
 from huaweicloudsdkmrs.v2.model.shrink_cluster_request import ShrinkClusterRequest
 from huaweicloudsdkmrs.v2.model.shrink_cluster_response import ShrinkClusterResponse
 from huaweicloudsdkmrs.v2.model.shrink_param import ShrinkParam
@@ -84,6 +89,8 @@ from huaweicloudsdkmrs.v2.model.sql_execution_req import SqlExecutionReq
 from huaweicloudsdkmrs.v2.model.step_config import StepConfig
 from huaweicloudsdkmrs.v2.model.stop_job_request import StopJobRequest
 from huaweicloudsdkmrs.v2.model.stop_job_response import StopJobResponse
+from huaweicloudsdkmrs.v2.model.switch_cluster_tags_request import SwitchClusterTagsRequest
+from huaweicloudsdkmrs.v2.model.switch_cluster_tags_response import SwitchClusterTagsResponse
 from huaweicloudsdkmrs.v2.model.tag import Tag
 from huaweicloudsdkmrs.v2.model.trigger import Trigger
 from huaweicloudsdkmrs.v2.model.update_agency_mapping_request import UpdateAgencyMappingRequest

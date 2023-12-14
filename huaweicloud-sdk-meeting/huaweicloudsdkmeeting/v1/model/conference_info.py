@@ -61,6 +61,7 @@ class ConferenceInfo:
         'conf_mode': 'str',
         'schedule_vmr': 'bool',
         'concurrent_participants': 'int',
+        'support_simultaneous_interpretation': 'bool',
         'pic_display': 'MultiPicDisplayDO',
         'sub_confs': 'list[CycleSubConf]',
         'cycle_sub_conf_id': 'str'
@@ -111,12 +112,13 @@ class ConferenceInfo:
         'conf_mode': 'confMode',
         'schedule_vmr': 'scheduleVmr',
         'concurrent_participants': 'concurrentParticipants',
+        'support_simultaneous_interpretation': 'supportSimultaneousInterpretation',
         'pic_display': 'picDisplay',
         'sub_confs': 'subConfs',
         'cycle_sub_conf_id': 'cycleSubConfID'
     }
 
-    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, online_attendee_amount=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, pic_display=None, sub_confs=None, cycle_sub_conf_id=None):
+    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, online_attendee_amount=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, support_simultaneous_interpretation=None, pic_display=None, sub_confs=None, cycle_sub_conf_id=None):
         """ConferenceInfo
 
         The model defined in huaweicloud sdk
@@ -209,6 +211,8 @@ class ConferenceInfo:
         :type schedule_vmr: bool
         :param concurrent_participants: 会议最大与会人数。默认值0。 * 0：无限制 * 大于0：会议最大与会人数 
         :type concurrent_participants: int
+        :param support_simultaneous_interpretation: 会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
+        :type support_simultaneous_interpretation: bool
         :param pic_display: 
         :type pic_display: :class:`huaweicloudsdkmeeting.v1.MultiPicDisplayDO`
         :param sub_confs: 周期子会议列表。
@@ -263,6 +267,7 @@ class ConferenceInfo:
         self._conf_mode = None
         self._schedule_vmr = None
         self._concurrent_participants = None
+        self._support_simultaneous_interpretation = None
         self._pic_display = None
         self._sub_confs = None
         self._cycle_sub_conf_id = None
@@ -356,6 +361,8 @@ class ConferenceInfo:
             self.schedule_vmr = schedule_vmr
         if concurrent_participants is not None:
             self.concurrent_participants = concurrent_participants
+        if support_simultaneous_interpretation is not None:
+            self.support_simultaneous_interpretation = support_simultaneous_interpretation
         if pic_display is not None:
             self.pic_display = pic_display
         if sub_confs is not None:
@@ -1322,6 +1329,28 @@ class ConferenceInfo:
         :type concurrent_participants: int
         """
         self._concurrent_participants = concurrent_participants
+
+    @property
+    def support_simultaneous_interpretation(self):
+        """Gets the support_simultaneous_interpretation of this ConferenceInfo.
+
+        会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
+
+        :return: The support_simultaneous_interpretation of this ConferenceInfo.
+        :rtype: bool
+        """
+        return self._support_simultaneous_interpretation
+
+    @support_simultaneous_interpretation.setter
+    def support_simultaneous_interpretation(self, support_simultaneous_interpretation):
+        """Sets the support_simultaneous_interpretation of this ConferenceInfo.
+
+        会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
+
+        :param support_simultaneous_interpretation: The support_simultaneous_interpretation of this ConferenceInfo.
+        :type support_simultaneous_interpretation: bool
+        """
+        self._support_simultaneous_interpretation = support_simultaneous_interpretation
 
     @property
     def pic_display(self):

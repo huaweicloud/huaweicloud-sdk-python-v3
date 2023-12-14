@@ -43,7 +43,7 @@ class TemplateParameterDefinition:
         :type description: str
         :param default_value: 预定义合规包模板参数默认值。
         :type default_value: object
-        :param allowed_values: 预定义合规包模板参数允许值列表
+        :param allowed_values: 预定义合规包模板参数允许值列表。
         :type allowed_values: list[object]
         :param type: 预定义合规包模板参数类型。
         :type type: str
@@ -139,7 +139,7 @@ class TemplateParameterDefinition:
     def allowed_values(self):
         """Gets the allowed_values of this TemplateParameterDefinition.
 
-        预定义合规包模板参数允许值列表
+        预定义合规包模板参数允许值列表。
 
         :return: The allowed_values of this TemplateParameterDefinition.
         :rtype: list[object]
@@ -150,7 +150,7 @@ class TemplateParameterDefinition:
     def allowed_values(self, allowed_values):
         """Sets the allowed_values of this TemplateParameterDefinition.
 
-        预定义合规包模板参数允许值列表
+        预定义合规包模板参数允许值列表。
 
         :param allowed_values: The allowed_values of this TemplateParameterDefinition.
         :type allowed_values: list[object]

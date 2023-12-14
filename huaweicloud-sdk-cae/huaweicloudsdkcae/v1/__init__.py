@@ -71,6 +71,8 @@ from huaweicloudsdkcae.v1.model.create_environment_request_body_metadata import 
 from huaweicloudsdkcae.v1.model.create_environment_response import CreateEnvironmentResponse
 from huaweicloudsdkcae.v1.model.create_meta_cert import CreateMetaCert
 from huaweicloudsdkcae.v1.model.create_meta_domain import CreateMetaDomain
+from huaweicloudsdkcae.v1.model.create_monitor_system_request import CreateMonitorSystemRequest
+from huaweicloudsdkcae.v1.model.create_monitor_system_response import CreateMonitorSystemResponse
 from huaweicloudsdkcae.v1.model.create_spec_cert import CreateSpecCert
 from huaweicloudsdkcae.v1.model.create_timer_rule_req import CreateTimerRuleReq
 from huaweicloudsdkcae.v1.model.create_timer_rule_request import CreateTimerRuleRequest
@@ -149,6 +151,9 @@ from huaweicloudsdkcae.v1.model.list_volumes_response import ListVolumesResponse
 from huaweicloudsdkcae.v1.model.meta_cert import MetaCert
 from huaweicloudsdkcae.v1.model.meta_domain import MetaDomain
 from huaweicloudsdkcae.v1.model.metadata_response import MetadataResponse
+from huaweicloudsdkcae.v1.model.monitor_system_kind_obj import MonitorSystemKindObj
+from huaweicloudsdkcae.v1.model.monitor_system_request_body import MonitorSystemRequestBody
+from huaweicloudsdkcae.v1.model.monitor_system_request_body_spec import MonitorSystemRequestBodySpec
 from huaweicloudsdkcae.v1.model.mount_component import MountComponent
 from huaweicloudsdkcae.v1.model.repo import Repo
 from huaweicloudsdkcae.v1.model.resource_limit import ResourceLimit
@@ -165,6 +170,9 @@ from huaweicloudsdkcae.v1.model.show_execution_result_request import ShowExecuti
 from huaweicloudsdkcae.v1.model.show_execution_result_response import ShowExecutionResultResponse
 from huaweicloudsdkcae.v1.model.show_job_request import ShowJobRequest
 from huaweicloudsdkcae.v1.model.show_job_response import ShowJobResponse
+from huaweicloudsdkcae.v1.model.show_monitor_system_request import ShowMonitorSystemRequest
+from huaweicloudsdkcae.v1.model.show_monitor_system_response import ShowMonitorSystemResponse
+from huaweicloudsdkcae.v1.model.show_monitor_system_response_body_spec import ShowMonitorSystemResponseBodySpec
 from huaweicloudsdkcae.v1.model.source import Source
 from huaweicloudsdkcae.v1.model.spec_cert import SpecCert
 from huaweicloudsdkcae.v1.model.task import Task
@@ -184,6 +192,8 @@ from huaweicloudsdkcae.v1.model.update_eip_request_body_spec import UpdateEipReq
 from huaweicloudsdkcae.v1.model.update_eip_request_body_spec_egress import UpdateEipRequestBodySpecEgress
 from huaweicloudsdkcae.v1.model.update_eip_request_body_spec_ingress import UpdateEipRequestBodySpecIngress
 from huaweicloudsdkcae.v1.model.update_eip_response import UpdateEipResponse
+from huaweicloudsdkcae.v1.model.update_monitor_system_request import UpdateMonitorSystemRequest
+from huaweicloudsdkcae.v1.model.update_monitor_system_response import UpdateMonitorSystemResponse
 from huaweicloudsdkcae.v1.model.update_spec_cert import UpdateSpecCert
 from huaweicloudsdkcae.v1.model.update_timer_rule_details import UpdateTimerRuleDetails
 from huaweicloudsdkcae.v1.model.update_timer_rule_req import UpdateTimerRuleReq

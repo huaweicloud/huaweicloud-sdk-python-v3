@@ -7,6 +7,8 @@ from huaweicloudsdkcloudtable.v2.model.action_progress import ActionProgress
 from huaweicloudsdkcloudtable.v2.model.add_component_req import AddComponentReq
 from huaweicloudsdkcloudtable.v2.model.cluster import Cluster
 from huaweicloudsdkcloudtable.v2.model.cluster_detail import ClusterDetail
+from huaweicloudsdkcloudtable.v2.model.create_cloud_table_cluster_request import CreateCloudTableClusterRequest
+from huaweicloudsdkcloudtable.v2.model.create_cloud_table_cluster_response import CreateCloudTableClusterResponse
 from huaweicloudsdkcloudtable.v2.model.create_cluster_request import CreateClusterRequest
 from huaweicloudsdkcloudtable.v2.model.create_cluster_request_body import CreateClusterRequestBody
 from huaweicloudsdkcloudtable.v2.model.create_cluster_response import CreateClusterResponse

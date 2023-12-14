@@ -53,6 +53,8 @@ class VpcRegion:
                         "https://vpc.me-east-1.myhuaweicloud.com")
     AE_AD_1 = Region("ae-ad-1",
                         "https://vpc.ae-ad-1.myhuaweicloud.com")
+    EU_WEST_0 = Region("eu-west-0",
+                        "https://vpc.eu-west-0.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -77,6 +79,7 @@ class VpcRegion:
         "eu-west-101": EU_WEST_101,
         "me-east-1": ME_EAST_1,
         "ae-ad-1": AE_AD_1,
+        "eu-west-0": EU_WEST_0,
     }
 
     @classmethod

@@ -26,7 +26,8 @@ class ListServersRequest:
         'offset': 'int',
         'migration_cycle': 'str',
         'connected': 'bool',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'is_consistency_result_exist': 'bool'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListServersRequest:
         'offset': 'offset',
         'migration_cycle': 'migration_cycle',
         'connected': 'connected',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'is_consistency_result_exist': 'is_consistency_result_exist'
     }
 
-    def __init__(self, state=None, name=None, id=None, ip=None, migproject=None, limit=None, offset=None, migration_cycle=None, connected=None, enterprise_project_id=None):
+    def __init__(self, state=None, name=None, id=None, ip=None, migproject=None, limit=None, offset=None, migration_cycle=None, connected=None, enterprise_project_id=None, is_consistency_result_exist=None):
         """ListServersRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListServersRequest:
         :type connected: bool
         :param enterprise_project_id: 需要查询的企业项目ID
         :type enterprise_project_id: str
+        :param is_consistency_result_exist: 是否存在一致性校验结果
+        :type is_consistency_result_exist: bool
         """
         
         
@@ -81,6 +85,7 @@ class ListServersRequest:
         self._migration_cycle = None
         self._connected = None
         self._enterprise_project_id = None
+        self._is_consistency_result_exist = None
         self.discriminator = None
 
         if state is not None:
@@ -103,6 +108,8 @@ class ListServersRequest:
             self.connected = connected
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if is_consistency_result_exist is not None:
+            self.is_consistency_result_exist = is_consistency_result_exist
 
     @property
     def state(self):
@@ -323,6 +330,28 @@ class ListServersRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def is_consistency_result_exist(self):
+        """Gets the is_consistency_result_exist of this ListServersRequest.
+
+        是否存在一致性校验结果
+
+        :return: The is_consistency_result_exist of this ListServersRequest.
+        :rtype: bool
+        """
+        return self._is_consistency_result_exist
+
+    @is_consistency_result_exist.setter
+    def is_consistency_result_exist(self, is_consistency_result_exist):
+        """Sets the is_consistency_result_exist of this ListServersRequest.
+
+        是否存在一致性校验结果
+
+        :param is_consistency_result_exist: The is_consistency_result_exist of this ListServersRequest.
+        :type is_consistency_result_exist: bool
+        """
+        self._is_consistency_result_exist = is_consistency_result_exist
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,7 +20,7 @@ class IndicatorListSearchRequest:
         'ids': 'list[str]',
         'name': 'str',
         'dataclass_id': 'str',
-        'condition': 'str',
+        'condition': 'DataobjectSearchCondition',
         'offset': 'int',
         'limit': 'int',
         'sort_by': 'str',
@@ -51,8 +51,8 @@ class IndicatorListSearchRequest:
         :type name: str
         :param dataclass_id: 数据类ID
         :type dataclass_id: str
-        :param condition: 查询条件
-        :type condition: str
+        :param condition: 
+        :type condition: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
         :param offset: request offset, from 0
         :type offset: int
         :param limit: request limit size
@@ -164,10 +164,8 @@ class IndicatorListSearchRequest:
     def condition(self):
         """Gets the condition of this IndicatorListSearchRequest.
 
-        查询条件
-
         :return: The condition of this IndicatorListSearchRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
         """
         return self._condition
 
@@ -175,10 +173,8 @@ class IndicatorListSearchRequest:
     def condition(self, condition):
         """Sets the condition of this IndicatorListSearchRequest.
 
-        查询条件
-
         :param condition: The condition of this IndicatorListSearchRequest.
-        :type condition: str
+        :type condition: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
         """
         self._condition = condition
 

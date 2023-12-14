@@ -41,6 +41,9 @@ from huaweicloudsdkbms.v1.model.create_scheduler_hints import CreateSchedulerHin
 from huaweicloudsdkbms.v1.model.create_server_nic_allowed_address_pairs import CreateServerNicAllowedAddressPairs
 from huaweicloudsdkbms.v1.model.create_servers import CreateServers
 from huaweicloudsdkbms.v1.model.data_volumes import DataVolumes
+from huaweicloudsdkbms.v1.model.delete_baremetal_body import DeleteBaremetalBody
+from huaweicloudsdkbms.v1.model.delete_baremetal_server_request import DeleteBaremetalServerRequest
+from huaweicloudsdkbms.v1.model.delete_baremetal_server_response import DeleteBaremetalServerResponse
 from huaweicloudsdkbms.v1.model.delete_server_nics_req import DeleteServerNicsReq
 from huaweicloudsdkbms.v1.model.delete_server_nics_request import DeleteServerNicsRequest
 from huaweicloudsdkbms.v1.model.delete_server_nics_response import DeleteServerNicsResponse

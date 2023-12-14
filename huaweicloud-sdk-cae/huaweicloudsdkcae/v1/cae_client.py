@@ -2248,6 +2248,213 @@ class CaeClient(Client):
 
         return http_info
 
+    def create_monitor_system(self, request):
+        """创建监控系统配置
+
+        创建监控系统配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateMonitorSystem
+        :type request: :class:`huaweicloudsdkcae.v1.CreateMonitorSystemRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.CreateMonitorSystemResponse`
+        """
+        http_info = self._create_monitor_system_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_monitor_system_invoker(self, request):
+        http_info = self._create_monitor_system_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_monitor_system_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/monitor-system",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMonitorSystemResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_monitor_system(self, request):
+        """获取监控系统配置
+
+        获取监控系统配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMonitorSystem
+        :type request: :class:`huaweicloudsdkcae.v1.ShowMonitorSystemRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ShowMonitorSystemResponse`
+        """
+        http_info = self._show_monitor_system_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_monitor_system_invoker(self, request):
+        http_info = self._show_monitor_system_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_monitor_system_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/monitor-system",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMonitorSystemResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_monitor_system(self, request):
+        """更新监控系统配置
+
+        更新监控系统配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateMonitorSystem
+        :type request: :class:`huaweicloudsdkcae.v1.UpdateMonitorSystemRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.UpdateMonitorSystemResponse`
+        """
+        http_info = self._update_monitor_system_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_monitor_system_invoker(self, request):
+        http_info = self._update_monitor_system_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_monitor_system_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cae/monitor-system/{monitor_system_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMonitorSystemResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'monitor_system_id' in local_var_params:
+            path_params['monitor_system_id'] = local_var_params['monitor_system_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_volume(self, request):
         """授权云存储
 

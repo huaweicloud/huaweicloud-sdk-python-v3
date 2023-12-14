@@ -18,6 +18,7 @@ class DiskResp:
 
     openapi_types = {
         'instance_name': 'str',
+        'instance_id': 'str',
         'host_name': 'str',
         'disk_name': 'str',
         'disk_type': 'str',
@@ -34,6 +35,7 @@ class DiskResp:
 
     attribute_map = {
         'instance_name': 'instance_name',
+        'instance_id': 'instance_id',
         'host_name': 'host_name',
         'disk_name': 'disk_name',
         'disk_type': 'disk_type',
@@ -48,13 +50,15 @@ class DiskResp:
         'write_rate': 'write_rate'
     }
 
-    def __init__(self, instance_name=None, host_name=None, disk_name=None, disk_type=None, total=None, used=None, available=None, used_percentage=None, _await=None, svctm=None, util=None, read_rate=None, write_rate=None):
+    def __init__(self, instance_name=None, instance_id=None, host_name=None, disk_name=None, disk_type=None, total=None, used=None, available=None, used_percentage=None, _await=None, svctm=None, util=None, read_rate=None, write_rate=None):
         """DiskResp
 
         The model defined in huaweicloud sdk
 
         :param instance_name: 实例名称
         :type instance_name: str
+        :param instance_id: 实例ID
+        :type instance_id: str
         :param host_name: 主机名称
         :type host_name: str
         :param disk_name: 磁盘名称
@@ -84,6 +88,7 @@ class DiskResp:
         
 
         self._instance_name = None
+        self._instance_id = None
         self._host_name = None
         self._disk_name = None
         self._disk_type = None
@@ -100,6 +105,8 @@ class DiskResp:
 
         if instance_name is not None:
             self.instance_name = instance_name
+        if instance_id is not None:
+            self.instance_id = instance_id
         if host_name is not None:
             self.host_name = host_name
         if disk_name is not None:
@@ -146,6 +153,28 @@ class DiskResp:
         :type instance_name: str
         """
         self._instance_name = instance_name
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this DiskResp.
+
+        实例ID
+
+        :return: The instance_id of this DiskResp.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this DiskResp.
+
+        实例ID
+
+        :param instance_id: The instance_id of this DiskResp.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     @property
     def host_name(self):

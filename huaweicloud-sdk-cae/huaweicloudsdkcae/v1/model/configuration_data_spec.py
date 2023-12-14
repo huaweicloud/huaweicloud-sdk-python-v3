@@ -38,11 +38,17 @@ class ConfigurationDataSpec:
         'post_start': 'ConfigurationDataSpecPostStart',
         'pre_stop': 'ConfigurationDataSpecPreStop',
         'log_paths': 'list[str]',
+        'instrumentation': 'str',
+        'apm_application': 'str',
+        'type': 'str',
+        'app_name': 'str',
+        'instance_name': 'str',
+        'env_name': 'str',
+        'image_pull_policy': 'str',
+        'version': 'str',
         'access_key': 'str',
         'access_value': 'str',
         'business': 'str',
-        'image_pull_policy': 'str',
-        'version': 'str',
         'path': 'str',
         'port': 'str',
         'metrics': 'list[str]'
@@ -70,17 +76,23 @@ class ConfigurationDataSpec:
         'post_start': 'postStart',
         'pre_stop': 'preStop',
         'log_paths': 'log_paths',
+        'instrumentation': 'instrumentation',
+        'apm_application': 'apm_application',
+        'type': 'type',
+        'app_name': 'app_name',
+        'instance_name': 'instance_name',
+        'env_name': 'env_name',
+        'image_pull_policy': 'image_pull_policy',
+        'version': 'version',
         'access_key': 'access_key',
         'access_value': 'access_value',
         'business': 'business',
-        'image_pull_policy': 'image_pull_policy',
-        'version': 'version',
         'path': 'path',
         'port': 'port',
         'metrics': 'metrics'
     }
 
-    def __init__(self, rds_id=None, rds_db_name=None, rds_address=None, rds_username=None, rds_password=None, rds_port=None, config_center_addr=None, service_center_addr=None, cse_id=None, envs=None, ip=None, items=None, max_replica_count=None, triggers=None, volumes=None, liveness_probe=None, startup_probe=None, readiness_probe=None, post_start=None, pre_stop=None, log_paths=None, access_key=None, access_value=None, business=None, image_pull_policy=None, version=None, path=None, port=None, metrics=None):
+    def __init__(self, rds_id=None, rds_db_name=None, rds_address=None, rds_username=None, rds_password=None, rds_port=None, config_center_addr=None, service_center_addr=None, cse_id=None, envs=None, ip=None, items=None, max_replica_count=None, triggers=None, volumes=None, liveness_probe=None, startup_probe=None, readiness_probe=None, post_start=None, pre_stop=None, log_paths=None, instrumentation=None, apm_application=None, type=None, app_name=None, instance_name=None, env_name=None, image_pull_policy=None, version=None, access_key=None, access_value=None, business=None, path=None, port=None, metrics=None):
         """ConfigurationDataSpec
 
         The model defined in huaweicloud sdk
@@ -127,16 +139,28 @@ class ConfigurationDataSpec:
         :type pre_stop: :class:`huaweicloudsdkcae.v1.ConfigurationDataSpecPreStop`
         :param log_paths: - type为\&quot;log\&quot;时，配置此参数。 - 参数含义：自定义日志路径数组。
         :type log_paths: list[str]
-        :param access_key: - type为\&quot;apm2\&quot;时，配置此参数。 - 参数含义：性能管理配置访问密钥Key。
-        :type access_key: str
-        :param access_value: - type为\&quot;apm2\&quot;时，配置此参数。 - 参数含义：性能管理配置访问密钥value。
-        :type access_value: str
-        :param business: - type为\&quot;apm2\&quot;时，配置此参数。 - 参数含义：性能管理配置应用。
-        :type business: str
-        :param image_pull_policy: - type为\&quot;apm2\&quot;时，配置此参数。 - 参数含义：性能管理配置升级策略。 - 重启自动升级：每次都尝试重新下载镜像。 - 手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。
+        :param instrumentation: - type为\&quot;apm2\&quot;时，配置此参数。 - 参数含义：探针注入方式。
+        :type instrumentation: str
+        :param apm_application: - 参数含义：type为\&quot;apm2\&quot;时，性能管理配置应用。
+        :type apm_application: str
+        :param type: - 参数含义：type为\&quot;apm2\&quot;时，监控系统类别，包括apm2和opentelemetry。
+        :type type: str
+        :param app_name: - 参数含义：type为\&quot;apm2\&quot;时，apm2组件。
+        :type app_name: str
+        :param instance_name: - 参数含义：type为\&quot;apm2\&quot;时，apm2实例。
+        :type instance_name: str
+        :param env_name: - 参数含义：type为\&quot;apm2\&quot;时，apm2环境。
+        :type env_name: str
+        :param image_pull_policy: - 参数含义：已废弃，迁移到监控系统，type为\&quot;apm2\&quot;时，性能管理配置升级策略。 - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。
         :type image_pull_policy: str
-        :param version: - type为\&quot;apm2\&quot;时，配置此参数。 - 参数含义：性能管理配置探针版本。
+        :param version: - type为\&quot;apm2\&quot;时，配置此参数。 - 参数含义：已废弃，迁移到监控系统，type为\&quot;apm2\&quot;时，性能管理配置探针版本。
         :type version: str
+        :param access_key: - 参数含义：已废弃，迁移到监控系统，type为\&quot;apm2\&quot;时，性能管理配置访问密钥Key。
+        :type access_key: str
+        :param access_value: - 参数含义：已废弃，迁移到监控系统，type为\&quot;apm2\&quot;时，性能管理配置访问密钥value。
+        :type access_value: str
+        :param business: - 参数含义：已废弃，type为\&quot;apm2\&quot;时，性能管理配置应用，同apm_application。
+        :type business: str
         :param path: - type为\&quot;customMetric\&quot;时，配置此参数。 - 参数含义：自定义监控指标配置采集路径。
         :type path: str
         :param port: - type为\&quot;customMetric\&quot;时，配置此参数。 - 参数含义：自定义监控指标配置采集端口。
@@ -168,11 +192,17 @@ class ConfigurationDataSpec:
         self._post_start = None
         self._pre_stop = None
         self._log_paths = None
+        self._instrumentation = None
+        self._apm_application = None
+        self._type = None
+        self._app_name = None
+        self._instance_name = None
+        self._env_name = None
+        self._image_pull_policy = None
+        self._version = None
         self._access_key = None
         self._access_value = None
         self._business = None
-        self._image_pull_policy = None
-        self._version = None
         self._path = None
         self._port = None
         self._metrics = None
@@ -220,16 +250,28 @@ class ConfigurationDataSpec:
             self.pre_stop = pre_stop
         if log_paths is not None:
             self.log_paths = log_paths
+        if instrumentation is not None:
+            self.instrumentation = instrumentation
+        if apm_application is not None:
+            self.apm_application = apm_application
+        if type is not None:
+            self.type = type
+        if app_name is not None:
+            self.app_name = app_name
+        if instance_name is not None:
+            self.instance_name = instance_name
+        if env_name is not None:
+            self.env_name = env_name
+        if image_pull_policy is not None:
+            self.image_pull_policy = image_pull_policy
+        if version is not None:
+            self.version = version
         if access_key is not None:
             self.access_key = access_key
         if access_value is not None:
             self.access_value = access_value
         if business is not None:
             self.business = business
-        if image_pull_policy is not None:
-            self.image_pull_policy = image_pull_policy
-        if version is not None:
-            self.version = version
         if path is not None:
             self.path = path
         if port is not None:
@@ -680,76 +722,142 @@ class ConfigurationDataSpec:
         self._log_paths = log_paths
 
     @property
-    def access_key(self):
-        """Gets the access_key of this ConfigurationDataSpec.
+    def instrumentation(self):
+        """Gets the instrumentation of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置访问密钥Key。
+        - type为\"apm2\"时，配置此参数。 - 参数含义：探针注入方式。
 
-        :return: The access_key of this ConfigurationDataSpec.
+        :return: The instrumentation of this ConfigurationDataSpec.
         :rtype: str
         """
-        return self._access_key
+        return self._instrumentation
 
-    @access_key.setter
-    def access_key(self, access_key):
-        """Sets the access_key of this ConfigurationDataSpec.
+    @instrumentation.setter
+    def instrumentation(self, instrumentation):
+        """Sets the instrumentation of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置访问密钥Key。
+        - type为\"apm2\"时，配置此参数。 - 参数含义：探针注入方式。
 
-        :param access_key: The access_key of this ConfigurationDataSpec.
-        :type access_key: str
+        :param instrumentation: The instrumentation of this ConfigurationDataSpec.
+        :type instrumentation: str
         """
-        self._access_key = access_key
+        self._instrumentation = instrumentation
 
     @property
-    def access_value(self):
-        """Gets the access_value of this ConfigurationDataSpec.
+    def apm_application(self):
+        """Gets the apm_application of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置访问密钥value。
+        - 参数含义：type为\"apm2\"时，性能管理配置应用。
 
-        :return: The access_value of this ConfigurationDataSpec.
+        :return: The apm_application of this ConfigurationDataSpec.
         :rtype: str
         """
-        return self._access_value
+        return self._apm_application
 
-    @access_value.setter
-    def access_value(self, access_value):
-        """Sets the access_value of this ConfigurationDataSpec.
+    @apm_application.setter
+    def apm_application(self, apm_application):
+        """Sets the apm_application of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置访问密钥value。
+        - 参数含义：type为\"apm2\"时，性能管理配置应用。
 
-        :param access_value: The access_value of this ConfigurationDataSpec.
-        :type access_value: str
+        :param apm_application: The apm_application of this ConfigurationDataSpec.
+        :type apm_application: str
         """
-        self._access_value = access_value
+        self._apm_application = apm_application
 
     @property
-    def business(self):
-        """Gets the business of this ConfigurationDataSpec.
+    def type(self):
+        """Gets the type of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置应用。
+        - 参数含义：type为\"apm2\"时，监控系统类别，包括apm2和opentelemetry。
 
-        :return: The business of this ConfigurationDataSpec.
+        :return: The type of this ConfigurationDataSpec.
         :rtype: str
         """
-        return self._business
+        return self._type
 
-    @business.setter
-    def business(self, business):
-        """Sets the business of this ConfigurationDataSpec.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置应用。
+        - 参数含义：type为\"apm2\"时，监控系统类别，包括apm2和opentelemetry。
 
-        :param business: The business of this ConfigurationDataSpec.
-        :type business: str
+        :param type: The type of this ConfigurationDataSpec.
+        :type type: str
         """
-        self._business = business
+        self._type = type
+
+    @property
+    def app_name(self):
+        """Gets the app_name of this ConfigurationDataSpec.
+
+        - 参数含义：type为\"apm2\"时，apm2组件。
+
+        :return: The app_name of this ConfigurationDataSpec.
+        :rtype: str
+        """
+        return self._app_name
+
+    @app_name.setter
+    def app_name(self, app_name):
+        """Sets the app_name of this ConfigurationDataSpec.
+
+        - 参数含义：type为\"apm2\"时，apm2组件。
+
+        :param app_name: The app_name of this ConfigurationDataSpec.
+        :type app_name: str
+        """
+        self._app_name = app_name
+
+    @property
+    def instance_name(self):
+        """Gets the instance_name of this ConfigurationDataSpec.
+
+        - 参数含义：type为\"apm2\"时，apm2实例。
+
+        :return: The instance_name of this ConfigurationDataSpec.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        """Sets the instance_name of this ConfigurationDataSpec.
+
+        - 参数含义：type为\"apm2\"时，apm2实例。
+
+        :param instance_name: The instance_name of this ConfigurationDataSpec.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
+
+    @property
+    def env_name(self):
+        """Gets the env_name of this ConfigurationDataSpec.
+
+        - 参数含义：type为\"apm2\"时，apm2环境。
+
+        :return: The env_name of this ConfigurationDataSpec.
+        :rtype: str
+        """
+        return self._env_name
+
+    @env_name.setter
+    def env_name(self, env_name):
+        """Sets the env_name of this ConfigurationDataSpec.
+
+        - 参数含义：type为\"apm2\"时，apm2环境。
+
+        :param env_name: The env_name of this ConfigurationDataSpec.
+        :type env_name: str
+        """
+        self._env_name = env_name
 
     @property
     def image_pull_policy(self):
         """Gets the image_pull_policy of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置升级策略。 - 重启自动升级：每次都尝试重新下载镜像。 - 手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。
+        - 参数含义：已废弃，迁移到监控系统，type为\"apm2\"时，性能管理配置升级策略。 - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。
 
         :return: The image_pull_policy of this ConfigurationDataSpec.
         :rtype: str
@@ -760,7 +868,7 @@ class ConfigurationDataSpec:
     def image_pull_policy(self, image_pull_policy):
         """Sets the image_pull_policy of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置升级策略。 - 重启自动升级：每次都尝试重新下载镜像。 - 手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。
+        - 参数含义：已废弃，迁移到监控系统，type为\"apm2\"时，性能管理配置升级策略。 - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。
 
         :param image_pull_policy: The image_pull_policy of this ConfigurationDataSpec.
         :type image_pull_policy: str
@@ -771,7 +879,7 @@ class ConfigurationDataSpec:
     def version(self):
         """Gets the version of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置探针版本。
+        - type为\"apm2\"时，配置此参数。 - 参数含义：已废弃，迁移到监控系统，type为\"apm2\"时，性能管理配置探针版本。
 
         :return: The version of this ConfigurationDataSpec.
         :rtype: str
@@ -782,12 +890,78 @@ class ConfigurationDataSpec:
     def version(self, version):
         """Sets the version of this ConfigurationDataSpec.
 
-        - type为\"apm2\"时，配置此参数。 - 参数含义：性能管理配置探针版本。
+        - type为\"apm2\"时，配置此参数。 - 参数含义：已废弃，迁移到监控系统，type为\"apm2\"时，性能管理配置探针版本。
 
         :param version: The version of this ConfigurationDataSpec.
         :type version: str
         """
         self._version = version
+
+    @property
+    def access_key(self):
+        """Gets the access_key of this ConfigurationDataSpec.
+
+        - 参数含义：已废弃，迁移到监控系统，type为\"apm2\"时，性能管理配置访问密钥Key。
+
+        :return: The access_key of this ConfigurationDataSpec.
+        :rtype: str
+        """
+        return self._access_key
+
+    @access_key.setter
+    def access_key(self, access_key):
+        """Sets the access_key of this ConfigurationDataSpec.
+
+        - 参数含义：已废弃，迁移到监控系统，type为\"apm2\"时，性能管理配置访问密钥Key。
+
+        :param access_key: The access_key of this ConfigurationDataSpec.
+        :type access_key: str
+        """
+        self._access_key = access_key
+
+    @property
+    def access_value(self):
+        """Gets the access_value of this ConfigurationDataSpec.
+
+        - 参数含义：已废弃，迁移到监控系统，type为\"apm2\"时，性能管理配置访问密钥value。
+
+        :return: The access_value of this ConfigurationDataSpec.
+        :rtype: str
+        """
+        return self._access_value
+
+    @access_value.setter
+    def access_value(self, access_value):
+        """Sets the access_value of this ConfigurationDataSpec.
+
+        - 参数含义：已废弃，迁移到监控系统，type为\"apm2\"时，性能管理配置访问密钥value。
+
+        :param access_value: The access_value of this ConfigurationDataSpec.
+        :type access_value: str
+        """
+        self._access_value = access_value
+
+    @property
+    def business(self):
+        """Gets the business of this ConfigurationDataSpec.
+
+        - 参数含义：已废弃，type为\"apm2\"时，性能管理配置应用，同apm_application。
+
+        :return: The business of this ConfigurationDataSpec.
+        :rtype: str
+        """
+        return self._business
+
+    @business.setter
+    def business(self, business):
+        """Sets the business of this ConfigurationDataSpec.
+
+        - 参数含义：已废弃，type为\"apm2\"时，性能管理配置应用，同apm_application。
+
+        :param business: The business of this ConfigurationDataSpec.
+        :type business: str
+        """
+        self._business = business
 
     @property
     def path(self):

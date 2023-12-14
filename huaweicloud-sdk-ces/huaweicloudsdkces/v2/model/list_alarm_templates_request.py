@@ -47,7 +47,7 @@ class ListAlarmTemplatesRequest:
         :type namespace: str
         :param dim_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
         :type dim_name: str
-        :param template_type: 模板类型(custom代表默认自定义模板，system代表系统模板),不传自定义和系统均需返回
+        :param template_type: 模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
         :type template_type: str
         :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]，支持模糊匹配
         :type template_name: str
@@ -168,7 +168,7 @@ class ListAlarmTemplatesRequest:
     def template_type(self):
         """Gets the template_type of this ListAlarmTemplatesRequest.
 
-        模板类型(custom代表默认自定义模板，system代表系统模板),不传自定义和系统均需返回
+        模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
 
         :return: The template_type of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class ListAlarmTemplatesRequest:
     def template_type(self, template_type):
         """Sets the template_type of this ListAlarmTemplatesRequest.
 
-        模板类型(custom代表默认自定义模板，system代表系统模板),不传自定义和系统均需返回
+        模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
 
         :param template_type: The template_type of this ListAlarmTemplatesRequest.
         :type template_type: str

@@ -28,7 +28,9 @@ class CreateKeywordsAlarmRuleRequestBody:
         'trigger_condition_count': 'int',
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
-        'recovery_policy': 'int'
+        'recovery_policy': 'int',
+        'notification_frequency': 'int',
+        'alarm_action_rule_name': 'str'
     }
 
     attribute_map = {
@@ -43,15 +45,17 @@ class CreateKeywordsAlarmRuleRequestBody:
         'trigger_condition_count': 'trigger_condition_count',
         'trigger_condition_frequency': 'trigger_condition_frequency',
         'whether_recovery_policy': 'whether_recovery_policy',
-        'recovery_policy': 'recovery_policy'
+        'recovery_policy': 'recovery_policy',
+        'notification_frequency': 'notification_frequency',
+        'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None):
+    def __init__(self, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
         """CreateKeywordsAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param keywords_alarm_rule_name: 关键词告警名称
+        :param keywords_alarm_rule_name: 关键词告警名称  &gt;不能以点和下划线开头或以点结尾。
         :type keywords_alarm_rule_name: str
         :param keywords_alarm_rule_description: 关键词告警信息描述
         :type keywords_alarm_rule_description: str
@@ -75,6 +79,10 @@ class CreateKeywordsAlarmRuleRequestBody:
         :type whether_recovery_policy: bool
         :param recovery_policy: 恢复策略周期;默认为3
         :type recovery_policy: int
+        :param notification_frequency: 通知频率,单位(分钟)
+        :type notification_frequency: int
+        :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+        :type alarm_action_rule_name: str
         """
         
         
@@ -91,6 +99,8 @@ class CreateKeywordsAlarmRuleRequestBody:
         self._trigger_condition_frequency = None
         self._whether_recovery_policy = None
         self._recovery_policy = None
+        self._notification_frequency = None
+        self._alarm_action_rule_name = None
         self.discriminator = None
 
         self.keywords_alarm_rule_name = keywords_alarm_rule_name
@@ -111,12 +121,15 @@ class CreateKeywordsAlarmRuleRequestBody:
             self.whether_recovery_policy = whether_recovery_policy
         if recovery_policy is not None:
             self.recovery_policy = recovery_policy
+        self.notification_frequency = notification_frequency
+        if alarm_action_rule_name is not None:
+            self.alarm_action_rule_name = alarm_action_rule_name
 
     @property
     def keywords_alarm_rule_name(self):
         """Gets the keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
 
-        关键词告警名称
+        关键词告警名称  >不能以点和下划线开头或以点结尾。
 
         :return: The keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
         :rtype: str
@@ -127,7 +140,7 @@ class CreateKeywordsAlarmRuleRequestBody:
     def keywords_alarm_rule_name(self, keywords_alarm_rule_name):
         """Sets the keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
 
-        关键词告警名称
+        关键词告警名称  >不能以点和下划线开头或以点结尾。
 
         :param keywords_alarm_rule_name: The keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
         :type keywords_alarm_rule_name: str
@@ -367,6 +380,50 @@ class CreateKeywordsAlarmRuleRequestBody:
         :type recovery_policy: int
         """
         self._recovery_policy = recovery_policy
+
+    @property
+    def notification_frequency(self):
+        """Gets the notification_frequency of this CreateKeywordsAlarmRuleRequestBody.
+
+        通知频率,单位(分钟)
+
+        :return: The notification_frequency of this CreateKeywordsAlarmRuleRequestBody.
+        :rtype: int
+        """
+        return self._notification_frequency
+
+    @notification_frequency.setter
+    def notification_frequency(self, notification_frequency):
+        """Sets the notification_frequency of this CreateKeywordsAlarmRuleRequestBody.
+
+        通知频率,单位(分钟)
+
+        :param notification_frequency: The notification_frequency of this CreateKeywordsAlarmRuleRequestBody.
+        :type notification_frequency: int
+        """
+        self._notification_frequency = notification_frequency
+
+    @property
+    def alarm_action_rule_name(self):
+        """Gets the alarm_action_rule_name of this CreateKeywordsAlarmRuleRequestBody.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :return: The alarm_action_rule_name of this CreateKeywordsAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._alarm_action_rule_name
+
+    @alarm_action_rule_name.setter
+    def alarm_action_rule_name(self, alarm_action_rule_name):
+        """Sets the alarm_action_rule_name of this CreateKeywordsAlarmRuleRequestBody.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :param alarm_action_rule_name: The alarm_action_rule_name of this CreateKeywordsAlarmRuleRequestBody.
+        :type alarm_action_rule_name: str
+        """
+        self._alarm_action_rule_name = alarm_action_rule_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

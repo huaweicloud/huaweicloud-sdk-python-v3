@@ -43,13 +43,13 @@ class ListRecordContentsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param publish_domain: 直播推流放域名
+        :param publish_domain: 直播推流域名
         :type publish_domain: str
         :param app: 流应用名称
         :type app: str
         :param stream: 流名称
         :type stream: str
-        :param record_type: 录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
+        :param record_type: 录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 
         :type record_type: str
         :param start_time: 开始时间,格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
         :type start_time: str
@@ -93,7 +93,7 @@ class ListRecordContentsRequest:
     def publish_domain(self):
         """Gets the publish_domain of this ListRecordContentsRequest.
 
-        直播推流放域名
+        直播推流域名
 
         :return: The publish_domain of this ListRecordContentsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListRecordContentsRequest:
     def publish_domain(self, publish_domain):
         """Sets the publish_domain of this ListRecordContentsRequest.
 
-        直播推流放域名
+        直播推流域名
 
         :param publish_domain: The publish_domain of this ListRecordContentsRequest.
         :type publish_domain: str
@@ -159,7 +159,7 @@ class ListRecordContentsRequest:
     def record_type(self):
         """Gets the record_type of this ListRecordContentsRequest.
 
-        录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
+        录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 
 
         :return: The record_type of this ListRecordContentsRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListRecordContentsRequest:
     def record_type(self, record_type):
         """Sets the record_type of this ListRecordContentsRequest.
 
-        录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
+        录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 
 
         :param record_type: The record_type of this ListRecordContentsRequest.
         :type record_type: str

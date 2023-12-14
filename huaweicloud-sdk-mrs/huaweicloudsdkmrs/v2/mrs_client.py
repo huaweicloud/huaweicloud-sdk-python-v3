@@ -1814,6 +1814,205 @@ class MrsClient(Client):
 
         return http_info
 
+    def show_tag_quota(self, request):
+        """查询标签配额
+
+        查询标签配额信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTagQuota
+        :type request: :class:`huaweicloudsdkmrs.v2.ShowTagQuotaRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ShowTagQuotaResponse`
+        """
+        http_info = self._show_tag_quota_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tag_quota_invoker(self, request):
+        http_info = self._show_tag_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tag_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/tags/quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'auto_scaling_policy_tags' in local_var_params:
+            query_params.append(('auto_scaling_policy_tags', local_var_params['auto_scaling_policy_tags']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tag_status(self, request):
+        """查询默认标签状态
+
+        查询集群默认标签状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTagStatus
+        :type request: :class:`huaweicloudsdkmrs.v2.ShowTagStatusRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ShowTagStatusResponse`
+        """
+        http_info = self._show_tag_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tag_status_invoker(self, request):
+        http_info = self._show_tag_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tag_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/tags/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_cluster_tags(self, request):
+        """集群操作默认标签
+
+        对已有集群启用或关闭集群默认标签。开启后，集群内节点会打上集群默认标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchClusterTags
+        :type request: :class:`huaweicloudsdkmrs.v2.SwitchClusterTagsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.SwitchClusterTagsResponse`
+        """
+        http_info = self._switch_cluster_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_cluster_tags_invoker(self, request):
+        http_info = self._switch_cluster_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_cluster_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/tags/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchClusterTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_mrs_version_list(self, request):
         """展示MRS版本列表
 

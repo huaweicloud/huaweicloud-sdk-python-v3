@@ -5357,6 +5357,75 @@ class MeetingClient(Client):
 
         return http_info
 
+    def resume_simultaneous_interpretation(self, request):
+        """开启/关闭同声传译
+
+        该接口用于会议主席可以通过该接口开启/关闭同声传译。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResumeSimultaneousInterpretation
+        :type request: :class:`huaweicloudsdkmeeting.v1.ResumeSimultaneousInterpretationRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResumeSimultaneousInterpretationResponse`
+        """
+        http_info = self._resume_simultaneous_interpretation_http_info(request)
+        return self._call_api(**http_info)
+
+    def resume_simultaneous_interpretation_invoker(self, request):
+        http_info = self._resume_simultaneous_interpretation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resume_simultaneous_interpretation_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/simultaneousInterpretation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumeSimultaneousInterpretationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def rollcall_participant(self, request):
         """点名会场
 
@@ -7508,6 +7577,75 @@ class MeetingClient(Client):
 
         return http_info
 
+    def set_attendee_lan_channel(self, request):
+        """设置普通与会人的语言频道
+
+        主持人通过该接口设置某些普通与会者(包括主持人)加入哪个语言频道。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetAttendeeLanChannel
+        :type request: :class:`huaweicloudsdkmeeting.v1.SetAttendeeLanChannelRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetAttendeeLanChannelResponse`
+        """
+        http_info = self._set_attendee_lan_channel_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_attendee_lan_channel_invoker(self, request):
+        http_info = self._set_attendee_lan_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_attendee_lan_channel_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/setAttendeeLanChannel",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAttendeeLanChannelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_cohost(self, request):
         """申请联席主持人
 
@@ -7673,6 +7811,75 @@ class MeetingClient(Client):
             "resource_path": "/v1/mmc/control/conferences/chairView",
             "request_type": request.__class__.__name__,
             "response_type": "SetHostViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_interpreter_group(self, request):
+        """设置传译组
+
+        主持人通过该接口设置传译组，每个传译组支持两种语言，传译组内支持多个传译员。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetInterpreterGroup
+        :type request: :class:`huaweicloudsdkmeeting.v1.SetInterpreterGroupRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetInterpreterGroupResponse`
+        """
+        http_info = self._set_interpreter_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_interpreter_group_invoker(self, request):
+        http_info = self._set_interpreter_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_interpreter_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/interpreterGroup",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetInterpreterGroupResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -18,10 +18,11 @@ class SqlAlarmRuleRespList:
 
     openapi_types = {
         'sql_alarm_rule_name': 'str',
+        'is_css_sql': 'bool',
         'sql_alarm_rule_id': 'str',
         'sql_alarm_rule_description': 'str',
         'sql_requests': 'list[SqlRequest]',
-        'frequency': 'Frequency',
+        'frequency': 'FrequencyRespBody',
         'condition_expression': 'str',
         'topics': 'list[Topics]',
         'sql_alarm_level': 'str',
@@ -34,11 +35,14 @@ class SqlAlarmRuleRespList:
         'trigger_condition_count': 'int',
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
-        'recovery_policy': 'int'
+        'recovery_policy': 'int',
+        'notification_frequency': 'int',
+        'alarm_action_rule_name': 'str'
     }
 
     attribute_map = {
         'sql_alarm_rule_name': 'sql_alarm_rule_name',
+        'is_css_sql': 'is_css_sql',
         'sql_alarm_rule_id': 'sql_alarm_rule_id',
         'sql_alarm_rule_description': 'sql_alarm_rule_description',
         'sql_requests': 'sql_requests',
@@ -55,16 +59,20 @@ class SqlAlarmRuleRespList:
         'trigger_condition_count': 'trigger_condition_count',
         'trigger_condition_frequency': 'trigger_condition_frequency',
         'whether_recovery_policy': 'whether_recovery_policy',
-        'recovery_policy': 'recovery_policy'
+        'recovery_policy': 'recovery_policy',
+        'notification_frequency': 'notification_frequency',
+        'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None):
+    def __init__(self, sql_alarm_rule_name=None, is_css_sql=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
         """SqlAlarmRuleRespList
 
         The model defined in huaweicloud sdk
 
         :param sql_alarm_rule_name: SQL告警名称
         :type sql_alarm_rule_name: str
+        :param is_css_sql: 是否管道符sql查询
+        :type is_css_sql: bool
         :param sql_alarm_rule_id: SQL告警规则id
         :type sql_alarm_rule_id: str
         :param sql_alarm_rule_description: SQL告警信息描述
@@ -72,7 +80,7 @@ class SqlAlarmRuleRespList:
         :param sql_requests: SQL详细信息
         :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
         :param frequency: 
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         :param condition_expression: 条件表达式
         :type condition_expression: str
         :param topics: 主题信息
@@ -83,15 +91,15 @@ class SqlAlarmRuleRespList:
         :type sql_alarm_send: bool
         :param domain_id: domainId
         :type domain_id: str
-        :param create_time: 创建时间(毫秒时间戳)
+        :param create_time: 创建时间（毫秒时间戳）
         :type create_time: int
-        :param update_time: 更新时间(毫秒时间戳)
+        :param update_time: 更新时间（毫秒时间戳）
         :type update_time: int
-        :param template_name: 
+        :param template_name: 消息模板名称
         :type template_name: str
-        :param status: 
+        :param status: 告警状态
         :type status: str
-        :param trigger_condition_count: 触发条件：触发次数;默认为1
+        :param trigger_condition_count: 触发条件：触发周期;默认为1
         :type trigger_condition_count: int
         :param trigger_condition_frequency: 触发条件：触发周期;默认为1
         :type trigger_condition_frequency: int
@@ -99,11 +107,16 @@ class SqlAlarmRuleRespList:
         :type whether_recovery_policy: bool
         :param recovery_policy: 恢复策略周期;默认为3
         :type recovery_policy: int
+        :param notification_frequency: 通知频率,单位(分钟)
+        :type notification_frequency: int
+        :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+        :type alarm_action_rule_name: str
         """
         
         
 
         self._sql_alarm_rule_name = None
+        self._is_css_sql = None
         self._sql_alarm_rule_id = None
         self._sql_alarm_rule_description = None
         self._sql_requests = None
@@ -121,9 +134,13 @@ class SqlAlarmRuleRespList:
         self._trigger_condition_frequency = None
         self._whether_recovery_policy = None
         self._recovery_policy = None
+        self._notification_frequency = None
+        self._alarm_action_rule_name = None
         self.discriminator = None
 
         self.sql_alarm_rule_name = sql_alarm_rule_name
+        if is_css_sql is not None:
+            self.is_css_sql = is_css_sql
         self.sql_alarm_rule_id = sql_alarm_rule_id
         self.sql_alarm_rule_description = sql_alarm_rule_description
         self.sql_requests = sql_requests
@@ -147,6 +164,9 @@ class SqlAlarmRuleRespList:
             self.whether_recovery_policy = whether_recovery_policy
         if recovery_policy is not None:
             self.recovery_policy = recovery_policy
+        self.notification_frequency = notification_frequency
+        if alarm_action_rule_name is not None:
+            self.alarm_action_rule_name = alarm_action_rule_name
 
     @property
     def sql_alarm_rule_name(self):
@@ -169,6 +189,28 @@ class SqlAlarmRuleRespList:
         :type sql_alarm_rule_name: str
         """
         self._sql_alarm_rule_name = sql_alarm_rule_name
+
+    @property
+    def is_css_sql(self):
+        """Gets the is_css_sql of this SqlAlarmRuleRespList.
+
+        是否管道符sql查询
+
+        :return: The is_css_sql of this SqlAlarmRuleRespList.
+        :rtype: bool
+        """
+        return self._is_css_sql
+
+    @is_css_sql.setter
+    def is_css_sql(self, is_css_sql):
+        """Sets the is_css_sql of this SqlAlarmRuleRespList.
+
+        是否管道符sql查询
+
+        :param is_css_sql: The is_css_sql of this SqlAlarmRuleRespList.
+        :type is_css_sql: bool
+        """
+        self._is_css_sql = is_css_sql
 
     @property
     def sql_alarm_rule_id(self):
@@ -241,7 +283,7 @@ class SqlAlarmRuleRespList:
         """Gets the frequency of this SqlAlarmRuleRespList.
 
         :return: The frequency of this SqlAlarmRuleRespList.
-        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
+        :rtype: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         """
         return self._frequency
 
@@ -250,7 +292,7 @@ class SqlAlarmRuleRespList:
         """Sets the frequency of this SqlAlarmRuleRespList.
 
         :param frequency: The frequency of this SqlAlarmRuleRespList.
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         """
         self._frequency = frequency
 
@@ -368,7 +410,7 @@ class SqlAlarmRuleRespList:
     def create_time(self):
         """Gets the create_time of this SqlAlarmRuleRespList.
 
-        创建时间(毫秒时间戳)
+        创建时间（毫秒时间戳）
 
         :return: The create_time of this SqlAlarmRuleRespList.
         :rtype: int
@@ -379,7 +421,7 @@ class SqlAlarmRuleRespList:
     def create_time(self, create_time):
         """Sets the create_time of this SqlAlarmRuleRespList.
 
-        创建时间(毫秒时间戳)
+        创建时间（毫秒时间戳）
 
         :param create_time: The create_time of this SqlAlarmRuleRespList.
         :type create_time: int
@@ -390,7 +432,7 @@ class SqlAlarmRuleRespList:
     def update_time(self):
         """Gets the update_time of this SqlAlarmRuleRespList.
 
-        更新时间(毫秒时间戳)
+        更新时间（毫秒时间戳）
 
         :return: The update_time of this SqlAlarmRuleRespList.
         :rtype: int
@@ -401,7 +443,7 @@ class SqlAlarmRuleRespList:
     def update_time(self, update_time):
         """Sets the update_time of this SqlAlarmRuleRespList.
 
-        更新时间(毫秒时间戳)
+        更新时间（毫秒时间戳）
 
         :param update_time: The update_time of this SqlAlarmRuleRespList.
         :type update_time: int
@@ -412,6 +454,8 @@ class SqlAlarmRuleRespList:
     def template_name(self):
         """Gets the template_name of this SqlAlarmRuleRespList.
 
+        消息模板名称
+
         :return: The template_name of this SqlAlarmRuleRespList.
         :rtype: str
         """
@@ -420,6 +464,8 @@ class SqlAlarmRuleRespList:
     @template_name.setter
     def template_name(self, template_name):
         """Sets the template_name of this SqlAlarmRuleRespList.
+
+        消息模板名称
 
         :param template_name: The template_name of this SqlAlarmRuleRespList.
         :type template_name: str
@@ -430,6 +476,8 @@ class SqlAlarmRuleRespList:
     def status(self):
         """Gets the status of this SqlAlarmRuleRespList.
 
+        告警状态
+
         :return: The status of this SqlAlarmRuleRespList.
         :rtype: str
         """
@@ -438,6 +486,8 @@ class SqlAlarmRuleRespList:
     @status.setter
     def status(self, status):
         """Sets the status of this SqlAlarmRuleRespList.
+
+        告警状态
 
         :param status: The status of this SqlAlarmRuleRespList.
         :type status: str
@@ -448,7 +498,7 @@ class SqlAlarmRuleRespList:
     def trigger_condition_count(self):
         """Gets the trigger_condition_count of this SqlAlarmRuleRespList.
 
-        触发条件：触发次数;默认为1
+        触发条件：触发周期;默认为1
 
         :return: The trigger_condition_count of this SqlAlarmRuleRespList.
         :rtype: int
@@ -459,7 +509,7 @@ class SqlAlarmRuleRespList:
     def trigger_condition_count(self, trigger_condition_count):
         """Sets the trigger_condition_count of this SqlAlarmRuleRespList.
 
-        触发条件：触发次数;默认为1
+        触发条件：触发周期;默认为1
 
         :param trigger_condition_count: The trigger_condition_count of this SqlAlarmRuleRespList.
         :type trigger_condition_count: int
@@ -531,6 +581,50 @@ class SqlAlarmRuleRespList:
         :type recovery_policy: int
         """
         self._recovery_policy = recovery_policy
+
+    @property
+    def notification_frequency(self):
+        """Gets the notification_frequency of this SqlAlarmRuleRespList.
+
+        通知频率,单位(分钟)
+
+        :return: The notification_frequency of this SqlAlarmRuleRespList.
+        :rtype: int
+        """
+        return self._notification_frequency
+
+    @notification_frequency.setter
+    def notification_frequency(self, notification_frequency):
+        """Sets the notification_frequency of this SqlAlarmRuleRespList.
+
+        通知频率,单位(分钟)
+
+        :param notification_frequency: The notification_frequency of this SqlAlarmRuleRespList.
+        :type notification_frequency: int
+        """
+        self._notification_frequency = notification_frequency
+
+    @property
+    def alarm_action_rule_name(self):
+        """Gets the alarm_action_rule_name of this SqlAlarmRuleRespList.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :return: The alarm_action_rule_name of this SqlAlarmRuleRespList.
+        :rtype: str
+        """
+        return self._alarm_action_rule_name
+
+    @alarm_action_rule_name.setter
+    def alarm_action_rule_name(self, alarm_action_rule_name):
+        """Sets the alarm_action_rule_name of this SqlAlarmRuleRespList.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :param alarm_action_rule_name: The alarm_action_rule_name of this SqlAlarmRuleRespList.
+        :type alarm_action_rule_name: str
+        """
+        self._alarm_action_rule_name = alarm_action_rule_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

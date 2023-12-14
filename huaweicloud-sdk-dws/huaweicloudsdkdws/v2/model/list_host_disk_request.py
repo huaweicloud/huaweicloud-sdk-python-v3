@@ -18,6 +18,7 @@ class ListHostDiskRequest:
 
     openapi_types = {
         'cluster_id': 'str',
+        'instance_id': 'str',
         'instance_name': 'str',
         'limit': 'int',
         'offset': 'int'
@@ -25,18 +26,21 @@ class ListHostDiskRequest:
 
     attribute_map = {
         'cluster_id': 'cluster_id',
+        'instance_id': 'instance_id',
         'instance_name': 'instance_name',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, cluster_id=None, instance_name=None, limit=None, offset=None):
+    def __init__(self, cluster_id=None, instance_id=None, instance_name=None, limit=None, offset=None):
         """ListHostDiskRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 集群ID。获取方法，请参见9.6-获取集群ID。
         :type cluster_id: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
         :param instance_name: 实例名称。
         :type instance_name: str
         :param limit: 数据条目数。
@@ -48,6 +52,7 @@ class ListHostDiskRequest:
         
 
         self._cluster_id = None
+        self._instance_id = None
         self._instance_name = None
         self._limit = None
         self._offset = None
@@ -55,6 +60,8 @@ class ListHostDiskRequest:
 
         if cluster_id is not None:
             self.cluster_id = cluster_id
+        if instance_id is not None:
+            self.instance_id = instance_id
         if instance_name is not None:
             self.instance_name = instance_name
         self.limit = limit
@@ -81,6 +88,28 @@ class ListHostDiskRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ListHostDiskRequest.
+
+        实例ID。
+
+        :return: The instance_id of this ListHostDiskRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListHostDiskRequest.
+
+        实例ID。
+
+        :param instance_id: The instance_id of this ListHostDiskRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     @property
     def instance_name(self):

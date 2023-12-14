@@ -1452,6 +1452,75 @@ class RdsClient(Client):
 
         return http_info
 
+    def delete_log_lts_configs(self, request):
+        """delete_log_lts_configs
+
+        解除LTS配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLogLtsConfigs
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteLogLtsConfigsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteLogLtsConfigsResponse`
+        """
+        http_info = self._delete_log_lts_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_log_lts_configs_invoker(self, request):
+        http_info = self._delete_log_lts_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_log_lts_configs_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/{engine}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLogLtsConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_manual_backup(self, request):
         """删除手动备份
 
@@ -3200,6 +3269,87 @@ class RdsClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_log_lts_configs(self, request):
+        """list_log_lts_configs
+
+        获取LTS配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLogLtsConfigs
+        :type request: :class:`huaweicloudsdkrds.v3.ListLogLtsConfigsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListLogLtsConfigsResponse`
+        """
+        http_info = self._list_log_lts_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_log_lts_configs_invoker(self, request):
+        http_info = self._list_log_lts_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_log_lts_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/{engine}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogLtsConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'instance_status' in local_var_params:
+            query_params.append(('instance_status', local_var_params['instance_status']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -5367,6 +5517,75 @@ class RdsClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_log_lts_configs(self, request):
+        """set_log_lts_configs
+
+        关联LTS配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetLogLtsConfigs
+        :type request: :class:`huaweicloudsdkrds.v3.SetLogLtsConfigsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetLogLtsConfigsResponse`
+        """
+        http_info = self._set_log_lts_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_log_lts_configs_invoker(self, request):
+        http_info = self._set_log_lts_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_log_lts_configs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{engine}/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetLogLtsConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
 
         query_params = []
 

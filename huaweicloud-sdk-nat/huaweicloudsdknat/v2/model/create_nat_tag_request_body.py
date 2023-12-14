@@ -17,7 +17,7 @@ class CreateNatTagRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'tag': 'object'
+        'tag': 'TagBody'
     }
 
     attribute_map = {
@@ -29,8 +29,8 @@ class CreateNatTagRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param tag: 标签列表。请参考表TagBody字段数据结构说明。
-        :type tag: object
+        :param tag: 
+        :type tag: :class:`huaweicloudsdknat.v2.TagBody`
         """
         
         
@@ -44,10 +44,8 @@ class CreateNatTagRequestBody:
     def tag(self):
         """Gets the tag of this CreateNatTagRequestBody.
 
-        标签列表。请参考表TagBody字段数据结构说明。
-
         :return: The tag of this CreateNatTagRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdknat.v2.TagBody`
         """
         return self._tag
 
@@ -55,10 +53,8 @@ class CreateNatTagRequestBody:
     def tag(self, tag):
         """Sets the tag of this CreateNatTagRequestBody.
 
-        标签列表。请参考表TagBody字段数据结构说明。
-
         :param tag: The tag of this CreateNatTagRequestBody.
-        :type tag: object
+        :type tag: :class:`huaweicloudsdknat.v2.TagBody`
         """
         self._tag = tag
 

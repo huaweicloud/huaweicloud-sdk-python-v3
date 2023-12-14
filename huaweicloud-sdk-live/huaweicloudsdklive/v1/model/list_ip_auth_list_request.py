@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DataobjectSearchConditionLogics:
+class ListIpAuthListRequest:
 
     """
     Attributes:
@@ -17,51 +17,50 @@ class DataobjectSearchConditionLogics:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'domain': 'str'
     }
 
     attribute_map = {
-        'name': 'name'
+        'domain': 'domain'
     }
 
-    def __init__(self, name=None):
-        """DataobjectSearchConditionLogics
+    def __init__(self, domain=None):
+        """ListIpAuthListRequest
 
         The model defined in huaweicloud sdk
 
-        :param name: 表达式名称
-        :type name: str
+        :param domain: 推流域名或播放域名
+        :type domain: str
         """
         
         
 
-        self._name = None
+        self._domain = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.domain = domain
 
     @property
-    def name(self):
-        """Gets the name of this DataobjectSearchConditionLogics.
+    def domain(self):
+        """Gets the domain of this ListIpAuthListRequest.
 
-        表达式名称
+        推流域名或播放域名
 
-        :return: The name of this DataobjectSearchConditionLogics.
+        :return: The domain of this ListIpAuthListRequest.
         :rtype: str
         """
-        return self._name
+        return self._domain
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this DataobjectSearchConditionLogics.
+    @domain.setter
+    def domain(self, domain):
+        """Sets the domain of this ListIpAuthListRequest.
 
-        表达式名称
+        推流域名或播放域名
 
-        :param name: The name of this DataobjectSearchConditionLogics.
-        :type name: str
+        :param domain: The domain of this ListIpAuthListRequest.
+        :type domain: str
         """
-        self._name = name
+        self._domain = domain
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -105,7 +104,7 @@ class DataobjectSearchConditionLogics:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DataobjectSearchConditionLogics):
+        if not isinstance(other, ListIpAuthListRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -48,12 +48,9 @@ class RestoreDatabaseInstance:
         self._databases = None
         self.discriminator = None
 
-        if restore_time is not None:
-            self.restore_time = restore_time
-        if instance_id is not None:
-            self.instance_id = instance_id
-        if databases is not None:
-            self.databases = databases
+        self.restore_time = restore_time
+        self.instance_id = instance_id
+        self.databases = databases
 
     @property
     def restore_time(self):

@@ -6,6 +6,8 @@ from huaweicloudsdkrds.v3.rds_client import RdsClient
 from huaweicloudsdkrds.v3.rds_async_client import RdsAsyncClient
 
 from huaweicloudsdkrds.v3.model.ad_domain_info import ADDomainInfo
+from huaweicloudsdkrds.v3.model.add_log_config_response_body import AddLogConfigResponseBody
+from huaweicloudsdkrds.v3.model.add_log_configs import AddLogConfigs
 from huaweicloudsdkrds.v3.model.add_msdtc_request_body import AddMsdtcRequestBody
 from huaweicloudsdkrds.v3.model.add_postgresql_hba_conf_request import AddPostgresqlHbaConfRequest
 from huaweicloudsdkrds.v3.model.add_postgresql_hba_conf_response import AddPostgresqlHbaConfResponse
@@ -126,6 +128,10 @@ from huaweicloudsdkrds.v3.model.delete_instance_request import DeleteInstanceReq
 from huaweicloudsdkrds.v3.model.delete_instance_response import DeleteInstanceResponse
 from huaweicloudsdkrds.v3.model.delete_job_request import DeleteJobRequest
 from huaweicloudsdkrds.v3.model.delete_job_response import DeleteJobResponse
+from huaweicloudsdkrds.v3.model.delete_log_config_response_body import DeleteLogConfigResponseBody
+from huaweicloudsdkrds.v3.model.delete_log_configs import DeleteLogConfigs
+from huaweicloudsdkrds.v3.model.delete_log_lts_configs_request import DeleteLogLtsConfigsRequest
+from huaweicloudsdkrds.v3.model.delete_log_lts_configs_response import DeleteLogLtsConfigsResponse
 from huaweicloudsdkrds.v3.model.delete_manual_backup_request import DeleteManualBackupRequest
 from huaweicloudsdkrds.v3.model.delete_manual_backup_response import DeleteManualBackupResponse
 from huaweicloudsdkrds.v3.model.delete_postgresql_database_request import DeletePostgresqlDatabaseRequest
@@ -241,6 +247,8 @@ from huaweicloudsdkrds.v3.model.list_job_info_detail_request import ListJobInfoD
 from huaweicloudsdkrds.v3.model.list_job_info_detail_response import ListJobInfoDetailResponse
 from huaweicloudsdkrds.v3.model.list_job_info_request import ListJobInfoRequest
 from huaweicloudsdkrds.v3.model.list_job_info_response import ListJobInfoResponse
+from huaweicloudsdkrds.v3.model.list_log_lts_configs_request import ListLogLtsConfigsRequest
+from huaweicloudsdkrds.v3.model.list_log_lts_configs_response import ListLogLtsConfigsResponse
 from huaweicloudsdkrds.v3.model.list_msdtc_hosts_request import ListMsdtcHostsRequest
 from huaweicloudsdkrds.v3.model.list_msdtc_hosts_response import ListMsdtcHostsResponse
 from huaweicloudsdkrds.v3.model.list_off_site_backups_request import ListOffSiteBackupsRequest
@@ -421,6 +429,8 @@ from huaweicloudsdkrds.v3.model.set_db_user_pwd_request import SetDbUserPwdReque
 from huaweicloudsdkrds.v3.model.set_db_user_pwd_response import SetDbUserPwdResponse
 from huaweicloudsdkrds.v3.model.set_instances_db_shrink_request import SetInstancesDbShrinkRequest
 from huaweicloudsdkrds.v3.model.set_instances_db_shrink_response import SetInstancesDbShrinkResponse
+from huaweicloudsdkrds.v3.model.set_log_lts_configs_request import SetLogLtsConfigsRequest
+from huaweicloudsdkrds.v3.model.set_log_lts_configs_response import SetLogLtsConfigsResponse
 from huaweicloudsdkrds.v3.model.set_off_site_backup_policy_request import SetOffSiteBackupPolicyRequest
 from huaweicloudsdkrds.v3.model.set_off_site_backup_policy_request_body import SetOffSiteBackupPolicyRequestBody
 from huaweicloudsdkrds.v3.model.set_off_site_backup_policy_response import SetOffSiteBackupPolicyResponse

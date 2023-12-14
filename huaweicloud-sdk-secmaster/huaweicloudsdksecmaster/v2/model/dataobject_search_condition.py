@@ -18,7 +18,7 @@ class DataobjectSearchCondition:
 
     openapi_types = {
         'conditions': 'list[DataobjectSearchConditionConditions]',
-        'logics': 'list[DataobjectSearchConditionLogics]'
+        'logics': 'list[str]'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class DataobjectSearchCondition:
 
         :param conditions: 表达式列表
         :type conditions: list[:class:`huaweicloudsdksecmaster.v2.DataobjectSearchConditionConditions`]
-        :param logics: 表达式逻辑
-        :type logics: list[:class:`huaweicloudsdksecmaster.v2.DataobjectSearchConditionLogics`]
+        :param logics: 表达式名称列表
+        :type logics: list[str]
         """
         
         
@@ -74,10 +74,10 @@ class DataobjectSearchCondition:
     def logics(self):
         """Gets the logics of this DataobjectSearchCondition.
 
-        表达式逻辑
+        表达式名称列表
 
         :return: The logics of this DataobjectSearchCondition.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.DataobjectSearchConditionLogics`]
+        :rtype: list[str]
         """
         return self._logics
 
@@ -85,10 +85,10 @@ class DataobjectSearchCondition:
     def logics(self, logics):
         """Sets the logics of this DataobjectSearchCondition.
 
-        表达式逻辑
+        表达式名称列表
 
         :param logics: The logics of this DataobjectSearchCondition.
-        :type logics: list[:class:`huaweicloudsdksecmaster.v2.DataobjectSearchConditionLogics`]
+        :type logics: list[str]
         """
         self._logics = logics
 
