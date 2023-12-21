@@ -24,7 +24,10 @@ class Location:
         'operator': 'str',
         'pool_id': 'str',
         'stack_count': 'int',
-        'city_short_name': 'str'
+        'city_short_name': 'str',
+        'ipv6_enable': 'bool',
+        'ipv6_bandwidth_enable': 'bool',
+        'pool_id_v6': 'str'
     }
 
     attribute_map = {
@@ -35,10 +38,13 @@ class Location:
         'operator': 'operator',
         'pool_id': 'pool_id',
         'stack_count': 'stack_count',
-        'city_short_name': 'city_short_name'
+        'city_short_name': 'city_short_name',
+        'ipv6_enable': 'ipv6_enable',
+        'ipv6_bandwidth_enable': 'ipv6_bandwidth_enable',
+        'pool_id_v6': 'pool_id_v6'
     }
 
-    def __init__(self, site_id=None, area=None, province=None, city=None, operator=None, pool_id=None, stack_count=None, city_short_name=None):
+    def __init__(self, site_id=None, area=None, province=None, city=None, operator=None, pool_id=None, stack_count=None, city_short_name=None, ipv6_enable=None, ipv6_bandwidth_enable=None, pool_id_v6=None):
         """Location
 
         The model defined in huaweicloud sdk
@@ -59,6 +65,12 @@ class Location:
         :type stack_count: int
         :param city_short_name: 城市简称。
         :type city_short_name: str
+        :param ipv6_enable: 创建边缘实例是否开启IPv6。
+        :type ipv6_enable: bool
+        :param ipv6_bandwidth_enable: 创建IPv6边缘实例是否支持公网访问。
+        :type ipv6_bandwidth_enable: bool
+        :param pool_id_v6: IPv6线路ID。IPv6场景下，使用该线路下的子网分配IPv6端口。
+        :type pool_id_v6: str
         """
         
         
@@ -71,6 +83,9 @@ class Location:
         self._pool_id = None
         self._stack_count = None
         self._city_short_name = None
+        self._ipv6_enable = None
+        self._ipv6_bandwidth_enable = None
+        self._pool_id_v6 = None
         self.discriminator = None
 
         if site_id is not None:
@@ -89,6 +104,12 @@ class Location:
             self.stack_count = stack_count
         if city_short_name is not None:
             self.city_short_name = city_short_name
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if ipv6_bandwidth_enable is not None:
+            self.ipv6_bandwidth_enable = ipv6_bandwidth_enable
+        if pool_id_v6 is not None:
+            self.pool_id_v6 = pool_id_v6
 
     @property
     def site_id(self):
@@ -265,6 +286,72 @@ class Location:
         :type city_short_name: str
         """
         self._city_short_name = city_short_name
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this Location.
+
+        创建边缘实例是否开启IPv6。
+
+        :return: The ipv6_enable of this Location.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this Location.
+
+        创建边缘实例是否开启IPv6。
+
+        :param ipv6_enable: The ipv6_enable of this Location.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def ipv6_bandwidth_enable(self):
+        """Gets the ipv6_bandwidth_enable of this Location.
+
+        创建IPv6边缘实例是否支持公网访问。
+
+        :return: The ipv6_bandwidth_enable of this Location.
+        :rtype: bool
+        """
+        return self._ipv6_bandwidth_enable
+
+    @ipv6_bandwidth_enable.setter
+    def ipv6_bandwidth_enable(self, ipv6_bandwidth_enable):
+        """Sets the ipv6_bandwidth_enable of this Location.
+
+        创建IPv6边缘实例是否支持公网访问。
+
+        :param ipv6_bandwidth_enable: The ipv6_bandwidth_enable of this Location.
+        :type ipv6_bandwidth_enable: bool
+        """
+        self._ipv6_bandwidth_enable = ipv6_bandwidth_enable
+
+    @property
+    def pool_id_v6(self):
+        """Gets the pool_id_v6 of this Location.
+
+        IPv6线路ID。IPv6场景下，使用该线路下的子网分配IPv6端口。
+
+        :return: The pool_id_v6 of this Location.
+        :rtype: str
+        """
+        return self._pool_id_v6
+
+    @pool_id_v6.setter
+    def pool_id_v6(self, pool_id_v6):
+        """Sets the pool_id_v6 of this Location.
+
+        IPv6线路ID。IPv6场景下，使用该线路下的子网分配IPv6端口。
+
+        :param pool_id_v6: The pool_id_v6 of this Location.
+        :type pool_id_v6: str
+        """
+        self._pool_id_v6 = pool_id_v6
 
     def to_dict(self):
         """Returns the model properties as a dict"""

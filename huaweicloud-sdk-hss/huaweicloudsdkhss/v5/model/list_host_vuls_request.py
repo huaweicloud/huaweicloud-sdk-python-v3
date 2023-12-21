@@ -43,11 +43,11 @@ class ListHostVulsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业租户ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param host_id: 服务器id
         :type host_id: str
-        :param type: 漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        :param type: 漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
         :type type: str
         :param vul_name: 漏洞名称
         :type vul_name: str
@@ -93,7 +93,7 @@ class ListHostVulsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListHostVulsRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListHostVulsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListHostVulsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListHostVulsRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostVulsRequest.
         :type enterprise_project_id: str
@@ -137,7 +137,7 @@ class ListHostVulsRequest:
     def type(self):
         """Gets the type of this ListHostVulsRequest.
 
-        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
         :return: The type of this ListHostVulsRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class ListHostVulsRequest:
     def type(self, type):
         """Sets the type of this ListHostVulsRequest.
 
-        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
         :param type: The type of this ListHostVulsRequest.
         :type type: str

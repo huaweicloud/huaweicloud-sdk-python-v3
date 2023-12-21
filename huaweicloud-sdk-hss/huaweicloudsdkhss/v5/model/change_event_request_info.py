@@ -19,16 +19,18 @@ class ChangeEventRequestInfo:
     openapi_types = {
         'operate_type': 'str',
         'handler': 'str',
-        'operate_event_list': 'list[OperateEventRequestInfo]'
+        'operate_event_list': 'list[OperateEventRequestInfo]',
+        'event_white_rule_list': 'list[EventWhiteRuleListRequestInfo]'
     }
 
     attribute_map = {
         'operate_type': 'operate_type',
         'handler': 'handler',
-        'operate_event_list': 'operate_event_list'
+        'operate_event_list': 'operate_event_list',
+        'event_white_rule_list': 'event_white_rule_list'
     }
 
-    def __init__(self, operate_type=None, handler=None, operate_event_list=None):
+    def __init__(self, operate_type=None, handler=None, operate_event_list=None, event_white_rule_list=None):
         """ChangeEventRequestInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ChangeEventRequestInfo:
         :type handler: str
         :param operate_event_list: 操作的事件列表
         :type operate_event_list: list[:class:`huaweicloudsdkhss.v5.OperateEventRequestInfo`]
+        :param event_white_rule_list: 用户自定义告警白名单规则列表
+        :type event_white_rule_list: list[:class:`huaweicloudsdkhss.v5.EventWhiteRuleListRequestInfo`]
         """
         
         
@@ -46,12 +50,15 @@ class ChangeEventRequestInfo:
         self._operate_type = None
         self._handler = None
         self._operate_event_list = None
+        self._event_white_rule_list = None
         self.discriminator = None
 
         self.operate_type = operate_type
         if handler is not None:
             self.handler = handler
         self.operate_event_list = operate_event_list
+        if event_white_rule_list is not None:
+            self.event_white_rule_list = event_white_rule_list
 
     @property
     def operate_type(self):
@@ -118,6 +125,28 @@ class ChangeEventRequestInfo:
         :type operate_event_list: list[:class:`huaweicloudsdkhss.v5.OperateEventRequestInfo`]
         """
         self._operate_event_list = operate_event_list
+
+    @property
+    def event_white_rule_list(self):
+        """Gets the event_white_rule_list of this ChangeEventRequestInfo.
+
+        用户自定义告警白名单规则列表
+
+        :return: The event_white_rule_list of this ChangeEventRequestInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.EventWhiteRuleListRequestInfo`]
+        """
+        return self._event_white_rule_list
+
+    @event_white_rule_list.setter
+    def event_white_rule_list(self, event_white_rule_list):
+        """Sets the event_white_rule_list of this ChangeEventRequestInfo.
+
+        用户自定义告警白名单规则列表
+
+        :param event_white_rule_list: The event_white_rule_list of this ChangeEventRequestInfo.
+        :type event_white_rule_list: list[:class:`huaweicloudsdkhss.v5.EventWhiteRuleListRequestInfo`]
+        """
+        self._event_white_rule_list = event_white_rule_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

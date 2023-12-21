@@ -23,6 +23,7 @@ class ListSecurityEventsRequest:
         'host_name': 'str',
         'host_id': 'str',
         'private_ip': 'str',
+        'public_ip': 'str',
         'container_name': 'str',
         'offset': 'int',
         'limit': 'int',
@@ -37,7 +38,8 @@ class ListSecurityEventsRequest:
         'attack_tag': 'str',
         'asset_value': 'str',
         'tag_list': 'list[str]',
-        'att_ck': 'str'
+        'att_ck': 'str',
+        'event_name': 'str'
     }
 
     attribute_map = {
@@ -47,6 +49,7 @@ class ListSecurityEventsRequest:
         'host_name': 'host_name',
         'host_id': 'host_id',
         'private_ip': 'private_ip',
+        'public_ip': 'public_ip',
         'container_name': 'container_name',
         'offset': 'offset',
         'limit': 'limit',
@@ -61,10 +64,11 @@ class ListSecurityEventsRequest:
         'attack_tag': 'attack_tag',
         'asset_value': 'asset_value',
         'tag_list': 'tag_list',
-        'att_ck': 'att_ck'
+        'att_ck': 'att_ck',
+        'event_name': 'event_name'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, last_days=None, host_name=None, host_id=None, private_ip=None, container_name=None, offset=None, limit=None, event_types=None, handle_status=None, severity=None, category=None, begin_time=None, end_time=None, event_class_ids=None, severity_list=None, attack_tag=None, asset_value=None, tag_list=None, att_ck=None):
+    def __init__(self, region=None, enterprise_project_id=None, last_days=None, host_name=None, host_id=None, private_ip=None, public_ip=None, container_name=None, offset=None, limit=None, event_types=None, handle_status=None, severity=None, category=None, begin_time=None, end_time=None, event_class_ids=None, severity_list=None, attack_tag=None, asset_value=None, tag_list=None, att_ck=None, event_name=None):
         """ListSecurityEventsRequest
 
         The model defined in huaweicloud sdk
@@ -81,6 +85,8 @@ class ListSecurityEventsRequest:
         :type host_id: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
+        :param public_ip: 服务器公网IP
+        :type public_ip: str
         :param container_name: 容器实例名称
         :type container_name: str
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
@@ -111,6 +117,8 @@ class ListSecurityEventsRequest:
         :type tag_list: list[str]
         :param att_ck: ATT&amp;CK攻击阶，包含如下：   - Reconnaissance : 侦察   - Initial Access : 初始访问   - Execution : 执行   - Persistence : 持久化   - Privilege Escalation : 权限提升   - Defense Evasion : 防御绕过   - Credential Access : 凭据访问   - Command and Control : 命令与控制   - Impact : 影响破坏
         :type att_ck: str
+        :param event_name: 告警名称
+        :type event_name: str
         """
         
         
@@ -121,6 +129,7 @@ class ListSecurityEventsRequest:
         self._host_name = None
         self._host_id = None
         self._private_ip = None
+        self._public_ip = None
         self._container_name = None
         self._offset = None
         self._limit = None
@@ -136,6 +145,7 @@ class ListSecurityEventsRequest:
         self._asset_value = None
         self._tag_list = None
         self._att_ck = None
+        self._event_name = None
         self.discriminator = None
 
         self.region = region
@@ -149,6 +159,8 @@ class ListSecurityEventsRequest:
             self.host_id = host_id
         if private_ip is not None:
             self.private_ip = private_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
         if container_name is not None:
             self.container_name = container_name
         if offset is not None:
@@ -178,6 +190,8 @@ class ListSecurityEventsRequest:
             self.tag_list = tag_list
         if att_ck is not None:
             self.att_ck = att_ck
+        if event_name is not None:
+            self.event_name = event_name
 
     @property
     def region(self):
@@ -310,6 +324,28 @@ class ListSecurityEventsRequest:
         :type private_ip: str
         """
         self._private_ip = private_ip
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this ListSecurityEventsRequest.
+
+        服务器公网IP
+
+        :return: The public_ip of this ListSecurityEventsRequest.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this ListSecurityEventsRequest.
+
+        服务器公网IP
+
+        :param public_ip: The public_ip of this ListSecurityEventsRequest.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
 
     @property
     def container_name(self):
@@ -640,6 +676,28 @@ class ListSecurityEventsRequest:
         :type att_ck: str
         """
         self._att_ck = att_ck
+
+    @property
+    def event_name(self):
+        """Gets the event_name of this ListSecurityEventsRequest.
+
+        告警名称
+
+        :return: The event_name of this ListSecurityEventsRequest.
+        :rtype: str
+        """
+        return self._event_name
+
+    @event_name.setter
+    def event_name(self, event_name):
+        """Sets the event_name of this ListSecurityEventsRequest.
+
+        告警名称
+
+        :param event_name: The event_name of this ListSecurityEventsRequest.
+        :type event_name: str
+        """
+        self._event_name = event_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

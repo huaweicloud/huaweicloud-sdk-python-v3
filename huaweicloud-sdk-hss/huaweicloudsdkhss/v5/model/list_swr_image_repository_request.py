@@ -26,7 +26,17 @@ class ListSwrImageRepositoryRequest:
         'offset': 'int',
         'limit': 'int',
         'image_type': 'str',
-        'scan_status': 'str'
+        'scan_status': 'str',
+        'instance_name': 'str',
+        'image_size': 'int',
+        'start_latest_update_time': 'int',
+        'end_latest_update_time': 'int',
+        'start_latest_scan_time': 'int',
+        'end_latest_scan_time': 'int',
+        'has_malicious_file': 'bool',
+        'has_unsafe_setting': 'bool',
+        'has_vul': 'bool',
+        'instance_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +49,20 @@ class ListSwrImageRepositoryRequest:
         'offset': 'offset',
         'limit': 'limit',
         'image_type': 'image_type',
-        'scan_status': 'scan_status'
+        'scan_status': 'scan_status',
+        'instance_name': 'instance_name',
+        'image_size': 'image_size',
+        'start_latest_update_time': 'start_latest_update_time',
+        'end_latest_update_time': 'end_latest_update_time',
+        'start_latest_scan_time': 'start_latest_scan_time',
+        'end_latest_scan_time': 'end_latest_scan_time',
+        'has_malicious_file': 'has_malicious_file',
+        'has_unsafe_setting': 'has_unsafe_setting',
+        'has_vul': 'has_vul',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, namespace=None, image_name=None, image_version=None, latest_version=None, offset=None, limit=None, image_type=None, scan_status=None):
+    def __init__(self, region=None, enterprise_project_id=None, namespace=None, image_name=None, image_version=None, latest_version=None, offset=None, limit=None, image_type=None, scan_status=None, instance_name=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_malicious_file=None, has_unsafe_setting=None, has_vul=None, instance_id=None):
         """ListSwrImageRepositoryRequest
 
         The model defined in huaweicloud sdk
@@ -63,10 +83,30 @@ class ListSwrImageRepositoryRequest:
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
-        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
         :param scan_status: 扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - download_failed : 下载失败   - image_oversized : 镜像超大
         :type scan_status: str
+        :param instance_name: 企业镜像实例名称
+        :type instance_name: str
+        :param image_size: 镜像大小
+        :type image_size: int
+        :param start_latest_update_time: 创建时间开始日期
+        :type start_latest_update_time: int
+        :param end_latest_update_time: 创建时间结束日期
+        :type end_latest_update_time: int
+        :param start_latest_scan_time: 最近一次扫描完成时间开始日期
+        :type start_latest_scan_time: int
+        :param end_latest_scan_time: 最近一次扫描完成时间结束日期
+        :type end_latest_scan_time: int
+        :param has_malicious_file: 是否存在恶意文件
+        :type has_malicious_file: bool
+        :param has_unsafe_setting: 是否存在基线检查
+        :type has_unsafe_setting: bool
+        :param has_vul: 是否存在软件漏洞
+        :type has_vul: bool
+        :param instance_id: 企业仓库实例ID，swr共享版无需使用该参数
+        :type instance_id: str
         """
         
         
@@ -81,6 +121,16 @@ class ListSwrImageRepositoryRequest:
         self._limit = None
         self._image_type = None
         self._scan_status = None
+        self._instance_name = None
+        self._image_size = None
+        self._start_latest_update_time = None
+        self._end_latest_update_time = None
+        self._start_latest_scan_time = None
+        self._end_latest_scan_time = None
+        self._has_malicious_file = None
+        self._has_unsafe_setting = None
+        self._has_vul = None
+        self._instance_id = None
         self.discriminator = None
 
         self.region = region
@@ -101,6 +151,26 @@ class ListSwrImageRepositoryRequest:
         self.image_type = image_type
         if scan_status is not None:
             self.scan_status = scan_status
+        if instance_name is not None:
+            self.instance_name = instance_name
+        if image_size is not None:
+            self.image_size = image_size
+        if start_latest_update_time is not None:
+            self.start_latest_update_time = start_latest_update_time
+        if end_latest_update_time is not None:
+            self.end_latest_update_time = end_latest_update_time
+        if start_latest_scan_time is not None:
+            self.start_latest_scan_time = start_latest_scan_time
+        if end_latest_scan_time is not None:
+            self.end_latest_scan_time = end_latest_scan_time
+        if has_malicious_file is not None:
+            self.has_malicious_file = has_malicious_file
+        if has_unsafe_setting is not None:
+            self.has_unsafe_setting = has_unsafe_setting
+        if has_vul is not None:
+            self.has_vul = has_vul
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def region(self):
@@ -282,7 +352,7 @@ class ListSwrImageRepositoryRequest:
     def image_type(self):
         """Gets the image_type of this ListSwrImageRepositoryRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
         :return: The image_type of this ListSwrImageRepositoryRequest.
         :rtype: str
@@ -293,7 +363,7 @@ class ListSwrImageRepositoryRequest:
     def image_type(self, image_type):
         """Sets the image_type of this ListSwrImageRepositoryRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
         :param image_type: The image_type of this ListSwrImageRepositoryRequest.
         :type image_type: str
@@ -321,6 +391,226 @@ class ListSwrImageRepositoryRequest:
         :type scan_status: str
         """
         self._scan_status = scan_status
+
+    @property
+    def instance_name(self):
+        """Gets the instance_name of this ListSwrImageRepositoryRequest.
+
+        企业镜像实例名称
+
+        :return: The instance_name of this ListSwrImageRepositoryRequest.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        """Sets the instance_name of this ListSwrImageRepositoryRequest.
+
+        企业镜像实例名称
+
+        :param instance_name: The instance_name of this ListSwrImageRepositoryRequest.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
+
+    @property
+    def image_size(self):
+        """Gets the image_size of this ListSwrImageRepositoryRequest.
+
+        镜像大小
+
+        :return: The image_size of this ListSwrImageRepositoryRequest.
+        :rtype: int
+        """
+        return self._image_size
+
+    @image_size.setter
+    def image_size(self, image_size):
+        """Sets the image_size of this ListSwrImageRepositoryRequest.
+
+        镜像大小
+
+        :param image_size: The image_size of this ListSwrImageRepositoryRequest.
+        :type image_size: int
+        """
+        self._image_size = image_size
+
+    @property
+    def start_latest_update_time(self):
+        """Gets the start_latest_update_time of this ListSwrImageRepositoryRequest.
+
+        创建时间开始日期
+
+        :return: The start_latest_update_time of this ListSwrImageRepositoryRequest.
+        :rtype: int
+        """
+        return self._start_latest_update_time
+
+    @start_latest_update_time.setter
+    def start_latest_update_time(self, start_latest_update_time):
+        """Sets the start_latest_update_time of this ListSwrImageRepositoryRequest.
+
+        创建时间开始日期
+
+        :param start_latest_update_time: The start_latest_update_time of this ListSwrImageRepositoryRequest.
+        :type start_latest_update_time: int
+        """
+        self._start_latest_update_time = start_latest_update_time
+
+    @property
+    def end_latest_update_time(self):
+        """Gets the end_latest_update_time of this ListSwrImageRepositoryRequest.
+
+        创建时间结束日期
+
+        :return: The end_latest_update_time of this ListSwrImageRepositoryRequest.
+        :rtype: int
+        """
+        return self._end_latest_update_time
+
+    @end_latest_update_time.setter
+    def end_latest_update_time(self, end_latest_update_time):
+        """Sets the end_latest_update_time of this ListSwrImageRepositoryRequest.
+
+        创建时间结束日期
+
+        :param end_latest_update_time: The end_latest_update_time of this ListSwrImageRepositoryRequest.
+        :type end_latest_update_time: int
+        """
+        self._end_latest_update_time = end_latest_update_time
+
+    @property
+    def start_latest_scan_time(self):
+        """Gets the start_latest_scan_time of this ListSwrImageRepositoryRequest.
+
+        最近一次扫描完成时间开始日期
+
+        :return: The start_latest_scan_time of this ListSwrImageRepositoryRequest.
+        :rtype: int
+        """
+        return self._start_latest_scan_time
+
+    @start_latest_scan_time.setter
+    def start_latest_scan_time(self, start_latest_scan_time):
+        """Sets the start_latest_scan_time of this ListSwrImageRepositoryRequest.
+
+        最近一次扫描完成时间开始日期
+
+        :param start_latest_scan_time: The start_latest_scan_time of this ListSwrImageRepositoryRequest.
+        :type start_latest_scan_time: int
+        """
+        self._start_latest_scan_time = start_latest_scan_time
+
+    @property
+    def end_latest_scan_time(self):
+        """Gets the end_latest_scan_time of this ListSwrImageRepositoryRequest.
+
+        最近一次扫描完成时间结束日期
+
+        :return: The end_latest_scan_time of this ListSwrImageRepositoryRequest.
+        :rtype: int
+        """
+        return self._end_latest_scan_time
+
+    @end_latest_scan_time.setter
+    def end_latest_scan_time(self, end_latest_scan_time):
+        """Sets the end_latest_scan_time of this ListSwrImageRepositoryRequest.
+
+        最近一次扫描完成时间结束日期
+
+        :param end_latest_scan_time: The end_latest_scan_time of this ListSwrImageRepositoryRequest.
+        :type end_latest_scan_time: int
+        """
+        self._end_latest_scan_time = end_latest_scan_time
+
+    @property
+    def has_malicious_file(self):
+        """Gets the has_malicious_file of this ListSwrImageRepositoryRequest.
+
+        是否存在恶意文件
+
+        :return: The has_malicious_file of this ListSwrImageRepositoryRequest.
+        :rtype: bool
+        """
+        return self._has_malicious_file
+
+    @has_malicious_file.setter
+    def has_malicious_file(self, has_malicious_file):
+        """Sets the has_malicious_file of this ListSwrImageRepositoryRequest.
+
+        是否存在恶意文件
+
+        :param has_malicious_file: The has_malicious_file of this ListSwrImageRepositoryRequest.
+        :type has_malicious_file: bool
+        """
+        self._has_malicious_file = has_malicious_file
+
+    @property
+    def has_unsafe_setting(self):
+        """Gets the has_unsafe_setting of this ListSwrImageRepositoryRequest.
+
+        是否存在基线检查
+
+        :return: The has_unsafe_setting of this ListSwrImageRepositoryRequest.
+        :rtype: bool
+        """
+        return self._has_unsafe_setting
+
+    @has_unsafe_setting.setter
+    def has_unsafe_setting(self, has_unsafe_setting):
+        """Sets the has_unsafe_setting of this ListSwrImageRepositoryRequest.
+
+        是否存在基线检查
+
+        :param has_unsafe_setting: The has_unsafe_setting of this ListSwrImageRepositoryRequest.
+        :type has_unsafe_setting: bool
+        """
+        self._has_unsafe_setting = has_unsafe_setting
+
+    @property
+    def has_vul(self):
+        """Gets the has_vul of this ListSwrImageRepositoryRequest.
+
+        是否存在软件漏洞
+
+        :return: The has_vul of this ListSwrImageRepositoryRequest.
+        :rtype: bool
+        """
+        return self._has_vul
+
+    @has_vul.setter
+    def has_vul(self, has_vul):
+        """Sets the has_vul of this ListSwrImageRepositoryRequest.
+
+        是否存在软件漏洞
+
+        :param has_vul: The has_vul of this ListSwrImageRepositoryRequest.
+        :type has_vul: bool
+        """
+        self._has_vul = has_vul
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ListSwrImageRepositoryRequest.
+
+        企业仓库实例ID，swr共享版无需使用该参数
+
+        :return: The instance_id of this ListSwrImageRepositoryRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListSwrImageRepositoryRequest.
+
+        企业仓库实例ID，swr共享版无需使用该参数
+
+        :param instance_id: The instance_id of this ListSwrImageRepositoryRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

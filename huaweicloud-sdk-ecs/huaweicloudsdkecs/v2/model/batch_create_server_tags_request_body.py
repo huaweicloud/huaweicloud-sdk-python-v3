@@ -18,7 +18,7 @@ class BatchCreateServerTagsRequestBody:
 
     openapi_types = {
         'action': 'str',
-        'tags': 'list[ServerTag]'
+        'tags': 'list[BatchAddServerTag]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchCreateServerTagsRequestBody:
         :param action: 操作标识（仅支持小写）：create（创建）。
         :type action: str
         :param tags: 标签列表。
-        :type tags: list[:class:`huaweicloudsdkecs.v2.ServerTag`]
+        :type tags: list[:class:`huaweicloudsdkecs.v2.BatchAddServerTag`]
         """
         
         
@@ -75,7 +75,7 @@ class BatchCreateServerTagsRequestBody:
         标签列表。
 
         :return: The tags of this BatchCreateServerTagsRequestBody.
-        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerTag`]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.BatchAddServerTag`]
         """
         return self._tags
 
@@ -86,7 +86,7 @@ class BatchCreateServerTagsRequestBody:
         标签列表。
 
         :param tags: The tags of this BatchCreateServerTagsRequestBody.
-        :type tags: list[:class:`huaweicloudsdkecs.v2.ServerTag`]
+        :type tags: list[:class:`huaweicloudsdkecs.v2.BatchAddServerTag`]
         """
         self._tags = tags
 

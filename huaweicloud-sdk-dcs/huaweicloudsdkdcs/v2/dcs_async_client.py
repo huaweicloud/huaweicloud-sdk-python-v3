@@ -5291,6 +5291,12 @@ class DcsAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
 
         header_params = {}
 
@@ -7168,6 +7174,71 @@ class DcsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_deletable_replica_async(self, request):
+        """校验集群副本是否支持删除
+
+        校验集群副本是否支持删除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ValidateDeletableReplica
+        :type request: :class:`huaweicloudsdkdcs.v2.ValidateDeletableReplicaRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ValidateDeletableReplicaResponse`
+        """
+        http_info = self._validate_deletable_replica_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_deletable_replica_async_invoker(self, request):
+        http_info = self._validate_deletable_replica_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _validate_deletable_replica_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/deletable-replication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateDeletableReplicaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

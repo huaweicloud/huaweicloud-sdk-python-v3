@@ -17,28 +17,42 @@ class DemandResp:
     sensitive_list = []
 
     openapi_types = {
-        'demand_count': 'int'
+        'demand_count': 'int',
+        'pool_id_v6': 'str',
+        'ipv6_bandwidth_enable': 'bool'
     }
 
     attribute_map = {
-        'demand_count': 'demand_count'
+        'demand_count': 'demand_count',
+        'pool_id_v6': 'pool_id_v6',
+        'ipv6_bandwidth_enable': 'ipv6_bandwidth_enable'
     }
 
-    def __init__(self, demand_count=None):
+    def __init__(self, demand_count=None, pool_id_v6=None, ipv6_bandwidth_enable=None):
         """DemandResp
 
         The model defined in huaweicloud sdk
 
         :param demand_count: 站点需要发放的资源(组)总数。  &gt; 实际发放实例数量为count*demand_count。
         :type demand_count: int
+        :param pool_id_v6: 指定IPv6线路，使用该线路下的子网分配IPv6端口。 如果该线路下没有关联启用IPv6的子网，则创建新的子网。
+        :type pool_id_v6: str
+        :param ipv6_bandwidth_enable: 使用IPv6带宽。 边缘实例是否开启IPv6公网访问能力。如果该IPv6线路下没有带宽，则创建新的带宽。  
+        :type ipv6_bandwidth_enable: bool
         """
         
         
 
         self._demand_count = None
+        self._pool_id_v6 = None
+        self._ipv6_bandwidth_enable = None
         self.discriminator = None
 
         self.demand_count = demand_count
+        if pool_id_v6 is not None:
+            self.pool_id_v6 = pool_id_v6
+        if ipv6_bandwidth_enable is not None:
+            self.ipv6_bandwidth_enable = ipv6_bandwidth_enable
 
     @property
     def demand_count(self):
@@ -61,6 +75,50 @@ class DemandResp:
         :type demand_count: int
         """
         self._demand_count = demand_count
+
+    @property
+    def pool_id_v6(self):
+        """Gets the pool_id_v6 of this DemandResp.
+
+        指定IPv6线路，使用该线路下的子网分配IPv6端口。 如果该线路下没有关联启用IPv6的子网，则创建新的子网。
+
+        :return: The pool_id_v6 of this DemandResp.
+        :rtype: str
+        """
+        return self._pool_id_v6
+
+    @pool_id_v6.setter
+    def pool_id_v6(self, pool_id_v6):
+        """Sets the pool_id_v6 of this DemandResp.
+
+        指定IPv6线路，使用该线路下的子网分配IPv6端口。 如果该线路下没有关联启用IPv6的子网，则创建新的子网。
+
+        :param pool_id_v6: The pool_id_v6 of this DemandResp.
+        :type pool_id_v6: str
+        """
+        self._pool_id_v6 = pool_id_v6
+
+    @property
+    def ipv6_bandwidth_enable(self):
+        """Gets the ipv6_bandwidth_enable of this DemandResp.
+
+        使用IPv6带宽。 边缘实例是否开启IPv6公网访问能力。如果该IPv6线路下没有带宽，则创建新的带宽。  
+
+        :return: The ipv6_bandwidth_enable of this DemandResp.
+        :rtype: bool
+        """
+        return self._ipv6_bandwidth_enable
+
+    @ipv6_bandwidth_enable.setter
+    def ipv6_bandwidth_enable(self, ipv6_bandwidth_enable):
+        """Sets the ipv6_bandwidth_enable of this DemandResp.
+
+        使用IPv6带宽。 边缘实例是否开启IPv6公网访问能力。如果该IPv6线路下没有带宽，则创建新的带宽。  
+
+        :param ipv6_bandwidth_enable: The ipv6_bandwidth_enable of this DemandResp.
+        :type ipv6_bandwidth_enable: bool
+        """
+        self._ipv6_bandwidth_enable = ipv6_bandwidth_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

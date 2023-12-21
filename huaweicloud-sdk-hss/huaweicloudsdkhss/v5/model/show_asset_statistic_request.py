@@ -18,15 +18,17 @@ class ShowAssetStatisticRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'host_id': 'str'
+        'host_id': 'str',
+        'category': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'host_id': 'host_id'
+        'host_id': 'host_id',
+        'category': 'category'
     }
 
-    def __init__(self, enterprise_project_id=None, host_id=None):
+    def __init__(self, enterprise_project_id=None, host_id=None, category=None):
         """ShowAssetStatisticRequest
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ShowAssetStatisticRequest:
         :type enterprise_project_id: str
         :param host_id: host id
         :type host_id: str
+        :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
+        :type category: str
         """
         
         
 
         self._enterprise_project_id = None
         self._host_id = None
+        self._category = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if host_id is not None:
             self.host_id = host_id
+        if category is not None:
+            self.category = category
 
     @property
     def enterprise_project_id(self):
@@ -91,6 +98,28 @@ class ShowAssetStatisticRequest:
         :type host_id: str
         """
         self._host_id = host_id
+
+    @property
+    def category(self):
+        """Gets the category of this ShowAssetStatisticRequest.
+
+        类别，默认为host，包含如下： - host：主机 - container：容器
+
+        :return: The category of this ShowAssetStatisticRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        """Sets the category of this ShowAssetStatisticRequest.
+
+        类别，默认为host，包含如下： - host：主机 - container：容器
+
+        :param category: The category of this ShowAssetStatisticRequest.
+        :type category: str
+        """
+        self._category = category
 
     def to_dict(self):
         """Returns the model properties as a dict"""

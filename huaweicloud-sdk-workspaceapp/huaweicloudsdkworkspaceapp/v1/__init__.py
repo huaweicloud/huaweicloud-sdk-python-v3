@@ -130,7 +130,10 @@ from huaweicloudsdkworkspaceapp.v1.model.i18n import I18n
 from huaweicloudsdkworkspaceapp.v1.model.image_type_enum import ImageTypeEnum
 from huaweicloudsdkworkspaceapp.v1.model.ip_virtual import IpVirtual
 from huaweicloudsdkworkspaceapp.v1.model.job_detail import JobDetail
+from huaweicloudsdkworkspaceapp.v1.model.job_detail_info import JobDetailInfo
+from huaweicloudsdkworkspaceapp.v1.model.job_detail_status import JobDetailStatus
 from huaweicloudsdkworkspaceapp.v1.model.job_id_info import JobIdInfo
+from huaweicloudsdkworkspaceapp.v1.model.job_info import JobInfo
 from huaweicloudsdkworkspaceapp.v1.model.job_resource_info import JobResourceInfo
 from huaweicloudsdkworkspaceapp.v1.model.job_status import JobStatus
 from huaweicloudsdkworkspaceapp.v1.model.job_type import JobType
@@ -246,6 +249,8 @@ from huaweicloudsdkworkspaceapp.v1.model.session import Session
 from huaweicloudsdkworkspaceapp.v1.model.session_printer_options import SessionPrinterOptions
 from huaweicloudsdkworkspaceapp.v1.model.session_type_entity import SessionTypeEntity
 from huaweicloudsdkworkspaceapp.v1.model.share_persistent_storage_claim import SharePersistentStorageClaim
+from huaweicloudsdkworkspaceapp.v1.model.show_job_detail_request import ShowJobDetailRequest
+from huaweicloudsdkworkspaceapp.v1.model.show_job_detail_response import ShowJobDetailResponse
 from huaweicloudsdkworkspaceapp.v1.model.show_job_request import ShowJobRequest
 from huaweicloudsdkworkspaceapp.v1.model.show_job_response import ShowJobResponse
 from huaweicloudsdkworkspaceapp.v1.model.show_original_policy_info_request import ShowOriginalPolicyInfoRequest

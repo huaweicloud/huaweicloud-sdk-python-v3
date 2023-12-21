@@ -26,6 +26,7 @@ class ProtectionServerInfo:
         'os_name': 'str',
         'host_status': 'str',
         'ransom_protection_status': 'str',
+        'agent_version': 'str',
         'protect_status': 'str',
         'group_id': 'str',
         'group_name': 'str',
@@ -61,6 +62,7 @@ class ProtectionServerInfo:
         'os_name': 'os_name',
         'host_status': 'host_status',
         'ransom_protection_status': 'ransom_protection_status',
+        'agent_version': 'agent_version',
         'protect_status': 'protect_status',
         'group_id': 'group_id',
         'group_name': 'group_name',
@@ -86,7 +88,7 @@ class ProtectionServerInfo:
         'resources_num': 'resources_num'
     }
 
-    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None, version=None, host_source=None, vault_id=None, vault_name=None, vault_size=None, vault_used=None, vault_allocated=None, vault_charging_mode=None, vault_status=None, backup_policy_id=None, backup_policy_name=None, backup_policy_enabled=None, resources_num=None):
+    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, agent_version=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None, version=None, host_source=None, vault_id=None, vault_name=None, vault_size=None, vault_used=None, vault_allocated=None, vault_charging_mode=None, vault_status=None, backup_policy_id=None, backup_policy_name=None, backup_policy_enabled=None, resources_num=None):
         """ProtectionServerInfo
 
         The model defined in huaweicloud sdk
@@ -109,6 +111,8 @@ class ProtectionServerInfo:
         :type host_status: str
         :param ransom_protection_status: 勒索防护状态，包含如下4种。   - closed ：关闭。   - opened ：开启。   - opening ：开启中。   - closing ：关闭中。
         :type ransom_protection_status: str
+        :param agent_version: agent版本
+        :type agent_version: str
         :param protect_status: 防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
         :type protect_status: str
         :param group_id: 服务器组ID
@@ -168,6 +172,7 @@ class ProtectionServerInfo:
         self._os_name = None
         self._host_status = None
         self._ransom_protection_status = None
+        self._agent_version = None
         self._protect_status = None
         self._group_id = None
         self._group_name = None
@@ -211,6 +216,8 @@ class ProtectionServerInfo:
             self.host_status = host_status
         if ransom_protection_status is not None:
             self.ransom_protection_status = ransom_protection_status
+        if agent_version is not None:
+            self.agent_version = agent_version
         if protect_status is not None:
             self.protect_status = protect_status
         if group_id is not None:
@@ -455,6 +462,28 @@ class ProtectionServerInfo:
         :type ransom_protection_status: str
         """
         self._ransom_protection_status = ransom_protection_status
+
+    @property
+    def agent_version(self):
+        """Gets the agent_version of this ProtectionServerInfo.
+
+        agent版本
+
+        :return: The agent_version of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._agent_version
+
+    @agent_version.setter
+    def agent_version(self, agent_version):
+        """Sets the agent_version of this ProtectionServerInfo.
+
+        agent版本
+
+        :param agent_version: The agent_version of this ProtectionServerInfo.
+        :type agent_version: str
+        """
+        self._agent_version = agent_version
 
     @property
     def protect_status(self):

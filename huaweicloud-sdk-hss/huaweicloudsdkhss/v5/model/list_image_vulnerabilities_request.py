@@ -29,7 +29,8 @@ class ListImageVulnerabilitiesRequest:
         'tag_name': 'str',
         'repair_necessity': 'str',
         'vul_id': 'str',
-        'app_name': 'str'
+        'app_name': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ListImageVulnerabilitiesRequest:
         'tag_name': 'tag_name',
         'repair_necessity': 'repair_necessity',
         'vul_id': 'vul_id',
-        'app_name': 'app_name'
+        'app_name': 'app_name',
+        'type': 'type'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, image_type=None, offset=None, limit=None, image_id=None, instance_id=None, namespace=None, image_name=None, tag_name=None, repair_necessity=None, vul_id=None, app_name=None):
+    def __init__(self, region=None, enterprise_project_id=None, image_type=None, offset=None, limit=None, image_id=None, instance_id=None, namespace=None, image_name=None, tag_name=None, repair_necessity=None, vul_id=None, app_name=None, type=None):
         """ListImageVulnerabilitiesRequest
 
         The model defined in huaweicloud sdk
@@ -57,7 +59,7 @@ class ListImageVulnerabilitiesRequest:
         :type region: str
         :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
@@ -71,7 +73,7 @@ class ListImageVulnerabilitiesRequest:
         :type namespace: str
         :param image_name: 镜像名称
         :type image_name: str
-        :param tag_name: 镜像版本名称
+        :param tag_name: 镜像版本
         :type tag_name: str
         :param repair_necessity: 危险程度，包含如下3种。   - immediate_repair ：高危。   - delay_repair ：中危。   - not_needed_repair ：低危。
         :type repair_necessity: str
@@ -79,6 +81,8 @@ class ListImageVulnerabilitiesRequest:
         :type vul_id: str
         :param app_name: 软件名
         :type app_name: str
+        :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -app_vul : 应用漏洞
+        :type type: str
         """
         
         
@@ -96,6 +100,7 @@ class ListImageVulnerabilitiesRequest:
         self._repair_necessity = None
         self._vul_id = None
         self._app_name = None
+        self._type = None
         self.discriminator = None
 
         self.region = region
@@ -118,6 +123,8 @@ class ListImageVulnerabilitiesRequest:
             self.vul_id = vul_id
         if app_name is not None:
             self.app_name = app_name
+        if type is not None:
+            self.type = type
 
     @property
     def region(self):
@@ -167,7 +174,7 @@ class ListImageVulnerabilitiesRequest:
     def image_type(self):
         """Gets the image_type of this ListImageVulnerabilitiesRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
         :return: The image_type of this ListImageVulnerabilitiesRequest.
         :rtype: str
@@ -178,7 +185,7 @@ class ListImageVulnerabilitiesRequest:
     def image_type(self, image_type):
         """Sets the image_type of this ListImageVulnerabilitiesRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
         :param image_type: The image_type of this ListImageVulnerabilitiesRequest.
         :type image_type: str
@@ -321,7 +328,7 @@ class ListImageVulnerabilitiesRequest:
     def tag_name(self):
         """Gets the tag_name of this ListImageVulnerabilitiesRequest.
 
-        镜像版本名称
+        镜像版本
 
         :return: The tag_name of this ListImageVulnerabilitiesRequest.
         :rtype: str
@@ -332,7 +339,7 @@ class ListImageVulnerabilitiesRequest:
     def tag_name(self, tag_name):
         """Sets the tag_name of this ListImageVulnerabilitiesRequest.
 
-        镜像版本名称
+        镜像版本
 
         :param tag_name: The tag_name of this ListImageVulnerabilitiesRequest.
         :type tag_name: str
@@ -404,6 +411,28 @@ class ListImageVulnerabilitiesRequest:
         :type app_name: str
         """
         self._app_name = app_name
+
+    @property
+    def type(self):
+        """Gets the type of this ListImageVulnerabilitiesRequest.
+
+        漏洞类型，包含如下：   -linux_vul : linux漏洞   -app_vul : 应用漏洞
+
+        :return: The type of this ListImageVulnerabilitiesRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListImageVulnerabilitiesRequest.
+
+        漏洞类型，包含如下：   -linux_vul : linux漏洞   -app_vul : 应用漏洞
+
+        :param type: The type of this ListImageVulnerabilitiesRequest.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

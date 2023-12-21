@@ -23,7 +23,8 @@ class ListJarPackageHostInfoRequest:
         'host_name': 'str',
         'host_ip': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'part_match': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListJarPackageHostInfoRequest:
         'host_name': 'host_name',
         'host_ip': 'host_ip',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'part_match': 'part_match'
     }
 
-    def __init__(self, enterprise_project_id=None, file_name=None, category=None, host_name=None, host_ip=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, file_name=None, category=None, host_name=None, host_ip=None, limit=None, offset=None, part_match=None):
         """ListJarPackageHostInfoRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListJarPackageHostInfoRequest:
         :type limit: int
         :param offset: 默认是0
         :type offset: int
+        :param part_match: 是否模糊匹配，默认false表示精确匹配
+        :type part_match: bool
         """
         
         
@@ -66,6 +70,7 @@ class ListJarPackageHostInfoRequest:
         self._host_ip = None
         self._limit = None
         self._offset = None
+        self._part_match = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -81,6 +86,8 @@ class ListJarPackageHostInfoRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if part_match is not None:
+            self.part_match = part_match
 
     @property
     def enterprise_project_id(self):
@@ -235,6 +242,28 @@ class ListJarPackageHostInfoRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def part_match(self):
+        """Gets the part_match of this ListJarPackageHostInfoRequest.
+
+        是否模糊匹配，默认false表示精确匹配
+
+        :return: The part_match of this ListJarPackageHostInfoRequest.
+        :rtype: bool
+        """
+        return self._part_match
+
+    @part_match.setter
+    def part_match(self, part_match):
+        """Sets the part_match of this ListJarPackageHostInfoRequest.
+
+        是否模糊匹配，默认false表示精确匹配
+
+        :param part_match: The part_match of this ListJarPackageHostInfoRequest.
+        :type part_match: bool
+        """
+        self._part_match = part_match
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -68,13 +68,20 @@ class FsFileCount:
         self._symlink = None
         self.discriminator = None
 
-        self.dir = dir
-        self.regular = regular
-        self.pipe = pipe
-        self.char = char
-        self.block = block
-        self.socket = socket
-        self.symlink = symlink
+        if dir is not None:
+            self.dir = dir
+        if regular is not None:
+            self.regular = regular
+        if pipe is not None:
+            self.pipe = pipe
+        if char is not None:
+            self.char = char
+        if block is not None:
+            self.block = block
+        if socket is not None:
+            self.socket = socket
+        if symlink is not None:
+            self.symlink = symlink
 
     @property
     def dir(self):

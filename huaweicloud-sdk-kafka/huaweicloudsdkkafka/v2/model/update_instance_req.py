@@ -45,9 +45,9 @@ class UpdateInstanceReq:
         :type name: str
         :param description: 实例的描述信息。  长度不超过1024的字符串。  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
         :type description: str
-        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm:ss。   - 维护时间窗开始和结束时间必须为指定的时间段。   - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。   - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。
+        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm:ss。
         :type maintain_begin: str
-        :param maintain_end: 维护时间窗结束时间，格式为HH:mm:ss。   - 维护时间窗开始和结束时间必须为指定的时间段。   - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。   - 该参数不能单独为空，若该值为空，则开始时间也为空。系统分配一个默认结束时间06:00:00。
+        :param maintain_end: 维护时间窗结束时间，格式为HH:mm:ss。
         :type maintain_end: str
         :param security_group_id: 安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
         :type security_group_id: str
@@ -131,7 +131,7 @@ class UpdateInstanceReq:
     def maintain_begin(self):
         """Gets the maintain_begin of this UpdateInstanceReq.
 
-        维护时间窗开始时间，格式为HH:mm:ss。   - 维护时间窗开始和结束时间必须为指定的时间段。   - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。   - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。
+        维护时间窗开始时间，格式为HH:mm:ss。
 
         :return: The maintain_begin of this UpdateInstanceReq.
         :rtype: str
@@ -142,7 +142,7 @@ class UpdateInstanceReq:
     def maintain_begin(self, maintain_begin):
         """Sets the maintain_begin of this UpdateInstanceReq.
 
-        维护时间窗开始时间，格式为HH:mm:ss。   - 维护时间窗开始和结束时间必须为指定的时间段。   - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。   - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。
+        维护时间窗开始时间，格式为HH:mm:ss。
 
         :param maintain_begin: The maintain_begin of this UpdateInstanceReq.
         :type maintain_begin: str
@@ -153,7 +153,7 @@ class UpdateInstanceReq:
     def maintain_end(self):
         """Gets the maintain_end of this UpdateInstanceReq.
 
-        维护时间窗结束时间，格式为HH:mm:ss。   - 维护时间窗开始和结束时间必须为指定的时间段。   - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。   - 该参数不能单独为空，若该值为空，则开始时间也为空。系统分配一个默认结束时间06:00:00。
+        维护时间窗结束时间，格式为HH:mm:ss。
 
         :return: The maintain_end of this UpdateInstanceReq.
         :rtype: str
@@ -164,7 +164,7 @@ class UpdateInstanceReq:
     def maintain_end(self, maintain_end):
         """Sets the maintain_end of this UpdateInstanceReq.
 
-        维护时间窗结束时间，格式为HH:mm:ss。   - 维护时间窗开始和结束时间必须为指定的时间段。   - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。   - 该参数不能单独为空，若该值为空，则开始时间也为空。系统分配一个默认结束时间06:00:00。
+        维护时间窗结束时间，格式为HH:mm:ss。
 
         :param maintain_end: The maintain_end of this UpdateInstanceReq.
         :type maintain_end: str

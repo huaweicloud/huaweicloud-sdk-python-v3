@@ -32,7 +32,7 @@ class ShowFsDirUsageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dir_usage: 消息描述
+        :param dir_usage: 
         :type dir_usage: :class:`huaweicloudsdksfsturbo.v1.FsDirUasge`
         :param x_request_id: 
         :type x_request_id: str
@@ -53,8 +53,6 @@ class ShowFsDirUsageResponse(SdkResponse):
     def dir_usage(self):
         """Gets the dir_usage of this ShowFsDirUsageResponse.
 
-        消息描述
-
         :return: The dir_usage of this ShowFsDirUsageResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FsDirUasge`
         """
@@ -63,8 +61,6 @@ class ShowFsDirUsageResponse(SdkResponse):
     @dir_usage.setter
     def dir_usage(self, dir_usage):
         """Sets the dir_usage of this ShowFsDirUsageResponse.
-
-        消息描述
 
         :param dir_usage: The dir_usage of this ShowFsDirUsageResponse.
         :type dir_usage: :class:`huaweicloudsdksfsturbo.v1.FsDirUasge`

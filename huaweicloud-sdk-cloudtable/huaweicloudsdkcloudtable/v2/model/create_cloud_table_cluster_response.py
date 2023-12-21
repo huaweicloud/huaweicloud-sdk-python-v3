@@ -18,29 +18,43 @@ class CreateCloudTableClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'job_id': 'str',
+        'get_job_endpoint': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'job_id': 'jobId',
+        'get_job_endpoint': 'getJobEndpoint'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, job_id=None, get_job_endpoint=None):
         """CreateCloudTableClusterResponse
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 集群ID
         :type cluster_id: str
+        :param job_id: 
+        :type job_id: str
+        :param get_job_endpoint: 
+        :type get_job_endpoint: str
         """
         
         super(CreateCloudTableClusterResponse, self).__init__()
 
         self._cluster_id = None
+        self._job_id = None
+        self._get_job_endpoint = None
         self.discriminator = None
 
         if cluster_id is not None:
             self.cluster_id = cluster_id
+        if job_id is not None:
+            self.job_id = job_id
+        if get_job_endpoint is not None:
+            self.get_job_endpoint = get_job_endpoint
 
     @property
     def cluster_id(self):
@@ -63,6 +77,42 @@ class CreateCloudTableClusterResponse(SdkResponse):
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this CreateCloudTableClusterResponse.
+
+        :return: The job_id of this CreateCloudTableClusterResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CreateCloudTableClusterResponse.
+
+        :param job_id: The job_id of this CreateCloudTableClusterResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
+
+    @property
+    def get_job_endpoint(self):
+        """Gets the get_job_endpoint of this CreateCloudTableClusterResponse.
+
+        :return: The get_job_endpoint of this CreateCloudTableClusterResponse.
+        :rtype: str
+        """
+        return self._get_job_endpoint
+
+    @get_job_endpoint.setter
+    def get_job_endpoint(self, get_job_endpoint):
+        """Sets the get_job_endpoint of this CreateCloudTableClusterResponse.
+
+        :param get_job_endpoint: The get_job_endpoint of this CreateCloudTableClusterResponse.
+        :type get_job_endpoint: str
+        """
+        self._get_job_endpoint = get_job_endpoint
 
     def to_dict(self):
         """Returns the model properties as a dict"""

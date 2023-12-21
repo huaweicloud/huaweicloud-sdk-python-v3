@@ -17,28 +17,35 @@ class CreatePublicIpRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'publicip': 'CreatePublicIpOption'
+        'publicip': 'CreatePublicIpOption',
+        'bandwidth': 'CreatePublicIpBandwidthOption'
     }
 
     attribute_map = {
-        'publicip': 'publicip'
+        'publicip': 'publicip',
+        'bandwidth': 'bandwidth'
     }
 
-    def __init__(self, publicip=None):
+    def __init__(self, publicip=None, bandwidth=None):
         """CreatePublicIpRequestBody
 
         The model defined in huaweicloud sdk
 
         :param publicip: 
         :type publicip: :class:`huaweicloudsdkiec.v1.CreatePublicIpOption`
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkiec.v1.CreatePublicIpBandwidthOption`
         """
         
         
 
         self._publicip = None
+        self._bandwidth = None
         self.discriminator = None
 
         self.publicip = publicip
+        if bandwidth is not None:
+            self.bandwidth = bandwidth
 
     @property
     def publicip(self):
@@ -57,6 +64,24 @@ class CreatePublicIpRequestBody:
         :type publicip: :class:`huaweicloudsdkiec.v1.CreatePublicIpOption`
         """
         self._publicip = publicip
+
+    @property
+    def bandwidth(self):
+        """Gets the bandwidth of this CreatePublicIpRequestBody.
+
+        :return: The bandwidth of this CreatePublicIpRequestBody.
+        :rtype: :class:`huaweicloudsdkiec.v1.CreatePublicIpBandwidthOption`
+        """
+        return self._bandwidth
+
+    @bandwidth.setter
+    def bandwidth(self, bandwidth):
+        """Sets the bandwidth of this CreatePublicIpRequestBody.
+
+        :param bandwidth: The bandwidth of this CreatePublicIpRequestBody.
+        :type bandwidth: :class:`huaweicloudsdkiec.v1.CreatePublicIpBandwidthOption`
+        """
+        self._bandwidth = bandwidth
 
     def to_dict(self):
         """Returns the model properties as a dict"""

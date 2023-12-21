@@ -23,7 +23,8 @@ class ListContainerNodesRequest:
         'limit': 'int',
         'host_name': 'str',
         'agent_status': 'str',
-        'protect_status': 'str'
+        'protect_status': 'str',
+        'container_tags': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListContainerNodesRequest:
         'limit': 'limit',
         'host_name': 'host_name',
         'agent_status': 'agent_status',
-        'protect_status': 'protect_status'
+        'protect_status': 'protect_status',
+        'container_tags': 'container_tags'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, host_name=None, agent_status=None, protect_status=None):
+    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, host_name=None, agent_status=None, protect_status=None, container_tags=None):
         """ListContainerNodesRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListContainerNodesRequest:
         :type agent_status: str
         :param protect_status: 防护状态，包含如下2种。   - closed ：关闭   - opened ：开启
         :type protect_status: str
+        :param container_tags: 标签：用来识别cce容器节点和自建  - cce：cce节点  - self：自建节点  - other：其他节点
+        :type container_tags: str
         """
         
         
@@ -66,6 +70,7 @@ class ListContainerNodesRequest:
         self._host_name = None
         self._agent_status = None
         self._protect_status = None
+        self._container_tags = None
         self.discriminator = None
 
         self.region = region
@@ -81,6 +86,8 @@ class ListContainerNodesRequest:
             self.agent_status = agent_status
         if protect_status is not None:
             self.protect_status = protect_status
+        if container_tags is not None:
+            self.container_tags = container_tags
 
     @property
     def region(self):
@@ -235,6 +242,28 @@ class ListContainerNodesRequest:
         :type protect_status: str
         """
         self._protect_status = protect_status
+
+    @property
+    def container_tags(self):
+        """Gets the container_tags of this ListContainerNodesRequest.
+
+        标签：用来识别cce容器节点和自建  - cce：cce节点  - self：自建节点  - other：其他节点
+
+        :return: The container_tags of this ListContainerNodesRequest.
+        :rtype: str
+        """
+        return self._container_tags
+
+    @container_tags.setter
+    def container_tags(self, container_tags):
+        """Sets the container_tags of this ListContainerNodesRequest.
+
+        标签：用来识别cce容器节点和自建  - cce：cce节点  - self：自建节点  - other：其他节点
+
+        :param container_tags: The container_tags of this ListContainerNodesRequest.
+        :type container_tags: str
+        """
+        self._container_tags = container_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

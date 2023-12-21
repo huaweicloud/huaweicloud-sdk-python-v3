@@ -18,7 +18,7 @@ class CreateCloudTableClusterRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'body': 'CreateClusterRequestBody'
+        'body': 'CreateClusterReqBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateCloudTableClusterRequest:
         :param x_language: 语言类型
         :type x_language: str
         :param body: Body of the CreateCloudTableClusterRequest
-        :type body: :class:`huaweicloudsdkcloudtable.v2.CreateClusterRequestBody`
+        :type body: :class:`huaweicloudsdkcloudtable.v2.CreateClusterReqBody`
         """
         
         
@@ -75,7 +75,7 @@ class CreateCloudTableClusterRequest:
         """Gets the body of this CreateCloudTableClusterRequest.
 
         :return: The body of this CreateCloudTableClusterRequest.
-        :rtype: :class:`huaweicloudsdkcloudtable.v2.CreateClusterRequestBody`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.CreateClusterReqBody`
         """
         return self._body
 
@@ -84,7 +84,7 @@ class CreateCloudTableClusterRequest:
         """Sets the body of this CreateCloudTableClusterRequest.
 
         :param body: The body of this CreateCloudTableClusterRequest.
-        :type body: :class:`huaweicloudsdkcloudtable.v2.CreateClusterRequestBody`
+        :type body: :class:`huaweicloudsdkcloudtable.v2.CreateClusterReqBody`
         """
         self._body = body
 

@@ -370,9 +370,9 @@ class KafkaClient(Client):
         return http_info
 
     def close_kafka_manager(self, request):
-        """关闭kafka manager
+        """关闭Kafka Manager
 
-        关闭kafka manager，相应的原来开放出的management相关接口也将不可用
+        关闭Kafka Manager，相应的原来开放出的management相关接口也将不可用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -841,9 +841,9 @@ class KafkaClient(Client):
         return http_info
 
     def create_kafka_user_client_quota_task(self, request):
-        """创建客户端流控配置
+        """创建用户/客户端流控配置
 
-        该接口用于向Kafka实例提交创建user、client级别的流控任务，若成功则返回流控任务的job id。
+        该接口用于向Kafka实例提交创建用户、客户端级别的流控任务，若成功则返回流控任务的job_id。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -895,75 +895,6 @@ class KafkaClient(Client):
             ['application/json'])
 
         auth_settings = ['IAM_AUTH_TYPE_NEW']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_partition(self, request):
-        """新增Kafka实例指定Topic分区
-
-        新增Kafka实例指定Topic分区。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreatePartition
-        :type request: :class:`huaweicloudsdkkafka.v2.CreatePartitionRequest`
-        :rtype: :class:`huaweicloudsdkkafka.v2.CreatePartitionResponse`
-        """
-        http_info = self._create_partition_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_partition_invoker(self, request):
-        http_info = self._create_partition_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _create_partition_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/partitions-reassignment",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreatePartitionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-        if 'topic' in local_var_params:
-            path_params['topic'] = local_var_params['topic']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -1243,9 +1174,9 @@ class KafkaClient(Client):
         return http_info
 
     def delete_connector(self, request):
-        """关闭实例转储节点
+        """关闭Smart Connect（按需实例）
 
-        关闭实例转储节点。
+        介绍按需实例如何关闭Smart Connect。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1373,9 +1304,9 @@ class KafkaClient(Client):
         return http_info
 
     def delete_kafka_user_client_quota_task(self, request):
-        """删除客户端流控设置
+        """删除用户/客户端流控配置
 
-        该接口用于向Kafka实例提交删除user、client级别的流控任务，若成功则返回流控任务的job id。
+        该接口用于向Kafka实例提交删除用户、客户端级别的流控任务，若成功则返回流控任务的job_id。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2416,7 +2347,7 @@ class KafkaClient(Client):
     def reset_password(self, request):
         """重置密码
 
-        重置密码。
+        重置密码（只针对开通SSL的实例）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2550,9 +2481,9 @@ class KafkaClient(Client):
         return http_info
 
     def resize_engine_instance(self, request):
-        """实例规格变更
+        """实例扩容
 
-        实例规格变更。[当前通过调用API，只支持按需实例进行实例规格变更。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
+        实例规格变更。[当前通过调用API，只支持按需实例进行实例扩容。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2619,9 +2550,9 @@ class KafkaClient(Client):
         return http_info
 
     def resize_instance(self, request):
-        """实例规格变更
+        """实例扩容
 
-        实例规格变更。[当前通过调用API，只支持按需实例进行实例规格变更。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
+        实例扩容。[当前通过调用API，只支持按需实例进行实例扩容。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2738,6 +2669,75 @@ class KafkaClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def send_kafka_message(self, request):
+        """Kafka生产消息
+
+        在控制台发送指定消息到Kafka实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SendKafkaMessage
+        :type request: :class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.SendKafkaMessageResponse`
+        """
+        http_info = self._send_kafka_message_http_info(request)
+        return self._call_api(**http_info)
+
+    def send_kafka_message_invoker(self, request):
+        http_info = self._send_kafka_message_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _send_kafka_message_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/messages/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendKafkaMessageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'action_id' in local_var_params:
+            query_params.append(('action_id', local_var_params['action_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3767,7 +3767,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_kafka_user_client_quota(self, request):
-        """查询客户端流控配置
+        """查询用户/客户端流控配置
 
         该接口用于向Kafka实例查询流控的配置，若成功则返回流控配置的列表。
         
@@ -4733,9 +4733,9 @@ class KafkaClient(Client):
         return http_info
 
     def update_kafka_user_client_quota_task(self, request):
-        """修改客户端流控设置
+        """修改用户/客户端流控配置
 
-        该接口用于向Kafka实例提交修改user、client级别的流控任务，若成功则返回流控任务的job id。
+        该接口用于向Kafka实例提交修改用户、客户端级别的流控任务，若成功则返回流控任务的job_id。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

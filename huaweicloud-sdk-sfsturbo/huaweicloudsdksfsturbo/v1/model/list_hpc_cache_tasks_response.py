@@ -36,7 +36,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
 
         :param tasks: 任务详情
         :type tasks: list[:class:`huaweicloudsdksfsturbo.v1.OneHpcCacheTaskInfoResp`]
-        :param count: 联动任务数量
+        :param count: 任务数量
         :type count: int
         :param x_request_id: 
         :type x_request_id: str
@@ -82,7 +82,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListHpcCacheTasksResponse.
 
-        联动任务数量
+        任务数量
 
         :return: The count of this ListHpcCacheTasksResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListHpcCacheTasksResponse.
 
-        联动任务数量
+        任务数量
 
         :param count: The count of this ListHpcCacheTasksResponse.
         :type count: int

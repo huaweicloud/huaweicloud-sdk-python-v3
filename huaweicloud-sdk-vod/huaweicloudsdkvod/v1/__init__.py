@@ -6,6 +6,7 @@ from huaweicloudsdkvod.v1.vod_client import VodClient
 from huaweicloudsdkvod.v1.vod_async_client import VodAsyncClient
 
 from huaweicloudsdkvod.v1.model.add_subtitle import AddSubtitle
+from huaweicloudsdkvod.v1.model.asset_daily_summary_result import AssetDailySummaryResult
 from huaweicloudsdkvod.v1.model.asset_details import AssetDetails
 from huaweicloudsdkvod.v1.model.asset_info import AssetInfo
 from huaweicloudsdkvod.v1.model.asset_process_req import AssetProcessReq
@@ -76,6 +77,8 @@ from huaweicloudsdkvod.v1.model.extract_audio_task_req import ExtractAudioTaskRe
 from huaweicloudsdkvod.v1.model.file_addr import FileAddr
 from huaweicloudsdkvod.v1.model.list_asset_category_request import ListAssetCategoryRequest
 from huaweicloudsdkvod.v1.model.list_asset_category_response import ListAssetCategoryResponse
+from huaweicloudsdkvod.v1.model.list_asset_daily_summary_log_request import ListAssetDailySummaryLogRequest
+from huaweicloudsdkvod.v1.model.list_asset_daily_summary_log_response import ListAssetDailySummaryLogResponse
 from huaweicloudsdkvod.v1.model.list_asset_list_request import ListAssetListRequest
 from huaweicloudsdkvod.v1.model.list_asset_list_response import ListAssetListResponse
 from huaweicloudsdkvod.v1.model.list_domain_logs_request import ListDomainLogsRequest
@@ -132,12 +135,15 @@ from huaweicloudsdkvod.v1.model.show_take_over_asset_details_request import Show
 from huaweicloudsdkvod.v1.model.show_take_over_asset_details_response import ShowTakeOverAssetDetailsResponse
 from huaweicloudsdkvod.v1.model.show_take_over_task_details_request import ShowTakeOverTaskDetailsRequest
 from huaweicloudsdkvod.v1.model.show_take_over_task_details_response import ShowTakeOverTaskDetailsResponse
+from huaweicloudsdkvod.v1.model.show_vod_retrieval_request import ShowVodRetrievalRequest
+from huaweicloudsdkvod.v1.model.show_vod_retrieval_response import ShowVodRetrievalResponse
 from huaweicloudsdkvod.v1.model.show_vod_statistics_request import ShowVodStatisticsRequest
 from huaweicloudsdkvod.v1.model.show_vod_statistics_response import ShowVodStatisticsResponse
 from huaweicloudsdkvod.v1.model.subtitle import Subtitle
 from huaweicloudsdkvod.v1.model.subtitle_info import SubtitleInfo
 from huaweicloudsdkvod.v1.model.subtitle_modify_req import SubtitleModifyReq
 from huaweicloudsdkvod.v1.model.take_over_task import TakeOverTask
+from huaweicloudsdkvod.v1.model.task_result import TaskResult
 from huaweicloudsdkvod.v1.model.template_group import TemplateGroup
 from huaweicloudsdkvod.v1.model.template_group_collection import TemplateGroupCollection
 from huaweicloudsdkvod.v1.model.text_review_ret import TextReviewRet
@@ -165,6 +171,9 @@ from huaweicloudsdkvod.v1.model.update_category_req import UpdateCategoryReq
 from huaweicloudsdkvod.v1.model.update_cover_by_thumbnail_req import UpdateCoverByThumbnailReq
 from huaweicloudsdkvod.v1.model.update_cover_by_thumbnail_request import UpdateCoverByThumbnailRequest
 from huaweicloudsdkvod.v1.model.update_cover_by_thumbnail_response import UpdateCoverByThumbnailResponse
+from huaweicloudsdkvod.v1.model.update_storage_mode_req import UpdateStorageModeReq
+from huaweicloudsdkvod.v1.model.update_storage_mode_request import UpdateStorageModeRequest
+from huaweicloudsdkvod.v1.model.update_storage_mode_response import UpdateStorageModeResponse
 from huaweicloudsdkvod.v1.model.update_template_group_collection_request import UpdateTemplateGroupCollectionRequest
 from huaweicloudsdkvod.v1.model.update_template_group_collection_response import UpdateTemplateGroupCollectionResponse
 from huaweicloudsdkvod.v1.model.update_template_group_request import UpdateTemplateGroupRequest
@@ -183,6 +192,7 @@ from huaweicloudsdkvod.v1.model.upload_meta_data_by_url_response import UploadMe
 from huaweicloudsdkvod.v1.model.video_info import VideoInfo
 from huaweicloudsdkvod.v1.model.video_template_info import VideoTemplateInfo
 from huaweicloudsdkvod.v1.model.video_type_ref import VideoTypeRef
+from huaweicloudsdkvod.v1.model.vod_retrieval_data import VodRetrievalData
 from huaweicloudsdkvod.v1.model.vod_sample_data import VodSampleData
 from huaweicloudsdkvod.v1.model.watermark_template import WatermarkTemplate
 

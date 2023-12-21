@@ -23,7 +23,9 @@ class DiskResult:
         'dedicated_storage_id': 'str',
         'data_disk_image_id': 'str',
         'snapshot_id': 'str',
-        'metadata': 'MetaData'
+        'metadata': 'MetaData',
+        'iops': 'int',
+        'throughput': 'int'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class DiskResult:
         'dedicated_storage_id': 'dedicated_storage_id',
         'data_disk_image_id': 'data_disk_image_id',
         'snapshot_id': 'snapshot_id',
-        'metadata': 'metadata'
+        'metadata': 'metadata',
+        'iops': 'iops',
+        'throughput': 'throughput'
     }
 
-    def __init__(self, size=None, volume_type=None, disk_type=None, dedicated_storage_id=None, data_disk_image_id=None, snapshot_id=None, metadata=None):
+    def __init__(self, size=None, volume_type=None, disk_type=None, dedicated_storage_id=None, data_disk_image_id=None, snapshot_id=None, metadata=None, iops=None, throughput=None):
         """DiskResult
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class DiskResult:
         :type snapshot_id: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
+        :param iops: 云硬盘iops
+        :type iops: int
+        :param throughput: 云硬盘吞吐量
+        :type throughput: int
         """
         
         
@@ -66,6 +74,8 @@ class DiskResult:
         self._data_disk_image_id = None
         self._snapshot_id = None
         self._metadata = None
+        self._iops = None
+        self._throughput = None
         self.discriminator = None
 
         if size is not None:
@@ -82,6 +92,10 @@ class DiskResult:
             self.snapshot_id = snapshot_id
         if metadata is not None:
             self.metadata = metadata
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
 
     @property
     def size(self):
@@ -232,6 +246,50 @@ class DiskResult:
         :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
         """
         self._metadata = metadata
+
+    @property
+    def iops(self):
+        """Gets the iops of this DiskResult.
+
+        云硬盘iops
+
+        :return: The iops of this DiskResult.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        """Sets the iops of this DiskResult.
+
+        云硬盘iops
+
+        :param iops: The iops of this DiskResult.
+        :type iops: int
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        """Gets the throughput of this DiskResult.
+
+        云硬盘吞吐量
+
+        :return: The throughput of this DiskResult.
+        :rtype: int
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        """Sets the throughput of this DiskResult.
+
+        云硬盘吞吐量
+
+        :param throughput: The throughput of this DiskResult.
+        :type throughput: int
+        """
+        self._throughput = throughput
 
     def to_dict(self):
         """Returns the model properties as a dict"""

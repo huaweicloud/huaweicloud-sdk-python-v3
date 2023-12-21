@@ -55,7 +55,7 @@ class FirewallRule:
         :type action: str
         :param description: 网络ACL规则描述。
         :type description: str
-        :param destination_ip_address: 目的地IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
+        :param destination_ip_address: 目的地IP地址，IPv4或IPv6的CIDR格式
         :type destination_ip_address: str
         :param destination_port: 目的地端口范围  取值范围：整数，比如80，或者以\&quot;-\&quot;隔开的范围，比如80-90
         :type destination_port: str
@@ -63,7 +63,7 @@ class FirewallRule:
         :type enabled: bool
         :param id: 网络ACL规则ID。  进行更新规则时，如果operate_type为add，则该值为空。
         :type id: str
-        :param ip_version: IP协议版本  取值范围：4[、6](tag:hide)
+        :param ip_version: IP协议版本  取值范围：4、6
         :type ip_version: int
         :param name: 网络ACL规则名称。
         :type name: str
@@ -71,7 +71,7 @@ class FirewallRule:
         :type operate_type: str
         :param protocol: IP协议，为any时代表所有协议  取值范围：icmp，tcp，udp，[icmpv6，](tag:hide)any 
         :type protocol: str
-        :param source_ip_address: 源IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
+        :param source_ip_address: 源IP地址，IPv4或IPv6的CIDR格式
         :type source_ip_address: str
         :param source_port: 源地端口范围  取值范围：整数，比如80，或者以\&quot;-\&quot;隔开的范围，比如80-90
         :type source_port: str
@@ -155,7 +155,7 @@ class FirewallRule:
     def destination_ip_address(self):
         """Gets the destination_ip_address of this FirewallRule.
 
-        目的地IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
+        目的地IP地址，IPv4或IPv6的CIDR格式
 
         :return: The destination_ip_address of this FirewallRule.
         :rtype: str
@@ -166,7 +166,7 @@ class FirewallRule:
     def destination_ip_address(self, destination_ip_address):
         """Sets the destination_ip_address of this FirewallRule.
 
-        目的地IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
+        目的地IP地址，IPv4或IPv6的CIDR格式
 
         :param destination_ip_address: The destination_ip_address of this FirewallRule.
         :type destination_ip_address: str
@@ -243,7 +243,7 @@ class FirewallRule:
     def ip_version(self):
         """Gets the ip_version of this FirewallRule.
 
-        IP协议版本  取值范围：4[、6](tag:hide)
+        IP协议版本  取值范围：4、6
 
         :return: The ip_version of this FirewallRule.
         :rtype: int
@@ -254,7 +254,7 @@ class FirewallRule:
     def ip_version(self, ip_version):
         """Sets the ip_version of this FirewallRule.
 
-        IP协议版本  取值范围：4[、6](tag:hide)
+        IP协议版本  取值范围：4、6
 
         :param ip_version: The ip_version of this FirewallRule.
         :type ip_version: int
@@ -331,7 +331,7 @@ class FirewallRule:
     def source_ip_address(self):
         """Gets the source_ip_address of this FirewallRule.
 
-        源IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
+        源IP地址，IPv4或IPv6的CIDR格式
 
         :return: The source_ip_address of this FirewallRule.
         :rtype: str
@@ -342,7 +342,7 @@ class FirewallRule:
     def source_ip_address(self, source_ip_address):
         """Sets the source_ip_address of this FirewallRule.
 
-        源IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
+        源IP地址，IPv4或IPv6的CIDR格式
 
         :param source_ip_address: The source_ip_address of this FirewallRule.
         :type source_ip_address: str

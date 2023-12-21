@@ -39,7 +39,7 @@ class ListHpcCacheTasksRequest:
 
         :param share_id: 文件系统ID
         :type share_id: str
-        :param type: 操作类型
+        :param type: 任务类型
         :type type: str
         :param status: 任务状态
         :type status: str
@@ -94,7 +94,7 @@ class ListHpcCacheTasksRequest:
     def type(self):
         """Gets the type of this ListHpcCacheTasksRequest.
 
-        操作类型
+        任务类型
 
         :return: The type of this ListHpcCacheTasksRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ListHpcCacheTasksRequest:
     def type(self, type):
         """Sets the type of this ListHpcCacheTasksRequest.
 
-        操作类型
+        任务类型
 
         :param type: The type of this ListHpcCacheTasksRequest.
         :type type: str

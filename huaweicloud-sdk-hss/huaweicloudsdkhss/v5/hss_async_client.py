@@ -377,6 +377,77 @@ class HssAsyncClient(Client):
 
         return http_info
 
+    def change_check_rule_action_async(self, request):
+        """对未通过的配置检查项进行忽略/取消忽略/修复/验证操作
+
+        对未通过的配置检查项进行忽略/取消忽略/修复/验证操作
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeCheckRuleAction
+        :type request: :class:`huaweicloudsdkhss.v5.ChangeCheckRuleActionRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ChangeCheckRuleActionResponse`
+        """
+        http_info = self._change_check_rule_action_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_check_rule_action_async_invoker(self, request):
+        http_info = self._change_check_rule_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_check_rule_action_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/baseline/check-rule/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeCheckRuleActionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'host_id' in local_var_params:
+            query_params.append(('host_id', local_var_params['host_id']))
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_event_async(self, request):
         """处理告警事件
 
@@ -680,6 +751,73 @@ class HssAsyncClient(Client):
             "resource_path": "/v5/{project_id}/vulnerability/status",
             "request_type": request.__class__.__name__,
             "response_type": "ChangeVulStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_vulnerability_scan_task_async(self, request):
+        """创建漏洞扫描任务
+
+        创建漏洞扫描任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVulnerabilityScanTask
+        :type request: :class:`huaweicloudsdkhss.v5.CreateVulnerabilityScanTaskRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.CreateVulnerabilityScanTaskResponse`
+        """
+        http_info = self._create_vulnerability_scan_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_vulnerability_scan_task_async_invoker(self, request):
+        http_info = self._create_vulnerability_scan_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vulnerability_scan_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/vulnerability/scan-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVulnerabilityScanTaskResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1066,6 +1204,8 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
 
         header_params = {}
 
@@ -1147,6 +1287,10 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'part_match' in local_var_params:
+            query_params.append(('part_match', local_var_params['part_match']))
 
         header_params = {}
 
@@ -1388,6 +1532,8 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'part_match' in local_var_params:
+            query_params.append(('part_match', local_var_params['part_match']))
 
         header_params = {}
 
@@ -1542,6 +1688,8 @@ class HssAsyncClient(Client):
             query_params.append(('agent_status', local_var_params['agent_status']))
         if 'protect_status' in local_var_params:
             query_params.append(('protect_status', local_var_params['protect_status']))
+        if 'container_tags' in local_var_params:
+            query_params.append(('container_tags', local_var_params['container_tags']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -2070,6 +2218,8 @@ class HssAsyncClient(Client):
             query_params.append(('check_rule_name', local_var_params['check_rule_name']))
         if 'severity' in local_var_params:
             query_params.append(('severity', local_var_params['severity']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -2155,6 +2305,8 @@ class HssAsyncClient(Client):
             query_params.append(('severity', local_var_params['severity']))
         if 'standard' in local_var_params:
             query_params.append(('standard', local_var_params['standard']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -2244,6 +2396,8 @@ class HssAsyncClient(Client):
             query_params.append(('vul_id', local_var_params['vul_id']))
         if 'app_name' in local_var_params:
             query_params.append(('app_name', local_var_params['app_name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -2400,6 +2554,8 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'part_match' in local_var_params:
+            query_params.append(('part_match', local_var_params['part_match']))
 
         header_params = {}
 
@@ -2648,8 +2804,87 @@ class HssAsyncClient(Client):
 
         return http_info
 
+    def list_port_host_async(self, request):
+        """资产指纹-端口-服务器列表
+
+        具备该端口的主机/容器信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPortHost
+        :type request: :class:`huaweicloudsdkhss.v5.ListPortHostRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListPortHostResponse`
+        """
+        http_info = self._list_port_host_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_port_host_async_invoker(self, request):
+        http_info = self._list_port_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_port_host_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/ports/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortHostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'host_name' in local_var_params:
+            query_params.append(('host_name', local_var_params['host_name']))
+        if 'host_ip' in local_var_params:
+            query_params.append(('host_ip', local_var_params['host_ip']))
+        if 'port' in local_var_params:
+            query_params.append(('port', local_var_params['port']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_port_statistics_async(self, request):
-        """查询开放端口列表
+        """查询开放端口统计信息
 
         查询开放端口列表，支持通过传入端口或协议类型查询服务器数
         
@@ -2700,6 +2935,8 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
 
         header_params = {}
 
@@ -2779,6 +3016,8 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
 
         header_params = {}
 
@@ -2846,6 +3085,85 @@ class HssAsyncClient(Client):
             query_params.append(('path', local_var_params['path']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_processes_host_async(self, request):
+        """资产指纹-进程-服务器列表
+
+        具备该进程的主机/容器信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProcessesHost
+        :type request: :class:`huaweicloudsdkhss.v5.ListProcessesHostRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListProcessesHostResponse`
+        """
+        http_info = self._list_processes_host_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_processes_host_async_invoker(self, request):
+        http_info = self._list_processes_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_processes_host_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/processes/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProcessesHostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'host_name' in local_var_params:
+            query_params.append(('host_name', local_var_params['host_name']))
+        if 'host_ip' in local_var_params:
+            query_params.append(('host_ip', local_var_params['host_ip']))
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -3403,6 +3721,8 @@ class HssAsyncClient(Client):
             query_params.append(('host_id', local_var_params['host_id']))
         if 'private_ip' in local_var_params:
             query_params.append(('private_ip', local_var_params['private_ip']))
+        if 'public_ip' in local_var_params:
+            query_params.append(('public_ip', local_var_params['public_ip']))
         if 'container_name' in local_var_params:
             query_params.append(('container_name', local_var_params['container_name']))
         if 'offset' in local_var_params:
@@ -3437,6 +3757,8 @@ class HssAsyncClient(Client):
             collection_formats['tag_list'] = 'csv'
         if 'att_ck' in local_var_params:
             query_params.append(('att_ck', local_var_params['att_ck']))
+        if 'event_name' in local_var_params:
+            query_params.append(('event_name', local_var_params['event_name']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -3520,6 +3842,26 @@ class HssAsyncClient(Client):
             query_params.append(('image_type', local_var_params['image_type']))
         if 'scan_status' in local_var_params:
             query_params.append(('scan_status', local_var_params['scan_status']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'image_size' in local_var_params:
+            query_params.append(('image_size', local_var_params['image_size']))
+        if 'start_latest_update_time' in local_var_params:
+            query_params.append(('start_latest_update_time', local_var_params['start_latest_update_time']))
+        if 'end_latest_update_time' in local_var_params:
+            query_params.append(('end_latest_update_time', local_var_params['end_latest_update_time']))
+        if 'start_latest_scan_time' in local_var_params:
+            query_params.append(('start_latest_scan_time', local_var_params['start_latest_scan_time']))
+        if 'end_latest_scan_time' in local_var_params:
+            query_params.append(('end_latest_scan_time', local_var_params['end_latest_scan_time']))
+        if 'has_malicious_file' in local_var_params:
+            query_params.append(('has_malicious_file', local_var_params['has_malicious_file']))
+        if 'has_unsafe_setting' in local_var_params:
+            query_params.append(('has_unsafe_setting', local_var_params['has_unsafe_setting']))
+        if 'has_vul' in local_var_params:
+            query_params.append(('has_vul', local_var_params['has_vul']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -3678,6 +4020,8 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
 
         header_params = {}
 
@@ -3761,6 +4105,10 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'part_match' in local_var_params:
+            query_params.append(('part_match', local_var_params['part_match']))
 
         header_params = {}
 
@@ -3850,6 +4198,156 @@ class HssAsyncClient(Client):
             query_params.append(('severity_level', local_var_params['severity_level']))
         if 'is_affect_business' in local_var_params:
             query_params.append(('is_affect_business', local_var_params['is_affect_business']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vul_scan_task_async(self, request):
+        """查询漏洞扫描任务列表
+
+        查询漏洞扫描任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVulScanTask
+        :type request: :class:`huaweicloudsdkhss.v5.ListVulScanTaskRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListVulScanTaskResponse`
+        """
+        http_info = self._list_vul_scan_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vul_scan_task_async_invoker(self, request):
+        http_info = self._list_vul_scan_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vul_scan_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vulnerability/scan-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVulScanTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'scan_type' in local_var_params:
+            query_params.append(('scan_type', local_var_params['scan_type']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'min_start_time' in local_var_params:
+            query_params.append(('min_start_time', local_var_params['min_start_time']))
+        if 'max_start_time' in local_var_params:
+            query_params.append(('max_start_time', local_var_params['max_start_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vul_scan_task_host_async(self, request):
+        """查询漏洞扫描任务对应的主机列表
+
+        查询漏洞扫描任务对应的主机列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVulScanTaskHost
+        :type request: :class:`huaweicloudsdkhss.v5.ListVulScanTaskHostRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListVulScanTaskHostResponse`
+        """
+        http_info = self._list_vul_scan_task_host_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vul_scan_task_host_async_invoker(self, request):
+        http_info = self._list_vul_scan_task_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vul_scan_task_host_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vulnerability/scan-task/{task_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVulScanTaskHostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'scan_status' in local_var_params:
+            query_params.append(('scan_status', local_var_params['scan_status']))
 
         header_params = {}
 
@@ -4450,6 +4948,8 @@ class HssAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'host_id' in local_var_params:
             query_params.append(('host_id', local_var_params['host_id']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
 
         header_params = {}
 
@@ -4673,6 +5173,8 @@ class HssAsyncClient(Client):
             query_params.append(('check_rule_id', local_var_params['check_rule_id']))
         if 'standard' in local_var_params:
             query_params.append(('standard', local_var_params['standard']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
 
         header_params = {}
         if 'region' in local_var_params:

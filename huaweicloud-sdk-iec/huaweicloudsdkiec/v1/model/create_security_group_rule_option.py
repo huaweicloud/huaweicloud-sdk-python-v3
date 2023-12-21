@@ -55,9 +55,9 @@ class CreateSecurityGroupRuleOption:
         :type security_group_id: str
         :param direction: 出入控制方向。  取值范围：  - egress：出方向  - ingress：入方向
         :type direction: str
-        :param ethertype: IP协议类型。  取值范围：IPv4[,IPv6](tag:hide)
+        :param ethertype: IP协议类型。  取值范围：IPv4,IPv6
         :type ethertype: str
-        :param protocol: 协议类型。  取值范围：icmp、tcp、udp等  约束：为空表示支持所有协议
+        :param protocol: 协议类型。  取值范围：icmp、tcp、udp、icmpv6或IP协议号（0~255）  约束：为空表示支持所有协议
         :type protocol: str
         :param port_range_min: 起始端口值。  取值范围：1~65535  约束：取值不能大于port_range_max的值，为空表示所有端口。 
         :type port_range_min: int
@@ -179,7 +179,7 @@ class CreateSecurityGroupRuleOption:
     def ethertype(self):
         """Gets the ethertype of this CreateSecurityGroupRuleOption.
 
-        IP协议类型。  取值范围：IPv4[,IPv6](tag:hide)
+        IP协议类型。  取值范围：IPv4,IPv6
 
         :return: The ethertype of this CreateSecurityGroupRuleOption.
         :rtype: str
@@ -190,7 +190,7 @@ class CreateSecurityGroupRuleOption:
     def ethertype(self, ethertype):
         """Sets the ethertype of this CreateSecurityGroupRuleOption.
 
-        IP协议类型。  取值范围：IPv4[,IPv6](tag:hide)
+        IP协议类型。  取值范围：IPv4,IPv6
 
         :param ethertype: The ethertype of this CreateSecurityGroupRuleOption.
         :type ethertype: str
@@ -201,7 +201,7 @@ class CreateSecurityGroupRuleOption:
     def protocol(self):
         """Gets the protocol of this CreateSecurityGroupRuleOption.
 
-        协议类型。  取值范围：icmp、tcp、udp等  约束：为空表示支持所有协议
+        协议类型。  取值范围：icmp、tcp、udp、icmpv6或IP协议号（0~255）  约束：为空表示支持所有协议
 
         :return: The protocol of this CreateSecurityGroupRuleOption.
         :rtype: str
@@ -212,7 +212,7 @@ class CreateSecurityGroupRuleOption:
     def protocol(self, protocol):
         """Sets the protocol of this CreateSecurityGroupRuleOption.
 
-        协议类型。  取值范围：icmp、tcp、udp等  约束：为空表示支持所有协议
+        协议类型。  取值范围：icmp、tcp、udp、icmpv6或IP协议号（0~255）  约束：为空表示支持所有协议
 
         :param protocol: The protocol of this CreateSecurityGroupRuleOption.
         :type protocol: str

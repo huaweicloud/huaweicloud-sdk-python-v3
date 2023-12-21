@@ -25,6 +25,8 @@ class CodeArtsDeployRegion:
                         "https://codearts-deploy.sa-brazil-1.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://codearts-deploy.la-north-2.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://codearts-deploy.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "ap-southeast-3": AP_SOUTHEAST_3,
@@ -35,6 +37,7 @@ class CodeArtsDeployRegion:
         "cn-north-4": CN_NORTH_4,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

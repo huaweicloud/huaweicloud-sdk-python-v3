@@ -42,15 +42,15 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param target_id: 后端存储库 id
+        :param target_id: 绑定关系id
         :type target_id: str
-        :param creation_time: 后端存储库创建时间
+        :param creation_time: 绑定关系创建时间
         :type creation_time: str
-        :param file_system_path: 文件系统路径
+        :param file_system_path: 联动目录名称
         :type file_system_path: str
         :param failure_details: 
         :type failure_details: :class:`huaweicloudsdksfsturbo.v1.FailureDetailsMessage`
-        :param lifecycle: 后端存储库生命周期描述信息
+        :param lifecycle: 绑定状态
         :type lifecycle: str
         :param obs: 
         :type obs: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -88,7 +88,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     def target_id(self):
         """Gets the target_id of this ShowBackendTargetInfoResponse.
 
-        后端存储库 id
+        绑定关系id
 
         :return: The target_id of this ShowBackendTargetInfoResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     def target_id(self, target_id):
         """Sets the target_id of this ShowBackendTargetInfoResponse.
 
-        后端存储库 id
+        绑定关系id
 
         :param target_id: The target_id of this ShowBackendTargetInfoResponse.
         :type target_id: str
@@ -110,7 +110,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     def creation_time(self):
         """Gets the creation_time of this ShowBackendTargetInfoResponse.
 
-        后端存储库创建时间
+        绑定关系创建时间
 
         :return: The creation_time of this ShowBackendTargetInfoResponse.
         :rtype: str
@@ -121,7 +121,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     def creation_time(self, creation_time):
         """Sets the creation_time of this ShowBackendTargetInfoResponse.
 
-        后端存储库创建时间
+        绑定关系创建时间
 
         :param creation_time: The creation_time of this ShowBackendTargetInfoResponse.
         :type creation_time: str
@@ -132,7 +132,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     def file_system_path(self):
         """Gets the file_system_path of this ShowBackendTargetInfoResponse.
 
-        文件系统路径
+        联动目录名称
 
         :return: The file_system_path of this ShowBackendTargetInfoResponse.
         :rtype: str
@@ -143,7 +143,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     def file_system_path(self, file_system_path):
         """Sets the file_system_path of this ShowBackendTargetInfoResponse.
 
-        文件系统路径
+        联动目录名称
 
         :param file_system_path: The file_system_path of this ShowBackendTargetInfoResponse.
         :type file_system_path: str
@@ -172,7 +172,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     def lifecycle(self):
         """Gets the lifecycle of this ShowBackendTargetInfoResponse.
 
-        后端存储库生命周期描述信息
+        绑定状态
 
         :return: The lifecycle of this ShowBackendTargetInfoResponse.
         :rtype: str
@@ -183,7 +183,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     def lifecycle(self, lifecycle):
         """Sets the lifecycle of this ShowBackendTargetInfoResponse.
 
-        后端存储库生命周期描述信息
+        绑定状态
 
         :param lifecycle: The lifecycle of this ShowBackendTargetInfoResponse.
         :type lifecycle: str

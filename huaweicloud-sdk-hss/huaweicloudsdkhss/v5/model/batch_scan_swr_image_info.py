@@ -19,16 +19,20 @@ class BatchScanSwrImageInfo:
     openapi_types = {
         'namespace': 'str',
         'image_name': 'str',
-        'image_version': 'str'
+        'image_version': 'str',
+        'instance_id': 'str',
+        'instance_url': 'str'
     }
 
     attribute_map = {
         'namespace': 'namespace',
         'image_name': 'image_name',
-        'image_version': 'image_version'
+        'image_version': 'image_version',
+        'instance_id': 'instance_id',
+        'instance_url': 'instance_url'
     }
 
-    def __init__(self, namespace=None, image_name=None, image_version=None):
+    def __init__(self, namespace=None, image_name=None, image_version=None, instance_id=None, instance_url=None):
         """BatchScanSwrImageInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class BatchScanSwrImageInfo:
         :type image_name: str
         :param image_version: 镜像版本
         :type image_version: str
+        :param instance_id: 企业实例ID
+        :type instance_id: str
+        :param instance_url: 下载企业镜像URL
+        :type instance_url: str
         """
         
         
@@ -46,6 +54,8 @@ class BatchScanSwrImageInfo:
         self._namespace = None
         self._image_name = None
         self._image_version = None
+        self._instance_id = None
+        self._instance_url = None
         self.discriminator = None
 
         if namespace is not None:
@@ -54,6 +64,10 @@ class BatchScanSwrImageInfo:
             self.image_name = image_name
         if image_version is not None:
             self.image_version = image_version
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if instance_url is not None:
+            self.instance_url = instance_url
 
     @property
     def namespace(self):
@@ -120,6 +134,50 @@ class BatchScanSwrImageInfo:
         :type image_version: str
         """
         self._image_version = image_version
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this BatchScanSwrImageInfo.
+
+        企业实例ID
+
+        :return: The instance_id of this BatchScanSwrImageInfo.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this BatchScanSwrImageInfo.
+
+        企业实例ID
+
+        :param instance_id: The instance_id of this BatchScanSwrImageInfo.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_url(self):
+        """Gets the instance_url of this BatchScanSwrImageInfo.
+
+        下载企业镜像URL
+
+        :return: The instance_url of this BatchScanSwrImageInfo.
+        :rtype: str
+        """
+        return self._instance_url
+
+    @instance_url.setter
+    def instance_url(self, instance_url):
+        """Sets the instance_url of this BatchScanSwrImageInfo.
+
+        下载企业镜像URL
+
+        :param instance_url: The instance_url of this BatchScanSwrImageInfo.
+        :type instance_url: str
+        """
+        self._instance_url = instance_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

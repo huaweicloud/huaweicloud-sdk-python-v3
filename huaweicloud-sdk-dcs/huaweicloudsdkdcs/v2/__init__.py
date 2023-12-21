@@ -219,6 +219,7 @@ from huaweicloudsdkdcs.v2.model.query_tenant_quota_resp_quotas import QueryTenan
 from huaweicloudsdkdcs.v2.model.records_response import RecordsResponse
 from huaweicloudsdkdcs.v2.model.redis_config import RedisConfig
 from huaweicloudsdkdcs.v2.model.rename_command_resp import RenameCommandResp
+from huaweicloudsdkdcs.v2.model.replication_info import ReplicationInfo
 from huaweicloudsdkdcs.v2.model.reset_acl_account_pass_word_request import ResetAclAccountPassWordRequest
 from huaweicloudsdkdcs.v2.model.reset_acl_account_pass_word_response import ResetAclAccountPassWordResponse
 from huaweicloudsdkdcs.v2.model.reset_instance_password_body import ResetInstancePasswordBody
@@ -331,5 +332,7 @@ from huaweicloudsdkdcs.v2.model.update_password_request import UpdatePasswordReq
 from huaweicloudsdkdcs.v2.model.update_password_response import UpdatePasswordResponse
 from huaweicloudsdkdcs.v2.model.update_slave_priority_request import UpdateSlavePriorityRequest
 from huaweicloudsdkdcs.v2.model.update_slave_priority_response import UpdateSlavePriorityResponse
+from huaweicloudsdkdcs.v2.model.validate_deletable_replica_request import ValidateDeletableReplicaRequest
+from huaweicloudsdkdcs.v2.model.validate_deletable_replica_response import ValidateDeletableReplicaResponse
 from huaweicloudsdkdcs.v2.model.whitelist import Whitelist
 

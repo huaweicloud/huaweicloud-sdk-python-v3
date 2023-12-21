@@ -26,7 +26,10 @@ class ShowAssetStatisticResponse(SdkResponse):
         'web_framework_num': 'int',
         'web_site_num': 'int',
         'jar_package_num': 'int',
-        'kernel_module_num': 'int'
+        'kernel_module_num': 'int',
+        'web_service_num': 'int',
+        'web_app_num': 'int',
+        'database_num': 'int'
     }
 
     attribute_map = {
@@ -38,10 +41,13 @@ class ShowAssetStatisticResponse(SdkResponse):
         'web_framework_num': 'web_framework_num',
         'web_site_num': 'web_site_num',
         'jar_package_num': 'jar_package_num',
-        'kernel_module_num': 'kernel_module_num'
+        'kernel_module_num': 'kernel_module_num',
+        'web_service_num': 'web_service_num',
+        'web_app_num': 'web_app_num',
+        'database_num': 'database_num'
     }
 
-    def __init__(self, account_num=None, port_num=None, process_num=None, app_num=None, auto_launch_num=None, web_framework_num=None, web_site_num=None, jar_package_num=None, kernel_module_num=None):
+    def __init__(self, account_num=None, port_num=None, process_num=None, app_num=None, auto_launch_num=None, web_framework_num=None, web_site_num=None, jar_package_num=None, kernel_module_num=None, web_service_num=None, web_app_num=None, database_num=None):
         """ShowAssetStatisticResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +70,12 @@ class ShowAssetStatisticResponse(SdkResponse):
         :type jar_package_num: int
         :param kernel_module_num: 内核模块数量
         :type kernel_module_num: int
+        :param web_service_num: web服务数量
+        :type web_service_num: int
+        :param web_app_num: web应用数量
+        :type web_app_num: int
+        :param database_num: 数据库数量
+        :type database_num: int
         """
         
         super(ShowAssetStatisticResponse, self).__init__()
@@ -77,6 +89,9 @@ class ShowAssetStatisticResponse(SdkResponse):
         self._web_site_num = None
         self._jar_package_num = None
         self._kernel_module_num = None
+        self._web_service_num = None
+        self._web_app_num = None
+        self._database_num = None
         self.discriminator = None
 
         if account_num is not None:
@@ -97,6 +112,12 @@ class ShowAssetStatisticResponse(SdkResponse):
             self.jar_package_num = jar_package_num
         if kernel_module_num is not None:
             self.kernel_module_num = kernel_module_num
+        if web_service_num is not None:
+            self.web_service_num = web_service_num
+        if web_app_num is not None:
+            self.web_app_num = web_app_num
+        if database_num is not None:
+            self.database_num = database_num
 
     @property
     def account_num(self):
@@ -295,6 +316,72 @@ class ShowAssetStatisticResponse(SdkResponse):
         :type kernel_module_num: int
         """
         self._kernel_module_num = kernel_module_num
+
+    @property
+    def web_service_num(self):
+        """Gets the web_service_num of this ShowAssetStatisticResponse.
+
+        web服务数量
+
+        :return: The web_service_num of this ShowAssetStatisticResponse.
+        :rtype: int
+        """
+        return self._web_service_num
+
+    @web_service_num.setter
+    def web_service_num(self, web_service_num):
+        """Sets the web_service_num of this ShowAssetStatisticResponse.
+
+        web服务数量
+
+        :param web_service_num: The web_service_num of this ShowAssetStatisticResponse.
+        :type web_service_num: int
+        """
+        self._web_service_num = web_service_num
+
+    @property
+    def web_app_num(self):
+        """Gets the web_app_num of this ShowAssetStatisticResponse.
+
+        web应用数量
+
+        :return: The web_app_num of this ShowAssetStatisticResponse.
+        :rtype: int
+        """
+        return self._web_app_num
+
+    @web_app_num.setter
+    def web_app_num(self, web_app_num):
+        """Sets the web_app_num of this ShowAssetStatisticResponse.
+
+        web应用数量
+
+        :param web_app_num: The web_app_num of this ShowAssetStatisticResponse.
+        :type web_app_num: int
+        """
+        self._web_app_num = web_app_num
+
+    @property
+    def database_num(self):
+        """Gets the database_num of this ShowAssetStatisticResponse.
+
+        数据库数量
+
+        :return: The database_num of this ShowAssetStatisticResponse.
+        :rtype: int
+        """
+        return self._database_num
+
+    @database_num.setter
+    def database_num(self, database_num):
+        """Sets the database_num of this ShowAssetStatisticResponse.
+
+        数据库数量
+
+        :param database_num: The database_num of this ShowAssetStatisticResponse.
+        :type database_num: int
+        """
+        self._database_num = database_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

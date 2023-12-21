@@ -23,7 +23,9 @@ class DiskInfo:
         'dedicated_storage_id': 'str',
         'data_disk_image_id': 'str',
         'snapshot_id': 'str',
-        'metadata': 'MetaData'
+        'metadata': 'MetaData',
+        'iops': 'int',
+        'throughput': 'int'
     }
 
     attribute_map = {
@@ -33,17 +35,19 @@ class DiskInfo:
         'dedicated_storage_id': 'dedicated_storage_id',
         'data_disk_image_id': 'data_disk_image_id',
         'snapshot_id': 'snapshot_id',
-        'metadata': 'metadata'
+        'metadata': 'metadata',
+        'iops': 'iops',
+        'throughput': 'throughput'
     }
 
-    def __init__(self, size=None, volume_type=None, disk_type=None, dedicated_storage_id=None, data_disk_image_id=None, snapshot_id=None, metadata=None):
+    def __init__(self, size=None, volume_type=None, disk_type=None, dedicated_storage_id=None, data_disk_image_id=None, snapshot_id=None, metadata=None, iops=None, throughput=None):
         """DiskInfo
 
         The model defined in huaweicloud sdk
 
         :param size: 磁盘大小，容量单位为GB。系统盘输入大小范围为1~1024，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
         :type size: int
-        :param volume_type: 云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。GPSSD：通用型SSD磁盘类型。co-p1：高IO (性能优化Ⅰ型)uh-l1：超高IO (时延优化)当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。说明：对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
+        :param volume_type: 云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。GPSSD：通用型SSD磁盘类型。co-p1：高IO (性能优化Ⅰ型)uh-l1：超高IO (时延优化)GPSSD2: 通用型SSD V2云硬盘ESSD2: 极速型SSD V2云硬盘当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。说明：对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
         :type volume_type: str
         :param disk_type: 系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。 说明： 系统盘不支持加密。
         :type disk_type: str
@@ -55,6 +59,10 @@ class DiskInfo:
         :type snapshot_id: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
+        :param iops: 为云硬盘配置iops。当“volume_type”设置为GPSSD2、ESSD2类型的云硬盘时，该参数必填，其他类型无需设置。
+        :type iops: int
+        :param throughput: 为云硬盘配置吞吐量，单位是MiB/s。当“volume_type”设置为GPSSD2类型的云硬盘时必填，其他类型不能设置。
+        :type throughput: int
         """
         
         
@@ -66,6 +74,8 @@ class DiskInfo:
         self._data_disk_image_id = None
         self._snapshot_id = None
         self._metadata = None
+        self._iops = None
+        self._throughput = None
         self.discriminator = None
 
         self.size = size
@@ -79,6 +89,10 @@ class DiskInfo:
             self.snapshot_id = snapshot_id
         if metadata is not None:
             self.metadata = metadata
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
 
     @property
     def size(self):
@@ -106,7 +120,7 @@ class DiskInfo:
     def volume_type(self):
         """Gets the volume_type of this DiskInfo.
 
-        云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。GPSSD：通用型SSD磁盘类型。co-p1：高IO (性能优化Ⅰ型)uh-l1：超高IO (时延优化)当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。说明：对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
+        云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。GPSSD：通用型SSD磁盘类型。co-p1：高IO (性能优化Ⅰ型)uh-l1：超高IO (时延优化)GPSSD2: 通用型SSD V2云硬盘ESSD2: 极速型SSD V2云硬盘当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。说明：对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
         :return: The volume_type of this DiskInfo.
         :rtype: str
@@ -117,7 +131,7 @@ class DiskInfo:
     def volume_type(self, volume_type):
         """Sets the volume_type of this DiskInfo.
 
-        云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。GPSSD：通用型SSD磁盘类型。co-p1：高IO (性能优化Ⅰ型)uh-l1：超高IO (时延优化)当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。说明：对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
+        云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。GPSSD：通用型SSD磁盘类型。co-p1：高IO (性能优化Ⅰ型)uh-l1：超高IO (时延优化)GPSSD2: 通用型SSD V2云硬盘ESSD2: 极速型SSD V2云硬盘当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。说明：对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
         :param volume_type: The volume_type of this DiskInfo.
         :type volume_type: str
@@ -229,6 +243,50 @@ class DiskInfo:
         :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
         """
         self._metadata = metadata
+
+    @property
+    def iops(self):
+        """Gets the iops of this DiskInfo.
+
+        为云硬盘配置iops。当“volume_type”设置为GPSSD2、ESSD2类型的云硬盘时，该参数必填，其他类型无需设置。
+
+        :return: The iops of this DiskInfo.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        """Sets the iops of this DiskInfo.
+
+        为云硬盘配置iops。当“volume_type”设置为GPSSD2、ESSD2类型的云硬盘时，该参数必填，其他类型无需设置。
+
+        :param iops: The iops of this DiskInfo.
+        :type iops: int
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        """Gets the throughput of this DiskInfo.
+
+        为云硬盘配置吞吐量，单位是MiB/s。当“volume_type”设置为GPSSD2类型的云硬盘时必填，其他类型不能设置。
+
+        :return: The throughput of this DiskInfo.
+        :rtype: int
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        """Sets the throughput of this DiskInfo.
+
+        为云硬盘配置吞吐量，单位是MiB/s。当“volume_type”设置为GPSSD2类型的云硬盘时必填，其他类型不能设置。
+
+        :param throughput: The throughput of this DiskInfo.
+        :type throughput: int
+        """
+        self._throughput = throughput
 
     def to_dict(self):
         """Returns the model properties as a dict"""

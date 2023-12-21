@@ -43,7 +43,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         'group_id': 'str',
         'group_name': 'str',
         'detail_url': 'str',
-        'current_system_time': 'str'
+        'current_system_time': 'int'
     }
 
     attribute_map = {
@@ -131,7 +131,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         :param detail_url: 详情页地址
         :type detail_url: str
         :param current_system_time: 当前系统时间
-        :type current_system_time: str
+        :type current_system_time: int
         """
         
         super(ShowPipelineRunDetailResponse, self).__init__()
@@ -774,7 +774,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         当前系统时间
 
         :return: The current_system_time of this ShowPipelineRunDetailResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._current_system_time
 
@@ -785,7 +785,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         当前系统时间
 
         :param current_system_time: The current_system_time of this ShowPipelineRunDetailResponse.
-        :type current_system_time: str
+        :type current_system_time: int
         """
         self._current_system_time = current_system_time
 

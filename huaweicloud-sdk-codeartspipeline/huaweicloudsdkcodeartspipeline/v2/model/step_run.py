@@ -26,7 +26,7 @@ class StepRun:
         'identifier': 'str',
         'multi_step_editable': 'int',
         'id': 'str',
-        'endpoint_ids': 'str',
+        'endpoint_ids': 'list[str]',
         'last_dispatch_id': 'str',
         'status': 'str',
         'message': 'str',
@@ -76,7 +76,7 @@ class StepRun:
         :param id: 步骤ID
         :type id: str
         :param endpoint_ids: 扩展点
-        :type endpoint_ids: str
+        :type endpoint_ids: list[str]
         :param last_dispatch_id: 上次下发任务ID
         :type last_dispatch_id: str
         :param status: 状态
@@ -344,7 +344,7 @@ class StepRun:
         扩展点
 
         :return: The endpoint_ids of this StepRun.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._endpoint_ids
 
@@ -355,7 +355,7 @@ class StepRun:
         扩展点
 
         :param endpoint_ids: The endpoint_ids of this StepRun.
-        :type endpoint_ids: str
+        :type endpoint_ids: list[str]
         """
         self._endpoint_ids = endpoint_ids
 

@@ -31,9 +31,9 @@ class AccessPolicyEntity:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 用户名称。
+        :param user_name: 用户名称。  设置用户权限时，为必选参数。
         :type user_name: str
-        :param access_policy: 权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
+        :param access_policy: 权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。  设置用户权限时，为必选参数。
         :type access_policy: str
         """
         
@@ -52,7 +52,7 @@ class AccessPolicyEntity:
     def user_name(self):
         """Gets the user_name of this AccessPolicyEntity.
 
-        用户名称。
+        用户名称。  设置用户权限时，为必选参数。
 
         :return: The user_name of this AccessPolicyEntity.
         :rtype: str
@@ -63,7 +63,7 @@ class AccessPolicyEntity:
     def user_name(self, user_name):
         """Sets the user_name of this AccessPolicyEntity.
 
-        用户名称。
+        用户名称。  设置用户权限时，为必选参数。
 
         :param user_name: The user_name of this AccessPolicyEntity.
         :type user_name: str
@@ -74,7 +74,7 @@ class AccessPolicyEntity:
     def access_policy(self):
         """Gets the access_policy of this AccessPolicyEntity.
 
-        权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
+        权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。  设置用户权限时，为必选参数。
 
         :return: The access_policy of this AccessPolicyEntity.
         :rtype: str
@@ -85,7 +85,7 @@ class AccessPolicyEntity:
     def access_policy(self, access_policy):
         """Sets the access_policy of this AccessPolicyEntity.
 
-        权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
+        权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。  设置用户权限时，为必选参数。
 
         :param access_policy: The access_policy of this AccessPolicyEntity.
         :type access_policy: str

@@ -19,16 +19,20 @@ class ReqDataByIdCardImage:
     openapi_types = {
         'idcard_image1': 'str',
         'idcard_image2': 'str',
-        'face_image': 'str'
+        'face_image': 'str',
+        'detail': 'bool',
+        'crop': 'bool'
     }
 
     attribute_map = {
         'idcard_image1': 'idcard_image1',
         'idcard_image2': 'idcard_image2',
-        'face_image': 'face_image'
+        'face_image': 'face_image',
+        'detail': 'detail',
+        'crop': 'crop'
     }
 
-    def __init__(self, idcard_image1=None, idcard_image2=None, face_image=None):
+    def __init__(self, idcard_image1=None, idcard_image2=None, face_image=None, detail=None, crop=None):
         """ReqDataByIdCardImage
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ReqDataByIdCardImage:
         :type idcard_image2: str
         :param face_image: 现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
         :type face_image: str
+        :param detail: 响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+        :type detail: bool
+        :param crop: 是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
+        :type crop: bool
         """
         
         
@@ -46,12 +54,18 @@ class ReqDataByIdCardImage:
         self._idcard_image1 = None
         self._idcard_image2 = None
         self._face_image = None
+        self._detail = None
+        self._crop = None
         self.discriminator = None
 
         self.idcard_image1 = idcard_image1
         if idcard_image2 is not None:
             self.idcard_image2 = idcard_image2
         self.face_image = face_image
+        if detail is not None:
+            self.detail = detail
+        if crop is not None:
+            self.crop = crop
 
     @property
     def idcard_image1(self):
@@ -118,6 +132,50 @@ class ReqDataByIdCardImage:
         :type face_image: str
         """
         self._face_image = face_image
+
+    @property
+    def detail(self):
+        """Gets the detail of this ReqDataByIdCardImage.
+
+        响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+
+        :return: The detail of this ReqDataByIdCardImage.
+        :rtype: bool
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        """Sets the detail of this ReqDataByIdCardImage.
+
+        响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+
+        :param detail: The detail of this ReqDataByIdCardImage.
+        :type detail: bool
+        """
+        self._detail = detail
+
+    @property
+    def crop(self):
+        """Gets the crop of this ReqDataByIdCardImage.
+
+        是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
+
+        :return: The crop of this ReqDataByIdCardImage.
+        :rtype: bool
+        """
+        return self._crop
+
+    @crop.setter
+    def crop(self, crop):
+        """Sets the crop of this ReqDataByIdCardImage.
+
+        是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
+
+        :param crop: The crop of this ReqDataByIdCardImage.
+        :type crop: bool
+        """
+        self._crop = crop
 
     def to_dict(self):
         """Returns the model properties as a dict"""

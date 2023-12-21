@@ -59,7 +59,8 @@ class InterpreterGroupInfo:
         self.discriminator = None
 
         self.group_id = group_id
-        self.group_name = group_name
+        if group_name is not None:
+            self.group_name = group_name
         self.first_language = first_language
         self.second_language = second_language
         if interpreters is not None:

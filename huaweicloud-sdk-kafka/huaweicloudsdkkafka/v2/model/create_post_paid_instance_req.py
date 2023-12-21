@@ -111,7 +111,7 @@ class CreatePostPaidInstanceReq:
         :type partition_num: int
         :param access_user: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
         :type access_user: str
-        :param password: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :param password: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
         :type password: str
         :param vpc_id: 虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
         :type vpc_id: str
@@ -125,11 +125,11 @@ class CreatePostPaidInstanceReq:
         :type product_id: str
         :param kafka_manager_user: 表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
         :type kafka_manager_user: str
-        :param kafka_manager_password: 表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的两种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :param kafka_manager_password: 表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
         :type kafka_manager_password: str
-        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
+        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。
         :type maintain_begin: str
-        :param maintain_end: 维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
+        :param maintain_end: 维护时间窗结束时间，格式为HH:mm。
         :type maintain_end: str
         :param enable_publicip: 是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
         :type enable_publicip: bool
@@ -139,7 +139,7 @@ class CreatePostPaidInstanceReq:
         :type publicip_id: str
         :param ssl_enable: 是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
         :type ssl_enable: bool
-        :param kafka_security_protocol: 开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。
+        :param kafka_security_protocol: 开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
         :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可，支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
         :type sasl_enabled_mechanisms: list[str]
@@ -155,7 +155,7 @@ class CreatePostPaidInstanceReq:
         :type enable_auto_topic: bool
         :param storage_spec_code: 存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB/300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB/1200MB时，取值dms.physical.storage.ultra  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:otc,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
         :type storage_spec_code: str
-        :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
+        :param enterprise_project_id: 企业项目ID。若为企业项目账号，该参数必填。
         :type enterprise_project_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
@@ -457,7 +457,7 @@ class CreatePostPaidInstanceReq:
     def password(self):
         """Gets the password of this CreatePostPaidInstanceReq.
 
-        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :return: The password of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -468,7 +468,7 @@ class CreatePostPaidInstanceReq:
     def password(self, password):
         """Sets the password of this CreatePostPaidInstanceReq.
 
-        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :param password: The password of this CreatePostPaidInstanceReq.
         :type password: str
@@ -611,7 +611,7 @@ class CreatePostPaidInstanceReq:
     def kafka_manager_password(self):
         """Gets the kafka_manager_password of this CreatePostPaidInstanceReq.
 
-        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的两种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :return: The kafka_manager_password of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -622,7 +622,7 @@ class CreatePostPaidInstanceReq:
     def kafka_manager_password(self, kafka_manager_password):
         """Sets the kafka_manager_password of this CreatePostPaidInstanceReq.
 
-        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的两种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :param kafka_manager_password: The kafka_manager_password of this CreatePostPaidInstanceReq.
         :type kafka_manager_password: str
@@ -633,7 +633,7 @@ class CreatePostPaidInstanceReq:
     def maintain_begin(self):
         """Gets the maintain_begin of this CreatePostPaidInstanceReq.
 
-        维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
+        维护时间窗开始时间，格式为HH:mm。
 
         :return: The maintain_begin of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -644,7 +644,7 @@ class CreatePostPaidInstanceReq:
     def maintain_begin(self, maintain_begin):
         """Sets the maintain_begin of this CreatePostPaidInstanceReq.
 
-        维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
+        维护时间窗开始时间，格式为HH:mm。
 
         :param maintain_begin: The maintain_begin of this CreatePostPaidInstanceReq.
         :type maintain_begin: str
@@ -655,7 +655,7 @@ class CreatePostPaidInstanceReq:
     def maintain_end(self):
         """Gets the maintain_end of this CreatePostPaidInstanceReq.
 
-        维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
+        维护时间窗结束时间，格式为HH:mm。
 
         :return: The maintain_end of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -666,7 +666,7 @@ class CreatePostPaidInstanceReq:
     def maintain_end(self, maintain_end):
         """Sets the maintain_end of this CreatePostPaidInstanceReq.
 
-        维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
+        维护时间窗结束时间，格式为HH:mm。
 
         :param maintain_end: The maintain_end of this CreatePostPaidInstanceReq.
         :type maintain_end: str
@@ -765,7 +765,7 @@ class CreatePostPaidInstanceReq:
     def kafka_security_protocol(self):
         """Gets the kafka_security_protocol of this CreatePostPaidInstanceReq.
 
-        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。
+        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
 
         :return: The kafka_security_protocol of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -776,7 +776,7 @@ class CreatePostPaidInstanceReq:
     def kafka_security_protocol(self, kafka_security_protocol):
         """Sets the kafka_security_protocol of this CreatePostPaidInstanceReq.
 
-        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。
+        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
 
         :param kafka_security_protocol: The kafka_security_protocol of this CreatePostPaidInstanceReq.
         :type kafka_security_protocol: str
@@ -941,7 +941,7 @@ class CreatePostPaidInstanceReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreatePostPaidInstanceReq.
 
-        企业项目ID。若为企业项目帐号，该参数必填。
+        企业项目ID。若为企业项目账号，该参数必填。
 
         :return: The enterprise_project_id of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -952,7 +952,7 @@ class CreatePostPaidInstanceReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreatePostPaidInstanceReq.
 
-        企业项目ID。若为企业项目帐号，该参数必填。
+        企业项目ID。若为企业项目账号，该参数必填。
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePostPaidInstanceReq.
         :type enterprise_project_id: str

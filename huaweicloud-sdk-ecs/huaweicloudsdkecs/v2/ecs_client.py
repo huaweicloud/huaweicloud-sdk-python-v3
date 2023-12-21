@@ -2042,7 +2042,7 @@ class EcsClient(Client):
         return http_info
 
     def list_server_block_devices(self, request):
-        """查询弹性云服务器磁盘信息
+        """查询弹性云服务器挂载磁盘列表详情信息
 
         查询弹性云服务器挂载的磁盘信息。
         

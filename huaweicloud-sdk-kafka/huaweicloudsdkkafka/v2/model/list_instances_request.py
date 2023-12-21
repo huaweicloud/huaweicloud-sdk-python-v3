@@ -53,7 +53,7 @@ class ListInstancesRequest:
         :type instance_id: str
         :param status: 实例状态。 详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
         :type status: str
-        :param include_failure: 是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
+        :param include_failure: 是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”，不返回创建失败的实例数。
         :type include_failure: str
         :param exact_match_name: 是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
         :type exact_match_name: str
@@ -189,7 +189,7 @@ class ListInstancesRequest:
     def include_failure(self):
         """Gets the include_failure of this ListInstancesRequest.
 
-        是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
+        是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”，不返回创建失败的实例数。
 
         :return: The include_failure of this ListInstancesRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListInstancesRequest:
     def include_failure(self, include_failure):
         """Sets the include_failure of this ListInstancesRequest.
 
-        是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
+        是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”，不返回创建失败的实例数。
 
         :param include_failure: The include_failure of this ListInstancesRequest.
         :type include_failure: str

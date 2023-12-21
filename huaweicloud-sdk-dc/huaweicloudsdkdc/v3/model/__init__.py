@@ -57,6 +57,7 @@ from huaweicloudsdkdc.v3.model.list_virtual_gateways_request import ListVirtualG
 from huaweicloudsdkdc.v3.model.list_virtual_gateways_response import ListVirtualGatewaysResponse
 from huaweicloudsdkdc.v3.model.list_virtual_interfaces_request import ListVirtualInterfacesRequest
 from huaweicloudsdkdc.v3.model.list_virtual_interfaces_response import ListVirtualInterfacesResponse
+from huaweicloudsdkdc.v3.model.locales_body import LocalesBody
 from huaweicloudsdkdc.v3.model.match import Match
 from huaweicloudsdkdc.v3.model.page_info import PageInfo
 from huaweicloudsdkdc.v3.model.resource import Resource

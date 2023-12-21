@@ -20,6 +20,7 @@ class ChangeVulScanPolicyRequestInfo:
         'scan_period': 'str',
         'scan_range_type': 'str',
         'host_ids': 'list[str]',
+        'scan_vul_types': 'list[str]',
         'status': 'str'
     }
 
@@ -27,10 +28,11 @@ class ChangeVulScanPolicyRequestInfo:
         'scan_period': 'scan_period',
         'scan_range_type': 'scan_range_type',
         'host_ids': 'host_ids',
+        'scan_vul_types': 'scan_vul_types',
         'status': 'status'
     }
 
-    def __init__(self, scan_period=None, scan_range_type=None, host_ids=None, status=None):
+    def __init__(self, scan_period=None, scan_range_type=None, host_ids=None, scan_vul_types=None, status=None):
         """ChangeVulScanPolicyRequestInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ChangeVulScanPolicyRequestInfo:
         :type scan_range_type: str
         :param host_ids: 主机ID列表；当scan_range_type的值为specific_host时必填
         :type host_ids: list[str]
+        :param scan_vul_types: 扫描的漏洞类型列表
+        :type scan_vul_types: list[str]
         :param status: 扫描策略状态，包含如下：   -open : 开启   -close : 关闭
         :type status: str
         """
@@ -50,6 +54,7 @@ class ChangeVulScanPolicyRequestInfo:
         self._scan_period = None
         self._scan_range_type = None
         self._host_ids = None
+        self._scan_vul_types = None
         self._status = None
         self.discriminator = None
 
@@ -57,6 +62,8 @@ class ChangeVulScanPolicyRequestInfo:
         self.scan_range_type = scan_range_type
         if host_ids is not None:
             self.host_ids = host_ids
+        if scan_vul_types is not None:
+            self.scan_vul_types = scan_vul_types
         self.status = status
 
     @property
@@ -124,6 +131,28 @@ class ChangeVulScanPolicyRequestInfo:
         :type host_ids: list[str]
         """
         self._host_ids = host_ids
+
+    @property
+    def scan_vul_types(self):
+        """Gets the scan_vul_types of this ChangeVulScanPolicyRequestInfo.
+
+        扫描的漏洞类型列表
+
+        :return: The scan_vul_types of this ChangeVulScanPolicyRequestInfo.
+        :rtype: list[str]
+        """
+        return self._scan_vul_types
+
+    @scan_vul_types.setter
+    def scan_vul_types(self, scan_vul_types):
+        """Sets the scan_vul_types of this ChangeVulScanPolicyRequestInfo.
+
+        扫描的漏洞类型列表
+
+        :param scan_vul_types: The scan_vul_types of this ChangeVulScanPolicyRequestInfo.
+        :type scan_vul_types: list[str]
+        """
+        self._scan_vul_types = scan_vul_types
 
     @property
     def status(self):

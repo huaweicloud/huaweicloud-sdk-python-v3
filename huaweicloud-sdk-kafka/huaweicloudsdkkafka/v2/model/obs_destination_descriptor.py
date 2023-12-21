@@ -49,27 +49,27 @@ class ObsDestinationDescriptor:
 
         The model defined in huaweicloud sdk
 
-        :param topics: 转存的topic列表名称，支持多个topic同时放置，以逗号“,”分隔。同时支持正则表达式。 例如topic1,topic2。 
+        :param topics: 转存的topic列表名称，支持输入多个topic，以逗号“,”分隔。同时支持正则表达式。
         :type topics: str
-        :param topics_regex: 转存topic的正则表达式，与topics必须二选一，不能同时都设置或者“.*”。 
+        :param topics_regex: 转存topic的正则表达式，与topics必须二选一，不能同时都设置或者“.*”。
         :type topics_regex: str
-        :param consumer_strategy: 转储启动偏移量：   - latest: 从Topic最后端开始消费。   - earliest: 从Topic最前端消息开始消费。  默认是latest。 
+        :param consumer_strategy:  转储启动偏移量：    - latest: 从Topic最后端开始消费。      - earliest: 从Topic最前端消息开始消费。  默认是latest。 
         :type consumer_strategy: str
-        :param destination_file_type: 转储文件格式。当前只支持text。 
+        :param destination_file_type: 转储文件格式。当前只支持text。
         :type destination_file_type: str
-        :param access_key: 访问密钥AK。 
+        :param access_key: 访问密钥AK。
         :type access_key: str
-        :param secret_key: 访问密钥SK。 
+        :param secret_key: 访问密钥SK。
         :type secret_key: str
-        :param obs_bucket_name: 存储该通道数据的OBS桶名称。 
+        :param obs_bucket_name: 存储该通道数据的OBS桶名称。
         :type obs_bucket_name: str
-        :param obs_path: 存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。 默认配置为空。 
+        :param obs_path:  存储在obs的路径，默认可以不填。  取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。  默认配置为空。 
         :type obs_path: str
-        :param partition_format: 将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。   - N/A：置空，不使用日期时间目录。   - yyyy：年   - yyyy/MM：年/月   - yyyy/MM/dd：年/月/日   - yyyy/MM/dd/HH：年/月/日/时   - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 &gt; 11 &gt; 10 &gt; 14 &gt; 49”，“2017”表示最外层文件夹。  默认值：空 &gt; 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
+        :param partition_format:  将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。    - N/A：置空，不使用日期时间目录。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 &gt; 11 &gt; 10 &gt; 14 &gt; 49”，“2017”表示最外层文件夹。  默认值：空  &gt; 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
         :type partition_format: str
-        :param record_delimiter: 转储文件的记录分隔符，用于分隔写入转储文件的用户数据。 取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
+        :param record_delimiter:  转储文件的记录分隔符，用于分隔写入转储文件的用户数据。  取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
         :type record_delimiter: str
-        :param deliver_time_interval: 根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 单位：秒。 &gt; 使用OBS通道转储流式数据时该参数为必选配置。 
+        :param deliver_time_interval:  根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  取值范围：30～900  单位：秒。  &gt; 使用OBS通道转储流式数据时该参数为必选配置。 
         :type deliver_time_interval: int
         """
         
@@ -108,7 +108,7 @@ class ObsDestinationDescriptor:
     def topics(self):
         """Gets the topics of this ObsDestinationDescriptor.
 
-        转存的topic列表名称，支持多个topic同时放置，以逗号“,”分隔。同时支持正则表达式。 例如topic1,topic2。 
+        转存的topic列表名称，支持输入多个topic，以逗号“,”分隔。同时支持正则表达式。
 
         :return: The topics of this ObsDestinationDescriptor.
         :rtype: str
@@ -119,7 +119,7 @@ class ObsDestinationDescriptor:
     def topics(self, topics):
         """Sets the topics of this ObsDestinationDescriptor.
 
-        转存的topic列表名称，支持多个topic同时放置，以逗号“,”分隔。同时支持正则表达式。 例如topic1,topic2。 
+        转存的topic列表名称，支持输入多个topic，以逗号“,”分隔。同时支持正则表达式。
 
         :param topics: The topics of this ObsDestinationDescriptor.
         :type topics: str
@@ -130,7 +130,7 @@ class ObsDestinationDescriptor:
     def topics_regex(self):
         """Gets the topics_regex of this ObsDestinationDescriptor.
 
-        转存topic的正则表达式，与topics必须二选一，不能同时都设置或者“.*”。 
+        转存topic的正则表达式，与topics必须二选一，不能同时都设置或者“.*”。
 
         :return: The topics_regex of this ObsDestinationDescriptor.
         :rtype: str
@@ -141,7 +141,7 @@ class ObsDestinationDescriptor:
     def topics_regex(self, topics_regex):
         """Sets the topics_regex of this ObsDestinationDescriptor.
 
-        转存topic的正则表达式，与topics必须二选一，不能同时都设置或者“.*”。 
+        转存topic的正则表达式，与topics必须二选一，不能同时都设置或者“.*”。
 
         :param topics_regex: The topics_regex of this ObsDestinationDescriptor.
         :type topics_regex: str
@@ -152,7 +152,7 @@ class ObsDestinationDescriptor:
     def consumer_strategy(self):
         """Gets the consumer_strategy of this ObsDestinationDescriptor.
 
-        转储启动偏移量：   - latest: 从Topic最后端开始消费。   - earliest: 从Topic最前端消息开始消费。  默认是latest。 
+         转储启动偏移量：    - latest: 从Topic最后端开始消费。      - earliest: 从Topic最前端消息开始消费。  默认是latest。 
 
         :return: The consumer_strategy of this ObsDestinationDescriptor.
         :rtype: str
@@ -163,7 +163,7 @@ class ObsDestinationDescriptor:
     def consumer_strategy(self, consumer_strategy):
         """Sets the consumer_strategy of this ObsDestinationDescriptor.
 
-        转储启动偏移量：   - latest: 从Topic最后端开始消费。   - earliest: 从Topic最前端消息开始消费。  默认是latest。 
+         转储启动偏移量：    - latest: 从Topic最后端开始消费。      - earliest: 从Topic最前端消息开始消费。  默认是latest。 
 
         :param consumer_strategy: The consumer_strategy of this ObsDestinationDescriptor.
         :type consumer_strategy: str
@@ -174,7 +174,7 @@ class ObsDestinationDescriptor:
     def destination_file_type(self):
         """Gets the destination_file_type of this ObsDestinationDescriptor.
 
-        转储文件格式。当前只支持text。 
+        转储文件格式。当前只支持text。
 
         :return: The destination_file_type of this ObsDestinationDescriptor.
         :rtype: str
@@ -185,7 +185,7 @@ class ObsDestinationDescriptor:
     def destination_file_type(self, destination_file_type):
         """Sets the destination_file_type of this ObsDestinationDescriptor.
 
-        转储文件格式。当前只支持text。 
+        转储文件格式。当前只支持text。
 
         :param destination_file_type: The destination_file_type of this ObsDestinationDescriptor.
         :type destination_file_type: str
@@ -196,7 +196,7 @@ class ObsDestinationDescriptor:
     def access_key(self):
         """Gets the access_key of this ObsDestinationDescriptor.
 
-        访问密钥AK。 
+        访问密钥AK。
 
         :return: The access_key of this ObsDestinationDescriptor.
         :rtype: str
@@ -207,7 +207,7 @@ class ObsDestinationDescriptor:
     def access_key(self, access_key):
         """Sets the access_key of this ObsDestinationDescriptor.
 
-        访问密钥AK。 
+        访问密钥AK。
 
         :param access_key: The access_key of this ObsDestinationDescriptor.
         :type access_key: str
@@ -218,7 +218,7 @@ class ObsDestinationDescriptor:
     def secret_key(self):
         """Gets the secret_key of this ObsDestinationDescriptor.
 
-        访问密钥SK。 
+        访问密钥SK。
 
         :return: The secret_key of this ObsDestinationDescriptor.
         :rtype: str
@@ -229,7 +229,7 @@ class ObsDestinationDescriptor:
     def secret_key(self, secret_key):
         """Sets the secret_key of this ObsDestinationDescriptor.
 
-        访问密钥SK。 
+        访问密钥SK。
 
         :param secret_key: The secret_key of this ObsDestinationDescriptor.
         :type secret_key: str
@@ -240,7 +240,7 @@ class ObsDestinationDescriptor:
     def obs_bucket_name(self):
         """Gets the obs_bucket_name of this ObsDestinationDescriptor.
 
-        存储该通道数据的OBS桶名称。 
+        存储该通道数据的OBS桶名称。
 
         :return: The obs_bucket_name of this ObsDestinationDescriptor.
         :rtype: str
@@ -251,7 +251,7 @@ class ObsDestinationDescriptor:
     def obs_bucket_name(self, obs_bucket_name):
         """Sets the obs_bucket_name of this ObsDestinationDescriptor.
 
-        存储该通道数据的OBS桶名称。 
+        存储该通道数据的OBS桶名称。
 
         :param obs_bucket_name: The obs_bucket_name of this ObsDestinationDescriptor.
         :type obs_bucket_name: str
@@ -262,7 +262,7 @@ class ObsDestinationDescriptor:
     def obs_path(self):
         """Gets the obs_path of this ObsDestinationDescriptor.
 
-        存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。 默认配置为空。 
+         存储在obs的路径，默认可以不填。  取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。  默认配置为空。 
 
         :return: The obs_path of this ObsDestinationDescriptor.
         :rtype: str
@@ -273,7 +273,7 @@ class ObsDestinationDescriptor:
     def obs_path(self, obs_path):
         """Sets the obs_path of this ObsDestinationDescriptor.
 
-        存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。 默认配置为空。 
+         存储在obs的路径，默认可以不填。  取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。  默认配置为空。 
 
         :param obs_path: The obs_path of this ObsDestinationDescriptor.
         :type obs_path: str
@@ -284,7 +284,7 @@ class ObsDestinationDescriptor:
     def partition_format(self):
         """Gets the partition_format of this ObsDestinationDescriptor.
 
-        将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。   - N/A：置空，不使用日期时间目录。   - yyyy：年   - yyyy/MM：年/月   - yyyy/MM/dd：年/月/日   - yyyy/MM/dd/HH：年/月/日/时   - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空 > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
+         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。    - N/A：置空，不使用日期时间目录。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空  > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
 
         :return: The partition_format of this ObsDestinationDescriptor.
         :rtype: str
@@ -295,7 +295,7 @@ class ObsDestinationDescriptor:
     def partition_format(self, partition_format):
         """Sets the partition_format of this ObsDestinationDescriptor.
 
-        将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。   - N/A：置空，不使用日期时间目录。   - yyyy：年   - yyyy/MM：年/月   - yyyy/MM/dd：年/月/日   - yyyy/MM/dd/HH：年/月/日/时   - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空 > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
+         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。    - N/A：置空，不使用日期时间目录。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空  > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
 
         :param partition_format: The partition_format of this ObsDestinationDescriptor.
         :type partition_format: str
@@ -306,7 +306,7 @@ class ObsDestinationDescriptor:
     def record_delimiter(self):
         """Gets the record_delimiter of this ObsDestinationDescriptor.
 
-        转储文件的记录分隔符，用于分隔写入转储文件的用户数据。 取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
+         转储文件的记录分隔符，用于分隔写入转储文件的用户数据。  取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
 
         :return: The record_delimiter of this ObsDestinationDescriptor.
         :rtype: str
@@ -317,7 +317,7 @@ class ObsDestinationDescriptor:
     def record_delimiter(self, record_delimiter):
         """Sets the record_delimiter of this ObsDestinationDescriptor.
 
-        转储文件的记录分隔符，用于分隔写入转储文件的用户数据。 取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
+         转储文件的记录分隔符，用于分隔写入转储文件的用户数据。  取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
 
         :param record_delimiter: The record_delimiter of this ObsDestinationDescriptor.
         :type record_delimiter: str
@@ -328,7 +328,7 @@ class ObsDestinationDescriptor:
     def deliver_time_interval(self):
         """Gets the deliver_time_interval of this ObsDestinationDescriptor.
 
-        根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 单位：秒。 > 使用OBS通道转储流式数据时该参数为必选配置。 
+         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  取值范围：30～900  单位：秒。  > 使用OBS通道转储流式数据时该参数为必选配置。 
 
         :return: The deliver_time_interval of this ObsDestinationDescriptor.
         :rtype: int
@@ -339,7 +339,7 @@ class ObsDestinationDescriptor:
     def deliver_time_interval(self, deliver_time_interval):
         """Sets the deliver_time_interval of this ObsDestinationDescriptor.
 
-        根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 单位：秒。 > 使用OBS通道转储流式数据时该参数为必选配置。 
+         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  取值范围：30～900  单位：秒。  > 使用OBS通道转储流式数据时该参数为必选配置。 
 
         :param deliver_time_interval: The deliver_time_interval of this ObsDestinationDescriptor.
         :type deliver_time_interval: int

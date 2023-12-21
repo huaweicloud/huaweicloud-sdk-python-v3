@@ -1,3 +1,721 @@
+# 3.1.73 2023-12-21
+
+### HuaweiCloud SDK AS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateScalingConfig**
+    - changes of request param
+      - `+ instance_config.disk.iops`
+      - `+ instance_config.disk.throughput`
+      - `+ instance_config.disk.volume_type: enum value [GPSSD2,ESSD2]`
+  - **ListScalingConfigs**
+    - changes of response param
+      - `+ scaling_configurations.instance_config.disk.iops`
+      - `+ scaling_configurations.instance_config.disk.throughput`
+      - `+ scaling_configurations.instance_config.disk.volume_type: enum value [GPSSD2,ESSD2]`
+  - **ShowScalingConfig**
+    - changes of response param
+      - `+ scaling_configuration.instance_config.disk.iops`
+      - `+ scaling_configuration.instance_config.disk.throughput`
+      - `+ scaling_configuration.instance_config.disk.volume_type: enum value [GPSSD2,ESSD2]`
+
+### HuaweiCloud SDK CloudPond
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEdgeSites**
+    - changes of response param
+      - `+ edge_sites.location.zone_code`
+      - `+ edge_sites.location.address`
+  - **CreateEdgeSite**
+    - changes of request param
+      - `+ edge_site.location.address`
+      - `+ edge_site.location.zone_code`
+    - changes of response param
+      - `+ edge_site.location.zone_code`
+      - `+ edge_site.location.address`
+  - **ShowEdgeSite**
+    - changes of response param
+      - `+ edge_site.location.zone_code`
+      - `+ edge_site.location.address`
+  - **UpdateEdgeSite**
+    - changes of response param
+      - `+ edge_site.location.zone_code`
+      - `+ edge_site.location.address`
+
+### HuaweiCloud SDK CloudTable
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCloudTableCluster**
+    - changes of request param
+      - `+ cluster_name`
+      - `+ datastore`
+      - `+ availability_zone`
+      - `+ nics`
+      - `+ cluster_info`
+      - `+ enterprise_project_id`
+      - `+ vpc_id`
+      - `+ dbuser`
+      - `+ dbuserpwd`
+      - `- cluster`
+      - `* body: object<CreateClusterRequestBody> -> object<CreateClusterReqBody>`
+    - changes of response param
+      - `+ jobId`
+      - `+ getJobEndpoint`
+  - **CreateCluster**
+    - changes of request param
+      - `* cluster.instance.nics: list<Nics> -> list<nic>`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPipelineRunDetail**
+    - changes of response param
+      - `* current_system_time: string -> int64`
+      - `* stages.pre.endpoint_ids: string -> list<string>`
+
+### HuaweiCloud SDK DC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateVifPeer**
+    - changes of response param
+      - `+ vif_peer.enable_nqa`
+      - `+ vif_peer.enable_bfd`
+  - **CreateVifPeer**
+    - changes of response param
+      - `+ vif_peer.enable_nqa`
+      - `+ vif_peer.enable_bfd`
+  - **ShowDirectConnect**
+    - changes of response param
+      - `+ direct_connect.signed_agreement_time`
+      - `+ direct_connect.locales`
+      - `+ direct_connect.support_feature`
+      - `+ direct_connect.ies_id`
+      - `+ direct_connect.reason`
+      - `+ direct_connect.email`
+      - `+ direct_connect.onestop_product_id`
+      - `+ direct_connect.building_line_product_id`
+      - `+ direct_connect.last_onestop_product_id`
+      - `+ direct_connect.last_building_line_product_id`
+      - `+ direct_connect.modified_bandwidth`
+      - `+ direct_connect.change_mode`
+      - `+ direct_connect.onestopdc_status`
+      - `+ direct_connect.public_border_group`
+      - `+ direct_connect.auto_renew`
+      - `+ direct_connect.ratio_95peak`
+      - `+ direct_connect.type: enum value [onestop_standard,onestop_hosted]`
+      - `- direct_connect.status: enum value [ORDERING,ACCEPT,REJECTED]`
+  - **UpdateDirectConnect**
+    - changes of response param
+      - `+ direct_connect.signed_agreement_time`
+      - `+ direct_connect.locales`
+      - `+ direct_connect.support_feature`
+      - `+ direct_connect.ies_id`
+      - `+ direct_connect.reason`
+      - `+ direct_connect.email`
+      - `+ direct_connect.onestop_product_id`
+      - `+ direct_connect.building_line_product_id`
+      - `+ direct_connect.last_onestop_product_id`
+      - `+ direct_connect.last_building_line_product_id`
+      - `+ direct_connect.modified_bandwidth`
+      - `+ direct_connect.change_mode`
+      - `+ direct_connect.onestopdc_status`
+      - `+ direct_connect.public_border_group`
+      - `+ direct_connect.auto_renew`
+      - `+ direct_connect.ratio_95peak`
+      - `+ direct_connect.type: enum value [onestop_standard,onestop_hosted]`
+      - `- direct_connect.status: enum value [ORDERING,ACCEPT,REJECTED]`
+  - **ListDirectConnects**
+    - changes of response param
+      - `+ direct_connects.signed_agreement_time`
+      - `+ direct_connects.locales`
+      - `+ direct_connects.support_feature`
+      - `+ direct_connects.ies_id`
+      - `+ direct_connects.reason`
+      - `+ direct_connects.email`
+      - `+ direct_connects.onestop_product_id`
+      - `+ direct_connects.building_line_product_id`
+      - `+ direct_connects.last_onestop_product_id`
+      - `+ direct_connects.last_building_line_product_id`
+      - `+ direct_connects.modified_bandwidth`
+      - `+ direct_connects.change_mode`
+      - `+ direct_connects.onestopdc_status`
+      - `+ direct_connects.public_border_group`
+      - `+ direct_connects.auto_renew`
+      - `+ direct_connects.ratio_95peak`
+      - `+ direct_connects.type: enum value [onestop_standard,onestop_hosted]`
+      - `- direct_connects.status: enum value [ORDERING,ACCEPT,REJECTED]`
+  - **ListHostedDirectConnects**
+    - changes of response param
+      - `+ hosted_connects.port_type`
+      - `+ hosted_connects.type`
+      - `+ hosted_connects.status: enum value [PENDING_UPDATE,PENDING_CREATE]`
+      - `- hosted_connects.status: enum value [PAID,APPLY,PENDING_SURVEY,DELETED,DENY,PENDING_PAY,ORDERING,ACCEPT,REJECTED]`
+  - **CreateHostedDirectConnect**
+    - changes of response param
+      - `+ hosted_connect.port_type`
+      - `+ hosted_connect.type`
+      - `+ hosted_connect.status: enum value [PENDING_UPDATE,PENDING_CREATE]`
+      - `- hosted_connect.status: enum value [PAID,APPLY,PENDING_SURVEY,DELETED,DENY,PENDING_PAY,ORDERING,ACCEPT,REJECTED]`
+  - **ShowHostedDirectConnect**
+    - changes of response param
+      - `+ hosted_connect.port_type`
+      - `+ hosted_connect.type`
+      - `+ hosted_connect.status: enum value [PENDING_UPDATE,PENDING_CREATE]`
+      - `- hosted_connect.status: enum value [PAID,APPLY,PENDING_SURVEY,DELETED,DENY,PENDING_PAY,ORDERING,ACCEPT,REJECTED]`
+  - **UpdateHostedDirectConnect**
+    - changes of response param
+      - `+ hosted_connect.port_type`
+      - `+ hosted_connect.type`
+      - `+ hosted_connect.status: enum value [PENDING_UPDATE,PENDING_CREATE]`
+      - `- hosted_connect.status: enum value [PAID,APPLY,PENDING_SURVEY,DELETED,DENY,PENDING_PAY,ORDERING,ACCEPT,REJECTED]`
+  - **ShowVirtualGateway**
+    - changes of response param
+      - `+ virtual_gateway.device_id`
+      - `+ virtual_gateway.redundant_device_id`
+      - `+ virtual_gateway.public_border_group`
+  - **UpdateVirtualGateway**
+    - changes of response param
+      - `+ virtual_gateway.device_id`
+      - `+ virtual_gateway.redundant_device_id`
+      - `+ virtual_gateway.public_border_group`
+  - **ListVirtualGateways**
+    - changes of response param
+      - `+ virtual_gateways.device_id`
+      - `+ virtual_gateways.redundant_device_id`
+      - `+ virtual_gateways.public_border_group`
+  - **CreateVirtualGateway**
+    - changes of response param
+      - `+ virtual_gateway.device_id`
+      - `+ virtual_gateway.redundant_device_id`
+      - `+ virtual_gateway.public_border_group`
+  - **ShowVirtualInterface**
+    - changes of response param
+      - `+ virtual_interface.local_gateway_v4_ip`
+      - `+ virtual_interface.remote_gateway_v4_ip`
+      - `+ virtual_interface.ies_id`
+      - `+ virtual_interface.reason`
+      - `+ virtual_interface.rate_limit`
+      - `+ virtual_interface.address_family`
+      - `+ virtual_interface.local_gateway_v6_ip`
+      - `+ virtual_interface.remote_gateway_v6_ip`
+      - `+ virtual_interface.lgw_id`
+      - `+ virtual_interface.gateway_id`
+      - `+ virtual_interface.remote_ep_group`
+      - `+ virtual_interface.service_ep_group`
+      - `+ virtual_interface.bgp_route_limit`
+      - `+ virtual_interface.priority`
+      - `+ virtual_interface.vif_peers.enable_nqa`
+      - `+ virtual_interface.vif_peers.enable_bfd`
+  - **UpdateVirtualInterface**
+    - changes of response param
+      - `+ virtual_interface.local_gateway_v4_ip`
+      - `+ virtual_interface.remote_gateway_v4_ip`
+      - `+ virtual_interface.ies_id`
+      - `+ virtual_interface.reason`
+      - `+ virtual_interface.rate_limit`
+      - `+ virtual_interface.address_family`
+      - `+ virtual_interface.local_gateway_v6_ip`
+      - `+ virtual_interface.remote_gateway_v6_ip`
+      - `+ virtual_interface.lgw_id`
+      - `+ virtual_interface.gateway_id`
+      - `+ virtual_interface.remote_ep_group`
+      - `+ virtual_interface.service_ep_group`
+      - `+ virtual_interface.bgp_route_limit`
+      - `+ virtual_interface.priority`
+      - `+ virtual_interface.vif_peers.enable_nqa`
+      - `+ virtual_interface.vif_peers.enable_bfd`
+  - **ListVirtualInterfaces**
+    - changes of response param
+      - `+ virtual_interfaces.local_gateway_v4_ip`
+      - `+ virtual_interfaces.remote_gateway_v4_ip`
+      - `+ virtual_interfaces.ies_id`
+      - `+ virtual_interfaces.reason`
+      - `+ virtual_interfaces.rate_limit`
+      - `+ virtual_interfaces.address_family`
+      - `+ virtual_interfaces.local_gateway_v6_ip`
+      - `+ virtual_interfaces.remote_gateway_v6_ip`
+      - `+ virtual_interfaces.lgw_id`
+      - `+ virtual_interfaces.gateway_id`
+      - `+ virtual_interfaces.remote_ep_group`
+      - `+ virtual_interfaces.service_ep_group`
+      - `+ virtual_interfaces.bgp_route_limit`
+      - `+ virtual_interfaces.priority`
+      - `+ virtual_interfaces.vif_peers.enable_nqa`
+      - `+ virtual_interfaces.vif_peers.enable_bfd`
+  - **CreateVirtualInterface**
+    - changes of response param
+      - `+ virtual_interface.local_gateway_v4_ip`
+      - `+ virtual_interface.remote_gateway_v4_ip`
+      - `+ virtual_interface.ies_id`
+      - `+ virtual_interface.reason`
+      - `+ virtual_interface.rate_limit`
+      - `+ virtual_interface.address_family`
+      - `+ virtual_interface.local_gateway_v6_ip`
+      - `+ virtual_interface.remote_gateway_v6_ip`
+      - `+ virtual_interface.lgw_id`
+      - `+ virtual_interface.gateway_id`
+      - `+ virtual_interface.remote_ep_group`
+      - `+ virtual_interface.service_ep_group`
+      - `+ virtual_interface.bgp_route_limit`
+      - `+ virtual_interface.priority`
+      - `+ virtual_interface.vif_peers.enable_nqa`
+      - `+ virtual_interface.vif_peers.enable_bfd`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the API `ValidateDeletableReplica`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowExpireKeyScanInfo**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+      - `+ status`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `+ nodes.execTimeOutRetry`
+  - **ShowJob**
+    - changes of response param
+      - `+ nodes.execTimeOutRetry`
+  - **UpdateJob**
+    - changes of request param
+      - `+ nodes.execTimeOutRetry`
+  - **CreateSupplementdata**
+    - changes of request param
+      - `+ dependJobs.nodes.execTimeOutRetry`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchCreateJobs**
+    - changes of request param
+      - `+ jobs.engine_type: enum value [mysql-to-kafka,taurus-to-kafka,gaussdbv5ha-to-kafka]`
+      - `+ jobs.source_endpoint.db_type: enum value [taurus]`
+  - **BatchValidateConnections**
+    - changes of request param
+      - `+ jobs.db_type: enum value [taurus]`
+  - **ShowJobList**
+    - changes of request param
+      - `+ engine_type: enum value [gaussdbv5,postgresql,mysql-to-kafka,taurus-to-kafka,gaussdbv5ha-to-kafka]`
+  - **BatchUpdateJob**
+    - changes of request param
+      - `+ jobs.engine_type: enum value [gaussdbv5,postgresql,mysql-to-kafka,taurus-to-kafka,gaussdbv5ha-to-kafka]`
+      - `+ jobs.source_endpoint.db_type: enum value [taurus]`
+  - **BatchListJobDetails**
+    - changes of response param
+      - `+ results.source_endpoint.db_type: enum value [taurus]`
+      - `+ results.inst_info.engine_type: enum value [gaussdbv5,postgresql,mysql-to-kafka,taurus-to-kafka,gaussdbv5ha-to-kafka]`
+  - **ShowJobDetail**
+    - changes of request param
+      - `+ type: enum value [compare]`
+      - `+ type: enum value [comapre]`
+      - `+ query_type: enum value [diff]`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchCreateServerTags**
+    - changes of request param
+      - `* tags: list<ServerTag> -> list<BatchAddServerTag>`
+  - **UpdateServer**
+    - changes of request param
+      - `+ server.user_data`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `UpdateDisassociatePublicip`, `UpdateAssociatePublicip`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - Support the following APIs:
+    - `ListProcessesHost`
+    - `ListPortHost`
+    - `ChangeCheckRuleAction`
+    - `ListVulScanTask`
+    - `CreateVulnerabilityScanTask`
+    - `ListVulScanTaskHost`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAssetStatistic**
+    - changes of request param
+      - `+ category`
+    - changes of response param
+      - `+ web_app_num`
+      - `+ database_num`
+      - `+ web_service_num`
+  - **ChangeVulScanPolicy**
+    - changes of request param
+      - `+ scan_vul_types`
+  - **ListJarPackageHostInfo**
+    - changes of request param
+      - `+ part_match`
+  - **ListUserStatistics**
+    - changes of request param
+      - `+ category`
+  - **ListPortStatistics**
+    - changes of request param
+      - `+ category`
+  - **ListProcessStatistics**
+    - changes of request param
+      - `+ category`
+  - **ListAppStatistics**
+    - changes of request param
+      - `+ category`
+  - **ListUsers**
+    - changes of request param
+      - `+ category`
+      - `+ part_match`
+    - changes of response param
+      - `+ data_list.container_id`
+      - `+ data_list.container_name`
+  - **ListPorts**
+    - changes of request param
+      - `+ category`
+  - **ListApps**
+    - changes of request param
+      - `+ category`
+      - `+ part_match`
+    - changes of response param
+      - `+ data_list.container_id`
+      - `+ data_list.container_name`
+  - **ListAutoLaunchs**
+    - changes of request param
+      - `+ part_match`
+  - **ListProtectionServer**
+    - changes of response param
+      - `+ data_list.agent_version`
+  - **ListContainerNodes**
+    - changes of request param
+      - `+ container_tags`
+    - changes of response param
+      - `+ data_list.protect_interrupt`
+      - `+ data_list.container_tags`
+      - `+ data_list.private_ip`
+      - `+ data_list.public_ip`
+      - `+ data_list.resource_id`
+      - `+ data_list.group_name`
+      - `+ data_list.enterprise_project_name`
+      - `+ data_list.detect_result`
+      - `+ data_list.asset`
+      - `+ data_list.vulnerability`
+      - `+ data_list.intrusion`
+      - `+ data_list.policy_group_id`
+      - `+ data_list.policy_group_name`
+  - **ListHostStatus**
+    - changes of response param
+      - `+ data_list.expire_time`
+      - `+ data_list.protect_interrupt`
+  - **BatchScanSwrImage**
+    - changes of request param
+      - `+ image_size`
+      - `+ start_latest_update_time`
+      - `+ end_latest_update_time`
+      - `+ start_latest_scan_time`
+      - `+ end_latest_scan_time`
+      - `+ image_info_list.instance_id`
+      - `+ image_info_list.instance_url`
+  - **ListImageVulnerabilities**
+    - changes of request param
+      - `+ type`
+    - changes of response param
+      - `+ data_list.app_path`
+  - **ListImageRiskConfigs**
+    - changes of request param
+      - `+ instance_id`
+  - **ListImageRiskConfigRules**
+    - changes of request param
+      - `+ instance_id`
+  - **ShowImageCheckRuleDetail**
+    - changes of request param
+      - `+ instance_id`
+  - **ListAlarmWhiteList**
+    - changes of response param
+      - `+ data_list.white_field`
+      - `+ data_list.field_value`
+      - `+ data_list.judge_type`
+  - **ListSwrImageRepository**
+    - changes of request param
+      - `+ instance_name`
+      - `+ image_size`
+      - `+ start_latest_update_time`
+      - `+ end_latest_update_time`
+      - `+ start_latest_scan_time`
+      - `+ end_latest_scan_time`
+      - `+ has_malicious_file`
+      - `+ has_unsafe_setting`
+      - `+ has_vul`
+      - `+ instance_id`
+    - changes of response param
+      - `+ data_list.scan_failed_desc`
+  - **ListSecurityEvents**
+    - changes of request param
+      - `+ public_ip`
+      - `+ event_name`
+    - changes of response param
+      - `+ data_list.event_count`
+  - **ChangeEvent**
+    - changes of request param
+      - `+ event_white_rule_list`
+
+### HuaweiCloud SDK IEC
+
+- _Features_
+  - Support the APIs `ListBandwidthTypes`, `CreateSubnet`, `CreateInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSubnets**
+    - changes of response param
+      - `+ subnets.cidr_v6`
+      - `+ subnets.ipv6_enable`
+      - `+ subnets.pool_id`
+      - `+ subnets.neutron_subnet_id_v6`
+      - `+ subnets.gateway_ip_v6`
+  - **ShowSubnet**
+    - changes of response param
+      - `+ subnet.cidr_v6`
+      - `+ subnet.ipv6_enable`
+      - `+ subnet.pool_id`
+      - `+ subnet.neutron_subnet_id_v6`
+      - `+ subnet.gateway_ip_v6`
+  - **UpdateSubnet**
+    - changes of request param
+      - `+ subnet.ipv6_enable`
+      - `+ subnet.pool_id`
+    - changes of response param
+      - `+ subnet.ipv6_enable`
+      - `+ subnet.neutron_subnet_id_v6`
+  - **CreateSecurityGroupRule**
+    - changes of request param
+      - `+ security_group_rule.ethertype: enum value [IPv6]`
+  - **ListPorts**
+    - changes of response param
+      - `+ ports.ipv6_bandwidth_id`
+      - `+ ports.binding:profile`
+  - **CreatePort**
+    - changes of response param
+      - `+ port.ipv6_bandwidth_id`
+      - `+ port.binding:profile`
+  - **ShowPort**
+    - changes of response param
+      - `+ port.ipv6_bandwidth_id`
+      - `+ port.binding:profile`
+  - **UpdatePort**
+    - changes of response param
+      - `+ port.ipv6_bandwidth_id`
+      - `+ port.binding:profile`
+  - **CreatePublicIp**
+    - changes of request param
+      - `+ bandwidth`
+  - **ShowEdgeCloud**
+    - changes of response param
+      - `+ stacks.resources.net_config.allowed_address_pairs`
+      - `+ coverage.coverage_sites.demands.pool_id_v6`
+      - `+ coverage.coverage_sites.demands.ipv6_bandwidth_enable`
+  - **ListEdgeCloud**
+    - changes of response param
+      - `+ edgeclouds.coverage.coverage_sites.demands.pool_id_v6`
+      - `+ edgeclouds.coverage.coverage_sites.demands.ipv6_bandwidth_enable`
+  - **CreateDeployment**
+    - changes of request param
+      - `+ edgecloud.coverage.coverage_sites.demands.bandwidth_type`
+      - `+ edgecloud.coverage.coverage_sites.demands.pool_id_v6`
+      - `+ edgecloud.coverage.coverage_sites.demands.ipv6_bandwidth_enable`
+      - `+ edgecloud.coverage.coverage_sites.demands.ipv6_bandwidth_type`
+      - `+ edgecloud.stack.resources.net_config.allowed_address_pairs`
+    - changes of response param
+      - `+ locations.ipv6_enable`
+      - `+ locations.ipv6_bandwidth_enable`
+      - `+ locations.pool_id_v6`
+  - **ListDeployments**
+    - changes of response param
+      - `+ deployments.distribution.ipv6_enable`
+      - `+ deployments.distribution.ipv6_bandwidth_enable`
+      - `+ deployments.distribution.pool_id_v6`
+      - `+ deployments.edgecloud.stacks.resources.net_config.allowed_address_pairs`
+      - `+ deployments.edgecloud.coverage.coverage_sites.demands.bandwidth_type`
+      - `+ deployments.edgecloud.coverage.coverage_sites.demands.pool_id_v6`
+      - `+ deployments.edgecloud.coverage.coverage_sites.demands.ipv6_bandwidth_enable`
+      - `+ deployments.edgecloud.coverage.coverage_sites.demands.ipv6_bandwidth_type`
+
+### HuaweiCloud SDK IVS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DetectStandardByNameAndId**
+    - changes of request param
+      - `+ data.req_data.detail`
+      - `+ data.req_data.crop`
+  - **DetectStandardByIdCardImage**
+    - changes of request param
+      - `+ data.req_data.detail`
+      - `+ data.req_data.crop`
+  - **DetectStandardByVideoAndIdCardImage**
+    - changes of request param
+      - `+ data.req_data.detail`
+  - **DetectStandardByVideoAndNameAndId**
+    - changes of request param
+      - `+ data.req_data.detail`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the API `SendKafkaMessage`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `CreatePartition`
+  - **UpdateInstanceTopic**
+    - changes of request param
+      - `+ topics.new_partition_brokers`
+  - **ListInstanceConsumerGroups**
+    - changes of response param
+      - `* groups.lag: int32 -> int64`
+  - **ListInstances**
+    - changes of request param
+      - `+ status: enum value [UPGRADING,UPGRADINGFAILED]`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTranscodingTask**
+    - changes of request param
+      - `+ video_process.hls_storage_type`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFsTasks**
+    - changes of response param
+      - `* tasks: list<object> -> list<OneFsTaskResp>`
+  - **ShowShare**
+    - changes of response param
+      - `+ tags`
+      - `+ enterprise_project_id`
+  - **DeleteBackendTarget**
+    - changes of response param
+      - `+ lifecycle: enum value [FAILED]`
+  - **CreateShare**
+    - changes of request param
+      - `+ share.tags`
+  - **ListShares**
+    - changes of response param
+      - `+ tags`
+      - `+ enterprise_project_id`
+      - `+ shares.enterprise_project_id`
+      - `+ shares.tags`
+
+### HuaweiCloud SDK TICS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAgentDetail**
+    - changes of response param
+      - `* agent_deploy.aom_flag: byte -> boolean`
+      - `* agent_deploy.bcs_flag: byte -> boolean`
+      - `* agent_deploy.high_avail: byte -> boolean`
+      - `+ agent_deploy_detail.ief_instance_id`
+      - `+ agent_deploy_node.agent_vpcep_eps_id`
+      - `+ agent_deploy_node.league_server_ip_security_group_rule`
+      - `+ agent_deploy_node.league_server_snat_ip`
+      - `+ agent_deploy_node.server_to_agent_vpcep_epi_id`
+      - `+ agent_deploy_node.server_to_agent_vpcep_epi_ip`
+      - `+ agent_deploy_node.snat_rule_id`
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+  - Support the APIs `ListAssetDailySummaryLog`, `UpdateStorageMode`, `ShowVodRetrieval`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowTakeOverAssetDetails**
+    - changes of response param
+      - `+ transcode_info.output.group_id`
+      - `+ transcode_info.output.group_name`
+  - **PublishAssets**
+    - changes of response param
+      - `+ asset_info_array.is_multi_transcode`
+      - `+ asset_info_array.play_info_array.group_id`
+      - `+ asset_info_array.play_info_array.group_name`
+  - **UnpublishAssets**
+    - changes of response param
+      - `+ asset_info_array.is_multi_transcode`
+      - `+ asset_info_array.play_info_array.group_id`
+      - `+ asset_info_array.play_info_array.group_name`
+  - **ShowAssetMeta**
+    - changes of response param
+      - `+ asset_info_array.is_multi_transcode`
+      - `+ asset_info_array.play_info_array.group_id`
+      - `+ asset_info_array.play_info_array.group_name`
+  - **ShowAssetDetail**
+    - changes of response param
+      - `+ transcode_info.output.group_id`
+      - `+ transcode_info.output.group_name`
+  - **ShowTakeOverTaskDetails**
+    - changes of response param
+      - `+ assets.transcode_info.output.group_id`
+      - `+ assets.transcode_info.output.group_name`
+
 # 3.1.72 2023-12-14
 
 ### HuaweiCloud SDK BMS

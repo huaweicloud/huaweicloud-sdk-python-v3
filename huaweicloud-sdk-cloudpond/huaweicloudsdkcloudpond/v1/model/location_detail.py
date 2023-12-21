@@ -18,6 +18,8 @@ class LocationDetail:
 
     openapi_types = {
         'name': 'str',
+        'zone_code': 'str',
+        'address': 'str',
         'description': 'str',
         'country': 'str',
         'province': 'str',
@@ -28,6 +30,8 @@ class LocationDetail:
 
     attribute_map = {
         'name': 'name',
+        'zone_code': 'zone_code',
+        'address': 'address',
         'description': 'description',
         'country': 'country',
         'province': 'province',
@@ -36,16 +40,20 @@ class LocationDetail:
         'condition': 'condition'
     }
 
-    def __init__(self, name=None, description=None, country=None, province=None, city=None, district=None, condition=None):
+    def __init__(self, name=None, zone_code=None, address=None, description=None, country=None, province=None, city=None, district=None, condition=None):
         """LocationDetail
 
         The model defined in huaweicloud sdk
 
         :param name: 场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
         :type name: str
+        :param zone_code: 场地所在地区
+        :type zone_code: str
+        :param address: 部署位置
+        :type address: str
         :param description: 场地描述
         :type description: str
-        :param country: 场地所在国家
+        :param country: 场地所在国家（逐步下线，使用zone_code替代）
         :type country: str
         :param province: 场地所在省/自治区/直辖市
         :type province: str
@@ -60,6 +68,8 @@ class LocationDetail:
         
 
         self._name = None
+        self._zone_code = None
+        self._address = None
         self._description = None
         self._country = None
         self._province = None
@@ -70,6 +80,10 @@ class LocationDetail:
 
         if name is not None:
             self.name = name
+        if zone_code is not None:
+            self.zone_code = zone_code
+        if address is not None:
+            self.address = address
         if description is not None:
             self.description = description
         if country is not None:
@@ -106,6 +120,50 @@ class LocationDetail:
         self._name = name
 
     @property
+    def zone_code(self):
+        """Gets the zone_code of this LocationDetail.
+
+        场地所在地区
+
+        :return: The zone_code of this LocationDetail.
+        :rtype: str
+        """
+        return self._zone_code
+
+    @zone_code.setter
+    def zone_code(self, zone_code):
+        """Sets the zone_code of this LocationDetail.
+
+        场地所在地区
+
+        :param zone_code: The zone_code of this LocationDetail.
+        :type zone_code: str
+        """
+        self._zone_code = zone_code
+
+    @property
+    def address(self):
+        """Gets the address of this LocationDetail.
+
+        部署位置
+
+        :return: The address of this LocationDetail.
+        :rtype: str
+        """
+        return self._address
+
+    @address.setter
+    def address(self, address):
+        """Sets the address of this LocationDetail.
+
+        部署位置
+
+        :param address: The address of this LocationDetail.
+        :type address: str
+        """
+        self._address = address
+
+    @property
     def description(self):
         """Gets the description of this LocationDetail.
 
@@ -131,7 +189,7 @@ class LocationDetail:
     def country(self):
         """Gets the country of this LocationDetail.
 
-        场地所在国家
+        场地所在国家（逐步下线，使用zone_code替代）
 
         :return: The country of this LocationDetail.
         :rtype: str
@@ -142,7 +200,7 @@ class LocationDetail:
     def country(self, country):
         """Sets the country of this LocationDetail.
 
-        场地所在国家
+        场地所在国家（逐步下线，使用zone_code替代）
 
         :param country: The country of this LocationDetail.
         :type country: str

@@ -36,11 +36,11 @@ class DeleteBackendTargetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param target_id: 后端存储库 id
+        :param target_id: 绑定关系id
         :type target_id: str
-        :param delete_data_in_file_system: 删除后端存储库时是否同时删除文件系统对应路径的数据
+        :param delete_data_in_file_system: 删除后端存储时是否同时删除文件系统内的联动目录及其数据文件
         :type delete_data_in_file_system: bool
-        :param lifecycle: 后端存储库生命周期描述信息
+        :param lifecycle: 绑定状态。只支持DELETING和FAILED
         :type lifecycle: str
         :param x_request_id: 
         :type x_request_id: str
@@ -67,7 +67,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     def target_id(self):
         """Gets the target_id of this DeleteBackendTargetResponse.
 
-        后端存储库 id
+        绑定关系id
 
         :return: The target_id of this DeleteBackendTargetResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     def target_id(self, target_id):
         """Sets the target_id of this DeleteBackendTargetResponse.
 
-        后端存储库 id
+        绑定关系id
 
         :param target_id: The target_id of this DeleteBackendTargetResponse.
         :type target_id: str
@@ -89,7 +89,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     def delete_data_in_file_system(self):
         """Gets the delete_data_in_file_system of this DeleteBackendTargetResponse.
 
-        删除后端存储库时是否同时删除文件系统对应路径的数据
+        删除后端存储时是否同时删除文件系统内的联动目录及其数据文件
 
         :return: The delete_data_in_file_system of this DeleteBackendTargetResponse.
         :rtype: bool
@@ -100,7 +100,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     def delete_data_in_file_system(self, delete_data_in_file_system):
         """Sets the delete_data_in_file_system of this DeleteBackendTargetResponse.
 
-        删除后端存储库时是否同时删除文件系统对应路径的数据
+        删除后端存储时是否同时删除文件系统内的联动目录及其数据文件
 
         :param delete_data_in_file_system: The delete_data_in_file_system of this DeleteBackendTargetResponse.
         :type delete_data_in_file_system: bool
@@ -111,7 +111,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     def lifecycle(self):
         """Gets the lifecycle of this DeleteBackendTargetResponse.
 
-        后端存储库生命周期描述信息
+        绑定状态。只支持DELETING和FAILED
 
         :return: The lifecycle of this DeleteBackendTargetResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     def lifecycle(self, lifecycle):
         """Sets the lifecycle of this DeleteBackendTargetResponse.
 
-        后端存储库生命周期描述信息
+        绑定状态。只支持DELETING和FAILED
 
         :param lifecycle: The lifecycle of this DeleteBackendTargetResponse.
         :type lifecycle: str

@@ -35,7 +35,7 @@ class UpdateInstanceConsumerGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息中间件类型。
+        :param engine: 消息引擎的类型。
         :type engine: str
         :param instance_id: 实例ID。
         :type instance_id: str
@@ -63,7 +63,7 @@ class UpdateInstanceConsumerGroupRequest:
     def engine(self):
         """Gets the engine of this UpdateInstanceConsumerGroupRequest.
 
-        消息中间件类型。
+        消息引擎的类型。
 
         :return: The engine of this UpdateInstanceConsumerGroupRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateInstanceConsumerGroupRequest:
     def engine(self, engine):
         """Sets the engine of this UpdateInstanceConsumerGroupRequest.
 
-        消息中间件类型。
+        消息引擎的类型。
 
         :param engine: The engine of this UpdateInstanceConsumerGroupRequest.
         :type engine: str

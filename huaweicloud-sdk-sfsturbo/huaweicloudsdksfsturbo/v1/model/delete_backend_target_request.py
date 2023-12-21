@@ -35,9 +35,9 @@ class DeleteBackendTargetRequest:
 
         :param share_id: 文件系统id
         :type share_id: str
-        :param target_id: 数据存储库 id
+        :param target_id: 绑定关系id
         :type target_id: str
-        :param delete_data_in_file_system: 删除后端存储库时是否删除文件系统对应目录文件，默认为 false
+        :param delete_data_in_file_system: 删除后端存储时是否同时删除文件系统内的联动目录及其数据文件，默认为 false。数据删除后无法恢复，请谨慎操作。
         :type delete_data_in_file_system: bool
         """
         
@@ -79,7 +79,7 @@ class DeleteBackendTargetRequest:
     def target_id(self):
         """Gets the target_id of this DeleteBackendTargetRequest.
 
-        数据存储库 id
+        绑定关系id
 
         :return: The target_id of this DeleteBackendTargetRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteBackendTargetRequest:
     def target_id(self, target_id):
         """Sets the target_id of this DeleteBackendTargetRequest.
 
-        数据存储库 id
+        绑定关系id
 
         :param target_id: The target_id of this DeleteBackendTargetRequest.
         :type target_id: str
@@ -101,7 +101,7 @@ class DeleteBackendTargetRequest:
     def delete_data_in_file_system(self):
         """Gets the delete_data_in_file_system of this DeleteBackendTargetRequest.
 
-        删除后端存储库时是否删除文件系统对应目录文件，默认为 false
+        删除后端存储时是否同时删除文件系统内的联动目录及其数据文件，默认为 false。数据删除后无法恢复，请谨慎操作。
 
         :return: The delete_data_in_file_system of this DeleteBackendTargetRequest.
         :rtype: bool
@@ -112,7 +112,7 @@ class DeleteBackendTargetRequest:
     def delete_data_in_file_system(self, delete_data_in_file_system):
         """Sets the delete_data_in_file_system of this DeleteBackendTargetRequest.
 
-        删除后端存储库时是否删除文件系统对应目录文件，默认为 false
+        删除后端存储时是否同时删除文件系统内的联动目录及其数据文件，默认为 false。数据删除后无法恢复，请谨慎操作。
 
         :param delete_data_in_file_system: The delete_data_in_file_system of this DeleteBackendTargetRequest.
         :type delete_data_in_file_system: bool

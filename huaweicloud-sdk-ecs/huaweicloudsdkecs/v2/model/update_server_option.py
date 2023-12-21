@@ -19,16 +19,18 @@ class UpdateServerOption:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'hostname': 'str'
+        'hostname': 'str',
+        'user_data': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'hostname': 'hostname'
+        'hostname': 'hostname',
+        'user_data': 'user_data'
     }
 
-    def __init__(self, name=None, description=None, hostname=None):
+    def __init__(self, name=None, description=None, hostname=None, user_data=None):
         """UpdateServerOption
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UpdateServerOption:
         :type description: str
         :param hostname: 修改云服务hostname。  命令规范：长度为 [1-64] 个字符，允许使用点号(.)分隔字符成多段，每段允许使用大小写字母、数字或连字符(-)，但不能连续使用点号(.)或连字符(-),不能以点号(.)或连字符(-)开头或结尾，不能出现（.-）和（-.）。
         :type hostname: str
+        :param user_data: 修改云服务器云主机过程中待注入实例自定义数据。支持注入文本、文本文件。  示例：  base64编码前：   Linux服务器：     #!/bin/bash     echo user_test &gt; /home/user.txt   Windows服务器：     rem cmd     echo 111 &gt; c:\\aaa.txt  base64编码后：   Linux服务器：IyEvYmluL2Jhc2gKZWNobyB1c2VyX3Rlc3QgPiAvaG9tZS91c2VyLnR4dA&#x3D;&#x3D;   Windows服务器：cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0
+        :type user_data: str
         """
         
         
@@ -46,6 +50,7 @@ class UpdateServerOption:
         self._name = None
         self._description = None
         self._hostname = None
+        self._user_data = None
         self.discriminator = None
 
         if name is not None:
@@ -54,6 +59,8 @@ class UpdateServerOption:
             self.description = description
         if hostname is not None:
             self.hostname = hostname
+        if user_data is not None:
+            self.user_data = user_data
 
     @property
     def name(self):
@@ -120,6 +127,28 @@ class UpdateServerOption:
         :type hostname: str
         """
         self._hostname = hostname
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this UpdateServerOption.
+
+        修改云服务器云主机过程中待注入实例自定义数据。支持注入文本、文本文件。  示例：  base64编码前：   Linux服务器：     #!/bin/bash     echo user_test > /home/user.txt   Windows服务器：     rem cmd     echo 111 > c:\\aaa.txt  base64编码后：   Linux服务器：IyEvYmluL2Jhc2gKZWNobyB1c2VyX3Rlc3QgPiAvaG9tZS91c2VyLnR4dA==   Windows服务器：cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0
+
+        :return: The user_data of this UpdateServerOption.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this UpdateServerOption.
+
+        修改云服务器云主机过程中待注入实例自定义数据。支持注入文本、文本文件。  示例：  base64编码前：   Linux服务器：     #!/bin/bash     echo user_test > /home/user.txt   Windows服务器：     rem cmd     echo 111 > c:\\aaa.txt  base64编码后：   Linux服务器：IyEvYmluL2Jhc2gKZWNobyB1c2VyX3Rlc3QgPiAvaG9tZS91c2VyLnR4dA==   Windows服务器：cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0
+
+        :param user_data: The user_data of this UpdateServerOption.
+        :type user_data: str
+        """
+        self._user_data = user_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

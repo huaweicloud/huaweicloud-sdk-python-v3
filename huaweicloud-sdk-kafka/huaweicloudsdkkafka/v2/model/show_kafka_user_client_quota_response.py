@@ -34,7 +34,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
 
         :param quotas: 客户端流控配置列表。 
         :type quotas: list[:class:`huaweicloudsdkkafka.v2.Quota`]
-        :param count: 客户端流控配置数目。 
+        :param count: 用户/客户端流控配置数目。 
         :type count: int
         """
         
@@ -75,7 +75,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
     def count(self):
         """Gets the count of this ShowKafkaUserClientQuotaResponse.
 
-        客户端流控配置数目。 
+        用户/客户端流控配置数目。 
 
         :return: The count of this ShowKafkaUserClientQuotaResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ShowKafkaUserClientQuotaResponse.
 
-        客户端流控配置数目。 
+        用户/客户端流控配置数目。 
 
         :param count: The count of this ShowKafkaUserClientQuotaResponse.
         :type count: int

@@ -13,6 +13,8 @@ from huaweicloudsdkiec.v1.model.associate_subnet_response import AssociateSubnet
 from huaweicloudsdkiec.v1.model.attachment import Attachment
 from huaweicloudsdkiec.v1.model.bandwidth import Bandwidth
 from huaweicloudsdkiec.v1.model.bandwidth_config import BandwidthConfig
+from huaweicloudsdkiec.v1.model.bandwidth_config_instance import BandwidthConfigInstance
+from huaweicloudsdkiec.v1.model.bandwidth_type_option import BandwidthTypeOption
 from huaweicloudsdkiec.v1.model.base_id import BaseId
 from huaweicloudsdkiec.v1.model.batch_reboot import BatchReboot
 from huaweicloudsdkiec.v1.model.batch_reboot_instance_request import BatchRebootInstanceRequest
@@ -32,8 +34,10 @@ from huaweicloudsdkiec.v1.model.change_os_request import ChangeOsRequest
 from huaweicloudsdkiec.v1.model.change_os_response import ChangeOsResponse
 from huaweicloudsdkiec.v1.model.cloud_image_region_info import CloudImageRegionInfo
 from huaweicloudsdkiec.v1.model.coverage import Coverage
+from huaweicloudsdkiec.v1.model.coverage_instance import CoverageInstance
 from huaweicloudsdkiec.v1.model.coverage_resp import CoverageResp
 from huaweicloudsdkiec.v1.model.coverage_site import CoverageSite
+from huaweicloudsdkiec.v1.model.coverage_site_instance import CoverageSiteInstance
 from huaweicloudsdkiec.v1.model.coverage_site_resp import CoverageSiteResp
 from huaweicloudsdkiec.v1.model.create_deployment_request import CreateDeploymentRequest
 from huaweicloudsdkiec.v1.model.create_deployment_request_body import CreateDeploymentRequestBody
@@ -45,6 +49,10 @@ from huaweicloudsdkiec.v1.model.create_firewall_response import CreateFirewallRe
 from huaweicloudsdkiec.v1.model.create_image_request import CreateImageRequest
 from huaweicloudsdkiec.v1.model.create_image_request_body import CreateImageRequestBody
 from huaweicloudsdkiec.v1.model.create_image_response import CreateImageResponse
+from huaweicloudsdkiec.v1.model.create_instance_option import CreateInstanceOption
+from huaweicloudsdkiec.v1.model.create_instance_request import CreateInstanceRequest
+from huaweicloudsdkiec.v1.model.create_instance_request_body import CreateInstanceRequestBody
+from huaweicloudsdkiec.v1.model.create_instance_response import CreateInstanceResponse
 from huaweicloudsdkiec.v1.model.create_keypair_request import CreateKeypairRequest
 from huaweicloudsdkiec.v1.model.create_keypair_request_body import CreateKeypairRequestBody
 from huaweicloudsdkiec.v1.model.create_keypair_response import CreateKeypairResponse
@@ -52,6 +60,7 @@ from huaweicloudsdkiec.v1.model.create_port_option import CreatePortOption
 from huaweicloudsdkiec.v1.model.create_port_request import CreatePortRequest
 from huaweicloudsdkiec.v1.model.create_port_request_body import CreatePortRequestBody
 from huaweicloudsdkiec.v1.model.create_port_response import CreatePortResponse
+from huaweicloudsdkiec.v1.model.create_public_ip_bandwidth_option import CreatePublicIpBandwidthOption
 from huaweicloudsdkiec.v1.model.create_public_ip_option import CreatePublicIpOption
 from huaweicloudsdkiec.v1.model.create_public_ip_request import CreatePublicIpRequest
 from huaweicloudsdkiec.v1.model.create_public_ip_request_body import CreatePublicIpRequestBody
@@ -71,6 +80,10 @@ from huaweicloudsdkiec.v1.model.create_security_group_rule_option import CreateS
 from huaweicloudsdkiec.v1.model.create_security_group_rule_request import CreateSecurityGroupRuleRequest
 from huaweicloudsdkiec.v1.model.create_security_group_rule_request_body import CreateSecurityGroupRuleRequestBody
 from huaweicloudsdkiec.v1.model.create_security_group_rule_response import CreateSecurityGroupRuleResponse
+from huaweicloudsdkiec.v1.model.create_subnet_option import CreateSubnetOption
+from huaweicloudsdkiec.v1.model.create_subnet_request import CreateSubnetRequest
+from huaweicloudsdkiec.v1.model.create_subnet_request_body import CreateSubnetRequestBody
+from huaweicloudsdkiec.v1.model.create_subnet_response import CreateSubnetResponse
 from huaweicloudsdkiec.v1.model.create_vpc_option import CreateVpcOption
 from huaweicloudsdkiec.v1.model.create_vpc_request import CreateVpcRequest
 from huaweicloudsdkiec.v1.model.create_vpc_request_body import CreateVpcRequestBody
@@ -113,6 +126,7 @@ from huaweicloudsdkiec.v1.model.delete_subnet_response import DeleteSubnetRespon
 from huaweicloudsdkiec.v1.model.delete_vpc_request import DeleteVpcRequest
 from huaweicloudsdkiec.v1.model.delete_vpc_response import DeleteVpcResponse
 from huaweicloudsdkiec.v1.model.demand import Demand
+from huaweicloudsdkiec.v1.model.demand_instance import DemandInstance
 from huaweicloudsdkiec.v1.model.demand_resp import DemandResp
 from huaweicloudsdkiec.v1.model.deployment import Deployment
 from huaweicloudsdkiec.v1.model.deployment_edgecloud import DeploymentEdgecloud
@@ -143,9 +157,13 @@ from huaweicloudsdkiec.v1.model.image_info import ImageInfo
 from huaweicloudsdkiec.v1.model.image_list import ImageList
 from huaweicloudsdkiec.v1.model.instance import Instance
 from huaweicloudsdkiec.v1.model.instance_address import InstanceAddress
+from huaweicloudsdkiec.v1.model.instance_job import InstanceJob
 from huaweicloudsdkiec.v1.model.instance_security_group import InstanceSecurityGroup
 from huaweicloudsdkiec.v1.model.ip_pool import IpPool
+from huaweicloudsdkiec.v1.model.ipv6_bandwidth import Ipv6Bandwidth
 from huaweicloudsdkiec.v1.model.job_result import JobResult
+from huaweicloudsdkiec.v1.model.list_bandwidth_types_request import ListBandwidthTypesRequest
+from huaweicloudsdkiec.v1.model.list_bandwidth_types_response import ListBandwidthTypesResponse
 from huaweicloudsdkiec.v1.model.list_bandwidths_request import ListBandwidthsRequest
 from huaweicloudsdkiec.v1.model.list_bandwidths_response import ListBandwidthsResponse
 from huaweicloudsdkiec.v1.model.list_cloud_images_request import ListCloudImagesRequest
@@ -189,6 +207,7 @@ from huaweicloudsdkiec.v1.model.list_vpcs_request import ListVpcsRequest
 from huaweicloudsdkiec.v1.model.list_vpcs_response import ListVpcsResponse
 from huaweicloudsdkiec.v1.model.location import Location
 from huaweicloudsdkiec.v1.model.net_config import NetConfig
+from huaweicloudsdkiec.v1.model.net_config_instance import NetConfigInstance
 from huaweicloudsdkiec.v1.model.nic_id import NicId
 from huaweicloudsdkiec.v1.model.operator import Operator
 from huaweicloudsdkiec.v1.model.os_extra_specs import OsExtraSpecs
@@ -245,6 +264,7 @@ from huaweicloudsdkiec.v1.model.simple_keypair import SimpleKeypair
 from huaweicloudsdkiec.v1.model.site import Site
 from huaweicloudsdkiec.v1.model.stack import Stack
 from huaweicloudsdkiec.v1.model.subnet import Subnet
+from huaweicloudsdkiec.v1.model.subnet_config import SubnetConfig
 from huaweicloudsdkiec.v1.model.sys_tags import SysTags
 from huaweicloudsdkiec.v1.model.update_bandwidth_option import UpdateBandwidthOption
 from huaweicloudsdkiec.v1.model.update_bandwidth_request import UpdateBandwidthRequest

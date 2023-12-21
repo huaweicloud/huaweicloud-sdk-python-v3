@@ -566,6 +566,71 @@ class IecClient(Client):
 
         return http_info
 
+    def create_instance(self, request):
+        """创建边缘实例
+
+        创建边缘实例。单租户默认可创建50个边缘实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateInstance
+        :type request: :class:`huaweicloudsdkiec.v1.CreateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.CreateInstanceResponse`
+        """
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_instance_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_keypair(self, request):
         """创建和导入密钥
 
@@ -2109,6 +2174,77 @@ class IecClient(Client):
             path_params['deployment_id'] = local_var_params['deployment_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bandwidth_types(self, request):
+        """查询共享带宽类型列表
+
+        查询共享带宽类型列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBandwidthTypes
+        :type request: :class:`huaweicloudsdkiec.v1.ListBandwidthTypesRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.ListBandwidthTypesResponse`
+        """
+        http_info = self._list_bandwidth_types_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bandwidth_types_invoker(self, request):
+        http_info = self._list_bandwidth_types_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bandwidth_types_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/share-bandwidth-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthTypesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'site_id' in local_var_params:
+            query_params.append(('site_id', local_var_params['site_id']))
+        if 'bandwidth_type' in local_var_params:
+            query_params.append(('bandwidth_type', local_var_params['bandwidth_type']))
 
         header_params = {}
 
@@ -5656,6 +5792,71 @@ class IecClient(Client):
         path_params = {}
         if 'publicip_id' in local_var_params:
             path_params['publicip_id'] = local_var_params['publicip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_subnet(self, request):
+        """创建子网
+
+        根据用户的请求内容，创建子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSubnet
+        :type request: :class:`huaweicloudsdkiec.v1.CreateSubnetRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.CreateSubnetResponse`
+        """
+        http_info = self._create_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_subnet_invoker(self, request):
+        http_info = self._create_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_subnet_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

@@ -18,6 +18,8 @@ class PlayInfo:
 
     openapi_types = {
         'play_type': 'str',
+        'group_id': 'str',
+        'group_name': 'str',
         'url': 'str',
         'encrypted': 'int',
         'meta_data': 'MetaData'
@@ -25,18 +27,24 @@ class PlayInfo:
 
     attribute_map = {
         'play_type': 'play_type',
+        'group_id': 'group_id',
+        'group_name': 'group_name',
         'url': 'url',
         'encrypted': 'encrypted',
         'meta_data': 'meta_data'
     }
 
-    def __init__(self, play_type=None, url=None, encrypted=None, meta_data=None):
+    def __init__(self, play_type=None, group_id=None, group_name=None, url=None, encrypted=None, meta_data=None):
         """PlayInfo
 
         The model defined in huaweicloud sdk
 
         :param play_type: 播放协议类型。  取值如下： - hls - dash - mp4
         :type play_type: str
+        :param group_id: 所属转码组Id
+        :type group_id: str
+        :param group_name: 所属转码组名称
+        :type group_name: str
         :param url: 播放URL。
         :type url: str
         :param encrypted: 标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。  默认值：0。
@@ -48,6 +56,8 @@ class PlayInfo:
         
 
         self._play_type = None
+        self._group_id = None
+        self._group_name = None
         self._url = None
         self._encrypted = None
         self._meta_data = None
@@ -55,6 +65,10 @@ class PlayInfo:
 
         if play_type is not None:
             self.play_type = play_type
+        if group_id is not None:
+            self.group_id = group_id
+        if group_name is not None:
+            self.group_name = group_name
         if url is not None:
             self.url = url
         if encrypted is not None:
@@ -83,6 +97,50 @@ class PlayInfo:
         :type play_type: str
         """
         self._play_type = play_type
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this PlayInfo.
+
+        所属转码组Id
+
+        :return: The group_id of this PlayInfo.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this PlayInfo.
+
+        所属转码组Id
+
+        :param group_id: The group_id of this PlayInfo.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def group_name(self):
+        """Gets the group_name of this PlayInfo.
+
+        所属转码组名称
+
+        :return: The group_name of this PlayInfo.
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        """Sets the group_name of this PlayInfo.
+
+        所属转码组名称
+
+        :param group_name: The group_name of this PlayInfo.
+        :type group_name: str
+        """
+        self._group_name = group_name
 
     @property
     def url(self):

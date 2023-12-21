@@ -29,7 +29,7 @@ class ShowVulScanPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业租户ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         """
         
@@ -45,7 +45,7 @@ class ShowVulScanPolicyRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowVulScanPolicyRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ShowVulScanPolicyRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ShowVulScanPolicyRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowVulScanPolicyRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ShowVulScanPolicyRequest.
         :type enterprise_project_id: str

@@ -21,7 +21,8 @@ class ReqDataByVideoAndIdCardImage:
         'idcard_image2': 'str',
         'video': 'str',
         'actions': 'str',
-        'nod_threshold': 'float'
+        'nod_threshold': 'float',
+        'detail': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ReqDataByVideoAndIdCardImage:
         'idcard_image2': 'idcard_image2',
         'video': 'video',
         'actions': 'actions',
-        'nod_threshold': 'nod_threshold'
+        'nod_threshold': 'nod_threshold',
+        'detail': 'detail'
     }
 
-    def __init__(self, idcard_image1=None, idcard_image2=None, video=None, actions=None, nod_threshold=None):
+    def __init__(self, idcard_image1=None, idcard_image2=None, video=None, actions=None, nod_threshold=None, detail=None):
         """ReqDataByVideoAndIdCardImage
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ReqDataByVideoAndIdCardImage:
         :type actions: str
         :param nod_threshold: 该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
         :type nod_threshold: float
+        :param detail: 响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+        :type detail: bool
         """
         
         
@@ -56,6 +60,7 @@ class ReqDataByVideoAndIdCardImage:
         self._video = None
         self._actions = None
         self._nod_threshold = None
+        self._detail = None
         self.discriminator = None
 
         self.idcard_image1 = idcard_image1
@@ -65,6 +70,8 @@ class ReqDataByVideoAndIdCardImage:
         self.actions = actions
         if nod_threshold is not None:
             self.nod_threshold = nod_threshold
+        if detail is not None:
+            self.detail = detail
 
     @property
     def idcard_image1(self):
@@ -175,6 +182,28 @@ class ReqDataByVideoAndIdCardImage:
         :type nod_threshold: float
         """
         self._nod_threshold = nod_threshold
+
+    @property
+    def detail(self):
+        """Gets the detail of this ReqDataByVideoAndIdCardImage.
+
+        响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+
+        :return: The detail of this ReqDataByVideoAndIdCardImage.
+        :rtype: bool
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        """Sets the detail of this ReqDataByVideoAndIdCardImage.
+
+        响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+
+        :param detail: The detail of this ReqDataByVideoAndIdCardImage.
+        :type detail: bool
+        """
+        self._detail = detail
 
     def to_dict(self):
         """Returns the model properties as a dict"""

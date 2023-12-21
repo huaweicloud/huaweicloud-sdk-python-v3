@@ -18,15 +18,17 @@ class NetConfig:
 
     openapi_types = {
         'vpc_id': 'str',
-        'nic_num': 'int'
+        'nic_num': 'int',
+        'allowed_address_pairs': 'list[AllowedAddressPair]'
     }
 
     attribute_map = {
         'vpc_id': 'vpc_id',
-        'nic_num': 'nic_num'
+        'nic_num': 'nic_num',
+        'allowed_address_pairs': 'allowed_address_pairs'
     }
 
-    def __init__(self, vpc_id=None, nic_num=None):
+    def __init__(self, vpc_id=None, nic_num=None, allowed_address_pairs=None):
         """NetConfig
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class NetConfig:
         :type vpc_id: str
         :param nic_num: 边缘实例绑定的网卡数量。  约束：一台边缘实例最少绑定一张网卡，最多绑定8张网卡。
         :type nic_num: int
+        :param allowed_address_pairs: - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
         """
         
         
 
         self._vpc_id = None
         self._nic_num = None
+        self._allowed_address_pairs = None
         self.discriminator = None
 
         self.vpc_id = vpc_id
         self.nic_num = nic_num
+        if allowed_address_pairs is not None:
+            self.allowed_address_pairs = allowed_address_pairs
 
     @property
     def vpc_id(self):
@@ -89,6 +96,28 @@ class NetConfig:
         :type nic_num: int
         """
         self._nic_num = nic_num
+
+    @property
+    def allowed_address_pairs(self):
+        """Gets the allowed_address_pairs of this NetConfig.
+
+        - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关
+
+        :return: The allowed_address_pairs of this NetConfig.
+        :rtype: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
+        """
+        return self._allowed_address_pairs
+
+    @allowed_address_pairs.setter
+    def allowed_address_pairs(self, allowed_address_pairs):
+        """Sets the allowed_address_pairs of this NetConfig.
+
+        - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关
+
+        :param allowed_address_pairs: The allowed_address_pairs of this NetConfig.
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
+        """
+        self._allowed_address_pairs = allowed_address_pairs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,6 +20,7 @@ class AssetInfo:
         'asset_id': 'str',
         'status': 'str',
         'description': 'str',
+        'is_multi_transcode': 'bool',
         'base_info': 'BaseInfo',
         'play_info_array': 'list[PlayInfo]'
     }
@@ -28,11 +29,12 @@ class AssetInfo:
         'asset_id': 'asset_id',
         'status': 'status',
         'description': 'description',
+        'is_multi_transcode': 'is_multi_transcode',
         'base_info': 'base_info',
         'play_info_array': 'play_info_array'
     }
 
-    def __init__(self, asset_id=None, status=None, description=None, base_info=None, play_info_array=None):
+    def __init__(self, asset_id=None, status=None, description=None, is_multi_transcode=None, base_info=None, play_info_array=None):
         """AssetInfo
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class AssetInfo:
         :type status: str
         :param description: 媒资子状态或描述信息。 - 对于媒资异常场景，描述具体的异常原因。 - 对于正常场景，描述媒资的处理信息。
         :type description: str
+        :param is_multi_transcode: 是否是多转码模式 
+        :type is_multi_transcode: bool
         :param base_info: 
         :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
         :param play_info_array: 转码文件的播放信息。 - HLS或DASH：此数组的成员个数为n+1，n为转码输出路数。 - MP4：此数组的成员个数为n，n为转码输出路数。
@@ -54,6 +58,7 @@ class AssetInfo:
         self._asset_id = None
         self._status = None
         self._description = None
+        self._is_multi_transcode = None
         self._base_info = None
         self._play_info_array = None
         self.discriminator = None
@@ -64,6 +69,8 @@ class AssetInfo:
             self.status = status
         if description is not None:
             self.description = description
+        if is_multi_transcode is not None:
+            self.is_multi_transcode = is_multi_transcode
         if base_info is not None:
             self.base_info = base_info
         if play_info_array is not None:
@@ -134,6 +141,28 @@ class AssetInfo:
         :type description: str
         """
         self._description = description
+
+    @property
+    def is_multi_transcode(self):
+        """Gets the is_multi_transcode of this AssetInfo.
+
+        是否是多转码模式 
+
+        :return: The is_multi_transcode of this AssetInfo.
+        :rtype: bool
+        """
+        return self._is_multi_transcode
+
+    @is_multi_transcode.setter
+    def is_multi_transcode(self, is_multi_transcode):
+        """Sets the is_multi_transcode of this AssetInfo.
+
+        是否是多转码模式 
+
+        :param is_multi_transcode: The is_multi_transcode of this AssetInfo.
+        :type is_multi_transcode: bool
+        """
+        self._is_multi_transcode = is_multi_transcode
 
     @property
     def base_info(self):

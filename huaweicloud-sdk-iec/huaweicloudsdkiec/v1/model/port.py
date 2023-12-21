@@ -31,7 +31,9 @@ class Port:
         'allowed_address_pairs': 'list[AllowedAddressPair]',
         'site_id': 'str',
         'dns_assignment': 'list[DnsAssignment]',
-        'dns_name': 'str'
+        'dns_name': 'str',
+        'ipv6_bandwidth_id': 'str',
+        'bindingprofile': 'object'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class Port:
         'allowed_address_pairs': 'allowed_address_pairs',
         'site_id': 'site_id',
         'dns_assignment': 'dns_assignment',
-        'dns_name': 'dns_name'
+        'dns_name': 'dns_name',
+        'ipv6_bandwidth_id': 'ipv6_bandwidth_id',
+        'bindingprofile': 'binding:profile'
     }
 
-    def __init__(self, id=None, name=None, status=None, admin_state_up=None, fixed_ips=None, mac_address=None, network_id=None, device_id=None, device_owner=None, security_groups=None, extra_dhcp_opts=None, allowed_address_pairs=None, site_id=None, dns_assignment=None, dns_name=None):
+    def __init__(self, id=None, name=None, status=None, admin_state_up=None, fixed_ips=None, mac_address=None, network_id=None, device_id=None, device_owner=None, security_groups=None, extra_dhcp_opts=None, allowed_address_pairs=None, site_id=None, dns_assignment=None, dns_name=None, ipv6_bandwidth_id=None, bindingprofile=None):
         """Port
 
         The model defined in huaweicloud sdk
@@ -79,7 +83,7 @@ class Port:
         :type security_groups: list[str]
         :param extra_dhcp_opts: DHCP的扩展属性。
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkiec.v1.ExtraDhcpOption`]
-        :param allowed_address_pairs: IP/Mac对列表。  约束：IP地址不允许为 “0.0.0.0/0”  建议：如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。
+        :param allowed_address_pairs: - 功能说明：IP/Mac对列表，allow_address_pair参见表3。 - 约束：   IP地址不允许为 “0.0.0.0/0”   如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。   如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。
         :type allowed_address_pairs: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
         :param site_id: 站点ID
         :type site_id: str
@@ -87,6 +91,10 @@ class Port:
         :type dns_assignment: list[:class:`huaweicloudsdkiec.v1.DnsAssignment`]
         :param dns_name: 主网卡默认内网DNS名称  约束：不支持设置和更新，由系统自动维护
         :type dns_name: str
+        :param ipv6_bandwidth_id: IPv6带宽ID
+        :type ipv6_bandwidth_id: str
+        :param bindingprofile: 功能说明：提供用户设置自定义信息(扩展属性)    
+        :type bindingprofile: object
         """
         
         
@@ -106,6 +114,8 @@ class Port:
         self._site_id = None
         self._dns_assignment = None
         self._dns_name = None
+        self._ipv6_bandwidth_id = None
+        self._bindingprofile = None
         self.discriminator = None
 
         if id is not None:
@@ -138,6 +148,10 @@ class Port:
             self.dns_assignment = dns_assignment
         if dns_name is not None:
             self.dns_name = dns_name
+        if ipv6_bandwidth_id is not None:
+            self.ipv6_bandwidth_id = ipv6_bandwidth_id
+        if bindingprofile is not None:
+            self.bindingprofile = bindingprofile
 
     @property
     def id(self):
@@ -385,7 +399,7 @@ class Port:
     def allowed_address_pairs(self):
         """Gets the allowed_address_pairs of this Port.
 
-        IP/Mac对列表。  约束：IP地址不允许为 “0.0.0.0/0”  建议：如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。
+        - 功能说明：IP/Mac对列表，allow_address_pair参见表3。 - 约束：   IP地址不允许为 “0.0.0.0/0”   如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。   如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。
 
         :return: The allowed_address_pairs of this Port.
         :rtype: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
@@ -396,7 +410,7 @@ class Port:
     def allowed_address_pairs(self, allowed_address_pairs):
         """Sets the allowed_address_pairs of this Port.
 
-        IP/Mac对列表。  约束：IP地址不允许为 “0.0.0.0/0”  建议：如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。
+        - 功能说明：IP/Mac对列表，allow_address_pair参见表3。 - 约束：   IP地址不允许为 “0.0.0.0/0”   如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。   如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。
 
         :param allowed_address_pairs: The allowed_address_pairs of this Port.
         :type allowed_address_pairs: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
@@ -468,6 +482,50 @@ class Port:
         :type dns_name: str
         """
         self._dns_name = dns_name
+
+    @property
+    def ipv6_bandwidth_id(self):
+        """Gets the ipv6_bandwidth_id of this Port.
+
+        IPv6带宽ID
+
+        :return: The ipv6_bandwidth_id of this Port.
+        :rtype: str
+        """
+        return self._ipv6_bandwidth_id
+
+    @ipv6_bandwidth_id.setter
+    def ipv6_bandwidth_id(self, ipv6_bandwidth_id):
+        """Sets the ipv6_bandwidth_id of this Port.
+
+        IPv6带宽ID
+
+        :param ipv6_bandwidth_id: The ipv6_bandwidth_id of this Port.
+        :type ipv6_bandwidth_id: str
+        """
+        self._ipv6_bandwidth_id = ipv6_bandwidth_id
+
+    @property
+    def bindingprofile(self):
+        """Gets the bindingprofile of this Port.
+
+        功能说明：提供用户设置自定义信息(扩展属性)    
+
+        :return: The bindingprofile of this Port.
+        :rtype: object
+        """
+        return self._bindingprofile
+
+    @bindingprofile.setter
+    def bindingprofile(self, bindingprofile):
+        """Sets the bindingprofile of this Port.
+
+        功能说明：提供用户设置自定义信息(扩展属性)    
+
+        :param bindingprofile: The bindingprofile of this Port.
+        :type bindingprofile: object
+        """
+        self._bindingprofile = bindingprofile
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -19,16 +19,24 @@ class Demand:
     openapi_types = {
         'operator': 'str',
         'demand_count': 'int',
-        'pool_id': 'str'
+        'pool_id': 'str',
+        'bandwidth_type': 'str',
+        'pool_id_v6': 'str',
+        'ipv6_bandwidth_enable': 'bool',
+        'ipv6_bandwidth_type': 'str'
     }
 
     attribute_map = {
         'operator': 'operator',
         'demand_count': 'demand_count',
-        'pool_id': 'pool_id'
+        'pool_id': 'pool_id',
+        'bandwidth_type': 'bandwidth_type',
+        'pool_id_v6': 'pool_id_v6',
+        'ipv6_bandwidth_enable': 'ipv6_bandwidth_enable',
+        'ipv6_bandwidth_type': 'ipv6_bandwidth_type'
     }
 
-    def __init__(self, operator=None, demand_count=None, pool_id=None):
+    def __init__(self, operator=None, demand_count=None, pool_id=None, bandwidth_type=None, pool_id_v6=None, ipv6_bandwidth_enable=None, ipv6_bandwidth_type=None):
         """Demand
 
         The model defined in huaweicloud sdk
@@ -39,6 +47,14 @@ class Demand:
         :type demand_count: int
         :param pool_id: 线路ID。 多线路场景下，将在该线路下创建弹性公网IP。 &gt; 覆盖规则为省级/大区时不支持指定线路ID创建边缘业务。
         :type pool_id: str
+        :param bandwidth_type: 带宽类型。 如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽
+        :type bandwidth_type: str
+        :param pool_id_v6: 指定IPv6线路，使用该线路下的子网分配IPv6端口。 如果该线路下没有关联启用IPv6的子网，则创建新的子网。
+        :type pool_id_v6: str
+        :param ipv6_bandwidth_enable: 使用IPv6带宽。 边缘实例是否开启IPv6公网访问能力。如果该IPv6线路没有可用的带宽，则创建新的带宽。
+        :type ipv6_bandwidth_enable: bool
+        :param ipv6_bandwidth_type: 带宽类型。  边缘实例开启IPv6访问公网能力后，如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽    
+        :type ipv6_bandwidth_type: str
         """
         
         
@@ -46,6 +62,10 @@ class Demand:
         self._operator = None
         self._demand_count = None
         self._pool_id = None
+        self._bandwidth_type = None
+        self._pool_id_v6 = None
+        self._ipv6_bandwidth_enable = None
+        self._ipv6_bandwidth_type = None
         self.discriminator = None
 
         if operator is not None:
@@ -53,6 +73,14 @@ class Demand:
         self.demand_count = demand_count
         if pool_id is not None:
             self.pool_id = pool_id
+        if bandwidth_type is not None:
+            self.bandwidth_type = bandwidth_type
+        if pool_id_v6 is not None:
+            self.pool_id_v6 = pool_id_v6
+        if ipv6_bandwidth_enable is not None:
+            self.ipv6_bandwidth_enable = ipv6_bandwidth_enable
+        if ipv6_bandwidth_type is not None:
+            self.ipv6_bandwidth_type = ipv6_bandwidth_type
 
     @property
     def operator(self):
@@ -119,6 +147,94 @@ class Demand:
         :type pool_id: str
         """
         self._pool_id = pool_id
+
+    @property
+    def bandwidth_type(self):
+        """Gets the bandwidth_type of this Demand.
+
+        带宽类型。 如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽
+
+        :return: The bandwidth_type of this Demand.
+        :rtype: str
+        """
+        return self._bandwidth_type
+
+    @bandwidth_type.setter
+    def bandwidth_type(self, bandwidth_type):
+        """Sets the bandwidth_type of this Demand.
+
+        带宽类型。 如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽
+
+        :param bandwidth_type: The bandwidth_type of this Demand.
+        :type bandwidth_type: str
+        """
+        self._bandwidth_type = bandwidth_type
+
+    @property
+    def pool_id_v6(self):
+        """Gets the pool_id_v6 of this Demand.
+
+        指定IPv6线路，使用该线路下的子网分配IPv6端口。 如果该线路下没有关联启用IPv6的子网，则创建新的子网。
+
+        :return: The pool_id_v6 of this Demand.
+        :rtype: str
+        """
+        return self._pool_id_v6
+
+    @pool_id_v6.setter
+    def pool_id_v6(self, pool_id_v6):
+        """Sets the pool_id_v6 of this Demand.
+
+        指定IPv6线路，使用该线路下的子网分配IPv6端口。 如果该线路下没有关联启用IPv6的子网，则创建新的子网。
+
+        :param pool_id_v6: The pool_id_v6 of this Demand.
+        :type pool_id_v6: str
+        """
+        self._pool_id_v6 = pool_id_v6
+
+    @property
+    def ipv6_bandwidth_enable(self):
+        """Gets the ipv6_bandwidth_enable of this Demand.
+
+        使用IPv6带宽。 边缘实例是否开启IPv6公网访问能力。如果该IPv6线路没有可用的带宽，则创建新的带宽。
+
+        :return: The ipv6_bandwidth_enable of this Demand.
+        :rtype: bool
+        """
+        return self._ipv6_bandwidth_enable
+
+    @ipv6_bandwidth_enable.setter
+    def ipv6_bandwidth_enable(self, ipv6_bandwidth_enable):
+        """Sets the ipv6_bandwidth_enable of this Demand.
+
+        使用IPv6带宽。 边缘实例是否开启IPv6公网访问能力。如果该IPv6线路没有可用的带宽，则创建新的带宽。
+
+        :param ipv6_bandwidth_enable: The ipv6_bandwidth_enable of this Demand.
+        :type ipv6_bandwidth_enable: bool
+        """
+        self._ipv6_bandwidth_enable = ipv6_bandwidth_enable
+
+    @property
+    def ipv6_bandwidth_type(self):
+        """Gets the ipv6_bandwidth_type of this Demand.
+
+        带宽类型。  边缘实例开启IPv6访问公网能力后，如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽    
+
+        :return: The ipv6_bandwidth_type of this Demand.
+        :rtype: str
+        """
+        return self._ipv6_bandwidth_type
+
+    @ipv6_bandwidth_type.setter
+    def ipv6_bandwidth_type(self, ipv6_bandwidth_type):
+        """Sets the ipv6_bandwidth_type of this Demand.
+
+        带宽类型。  边缘实例开启IPv6访问公网能力后，如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽    
+
+        :param ipv6_bandwidth_type: The ipv6_bandwidth_type of this Demand.
+        :type ipv6_bandwidth_type: str
+        """
+        self._ipv6_bandwidth_type = ipv6_bandwidth_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

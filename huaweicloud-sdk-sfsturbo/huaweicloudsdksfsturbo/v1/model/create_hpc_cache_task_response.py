@@ -32,7 +32,7 @@ class CreateHpcCacheTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务任务id
+        :param task_id: 任务ID
         :type task_id: str
         :param x_request_id: 
         :type x_request_id: str
@@ -53,7 +53,7 @@ class CreateHpcCacheTaskResponse(SdkResponse):
     def task_id(self):
         """Gets the task_id of this CreateHpcCacheTaskResponse.
 
-        任务任务id
+        任务ID
 
         :return: The task_id of this CreateHpcCacheTaskResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class CreateHpcCacheTaskResponse(SdkResponse):
     def task_id(self, task_id):
         """Sets the task_id of this CreateHpcCacheTaskResponse.
 
-        任务任务id
+        任务ID
 
         :param task_id: The task_id of this CreateHpcCacheTaskResponse.
         :type task_id: str

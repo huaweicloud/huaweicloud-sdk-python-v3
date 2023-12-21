@@ -244,7 +244,7 @@ class ShowInstanceResponse(SdkResponse):
         :type management_connect_address: str
         :param ssl_enable: 是否开启安全认证。 - true：开启 - false：未开启
         :type ssl_enable: bool
-        :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
         :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
         :type sasl_enabled_mechanisms: list[str]
@@ -1215,7 +1215,7 @@ class ShowInstanceResponse(SdkResponse):
     def kafka_security_protocol(self):
         """Gets the kafka_security_protocol of this ShowInstanceResponse.
 
-        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
 
         :return: The kafka_security_protocol of this ShowInstanceResponse.
         :rtype: str
@@ -1226,7 +1226,7 @@ class ShowInstanceResponse(SdkResponse):
     def kafka_security_protocol(self, kafka_security_protocol):
         """Sets the kafka_security_protocol of this ShowInstanceResponse.
 
-        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
 
         :param kafka_security_protocol: The kafka_security_protocol of this ShowInstanceResponse.
         :type kafka_security_protocol: str

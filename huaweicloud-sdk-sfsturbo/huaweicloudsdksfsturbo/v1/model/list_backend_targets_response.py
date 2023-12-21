@@ -34,9 +34,9 @@ class ListBackendTargetsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 文件系统后端存储库列表元素个数
+        :param count: 后端存储列表个数
         :type count: int
-        :param targets: 文件系统后端存储库列表
+        :param targets: 后端存储列表
         :type targets: list[:class:`huaweicloudsdksfsturbo.v1.ShowBackendTargetInfoResponseBody`]
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class ListBackendTargetsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListBackendTargetsResponse.
 
-        文件系统后端存储库列表元素个数
+        后端存储列表个数
 
         :return: The count of this ListBackendTargetsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListBackendTargetsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListBackendTargetsResponse.
 
-        文件系统后端存储库列表元素个数
+        后端存储列表个数
 
         :param count: The count of this ListBackendTargetsResponse.
         :type count: int
@@ -82,7 +82,7 @@ class ListBackendTargetsResponse(SdkResponse):
     def targets(self):
         """Gets the targets of this ListBackendTargetsResponse.
 
-        文件系统后端存储库列表
+        后端存储列表
 
         :return: The targets of this ListBackendTargetsResponse.
         :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ShowBackendTargetInfoResponseBody`]
@@ -93,7 +93,7 @@ class ListBackendTargetsResponse(SdkResponse):
     def targets(self, targets):
         """Sets the targets of this ListBackendTargetsResponse.
 
-        文件系统后端存储库列表
+        后端存储列表
 
         :param targets: The targets of this ListBackendTargetsResponse.
         :type targets: list[:class:`huaweicloudsdksfsturbo.v1.ShowBackendTargetInfoResponseBody`]

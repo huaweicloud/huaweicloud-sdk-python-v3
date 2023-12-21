@@ -44,7 +44,8 @@ class ConsistencyResultRequestBody:
         self.discriminator = None
 
         self.consistency_result = consistency_result
-        self.finished_time = finished_time
+        if finished_time is not None:
+            self.finished_time = finished_time
 
     @property
     def consistency_result(self):

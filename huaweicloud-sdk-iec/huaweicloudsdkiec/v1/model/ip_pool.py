@@ -45,7 +45,7 @@ class IpPool:
         :type site_id: str
         :param pool_id: 线路标识。
         :type pool_id: str
-        :param ip_version: IPv4[或IPv6](tag:hide)线路。  取值范围： - 4：IPv4线路 [- 6：IPv6线路](tag:hide)
+        :param ip_version: IPv4或IPv6线路。  取值范围： - 4：IPv4线路 - 6：IPv6线路
         :type ip_version: str
         :param operator: 
         :type operator: :class:`huaweicloudsdkiec.v1.Operator`
@@ -146,7 +146,7 @@ class IpPool:
     def ip_version(self):
         """Gets the ip_version of this IpPool.
 
-        IPv4[或IPv6](tag:hide)线路。  取值范围： - 4：IPv4线路 [- 6：IPv6线路](tag:hide)
+        IPv4或IPv6线路。  取值范围： - 4：IPv4线路 - 6：IPv6线路
 
         :return: The ip_version of this IpPool.
         :rtype: str
@@ -157,7 +157,7 @@ class IpPool:
     def ip_version(self, ip_version):
         """Sets the ip_version of this IpPool.
 
-        IPv4[或IPv6](tag:hide)线路。  取值范围： - 4：IPv4线路 [- 6：IPv6线路](tag:hide)
+        IPv4或IPv6线路。  取值范围： - 4：IPv4线路 - 6：IPv6线路
 
         :param ip_version: The ip_version of this IpPool.
         :type ip_version: str

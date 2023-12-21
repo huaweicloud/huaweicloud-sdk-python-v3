@@ -39,7 +39,7 @@ class FsDuInfo:
         :type path: str
         :param used_capacity: 占用容量，单位：byte
         :type used_capacity: int
-        :param file_count: 该目录下所有文件数目
+        :param file_count: 
         :type file_count: :class:`huaweicloudsdksfsturbo.v1.FsFileCount`
         :param message: 错误信息
         :type message: str
@@ -53,10 +53,14 @@ class FsDuInfo:
         self._message = None
         self.discriminator = None
 
-        self.path = path
-        self.used_capacity = used_capacity
-        self.file_count = file_count
-        self.message = message
+        if path is not None:
+            self.path = path
+        if used_capacity is not None:
+            self.used_capacity = used_capacity
+        if file_count is not None:
+            self.file_count = file_count
+        if message is not None:
+            self.message = message
 
     @property
     def path(self):
@@ -106,8 +110,6 @@ class FsDuInfo:
     def file_count(self):
         """Gets the file_count of this FsDuInfo.
 
-        该目录下所有文件数目
-
         :return: The file_count of this FsDuInfo.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FsFileCount`
         """
@@ -116,8 +118,6 @@ class FsDuInfo:
     @file_count.setter
     def file_count(self, file_count):
         """Sets the file_count of this FsDuInfo.
-
-        该目录下所有文件数目
 
         :param file_count: The file_count of this FsDuInfo.
         :type file_count: :class:`huaweicloudsdksfsturbo.v1.FsFileCount`

@@ -45,7 +45,7 @@ class RespDataByVideoAndIdCardImage:
         :type verification_message: str
         :param verification_code: 审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
         :type verification_code: int
-        :param similarity: 人像相识度。取值范围[0,100]
+        :param similarity: 人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
         :type similarity: str
         :param idcard_result: 
         :type idcard_result: :class:`huaweicloudsdkivs.v2.IdcardResult`
@@ -140,7 +140,7 @@ class RespDataByVideoAndIdCardImage:
     def similarity(self):
         """Gets the similarity of this RespDataByVideoAndIdCardImage.
 
-        人像相识度。取值范围[0,100]
+        人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
 
         :return: The similarity of this RespDataByVideoAndIdCardImage.
         :rtype: str
@@ -151,7 +151,7 @@ class RespDataByVideoAndIdCardImage:
     def similarity(self, similarity):
         """Sets the similarity of this RespDataByVideoAndIdCardImage.
 
-        人像相识度。取值范围[0,100]
+        人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
 
         :param similarity: The similarity of this RespDataByVideoAndIdCardImage.
         :type similarity: str

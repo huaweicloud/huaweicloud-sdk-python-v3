@@ -37,7 +37,7 @@ class DeleteFsTaskRequest:
         :type share_id: str
         :param feature: 任务类型。例，DU任务取值为dir-usage
         :type feature: str
-        :param task_id: 任务id
+        :param task_id: 任务ID
         :type task_id: str
         """
         
@@ -100,7 +100,7 @@ class DeleteFsTaskRequest:
     def task_id(self):
         """Gets the task_id of this DeleteFsTaskRequest.
 
-        任务id
+        任务ID
 
         :return: The task_id of this DeleteFsTaskRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class DeleteFsTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this DeleteFsTaskRequest.
 
-        任务id
+        任务ID
 
         :param task_id: The task_id of this DeleteFsTaskRequest.
         :type task_id: str

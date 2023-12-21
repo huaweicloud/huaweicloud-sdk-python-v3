@@ -26,6 +26,7 @@ class PrivateImageRepositoryInfo:
         'image_type': 'str',
         'latest_version': 'bool',
         'scan_status': 'str',
+        'scan_failed_desc': 'str',
         'image_size': 'int',
         'latest_update_time': 'int',
         'latest_scan_time': 'int',
@@ -48,6 +49,7 @@ class PrivateImageRepositoryInfo:
         'image_type': 'image_type',
         'latest_version': 'latest_version',
         'scan_status': 'scan_status',
+        'scan_failed_desc': 'scan_failed_desc',
         'image_size': 'image_size',
         'latest_update_time': 'latest_update_time',
         'latest_scan_time': 'latest_scan_time',
@@ -60,7 +62,7 @@ class PrivateImageRepositoryInfo:
         'association_images': 'association_images'
     }
 
-    def __init__(self, id=None, namespace=None, image_name=None, image_id=None, image_digest=None, image_version=None, image_type=None, latest_version=None, scan_status=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, domain_name=None, shared_status=None, scannable=None, association_images=None):
+    def __init__(self, id=None, namespace=None, image_name=None, image_id=None, image_digest=None, image_version=None, image_type=None, latest_version=None, scan_status=None, scan_failed_desc=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, domain_name=None, shared_status=None, scannable=None, association_images=None):
         """PrivateImageRepositoryInfo
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class PrivateImageRepositoryInfo:
         :type latest_version: bool
         :param scan_status: 扫描状态，包含如下2种。   - unscan ：未扫描。   - success ：扫描完成。   - scanning ：正在扫描。   - failed ：扫描失败。   - download_failed ：下载失败。   - image_oversized ：镜像超大。   - waiting_for_scan ：等待扫描。
         :type scan_status: str
+        :param scan_failed_desc: 扫描失败原因，包含如下14种。   - \&quot;unknown_error\&quot; :未知错误   - \&quot;authentication_failed\&quot;:认证失败   - \&quot;download_failed\&quot;:镜像下载失败   - \&quot;image_over_sized\&quot;:镜像大小超限   - \&quot;image_oversized\&quot;:镜像超大   - \&quot;failed_to_scan_vulnerability\&quot;:漏洞扫描失败      - \&quot;failed_to_scan_file\&quot;:文件扫描失败   - \&quot;failed_to_scan_software\&quot;:软件扫描失败   - \&quot;failed_to_check_sensitive_information\&quot;:敏感信息核查失败   - \&quot;failed_to_check_baseline\&quot;:基线检查失败   - \&quot;failed_to_check_software_compliance\&quot;:软件合规检查失败   - \&quot;failed_to_query_basic_image_information\&quot;:基础镜像信息查询失败   - \&quot;response_timed_out\&quot;:响应超时   - \&quot;database_error\&quot; : 数据库错误   - \&quot;failed_to_send_the_scan_request\&quot; : 发送扫描请求失败
+        :type scan_failed_desc: str
         :param image_size: 镜像大小
         :type image_size: int
         :param latest_update_time: 镜像版本最后更新时间
@@ -116,6 +120,7 @@ class PrivateImageRepositoryInfo:
         self._image_type = None
         self._latest_version = None
         self._scan_status = None
+        self._scan_failed_desc = None
         self._image_size = None
         self._latest_update_time = None
         self._latest_scan_time = None
@@ -146,6 +151,8 @@ class PrivateImageRepositoryInfo:
             self.latest_version = latest_version
         if scan_status is not None:
             self.scan_status = scan_status
+        if scan_failed_desc is not None:
+            self.scan_failed_desc = scan_failed_desc
         if image_size is not None:
             self.image_size = image_size
         if latest_update_time is not None:
@@ -364,6 +371,28 @@ class PrivateImageRepositoryInfo:
         :type scan_status: str
         """
         self._scan_status = scan_status
+
+    @property
+    def scan_failed_desc(self):
+        """Gets the scan_failed_desc of this PrivateImageRepositoryInfo.
+
+        扫描失败原因，包含如下14种。   - \"unknown_error\" :未知错误   - \"authentication_failed\":认证失败   - \"download_failed\":镜像下载失败   - \"image_over_sized\":镜像大小超限   - \"image_oversized\":镜像超大   - \"failed_to_scan_vulnerability\":漏洞扫描失败      - \"failed_to_scan_file\":文件扫描失败   - \"failed_to_scan_software\":软件扫描失败   - \"failed_to_check_sensitive_information\":敏感信息核查失败   - \"failed_to_check_baseline\":基线检查失败   - \"failed_to_check_software_compliance\":软件合规检查失败   - \"failed_to_query_basic_image_information\":基础镜像信息查询失败   - \"response_timed_out\":响应超时   - \"database_error\" : 数据库错误   - \"failed_to_send_the_scan_request\" : 发送扫描请求失败
+
+        :return: The scan_failed_desc of this PrivateImageRepositoryInfo.
+        :rtype: str
+        """
+        return self._scan_failed_desc
+
+    @scan_failed_desc.setter
+    def scan_failed_desc(self, scan_failed_desc):
+        """Sets the scan_failed_desc of this PrivateImageRepositoryInfo.
+
+        扫描失败原因，包含如下14种。   - \"unknown_error\" :未知错误   - \"authentication_failed\":认证失败   - \"download_failed\":镜像下载失败   - \"image_over_sized\":镜像大小超限   - \"image_oversized\":镜像超大   - \"failed_to_scan_vulnerability\":漏洞扫描失败      - \"failed_to_scan_file\":文件扫描失败   - \"failed_to_scan_software\":软件扫描失败   - \"failed_to_check_sensitive_information\":敏感信息核查失败   - \"failed_to_check_baseline\":基线检查失败   - \"failed_to_check_software_compliance\":软件合规检查失败   - \"failed_to_query_basic_image_information\":基础镜像信息查询失败   - \"response_timed_out\":响应超时   - \"database_error\" : 数据库错误   - \"failed_to_send_the_scan_request\" : 发送扫描请求失败
+
+        :param scan_failed_desc: The scan_failed_desc of this PrivateImageRepositoryInfo.
+        :type scan_failed_desc: str
+        """
+        self._scan_failed_desc = scan_failed_desc
 
     @property
     def image_size(self):

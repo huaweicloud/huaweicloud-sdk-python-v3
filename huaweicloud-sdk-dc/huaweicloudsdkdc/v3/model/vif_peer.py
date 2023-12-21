@@ -34,7 +34,9 @@ class VifPeer:
         'bgp_status': 'str',
         'status': 'str',
         'vif_id': 'str',
-        'receive_route_num': 'int'
+        'receive_route_num': 'int',
+        'enable_nqa': 'bool',
+        'enable_bfd': 'bool'
     }
 
     attribute_map = {
@@ -55,10 +57,12 @@ class VifPeer:
         'bgp_status': 'bgp_status',
         'status': 'status',
         'vif_id': 'vif_id',
-        'receive_route_num': 'receive_route_num'
+        'receive_route_num': 'receive_route_num',
+        'enable_nqa': 'enable_nqa',
+        'enable_bfd': 'enable_bfd'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, address_family=None, local_gateway_ip=None, remote_gateway_ip=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, device_id=None, bgp_route_limit=None, bgp_status=None, status=None, vif_id=None, receive_route_num=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, address_family=None, local_gateway_ip=None, remote_gateway_ip=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, device_id=None, bgp_route_limit=None, bgp_status=None, status=None, vif_id=None, receive_route_num=None, enable_nqa=None, enable_bfd=None):
         """VifPeer
 
         The model defined in huaweicloud sdk
@@ -99,6 +103,10 @@ class VifPeer:
         :type vif_id: str
         :param receive_route_num: 路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入华为云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
         :type receive_route_num: int
+        :param enable_nqa: 是否使能nqa功能：true或false
+        :type enable_nqa: bool
+        :param enable_bfd: 是否使能bfd功能：true或false
+        :type enable_bfd: bool
         """
         
         
@@ -121,6 +129,8 @@ class VifPeer:
         self._status = None
         self._vif_id = None
         self._receive_route_num = None
+        self._enable_nqa = None
+        self._enable_bfd = None
         self.discriminator = None
 
         if id is not None:
@@ -159,6 +169,10 @@ class VifPeer:
             self.vif_id = vif_id
         if receive_route_num is not None:
             self.receive_route_num = receive_route_num
+        if enable_nqa is not None:
+            self.enable_nqa = enable_nqa
+        if enable_bfd is not None:
+            self.enable_bfd = enable_bfd
 
     @property
     def id(self):
@@ -555,6 +569,50 @@ class VifPeer:
         :type receive_route_num: int
         """
         self._receive_route_num = receive_route_num
+
+    @property
+    def enable_nqa(self):
+        """Gets the enable_nqa of this VifPeer.
+
+        是否使能nqa功能：true或false
+
+        :return: The enable_nqa of this VifPeer.
+        :rtype: bool
+        """
+        return self._enable_nqa
+
+    @enable_nqa.setter
+    def enable_nqa(self, enable_nqa):
+        """Sets the enable_nqa of this VifPeer.
+
+        是否使能nqa功能：true或false
+
+        :param enable_nqa: The enable_nqa of this VifPeer.
+        :type enable_nqa: bool
+        """
+        self._enable_nqa = enable_nqa
+
+    @property
+    def enable_bfd(self):
+        """Gets the enable_bfd of this VifPeer.
+
+        是否使能bfd功能：true或false
+
+        :return: The enable_bfd of this VifPeer.
+        :rtype: bool
+        """
+        return self._enable_bfd
+
+    @enable_bfd.setter
+    def enable_bfd(self, enable_bfd):
+        """Sets the enable_bfd of this VifPeer.
+
+        是否使能bfd功能：true或false
+
+        :param enable_bfd: The enable_bfd of this VifPeer.
+        :type enable_bfd: bool
+        """
+        self._enable_bfd = enable_bfd
 
     def to_dict(self):
         """Returns the model properties as a dict"""

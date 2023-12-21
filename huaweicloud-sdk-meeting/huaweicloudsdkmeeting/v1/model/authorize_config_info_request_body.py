@@ -73,7 +73,7 @@ class AuthorizeConfigInfoRequestBody:
         :type get_token_url: str
         :param client_id: APP ID。 &gt; 开启SSO登录时必填 
         :type client_id: str
-        :param client_secret: APP秘钥。 &gt; 开启SSO登录时，若不修改APP秘钥，则置空即可 
+        :param client_secret: APP秘钥。 &gt; 开启SSO登录时，当getTokenUrl或者getUserInfoUrl有变更时必填 &gt; 开启SSO登录时，当getTokenUrl和getUserInfoUrl未变更时，且不修改APP秘钥，则置空即可 
         :type client_secret: str
         :param scope: 授权范围。 * openid：OAuth2.0的OIDC 
         :type scope: str
@@ -273,7 +273,7 @@ class AuthorizeConfigInfoRequestBody:
     def client_secret(self):
         """Gets the client_secret of this AuthorizeConfigInfoRequestBody.
 
-        APP秘钥。 > 开启SSO登录时，若不修改APP秘钥，则置空即可 
+        APP秘钥。 > 开启SSO登录时，当getTokenUrl或者getUserInfoUrl有变更时必填 > 开启SSO登录时，当getTokenUrl和getUserInfoUrl未变更时，且不修改APP秘钥，则置空即可 
 
         :return: The client_secret of this AuthorizeConfigInfoRequestBody.
         :rtype: str
@@ -284,7 +284,7 @@ class AuthorizeConfigInfoRequestBody:
     def client_secret(self, client_secret):
         """Sets the client_secret of this AuthorizeConfigInfoRequestBody.
 
-        APP秘钥。 > 开启SSO登录时，若不修改APP秘钥，则置空即可 
+        APP秘钥。 > 开启SSO登录时，当getTokenUrl或者getUserInfoUrl有变更时必填 > 开启SSO登录时，当getTokenUrl和getUserInfoUrl未变更时，且不修改APP秘钥，则置空即可 
 
         :param client_secret: The client_secret of this AuthorizeConfigInfoRequestBody.
         :type client_secret: str

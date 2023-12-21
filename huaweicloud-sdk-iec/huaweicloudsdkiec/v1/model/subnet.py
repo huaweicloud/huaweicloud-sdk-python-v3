@@ -30,7 +30,12 @@ class Subnet:
         'site_id': 'str',
         'site_info': 'str',
         'neutron_network_id': 'str',
-        'neutron_subnet_id': 'str'
+        'neutron_subnet_id': 'str',
+        'cidr_v6': 'str',
+        'ipv6_enable': 'bool',
+        'pool_id': 'str',
+        'neutron_subnet_id_v6': 'str',
+        'gateway_ip_v6': 'str'
     }
 
     attribute_map = {
@@ -47,10 +52,15 @@ class Subnet:
         'site_id': 'site_id',
         'site_info': 'site_info',
         'neutron_network_id': 'neutron_network_id',
-        'neutron_subnet_id': 'neutron_subnet_id'
+        'neutron_subnet_id': 'neutron_subnet_id',
+        'cidr_v6': 'cidr_v6',
+        'ipv6_enable': 'ipv6_enable',
+        'pool_id': 'pool_id',
+        'neutron_subnet_id_v6': 'neutron_subnet_id_v6',
+        'gateway_ip_v6': 'gateway_ip_v6'
     }
 
-    def __init__(self, id=None, name=None, cidr=None, dns_list=None, gateway_ip=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, status=None, vpc_id=None, site_id=None, site_info=None, neutron_network_id=None, neutron_subnet_id=None):
+    def __init__(self, id=None, name=None, cidr=None, dns_list=None, gateway_ip=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, status=None, vpc_id=None, site_id=None, site_info=None, neutron_network_id=None, neutron_subnet_id=None, cidr_v6=None, ipv6_enable=None, pool_id=None, neutron_subnet_id_v6=None, gateway_ip_v6=None):
         """Subnet
 
         The model defined in huaweicloud sdk
@@ -83,6 +93,16 @@ class Subnet:
         :type neutron_network_id: str
         :param neutron_subnet_id: 对应子网（OpenStack Neutron接口） id。
         :type neutron_subnet_id: str
+        :param cidr_v6: IPv6子网的网段，如果子网为IPv4子网，则不返回此参数
+        :type cidr_v6: str
+        :param ipv6_enable: 是否是IPv6子网  取值范围：true，false
+        :type ipv6_enable: bool
+        :param pool_id: IPv6线路ID，如果子网为IPv4子网，则不返回此参数。
+        :type pool_id: str
+        :param neutron_subnet_id_v6: 对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数。
+        :type neutron_subnet_id_v6: str
+        :param gateway_ip_v6: IPv6子网的网关，如果子网为IPv4子网，则不返回此参数。
+        :type gateway_ip_v6: str
         """
         
         
@@ -101,6 +121,11 @@ class Subnet:
         self._site_info = None
         self._neutron_network_id = None
         self._neutron_subnet_id = None
+        self._cidr_v6 = None
+        self._ipv6_enable = None
+        self._pool_id = None
+        self._neutron_subnet_id_v6 = None
+        self._gateway_ip_v6 = None
         self.discriminator = None
 
         if id is not None:
@@ -131,6 +156,16 @@ class Subnet:
             self.neutron_network_id = neutron_network_id
         if neutron_subnet_id is not None:
             self.neutron_subnet_id = neutron_subnet_id
+        if cidr_v6 is not None:
+            self.cidr_v6 = cidr_v6
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if pool_id is not None:
+            self.pool_id = pool_id
+        if neutron_subnet_id_v6 is not None:
+            self.neutron_subnet_id_v6 = neutron_subnet_id_v6
+        if gateway_ip_v6 is not None:
+            self.gateway_ip_v6 = gateway_ip_v6
 
     @property
     def id(self):
@@ -439,6 +474,116 @@ class Subnet:
         :type neutron_subnet_id: str
         """
         self._neutron_subnet_id = neutron_subnet_id
+
+    @property
+    def cidr_v6(self):
+        """Gets the cidr_v6 of this Subnet.
+
+        IPv6子网的网段，如果子网为IPv4子网，则不返回此参数
+
+        :return: The cidr_v6 of this Subnet.
+        :rtype: str
+        """
+        return self._cidr_v6
+
+    @cidr_v6.setter
+    def cidr_v6(self, cidr_v6):
+        """Sets the cidr_v6 of this Subnet.
+
+        IPv6子网的网段，如果子网为IPv4子网，则不返回此参数
+
+        :param cidr_v6: The cidr_v6 of this Subnet.
+        :type cidr_v6: str
+        """
+        self._cidr_v6 = cidr_v6
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this Subnet.
+
+        是否是IPv6子网  取值范围：true，false
+
+        :return: The ipv6_enable of this Subnet.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this Subnet.
+
+        是否是IPv6子网  取值范围：true，false
+
+        :param ipv6_enable: The ipv6_enable of this Subnet.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def pool_id(self):
+        """Gets the pool_id of this Subnet.
+
+        IPv6线路ID，如果子网为IPv4子网，则不返回此参数。
+
+        :return: The pool_id of this Subnet.
+        :rtype: str
+        """
+        return self._pool_id
+
+    @pool_id.setter
+    def pool_id(self, pool_id):
+        """Sets the pool_id of this Subnet.
+
+        IPv6线路ID，如果子网为IPv4子网，则不返回此参数。
+
+        :param pool_id: The pool_id of this Subnet.
+        :type pool_id: str
+        """
+        self._pool_id = pool_id
+
+    @property
+    def neutron_subnet_id_v6(self):
+        """Gets the neutron_subnet_id_v6 of this Subnet.
+
+        对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数。
+
+        :return: The neutron_subnet_id_v6 of this Subnet.
+        :rtype: str
+        """
+        return self._neutron_subnet_id_v6
+
+    @neutron_subnet_id_v6.setter
+    def neutron_subnet_id_v6(self, neutron_subnet_id_v6):
+        """Sets the neutron_subnet_id_v6 of this Subnet.
+
+        对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数。
+
+        :param neutron_subnet_id_v6: The neutron_subnet_id_v6 of this Subnet.
+        :type neutron_subnet_id_v6: str
+        """
+        self._neutron_subnet_id_v6 = neutron_subnet_id_v6
+
+    @property
+    def gateway_ip_v6(self):
+        """Gets the gateway_ip_v6 of this Subnet.
+
+        IPv6子网的网关，如果子网为IPv4子网，则不返回此参数。
+
+        :return: The gateway_ip_v6 of this Subnet.
+        :rtype: str
+        """
+        return self._gateway_ip_v6
+
+    @gateway_ip_v6.setter
+    def gateway_ip_v6(self, gateway_ip_v6):
+        """Sets the gateway_ip_v6 of this Subnet.
+
+        IPv6子网的网关，如果子网为IPv4子网，则不返回此参数。
+
+        :param gateway_ip_v6: The gateway_ip_v6 of this Subnet.
+        :type gateway_ip_v6: str
+        """
+        self._gateway_ip_v6 = gateway_ip_v6
 
     def to_dict(self):
         """Returns the model properties as a dict"""

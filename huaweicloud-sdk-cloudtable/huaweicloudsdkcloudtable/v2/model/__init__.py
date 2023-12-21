@@ -9,6 +9,9 @@ from huaweicloudsdkcloudtable.v2.model.cluster import Cluster
 from huaweicloudsdkcloudtable.v2.model.cluster_detail import ClusterDetail
 from huaweicloudsdkcloudtable.v2.model.create_cloud_table_cluster_request import CreateCloudTableClusterRequest
 from huaweicloudsdkcloudtable.v2.model.create_cloud_table_cluster_response import CreateCloudTableClusterResponse
+from huaweicloudsdkcloudtable.v2.model.create_cluster_instance_body import CreateClusterInstanceBody
+from huaweicloudsdkcloudtable.v2.model.create_cluster_req_body import CreateClusterReqBody
+from huaweicloudsdkcloudtable.v2.model.create_cluster_req_body_cluster_info import CreateClusterReqBodyClusterInfo
 from huaweicloudsdkcloudtable.v2.model.create_cluster_request import CreateClusterRequest
 from huaweicloudsdkcloudtable.v2.model.create_cluster_request_body import CreateClusterRequestBody
 from huaweicloudsdkcloudtable.v2.model.create_cluster_response import CreateClusterResponse
@@ -26,7 +29,7 @@ from huaweicloudsdkcloudtable.v2.model.hbase_modify_setting_v2_req import HbaseM
 from huaweicloudsdkcloudtable.v2.model.instance import Instance
 from huaweicloudsdkcloudtable.v2.model.list_clusters_request import ListClustersRequest
 from huaweicloudsdkcloudtable.v2.model.list_clusters_response import ListClustersResponse
-from huaweicloudsdkcloudtable.v2.model.nics import Nics
+from huaweicloudsdkcloudtable.v2.model.nic import Nic
 from huaweicloudsdkcloudtable.v2.model.parameter_info import ParameterInfo
 from huaweicloudsdkcloudtable.v2.model.reboot_cloud_table_cluster_request import RebootCloudTableClusterRequest
 from huaweicloudsdkcloudtable.v2.model.reboot_cloud_table_cluster_response import RebootCloudTableClusterResponse

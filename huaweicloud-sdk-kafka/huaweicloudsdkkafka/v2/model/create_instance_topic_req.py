@@ -43,7 +43,7 @@ class CreateInstanceTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param id: topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        :param id: topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
         :type id: str
         :param replication: 副本数，配置数据的可靠性。 取值范围：1-3。
         :type replication: int
@@ -93,7 +93,7 @@ class CreateInstanceTopicReq:
     def id(self):
         """Gets the id of this CreateInstanceTopicReq.
 
-        topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
 
         :return: The id of this CreateInstanceTopicReq.
         :rtype: str
@@ -104,7 +104,7 @@ class CreateInstanceTopicReq:
     def id(self, id):
         """Sets the id of this CreateInstanceTopicReq.
 
-        topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
 
         :param id: The id of this CreateInstanceTopicReq.
         :type id: str

@@ -41,7 +41,7 @@ class StandardRespDataByNameAndId:
         :type verification_message: str
         :param verification_code: 审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
         :type verification_code: int
-        :param similarity: 人像相识度。取值范围[0,100]
+        :param similarity: 人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
         :type similarity: str
         """
         
@@ -128,7 +128,7 @@ class StandardRespDataByNameAndId:
     def similarity(self):
         """Gets the similarity of this StandardRespDataByNameAndId.
 
-        人像相识度。取值范围[0,100]
+        人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
 
         :return: The similarity of this StandardRespDataByNameAndId.
         :rtype: str
@@ -139,7 +139,7 @@ class StandardRespDataByNameAndId:
     def similarity(self, similarity):
         """Sets the similarity of this StandardRespDataByNameAndId.
 
-        人像相识度。取值范围[0,100]
+        人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
 
         :param similarity: The similarity of this StandardRespDataByNameAndId.
         :type similarity: str
