@@ -1,3 +1,33 @@
+# 3.1.74 2023-12-22
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowTrackerConfig**
+    - 响应参数变更
+      - `+ channel.obs.bucket_prefix`
+  - **CreateTrackerConfig**
+    - 请求参数变更
+      - `+ channel.obs.bucket_prefix`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowGroups**
+    - 响应参数变更
+      - `* group.group_message_offsets.lag: int32 -> int64`
+  - **ShowInstanceTopicDetail**
+    - 响应参数变更
+      - `* partitions.replicas.lag: int32 -> int64`
+
 # 3.1.73 2023-12-21
 
 ### HuaweiCloud SDK AS
