@@ -18,40 +18,47 @@ class ControlSmartLiveReq:
 
     openapi_types = {
         'command': 'str',
-        'params': 'object'
+        'params': 'object',
+        'review_config': 'ReviewConfig'
     }
 
     attribute_map = {
         'command': 'command',
-        'params': 'params'
+        'params': 'params',
+        'review_config': 'review_config'
     }
 
-    def __init__(self, command=None, params=None):
+    def __init__(self, command=None, params=None, review_config=None):
         """ControlSmartLiveReq
 
         The model defined in huaweicloud sdk
 
-        :param command: 命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scence_scripts - INSERT_PLAY_ADUIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo
+        :param command: 命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：PlayTextInfo - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scence_scripts - INSERT_PLAY_AUDIO:插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - SHOW_LAYER：显示导播素材，用于直播导播。params结构定义：LiveGuideRuleInfo
         :type command: str
         :param params: 命令参数。
         :type params: object
+        :param review_config: 
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         """
         
         
 
         self._command = None
         self._params = None
+        self._review_config = None
         self.discriminator = None
 
         self.command = command
         if params is not None:
             self.params = params
+        if review_config is not None:
+            self.review_config = review_config
 
     @property
     def command(self):
         """Gets the command of this ControlSmartLiveReq.
 
-        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scence_scripts - INSERT_PLAY_ADUIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo
+        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：PlayTextInfo - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scence_scripts - INSERT_PLAY_AUDIO:插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - SHOW_LAYER：显示导播素材，用于直播导播。params结构定义：LiveGuideRuleInfo
 
         :return: The command of this ControlSmartLiveReq.
         :rtype: str
@@ -62,7 +69,7 @@ class ControlSmartLiveReq:
     def command(self, command):
         """Sets the command of this ControlSmartLiveReq.
 
-        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scence_scripts - INSERT_PLAY_ADUIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo
+        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：PlayTextInfo - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scence_scripts - INSERT_PLAY_AUDIO:插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - SHOW_LAYER：显示导播素材，用于直播导播。params结构定义：LiveGuideRuleInfo
 
         :param command: The command of this ControlSmartLiveReq.
         :type command: str
@@ -90,6 +97,24 @@ class ControlSmartLiveReq:
         :type params: object
         """
         self._params = params
+
+    @property
+    def review_config(self):
+        """Gets the review_config of this ControlSmartLiveReq.
+
+        :return: The review_config of this ControlSmartLiveReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        return self._review_config
+
+    @review_config.setter
+    def review_config(self, review_config):
+        """Sets the review_config of this ControlSmartLiveReq.
+
+        :param review_config: The review_config of this ControlSmartLiveReq.
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        self._review_config = review_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

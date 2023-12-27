@@ -35,7 +35,7 @@ class ListProductsRespHourly:
 
         :param name: 消息引擎的名称，该字段显示为kafka。
         :type name: str
-        :param version: 消息引擎的版本，当前仅支持1.1.0和2.3.0。
+        :param version: 消息引擎的版本，当前支持1.1.0、2.3.0和2.7。
         :type version: str
         :param values: 产品规格列表。
         :type values: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespValues`]
@@ -81,7 +81,7 @@ class ListProductsRespHourly:
     def version(self):
         """Gets the version of this ListProductsRespHourly.
 
-        消息引擎的版本，当前仅支持1.1.0和2.3.0。
+        消息引擎的版本，当前支持1.1.0、2.3.0和2.7。
 
         :return: The version of this ListProductsRespHourly.
         :rtype: str
@@ -92,7 +92,7 @@ class ListProductsRespHourly:
     def version(self, version):
         """Sets the version of this ListProductsRespHourly.
 
-        消息引擎的版本，当前仅支持1.1.0和2.3.0。
+        消息引擎的版本，当前支持1.1.0、2.3.0和2.7。
 
         :param version: The version of this ListProductsRespHourly.
         :type version: str

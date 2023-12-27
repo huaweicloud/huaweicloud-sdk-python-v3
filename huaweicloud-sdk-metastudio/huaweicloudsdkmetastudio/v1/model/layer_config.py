@@ -18,6 +18,7 @@ class LayerConfig:
 
     openapi_types = {
         'layer_type': 'str',
+        'group_id': 'str',
         'position': 'LayerPositionConfig',
         'size': 'LayerSizeConfig',
         'image_config': 'ImageLayerConfig',
@@ -27,6 +28,7 @@ class LayerConfig:
 
     attribute_map = {
         'layer_type': 'layer_type',
+        'group_id': 'group_id',
         'position': 'position',
         'size': 'size',
         'image_config': 'image_config',
@@ -34,13 +36,15 @@ class LayerConfig:
         'text_config': 'text_config'
     }
 
-    def __init__(self, layer_type=None, position=None, size=None, image_config=None, video_config=None, text_config=None):
+    def __init__(self, layer_type=None, group_id=None, position=None, size=None, image_config=None, video_config=None, text_config=None):
         """LayerConfig
 
         The model defined in huaweicloud sdk
 
-        :param layer_type: 图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层
+        :param layer_type: 图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 素材文字图层
         :type layer_type: str
+        :param group_id: 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。
+        :type group_id: str
         :param position: 
         :type position: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
         :param size: 
@@ -56,6 +60,7 @@ class LayerConfig:
         
 
         self._layer_type = None
+        self._group_id = None
         self._position = None
         self._size = None
         self._image_config = None
@@ -64,6 +69,8 @@ class LayerConfig:
         self.discriminator = None
 
         self.layer_type = layer_type
+        if group_id is not None:
+            self.group_id = group_id
         self.position = position
         if size is not None:
             self.size = size
@@ -78,7 +85,7 @@ class LayerConfig:
     def layer_type(self):
         """Gets the layer_type of this LayerConfig.
 
-        图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层
+        图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 素材文字图层
 
         :return: The layer_type of this LayerConfig.
         :rtype: str
@@ -89,12 +96,34 @@ class LayerConfig:
     def layer_type(self, layer_type):
         """Sets the layer_type of this LayerConfig.
 
-        图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层
+        图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 素材文字图层
 
         :param layer_type: The layer_type of this LayerConfig.
         :type layer_type: str
         """
         self._layer_type = layer_type
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this LayerConfig.
+
+        多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。
+
+        :return: The group_id of this LayerConfig.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this LayerConfig.
+
+        多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。
+
+        :param group_id: The group_id of this LayerConfig.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def position(self):

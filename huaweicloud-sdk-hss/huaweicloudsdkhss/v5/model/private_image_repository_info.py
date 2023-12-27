@@ -36,6 +36,9 @@ class PrivateImageRepositoryInfo:
         'domain_name': 'str',
         'shared_status': 'str',
         'scannable': 'bool',
+        'instance_name': 'str',
+        'instance_id': 'str',
+        'instance_url': 'str',
         'association_images': 'list[AssociateImages]'
     }
 
@@ -59,10 +62,13 @@ class PrivateImageRepositoryInfo:
         'domain_name': 'domain_name',
         'shared_status': 'shared_status',
         'scannable': 'scannable',
+        'instance_name': 'instance_name',
+        'instance_id': 'instance_id',
+        'instance_url': 'instance_url',
         'association_images': 'association_images'
     }
 
-    def __init__(self, id=None, namespace=None, image_name=None, image_id=None, image_digest=None, image_version=None, image_type=None, latest_version=None, scan_status=None, scan_failed_desc=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, domain_name=None, shared_status=None, scannable=None, association_images=None):
+    def __init__(self, id=None, namespace=None, image_name=None, image_id=None, image_digest=None, image_version=None, image_type=None, latest_version=None, scan_status=None, scan_failed_desc=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, domain_name=None, shared_status=None, scannable=None, instance_name=None, instance_id=None, instance_url=None, association_images=None):
         """PrivateImageRepositoryInfo
 
         The model defined in huaweicloud sdk
@@ -105,6 +111,12 @@ class PrivateImageRepositoryInfo:
         :type shared_status: str
         :param scannable: 是否可扫描
         :type scannable: bool
+        :param instance_name: 企业实例名称
+        :type instance_name: str
+        :param instance_id: 企业实例ID
+        :type instance_id: str
+        :param instance_url: 企业镜像URL
+        :type instance_url: str
         :param association_images: 多架构关联镜像信息
         :type association_images: list[:class:`huaweicloudsdkhss.v5.AssociateImages`]
         """
@@ -130,6 +142,9 @@ class PrivateImageRepositoryInfo:
         self._domain_name = None
         self._shared_status = None
         self._scannable = None
+        self._instance_name = None
+        self._instance_id = None
+        self._instance_url = None
         self._association_images = None
         self.discriminator = None
 
@@ -171,6 +186,12 @@ class PrivateImageRepositoryInfo:
             self.shared_status = shared_status
         if scannable is not None:
             self.scannable = scannable
+        if instance_name is not None:
+            self.instance_name = instance_name
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if instance_url is not None:
+            self.instance_url = instance_url
         if association_images is not None:
             self.association_images = association_images
 
@@ -591,6 +612,72 @@ class PrivateImageRepositoryInfo:
         :type scannable: bool
         """
         self._scannable = scannable
+
+    @property
+    def instance_name(self):
+        """Gets the instance_name of this PrivateImageRepositoryInfo.
+
+        企业实例名称
+
+        :return: The instance_name of this PrivateImageRepositoryInfo.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        """Sets the instance_name of this PrivateImageRepositoryInfo.
+
+        企业实例名称
+
+        :param instance_name: The instance_name of this PrivateImageRepositoryInfo.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this PrivateImageRepositoryInfo.
+
+        企业实例ID
+
+        :return: The instance_id of this PrivateImageRepositoryInfo.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this PrivateImageRepositoryInfo.
+
+        企业实例ID
+
+        :param instance_id: The instance_id of this PrivateImageRepositoryInfo.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_url(self):
+        """Gets the instance_url of this PrivateImageRepositoryInfo.
+
+        企业镜像URL
+
+        :return: The instance_url of this PrivateImageRepositoryInfo.
+        :rtype: str
+        """
+        return self._instance_url
+
+    @instance_url.setter
+    def instance_url(self, instance_url):
+        """Sets the instance_url of this PrivateImageRepositoryInfo.
+
+        企业镜像URL
+
+        :param instance_url: The instance_url of this PrivateImageRepositoryInfo.
+        :type instance_url: str
+        """
+        self._instance_url = instance_url
 
     @property
     def association_images(self):

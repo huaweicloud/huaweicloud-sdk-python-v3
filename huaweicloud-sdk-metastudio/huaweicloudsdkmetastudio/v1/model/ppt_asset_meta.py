@@ -19,6 +19,7 @@ class PPTAssetMeta:
     openapi_types = {
         'auto_analysis': 'bool',
         'ppt_analysis_status': 'str',
+        'error_info': 'ErrorResponse',
         'page_count': 'int',
         'pages': 'list[PPTPageInfo]'
     }
@@ -26,11 +27,12 @@ class PPTAssetMeta:
     attribute_map = {
         'auto_analysis': 'auto_analysis',
         'ppt_analysis_status': 'ppt_analysis_status',
+        'error_info': 'error_info',
         'page_count': 'page_count',
         'pages': 'pages'
     }
 
-    def __init__(self, auto_analysis=None, ppt_analysis_status=None, page_count=None, pages=None):
+    def __init__(self, auto_analysis=None, ppt_analysis_status=None, error_info=None, page_count=None, pages=None):
         """PPTAssetMeta
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class PPTAssetMeta:
         :type auto_analysis: bool
         :param ppt_analysis_status: PPT解析状态。 * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消
         :type ppt_analysis_status: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         :param page_count: PPT页面总数。
         :type page_count: int
         :param pages: PPT页面图片。
@@ -49,6 +53,7 @@ class PPTAssetMeta:
 
         self._auto_analysis = None
         self._ppt_analysis_status = None
+        self._error_info = None
         self._page_count = None
         self._pages = None
         self.discriminator = None
@@ -57,6 +62,8 @@ class PPTAssetMeta:
             self.auto_analysis = auto_analysis
         if ppt_analysis_status is not None:
             self.ppt_analysis_status = ppt_analysis_status
+        if error_info is not None:
+            self.error_info = error_info
         if page_count is not None:
             self.page_count = page_count
         if pages is not None:
@@ -105,6 +112,24 @@ class PPTAssetMeta:
         :type ppt_analysis_status: str
         """
         self._ppt_analysis_status = ppt_analysis_status
+
+    @property
+    def error_info(self):
+        """Gets the error_info of this PPTAssetMeta.
+
+        :return: The error_info of this PPTAssetMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        """Sets the error_info of this PPTAssetMeta.
+
+        :param error_info: The error_info of this PPTAssetMeta.
+        :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        """
+        self._error_info = error_info
 
     @property
     def page_count(self):

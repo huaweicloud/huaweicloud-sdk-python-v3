@@ -19,6 +19,7 @@ class UpdateSqlAlarmRuleRequestBody:
     openapi_types = {
         'sql_alarm_rule_id': 'str',
         'sql_alarm_rule_name': 'str',
+        'alarm_rule_alias': 'str',
         'is_css_sql': 'bool',
         'sql_alarm_rule_description': 'str',
         'sql_requests': 'list[SqlRequest]',
@@ -40,6 +41,7 @@ class UpdateSqlAlarmRuleRequestBody:
     attribute_map = {
         'sql_alarm_rule_id': 'sql_alarm_rule_id',
         'sql_alarm_rule_name': 'sql_alarm_rule_name',
+        'alarm_rule_alias': 'alarm_rule_alias',
         'is_css_sql': 'is_css_sql',
         'sql_alarm_rule_description': 'sql_alarm_rule_description',
         'sql_requests': 'sql_requests',
@@ -58,7 +60,7 @@ class UpdateSqlAlarmRuleRequestBody:
         'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, is_css_sql=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, sql_alarm_send_code=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
+    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, sql_alarm_send_code=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
         """UpdateSqlAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class UpdateSqlAlarmRuleRequestBody:
         :type sql_alarm_rule_id: str
         :param sql_alarm_rule_name: SQL告警名称
         :type sql_alarm_rule_name: str
+        :param alarm_rule_alias: 规则名称
+        :type alarm_rule_alias: str
         :param is_css_sql: 是否管道符sql查询
         :type is_css_sql: bool
         :param sql_alarm_rule_description: SQL告警信息描述
@@ -105,6 +109,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
         self._sql_alarm_rule_id = None
         self._sql_alarm_rule_name = None
+        self._alarm_rule_alias = None
         self._is_css_sql = None
         self._sql_alarm_rule_description = None
         self._sql_requests = None
@@ -125,6 +130,8 @@ class UpdateSqlAlarmRuleRequestBody:
 
         self.sql_alarm_rule_id = sql_alarm_rule_id
         self.sql_alarm_rule_name = sql_alarm_rule_name
+        if alarm_rule_alias is not None:
+            self.alarm_rule_alias = alarm_rule_alias
         if is_css_sql is not None:
             self.is_css_sql = is_css_sql
         if sql_alarm_rule_description is not None:
@@ -193,6 +200,28 @@ class UpdateSqlAlarmRuleRequestBody:
         :type sql_alarm_rule_name: str
         """
         self._sql_alarm_rule_name = sql_alarm_rule_name
+
+    @property
+    def alarm_rule_alias(self):
+        """Gets the alarm_rule_alias of this UpdateSqlAlarmRuleRequestBody.
+
+        规则名称
+
+        :return: The alarm_rule_alias of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._alarm_rule_alias
+
+    @alarm_rule_alias.setter
+    def alarm_rule_alias(self, alarm_rule_alias):
+        """Sets the alarm_rule_alias of this UpdateSqlAlarmRuleRequestBody.
+
+        规则名称
+
+        :param alarm_rule_alias: The alarm_rule_alias of this UpdateSqlAlarmRuleRequestBody.
+        :type alarm_rule_alias: str
+        """
+        self._alarm_rule_alias = alarm_rule_alias
 
     @property
     def is_css_sql(self):

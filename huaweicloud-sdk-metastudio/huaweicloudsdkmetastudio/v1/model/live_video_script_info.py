@@ -86,8 +86,7 @@ class LiveVideoScriptInfo:
             self.background_config = background_config
         if layer_config is not None:
             self.layer_config = layer_config
-        if shoot_scripts is not None:
-            self.shoot_scripts = shoot_scripts
+        self.shoot_scripts = shoot_scripts
 
     @property
     def script_name(self):

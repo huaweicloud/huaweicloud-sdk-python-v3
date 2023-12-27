@@ -19,16 +19,18 @@ class PlayPolicy:
     openapi_types = {
         'repeat_count': 'int',
         'auto_play_script': 'bool',
-        'play_mode': 'str'
+        'play_mode': 'str',
+        'random_play_mode': 'str'
     }
 
     attribute_map = {
         'repeat_count': 'repeat_count',
         'auto_play_script': 'auto_play_script',
-        'play_mode': 'play_mode'
+        'play_mode': 'play_mode',
+        'random_play_mode': 'random_play_mode'
     }
 
-    def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None):
+    def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None, random_play_mode=None):
         """PlayPolicy
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class PlayPolicy:
         :type auto_play_script: bool
         :param play_mode: 驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
         :type play_mode: str
+        :param random_play_mode: 随机播报模式。 * NONE: 不启动随机播报。 * SCENE: 按场景随机播报。场景内段落按顺序播报。 * SCRIPT_ITEM：按段落随机播报。场景按顺序播报。 * SCENE_AND_SCRIPT_ITEM： 场景和段落都随机播报。
+        :type random_play_mode: str
         """
         
         
@@ -46,6 +50,7 @@ class PlayPolicy:
         self._repeat_count = None
         self._auto_play_script = None
         self._play_mode = None
+        self._random_play_mode = None
         self.discriminator = None
 
         if repeat_count is not None:
@@ -54,6 +59,8 @@ class PlayPolicy:
             self.auto_play_script = auto_play_script
         if play_mode is not None:
             self.play_mode = play_mode
+        if random_play_mode is not None:
+            self.random_play_mode = random_play_mode
 
     @property
     def repeat_count(self):
@@ -120,6 +127,28 @@ class PlayPolicy:
         :type play_mode: str
         """
         self._play_mode = play_mode
+
+    @property
+    def random_play_mode(self):
+        """Gets the random_play_mode of this PlayPolicy.
+
+        随机播报模式。 * NONE: 不启动随机播报。 * SCENE: 按场景随机播报。场景内段落按顺序播报。 * SCRIPT_ITEM：按段落随机播报。场景按顺序播报。 * SCENE_AND_SCRIPT_ITEM： 场景和段落都随机播报。
+
+        :return: The random_play_mode of this PlayPolicy.
+        :rtype: str
+        """
+        return self._random_play_mode
+
+    @random_play_mode.setter
+    def random_play_mode(self, random_play_mode):
+        """Sets the random_play_mode of this PlayPolicy.
+
+        随机播报模式。 * NONE: 不启动随机播报。 * SCENE: 按场景随机播报。场景内段落按顺序播报。 * SCRIPT_ITEM：按段落随机播报。场景按顺序播报。 * SCENE_AND_SCRIPT_ITEM： 场景和段落都随机播报。
+
+        :param random_play_mode: The random_play_mode of this PlayPolicy.
+        :type random_play_mode: str
+        """
+        self._random_play_mode = random_play_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

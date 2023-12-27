@@ -23,6 +23,8 @@ class JobInfo:
         'params': 'list[JobParam]',
         'directory': 'str',
         'process_type': 'str',
+        'single_node_job_flag': 'bool',
+        'single_node_job_type': 'str',
         'last_update_user': 'str',
         'log_path': 'str',
         'basic_config': 'BasicConfig',
@@ -37,6 +39,8 @@ class JobInfo:
         'params': 'params',
         'directory': 'directory',
         'process_type': 'processType',
+        'single_node_job_flag': 'singleNodeJobFlag',
+        'single_node_job_type': 'singleNodeJobType',
         'last_update_user': 'lastUpdateUser',
         'log_path': 'logPath',
         'basic_config': 'basicConfig',
@@ -44,7 +48,7 @@ class JobInfo:
         'approvers': 'approvers'
     }
 
-    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, process_type=None, last_update_user=None, log_path=None, basic_config=None, target_status=None, approvers=None):
+    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, process_type=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, target_status=None, approvers=None):
         """JobInfo
 
         The model defined in huaweicloud sdk
@@ -61,6 +65,10 @@ class JobInfo:
         :type directory: str
         :param process_type: 作业类型，REAL_TIME： 实时处理，BATCH：批处理
         :type process_type: str
+        :param single_node_job_flag: 是否选择单任务，默认为false
+        :type single_node_job_flag: bool
+        :param single_node_job_type: 单任务类型
+        :type single_node_job_type: str
         :param last_update_user: 作业最后修改人
         :type last_update_user: str
         :param log_path: 作业运行日志存放的OBS路径。
@@ -81,6 +89,8 @@ class JobInfo:
         self._params = None
         self._directory = None
         self._process_type = None
+        self._single_node_job_flag = None
+        self._single_node_job_type = None
         self._last_update_user = None
         self._log_path = None
         self._basic_config = None
@@ -96,6 +106,10 @@ class JobInfo:
         if directory is not None:
             self.directory = directory
         self.process_type = process_type
+        if single_node_job_flag is not None:
+            self.single_node_job_flag = single_node_job_flag
+        if single_node_job_type is not None:
+            self.single_node_job_type = single_node_job_type
         if last_update_user is not None:
             self.last_update_user = last_update_user
         if log_path is not None:
@@ -234,6 +248,50 @@ class JobInfo:
         :type process_type: str
         """
         self._process_type = process_type
+
+    @property
+    def single_node_job_flag(self):
+        """Gets the single_node_job_flag of this JobInfo.
+
+        是否选择单任务，默认为false
+
+        :return: The single_node_job_flag of this JobInfo.
+        :rtype: bool
+        """
+        return self._single_node_job_flag
+
+    @single_node_job_flag.setter
+    def single_node_job_flag(self, single_node_job_flag):
+        """Sets the single_node_job_flag of this JobInfo.
+
+        是否选择单任务，默认为false
+
+        :param single_node_job_flag: The single_node_job_flag of this JobInfo.
+        :type single_node_job_flag: bool
+        """
+        self._single_node_job_flag = single_node_job_flag
+
+    @property
+    def single_node_job_type(self):
+        """Gets the single_node_job_type of this JobInfo.
+
+        单任务类型
+
+        :return: The single_node_job_type of this JobInfo.
+        :rtype: str
+        """
+        return self._single_node_job_type
+
+    @single_node_job_type.setter
+    def single_node_job_type(self, single_node_job_type):
+        """Sets the single_node_job_type of this JobInfo.
+
+        单任务类型
+
+        :param single_node_job_type: The single_node_job_type of this JobInfo.
+        :type single_node_job_type: str
+        """
+        self._single_node_job_type = single_node_job_type
 
     @property
     def last_update_user(self):

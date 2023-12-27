@@ -33,9 +33,9 @@ class LayerPositionConfig:
 
         The model defined in huaweicloud sdk
 
-        :param dx: 图层图片左上角像素点的X轴位置值（相对背景图片）。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
+        :param dx: 图层左上角像素点的X轴位置值（画布左上角坐标是0x0）。 &gt; * 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
         :type dx: int
-        :param dy: 图层图片左上角像素点的Y轴位置值（相对背景图片）。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
+        :param dy: 图层图片左上角像素点的Y轴位置值（画布左上角坐标是0x0）。 &gt; 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
         :type dy: int
         :param layer_index: 图片/视频/人物图的层顺序。 &gt; * 图层顺序从1开始的整数，底层图层顺序是1，往上依次增加。
         :type layer_index: int
@@ -56,7 +56,7 @@ class LayerPositionConfig:
     def dx(self):
         """Gets the dx of this LayerPositionConfig.
 
-        图层图片左上角像素点的X轴位置值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
+        图层左上角像素点的X轴位置值（画布左上角坐标是0x0）。 > * 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
         :return: The dx of this LayerPositionConfig.
         :rtype: int
@@ -67,7 +67,7 @@ class LayerPositionConfig:
     def dx(self, dx):
         """Sets the dx of this LayerPositionConfig.
 
-        图层图片左上角像素点的X轴位置值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
+        图层左上角像素点的X轴位置值（画布左上角坐标是0x0）。 > * 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
         :param dx: The dx of this LayerPositionConfig.
         :type dx: int
@@ -78,7 +78,7 @@ class LayerPositionConfig:
     def dy(self):
         """Gets the dy of this LayerPositionConfig.
 
-        图层图片左上角像素点的Y轴位置值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
+        图层图片左上角像素点的Y轴位置值（画布左上角坐标是0x0）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
         :return: The dy of this LayerPositionConfig.
         :rtype: int
@@ -89,7 +89,7 @@ class LayerPositionConfig:
     def dy(self, dy):
         """Sets the dy of this LayerPositionConfig.
 
-        图层图片左上角像素点的Y轴位置值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
+        图层图片左上角像素点的Y轴位置值（画布左上角坐标是0x0）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
         :param dy: The dy of this LayerPositionConfig.
         :type dy: int

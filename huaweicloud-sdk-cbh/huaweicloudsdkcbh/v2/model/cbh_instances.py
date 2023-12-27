@@ -28,7 +28,7 @@ class CBHInstances:
         'period_num': 'int',
         'is_auto_renew': 'int',
         'is_auto_pay': 'int',
-        'network': 'object',
+        'network': 'NetworkInfoCreate',
         'ipv6_enable': 'bool',
         'enterprise_project_id': 'str',
         'attach_disk_size': 'int',
@@ -81,8 +81,8 @@ class CBHInstances:
         :type is_auto_renew: int
         :param is_auto_pay: 是否自动支付，下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。 - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券。）  默认值为“0”
         :type is_auto_pay: int
-        :param network: 网络信息。
-        :type network: object
+        :param network: 
+        :type network: :class:`huaweicloudsdkcbh.v2.NetworkInfoCreate`
         :param ipv6_enable: 云堡垒机实例是否支持IPV6。  默认值为“false”。
         :type ipv6_enable: bool
         :param enterprise_project_id: 企业项目ID。  默认值为“0”。
@@ -385,10 +385,8 @@ class CBHInstances:
     def network(self):
         """Gets the network of this CBHInstances.
 
-        网络信息。
-
         :return: The network of this CBHInstances.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcbh.v2.NetworkInfoCreate`
         """
         return self._network
 
@@ -396,10 +394,8 @@ class CBHInstances:
     def network(self, network):
         """Sets the network of this CBHInstances.
 
-        网络信息。
-
         :param network: The network of this CBHInstances.
-        :type network: object
+        :type network: :class:`huaweicloudsdkcbh.v2.NetworkInfoCreate`
         """
         self._network = network
 

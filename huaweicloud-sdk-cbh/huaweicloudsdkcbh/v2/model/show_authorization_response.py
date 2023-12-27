@@ -18,7 +18,7 @@ class ShowAuthorizationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'authorization': 'object'
+        'authorization': 'AgencyAuthorizeInfo'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ShowAuthorizationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param authorization: 委托授权信息。
-        :type authorization: object
+        :param authorization: 
+        :type authorization: :class:`huaweicloudsdkcbh.v2.AgencyAuthorizeInfo`
         """
         
         super(ShowAuthorizationResponse, self).__init__()
@@ -46,10 +46,8 @@ class ShowAuthorizationResponse(SdkResponse):
     def authorization(self):
         """Gets the authorization of this ShowAuthorizationResponse.
 
-        委托授权信息。
-
         :return: The authorization of this ShowAuthorizationResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcbh.v2.AgencyAuthorizeInfo`
         """
         return self._authorization
 
@@ -57,10 +55,8 @@ class ShowAuthorizationResponse(SdkResponse):
     def authorization(self, authorization):
         """Sets the authorization of this ShowAuthorizationResponse.
 
-        委托授权信息。
-
         :param authorization: The authorization of this ShowAuthorizationResponse.
-        :type authorization: object
+        :type authorization: :class:`huaweicloudsdkcbh.v2.AgencyAuthorizeInfo`
         """
         self._authorization = authorization
 

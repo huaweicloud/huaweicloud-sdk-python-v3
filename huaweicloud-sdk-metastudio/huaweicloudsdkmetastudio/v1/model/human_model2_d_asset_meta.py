@@ -20,17 +20,19 @@ class HumanModel2DAssetMeta:
         'is_action_editable': 'bool',
         'is_real_background': 'bool',
         'support_live': 'bool',
-        'model_version': 'str'
+        'model_version': 'str',
+        'model_resolution': 'str'
     }
 
     attribute_map = {
         'is_action_editable': 'is_action_editable',
         'is_real_background': 'is_real_background',
         'support_live': 'support_live',
-        'model_version': 'model_version'
+        'model_version': 'model_version',
+        'model_resolution': 'model_resolution'
     }
 
-    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None):
+    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None):
         """HumanModel2DAssetMeta
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class HumanModel2DAssetMeta:
         :type support_live: bool
         :param model_version: 分身数字人模型版本。默认是V2版本模型。 * V2: V2版本模型 * V3：V3版本模型
         :type model_version: str
+        :param model_resolution: 分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+        :type model_resolution: str
         """
         
         
@@ -51,6 +55,7 @@ class HumanModel2DAssetMeta:
         self._is_real_background = None
         self._support_live = None
         self._model_version = None
+        self._model_resolution = None
         self.discriminator = None
 
         if is_action_editable is not None:
@@ -61,6 +66,8 @@ class HumanModel2DAssetMeta:
             self.support_live = support_live
         if model_version is not None:
             self.model_version = model_version
+        if model_resolution is not None:
+            self.model_resolution = model_resolution
 
     @property
     def is_action_editable(self):
@@ -149,6 +156,28 @@ class HumanModel2DAssetMeta:
         :type model_version: str
         """
         self._model_version = model_version
+
+    @property
+    def model_resolution(self):
+        """Gets the model_resolution of this HumanModel2DAssetMeta.
+
+        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+
+        :return: The model_resolution of this HumanModel2DAssetMeta.
+        :rtype: str
+        """
+        return self._model_resolution
+
+    @model_resolution.setter
+    def model_resolution(self, model_resolution):
+        """Sets the model_resolution of this HumanModel2DAssetMeta.
+
+        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+
+        :param model_resolution: The model_resolution of this HumanModel2DAssetMeta.
+        :type model_resolution: str
+        """
+        self._model_resolution = model_resolution
 
     def to_dict(self):
         """Returns the model properties as a dict"""

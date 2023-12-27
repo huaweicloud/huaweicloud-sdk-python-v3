@@ -32,6 +32,1461 @@ class CodeArtsArtifactAsyncClient(Client):
 
         return client_builder
 
+    def batch_delete_trashes_async(self, request):
+        """批量删除回收站
+
+        批量删除回收站
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteTrashes
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.BatchDeleteTrashesRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.BatchDeleteTrashesResponse`
+        """
+        http_info = self._batch_delete_trashes_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_trashes_async_invoker(self, request):
+        http_info = self._batch_delete_trashes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_trashes_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/cloudartifact/v5/trashes",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTrashesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_restore_repo_async(self, request):
+        """批量还原回收站
+
+        批量还原回收站
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchRestoreRepo
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.BatchRestoreRepoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.BatchRestoreRepoResponse`
+        """
+        http_info = self._batch_restore_repo_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_restore_repo_async_invoker(self, request):
+        http_info = self._batch_restore_repo_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_restore_repo_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/cloudartifact/v5/trashes",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRestoreRepoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_artifactory_async(self, request):
+        """创建非maven仓库
+
+        创建非maven仓库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateArtifactory
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.CreateArtifactoryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.CreateArtifactoryResponse`
+        """
+        http_info = self._create_artifactory_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_artifactory_async_invoker(self, request):
+        http_info = self._create_artifactory_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_artifactory_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/cloudartifact/v5/artifact/",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateArtifactoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_attention_async(self, request):
+        """关注组件/取消关注组件
+
+        关注组件/取消关注组件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAttention
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.CreateAttentionRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.CreateAttentionResponse`
+        """
+        http_info = self._create_attention_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_attention_async_invoker(self, request):
+        http_info = self._create_attention_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_attention_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/cloudartifact/v5/attention",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAttentionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_docker_repositories_async(self, request):
+        """创建docker仓库
+
+        创建docker仓库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDockerRepositories
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.CreateDockerRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.CreateDockerRepositoriesResponse`
+        """
+        http_info = self._create_docker_repositories_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_docker_repositories_async_invoker(self, request):
+        http_info = self._create_docker_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_docker_repositories_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/cloudartifact/v5/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDockerRepositoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_maven_repo_async(self, request):
+        """创建maven仓库
+
+        创建maven仓库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateMavenRepo
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.CreateMavenRepoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.CreateMavenRepoResponse`
+        """
+        http_info = self._create_maven_repo_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_maven_repo_async_invoker(self, request):
+        http_info = self._create_maven_repo_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_maven_repo_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/cloudartifact/v5/maven/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMavenRepoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_project_related_repository_async(self, request):
+        """创建项目关联仓库
+
+        创建项目管理关联仓库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProjectRelatedRepository
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.CreateProjectRelatedRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.CreateProjectRelatedRepositoryResponse`
+        """
+        http_info = self._create_project_related_repository_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_project_related_repository_async_invoker(self, request):
+        http_info = self._create_project_related_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_project_related_repository_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/cloudartifact/v5/maven/project/repository",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectRelatedRepositoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_artifact_file_async(self, request):
+        """非maven删除文件
+
+        非maven删除文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteArtifactFile
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.DeleteArtifactFileRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.DeleteArtifactFileResponse`
+        """
+        http_info = self._delete_artifact_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_artifact_file_async_invoker(self, request):
+        http_info = self._delete_artifact_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_artifact_file_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/cloudartifact/v5/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteArtifactFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_repository_async(self, request):
+        """删除仓库到回收站
+
+        删除仓库到回收站
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRepository
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.DeleteRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.DeleteRepositoryResponse`
+        """
+        http_info = self._delete_repository_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_repository_async_invoker(self, request):
+        http_info = self._delete_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_repository_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/cloudartifact/v5/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRepositoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_repositories_async(self, request):
+        """查询仓库详情，不会去统计仓库下的制品数量
+
+        查询仓库详情，不会去统计仓库下的制品数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllRepositories
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ListAllRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ListAllRepositoriesResponse`
+        """
+        http_info = self._list_all_repositories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_repositories_async_invoker(self, request):
+        http_info = self._list_all_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_repositories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/{tenant_id}/{project_id}/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllRepositoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'qname' in local_var_params:
+            query_params.append(('qname', local_var_params['qname']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'format' in local_var_params:
+            query_params.append(('format', local_var_params['format']))
+        if 'format_list' in local_var_params:
+            query_params.append(('format_list', local_var_params['format_list']))
+        if 'is_recycle_bin' in local_var_params:
+            query_params.append(('is_recycle_bin', local_var_params['is_recycle_bin']))
+        if 'is_need_paging' in local_var_params:
+            query_params.append(('is_need_paging', local_var_params['is_need_paging']))
+        if 'in_project' in local_var_params:
+            query_params.append(('in_project', local_var_params['in_project']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_artifactory_component_async(self, request):
+        """查询仓库文件详情
+
+        查询仓库文件详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListArtifactoryComponent
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ListArtifactoryComponentRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ListArtifactoryComponentResponse`
+        """
+        http_info = self._list_artifactory_component_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_artifactory_component_async_invoker(self, request):
+        http_info = self._list_artifactory_component_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_artifactory_component_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/{tenant_id}/{project_id}/{repo_name}/file-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListArtifactoryComponentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'repo_name' in local_var_params:
+            path_params['repo_name'] = local_var_params['repo_name']
+
+        query_params = []
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+        if 'format' in local_var_params:
+            query_params.append(('format', local_var_params['format']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_artifactory_storage_statistic_async(self, request):
+        """查询存储容量趋势
+
+        查询存储容量趋势
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListArtifactoryStorageStatistic
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ListArtifactoryStorageStatisticRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ListArtifactoryStorageStatisticResponse`
+        """
+        http_info = self._list_artifactory_storage_statistic_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_artifactory_storage_statistic_async_invoker(self, request):
+        http_info = self._list_artifactory_storage_statistic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_artifactory_storage_statistic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/{tenant_id}/{project_id}/storageinfo/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListArtifactoryStorageStatisticResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'repo' in local_var_params:
+            query_params.append(('repo', local_var_params['repo']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_attentions_async(self, request):
+        """查询关注列表
+
+        查询关注列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAttentions
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ListAttentionsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ListAttentionsResponse`
+        """
+        http_info = self._list_attentions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_attentions_async_invoker(self, request):
+        http_info = self._list_attentions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_attentions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/attention/artifacts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAttentionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_repository_async(self, request):
+        """编辑仓库
+
+        编辑仓库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyRepository
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ModifyRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ModifyRepositoryResponse`
+        """
+        http_info = self._modify_repository_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_repository_async_invoker(self, request):
+        http_info = self._modify_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_repository_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/cloudartifact/v5/repositories/tab/{tab_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyRepositoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tab_id' in local_var_params:
+            path_params['tab_id'] = local_var_params['tab_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_user_password_async(self, request):
+        """重置用户密码
+
+        重置用户密码
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetUserPassword
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ResetUserPasswordRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ResetUserPasswordResponse`
+        """
+        http_info = self._reset_user_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_user_password_async_invoker(self, request):
+        http_info = self._reset_user_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_user_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/cloudartifact/v5/maven/users/me",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetUserPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def search_artifacts_async(self, request):
+        """统筹搜索
+
+        统筹搜索
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchArtifacts
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.SearchArtifactsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.SearchArtifactsResponse`
+        """
+        http_info = self._search_artifacts_http_info(request)
+        return self._call_api(**http_info)
+
+    def search_artifacts_async_invoker(self, request):
+        http_info = self._search_artifacts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_artifacts_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/cloudartifact/v5/tree/repos/artifacts",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchArtifactsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def search_by_checksum_async(self, request):
+        """通过checksum搜索文件
+
+        通过checksum搜索文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchByChecksum
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.SearchByChecksumRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.SearchByChecksumResponse`
+        """
+        http_info = self._search_by_checksum_http_info(request)
+        return self._call_api(**http_info)
+
+    def search_by_checksum_async_invoker(self, request):
+        http_info = self._search_by_checksum_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_by_checksum_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/search/checksum",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchByChecksumResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'checksum' in local_var_params:
+            query_params.append(('checksum', local_var_params['checksum']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'format' in local_var_params:
+            query_params.append(('format', local_var_params['format']))
+        if 'in_project' in local_var_params:
+            query_params.append(('in_project', local_var_params['in_project']))
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_audit_async(self, request):
+        """查询仓库或文件的审计日志信息
+
+        查询仓库或文件的审计日志信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAudit
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowAuditRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowAuditResponse`
+        """
+        http_info = self._show_audit_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_audit_async_invoker(self, request):
+        http_info = self._show_audit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_audit_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/{tenant_id}/{project_id}/{module}/{repo}/audit",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuditResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'module' in local_var_params:
+            path_params['module'] = local_var_params['module']
+        if 'repo' in local_var_params:
+            path_params['repo'] = local_var_params['repo']
+
+        query_params = []
+        if 'user_id' in local_var_params:
+            query_params.append(('user_id', local_var_params['user_id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_file_tree_async(self, request):
+        """查询仓库文件夹目录
+
+        查询仓库文件夹目录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFileTree
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowFileTreeRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowFileTreeResponse`
+        """
+        http_info = self._show_file_tree_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_file_tree_async_invoker(self, request):
+        http_info = self._show_file_tree_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_file_tree_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/{tenant_id}/{project_id}/{repo_name}/file-tree",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFileTreeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'repo_name' in local_var_params:
+            path_params['repo_name'] = local_var_params['repo_name']
+
+        query_params = []
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'is_recycle_bin' in local_var_params:
+            query_params.append(('is_recycle_bin', local_var_params['is_recycle_bin']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_maven_info_async(self, request):
+        """查询租户Maven仓库列表和账号密码
+
+        查询租户Maven仓库列表和账号密码，支持跨租户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMavenInfo
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowMavenInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowMavenInfoResponse`
+        """
+        http_info = self._show_maven_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_maven_info_async_invoker(self, request):
+        http_info = self._show_maven_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_maven_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/maven/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMavenInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'policy' in local_var_params:
+            query_params.append(('policy', local_var_params['policy']))
+        if 'access' in local_var_params:
+            query_params.append(('access', local_var_params['access']))
+        if 'default' in local_var_params:
+            query_params.append(('default', local_var_params['default']))
+        if 'ids' in local_var_params:
+            query_params.append(('ids', local_var_params['ids']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_project_list_async(self, request):
+        """查询项目管理关联仓库
+
+        查询项目管理关联仓库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectList
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowProjectListRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowProjectListResponse`
+        """
+        http_info = self._show_project_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_list_async_invoker(self, request):
+        http_info = self._show_project_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/maven/repository/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_project_release_files_async(self, request):
         """获取项目下文件版本信息列表
 
@@ -155,6 +1610,274 @@ class CodeArtsArtifactAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_repository_async(self, request):
+        """查询单个仓库详细信息，会去统计仓库下的制品数量
+
+        查询单个仓库详细信息，会去统计仓库下的制品数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRepository
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowRepositoryResponse`
+        """
+        http_info = self._show_repository_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repository_async_invoker(self, request):
+        http_info = self._show_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/{tenant_id}/{project_id}/{repo_id}/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'repo_id' in local_var_params:
+            path_params['repo_id'] = local_var_params['repo_id']
+
+        query_params = []
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_repository_info_async(self, request):
+        """查看仓库信息
+
+        查看仓库信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRepositoryInfo
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowRepositoryInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowRepositoryInfoResponse`
+        """
+        http_info = self._show_repository_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repository_info_async_invoker(self, request):
+        http_info = self._show_repository_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/repositories/{repo_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repo_id' in local_var_params:
+            path_params['repo_id'] = local_var_params['repo_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_storage_async(self, request):
+        """仓库用量查询
+
+        仓库用量查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStorage
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowStorageRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowStorageResponse`
+        """
+        http_info = self._show_storage_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_storage_async_invoker(self, request):
+        http_info = self._show_storage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_storage_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/storage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStorageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'format_list' in local_var_params:
+            query_params.append(('format_list', local_var_params['format_list']))
+        if 'in_project' in local_var_params:
+            query_params.append(('in_project', local_var_params['in_project']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_artifactory_async(self, request):
+        """编辑非maven仓库信息
+
+        编辑非maven仓库信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateArtifactory
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.UpdateArtifactoryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.UpdateArtifactoryResponse`
+        """
+        http_info = self._update_artifactory_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_artifactory_async_invoker(self, request):
+        http_info = self._update_artifactory_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_artifactory_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/cloudartifact/v5/artifact/",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateArtifactoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

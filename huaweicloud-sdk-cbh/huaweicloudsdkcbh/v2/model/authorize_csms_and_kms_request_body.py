@@ -17,7 +17,7 @@ class AuthorizeCsmsAndKmsRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'authorization': 'object'
+        'authorization': 'AgencyAuthorizeInfo'
     }
 
     attribute_map = {
@@ -29,8 +29,8 @@ class AuthorizeCsmsAndKmsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param authorization: 委托授权信息。
-        :type authorization: object
+        :param authorization: 
+        :type authorization: :class:`huaweicloudsdkcbh.v2.AgencyAuthorizeInfo`
         """
         
         
@@ -44,10 +44,8 @@ class AuthorizeCsmsAndKmsRequestBody:
     def authorization(self):
         """Gets the authorization of this AuthorizeCsmsAndKmsRequestBody.
 
-        委托授权信息。
-
         :return: The authorization of this AuthorizeCsmsAndKmsRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcbh.v2.AgencyAuthorizeInfo`
         """
         return self._authorization
 
@@ -55,10 +53,8 @@ class AuthorizeCsmsAndKmsRequestBody:
     def authorization(self, authorization):
         """Sets the authorization of this AuthorizeCsmsAndKmsRequestBody.
 
-        委托授权信息。
-
         :param authorization: The authorization of this AuthorizeCsmsAndKmsRequestBody.
-        :type authorization: object
+        :type authorization: :class:`huaweicloudsdkcbh.v2.AgencyAuthorizeInfo`
         """
         self._authorization = authorization
 

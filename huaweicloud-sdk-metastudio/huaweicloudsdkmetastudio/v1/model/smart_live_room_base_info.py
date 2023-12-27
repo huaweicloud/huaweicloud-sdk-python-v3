@@ -19,6 +19,9 @@ class SmartLiveRoomBaseInfo:
     openapi_types = {
         'room_id': 'str',
         'room_name': 'str',
+        'room_type': 'str',
+        'room_state': 'str',
+        'error_info': 'ErrorResponse',
         'room_description': 'str',
         'cover_url': 'str',
         'model_infos': 'list[ModelInfo]',
@@ -32,6 +35,9 @@ class SmartLiveRoomBaseInfo:
     attribute_map = {
         'room_id': 'room_id',
         'room_name': 'room_name',
+        'room_type': 'room_type',
+        'room_state': 'room_state',
+        'error_info': 'error_info',
         'room_description': 'room_description',
         'cover_url': 'cover_url',
         'model_infos': 'model_infos',
@@ -42,7 +48,7 @@ class SmartLiveRoomBaseInfo:
         'last_job_status': 'last_job_status'
     }
 
-    def __init__(self, room_id=None, room_name=None, room_description=None, cover_url=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None):
+    def __init__(self, room_id=None, room_name=None, room_type=None, room_state=None, error_info=None, room_description=None, cover_url=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None):
         """SmartLiveRoomBaseInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +57,12 @@ class SmartLiveRoomBaseInfo:
         :type room_id: str
         :param room_name: 直播间名称
         :type room_name: str
+        :param room_type: 直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+        :type room_type: str
+        :param room_state: 直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
+        :type room_state: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         :param room_description: 直播间描述。
         :type room_description: str
         :param cover_url: 直播间封面图URL
@@ -73,6 +85,9 @@ class SmartLiveRoomBaseInfo:
 
         self._room_id = None
         self._room_name = None
+        self._room_type = None
+        self._room_state = None
+        self._error_info = None
         self._room_description = None
         self._cover_url = None
         self._model_infos = None
@@ -87,6 +102,12 @@ class SmartLiveRoomBaseInfo:
             self.room_id = room_id
         if room_name is not None:
             self.room_name = room_name
+        if room_type is not None:
+            self.room_type = room_type
+        if room_state is not None:
+            self.room_state = room_state
+        if error_info is not None:
+            self.error_info = error_info
         if room_description is not None:
             self.room_description = room_description
         if cover_url is not None:
@@ -147,6 +168,68 @@ class SmartLiveRoomBaseInfo:
         :type room_name: str
         """
         self._room_name = room_name
+
+    @property
+    def room_type(self):
+        """Gets the room_type of this SmartLiveRoomBaseInfo.
+
+        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+
+        :return: The room_type of this SmartLiveRoomBaseInfo.
+        :rtype: str
+        """
+        return self._room_type
+
+    @room_type.setter
+    def room_type(self, room_type):
+        """Sets the room_type of this SmartLiveRoomBaseInfo.
+
+        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+
+        :param room_type: The room_type of this SmartLiveRoomBaseInfo.
+        :type room_type: str
+        """
+        self._room_type = room_type
+
+    @property
+    def room_state(self):
+        """Gets the room_state of this SmartLiveRoomBaseInfo.
+
+        直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
+
+        :return: The room_state of this SmartLiveRoomBaseInfo.
+        :rtype: str
+        """
+        return self._room_state
+
+    @room_state.setter
+    def room_state(self, room_state):
+        """Sets the room_state of this SmartLiveRoomBaseInfo.
+
+        直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
+
+        :param room_state: The room_state of this SmartLiveRoomBaseInfo.
+        :type room_state: str
+        """
+        self._room_state = room_state
+
+    @property
+    def error_info(self):
+        """Gets the error_info of this SmartLiveRoomBaseInfo.
+
+        :return: The error_info of this SmartLiveRoomBaseInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        """Sets the error_info of this SmartLiveRoomBaseInfo.
+
+        :param error_info: The error_info of this SmartLiveRoomBaseInfo.
+        :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        """
+        self._error_info = error_info
 
     @property
     def room_description(self):

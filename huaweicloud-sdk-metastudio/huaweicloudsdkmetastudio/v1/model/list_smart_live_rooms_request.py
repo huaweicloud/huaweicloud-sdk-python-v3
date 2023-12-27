@@ -25,7 +25,8 @@ class ListSmartLiveRoomsRequest:
         'model_name': 'str',
         'live_state': 'str',
         'start_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'room_type': 'str'
     }
 
     attribute_map = {
@@ -37,15 +38,16 @@ class ListSmartLiveRoomsRequest:
         'model_name': 'model_name',
         'live_state': 'live_state',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'room_type': 'room_type'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_name=None, dh_id=None, model_name=None, live_state=None, start_time=None, end_time=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_name=None, dh_id=None, model_name=None, live_state=None, start_time=None, end_time=None, room_type=None):
         """ListSmartLiveRoomsRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :param x_app_user_id: 第三方用户ID。 &gt; *不允许输入中文。
         :type x_app_user_id: str
         :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
@@ -57,12 +59,14 @@ class ListSmartLiveRoomsRequest:
         :type dh_id: str
         :param model_name: 按形象名称模糊查询。
         :type model_name: str
-        :param live_state: 当前直播间直播状态。 WAITING，PROCESSING，SUCCESS，FAILED对应直播任务状态 NULL 对应没有直播任务 可多个状态查询，使用英文逗号分隔。
+        :param live_state: 当前直播间直播状态。 WAITING，PROCESSING，SUCCESS，FAILED，CANCELED对应直播任务状态 NULL 对应没有直播任务 可多个状态查询，使用英文逗号分隔。
         :type live_state: str
         :param start_time: 最近直播任务起始时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type start_time: str
         :param end_time: 最近直播任务结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
         :type end_time: str
+        :param room_type: 按直播间类型查询。直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+        :type room_type: str
         """
         
         
@@ -76,6 +80,7 @@ class ListSmartLiveRoomsRequest:
         self._live_state = None
         self._start_time = None
         self._end_time = None
+        self._room_type = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -96,12 +101,14 @@ class ListSmartLiveRoomsRequest:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if room_type is not None:
+            self.room_type = room_type
 
     @property
     def x_app_user_id(self):
         """Gets the x_app_user_id of this ListSmartLiveRoomsRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。 > *不允许输入中文。
 
         :return: The x_app_user_id of this ListSmartLiveRoomsRequest.
         :rtype: str
@@ -112,7 +119,7 @@ class ListSmartLiveRoomsRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this ListSmartLiveRoomsRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。 > *不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this ListSmartLiveRoomsRequest.
         :type x_app_user_id: str
@@ -233,7 +240,7 @@ class ListSmartLiveRoomsRequest:
     def live_state(self):
         """Gets the live_state of this ListSmartLiveRoomsRequest.
 
-        当前直播间直播状态。 WAITING，PROCESSING，SUCCESS，FAILED对应直播任务状态 NULL 对应没有直播任务 可多个状态查询，使用英文逗号分隔。
+        当前直播间直播状态。 WAITING，PROCESSING，SUCCESS，FAILED，CANCELED对应直播任务状态 NULL 对应没有直播任务 可多个状态查询，使用英文逗号分隔。
 
         :return: The live_state of this ListSmartLiveRoomsRequest.
         :rtype: str
@@ -244,7 +251,7 @@ class ListSmartLiveRoomsRequest:
     def live_state(self, live_state):
         """Sets the live_state of this ListSmartLiveRoomsRequest.
 
-        当前直播间直播状态。 WAITING，PROCESSING，SUCCESS，FAILED对应直播任务状态 NULL 对应没有直播任务 可多个状态查询，使用英文逗号分隔。
+        当前直播间直播状态。 WAITING，PROCESSING，SUCCESS，FAILED，CANCELED对应直播任务状态 NULL 对应没有直播任务 可多个状态查询，使用英文逗号分隔。
 
         :param live_state: The live_state of this ListSmartLiveRoomsRequest.
         :type live_state: str
@@ -294,6 +301,28 @@ class ListSmartLiveRoomsRequest:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def room_type(self):
+        """Gets the room_type of this ListSmartLiveRoomsRequest.
+
+        按直播间类型查询。直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+
+        :return: The room_type of this ListSmartLiveRoomsRequest.
+        :rtype: str
+        """
+        return self._room_type
+
+    @room_type.setter
+    def room_type(self, room_type):
+        """Sets the room_type of this ListSmartLiveRoomsRequest.
+
+        按直播间类型查询。直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
+
+        :param room_type: The room_type of this ListSmartLiveRoomsRequest.
+        :type room_type: str
+        """
+        self._room_type = room_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

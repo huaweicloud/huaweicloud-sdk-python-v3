@@ -19,6 +19,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     openapi_types = {
         'sql_alarm_rule_name': 'str',
+        'alarm_rule_alias': 'str',
         'is_css_sql': 'bool',
         'index_id': 'str',
         'project_id': 'str',
@@ -41,6 +42,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     attribute_map = {
         'sql_alarm_rule_name': 'sql_alarm_rule_name',
+        'alarm_rule_alias': 'alarm_rule_alias',
         'is_css_sql': 'is_css_sql',
         'index_id': 'indexId',
         'project_id': 'projectId',
@@ -61,13 +63,15 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, is_css_sql=None, index_id=None, project_id=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, language=None, id=None, notification_frequency=None, alarm_action_rule_name=None):
+    def __init__(self, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, index_id=None, project_id=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, language=None, id=None, notification_frequency=None, alarm_action_rule_name=None):
         """UpdateSqlAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
         :param sql_alarm_rule_name: SQL告警名称
         :type sql_alarm_rule_name: str
+        :param alarm_rule_alias: 规则名称
+        :type alarm_rule_alias: str
         :param is_css_sql: 是否管道符sql查询
         :type is_css_sql: bool
         :param index_id: 索引id
@@ -109,6 +113,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         super(UpdateSqlAlarmRuleResponse, self).__init__()
 
         self._sql_alarm_rule_name = None
+        self._alarm_rule_alias = None
         self._is_css_sql = None
         self._index_id = None
         self._project_id = None
@@ -131,6 +136,8 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
         if sql_alarm_rule_name is not None:
             self.sql_alarm_rule_name = sql_alarm_rule_name
+        if alarm_rule_alias is not None:
+            self.alarm_rule_alias = alarm_rule_alias
         if is_css_sql is not None:
             self.is_css_sql = is_css_sql
         if index_id is not None:
@@ -189,6 +196,28 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type sql_alarm_rule_name: str
         """
         self._sql_alarm_rule_name = sql_alarm_rule_name
+
+    @property
+    def alarm_rule_alias(self):
+        """Gets the alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+
+        规则名称
+
+        :return: The alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._alarm_rule_alias
+
+    @alarm_rule_alias.setter
+    def alarm_rule_alias(self, alarm_rule_alias):
+        """Sets the alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+
+        规则名称
+
+        :param alarm_rule_alias: The alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+        :type alarm_rule_alias: str
+        """
+        self._alarm_rule_alias = alarm_rule_alias
 
     @property
     def is_css_sql(self):

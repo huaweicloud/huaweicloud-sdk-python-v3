@@ -1,3 +1,513 @@
+# 3.1.75 2023-12-27
+
+### HuaweiCloud SDK AAD
+
+- _Features_
+  - Support the following APIs:
+    - `CreateAadDomain`
+    - `CreateCertificate`
+    - `ModifyDomainWebSwitch`
+    - `ListSourceIps`
+    - `AddBlackWhiteIpList`
+    - `DeleteBlackWhiteIpList`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListMetricData**
+    - changes of response param
+      - `* datapoints.timestamp: int32 -> int64`
+  - **ListApisV2**
+    - changes of request param
+      - `+ return_data_mode: enum value [brief,include_group,include_group_backend]`
+
+### HuaweiCloud SDK CodeArtsArtifact
+
+- _Features_
+  - Support the following APIs:
+    - `BatchRestoreRepo`
+    - `BatchDeleteTrashes`
+    - `CreateMavenRepo`
+    - `ShowProjectList`
+    - `ModifyRepository`
+    - `ShowRepositoryInfo`
+    - `CreateDockerRepositories`
+    - `DeleteRepository`
+    - `ShowStorage`
+    - `ShowMavenInfo`
+    - `CreateProjectRelatedRepository`
+    - `SearchByChecksum`
+    - `SearchArtifacts`
+    - `ResetUserPassword`
+    - `ShowFileTree`
+    - `ListArtifactoryComponent`
+    - `ListAllRepositories`
+    - `ShowAudit`
+    - `ShowRepository`
+    - `ListArtifactoryStorageStatistic`
+    - `CreateAttention`
+    - `ListAttentions`
+    - `UpdateArtifactory`
+    - `CreateArtifactory`
+    - `DeleteArtifactFile`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListResourceInstances**
+    - changes of response param
+      - `+ resources.sys_tags`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the APIs `ListFactoryJobs`, `CreateFactoryJob`, `ListFactoryAlarmInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the APIs `ShowInstanceSslDetail`, `UpdateSslSwitch`, `DownloadSslCert`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support the API `ShowClientNetwork`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `+ singleNodeJobFlag`
+      - `+ singleNodeJobType`
+  - **ShowJob**
+    - changes of response param
+      - `+ singleNodeJobFlag`
+      - `+ singleNodeJobType`
+  - **UpdateJob**
+    - changes of request param
+      - `+ singleNodeJobFlag`
+      - `+ singleNodeJobType`
+  - **CreateSupplementdata**
+    - changes of request param
+      - `+ singleNodeJobFlag`
+      - `+ singleNodeJobType`
+      - `+ dependJobs.singleNodeJobFlag`
+      - `+ dependJobs.singleNodeJobType`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the API `ListJobs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAssetStatistic**
+    - changes of response param
+      - `+ environment_num`
+      - `+ core_conf_file_num`
+  - **ListPorts**
+    - changes of response param
+      - `+ data_list.agent_id`
+      - `+ data_list.container_id`
+  - **ListSwrImageRepository**
+    - changes of response param
+      - `+ data_list.instance_name`
+      - `+ data_list.instance_id`
+      - `+ data_list.instance_url`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the APIs `CreateShrinkageJob`, `ShowShrinkCheckResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _Features_
+  - Support the following APIs:
+    - `ListDigitalHumanVideo`
+    - `ListInteractionRuleGroups`
+    - `CreateInteractionRuleGroup`
+    - `UpdateInteractionRuleGroup`
+    - `DeleteInteractionRuleGroup`
+    - `CheckTextLanguage`
+    - `CreateFacialAnimations`
+    - `ListFacialAnimationsData`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFile**
+    - changes of response param
+      - `- file_id`
+      - `- upload_url`
+  - **ExecuteSmartLiveCommand**
+    - changes of request param
+      - `+ review_config`
+      - `+ command: enum value [GET_CURRENT_PLAYING_SCRIPTS]`
+  - **CreatePictureModelingByUrlJob**
+    - changes of request param
+      - `- X-User-Privilege`
+  - **ListAssetSummary**
+    - changes of response param
+      - `+ asset_list.asset_type: enum value [AUDIO]`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `+ review_config`
+      - `+ callback_config`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ review_config`
+      - `- video_config.disable_system_watermark`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `- video_config.disable_system_watermark`
+  - **LiveEventReport**
+    - changes of request param
+      - `+ review_config`
+  - **CreateTtsa**
+    - changes of request param
+      - `- X-User-Privilege`
+      - `+ script_type`
+      - `+ audio_file_download_url`
+      - `+ job_type`
+      - `- parent_job_id`
+      - `- auto_motion`
+  - **ListTtsaJobs**
+    - changes of response param
+      - `+ ttsa_jobs.job_type`
+  - **ListTtsaData**
+    - changes of response param
+      - `+ start_time`
+      - `+ end_time`
+      - `+ is_tail`
+  - **ListStyles**
+    - changes of response param
+      - `- styles.extra_meta.edit_value_items`
+      - `- styles.extra_meta.edit_color_items`
+      - `- styles.extra_meta.edit_components`
+      - `- styles.extra_meta.modelling_algorithm`
+  - **CreateDigitalHumanBusinessCard**
+    - changes of request param
+      - `+ introduction_type`
+      - `+ introduction_audio_asset_id`
+      - `+ review_config`
+    - changes of response param
+      - `- job_id`
+  - **UpdateDigitalHumanBusinessCard**
+    - changes of request param
+      - `+ introduction_type`
+      - `+ introduction_audio_asset_id`
+      - `+ review_config`
+    - changes of response param
+      - `- job_id`
+  - **ShowDigitalHumanBusinessCard**
+    - changes of response param
+      - `+ introduction_audio_asset_id`
+      - `+ introduction_type`
+  - **ShowSmartLive**
+    - changes of response param
+      - `+ stream_duration`
+      - `+ block_reason`
+      - `+ live_event_callback_config`
+      - `+ state: enum value [BLOCKED]`
+      - `+ rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **ListVideoScripts**
+    - changes of request param
+      - `+ name`
+      - `+ script_catalog`
+      - `+ view_mode`
+    - changes of response param
+      - `+ video_scripts.script_cover_url`
+      - `+ video_scripts.script_type`
+      - `+ video_scripts.text`
+      - `- video_scripts.video_making_type`
+      - `- video_scripts.human_image`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ script_cover_url`
+      - `+ review_config`
+      - `- video_making_type`
+      - `- human_image`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `* shoot_scripts: list<ShootScriptItem> -> list<ShootScriptShowItem>`
+  - **CreatePictureModelingJob**
+    - changes of request param
+      - `- X-User-Privilege`
+    - changes of response param
+      - `- model_asset_id`
+      - `- job_id`
+  - **ShowVideoMotionCaptureJob**
+    - changes of response param
+      - `+ input_info.rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **ShowAsset**
+    - changes of response param
+      - `+ reason`
+      - `+ is_need_generate_cover`
+      - `+ fail_type`
+      - `+ asset_type: enum value [AUDIO]`
+      - `+ system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ files.state`
+      - `+ files.reason`
+      - `+ asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- asset_extra_meta.voice_model_meta.tts_mode`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ asset_extra_meta.ppt_meta.error_info`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ is_need_generate_cover`
+      - `+ review_config`
+      - `+ asset_type: enum value [AUDIO]`
+      - `+ system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- asset_extra_meta.voice_model_meta.tts_mode`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ asset_extra_meta.ppt_meta.error_info`
+    - changes of response param
+      - `+ reason`
+      - `+ is_need_generate_cover`
+      - `+ fail_type`
+      - `+ asset_type: enum value [AUDIO]`
+      - `+ system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ files.state`
+      - `+ files.reason`
+      - `+ asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- asset_extra_meta.voice_model_meta.tts_mode`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ asset_extra_meta.ppt_meta.error_info`
+  - **ListSmartLiveRooms**
+    - changes of request param
+      - `+ room_type`
+    - changes of response param
+      - `+ smart_live_rooms.room_type`
+      - `+ smart_live_rooms.room_state`
+      - `+ smart_live_rooms.error_info`
+      - `+ smart_live_rooms.model_infos.backup_model_asset_ids`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ stream_keys`
+      - `+ backup_model_asset_ids`
+      - `+ live_event_callback_config`
+      - `+ review_config`
+      - `+ shared_config`
+      - `+ room_type: enum value [TEMPLATE]`
+      - `+ play_policy.random_play_mode`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ scene_scripts.layer_config.group_id`
+      - `+ scene_scripts.layer_config.layer_type: enum value [TEXT]`
+      - `+ interaction_rules.rule_index`
+      - `+ interaction_rules.review_config`
+      - `+ interaction_rules.trigger.layer_config`
+      - `+ interaction_rules.trigger.reply_audios`
+      - `+ interaction_rules.trigger.reply_mode: enum value [CALLBACK,SHOW_LAYER]`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ backup_model_asset_ids`
+      - `+ error_info`
+      - `+ stream_keys`
+      - `+ shared_config`
+      - `+ live_event_callback_config`
+      - `+ room_state`
+      - `+ review_config`
+      - `+ room_type: enum value [TEMPLATE]`
+      - `+ play_policy.random_play_mode`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ scene_scripts.layer_config.group_id`
+      - `+ scene_scripts.layer_config.layer_type: enum value [TEXT]`
+      - `+ interaction_rules.rule_index`
+      - `+ interaction_rules.review_config`
+      - `+ interaction_rules.trigger.layer_config`
+      - `+ interaction_rules.trigger.reply_audios`
+      - `+ interaction_rules.trigger.reply_mode: enum value [CALLBACK,SHOW_LAYER]`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ stream_keys`
+      - `+ backup_model_asset_ids`
+      - `+ live_event_callback_config`
+      - `+ review_config`
+      - `+ shared_config`
+      - `+ room_type: enum value [TEMPLATE]`
+      - `+ play_policy.random_play_mode`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ scene_scripts.layer_config.group_id`
+      - `+ scene_scripts.layer_config.layer_type: enum value [TEXT]`
+      - `+ interaction_rules.rule_index`
+      - `+ interaction_rules.review_config`
+      - `+ interaction_rules.trigger.layer_config`
+      - `+ interaction_rules.trigger.reply_audios`
+      - `+ interaction_rules.trigger.reply_mode: enum value [CALLBACK,SHOW_LAYER]`
+    - changes of response param
+      - `+ backup_model_asset_ids`
+      - `+ error_info`
+      - `+ stream_keys`
+      - `+ shared_config`
+      - `+ live_event_callback_config`
+      - `+ room_state`
+      - `+ review_config`
+      - `+ room_type: enum value [TEMPLATE]`
+      - `+ play_policy.random_play_mode`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ scene_scripts.layer_config.group_id`
+      - `+ scene_scripts.layer_config.layer_type: enum value [TEXT]`
+      - `+ interaction_rules.rule_index`
+      - `+ interaction_rules.review_config`
+      - `+ interaction_rules.trigger.layer_config`
+      - `+ interaction_rules.trigger.reply_audios`
+      - `+ interaction_rules.trigger.reply_mode: enum value [CALLBACK,SHOW_LAYER]`
+  - **StartSmartLive**
+    - changes of request param
+      - `+ stream_keys`
+      - `+ interaction_callback_url`
+      - `+ live_event_callback_config`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ play_policy.random_play_mode`
+    - changes of response param
+      - `+ live_warning_info`
+      - `+ live_event_callback_config`
+      - `+ rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **ListSmartLive**
+    - changes of response param
+      - `+ stream_duration`
+      - `+ block_reason`
+      - `+ live_event_callback_config`
+      - `+ smart_live_jobs.live_event_callback_config`
+      - `+ smart_live_jobs.stream_duration`
+      - `+ smart_live_jobs.block_reason`
+      - `+ smart_live_jobs.state: enum value [BLOCKED]`
+      - `+ smart_live_jobs.rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **CreateVideoMotionCaptureJob**
+    - changes of request param
+      - `+ input_info.rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+    - changes of response param
+      - `- rtc_room_info`
+      - `- job_id`
+      - `+ rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **ListVideoMotionCaptureJobs**
+    - changes of response param
+      - `+ video_motion_capture_jobs.input_info.rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ is_need_generate_cover`
+      - `+ review_config`
+      - `+ asset_type: enum value [AUDIO]`
+      - `+ system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- asset_extra_meta.voice_model_meta.tts_mode`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ asset_extra_meta.ppt_meta.error_info`
+  - **ListAssets**
+    - changes of request param
+      - `- asset_manage_type`
+      - `- X-User-MePrivilege`
+    - changes of response param
+      - `+ reason`
+      - `+ is_need_generate_cover`
+      - `+ fail_type`
+      - `+ assets.fail_type`
+      - `+ assets.reason`
+      - `+ assets.is_need_generate_cover`
+      - `+ assets.asset_type: enum value [AUDIO]`
+      - `+ assets.system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ assets.files.state`
+      - `+ assets.files.reason`
+      - `+ assets.asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ assets.asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- assets.asset_extra_meta.voice_model_meta.tts_mode`
+      - `- assets.asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ assets.asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- assets.asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ assets.asset_extra_meta.ppt_meta.error_info`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the APIs `SetInstancesNewDbShrink`, `StopBackup`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.74 2023-12-22
 
 ### HuaweiCloud SDK Config

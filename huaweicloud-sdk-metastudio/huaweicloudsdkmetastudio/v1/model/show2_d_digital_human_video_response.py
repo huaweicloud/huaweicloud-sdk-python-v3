@@ -84,9 +84,9 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
         :type lastupdate_time: str
         :param script_id: 剧本ID。
         :type script_id: str
-        :param video_making_type: 视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
+        :param video_making_type: 视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
         :type video_making_type: str
-        :param human_image: 人物照片，需要Base64编码。
+        :param human_image: 人物照片，需要Base64编码。 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
         :type human_image: str
         :param model_asset_id: 分身数字人模型资产ID。
         :type model_asset_id: str
@@ -375,7 +375,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     def video_making_type(self):
         """Gets the video_making_type of this Show2DDigitalHumanVideoResponse.
 
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
+        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :return: The video_making_type of this Show2DDigitalHumanVideoResponse.
         :rtype: str
@@ -386,7 +386,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     def video_making_type(self, video_making_type):
         """Sets the video_making_type of this Show2DDigitalHumanVideoResponse.
 
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
+        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :param video_making_type: The video_making_type of this Show2DDigitalHumanVideoResponse.
         :type video_making_type: str
@@ -397,7 +397,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     def human_image(self):
         """Gets the human_image of this Show2DDigitalHumanVideoResponse.
 
-        人物照片，需要Base64编码。
+        人物照片，需要Base64编码。 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :return: The human_image of this Show2DDigitalHumanVideoResponse.
         :rtype: str
@@ -408,7 +408,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     def human_image(self, human_image):
         """Sets the human_image of this Show2DDigitalHumanVideoResponse.
 
-        人物照片，需要Base64编码。
+        人物照片，需要Base64编码。 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :param human_image: The human_image of this Show2DDigitalHumanVideoResponse.
         :type human_image: str

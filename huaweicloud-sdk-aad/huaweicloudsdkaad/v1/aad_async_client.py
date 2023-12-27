@@ -32,6 +32,71 @@ class AadAsyncClient(Client):
 
         return client_builder
 
+    def add_black_white_ip_list_async(self, request):
+        """高防实例添加黑白名单
+
+        高防实例添加黑白名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddBlackWhiteIpList
+        :type request: :class:`huaweicloudsdkaad.v1.AddBlackWhiteIpListRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.AddBlackWhiteIpListResponse`
+        """
+        http_info = self._add_black_white_ip_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_black_white_ip_list_async_invoker(self, request):
+        http_info = self._add_black_white_ip_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_black_white_ip_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aad/external/bwlist",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddBlackWhiteIpListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_policy_black_and_white_ip_list_async(self, request):
         """策略添加黑白名单
 
@@ -304,6 +369,136 @@ class AadAsyncClient(Client):
 
         return http_info
 
+    def create_aad_domain_async(self, request):
+        """创建防护域名
+
+        创建防护域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAadDomain
+        :type request: :class:`huaweicloudsdkaad.v1.CreateAadDomainRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.CreateAadDomainResponse`
+        """
+        http_info = self._create_aad_domain_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_aad_domain_async_invoker(self, request):
+        http_info = self._create_aad_domain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_aad_domain_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aad/external/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAadDomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_certificate_async(self, request):
+        """上传/修改域名对应证书
+
+        上传/修改域名对应证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCertificate
+        :type request: :class:`huaweicloudsdkaad.v1.CreateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.CreateCertificateResponse`
+        """
+        http_info = self._create_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_certificate_async_invoker(self, request):
+        http_info = self._create_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_certificate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aad/external/domains/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_policy_async(self, request):
         """创建策略
 
@@ -411,6 +606,71 @@ class AadAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_black_white_ip_list_async(self, request):
+        """高防实例删除黑白名单
+
+        高防实例删除黑白名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBlackWhiteIpList
+        :type request: :class:`huaweicloudsdkaad.v1.DeleteBlackWhiteIpListRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.DeleteBlackWhiteIpListResponse`
+        """
+        http_info = self._delete_black_white_ip_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_black_white_ip_list_async_invoker(self, request):
+        http_info = self._delete_black_white_ip_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_black_white_ip_list_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/aad/external/bwlist",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBlackWhiteIpListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1167,6 +1427,69 @@ class AadAsyncClient(Client):
 
         return http_info
 
+    def list_source_ips_async(self, request):
+        """查询高防回源IP段列表
+
+        查询高防回源IP段列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSourceIps
+        :type request: :class:`huaweicloudsdkaad.v1.ListSourceIpsRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.ListSourceIpsResponse`
+        """
+        http_info = self._list_source_ips_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_source_ips_async_invoker(self, request):
+        http_info = self._list_source_ips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_source_ips_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aad/external/source-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSourceIpsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_unbound_protected_ip_async(self, request):
         """查询可绑定的防护对象列表
 
@@ -1215,6 +1538,71 @@ class AadAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_domain_web_switch_async(self, request):
+        """修改域名WEB基础防护开关/CC防护开关
+
+        修改域名WEB基础防护开关/CC防护开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyDomainWebSwitch
+        :type request: :class:`huaweicloudsdkaad.v1.ModifyDomainWebSwitchRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.ModifyDomainWebSwitchResponse`
+        """
+        http_info = self._modify_domain_web_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_domain_web_switch_async_invoker(self, request):
+        http_info = self._modify_domain_web_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_domain_web_switch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aad/external/domains/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyDomainWebSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

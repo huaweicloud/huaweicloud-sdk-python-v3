@@ -28,6 +28,9 @@ class ShowSmartLiveResponse(SdkResponse):
         'lastupdate_time': 'str',
         'rtc_room_info': 'RTCRoomInfoList',
         'live_event_report_url': 'str',
+        'live_event_callback_config': 'LiveEventCallBackConfig',
+        'stream_duration': 'float',
+        'block_reason': 'str',
         'x_request_id': 'str'
     }
 
@@ -42,17 +45,20 @@ class ShowSmartLiveResponse(SdkResponse):
         'lastupdate_time': 'lastupdate_time',
         'rtc_room_info': 'rtc_room_info',
         'live_event_report_url': 'live_event_report_url',
+        'live_event_callback_config': 'live_event_callback_config',
+        'stream_duration': 'stream_duration',
+        'block_reason': 'block_reason',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, x_request_id=None):
+    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, stream_duration=None, block_reason=None, x_request_id=None):
         """ShowSmartLiveResponse
 
         The model defined in huaweicloud sdk
 
         :param job_id: 数字人直播任务ID。
         :type job_id: str
-        :param state: 数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败
+        :param state: 数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * BLOCKED: 封禁
         :type state: str
         :param duration: 数字人直播时长，单位秒。
         :type duration: float
@@ -70,6 +76,12 @@ class ShowSmartLiveResponse(SdkResponse):
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
         :param live_event_report_url: 直播事件上报地址。用户将自行获取的直播间事件上报到此地址，用于触发智能互动，自动回复话术。
         :type live_event_report_url: str
+        :param live_event_callback_config: 
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :param stream_duration: 数字人直播推流时长，单位秒
+        :type stream_duration: float
+        :param block_reason: 封禁信息
+        :type block_reason: str
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -86,6 +98,9 @@ class ShowSmartLiveResponse(SdkResponse):
         self._lastupdate_time = None
         self._rtc_room_info = None
         self._live_event_report_url = None
+        self._live_event_callback_config = None
+        self._stream_duration = None
+        self._block_reason = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -109,6 +124,12 @@ class ShowSmartLiveResponse(SdkResponse):
             self.rtc_room_info = rtc_room_info
         if live_event_report_url is not None:
             self.live_event_report_url = live_event_report_url
+        if live_event_callback_config is not None:
+            self.live_event_callback_config = live_event_callback_config
+        if stream_duration is not None:
+            self.stream_duration = stream_duration
+        if block_reason is not None:
+            self.block_reason = block_reason
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -138,7 +159,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def state(self):
         """Gets the state of this ShowSmartLiveResponse.
 
-        数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败
+        数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * BLOCKED: 封禁
 
         :return: The state of this ShowSmartLiveResponse.
         :rtype: str
@@ -149,7 +170,7 @@ class ShowSmartLiveResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this ShowSmartLiveResponse.
 
-        数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败
+        数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * BLOCKED: 封禁
 
         :param state: The state of this ShowSmartLiveResponse.
         :type state: str
@@ -323,6 +344,68 @@ class ShowSmartLiveResponse(SdkResponse):
         :type live_event_report_url: str
         """
         self._live_event_report_url = live_event_report_url
+
+    @property
+    def live_event_callback_config(self):
+        """Gets the live_event_callback_config of this ShowSmartLiveResponse.
+
+        :return: The live_event_callback_config of this ShowSmartLiveResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        """
+        return self._live_event_callback_config
+
+    @live_event_callback_config.setter
+    def live_event_callback_config(self, live_event_callback_config):
+        """Sets the live_event_callback_config of this ShowSmartLiveResponse.
+
+        :param live_event_callback_config: The live_event_callback_config of this ShowSmartLiveResponse.
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        """
+        self._live_event_callback_config = live_event_callback_config
+
+    @property
+    def stream_duration(self):
+        """Gets the stream_duration of this ShowSmartLiveResponse.
+
+        数字人直播推流时长，单位秒
+
+        :return: The stream_duration of this ShowSmartLiveResponse.
+        :rtype: float
+        """
+        return self._stream_duration
+
+    @stream_duration.setter
+    def stream_duration(self, stream_duration):
+        """Sets the stream_duration of this ShowSmartLiveResponse.
+
+        数字人直播推流时长，单位秒
+
+        :param stream_duration: The stream_duration of this ShowSmartLiveResponse.
+        :type stream_duration: float
+        """
+        self._stream_duration = stream_duration
+
+    @property
+    def block_reason(self):
+        """Gets the block_reason of this ShowSmartLiveResponse.
+
+        封禁信息
+
+        :return: The block_reason of this ShowSmartLiveResponse.
+        :rtype: str
+        """
+        return self._block_reason
+
+    @block_reason.setter
+    def block_reason(self, block_reason):
+        """Sets the block_reason of this ShowSmartLiveResponse.
+
+        封禁信息
+
+        :param block_reason: The block_reason of this ShowSmartLiveResponse.
+        :type block_reason: str
+        """
+        self._block_reason = block_reason
 
     @property
     def x_request_id(self):

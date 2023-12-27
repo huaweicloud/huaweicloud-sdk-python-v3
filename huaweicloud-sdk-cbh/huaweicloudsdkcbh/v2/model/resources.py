@@ -18,7 +18,7 @@ class Resources:
 
     openapi_types = {
         'resource_id': 'str',
-        'resource_detail': 'object',
+        'resource_detail': 'InstanceDetail',
         'tags': 'list[ResourceTag]',
         'sys_tags': 'list[ResourceTag]',
         'resource_name': 'str'
@@ -39,8 +39,8 @@ class Resources:
 
         :param resource_id: 实例ID。
         :type resource_id: str
-        :param resource_detail: 资源详情。预留用于扩展，默认为空。
-        :type resource_detail: object
+        :param resource_detail: 
+        :type resource_detail: :class:`huaweicloudsdkcbh.v2.InstanceDetail`
         :param tags: tags。
         :type tags: list[:class:`huaweicloudsdkcbh.v2.ResourceTag`]
         :param sys_tags: sys_tags。
@@ -90,10 +90,8 @@ class Resources:
     def resource_detail(self):
         """Gets the resource_detail of this Resources.
 
-        资源详情。预留用于扩展，默认为空。
-
         :return: The resource_detail of this Resources.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcbh.v2.InstanceDetail`
         """
         return self._resource_detail
 
@@ -101,10 +99,8 @@ class Resources:
     def resource_detail(self, resource_detail):
         """Sets the resource_detail of this Resources.
 
-        资源详情。预留用于扩展，默认为空。
-
         :param resource_detail: The resource_detail of this Resources.
-        :type resource_detail: object
+        :type resource_detail: :class:`huaweicloudsdkcbh.v2.InstanceDetail`
         """
         self._resource_detail = resource_detail
 

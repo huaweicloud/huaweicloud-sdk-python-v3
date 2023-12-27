@@ -21,7 +21,8 @@ class TTSAJob:
         'state': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'content_duration': 'float'
+        'content_duration': 'float',
+        'job_type': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class TTSAJob:
         'state': 'state',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'content_duration': 'content_duration'
+        'content_duration': 'content_duration',
+        'job_type': 'job_type'
     }
 
-    def __init__(self, job_id=None, state=None, start_time=None, end_time=None, content_duration=None):
+    def __init__(self, job_id=None, state=None, start_time=None, end_time=None, content_duration=None, job_type=None):
         """TTSAJob
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class TTSAJob:
         :type end_time: str
         :param content_duration: 语音驱动内容时长。  单位:秒。
         :type content_duration: float
+        :param job_type: 任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
+        :type job_type: str
         """
         
         
@@ -56,6 +60,7 @@ class TTSAJob:
         self._start_time = None
         self._end_time = None
         self._content_duration = None
+        self._job_type = None
         self.discriminator = None
 
         if job_id is not None:
@@ -68,6 +73,8 @@ class TTSAJob:
             self.end_time = end_time
         if content_duration is not None:
             self.content_duration = content_duration
+        if job_type is not None:
+            self.job_type = job_type
 
     @property
     def job_id(self):
@@ -178,6 +185,28 @@ class TTSAJob:
         :type content_duration: float
         """
         self._content_duration = content_duration
+
+    @property
+    def job_type(self):
+        """Gets the job_type of this TTSAJob.
+
+        任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
+
+        :return: The job_type of this TTSAJob.
+        :rtype: str
+        """
+        return self._job_type
+
+    @job_type.setter
+    def job_type(self, job_type):
+        """Sets the job_type of this TTSAJob.
+
+        任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
+
+        :param job_type: The job_type of this TTSAJob.
+        :type job_type: str
+        """
+        self._job_type = job_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

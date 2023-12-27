@@ -2707,6 +2707,83 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         return http_info
 
+    def list_jobs_async(self, request):
+        """查询任务列表和详情
+
+        查询任务列表和详情，默认查询任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJobs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListJobsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListJobsResponse`
+        """
+        http_info = self._list_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_jobs_async_invoker(self, request):
+        http_info = self._list_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_lts_configs_async(self, request):
         """查询LTS日志配置信息
 

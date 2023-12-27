@@ -26,10 +26,17 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
         'play_policy': 'PlayPolicy',
         'video_config': 'VideoConfig',
         'output_urls': 'list[str]',
+        'stream_keys': 'list[str]',
+        'backup_model_asset_ids': 'list[str]',
+        'live_event_callback_config': 'LiveEventCallBackConfig',
+        'review_config': 'ReviewConfig',
+        'shared_config': 'SharedConfig',
         'room_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'cover_url': 'str',
+        'room_state': 'str',
+        'error_info': 'ErrorResponse',
         'x_request_id': 'str'
     }
 
@@ -42,14 +49,21 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
         'play_policy': 'play_policy',
         'video_config': 'video_config',
         'output_urls': 'output_urls',
+        'stream_keys': 'stream_keys',
+        'backup_model_asset_ids': 'backup_model_asset_ids',
+        'live_event_callback_config': 'live_event_callback_config',
+        'review_config': 'review_config',
+        'shared_config': 'shared_config',
         'room_id': 'room_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'cover_url': 'cover_url',
+        'room_state': 'room_state',
+        'error_info': 'error_info',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, room_id=None, create_time=None, update_time=None, cover_url=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None, room_id=None, create_time=None, update_time=None, cover_url=None, room_state=None, error_info=None, x_request_id=None):
         """UpdateSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
@@ -58,7 +72,7 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
         :type room_name: str
         :param room_description: 直播间描述。
         :type room_description: str
-        :param room_type: 直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。
+        :param room_type: 直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
         :type room_type: str
         :param scene_scripts: 默认直播剧本列表。
         :type scene_scripts: list[:class:`huaweicloudsdkmetastudio.v1.LiveVideoScriptInfo`]
@@ -68,8 +82,18 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
-        :param output_urls: 视频推流第三方直播平台地址。
+        :param output_urls: RTMP视频推流第三方直播平台地址。
         :type output_urls: list[str]
+        :param stream_keys: RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+        :type stream_keys: list[str]
+        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        :type backup_model_asset_ids: list[str]
+        :param live_event_callback_config: 
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :param review_config: 
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        :param shared_config: 
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         :param room_id: 直播间ID
         :type room_id: str
         :param create_time: 直播间创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -78,6 +102,10 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
         :type update_time: str
         :param cover_url: 直播间封面图URL
         :type cover_url: str
+        :param room_state: 直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
+        :type room_state: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -92,10 +120,17 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
         self._play_policy = None
         self._video_config = None
         self._output_urls = None
+        self._stream_keys = None
+        self._backup_model_asset_ids = None
+        self._live_event_callback_config = None
+        self._review_config = None
+        self._shared_config = None
         self._room_id = None
         self._create_time = None
         self._update_time = None
         self._cover_url = None
+        self._room_state = None
+        self._error_info = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -114,6 +149,16 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
             self.video_config = video_config
         if output_urls is not None:
             self.output_urls = output_urls
+        if stream_keys is not None:
+            self.stream_keys = stream_keys
+        if backup_model_asset_ids is not None:
+            self.backup_model_asset_ids = backup_model_asset_ids
+        if live_event_callback_config is not None:
+            self.live_event_callback_config = live_event_callback_config
+        if review_config is not None:
+            self.review_config = review_config
+        if shared_config is not None:
+            self.shared_config = shared_config
         if room_id is not None:
             self.room_id = room_id
         if create_time is not None:
@@ -122,6 +167,10 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
             self.update_time = update_time
         if cover_url is not None:
             self.cover_url = cover_url
+        if room_state is not None:
+            self.room_state = room_state
+        if error_info is not None:
+            self.error_info = error_info
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -173,7 +222,7 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
     def room_type(self):
         """Gets the room_type of this UpdateSmartLiveRoomResponse.
 
-        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。
+        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
 
         :return: The room_type of this UpdateSmartLiveRoomResponse.
         :rtype: str
@@ -184,7 +233,7 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
     def room_type(self, room_type):
         """Sets the room_type of this UpdateSmartLiveRoomResponse.
 
-        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。
+        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
 
         :param room_type: The room_type of this UpdateSmartLiveRoomResponse.
         :type room_type: str
@@ -275,7 +324,7 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
     def output_urls(self):
         """Gets the output_urls of this UpdateSmartLiveRoomResponse.
 
-        视频推流第三方直播平台地址。
+        RTMP视频推流第三方直播平台地址。
 
         :return: The output_urls of this UpdateSmartLiveRoomResponse.
         :rtype: list[str]
@@ -286,12 +335,110 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
     def output_urls(self, output_urls):
         """Sets the output_urls of this UpdateSmartLiveRoomResponse.
 
-        视频推流第三方直播平台地址。
+        RTMP视频推流第三方直播平台地址。
 
         :param output_urls: The output_urls of this UpdateSmartLiveRoomResponse.
         :type output_urls: list[str]
         """
         self._output_urls = output_urls
+
+    @property
+    def stream_keys(self):
+        """Gets the stream_keys of this UpdateSmartLiveRoomResponse.
+
+        RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+
+        :return: The stream_keys of this UpdateSmartLiveRoomResponse.
+        :rtype: list[str]
+        """
+        return self._stream_keys
+
+    @stream_keys.setter
+    def stream_keys(self, stream_keys):
+        """Sets the stream_keys of this UpdateSmartLiveRoomResponse.
+
+        RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+
+        :param stream_keys: The stream_keys of this UpdateSmartLiveRoomResponse.
+        :type stream_keys: list[str]
+        """
+        self._stream_keys = stream_keys
+
+    @property
+    def backup_model_asset_ids(self):
+        """Gets the backup_model_asset_ids of this UpdateSmartLiveRoomResponse.
+
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+
+        :return: The backup_model_asset_ids of this UpdateSmartLiveRoomResponse.
+        :rtype: list[str]
+        """
+        return self._backup_model_asset_ids
+
+    @backup_model_asset_ids.setter
+    def backup_model_asset_ids(self, backup_model_asset_ids):
+        """Sets the backup_model_asset_ids of this UpdateSmartLiveRoomResponse.
+
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+
+        :param backup_model_asset_ids: The backup_model_asset_ids of this UpdateSmartLiveRoomResponse.
+        :type backup_model_asset_ids: list[str]
+        """
+        self._backup_model_asset_ids = backup_model_asset_ids
+
+    @property
+    def live_event_callback_config(self):
+        """Gets the live_event_callback_config of this UpdateSmartLiveRoomResponse.
+
+        :return: The live_event_callback_config of this UpdateSmartLiveRoomResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        """
+        return self._live_event_callback_config
+
+    @live_event_callback_config.setter
+    def live_event_callback_config(self, live_event_callback_config):
+        """Sets the live_event_callback_config of this UpdateSmartLiveRoomResponse.
+
+        :param live_event_callback_config: The live_event_callback_config of this UpdateSmartLiveRoomResponse.
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        """
+        self._live_event_callback_config = live_event_callback_config
+
+    @property
+    def review_config(self):
+        """Gets the review_config of this UpdateSmartLiveRoomResponse.
+
+        :return: The review_config of this UpdateSmartLiveRoomResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        return self._review_config
+
+    @review_config.setter
+    def review_config(self, review_config):
+        """Sets the review_config of this UpdateSmartLiveRoomResponse.
+
+        :param review_config: The review_config of this UpdateSmartLiveRoomResponse.
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        self._review_config = review_config
+
+    @property
+    def shared_config(self):
+        """Gets the shared_config of this UpdateSmartLiveRoomResponse.
+
+        :return: The shared_config of this UpdateSmartLiveRoomResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        return self._shared_config
+
+    @shared_config.setter
+    def shared_config(self, shared_config):
+        """Sets the shared_config of this UpdateSmartLiveRoomResponse.
+
+        :param shared_config: The shared_config of this UpdateSmartLiveRoomResponse.
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        self._shared_config = shared_config
 
     @property
     def room_id(self):
@@ -380,6 +527,46 @@ class UpdateSmartLiveRoomResponse(SdkResponse):
         :type cover_url: str
         """
         self._cover_url = cover_url
+
+    @property
+    def room_state(self):
+        """Gets the room_state of this UpdateSmartLiveRoomResponse.
+
+        直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
+
+        :return: The room_state of this UpdateSmartLiveRoomResponse.
+        :rtype: str
+        """
+        return self._room_state
+
+    @room_state.setter
+    def room_state(self, room_state):
+        """Sets the room_state of this UpdateSmartLiveRoomResponse.
+
+        直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
+
+        :param room_state: The room_state of this UpdateSmartLiveRoomResponse.
+        :type room_state: str
+        """
+        self._room_state = room_state
+
+    @property
+    def error_info(self):
+        """Gets the error_info of this UpdateSmartLiveRoomResponse.
+
+        :return: The error_info of this UpdateSmartLiveRoomResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        """Sets the error_info of this UpdateSmartLiveRoomResponse.
+
+        :param error_info: The error_info of this UpdateSmartLiveRoomResponse.
+        :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        """
+        self._error_info = error_info
 
     @property
     def x_request_id(self):

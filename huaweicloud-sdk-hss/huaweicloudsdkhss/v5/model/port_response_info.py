@@ -23,7 +23,9 @@ class PortResponseInfo:
         'port': 'int',
         'type': 'str',
         'pid': 'int',
-        'path': 'str'
+        'path': 'str',
+        'agent_id': 'str',
+        'container_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class PortResponseInfo:
         'port': 'port',
         'type': 'type',
         'pid': 'pid',
-        'path': 'path'
+        'path': 'path',
+        'agent_id': 'agent_id',
+        'container_id': 'container_id'
     }
 
-    def __init__(self, host_id=None, laddr=None, status=None, port=None, type=None, pid=None, path=None):
+    def __init__(self, host_id=None, laddr=None, status=None, port=None, type=None, pid=None, path=None, agent_id=None, container_id=None):
         """PortResponseInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class PortResponseInfo:
         :type pid: int
         :param path: 程序文件
         :type path: str
+        :param agent_id: agent id
+        :type agent_id: str
+        :param container_id: 容器id
+        :type container_id: str
         """
         
         
@@ -66,6 +74,8 @@ class PortResponseInfo:
         self._type = None
         self._pid = None
         self._path = None
+        self._agent_id = None
+        self._container_id = None
         self.discriminator = None
 
         if host_id is not None:
@@ -82,6 +92,10 @@ class PortResponseInfo:
             self.pid = pid
         if path is not None:
             self.path = path
+        if agent_id is not None:
+            self.agent_id = agent_id
+        if container_id is not None:
+            self.container_id = container_id
 
     @property
     def host_id(self):
@@ -236,6 +250,50 @@ class PortResponseInfo:
         :type path: str
         """
         self._path = path
+
+    @property
+    def agent_id(self):
+        """Gets the agent_id of this PortResponseInfo.
+
+        agent id
+
+        :return: The agent_id of this PortResponseInfo.
+        :rtype: str
+        """
+        return self._agent_id
+
+    @agent_id.setter
+    def agent_id(self, agent_id):
+        """Sets the agent_id of this PortResponseInfo.
+
+        agent id
+
+        :param agent_id: The agent_id of this PortResponseInfo.
+        :type agent_id: str
+        """
+        self._agent_id = agent_id
+
+    @property
+    def container_id(self):
+        """Gets the container_id of this PortResponseInfo.
+
+        容器id
+
+        :return: The container_id of this PortResponseInfo.
+        :rtype: str
+        """
+        return self._container_id
+
+    @container_id.setter
+    def container_id(self, container_id):
+        """Sets the container_id of this PortResponseInfo.
+
+        容器id
+
+        :param container_id: The container_id of this PortResponseInfo.
+        :type container_id: str
+        """
+        self._container_id = container_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

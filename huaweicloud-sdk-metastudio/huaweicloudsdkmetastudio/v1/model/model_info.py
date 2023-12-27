@@ -18,15 +18,17 @@ class ModelInfo:
 
     openapi_types = {
         'model_asset_id': 'str',
-        'asset_name': 'str'
+        'asset_name': 'str',
+        'backup_model_asset_ids': 'list[str]'
     }
 
     attribute_map = {
         'model_asset_id': 'model_asset_id',
-        'asset_name': 'asset_name'
+        'asset_name': 'asset_name',
+        'backup_model_asset_ids': 'backup_model_asset_ids'
     }
 
-    def __init__(self, model_asset_id=None, asset_name=None):
+    def __init__(self, model_asset_id=None, asset_name=None, backup_model_asset_ids=None):
         """ModelInfo
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ModelInfo:
         :type model_asset_id: str
         :param asset_name: 资产名称
         :type asset_name: str
+        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        :type backup_model_asset_ids: list[str]
         """
         
         
 
         self._model_asset_id = None
         self._asset_name = None
+        self._backup_model_asset_ids = None
         self.discriminator = None
 
         if model_asset_id is not None:
             self.model_asset_id = model_asset_id
         if asset_name is not None:
             self.asset_name = asset_name
+        if backup_model_asset_ids is not None:
+            self.backup_model_asset_ids = backup_model_asset_ids
 
     @property
     def model_asset_id(self):
@@ -91,6 +98,28 @@ class ModelInfo:
         :type asset_name: str
         """
         self._asset_name = asset_name
+
+    @property
+    def backup_model_asset_ids(self):
+        """Gets the backup_model_asset_ids of this ModelInfo.
+
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+
+        :return: The backup_model_asset_ids of this ModelInfo.
+        :rtype: list[str]
+        """
+        return self._backup_model_asset_ids
+
+    @backup_model_asset_ids.setter
+    def backup_model_asset_ids(self, backup_model_asset_ids):
+        """Sets the backup_model_asset_ids of this ModelInfo.
+
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+
+        :param backup_model_asset_ids: The backup_model_asset_ids of this ModelInfo.
+        :type backup_model_asset_ids: list[str]
+        """
+        self._backup_model_asset_ids = backup_model_asset_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

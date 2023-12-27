@@ -43,10 +43,8 @@ class ResetConsumeOffsetReq:
         self._timestamp = None
         self.discriminator = None
 
-        if topic is not None:
-            self.topic = topic
-        if timestamp is not None:
-            self.timestamp = timestamp
+        self.topic = topic
+        self.timestamp = timestamp
 
     @property
     def topic(self):

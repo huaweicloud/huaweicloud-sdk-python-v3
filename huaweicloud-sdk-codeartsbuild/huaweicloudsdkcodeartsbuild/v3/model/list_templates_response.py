@@ -18,7 +18,7 @@ class ListTemplatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'list[QueryTemplatesResult]',
+        'result': 'QueryTemplatesResult',
         'error': 'str',
         'status': 'str'
     }
@@ -34,8 +34,8 @@ class ListTemplatesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 查询模板结果
-        :type result: list[:class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplatesResult`]
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplatesResult`
         :param error: 返回错误信息
         :type error: str
         :param status: 返回状态信息
@@ -60,10 +60,8 @@ class ListTemplatesResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListTemplatesResponse.
 
-        查询模板结果
-
         :return: The result of this ListTemplatesResponse.
-        :rtype: list[:class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplatesResult`]
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplatesResult`
         """
         return self._result
 
@@ -71,10 +69,8 @@ class ListTemplatesResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ListTemplatesResponse.
 
-        查询模板结果
-
         :param result: The result of this ListTemplatesResponse.
-        :type result: list[:class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplatesResult`]
+        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplatesResult`
         """
         self._result = result
 

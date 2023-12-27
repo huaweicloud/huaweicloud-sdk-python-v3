@@ -7651,6 +7651,73 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def stop_backup_async(self, request):
+        """停止备份
+
+        停止创建备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopBackup
+        :type request: :class:`huaweicloudsdkrds.v3.StopBackupRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StopBackupResponse`
+        """
+        http_info = self._stop_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_backup_async_invoker(self, request):
+        http_info = self._stop_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_backup_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def stop_instance_async(self, request):
         """停止实例
 
@@ -12798,6 +12865,73 @@ class RdsAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/db_shrink",
             "request_type": request.__class__.__name__,
             "response_type": "SetInstancesDbShrinkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_instances_new_db_shrink_async(self, request):
+        """收缩数据库日志
+
+        收缩数据库日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetInstancesNewDbShrink
+        :type request: :class:`huaweicloudsdkrds.v3.SetInstancesNewDbShrinkRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetInstancesNewDbShrinkResponse`
+        """
+        http_info = self._set_instances_new_db_shrink_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_instances_new_db_shrink_async_invoker(self, request):
+        http_info = self._set_instances_new_db_shrink_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_instances_new_db_shrink_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/db-shrink",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetInstancesNewDbShrinkResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

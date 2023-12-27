@@ -18,15 +18,17 @@ class ReportLiveEventReq:
 
     openapi_types = {
         'total': 'int',
-        'events': 'list[LiveEvent]'
+        'events': 'list[LiveEvent]',
+        'review_config': 'ReviewConfig'
     }
 
     attribute_map = {
         'total': 'total',
-        'events': 'events'
+        'events': 'events',
+        'review_config': 'review_config'
     }
 
-    def __init__(self, total=None, events=None):
+    def __init__(self, total=None, events=None, review_config=None):
         """ReportLiveEventReq
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class ReportLiveEventReq:
         :type total: int
         :param events: 事件内容。
         :type events: list[:class:`huaweicloudsdkmetastudio.v1.LiveEvent`]
+        :param review_config: 
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         """
         
         
 
         self._total = None
         self._events = None
+        self._review_config = None
         self.discriminator = None
 
         self.total = total
         if events is not None:
             self.events = events
+        if review_config is not None:
+            self.review_config = review_config
 
     @property
     def total(self):
@@ -90,6 +97,24 @@ class ReportLiveEventReq:
         :type events: list[:class:`huaweicloudsdkmetastudio.v1.LiveEvent`]
         """
         self._events = events
+
+    @property
+    def review_config(self):
+        """Gets the review_config of this ReportLiveEventReq.
+
+        :return: The review_config of this ReportLiveEventReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        return self._review_config
+
+    @review_config.setter
+    def review_config(self, review_config):
+        """Sets the review_config of this ReportLiveEventReq.
+
+        :param review_config: The review_config of this ReportLiveEventReq.
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        self._review_config = review_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

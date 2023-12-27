@@ -20,10 +20,11 @@ class VideoScriptBaseInfo:
         'script_id': 'str',
         'script_name': 'str',
         'script_description': 'str',
-        'video_making_type': 'str',
-        'human_image': 'str',
         'model_asset_id': 'str',
         'model_asset_type': 'str',
+        'script_cover_url': 'str',
+        'script_type': 'str',
+        'text': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -32,15 +33,16 @@ class VideoScriptBaseInfo:
         'script_id': 'script_id',
         'script_name': 'script_name',
         'script_description': 'script_description',
-        'video_making_type': 'video_making_type',
-        'human_image': 'human_image',
         'model_asset_id': 'model_asset_id',
         'model_asset_type': 'model_asset_type',
+        'script_cover_url': 'script_cover_url',
+        'script_type': 'script_type',
+        'text': 'text',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, script_id=None, script_name=None, script_description=None, video_making_type=None, human_image=None, model_asset_id=None, model_asset_type=None, create_time=None, update_time=None):
+    def __init__(self, script_id=None, script_name=None, script_description=None, model_asset_id=None, model_asset_type=None, script_cover_url=None, script_type=None, text=None, create_time=None, update_time=None):
         """VideoScriptBaseInfo
 
         The model defined in huaweicloud sdk
@@ -51,14 +53,16 @@ class VideoScriptBaseInfo:
         :type script_name: str
         :param script_description: 剧本描述。
         :type script_description: str
-        :param video_making_type: 视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
-        :type video_making_type: str
-        :param human_image: 人物照片，需要Base64编码。
-        :type human_image: str
         :param model_asset_id: 数字人模型资产ID。
         :type model_asset_id: str
         :param model_asset_type: 数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
         :type model_asset_type: str
+        :param script_cover_url: 剧本封面下载url。
+        :type script_cover_url: str
+        :param script_type: 脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+        :type script_type: str
+        :param text: 台词脚本。
+        :type text: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -70,10 +74,11 @@ class VideoScriptBaseInfo:
         self._script_id = None
         self._script_name = None
         self._script_description = None
-        self._video_making_type = None
-        self._human_image = None
         self._model_asset_id = None
         self._model_asset_type = None
+        self._script_cover_url = None
+        self._script_type = None
+        self._text = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -82,14 +87,16 @@ class VideoScriptBaseInfo:
         self.script_name = script_name
         if script_description is not None:
             self.script_description = script_description
-        if video_making_type is not None:
-            self.video_making_type = video_making_type
-        if human_image is not None:
-            self.human_image = human_image
         if model_asset_id is not None:
             self.model_asset_id = model_asset_id
         if model_asset_type is not None:
             self.model_asset_type = model_asset_type
+        if script_cover_url is not None:
+            self.script_cover_url = script_cover_url
+        if script_type is not None:
+            self.script_type = script_type
+        if text is not None:
+            self.text = text
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -162,50 +169,6 @@ class VideoScriptBaseInfo:
         self._script_description = script_description
 
     @property
-    def video_making_type(self):
-        """Gets the video_making_type of this VideoScriptBaseInfo.
-
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
-
-        :return: The video_making_type of this VideoScriptBaseInfo.
-        :rtype: str
-        """
-        return self._video_making_type
-
-    @video_making_type.setter
-    def video_making_type(self, video_making_type):
-        """Sets the video_making_type of this VideoScriptBaseInfo.
-
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
-
-        :param video_making_type: The video_making_type of this VideoScriptBaseInfo.
-        :type video_making_type: str
-        """
-        self._video_making_type = video_making_type
-
-    @property
-    def human_image(self):
-        """Gets the human_image of this VideoScriptBaseInfo.
-
-        人物照片，需要Base64编码。
-
-        :return: The human_image of this VideoScriptBaseInfo.
-        :rtype: str
-        """
-        return self._human_image
-
-    @human_image.setter
-    def human_image(self, human_image):
-        """Sets the human_image of this VideoScriptBaseInfo.
-
-        人物照片，需要Base64编码。
-
-        :param human_image: The human_image of this VideoScriptBaseInfo.
-        :type human_image: str
-        """
-        self._human_image = human_image
-
-    @property
     def model_asset_id(self):
         """Gets the model_asset_id of this VideoScriptBaseInfo.
 
@@ -248,6 +211,72 @@ class VideoScriptBaseInfo:
         :type model_asset_type: str
         """
         self._model_asset_type = model_asset_type
+
+    @property
+    def script_cover_url(self):
+        """Gets the script_cover_url of this VideoScriptBaseInfo.
+
+        剧本封面下载url。
+
+        :return: The script_cover_url of this VideoScriptBaseInfo.
+        :rtype: str
+        """
+        return self._script_cover_url
+
+    @script_cover_url.setter
+    def script_cover_url(self, script_cover_url):
+        """Sets the script_cover_url of this VideoScriptBaseInfo.
+
+        剧本封面下载url。
+
+        :param script_cover_url: The script_cover_url of this VideoScriptBaseInfo.
+        :type script_cover_url: str
+        """
+        self._script_cover_url = script_cover_url
+
+    @property
+    def script_type(self):
+        """Gets the script_type of this VideoScriptBaseInfo.
+
+        脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+
+        :return: The script_type of this VideoScriptBaseInfo.
+        :rtype: str
+        """
+        return self._script_type
+
+    @script_type.setter
+    def script_type(self, script_type):
+        """Sets the script_type of this VideoScriptBaseInfo.
+
+        脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+
+        :param script_type: The script_type of this VideoScriptBaseInfo.
+        :type script_type: str
+        """
+        self._script_type = script_type
+
+    @property
+    def text(self):
+        """Gets the text of this VideoScriptBaseInfo.
+
+        台词脚本。
+
+        :return: The text of this VideoScriptBaseInfo.
+        :rtype: str
+        """
+        return self._text
+
+    @text.setter
+    def text(self, text):
+        """Sets the text of this VideoScriptBaseInfo.
+
+        台词脚本。
+
+        :param text: The text of this VideoScriptBaseInfo.
+        :type text: str
+        """
+        self._text = text
 
     @property
     def create_time(self):

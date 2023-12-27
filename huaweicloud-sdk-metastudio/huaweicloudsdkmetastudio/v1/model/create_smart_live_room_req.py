@@ -24,7 +24,12 @@ class CreateSmartLiveRoomReq:
         'interaction_rules': 'list[InteractionRuleInfo]',
         'play_policy': 'PlayPolicy',
         'video_config': 'VideoConfig',
-        'output_urls': 'list[str]'
+        'output_urls': 'list[str]',
+        'stream_keys': 'list[str]',
+        'backup_model_asset_ids': 'list[str]',
+        'live_event_callback_config': 'LiveEventCallBackConfig',
+        'review_config': 'ReviewConfig',
+        'shared_config': 'SharedConfig'
     }
 
     attribute_map = {
@@ -35,10 +40,15 @@ class CreateSmartLiveRoomReq:
         'interaction_rules': 'interaction_rules',
         'play_policy': 'play_policy',
         'video_config': 'video_config',
-        'output_urls': 'output_urls'
+        'output_urls': 'output_urls',
+        'stream_keys': 'stream_keys',
+        'backup_model_asset_ids': 'backup_model_asset_ids',
+        'live_event_callback_config': 'live_event_callback_config',
+        'review_config': 'review_config',
+        'shared_config': 'shared_config'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None):
         """CreateSmartLiveRoomReq
 
         The model defined in huaweicloud sdk
@@ -47,7 +57,7 @@ class CreateSmartLiveRoomReq:
         :type room_name: str
         :param room_description: 直播间描述。
         :type room_description: str
-        :param room_type: 直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。
+        :param room_type: 直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
         :type room_type: str
         :param scene_scripts: 默认直播剧本列表。
         :type scene_scripts: list[:class:`huaweicloudsdkmetastudio.v1.LiveVideoScriptInfo`]
@@ -57,8 +67,18 @@ class CreateSmartLiveRoomReq:
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
-        :param output_urls: 视频推流第三方直播平台地址。
+        :param output_urls: RTMP视频推流第三方直播平台地址。
         :type output_urls: list[str]
+        :param stream_keys: RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+        :type stream_keys: list[str]
+        :param backup_model_asset_ids: 主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+        :type backup_model_asset_ids: list[str]
+        :param live_event_callback_config: 
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :param review_config: 
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        :param shared_config: 
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         """
         
         
@@ -71,6 +91,11 @@ class CreateSmartLiveRoomReq:
         self._play_policy = None
         self._video_config = None
         self._output_urls = None
+        self._stream_keys = None
+        self._backup_model_asset_ids = None
+        self._live_event_callback_config = None
+        self._review_config = None
+        self._shared_config = None
         self.discriminator = None
 
         self.room_name = room_name
@@ -88,6 +113,16 @@ class CreateSmartLiveRoomReq:
             self.video_config = video_config
         if output_urls is not None:
             self.output_urls = output_urls
+        if stream_keys is not None:
+            self.stream_keys = stream_keys
+        if backup_model_asset_ids is not None:
+            self.backup_model_asset_ids = backup_model_asset_ids
+        if live_event_callback_config is not None:
+            self.live_event_callback_config = live_event_callback_config
+        if review_config is not None:
+            self.review_config = review_config
+        if shared_config is not None:
+            self.shared_config = shared_config
 
     @property
     def room_name(self):
@@ -137,7 +172,7 @@ class CreateSmartLiveRoomReq:
     def room_type(self):
         """Gets the room_type of this CreateSmartLiveRoomReq.
 
-        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。
+        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
 
         :return: The room_type of this CreateSmartLiveRoomReq.
         :rtype: str
@@ -148,7 +183,7 @@ class CreateSmartLiveRoomReq:
     def room_type(self, room_type):
         """Sets the room_type of this CreateSmartLiveRoomReq.
 
-        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。
+        直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
 
         :param room_type: The room_type of this CreateSmartLiveRoomReq.
         :type room_type: str
@@ -239,7 +274,7 @@ class CreateSmartLiveRoomReq:
     def output_urls(self):
         """Gets the output_urls of this CreateSmartLiveRoomReq.
 
-        视频推流第三方直播平台地址。
+        RTMP视频推流第三方直播平台地址。
 
         :return: The output_urls of this CreateSmartLiveRoomReq.
         :rtype: list[str]
@@ -250,12 +285,110 @@ class CreateSmartLiveRoomReq:
     def output_urls(self, output_urls):
         """Sets the output_urls of this CreateSmartLiveRoomReq.
 
-        视频推流第三方直播平台地址。
+        RTMP视频推流第三方直播平台地址。
 
         :param output_urls: The output_urls of this CreateSmartLiveRoomReq.
         :type output_urls: list[str]
         """
         self._output_urls = output_urls
+
+    @property
+    def stream_keys(self):
+        """Gets the stream_keys of this CreateSmartLiveRoomReq.
+
+        RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+
+        :return: The stream_keys of this CreateSmartLiveRoomReq.
+        :rtype: list[str]
+        """
+        return self._stream_keys
+
+    @stream_keys.setter
+    def stream_keys(self, stream_keys):
+        """Sets the stream_keys of this CreateSmartLiveRoomReq.
+
+        RTMP视频推流第三方直播平台流秘钥，与推流地址对应。
+
+        :param stream_keys: The stream_keys of this CreateSmartLiveRoomReq.
+        :type stream_keys: list[str]
+        """
+        self._stream_keys = stream_keys
+
+    @property
+    def backup_model_asset_ids(self):
+        """Gets the backup_model_asset_ids of this CreateSmartLiveRoomReq.
+
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+
+        :return: The backup_model_asset_ids of this CreateSmartLiveRoomReq.
+        :rtype: list[str]
+        """
+        return self._backup_model_asset_ids
+
+    @backup_model_asset_ids.setter
+    def backup_model_asset_ids(self, backup_model_asset_ids):
+        """Sets the backup_model_asset_ids of this CreateSmartLiveRoomReq.
+
+        主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色）。
+
+        :param backup_model_asset_ids: The backup_model_asset_ids of this CreateSmartLiveRoomReq.
+        :type backup_model_asset_ids: list[str]
+        """
+        self._backup_model_asset_ids = backup_model_asset_ids
+
+    @property
+    def live_event_callback_config(self):
+        """Gets the live_event_callback_config of this CreateSmartLiveRoomReq.
+
+        :return: The live_event_callback_config of this CreateSmartLiveRoomReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        """
+        return self._live_event_callback_config
+
+    @live_event_callback_config.setter
+    def live_event_callback_config(self, live_event_callback_config):
+        """Sets the live_event_callback_config of this CreateSmartLiveRoomReq.
+
+        :param live_event_callback_config: The live_event_callback_config of this CreateSmartLiveRoomReq.
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        """
+        self._live_event_callback_config = live_event_callback_config
+
+    @property
+    def review_config(self):
+        """Gets the review_config of this CreateSmartLiveRoomReq.
+
+        :return: The review_config of this CreateSmartLiveRoomReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        return self._review_config
+
+    @review_config.setter
+    def review_config(self, review_config):
+        """Sets the review_config of this CreateSmartLiveRoomReq.
+
+        :param review_config: The review_config of this CreateSmartLiveRoomReq.
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        self._review_config = review_config
+
+    @property
+    def shared_config(self):
+        """Gets the shared_config of this CreateSmartLiveRoomReq.
+
+        :return: The shared_config of this CreateSmartLiveRoomReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        return self._shared_config
+
+    @shared_config.setter
+    def shared_config(self, shared_config):
+        """Sets the shared_config of this CreateSmartLiveRoomReq.
+
+        :param shared_config: The shared_config of this CreateSmartLiveRoomReq.
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        self._shared_config = shared_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,17 +20,19 @@ class VoiceModelAssetMeta:
         'model_type': 'str',
         'sex': 'str',
         'language': 'str',
-        'external_voice_meta': 'ExternalVoiceAssetMeta'
+        'speed_ratio': 'float',
+        'volume_ratio': 'float'
     }
 
     attribute_map = {
         'model_type': 'model_type',
         'sex': 'sex',
         'language': 'language',
-        'external_voice_meta': 'external_voice_meta'
+        'speed_ratio': 'speed_ratio',
+        'volume_ratio': 'volume_ratio'
     }
 
-    def __init__(self, model_type=None, sex=None, language=None, external_voice_meta=None):
+    def __init__(self, model_type=None, sex=None, language=None, speed_ratio=None, volume_ratio=None):
         """VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
@@ -39,10 +41,12 @@ class VoiceModelAssetMeta:
         :type model_type: str
         :param sex: 音色性别。 * UNKNOW：中性音色 * MALE：男性音色 * FEMALE：女性音色  默认UNKNOW。
         :type sex: str
-        :param language: 音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文  默认UNKNOW。
+        :param language: 音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文 * GER：德语 * fr：法语 * Kr：韩语 * por：葡萄牙语 * JPN：日语 * Ita：意大利语 * ESP：西班牙语 * DBH：东北话 * GT：港台 * GXH：广西话 * HBH：湖北话 * SXH：陕西话 * SCH：四川话 * YY：粤语 * Russian: 俄罗斯语 * Filipino: 菲律宾语 * Dutch: 荷兰语 * Indonesian: 印尼语 * Vietnamese: 越南语 * Arabic: 阿拉伯语 * Turkish: 土耳其语 * Malay: 马来语 * Thai: 泰语 * Finnish: 芬兰语  默认UNKNOW。
         :type language: str
-        :param external_voice_meta: 
-        :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        :param speed_ratio: 语速缩放比例
+        :type speed_ratio: float
+        :param volume_ratio: 音量缩放比例
+        :type volume_ratio: float
         """
         
         
@@ -50,7 +54,8 @@ class VoiceModelAssetMeta:
         self._model_type = None
         self._sex = None
         self._language = None
-        self._external_voice_meta = None
+        self._speed_ratio = None
+        self._volume_ratio = None
         self.discriminator = None
 
         if model_type is not None:
@@ -59,8 +64,10 @@ class VoiceModelAssetMeta:
             self.sex = sex
         if language is not None:
             self.language = language
-        if external_voice_meta is not None:
-            self.external_voice_meta = external_voice_meta
+        if speed_ratio is not None:
+            self.speed_ratio = speed_ratio
+        if volume_ratio is not None:
+            self.volume_ratio = volume_ratio
 
     @property
     def model_type(self):
@@ -110,7 +117,7 @@ class VoiceModelAssetMeta:
     def language(self):
         """Gets the language of this VoiceModelAssetMeta.
 
-        音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文  默认UNKNOW。
+        音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文 * GER：德语 * fr：法语 * Kr：韩语 * por：葡萄牙语 * JPN：日语 * Ita：意大利语 * ESP：西班牙语 * DBH：东北话 * GT：港台 * GXH：广西话 * HBH：湖北话 * SXH：陕西话 * SCH：四川话 * YY：粤语 * Russian: 俄罗斯语 * Filipino: 菲律宾语 * Dutch: 荷兰语 * Indonesian: 印尼语 * Vietnamese: 越南语 * Arabic: 阿拉伯语 * Turkish: 土耳其语 * Malay: 马来语 * Thai: 泰语 * Finnish: 芬兰语  默认UNKNOW。
 
         :return: The language of this VoiceModelAssetMeta.
         :rtype: str
@@ -121,7 +128,7 @@ class VoiceModelAssetMeta:
     def language(self, language):
         """Sets the language of this VoiceModelAssetMeta.
 
-        音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文  默认UNKNOW。
+        音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文 * GER：德语 * fr：法语 * Kr：韩语 * por：葡萄牙语 * JPN：日语 * Ita：意大利语 * ESP：西班牙语 * DBH：东北话 * GT：港台 * GXH：广西话 * HBH：湖北话 * SXH：陕西话 * SCH：四川话 * YY：粤语 * Russian: 俄罗斯语 * Filipino: 菲律宾语 * Dutch: 荷兰语 * Indonesian: 印尼语 * Vietnamese: 越南语 * Arabic: 阿拉伯语 * Turkish: 土耳其语 * Malay: 马来语 * Thai: 泰语 * Finnish: 芬兰语  默认UNKNOW。
 
         :param language: The language of this VoiceModelAssetMeta.
         :type language: str
@@ -129,22 +136,48 @@ class VoiceModelAssetMeta:
         self._language = language
 
     @property
-    def external_voice_meta(self):
-        """Gets the external_voice_meta of this VoiceModelAssetMeta.
+    def speed_ratio(self):
+        """Gets the speed_ratio of this VoiceModelAssetMeta.
 
-        :return: The external_voice_meta of this VoiceModelAssetMeta.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        语速缩放比例
+
+        :return: The speed_ratio of this VoiceModelAssetMeta.
+        :rtype: float
         """
-        return self._external_voice_meta
+        return self._speed_ratio
 
-    @external_voice_meta.setter
-    def external_voice_meta(self, external_voice_meta):
-        """Sets the external_voice_meta of this VoiceModelAssetMeta.
+    @speed_ratio.setter
+    def speed_ratio(self, speed_ratio):
+        """Sets the speed_ratio of this VoiceModelAssetMeta.
 
-        :param external_voice_meta: The external_voice_meta of this VoiceModelAssetMeta.
-        :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        语速缩放比例
+
+        :param speed_ratio: The speed_ratio of this VoiceModelAssetMeta.
+        :type speed_ratio: float
         """
-        self._external_voice_meta = external_voice_meta
+        self._speed_ratio = speed_ratio
+
+    @property
+    def volume_ratio(self):
+        """Gets the volume_ratio of this VoiceModelAssetMeta.
+
+        音量缩放比例
+
+        :return: The volume_ratio of this VoiceModelAssetMeta.
+        :rtype: float
+        """
+        return self._volume_ratio
+
+    @volume_ratio.setter
+    def volume_ratio(self, volume_ratio):
+        """Sets the volume_ratio of this VoiceModelAssetMeta.
+
+        音量缩放比例
+
+        :param volume_ratio: The volume_ratio of this VoiceModelAssetMeta.
+        :type volume_ratio: float
+        """
+        self._volume_ratio = volume_ratio
 
     def to_dict(self):
         """Returns the model properties as a dict"""

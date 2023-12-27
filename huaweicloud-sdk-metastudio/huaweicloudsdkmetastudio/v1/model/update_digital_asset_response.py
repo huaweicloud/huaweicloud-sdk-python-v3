@@ -25,6 +25,9 @@ class UpdateDigitalAssetResponse(SdkResponse):
         'update_time': 'str',
         'asset_type': 'str',
         'asset_state': 'str',
+        'fail_type': 'str',
+        'reason': 'str',
+        'is_need_generate_cover': 'bool',
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
@@ -40,6 +43,9 @@ class UpdateDigitalAssetResponse(SdkResponse):
         'update_time': 'update_time',
         'asset_type': 'asset_type',
         'asset_state': 'asset_state',
+        'fail_type': 'fail_type',
+        'reason': 'reason',
+        'is_need_generate_cover': 'is_need_generate_cover',
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
@@ -47,7 +53,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_id=None, asset_name=None, asset_description=None, create_time=None, update_time=None, asset_type=None, asset_state=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
+    def __init__(self, asset_id=None, asset_name=None, asset_description=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, is_need_generate_cover=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
         """UpdateDigitalAssetResponse
 
         The model defined in huaweicloud sdk
@@ -62,10 +68,16 @@ class UpdateDigitalAssetResponse(SdkResponse):
         :type create_time: str
         :param update_time: 资产更新时间。
         :type update_time: str
-        :param asset_type: 资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        :param asset_type: 资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
         :type asset_type: str
         :param asset_state: 资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK: 资产被冻结，资产不可用，不可查看文件。
         :type asset_state: str
+        :param fail_type: 失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
+        :type fail_type: str
+        :param reason: 冻结/解冻/失败 原因。
+        :type reason: str
+        :param is_need_generate_cover: 是否需要资产库生成封面图片。 &gt; * 当前支持自动生成封面图片的资产类型包括VIDEO
+        :type is_need_generate_cover: bool
         :param tags: 标签列表。
         :type tags: list[str]
         :param asset_extra_meta: 
@@ -87,6 +99,9 @@ class UpdateDigitalAssetResponse(SdkResponse):
         self._update_time = None
         self._asset_type = None
         self._asset_state = None
+        self._fail_type = None
+        self._reason = None
+        self._is_need_generate_cover = None
         self._tags = None
         self._asset_extra_meta = None
         self._system_properties = None
@@ -108,6 +123,12 @@ class UpdateDigitalAssetResponse(SdkResponse):
             self.asset_type = asset_type
         if asset_state is not None:
             self.asset_state = asset_state
+        if fail_type is not None:
+            self.fail_type = fail_type
+        if reason is not None:
+            self.reason = reason
+        if is_need_generate_cover is not None:
+            self.is_need_generate_cover = is_need_generate_cover
         if tags is not None:
             self.tags = tags
         if asset_extra_meta is not None:
@@ -233,7 +254,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
     def asset_type(self):
         """Gets the asset_type of this UpdateDigitalAssetResponse.
 
-        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
         :return: The asset_type of this UpdateDigitalAssetResponse.
         :rtype: str
@@ -244,7 +265,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
     def asset_type(self, asset_type):
         """Sets the asset_type of this UpdateDigitalAssetResponse.
 
-        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
         :param asset_type: The asset_type of this UpdateDigitalAssetResponse.
         :type asset_type: str
@@ -272,6 +293,72 @@ class UpdateDigitalAssetResponse(SdkResponse):
         :type asset_state: str
         """
         self._asset_state = asset_state
+
+    @property
+    def fail_type(self):
+        """Gets the fail_type of this UpdateDigitalAssetResponse.
+
+        失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
+
+        :return: The fail_type of this UpdateDigitalAssetResponse.
+        :rtype: str
+        """
+        return self._fail_type
+
+    @fail_type.setter
+    def fail_type(self, fail_type):
+        """Sets the fail_type of this UpdateDigitalAssetResponse.
+
+        失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
+
+        :param fail_type: The fail_type of this UpdateDigitalAssetResponse.
+        :type fail_type: str
+        """
+        self._fail_type = fail_type
+
+    @property
+    def reason(self):
+        """Gets the reason of this UpdateDigitalAssetResponse.
+
+        冻结/解冻/失败 原因。
+
+        :return: The reason of this UpdateDigitalAssetResponse.
+        :rtype: str
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this UpdateDigitalAssetResponse.
+
+        冻结/解冻/失败 原因。
+
+        :param reason: The reason of this UpdateDigitalAssetResponse.
+        :type reason: str
+        """
+        self._reason = reason
+
+    @property
+    def is_need_generate_cover(self):
+        """Gets the is_need_generate_cover of this UpdateDigitalAssetResponse.
+
+        是否需要资产库生成封面图片。 > * 当前支持自动生成封面图片的资产类型包括VIDEO
+
+        :return: The is_need_generate_cover of this UpdateDigitalAssetResponse.
+        :rtype: bool
+        """
+        return self._is_need_generate_cover
+
+    @is_need_generate_cover.setter
+    def is_need_generate_cover(self, is_need_generate_cover):
+        """Sets the is_need_generate_cover of this UpdateDigitalAssetResponse.
+
+        是否需要资产库生成封面图片。 > * 当前支持自动生成封面图片的资产类型包括VIDEO
+
+        :param is_need_generate_cover: The is_need_generate_cover of this UpdateDigitalAssetResponse.
+        :type is_need_generate_cover: bool
+        """
+        self._is_need_generate_cover = is_need_generate_cover
 
     @property
     def tags(self):

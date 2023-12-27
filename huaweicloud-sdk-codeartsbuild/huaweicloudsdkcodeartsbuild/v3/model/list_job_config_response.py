@@ -18,7 +18,7 @@ class ListJobConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'list[CreateBuildJobRequestBody]',
+        'result': 'CreateBuildJobRequestBody',
         'error': 'str',
         'status': 'str'
     }
@@ -34,8 +34,8 @@ class ListJobConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 查询模板结果
-        :type result: list[:class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobRequestBody`]
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobRequestBody`
         :param error: 返回错误信息
         :type error: str
         :param status: 返回状态信息
@@ -60,10 +60,8 @@ class ListJobConfigResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListJobConfigResponse.
 
-        查询模板结果
-
         :return: The result of this ListJobConfigResponse.
-        :rtype: list[:class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobRequestBody`]
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobRequestBody`
         """
         return self._result
 
@@ -71,10 +69,8 @@ class ListJobConfigResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ListJobConfigResponse.
 
-        查询模板结果
-
         :param result: The result of this ListJobConfigResponse.
-        :type result: list[:class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobRequestBody`]
+        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobRequestBody`
         """
         self._result = result
 

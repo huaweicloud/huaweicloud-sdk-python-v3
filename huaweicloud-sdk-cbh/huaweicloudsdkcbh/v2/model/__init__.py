@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkcbh.v2.model.agency_authorize_info import AgencyAuthorizeInfo
 from huaweicloudsdkcbh.v2.model.authorize_csms_and_kms_request_body import AuthorizeCsmsAndKmsRequestBody
 from huaweicloudsdkcbh.v2.model.availability_zones import AvailabilityZones
 from huaweicloudsdkcbh.v2.model.batch_create_instance_tag_request import BatchCreateInstanceTagRequest
@@ -43,6 +44,7 @@ from huaweicloudsdkcbh.v2.model.list_tags_response import ListTagsResponse
 from huaweicloudsdkcbh.v2.model.login_instance_request import LoginInstanceRequest
 from huaweicloudsdkcbh.v2.model.login_instance_response import LoginInstanceResponse
 from huaweicloudsdkcbh.v2.model.match import Match
+from huaweicloudsdkcbh.v2.model.network_info_create import NetworkInfoCreate
 from huaweicloudsdkcbh.v2.model.operate_eip_request_body import OperateEipRequestBody
 from huaweicloudsdkcbh.v2.model.reboot_cbh_request_body import RebootCbhRequestBody
 from huaweicloudsdkcbh.v2.model.reboot_instance_request import RebootInstanceRequest
@@ -61,6 +63,7 @@ from huaweicloudsdkcbh.v2.model.resources import Resources
 from huaweicloudsdkcbh.v2.model.rollback_instance_request import RollbackInstanceRequest
 from huaweicloudsdkcbh.v2.model.rollback_instance_request_body import RollbackInstanceRequestBody
 from huaweicloudsdkcbh.v2.model.rollback_instance_response import RollbackInstanceResponse
+from huaweicloudsdkcbh.v2.model.security_group import SecurityGroup
 from huaweicloudsdkcbh.v2.model.show_authorization_request import ShowAuthorizationRequest
 from huaweicloudsdkcbh.v2.model.show_authorization_response import ShowAuthorizationResponse
 from huaweicloudsdkcbh.v2.model.show_ecs_quota_request import ShowEcsQuotaRequest

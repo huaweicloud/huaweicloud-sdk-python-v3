@@ -51,7 +51,7 @@ class ResizeInstanceReq:
         :type oper_type: str
         :param new_broker_num: 扩容后集群节点数。
         :type new_broker_num: int
-        :param new_product_id: 新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        :param new_product_id: 新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc,otc)
         :type new_product_id: str
         :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再进行扩容，需要填写此参数。
         :type publicip_id: str
@@ -182,7 +182,7 @@ class ResizeInstanceReq:
     def new_product_id(self):
         """Gets the new_product_id of this ResizeInstanceReq.
 
-        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc,otc)
 
         :return: The new_product_id of this ResizeInstanceReq.
         :rtype: str
@@ -193,7 +193,7 @@ class ResizeInstanceReq:
     def new_product_id(self, new_product_id):
         """Sets the new_product_id of this ResizeInstanceReq.
 
-        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc,otc)
 
         :param new_product_id: The new_product_id of this ResizeInstanceReq.
         :type new_product_id: str

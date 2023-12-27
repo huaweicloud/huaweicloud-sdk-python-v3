@@ -35,7 +35,10 @@ class MetaStudioClient(Client):
     def create_digital_asset(self, request):
         """创建资产
 
-        该接口用于在资产库中添加上传新的媒体资产。可上传的资产类型包括：数字人模型、素材、视频、图片、场景等。
+        该接口用于在资产库中添加上传新的媒体资产。可上传的资产类型包括：分身数字人模型、背景图片、素材图片、素材视频、PPT等。
+        * &gt; 资产类型是IMAGE时，通过system_properties来区分背景图片（BACKGROUND_IMG）、素材图片（MATERIAL_IMG）。
+        * &gt; 资产类型是VIDEO时，通过system_properties来区分素材视频（MATERIAL_VIDEO）、名片视频（BUSSINESS_CARD_VIDEO）。
+        * &gt; MetaStudio平台生成的视频，system_properties带CREATED_BY_PLATFORM。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -886,6 +889,89 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def list_digital_human_video(self, request):
+        """查询视频制作任务列表
+
+        该接口用于查询视频制作任务列表。可查询分身数字人视频制作列表，照片数字人视频制作列表等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDigitalHumanVideo
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListDigitalHumanVideoRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListDigitalHumanVideoResponse`
+        """
+        http_info = self._list_digital_human_video_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_digital_human_video_invoker(self, request):
+        http_info = self._list_digital_human_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_digital_human_video_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-videos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDigitalHumanVideoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'script_id' in local_var_params:
+            query_params.append(('script_id', local_var_params['script_id']))
+        if 'asset_name' in local_var_params:
+            query_params.append(('asset_name', local_var_params['asset_name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel2_d_digital_human_video(self, request):
         """取消等待中的分身数字人视频制作任务
 
@@ -1005,7 +1091,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1208,7 +1294,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1275,7 +1361,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1480,7 +1566,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1547,7 +1633,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -2036,10 +2122,10 @@ class MetaStudioClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'create_until' in local_var_params:
-            query_params.append(('create_until', local_var_params['create_until']))
         if 'create_since' in local_var_params:
             query_params.append(('create_since', local_var_params['create_since']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -2353,6 +2439,138 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def check_text_language(self, request):
+        """检测音色与文本的语言一致性
+
+        检测音色与文本的语言一致性，音色与文本不一致会导致报错
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckTextLanguage
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CheckTextLanguageRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CheckTextLanguageResponse`
+        """
+        http_info = self._check_text_language_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_text_language_invoker(self, request):
+        http_info = self._check_text_language_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_text_language_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-rooms-scripts/language-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckTextLanguageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_interaction_rule_group(self, request):
+        """创建智能直播间互动规则库
+
+        该接口用于创建智能直播间互动规则库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateInteractionRuleGroup
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateInteractionRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateInteractionRuleGroupResponse`
+        """
+        http_info = self._create_interaction_rule_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_interaction_rule_group_invoker(self, request):
+        http_info = self._create_interaction_rule_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_interaction_rule_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInteractionRuleGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_smart_live_room(self, request):
         """创建智能直播间
 
@@ -2399,6 +2617,73 @@ class MetaStudioClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_interaction_rule_group(self, request):
+        """删除智能直播间互动规则库
+
+        该接口用于删除智能直播间互动规则库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteInteractionRuleGroup
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteInteractionRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteInteractionRuleGroupResponse`
+        """
+        http_info = self._delete_interaction_rule_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_interaction_rule_group_invoker(self, request):
+        http_info = self._delete_interaction_rule_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_interaction_rule_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInteractionRuleGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2487,6 +2772,81 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def list_interaction_rule_groups(self, request):
+        """查询智能直播间互动规则库列表
+
+        该接口用于智能直播间互动规则库列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInteractionRuleGroups
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListInteractionRuleGroupsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListInteractionRuleGroupsResponse`
+        """
+        http_info = self._list_interaction_rule_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_interaction_rule_groups_invoker(self, request):
+        http_info = self._list_interaction_rule_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_interaction_rule_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInteractionRuleGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_smart_live_rooms(self, request):
         """查询智能直播间列表
 
@@ -2539,6 +2899,8 @@ class MetaStudioClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+        if 'room_type' in local_var_params:
+            query_params.append(('room_type', local_var_params['room_type']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -2614,6 +2976,75 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_interaction_rule_group(self, request):
+        """更新智能直播间互动规则库
+
+        该接口用于更新智能直播间互动规则库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInteractionRuleGroup
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateInteractionRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateInteractionRuleGroupResponse`
+        """
+        http_info = self._update_interaction_rule_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_interaction_rule_group_invoker(self, request):
+        http_info = self._update_interaction_rule_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_interaction_rule_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInteractionRuleGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2783,6 +3214,71 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def create_facial_animations(self, request):
+        """创建语音驱动表情动画任务
+
+        该接口用于创建驱动数字人表情的任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFacialAnimations
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateFacialAnimationsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateFacialAnimationsResponse`
+        """
+        http_info = self._create_facial_animations_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_facial_animations_invoker(self, request):
+        http_info = self._create_facial_animations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_facial_animations_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ttsa/fas",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFacialAnimationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_ttsa(self, request):
         """创建语音驱动任务
 
@@ -2833,6 +3329,71 @@ class MetaStudioClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_facial_animations_data(self, request):
+        """获取语音驱动表情数据
+
+        该接口用于获取生成的数字人表情驱动数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFacialAnimationsData
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListFacialAnimationsDataRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListFacialAnimationsDataResponse`
+        """
+        http_info = self._list_facial_animations_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_facial_animations_data_invoker(self, request):
+        http_info = self._list_facial_animations_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_facial_animations_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/fas-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFacialAnimationsDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -3109,7 +3670,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -3501,6 +4062,12 @@ class MetaStudioClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'script_catalog' in local_var_params:
+            query_params.append(('script_catalog', local_var_params['script_catalog']))
+        if 'view_mode' in local_var_params:
+            query_params.append(('view_mode', local_var_params['view_mode']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:

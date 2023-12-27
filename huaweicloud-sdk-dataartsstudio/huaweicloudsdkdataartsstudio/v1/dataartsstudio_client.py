@@ -2251,6 +2251,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def create_factory_job(self, request):
+        """创建作业
+
+        创建作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFactoryJob
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryJobRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryJobResponse`
+        """
+        http_info = self._create_factory_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_factory_job_invoker(self, request):
+        http_info = self._create_factory_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_factory_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFactoryJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_factory_supplement_data_instance(self, request):
         """创建补数据实例的接口
 
@@ -7537,6 +7604,154 @@ class DataArtsStudioClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'biz_catalog_id' in local_var_params:
             query_params.append(('biz_catalog_id', local_var_params['biz_catalog_id']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_factory_alarm_info(self, request):
+        """查询告警通知记录
+
+        查询告警通知记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFactoryAlarmInfo
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryAlarmInfoRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryAlarmInfoResponse`
+        """
+        http_info = self._list_factory_alarm_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_alarm_info_invoker(self, request):
+        http_info = self._list_factory_alarm_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_factory_alarm_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/alarm-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryAlarmInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_factory_jobs(self, request):
+        """查询作业列表
+
+        查询作业列表清单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFactoryJobs
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryJobsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryJobsResponse`
+        """
+        http_info = self._list_factory_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_jobs_invoker(self, request):
+        http_info = self._list_factory_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_factory_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -12985,6 +13200,77 @@ class DataArtsStudioClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_lineage(self, request):
+        """血缘查询
+
+        血缘查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLineage
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowLineageRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowLineageResponse`
+        """
+        http_info = self._show_lineage_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_lineage_invoker(self, request):
+        http_info = self._show_lineage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_lineage_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/entities/{guid}/lineage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLineageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'guid' in local_var_params:
+            path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'depth' in local_var_params:
+            query_params.append(('depth', local_var_params['depth']))
 
         header_params = {}
         if 'workspace' in local_var_params:

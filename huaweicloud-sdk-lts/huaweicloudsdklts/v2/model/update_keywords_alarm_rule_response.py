@@ -20,6 +20,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     openapi_types = {
         'keywords_alarm_rule_id': 'str',
         'keywords_alarm_rule_name': 'str',
+        'alarm_rule_alias': 'str',
         'keywords_alarm_rule_description': 'str',
         'keywords_requests': 'list[KeywordsResBody]',
         'frequency': 'FrequencyRespBody',
@@ -40,6 +41,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     attribute_map = {
         'keywords_alarm_rule_id': 'keywords_alarm_rule_id',
         'keywords_alarm_rule_name': 'keywords_alarm_rule_name',
+        'alarm_rule_alias': 'alarm_rule_alias',
         'keywords_alarm_rule_description': 'keywords_alarm_rule_description',
         'keywords_requests': 'keywords_requests',
         'frequency': 'frequency',
@@ -57,7 +59,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None, project_id=None, topics=None, condition_expression=None, index_id=None, notification_frequency=None, alarm_action_rule_name=None):
+    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, alarm_rule_alias=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None, project_id=None, topics=None, condition_expression=None, index_id=None, notification_frequency=None, alarm_action_rule_name=None):
         """UpdateKeywordsAlarmRuleResponse
 
         The model defined in huaweicloud sdk
@@ -66,6 +68,8 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         :type keywords_alarm_rule_id: str
         :param keywords_alarm_rule_name: 关键词告警名称
         :type keywords_alarm_rule_name: str
+        :param alarm_rule_alias: 规则名称
+        :type alarm_rule_alias: str
         :param keywords_alarm_rule_description: 关键词告警信息描述
         :type keywords_alarm_rule_description: str
         :param keywords_requests: 关键词详细信息
@@ -102,6 +106,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
         self._keywords_alarm_rule_id = None
         self._keywords_alarm_rule_name = None
+        self._alarm_rule_alias = None
         self._keywords_alarm_rule_description = None
         self._keywords_requests = None
         self._frequency = None
@@ -123,6 +128,8 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
             self.keywords_alarm_rule_id = keywords_alarm_rule_id
         if keywords_alarm_rule_name is not None:
             self.keywords_alarm_rule_name = keywords_alarm_rule_name
+        if alarm_rule_alias is not None:
+            self.alarm_rule_alias = alarm_rule_alias
         if keywords_alarm_rule_description is not None:
             self.keywords_alarm_rule_description = keywords_alarm_rule_description
         if keywords_requests is not None:
@@ -197,6 +204,28 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         :type keywords_alarm_rule_name: str
         """
         self._keywords_alarm_rule_name = keywords_alarm_rule_name
+
+    @property
+    def alarm_rule_alias(self):
+        """Gets the alarm_rule_alias of this UpdateKeywordsAlarmRuleResponse.
+
+        规则名称
+
+        :return: The alarm_rule_alias of this UpdateKeywordsAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._alarm_rule_alias
+
+    @alarm_rule_alias.setter
+    def alarm_rule_alias(self, alarm_rule_alias):
+        """Sets the alarm_rule_alias of this UpdateKeywordsAlarmRuleResponse.
+
+        规则名称
+
+        :param alarm_rule_alias: The alarm_rule_alias of this UpdateKeywordsAlarmRuleResponse.
+        :type alarm_rule_alias: str
+        """
+        self._alarm_rule_alias = alarm_rule_alias
 
     @property
     def keywords_alarm_rule_description(self):

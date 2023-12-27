@@ -117,7 +117,7 @@ class CreateInstanceByEngineReq:
         :type subnet_id: str
         :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。  创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
         :type available_zones: list[str]
-        :param product_id: 产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        :param product_id: 产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc,otc)
         :type product_id: str
         :param kafka_manager_user: 表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type kafka_manager_user: str
@@ -522,7 +522,7 @@ class CreateInstanceByEngineReq:
     def product_id(self):
         """Gets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc,otc)
 
         :return: The product_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -533,7 +533,7 @@ class CreateInstanceByEngineReq:
     def product_id(self, product_id):
         """Sets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc,otc)
 
         :param product_id: The product_id of this CreateInstanceByEngineReq.
         :type product_id: str

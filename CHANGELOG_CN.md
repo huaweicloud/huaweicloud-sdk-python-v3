@@ -1,3 +1,513 @@
+# 3.1.75 2023-12-27
+
+### HuaweiCloud SDK AAD
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateAadDomain`
+    - `CreateCertificate`
+    - `ModifyDomainWebSwitch`
+    - `ListSourceIps`
+    - `AddBlackWhiteIpList`
+    - `DeleteBlackWhiteIpList`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListMetricData**
+    - 响应参数变更
+      - `* datapoints.timestamp: int32 -> int64`
+  - **ListApisV2**
+    - 请求参数变更
+      - `+ return_data_mode: enum value [brief,include_group,include_group_backend]`
+
+### HuaweiCloud SDK CodeArtsArtifact
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchRestoreRepo`
+    - `BatchDeleteTrashes`
+    - `CreateMavenRepo`
+    - `ShowProjectList`
+    - `ModifyRepository`
+    - `ShowRepositoryInfo`
+    - `CreateDockerRepositories`
+    - `DeleteRepository`
+    - `ShowStorage`
+    - `ShowMavenInfo`
+    - `CreateProjectRelatedRepository`
+    - `SearchByChecksum`
+    - `SearchArtifacts`
+    - `ResetUserPassword`
+    - `ShowFileTree`
+    - `ListArtifactoryComponent`
+    - `ListAllRepositories`
+    - `ShowAudit`
+    - `ShowRepository`
+    - `ListArtifactoryStorageStatistic`
+    - `CreateAttention`
+    - `ListAttentions`
+    - `UpdateArtifactory`
+    - `CreateArtifactory`
+    - `DeleteArtifactFile`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListResourceInstances**
+    - 响应参数变更
+      - `+ resources.sys_tags`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持接口`ListFactoryJobs`、`CreateFactoryJob`、`ListFactoryAlarmInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持接口`ShowInstanceSslDetail`、`UpdateSslSwitch`、`DownloadSslCert`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 支持接口`ShowClientNetwork`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `+ singleNodeJobFlag`
+      - `+ singleNodeJobType`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ singleNodeJobFlag`
+      - `+ singleNodeJobType`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ singleNodeJobFlag`
+      - `+ singleNodeJobType`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `+ singleNodeJobFlag`
+      - `+ singleNodeJobType`
+      - `+ dependJobs.singleNodeJobFlag`
+      - `+ dependJobs.singleNodeJobType`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持接口`ListJobs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAssetStatistic**
+    - 响应参数变更
+      - `+ environment_num`
+      - `+ core_conf_file_num`
+  - **ListPorts**
+    - 响应参数变更
+      - `+ data_list.agent_id`
+      - `+ data_list.container_id`
+  - **ListSwrImageRepository**
+    - 响应参数变更
+      - `+ data_list.instance_name`
+      - `+ data_list.instance_id`
+      - `+ data_list.instance_url`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持接口`CreateShrinkageJob`、`ShowShrinkCheckResult`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListDigitalHumanVideo`
+    - `ListInteractionRuleGroups`
+    - `CreateInteractionRuleGroup`
+    - `UpdateInteractionRuleGroup`
+    - `DeleteInteractionRuleGroup`
+    - `CheckTextLanguage`
+    - `CreateFacialAnimations`
+    - `ListFacialAnimationsData`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFile**
+    - 响应参数变更
+      - `- file_id`
+      - `- upload_url`
+  - **ExecuteSmartLiveCommand**
+    - 请求参数变更
+      - `+ review_config`
+      - `+ command: enum value [GET_CURRENT_PLAYING_SCRIPTS]`
+  - **CreatePictureModelingByUrlJob**
+    - 请求参数变更
+      - `- X-User-Privilege`
+  - **ListAssetSummary**
+    - 响应参数变更
+      - `+ asset_list.asset_type: enum value [AUDIO]`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `+ review_config`
+      - `+ callback_config`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+  - **CreatePhotoDigitalHumanVideo**
+    - 请求参数变更
+      - `+ review_config`
+      - `- video_config.disable_system_watermark`
+  - **ShowPhotoDigitalHumanVideo**
+    - 响应参数变更
+      - `- video_config.disable_system_watermark`
+  - **LiveEventReport**
+    - 请求参数变更
+      - `+ review_config`
+  - **CreateTtsa**
+    - 请求参数变更
+      - `- X-User-Privilege`
+      - `+ script_type`
+      - `+ audio_file_download_url`
+      - `+ job_type`
+      - `- parent_job_id`
+      - `- auto_motion`
+  - **ListTtsaJobs**
+    - 响应参数变更
+      - `+ ttsa_jobs.job_type`
+  - **ListTtsaData**
+    - 响应参数变更
+      - `+ start_time`
+      - `+ end_time`
+      - `+ is_tail`
+  - **ListStyles**
+    - 响应参数变更
+      - `- styles.extra_meta.edit_value_items`
+      - `- styles.extra_meta.edit_color_items`
+      - `- styles.extra_meta.edit_components`
+      - `- styles.extra_meta.modelling_algorithm`
+  - **CreateDigitalHumanBusinessCard**
+    - 请求参数变更
+      - `+ introduction_type`
+      - `+ introduction_audio_asset_id`
+      - `+ review_config`
+    - 响应参数变更
+      - `- job_id`
+  - **UpdateDigitalHumanBusinessCard**
+    - 请求参数变更
+      - `+ introduction_type`
+      - `+ introduction_audio_asset_id`
+      - `+ review_config`
+    - 响应参数变更
+      - `- job_id`
+  - **ShowDigitalHumanBusinessCard**
+    - 响应参数变更
+      - `+ introduction_audio_asset_id`
+      - `+ introduction_type`
+  - **ShowSmartLive**
+    - 响应参数变更
+      - `+ stream_duration`
+      - `+ block_reason`
+      - `+ live_event_callback_config`
+      - `+ state: enum value [BLOCKED]`
+      - `+ rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **ListVideoScripts**
+    - 请求参数变更
+      - `+ name`
+      - `+ script_catalog`
+      - `+ view_mode`
+    - 响应参数变更
+      - `+ video_scripts.script_cover_url`
+      - `+ video_scripts.script_type`
+      - `+ video_scripts.text`
+      - `- video_scripts.video_making_type`
+      - `- video_scripts.human_image`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ script_cover_url`
+      - `+ review_config`
+      - `- video_making_type`
+      - `- human_image`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `* shoot_scripts: list<ShootScriptItem> -> list<ShootScriptShowItem>`
+  - **CreatePictureModelingJob**
+    - 请求参数变更
+      - `- X-User-Privilege`
+    - 响应参数变更
+      - `- model_asset_id`
+      - `- job_id`
+  - **ShowVideoMotionCaptureJob**
+    - 响应参数变更
+      - `+ input_info.rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ reason`
+      - `+ is_need_generate_cover`
+      - `+ fail_type`
+      - `+ asset_type: enum value [AUDIO]`
+      - `+ system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ files.state`
+      - `+ files.reason`
+      - `+ asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- asset_extra_meta.voice_model_meta.tts_mode`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ asset_extra_meta.ppt_meta.error_info`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ is_need_generate_cover`
+      - `+ review_config`
+      - `+ asset_type: enum value [AUDIO]`
+      - `+ system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- asset_extra_meta.voice_model_meta.tts_mode`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ asset_extra_meta.ppt_meta.error_info`
+    - 响应参数变更
+      - `+ reason`
+      - `+ is_need_generate_cover`
+      - `+ fail_type`
+      - `+ asset_type: enum value [AUDIO]`
+      - `+ system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ files.state`
+      - `+ files.reason`
+      - `+ asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- asset_extra_meta.voice_model_meta.tts_mode`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ asset_extra_meta.ppt_meta.error_info`
+  - **ListSmartLiveRooms**
+    - 请求参数变更
+      - `+ room_type`
+    - 响应参数变更
+      - `+ smart_live_rooms.room_type`
+      - `+ smart_live_rooms.room_state`
+      - `+ smart_live_rooms.error_info`
+      - `+ smart_live_rooms.model_infos.backup_model_asset_ids`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ stream_keys`
+      - `+ backup_model_asset_ids`
+      - `+ live_event_callback_config`
+      - `+ review_config`
+      - `+ shared_config`
+      - `+ room_type: enum value [TEMPLATE]`
+      - `+ play_policy.random_play_mode`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ scene_scripts.layer_config.group_id`
+      - `+ scene_scripts.layer_config.layer_type: enum value [TEXT]`
+      - `+ interaction_rules.rule_index`
+      - `+ interaction_rules.review_config`
+      - `+ interaction_rules.trigger.layer_config`
+      - `+ interaction_rules.trigger.reply_audios`
+      - `+ interaction_rules.trigger.reply_mode: enum value [CALLBACK,SHOW_LAYER]`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ backup_model_asset_ids`
+      - `+ error_info`
+      - `+ stream_keys`
+      - `+ shared_config`
+      - `+ live_event_callback_config`
+      - `+ room_state`
+      - `+ review_config`
+      - `+ room_type: enum value [TEMPLATE]`
+      - `+ play_policy.random_play_mode`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ scene_scripts.layer_config.group_id`
+      - `+ scene_scripts.layer_config.layer_type: enum value [TEXT]`
+      - `+ interaction_rules.rule_index`
+      - `+ interaction_rules.review_config`
+      - `+ interaction_rules.trigger.layer_config`
+      - `+ interaction_rules.trigger.reply_audios`
+      - `+ interaction_rules.trigger.reply_mode: enum value [CALLBACK,SHOW_LAYER]`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ stream_keys`
+      - `+ backup_model_asset_ids`
+      - `+ live_event_callback_config`
+      - `+ review_config`
+      - `+ shared_config`
+      - `+ room_type: enum value [TEMPLATE]`
+      - `+ play_policy.random_play_mode`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ scene_scripts.layer_config.group_id`
+      - `+ scene_scripts.layer_config.layer_type: enum value [TEXT]`
+      - `+ interaction_rules.rule_index`
+      - `+ interaction_rules.review_config`
+      - `+ interaction_rules.trigger.layer_config`
+      - `+ interaction_rules.trigger.reply_audios`
+      - `+ interaction_rules.trigger.reply_mode: enum value [CALLBACK,SHOW_LAYER]`
+    - 响应参数变更
+      - `+ backup_model_asset_ids`
+      - `+ error_info`
+      - `+ stream_keys`
+      - `+ shared_config`
+      - `+ live_event_callback_config`
+      - `+ room_state`
+      - `+ review_config`
+      - `+ room_type: enum value [TEMPLATE]`
+      - `+ play_policy.random_play_mode`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ scene_scripts.layer_config.group_id`
+      - `+ scene_scripts.layer_config.layer_type: enum value [TEXT]`
+      - `+ interaction_rules.rule_index`
+      - `+ interaction_rules.review_config`
+      - `+ interaction_rules.trigger.layer_config`
+      - `+ interaction_rules.trigger.reply_audios`
+      - `+ interaction_rules.trigger.reply_mode: enum value [CALLBACK,SHOW_LAYER]`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `+ stream_keys`
+      - `+ interaction_callback_url`
+      - `+ live_event_callback_config`
+      - `+ video_config.subtitle_config`
+      - `- video_config.disable_system_watermark`
+      - `+ video_config.codec: enum value [VP9]`
+      - `+ play_policy.random_play_mode`
+    - 响应参数变更
+      - `+ live_warning_info`
+      - `+ live_event_callback_config`
+      - `+ rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **ListSmartLive**
+    - 响应参数变更
+      - `+ stream_duration`
+      - `+ block_reason`
+      - `+ live_event_callback_config`
+      - `+ smart_live_jobs.live_event_callback_config`
+      - `+ smart_live_jobs.stream_duration`
+      - `+ smart_live_jobs.block_reason`
+      - `+ smart_live_jobs.state: enum value [BLOCKED]`
+      - `+ smart_live_jobs.rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **CreateVideoMotionCaptureJob**
+    - 请求参数变更
+      - `+ input_info.rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+    - 响应参数变更
+      - `- rtc_room_info`
+      - `- job_id`
+      - `+ rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **ListVideoMotionCaptureJobs**
+    - 响应参数变更
+      - `+ video_motion_capture_jobs.input_info.rtc_room_info.users.user_type: enum value [INFERENCE_USER,END_USER]`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ is_need_generate_cover`
+      - `+ review_config`
+      - `+ asset_type: enum value [AUDIO]`
+      - `+ system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- asset_extra_meta.voice_model_meta.tts_mode`
+      - `- asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ asset_extra_meta.ppt_meta.error_info`
+  - **ListAssets**
+    - 请求参数变更
+      - `- asset_manage_type`
+      - `- X-User-MePrivilege`
+    - 响应参数变更
+      - `+ reason`
+      - `+ is_need_generate_cover`
+      - `+ fail_type`
+      - `+ assets.fail_type`
+      - `+ assets.reason`
+      - `+ assets.is_need_generate_cover`
+      - `+ assets.asset_type: enum value [AUDIO]`
+      - `+ assets.system_properties.key: enum value [MATERIAL_IMG,MATERIAL_VIDEO,BUSSINESS_CARD_VIDEO,TO_BE_TRANSLATED_VIDEO]`
+      - `+ assets.files.state`
+      - `+ assets.files.reason`
+      - `+ assets.asset_extra_meta.voice_model_meta.speed_ratio`
+      - `+ assets.asset_extra_meta.voice_model_meta.volume_ratio`
+      - `- assets.asset_extra_meta.voice_model_meta.tts_mode`
+      - `- assets.asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ assets.asset_extra_meta.voice_model_meta.language: enum value [GER,fr,Kr,por,JPN,Ita,ESP,DBH,GT,GXH,HBH,SXH,SCH,YY,Russian,Filipino,Dutch,Indonesian,Vietnamese,Arabic,Turkish,Malay,Thai,Finnish]`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.model_resolution`
+      - `- assets.asset_extra_meta.human_model_2d_meta.is_realtime_matting`
+      - `+ assets.asset_extra_meta.ppt_meta.error_info`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`SetInstancesNewDbShrink`、`StopBackup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.74 2023-12-22
 
 ### HuaweiCloud SDK Config
