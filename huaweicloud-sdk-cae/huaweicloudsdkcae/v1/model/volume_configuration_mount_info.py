@@ -37,7 +37,7 @@ class VolumeConfigurationMountInfo:
         :type path: str
         :param sub_path: 子路径。
         :type sub_path: str
-        :param access_mode: 读写权限，支持读写、只读。
+        :param access_mode: 读写权限。
         :type access_mode: str
         """
         
@@ -103,7 +103,7 @@ class VolumeConfigurationMountInfo:
     def access_mode(self):
         """Gets the access_mode of this VolumeConfigurationMountInfo.
 
-        读写权限，支持读写、只读。
+        读写权限。
 
         :return: The access_mode of this VolumeConfigurationMountInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class VolumeConfigurationMountInfo:
     def access_mode(self, access_mode):
         """Sets the access_mode of this VolumeConfigurationMountInfo.
 
-        读写权限，支持读写、只读。
+        读写权限。
 
         :param access_mode: The access_mode of this VolumeConfigurationMountInfo.
         :type access_mode: str

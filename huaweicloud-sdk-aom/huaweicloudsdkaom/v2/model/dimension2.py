@@ -33,7 +33,7 @@ class Dimension2:
 
         :param name: 维度名称。
         :type name: str
-        :param value: 指标数据的值。
+        :param value: 维度取值。
         :type value: str
         """
         
@@ -72,7 +72,7 @@ class Dimension2:
     def value(self):
         """Gets the value of this Dimension2.
 
-        指标数据的值。
+        维度取值。
 
         :return: The value of this Dimension2.
         :rtype: str
@@ -83,7 +83,7 @@ class Dimension2:
     def value(self, value):
         """Sets the value of this Dimension2.
 
-        指标数据的值。
+        维度取值。
 
         :param value: The value of this Dimension2.
         :type value: str

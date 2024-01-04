@@ -35,13 +35,13 @@ class ScalingTriggerMeta:
 
         The model defined in huaweicloud sdk
 
-        :param type: - type为\&quot;cpu、memory\&quot;时，配置此参数。 - 参数含义：数据类型，当前只支持利用率，默认值为Utilization。
+        :param type: 数据类型，当前只支持利用率，默认值为Utilization。  type为\&quot;cpu、memory\&quot;时，配置此参数。 
         :type type: str
-        :param value: - type为\&quot;cpu、memory\&quot;时，配置此参数。 - 参数含义：触发指标的期望值。
+        :param value: 触发指标的阈值。  type为\&quot;cpu、memory\&quot;时，配置此参数。 
         :type value: str
-        :param period_type: - type为\&quot;cron\&quot;时，配置此参数。 - 参数含义：生效周期，只支持day、week、month。
+        :param period_type: 生效周期。  type为\&quot;cron\&quot;时，配置此参数。 
         :type period_type: str
-        :param schedulers: - type为\&quot;cron\&quot;时，配置此参数。 - 参数含义：每个周期内触发的时间点和实例数。
+        :param schedulers: 每个周期内触发的时间点和实例数。  type为\&quot;cron\&quot;时，配置此参数。 
         :type schedulers: list[:class:`huaweicloudsdkcae.v1.CronTriggerScheduler`]
         """
         
@@ -66,7 +66,7 @@ class ScalingTriggerMeta:
     def type(self):
         """Gets the type of this ScalingTriggerMeta.
 
-        - type为\"cpu、memory\"时，配置此参数。 - 参数含义：数据类型，当前只支持利用率，默认值为Utilization。
+        数据类型，当前只支持利用率，默认值为Utilization。  type为\"cpu、memory\"时，配置此参数。 
 
         :return: The type of this ScalingTriggerMeta.
         :rtype: str
@@ -77,7 +77,7 @@ class ScalingTriggerMeta:
     def type(self, type):
         """Sets the type of this ScalingTriggerMeta.
 
-        - type为\"cpu、memory\"时，配置此参数。 - 参数含义：数据类型，当前只支持利用率，默认值为Utilization。
+        数据类型，当前只支持利用率，默认值为Utilization。  type为\"cpu、memory\"时，配置此参数。 
 
         :param type: The type of this ScalingTriggerMeta.
         :type type: str
@@ -88,7 +88,7 @@ class ScalingTriggerMeta:
     def value(self):
         """Gets the value of this ScalingTriggerMeta.
 
-        - type为\"cpu、memory\"时，配置此参数。 - 参数含义：触发指标的期望值。
+        触发指标的阈值。  type为\"cpu、memory\"时，配置此参数。 
 
         :return: The value of this ScalingTriggerMeta.
         :rtype: str
@@ -99,7 +99,7 @@ class ScalingTriggerMeta:
     def value(self, value):
         """Sets the value of this ScalingTriggerMeta.
 
-        - type为\"cpu、memory\"时，配置此参数。 - 参数含义：触发指标的期望值。
+        触发指标的阈值。  type为\"cpu、memory\"时，配置此参数。 
 
         :param value: The value of this ScalingTriggerMeta.
         :type value: str
@@ -110,7 +110,7 @@ class ScalingTriggerMeta:
     def period_type(self):
         """Gets the period_type of this ScalingTriggerMeta.
 
-        - type为\"cron\"时，配置此参数。 - 参数含义：生效周期，只支持day、week、month。
+        生效周期。  type为\"cron\"时，配置此参数。 
 
         :return: The period_type of this ScalingTriggerMeta.
         :rtype: str
@@ -121,7 +121,7 @@ class ScalingTriggerMeta:
     def period_type(self, period_type):
         """Sets the period_type of this ScalingTriggerMeta.
 
-        - type为\"cron\"时，配置此参数。 - 参数含义：生效周期，只支持day、week、month。
+        生效周期。  type为\"cron\"时，配置此参数。 
 
         :param period_type: The period_type of this ScalingTriggerMeta.
         :type period_type: str
@@ -132,7 +132,7 @@ class ScalingTriggerMeta:
     def schedulers(self):
         """Gets the schedulers of this ScalingTriggerMeta.
 
-        - type为\"cron\"时，配置此参数。 - 参数含义：每个周期内触发的时间点和实例数。
+        每个周期内触发的时间点和实例数。  type为\"cron\"时，配置此参数。 
 
         :return: The schedulers of this ScalingTriggerMeta.
         :rtype: list[:class:`huaweicloudsdkcae.v1.CronTriggerScheduler`]
@@ -143,7 +143,7 @@ class ScalingTriggerMeta:
     def schedulers(self, schedulers):
         """Sets the schedulers of this ScalingTriggerMeta.
 
-        - type为\"cron\"时，配置此参数。 - 参数含义：每个周期内触发的时间点和实例数。
+        每个周期内触发的时间点和实例数。  type为\"cron\"时，配置此参数。 
 
         :param schedulers: The schedulers of this ScalingTriggerMeta.
         :type schedulers: list[:class:`huaweicloudsdkcae.v1.CronTriggerScheduler`]

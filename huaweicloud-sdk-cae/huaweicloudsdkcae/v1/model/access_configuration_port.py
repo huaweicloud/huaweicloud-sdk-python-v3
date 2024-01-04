@@ -23,7 +23,8 @@ class AccessConfigurationPort:
         'default_certificate': 'str',
         'certificate': 'str',
         'policy': 'str',
-        'path': 'list[AccessConfigurationHttpPath]'
+        'path': 'list[AccessConfigurationHttpPath]',
+        'elb_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class AccessConfigurationPort:
         'default_certificate': 'default_certificate',
         'certificate': 'certificate',
         'policy': 'policy',
-        'path': 'path'
+        'path': 'path',
+        'elb_id': 'elb_id'
     }
 
-    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, path=None):
+    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, path=None, elb_id=None):
         """AccessConfigurationPort
 
         The model defined in huaweicloud sdk
@@ -45,7 +47,7 @@ class AccessConfigurationPort:
         :type target_port: str
         :param port: 访问端口。
         :type port: str
-        :param protocol: 协议。
+        :param protocol: 协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
         :type protocol: str
         :param default_certificate: 默认证书，访问方式配置为转发策略且协议为HTTPS时配置，未配置域名证书对时使用默认证书。
         :type default_certificate: str
@@ -55,6 +57,8 @@ class AccessConfigurationPort:
         :type policy: str
         :param path: 
         :type path: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
+        :param elb_id: 用户选择的elb的ID。
+        :type elb_id: str
         """
         
         
@@ -66,6 +70,7 @@ class AccessConfigurationPort:
         self._certificate = None
         self._policy = None
         self._path = None
+        self._elb_id = None
         self.discriminator = None
 
         if target_port is not None:
@@ -82,6 +87,8 @@ class AccessConfigurationPort:
             self.policy = policy
         if path is not None:
             self.path = path
+        if elb_id is not None:
+            self.elb_id = elb_id
 
     @property
     def target_port(self):
@@ -131,7 +138,7 @@ class AccessConfigurationPort:
     def protocol(self):
         """Gets the protocol of this AccessConfigurationPort.
 
-        协议。
+        协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
 
         :return: The protocol of this AccessConfigurationPort.
         :rtype: str
@@ -142,7 +149,7 @@ class AccessConfigurationPort:
     def protocol(self, protocol):
         """Sets the protocol of this AccessConfigurationPort.
 
-        协议。
+        协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
 
         :param protocol: The protocol of this AccessConfigurationPort.
         :type protocol: str
@@ -232,6 +239,28 @@ class AccessConfigurationPort:
         :type path: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
         """
         self._path = path
+
+    @property
+    def elb_id(self):
+        """Gets the elb_id of this AccessConfigurationPort.
+
+        用户选择的elb的ID。
+
+        :return: The elb_id of this AccessConfigurationPort.
+        :rtype: str
+        """
+        return self._elb_id
+
+    @elb_id.setter
+    def elb_id(self, elb_id):
+        """Sets the elb_id of this AccessConfigurationPort.
+
+        用户选择的elb的ID。
+
+        :param elb_id: The elb_id of this AccessConfigurationPort.
+        :type elb_id: str
+        """
+        self._elb_id = elb_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

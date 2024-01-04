@@ -574,6 +574,73 @@ class SFSTurboClient(Client):
 
         return http_info
 
+    def create_ldap_config(self, request):
+        """创建并绑定ldap配置
+
+        创建并绑定ldap配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateLdapConfig
+        :type request: :class:`huaweicloudsdksfsturbo.v1.CreateLdapConfigRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateLdapConfigResponse`
+        """
+        http_info = self._create_ldap_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ldap_config_invoker(self, request):
+        http_info = self._create_ldap_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ldap_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/ldap",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLdapConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_perm_rule(self, request):
         """创建权限规则
 
@@ -1019,6 +1086,71 @@ class SFSTurboClient(Client):
             path_params['feature'] = local_var_params['feature']
         if 'task_id' in local_var_params:
             path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ldap_config(self, request):
+        """删除ldap配置
+
+        删除ldap配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLdapConfig
+        :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteLdapConfigRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteLdapConfigResponse`
+        """
+        http_info = self._delete_ldap_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ldap_config_invoker(self, request):
+        http_info = self._delete_ldap_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ldap_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/ldap",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLdapConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
 
         query_params = []
 
@@ -2193,6 +2325,136 @@ class SFSTurboClient(Client):
 
         return http_info
 
+    def show_job_detail(self, request):
+        """查询job的状态详情
+
+        查询job的执行状态。 可用于查询SFS Turbo异步API的执行状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobDetail
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ShowJobDetailRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ShowJobDetailResponse`
+        """
+        http_info = self._show_job_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_detail_invoker(self, request):
+        http_info = self._show_job_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sfs-turbo/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ldap_config(self, request):
+        """查询Ldap的配置
+
+        查询Ldap的配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLdapConfig
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ShowLdapConfigRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ShowLdapConfigResponse`
+        """
+        http_info = self._show_ldap_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ldap_config_invoker(self, request):
+        http_info = self._show_ldap_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ldap_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/ldap",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLdapConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_perm_rule(self, request):
         """查询文件系统的某一个权限规则
 
@@ -2507,6 +2769,73 @@ class SFSTurboClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ldap_config(self, request):
+        """修改ldap配置
+
+        修改ldap配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLdapConfig
+        :type request: :class:`huaweicloudsdksfsturbo.v1.UpdateLdapConfigRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateLdapConfigResponse`
+        """
+        http_info = self._update_ldap_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ldap_config_invoker(self, request):
+        http_info = self._update_ldap_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ldap_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/ldap",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLdapConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])

@@ -39,7 +39,8 @@ class Port:
         'instance_type': 'str',
         'port_security_enabled': 'bool',
         'zone_id': 'str',
-        'enable_efi': 'bool'
+        'enable_efi': 'bool',
+        'ipv6_bandwidth_id': 'str'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class Port:
         'instance_type': 'instance_type',
         'port_security_enabled': 'port_security_enabled',
         'zone_id': 'zone_id',
-        'enable_efi': 'enable_efi'
+        'enable_efi': 'enable_efi',
+        'ipv6_bandwidth_id': 'ipv6_bandwidth_id'
     }
 
-    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None, port_security_enabled=None, zone_id=None, enable_efi=None):
+    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None, port_security_enabled=None, zone_id=None, enable_efi=None, ipv6_bandwidth_id=None):
         """Port
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class Port:
         :type zone_id: str
         :param enable_efi: 功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
         :type enable_efi: bool
+        :param ipv6_bandwidth_id: 功能说明：IPv6网卡绑定的共享带宽ID 约束：只有IPv6网卡绑定了共享带宽，才会显示此参数
+        :type ipv6_bandwidth_id: str
         """
         
         
@@ -146,6 +150,7 @@ class Port:
         self._port_security_enabled = None
         self._zone_id = None
         self._enable_efi = None
+        self._ipv6_bandwidth_id = None
         self.discriminator = None
 
         self.id = id
@@ -171,6 +176,7 @@ class Port:
         self.port_security_enabled = port_security_enabled
         self.zone_id = zone_id
         self.enable_efi = enable_efi
+        self.ipv6_bandwidth_id = ipv6_bandwidth_id
 
     @property
     def id(self):
@@ -673,6 +679,28 @@ class Port:
         :type enable_efi: bool
         """
         self._enable_efi = enable_efi
+
+    @property
+    def ipv6_bandwidth_id(self):
+        """Gets the ipv6_bandwidth_id of this Port.
+
+        功能说明：IPv6网卡绑定的共享带宽ID 约束：只有IPv6网卡绑定了共享带宽，才会显示此参数
+
+        :return: The ipv6_bandwidth_id of this Port.
+        :rtype: str
+        """
+        return self._ipv6_bandwidth_id
+
+    @ipv6_bandwidth_id.setter
+    def ipv6_bandwidth_id(self, ipv6_bandwidth_id):
+        """Sets the ipv6_bandwidth_id of this Port.
+
+        功能说明：IPv6网卡绑定的共享带宽ID 约束：只有IPv6网卡绑定了共享带宽，才会显示此参数
+
+        :param ipv6_bandwidth_id: The ipv6_bandwidth_id of this Port.
+        :type ipv6_bandwidth_id: str
+        """
+        self._ipv6_bandwidth_id = ipv6_bandwidth_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

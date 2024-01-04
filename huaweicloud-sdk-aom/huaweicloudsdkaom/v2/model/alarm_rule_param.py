@@ -26,7 +26,7 @@ class AlarmRuleParam:
         'comparison_operator': 'str',
         'dimensions': 'list[Dimension]',
         'evaluation_periods': 'int',
-        'id_turn_on': 'bool',
+        'is_turn_on': 'bool',
         'insufficient_data_actions': 'list[str]',
         'metric_name': 'str',
         'namespace': 'str',
@@ -47,7 +47,7 @@ class AlarmRuleParam:
         'comparison_operator': 'comparison_operator',
         'dimensions': 'dimensions',
         'evaluation_periods': 'evaluation_periods',
-        'id_turn_on': 'id_turn_on',
+        'is_turn_on': 'is_turn_on',
         'insufficient_data_actions': 'insufficient_data_actions',
         'metric_name': 'metric_name',
         'namespace': 'namespace',
@@ -58,7 +58,7 @@ class AlarmRuleParam:
         'unit': 'unit'
     }
 
-    def __init__(self, action_enabled=None, alarm_actions=None, alarm_advice=None, alarm_description=None, alarm_level=None, alarm_rule_name=None, comparison_operator=None, dimensions=None, evaluation_periods=None, id_turn_on=None, insufficient_data_actions=None, metric_name=None, namespace=None, ok_actions=None, period=None, statistic=None, threshold=None, unit=None):
+    def __init__(self, action_enabled=None, alarm_actions=None, alarm_advice=None, alarm_description=None, alarm_level=None, alarm_rule_name=None, comparison_operator=None, dimensions=None, evaluation_periods=None, is_turn_on=None, insufficient_data_actions=None, metric_name=None, namespace=None, ok_actions=None, period=None, statistic=None, threshold=None, unit=None):
         """AlarmRuleParam
 
         The model defined in huaweicloud sdk
@@ -73,16 +73,16 @@ class AlarmRuleParam:
         :type alarm_description: str
         :param alarm_level: 告警级别。1：紧急，2：重要，3：一般，4：提示。
         :type alarm_level: int
-        :param alarm_rule_name: 阈值规则名称。
+        :param alarm_rule_name: 阈值规则名称。规则名称包含大小写字母、数字、特殊字符（-_）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
         :type alarm_rule_name: str
-        :param comparison_operator: 超限条件。
+        :param comparison_operator: 超限条件。&lt;：小于阈值。&gt;：大于阈值。&lt;&#x3D;：小于等于阈值。&gt;&#x3D;：大于等于阈值。
         :type comparison_operator: str
         :param dimensions: 时间序列维度。
         :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         :param evaluation_periods: 间隔周期。
         :type evaluation_periods: int
-        :param id_turn_on: 阈值规则是否启用。
-        :type id_turn_on: bool
+        :param is_turn_on: 阈值规则是否启用。
+        :type is_turn_on: bool
         :param insufficient_data_actions: 数据不足通知列表。
         :type insufficient_data_actions: list[str]
         :param metric_name: 时间序列名称。名称长度取值范围为1~255个字符。
@@ -91,7 +91,7 @@ class AlarmRuleParam:
         :type namespace: str
         :param ok_actions: 正常状态通知列表。
         :type ok_actions: list[str]
-        :param period: 统计周期。
+        :param period: 统计周期。60000：一分钟。300000：五分钟。900000：十五分钟。3600000：一小时。
         :type period: int
         :param statistic: 统计方式。
         :type statistic: str
@@ -112,7 +112,7 @@ class AlarmRuleParam:
         self._comparison_operator = None
         self._dimensions = None
         self._evaluation_periods = None
-        self._id_turn_on = None
+        self._is_turn_on = None
         self._insufficient_data_actions = None
         self._metric_name = None
         self._namespace = None
@@ -136,8 +136,8 @@ class AlarmRuleParam:
         self.comparison_operator = comparison_operator
         self.dimensions = dimensions
         self.evaluation_periods = evaluation_periods
-        if id_turn_on is not None:
-            self.id_turn_on = id_turn_on
+        if is_turn_on is not None:
+            self.is_turn_on = is_turn_on
         if insufficient_data_actions is not None:
             self.insufficient_data_actions = insufficient_data_actions
         self.metric_name = metric_name
@@ -263,7 +263,7 @@ class AlarmRuleParam:
     def alarm_rule_name(self):
         """Gets the alarm_rule_name of this AlarmRuleParam.
 
-        阈值规则名称。
+        阈值规则名称。规则名称包含大小写字母、数字、特殊字符（-_）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
 
         :return: The alarm_rule_name of this AlarmRuleParam.
         :rtype: str
@@ -274,7 +274,7 @@ class AlarmRuleParam:
     def alarm_rule_name(self, alarm_rule_name):
         """Sets the alarm_rule_name of this AlarmRuleParam.
 
-        阈值规则名称。
+        阈值规则名称。规则名称包含大小写字母、数字、特殊字符（-_）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
 
         :param alarm_rule_name: The alarm_rule_name of this AlarmRuleParam.
         :type alarm_rule_name: str
@@ -285,7 +285,7 @@ class AlarmRuleParam:
     def comparison_operator(self):
         """Gets the comparison_operator of this AlarmRuleParam.
 
-        超限条件。
+        超限条件。<：小于阈值。>：大于阈值。<=：小于等于阈值。>=：大于等于阈值。
 
         :return: The comparison_operator of this AlarmRuleParam.
         :rtype: str
@@ -296,7 +296,7 @@ class AlarmRuleParam:
     def comparison_operator(self, comparison_operator):
         """Sets the comparison_operator of this AlarmRuleParam.
 
-        超限条件。
+        超限条件。<：小于阈值。>：大于阈值。<=：小于等于阈值。>=：大于等于阈值。
 
         :param comparison_operator: The comparison_operator of this AlarmRuleParam.
         :type comparison_operator: str
@@ -348,26 +348,26 @@ class AlarmRuleParam:
         self._evaluation_periods = evaluation_periods
 
     @property
-    def id_turn_on(self):
-        """Gets the id_turn_on of this AlarmRuleParam.
+    def is_turn_on(self):
+        """Gets the is_turn_on of this AlarmRuleParam.
 
         阈值规则是否启用。
 
-        :return: The id_turn_on of this AlarmRuleParam.
+        :return: The is_turn_on of this AlarmRuleParam.
         :rtype: bool
         """
-        return self._id_turn_on
+        return self._is_turn_on
 
-    @id_turn_on.setter
-    def id_turn_on(self, id_turn_on):
-        """Sets the id_turn_on of this AlarmRuleParam.
+    @is_turn_on.setter
+    def is_turn_on(self, is_turn_on):
+        """Sets the is_turn_on of this AlarmRuleParam.
 
         阈值规则是否启用。
 
-        :param id_turn_on: The id_turn_on of this AlarmRuleParam.
-        :type id_turn_on: bool
+        :param is_turn_on: The is_turn_on of this AlarmRuleParam.
+        :type is_turn_on: bool
         """
-        self._id_turn_on = id_turn_on
+        self._is_turn_on = is_turn_on
 
     @property
     def insufficient_data_actions(self):
@@ -461,7 +461,7 @@ class AlarmRuleParam:
     def period(self):
         """Gets the period of this AlarmRuleParam.
 
-        统计周期。
+        统计周期。60000：一分钟。300000：五分钟。900000：十五分钟。3600000：一小时。
 
         :return: The period of this AlarmRuleParam.
         :rtype: int
@@ -472,7 +472,7 @@ class AlarmRuleParam:
     def period(self, period):
         """Sets the period of this AlarmRuleParam.
 
-        统计周期。
+        统计周期。60000：一分钟。300000：五分钟。900000：十五分钟。3600000：一小时。
 
         :param period: The period of this AlarmRuleParam.
         :type period: int

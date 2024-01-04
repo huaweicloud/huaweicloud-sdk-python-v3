@@ -21,6 +21,7 @@ class CreateReleaseReqBody:
         'description': 'str',
         'name': 'str',
         'namespace': 'str',
+        'version': 'str',
         'parameters': 'ReleaseReqBodyParams',
         'values': 'CreateReleaseReqBodyValues'
     }
@@ -30,11 +31,12 @@ class CreateReleaseReqBody:
         'description': 'description',
         'name': 'name',
         'namespace': 'namespace',
+        'version': 'version',
         'parameters': 'parameters',
         'values': 'values'
     }
 
-    def __init__(self, chart_id=None, description=None, name=None, namespace=None, parameters=None, values=None):
+    def __init__(self, chart_id=None, description=None, name=None, namespace=None, version=None, parameters=None, values=None):
         """CreateReleaseReqBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateReleaseReqBody:
         :type name: str
         :param namespace: 模板实例所在的命名空间
         :type namespace: str
+        :param version: 模板实例版本号
+        :type version: str
         :param parameters: 
         :type parameters: :class:`huaweicloudsdkcce.v3.ReleaseReqBodyParams`
         :param values: 
@@ -59,6 +63,7 @@ class CreateReleaseReqBody:
         self._description = None
         self._name = None
         self._namespace = None
+        self._version = None
         self._parameters = None
         self._values = None
         self.discriminator = None
@@ -68,6 +73,7 @@ class CreateReleaseReqBody:
             self.description = description
         self.name = name
         self.namespace = namespace
+        self.version = version
         if parameters is not None:
             self.parameters = parameters
         self.values = values
@@ -159,6 +165,28 @@ class CreateReleaseReqBody:
         :type namespace: str
         """
         self._namespace = namespace
+
+    @property
+    def version(self):
+        """Gets the version of this CreateReleaseReqBody.
+
+        模板实例版本号
+
+        :return: The version of this CreateReleaseReqBody.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this CreateReleaseReqBody.
+
+        模板实例版本号
+
+        :param version: The version of this CreateReleaseReqBody.
+        :type version: str
+        """
+        self._version = version
 
     @property
     def parameters(self):

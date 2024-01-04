@@ -47,7 +47,8 @@ class CreateClusterReqV2:
         'bootstrap_scripts': 'list[BootstrapScript]',
         'add_jobs': 'list[AddJobsReqV11]',
         'log_uri': 'str',
-        'component_configs': 'list[ComponentConfig]'
+        'component_configs': 'list[ComponentConfig]',
+        'smn_notify': 'SmnNotify'
     }
 
     attribute_map = {
@@ -81,10 +82,11 @@ class CreateClusterReqV2:
         'bootstrap_scripts': 'bootstrap_scripts',
         'add_jobs': 'add_jobs',
         'log_uri': 'log_uri',
-        'component_configs': 'component_configs'
+        'component_configs': 'component_configs',
+        'smn_notify': 'smn_notify'
     }
 
-    def __init__(self, is_dec_project=None, cluster_version=None, cluster_name=None, cluster_type=None, charge_info=None, region=None, vpc_name=None, subnet_id=None, subnet_name=None, components=None, external_datasources=None, availability_zone=None, security_groups_id=None, auto_create_default_security_group=None, safe_mode=None, manager_admin_password=None, login_mode=None, node_root_password=None, node_keypair_name=None, enterprise_project_id=None, eip_address=None, eip_id=None, mrs_ecs_default_agency=None, template_id=None, tags=None, log_collection=None, node_groups=None, bootstrap_scripts=None, add_jobs=None, log_uri=None, component_configs=None):
+    def __init__(self, is_dec_project=None, cluster_version=None, cluster_name=None, cluster_type=None, charge_info=None, region=None, vpc_name=None, subnet_id=None, subnet_name=None, components=None, external_datasources=None, availability_zone=None, security_groups_id=None, auto_create_default_security_group=None, safe_mode=None, manager_admin_password=None, login_mode=None, node_root_password=None, node_keypair_name=None, enterprise_project_id=None, eip_address=None, eip_id=None, mrs_ecs_default_agency=None, template_id=None, tags=None, log_collection=None, node_groups=None, bootstrap_scripts=None, add_jobs=None, log_uri=None, component_configs=None, smn_notify=None):
         """CreateClusterReqV2
 
         The model defined in huaweicloud sdk
@@ -151,6 +153,8 @@ class CreateClusterReqV2:
         :type log_uri: str
         :param component_configs: 集群组件自定义配置。 该参数只适用于支持“自定义组件配置创建集群”特性的集群版本。
         :type component_configs: list[:class:`huaweicloudsdkmrs.v2.ComponentConfig`]
+        :param smn_notify: 
+        :type smn_notify: :class:`huaweicloudsdkmrs.v2.SmnNotify`
         """
         
         
@@ -186,6 +190,7 @@ class CreateClusterReqV2:
         self._add_jobs = None
         self._log_uri = None
         self._component_configs = None
+        self._smn_notify = None
         self.discriminator = None
 
         if is_dec_project is not None:
@@ -238,6 +243,8 @@ class CreateClusterReqV2:
             self.log_uri = log_uri
         if component_configs is not None:
             self.component_configs = component_configs
+        if smn_notify is not None:
+            self.smn_notify = smn_notify
 
     @property
     def is_dec_project(self):
@@ -916,6 +923,24 @@ class CreateClusterReqV2:
         :type component_configs: list[:class:`huaweicloudsdkmrs.v2.ComponentConfig`]
         """
         self._component_configs = component_configs
+
+    @property
+    def smn_notify(self):
+        """Gets the smn_notify of this CreateClusterReqV2.
+
+        :return: The smn_notify of this CreateClusterReqV2.
+        :rtype: :class:`huaweicloudsdkmrs.v2.SmnNotify`
+        """
+        return self._smn_notify
+
+    @smn_notify.setter
+    def smn_notify(self, smn_notify):
+        """Sets the smn_notify of this CreateClusterReqV2.
+
+        :param smn_notify: The smn_notify of this CreateClusterReqV2.
+        :type smn_notify: :class:`huaweicloudsdkmrs.v2.SmnNotify`
+        """
+        self._smn_notify = smn_notify
 
     def to_dict(self):
         """Returns the model properties as a dict"""

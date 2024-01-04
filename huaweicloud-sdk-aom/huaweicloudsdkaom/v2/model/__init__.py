@@ -121,6 +121,7 @@ from huaweicloudsdkaom.v2.model.mute_config import MuteConfig
 from huaweicloudsdkaom.v2.model.mute_rule import MuteRule
 from huaweicloudsdkaom.v2.model.name_rule import NameRule
 from huaweicloudsdkaom.v2.model.notifications import Notifications
+from huaweicloudsdkaom.v2.model.notified_histories_result import NotifiedHistoriesResult
 from huaweicloudsdkaom.v2.model.prom_config_model import PromConfigModel
 from huaweicloudsdkaom.v2.model.prom_instance_eps_model import PromInstanceEpsModel
 from huaweicloudsdkaom.v2.model.push_events_request import PushEventsRequest

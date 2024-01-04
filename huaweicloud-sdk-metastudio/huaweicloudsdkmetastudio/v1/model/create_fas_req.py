@@ -18,15 +18,17 @@ class CreateFASReq:
 
     openapi_types = {
         'audio_file_download_url': 'str',
-        'frame_rate': 'int'
+        'frame_rate': 'int',
+        'emotion': 'int'
     }
 
     attribute_map = {
         'audio_file_download_url': 'audio_file_download_url',
-        'frame_rate': 'frame_rate'
+        'frame_rate': 'frame_rate',
+        'emotion': 'emotion'
     }
 
-    def __init__(self, audio_file_download_url=None, frame_rate=None):
+    def __init__(self, audio_file_download_url=None, frame_rate=None, emotion=None):
         """CreateFASReq
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class CreateFASReq:
         :type audio_file_download_url: str
         :param frame_rate: 期望的输出帧率
         :type frame_rate: int
+        :param emotion: 情绪： 0：平静（默认） 1：开心 2：哀伤 3：愤怒
+        :type emotion: int
         """
         
         
 
         self._audio_file_download_url = None
         self._frame_rate = None
+        self._emotion = None
         self.discriminator = None
 
         self.audio_file_download_url = audio_file_download_url
         self.frame_rate = frame_rate
+        if emotion is not None:
+            self.emotion = emotion
 
     @property
     def audio_file_download_url(self):
@@ -89,6 +96,28 @@ class CreateFASReq:
         :type frame_rate: int
         """
         self._frame_rate = frame_rate
+
+    @property
+    def emotion(self):
+        """Gets the emotion of this CreateFASReq.
+
+        情绪： 0：平静（默认） 1：开心 2：哀伤 3：愤怒
+
+        :return: The emotion of this CreateFASReq.
+        :rtype: int
+        """
+        return self._emotion
+
+    @emotion.setter
+    def emotion(self, emotion):
+        """Sets the emotion of this CreateFASReq.
+
+        情绪： 0：平静（默认） 1：开心 2：哀伤 3：愤怒
+
+        :param emotion: The emotion of this CreateFASReq.
+        :type emotion: int
+        """
+        self._emotion = emotion
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,6 +27,7 @@ from huaweicloudsdkdlf.v1.model.delete_resource_response import DeleteResourceRe
 from huaweicloudsdkdlf.v1.model.delete_script_request import DeleteScriptRequest
 from huaweicloudsdkdlf.v1.model.delete_script_response import DeleteScriptResponse
 from huaweicloudsdkdlf.v1.model.depend_job import DependJob
+from huaweicloudsdkdlf.v1.model.depend_work_space_job import DependWorkSpaceJob
 from huaweicloudsdkdlf.v1.model.directory_tree_resp import DirectoryTreeResp
 from huaweicloudsdkdlf.v1.model.event import Event
 from huaweicloudsdkdlf.v1.model.execute_script_req import ExecuteScriptReq

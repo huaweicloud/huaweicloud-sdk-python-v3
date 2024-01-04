@@ -19,7 +19,7 @@ class ListAlertRsp:
     openapi_types = {
         'version': 'str',
         'environment': 'ShowAlertRspEnvironment',
-        'datasource': 'ShowAlertRspDatasource',
+        'data_source': 'ShowAlertRspDatasource',
         'first_observed_time': 'str',
         'last_observed_time': 'str',
         'create_time': 'str',
@@ -29,7 +29,7 @@ class ListAlertRsp:
         'source_url': 'str',
         'count': 'int',
         'confidence': 'int',
-        'serverity': 'str',
+        'severity': 'str',
         'criticality': 'int',
         'alert_type': 'object',
         'network_list': 'list[ListAlertRspNetworkList]',
@@ -46,7 +46,7 @@ class ListAlertRsp:
         'simulation': 'str',
         'actor': 'str',
         'owner': 'str',
-        'cteator': 'str',
+        'creator': 'str',
         'close_reason': 'str',
         'close_comment': 'str',
         'malware': 'ShowAlertRspMalware',
@@ -62,7 +62,7 @@ class ListAlertRsp:
     attribute_map = {
         'version': 'version',
         'environment': 'environment',
-        'datasource': 'datasource',
+        'data_source': 'data_source',
         'first_observed_time': 'first_observed_time',
         'last_observed_time': 'last_observed_time',
         'create_time': 'create_time',
@@ -72,7 +72,7 @@ class ListAlertRsp:
         'source_url': 'source_url',
         'count': 'count',
         'confidence': 'confidence',
-        'serverity': 'serverity',
+        'severity': 'severity',
         'criticality': 'criticality',
         'alert_type': 'alert_type',
         'network_list': 'network_list',
@@ -89,7 +89,7 @@ class ListAlertRsp:
         'simulation': 'simulation',
         'actor': 'actor',
         'owner': 'owner',
-        'cteator': 'cteator',
+        'creator': 'creator',
         'close_reason': 'close_reason',
         'close_comment': 'close_comment',
         'malware': 'malware',
@@ -102,7 +102,7 @@ class ListAlertRsp:
         'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, version=None, environment=None, datasource=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, title=None, description=None, source_url=None, count=None, confidence=None, serverity=None, criticality=None, alert_type=None, network_list=None, resource_list=None, remediation=None, verification_state=None, handle_status=None, sla=None, update_time=None, close_time=None, chop_phase=None, ipdrr_phase=None, ppdr_phase=None, simulation=None, actor=None, owner=None, cteator=None, close_reason=None, close_comment=None, malware=None, system_info=None, process=None, user_info=None, file_info=None, system_alert_table=None, id=None, workspace_id=None):
+    def __init__(self, version=None, environment=None, data_source=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, title=None, description=None, source_url=None, count=None, confidence=None, severity=None, criticality=None, alert_type=None, network_list=None, resource_list=None, remediation=None, verification_state=None, handle_status=None, sla=None, update_time=None, close_time=None, chop_phase=None, ipdrr_phase=None, ppdr_phase=None, simulation=None, actor=None, owner=None, creator=None, close_reason=None, close_comment=None, malware=None, system_info=None, process=None, user_info=None, file_info=None, system_alert_table=None, id=None, workspace_id=None):
         """ListAlertRsp
 
         The model defined in huaweicloud sdk
@@ -111,8 +111,8 @@ class ListAlertRsp:
         :type version: str
         :param environment: 
         :type environment: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspEnvironment`
-        :param datasource: 
-        :type datasource: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspDatasource`
+        :param data_source: 
+        :type data_source: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspDatasource`
         :param first_observed_time: Update time
         :type first_observed_time: str
         :param last_observed_time: Update time
@@ -131,8 +131,8 @@ class ListAlertRsp:
         :type count: int
         :param confidence: 置信度
         :type confidence: int
-        :param serverity: 严重性等级
-        :type serverity: str
+        :param severity: 严重性等级
+        :type severity: str
         :param criticality: 关键性，是指事件涉及的资源的重要性级别。
         :type criticality: int
         :param alert_type: 事件分类
@@ -165,8 +165,8 @@ class ListAlertRsp:
         :type actor: str
         :param owner: The name, display only
         :type owner: str
-        :param cteator: The name, display only
-        :type cteator: str
+        :param creator: The name, display only
+        :type creator: str
         :param close_reason: 关闭原因
         :type close_reason: str
         :param close_comment: 关闭原因
@@ -193,7 +193,7 @@ class ListAlertRsp:
 
         self._version = None
         self._environment = None
-        self._datasource = None
+        self._data_source = None
         self._first_observed_time = None
         self._last_observed_time = None
         self._create_time = None
@@ -203,7 +203,7 @@ class ListAlertRsp:
         self._source_url = None
         self._count = None
         self._confidence = None
-        self._serverity = None
+        self._severity = None
         self._criticality = None
         self._alert_type = None
         self._network_list = None
@@ -220,7 +220,7 @@ class ListAlertRsp:
         self._simulation = None
         self._actor = None
         self._owner = None
-        self._cteator = None
+        self._creator = None
         self._close_reason = None
         self._close_comment = None
         self._malware = None
@@ -237,8 +237,8 @@ class ListAlertRsp:
             self.version = version
         if environment is not None:
             self.environment = environment
-        if datasource is not None:
-            self.datasource = datasource
+        if data_source is not None:
+            self.data_source = data_source
         if first_observed_time is not None:
             self.first_observed_time = first_observed_time
         if last_observed_time is not None:
@@ -257,8 +257,8 @@ class ListAlertRsp:
             self.count = count
         if confidence is not None:
             self.confidence = confidence
-        if serverity is not None:
-            self.serverity = serverity
+        if severity is not None:
+            self.severity = severity
         if criticality is not None:
             self.criticality = criticality
         if alert_type is not None:
@@ -291,8 +291,8 @@ class ListAlertRsp:
             self.actor = actor
         if owner is not None:
             self.owner = owner
-        if cteator is not None:
-            self.cteator = cteator
+        if creator is not None:
+            self.creator = creator
         if close_reason is not None:
             self.close_reason = close_reason
         if close_comment is not None:
@@ -355,22 +355,22 @@ class ListAlertRsp:
         self._environment = environment
 
     @property
-    def datasource(self):
-        """Gets the datasource of this ListAlertRsp.
+    def data_source(self):
+        """Gets the data_source of this ListAlertRsp.
 
-        :return: The datasource of this ListAlertRsp.
+        :return: The data_source of this ListAlertRsp.
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspDatasource`
         """
-        return self._datasource
+        return self._data_source
 
-    @datasource.setter
-    def datasource(self, datasource):
-        """Sets the datasource of this ListAlertRsp.
+    @data_source.setter
+    def data_source(self, data_source):
+        """Sets the data_source of this ListAlertRsp.
 
-        :param datasource: The datasource of this ListAlertRsp.
-        :type datasource: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspDatasource`
+        :param data_source: The data_source of this ListAlertRsp.
+        :type data_source: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspDatasource`
         """
-        self._datasource = datasource
+        self._data_source = data_source
 
     @property
     def first_observed_time(self):
@@ -571,26 +571,26 @@ class ListAlertRsp:
         self._confidence = confidence
 
     @property
-    def serverity(self):
-        """Gets the serverity of this ListAlertRsp.
+    def severity(self):
+        """Gets the severity of this ListAlertRsp.
 
         严重性等级
 
-        :return: The serverity of this ListAlertRsp.
+        :return: The severity of this ListAlertRsp.
         :rtype: str
         """
-        return self._serverity
+        return self._severity
 
-    @serverity.setter
-    def serverity(self, serverity):
-        """Sets the serverity of this ListAlertRsp.
+    @severity.setter
+    def severity(self, severity):
+        """Sets the severity of this ListAlertRsp.
 
         严重性等级
 
-        :param serverity: The serverity of this ListAlertRsp.
-        :type serverity: str
+        :param severity: The severity of this ListAlertRsp.
+        :type severity: str
         """
-        self._serverity = serverity
+        self._severity = severity
 
     @property
     def criticality(self):
@@ -941,26 +941,26 @@ class ListAlertRsp:
         self._owner = owner
 
     @property
-    def cteator(self):
-        """Gets the cteator of this ListAlertRsp.
+    def creator(self):
+        """Gets the creator of this ListAlertRsp.
 
         The name, display only
 
-        :return: The cteator of this ListAlertRsp.
+        :return: The creator of this ListAlertRsp.
         :rtype: str
         """
-        return self._cteator
+        return self._creator
 
-    @cteator.setter
-    def cteator(self, cteator):
-        """Sets the cteator of this ListAlertRsp.
+    @creator.setter
+    def creator(self, creator):
+        """Sets the creator of this ListAlertRsp.
 
         The name, display only
 
-        :param cteator: The cteator of this ListAlertRsp.
-        :type cteator: str
+        :param creator: The creator of this ListAlertRsp.
+        :type creator: str
         """
-        self._cteator = cteator
+        self._creator = creator
 
     @property
     def close_reason(self):

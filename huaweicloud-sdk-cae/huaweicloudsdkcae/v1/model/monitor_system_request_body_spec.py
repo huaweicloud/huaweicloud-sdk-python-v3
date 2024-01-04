@@ -43,19 +43,19 @@ class MonitorSystemRequestBodySpec:
 
         The model defined in huaweicloud sdk
 
-        :param type: 采集方式，包括apm2和opentelemetry。
+        :param type: 采集方式。
         :type type: str
-        :param instrumentation: 探针注入方式，包括automatic和manual。
+        :param instrumentation: 探针注入方式。
         :type instrumentation: str
-        :param access_key: apm2 access_key。
+        :param access_key: apm2访问密钥Key。
         :type access_key: str
-        :param access_value: apm2 access_value。
+        :param access_value: apm2访问密钥value。
         :type access_value: str
-        :param access_token: apm opentelemetry接入token。
+        :param access_token: apm2 opentelemetry接入token。
         :type access_token: str
-        :param apm_application: apm应用名。
+        :param apm_application: apm2应用。
         :type apm_application: str
-        :param version: apm-agent/opentelemetry-agent探针版本。
+        :param version: 增强型探针/opentelemetry探针版本。
         :type version: str
         :param image_pull_policy: 探针镜像更新策略。
         :type image_pull_policy: str
@@ -89,7 +89,7 @@ class MonitorSystemRequestBodySpec:
     def type(self):
         """Gets the type of this MonitorSystemRequestBodySpec.
 
-        采集方式，包括apm2和opentelemetry。
+        采集方式。
 
         :return: The type of this MonitorSystemRequestBodySpec.
         :rtype: str
@@ -100,7 +100,7 @@ class MonitorSystemRequestBodySpec:
     def type(self, type):
         """Sets the type of this MonitorSystemRequestBodySpec.
 
-        采集方式，包括apm2和opentelemetry。
+        采集方式。
 
         :param type: The type of this MonitorSystemRequestBodySpec.
         :type type: str
@@ -111,7 +111,7 @@ class MonitorSystemRequestBodySpec:
     def instrumentation(self):
         """Gets the instrumentation of this MonitorSystemRequestBodySpec.
 
-        探针注入方式，包括automatic和manual。
+        探针注入方式。
 
         :return: The instrumentation of this MonitorSystemRequestBodySpec.
         :rtype: str
@@ -122,7 +122,7 @@ class MonitorSystemRequestBodySpec:
     def instrumentation(self, instrumentation):
         """Sets the instrumentation of this MonitorSystemRequestBodySpec.
 
-        探针注入方式，包括automatic和manual。
+        探针注入方式。
 
         :param instrumentation: The instrumentation of this MonitorSystemRequestBodySpec.
         :type instrumentation: str
@@ -133,7 +133,7 @@ class MonitorSystemRequestBodySpec:
     def access_key(self):
         """Gets the access_key of this MonitorSystemRequestBodySpec.
 
-        apm2 access_key。
+        apm2访问密钥Key。
 
         :return: The access_key of this MonitorSystemRequestBodySpec.
         :rtype: str
@@ -144,7 +144,7 @@ class MonitorSystemRequestBodySpec:
     def access_key(self, access_key):
         """Sets the access_key of this MonitorSystemRequestBodySpec.
 
-        apm2 access_key。
+        apm2访问密钥Key。
 
         :param access_key: The access_key of this MonitorSystemRequestBodySpec.
         :type access_key: str
@@ -155,7 +155,7 @@ class MonitorSystemRequestBodySpec:
     def access_value(self):
         """Gets the access_value of this MonitorSystemRequestBodySpec.
 
-        apm2 access_value。
+        apm2访问密钥value。
 
         :return: The access_value of this MonitorSystemRequestBodySpec.
         :rtype: str
@@ -166,7 +166,7 @@ class MonitorSystemRequestBodySpec:
     def access_value(self, access_value):
         """Sets the access_value of this MonitorSystemRequestBodySpec.
 
-        apm2 access_value。
+        apm2访问密钥value。
 
         :param access_value: The access_value of this MonitorSystemRequestBodySpec.
         :type access_value: str
@@ -177,7 +177,7 @@ class MonitorSystemRequestBodySpec:
     def access_token(self):
         """Gets the access_token of this MonitorSystemRequestBodySpec.
 
-        apm opentelemetry接入token。
+        apm2 opentelemetry接入token。
 
         :return: The access_token of this MonitorSystemRequestBodySpec.
         :rtype: str
@@ -188,7 +188,7 @@ class MonitorSystemRequestBodySpec:
     def access_token(self, access_token):
         """Sets the access_token of this MonitorSystemRequestBodySpec.
 
-        apm opentelemetry接入token。
+        apm2 opentelemetry接入token。
 
         :param access_token: The access_token of this MonitorSystemRequestBodySpec.
         :type access_token: str
@@ -199,7 +199,7 @@ class MonitorSystemRequestBodySpec:
     def apm_application(self):
         """Gets the apm_application of this MonitorSystemRequestBodySpec.
 
-        apm应用名。
+        apm2应用。
 
         :return: The apm_application of this MonitorSystemRequestBodySpec.
         :rtype: str
@@ -210,7 +210,7 @@ class MonitorSystemRequestBodySpec:
     def apm_application(self, apm_application):
         """Sets the apm_application of this MonitorSystemRequestBodySpec.
 
-        apm应用名。
+        apm2应用。
 
         :param apm_application: The apm_application of this MonitorSystemRequestBodySpec.
         :type apm_application: str
@@ -221,7 +221,7 @@ class MonitorSystemRequestBodySpec:
     def version(self):
         """Gets the version of this MonitorSystemRequestBodySpec.
 
-        apm-agent/opentelemetry-agent探针版本。
+        增强型探针/opentelemetry探针版本。
 
         :return: The version of this MonitorSystemRequestBodySpec.
         :rtype: str
@@ -232,7 +232,7 @@ class MonitorSystemRequestBodySpec:
     def version(self, version):
         """Sets the version of this MonitorSystemRequestBodySpec.
 
-        apm-agent/opentelemetry-agent探针版本。
+        增强型探针/opentelemetry探针版本。
 
         :param version: The version of this MonitorSystemRequestBodySpec.
         :type version: str

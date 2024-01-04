@@ -18,7 +18,7 @@ class ListMetricItemsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'meta_data': 'MetaData',
+        'meta_data': 'MetaDataSeries',
         'metrics': 'list[MetricItemResultAPI]'
     }
 
@@ -33,7 +33,7 @@ class ListMetricItemsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param meta_data: 
-        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
+        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaDataSeries`
         :param metrics: 指标对象列表。
         :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricItemResultAPI`]
         """
@@ -54,7 +54,7 @@ class ListMetricItemsResponse(SdkResponse):
         """Gets the meta_data of this ListMetricItemsResponse.
 
         :return: The meta_data of this ListMetricItemsResponse.
-        :rtype: :class:`huaweicloudsdkaom.v2.MetaData`
+        :rtype: :class:`huaweicloudsdkaom.v2.MetaDataSeries`
         """
         return self._meta_data
 
@@ -63,7 +63,7 @@ class ListMetricItemsResponse(SdkResponse):
         """Sets the meta_data of this ListMetricItemsResponse.
 
         :param meta_data: The meta_data of this ListMetricItemsResponse.
-        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
+        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaDataSeries`
         """
         self._meta_data = meta_data
 

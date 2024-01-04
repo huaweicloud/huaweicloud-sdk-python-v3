@@ -35,7 +35,7 @@ class BatchRestartOrDeleteInstanceReq:
 
         :param instances: 实例的ID列表。
         :type instances: list[str]
-        :param action: 对实例的操作：restart、delete
+        :param action: 对实例的操作：delete
         :type action: str
         :param all_failure: 是否批量删除创建失败的实例。  当参数值为“rabbitmq”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
         :type all_failure: str
@@ -80,7 +80,7 @@ class BatchRestartOrDeleteInstanceReq:
     def action(self):
         """Gets the action of this BatchRestartOrDeleteInstanceReq.
 
-        对实例的操作：restart、delete
+        对实例的操作：delete
 
         :return: The action of this BatchRestartOrDeleteInstanceReq.
         :rtype: str
@@ -91,7 +91,7 @@ class BatchRestartOrDeleteInstanceReq:
     def action(self, action):
         """Sets the action of this BatchRestartOrDeleteInstanceReq.
 
-        对实例的操作：restart、delete
+        对实例的操作：delete
 
         :param action: The action of this BatchRestartOrDeleteInstanceReq.
         :type action: str

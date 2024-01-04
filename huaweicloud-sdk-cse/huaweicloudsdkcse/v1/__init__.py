@@ -43,6 +43,7 @@ from huaweicloudsdkcse.v1.model.engine_configure_req import EngineConfigureReq
 from huaweicloudsdkcse.v1.model.engine_create_req import EngineCreateReq
 from huaweicloudsdkcse.v1.model.engine_external_entrypoint import EngineExternalEntrypoint
 from huaweicloudsdkcse.v1.model.engine_modify_req import EngineModifyReq
+from huaweicloudsdkcse.v1.model.engine_quota_v2_quotas import EngineQuotaV2Quotas
 from huaweicloudsdkcse.v1.model.engine_rbac_pwd import EngineRbacPwd
 from huaweicloudsdkcse.v1.model.engine_reference import EngineReference
 from huaweicloudsdkcse.v1.model.engine_simple_info import EngineSimpleInfo
@@ -73,6 +74,8 @@ from huaweicloudsdkcse.v1.model.retry_engine_request import RetryEngineRequest
 from huaweicloudsdkcse.v1.model.retry_engine_response import RetryEngineResponse
 from huaweicloudsdkcse.v1.model.show_engine_job_request import ShowEngineJobRequest
 from huaweicloudsdkcse.v1.model.show_engine_job_response import ShowEngineJobResponse
+from huaweicloudsdkcse.v1.model.show_engine_quotas_request import ShowEngineQuotasRequest
+from huaweicloudsdkcse.v1.model.show_engine_quotas_response import ShowEngineQuotasResponse
 from huaweicloudsdkcse.v1.model.show_engine_request import ShowEngineRequest
 from huaweicloudsdkcse.v1.model.show_engine_response import ShowEngineResponse
 from huaweicloudsdkcse.v1.model.spec import Spec
@@ -80,6 +83,7 @@ from huaweicloudsdkcse.v1.model.spec_cluster_node import SpecClusterNode
 from huaweicloudsdkcse.v1.model.task import Task
 from huaweicloudsdkcse.v1.model.task_executor_brief import TaskExecutorBrief
 from huaweicloudsdkcse.v1.model.task_steps import TaskSteps
+from huaweicloudsdkcse.v1.model.tenant_quota_used import TenantQuotaUsed
 from huaweicloudsdkcse.v1.model.update_governance_policy_request import UpdateGovernancePolicyRequest
 from huaweicloudsdkcse.v1.model.update_governance_policy_response import UpdateGovernancePolicyResponse
 from huaweicloudsdkcse.v1.model.update_nacos_namespaces_request import UpdateNacosNamespacesRequest

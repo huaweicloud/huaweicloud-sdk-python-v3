@@ -26,7 +26,10 @@ class AppRulesSpec:
         'log_file_fix': 'list[str]',
         'log_path_rule': 'list[LogPathRule]',
         'name_rule': 'NameRule',
-        'priority': 'int'
+        'priority': 'int',
+        'data_source': 'str',
+        'editable': 'str',
+        'aom_metric_relabel_configs': 'object'
     }
 
     attribute_map = {
@@ -39,34 +42,43 @@ class AppRulesSpec:
         'log_file_fix': 'logFileFix',
         'log_path_rule': 'logPathRule',
         'name_rule': 'nameRule',
-        'priority': 'priority'
+        'priority': 'priority',
+        'data_source': 'dataSource',
+        'editable': 'editable',
+        'aom_metric_relabel_configs': 'aom_metric_relabel_configs'
     }
 
-    def __init__(self, app_type=None, attr_list=None, detect_log=None, discovery_rule=None, is_default_rule=None, is_detect=None, log_file_fix=None, log_path_rule=None, name_rule=None, priority=None):
+    def __init__(self, app_type=None, attr_list=None, detect_log=None, discovery_rule=None, is_default_rule=None, is_detect=None, log_file_fix=None, log_path_rule=None, name_rule=None, priority=None, data_source=None, editable=None, aom_metric_relabel_configs=None):
         """AppRulesSpec
 
         The model defined in huaweicloud sdk
 
-        :param app_type: 服务类型,用于标记服务的分类,仅用于规则分类和界面展示。可以填写任意字段,如按技术栈分类可填写Java,Python。按作用分类可填写collector(采集),database(数据库)等。
+        :param app_type: 服务类型，用于标记服务的分类，仅用于规则分类和界面展示。可以填写任意字段,如按技术栈分类可填写Java，Python。按作用分类可填写collector(采集)，database(数据库)等。
         :type app_type: str
         :param attr_list: 属性列表(暂不使用,可不传)。 cmdLine、env
         :type attr_list: list[str]
         :param detect_log: 是否开启日志采集。 true、false
         :type detect_log: str
-        :param discovery_rule: 规则发现部分,数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain,checkContent格式为[“xxx”]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain,checkContent格式为 [\&quot;k1\&quot;,\&quot;v1\&quot;]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals,checkContent格式为节点ID数组[\&quot;hostId1”,”hostId2”],表示规则仅会在这些节点上生效(如果不指定节点范围,规则将下发到该项目所有的节点)。
+        :param discovery_rule: 规则发现部分，数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain，checkContent格式为[\&quot;xxx\&quot;]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain，checkContent格式为 [\&quot;k1\&quot;,\&quot;v1\&quot;]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals，checkContent格式为节点ID数组[\&quot;hostId1\&quot;,\&quot;hostId2\&quot;]，表示规则仅会在这些节点上生效(如果不指定节点范围，规则将下发到该项目所有的节点)。
         :type discovery_rule: list[:class:`huaweicloudsdkaom.v2.DiscoveryRule`]
         :param is_default_rule: 是否为默认规则。 true、false
         :type is_default_rule: str
-        :param is_detect: 是否为规则预探测场景(预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程)。 true、false
+        :param is_detect: 是否为规则预探测场景（预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程）。true、false
         :type is_detect: str
         :param log_file_fix: 日志文件的后缀。 log、trace、out
         :type log_file_fix: list[str]
-        :param log_path_rule: 日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时,args格式为[\&quot;00001\&quot;],value格式为[\&quot;/xxx/xx.log\&quot;],表示当启动命令是00001时,日志路径为/xxx/xx.log。
+        :param log_path_rule: 日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时，args格式为[\&quot;00001\&quot;]，value格式为[\&quot;/xxx/xx.log\&quot;]，表示当启动命令是00001时,日志路径为/xxx/xx.log。
         :type log_path_rule: list[:class:`huaweicloudsdkaom.v2.LogPathRule`]
         :param name_rule: 
         :type name_rule: :class:`huaweicloudsdkaom.v2.NameRule`
-        :param priority: 规则优先级。 1~9999的整数字符串,默认取值为9999
+        :param priority: 规则优先级。1~9999的整数字符串，默认取值为9999
         :type priority: int
+        :param data_source: 数据源
+        :type data_source: str
+        :param editable: 是否支持编辑 true、false
+        :type editable: str
+        :param aom_metric_relabel_configs: 指标配置
+        :type aom_metric_relabel_configs: object
         """
         
         
@@ -81,6 +93,9 @@ class AppRulesSpec:
         self._log_path_rule = None
         self._name_rule = None
         self._priority = None
+        self._data_source = None
+        self._editable = None
+        self._aom_metric_relabel_configs = None
         self.discriminator = None
 
         self.app_type = app_type
@@ -95,12 +110,18 @@ class AppRulesSpec:
             self.log_path_rule = log_path_rule
         self.name_rule = name_rule
         self.priority = priority
+        if data_source is not None:
+            self.data_source = data_source
+        if editable is not None:
+            self.editable = editable
+        if aom_metric_relabel_configs is not None:
+            self.aom_metric_relabel_configs = aom_metric_relabel_configs
 
     @property
     def app_type(self):
         """Gets the app_type of this AppRulesSpec.
 
-        服务类型,用于标记服务的分类,仅用于规则分类和界面展示。可以填写任意字段,如按技术栈分类可填写Java,Python。按作用分类可填写collector(采集),database(数据库)等。
+        服务类型，用于标记服务的分类，仅用于规则分类和界面展示。可以填写任意字段,如按技术栈分类可填写Java，Python。按作用分类可填写collector(采集)，database(数据库)等。
 
         :return: The app_type of this AppRulesSpec.
         :rtype: str
@@ -111,7 +132,7 @@ class AppRulesSpec:
     def app_type(self, app_type):
         """Sets the app_type of this AppRulesSpec.
 
-        服务类型,用于标记服务的分类,仅用于规则分类和界面展示。可以填写任意字段,如按技术栈分类可填写Java,Python。按作用分类可填写collector(采集),database(数据库)等。
+        服务类型，用于标记服务的分类，仅用于规则分类和界面展示。可以填写任意字段,如按技术栈分类可填写Java，Python。按作用分类可填写collector(采集)，database(数据库)等。
 
         :param app_type: The app_type of this AppRulesSpec.
         :type app_type: str
@@ -166,7 +187,7 @@ class AppRulesSpec:
     def discovery_rule(self):
         """Gets the discovery_rule of this AppRulesSpec.
 
-        规则发现部分,数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain,checkContent格式为[“xxx”]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain,checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals,checkContent格式为节点ID数组[\"hostId1”,”hostId2”],表示规则仅会在这些节点上生效(如果不指定节点范围,规则将下发到该项目所有的节点)。
+        规则发现部分，数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain，checkContent格式为[\"xxx\"]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain，checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals，checkContent格式为节点ID数组[\"hostId1\",\"hostId2\"]，表示规则仅会在这些节点上生效(如果不指定节点范围，规则将下发到该项目所有的节点)。
 
         :return: The discovery_rule of this AppRulesSpec.
         :rtype: list[:class:`huaweicloudsdkaom.v2.DiscoveryRule`]
@@ -177,7 +198,7 @@ class AppRulesSpec:
     def discovery_rule(self, discovery_rule):
         """Sets the discovery_rule of this AppRulesSpec.
 
-        规则发现部分,数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain,checkContent格式为[“xxx”]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain,checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals,checkContent格式为节点ID数组[\"hostId1”,”hostId2”],表示规则仅会在这些节点上生效(如果不指定节点范围,规则将下发到该项目所有的节点)。
+        规则发现部分，数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain，checkContent格式为[\"xxx\"]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain，checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals，checkContent格式为节点ID数组[\"hostId1\",\"hostId2\"]，表示规则仅会在这些节点上生效(如果不指定节点范围，规则将下发到该项目所有的节点)。
 
         :param discovery_rule: The discovery_rule of this AppRulesSpec.
         :type discovery_rule: list[:class:`huaweicloudsdkaom.v2.DiscoveryRule`]
@@ -210,7 +231,7 @@ class AppRulesSpec:
     def is_detect(self):
         """Gets the is_detect of this AppRulesSpec.
 
-        是否为规则预探测场景(预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程)。 true、false
+        是否为规则预探测场景（预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程）。true、false
 
         :return: The is_detect of this AppRulesSpec.
         :rtype: str
@@ -221,7 +242,7 @@ class AppRulesSpec:
     def is_detect(self, is_detect):
         """Sets the is_detect of this AppRulesSpec.
 
-        是否为规则预探测场景(预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程)。 true、false
+        是否为规则预探测场景（预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程）。true、false
 
         :param is_detect: The is_detect of this AppRulesSpec.
         :type is_detect: str
@@ -254,7 +275,7 @@ class AppRulesSpec:
     def log_path_rule(self):
         """Gets the log_path_rule of this AppRulesSpec.
 
-        日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时,args格式为[\"00001\"],value格式为[\"/xxx/xx.log\"],表示当启动命令是00001时,日志路径为/xxx/xx.log。
+        日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时，args格式为[\"00001\"]，value格式为[\"/xxx/xx.log\"]，表示当启动命令是00001时,日志路径为/xxx/xx.log。
 
         :return: The log_path_rule of this AppRulesSpec.
         :rtype: list[:class:`huaweicloudsdkaom.v2.LogPathRule`]
@@ -265,7 +286,7 @@ class AppRulesSpec:
     def log_path_rule(self, log_path_rule):
         """Sets the log_path_rule of this AppRulesSpec.
 
-        日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时,args格式为[\"00001\"],value格式为[\"/xxx/xx.log\"],表示当启动命令是00001时,日志路径为/xxx/xx.log。
+        日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时，args格式为[\"00001\"]，value格式为[\"/xxx/xx.log\"]，表示当启动命令是00001时,日志路径为/xxx/xx.log。
 
         :param log_path_rule: The log_path_rule of this AppRulesSpec.
         :type log_path_rule: list[:class:`huaweicloudsdkaom.v2.LogPathRule`]
@@ -294,7 +315,7 @@ class AppRulesSpec:
     def priority(self):
         """Gets the priority of this AppRulesSpec.
 
-        规则优先级。 1~9999的整数字符串,默认取值为9999
+        规则优先级。1~9999的整数字符串，默认取值为9999
 
         :return: The priority of this AppRulesSpec.
         :rtype: int
@@ -305,12 +326,78 @@ class AppRulesSpec:
     def priority(self, priority):
         """Sets the priority of this AppRulesSpec.
 
-        规则优先级。 1~9999的整数字符串,默认取值为9999
+        规则优先级。1~9999的整数字符串，默认取值为9999
 
         :param priority: The priority of this AppRulesSpec.
         :type priority: int
         """
         self._priority = priority
+
+    @property
+    def data_source(self):
+        """Gets the data_source of this AppRulesSpec.
+
+        数据源
+
+        :return: The data_source of this AppRulesSpec.
+        :rtype: str
+        """
+        return self._data_source
+
+    @data_source.setter
+    def data_source(self, data_source):
+        """Sets the data_source of this AppRulesSpec.
+
+        数据源
+
+        :param data_source: The data_source of this AppRulesSpec.
+        :type data_source: str
+        """
+        self._data_source = data_source
+
+    @property
+    def editable(self):
+        """Gets the editable of this AppRulesSpec.
+
+        是否支持编辑 true、false
+
+        :return: The editable of this AppRulesSpec.
+        :rtype: str
+        """
+        return self._editable
+
+    @editable.setter
+    def editable(self, editable):
+        """Sets the editable of this AppRulesSpec.
+
+        是否支持编辑 true、false
+
+        :param editable: The editable of this AppRulesSpec.
+        :type editable: str
+        """
+        self._editable = editable
+
+    @property
+    def aom_metric_relabel_configs(self):
+        """Gets the aom_metric_relabel_configs of this AppRulesSpec.
+
+        指标配置
+
+        :return: The aom_metric_relabel_configs of this AppRulesSpec.
+        :rtype: object
+        """
+        return self._aom_metric_relabel_configs
+
+    @aom_metric_relabel_configs.setter
+    def aom_metric_relabel_configs(self, aom_metric_relabel_configs):
+        """Sets the aom_metric_relabel_configs of this AppRulesSpec.
+
+        指标配置
+
+        :param aom_metric_relabel_configs: The aom_metric_relabel_configs of this AppRulesSpec.
+        :type aom_metric_relabel_configs: object
+        """
+        self._aom_metric_relabel_configs = aom_metric_relabel_configs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

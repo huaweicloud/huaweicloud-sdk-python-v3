@@ -1,3 +1,389 @@
+# 3.1.76 2024-01-04
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListNotifiedHistories**
+    - changes of response param
+      - `+ notified_histories`
+      - `- event_sn`
+      - `- notifications`
+  - **ListEvent2alarmRule**
+    - changes of response param
+      - `+ event_names`
+      - `+ migrated`
+      - `+ topics`
+      - `+ trigger_policies.trigger_type: enum value [immediately]`
+      - `- trigger_policies.trigger_type: enum value [notification]`
+      - `+ alarm_type: enum value [notification,denoising]`
+      - `* : list<event2alarmRuleBody> -> list<Event2alarmRuleBody>`
+  - **UpdateEventRule**
+    - changes of request param
+      - `+ event_names`
+      - `+ migrated`
+      - `+ topics`
+      - `+ trigger_policies.trigger_type: enum value [immediately]`
+      - `- trigger_policies.trigger_type: enum value [notification]`
+      - `+ alarm_type: enum value [notification,denoising]`
+      - `* body: object<event2alarmRuleBody> -> object<Event2alarmRuleBody>`
+  - **AddEvent2alarmRule**
+    - changes of request param
+      - `+ event_names`
+      - `+ migrated`
+      - `+ topics`
+      - `+ trigger_policies.trigger_type: enum value [immediately]`
+      - `- trigger_policies.trigger_type: enum value [notification]`
+      - `+ alarm_type: enum value [notification,denoising]`
+      - `* body: object<event2alarmRuleBody> -> object<Event2alarmRuleBody>`
+  - **ListMuteRule**
+    - changes of response param
+      - `* mute_config.scope: list<string> -> list<integer>`
+  - **UpdateMuteRule**
+    - changes of request param
+      - `* mute_config.scope: list<string> -> list<integer>`
+  - **AddMuteRules**
+    - changes of request param
+      - `* mute_config.scope: list<string> -> list<integer>`
+  - **ShowActionRule**
+    - changes of response param
+      - `+ type: enum value [1,2]`
+      - `- type: enum value ["1","2"]`
+  - **ListEvents**
+    - changes of response param
+      - `* events.metadata: object -> map<string, string>`
+      - `* events.annotations: object -> map<string, string>`
+      - `* events.attach_rule: object -> map<string, string>`
+  - **PushEvents**
+    - changes of request param
+      - `* events.metadata: object -> map<string, string>`
+      - `* events.annotations: object -> map<string, string>`
+      - `* events.attach_rule: object -> map<string, string>`
+  - **UpdateActionRule**
+    - changes of request param
+      - `+ type: enum value [1,2]`
+      - `- type: enum value ["1","2"]`
+  - **AddActionRule**
+    - changes of request param
+      - `+ type: enum value [1,2]`
+      - `- type: enum value ["1","2"]`
+  - **ListActionRule**
+    - changes of response param
+      - `+ action_rules.type: enum value [1,2]`
+      - `- action_rules.type: enum value ["1","2"]`
+  - **ListMetricItems**
+    - changes of response param
+      - `+ metaData.offset`
+      - `+ metaData.nextToken`
+      - `- metaData.start`
+      - `* metaData: object<metaData> -> object<MetaDataSeries>`
+  - **UpdateAlarmRule**
+    - changes of request param
+      - `+ is_turn_on`
+      - `- id_turn_on`
+      - `+ comparison_operator: enum value [<,>,<=,>=]`
+      - `+ period: enum value [60000,300000,900000,36000000]`
+  - **AddAlarmRule**
+    - changes of request param
+      - `+ is_turn_on`
+      - `- id_turn_on`
+      - `+ comparison_operator: enum value [<,>,<=,>=]`
+      - `+ period: enum value [60000,300000,900000,36000000]`
+  - **ListServiceDiscoveryRules**
+    - changes of response param
+      - `+ id`
+      - `+ appRules.desc`
+      - `+ appRules.spec.dataSource`
+      - `+ appRules.spec.editable`
+      - `+ appRules.spec.aom_metric_relabel_configs`
+  - **AddOrUpdateServiceDiscoveryRules**
+    - changes of request param
+      - `+ appRules.desc`
+      - `+ appRules.spec.dataSource`
+      - `+ appRules.spec.editable`
+      - `+ appRules.spec.aom_metric_relabel_configs`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ShowProjectOpenSourceStrategy`
+    - `ListProjectOpenSourceStrategy`
+    - `CreateOpenSourceStrategy`
+    - `UpdateOpenSourceStrategy`
+    - `ShowOpenSourceStrategy`
+    - `ListOpenSourceStrategy`
+    - `DeleteOpenSourceStrategy`
+    - `SwitchOpenSourceStrategy`
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - Support the API `ShowEngineQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the APIs `ListFactoryTaskOverview`, `ListFactoryTaskCompletion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `* nodes.cronTrigger.dependJobs: list<DependJobs> -> object<DependJob>`
+      - `+ schedule.cron.dependJobs.sameWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.otherWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* schedule.cron.dependJobs: object<DependJobs> -> object<DependJob>`
+  - **ShowJob**
+    - changes of response param
+      - `* nodes.cronTrigger.dependJobs: list<DependJobs> -> object<DependJob>`
+      - `+ schedule.cron.dependJobs.sameWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.otherWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* schedule.cron.dependJobs: object<DependJobs> -> object<DependJob>`
+  - **UpdateJob**
+    - changes of request param
+      - `* nodes.cronTrigger.dependJobs: list<DependJobs> -> object<DependJob>`
+      - `+ schedule.cron.dependJobs.sameWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.otherWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* schedule.cron.dependJobs: object<DependJobs> -> object<DependJob>`
+  - **CreateSupplementdata**
+    - changes of request param
+      - `* dependJobs.nodes.cronTrigger.dependJobs: list<DependJobs> -> object<DependJob>`
+      - `+ dependJobs.schedule.cron.dependJobs.sameWorkSpaceJobs`
+      - `+ dependJobs.schedule.cron.dependJobs.otherWorkSpaceJobs`
+      - `+ dependJobs.schedule.cron.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* dependJobs.schedule.cron.dependJobs: object<DependJobs> -> object<DependJob>`
+
+### HuaweiCloud SDK EG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEventStreaming**
+    - changes of response param
+      - `+ total`
+      - `+ size`
+      - `+ items`
+      - `- body`
+  - **CreateEventStreaming**
+    - changes of request param
+      - `* rule_config.filter: string -> object`
+      - `+ source.source_kafka.addr`
+  - **ShowEventStreaming**
+    - changes of response param
+      - `* rule_config.filter: string -> object`
+      - `+ source.source_kafka.addr`
+  - **UpdateEventStreaming**
+    - changes of request param
+      - `* rule_config.filter: string -> object`
+      - `+ source.source_kafka.addr`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAccessCode**
+    - changes of request param
+      - `+ force_disconnect`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the API `ResetMessageOffsetWithEngine`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowGroups**
+    - changes of response param
+      - `* group.group_message_offsets.message_current_offset: int32 -> int64`
+      - `* group.group_message_offsets.message_log_end_offset: int32 -> int64`
+  - **ResetMessageOffset**
+    - changes of request param
+      - `* message_offset: int32 -> int64`
+      - `* timestamp: int32 -> int64`
+  - **ShowMessages**
+    - changes of response param
+      - `* messages.message_offset: int32 -> int64`
+  - **ShowInstanceMessages**
+    - changes of response param
+      - `* messages.message_offset: int32 -> int64`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - Support the APIs `ShowTenantAccessInfo`, `UpdateTenantAccessInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - Support the APIs `ShowMrsFlavors`, `ShowSyncIamUser`, `UpdateSyncIamUser`, `CancelSyncIamUser`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCluster**
+    - changes of request param
+      - `+ smn_notify`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchRestartOrDeleteInstances**
+    - changes of request param
+      - `- action: enum value [restart]`
+  - **ListInstancesDetails**
+    - changes of request param
+      - `+ status: enum value [UPGRADING,UPGRADINGFAILED]`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SetOffSiteBackupPolicy**
+    - changes of request param
+      - `* policy_para: list<OffSiteBackupPolicy> -> object<OffSiteBackupPolicy>`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResizeInstance**
+    - changes of request param
+      - `+ publicip_id`
+
+### HuaweiCloud SDK SecMaster
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlerts**
+    - changes of response param
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.cteator`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _Features_
+  - Support the following APIs:
+    - `ShowLdapConfig`
+    - `UpdateLdapConfig`
+    - `CreateLdapConfig`
+    - `DeleteLdapConfig`
+    - `ShowJobDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SMN
+
+- _Features_
+  - Support the following APIs:
+    - `PublishHttpDetect`
+    - `ShowHttpDetectResult`
+    - `BatchUpdateSubscriptionsFilterPolices`
+    - `BatchCreateSubscriptionsFilterPolices`
+    - `BatchDeleteSubscriptionsFilterPolices`
+    - `AddSubscriptionFromSubscriptionUser`
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `ListApplicationAttributes`
+    - `UpdateApplication`
+    - `DeleteApplication`
+    - `ListApplicationEndpointAttributes`
+    - `UpdateApplicationEndpoint`
+    - `DeleteApplicationEndpoint`
+    - `PublishAppMessage`
+    - `CreateApplication`
+    - `ListApplications`
+    - `CreateApplicationEndpoint`
+    - `ListApplicationEndpoints`
+  - **PublishMessage**
+    - changes of request param
+      - `+ message_attributes`
+  - **ListTopics**
+    - changes of request param
+      - `+ fuzzy_display_name`
+  - **ListSubscriptions**
+    - changes of request param
+      - `+ fuzzy_remark`
+    - changes of response param
+      - `+ subscriptions.filter_polices`
+  - **ListSubscriptionsByTopic**
+    - changes of request param
+      - `+ fuzzy_remark`
+    - changes of response param
+      - `+ subscriptions.filter_polices`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPorts**
+    - changes of response param
+      - `+ ports.ipv6_bandwidth_id`
+  - **CreatePort**
+    - changes of response param
+      - `+ port.ipv6_bandwidth_id`
+  - **ShowPort**
+    - changes of response param
+      - `+ port.ipv6_bandwidth_id`
+  - **UpdatePort**
+    - changes of response param
+      - `+ port.ipv6_bandwidth_id`
+
 # 3.1.75 2023-12-27
 
 ### HuaweiCloud SDK AAD

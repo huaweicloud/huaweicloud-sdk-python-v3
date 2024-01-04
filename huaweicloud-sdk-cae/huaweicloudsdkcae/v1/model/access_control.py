@@ -31,9 +31,9 @@ class AccessControl:
 
         The model defined in huaweicloud sdk
 
-        :param black: 黑名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
+        :param black: 黑名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
         :type black: list[str]
-        :param white: 白名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
+        :param white: 白名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
         :type white: list[str]
         """
         
@@ -52,7 +52,7 @@ class AccessControl:
     def black(self):
         """Gets the black of this AccessControl.
 
-        黑名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
+        黑名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
 
         :return: The black of this AccessControl.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class AccessControl:
     def black(self, black):
         """Sets the black of this AccessControl.
 
-        黑名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
+        黑名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
 
         :param black: The black of this AccessControl.
         :type black: list[str]
@@ -74,7 +74,7 @@ class AccessControl:
     def white(self):
         """Gets the white of this AccessControl.
 
-        白名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
+        白名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
 
         :return: The white of this AccessControl.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class AccessControl:
     def white(self, white):
         """Sets the white of this AccessControl.
 
-        白名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
+        白名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
 
         :param white: The white of this AccessControl.
         :type white: list[str]

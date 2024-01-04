@@ -7781,6 +7781,142 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def list_factory_task_completion_async(self, request):
+        """查询任务完成情况
+
+        查询任务完成情况
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFactoryTaskCompletion
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryTaskCompletionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryTaskCompletionResponse`
+        """
+        http_info = self._list_factory_task_completion_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_task_completion_async_invoker(self, request):
+        http_info = self._list_factory_task_completion_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_factory_task_completion_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/monitor/task-completion-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryTaskCompletionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_factory_task_overview_async(self, request):
+        """查询实例运行状态
+
+        查询实例运行状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFactoryTaskOverview
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryTaskOverviewRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryTaskOverviewResponse`
+        """
+        http_info = self._list_factory_task_overview_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_task_overview_async_invoker(self, request):
+        http_info = self._list_factory_task_overview_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_factory_task_overview_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/monitor/task-statistics-overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryTaskOverviewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_own' in local_var_params:
+            query_params.append(('is_own', local_var_params['is_own']))
+        if 'query_days' in local_var_params:
+            query_params.append(('query_days', local_var_params['query_days']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instances_async(self, request):
         """获取任务执行结果列表
 

@@ -29,7 +29,7 @@ class DeleteserviceDiscoveryRulesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param app_rules_ids: 发现规则ID,传多个时以逗号分隔。
+        :param app_rules_ids: 发现规则ID，传多个时以逗号分隔。不允许为空。
         :type app_rules_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class DeleteserviceDiscoveryRulesRequest:
     def app_rules_ids(self):
         """Gets the app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
 
-        发现规则ID,传多个时以逗号分隔。
+        发现规则ID，传多个时以逗号分隔。不允许为空。
 
         :return: The app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class DeleteserviceDiscoveryRulesRequest:
     def app_rules_ids(self, app_rules_ids):
         """Sets the app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
 
-        发现规则ID,传多个时以逗号分隔。
+        发现规则ID，传多个时以逗号分隔。不允许为空。
 
         :param app_rules_ids: The app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
         :type app_rules_ids: list[str]

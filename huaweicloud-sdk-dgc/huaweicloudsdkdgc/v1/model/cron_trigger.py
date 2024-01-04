@@ -23,7 +23,7 @@ class CronTrigger:
         'expression_time_zone': 'str',
         'period': 'str',
         'depend_pre_period': 'bool',
-        'depend_jobs': 'list[DependJobs]',
+        'depend_jobs': 'DependJob',
         'concurrent': 'int'
     }
 
@@ -55,8 +55,8 @@ class CronTrigger:
         :type period: str
         :param depend_pre_period: 是否依赖本作业上一个运行周期任务的执行结果
         :type depend_pre_period: bool
-        :param depend_jobs: 依赖其它作业列表
-        :type depend_jobs: list[:class:`huaweicloudsdkdgc.v1.DependJobs`]
+        :param depend_jobs: 
+        :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`
         :param concurrent: 并发调用数
         :type concurrent: int
         """
@@ -211,10 +211,8 @@ class CronTrigger:
     def depend_jobs(self):
         """Gets the depend_jobs of this CronTrigger.
 
-        依赖其它作业列表
-
         :return: The depend_jobs of this CronTrigger.
-        :rtype: list[:class:`huaweicloudsdkdgc.v1.DependJobs`]
+        :rtype: :class:`huaweicloudsdkdgc.v1.DependJob`
         """
         return self._depend_jobs
 
@@ -222,10 +220,8 @@ class CronTrigger:
     def depend_jobs(self, depend_jobs):
         """Sets the depend_jobs of this CronTrigger.
 
-        依赖其它作业列表
-
         :param depend_jobs: The depend_jobs of this CronTrigger.
-        :type depend_jobs: list[:class:`huaweicloudsdkdgc.v1.DependJobs`]
+        :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`
         """
         self._depend_jobs = depend_jobs
 

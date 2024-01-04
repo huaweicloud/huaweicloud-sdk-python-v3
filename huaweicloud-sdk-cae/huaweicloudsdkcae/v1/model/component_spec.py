@@ -29,7 +29,8 @@ class ComponentSpec:
         'job_id': 'str',
         'build_id': 'str',
         'status': 'str',
-        'build_log_id': 'str'
+        'build_log_id': 'str',
+        'configuration_operation_id': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ComponentSpec:
         'job_id': 'job_id',
         'build_id': 'build_id',
         'status': 'status',
-        'build_log_id': 'build_log_id'
+        'build_log_id': 'build_log_id',
+        'configuration_operation_id': 'configuration_operation_id'
     }
 
-    def __init__(self, runtime=None, env_id=None, replica=None, source=None, build=None, resource_limit=None, access_info=None, image_url=None, available_replica=None, job_id=None, build_id=None, status=None, build_log_id=None):
+    def __init__(self, runtime=None, env_id=None, replica=None, source=None, build=None, resource_limit=None, access_info=None, image_url=None, available_replica=None, job_id=None, build_id=None, status=None, build_log_id=None, configuration_operation_id=None):
         """ComponentSpec
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ComponentSpec:
         :type status: str
         :param build_log_id: 构建日志ID。
         :type build_log_id: str
+        :param configuration_operation_id: 组件最新配置的操作ID。
+        :type configuration_operation_id: str
         """
         
         
@@ -96,6 +100,7 @@ class ComponentSpec:
         self._build_id = None
         self._status = None
         self._build_log_id = None
+        self._configuration_operation_id = None
         self.discriminator = None
 
         if runtime is not None:
@@ -124,6 +129,8 @@ class ComponentSpec:
             self.status = status
         if build_log_id is not None:
             self.build_log_id = build_log_id
+        if configuration_operation_id is not None:
+            self.configuration_operation_id = configuration_operation_id
 
     @property
     def runtime(self):
@@ -398,6 +405,28 @@ class ComponentSpec:
         :type build_log_id: str
         """
         self._build_log_id = build_log_id
+
+    @property
+    def configuration_operation_id(self):
+        """Gets the configuration_operation_id of this ComponentSpec.
+
+        组件最新配置的操作ID。
+
+        :return: The configuration_operation_id of this ComponentSpec.
+        :rtype: str
+        """
+        return self._configuration_operation_id
+
+    @configuration_operation_id.setter
+    def configuration_operation_id(self, configuration_operation_id):
+        """Sets the configuration_operation_id of this ComponentSpec.
+
+        组件最新配置的操作ID。
+
+        :param configuration_operation_id: The configuration_operation_id of this ComponentSpec.
+        :type configuration_operation_id: str
+        """
+        self._configuration_operation_id = configuration_operation_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

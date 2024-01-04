@@ -33,7 +33,7 @@ class ListAlarmRuleRequest:
 
         :param offset: 分页信息。
         :type offset: str
-        :param limit: 用于限制结果数据条数。 取值范围(0,1000],默认值为1000。
+        :param limit: 用于限制结果数据条数。 取值范围(0,1000]，默认值为1000。
         :type limit: int
         """
         
@@ -74,7 +74,7 @@ class ListAlarmRuleRequest:
     def limit(self):
         """Gets the limit of this ListAlarmRuleRequest.
 
-        用于限制结果数据条数。 取值范围(0,1000],默认值为1000。
+        用于限制结果数据条数。 取值范围(0,1000]，默认值为1000。
 
         :return: The limit of this ListAlarmRuleRequest.
         :rtype: int
@@ -85,7 +85,7 @@ class ListAlarmRuleRequest:
     def limit(self, limit):
         """Sets the limit of this ListAlarmRuleRequest.
 
-        用于限制结果数据条数。 取值范围(0,1000],默认值为1000。
+        用于限制结果数据条数。 取值范围(0,1000]，默认值为1000。
 
         :param limit: The limit of this ListAlarmRuleRequest.
         :type limit: int

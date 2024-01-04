@@ -62,10 +62,8 @@ class CreateAction:
             self.name = name
         if description is not None:
             self.description = description
-        if action_type is not None:
-            self.action_type = action_type
-        if action_id is not None:
-            self.action_id = action_id
+        self.action_type = action_type
+        self.action_id = action_id
         if sort_order is not None:
             self.sort_order = sort_order
 

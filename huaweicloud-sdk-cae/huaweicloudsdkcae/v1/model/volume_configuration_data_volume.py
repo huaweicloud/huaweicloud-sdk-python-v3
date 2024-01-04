@@ -41,9 +41,9 @@ class VolumeConfigurationDataVolume:
         :type volume_id: str
         :param resource_name: 云存储名称。
         :type resource_name: str
-        :param resource_type: 云存储类型，支持obs、sfs。
+        :param resource_type: 云存储类型。
         :type resource_type: str
-        :param resource_sub_type: 云存储子类型，支持object_bucket、parallel_file_system、sfs3.0。
+        :param resource_sub_type: 云存储子类型。
         :type resource_sub_type: str
         :param mount_info: 
         :type mount_info: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationMountInfo`]
@@ -117,7 +117,7 @@ class VolumeConfigurationDataVolume:
     def resource_type(self):
         """Gets the resource_type of this VolumeConfigurationDataVolume.
 
-        云存储类型，支持obs、sfs。
+        云存储类型。
 
         :return: The resource_type of this VolumeConfigurationDataVolume.
         :rtype: str
@@ -128,7 +128,7 @@ class VolumeConfigurationDataVolume:
     def resource_type(self, resource_type):
         """Sets the resource_type of this VolumeConfigurationDataVolume.
 
-        云存储类型，支持obs、sfs。
+        云存储类型。
 
         :param resource_type: The resource_type of this VolumeConfigurationDataVolume.
         :type resource_type: str
@@ -139,7 +139,7 @@ class VolumeConfigurationDataVolume:
     def resource_sub_type(self):
         """Gets the resource_sub_type of this VolumeConfigurationDataVolume.
 
-        云存储子类型，支持object_bucket、parallel_file_system、sfs3.0。
+        云存储子类型。
 
         :return: The resource_sub_type of this VolumeConfigurationDataVolume.
         :rtype: str
@@ -150,7 +150,7 @@ class VolumeConfigurationDataVolume:
     def resource_sub_type(self, resource_sub_type):
         """Sets the resource_sub_type of this VolumeConfigurationDataVolume.
 
-        云存储子类型，支持object_bucket、parallel_file_system、sfs3.0。
+        云存储子类型。
 
         :param resource_sub_type: The resource_sub_type of this VolumeConfigurationDataVolume.
         :type resource_sub_type: str

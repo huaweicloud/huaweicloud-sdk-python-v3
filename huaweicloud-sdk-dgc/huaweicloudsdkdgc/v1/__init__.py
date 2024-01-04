@@ -31,8 +31,9 @@ from huaweicloudsdkdgc.v1.model.delete_resource_request import DeleteResourceReq
 from huaweicloudsdkdgc.v1.model.delete_resource_response import DeleteResourceResponse
 from huaweicloudsdkdgc.v1.model.delete_script_request import DeleteScriptRequest
 from huaweicloudsdkdgc.v1.model.delete_script_response import DeleteScriptResponse
-from huaweicloudsdkdgc.v1.model.depend_jobs import DependJobs
+from huaweicloudsdkdgc.v1.model.depend_job import DependJob
 from huaweicloudsdkdgc.v1.model.depend_package import DependPackage
+from huaweicloudsdkdgc.v1.model.depend_work_space_job import DependWorkSpaceJob
 from huaweicloudsdkdgc.v1.model.event import Event
 from huaweicloudsdkdgc.v1.model.execute_script_req import ExecuteScriptReq
 from huaweicloudsdkdgc.v1.model.execute_script_request import ExecuteScriptRequest

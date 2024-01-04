@@ -20,16 +20,18 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
     openapi_types = {
         'app_rules': 'list[AppRules]',
         'error_code': 'str',
-        'error_message': 'str'
+        'error_message': 'str',
+        'id': 'list[str]'
     }
 
     attribute_map = {
         'app_rules': 'appRules',
         'error_code': 'errorCode',
-        'error_message': 'errorMessage'
+        'error_message': 'errorMessage',
+        'id': 'id'
     }
 
-    def __init__(self, app_rules=None, error_code=None, error_message=None):
+    def __init__(self, app_rules=None, error_code=None, error_message=None, id=None):
         """ListServiceDiscoveryRulesResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         :type error_code: str
         :param error_message: 响应信息描述。
         :type error_message: str
+        :param id: 
+        :type id: list[str]
         """
         
         super(ListServiceDiscoveryRulesResponse, self).__init__()
@@ -47,6 +51,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         self._app_rules = None
         self._error_code = None
         self._error_message = None
+        self._id = None
         self.discriminator = None
 
         if app_rules is not None:
@@ -55,6 +60,8 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
             self.error_code = error_code
         if error_message is not None:
             self.error_message = error_message
+        if id is not None:
+            self.id = id
 
     @property
     def app_rules(self):
@@ -121,6 +128,24 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         :type error_message: str
         """
         self._error_message = error_message
+
+    @property
+    def id(self):
+        """Gets the id of this ListServiceDiscoveryRulesResponse.
+
+        :return: The id of this ListServiceDiscoveryRulesResponse.
+        :rtype: list[str]
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListServiceDiscoveryRulesResponse.
+
+        :param id: The id of this ListServiceDiscoveryRulesResponse.
+        :type id: list[str]
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,7 +17,7 @@ class ConfigurationData:
     sensitive_list = []
 
     openapi_types = {
-        'spec': 'ConfigurationDataSpec',
+        'spec': 'ConfigurationRequestDataSpec',
         'metadata': 'ConfigurationDataMetadata'
     }
 
@@ -32,7 +32,7 @@ class ConfigurationData:
         The model defined in huaweicloud sdk
 
         :param spec: 
-        :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationDataSpec`
+        :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpec`
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcae.v1.ConfigurationDataMetadata`
         """
@@ -53,7 +53,7 @@ class ConfigurationData:
         """Gets the spec of this ConfigurationData.
 
         :return: The spec of this ConfigurationData.
-        :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationDataSpec`
+        :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpec`
         """
         return self._spec
 
@@ -62,7 +62,7 @@ class ConfigurationData:
         """Sets the spec of this ConfigurationData.
 
         :param spec: The spec of this ConfigurationData.
-        :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationDataSpec`
+        :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpec`
         """
         self._spec = spec
 

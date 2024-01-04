@@ -17,7 +17,7 @@ class ListComponentConfigurationsResponseData:
     sensitive_list = []
 
     openapi_types = {
-        'spec': 'ConfigurationDataSpec',
+        'spec': 'ConfigurationResponseDataSpec',
         'metadata': 'ConfigurationDataMetadata'
     }
 
@@ -32,7 +32,7 @@ class ListComponentConfigurationsResponseData:
         The model defined in huaweicloud sdk
 
         :param spec: 
-        :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationDataSpec`
+        :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpec`
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcae.v1.ConfigurationDataMetadata`
         """
@@ -53,7 +53,7 @@ class ListComponentConfigurationsResponseData:
         """Gets the spec of this ListComponentConfigurationsResponseData.
 
         :return: The spec of this ListComponentConfigurationsResponseData.
-        :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationDataSpec`
+        :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpec`
         """
         return self._spec
 
@@ -62,7 +62,7 @@ class ListComponentConfigurationsResponseData:
         """Sets the spec of this ListComponentConfigurationsResponseData.
 
         :param spec: The spec of this ListComponentConfigurationsResponseData.
-        :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationDataSpec`
+        :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpec`
         """
         self._spec = spec
 

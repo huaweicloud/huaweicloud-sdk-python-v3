@@ -2413,6 +2413,79 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def reset_message_offset_with_engine_async(self, request):
+        """重置消费组消费进度到指定位置
+
+        Kafka实例不支持在线重置消费进度。在执行重置消费进度之前，必须停止被重置消费组客户端。
+        
+        停止待重置消费组客户端，然后等待一段时间（即ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG配置的时间，默认为1000毫秒）后，服务端才认为此消费组客户端已下线。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetMessageOffsetWithEngine
+        :type request: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetWithEngineRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetWithEngineResponse`
+        """
+        http_info = self._reset_message_offset_with_engine_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_message_offset_with_engine_async_invoker(self, request):
+        http_info = self._reset_message_offset_with_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_message_offset_with_engine_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group}/reset-message-offset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetMessageOffsetWithEngineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_password_async(self, request):
         """重置密码
 

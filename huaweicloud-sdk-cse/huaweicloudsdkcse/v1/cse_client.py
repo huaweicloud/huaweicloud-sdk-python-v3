@@ -1245,6 +1245,69 @@ class CseClient(Client):
 
         return http_info
 
+    def show_engine_quotas(self, request):
+        """查询微服务引擎配额
+
+        查询微服务引擎配额。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowEngineQuotas
+        :type request: :class:`huaweicloudsdkcse.v1.ShowEngineQuotasRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ShowEngineQuotasResponse`
+        """
+        http_info = self._show_engine_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_engine_quotas_invoker(self, request):
+        http_info = self._show_engine_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_engine_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/enginemgr/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEngineQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_governance_policy(self, request):
         """修改治理策略
 

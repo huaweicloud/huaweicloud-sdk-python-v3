@@ -30,7 +30,7 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 此参数在请求实体中，采用json字符串格式。
+        :param body: 
         :type body: object
         """
         
@@ -46,8 +46,6 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListStructuredLogsWithTimeRangeResponse.
 
-        此参数在请求实体中，采用json字符串格式。
-
         :return: The body of this ListStructuredLogsWithTimeRangeResponse.
         :rtype: object
         """
@@ -56,8 +54,6 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ListStructuredLogsWithTimeRangeResponse.
-
-        此参数在请求实体中，采用json字符串格式。
 
         :param body: The body of this ListStructuredLogsWithTimeRangeResponse.
         :type body: object

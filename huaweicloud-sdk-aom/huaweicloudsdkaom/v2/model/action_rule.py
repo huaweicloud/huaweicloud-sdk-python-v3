@@ -47,13 +47,13 @@ class ActionRule:
 
         The model defined in huaweicloud sdk
 
-        :param rule_name: 规则名称
+        :param rule_name: 规则名称 只含有汉字数字、字母、下划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100
         :type rule_name: str
         :param project_id: 项目ID
         :type project_id: str
         :param user_name: 子账号名称
         :type user_name: str
-        :param desc: 规则描述
+        :param desc: 规则描述。规则描述长度为0到1024个字符，并且只能是数字、字母、特殊字符（_*）、空格和中文组成，不能以下划线开头和结尾。
         :type desc: str
         :param type: 规则类型。\&quot;1\&quot;：通知，\&quot;2\&quot;：用户
         :type type: str
@@ -102,7 +102,7 @@ class ActionRule:
     def rule_name(self):
         """Gets the rule_name of this ActionRule.
 
-        规则名称
+        规则名称 只含有汉字数字、字母、下划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100
 
         :return: The rule_name of this ActionRule.
         :rtype: str
@@ -113,7 +113,7 @@ class ActionRule:
     def rule_name(self, rule_name):
         """Sets the rule_name of this ActionRule.
 
-        规则名称
+        规则名称 只含有汉字数字、字母、下划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100
 
         :param rule_name: The rule_name of this ActionRule.
         :type rule_name: str
@@ -168,7 +168,7 @@ class ActionRule:
     def desc(self):
         """Gets the desc of this ActionRule.
 
-        规则描述
+        规则描述。规则描述长度为0到1024个字符，并且只能是数字、字母、特殊字符（_*）、空格和中文组成，不能以下划线开头和结尾。
 
         :return: The desc of this ActionRule.
         :rtype: str
@@ -179,7 +179,7 @@ class ActionRule:
     def desc(self, desc):
         """Sets the desc of this ActionRule.
 
-        规则描述
+        规则描述。规则描述长度为0到1024个字符，并且只能是数字、字母、特殊字符（_*）、空格和中文组成，不能以下划线开头和结尾。
 
         :param desc: The desc of this ActionRule.
         :type desc: str

@@ -100,11 +100,9 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def batch_restart_or_delete_instances_async(self, request):
-        """批量重启或删除实例
+        """批量删除实例
 
-        批量重启或删除实例。
-        
-        在实例重启过程中，客户端的生产与消费消息等请求会被拒绝。
+        批量删除实例。
         
         实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
         

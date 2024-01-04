@@ -3102,6 +3102,138 @@ class MpcClient(Client):
 
         return http_info
 
+    def show_tenant_access_info(self, request):
+        """租户查询服务开通状态信息
+
+        租户查询媒体转码服务开通状态信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTenantAccessInfo
+        :type request: :class:`huaweicloudsdkmpc.v1.ShowTenantAccessInfoRequest`
+        :rtype: :class:`huaweicloudsdkmpc.v1.ShowTenantAccessInfoResponse`
+        """
+        http_info = self._show_tenant_access_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_access_info_invoker(self, request):
+        http_info = self._show_tenant_access_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tenant_access_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tenant/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantAccessInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_tenant_access_info(self, request):
+        """租户开通媒体转码服务
+
+        租户开通媒体转码服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTenantAccessInfo
+        :type request: :class:`huaweicloudsdkmpc.v1.UpdateTenantAccessInfoRequest`
+        :rtype: :class:`huaweicloudsdkmpc.v1.UpdateTenantAccessInfoResponse`
+        """
+        http_info = self._update_tenant_access_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_tenant_access_info_invoker(self, request):
+        http_info = self._update_tenant_access_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_tenant_access_info_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/tenant/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTenantAccessInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_thumbnails_task(self, request):
         """新建截图任务
 

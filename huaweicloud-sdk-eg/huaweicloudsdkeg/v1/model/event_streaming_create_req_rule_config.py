@@ -18,7 +18,7 @@ class EventStreamingCreateReqRuleConfig:
 
     openapi_types = {
         'transform': 'TransForm',
-        'filter': 'str'
+        'filter': 'object'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class EventStreamingCreateReqRuleConfig:
         :param transform: 
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         :param filter: 过滤规则
-        :type filter: str
+        :type filter: object
         """
         
         
@@ -73,7 +73,7 @@ class EventStreamingCreateReqRuleConfig:
         过滤规则
 
         :return: The filter of this EventStreamingCreateReqRuleConfig.
-        :rtype: str
+        :rtype: object
         """
         return self._filter
 
@@ -84,7 +84,7 @@ class EventStreamingCreateReqRuleConfig:
         过滤规则
 
         :param filter: The filter of this EventStreamingCreateReqRuleConfig.
-        :type filter: str
+        :type filter: object
         """
         self._filter = filter
 

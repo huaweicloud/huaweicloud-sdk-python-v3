@@ -580,6 +580,71 @@ class CceClient(Client):
 
         return http_info
 
+    def create_cluster_master_snapshot(self, request):
+        """集群备份
+
+        集群备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateClusterMasterSnapshot
+        :type request: :class:`huaweicloudsdkcce.v3.CreateClusterMasterSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateClusterMasterSnapshotResponse`
+        """
+        http_info = self._create_cluster_master_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_cluster_master_snapshot_invoker(self, request):
+        http_info = self._create_cluster_master_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_master_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3.1/projects/{project_id}/clusters/{cluster_id}/operation/snapshot",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterMasterSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_kubernetes_cluster_cert(self, request):
         """获取集群证书
 
@@ -859,6 +924,140 @@ class CceClient(Client):
 
         return http_info
 
+    def create_post_check(self, request):
+        """集群升级后确认
+
+        集群升级后确认，该接口建议配合Console使用，主要用于升级步骤完成后，客户确认集群状态和业务正常后做反馈。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePostCheck
+        :type request: :class:`huaweicloudsdkcce.v3.CreatePostCheckRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreatePostCheckResponse`
+        """
+        http_info = self._create_post_check_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_post_check_invoker(self, request):
+        http_info = self._create_post_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_post_check_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/postcheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePostCheckResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_pre_check(self, request):
+        """集群升级前检查
+
+        集群升级前检查
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePreCheck
+        :type request: :class:`huaweicloudsdkcce.v3.CreatePreCheckRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreatePreCheckResponse`
+        """
+        http_info = self._create_pre_check_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_pre_check_invoker(self, request):
+        http_info = self._create_pre_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_pre_check_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/precheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePreCheckResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_release(self, request):
         """创建模板实例
 
@@ -884,6 +1083,74 @@ class CceClient(Client):
             "resource_path": "/cce/cam/v3/clusters/{cluster_id}/releases",
             "request_type": request.__class__.__name__,
             "response_type": "CreateReleaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_upgrade_work_flow(self, request):
+        """开启集群升级流程引导任务
+
+        该API用于创建一个集群升级流程引导任务。请在调用本接口完成引导任务创建之后，通过集群升级前检查开始检查任务。
+        升级流程任务用于控制集群升级任务的执行流程，执行流程为 升级前检查 &#x3D;&gt; 集群升级 &#x3D;&gt; 升级后检查。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateUpgradeWorkFlow
+        :type request: :class:`huaweicloudsdkcce.v3.CreateUpgradeWorkFlowRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateUpgradeWorkFlowResponse`
+        """
+        http_info = self._create_upgrade_work_flow_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_upgrade_work_flow_invoker(self, request):
+        http_info = self._create_upgrade_work_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_upgrade_work_flow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgradeworkflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUpgradeWorkFlowResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1748,6 +2015,197 @@ class CceClient(Client):
 
         return http_info
 
+    def list_cluster_master_snapshot_tasks(self, request):
+        """获取集群备份任务详情列表
+
+        获取集群备份任务详情列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClusterMasterSnapshotTasks
+        :type request: :class:`huaweicloudsdkcce.v3.ListClusterMasterSnapshotTasksRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListClusterMasterSnapshotTasksResponse`
+        """
+        http_info = self._list_cluster_master_snapshot_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cluster_master_snapshot_tasks_invoker(self, request):
+        http_info = self._list_cluster_master_snapshot_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_master_snapshot_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3.1/projects/{project_id}/clusters/{cluster_id}/operation/snapshot/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterMasterSnapshotTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cluster_upgrade_feature_gates(self, request):
+        """获取集群升级特性开关配置
+
+        获取集群升级特性开关配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClusterUpgradeFeatureGates
+        :type request: :class:`huaweicloudsdkcce.v3.ListClusterUpgradeFeatureGatesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListClusterUpgradeFeatureGatesResponse`
+        """
+        http_info = self._list_cluster_upgrade_feature_gates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cluster_upgrade_feature_gates_invoker(self, request):
+        http_info = self._list_cluster_upgrade_feature_gates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_upgrade_feature_gates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/clusterupgradefeaturegates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterUpgradeFeatureGatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cluster_upgrade_paths(self, request):
+        """获取集群升级路径
+
+        获取集群升级路径
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClusterUpgradePaths
+        :type request: :class:`huaweicloudsdkcce.v3.ListClusterUpgradePathsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListClusterUpgradePathsResponse`
+        """
+        http_info = self._list_cluster_upgrade_paths_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cluster_upgrade_paths_invoker(self, request):
+        http_info = self._list_cluster_upgrade_paths_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_upgrade_paths_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/clusterupgradepaths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterUpgradePathsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_clusters(self, request):
         """获取指定项目下的集群
 
@@ -2019,6 +2477,71 @@ class CceClient(Client):
 
         return http_info
 
+    def list_pre_check_tasks(self, request):
+        """获取集群升级前检查任务详情列表
+
+        获取集群升级前检查任务详情列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPreCheckTasks
+        :type request: :class:`huaweicloudsdkcce.v3.ListPreCheckTasksRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListPreCheckTasksResponse`
+        """
+        http_info = self._list_pre_check_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_pre_check_tasks_invoker(self, request):
+        http_info = self._list_pre_check_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pre_check_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/precheck/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPreCheckTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_releases(self, request):
         """获取模板实例列表
 
@@ -2061,6 +2584,136 @@ class CceClient(Client):
             query_params.append(('chart_id', local_var_params['chart_id']))
         if 'namespace' in local_var_params:
             query_params.append(('namespace', local_var_params['namespace']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_upgrade_cluster_tasks(self, request):
+        """获取集群升级任务详情列表
+
+        获取集群升级任务详情列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUpgradeClusterTasks
+        :type request: :class:`huaweicloudsdkcce.v3.ListUpgradeClusterTasksRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListUpgradeClusterTasksResponse`
+        """
+        http_info = self._list_upgrade_cluster_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_upgrade_cluster_tasks_invoker(self, request):
+        http_info = self._list_upgrade_cluster_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_upgrade_cluster_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUpgradeClusterTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_upgrade_work_flows(self, request):
+        """获取UpgradeWorkFlows列表
+
+        获取历史集群升级引导任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUpgradeWorkFlows
+        :type request: :class:`huaweicloudsdkcce.v3.ListUpgradeWorkFlowsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListUpgradeWorkFlowsResponse`
+        """
+        http_info = self._list_upgrade_work_flows_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_upgrade_work_flows_invoker(self, request):
+        http_info = self._list_upgrade_work_flows_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_upgrade_work_flows_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgradeworkflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUpgradeWorkFlowsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -3030,6 +3683,71 @@ class CceClient(Client):
 
         return http_info
 
+    def show_cluster_upgrade_info(self, request):
+        """获取集群升级相关信息
+
+        获取集群升级相关信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowClusterUpgradeInfo
+        :type request: :class:`huaweicloudsdkcce.v3.ShowClusterUpgradeInfoRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterUpgradeInfoResponse`
+        """
+        http_info = self._show_cluster_upgrade_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_cluster_upgrade_info_invoker(self, request):
+        http_info = self._show_cluster_upgrade_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cluster_upgrade_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/upgradeinfo",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterUpgradeInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_job(self, request):
         """获取任务信息
 
@@ -3369,6 +4087,73 @@ class CceClient(Client):
 
         return http_info
 
+    def show_pre_check(self, request):
+        """获取集群升级前检查任务详情
+
+        获取集群升级前检查任务详情，任务ID由调用集群检查API后从响应体中uid字段获取。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPreCheck
+        :type request: :class:`huaweicloudsdkcce.v3.ShowPreCheckRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowPreCheckResponse`
+        """
+        http_info = self._show_pre_check_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pre_check_invoker(self, request):
+        http_info = self._show_pre_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pre_check_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/precheck/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPreCheckResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_quotas(self, request):
         """查询CCE服务下的资源配额
 
@@ -3610,6 +4395,73 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'task_id' in local_var_params:
             path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_upgrade_work_flow(self, request):
+        """获取指定集群升级引导任务详情
+
+        该API用于通过升级引导任务ID获取任务的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowUpgradeWorkFlow
+        :type request: :class:`huaweicloudsdkcce.v3.ShowUpgradeWorkFlowRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowUpgradeWorkFlowResponse`
+        """
+        http_info = self._show_upgrade_work_flow_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_upgrade_work_flow_invoker(self, request):
+        http_info = self._show_upgrade_work_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_upgrade_work_flow_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgradeworkflows/{upgrade_workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUpgradeWorkFlowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'upgrade_workflow_id' in local_var_params:
+            path_params['upgrade_workflow_id'] = local_var_params['upgrade_workflow_id']
 
         query_params = []
 
@@ -4435,6 +5287,76 @@ class CceClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_work_flow_update(self, request):
+        """更新指定集群升级引导任务状态
+
+        该API用于更新指定集群升级引导任务状态，当前仅适用于取消升级流程
+        调用该API时升级流程引导任务状态不能为进行中(running) 已完成(success) 已取消(cancel),升级子任务状态不能为running(进行中) init(已初始化) pause(任务被暂停) queue(队列中)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeWorkFlowUpdate
+        :type request: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlowUpdateRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlowUpdateResponse`
+        """
+        http_info = self._upgrade_work_flow_update_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_work_flow_update_invoker(self, request):
+        http_info = self._upgrade_work_flow_update_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_work_flow_update_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgradeworkflows/{upgrade_workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeWorkFlowUpdateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'upgrade_workflow_id' in local_var_params:
+            path_params['upgrade_workflow_id'] = local_var_params['upgrade_workflow_id']
 
         query_params = []
 

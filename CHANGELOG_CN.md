@@ -1,3 +1,389 @@
+# 3.1.76 2024-01-04
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListNotifiedHistories**
+    - 响应参数变更
+      - `+ notified_histories`
+      - `- event_sn`
+      - `- notifications`
+  - **ListEvent2alarmRule**
+    - 响应参数变更
+      - `+ event_names`
+      - `+ migrated`
+      - `+ topics`
+      - `+ trigger_policies.trigger_type: enum value [immediately]`
+      - `- trigger_policies.trigger_type: enum value [notification]`
+      - `+ alarm_type: enum value [notification,denoising]`
+      - `* : list<event2alarmRuleBody> -> list<Event2alarmRuleBody>`
+  - **UpdateEventRule**
+    - 请求参数变更
+      - `+ event_names`
+      - `+ migrated`
+      - `+ topics`
+      - `+ trigger_policies.trigger_type: enum value [immediately]`
+      - `- trigger_policies.trigger_type: enum value [notification]`
+      - `+ alarm_type: enum value [notification,denoising]`
+      - `* body: object<event2alarmRuleBody> -> object<Event2alarmRuleBody>`
+  - **AddEvent2alarmRule**
+    - 请求参数变更
+      - `+ event_names`
+      - `+ migrated`
+      - `+ topics`
+      - `+ trigger_policies.trigger_type: enum value [immediately]`
+      - `- trigger_policies.trigger_type: enum value [notification]`
+      - `+ alarm_type: enum value [notification,denoising]`
+      - `* body: object<event2alarmRuleBody> -> object<Event2alarmRuleBody>`
+  - **ListMuteRule**
+    - 响应参数变更
+      - `* mute_config.scope: list<string> -> list<integer>`
+  - **UpdateMuteRule**
+    - 请求参数变更
+      - `* mute_config.scope: list<string> -> list<integer>`
+  - **AddMuteRules**
+    - 请求参数变更
+      - `* mute_config.scope: list<string> -> list<integer>`
+  - **ShowActionRule**
+    - 响应参数变更
+      - `+ type: enum value [1,2]`
+      - `- type: enum value ["1","2"]`
+  - **ListEvents**
+    - 响应参数变更
+      - `* events.metadata: object -> map<string, string>`
+      - `* events.annotations: object -> map<string, string>`
+      - `* events.attach_rule: object -> map<string, string>`
+  - **PushEvents**
+    - 请求参数变更
+      - `* events.metadata: object -> map<string, string>`
+      - `* events.annotations: object -> map<string, string>`
+      - `* events.attach_rule: object -> map<string, string>`
+  - **UpdateActionRule**
+    - 请求参数变更
+      - `+ type: enum value [1,2]`
+      - `- type: enum value ["1","2"]`
+  - **AddActionRule**
+    - 请求参数变更
+      - `+ type: enum value [1,2]`
+      - `- type: enum value ["1","2"]`
+  - **ListActionRule**
+    - 响应参数变更
+      - `+ action_rules.type: enum value [1,2]`
+      - `- action_rules.type: enum value ["1","2"]`
+  - **ListMetricItems**
+    - 响应参数变更
+      - `+ metaData.offset`
+      - `+ metaData.nextToken`
+      - `- metaData.start`
+      - `* metaData: object<metaData> -> object<MetaDataSeries>`
+  - **UpdateAlarmRule**
+    - 请求参数变更
+      - `+ is_turn_on`
+      - `- id_turn_on`
+      - `+ comparison_operator: enum value [<,>,<=,>=]`
+      - `+ period: enum value [60000,300000,900000,36000000]`
+  - **AddAlarmRule**
+    - 请求参数变更
+      - `+ is_turn_on`
+      - `- id_turn_on`
+      - `+ comparison_operator: enum value [<,>,<=,>=]`
+      - `+ period: enum value [60000,300000,900000,36000000]`
+  - **ListServiceDiscoveryRules**
+    - 响应参数变更
+      - `+ id`
+      - `+ appRules.desc`
+      - `+ appRules.spec.dataSource`
+      - `+ appRules.spec.editable`
+      - `+ appRules.spec.aom_metric_relabel_configs`
+  - **AddOrUpdateServiceDiscoveryRules**
+    - 请求参数变更
+      - `+ appRules.desc`
+      - `+ appRules.spec.dataSource`
+      - `+ appRules.spec.editable`
+      - `+ appRules.spec.aom_metric_relabel_configs`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ShowProjectOpenSourceStrategy`
+    - `ListProjectOpenSourceStrategy`
+    - `CreateOpenSourceStrategy`
+    - `UpdateOpenSourceStrategy`
+    - `ShowOpenSourceStrategy`
+    - `ListOpenSourceStrategy`
+    - `DeleteOpenSourceStrategy`
+    - `SwitchOpenSourceStrategy`
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 支持接口`ShowEngineQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持接口`ListFactoryTaskOverview`、`ListFactoryTaskCompletion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `* nodes.cronTrigger.dependJobs: list<DependJobs> -> object<DependJob>`
+      - `+ schedule.cron.dependJobs.sameWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.otherWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* schedule.cron.dependJobs: object<DependJobs> -> object<DependJob>`
+  - **ShowJob**
+    - 响应参数变更
+      - `* nodes.cronTrigger.dependJobs: list<DependJobs> -> object<DependJob>`
+      - `+ schedule.cron.dependJobs.sameWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.otherWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* schedule.cron.dependJobs: object<DependJobs> -> object<DependJob>`
+  - **UpdateJob**
+    - 请求参数变更
+      - `* nodes.cronTrigger.dependJobs: list<DependJobs> -> object<DependJob>`
+      - `+ schedule.cron.dependJobs.sameWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.otherWorkSpaceJobs`
+      - `+ schedule.cron.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* schedule.cron.dependJobs: object<DependJobs> -> object<DependJob>`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `* dependJobs.nodes.cronTrigger.dependJobs: list<DependJobs> -> object<DependJob>`
+      - `+ dependJobs.schedule.cron.dependJobs.sameWorkSpaceJobs`
+      - `+ dependJobs.schedule.cron.dependJobs.otherWorkSpaceJobs`
+      - `+ dependJobs.schedule.cron.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* dependJobs.schedule.cron.dependJobs: object<DependJobs> -> object<DependJob>`
+
+### HuaweiCloud SDK EG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEventStreaming**
+    - 响应参数变更
+      - `+ total`
+      - `+ size`
+      - `+ items`
+      - `- body`
+  - **CreateEventStreaming**
+    - 请求参数变更
+      - `* rule_config.filter: string -> object`
+      - `+ source.source_kafka.addr`
+  - **ShowEventStreaming**
+    - 响应参数变更
+      - `* rule_config.filter: string -> object`
+      - `+ source.source_kafka.addr`
+  - **UpdateEventStreaming**
+    - 请求参数变更
+      - `* rule_config.filter: string -> object`
+      - `+ source.source_kafka.addr`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAccessCode**
+    - 请求参数变更
+      - `+ force_disconnect`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持接口`ResetMessageOffsetWithEngine`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowGroups**
+    - 响应参数变更
+      - `* group.group_message_offsets.message_current_offset: int32 -> int64`
+      - `* group.group_message_offsets.message_log_end_offset: int32 -> int64`
+  - **ResetMessageOffset**
+    - 请求参数变更
+      - `* message_offset: int32 -> int64`
+      - `* timestamp: int32 -> int64`
+  - **ShowMessages**
+    - 响应参数变更
+      - `* messages.message_offset: int32 -> int64`
+  - **ShowInstanceMessages**
+    - 响应参数变更
+      - `* messages.message_offset: int32 -> int64`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 支持接口`ShowTenantAccessInfo`、`UpdateTenantAccessInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持接口`ShowMrsFlavors`、`ShowSyncIamUser`、`UpdateSyncIamUser`、`CancelSyncIamUser`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ smn_notify`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchRestartOrDeleteInstances**
+    - 请求参数变更
+      - `- action: enum value [restart]`
+  - **ListInstancesDetails**
+    - 请求参数变更
+      - `+ status: enum value [UPGRADING,UPGRADINGFAILED]`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SetOffSiteBackupPolicy**
+    - 请求参数变更
+      - `* policy_para: list<OffSiteBackupPolicy> -> object<OffSiteBackupPolicy>`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResizeInstance**
+    - 请求参数变更
+      - `+ publicip_id`
+
+### HuaweiCloud SDK SecMaster
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlerts**
+    - 响应参数变更
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.cteator`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowLdapConfig`
+    - `UpdateLdapConfig`
+    - `CreateLdapConfig`
+    - `DeleteLdapConfig`
+    - `ShowJobDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SMN
+
+- _新增特性_
+  - 支持以下接口：
+    - `PublishHttpDetect`
+    - `ShowHttpDetectResult`
+    - `BatchUpdateSubscriptionsFilterPolices`
+    - `BatchCreateSubscriptionsFilterPolices`
+    - `BatchDeleteSubscriptionsFilterPolices`
+    - `AddSubscriptionFromSubscriptionUser`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃以下接口：
+    - `ListApplicationAttributes`
+    - `UpdateApplication`
+    - `DeleteApplication`
+    - `ListApplicationEndpointAttributes`
+    - `UpdateApplicationEndpoint`
+    - `DeleteApplicationEndpoint`
+    - `PublishAppMessage`
+    - `CreateApplication`
+    - `ListApplications`
+    - `CreateApplicationEndpoint`
+    - `ListApplicationEndpoints`
+  - **PublishMessage**
+    - 请求参数变更
+      - `+ message_attributes`
+  - **ListTopics**
+    - 请求参数变更
+      - `+ fuzzy_display_name`
+  - **ListSubscriptions**
+    - 请求参数变更
+      - `+ fuzzy_remark`
+    - 响应参数变更
+      - `+ subscriptions.filter_polices`
+  - **ListSubscriptionsByTopic**
+    - 请求参数变更
+      - `+ fuzzy_remark`
+    - 响应参数变更
+      - `+ subscriptions.filter_polices`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPorts**
+    - 响应参数变更
+      - `+ ports.ipv6_bandwidth_id`
+  - **CreatePort**
+    - 响应参数变更
+      - `+ port.ipv6_bandwidth_id`
+  - **ShowPort**
+    - 响应参数变更
+      - `+ port.ipv6_bandwidth_id`
+  - **UpdatePort**
+    - 响应参数变更
+      - `+ port.ipv6_bandwidth_id`
+
 # 3.1.75 2023-12-27
 
 ### HuaweiCloud SDK AAD

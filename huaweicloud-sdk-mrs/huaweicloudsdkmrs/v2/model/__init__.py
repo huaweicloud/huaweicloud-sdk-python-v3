@@ -14,11 +14,15 @@ from huaweicloudsdkmrs.v2.model.auto_scaling_policy import AutoScalingPolicy
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy_delete_req import AutoScalingPolicyDeleteReq
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy_info import AutoScalingPolicyInfo
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy_v2 import AutoScalingPolicyV2
+from huaweicloudsdkmrs.v2.model.az_flavors import AzFlavors
 from huaweicloudsdkmrs.v2.model.batch_delete_jobs_request import BatchDeleteJobsRequest
 from huaweicloudsdkmrs.v2.model.batch_delete_jobs_response import BatchDeleteJobsResponse
 from huaweicloudsdkmrs.v2.model.bootstrap_script import BootstrapScript
 from huaweicloudsdkmrs.v2.model.cancel_sql_request import CancelSqlRequest
 from huaweicloudsdkmrs.v2.model.cancel_sql_response import CancelSqlResponse
+from huaweicloudsdkmrs.v2.model.cancel_sync_iam_user_request import CancelSyncIamUserRequest
+from huaweicloudsdkmrs.v2.model.cancel_sync_iam_user_response import CancelSyncIamUserResponse
+from huaweicloudsdkmrs.v2.model.cancel_sync_request import CancelSyncRequest
 from huaweicloudsdkmrs.v2.model.charge_info import ChargeInfo
 from huaweicloudsdkmrs.v2.model.cluster_data_connector_map import ClusterDataConnectorMap
 from huaweicloudsdkmrs.v2.model.component_config import ComponentConfig
@@ -46,6 +50,7 @@ from huaweicloudsdkmrs.v2.model.expand_cluster_request import ExpandClusterReque
 from huaweicloudsdkmrs.v2.model.expand_cluster_response import ExpandClusterResponse
 from huaweicloudsdkmrs.v2.model.expand_param import ExpandParam
 from huaweicloudsdkmrs.v2.model.file_status_v2 import FileStatusV2
+from huaweicloudsdkmrs.v2.model.flavor import Flavor
 from huaweicloudsdkmrs.v2.model.job_batch_delete import JobBatchDelete
 from huaweicloudsdkmrs.v2.model.job_execution import JobExecution
 from huaweicloudsdkmrs.v2.model.job_query_bean import JobQueryBean
@@ -68,6 +73,8 @@ from huaweicloudsdkmrs.v2.model.show_hdfs_file_list_request import ShowHdfsFileL
 from huaweicloudsdkmrs.v2.model.show_hdfs_file_list_response import ShowHdfsFileListResponse
 from huaweicloudsdkmrs.v2.model.show_job_exe_list_new_request import ShowJobExeListNewRequest
 from huaweicloudsdkmrs.v2.model.show_job_exe_list_new_response import ShowJobExeListNewResponse
+from huaweicloudsdkmrs.v2.model.show_mrs_flavors_request import ShowMrsFlavorsRequest
+from huaweicloudsdkmrs.v2.model.show_mrs_flavors_response import ShowMrsFlavorsResponse
 from huaweicloudsdkmrs.v2.model.show_mrs_version_list_request import ShowMrsVersionListRequest
 from huaweicloudsdkmrs.v2.model.show_mrs_version_list_response import ShowMrsVersionListResponse
 from huaweicloudsdkmrs.v2.model.show_single_job_exe_request import ShowSingleJobExeRequest
@@ -76,6 +83,8 @@ from huaweicloudsdkmrs.v2.model.show_sql_result_request import ShowSqlResultRequ
 from huaweicloudsdkmrs.v2.model.show_sql_result_response import ShowSqlResultResponse
 from huaweicloudsdkmrs.v2.model.show_sql_result_with_job_request import ShowSqlResultWithJobRequest
 from huaweicloudsdkmrs.v2.model.show_sql_result_with_job_response import ShowSqlResultWithJobResponse
+from huaweicloudsdkmrs.v2.model.show_sync_iam_user_request import ShowSyncIamUserRequest
+from huaweicloudsdkmrs.v2.model.show_sync_iam_user_response import ShowSyncIamUserResponse
 from huaweicloudsdkmrs.v2.model.show_tag_quota_request import ShowTagQuotaRequest
 from huaweicloudsdkmrs.v2.model.show_tag_quota_response import ShowTagQuotaResponse
 from huaweicloudsdkmrs.v2.model.show_tag_status_request import ShowTagStatusRequest
@@ -83,6 +92,7 @@ from huaweicloudsdkmrs.v2.model.show_tag_status_response import ShowTagStatusRes
 from huaweicloudsdkmrs.v2.model.shrink_cluster_request import ShrinkClusterRequest
 from huaweicloudsdkmrs.v2.model.shrink_cluster_response import ShrinkClusterResponse
 from huaweicloudsdkmrs.v2.model.shrink_param import ShrinkParam
+from huaweicloudsdkmrs.v2.model.smn_notify import SmnNotify
 from huaweicloudsdkmrs.v2.model.sql_execution_req import SqlExecutionReq
 from huaweicloudsdkmrs.v2.model.step_config import StepConfig
 from huaweicloudsdkmrs.v2.model.stop_job_request import StopJobRequest
@@ -100,4 +110,7 @@ from huaweicloudsdkmrs.v2.model.update_cluster_name_response import UpdateCluste
 from huaweicloudsdkmrs.v2.model.update_cluster_req import UpdateClusterReq
 from huaweicloudsdkmrs.v2.model.update_data_connector_request import UpdateDataConnectorRequest
 from huaweicloudsdkmrs.v2.model.update_data_connector_response import UpdateDataConnectorResponse
+from huaweicloudsdkmrs.v2.model.update_sync_iam_user_request import UpdateSyncIamUserRequest
+from huaweicloudsdkmrs.v2.model.update_sync_iam_user_response import UpdateSyncIamUserResponse
+from huaweicloudsdkmrs.v2.model.update_sync_request import UpdateSyncRequest
 from huaweicloudsdkmrs.v2.model.volume import Volume
