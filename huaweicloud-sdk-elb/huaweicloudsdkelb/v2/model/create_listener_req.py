@@ -81,7 +81,7 @@ class CreateListenerReq:
         :type default_tls_container_ref: str
         :param client_ca_tls_container_ref: 监听器使用的CA证书ID。
         :type client_ca_tls_container_ref: str
-        :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID的列表。 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
+        :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID的列表，最大支持50个sni证书 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
         :type sni_container_refs: list[str]
         :param insert_headers: 
         :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
@@ -404,7 +404,7 @@ class CreateListenerReq:
     def sni_container_refs(self):
         """Gets the sni_container_refs of this CreateListenerReq.
 
-        监听器使用的SNI证书（带域名的服务器证书）ID的列表。 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
+        监听器使用的SNI证书（带域名的服务器证书）ID的列表，最大支持50个sni证书 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
 
         :return: The sni_container_refs of this CreateListenerReq.
         :rtype: list[str]
@@ -415,7 +415,7 @@ class CreateListenerReq:
     def sni_container_refs(self, sni_container_refs):
         """Sets the sni_container_refs of this CreateListenerReq.
 
-        监听器使用的SNI证书（带域名的服务器证书）ID的列表。 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
+        监听器使用的SNI证书（带域名的服务器证书）ID的列表，最大支持50个sni证书 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
 
         :param sni_container_refs: The sni_container_refs of this CreateListenerReq.
         :type sni_container_refs: list[str]

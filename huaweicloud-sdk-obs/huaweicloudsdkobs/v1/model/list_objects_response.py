@@ -66,23 +66,23 @@ class ListObjectsResponse(SdkResponse):
 
         :param contents: 
         :type contents: list[:class:`huaweicloudsdkobs.v1.Contents`]
-        :param common_prefix: 请求中带delimiter参数时，返回消息带CommonPrefixes分组信息。 
+        :param common_prefix: Group information. If you use **Delimiter** in the request, the response contains **CommonPrefixes**.
         :type common_prefix: str
-        :param delimiter: 请求中携带的delimiter参数。 
+        :param delimiter: The **delimiter** parameter specified in the request
         :type delimiter: str
-        :param encoding_type: 对响应中的部分元素进行指定类型的编码。如果请求中设置了encoding-type，那响应中的Delimiter、Marker、Prefix（包括CommonPrefixes中的Prefix）、NextMarker和Key会被编码。 
+        :param encoding_type: Encodes some elements in the response based on the specified type. If **encoding-type** is specified in the request, **Delimiter**, **Marker**, **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker**, and **Key** in the response will be encoded.
         :type encoding_type: str
-        :param is_truncated: 表明是否本次返回的ListBucketResult结果列表被截断。“true”表示本次没有返回全部结果；“false”表示本次已经返回了全部结果。 
+        :param is_truncated: Determines whether the returned list of objects is truncated. **true**: Not all results are returned. **false**: All results have been returned.
         :type is_truncated: bool
-        :param marker: 列举对象时的起始位置标识符。 
+        :param marker: Marker for the position from which objects in a bucket will be listed
         :type marker: str
-        :param next_marker: 如果本次没有返回全部结果，响应请求中将包含此字段，用于标明本次请求列举到的最后一个对象。后续请求可以指定Marker等于该值来列举剩余的对象。 
+        :param next_marker: A marker for the last returned object in the list. **NextMarker** is returned when not all the objects are listed. In subsequent requests, you can set **Marker** to the value of this parameter to list the remaining objects.
         :type next_marker: str
-        :param max_keys: 列举时最多返回的对象个数。 
+        :param max_keys: Maximum number of objects that can be listed
         :type max_keys: str
-        :param name: 本次请求的桶名。 
+        :param name: Name of the requested bucket
         :type name: str
-        :param prefix: 对象名的前缀，表示本次请求只列举对象名能匹配该前缀的所有对象。 
+        :param prefix: Prefix of an object name. Only objects whose names have this prefix are listed.
         :type prefix: str
         :param x_obs_id_2: 
         :type x_obs_id_2: str
@@ -178,7 +178,7 @@ class ListObjectsResponse(SdkResponse):
     def common_prefix(self):
         """Gets the common_prefix of this ListObjectsResponse.
 
-        请求中带delimiter参数时，返回消息带CommonPrefixes分组信息。 
+        Group information. If you use **Delimiter** in the request, the response contains **CommonPrefixes**.
 
         :return: The common_prefix of this ListObjectsResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class ListObjectsResponse(SdkResponse):
     def common_prefix(self, common_prefix):
         """Sets the common_prefix of this ListObjectsResponse.
 
-        请求中带delimiter参数时，返回消息带CommonPrefixes分组信息。 
+        Group information. If you use **Delimiter** in the request, the response contains **CommonPrefixes**.
 
         :param common_prefix: The common_prefix of this ListObjectsResponse.
         :type common_prefix: str
@@ -200,7 +200,7 @@ class ListObjectsResponse(SdkResponse):
     def delimiter(self):
         """Gets the delimiter of this ListObjectsResponse.
 
-        请求中携带的delimiter参数。 
+        The **delimiter** parameter specified in the request
 
         :return: The delimiter of this ListObjectsResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class ListObjectsResponse(SdkResponse):
     def delimiter(self, delimiter):
         """Sets the delimiter of this ListObjectsResponse.
 
-        请求中携带的delimiter参数。 
+        The **delimiter** parameter specified in the request
 
         :param delimiter: The delimiter of this ListObjectsResponse.
         :type delimiter: str
@@ -222,7 +222,7 @@ class ListObjectsResponse(SdkResponse):
     def encoding_type(self):
         """Gets the encoding_type of this ListObjectsResponse.
 
-        对响应中的部分元素进行指定类型的编码。如果请求中设置了encoding-type，那响应中的Delimiter、Marker、Prefix（包括CommonPrefixes中的Prefix）、NextMarker和Key会被编码。 
+        Encodes some elements in the response based on the specified type. If **encoding-type** is specified in the request, **Delimiter**, **Marker**, **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker**, and **Key** in the response will be encoded.
 
         :return: The encoding_type of this ListObjectsResponse.
         :rtype: str
@@ -233,7 +233,7 @@ class ListObjectsResponse(SdkResponse):
     def encoding_type(self, encoding_type):
         """Sets the encoding_type of this ListObjectsResponse.
 
-        对响应中的部分元素进行指定类型的编码。如果请求中设置了encoding-type，那响应中的Delimiter、Marker、Prefix（包括CommonPrefixes中的Prefix）、NextMarker和Key会被编码。 
+        Encodes some elements in the response based on the specified type. If **encoding-type** is specified in the request, **Delimiter**, **Marker**, **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker**, and **Key** in the response will be encoded.
 
         :param encoding_type: The encoding_type of this ListObjectsResponse.
         :type encoding_type: str
@@ -244,7 +244,7 @@ class ListObjectsResponse(SdkResponse):
     def is_truncated(self):
         """Gets the is_truncated of this ListObjectsResponse.
 
-        表明是否本次返回的ListBucketResult结果列表被截断。“true”表示本次没有返回全部结果；“false”表示本次已经返回了全部结果。 
+        Determines whether the returned list of objects is truncated. **true**: Not all results are returned. **false**: All results have been returned.
 
         :return: The is_truncated of this ListObjectsResponse.
         :rtype: bool
@@ -255,7 +255,7 @@ class ListObjectsResponse(SdkResponse):
     def is_truncated(self, is_truncated):
         """Sets the is_truncated of this ListObjectsResponse.
 
-        表明是否本次返回的ListBucketResult结果列表被截断。“true”表示本次没有返回全部结果；“false”表示本次已经返回了全部结果。 
+        Determines whether the returned list of objects is truncated. **true**: Not all results are returned. **false**: All results have been returned.
 
         :param is_truncated: The is_truncated of this ListObjectsResponse.
         :type is_truncated: bool
@@ -266,7 +266,7 @@ class ListObjectsResponse(SdkResponse):
     def marker(self):
         """Gets the marker of this ListObjectsResponse.
 
-        列举对象时的起始位置标识符。 
+        Marker for the position from which objects in a bucket will be listed
 
         :return: The marker of this ListObjectsResponse.
         :rtype: str
@@ -277,7 +277,7 @@ class ListObjectsResponse(SdkResponse):
     def marker(self, marker):
         """Sets the marker of this ListObjectsResponse.
 
-        列举对象时的起始位置标识符。 
+        Marker for the position from which objects in a bucket will be listed
 
         :param marker: The marker of this ListObjectsResponse.
         :type marker: str
@@ -288,7 +288,7 @@ class ListObjectsResponse(SdkResponse):
     def next_marker(self):
         """Gets the next_marker of this ListObjectsResponse.
 
-        如果本次没有返回全部结果，响应请求中将包含此字段，用于标明本次请求列举到的最后一个对象。后续请求可以指定Marker等于该值来列举剩余的对象。 
+        A marker for the last returned object in the list. **NextMarker** is returned when not all the objects are listed. In subsequent requests, you can set **Marker** to the value of this parameter to list the remaining objects.
 
         :return: The next_marker of this ListObjectsResponse.
         :rtype: str
@@ -299,7 +299,7 @@ class ListObjectsResponse(SdkResponse):
     def next_marker(self, next_marker):
         """Sets the next_marker of this ListObjectsResponse.
 
-        如果本次没有返回全部结果，响应请求中将包含此字段，用于标明本次请求列举到的最后一个对象。后续请求可以指定Marker等于该值来列举剩余的对象。 
+        A marker for the last returned object in the list. **NextMarker** is returned when not all the objects are listed. In subsequent requests, you can set **Marker** to the value of this parameter to list the remaining objects.
 
         :param next_marker: The next_marker of this ListObjectsResponse.
         :type next_marker: str
@@ -310,7 +310,7 @@ class ListObjectsResponse(SdkResponse):
     def max_keys(self):
         """Gets the max_keys of this ListObjectsResponse.
 
-        列举时最多返回的对象个数。 
+        Maximum number of objects that can be listed
 
         :return: The max_keys of this ListObjectsResponse.
         :rtype: str
@@ -321,7 +321,7 @@ class ListObjectsResponse(SdkResponse):
     def max_keys(self, max_keys):
         """Sets the max_keys of this ListObjectsResponse.
 
-        列举时最多返回的对象个数。 
+        Maximum number of objects that can be listed
 
         :param max_keys: The max_keys of this ListObjectsResponse.
         :type max_keys: str
@@ -332,7 +332,7 @@ class ListObjectsResponse(SdkResponse):
     def name(self):
         """Gets the name of this ListObjectsResponse.
 
-        本次请求的桶名。 
+        Name of the requested bucket
 
         :return: The name of this ListObjectsResponse.
         :rtype: str
@@ -343,7 +343,7 @@ class ListObjectsResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ListObjectsResponse.
 
-        本次请求的桶名。 
+        Name of the requested bucket
 
         :param name: The name of this ListObjectsResponse.
         :type name: str
@@ -354,7 +354,7 @@ class ListObjectsResponse(SdkResponse):
     def prefix(self):
         """Gets the prefix of this ListObjectsResponse.
 
-        对象名的前缀，表示本次请求只列举对象名能匹配该前缀的所有对象。 
+        Prefix of an object name. Only objects whose names have this prefix are listed.
 
         :return: The prefix of this ListObjectsResponse.
         :rtype: str
@@ -365,7 +365,7 @@ class ListObjectsResponse(SdkResponse):
     def prefix(self, prefix):
         """Sets the prefix of this ListObjectsResponse.
 
-        对象名的前缀，表示本次请求只列举对象名能匹配该前缀的所有对象。 
+        Prefix of an object name. Only objects whose names have this prefix are listed.
 
         :param prefix: The prefix of this ListObjectsResponse.
         :type prefix: str

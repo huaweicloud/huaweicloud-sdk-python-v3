@@ -30,7 +30,8 @@ class CreateMasterSlavePoolOption:
         'ip_version': 'str',
         'members': 'list[CreateMasterSlaveMemberOption]',
         'healthmonitor': 'CreateMasterSlaveHealthMonitorOption',
-        'any_port_enable': 'bool'
+        'any_port_enable': 'bool',
+        'connection_drain': 'ConnectionDrain'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class CreateMasterSlavePoolOption:
         'ip_version': 'ip_version',
         'members': 'members',
         'healthmonitor': 'healthmonitor',
-        'any_port_enable': 'any_port_enable'
+        'any_port_enable': 'any_port_enable',
+        'connection_drain': 'connection_drain'
     }
 
-    def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None):
+    def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None, connection_drain=None):
         """CreateMasterSlavePoolOption
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class CreateMasterSlavePoolOption:
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.CreateMasterSlaveHealthMonitorOption`
         :param any_port_enable: 后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启，默认false。 &gt; 关闭端口透传后，请求会转发给后端服务器protocol_port字段指定端口。
         :type any_port_enable: bool
+        :param connection_drain: 
+        :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
         """
         
         
@@ -101,6 +105,7 @@ class CreateMasterSlavePoolOption:
         self._members = None
         self._healthmonitor = None
         self._any_port_enable = None
+        self._connection_drain = None
         self.discriminator = None
 
         if description is not None:
@@ -126,6 +131,8 @@ class CreateMasterSlavePoolOption:
         self.healthmonitor = healthmonitor
         if any_port_enable is not None:
             self.any_port_enable = any_port_enable
+        if connection_drain is not None:
+            self.connection_drain = connection_drain
 
     @property
     def description(self):
@@ -426,6 +433,24 @@ class CreateMasterSlavePoolOption:
         :type any_port_enable: bool
         """
         self._any_port_enable = any_port_enable
+
+    @property
+    def connection_drain(self):
+        """Gets the connection_drain of this CreateMasterSlavePoolOption.
+
+        :return: The connection_drain of this CreateMasterSlavePoolOption.
+        :rtype: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
+        """
+        return self._connection_drain
+
+    @connection_drain.setter
+    def connection_drain(self, connection_drain):
+        """Sets the connection_drain of this CreateMasterSlavePoolOption.
+
+        :param connection_drain: The connection_drain of this CreateMasterSlavePoolOption.
+        :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
+        """
+        self._connection_drain = connection_drain
 
     def to_dict(self):
         """Returns the model properties as a dict"""

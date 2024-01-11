@@ -20,7 +20,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'domains': 'list[Domains]',
+        'domains': 'Domains',
         'x_obs_id_2': 'str',
         'x_obs_request_id': 'str',
         'e_tag': 'str',
@@ -44,8 +44,8 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param domains: 自定义域名元素。 
-        :type domains: list[:class:`huaweicloudsdkobs.v1.Domains`]
+        :param domains: 
+        :type domains: :class:`huaweicloudsdkobs.v1.Domains`
         :param x_obs_id_2: 
         :type x_obs_id_2: str
         :param x_obs_request_id: 
@@ -90,10 +90,8 @@ class GetBucketCustomdomainResponse(SdkResponse):
     def domains(self):
         """Gets the domains of this GetBucketCustomdomainResponse.
 
-        自定义域名元素。 
-
         :return: The domains of this GetBucketCustomdomainResponse.
-        :rtype: list[:class:`huaweicloudsdkobs.v1.Domains`]
+        :rtype: :class:`huaweicloudsdkobs.v1.Domains`
         """
         return self._domains
 
@@ -101,10 +99,8 @@ class GetBucketCustomdomainResponse(SdkResponse):
     def domains(self, domains):
         """Sets the domains of this GetBucketCustomdomainResponse.
 
-        自定义域名元素。 
-
         :param domains: The domains of this GetBucketCustomdomainResponse.
-        :type domains: list[:class:`huaweicloudsdkobs.v1.Domains`]
+        :type domains: :class:`huaweicloudsdkobs.v1.Domains`
         """
         self._domains = domains
 

@@ -37,7 +37,8 @@ class ListPoolsRequest:
         'member_instance_id': 'list[str]',
         'vpc_id': 'list[str]',
         'type': 'list[str]',
-        'protection_status': 'list[str]'
+        'protection_status': 'list[str]',
+        'connection_drain': 'bool'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class ListPoolsRequest:
         'member_instance_id': 'member_instance_id',
         'vpc_id': 'vpc_id',
         'type': 'type',
-        'protection_status': 'protection_status'
+        'protection_status': 'protection_status',
+        'connection_drain': 'connection_drain'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None, connection_drain=None):
         """ListPoolsRequest
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class ListPoolsRequest:
         :type type: list[str]
         :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
         :type protection_status: list[str]
+        :param connection_drain: 查询是否开启延迟注销的功能，查询条件格式：*connection_drain&#x3D;true或者*connection_drain&#x3D;false
+        :type connection_drain: bool
         """
         
         
@@ -136,6 +140,7 @@ class ListPoolsRequest:
         self._vpc_id = None
         self._type = None
         self._protection_status = None
+        self._connection_drain = None
         self.discriminator = None
 
         if marker is not None:
@@ -180,6 +185,8 @@ class ListPoolsRequest:
             self.type = type
         if protection_status is not None:
             self.protection_status = protection_status
+        if connection_drain is not None:
+            self.connection_drain = connection_drain
 
     @property
     def marker(self):
@@ -642,6 +649,28 @@ class ListPoolsRequest:
         :type protection_status: list[str]
         """
         self._protection_status = protection_status
+
+    @property
+    def connection_drain(self):
+        """Gets the connection_drain of this ListPoolsRequest.
+
+        查询是否开启延迟注销的功能，查询条件格式：*connection_drain=true或者*connection_drain=false
+
+        :return: The connection_drain of this ListPoolsRequest.
+        :rtype: bool
+        """
+        return self._connection_drain
+
+    @connection_drain.setter
+    def connection_drain(self, connection_drain):
+        """Sets the connection_drain of this ListPoolsRequest.
+
+        查询是否开启延迟注销的功能，查询条件格式：*connection_drain=true或者*connection_drain=false
+
+        :param connection_drain: The connection_drain of this ListPoolsRequest.
+        :type connection_drain: bool
+        """
+        self._connection_drain = connection_drain
 
     def to_dict(self):
         """Returns the model properties as a dict"""

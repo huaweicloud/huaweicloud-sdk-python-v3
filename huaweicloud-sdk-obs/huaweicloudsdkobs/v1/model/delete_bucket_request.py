@@ -33,9 +33,9 @@ class DeleteBucketRequest:
 
         The model defined in huaweicloud sdk
 
-        :param bucket_name: 桶名称
+        :param bucket_name: Name of the bucket.
         :type bucket_name: str
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
         """
         
@@ -53,7 +53,7 @@ class DeleteBucketRequest:
     def bucket_name(self):
         """Gets the bucket_name of this DeleteBucketRequest.
 
-        桶名称
+        Name of the bucket.
 
         :return: The bucket_name of this DeleteBucketRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class DeleteBucketRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this DeleteBucketRequest.
 
-        桶名称
+        Name of the bucket.
 
         :param bucket_name: The bucket_name of this DeleteBucketRequest.
         :type bucket_name: str
@@ -75,7 +75,7 @@ class DeleteBucketRequest:
     def date(self):
         """Gets the date of this DeleteBucketRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this DeleteBucketRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class DeleteBucketRequest:
     def date(self, date):
         """Sets the date of this DeleteBucketRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this DeleteBucketRequest.
         :type date: str

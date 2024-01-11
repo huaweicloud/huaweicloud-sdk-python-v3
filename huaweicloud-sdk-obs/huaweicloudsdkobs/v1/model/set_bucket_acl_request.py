@@ -39,13 +39,13 @@ class SetBucketAclRequest:
 
         The model defined in huaweicloud sdk
 
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param bucket_name: 请求的桶名称。 
+        :param bucket_name: Name of the requested bucket
         :type bucket_name: str
-        :param acl: acl表示请求访问控制列表API。 
+        :param acl: Indicates the API for sending a request to the ACL.
         :type acl: str
-        :param x_obs_acl: 通过cannedACL的方式来设置桶的ACL。 取值范围：private | public-read | public-read-write | public-read-delivered | public-read-write-delivered 
+        :param x_obs_acl: Uses a canned ACL for the bucket.Value options: **private**, **public-read**, **public-read-write**, **public-read-delivered**, or **public-read-write-delivered**
         :type x_obs_acl: str
         :param body: Body of the SetBucketAclRequest
         :type body: :class:`huaweicloudsdkobs.v1.SetBucketAclRequestBody`
@@ -73,7 +73,7 @@ class SetBucketAclRequest:
     def date(self):
         """Gets the date of this SetBucketAclRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this SetBucketAclRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class SetBucketAclRequest:
     def date(self, date):
         """Sets the date of this SetBucketAclRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this SetBucketAclRequest.
         :type date: str
@@ -95,7 +95,7 @@ class SetBucketAclRequest:
     def bucket_name(self):
         """Gets the bucket_name of this SetBucketAclRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :return: The bucket_name of this SetBucketAclRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class SetBucketAclRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this SetBucketAclRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :param bucket_name: The bucket_name of this SetBucketAclRequest.
         :type bucket_name: str
@@ -117,7 +117,7 @@ class SetBucketAclRequest:
     def acl(self):
         """Gets the acl of this SetBucketAclRequest.
 
-        acl表示请求访问控制列表API。 
+        Indicates the API for sending a request to the ACL.
 
         :return: The acl of this SetBucketAclRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class SetBucketAclRequest:
     def acl(self, acl):
         """Sets the acl of this SetBucketAclRequest.
 
-        acl表示请求访问控制列表API。 
+        Indicates the API for sending a request to the ACL.
 
         :param acl: The acl of this SetBucketAclRequest.
         :type acl: str
@@ -139,7 +139,7 @@ class SetBucketAclRequest:
     def x_obs_acl(self):
         """Gets the x_obs_acl of this SetBucketAclRequest.
 
-        通过cannedACL的方式来设置桶的ACL。 取值范围：private | public-read | public-read-write | public-read-delivered | public-read-write-delivered 
+        Uses a canned ACL for the bucket.Value options: **private**, **public-read**, **public-read-write**, **public-read-delivered**, or **public-read-write-delivered**
 
         :return: The x_obs_acl of this SetBucketAclRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class SetBucketAclRequest:
     def x_obs_acl(self, x_obs_acl):
         """Sets the x_obs_acl of this SetBucketAclRequest.
 
-        通过cannedACL的方式来设置桶的ACL。 取值范围：private | public-read | public-read-write | public-read-delivered | public-read-write-delivered 
+        Uses a canned ACL for the bucket.Value options: **private**, **public-read**, **public-read-write**, **public-read-delivered**, or **public-read-write-delivered**
 
         :param x_obs_acl: The x_obs_acl of this SetBucketAclRequest.
         :type x_obs_acl: str

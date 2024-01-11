@@ -49,7 +49,7 @@ class ListSecurityDataClassificationRulesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param offset: 查询偏移
         :type offset: int
@@ -114,7 +114,7 @@ class ListSecurityDataClassificationRulesRequest:
     def workspace(self):
         """Gets the workspace of this ListSecurityDataClassificationRulesRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ListSecurityDataClassificationRulesRequest.
         :rtype: str
@@ -125,7 +125,7 @@ class ListSecurityDataClassificationRulesRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListSecurityDataClassificationRulesRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ListSecurityDataClassificationRulesRequest.
         :type workspace: str

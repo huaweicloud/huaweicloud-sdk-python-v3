@@ -31,7 +31,7 @@ class ShowSecurityDataClassificationRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param id: 需要查询的规则ID
         :type id: str
@@ -50,7 +50,7 @@ class ShowSecurityDataClassificationRuleRequest:
     def workspace(self):
         """Gets the workspace of this ShowSecurityDataClassificationRuleRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ShowSecurityDataClassificationRuleRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowSecurityDataClassificationRuleRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowSecurityDataClassificationRuleRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ShowSecurityDataClassificationRuleRequest.
         :type workspace: str

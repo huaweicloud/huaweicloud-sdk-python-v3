@@ -19,6 +19,7 @@ class QueryTranscodingsTaskResponse:
     openapi_types = {
         'task_id': 'str',
         'status': 'str',
+        'progress': 'int',
         'create_time': 'str',
         'end_time': 'str',
         'trans_template_id': 'list[int]',
@@ -39,6 +40,7 @@ class QueryTranscodingsTaskResponse:
     attribute_map = {
         'task_id': 'task_id',
         'status': 'status',
+        'progress': 'progress',
         'create_time': 'create_time',
         'end_time': 'end_time',
         'trans_template_id': 'trans_template_id',
@@ -56,7 +58,7 @@ class QueryTranscodingsTaskResponse:
         'av_parameters': 'av_parameters'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None):
+    def __init__(self, task_id=None, status=None, progress=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None):
         """QueryTranscodingsTaskResponse
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class QueryTranscodingsTaskResponse:
         :type task_id: str
         :param status: 任务执行状态。 
         :type status: str
+        :param progress: 任务执行进度百分比, 取值范围：[0, 100]。 
+        :type progress: int
         :param create_time: 转码任务启动时间 
         :type create_time: str
         :param end_time: 转码任务结束时间 
@@ -101,6 +105,7 @@ class QueryTranscodingsTaskResponse:
 
         self._task_id = None
         self._status = None
+        self._progress = None
         self._create_time = None
         self._end_time = None
         self._trans_template_id = None
@@ -122,6 +127,8 @@ class QueryTranscodingsTaskResponse:
             self.task_id = task_id
         if status is not None:
             self.status = status
+        if progress is not None:
+            self.progress = progress
         if create_time is not None:
             self.create_time = create_time
         if end_time is not None:
@@ -196,6 +203,28 @@ class QueryTranscodingsTaskResponse:
         :type status: str
         """
         self._status = status
+
+    @property
+    def progress(self):
+        """Gets the progress of this QueryTranscodingsTaskResponse.
+
+        任务执行进度百分比, 取值范围：[0, 100]。 
+
+        :return: The progress of this QueryTranscodingsTaskResponse.
+        :rtype: int
+        """
+        return self._progress
+
+    @progress.setter
+    def progress(self, progress):
+        """Sets the progress of this QueryTranscodingsTaskResponse.
+
+        任务执行进度百分比, 取值范围：[0, 100]。 
+
+        :param progress: The progress of this QueryTranscodingsTaskResponse.
+        :type progress: int
+        """
+        self._progress = progress
 
     @property
     def create_time(self):

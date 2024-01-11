@@ -32,31 +32,947 @@ class ObsAsyncClient(Client):
 
         return client_builder
 
-    def copy_object_async(self, request):
-        """复制对象
+    def delete_bucket_customdomain_async(self, request):
+        """Deleting a Custom Domain Name of a Bucket
 
-        复制对象（Copy Object）特性用来为OBS上已经存在的对象创建一个副本。
+        This operation deletes a custom domain name of a bucket.
         
-        当进行复制对象操作时，目标对象默认复制源对象的元数据；用户也可以将目标对象的元数据替换为本次请求中所带的元数据。新建的目标对象不会复制源对象的ACL信息，默认的新建对象的ACL是private，用户可以使用设置ACL的操作接口来重新设定新对象的ACL。
+        To use this operation, you must have the **PutBucketcustomdomain** permission. The bucket owner can perform this operation by default and can grant this permission to others by using a bucket policy or a user policy.
         
-        复制对象操作的请求需要通过头域携带拷贝的原桶和对象信息，不能携带消息实体。
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBucketCustomdomain
+        :type request: :class:`huaweicloudsdkobs.v1.DeleteBucketCustomdomainRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.DeleteBucketCustomdomainResponse`
+        """
+        http_info = self._delete_bucket_customdomain_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_bucket_customdomain_async_invoker(self, request):
+        http_info = self._delete_bucket_customdomain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_bucket_customdomain_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBucketCustomdomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'customdomain' in local_var_params:
+            query_params.append(('customdomain', local_var_params['customdomain']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_bucket_acl_async(self, request):
+        """Obtaining a Bucket ACL
+
+        This operation returns the ACL of a bucket. To use this operation, you must have the **READ_ACP** or **FULL_CONTROL** permission for the bucket.
         
-        该操作支持服务端加密功能。
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetBucketAcl
+        :type request: :class:`huaweicloudsdkobs.v1.GetBucketAclRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketAclResponse`
+        """
+        http_info = self._get_bucket_acl_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_bucket_acl_async_invoker(self, request):
+        http_info = self._get_bucket_acl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_bucket_acl_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetBucketAclResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'acl' in local_var_params:
+            query_params.append(('acl', local_var_params['acl']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_bucket_customdomain_async(self, request):
+        """Getting a Custom Domain Name of a Bucket
+
+        This operation gets a custom domain name of a bucket.
         
-        目标对象大小范围是[0, 5GB]，如果源对象大小超过5GB，只能使用Range拷贝部分对象。
+        To use this operation, you must have the **GetBucketcustomdomainConfiguration** permission. The bucket owner has this permission by default and can grant it to others.
         
-        #### 多版本 ####
-        默认情况下，x-obs-copy-source标识复制源对象的最新版本。如果源对象的最新版本是删除标记，则认为该对象已删除。要复制指定版本的对象，可以在x-obs-copy-source请求消息头中携带versionId参数。
+        For details about permission control, see the [permission control](https://support.huaweicloud.com/intl/en-us/perms-cfg-obs/obs_40_0001.html) in the *Object Storage Service Permissions Configuration Guide*.
         
-        如果目标对象的桶的多版本状态是开启的，系统为目标对象生成唯一的版本号（此版本号与源对象的版本号不同），并且会在响应报头x-obs-version-id返回该版本号。如果目标对象的桶的多版本状态是暂停的，则目标对象的版本号为null。
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetBucketCustomdomain
+        :type request: :class:`huaweicloudsdkobs.v1.GetBucketCustomdomainRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketCustomdomainResponse`
+        """
+        http_info = self._get_bucket_customdomain_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_bucket_customdomain_async_invoker(self, request):
+        http_info = self._get_bucket_customdomain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_bucket_customdomain_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetBucketCustomdomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'customdomain' in local_var_params:
+            query_params.append(('customdomain', local_var_params['customdomain']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_bucket_notification_async(self, request):
+        """Getting the Notification Configuration of a Bucket
+
+        This operation returns the notification configuration of a bucket.
         
-        须知：
-        在桶没有开启多版本的情况下，将源对象object_A复制为目标对象object_B，如果在复制操作之前对象object_B已经存在，复制操作执行之后老对象object_B则会被新复制对象object_B覆盖，复制成功后，只能下载到新的对象object_B，老对象object_B将会被删除。因此在使用copy接口时请确保目标对象不存在或者已无价值，避免因copy导致数据误删除。复制过程中源对象object_A无任何变化。
+        To use this operation, you must have the **GetBucketNotification** permission. The bucket owner has this permission by default and can grant it to others by using a bucket policy or a user policy.
         
-        复制对象的结果不能仅根据HTTP返回头域中的status_code来判断请求是否成功，头域中status_code返回200时表示服务端已经收到请求，且开始处理复制对象请求。复制是否成功会在响应消息的body中，只有body体中有ETag标签才表示成功，否则表示复制失败。
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetBucketNotification
+        :type request: :class:`huaweicloudsdkobs.v1.GetBucketNotificationRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketNotificationResponse`
+        """
+        http_info = self._get_bucket_notification_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_bucket_notification_async_invoker(self, request):
+        http_info = self._get_bucket_notification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_bucket_notification_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetBucketNotificationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'notification' in local_var_params:
+            query_params.append(('notification', local_var_params['notification']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_bucket_acl_async(self, request):
+        """Configuring a Bucket ACL
+
+        This operation controls access to a bucket. By default, only the bucket creator has the read and write permissions on the bucket. You can also customize access policies for a bucket, for example, configuring a public read policy for the bucket to allow all users to read it.
         
-        #### 归档存储对象 ####
-        如果源对象是归档存储对象，需要判断源对象的取回状态，只有当源对象处于已取回状态时，才能复制成功。源对象未取回或者正在取回时，会复制失败，返回错误403 Forbidden。异常描述为：
+        You can configure an ACL when creating a bucket, or modify or obtain the bucket ACL using API calls. A bucket ACL supports a maximum of 100 grants. The PUT method is idempotent. With this method, a new bucket ACL will overwrite the previous bucket ACL. To modify or delete an ACL, you just need to create a new one using the PUT method.
+        
+        For details about how to use bucket ACLs to control permissions, see the [OBS permission control](https://support.huaweicloud.com/intl/en-us/perms-cfg-obs/obs_40_0001.html) in the *Object Storage Service Permissions Configuration Guide*.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetBucketAcl
+        :type request: :class:`huaweicloudsdkobs.v1.SetBucketAclRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketAclResponse`
+        """
+        http_info = self._set_bucket_acl_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_bucket_acl_async_invoker(self, request):
+        http_info = self._set_bucket_acl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_bucket_acl_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBucketAclResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'acl' in local_var_params:
+            query_params.append(('acl', local_var_params['acl']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'x_obs_acl' in local_var_params:
+            header_params['x-obs-acl'] = local_var_params['x_obs_acl']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_bucket_customedomain_async(self, request):
+        """Configuring a Custom Domain Name for a Bucket
+
+        This operation configures a custom domain name for a bucket. After the configuration is successful, you can access the bucket using its custom domain name.
+        
+        Ensure that DNS can resolve the custom domain name to OBS.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetBucketCustomedomain
+        :type request: :class:`huaweicloudsdkobs.v1.SetBucketCustomedomainRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketCustomedomainResponse`
+        """
+        http_info = self._set_bucket_customedomain_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_bucket_customedomain_async_invoker(self, request):
+        http_info = self._set_bucket_customedomain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_bucket_customedomain_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBucketCustomedomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'customdomain' in local_var_params:
+            query_params.append(('customdomain', local_var_params['customdomain']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_bucket_notification_async(self, request):
+        """Configuring Notifications for a Bucket
+
+        This operation configures event notifications for your OBS bucket so that you can receive notifications when certain events happen in your bucket.
+        
+        By default, a bucket has no event notifications configured. In this case, the bucket has an empty **NotificationConfiguration**. If a bucket has event notifications configured, you can add an empty **NotificationConfiguration** to disable notifications.
+        
+        &lt;NotificationConfiguration&gt;
+        &lt;/NotificationConfiguration&gt; 
+        
+        OBS currently supports event notifications relying on Simple Message Notification (SMN) and FunctionGraph. Take SMN as an example. After receiving an event notification configuration request, OBS verifies whether the specified SMN topic exists and whether the topic is authorized to OBS. If the topic exists and is authorized to OBS, OBS sends a test notification to the topic subscriber..
+        
+        To use this operation, you must have the **PutBucketNotification** permission. The bucket owner has this permission by default and can grant it to others by using a bucket policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetBucketNotification
+        :type request: :class:`huaweicloudsdkobs.v1.SetBucketNotificationRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketNotificationResponse`
+        """
+        http_info = self._set_bucket_notification_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_bucket_notification_async_invoker(self, request):
+        http_info = self._set_bucket_notification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_bucket_notification_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBucketNotificationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'notification' in local_var_params:
+            query_params.append(('notification', local_var_params['notification']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_bucket_async(self, request):
+        """Creating a Bucket
+
+        This operation creates a new bucket.
+        
+        Note:
+        By default, a user can have a maximum of 100 buckets.
+        The name of a deleted bucket can be reused for another bucket or a parallel file system at least 30 minutes later after the deletion.
+        When creating a bucket in OBS, you can enable the multi-AZ storage for the bucket or disable it. With the multi-AZ storage disabled, data in a bucket is stored in a single AZ by default. With the multi-AZ storage enabled, data in a bucket is stored redundantly in multiple AZs, improving reliability. Old buckets use single-AZ storage by default.
+        A bucket name must be unique in OBS. If you create namesake buckets in the same region, a success message is returned. In other cases, if namesake buckets are created, an error message will be returned, indicating that the bucket already exists. You can add parameters like **x-obs-acl** in request headers to configure access control policies for a bucket.
+        
+        **Storage Classes**
+        You can create buckets with different storage classes. In a bucket creation request, add the **x-obs-storage-class** header to specify the default storage class for a bucket. The storage class of objects in a bucket defaults to that of the bucket. There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD). If **x-obs-storage-class** is not included in a bucket creation request, the bucket is created in the Standard storage class.
+        
+        When uploading an object, if you do not specify a storage class for the object (see the upload with PUT), it inherits the storage class of the bucket by default.
+        
+        The OBS Standard features low latency and high throughput. It is good for storing frequently accessed files. Its application scenarios include big data analytics, mobile apps, hot videos, and social apps.
+        The OBS Infrequent Access is for storing data that is infrequently (less than 12 times per year) accessed, but when needed, the access has to be fast. It can be used for file synchronization, file sharing, enterprise backups, and many other scenarios. It has the same durability, low latency, and high throughput as the Standard storage class, with a lower cost, but its availability is slightly lower than the Standard storage class.
+        The OBS Archive is for storing data that is rarely (once per year) accessed. The application scenarios include data archive and long-term backup storage. It is secure and durable and delivers the lowest cost among the three storage classes. The OBS Archive storage class can be used to replace tape libraries. To keep cost low, it may take hours to restore data from the Archive storage class.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateBucket
+        :type request: :class:`huaweicloudsdkobs.v1.CreateBucketRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.CreateBucketResponse`
+        """
+        http_info = self._create_bucket_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_bucket_async_invoker(self, request):
+        http_info = self._create_bucket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_bucket_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBucketResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'x_obs_acl' in local_var_params:
+            header_params['x-obs-acl'] = local_var_params['x_obs_acl']
+        if 'x_obs_storage_class' in local_var_params:
+            header_params['x-obs-storage-class'] = local_var_params['x_obs_storage_class']
+        if 'x_obs_grant_read' in local_var_params:
+            header_params['x-obs-grant-read'] = local_var_params['x_obs_grant_read']
+        if 'x_obs_grant_write' in local_var_params:
+            header_params['x-obs-grant-write'] = local_var_params['x_obs_grant_write']
+        if 'x_obs_grant_read_acp' in local_var_params:
+            header_params['x-obs-grant-read-acp'] = local_var_params['x_obs_grant_read_acp']
+        if 'x_obs_grant_write_acp' in local_var_params:
+            header_params['x-obs-grant-write-acp'] = local_var_params['x_obs_grant_write_acp']
+        if 'x_obs_grant_full_control' in local_var_params:
+            header_params['x-obs-grant-full-control'] = local_var_params['x_obs_grant_full_control']
+        if 'x_obs_grant_read_delivered' in local_var_params:
+            header_params['x-obs-grant-read-delivered'] = local_var_params['x_obs_grant_read_delivered']
+        if 'x_obs_grant_full_control_delivered' in local_var_params:
+            header_params['x-obs-grant-full-control-delivered'] = local_var_params['x_obs_grant_full_control_delivered']
+        if 'x_obs_az_redundancy' in local_var_params:
+            header_params['x-obs-az-redundancy'] = local_var_params['x_obs_az_redundancy']
+        if 'x_obs_fs_file_interface' in local_var_params:
+            header_params['x-obs-fs-file-interface'] = local_var_params['x_obs_fs_file_interface']
+        if 'x_obs_epid' in local_var_params:
+            header_params['x-obs-epid'] = local_var_params['x_obs_epid']
+        if 'x_obs_cluster_type' in local_var_params:
+            header_params['x-obs-cluster-type'] = local_var_params['x_obs_cluster_type']
+        if 'x_obs_location_clustergroup_id' in local_var_params:
+            header_params['x-obs-location-clustergroup-id'] = local_var_params['x_obs_location_clustergroup_id']
+        if 'x_obs_ies_location' in local_var_params:
+            header_params['x-obs-ies-location'] = local_var_params['x_obs_ies_location']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_bucket_async(self, request):
+        """Deleting a Bucket
+
+        This operation deletes a bucket. Only the bucket owner or the user who has the bucket delete permission can delete the bucket. Before a bucket itself can be deleted, all objects in the bucket must be deleted. A bucket is not empty if it has any object or multipart upload in it. You can list objects and multipart uploads in the bucket to check whether the bucket is empty.
+        Note:
+        If the server returns a **5***XX* error or times out when a bucket is being deleted, the system needs to synchronize the bucket information. During this period, the bucket information may be inaccurate. Wait a while and then check whether the bucket is deleted. If the bucket can still be queried, send a delete request again.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBucket
+        :type request: :class:`huaweicloudsdkobs.v1.DeleteBucketRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.DeleteBucketResponse`
+        """
+        http_info = self._delete_bucket_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_bucket_async_invoker(self, request):
+        http_info = self._delete_bucket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_bucket_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBucketResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_bucket_metadata_async(self, request):
+        """Getting Metadata of a Bucket
+
+        This operation queries the metadata of a bucket. To use this operation, you must have the permission to read the bucket.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetBucketMetadata
+        :type request: :class:`huaweicloudsdkobs.v1.GetBucketMetadataRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketMetadataResponse`
+        """
+        http_info = self._get_bucket_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_bucket_metadata_async_invoker(self, request):
+        http_info = self._get_bucket_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_bucket_metadata_http_info(self, request):
+        http_info = {
+            "method": "HEAD",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetBucketMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'origin' in local_var_params:
+            header_params['Origin'] = local_var_params['origin']
+        if 'access_control_request_headers' in local_var_params:
+            header_params['Access-Control-Request-Headers'] = local_var_params['access_control_request_headers']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "x-obs-fs-file-interface", "x-obs-version", "Access-Control-Allow-Origin", "Access-Control-Allow-Methods", "x-obs-bucket-location", "Connection", "x-obs-epid", "Date", "Access-Control-Allow-Headers", "Access-Control-Expose-Headers", "ETag", "x-obs-storage-class", "x-obs-az-redundancy", "Content-Length", "Access-Control-Max-Age", "x-obs-ies-location", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_buckets_async(self, request):
+        """Getting a List of Buckets
+
+        This operation returns a list of all buckets you created.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBuckets
+        :type request: :class:`huaweicloudsdkobs.v1.ListBucketsRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.ListBucketsResponse`
+        """
+        http_info = self._list_buckets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_buckets_async_invoker(self, request):
+        http_info = self._list_buckets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_buckets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBucketsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'x_obs_bucket_type' in local_var_params:
+            header_params['x-obs-bucket-type'] = local_var_params['x_obs_bucket_type']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "x-obs-bucket-type", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_objects_async(self, request):
+        """Listing Objects in a Bucket
+
+        This operation returns objects in a bucket.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListObjects
+        :type request: :class:`huaweicloudsdkobs.v1.ListObjectsRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.ListObjectsResponse`
+        """
+        http_info = self._list_objects_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_objects_async_invoker(self, request):
+        http_info = self._list_objects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_objects_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'prefix' in local_var_params:
+            query_params.append(('prefix', local_var_params['prefix']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'max_keys' in local_var_params:
+            query_params.append(('max-keys', local_var_params['max_keys']))
+        if 'delimiter' in local_var_params:
+            query_params.append(('delimiter', local_var_params['delimiter']))
+        if 'key_marker' in local_var_params:
+            query_params.append(('key-marker', local_var_params['key_marker']))
+        if 'version_id_marker' in local_var_params:
+            query_params.append(('version-id-marker', local_var_params['version_id_marker']))
+        if 'encoding_type' in local_var_params:
+            query_params.append(('encoding-type', local_var_params['encoding_type']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "x-obs-bucket-type", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def copy_object_async(self, request):
+        """Copying an Object
+
+        This operation creates a copy of an object in OBS.
+        
+        When copying an object, you can keep all metadata of the source object (default) or replace the metadata with the new metadata provided in the request. However, the ACL of the source object is not preserved and is set to private for the object copy. You can use the ACL setting API to update the ACL of the new object.
+        
+        The data copy request needs to carry the information about the source bucket and object in headers, but cannot carry the message body.
+        
+        This operation supports server-side encryption.
+        
+        The object you can copy is up to 5 GB. If the source object is larger than 5 GB, you can only copy some of the object using **Range**.
+        
+        **Versioning**
+        By default, **x-obs-copy-source** specifies the latest version of the source object. If the latest version of the source object has a delete marker, the object is considered deleted. To copy a specific object version, add the **versionId** parameter in the **x-obs-copy-source** request header.
+        
+        If versioning is enabled for the bucket storing the target object, OBS generates a unique version ID for the target object (this version ID is different from that of the source object) and returns the version ID in the **x-obs-version-id** response header. If versioning is suspended for the target bucket, the version ID of the target object is **null**.
+        
+        Note:
+        Assume that the target bucket already has **object_B** in it and has the versioning not enabled. If you make a copy of **object_A** and save it as **object_B** in the target bucket, the new **object_B** will overwrite the old one. You can download only the new **object_B**, as the old one has been deleted. To use this API, ensure that there is no object with the same name as the object copy to protect data from being deleted by mistake. This copy operation does not make any changes to **object_A**.
+        
+        **status_code** in the returned HTTP header does not represent whether an object copy is successful. Status code 200 indicates that the server has received the data copy request and starts to process it. A copy request succeeds only when the body in the response contains ETag, or the copy request failed.
+        
+        **Archive Objects**
+        If source objects are in the Archive storage class, ensure that these objects have been restored before you copy them. If a source object is not restored or is being restored, its copy will fail and error **403 Forbidden** will be returned. The error description is as follows:
         
         ErrorCode: InvalidObjectState
         
@@ -172,269 +1088,15 @@ class ObsAsyncClient(Client):
 
         return http_info
 
-    def create_bucket_async(self, request):
-        """创建桶
-
-        创建桶是指按照用户指定的桶名创建一个新桶的操作。
-        
-        说明：
-        默认情况下，一个用户可以拥有的桶的数量不能超过100个。
-        用户删除桶后，需要等待30分钟才能创建同名桶和并行文件系统。
-        OBS支持在创建桶时指定桶的AZ类型，您可以开启或关闭多AZ。关闭多AZ时，桶内数据默认存储在单个AZ内；开启多AZ时，桶内数据冗余存储在多个AZ内，可靠性更高。旧桶AZ类型默认为单AZ。
-        新创建桶的桶名在OBS中必须是唯一的。如果是同一个用户重复创建同一区域的同名桶时返回成功。除此以外的其他场景重复创建同名桶返回桶已存在。用户可以在请求消息头中加入x-obs-acl等参数，设置要创建桶的权限控制策略。
-        
-        #### 存储类型 ####
-        允许用户创建不同默认存储类型的桶。发送创桶请求时携带头域“x-obs-storage-class”来指定桶的默认存储类型。桶内对象的存储类型与桶默认存储类型保持一致。存储类型有3种：STANDARD（标准存储）、WARM（低频访问存储）、COLD（归档存储）。如果没有携带此头域 ，则创建的桶为标准存储类型。
-        
-        当往桶内上传对象时，如果没有指定对象的存储类别（参考PUT上传），则该对象的存储类型取桶的默认存储类型。
-        
-        OBS标准存储拥有低访问时延和较高的吞吐量，因而适用于有大量热点文件需要频繁访问数据的业务场景，例如：大数据、移动应用、热点视频、社交图片等场景。
-        OBS低频访问存储适用于不频繁访问（少于每月一次访问）但在需要时也要求快速访问数据的业务场景，例如：文件同步/共享、企业备份等场景。与标准存储相比，低频访问存储有相同的数据持久性、吞吐量以及访问时延，且成本较低，但是可用性略低于标准存储。
-        OBS归档存储适用于很少访问（平均一年访问一次）数据的业务场景，例如：数据归档、长期备份等场景。归档存储安全、持久且成本极低，可以用来替代磁带库。为了保持成本低廉，数据取回时间可能长达数分钟到数小时不等。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateBucket
-        :type request: :class:`huaweicloudsdkobs.v1.CreateBucketRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.CreateBucketResponse`
-        """
-        http_info = self._create_bucket_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_bucket_async_invoker(self, request):
-        http_info = self._create_bucket_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_bucket_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateBucketResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-        if 'x_obs_acl' in local_var_params:
-            header_params['x-obs-acl'] = local_var_params['x_obs_acl']
-        if 'x_obs_storage_class' in local_var_params:
-            header_params['x-obs-storage-class'] = local_var_params['x_obs_storage_class']
-        if 'x_obs_grant_read' in local_var_params:
-            header_params['x-obs-grant-read'] = local_var_params['x_obs_grant_read']
-        if 'x_obs_grant_write' in local_var_params:
-            header_params['x-obs-grant-write'] = local_var_params['x_obs_grant_write']
-        if 'x_obs_grant_read_acp' in local_var_params:
-            header_params['x-obs-grant-read-acp'] = local_var_params['x_obs_grant_read_acp']
-        if 'x_obs_grant_write_acp' in local_var_params:
-            header_params['x-obs-grant-write-acp'] = local_var_params['x_obs_grant_write_acp']
-        if 'x_obs_grant_full_control' in local_var_params:
-            header_params['x-obs-grant-full-control'] = local_var_params['x_obs_grant_full_control']
-        if 'x_obs_grant_read_delivered' in local_var_params:
-            header_params['x-obs-grant-read-delivered'] = local_var_params['x_obs_grant_read_delivered']
-        if 'x_obs_grant_full_control_delivered' in local_var_params:
-            header_params['x-obs-grant-full-control-delivered'] = local_var_params['x_obs_grant_full_control_delivered']
-        if 'x_obs_az_redundancy' in local_var_params:
-            header_params['x-obs-az-redundancy'] = local_var_params['x_obs_az_redundancy']
-        if 'x_obs_fs_file_interface' in local_var_params:
-            header_params['x-obs-fs-file-interface'] = local_var_params['x_obs_fs_file_interface']
-        if 'x_obs_epid' in local_var_params:
-            header_params['x-obs-epid'] = local_var_params['x_obs_epid']
-        if 'x_obs_cluster_type' in local_var_params:
-            header_params['x-obs-cluster-type'] = local_var_params['x_obs_cluster_type']
-        if 'x_obs_location_clustergroup_id' in local_var_params:
-            header_params['x-obs-location-clustergroup-id'] = local_var_params['x_obs_location_clustergroup_id']
-        if 'x_obs_ies_location' in local_var_params:
-            header_params['x-obs-ies-location'] = local_var_params['x_obs_ies_location']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/xml'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_bucket_async(self, request):
-        """删除桶
-
-        删除桶操作用于删除用户指定的桶。只有桶的所有者或者拥有桶的删桶policy权限的用户可以执行删除桶的操作，要删除的桶必须是空桶。如果桶中有对象或者有多段任务则认为桶不为空，可以使用列举桶内对象和列举出多段上传任务接口来确认桶是否为空。
-        注：
-        如果删除桶时，服务端返回5XX错误或超时，系统需要时间进行桶信息一致性处理，在此期间桶的信息会不准确，过一段时间再查看桶是否删除成功，查询到桶，需要再次发送删除桶消息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteBucket
-        :type request: :class:`huaweicloudsdkobs.v1.DeleteBucketRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.DeleteBucketResponse`
-        """
-        http_info = self._delete_bucket_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_bucket_async_invoker(self, request):
-        http_info = self._delete_bucket_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_bucket_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteBucketResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_bucket_customdomain_async(self, request):
-        """删除桶的自定义域名
-
-        OBS使用DELETE操作来删除指定桶的标签。
-        
-        要正确执行此操作，需要确保执行者有PutBucketcustomdomain权限。缺省情况下只有桶的所有者可以执行此操作，也可以通过设置桶策略或用户策略授权给其他用户。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteBucketCustomdomain
-        :type request: :class:`huaweicloudsdkobs.v1.DeleteBucketCustomdomainRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.DeleteBucketCustomdomainResponse`
-        """
-        http_info = self._delete_bucket_customdomain_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_bucket_customdomain_async_invoker(self, request):
-        http_info = self._delete_bucket_customdomain_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_bucket_customdomain_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteBucketCustomdomainResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-        if 'customdomain' in local_var_params:
-            query_params.append(('customdomain', local_var_params['customdomain']))
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def delete_object_async(self, request):
-        """删除对象
+        """Deleting an Object
 
-        删除对象的操作。如果要删除的对象不存在，则仍然返回成功信息。
+        This operation deletes an object. If you try to delete an object that does not exist, OBS still returns a success message.
         
-        #### 多版本 ####
-        当桶的多版本状态是开启时，不指定版本删除对象将产生一个带唯一版本号的删除标记，并不删除对象；当桶的多版本状态是Suspended时，不指定版本删除将删除版本号为null的对象，并将产生一个版本号为null的删除标记。
+        **Versioning**
+        When versioning is enabled for a bucket, deleting an object with no version ID specified attaches a delete marker with a unique version ID to the object, but the object is not really deleted. When versioning is suspended for a bucket, deleting an object with no version ID specified deletes the object whose version ID is **null** and creates a delete marker with a version ID **null**.
         
-        如果要删除指定版本的对象，请求可携带versionId消息参数。
+        To delete a specific object version, add the **versionId** parameter in the request.
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -503,13 +1165,13 @@ class ObsAsyncClient(Client):
         return http_info
 
     def delete_objects_async(self, request):
-        """批量删除对象
+        """Batch Deleting Objects
 
-        批量删除对象特性用于将一个桶内的部分对象一次性删除，删除后不可恢复。批量删除对象要求返回结果里包含每个对象的删除结果。OBS的批量删除对象使用同步删除对象的方式，每个对象的删除结果返回给请求用户。
+        This operation deletes some objects in a bucket at a time. The operation cannot be undone.  OBS synchronously deletes objects in a batch. The deletion result of each object is returned.
         
-        批量删除对象支持两种响应方式：verbose和quiet。Verbose是指在返回响应时，不管对象是否删除成功都将删除结果包含在XML响应里；quiet是指在返回响应时，只返回删除失败的对象结果，没有返回的认为删除成功。OBS默认使用verbose模式，如果用户在请求消息体中指定quiet模式的话， 使用quiet模式。
+        Batch object deletion supports two response methods: verbose and quiet. With verbose, OBS returns the results of both successful and failed deletions in the XML response; with quiet, OBS only returns the results of failed deletions in the XML response. OBS uses verbose by default. To use quiet, specify the quiet method in the request body.
         
-        批量删除的请求消息头中必须包含Content-MD5以及Content-Length，用以保证请求的消息体在服务端检测到网络传输如果有错，则可以检测出来。
+        In a batch deletion request, the **Content-MD5** and **Content-Length** headers must be included, so that the message body can be identified if the server discovers a network transmission error.
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -579,303 +1241,19 @@ class ObsAsyncClient(Client):
 
         return http_info
 
-    def get_bucket_acl_async(self, request):
-        """获取桶ACL
-
-        用户执行获取桶ACL的操作，返回信息包含指定桶的权限控制列表信息。用户必须拥有对指定桶READ_ACP的权限或FULL_CONTROL权限，才能执行获取桶ACL的操作。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetBucketAcl
-        :type request: :class:`huaweicloudsdkobs.v1.GetBucketAclRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketAclResponse`
-        """
-        http_info = self._get_bucket_acl_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_bucket_acl_async_invoker(self, request):
-        http_info = self._get_bucket_acl_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_bucket_acl_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetBucketAclResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-        if 'acl' in local_var_params:
-            query_params.append(('acl', local_var_params['acl']))
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_bucket_customdomain_async(self, request):
-        """获取桶的自定义域名
-
-        OBS使用GET操作来获取桶的自定义域名。
-        
-        要正确执行此操作，需要确保执行者有GetBucketcustomdomainConfiguration权限。桶拥有者默认具有此权限，并且可以将此权限授予其他人。
-        
-        有关权限控制的更多信息请参考《对象存储服务权限配置指南》的[OBS权限控制概述](https://support.huaweicloud.com/perms-cfg-obs/obs_40_0001.html)章节。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetBucketCustomdomain
-        :type request: :class:`huaweicloudsdkobs.v1.GetBucketCustomdomainRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketCustomdomainResponse`
-        """
-        http_info = self._get_bucket_customdomain_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_bucket_customdomain_async_invoker(self, request):
-        http_info = self._get_bucket_customdomain_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_bucket_customdomain_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetBucketCustomdomainResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-        if 'customdomain' in local_var_params:
-            query_params.append(('customdomain', local_var_params['customdomain']))
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_bucket_metadata_async(self, request):
-        """获取桶元数据
-
-        对桶拥有读权限的用户可以执行查询桶元数据是否存在的操作。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetBucketMetadata
-        :type request: :class:`huaweicloudsdkobs.v1.GetBucketMetadataRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketMetadataResponse`
-        """
-        http_info = self._get_bucket_metadata_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_bucket_metadata_async_invoker(self, request):
-        http_info = self._get_bucket_metadata_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_bucket_metadata_http_info(self, request):
-        http_info = {
-            "method": "HEAD",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetBucketMetadataResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-        if 'origin' in local_var_params:
-            header_params['Origin'] = local_var_params['origin']
-        if 'access_control_request_headers' in local_var_params:
-            header_params['Access-Control-Request-Headers'] = local_var_params['access_control_request_headers']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "x-obs-fs-file-interface", "x-obs-version", "Access-Control-Allow-Origin", "Access-Control-Allow-Methods", "x-obs-bucket-location", "Connection", "x-obs-epid", "Date", "Access-Control-Allow-Headers", "Access-Control-Expose-Headers", "ETag", "x-obs-storage-class", "x-obs-az-redundancy", "Content-Length", "Access-Control-Max-Age", "x-obs-ies-location", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_bucket_notification_async(self, request):
-        """获取桶的消息通知配置
-
-        获取指定桶的消息通知配置信息。
-        
-        为了能成功执行此配置操作，需要确保执行者拥有GetBucketNotification权限。默认情况下只有桶的所有者拥有该权限，但可以通过设置桶策略或用户策略授权给其他用户。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetBucketNotification
-        :type request: :class:`huaweicloudsdkobs.v1.GetBucketNotificationRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketNotificationResponse`
-        """
-        http_info = self._get_bucket_notification_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_bucket_notification_async_invoker(self, request):
-        http_info = self._get_bucket_notification_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_bucket_notification_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetBucketNotificationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-        if 'notification' in local_var_params:
-            query_params.append(('notification', local_var_params['notification']))
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def get_object_async(self, request):
-        """获取对象内容
+        """Downloading an Object
 
-        GET操作从对象存储下载对象。使用GET接口前，请确认必须拥有对象的READ权限。如果对象Owner向匿名用户授予READ访问权限，则可以在不使用鉴权头域的情况下访问该对象。
+        This operation downloads an object from OBS. To use this operation, you must have the read permission for the object. If the object owner has granted anonymous users the read permission for the object, anonymous users can access this object without using the authentication header field.
         
-        #### 服务端加密 ####
-        如果客户端的对象上传时，使用了客户提供的加密密钥进行服务端加密，当下载对象时，同样也必须在消息中提供密钥。
+        **Server-Side Encryption**
+        If the object uploaded to a server is encrypted with the key provided by the client, the key must also be provided in the message for downloading the object.
         
-        #### 多版本 ####
-        默认情况下，获取的是最新版本的对象。如果最新版本的对象是删除标记，则返回对象不存在。如果要获取指定版本的对象，请求可携带versionId消息参数。
+        **Versioning**
+        By default, this operation returns the latest object version. If the latest object version has a delete marker, OBS returns a message indicating that the object does not exist. To download a specific object version, add the **versionId** parameter in the request.
         
-        #### 归档存储对象 ####
-        如果要下载的对象是归档存储类对象，由于对象存储在存档设备中，您必须先使用对象取回，然后才能下载该归档存储对象。对象处于不同的取回状态时，给出不同响应：如果对象已取回，下载对象成功时需要返回x-obs-restore头域指示取回失效时间。对未取回或正在取回的归档存储对象发送下载请求时，会返回错误403 Forbidden。
+        **Archive Objects**
+        You must restore an Archive object before you can download it. The response varies depending on the restore status of the object. If an object has been restored, after this object is downloaded, the **x-obs-restore** header is returned to indicate when the retention of the restored object expires. If you send a request to download Archive objects that are not restored or are being restored, a **403 Forbidden** error is returned.
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -976,13 +1354,13 @@ class ObsAsyncClient(Client):
         return http_info
 
     def get_object_metadata_async(self, request):
-        """获取对象元数据
+        """Getting Metadata of an Object
 
-        拥有对象读权限的用户可以执行HEAD操作命令获取对象元数据，返回信息包含对象的元数据信息。
-        该操作支持服务端加密功能。
+        This operation returns the metadata of an object. To use this operation, you must have the read permission on the object.
+        This operation supports server-side encryption.
         
-        #### 多版本 ####
-        默认情况下，获取的是最新版本的对象元数据。如果最新版本的对象是删除标记，则返回404。如果要获取指定版本的对象元数据，请求可携带versionId消息参数。
+        **Versioning**
+        By default, this operation returns the metadata of the latest object version. If this object has a delete marker, status code 404 is returned. To obtain the metadata of a specific object version, add the **versionId** parameter in the request.
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1064,172 +1442,10 @@ class ObsAsyncClient(Client):
 
         return http_info
 
-    def list_buckets_async(self, request):
-        """获取桶列表
-
-        OBS用户可以通过请求查询自己创建的桶列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListBuckets
-        :type request: :class:`huaweicloudsdkobs.v1.ListBucketsRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.ListBucketsResponse`
-        """
-        http_info = self._list_buckets_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_buckets_async_invoker(self, request):
-        http_info = self._list_buckets_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_buckets_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListBucketsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-        if 'x_obs_bucket_type' in local_var_params:
-            header_params['x-obs-bucket-type'] = local_var_params['x_obs_bucket_type']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "x-obs-bucket-type", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_objects_async(self, request):
-        """列举桶内对象
-
-        对桶拥有读权限的用户可以执行获取桶内对象列表的操作。
-        
-        如果用户在请求的URI里只指定了桶名，即GET /BucketName，则返回信息中会包含桶内部分或所有对象的描述信息（一次最多返回1000个对象信息）；如果用户还指定了prefix、marker、max-keys、delimiter参数中的一个或多个，则返回的对象列表将按照如表1所示规定的语义返回指定的对象。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListObjects
-        :type request: :class:`huaweicloudsdkobs.v1.ListObjectsRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.ListObjectsResponse`
-        """
-        http_info = self._list_objects_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_objects_async_invoker(self, request):
-        http_info = self._list_objects_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_objects_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListObjectsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-        if 'prefix' in local_var_params:
-            query_params.append(('prefix', local_var_params['prefix']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'max_keys' in local_var_params:
-            query_params.append(('max-keys', local_var_params['max_keys']))
-        if 'delimiter' in local_var_params:
-            query_params.append(('delimiter', local_var_params['delimiter']))
-        if 'key_marker' in local_var_params:
-            query_params.append(('key-marker', local_var_params['key_marker']))
-        if 'version_id_marker' in local_var_params:
-            query_params.append(('version-id-marker', local_var_params['version_id_marker']))
-        if 'encoding_type' in local_var_params:
-            query_params.append(('encoding-type', local_var_params['encoding_type']))
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "x-obs-bucket-type", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def put_object_async(self, request):
-        """PUT上传对象
+        """Uploading an Object - PUT
 
-        用户在OBS系统中创建了桶之后，可以采用PUT操作的方式将对象上传到桶中。上传对象操作是指在指定的桶内增加一个对象，执行该操作需要用户拥有桶的写权限。
-        说明： 同一个桶中存储的对象名是唯一的。
-        在桶未开启多版本的情况下，如果在指定的桶内已经有相同的对象键值的对象，用户上传的新对象会覆盖原来的对象；为了确保数据在传输过程中没有遭到破坏，用户可以在请求消息头中加入Content-MD5参数。在这种情况下，OBS收到上传的对象后，会对对象进行MD5校验，如果不一致则返回出错信息。
-        用户还可以在上传对象时指定x-obs-acl参数，设置对象的权限控制策略。如果匿名用户在上传对象时未指定x-obs-acl参数，则该对象默认可以被所有OBS用户访问。
-        该操作支持服务端加密功能。
-        单次上传对象大小范围是[0, 5GB]，如果需要上传超过5GB的大文件，需要通过多段操作来分段上传。
-        OBS没有文件夹的概念。为了使用户更方便进行管理数据，OBS提供了一种方式模拟文件夹：通过在对象的名称中增加“/”，例如“test/123.jpg”。此时，“test”就被模拟成了一个文件夹，“123.jpg”则模拟成“test”文件夹下的文件名了，而实际上，对象名称（Key）仍然是“test/123.jpg”。此类命名方式的对象，在控制台上会以文件夹的形式展示。
-        #### 与POST上传的区别 #### PUT上传中参数通过请求头域传递；POST上传则作为消息体中的表单域传递。
-        PUT上传需在URL中指定对象名；POST上传提交的URL为桶域名，无需指定对象名。两者的请求行分别为：
-        PUT /ObjectName HTTP/1.1
-        POST / HTTP/1.1
-        关于POST上传的更多详细信息，请参考POST上传。
-        #### 多版本 #### 如果桶的多版本状态是开启的，系统会自动为对象生成一个唯一的版本号，并且会在响应报头x-obs-version-id返回该版本号。如果桶的多版本状态是暂停的，则对象的版本号为null。关于桶的多版本状态，参见设置桶的多版本状态。
+        After you create a bucket in OBS, you can use this operation to upload an object to your bucket. This operation adds an object to a bucket. To use this operation, you must have write permissions on the bucket.The name of each object in a bucket must be unique.With versioning not enabled, if an object to be uploaded has the same name as an existing object in the bucket, the newly uploaded object will overwrite the existing one. To protect data from being corrupted during transmission, you can add the **Content-MD5** parameter in the request header. After receiving the request, OBS will perform an MD5 consistency check. If the two MD5 values are inconsistent, the system returns an error message.You can also specify the **x-obs-acl** parameter to configure an access control policy for the object. If an anonymous user does not specify **x-obs-acl** when uploading an object, the object can be accessed by all OBS users by default.This operation supports server-side encryption.The object size in a single upload is up to 5 GB. To upload a file larger than 5 GB, use the multipart upload.OBS does not have real folders. For easy data management, OBS allows you to simulate a folder by adding a slash (/) to the object name, for example, **test/123.jpg**. OBS will present **test** to you as a folder and **123.jpg** as the name of a file stored inside of **test**, but the object key is still actually **test/123.jpg**. Objects named this way appear as folders on OBS Console.**Differences Between PUT and POST**  In the PUT method, parameters are passed using request headers. In the POST method, parameters are passed using form fields in the message body.To upload an object with PUT, you need to specify the object name in the URL. The object name is not required with the POST method that uses the bucket domain name as the URL. An example of an upload with PUT or POST is as follows:PUT /ObjectName HTTP/1.1POST / HTTP/1.1For POST upload, see the corresponding section.**Versioning**   If versioning is enabled on a bucket, OBS assigns a unique version ID for the object you upload to the bucket and returns this version ID in the **x-obs-version-id** header in the response. If versioning is suspended for the bucket, the object version ID is **null**. For details about the bucket versioning status, see the configuration of bucket versioning.
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1315,236 +1531,6 @@ class ObsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/octet-stream'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def set_bucket_acl_async(self, request):
-        """设置桶ACL
-
-        OBS支持对桶操作进行权限控制。默认情况下，只有桶的创建者才有该桶的读写权限。用户也可以设置其他的访问策略，比如对一个桶可以设置公共访问策略，允许所有人对其都有读权限。
-        
-        OBS用户在创建桶时可以设置权限控制策略，也可以通过ACL操作API接口对已存在的桶更改或者获取ACL(access control list) 。一个桶的ACL最多支持100条Grant授权。PUT接口为幂等的覆盖写语意，新设置的桶ACL将覆盖原有的桶ACL，如果需要修改或者删除某条ACL重新PUT一个新的桶ACL即可。
-        
-        使用桶ACL进行权限控制请参考[《对象存储服务权限配置指南》的OBS权限控制概述章节](https://support.huaweicloud.com/perms-cfg-obs/obs_40_0001.html)。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SetBucketAcl
-        :type request: :class:`huaweicloudsdkobs.v1.SetBucketAclRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketAclResponse`
-        """
-        http_info = self._set_bucket_acl_http_info(request)
-        return self._call_api(**http_info)
-
-    def set_bucket_acl_async_invoker(self, request):
-        http_info = self._set_bucket_acl_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _set_bucket_acl_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "SetBucketAclResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-        if 'acl' in local_var_params:
-            query_params.append(('acl', local_var_params['acl']))
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-        if 'x_obs_acl' in local_var_params:
-            header_params['x-obs-acl'] = local_var_params['x_obs_acl']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/xml'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def set_bucket_customedomain_async(self, request):
-        """设置桶的自定义域名
-
-        OBS使用PUT操作为桶设置自定义域名，设置成功之后，用户访问桶的自定义域名就能访问到桶。
-        
-        必须保证此自定义域名通过DNS能够正确解析到OBS服务。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SetBucketCustomedomain
-        :type request: :class:`huaweicloudsdkobs.v1.SetBucketCustomedomainRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketCustomedomainResponse`
-        """
-        http_info = self._set_bucket_customedomain_http_info(request)
-        return self._call_api(**http_info)
-
-    def set_bucket_customedomain_async_invoker(self, request):
-        http_info = self._set_bucket_customedomain_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _set_bucket_customedomain_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "SetBucketCustomedomainResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-        if 'customdomain' in local_var_params:
-            query_params.append(('customdomain', local_var_params['customdomain']))
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/xml'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def set_bucket_notification_async(self, request):
-        """设置桶的消息通知配置
-
-        OBS消息通知功能能够帮助您对桶的重要的操作及时通知到您，确保您安全、及时知道发生在桶上的关键事件。
-        
-        默认情况下，您的桶没有配置事件通知。这个时候桶的通知配置将是一个空NotificationConfiguration。对已配置有事件通知的桶，可以通过添加空NotificationConfiguration元素禁用消息通知功能。
-        
-        &lt;NotificationConfiguration&gt;
-        &lt;/NotificationConfiguration&gt; 
-        
-        目前对象存储服务（OBS）支持包括简单通知服务（SMN）、函数工作流服务（FunctionGraph）在内的两种桶通知服务配置。以SMN为例，当OBS接收到配置消息通知的请求后，会验证指定的消息通知服务（SMN）主题是否存在及主题策略是否授权给了对象存储服务，验证通过后会向该主题订阅者发送一个测试消息通知。
-        
-        为了能成功执行此配置操作，需要确保执行者拥有PutBucketNotification权限。默认情况下只有桶的所有者拥有该权限，但可以通过设置桶策略授权给其他用户。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SetBucketNotification
-        :type request: :class:`huaweicloudsdkobs.v1.SetBucketNotificationRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketNotificationResponse`
-        """
-        http_info = self._set_bucket_notification_http_info(request)
-        return self._call_api(**http_info)
-
-    def set_bucket_notification_async_invoker(self, request):
-        http_info = self._set_bucket_notification_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _set_bucket_notification_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/",
-            "request_type": request.__class__.__name__,
-            "response_type": "SetBucketNotificationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bucket_name' in local_var_params:
-            cname = local_var_params['bucket_name']
-        if 'notification' in local_var_params:
-            query_params.append(('notification', local_var_params['notification']))
-
-        header_params = {}
-        if 'date' in local_var_params:
-            header_params['Date'] = local_var_params['date']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/xml'])
 
         auth_settings = []
 

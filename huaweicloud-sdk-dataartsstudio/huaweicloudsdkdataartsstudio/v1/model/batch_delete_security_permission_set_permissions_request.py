@@ -35,7 +35,7 @@ class BatchDeleteSecurityPermissionSetPermissionsRequest:
 
         :param permission_set_id: 权限集id
         :type permission_set_id: str
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param body: Body of the BatchDeleteSecurityPermissionSetPermissionsRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteBaseDTO`
@@ -79,7 +79,7 @@ class BatchDeleteSecurityPermissionSetPermissionsRequest:
     def workspace(self):
         """Gets the workspace of this BatchDeleteSecurityPermissionSetPermissionsRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this BatchDeleteSecurityPermissionSetPermissionsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchDeleteSecurityPermissionSetPermissionsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this BatchDeleteSecurityPermissionSetPermissionsRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this BatchDeleteSecurityPermissionSetPermissionsRequest.
         :type workspace: str

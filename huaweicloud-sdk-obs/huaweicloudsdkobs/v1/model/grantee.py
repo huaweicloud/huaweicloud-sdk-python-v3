@@ -33,9 +33,9 @@ class Grantee:
 
         The model defined in huaweicloud sdk
 
-        :param id: 被授权用户的租户Id 
+        :param id: Account ID of the grantee
         :type id: str
-        :param canned: 向所有人授予权限。 
+        :param canned: Grant permissions to everyone. 
         :type canned: str
         """
         
@@ -54,7 +54,7 @@ class Grantee:
     def id(self):
         """Gets the id of this Grantee.
 
-        被授权用户的租户Id 
+        Account ID of the grantee
 
         :return: The id of this Grantee.
         :rtype: str
@@ -65,7 +65,7 @@ class Grantee:
     def id(self, id):
         """Sets the id of this Grantee.
 
-        被授权用户的租户Id 
+        Account ID of the grantee
 
         :param id: The id of this Grantee.
         :type id: str
@@ -76,7 +76,7 @@ class Grantee:
     def canned(self):
         """Gets the canned of this Grantee.
 
-        向所有人授予权限。 
+        Grant permissions to everyone. 
 
         :return: The canned of this Grantee.
         :rtype: str
@@ -87,7 +87,7 @@ class Grantee:
     def canned(self, canned):
         """Sets the canned of this Grantee.
 
-        向所有人授予权限。 
+        Grant permissions to everyone. 
 
         :param canned: The canned of this Grantee.
         :type canned: str

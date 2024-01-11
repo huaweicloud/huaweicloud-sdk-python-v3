@@ -33,9 +33,9 @@ class FilterRule:
 
         The model defined in huaweicloud sdk
 
-        :param name: 指定规则按对象名前缀或后缀进行过滤。 
+        :param name: Prefix or suffix of object names for filtering
         :type name: str
-        :param value: 指定的对象名关键字，根据Name元素定义的前缀或后缀，输入需要过滤的对象的关键字信息，字符越长匹配精度越高，最大可支持1024个字符。 
+        :param value: Key word of object names. Based on the prefix or suffix defined by **Name**, enter the key word for filtering objects. A longer string of characters delivers a more accurate filtering result. A maximum of 1024 characters are supported.
         :type value: str
         """
         
@@ -54,7 +54,7 @@ class FilterRule:
     def name(self):
         """Gets the name of this FilterRule.
 
-        指定规则按对象名前缀或后缀进行过滤。 
+        Prefix or suffix of object names for filtering
 
         :return: The name of this FilterRule.
         :rtype: str
@@ -65,7 +65,7 @@ class FilterRule:
     def name(self, name):
         """Sets the name of this FilterRule.
 
-        指定规则按对象名前缀或后缀进行过滤。 
+        Prefix or suffix of object names for filtering
 
         :param name: The name of this FilterRule.
         :type name: str
@@ -76,7 +76,7 @@ class FilterRule:
     def value(self):
         """Gets the value of this FilterRule.
 
-        指定的对象名关键字，根据Name元素定义的前缀或后缀，输入需要过滤的对象的关键字信息，字符越长匹配精度越高，最大可支持1024个字符。 
+        Key word of object names. Based on the prefix or suffix defined by **Name**, enter the key word for filtering objects. A longer string of characters delivers a more accurate filtering result. A maximum of 1024 characters are supported.
 
         :return: The value of this FilterRule.
         :rtype: str
@@ -87,7 +87,7 @@ class FilterRule:
     def value(self, value):
         """Sets the value of this FilterRule.
 
-        指定的对象名关键字，根据Name元素定义的前缀或后缀，输入需要过滤的对象的关键字信息，字符越长匹配精度越高，最大可支持1024个字符。 
+        Key word of object names. Based on the prefix or suffix defined by **Name**, enter the key word for filtering objects. A longer string of characters delivers a more accurate filtering result. A maximum of 1024 characters are supported.
 
         :param value: The value of this FilterRule.
         :type value: str

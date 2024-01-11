@@ -22,7 +22,8 @@ class CreateAddressGroupOption:
         'ip_version': 'int',
         'ip_set': 'list[str]',
         'max_capacity': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'ip_extra_set': 'list[IpExtraSetOption]'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateAddressGroupOption:
         'ip_version': 'ip_version',
         'ip_set': 'ip_set',
         'max_capacity': 'max_capacity',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'ip_extra_set': 'ip_extra_set'
     }
 
-    def __init__(self, name=None, description=None, ip_version=None, ip_set=None, max_capacity=None, enterprise_project_id=None):
+    def __init__(self, name=None, description=None, ip_version=None, ip_set=None, max_capacity=None, enterprise_project_id=None, ip_extra_set=None):
         """CreateAddressGroupOption
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateAddressGroupOption:
         :type max_capacity: int
         :param enterprise_project_id: 功能说明：企业项目ID。创建IP地址组时，给IP地址组绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
         :type enterprise_project_id: str
+        :param ip_extra_set: 功能说明：IP地址组包含的IP列表及其备注信息 约束：ip数量限制默认20, 与ip_set参数只能二选一
+        :type ip_extra_set: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetOption`]
         """
         
         
@@ -61,6 +65,7 @@ class CreateAddressGroupOption:
         self._ip_set = None
         self._max_capacity = None
         self._enterprise_project_id = None
+        self._ip_extra_set = None
         self.discriminator = None
 
         self.name = name
@@ -73,6 +78,8 @@ class CreateAddressGroupOption:
             self.max_capacity = max_capacity
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if ip_extra_set is not None:
+            self.ip_extra_set = ip_extra_set
 
     @property
     def name(self):
@@ -205,6 +212,28 @@ class CreateAddressGroupOption:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def ip_extra_set(self):
+        """Gets the ip_extra_set of this CreateAddressGroupOption.
+
+        功能说明：IP地址组包含的IP列表及其备注信息 约束：ip数量限制默认20, 与ip_set参数只能二选一
+
+        :return: The ip_extra_set of this CreateAddressGroupOption.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetOption`]
+        """
+        return self._ip_extra_set
+
+    @ip_extra_set.setter
+    def ip_extra_set(self, ip_extra_set):
+        """Sets the ip_extra_set of this CreateAddressGroupOption.
+
+        功能说明：IP地址组包含的IP列表及其备注信息 约束：ip数量限制默认20, 与ip_set参数只能二选一
+
+        :param ip_extra_set: The ip_extra_set of this CreateAddressGroupOption.
+        :type ip_extra_set: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetOption`]
+        """
+        self._ip_extra_set = ip_extra_set
 
     def to_dict(self):
         """Returns the model properties as a dict"""

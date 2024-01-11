@@ -36,7 +36,8 @@ class TestEndPoint:
         'region': 'str',
         'project_id': 'str',
         'db_name': 'str',
-        'kafka_security_config': 'KafkaSecurity'
+        'kafka_security_config': 'KafkaSecurity',
+        'customized_dns': 'CustomizedDns'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class TestEndPoint:
         'region': 'region',
         'project_id': 'project_id',
         'db_name': 'db_name',
-        'kafka_security_config': 'kafka_security_config'
+        'kafka_security_config': 'kafka_security_config',
+        'customized_dns': 'customized_dns'
     }
 
-    def __init__(self, id=None, net_type=None, db_type=None, ip=None, db_port=None, inst_id=None, db_user=None, db_password=None, ssl_link=None, ssl_cert_key=None, ssl_cert_name=None, ssl_cert_check_sum=None, ssl_cert_password=None, vpc_id=None, subnet_id=None, end_point_type=None, region=None, project_id=None, db_name=None, kafka_security_config=None):
+    def __init__(self, id=None, net_type=None, db_type=None, ip=None, db_port=None, inst_id=None, db_user=None, db_password=None, ssl_link=None, ssl_cert_key=None, ssl_cert_name=None, ssl_cert_check_sum=None, ssl_cert_password=None, vpc_id=None, subnet_id=None, end_point_type=None, region=None, project_id=None, db_name=None, kafka_security_config=None, customized_dns=None):
         """TestEndPoint
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class TestEndPoint:
         :type db_name: str
         :param kafka_security_config: 
         :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
+        :param customized_dns: 
+        :type customized_dns: :class:`huaweicloudsdkdrs.v3.CustomizedDns`
         """
         
         
@@ -131,6 +135,7 @@ class TestEndPoint:
         self._project_id = None
         self._db_name = None
         self._kafka_security_config = None
+        self._customized_dns = None
         self.discriminator = None
 
         self.id = id
@@ -166,6 +171,8 @@ class TestEndPoint:
             self.db_name = db_name
         if kafka_security_config is not None:
             self.kafka_security_config = kafka_security_config
+        if customized_dns is not None:
+            self.customized_dns = customized_dns
 
     @property
     def id(self):
@@ -602,6 +609,24 @@ class TestEndPoint:
         :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
         """
         self._kafka_security_config = kafka_security_config
+
+    @property
+    def customized_dns(self):
+        """Gets the customized_dns of this TestEndPoint.
+
+        :return: The customized_dns of this TestEndPoint.
+        :rtype: :class:`huaweicloudsdkdrs.v3.CustomizedDns`
+        """
+        return self._customized_dns
+
+    @customized_dns.setter
+    def customized_dns(self, customized_dns):
+        """Sets the customized_dns of this TestEndPoint.
+
+        :param customized_dns: The customized_dns of this TestEndPoint.
+        :type customized_dns: :class:`huaweicloudsdkdrs.v3.CustomizedDns`
+        """
+        self._customized_dns = customized_dns
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -51,27 +51,27 @@ class GetObjectMetadataRequest:
 
         The model defined in huaweicloud sdk
 
-        :param bucket_name: 桶名称 
+        :param bucket_name: Name of the bucket.
         :type bucket_name: str
-        :param object_key: 通过此请求获取元数据的对象名称。 
+        :param object_key: Name of the object whose metadata will be returned.
         :type object_key: str
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param version_id: 对象的版本号。 
+        :param version_id: Version ID of the object.
         :type version_id: str
-        :param origin: 预请求指定的跨域请求Origin（通常为域名）。 
+        :param origin: Origin (usually a domain name) specified by the pre-request (a cross-origin request).
         :type origin: str
-        :param access_control_request_headers: 实际请求可以带的HTTP头域，可以带多个头域。 
+        :param access_control_request_headers: HTTP headers that can be contained in a request.
         :type access_control_request_headers: str
-        :param x_obs_server_side_encryption_customer_algorithm: SSE-C方式下使用该头域，该头域表示解密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm：AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        :param x_obs_server_side_encryption_customer_algorithm: The decryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
         :type x_obs_server_side_encryption_customer_algorithm: str
-        :param x_obs_server_side_encryption_customer_key: SSE-C方式下使用该头域，该头域表示解密使用的密钥。  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw&#x3D;  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        :param x_obs_server_side_encryption_customer_key: Decryption key used for SSE-C.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw&#x3D;Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
         :type x_obs_server_side_encryption_customer_key: str
-        :param x_obs_server_side_encryption_customer_key_md5: SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ&#x3D;&#x3D;  约束: 该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        :param x_obs_server_side_encryption_customer_key_md5: MD5 value of the key used to encrypt objects in SSE-C mode. An MD5 value is used to ensure that there is no error during the key transmission.Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ&#x3D;&#x3D;Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
         :type x_obs_server_side_encryption_customer_key_md5: str
-        :param success_action_redirect: 此参数的值是一个URL，用于指定当此次请求操作成功响应后的重定向的地址。  如果此参数值有效且操作成功，响应码为303，Location头域由此参数以及桶名、对象名、对象的ETag组成。 如果此参数值无效，则OBS忽略此参数的作用，响应码为204，Location头域为对象地址。 
+        :param success_action_redirect: The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
         :type success_action_redirect: str
-        :param x_obs_expires: 表示对象的过期时间，单位是天。过期之后对象会被自动删除。（从对象最后修改时间开始计算）  此字段对于每个对象仅支持上传时配置，不支持后期通过修改元数据接口修改。  示例：x-obs-expires:3 
+        :param x_obs_expires: When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified.  This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
         :type x_obs_expires: int
         """
         
@@ -114,7 +114,7 @@ class GetObjectMetadataRequest:
     def bucket_name(self):
         """Gets the bucket_name of this GetObjectMetadataRequest.
 
-        桶名称 
+        Name of the bucket.
 
         :return: The bucket_name of this GetObjectMetadataRequest.
         :rtype: str
@@ -125,7 +125,7 @@ class GetObjectMetadataRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this GetObjectMetadataRequest.
 
-        桶名称 
+        Name of the bucket.
 
         :param bucket_name: The bucket_name of this GetObjectMetadataRequest.
         :type bucket_name: str
@@ -136,7 +136,7 @@ class GetObjectMetadataRequest:
     def object_key(self):
         """Gets the object_key of this GetObjectMetadataRequest.
 
-        通过此请求获取元数据的对象名称。 
+        Name of the object whose metadata will be returned.
 
         :return: The object_key of this GetObjectMetadataRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class GetObjectMetadataRequest:
     def object_key(self, object_key):
         """Sets the object_key of this GetObjectMetadataRequest.
 
-        通过此请求获取元数据的对象名称。 
+        Name of the object whose metadata will be returned.
 
         :param object_key: The object_key of this GetObjectMetadataRequest.
         :type object_key: str
@@ -158,7 +158,7 @@ class GetObjectMetadataRequest:
     def date(self):
         """Gets the date of this GetObjectMetadataRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this GetObjectMetadataRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class GetObjectMetadataRequest:
     def date(self, date):
         """Sets the date of this GetObjectMetadataRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this GetObjectMetadataRequest.
         :type date: str
@@ -180,7 +180,7 @@ class GetObjectMetadataRequest:
     def version_id(self):
         """Gets the version_id of this GetObjectMetadataRequest.
 
-        对象的版本号。 
+        Version ID of the object.
 
         :return: The version_id of this GetObjectMetadataRequest.
         :rtype: str
@@ -191,7 +191,7 @@ class GetObjectMetadataRequest:
     def version_id(self, version_id):
         """Sets the version_id of this GetObjectMetadataRequest.
 
-        对象的版本号。 
+        Version ID of the object.
 
         :param version_id: The version_id of this GetObjectMetadataRequest.
         :type version_id: str
@@ -202,7 +202,7 @@ class GetObjectMetadataRequest:
     def origin(self):
         """Gets the origin of this GetObjectMetadataRequest.
 
-        预请求指定的跨域请求Origin（通常为域名）。 
+        Origin (usually a domain name) specified by the pre-request (a cross-origin request).
 
         :return: The origin of this GetObjectMetadataRequest.
         :rtype: str
@@ -213,7 +213,7 @@ class GetObjectMetadataRequest:
     def origin(self, origin):
         """Sets the origin of this GetObjectMetadataRequest.
 
-        预请求指定的跨域请求Origin（通常为域名）。 
+        Origin (usually a domain name) specified by the pre-request (a cross-origin request).
 
         :param origin: The origin of this GetObjectMetadataRequest.
         :type origin: str
@@ -224,7 +224,7 @@ class GetObjectMetadataRequest:
     def access_control_request_headers(self):
         """Gets the access_control_request_headers of this GetObjectMetadataRequest.
 
-        实际请求可以带的HTTP头域，可以带多个头域。 
+        HTTP headers that can be contained in a request.
 
         :return: The access_control_request_headers of this GetObjectMetadataRequest.
         :rtype: str
@@ -235,7 +235,7 @@ class GetObjectMetadataRequest:
     def access_control_request_headers(self, access_control_request_headers):
         """Sets the access_control_request_headers of this GetObjectMetadataRequest.
 
-        实际请求可以带的HTTP头域，可以带多个头域。 
+        HTTP headers that can be contained in a request.
 
         :param access_control_request_headers: The access_control_request_headers of this GetObjectMetadataRequest.
         :type access_control_request_headers: str
@@ -246,7 +246,7 @@ class GetObjectMetadataRequest:
     def x_obs_server_side_encryption_customer_algorithm(self):
         """Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataRequest.
 
-        SSE-C方式下使用该头域，该头域表示解密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm：AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        The decryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :return: The x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataRequest.
         :rtype: str
@@ -257,7 +257,7 @@ class GetObjectMetadataRequest:
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
         """Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataRequest.
 
-        SSE-C方式下使用该头域，该头域表示解密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm：AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        The decryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :param x_obs_server_side_encryption_customer_algorithm: The x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataRequest.
         :type x_obs_server_side_encryption_customer_algorithm: str
@@ -268,7 +268,7 @@ class GetObjectMetadataRequest:
     def x_obs_server_side_encryption_customer_key(self):
         """Gets the x_obs_server_side_encryption_customer_key of this GetObjectMetadataRequest.
 
-        SSE-C方式下使用该头域，该头域表示解密使用的密钥。  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        Decryption key used for SSE-C.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :return: The x_obs_server_side_encryption_customer_key of this GetObjectMetadataRequest.
         :rtype: str
@@ -279,7 +279,7 @@ class GetObjectMetadataRequest:
     def x_obs_server_side_encryption_customer_key(self, x_obs_server_side_encryption_customer_key):
         """Sets the x_obs_server_side_encryption_customer_key of this GetObjectMetadataRequest.
 
-        SSE-C方式下使用该头域，该头域表示解密使用的密钥。  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        Decryption key used for SSE-C.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :param x_obs_server_side_encryption_customer_key: The x_obs_server_side_encryption_customer_key of this GetObjectMetadataRequest.
         :type x_obs_server_side_encryption_customer_key: str
@@ -290,7 +290,7 @@ class GetObjectMetadataRequest:
     def x_obs_server_side_encryption_customer_key_md5(self):
         """Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  约束: 该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        MD5 value of the key used to encrypt objects in SSE-C mode. An MD5 value is used to ensure that there is no error during the key transmission.Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
         :return: The x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataRequest.
         :rtype: str
@@ -301,7 +301,7 @@ class GetObjectMetadataRequest:
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
         """Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  约束: 该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        MD5 value of the key used to encrypt objects in SSE-C mode. An MD5 value is used to ensure that there is no error during the key transmission.Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
         :param x_obs_server_side_encryption_customer_key_md5: The x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataRequest.
         :type x_obs_server_side_encryption_customer_key_md5: str
@@ -312,7 +312,7 @@ class GetObjectMetadataRequest:
     def success_action_redirect(self):
         """Gets the success_action_redirect of this GetObjectMetadataRequest.
 
-        此参数的值是一个URL，用于指定当此次请求操作成功响应后的重定向的地址。  如果此参数值有效且操作成功，响应码为303，Location头域由此参数以及桶名、对象名、对象的ETag组成。 如果此参数值无效，则OBS忽略此参数的作用，响应码为204，Location头域为对象地址。 
+        The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
 
         :return: The success_action_redirect of this GetObjectMetadataRequest.
         :rtype: str
@@ -323,7 +323,7 @@ class GetObjectMetadataRequest:
     def success_action_redirect(self, success_action_redirect):
         """Sets the success_action_redirect of this GetObjectMetadataRequest.
 
-        此参数的值是一个URL，用于指定当此次请求操作成功响应后的重定向的地址。  如果此参数值有效且操作成功，响应码为303，Location头域由此参数以及桶名、对象名、对象的ETag组成。 如果此参数值无效，则OBS忽略此参数的作用，响应码为204，Location头域为对象地址。 
+        The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
 
         :param success_action_redirect: The success_action_redirect of this GetObjectMetadataRequest.
         :type success_action_redirect: str
@@ -334,7 +334,7 @@ class GetObjectMetadataRequest:
     def x_obs_expires(self):
         """Gets the x_obs_expires of this GetObjectMetadataRequest.
 
-        表示对象的过期时间，单位是天。过期之后对象会被自动删除。（从对象最后修改时间开始计算）  此字段对于每个对象仅支持上传时配置，不支持后期通过修改元数据接口修改。  示例：x-obs-expires:3 
+        When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified.  This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
 
         :return: The x_obs_expires of this GetObjectMetadataRequest.
         :rtype: int
@@ -345,7 +345,7 @@ class GetObjectMetadataRequest:
     def x_obs_expires(self, x_obs_expires):
         """Sets the x_obs_expires of this GetObjectMetadataRequest.
 
-        表示对象的过期时间，单位是天。过期之后对象会被自动删除。（从对象最后修改时间开始计算）  此字段对于每个对象仅支持上传时配置，不支持后期通过修改元数据接口修改。  示例：x-obs-expires:3 
+        When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified.  This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
 
         :param x_obs_expires: The x_obs_expires of this GetObjectMetadataRequest.
         :type x_obs_expires: int

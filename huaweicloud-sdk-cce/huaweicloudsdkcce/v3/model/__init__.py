@@ -73,6 +73,7 @@ from huaweicloudsdkcce.v3.model.create_kubernetes_cluster_cert_request import Cr
 from huaweicloudsdkcce.v3.model.create_kubernetes_cluster_cert_response import CreateKubernetesClusterCertResponse
 from huaweicloudsdkcce.v3.model.create_node_pool_request import CreateNodePoolRequest
 from huaweicloudsdkcce.v3.model.create_node_pool_response import CreateNodePoolResponse
+from huaweicloudsdkcce.v3.model.create_node_pool_status import CreateNodePoolStatus
 from huaweicloudsdkcce.v3.model.create_node_request import CreateNodeRequest
 from huaweicloudsdkcce.v3.model.create_node_response import CreateNodeResponse
 from huaweicloudsdkcce.v3.model.create_partition_request import CreatePartitionRequest
@@ -98,6 +99,7 @@ from huaweicloudsdkcce.v3.model.delete_cluster_request import DeleteClusterReque
 from huaweicloudsdkcce.v3.model.delete_cluster_response import DeleteClusterResponse
 from huaweicloudsdkcce.v3.model.delete_node_pool_request import DeleteNodePoolRequest
 from huaweicloudsdkcce.v3.model.delete_node_pool_response import DeleteNodePoolResponse
+from huaweicloudsdkcce.v3.model.delete_node_pool_status import DeleteNodePoolStatus
 from huaweicloudsdkcce.v3.model.delete_node_request import DeleteNodeRequest
 from huaweicloudsdkcce.v3.model.delete_node_response import DeleteNodeResponse
 from huaweicloudsdkcce.v3.model.delete_release_request import DeleteReleaseRequest
@@ -185,6 +187,7 @@ from huaweicloudsdkcce.v3.model.node_pool_condition import NodePoolCondition
 from huaweicloudsdkcce.v3.model.node_pool_metadata import NodePoolMetadata
 from huaweicloudsdkcce.v3.model.node_pool_metadata_update import NodePoolMetadataUpdate
 from huaweicloudsdkcce.v3.model.node_pool_node_autoscaling import NodePoolNodeAutoscaling
+from huaweicloudsdkcce.v3.model.node_pool_resp import NodePoolResp
 from huaweicloudsdkcce.v3.model.node_pool_spec import NodePoolSpec
 from huaweicloudsdkcce.v3.model.node_pool_spec_update import NodePoolSpecUpdate
 from huaweicloudsdkcce.v3.model.node_pool_status import NodePoolStatus
@@ -339,6 +342,7 @@ from huaweicloudsdkcce.v3.model.update_node_pool_configuration_request import Up
 from huaweicloudsdkcce.v3.model.update_node_pool_configuration_response import UpdateNodePoolConfigurationResponse
 from huaweicloudsdkcce.v3.model.update_node_pool_request import UpdateNodePoolRequest
 from huaweicloudsdkcce.v3.model.update_node_pool_response import UpdateNodePoolResponse
+from huaweicloudsdkcce.v3.model.update_node_pool_status import UpdateNodePoolStatus
 from huaweicloudsdkcce.v3.model.update_node_request import UpdateNodeRequest
 from huaweicloudsdkcce.v3.model.update_node_response import UpdateNodeResponse
 from huaweicloudsdkcce.v3.model.update_partition_request import UpdatePartitionRequest

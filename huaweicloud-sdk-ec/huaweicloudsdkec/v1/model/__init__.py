@@ -8,6 +8,9 @@ from huaweicloudsdkec.v1.model.add_ecn_with_er_request import AddEcnWithErReques
 from huaweicloudsdkec.v1.model.add_ecn_with_er_response import AddEcnWithErResponse
 from huaweicloudsdkec.v1.model.add_ecn_with_ieg_request import AddEcnWithIegRequest
 from huaweicloudsdkec.v1.model.add_ecn_with_ieg_response import AddEcnWithIegResponse
+from huaweicloudsdkec.v1.model.add_ecn_with_vpc_request import AddEcnWithVpcRequest
+from huaweicloudsdkec.v1.model.add_ecn_with_vpc_request_body import AddEcnWithVpcRequestBody
+from huaweicloudsdkec.v1.model.add_ecn_with_vpc_response import AddEcnWithVpcResponse
 from huaweicloudsdkec.v1.model.add_vrrp_config_request import AddVrrpConfigRequest
 from huaweicloudsdkec.v1.model.add_vrrp_config_response import AddVrrpConfigResponse
 from huaweicloudsdkec.v1.model.change_ieg_password_request import ChangeIegPasswordRequest
@@ -29,6 +32,8 @@ from huaweicloudsdkec.v1.model.delete_ecn_with_er_request import DeleteEcnWithEr
 from huaweicloudsdkec.v1.model.delete_ecn_with_er_response import DeleteEcnWithErResponse
 from huaweicloudsdkec.v1.model.delete_ecn_with_ieg_request import DeleteEcnWithIegRequest
 from huaweicloudsdkec.v1.model.delete_ecn_with_ieg_response import DeleteEcnWithIegResponse
+from huaweicloudsdkec.v1.model.delete_ecn_with_vpc_request import DeleteEcnWithVpcRequest
+from huaweicloudsdkec.v1.model.delete_ecn_with_vpc_response import DeleteEcnWithVpcResponse
 from huaweicloudsdkec.v1.model.delete_equipment_lan_config_request import DeleteEquipmentLanConfigRequest
 from huaweicloudsdkec.v1.model.delete_equipment_lan_config_response import DeleteEquipmentLanConfigResponse
 from huaweicloudsdkec.v1.model.delete_equipment_request import DeleteEquipmentRequest
@@ -42,6 +47,7 @@ from huaweicloudsdkec.v1.model.ecn_ieg_item import EcnIegItem
 from huaweicloudsdkec.v1.model.ecn_item import EcnItem
 from huaweicloudsdkec.v1.model.ecn_with_er_request import EcnWithErRequest
 from huaweicloudsdkec.v1.model.ecn_with_ieg_request import EcnWithIegRequest
+from huaweicloudsdkec.v1.model.ecn_with_vpc_item import EcnWithVpcItem
 from huaweicloudsdkec.v1.model.equipment_activate import EquipmentActivate
 from huaweicloudsdkec.v1.model.equipment_dns_item import EquipmentDnsItem
 from huaweicloudsdkec.v1.model.equipment_esn import EquipmentEsn
@@ -63,6 +69,8 @@ from huaweicloudsdkec.v1.model.list_ecn_with_er_request import ListEcnWithErRequ
 from huaweicloudsdkec.v1.model.list_ecn_with_er_response import ListEcnWithErResponse
 from huaweicloudsdkec.v1.model.list_ecn_with_ieg_request import ListEcnWithIegRequest
 from huaweicloudsdkec.v1.model.list_ecn_with_ieg_response import ListEcnWithIegResponse
+from huaweicloudsdkec.v1.model.list_ecn_with_vpc_request import ListEcnWithVpcRequest
+from huaweicloudsdkec.v1.model.list_ecn_with_vpc_response import ListEcnWithVpcResponse
 from huaweicloudsdkec.v1.model.list_equipment_interface_name_request import ListEquipmentInterfaceNameRequest
 from huaweicloudsdkec.v1.model.list_equipment_interface_name_response import ListEquipmentInterfaceNameResponse
 from huaweicloudsdkec.v1.model.list_equipments_request import ListEquipmentsRequest
@@ -110,6 +118,9 @@ from huaweicloudsdkec.v1.model.update_ecn_access_point_response import UpdateEcn
 from huaweicloudsdkec.v1.model.update_ecn_request import UpdateEcnRequest
 from huaweicloudsdkec.v1.model.update_ecn_request_body import UpdateEcnRequestBody
 from huaweicloudsdkec.v1.model.update_ecn_response import UpdateEcnResponse
+from huaweicloudsdkec.v1.model.update_ecn_with_vpc_request import UpdateEcnWithVpcRequest
+from huaweicloudsdkec.v1.model.update_ecn_with_vpc_request_body import UpdateEcnWithVpcRequestBody
+from huaweicloudsdkec.v1.model.update_ecn_with_vpc_response import UpdateEcnWithVpcResponse
 from huaweicloudsdkec.v1.model.update_equipment_dns_info_request import UpdateEquipmentDnsInfoRequest
 from huaweicloudsdkec.v1.model.update_equipment_dns_info_response import UpdateEquipmentDnsInfoResponse
 from huaweicloudsdkec.v1.model.update_equipment_esn_request import UpdateEquipmentEsnRequest

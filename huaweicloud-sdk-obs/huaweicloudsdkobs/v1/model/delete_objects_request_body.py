@@ -35,9 +35,9 @@ class DeleteObjectsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param quiet: 用于指定使用quiet模式，只返回删除失败的对象结果；如果有此字段，则必被置为True，如果为False则被系统忽略掉。 
+        :param quiet: Specifies the **quiet** mode that makes OBS only return the list of objects whose deletion failed. This field is valid when set to **true**, or OBS ignores it.
         :type quiet: bool
-        :param encoding_type: 用于指定待删除的对象Key和响应中的对象Key的编码类型。如果Key包含xml 1.0标准不支持的控制字符，可通过设置该元素指定对象Key的编码类型。 
+        :param encoding_type: Specifies the encoding type of the object key to delete and that in the response. If an object key contains control characters that are not supported by XML 1.0 standards, you can set this element to specify how the object key is encoded.
         :type encoding_type: str
         :param object: 
         :type object: list[:class:`huaweicloudsdkobs.v1.DeleteObject`]
@@ -61,7 +61,7 @@ class DeleteObjectsRequestBody:
     def quiet(self):
         """Gets the quiet of this DeleteObjectsRequestBody.
 
-        用于指定使用quiet模式，只返回删除失败的对象结果；如果有此字段，则必被置为True，如果为False则被系统忽略掉。 
+        Specifies the **quiet** mode that makes OBS only return the list of objects whose deletion failed. This field is valid when set to **true**, or OBS ignores it.
 
         :return: The quiet of this DeleteObjectsRequestBody.
         :rtype: bool
@@ -72,7 +72,7 @@ class DeleteObjectsRequestBody:
     def quiet(self, quiet):
         """Sets the quiet of this DeleteObjectsRequestBody.
 
-        用于指定使用quiet模式，只返回删除失败的对象结果；如果有此字段，则必被置为True，如果为False则被系统忽略掉。 
+        Specifies the **quiet** mode that makes OBS only return the list of objects whose deletion failed. This field is valid when set to **true**, or OBS ignores it.
 
         :param quiet: The quiet of this DeleteObjectsRequestBody.
         :type quiet: bool
@@ -83,7 +83,7 @@ class DeleteObjectsRequestBody:
     def encoding_type(self):
         """Gets the encoding_type of this DeleteObjectsRequestBody.
 
-        用于指定待删除的对象Key和响应中的对象Key的编码类型。如果Key包含xml 1.0标准不支持的控制字符，可通过设置该元素指定对象Key的编码类型。 
+        Specifies the encoding type of the object key to delete and that in the response. If an object key contains control characters that are not supported by XML 1.0 standards, you can set this element to specify how the object key is encoded.
 
         :return: The encoding_type of this DeleteObjectsRequestBody.
         :rtype: str
@@ -94,7 +94,7 @@ class DeleteObjectsRequestBody:
     def encoding_type(self, encoding_type):
         """Sets the encoding_type of this DeleteObjectsRequestBody.
 
-        用于指定待删除的对象Key和响应中的对象Key的编码类型。如果Key包含xml 1.0标准不支持的控制字符，可通过设置该元素指定对象Key的编码类型。 
+        Specifies the encoding type of the object key to delete and that in the response. If an object key contains control characters that are not supported by XML 1.0 standards, you can set this element to specify how the object key is encoded.
 
         :param encoding_type: The encoding_type of this DeleteObjectsRequestBody.
         :type encoding_type: str

@@ -910,7 +910,7 @@ class KafkaClient(Client):
     def create_post_paid_instance(self, request):
         """创建实例
 
-        [创建按需计费类型的Kafka实例。](tag:sbc,hk_sbc,cmcc)[创建kafka实例。](tag:otc)
+        创建按需计费类型的Kafka实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2437,7 +2437,7 @@ class KafkaClient(Client):
     def _reset_message_offset_with_engine_http_info(cls, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group}/reset-message-offset",
+            "resource_path": "/v2/kafka/{project_id}/instances/{instance_id}/groups/{group}/reset-message-offset",
             "request_type": request.__class__.__name__,
             "response_type": "ResetMessageOffsetWithEngineResponse"
             }
@@ -2449,8 +2449,6 @@ class KafkaClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'engine' in local_var_params:
-            path_params['engine'] = local_var_params['engine']
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
         if 'group' in local_var_params:

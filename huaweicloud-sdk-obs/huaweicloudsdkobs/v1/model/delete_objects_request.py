@@ -39,13 +39,13 @@ class DeleteObjectsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param content_md5: 按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 
+        :param content_md5: Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.
         :type content_md5: str
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param bucket_name: 请求的桶名称。 
+        :param bucket_name: Name of the requested bucket
         :type bucket_name: str
-        :param delete: delete表示请求批量删除对象API。 
+        :param delete: Indicates the batch deletion API.
         :type delete: str
         :param body: Body of the DeleteObjectsRequest
         :type body: :class:`huaweicloudsdkobs.v1.DeleteObjectsRequestBody`
@@ -72,7 +72,7 @@ class DeleteObjectsRequest:
     def content_md5(self):
         """Gets the content_md5 of this DeleteObjectsRequest.
 
-        按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 
+        Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.
 
         :return: The content_md5 of this DeleteObjectsRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class DeleteObjectsRequest:
     def content_md5(self, content_md5):
         """Sets the content_md5 of this DeleteObjectsRequest.
 
-        按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串。 
+        Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.
 
         :param content_md5: The content_md5 of this DeleteObjectsRequest.
         :type content_md5: str
@@ -94,7 +94,7 @@ class DeleteObjectsRequest:
     def date(self):
         """Gets the date of this DeleteObjectsRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this DeleteObjectsRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class DeleteObjectsRequest:
     def date(self, date):
         """Sets the date of this DeleteObjectsRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this DeleteObjectsRequest.
         :type date: str
@@ -116,7 +116,7 @@ class DeleteObjectsRequest:
     def bucket_name(self):
         """Gets the bucket_name of this DeleteObjectsRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :return: The bucket_name of this DeleteObjectsRequest.
         :rtype: str
@@ -127,7 +127,7 @@ class DeleteObjectsRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this DeleteObjectsRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :param bucket_name: The bucket_name of this DeleteObjectsRequest.
         :type bucket_name: str
@@ -138,7 +138,7 @@ class DeleteObjectsRequest:
     def delete(self):
         """Gets the delete of this DeleteObjectsRequest.
 
-        delete表示请求批量删除对象API。 
+        Indicates the batch deletion API.
 
         :return: The delete of this DeleteObjectsRequest.
         :rtype: str
@@ -149,7 +149,7 @@ class DeleteObjectsRequest:
     def delete(self, delete):
         """Sets the delete of this DeleteObjectsRequest.
 
-        delete表示请求批量删除对象API。 
+        Indicates the batch deletion API.
 
         :param delete: The delete of this DeleteObjectsRequest.
         :type delete: str

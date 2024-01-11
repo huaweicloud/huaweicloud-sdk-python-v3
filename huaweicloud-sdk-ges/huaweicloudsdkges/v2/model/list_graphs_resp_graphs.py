@@ -59,7 +59,8 @@ class ListGraphsRespGraphs:
         'origin_graph_size_type_index': 'str',
         'expand_time': 'str',
         'resize_time': 'str',
-        'enable_multi_label': 'bool'
+        'enable_multi_label': 'bool',
+        'capacity_ratio': 'int'
     }
 
     attribute_map = {
@@ -105,10 +106,11 @@ class ListGraphsRespGraphs:
         'origin_graph_size_type_index': 'origin_graph_size_type_index',
         'expand_time': 'expand_time',
         'resize_time': 'resize_time',
-        'enable_multi_label': 'enable_multi_label'
+        'enable_multi_label': 'enable_multi_label',
+        'capacity_ratio': 'capacity_ratio'
     }
 
-    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None, origin_graph_size_type_index=None, expand_time=None, resize_time=None, enable_multi_label=None):
+    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None, origin_graph_size_type_index=None, expand_time=None, resize_time=None, enable_multi_label=None, capacity_ratio=None):
         """ListGraphsRespGraphs
 
         The model defined in huaweicloud sdk
@@ -199,6 +201,8 @@ class ListGraphsRespGraphs:
         :type resize_time: str
         :param enable_multi_label: 是否启用多标签。
         :type enable_multi_label: bool
+        :param capacity_ratio: 图的容量倍率。只有持久化版百亿规格图支持该参数，该参数从2.3.18版本后开始支持。
+        :type capacity_ratio: int
         """
         
         
@@ -246,6 +250,7 @@ class ListGraphsRespGraphs:
         self._expand_time = None
         self._resize_time = None
         self._enable_multi_label = None
+        self._capacity_ratio = None
         self.discriminator = None
 
         if id is not None:
@@ -334,6 +339,8 @@ class ListGraphsRespGraphs:
             self.resize_time = resize_time
         if enable_multi_label is not None:
             self.enable_multi_label = enable_multi_label
+        if capacity_ratio is not None:
+            self.capacity_ratio = capacity_ratio
 
     @property
     def id(self):
@@ -1276,6 +1283,28 @@ class ListGraphsRespGraphs:
         :type enable_multi_label: bool
         """
         self._enable_multi_label = enable_multi_label
+
+    @property
+    def capacity_ratio(self):
+        """Gets the capacity_ratio of this ListGraphsRespGraphs.
+
+        图的容量倍率。只有持久化版百亿规格图支持该参数，该参数从2.3.18版本后开始支持。
+
+        :return: The capacity_ratio of this ListGraphsRespGraphs.
+        :rtype: int
+        """
+        return self._capacity_ratio
+
+    @capacity_ratio.setter
+    def capacity_ratio(self, capacity_ratio):
+        """Sets the capacity_ratio of this ListGraphsRespGraphs.
+
+        图的容量倍率。只有持久化版百亿规格图支持该参数，该参数从2.3.18版本后开始支持。
+
+        :param capacity_ratio: The capacity_ratio of this ListGraphsRespGraphs.
+        :type capacity_ratio: int
+        """
+        self._capacity_ratio = capacity_ratio
 
     def to_dict(self):
         """Returns the model properties as a dict"""

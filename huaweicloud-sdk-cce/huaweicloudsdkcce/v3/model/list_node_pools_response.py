@@ -20,7 +20,7 @@ class ListNodePoolsResponse(SdkResponse):
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'items': 'list[NodePool]'
+        'items': 'list[NodePoolResp]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListNodePoolsResponse(SdkResponse):
         :param api_version: API version. The value is fixed to v3.
         :type api_version: str
         :param items: /
-        :type items: list[:class:`huaweicloudsdkcce.v3.NodePool`]
+        :type items: list[:class:`huaweicloudsdkcce.v3.NodePoolResp`]
         """
         
         super(ListNodePoolsResponse, self).__init__()
@@ -107,7 +107,7 @@ class ListNodePoolsResponse(SdkResponse):
         /
 
         :return: The items of this ListNodePoolsResponse.
-        :rtype: list[:class:`huaweicloudsdkcce.v3.NodePool`]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.NodePoolResp`]
         """
         return self._items
 
@@ -118,7 +118,7 @@ class ListNodePoolsResponse(SdkResponse):
         /
 
         :param items: The items of this ListNodePoolsResponse.
-        :type items: list[:class:`huaweicloudsdkcce.v3.NodePool`]
+        :type items: list[:class:`huaweicloudsdkcce.v3.NodePoolResp`]
         """
         self._items = items
 

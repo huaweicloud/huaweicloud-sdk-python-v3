@@ -4947,6 +4947,223 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def import_catalogs_async(self, request):
+        """导入主题
+
+        用于导入主题
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportCatalogs
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ImportCatalogsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportCatalogsResponse`
+        """
+        http_info = self._import_catalogs_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_catalogs_async_invoker(self, request):
+        http_info = self._import_catalogs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_catalogs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/catalogs/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportCatalogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'action_id' in local_var_params:
+            query_params.append(('action-id', local_var_params['action_id']))
+        if 'skip_exist' in local_var_params:
+            query_params.append(('skip-exist', local_var_params['skip_exist']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_lineage_async(self, request):
+        """血缘导入
+
+        血缘查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportLineage
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ImportLineageRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportLineageResponse`
+        """
+        http_info = self._import_lineage_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_lineage_async_invoker(self, request):
+        http_info = self._import_lineage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_lineage_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/lineage/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportLineageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_models_async(self, request):
+        """导入模型，关系建模，维度建模，码表，业务指标以及流程架构
+
+        导入模型，关系建模，维度建模，码表，业务指标以及流程架构
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportModels
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ImportModelsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportModelsResponse`
+        """
+        http_info = self._import_models_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_models_async_invoker(self, request):
+        http_info = self._import_models_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_models_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/models/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportModelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'action_id' in local_var_params:
+            query_params.append(('action-id', local_var_params['action_id']))
+        if 'model_id' in local_var_params:
+            query_params.append(('model_id', local_var_params['model_id']))
+        if 'directory_id' in local_var_params:
+            query_params.append(('directory_id', local_var_params['directory_id']))
+        if 'skip_exist' in local_var_params:
+            query_params.append(('skip-exist', local_var_params['skip_exist']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def import_result_async(self, request):
         """查询导入结果
 
@@ -5296,6 +5513,98 @@ class DataArtsStudioAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_tables_async(self, request):
+        """查询多种类型的表信息
+
+        从信息架构中查询多种类型的表信息，包括逻辑实体、物理表、维度表、事实表、汇总表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllTables
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListAllTablesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListAllTablesResponse`
+        """
+        http_info = self._list_all_tables_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_tables_async_invoker(self, request):
+        http_info = self._list_all_tables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_tables_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/all-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllTablesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'create_by' in local_var_params:
+            query_params.append(('create_by', local_var_params['create_by']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'sync_status' in local_var_params:
+            query_params.append(('sync_status', local_var_params['sync_status']))
+        if 'sync_key' in local_var_params:
+            query_params.append(('sync_key', local_var_params['sync_key']))
+            collection_formats['sync_key'] = 'csv'
+        if 'biz_catalog_id' in local_var_params:
+            query_params.append(('biz_catalog_id', local_var_params['biz_catalog_id']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'biz_catalog_id_list' in local_var_params:
+            query_params.append(('biz_catalog_id_list', local_var_params['biz_catalog_id_list']))
+            collection_formats['biz_catalog_id_list'] = 'csv'
+        if 'biz_type_list' in local_var_params:
+            query_params.append(('biz_type_list', local_var_params['biz_type_list']))
+            collection_formats['biz_type_list'] = 'multi'
 
         header_params = {}
         if 'workspace' in local_var_params:

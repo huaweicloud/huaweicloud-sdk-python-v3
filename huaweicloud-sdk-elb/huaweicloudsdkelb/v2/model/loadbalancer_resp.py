@@ -34,7 +34,10 @@ class LoadbalancerResp:
         'updated_at': 'str',
         'enterprise_project_id': 'str',
         'project_id': 'str',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'publicips': 'list[PublicIpInfo]',
+        'charge_mode': 'str',
+        'frozen_scene': 'str'
     }
 
     attribute_map = {
@@ -55,10 +58,13 @@ class LoadbalancerResp:
         'updated_at': 'updated_at',
         'enterprise_project_id': 'enterprise_project_id',
         'project_id': 'project_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'publicips': 'publicips',
+        'charge_mode': 'charge_mode',
+        'frozen_scene': 'frozen_scene'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_port_id=None, vip_address=None, listeners=None, pools=None, provider=None, operating_status=None, provisioning_status=None, admin_state_up=None, created_at=None, updated_at=None, enterprise_project_id=None, project_id=None, tags=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_port_id=None, vip_address=None, listeners=None, pools=None, provider=None, operating_status=None, provisioning_status=None, admin_state_up=None, created_at=None, updated_at=None, enterprise_project_id=None, project_id=None, tags=None, publicips=None, charge_mode=None, frozen_scene=None):
         """LoadbalancerResp
 
         The model defined in huaweicloud sdk
@@ -99,6 +105,12 @@ class LoadbalancerResp:
         :type project_id: str
         :param tags: 负载均衡器的标签列表
         :type tags: list[str]
+        :param publicips: 负载均衡器绑定的公网IP。只支持绑定一个公网IP。
+        :type publicips: list[:class:`huaweicloudsdkelb.v2.PublicIpInfo`]
+        :param charge_mode: 收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：不影响弹性扩缩容实例、包周期实例的计费方式
+        :type charge_mode: str
+        :param frozen_scene: 负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值：  POLICE：公安冻结场景。 ILLEGAL：违规冻结场景。 VERIFY：客户未实名认证冻结场景。 PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 AREAR：欠费冻结场景。
+        :type frozen_scene: str
         """
         
         
@@ -121,6 +133,9 @@ class LoadbalancerResp:
         self._enterprise_project_id = None
         self._project_id = None
         self._tags = None
+        self._publicips = None
+        self._charge_mode = None
+        self._frozen_scene = None
         self.discriminator = None
 
         self.id = id
@@ -141,6 +156,10 @@ class LoadbalancerResp:
         self.enterprise_project_id = enterprise_project_id
         self.project_id = project_id
         self.tags = tags
+        self.publicips = publicips
+        self.charge_mode = charge_mode
+        if frozen_scene is not None:
+            self.frozen_scene = frozen_scene
 
     @property
     def id(self):
@@ -537,6 +556,72 @@ class LoadbalancerResp:
         :type tags: list[str]
         """
         self._tags = tags
+
+    @property
+    def publicips(self):
+        """Gets the publicips of this LoadbalancerResp.
+
+        负载均衡器绑定的公网IP。只支持绑定一个公网IP。
+
+        :return: The publicips of this LoadbalancerResp.
+        :rtype: list[:class:`huaweicloudsdkelb.v2.PublicIpInfo`]
+        """
+        return self._publicips
+
+    @publicips.setter
+    def publicips(self, publicips):
+        """Sets the publicips of this LoadbalancerResp.
+
+        负载均衡器绑定的公网IP。只支持绑定一个公网IP。
+
+        :param publicips: The publicips of this LoadbalancerResp.
+        :type publicips: list[:class:`huaweicloudsdkelb.v2.PublicIpInfo`]
+        """
+        self._publicips = publicips
+
+    @property
+    def charge_mode(self):
+        """Gets the charge_mode of this LoadbalancerResp.
+
+        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：不影响弹性扩缩容实例、包周期实例的计费方式
+
+        :return: The charge_mode of this LoadbalancerResp.
+        :rtype: str
+        """
+        return self._charge_mode
+
+    @charge_mode.setter
+    def charge_mode(self, charge_mode):
+        """Sets the charge_mode of this LoadbalancerResp.
+
+        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：不影响弹性扩缩容实例、包周期实例的计费方式
+
+        :param charge_mode: The charge_mode of this LoadbalancerResp.
+        :type charge_mode: str
+        """
+        self._charge_mode = charge_mode
+
+    @property
+    def frozen_scene(self):
+        """Gets the frozen_scene of this LoadbalancerResp.
+
+        负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值：  POLICE：公安冻结场景。 ILLEGAL：违规冻结场景。 VERIFY：客户未实名认证冻结场景。 PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 AREAR：欠费冻结场景。
+
+        :return: The frozen_scene of this LoadbalancerResp.
+        :rtype: str
+        """
+        return self._frozen_scene
+
+    @frozen_scene.setter
+    def frozen_scene(self, frozen_scene):
+        """Sets the frozen_scene of this LoadbalancerResp.
+
+        负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值：  POLICE：公安冻结场景。 ILLEGAL：违规冻结场景。 VERIFY：客户未实名认证冻结场景。 PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 AREAR：欠费冻结场景。
+
+        :param frozen_scene: The frozen_scene of this LoadbalancerResp.
+        :type frozen_scene: str
+        """
+        self._frozen_scene = frozen_scene
 
     def to_dict(self):
         """Returns the model properties as a dict"""

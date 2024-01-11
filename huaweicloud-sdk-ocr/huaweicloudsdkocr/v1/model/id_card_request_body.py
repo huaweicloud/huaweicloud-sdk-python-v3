@@ -24,7 +24,13 @@ class IdCardRequestBody:
         'return_text_location': 'bool',
         'detect_reproduce': 'bool',
         'detect_copy': 'bool',
-        'return_portrait_location': 'bool'
+        'return_portrait_location': 'bool',
+        'detect_tampering': 'bool',
+        'detect_border_integrity': 'bool',
+        'detect_blocking_within_border': 'bool',
+        'detect_blur': 'bool',
+        'detect_interim': 'bool',
+        'detect_glare': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +41,16 @@ class IdCardRequestBody:
         'return_text_location': 'return_text_location',
         'detect_reproduce': 'detect_reproduce',
         'detect_copy': 'detect_copy',
-        'return_portrait_location': 'return_portrait_location'
+        'return_portrait_location': 'return_portrait_location',
+        'detect_tampering': 'detect_tampering',
+        'detect_border_integrity': 'detect_border_integrity',
+        'detect_blocking_within_border': 'detect_blocking_within_border',
+        'detect_blur': 'detect_blur',
+        'detect_interim': 'detect_interim',
+        'detect_glare': 'detect_glare'
     }
 
-    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None, detect_copy=None, return_portrait_location=None):
+    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None, detect_copy=None, return_portrait_location=None, detect_tampering=None, detect_border_integrity=None, detect_blocking_within_border=None, detect_blur=None, detect_interim=None, detect_glare=None):
         """IdCardRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,18 +59,30 @@ class IdCardRequestBody:
         :type image: str
         :param url: 与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
         :type url: str
-        :param side:  - front：身份证正面。 - back：身份证背面。  &gt; 说明： 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
+        :param side:  - front：身份证人像面。 - back：身份证国徽面。 - double_side：身份证双面信息 &gt; 说明： 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
         :type side: str
         :param return_verification: 返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不返回校验信息 
         :type return_verification: bool
         :param return_text_location: 识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
         :type return_text_location: bool
-        :param detect_reproduce: 返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否经过翻拍  - false：不返回身份证图像是否经过翻拍 
+        :param detect_reproduce: 返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否经过翻拍功能  - false：关闭判断身份证图像是否经过翻拍功能 
         :type detect_reproduce: bool
-        :param detect_copy: 返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件 
+        :param detect_copy: 返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否是复印件功能  - false : 关闭身份证图像是否是复印件功能 
         :type detect_copy: bool
         :param return_portrait_location: 返回头像位置信息的开关，默认false，可选值如下所示：  - true ：开启返回头像位置信息的功能 - false : 关闭返回头像位置信息的功能 
         :type return_portrait_location: bool
+        :param detect_tampering: 身份证图像PS告警功能开关，默认false，可选值如下：  - true ：开启身份证图像PS告警功能 - false : 关闭身份证图像告警功能 
+        :type detect_tampering: bool
+        :param detect_border_integrity: 身份证图像边框完整性告警功能开关，默认false，可选值如下：  - true ：打开身份证图像边框完整性告警功能 - false : 关闭身份证图像边框完整性告警功能 
+        :type detect_border_integrity: bool
+        :param detect_blocking_within_border: 身份证图像边框内部是否有异物遮挡的告警功能开关，默认false，可选值如下：  - true ：开启身份证边框内部异物遮挡告警功能 - false : 关闭身份证边框内部异物遮挡告警功能 
+        :type detect_blocking_within_border: bool
+        :param detect_blur: 身份证图像模糊告警功能的开关，默认false，可选值如下：  - true ：开启身份证图像模糊告警功能 - false : 关闭身份证图像模糊告警功能 
+        :type detect_blur: bool
+        :param detect_interim: 临时身份证告警功能开关，默认false，可选值如下：  - true ：开启临时身份证告警功能 - false : 关闭临时身份证告警功能 
+        :type detect_interim: bool
+        :param detect_glare: 身份证反光告警功能开关，默认false，可选值如下：  - true ：开启身份证反光告警功能  - false : 关闭身份证反光告警功能 
+        :type detect_glare: bool
         """
         
         
@@ -71,6 +95,12 @@ class IdCardRequestBody:
         self._detect_reproduce = None
         self._detect_copy = None
         self._return_portrait_location = None
+        self._detect_tampering = None
+        self._detect_border_integrity = None
+        self._detect_blocking_within_border = None
+        self._detect_blur = None
+        self._detect_interim = None
+        self._detect_glare = None
         self.discriminator = None
 
         if image is not None:
@@ -89,6 +119,18 @@ class IdCardRequestBody:
             self.detect_copy = detect_copy
         if return_portrait_location is not None:
             self.return_portrait_location = return_portrait_location
+        if detect_tampering is not None:
+            self.detect_tampering = detect_tampering
+        if detect_border_integrity is not None:
+            self.detect_border_integrity = detect_border_integrity
+        if detect_blocking_within_border is not None:
+            self.detect_blocking_within_border = detect_blocking_within_border
+        if detect_blur is not None:
+            self.detect_blur = detect_blur
+        if detect_interim is not None:
+            self.detect_interim = detect_interim
+        if detect_glare is not None:
+            self.detect_glare = detect_glare
 
     @property
     def image(self):
@@ -138,7 +180,7 @@ class IdCardRequestBody:
     def side(self):
         """Gets the side of this IdCardRequestBody.
 
-         - front：身份证正面。 - back：身份证背面。  > 说明： 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
+         - front：身份证人像面。 - back：身份证国徽面。 - double_side：身份证双面信息 > 说明： 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
 
         :return: The side of this IdCardRequestBody.
         :rtype: str
@@ -149,7 +191,7 @@ class IdCardRequestBody:
     def side(self, side):
         """Sets the side of this IdCardRequestBody.
 
-         - front：身份证正面。 - back：身份证背面。  > 说明： 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
+         - front：身份证人像面。 - back：身份证国徽面。 - double_side：身份证双面信息 > 说明： 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
 
         :param side: The side of this IdCardRequestBody.
         :type side: str
@@ -204,7 +246,7 @@ class IdCardRequestBody:
     def detect_reproduce(self):
         """Gets the detect_reproduce of this IdCardRequestBody.
 
-        返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否经过翻拍  - false：不返回身份证图像是否经过翻拍 
+        返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否经过翻拍功能  - false：关闭判断身份证图像是否经过翻拍功能 
 
         :return: The detect_reproduce of this IdCardRequestBody.
         :rtype: bool
@@ -215,7 +257,7 @@ class IdCardRequestBody:
     def detect_reproduce(self, detect_reproduce):
         """Sets the detect_reproduce of this IdCardRequestBody.
 
-        返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否经过翻拍  - false：不返回身份证图像是否经过翻拍 
+        返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否经过翻拍功能  - false：关闭判断身份证图像是否经过翻拍功能 
 
         :param detect_reproduce: The detect_reproduce of this IdCardRequestBody.
         :type detect_reproduce: bool
@@ -226,7 +268,7 @@ class IdCardRequestBody:
     def detect_copy(self):
         """Gets the detect_copy of this IdCardRequestBody.
 
-        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件 
+        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否是复印件功能  - false : 关闭身份证图像是否是复印件功能 
 
         :return: The detect_copy of this IdCardRequestBody.
         :rtype: bool
@@ -237,7 +279,7 @@ class IdCardRequestBody:
     def detect_copy(self, detect_copy):
         """Sets the detect_copy of this IdCardRequestBody.
 
-        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件 
+        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否是复印件功能  - false : 关闭身份证图像是否是复印件功能 
 
         :param detect_copy: The detect_copy of this IdCardRequestBody.
         :type detect_copy: bool
@@ -265,6 +307,138 @@ class IdCardRequestBody:
         :type return_portrait_location: bool
         """
         self._return_portrait_location = return_portrait_location
+
+    @property
+    def detect_tampering(self):
+        """Gets the detect_tampering of this IdCardRequestBody.
+
+        身份证图像PS告警功能开关，默认false，可选值如下：  - true ：开启身份证图像PS告警功能 - false : 关闭身份证图像告警功能 
+
+        :return: The detect_tampering of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_tampering
+
+    @detect_tampering.setter
+    def detect_tampering(self, detect_tampering):
+        """Sets the detect_tampering of this IdCardRequestBody.
+
+        身份证图像PS告警功能开关，默认false，可选值如下：  - true ：开启身份证图像PS告警功能 - false : 关闭身份证图像告警功能 
+
+        :param detect_tampering: The detect_tampering of this IdCardRequestBody.
+        :type detect_tampering: bool
+        """
+        self._detect_tampering = detect_tampering
+
+    @property
+    def detect_border_integrity(self):
+        """Gets the detect_border_integrity of this IdCardRequestBody.
+
+        身份证图像边框完整性告警功能开关，默认false，可选值如下：  - true ：打开身份证图像边框完整性告警功能 - false : 关闭身份证图像边框完整性告警功能 
+
+        :return: The detect_border_integrity of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_border_integrity
+
+    @detect_border_integrity.setter
+    def detect_border_integrity(self, detect_border_integrity):
+        """Sets the detect_border_integrity of this IdCardRequestBody.
+
+        身份证图像边框完整性告警功能开关，默认false，可选值如下：  - true ：打开身份证图像边框完整性告警功能 - false : 关闭身份证图像边框完整性告警功能 
+
+        :param detect_border_integrity: The detect_border_integrity of this IdCardRequestBody.
+        :type detect_border_integrity: bool
+        """
+        self._detect_border_integrity = detect_border_integrity
+
+    @property
+    def detect_blocking_within_border(self):
+        """Gets the detect_blocking_within_border of this IdCardRequestBody.
+
+        身份证图像边框内部是否有异物遮挡的告警功能开关，默认false，可选值如下：  - true ：开启身份证边框内部异物遮挡告警功能 - false : 关闭身份证边框内部异物遮挡告警功能 
+
+        :return: The detect_blocking_within_border of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_blocking_within_border
+
+    @detect_blocking_within_border.setter
+    def detect_blocking_within_border(self, detect_blocking_within_border):
+        """Sets the detect_blocking_within_border of this IdCardRequestBody.
+
+        身份证图像边框内部是否有异物遮挡的告警功能开关，默认false，可选值如下：  - true ：开启身份证边框内部异物遮挡告警功能 - false : 关闭身份证边框内部异物遮挡告警功能 
+
+        :param detect_blocking_within_border: The detect_blocking_within_border of this IdCardRequestBody.
+        :type detect_blocking_within_border: bool
+        """
+        self._detect_blocking_within_border = detect_blocking_within_border
+
+    @property
+    def detect_blur(self):
+        """Gets the detect_blur of this IdCardRequestBody.
+
+        身份证图像模糊告警功能的开关，默认false，可选值如下：  - true ：开启身份证图像模糊告警功能 - false : 关闭身份证图像模糊告警功能 
+
+        :return: The detect_blur of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_blur
+
+    @detect_blur.setter
+    def detect_blur(self, detect_blur):
+        """Sets the detect_blur of this IdCardRequestBody.
+
+        身份证图像模糊告警功能的开关，默认false，可选值如下：  - true ：开启身份证图像模糊告警功能 - false : 关闭身份证图像模糊告警功能 
+
+        :param detect_blur: The detect_blur of this IdCardRequestBody.
+        :type detect_blur: bool
+        """
+        self._detect_blur = detect_blur
+
+    @property
+    def detect_interim(self):
+        """Gets the detect_interim of this IdCardRequestBody.
+
+        临时身份证告警功能开关，默认false，可选值如下：  - true ：开启临时身份证告警功能 - false : 关闭临时身份证告警功能 
+
+        :return: The detect_interim of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_interim
+
+    @detect_interim.setter
+    def detect_interim(self, detect_interim):
+        """Sets the detect_interim of this IdCardRequestBody.
+
+        临时身份证告警功能开关，默认false，可选值如下：  - true ：开启临时身份证告警功能 - false : 关闭临时身份证告警功能 
+
+        :param detect_interim: The detect_interim of this IdCardRequestBody.
+        :type detect_interim: bool
+        """
+        self._detect_interim = detect_interim
+
+    @property
+    def detect_glare(self):
+        """Gets the detect_glare of this IdCardRequestBody.
+
+        身份证反光告警功能开关，默认false，可选值如下：  - true ：开启身份证反光告警功能  - false : 关闭身份证反光告警功能 
+
+        :return: The detect_glare of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_glare
+
+    @detect_glare.setter
+    def detect_glare(self, detect_glare):
+        """Sets the detect_glare of this IdCardRequestBody.
+
+        身份证反光告警功能开关，默认false，可选值如下：  - true ：开启身份证反光告警功能  - false : 关闭身份证反光告警功能 
+
+        :param detect_glare: The detect_glare of this IdCardRequestBody.
+        :type detect_glare: bool
+        """
+        self._detect_glare = detect_glare
 
     def to_dict(self):
         """Returns the model properties as a dict"""

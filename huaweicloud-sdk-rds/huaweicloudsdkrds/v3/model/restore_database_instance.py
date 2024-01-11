@@ -19,16 +19,18 @@ class RestoreDatabaseInstance:
     openapi_types = {
         'restore_time': 'int',
         'instance_id': 'str',
+        'is_fast_restore': 'bool',
         'databases': 'list[RestoreDatabaseInfo]'
     }
 
     attribute_map = {
         'restore_time': 'restore_time',
         'instance_id': 'instance_id',
+        'is_fast_restore': 'is_fast_restore',
         'databases': 'databases'
     }
 
-    def __init__(self, restore_time=None, instance_id=None, databases=None):
+    def __init__(self, restore_time=None, instance_id=None, is_fast_restore=None, databases=None):
         """RestoreDatabaseInstance
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class RestoreDatabaseInstance:
         :type restore_time: int
         :param instance_id: 实例ID
         :type instance_id: str
+        :param is_fast_restore: 是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
+        :type is_fast_restore: bool
         :param databases: 库信息
         :type databases: list[:class:`huaweicloudsdkrds.v3.RestoreDatabaseInfo`]
         """
@@ -45,11 +49,14 @@ class RestoreDatabaseInstance:
 
         self._restore_time = None
         self._instance_id = None
+        self._is_fast_restore = None
         self._databases = None
         self.discriminator = None
 
         self.restore_time = restore_time
         self.instance_id = instance_id
+        if is_fast_restore is not None:
+            self.is_fast_restore = is_fast_restore
         self.databases = databases
 
     @property
@@ -95,6 +102,28 @@ class RestoreDatabaseInstance:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def is_fast_restore(self):
+        """Gets the is_fast_restore of this RestoreDatabaseInstance.
+
+        是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
+
+        :return: The is_fast_restore of this RestoreDatabaseInstance.
+        :rtype: bool
+        """
+        return self._is_fast_restore
+
+    @is_fast_restore.setter
+    def is_fast_restore(self, is_fast_restore):
+        """Sets the is_fast_restore of this RestoreDatabaseInstance.
+
+        是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
+
+        :param is_fast_restore: The is_fast_restore of this RestoreDatabaseInstance.
+        :type is_fast_restore: bool
+        """
+        self._is_fast_restore = is_fast_restore
 
     @property
     def databases(self):

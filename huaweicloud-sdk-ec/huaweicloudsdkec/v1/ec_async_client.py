@@ -3138,6 +3138,274 @@ class EcAsyncClient(Client):
 
         return http_info
 
+    def add_ecn_with_vpc_async(self, request):
+        """关联虚拟私有云到企业连接网络
+
+        关联虚拟私有云到企业连接网络
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddEcnWithVpc
+        :type request: :class:`huaweicloudsdkec.v1.AddEcnWithVpcRequest`
+        :rtype: :class:`huaweicloudsdkec.v1.AddEcnWithVpcResponse`
+        """
+        http_info = self._add_ecn_with_vpc_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_ecn_with_vpc_async_invoker(self, request):
+        http_info = self._add_ecn_with_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_ecn_with_vpc_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/enterprise-connect/enterprise-connect-network/{ecn_id}/relationship/vpc",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddEcnWithVpcResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ecn_id' in local_var_params:
+            path_params['ecn_id'] = local_var_params['ecn_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ecn_with_vpc_async(self, request):
+        """解除虚拟私有云和企业连接网络的关联
+
+        解除虚拟私有云和企业连接网络的关联
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEcnWithVpc
+        :type request: :class:`huaweicloudsdkec.v1.DeleteEcnWithVpcRequest`
+        :rtype: :class:`huaweicloudsdkec.v1.DeleteEcnWithVpcResponse`
+        """
+        http_info = self._delete_ecn_with_vpc_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ecn_with_vpc_async_invoker(self, request):
+        http_info = self._delete_ecn_with_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ecn_with_vpc_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{domain_id}/enterprise-connect/enterprise-connect-network/{ecn_id}/relationship/vpc/{relation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEcnWithVpcResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ecn_id' in local_var_params:
+            path_params['ecn_id'] = local_var_params['ecn_id']
+        if 'relation_id' in local_var_params:
+            path_params['relation_id'] = local_var_params['relation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ecn_with_vpc_async(self, request):
+        """查询企业连接网络与虚拟私有云关联关系
+
+        根据企业连接网络ID，查询企业连接网络与虚拟私有云关联关系
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEcnWithVpc
+        :type request: :class:`huaweicloudsdkec.v1.ListEcnWithVpcRequest`
+        :rtype: :class:`huaweicloudsdkec.v1.ListEcnWithVpcResponse`
+        """
+        http_info = self._list_ecn_with_vpc_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ecn_with_vpc_async_invoker(self, request):
+        http_info = self._list_ecn_with_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ecn_with_vpc_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/enterprise-connect/enterprise-connect-network/{ecn_id}/relationship/vpc",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEcnWithVpcResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ecn_id' in local_var_params:
+            path_params['ecn_id'] = local_var_params['ecn_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ecn_with_vpc_async(self, request):
+        """更新虚拟私有云和企业连接网络的关联
+
+        更新虚拟私有云和企业连接网络的关联
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateEcnWithVpc
+        :type request: :class:`huaweicloudsdkec.v1.UpdateEcnWithVpcRequest`
+        :rtype: :class:`huaweicloudsdkec.v1.UpdateEcnWithVpcResponse`
+        """
+        http_info = self._update_ecn_with_vpc_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ecn_with_vpc_async_invoker(self, request):
+        http_info = self._update_ecn_with_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ecn_with_vpc_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{domain_id}/enterprise-connect/enterprise-connect-network/{ecn_id}/relationship/vpc/{relation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEcnWithVpcResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ecn_id' in local_var_params:
+            path_params['ecn_id'] = local_var_params['ecn_id']
+        if 'relation_id' in local_var_params:
+            path_params['relation_id'] = local_var_params['relation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_vrrp_config_async(self, request):
         """创建vrrp配置
 

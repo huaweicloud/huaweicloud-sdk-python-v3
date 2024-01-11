@@ -128,6 +128,7 @@ from huaweicloudsdkelb.v2.model.member_resp import MemberResp
 from huaweicloudsdkelb.v2.model.members_in_status_resp import MembersInStatusResp
 from huaweicloudsdkelb.v2.model.pool_resp import PoolResp
 from huaweicloudsdkelb.v2.model.pools_in_status_resp import PoolsInStatusResp
+from huaweicloudsdkelb.v2.model.public_ip_info import PublicIpInfo
 from huaweicloudsdkelb.v2.model.resource_list import ResourceList
 from huaweicloudsdkelb.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkelb.v2.model.resources_by_tag import ResourcesByTag

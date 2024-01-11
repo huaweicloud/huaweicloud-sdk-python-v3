@@ -17,26 +17,22 @@ class ResetMessageOffsetWithEngineRequest:
     sensitive_list = []
 
     openapi_types = {
-        'engine': 'str',
         'instance_id': 'str',
         'group': 'str',
         'body': 'ResetMessageOffsetReq'
     }
 
     attribute_map = {
-        'engine': 'engine',
         'instance_id': 'instance_id',
         'group': 'group',
         'body': 'body'
     }
 
-    def __init__(self, engine=None, instance_id=None, group=None, body=None):
+    def __init__(self, instance_id=None, group=None, body=None):
         """ResetMessageOffsetWithEngineRequest
 
         The model defined in huaweicloud sdk
 
-        :param engine: 引擎。
-        :type engine: str
         :param instance_id: 实例ID。
         :type instance_id: str
         :param group: 消费组名称。
@@ -47,39 +43,15 @@ class ResetMessageOffsetWithEngineRequest:
         
         
 
-        self._engine = None
         self._instance_id = None
         self._group = None
         self._body = None
         self.discriminator = None
 
-        self.engine = engine
         self.instance_id = instance_id
         self.group = group
         if body is not None:
             self.body = body
-
-    @property
-    def engine(self):
-        """Gets the engine of this ResetMessageOffsetWithEngineRequest.
-
-        引擎。
-
-        :return: The engine of this ResetMessageOffsetWithEngineRequest.
-        :rtype: str
-        """
-        return self._engine
-
-    @engine.setter
-    def engine(self, engine):
-        """Sets the engine of this ResetMessageOffsetWithEngineRequest.
-
-        引擎。
-
-        :param engine: The engine of this ResetMessageOffsetWithEngineRequest.
-        :type engine: str
-        """
-        self._engine = engine
 
     @property
     def instance_id(self):

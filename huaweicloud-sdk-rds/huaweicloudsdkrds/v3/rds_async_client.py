@@ -2981,6 +2981,8 @@ class RdsAsyncClient(Client):
             query_params.append(('type', local_var_params['type']))
         if 'datastore_type' in local_var_params:
             query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'eps_id' in local_var_params:
+            query_params.append(('eps_id', local_var_params['eps_id']))
         if 'vpc_id' in local_var_params:
             query_params.append(('vpc_id', local_var_params['vpc_id']))
         if 'subnet_id' in local_var_params:

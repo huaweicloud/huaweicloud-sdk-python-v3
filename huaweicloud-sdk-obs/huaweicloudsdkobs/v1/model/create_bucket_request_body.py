@@ -31,7 +31,7 @@ class CreateBucketRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param location: 指定Bucket在哪个区域被创建。 使用华北-北京一的终端节点创桶时 不携带Location，桶将默认创建在华北-北京一（cn-north-1） 在Location中指定其它区域，例如华北-北京四（cn-north-4），桶将创建在指定区域 使用华北-北京一以外其它区域的终端节点创桶时，必须携带Location，并且Location只能指定为该终端节点对应的区域。 例如使用obs.cn-north-4.myhuaweicloud.com终端节点创桶时，必须指定Location为cn-north-4。  有关OBS区域和终端节点的更多信息，请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)。 
+        :param location: Region where the bucket will be created. When the endpoint of the CN North-Beijing1 region is used for bucket creation: If **location** is not specified, the bucket will be created in CN North-Beijing1 (cn-north-1) by default. If another region, for example, CN North-Beijing4 (cn-north-4), is specified for **location**, the bucket will be created in the CN North-Beijing4 region. When the endpoint of a region other than CN North-Beijing1 is used for bucket creation, **location** must be set to the region that the used endpoint corresponds to. For example, if **obs.cn-north-4.myhuaweicloud.com is used**, you must set **location** to **cn-north-4**.  For more information, see [Regions and Endpoints](https://developer.huaweicloud.com/intl/en-us/endpoint?all).
         :type location: str
         """
         
@@ -47,7 +47,7 @@ class CreateBucketRequestBody:
     def location(self):
         """Gets the location of this CreateBucketRequestBody.
 
-        指定Bucket在哪个区域被创建。 使用华北-北京一的终端节点创桶时 不携带Location，桶将默认创建在华北-北京一（cn-north-1） 在Location中指定其它区域，例如华北-北京四（cn-north-4），桶将创建在指定区域 使用华北-北京一以外其它区域的终端节点创桶时，必须携带Location，并且Location只能指定为该终端节点对应的区域。 例如使用obs.cn-north-4.myhuaweicloud.com终端节点创桶时，必须指定Location为cn-north-4。  有关OBS区域和终端节点的更多信息，请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)。 
+        Region where the bucket will be created. When the endpoint of the CN North-Beijing1 region is used for bucket creation: If **location** is not specified, the bucket will be created in CN North-Beijing1 (cn-north-1) by default. If another region, for example, CN North-Beijing4 (cn-north-4), is specified for **location**, the bucket will be created in the CN North-Beijing4 region. When the endpoint of a region other than CN North-Beijing1 is used for bucket creation, **location** must be set to the region that the used endpoint corresponds to. For example, if **obs.cn-north-4.myhuaweicloud.com is used**, you must set **location** to **cn-north-4**.  For more information, see [Regions and Endpoints](https://developer.huaweicloud.com/intl/en-us/endpoint?all).
 
         :return: The location of this CreateBucketRequestBody.
         :rtype: str
@@ -58,7 +58,7 @@ class CreateBucketRequestBody:
     def location(self, location):
         """Sets the location of this CreateBucketRequestBody.
 
-        指定Bucket在哪个区域被创建。 使用华北-北京一的终端节点创桶时 不携带Location，桶将默认创建在华北-北京一（cn-north-1） 在Location中指定其它区域，例如华北-北京四（cn-north-4），桶将创建在指定区域 使用华北-北京一以外其它区域的终端节点创桶时，必须携带Location，并且Location只能指定为该终端节点对应的区域。 例如使用obs.cn-north-4.myhuaweicloud.com终端节点创桶时，必须指定Location为cn-north-4。  有关OBS区域和终端节点的更多信息，请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)。 
+        Region where the bucket will be created. When the endpoint of the CN North-Beijing1 region is used for bucket creation: If **location** is not specified, the bucket will be created in CN North-Beijing1 (cn-north-1) by default. If another region, for example, CN North-Beijing4 (cn-north-4), is specified for **location**, the bucket will be created in the CN North-Beijing4 region. When the endpoint of a region other than CN North-Beijing1 is used for bucket creation, **location** must be set to the region that the used endpoint corresponds to. For example, if **obs.cn-north-4.myhuaweicloud.com is used**, you must set **location** to **cn-north-4**.  For more information, see [Regions and Endpoints](https://developer.huaweicloud.com/intl/en-us/endpoint?all).
 
         :param location: The location of this CreateBucketRequestBody.
         :type location: str

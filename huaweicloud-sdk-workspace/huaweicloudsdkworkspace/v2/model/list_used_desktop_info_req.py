@@ -20,6 +20,7 @@ class ListUsedDesktopInfoReq:
         'desktop_ids': 'list[str]',
         'start_time': 'str',
         'end_time': 'str',
+        'group_by_type': 'str',
         'desktop_username': 'str',
         'offset': 'int',
         'limit': 'int'
@@ -29,12 +30,13 @@ class ListUsedDesktopInfoReq:
         'desktop_ids': 'desktop_ids',
         'start_time': 'start_time',
         'end_time': 'end_time',
+        'group_by_type': 'group_by_type',
         'desktop_username': 'desktop_username',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, desktop_ids=None, start_time=None, end_time=None, desktop_username=None, offset=None, limit=None):
+    def __init__(self, desktop_ids=None, start_time=None, end_time=None, group_by_type=None, desktop_username=None, offset=None, limit=None):
         """ListUsedDesktopInfoReq
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListUsedDesktopInfoReq:
         :type start_time: str
         :param end_time: 结束时间，格式：yyyy-MM-dd（UTC时间，不传查默认最近15天）最多查31天数据。
         :type end_time: str
+        :param group_by_type: 统计方式，不传则默认按天。可选值为： - DAY: 按天。 - HOUR: 按小时。
+        :type group_by_type: str
         :param desktop_username: 若传桌面的用户名，则查询使用时间只有该用户的使用时间。
         :type desktop_username: str
         :param offset: 从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2000，默认从0开始。
@@ -58,6 +62,7 @@ class ListUsedDesktopInfoReq:
         self._desktop_ids = None
         self._start_time = None
         self._end_time = None
+        self._group_by_type = None
         self._desktop_username = None
         self._offset = None
         self._limit = None
@@ -69,6 +74,8 @@ class ListUsedDesktopInfoReq:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if group_by_type is not None:
+            self.group_by_type = group_by_type
         if desktop_username is not None:
             self.desktop_username = desktop_username
         if offset is not None:
@@ -141,6 +148,28 @@ class ListUsedDesktopInfoReq:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def group_by_type(self):
+        """Gets the group_by_type of this ListUsedDesktopInfoReq.
+
+        统计方式，不传则默认按天。可选值为： - DAY: 按天。 - HOUR: 按小时。
+
+        :return: The group_by_type of this ListUsedDesktopInfoReq.
+        :rtype: str
+        """
+        return self._group_by_type
+
+    @group_by_type.setter
+    def group_by_type(self, group_by_type):
+        """Sets the group_by_type of this ListUsedDesktopInfoReq.
+
+        统计方式，不传则默认按天。可选值为： - DAY: 按天。 - HOUR: 按小时。
+
+        :param group_by_type: The group_by_type of this ListUsedDesktopInfoReq.
+        :type group_by_type: str
+        """
+        self._group_by_type = group_by_type
 
     @property
     def desktop_username(self):

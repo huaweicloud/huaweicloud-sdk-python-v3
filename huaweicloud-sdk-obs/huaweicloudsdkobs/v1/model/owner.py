@@ -31,7 +31,7 @@ class Owner:
 
         The model defined in huaweicloud sdk
 
-        :param id: 用户的DomainID（帐号ID）。 
+        :param id: Domain ID (account ID)
         :type id: str
         """
         
@@ -47,7 +47,7 @@ class Owner:
     def id(self):
         """Gets the id of this Owner.
 
-        用户的DomainID（帐号ID）。 
+        Domain ID (account ID)
 
         :return: The id of this Owner.
         :rtype: str
@@ -58,7 +58,7 @@ class Owner:
     def id(self, id):
         """Sets the id of this Owner.
 
-        用户的DomainID（帐号ID）。 
+        Domain ID (account ID)
 
         :param id: The id of this Owner.
         :type id: str

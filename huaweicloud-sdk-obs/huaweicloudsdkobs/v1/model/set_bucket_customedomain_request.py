@@ -37,11 +37,11 @@ class SetBucketCustomedomainRequest:
 
         The model defined in huaweicloud sdk
 
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param bucket_name: 请求的桶名称。 
+        :param bucket_name: Name of the requested bucket
         :type bucket_name: str
-        :param customdomain: 桶的自定义域名。  类型：字符串，必须满足域名规则。  规格：最长256字节。  默认值：无。  约束：一个桶最多可以设置30个自定义域名，一个自定义域名只能被一个桶使用。 
+        :param customdomain: Custom domain name of the bucket.  Type: string, which must meet the naming conventions of domain names.  Specifications: The value contains a maximum of 256 bytes.  Default value: none  Restriction: A bucket can have a maximum of 30 domain names. A custom domain name can be used for only one bucket.
         :type customdomain: str
         :param body: Body of the SetBucketCustomedomainRequest
         :type body: :class:`huaweicloudsdkobs.v1.SetBucketCustomDomainBody`
@@ -66,7 +66,7 @@ class SetBucketCustomedomainRequest:
     def date(self):
         """Gets the date of this SetBucketCustomedomainRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this SetBucketCustomedomainRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class SetBucketCustomedomainRequest:
     def date(self, date):
         """Sets the date of this SetBucketCustomedomainRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this SetBucketCustomedomainRequest.
         :type date: str
@@ -88,7 +88,7 @@ class SetBucketCustomedomainRequest:
     def bucket_name(self):
         """Gets the bucket_name of this SetBucketCustomedomainRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :return: The bucket_name of this SetBucketCustomedomainRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class SetBucketCustomedomainRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this SetBucketCustomedomainRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :param bucket_name: The bucket_name of this SetBucketCustomedomainRequest.
         :type bucket_name: str
@@ -110,7 +110,7 @@ class SetBucketCustomedomainRequest:
     def customdomain(self):
         """Gets the customdomain of this SetBucketCustomedomainRequest.
 
-        桶的自定义域名。  类型：字符串，必须满足域名规则。  规格：最长256字节。  默认值：无。  约束：一个桶最多可以设置30个自定义域名，一个自定义域名只能被一个桶使用。 
+        Custom domain name of the bucket.  Type: string, which must meet the naming conventions of domain names.  Specifications: The value contains a maximum of 256 bytes.  Default value: none  Restriction: A bucket can have a maximum of 30 domain names. A custom domain name can be used for only one bucket.
 
         :return: The customdomain of this SetBucketCustomedomainRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class SetBucketCustomedomainRequest:
     def customdomain(self, customdomain):
         """Sets the customdomain of this SetBucketCustomedomainRequest.
 
-        桶的自定义域名。  类型：字符串，必须满足域名规则。  规格：最长256字节。  默认值：无。  约束：一个桶最多可以设置30个自定义域名，一个自定义域名只能被一个桶使用。 
+        Custom domain name of the bucket.  Type: string, which must meet the naming conventions of domain names.  Specifications: The value contains a maximum of 256 bytes.  Default value: none  Restriction: A bucket can have a maximum of 30 domain names. A custom domain name can be used for only one bucket.
 
         :param customdomain: The customdomain of this SetBucketCustomedomainRequest.
         :type customdomain: str

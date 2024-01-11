@@ -45,17 +45,17 @@ class Contents:
 
         :param owner: 
         :type owner: :class:`huaweicloudsdkobs.v1.Owner`
-        :param e_tag: 对象的base64编码的128位MD5摘要。ETag是对象内容的唯一标识，可以通过该值识别对象内容是否有变化。比如上传对象时ETag为A，下载对象时ETag为B，则说明对象内容发生了变化。实际的ETag是对象的哈希值。ETag只反映变化的内容，而不是其元数据。上传的对象或拷贝操作创建的对象，通过MD5加密后都有唯一的ETag。（当对象是服务端加密的对象时，ETag值不是对象的MD5值，而是通过服务端加密计算出的唯一标识。） 
+        :param e_tag: Base64-encoded 128-bit MD5 digest of an object. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
         :type e_tag: str
-        :param type: 对象类型，非Normal对象时返回。 
+        :param type: Object type. This parameter is returned when the object type is not **Normal**.
         :type type: str
-        :param key: 对象名。 
+        :param key: Name of the object
         :type key: str
-        :param last_modified: 对象最近一次被修改的时间（UTC时间）。 
+        :param last_modified: Time (UTC) when the object was last modified
         :type last_modified: str
-        :param size: 对象的字节数。 
+        :param size: Object size in bytes
         :type size: str
-        :param storage_class: 对象的存储类型。 
+        :param storage_class: Storage class of the object
         :type storage_class: str
         """
         
@@ -107,7 +107,7 @@ class Contents:
     def e_tag(self):
         """Gets the e_tag of this Contents.
 
-        对象的base64编码的128位MD5摘要。ETag是对象内容的唯一标识，可以通过该值识别对象内容是否有变化。比如上传对象时ETag为A，下载对象时ETag为B，则说明对象内容发生了变化。实际的ETag是对象的哈希值。ETag只反映变化的内容，而不是其元数据。上传的对象或拷贝操作创建的对象，通过MD5加密后都有唯一的ETag。（当对象是服务端加密的对象时，ETag值不是对象的MD5值，而是通过服务端加密计算出的唯一标识。） 
+        Base64-encoded 128-bit MD5 digest of an object. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
 
         :return: The e_tag of this Contents.
         :rtype: str
@@ -118,7 +118,7 @@ class Contents:
     def e_tag(self, e_tag):
         """Sets the e_tag of this Contents.
 
-        对象的base64编码的128位MD5摘要。ETag是对象内容的唯一标识，可以通过该值识别对象内容是否有变化。比如上传对象时ETag为A，下载对象时ETag为B，则说明对象内容发生了变化。实际的ETag是对象的哈希值。ETag只反映变化的内容，而不是其元数据。上传的对象或拷贝操作创建的对象，通过MD5加密后都有唯一的ETag。（当对象是服务端加密的对象时，ETag值不是对象的MD5值，而是通过服务端加密计算出的唯一标识。） 
+        Base64-encoded 128-bit MD5 digest of an object. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
 
         :param e_tag: The e_tag of this Contents.
         :type e_tag: str
@@ -129,7 +129,7 @@ class Contents:
     def type(self):
         """Gets the type of this Contents.
 
-        对象类型，非Normal对象时返回。 
+        Object type. This parameter is returned when the object type is not **Normal**.
 
         :return: The type of this Contents.
         :rtype: str
@@ -140,7 +140,7 @@ class Contents:
     def type(self, type):
         """Sets the type of this Contents.
 
-        对象类型，非Normal对象时返回。 
+        Object type. This parameter is returned when the object type is not **Normal**.
 
         :param type: The type of this Contents.
         :type type: str
@@ -151,7 +151,7 @@ class Contents:
     def key(self):
         """Gets the key of this Contents.
 
-        对象名。 
+        Name of the object
 
         :return: The key of this Contents.
         :rtype: str
@@ -162,7 +162,7 @@ class Contents:
     def key(self, key):
         """Sets the key of this Contents.
 
-        对象名。 
+        Name of the object
 
         :param key: The key of this Contents.
         :type key: str
@@ -173,7 +173,7 @@ class Contents:
     def last_modified(self):
         """Gets the last_modified of this Contents.
 
-        对象最近一次被修改的时间（UTC时间）。 
+        Time (UTC) when the object was last modified
 
         :return: The last_modified of this Contents.
         :rtype: str
@@ -184,7 +184,7 @@ class Contents:
     def last_modified(self, last_modified):
         """Sets the last_modified of this Contents.
 
-        对象最近一次被修改的时间（UTC时间）。 
+        Time (UTC) when the object was last modified
 
         :param last_modified: The last_modified of this Contents.
         :type last_modified: str
@@ -195,7 +195,7 @@ class Contents:
     def size(self):
         """Gets the size of this Contents.
 
-        对象的字节数。 
+        Object size in bytes
 
         :return: The size of this Contents.
         :rtype: str
@@ -206,7 +206,7 @@ class Contents:
     def size(self, size):
         """Sets the size of this Contents.
 
-        对象的字节数。 
+        Object size in bytes
 
         :param size: The size of this Contents.
         :type size: str
@@ -217,7 +217,7 @@ class Contents:
     def storage_class(self):
         """Gets the storage_class of this Contents.
 
-        对象的存储类型。 
+        Storage class of the object
 
         :return: The storage_class of this Contents.
         :rtype: str
@@ -228,7 +228,7 @@ class Contents:
     def storage_class(self, storage_class):
         """Sets the storage_class of this Contents.
 
-        对象的存储类型。 
+        Storage class of the object
 
         :param storage_class: The storage_class of this Contents.
         :type storage_class: str

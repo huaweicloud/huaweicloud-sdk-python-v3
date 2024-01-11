@@ -39,7 +39,8 @@ class VaultCreateResource:
         'backup_name_prefix': 'str',
         'demand_billing': 'bool',
         'cbc_delete_count': 'int',
-        'frozen': 'bool'
+        'frozen': 'bool',
+        'sys_lock_source_service': 'str'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class VaultCreateResource:
         'backup_name_prefix': 'backup_name_prefix',
         'demand_billing': 'demand_billing',
         'cbc_delete_count': 'cbc_delete_count',
-        'frozen': 'frozen'
+        'frozen': 'frozen',
+        'sys_lock_source_service': 'sys_lock_source_service'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, err_text=None, ret_code=None, orders=None, backup_name_prefix=None, demand_billing=None, cbc_delete_count=None, frozen=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, err_text=None, ret_code=None, orders=None, backup_name_prefix=None, demand_billing=None, cbc_delete_count=None, frozen=None, sys_lock_source_service=None):
         """VaultCreateResource
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class VaultCreateResource:
         :type cbc_delete_count: int
         :param frozen: 存储库是否冻结
         :type frozen: bool
+        :param sys_lock_source_service: 用于标识SMB服务
+        :type sys_lock_source_service: str
         """
         
         
@@ -146,6 +150,7 @@ class VaultCreateResource:
         self._demand_billing = None
         self._cbc_delete_count = None
         self._frozen = None
+        self._sys_lock_source_service = None
         self.discriminator = None
 
         self.billing = billing
@@ -188,6 +193,8 @@ class VaultCreateResource:
             self.cbc_delete_count = cbc_delete_count
         if frozen is not None:
             self.frozen = frozen
+        if sys_lock_source_service is not None:
+            self.sys_lock_source_service = sys_lock_source_service
 
     @property
     def billing(self):
@@ -686,6 +693,28 @@ class VaultCreateResource:
         :type frozen: bool
         """
         self._frozen = frozen
+
+    @property
+    def sys_lock_source_service(self):
+        """Gets the sys_lock_source_service of this VaultCreateResource.
+
+        用于标识SMB服务
+
+        :return: The sys_lock_source_service of this VaultCreateResource.
+        :rtype: str
+        """
+        return self._sys_lock_source_service
+
+    @sys_lock_source_service.setter
+    def sys_lock_source_service(self, sys_lock_source_service):
+        """Sets the sys_lock_source_service of this VaultCreateResource.
+
+        用于标识SMB服务
+
+        :param sys_lock_source_service: The sys_lock_source_service of this VaultCreateResource.
+        :type sys_lock_source_service: str
+        """
+        self._sys_lock_source_service = sys_lock_source_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -341,7 +341,10 @@ class Client(object):
         query_params = self._post_process_params(query_params) or []
         if query_params:
             query_params = http_utils.sanitize_for_serialization(query_params)
-            query_params = http_utils.parameters_to_tuples(query_params, collection_formats)
+            # Use 'multi' collection format to parse query params
+            multi_collection_formats = {k: 'multi' for k, v in collection_formats.items()} \
+                if isinstance(collection_formats, dict) else {}
+            query_params = http_utils.parameters_to_tuples(query_params, multi_collection_formats)
         return query_params
 
     def _parse_post_params(self, collection_formats, post_params):

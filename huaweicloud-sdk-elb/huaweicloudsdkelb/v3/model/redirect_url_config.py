@@ -47,7 +47,7 @@ class RedirectUrlConfig:
         :type port: str
         :param path: 重定向的路径。默认值${path}表示继承原值（即与被转发请求保持一致）。  支持英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:|\\/()\\[\\]{}，且必须以\&quot;/\&quot;开头。
         :type path: str
-        :param query: 重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：  若该字段被设置为：${query}&amp;name&#x3D;my_name，则在转发符合条件的URL （如https://www.xxx.com:8080/elb?type&#x3D;loadbalancer， 此时${query}表示type&#x3D;loadbalancer）时，将会重定向到 https://www.xxx.com:8080/elb?type&#x3D;loadbalancer&amp;name&#x3D;my_name。  只能包含英文字母、数字和特殊字符：!$&amp;&#39;()*+,-./:;&#x3D;?@^_&#x60;。字母区分大小写。
+        :param query: 重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：  若该字段被设置为：${query}&amp;name&#x3D;my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type&#x3D;loadbalancer， 此时${query}表示type&#x3D;loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type&#x3D;loadbalancer&amp;name&#x3D;my_name。  只能包含英文字母、数字和特殊字符：!$&amp;&#39;()*+,-./:;&#x3D;?@^_&#x60;。字母区分大小写。
         :type query: str
         :param status_code: 重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
         :type status_code: str
@@ -162,7 +162,7 @@ class RedirectUrlConfig:
     def query(self):
         """Gets the query of this RedirectUrlConfig.
 
-        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：  若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL （如https://www.xxx.com:8080/elb?type=loadbalancer， 此时${query}表示type=loadbalancer）时，将会重定向到 https://www.xxx.com:8080/elb?type=loadbalancer&name=my_name。  只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
+        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：  若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type=loadbalancer， 此时${query}表示type=loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type=loadbalancer&name=my_name。  只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
 
         :return: The query of this RedirectUrlConfig.
         :rtype: str
@@ -173,7 +173,7 @@ class RedirectUrlConfig:
     def query(self, query):
         """Sets the query of this RedirectUrlConfig.
 
-        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：  若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL （如https://www.xxx.com:8080/elb?type=loadbalancer， 此时${query}表示type=loadbalancer）时，将会重定向到 https://www.xxx.com:8080/elb?type=loadbalancer&name=my_name。  只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
+        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：  若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type=loadbalancer， 此时${query}表示type=loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type=loadbalancer&name=my_name。  只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
 
         :param query: The query of this RedirectUrlConfig.
         :type query: str

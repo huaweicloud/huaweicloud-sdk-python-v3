@@ -39,15 +39,15 @@ class Bucket:
 
         The model defined in huaweicloud sdk
 
-        :param name: 桶名称。 
+        :param name: Name of the bucket
         :type name: str
-        :param creation_date: 桶的创建时间。 
+        :param creation_date: Time when the bucket was created
         :type creation_date: str
-        :param location: 桶的位置信息。 
+        :param location: Location of the bucket
         :type location: str
-        :param cluster_type: 桶所在的集群类型，当桶创建在专属集群上时，会返回此字段。其他场景不返回。 
+        :param cluster_type: Type of the cluster where the bucket is created. This field is returned when the bucket is created in a dedicated cluster. This field is not returned in other cases.
         :type cluster_type: str
-        :param ies_location: 如果桶创建在IES站点集群中，返回IES站点ID。如果桶创建在IES站点集群中，返回IES站点ID。其他场景下不返回此头域。 
+        :param ies_location: If a bucket is created in a cluster at the IES site, the ID of the IES site is returned.  This header is not returned in other cases.
         :type ies_location: str
         """
         
@@ -75,7 +75,7 @@ class Bucket:
     def name(self):
         """Gets the name of this Bucket.
 
-        桶名称。 
+        Name of the bucket
 
         :return: The name of this Bucket.
         :rtype: str
@@ -86,7 +86,7 @@ class Bucket:
     def name(self, name):
         """Sets the name of this Bucket.
 
-        桶名称。 
+        Name of the bucket
 
         :param name: The name of this Bucket.
         :type name: str
@@ -97,7 +97,7 @@ class Bucket:
     def creation_date(self):
         """Gets the creation_date of this Bucket.
 
-        桶的创建时间。 
+        Time when the bucket was created
 
         :return: The creation_date of this Bucket.
         :rtype: str
@@ -108,7 +108,7 @@ class Bucket:
     def creation_date(self, creation_date):
         """Sets the creation_date of this Bucket.
 
-        桶的创建时间。 
+        Time when the bucket was created
 
         :param creation_date: The creation_date of this Bucket.
         :type creation_date: str
@@ -119,7 +119,7 @@ class Bucket:
     def location(self):
         """Gets the location of this Bucket.
 
-        桶的位置信息。 
+        Location of the bucket
 
         :return: The location of this Bucket.
         :rtype: str
@@ -130,7 +130,7 @@ class Bucket:
     def location(self, location):
         """Sets the location of this Bucket.
 
-        桶的位置信息。 
+        Location of the bucket
 
         :param location: The location of this Bucket.
         :type location: str
@@ -141,7 +141,7 @@ class Bucket:
     def cluster_type(self):
         """Gets the cluster_type of this Bucket.
 
-        桶所在的集群类型，当桶创建在专属集群上时，会返回此字段。其他场景不返回。 
+        Type of the cluster where the bucket is created. This field is returned when the bucket is created in a dedicated cluster. This field is not returned in other cases.
 
         :return: The cluster_type of this Bucket.
         :rtype: str
@@ -152,7 +152,7 @@ class Bucket:
     def cluster_type(self, cluster_type):
         """Sets the cluster_type of this Bucket.
 
-        桶所在的集群类型，当桶创建在专属集群上时，会返回此字段。其他场景不返回。 
+        Type of the cluster where the bucket is created. This field is returned when the bucket is created in a dedicated cluster. This field is not returned in other cases.
 
         :param cluster_type: The cluster_type of this Bucket.
         :type cluster_type: str
@@ -163,7 +163,7 @@ class Bucket:
     def ies_location(self):
         """Gets the ies_location of this Bucket.
 
-        如果桶创建在IES站点集群中，返回IES站点ID。如果桶创建在IES站点集群中，返回IES站点ID。其他场景下不返回此头域。 
+        If a bucket is created in a cluster at the IES site, the ID of the IES site is returned.  This header is not returned in other cases.
 
         :return: The ies_location of this Bucket.
         :rtype: str
@@ -174,7 +174,7 @@ class Bucket:
     def ies_location(self, ies_location):
         """Sets the ies_location of this Bucket.
 
-        如果桶创建在IES站点集群中，返回IES站点ID。如果桶创建在IES站点集群中，返回IES站点ID。其他场景下不返回此头域。 
+        If a bucket is created in a cluster at the IES site, the ID of the IES site is returned.  This header is not returned in other cases.
 
         :param ies_location: The ies_location of this Bucket.
         :type ies_location: str

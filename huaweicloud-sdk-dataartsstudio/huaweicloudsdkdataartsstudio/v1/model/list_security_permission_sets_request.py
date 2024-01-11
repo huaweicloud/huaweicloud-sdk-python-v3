@@ -53,7 +53,7 @@ class ListSecurityPermissionSetsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param limit: limit
         :type limit: int
@@ -128,7 +128,7 @@ class ListSecurityPermissionSetsRequest:
     def workspace(self):
         """Gets the workspace of this ListSecurityPermissionSetsRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ListSecurityPermissionSetsRequest.
         :rtype: str
@@ -139,7 +139,7 @@ class ListSecurityPermissionSetsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListSecurityPermissionSetsRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ListSecurityPermissionSetsRequest.
         :type workspace: str

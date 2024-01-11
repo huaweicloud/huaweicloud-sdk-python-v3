@@ -7,7 +7,6 @@ from huaweicloudsdkobs.v1.obs_async_client import ObsAsyncClient
 
 from huaweicloudsdkobs.v1.model.access_control_list import AccessControlList
 from huaweicloudsdkobs.v1.model.bucket import Bucket
-from huaweicloudsdkobs.v1.model.buckets import Buckets
 from huaweicloudsdkobs.v1.model.contents import Contents
 from huaweicloudsdkobs.v1.model.copy_object_request import CopyObjectRequest
 from huaweicloudsdkobs.v1.model.copy_object_response import CopyObjectResponse

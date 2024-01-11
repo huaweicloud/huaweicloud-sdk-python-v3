@@ -24,7 +24,8 @@ class JobEndpointInfo:
         'cloud': 'CloudBaseInfo',
         'vpc': 'CloudVpcInfo',
         'config': 'BaseEndpointConfig',
-        'ssl': 'EndpointSslConfig'
+        'ssl': 'EndpointSslConfig',
+        'customized_dns': 'CustomizedDns'
     }
 
     attribute_map = {
@@ -35,15 +36,16 @@ class JobEndpointInfo:
         'cloud': 'cloud',
         'vpc': 'vpc',
         'config': 'config',
-        'ssl': 'ssl'
+        'ssl': 'ssl',
+        'customized_dns': 'customized_dns'
     }
 
-    def __init__(self, db_type=None, endpoint_type=None, endpoint_role=None, endpoint=None, cloud=None, vpc=None, config=None, ssl=None):
+    def __init__(self, db_type=None, endpoint_type=None, endpoint_role=None, endpoint=None, cloud=None, vpc=None, config=None, ssl=None, customized_dns=None):
         """JobEndpointInfo
 
         The model defined in huaweicloud sdk
 
-        :param db_type: 数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
+        :param db_type: 数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。
         :type db_type: str
         :param endpoint_type: 数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
         :type endpoint_type: str
@@ -59,6 +61,8 @@ class JobEndpointInfo:
         :type config: :class:`huaweicloudsdkdrs.v5.BaseEndpointConfig`
         :param ssl: 
         :type ssl: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
+        :param customized_dns: 
+        :type customized_dns: :class:`huaweicloudsdkdrs.v5.CustomizedDns`
         """
         
         
@@ -71,6 +75,7 @@ class JobEndpointInfo:
         self._vpc = None
         self._config = None
         self._ssl = None
+        self._customized_dns = None
         self.discriminator = None
 
         self.db_type = db_type
@@ -85,12 +90,14 @@ class JobEndpointInfo:
             self.config = config
         if ssl is not None:
             self.ssl = ssl
+        if customized_dns is not None:
+            self.customized_dns = customized_dns
 
     @property
     def db_type(self):
         """Gets the db_type of this JobEndpointInfo.
 
-        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
+        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。
 
         :return: The db_type of this JobEndpointInfo.
         :rtype: str
@@ -101,7 +108,7 @@ class JobEndpointInfo:
     def db_type(self, db_type):
         """Sets the db_type of this JobEndpointInfo.
 
-        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
+        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。
 
         :param db_type: The db_type of this JobEndpointInfo.
         :type db_type: str
@@ -241,6 +248,24 @@ class JobEndpointInfo:
         :type ssl: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
         """
         self._ssl = ssl
+
+    @property
+    def customized_dns(self):
+        """Gets the customized_dns of this JobEndpointInfo.
+
+        :return: The customized_dns of this JobEndpointInfo.
+        :rtype: :class:`huaweicloudsdkdrs.v5.CustomizedDns`
+        """
+        return self._customized_dns
+
+    @customized_dns.setter
+    def customized_dns(self, customized_dns):
+        """Sets the customized_dns of this JobEndpointInfo.
+
+        :param customized_dns: The customized_dns of this JobEndpointInfo.
+        :type customized_dns: :class:`huaweicloudsdkdrs.v5.CustomizedDns`
+        """
+        self._customized_dns = customized_dns
 
     def to_dict(self):
         """Returns the model properties as a dict"""

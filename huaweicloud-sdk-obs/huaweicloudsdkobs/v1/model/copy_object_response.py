@@ -58,7 +58,7 @@ class CopyObjectResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param last_modified: 对象上次修改的时间。 
+        :param last_modified: Time when the object was last modified
         :type last_modified: str
         :param e_tag: 
         :type e_tag: str
@@ -139,7 +139,7 @@ class CopyObjectResponse(SdkResponse):
     def last_modified(self):
         """Gets the last_modified of this CopyObjectResponse.
 
-        对象上次修改的时间。 
+        Time when the object was last modified
 
         :return: The last_modified of this CopyObjectResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class CopyObjectResponse(SdkResponse):
     def last_modified(self, last_modified):
         """Sets the last_modified of this CopyObjectResponse.
 
-        对象上次修改的时间。 
+        Time when the object was last modified
 
         :param last_modified: The last_modified of this CopyObjectResponse.
         :type last_modified: str

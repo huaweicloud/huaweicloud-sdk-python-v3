@@ -65,39 +65,39 @@ class CreateBucketRequest:
 
         The model defined in huaweicloud sdk
 
-        :param bucket_name: 考虑到桶名会作为访问域名的一部分，需要参与域名解析，因此桶名需要满足DNS域名规范。OBS系统在接受创桶请求时，会对桶名进行严格的检查，具体规则如下： 需全局唯一，不能与已有的任何桶名称重复，包括其他用户创建的桶。用户删除桶后，立即创建同名桶或并行文件系统会创建失败，需要等待30分钟才能创建。 长度范围为3到63个字符，支持小写字母、数字、中划线（-）、英文句号（.）。 禁止两个英文句号（.）相邻，禁止英文句号（.）和中划线（-）相邻，禁止以英文句号（.）和中划线（-）开头或结尾。 禁止使用IP地址。 须知： 当使用HTTPS协议访问OBS系统时，由于SSL的通配符证书仅匹配不包含\&quot;.\&quot;的桶。这将导致桶名包含\&quot;.\&quot;的桶在访问OBS系统时，客户端会提示证书校验存在风险，比如浏览器安全提示会呈现红色告警。因此如非必要，请尽量不要在桶名中包含\&quot;.\&quot;。 
+        :param bucket_name: A bucket name is part of the access domain name and needs to be resolved. The bucket name must conform to the DNS domain naming rules. When receiving a bucket creation request, OBS strictly checks the bucket name based on the following rules: + A bucket name must be unique across all accounts and regions. + The name of a deleted bucket can be reused for another bucket or a parallel file system at least 30 minutes later after the deletion. + A bucket name must be 3 to 63 characters long. Only lowercase letters, digits, hyphens (-), and periods (.) are allowed. + A bucket name cannot start or end with a period (.) or hyphen (-), and cannot contain two consecutive periods (..) or contain a period (.) and a hyphen (-) adjacent to each other. + A bucket name cannot be formatted as an IP address. Note: The SSL wildcard certificate matches only buckets without periods (.) in their names when HTTPS is used for OBS access. If you use a bucket with periods (.) in its name to access OBS, the client will display a message indicating that the bucket is risky, for example, a red alarm may be displayed in the browser security prompt. We recommend that you avoid using periods (.) in bucket names.
         :type bucket_name: str
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param x_obs_acl: 创建桶时，可以加上此消息头设置桶的权限控制策略，使用的策略为预定义的常用策略，包括：private、public-read、public-read-write、public-read-delivered、public-read-write-delivered、bucket-owner-full-control（各策略详细说明见ACL章节的“使用头域设置ACL”）。 
+        :param x_obs_acl: When creating a bucket, you can add this header to configure access control policies (predefined common policies) for a bucket. Such policies include **private**, **public-read**, **public-read-write**, **public-read-delivered**, **public-read-write-delivered**, and **bucket-owner-full-control**. For details about each policy, see the ACL configuration using headers in section ACLs.
         :type x_obs_acl: str
-        :param x_obs_storage_class: 创建桶时，可以加上此消息头设置桶的默认存储类型，默认存储类型有3种：STANDARD（标准存储）、WARM（低频访问存储）、COLD（归档存储）、HIGH_PERFORMANCE（高性能存储，只有并行文件系统支持）。如果没有指定此头域，则创建的桶为标准存储类型。 
+        :param x_obs_storage_class: When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and High-Performance (HIGH_PERFORMANCE). The high-performance storage is only for parallel file systems. If this header is not included, the bucket is created in the Standard storage class.
         :type x_obs_storage_class: str
-        :param x_obs_grant_read: 授权给指定domain下的所有用户有READ权限。允许列举桶内对象、列举桶中多段任务、列举桶中多版本对象、获取桶元数据。 
+        :param x_obs_grant_read: Grants the read permission to all users under an account. The read permission allows you to list objects, multipart uploads, and object versions in a bucket, as well as to obtain bucket metadata.
         :type x_obs_grant_read: str
-        :param x_obs_grant_write: 授权给指定domain下的所有用户有WRITE权限。允许创建、删除、覆盖桶内所有对象，允许初始化段、上传段、拷贝段、合并段、取消多段上传任务。 
+        :param x_obs_grant_write: Grants the write permission to all users under an account. The write permission allows you to create, delete, or overwrite all objects in a bucket, and to initialize, upload, copy, and merge parts, as well as to cancel multipart uploads.
         :type x_obs_grant_write: str
-        :param x_obs_grant_read_acp: 授权给指定domain下的所有用户有READ_ACP权限。允许读桶的ACL信息。 
+        :param x_obs_grant_read_acp: Grants the ACL read permission to all users under an account. The ACL read permission allows you to read the bucket ACL.
         :type x_obs_grant_read_acp: str
-        :param x_obs_grant_write_acp: 授权给指定domain下的所有用户有WRITE_ACP权限，允许修改桶的ACL信息。 
+        :param x_obs_grant_write_acp: Grants the ACL write permission to all users under an account. The ACL write permission allows you to modify the bucket ACL.
         :type x_obs_grant_write_acp: str
-        :param x_obs_grant_full_control: 授权给指定domain下的所有用户有FULL_CONTROL权限。 
+        :param x_obs_grant_full_control: Grants the full control access to all users under an account.
         :type x_obs_grant_full_control: str
-        :param x_obs_grant_read_delivered: 授权给指定domain下的所有用户有READ权限，并且在默认情况下，该READ权限将传递给桶内所有对象。 
+        :param x_obs_grant_read_delivered: Grants the read permission to all users under an account. By default, the read permission is applied to all objects in the bucket.
         :type x_obs_grant_read_delivered: str
-        :param x_obs_grant_full_control_delivered: 授权给指定domain下的所有用户有FULL_CONTROL权限，并且在默认情况下，该FULL_CONTROL权限将传递给桶内所有对象。 
+        :param x_obs_grant_full_control_delivered: Grants the full control access to all users under an account. By default, the full control access is applied to all objects in the bucket.
         :type x_obs_grant_full_control_delivered: str
-        :param x_obs_az_redundancy: 创建桶时带上此消息头设置桶的存储类型为多AZ。不携带时默认为单AZ。用户携带该头域指定新创的桶的存储类型为多AZ，存在一种情况是当该区域如果不支持多AZ存储，则该桶的存储类型仍为单AZ。 
+        :param x_obs_az_redundancy: Add this header in a bucket creation request to enable the multi-AZ storage for the bucket. If this header is not carried, single-AZ storage is used for the bucket by default. If the region where you are creating the bucket does not support multi-AZ storage, even if you add this header in the request, the bucket still uses the single-AZ storage.
         :type x_obs_az_redundancy: str
-        :param x_obs_fs_file_interface: 创建桶时可以带上此消息头以创建并行文件系统。 
+        :param x_obs_fs_file_interface: Specifies a parallel file system during bucket creation.
         :type x_obs_fs_file_interface: str
-        :param x_obs_epid: 企业项目id，开通企业项目的用户可以从企业项目服务获取，格式为uuid，默认项目传“0”或者不带该头域，未开通企业项目的用户可以不带该头域。 
+        :param x_obs_epid: Enterprise project ID in **UUID** format. If you have enabled the enterprise project function, you can obtain this ID from the enterprise project service. To use the default project, set this header to **0** or do not contain this header in the request. This header is not needed if you do not enable the enterprise project function.
         :type x_obs_epid: str
-        :param x_obs_cluster_type: 指定桶是创建在公共集群还是专属集群。 
+        :param x_obs_cluster_type: Specifies the type (public or dedicated) of the cluster where a bucket is created.
         :type x_obs_cluster_type: str
-        :param x_obs_location_clustergroup_id: 集群显性化创桶时，指定的集群组ID 
+        :param x_obs_location_clustergroup_id: Cluster group ID when a bucket is explicitly created in a cluster.
         :type x_obs_location_clustergroup_id: str
-        :param x_obs_ies_location: 如果是要创建在IES站点上，则指定IES站点的AZ ID。此参数和x-obs-cluster-type不可共存。 
+        :param x_obs_ies_location: ID of the AZ of the IES site where a bucket is created. This parameter cannot coexist with **x-obs-cluster-type**.
         :type x_obs_ies_location: str
         :param body: Body of the CreateBucketRequest
         :type body: :class:`huaweicloudsdkobs.v1.CreateBucketRequestBody`
@@ -165,7 +165,7 @@ class CreateBucketRequest:
     def bucket_name(self):
         """Gets the bucket_name of this CreateBucketRequest.
 
-        考虑到桶名会作为访问域名的一部分，需要参与域名解析，因此桶名需要满足DNS域名规范。OBS系统在接受创桶请求时，会对桶名进行严格的检查，具体规则如下： 需全局唯一，不能与已有的任何桶名称重复，包括其他用户创建的桶。用户删除桶后，立即创建同名桶或并行文件系统会创建失败，需要等待30分钟才能创建。 长度范围为3到63个字符，支持小写字母、数字、中划线（-）、英文句号（.）。 禁止两个英文句号（.）相邻，禁止英文句号（.）和中划线（-）相邻，禁止以英文句号（.）和中划线（-）开头或结尾。 禁止使用IP地址。 须知： 当使用HTTPS协议访问OBS系统时，由于SSL的通配符证书仅匹配不包含\".\"的桶。这将导致桶名包含\".\"的桶在访问OBS系统时，客户端会提示证书校验存在风险，比如浏览器安全提示会呈现红色告警。因此如非必要，请尽量不要在桶名中包含\".\"。 
+        A bucket name is part of the access domain name and needs to be resolved. The bucket name must conform to the DNS domain naming rules. When receiving a bucket creation request, OBS strictly checks the bucket name based on the following rules: + A bucket name must be unique across all accounts and regions. + The name of a deleted bucket can be reused for another bucket or a parallel file system at least 30 minutes later after the deletion. + A bucket name must be 3 to 63 characters long. Only lowercase letters, digits, hyphens (-), and periods (.) are allowed. + A bucket name cannot start or end with a period (.) or hyphen (-), and cannot contain two consecutive periods (..) or contain a period (.) and a hyphen (-) adjacent to each other. + A bucket name cannot be formatted as an IP address. Note: The SSL wildcard certificate matches only buckets without periods (.) in their names when HTTPS is used for OBS access. If you use a bucket with periods (.) in its name to access OBS, the client will display a message indicating that the bucket is risky, for example, a red alarm may be displayed in the browser security prompt. We recommend that you avoid using periods (.) in bucket names.
 
         :return: The bucket_name of this CreateBucketRequest.
         :rtype: str
@@ -176,7 +176,7 @@ class CreateBucketRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this CreateBucketRequest.
 
-        考虑到桶名会作为访问域名的一部分，需要参与域名解析，因此桶名需要满足DNS域名规范。OBS系统在接受创桶请求时，会对桶名进行严格的检查，具体规则如下： 需全局唯一，不能与已有的任何桶名称重复，包括其他用户创建的桶。用户删除桶后，立即创建同名桶或并行文件系统会创建失败，需要等待30分钟才能创建。 长度范围为3到63个字符，支持小写字母、数字、中划线（-）、英文句号（.）。 禁止两个英文句号（.）相邻，禁止英文句号（.）和中划线（-）相邻，禁止以英文句号（.）和中划线（-）开头或结尾。 禁止使用IP地址。 须知： 当使用HTTPS协议访问OBS系统时，由于SSL的通配符证书仅匹配不包含\".\"的桶。这将导致桶名包含\".\"的桶在访问OBS系统时，客户端会提示证书校验存在风险，比如浏览器安全提示会呈现红色告警。因此如非必要，请尽量不要在桶名中包含\".\"。 
+        A bucket name is part of the access domain name and needs to be resolved. The bucket name must conform to the DNS domain naming rules. When receiving a bucket creation request, OBS strictly checks the bucket name based on the following rules: + A bucket name must be unique across all accounts and regions. + The name of a deleted bucket can be reused for another bucket or a parallel file system at least 30 minutes later after the deletion. + A bucket name must be 3 to 63 characters long. Only lowercase letters, digits, hyphens (-), and periods (.) are allowed. + A bucket name cannot start or end with a period (.) or hyphen (-), and cannot contain two consecutive periods (..) or contain a period (.) and a hyphen (-) adjacent to each other. + A bucket name cannot be formatted as an IP address. Note: The SSL wildcard certificate matches only buckets without periods (.) in their names when HTTPS is used for OBS access. If you use a bucket with periods (.) in its name to access OBS, the client will display a message indicating that the bucket is risky, for example, a red alarm may be displayed in the browser security prompt. We recommend that you avoid using periods (.) in bucket names.
 
         :param bucket_name: The bucket_name of this CreateBucketRequest.
         :type bucket_name: str
@@ -187,7 +187,7 @@ class CreateBucketRequest:
     def date(self):
         """Gets the date of this CreateBucketRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this CreateBucketRequest.
         :rtype: str
@@ -198,7 +198,7 @@ class CreateBucketRequest:
     def date(self, date):
         """Sets the date of this CreateBucketRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this CreateBucketRequest.
         :type date: str
@@ -209,7 +209,7 @@ class CreateBucketRequest:
     def x_obs_acl(self):
         """Gets the x_obs_acl of this CreateBucketRequest.
 
-        创建桶时，可以加上此消息头设置桶的权限控制策略，使用的策略为预定义的常用策略，包括：private、public-read、public-read-write、public-read-delivered、public-read-write-delivered、bucket-owner-full-control（各策略详细说明见ACL章节的“使用头域设置ACL”）。 
+        When creating a bucket, you can add this header to configure access control policies (predefined common policies) for a bucket. Such policies include **private**, **public-read**, **public-read-write**, **public-read-delivered**, **public-read-write-delivered**, and **bucket-owner-full-control**. For details about each policy, see the ACL configuration using headers in section ACLs.
 
         :return: The x_obs_acl of this CreateBucketRequest.
         :rtype: str
@@ -220,7 +220,7 @@ class CreateBucketRequest:
     def x_obs_acl(self, x_obs_acl):
         """Sets the x_obs_acl of this CreateBucketRequest.
 
-        创建桶时，可以加上此消息头设置桶的权限控制策略，使用的策略为预定义的常用策略，包括：private、public-read、public-read-write、public-read-delivered、public-read-write-delivered、bucket-owner-full-control（各策略详细说明见ACL章节的“使用头域设置ACL”）。 
+        When creating a bucket, you can add this header to configure access control policies (predefined common policies) for a bucket. Such policies include **private**, **public-read**, **public-read-write**, **public-read-delivered**, **public-read-write-delivered**, and **bucket-owner-full-control**. For details about each policy, see the ACL configuration using headers in section ACLs.
 
         :param x_obs_acl: The x_obs_acl of this CreateBucketRequest.
         :type x_obs_acl: str
@@ -231,7 +231,7 @@ class CreateBucketRequest:
     def x_obs_storage_class(self):
         """Gets the x_obs_storage_class of this CreateBucketRequest.
 
-        创建桶时，可以加上此消息头设置桶的默认存储类型，默认存储类型有3种：STANDARD（标准存储）、WARM（低频访问存储）、COLD（归档存储）、HIGH_PERFORMANCE（高性能存储，只有并行文件系统支持）。如果没有指定此头域，则创建的桶为标准存储类型。 
+        When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and High-Performance (HIGH_PERFORMANCE). The high-performance storage is only for parallel file systems. If this header is not included, the bucket is created in the Standard storage class.
 
         :return: The x_obs_storage_class of this CreateBucketRequest.
         :rtype: str
@@ -242,7 +242,7 @@ class CreateBucketRequest:
     def x_obs_storage_class(self, x_obs_storage_class):
         """Sets the x_obs_storage_class of this CreateBucketRequest.
 
-        创建桶时，可以加上此消息头设置桶的默认存储类型，默认存储类型有3种：STANDARD（标准存储）、WARM（低频访问存储）、COLD（归档存储）、HIGH_PERFORMANCE（高性能存储，只有并行文件系统支持）。如果没有指定此头域，则创建的桶为标准存储类型。 
+        When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and High-Performance (HIGH_PERFORMANCE). The high-performance storage is only for parallel file systems. If this header is not included, the bucket is created in the Standard storage class.
 
         :param x_obs_storage_class: The x_obs_storage_class of this CreateBucketRequest.
         :type x_obs_storage_class: str
@@ -253,7 +253,7 @@ class CreateBucketRequest:
     def x_obs_grant_read(self):
         """Gets the x_obs_grant_read of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有READ权限。允许列举桶内对象、列举桶中多段任务、列举桶中多版本对象、获取桶元数据。 
+        Grants the read permission to all users under an account. The read permission allows you to list objects, multipart uploads, and object versions in a bucket, as well as to obtain bucket metadata.
 
         :return: The x_obs_grant_read of this CreateBucketRequest.
         :rtype: str
@@ -264,7 +264,7 @@ class CreateBucketRequest:
     def x_obs_grant_read(self, x_obs_grant_read):
         """Sets the x_obs_grant_read of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有READ权限。允许列举桶内对象、列举桶中多段任务、列举桶中多版本对象、获取桶元数据。 
+        Grants the read permission to all users under an account. The read permission allows you to list objects, multipart uploads, and object versions in a bucket, as well as to obtain bucket metadata.
 
         :param x_obs_grant_read: The x_obs_grant_read of this CreateBucketRequest.
         :type x_obs_grant_read: str
@@ -275,7 +275,7 @@ class CreateBucketRequest:
     def x_obs_grant_write(self):
         """Gets the x_obs_grant_write of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有WRITE权限。允许创建、删除、覆盖桶内所有对象，允许初始化段、上传段、拷贝段、合并段、取消多段上传任务。 
+        Grants the write permission to all users under an account. The write permission allows you to create, delete, or overwrite all objects in a bucket, and to initialize, upload, copy, and merge parts, as well as to cancel multipart uploads.
 
         :return: The x_obs_grant_write of this CreateBucketRequest.
         :rtype: str
@@ -286,7 +286,7 @@ class CreateBucketRequest:
     def x_obs_grant_write(self, x_obs_grant_write):
         """Sets the x_obs_grant_write of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有WRITE权限。允许创建、删除、覆盖桶内所有对象，允许初始化段、上传段、拷贝段、合并段、取消多段上传任务。 
+        Grants the write permission to all users under an account. The write permission allows you to create, delete, or overwrite all objects in a bucket, and to initialize, upload, copy, and merge parts, as well as to cancel multipart uploads.
 
         :param x_obs_grant_write: The x_obs_grant_write of this CreateBucketRequest.
         :type x_obs_grant_write: str
@@ -297,7 +297,7 @@ class CreateBucketRequest:
     def x_obs_grant_read_acp(self):
         """Gets the x_obs_grant_read_acp of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有READ_ACP权限。允许读桶的ACL信息。 
+        Grants the ACL read permission to all users under an account. The ACL read permission allows you to read the bucket ACL.
 
         :return: The x_obs_grant_read_acp of this CreateBucketRequest.
         :rtype: str
@@ -308,7 +308,7 @@ class CreateBucketRequest:
     def x_obs_grant_read_acp(self, x_obs_grant_read_acp):
         """Sets the x_obs_grant_read_acp of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有READ_ACP权限。允许读桶的ACL信息。 
+        Grants the ACL read permission to all users under an account. The ACL read permission allows you to read the bucket ACL.
 
         :param x_obs_grant_read_acp: The x_obs_grant_read_acp of this CreateBucketRequest.
         :type x_obs_grant_read_acp: str
@@ -319,7 +319,7 @@ class CreateBucketRequest:
     def x_obs_grant_write_acp(self):
         """Gets the x_obs_grant_write_acp of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有WRITE_ACP权限，允许修改桶的ACL信息。 
+        Grants the ACL write permission to all users under an account. The ACL write permission allows you to modify the bucket ACL.
 
         :return: The x_obs_grant_write_acp of this CreateBucketRequest.
         :rtype: str
@@ -330,7 +330,7 @@ class CreateBucketRequest:
     def x_obs_grant_write_acp(self, x_obs_grant_write_acp):
         """Sets the x_obs_grant_write_acp of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有WRITE_ACP权限，允许修改桶的ACL信息。 
+        Grants the ACL write permission to all users under an account. The ACL write permission allows you to modify the bucket ACL.
 
         :param x_obs_grant_write_acp: The x_obs_grant_write_acp of this CreateBucketRequest.
         :type x_obs_grant_write_acp: str
@@ -341,7 +341,7 @@ class CreateBucketRequest:
     def x_obs_grant_full_control(self):
         """Gets the x_obs_grant_full_control of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有FULL_CONTROL权限。 
+        Grants the full control access to all users under an account.
 
         :return: The x_obs_grant_full_control of this CreateBucketRequest.
         :rtype: str
@@ -352,7 +352,7 @@ class CreateBucketRequest:
     def x_obs_grant_full_control(self, x_obs_grant_full_control):
         """Sets the x_obs_grant_full_control of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有FULL_CONTROL权限。 
+        Grants the full control access to all users under an account.
 
         :param x_obs_grant_full_control: The x_obs_grant_full_control of this CreateBucketRequest.
         :type x_obs_grant_full_control: str
@@ -363,7 +363,7 @@ class CreateBucketRequest:
     def x_obs_grant_read_delivered(self):
         """Gets the x_obs_grant_read_delivered of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有READ权限，并且在默认情况下，该READ权限将传递给桶内所有对象。 
+        Grants the read permission to all users under an account. By default, the read permission is applied to all objects in the bucket.
 
         :return: The x_obs_grant_read_delivered of this CreateBucketRequest.
         :rtype: str
@@ -374,7 +374,7 @@ class CreateBucketRequest:
     def x_obs_grant_read_delivered(self, x_obs_grant_read_delivered):
         """Sets the x_obs_grant_read_delivered of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有READ权限，并且在默认情况下，该READ权限将传递给桶内所有对象。 
+        Grants the read permission to all users under an account. By default, the read permission is applied to all objects in the bucket.
 
         :param x_obs_grant_read_delivered: The x_obs_grant_read_delivered of this CreateBucketRequest.
         :type x_obs_grant_read_delivered: str
@@ -385,7 +385,7 @@ class CreateBucketRequest:
     def x_obs_grant_full_control_delivered(self):
         """Gets the x_obs_grant_full_control_delivered of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有FULL_CONTROL权限，并且在默认情况下，该FULL_CONTROL权限将传递给桶内所有对象。 
+        Grants the full control access to all users under an account. By default, the full control access is applied to all objects in the bucket.
 
         :return: The x_obs_grant_full_control_delivered of this CreateBucketRequest.
         :rtype: str
@@ -396,7 +396,7 @@ class CreateBucketRequest:
     def x_obs_grant_full_control_delivered(self, x_obs_grant_full_control_delivered):
         """Sets the x_obs_grant_full_control_delivered of this CreateBucketRequest.
 
-        授权给指定domain下的所有用户有FULL_CONTROL权限，并且在默认情况下，该FULL_CONTROL权限将传递给桶内所有对象。 
+        Grants the full control access to all users under an account. By default, the full control access is applied to all objects in the bucket.
 
         :param x_obs_grant_full_control_delivered: The x_obs_grant_full_control_delivered of this CreateBucketRequest.
         :type x_obs_grant_full_control_delivered: str
@@ -407,7 +407,7 @@ class CreateBucketRequest:
     def x_obs_az_redundancy(self):
         """Gets the x_obs_az_redundancy of this CreateBucketRequest.
 
-        创建桶时带上此消息头设置桶的存储类型为多AZ。不携带时默认为单AZ。用户携带该头域指定新创的桶的存储类型为多AZ，存在一种情况是当该区域如果不支持多AZ存储，则该桶的存储类型仍为单AZ。 
+        Add this header in a bucket creation request to enable the multi-AZ storage for the bucket. If this header is not carried, single-AZ storage is used for the bucket by default. If the region where you are creating the bucket does not support multi-AZ storage, even if you add this header in the request, the bucket still uses the single-AZ storage.
 
         :return: The x_obs_az_redundancy of this CreateBucketRequest.
         :rtype: str
@@ -418,7 +418,7 @@ class CreateBucketRequest:
     def x_obs_az_redundancy(self, x_obs_az_redundancy):
         """Sets the x_obs_az_redundancy of this CreateBucketRequest.
 
-        创建桶时带上此消息头设置桶的存储类型为多AZ。不携带时默认为单AZ。用户携带该头域指定新创的桶的存储类型为多AZ，存在一种情况是当该区域如果不支持多AZ存储，则该桶的存储类型仍为单AZ。 
+        Add this header in a bucket creation request to enable the multi-AZ storage for the bucket. If this header is not carried, single-AZ storage is used for the bucket by default. If the region where you are creating the bucket does not support multi-AZ storage, even if you add this header in the request, the bucket still uses the single-AZ storage.
 
         :param x_obs_az_redundancy: The x_obs_az_redundancy of this CreateBucketRequest.
         :type x_obs_az_redundancy: str
@@ -429,7 +429,7 @@ class CreateBucketRequest:
     def x_obs_fs_file_interface(self):
         """Gets the x_obs_fs_file_interface of this CreateBucketRequest.
 
-        创建桶时可以带上此消息头以创建并行文件系统。 
+        Specifies a parallel file system during bucket creation.
 
         :return: The x_obs_fs_file_interface of this CreateBucketRequest.
         :rtype: str
@@ -440,7 +440,7 @@ class CreateBucketRequest:
     def x_obs_fs_file_interface(self, x_obs_fs_file_interface):
         """Sets the x_obs_fs_file_interface of this CreateBucketRequest.
 
-        创建桶时可以带上此消息头以创建并行文件系统。 
+        Specifies a parallel file system during bucket creation.
 
         :param x_obs_fs_file_interface: The x_obs_fs_file_interface of this CreateBucketRequest.
         :type x_obs_fs_file_interface: str
@@ -451,7 +451,7 @@ class CreateBucketRequest:
     def x_obs_epid(self):
         """Gets the x_obs_epid of this CreateBucketRequest.
 
-        企业项目id，开通企业项目的用户可以从企业项目服务获取，格式为uuid，默认项目传“0”或者不带该头域，未开通企业项目的用户可以不带该头域。 
+        Enterprise project ID in **UUID** format. If you have enabled the enterprise project function, you can obtain this ID from the enterprise project service. To use the default project, set this header to **0** or do not contain this header in the request. This header is not needed if you do not enable the enterprise project function.
 
         :return: The x_obs_epid of this CreateBucketRequest.
         :rtype: str
@@ -462,7 +462,7 @@ class CreateBucketRequest:
     def x_obs_epid(self, x_obs_epid):
         """Sets the x_obs_epid of this CreateBucketRequest.
 
-        企业项目id，开通企业项目的用户可以从企业项目服务获取，格式为uuid，默认项目传“0”或者不带该头域，未开通企业项目的用户可以不带该头域。 
+        Enterprise project ID in **UUID** format. If you have enabled the enterprise project function, you can obtain this ID from the enterprise project service. To use the default project, set this header to **0** or do not contain this header in the request. This header is not needed if you do not enable the enterprise project function.
 
         :param x_obs_epid: The x_obs_epid of this CreateBucketRequest.
         :type x_obs_epid: str
@@ -473,7 +473,7 @@ class CreateBucketRequest:
     def x_obs_cluster_type(self):
         """Gets the x_obs_cluster_type of this CreateBucketRequest.
 
-        指定桶是创建在公共集群还是专属集群。 
+        Specifies the type (public or dedicated) of the cluster where a bucket is created.
 
         :return: The x_obs_cluster_type of this CreateBucketRequest.
         :rtype: str
@@ -484,7 +484,7 @@ class CreateBucketRequest:
     def x_obs_cluster_type(self, x_obs_cluster_type):
         """Sets the x_obs_cluster_type of this CreateBucketRequest.
 
-        指定桶是创建在公共集群还是专属集群。 
+        Specifies the type (public or dedicated) of the cluster where a bucket is created.
 
         :param x_obs_cluster_type: The x_obs_cluster_type of this CreateBucketRequest.
         :type x_obs_cluster_type: str
@@ -495,7 +495,7 @@ class CreateBucketRequest:
     def x_obs_location_clustergroup_id(self):
         """Gets the x_obs_location_clustergroup_id of this CreateBucketRequest.
 
-        集群显性化创桶时，指定的集群组ID 
+        Cluster group ID when a bucket is explicitly created in a cluster.
 
         :return: The x_obs_location_clustergroup_id of this CreateBucketRequest.
         :rtype: str
@@ -506,7 +506,7 @@ class CreateBucketRequest:
     def x_obs_location_clustergroup_id(self, x_obs_location_clustergroup_id):
         """Sets the x_obs_location_clustergroup_id of this CreateBucketRequest.
 
-        集群显性化创桶时，指定的集群组ID 
+        Cluster group ID when a bucket is explicitly created in a cluster.
 
         :param x_obs_location_clustergroup_id: The x_obs_location_clustergroup_id of this CreateBucketRequest.
         :type x_obs_location_clustergroup_id: str
@@ -517,7 +517,7 @@ class CreateBucketRequest:
     def x_obs_ies_location(self):
         """Gets the x_obs_ies_location of this CreateBucketRequest.
 
-        如果是要创建在IES站点上，则指定IES站点的AZ ID。此参数和x-obs-cluster-type不可共存。 
+        ID of the AZ of the IES site where a bucket is created. This parameter cannot coexist with **x-obs-cluster-type**.
 
         :return: The x_obs_ies_location of this CreateBucketRequest.
         :rtype: str
@@ -528,7 +528,7 @@ class CreateBucketRequest:
     def x_obs_ies_location(self, x_obs_ies_location):
         """Sets the x_obs_ies_location of this CreateBucketRequest.
 
-        如果是要创建在IES站点上，则指定IES站点的AZ ID。此参数和x-obs-cluster-type不可共存。 
+        ID of the AZ of the IES site where a bucket is created. This parameter cannot coexist with **x-obs-cluster-type**.
 
         :param x_obs_ies_location: The x_obs_ies_location of this CreateBucketRequest.
         :type x_obs_ies_location: str

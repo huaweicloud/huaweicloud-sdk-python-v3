@@ -35,11 +35,11 @@ class GetBucketCustomdomainRequest:
 
         The model defined in huaweicloud sdk
 
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param bucket_name: 请求的桶名称。 
+        :param bucket_name: Name of the requested bucket
         :type bucket_name: str
-        :param customdomain: customdomain表示请求桶的自定义域名API。 
+        :param customdomain: Indicates the custom domain name API of the bucket.
         :type customdomain: str
         """
         
@@ -59,7 +59,7 @@ class GetBucketCustomdomainRequest:
     def date(self):
         """Gets the date of this GetBucketCustomdomainRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this GetBucketCustomdomainRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class GetBucketCustomdomainRequest:
     def date(self, date):
         """Sets the date of this GetBucketCustomdomainRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this GetBucketCustomdomainRequest.
         :type date: str
@@ -81,7 +81,7 @@ class GetBucketCustomdomainRequest:
     def bucket_name(self):
         """Gets the bucket_name of this GetBucketCustomdomainRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :return: The bucket_name of this GetBucketCustomdomainRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class GetBucketCustomdomainRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this GetBucketCustomdomainRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :param bucket_name: The bucket_name of this GetBucketCustomdomainRequest.
         :type bucket_name: str
@@ -103,7 +103,7 @@ class GetBucketCustomdomainRequest:
     def customdomain(self):
         """Gets the customdomain of this GetBucketCustomdomainRequest.
 
-        customdomain表示请求桶的自定义域名API。 
+        Indicates the custom domain name API of the bucket.
 
         :return: The customdomain of this GetBucketCustomdomainRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class GetBucketCustomdomainRequest:
     def customdomain(self, customdomain):
         """Sets the customdomain of this GetBucketCustomdomainRequest.
 
-        customdomain表示请求桶的自定义域名API。 
+        Indicates the custom domain name API of the bucket.
 
         :param customdomain: The customdomain of this GetBucketCustomdomainRequest.
         :type customdomain: str

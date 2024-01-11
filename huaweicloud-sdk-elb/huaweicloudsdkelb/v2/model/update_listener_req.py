@@ -27,7 +27,9 @@ class UpdateListenerReq:
         'sni_container_refs': 'list[str]',
         'insert_headers': 'InsertHeader',
         'tls_ciphers_policy': 'str',
-        'admin_state_up': 'bool'
+        'admin_state_up': 'bool',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class UpdateListenerReq:
         'sni_container_refs': 'sni_container_refs',
         'insert_headers': 'insert_headers',
         'tls_ciphers_policy': 'tls_ciphers_policy',
-        'admin_state_up': 'admin_state_up'
+        'admin_state_up': 'admin_state_up',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, name=None, description=None, connection_limit=None, http2_enable=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None, admin_state_up=None):
+    def __init__(self, name=None, description=None, connection_limit=None, http2_enable=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None, admin_state_up=None, protection_status=None, protection_reason=None):
         """UpdateListenerReq
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class UpdateListenerReq:
         :type tls_ciphers_policy: str
         :param admin_state_up: 监听器的管理状态。  该字段为预留字段，暂未启动。只支持设定为true
         :type admin_state_up: bool
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -86,6 +94,8 @@ class UpdateListenerReq:
         self._insert_headers = None
         self._tls_ciphers_policy = None
         self._admin_state_up = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         if name is not None:
@@ -110,6 +120,10 @@ class UpdateListenerReq:
             self.tls_ciphers_policy = tls_ciphers_policy
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def name(self):
@@ -348,6 +362,50 @@ class UpdateListenerReq:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this UpdateListenerReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this UpdateListenerReq.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this UpdateListenerReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this UpdateListenerReq.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this UpdateListenerReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this UpdateListenerReq.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this UpdateListenerReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this UpdateListenerReq.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

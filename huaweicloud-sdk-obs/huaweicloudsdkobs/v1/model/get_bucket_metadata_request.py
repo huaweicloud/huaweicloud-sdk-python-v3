@@ -37,13 +37,13 @@ class GetBucketMetadataRequest:
 
         The model defined in huaweicloud sdk
 
-        :param bucket_name: 桶名称。 
+        :param bucket_name: Name of the bucket.
         :type bucket_name: str
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param origin: 预请求指定的跨域请求Origin（通常为域名）。 如果想要获取CORS配置信息，必添加该消息头。 
+        :param origin: Origin (usually a domain name) specified by the pre-request (a cross-origin request). To obtain the CORS configuration information, you must add this header.
         :type origin: str
-        :param access_control_request_headers: 实际请求可以带的HTTP头域，可以带多个头域。 如果想要获取CORS配置信息，可选添加该消息头。 
+        :param access_control_request_headers: HTTP headers that can be contained in a request. To obtain the CORS configuration information, you can add this header.
         :type access_control_request_headers: str
         """
         
@@ -67,7 +67,7 @@ class GetBucketMetadataRequest:
     def bucket_name(self):
         """Gets the bucket_name of this GetBucketMetadataRequest.
 
-        桶名称。 
+        Name of the bucket.
 
         :return: The bucket_name of this GetBucketMetadataRequest.
         :rtype: str
@@ -78,7 +78,7 @@ class GetBucketMetadataRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this GetBucketMetadataRequest.
 
-        桶名称。 
+        Name of the bucket.
 
         :param bucket_name: The bucket_name of this GetBucketMetadataRequest.
         :type bucket_name: str
@@ -89,7 +89,7 @@ class GetBucketMetadataRequest:
     def date(self):
         """Gets the date of this GetBucketMetadataRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this GetBucketMetadataRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class GetBucketMetadataRequest:
     def date(self, date):
         """Sets the date of this GetBucketMetadataRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this GetBucketMetadataRequest.
         :type date: str
@@ -111,7 +111,7 @@ class GetBucketMetadataRequest:
     def origin(self):
         """Gets the origin of this GetBucketMetadataRequest.
 
-        预请求指定的跨域请求Origin（通常为域名）。 如果想要获取CORS配置信息，必添加该消息头。 
+        Origin (usually a domain name) specified by the pre-request (a cross-origin request). To obtain the CORS configuration information, you must add this header.
 
         :return: The origin of this GetBucketMetadataRequest.
         :rtype: str
@@ -122,7 +122,7 @@ class GetBucketMetadataRequest:
     def origin(self, origin):
         """Sets the origin of this GetBucketMetadataRequest.
 
-        预请求指定的跨域请求Origin（通常为域名）。 如果想要获取CORS配置信息，必添加该消息头。 
+        Origin (usually a domain name) specified by the pre-request (a cross-origin request). To obtain the CORS configuration information, you must add this header.
 
         :param origin: The origin of this GetBucketMetadataRequest.
         :type origin: str
@@ -133,7 +133,7 @@ class GetBucketMetadataRequest:
     def access_control_request_headers(self):
         """Gets the access_control_request_headers of this GetBucketMetadataRequest.
 
-        实际请求可以带的HTTP头域，可以带多个头域。 如果想要获取CORS配置信息，可选添加该消息头。 
+        HTTP headers that can be contained in a request. To obtain the CORS configuration information, you can add this header.
 
         :return: The access_control_request_headers of this GetBucketMetadataRequest.
         :rtype: str
@@ -144,7 +144,7 @@ class GetBucketMetadataRequest:
     def access_control_request_headers(self, access_control_request_headers):
         """Sets the access_control_request_headers of this GetBucketMetadataRequest.
 
-        实际请求可以带的HTTP头域，可以带多个头域。 如果想要获取CORS配置信息，可选添加该消息头。 
+        HTTP headers that can be contained in a request. To obtain the CORS configuration information, you can add this header.
 
         :param access_control_request_headers: The access_control_request_headers of this GetBucketMetadataRequest.
         :type access_control_request_headers: str

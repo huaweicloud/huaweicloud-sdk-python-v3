@@ -33,7 +33,7 @@ class ShowConsistencyTaskDetailRequest:
 
         :param id: 对账作业ID
         :type id: str
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         """
         
@@ -72,7 +72,7 @@ class ShowConsistencyTaskDetailRequest:
     def workspace(self):
         """Gets the workspace of this ShowConsistencyTaskDetailRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ShowConsistencyTaskDetailRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowConsistencyTaskDetailRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowConsistencyTaskDetailRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ShowConsistencyTaskDetailRequest.
         :type workspace: str

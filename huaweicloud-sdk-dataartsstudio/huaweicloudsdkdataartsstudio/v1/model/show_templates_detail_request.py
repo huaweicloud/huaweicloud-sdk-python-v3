@@ -33,7 +33,7 @@ class ShowTemplatesDetailRequest:
 
         :param id: id
         :type id: int
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         """
         
@@ -72,7 +72,7 @@ class ShowTemplatesDetailRequest:
     def workspace(self):
         """Gets the workspace of this ShowTemplatesDetailRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ShowTemplatesDetailRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowTemplatesDetailRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowTemplatesDetailRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ShowTemplatesDetailRequest.
         :type workspace: str

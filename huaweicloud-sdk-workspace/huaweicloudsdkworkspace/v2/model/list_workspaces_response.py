@@ -41,6 +41,8 @@ class ListWorkspacesResponse(SdkResponse):
         'fail_reason': 'str',
         'enterprise_id': 'str',
         'is_send_email': 'bool',
+        'authorized_collect_log': 'bool',
+        'authorized_hda_upgrade': 'bool',
         'dc_vnc_ip': 'str'
     }
 
@@ -68,10 +70,12 @@ class ListWorkspacesResponse(SdkResponse):
         'fail_reason': 'fail_reason',
         'enterprise_id': 'enterprise_id',
         'is_send_email': 'is_send_email',
+        'authorized_collect_log': 'authorized_collect_log',
+        'authorized_hda_upgrade': 'authorized_hda_upgrade',
         'dc_vnc_ip': 'dc_vnc_ip'
     }
 
-    def __init__(self, id=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, is_send_email=None, dc_vnc_ip=None):
+    def __init__(self, id=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, is_send_email=None, authorized_collect_log=None, authorized_hda_upgrade=None, dc_vnc_ip=None):
         """ListWorkspacesResponse
 
         The model defined in huaweicloud sdk
@@ -96,7 +100,7 @@ class ListWorkspacesResponse(SdkResponse):
         :type internet_access_port: str
         :param status: 云办公服务的状态。 - PREPARING：准备开通。 - SUBSCRIBING：开通中。 - SUBSCRIBED：已开通。 - SUBSCRIPTION_FAILED：开通失败。 - DEREGISTERING：销户中。 - DEREGISTRATION_FAILED：销户失败。 - CLOSED：已销户未开通。
         :type status: str
-        :param access_status: 互联网和专线切换任务的状态。 - init： 初始化 - 开通服务后的初始状态。 - available： 可用 - 执行过任务且成功后恢复的正常状态。 - internetOpening： 开启中 - 开通互联网接入开启中。 - dedicatedOpening： 开启中 - 开通专线接入开启中。 - internetOpenFailed： 开启失败 - 开通互联网接入开启失败。 - dedicatedOpenFailed： 开启失败 - 开通专线接入开启失败。 - openSuccess： 开启成功 - 开通互联网接入成功。 - internetClosing： 关闭中 - 关闭互联网接入关闭中。 - dedicatedClosing： 关闭中 - 关闭专线接入关闭中。 - internetCloseFailed： 关闭失败 - 关闭互联网接入方式失败。 - dedicatedCloseFailed： 关闭失败 - 关闭专线接入方式失败。 - closeSuccess： 关闭成功 - 关闭接入方式成功。 - internetAccessPortModifying： 互联网接入端口修改中。 - internetAccessPortModifyFailed： 端口修改失败。
+        :param access_status: 互联网和专线切换任务的状态。 - init： 初始化 - 开通服务后的初始状态。 - available： 可用 - 执行过任务且成功后恢复的正常状态。 - internetOpening： 开启中 - 开通互联网接入开启中。 - dedicatedOpening： 开启中 - 开通专线接入开启中。 - internetOpenFailed： 开启失败 - 开通互联网接入开启失败。 - dedicatedOpenFailed： 开启失败 - 开通专线接入开启失败。 - openSuccess： 开启成功 - 开通接入方式成功。 - internetClosing： 关闭中 - 关闭互联网接入关闭中。 - dedicatedClosing： 关闭中 - 关闭专线接入关闭中。 - internetCloseFailed： 关闭失败 - 关闭互联网接入方式失败。 - dedicatedCloseFailed： 关闭失败 - 关闭专线接入方式失败。 - closeSuccess： 关闭成功 - 关闭接入方式成功。 - internetAccessPortModifying： 互联网接入端口修改中。 - internetAccessPortModifyFailed： 端口修改失败。
         :type access_status: str
         :param subnet_ids: 业务子网，可以指定返回的网络ID订购桌面。
         :type subnet_ids: list[:class:`huaweicloudsdkworkspace.v2.SubnetInfo`]
@@ -122,6 +126,10 @@ class ListWorkspacesResponse(SdkResponse):
         :type enterprise_id: str
         :param is_send_email: 桌面退订是否发送邮件通知。
         :type is_send_email: bool
+        :param authorized_collect_log: 是否授权收集日志。
+        :type authorized_collect_log: bool
+        :param authorized_hda_upgrade: 是否授权hda升级。
+        :type authorized_hda_upgrade: bool
         :param dc_vnc_ip: 自定义的专线VNC地址
         :type dc_vnc_ip: str
         """
@@ -151,6 +159,8 @@ class ListWorkspacesResponse(SdkResponse):
         self._fail_reason = None
         self._enterprise_id = None
         self._is_send_email = None
+        self._authorized_collect_log = None
+        self._authorized_hda_upgrade = None
         self._dc_vnc_ip = None
         self.discriminator = None
 
@@ -200,6 +210,10 @@ class ListWorkspacesResponse(SdkResponse):
             self.enterprise_id = enterprise_id
         if is_send_email is not None:
             self.is_send_email = is_send_email
+        if authorized_collect_log is not None:
+            self.authorized_collect_log = authorized_collect_log
+        if authorized_hda_upgrade is not None:
+            self.authorized_hda_upgrade = authorized_hda_upgrade
         if dc_vnc_ip is not None:
             self.dc_vnc_ip = dc_vnc_ip
 
@@ -423,7 +437,7 @@ class ListWorkspacesResponse(SdkResponse):
     def access_status(self):
         """Gets the access_status of this ListWorkspacesResponse.
 
-        互联网和专线切换任务的状态。 - init： 初始化 - 开通服务后的初始状态。 - available： 可用 - 执行过任务且成功后恢复的正常状态。 - internetOpening： 开启中 - 开通互联网接入开启中。 - dedicatedOpening： 开启中 - 开通专线接入开启中。 - internetOpenFailed： 开启失败 - 开通互联网接入开启失败。 - dedicatedOpenFailed： 开启失败 - 开通专线接入开启失败。 - openSuccess： 开启成功 - 开通互联网接入成功。 - internetClosing： 关闭中 - 关闭互联网接入关闭中。 - dedicatedClosing： 关闭中 - 关闭专线接入关闭中。 - internetCloseFailed： 关闭失败 - 关闭互联网接入方式失败。 - dedicatedCloseFailed： 关闭失败 - 关闭专线接入方式失败。 - closeSuccess： 关闭成功 - 关闭接入方式成功。 - internetAccessPortModifying： 互联网接入端口修改中。 - internetAccessPortModifyFailed： 端口修改失败。
+        互联网和专线切换任务的状态。 - init： 初始化 - 开通服务后的初始状态。 - available： 可用 - 执行过任务且成功后恢复的正常状态。 - internetOpening： 开启中 - 开通互联网接入开启中。 - dedicatedOpening： 开启中 - 开通专线接入开启中。 - internetOpenFailed： 开启失败 - 开通互联网接入开启失败。 - dedicatedOpenFailed： 开启失败 - 开通专线接入开启失败。 - openSuccess： 开启成功 - 开通接入方式成功。 - internetClosing： 关闭中 - 关闭互联网接入关闭中。 - dedicatedClosing： 关闭中 - 关闭专线接入关闭中。 - internetCloseFailed： 关闭失败 - 关闭互联网接入方式失败。 - dedicatedCloseFailed： 关闭失败 - 关闭专线接入方式失败。 - closeSuccess： 关闭成功 - 关闭接入方式成功。 - internetAccessPortModifying： 互联网接入端口修改中。 - internetAccessPortModifyFailed： 端口修改失败。
 
         :return: The access_status of this ListWorkspacesResponse.
         :rtype: str
@@ -434,7 +448,7 @@ class ListWorkspacesResponse(SdkResponse):
     def access_status(self, access_status):
         """Sets the access_status of this ListWorkspacesResponse.
 
-        互联网和专线切换任务的状态。 - init： 初始化 - 开通服务后的初始状态。 - available： 可用 - 执行过任务且成功后恢复的正常状态。 - internetOpening： 开启中 - 开通互联网接入开启中。 - dedicatedOpening： 开启中 - 开通专线接入开启中。 - internetOpenFailed： 开启失败 - 开通互联网接入开启失败。 - dedicatedOpenFailed： 开启失败 - 开通专线接入开启失败。 - openSuccess： 开启成功 - 开通互联网接入成功。 - internetClosing： 关闭中 - 关闭互联网接入关闭中。 - dedicatedClosing： 关闭中 - 关闭专线接入关闭中。 - internetCloseFailed： 关闭失败 - 关闭互联网接入方式失败。 - dedicatedCloseFailed： 关闭失败 - 关闭专线接入方式失败。 - closeSuccess： 关闭成功 - 关闭接入方式成功。 - internetAccessPortModifying： 互联网接入端口修改中。 - internetAccessPortModifyFailed： 端口修改失败。
+        互联网和专线切换任务的状态。 - init： 初始化 - 开通服务后的初始状态。 - available： 可用 - 执行过任务且成功后恢复的正常状态。 - internetOpening： 开启中 - 开通互联网接入开启中。 - dedicatedOpening： 开启中 - 开通专线接入开启中。 - internetOpenFailed： 开启失败 - 开通互联网接入开启失败。 - dedicatedOpenFailed： 开启失败 - 开通专线接入开启失败。 - openSuccess： 开启成功 - 开通接入方式成功。 - internetClosing： 关闭中 - 关闭互联网接入关闭中。 - dedicatedClosing： 关闭中 - 关闭专线接入关闭中。 - internetCloseFailed： 关闭失败 - 关闭互联网接入方式失败。 - dedicatedCloseFailed： 关闭失败 - 关闭专线接入方式失败。 - closeSuccess： 关闭成功 - 关闭接入方式成功。 - internetAccessPortModifying： 互联网接入端口修改中。 - internetAccessPortModifyFailed： 端口修改失败。
 
         :param access_status: The access_status of this ListWorkspacesResponse.
         :type access_status: str
@@ -696,6 +710,50 @@ class ListWorkspacesResponse(SdkResponse):
         :type is_send_email: bool
         """
         self._is_send_email = is_send_email
+
+    @property
+    def authorized_collect_log(self):
+        """Gets the authorized_collect_log of this ListWorkspacesResponse.
+
+        是否授权收集日志。
+
+        :return: The authorized_collect_log of this ListWorkspacesResponse.
+        :rtype: bool
+        """
+        return self._authorized_collect_log
+
+    @authorized_collect_log.setter
+    def authorized_collect_log(self, authorized_collect_log):
+        """Sets the authorized_collect_log of this ListWorkspacesResponse.
+
+        是否授权收集日志。
+
+        :param authorized_collect_log: The authorized_collect_log of this ListWorkspacesResponse.
+        :type authorized_collect_log: bool
+        """
+        self._authorized_collect_log = authorized_collect_log
+
+    @property
+    def authorized_hda_upgrade(self):
+        """Gets the authorized_hda_upgrade of this ListWorkspacesResponse.
+
+        是否授权hda升级。
+
+        :return: The authorized_hda_upgrade of this ListWorkspacesResponse.
+        :rtype: bool
+        """
+        return self._authorized_hda_upgrade
+
+    @authorized_hda_upgrade.setter
+    def authorized_hda_upgrade(self, authorized_hda_upgrade):
+        """Sets the authorized_hda_upgrade of this ListWorkspacesResponse.
+
+        是否授权hda升级。
+
+        :param authorized_hda_upgrade: The authorized_hda_upgrade of this ListWorkspacesResponse.
+        :type authorized_hda_upgrade: bool
+        """
+        self._authorized_hda_upgrade = authorized_hda_upgrade
 
     @property
     def dc_vnc_ip(self):

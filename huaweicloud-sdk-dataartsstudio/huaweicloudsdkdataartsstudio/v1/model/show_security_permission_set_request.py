@@ -33,7 +33,7 @@ class ShowSecurityPermissionSetRequest:
 
         :param permission_set_id: 权限集id
         :type permission_set_id: str
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         """
         
@@ -72,7 +72,7 @@ class ShowSecurityPermissionSetRequest:
     def workspace(self):
         """Gets the workspace of this ShowSecurityPermissionSetRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ShowSecurityPermissionSetRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowSecurityPermissionSetRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowSecurityPermissionSetRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ShowSecurityPermissionSetRequest.
         :type workspace: str

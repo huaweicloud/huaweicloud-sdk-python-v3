@@ -123,7 +123,7 @@ class LoadBalancer:
         :type description: str
         :param provisioning_status: 负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
         :type provisioning_status: str
-        :param admin_state_up: 负载均衡器的管理状态。取值：false停用，true启用。
+        :param admin_state_up: 负载均衡器的启用状态。取值：false停用，true启用。
         :type admin_state_up: bool
         :param provider: 负载均衡器的生产者名称。固定为vlb。
         :type provider: str
@@ -167,11 +167,11 @@ class LoadBalancer:
         :type enterprise_project_id: str
         :param billing_info: 资源账单信息。  取值： - 空：按需计费。 [- 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type billing_info: str
-        :param l4_flavor_id: 四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        :param l4_flavor_id: 网络型规格ID。  对于弹性扩缩容实例，表示上限规格。  当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type l4_flavor_id: str
         :param l4_scale_flavor_id: 四层弹性Flavor ID。  不支持该字段，请勿使用。
         :type l4_scale_flavor_id: str
-        :param l7_flavor_id: 七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        :param l7_flavor_id: 应用型ID。 对于弹性扩缩容实例，表示上限规格ID。  当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type l7_flavor_id: str
         :param l7_scale_flavor_id: 七层弹性Flavor ID。  不支持该字段，请勿使用。
         :type l7_scale_flavor_id: str
@@ -383,7 +383,7 @@ class LoadBalancer:
     def admin_state_up(self):
         """Gets the admin_state_up of this LoadBalancer.
 
-        负载均衡器的管理状态。取值：false停用，true启用。
+        负载均衡器的启用状态。取值：false停用，true启用。
 
         :return: The admin_state_up of this LoadBalancer.
         :rtype: bool
@@ -394,7 +394,7 @@ class LoadBalancer:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this LoadBalancer.
 
-        负载均衡器的管理状态。取值：false停用，true启用。
+        负载均衡器的启用状态。取值：false停用，true启用。
 
         :param admin_state_up: The admin_state_up of this LoadBalancer.
         :type admin_state_up: bool
@@ -867,7 +867,7 @@ class LoadBalancer:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this LoadBalancer.
 
-        四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        网络型规格ID。  对于弹性扩缩容实例，表示上限规格。  当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The l4_flavor_id of this LoadBalancer.
         :rtype: str
@@ -878,7 +878,7 @@ class LoadBalancer:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this LoadBalancer.
 
-        四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        网络型规格ID。  对于弹性扩缩容实例，表示上限规格。  当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param l4_flavor_id: The l4_flavor_id of this LoadBalancer.
         :type l4_flavor_id: str
@@ -911,7 +911,7 @@ class LoadBalancer:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this LoadBalancer.
 
-        七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        应用型ID。 对于弹性扩缩容实例，表示上限规格ID。  当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The l7_flavor_id of this LoadBalancer.
         :rtype: str
@@ -922,7 +922,7 @@ class LoadBalancer:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this LoadBalancer.
 
-        七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        应用型ID。 对于弹性扩缩容实例，表示上限规格ID。  当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param l7_flavor_id: The l7_flavor_id of this LoadBalancer.
         :type l7_flavor_id: str

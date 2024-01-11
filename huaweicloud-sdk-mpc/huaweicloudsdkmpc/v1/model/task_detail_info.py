@@ -19,6 +19,7 @@ class TaskDetailInfo:
     openapi_types = {
         'task_id': 'str',
         'status': 'str',
+        'progress': 'int',
         'create_time': 'str',
         'start_time': 'str',
         'end_time': 'str',
@@ -34,6 +35,7 @@ class TaskDetailInfo:
     attribute_map = {
         'task_id': 'task_id',
         'status': 'status',
+        'progress': 'progress',
         'create_time': 'create_time',
         'start_time': 'start_time',
         'end_time': 'end_time',
@@ -46,7 +48,7 @@ class TaskDetailInfo:
         'xcode_error': 'xcode_error'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, input=None, output=None, user_data=None, error_code=None, description=None, media_detail=None, xcode_error=None):
+    def __init__(self, task_id=None, status=None, progress=None, create_time=None, start_time=None, end_time=None, input=None, output=None, user_data=None, error_code=None, description=None, media_detail=None, xcode_error=None):
         """TaskDetailInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class TaskDetailInfo:
         :type task_id: str
         :param status: 任务执行状态，取值如下。 
         :type status: str
+        :param progress: 任务执行进度百分比, 取值范围：[0, 100]。 
+        :type progress: int
         :param create_time: 转码任务启动时间 
         :type create_time: str
         :param start_time: 下发xcode任务成功时间 
@@ -81,6 +85,7 @@ class TaskDetailInfo:
 
         self._task_id = None
         self._status = None
+        self._progress = None
         self._create_time = None
         self._start_time = None
         self._end_time = None
@@ -97,6 +102,8 @@ class TaskDetailInfo:
             self.task_id = task_id
         if status is not None:
             self.status = status
+        if progress is not None:
+            self.progress = progress
         if create_time is not None:
             self.create_time = create_time
         if start_time is not None:
@@ -161,6 +168,28 @@ class TaskDetailInfo:
         :type status: str
         """
         self._status = status
+
+    @property
+    def progress(self):
+        """Gets the progress of this TaskDetailInfo.
+
+        任务执行进度百分比, 取值范围：[0, 100]。 
+
+        :return: The progress of this TaskDetailInfo.
+        :rtype: int
+        """
+        return self._progress
+
+    @progress.setter
+    def progress(self, progress):
+        """Sets the progress of this TaskDetailInfo.
+
+        任务执行进度百分比, 取值范围：[0, 100]。 
+
+        :param progress: The progress of this TaskDetailInfo.
+        :type progress: int
+        """
+        self._progress = progress
 
     @property
     def create_time(self):

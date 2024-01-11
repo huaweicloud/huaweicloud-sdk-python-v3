@@ -20,17 +20,21 @@ class AddNicsRequestBody:
         'vpc_id': 'str',
         'security_groups': 'list[BaseId]',
         'subnet_id': 'str',
-        'nic_num': 'int'
+        'nic_num': 'int',
+        'ipv6_enable': 'bool',
+        'ipv6_bandwidth': 'Ipv6BandwidthForNic'
     }
 
     attribute_map = {
         'vpc_id': 'vpc_id',
         'security_groups': 'security_groups',
         'subnet_id': 'subnet_id',
-        'nic_num': 'nic_num'
+        'nic_num': 'nic_num',
+        'ipv6_enable': 'ipv6_enable',
+        'ipv6_bandwidth': 'ipv6_bandwidth'
     }
 
-    def __init__(self, vpc_id=None, security_groups=None, subnet_id=None, nic_num=None):
+    def __init__(self, vpc_id=None, security_groups=None, subnet_id=None, nic_num=None, ipv6_enable=None, ipv6_bandwidth=None):
         """AddNicsRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class AddNicsRequestBody:
         :type subnet_id: str
         :param nic_num: 待添加网卡数量。
         :type nic_num: int
+        :param ipv6_enable: 是否支持IPv6  取值为true时，标识此网卡支持IPv6。
+        :type ipv6_enable: bool
+        :param ipv6_bandwidth: 
+        :type ipv6_bandwidth: :class:`huaweicloudsdkiec.v1.Ipv6BandwidthForNic`
         """
         
         
@@ -51,6 +59,8 @@ class AddNicsRequestBody:
         self._security_groups = None
         self._subnet_id = None
         self._nic_num = None
+        self._ipv6_enable = None
+        self._ipv6_bandwidth = None
         self.discriminator = None
 
         self.vpc_id = vpc_id
@@ -58,6 +68,10 @@ class AddNicsRequestBody:
         if subnet_id is not None:
             self.subnet_id = subnet_id
         self.nic_num = nic_num
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if ipv6_bandwidth is not None:
+            self.ipv6_bandwidth = ipv6_bandwidth
 
     @property
     def vpc_id(self):
@@ -146,6 +160,46 @@ class AddNicsRequestBody:
         :type nic_num: int
         """
         self._nic_num = nic_num
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this AddNicsRequestBody.
+
+        是否支持IPv6  取值为true时，标识此网卡支持IPv6。
+
+        :return: The ipv6_enable of this AddNicsRequestBody.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this AddNicsRequestBody.
+
+        是否支持IPv6  取值为true时，标识此网卡支持IPv6。
+
+        :param ipv6_enable: The ipv6_enable of this AddNicsRequestBody.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def ipv6_bandwidth(self):
+        """Gets the ipv6_bandwidth of this AddNicsRequestBody.
+
+        :return: The ipv6_bandwidth of this AddNicsRequestBody.
+        :rtype: :class:`huaweicloudsdkiec.v1.Ipv6BandwidthForNic`
+        """
+        return self._ipv6_bandwidth
+
+    @ipv6_bandwidth.setter
+    def ipv6_bandwidth(self, ipv6_bandwidth):
+        """Sets the ipv6_bandwidth of this AddNicsRequestBody.
+
+        :param ipv6_bandwidth: The ipv6_bandwidth of this AddNicsRequestBody.
+        :type ipv6_bandwidth: :class:`huaweicloudsdkiec.v1.Ipv6BandwidthForNic`
+        """
+        self._ipv6_bandwidth = ipv6_bandwidth
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,7 +26,8 @@ class ShowEquipmentOspfResponse(SdkResponse):
         'interfaces': 'list[str]',
         'filter_enabled': 'bool',
         'trust_list': 'list[str]',
-        'block_list': 'list[str]'
+        'block_list': 'list[str]',
+        'cloud_subnet_list': 'list[str]'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class ShowEquipmentOspfResponse(SdkResponse):
         'interfaces': 'interfaces',
         'filter_enabled': 'filter_enabled',
         'trust_list': 'trust_list',
-        'block_list': 'block_list'
+        'block_list': 'block_list',
+        'cloud_subnet_list': 'cloud_subnet_list'
     }
 
-    def __init__(self, ospf_enabled=None, area_id=None, post_to_cloud=None, hello_timer=None, router_id=None, interfaces=None, filter_enabled=None, trust_list=None, block_list=None):
+    def __init__(self, ospf_enabled=None, area_id=None, post_to_cloud=None, hello_timer=None, router_id=None, interfaces=None, filter_enabled=None, trust_list=None, block_list=None, cloud_subnet_list=None):
         """ShowEquipmentOspfResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +66,8 @@ class ShowEquipmentOspfResponse(SdkResponse):
         :type trust_list: list[str]
         :param block_list: 黑名单列表
         :type block_list: list[str]
+        :param cloud_subnet_list: 上云子网列表
+        :type cloud_subnet_list: list[str]
         """
         
         super(ShowEquipmentOspfResponse, self).__init__()
@@ -77,6 +81,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
         self._filter_enabled = None
         self._trust_list = None
         self._block_list = None
+        self._cloud_subnet_list = None
         self.discriminator = None
 
         if ospf_enabled is not None:
@@ -97,6 +102,8 @@ class ShowEquipmentOspfResponse(SdkResponse):
             self.trust_list = trust_list
         if block_list is not None:
             self.block_list = block_list
+        if cloud_subnet_list is not None:
+            self.cloud_subnet_list = cloud_subnet_list
 
     @property
     def ospf_enabled(self):
@@ -295,6 +302,28 @@ class ShowEquipmentOspfResponse(SdkResponse):
         :type block_list: list[str]
         """
         self._block_list = block_list
+
+    @property
+    def cloud_subnet_list(self):
+        """Gets the cloud_subnet_list of this ShowEquipmentOspfResponse.
+
+        上云子网列表
+
+        :return: The cloud_subnet_list of this ShowEquipmentOspfResponse.
+        :rtype: list[str]
+        """
+        return self._cloud_subnet_list
+
+    @cloud_subnet_list.setter
+    def cloud_subnet_list(self, cloud_subnet_list):
+        """Sets the cloud_subnet_list of this ShowEquipmentOspfResponse.
+
+        上云子网列表
+
+        :param cloud_subnet_list: The cloud_subnet_list of this ShowEquipmentOspfResponse.
+        :type cloud_subnet_list: list[str]
+        """
+        self._cloud_subnet_list = cloud_subnet_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

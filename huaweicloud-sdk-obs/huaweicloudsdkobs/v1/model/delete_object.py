@@ -33,9 +33,9 @@ class DeleteObject:
 
         The model defined in huaweicloud sdk
 
-        :param key: 待删除的对象Key。如果设置了EncodingType元素，对象Key需要按照对应的编码类型进行编码。 
+        :param key: Key of the object to be deleted. If **EncodingType** is specified, the object key must be encoded as configured.
         :type key: str
-        :param version_id: 待删除的对象版本号。 
+        :param version_id: Version ID of the object to be deleted
         :type version_id: str
         """
         
@@ -54,7 +54,7 @@ class DeleteObject:
     def key(self):
         """Gets the key of this DeleteObject.
 
-        待删除的对象Key。如果设置了EncodingType元素，对象Key需要按照对应的编码类型进行编码。 
+        Key of the object to be deleted. If **EncodingType** is specified, the object key must be encoded as configured.
 
         :return: The key of this DeleteObject.
         :rtype: str
@@ -65,7 +65,7 @@ class DeleteObject:
     def key(self, key):
         """Sets the key of this DeleteObject.
 
-        待删除的对象Key。如果设置了EncodingType元素，对象Key需要按照对应的编码类型进行编码。 
+        Key of the object to be deleted. If **EncodingType** is specified, the object key must be encoded as configured.
 
         :param key: The key of this DeleteObject.
         :type key: str
@@ -76,7 +76,7 @@ class DeleteObject:
     def version_id(self):
         """Gets the version_id of this DeleteObject.
 
-        待删除的对象版本号。 
+        Version ID of the object to be deleted
 
         :return: The version_id of this DeleteObject.
         :rtype: str
@@ -87,7 +87,7 @@ class DeleteObject:
     def version_id(self, version_id):
         """Sets the version_id of this DeleteObject.
 
-        待删除的对象版本号。 
+        Version ID of the object to be deleted
 
         :param version_id: The version_id of this DeleteObject.
         :type version_id: str

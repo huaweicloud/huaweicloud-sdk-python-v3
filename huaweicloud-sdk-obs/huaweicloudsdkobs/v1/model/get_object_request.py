@@ -69,45 +69,45 @@ class GetObjectRequest:
 
         The model defined in huaweicloud sdk
 
-        :param bucket_name: 桶名称 
+        :param bucket_name: Name of the bucket.
         :type bucket_name: str
-        :param object_key: 通过此请求下载的对象名称。 
+        :param object_key: Object key for which this operation was initiated.
         :type object_key: str
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param response_content_type: 重写响应中的Content-Type头。 
+        :param response_content_type: Overrides the **Content-Type** header in the response.
         :type response_content_type: str
-        :param response_content_language: 重写响应中的Content-Language头。 
+        :param response_content_language: Overrides the **Content-Language** header in the response.
         :type response_content_language: str
-        :param response_expires: 重写响应中的Expires头。 
+        :param response_expires: Overrides the **Expires** header in the response.
         :type response_expires: str
-        :param response_cache_control: 重写响应中的Cache-Control头。 
+        :param response_cache_control: Overrides the **Cache-Control** header in the response.
         :type response_cache_control: str
-        :param response_content_disposition: 重写响应中的Content-Disposition头。  示例：response-content-disposition&#x3D;attachment; filename*&#x3D;utf-8&#39;&#39;name1  下载对象重命名为“name1”，如果name1中存在中文，需要将中文进行URL编码。 
+        :param response_content_disposition: Overrides the **Content-Disposition** header in the response.  Example: response-content-disposition&#x3D;attachment; filename*&#x3D;utf-8&#39;&#39;name1  In this example, the downloaded object is renamed **name1**. If **name1** contains Chinese characters, the Chinese characters must be URL-encoded.
         :type response_content_disposition: str
-        :param response_content_encoding: 重写响应中的Content-Encoding头。 
+        :param response_content_encoding: Overrides the **Content-Encoding** header in the response.
         :type response_content_encoding: str
-        :param version_id: 指定获取对象的版本号。 
+        :param version_id: Version ID of the object you want to download.
         :type version_id: str
-        :param x_image_process: 图片处理服务。  示例：  命令方式：x-image-process&#x3D;image/commands  样式方式：x-image-process&#x3D;style/stylename  详见[《图片处理特性指南》](https://support.huaweicloud.com/fg-obs/obs_01_0001.html)。 
+        :param x_image_process: Image processing service.Examples:Command: x-image-process&#x3D;image/commandsStyle: x-image-process&#x3D;style/stylenameFor details, see the [Image Processing Feature Guide](https://support.huaweicloud.com/intl/en-us/fg-obs/obs_01_0001.html).
         :type x_image_process: str
-        :param attname: 重写响应中的Content-Disposition头。  示例：attname&#x3D;name1  下载对象重命名为“name1”。 
+        :param attname: Overrides the **Content-Disposition** header in the response.  Example: attname&#x3D;name1  The downloaded object is renamed **name1**.
         :type attname: str
-        :param range: 获取对象时，获取在Range范围内的对象内容。如果Range不合法则忽略此字段获取整个对象。  Range是一个范围，它的起始值最小为0，最大为对象长度减1。Range范围的起始值为必填项，如果Range只包含起始值，表示获取起始值到对象长度减1这个区间的对象内容。  携带Range头域后，响应消息的ETag仍是对象的ETag，而不是Range范围内对象的ETag。  bytes&#x3D;byte_range  示例1：bytes&#x3D;0-4 示例2：bytes&#x3D;1024 示例3：bytes&#x3D;10-20,30-40（表示多个区间） 
+        :param range: Obtains the content within the scope defined by **Range**. If the **Range** header is invalid, the entire object is obtained.**Range** consists of a start value and an end value. Its start value is mandatory and ranges from 0 to the object length minus 1. If **Range** contains only a start value, the object content from the start value to the default maximum start value is obtained.With the **Range** header carried, the ETag in the response is still the ETag of the object, instead of that of the object content defined by the **Range** header.bytes&#x3D;byte_rangeExample 1: bytes&#x3D;0-4Example 2: bytes&#x3D;1024Example 3: bytes&#x3D;10-20,30-40 (multiple ranges)
         :type range: str
-        :param if_modified_since: 如果对象在请求中指定的时间之后有修改，则返回对象内容；否则的话返回304（not modified）。  类型：符合http://www.ietf.org/rfc/rfc2616.txt规定格式的HTTP时间字符串。 
+        :param if_modified_since: Returns the object only if it has been modified since the time specified in the request, or **304 Not Modified** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
         :type if_modified_since: str
-        :param if_unmodified_since: 如果对象在请求中指定的时间之后没有修改，则返回对象内容；否则的话返回412（precondition failed）。  类型：符合http://www.ietf.org/rfc/rfc2616.txt规定格式的HTTP时间字符串。 
+        :param if_unmodified_since: Returns the object only if it has not been modified since the time specified in the request, or **412 Precondition Failed** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
         :type if_unmodified_since: str
-        :param if_match: 如果对象的ETag和请求中指定的ETag相同，则返回对象内容，否则的话返回412（precondition failed）。  （ETag值，例：0f64741bf7cb1089e988e4585d0d3434。） 
+        :param if_match: Returns the object only if its ETag is the same as the one specified in the request, or **412 Precondition Failed** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
         :type if_match: str
-        :param if_none_match: 如果对象的ETag和请求中指定的ETag不相同，则返回对象内容，否则的话返回304（not modified）。  （ETag值，例：0f64741bf7cb1089e988e4585d0d3434。） 
+        :param if_none_match: Returns the object only if its ETag is different from the one specified in the request, or **304 Not Modified** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
         :type if_none_match: str
-        :param x_obs_server_side_encryption_customer_algorithm: SSE-C方式下使用该头域，该头域表示加密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm：AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        :param x_obs_server_side_encryption_customer_algorithm: The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
         :type x_obs_server_side_encryption_customer_algorithm: str
-        :param x_obs_server_side_encryption_customer_key: SSE-C方式下使用该头域，该头域表示加密使用的密钥。该密钥用于解密对象。  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw&#x3D;  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        :param x_obs_server_side_encryption_customer_key: Encryption key used for SSE-C. This key is used to decrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw&#x3D;Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
         :type x_obs_server_side_encryption_customer_key: str
-        :param x_obs_server_side_encryption_customer_key_md5: SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ&#x3D;&#x3D;  约束：该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        :param x_obs_server_side_encryption_customer_key_md5: MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ&#x3D;&#x3D;Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
         :type x_obs_server_side_encryption_customer_key_md5: str
         """
         
@@ -178,7 +178,7 @@ class GetObjectRequest:
     def bucket_name(self):
         """Gets the bucket_name of this GetObjectRequest.
 
-        桶名称 
+        Name of the bucket.
 
         :return: The bucket_name of this GetObjectRequest.
         :rtype: str
@@ -189,7 +189,7 @@ class GetObjectRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this GetObjectRequest.
 
-        桶名称 
+        Name of the bucket.
 
         :param bucket_name: The bucket_name of this GetObjectRequest.
         :type bucket_name: str
@@ -200,7 +200,7 @@ class GetObjectRequest:
     def object_key(self):
         """Gets the object_key of this GetObjectRequest.
 
-        通过此请求下载的对象名称。 
+        Object key for which this operation was initiated.
 
         :return: The object_key of this GetObjectRequest.
         :rtype: str
@@ -211,7 +211,7 @@ class GetObjectRequest:
     def object_key(self, object_key):
         """Sets the object_key of this GetObjectRequest.
 
-        通过此请求下载的对象名称。 
+        Object key for which this operation was initiated.
 
         :param object_key: The object_key of this GetObjectRequest.
         :type object_key: str
@@ -222,7 +222,7 @@ class GetObjectRequest:
     def date(self):
         """Gets the date of this GetObjectRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this GetObjectRequest.
         :rtype: str
@@ -233,7 +233,7 @@ class GetObjectRequest:
     def date(self, date):
         """Sets the date of this GetObjectRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this GetObjectRequest.
         :type date: str
@@ -244,7 +244,7 @@ class GetObjectRequest:
     def response_content_type(self):
         """Gets the response_content_type of this GetObjectRequest.
 
-        重写响应中的Content-Type头。 
+        Overrides the **Content-Type** header in the response.
 
         :return: The response_content_type of this GetObjectRequest.
         :rtype: str
@@ -255,7 +255,7 @@ class GetObjectRequest:
     def response_content_type(self, response_content_type):
         """Sets the response_content_type of this GetObjectRequest.
 
-        重写响应中的Content-Type头。 
+        Overrides the **Content-Type** header in the response.
 
         :param response_content_type: The response_content_type of this GetObjectRequest.
         :type response_content_type: str
@@ -266,7 +266,7 @@ class GetObjectRequest:
     def response_content_language(self):
         """Gets the response_content_language of this GetObjectRequest.
 
-        重写响应中的Content-Language头。 
+        Overrides the **Content-Language** header in the response.
 
         :return: The response_content_language of this GetObjectRequest.
         :rtype: str
@@ -277,7 +277,7 @@ class GetObjectRequest:
     def response_content_language(self, response_content_language):
         """Sets the response_content_language of this GetObjectRequest.
 
-        重写响应中的Content-Language头。 
+        Overrides the **Content-Language** header in the response.
 
         :param response_content_language: The response_content_language of this GetObjectRequest.
         :type response_content_language: str
@@ -288,7 +288,7 @@ class GetObjectRequest:
     def response_expires(self):
         """Gets the response_expires of this GetObjectRequest.
 
-        重写响应中的Expires头。 
+        Overrides the **Expires** header in the response.
 
         :return: The response_expires of this GetObjectRequest.
         :rtype: str
@@ -299,7 +299,7 @@ class GetObjectRequest:
     def response_expires(self, response_expires):
         """Sets the response_expires of this GetObjectRequest.
 
-        重写响应中的Expires头。 
+        Overrides the **Expires** header in the response.
 
         :param response_expires: The response_expires of this GetObjectRequest.
         :type response_expires: str
@@ -310,7 +310,7 @@ class GetObjectRequest:
     def response_cache_control(self):
         """Gets the response_cache_control of this GetObjectRequest.
 
-        重写响应中的Cache-Control头。 
+        Overrides the **Cache-Control** header in the response.
 
         :return: The response_cache_control of this GetObjectRequest.
         :rtype: str
@@ -321,7 +321,7 @@ class GetObjectRequest:
     def response_cache_control(self, response_cache_control):
         """Sets the response_cache_control of this GetObjectRequest.
 
-        重写响应中的Cache-Control头。 
+        Overrides the **Cache-Control** header in the response.
 
         :param response_cache_control: The response_cache_control of this GetObjectRequest.
         :type response_cache_control: str
@@ -332,7 +332,7 @@ class GetObjectRequest:
     def response_content_disposition(self):
         """Gets the response_content_disposition of this GetObjectRequest.
 
-        重写响应中的Content-Disposition头。  示例：response-content-disposition=attachment; filename*=utf-8''name1  下载对象重命名为“name1”，如果name1中存在中文，需要将中文进行URL编码。 
+        Overrides the **Content-Disposition** header in the response.  Example: response-content-disposition=attachment; filename*=utf-8''name1  In this example, the downloaded object is renamed **name1**. If **name1** contains Chinese characters, the Chinese characters must be URL-encoded.
 
         :return: The response_content_disposition of this GetObjectRequest.
         :rtype: str
@@ -343,7 +343,7 @@ class GetObjectRequest:
     def response_content_disposition(self, response_content_disposition):
         """Sets the response_content_disposition of this GetObjectRequest.
 
-        重写响应中的Content-Disposition头。  示例：response-content-disposition=attachment; filename*=utf-8''name1  下载对象重命名为“name1”，如果name1中存在中文，需要将中文进行URL编码。 
+        Overrides the **Content-Disposition** header in the response.  Example: response-content-disposition=attachment; filename*=utf-8''name1  In this example, the downloaded object is renamed **name1**. If **name1** contains Chinese characters, the Chinese characters must be URL-encoded.
 
         :param response_content_disposition: The response_content_disposition of this GetObjectRequest.
         :type response_content_disposition: str
@@ -354,7 +354,7 @@ class GetObjectRequest:
     def response_content_encoding(self):
         """Gets the response_content_encoding of this GetObjectRequest.
 
-        重写响应中的Content-Encoding头。 
+        Overrides the **Content-Encoding** header in the response.
 
         :return: The response_content_encoding of this GetObjectRequest.
         :rtype: str
@@ -365,7 +365,7 @@ class GetObjectRequest:
     def response_content_encoding(self, response_content_encoding):
         """Sets the response_content_encoding of this GetObjectRequest.
 
-        重写响应中的Content-Encoding头。 
+        Overrides the **Content-Encoding** header in the response.
 
         :param response_content_encoding: The response_content_encoding of this GetObjectRequest.
         :type response_content_encoding: str
@@ -376,7 +376,7 @@ class GetObjectRequest:
     def version_id(self):
         """Gets the version_id of this GetObjectRequest.
 
-        指定获取对象的版本号。 
+        Version ID of the object you want to download.
 
         :return: The version_id of this GetObjectRequest.
         :rtype: str
@@ -387,7 +387,7 @@ class GetObjectRequest:
     def version_id(self, version_id):
         """Sets the version_id of this GetObjectRequest.
 
-        指定获取对象的版本号。 
+        Version ID of the object you want to download.
 
         :param version_id: The version_id of this GetObjectRequest.
         :type version_id: str
@@ -398,7 +398,7 @@ class GetObjectRequest:
     def x_image_process(self):
         """Gets the x_image_process of this GetObjectRequest.
 
-        图片处理服务。  示例：  命令方式：x-image-process=image/commands  样式方式：x-image-process=style/stylename  详见[《图片处理特性指南》](https://support.huaweicloud.com/fg-obs/obs_01_0001.html)。 
+        Image processing service.Examples:Command: x-image-process=image/commandsStyle: x-image-process=style/stylenameFor details, see the [Image Processing Feature Guide](https://support.huaweicloud.com/intl/en-us/fg-obs/obs_01_0001.html).
 
         :return: The x_image_process of this GetObjectRequest.
         :rtype: str
@@ -409,7 +409,7 @@ class GetObjectRequest:
     def x_image_process(self, x_image_process):
         """Sets the x_image_process of this GetObjectRequest.
 
-        图片处理服务。  示例：  命令方式：x-image-process=image/commands  样式方式：x-image-process=style/stylename  详见[《图片处理特性指南》](https://support.huaweicloud.com/fg-obs/obs_01_0001.html)。 
+        Image processing service.Examples:Command: x-image-process=image/commandsStyle: x-image-process=style/stylenameFor details, see the [Image Processing Feature Guide](https://support.huaweicloud.com/intl/en-us/fg-obs/obs_01_0001.html).
 
         :param x_image_process: The x_image_process of this GetObjectRequest.
         :type x_image_process: str
@@ -420,7 +420,7 @@ class GetObjectRequest:
     def attname(self):
         """Gets the attname of this GetObjectRequest.
 
-        重写响应中的Content-Disposition头。  示例：attname=name1  下载对象重命名为“name1”。 
+        Overrides the **Content-Disposition** header in the response.  Example: attname=name1  The downloaded object is renamed **name1**.
 
         :return: The attname of this GetObjectRequest.
         :rtype: str
@@ -431,7 +431,7 @@ class GetObjectRequest:
     def attname(self, attname):
         """Sets the attname of this GetObjectRequest.
 
-        重写响应中的Content-Disposition头。  示例：attname=name1  下载对象重命名为“name1”。 
+        Overrides the **Content-Disposition** header in the response.  Example: attname=name1  The downloaded object is renamed **name1**.
 
         :param attname: The attname of this GetObjectRequest.
         :type attname: str
@@ -442,7 +442,7 @@ class GetObjectRequest:
     def range(self):
         """Gets the range of this GetObjectRequest.
 
-        获取对象时，获取在Range范围内的对象内容。如果Range不合法则忽略此字段获取整个对象。  Range是一个范围，它的起始值最小为0，最大为对象长度减1。Range范围的起始值为必填项，如果Range只包含起始值，表示获取起始值到对象长度减1这个区间的对象内容。  携带Range头域后，响应消息的ETag仍是对象的ETag，而不是Range范围内对象的ETag。  bytes=byte_range  示例1：bytes=0-4 示例2：bytes=1024 示例3：bytes=10-20,30-40（表示多个区间） 
+        Obtains the content within the scope defined by **Range**. If the **Range** header is invalid, the entire object is obtained.**Range** consists of a start value and an end value. Its start value is mandatory and ranges from 0 to the object length minus 1. If **Range** contains only a start value, the object content from the start value to the default maximum start value is obtained.With the **Range** header carried, the ETag in the response is still the ETag of the object, instead of that of the object content defined by the **Range** header.bytes=byte_rangeExample 1: bytes=0-4Example 2: bytes=1024Example 3: bytes=10-20,30-40 (multiple ranges)
 
         :return: The range of this GetObjectRequest.
         :rtype: str
@@ -453,7 +453,7 @@ class GetObjectRequest:
     def range(self, range):
         """Sets the range of this GetObjectRequest.
 
-        获取对象时，获取在Range范围内的对象内容。如果Range不合法则忽略此字段获取整个对象。  Range是一个范围，它的起始值最小为0，最大为对象长度减1。Range范围的起始值为必填项，如果Range只包含起始值，表示获取起始值到对象长度减1这个区间的对象内容。  携带Range头域后，响应消息的ETag仍是对象的ETag，而不是Range范围内对象的ETag。  bytes=byte_range  示例1：bytes=0-4 示例2：bytes=1024 示例3：bytes=10-20,30-40（表示多个区间） 
+        Obtains the content within the scope defined by **Range**. If the **Range** header is invalid, the entire object is obtained.**Range** consists of a start value and an end value. Its start value is mandatory and ranges from 0 to the object length minus 1. If **Range** contains only a start value, the object content from the start value to the default maximum start value is obtained.With the **Range** header carried, the ETag in the response is still the ETag of the object, instead of that of the object content defined by the **Range** header.bytes=byte_rangeExample 1: bytes=0-4Example 2: bytes=1024Example 3: bytes=10-20,30-40 (multiple ranges)
 
         :param range: The range of this GetObjectRequest.
         :type range: str
@@ -464,7 +464,7 @@ class GetObjectRequest:
     def if_modified_since(self):
         """Gets the if_modified_since of this GetObjectRequest.
 
-        如果对象在请求中指定的时间之后有修改，则返回对象内容；否则的话返回304（not modified）。  类型：符合http://www.ietf.org/rfc/rfc2616.txt规定格式的HTTP时间字符串。 
+        Returns the object only if it has been modified since the time specified in the request, or **304 Not Modified** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
 
         :return: The if_modified_since of this GetObjectRequest.
         :rtype: str
@@ -475,7 +475,7 @@ class GetObjectRequest:
     def if_modified_since(self, if_modified_since):
         """Sets the if_modified_since of this GetObjectRequest.
 
-        如果对象在请求中指定的时间之后有修改，则返回对象内容；否则的话返回304（not modified）。  类型：符合http://www.ietf.org/rfc/rfc2616.txt规定格式的HTTP时间字符串。 
+        Returns the object only if it has been modified since the time specified in the request, or **304 Not Modified** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
 
         :param if_modified_since: The if_modified_since of this GetObjectRequest.
         :type if_modified_since: str
@@ -486,7 +486,7 @@ class GetObjectRequest:
     def if_unmodified_since(self):
         """Gets the if_unmodified_since of this GetObjectRequest.
 
-        如果对象在请求中指定的时间之后没有修改，则返回对象内容；否则的话返回412（precondition failed）。  类型：符合http://www.ietf.org/rfc/rfc2616.txt规定格式的HTTP时间字符串。 
+        Returns the object only if it has not been modified since the time specified in the request, or **412 Precondition Failed** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
 
         :return: The if_unmodified_since of this GetObjectRequest.
         :rtype: str
@@ -497,7 +497,7 @@ class GetObjectRequest:
     def if_unmodified_since(self, if_unmodified_since):
         """Sets the if_unmodified_since of this GetObjectRequest.
 
-        如果对象在请求中指定的时间之后没有修改，则返回对象内容；否则的话返回412（precondition failed）。  类型：符合http://www.ietf.org/rfc/rfc2616.txt规定格式的HTTP时间字符串。 
+        Returns the object only if it has not been modified since the time specified in the request, or **412 Precondition Failed** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
 
         :param if_unmodified_since: The if_unmodified_since of this GetObjectRequest.
         :type if_unmodified_since: str
@@ -508,7 +508,7 @@ class GetObjectRequest:
     def if_match(self):
         """Gets the if_match of this GetObjectRequest.
 
-        如果对象的ETag和请求中指定的ETag相同，则返回对象内容，否则的话返回412（precondition failed）。  （ETag值，例：0f64741bf7cb1089e988e4585d0d3434。） 
+        Returns the object only if its ETag is the same as the one specified in the request, or **412 Precondition Failed** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
 
         :return: The if_match of this GetObjectRequest.
         :rtype: str
@@ -519,7 +519,7 @@ class GetObjectRequest:
     def if_match(self, if_match):
         """Sets the if_match of this GetObjectRequest.
 
-        如果对象的ETag和请求中指定的ETag相同，则返回对象内容，否则的话返回412（precondition failed）。  （ETag值，例：0f64741bf7cb1089e988e4585d0d3434。） 
+        Returns the object only if its ETag is the same as the one specified in the request, or **412 Precondition Failed** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
 
         :param if_match: The if_match of this GetObjectRequest.
         :type if_match: str
@@ -530,7 +530,7 @@ class GetObjectRequest:
     def if_none_match(self):
         """Gets the if_none_match of this GetObjectRequest.
 
-        如果对象的ETag和请求中指定的ETag不相同，则返回对象内容，否则的话返回304（not modified）。  （ETag值，例：0f64741bf7cb1089e988e4585d0d3434。） 
+        Returns the object only if its ETag is different from the one specified in the request, or **304 Not Modified** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
 
         :return: The if_none_match of this GetObjectRequest.
         :rtype: str
@@ -541,7 +541,7 @@ class GetObjectRequest:
     def if_none_match(self, if_none_match):
         """Sets the if_none_match of this GetObjectRequest.
 
-        如果对象的ETag和请求中指定的ETag不相同，则返回对象内容，否则的话返回304（not modified）。  （ETag值，例：0f64741bf7cb1089e988e4585d0d3434。） 
+        Returns the object only if its ETag is different from the one specified in the request, or **304 Not Modified** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
 
         :param if_none_match: The if_none_match of this GetObjectRequest.
         :type if_none_match: str
@@ -552,7 +552,7 @@ class GetObjectRequest:
     def x_obs_server_side_encryption_customer_algorithm(self):
         """Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm：AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :return: The x_obs_server_side_encryption_customer_algorithm of this GetObjectRequest.
         :rtype: str
@@ -563,7 +563,7 @@ class GetObjectRequest:
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
         """Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm：AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :param x_obs_server_side_encryption_customer_algorithm: The x_obs_server_side_encryption_customer_algorithm of this GetObjectRequest.
         :type x_obs_server_side_encryption_customer_algorithm: str
@@ -574,7 +574,7 @@ class GetObjectRequest:
     def x_obs_server_side_encryption_customer_key(self):
         """Gets the x_obs_server_side_encryption_customer_key of this GetObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥。该密钥用于解密对象。  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        Encryption key used for SSE-C. This key is used to decrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :return: The x_obs_server_side_encryption_customer_key of this GetObjectRequest.
         :rtype: str
@@ -585,7 +585,7 @@ class GetObjectRequest:
     def x_obs_server_side_encryption_customer_key(self, x_obs_server_side_encryption_customer_key):
         """Sets the x_obs_server_side_encryption_customer_key of this GetObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥。该密钥用于解密对象。  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        Encryption key used for SSE-C. This key is used to decrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :param x_obs_server_side_encryption_customer_key: The x_obs_server_side_encryption_customer_key of this GetObjectRequest.
         :type x_obs_server_side_encryption_customer_key: str
@@ -596,7 +596,7 @@ class GetObjectRequest:
     def x_obs_server_side_encryption_customer_key_md5(self):
         """Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  约束：该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
         :return: The x_obs_server_side_encryption_customer_key_md5 of this GetObjectRequest.
         :rtype: str
@@ -607,7 +607,7 @@ class GetObjectRequest:
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
         """Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  约束：该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
         :param x_obs_server_side_encryption_customer_key_md5: The x_obs_server_side_encryption_customer_key_md5 of this GetObjectRequest.
         :type x_obs_server_side_encryption_customer_key_md5: str

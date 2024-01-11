@@ -1615,6 +1615,276 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def batch_delete_desktop_name_policy(self, request):
+        """批量删除桌面名称策略
+
+        批量删除桌面名称策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteDesktopNamePolicy
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopNamePolicyRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopNamePolicyResponse`
+        """
+        http_info = self._batch_delete_desktop_name_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_desktop_name_policy_invoker(self, request):
+        http_info = self._batch_delete_desktop_name_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_desktop_name_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-name-policies/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDesktopNamePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_desktop_name_policy(self, request):
+        """创建桌面名称策略
+
+        创建桌面名称策略，用于自动生成桌面名称，最多允许50个。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDesktopNamePolicy
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopNamePolicyRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopNamePolicyResponse`
+        """
+        http_info = self._create_desktop_name_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_desktop_name_policy_invoker(self, request):
+        http_info = self._create_desktop_name_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_desktop_name_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-name-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesktopNamePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_desktop_name_policy(self, request):
+        """获取桌面名称策略
+
+        获取桌面名称策略，用于自动生成桌面名称。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDesktopNamePolicy
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopNamePolicyRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopNamePolicyResponse`
+        """
+        http_info = self._list_desktop_name_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_desktop_name_policy_invoker(self, request):
+        http_info = self._list_desktop_name_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_desktop_name_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktop-name-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopNamePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_contain_user' in local_var_params:
+            query_params.append(('is_contain_user', local_var_params['is_contain_user']))
+        if 'policy_name' in local_var_params:
+            query_params.append(('policy_name', local_var_params['policy_name']))
+        if 'policy_id' in local_var_params:
+            query_params.append(('policy_id', local_var_params['policy_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_desktop_name_policy(self, request):
+        """更新桌面名称策略
+
+        更新桌面名称策略，用于自动生成桌面名称。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDesktopNamePolicy
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopNamePolicyRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopNamePolicyResponse`
+        """
+        http_info = self._update_desktop_name_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_desktop_name_policy_invoker(self, request):
+        http_info = self._update_desktop_name_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_desktop_name_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/desktop-name-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDesktopNamePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_unused_desktops(self, request):
         """查询在指定时间段未使用的桌面
 

@@ -31,7 +31,8 @@ class HealthmonitorResp:
         'http_method': 'str',
         'delay': 'int',
         'max_retries': 'int',
-        'pools': 'list[ResourceList]'
+        'pools': 'list[ResourceList]',
+        'max_retries_down': 'int'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class HealthmonitorResp:
         'http_method': 'http_method',
         'delay': 'delay',
         'max_retries': 'max_retries',
-        'pools': 'pools'
+        'pools': 'pools',
+        'max_retries_down': 'max_retries_down'
     }
 
-    def __init__(self, id=None, project_id=None, tenant_id=None, name=None, admin_state_up=None, monitor_port=None, timeout=None, type=None, expected_codes=None, domain_name=None, url_path=None, http_method=None, delay=None, max_retries=None, pools=None):
+    def __init__(self, id=None, project_id=None, tenant_id=None, name=None, admin_state_up=None, monitor_port=None, timeout=None, type=None, expected_codes=None, domain_name=None, url_path=None, http_method=None, delay=None, max_retries=None, pools=None, max_retries_down=None):
         """HealthmonitorResp
 
         The model defined in huaweicloud sdk
@@ -77,7 +79,7 @@ class HealthmonitorResp:
         :type expected_codes: str
         :param domain_name: 功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
         :type domain_name: str
-        :param url_path: HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        :param url_path: 健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。 支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&amp;）以及扩展字符集_;~!()*[]@$^:&#39;,+  使用说明：当type为HTTP/HTTPS时生效。
         :type url_path: str
         :param http_method: HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
         :type http_method: str
@@ -87,6 +89,8 @@ class HealthmonitorResp:
         :type max_retries: int
         :param pools: 健康检查关联的后端云服务器组列表
         :type pools: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        :param max_retries_down: 健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。
+        :type max_retries_down: int
         """
         
         
@@ -106,6 +110,7 @@ class HealthmonitorResp:
         self._delay = None
         self._max_retries = None
         self._pools = None
+        self._max_retries_down = None
         self.discriminator = None
 
         self.id = id
@@ -123,6 +128,7 @@ class HealthmonitorResp:
         self.delay = delay
         self.max_retries = max_retries
         self.pools = pools
+        self.max_retries_down = max_retries_down
 
     @property
     def id(self):
@@ -348,7 +354,7 @@ class HealthmonitorResp:
     def url_path(self):
         """Gets the url_path of this HealthmonitorResp.
 
-        HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。 支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 
         :return: The url_path of this HealthmonitorResp.
         :rtype: str
@@ -359,7 +365,7 @@ class HealthmonitorResp:
     def url_path(self, url_path):
         """Sets the url_path of this HealthmonitorResp.
 
-        HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。 支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 
         :param url_path: The url_path of this HealthmonitorResp.
         :type url_path: str
@@ -453,6 +459,28 @@ class HealthmonitorResp:
         :type pools: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._pools = pools
+
+    @property
+    def max_retries_down(self):
+        """Gets the max_retries_down of this HealthmonitorResp.
+
+        健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。
+
+        :return: The max_retries_down of this HealthmonitorResp.
+        :rtype: int
+        """
+        return self._max_retries_down
+
+    @max_retries_down.setter
+    def max_retries_down(self, max_retries_down):
+        """Sets the max_retries_down of this HealthmonitorResp.
+
+        健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。
+
+        :param max_retries_down: The max_retries_down of this HealthmonitorResp.
+        :type max_retries_down: int
+        """
+        self._max_retries_down = max_retries_down
 
     def to_dict(self):
         """Returns the model properties as a dict"""

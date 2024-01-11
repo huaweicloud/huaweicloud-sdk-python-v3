@@ -32,6 +32,75 @@ class DwsAsyncClient(Client):
 
         return client_builder
 
+    def add_queue_user_list_async(self, request):
+        """添加工作负载队列的绑定用户
+
+        添加工作负载队列的绑定用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddQueueUserList
+        :type request: :class:`huaweicloudsdkdws.v2.AddQueueUserListRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.AddQueueUserListResponse`
+        """
+        http_info = self._add_queue_user_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_queue_user_list_async_invoker(self, request):
+        http_info = self._add_queue_user_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_queue_user_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues/{queue_name}/users/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddQueueUserListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_snapshot_cross_region_policy_async(self, request):
         """设置跨区域备份配置
 
@@ -66,6 +135,75 @@ class DwsAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_workload_plan_stage_async(self, request):
+        """添加工作负载计划阶段
+
+        添加工作负载计划阶段。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddWorkloadPlanStage
+        :type request: :class:`huaweicloudsdkdws.v2.AddWorkloadPlanStageRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.AddWorkloadPlanStageResponse`
+        """
+        http_info = self._add_workload_plan_stage_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_workload_plan_stage_async_invoker(self, request):
+        http_info = self._add_workload_plan_stage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_workload_plan_stage_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/stages",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddWorkloadPlanStageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
 
         query_params = []
 
@@ -2301,6 +2439,75 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def delete_queue_user_list_async(self, request):
+        """删除工作负载队列的绑定用户
+
+        删除工作负载队列的绑定用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteQueueUserList
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteQueueUserListRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteQueueUserListResponse`
+        """
+        http_info = self._delete_queue_user_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_queue_user_list_async_invoker(self, request):
+        http_info = self._delete_queue_user_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_queue_user_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues/{queue_name}/users/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteQueueUserListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_snapshot_async(self, request):
         """删除快照
 
@@ -2536,6 +2743,75 @@ class DwsAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'plan_id' in local_var_params:
             path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_workload_plan_stage_async(self, request):
+        """删除工作负载计划阶段
+
+        删除工作负载计划删除工作负载计划阶段。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteWorkloadPlanStage
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteWorkloadPlanStageRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteWorkloadPlanStageResponse`
+        """
+        http_info = self._delete_workload_plan_stage_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_workload_plan_stage_async_invoker(self, request):
+        http_info = self._delete_workload_plan_stage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_workload_plan_stage_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/stages/{stage_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkloadPlanStageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+        if 'stage_id' in local_var_params:
+            path_params['stage_id'] = local_var_params['stage_id']
 
         query_params = []
 
@@ -5830,6 +6106,77 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def list_plan_exec_logs_async(self, request):
+        """查看计划执行日志
+
+        查看计划执行日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPlanExecLogs
+        :type request: :class:`huaweicloudsdkdws.v2.ListPlanExecLogsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListPlanExecLogsResponse`
+        """
+        http_info = self._list_plan_exec_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_plan_exec_logs_async_invoker(self, request):
+        http_info = self._list_plan_exec_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_plan_exec_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlanExecLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_queries_async(self, request):
         """查询SQL列表
 
@@ -5933,6 +6280,83 @@ class DwsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_schemas_async(self, request):
+        """查询集群模式空间信息
+
+        查询集群模式空间信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSchemas
+        :type request: :class:`huaweicloudsdkdws.v2.ListSchemasRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListSchemasResponse`
+        """
+        http_info = self._list_schemas_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_schemas_async_invoker(self, request):
+        http_info = self._list_schemas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_schemas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/databases/{database_name}/schemas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSchemasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'keywords' in local_var_params:
+            query_params.append(('keywords', local_var_params['keywords']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -6804,6 +7228,77 @@ class DwsAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_workload_queue_users_async(self, request):
+        """获得工作负载队列的绑定用户列表
+
+        获得工作负载队列的绑定用户列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListWorkloadQueueUsers
+        :type request: :class:`huaweicloudsdkdws.v2.ListWorkloadQueueUsersRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListWorkloadQueueUsersResponse`
+        """
+        http_info = self._list_workload_queue_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_workload_queue_users_async_invoker(self, request):
+        http_info = self._list_workload_queue_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_workload_queue_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues/{queue_name}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkloadQueueUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -8111,6 +8606,71 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def show_resource_statistics_async(self, request):
+        """查询资源统计
+
+        该接口用于查询资源统计
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceStatistics
+        :type request: :class:`huaweicloudsdkdws.v2.ShowResourceStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowResourceStatisticsResponse`
+        """
+        http_info = self._show_resource_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_resource_statistics_async_invoker(self, request):
+        http_info = self._show_resource_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/resource-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_workload_plan_async(self, request):
         """查询某个工作负载计划详细信息
 
@@ -8149,6 +8709,142 @@ class DwsAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'plan_id' in local_var_params:
             path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_workload_plan_stage_async(self, request):
+        """查询工作负载计划阶段详细信息
+
+        查询工作负载计划阶段详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowWorkloadPlanStage
+        :type request: :class:`huaweicloudsdkdws.v2.ShowWorkloadPlanStageRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowWorkloadPlanStageResponse`
+        """
+        http_info = self._show_workload_plan_stage_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_workload_plan_stage_async_invoker(self, request):
+        http_info = self._show_workload_plan_stage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_workload_plan_stage_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/stages/{stage_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkloadPlanStageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+        if 'stage_id' in local_var_params:
+            path_params['stage_id'] = local_var_params['stage_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_workload_queue_async(self, request):
+        """获得工作负载队列详细信息
+
+        获得工作负载队列详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowWorkloadQueue
+        :type request: :class:`huaweicloudsdkdws.v2.ShowWorkloadQueueRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowWorkloadQueueResponse`
+        """
+        http_info = self._show_workload_queue_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_workload_queue_async_invoker(self, request):
+        http_info = self._show_workload_queue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_workload_queue_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues/{queue_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkloadQueueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
 
         query_params = []
 
@@ -8627,6 +9323,75 @@ class DwsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_plan_stage_async(self, request):
+        """切换工作负载计划阶段
+
+        切换工作负载计划阶段。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchPlanStage
+        :type request: :class:`huaweicloudsdkdws.v2.SwitchPlanStageRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.SwitchPlanStageResponse`
+        """
+        http_info = self._switch_plan_stage_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_plan_stage_async_invoker(self, request):
+        http_info = self._switch_plan_stage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_plan_stage_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/stage-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchPlanStageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -9418,6 +10183,144 @@ class DwsAsyncClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_queue_resources_async(self, request):
+        """更新工作负载队列资源配置信息
+
+        更新工作负载队列资源配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateQueueResources
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateQueueResourcesRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateQueueResourcesResponse`
+        """
+        http_info = self._update_queue_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_queue_resources_async_invoker(self, request):
+        http_info = self._update_queue_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_queue_resources_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues/{queue_name}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateQueueResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_schemas_async(self, request):
+        """更新模式空间限额
+
+        更新模式空间限额。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSchemas
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateSchemasRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateSchemasResponse`
+        """
+        http_info = self._update_schemas_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_schemas_async_invoker(self, request):
+        http_info = self._update_schemas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_schemas_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/databases/{database_name}/schemas",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSchemasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
 
         query_params = []
 

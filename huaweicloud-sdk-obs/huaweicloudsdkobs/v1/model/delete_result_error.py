@@ -35,11 +35,11 @@ class DeleteResultError:
 
         The model defined in huaweicloud sdk
 
-        :param key: 每个删除结果的对象名。 
+        :param key: Object names in a deletion result
         :type key: str
-        :param code: 删除失败结果的错误码。 
+        :param code: Error code of the failed deletion
         :type code: str
-        :param message: 删除失败结果的错误消息。 
+        :param message: Error message of the failed deletion
         :type message: str
         """
         
@@ -61,7 +61,7 @@ class DeleteResultError:
     def key(self):
         """Gets the key of this DeleteResultError.
 
-        每个删除结果的对象名。 
+        Object names in a deletion result
 
         :return: The key of this DeleteResultError.
         :rtype: str
@@ -72,7 +72,7 @@ class DeleteResultError:
     def key(self, key):
         """Sets the key of this DeleteResultError.
 
-        每个删除结果的对象名。 
+        Object names in a deletion result
 
         :param key: The key of this DeleteResultError.
         :type key: str
@@ -83,7 +83,7 @@ class DeleteResultError:
     def code(self):
         """Gets the code of this DeleteResultError.
 
-        删除失败结果的错误码。 
+        Error code of the failed deletion
 
         :return: The code of this DeleteResultError.
         :rtype: str
@@ -94,7 +94,7 @@ class DeleteResultError:
     def code(self, code):
         """Sets the code of this DeleteResultError.
 
-        删除失败结果的错误码。 
+        Error code of the failed deletion
 
         :param code: The code of this DeleteResultError.
         :type code: str
@@ -105,7 +105,7 @@ class DeleteResultError:
     def message(self):
         """Gets the message of this DeleteResultError.
 
-        删除失败结果的错误消息。 
+        Error message of the failed deletion
 
         :return: The message of this DeleteResultError.
         :rtype: str
@@ -116,7 +116,7 @@ class DeleteResultError:
     def message(self, message):
         """Sets the message of this DeleteResultError.
 
-        删除失败结果的错误消息。 
+        Error message of the failed deletion
 
         :param message: The message of this DeleteResultError.
         :type message: str

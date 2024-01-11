@@ -37,11 +37,11 @@ class SetBucketNotificationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param bucket_name: 请求的桶名称。 
+        :param bucket_name: Name of the requested bucket
         :type bucket_name: str
-        :param notification: notification表示请求桶的消息通知配置API。 
+        :param notification: Indicates the notification configuration API of the bucket.
         :type notification: str
         :param body: Body of the SetBucketNotificationRequest
         :type body: :class:`huaweicloudsdkobs.v1.SetBucketNotificationRequestBody`
@@ -66,7 +66,7 @@ class SetBucketNotificationRequest:
     def date(self):
         """Gets the date of this SetBucketNotificationRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this SetBucketNotificationRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class SetBucketNotificationRequest:
     def date(self, date):
         """Sets the date of this SetBucketNotificationRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this SetBucketNotificationRequest.
         :type date: str
@@ -88,7 +88,7 @@ class SetBucketNotificationRequest:
     def bucket_name(self):
         """Gets the bucket_name of this SetBucketNotificationRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :return: The bucket_name of this SetBucketNotificationRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class SetBucketNotificationRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this SetBucketNotificationRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :param bucket_name: The bucket_name of this SetBucketNotificationRequest.
         :type bucket_name: str
@@ -110,7 +110,7 @@ class SetBucketNotificationRequest:
     def notification(self):
         """Gets the notification of this SetBucketNotificationRequest.
 
-        notification表示请求桶的消息通知配置API。 
+        Indicates the notification configuration API of the bucket.
 
         :return: The notification of this SetBucketNotificationRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class SetBucketNotificationRequest:
     def notification(self, notification):
         """Sets the notification of this SetBucketNotificationRequest.
 
-        notification表示请求桶的消息通知配置API。 
+        Indicates the notification configuration API of the bucket.
 
         :param notification: The notification of this SetBucketNotificationRequest.
         :type notification: str

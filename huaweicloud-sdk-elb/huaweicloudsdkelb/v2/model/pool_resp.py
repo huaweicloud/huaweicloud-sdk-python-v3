@@ -29,7 +29,9 @@ class PoolResp:
         'healthmonitor_id': 'str',
         'session_persistence': 'SessionPersistence',
         'protocol': 'str',
-        'lb_algorithm': 'str'
+        'lb_algorithm': 'str',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class PoolResp:
         'healthmonitor_id': 'healthmonitor_id',
         'session_persistence': 'session_persistence',
         'protocol': 'protocol',
-        'lb_algorithm': 'lb_algorithm'
+        'lb_algorithm': 'lb_algorithm',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, id=None, project_id=None, tenant_id=None, name=None, description=None, admin_state_up=None, loadbalancers=None, listeners=None, members=None, healthmonitor_id=None, session_persistence=None, protocol=None, lb_algorithm=None):
+    def __init__(self, id=None, project_id=None, tenant_id=None, name=None, description=None, admin_state_up=None, loadbalancers=None, listeners=None, members=None, healthmonitor_id=None, session_persistence=None, protocol=None, lb_algorithm=None, protection_status=None, protection_reason=None):
         """PoolResp
 
         The model defined in huaweicloud sdk
@@ -79,6 +83,10 @@ class PoolResp:
         :type protocol: str
         :param lb_algorithm: 后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
         :type lb_algorithm: str
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -96,6 +104,8 @@ class PoolResp:
         self._session_persistence = None
         self._protocol = None
         self._lb_algorithm = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         self.id = id
@@ -111,6 +121,8 @@ class PoolResp:
         self.session_persistence = session_persistence
         self.protocol = protocol
         self.lb_algorithm = lb_algorithm
+        self.protection_status = protection_status
+        self.protection_reason = protection_reason
 
     @property
     def id(self):
@@ -393,6 +405,50 @@ class PoolResp:
         :type lb_algorithm: str
         """
         self._lb_algorithm = lb_algorithm
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this PoolResp.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this PoolResp.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this PoolResp.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this PoolResp.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this PoolResp.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this PoolResp.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this PoolResp.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this PoolResp.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

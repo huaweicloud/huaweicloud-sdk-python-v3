@@ -37,13 +37,13 @@ class DeleteResultDeleted:
 
         The model defined in huaweicloud sdk
 
-        :param key: 每个删除结果的对象名。 
+        :param key: Object names in a deletion result
         :type key: str
-        :param version_id: 删除对象的版本号 
+        :param version_id: Version IDs of objects to be deleted
         :type version_id: str
-        :param delete_marker: 当批量删除请求访问的桶是多版本桶时，如果创建或删除一个删除标记，返回消息中该元素的值为true。 
+        :param delete_marker: If this element is specified, **true** will be returned when you create or delete a deletion marker in the requested bucket with versioning enabled.
         :type delete_marker: bool
-        :param delete_marker_version_id: 请求创建或删除的删除标记版本号。  当批量删除请求访问的桶是多版本桶时，如果创建或删除一个删除标记，响应消息会返回该元素。该元素在以下两种情况中会出现：  用户发送不带版本删除请求，即请求只有对象名，无版本号。这种情况下，系统会创建一个删除标记，并在响应中返回该删除标记的版本号。 用户发送带版本删除请求，即请求同时包含对象名以及版本号，但是该版本号标识一个删除标记。这种情况下，系统会删除此删除标记，并在响应中返回该删除标记的版本号。 
+        :param delete_marker_version_id: Version ID of the delete marker to create or delete.  If the request either creates or deletes a delete marker, OBS returns this element in response with the version ID of the delete marker. This element will be returned in either of the following cases:  You send a delete request with no version ID specified. You send a request with a version ID specified, but this version ID represents a delete marker. In this case, OBS deletes the delete marker and returns its version ID in the response.
         :type delete_marker_version_id: bool
         """
         
@@ -68,7 +68,7 @@ class DeleteResultDeleted:
     def key(self):
         """Gets the key of this DeleteResultDeleted.
 
-        每个删除结果的对象名。 
+        Object names in a deletion result
 
         :return: The key of this DeleteResultDeleted.
         :rtype: str
@@ -79,7 +79,7 @@ class DeleteResultDeleted:
     def key(self, key):
         """Sets the key of this DeleteResultDeleted.
 
-        每个删除结果的对象名。 
+        Object names in a deletion result
 
         :param key: The key of this DeleteResultDeleted.
         :type key: str
@@ -90,7 +90,7 @@ class DeleteResultDeleted:
     def version_id(self):
         """Gets the version_id of this DeleteResultDeleted.
 
-        删除对象的版本号 
+        Version IDs of objects to be deleted
 
         :return: The version_id of this DeleteResultDeleted.
         :rtype: str
@@ -101,7 +101,7 @@ class DeleteResultDeleted:
     def version_id(self, version_id):
         """Sets the version_id of this DeleteResultDeleted.
 
-        删除对象的版本号 
+        Version IDs of objects to be deleted
 
         :param version_id: The version_id of this DeleteResultDeleted.
         :type version_id: str
@@ -112,7 +112,7 @@ class DeleteResultDeleted:
     def delete_marker(self):
         """Gets the delete_marker of this DeleteResultDeleted.
 
-        当批量删除请求访问的桶是多版本桶时，如果创建或删除一个删除标记，返回消息中该元素的值为true。 
+        If this element is specified, **true** will be returned when you create or delete a deletion marker in the requested bucket with versioning enabled.
 
         :return: The delete_marker of this DeleteResultDeleted.
         :rtype: bool
@@ -123,7 +123,7 @@ class DeleteResultDeleted:
     def delete_marker(self, delete_marker):
         """Sets the delete_marker of this DeleteResultDeleted.
 
-        当批量删除请求访问的桶是多版本桶时，如果创建或删除一个删除标记，返回消息中该元素的值为true。 
+        If this element is specified, **true** will be returned when you create or delete a deletion marker in the requested bucket with versioning enabled.
 
         :param delete_marker: The delete_marker of this DeleteResultDeleted.
         :type delete_marker: bool
@@ -134,7 +134,7 @@ class DeleteResultDeleted:
     def delete_marker_version_id(self):
         """Gets the delete_marker_version_id of this DeleteResultDeleted.
 
-        请求创建或删除的删除标记版本号。  当批量删除请求访问的桶是多版本桶时，如果创建或删除一个删除标记，响应消息会返回该元素。该元素在以下两种情况中会出现：  用户发送不带版本删除请求，即请求只有对象名，无版本号。这种情况下，系统会创建一个删除标记，并在响应中返回该删除标记的版本号。 用户发送带版本删除请求，即请求同时包含对象名以及版本号，但是该版本号标识一个删除标记。这种情况下，系统会删除此删除标记，并在响应中返回该删除标记的版本号。 
+        Version ID of the delete marker to create or delete.  If the request either creates or deletes a delete marker, OBS returns this element in response with the version ID of the delete marker. This element will be returned in either of the following cases:  You send a delete request with no version ID specified. You send a request with a version ID specified, but this version ID represents a delete marker. In this case, OBS deletes the delete marker and returns its version ID in the response.
 
         :return: The delete_marker_version_id of this DeleteResultDeleted.
         :rtype: bool
@@ -145,7 +145,7 @@ class DeleteResultDeleted:
     def delete_marker_version_id(self, delete_marker_version_id):
         """Sets the delete_marker_version_id of this DeleteResultDeleted.
 
-        请求创建或删除的删除标记版本号。  当批量删除请求访问的桶是多版本桶时，如果创建或删除一个删除标记，响应消息会返回该元素。该元素在以下两种情况中会出现：  用户发送不带版本删除请求，即请求只有对象名，无版本号。这种情况下，系统会创建一个删除标记，并在响应中返回该删除标记的版本号。 用户发送带版本删除请求，即请求同时包含对象名以及版本号，但是该版本号标识一个删除标记。这种情况下，系统会删除此删除标记，并在响应中返回该删除标记的版本号。 
+        Version ID of the delete marker to create or delete.  If the request either creates or deletes a delete marker, OBS returns this element in response with the version ID of the delete marker. This element will be returned in either of the following cases:  You send a delete request with no version ID specified. You send a request with a version ID specified, but this version ID represents a delete marker. In this case, OBS deletes the delete marker and returns its version ID in the response.
 
         :param delete_marker_version_id: The delete_marker_version_id of this DeleteResultDeleted.
         :type delete_marker_version_id: bool

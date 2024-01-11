@@ -61,7 +61,7 @@ class UpdateHealthmonitorReq:
         :type expected_codes: str
         :param domain_name: 功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
         :type domain_name: str
-        :param url_path: HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        :param url_path: 健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。 支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&amp;）以及扩展字符集_;~!()*[]@$^:&#39;,+  使用说明：当type为HTTP/HTTPS时生效。
         :type url_path: str
         :param http_method: HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
         :type http_method: str
@@ -247,7 +247,7 @@ class UpdateHealthmonitorReq:
     def url_path(self):
         """Gets the url_path of this UpdateHealthmonitorReq.
 
-        HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。 支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 
         :return: The url_path of this UpdateHealthmonitorReq.
         :rtype: str
@@ -258,7 +258,7 @@ class UpdateHealthmonitorReq:
     def url_path(self, url_path):
         """Sets the url_path of this UpdateHealthmonitorReq.
 
-        HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。 支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 
         :param url_path: The url_path of this UpdateHealthmonitorReq.
         :type url_path: str

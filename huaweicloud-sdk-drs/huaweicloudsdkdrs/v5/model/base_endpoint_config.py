@@ -17,29 +17,36 @@ class BaseEndpointConfig:
     sensitive_list = []
 
     openapi_types = {
-        'is_target_readonly': 'bool'
+        'is_target_readonly': 'bool',
+        'node_num': 'int'
     }
 
     attribute_map = {
-        'is_target_readonly': 'is_target_readonly'
+        'is_target_readonly': 'is_target_readonly',
+        'node_num': 'node_num'
     }
 
-    def __init__(self, is_target_readonly=None):
+    def __init__(self, is_target_readonly=None, node_num=None):
         """BaseEndpointConfig
 
         The model defined in huaweicloud sdk
 
         :param is_target_readonly: 目标实例是否设置为为只读。 - MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
         :type is_target_readonly: bool
+        :param node_num: Redis集群到GeminiDB Redis迁移场景填写，连接源端Redis集群的子任务个数，输入值在1到16之间，且输入值不能大于源端Redis集群的分片个数，请根据源端Redis集群的规模合理选择。建议集群的每4个分片设置1个源端分片个数，即每1个子任务连接源端集群的4个分片。
+        :type node_num: int
         """
         
         
 
         self._is_target_readonly = None
+        self._node_num = None
         self.discriminator = None
 
         if is_target_readonly is not None:
             self.is_target_readonly = is_target_readonly
+        if node_num is not None:
+            self.node_num = node_num
 
     @property
     def is_target_readonly(self):
@@ -62,6 +69,28 @@ class BaseEndpointConfig:
         :type is_target_readonly: bool
         """
         self._is_target_readonly = is_target_readonly
+
+    @property
+    def node_num(self):
+        """Gets the node_num of this BaseEndpointConfig.
+
+        Redis集群到GeminiDB Redis迁移场景填写，连接源端Redis集群的子任务个数，输入值在1到16之间，且输入值不能大于源端Redis集群的分片个数，请根据源端Redis集群的规模合理选择。建议集群的每4个分片设置1个源端分片个数，即每1个子任务连接源端集群的4个分片。
+
+        :return: The node_num of this BaseEndpointConfig.
+        :rtype: int
+        """
+        return self._node_num
+
+    @node_num.setter
+    def node_num(self, node_num):
+        """Sets the node_num of this BaseEndpointConfig.
+
+        Redis集群到GeminiDB Redis迁移场景填写，连接源端Redis集群的子任务个数，输入值在1到16之间，且输入值不能大于源端Redis集群的分片个数，请根据源端Redis集群的规模合理选择。建议集群的每4个分片设置1个源端分片个数，即每1个子任务连接源端集群的4个分片。
+
+        :param node_num: The node_num of this BaseEndpointConfig.
+        :type node_num: int
+        """
+        self._node_num = node_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

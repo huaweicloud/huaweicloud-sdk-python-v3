@@ -33,9 +33,9 @@ class ListBucketsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param x_obs_bucket_type: 通过此消息头明确获取的列表内容。 取值： OBJECT：获取所有桶列表。 POSIX：获取所有并行文件系统列表。 不带此消息头则获取所有桶和并行文件系统列表。 
+        :param x_obs_bucket_type: Specifies the content to obtain. Possible values: **OBJECT**: A list of all buckets is returned. **POSIX**: A list of all parallel file systems is returned. If this header is not carried, a list of all buckets and parallel file systems is returned.
         :type x_obs_bucket_type: str
         """
         
@@ -54,7 +54,7 @@ class ListBucketsRequest:
     def date(self):
         """Gets the date of this ListBucketsRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this ListBucketsRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ListBucketsRequest:
     def date(self, date):
         """Sets the date of this ListBucketsRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this ListBucketsRequest.
         :type date: str
@@ -76,7 +76,7 @@ class ListBucketsRequest:
     def x_obs_bucket_type(self):
         """Gets the x_obs_bucket_type of this ListBucketsRequest.
 
-        通过此消息头明确获取的列表内容。 取值： OBJECT：获取所有桶列表。 POSIX：获取所有并行文件系统列表。 不带此消息头则获取所有桶和并行文件系统列表。 
+        Specifies the content to obtain. Possible values: **OBJECT**: A list of all buckets is returned. **POSIX**: A list of all parallel file systems is returned. If this header is not carried, a list of all buckets and parallel file systems is returned.
 
         :return: The x_obs_bucket_type of this ListBucketsRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ListBucketsRequest:
     def x_obs_bucket_type(self, x_obs_bucket_type):
         """Sets the x_obs_bucket_type of this ListBucketsRequest.
 
-        通过此消息头明确获取的列表内容。 取值： OBJECT：获取所有桶列表。 POSIX：获取所有并行文件系统列表。 不带此消息头则获取所有桶和并行文件系统列表。 
+        Specifies the content to obtain. Possible values: **OBJECT**: A list of all buckets is returned. **POSIX**: A list of all parallel file systems is returned. If this header is not carried, a list of all buckets and parallel file systems is returned.
 
         :param x_obs_bucket_type: The x_obs_bucket_type of this ListBucketsRequest.
         :type x_obs_bucket_type: str

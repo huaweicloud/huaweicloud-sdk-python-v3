@@ -48,7 +48,7 @@ class DeleteObjectsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param encoding_type: 对响应中的Key进行指定类型的编码。如果请求消息中设置了EncodingType，那响应中的Key会被编码。 
+        :param encoding_type: Encodes the **key** in the response based on the specified type. If **encoding-type** is specified in the request, the **Key** in the response is encoded.
         :type encoding_type: str
         :param deleted: 
         :type deleted: list[:class:`huaweicloudsdkobs.v1.DeleteResultDeleted`]
@@ -104,7 +104,7 @@ class DeleteObjectsResponse(SdkResponse):
     def encoding_type(self):
         """Gets the encoding_type of this DeleteObjectsResponse.
 
-        对响应中的Key进行指定类型的编码。如果请求消息中设置了EncodingType，那响应中的Key会被编码。 
+        Encodes the **key** in the response based on the specified type. If **encoding-type** is specified in the request, the **Key** in the response is encoded.
 
         :return: The encoding_type of this DeleteObjectsResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class DeleteObjectsResponse(SdkResponse):
     def encoding_type(self, encoding_type):
         """Sets the encoding_type of this DeleteObjectsResponse.
 
-        对响应中的Key进行指定类型的编码。如果请求消息中设置了EncodingType，那响应中的Key会被编码。 
+        Encodes the **key** in the response based on the specified type. If **encoding-type** is specified in the request, the **Key** in the response is encoded.
 
         :param encoding_type: The encoding_type of this DeleteObjectsResponse.
         :type encoding_type: str

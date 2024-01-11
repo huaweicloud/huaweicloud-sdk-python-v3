@@ -29,7 +29,8 @@ class AddressGroup:
         'enterprise_project_id': 'str',
         'tags': 'list[ResourceTag]',
         'status': 'str',
-        'status_message': 'str'
+        'status_message': 'str',
+        'ip_extra_set': 'list[IpExtraSetRespOption]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class AddressGroup:
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
         'status': 'status',
-        'status_message': 'status_message'
+        'status_message': 'status_message',
+        'ip_extra_set': 'ip_extra_set'
     }
 
-    def __init__(self, id=None, name=None, description=None, max_capacity=None, ip_set=None, ip_version=None, created_at=None, updated_at=None, tenant_id=None, enterprise_project_id=None, tags=None, status=None, status_message=None):
+    def __init__(self, id=None, name=None, description=None, max_capacity=None, ip_set=None, ip_version=None, created_at=None, updated_at=None, tenant_id=None, enterprise_project_id=None, tags=None, status=None, status_message=None, ip_extra_set=None):
         """AddressGroup
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class AddressGroup:
         :type status: str
         :param status_message: 功能说明：地址组状态详情信息
         :type status_message: str
+        :param ip_extra_set: 功能说明：地址组包含的地址集及其备注信息
+        :type ip_extra_set: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetRespOption`]
         """
         
         
@@ -96,6 +100,7 @@ class AddressGroup:
         self._tags = None
         self._status = None
         self._status_message = None
+        self._ip_extra_set = None
         self.discriminator = None
 
         self.id = id
@@ -111,6 +116,7 @@ class AddressGroup:
         self.tags = tags
         self.status = status
         self.status_message = status_message
+        self.ip_extra_set = ip_extra_set
 
     @property
     def id(self):
@@ -397,6 +403,28 @@ class AddressGroup:
         :type status_message: str
         """
         self._status_message = status_message
+
+    @property
+    def ip_extra_set(self):
+        """Gets the ip_extra_set of this AddressGroup.
+
+        功能说明：地址组包含的地址集及其备注信息
+
+        :return: The ip_extra_set of this AddressGroup.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetRespOption`]
+        """
+        return self._ip_extra_set
+
+    @ip_extra_set.setter
+    def ip_extra_set(self, ip_extra_set):
+        """Sets the ip_extra_set of this AddressGroup.
+
+        功能说明：地址组包含的地址集及其备注信息
+
+        :param ip_extra_set: The ip_extra_set of this AddressGroup.
+        :type ip_extra_set: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetRespOption`]
+        """
+        self._ip_extra_set = ip_extra_set
 
     def to_dict(self):
         """Returns the model properties as a dict"""

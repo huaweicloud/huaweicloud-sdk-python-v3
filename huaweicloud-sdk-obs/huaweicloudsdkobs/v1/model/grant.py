@@ -37,9 +37,9 @@ class Grant:
 
         :param grantee: 
         :type grantee: :class:`huaweicloudsdkobs.v1.Grantee`
-        :param permission: 授予的权限 
+        :param permission: Permissions granted
         :type permission: str
-        :param delivered: 桶的ACL是否向桶内对象传递 
+        :param delivered: Indicates whether the bucket ACL is applied to objects in the bucket.
         :type delivered: bool
         """
         
@@ -79,7 +79,7 @@ class Grant:
     def permission(self):
         """Gets the permission of this Grant.
 
-        授予的权限 
+        Permissions granted
 
         :return: The permission of this Grant.
         :rtype: str
@@ -90,7 +90,7 @@ class Grant:
     def permission(self, permission):
         """Sets the permission of this Grant.
 
-        授予的权限 
+        Permissions granted
 
         :param permission: The permission of this Grant.
         :type permission: str
@@ -101,7 +101,7 @@ class Grant:
     def delivered(self):
         """Gets the delivered of this Grant.
 
-        桶的ACL是否向桶内对象传递 
+        Indicates whether the bucket ACL is applied to objects in the bucket.
 
         :return: The delivered of this Grant.
         :rtype: bool
@@ -112,7 +112,7 @@ class Grant:
     def delivered(self, delivered):
         """Sets the delivered of this Grant.
 
-        桶的ACL是否向桶内对象传递 
+        Indicates whether the bucket ACL is applied to objects in the bucket.
 
         :param delivered: The delivered of this Grant.
         :type delivered: bool

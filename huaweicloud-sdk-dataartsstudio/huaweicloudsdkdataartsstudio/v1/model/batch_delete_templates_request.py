@@ -31,7 +31,7 @@ class BatchDeleteTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param body: Body of the BatchDeleteTemplatesRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.TemplateListRO`
@@ -51,7 +51,7 @@ class BatchDeleteTemplatesRequest:
     def workspace(self):
         """Gets the workspace of this BatchDeleteTemplatesRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this BatchDeleteTemplatesRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class BatchDeleteTemplatesRequest:
     def workspace(self, workspace):
         """Sets the workspace of this BatchDeleteTemplatesRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this BatchDeleteTemplatesRequest.
         :type workspace: str

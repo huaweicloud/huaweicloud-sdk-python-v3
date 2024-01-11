@@ -35,11 +35,11 @@ class Domains:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 自定义域名。 
+        :param domain_name: Custom domain name
         :type domain_name: str
-        :param create_time: 自定义域名创建时间。 
+        :param create_time: Time when a custom domain name was created
         :type create_time: str
-        :param certificate_id: 自定义域名证书ID。 
+        :param certificate_id: Certificate id 
         :type certificate_id: str
         """
         
@@ -59,7 +59,7 @@ class Domains:
     def domain_name(self):
         """Gets the domain_name of this Domains.
 
-        自定义域名。 
+        Custom domain name
 
         :return: The domain_name of this Domains.
         :rtype: str
@@ -70,7 +70,7 @@ class Domains:
     def domain_name(self, domain_name):
         """Sets the domain_name of this Domains.
 
-        自定义域名。 
+        Custom domain name
 
         :param domain_name: The domain_name of this Domains.
         :type domain_name: str
@@ -81,7 +81,7 @@ class Domains:
     def create_time(self):
         """Gets the create_time of this Domains.
 
-        自定义域名创建时间。 
+        Time when a custom domain name was created
 
         :return: The create_time of this Domains.
         :rtype: str
@@ -92,7 +92,7 @@ class Domains:
     def create_time(self, create_time):
         """Sets the create_time of this Domains.
 
-        自定义域名创建时间。 
+        Time when a custom domain name was created
 
         :param create_time: The create_time of this Domains.
         :type create_time: str
@@ -103,7 +103,7 @@ class Domains:
     def certificate_id(self):
         """Gets the certificate_id of this Domains.
 
-        自定义域名证书ID。 
+        Certificate id 
 
         :return: The certificate_id of this Domains.
         :rtype: str
@@ -114,7 +114,7 @@ class Domains:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this Domains.
 
-        自定义域名证书ID。 
+        Certificate id 
 
         :param certificate_id: The certificate_id of this Domains.
         :type certificate_id: str

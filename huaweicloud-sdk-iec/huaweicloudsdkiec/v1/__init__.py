@@ -12,6 +12,9 @@ from huaweicloudsdkiec.v1.model.allowed_address_pair import AllowedAddressPair
 from huaweicloudsdkiec.v1.model.associate_subnet_request import AssociateSubnetRequest
 from huaweicloudsdkiec.v1.model.associate_subnet_request_body import AssociateSubnetRequestBody
 from huaweicloudsdkiec.v1.model.associate_subnet_response import AssociateSubnetResponse
+from huaweicloudsdkiec.v1.model.attach_vip_bandwidth_request import AttachVipBandwidthRequest
+from huaweicloudsdkiec.v1.model.attach_vip_bandwidth_request_body import AttachVipBandwidthRequestBody
+from huaweicloudsdkiec.v1.model.attach_vip_bandwidth_response import AttachVipBandwidthResponse
 from huaweicloudsdkiec.v1.model.attachment import Attachment
 from huaweicloudsdkiec.v1.model.bandwidth import Bandwidth
 from huaweicloudsdkiec.v1.model.bandwidth_config import BandwidthConfig
@@ -132,6 +135,8 @@ from huaweicloudsdkiec.v1.model.demand_instance import DemandInstance
 from huaweicloudsdkiec.v1.model.demand_resp import DemandResp
 from huaweicloudsdkiec.v1.model.deployment import Deployment
 from huaweicloudsdkiec.v1.model.deployment_edgecloud import DeploymentEdgecloud
+from huaweicloudsdkiec.v1.model.detach_vip_bandwidth_request import DetachVipBandwidthRequest
+from huaweicloudsdkiec.v1.model.detach_vip_bandwidth_response import DetachVipBandwidthResponse
 from huaweicloudsdkiec.v1.model.disassociate_subnet_request import DisassociateSubnetRequest
 from huaweicloudsdkiec.v1.model.disassociate_subnet_request_body import DisassociateSubnetRequestBody
 from huaweicloudsdkiec.v1.model.disassociate_subnet_response import DisassociateSubnetResponse
@@ -163,6 +168,7 @@ from huaweicloudsdkiec.v1.model.instance_job import InstanceJob
 from huaweicloudsdkiec.v1.model.instance_security_group import InstanceSecurityGroup
 from huaweicloudsdkiec.v1.model.ip_pool import IpPool
 from huaweicloudsdkiec.v1.model.ipv6_bandwidth import Ipv6Bandwidth
+from huaweicloudsdkiec.v1.model.ipv6_bandwidth_for_nic import Ipv6BandwidthForNic
 from huaweicloudsdkiec.v1.model.job_result import JobResult
 from huaweicloudsdkiec.v1.model.list_bandwidth_types_request import ListBandwidthTypesRequest
 from huaweicloudsdkiec.v1.model.list_bandwidth_types_response import ListBandwidthTypesResponse
@@ -310,6 +316,7 @@ from huaweicloudsdkiec.v1.model.update_vpc_option import UpdateVpcOption
 from huaweicloudsdkiec.v1.model.update_vpc_request import UpdateVpcRequest
 from huaweicloudsdkiec.v1.model.update_vpc_request_body import UpdateVpcRequestBody
 from huaweicloudsdkiec.v1.model.update_vpc_response import UpdateVpcResponse
+from huaweicloudsdkiec.v1.model.virtual_port_response import VirtualPortResponse
 from huaweicloudsdkiec.v1.model.volume import Volume
 from huaweicloudsdkiec.v1.model.volume_type import VolumeType
 from huaweicloudsdkiec.v1.model.volumes_attached import VolumesAttached

@@ -31,7 +31,7 @@ class CreateSecurityDataClassificationRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param body: Body of the CreateSecurityDataClassificationRuleRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationRuleOperateDTO`
@@ -51,7 +51,7 @@ class CreateSecurityDataClassificationRuleRequest:
     def workspace(self):
         """Gets the workspace of this CreateSecurityDataClassificationRuleRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this CreateSecurityDataClassificationRuleRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateSecurityDataClassificationRuleRequest:
     def workspace(self, workspace):
         """Sets the workspace of this CreateSecurityDataClassificationRuleRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this CreateSecurityDataClassificationRuleRequest.
         :type workspace: str

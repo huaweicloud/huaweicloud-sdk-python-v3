@@ -39,7 +39,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
         :type permission_set_id: str
         :param permission_id: 权限id
         :type permission_id: str
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param body: Body of the UpdateSecurityPermissionSetPermissionRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetPermissionUpdateDTO`
@@ -107,7 +107,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
     def workspace(self):
         """Gets the workspace of this UpdateSecurityPermissionSetPermissionRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this UpdateSecurityPermissionSetPermissionRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
     def workspace(self, workspace):
         """Sets the workspace of this UpdateSecurityPermissionSetPermissionRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this UpdateSecurityPermissionSetPermissionRequest.
         :type workspace: str

@@ -21,6 +21,7 @@ class AccessPoint:
         'region_id': 'str',
         'bandwidth_size': 'int',
         'bind_ieg_count': 'int',
+        'attach_vpc_count': 'int',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -30,11 +31,12 @@ class AccessPoint:
         'region_id': 'region_id',
         'bandwidth_size': 'bandwidth_size',
         'bind_ieg_count': 'bind_ieg_count',
+        'attach_vpc_count': 'attach_vpc_count',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, region_id=None, bandwidth_size=None, bind_ieg_count=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, region_id=None, bandwidth_size=None, bind_ieg_count=None, attach_vpc_count=None, created_at=None, updated_at=None):
         """AccessPoint
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class AccessPoint:
         :type bandwidth_size: int
         :param bind_ieg_count: 绑定智能企业网关数量
         :type bind_ieg_count: int
+        :param attach_vpc_count: 关联VPC数量
+        :type attach_vpc_count: int
         :param created_at: 创建时间
         :type created_at: datetime
         :param updated_at: 更新时间
@@ -59,6 +63,7 @@ class AccessPoint:
         self._region_id = None
         self._bandwidth_size = None
         self._bind_ieg_count = None
+        self._attach_vpc_count = None
         self._created_at = None
         self._updated_at = None
         self.discriminator = None
@@ -71,6 +76,8 @@ class AccessPoint:
             self.bandwidth_size = bandwidth_size
         if bind_ieg_count is not None:
             self.bind_ieg_count = bind_ieg_count
+        if attach_vpc_count is not None:
+            self.attach_vpc_count = attach_vpc_count
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -163,6 +170,28 @@ class AccessPoint:
         :type bind_ieg_count: int
         """
         self._bind_ieg_count = bind_ieg_count
+
+    @property
+    def attach_vpc_count(self):
+        """Gets the attach_vpc_count of this AccessPoint.
+
+        关联VPC数量
+
+        :return: The attach_vpc_count of this AccessPoint.
+        :rtype: int
+        """
+        return self._attach_vpc_count
+
+    @attach_vpc_count.setter
+    def attach_vpc_count(self, attach_vpc_count):
+        """Sets the attach_vpc_count of this AccessPoint.
+
+        关联VPC数量
+
+        :param attach_vpc_count: The attach_vpc_count of this AccessPoint.
+        :type attach_vpc_count: int
+        """
+        self._attach_vpc_count = attach_vpc_count
 
     @property
     def created_at(self):

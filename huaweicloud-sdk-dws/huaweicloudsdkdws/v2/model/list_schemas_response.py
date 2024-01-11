@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Buckets:
+class ListSchemasResponse(SdkResponse):
 
     """
     Attributes:
@@ -14,56 +15,83 @@ class Buckets:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-    xml_name = "Buckets"
-
     sensitive_list = []
 
     openapi_types = {
-        'bucket': 'list[Bucket]'
+        'schemas': 'list[SchemaInfo]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'bucket': 'Bucket'
+        'schemas': 'schemas',
+        'count': 'count'
     }
 
-    def __init__(self, bucket=None):
-        """Buckets
+    def __init__(self, schemas=None, count=None):
+        """ListSchemasResponse
 
         The model defined in huaweicloud sdk
 
-        :param bucket: 用户所拥有的桶列表。 
-        :type bucket: list[:class:`huaweicloudsdkobs.v1.Bucket`]
+        :param schemas: 集群模式空间信息列表。
+        :type schemas: list[:class:`huaweicloudsdkdws.v2.SchemaInfo`]
+        :param count: 总数量
+        :type count: int
         """
         
-        
+        super(ListSchemasResponse, self).__init__()
 
-        self._bucket = None
+        self._schemas = None
+        self._count = None
         self.discriminator = None
 
-        if bucket is not None:
-            self.bucket = bucket
+        if schemas is not None:
+            self.schemas = schemas
+        if count is not None:
+            self.count = count
 
     @property
-    def bucket(self):
-        """Gets the bucket of this Buckets.
+    def schemas(self):
+        """Gets the schemas of this ListSchemasResponse.
 
-        用户所拥有的桶列表。 
+        集群模式空间信息列表。
 
-        :return: The bucket of this Buckets.
-        :rtype: list[:class:`huaweicloudsdkobs.v1.Bucket`]
+        :return: The schemas of this ListSchemasResponse.
+        :rtype: list[:class:`huaweicloudsdkdws.v2.SchemaInfo`]
         """
-        return self._bucket
+        return self._schemas
 
-    @bucket.setter
-    def bucket(self, bucket):
-        """Sets the bucket of this Buckets.
+    @schemas.setter
+    def schemas(self, schemas):
+        """Sets the schemas of this ListSchemasResponse.
 
-        用户所拥有的桶列表。 
+        集群模式空间信息列表。
 
-        :param bucket: The bucket of this Buckets.
-        :type bucket: list[:class:`huaweicloudsdkobs.v1.Bucket`]
+        :param schemas: The schemas of this ListSchemasResponse.
+        :type schemas: list[:class:`huaweicloudsdkdws.v2.SchemaInfo`]
         """
-        self._bucket = bucket
+        self._schemas = schemas
+
+    @property
+    def count(self):
+        """Gets the count of this ListSchemasResponse.
+
+        总数量
+
+        :return: The count of this ListSchemasResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListSchemasResponse.
+
+        总数量
+
+        :param count: The count of this ListSchemasResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -107,7 +135,7 @@ class Buckets:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Buckets):
+        if not isinstance(other, ListSchemasResponse):
             return False
 
         return self.__dict__ == other.__dict__

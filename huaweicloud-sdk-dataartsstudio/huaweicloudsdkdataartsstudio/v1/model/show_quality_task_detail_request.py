@@ -33,7 +33,7 @@ class ShowQualityTaskDetailRequest:
 
         :param id: 质量作业ID
         :type id: str
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         """
         
@@ -72,7 +72,7 @@ class ShowQualityTaskDetailRequest:
     def workspace(self):
         """Gets the workspace of this ShowQualityTaskDetailRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ShowQualityTaskDetailRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowQualityTaskDetailRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowQualityTaskDetailRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ShowQualityTaskDetailRequest.
         :type workspace: str

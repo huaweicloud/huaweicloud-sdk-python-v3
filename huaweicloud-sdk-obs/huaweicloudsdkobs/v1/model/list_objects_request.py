@@ -47,23 +47,23 @@ class ListObjectsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param bucket_name: 请求的桶名称。 
+        :param bucket_name: Name of the requested bucket
         :type bucket_name: str
-        :param prefix: 列举以指定的字符串prefix开头的对象。 
+        :param prefix: Lists objects whose name starts with the specified prefix.
         :type prefix: str
-        :param marker: 列举桶内对象列表时，指定一个标识符，从该标识符以后按字典顺序返回对象列表。 
+        :param marker: Specifies a marker when listing objects in a bucket. With a marker configured, objects after this marker will be returned in alphabetical order.
         :type marker: str
-        :param max_keys: 指定返回的最大对象数，返回的对象列表将是按照字典顺序的最多前max-keys个对象，范围是[1，1000]，超出范围时，按照默认的1000进行处理。 
+        :param max_keys: Sets the maximum number of objects returned (in alphabetical order) in the response. The value ranges from 1 to 1000. If there are over 1,000 objects, only 1,000 objects are returned by default.
         :type max_keys: int
-        :param delimiter: 将对象名进行分组的分隔符。如果指定了prefix，从prefix到第一次出现delimiter间具有相同字符串的对象名会被分成一组，形成一条CommonPrefixes；如果没有指定prefix，从对象名的首字符到第一次出现delimiter间具有相同字符串的对象名会被分成一组，形成一条CommonPrefixes。  例如，桶中有3个对象，分别为abcd、abcde、bbcde。如果指定delimiter为d，prefix为a，abcd、abcde会被分成一组，形成一条前缀为abcd的CommonPrefixes；如果只指定delimiter为d，abcd、abcde会被分成一组，形成一条前缀为abcd的CommonPrefixes，而bbcde会被单独分成一组，形成一条前缀为bbcd的CommonPrefixes。 
+        :param delimiter: Separator used to group object names. If a prefix is specified, objects with the same string from the prefix to the first delimiter are grouped into one **CommonPrefixes**. If no prefix is specified, objects with the same string from the first character to the first delimiter are grouped into one **CommonPrefixes**.  Assume that a bucket has objects **abcd**, **abcde**, and **bbcde** in it. If **delimiter** is set to **d** and **prefix** is set to **a**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix. If only **delimiter** is set to **d**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix, and **bbcde** is grouped separately into another **CommonPrefixes** with **bbcd** as the prefix.
         :type delimiter: str
-        :param key_marker: 列举对象时的起始位置。 有效值：上次请求返回体的NextKeyMarker值 
+        :param key_marker: Position to start with when objects are listed. Valid value: value of **NextKeyMarker** in the response body of the last request
         :type key_marker: str
-        :param version_id_marker: 本参数只适用于多版本例举场景  与请求中的key-marker配合使用，返回的对象列表将是按照字典顺序排序后在该标识符以后的对象(单次返回最大为1000个)。如果version-id-marker不是key-marker对应的一个版本号，则该参数无效。  有效值：对象的版本号，即上次请求返回体的NextVersionIdMarker值 
+        :param version_id_marker: This parameter applies only when versioning is enabled.  Specifies the version ID to start with when objects in a bucket are listed. Objects are listed in alphabetical order and a maximum of 1,000 objects can be displayed at a time. This parameter is used together with **key-marker**. If the value of **version-id-marker** does not match **key-marker**, **version-id-marker** is invalid.  Valid value: object version ID, which is the value of **NextVersionIdMarker** in the response body of the last request
         :type version_id_marker: str
-        :param encoding_type: 对响应中的部分元素进行指定类型的编码。如果Delimiter、Marker（或KeyMarker）、Prefix、NextMarker（或NextKeyMarker）和Key包含xml 1.0标准不支持的控制字符，可通过设置encoding-type对响应中的Delimiter、Marker（或KeyMarker）、Prefix（包括CommonPrefixes中的Prefix）、NextMarker（或NextKeyMarker）和Key进行编码。  可选值：url 
+        :param encoding_type: Encodes some elements in the response based on the specified type. If **Delimiter**, **Marker** (or **KeyMarker**), **Prefix**, **NextMarker** (or **NextKeyMarker**), and **Key** contain control characters that are not supported by XML 1.0 standards, you can configure **encoding-type** to encode **Delimiter**, **Marker** (or **KeyMarker**), **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker** (or **NextKeyMarker**), and **Key** in the response.  Optional value: url
         :type encoding_type: str
         """
         
@@ -102,7 +102,7 @@ class ListObjectsRequest:
     def date(self):
         """Gets the date of this ListObjectsRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this ListObjectsRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ListObjectsRequest:
     def date(self, date):
         """Sets the date of this ListObjectsRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this ListObjectsRequest.
         :type date: str
@@ -124,7 +124,7 @@ class ListObjectsRequest:
     def bucket_name(self):
         """Gets the bucket_name of this ListObjectsRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :return: The bucket_name of this ListObjectsRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListObjectsRequest:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this ListObjectsRequest.
 
-        请求的桶名称。 
+        Name of the requested bucket
 
         :param bucket_name: The bucket_name of this ListObjectsRequest.
         :type bucket_name: str
@@ -146,7 +146,7 @@ class ListObjectsRequest:
     def prefix(self):
         """Gets the prefix of this ListObjectsRequest.
 
-        列举以指定的字符串prefix开头的对象。 
+        Lists objects whose name starts with the specified prefix.
 
         :return: The prefix of this ListObjectsRequest.
         :rtype: str
@@ -157,7 +157,7 @@ class ListObjectsRequest:
     def prefix(self, prefix):
         """Sets the prefix of this ListObjectsRequest.
 
-        列举以指定的字符串prefix开头的对象。 
+        Lists objects whose name starts with the specified prefix.
 
         :param prefix: The prefix of this ListObjectsRequest.
         :type prefix: str
@@ -168,7 +168,7 @@ class ListObjectsRequest:
     def marker(self):
         """Gets the marker of this ListObjectsRequest.
 
-        列举桶内对象列表时，指定一个标识符，从该标识符以后按字典顺序返回对象列表。 
+        Specifies a marker when listing objects in a bucket. With a marker configured, objects after this marker will be returned in alphabetical order.
 
         :return: The marker of this ListObjectsRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class ListObjectsRequest:
     def marker(self, marker):
         """Sets the marker of this ListObjectsRequest.
 
-        列举桶内对象列表时，指定一个标识符，从该标识符以后按字典顺序返回对象列表。 
+        Specifies a marker when listing objects in a bucket. With a marker configured, objects after this marker will be returned in alphabetical order.
 
         :param marker: The marker of this ListObjectsRequest.
         :type marker: str
@@ -190,7 +190,7 @@ class ListObjectsRequest:
     def max_keys(self):
         """Gets the max_keys of this ListObjectsRequest.
 
-        指定返回的最大对象数，返回的对象列表将是按照字典顺序的最多前max-keys个对象，范围是[1，1000]，超出范围时，按照默认的1000进行处理。 
+        Sets the maximum number of objects returned (in alphabetical order) in the response. The value ranges from 1 to 1000. If there are over 1,000 objects, only 1,000 objects are returned by default.
 
         :return: The max_keys of this ListObjectsRequest.
         :rtype: int
@@ -201,7 +201,7 @@ class ListObjectsRequest:
     def max_keys(self, max_keys):
         """Sets the max_keys of this ListObjectsRequest.
 
-        指定返回的最大对象数，返回的对象列表将是按照字典顺序的最多前max-keys个对象，范围是[1，1000]，超出范围时，按照默认的1000进行处理。 
+        Sets the maximum number of objects returned (in alphabetical order) in the response. The value ranges from 1 to 1000. If there are over 1,000 objects, only 1,000 objects are returned by default.
 
         :param max_keys: The max_keys of this ListObjectsRequest.
         :type max_keys: int
@@ -212,7 +212,7 @@ class ListObjectsRequest:
     def delimiter(self):
         """Gets the delimiter of this ListObjectsRequest.
 
-        将对象名进行分组的分隔符。如果指定了prefix，从prefix到第一次出现delimiter间具有相同字符串的对象名会被分成一组，形成一条CommonPrefixes；如果没有指定prefix，从对象名的首字符到第一次出现delimiter间具有相同字符串的对象名会被分成一组，形成一条CommonPrefixes。  例如，桶中有3个对象，分别为abcd、abcde、bbcde。如果指定delimiter为d，prefix为a，abcd、abcde会被分成一组，形成一条前缀为abcd的CommonPrefixes；如果只指定delimiter为d，abcd、abcde会被分成一组，形成一条前缀为abcd的CommonPrefixes，而bbcde会被单独分成一组，形成一条前缀为bbcd的CommonPrefixes。 
+        Separator used to group object names. If a prefix is specified, objects with the same string from the prefix to the first delimiter are grouped into one **CommonPrefixes**. If no prefix is specified, objects with the same string from the first character to the first delimiter are grouped into one **CommonPrefixes**.  Assume that a bucket has objects **abcd**, **abcde**, and **bbcde** in it. If **delimiter** is set to **d** and **prefix** is set to **a**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix. If only **delimiter** is set to **d**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix, and **bbcde** is grouped separately into another **CommonPrefixes** with **bbcd** as the prefix.
 
         :return: The delimiter of this ListObjectsRequest.
         :rtype: str
@@ -223,7 +223,7 @@ class ListObjectsRequest:
     def delimiter(self, delimiter):
         """Sets the delimiter of this ListObjectsRequest.
 
-        将对象名进行分组的分隔符。如果指定了prefix，从prefix到第一次出现delimiter间具有相同字符串的对象名会被分成一组，形成一条CommonPrefixes；如果没有指定prefix，从对象名的首字符到第一次出现delimiter间具有相同字符串的对象名会被分成一组，形成一条CommonPrefixes。  例如，桶中有3个对象，分别为abcd、abcde、bbcde。如果指定delimiter为d，prefix为a，abcd、abcde会被分成一组，形成一条前缀为abcd的CommonPrefixes；如果只指定delimiter为d，abcd、abcde会被分成一组，形成一条前缀为abcd的CommonPrefixes，而bbcde会被单独分成一组，形成一条前缀为bbcd的CommonPrefixes。 
+        Separator used to group object names. If a prefix is specified, objects with the same string from the prefix to the first delimiter are grouped into one **CommonPrefixes**. If no prefix is specified, objects with the same string from the first character to the first delimiter are grouped into one **CommonPrefixes**.  Assume that a bucket has objects **abcd**, **abcde**, and **bbcde** in it. If **delimiter** is set to **d** and **prefix** is set to **a**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix. If only **delimiter** is set to **d**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix, and **bbcde** is grouped separately into another **CommonPrefixes** with **bbcd** as the prefix.
 
         :param delimiter: The delimiter of this ListObjectsRequest.
         :type delimiter: str
@@ -234,7 +234,7 @@ class ListObjectsRequest:
     def key_marker(self):
         """Gets the key_marker of this ListObjectsRequest.
 
-        列举对象时的起始位置。 有效值：上次请求返回体的NextKeyMarker值 
+        Position to start with when objects are listed. Valid value: value of **NextKeyMarker** in the response body of the last request
 
         :return: The key_marker of this ListObjectsRequest.
         :rtype: str
@@ -245,7 +245,7 @@ class ListObjectsRequest:
     def key_marker(self, key_marker):
         """Sets the key_marker of this ListObjectsRequest.
 
-        列举对象时的起始位置。 有效值：上次请求返回体的NextKeyMarker值 
+        Position to start with when objects are listed. Valid value: value of **NextKeyMarker** in the response body of the last request
 
         :param key_marker: The key_marker of this ListObjectsRequest.
         :type key_marker: str
@@ -256,7 +256,7 @@ class ListObjectsRequest:
     def version_id_marker(self):
         """Gets the version_id_marker of this ListObjectsRequest.
 
-        本参数只适用于多版本例举场景  与请求中的key-marker配合使用，返回的对象列表将是按照字典顺序排序后在该标识符以后的对象(单次返回最大为1000个)。如果version-id-marker不是key-marker对应的一个版本号，则该参数无效。  有效值：对象的版本号，即上次请求返回体的NextVersionIdMarker值 
+        This parameter applies only when versioning is enabled.  Specifies the version ID to start with when objects in a bucket are listed. Objects are listed in alphabetical order and a maximum of 1,000 objects can be displayed at a time. This parameter is used together with **key-marker**. If the value of **version-id-marker** does not match **key-marker**, **version-id-marker** is invalid.  Valid value: object version ID, which is the value of **NextVersionIdMarker** in the response body of the last request
 
         :return: The version_id_marker of this ListObjectsRequest.
         :rtype: str
@@ -267,7 +267,7 @@ class ListObjectsRequest:
     def version_id_marker(self, version_id_marker):
         """Sets the version_id_marker of this ListObjectsRequest.
 
-        本参数只适用于多版本例举场景  与请求中的key-marker配合使用，返回的对象列表将是按照字典顺序排序后在该标识符以后的对象(单次返回最大为1000个)。如果version-id-marker不是key-marker对应的一个版本号，则该参数无效。  有效值：对象的版本号，即上次请求返回体的NextVersionIdMarker值 
+        This parameter applies only when versioning is enabled.  Specifies the version ID to start with when objects in a bucket are listed. Objects are listed in alphabetical order and a maximum of 1,000 objects can be displayed at a time. This parameter is used together with **key-marker**. If the value of **version-id-marker** does not match **key-marker**, **version-id-marker** is invalid.  Valid value: object version ID, which is the value of **NextVersionIdMarker** in the response body of the last request
 
         :param version_id_marker: The version_id_marker of this ListObjectsRequest.
         :type version_id_marker: str
@@ -278,7 +278,7 @@ class ListObjectsRequest:
     def encoding_type(self):
         """Gets the encoding_type of this ListObjectsRequest.
 
-        对响应中的部分元素进行指定类型的编码。如果Delimiter、Marker（或KeyMarker）、Prefix、NextMarker（或NextKeyMarker）和Key包含xml 1.0标准不支持的控制字符，可通过设置encoding-type对响应中的Delimiter、Marker（或KeyMarker）、Prefix（包括CommonPrefixes中的Prefix）、NextMarker（或NextKeyMarker）和Key进行编码。  可选值：url 
+        Encodes some elements in the response based on the specified type. If **Delimiter**, **Marker** (or **KeyMarker**), **Prefix**, **NextMarker** (or **NextKeyMarker**), and **Key** contain control characters that are not supported by XML 1.0 standards, you can configure **encoding-type** to encode **Delimiter**, **Marker** (or **KeyMarker**), **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker** (or **NextKeyMarker**), and **Key** in the response.  Optional value: url
 
         :return: The encoding_type of this ListObjectsRequest.
         :rtype: str
@@ -289,7 +289,7 @@ class ListObjectsRequest:
     def encoding_type(self, encoding_type):
         """Sets the encoding_type of this ListObjectsRequest.
 
-        对响应中的部分元素进行指定类型的编码。如果Delimiter、Marker（或KeyMarker）、Prefix、NextMarker（或NextKeyMarker）和Key包含xml 1.0标准不支持的控制字符，可通过设置encoding-type对响应中的Delimiter、Marker（或KeyMarker）、Prefix（包括CommonPrefixes中的Prefix）、NextMarker（或NextKeyMarker）和Key进行编码。  可选值：url 
+        Encodes some elements in the response based on the specified type. If **Delimiter**, **Marker** (or **KeyMarker**), **Prefix**, **NextMarker** (or **NextKeyMarker**), and **Key** contain control characters that are not supported by XML 1.0 standards, you can configure **encoding-type** to encode **Delimiter**, **Marker** (or **KeyMarker**), **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker** (or **NextKeyMarker**), and **Key** in the response.  Optional value: url
 
         :param encoding_type: The encoding_type of this ListObjectsRequest.
         :type encoding_type: str

@@ -35,7 +35,7 @@ class ListCategoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param limit: 分页时每页的条数,最大值为100
         :type limit: int
@@ -64,7 +64,7 @@ class ListCategoryRequest:
     def workspace(self):
         """Gets the workspace of this ListCategoryRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ListCategoryRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class ListCategoryRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListCategoryRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ListCategoryRequest.
         :type workspace: str

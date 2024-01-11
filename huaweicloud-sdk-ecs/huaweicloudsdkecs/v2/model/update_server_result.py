@@ -37,6 +37,7 @@ class UpdateServerResult:
         'description': 'str',
         'tags': 'list[str]',
         'status': 'str',
+        'os_ext_srv_att_ruser_data': 'str',
         'os_ext_srv_att_rhostname': 'str'
     }
 
@@ -61,10 +62,11 @@ class UpdateServerResult:
         'description': 'description',
         'tags': 'tags',
         'status': 'status',
+        'os_ext_srv_att_ruser_data': 'OS-EXT-SRV-ATTR:user_data',
         'os_ext_srv_att_rhostname': 'OS-EXT-SRV-ATTR:hostname'
     }
 
-    def __init__(self, tenant_id=None, image=None, access_i_pv4=None, access_i_pv6=None, metadata=None, addresses=None, created=None, host_id=None, flavor=None, os_dc_fdisk_config=None, user_id=None, name=None, progress=None, links=None, id=None, updated=None, locked=None, description=None, tags=None, status=None, os_ext_srv_att_rhostname=None):
+    def __init__(self, tenant_id=None, image=None, access_i_pv4=None, access_i_pv6=None, metadata=None, addresses=None, created=None, host_id=None, flavor=None, os_dc_fdisk_config=None, user_id=None, name=None, progress=None, links=None, id=None, updated=None, locked=None, description=None, tags=None, status=None, os_ext_srv_att_ruser_data=None, os_ext_srv_att_rhostname=None):
         """UpdateServerResult
 
         The model defined in huaweicloud sdk
@@ -109,6 +111,8 @@ class UpdateServerResult:
         :type tags: list[str]
         :param status: 弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
         :type status: str
+        :param os_ext_srv_att_ruser_data: 创建弹性云服务器时指定的user_data（编码过后的信息）。
+        :type os_ext_srv_att_ruser_data: str
         :param os_ext_srv_att_rhostname: 弹性云服务器的主机名。
         :type os_ext_srv_att_rhostname: str
         """
@@ -135,6 +139,7 @@ class UpdateServerResult:
         self._description = None
         self._tags = None
         self._status = None
+        self._os_ext_srv_att_ruser_data = None
         self._os_ext_srv_att_rhostname = None
         self.discriminator = None
 
@@ -161,6 +166,8 @@ class UpdateServerResult:
             self.description = description
         self.tags = tags
         self.status = status
+        if os_ext_srv_att_ruser_data is not None:
+            self.os_ext_srv_att_ruser_data = os_ext_srv_att_ruser_data
         self.os_ext_srv_att_rhostname = os_ext_srv_att_rhostname
 
     @property
@@ -598,6 +605,28 @@ class UpdateServerResult:
         :type status: str
         """
         self._status = status
+
+    @property
+    def os_ext_srv_att_ruser_data(self):
+        """Gets the os_ext_srv_att_ruser_data of this UpdateServerResult.
+
+        创建弹性云服务器时指定的user_data（编码过后的信息）。
+
+        :return: The os_ext_srv_att_ruser_data of this UpdateServerResult.
+        :rtype: str
+        """
+        return self._os_ext_srv_att_ruser_data
+
+    @os_ext_srv_att_ruser_data.setter
+    def os_ext_srv_att_ruser_data(self, os_ext_srv_att_ruser_data):
+        """Sets the os_ext_srv_att_ruser_data of this UpdateServerResult.
+
+        创建弹性云服务器时指定的user_data（编码过后的信息）。
+
+        :param os_ext_srv_att_ruser_data: The os_ext_srv_att_ruser_data of this UpdateServerResult.
+        :type os_ext_srv_att_ruser_data: str
+        """
+        self._os_ext_srv_att_ruser_data = os_ext_srv_att_ruser_data
 
     @property
     def os_ext_srv_att_rhostname(self):

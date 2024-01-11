@@ -37,13 +37,13 @@ class TopicConfiguration:
 
         The model defined in huaweicloud sdk
 
-        :param id: 每项事件通知配置的唯一标识，若是用户未指定ID，系统将自动分配一个ID。 
+        :param id: Unique ID of each event notification. If you do not specify an ID, the system assigns one.
         :type id: str
         :param filter: 
         :type filter: :class:`huaweicloudsdkobs.v1.TopicConfigurationFilter`
-        :param topic: 事件通知主题的URN，当OBS检测到桶中发生特定的事件后，将会发布通知消息至该主题，可以在[消息通知服务主题](https://console.huaweicloud.com/smn/?region&#x3D;cn-north-4#/topics/list)部分找到具体值。 模板：&lt;Topic&gt;urn:smn:region:project_id:smn_topic&lt;/Topic&gt; 
+        :param topic: URN of the event notification topic. When OBS detects a specific event in a bucket, it publishes a notification message to this topic. You can find the topic&#39;s URN on the [Topics](https://console-intl.huaweicloud.com/smn/?agencyId&#x3D;7b00025342f14bcabb245478269c6593&amp;region&#x3D;cn-east-3&amp;locale&#x3D;en-us#/topics/list) page of the SMN console. Template: &lt;Topic&gt;urn:smn:region:project_id:smn_topic&lt;/Topic&gt;
         :type topic: str
-        :param event: 需要发布通知消息的事件类型。 说明：在一个TopicConfiguration、FunctionStageConfiguration配置项中可以添加多个事件类型。 合法值： 上传对象操作可以取以下值： ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  或者使用通配符支持所有上传操作 ObjectCreated:*  删除对象操作可以取以下值： ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  或者使用通配符支持所有删除操作 ObjectRemoved:* 
+        :param event: Event types for which OBS sends notifications. Multiple event types can be added in one **TopicConfiguration** or **FunctionGraphConfiguration** item. Value options: Choose from the following for object upload operations: ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  Or use a wildcard character to support all upload operations: ObjectCreated:*  Choose from the following for object delete operations: ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  Or use a wildcard character to support all delete operations: ObjectRemoved:*
         :type event: str
         """
         
@@ -68,7 +68,7 @@ class TopicConfiguration:
     def id(self):
         """Gets the id of this TopicConfiguration.
 
-        每项事件通知配置的唯一标识，若是用户未指定ID，系统将自动分配一个ID。 
+        Unique ID of each event notification. If you do not specify an ID, the system assigns one.
 
         :return: The id of this TopicConfiguration.
         :rtype: str
@@ -79,7 +79,7 @@ class TopicConfiguration:
     def id(self, id):
         """Sets the id of this TopicConfiguration.
 
-        每项事件通知配置的唯一标识，若是用户未指定ID，系统将自动分配一个ID。 
+        Unique ID of each event notification. If you do not specify an ID, the system assigns one.
 
         :param id: The id of this TopicConfiguration.
         :type id: str
@@ -108,7 +108,7 @@ class TopicConfiguration:
     def topic(self):
         """Gets the topic of this TopicConfiguration.
 
-        事件通知主题的URN，当OBS检测到桶中发生特定的事件后，将会发布通知消息至该主题，可以在[消息通知服务主题](https://console.huaweicloud.com/smn/?region=cn-north-4#/topics/list)部分找到具体值。 模板：<Topic>urn:smn:region:project_id:smn_topic</Topic> 
+        URN of the event notification topic. When OBS detects a specific event in a bucket, it publishes a notification message to this topic. You can find the topic's URN on the [Topics](https://console-intl.huaweicloud.com/smn/?agencyId=7b00025342f14bcabb245478269c6593&region=cn-east-3&locale=en-us#/topics/list) page of the SMN console. Template: <Topic>urn:smn:region:project_id:smn_topic</Topic>
 
         :return: The topic of this TopicConfiguration.
         :rtype: str
@@ -119,7 +119,7 @@ class TopicConfiguration:
     def topic(self, topic):
         """Sets the topic of this TopicConfiguration.
 
-        事件通知主题的URN，当OBS检测到桶中发生特定的事件后，将会发布通知消息至该主题，可以在[消息通知服务主题](https://console.huaweicloud.com/smn/?region=cn-north-4#/topics/list)部分找到具体值。 模板：<Topic>urn:smn:region:project_id:smn_topic</Topic> 
+        URN of the event notification topic. When OBS detects a specific event in a bucket, it publishes a notification message to this topic. You can find the topic's URN on the [Topics](https://console-intl.huaweicloud.com/smn/?agencyId=7b00025342f14bcabb245478269c6593&region=cn-east-3&locale=en-us#/topics/list) page of the SMN console. Template: <Topic>urn:smn:region:project_id:smn_topic</Topic>
 
         :param topic: The topic of this TopicConfiguration.
         :type topic: str
@@ -130,7 +130,7 @@ class TopicConfiguration:
     def event(self):
         """Gets the event of this TopicConfiguration.
 
-        需要发布通知消息的事件类型。 说明：在一个TopicConfiguration、FunctionStageConfiguration配置项中可以添加多个事件类型。 合法值： 上传对象操作可以取以下值： ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  或者使用通配符支持所有上传操作 ObjectCreated:*  删除对象操作可以取以下值： ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  或者使用通配符支持所有删除操作 ObjectRemoved:* 
+        Event types for which OBS sends notifications. Multiple event types can be added in one **TopicConfiguration** or **FunctionGraphConfiguration** item. Value options: Choose from the following for object upload operations: ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  Or use a wildcard character to support all upload operations: ObjectCreated:*  Choose from the following for object delete operations: ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  Or use a wildcard character to support all delete operations: ObjectRemoved:*
 
         :return: The event of this TopicConfiguration.
         :rtype: str
@@ -141,7 +141,7 @@ class TopicConfiguration:
     def event(self, event):
         """Sets the event of this TopicConfiguration.
 
-        需要发布通知消息的事件类型。 说明：在一个TopicConfiguration、FunctionStageConfiguration配置项中可以添加多个事件类型。 合法值： 上传对象操作可以取以下值： ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  或者使用通配符支持所有上传操作 ObjectCreated:*  删除对象操作可以取以下值： ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  或者使用通配符支持所有删除操作 ObjectRemoved:* 
+        Event types for which OBS sends notifications. Multiple event types can be added in one **TopicConfiguration** or **FunctionGraphConfiguration** item. Value options: Choose from the following for object upload operations: ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  Or use a wildcard character to support all upload operations: ObjectCreated:*  Choose from the following for object delete operations: ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  Or use a wildcard character to support all delete operations: ObjectRemoved:*
 
         :param event: The event of this TopicConfiguration.
         :type event: str

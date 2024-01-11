@@ -5823,6 +5823,138 @@ class IecClient(Client):
 
         return http_info
 
+    def attach_vip_bandwidth(self, request):
+        """端口绑定带宽
+
+        IPv6虚拟IP或者IPv6私网IP绑定带宽，支持公网访问。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AttachVipBandwidth
+        :type request: :class:`huaweicloudsdkiec.v1.AttachVipBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.AttachVipBandwidthResponse`
+        """
+        http_info = self._attach_vip_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_vip_bandwidth_invoker(self, request):
+        http_info = self._attach_vip_bandwidth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_vip_bandwidth_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/vports/{vport_id}/bandwidth/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachVipBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vport_id' in local_var_params:
+            path_params['vport_id'] = local_var_params['vport_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def detach_vip_bandwidth(self, request):
+        """端口解绑带宽
+
+        IPv6虚拟IP或者IPv6私网IP解绑带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DetachVipBandwidth
+        :type request: :class:`huaweicloudsdkiec.v1.DetachVipBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.DetachVipBandwidthResponse`
+        """
+        http_info = self._detach_vip_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def detach_vip_bandwidth_invoker(self, request):
+        http_info = self._detach_vip_bandwidth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_vip_bandwidth_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/vports/{vport_id}/bandwidth/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachVipBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vport_id' in local_var_params:
+            path_params['vport_id'] = local_var_params['vport_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_subnet(self, request):
         """创建子网
 

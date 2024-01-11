@@ -31,7 +31,7 @@ class CreateSecurityPermissionSetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param body: Body of the CreateSecurityPermissionSetRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetCreateDTO`
@@ -51,7 +51,7 @@ class CreateSecurityPermissionSetRequest:
     def workspace(self):
         """Gets the workspace of this CreateSecurityPermissionSetRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this CreateSecurityPermissionSetRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateSecurityPermissionSetRequest:
     def workspace(self, workspace):
         """Sets the workspace of this CreateSecurityPermissionSetRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this CreateSecurityPermissionSetRequest.
         :type workspace: str

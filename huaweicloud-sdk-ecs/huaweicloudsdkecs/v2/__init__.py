@@ -196,6 +196,8 @@ from huaweicloudsdkecs.v2.model.nova_server_security_group import NovaServerSecu
 from huaweicloudsdkecs.v2.model.nova_server_volume import NovaServerVolume
 from huaweicloudsdkecs.v2.model.nova_show_keypair_request import NovaShowKeypairRequest
 from huaweicloudsdkecs.v2.model.nova_show_keypair_response import NovaShowKeypairResponse
+from huaweicloudsdkecs.v2.model.nova_show_server_interface_request import NovaShowServerInterfaceRequest
+from huaweicloudsdkecs.v2.model.nova_show_server_interface_response import NovaShowServerInterfaceResponse
 from huaweicloudsdkecs.v2.model.nova_show_server_request import NovaShowServerRequest
 from huaweicloudsdkecs.v2.model.nova_show_server_response import NovaShowServerResponse
 from huaweicloudsdkecs.v2.model.nova_simple_keypair import NovaSimpleKeypair

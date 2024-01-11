@@ -28,9 +28,18 @@ class IdCardResult:
         'valid_to': 'str',
         'verification_result': 'IdcardVerificationResult',
         'text_location': 'object',
+        'portrait_location': 'list[list[int]]',
         'detect_reproduce_result': 'bool',
         'detect_copy_result': 'bool',
-        'portrait_location': 'list[list[int]]'
+        'detect_tampering_result': 'bool',
+        'detect_border_integrity_result': 'bool',
+        'detect_blocking_within_border_result': 'bool',
+        'detect_blur_result': 'bool',
+        'detect_interim_result': 'bool',
+        'detect_glare_result': 'bool',
+        'score_info': 'IdcardScoreInfoResult',
+        'front': 'IdcardFrontResult',
+        'back': 'IdcardBackResult'
     }
 
     attribute_map = {
@@ -45,12 +54,21 @@ class IdCardResult:
         'valid_to': 'valid_to',
         'verification_result': 'verification_result',
         'text_location': 'text_location',
+        'portrait_location': 'portrait_location',
         'detect_reproduce_result': 'detect_reproduce_result',
         'detect_copy_result': 'detect_copy_result',
-        'portrait_location': 'portrait_location'
+        'detect_tampering_result': 'detect_tampering_result',
+        'detect_border_integrity_result': 'detect_border_integrity_result',
+        'detect_blocking_within_border_result': 'detect_blocking_within_border_result',
+        'detect_blur_result': 'detect_blur_result',
+        'detect_interim_result': 'detect_interim_result',
+        'detect_glare_result': 'detect_glare_result',
+        'score_info': 'score_info',
+        'front': 'front',
+        'back': 'back'
     }
 
-    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None, detect_reproduce_result=None, detect_copy_result=None, portrait_location=None):
+    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None, portrait_location=None, detect_reproduce_result=None, detect_copy_result=None, detect_tampering_result=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_interim_result=None, detect_glare_result=None, score_info=None, front=None, back=None):
         """IdCardResult
 
         The model defined in huaweicloud sdk
@@ -75,14 +93,32 @@ class IdCardResult:
         :type valid_to: str
         :param verification_result: 
         :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardVerificationResult`
-        :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。 仅return_text_location设置为true时才返回。 
         :type text_location: object
-        :param detect_reproduce_result: 判断身份证图像是否经过翻拍，“true”表示是翻拍，“false”表示未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
-        :type detect_reproduce_result: bool
-        :param detect_copy_result: 判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。 
-        :type detect_copy_result: bool
-        :param portrait_location: 身份证头像位置信息的结果，仅在输入参数“return_portrait_location”为true时，返回该字段，当输入身份证背面时返回为空列表。 
+        :param portrait_location: 身份证头像位置信息的结果。 仅在输入参数return_portrait_location为true时，返回该字段，当输入身份证背面时返回为空列表。 
         :type portrait_location: list[list[int]]
+        :param detect_reproduce_result: 身份证图像是否翻拍告警结果。 - true：表示身份证图片经过翻拍。 - false：表示身份证图片未经过翻拍。 仅在输入参数detect_reproduce为true时，返回该字段。 
+        :type detect_reproduce_result: bool
+        :param detect_copy_result: 身份证图像是否黑白复印件告警结果。 - true：表示身份证图片是复印件。 - false”表示身份证图片是原件。 仅在输入参数detect_copy为true时，返回该字段。 
+        :type detect_copy_result: bool
+        :param detect_tampering_result: 身份证图片是否PS告警结果。 - true：表示身份证经过PS。 - false：表示未经过PS。 仅在传入参数detect_tampering为true时，返回该字段。 
+        :type detect_tampering_result: bool
+        :param detect_border_integrity_result: 身份证图片边框完整性告警结果。 - true：表示边框不完整 - false：表示边框完整。 仅在输入参数detect_border_integrity为true时，返回该字段。 
+        :type detect_border_integrity_result: bool
+        :param detect_blocking_within_border_result: 身份证图像框内是否存在遮挡的告警结果。 - true：表示边框内部存在遮挡。 - false：表示边框内部不存在遮挡。 仅在输入参数detect_blocking_within_border为true时，返回该字段。 
+        :type detect_blocking_within_border_result: bool
+        :param detect_blur_result: 身份证模糊告警结果。 - true：表示身份证图片较模糊。 - false：表示身份证清晰。 仅在输入参数detect_blur为true时，返回该字段。 
+        :type detect_blur_result: bool
+        :param detect_interim_result: 临时身份证告警结果。 - true：表示是临时身份证。 - false：表示非临时身份证。 仅在输入参数detect_interim为true时，返回该字段。 
+        :type detect_interim_result: bool
+        :param detect_glare_result: 身份证反光告警结果。 - true：表示身份证图片存在反光。 - false：表示是身份证不存在反光。 仅在输入参数detect_glare为true时，返回该字段。 
+        :type detect_glare_result: bool
+        :param score_info: 
+        :type score_info: :class:`huaweicloudsdkocr.v1.IdcardScoreInfoResult`
+        :param front: 
+        :type front: :class:`huaweicloudsdkocr.v1.IdcardFrontResult`
+        :param back: 
+        :type back: :class:`huaweicloudsdkocr.v1.IdcardBackResult`
         """
         
         
@@ -98,9 +134,18 @@ class IdCardResult:
         self._valid_to = None
         self._verification_result = None
         self._text_location = None
+        self._portrait_location = None
         self._detect_reproduce_result = None
         self._detect_copy_result = None
-        self._portrait_location = None
+        self._detect_tampering_result = None
+        self._detect_border_integrity_result = None
+        self._detect_blocking_within_border_result = None
+        self._detect_blur_result = None
+        self._detect_interim_result = None
+        self._detect_glare_result = None
+        self._score_info = None
+        self._front = None
+        self._back = None
         self.discriminator = None
 
         if name is not None:
@@ -125,12 +170,30 @@ class IdCardResult:
             self.verification_result = verification_result
         if text_location is not None:
             self.text_location = text_location
+        if portrait_location is not None:
+            self.portrait_location = portrait_location
         if detect_reproduce_result is not None:
             self.detect_reproduce_result = detect_reproduce_result
         if detect_copy_result is not None:
             self.detect_copy_result = detect_copy_result
-        if portrait_location is not None:
-            self.portrait_location = portrait_location
+        if detect_tampering_result is not None:
+            self.detect_tampering_result = detect_tampering_result
+        if detect_border_integrity_result is not None:
+            self.detect_border_integrity_result = detect_border_integrity_result
+        if detect_blocking_within_border_result is not None:
+            self.detect_blocking_within_border_result = detect_blocking_within_border_result
+        if detect_blur_result is not None:
+            self.detect_blur_result = detect_blur_result
+        if detect_interim_result is not None:
+            self.detect_interim_result = detect_interim_result
+        if detect_glare_result is not None:
+            self.detect_glare_result = detect_glare_result
+        if score_info is not None:
+            self.score_info = score_info
+        if front is not None:
+            self.front = front
+        if back is not None:
+            self.back = back
 
     @property
     def name(self):
@@ -352,7 +415,7 @@ class IdCardResult:
     def text_location(self):
         """Gets the text_location of this IdCardResult.
 
-        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。 仅return_text_location设置为true时才返回。 
 
         :return: The text_location of this IdCardResult.
         :rtype: object
@@ -363,7 +426,7 @@ class IdCardResult:
     def text_location(self, text_location):
         """Sets the text_location of this IdCardResult.
 
-        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。 仅return_text_location设置为true时才返回。 
 
         :param text_location: The text_location of this IdCardResult.
         :type text_location: object
@@ -371,54 +434,10 @@ class IdCardResult:
         self._text_location = text_location
 
     @property
-    def detect_reproduce_result(self):
-        """Gets the detect_reproduce_result of this IdCardResult.
-
-        判断身份证图像是否经过翻拍，“true”表示是翻拍，“false”表示未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
-
-        :return: The detect_reproduce_result of this IdCardResult.
-        :rtype: bool
-        """
-        return self._detect_reproduce_result
-
-    @detect_reproduce_result.setter
-    def detect_reproduce_result(self, detect_reproduce_result):
-        """Sets the detect_reproduce_result of this IdCardResult.
-
-        判断身份证图像是否经过翻拍，“true”表示是翻拍，“false”表示未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
-
-        :param detect_reproduce_result: The detect_reproduce_result of this IdCardResult.
-        :type detect_reproduce_result: bool
-        """
-        self._detect_reproduce_result = detect_reproduce_result
-
-    @property
-    def detect_copy_result(self):
-        """Gets the detect_copy_result of this IdCardResult.
-
-        判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。 
-
-        :return: The detect_copy_result of this IdCardResult.
-        :rtype: bool
-        """
-        return self._detect_copy_result
-
-    @detect_copy_result.setter
-    def detect_copy_result(self, detect_copy_result):
-        """Sets the detect_copy_result of this IdCardResult.
-
-        判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。 
-
-        :param detect_copy_result: The detect_copy_result of this IdCardResult.
-        :type detect_copy_result: bool
-        """
-        self._detect_copy_result = detect_copy_result
-
-    @property
     def portrait_location(self):
         """Gets the portrait_location of this IdCardResult.
 
-        身份证头像位置信息的结果，仅在输入参数“return_portrait_location”为true时，返回该字段，当输入身份证背面时返回为空列表。 
+        身份证头像位置信息的结果。 仅在输入参数return_portrait_location为true时，返回该字段，当输入身份证背面时返回为空列表。 
 
         :return: The portrait_location of this IdCardResult.
         :rtype: list[list[int]]
@@ -429,12 +448,242 @@ class IdCardResult:
     def portrait_location(self, portrait_location):
         """Sets the portrait_location of this IdCardResult.
 
-        身份证头像位置信息的结果，仅在输入参数“return_portrait_location”为true时，返回该字段，当输入身份证背面时返回为空列表。 
+        身份证头像位置信息的结果。 仅在输入参数return_portrait_location为true时，返回该字段，当输入身份证背面时返回为空列表。 
 
         :param portrait_location: The portrait_location of this IdCardResult.
         :type portrait_location: list[list[int]]
         """
         self._portrait_location = portrait_location
+
+    @property
+    def detect_reproduce_result(self):
+        """Gets the detect_reproduce_result of this IdCardResult.
+
+        身份证图像是否翻拍告警结果。 - true：表示身份证图片经过翻拍。 - false：表示身份证图片未经过翻拍。 仅在输入参数detect_reproduce为true时，返回该字段。 
+
+        :return: The detect_reproduce_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_reproduce_result
+
+    @detect_reproduce_result.setter
+    def detect_reproduce_result(self, detect_reproduce_result):
+        """Sets the detect_reproduce_result of this IdCardResult.
+
+        身份证图像是否翻拍告警结果。 - true：表示身份证图片经过翻拍。 - false：表示身份证图片未经过翻拍。 仅在输入参数detect_reproduce为true时，返回该字段。 
+
+        :param detect_reproduce_result: The detect_reproduce_result of this IdCardResult.
+        :type detect_reproduce_result: bool
+        """
+        self._detect_reproduce_result = detect_reproduce_result
+
+    @property
+    def detect_copy_result(self):
+        """Gets the detect_copy_result of this IdCardResult.
+
+        身份证图像是否黑白复印件告警结果。 - true：表示身份证图片是复印件。 - false”表示身份证图片是原件。 仅在输入参数detect_copy为true时，返回该字段。 
+
+        :return: The detect_copy_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_copy_result
+
+    @detect_copy_result.setter
+    def detect_copy_result(self, detect_copy_result):
+        """Sets the detect_copy_result of this IdCardResult.
+
+        身份证图像是否黑白复印件告警结果。 - true：表示身份证图片是复印件。 - false”表示身份证图片是原件。 仅在输入参数detect_copy为true时，返回该字段。 
+
+        :param detect_copy_result: The detect_copy_result of this IdCardResult.
+        :type detect_copy_result: bool
+        """
+        self._detect_copy_result = detect_copy_result
+
+    @property
+    def detect_tampering_result(self):
+        """Gets the detect_tampering_result of this IdCardResult.
+
+        身份证图片是否PS告警结果。 - true：表示身份证经过PS。 - false：表示未经过PS。 仅在传入参数detect_tampering为true时，返回该字段。 
+
+        :return: The detect_tampering_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_tampering_result
+
+    @detect_tampering_result.setter
+    def detect_tampering_result(self, detect_tampering_result):
+        """Sets the detect_tampering_result of this IdCardResult.
+
+        身份证图片是否PS告警结果。 - true：表示身份证经过PS。 - false：表示未经过PS。 仅在传入参数detect_tampering为true时，返回该字段。 
+
+        :param detect_tampering_result: The detect_tampering_result of this IdCardResult.
+        :type detect_tampering_result: bool
+        """
+        self._detect_tampering_result = detect_tampering_result
+
+    @property
+    def detect_border_integrity_result(self):
+        """Gets the detect_border_integrity_result of this IdCardResult.
+
+        身份证图片边框完整性告警结果。 - true：表示边框不完整 - false：表示边框完整。 仅在输入参数detect_border_integrity为true时，返回该字段。 
+
+        :return: The detect_border_integrity_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_border_integrity_result
+
+    @detect_border_integrity_result.setter
+    def detect_border_integrity_result(self, detect_border_integrity_result):
+        """Sets the detect_border_integrity_result of this IdCardResult.
+
+        身份证图片边框完整性告警结果。 - true：表示边框不完整 - false：表示边框完整。 仅在输入参数detect_border_integrity为true时，返回该字段。 
+
+        :param detect_border_integrity_result: The detect_border_integrity_result of this IdCardResult.
+        :type detect_border_integrity_result: bool
+        """
+        self._detect_border_integrity_result = detect_border_integrity_result
+
+    @property
+    def detect_blocking_within_border_result(self):
+        """Gets the detect_blocking_within_border_result of this IdCardResult.
+
+        身份证图像框内是否存在遮挡的告警结果。 - true：表示边框内部存在遮挡。 - false：表示边框内部不存在遮挡。 仅在输入参数detect_blocking_within_border为true时，返回该字段。 
+
+        :return: The detect_blocking_within_border_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_blocking_within_border_result
+
+    @detect_blocking_within_border_result.setter
+    def detect_blocking_within_border_result(self, detect_blocking_within_border_result):
+        """Sets the detect_blocking_within_border_result of this IdCardResult.
+
+        身份证图像框内是否存在遮挡的告警结果。 - true：表示边框内部存在遮挡。 - false：表示边框内部不存在遮挡。 仅在输入参数detect_blocking_within_border为true时，返回该字段。 
+
+        :param detect_blocking_within_border_result: The detect_blocking_within_border_result of this IdCardResult.
+        :type detect_blocking_within_border_result: bool
+        """
+        self._detect_blocking_within_border_result = detect_blocking_within_border_result
+
+    @property
+    def detect_blur_result(self):
+        """Gets the detect_blur_result of this IdCardResult.
+
+        身份证模糊告警结果。 - true：表示身份证图片较模糊。 - false：表示身份证清晰。 仅在输入参数detect_blur为true时，返回该字段。 
+
+        :return: The detect_blur_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_blur_result
+
+    @detect_blur_result.setter
+    def detect_blur_result(self, detect_blur_result):
+        """Sets the detect_blur_result of this IdCardResult.
+
+        身份证模糊告警结果。 - true：表示身份证图片较模糊。 - false：表示身份证清晰。 仅在输入参数detect_blur为true时，返回该字段。 
+
+        :param detect_blur_result: The detect_blur_result of this IdCardResult.
+        :type detect_blur_result: bool
+        """
+        self._detect_blur_result = detect_blur_result
+
+    @property
+    def detect_interim_result(self):
+        """Gets the detect_interim_result of this IdCardResult.
+
+        临时身份证告警结果。 - true：表示是临时身份证。 - false：表示非临时身份证。 仅在输入参数detect_interim为true时，返回该字段。 
+
+        :return: The detect_interim_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_interim_result
+
+    @detect_interim_result.setter
+    def detect_interim_result(self, detect_interim_result):
+        """Sets the detect_interim_result of this IdCardResult.
+
+        临时身份证告警结果。 - true：表示是临时身份证。 - false：表示非临时身份证。 仅在输入参数detect_interim为true时，返回该字段。 
+
+        :param detect_interim_result: The detect_interim_result of this IdCardResult.
+        :type detect_interim_result: bool
+        """
+        self._detect_interim_result = detect_interim_result
+
+    @property
+    def detect_glare_result(self):
+        """Gets the detect_glare_result of this IdCardResult.
+
+        身份证反光告警结果。 - true：表示身份证图片存在反光。 - false：表示是身份证不存在反光。 仅在输入参数detect_glare为true时，返回该字段。 
+
+        :return: The detect_glare_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_glare_result
+
+    @detect_glare_result.setter
+    def detect_glare_result(self, detect_glare_result):
+        """Sets the detect_glare_result of this IdCardResult.
+
+        身份证反光告警结果。 - true：表示身份证图片存在反光。 - false：表示是身份证不存在反光。 仅在输入参数detect_glare为true时，返回该字段。 
+
+        :param detect_glare_result: The detect_glare_result of this IdCardResult.
+        :type detect_glare_result: bool
+        """
+        self._detect_glare_result = detect_glare_result
+
+    @property
+    def score_info(self):
+        """Gets the score_info of this IdCardResult.
+
+        :return: The score_info of this IdCardResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.IdcardScoreInfoResult`
+        """
+        return self._score_info
+
+    @score_info.setter
+    def score_info(self, score_info):
+        """Sets the score_info of this IdCardResult.
+
+        :param score_info: The score_info of this IdCardResult.
+        :type score_info: :class:`huaweicloudsdkocr.v1.IdcardScoreInfoResult`
+        """
+        self._score_info = score_info
+
+    @property
+    def front(self):
+        """Gets the front of this IdCardResult.
+
+        :return: The front of this IdCardResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.IdcardFrontResult`
+        """
+        return self._front
+
+    @front.setter
+    def front(self, front):
+        """Sets the front of this IdCardResult.
+
+        :param front: The front of this IdCardResult.
+        :type front: :class:`huaweicloudsdkocr.v1.IdcardFrontResult`
+        """
+        self._front = front
+
+    @property
+    def back(self):
+        """Gets the back of this IdCardResult.
+
+        :return: The back of this IdCardResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.IdcardBackResult`
+        """
+        return self._back
+
+    @back.setter
+    def back(self, back):
+        """Sets the back of this IdCardResult.
+
+        :param back: The back of this IdCardResult.
+        :type back: :class:`huaweicloudsdkocr.v1.IdcardBackResult`
+        """
+        self._back = back
 
     def to_dict(self):
         """Returns the model properties as a dict"""

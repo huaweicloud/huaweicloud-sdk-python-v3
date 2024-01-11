@@ -39,15 +39,15 @@ class SetBucketCustomDomainBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 证书名称。字符长度为3~63位。 
+        :param name: Certificate name, a string of 3 to 63 characters. 
         :type name: str
-        :param certificate_id: 自定义域名证书ID。 
+        :param certificate_id: Certificate id. 
         :type certificate_id: str
-        :param certificate: 证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        :param certificate: Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
         :type certificate: str
-        :param certificate_chain: 证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        :param certificate_chain: Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
         :type certificate_chain: str
-        :param private_key: 证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        :param private_key: Private key of the certificate. The private key with password protection cannot be uploaded. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
         :type private_key: str
         """
         
@@ -72,7 +72,7 @@ class SetBucketCustomDomainBody:
     def name(self):
         """Gets the name of this SetBucketCustomDomainBody.
 
-        证书名称。字符长度为3~63位。 
+        Certificate name, a string of 3 to 63 characters. 
 
         :return: The name of this SetBucketCustomDomainBody.
         :rtype: str
@@ -83,7 +83,7 @@ class SetBucketCustomDomainBody:
     def name(self, name):
         """Sets the name of this SetBucketCustomDomainBody.
 
-        证书名称。字符长度为3~63位。 
+        Certificate name, a string of 3 to 63 characters. 
 
         :param name: The name of this SetBucketCustomDomainBody.
         :type name: str
@@ -94,7 +94,7 @@ class SetBucketCustomDomainBody:
     def certificate_id(self):
         """Gets the certificate_id of this SetBucketCustomDomainBody.
 
-        自定义域名证书ID。 
+        Certificate id. 
 
         :return: The certificate_id of this SetBucketCustomDomainBody.
         :rtype: str
@@ -105,7 +105,7 @@ class SetBucketCustomDomainBody:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this SetBucketCustomDomainBody.
 
-        自定义域名证书ID。 
+        Certificate id. 
 
         :param certificate_id: The certificate_id of this SetBucketCustomDomainBody.
         :type certificate_id: str
@@ -116,7 +116,7 @@ class SetBucketCustomDomainBody:
     def certificate(self):
         """Gets the certificate of this SetBucketCustomDomainBody.
 
-        证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
         :return: The certificate of this SetBucketCustomDomainBody.
         :rtype: str
@@ -127,7 +127,7 @@ class SetBucketCustomDomainBody:
     def certificate(self, certificate):
         """Sets the certificate of this SetBucketCustomDomainBody.
 
-        证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
         :param certificate: The certificate of this SetBucketCustomDomainBody.
         :type certificate: str
@@ -138,7 +138,7 @@ class SetBucketCustomDomainBody:
     def certificate_chain(self):
         """Gets the certificate_chain of this SetBucketCustomDomainBody.
 
-        证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
         :return: The certificate_chain of this SetBucketCustomDomainBody.
         :rtype: str
@@ -149,7 +149,7 @@ class SetBucketCustomDomainBody:
     def certificate_chain(self, certificate_chain):
         """Sets the certificate_chain of this SetBucketCustomDomainBody.
 
-        证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
         :param certificate_chain: The certificate_chain of this SetBucketCustomDomainBody.
         :type certificate_chain: str
@@ -160,7 +160,7 @@ class SetBucketCustomDomainBody:
     def private_key(self):
         """Gets the private_key of this SetBucketCustomDomainBody.
 
-        证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        Private key of the certificate. The private key with password protection cannot be uploaded. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
         :return: The private_key of this SetBucketCustomDomainBody.
         :rtype: str
@@ -171,7 +171,7 @@ class SetBucketCustomDomainBody:
     def private_key(self, private_key):
         """Sets the private_key of this SetBucketCustomDomainBody.
 
-        证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。 
+        Private key of the certificate. The private key with password protection cannot be uploaded. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
         :param private_key: The private_key of this SetBucketCustomDomainBody.
         :type private_key: str

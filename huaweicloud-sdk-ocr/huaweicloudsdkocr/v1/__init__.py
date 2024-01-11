@@ -61,6 +61,11 @@ from huaweicloudsdkocr.v1.model.id_card_request_body import IdCardRequestBody
 from huaweicloudsdkocr.v1.model.id_card_result import IdCardResult
 from huaweicloudsdkocr.v1.model.id_document_item import IdDocumentItem
 from huaweicloudsdkocr.v1.model.id_document_request_body import IdDocumentRequestBody
+from huaweicloudsdkocr.v1.model.idcard_back_result import IdcardBackResult
+from huaweicloudsdkocr.v1.model.idcard_back_verification_result import IdcardBackVerificationResult
+from huaweicloudsdkocr.v1.model.idcard_front_result import IdcardFrontResult
+from huaweicloudsdkocr.v1.model.idcard_front_verification_result import IdcardFrontVerificationResult
+from huaweicloudsdkocr.v1.model.idcard_score_info_result import IdcardScoreInfoResult
 from huaweicloudsdkocr.v1.model.idcard_verification_result import IdcardVerificationResult
 from huaweicloudsdkocr.v1.model.insurance_item import InsuranceItem
 from huaweicloudsdkocr.v1.model.insurance_policy_detail import InsurancePolicyDetail

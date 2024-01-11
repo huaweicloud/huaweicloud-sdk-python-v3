@@ -70,45 +70,45 @@ class PutObjectRequest(SdkStreamRequest):
 
         The model defined in huaweicloud sdk
 
-        :param bucket_name: 桶名称 
+        :param bucket_name: Name of the bucket.
         :type bucket_name: str
-        :param object_key: 通过此请求创建的对象名称。 
+        :param object_key: Object key for which this operation was initiated.
         :type object_key: str
-        :param date: 请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
-        :param content_md5: 按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串  示例：n58IG6hfM7vqI4K0vnWpog&#x3D;&#x3D;。 
+        :param content_md5: Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog&#x3D;&#x3D;
         :type content_md5: str
-        :param x_obs_acl: 创建对象时，可以加上此消息头设置对象的权限控制策略，使用的策略为预定义的常用策  示例：x-obs-acl: public-read。 
+        :param x_obs_acl: When creating a bucket, you can add this header to configure access control policies (predefined policies) for the bucket.  Example: x-obs-acl: public-read
         :type x_obs_acl: str
-        :param x_obs_grant_read: 创建对象时，使用此头域授权租户下所有用户有读对象和获取对象元数据的权限  示例：x-obs-grant-read: id&#x3D;domainID。如果授权给多个租户，需要通过&#39;,&#39;分割。 
+        :param x_obs_grant_read: When creating an object, you can use this header to grant all users under a tenant the permissions to read the object and obtain the object metadata.  Example: x-obs-grant-read: id&#x3D;domainID. If multiple tenants are authorized, separate them with commas (,).
         :type x_obs_grant_read: str
-        :param x_obs_grant_read_acp: 创建对象时，使用此头域授权租户下所有用户有获取对象ACL的权限  示例：x-obs-grant-read-acp: id&#x3D;domainID。如果授权给多个租户，需要通过&#39;,&#39;分割。 
+        :param x_obs_grant_read_acp: When creating an object, you can use this header to grant all users under a tenant the permissions to obtain the object ACL.  Example: x-obs-grant-read-acp: id&#x3D;domainID. If multiple tenants are authorized, separate them with commas (,).
         :type x_obs_grant_read_acp: str
-        :param x_obs_grant_write_acp: 创建对象时，使用此头域授权租户下所有用户有写对象ACL的权  示例：x-obs-grant-write-acp: id&#x3D;domainID。如果授权给多个租户，需要通过&#39;,&#39;分割。 
+        :param x_obs_grant_write_acp: When creating an object, you can use this header to grant all users under a tenant the permissions to write the object ACL.  Example: x-obs-grant-write-acp: id&#x3D;domainID. If multiple tenants are authorized, separate them with commas (,).
         :type x_obs_grant_write_acp: str
-        :param x_obs_grant_full_control: 创建对象时，使用此头域授权domain下所有用户有读对象、获取对象元数据、获取对象ACL、写对象ACL的权限  示例：x-obs-grant-full-control: id&#x3D;domainID。如果授权给多个租户，需要通过&#39;,&#39;分割。 
+        :param x_obs_grant_full_control: When creating an object, you can use this header to grant all users in a domain the permissions to read the object, to obtain the object metadata and ACL, and to write the object ACL.  Example: x-obs-grant-full-control: id&#x3D;domainID. If multiple tenants are authorized, separate them with commas (,).
         :type x_obs_grant_full_control: str
-        :param x_obs_storage_class: 创建对象时，可以加上此头域设置对象的存储类型。如果未设置此头域，则以桶的默认存储类型作为对象的存储类型  说明：存储类型有3种：STANDARD（标准存储）、WARM（低频访问存储）、COLD（归档存储）。因此这里可配置的值有：STANDARD、WARM和COLD，注意大小写敏感。  示例：x-obs-storage-class: STANDARD 
+        :param x_obs_storage_class: When creating an object, you can use this header to specify a storage class for the object. If you do not have this header configured, the object inherits the default storage class of the bucket.Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.Example: x-obs-storage-class: STANDARD
         :type x_obs_storage_class: str
-        :param x_obs_meta_xxx: 用户自定义元数据  示例：x-obs-meta-test: test metadata 
+        :param x_obs_meta_xxx: User-defined metadata.  Example: x-obs-meta-test: test metadata
         :type x_obs_meta_xxx: str
-        :param x_obs_persistent_headers: 创建对象时，可以在HTTP请求中加入“x-obs-persistent-headers”消息头，用来加入一个或多个自定义的响应头，当用户获取此对象或查询此对象元数据时，加入的自定义响应头将会在返回消息的头域中出现。 格式：x-obs-persistent-headers: key1:base64_encode(value1),key2:base64_encode(value2)....  说明：其中key1/key2等为自定义header，若含有非ASCII码或不可识别字符，可以采用URL编码或者Base64编码，服务端只会作为字符串处理，不会做解码。value1/value2等为对应自定义header的值，base64_encode指做base64编码，即将自定义header和对应值的base64编码作为一个key-value对用“:”连接，然后用“,”将所有的key-value对连接起来，放在x-obs-persistent-headers这个header中即可，服务端会对上传的value做解码处理。  示例： x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUy  下载此对象或获取此对象元数据时：返回两个头域分别为“key1:value1”与“key2:value2”  约束：  1. 通过该方式指定的自定义响应头不能以“x-obs-”为前缀，比如可以指定“key1”，但是不能指定“x-obs-key1”  2. 不能指定http标准头，例如host/content-md5/origin/range/Content-Disposition等  3. 此头域和自定义元数据总长度不能超过8KB  4. 如果传入相同key，将value以“,”拼接后放入同一个key中返回 
+        :param x_obs_persistent_headers: When creating an object, you can add the **x-obs-persistent-headers** header in an HTTP request to customize one or more response headers. When you retrieve the object or query the object metadata, the custom headers will be returned in the response message.Format: **x-obs-persistent-headers: ****key1:base64_encode(***value1***),****key2:base64_encode(***value2***)...**Note: Items, such as **key1** and **key2**, are user-defined headers. If they contain non-ASCII or unrecognizable characters, they can be encoded using URL or Base64. The server processes these headers as strings, but does not decode them. Items, such as *value1* and *value2* are the values of the corresponding headers. **base64_encode** indicates that the value is encoded using Base64. A user-defined header and its Base64-encoded value are connected using a colon (:) to form a key-value pair. All key-value pairs are separated with a comma (,) and are placed in the **x-obs-persistent-headers** header. The server then decodes the uploaded value.Example: x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUyWhen you download the object or obtain the object metadata, headers **key1:***value1* and **key2:***value2* will be returned.Restrictions:+ Response headers customized in this way cannot be prefixed with **x-obs-**. For example, you should use **key1**, instead of **x-obs-key1**.+ Standard HTTP headers, such as **host**, **content-md5**, **origin**, **range**, and **Content-Disposition**, cannot be specified as custom headers.+ The total length of this header and the custom metadata cannot exceed 8 KB.+ If the same keys are transferred, values are separated with commas (,) and then returned in one key.
         :type x_obs_persistent_headers: str
-        :param x_obs_website_redirect_location: 当桶设置了Website配置，可以将获取这个对象的请求重定向到桶内另一个对象或一个外部的URL，OBS将这个值从头域中取出，保存在对象的元数据中。  例如，重定向请求到桶内另一对象：  x-obs-website-redirect-location:/anotherPage.html  或重定向请求到一个外部URL：  x-obs-website-redirect-location:http://www.example.com/  默认值：无  约束：必须以“/”、“http://”或“https://”开头，长度不超过2KB。 
+        :param x_obs_website_redirect_location: If static website hosting has been configured for a bucket, you can configure this parameter to redirect requests for an object in this bucket to another object in the same bucket or to an external URL. OBS stores the value of this header in the object metadata.Example of redirecting requests to another object in the bucket:x-obs-website-redirect-location:/anotherPage.htmlExample of redirecting requests to an external URL:x-obs-website-redirect-location:http://www.example.com/Default value: noneRestriction: The value must start with a slash (/), **http://**, or **https://**, with a length of no more than 2 KB.
         :type x_obs_website_redirect_location: str
-        :param x_obs_server_side_encryption: 使用该头域表示服务端加密是SSE-KMS方式。  示例：x-obs-server-side-encryption: kms 
+        :param x_obs_server_side_encryption: Indicates that SSE-KMS is used.   Example: x-obs-server-side-encryption: kms
         :type x_obs_server_side_encryption: str
-        :param x_obs_server_side_encryption_kms_key_id: SSE-KMS方式下使用该头域，该头域表示主密钥，如果用户没有提供该头域，那么默认的主密钥将会被使用。 支持两种格式的描述方式：  1. regionID:domainID(租户ID):key/key_id  或者  2.key_id  其中regionID是使用密钥所属region的ID；domainID是使用密钥所属租户的租户ID；key_id是从数据加密服务创建的密钥ID。  示例：  1. x-obs-server-side-encryption-kms-key-id: cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 或者  2. x-obs-server-side-encryption-kms-key-id: 4f1cd4de-ab64-4807-920a-47fc42e7f0d0 
+        :param x_obs_server_side_encryption_kms_key_id: Master key ID. This header is used for encryption with SSE-KMS. If the customer does not provide the master key ID, the default master key ID will be used.Supported formats:+ *regionID***:***domainID***:key/***key_id* + *key_id**regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID created in DEW.Examples:+ x-obs-server-side-encryption-kms-key-id:cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 + x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0
         :type x_obs_server_side_encryption_kms_key_id: str
-        :param x_obs_server_side_encryption_customer_algorithm: SSE-C方式下使用该头域，该头域表示加密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm: AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        :param x_obs_server_side_encryption_customer_algorithm: The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
         :type x_obs_server_side_encryption_customer_algorithm: str
-        :param x_obs_server_side_encryption_customer_key: SSE-C方式下使用该头域，该头域表示加密使用的密钥。该密钥用于加密对象  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw&#x3D;  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        :param x_obs_server_side_encryption_customer_key: Encryption key used for SSE-C. This key is used to encrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw&#x3D;Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
         :type x_obs_server_side_encryption_customer_key: str
-        :param x_obs_server_side_encryption_customer_key_md5: SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ&#x3D;&#x3D;  约束: 该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        :param x_obs_server_side_encryption_customer_key_md5: MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ&#x3D;&#x3D;Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
         :type x_obs_server_side_encryption_customer_key_md5: str
-        :param success_action_redirect: 此参数的值是一个URL，用于指定当此次请求操作成功响应后的重定向的地址。  如果此参数值有效且操作成功，响应码为303，Location头域由此参数以及桶名、对象名、对象的ETag组成。 如果此参数值无效，则OBS忽略此参数的作用，响应码为204，Location头域为对象地址。 
+        :param success_action_redirect: The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
         :type success_action_redirect: str
-        :param x_obs_expires: 表示对象的过期时间，单位是天。过期之后对象会被自动删除。（从对象最后修改时间开始计算） 此字段对于每个对象仅支持上传时配置，不支持后期通过修改元数据接口修改。  示例：x-obs-expires:3 
+        :param x_obs_expires: When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified. This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
         :type x_obs_expires: int
         """
         super(PutObjectRequest, self).__init__(stream)
@@ -179,7 +179,7 @@ class PutObjectRequest(SdkStreamRequest):
     def bucket_name(self):
         """Gets the bucket_name of this PutObjectRequest.
 
-        桶名称 
+        Name of the bucket.
 
         :return: The bucket_name of this PutObjectRequest.
         :rtype: str
@@ -190,7 +190,7 @@ class PutObjectRequest(SdkStreamRequest):
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this PutObjectRequest.
 
-        桶名称 
+        Name of the bucket.
 
         :param bucket_name: The bucket_name of this PutObjectRequest.
         :type bucket_name: str
@@ -201,7 +201,7 @@ class PutObjectRequest(SdkStreamRequest):
     def object_key(self):
         """Gets the object_key of this PutObjectRequest.
 
-        通过此请求创建的对象名称。 
+        Object key for which this operation was initiated.
 
         :return: The object_key of this PutObjectRequest.
         :rtype: str
@@ -212,7 +212,7 @@ class PutObjectRequest(SdkStreamRequest):
     def object_key(self, object_key):
         """Sets the object_key of this PutObjectRequest.
 
-        通过此请求创建的对象名称。 
+        Object key for which this operation was initiated.
 
         :param object_key: The object_key of this PutObjectRequest.
         :type object_key: str
@@ -223,7 +223,7 @@ class PutObjectRequest(SdkStreamRequest):
     def date(self):
         """Gets the date of this PutObjectRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :return: The date of this PutObjectRequest.
         :rtype: str
@@ -234,7 +234,7 @@ class PutObjectRequest(SdkStreamRequest):
     def date(self, date):
         """Sets the date of this PutObjectRequest.
 
-        请求发起端的日期和时间，例如：Wed, 27 Jun 2018 13:39:15 +0000。 默认值：无。 条件：如果消息头中带了x-obs-date字段，则可以不带该字段，其他情况下必选。 
+        Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
         :param date: The date of this PutObjectRequest.
         :type date: str
@@ -245,7 +245,7 @@ class PutObjectRequest(SdkStreamRequest):
     def content_md5(self):
         """Gets the content_md5 of this PutObjectRequest.
 
-        按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串  示例：n58IG6hfM7vqI4K0vnWpog==。 
+        Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
 
         :return: The content_md5 of this PutObjectRequest.
         :rtype: str
@@ -256,7 +256,7 @@ class PutObjectRequest(SdkStreamRequest):
     def content_md5(self, content_md5):
         """Sets the content_md5 of this PutObjectRequest.
 
-        按照RFC 1864标准计算出消息体的MD5摘要字符串，即消息体128-bit MD5值经过base64编码后得到的字符串  示例：n58IG6hfM7vqI4K0vnWpog==。 
+        Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
 
         :param content_md5: The content_md5 of this PutObjectRequest.
         :type content_md5: str
@@ -267,7 +267,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_acl(self):
         """Gets the x_obs_acl of this PutObjectRequest.
 
-        创建对象时，可以加上此消息头设置对象的权限控制策略，使用的策略为预定义的常用策  示例：x-obs-acl: public-read。 
+        When creating a bucket, you can add this header to configure access control policies (predefined policies) for the bucket.  Example: x-obs-acl: public-read
 
         :return: The x_obs_acl of this PutObjectRequest.
         :rtype: str
@@ -278,7 +278,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_acl(self, x_obs_acl):
         """Sets the x_obs_acl of this PutObjectRequest.
 
-        创建对象时，可以加上此消息头设置对象的权限控制策略，使用的策略为预定义的常用策  示例：x-obs-acl: public-read。 
+        When creating a bucket, you can add this header to configure access control policies (predefined policies) for the bucket.  Example: x-obs-acl: public-read
 
         :param x_obs_acl: The x_obs_acl of this PutObjectRequest.
         :type x_obs_acl: str
@@ -289,7 +289,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_grant_read(self):
         """Gets the x_obs_grant_read of this PutObjectRequest.
 
-        创建对象时，使用此头域授权租户下所有用户有读对象和获取对象元数据的权限  示例：x-obs-grant-read: id=domainID。如果授权给多个租户，需要通过','分割。 
+        When creating an object, you can use this header to grant all users under a tenant the permissions to read the object and obtain the object metadata.  Example: x-obs-grant-read: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
         :return: The x_obs_grant_read of this PutObjectRequest.
         :rtype: str
@@ -300,7 +300,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_grant_read(self, x_obs_grant_read):
         """Sets the x_obs_grant_read of this PutObjectRequest.
 
-        创建对象时，使用此头域授权租户下所有用户有读对象和获取对象元数据的权限  示例：x-obs-grant-read: id=domainID。如果授权给多个租户，需要通过','分割。 
+        When creating an object, you can use this header to grant all users under a tenant the permissions to read the object and obtain the object metadata.  Example: x-obs-grant-read: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
         :param x_obs_grant_read: The x_obs_grant_read of this PutObjectRequest.
         :type x_obs_grant_read: str
@@ -311,7 +311,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_grant_read_acp(self):
         """Gets the x_obs_grant_read_acp of this PutObjectRequest.
 
-        创建对象时，使用此头域授权租户下所有用户有获取对象ACL的权限  示例：x-obs-grant-read-acp: id=domainID。如果授权给多个租户，需要通过','分割。 
+        When creating an object, you can use this header to grant all users under a tenant the permissions to obtain the object ACL.  Example: x-obs-grant-read-acp: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
         :return: The x_obs_grant_read_acp of this PutObjectRequest.
         :rtype: str
@@ -322,7 +322,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_grant_read_acp(self, x_obs_grant_read_acp):
         """Sets the x_obs_grant_read_acp of this PutObjectRequest.
 
-        创建对象时，使用此头域授权租户下所有用户有获取对象ACL的权限  示例：x-obs-grant-read-acp: id=domainID。如果授权给多个租户，需要通过','分割。 
+        When creating an object, you can use this header to grant all users under a tenant the permissions to obtain the object ACL.  Example: x-obs-grant-read-acp: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
         :param x_obs_grant_read_acp: The x_obs_grant_read_acp of this PutObjectRequest.
         :type x_obs_grant_read_acp: str
@@ -333,7 +333,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_grant_write_acp(self):
         """Gets the x_obs_grant_write_acp of this PutObjectRequest.
 
-        创建对象时，使用此头域授权租户下所有用户有写对象ACL的权  示例：x-obs-grant-write-acp: id=domainID。如果授权给多个租户，需要通过','分割。 
+        When creating an object, you can use this header to grant all users under a tenant the permissions to write the object ACL.  Example: x-obs-grant-write-acp: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
         :return: The x_obs_grant_write_acp of this PutObjectRequest.
         :rtype: str
@@ -344,7 +344,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_grant_write_acp(self, x_obs_grant_write_acp):
         """Sets the x_obs_grant_write_acp of this PutObjectRequest.
 
-        创建对象时，使用此头域授权租户下所有用户有写对象ACL的权  示例：x-obs-grant-write-acp: id=domainID。如果授权给多个租户，需要通过','分割。 
+        When creating an object, you can use this header to grant all users under a tenant the permissions to write the object ACL.  Example: x-obs-grant-write-acp: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
         :param x_obs_grant_write_acp: The x_obs_grant_write_acp of this PutObjectRequest.
         :type x_obs_grant_write_acp: str
@@ -355,7 +355,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_grant_full_control(self):
         """Gets the x_obs_grant_full_control of this PutObjectRequest.
 
-        创建对象时，使用此头域授权domain下所有用户有读对象、获取对象元数据、获取对象ACL、写对象ACL的权限  示例：x-obs-grant-full-control: id=domainID。如果授权给多个租户，需要通过','分割。 
+        When creating an object, you can use this header to grant all users in a domain the permissions to read the object, to obtain the object metadata and ACL, and to write the object ACL.  Example: x-obs-grant-full-control: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
         :return: The x_obs_grant_full_control of this PutObjectRequest.
         :rtype: str
@@ -366,7 +366,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_grant_full_control(self, x_obs_grant_full_control):
         """Sets the x_obs_grant_full_control of this PutObjectRequest.
 
-        创建对象时，使用此头域授权domain下所有用户有读对象、获取对象元数据、获取对象ACL、写对象ACL的权限  示例：x-obs-grant-full-control: id=domainID。如果授权给多个租户，需要通过','分割。 
+        When creating an object, you can use this header to grant all users in a domain the permissions to read the object, to obtain the object metadata and ACL, and to write the object ACL.  Example: x-obs-grant-full-control: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
         :param x_obs_grant_full_control: The x_obs_grant_full_control of this PutObjectRequest.
         :type x_obs_grant_full_control: str
@@ -377,7 +377,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_storage_class(self):
         """Gets the x_obs_storage_class of this PutObjectRequest.
 
-        创建对象时，可以加上此头域设置对象的存储类型。如果未设置此头域，则以桶的默认存储类型作为对象的存储类型  说明：存储类型有3种：STANDARD（标准存储）、WARM（低频访问存储）、COLD（归档存储）。因此这里可配置的值有：STANDARD、WARM和COLD，注意大小写敏感。  示例：x-obs-storage-class: STANDARD 
+        When creating an object, you can use this header to specify a storage class for the object. If you do not have this header configured, the object inherits the default storage class of the bucket.Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.Example: x-obs-storage-class: STANDARD
 
         :return: The x_obs_storage_class of this PutObjectRequest.
         :rtype: str
@@ -388,7 +388,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_storage_class(self, x_obs_storage_class):
         """Sets the x_obs_storage_class of this PutObjectRequest.
 
-        创建对象时，可以加上此头域设置对象的存储类型。如果未设置此头域，则以桶的默认存储类型作为对象的存储类型  说明：存储类型有3种：STANDARD（标准存储）、WARM（低频访问存储）、COLD（归档存储）。因此这里可配置的值有：STANDARD、WARM和COLD，注意大小写敏感。  示例：x-obs-storage-class: STANDARD 
+        When creating an object, you can use this header to specify a storage class for the object. If you do not have this header configured, the object inherits the default storage class of the bucket.Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.Example: x-obs-storage-class: STANDARD
 
         :param x_obs_storage_class: The x_obs_storage_class of this PutObjectRequest.
         :type x_obs_storage_class: str
@@ -399,7 +399,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_meta_xxx(self):
         """Gets the x_obs_meta_xxx of this PutObjectRequest.
 
-        用户自定义元数据  示例：x-obs-meta-test: test metadata 
+        User-defined metadata.  Example: x-obs-meta-test: test metadata
 
         :return: The x_obs_meta_xxx of this PutObjectRequest.
         :rtype: str
@@ -410,7 +410,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_meta_xxx(self, x_obs_meta_xxx):
         """Sets the x_obs_meta_xxx of this PutObjectRequest.
 
-        用户自定义元数据  示例：x-obs-meta-test: test metadata 
+        User-defined metadata.  Example: x-obs-meta-test: test metadata
 
         :param x_obs_meta_xxx: The x_obs_meta_xxx of this PutObjectRequest.
         :type x_obs_meta_xxx: str
@@ -421,7 +421,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_persistent_headers(self):
         """Gets the x_obs_persistent_headers of this PutObjectRequest.
 
-        创建对象时，可以在HTTP请求中加入“x-obs-persistent-headers”消息头，用来加入一个或多个自定义的响应头，当用户获取此对象或查询此对象元数据时，加入的自定义响应头将会在返回消息的头域中出现。 格式：x-obs-persistent-headers: key1:base64_encode(value1),key2:base64_encode(value2)....  说明：其中key1/key2等为自定义header，若含有非ASCII码或不可识别字符，可以采用URL编码或者Base64编码，服务端只会作为字符串处理，不会做解码。value1/value2等为对应自定义header的值，base64_encode指做base64编码，即将自定义header和对应值的base64编码作为一个key-value对用“:”连接，然后用“,”将所有的key-value对连接起来，放在x-obs-persistent-headers这个header中即可，服务端会对上传的value做解码处理。  示例： x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUy  下载此对象或获取此对象元数据时：返回两个头域分别为“key1:value1”与“key2:value2”  约束：  1. 通过该方式指定的自定义响应头不能以“x-obs-”为前缀，比如可以指定“key1”，但是不能指定“x-obs-key1”  2. 不能指定http标准头，例如host/content-md5/origin/range/Content-Disposition等  3. 此头域和自定义元数据总长度不能超过8KB  4. 如果传入相同key，将value以“,”拼接后放入同一个key中返回 
+        When creating an object, you can add the **x-obs-persistent-headers** header in an HTTP request to customize one or more response headers. When you retrieve the object or query the object metadata, the custom headers will be returned in the response message.Format: **x-obs-persistent-headers: ****key1:base64_encode(***value1***),****key2:base64_encode(***value2***)...**Note: Items, such as **key1** and **key2**, are user-defined headers. If they contain non-ASCII or unrecognizable characters, they can be encoded using URL or Base64. The server processes these headers as strings, but does not decode them. Items, such as *value1* and *value2* are the values of the corresponding headers. **base64_encode** indicates that the value is encoded using Base64. A user-defined header and its Base64-encoded value are connected using a colon (:) to form a key-value pair. All key-value pairs are separated with a comma (,) and are placed in the **x-obs-persistent-headers** header. The server then decodes the uploaded value.Example: x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUyWhen you download the object or obtain the object metadata, headers **key1:***value1* and **key2:***value2* will be returned.Restrictions:+ Response headers customized in this way cannot be prefixed with **x-obs-**. For example, you should use **key1**, instead of **x-obs-key1**.+ Standard HTTP headers, such as **host**, **content-md5**, **origin**, **range**, and **Content-Disposition**, cannot be specified as custom headers.+ The total length of this header and the custom metadata cannot exceed 8 KB.+ If the same keys are transferred, values are separated with commas (,) and then returned in one key.
 
         :return: The x_obs_persistent_headers of this PutObjectRequest.
         :rtype: str
@@ -432,7 +432,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_persistent_headers(self, x_obs_persistent_headers):
         """Sets the x_obs_persistent_headers of this PutObjectRequest.
 
-        创建对象时，可以在HTTP请求中加入“x-obs-persistent-headers”消息头，用来加入一个或多个自定义的响应头，当用户获取此对象或查询此对象元数据时，加入的自定义响应头将会在返回消息的头域中出现。 格式：x-obs-persistent-headers: key1:base64_encode(value1),key2:base64_encode(value2)....  说明：其中key1/key2等为自定义header，若含有非ASCII码或不可识别字符，可以采用URL编码或者Base64编码，服务端只会作为字符串处理，不会做解码。value1/value2等为对应自定义header的值，base64_encode指做base64编码，即将自定义header和对应值的base64编码作为一个key-value对用“:”连接，然后用“,”将所有的key-value对连接起来，放在x-obs-persistent-headers这个header中即可，服务端会对上传的value做解码处理。  示例： x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUy  下载此对象或获取此对象元数据时：返回两个头域分别为“key1:value1”与“key2:value2”  约束：  1. 通过该方式指定的自定义响应头不能以“x-obs-”为前缀，比如可以指定“key1”，但是不能指定“x-obs-key1”  2. 不能指定http标准头，例如host/content-md5/origin/range/Content-Disposition等  3. 此头域和自定义元数据总长度不能超过8KB  4. 如果传入相同key，将value以“,”拼接后放入同一个key中返回 
+        When creating an object, you can add the **x-obs-persistent-headers** header in an HTTP request to customize one or more response headers. When you retrieve the object or query the object metadata, the custom headers will be returned in the response message.Format: **x-obs-persistent-headers: ****key1:base64_encode(***value1***),****key2:base64_encode(***value2***)...**Note: Items, such as **key1** and **key2**, are user-defined headers. If they contain non-ASCII or unrecognizable characters, they can be encoded using URL or Base64. The server processes these headers as strings, but does not decode them. Items, such as *value1* and *value2* are the values of the corresponding headers. **base64_encode** indicates that the value is encoded using Base64. A user-defined header and its Base64-encoded value are connected using a colon (:) to form a key-value pair. All key-value pairs are separated with a comma (,) and are placed in the **x-obs-persistent-headers** header. The server then decodes the uploaded value.Example: x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUyWhen you download the object or obtain the object metadata, headers **key1:***value1* and **key2:***value2* will be returned.Restrictions:+ Response headers customized in this way cannot be prefixed with **x-obs-**. For example, you should use **key1**, instead of **x-obs-key1**.+ Standard HTTP headers, such as **host**, **content-md5**, **origin**, **range**, and **Content-Disposition**, cannot be specified as custom headers.+ The total length of this header and the custom metadata cannot exceed 8 KB.+ If the same keys are transferred, values are separated with commas (,) and then returned in one key.
 
         :param x_obs_persistent_headers: The x_obs_persistent_headers of this PutObjectRequest.
         :type x_obs_persistent_headers: str
@@ -443,7 +443,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_website_redirect_location(self):
         """Gets the x_obs_website_redirect_location of this PutObjectRequest.
 
-        当桶设置了Website配置，可以将获取这个对象的请求重定向到桶内另一个对象或一个外部的URL，OBS将这个值从头域中取出，保存在对象的元数据中。  例如，重定向请求到桶内另一对象：  x-obs-website-redirect-location:/anotherPage.html  或重定向请求到一个外部URL：  x-obs-website-redirect-location:http://www.example.com/  默认值：无  约束：必须以“/”、“http://”或“https://”开头，长度不超过2KB。 
+        If static website hosting has been configured for a bucket, you can configure this parameter to redirect requests for an object in this bucket to another object in the same bucket or to an external URL. OBS stores the value of this header in the object metadata.Example of redirecting requests to another object in the bucket:x-obs-website-redirect-location:/anotherPage.htmlExample of redirecting requests to an external URL:x-obs-website-redirect-location:http://www.example.com/Default value: noneRestriction: The value must start with a slash (/), **http://**, or **https://**, with a length of no more than 2 KB.
 
         :return: The x_obs_website_redirect_location of this PutObjectRequest.
         :rtype: str
@@ -454,7 +454,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_website_redirect_location(self, x_obs_website_redirect_location):
         """Sets the x_obs_website_redirect_location of this PutObjectRequest.
 
-        当桶设置了Website配置，可以将获取这个对象的请求重定向到桶内另一个对象或一个外部的URL，OBS将这个值从头域中取出，保存在对象的元数据中。  例如，重定向请求到桶内另一对象：  x-obs-website-redirect-location:/anotherPage.html  或重定向请求到一个外部URL：  x-obs-website-redirect-location:http://www.example.com/  默认值：无  约束：必须以“/”、“http://”或“https://”开头，长度不超过2KB。 
+        If static website hosting has been configured for a bucket, you can configure this parameter to redirect requests for an object in this bucket to another object in the same bucket or to an external URL. OBS stores the value of this header in the object metadata.Example of redirecting requests to another object in the bucket:x-obs-website-redirect-location:/anotherPage.htmlExample of redirecting requests to an external URL:x-obs-website-redirect-location:http://www.example.com/Default value: noneRestriction: The value must start with a slash (/), **http://**, or **https://**, with a length of no more than 2 KB.
 
         :param x_obs_website_redirect_location: The x_obs_website_redirect_location of this PutObjectRequest.
         :type x_obs_website_redirect_location: str
@@ -465,7 +465,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption(self):
         """Gets the x_obs_server_side_encryption of this PutObjectRequest.
 
-        使用该头域表示服务端加密是SSE-KMS方式。  示例：x-obs-server-side-encryption: kms 
+        Indicates that SSE-KMS is used.   Example: x-obs-server-side-encryption: kms
 
         :return: The x_obs_server_side_encryption of this PutObjectRequest.
         :rtype: str
@@ -476,7 +476,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption(self, x_obs_server_side_encryption):
         """Sets the x_obs_server_side_encryption of this PutObjectRequest.
 
-        使用该头域表示服务端加密是SSE-KMS方式。  示例：x-obs-server-side-encryption: kms 
+        Indicates that SSE-KMS is used.   Example: x-obs-server-side-encryption: kms
 
         :param x_obs_server_side_encryption: The x_obs_server_side_encryption of this PutObjectRequest.
         :type x_obs_server_side_encryption: str
@@ -487,7 +487,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption_kms_key_id(self):
         """Gets the x_obs_server_side_encryption_kms_key_id of this PutObjectRequest.
 
-        SSE-KMS方式下使用该头域，该头域表示主密钥，如果用户没有提供该头域，那么默认的主密钥将会被使用。 支持两种格式的描述方式：  1. regionID:domainID(租户ID):key/key_id  或者  2.key_id  其中regionID是使用密钥所属region的ID；domainID是使用密钥所属租户的租户ID；key_id是从数据加密服务创建的密钥ID。  示例：  1. x-obs-server-side-encryption-kms-key-id: cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 或者  2. x-obs-server-side-encryption-kms-key-id: 4f1cd4de-ab64-4807-920a-47fc42e7f0d0 
+        Master key ID. This header is used for encryption with SSE-KMS. If the customer does not provide the master key ID, the default master key ID will be used.Supported formats:+ *regionID***:***domainID***:key/***key_id* + *key_id**regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID created in DEW.Examples:+ x-obs-server-side-encryption-kms-key-id:cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 + x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0
 
         :return: The x_obs_server_side_encryption_kms_key_id of this PutObjectRequest.
         :rtype: str
@@ -498,7 +498,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption_kms_key_id(self, x_obs_server_side_encryption_kms_key_id):
         """Sets the x_obs_server_side_encryption_kms_key_id of this PutObjectRequest.
 
-        SSE-KMS方式下使用该头域，该头域表示主密钥，如果用户没有提供该头域，那么默认的主密钥将会被使用。 支持两种格式的描述方式：  1. regionID:domainID(租户ID):key/key_id  或者  2.key_id  其中regionID是使用密钥所属region的ID；domainID是使用密钥所属租户的租户ID；key_id是从数据加密服务创建的密钥ID。  示例：  1. x-obs-server-side-encryption-kms-key-id: cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 或者  2. x-obs-server-side-encryption-kms-key-id: 4f1cd4de-ab64-4807-920a-47fc42e7f0d0 
+        Master key ID. This header is used for encryption with SSE-KMS. If the customer does not provide the master key ID, the default master key ID will be used.Supported formats:+ *regionID***:***domainID***:key/***key_id* + *key_id**regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID created in DEW.Examples:+ x-obs-server-side-encryption-kms-key-id:cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 + x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0
 
         :param x_obs_server_side_encryption_kms_key_id: The x_obs_server_side_encryption_kms_key_id of this PutObjectRequest.
         :type x_obs_server_side_encryption_kms_key_id: str
@@ -509,7 +509,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption_customer_algorithm(self):
         """Gets the x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm: AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :return: The x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
         :rtype: str
@@ -520,7 +520,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
         """Sets the x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的算法。  示例：x-obs-server-side-encryption-customer-algorithm: AES256  约束：需要和x-obs-server-side-encryption-customer-key， x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :param x_obs_server_side_encryption_customer_algorithm: The x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
         :type x_obs_server_side_encryption_customer_algorithm: str
@@ -531,7 +531,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption_customer_key(self):
         """Gets the x_obs_server_side_encryption_customer_key of this PutObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥。该密钥用于加密对象  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        Encryption key used for SSE-C. This key is used to encrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :return: The x_obs_server_side_encryption_customer_key of this PutObjectRequest.
         :rtype: str
@@ -542,7 +542,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption_customer_key(self, x_obs_server_side_encryption_customer_key):
         """Sets the x_obs_server_side_encryption_customer_key of this PutObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥。该密钥用于加密对象  示例：x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  约束：该头域由256-bit的密钥经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key-MD5一起使用。 
+        Encryption key used for SSE-C. This key is used to encrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
         :param x_obs_server_side_encryption_customer_key: The x_obs_server_side_encryption_customer_key of this PutObjectRequest.
         :type x_obs_server_side_encryption_customer_key: str
@@ -553,7 +553,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption_customer_key_md5(self):
         """Gets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  约束: 该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
         :return: The x_obs_server_side_encryption_customer_key_md5 of this PutObjectRequest.
         :rtype: str
@@ -564,7 +564,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
         """Sets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectRequest.
 
-        SSE-C方式下使用该头域，该头域表示加密使用的密钥的MD5值。MD5值用于验证密钥传输过程中没有出错。  示例：x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  约束: 该头域由密钥的128-bit MD5值经过base64-encoded得到，需要和x-obs-server-side-encryption-customer-algorithm，x-obs-server-side-encryption-customer-key一起使用。 
+        MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
         :param x_obs_server_side_encryption_customer_key_md5: The x_obs_server_side_encryption_customer_key_md5 of this PutObjectRequest.
         :type x_obs_server_side_encryption_customer_key_md5: str
@@ -575,7 +575,7 @@ class PutObjectRequest(SdkStreamRequest):
     def success_action_redirect(self):
         """Gets the success_action_redirect of this PutObjectRequest.
 
-        此参数的值是一个URL，用于指定当此次请求操作成功响应后的重定向的地址。  如果此参数值有效且操作成功，响应码为303，Location头域由此参数以及桶名、对象名、对象的ETag组成。 如果此参数值无效，则OBS忽略此参数的作用，响应码为204，Location头域为对象地址。 
+        The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
 
         :return: The success_action_redirect of this PutObjectRequest.
         :rtype: str
@@ -586,7 +586,7 @@ class PutObjectRequest(SdkStreamRequest):
     def success_action_redirect(self, success_action_redirect):
         """Sets the success_action_redirect of this PutObjectRequest.
 
-        此参数的值是一个URL，用于指定当此次请求操作成功响应后的重定向的地址。  如果此参数值有效且操作成功，响应码为303，Location头域由此参数以及桶名、对象名、对象的ETag组成。 如果此参数值无效，则OBS忽略此参数的作用，响应码为204，Location头域为对象地址。 
+        The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
 
         :param success_action_redirect: The success_action_redirect of this PutObjectRequest.
         :type success_action_redirect: str
@@ -597,7 +597,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_expires(self):
         """Gets the x_obs_expires of this PutObjectRequest.
 
-        表示对象的过期时间，单位是天。过期之后对象会被自动删除。（从对象最后修改时间开始计算） 此字段对于每个对象仅支持上传时配置，不支持后期通过修改元数据接口修改。  示例：x-obs-expires:3 
+        When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified. This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
 
         :return: The x_obs_expires of this PutObjectRequest.
         :rtype: int
@@ -608,7 +608,7 @@ class PutObjectRequest(SdkStreamRequest):
     def x_obs_expires(self, x_obs_expires):
         """Sets the x_obs_expires of this PutObjectRequest.
 
-        表示对象的过期时间，单位是天。过期之后对象会被自动删除。（从对象最后修改时间开始计算） 此字段对于每个对象仅支持上传时配置，不支持后期通过修改元数据接口修改。  示例：x-obs-expires:3 
+        When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified. This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
 
         :param x_obs_expires: The x_obs_expires of this PutObjectRequest.
         :type x_obs_expires: int

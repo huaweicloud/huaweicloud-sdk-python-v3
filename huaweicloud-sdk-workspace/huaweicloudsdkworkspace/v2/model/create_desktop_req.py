@@ -32,7 +32,8 @@ class CreateDesktopReq:
         'email_notification': 'bool',
         'enterprise_project_id': 'str',
         'tags': 'list[Tag]',
-        'eip': 'Eip'
+        'eip': 'Eip',
+        'desktop_name_policy_id': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CreateDesktopReq:
         'email_notification': 'email_notification',
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
-        'eip': 'eip'
+        'eip': 'eip',
+        'desktop_name_policy_id': 'desktop_name_policy_id'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, eip=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, eip=None, desktop_name_policy_id=None):
         """CreateDesktopReq
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class CreateDesktopReq:
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         :param eip: 
         :type eip: :class:`huaweicloudsdkworkspace.v2.Eip`
+        :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
+        :type desktop_name_policy_id: str
         """
         
         
@@ -111,6 +115,7 @@ class CreateDesktopReq:
         self._enterprise_project_id = None
         self._tags = None
         self._eip = None
+        self._desktop_name_policy_id = None
         self.discriminator = None
 
         self.desktop_type = desktop_type
@@ -139,6 +144,8 @@ class CreateDesktopReq:
             self.tags = tags
         if eip is not None:
             self.eip = eip
+        if desktop_name_policy_id is not None:
+            self.desktop_name_policy_id = desktop_name_policy_id
 
     @property
     def desktop_type(self):
@@ -483,6 +490,28 @@ class CreateDesktopReq:
         :type eip: :class:`huaweicloudsdkworkspace.v2.Eip`
         """
         self._eip = eip
+
+    @property
+    def desktop_name_policy_id(self):
+        """Gets the desktop_name_policy_id of this CreateDesktopReq.
+
+        策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
+
+        :return: The desktop_name_policy_id of this CreateDesktopReq.
+        :rtype: str
+        """
+        return self._desktop_name_policy_id
+
+    @desktop_name_policy_id.setter
+    def desktop_name_policy_id(self, desktop_name_policy_id):
+        """Sets the desktop_name_policy_id of this CreateDesktopReq.
+
+        策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
+
+        :param desktop_name_policy_id: The desktop_name_policy_id of this CreateDesktopReq.
+        :type desktop_name_policy_id: str
+        """
+        self._desktop_name_policy_id = desktop_name_policy_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
