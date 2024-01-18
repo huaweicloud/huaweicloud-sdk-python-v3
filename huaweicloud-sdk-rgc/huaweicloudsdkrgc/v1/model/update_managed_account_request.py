@@ -15,43 +15,35 @@ class UpdateManagedAccountRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('x_security_token')
 
     openapi_types = {
         'managed_account_id': 'str',
-        'x_security_token': 'str',
-        'body': 'CreateManagedAccountRequest'
+        'body': 'UpdateManagedAccountRequestBody'
     }
 
     attribute_map = {
         'managed_account_id': 'managed_account_id',
-        'x_security_token': 'X-Security-Token',
         'body': 'body'
     }
 
-    def __init__(self, managed_account_id=None, x_security_token=None, body=None):
+    def __init__(self, managed_account_id=None, body=None):
         """UpdateManagedAccountRequest
 
         The model defined in huaweicloud sdk
 
-        :param managed_account_id: 账号ID。
+        :param managed_account_id: 纳管账号ID。
         :type managed_account_id: str
-        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-        :type x_security_token: str
         :param body: Body of the UpdateManagedAccountRequest
-        :type body: :class:`huaweicloudsdkrgc.v1.CreateManagedAccountRequest`
+        :type body: :class:`huaweicloudsdkrgc.v1.UpdateManagedAccountRequestBody`
         """
         
         
 
         self._managed_account_id = None
-        self._x_security_token = None
         self._body = None
         self.discriminator = None
 
         self.managed_account_id = managed_account_id
-        if x_security_token is not None:
-            self.x_security_token = x_security_token
         if body is not None:
             self.body = body
 
@@ -59,7 +51,7 @@ class UpdateManagedAccountRequest:
     def managed_account_id(self):
         """Gets the managed_account_id of this UpdateManagedAccountRequest.
 
-        账号ID。
+        纳管账号ID。
 
         :return: The managed_account_id of this UpdateManagedAccountRequest.
         :rtype: str
@@ -70,7 +62,7 @@ class UpdateManagedAccountRequest:
     def managed_account_id(self, managed_account_id):
         """Sets the managed_account_id of this UpdateManagedAccountRequest.
 
-        账号ID。
+        纳管账号ID。
 
         :param managed_account_id: The managed_account_id of this UpdateManagedAccountRequest.
         :type managed_account_id: str
@@ -78,33 +70,11 @@ class UpdateManagedAccountRequest:
         self._managed_account_id = managed_account_id
 
     @property
-    def x_security_token(self):
-        """Gets the x_security_token of this UpdateManagedAccountRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :return: The x_security_token of this UpdateManagedAccountRequest.
-        :rtype: str
-        """
-        return self._x_security_token
-
-    @x_security_token.setter
-    def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this UpdateManagedAccountRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :param x_security_token: The x_security_token of this UpdateManagedAccountRequest.
-        :type x_security_token: str
-        """
-        self._x_security_token = x_security_token
-
-    @property
     def body(self):
         """Gets the body of this UpdateManagedAccountRequest.
 
         :return: The body of this UpdateManagedAccountRequest.
-        :rtype: :class:`huaweicloudsdkrgc.v1.CreateManagedAccountRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.UpdateManagedAccountRequestBody`
         """
         return self._body
 
@@ -113,7 +83,7 @@ class UpdateManagedAccountRequest:
         """Sets the body of this UpdateManagedAccountRequest.
 
         :param body: The body of this UpdateManagedAccountRequest.
-        :type body: :class:`huaweicloudsdkrgc.v1.CreateManagedAccountRequest`
+        :type body: :class:`huaweicloudsdkrgc.v1.UpdateManagedAccountRequestBody`
         """
         self._body = body
 

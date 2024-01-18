@@ -31,9 +31,9 @@ class FlavorLink:
 
         The model defined in huaweicloud sdk
 
-        :param rel: 快捷链接标记名称
+        :param rel: 快捷链接标记名称。
         :type rel: str
-        :param hrel: 对应快捷链接
+        :param hrel: 对应快捷链接。
         :type hrel: str
         """
         
@@ -52,7 +52,7 @@ class FlavorLink:
     def rel(self):
         """Gets the rel of this FlavorLink.
 
-        快捷链接标记名称
+        快捷链接标记名称。
 
         :return: The rel of this FlavorLink.
         :rtype: str
@@ -63,7 +63,7 @@ class FlavorLink:
     def rel(self, rel):
         """Sets the rel of this FlavorLink.
 
-        快捷链接标记名称
+        快捷链接标记名称。
 
         :param rel: The rel of this FlavorLink.
         :type rel: str
@@ -74,7 +74,7 @@ class FlavorLink:
     def hrel(self):
         """Gets the hrel of this FlavorLink.
 
-        对应快捷链接
+        对应快捷链接。
 
         :return: The hrel of this FlavorLink.
         :rtype: str
@@ -85,7 +85,7 @@ class FlavorLink:
     def hrel(self, hrel):
         """Sets the hrel of this FlavorLink.
 
-        对应快捷链接
+        对应快捷链接。
 
         :param hrel: The hrel of this FlavorLink.
         :type hrel: str

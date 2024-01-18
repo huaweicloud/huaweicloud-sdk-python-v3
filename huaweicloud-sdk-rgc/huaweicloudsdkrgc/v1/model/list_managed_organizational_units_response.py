@@ -32,7 +32,7 @@ class ListManagedOrganizationalUnitsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param managed_organization_units: 纳管的OU。
+        :param managed_organization_units: 注册OU信息。
         :type managed_organization_units: list[:class:`huaweicloudsdkrgc.v1.ManagedOrganizationUnit`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListManagedOrganizationalUnitsResponse(SdkResponse):
     def managed_organization_units(self):
         """Gets the managed_organization_units of this ListManagedOrganizationalUnitsResponse.
 
-        纳管的OU。
+        注册OU信息。
 
         :return: The managed_organization_units of this ListManagedOrganizationalUnitsResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.ManagedOrganizationUnit`]
@@ -64,7 +64,7 @@ class ListManagedOrganizationalUnitsResponse(SdkResponse):
     def managed_organization_units(self, managed_organization_units):
         """Sets the managed_organization_units of this ListManagedOrganizationalUnitsResponse.
 
-        纳管的OU。
+        注册OU信息。
 
         :param managed_organization_units: The managed_organization_units of this ListManagedOrganizationalUnitsResponse.
         :type managed_organization_units: list[:class:`huaweicloudsdkrgc.v1.ManagedOrganizationUnit`]

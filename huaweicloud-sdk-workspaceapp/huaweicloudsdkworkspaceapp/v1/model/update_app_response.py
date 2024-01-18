@@ -64,41 +64,41 @@ class UpdateAppResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 应用ID
+        :param id: 应用ID。
         :type id: str
-        :param name: 应用名称
+        :param name: 应用名称。
         :type name: str
-        :param version: 应用版本号
+        :param version: 应用版本号。
         :type version: str
-        :param command_param: 启动命令行参数
+        :param command_param: 启动命令行参数。
         :type command_param: str
-        :param execute_path: 执行路径
+        :param execute_path: 执行路径。
         :type execute_path: str
-        :param work_path: 应用工作目录
+        :param work_path: 应用工作目录。
         :type work_path: str
-        :param icon_path: 应用图标的路径
+        :param icon_path: 应用图标的路径。
         :type icon_path: str
-        :param icon_index: 应用图标的索引
+        :param icon_index: 应用图标的索引。
         :type icon_index: int
-        :param description: 应用描述
+        :param description: 应用描述。
         :type description: str
-        :param app_group_id: 应用组标识Id
+        :param app_group_id: 应用组标识Id。
         :type app_group_id: str
         :param state: 
         :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
-        :param tenant_id: 所在的租户ID
+        :param tenant_id: 所在的租户ID。
         :type tenant_id: str
-        :param publish_at: 发布时间
+        :param publish_at: 发布时间。
         :type publish_at: datetime
-        :param source_type: 应用类型 - &#39;1&#39;:系统内置应用 - &#39;2&#39;:镜像应用 - &#39;3&#39;:自定义应用
+        :param source_type: 应用类型： - &#39;1&#39;:系统内置应用 - &#39;2&#39;:镜像应用 - &#39;3&#39;:自定义应用
         :type source_type: int
-        :param publisher: 应用发布者
+        :param publisher: 应用发布者。
         :type publisher: str
-        :param icon_url: 图标url
+        :param icon_url: 图标url。
         :type icon_url: str
-        :param publishable: 是否可发布应用 - true: 可发布 - false: 不可发布
+        :param publishable: 是否可发布应用： - true: 可发布。 - false: 不可发布。
         :type publishable: bool
-        :param sandbox_enable: 是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行 - true: 表示以沙箱模式运行
+        :param sandbox_enable: 是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
         :type sandbox_enable: bool
         """
         
@@ -165,7 +165,7 @@ class UpdateAppResponse(SdkResponse):
     def id(self):
         """Gets the id of this UpdateAppResponse.
 
-        应用ID
+        应用ID。
 
         :return: The id of this UpdateAppResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class UpdateAppResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this UpdateAppResponse.
 
-        应用ID
+        应用ID。
 
         :param id: The id of this UpdateAppResponse.
         :type id: str
@@ -187,7 +187,7 @@ class UpdateAppResponse(SdkResponse):
     def name(self):
         """Gets the name of this UpdateAppResponse.
 
-        应用名称
+        应用名称。
 
         :return: The name of this UpdateAppResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class UpdateAppResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this UpdateAppResponse.
 
-        应用名称
+        应用名称。
 
         :param name: The name of this UpdateAppResponse.
         :type name: str
@@ -209,7 +209,7 @@ class UpdateAppResponse(SdkResponse):
     def version(self):
         """Gets the version of this UpdateAppResponse.
 
-        应用版本号
+        应用版本号。
 
         :return: The version of this UpdateAppResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class UpdateAppResponse(SdkResponse):
     def version(self, version):
         """Sets the version of this UpdateAppResponse.
 
-        应用版本号
+        应用版本号。
 
         :param version: The version of this UpdateAppResponse.
         :type version: str
@@ -231,7 +231,7 @@ class UpdateAppResponse(SdkResponse):
     def command_param(self):
         """Gets the command_param of this UpdateAppResponse.
 
-        启动命令行参数
+        启动命令行参数。
 
         :return: The command_param of this UpdateAppResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class UpdateAppResponse(SdkResponse):
     def command_param(self, command_param):
         """Sets the command_param of this UpdateAppResponse.
 
-        启动命令行参数
+        启动命令行参数。
 
         :param command_param: The command_param of this UpdateAppResponse.
         :type command_param: str
@@ -253,7 +253,7 @@ class UpdateAppResponse(SdkResponse):
     def execute_path(self):
         """Gets the execute_path of this UpdateAppResponse.
 
-        执行路径
+        执行路径。
 
         :return: The execute_path of this UpdateAppResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class UpdateAppResponse(SdkResponse):
     def execute_path(self, execute_path):
         """Sets the execute_path of this UpdateAppResponse.
 
-        执行路径
+        执行路径。
 
         :param execute_path: The execute_path of this UpdateAppResponse.
         :type execute_path: str
@@ -275,7 +275,7 @@ class UpdateAppResponse(SdkResponse):
     def work_path(self):
         """Gets the work_path of this UpdateAppResponse.
 
-        应用工作目录
+        应用工作目录。
 
         :return: The work_path of this UpdateAppResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class UpdateAppResponse(SdkResponse):
     def work_path(self, work_path):
         """Sets the work_path of this UpdateAppResponse.
 
-        应用工作目录
+        应用工作目录。
 
         :param work_path: The work_path of this UpdateAppResponse.
         :type work_path: str
@@ -297,7 +297,7 @@ class UpdateAppResponse(SdkResponse):
     def icon_path(self):
         """Gets the icon_path of this UpdateAppResponse.
 
-        应用图标的路径
+        应用图标的路径。
 
         :return: The icon_path of this UpdateAppResponse.
         :rtype: str
@@ -308,7 +308,7 @@ class UpdateAppResponse(SdkResponse):
     def icon_path(self, icon_path):
         """Sets the icon_path of this UpdateAppResponse.
 
-        应用图标的路径
+        应用图标的路径。
 
         :param icon_path: The icon_path of this UpdateAppResponse.
         :type icon_path: str
@@ -319,7 +319,7 @@ class UpdateAppResponse(SdkResponse):
     def icon_index(self):
         """Gets the icon_index of this UpdateAppResponse.
 
-        应用图标的索引
+        应用图标的索引。
 
         :return: The icon_index of this UpdateAppResponse.
         :rtype: int
@@ -330,7 +330,7 @@ class UpdateAppResponse(SdkResponse):
     def icon_index(self, icon_index):
         """Sets the icon_index of this UpdateAppResponse.
 
-        应用图标的索引
+        应用图标的索引。
 
         :param icon_index: The icon_index of this UpdateAppResponse.
         :type icon_index: int
@@ -341,7 +341,7 @@ class UpdateAppResponse(SdkResponse):
     def description(self):
         """Gets the description of this UpdateAppResponse.
 
-        应用描述
+        应用描述。
 
         :return: The description of this UpdateAppResponse.
         :rtype: str
@@ -352,7 +352,7 @@ class UpdateAppResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this UpdateAppResponse.
 
-        应用描述
+        应用描述。
 
         :param description: The description of this UpdateAppResponse.
         :type description: str
@@ -363,7 +363,7 @@ class UpdateAppResponse(SdkResponse):
     def app_group_id(self):
         """Gets the app_group_id of this UpdateAppResponse.
 
-        应用组标识Id
+        应用组标识Id。
 
         :return: The app_group_id of this UpdateAppResponse.
         :rtype: str
@@ -374,7 +374,7 @@ class UpdateAppResponse(SdkResponse):
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this UpdateAppResponse.
 
-        应用组标识Id
+        应用组标识Id。
 
         :param app_group_id: The app_group_id of this UpdateAppResponse.
         :type app_group_id: str
@@ -403,7 +403,7 @@ class UpdateAppResponse(SdkResponse):
     def tenant_id(self):
         """Gets the tenant_id of this UpdateAppResponse.
 
-        所在的租户ID
+        所在的租户ID。
 
         :return: The tenant_id of this UpdateAppResponse.
         :rtype: str
@@ -414,7 +414,7 @@ class UpdateAppResponse(SdkResponse):
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this UpdateAppResponse.
 
-        所在的租户ID
+        所在的租户ID。
 
         :param tenant_id: The tenant_id of this UpdateAppResponse.
         :type tenant_id: str
@@ -425,7 +425,7 @@ class UpdateAppResponse(SdkResponse):
     def publish_at(self):
         """Gets the publish_at of this UpdateAppResponse.
 
-        发布时间
+        发布时间。
 
         :return: The publish_at of this UpdateAppResponse.
         :rtype: datetime
@@ -436,7 +436,7 @@ class UpdateAppResponse(SdkResponse):
     def publish_at(self, publish_at):
         """Sets the publish_at of this UpdateAppResponse.
 
-        发布时间
+        发布时间。
 
         :param publish_at: The publish_at of this UpdateAppResponse.
         :type publish_at: datetime
@@ -447,7 +447,7 @@ class UpdateAppResponse(SdkResponse):
     def source_type(self):
         """Gets the source_type of this UpdateAppResponse.
 
-        应用类型 - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
+        应用类型： - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
 
         :return: The source_type of this UpdateAppResponse.
         :rtype: int
@@ -458,7 +458,7 @@ class UpdateAppResponse(SdkResponse):
     def source_type(self, source_type):
         """Sets the source_type of this UpdateAppResponse.
 
-        应用类型 - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
+        应用类型： - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
 
         :param source_type: The source_type of this UpdateAppResponse.
         :type source_type: int
@@ -469,7 +469,7 @@ class UpdateAppResponse(SdkResponse):
     def publisher(self):
         """Gets the publisher of this UpdateAppResponse.
 
-        应用发布者
+        应用发布者。
 
         :return: The publisher of this UpdateAppResponse.
         :rtype: str
@@ -480,7 +480,7 @@ class UpdateAppResponse(SdkResponse):
     def publisher(self, publisher):
         """Sets the publisher of this UpdateAppResponse.
 
-        应用发布者
+        应用发布者。
 
         :param publisher: The publisher of this UpdateAppResponse.
         :type publisher: str
@@ -491,7 +491,7 @@ class UpdateAppResponse(SdkResponse):
     def icon_url(self):
         """Gets the icon_url of this UpdateAppResponse.
 
-        图标url
+        图标url。
 
         :return: The icon_url of this UpdateAppResponse.
         :rtype: str
@@ -502,7 +502,7 @@ class UpdateAppResponse(SdkResponse):
     def icon_url(self, icon_url):
         """Sets the icon_url of this UpdateAppResponse.
 
-        图标url
+        图标url。
 
         :param icon_url: The icon_url of this UpdateAppResponse.
         :type icon_url: str
@@ -513,7 +513,7 @@ class UpdateAppResponse(SdkResponse):
     def publishable(self):
         """Gets the publishable of this UpdateAppResponse.
 
-        是否可发布应用 - true: 可发布 - false: 不可发布
+        是否可发布应用： - true: 可发布。 - false: 不可发布。
 
         :return: The publishable of this UpdateAppResponse.
         :rtype: bool
@@ -524,7 +524,7 @@ class UpdateAppResponse(SdkResponse):
     def publishable(self, publishable):
         """Sets the publishable of this UpdateAppResponse.
 
-        是否可发布应用 - true: 可发布 - false: 不可发布
+        是否可发布应用： - true: 可发布。 - false: 不可发布。
 
         :param publishable: The publishable of this UpdateAppResponse.
         :type publishable: bool
@@ -535,7 +535,7 @@ class UpdateAppResponse(SdkResponse):
     def sandbox_enable(self):
         """Gets the sandbox_enable of this UpdateAppResponse.
 
-        是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行 - true: 表示以沙箱模式运行
+        是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
 
         :return: The sandbox_enable of this UpdateAppResponse.
         :rtype: bool
@@ -546,7 +546,7 @@ class UpdateAppResponse(SdkResponse):
     def sandbox_enable(self, sandbox_enable):
         """Sets the sandbox_enable of this UpdateAppResponse.
 
-        是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行 - true: 表示以沙箱模式运行
+        是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
 
         :param sandbox_enable: The sandbox_enable of this UpdateAppResponse.
         :type sandbox_enable: bool

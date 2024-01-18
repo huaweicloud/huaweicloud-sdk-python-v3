@@ -31,9 +31,9 @@ class UploadProcessJson:
 
         The model defined in huaweicloud sdk
 
-        :param details: details
+        :param details: 工程导入进度明细信息
         :type details: list[:class:`huaweicloudsdkcpts.v1.UploadProcessJsonDetail`]
-        :param process_status: process_status
+        :param process_status: 总状态（0：导入中；1：导入完成）
         :type process_status: int
         """
         
@@ -52,7 +52,7 @@ class UploadProcessJson:
     def details(self):
         """Gets the details of this UploadProcessJson.
 
-        details
+        工程导入进度明细信息
 
         :return: The details of this UploadProcessJson.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.UploadProcessJsonDetail`]
@@ -63,7 +63,7 @@ class UploadProcessJson:
     def details(self, details):
         """Sets the details of this UploadProcessJson.
 
-        details
+        工程导入进度明细信息
 
         :param details: The details of this UploadProcessJson.
         :type details: list[:class:`huaweicloudsdkcpts.v1.UploadProcessJsonDetail`]
@@ -74,7 +74,7 @@ class UploadProcessJson:
     def process_status(self):
         """Gets the process_status of this UploadProcessJson.
 
-        process_status
+        总状态（0：导入中；1：导入完成）
 
         :return: The process_status of this UploadProcessJson.
         :rtype: int
@@ -85,7 +85,7 @@ class UploadProcessJson:
     def process_status(self, process_status):
         """Sets the process_status of this UploadProcessJson.
 
-        process_status
+        总状态（0：导入中；1：导入完成）
 
         :param process_status: The process_status of this UploadProcessJson.
         :type process_status: int

@@ -31,9 +31,9 @@ class Blueprint:
 
         The model defined in huaweicloud sdk
 
-        :param blueprint_product_id: 蓝图ID。
+        :param blueprint_product_id: 模板ID。
         :type blueprint_product_id: str
-        :param blueprint_product_version: 蓝图版本。
+        :param blueprint_product_version: 模板版本。
         :type blueprint_product_version: str
         """
         
@@ -52,7 +52,7 @@ class Blueprint:
     def blueprint_product_id(self):
         """Gets the blueprint_product_id of this Blueprint.
 
-        蓝图ID。
+        模板ID。
 
         :return: The blueprint_product_id of this Blueprint.
         :rtype: str
@@ -63,7 +63,7 @@ class Blueprint:
     def blueprint_product_id(self, blueprint_product_id):
         """Sets the blueprint_product_id of this Blueprint.
 
-        蓝图ID。
+        模板ID。
 
         :param blueprint_product_id: The blueprint_product_id of this Blueprint.
         :type blueprint_product_id: str
@@ -74,7 +74,7 @@ class Blueprint:
     def blueprint_product_version(self):
         """Gets the blueprint_product_version of this Blueprint.
 
-        蓝图版本。
+        模板版本。
 
         :return: The blueprint_product_version of this Blueprint.
         :rtype: str
@@ -85,7 +85,7 @@ class Blueprint:
     def blueprint_product_version(self, blueprint_product_version):
         """Sets the blueprint_product_version of this Blueprint.
 
-        蓝图版本。
+        模板版本。
 
         :param blueprint_product_version: The blueprint_product_version of this Blueprint.
         :type blueprint_product_version: str

@@ -17,7 +17,7 @@ class CreatePromInstanceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'PromInstanceEpsModel'
+        'body': 'PromInstanceRequestModel'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreatePromInstanceRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreatePromInstanceRequest
-        :type body: :class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`
+        :type body: :class:`huaweicloudsdkaom.v2.PromInstanceRequestModel`
         """
         
         
@@ -46,7 +46,7 @@ class CreatePromInstanceRequest:
         """Gets the body of this CreatePromInstanceRequest.
 
         :return: The body of this CreatePromInstanceRequest.
-        :rtype: :class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`
+        :rtype: :class:`huaweicloudsdkaom.v2.PromInstanceRequestModel`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreatePromInstanceRequest:
         """Sets the body of this CreatePromInstanceRequest.
 
         :param body: The body of this CreatePromInstanceRequest.
-        :type body: :class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`
+        :type body: :class:`huaweicloudsdkaom.v2.PromInstanceRequestModel`
         """
         self._body = body
 

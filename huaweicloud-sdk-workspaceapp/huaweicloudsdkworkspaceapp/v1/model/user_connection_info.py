@@ -73,51 +73,51 @@ class UserConnectionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 主键
+        :param id: 主键。
         :type id: str
-        :param connect_type: 连接类型
+        :param connect_type: 连接类型。
         :type connect_type: str
-        :param user_name: 登录用户
+        :param user_name: 登录用户。
         :type user_name: str
-        :param desktop_group_name: 桌面组名
+        :param desktop_group_name: 桌面组名。
         :type desktop_group_name: str
-        :param pre_conn_time: 预连接时间
+        :param pre_conn_time: 预连接时间。
         :type pre_conn_time: datetime
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: datetime
-        :param end_time: 结束时间
+        :param end_time: 结束时间。
         :type end_time: datetime
-        :param machine_sid: 应用服务器sid
+        :param machine_sid: 应用服务器sid。
         :type machine_sid: str
-        :param machine_name: 应用服务器名称
+        :param machine_name: 应用服务器名称。
         :type machine_name: str
-        :param failed_reason: 连接失败原因
+        :param failed_reason: 连接失败原因。
         :type failed_reason: str
-        :param failed_code: 连接失败状态码
+        :param failed_code: 连接失败状态码。
         :type failed_code: str
-        :param client_mac: 客户端Mac
+        :param client_mac: 客户端Mac。
         :type client_mac: str
-        :param client_name: 客户端名称
+        :param client_name: 客户端名称。
         :type client_name: str
-        :param client_ip: 客户端ip
+        :param client_ip: 客户端ip。
         :type client_ip: str
-        :param client_version: 客户端版本
+        :param client_version: 客户端版本。
         :type client_version: str
-        :param client_type: 客户端操作系统类型
+        :param client_type: 客户端操作系统类型。
         :type client_type: str
-        :param agent_version: aps hda版本
+        :param agent_version: aps hda版本。
         :type agent_version: str
-        :param vm_ip: 应用服务器ip
+        :param vm_ip: 应用服务器ip。
         :type vm_ip: str
-        :param connect_flag: 连接标志
+        :param connect_flag: 连接标志。
         :type connect_flag: str
-        :param wi_ip: 连接IP
+        :param wi_ip: 连接IP。
         :type wi_ip: str
-        :param update_time: 更新时间
+        :param update_time: 更新时间。
         :type update_time: datetime
-        :param tenant_id: 租户id
+        :param tenant_id: 租户id。
         :type tenant_id: str
-        :param virtual_ip: 会话虚拟ip
+        :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
         """
         
@@ -199,7 +199,7 @@ class UserConnectionInfo:
     def id(self):
         """Gets the id of this UserConnectionInfo.
 
-        主键
+        主键。
 
         :return: The id of this UserConnectionInfo.
         :rtype: str
@@ -210,7 +210,7 @@ class UserConnectionInfo:
     def id(self, id):
         """Sets the id of this UserConnectionInfo.
 
-        主键
+        主键。
 
         :param id: The id of this UserConnectionInfo.
         :type id: str
@@ -221,7 +221,7 @@ class UserConnectionInfo:
     def connect_type(self):
         """Gets the connect_type of this UserConnectionInfo.
 
-        连接类型
+        连接类型。
 
         :return: The connect_type of this UserConnectionInfo.
         :rtype: str
@@ -232,7 +232,7 @@ class UserConnectionInfo:
     def connect_type(self, connect_type):
         """Sets the connect_type of this UserConnectionInfo.
 
-        连接类型
+        连接类型。
 
         :param connect_type: The connect_type of this UserConnectionInfo.
         :type connect_type: str
@@ -243,7 +243,7 @@ class UserConnectionInfo:
     def user_name(self):
         """Gets the user_name of this UserConnectionInfo.
 
-        登录用户
+        登录用户。
 
         :return: The user_name of this UserConnectionInfo.
         :rtype: str
@@ -254,7 +254,7 @@ class UserConnectionInfo:
     def user_name(self, user_name):
         """Sets the user_name of this UserConnectionInfo.
 
-        登录用户
+        登录用户。
 
         :param user_name: The user_name of this UserConnectionInfo.
         :type user_name: str
@@ -265,7 +265,7 @@ class UserConnectionInfo:
     def desktop_group_name(self):
         """Gets the desktop_group_name of this UserConnectionInfo.
 
-        桌面组名
+        桌面组名。
 
         :return: The desktop_group_name of this UserConnectionInfo.
         :rtype: str
@@ -276,7 +276,7 @@ class UserConnectionInfo:
     def desktop_group_name(self, desktop_group_name):
         """Sets the desktop_group_name of this UserConnectionInfo.
 
-        桌面组名
+        桌面组名。
 
         :param desktop_group_name: The desktop_group_name of this UserConnectionInfo.
         :type desktop_group_name: str
@@ -287,7 +287,7 @@ class UserConnectionInfo:
     def pre_conn_time(self):
         """Gets the pre_conn_time of this UserConnectionInfo.
 
-        预连接时间
+        预连接时间。
 
         :return: The pre_conn_time of this UserConnectionInfo.
         :rtype: datetime
@@ -298,7 +298,7 @@ class UserConnectionInfo:
     def pre_conn_time(self, pre_conn_time):
         """Sets the pre_conn_time of this UserConnectionInfo.
 
-        预连接时间
+        预连接时间。
 
         :param pre_conn_time: The pre_conn_time of this UserConnectionInfo.
         :type pre_conn_time: datetime
@@ -309,7 +309,7 @@ class UserConnectionInfo:
     def start_time(self):
         """Gets the start_time of this UserConnectionInfo.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this UserConnectionInfo.
         :rtype: datetime
@@ -320,7 +320,7 @@ class UserConnectionInfo:
     def start_time(self, start_time):
         """Sets the start_time of this UserConnectionInfo.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this UserConnectionInfo.
         :type start_time: datetime
@@ -331,7 +331,7 @@ class UserConnectionInfo:
     def end_time(self):
         """Gets the end_time of this UserConnectionInfo.
 
-        结束时间
+        结束时间。
 
         :return: The end_time of this UserConnectionInfo.
         :rtype: datetime
@@ -342,7 +342,7 @@ class UserConnectionInfo:
     def end_time(self, end_time):
         """Sets the end_time of this UserConnectionInfo.
 
-        结束时间
+        结束时间。
 
         :param end_time: The end_time of this UserConnectionInfo.
         :type end_time: datetime
@@ -353,7 +353,7 @@ class UserConnectionInfo:
     def machine_sid(self):
         """Gets the machine_sid of this UserConnectionInfo.
 
-        应用服务器sid
+        应用服务器sid。
 
         :return: The machine_sid of this UserConnectionInfo.
         :rtype: str
@@ -364,7 +364,7 @@ class UserConnectionInfo:
     def machine_sid(self, machine_sid):
         """Sets the machine_sid of this UserConnectionInfo.
 
-        应用服务器sid
+        应用服务器sid。
 
         :param machine_sid: The machine_sid of this UserConnectionInfo.
         :type machine_sid: str
@@ -375,7 +375,7 @@ class UserConnectionInfo:
     def machine_name(self):
         """Gets the machine_name of this UserConnectionInfo.
 
-        应用服务器名称
+        应用服务器名称。
 
         :return: The machine_name of this UserConnectionInfo.
         :rtype: str
@@ -386,7 +386,7 @@ class UserConnectionInfo:
     def machine_name(self, machine_name):
         """Sets the machine_name of this UserConnectionInfo.
 
-        应用服务器名称
+        应用服务器名称。
 
         :param machine_name: The machine_name of this UserConnectionInfo.
         :type machine_name: str
@@ -397,7 +397,7 @@ class UserConnectionInfo:
     def failed_reason(self):
         """Gets the failed_reason of this UserConnectionInfo.
 
-        连接失败原因
+        连接失败原因。
 
         :return: The failed_reason of this UserConnectionInfo.
         :rtype: str
@@ -408,7 +408,7 @@ class UserConnectionInfo:
     def failed_reason(self, failed_reason):
         """Sets the failed_reason of this UserConnectionInfo.
 
-        连接失败原因
+        连接失败原因。
 
         :param failed_reason: The failed_reason of this UserConnectionInfo.
         :type failed_reason: str
@@ -419,7 +419,7 @@ class UserConnectionInfo:
     def failed_code(self):
         """Gets the failed_code of this UserConnectionInfo.
 
-        连接失败状态码
+        连接失败状态码。
 
         :return: The failed_code of this UserConnectionInfo.
         :rtype: str
@@ -430,7 +430,7 @@ class UserConnectionInfo:
     def failed_code(self, failed_code):
         """Sets the failed_code of this UserConnectionInfo.
 
-        连接失败状态码
+        连接失败状态码。
 
         :param failed_code: The failed_code of this UserConnectionInfo.
         :type failed_code: str
@@ -441,7 +441,7 @@ class UserConnectionInfo:
     def client_mac(self):
         """Gets the client_mac of this UserConnectionInfo.
 
-        客户端Mac
+        客户端Mac。
 
         :return: The client_mac of this UserConnectionInfo.
         :rtype: str
@@ -452,7 +452,7 @@ class UserConnectionInfo:
     def client_mac(self, client_mac):
         """Sets the client_mac of this UserConnectionInfo.
 
-        客户端Mac
+        客户端Mac。
 
         :param client_mac: The client_mac of this UserConnectionInfo.
         :type client_mac: str
@@ -463,7 +463,7 @@ class UserConnectionInfo:
     def client_name(self):
         """Gets the client_name of this UserConnectionInfo.
 
-        客户端名称
+        客户端名称。
 
         :return: The client_name of this UserConnectionInfo.
         :rtype: str
@@ -474,7 +474,7 @@ class UserConnectionInfo:
     def client_name(self, client_name):
         """Sets the client_name of this UserConnectionInfo.
 
-        客户端名称
+        客户端名称。
 
         :param client_name: The client_name of this UserConnectionInfo.
         :type client_name: str
@@ -485,7 +485,7 @@ class UserConnectionInfo:
     def client_ip(self):
         """Gets the client_ip of this UserConnectionInfo.
 
-        客户端ip
+        客户端ip。
 
         :return: The client_ip of this UserConnectionInfo.
         :rtype: str
@@ -496,7 +496,7 @@ class UserConnectionInfo:
     def client_ip(self, client_ip):
         """Sets the client_ip of this UserConnectionInfo.
 
-        客户端ip
+        客户端ip。
 
         :param client_ip: The client_ip of this UserConnectionInfo.
         :type client_ip: str
@@ -507,7 +507,7 @@ class UserConnectionInfo:
     def client_version(self):
         """Gets the client_version of this UserConnectionInfo.
 
-        客户端版本
+        客户端版本。
 
         :return: The client_version of this UserConnectionInfo.
         :rtype: str
@@ -518,7 +518,7 @@ class UserConnectionInfo:
     def client_version(self, client_version):
         """Sets the client_version of this UserConnectionInfo.
 
-        客户端版本
+        客户端版本。
 
         :param client_version: The client_version of this UserConnectionInfo.
         :type client_version: str
@@ -529,7 +529,7 @@ class UserConnectionInfo:
     def client_type(self):
         """Gets the client_type of this UserConnectionInfo.
 
-        客户端操作系统类型
+        客户端操作系统类型。
 
         :return: The client_type of this UserConnectionInfo.
         :rtype: str
@@ -540,7 +540,7 @@ class UserConnectionInfo:
     def client_type(self, client_type):
         """Sets the client_type of this UserConnectionInfo.
 
-        客户端操作系统类型
+        客户端操作系统类型。
 
         :param client_type: The client_type of this UserConnectionInfo.
         :type client_type: str
@@ -551,7 +551,7 @@ class UserConnectionInfo:
     def agent_version(self):
         """Gets the agent_version of this UserConnectionInfo.
 
-        aps hda版本
+        aps hda版本。
 
         :return: The agent_version of this UserConnectionInfo.
         :rtype: str
@@ -562,7 +562,7 @@ class UserConnectionInfo:
     def agent_version(self, agent_version):
         """Sets the agent_version of this UserConnectionInfo.
 
-        aps hda版本
+        aps hda版本。
 
         :param agent_version: The agent_version of this UserConnectionInfo.
         :type agent_version: str
@@ -573,7 +573,7 @@ class UserConnectionInfo:
     def vm_ip(self):
         """Gets the vm_ip of this UserConnectionInfo.
 
-        应用服务器ip
+        应用服务器ip。
 
         :return: The vm_ip of this UserConnectionInfo.
         :rtype: str
@@ -584,7 +584,7 @@ class UserConnectionInfo:
     def vm_ip(self, vm_ip):
         """Sets the vm_ip of this UserConnectionInfo.
 
-        应用服务器ip
+        应用服务器ip。
 
         :param vm_ip: The vm_ip of this UserConnectionInfo.
         :type vm_ip: str
@@ -595,7 +595,7 @@ class UserConnectionInfo:
     def connect_flag(self):
         """Gets the connect_flag of this UserConnectionInfo.
 
-        连接标志
+        连接标志。
 
         :return: The connect_flag of this UserConnectionInfo.
         :rtype: str
@@ -606,7 +606,7 @@ class UserConnectionInfo:
     def connect_flag(self, connect_flag):
         """Sets the connect_flag of this UserConnectionInfo.
 
-        连接标志
+        连接标志。
 
         :param connect_flag: The connect_flag of this UserConnectionInfo.
         :type connect_flag: str
@@ -617,7 +617,7 @@ class UserConnectionInfo:
     def wi_ip(self):
         """Gets the wi_ip of this UserConnectionInfo.
 
-        连接IP
+        连接IP。
 
         :return: The wi_ip of this UserConnectionInfo.
         :rtype: str
@@ -628,7 +628,7 @@ class UserConnectionInfo:
     def wi_ip(self, wi_ip):
         """Sets the wi_ip of this UserConnectionInfo.
 
-        连接IP
+        连接IP。
 
         :param wi_ip: The wi_ip of this UserConnectionInfo.
         :type wi_ip: str
@@ -639,7 +639,7 @@ class UserConnectionInfo:
     def update_time(self):
         """Gets the update_time of this UserConnectionInfo.
 
-        更新时间
+        更新时间。
 
         :return: The update_time of this UserConnectionInfo.
         :rtype: datetime
@@ -650,7 +650,7 @@ class UserConnectionInfo:
     def update_time(self, update_time):
         """Sets the update_time of this UserConnectionInfo.
 
-        更新时间
+        更新时间。
 
         :param update_time: The update_time of this UserConnectionInfo.
         :type update_time: datetime
@@ -661,7 +661,7 @@ class UserConnectionInfo:
     def tenant_id(self):
         """Gets the tenant_id of this UserConnectionInfo.
 
-        租户id
+        租户id。
 
         :return: The tenant_id of this UserConnectionInfo.
         :rtype: str
@@ -672,7 +672,7 @@ class UserConnectionInfo:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this UserConnectionInfo.
 
-        租户id
+        租户id。
 
         :param tenant_id: The tenant_id of this UserConnectionInfo.
         :type tenant_id: str
@@ -683,7 +683,7 @@ class UserConnectionInfo:
     def virtual_ip(self):
         """Gets the virtual_ip of this UserConnectionInfo.
 
-        会话虚拟ip
+        会话虚拟ip。
 
         :return: The virtual_ip of this UserConnectionInfo.
         :rtype: str
@@ -694,7 +694,7 @@ class UserConnectionInfo:
     def virtual_ip(self, virtual_ip):
         """Sets the virtual_ip of this UserConnectionInfo.
 
-        会话虚拟ip
+        会话虚拟ip。
 
         :param virtual_ip: The virtual_ip of this UserConnectionInfo.
         :type virtual_ip: str

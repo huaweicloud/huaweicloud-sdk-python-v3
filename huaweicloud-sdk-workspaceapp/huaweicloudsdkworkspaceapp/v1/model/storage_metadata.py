@@ -37,15 +37,15 @@ class StorageMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param storage_handle: SFS文件系统名称
+        :param storage_handle: SFS文件系统名称。
         :type storage_handle: str
-        :param storage_class: 存储类型 * &#x60;sfs&#x60; - sfs3.0存储
+        :param storage_class: 存储类型： * &#x60;sfs&#x60; - sfs3.0存储。
         :type storage_class: str
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param region: 所在区域
+        :param region: 所在区域。
         :type region: str
-        :param export_location: 访问地址:protocol://[bucket-name].sfs3.[region-name].myhuaweicloud.com:port
+        :param export_location: 访问地址:protocol://[bucket-name].sfs3.[region-name].myhuaweicloud.com:port。
         :type export_location: str
         """
         
@@ -71,7 +71,7 @@ class StorageMetadata:
     def storage_handle(self):
         """Gets the storage_handle of this StorageMetadata.
 
-        SFS文件系统名称
+        SFS文件系统名称。
 
         :return: The storage_handle of this StorageMetadata.
         :rtype: str
@@ -82,7 +82,7 @@ class StorageMetadata:
     def storage_handle(self, storage_handle):
         """Sets the storage_handle of this StorageMetadata.
 
-        SFS文件系统名称
+        SFS文件系统名称。
 
         :param storage_handle: The storage_handle of this StorageMetadata.
         :type storage_handle: str
@@ -93,7 +93,7 @@ class StorageMetadata:
     def storage_class(self):
         """Gets the storage_class of this StorageMetadata.
 
-        存储类型 * `sfs` - sfs3.0存储
+        存储类型： * `sfs` - sfs3.0存储。
 
         :return: The storage_class of this StorageMetadata.
         :rtype: str
@@ -104,7 +104,7 @@ class StorageMetadata:
     def storage_class(self, storage_class):
         """Sets the storage_class of this StorageMetadata.
 
-        存储类型 * `sfs` - sfs3.0存储
+        存储类型： * `sfs` - sfs3.0存储。
 
         :param storage_class: The storage_class of this StorageMetadata.
         :type storage_class: str
@@ -115,7 +115,7 @@ class StorageMetadata:
     def name(self):
         """Gets the name of this StorageMetadata.
 
-        名称
+        名称。
 
         :return: The name of this StorageMetadata.
         :rtype: str
@@ -126,7 +126,7 @@ class StorageMetadata:
     def name(self, name):
         """Sets the name of this StorageMetadata.
 
-        名称
+        名称。
 
         :param name: The name of this StorageMetadata.
         :type name: str
@@ -137,7 +137,7 @@ class StorageMetadata:
     def region(self):
         """Gets the region of this StorageMetadata.
 
-        所在区域
+        所在区域。
 
         :return: The region of this StorageMetadata.
         :rtype: str
@@ -148,7 +148,7 @@ class StorageMetadata:
     def region(self, region):
         """Sets the region of this StorageMetadata.
 
-        所在区域
+        所在区域。
 
         :param region: The region of this StorageMetadata.
         :type region: str
@@ -159,7 +159,7 @@ class StorageMetadata:
     def export_location(self):
         """Gets the export_location of this StorageMetadata.
 
-        访问地址:protocol://[bucket-name].sfs3.[region-name].myhuaweicloud.com:port
+        访问地址:protocol://[bucket-name].sfs3.[region-name].myhuaweicloud.com:port。
 
         :return: The export_location of this StorageMetadata.
         :rtype: str
@@ -170,7 +170,7 @@ class StorageMetadata:
     def export_location(self, export_location):
         """Sets the export_location of this StorageMetadata.
 
-        访问地址:protocol://[bucket-name].sfs3.[region-name].myhuaweicloud.com:port
+        访问地址:protocol://[bucket-name].sfs3.[region-name].myhuaweicloud.com:port。
 
         :param export_location: The export_location of this StorageMetadata.
         :type export_location: str

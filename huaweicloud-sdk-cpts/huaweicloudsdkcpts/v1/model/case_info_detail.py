@@ -59,23 +59,23 @@ class CaseInfoDetail:
 
         The model defined in huaweicloud sdk
 
-        :param case_id: case_id
+        :param case_id: 用例id
         :type case_id: int
         :param name: 用例名称
         :type name: str
-        :param case_type: case_type
+        :param case_type: 用例类型（0：常规用例；）
         :type case_type: int
-        :param contents: contents
+        :param contents: 用例脚本信息
         :type contents: list[:class:`huaweicloudsdkcpts.v1.Contents`]
-        :param for_loop_params: for_loop_params
+        :param for_loop_params: 旧版本逻辑控制器字段，当前已未使用
         :type for_loop_params: list[object]
-        :param increase_setting: increase_setting
+        :param increase_setting: 梯度递增
         :type increase_setting: list[object]
-        :param stages: stages
+        :param stages: 阶段信息
         :type stages: list[:class:`huaweicloudsdkcpts.v1.TestCaseStage`]
         :param status: 状态，0：已删除；1：启用；2：禁用
         :type status: int
-        :param temp_id: temp_id
+        :param temp_id: 用例id
         :type temp_id: int
         :param sort: 排序字段
         :type sort: int
@@ -150,7 +150,7 @@ class CaseInfoDetail:
     def case_id(self):
         """Gets the case_id of this CaseInfoDetail.
 
-        case_id
+        用例id
 
         :return: The case_id of this CaseInfoDetail.
         :rtype: int
@@ -161,7 +161,7 @@ class CaseInfoDetail:
     def case_id(self, case_id):
         """Sets the case_id of this CaseInfoDetail.
 
-        case_id
+        用例id
 
         :param case_id: The case_id of this CaseInfoDetail.
         :type case_id: int
@@ -194,7 +194,7 @@ class CaseInfoDetail:
     def case_type(self):
         """Gets the case_type of this CaseInfoDetail.
 
-        case_type
+        用例类型（0：常规用例；）
 
         :return: The case_type of this CaseInfoDetail.
         :rtype: int
@@ -205,7 +205,7 @@ class CaseInfoDetail:
     def case_type(self, case_type):
         """Sets the case_type of this CaseInfoDetail.
 
-        case_type
+        用例类型（0：常规用例；）
 
         :param case_type: The case_type of this CaseInfoDetail.
         :type case_type: int
@@ -216,7 +216,7 @@ class CaseInfoDetail:
     def contents(self):
         """Gets the contents of this CaseInfoDetail.
 
-        contents
+        用例脚本信息
 
         :return: The contents of this CaseInfoDetail.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.Contents`]
@@ -227,7 +227,7 @@ class CaseInfoDetail:
     def contents(self, contents):
         """Sets the contents of this CaseInfoDetail.
 
-        contents
+        用例脚本信息
 
         :param contents: The contents of this CaseInfoDetail.
         :type contents: list[:class:`huaweicloudsdkcpts.v1.Contents`]
@@ -238,7 +238,7 @@ class CaseInfoDetail:
     def for_loop_params(self):
         """Gets the for_loop_params of this CaseInfoDetail.
 
-        for_loop_params
+        旧版本逻辑控制器字段，当前已未使用
 
         :return: The for_loop_params of this CaseInfoDetail.
         :rtype: list[object]
@@ -249,7 +249,7 @@ class CaseInfoDetail:
     def for_loop_params(self, for_loop_params):
         """Sets the for_loop_params of this CaseInfoDetail.
 
-        for_loop_params
+        旧版本逻辑控制器字段，当前已未使用
 
         :param for_loop_params: The for_loop_params of this CaseInfoDetail.
         :type for_loop_params: list[object]
@@ -260,7 +260,7 @@ class CaseInfoDetail:
     def increase_setting(self):
         """Gets the increase_setting of this CaseInfoDetail.
 
-        increase_setting
+        梯度递增
 
         :return: The increase_setting of this CaseInfoDetail.
         :rtype: list[object]
@@ -271,7 +271,7 @@ class CaseInfoDetail:
     def increase_setting(self, increase_setting):
         """Sets the increase_setting of this CaseInfoDetail.
 
-        increase_setting
+        梯度递增
 
         :param increase_setting: The increase_setting of this CaseInfoDetail.
         :type increase_setting: list[object]
@@ -282,7 +282,7 @@ class CaseInfoDetail:
     def stages(self):
         """Gets the stages of this CaseInfoDetail.
 
-        stages
+        阶段信息
 
         :return: The stages of this CaseInfoDetail.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.TestCaseStage`]
@@ -293,7 +293,7 @@ class CaseInfoDetail:
     def stages(self, stages):
         """Sets the stages of this CaseInfoDetail.
 
-        stages
+        阶段信息
 
         :param stages: The stages of this CaseInfoDetail.
         :type stages: list[:class:`huaweicloudsdkcpts.v1.TestCaseStage`]
@@ -326,7 +326,7 @@ class CaseInfoDetail:
     def temp_id(self):
         """Gets the temp_id of this CaseInfoDetail.
 
-        temp_id
+        用例id
 
         :return: The temp_id of this CaseInfoDetail.
         :rtype: int
@@ -337,7 +337,7 @@ class CaseInfoDetail:
     def temp_id(self, temp_id):
         """Sets the temp_id of this CaseInfoDetail.
 
-        temp_id
+        用例id
 
         :param temp_id: The temp_id of this CaseInfoDetail.
         :type temp_id: int

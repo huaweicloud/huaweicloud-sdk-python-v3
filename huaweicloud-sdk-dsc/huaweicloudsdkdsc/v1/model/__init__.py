@@ -49,6 +49,8 @@ from huaweicloudsdkdsc.v1.model.delete_rule_group_request import DeleteRuleGroup
 from huaweicloudsdkdsc.v1.model.delete_rule_group_response import DeleteRuleGroupResponse
 from huaweicloudsdkdsc.v1.model.delete_rule_request import DeleteRuleRequest
 from huaweicloudsdkdsc.v1.model.delete_rule_response import DeleteRuleResponse
+from huaweicloudsdkdsc.v1.model.delete_scan_job_request import DeleteScanJobRequest
+from huaweicloudsdkdsc.v1.model.delete_scan_job_response import DeleteScanJobResponse
 from huaweicloudsdkdsc.v1.model.dynamic_data_mask import DynamicDataMask
 from huaweicloudsdkdsc.v1.model.embedded_database_watermark import EmbeddedDatabaseWatermark
 from huaweicloudsdkdsc.v1.model.es_match_info import EsMatchInfo

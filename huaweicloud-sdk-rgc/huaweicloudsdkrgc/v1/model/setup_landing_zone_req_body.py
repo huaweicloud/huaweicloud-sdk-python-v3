@@ -46,15 +46,15 @@ class SetupLandingZoneReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param identity_store_email: 管理员账号创建Identity Center用户所用邮箱。
+        :param identity_store_email: 管理员纳管账号创建Identity Center用户所用邮箱。
         :type identity_store_email: str
         :param home_region: 主区域。
         :type home_region: str
         :param setup_landing_zone_action_type: 设置Landing Zone的类型。包括CREATE、REPAIR以及UPDATE。
         :type setup_landing_zone_action_type: str
-        :param region_configuration_list: 当前账号纳管的区域。
+        :param region_configuration_list: 当前纳管账号纳管的区域。
         :type region_configuration_list: list[:class:`huaweicloudsdkrgc.v1.RegionConfigurationList`]
-        :param organization_structure: 基础环境的账号体系。
+        :param organization_structure: 基础环境的纳管账号体系。
         :type organization_structure: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLine`]
         :param deny_ungoverned_regions: 是否允许区域拒绝，默认false。
         :type deny_ungoverned_regions: bool
@@ -96,7 +96,7 @@ class SetupLandingZoneReqBody:
     def identity_store_email(self):
         """Gets the identity_store_email of this SetupLandingZoneReqBody.
 
-        管理员账号创建Identity Center用户所用邮箱。
+        管理员纳管账号创建Identity Center用户所用邮箱。
 
         :return: The identity_store_email of this SetupLandingZoneReqBody.
         :rtype: str
@@ -107,7 +107,7 @@ class SetupLandingZoneReqBody:
     def identity_store_email(self, identity_store_email):
         """Sets the identity_store_email of this SetupLandingZoneReqBody.
 
-        管理员账号创建Identity Center用户所用邮箱。
+        管理员纳管账号创建Identity Center用户所用邮箱。
 
         :param identity_store_email: The identity_store_email of this SetupLandingZoneReqBody.
         :type identity_store_email: str
@@ -162,7 +162,7 @@ class SetupLandingZoneReqBody:
     def region_configuration_list(self):
         """Gets the region_configuration_list of this SetupLandingZoneReqBody.
 
-        当前账号纳管的区域。
+        当前纳管账号纳管的区域。
 
         :return: The region_configuration_list of this SetupLandingZoneReqBody.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.RegionConfigurationList`]
@@ -173,7 +173,7 @@ class SetupLandingZoneReqBody:
     def region_configuration_list(self, region_configuration_list):
         """Sets the region_configuration_list of this SetupLandingZoneReqBody.
 
-        当前账号纳管的区域。
+        当前纳管账号纳管的区域。
 
         :param region_configuration_list: The region_configuration_list of this SetupLandingZoneReqBody.
         :type region_configuration_list: list[:class:`huaweicloudsdkrgc.v1.RegionConfigurationList`]
@@ -184,7 +184,7 @@ class SetupLandingZoneReqBody:
     def organization_structure(self):
         """Gets the organization_structure of this SetupLandingZoneReqBody.
 
-        基础环境的账号体系。
+        基础环境的纳管账号体系。
 
         :return: The organization_structure of this SetupLandingZoneReqBody.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLine`]
@@ -195,7 +195,7 @@ class SetupLandingZoneReqBody:
     def organization_structure(self, organization_structure):
         """Sets the organization_structure of this SetupLandingZoneReqBody.
 
-        基础环境的账号体系。
+        基础环境的纳管账号体系。
 
         :param organization_structure: The organization_structure of this SetupLandingZoneReqBody.
         :type organization_structure: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLine`]

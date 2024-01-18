@@ -51,19 +51,19 @@ class Authorization:
 
         The model defined in huaweicloud sdk
 
-        :param id: 授权ID
+        :param id: 授权ID。
         :type id: str
-        :param account_id: 用户ID(或用户组ID)
+        :param account_id: 用户ID(或用户组ID)。
         :type account_id: str
-        :param account: 用户名(或用户组名)
+        :param account: 用户名(或用户组名)。
         :type account: str
-        :param app_id: 应用ID (按照组授权时,该字段为空)
+        :param app_id: 应用ID (按照组授权时,该字段为空)。
         :type app_id: str
-        :param app_name: 应用名称 (按照组授权时,该字段为空)
+        :param app_name: 应用名称 (按照组授权时,该字段为空)。
         :type app_name: str
-        :param app_group_id: 应用组ID
+        :param app_group_id: 应用组ID。
         :type app_group_id: str
-        :param app_group_name: 应用组名称
+        :param app_group_name: 应用组名称。
         :type app_group_name: str
         :param authorization_type: 
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -71,9 +71,9 @@ class Authorization:
         :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
         :param platform_type: 
         :type platform_type: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
-        :param domain: 域名城
+        :param domain: 域名城。
         :type domain: str
-        :param create_at: 发布时间
+        :param create_at: 发布时间。
         :type create_at: datetime
         """
         
@@ -122,7 +122,7 @@ class Authorization:
     def id(self):
         """Gets the id of this Authorization.
 
-        授权ID
+        授权ID。
 
         :return: The id of this Authorization.
         :rtype: str
@@ -133,7 +133,7 @@ class Authorization:
     def id(self, id):
         """Sets the id of this Authorization.
 
-        授权ID
+        授权ID。
 
         :param id: The id of this Authorization.
         :type id: str
@@ -144,7 +144,7 @@ class Authorization:
     def account_id(self):
         """Gets the account_id of this Authorization.
 
-        用户ID(或用户组ID)
+        用户ID(或用户组ID)。
 
         :return: The account_id of this Authorization.
         :rtype: str
@@ -155,7 +155,7 @@ class Authorization:
     def account_id(self, account_id):
         """Sets the account_id of this Authorization.
 
-        用户ID(或用户组ID)
+        用户ID(或用户组ID)。
 
         :param account_id: The account_id of this Authorization.
         :type account_id: str
@@ -166,7 +166,7 @@ class Authorization:
     def account(self):
         """Gets the account of this Authorization.
 
-        用户名(或用户组名)
+        用户名(或用户组名)。
 
         :return: The account of this Authorization.
         :rtype: str
@@ -177,7 +177,7 @@ class Authorization:
     def account(self, account):
         """Sets the account of this Authorization.
 
-        用户名(或用户组名)
+        用户名(或用户组名)。
 
         :param account: The account of this Authorization.
         :type account: str
@@ -188,7 +188,7 @@ class Authorization:
     def app_id(self):
         """Gets the app_id of this Authorization.
 
-        应用ID (按照组授权时,该字段为空)
+        应用ID (按照组授权时,该字段为空)。
 
         :return: The app_id of this Authorization.
         :rtype: str
@@ -199,7 +199,7 @@ class Authorization:
     def app_id(self, app_id):
         """Sets the app_id of this Authorization.
 
-        应用ID (按照组授权时,该字段为空)
+        应用ID (按照组授权时,该字段为空)。
 
         :param app_id: The app_id of this Authorization.
         :type app_id: str
@@ -210,7 +210,7 @@ class Authorization:
     def app_name(self):
         """Gets the app_name of this Authorization.
 
-        应用名称 (按照组授权时,该字段为空)
+        应用名称 (按照组授权时,该字段为空)。
 
         :return: The app_name of this Authorization.
         :rtype: str
@@ -221,7 +221,7 @@ class Authorization:
     def app_name(self, app_name):
         """Sets the app_name of this Authorization.
 
-        应用名称 (按照组授权时,该字段为空)
+        应用名称 (按照组授权时,该字段为空)。
 
         :param app_name: The app_name of this Authorization.
         :type app_name: str
@@ -232,7 +232,7 @@ class Authorization:
     def app_group_id(self):
         """Gets the app_group_id of this Authorization.
 
-        应用组ID
+        应用组ID。
 
         :return: The app_group_id of this Authorization.
         :rtype: str
@@ -243,7 +243,7 @@ class Authorization:
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this Authorization.
 
-        应用组ID
+        应用组ID。
 
         :param app_group_id: The app_group_id of this Authorization.
         :type app_group_id: str
@@ -254,7 +254,7 @@ class Authorization:
     def app_group_name(self):
         """Gets the app_group_name of this Authorization.
 
-        应用组名称
+        应用组名称。
 
         :return: The app_group_name of this Authorization.
         :rtype: str
@@ -265,7 +265,7 @@ class Authorization:
     def app_group_name(self, app_group_name):
         """Sets the app_group_name of this Authorization.
 
-        应用组名称
+        应用组名称。
 
         :param app_group_name: The app_group_name of this Authorization.
         :type app_group_name: str
@@ -330,7 +330,7 @@ class Authorization:
     def domain(self):
         """Gets the domain of this Authorization.
 
-        域名城
+        域名城。
 
         :return: The domain of this Authorization.
         :rtype: str
@@ -341,7 +341,7 @@ class Authorization:
     def domain(self, domain):
         """Sets the domain of this Authorization.
 
-        域名城
+        域名城。
 
         :param domain: The domain of this Authorization.
         :type domain: str
@@ -352,7 +352,7 @@ class Authorization:
     def create_at(self):
         """Gets the create_at of this Authorization.
 
-        发布时间
+        发布时间。
 
         :return: The create_at of this Authorization.
         :rtype: datetime
@@ -363,7 +363,7 @@ class Authorization:
     def create_at(self, create_at):
         """Sets the create_at of this Authorization.
 
-        发布时间
+        发布时间。
 
         :param create_at: The create_at of this Authorization.
         :type create_at: datetime

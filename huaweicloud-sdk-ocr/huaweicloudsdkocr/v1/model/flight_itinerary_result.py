@@ -34,6 +34,13 @@ class FlightItineraryResult:
         'agent_code': 'str',
         'issue_organization': 'str',
         'issue_date': 'str',
+        'tax': 'str',
+        'tax_rate': 'str',
+        'buyer_name': 'str',
+        'buyer_id': 'str',
+        'number': 'str',
+        'international_flag': 'str',
+        'issue_status': 'str',
         'itinerary_list': 'list[ItineraryList]',
         'confidence': 'object'
     }
@@ -56,11 +63,18 @@ class FlightItineraryResult:
         'agent_code': 'agent_code',
         'issue_organization': 'issue_organization',
         'issue_date': 'issue_date',
+        'tax': 'tax',
+        'tax_rate': 'tax_rate',
+        'buyer_name': 'buyer_name',
+        'buyer_id': 'buyer_id',
+        'number': 'number',
+        'international_flag': 'international_flag',
+        'issue_status': 'issue_status',
         'itinerary_list': 'itinerary_list',
         'confidence': 'confidence'
     }
 
-    def __init__(self, serial_number=None, passenger_name=None, id_number=None, endorsements_restrictions=None, order_number=None, fare=None, caac_development_fund=None, fuel_surcharge=None, other_taxes=None, total=None, e_ticket_number=None, check_code=None, reference_information=None, insurance=None, agent_code=None, issue_organization=None, issue_date=None, itinerary_list=None, confidence=None):
+    def __init__(self, serial_number=None, passenger_name=None, id_number=None, endorsements_restrictions=None, order_number=None, fare=None, caac_development_fund=None, fuel_surcharge=None, other_taxes=None, total=None, e_ticket_number=None, check_code=None, reference_information=None, insurance=None, agent_code=None, issue_organization=None, issue_date=None, tax=None, tax_rate=None, buyer_name=None, buyer_id=None, number=None, international_flag=None, issue_status=None, itinerary_list=None, confidence=None):
         """FlightItineraryResult
 
         The model defined in huaweicloud sdk
@@ -99,6 +113,20 @@ class FlightItineraryResult:
         :type issue_organization: str
         :param issue_date: 填开日期。 
         :type issue_date: str
+        :param tax: 增值税税额 
+        :type tax: str
+        :param tax_rate: 增值税税率 
+        :type tax_rate: str
+        :param buyer_name: 购买方名称 
+        :type buyer_name: str
+        :param buyer_id: 购买方纳税人识别号 
+        :type buyer_id: str
+        :param number: 发票号码 
+        :type number: str
+        :param international_flag: 国内国际标签 
+        :type international_flag: str
+        :param issue_status: 开具状态 
+        :type issue_status: str
         :param itinerary_list: 机票行程列表。 
         :type itinerary_list: list[:class:`huaweicloudsdkocr.v1.ItineraryList`]
         :param confidence: 相关字段的置信度信息，取值范围0~1。  置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。  &gt; 说明：  - （1）置信度中的相关字段均与返回值中的相关字段一一对应；  - （2）置信度中的itinerary_list的顺序与返回值中的itinerary_list的顺序是一致的。 
@@ -124,6 +152,13 @@ class FlightItineraryResult:
         self._agent_code = None
         self._issue_organization = None
         self._issue_date = None
+        self._tax = None
+        self._tax_rate = None
+        self._buyer_name = None
+        self._buyer_id = None
+        self._number = None
+        self._international_flag = None
+        self._issue_status = None
         self._itinerary_list = None
         self._confidence = None
         self.discriminator = None
@@ -162,6 +197,20 @@ class FlightItineraryResult:
             self.issue_organization = issue_organization
         if issue_date is not None:
             self.issue_date = issue_date
+        if tax is not None:
+            self.tax = tax
+        if tax_rate is not None:
+            self.tax_rate = tax_rate
+        if buyer_name is not None:
+            self.buyer_name = buyer_name
+        if buyer_id is not None:
+            self.buyer_id = buyer_id
+        if number is not None:
+            self.number = number
+        if international_flag is not None:
+            self.international_flag = international_flag
+        if issue_status is not None:
+            self.issue_status = issue_status
         if itinerary_list is not None:
             self.itinerary_list = itinerary_list
         if confidence is not None:
@@ -540,6 +589,160 @@ class FlightItineraryResult:
         :type issue_date: str
         """
         self._issue_date = issue_date
+
+    @property
+    def tax(self):
+        """Gets the tax of this FlightItineraryResult.
+
+        增值税税额 
+
+        :return: The tax of this FlightItineraryResult.
+        :rtype: str
+        """
+        return self._tax
+
+    @tax.setter
+    def tax(self, tax):
+        """Sets the tax of this FlightItineraryResult.
+
+        增值税税额 
+
+        :param tax: The tax of this FlightItineraryResult.
+        :type tax: str
+        """
+        self._tax = tax
+
+    @property
+    def tax_rate(self):
+        """Gets the tax_rate of this FlightItineraryResult.
+
+        增值税税率 
+
+        :return: The tax_rate of this FlightItineraryResult.
+        :rtype: str
+        """
+        return self._tax_rate
+
+    @tax_rate.setter
+    def tax_rate(self, tax_rate):
+        """Sets the tax_rate of this FlightItineraryResult.
+
+        增值税税率 
+
+        :param tax_rate: The tax_rate of this FlightItineraryResult.
+        :type tax_rate: str
+        """
+        self._tax_rate = tax_rate
+
+    @property
+    def buyer_name(self):
+        """Gets the buyer_name of this FlightItineraryResult.
+
+        购买方名称 
+
+        :return: The buyer_name of this FlightItineraryResult.
+        :rtype: str
+        """
+        return self._buyer_name
+
+    @buyer_name.setter
+    def buyer_name(self, buyer_name):
+        """Sets the buyer_name of this FlightItineraryResult.
+
+        购买方名称 
+
+        :param buyer_name: The buyer_name of this FlightItineraryResult.
+        :type buyer_name: str
+        """
+        self._buyer_name = buyer_name
+
+    @property
+    def buyer_id(self):
+        """Gets the buyer_id of this FlightItineraryResult.
+
+        购买方纳税人识别号 
+
+        :return: The buyer_id of this FlightItineraryResult.
+        :rtype: str
+        """
+        return self._buyer_id
+
+    @buyer_id.setter
+    def buyer_id(self, buyer_id):
+        """Sets the buyer_id of this FlightItineraryResult.
+
+        购买方纳税人识别号 
+
+        :param buyer_id: The buyer_id of this FlightItineraryResult.
+        :type buyer_id: str
+        """
+        self._buyer_id = buyer_id
+
+    @property
+    def number(self):
+        """Gets the number of this FlightItineraryResult.
+
+        发票号码 
+
+        :return: The number of this FlightItineraryResult.
+        :rtype: str
+        """
+        return self._number
+
+    @number.setter
+    def number(self, number):
+        """Sets the number of this FlightItineraryResult.
+
+        发票号码 
+
+        :param number: The number of this FlightItineraryResult.
+        :type number: str
+        """
+        self._number = number
+
+    @property
+    def international_flag(self):
+        """Gets the international_flag of this FlightItineraryResult.
+
+        国内国际标签 
+
+        :return: The international_flag of this FlightItineraryResult.
+        :rtype: str
+        """
+        return self._international_flag
+
+    @international_flag.setter
+    def international_flag(self, international_flag):
+        """Sets the international_flag of this FlightItineraryResult.
+
+        国内国际标签 
+
+        :param international_flag: The international_flag of this FlightItineraryResult.
+        :type international_flag: str
+        """
+        self._international_flag = international_flag
+
+    @property
+    def issue_status(self):
+        """Gets the issue_status of this FlightItineraryResult.
+
+        开具状态 
+
+        :return: The issue_status of this FlightItineraryResult.
+        :rtype: str
+        """
+        return self._issue_status
+
+    @issue_status.setter
+    def issue_status(self, issue_status):
+        """Sets the issue_status of this FlightItineraryResult.
+
+        开具状态 
+
+        :param issue_status: The issue_status of this FlightItineraryResult.
+        :type issue_status: str
+        """
+        self._issue_status = issue_status
 
     @property
     def itinerary_list(self):

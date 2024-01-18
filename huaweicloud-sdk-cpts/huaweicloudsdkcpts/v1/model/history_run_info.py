@@ -43,19 +43,19 @@ class HistoryRunInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: name
+        :param name: 名称
         :type name: str
-        :param run_id: run_id
+        :param run_id: 报告id
         :type run_id: float
-        :param run_type: run_type
+        :param run_type: 任务类型（0：旧版本任务；1：融合版本任务）
         :type run_type: float
-        :param start_time: start_time
+        :param start_time: 开始时间
         :type start_time: str
         :param end_time: 结束时间
         :type end_time: str
-        :param continue_time: continue_time
+        :param continue_time: 继续时间
         :type continue_time: float
-        :param temp_names: temp_names
+        :param temp_names: 用例或者事务名称
         :type temp_names: list[:class:`huaweicloudsdkcpts.v1.TempName`]
         :param parallel: 任务间用例是否并行执行
         :type parallel: bool
@@ -94,7 +94,7 @@ class HistoryRunInfo:
     def name(self):
         """Gets the name of this HistoryRunInfo.
 
-        name
+        名称
 
         :return: The name of this HistoryRunInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class HistoryRunInfo:
     def name(self, name):
         """Sets the name of this HistoryRunInfo.
 
-        name
+        名称
 
         :param name: The name of this HistoryRunInfo.
         :type name: str
@@ -116,7 +116,7 @@ class HistoryRunInfo:
     def run_id(self):
         """Gets the run_id of this HistoryRunInfo.
 
-        run_id
+        报告id
 
         :return: The run_id of this HistoryRunInfo.
         :rtype: float
@@ -127,7 +127,7 @@ class HistoryRunInfo:
     def run_id(self, run_id):
         """Sets the run_id of this HistoryRunInfo.
 
-        run_id
+        报告id
 
         :param run_id: The run_id of this HistoryRunInfo.
         :type run_id: float
@@ -138,7 +138,7 @@ class HistoryRunInfo:
     def run_type(self):
         """Gets the run_type of this HistoryRunInfo.
 
-        run_type
+        任务类型（0：旧版本任务；1：融合版本任务）
 
         :return: The run_type of this HistoryRunInfo.
         :rtype: float
@@ -149,7 +149,7 @@ class HistoryRunInfo:
     def run_type(self, run_type):
         """Sets the run_type of this HistoryRunInfo.
 
-        run_type
+        任务类型（0：旧版本任务；1：融合版本任务）
 
         :param run_type: The run_type of this HistoryRunInfo.
         :type run_type: float
@@ -160,7 +160,7 @@ class HistoryRunInfo:
     def start_time(self):
         """Gets the start_time of this HistoryRunInfo.
 
-        start_time
+        开始时间
 
         :return: The start_time of this HistoryRunInfo.
         :rtype: str
@@ -171,7 +171,7 @@ class HistoryRunInfo:
     def start_time(self, start_time):
         """Sets the start_time of this HistoryRunInfo.
 
-        start_time
+        开始时间
 
         :param start_time: The start_time of this HistoryRunInfo.
         :type start_time: str
@@ -204,7 +204,7 @@ class HistoryRunInfo:
     def continue_time(self):
         """Gets the continue_time of this HistoryRunInfo.
 
-        continue_time
+        继续时间
 
         :return: The continue_time of this HistoryRunInfo.
         :rtype: float
@@ -215,7 +215,7 @@ class HistoryRunInfo:
     def continue_time(self, continue_time):
         """Sets the continue_time of this HistoryRunInfo.
 
-        continue_time
+        继续时间
 
         :param continue_time: The continue_time of this HistoryRunInfo.
         :type continue_time: float
@@ -226,7 +226,7 @@ class HistoryRunInfo:
     def temp_names(self):
         """Gets the temp_names of this HistoryRunInfo.
 
-        temp_names
+        用例或者事务名称
 
         :return: The temp_names of this HistoryRunInfo.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.TempName`]
@@ -237,7 +237,7 @@ class HistoryRunInfo:
     def temp_names(self, temp_names):
         """Sets the temp_names of this HistoryRunInfo.
 
-        temp_names
+        用例或者事务名称
 
         :param temp_names: The temp_names of this HistoryRunInfo.
         :type temp_names: list[:class:`huaweicloudsdkcpts.v1.TempName`]

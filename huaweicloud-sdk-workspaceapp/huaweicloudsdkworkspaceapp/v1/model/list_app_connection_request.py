@@ -33,9 +33,9 @@ class ListAppConnectionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
         :param body: Body of the ListAppConnectionRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ListAppConnectionReq`
@@ -59,7 +59,7 @@ class ListAppConnectionRequest:
     def limit(self):
         """Gets the limit of this ListAppConnectionRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListAppConnectionRequest.
         :rtype: int
@@ -70,7 +70,7 @@ class ListAppConnectionRequest:
     def limit(self, limit):
         """Sets the limit of this ListAppConnectionRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListAppConnectionRequest.
         :type limit: int
@@ -81,7 +81,7 @@ class ListAppConnectionRequest:
     def offset(self):
         """Gets the offset of this ListAppConnectionRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListAppConnectionRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class ListAppConnectionRequest:
     def offset(self, offset):
         """Sets the offset of this ListAppConnectionRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListAppConnectionRequest.
         :type offset: int

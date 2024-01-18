@@ -69,19 +69,19 @@ class Control:
         :type framework: list[str]
         :param service: 控制策略所属服务。
         :type service: str
-        :param implementation: 业务控制策略（SCP），配置规则。
+        :param implementation: 服务控制策略（SCP），配置规则。
         :type implementation: str
         :param behavior: 控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
         :type behavior: str
-        :param owner: 账号的创建来源，包括CUSTOM和RGC。
+        :param owner: 纳管账号的创建来源，包括CUSTOM和RGC。
         :type owner: str
-        :param severity: 严重性(High)。
+        :param severity: 控制策略严重性。
         :type severity: str
         :param control_objective: 控制策略目标。
         :type control_objective: str
-        :param version: 版本。
+        :param version: 控制策略版本。
         :type version: str
-        :param release_date: 发布时间。
+        :param release_date: 控制策略发布时间。
         :type release_date: datetime
         """
         
@@ -290,7 +290,7 @@ class Control:
     def implementation(self):
         """Gets the implementation of this Control.
 
-        业务控制策略（SCP），配置规则。
+        服务控制策略（SCP），配置规则。
 
         :return: The implementation of this Control.
         :rtype: str
@@ -301,7 +301,7 @@ class Control:
     def implementation(self, implementation):
         """Sets the implementation of this Control.
 
-        业务控制策略（SCP），配置规则。
+        服务控制策略（SCP），配置规则。
 
         :param implementation: The implementation of this Control.
         :type implementation: str
@@ -334,7 +334,7 @@ class Control:
     def owner(self):
         """Gets the owner of this Control.
 
-        账号的创建来源，包括CUSTOM和RGC。
+        纳管账号的创建来源，包括CUSTOM和RGC。
 
         :return: The owner of this Control.
         :rtype: str
@@ -345,7 +345,7 @@ class Control:
     def owner(self, owner):
         """Sets the owner of this Control.
 
-        账号的创建来源，包括CUSTOM和RGC。
+        纳管账号的创建来源，包括CUSTOM和RGC。
 
         :param owner: The owner of this Control.
         :type owner: str
@@ -356,7 +356,7 @@ class Control:
     def severity(self):
         """Gets the severity of this Control.
 
-        严重性(High)。
+        控制策略严重性。
 
         :return: The severity of this Control.
         :rtype: str
@@ -367,7 +367,7 @@ class Control:
     def severity(self, severity):
         """Sets the severity of this Control.
 
-        严重性(High)。
+        控制策略严重性。
 
         :param severity: The severity of this Control.
         :type severity: str
@@ -400,7 +400,7 @@ class Control:
     def version(self):
         """Gets the version of this Control.
 
-        版本。
+        控制策略版本。
 
         :return: The version of this Control.
         :rtype: str
@@ -411,7 +411,7 @@ class Control:
     def version(self, version):
         """Sets the version of this Control.
 
-        版本。
+        控制策略版本。
 
         :param version: The version of this Control.
         :type version: str
@@ -422,7 +422,7 @@ class Control:
     def release_date(self):
         """Gets the release_date of this Control.
 
-        发布时间。
+        控制策略发布时间。
 
         :return: The release_date of this Control.
         :rtype: datetime
@@ -433,7 +433,7 @@ class Control:
     def release_date(self, release_date):
         """Sets the release_date of this Control.
 
-        发布时间。
+        控制策略发布时间。
 
         :param release_date: The release_date of this Control.
         :type release_date: datetime

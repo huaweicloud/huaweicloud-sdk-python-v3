@@ -39,17 +39,17 @@ class ListPublishedAppRequest:
 
         The model defined in huaweicloud sdk
 
-        :param app_group_id: 应用组ID
+        :param app_group_id: 应用组ID。
         :type app_group_id: str
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param name: 应用名称
+        :param name: 应用名称。
         :type name: str
-        :param state: 应用状态正常、禁用(NORMAL、FORBIDDEN)
+        :param state: 应用状态： * &#x60;NORMAL&#x60; - 正常状态。 * &#x60;FORBIDDEN&#x60; - 禁用状态。
         :type state: str
-        :param app_id: 应用ID
+        :param app_id: 应用ID。
         :type app_id: str
         """
         
@@ -79,7 +79,7 @@ class ListPublishedAppRequest:
     def app_group_id(self):
         """Gets the app_group_id of this ListPublishedAppRequest.
 
-        应用组ID
+        应用组ID。
 
         :return: The app_group_id of this ListPublishedAppRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ListPublishedAppRequest:
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this ListPublishedAppRequest.
 
-        应用组ID
+        应用组ID。
 
         :param app_group_id: The app_group_id of this ListPublishedAppRequest.
         :type app_group_id: str
@@ -101,7 +101,7 @@ class ListPublishedAppRequest:
     def limit(self):
         """Gets the limit of this ListPublishedAppRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListPublishedAppRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ListPublishedAppRequest:
     def limit(self, limit):
         """Sets the limit of this ListPublishedAppRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListPublishedAppRequest.
         :type limit: int
@@ -123,7 +123,7 @@ class ListPublishedAppRequest:
     def offset(self):
         """Gets the offset of this ListPublishedAppRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListPublishedAppRequest.
         :rtype: int
@@ -134,7 +134,7 @@ class ListPublishedAppRequest:
     def offset(self, offset):
         """Sets the offset of this ListPublishedAppRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListPublishedAppRequest.
         :type offset: int
@@ -145,7 +145,7 @@ class ListPublishedAppRequest:
     def name(self):
         """Gets the name of this ListPublishedAppRequest.
 
-        应用名称
+        应用名称。
 
         :return: The name of this ListPublishedAppRequest.
         :rtype: str
@@ -156,7 +156,7 @@ class ListPublishedAppRequest:
     def name(self, name):
         """Sets the name of this ListPublishedAppRequest.
 
-        应用名称
+        应用名称。
 
         :param name: The name of this ListPublishedAppRequest.
         :type name: str
@@ -167,7 +167,7 @@ class ListPublishedAppRequest:
     def state(self):
         """Gets the state of this ListPublishedAppRequest.
 
-        应用状态正常、禁用(NORMAL、FORBIDDEN)
+        应用状态： * `NORMAL` - 正常状态。 * `FORBIDDEN` - 禁用状态。
 
         :return: The state of this ListPublishedAppRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListPublishedAppRequest:
     def state(self, state):
         """Sets the state of this ListPublishedAppRequest.
 
-        应用状态正常、禁用(NORMAL、FORBIDDEN)
+        应用状态： * `NORMAL` - 正常状态。 * `FORBIDDEN` - 禁用状态。
 
         :param state: The state of this ListPublishedAppRequest.
         :type state: str
@@ -189,7 +189,7 @@ class ListPublishedAppRequest:
     def app_id(self):
         """Gets the app_id of this ListPublishedAppRequest.
 
-        应用ID
+        应用ID。
 
         :return: The app_id of this ListPublishedAppRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListPublishedAppRequest:
     def app_id(self, app_id):
         """Sets the app_id of this ListPublishedAppRequest.
 
-        应用ID
+        应用ID。
 
         :param app_id: The app_id of this ListPublishedAppRequest.
         :type app_id: str

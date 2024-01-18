@@ -29,7 +29,7 @@ class CustomOptions:
 
         The model defined in huaweicloud sdk
 
-        :param custom_configuration1_rule: 配置项1内容
+        :param custom_configuration1_rule: 配置项1内容。
         :type custom_configuration1_rule: str
         """
         
@@ -45,7 +45,7 @@ class CustomOptions:
     def custom_configuration1_rule(self):
         """Gets the custom_configuration1_rule of this CustomOptions.
 
-        配置项1内容
+        配置项1内容。
 
         :return: The custom_configuration1_rule of this CustomOptions.
         :rtype: str
@@ -56,7 +56,7 @@ class CustomOptions:
     def custom_configuration1_rule(self, custom_configuration1_rule):
         """Sets the custom_configuration1_rule of this CustomOptions.
 
-        配置项1内容
+        配置项1内容。
 
         :param custom_configuration1_rule: The custom_configuration1_rule of this CustomOptions.
         :type custom_configuration1_rule: str

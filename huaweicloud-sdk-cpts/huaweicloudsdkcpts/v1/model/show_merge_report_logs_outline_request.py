@@ -29,7 +29,7 @@ class ShowMergeReportLogsOutlineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param task_run_id: 任务运行id（报告id）
+        :param task_run_id: 运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
         :type task_run_id: int
         """
         
@@ -44,7 +44,7 @@ class ShowMergeReportLogsOutlineRequest:
     def task_run_id(self):
         """Gets the task_run_id of this ShowMergeReportLogsOutlineRequest.
 
-        任务运行id（报告id）
+        运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
         :return: The task_run_id of this ShowMergeReportLogsOutlineRequest.
         :rtype: int
@@ -55,7 +55,7 @@ class ShowMergeReportLogsOutlineRequest:
     def task_run_id(self, task_run_id):
         """Sets the task_run_id of this ShowMergeReportLogsOutlineRequest.
 
-        任务运行id（报告id）
+        运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
         :param task_run_id: The task_run_id of this ShowMergeReportLogsOutlineRequest.
         :type task_run_id: int

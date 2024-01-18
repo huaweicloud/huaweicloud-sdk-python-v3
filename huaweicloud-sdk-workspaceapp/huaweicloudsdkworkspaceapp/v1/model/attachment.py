@@ -31,7 +31,7 @@ class Attachment:
 
         The model defined in huaweicloud sdk
 
-        :param attach: 目标
+        :param attach: 目标。
         :type attach: str
         :param attach_type: 
         :type attach_type: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`
@@ -50,7 +50,7 @@ class Attachment:
     def attach(self):
         """Gets the attach of this Attachment.
 
-        目标
+        目标。
 
         :return: The attach of this Attachment.
         :rtype: str
@@ -61,7 +61,7 @@ class Attachment:
     def attach(self, attach):
         """Sets the attach of this Attachment.
 
-        目标
+        目标。
 
         :param attach: The attach of this Attachment.
         :type attach: str

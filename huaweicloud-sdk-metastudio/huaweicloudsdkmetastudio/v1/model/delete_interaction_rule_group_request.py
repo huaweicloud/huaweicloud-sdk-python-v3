@@ -33,7 +33,7 @@ class DeleteInteractionRuleGroupRequest:
 
         :param group_id: 互动规则库ID。
         :type group_id: str
-        :param x_app_user_id: 第三方用户ID。 &gt; *不允许输入中文。
+        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
         :type x_app_user_id: str
         """
         
@@ -73,7 +73,7 @@ class DeleteInteractionRuleGroupRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this DeleteInteractionRuleGroupRequest.
 
-        第三方用户ID。 > *不允许输入中文。
+        第三方用户ID。 > * 不允许输入中文。
 
         :return: The x_app_user_id of this DeleteInteractionRuleGroupRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class DeleteInteractionRuleGroupRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this DeleteInteractionRuleGroupRequest.
 
-        第三方用户ID。 > *不允许输入中文。
+        第三方用户ID。 > * 不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this DeleteInteractionRuleGroupRequest.
         :type x_app_user_id: str

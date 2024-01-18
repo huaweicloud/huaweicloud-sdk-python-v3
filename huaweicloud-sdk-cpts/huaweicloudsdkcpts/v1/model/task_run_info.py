@@ -31,9 +31,9 @@ class TaskRunInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 任务id
         :type id: int
-        :param run_type: run_type
+        :param run_type: 任务类型（0：旧版本任务；1：新版本任务）
         :type run_type: int
         """
         
@@ -52,7 +52,7 @@ class TaskRunInfo:
     def id(self):
         """Gets the id of this TaskRunInfo.
 
-        id
+        任务id
 
         :return: The id of this TaskRunInfo.
         :rtype: int
@@ -63,7 +63,7 @@ class TaskRunInfo:
     def id(self, id):
         """Sets the id of this TaskRunInfo.
 
-        id
+        任务id
 
         :param id: The id of this TaskRunInfo.
         :type id: int
@@ -74,7 +74,7 @@ class TaskRunInfo:
     def run_type(self):
         """Gets the run_type of this TaskRunInfo.
 
-        run_type
+        任务类型（0：旧版本任务；1：新版本任务）
 
         :return: The run_type of this TaskRunInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class TaskRunInfo:
     def run_type(self, run_type):
         """Sets the run_type of this TaskRunInfo.
 
-        run_type
+        任务类型（0：旧版本任务；1：新版本任务）
 
         :param run_type: The run_type of this TaskRunInfo.
         :type run_type: int

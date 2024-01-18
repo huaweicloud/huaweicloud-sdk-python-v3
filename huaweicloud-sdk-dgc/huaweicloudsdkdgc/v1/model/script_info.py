@@ -24,8 +24,9 @@ class ScriptInfo:
         'connection_name': 'str',
         'database': 'str',
         'queue_name': 'str',
-        'configuration': 'str',
+        'configuration': 'dict(str, object)',
         'description': 'str',
+        'owner': 'str',
         'target_status': 'str',
         'approvers': 'list[JobApprover]'
     }
@@ -40,11 +41,12 @@ class ScriptInfo:
         'queue_name': 'queueName',
         'configuration': 'configuration',
         'description': 'description',
+        'owner': 'owner',
         'target_status': 'targetStatus',
         'approvers': 'approvers'
     }
 
-    def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, target_status=None, approvers=None):
+    def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, target_status=None, approvers=None):
         """ScriptInfo
 
         The model defined in huaweicloud sdk
@@ -64,9 +66,11 @@ class ScriptInfo:
         :param queue_name: 脚本关联的DLI队列名称
         :type queue_name: str
         :param configuration: 脚本的配置项参数
-        :type configuration: str
+        :type configuration: dict(str, object)
         :param description: 脚本描述，长度不能超过255个字符
         :type description: str
+        :param owner: 责任人名称
+        :type owner: str
         :param target_status: 在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态。
         :type target_status: str
         :param approvers: 在开启审批开关后，需要填写该字段，表示脚本审批人
@@ -84,6 +88,7 @@ class ScriptInfo:
         self._queue_name = None
         self._configuration = None
         self._description = None
+        self._owner = None
         self._target_status = None
         self._approvers = None
         self.discriminator = None
@@ -106,6 +111,8 @@ class ScriptInfo:
             self.configuration = configuration
         if description is not None:
             self.description = description
+        if owner is not None:
+            self.owner = owner
         if target_status is not None:
             self.target_status = target_status
         if approvers is not None:
@@ -268,7 +275,7 @@ class ScriptInfo:
         脚本的配置项参数
 
         :return: The configuration of this ScriptInfo.
-        :rtype: str
+        :rtype: dict(str, object)
         """
         return self._configuration
 
@@ -279,7 +286,7 @@ class ScriptInfo:
         脚本的配置项参数
 
         :param configuration: The configuration of this ScriptInfo.
-        :type configuration: str
+        :type configuration: dict(str, object)
         """
         self._configuration = configuration
 
@@ -304,6 +311,28 @@ class ScriptInfo:
         :type description: str
         """
         self._description = description
+
+    @property
+    def owner(self):
+        """Gets the owner of this ScriptInfo.
+
+        责任人名称
+
+        :return: The owner of this ScriptInfo.
+        :rtype: str
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        """Sets the owner of this ScriptInfo.
+
+        责任人名称
+
+        :param owner: The owner of this ScriptInfo.
+        :type owner: str
+        """
+        self._owner = owner
 
     @property
     def target_status(self):

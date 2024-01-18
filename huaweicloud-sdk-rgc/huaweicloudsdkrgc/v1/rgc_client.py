@@ -54,7 +54,7 @@ class RgcClient(Client):
     def _disable_control_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/governance/control/disable",
+            "resource_path": "/v1/governance/controls/disable",
             "request_type": request.__class__.__name__,
             "response_type": "DisableControlResponse"
             }
@@ -70,8 +70,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -121,7 +119,7 @@ class RgcClient(Client):
     def _enable_control_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/governance/control/enable",
+            "resource_path": "/v1/governance/controls/enable",
             "request_type": request.__class__.__name__,
             "response_type": "EnableControlResponse"
             }
@@ -137,8 +135,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -167,9 +163,9 @@ class RgcClient(Client):
         return http_info
 
     def list_config_rule_compliance(self, request):
-        """查询账号的合规性状态
+        """查询纳管账号的Config规则合规性信息
 
-        查询组织里某个账号下开启的所有控制策略的详细信息。
+        查询纳管账号的Config规则合规性信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -188,7 +184,7 @@ class RgcClient(Client):
     def _list_config_rule_compliance_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/governance/account/{account_id}/config-rule-compliances",
+            "resource_path": "/v1/governance/managed-accounts/{managed_account_id}/config-rule-compliances",
             "request_type": request.__class__.__name__,
             "response_type": "ListConfigRuleComplianceResponse"
             }
@@ -200,14 +196,12 @@ class RgcClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'account_id' in local_var_params:
-            path_params['account_id'] = local_var_params['account_id']
+        if 'managed_account_id' in local_var_params:
+            path_params['managed_account_id'] = local_var_params['managed_account_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -234,9 +228,9 @@ class RgcClient(Client):
         return http_info
 
     def list_control_violations(self, request):
-        """查询不合规信息
+        """列出不合规信息
 
-        查询组织里所有不合规的资源信息。
+        列出组织里所有不合规的资源信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -275,8 +269,6 @@ class RgcClient(Client):
             query_params.append(('organization_unit_id', local_var_params['organization_unit_id']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -303,9 +295,9 @@ class RgcClient(Client):
         return http_info
 
     def list_controls(self, request):
-        """查询控制策略
+        """列出控制策略
 
-        查询RGC服务里所有的预置控制策略。
+        列出RGC服务里所有的预置控制策略。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -344,8 +336,6 @@ class RgcClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -372,9 +362,9 @@ class RgcClient(Client):
         return http_info
 
     def list_controls_for_account(self, request):
-        """查询账号下开启的控制策略
+        """列出纳管账号下开启的控制策略
 
-        查询组织里某个账号开启的所有控制策略信息。
+        列出组织里某个纳管账号开启的所有控制策略信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -393,7 +383,7 @@ class RgcClient(Client):
     def _list_controls_for_account_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/governance/managed-account/{managed_account_id}/controls",
+            "resource_path": "/v1/governance/managed-accounts/{managed_account_id}/controls",
             "request_type": request.__class__.__name__,
             "response_type": "ListControlsForAccountResponse"
             }
@@ -415,8 +405,6 @@ class RgcClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -443,9 +431,9 @@ class RgcClient(Client):
         return http_info
 
     def list_controls_for_organization_unit(self, request):
-        """查询OU下开启的控制策略
+        """列出注册OU下开启的控制策略
 
-        查询组织里某个OU开启的所有控制策略信息。
+        列出组织里某个注册OU开启的所有控制策略信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -464,7 +452,7 @@ class RgcClient(Client):
     def _list_controls_for_organization_unit_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/governance/managed-organization-unit/{managed_organization_unit_id}/controls",
+            "resource_path": "/v1/governance/managed-organization-units/{managed_organization_unit_id}/controls",
             "request_type": request.__class__.__name__,
             "response_type": "ListControlsForOrganizationUnitResponse"
             }
@@ -486,8 +474,6 @@ class RgcClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -514,9 +500,9 @@ class RgcClient(Client):
         return http_info
 
     def list_drift_details(self, request):
-        """查询漂移信息
+        """列出漂移信息
 
-        查询Landing Zone的所有漂移详细信息。
+        列出Landing Zone的所有漂移详细信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -551,8 +537,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -579,9 +563,9 @@ class RgcClient(Client):
         return http_info
 
     def list_enabled_controls(self, request):
-        """查询开启的控制策略
+        """列出开启的控制策略
 
-        查询组织里开启的所有控制策略信息。
+        列出组织里开启的所有控制策略信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -620,8 +604,6 @@ class RgcClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -648,9 +630,9 @@ class RgcClient(Client):
         return http_info
 
     def show_compliance_status_for_account(self, request):
-        """查询账号的合规状态
+        """查询纳管账号的合规状态
 
-        查询组织里某个账号的资源合规状态。
+        查询组织里某个纳管账号的资源合规状态。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -669,7 +651,7 @@ class RgcClient(Client):
     def _show_compliance_status_for_account_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/governance/managed-account/{managed_account_id}/compliance-status",
+            "resource_path": "/v1/governance/managed-accounts/{managed_account_id}/compliance-status",
             "request_type": request.__class__.__name__,
             "response_type": "ShowComplianceStatusForAccountResponse"
             }
@@ -685,10 +667,10 @@ class RgcClient(Client):
             path_params['managed_account_id'] = local_var_params['managed_account_id']
 
         query_params = []
+        if 'control_id' in local_var_params:
+            query_params.append(('control_id', local_var_params['control_id']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -715,9 +697,9 @@ class RgcClient(Client):
         return http_info
 
     def show_compliance_status_for_organization_unit(self, request):
-        """查询OU的合规状态
+        """查询注册OU的合规状态
 
-        查询组织里某个OU下所有账号的资源合规状态。
+        查询组织里某个注册OU下所有纳管账号的资源合规状态。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -736,7 +718,7 @@ class RgcClient(Client):
     def _show_compliance_status_for_organization_unit_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/governance/managed-organization-unit/{managed_organization_unit_id}/compliance-status",
+            "resource_path": "/v1/governance/managed-organization-units/{managed_organization_unit_id}/compliance-status",
             "request_type": request.__class__.__name__,
             "response_type": "ShowComplianceStatusForOrganizationUnitResponse"
             }
@@ -752,10 +734,10 @@ class RgcClient(Client):
             path_params['managed_organization_unit_id'] = local_var_params['managed_organization_unit_id']
 
         query_params = []
+        if 'control_id' in local_var_params:
+            query_params.append(('control_id', local_var_params['control_id']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -821,8 +803,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -870,7 +850,7 @@ class RgcClient(Client):
     def _show_control_operate_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/governance/operated-controls/{control_operate_request_id}",
+            "resource_path": "/v1/governance/operation-control-status/{operation_control_status_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowControlOperateResponse"
             }
@@ -882,14 +862,12 @@ class RgcClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'control_operate_request_id' in local_var_params:
-            path_params['control_operate_request_id'] = local_var_params['control_operate_request_id']
+        if 'operation_control_status_id' in local_var_params:
+            path_params['operation_control_status_id'] = local_var_params['operation_control_status_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -916,9 +894,9 @@ class RgcClient(Client):
         return http_info
 
     def show_controls_for_organization_unit(self, request):
-        """查询OU开启的控制策略
+        """查询注册OU开启的控制策略
 
-        查询组织里某个OU下开启的某个控制策略的详细信息。
+        查询组织里某个注册OU下开启的某个控制策略的详细信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -937,7 +915,7 @@ class RgcClient(Client):
     def _show_controls_for_organization_unit_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/governance/managed-organization-unit/{managed_organization_unit_id}/controls/{control_id}",
+            "resource_path": "/v1/governance/managed-organization-units/{managed_organization_unit_id}/controls/{control_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowControlsForOrganizationUnitResponse"
             }
@@ -957,8 +935,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1022,8 +998,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1087,8 +1061,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1117,9 +1089,9 @@ class RgcClient(Client):
         return http_info
 
     def show_available_updates(self, request):
-        """获取Landing Zone可更新状态
+        """查询Landing Zone可更新状态
 
-        获取Landing Zone当前是否需要升级更新。
+        查询Landing Zone当前是否需要升级更新。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1154,8 +1126,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1219,8 +1189,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1247,9 +1215,9 @@ class RgcClient(Client):
         return http_info
 
     def show_landing_zone_configuration(self, request):
-        """获取Landing Zone的配置
+        """查询Landing Zone的配置
 
-        获取当前客户的Landing Zone的所有配置。
+        查询当前客户的Landing Zone的所有配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1284,8 +1252,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1312,9 +1278,9 @@ class RgcClient(Client):
         return http_info
 
     def show_landing_zone_identity_center(self, request):
-        """获取当前客户的Identity Center用户信息
+        """查询当前客户的Identity Center用户信息
 
-        获取当前客户的Identity Center用户信息。
+        查询当前客户的Identity Center用户信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1349,8 +1315,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1414,8 +1378,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1444,7 +1406,7 @@ class RgcClient(Client):
     def create_account(self, request):
         """创建账号
 
-        在组织里的某个OU下创建账号。
+        在组织里的某个注册OU下创建账号。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1479,8 +1441,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1509,9 +1469,9 @@ class RgcClient(Client):
         return http_info
 
     def delete_managed_organizational_units(self, request):
-        """删除注册的OU
+        """删除注册OU
 
-        在组织里删除已注册的OU。
+        在组织里删除已注册OU。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1530,7 +1490,7 @@ class RgcClient(Client):
     def _delete_managed_organizational_units_http_info(cls, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/managed-organization/managed-organization-unit/{managed_organization_unit_id}",
+            "resource_path": "/v1/managed-organization/managed-organization-units/{managed_organization_unit_id}",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteManagedOrganizationalUnitsResponse"
             }
@@ -1548,8 +1508,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1576,7 +1534,7 @@ class RgcClient(Client):
         return http_info
 
     def deregister_organizational_unit(self, request):
-        """去注册OU
+        """取消注册OU
 
         将组织里的某个OU从RGC服务里取消注册。
         
@@ -1597,7 +1555,7 @@ class RgcClient(Client):
     def _deregister_organizational_unit_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/managed-organization/managed-organization-unit/{managed_organization_unit_id}/de-register",
+            "resource_path": "/v1/managed-organization/managed-organization-units/{managed_organization_unit_id}/de-register",
             "request_type": request.__class__.__name__,
             "response_type": "DeregisterOrganizationalUnitResponse"
             }
@@ -1615,8 +1573,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1642,10 +1598,77 @@ class RgcClient(Client):
 
         return http_info
 
-    def list_managed_accounts(self, request):
-        """查询注册的账号信息
+    def enroll_account(self, request):
+        """纳管账号
 
-        查询组织里所有注册的账号信息。
+        将组织里的某个账号纳管到RGC服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for EnrollAccount
+        :type request: :class:`huaweicloudsdkrgc.v1.EnrollAccountRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.EnrollAccountResponse`
+        """
+        http_info = self._enroll_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def enroll_account_invoker(self, request):
+        http_info = self._enroll_account_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enroll_account_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/managed-organization/accounts/{managed_account_id}/enroll",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnrollAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'managed_account_id' in local_var_params:
+            path_params['managed_account_id'] = local_var_params['managed_account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_managed_accounts(self, request):
+        """列举控制策略生效的纳管账号信息
+
+        列举控制策略生效的纳管账号信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1686,8 +1709,6 @@ class RgcClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1714,9 +1735,9 @@ class RgcClient(Client):
         return http_info
 
     def list_managed_accounts_for_parent(self, request):
-        """查询纳管OU下的账号信息
+        """列出注册OU下的纳管账号信息
 
-        查询组织里某个注册OU下的所有账号信息。
+        列出组织里某个注册OU下的所有纳管账号信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1735,7 +1756,7 @@ class RgcClient(Client):
     def _list_managed_accounts_for_parent_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/managed-organization/managed-organization-unit/{managed_organization_unit_id}/managed-accounts",
+            "resource_path": "/v1/managed-organization/managed-organization-units/{managed_organization_unit_id}/managed-accounts",
             "request_type": request.__class__.__name__,
             "response_type": "ListManagedAccountsForParentResponse"
             }
@@ -1757,8 +1778,6 @@ class RgcClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1785,9 +1804,9 @@ class RgcClient(Client):
         return http_info
 
     def list_managed_organizational_units(self, request):
-        """查询纳管的OU信息
+        """列举控制策略生效的注册OU信息
 
-        查询组织里所有通过RGC服务注册的OU信息。
+        列举控制策略生效的注册OU信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1828,8 +1847,71 @@ class RgcClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def re_register_organizational_unit(self, request):
+        """重新注册OU
+
+        重新注册组织里的某个OU到RGC服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ReRegisterOrganizationalUnit
+        :type request: :class:`huaweicloudsdkrgc.v1.ReRegisterOrganizationalUnitRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.ReRegisterOrganizationalUnitResponse`
+        """
+        http_info = self._re_register_organizational_unit_http_info(request)
+        return self._call_api(**http_info)
+
+    def re_register_organizational_unit_invoker(self, request):
+        http_info = self._re_register_organizational_unit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _re_register_organizational_unit_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/managed-organization/organization-units/{organization_unit_id}/re-register",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReRegisterOrganizationalUnitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_unit_id' in local_var_params:
+            path_params['organization_unit_id'] = local_var_params['organization_unit_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -1877,7 +1959,7 @@ class RgcClient(Client):
     def _register_organizational_unit_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/managed-organization/organization-unit/{organization_unit_id}/register",
+            "resource_path": "/v1/managed-organization/organization-units/{organization_unit_id}/register",
             "request_type": request.__class__.__name__,
             "response_type": "RegisterOrganizationalUnitResponse"
             }
@@ -1895,8 +1977,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1923,9 +2003,9 @@ class RgcClient(Client):
         return http_info
 
     def show_managed_account(self, request):
-        """查询注册的账号信息
+        """查询纳管账号信息
 
-        查询组织里某个注册的账号信息。
+        查询组织里某个纳管账号信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1944,7 +2024,7 @@ class RgcClient(Client):
     def _show_managed_account_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/managed-organization/managed-account/{managed_account_id}",
+            "resource_path": "/v1/managed-organization/managed-accounts/{managed_account_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowManagedAccountResponse"
             }
@@ -1962,8 +2042,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -1990,9 +2068,9 @@ class RgcClient(Client):
         return http_info
 
     def show_managed_core_account(self, request):
-        """查询核心账号
+        """列出核心纳管账号
 
-        查询组织里的所有核心账号信息。
+        列出组织里的所有核心纳管账号信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2011,7 +2089,7 @@ class RgcClient(Client):
     def _show_managed_core_account_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/managed-organization/managed-core-account",
+            "resource_path": "/v1/managed-organization/managed-core-accounts",
             "request_type": request.__class__.__name__,
             "response_type": "ShowManagedCoreAccountResponse"
             }
@@ -2029,8 +2107,6 @@ class RgcClient(Client):
             query_params.append(('account_type', local_var_params['account_type']))
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2057,9 +2133,9 @@ class RgcClient(Client):
         return http_info
 
     def show_managed_organizational_unit(self, request):
-        """查询纳管的OU信息
+        """查询已注册OU信息
 
-        查询在RGC服务里注册的OU信息。
+        查询在RGC服务里的注册OU信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2078,7 +2154,7 @@ class RgcClient(Client):
     def _show_managed_organizational_unit_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/managed-organization/managed-organization-unit/{managed_organization_unit_id}",
+            "resource_path": "/v1/managed-organization/managed-organization-units/{managed_organization_unit_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowManagedOrganizationalUnitResponse"
             }
@@ -2096,8 +2172,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 
@@ -2163,8 +2237,71 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def un_enroll_account(self, request):
+        """取消纳管账号
+
+        将组织里的某个账号从RGC服务里取消纳管。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UnEnrollAccount
+        :type request: :class:`huaweicloudsdkrgc.v1.UnEnrollAccountRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.UnEnrollAccountResponse`
+        """
+        http_info = self._un_enroll_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def un_enroll_account_invoker(self, request):
+        http_info = self._un_enroll_account_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _un_enroll_account_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/managed-organization/managed-accounts/{managed_account_id}/un-enroll",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnEnrollAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'managed_account_id' in local_var_params:
+            path_params['managed_account_id'] = local_var_params['managed_account_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -2191,9 +2328,9 @@ class RgcClient(Client):
         return http_info
 
     def update_managed_account(self, request):
-        """更新注册的账号
+        """更新纳管账号
 
-        更新组织里某个已在RGC服务注册的账号。
+        更新组织里某个已在RGC服务的纳管账号。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2212,7 +2349,7 @@ class RgcClient(Client):
     def _update_managed_account_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/managed-organization/managed-account/{managed_account_id}/update",
+            "resource_path": "/v1/managed-organization/managed-accounts/{managed_account_id}/update",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateManagedAccountResponse"
             }
@@ -2230,8 +2367,6 @@ class RgcClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_security_token' in local_var_params:
-            header_params['X-Security-Token'] = local_var_params['x_security_token']
 
         form_params = {}
 

@@ -69,7 +69,7 @@ class ContentInfo:
 
         The model defined in huaweicloud sdk
 
-        :param body_type: body_type
+        :param body_type: body类型（0：字符串；1：form-data格式；3：x-www-form-urlencoded格式）
         :type body_type: int
         :param bodys: bodys
         :type bodys: list[object]
@@ -79,25 +79,25 @@ class ContentInfo:
         :type check_end_str: object
         :param check_end_type: TCP/UDP协议返回结束类型，1：返回数据长度；2：结束符
         :type check_end_type: object
-        :param connect_timeout: connect_timeout
+        :param connect_timeout: 超时时间
         :type connect_timeout: int
-        :param connect_type: connect_type
+        :param connect_type: 连接设置，当前版本已未使用
         :type connect_type: int
-        :param headers: headers
+        :param headers: 请求头
         :type headers: list[:class:`huaweicloudsdkcpts.v1.ContentHeader`]
-        :param http_version: http_version
+        :param http_version: HTTP版本
         :type http_version: str
-        :param method: method
+        :param method: HTTP方法
         :type method: str
-        :param name: name
+        :param name: 用例名称
         :type name: str
-        :param protocol_type: protocol_type
+        :param protocol_type: 协议类型（1：HTTP；2：HTTPS；3：TCP；4：UDP；7：HLS/RTMP；9：WebSocket；10：HTTP-FLV）
         :type protocol_type: int
-        :param return_timeout: return_timeout
+        :param return_timeout: 响应超时
         :type return_timeout: int
-        :param return_timeout_param: return_timeout_param
+        :param return_timeout_param: 响应超时参数
         :type return_timeout_param: str
-        :param url: url
+        :param url: 请求地址
         :type url: str
         :param rtmp_url: rtmp地址
         :type rtmp_url: str
@@ -105,7 +105,7 @@ class ContentInfo:
         :type flv_url: str
         :param bitrate_type: 分辨率策略
         :type bitrate_type: int
-        :param duration: duration
+        :param duration: 持续时间
         :type duration: int
         :param retry_delay: HLS重试延迟时间
         :type retry_delay: int
@@ -185,7 +185,7 @@ class ContentInfo:
     def body_type(self):
         """Gets the body_type of this ContentInfo.
 
-        body_type
+        body类型（0：字符串；1：form-data格式；3：x-www-form-urlencoded格式）
 
         :return: The body_type of this ContentInfo.
         :rtype: int
@@ -196,7 +196,7 @@ class ContentInfo:
     def body_type(self, body_type):
         """Sets the body_type of this ContentInfo.
 
-        body_type
+        body类型（0：字符串；1：form-data格式；3：x-www-form-urlencoded格式）
 
         :param body_type: The body_type of this ContentInfo.
         :type body_type: int
@@ -295,7 +295,7 @@ class ContentInfo:
     def connect_timeout(self):
         """Gets the connect_timeout of this ContentInfo.
 
-        connect_timeout
+        超时时间
 
         :return: The connect_timeout of this ContentInfo.
         :rtype: int
@@ -306,7 +306,7 @@ class ContentInfo:
     def connect_timeout(self, connect_timeout):
         """Sets the connect_timeout of this ContentInfo.
 
-        connect_timeout
+        超时时间
 
         :param connect_timeout: The connect_timeout of this ContentInfo.
         :type connect_timeout: int
@@ -317,7 +317,7 @@ class ContentInfo:
     def connect_type(self):
         """Gets the connect_type of this ContentInfo.
 
-        connect_type
+        连接设置，当前版本已未使用
 
         :return: The connect_type of this ContentInfo.
         :rtype: int
@@ -328,7 +328,7 @@ class ContentInfo:
     def connect_type(self, connect_type):
         """Sets the connect_type of this ContentInfo.
 
-        connect_type
+        连接设置，当前版本已未使用
 
         :param connect_type: The connect_type of this ContentInfo.
         :type connect_type: int
@@ -339,7 +339,7 @@ class ContentInfo:
     def headers(self):
         """Gets the headers of this ContentInfo.
 
-        headers
+        请求头
 
         :return: The headers of this ContentInfo.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.ContentHeader`]
@@ -350,7 +350,7 @@ class ContentInfo:
     def headers(self, headers):
         """Sets the headers of this ContentInfo.
 
-        headers
+        请求头
 
         :param headers: The headers of this ContentInfo.
         :type headers: list[:class:`huaweicloudsdkcpts.v1.ContentHeader`]
@@ -361,7 +361,7 @@ class ContentInfo:
     def http_version(self):
         """Gets the http_version of this ContentInfo.
 
-        http_version
+        HTTP版本
 
         :return: The http_version of this ContentInfo.
         :rtype: str
@@ -372,7 +372,7 @@ class ContentInfo:
     def http_version(self, http_version):
         """Sets the http_version of this ContentInfo.
 
-        http_version
+        HTTP版本
 
         :param http_version: The http_version of this ContentInfo.
         :type http_version: str
@@ -383,7 +383,7 @@ class ContentInfo:
     def method(self):
         """Gets the method of this ContentInfo.
 
-        method
+        HTTP方法
 
         :return: The method of this ContentInfo.
         :rtype: str
@@ -394,7 +394,7 @@ class ContentInfo:
     def method(self, method):
         """Sets the method of this ContentInfo.
 
-        method
+        HTTP方法
 
         :param method: The method of this ContentInfo.
         :type method: str
@@ -405,7 +405,7 @@ class ContentInfo:
     def name(self):
         """Gets the name of this ContentInfo.
 
-        name
+        用例名称
 
         :return: The name of this ContentInfo.
         :rtype: str
@@ -416,7 +416,7 @@ class ContentInfo:
     def name(self, name):
         """Sets the name of this ContentInfo.
 
-        name
+        用例名称
 
         :param name: The name of this ContentInfo.
         :type name: str
@@ -427,7 +427,7 @@ class ContentInfo:
     def protocol_type(self):
         """Gets the protocol_type of this ContentInfo.
 
-        protocol_type
+        协议类型（1：HTTP；2：HTTPS；3：TCP；4：UDP；7：HLS/RTMP；9：WebSocket；10：HTTP-FLV）
 
         :return: The protocol_type of this ContentInfo.
         :rtype: int
@@ -438,7 +438,7 @@ class ContentInfo:
     def protocol_type(self, protocol_type):
         """Sets the protocol_type of this ContentInfo.
 
-        protocol_type
+        协议类型（1：HTTP；2：HTTPS；3：TCP；4：UDP；7：HLS/RTMP；9：WebSocket；10：HTTP-FLV）
 
         :param protocol_type: The protocol_type of this ContentInfo.
         :type protocol_type: int
@@ -449,7 +449,7 @@ class ContentInfo:
     def return_timeout(self):
         """Gets the return_timeout of this ContentInfo.
 
-        return_timeout
+        响应超时
 
         :return: The return_timeout of this ContentInfo.
         :rtype: int
@@ -460,7 +460,7 @@ class ContentInfo:
     def return_timeout(self, return_timeout):
         """Sets the return_timeout of this ContentInfo.
 
-        return_timeout
+        响应超时
 
         :param return_timeout: The return_timeout of this ContentInfo.
         :type return_timeout: int
@@ -471,7 +471,7 @@ class ContentInfo:
     def return_timeout_param(self):
         """Gets the return_timeout_param of this ContentInfo.
 
-        return_timeout_param
+        响应超时参数
 
         :return: The return_timeout_param of this ContentInfo.
         :rtype: str
@@ -482,7 +482,7 @@ class ContentInfo:
     def return_timeout_param(self, return_timeout_param):
         """Sets the return_timeout_param of this ContentInfo.
 
-        return_timeout_param
+        响应超时参数
 
         :param return_timeout_param: The return_timeout_param of this ContentInfo.
         :type return_timeout_param: str
@@ -493,7 +493,7 @@ class ContentInfo:
     def url(self):
         """Gets the url of this ContentInfo.
 
-        url
+        请求地址
 
         :return: The url of this ContentInfo.
         :rtype: str
@@ -504,7 +504,7 @@ class ContentInfo:
     def url(self, url):
         """Sets the url of this ContentInfo.
 
-        url
+        请求地址
 
         :param url: The url of this ContentInfo.
         :type url: str
@@ -581,7 +581,7 @@ class ContentInfo:
     def duration(self):
         """Gets the duration of this ContentInfo.
 
-        duration
+        持续时间
 
         :return: The duration of this ContentInfo.
         :rtype: int
@@ -592,7 +592,7 @@ class ContentInfo:
     def duration(self, duration):
         """Sets the duration of this ContentInfo.
 
-        duration
+        持续时间
 
         :param duration: The duration of this ContentInfo.
         :type duration: int

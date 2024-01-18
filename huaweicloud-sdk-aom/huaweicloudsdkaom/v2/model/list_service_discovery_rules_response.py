@@ -42,7 +42,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         :type error_code: str
         :param error_message: 响应信息描述。
         :type error_message: str
-        :param id: 
+        :param id: 服务发现规则id列表，多AZ配置同步时使用。
         :type id: list[str]
         """
         
@@ -133,6 +133,8 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
     def id(self):
         """Gets the id of this ListServiceDiscoveryRulesResponse.
 
+        服务发现规则id列表，多AZ配置同步时使用。
+
         :return: The id of this ListServiceDiscoveryRulesResponse.
         :rtype: list[str]
         """
@@ -141,6 +143,8 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
     @id.setter
     def id(self, id):
         """Sets the id of this ListServiceDiscoveryRulesResponse.
+
+        服务发现规则id列表，多AZ配置同步时使用。
 
         :param id: The id of this ListServiceDiscoveryRulesResponse.
         :type id: list[str]

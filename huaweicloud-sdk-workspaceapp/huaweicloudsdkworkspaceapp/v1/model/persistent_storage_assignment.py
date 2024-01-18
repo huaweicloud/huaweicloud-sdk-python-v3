@@ -41,11 +41,11 @@ class PersistentStorageAssignment:
 
         The model defined in huaweicloud sdk
 
-        :param storage_claim_id: WKS存储目录声明ID
+        :param storage_claim_id: WKS存储目录声明ID。
         :type storage_claim_id: str
-        :param folder_path: 存储对象路径 注: path是对象在系统中的完整路径 例如系统中存在如下目录结构的数据. SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
+        :param folder_path: 存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
         :type folder_path: str
-        :param delimiter: 路径分隔符
+        :param delimiter: 路径分隔符。
         :type delimiter: str
         :param claim_mode: 
         :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
@@ -87,7 +87,7 @@ class PersistentStorageAssignment:
     def storage_claim_id(self):
         """Gets the storage_claim_id of this PersistentStorageAssignment.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :return: The storage_claim_id of this PersistentStorageAssignment.
         :rtype: str
@@ -98,7 +98,7 @@ class PersistentStorageAssignment:
     def storage_claim_id(self, storage_claim_id):
         """Sets the storage_claim_id of this PersistentStorageAssignment.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :param storage_claim_id: The storage_claim_id of this PersistentStorageAssignment.
         :type storage_claim_id: str
@@ -109,7 +109,7 @@ class PersistentStorageAssignment:
     def folder_path(self):
         """Gets the folder_path of this PersistentStorageAssignment.
 
-        存储对象路径 注: path是对象在系统中的完整路径 例如系统中存在如下目录结构的数据. SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
+        存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
         :return: The folder_path of this PersistentStorageAssignment.
         :rtype: str
@@ -120,7 +120,7 @@ class PersistentStorageAssignment:
     def folder_path(self, folder_path):
         """Sets the folder_path of this PersistentStorageAssignment.
 
-        存储对象路径 注: path是对象在系统中的完整路径 例如系统中存在如下目录结构的数据. SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
+        存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
         :param folder_path: The folder_path of this PersistentStorageAssignment.
         :type folder_path: str
@@ -131,7 +131,7 @@ class PersistentStorageAssignment:
     def delimiter(self):
         """Gets the delimiter of this PersistentStorageAssignment.
 
-        路径分隔符
+        路径分隔符。
 
         :return: The delimiter of this PersistentStorageAssignment.
         :rtype: str
@@ -142,7 +142,7 @@ class PersistentStorageAssignment:
     def delimiter(self, delimiter):
         """Sets the delimiter of this PersistentStorageAssignment.
 
-        路径分隔符
+        路径分隔符。
 
         :param delimiter: The delimiter of this PersistentStorageAssignment.
         :type delimiter: str

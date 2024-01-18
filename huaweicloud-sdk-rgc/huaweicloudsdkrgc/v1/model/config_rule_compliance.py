@@ -41,7 +41,7 @@ class ConfigRuleCompliance:
         :type status: str
         :param region: 区域信息。
         :type region: str
-        :param control_id: 控制策略Id。
+        :param control_id: 控制策略ID。
         :type control_id: str
         """
         
@@ -132,7 +132,7 @@ class ConfigRuleCompliance:
     def control_id(self):
         """Gets the control_id of this ConfigRuleCompliance.
 
-        控制策略Id。
+        控制策略ID。
 
         :return: The control_id of this ConfigRuleCompliance.
         :rtype: str
@@ -143,7 +143,7 @@ class ConfigRuleCompliance:
     def control_id(self, control_id):
         """Sets the control_id of this ConfigRuleCompliance.
 
-        控制策略Id。
+        控制策略ID。
 
         :param control_id: The control_id of this ConfigRuleCompliance.
         :type control_id: str

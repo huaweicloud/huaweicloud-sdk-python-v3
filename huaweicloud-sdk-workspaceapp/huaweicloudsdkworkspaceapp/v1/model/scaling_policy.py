@@ -35,11 +35,11 @@ class ScalingPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 是否启用策略,默认启用 &#39;true&#39;: 启用 &#39;false&#39;: 禁用
+        :param enable: 是否启用策略,默认启用： &#39;true&#39;: 启用 &#39;false&#39;: 禁用
         :type enable: bool
-        :param max_scaling_amount: 最大扩容数量
+        :param max_scaling_amount: 最大扩容数量。
         :type max_scaling_amount: int
-        :param single_expansion_count: 单次扩容数量
+        :param single_expansion_count: 单次扩容数量。
         :type single_expansion_count: int
         :param scaling_policy_by_session: 
         :type scaling_policy_by_session: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
@@ -63,7 +63,7 @@ class ScalingPolicy:
     def enable(self):
         """Gets the enable of this ScalingPolicy.
 
-        是否启用策略,默认启用 'true': 启用 'false': 禁用
+        是否启用策略,默认启用： 'true': 启用 'false': 禁用
 
         :return: The enable of this ScalingPolicy.
         :rtype: bool
@@ -74,7 +74,7 @@ class ScalingPolicy:
     def enable(self, enable):
         """Sets the enable of this ScalingPolicy.
 
-        是否启用策略,默认启用 'true': 启用 'false': 禁用
+        是否启用策略,默认启用： 'true': 启用 'false': 禁用
 
         :param enable: The enable of this ScalingPolicy.
         :type enable: bool
@@ -85,7 +85,7 @@ class ScalingPolicy:
     def max_scaling_amount(self):
         """Gets the max_scaling_amount of this ScalingPolicy.
 
-        最大扩容数量
+        最大扩容数量。
 
         :return: The max_scaling_amount of this ScalingPolicy.
         :rtype: int
@@ -96,7 +96,7 @@ class ScalingPolicy:
     def max_scaling_amount(self, max_scaling_amount):
         """Sets the max_scaling_amount of this ScalingPolicy.
 
-        最大扩容数量
+        最大扩容数量。
 
         :param max_scaling_amount: The max_scaling_amount of this ScalingPolicy.
         :type max_scaling_amount: int
@@ -107,7 +107,7 @@ class ScalingPolicy:
     def single_expansion_count(self):
         """Gets the single_expansion_count of this ScalingPolicy.
 
-        单次扩容数量
+        单次扩容数量。
 
         :return: The single_expansion_count of this ScalingPolicy.
         :rtype: int
@@ -118,7 +118,7 @@ class ScalingPolicy:
     def single_expansion_count(self, single_expansion_count):
         """Sets the single_expansion_count of this ScalingPolicy.
 
-        单次扩容数量
+        单次扩容数量。
 
         :param single_expansion_count: The single_expansion_count of this ScalingPolicy.
         :type single_expansion_count: int

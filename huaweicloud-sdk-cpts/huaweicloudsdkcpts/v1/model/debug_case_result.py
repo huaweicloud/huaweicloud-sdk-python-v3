@@ -47,25 +47,25 @@ class DebugCaseResult:
 
         The model defined in huaweicloud sdk
 
-        :param body: body
+        :param body: 响应内容
         :type body: str
-        :param error_reason: errorReason
+        :param error_reason: 错误原因
         :type error_reason: str
         :param header: 
         :type header: :class:`huaweicloudsdkcpts.v1.DebugCaseResultHeader`
-        :param name: name
+        :param name: 请求名称
         :type name: str
-        :param response_time: responseTime
+        :param response_time: 响应时间
         :type response_time: int
-        :param result: result
+        :param result: 调试结果（1：成功；）
         :type result: int
-        :param return_body: returnBody
+        :param return_body: 响应正文
         :type return_body: str
         :param return_header: 
         :type return_header: :class:`huaweicloudsdkcpts.v1.DebugCaseReturnHeader`
-        :param status_code: statusCode
+        :param status_code: 响应状态码
         :type status_code: str
-        :param url: url
+        :param url: 请求地址
         :type url: str
         """
         
@@ -108,7 +108,7 @@ class DebugCaseResult:
     def body(self):
         """Gets the body of this DebugCaseResult.
 
-        body
+        响应内容
 
         :return: The body of this DebugCaseResult.
         :rtype: str
@@ -119,7 +119,7 @@ class DebugCaseResult:
     def body(self, body):
         """Sets the body of this DebugCaseResult.
 
-        body
+        响应内容
 
         :param body: The body of this DebugCaseResult.
         :type body: str
@@ -130,7 +130,7 @@ class DebugCaseResult:
     def error_reason(self):
         """Gets the error_reason of this DebugCaseResult.
 
-        errorReason
+        错误原因
 
         :return: The error_reason of this DebugCaseResult.
         :rtype: str
@@ -141,7 +141,7 @@ class DebugCaseResult:
     def error_reason(self, error_reason):
         """Sets the error_reason of this DebugCaseResult.
 
-        errorReason
+        错误原因
 
         :param error_reason: The error_reason of this DebugCaseResult.
         :type error_reason: str
@@ -170,7 +170,7 @@ class DebugCaseResult:
     def name(self):
         """Gets the name of this DebugCaseResult.
 
-        name
+        请求名称
 
         :return: The name of this DebugCaseResult.
         :rtype: str
@@ -181,7 +181,7 @@ class DebugCaseResult:
     def name(self, name):
         """Sets the name of this DebugCaseResult.
 
-        name
+        请求名称
 
         :param name: The name of this DebugCaseResult.
         :type name: str
@@ -192,7 +192,7 @@ class DebugCaseResult:
     def response_time(self):
         """Gets the response_time of this DebugCaseResult.
 
-        responseTime
+        响应时间
 
         :return: The response_time of this DebugCaseResult.
         :rtype: int
@@ -203,7 +203,7 @@ class DebugCaseResult:
     def response_time(self, response_time):
         """Sets the response_time of this DebugCaseResult.
 
-        responseTime
+        响应时间
 
         :param response_time: The response_time of this DebugCaseResult.
         :type response_time: int
@@ -214,7 +214,7 @@ class DebugCaseResult:
     def result(self):
         """Gets the result of this DebugCaseResult.
 
-        result
+        调试结果（1：成功；）
 
         :return: The result of this DebugCaseResult.
         :rtype: int
@@ -225,7 +225,7 @@ class DebugCaseResult:
     def result(self, result):
         """Sets the result of this DebugCaseResult.
 
-        result
+        调试结果（1：成功；）
 
         :param result: The result of this DebugCaseResult.
         :type result: int
@@ -236,7 +236,7 @@ class DebugCaseResult:
     def return_body(self):
         """Gets the return_body of this DebugCaseResult.
 
-        returnBody
+        响应正文
 
         :return: The return_body of this DebugCaseResult.
         :rtype: str
@@ -247,7 +247,7 @@ class DebugCaseResult:
     def return_body(self, return_body):
         """Sets the return_body of this DebugCaseResult.
 
-        returnBody
+        响应正文
 
         :param return_body: The return_body of this DebugCaseResult.
         :type return_body: str
@@ -276,7 +276,7 @@ class DebugCaseResult:
     def status_code(self):
         """Gets the status_code of this DebugCaseResult.
 
-        statusCode
+        响应状态码
 
         :return: The status_code of this DebugCaseResult.
         :rtype: str
@@ -287,7 +287,7 @@ class DebugCaseResult:
     def status_code(self, status_code):
         """Sets the status_code of this DebugCaseResult.
 
-        statusCode
+        响应状态码
 
         :param status_code: The status_code of this DebugCaseResult.
         :type status_code: str
@@ -298,7 +298,7 @@ class DebugCaseResult:
     def url(self):
         """Gets the url of this DebugCaseResult.
 
-        url
+        请求地址
 
         :return: The url of this DebugCaseResult.
         :rtype: str
@@ -309,7 +309,7 @@ class DebugCaseResult:
     def url(self, url):
         """Sets the url of this DebugCaseResult.
 
-        url
+        请求地址
 
         :param url: The url of this DebugCaseResult.
         :type url: str

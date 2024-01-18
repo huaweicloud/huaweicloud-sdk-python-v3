@@ -100,9 +100,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def create_case_async(self, request):
-        """创建用例
+        """创建用例（旧版）
 
-        创建用例
+        创建用例（旧版）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -232,9 +232,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def create_new_case_async(self, request):
-        """创建用例v2
+        """创建用例
 
-        创建用例v2
+        创建用例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -297,9 +297,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def create_new_task_async(self, request):
-        """创建任务v3
+        """创建任务
 
-        创建任务v3
+        创建任务
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -362,9 +362,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def create_task_async(self, request):
-        """创建任务
+        """创建任务（旧版）
 
-        创建任务
+        创建任务（旧版）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -630,9 +630,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def delete_case_async(self, request):
-        """删除用例
+        """删除用例（旧版）
 
-        删除用例
+        删除用例（旧版）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -762,9 +762,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def delete_new_case_async(self, request):
-        """删除用例v2
+        """删除用例
 
-        删除用例v2
+        删除用例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -827,9 +827,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def delete_new_task_async(self, request):
-        """删除任务v3
+        """删除任务
 
-        删除任务v3
+        删除任务
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -892,9 +892,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def delete_task_async(self, request):
-        """删除任务
+        """删除任务（旧版）
 
-        删除任务
+        删除任务（旧版）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1483,9 +1483,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def show_merge_case_detail_async(self, request):
-        """内外融合单个用例的详情数据
+        """查询用例报告详情
 
-        查询单个用例的详情数据
+        查询用例报告详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1550,9 +1550,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def show_merge_report_logs_outline_async(self, request):
-        """查询报告汇总数据接口
+        """查询报告汇总数据
 
-        查询报告汇总数据接口
+        查询报告汇总数据
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1615,9 +1615,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def show_merge_task_case_async(self, request):
-        """内外融合当前任务用例列表接口
+        """查询任务报告的用例列表
 
-        查询当前任务用例列表接口
+        查询任务报告的用例列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1749,9 +1749,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def show_task_async(self, request):
-        """查询任务
+        """查询任务（旧版）
 
-        查询任务
+        查询任务（旧版）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1814,9 +1814,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def show_task_case_aw_chart_async(self, request):
-        """内外融合获取用例的AW曲线图获取接口
+        """查询用例的AW曲线图
 
-        内外融合获取用例的AW曲线图获取接口
+        查询用例的AW曲线图
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2153,9 +2153,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def update_case_async(self, request):
-        """修改用例
+        """修改用例（旧版）
 
-        修改用例
+        修改用例（旧版）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2291,9 +2291,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def update_new_case_async(self, request):
-        """修改用例v2
+        """修改用例
 
-        修改用例v2
+        修改用例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2358,9 +2358,9 @@ class CptsAsyncClient(Client):
         return http_info
 
     def update_task_async(self, request):
-        """修改任务
+        """修改任务（旧版）
 
-        修改任务
+        修改任务（旧版）
         
         Please refer to HUAWEI cloud API Explorer for details.
 

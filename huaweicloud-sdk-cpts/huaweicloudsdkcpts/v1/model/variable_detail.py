@@ -43,17 +43,17 @@ class VariableDetail:
 
         The model defined in huaweicloud sdk
 
-        :param file_size: file_size
+        :param file_size: 文件大小
         :type file_size: int
-        :param id: id
+        :param id: 变量id
         :type id: int
         :param is_quoted: 是否被引用
         :type is_quoted: bool
-        :param name: name
+        :param name: 变量名称
         :type name: str
-        :param variable: variable
+        :param variable: 变量值
         :type variable: list[object]
-        :param variable_type: variable_type
+        :param variable_type: 变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
         :type variable_type: int
         :param variable_mode: 变量读取模式，0：顺序模式；1：随机模式
         :type variable_mode: int
@@ -94,7 +94,7 @@ class VariableDetail:
     def file_size(self):
         """Gets the file_size of this VariableDetail.
 
-        file_size
+        文件大小
 
         :return: The file_size of this VariableDetail.
         :rtype: int
@@ -105,7 +105,7 @@ class VariableDetail:
     def file_size(self, file_size):
         """Sets the file_size of this VariableDetail.
 
-        file_size
+        文件大小
 
         :param file_size: The file_size of this VariableDetail.
         :type file_size: int
@@ -116,7 +116,7 @@ class VariableDetail:
     def id(self):
         """Gets the id of this VariableDetail.
 
-        id
+        变量id
 
         :return: The id of this VariableDetail.
         :rtype: int
@@ -127,7 +127,7 @@ class VariableDetail:
     def id(self, id):
         """Sets the id of this VariableDetail.
 
-        id
+        变量id
 
         :param id: The id of this VariableDetail.
         :type id: int
@@ -160,7 +160,7 @@ class VariableDetail:
     def name(self):
         """Gets the name of this VariableDetail.
 
-        name
+        变量名称
 
         :return: The name of this VariableDetail.
         :rtype: str
@@ -171,7 +171,7 @@ class VariableDetail:
     def name(self, name):
         """Sets the name of this VariableDetail.
 
-        name
+        变量名称
 
         :param name: The name of this VariableDetail.
         :type name: str
@@ -182,7 +182,7 @@ class VariableDetail:
     def variable(self):
         """Gets the variable of this VariableDetail.
 
-        variable
+        变量值
 
         :return: The variable of this VariableDetail.
         :rtype: list[object]
@@ -193,7 +193,7 @@ class VariableDetail:
     def variable(self, variable):
         """Sets the variable of this VariableDetail.
 
-        variable
+        变量值
 
         :param variable: The variable of this VariableDetail.
         :type variable: list[object]
@@ -204,7 +204,7 @@ class VariableDetail:
     def variable_type(self):
         """Gets the variable_type of this VariableDetail.
 
-        variable_type
+        变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
 
         :return: The variable_type of this VariableDetail.
         :rtype: int
@@ -215,7 +215,7 @@ class VariableDetail:
     def variable_type(self, variable_type):
         """Sets the variable_type of this VariableDetail.
 
-        variable_type
+        变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
 
         :param variable_type: The variable_type of this VariableDetail.
         :type variable_type: int

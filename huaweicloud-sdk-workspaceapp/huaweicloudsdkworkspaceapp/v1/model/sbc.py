@@ -31,7 +31,7 @@ class Sbc:
 
         The model defined in huaweicloud sdk
 
-        :param sbc_automatic_disconnection: 连接策略。 - DISABLED：已禁用 - AUTO_DISCONNECT：自动断开 - AUTO_LOCK：自动锁屏
+        :param sbc_automatic_disconnection: 连接策略： - DISABLED：已禁用 - AUTO_DISCONNECT：自动断开 - AUTO_LOCK：自动锁屏
         :type sbc_automatic_disconnection: str
         :param sbc_automatic_disconnection_options: 
         :type sbc_automatic_disconnection_options: :class:`huaweicloudsdkworkspaceapp.v1.SbcAutomaticDisconnectionOptions`
@@ -52,7 +52,7 @@ class Sbc:
     def sbc_automatic_disconnection(self):
         """Gets the sbc_automatic_disconnection of this Sbc.
 
-        连接策略。 - DISABLED：已禁用 - AUTO_DISCONNECT：自动断开 - AUTO_LOCK：自动锁屏
+        连接策略： - DISABLED：已禁用 - AUTO_DISCONNECT：自动断开 - AUTO_LOCK：自动锁屏
 
         :return: The sbc_automatic_disconnection of this Sbc.
         :rtype: str
@@ -63,7 +63,7 @@ class Sbc:
     def sbc_automatic_disconnection(self, sbc_automatic_disconnection):
         """Sets the sbc_automatic_disconnection of this Sbc.
 
-        连接策略。 - DISABLED：已禁用 - AUTO_DISCONNECT：自动断开 - AUTO_LOCK：自动锁屏
+        连接策略： - DISABLED：已禁用 - AUTO_DISCONNECT：自动断开 - AUTO_LOCK：自动锁屏
 
         :param sbc_automatic_disconnection: The sbc_automatic_disconnection of this Sbc.
         :type sbc_automatic_disconnection: str

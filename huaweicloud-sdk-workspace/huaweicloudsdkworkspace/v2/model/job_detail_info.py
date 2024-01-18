@@ -27,9 +27,7 @@ class JobDetailInfo:
         'fail_reason': 'str',
         'message': 'str',
         'job_id': 'str',
-        'desktop_name': 'str',
-        'ip_address': 'str',
-        'mac_address': 'str'
+        'process': 'int'
     }
 
     attribute_map = {
@@ -43,12 +41,10 @@ class JobDetailInfo:
         'fail_reason': 'fail_reason',
         'message': 'message',
         'job_id': 'job_id',
-        'desktop_name': 'desktop_name',
-        'ip_address': 'ip_address',
-        'mac_address': 'mac_address'
+        'process': 'process'
     }
 
-    def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, message=None, job_id=None, desktop_name=None, ip_address=None, mac_address=None):
+    def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, message=None, job_id=None, process=None):
         """JobDetailInfo
 
         The model defined in huaweicloud sdk
@@ -73,12 +69,8 @@ class JobDetailInfo:
         :type message: str
         :param job_id: 任务ID。
         :type job_id: str
-        :param desktop_name: 桌面名称。
-        :type desktop_name: str
-        :param ip_address: ip地址。
-        :type ip_address: str
-        :param mac_address: mac地址。
-        :type mac_address: str
+        :param process: 任务进度。
+        :type process: int
         """
         
         
@@ -93,9 +85,7 @@ class JobDetailInfo:
         self._fail_reason = None
         self._message = None
         self._job_id = None
-        self._desktop_name = None
-        self._ip_address = None
-        self._mac_address = None
+        self._process = None
         self.discriminator = None
 
         if id is not None:
@@ -118,12 +108,8 @@ class JobDetailInfo:
             self.message = message
         if job_id is not None:
             self.job_id = job_id
-        if desktop_name is not None:
-            self.desktop_name = desktop_name
-        if ip_address is not None:
-            self.ip_address = ip_address
-        if mac_address is not None:
-            self.mac_address = mac_address
+        if process is not None:
+            self.process = process
 
     @property
     def id(self):
@@ -342,70 +328,26 @@ class JobDetailInfo:
         self._job_id = job_id
 
     @property
-    def desktop_name(self):
-        """Gets the desktop_name of this JobDetailInfo.
+    def process(self):
+        """Gets the process of this JobDetailInfo.
 
-        桌面名称。
+        任务进度。
 
-        :return: The desktop_name of this JobDetailInfo.
-        :rtype: str
+        :return: The process of this JobDetailInfo.
+        :rtype: int
         """
-        return self._desktop_name
+        return self._process
 
-    @desktop_name.setter
-    def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this JobDetailInfo.
+    @process.setter
+    def process(self, process):
+        """Sets the process of this JobDetailInfo.
 
-        桌面名称。
+        任务进度。
 
-        :param desktop_name: The desktop_name of this JobDetailInfo.
-        :type desktop_name: str
+        :param process: The process of this JobDetailInfo.
+        :type process: int
         """
-        self._desktop_name = desktop_name
-
-    @property
-    def ip_address(self):
-        """Gets the ip_address of this JobDetailInfo.
-
-        ip地址。
-
-        :return: The ip_address of this JobDetailInfo.
-        :rtype: str
-        """
-        return self._ip_address
-
-    @ip_address.setter
-    def ip_address(self, ip_address):
-        """Sets the ip_address of this JobDetailInfo.
-
-        ip地址。
-
-        :param ip_address: The ip_address of this JobDetailInfo.
-        :type ip_address: str
-        """
-        self._ip_address = ip_address
-
-    @property
-    def mac_address(self):
-        """Gets the mac_address of this JobDetailInfo.
-
-        mac地址。
-
-        :return: The mac_address of this JobDetailInfo.
-        :rtype: str
-        """
-        return self._mac_address
-
-    @mac_address.setter
-    def mac_address(self, mac_address):
-        """Sets the mac_address of this JobDetailInfo.
-
-        mac地址。
-
-        :param mac_address: The mac_address of this JobDetailInfo.
-        :type mac_address: str
-        """
-        self._mac_address = mac_address
+        self._process = process
 
     def to_dict(self):
         """Returns the model properties as a dict"""

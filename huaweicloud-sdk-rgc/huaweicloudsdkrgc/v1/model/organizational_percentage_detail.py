@@ -33,7 +33,7 @@ class OrganizationalPercentageDetail:
 
         :param percentage_name: 进度名称。
         :type percentage_name: str
-        :param percentage_status: 进度完成状态。
+        :param percentage_status: 创建账号、注册OU、纳管账号的进度完成状态。
         :type percentage_status: str
         """
         
@@ -74,7 +74,7 @@ class OrganizationalPercentageDetail:
     def percentage_status(self):
         """Gets the percentage_status of this OrganizationalPercentageDetail.
 
-        进度完成状态。
+        创建账号、注册OU、纳管账号的进度完成状态。
 
         :return: The percentage_status of this OrganizationalPercentageDetail.
         :rtype: str
@@ -85,7 +85,7 @@ class OrganizationalPercentageDetail:
     def percentage_status(self, percentage_status):
         """Sets the percentage_status of this OrganizationalPercentageDetail.
 
-        进度完成状态。
+        创建账号、注册OU、纳管账号的进度完成状态。
 
         :param percentage_status: The percentage_status of this OrganizationalPercentageDetail.
         :type percentage_status: str

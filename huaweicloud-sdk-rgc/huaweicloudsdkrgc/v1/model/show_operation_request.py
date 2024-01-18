@@ -15,38 +15,30 @@ class ShowOperationRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('x_security_token')
 
     openapi_types = {
-        'operation_id': 'str',
-        'x_security_token': 'str'
+        'operation_id': 'str'
     }
 
     attribute_map = {
-        'operation_id': 'operation_id',
-        'x_security_token': 'X-Security-Token'
+        'operation_id': 'operation_id'
     }
 
-    def __init__(self, operation_id=None, x_security_token=None):
+    def __init__(self, operation_id=None):
         """ShowOperationRequest
 
         The model defined in huaweicloud sdk
 
         :param operation_id: 操作ID。
         :type operation_id: str
-        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-        :type x_security_token: str
         """
         
         
 
         self._operation_id = None
-        self._x_security_token = None
         self.discriminator = None
 
         self.operation_id = operation_id
-        if x_security_token is not None:
-            self.x_security_token = x_security_token
 
     @property
     def operation_id(self):
@@ -69,28 +61,6 @@ class ShowOperationRequest:
         :type operation_id: str
         """
         self._operation_id = operation_id
-
-    @property
-    def x_security_token(self):
-        """Gets the x_security_token of this ShowOperationRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :return: The x_security_token of this ShowOperationRequest.
-        :rtype: str
-        """
-        return self._x_security_token
-
-    @x_security_token.setter
-    def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ShowOperationRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :param x_security_token: The x_security_token of this ShowOperationRequest.
-        :type x_security_token: str
-        """
-        self._x_security_token = x_security_token
 
     def to_dict(self):
         """Returns the model properties as a dict"""

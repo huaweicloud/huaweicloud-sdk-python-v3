@@ -32,9 +32,9 @@ class CheckQuotaResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_enough: 配额是否足够true：足够 false：不足
+        :param is_enough: 配额是否足够true：足够 false：不足。
         :type is_enough: bool
-        :param quota_remainder: 配额剩余数量信息
+        :param quota_remainder: 配额剩余数量信息。
         :type quota_remainder: list[:class:`huaweicloudsdkworkspaceapp.v1.QuotaRemainderData`]
         """
         
@@ -53,7 +53,7 @@ class CheckQuotaResponse(SdkResponse):
     def is_enough(self):
         """Gets the is_enough of this CheckQuotaResponse.
 
-        配额是否足够true：足够 false：不足
+        配额是否足够true：足够 false：不足。
 
         :return: The is_enough of this CheckQuotaResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class CheckQuotaResponse(SdkResponse):
     def is_enough(self, is_enough):
         """Sets the is_enough of this CheckQuotaResponse.
 
-        配额是否足够true：足够 false：不足
+        配额是否足够true：足够 false：不足。
 
         :param is_enough: The is_enough of this CheckQuotaResponse.
         :type is_enough: bool
@@ -75,7 +75,7 @@ class CheckQuotaResponse(SdkResponse):
     def quota_remainder(self):
         """Gets the quota_remainder of this CheckQuotaResponse.
 
-        配额剩余数量信息
+        配额剩余数量信息。
 
         :return: The quota_remainder of this CheckQuotaResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.QuotaRemainderData`]
@@ -86,7 +86,7 @@ class CheckQuotaResponse(SdkResponse):
     def quota_remainder(self, quota_remainder):
         """Sets the quota_remainder of this CheckQuotaResponse.
 
-        配额剩余数量信息
+        配额剩余数量信息。
 
         :param quota_remainder: The quota_remainder of this CheckQuotaResponse.
         :type quota_remainder: list[:class:`huaweicloudsdkworkspaceapp.v1.QuotaRemainderData`]

@@ -67,45 +67,45 @@ class AppConnectionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 应用连接唯一标识ID
+        :param id: 应用连接唯一标识ID。
         :type id: str
-        :param sid: 应用服务器sid
+        :param sid: 应用服务器sid。
         :type sid: str
-        :param machine_name: 应用服务器名称
+        :param machine_name: 应用服务器名称。
         :type machine_name: str
-        :param user_name: 登录用户
+        :param user_name: 登录用户。
         :type user_name: str
-        :param app_group_name: 应用组名称
+        :param app_group_name: 应用组名称。
         :type app_group_name: str
-        :param app_group_id: 应用组ID
+        :param app_group_id: 应用组ID。
         :type app_group_id: str
-        :param app_name: 应用名称
+        :param app_name: 应用名称。
         :type app_name: str
-        :param brokering_time: 登录应用时间
+        :param brokering_time: 登录应用时间。
         :type brokering_time: datetime
-        :param failed_code: 连接失败状态码
+        :param failed_code: 连接失败状态码。
         :type failed_code: str
-        :param connection_failure_reason: 连接失败原因
+        :param connection_failure_reason: 连接失败原因。
         :type connection_failure_reason: str
-        :param client_mac: 客户端Mac
+        :param client_mac: 客户端Mac。
         :type client_mac: str
-        :param client_name: 客户端名称
+        :param client_name: 客户端名称。
         :type client_name: str
-        :param client_ip: 客户端ip
+        :param client_ip: 客户端ip。
         :type client_ip: str
-        :param client_version: 客户端版本
+        :param client_version: 客户端版本。
         :type client_version: str
-        :param client_type: 客户端操作系统类型
+        :param client_type: 客户端操作系统类型。
         :type client_type: str
-        :param agent_version: aps hda版本
+        :param agent_version: aps hda版本。
         :type agent_version: str
-        :param vm_ip: 应用服务器ip
+        :param vm_ip: 应用服务器ip。
         :type vm_ip: str
-        :param wi_ip: 连接IP
+        :param wi_ip: 连接IP。
         :type wi_ip: str
-        :param tenant_id: 租户id
+        :param tenant_id: 租户id。
         :type tenant_id: str
-        :param virtual_ip: 会话虚拟ip
+        :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
         """
         
@@ -178,7 +178,7 @@ class AppConnectionInfo:
     def id(self):
         """Gets the id of this AppConnectionInfo.
 
-        应用连接唯一标识ID
+        应用连接唯一标识ID。
 
         :return: The id of this AppConnectionInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class AppConnectionInfo:
     def id(self, id):
         """Sets the id of this AppConnectionInfo.
 
-        应用连接唯一标识ID
+        应用连接唯一标识ID。
 
         :param id: The id of this AppConnectionInfo.
         :type id: str
@@ -200,7 +200,7 @@ class AppConnectionInfo:
     def sid(self):
         """Gets the sid of this AppConnectionInfo.
 
-        应用服务器sid
+        应用服务器sid。
 
         :return: The sid of this AppConnectionInfo.
         :rtype: str
@@ -211,7 +211,7 @@ class AppConnectionInfo:
     def sid(self, sid):
         """Sets the sid of this AppConnectionInfo.
 
-        应用服务器sid
+        应用服务器sid。
 
         :param sid: The sid of this AppConnectionInfo.
         :type sid: str
@@ -222,7 +222,7 @@ class AppConnectionInfo:
     def machine_name(self):
         """Gets the machine_name of this AppConnectionInfo.
 
-        应用服务器名称
+        应用服务器名称。
 
         :return: The machine_name of this AppConnectionInfo.
         :rtype: str
@@ -233,7 +233,7 @@ class AppConnectionInfo:
     def machine_name(self, machine_name):
         """Sets the machine_name of this AppConnectionInfo.
 
-        应用服务器名称
+        应用服务器名称。
 
         :param machine_name: The machine_name of this AppConnectionInfo.
         :type machine_name: str
@@ -244,7 +244,7 @@ class AppConnectionInfo:
     def user_name(self):
         """Gets the user_name of this AppConnectionInfo.
 
-        登录用户
+        登录用户。
 
         :return: The user_name of this AppConnectionInfo.
         :rtype: str
@@ -255,7 +255,7 @@ class AppConnectionInfo:
     def user_name(self, user_name):
         """Sets the user_name of this AppConnectionInfo.
 
-        登录用户
+        登录用户。
 
         :param user_name: The user_name of this AppConnectionInfo.
         :type user_name: str
@@ -266,7 +266,7 @@ class AppConnectionInfo:
     def app_group_name(self):
         """Gets the app_group_name of this AppConnectionInfo.
 
-        应用组名称
+        应用组名称。
 
         :return: The app_group_name of this AppConnectionInfo.
         :rtype: str
@@ -277,7 +277,7 @@ class AppConnectionInfo:
     def app_group_name(self, app_group_name):
         """Sets the app_group_name of this AppConnectionInfo.
 
-        应用组名称
+        应用组名称。
 
         :param app_group_name: The app_group_name of this AppConnectionInfo.
         :type app_group_name: str
@@ -288,7 +288,7 @@ class AppConnectionInfo:
     def app_group_id(self):
         """Gets the app_group_id of this AppConnectionInfo.
 
-        应用组ID
+        应用组ID。
 
         :return: The app_group_id of this AppConnectionInfo.
         :rtype: str
@@ -299,7 +299,7 @@ class AppConnectionInfo:
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this AppConnectionInfo.
 
-        应用组ID
+        应用组ID。
 
         :param app_group_id: The app_group_id of this AppConnectionInfo.
         :type app_group_id: str
@@ -310,7 +310,7 @@ class AppConnectionInfo:
     def app_name(self):
         """Gets the app_name of this AppConnectionInfo.
 
-        应用名称
+        应用名称。
 
         :return: The app_name of this AppConnectionInfo.
         :rtype: str
@@ -321,7 +321,7 @@ class AppConnectionInfo:
     def app_name(self, app_name):
         """Sets the app_name of this AppConnectionInfo.
 
-        应用名称
+        应用名称。
 
         :param app_name: The app_name of this AppConnectionInfo.
         :type app_name: str
@@ -332,7 +332,7 @@ class AppConnectionInfo:
     def brokering_time(self):
         """Gets the brokering_time of this AppConnectionInfo.
 
-        登录应用时间
+        登录应用时间。
 
         :return: The brokering_time of this AppConnectionInfo.
         :rtype: datetime
@@ -343,7 +343,7 @@ class AppConnectionInfo:
     def brokering_time(self, brokering_time):
         """Sets the brokering_time of this AppConnectionInfo.
 
-        登录应用时间
+        登录应用时间。
 
         :param brokering_time: The brokering_time of this AppConnectionInfo.
         :type brokering_time: datetime
@@ -354,7 +354,7 @@ class AppConnectionInfo:
     def failed_code(self):
         """Gets the failed_code of this AppConnectionInfo.
 
-        连接失败状态码
+        连接失败状态码。
 
         :return: The failed_code of this AppConnectionInfo.
         :rtype: str
@@ -365,7 +365,7 @@ class AppConnectionInfo:
     def failed_code(self, failed_code):
         """Sets the failed_code of this AppConnectionInfo.
 
-        连接失败状态码
+        连接失败状态码。
 
         :param failed_code: The failed_code of this AppConnectionInfo.
         :type failed_code: str
@@ -376,7 +376,7 @@ class AppConnectionInfo:
     def connection_failure_reason(self):
         """Gets the connection_failure_reason of this AppConnectionInfo.
 
-        连接失败原因
+        连接失败原因。
 
         :return: The connection_failure_reason of this AppConnectionInfo.
         :rtype: str
@@ -387,7 +387,7 @@ class AppConnectionInfo:
     def connection_failure_reason(self, connection_failure_reason):
         """Sets the connection_failure_reason of this AppConnectionInfo.
 
-        连接失败原因
+        连接失败原因。
 
         :param connection_failure_reason: The connection_failure_reason of this AppConnectionInfo.
         :type connection_failure_reason: str
@@ -398,7 +398,7 @@ class AppConnectionInfo:
     def client_mac(self):
         """Gets the client_mac of this AppConnectionInfo.
 
-        客户端Mac
+        客户端Mac。
 
         :return: The client_mac of this AppConnectionInfo.
         :rtype: str
@@ -409,7 +409,7 @@ class AppConnectionInfo:
     def client_mac(self, client_mac):
         """Sets the client_mac of this AppConnectionInfo.
 
-        客户端Mac
+        客户端Mac。
 
         :param client_mac: The client_mac of this AppConnectionInfo.
         :type client_mac: str
@@ -420,7 +420,7 @@ class AppConnectionInfo:
     def client_name(self):
         """Gets the client_name of this AppConnectionInfo.
 
-        客户端名称
+        客户端名称。
 
         :return: The client_name of this AppConnectionInfo.
         :rtype: str
@@ -431,7 +431,7 @@ class AppConnectionInfo:
     def client_name(self, client_name):
         """Sets the client_name of this AppConnectionInfo.
 
-        客户端名称
+        客户端名称。
 
         :param client_name: The client_name of this AppConnectionInfo.
         :type client_name: str
@@ -442,7 +442,7 @@ class AppConnectionInfo:
     def client_ip(self):
         """Gets the client_ip of this AppConnectionInfo.
 
-        客户端ip
+        客户端ip。
 
         :return: The client_ip of this AppConnectionInfo.
         :rtype: str
@@ -453,7 +453,7 @@ class AppConnectionInfo:
     def client_ip(self, client_ip):
         """Sets the client_ip of this AppConnectionInfo.
 
-        客户端ip
+        客户端ip。
 
         :param client_ip: The client_ip of this AppConnectionInfo.
         :type client_ip: str
@@ -464,7 +464,7 @@ class AppConnectionInfo:
     def client_version(self):
         """Gets the client_version of this AppConnectionInfo.
 
-        客户端版本
+        客户端版本。
 
         :return: The client_version of this AppConnectionInfo.
         :rtype: str
@@ -475,7 +475,7 @@ class AppConnectionInfo:
     def client_version(self, client_version):
         """Sets the client_version of this AppConnectionInfo.
 
-        客户端版本
+        客户端版本。
 
         :param client_version: The client_version of this AppConnectionInfo.
         :type client_version: str
@@ -486,7 +486,7 @@ class AppConnectionInfo:
     def client_type(self):
         """Gets the client_type of this AppConnectionInfo.
 
-        客户端操作系统类型
+        客户端操作系统类型。
 
         :return: The client_type of this AppConnectionInfo.
         :rtype: str
@@ -497,7 +497,7 @@ class AppConnectionInfo:
     def client_type(self, client_type):
         """Sets the client_type of this AppConnectionInfo.
 
-        客户端操作系统类型
+        客户端操作系统类型。
 
         :param client_type: The client_type of this AppConnectionInfo.
         :type client_type: str
@@ -508,7 +508,7 @@ class AppConnectionInfo:
     def agent_version(self):
         """Gets the agent_version of this AppConnectionInfo.
 
-        aps hda版本
+        aps hda版本。
 
         :return: The agent_version of this AppConnectionInfo.
         :rtype: str
@@ -519,7 +519,7 @@ class AppConnectionInfo:
     def agent_version(self, agent_version):
         """Sets the agent_version of this AppConnectionInfo.
 
-        aps hda版本
+        aps hda版本。
 
         :param agent_version: The agent_version of this AppConnectionInfo.
         :type agent_version: str
@@ -530,7 +530,7 @@ class AppConnectionInfo:
     def vm_ip(self):
         """Gets the vm_ip of this AppConnectionInfo.
 
-        应用服务器ip
+        应用服务器ip。
 
         :return: The vm_ip of this AppConnectionInfo.
         :rtype: str
@@ -541,7 +541,7 @@ class AppConnectionInfo:
     def vm_ip(self, vm_ip):
         """Sets the vm_ip of this AppConnectionInfo.
 
-        应用服务器ip
+        应用服务器ip。
 
         :param vm_ip: The vm_ip of this AppConnectionInfo.
         :type vm_ip: str
@@ -552,7 +552,7 @@ class AppConnectionInfo:
     def wi_ip(self):
         """Gets the wi_ip of this AppConnectionInfo.
 
-        连接IP
+        连接IP。
 
         :return: The wi_ip of this AppConnectionInfo.
         :rtype: str
@@ -563,7 +563,7 @@ class AppConnectionInfo:
     def wi_ip(self, wi_ip):
         """Sets the wi_ip of this AppConnectionInfo.
 
-        连接IP
+        连接IP。
 
         :param wi_ip: The wi_ip of this AppConnectionInfo.
         :type wi_ip: str
@@ -574,7 +574,7 @@ class AppConnectionInfo:
     def tenant_id(self):
         """Gets the tenant_id of this AppConnectionInfo.
 
-        租户id
+        租户id。
 
         :return: The tenant_id of this AppConnectionInfo.
         :rtype: str
@@ -585,7 +585,7 @@ class AppConnectionInfo:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this AppConnectionInfo.
 
-        租户id
+        租户id。
 
         :param tenant_id: The tenant_id of this AppConnectionInfo.
         :type tenant_id: str
@@ -596,7 +596,7 @@ class AppConnectionInfo:
     def virtual_ip(self):
         """Gets the virtual_ip of this AppConnectionInfo.
 
-        会话虚拟ip
+        会话虚拟ip。
 
         :return: The virtual_ip of this AppConnectionInfo.
         :rtype: str
@@ -607,7 +607,7 @@ class AppConnectionInfo:
     def virtual_ip(self, virtual_ip):
         """Sets the virtual_ip of this AppConnectionInfo.
 
-        会话虚拟ip
+        会话虚拟ip。
 
         :param virtual_ip: The virtual_ip of this AppConnectionInfo.
         :type virtual_ip: str

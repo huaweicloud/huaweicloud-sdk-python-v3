@@ -29,7 +29,7 @@ class DeleteAppGroupReq:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 应用组ID,单次最多20个
+        :param ids: 应用组ID,单次最多20个。
         :type ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class DeleteAppGroupReq:
     def ids(self):
         """Gets the ids of this DeleteAppGroupReq.
 
-        应用组ID,单次最多20个
+        应用组ID,单次最多20个。
 
         :return: The ids of this DeleteAppGroupReq.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class DeleteAppGroupReq:
     def ids(self, ids):
         """Sets the ids of this DeleteAppGroupReq.
 
-        应用组ID,单次最多20个
+        应用组ID,单次最多20个。
 
         :param ids: The ids of this DeleteAppGroupReq.
         :type ids: list[str]

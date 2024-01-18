@@ -97,75 +97,75 @@ class AppServer:
 
         The model defined in huaweicloud sdk
 
-        :param id: aps实例的唯一标识
+        :param id: aps实例的唯一标识。
         :type id: str
-        :param name: 服务器名称
+        :param name: 服务器名称。
         :type name: str
-        :param machine_name: 计算机名称
+        :param machine_name: 计算机名称。
         :type machine_name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
-        :param server_group_id: 服务器组ID
+        :param server_group_id: 服务器组ID。
         :type server_group_id: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
         :param status: 
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
-        :param create_time: 服务器创建时间
+        :param create_time: 服务器创建时间。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间。
         :type update_time: datetime
-        :param image_id: 镜像ID
+        :param image_id: 镜像ID。
         :type image_id: str
-        :param availability_zone: 服务器可用分区
+        :param availability_zone: 服务器可用分区。
         :type availability_zone: str
-        :param domain: 域
+        :param domain: 域。
         :type domain: str
-        :param ou_name: 组织名称
+        :param ou_name: 组织名称。
         :type ou_name: str
-        :param sid: 实例的SID
+        :param sid: 实例的SID。
         :type sid: str
-        :param instance_id: 实例的ID
+        :param instance_id: 实例的ID。
         :type instance_id: str
-        :param os_version: 服务器系统版本
+        :param os_version: 服务器系统版本。
         :type os_version: str
-        :param os_type: 操作系统类型，当前仅支持Windows - Linux - Windows - Other
+        :param os_type: 操作系统类型，当前仅支持Windows： - Linux - Windows - Other
         :type os_type: str
-        :param order_id: 包周期产品的订单ID
+        :param order_id: 包周期产品的订单ID。
         :type order_id: str
-        :param maintain_status: 是否维护状态
+        :param maintain_status: 是否维护状态。
         :type maintain_status: bool
-        :param scaling_auto_create: 配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建 - false: 不是通过弹性伸缩创建
+        :param scaling_auto_create: 配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
         :type scaling_auto_create: bool
-        :param job_id: 上一次执行job的id
+        :param job_id: 上一次执行job的id。
         :type job_id: str
         :param job_type: 
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
         :param job_status: 
         :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
-        :param job_time: 上一次执行job的执行时间
+        :param job_time: 上一次执行job的执行时间。
         :type job_time: datetime
-        :param resource_pool_id: 资源池ID
+        :param resource_pool_id: 资源池ID。
         :type resource_pool_id: str
-        :param resource_pool_type: 资源池类型 - private：私有资源池 - public: 工作资源池
+        :param resource_pool_type: 资源池类型： - private：私有资源池。 - public: 工作资源池。
         :type resource_pool_type: str
-        :param host_id: 云专属主机id
+        :param host_id: 云专属主机id。
         :type host_id: str
-        :param server_group_name: 服务器组名称
+        :param server_group_name: 服务器组名称。
         :type server_group_name: str
         :param product_info: 
         :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
         :param metadata: 弹性云服务器元数据。  &gt;   1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\&quot;2\&quot;：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  &gt; 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\&quot;virtual_env_type\&quot;: \&quot;IsoImage\&quot; 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\&quot;virtual_env_type\&quot;: \&quot;FusionCompute\&quot;属性 。  &gt; virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
         :type metadata: dict(str, str)
-        :param session_count: 会话数量
+        :param session_count: 会话数量。
         :type session_count: int
         :param vm_status: 
         :type vm_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerStatus`
         :param task_status: 
         :type task_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerTaskStatus`
-        :param freeze: 冻结信息
+        :param freeze: 冻结信息。
         :type freeze: list[:class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeInfo`]
-        :param host_address: vpc和子网信息
+        :param host_address: vpc和子网信息。
         :type host_address: list[:class:`huaweicloudsdkworkspaceapp.v1.EcsNetWork`]
         """
         
@@ -283,7 +283,7 @@ class AppServer:
     def id(self):
         """Gets the id of this AppServer.
 
-        aps实例的唯一标识
+        aps实例的唯一标识。
 
         :return: The id of this AppServer.
         :rtype: str
@@ -294,7 +294,7 @@ class AppServer:
     def id(self, id):
         """Sets the id of this AppServer.
 
-        aps实例的唯一标识
+        aps实例的唯一标识。
 
         :param id: The id of this AppServer.
         :type id: str
@@ -305,7 +305,7 @@ class AppServer:
     def name(self):
         """Gets the name of this AppServer.
 
-        服务器名称
+        服务器名称。
 
         :return: The name of this AppServer.
         :rtype: str
@@ -316,7 +316,7 @@ class AppServer:
     def name(self, name):
         """Sets the name of this AppServer.
 
-        服务器名称
+        服务器名称。
 
         :param name: The name of this AppServer.
         :type name: str
@@ -327,7 +327,7 @@ class AppServer:
     def machine_name(self):
         """Gets the machine_name of this AppServer.
 
-        计算机名称
+        计算机名称。
 
         :return: The machine_name of this AppServer.
         :rtype: str
@@ -338,7 +338,7 @@ class AppServer:
     def machine_name(self, machine_name):
         """Sets the machine_name of this AppServer.
 
-        计算机名称
+        计算机名称。
 
         :param machine_name: The machine_name of this AppServer.
         :type machine_name: str
@@ -349,7 +349,7 @@ class AppServer:
     def description(self):
         """Gets the description of this AppServer.
 
-        描述
+        描述。
 
         :return: The description of this AppServer.
         :rtype: str
@@ -360,7 +360,7 @@ class AppServer:
     def description(self, description):
         """Sets the description of this AppServer.
 
-        描述
+        描述。
 
         :param description: The description of this AppServer.
         :type description: str
@@ -371,7 +371,7 @@ class AppServer:
     def server_group_id(self):
         """Gets the server_group_id of this AppServer.
 
-        服务器组ID
+        服务器组ID。
 
         :return: The server_group_id of this AppServer.
         :rtype: str
@@ -382,7 +382,7 @@ class AppServer:
     def server_group_id(self, server_group_id):
         """Sets the server_group_id of this AppServer.
 
-        服务器组ID
+        服务器组ID。
 
         :param server_group_id: The server_group_id of this AppServer.
         :type server_group_id: str
@@ -429,7 +429,7 @@ class AppServer:
     def create_time(self):
         """Gets the create_time of this AppServer.
 
-        服务器创建时间
+        服务器创建时间。
 
         :return: The create_time of this AppServer.
         :rtype: datetime
@@ -440,7 +440,7 @@ class AppServer:
     def create_time(self, create_time):
         """Sets the create_time of this AppServer.
 
-        服务器创建时间
+        服务器创建时间。
 
         :param create_time: The create_time of this AppServer.
         :type create_time: datetime
@@ -451,7 +451,7 @@ class AppServer:
     def update_time(self):
         """Gets the update_time of this AppServer.
 
-        更新时间
+        更新时间。
 
         :return: The update_time of this AppServer.
         :rtype: datetime
@@ -462,7 +462,7 @@ class AppServer:
     def update_time(self, update_time):
         """Sets the update_time of this AppServer.
 
-        更新时间
+        更新时间。
 
         :param update_time: The update_time of this AppServer.
         :type update_time: datetime
@@ -473,7 +473,7 @@ class AppServer:
     def image_id(self):
         """Gets the image_id of this AppServer.
 
-        镜像ID
+        镜像ID。
 
         :return: The image_id of this AppServer.
         :rtype: str
@@ -484,7 +484,7 @@ class AppServer:
     def image_id(self, image_id):
         """Sets the image_id of this AppServer.
 
-        镜像ID
+        镜像ID。
 
         :param image_id: The image_id of this AppServer.
         :type image_id: str
@@ -495,7 +495,7 @@ class AppServer:
     def availability_zone(self):
         """Gets the availability_zone of this AppServer.
 
-        服务器可用分区
+        服务器可用分区。
 
         :return: The availability_zone of this AppServer.
         :rtype: str
@@ -506,7 +506,7 @@ class AppServer:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this AppServer.
 
-        服务器可用分区
+        服务器可用分区。
 
         :param availability_zone: The availability_zone of this AppServer.
         :type availability_zone: str
@@ -517,7 +517,7 @@ class AppServer:
     def domain(self):
         """Gets the domain of this AppServer.
 
-        域
+        域。
 
         :return: The domain of this AppServer.
         :rtype: str
@@ -528,7 +528,7 @@ class AppServer:
     def domain(self, domain):
         """Sets the domain of this AppServer.
 
-        域
+        域。
 
         :param domain: The domain of this AppServer.
         :type domain: str
@@ -539,7 +539,7 @@ class AppServer:
     def ou_name(self):
         """Gets the ou_name of this AppServer.
 
-        组织名称
+        组织名称。
 
         :return: The ou_name of this AppServer.
         :rtype: str
@@ -550,7 +550,7 @@ class AppServer:
     def ou_name(self, ou_name):
         """Sets the ou_name of this AppServer.
 
-        组织名称
+        组织名称。
 
         :param ou_name: The ou_name of this AppServer.
         :type ou_name: str
@@ -561,7 +561,7 @@ class AppServer:
     def sid(self):
         """Gets the sid of this AppServer.
 
-        实例的SID
+        实例的SID。
 
         :return: The sid of this AppServer.
         :rtype: str
@@ -572,7 +572,7 @@ class AppServer:
     def sid(self, sid):
         """Sets the sid of this AppServer.
 
-        实例的SID
+        实例的SID。
 
         :param sid: The sid of this AppServer.
         :type sid: str
@@ -583,7 +583,7 @@ class AppServer:
     def instance_id(self):
         """Gets the instance_id of this AppServer.
 
-        实例的ID
+        实例的ID。
 
         :return: The instance_id of this AppServer.
         :rtype: str
@@ -594,7 +594,7 @@ class AppServer:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AppServer.
 
-        实例的ID
+        实例的ID。
 
         :param instance_id: The instance_id of this AppServer.
         :type instance_id: str
@@ -605,7 +605,7 @@ class AppServer:
     def os_version(self):
         """Gets the os_version of this AppServer.
 
-        服务器系统版本
+        服务器系统版本。
 
         :return: The os_version of this AppServer.
         :rtype: str
@@ -616,7 +616,7 @@ class AppServer:
     def os_version(self, os_version):
         """Sets the os_version of this AppServer.
 
-        服务器系统版本
+        服务器系统版本。
 
         :param os_version: The os_version of this AppServer.
         :type os_version: str
@@ -627,7 +627,7 @@ class AppServer:
     def os_type(self):
         """Gets the os_type of this AppServer.
 
-        操作系统类型，当前仅支持Windows - Linux - Windows - Other
+        操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
         :return: The os_type of this AppServer.
         :rtype: str
@@ -638,7 +638,7 @@ class AppServer:
     def os_type(self, os_type):
         """Sets the os_type of this AppServer.
 
-        操作系统类型，当前仅支持Windows - Linux - Windows - Other
+        操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
         :param os_type: The os_type of this AppServer.
         :type os_type: str
@@ -649,7 +649,7 @@ class AppServer:
     def order_id(self):
         """Gets the order_id of this AppServer.
 
-        包周期产品的订单ID
+        包周期产品的订单ID。
 
         :return: The order_id of this AppServer.
         :rtype: str
@@ -660,7 +660,7 @@ class AppServer:
     def order_id(self, order_id):
         """Sets the order_id of this AppServer.
 
-        包周期产品的订单ID
+        包周期产品的订单ID。
 
         :param order_id: The order_id of this AppServer.
         :type order_id: str
@@ -671,7 +671,7 @@ class AppServer:
     def maintain_status(self):
         """Gets the maintain_status of this AppServer.
 
-        是否维护状态
+        是否维护状态。
 
         :return: The maintain_status of this AppServer.
         :rtype: bool
@@ -682,7 +682,7 @@ class AppServer:
     def maintain_status(self, maintain_status):
         """Sets the maintain_status of this AppServer.
 
-        是否维护状态
+        是否维护状态。
 
         :param maintain_status: The maintain_status of this AppServer.
         :type maintain_status: bool
@@ -693,7 +693,7 @@ class AppServer:
     def scaling_auto_create(self):
         """Gets the scaling_auto_create of this AppServer.
 
-        配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建 - false: 不是通过弹性伸缩创建
+        配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
         :return: The scaling_auto_create of this AppServer.
         :rtype: bool
@@ -704,7 +704,7 @@ class AppServer:
     def scaling_auto_create(self, scaling_auto_create):
         """Sets the scaling_auto_create of this AppServer.
 
-        配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建 - false: 不是通过弹性伸缩创建
+        配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
         :param scaling_auto_create: The scaling_auto_create of this AppServer.
         :type scaling_auto_create: bool
@@ -715,7 +715,7 @@ class AppServer:
     def job_id(self):
         """Gets the job_id of this AppServer.
 
-        上一次执行job的id
+        上一次执行job的id。
 
         :return: The job_id of this AppServer.
         :rtype: str
@@ -726,7 +726,7 @@ class AppServer:
     def job_id(self, job_id):
         """Sets the job_id of this AppServer.
 
-        上一次执行job的id
+        上一次执行job的id。
 
         :param job_id: The job_id of this AppServer.
         :type job_id: str
@@ -773,7 +773,7 @@ class AppServer:
     def job_time(self):
         """Gets the job_time of this AppServer.
 
-        上一次执行job的执行时间
+        上一次执行job的执行时间。
 
         :return: The job_time of this AppServer.
         :rtype: datetime
@@ -784,7 +784,7 @@ class AppServer:
     def job_time(self, job_time):
         """Sets the job_time of this AppServer.
 
-        上一次执行job的执行时间
+        上一次执行job的执行时间。
 
         :param job_time: The job_time of this AppServer.
         :type job_time: datetime
@@ -795,7 +795,7 @@ class AppServer:
     def resource_pool_id(self):
         """Gets the resource_pool_id of this AppServer.
 
-        资源池ID
+        资源池ID。
 
         :return: The resource_pool_id of this AppServer.
         :rtype: str
@@ -806,7 +806,7 @@ class AppServer:
     def resource_pool_id(self, resource_pool_id):
         """Sets the resource_pool_id of this AppServer.
 
-        资源池ID
+        资源池ID。
 
         :param resource_pool_id: The resource_pool_id of this AppServer.
         :type resource_pool_id: str
@@ -817,7 +817,7 @@ class AppServer:
     def resource_pool_type(self):
         """Gets the resource_pool_type of this AppServer.
 
-        资源池类型 - private：私有资源池 - public: 工作资源池
+        资源池类型： - private：私有资源池。 - public: 工作资源池。
 
         :return: The resource_pool_type of this AppServer.
         :rtype: str
@@ -828,7 +828,7 @@ class AppServer:
     def resource_pool_type(self, resource_pool_type):
         """Sets the resource_pool_type of this AppServer.
 
-        资源池类型 - private：私有资源池 - public: 工作资源池
+        资源池类型： - private：私有资源池。 - public: 工作资源池。
 
         :param resource_pool_type: The resource_pool_type of this AppServer.
         :type resource_pool_type: str
@@ -839,7 +839,7 @@ class AppServer:
     def host_id(self):
         """Gets the host_id of this AppServer.
 
-        云专属主机id
+        云专属主机id。
 
         :return: The host_id of this AppServer.
         :rtype: str
@@ -850,7 +850,7 @@ class AppServer:
     def host_id(self, host_id):
         """Sets the host_id of this AppServer.
 
-        云专属主机id
+        云专属主机id。
 
         :param host_id: The host_id of this AppServer.
         :type host_id: str
@@ -861,7 +861,7 @@ class AppServer:
     def server_group_name(self):
         """Gets the server_group_name of this AppServer.
 
-        服务器组名称
+        服务器组名称。
 
         :return: The server_group_name of this AppServer.
         :rtype: str
@@ -872,7 +872,7 @@ class AppServer:
     def server_group_name(self, server_group_name):
         """Sets the server_group_name of this AppServer.
 
-        服务器组名称
+        服务器组名称。
 
         :param server_group_name: The server_group_name of this AppServer.
         :type server_group_name: str
@@ -923,7 +923,7 @@ class AppServer:
     def session_count(self):
         """Gets the session_count of this AppServer.
 
-        会话数量
+        会话数量。
 
         :return: The session_count of this AppServer.
         :rtype: int
@@ -934,7 +934,7 @@ class AppServer:
     def session_count(self, session_count):
         """Sets the session_count of this AppServer.
 
-        会话数量
+        会话数量。
 
         :param session_count: The session_count of this AppServer.
         :type session_count: int
@@ -981,7 +981,7 @@ class AppServer:
     def freeze(self):
         """Gets the freeze of this AppServer.
 
-        冻结信息
+        冻结信息。
 
         :return: The freeze of this AppServer.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeInfo`]
@@ -992,7 +992,7 @@ class AppServer:
     def freeze(self, freeze):
         """Sets the freeze of this AppServer.
 
-        冻结信息
+        冻结信息。
 
         :param freeze: The freeze of this AppServer.
         :type freeze: list[:class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeInfo`]
@@ -1003,7 +1003,7 @@ class AppServer:
     def host_address(self):
         """Gets the host_address of this AppServer.
 
-        vpc和子网信息
+        vpc和子网信息。
 
         :return: The host_address of this AppServer.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.EcsNetWork`]
@@ -1014,7 +1014,7 @@ class AppServer:
     def host_address(self, host_address):
         """Sets the host_address of this AppServer.
 
-        vpc和子网信息
+        vpc和子网信息。
 
         :param host_address: The host_address of this AppServer.
         :type host_address: list[:class:`huaweicloudsdkworkspaceapp.v1.EcsNetWork`]

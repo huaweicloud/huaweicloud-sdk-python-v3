@@ -33,11 +33,11 @@ class IdentityCenterGroup:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: Identity Center的group ID。
+        :param group_id: Identity Center的用户组ID。
         :type group_id: str
-        :param group_name: group name。
+        :param group_name: 用户组名称。
         :type group_name: str
-        :param description: Identity Center的group描述信息。
+        :param description: Identity Center的用户组描述信息。
         :type description: str
         """
         
@@ -59,7 +59,7 @@ class IdentityCenterGroup:
     def group_id(self):
         """Gets the group_id of this IdentityCenterGroup.
 
-        Identity Center的group ID。
+        Identity Center的用户组ID。
 
         :return: The group_id of this IdentityCenterGroup.
         :rtype: str
@@ -70,7 +70,7 @@ class IdentityCenterGroup:
     def group_id(self, group_id):
         """Sets the group_id of this IdentityCenterGroup.
 
-        Identity Center的group ID。
+        Identity Center的用户组ID。
 
         :param group_id: The group_id of this IdentityCenterGroup.
         :type group_id: str
@@ -81,7 +81,7 @@ class IdentityCenterGroup:
     def group_name(self):
         """Gets the group_name of this IdentityCenterGroup.
 
-        group name。
+        用户组名称。
 
         :return: The group_name of this IdentityCenterGroup.
         :rtype: str
@@ -92,7 +92,7 @@ class IdentityCenterGroup:
     def group_name(self, group_name):
         """Sets the group_name of this IdentityCenterGroup.
 
-        group name。
+        用户组名称。
 
         :param group_name: The group_name of this IdentityCenterGroup.
         :type group_name: str
@@ -103,7 +103,7 @@ class IdentityCenterGroup:
     def description(self):
         """Gets the description of this IdentityCenterGroup.
 
-        Identity Center的group描述信息。
+        Identity Center的用户组描述信息。
 
         :return: The description of this IdentityCenterGroup.
         :rtype: str
@@ -114,7 +114,7 @@ class IdentityCenterGroup:
     def description(self, description):
         """Sets the description of this IdentityCenterGroup.
 
-        Identity Center的group描述信息。
+        Identity Center的用户组描述信息。
 
         :param description: The description of this IdentityCenterGroup.
         :type description: str

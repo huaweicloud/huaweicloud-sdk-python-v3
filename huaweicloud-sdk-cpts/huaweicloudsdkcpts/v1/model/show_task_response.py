@@ -34,9 +34,9 @@ class ShowTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
         :param task_info: 
         :type task_info: :class:`huaweicloudsdkcpts.v1.TaskInfo`
@@ -60,7 +60,7 @@ class ShowTaskResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowTaskResponse.
 
-        code
+        响应码
 
         :return: The code of this ShowTaskResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowTaskResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowTaskResponse.
 
-        code
+        响应码
 
         :param code: The code of this ShowTaskResponse.
         :type code: str
@@ -82,7 +82,7 @@ class ShowTaskResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowTaskResponse.
 
-        message
+        响应消息
 
         :return: The message of this ShowTaskResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowTaskResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowTaskResponse.
 
-        message
+        响应消息
 
         :param message: The message of this ShowTaskResponse.
         :type message: str

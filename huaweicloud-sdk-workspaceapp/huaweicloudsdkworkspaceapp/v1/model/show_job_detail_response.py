@@ -52,9 +52,9 @@ class ShowJobDetailResponse(SdkResponse):
         :type end_time: datetime
         :param status: 
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
-        :param sub_jobs_total: 子任务总数
+        :param sub_jobs_total: 子任务总数。
         :type sub_jobs_total: int
-        :param sub_jobs: 子任务列表
+        :param sub_jobs: 子任务列表。
         :type sub_jobs: list[:class:`huaweicloudsdkworkspaceapp.v1.JobDetailInfo`]
         """
         
@@ -190,7 +190,7 @@ class ShowJobDetailResponse(SdkResponse):
     def sub_jobs_total(self):
         """Gets the sub_jobs_total of this ShowJobDetailResponse.
 
-        子任务总数
+        子任务总数。
 
         :return: The sub_jobs_total of this ShowJobDetailResponse.
         :rtype: int
@@ -201,7 +201,7 @@ class ShowJobDetailResponse(SdkResponse):
     def sub_jobs_total(self, sub_jobs_total):
         """Sets the sub_jobs_total of this ShowJobDetailResponse.
 
-        子任务总数
+        子任务总数。
 
         :param sub_jobs_total: The sub_jobs_total of this ShowJobDetailResponse.
         :type sub_jobs_total: int
@@ -212,7 +212,7 @@ class ShowJobDetailResponse(SdkResponse):
     def sub_jobs(self):
         """Gets the sub_jobs of this ShowJobDetailResponse.
 
-        子任务列表
+        子任务列表。
 
         :return: The sub_jobs of this ShowJobDetailResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.JobDetailInfo`]
@@ -223,7 +223,7 @@ class ShowJobDetailResponse(SdkResponse):
     def sub_jobs(self, sub_jobs):
         """Sets the sub_jobs of this ShowJobDetailResponse.
 
-        子任务列表
+        子任务列表。
 
         :param sub_jobs: The sub_jobs of this ShowJobDetailResponse.
         :type sub_jobs: list[:class:`huaweicloudsdkworkspaceapp.v1.JobDetailInfo`]

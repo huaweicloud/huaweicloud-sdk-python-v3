@@ -18,25 +18,21 @@ class IpDetails:
 
     openapi_types = {
         'ip_address': 'str',
-        'ipv6_address': 'str',
         'bandwidth_size': 'int'
     }
 
     attribute_map = {
         'ip_address': 'ip_address',
-        'ipv6_address': 'ipv6_address',
         'bandwidth_size': 'bandwidth_size'
     }
 
-    def __init__(self, ip_address=None, ipv6_address=None, bandwidth_size=None):
+    def __init__(self, ip_address=None, bandwidth_size=None):
         """IpDetails
 
         The model defined in huaweicloud sdk
 
         :param ip_address: IP地址
         :type ip_address: str
-        :param ipv6_address: IPV6地址
-        :type ipv6_address: str
         :param bandwidth_size: 带宽大小
         :type bandwidth_size: int
         """
@@ -44,14 +40,11 @@ class IpDetails:
         
 
         self._ip_address = None
-        self._ipv6_address = None
         self._bandwidth_size = None
         self.discriminator = None
 
         if ip_address is not None:
             self.ip_address = ip_address
-        if ipv6_address is not None:
-            self.ipv6_address = ipv6_address
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
 
@@ -76,28 +69,6 @@ class IpDetails:
         :type ip_address: str
         """
         self._ip_address = ip_address
-
-    @property
-    def ipv6_address(self):
-        """Gets the ipv6_address of this IpDetails.
-
-        IPV6地址
-
-        :return: The ipv6_address of this IpDetails.
-        :rtype: str
-        """
-        return self._ipv6_address
-
-    @ipv6_address.setter
-    def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this IpDetails.
-
-        IPV6地址
-
-        :param ipv6_address: The ipv6_address of this IpDetails.
-        :type ipv6_address: str
-        """
-        self._ipv6_address = ipv6_address
 
     @property
     def bandwidth_size(self):

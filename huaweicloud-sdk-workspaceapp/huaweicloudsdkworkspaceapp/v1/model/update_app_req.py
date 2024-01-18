@@ -43,17 +43,17 @@ class UpdateAppReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格 2. 长度1~64个字符
+        :param name: 应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
         :type name: str
-        :param version: 应用版本号
+        :param version: 应用版本号。
         :type version: str
-        :param execute_path: 执行路径
+        :param execute_path: 执行路径。
         :type execute_path: str
-        :param work_path: 应用工作目录
+        :param work_path: 应用工作目录。
         :type work_path: str
-        :param description: 应用描述
+        :param description: 应用描述。
         :type description: str
-        :param command_param: 启动命令行参数
+        :param command_param: 启动命令行参数。
         :type command_param: str
         :param state: 
         :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
@@ -94,7 +94,7 @@ class UpdateAppReq:
     def name(self):
         """Gets the name of this UpdateAppReq.
 
-        应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格 2. 长度1~64个字符
+        应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
 
         :return: The name of this UpdateAppReq.
         :rtype: str
@@ -105,7 +105,7 @@ class UpdateAppReq:
     def name(self, name):
         """Sets the name of this UpdateAppReq.
 
-        应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格 2. 长度1~64个字符
+        应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
 
         :param name: The name of this UpdateAppReq.
         :type name: str
@@ -116,7 +116,7 @@ class UpdateAppReq:
     def version(self):
         """Gets the version of this UpdateAppReq.
 
-        应用版本号
+        应用版本号。
 
         :return: The version of this UpdateAppReq.
         :rtype: str
@@ -127,7 +127,7 @@ class UpdateAppReq:
     def version(self, version):
         """Sets the version of this UpdateAppReq.
 
-        应用版本号
+        应用版本号。
 
         :param version: The version of this UpdateAppReq.
         :type version: str
@@ -138,7 +138,7 @@ class UpdateAppReq:
     def execute_path(self):
         """Gets the execute_path of this UpdateAppReq.
 
-        执行路径
+        执行路径。
 
         :return: The execute_path of this UpdateAppReq.
         :rtype: str
@@ -149,7 +149,7 @@ class UpdateAppReq:
     def execute_path(self, execute_path):
         """Sets the execute_path of this UpdateAppReq.
 
-        执行路径
+        执行路径。
 
         :param execute_path: The execute_path of this UpdateAppReq.
         :type execute_path: str
@@ -160,7 +160,7 @@ class UpdateAppReq:
     def work_path(self):
         """Gets the work_path of this UpdateAppReq.
 
-        应用工作目录
+        应用工作目录。
 
         :return: The work_path of this UpdateAppReq.
         :rtype: str
@@ -171,7 +171,7 @@ class UpdateAppReq:
     def work_path(self, work_path):
         """Sets the work_path of this UpdateAppReq.
 
-        应用工作目录
+        应用工作目录。
 
         :param work_path: The work_path of this UpdateAppReq.
         :type work_path: str
@@ -182,7 +182,7 @@ class UpdateAppReq:
     def description(self):
         """Gets the description of this UpdateAppReq.
 
-        应用描述
+        应用描述。
 
         :return: The description of this UpdateAppReq.
         :rtype: str
@@ -193,7 +193,7 @@ class UpdateAppReq:
     def description(self, description):
         """Sets the description of this UpdateAppReq.
 
-        应用描述
+        应用描述。
 
         :param description: The description of this UpdateAppReq.
         :type description: str
@@ -204,7 +204,7 @@ class UpdateAppReq:
     def command_param(self):
         """Gets the command_param of this UpdateAppReq.
 
-        启动命令行参数
+        启动命令行参数。
 
         :return: The command_param of this UpdateAppReq.
         :rtype: str
@@ -215,7 +215,7 @@ class UpdateAppReq:
     def command_param(self, command_param):
         """Sets the command_param of this UpdateAppReq.
 
-        启动命令行参数
+        启动命令行参数。
 
         :param command_param: The command_param of this UpdateAppReq.
         :type command_param: str

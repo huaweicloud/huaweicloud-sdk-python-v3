@@ -32,9 +32,9 @@ class ListUserConnectionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 应用使用记录列表
+        :param items: 应用使用记录列表。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.UserConnectionInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListUserConnectionResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListUserConnectionResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListUserConnectionResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListUserConnectionResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListUserConnectionResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListUserConnectionResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListUserConnectionResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListUserConnectionResponse.
 
-        应用使用记录列表
+        应用使用记录列表。
 
         :return: The items of this ListUserConnectionResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.UserConnectionInfo`]
@@ -86,7 +86,7 @@ class ListUserConnectionResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListUserConnectionResponse.
 
-        应用使用记录列表
+        应用使用记录列表。
 
         :param items: The items of this ListUserConnectionResponse.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.UserConnectionInfo`]

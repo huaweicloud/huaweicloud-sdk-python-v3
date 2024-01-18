@@ -41,19 +41,19 @@ class CheckQuotaRequest:
 
         The model defined in huaweicloud sdk
 
-        :param product_id: 产品id
+        :param product_id: 产品id。
         :type product_id: str
-        :param subscription_num: 订单需要创建总实例数、订购数量
+        :param subscription_num: 订单需要创建总实例数、订购数量。
         :type subscription_num: int
-        :param disk_size: 单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）
+        :param disk_size: 单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）。
         :type disk_size: int
-        :param disk_num: 单台实例所需的磁盘数量（最大系统盘1块、数据盘10块）
+        :param disk_num: 单台实例所需的磁盘数量（最大系统盘1块、数据盘10块）。
         :type disk_num: int
-        :param is_period: 是否包周期
+        :param is_period: 是否包周期。
         :type is_period: bool
-        :param deh_id: 主机id
+        :param deh_id: 主机id。
         :type deh_id: str
-        :param cluster_id: 云专属分布式存储池id
+        :param cluster_id: 云专属分布式存储池id。
         :type cluster_id: str
         """
         
@@ -83,7 +83,7 @@ class CheckQuotaRequest:
     def product_id(self):
         """Gets the product_id of this CheckQuotaRequest.
 
-        产品id
+        产品id。
 
         :return: The product_id of this CheckQuotaRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class CheckQuotaRequest:
     def product_id(self, product_id):
         """Sets the product_id of this CheckQuotaRequest.
 
-        产品id
+        产品id。
 
         :param product_id: The product_id of this CheckQuotaRequest.
         :type product_id: str
@@ -105,7 +105,7 @@ class CheckQuotaRequest:
     def subscription_num(self):
         """Gets the subscription_num of this CheckQuotaRequest.
 
-        订单需要创建总实例数、订购数量
+        订单需要创建总实例数、订购数量。
 
         :return: The subscription_num of this CheckQuotaRequest.
         :rtype: int
@@ -116,7 +116,7 @@ class CheckQuotaRequest:
     def subscription_num(self, subscription_num):
         """Sets the subscription_num of this CheckQuotaRequest.
 
-        订单需要创建总实例数、订购数量
+        订单需要创建总实例数、订购数量。
 
         :param subscription_num: The subscription_num of this CheckQuotaRequest.
         :type subscription_num: int
@@ -127,7 +127,7 @@ class CheckQuotaRequest:
     def disk_size(self):
         """Gets the disk_size of this CheckQuotaRequest.
 
-        单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）
+        单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）。
 
         :return: The disk_size of this CheckQuotaRequest.
         :rtype: int
@@ -138,7 +138,7 @@ class CheckQuotaRequest:
     def disk_size(self, disk_size):
         """Sets the disk_size of this CheckQuotaRequest.
 
-        单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）
+        单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）。
 
         :param disk_size: The disk_size of this CheckQuotaRequest.
         :type disk_size: int
@@ -149,7 +149,7 @@ class CheckQuotaRequest:
     def disk_num(self):
         """Gets the disk_num of this CheckQuotaRequest.
 
-        单台实例所需的磁盘数量（最大系统盘1块、数据盘10块）
+        单台实例所需的磁盘数量（最大系统盘1块、数据盘10块）。
 
         :return: The disk_num of this CheckQuotaRequest.
         :rtype: int
@@ -160,7 +160,7 @@ class CheckQuotaRequest:
     def disk_num(self, disk_num):
         """Sets the disk_num of this CheckQuotaRequest.
 
-        单台实例所需的磁盘数量（最大系统盘1块、数据盘10块）
+        单台实例所需的磁盘数量（最大系统盘1块、数据盘10块）。
 
         :param disk_num: The disk_num of this CheckQuotaRequest.
         :type disk_num: int
@@ -171,7 +171,7 @@ class CheckQuotaRequest:
     def is_period(self):
         """Gets the is_period of this CheckQuotaRequest.
 
-        是否包周期
+        是否包周期。
 
         :return: The is_period of this CheckQuotaRequest.
         :rtype: bool
@@ -182,7 +182,7 @@ class CheckQuotaRequest:
     def is_period(self, is_period):
         """Sets the is_period of this CheckQuotaRequest.
 
-        是否包周期
+        是否包周期。
 
         :param is_period: The is_period of this CheckQuotaRequest.
         :type is_period: bool
@@ -193,7 +193,7 @@ class CheckQuotaRequest:
     def deh_id(self):
         """Gets the deh_id of this CheckQuotaRequest.
 
-        主机id
+        主机id。
 
         :return: The deh_id of this CheckQuotaRequest.
         :rtype: str
@@ -204,7 +204,7 @@ class CheckQuotaRequest:
     def deh_id(self, deh_id):
         """Sets the deh_id of this CheckQuotaRequest.
 
-        主机id
+        主机id。
 
         :param deh_id: The deh_id of this CheckQuotaRequest.
         :type deh_id: str
@@ -215,7 +215,7 @@ class CheckQuotaRequest:
     def cluster_id(self):
         """Gets the cluster_id of this CheckQuotaRequest.
 
-        云专属分布式存储池id
+        云专属分布式存储池id。
 
         :return: The cluster_id of this CheckQuotaRequest.
         :rtype: str
@@ -226,7 +226,7 @@ class CheckQuotaRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this CheckQuotaRequest.
 
-        云专属分布式存储池id
+        云专属分布式存储池id。
 
         :param cluster_id: The cluster_id of this CheckQuotaRequest.
         :type cluster_id: str

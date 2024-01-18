@@ -22,7 +22,6 @@ from huaweicloudsdkaom.v2.model.app_name_rule import AppNameRule
 from huaweicloudsdkaom.v2.model.app_rules import AppRules
 from huaweicloudsdkaom.v2.model.app_rules_body import AppRulesBody
 from huaweicloudsdkaom.v2.model.app_rules_spec import AppRulesSpec
-from huaweicloudsdkaom.v2.model.application_model import ApplicationModel
 from huaweicloudsdkaom.v2.model.application_name_rule import ApplicationNameRule
 from huaweicloudsdkaom.v2.model.count_events_request import CountEventsRequest
 from huaweicloudsdkaom.v2.model.count_events_response import CountEventsResponse
@@ -123,7 +122,9 @@ from huaweicloudsdkaom.v2.model.name_rule import NameRule
 from huaweicloudsdkaom.v2.model.notifications import Notifications
 from huaweicloudsdkaom.v2.model.notified_histories_result import NotifiedHistoriesResult
 from huaweicloudsdkaom.v2.model.prom_config_model import PromConfigModel
+from huaweicloudsdkaom.v2.model.prom_instance_eps_create_model import PromInstanceEpsCreateModel
 from huaweicloudsdkaom.v2.model.prom_instance_eps_model import PromInstanceEpsModel
+from huaweicloudsdkaom.v2.model.prom_instance_request_model import PromInstanceRequestModel
 from huaweicloudsdkaom.v2.model.push_events_request import PushEventsRequest
 from huaweicloudsdkaom.v2.model.push_events_response import PushEventsResponse
 from huaweicloudsdkaom.v2.model.query_alarm_result import QueryAlarmResult

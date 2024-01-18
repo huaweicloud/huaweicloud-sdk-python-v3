@@ -36,11 +36,11 @@ class ShowTaskSetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param extend: extend
+        :param extend: 扩展信息
         :type extend: list[str]
-        :param message: message
+        :param message: 响应消息
         :type message: str
         :param tasks: 工程集详细信息
         :type tasks: list[:class:`huaweicloudsdkcpts.v1.Task`]
@@ -67,7 +67,7 @@ class ShowTaskSetResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowTaskSetResponse.
 
-        code
+        响应码
 
         :return: The code of this ShowTaskSetResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowTaskSetResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowTaskSetResponse.
 
-        code
+        响应码
 
         :param code: The code of this ShowTaskSetResponse.
         :type code: str
@@ -89,7 +89,7 @@ class ShowTaskSetResponse(SdkResponse):
     def extend(self):
         """Gets the extend of this ShowTaskSetResponse.
 
-        extend
+        扩展信息
 
         :return: The extend of this ShowTaskSetResponse.
         :rtype: list[str]
@@ -100,7 +100,7 @@ class ShowTaskSetResponse(SdkResponse):
     def extend(self, extend):
         """Sets the extend of this ShowTaskSetResponse.
 
-        extend
+        扩展信息
 
         :param extend: The extend of this ShowTaskSetResponse.
         :type extend: list[str]
@@ -111,7 +111,7 @@ class ShowTaskSetResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowTaskSetResponse.
 
-        message
+        响应消息
 
         :return: The message of this ShowTaskSetResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class ShowTaskSetResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowTaskSetResponse.
 
-        message
+        响应消息
 
         :param message: The message of this ShowTaskSetResponse.
         :type message: str

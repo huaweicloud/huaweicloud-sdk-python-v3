@@ -32,7 +32,7 @@ class ListControlsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param controls: 纳管的OU。
+        :param controls: 控制策略信息。
         :type controls: list[:class:`huaweicloudsdkrgc.v1.Control`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListControlsResponse(SdkResponse):
     def controls(self):
         """Gets the controls of this ListControlsResponse.
 
-        纳管的OU。
+        控制策略信息。
 
         :return: The controls of this ListControlsResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.Control`]
@@ -64,7 +64,7 @@ class ListControlsResponse(SdkResponse):
     def controls(self, controls):
         """Sets the controls of this ListControlsResponse.
 
-        纳管的OU。
+        控制策略信息。
 
         :param controls: The controls of this ListControlsResponse.
         :type controls: list[:class:`huaweicloudsdkrgc.v1.Control`]

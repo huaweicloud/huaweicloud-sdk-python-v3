@@ -35,13 +35,13 @@ class ListPersistentStorageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
-        :param storage_id: WKS存储ID
+        :param storage_id: WKS存储ID。
         :type storage_id: str
-        :param name: 查询名称,模糊匹配
+        :param name: 查询名称，模糊匹配。
         :type name: str
         """
         
@@ -66,7 +66,7 @@ class ListPersistentStorageRequest:
     def offset(self):
         """Gets the offset of this ListPersistentStorageRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListPersistentStorageRequest.
         :rtype: int
@@ -77,7 +77,7 @@ class ListPersistentStorageRequest:
     def offset(self, offset):
         """Sets the offset of this ListPersistentStorageRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListPersistentStorageRequest.
         :type offset: int
@@ -88,7 +88,7 @@ class ListPersistentStorageRequest:
     def limit(self):
         """Gets the limit of this ListPersistentStorageRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListPersistentStorageRequest.
         :rtype: int
@@ -99,7 +99,7 @@ class ListPersistentStorageRequest:
     def limit(self, limit):
         """Sets the limit of this ListPersistentStorageRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListPersistentStorageRequest.
         :type limit: int
@@ -110,7 +110,7 @@ class ListPersistentStorageRequest:
     def storage_id(self):
         """Gets the storage_id of this ListPersistentStorageRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :return: The storage_id of this ListPersistentStorageRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class ListPersistentStorageRequest:
     def storage_id(self, storage_id):
         """Sets the storage_id of this ListPersistentStorageRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :param storage_id: The storage_id of this ListPersistentStorageRequest.
         :type storage_id: str
@@ -132,7 +132,7 @@ class ListPersistentStorageRequest:
     def name(self):
         """Gets the name of this ListPersistentStorageRequest.
 
-        查询名称,模糊匹配
+        查询名称，模糊匹配。
 
         :return: The name of this ListPersistentStorageRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class ListPersistentStorageRequest:
     def name(self, name):
         """Sets the name of this ListPersistentStorageRequest.
 
-        查询名称,模糊匹配
+        查询名称，模糊匹配。
 
         :param name: The name of this ListPersistentStorageRequest.
         :type name: str

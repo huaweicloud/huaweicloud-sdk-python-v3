@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ApplicationModel:
+class CreateSmartChatRoomResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,109 +18,76 @@ class ApplicationModel:
     sensitive_list = []
 
     openapi_types = {
-        'app_id': 'str',
-        'app_name': 'str',
-        'app_type': 'str'
+        'room_id': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'app_id': 'app_id',
-        'app_name': 'app_name',
-        'app_type': 'app_type'
+        'room_id': 'room_id',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, app_id=None, app_name=None, app_type=None):
-        """ApplicationModel
+    def __init__(self, room_id=None, x_request_id=None):
+        """CreateSmartChatRoomResponse
 
         The model defined in huaweicloud sdk
 
-        :param app_id: 应用id。
-        :type app_id: str
-        :param app_name: 应用名称。
-        :type app_name: str
-        :param app_type: 应用来源。
-        :type app_type: str
+        :param room_id: 智能交互对话直播间ID
+        :type room_id: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
-        
+        super(CreateSmartChatRoomResponse, self).__init__()
 
-        self._app_id = None
-        self._app_name = None
-        self._app_type = None
+        self._room_id = None
+        self._x_request_id = None
         self.discriminator = None
 
-        if app_id is not None:
-            self.app_id = app_id
-        if app_name is not None:
-            self.app_name = app_name
-        if app_type is not None:
-            self.app_type = app_type
+        if room_id is not None:
+            self.room_id = room_id
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
-    def app_id(self):
-        """Gets the app_id of this ApplicationModel.
+    def room_id(self):
+        """Gets the room_id of this CreateSmartChatRoomResponse.
 
-        应用id。
+        智能交互对话直播间ID
 
-        :return: The app_id of this ApplicationModel.
+        :return: The room_id of this CreateSmartChatRoomResponse.
         :rtype: str
         """
-        return self._app_id
+        return self._room_id
 
-    @app_id.setter
-    def app_id(self, app_id):
-        """Sets the app_id of this ApplicationModel.
+    @room_id.setter
+    def room_id(self, room_id):
+        """Sets the room_id of this CreateSmartChatRoomResponse.
 
-        应用id。
+        智能交互对话直播间ID
 
-        :param app_id: The app_id of this ApplicationModel.
-        :type app_id: str
+        :param room_id: The room_id of this CreateSmartChatRoomResponse.
+        :type room_id: str
         """
-        self._app_id = app_id
+        self._room_id = room_id
 
     @property
-    def app_name(self):
-        """Gets the app_name of this ApplicationModel.
+    def x_request_id(self):
+        """Gets the x_request_id of this CreateSmartChatRoomResponse.
 
-        应用名称。
-
-        :return: The app_name of this ApplicationModel.
+        :return: The x_request_id of this CreateSmartChatRoomResponse.
         :rtype: str
         """
-        return self._app_name
+        return self._x_request_id
 
-    @app_name.setter
-    def app_name(self, app_name):
-        """Sets the app_name of this ApplicationModel.
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreateSmartChatRoomResponse.
 
-        应用名称。
-
-        :param app_name: The app_name of this ApplicationModel.
-        :type app_name: str
+        :param x_request_id: The x_request_id of this CreateSmartChatRoomResponse.
+        :type x_request_id: str
         """
-        self._app_name = app_name
-
-    @property
-    def app_type(self):
-        """Gets the app_type of this ApplicationModel.
-
-        应用来源。
-
-        :return: The app_type of this ApplicationModel.
-        :rtype: str
-        """
-        return self._app_type
-
-    @app_type.setter
-    def app_type(self, app_type):
-        """Sets the app_type of this ApplicationModel.
-
-        应用来源。
-
-        :param app_type: The app_type of this ApplicationModel.
-        :type app_type: str
-        """
-        self._app_type = app_type
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -163,7 +131,7 @@ class ApplicationModel:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApplicationModel):
+        if not isinstance(other, CreateSmartChatRoomResponse):
             return False
 
         return self.__dict__ == other.__dict__

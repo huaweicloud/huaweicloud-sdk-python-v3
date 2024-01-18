@@ -36,11 +36,11 @@ class ShowReportResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
-        :param extend: extend
+        :param extend: 扩展信息
         :type extend: str
         :param result: 
         :type result: :class:`huaweicloudsdkcpts.v1.ReportInfo`
@@ -67,7 +67,7 @@ class ShowReportResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowReportResponse.
 
-        code
+        响应码
 
         :return: The code of this ShowReportResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowReportResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowReportResponse.
 
-        code
+        响应码
 
         :param code: The code of this ShowReportResponse.
         :type code: str
@@ -89,7 +89,7 @@ class ShowReportResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowReportResponse.
 
-        message
+        响应消息
 
         :return: The message of this ShowReportResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ShowReportResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowReportResponse.
 
-        message
+        响应消息
 
         :param message: The message of this ShowReportResponse.
         :type message: str
@@ -111,7 +111,7 @@ class ShowReportResponse(SdkResponse):
     def extend(self):
         """Gets the extend of this ShowReportResponse.
 
-        extend
+        扩展信息
 
         :return: The extend of this ShowReportResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class ShowReportResponse(SdkResponse):
     def extend(self, extend):
         """Sets the extend of this ShowReportResponse.
 
-        extend
+        扩展信息
 
         :param extend: The extend of this ShowReportResponse.
         :type extend: str

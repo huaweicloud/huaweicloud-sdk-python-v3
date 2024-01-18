@@ -7190,6 +7190,77 @@ class DwsAsyncClient(Client):
 
         return http_info
 
+    def list_workload_plans_async(self, request):
+        """查询资源管理计划列表
+
+        查询集群中所有资源管理计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListWorkloadPlans
+        :type request: :class:`huaweicloudsdkdws.v2.ListWorkloadPlansRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListWorkloadPlansResponse`
+        """
+        http_info = self._list_workload_plans_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_workload_plans_async_invoker(self, request):
+        http_info = self._list_workload_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_workload_plans_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkloadPlansResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'logical_cluster_name' in local_var_params:
+            query_params.append(('logical_cluster_name', local_var_params['logical_cluster_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_workload_queue_async(self, request):
         """查询工作负载队列
 

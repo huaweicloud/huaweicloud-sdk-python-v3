@@ -31,9 +31,9 @@ class CreateOrUpdateStoragePolicyStatementReq:
 
         The model defined in huaweicloud sdk
 
-        :param actions: 客户端访问存储可操作的权限合集 允许为空,为空时配置了该策略的用户,通过云办公客户端接入后仅可查看文件列表,不可上传下载 * &#x60;PutObject&#x60; -  上传、修改、重命名、移动 * &#x60;DeleteObject&#x60; - 删除 * &#x60;GetObject&#x60; - 下载 注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个
+        :param actions: 客户端访问存储可操作的权限合集 允许为空，为空时配置了该策略的用户，通过云办公客户端接入后仅可查看文件列表，不可上传下载。 * &#x60;PutObject&#x60; -  上传、修改、重命名、移动。 * &#x60;DeleteObject&#x60; - 删除。 * &#x60;GetObject&#x60; - 下载。 注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
         :type actions: list[str]
-        :param roam_actions: 云端访问存储可操作的权限合集,不允许为空 * &#x60;PutObject&#x60; -  上传、修改、重命名、移动 * &#x60;DeleteObject&#x60; - 删除 * &#x60;GetObject&#x60; - 下载           注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个
+        :param roam_actions: 云端访问存储可操作的权限合集，不允许为空。 * &#x60;PutObject&#x60; -  上传、修改、重命名、移动。 * &#x60;DeleteObject&#x60; - 删除。 * &#x60;GetObject&#x60; - 下载 。          注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
         :type roam_actions: list[str]
         """
         
@@ -51,7 +51,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
     def actions(self):
         """Gets the actions of this CreateOrUpdateStoragePolicyStatementReq.
 
-        客户端访问存储可操作的权限合集 允许为空,为空时配置了该策略的用户,通过云办公客户端接入后仅可查看文件列表,不可上传下载 * `PutObject` -  上传、修改、重命名、移动 * `DeleteObject` - 删除 * `GetObject` - 下载 注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个
+        客户端访问存储可操作的权限合集 允许为空，为空时配置了该策略的用户，通过云办公客户端接入后仅可查看文件列表，不可上传下载。 * `PutObject` -  上传、修改、重命名、移动。 * `DeleteObject` - 删除。 * `GetObject` - 下载。 注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
 
         :return: The actions of this CreateOrUpdateStoragePolicyStatementReq.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
     def actions(self, actions):
         """Sets the actions of this CreateOrUpdateStoragePolicyStatementReq.
 
-        客户端访问存储可操作的权限合集 允许为空,为空时配置了该策略的用户,通过云办公客户端接入后仅可查看文件列表,不可上传下载 * `PutObject` -  上传、修改、重命名、移动 * `DeleteObject` - 删除 * `GetObject` - 下载 注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个
+        客户端访问存储可操作的权限合集 允许为空，为空时配置了该策略的用户，通过云办公客户端接入后仅可查看文件列表，不可上传下载。 * `PutObject` -  上传、修改、重命名、移动。 * `DeleteObject` - 删除。 * `GetObject` - 下载。 注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
 
         :param actions: The actions of this CreateOrUpdateStoragePolicyStatementReq.
         :type actions: list[str]
@@ -73,7 +73,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
     def roam_actions(self):
         """Gets the roam_actions of this CreateOrUpdateStoragePolicyStatementReq.
 
-        云端访问存储可操作的权限合集,不允许为空 * `PutObject` -  上传、修改、重命名、移动 * `DeleteObject` - 删除 * `GetObject` - 下载           注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个
+        云端访问存储可操作的权限合集，不允许为空。 * `PutObject` -  上传、修改、重命名、移动。 * `DeleteObject` - 删除。 * `GetObject` - 下载 。          注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
 
         :return: The roam_actions of this CreateOrUpdateStoragePolicyStatementReq.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
     def roam_actions(self, roam_actions):
         """Sets the roam_actions of this CreateOrUpdateStoragePolicyStatementReq.
 
-        云端访问存储可操作的权限合集,不允许为空 * `PutObject` -  上传、修改、重命名、移动 * `DeleteObject` - 删除 * `GetObject` - 下载           注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个
+        云端访问存储可操作的权限合集，不允许为空。 * `PutObject` -  上传、修改、重命名、移动。 * `DeleteObject` - 删除。 * `GetObject` - 下载 。          注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
 
         :param roam_actions: The roam_actions of this CreateOrUpdateStoragePolicyStatementReq.
         :type roam_actions: list[str]

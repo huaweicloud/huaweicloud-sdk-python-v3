@@ -33,7 +33,7 @@ class RegionManagedList:
 
         :param region: 区域名字。
         :type region: str
-        :param region_status: available or unavailable。
+        :param region_status: 区域的状态，取值为可用或者不可用。
         :type region_status: str
         """
         
@@ -74,7 +74,7 @@ class RegionManagedList:
     def region_status(self):
         """Gets the region_status of this RegionManagedList.
 
-        available or unavailable。
+        区域的状态，取值为可用或者不可用。
 
         :return: The region_status of this RegionManagedList.
         :rtype: str
@@ -85,7 +85,7 @@ class RegionManagedList:
     def region_status(self, region_status):
         """Sets the region_status of this RegionManagedList.
 
-        available or unavailable。
+        区域的状态，取值为可用或者不可用。
 
         :param region_status: The region_status of this RegionManagedList.
         :type region_status: str

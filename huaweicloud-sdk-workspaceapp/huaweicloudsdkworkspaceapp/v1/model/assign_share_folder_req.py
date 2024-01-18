@@ -33,11 +33,11 @@ class AssignShareFolderReq:
 
         The model defined in huaweicloud sdk
 
-        :param storage_claim_id: WKS存储目录声明ID
+        :param storage_claim_id: WKS存储目录声明ID。
         :type storage_claim_id: str
-        :param add_items: 增加的成员列表
+        :param add_items: 增加的成员列表。
         :type add_items: list[:class:`huaweicloudsdkworkspaceapp.v1.Assignment`]
-        :param del_items: 移除的成员列表
+        :param del_items: 移除的成员列表。
         :type del_items: list[:class:`huaweicloudsdkworkspaceapp.v1.Attachment`]
         """
         
@@ -58,7 +58,7 @@ class AssignShareFolderReq:
     def storage_claim_id(self):
         """Gets the storage_claim_id of this AssignShareFolderReq.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :return: The storage_claim_id of this AssignShareFolderReq.
         :rtype: str
@@ -69,7 +69,7 @@ class AssignShareFolderReq:
     def storage_claim_id(self, storage_claim_id):
         """Sets the storage_claim_id of this AssignShareFolderReq.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :param storage_claim_id: The storage_claim_id of this AssignShareFolderReq.
         :type storage_claim_id: str
@@ -80,7 +80,7 @@ class AssignShareFolderReq:
     def add_items(self):
         """Gets the add_items of this AssignShareFolderReq.
 
-        增加的成员列表
+        增加的成员列表。
 
         :return: The add_items of this AssignShareFolderReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.Assignment`]
@@ -91,7 +91,7 @@ class AssignShareFolderReq:
     def add_items(self, add_items):
         """Sets the add_items of this AssignShareFolderReq.
 
-        增加的成员列表
+        增加的成员列表。
 
         :param add_items: The add_items of this AssignShareFolderReq.
         :type add_items: list[:class:`huaweicloudsdkworkspaceapp.v1.Assignment`]
@@ -102,7 +102,7 @@ class AssignShareFolderReq:
     def del_items(self):
         """Gets the del_items of this AssignShareFolderReq.
 
-        移除的成员列表
+        移除的成员列表。
 
         :return: The del_items of this AssignShareFolderReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.Attachment`]
@@ -113,7 +113,7 @@ class AssignShareFolderReq:
     def del_items(self, del_items):
         """Sets the del_items of this AssignShareFolderReq.
 
-        移除的成员列表
+        移除的成员列表。
 
         :param del_items: The del_items of this AssignShareFolderReq.
         :type del_items: list[:class:`huaweicloudsdkworkspaceapp.v1.Attachment`]

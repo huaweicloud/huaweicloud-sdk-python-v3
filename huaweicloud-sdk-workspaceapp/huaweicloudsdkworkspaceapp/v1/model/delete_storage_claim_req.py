@@ -29,7 +29,7 @@ class DeleteStorageClaimReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: storage_claim_id,数量区间 [1, 50]
+        :param items: storage_claim_id,数量区间 [1, 50]。
         :type items: list[str]
         """
         
@@ -44,7 +44,7 @@ class DeleteStorageClaimReq:
     def items(self):
         """Gets the items of this DeleteStorageClaimReq.
 
-        storage_claim_id,数量区间 [1, 50]
+        storage_claim_id,数量区间 [1, 50]。
 
         :return: The items of this DeleteStorageClaimReq.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class DeleteStorageClaimReq:
     def items(self, items):
         """Sets the items of this DeleteStorageClaimReq.
 
-        storage_claim_id,数量区间 [1, 50]
+        storage_claim_id,数量区间 [1, 50]。
 
         :param items: The items of this DeleteStorageClaimReq.
         :type items: list[str]

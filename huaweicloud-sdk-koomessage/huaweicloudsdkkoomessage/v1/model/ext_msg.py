@@ -53,7 +53,7 @@ class ExtMsg:
         :type browser_floor_url: str
         :param depend_engine_ver: 依赖的快应用引擎版本号，长度范围为1-50个字符。 &gt; action_type&#x3D;OPEN_QUICK必填，其他不填。 
         :type depend_engine_ver: str
-        :param third_service_name: 第三方服务名，长度范围为1-50个字符。 &gt; action_type&#x3D;OPEN_QUICK必填，其他不填。 
+        :param third_service_name: 第三方服务名，长度范围为1-50个字符。 &gt; action_type&#x3D;OPEN_QUICK或OPEN_APP必填，其他不填。 
         :type third_service_name: str
         """
         
@@ -219,7 +219,7 @@ class ExtMsg:
     def third_service_name(self):
         """Gets the third_service_name of this ExtMsg.
 
-        第三方服务名，长度范围为1-50个字符。 > action_type=OPEN_QUICK必填，其他不填。 
+        第三方服务名，长度范围为1-50个字符。 > action_type=OPEN_QUICK或OPEN_APP必填，其他不填。 
 
         :return: The third_service_name of this ExtMsg.
         :rtype: str
@@ -230,7 +230,7 @@ class ExtMsg:
     def third_service_name(self, third_service_name):
         """Sets the third_service_name of this ExtMsg.
 
-        第三方服务名，长度范围为1-50个字符。 > action_type=OPEN_QUICK必填，其他不填。 
+        第三方服务名，长度范围为1-50个字符。 > action_type=OPEN_QUICK或OPEN_APP必填，其他不填。 
 
         :param third_service_name: The third_service_name of this ExtMsg.
         :type third_service_name: str

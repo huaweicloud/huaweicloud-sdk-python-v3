@@ -18,15 +18,17 @@ class StartJobRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'job_name': 'str'
+        'job_name': 'str',
+        'body': 'CdmStartJobReq'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'job_name': 'job_name'
+        'job_name': 'job_name',
+        'body': 'body'
     }
 
-    def __init__(self, cluster_id=None, job_name=None):
+    def __init__(self, cluster_id=None, job_name=None, body=None):
         """StartJobRequest
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class StartJobRequest:
         :type cluster_id: str
         :param job_name: 作业名称
         :type job_name: str
+        :param body: Body of the StartJobRequest
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmStartJobReq`
         """
         
         
 
         self._cluster_id = None
         self._job_name = None
+        self._body = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.job_name = job_name
+        if body is not None:
+            self.body = body
 
     @property
     def cluster_id(self):
@@ -89,6 +96,24 @@ class StartJobRequest:
         :type job_name: str
         """
         self._job_name = job_name
+
+    @property
+    def body(self):
+        """Gets the body of this StartJobRequest.
+
+        :return: The body of this StartJobRequest.
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmStartJobReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this StartJobRequest.
+
+        :param body: The body of this StartJobRequest.
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmStartJobReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

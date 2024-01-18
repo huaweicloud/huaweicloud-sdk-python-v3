@@ -31,9 +31,9 @@ class Nic:
 
         The model defined in huaweicloud sdk
 
-        :param ip_address: IP地址
+        :param ip_address: IP地址。
         :type ip_address: str
-        :param subnet_id: 网卡对应的子网ID
+        :param subnet_id: 网卡对应的子网ID。
         :type subnet_id: str
         """
         
@@ -52,7 +52,7 @@ class Nic:
     def ip_address(self):
         """Gets the ip_address of this Nic.
 
-        IP地址
+        IP地址。
 
         :return: The ip_address of this Nic.
         :rtype: str
@@ -63,7 +63,7 @@ class Nic:
     def ip_address(self, ip_address):
         """Sets the ip_address of this Nic.
 
-        IP地址
+        IP地址。
 
         :param ip_address: The ip_address of this Nic.
         :type ip_address: str
@@ -74,7 +74,7 @@ class Nic:
     def subnet_id(self):
         """Gets the subnet_id of this Nic.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :return: The subnet_id of this Nic.
         :rtype: str
@@ -85,7 +85,7 @@ class Nic:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this Nic.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :param subnet_id: The subnet_id of this Nic.
         :type subnet_id: str

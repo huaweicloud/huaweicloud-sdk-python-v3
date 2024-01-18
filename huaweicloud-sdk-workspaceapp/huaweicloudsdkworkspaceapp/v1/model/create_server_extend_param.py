@@ -39,13 +39,13 @@ class CreateServerExtendParam:
 
         :param charging_mode: 计费模式，取值范围： - prePaid-预付费，即包年包月； - postPaid-后付费，即按需付费；
         :type charging_mode: str
-        :param period_type: 周期类型 2：包月；3：包年* chargingMode为prePaid时生效且为必选值;
+        :param period_type: 周期类型 2：包月；3：包年* chargingMode为prePaid时生效且为必选值。
         :type period_type: int
-        :param period_num: 订购周期数，chargingMode为prePaid时生效且为必选值；periodNum为正整数。取值范围： &gt; - periodType&#x3D;2（周期类型为月）时，取值为[1，9]； &gt; - periodType&#x3D;3（周期类型为年）时，取值为[1，3]；
+        :param period_num: 订购周期数，chargingMode为prePaid时生效且为必选值，periodNum为正整数，取值范围： &gt; - periodType&#x3D;2（周期类型为月）时，取值为[1，9]。 &gt; - periodType&#x3D;3（周期类型为年）时，取值为[1，3]。
         :type period_num: int
-        :param is_auto_renew: 是否是自动续订，默认不填为false &gt;- false 不自动续订 &gt;- true 自动续订
+        :param is_auto_renew: 是否是自动续订，默认不填为false。 &gt;- false 不自动续订。 &gt;- true 自动续订。
         :type is_auto_renew: bool
-        :param is_auto_pay: 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。 &gt; - true ：是（自动支付） &gt; - false：否（需要客户手动支付）
+        :param is_auto_pay: 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。 &gt; - true ：是（自动支付）。 &gt; - false：否（需要客户手动支付）。
         :type is_auto_pay: bool
         """
         
@@ -95,7 +95,7 @@ class CreateServerExtendParam:
     def period_type(self):
         """Gets the period_type of this CreateServerExtendParam.
 
-        周期类型 2：包月；3：包年* chargingMode为prePaid时生效且为必选值;
+        周期类型 2：包月；3：包年* chargingMode为prePaid时生效且为必选值。
 
         :return: The period_type of this CreateServerExtendParam.
         :rtype: int
@@ -106,7 +106,7 @@ class CreateServerExtendParam:
     def period_type(self, period_type):
         """Sets the period_type of this CreateServerExtendParam.
 
-        周期类型 2：包月；3：包年* chargingMode为prePaid时生效且为必选值;
+        周期类型 2：包月；3：包年* chargingMode为prePaid时生效且为必选值。
 
         :param period_type: The period_type of this CreateServerExtendParam.
         :type period_type: int
@@ -117,7 +117,7 @@ class CreateServerExtendParam:
     def period_num(self):
         """Gets the period_num of this CreateServerExtendParam.
 
-        订购周期数，chargingMode为prePaid时生效且为必选值；periodNum为正整数。取值范围： > - periodType=2（周期类型为月）时，取值为[1，9]； > - periodType=3（周期类型为年）时，取值为[1，3]；
+        订购周期数，chargingMode为prePaid时生效且为必选值，periodNum为正整数，取值范围： > - periodType=2（周期类型为月）时，取值为[1，9]。 > - periodType=3（周期类型为年）时，取值为[1，3]。
 
         :return: The period_num of this CreateServerExtendParam.
         :rtype: int
@@ -128,7 +128,7 @@ class CreateServerExtendParam:
     def period_num(self, period_num):
         """Sets the period_num of this CreateServerExtendParam.
 
-        订购周期数，chargingMode为prePaid时生效且为必选值；periodNum为正整数。取值范围： > - periodType=2（周期类型为月）时，取值为[1，9]； > - periodType=3（周期类型为年）时，取值为[1，3]；
+        订购周期数，chargingMode为prePaid时生效且为必选值，periodNum为正整数，取值范围： > - periodType=2（周期类型为月）时，取值为[1，9]。 > - periodType=3（周期类型为年）时，取值为[1，3]。
 
         :param period_num: The period_num of this CreateServerExtendParam.
         :type period_num: int
@@ -139,7 +139,7 @@ class CreateServerExtendParam:
     def is_auto_renew(self):
         """Gets the is_auto_renew of this CreateServerExtendParam.
 
-        是否是自动续订，默认不填为false >- false 不自动续订 >- true 自动续订
+        是否是自动续订，默认不填为false。 >- false 不自动续订。 >- true 自动续订。
 
         :return: The is_auto_renew of this CreateServerExtendParam.
         :rtype: bool
@@ -150,7 +150,7 @@ class CreateServerExtendParam:
     def is_auto_renew(self, is_auto_renew):
         """Sets the is_auto_renew of this CreateServerExtendParam.
 
-        是否是自动续订，默认不填为false >- false 不自动续订 >- true 自动续订
+        是否是自动续订，默认不填为false。 >- false 不自动续订。 >- true 自动续订。
 
         :param is_auto_renew: The is_auto_renew of this CreateServerExtendParam.
         :type is_auto_renew: bool
@@ -161,7 +161,7 @@ class CreateServerExtendParam:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this CreateServerExtendParam.
 
-        下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。 > - true ：是（自动支付） > - false：否（需要客户手动支付）
+        下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。 > - true ：是（自动支付）。 > - false：否（需要客户手动支付）。
 
         :return: The is_auto_pay of this CreateServerExtendParam.
         :rtype: bool
@@ -172,7 +172,7 @@ class CreateServerExtendParam:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this CreateServerExtendParam.
 
-        下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。 > - true ：是（自动支付） > - false：否（需要客户手动支付）
+        下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。 > - true ：是（自动支付）。 > - false：否（需要客户手动支付）。
 
         :param is_auto_pay: The is_auto_pay of this CreateServerExtendParam.
         :type is_auto_pay: bool

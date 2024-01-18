@@ -30,7 +30,7 @@ class ListVolumeTypeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param volume_types: 磁盘列表
+        :param volume_types: 磁盘列表。
         :type volume_types: list[:class:`huaweicloudsdkworkspaceapp.v1.VolumeTypeInfo`]
         """
         
@@ -46,7 +46,7 @@ class ListVolumeTypeResponse(SdkResponse):
     def volume_types(self):
         """Gets the volume_types of this ListVolumeTypeResponse.
 
-        磁盘列表
+        磁盘列表。
 
         :return: The volume_types of this ListVolumeTypeResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.VolumeTypeInfo`]
@@ -57,7 +57,7 @@ class ListVolumeTypeResponse(SdkResponse):
     def volume_types(self, volume_types):
         """Sets the volume_types of this ListVolumeTypeResponse.
 
-        磁盘列表
+        磁盘列表。
 
         :param volume_types: The volume_types of this ListVolumeTypeResponse.
         :type volume_types: list[:class:`huaweicloudsdkworkspaceapp.v1.VolumeTypeInfo`]

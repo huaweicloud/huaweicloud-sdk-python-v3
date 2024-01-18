@@ -39,17 +39,17 @@ class PersistentStorage:
 
         The model defined in huaweicloud sdk
 
-        :param id: WKS存储ID
+        :param id: WKS存储ID。
         :type id: str
-        :param name: 名称
+        :param name: 名称。
         :type name: str
         :param storage_metadata: 
         :type storage_metadata: :class:`huaweicloudsdkworkspaceapp.v1.StorageMetadata`
-        :param create_time: 创建时间
+        :param create_time: 创建时间。
         :type create_time: datetime
-        :param user_claim_count: 个人目录声明数量
+        :param user_claim_count: 个人目录声明数量。
         :type user_claim_count: int
-        :param share_claim_count: 共享目录声明数量
+        :param share_claim_count: 共享目录声明数量。
         :type share_claim_count: int
         """
         
@@ -80,7 +80,7 @@ class PersistentStorage:
     def id(self):
         """Gets the id of this PersistentStorage.
 
-        WKS存储ID
+        WKS存储ID。
 
         :return: The id of this PersistentStorage.
         :rtype: str
@@ -91,7 +91,7 @@ class PersistentStorage:
     def id(self, id):
         """Sets the id of this PersistentStorage.
 
-        WKS存储ID
+        WKS存储ID。
 
         :param id: The id of this PersistentStorage.
         :type id: str
@@ -102,7 +102,7 @@ class PersistentStorage:
     def name(self):
         """Gets the name of this PersistentStorage.
 
-        名称
+        名称。
 
         :return: The name of this PersistentStorage.
         :rtype: str
@@ -113,7 +113,7 @@ class PersistentStorage:
     def name(self, name):
         """Sets the name of this PersistentStorage.
 
-        名称
+        名称。
 
         :param name: The name of this PersistentStorage.
         :type name: str
@@ -142,7 +142,7 @@ class PersistentStorage:
     def create_time(self):
         """Gets the create_time of this PersistentStorage.
 
-        创建时间
+        创建时间。
 
         :return: The create_time of this PersistentStorage.
         :rtype: datetime
@@ -153,7 +153,7 @@ class PersistentStorage:
     def create_time(self, create_time):
         """Sets the create_time of this PersistentStorage.
 
-        创建时间
+        创建时间。
 
         :param create_time: The create_time of this PersistentStorage.
         :type create_time: datetime
@@ -164,7 +164,7 @@ class PersistentStorage:
     def user_claim_count(self):
         """Gets the user_claim_count of this PersistentStorage.
 
-        个人目录声明数量
+        个人目录声明数量。
 
         :return: The user_claim_count of this PersistentStorage.
         :rtype: int
@@ -175,7 +175,7 @@ class PersistentStorage:
     def user_claim_count(self, user_claim_count):
         """Sets the user_claim_count of this PersistentStorage.
 
-        个人目录声明数量
+        个人目录声明数量。
 
         :param user_claim_count: The user_claim_count of this PersistentStorage.
         :type user_claim_count: int
@@ -186,7 +186,7 @@ class PersistentStorage:
     def share_claim_count(self):
         """Gets the share_claim_count of this PersistentStorage.
 
-        共享目录声明数量
+        共享目录声明数量。
 
         :return: The share_claim_count of this PersistentStorage.
         :rtype: int
@@ -197,7 +197,7 @@ class PersistentStorage:
     def share_claim_count(self, share_claim_count):
         """Sets the share_claim_count of this PersistentStorage.
 
-        共享目录声明数量
+        共享目录声明数量。
 
         :param share_claim_count: The share_claim_count of this PersistentStorage.
         :type share_claim_count: int

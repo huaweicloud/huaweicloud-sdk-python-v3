@@ -31,7 +31,9 @@ class CreateListenerReq:
         'client_ca_tls_container_ref': 'str',
         'sni_container_refs': 'list[str]',
         'insert_headers': 'InsertHeader',
-        'tls_ciphers_policy': 'str'
+        'tls_ciphers_policy': 'str',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class CreateListenerReq:
         'client_ca_tls_container_ref': 'client_ca_tls_container_ref',
         'sni_container_refs': 'sni_container_refs',
         'insert_headers': 'insert_headers',
-        'tls_ciphers_policy': 'tls_ciphers_policy'
+        'tls_ciphers_policy': 'tls_ciphers_policy',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, loadbalancer_id=None, protocol=None, protocol_port=None, tenant_id=None, name=None, description=None, admin_state_up=None, connection_limit=None, http2_enable=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None):
+    def __init__(self, loadbalancer_id=None, protocol=None, protocol_port=None, tenant_id=None, name=None, description=None, admin_state_up=None, connection_limit=None, http2_enable=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None, protection_status=None, protection_reason=None):
         """CreateListenerReq
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,10 @@ class CreateListenerReq:
         :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
         :param tls_ciphers_policy: 监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。
         :type tls_ciphers_policy: str
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -106,6 +114,8 @@ class CreateListenerReq:
         self._sni_container_refs = None
         self._insert_headers = None
         self._tls_ciphers_policy = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         self.loadbalancer_id = loadbalancer_id
@@ -135,6 +145,10 @@ class CreateListenerReq:
             self.insert_headers = insert_headers
         if tls_ciphers_policy is not None:
             self.tls_ciphers_policy = tls_ciphers_policy
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def loadbalancer_id(self):
@@ -461,6 +475,50 @@ class CreateListenerReq:
         :type tls_ciphers_policy: str
         """
         self._tls_ciphers_policy = tls_ciphers_policy
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this CreateListenerReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this CreateListenerReq.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this CreateListenerReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this CreateListenerReq.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this CreateListenerReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this CreateListenerReq.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this CreateListenerReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this CreateListenerReq.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

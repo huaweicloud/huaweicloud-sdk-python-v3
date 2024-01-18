@@ -67,9 +67,9 @@ class CreateServerGroupReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格 2. 长度范围1~64个字符
+        :param name: 服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
         :type name: str
-        :param image_id: 服务器组关联的镜像ID，用于创建对应组下的云服务器
+        :param image_id: 服务器组关联的镜像ID，用于创建对应组下的云服务器。
         :type image_id: str
         :param image_product_id: 服务器组的镜像产品ID，当镜像为云市场镜像时，该字段必填。
         :type image_product_id: str
@@ -77,35 +77,35 @@ class CreateServerGroupReq:
         :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         :param os_type: 
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
-        :param description: 服务器组描述
+        :param description: 服务器组描述。
         :type description: str
         :param route_policy: 
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
         :param product_id: 产品ID。 &gt; - 获取方式详见产品套餐管理ListProduct：\&quot;GET  /v1/{project_id}/product\&quot;。
         :type product_id: str
-        :param vpc_id: 虚拟私有云ID
+        :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
-        :param subnet_id: 网卡对应的子网ID
+        :param subnet_id: 网卡对应的子网ID。
         :type subnet_id: str
         :param system_disk_type: 
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
-        :param system_disk_size: 磁盘容量，单位GB
+        :param system_disk_size: 磁盘容量，单位GB。
         :type system_disk_size: int
-        :param ou_name: 默认组织名称
+        :param ou_name: 默认组织名称。
         :type ou_name: str
-        :param cluster_id: 云服务器系统盘对应的存储池的ID
+        :param cluster_id: 云服务器系统盘对应的存储池的ID。
         :type cluster_id: str
         :param availability_zone: 可用分区。 &gt; - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 &gt; - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
         :type availability_zone: str
         :param ip_virtual: 
         :type ip_virtual: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`
-        :param is_vdi: 是否为vdi单会话模式
+        :param is_vdi: 是否为vdi单会话模式。
         :type is_vdi: bool
         :param app_type: 
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         :param extra_session_type: 
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
-        :param extra_session_size: 付费会话数，单位/个
+        :param extra_session_size: 付费会话数，单位/个。
         :type extra_session_size: int
         """
         
@@ -169,7 +169,7 @@ class CreateServerGroupReq:
     def name(self):
         """Gets the name of this CreateServerGroupReq.
 
-        服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格 2. 长度范围1~64个字符
+        服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
         :return: The name of this CreateServerGroupReq.
         :rtype: str
@@ -180,7 +180,7 @@ class CreateServerGroupReq:
     def name(self, name):
         """Sets the name of this CreateServerGroupReq.
 
-        服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格 2. 长度范围1~64个字符
+        服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
         :param name: The name of this CreateServerGroupReq.
         :type name: str
@@ -191,7 +191,7 @@ class CreateServerGroupReq:
     def image_id(self):
         """Gets the image_id of this CreateServerGroupReq.
 
-        服务器组关联的镜像ID，用于创建对应组下的云服务器
+        服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
         :return: The image_id of this CreateServerGroupReq.
         :rtype: str
@@ -202,7 +202,7 @@ class CreateServerGroupReq:
     def image_id(self, image_id):
         """Sets the image_id of this CreateServerGroupReq.
 
-        服务器组关联的镜像ID，用于创建对应组下的云服务器
+        服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
         :param image_id: The image_id of this CreateServerGroupReq.
         :type image_id: str
@@ -271,7 +271,7 @@ class CreateServerGroupReq:
     def description(self):
         """Gets the description of this CreateServerGroupReq.
 
-        服务器组描述
+        服务器组描述。
 
         :return: The description of this CreateServerGroupReq.
         :rtype: str
@@ -282,7 +282,7 @@ class CreateServerGroupReq:
     def description(self, description):
         """Sets the description of this CreateServerGroupReq.
 
-        服务器组描述
+        服务器组描述。
 
         :param description: The description of this CreateServerGroupReq.
         :type description: str
@@ -333,7 +333,7 @@ class CreateServerGroupReq:
     def vpc_id(self):
         """Gets the vpc_id of this CreateServerGroupReq.
 
-        虚拟私有云ID
+        虚拟私有云ID。
 
         :return: The vpc_id of this CreateServerGroupReq.
         :rtype: str
@@ -344,7 +344,7 @@ class CreateServerGroupReq:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateServerGroupReq.
 
-        虚拟私有云ID
+        虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this CreateServerGroupReq.
         :type vpc_id: str
@@ -355,7 +355,7 @@ class CreateServerGroupReq:
     def subnet_id(self):
         """Gets the subnet_id of this CreateServerGroupReq.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :return: The subnet_id of this CreateServerGroupReq.
         :rtype: str
@@ -366,7 +366,7 @@ class CreateServerGroupReq:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this CreateServerGroupReq.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :param subnet_id: The subnet_id of this CreateServerGroupReq.
         :type subnet_id: str
@@ -395,7 +395,7 @@ class CreateServerGroupReq:
     def system_disk_size(self):
         """Gets the system_disk_size of this CreateServerGroupReq.
 
-        磁盘容量，单位GB
+        磁盘容量，单位GB。
 
         :return: The system_disk_size of this CreateServerGroupReq.
         :rtype: int
@@ -406,7 +406,7 @@ class CreateServerGroupReq:
     def system_disk_size(self, system_disk_size):
         """Sets the system_disk_size of this CreateServerGroupReq.
 
-        磁盘容量，单位GB
+        磁盘容量，单位GB。
 
         :param system_disk_size: The system_disk_size of this CreateServerGroupReq.
         :type system_disk_size: int
@@ -417,7 +417,7 @@ class CreateServerGroupReq:
     def ou_name(self):
         """Gets the ou_name of this CreateServerGroupReq.
 
-        默认组织名称
+        默认组织名称。
 
         :return: The ou_name of this CreateServerGroupReq.
         :rtype: str
@@ -428,7 +428,7 @@ class CreateServerGroupReq:
     def ou_name(self, ou_name):
         """Sets the ou_name of this CreateServerGroupReq.
 
-        默认组织名称
+        默认组织名称。
 
         :param ou_name: The ou_name of this CreateServerGroupReq.
         :type ou_name: str
@@ -439,7 +439,7 @@ class CreateServerGroupReq:
     def cluster_id(self):
         """Gets the cluster_id of this CreateServerGroupReq.
 
-        云服务器系统盘对应的存储池的ID
+        云服务器系统盘对应的存储池的ID。
 
         :return: The cluster_id of this CreateServerGroupReq.
         :rtype: str
@@ -450,7 +450,7 @@ class CreateServerGroupReq:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this CreateServerGroupReq.
 
-        云服务器系统盘对应的存储池的ID
+        云服务器系统盘对应的存储池的ID。
 
         :param cluster_id: The cluster_id of this CreateServerGroupReq.
         :type cluster_id: str
@@ -501,7 +501,7 @@ class CreateServerGroupReq:
     def is_vdi(self):
         """Gets the is_vdi of this CreateServerGroupReq.
 
-        是否为vdi单会话模式
+        是否为vdi单会话模式。
 
         :return: The is_vdi of this CreateServerGroupReq.
         :rtype: bool
@@ -512,7 +512,7 @@ class CreateServerGroupReq:
     def is_vdi(self, is_vdi):
         """Sets the is_vdi of this CreateServerGroupReq.
 
-        是否为vdi单会话模式
+        是否为vdi单会话模式。
 
         :param is_vdi: The is_vdi of this CreateServerGroupReq.
         :type is_vdi: bool
@@ -559,7 +559,7 @@ class CreateServerGroupReq:
     def extra_session_size(self):
         """Gets the extra_session_size of this CreateServerGroupReq.
 
-        付费会话数，单位/个
+        付费会话数，单位/个。
 
         :return: The extra_session_size of this CreateServerGroupReq.
         :rtype: int
@@ -570,7 +570,7 @@ class CreateServerGroupReq:
     def extra_session_size(self, extra_session_size):
         """Sets the extra_session_size of this CreateServerGroupReq.
 
-        付费会话数，单位/个
+        付费会话数，单位/个。
 
         :param extra_session_size: The extra_session_size of this CreateServerGroupReq.
         :type extra_session_size: int

@@ -256,6 +256,7 @@ http_config.proxy_protocol = 'http'
 http_config.proxy_host = 'proxy.huaweicloud.com'
 http_config.proxy_port = 80
 # Configure the username and password if the proxy requires authentication
+# In this example, username and password are stored in environment variables. Please configure the environment variables PROXY_USERNAME and PROXY_PASSWORD before running this example.
 http_config.proxy_user = os.getenv("PROXY_USERNAME")
 http_config.proxy_password = os.getenv("PROXY_PASSWORD")
 
@@ -424,8 +425,8 @@ Getting Authentication from providers is supported since `v3.0.98`
 
 | Environment Variables  |  Notice |
 | ------------ | ------------ |
-| HUAWEICLOUD_SDK_AK  | Required，AccessKey  |
-| HUAWEICLOUD_SDK_SK  |  Required，SecretKey |
+| HUAWEICLOUD_SDK_AK  | Required, AccessKey  |
+| HUAWEICLOUD_SDK_SK  |  Required, SecretKey |
 | HUAWEICLOUD_SDK_SECURITY_TOKEN  | Optional, this parameter needs to be specified when using temporary ak/sk  |
 | HUAWEICLOUD_SDK_PROJECT_ID  | Optional, used for regional services, required in multi-ProjectId scenarios  |
 | HUAWEICLOUD_SDK_DOMAIN_ID  | Optional, used for global services  |
@@ -503,8 +504,8 @@ The profile will be read from the user's home directory by default, linux`~/.hua
 
 | Configuration Parameters  |  Notice |
 | ------------ | ------------ |
-| ak  | Required，AccessKey  |
-| sk  |  Required，SecretKey |
+| ak  | Required, AccessKey  |
+| sk  |  Required, SecretKey |
 | security_token  | Optional, this parameter needs to be specified when using temporary ak/sk  |
 | project_id  | Optional, used for regional services, required in multi-ProjectId scenarios  |
 | domain_id  | Optional, used for global services  |
@@ -732,7 +733,22 @@ credentials = BasicCredentials(ak, sk).with_iam_endpoint(iam_endpoint)
 
 ##### 3.3.2 Region configuration [:top:](#user-manual-top)
 
-###### 3.3.2.1 Environment variable [:top:](#user-manual-top)
+###### 3.3.2.1 Code [:top:](#user-manual-top)
+
+```python
+from huaweicloudsdkcore.region.region import Region
+from huaweicloudsdkecs.v2 import EcsClient
+
+# Create a region with custom region id and endpoint
+region = Region("cn-north-9", "https://ecs.cn-north-9.myhuaweicloud.com")
+
+client = EcsClient.new_builder() \
+    .with_credentials(credentials) \
+    .with_region(region) \
+    .build()
+```
+
+###### 3.3.2.2 Environment variable [:top:](#user-manual-top)
 
 Specified by environment variable, the format is `HUAWEICLOUD_SDK_REGION_{SERVICE_NAME}_{REGION_ID}={endpoint}`
 
@@ -754,7 +770,7 @@ A region corresponding to multiple endpoints is supported since **v3.1.60**, if 
 
 The format is `HUAWEICLOUD_SDK_REGION_{SERVICE_NAME}_{REGION_ID}={endpoint1},{endpoint2}`, separate multiple endpoints with commas, such as `HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com,https://ecs.cn-north-9.myhuaweicloud.cn`
 
-###### 3.3.2.2 Profile [:top:](#user-manual-top)
+###### 3.3.2.3 Profile [:top:](#user-manual-top)
 
 The profile will be read from the user's home directory by default, linux`~/.huaweicloud/regions.yaml`,windows`C:\Users\USER_NAME\.huaweicloud\regions.yaml`,the default file may not exist, but if the file exists and the content format is incorrect, an exception will be thrown for parsing errors.
 
@@ -763,7 +779,7 @@ The path to the profile can be modified by configuring the environment variable 
 The file content format is as follows:
 
 ```yaml
-# Serivce name is case-insensitive
+# Service name is case-insensitive
 ECS:
   - id: 'cn-north-1'
     endpoint: 'https://ecs.cn-north-1.myhuaweicloud.com'
@@ -784,9 +800,9 @@ ECS:
       - 'https://ecs.cn-north-1.myhuaweicloud.cn'
 ```
 
-###### 3.3.2.3 Region supply chain [:top:](#user-manual-top)
+###### 3.3.2.4 Region supply chain [:top:](#user-manual-top)
 
-The default order is **environment variables -> profile -> region defined in SDK**, if the region is not found in the above ways, an exception will be thrown.
+The default lookup order is **environment variables -> profile -> region defined in SDK** of method **Region.value_of(region_id)**, if the region is not found in the above ways, an exception **KeyError**  will be thrown.
 
 ```python
 from huaweicloudsdkecs.v2.region.ecs_region import EcsRegion
@@ -948,9 +964,9 @@ if __name__ == "__main__":
 HttpHandler supports method `add_request_handler` and `add_response_handler`.
 
 ### 7. API Invoker [:top:](#user-manual-top)
- 
+
 #### 7.1 Custom request headers [:top:](#user-manual-top)
- 
+
 You can flexibly configure request headers as needed. **Do not** specify common request headers such as `Host`, `Authorization`, `User-Agent`, `Content-Type` unless necessary, as this may cause the errors.
 
 **Sync invoke**

@@ -29,7 +29,7 @@ class UpdateTsviReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: 批量请求列表，一次请求数量区间 [1, 20]
+        :param items: 批量请求列表，一次请求数量区间 [1, 20]。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.UpdateTsvi`]
         """
         
@@ -44,7 +44,7 @@ class UpdateTsviReq:
     def items(self):
         """Gets the items of this UpdateTsviReq.
 
-        批量请求列表，一次请求数量区间 [1, 20]
+        批量请求列表，一次请求数量区间 [1, 20]。
 
         :return: The items of this UpdateTsviReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.UpdateTsvi`]
@@ -55,7 +55,7 @@ class UpdateTsviReq:
     def items(self, items):
         """Sets the items of this UpdateTsviReq.
 
-        批量请求列表，一次请求数量区间 [1, 20]
+        批量请求列表，一次请求数量区间 [1, 20]。
 
         :param items: The items of this UpdateTsviReq.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.UpdateTsvi`]

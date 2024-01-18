@@ -20,20 +20,18 @@ class ShowLandingZoneConfigurationResponse(SdkResponse):
     openapi_types = {
         'common_configuration': 'CommonConfiguration',
         'logging_configuration': 'LoggingConfiguration',
-        'organization_structure': 'list[OrganizationStructureBaseLine]',
-        'regions': 'list[RegionConfigurationList]',
-        'identity_store_email': 'str'
+        'organization_structure': 'list[OrganizationStructureBaseLineRsp]',
+        'regions': 'list[RegionConfigurationList]'
     }
 
     attribute_map = {
         'common_configuration': 'common_configuration',
         'logging_configuration': 'logging_configuration',
         'organization_structure': 'organization_structure',
-        'regions': 'regions',
-        'identity_store_email': 'identity_store_email'
+        'regions': 'regions'
     }
 
-    def __init__(self, common_configuration=None, logging_configuration=None, organization_structure=None, regions=None, identity_store_email=None):
+    def __init__(self, common_configuration=None, logging_configuration=None, organization_structure=None, regions=None):
         """ShowLandingZoneConfigurationResponse
 
         The model defined in huaweicloud sdk
@@ -43,11 +41,9 @@ class ShowLandingZoneConfigurationResponse(SdkResponse):
         :param logging_configuration: 
         :type logging_configuration: :class:`huaweicloudsdkrgc.v1.LoggingConfiguration`
         :param organization_structure: 
-        :type organization_structure: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLine`]
-        :param regions: 纳管的区域
+        :type organization_structure: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLineRsp`]
+        :param regions: 纳管的区域信息。
         :type regions: list[:class:`huaweicloudsdkrgc.v1.RegionConfigurationList`]
-        :param identity_store_email: 管理员账号创建Identity Center用户所用邮箱
-        :type identity_store_email: str
         """
         
         super(ShowLandingZoneConfigurationResponse, self).__init__()
@@ -56,7 +52,6 @@ class ShowLandingZoneConfigurationResponse(SdkResponse):
         self._logging_configuration = None
         self._organization_structure = None
         self._regions = None
-        self._identity_store_email = None
         self.discriminator = None
 
         if common_configuration is not None:
@@ -67,8 +62,6 @@ class ShowLandingZoneConfigurationResponse(SdkResponse):
             self.organization_structure = organization_structure
         if regions is not None:
             self.regions = regions
-        if identity_store_email is not None:
-            self.identity_store_email = identity_store_email
 
     @property
     def common_configuration(self):
@@ -111,7 +104,7 @@ class ShowLandingZoneConfigurationResponse(SdkResponse):
         """Gets the organization_structure of this ShowLandingZoneConfigurationResponse.
 
         :return: The organization_structure of this ShowLandingZoneConfigurationResponse.
-        :rtype: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLine`]
+        :rtype: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLineRsp`]
         """
         return self._organization_structure
 
@@ -120,7 +113,7 @@ class ShowLandingZoneConfigurationResponse(SdkResponse):
         """Sets the organization_structure of this ShowLandingZoneConfigurationResponse.
 
         :param organization_structure: The organization_structure of this ShowLandingZoneConfigurationResponse.
-        :type organization_structure: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLine`]
+        :type organization_structure: list[:class:`huaweicloudsdkrgc.v1.OrganizationStructureBaseLineRsp`]
         """
         self._organization_structure = organization_structure
 
@@ -128,7 +121,7 @@ class ShowLandingZoneConfigurationResponse(SdkResponse):
     def regions(self):
         """Gets the regions of this ShowLandingZoneConfigurationResponse.
 
-        纳管的区域
+        纳管的区域信息。
 
         :return: The regions of this ShowLandingZoneConfigurationResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.RegionConfigurationList`]
@@ -139,34 +132,12 @@ class ShowLandingZoneConfigurationResponse(SdkResponse):
     def regions(self, regions):
         """Sets the regions of this ShowLandingZoneConfigurationResponse.
 
-        纳管的区域
+        纳管的区域信息。
 
         :param regions: The regions of this ShowLandingZoneConfigurationResponse.
         :type regions: list[:class:`huaweicloudsdkrgc.v1.RegionConfigurationList`]
         """
         self._regions = regions
-
-    @property
-    def identity_store_email(self):
-        """Gets the identity_store_email of this ShowLandingZoneConfigurationResponse.
-
-        管理员账号创建Identity Center用户所用邮箱
-
-        :return: The identity_store_email of this ShowLandingZoneConfigurationResponse.
-        :rtype: str
-        """
-        return self._identity_store_email
-
-    @identity_store_email.setter
-    def identity_store_email(self, identity_store_email):
-        """Sets the identity_store_email of this ShowLandingZoneConfigurationResponse.
-
-        管理员账号创建Identity Center用户所用邮箱
-
-        :param identity_store_email: The identity_store_email of this ShowLandingZoneConfigurationResponse.
-        :type identity_store_email: str
-        """
-        self._identity_store_email = identity_store_email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

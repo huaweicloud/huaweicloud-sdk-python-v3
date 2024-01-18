@@ -49,7 +49,7 @@ class ResponseEip:
 
         :param id: 功能说明：公网IP的唯一标识
         :type id: str
-        :param ip_version: 功能说明: 公网IP版本号
+        :param ip_version: 功能说明: 公网IP版本号  取值范围：4, 6
         :type ip_version: int
         :param ip_billing_info: 功能说明：公网IP的订单信息 约束：包周期才会有订单信息，按需资源此字段为空
         :type ip_billing_info: str
@@ -130,7 +130,7 @@ class ResponseEip:
     def ip_version(self):
         """Gets the ip_version of this ResponseEip.
 
-        功能说明: 公网IP版本号
+        功能说明: 公网IP版本号  取值范围：4, 6
 
         :return: The ip_version of this ResponseEip.
         :rtype: int
@@ -141,7 +141,7 @@ class ResponseEip:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ResponseEip.
 
-        功能说明: 公网IP版本号
+        功能说明: 公网IP版本号  取值范围：4, 6
 
         :param ip_version: The ip_version of this ResponseEip.
         :type ip_version: int

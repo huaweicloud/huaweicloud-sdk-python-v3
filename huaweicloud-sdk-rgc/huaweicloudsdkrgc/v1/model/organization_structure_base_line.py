@@ -33,11 +33,11 @@ class OrganizationStructureBaseLine:
 
         The model defined in huaweicloud sdk
 
-        :param organizational_unit_name: OU名称。
+        :param organizational_unit_name: 注册OU名称。
         :type organizational_unit_name: str
         :param organizational_unit_type: 
         :type organizational_unit_type: :class:`huaweicloudsdkrgc.v1.OrganizationalUnitTypeForSetup`
-        :param accounts: 账号基本信息。
+        :param accounts: 纳管账号基本信息。
         :type accounts: list[:class:`huaweicloudsdkrgc.v1.AccountBaseline`]
         """
         
@@ -57,7 +57,7 @@ class OrganizationStructureBaseLine:
     def organizational_unit_name(self):
         """Gets the organizational_unit_name of this OrganizationStructureBaseLine.
 
-        OU名称。
+        注册OU名称。
 
         :return: The organizational_unit_name of this OrganizationStructureBaseLine.
         :rtype: str
@@ -68,7 +68,7 @@ class OrganizationStructureBaseLine:
     def organizational_unit_name(self, organizational_unit_name):
         """Sets the organizational_unit_name of this OrganizationStructureBaseLine.
 
-        OU名称。
+        注册OU名称。
 
         :param organizational_unit_name: The organizational_unit_name of this OrganizationStructureBaseLine.
         :type organizational_unit_name: str
@@ -97,7 +97,7 @@ class OrganizationStructureBaseLine:
     def accounts(self):
         """Gets the accounts of this OrganizationStructureBaseLine.
 
-        账号基本信息。
+        纳管账号基本信息。
 
         :return: The accounts of this OrganizationStructureBaseLine.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.AccountBaseline`]
@@ -108,7 +108,7 @@ class OrganizationStructureBaseLine:
     def accounts(self, accounts):
         """Sets the accounts of this OrganizationStructureBaseLine.
 
-        账号基本信息。
+        纳管账号基本信息。
 
         :param accounts: The accounts of this OrganizationStructureBaseLine.
         :type accounts: list[:class:`huaweicloudsdkrgc.v1.AccountBaseline`]

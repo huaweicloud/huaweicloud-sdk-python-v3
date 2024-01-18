@@ -49,27 +49,27 @@ class UpdateTaskRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 任务id
         :type id: int
-        :param name: name
+        :param name: 任务名称
         :type name: str
-        :param description: description
+        :param description: 描述
         :type description: str
-        :param project_id: project_id
+        :param project_id: 工程id
         :type project_id: int
-        :param run_status: run_status
+        :param run_status: 任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
         :type run_status: int
-        :param run_type: run_type
+        :param run_type: 任务类型（0：旧版本任务；1：融合版本任务）
         :type run_type: int
         :param task_run_info: 
         :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
-        :param case_list: case_list
+        :param case_list: 用例信息
         :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
-        :param operate_mode: operate_mode
+        :param operate_mode: 压力阶段模式，0：时长模式；1：次数模式
         :type operate_mode: int
-        :param bench_concurrent: bench_concurrent
+        :param bench_concurrent: 基准并发
         :type bench_concurrent: int
-        :param related_temp_running_data: related_temp_running_data
+        :param related_temp_running_data: 最近一次运行的报告简略信息
         :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
         """
         
@@ -112,7 +112,7 @@ class UpdateTaskRequestBody:
     def id(self):
         """Gets the id of this UpdateTaskRequestBody.
 
-        id
+        任务id
 
         :return: The id of this UpdateTaskRequestBody.
         :rtype: int
@@ -123,7 +123,7 @@ class UpdateTaskRequestBody:
     def id(self, id):
         """Sets the id of this UpdateTaskRequestBody.
 
-        id
+        任务id
 
         :param id: The id of this UpdateTaskRequestBody.
         :type id: int
@@ -134,7 +134,7 @@ class UpdateTaskRequestBody:
     def name(self):
         """Gets the name of this UpdateTaskRequestBody.
 
-        name
+        任务名称
 
         :return: The name of this UpdateTaskRequestBody.
         :rtype: str
@@ -145,7 +145,7 @@ class UpdateTaskRequestBody:
     def name(self, name):
         """Sets the name of this UpdateTaskRequestBody.
 
-        name
+        任务名称
 
         :param name: The name of this UpdateTaskRequestBody.
         :type name: str
@@ -156,7 +156,7 @@ class UpdateTaskRequestBody:
     def description(self):
         """Gets the description of this UpdateTaskRequestBody.
 
-        description
+        描述
 
         :return: The description of this UpdateTaskRequestBody.
         :rtype: str
@@ -167,7 +167,7 @@ class UpdateTaskRequestBody:
     def description(self, description):
         """Sets the description of this UpdateTaskRequestBody.
 
-        description
+        描述
 
         :param description: The description of this UpdateTaskRequestBody.
         :type description: str
@@ -178,7 +178,7 @@ class UpdateTaskRequestBody:
     def project_id(self):
         """Gets the project_id of this UpdateTaskRequestBody.
 
-        project_id
+        工程id
 
         :return: The project_id of this UpdateTaskRequestBody.
         :rtype: int
@@ -189,7 +189,7 @@ class UpdateTaskRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this UpdateTaskRequestBody.
 
-        project_id
+        工程id
 
         :param project_id: The project_id of this UpdateTaskRequestBody.
         :type project_id: int
@@ -200,7 +200,7 @@ class UpdateTaskRequestBody:
     def run_status(self):
         """Gets the run_status of this UpdateTaskRequestBody.
 
-        run_status
+        任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
 
         :return: The run_status of this UpdateTaskRequestBody.
         :rtype: int
@@ -211,7 +211,7 @@ class UpdateTaskRequestBody:
     def run_status(self, run_status):
         """Sets the run_status of this UpdateTaskRequestBody.
 
-        run_status
+        任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
 
         :param run_status: The run_status of this UpdateTaskRequestBody.
         :type run_status: int
@@ -222,7 +222,7 @@ class UpdateTaskRequestBody:
     def run_type(self):
         """Gets the run_type of this UpdateTaskRequestBody.
 
-        run_type
+        任务类型（0：旧版本任务；1：融合版本任务）
 
         :return: The run_type of this UpdateTaskRequestBody.
         :rtype: int
@@ -233,7 +233,7 @@ class UpdateTaskRequestBody:
     def run_type(self, run_type):
         """Sets the run_type of this UpdateTaskRequestBody.
 
-        run_type
+        任务类型（0：旧版本任务；1：融合版本任务）
 
         :param run_type: The run_type of this UpdateTaskRequestBody.
         :type run_type: int
@@ -262,7 +262,7 @@ class UpdateTaskRequestBody:
     def case_list(self):
         """Gets the case_list of this UpdateTaskRequestBody.
 
-        case_list
+        用例信息
 
         :return: The case_list of this UpdateTaskRequestBody.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
@@ -273,7 +273,7 @@ class UpdateTaskRequestBody:
     def case_list(self, case_list):
         """Sets the case_list of this UpdateTaskRequestBody.
 
-        case_list
+        用例信息
 
         :param case_list: The case_list of this UpdateTaskRequestBody.
         :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
@@ -284,7 +284,7 @@ class UpdateTaskRequestBody:
     def operate_mode(self):
         """Gets the operate_mode of this UpdateTaskRequestBody.
 
-        operate_mode
+        压力阶段模式，0：时长模式；1：次数模式
 
         :return: The operate_mode of this UpdateTaskRequestBody.
         :rtype: int
@@ -295,7 +295,7 @@ class UpdateTaskRequestBody:
     def operate_mode(self, operate_mode):
         """Sets the operate_mode of this UpdateTaskRequestBody.
 
-        operate_mode
+        压力阶段模式，0：时长模式；1：次数模式
 
         :param operate_mode: The operate_mode of this UpdateTaskRequestBody.
         :type operate_mode: int
@@ -306,7 +306,7 @@ class UpdateTaskRequestBody:
     def bench_concurrent(self):
         """Gets the bench_concurrent of this UpdateTaskRequestBody.
 
-        bench_concurrent
+        基准并发
 
         :return: The bench_concurrent of this UpdateTaskRequestBody.
         :rtype: int
@@ -317,7 +317,7 @@ class UpdateTaskRequestBody:
     def bench_concurrent(self, bench_concurrent):
         """Sets the bench_concurrent of this UpdateTaskRequestBody.
 
-        bench_concurrent
+        基准并发
 
         :param bench_concurrent: The bench_concurrent of this UpdateTaskRequestBody.
         :type bench_concurrent: int
@@ -328,7 +328,7 @@ class UpdateTaskRequestBody:
     def related_temp_running_data(self):
         """Gets the related_temp_running_data of this UpdateTaskRequestBody.
 
-        related_temp_running_data
+        最近一次运行的报告简略信息
 
         :return: The related_temp_running_data of this UpdateTaskRequestBody.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
@@ -339,7 +339,7 @@ class UpdateTaskRequestBody:
     def related_temp_running_data(self, related_temp_running_data):
         """Sets the related_temp_running_data of this UpdateTaskRequestBody.
 
-        related_temp_running_data
+        最近一次运行的报告简略信息
 
         :param related_temp_running_data: The related_temp_running_data of this UpdateTaskRequestBody.
         :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]

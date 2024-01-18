@@ -32,9 +32,9 @@ class DeleteTempResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
         """
         
@@ -53,7 +53,7 @@ class DeleteTempResponse(SdkResponse):
     def code(self):
         """Gets the code of this DeleteTempResponse.
 
-        code
+        响应码
 
         :return: The code of this DeleteTempResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class DeleteTempResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this DeleteTempResponse.
 
-        code
+        响应码
 
         :param code: The code of this DeleteTempResponse.
         :type code: str
@@ -75,7 +75,7 @@ class DeleteTempResponse(SdkResponse):
     def message(self):
         """Gets the message of this DeleteTempResponse.
 
-        message
+        响应消息
 
         :return: The message of this DeleteTempResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class DeleteTempResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this DeleteTempResponse.
 
-        message
+        响应消息
 
         :param message: The message of this DeleteTempResponse.
         :type message: str

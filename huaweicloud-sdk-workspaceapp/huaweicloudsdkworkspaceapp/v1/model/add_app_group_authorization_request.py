@@ -31,7 +31,7 @@ class AddAppGroupAuthorizationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言 - zh-cn：中文 - en-us：英文 - fr-fr: 法文
+        :param x_language: 语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
         :type x_language: str
         :param body: Body of the AddAppGroupAuthorizationRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.AppGroupAuthorizeReq`
@@ -52,7 +52,7 @@ class AddAppGroupAuthorizationRequest:
     def x_language(self):
         """Gets the x_language of this AddAppGroupAuthorizationRequest.
 
-        语言 - zh-cn：中文 - en-us：英文 - fr-fr: 法文
+        语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
 
         :return: The x_language of this AddAppGroupAuthorizationRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class AddAppGroupAuthorizationRequest:
     def x_language(self, x_language):
         """Sets the x_language of this AddAppGroupAuthorizationRequest.
 
-        语言 - zh-cn：中文 - en-us：英文 - fr-fr: 法文
+        语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
 
         :param x_language: The x_language of this AddAppGroupAuthorizationRequest.
         :type x_language: str

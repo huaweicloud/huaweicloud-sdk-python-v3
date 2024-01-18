@@ -29,7 +29,7 @@ class ReinstallServerReq:
 
         The model defined in huaweicloud sdk
 
-        :param update_access_agent: 是否自动升级hda版本
+        :param update_access_agent: 是否自动升级hda版本。
         :type update_access_agent: bool
         """
         
@@ -45,7 +45,7 @@ class ReinstallServerReq:
     def update_access_agent(self):
         """Gets the update_access_agent of this ReinstallServerReq.
 
-        是否自动升级hda版本
+        是否自动升级hda版本。
 
         :return: The update_access_agent of this ReinstallServerReq.
         :rtype: bool
@@ -56,7 +56,7 @@ class ReinstallServerReq:
     def update_access_agent(self, update_access_agent):
         """Sets the update_access_agent of this ReinstallServerReq.
 
-        是否自动升级hda版本
+        是否自动升级hda版本。
 
         :param update_access_agent: The update_access_agent of this ReinstallServerReq.
         :type update_access_agent: bool

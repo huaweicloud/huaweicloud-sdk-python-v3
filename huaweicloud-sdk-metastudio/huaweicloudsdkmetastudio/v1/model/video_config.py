@@ -53,9 +53,9 @@ class VideoConfig:
         :type codec: str
         :param bitrate: 输出平均码率。  单位：kbps。  最小值40，最大值30000。 &gt; * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 &gt; * 分身数字人直播码率范围[1000, 8000]。
         :type bitrate: int
-        :param width: 视频宽度。  单位：像素。  最小值320，最大值2560。 &gt; * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 &gt; * clip_mode&#x3D;CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 &gt; * 分身数字人直播目前只支持1080x1920。
+        :param width: 视频宽度。  单位：像素。  &gt; * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 &gt; * clip_mode&#x3D;CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 &gt; * 分身数字人直播目前只支持1080x1920。
         :type width: int
-        :param height: 视频高度。  单位：像素。  最小值320，最大值2560。 &gt; * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 &gt; * clip_mode&#x3D;CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 &gt; * 分身数字人直播目前只支持1080x1920。
+        :param height: 视频高度。  单位：像素。  &gt; * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 &gt; * clip_mode&#x3D;CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 &gt; * 分身数字人直播目前只支持1080x1920。
         :type height: int
         :param frame_rate: 帧率。  单位：FPS。 &gt; *  分身数字人视频固定25FPS。
         :type frame_rate: str
@@ -63,9 +63,9 @@ class VideoConfig:
         :type is_subtitle_enable: bool
         :param subtitle_config: 
         :type subtitle_config: :class:`huaweicloudsdkmetastudio.v1.SubtitleConfig`
-        :param dx: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        :param dx: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; * 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dx最小值是0，最大值是1920。
         :type dx: int
-        :param dy: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        :param dy: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; * 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dy最小值是0，最大值是1080
         :type dy: int
         """
         
@@ -170,7 +170,7 @@ class VideoConfig:
     def width(self):
         """Gets the width of this VideoConfig.
 
-        视频宽度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 > * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 > * 分身数字人直播目前只支持1080x1920。
+        视频宽度。  单位：像素。  > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 > * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 > * 分身数字人直播目前只支持1080x1920。
 
         :return: The width of this VideoConfig.
         :rtype: int
@@ -181,7 +181,7 @@ class VideoConfig:
     def width(self, width):
         """Sets the width of this VideoConfig.
 
-        视频宽度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 > * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 > * 分身数字人直播目前只支持1080x1920。
+        视频宽度。  单位：像素。  > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 > * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 > * 分身数字人直播目前只支持1080x1920。
 
         :param width: The width of this VideoConfig.
         :type width: int
@@ -192,7 +192,7 @@ class VideoConfig:
     def height(self):
         """Gets the height of this VideoConfig.
 
-        视频高度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 > * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 > * 分身数字人直播目前只支持1080x1920。
+        视频高度。  单位：像素。  > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 > * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 > * 分身数字人直播目前只支持1080x1920。
 
         :return: The height of this VideoConfig.
         :rtype: int
@@ -203,7 +203,7 @@ class VideoConfig:
     def height(self, height):
         """Sets the height of this VideoConfig.
 
-        视频高度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 > * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 > * 分身数字人直播目前只支持1080x1920。
+        视频高度。  单位：像素。  > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 > * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 > * 分身数字人直播目前只支持1080x1920。
 
         :param height: The height of this VideoConfig.
         :type height: int
@@ -276,7 +276,7 @@ class VideoConfig:
     def dx(self):
         """Gets the dx of this VideoConfig.
 
-        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > * 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dx最小值是0，最大值是1920。
 
         :return: The dx of this VideoConfig.
         :rtype: int
@@ -287,7 +287,7 @@ class VideoConfig:
     def dx(self, dx):
         """Sets the dx of this VideoConfig.
 
-        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > * 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dx最小值是0，最大值是1920。
 
         :param dx: The dx of this VideoConfig.
         :type dx: int
@@ -298,7 +298,7 @@ class VideoConfig:
     def dy(self):
         """Gets the dy of this VideoConfig.
 
-        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > * 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dy最小值是0，最大值是1080
 
         :return: The dy of this VideoConfig.
         :rtype: int
@@ -309,7 +309,7 @@ class VideoConfig:
     def dy(self, dy):
         """Sets the dy of this VideoConfig.
 
-        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > * 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dy最小值是0，最大值是1080
 
         :param dy: The dy of this VideoConfig.
         :type dy: int

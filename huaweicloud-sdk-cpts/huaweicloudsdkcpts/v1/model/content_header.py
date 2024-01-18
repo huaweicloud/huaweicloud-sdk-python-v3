@@ -31,9 +31,9 @@ class ContentHeader:
 
         The model defined in huaweicloud sdk
 
-        :param key: key
+        :param key: 键
         :type key: str
-        :param value: value
+        :param value: 值
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class ContentHeader:
     def key(self):
         """Gets the key of this ContentHeader.
 
-        key
+        键
 
         :return: The key of this ContentHeader.
         :rtype: str
@@ -63,7 +63,7 @@ class ContentHeader:
     def key(self, key):
         """Sets the key of this ContentHeader.
 
-        key
+        键
 
         :param key: The key of this ContentHeader.
         :type key: str
@@ -74,7 +74,7 @@ class ContentHeader:
     def value(self):
         """Gets the value of this ContentHeader.
 
-        value
+        值
 
         :return: The value of this ContentHeader.
         :rtype: str
@@ -85,7 +85,7 @@ class ContentHeader:
     def value(self, value):
         """Sets the value of this ContentHeader.
 
-        value
+        值
 
         :param value: The value of this ContentHeader.
         :type value: str

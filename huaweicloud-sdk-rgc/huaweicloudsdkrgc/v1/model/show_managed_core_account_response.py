@@ -20,29 +20,25 @@ class ShowManagedCoreAccountResponse(SdkResponse):
     openapi_types = {
         'account_id': 'str',
         'account_name': 'str',
-        'account_email': 'str',
         'core_resource_mappings': 'dict(str, str)'
     }
 
     attribute_map = {
         'account_id': 'account_id',
         'account_name': 'account_name',
-        'account_email': 'account_email',
         'core_resource_mappings': 'core_resource_mappings'
     }
 
-    def __init__(self, account_id=None, account_name=None, account_email=None, core_resource_mappings=None):
+    def __init__(self, account_id=None, account_name=None, core_resource_mappings=None):
         """ShowManagedCoreAccountResponse
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 账号ID。
+        :param account_id: 纳管账号ID。
         :type account_id: str
-        :param account_name: 账号名称。
+        :param account_name: 纳管账号名称。
         :type account_name: str
-        :param account_email: 账号邮箱。
-        :type account_email: str
-        :param core_resource_mappings: 
+        :param core_resource_mappings: 核心资源映射。
         :type core_resource_mappings: dict(str, str)
         """
         
@@ -50,7 +46,6 @@ class ShowManagedCoreAccountResponse(SdkResponse):
 
         self._account_id = None
         self._account_name = None
-        self._account_email = None
         self._core_resource_mappings = None
         self.discriminator = None
 
@@ -58,8 +53,6 @@ class ShowManagedCoreAccountResponse(SdkResponse):
             self.account_id = account_id
         if account_name is not None:
             self.account_name = account_name
-        if account_email is not None:
-            self.account_email = account_email
         if core_resource_mappings is not None:
             self.core_resource_mappings = core_resource_mappings
 
@@ -67,7 +60,7 @@ class ShowManagedCoreAccountResponse(SdkResponse):
     def account_id(self):
         """Gets the account_id of this ShowManagedCoreAccountResponse.
 
-        账号ID。
+        纳管账号ID。
 
         :return: The account_id of this ShowManagedCoreAccountResponse.
         :rtype: str
@@ -78,7 +71,7 @@ class ShowManagedCoreAccountResponse(SdkResponse):
     def account_id(self, account_id):
         """Sets the account_id of this ShowManagedCoreAccountResponse.
 
-        账号ID。
+        纳管账号ID。
 
         :param account_id: The account_id of this ShowManagedCoreAccountResponse.
         :type account_id: str
@@ -89,7 +82,7 @@ class ShowManagedCoreAccountResponse(SdkResponse):
     def account_name(self):
         """Gets the account_name of this ShowManagedCoreAccountResponse.
 
-        账号名称。
+        纳管账号名称。
 
         :return: The account_name of this ShowManagedCoreAccountResponse.
         :rtype: str
@@ -100,7 +93,7 @@ class ShowManagedCoreAccountResponse(SdkResponse):
     def account_name(self, account_name):
         """Sets the account_name of this ShowManagedCoreAccountResponse.
 
-        账号名称。
+        纳管账号名称。
 
         :param account_name: The account_name of this ShowManagedCoreAccountResponse.
         :type account_name: str
@@ -108,30 +101,10 @@ class ShowManagedCoreAccountResponse(SdkResponse):
         self._account_name = account_name
 
     @property
-    def account_email(self):
-        """Gets the account_email of this ShowManagedCoreAccountResponse.
-
-        账号邮箱。
-
-        :return: The account_email of this ShowManagedCoreAccountResponse.
-        :rtype: str
-        """
-        return self._account_email
-
-    @account_email.setter
-    def account_email(self, account_email):
-        """Sets the account_email of this ShowManagedCoreAccountResponse.
-
-        账号邮箱。
-
-        :param account_email: The account_email of this ShowManagedCoreAccountResponse.
-        :type account_email: str
-        """
-        self._account_email = account_email
-
-    @property
     def core_resource_mappings(self):
         """Gets the core_resource_mappings of this ShowManagedCoreAccountResponse.
+
+        核心资源映射。
 
         :return: The core_resource_mappings of this ShowManagedCoreAccountResponse.
         :rtype: dict(str, str)
@@ -141,6 +114,8 @@ class ShowManagedCoreAccountResponse(SdkResponse):
     @core_resource_mappings.setter
     def core_resource_mappings(self, core_resource_mappings):
         """Sets the core_resource_mappings of this ShowManagedCoreAccountResponse.
+
+        核心资源映射。
 
         :param core_resource_mappings: The core_resource_mappings of this ShowManagedCoreAccountResponse.
         :type core_resource_mappings: dict(str, str)

@@ -47,7 +47,7 @@ class ShowTopUrlRequest:
         :type end_time: int
         :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
         :type domain_name: str
-        :param service_area: mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+        :param service_area: mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为global(全球)。
         :type service_area: str
         :param stat_type: 参数类型支持：flux(流量),req_num(请求总数)。
         :type stat_type: str
@@ -164,7 +164,7 @@ class ShowTopUrlRequest:
     def service_area(self):
         """Gets the service_area of this ShowTopUrlRequest.
 
-        mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+        mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为global(全球)。
 
         :return: The service_area of this ShowTopUrlRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class ShowTopUrlRequest:
     def service_area(self, service_area):
         """Sets the service_area of this ShowTopUrlRequest.
 
-        mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+        mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为global(全球)。
 
         :param service_area: The service_area of this ShowTopUrlRequest.
         :type service_area: str

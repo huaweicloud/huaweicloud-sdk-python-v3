@@ -29,7 +29,7 @@ class CreateCaseResultJson:
 
         The model defined in huaweicloud sdk
 
-        :param task_case_id: task_case_id
+        :param task_case_id: 用例id
         :type task_case_id: int
         """
         
@@ -45,7 +45,7 @@ class CreateCaseResultJson:
     def task_case_id(self):
         """Gets the task_case_id of this CreateCaseResultJson.
 
-        task_case_id
+        用例id
 
         :return: The task_case_id of this CreateCaseResultJson.
         :rtype: int
@@ -56,7 +56,7 @@ class CreateCaseResultJson:
     def task_case_id(self, task_case_id):
         """Sets the task_case_id of this CreateCaseResultJson.
 
-        task_case_id
+        用例id
 
         :param task_case_id: The task_case_id of this CreateCaseResultJson.
         :type task_case_id: int

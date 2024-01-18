@@ -17,7 +17,7 @@ class ControlOperation:
     sensitive_list = []
 
     openapi_types = {
-        'control_operate_request_id': 'str',
+        'operation_control_status_id': 'str',
         'operation_type': 'str',
         'status': 'str',
         'message': 'str',
@@ -26,7 +26,7 @@ class ControlOperation:
     }
 
     attribute_map = {
-        'control_operate_request_id': 'control_operate_request_id',
+        'operation_control_status_id': 'operation_control_status_id',
         'operation_type': 'operation_type',
         'status': 'status',
         'message': 'message',
@@ -34,13 +34,13 @@ class ControlOperation:
         'end_time': 'end_time'
     }
 
-    def __init__(self, control_operate_request_id=None, operation_type=None, status=None, message=None, start_time=None, end_time=None):
+    def __init__(self, operation_control_status_id=None, operation_type=None, status=None, message=None, start_time=None, end_time=None):
         """ControlOperation
 
         The model defined in huaweicloud sdk
 
-        :param control_operate_request_id: 本次操作控制策略的ID。
-        :type control_operate_request_id: str
+        :param operation_control_status_id: 本次操作控制策略的ID。
+        :type operation_control_status_id: str
         :param operation_type: 操作类型，启用控制策略或禁用控制策略。
         :type operation_type: str
         :param status: 控制策略实施的状态 SUCCEEDED | FAILED | IN_PROGRESS。
@@ -55,7 +55,7 @@ class ControlOperation:
         
         
 
-        self._control_operate_request_id = None
+        self._operation_control_status_id = None
         self._operation_type = None
         self._status = None
         self._message = None
@@ -63,8 +63,8 @@ class ControlOperation:
         self._end_time = None
         self.discriminator = None
 
-        if control_operate_request_id is not None:
-            self.control_operate_request_id = control_operate_request_id
+        if operation_control_status_id is not None:
+            self.operation_control_status_id = operation_control_status_id
         if operation_type is not None:
             self.operation_type = operation_type
         if status is not None:
@@ -77,26 +77,26 @@ class ControlOperation:
             self.end_time = end_time
 
     @property
-    def control_operate_request_id(self):
-        """Gets the control_operate_request_id of this ControlOperation.
+    def operation_control_status_id(self):
+        """Gets the operation_control_status_id of this ControlOperation.
 
         本次操作控制策略的ID。
 
-        :return: The control_operate_request_id of this ControlOperation.
+        :return: The operation_control_status_id of this ControlOperation.
         :rtype: str
         """
-        return self._control_operate_request_id
+        return self._operation_control_status_id
 
-    @control_operate_request_id.setter
-    def control_operate_request_id(self, control_operate_request_id):
-        """Sets the control_operate_request_id of this ControlOperation.
+    @operation_control_status_id.setter
+    def operation_control_status_id(self, operation_control_status_id):
+        """Sets the operation_control_status_id of this ControlOperation.
 
         本次操作控制策略的ID。
 
-        :param control_operate_request_id: The control_operate_request_id of this ControlOperation.
-        :type control_operate_request_id: str
+        :param operation_control_status_id: The operation_control_status_id of this ControlOperation.
+        :type operation_control_status_id: str
         """
-        self._control_operate_request_id = control_operate_request_id
+        self._operation_control_status_id = operation_control_status_id
 
     @property
     def operation_type(self):

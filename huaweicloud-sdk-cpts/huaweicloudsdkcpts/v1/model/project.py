@@ -41,19 +41,19 @@ class Project:
 
         The model defined in huaweicloud sdk
 
-        :param create_time: create_time
+        :param create_time: 创建时间
         :type create_time: str
-        :param description: description
+        :param description: 描述
         :type description: str
-        :param group: group
+        :param group: 租户id（domain_id）
         :type group: str
-        :param id: id
+        :param id: 工程id
         :type id: int
-        :param name: name
+        :param name: 工程名称
         :type name: str
-        :param source: source
+        :param source: 来源（0-PerfTest；2-CloudTest）
         :type source: int
-        :param update_time: update_time
+        :param update_time: 更新时间
         :type update_time: str
         """
         
@@ -87,7 +87,7 @@ class Project:
     def create_time(self):
         """Gets the create_time of this Project.
 
-        create_time
+        创建时间
 
         :return: The create_time of this Project.
         :rtype: str
@@ -98,7 +98,7 @@ class Project:
     def create_time(self, create_time):
         """Sets the create_time of this Project.
 
-        create_time
+        创建时间
 
         :param create_time: The create_time of this Project.
         :type create_time: str
@@ -109,7 +109,7 @@ class Project:
     def description(self):
         """Gets the description of this Project.
 
-        description
+        描述
 
         :return: The description of this Project.
         :rtype: str
@@ -120,7 +120,7 @@ class Project:
     def description(self, description):
         """Sets the description of this Project.
 
-        description
+        描述
 
         :param description: The description of this Project.
         :type description: str
@@ -131,7 +131,7 @@ class Project:
     def group(self):
         """Gets the group of this Project.
 
-        group
+        租户id（domain_id）
 
         :return: The group of this Project.
         :rtype: str
@@ -142,7 +142,7 @@ class Project:
     def group(self, group):
         """Sets the group of this Project.
 
-        group
+        租户id（domain_id）
 
         :param group: The group of this Project.
         :type group: str
@@ -153,7 +153,7 @@ class Project:
     def id(self):
         """Gets the id of this Project.
 
-        id
+        工程id
 
         :return: The id of this Project.
         :rtype: int
@@ -164,7 +164,7 @@ class Project:
     def id(self, id):
         """Sets the id of this Project.
 
-        id
+        工程id
 
         :param id: The id of this Project.
         :type id: int
@@ -175,7 +175,7 @@ class Project:
     def name(self):
         """Gets the name of this Project.
 
-        name
+        工程名称
 
         :return: The name of this Project.
         :rtype: str
@@ -186,7 +186,7 @@ class Project:
     def name(self, name):
         """Sets the name of this Project.
 
-        name
+        工程名称
 
         :param name: The name of this Project.
         :type name: str
@@ -197,7 +197,7 @@ class Project:
     def source(self):
         """Gets the source of this Project.
 
-        source
+        来源（0-PerfTest；2-CloudTest）
 
         :return: The source of this Project.
         :rtype: int
@@ -208,7 +208,7 @@ class Project:
     def source(self, source):
         """Sets the source of this Project.
 
-        source
+        来源（0-PerfTest；2-CloudTest）
 
         :param source: The source of this Project.
         :type source: int
@@ -219,7 +219,7 @@ class Project:
     def update_time(self):
         """Gets the update_time of this Project.
 
-        update_time
+        更新时间
 
         :return: The update_time of this Project.
         :rtype: str
@@ -230,7 +230,7 @@ class Project:
     def update_time(self, update_time):
         """Sets the update_time of this Project.
 
-        update_time
+        更新时间
 
         :param update_time: The update_time of this Project.
         :type update_time: str

@@ -29,7 +29,7 @@ class AutoLogoutOptions:
 
         The model defined in huaweicloud sdk
 
-        :param sbc_logout_waiting_time: 会话断连保留时长（分钟）
+        :param sbc_logout_waiting_time: 会话断连保留时长（分钟）。
         :type sbc_logout_waiting_time: int
         """
         
@@ -45,7 +45,7 @@ class AutoLogoutOptions:
     def sbc_logout_waiting_time(self):
         """Gets the sbc_logout_waiting_time of this AutoLogoutOptions.
 
-        会话断连保留时长（分钟）
+        会话断连保留时长（分钟）。
 
         :return: The sbc_logout_waiting_time of this AutoLogoutOptions.
         :rtype: int
@@ -56,7 +56,7 @@ class AutoLogoutOptions:
     def sbc_logout_waiting_time(self, sbc_logout_waiting_time):
         """Sets the sbc_logout_waiting_time of this AutoLogoutOptions.
 
-        会话断连保留时长（分钟）
+        会话断连保留时长（分钟）。
 
         :param sbc_logout_waiting_time: The sbc_logout_waiting_time of this AutoLogoutOptions.
         :type sbc_logout_waiting_time: int

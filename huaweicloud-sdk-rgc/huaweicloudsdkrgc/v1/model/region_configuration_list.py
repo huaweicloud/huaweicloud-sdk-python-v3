@@ -33,7 +33,7 @@ class RegionConfigurationList:
 
         :param region: 区域名字。
         :type region: str
-        :param region_configuration_status: 账号类型logging,security。 * ENABLED - 开启 * DISABLED - 关闭
+        :param region_configuration_status: 纳管账号类型LOGGING,SECURITY。
         :type region_configuration_status: str
         """
         
@@ -72,7 +72,7 @@ class RegionConfigurationList:
     def region_configuration_status(self):
         """Gets the region_configuration_status of this RegionConfigurationList.
 
-        账号类型logging,security。 * ENABLED - 开启 * DISABLED - 关闭
+        纳管账号类型LOGGING,SECURITY。
 
         :return: The region_configuration_status of this RegionConfigurationList.
         :rtype: str
@@ -83,7 +83,7 @@ class RegionConfigurationList:
     def region_configuration_status(self, region_configuration_status):
         """Sets the region_configuration_status of this RegionConfigurationList.
 
-        账号类型logging,security。 * ENABLED - 开启 * DISABLED - 关闭
+        纳管账号类型LOGGING,SECURITY。
 
         :param region_configuration_status: The region_configuration_status of this RegionConfigurationList.
         :type region_configuration_status: str

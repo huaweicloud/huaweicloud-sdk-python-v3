@@ -5,6 +5,7 @@ from __future__ import absolute_import
 # import models into model package
 from huaweicloudsdkrgc.v1.model.access_logging_bucket_baseline import AccessLoggingBucketBaseline
 from huaweicloudsdkrgc.v1.model.account_baseline import AccountBaseline
+from huaweicloudsdkrgc.v1.model.account_baseline_rsp import AccountBaselineRsp
 from huaweicloudsdkrgc.v1.model.artifact import Artifact
 from huaweicloudsdkrgc.v1.model.blueprint import Blueprint
 from huaweicloudsdkrgc.v1.model.check_launch_request import CheckLaunchRequest
@@ -30,6 +31,9 @@ from huaweicloudsdkrgc.v1.model.drift_detail import DriftDetail
 from huaweicloudsdkrgc.v1.model.enable_control_request import EnableControlRequest
 from huaweicloudsdkrgc.v1.model.enable_control_response import EnableControlResponse
 from huaweicloudsdkrgc.v1.model.enabled_control import EnabledControl
+from huaweicloudsdkrgc.v1.model.enroll_account_request import EnrollAccountRequest
+from huaweicloudsdkrgc.v1.model.enroll_account_request_body import EnrollAccountRequestBody
+from huaweicloudsdkrgc.v1.model.enroll_account_response import EnrollAccountResponse
 from huaweicloudsdkrgc.v1.model.identity_center_group import IdentityCenterGroup
 from huaweicloudsdkrgc.v1.model.landing_zone_error_message import LandingZoneErrorMessage
 from huaweicloudsdkrgc.v1.model.list_config_rule_compliance_request import ListConfigRuleComplianceRequest
@@ -57,12 +61,15 @@ from huaweicloudsdkrgc.v1.model.logging_configuration import LoggingConfiguratio
 from huaweicloudsdkrgc.v1.model.managed_account import ManagedAccount
 from huaweicloudsdkrgc.v1.model.managed_organization_unit import ManagedOrganizationUnit
 from huaweicloudsdkrgc.v1.model.organization_structure_base_line import OrganizationStructureBaseLine
+from huaweicloudsdkrgc.v1.model.organization_structure_base_line_rsp import OrganizationStructureBaseLineRsp
 from huaweicloudsdkrgc.v1.model.organizational_percentage_detail import OrganizationalPercentageDetail
 from huaweicloudsdkrgc.v1.model.organizational_unit_type import OrganizationalUnitType
 from huaweicloudsdkrgc.v1.model.organizational_unit_type_for_setup import OrganizationalUnitTypeForSetup
 from huaweicloudsdkrgc.v1.model.page_info_dto import PageInfoDto
 from huaweicloudsdkrgc.v1.model.percentage_detail import PercentageDetail
 from huaweicloudsdkrgc.v1.model.permission_set import PermissionSet
+from huaweicloudsdkrgc.v1.model.re_register_organizational_unit_request import ReRegisterOrganizationalUnitRequest
+from huaweicloudsdkrgc.v1.model.re_register_organizational_unit_response import ReRegisterOrganizationalUnitResponse
 from huaweicloudsdkrgc.v1.model.region_configuration_list import RegionConfigurationList
 from huaweicloudsdkrgc.v1.model.region_managed_list import RegionManagedList
 from huaweicloudsdkrgc.v1.model.register_organizational_unit_request import RegisterOrganizationalUnitRequest
@@ -100,5 +107,8 @@ from huaweicloudsdkrgc.v1.model.show_managed_organizational_unit_response import
 from huaweicloudsdkrgc.v1.model.show_operation_request import ShowOperationRequest
 from huaweicloudsdkrgc.v1.model.show_operation_response import ShowOperationResponse
 from huaweicloudsdkrgc.v1.model.target_control import TargetControl
+from huaweicloudsdkrgc.v1.model.un_enroll_account_request import UnEnrollAccountRequest
+from huaweicloudsdkrgc.v1.model.un_enroll_account_response import UnEnrollAccountResponse
 from huaweicloudsdkrgc.v1.model.update_managed_account_request import UpdateManagedAccountRequest
+from huaweicloudsdkrgc.v1.model.update_managed_account_request_body import UpdateManagedAccountRequestBody
 from huaweicloudsdkrgc.v1.model.update_managed_account_response import UpdateManagedAccountResponse

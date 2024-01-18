@@ -33,7 +33,7 @@ class VolumeTypeExtraSpecs:
 
         :param availability_zone: 该类型磁盘对应的可用分区。
         :type availability_zone: str
-        :param sold_out_availability_zone: 已售罄的磁盘可用区
+        :param sold_out_availability_zone: 已售罄的磁盘可用区。
         :type sold_out_availability_zone: str
         """
         
@@ -74,7 +74,7 @@ class VolumeTypeExtraSpecs:
     def sold_out_availability_zone(self):
         """Gets the sold_out_availability_zone of this VolumeTypeExtraSpecs.
 
-        已售罄的磁盘可用区
+        已售罄的磁盘可用区。
 
         :return: The sold_out_availability_zone of this VolumeTypeExtraSpecs.
         :rtype: str
@@ -85,7 +85,7 @@ class VolumeTypeExtraSpecs:
     def sold_out_availability_zone(self, sold_out_availability_zone):
         """Sets the sold_out_availability_zone of this VolumeTypeExtraSpecs.
 
-        已售罄的磁盘可用区
+        已售罄的磁盘可用区。
 
         :param sold_out_availability_zone: The sold_out_availability_zone of this VolumeTypeExtraSpecs.
         :type sold_out_availability_zone: str

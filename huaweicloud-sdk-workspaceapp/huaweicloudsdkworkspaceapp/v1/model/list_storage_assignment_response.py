@@ -32,9 +32,9 @@ class ListStorageAssignmentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 查询用户存储声明配置
+        :param items: 查询用户存储声明配置。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PersistentStorageAssignment`]
         """
         
@@ -53,7 +53,7 @@ class ListStorageAssignmentResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListStorageAssignmentResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListStorageAssignmentResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListStorageAssignmentResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListStorageAssignmentResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListStorageAssignmentResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListStorageAssignmentResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListStorageAssignmentResponse.
 
-        查询用户存储声明配置
+        查询用户存储声明配置。
 
         :return: The items of this ListStorageAssignmentResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.PersistentStorageAssignment`]
@@ -86,7 +86,7 @@ class ListStorageAssignmentResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListStorageAssignmentResponse.
 
-        查询用户存储声明配置
+        查询用户存储声明配置。
 
         :param items: The items of this ListStorageAssignmentResponse.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PersistentStorageAssignment`]

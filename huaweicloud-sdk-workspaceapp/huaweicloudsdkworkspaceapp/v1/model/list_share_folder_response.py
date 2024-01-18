@@ -32,9 +32,9 @@ class ListShareFolderResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 存储声明
+        :param items: 存储声明。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.SharePersistentStorageClaim`]
         """
         
@@ -53,7 +53,7 @@ class ListShareFolderResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListShareFolderResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListShareFolderResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListShareFolderResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListShareFolderResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListShareFolderResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListShareFolderResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListShareFolderResponse.
 
-        存储声明
+        存储声明。
 
         :return: The items of this ListShareFolderResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.SharePersistentStorageClaim`]
@@ -86,7 +86,7 @@ class ListShareFolderResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListShareFolderResponse.
 
-        存储声明
+        存储声明。
 
         :param items: The items of this ListShareFolderResponse.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.SharePersistentStorageClaim`]

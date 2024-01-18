@@ -53,7 +53,7 @@ class TargetControl:
 
         The model defined in huaweicloud sdk
 
-        :param manage_account_id: 管理账号ID。
+        :param manage_account_id: 管理纳管账号ID。
         :type manage_account_id: str
         :param control_identifier: 控制策略标识。
         :type control_identifier: str
@@ -69,15 +69,15 @@ class TargetControl:
         :type control_objective: str
         :param behavior: 控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
         :type behavior: str
-        :param owner: 账号的创建来源，包括CUSTOM和RGC。
+        :param owner: 纳管账号的创建来源，包括CUSTOM和RGC。
         :type owner: str
-        :param regional_preference: regional/global。
+        :param regional_preference: 区域选项，取值有两种分别是：区域的regional和全局的global。
         :type regional_preference: str
         :param guidance: 控制策略必须性。
         :type guidance: str
         :param service: 控制策略所属服务。
         :type service: str
-        :param implementation: 业务控制策略（SCP），配置规则。
+        :param implementation: 服务控制策略（SCP），配置规则。
         :type implementation: str
         """
         
@@ -129,7 +129,7 @@ class TargetControl:
     def manage_account_id(self):
         """Gets the manage_account_id of this TargetControl.
 
-        管理账号ID。
+        管理纳管账号ID。
 
         :return: The manage_account_id of this TargetControl.
         :rtype: str
@@ -140,7 +140,7 @@ class TargetControl:
     def manage_account_id(self, manage_account_id):
         """Sets the manage_account_id of this TargetControl.
 
-        管理账号ID。
+        管理纳管账号ID。
 
         :param manage_account_id: The manage_account_id of this TargetControl.
         :type manage_account_id: str
@@ -305,7 +305,7 @@ class TargetControl:
     def owner(self):
         """Gets the owner of this TargetControl.
 
-        账号的创建来源，包括CUSTOM和RGC。
+        纳管账号的创建来源，包括CUSTOM和RGC。
 
         :return: The owner of this TargetControl.
         :rtype: str
@@ -316,7 +316,7 @@ class TargetControl:
     def owner(self, owner):
         """Sets the owner of this TargetControl.
 
-        账号的创建来源，包括CUSTOM和RGC。
+        纳管账号的创建来源，包括CUSTOM和RGC。
 
         :param owner: The owner of this TargetControl.
         :type owner: str
@@ -327,7 +327,7 @@ class TargetControl:
     def regional_preference(self):
         """Gets the regional_preference of this TargetControl.
 
-        regional/global。
+        区域选项，取值有两种分别是：区域的regional和全局的global。
 
         :return: The regional_preference of this TargetControl.
         :rtype: str
@@ -338,7 +338,7 @@ class TargetControl:
     def regional_preference(self, regional_preference):
         """Sets the regional_preference of this TargetControl.
 
-        regional/global。
+        区域选项，取值有两种分别是：区域的regional和全局的global。
 
         :param regional_preference: The regional_preference of this TargetControl.
         :type regional_preference: str
@@ -393,7 +393,7 @@ class TargetControl:
     def implementation(self):
         """Gets the implementation of this TargetControl.
 
-        业务控制策略（SCP），配置规则。
+        服务控制策略（SCP），配置规则。
 
         :return: The implementation of this TargetControl.
         :rtype: str
@@ -404,7 +404,7 @@ class TargetControl:
     def implementation(self, implementation):
         """Sets the implementation of this TargetControl.
 
-        业务控制策略（SCP），配置规则。
+        服务控制策略（SCP），配置规则。
 
         :param implementation: The implementation of this TargetControl.
         :type implementation: str

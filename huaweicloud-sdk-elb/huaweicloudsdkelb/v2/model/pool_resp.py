@@ -121,8 +121,10 @@ class PoolResp:
         self.session_persistence = session_persistence
         self.protocol = protocol
         self.lb_algorithm = lb_algorithm
-        self.protection_status = protection_status
-        self.protection_reason = protection_reason
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def id(self):

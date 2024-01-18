@@ -38,8 +38,7 @@ class VpnGatewayCertificateRequestBody:
         self._certificate = None
         self.discriminator = None
 
-        if certificate is not None:
-            self.certificate = certificate
+        self.certificate = certificate
 
     @property
     def certificate(self):

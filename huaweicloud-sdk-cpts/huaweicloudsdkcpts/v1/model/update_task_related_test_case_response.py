@@ -34,9 +34,9 @@ class UpdateTaskRelatedTestCaseResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
         :param task_info: 
         :type task_info: :class:`huaweicloudsdkcpts.v1.TaskInfo`
@@ -60,7 +60,7 @@ class UpdateTaskRelatedTestCaseResponse(SdkResponse):
     def code(self):
         """Gets the code of this UpdateTaskRelatedTestCaseResponse.
 
-        code
+        响应码
 
         :return: The code of this UpdateTaskRelatedTestCaseResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateTaskRelatedTestCaseResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this UpdateTaskRelatedTestCaseResponse.
 
-        code
+        响应码
 
         :param code: The code of this UpdateTaskRelatedTestCaseResponse.
         :type code: str
@@ -82,7 +82,7 @@ class UpdateTaskRelatedTestCaseResponse(SdkResponse):
     def message(self):
         """Gets the message of this UpdateTaskRelatedTestCaseResponse.
 
-        message
+        响应消息
 
         :return: The message of this UpdateTaskRelatedTestCaseResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateTaskRelatedTestCaseResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this UpdateTaskRelatedTestCaseResponse.
 
-        message
+        响应消息
 
         :param message: The message of this UpdateTaskRelatedTestCaseResponse.
         :type message: str

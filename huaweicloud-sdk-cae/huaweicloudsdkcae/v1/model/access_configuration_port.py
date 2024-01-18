@@ -23,7 +23,7 @@ class AccessConfigurationPort:
         'default_certificate': 'str',
         'certificate': 'str',
         'policy': 'str',
-        'path': 'list[AccessConfigurationHttpPath]',
+        'paths': 'list[AccessConfigurationHttpPath]',
         'elb_id': 'str'
     }
 
@@ -34,11 +34,11 @@ class AccessConfigurationPort:
         'default_certificate': 'default_certificate',
         'certificate': 'certificate',
         'policy': 'policy',
-        'path': 'path',
+        'paths': 'paths',
         'elb_id': 'elb_id'
     }
 
-    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, path=None, elb_id=None):
+    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, paths=None, elb_id=None):
         """AccessConfigurationPort
 
         The model defined in huaweicloud sdk
@@ -55,8 +55,8 @@ class AccessConfigurationPort:
         :type certificate: str
         :param policy: 安全策略。
         :type policy: str
-        :param path: 
-        :type path: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
+        :param paths: 
+        :type paths: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
         :param elb_id: 用户选择的elb的ID。
         :type elb_id: str
         """
@@ -69,7 +69,7 @@ class AccessConfigurationPort:
         self._default_certificate = None
         self._certificate = None
         self._policy = None
-        self._path = None
+        self._paths = None
         self._elb_id = None
         self.discriminator = None
 
@@ -85,8 +85,8 @@ class AccessConfigurationPort:
             self.certificate = certificate
         if policy is not None:
             self.policy = policy
-        if path is not None:
-            self.path = path
+        if paths is not None:
+            self.paths = paths
         if elb_id is not None:
             self.elb_id = elb_id
 
@@ -223,22 +223,22 @@ class AccessConfigurationPort:
         self._policy = policy
 
     @property
-    def path(self):
-        """Gets the path of this AccessConfigurationPort.
+    def paths(self):
+        """Gets the paths of this AccessConfigurationPort.
 
-        :return: The path of this AccessConfigurationPort.
+        :return: The paths of this AccessConfigurationPort.
         :rtype: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
         """
-        return self._path
+        return self._paths
 
-    @path.setter
-    def path(self, path):
-        """Sets the path of this AccessConfigurationPort.
+    @paths.setter
+    def paths(self, paths):
+        """Sets the paths of this AccessConfigurationPort.
 
-        :param path: The path of this AccessConfigurationPort.
-        :type path: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
+        :param paths: The paths of this AccessConfigurationPort.
+        :type paths: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
         """
-        self._path = path
+        self._paths = paths
 
     @property
     def elb_id(self):

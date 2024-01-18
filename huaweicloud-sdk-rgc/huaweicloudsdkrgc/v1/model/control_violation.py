@@ -49,25 +49,25 @@ class ControlViolation:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: id。
+        :param account_id: 控制策略纳管账号ID。
         :type account_id: str
-        :param account_name: name。
+        :param account_name: 控制策略纳管账号名称。
         :type account_name: str
-        :param display_name: description。
+        :param display_name: 控制策略显示名称。
         :type display_name: str
         :param name: 控制策略名称。
         :type name: str
         :param control_id: 控制策略ID。
         :type control_id: str
-        :param parent_organization_unit_id: 父OU ID。
+        :param parent_organization_unit_id: 父注册OU ID。
         :type parent_organization_unit_id: str
-        :param parent_organization_unit_name: 父OU名称。
+        :param parent_organization_unit_name: 父注册OU名称。
         :type parent_organization_unit_name: str
-        :param region: region。
+        :param region: 区域名称。
         :type region: str
-        :param resource: 不合规资源。
+        :param resource: 控制策略不合规资源。
         :type resource: str
-        :param resource_type: 不合规资源类型。
+        :param resource_type: 控制策略不合规资源类型。
         :type resource_type: str
         :param service: 云服务名称。
         :type service: str
@@ -115,7 +115,7 @@ class ControlViolation:
     def account_id(self):
         """Gets the account_id of this ControlViolation.
 
-        id。
+        控制策略纳管账号ID。
 
         :return: The account_id of this ControlViolation.
         :rtype: str
@@ -126,7 +126,7 @@ class ControlViolation:
     def account_id(self, account_id):
         """Sets the account_id of this ControlViolation.
 
-        id。
+        控制策略纳管账号ID。
 
         :param account_id: The account_id of this ControlViolation.
         :type account_id: str
@@ -137,7 +137,7 @@ class ControlViolation:
     def account_name(self):
         """Gets the account_name of this ControlViolation.
 
-        name。
+        控制策略纳管账号名称。
 
         :return: The account_name of this ControlViolation.
         :rtype: str
@@ -148,7 +148,7 @@ class ControlViolation:
     def account_name(self, account_name):
         """Sets the account_name of this ControlViolation.
 
-        name。
+        控制策略纳管账号名称。
 
         :param account_name: The account_name of this ControlViolation.
         :type account_name: str
@@ -159,7 +159,7 @@ class ControlViolation:
     def display_name(self):
         """Gets the display_name of this ControlViolation.
 
-        description。
+        控制策略显示名称。
 
         :return: The display_name of this ControlViolation.
         :rtype: str
@@ -170,7 +170,7 @@ class ControlViolation:
     def display_name(self, display_name):
         """Sets the display_name of this ControlViolation.
 
-        description。
+        控制策略显示名称。
 
         :param display_name: The display_name of this ControlViolation.
         :type display_name: str
@@ -225,7 +225,7 @@ class ControlViolation:
     def parent_organization_unit_id(self):
         """Gets the parent_organization_unit_id of this ControlViolation.
 
-        父OU ID。
+        父注册OU ID。
 
         :return: The parent_organization_unit_id of this ControlViolation.
         :rtype: str
@@ -236,7 +236,7 @@ class ControlViolation:
     def parent_organization_unit_id(self, parent_organization_unit_id):
         """Sets the parent_organization_unit_id of this ControlViolation.
 
-        父OU ID。
+        父注册OU ID。
 
         :param parent_organization_unit_id: The parent_organization_unit_id of this ControlViolation.
         :type parent_organization_unit_id: str
@@ -247,7 +247,7 @@ class ControlViolation:
     def parent_organization_unit_name(self):
         """Gets the parent_organization_unit_name of this ControlViolation.
 
-        父OU名称。
+        父注册OU名称。
 
         :return: The parent_organization_unit_name of this ControlViolation.
         :rtype: str
@@ -258,7 +258,7 @@ class ControlViolation:
     def parent_organization_unit_name(self, parent_organization_unit_name):
         """Sets the parent_organization_unit_name of this ControlViolation.
 
-        父OU名称。
+        父注册OU名称。
 
         :param parent_organization_unit_name: The parent_organization_unit_name of this ControlViolation.
         :type parent_organization_unit_name: str
@@ -269,7 +269,7 @@ class ControlViolation:
     def region(self):
         """Gets the region of this ControlViolation.
 
-        region。
+        区域名称。
 
         :return: The region of this ControlViolation.
         :rtype: str
@@ -280,7 +280,7 @@ class ControlViolation:
     def region(self, region):
         """Sets the region of this ControlViolation.
 
-        region。
+        区域名称。
 
         :param region: The region of this ControlViolation.
         :type region: str
@@ -291,7 +291,7 @@ class ControlViolation:
     def resource(self):
         """Gets the resource of this ControlViolation.
 
-        不合规资源。
+        控制策略不合规资源。
 
         :return: The resource of this ControlViolation.
         :rtype: str
@@ -302,7 +302,7 @@ class ControlViolation:
     def resource(self, resource):
         """Sets the resource of this ControlViolation.
 
-        不合规资源。
+        控制策略不合规资源。
 
         :param resource: The resource of this ControlViolation.
         :type resource: str
@@ -313,7 +313,7 @@ class ControlViolation:
     def resource_type(self):
         """Gets the resource_type of this ControlViolation.
 
-        不合规资源类型。
+        控制策略不合规资源类型。
 
         :return: The resource_type of this ControlViolation.
         :rtype: str
@@ -324,7 +324,7 @@ class ControlViolation:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ControlViolation.
 
-        不合规资源类型。
+        控制策略不合规资源类型。
 
         :param resource_type: The resource_type of this ControlViolation.
         :type resource_type: str

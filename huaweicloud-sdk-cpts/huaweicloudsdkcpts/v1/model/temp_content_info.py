@@ -37,15 +37,15 @@ class TempContentInfo:
 
         The model defined in huaweicloud sdk
 
-        :param content_id: content_id
+        :param content_id: 报文id或者事务id或者插件id
         :type content_id: int
-        :param content: content
+        :param content: 内容
         :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
-        :param index: index
+        :param index: 索引
         :type index: int
-        :param data: data
+        :param data: 数据指令内容
         :type data: object
-        :param data_type: data_type
+        :param data_type: 数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；203：vu百分比控制器；204：吞吐量控制器；301：集合点；302：插件请求）
         :type data_type: int
         """
         
@@ -73,7 +73,7 @@ class TempContentInfo:
     def content_id(self):
         """Gets the content_id of this TempContentInfo.
 
-        content_id
+        报文id或者事务id或者插件id
 
         :return: The content_id of this TempContentInfo.
         :rtype: int
@@ -84,7 +84,7 @@ class TempContentInfo:
     def content_id(self, content_id):
         """Sets the content_id of this TempContentInfo.
 
-        content_id
+        报文id或者事务id或者插件id
 
         :param content_id: The content_id of this TempContentInfo.
         :type content_id: int
@@ -95,7 +95,7 @@ class TempContentInfo:
     def content(self):
         """Gets the content of this TempContentInfo.
 
-        content
+        内容
 
         :return: The content of this TempContentInfo.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.Content`]
@@ -106,7 +106,7 @@ class TempContentInfo:
     def content(self, content):
         """Sets the content of this TempContentInfo.
 
-        content
+        内容
 
         :param content: The content of this TempContentInfo.
         :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
@@ -117,7 +117,7 @@ class TempContentInfo:
     def index(self):
         """Gets the index of this TempContentInfo.
 
-        index
+        索引
 
         :return: The index of this TempContentInfo.
         :rtype: int
@@ -128,7 +128,7 @@ class TempContentInfo:
     def index(self, index):
         """Sets the index of this TempContentInfo.
 
-        index
+        索引
 
         :param index: The index of this TempContentInfo.
         :type index: int
@@ -139,7 +139,7 @@ class TempContentInfo:
     def data(self):
         """Gets the data of this TempContentInfo.
 
-        data
+        数据指令内容
 
         :return: The data of this TempContentInfo.
         :rtype: object
@@ -150,7 +150,7 @@ class TempContentInfo:
     def data(self, data):
         """Sets the data of this TempContentInfo.
 
-        data
+        数据指令内容
 
         :param data: The data of this TempContentInfo.
         :type data: object
@@ -161,7 +161,7 @@ class TempContentInfo:
     def data_type(self):
         """Gets the data_type of this TempContentInfo.
 
-        data_type
+        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；203：vu百分比控制器；204：吞吐量控制器；301：集合点；302：插件请求）
 
         :return: The data_type of this TempContentInfo.
         :rtype: int
@@ -172,7 +172,7 @@ class TempContentInfo:
     def data_type(self, data_type):
         """Sets the data_type of this TempContentInfo.
 
-        data_type
+        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；203：vu百分比控制器；204：吞吐量控制器；301：集合点；302：插件请求）
 
         :param data_type: The data_type of this TempContentInfo.
         :type data_type: int

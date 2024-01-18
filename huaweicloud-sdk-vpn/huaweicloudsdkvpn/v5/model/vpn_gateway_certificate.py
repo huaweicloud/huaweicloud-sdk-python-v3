@@ -15,6 +15,7 @@ class VpnGatewayCertificate:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('issuer')
 
     openapi_types = {
         'id': 'str',

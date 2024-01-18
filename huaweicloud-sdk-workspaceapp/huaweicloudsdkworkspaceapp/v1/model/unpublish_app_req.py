@@ -29,7 +29,7 @@ class UnpublishAppReq:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 应用ID列表,单次最多允许操作50个应用
+        :param ids: 应用ID列表,单次最多允许操作50个应用。
         :type ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class UnpublishAppReq:
     def ids(self):
         """Gets the ids of this UnpublishAppReq.
 
-        应用ID列表,单次最多允许操作50个应用
+        应用ID列表,单次最多允许操作50个应用。
 
         :return: The ids of this UnpublishAppReq.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class UnpublishAppReq:
     def ids(self, ids):
         """Sets the ids of this UnpublishAppReq.
 
-        应用ID列表,单次最多允许操作50个应用
+        应用ID列表,单次最多允许操作50个应用。
 
         :param ids: The ids of this UnpublishAppReq.
         :type ids: list[str]

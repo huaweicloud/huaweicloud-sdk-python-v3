@@ -37,7 +37,7 @@ class SmsTemplateVariableAttrReq:
         :type variable_desc: str
         :param variable_index: 变量索引，对应模板内容变量索引
         :type variable_index: int
-        :param variable_type: 变量类型，目前支持：PHONE|CHARDIGIT|DATETIME|MONEY|TEXT|NEWTEXT
+        :param variable_type: 变量类型，目前支持：PHONE|CHARDIGIT|DATETIME|MONEY|TEXT|NEWTEXT|LONGTEXT
         :type variable_type: str
         """
         
@@ -101,7 +101,7 @@ class SmsTemplateVariableAttrReq:
     def variable_type(self):
         """Gets the variable_type of this SmsTemplateVariableAttrReq.
 
-        变量类型，目前支持：PHONE|CHARDIGIT|DATETIME|MONEY|TEXT|NEWTEXT
+        变量类型，目前支持：PHONE|CHARDIGIT|DATETIME|MONEY|TEXT|NEWTEXT|LONGTEXT
 
         :return: The variable_type of this SmsTemplateVariableAttrReq.
         :rtype: str
@@ -112,7 +112,7 @@ class SmsTemplateVariableAttrReq:
     def variable_type(self, variable_type):
         """Sets the variable_type of this SmsTemplateVariableAttrReq.
 
-        变量类型，目前支持：PHONE|CHARDIGIT|DATETIME|MONEY|TEXT|NEWTEXT
+        变量类型，目前支持：PHONE|CHARDIGIT|DATETIME|MONEY|TEXT|NEWTEXT|LONGTEXT
 
         :param variable_type: The variable_type of this SmsTemplateVariableAttrReq.
         :type variable_type: str

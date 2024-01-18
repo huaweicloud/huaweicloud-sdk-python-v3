@@ -1,8 +1,5 @@
 # coding: utf-8
 
-import types
-import six
-
 from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.region.provider import RegionProviderChain
 
@@ -19,6 +16,8 @@ class RdsRegion:
                         "https://rds.cn-east-2.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
                         "https://rds.cn-east-3.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://rds.cn-east-5.myhuaweicloud.com")
     CN_SOUTH_1 = Region("cn-south-1",
                         "https://rds.cn-south-1.myhuaweicloud.com")
     CN_SOUTHWEST_2 = Region("cn-southwest-2",
@@ -53,6 +52,8 @@ class RdsRegion:
                         "https://rds.ae-ad-1.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
                         "https://rds.eu-west-101.myhuaweicloud.eu")
+    EU_WEST_0 = Region("eu-west-0",
+                        "https://rds.eu-west-0.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -60,6 +61,7 @@ class RdsRegion:
         "cn-north-1": CN_NORTH_1,
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
+        "cn-east-5": CN_EAST_5,
         "cn-south-1": CN_SOUTH_1,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "ap-southeast-2": AP_SOUTHEAST_2,
@@ -77,14 +79,15 @@ class RdsRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "ae-ad-1": AE_AD_1,
         "eu-west-101": EU_WEST_101,
+        "eu-west-0": EU_WEST_0,
     }
 
     @classmethod
     def value_of(cls, region_id, static_fields=None):
         if not region_id:
-            raise KeyError("Unexpected empty parameter: region_id.")
+            raise KeyError("Unexpected empty parameter: region_id")
 
-        fields = static_fields if static_fields else cls.static_fields
+        fields = static_fields or cls.static_fields
 
         region = cls._PROVIDER.get_region(region_id)
         if region:
@@ -93,6 +96,5 @@ class RdsRegion:
         if region_id in fields:
             return fields.get(region_id)
 
-        raise KeyError("Unexpected region_id: " + region_id)
-
-
+        raise KeyError("region_id '%s' is not in the following supported regions of service 'Rds': [%s]" % (
+            region_id, ", ".join(sorted(fields.keys()))))

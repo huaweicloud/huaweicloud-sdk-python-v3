@@ -38,7 +38,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
         :type error_code: str
         :param error_message: 响应信息描述。
         :type error_message: str
-        :param response_status: 响应状态码。
+        :param response_status: 响应状态码（不再使用）。
         :type response_status: int
         """
         
@@ -104,7 +104,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
     def response_status(self):
         """Gets the response_status of this DeleteserviceDiscoveryRulesResponse.
 
-        响应状态码。
+        响应状态码（不再使用）。
 
         :return: The response_status of this DeleteserviceDiscoveryRulesResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
     def response_status(self, response_status):
         """Sets the response_status of this DeleteserviceDiscoveryRulesResponse.
 
-        响应状态码。
+        响应状态码（不再使用）。
 
         :param response_status: The response_status of this DeleteserviceDiscoveryRulesResponse.
         :type response_status: int

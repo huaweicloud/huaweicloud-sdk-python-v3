@@ -37,7 +37,10 @@ class LoadbalancerResp:
         'tags': 'list[str]',
         'publicips': 'list[PublicIpInfo]',
         'charge_mode': 'str',
-        'frozen_scene': 'str'
+        'billing_info': 'str',
+        'frozen_scene': 'str',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -61,10 +64,13 @@ class LoadbalancerResp:
         'tags': 'tags',
         'publicips': 'publicips',
         'charge_mode': 'charge_mode',
-        'frozen_scene': 'frozen_scene'
+        'billing_info': 'billing_info',
+        'frozen_scene': 'frozen_scene',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_port_id=None, vip_address=None, listeners=None, pools=None, provider=None, operating_status=None, provisioning_status=None, admin_state_up=None, created_at=None, updated_at=None, enterprise_project_id=None, project_id=None, tags=None, publicips=None, charge_mode=None, frozen_scene=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_port_id=None, vip_address=None, listeners=None, pools=None, provider=None, operating_status=None, provisioning_status=None, admin_state_up=None, created_at=None, updated_at=None, enterprise_project_id=None, project_id=None, tags=None, publicips=None, charge_mode=None, billing_info=None, frozen_scene=None, protection_status=None, protection_reason=None):
         """LoadbalancerResp
 
         The model defined in huaweicloud sdk
@@ -107,10 +113,16 @@ class LoadbalancerResp:
         :type tags: list[str]
         :param publicips: 负载均衡器绑定的公网IP。只支持绑定一个公网IP。
         :type publicips: list[:class:`huaweicloudsdkelb.v2.PublicIpInfo`]
-        :param charge_mode: 收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：不影响弹性扩缩容实例、包周期实例的计费方式
+        :param charge_mode: 收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，预付费收费。
         :type charge_mode: str
+        :param billing_info: 资源账单信息，取值：     - 空：按需计费。     - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id。
+        :type billing_info: str
         :param frozen_scene: 负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值：  POLICE：公安冻结场景。 ILLEGAL：违规冻结场景。 VERIFY：客户未实名认证冻结场景。 PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 AREAR：欠费冻结场景。
         :type frozen_scene: str
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -135,7 +147,10 @@ class LoadbalancerResp:
         self._tags = None
         self._publicips = None
         self._charge_mode = None
+        self._billing_info = None
         self._frozen_scene = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         self.id = id
@@ -158,8 +173,13 @@ class LoadbalancerResp:
         self.tags = tags
         self.publicips = publicips
         self.charge_mode = charge_mode
+        self.billing_info = billing_info
         if frozen_scene is not None:
             self.frozen_scene = frozen_scene
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def id(self):
@@ -583,7 +603,7 @@ class LoadbalancerResp:
     def charge_mode(self):
         """Gets the charge_mode of this LoadbalancerResp.
 
-        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：不影响弹性扩缩容实例、包周期实例的计费方式
+        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，预付费收费。
 
         :return: The charge_mode of this LoadbalancerResp.
         :rtype: str
@@ -594,12 +614,34 @@ class LoadbalancerResp:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this LoadbalancerResp.
 
-        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：不影响弹性扩缩容实例、包周期实例的计费方式
+        收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，预付费收费。
 
         :param charge_mode: The charge_mode of this LoadbalancerResp.
         :type charge_mode: str
         """
         self._charge_mode = charge_mode
+
+    @property
+    def billing_info(self):
+        """Gets the billing_info of this LoadbalancerResp.
+
+        资源账单信息，取值：     - 空：按需计费。     - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id。
+
+        :return: The billing_info of this LoadbalancerResp.
+        :rtype: str
+        """
+        return self._billing_info
+
+    @billing_info.setter
+    def billing_info(self, billing_info):
+        """Sets the billing_info of this LoadbalancerResp.
+
+        资源账单信息，取值：     - 空：按需计费。     - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id。
+
+        :param billing_info: The billing_info of this LoadbalancerResp.
+        :type billing_info: str
+        """
+        self._billing_info = billing_info
 
     @property
     def frozen_scene(self):
@@ -622,6 +664,50 @@ class LoadbalancerResp:
         :type frozen_scene: str
         """
         self._frozen_scene = frozen_scene
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this LoadbalancerResp.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this LoadbalancerResp.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this LoadbalancerResp.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this LoadbalancerResp.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this LoadbalancerResp.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this LoadbalancerResp.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this LoadbalancerResp.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this LoadbalancerResp.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

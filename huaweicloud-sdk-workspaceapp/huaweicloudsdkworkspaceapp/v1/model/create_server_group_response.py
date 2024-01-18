@@ -76,29 +76,29 @@ class CreateServerGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 服务器组的唯一标识
+        :param id: 服务器组的唯一标识。
         :type id: str
-        :param name: 服务器组名称
+        :param name: 服务器组名称。
         :type name: str
-        :param description: 服务器组描述
+        :param description: 服务器组描述。
         :type description: str
-        :param image_id: 服务器组关联的镜像ID，用于创建对应组下的云服务器
+        :param image_id: 服务器组关联的镜像ID，用于创建对应组下的云服务器。
         :type image_id: str
         :param os_type: 
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
-        :param product_id: 产品id
+        :param product_id: 产品id。
         :type product_id: str
-        :param subnet_id: 网卡对应的子网ID
+        :param subnet_id: 网卡对应的子网ID。
         :type subnet_id: str
         :param system_disk_type: 
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
-        :param system_disk_size: 磁盘容量，单位GB
+        :param system_disk_size: 磁盘容量，单位GB。
         :type system_disk_size: int
-        :param is_vdi: 是否为vdi单会话模式
+        :param is_vdi: 是否为vdi单会话模式。
         :type is_vdi: bool
         :param extra_session_type: 
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
-        :param extra_session_size: 付费会话个数
+        :param extra_session_size: 付费会话个数。
         :type extra_session_size: int
         :param app_type: 
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -108,21 +108,21 @@ class CreateServerGroupResponse(SdkResponse):
         :type update_time: datetime
         :param storage_mount_policy: 
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
-        :param app_server_flavor_count: 服务器配置总数量
+        :param app_server_flavor_count: 服务器配置总数量。
         :type app_server_flavor_count: int
-        :param app_server_count: 服务器总数量
+        :param app_server_count: 服务器总数量。
         :type app_server_count: int
-        :param app_group_count: 关联应用组的总数量
+        :param app_group_count: 关联应用组的总数量。
         :type app_group_count: int
-        :param image_name: 镜像名称
+        :param image_name: 镜像名称。
         :type image_name: str
         :param product_info: 
         :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
-        :param subnet_name: 子网名称
+        :param subnet_name: 子网名称。
         :type subnet_name: str
         :param scaling_policy: 
         :type scaling_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicy`
-        :param ou_name: 默认组织名称
+        :param ou_name: 默认组织名称。
         :type ou_name: str
         """
         
@@ -207,7 +207,7 @@ class CreateServerGroupResponse(SdkResponse):
     def id(self):
         """Gets the id of this CreateServerGroupResponse.
 
-        服务器组的唯一标识
+        服务器组的唯一标识。
 
         :return: The id of this CreateServerGroupResponse.
         :rtype: str
@@ -218,7 +218,7 @@ class CreateServerGroupResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this CreateServerGroupResponse.
 
-        服务器组的唯一标识
+        服务器组的唯一标识。
 
         :param id: The id of this CreateServerGroupResponse.
         :type id: str
@@ -229,7 +229,7 @@ class CreateServerGroupResponse(SdkResponse):
     def name(self):
         """Gets the name of this CreateServerGroupResponse.
 
-        服务器组名称
+        服务器组名称。
 
         :return: The name of this CreateServerGroupResponse.
         :rtype: str
@@ -240,7 +240,7 @@ class CreateServerGroupResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this CreateServerGroupResponse.
 
-        服务器组名称
+        服务器组名称。
 
         :param name: The name of this CreateServerGroupResponse.
         :type name: str
@@ -251,7 +251,7 @@ class CreateServerGroupResponse(SdkResponse):
     def description(self):
         """Gets the description of this CreateServerGroupResponse.
 
-        服务器组描述
+        服务器组描述。
 
         :return: The description of this CreateServerGroupResponse.
         :rtype: str
@@ -262,7 +262,7 @@ class CreateServerGroupResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this CreateServerGroupResponse.
 
-        服务器组描述
+        服务器组描述。
 
         :param description: The description of this CreateServerGroupResponse.
         :type description: str
@@ -273,7 +273,7 @@ class CreateServerGroupResponse(SdkResponse):
     def image_id(self):
         """Gets the image_id of this CreateServerGroupResponse.
 
-        服务器组关联的镜像ID，用于创建对应组下的云服务器
+        服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
         :return: The image_id of this CreateServerGroupResponse.
         :rtype: str
@@ -284,7 +284,7 @@ class CreateServerGroupResponse(SdkResponse):
     def image_id(self, image_id):
         """Sets the image_id of this CreateServerGroupResponse.
 
-        服务器组关联的镜像ID，用于创建对应组下的云服务器
+        服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
         :param image_id: The image_id of this CreateServerGroupResponse.
         :type image_id: str
@@ -313,7 +313,7 @@ class CreateServerGroupResponse(SdkResponse):
     def product_id(self):
         """Gets the product_id of this CreateServerGroupResponse.
 
-        产品id
+        产品id。
 
         :return: The product_id of this CreateServerGroupResponse.
         :rtype: str
@@ -324,7 +324,7 @@ class CreateServerGroupResponse(SdkResponse):
     def product_id(self, product_id):
         """Sets the product_id of this CreateServerGroupResponse.
 
-        产品id
+        产品id。
 
         :param product_id: The product_id of this CreateServerGroupResponse.
         :type product_id: str
@@ -335,7 +335,7 @@ class CreateServerGroupResponse(SdkResponse):
     def subnet_id(self):
         """Gets the subnet_id of this CreateServerGroupResponse.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :return: The subnet_id of this CreateServerGroupResponse.
         :rtype: str
@@ -346,7 +346,7 @@ class CreateServerGroupResponse(SdkResponse):
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this CreateServerGroupResponse.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :param subnet_id: The subnet_id of this CreateServerGroupResponse.
         :type subnet_id: str
@@ -375,7 +375,7 @@ class CreateServerGroupResponse(SdkResponse):
     def system_disk_size(self):
         """Gets the system_disk_size of this CreateServerGroupResponse.
 
-        磁盘容量，单位GB
+        磁盘容量，单位GB。
 
         :return: The system_disk_size of this CreateServerGroupResponse.
         :rtype: int
@@ -386,7 +386,7 @@ class CreateServerGroupResponse(SdkResponse):
     def system_disk_size(self, system_disk_size):
         """Sets the system_disk_size of this CreateServerGroupResponse.
 
-        磁盘容量，单位GB
+        磁盘容量，单位GB。
 
         :param system_disk_size: The system_disk_size of this CreateServerGroupResponse.
         :type system_disk_size: int
@@ -397,7 +397,7 @@ class CreateServerGroupResponse(SdkResponse):
     def is_vdi(self):
         """Gets the is_vdi of this CreateServerGroupResponse.
 
-        是否为vdi单会话模式
+        是否为vdi单会话模式。
 
         :return: The is_vdi of this CreateServerGroupResponse.
         :rtype: bool
@@ -408,7 +408,7 @@ class CreateServerGroupResponse(SdkResponse):
     def is_vdi(self, is_vdi):
         """Sets the is_vdi of this CreateServerGroupResponse.
 
-        是否为vdi单会话模式
+        是否为vdi单会话模式。
 
         :param is_vdi: The is_vdi of this CreateServerGroupResponse.
         :type is_vdi: bool
@@ -437,7 +437,7 @@ class CreateServerGroupResponse(SdkResponse):
     def extra_session_size(self):
         """Gets the extra_session_size of this CreateServerGroupResponse.
 
-        付费会话个数
+        付费会话个数。
 
         :return: The extra_session_size of this CreateServerGroupResponse.
         :rtype: int
@@ -448,7 +448,7 @@ class CreateServerGroupResponse(SdkResponse):
     def extra_session_size(self, extra_session_size):
         """Sets the extra_session_size of this CreateServerGroupResponse.
 
-        付费会话个数
+        付费会话个数。
 
         :param extra_session_size: The extra_session_size of this CreateServerGroupResponse.
         :type extra_session_size: int
@@ -539,7 +539,7 @@ class CreateServerGroupResponse(SdkResponse):
     def app_server_flavor_count(self):
         """Gets the app_server_flavor_count of this CreateServerGroupResponse.
 
-        服务器配置总数量
+        服务器配置总数量。
 
         :return: The app_server_flavor_count of this CreateServerGroupResponse.
         :rtype: int
@@ -550,7 +550,7 @@ class CreateServerGroupResponse(SdkResponse):
     def app_server_flavor_count(self, app_server_flavor_count):
         """Sets the app_server_flavor_count of this CreateServerGroupResponse.
 
-        服务器配置总数量
+        服务器配置总数量。
 
         :param app_server_flavor_count: The app_server_flavor_count of this CreateServerGroupResponse.
         :type app_server_flavor_count: int
@@ -561,7 +561,7 @@ class CreateServerGroupResponse(SdkResponse):
     def app_server_count(self):
         """Gets the app_server_count of this CreateServerGroupResponse.
 
-        服务器总数量
+        服务器总数量。
 
         :return: The app_server_count of this CreateServerGroupResponse.
         :rtype: int
@@ -572,7 +572,7 @@ class CreateServerGroupResponse(SdkResponse):
     def app_server_count(self, app_server_count):
         """Sets the app_server_count of this CreateServerGroupResponse.
 
-        服务器总数量
+        服务器总数量。
 
         :param app_server_count: The app_server_count of this CreateServerGroupResponse.
         :type app_server_count: int
@@ -583,7 +583,7 @@ class CreateServerGroupResponse(SdkResponse):
     def app_group_count(self):
         """Gets the app_group_count of this CreateServerGroupResponse.
 
-        关联应用组的总数量
+        关联应用组的总数量。
 
         :return: The app_group_count of this CreateServerGroupResponse.
         :rtype: int
@@ -594,7 +594,7 @@ class CreateServerGroupResponse(SdkResponse):
     def app_group_count(self, app_group_count):
         """Sets the app_group_count of this CreateServerGroupResponse.
 
-        关联应用组的总数量
+        关联应用组的总数量。
 
         :param app_group_count: The app_group_count of this CreateServerGroupResponse.
         :type app_group_count: int
@@ -605,7 +605,7 @@ class CreateServerGroupResponse(SdkResponse):
     def image_name(self):
         """Gets the image_name of this CreateServerGroupResponse.
 
-        镜像名称
+        镜像名称。
 
         :return: The image_name of this CreateServerGroupResponse.
         :rtype: str
@@ -616,7 +616,7 @@ class CreateServerGroupResponse(SdkResponse):
     def image_name(self, image_name):
         """Sets the image_name of this CreateServerGroupResponse.
 
-        镜像名称
+        镜像名称。
 
         :param image_name: The image_name of this CreateServerGroupResponse.
         :type image_name: str
@@ -645,7 +645,7 @@ class CreateServerGroupResponse(SdkResponse):
     def subnet_name(self):
         """Gets the subnet_name of this CreateServerGroupResponse.
 
-        子网名称
+        子网名称。
 
         :return: The subnet_name of this CreateServerGroupResponse.
         :rtype: str
@@ -656,7 +656,7 @@ class CreateServerGroupResponse(SdkResponse):
     def subnet_name(self, subnet_name):
         """Sets the subnet_name of this CreateServerGroupResponse.
 
-        子网名称
+        子网名称。
 
         :param subnet_name: The subnet_name of this CreateServerGroupResponse.
         :type subnet_name: str
@@ -685,7 +685,7 @@ class CreateServerGroupResponse(SdkResponse):
     def ou_name(self):
         """Gets the ou_name of this CreateServerGroupResponse.
 
-        默认组织名称
+        默认组织名称。
 
         :return: The ou_name of this CreateServerGroupResponse.
         :rtype: str
@@ -696,7 +696,7 @@ class CreateServerGroupResponse(SdkResponse):
     def ou_name(self, ou_name):
         """Sets the ou_name of this CreateServerGroupResponse.
 
-        默认组织名称
+        默认组织名称。
 
         :param ou_name: The ou_name of this CreateServerGroupResponse.
         :type ou_name: str

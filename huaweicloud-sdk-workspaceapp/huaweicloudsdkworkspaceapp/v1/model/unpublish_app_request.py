@@ -31,7 +31,7 @@ class UnpublishAppRequest:
 
         The model defined in huaweicloud sdk
 
-        :param app_group_id: 应用组ID
+        :param app_group_id: 应用组ID。
         :type app_group_id: str
         :param body: Body of the UnpublishAppRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UnpublishAppReq`
@@ -51,7 +51,7 @@ class UnpublishAppRequest:
     def app_group_id(self):
         """Gets the app_group_id of this UnpublishAppRequest.
 
-        应用组ID
+        应用组ID。
 
         :return: The app_group_id of this UnpublishAppRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UnpublishAppRequest:
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this UnpublishAppRequest.
 
-        应用组ID
+        应用组ID。
 
         :param app_group_id: The app_group_id of this UnpublishAppRequest.
         :type app_group_id: str

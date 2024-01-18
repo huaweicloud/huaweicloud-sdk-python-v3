@@ -49,6 +49,8 @@ from huaweicloudsdkcdn.v2.model.inherit_config_query import InheritConfigQuery
 from huaweicloudsdkcdn.v2.model.ip_filter import IpFilter
 from huaweicloudsdkcdn.v2.model.ip_frequency_limit import IpFrequencyLimit
 from huaweicloudsdkcdn.v2.model.ip_frequency_limit_query import IpFrequencyLimitQuery
+from huaweicloudsdkcdn.v2.model.list_cdn_domain_top_refers_request import ListCdnDomainTopRefersRequest
+from huaweicloudsdkcdn.v2.model.list_cdn_domain_top_refers_response import ListCdnDomainTopRefersResponse
 from huaweicloudsdkcdn.v2.model.list_domains_request import ListDomainsRequest
 from huaweicloudsdkcdn.v2.model.list_domains_response import ListDomainsResponse
 from huaweicloudsdkcdn.v2.model.modify_domain_config_request_body import ModifyDomainConfigRequestBody
@@ -91,6 +93,7 @@ from huaweicloudsdkcdn.v2.model.sources import Sources
 from huaweicloudsdkcdn.v2.model.sources_config import SourcesConfig
 from huaweicloudsdkcdn.v2.model.sources_domain_config import SourcesDomainConfig
 from huaweicloudsdkcdn.v2.model.tasks_object import TasksObject
+from huaweicloudsdkcdn.v2.model.top_refer_summary import TopReferSummary
 from huaweicloudsdkcdn.v2.model.top_url_summary import TopUrlSummary
 from huaweicloudsdkcdn.v2.model.update_domain_full_config_request import UpdateDomainFullConfigRequest
 from huaweicloudsdkcdn.v2.model.update_domain_full_config_response import UpdateDomainFullConfigResponse

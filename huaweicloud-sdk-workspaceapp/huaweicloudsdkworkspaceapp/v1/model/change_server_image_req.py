@@ -37,15 +37,15 @@ class ChangeServerImageReq:
 
         The model defined in huaweicloud sdk
 
-        :param image_id: 镜像id，要求与服务器原有镜像id不相同
+        :param image_id: 镜像id，要求与服务器原有镜像id不相同。
         :type image_id: str
         :param image_type: 
         :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         :param os_type: 
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
-        :param image_product_id: 镜像的产品id，当镜像是市场镜像时候，该字段必传
+        :param image_product_id: 镜像的产品id，当镜像是市场镜像时候，该字段必传。
         :type image_product_id: str
-        :param update_access_agent: 是否自动升级hda版本
+        :param update_access_agent: 是否自动升级hda版本。
         :type update_access_agent: bool
         """
         
@@ -70,7 +70,7 @@ class ChangeServerImageReq:
     def image_id(self):
         """Gets the image_id of this ChangeServerImageReq.
 
-        镜像id，要求与服务器原有镜像id不相同
+        镜像id，要求与服务器原有镜像id不相同。
 
         :return: The image_id of this ChangeServerImageReq.
         :rtype: str
@@ -81,7 +81,7 @@ class ChangeServerImageReq:
     def image_id(self, image_id):
         """Sets the image_id of this ChangeServerImageReq.
 
-        镜像id，要求与服务器原有镜像id不相同
+        镜像id，要求与服务器原有镜像id不相同。
 
         :param image_id: The image_id of this ChangeServerImageReq.
         :type image_id: str
@@ -128,7 +128,7 @@ class ChangeServerImageReq:
     def image_product_id(self):
         """Gets the image_product_id of this ChangeServerImageReq.
 
-        镜像的产品id，当镜像是市场镜像时候，该字段必传
+        镜像的产品id，当镜像是市场镜像时候，该字段必传。
 
         :return: The image_product_id of this ChangeServerImageReq.
         :rtype: str
@@ -139,7 +139,7 @@ class ChangeServerImageReq:
     def image_product_id(self, image_product_id):
         """Sets the image_product_id of this ChangeServerImageReq.
 
-        镜像的产品id，当镜像是市场镜像时候，该字段必传
+        镜像的产品id，当镜像是市场镜像时候，该字段必传。
 
         :param image_product_id: The image_product_id of this ChangeServerImageReq.
         :type image_product_id: str
@@ -150,7 +150,7 @@ class ChangeServerImageReq:
     def update_access_agent(self):
         """Gets the update_access_agent of this ChangeServerImageReq.
 
-        是否自动升级hda版本
+        是否自动升级hda版本。
 
         :return: The update_access_agent of this ChangeServerImageReq.
         :rtype: bool
@@ -161,7 +161,7 @@ class ChangeServerImageReq:
     def update_access_agent(self, update_access_agent):
         """Sets the update_access_agent of this ChangeServerImageReq.
 
-        是否自动升级hda版本
+        是否自动升级hda版本。
 
         :param update_access_agent: The update_access_agent of this ChangeServerImageReq.
         :type update_access_agent: bool

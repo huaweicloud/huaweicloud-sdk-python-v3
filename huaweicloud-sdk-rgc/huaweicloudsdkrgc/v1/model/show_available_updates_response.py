@@ -40,7 +40,7 @@ class ShowAvailableUpdatesResponse(SdkResponse):
 
         :param baseline_update_available: Landing Zone基础配置是否可用。
         :type baseline_update_available: bool
-        :param control_update_available: 控制策略是否可用。
+        :param control_update_available: 当前账号下是否有新的控制策略。
         :type control_update_available: bool
         :param landing_zone_update_available: Landing Zone是否可更新。
         :type landing_zone_update_available: bool
@@ -96,7 +96,7 @@ class ShowAvailableUpdatesResponse(SdkResponse):
     def control_update_available(self):
         """Gets the control_update_available of this ShowAvailableUpdatesResponse.
 
-        控制策略是否可用。
+        当前账号下是否有新的控制策略。
 
         :return: The control_update_available of this ShowAvailableUpdatesResponse.
         :rtype: bool
@@ -107,7 +107,7 @@ class ShowAvailableUpdatesResponse(SdkResponse):
     def control_update_available(self, control_update_available):
         """Sets the control_update_available of this ShowAvailableUpdatesResponse.
 
-        控制策略是否可用。
+        当前账号下是否有新的控制策略。
 
         :param control_update_available: The control_update_available of this ShowAvailableUpdatesResponse.
         :type control_update_available: bool

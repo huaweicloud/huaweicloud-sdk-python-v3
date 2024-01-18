@@ -12690,6 +12690,75 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_data_detail(self, request):
+        """资产详情(邀测)
+
+        资产详情接口，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDataDetail
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataDetailRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataDetailResponse`
+        """
+        http_info = self._show_data_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_data_detail_invoker(self, request):
+        http_info = self._show_data_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_data_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/datamap/entities/guid/{guid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'guid' in local_var_params:
+            path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+        if 'ignore_relationships' in local_var_params:
+            query_params.append(('ignore_relationships', local_var_params['ignore_relationships']))
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_data_profile(self, request):
         """资产信息
 
@@ -12872,6 +12941,88 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_datamap_lineage(self, request):
+        """资产血缘(邀测)
+
+        资产血缘接口，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDatamapLineage
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDatamapLineageRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDatamapLineageResponse`
+        """
+        http_info = self._show_datamap_lineage_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_datamap_lineage_invoker(self, request):
+        http_info = self._show_datamap_lineage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_datamap_lineage_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/datamap/lineage/guid/{guid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatamapLineageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'guid' in local_var_params:
+            path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'relationship_types' in local_var_params:
+            query_params.append(('relationship_types', local_var_params['relationship_types']))
+            collection_formats['relationship_types'] = 'csv'
+        if 'relationship_type_categories' in local_var_params:
+            query_params.append(('relationship_type_categories', local_var_params['relationship_type_categories']))
+            collection_formats['relationship_type_categories'] = 'csv'
+        if 'related_entity_types' in local_var_params:
+            query_params.append(('related_entity_types', local_var_params['related_entity_types']))
+            collection_formats['related_entity_types'] = 'csv'
+        if 'extend_process_data_flow' in local_var_params:
+            query_params.append(('extend_process_data_flow', local_var_params['extend_process_data_flow']))
+        if 'include_parent_entity' in local_var_params:
+            query_params.append(('include_parent_entity', local_var_params['include_parent_entity']))
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
 
         form_params = {}
 
@@ -13536,6 +13687,85 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_instance_infos(self, request):
+        """产出信息(邀测)
+
+        查询表相关的作业算子运行实例信息，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceInfos
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowInstanceInfosRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowInstanceInfosResponse`
+        """
+        http_info = self._show_instance_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_infos_invoker(self, request):
+        http_info = self._show_instance_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/datamap/node/{task_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceInfosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_instance_log(self, request):
         """获取任务日志
 
@@ -13745,6 +13975,75 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_lineage_bulk(self, request):
+        """批量血缘(邀测)
+
+        批量血缘接口，根据作业算子分页批量查询血缘。该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLineageBulk
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowLineageBulkRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowLineageBulkResponse`
+        """
+        http_info = self._show_lineage_bulk_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_lineage_bulk_invoker(self, request):
+        http_info = self._show_lineage_bulk_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_lineage_bulk_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/datamap/lineage/bulk",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLineageBulkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_message_detail(self, request):
         """获取消息详情
 
@@ -13921,6 +14220,73 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_nodes(self, request):
+        """表关联作业算子列表(邀测)
+
+        查询表相关的作业算子列表，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowNodes
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowNodesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowNodesResponse`
+        """
+        http_info = self._show_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_nodes_invoker(self, request):
+        http_info = self._show_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_nodes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/datamap/table/{guid}/node",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'guid' in local_var_params:
+            path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
 
         form_params = {}
 

@@ -29,7 +29,7 @@ class TempName:
 
         The model defined in huaweicloud sdk
 
-        :param name: name
+        :param name: 名称
         :type name: str
         """
         
@@ -45,7 +45,7 @@ class TempName:
     def name(self):
         """Gets the name of this TempName.
 
-        name
+        名称
 
         :return: The name of this TempName.
         :rtype: str
@@ -56,7 +56,7 @@ class TempName:
     def name(self, name):
         """Sets the name of this TempName.
 
-        name
+        名称
 
         :param name: The name of this TempName.
         :type name: str

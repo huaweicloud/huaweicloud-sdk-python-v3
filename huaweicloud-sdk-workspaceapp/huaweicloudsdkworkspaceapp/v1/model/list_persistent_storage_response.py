@@ -32,9 +32,9 @@ class ListPersistentStorageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 存储列表
+        :param items: 存储列表。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PersistentStorage`]
         """
         
@@ -53,7 +53,7 @@ class ListPersistentStorageResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListPersistentStorageResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListPersistentStorageResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListPersistentStorageResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListPersistentStorageResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListPersistentStorageResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListPersistentStorageResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListPersistentStorageResponse.
 
-        存储列表
+        存储列表。
 
         :return: The items of this ListPersistentStorageResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.PersistentStorage`]
@@ -86,7 +86,7 @@ class ListPersistentStorageResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListPersistentStorageResponse.
 
-        存储列表
+        存储列表。
 
         :param items: The items of this ListPersistentStorageResponse.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PersistentStorage`]

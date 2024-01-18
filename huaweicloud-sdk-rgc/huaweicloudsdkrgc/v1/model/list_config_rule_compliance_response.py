@@ -32,9 +32,9 @@ class ListConfigRuleComplianceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 账号ID
+        :param account_id: 纳管账号ID
         :type account_id: str
-        :param config_rule_compliances: 
+        :param config_rule_compliances: Config规则合规性信息
         :type config_rule_compliances: list[:class:`huaweicloudsdkrgc.v1.ConfigRuleCompliance`]
         """
         
@@ -53,7 +53,7 @@ class ListConfigRuleComplianceResponse(SdkResponse):
     def account_id(self):
         """Gets the account_id of this ListConfigRuleComplianceResponse.
 
-        账号ID
+        纳管账号ID
 
         :return: The account_id of this ListConfigRuleComplianceResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ListConfigRuleComplianceResponse(SdkResponse):
     def account_id(self, account_id):
         """Sets the account_id of this ListConfigRuleComplianceResponse.
 
-        账号ID
+        纳管账号ID
 
         :param account_id: The account_id of this ListConfigRuleComplianceResponse.
         :type account_id: str
@@ -75,6 +75,8 @@ class ListConfigRuleComplianceResponse(SdkResponse):
     def config_rule_compliances(self):
         """Gets the config_rule_compliances of this ListConfigRuleComplianceResponse.
 
+        Config规则合规性信息
+
         :return: The config_rule_compliances of this ListConfigRuleComplianceResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.ConfigRuleCompliance`]
         """
@@ -83,6 +85,8 @@ class ListConfigRuleComplianceResponse(SdkResponse):
     @config_rule_compliances.setter
     def config_rule_compliances(self, config_rule_compliances):
         """Sets the config_rule_compliances of this ListConfigRuleComplianceResponse.
+
+        Config规则合规性信息
 
         :param config_rule_compliances: The config_rule_compliances of this ListConfigRuleComplianceResponse.
         :type config_rule_compliances: list[:class:`huaweicloudsdkrgc.v1.ConfigRuleCompliance`]

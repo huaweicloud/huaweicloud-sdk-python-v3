@@ -35,13 +35,13 @@ class UpdateVariableRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 变量id
         :type id: int
-        :param name: name
+        :param name: 变量名称
         :type name: str
-        :param variable_type: variable_type
+        :param variable_type: 变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
         :type variable_type: int
-        :param variable: variable
+        :param variable: 变量值
         :type variable: list[object]
         """
         
@@ -62,7 +62,7 @@ class UpdateVariableRequestBody:
     def id(self):
         """Gets the id of this UpdateVariableRequestBody.
 
-        id
+        变量id
 
         :return: The id of this UpdateVariableRequestBody.
         :rtype: int
@@ -73,7 +73,7 @@ class UpdateVariableRequestBody:
     def id(self, id):
         """Sets the id of this UpdateVariableRequestBody.
 
-        id
+        变量id
 
         :param id: The id of this UpdateVariableRequestBody.
         :type id: int
@@ -84,7 +84,7 @@ class UpdateVariableRequestBody:
     def name(self):
         """Gets the name of this UpdateVariableRequestBody.
 
-        name
+        变量名称
 
         :return: The name of this UpdateVariableRequestBody.
         :rtype: str
@@ -95,7 +95,7 @@ class UpdateVariableRequestBody:
     def name(self, name):
         """Sets the name of this UpdateVariableRequestBody.
 
-        name
+        变量名称
 
         :param name: The name of this UpdateVariableRequestBody.
         :type name: str
@@ -106,7 +106,7 @@ class UpdateVariableRequestBody:
     def variable_type(self):
         """Gets the variable_type of this UpdateVariableRequestBody.
 
-        variable_type
+        变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
 
         :return: The variable_type of this UpdateVariableRequestBody.
         :rtype: int
@@ -117,7 +117,7 @@ class UpdateVariableRequestBody:
     def variable_type(self, variable_type):
         """Sets the variable_type of this UpdateVariableRequestBody.
 
-        variable_type
+        变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
 
         :param variable_type: The variable_type of this UpdateVariableRequestBody.
         :type variable_type: int
@@ -128,7 +128,7 @@ class UpdateVariableRequestBody:
     def variable(self):
         """Gets the variable of this UpdateVariableRequestBody.
 
-        variable
+        变量值
 
         :return: The variable of this UpdateVariableRequestBody.
         :rtype: list[object]
@@ -139,7 +139,7 @@ class UpdateVariableRequestBody:
     def variable(self, variable):
         """Sets the variable of this UpdateVariableRequestBody.
 
-        variable
+        变量值
 
         :param variable: The variable of this UpdateVariableRequestBody.
         :type variable: list[object]

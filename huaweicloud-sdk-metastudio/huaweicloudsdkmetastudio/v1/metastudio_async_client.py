@@ -32,6 +32,280 @@ class MetaStudioAsyncClient(Client):
 
         return client_builder
 
+    def create_dialog_url_async(self, request):
+        """创建对话链接
+
+        该接口用于创建对话链接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDialogUrl
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateDialogUrlRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateDialogUrlResponse`
+        """
+        http_info = self._create_dialog_url_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dialog_url_async_invoker(self, request):
+        http_info = self._create_dialog_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dialog_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/create-dialog-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDialogUrlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_smart_chat_job_async(self, request):
+        """查询数字人智能交互任务
+
+        该接口用于查询数字人智能交互任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSmartChatJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowSmartChatJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowSmartChatJobResponse`
+        """
+        http_info = self._show_smart_chat_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_smart_chat_job_async_invoker(self, request):
+        http_info = self._show_smart_chat_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_smart_chat_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/smart-chat-rooms/{room_id}/smart-chat-jobs/{job_id}/state",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSmartChatJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_smart_chat_job_async(self, request):
+        """启动数字人智能交互任务
+
+        该接口用于启动数字人智能交互任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartSmartChatJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.StartSmartChatJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.StartSmartChatJobResponse`
+        """
+        http_info = self._start_smart_chat_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_smart_chat_job_async_invoker(self, request):
+        http_info = self._start_smart_chat_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_smart_chat_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/smart-chat-rooms/{room_id}/smart-chat-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartSmartChatJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+
+        query_params = []
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_smart_chat_job_async(self, request):
+        """结束数字人智能交互任务
+
+        该接口用于结束数字人智能交互任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopSmartChatJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.StopSmartChatJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.StopSmartChatJobResponse`
+        """
+        http_info = self._stop_smart_chat_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_smart_chat_job_async_invoker(self, request):
+        http_info = self._stop_smart_chat_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_smart_chat_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/smart-chat-rooms/{room_id}/smart-chat-jobs/{job_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopSmartChatJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_digital_asset_async(self, request):
         """创建资产
 
@@ -943,6 +1217,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('script_id', local_var_params['script_id']))
         if 'asset_name' in local_var_params:
             query_params.append(('asset_name', local_var_params['asset_name']))
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -1715,6 +1991,71 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def create_once_code_async(self, request):
+        """创建一次性鉴权码
+
+        该接口用于创建一次性鉴权码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOnceCode
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateOnceCodeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateOnceCodeResponse`
+        """
+        http_info = self._create_once_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_once_code_async_invoker(self, request):
+        http_info = self._create_once_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_once_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/once-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOnceCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_picture_modeling_by_url_job_async(self, request):
         """基于图片URL创建照片建模任务
 
@@ -1982,6 +2323,692 @@ class MetaStudioAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_robot_async(self, request):
+        """创建应用
+
+        该接口用于创建应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRobot
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateRobotRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateRobotResponse`
+        """
+        http_info = self._create_robot_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_robot_async_invoker(self, request):
+        http_info = self._create_robot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_robot_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/robot",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRobotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_robot_async(self, request):
+        """删除应用
+
+        该接口用于删除应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRobot
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteRobotRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteRobotResponse`
+        """
+        http_info = self._delete_robot_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_robot_async_invoker(self, request):
+        http_info = self._delete_robot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_robot_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/robot/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRobotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_robot_async(self, request):
+        """查询应用列表
+
+        该接口用于查询应用列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRobot
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListRobotRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListRobotResponse`
+        """
+        http_info = self._list_robot_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_robot_async_invoker(self, request):
+        http_info = self._list_robot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_robot_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/robot",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRobotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_robot_async(self, request):
+        """查询应用详情
+
+        该接口用于查询应用详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRobot
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowRobotRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowRobotResponse`
+        """
+        http_info = self._show_robot_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_robot_async_invoker(self, request):
+        http_info = self._show_robot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_robot_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/robot/{robot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRobotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'robot_id' in local_var_params:
+            path_params['robot_id'] = local_var_params['robot_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_robot_async(self, request):
+        """修改应用
+
+        该接口用于修改应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRobot
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateRobotRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateRobotResponse`
+        """
+        http_info = self._update_robot_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_robot_async_invoker(self, request):
+        http_info = self._update_robot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_robot_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/robot/{robot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRobotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'robot_id' in local_var_params:
+            path_params['robot_id'] = local_var_params['robot_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_smart_chat_room_async(self, request):
+        """创建智能交互对话直播间
+
+        该接口用于创建智能交互对话直播间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSmartChatRoom
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateSmartChatRoomRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateSmartChatRoomResponse`
+        """
+        http_info = self._create_smart_chat_room_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_smart_chat_room_async_invoker(self, request):
+        http_info = self._create_smart_chat_room_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_smart_chat_room_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-chat-rooms",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSmartChatRoomResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_smart_chat_room_async(self, request):
+        """删除智能交互对话直播间
+
+        该接口用于删除智能交互对话直播间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSmartChatRoom
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteSmartChatRoomRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteSmartChatRoomResponse`
+        """
+        http_info = self._delete_smart_chat_room_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_smart_chat_room_async_invoker(self, request):
+        http_info = self._delete_smart_chat_room_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_smart_chat_room_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/smart-chat-rooms/{room_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSmartChatRoomResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_smart_chat_rooms_async(self, request):
+        """查询智能交互对话直播间列表
+
+        该接口用于智能交互对话直播间列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSmartChatRooms
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListSmartChatRoomsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSmartChatRoomsResponse`
+        """
+        http_info = self._list_smart_chat_rooms_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_smart_chat_rooms_async_invoker(self, request):
+        http_info = self._list_smart_chat_rooms_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_smart_chat_rooms_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-chat-rooms",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmartChatRoomsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'room_name' in local_var_params:
+            query_params.append(('room_name', local_var_params['room_name']))
+        if 'model_name' in local_var_params:
+            query_params.append(('model_name', local_var_params['model_name']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_smart_chat_room_async(self, request):
+        """查询智能交互对话直播间详情
+
+        该接口用于查询智能交互对话直播间详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSmartChatRoom
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowSmartChatRoomRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowSmartChatRoomResponse`
+        """
+        http_info = self._show_smart_chat_room_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_smart_chat_room_async_invoker(self, request):
+        http_info = self._show_smart_chat_room_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_smart_chat_room_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-chat-rooms/{room_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSmartChatRoomResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_smart_chat_room_async(self, request):
+        """更新智能交互对话直播间信息
+
+        该接口用于智能交互对话直播间信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSmartChatRoom
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateSmartChatRoomRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateSmartChatRoomResponse`
+        """
+        http_info = self._update_smart_chat_room_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_smart_chat_room_async_invoker(self, request):
+        http_info = self._update_smart_chat_room_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_smart_chat_room_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/smart-chat-rooms/{room_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSmartChatRoomResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

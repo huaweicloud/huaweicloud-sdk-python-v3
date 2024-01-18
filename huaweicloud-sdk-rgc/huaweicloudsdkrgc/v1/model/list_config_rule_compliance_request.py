@@ -15,82 +15,52 @@ class ListConfigRuleComplianceRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('x_security_token')
 
     openapi_types = {
-        'account_id': 'str',
-        'x_security_token': 'str'
+        'managed_account_id': 'str'
     }
 
     attribute_map = {
-        'account_id': 'account_id',
-        'x_security_token': 'X-Security-Token'
+        'managed_account_id': 'managed_account_id'
     }
 
-    def __init__(self, account_id=None, x_security_token=None):
+    def __init__(self, managed_account_id=None):
         """ListConfigRuleComplianceRequest
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 账号ID。
-        :type account_id: str
-        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-        :type x_security_token: str
+        :param managed_account_id: 纳管账号ID。
+        :type managed_account_id: str
         """
         
         
 
-        self._account_id = None
-        self._x_security_token = None
+        self._managed_account_id = None
         self.discriminator = None
 
-        self.account_id = account_id
-        if x_security_token is not None:
-            self.x_security_token = x_security_token
+        self.managed_account_id = managed_account_id
 
     @property
-    def account_id(self):
-        """Gets the account_id of this ListConfigRuleComplianceRequest.
+    def managed_account_id(self):
+        """Gets the managed_account_id of this ListConfigRuleComplianceRequest.
 
-        账号ID。
+        纳管账号ID。
 
-        :return: The account_id of this ListConfigRuleComplianceRequest.
+        :return: The managed_account_id of this ListConfigRuleComplianceRequest.
         :rtype: str
         """
-        return self._account_id
+        return self._managed_account_id
 
-    @account_id.setter
-    def account_id(self, account_id):
-        """Sets the account_id of this ListConfigRuleComplianceRequest.
+    @managed_account_id.setter
+    def managed_account_id(self, managed_account_id):
+        """Sets the managed_account_id of this ListConfigRuleComplianceRequest.
 
-        账号ID。
+        纳管账号ID。
 
-        :param account_id: The account_id of this ListConfigRuleComplianceRequest.
-        :type account_id: str
+        :param managed_account_id: The managed_account_id of this ListConfigRuleComplianceRequest.
+        :type managed_account_id: str
         """
-        self._account_id = account_id
-
-    @property
-    def x_security_token(self):
-        """Gets the x_security_token of this ListConfigRuleComplianceRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :return: The x_security_token of this ListConfigRuleComplianceRequest.
-        :rtype: str
-        """
-        return self._x_security_token
-
-    @x_security_token.setter
-    def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListConfigRuleComplianceRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :param x_security_token: The x_security_token of this ListConfigRuleComplianceRequest.
-        :type x_security_token: str
-        """
-        self._x_security_token = x_security_token
+        self._managed_account_id = managed_account_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

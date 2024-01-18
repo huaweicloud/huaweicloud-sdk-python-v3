@@ -55,13 +55,13 @@ class CreateAppServerReq:
 
         The model defined in huaweicloud sdk
 
-        :param type: 创建云服务类型，当前仅支持创建云应用：createApps
+        :param type: 创建云服务类型，当前仅支持创建云应用：createApps。
         :type type: str
-        :param server_group_id: 服务器组唯一标识
+        :param server_group_id: 服务器组唯一标识。
         :type server_group_id: str
         :param availability_zone: 可用分区。 &gt; - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 &gt; - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
         :type availability_zone: str
-        :param subscription_num: 订购数量
+        :param subscription_num: 订购数量。
         :type subscription_num: int
         :param nics: 服务对应的网卡信息，当前未使用该字段。
         :type nics: list[:class:`huaweicloudsdkworkspaceapp.v1.Nic`]
@@ -75,11 +75,11 @@ class CreateAppServerReq:
         :type root_volume: :class:`huaweicloudsdkworkspaceapp.v1.Volume`
         :param scheduler_hints: 
         :type scheduler_hints: :class:`huaweicloudsdkworkspaceapp.v1.WdhParam`
-        :param subnet_id: 网卡对应的子网ID
+        :param subnet_id: 网卡对应的子网ID。
         :type subnet_id: str
         :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
-        :param update_access_agent: 是否自动升级hda版本
+        :param update_access_agent: 是否自动升级hda版本。
         :type update_access_agent: bool
         :param create_server_extend_param: 
         :type create_server_extend_param: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerExtendParam`
@@ -129,7 +129,7 @@ class CreateAppServerReq:
     def type(self):
         """Gets the type of this CreateAppServerReq.
 
-        创建云服务类型，当前仅支持创建云应用：createApps
+        创建云服务类型，当前仅支持创建云应用：createApps。
 
         :return: The type of this CreateAppServerReq.
         :rtype: str
@@ -140,7 +140,7 @@ class CreateAppServerReq:
     def type(self, type):
         """Sets the type of this CreateAppServerReq.
 
-        创建云服务类型，当前仅支持创建云应用：createApps
+        创建云服务类型，当前仅支持创建云应用：createApps。
 
         :param type: The type of this CreateAppServerReq.
         :type type: str
@@ -151,7 +151,7 @@ class CreateAppServerReq:
     def server_group_id(self):
         """Gets the server_group_id of this CreateAppServerReq.
 
-        服务器组唯一标识
+        服务器组唯一标识。
 
         :return: The server_group_id of this CreateAppServerReq.
         :rtype: str
@@ -162,7 +162,7 @@ class CreateAppServerReq:
     def server_group_id(self, server_group_id):
         """Sets the server_group_id of this CreateAppServerReq.
 
-        服务器组唯一标识
+        服务器组唯一标识。
 
         :param server_group_id: The server_group_id of this CreateAppServerReq.
         :type server_group_id: str
@@ -195,7 +195,7 @@ class CreateAppServerReq:
     def subscription_num(self):
         """Gets the subscription_num of this CreateAppServerReq.
 
-        订购数量
+        订购数量。
 
         :return: The subscription_num of this CreateAppServerReq.
         :rtype: int
@@ -206,7 +206,7 @@ class CreateAppServerReq:
     def subscription_num(self, subscription_num):
         """Sets the subscription_num of this CreateAppServerReq.
 
-        订购数量
+        订购数量。
 
         :param subscription_num: The subscription_num of this CreateAppServerReq.
         :type subscription_num: int
@@ -341,7 +341,7 @@ class CreateAppServerReq:
     def subnet_id(self):
         """Gets the subnet_id of this CreateAppServerReq.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :return: The subnet_id of this CreateAppServerReq.
         :rtype: str
@@ -352,7 +352,7 @@ class CreateAppServerReq:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this CreateAppServerReq.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :param subnet_id: The subnet_id of this CreateAppServerReq.
         :type subnet_id: str
@@ -385,7 +385,7 @@ class CreateAppServerReq:
     def update_access_agent(self):
         """Gets the update_access_agent of this CreateAppServerReq.
 
-        是否自动升级hda版本
+        是否自动升级hda版本。
 
         :return: The update_access_agent of this CreateAppServerReq.
         :rtype: bool
@@ -396,7 +396,7 @@ class CreateAppServerReq:
     def update_access_agent(self, update_access_agent):
         """Sets the update_access_agent of this CreateAppServerReq.
 
-        是否自动升级hda版本
+        是否自动升级hda版本。
 
         :param update_access_agent: The update_access_agent of this CreateAppServerReq.
         :type update_access_agent: bool

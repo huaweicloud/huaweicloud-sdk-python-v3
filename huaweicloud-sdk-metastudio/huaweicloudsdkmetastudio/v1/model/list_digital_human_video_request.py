@@ -26,7 +26,8 @@ class ListDigitalHumanVideoRequest:
         'create_until': 'str',
         'create_since': 'str',
         'script_id': 'str',
-        'asset_name': 'str'
+        'asset_name': 'str',
+        'job_type': 'str'
     }
 
     attribute_map = {
@@ -39,15 +40,16 @@ class ListDigitalHumanVideoRequest:
         'create_until': 'create_until',
         'create_since': 'create_since',
         'script_id': 'script_id',
-        'asset_name': 'asset_name'
+        'asset_name': 'asset_name',
+        'job_type': 'job_type'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, script_id=None, asset_name=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, script_id=None, asset_name=None, job_type=None):
         """ListDigitalHumanVideoRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 第三方用户ID。 &gt; *不允许输入中文。
+        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
         :type x_app_user_id: str
         :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
@@ -67,6 +69,8 @@ class ListDigitalHumanVideoRequest:
         :type script_id: str
         :param asset_name: 输出视频资产名称。
         :type asset_name: str
+        :param job_type: 任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+        :type job_type: str
         """
         
         
@@ -81,6 +85,7 @@ class ListDigitalHumanVideoRequest:
         self._create_since = None
         self._script_id = None
         self._asset_name = None
+        self._job_type = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -103,12 +108,14 @@ class ListDigitalHumanVideoRequest:
             self.script_id = script_id
         if asset_name is not None:
             self.asset_name = asset_name
+        if job_type is not None:
+            self.job_type = job_type
 
     @property
     def x_app_user_id(self):
         """Gets the x_app_user_id of this ListDigitalHumanVideoRequest.
 
-        第三方用户ID。 > *不允许输入中文。
+        第三方用户ID。 > * 不允许输入中文。
 
         :return: The x_app_user_id of this ListDigitalHumanVideoRequest.
         :rtype: str
@@ -119,7 +126,7 @@ class ListDigitalHumanVideoRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this ListDigitalHumanVideoRequest.
 
-        第三方用户ID。 > *不允许输入中文。
+        第三方用户ID。 > * 不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this ListDigitalHumanVideoRequest.
         :type x_app_user_id: str
@@ -323,6 +330,28 @@ class ListDigitalHumanVideoRequest:
         :type asset_name: str
         """
         self._asset_name = asset_name
+
+    @property
+    def job_type(self):
+        """Gets the job_type of this ListDigitalHumanVideoRequest.
+
+        任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+
+        :return: The job_type of this ListDigitalHumanVideoRequest.
+        :rtype: str
+        """
+        return self._job_type
+
+    @job_type.setter
+    def job_type(self, job_type):
+        """Sets the job_type of this ListDigitalHumanVideoRequest.
+
+        任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+
+        :param job_type: The job_type of this ListDigitalHumanVideoRequest.
+        :type job_type: str
+        """
+        self._job_type = job_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

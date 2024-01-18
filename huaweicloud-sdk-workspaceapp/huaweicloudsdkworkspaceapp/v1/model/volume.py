@@ -35,9 +35,9 @@ class Volume:
 
         :param type: 
         :type type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
-        :param size: 磁盘容量，单位GB，数值约束为10的倍数 * &#x60;系统盘&#x60; minLength: 10，maxLength: 1024 * &#x60;数据盘&#x60; minLength: 10，maxLength: 32768
+        :param size: 磁盘容量，单位GB，数值约束为10的倍数。 * &#x60;系统盘&#x60; minLength: 10，maxLength: 1024 * &#x60;数据盘&#x60; minLength: 10，maxLength: 32768
         :type size: int
-        :param cluster_id: 云服务器系统盘对应的存储池的ID
+        :param cluster_id: 云服务器系统盘对应的存储池的ID。
         :type cluster_id: str
         """
         
@@ -75,7 +75,7 @@ class Volume:
     def size(self):
         """Gets the size of this Volume.
 
-        磁盘容量，单位GB，数值约束为10的倍数 * `系统盘` minLength: 10，maxLength: 1024 * `数据盘` minLength: 10，maxLength: 32768
+        磁盘容量，单位GB，数值约束为10的倍数。 * `系统盘` minLength: 10，maxLength: 1024 * `数据盘` minLength: 10，maxLength: 32768
 
         :return: The size of this Volume.
         :rtype: int
@@ -86,7 +86,7 @@ class Volume:
     def size(self, size):
         """Sets the size of this Volume.
 
-        磁盘容量，单位GB，数值约束为10的倍数 * `系统盘` minLength: 10，maxLength: 1024 * `数据盘` minLength: 10，maxLength: 32768
+        磁盘容量，单位GB，数值约束为10的倍数。 * `系统盘` minLength: 10，maxLength: 1024 * `数据盘` minLength: 10，maxLength: 32768
 
         :param size: The size of this Volume.
         :type size: int
@@ -97,7 +97,7 @@ class Volume:
     def cluster_id(self):
         """Gets the cluster_id of this Volume.
 
-        云服务器系统盘对应的存储池的ID
+        云服务器系统盘对应的存储池的ID。
 
         :return: The cluster_id of this Volume.
         :rtype: str
@@ -108,7 +108,7 @@ class Volume:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this Volume.
 
-        云服务器系统盘对应的存储池的ID
+        云服务器系统盘对应的存储池的ID。
 
         :param cluster_id: The cluster_id of this Volume.
         :type cluster_id: str

@@ -103,41 +103,41 @@ class ConfigurationResponseDataSpec:
 
         The model defined in huaweicloud sdk
 
-        :param rds_id: RDS数据库实例ID。  type为\&quot;rds\&quot;时，返回此参数。 
+        :param rds_id: RDS数据库实例ID。  Configuration.type为\&quot;rds\&quot;时，返回此参数。 
         :type rds_id: str
-        :param rds_db_name: RDS数据库名称。  type为\&quot;rds\&quot;时，返回此参数。 
+        :param rds_db_name: RDS数据库名称。  Configuration.type为\&quot;rds\&quot;时，返回此参数。 
         :type rds_db_name: str
-        :param rds_address: RDS数据库地址。  type为\&quot;rds\&quot;时，返回此参数。 
+        :param rds_address: RDS数据库地址。  Configuration.type为\&quot;rds\&quot;时，返回此参数。 
         :type rds_address: str
-        :param rds_username: RDS数据库用户名称。  type为\&quot;rds\&quot;时，返回此参数。 
+        :param rds_username: RDS数据库用户名称。  Configuration.type为\&quot;rds\&quot;时，返回此参数。 
         :type rds_username: str
-        :param rds_password: RDS数据库密码。  type为\&quot;rds\&quot;时，返回此参数。 
+        :param rds_password: RDS数据库密码。  Configuration.type为\&quot;rds\&quot;时，返回此参数。 
         :type rds_password: str
-        :param rds_port: RDS数据库端口。  type为\&quot;rds\&quot;时，返回此参数。 
+        :param rds_port: RDS数据库端口。  Configuration.type为\&quot;rds\&quot;时，返回此参数。 
         :type rds_port: str
-        :param config_center_addr: CSE配置中心地址。  type为\&quot;cse\&quot;时，返回此参数。 
+        :param config_center_addr: CSE配置中心地址。  Configuration.type为\&quot;cse\&quot;时，返回此参数。 
         :type config_center_addr: str
-        :param service_center_addr: CSE服务注册发现地址。  type为\&quot;cse\&quot;时，返回此参数。 
+        :param service_center_addr: CSE服务注册发现地址。  Configuration.type为\&quot;cse\&quot;时，返回此参数。 
         :type service_center_addr: str
-        :param cse_id: CSE引擎ID。  type为\&quot;cse\&quot;时，返回此参数。 
+        :param cse_id: CSE引擎ID。  Configuration.type为\&quot;cse\&quot;时，返回此参数。 
         :type cse_id: str
         :param envs: 环境变量配置。 常用环境变量如下： - TZ: 时区设置，东八区可设置为Asia/Shanghai。 - LANG: 语言字符集设置，中文UTF8可设置为zh_CN.UTF-8。
         :type envs: dict(str, str)
         :param ip: 弹性公网IP，响应体参数，未配置域名时返回此参数。
         :type ip: str
-        :param items: 访问方式配置列表。  type为\&quot;access\&quot;时，返回此参数。 
+        :param items: 访问方式配置列表。  Configuration.type为\&quot;access\&quot;时，返回此参数。 
         :type items: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationDataItems`]
-        :param scale_strategy: 伸缩策略配置策略类型。  type为\&quot;scaling\&quot;时，返回此参数。 
+        :param scale_strategy: 伸缩策略配置策略类型。  Configuration.type为\&quot;scaling\&quot;时，返回此参数。 
         :type scale_strategy: str
-        :param max_replica_count: 伸缩策略配置最大伸缩个数。  type为\&quot;scaling\&quot;时，返回此参数。 
+        :param max_replica_count: 伸缩策略配置最大伸缩个数。  Configuration.type为\&quot;scaling\&quot;时，返回此参数。 
         :type max_replica_count: int
-        :param min_replica_count: 伸缩策略配置最小伸缩个数。  type为\&quot;scaling\&quot;时，返回此参数。 
+        :param min_replica_count: 伸缩策略配置最小伸缩个数。  Configuration.type为\&quot;scaling\&quot;时，返回此参数。 
         :type min_replica_count: int
         :param advanced: 
         :type advanced: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataAdvanced`
-        :param triggers: 伸缩策略配置触发器列表。  type为\&quot;scaling\&quot;时，返回此参数。 
+        :param triggers: 伸缩策略配置触发器列表。  Configuration.type为\&quot;scaling\&quot;时，返回此参数。 
         :type triggers: list[:class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTrigger`]
-        :param volumes: 云存储配置列表。  type为\&quot;volume\&quot;时，返回此参数。 
+        :param volumes: 云存储配置列表。  Configuration.type为\&quot;volume\&quot;时，返回此参数。 
         :type volumes: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationDataVolume`]
         :param liveness_probe: 
         :type liveness_probe: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationLivenessProbe`
@@ -149,35 +149,35 @@ class ConfigurationResponseDataSpec:
         :type post_start: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpecPostStart`
         :param pre_stop: 
         :type pre_stop: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpecPreStop`
-        :param log_paths: 自定义日志路径数组。  type为\&quot;log\&quot;时，返回此参数。 
+        :param log_paths: 自定义日志路径数组。  Configuration.type为\&quot;log\&quot;时，返回此参数。 
         :type log_paths: list[str]
-        :param instrumentation: 探针注入方式。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param instrumentation: 探针注入方式。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type instrumentation: str
-        :param apm_application: apm2应用。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param apm_application: apm2应用。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type apm_application: str
-        :param type: 监控系统类别，包括apm2和opentelemetry。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param type: 监控系统类别，包括apm2和opentelemetry。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type type: str
-        :param app_name: apm2组件。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param app_name: apm2组件。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type app_name: str
-        :param instance_name: apm2实例。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param instance_name: apm2实例。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type instance_name: str
-        :param env_name: apm2环境。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param env_name: apm2环境。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type env_name: str
-        :param image_pull_policy: 探针镜像更新策略，已废弃，迁移到监控系统。  - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param image_pull_policy: 探针镜像更新策略，已废弃，迁移到监控系统。  - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type image_pull_policy: str
-        :param version: 增强型探针/opentelemetry探针版本，已废弃，迁移到监控系统。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param version: 增强型探针/opentelemetry探针版本，已废弃，迁移到监控系统。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type version: str
-        :param access_key: apm2访问密钥Key，已废弃，迁移到监控系统。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param access_key: apm2访问密钥Key，已废弃，迁移到监控系统。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type access_key: str
-        :param access_value: apm2访问密钥value，已废弃，迁移到监控系统。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param access_value: apm2访问密钥value，已废弃，迁移到监控系统。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type access_value: str
-        :param business: apm2应用，同apm_application，已废弃。  type为\&quot;apm2\&quot;时，返回此参数。 
+        :param business: apm2应用，同apm_application，已废弃。  Configuration.type为\&quot;apm2\&quot;时，返回此参数。 
         :type business: str
-        :param path: 自定义监控指标配置采集路径。  type为\&quot;customMetric\&quot;时，返回此参数。 
+        :param path: 自定义监控指标配置采集路径。  Configuration.type为\&quot;customMetric\&quot;时，返回此参数。 
         :type path: str
-        :param port: 自定义监控指标配置采集端口。  type为\&quot;customMetric\&quot;时，返回此参数。 
+        :param port: 自定义监控指标配置采集端口。  Configuration.type为\&quot;customMetric\&quot;时，返回此参数。 
         :type port: str
-        :param metrics: 自定义监控指标配置指标名称。  type为\&quot;customMetric\&quot;时，返回此参数。 
+        :param metrics: 自定义监控指标配置指标名称。  Configuration.type为\&quot;customMetric\&quot;时，返回此参数。 
         :type metrics: list[str]
         """
         
@@ -304,7 +304,7 @@ class ConfigurationResponseDataSpec:
     def rds_id(self):
         """Gets the rds_id of this ConfigurationResponseDataSpec.
 
-        RDS数据库实例ID。  type为\"rds\"时，返回此参数。 
+        RDS数据库实例ID。  Configuration.type为\"rds\"时，返回此参数。 
 
         :return: The rds_id of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -315,7 +315,7 @@ class ConfigurationResponseDataSpec:
     def rds_id(self, rds_id):
         """Sets the rds_id of this ConfigurationResponseDataSpec.
 
-        RDS数据库实例ID。  type为\"rds\"时，返回此参数。 
+        RDS数据库实例ID。  Configuration.type为\"rds\"时，返回此参数。 
 
         :param rds_id: The rds_id of this ConfigurationResponseDataSpec.
         :type rds_id: str
@@ -326,7 +326,7 @@ class ConfigurationResponseDataSpec:
     def rds_db_name(self):
         """Gets the rds_db_name of this ConfigurationResponseDataSpec.
 
-        RDS数据库名称。  type为\"rds\"时，返回此参数。 
+        RDS数据库名称。  Configuration.type为\"rds\"时，返回此参数。 
 
         :return: The rds_db_name of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -337,7 +337,7 @@ class ConfigurationResponseDataSpec:
     def rds_db_name(self, rds_db_name):
         """Sets the rds_db_name of this ConfigurationResponseDataSpec.
 
-        RDS数据库名称。  type为\"rds\"时，返回此参数。 
+        RDS数据库名称。  Configuration.type为\"rds\"时，返回此参数。 
 
         :param rds_db_name: The rds_db_name of this ConfigurationResponseDataSpec.
         :type rds_db_name: str
@@ -348,7 +348,7 @@ class ConfigurationResponseDataSpec:
     def rds_address(self):
         """Gets the rds_address of this ConfigurationResponseDataSpec.
 
-        RDS数据库地址。  type为\"rds\"时，返回此参数。 
+        RDS数据库地址。  Configuration.type为\"rds\"时，返回此参数。 
 
         :return: The rds_address of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -359,7 +359,7 @@ class ConfigurationResponseDataSpec:
     def rds_address(self, rds_address):
         """Sets the rds_address of this ConfigurationResponseDataSpec.
 
-        RDS数据库地址。  type为\"rds\"时，返回此参数。 
+        RDS数据库地址。  Configuration.type为\"rds\"时，返回此参数。 
 
         :param rds_address: The rds_address of this ConfigurationResponseDataSpec.
         :type rds_address: str
@@ -370,7 +370,7 @@ class ConfigurationResponseDataSpec:
     def rds_username(self):
         """Gets the rds_username of this ConfigurationResponseDataSpec.
 
-        RDS数据库用户名称。  type为\"rds\"时，返回此参数。 
+        RDS数据库用户名称。  Configuration.type为\"rds\"时，返回此参数。 
 
         :return: The rds_username of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -381,7 +381,7 @@ class ConfigurationResponseDataSpec:
     def rds_username(self, rds_username):
         """Sets the rds_username of this ConfigurationResponseDataSpec.
 
-        RDS数据库用户名称。  type为\"rds\"时，返回此参数。 
+        RDS数据库用户名称。  Configuration.type为\"rds\"时，返回此参数。 
 
         :param rds_username: The rds_username of this ConfigurationResponseDataSpec.
         :type rds_username: str
@@ -392,7 +392,7 @@ class ConfigurationResponseDataSpec:
     def rds_password(self):
         """Gets the rds_password of this ConfigurationResponseDataSpec.
 
-        RDS数据库密码。  type为\"rds\"时，返回此参数。 
+        RDS数据库密码。  Configuration.type为\"rds\"时，返回此参数。 
 
         :return: The rds_password of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -403,7 +403,7 @@ class ConfigurationResponseDataSpec:
     def rds_password(self, rds_password):
         """Sets the rds_password of this ConfigurationResponseDataSpec.
 
-        RDS数据库密码。  type为\"rds\"时，返回此参数。 
+        RDS数据库密码。  Configuration.type为\"rds\"时，返回此参数。 
 
         :param rds_password: The rds_password of this ConfigurationResponseDataSpec.
         :type rds_password: str
@@ -414,7 +414,7 @@ class ConfigurationResponseDataSpec:
     def rds_port(self):
         """Gets the rds_port of this ConfigurationResponseDataSpec.
 
-        RDS数据库端口。  type为\"rds\"时，返回此参数。 
+        RDS数据库端口。  Configuration.type为\"rds\"时，返回此参数。 
 
         :return: The rds_port of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -425,7 +425,7 @@ class ConfigurationResponseDataSpec:
     def rds_port(self, rds_port):
         """Sets the rds_port of this ConfigurationResponseDataSpec.
 
-        RDS数据库端口。  type为\"rds\"时，返回此参数。 
+        RDS数据库端口。  Configuration.type为\"rds\"时，返回此参数。 
 
         :param rds_port: The rds_port of this ConfigurationResponseDataSpec.
         :type rds_port: str
@@ -436,7 +436,7 @@ class ConfigurationResponseDataSpec:
     def config_center_addr(self):
         """Gets the config_center_addr of this ConfigurationResponseDataSpec.
 
-        CSE配置中心地址。  type为\"cse\"时，返回此参数。 
+        CSE配置中心地址。  Configuration.type为\"cse\"时，返回此参数。 
 
         :return: The config_center_addr of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -447,7 +447,7 @@ class ConfigurationResponseDataSpec:
     def config_center_addr(self, config_center_addr):
         """Sets the config_center_addr of this ConfigurationResponseDataSpec.
 
-        CSE配置中心地址。  type为\"cse\"时，返回此参数。 
+        CSE配置中心地址。  Configuration.type为\"cse\"时，返回此参数。 
 
         :param config_center_addr: The config_center_addr of this ConfigurationResponseDataSpec.
         :type config_center_addr: str
@@ -458,7 +458,7 @@ class ConfigurationResponseDataSpec:
     def service_center_addr(self):
         """Gets the service_center_addr of this ConfigurationResponseDataSpec.
 
-        CSE服务注册发现地址。  type为\"cse\"时，返回此参数。 
+        CSE服务注册发现地址。  Configuration.type为\"cse\"时，返回此参数。 
 
         :return: The service_center_addr of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -469,7 +469,7 @@ class ConfigurationResponseDataSpec:
     def service_center_addr(self, service_center_addr):
         """Sets the service_center_addr of this ConfigurationResponseDataSpec.
 
-        CSE服务注册发现地址。  type为\"cse\"时，返回此参数。 
+        CSE服务注册发现地址。  Configuration.type为\"cse\"时，返回此参数。 
 
         :param service_center_addr: The service_center_addr of this ConfigurationResponseDataSpec.
         :type service_center_addr: str
@@ -480,7 +480,7 @@ class ConfigurationResponseDataSpec:
     def cse_id(self):
         """Gets the cse_id of this ConfigurationResponseDataSpec.
 
-        CSE引擎ID。  type为\"cse\"时，返回此参数。 
+        CSE引擎ID。  Configuration.type为\"cse\"时，返回此参数。 
 
         :return: The cse_id of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -491,7 +491,7 @@ class ConfigurationResponseDataSpec:
     def cse_id(self, cse_id):
         """Sets the cse_id of this ConfigurationResponseDataSpec.
 
-        CSE引擎ID。  type为\"cse\"时，返回此参数。 
+        CSE引擎ID。  Configuration.type为\"cse\"时，返回此参数。 
 
         :param cse_id: The cse_id of this ConfigurationResponseDataSpec.
         :type cse_id: str
@@ -546,7 +546,7 @@ class ConfigurationResponseDataSpec:
     def items(self):
         """Gets the items of this ConfigurationResponseDataSpec.
 
-        访问方式配置列表。  type为\"access\"时，返回此参数。 
+        访问方式配置列表。  Configuration.type为\"access\"时，返回此参数。 
 
         :return: The items of this ConfigurationResponseDataSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationDataItems`]
@@ -557,7 +557,7 @@ class ConfigurationResponseDataSpec:
     def items(self, items):
         """Sets the items of this ConfigurationResponseDataSpec.
 
-        访问方式配置列表。  type为\"access\"时，返回此参数。 
+        访问方式配置列表。  Configuration.type为\"access\"时，返回此参数。 
 
         :param items: The items of this ConfigurationResponseDataSpec.
         :type items: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationDataItems`]
@@ -568,7 +568,7 @@ class ConfigurationResponseDataSpec:
     def scale_strategy(self):
         """Gets the scale_strategy of this ConfigurationResponseDataSpec.
 
-        伸缩策略配置策略类型。  type为\"scaling\"时，返回此参数。 
+        伸缩策略配置策略类型。  Configuration.type为\"scaling\"时，返回此参数。 
 
         :return: The scale_strategy of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -579,7 +579,7 @@ class ConfigurationResponseDataSpec:
     def scale_strategy(self, scale_strategy):
         """Sets the scale_strategy of this ConfigurationResponseDataSpec.
 
-        伸缩策略配置策略类型。  type为\"scaling\"时，返回此参数。 
+        伸缩策略配置策略类型。  Configuration.type为\"scaling\"时，返回此参数。 
 
         :param scale_strategy: The scale_strategy of this ConfigurationResponseDataSpec.
         :type scale_strategy: str
@@ -590,7 +590,7 @@ class ConfigurationResponseDataSpec:
     def max_replica_count(self):
         """Gets the max_replica_count of this ConfigurationResponseDataSpec.
 
-        伸缩策略配置最大伸缩个数。  type为\"scaling\"时，返回此参数。 
+        伸缩策略配置最大伸缩个数。  Configuration.type为\"scaling\"时，返回此参数。 
 
         :return: The max_replica_count of this ConfigurationResponseDataSpec.
         :rtype: int
@@ -601,7 +601,7 @@ class ConfigurationResponseDataSpec:
     def max_replica_count(self, max_replica_count):
         """Sets the max_replica_count of this ConfigurationResponseDataSpec.
 
-        伸缩策略配置最大伸缩个数。  type为\"scaling\"时，返回此参数。 
+        伸缩策略配置最大伸缩个数。  Configuration.type为\"scaling\"时，返回此参数。 
 
         :param max_replica_count: The max_replica_count of this ConfigurationResponseDataSpec.
         :type max_replica_count: int
@@ -612,7 +612,7 @@ class ConfigurationResponseDataSpec:
     def min_replica_count(self):
         """Gets the min_replica_count of this ConfigurationResponseDataSpec.
 
-        伸缩策略配置最小伸缩个数。  type为\"scaling\"时，返回此参数。 
+        伸缩策略配置最小伸缩个数。  Configuration.type为\"scaling\"时，返回此参数。 
 
         :return: The min_replica_count of this ConfigurationResponseDataSpec.
         :rtype: int
@@ -623,7 +623,7 @@ class ConfigurationResponseDataSpec:
     def min_replica_count(self, min_replica_count):
         """Sets the min_replica_count of this ConfigurationResponseDataSpec.
 
-        伸缩策略配置最小伸缩个数。  type为\"scaling\"时，返回此参数。 
+        伸缩策略配置最小伸缩个数。  Configuration.type为\"scaling\"时，返回此参数。 
 
         :param min_replica_count: The min_replica_count of this ConfigurationResponseDataSpec.
         :type min_replica_count: int
@@ -652,7 +652,7 @@ class ConfigurationResponseDataSpec:
     def triggers(self):
         """Gets the triggers of this ConfigurationResponseDataSpec.
 
-        伸缩策略配置触发器列表。  type为\"scaling\"时，返回此参数。 
+        伸缩策略配置触发器列表。  Configuration.type为\"scaling\"时，返回此参数。 
 
         :return: The triggers of this ConfigurationResponseDataSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTrigger`]
@@ -663,7 +663,7 @@ class ConfigurationResponseDataSpec:
     def triggers(self, triggers):
         """Sets the triggers of this ConfigurationResponseDataSpec.
 
-        伸缩策略配置触发器列表。  type为\"scaling\"时，返回此参数。 
+        伸缩策略配置触发器列表。  Configuration.type为\"scaling\"时，返回此参数。 
 
         :param triggers: The triggers of this ConfigurationResponseDataSpec.
         :type triggers: list[:class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTrigger`]
@@ -674,7 +674,7 @@ class ConfigurationResponseDataSpec:
     def volumes(self):
         """Gets the volumes of this ConfigurationResponseDataSpec.
 
-        云存储配置列表。  type为\"volume\"时，返回此参数。 
+        云存储配置列表。  Configuration.type为\"volume\"时，返回此参数。 
 
         :return: The volumes of this ConfigurationResponseDataSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationDataVolume`]
@@ -685,7 +685,7 @@ class ConfigurationResponseDataSpec:
     def volumes(self, volumes):
         """Sets the volumes of this ConfigurationResponseDataSpec.
 
-        云存储配置列表。  type为\"volume\"时，返回此参数。 
+        云存储配置列表。  Configuration.type为\"volume\"时，返回此参数。 
 
         :param volumes: The volumes of this ConfigurationResponseDataSpec.
         :type volumes: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationDataVolume`]
@@ -786,7 +786,7 @@ class ConfigurationResponseDataSpec:
     def log_paths(self):
         """Gets the log_paths of this ConfigurationResponseDataSpec.
 
-        自定义日志路径数组。  type为\"log\"时，返回此参数。 
+        自定义日志路径数组。  Configuration.type为\"log\"时，返回此参数。 
 
         :return: The log_paths of this ConfigurationResponseDataSpec.
         :rtype: list[str]
@@ -797,7 +797,7 @@ class ConfigurationResponseDataSpec:
     def log_paths(self, log_paths):
         """Sets the log_paths of this ConfigurationResponseDataSpec.
 
-        自定义日志路径数组。  type为\"log\"时，返回此参数。 
+        自定义日志路径数组。  Configuration.type为\"log\"时，返回此参数。 
 
         :param log_paths: The log_paths of this ConfigurationResponseDataSpec.
         :type log_paths: list[str]
@@ -808,7 +808,7 @@ class ConfigurationResponseDataSpec:
     def instrumentation(self):
         """Gets the instrumentation of this ConfigurationResponseDataSpec.
 
-        探针注入方式。  type为\"apm2\"时，返回此参数。 
+        探针注入方式。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The instrumentation of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -819,7 +819,7 @@ class ConfigurationResponseDataSpec:
     def instrumentation(self, instrumentation):
         """Sets the instrumentation of this ConfigurationResponseDataSpec.
 
-        探针注入方式。  type为\"apm2\"时，返回此参数。 
+        探针注入方式。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param instrumentation: The instrumentation of this ConfigurationResponseDataSpec.
         :type instrumentation: str
@@ -830,7 +830,7 @@ class ConfigurationResponseDataSpec:
     def apm_application(self):
         """Gets the apm_application of this ConfigurationResponseDataSpec.
 
-        apm2应用。  type为\"apm2\"时，返回此参数。 
+        apm2应用。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The apm_application of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -841,7 +841,7 @@ class ConfigurationResponseDataSpec:
     def apm_application(self, apm_application):
         """Sets the apm_application of this ConfigurationResponseDataSpec.
 
-        apm2应用。  type为\"apm2\"时，返回此参数。 
+        apm2应用。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param apm_application: The apm_application of this ConfigurationResponseDataSpec.
         :type apm_application: str
@@ -852,7 +852,7 @@ class ConfigurationResponseDataSpec:
     def type(self):
         """Gets the type of this ConfigurationResponseDataSpec.
 
-        监控系统类别，包括apm2和opentelemetry。  type为\"apm2\"时，返回此参数。 
+        监控系统类别，包括apm2和opentelemetry。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The type of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -863,7 +863,7 @@ class ConfigurationResponseDataSpec:
     def type(self, type):
         """Sets the type of this ConfigurationResponseDataSpec.
 
-        监控系统类别，包括apm2和opentelemetry。  type为\"apm2\"时，返回此参数。 
+        监控系统类别，包括apm2和opentelemetry。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param type: The type of this ConfigurationResponseDataSpec.
         :type type: str
@@ -874,7 +874,7 @@ class ConfigurationResponseDataSpec:
     def app_name(self):
         """Gets the app_name of this ConfigurationResponseDataSpec.
 
-        apm2组件。  type为\"apm2\"时，返回此参数。 
+        apm2组件。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The app_name of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -885,7 +885,7 @@ class ConfigurationResponseDataSpec:
     def app_name(self, app_name):
         """Sets the app_name of this ConfigurationResponseDataSpec.
 
-        apm2组件。  type为\"apm2\"时，返回此参数。 
+        apm2组件。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param app_name: The app_name of this ConfigurationResponseDataSpec.
         :type app_name: str
@@ -896,7 +896,7 @@ class ConfigurationResponseDataSpec:
     def instance_name(self):
         """Gets the instance_name of this ConfigurationResponseDataSpec.
 
-        apm2实例。  type为\"apm2\"时，返回此参数。 
+        apm2实例。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The instance_name of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -907,7 +907,7 @@ class ConfigurationResponseDataSpec:
     def instance_name(self, instance_name):
         """Sets the instance_name of this ConfigurationResponseDataSpec.
 
-        apm2实例。  type为\"apm2\"时，返回此参数。 
+        apm2实例。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param instance_name: The instance_name of this ConfigurationResponseDataSpec.
         :type instance_name: str
@@ -918,7 +918,7 @@ class ConfigurationResponseDataSpec:
     def env_name(self):
         """Gets the env_name of this ConfigurationResponseDataSpec.
 
-        apm2环境。  type为\"apm2\"时，返回此参数。 
+        apm2环境。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The env_name of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -929,7 +929,7 @@ class ConfigurationResponseDataSpec:
     def env_name(self, env_name):
         """Sets the env_name of this ConfigurationResponseDataSpec.
 
-        apm2环境。  type为\"apm2\"时，返回此参数。 
+        apm2环境。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param env_name: The env_name of this ConfigurationResponseDataSpec.
         :type env_name: str
@@ -940,7 +940,7 @@ class ConfigurationResponseDataSpec:
     def image_pull_policy(self):
         """Gets the image_pull_policy of this ConfigurationResponseDataSpec.
 
-        探针镜像更新策略，已废弃，迁移到监控系统。  - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。  type为\"apm2\"时，返回此参数。 
+        探针镜像更新策略，已废弃，迁移到监控系统。  - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The image_pull_policy of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -951,7 +951,7 @@ class ConfigurationResponseDataSpec:
     def image_pull_policy(self, image_pull_policy):
         """Sets the image_pull_policy of this ConfigurationResponseDataSpec.
 
-        探针镜像更新策略，已废弃，迁移到监控系统。  - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。  type为\"apm2\"时，返回此参数。 
+        探针镜像更新策略，已废弃，迁移到监控系统。  - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param image_pull_policy: The image_pull_policy of this ConfigurationResponseDataSpec.
         :type image_pull_policy: str
@@ -962,7 +962,7 @@ class ConfigurationResponseDataSpec:
     def version(self):
         """Gets the version of this ConfigurationResponseDataSpec.
 
-        增强型探针/opentelemetry探针版本，已废弃，迁移到监控系统。  type为\"apm2\"时，返回此参数。 
+        增强型探针/opentelemetry探针版本，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The version of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -973,7 +973,7 @@ class ConfigurationResponseDataSpec:
     def version(self, version):
         """Sets the version of this ConfigurationResponseDataSpec.
 
-        增强型探针/opentelemetry探针版本，已废弃，迁移到监控系统。  type为\"apm2\"时，返回此参数。 
+        增强型探针/opentelemetry探针版本，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param version: The version of this ConfigurationResponseDataSpec.
         :type version: str
@@ -984,7 +984,7 @@ class ConfigurationResponseDataSpec:
     def access_key(self):
         """Gets the access_key of this ConfigurationResponseDataSpec.
 
-        apm2访问密钥Key，已废弃，迁移到监控系统。  type为\"apm2\"时，返回此参数。 
+        apm2访问密钥Key，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The access_key of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -995,7 +995,7 @@ class ConfigurationResponseDataSpec:
     def access_key(self, access_key):
         """Sets the access_key of this ConfigurationResponseDataSpec.
 
-        apm2访问密钥Key，已废弃，迁移到监控系统。  type为\"apm2\"时，返回此参数。 
+        apm2访问密钥Key，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param access_key: The access_key of this ConfigurationResponseDataSpec.
         :type access_key: str
@@ -1006,7 +1006,7 @@ class ConfigurationResponseDataSpec:
     def access_value(self):
         """Gets the access_value of this ConfigurationResponseDataSpec.
 
-        apm2访问密钥value，已废弃，迁移到监控系统。  type为\"apm2\"时，返回此参数。 
+        apm2访问密钥value，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The access_value of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -1017,7 +1017,7 @@ class ConfigurationResponseDataSpec:
     def access_value(self, access_value):
         """Sets the access_value of this ConfigurationResponseDataSpec.
 
-        apm2访问密钥value，已废弃，迁移到监控系统。  type为\"apm2\"时，返回此参数。 
+        apm2访问密钥value，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param access_value: The access_value of this ConfigurationResponseDataSpec.
         :type access_value: str
@@ -1028,7 +1028,7 @@ class ConfigurationResponseDataSpec:
     def business(self):
         """Gets the business of this ConfigurationResponseDataSpec.
 
-        apm2应用，同apm_application，已废弃。  type为\"apm2\"时，返回此参数。 
+        apm2应用，同apm_application，已废弃。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :return: The business of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -1039,7 +1039,7 @@ class ConfigurationResponseDataSpec:
     def business(self, business):
         """Sets the business of this ConfigurationResponseDataSpec.
 
-        apm2应用，同apm_application，已废弃。  type为\"apm2\"时，返回此参数。 
+        apm2应用，同apm_application，已废弃。  Configuration.type为\"apm2\"时，返回此参数。 
 
         :param business: The business of this ConfigurationResponseDataSpec.
         :type business: str
@@ -1050,7 +1050,7 @@ class ConfigurationResponseDataSpec:
     def path(self):
         """Gets the path of this ConfigurationResponseDataSpec.
 
-        自定义监控指标配置采集路径。  type为\"customMetric\"时，返回此参数。 
+        自定义监控指标配置采集路径。  Configuration.type为\"customMetric\"时，返回此参数。 
 
         :return: The path of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -1061,7 +1061,7 @@ class ConfigurationResponseDataSpec:
     def path(self, path):
         """Sets the path of this ConfigurationResponseDataSpec.
 
-        自定义监控指标配置采集路径。  type为\"customMetric\"时，返回此参数。 
+        自定义监控指标配置采集路径。  Configuration.type为\"customMetric\"时，返回此参数。 
 
         :param path: The path of this ConfigurationResponseDataSpec.
         :type path: str
@@ -1072,7 +1072,7 @@ class ConfigurationResponseDataSpec:
     def port(self):
         """Gets the port of this ConfigurationResponseDataSpec.
 
-        自定义监控指标配置采集端口。  type为\"customMetric\"时，返回此参数。 
+        自定义监控指标配置采集端口。  Configuration.type为\"customMetric\"时，返回此参数。 
 
         :return: The port of this ConfigurationResponseDataSpec.
         :rtype: str
@@ -1083,7 +1083,7 @@ class ConfigurationResponseDataSpec:
     def port(self, port):
         """Sets the port of this ConfigurationResponseDataSpec.
 
-        自定义监控指标配置采集端口。  type为\"customMetric\"时，返回此参数。 
+        自定义监控指标配置采集端口。  Configuration.type为\"customMetric\"时，返回此参数。 
 
         :param port: The port of this ConfigurationResponseDataSpec.
         :type port: str
@@ -1094,7 +1094,7 @@ class ConfigurationResponseDataSpec:
     def metrics(self):
         """Gets the metrics of this ConfigurationResponseDataSpec.
 
-        自定义监控指标配置指标名称。  type为\"customMetric\"时，返回此参数。 
+        自定义监控指标配置指标名称。  Configuration.type为\"customMetric\"时，返回此参数。 
 
         :return: The metrics of this ConfigurationResponseDataSpec.
         :rtype: list[str]
@@ -1105,7 +1105,7 @@ class ConfigurationResponseDataSpec:
     def metrics(self, metrics):
         """Sets the metrics of this ConfigurationResponseDataSpec.
 
-        自定义监控指标配置指标名称。  type为\"customMetric\"时，返回此参数。 
+        自定义监控指标配置指标名称。  Configuration.type为\"customMetric\"时，返回此参数。 
 
         :param metrics: The metrics of this ConfigurationResponseDataSpec.
         :type metrics: list[str]

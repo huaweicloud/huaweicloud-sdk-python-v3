@@ -21,6 +21,7 @@ class VolumeConfigurationDataVolume:
         'resource_name': 'str',
         'resource_type': 'str',
         'resource_sub_type': 'str',
+        'umask': 'str',
         'mount_info': 'list[VolumeConfigurationMountInfo]'
     }
 
@@ -29,10 +30,11 @@ class VolumeConfigurationDataVolume:
         'resource_name': 'resource_name',
         'resource_type': 'resource_type',
         'resource_sub_type': 'resource_sub_type',
+        'umask': 'umask',
         'mount_info': 'mount_info'
     }
 
-    def __init__(self, volume_id=None, resource_name=None, resource_type=None, resource_sub_type=None, mount_info=None):
+    def __init__(self, volume_id=None, resource_name=None, resource_type=None, resource_sub_type=None, umask=None, mount_info=None):
         """VolumeConfigurationDataVolume
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class VolumeConfigurationDataVolume:
         :type resource_type: str
         :param resource_sub_type: 云存储子类型。
         :type resource_sub_type: str
+        :param umask: 设置目录或文件缺省权限，默认值0027，sfs3.0类型的云存储不支持配置此参数。
+        :type umask: str
         :param mount_info: 
         :type mount_info: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationMountInfo`]
         """
@@ -55,6 +59,7 @@ class VolumeConfigurationDataVolume:
         self._resource_name = None
         self._resource_type = None
         self._resource_sub_type = None
+        self._umask = None
         self._mount_info = None
         self.discriminator = None
 
@@ -66,6 +71,8 @@ class VolumeConfigurationDataVolume:
             self.resource_type = resource_type
         if resource_sub_type is not None:
             self.resource_sub_type = resource_sub_type
+        if umask is not None:
+            self.umask = umask
         if mount_info is not None:
             self.mount_info = mount_info
 
@@ -156,6 +163,28 @@ class VolumeConfigurationDataVolume:
         :type resource_sub_type: str
         """
         self._resource_sub_type = resource_sub_type
+
+    @property
+    def umask(self):
+        """Gets the umask of this VolumeConfigurationDataVolume.
+
+        设置目录或文件缺省权限，默认值0027，sfs3.0类型的云存储不支持配置此参数。
+
+        :return: The umask of this VolumeConfigurationDataVolume.
+        :rtype: str
+        """
+        return self._umask
+
+    @umask.setter
+    def umask(self, umask):
+        """Sets the umask of this VolumeConfigurationDataVolume.
+
+        设置目录或文件缺省权限，默认值0027，sfs3.0类型的云存储不支持配置此参数。
+
+        :param umask: The umask of this VolumeConfigurationDataVolume.
+        :type umask: str
+        """
+        self._umask = umask
 
     @property
     def mount_info(self):

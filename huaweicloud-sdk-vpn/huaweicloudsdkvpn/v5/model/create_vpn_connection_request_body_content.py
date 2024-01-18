@@ -31,7 +31,8 @@ class CreateVpnConnectionRequestBodyContent:
         'policy_rules': 'list[PolicyRule]',
         'ikepolicy': 'IkePolicy',
         'ipsecpolicy': 'IpsecPolicy',
-        'ha_role': 'str'
+        'ha_role': 'str',
+        'tags': 'list[VpnResourceTag]'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class CreateVpnConnectionRequestBodyContent:
         'policy_rules': 'policy_rules',
         'ikepolicy': 'ikepolicy',
         'ipsecpolicy': 'ipsecpolicy',
-        'ha_role': 'ha_role'
+        'ha_role': 'ha_role',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, psk=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, ha_role=None):
+    def __init__(self, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, psk=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, ha_role=None, tags=None):
         """CreateVpnConnectionRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -84,6 +86,8 @@ class CreateVpnConnectionRequestBodyContent:
         :type ipsecpolicy: :class:`huaweicloudsdkvpn.v5.IpsecPolicy`
         :param ha_role: 连接的HA角色
         :type ha_role: str
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         
         
@@ -102,6 +106,7 @@ class CreateVpnConnectionRequestBodyContent:
         self._ikepolicy = None
         self._ipsecpolicy = None
         self._ha_role = None
+        self._tags = None
         self.discriminator = None
 
         if name is not None:
@@ -129,6 +134,8 @@ class CreateVpnConnectionRequestBodyContent:
             self.ipsecpolicy = ipsecpolicy
         if ha_role is not None:
             self.ha_role = ha_role
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -429,6 +436,28 @@ class CreateVpnConnectionRequestBodyContent:
         :type ha_role: str
         """
         self._ha_role = ha_role
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateVpnConnectionRequestBodyContent.
+
+        标签
+
+        :return: The tags of this CreateVpnConnectionRequestBodyContent.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateVpnConnectionRequestBodyContent.
+
+        标签
+
+        :param tags: The tags of this CreateVpnConnectionRequestBodyContent.
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

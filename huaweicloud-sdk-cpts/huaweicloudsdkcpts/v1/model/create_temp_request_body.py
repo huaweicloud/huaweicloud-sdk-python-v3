@@ -37,15 +37,15 @@ class CreateTempRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: project_id
+        :param project_id: 所属工程id
         :type project_id: int
-        :param temp_type: temp_type
+        :param temp_type: 事务类型
         :type temp_type: int
-        :param name: name
+        :param name: 事务名称
         :type name: str
-        :param description: description
+        :param description: 描述信息
         :type description: str
-        :param contents: contents
+        :param contents: 事务脚本信息
         :type contents: list[object]
         """
         
@@ -70,7 +70,7 @@ class CreateTempRequestBody:
     def project_id(self):
         """Gets the project_id of this CreateTempRequestBody.
 
-        project_id
+        所属工程id
 
         :return: The project_id of this CreateTempRequestBody.
         :rtype: int
@@ -81,7 +81,7 @@ class CreateTempRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this CreateTempRequestBody.
 
-        project_id
+        所属工程id
 
         :param project_id: The project_id of this CreateTempRequestBody.
         :type project_id: int
@@ -92,7 +92,7 @@ class CreateTempRequestBody:
     def temp_type(self):
         """Gets the temp_type of this CreateTempRequestBody.
 
-        temp_type
+        事务类型
 
         :return: The temp_type of this CreateTempRequestBody.
         :rtype: int
@@ -103,7 +103,7 @@ class CreateTempRequestBody:
     def temp_type(self, temp_type):
         """Sets the temp_type of this CreateTempRequestBody.
 
-        temp_type
+        事务类型
 
         :param temp_type: The temp_type of this CreateTempRequestBody.
         :type temp_type: int
@@ -114,7 +114,7 @@ class CreateTempRequestBody:
     def name(self):
         """Gets the name of this CreateTempRequestBody.
 
-        name
+        事务名称
 
         :return: The name of this CreateTempRequestBody.
         :rtype: str
@@ -125,7 +125,7 @@ class CreateTempRequestBody:
     def name(self, name):
         """Sets the name of this CreateTempRequestBody.
 
-        name
+        事务名称
 
         :param name: The name of this CreateTempRequestBody.
         :type name: str
@@ -136,7 +136,7 @@ class CreateTempRequestBody:
     def description(self):
         """Gets the description of this CreateTempRequestBody.
 
-        description
+        描述信息
 
         :return: The description of this CreateTempRequestBody.
         :rtype: str
@@ -147,7 +147,7 @@ class CreateTempRequestBody:
     def description(self, description):
         """Sets the description of this CreateTempRequestBody.
 
-        description
+        描述信息
 
         :param description: The description of this CreateTempRequestBody.
         :type description: str
@@ -158,7 +158,7 @@ class CreateTempRequestBody:
     def contents(self):
         """Gets the contents of this CreateTempRequestBody.
 
-        contents
+        事务脚本信息
 
         :return: The contents of this CreateTempRequestBody.
         :rtype: list[object]
@@ -169,7 +169,7 @@ class CreateTempRequestBody:
     def contents(self, contents):
         """Sets the contents of this CreateTempRequestBody.
 
-        contents
+        事务脚本信息
 
         :param contents: The contents of this CreateTempRequestBody.
         :type contents: list[object]

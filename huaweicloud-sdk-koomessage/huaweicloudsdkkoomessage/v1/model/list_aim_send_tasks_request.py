@@ -53,7 +53,7 @@ class ListAimSendTasksRequest:
         :type tpl_id: str
         :param tpl_name: 智能信息模板名称。
         :type tpl_name: str
-        :param begin_time: 智能信息发送任务创建开始时间。样例：2019-10-12T07:20:50.522Z。  &gt; 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 
+        :param begin_time: 智能信息发送任务创建开始时间。样例：2019-10-12T07:20:50.522Z。  &gt; 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 &gt; &gt; 仅支持查询最近1年内创建的智能信息发送任务。 
         :type begin_time: str
         :param end_time: 智能信息发送任务创建结束时间。样例：2019-10-12T07:20:50.522Z。  &gt; 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 
         :type end_time: str
@@ -189,7 +189,7 @@ class ListAimSendTasksRequest:
     def begin_time(self):
         """Gets the begin_time of this ListAimSendTasksRequest.
 
-        智能信息发送任务创建开始时间。样例：2019-10-12T07:20:50.522Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 
+        智能信息发送任务创建开始时间。样例：2019-10-12T07:20:50.522Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 > > 仅支持查询最近1年内创建的智能信息发送任务。 
 
         :return: The begin_time of this ListAimSendTasksRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListAimSendTasksRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListAimSendTasksRequest.
 
-        智能信息发送任务创建开始时间。样例：2019-10-12T07:20:50.522Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 
+        智能信息发送任务创建开始时间。样例：2019-10-12T07:20:50.522Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 > > 仅支持查询最近1年内创建的智能信息发送任务。 
 
         :param begin_time: The begin_time of this ListAimSendTasksRequest.
         :type begin_time: str

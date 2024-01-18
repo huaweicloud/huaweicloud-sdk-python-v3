@@ -34,11 +34,11 @@ class CreateTempResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param temp_id: tempId
+        :param temp_id: 事务id
         :type temp_id: int
-        :param message: message
+        :param message: 响应消息
         :type message: str
         """
         
@@ -60,7 +60,7 @@ class CreateTempResponse(SdkResponse):
     def code(self):
         """Gets the code of this CreateTempResponse.
 
-        code
+        响应码
 
         :return: The code of this CreateTempResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class CreateTempResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this CreateTempResponse.
 
-        code
+        响应码
 
         :param code: The code of this CreateTempResponse.
         :type code: str
@@ -82,7 +82,7 @@ class CreateTempResponse(SdkResponse):
     def temp_id(self):
         """Gets the temp_id of this CreateTempResponse.
 
-        tempId
+        事务id
 
         :return: The temp_id of this CreateTempResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class CreateTempResponse(SdkResponse):
     def temp_id(self, temp_id):
         """Sets the temp_id of this CreateTempResponse.
 
-        tempId
+        事务id
 
         :param temp_id: The temp_id of this CreateTempResponse.
         :type temp_id: int
@@ -104,7 +104,7 @@ class CreateTempResponse(SdkResponse):
     def message(self):
         """Gets the message of this CreateTempResponse.
 
-        message
+        响应消息
 
         :return: The message of this CreateTempResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class CreateTempResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this CreateTempResponse.
 
-        message
+        响应消息
 
         :param message: The message of this CreateTempResponse.
         :type message: str

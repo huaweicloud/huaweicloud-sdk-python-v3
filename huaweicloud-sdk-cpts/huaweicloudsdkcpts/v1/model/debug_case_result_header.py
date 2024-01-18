@@ -33,11 +33,11 @@ class DebugCaseResultHeader:
 
         The model defined in huaweicloud sdk
 
-        :param connection: Connection
+        :param connection: 连接
         :type connection: str
-        :param content_type: Content-Type
+        :param content_type: 内容类型
         :type content_type: str
-        :param host: Host
+        :param host: 主机
         :type host: str
         """
         
@@ -59,7 +59,7 @@ class DebugCaseResultHeader:
     def connection(self):
         """Gets the connection of this DebugCaseResultHeader.
 
-        Connection
+        连接
 
         :return: The connection of this DebugCaseResultHeader.
         :rtype: str
@@ -70,7 +70,7 @@ class DebugCaseResultHeader:
     def connection(self, connection):
         """Sets the connection of this DebugCaseResultHeader.
 
-        Connection
+        连接
 
         :param connection: The connection of this DebugCaseResultHeader.
         :type connection: str
@@ -81,7 +81,7 @@ class DebugCaseResultHeader:
     def content_type(self):
         """Gets the content_type of this DebugCaseResultHeader.
 
-        Content-Type
+        内容类型
 
         :return: The content_type of this DebugCaseResultHeader.
         :rtype: str
@@ -92,7 +92,7 @@ class DebugCaseResultHeader:
     def content_type(self, content_type):
         """Sets the content_type of this DebugCaseResultHeader.
 
-        Content-Type
+        内容类型
 
         :param content_type: The content_type of this DebugCaseResultHeader.
         :type content_type: str
@@ -103,7 +103,7 @@ class DebugCaseResultHeader:
     def host(self):
         """Gets the host of this DebugCaseResultHeader.
 
-        Host
+        主机
 
         :return: The host of this DebugCaseResultHeader.
         :rtype: str
@@ -114,7 +114,7 @@ class DebugCaseResultHeader:
     def host(self, host):
         """Sets the host of this DebugCaseResultHeader.
 
-        Host
+        主机
 
         :param host: The host of this DebugCaseResultHeader.
         :type host: str

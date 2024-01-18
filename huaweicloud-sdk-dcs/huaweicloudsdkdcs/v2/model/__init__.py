@@ -31,6 +31,8 @@ from huaweicloudsdkdcs.v2.model.bigkeys_body import BigkeysBody
 from huaweicloudsdkdcs.v2.model.bss_param import BssParam
 from huaweicloudsdkdcs.v2.model.bss_param_entity import BssParamEntity
 from huaweicloudsdkdcs.v2.model.change_instance_status_body import ChangeInstanceStatusBody
+from huaweicloudsdkdcs.v2.model.change_master_standby_async_request import ChangeMasterStandbyAsyncRequest
+from huaweicloudsdkdcs.v2.model.change_master_standby_async_response import ChangeMasterStandbyAsyncResponse
 from huaweicloudsdkdcs.v2.model.change_master_standby_request import ChangeMasterStandbyRequest
 from huaweicloudsdkdcs.v2.model.change_master_standby_response import ChangeMasterStandbyResponse
 from huaweicloudsdkdcs.v2.model.cluster_redis_node_monitored_object import ClusterRedisNodeMonitoredObject

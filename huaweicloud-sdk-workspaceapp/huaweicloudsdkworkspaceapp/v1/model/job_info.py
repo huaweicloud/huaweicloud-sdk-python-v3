@@ -49,7 +49,7 @@ class JobInfo:
         :type end_time: datetime
         :param status: 
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
-        :param sub_jobs_total: 子任务总数
+        :param sub_jobs_total: 子任务总数。
         :type sub_jobs_total: int
         """
         
@@ -182,7 +182,7 @@ class JobInfo:
     def sub_jobs_total(self):
         """Gets the sub_jobs_total of this JobInfo.
 
-        子任务总数
+        子任务总数。
 
         :return: The sub_jobs_total of this JobInfo.
         :rtype: int
@@ -193,7 +193,7 @@ class JobInfo:
     def sub_jobs_total(self, sub_jobs_total):
         """Sets the sub_jobs_total of this JobInfo.
 
-        子任务总数
+        子任务总数。
 
         :param sub_jobs_total: The sub_jobs_total of this JobInfo.
         :type sub_jobs_total: int

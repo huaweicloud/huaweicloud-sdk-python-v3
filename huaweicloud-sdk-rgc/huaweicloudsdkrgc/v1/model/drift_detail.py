@@ -39,17 +39,17 @@ class DriftDetail:
 
         The model defined in huaweicloud sdk
 
-        :param manage_account_id: 管理账号ID。
+        :param manage_account_id: 管理纳管账号ID。
         :type manage_account_id: str
         :param drift_type: 漂移类型。
         :type drift_type: str
-        :param drift_target_id: 漂移发生的账号ID或OU ID。
+        :param drift_target_id: 漂移发生的纳管账号ID或注册OU ID。
         :type drift_target_id: str
-        :param drift_target_type: policyId, accountId, accountId和policyId。
+        :param drift_target_type: 漂移目标类型，类型有accountId和policyId。
         :type drift_target_type: str
         :param drift_message: 漂移信息。
         :type drift_message: str
-        :param parent_organization_unit_id: 父OU ID。
+        :param parent_organization_unit_id: 父注册OU ID。
         :type parent_organization_unit_id: str
         """
         
@@ -80,7 +80,7 @@ class DriftDetail:
     def manage_account_id(self):
         """Gets the manage_account_id of this DriftDetail.
 
-        管理账号ID。
+        管理纳管账号ID。
 
         :return: The manage_account_id of this DriftDetail.
         :rtype: str
@@ -91,7 +91,7 @@ class DriftDetail:
     def manage_account_id(self, manage_account_id):
         """Sets the manage_account_id of this DriftDetail.
 
-        管理账号ID。
+        管理纳管账号ID。
 
         :param manage_account_id: The manage_account_id of this DriftDetail.
         :type manage_account_id: str
@@ -124,7 +124,7 @@ class DriftDetail:
     def drift_target_id(self):
         """Gets the drift_target_id of this DriftDetail.
 
-        漂移发生的账号ID或OU ID。
+        漂移发生的纳管账号ID或注册OU ID。
 
         :return: The drift_target_id of this DriftDetail.
         :rtype: str
@@ -135,7 +135,7 @@ class DriftDetail:
     def drift_target_id(self, drift_target_id):
         """Sets the drift_target_id of this DriftDetail.
 
-        漂移发生的账号ID或OU ID。
+        漂移发生的纳管账号ID或注册OU ID。
 
         :param drift_target_id: The drift_target_id of this DriftDetail.
         :type drift_target_id: str
@@ -146,7 +146,7 @@ class DriftDetail:
     def drift_target_type(self):
         """Gets the drift_target_type of this DriftDetail.
 
-        policyId, accountId, accountId和policyId。
+        漂移目标类型，类型有accountId和policyId。
 
         :return: The drift_target_type of this DriftDetail.
         :rtype: str
@@ -157,7 +157,7 @@ class DriftDetail:
     def drift_target_type(self, drift_target_type):
         """Sets the drift_target_type of this DriftDetail.
 
-        policyId, accountId, accountId和policyId。
+        漂移目标类型，类型有accountId和policyId。
 
         :param drift_target_type: The drift_target_type of this DriftDetail.
         :type drift_target_type: str
@@ -190,7 +190,7 @@ class DriftDetail:
     def parent_organization_unit_id(self):
         """Gets the parent_organization_unit_id of this DriftDetail.
 
-        父OU ID。
+        父注册OU ID。
 
         :return: The parent_organization_unit_id of this DriftDetail.
         :rtype: str
@@ -201,7 +201,7 @@ class DriftDetail:
     def parent_organization_unit_id(self, parent_organization_unit_id):
         """Sets the parent_organization_unit_id of this DriftDetail.
 
-        父OU ID。
+        父注册OU ID。
 
         :param parent_organization_unit_id: The parent_organization_unit_id of this DriftDetail.
         :type parent_organization_unit_id: str

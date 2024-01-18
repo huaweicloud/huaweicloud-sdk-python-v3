@@ -31,7 +31,7 @@ class Content:
 
         The model defined in huaweicloud sdk
 
-        :param content_type: content_type
+        :param content_type: 用例卡片类型（1：思考时间；2：报文；3：检查点；4：变量提取）
         :type content_type: int
         :param content: 
         :type content: :class:`huaweicloudsdkcpts.v1.ContentInfo`
@@ -52,7 +52,7 @@ class Content:
     def content_type(self):
         """Gets the content_type of this Content.
 
-        content_type
+        用例卡片类型（1：思考时间；2：报文；3：检查点；4：变量提取）
 
         :return: The content_type of this Content.
         :rtype: int
@@ -63,7 +63,7 @@ class Content:
     def content_type(self, content_type):
         """Sets the content_type of this Content.
 
-        content_type
+        用例卡片类型（1：思考时间；2：报文；3：检查点；4：变量提取）
 
         :param content_type: The content_type of this Content.
         :type content_type: int

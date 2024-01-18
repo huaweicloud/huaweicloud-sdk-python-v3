@@ -45,11 +45,11 @@ class Contents:
 
         :param content_id: 事务id，若不为0表示此卡片为事务；为0表示非事务
         :type content_id: int
-        :param content: content
+        :param content: 内容
         :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
         :param index: 排序索引标识
         :type index: int
-        :param selected_temp_name: selected_temp_name
+        :param selected_temp_name: 选择的事务或者用例名称
         :type selected_temp_name: str
         :param data: 数据（循环、条件控制器作用的数据）
         :type data: object
@@ -116,7 +116,7 @@ class Contents:
     def content(self):
         """Gets the content of this Contents.
 
-        content
+        内容
 
         :return: The content of this Contents.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.Content`]
@@ -127,7 +127,7 @@ class Contents:
     def content(self, content):
         """Sets the content of this Contents.
 
-        content
+        内容
 
         :param content: The content of this Contents.
         :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
@@ -160,7 +160,7 @@ class Contents:
     def selected_temp_name(self):
         """Gets the selected_temp_name of this Contents.
 
-        selected_temp_name
+        选择的事务或者用例名称
 
         :return: The selected_temp_name of this Contents.
         :rtype: str
@@ -171,7 +171,7 @@ class Contents:
     def selected_temp_name(self, selected_temp_name):
         """Sets the selected_temp_name of this Contents.
 
-        selected_temp_name
+        选择的事务或者用例名称
 
         :param selected_temp_name: The selected_temp_name of this Contents.
         :type selected_temp_name: str

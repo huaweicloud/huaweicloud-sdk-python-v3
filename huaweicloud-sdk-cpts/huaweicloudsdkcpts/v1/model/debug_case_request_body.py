@@ -35,13 +35,13 @@ class DebugCaseRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: status
+        :param status: 状态（9：启动调试）
         :type status: int
-        :param cluster_id: cluster_id
+        :param cluster_id: 资源组id
         :type cluster_id: int
-        :param cluster_type: cluster_type
+        :param cluster_type: 资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
         :type cluster_type: str
-        :param without_package: without_package
+        :param without_package: 套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
         :type without_package: int
         """
         
@@ -62,7 +62,7 @@ class DebugCaseRequestBody:
     def status(self):
         """Gets the status of this DebugCaseRequestBody.
 
-        status
+        状态（9：启动调试）
 
         :return: The status of this DebugCaseRequestBody.
         :rtype: int
@@ -73,7 +73,7 @@ class DebugCaseRequestBody:
     def status(self, status):
         """Sets the status of this DebugCaseRequestBody.
 
-        status
+        状态（9：启动调试）
 
         :param status: The status of this DebugCaseRequestBody.
         :type status: int
@@ -84,7 +84,7 @@ class DebugCaseRequestBody:
     def cluster_id(self):
         """Gets the cluster_id of this DebugCaseRequestBody.
 
-        cluster_id
+        资源组id
 
         :return: The cluster_id of this DebugCaseRequestBody.
         :rtype: int
@@ -95,7 +95,7 @@ class DebugCaseRequestBody:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this DebugCaseRequestBody.
 
-        cluster_id
+        资源组id
 
         :param cluster_id: The cluster_id of this DebugCaseRequestBody.
         :type cluster_id: int
@@ -106,7 +106,7 @@ class DebugCaseRequestBody:
     def cluster_type(self):
         """Gets the cluster_type of this DebugCaseRequestBody.
 
-        cluster_type
+        资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
         :return: The cluster_type of this DebugCaseRequestBody.
         :rtype: str
@@ -117,7 +117,7 @@ class DebugCaseRequestBody:
     def cluster_type(self, cluster_type):
         """Sets the cluster_type of this DebugCaseRequestBody.
 
-        cluster_type
+        资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
         :param cluster_type: The cluster_type of this DebugCaseRequestBody.
         :type cluster_type: str
@@ -128,7 +128,7 @@ class DebugCaseRequestBody:
     def without_package(self):
         """Gets the without_package of this DebugCaseRequestBody.
 
-        without_package
+        套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
         :return: The without_package of this DebugCaseRequestBody.
         :rtype: int
@@ -139,7 +139,7 @@ class DebugCaseRequestBody:
     def without_package(self, without_package):
         """Sets the without_package of this DebugCaseRequestBody.
 
-        without_package
+        套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
         :param without_package: The without_package of this DebugCaseRequestBody.
         :type without_package: int

@@ -34,11 +34,11 @@ class CreateTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
-        :param task_id: task_id
+        :param task_id: 任务id
         :type task_id: int
         """
         
@@ -60,7 +60,7 @@ class CreateTaskResponse(SdkResponse):
     def code(self):
         """Gets the code of this CreateTaskResponse.
 
-        code
+        响应码
 
         :return: The code of this CreateTaskResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class CreateTaskResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this CreateTaskResponse.
 
-        code
+        响应码
 
         :param code: The code of this CreateTaskResponse.
         :type code: str
@@ -82,7 +82,7 @@ class CreateTaskResponse(SdkResponse):
     def message(self):
         """Gets the message of this CreateTaskResponse.
 
-        message
+        响应消息
 
         :return: The message of this CreateTaskResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateTaskResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this CreateTaskResponse.
 
-        message
+        响应消息
 
         :param message: The message of this CreateTaskResponse.
         :type message: str
@@ -104,7 +104,7 @@ class CreateTaskResponse(SdkResponse):
     def task_id(self):
         """Gets the task_id of this CreateTaskResponse.
 
-        task_id
+        任务id
 
         :return: The task_id of this CreateTaskResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class CreateTaskResponse(SdkResponse):
     def task_id(self, task_id):
         """Sets the task_id of this CreateTaskResponse.
 
-        task_id
+        任务id
 
         :param task_id: The task_id of this CreateTaskResponse.
         :type task_id: int

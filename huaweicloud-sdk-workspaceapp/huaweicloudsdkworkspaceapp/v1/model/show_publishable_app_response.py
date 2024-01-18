@@ -34,11 +34,11 @@ class ShowPublishableAppResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param group_images: 组下面的镜像ID列表
+        :param group_images: 组下面的镜像ID列表。
         :type group_images: list[str]
-        :param items: 查询到的应用列表
+        :param items: 查询到的应用列表。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PublishableApp`]
         """
         
@@ -60,7 +60,7 @@ class ShowPublishableAppResponse(SdkResponse):
     def count(self):
         """Gets the count of this ShowPublishableAppResponse.
 
-        总数
+        总数。
 
         :return: The count of this ShowPublishableAppResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ShowPublishableAppResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ShowPublishableAppResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ShowPublishableAppResponse.
         :type count: int
@@ -82,7 +82,7 @@ class ShowPublishableAppResponse(SdkResponse):
     def group_images(self):
         """Gets the group_images of this ShowPublishableAppResponse.
 
-        组下面的镜像ID列表
+        组下面的镜像ID列表。
 
         :return: The group_images of this ShowPublishableAppResponse.
         :rtype: list[str]
@@ -93,7 +93,7 @@ class ShowPublishableAppResponse(SdkResponse):
     def group_images(self, group_images):
         """Sets the group_images of this ShowPublishableAppResponse.
 
-        组下面的镜像ID列表
+        组下面的镜像ID列表。
 
         :param group_images: The group_images of this ShowPublishableAppResponse.
         :type group_images: list[str]
@@ -104,7 +104,7 @@ class ShowPublishableAppResponse(SdkResponse):
     def items(self):
         """Gets the items of this ShowPublishableAppResponse.
 
-        查询到的应用列表
+        查询到的应用列表。
 
         :return: The items of this ShowPublishableAppResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.PublishableApp`]
@@ -115,7 +115,7 @@ class ShowPublishableAppResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ShowPublishableAppResponse.
 
-        查询到的应用列表
+        查询到的应用列表。
 
         :param items: The items of this ShowPublishableAppResponse.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PublishableApp`]

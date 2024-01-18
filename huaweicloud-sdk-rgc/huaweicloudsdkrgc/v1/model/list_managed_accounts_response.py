@@ -32,7 +32,7 @@ class ListManagedAccountsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param managed_accounts: 纳管的Account。
+        :param managed_accounts: 纳管的账号信息。
         :type managed_accounts: list[:class:`huaweicloudsdkrgc.v1.ManagedAccount`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListManagedAccountsResponse(SdkResponse):
     def managed_accounts(self):
         """Gets the managed_accounts of this ListManagedAccountsResponse.
 
-        纳管的Account。
+        纳管的账号信息。
 
         :return: The managed_accounts of this ListManagedAccountsResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.ManagedAccount`]
@@ -64,7 +64,7 @@ class ListManagedAccountsResponse(SdkResponse):
     def managed_accounts(self, managed_accounts):
         """Sets the managed_accounts of this ListManagedAccountsResponse.
 
-        纳管的Account。
+        纳管的账号信息。
 
         :param managed_accounts: The managed_accounts of this ListManagedAccountsResponse.
         :type managed_accounts: list[:class:`huaweicloudsdkrgc.v1.ManagedAccount`]

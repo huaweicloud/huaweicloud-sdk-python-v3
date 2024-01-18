@@ -1,8 +1,5 @@
 # coding: utf-8
 
-import types
-import six
-
 from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.region.provider import RegionProviderChain
 
@@ -55,6 +52,8 @@ class RocketMQRegion:
                         "https://dms.me-east-1.myhuaweicloud.com")
     NA_MEXICO_1 = Region("na-mexico-1",
                         "https://dms.na-mexico-1.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://dms.cn-east-5.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -80,14 +79,15 @@ class RocketMQRegion:
         "eu-west-0": EU_WEST_0,
         "me-east-1": ME_EAST_1,
         "na-mexico-1": NA_MEXICO_1,
+        "cn-east-5": CN_EAST_5,
     }
 
     @classmethod
     def value_of(cls, region_id, static_fields=None):
         if not region_id:
-            raise KeyError("Unexpected empty parameter: region_id.")
+            raise KeyError("Unexpected empty parameter: region_id")
 
-        fields = static_fields if static_fields else cls.static_fields
+        fields = static_fields or cls.static_fields
 
         region = cls._PROVIDER.get_region(region_id)
         if region:
@@ -96,6 +96,5 @@ class RocketMQRegion:
         if region_id in fields:
             return fields.get(region_id)
 
-        raise KeyError("Unexpected region_id: " + region_id)
-
-
+        raise KeyError("region_id '%s' is not in the following supported regions of service 'RocketMQ': [%s]" % (
+            region_id, ", ".join(sorted(fields.keys()))))

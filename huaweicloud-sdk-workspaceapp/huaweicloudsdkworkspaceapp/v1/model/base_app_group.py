@@ -45,23 +45,23 @@ class BaseAppGroup:
 
         The model defined in huaweicloud sdk
 
-        :param id: 应用组ID
+        :param id: 应用组ID。
         :type id: str
-        :param name: 应用组名称
+        :param name: 应用组名称。
         :type name: str
-        :param app_server_group_id: 应用服务器组ID
+        :param app_server_group_id: 应用服务器组ID。
         :type app_server_group_id: str
-        :param app_server_group_name: 应用服务器组名称
+        :param app_server_group_name: 应用服务器组名称。
         :type app_server_group_name: str
-        :param description: 应用组描述
+        :param description: 应用组描述。
         :type description: str
         :param authorization_type: 
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
-        :param tenant_id: 租户ID
+        :param tenant_id: 租户ID。
         :type tenant_id: str
         :param app_type: 
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
-        :param create_at: 发布时间
+        :param create_at: 发布时间。
         :type create_at: datetime
         """
         
@@ -101,7 +101,7 @@ class BaseAppGroup:
     def id(self):
         """Gets the id of this BaseAppGroup.
 
-        应用组ID
+        应用组ID。
 
         :return: The id of this BaseAppGroup.
         :rtype: str
@@ -112,7 +112,7 @@ class BaseAppGroup:
     def id(self, id):
         """Sets the id of this BaseAppGroup.
 
-        应用组ID
+        应用组ID。
 
         :param id: The id of this BaseAppGroup.
         :type id: str
@@ -123,7 +123,7 @@ class BaseAppGroup:
     def name(self):
         """Gets the name of this BaseAppGroup.
 
-        应用组名称
+        应用组名称。
 
         :return: The name of this BaseAppGroup.
         :rtype: str
@@ -134,7 +134,7 @@ class BaseAppGroup:
     def name(self, name):
         """Sets the name of this BaseAppGroup.
 
-        应用组名称
+        应用组名称。
 
         :param name: The name of this BaseAppGroup.
         :type name: str
@@ -145,7 +145,7 @@ class BaseAppGroup:
     def app_server_group_id(self):
         """Gets the app_server_group_id of this BaseAppGroup.
 
-        应用服务器组ID
+        应用服务器组ID。
 
         :return: The app_server_group_id of this BaseAppGroup.
         :rtype: str
@@ -156,7 +156,7 @@ class BaseAppGroup:
     def app_server_group_id(self, app_server_group_id):
         """Sets the app_server_group_id of this BaseAppGroup.
 
-        应用服务器组ID
+        应用服务器组ID。
 
         :param app_server_group_id: The app_server_group_id of this BaseAppGroup.
         :type app_server_group_id: str
@@ -167,7 +167,7 @@ class BaseAppGroup:
     def app_server_group_name(self):
         """Gets the app_server_group_name of this BaseAppGroup.
 
-        应用服务器组名称
+        应用服务器组名称。
 
         :return: The app_server_group_name of this BaseAppGroup.
         :rtype: str
@@ -178,7 +178,7 @@ class BaseAppGroup:
     def app_server_group_name(self, app_server_group_name):
         """Sets the app_server_group_name of this BaseAppGroup.
 
-        应用服务器组名称
+        应用服务器组名称。
 
         :param app_server_group_name: The app_server_group_name of this BaseAppGroup.
         :type app_server_group_name: str
@@ -189,7 +189,7 @@ class BaseAppGroup:
     def description(self):
         """Gets the description of this BaseAppGroup.
 
-        应用组描述
+        应用组描述。
 
         :return: The description of this BaseAppGroup.
         :rtype: str
@@ -200,7 +200,7 @@ class BaseAppGroup:
     def description(self, description):
         """Sets the description of this BaseAppGroup.
 
-        应用组描述
+        应用组描述。
 
         :param description: The description of this BaseAppGroup.
         :type description: str
@@ -229,7 +229,7 @@ class BaseAppGroup:
     def tenant_id(self):
         """Gets the tenant_id of this BaseAppGroup.
 
-        租户ID
+        租户ID。
 
         :return: The tenant_id of this BaseAppGroup.
         :rtype: str
@@ -240,7 +240,7 @@ class BaseAppGroup:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this BaseAppGroup.
 
-        租户ID
+        租户ID。
 
         :param tenant_id: The tenant_id of this BaseAppGroup.
         :type tenant_id: str
@@ -269,7 +269,7 @@ class BaseAppGroup:
     def create_at(self):
         """Gets the create_at of this BaseAppGroup.
 
-        发布时间
+        发布时间。
 
         :return: The create_at of this BaseAppGroup.
         :rtype: datetime
@@ -280,7 +280,7 @@ class BaseAppGroup:
     def create_at(self, create_at):
         """Sets the create_at of this BaseAppGroup.
 
-        发布时间
+        发布时间。
 
         :param create_at: The create_at of this BaseAppGroup.
         :type create_at: datetime

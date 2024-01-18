@@ -29,7 +29,6 @@ class ResponseVpnGateway:
         'network_type': 'str',
         'access_vpc_id': 'str',
         'access_subnet_id': 'str',
-        'access_private_ips': 'list[str]',
         'access_private_ip_1': 'str',
         'access_private_ip_2': 'str',
         'bgp_asn': 'int',
@@ -40,12 +39,13 @@ class ResponseVpnGateway:
         'used_connection_group': 'int',
         'enterprise_project_id': 'str',
         'ha_mode': 'str',
-        'master_eip': 'ResponseEip',
-        'slave_eip': 'ResponseEip',
         'eip1': 'ResponseEip',
         'eip2': 'ResponseEip',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'policy_template': 'PolicyTemplate',
+        'supported_flavors': 'list[str]',
+        'tags': 'list[VpnResourceTag]'
     }
 
     attribute_map = {
@@ -61,7 +61,6 @@ class ResponseVpnGateway:
         'network_type': 'network_type',
         'access_vpc_id': 'access_vpc_id',
         'access_subnet_id': 'access_subnet_id',
-        'access_private_ips': 'access_private_ips',
         'access_private_ip_1': 'access_private_ip_1',
         'access_private_ip_2': 'access_private_ip_2',
         'bgp_asn': 'bgp_asn',
@@ -72,15 +71,16 @@ class ResponseVpnGateway:
         'used_connection_group': 'used_connection_group',
         'enterprise_project_id': 'enterprise_project_id',
         'ha_mode': 'ha_mode',
-        'master_eip': 'master_eip',
-        'slave_eip': 'slave_eip',
         'eip1': 'eip1',
         'eip2': 'eip2',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'policy_template': 'policy_template',
+        'supported_flavors': 'supported_flavors',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, status=None, attachment_type=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ips=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, master_eip=None, slave_eip=None, eip1=None, eip2=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, status=None, attachment_type=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, updated_at=None, policy_template=None, supported_flavors=None, tags=None):
         """ResponseVpnGateway
 
         The model defined in huaweicloud sdk
@@ -109,11 +109,9 @@ class ResponseVpnGateway:
         :type access_vpc_id: str
         :param access_subnet_id: VPN网关北向接入VPC中的接入子网ID
         :type access_subnet_id: str
-        :param access_private_ips: VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值
-        :type access_private_ips: list[str]
-        :param access_private_ip_1: VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        :param access_private_ip_1: VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
         :type access_private_ip_1: str
-        :param access_private_ip_2: VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        :param access_private_ip_2: VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
         :type access_private_ip_2: str
         :param bgp_asn: bgp所使用的asn号
         :type bgp_asn: int
@@ -131,10 +129,6 @@ class ResponseVpnGateway:
         :type enterprise_project_id: str
         :param ha_mode: ha模式
         :type ha_mode: str
-        :param master_eip: 
-        :type master_eip: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        :param slave_eip: 
-        :type slave_eip: :class:`huaweicloudsdkvpn.v5.ResponseEip`
         :param eip1: 
         :type eip1: :class:`huaweicloudsdkvpn.v5.ResponseEip`
         :param eip2: 
@@ -143,6 +137,12 @@ class ResponseVpnGateway:
         :type created_at: datetime
         :param updated_at: 更新时间
         :type updated_at: datetime
+        :param policy_template: 
+        :type policy_template: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
+        :param supported_flavors: 网关可升配到的目标规格
+        :type supported_flavors: list[str]
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         
         
@@ -159,7 +159,6 @@ class ResponseVpnGateway:
         self._network_type = None
         self._access_vpc_id = None
         self._access_subnet_id = None
-        self._access_private_ips = None
         self._access_private_ip_1 = None
         self._access_private_ip_2 = None
         self._bgp_asn = None
@@ -170,12 +169,13 @@ class ResponseVpnGateway:
         self._used_connection_group = None
         self._enterprise_project_id = None
         self._ha_mode = None
-        self._master_eip = None
-        self._slave_eip = None
         self._eip1 = None
         self._eip2 = None
         self._created_at = None
         self._updated_at = None
+        self._policy_template = None
+        self._supported_flavors = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -202,8 +202,6 @@ class ResponseVpnGateway:
             self.access_vpc_id = access_vpc_id
         if access_subnet_id is not None:
             self.access_subnet_id = access_subnet_id
-        if access_private_ips is not None:
-            self.access_private_ips = access_private_ips
         if access_private_ip_1 is not None:
             self.access_private_ip_1 = access_private_ip_1
         if access_private_ip_2 is not None:
@@ -224,10 +222,6 @@ class ResponseVpnGateway:
             self.enterprise_project_id = enterprise_project_id
         if ha_mode is not None:
             self.ha_mode = ha_mode
-        if master_eip is not None:
-            self.master_eip = master_eip
-        if slave_eip is not None:
-            self.slave_eip = slave_eip
         if eip1 is not None:
             self.eip1 = eip1
         if eip2 is not None:
@@ -236,6 +230,12 @@ class ResponseVpnGateway:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if policy_template is not None:
+            self.policy_template = policy_template
+        if supported_flavors is not None:
+            self.supported_flavors = supported_flavors
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -498,32 +498,10 @@ class ResponseVpnGateway:
         self._access_subnet_id = access_subnet_id
 
     @property
-    def access_private_ips(self):
-        """Gets the access_private_ips of this ResponseVpnGateway.
-
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值
-
-        :return: The access_private_ips of this ResponseVpnGateway.
-        :rtype: list[str]
-        """
-        return self._access_private_ips
-
-    @access_private_ips.setter
-    def access_private_ips(self, access_private_ips):
-        """Sets the access_private_ips of this ResponseVpnGateway.
-
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值
-
-        :param access_private_ips: The access_private_ips of this ResponseVpnGateway.
-        :type access_private_ips: list[str]
-        """
-        self._access_private_ips = access_private_ips
-
-    @property
     def access_private_ip_1(self):
         """Gets the access_private_ip_1 of this ResponseVpnGateway.
 
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
 
         :return: The access_private_ip_1 of this ResponseVpnGateway.
         :rtype: str
@@ -534,7 +512,7 @@ class ResponseVpnGateway:
     def access_private_ip_1(self, access_private_ip_1):
         """Sets the access_private_ip_1 of this ResponseVpnGateway.
 
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
 
         :param access_private_ip_1: The access_private_ip_1 of this ResponseVpnGateway.
         :type access_private_ip_1: str
@@ -545,7 +523,7 @@ class ResponseVpnGateway:
     def access_private_ip_2(self):
         """Gets the access_private_ip_2 of this ResponseVpnGateway.
 
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
 
         :return: The access_private_ip_2 of this ResponseVpnGateway.
         :rtype: str
@@ -556,7 +534,7 @@ class ResponseVpnGateway:
     def access_private_ip_2(self, access_private_ip_2):
         """Sets the access_private_ip_2 of this ResponseVpnGateway.
 
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
 
         :param access_private_ip_2: The access_private_ip_2 of this ResponseVpnGateway.
         :type access_private_ip_2: str
@@ -740,42 +718,6 @@ class ResponseVpnGateway:
         self._ha_mode = ha_mode
 
     @property
-    def master_eip(self):
-        """Gets the master_eip of this ResponseVpnGateway.
-
-        :return: The master_eip of this ResponseVpnGateway.
-        :rtype: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        """
-        return self._master_eip
-
-    @master_eip.setter
-    def master_eip(self, master_eip):
-        """Sets the master_eip of this ResponseVpnGateway.
-
-        :param master_eip: The master_eip of this ResponseVpnGateway.
-        :type master_eip: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        """
-        self._master_eip = master_eip
-
-    @property
-    def slave_eip(self):
-        """Gets the slave_eip of this ResponseVpnGateway.
-
-        :return: The slave_eip of this ResponseVpnGateway.
-        :rtype: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        """
-        return self._slave_eip
-
-    @slave_eip.setter
-    def slave_eip(self, slave_eip):
-        """Sets the slave_eip of this ResponseVpnGateway.
-
-        :param slave_eip: The slave_eip of this ResponseVpnGateway.
-        :type slave_eip: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        """
-        self._slave_eip = slave_eip
-
-    @property
     def eip1(self):
         """Gets the eip1 of this ResponseVpnGateway.
 
@@ -854,6 +796,68 @@ class ResponseVpnGateway:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def policy_template(self):
+        """Gets the policy_template of this ResponseVpnGateway.
+
+        :return: The policy_template of this ResponseVpnGateway.
+        :rtype: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
+        """
+        return self._policy_template
+
+    @policy_template.setter
+    def policy_template(self, policy_template):
+        """Sets the policy_template of this ResponseVpnGateway.
+
+        :param policy_template: The policy_template of this ResponseVpnGateway.
+        :type policy_template: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
+        """
+        self._policy_template = policy_template
+
+    @property
+    def supported_flavors(self):
+        """Gets the supported_flavors of this ResponseVpnGateway.
+
+        网关可升配到的目标规格
+
+        :return: The supported_flavors of this ResponseVpnGateway.
+        :rtype: list[str]
+        """
+        return self._supported_flavors
+
+    @supported_flavors.setter
+    def supported_flavors(self, supported_flavors):
+        """Sets the supported_flavors of this ResponseVpnGateway.
+
+        网关可升配到的目标规格
+
+        :param supported_flavors: The supported_flavors of this ResponseVpnGateway.
+        :type supported_flavors: list[str]
+        """
+        self._supported_flavors = supported_flavors
+
+    @property
+    def tags(self):
+        """Gets the tags of this ResponseVpnGateway.
+
+        标签
+
+        :return: The tags of this ResponseVpnGateway.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ResponseVpnGateway.
+
+        标签
+
+        :param tags: The tags of this ResponseVpnGateway.
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

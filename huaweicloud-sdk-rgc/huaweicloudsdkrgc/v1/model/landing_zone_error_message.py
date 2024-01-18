@@ -31,7 +31,7 @@ class LandingZoneErrorMessage:
 
         The model defined in huaweicloud sdk
 
-        :param level: Landing Zone的错误级别。包括致命fatal和错误error。
+        :param level: Landing Zone的错误级别。
         :type level: str
         :param message: Landing Zone详细的错误信息。
         :type message: str
@@ -52,7 +52,7 @@ class LandingZoneErrorMessage:
     def level(self):
         """Gets the level of this LandingZoneErrorMessage.
 
-        Landing Zone的错误级别。包括致命fatal和错误error。
+        Landing Zone的错误级别。
 
         :return: The level of this LandingZoneErrorMessage.
         :rtype: str
@@ -63,7 +63,7 @@ class LandingZoneErrorMessage:
     def level(self, level):
         """Sets the level of this LandingZoneErrorMessage.
 
-        Landing Zone的错误级别。包括致命fatal和错误error。
+        Landing Zone的错误级别。
 
         :param level: The level of this LandingZoneErrorMessage.
         :type level: str

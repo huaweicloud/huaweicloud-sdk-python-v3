@@ -15,8 +15,10 @@ class CaCertificate:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('issuer')
 
     openapi_types = {
+        'id': 'str',
         'serial_number': 'str',
         'signature_algorithm': 'str',
         'issuer': 'str',
@@ -26,6 +28,7 @@ class CaCertificate:
     }
 
     attribute_map = {
+        'id': 'id',
         'serial_number': 'serial_number',
         'signature_algorithm': 'signature_algorithm',
         'issuer': 'issuer',
@@ -34,11 +37,13 @@ class CaCertificate:
         'is_updatable': 'is_updatable'
     }
 
-    def __init__(self, serial_number=None, signature_algorithm=None, issuer=None, subject=None, expire_time=None, is_updatable=None):
+    def __init__(self, id=None, serial_number=None, signature_algorithm=None, issuer=None, subject=None, expire_time=None, is_updatable=None):
         """CaCertificate
 
         The model defined in huaweicloud sdk
 
+        :param id: 证书ID
+        :type id: str
         :param serial_number: 证书序列号
         :type serial_number: str
         :param signature_algorithm: 签名算法
@@ -55,6 +60,7 @@ class CaCertificate:
         
         
 
+        self._id = None
         self._serial_number = None
         self._signature_algorithm = None
         self._issuer = None
@@ -63,6 +69,8 @@ class CaCertificate:
         self._is_updatable = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if serial_number is not None:
             self.serial_number = serial_number
         if signature_algorithm is not None:
@@ -75,6 +83,28 @@ class CaCertificate:
             self.expire_time = expire_time
         if is_updatable is not None:
             self.is_updatable = is_updatable
+
+    @property
+    def id(self):
+        """Gets the id of this CaCertificate.
+
+        证书ID
+
+        :return: The id of this CaCertificate.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CaCertificate.
+
+        证书ID
+
+        :param id: The id of this CaCertificate.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def serial_number(self):

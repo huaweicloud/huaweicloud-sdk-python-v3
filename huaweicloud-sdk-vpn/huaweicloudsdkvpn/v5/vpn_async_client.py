@@ -32,6 +32,269 @@ class VpnAsyncClient(Client):
 
         return client_builder
 
+    def create_connection_monitor_async(self, request):
+        """创建VPN连接监控
+
+        创建VPN连接监控
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateConnectionMonitor
+        :type request: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorResponse`
+        """
+        http_info = self._create_connection_monitor_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_connection_monitor_async_invoker(self, request):
+        http_info = self._create_connection_monitor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_connection_monitor_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/connection-monitors",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConnectionMonitorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_connection_monitor_async(self, request):
+        """删除VPN连接监控
+
+        根据VPN连接监控的ID，删除指定的VPN连接监控
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteConnectionMonitor
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteConnectionMonitorRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteConnectionMonitorResponse`
+        """
+        http_info = self._delete_connection_monitor_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_connection_monitor_async_invoker(self, request):
+        http_info = self._delete_connection_monitor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_connection_monitor_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/connection-monitors/{connection_monitor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConnectionMonitorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_monitor_id' in local_var_params:
+            path_params['connection_monitor_id'] = local_var_params['connection_monitor_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_connection_monitors_async(self, request):
+        """查询VPN连接监控列表
+
+        查询VPN连接监控列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConnectionMonitors
+        :type request: :class:`huaweicloudsdkvpn.v5.ListConnectionMonitorsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListConnectionMonitorsResponse`
+        """
+        http_info = self._list_connection_monitors_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_connection_monitors_async_invoker(self, request):
+        http_info = self._list_connection_monitors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_connection_monitors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/connection-monitors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConnectionMonitorsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'vpn_connection_id' in local_var_params:
+            query_params.append(('vpn_connection_id', local_var_params['vpn_connection_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_connection_monitor_async(self, request):
+        """查询VPN连接监控
+
+        根据VPN连接监控的ID,查询指定的VPN连接监控
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConnectionMonitor
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowConnectionMonitorRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowConnectionMonitorResponse`
+        """
+        http_info = self._show_connection_monitor_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_connection_monitor_async_invoker(self, request):
+        http_info = self._show_connection_monitor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_connection_monitor_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/connection-monitors/{connection_monitor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConnectionMonitorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_monitor_id' in local_var_params:
+            path_params['connection_monitor_id'] = local_var_params['connection_monitor_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_cgw_async(self, request):
         """创建对端网关
 
@@ -342,6 +605,414 @@ class VpnAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_resource_tags_async(self, request):
+        """批量添加资源标签
+
+        为指定实例批量添加标签,标签管理服务需要使用该接口批量管理实例的标签.一个资源上最多有20个标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateResourceTags
+        :type request: :class:`huaweicloudsdkvpn.v5.BatchCreateResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.BatchCreateResourceTagsResponse`
+        """
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_resource_tags_async_invoker(self, request):
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_resource_tags_async(self, request):
+        """批量删除资源标签
+
+        为指定实例批量删除标签,标签管理服务需要使用该接口批量管理实例的标签.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteResourceTags
+        :type request: :class:`huaweicloudsdkvpn.v5.BatchDeleteResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.BatchDeleteResourceTagsResponse`
+        """
+        http_info = self._batch_delete_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_resource_tags_async_invoker(self, request):
+        http_info = self._batch_delete_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_resources_by_tags_async(self, request):
+        """查询标签下资源实例数量
+
+        使用标签过滤实例,并查询实例数量,需要各服务提供查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountResourcesByTags
+        :type request: :class:`huaweicloudsdkvpn.v5.CountResourcesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.CountResourcesByTagsResponse`
+        """
+        http_info = self._count_resources_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_resources_by_tags_async_invoker(self, request):
+        http_info = self._count_resources_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_resources_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/{resource_type}/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountResourcesByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_tags_async(self, request):
+        """查询项目下标签
+
+        查询租户在指定Project中实例类型的所有资源标签集合
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectTags
+        :type request: :class:`huaweicloudsdkvpn.v5.ListProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListProjectTagsResponse`
+        """
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_tags_async_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resources_by_tags_async(self, request):
+        """按标签查询资源
+
+        使用标签过滤实例,并查询实例数量,需要各服务提供查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourcesByTags
+        :type request: :class:`huaweicloudsdkvpn.v5.ListResourcesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListResourcesByTagsResponse`
+        """
+        http_info = self._list_resources_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resources_by_tags_async_invoker(self, request):
+        http_info = self._list_resources_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resources_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/{resource_type}/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcesByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_resource_tags_async(self, request):
+        """查询资源标签
+
+        查询指定实例的标签信息,标签管理服务需要使用该接口查询指定实例的全部标签数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceTags
+        :type request: :class:`huaweicloudsdkvpn.v5.ShowResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ShowResourceTagsResponse`
+        """
+        http_info = self._show_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_resource_tags_async_invoker(self, request):
+        http_info = self._show_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1331,269 +2002,6 @@ class VpnAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_connection_monitor_async(self, request):
-        """创建VPN连接监控
-
-        创建VPN连接监控
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateConnectionMonitor
-        :type request: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorRequest`
-        :rtype: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorResponse`
-        """
-        http_info = self._create_connection_monitor_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_connection_monitor_async_invoker(self, request):
-        http_info = self._create_connection_monitor_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_connection_monitor_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v5/{project_id}/connection-monitors",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateConnectionMonitorResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["header-response-token", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_connection_monitor_async(self, request):
-        """删除VPN连接监控
-
-        根据VPN连接监控的ID，删除指定的VPN连接监控
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteConnectionMonitor
-        :type request: :class:`huaweicloudsdkvpn.v5.DeleteConnectionMonitorRequest`
-        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteConnectionMonitorResponse`
-        """
-        http_info = self._delete_connection_monitor_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_connection_monitor_async_invoker(self, request):
-        http_info = self._delete_connection_monitor_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_connection_monitor_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v5/{project_id}/connection-monitors/{connection_monitor_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteConnectionMonitorResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'connection_monitor_id' in local_var_params:
-            path_params['connection_monitor_id'] = local_var_params['connection_monitor_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_connection_monitors_async(self, request):
-        """查询VPN连接监控列表
-
-        查询VPN连接监控列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListConnectionMonitors
-        :type request: :class:`huaweicloudsdkvpn.v5.ListConnectionMonitorsRequest`
-        :rtype: :class:`huaweicloudsdkvpn.v5.ListConnectionMonitorsResponse`
-        """
-        http_info = self._list_connection_monitors_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_connection_monitors_async_invoker(self, request):
-        http_info = self._list_connection_monitors_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_connection_monitors_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v5/{project_id}/connection-monitors",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListConnectionMonitorsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'vpn_connection_id' in local_var_params:
-            query_params.append(('vpn_connection_id', local_var_params['vpn_connection_id']))
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-            collection_formats['enterprise_project_id'] = 'multi'
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_connection_monitor_async(self, request):
-        """查询VPN连接监控
-
-        根据VPN连接监控的ID,查询指定的VPN连接监控
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowConnectionMonitor
-        :type request: :class:`huaweicloudsdkvpn.v5.ShowConnectionMonitorRequest`
-        :rtype: :class:`huaweicloudsdkvpn.v5.ShowConnectionMonitorResponse`
-        """
-        http_info = self._show_connection_monitor_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_connection_monitor_async_invoker(self, request):
-        http_info = self._show_connection_monitor_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_connection_monitor_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v5/{project_id}/connection-monitors/{connection_monitor_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowConnectionMonitorResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'connection_monitor_id' in local_var_params:
-            path_params['connection_monitor_id'] = local_var_params['connection_monitor_id']
 
         query_params = []
 

@@ -18,55 +18,63 @@ class CreateCgwRequestBodyContent:
 
     openapi_types = {
         'name': 'str',
-        'route_mode': 'str',
+        'id_type': 'str',
+        'id_value': 'str',
         'bgp_asn': 'int',
-        'ip': 'str',
-        'ca_certificate': 'CaCertificateRequest'
+        'ca_certificate': 'CaCertificateRequest',
+        'tags': 'list[VpnResourceTag]'
     }
 
     attribute_map = {
         'name': 'name',
-        'route_mode': 'route_mode',
+        'id_type': 'id_type',
+        'id_value': 'id_value',
         'bgp_asn': 'bgp_asn',
-        'ip': 'ip',
-        'ca_certificate': 'ca_certificate'
+        'ca_certificate': 'ca_certificate',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, route_mode=None, bgp_asn=None, ip=None, ca_certificate=None):
+    def __init__(self, name=None, id_type=None, id_value=None, bgp_asn=None, ca_certificate=None, tags=None):
         """CreateCgwRequestBodyContent
 
         The model defined in huaweicloud sdk
 
         :param name: 网关名称
         :type name: str
-        :param route_mode: 网关路由模式
-        :type route_mode: str
-        :param bgp_asn: 网关的bgp asn号，仅当route_mode为bgp时需要，默认值为65000
+        :param id_type: 对端网关标识类型
+        :type id_type: str
+        :param id_value: 对端网关标识值
+        :type id_value: str
+        :param bgp_asn: 网关的bgp asn号，默认值为65000
         :type bgp_asn: int
-        :param ip: 网关ip地址
-        :type ip: str
         :param ca_certificate: 
         :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         
         
 
         self._name = None
-        self._route_mode = None
+        self._id_type = None
+        self._id_value = None
         self._bgp_asn = None
-        self._ip = None
         self._ca_certificate = None
+        self._tags = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
-        if route_mode is not None:
-            self.route_mode = route_mode
+        if id_type is not None:
+            self.id_type = id_type
+        if id_value is not None:
+            self.id_value = id_value
         if bgp_asn is not None:
             self.bgp_asn = bgp_asn
-        self.ip = ip
         if ca_certificate is not None:
             self.ca_certificate = ca_certificate
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -91,32 +99,54 @@ class CreateCgwRequestBodyContent:
         self._name = name
 
     @property
-    def route_mode(self):
-        """Gets the route_mode of this CreateCgwRequestBodyContent.
+    def id_type(self):
+        """Gets the id_type of this CreateCgwRequestBodyContent.
 
-        网关路由模式
+        对端网关标识类型
 
-        :return: The route_mode of this CreateCgwRequestBodyContent.
+        :return: The id_type of this CreateCgwRequestBodyContent.
         :rtype: str
         """
-        return self._route_mode
+        return self._id_type
 
-    @route_mode.setter
-    def route_mode(self, route_mode):
-        """Sets the route_mode of this CreateCgwRequestBodyContent.
+    @id_type.setter
+    def id_type(self, id_type):
+        """Sets the id_type of this CreateCgwRequestBodyContent.
 
-        网关路由模式
+        对端网关标识类型
 
-        :param route_mode: The route_mode of this CreateCgwRequestBodyContent.
-        :type route_mode: str
+        :param id_type: The id_type of this CreateCgwRequestBodyContent.
+        :type id_type: str
         """
-        self._route_mode = route_mode
+        self._id_type = id_type
+
+    @property
+    def id_value(self):
+        """Gets the id_value of this CreateCgwRequestBodyContent.
+
+        对端网关标识值
+
+        :return: The id_value of this CreateCgwRequestBodyContent.
+        :rtype: str
+        """
+        return self._id_value
+
+    @id_value.setter
+    def id_value(self, id_value):
+        """Sets the id_value of this CreateCgwRequestBodyContent.
+
+        对端网关标识值
+
+        :param id_value: The id_value of this CreateCgwRequestBodyContent.
+        :type id_value: str
+        """
+        self._id_value = id_value
 
     @property
     def bgp_asn(self):
         """Gets the bgp_asn of this CreateCgwRequestBodyContent.
 
-        网关的bgp asn号，仅当route_mode为bgp时需要，默认值为65000
+        网关的bgp asn号，默认值为65000
 
         :return: The bgp_asn of this CreateCgwRequestBodyContent.
         :rtype: int
@@ -127,34 +157,12 @@ class CreateCgwRequestBodyContent:
     def bgp_asn(self, bgp_asn):
         """Sets the bgp_asn of this CreateCgwRequestBodyContent.
 
-        网关的bgp asn号，仅当route_mode为bgp时需要，默认值为65000
+        网关的bgp asn号，默认值为65000
 
         :param bgp_asn: The bgp_asn of this CreateCgwRequestBodyContent.
         :type bgp_asn: int
         """
         self._bgp_asn = bgp_asn
-
-    @property
-    def ip(self):
-        """Gets the ip of this CreateCgwRequestBodyContent.
-
-        网关ip地址
-
-        :return: The ip of this CreateCgwRequestBodyContent.
-        :rtype: str
-        """
-        return self._ip
-
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this CreateCgwRequestBodyContent.
-
-        网关ip地址
-
-        :param ip: The ip of this CreateCgwRequestBodyContent.
-        :type ip: str
-        """
-        self._ip = ip
 
     @property
     def ca_certificate(self):
@@ -173,6 +181,28 @@ class CreateCgwRequestBodyContent:
         :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
         """
         self._ca_certificate = ca_certificate
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateCgwRequestBodyContent.
+
+        标签
+
+        :return: The tags of this CreateCgwRequestBodyContent.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateCgwRequestBodyContent.
+
+        标签
+
+        :param tags: The tags of this CreateCgwRequestBodyContent.
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

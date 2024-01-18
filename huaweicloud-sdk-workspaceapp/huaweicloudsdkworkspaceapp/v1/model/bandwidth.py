@@ -81,7 +81,7 @@ class Bandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param intelligent_data_transport_flag: 智能显示传输。取值为：DISABLE：表示关闭。ENABLE：表示开启。DIAGNOSTIC：诊断模式
+        :param intelligent_data_transport_flag: 智能显示传输。取值为：DISABLE：表示关闭。ENABLE：表示开启。DIAGNOSTIC：诊断模式。
         :type intelligent_data_transport_flag: str
         :param total_bandwidth_control_enable: 是否开启总带宽控制。取值为：false：表示关闭。true：表示开启。
         :type total_bandwidth_control_enable: bool
@@ -227,7 +227,7 @@ class Bandwidth:
     def intelligent_data_transport_flag(self):
         """Gets the intelligent_data_transport_flag of this Bandwidth.
 
-        智能显示传输。取值为：DISABLE：表示关闭。ENABLE：表示开启。DIAGNOSTIC：诊断模式
+        智能显示传输。取值为：DISABLE：表示关闭。ENABLE：表示开启。DIAGNOSTIC：诊断模式。
 
         :return: The intelligent_data_transport_flag of this Bandwidth.
         :rtype: str
@@ -238,7 +238,7 @@ class Bandwidth:
     def intelligent_data_transport_flag(self, intelligent_data_transport_flag):
         """Sets the intelligent_data_transport_flag of this Bandwidth.
 
-        智能显示传输。取值为：DISABLE：表示关闭。ENABLE：表示开启。DIAGNOSTIC：诊断模式
+        智能显示传输。取值为：DISABLE：表示关闭。ENABLE：表示开启。DIAGNOSTIC：诊断模式。
 
         :param intelligent_data_transport_flag: The intelligent_data_transport_flag of this Bandwidth.
         :type intelligent_data_transport_flag: str

@@ -44,9 +44,9 @@ class ShowOperationResponse(SdkResponse):
         :type percentage_complete: int
         :param status: 状态。
         :type status: str
-        :param percentage_details: 创建账号、纳管OU、纳管账号的详细进度信息。
+        :param percentage_details: 创建账号、纳管注册OU、纳管账号的详细进度信息。
         :type percentage_details: list[:class:`huaweicloudsdkrgc.v1.OrganizationalPercentageDetail`]
-        :param message: 错误信息描述。
+        :param message: 创建账号、纳管注册OU、纳管账号的错误信息描述。
         :type message: str
         """
         
@@ -140,7 +140,7 @@ class ShowOperationResponse(SdkResponse):
     def percentage_details(self):
         """Gets the percentage_details of this ShowOperationResponse.
 
-        创建账号、纳管OU、纳管账号的详细进度信息。
+        创建账号、纳管注册OU、纳管账号的详细进度信息。
 
         :return: The percentage_details of this ShowOperationResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.OrganizationalPercentageDetail`]
@@ -151,7 +151,7 @@ class ShowOperationResponse(SdkResponse):
     def percentage_details(self, percentage_details):
         """Sets the percentage_details of this ShowOperationResponse.
 
-        创建账号、纳管OU、纳管账号的详细进度信息。
+        创建账号、纳管注册OU、纳管账号的详细进度信息。
 
         :param percentage_details: The percentage_details of this ShowOperationResponse.
         :type percentage_details: list[:class:`huaweicloudsdkrgc.v1.OrganizationalPercentageDetail`]
@@ -162,7 +162,7 @@ class ShowOperationResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowOperationResponse.
 
-        错误信息描述。
+        创建账号、纳管注册OU、纳管账号的错误信息描述。
 
         :return: The message of this ShowOperationResponse.
         :rtype: str
@@ -173,7 +173,7 @@ class ShowOperationResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowOperationResponse.
 
-        错误信息描述。
+        创建账号、纳管注册OU、纳管账号的错误信息描述。
 
         :param message: The message of this ShowOperationResponse.
         :type message: str

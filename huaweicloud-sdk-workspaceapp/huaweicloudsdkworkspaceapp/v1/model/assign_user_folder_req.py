@@ -29,7 +29,7 @@ class AssignUserFolderReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: 存储分配目标
+        :param items: 存储分配目标。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.UserAssignment`]
         """
         
@@ -44,7 +44,7 @@ class AssignUserFolderReq:
     def items(self):
         """Gets the items of this AssignUserFolderReq.
 
-        存储分配目标
+        存储分配目标。
 
         :return: The items of this AssignUserFolderReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.UserAssignment`]
@@ -55,7 +55,7 @@ class AssignUserFolderReq:
     def items(self, items):
         """Sets the items of this AssignUserFolderReq.
 
-        存储分配目标
+        存储分配目标。
 
         :param items: The items of this AssignUserFolderReq.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.UserAssignment`]

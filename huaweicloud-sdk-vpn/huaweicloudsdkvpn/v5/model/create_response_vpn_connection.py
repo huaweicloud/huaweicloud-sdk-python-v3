@@ -34,7 +34,8 @@ class CreateResponseVpnConnection:
         'updated_at': 'str',
         'enterprise_project_id': 'str',
         'connection_monitor_id': 'str',
-        'ha_role': 'str'
+        'ha_role': 'str',
+        'tags': 'list[VpnResourceTag]'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class CreateResponseVpnConnection:
         'updated_at': 'updated_at',
         'enterprise_project_id': 'enterprise_project_id',
         'connection_monitor_id': 'connection_monitor_id',
-        'ha_role': 'ha_role'
+        'ha_role': 'ha_role',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, connection_monitor_id=None, ha_role=None):
+    def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, connection_monitor_id=None, ha_role=None, tags=None):
         """CreateResponseVpnConnection
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class CreateResponseVpnConnection:
         :type connection_monitor_id: str
         :param ha_role: 连接的HA角色
         :type ha_role: str
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         
         
@@ -121,6 +125,7 @@ class CreateResponseVpnConnection:
         self._enterprise_project_id = None
         self._connection_monitor_id = None
         self._ha_role = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -159,6 +164,8 @@ class CreateResponseVpnConnection:
             self.connection_monitor_id = connection_monitor_id
         if ha_role is not None:
             self.ha_role = ha_role
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -547,6 +554,28 @@ class CreateResponseVpnConnection:
         :type ha_role: str
         """
         self._ha_role = ha_role
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateResponseVpnConnection.
+
+        标签
+
+        :return: The tags of this CreateResponseVpnConnection.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateResponseVpnConnection.
+
+        标签
+
+        :param tags: The tags of this CreateResponseVpnConnection.
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

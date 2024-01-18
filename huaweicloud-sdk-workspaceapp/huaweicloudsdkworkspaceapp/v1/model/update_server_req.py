@@ -33,11 +33,11 @@ class UpdateServerReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 服务器名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-空格组成，不能全为空格, 首位不为空 2. 长度范围1~64个字符
+        :param name: 服务器名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
         :type name: str
-        :param description: 服务器描述
+        :param description: 服务器描述。
         :type description: str
-        :param maintain_status: 服务器维护状态标识 * &#x60;true&#x60; - 添加标记 * &#x60;false&#x60; - 移除标记
+        :param maintain_status: 服务器维护状态标识： * &#x60;true&#x60; - 添加标记 * &#x60;false&#x60; - 移除标记
         :type maintain_status: bool
         """
         
@@ -59,7 +59,7 @@ class UpdateServerReq:
     def name(self):
         """Gets the name of this UpdateServerReq.
 
-        服务器名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-空格组成，不能全为空格, 首位不为空 2. 长度范围1~64个字符
+        服务器名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
         :return: The name of this UpdateServerReq.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateServerReq:
     def name(self, name):
         """Sets the name of this UpdateServerReq.
 
-        服务器名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-空格组成，不能全为空格, 首位不为空 2. 长度范围1~64个字符
+        服务器名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
         :param name: The name of this UpdateServerReq.
         :type name: str
@@ -81,7 +81,7 @@ class UpdateServerReq:
     def description(self):
         """Gets the description of this UpdateServerReq.
 
-        服务器描述
+        服务器描述。
 
         :return: The description of this UpdateServerReq.
         :rtype: str
@@ -92,7 +92,7 @@ class UpdateServerReq:
     def description(self, description):
         """Sets the description of this UpdateServerReq.
 
-        服务器描述
+        服务器描述。
 
         :param description: The description of this UpdateServerReq.
         :type description: str
@@ -103,7 +103,7 @@ class UpdateServerReq:
     def maintain_status(self):
         """Gets the maintain_status of this UpdateServerReq.
 
-        服务器维护状态标识 * `true` - 添加标记 * `false` - 移除标记
+        服务器维护状态标识： * `true` - 添加标记 * `false` - 移除标记
 
         :return: The maintain_status of this UpdateServerReq.
         :rtype: bool
@@ -114,7 +114,7 @@ class UpdateServerReq:
     def maintain_status(self, maintain_status):
         """Sets the maintain_status of this UpdateServerReq.
 
-        服务器维护状态标识 * `true` - 添加标记 * `false` - 移除标记
+        服务器维护状态标识： * `true` - 添加标记 * `false` - 移除标记
 
         :param maintain_status: The maintain_status of this UpdateServerReq.
         :type maintain_status: bool

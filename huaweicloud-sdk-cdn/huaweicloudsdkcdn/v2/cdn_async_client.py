@@ -418,6 +418,89 @@ class CdnAsyncClient(Client):
 
         return http_info
 
+    def list_cdn_domain_top_refers_async(self, request):
+        """查询统计TOP100 referer数据明细
+
+        - 查询TOP100 referer数据。
+        
+        - 支持查询90天内的数据。
+        
+        - 查询跨度不能超过31天。
+        
+        - 单租户调用频率：2次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCdnDomainTopRefers
+        :type request: :class:`huaweicloudsdkcdn.v2.ListCdnDomainTopRefersRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListCdnDomainTopRefersResponse`
+        """
+        http_info = self._list_cdn_domain_top_refers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cdn_domain_top_refers_async_invoker(self, request):
+        http_info = self._list_cdn_domain_top_refers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cdn_domain_top_refers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/top-refers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCdnDomainTopRefersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'stat_type' in local_var_params:
+            query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'service_area' in local_var_params:
+            query_params.append(('service_area', local_var_params['service_area']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'include_ratio' in local_var_params:
+            query_params.append(('include_ratio', local_var_params['include_ratio']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_domains_async(self, request):
         """查询加速域名
 

@@ -16,11 +16,13 @@ class AccountBaseline:
     """
     sensitive_list = []
     sensitive_list.append('account_name')
+    sensitive_list.append('account_id')
     sensitive_list.append('phone')
     sensitive_list.append('account_email')
 
     openapi_types = {
         'account_name': 'str',
+        'account_id': 'str',
         'phone': 'str',
         'account_email': 'str',
         'account_type': 'str'
@@ -28,45 +30,52 @@ class AccountBaseline:
 
     attribute_map = {
         'account_name': 'account_name',
+        'account_id': 'account_id',
         'phone': 'phone',
         'account_email': 'account_email',
         'account_type': 'account_type'
     }
 
-    def __init__(self, account_name=None, phone=None, account_email=None, account_type=None):
+    def __init__(self, account_name=None, account_id=None, phone=None, account_email=None, account_type=None):
         """AccountBaseline
 
         The model defined in huaweicloud sdk
 
-        :param account_name: 账号名称。
+        :param account_name: 纳管账号名称。
         :type account_name: str
+        :param account_id: 纳管帐号的唯一标识符（ID）。
+        :type account_id: str
         :param phone: 手机号码。
         :type phone: str
-        :param account_email: 账号邮箱。
+        :param account_email: 纳管账号邮箱。
         :type account_email: str
-        :param account_type: 账号类型logging,security。 * LOGGING - 日志账号 * SECURITY - 安全账号 * CUSTOM - 自定义账号
+        :param account_type: 纳管账号类型。类型包括LOGGING，SECURITY和CUSTOM。
         :type account_type: str
         """
         
         
 
         self._account_name = None
+        self._account_id = None
         self._phone = None
         self._account_email = None
         self._account_type = None
         self.discriminator = None
 
         self.account_name = account_name
+        if account_id is not None:
+            self.account_id = account_id
         if phone is not None:
             self.phone = phone
-        self.account_email = account_email
+        if account_email is not None:
+            self.account_email = account_email
         self.account_type = account_type
 
     @property
     def account_name(self):
         """Gets the account_name of this AccountBaseline.
 
-        账号名称。
+        纳管账号名称。
 
         :return: The account_name of this AccountBaseline.
         :rtype: str
@@ -77,12 +86,34 @@ class AccountBaseline:
     def account_name(self, account_name):
         """Sets the account_name of this AccountBaseline.
 
-        账号名称。
+        纳管账号名称。
 
         :param account_name: The account_name of this AccountBaseline.
         :type account_name: str
         """
         self._account_name = account_name
+
+    @property
+    def account_id(self):
+        """Gets the account_id of this AccountBaseline.
+
+        纳管帐号的唯一标识符（ID）。
+
+        :return: The account_id of this AccountBaseline.
+        :rtype: str
+        """
+        return self._account_id
+
+    @account_id.setter
+    def account_id(self, account_id):
+        """Sets the account_id of this AccountBaseline.
+
+        纳管帐号的唯一标识符（ID）。
+
+        :param account_id: The account_id of this AccountBaseline.
+        :type account_id: str
+        """
+        self._account_id = account_id
 
     @property
     def phone(self):
@@ -110,7 +141,7 @@ class AccountBaseline:
     def account_email(self):
         """Gets the account_email of this AccountBaseline.
 
-        账号邮箱。
+        纳管账号邮箱。
 
         :return: The account_email of this AccountBaseline.
         :rtype: str
@@ -121,7 +152,7 @@ class AccountBaseline:
     def account_email(self, account_email):
         """Sets the account_email of this AccountBaseline.
 
-        账号邮箱。
+        纳管账号邮箱。
 
         :param account_email: The account_email of this AccountBaseline.
         :type account_email: str
@@ -132,7 +163,7 @@ class AccountBaseline:
     def account_type(self):
         """Gets the account_type of this AccountBaseline.
 
-        账号类型logging,security。 * LOGGING - 日志账号 * SECURITY - 安全账号 * CUSTOM - 自定义账号
+        纳管账号类型。类型包括LOGGING，SECURITY和CUSTOM。
 
         :return: The account_type of this AccountBaseline.
         :rtype: str
@@ -143,7 +174,7 @@ class AccountBaseline:
     def account_type(self, account_type):
         """Sets the account_type of this AccountBaseline.
 
-        账号类型logging,security。 * LOGGING - 日志账号 * SECURITY - 安全账号 * CUSTOM - 自定义账号
+        纳管账号类型。类型包括LOGGING，SECURITY和CUSTOM。
 
         :param account_type: The account_type of this AccountBaseline.
         :type account_type: str

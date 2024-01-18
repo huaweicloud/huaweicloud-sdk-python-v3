@@ -58,7 +58,7 @@ class ShowControlResponse(SdkResponse):
 
         :param identifier: 控制策略ID。
         :type identifier: str
-        :param implementation: 业务控制策略（SCP），配置规则。
+        :param implementation: 服务控制策略（SCP），配置规则。
         :type implementation: str
         :param guidance: 控制策略必须性。
         :type guidance: str
@@ -72,17 +72,17 @@ class ShowControlResponse(SdkResponse):
         :type control_objective: str
         :param framework: 治理策略来自的框架。
         :type framework: list[str]
-        :param artifacts: 策略内容。
+        :param artifacts: 控制策略内容。
         :type artifacts: list[:class:`huaweicloudsdkrgc.v1.Artifact`]
-        :param aliases: 别名列表。
+        :param aliases: 控制策略别名。
         :type aliases: list[str]
-        :param owner: 账号的创建来源，包括CUSTOM和RGC。
+        :param owner: 纳管账号的创建来源，包括CUSTOM和RGC。
         :type owner: str
-        :param severity: 严重性(High)。
+        :param severity: 控制策略严重性。
         :type severity: str
-        :param version: 版本。
+        :param version: 控制策略版本。
         :type version: str
-        :param release_date: 发布时间。
+        :param release_date: 控制策略发布时间。
         :type release_date: datetime
         """
         
@@ -159,7 +159,7 @@ class ShowControlResponse(SdkResponse):
     def implementation(self):
         """Gets the implementation of this ShowControlResponse.
 
-        业务控制策略（SCP），配置规则。
+        服务控制策略（SCP），配置规则。
 
         :return: The implementation of this ShowControlResponse.
         :rtype: str
@@ -170,7 +170,7 @@ class ShowControlResponse(SdkResponse):
     def implementation(self, implementation):
         """Sets the implementation of this ShowControlResponse.
 
-        业务控制策略（SCP），配置规则。
+        服务控制策略（SCP），配置规则。
 
         :param implementation: The implementation of this ShowControlResponse.
         :type implementation: str
@@ -313,7 +313,7 @@ class ShowControlResponse(SdkResponse):
     def artifacts(self):
         """Gets the artifacts of this ShowControlResponse.
 
-        策略内容。
+        控制策略内容。
 
         :return: The artifacts of this ShowControlResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.Artifact`]
@@ -324,7 +324,7 @@ class ShowControlResponse(SdkResponse):
     def artifacts(self, artifacts):
         """Sets the artifacts of this ShowControlResponse.
 
-        策略内容。
+        控制策略内容。
 
         :param artifacts: The artifacts of this ShowControlResponse.
         :type artifacts: list[:class:`huaweicloudsdkrgc.v1.Artifact`]
@@ -335,7 +335,7 @@ class ShowControlResponse(SdkResponse):
     def aliases(self):
         """Gets the aliases of this ShowControlResponse.
 
-        别名列表。
+        控制策略别名。
 
         :return: The aliases of this ShowControlResponse.
         :rtype: list[str]
@@ -346,7 +346,7 @@ class ShowControlResponse(SdkResponse):
     def aliases(self, aliases):
         """Sets the aliases of this ShowControlResponse.
 
-        别名列表。
+        控制策略别名。
 
         :param aliases: The aliases of this ShowControlResponse.
         :type aliases: list[str]
@@ -357,7 +357,7 @@ class ShowControlResponse(SdkResponse):
     def owner(self):
         """Gets the owner of this ShowControlResponse.
 
-        账号的创建来源，包括CUSTOM和RGC。
+        纳管账号的创建来源，包括CUSTOM和RGC。
 
         :return: The owner of this ShowControlResponse.
         :rtype: str
@@ -368,7 +368,7 @@ class ShowControlResponse(SdkResponse):
     def owner(self, owner):
         """Sets the owner of this ShowControlResponse.
 
-        账号的创建来源，包括CUSTOM和RGC。
+        纳管账号的创建来源，包括CUSTOM和RGC。
 
         :param owner: The owner of this ShowControlResponse.
         :type owner: str
@@ -379,7 +379,7 @@ class ShowControlResponse(SdkResponse):
     def severity(self):
         """Gets the severity of this ShowControlResponse.
 
-        严重性(High)。
+        控制策略严重性。
 
         :return: The severity of this ShowControlResponse.
         :rtype: str
@@ -390,7 +390,7 @@ class ShowControlResponse(SdkResponse):
     def severity(self, severity):
         """Sets the severity of this ShowControlResponse.
 
-        严重性(High)。
+        控制策略严重性。
 
         :param severity: The severity of this ShowControlResponse.
         :type severity: str
@@ -401,7 +401,7 @@ class ShowControlResponse(SdkResponse):
     def version(self):
         """Gets the version of this ShowControlResponse.
 
-        版本。
+        控制策略版本。
 
         :return: The version of this ShowControlResponse.
         :rtype: str
@@ -412,7 +412,7 @@ class ShowControlResponse(SdkResponse):
     def version(self, version):
         """Sets the version of this ShowControlResponse.
 
-        版本。
+        控制策略版本。
 
         :param version: The version of this ShowControlResponse.
         :type version: str
@@ -423,7 +423,7 @@ class ShowControlResponse(SdkResponse):
     def release_date(self):
         """Gets the release_date of this ShowControlResponse.
 
-        发布时间。
+        控制策略发布时间。
 
         :return: The release_date of this ShowControlResponse.
         :rtype: datetime
@@ -434,7 +434,7 @@ class ShowControlResponse(SdkResponse):
     def release_date(self, release_date):
         """Sets the release_date of this ShowControlResponse.
 
-        发布时间。
+        控制策略发布时间。
 
         :param release_date: The release_date of this ShowControlResponse.
         :type release_date: datetime

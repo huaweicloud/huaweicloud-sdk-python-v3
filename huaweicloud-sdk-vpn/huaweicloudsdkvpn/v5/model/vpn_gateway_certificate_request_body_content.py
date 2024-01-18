@@ -70,16 +70,11 @@ class VpnGatewayCertificateRequestBodyContent:
 
         if name is not None:
             self.name = name
-        if certificate is not None:
-            self.certificate = certificate
-        if private_key is not None:
-            self.private_key = private_key
-        if certificate_chain is not None:
-            self.certificate_chain = certificate_chain
-        if enc_certificate is not None:
-            self.enc_certificate = enc_certificate
-        if enc_private_key is not None:
-            self.enc_private_key = enc_private_key
+        self.certificate = certificate
+        self.private_key = private_key
+        self.certificate_chain = certificate_chain
+        self.enc_certificate = enc_certificate
+        self.enc_private_key = enc_private_key
 
     @property
     def name(self):

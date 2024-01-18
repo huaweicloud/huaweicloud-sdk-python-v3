@@ -37,15 +37,15 @@ class ListServerGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]
+        :param limit: 查询的数量，值区间[1-100]。
         :type limit: int
-        :param server_group_name: 服务器组名称
+        :param server_group_name: 服务器组名称。
         :type server_group_name: str
-        :param server_group_id: 服务器组唯一标识
+        :param server_group_id: 服务器组唯一标识。
         :type server_group_id: str
-        :param app_type: 应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+        :param app_type: 应用组类型： * &#x60;SESSION_DESKTOP_APP&#x60; - 会话桌面app * &#x60;COMMON_APP&#x60; - 普通app
         :type app_type: str
         """
         
@@ -73,7 +73,7 @@ class ListServerGroupsRequest:
     def offset(self):
         """Gets the offset of this ListServerGroupsRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListServerGroupsRequest.
         :rtype: int
@@ -84,7 +84,7 @@ class ListServerGroupsRequest:
     def offset(self, offset):
         """Sets the offset of this ListServerGroupsRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListServerGroupsRequest.
         :type offset: int
@@ -95,7 +95,7 @@ class ListServerGroupsRequest:
     def limit(self):
         """Gets the limit of this ListServerGroupsRequest.
 
-        查询的数量，值区间[1-100]
+        查询的数量，值区间[1-100]。
 
         :return: The limit of this ListServerGroupsRequest.
         :rtype: int
@@ -106,7 +106,7 @@ class ListServerGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListServerGroupsRequest.
 
-        查询的数量，值区间[1-100]
+        查询的数量，值区间[1-100]。
 
         :param limit: The limit of this ListServerGroupsRequest.
         :type limit: int
@@ -117,7 +117,7 @@ class ListServerGroupsRequest:
     def server_group_name(self):
         """Gets the server_group_name of this ListServerGroupsRequest.
 
-        服务器组名称
+        服务器组名称。
 
         :return: The server_group_name of this ListServerGroupsRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class ListServerGroupsRequest:
     def server_group_name(self, server_group_name):
         """Sets the server_group_name of this ListServerGroupsRequest.
 
-        服务器组名称
+        服务器组名称。
 
         :param server_group_name: The server_group_name of this ListServerGroupsRequest.
         :type server_group_name: str
@@ -139,7 +139,7 @@ class ListServerGroupsRequest:
     def server_group_id(self):
         """Gets the server_group_id of this ListServerGroupsRequest.
 
-        服务器组唯一标识
+        服务器组唯一标识。
 
         :return: The server_group_id of this ListServerGroupsRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class ListServerGroupsRequest:
     def server_group_id(self, server_group_id):
         """Sets the server_group_id of this ListServerGroupsRequest.
 
-        服务器组唯一标识
+        服务器组唯一标识。
 
         :param server_group_id: The server_group_id of this ListServerGroupsRequest.
         :type server_group_id: str
@@ -161,7 +161,7 @@ class ListServerGroupsRequest:
     def app_type(self):
         """Gets the app_type of this ListServerGroupsRequest.
 
-        应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+        应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
         :return: The app_type of this ListServerGroupsRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListServerGroupsRequest:
     def app_type(self, app_type):
         """Sets the app_type of this ListServerGroupsRequest.
 
-        应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+        应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
         :param app_type: The app_type of this ListServerGroupsRequest.
         :type app_type: str

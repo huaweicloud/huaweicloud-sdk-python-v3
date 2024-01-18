@@ -163,8 +163,10 @@ class ListenerResp:
         self.insert_headers = insert_headers
         self.project_id = project_id
         self.tls_ciphers_policy = tls_ciphers_policy
-        self.protection_status = protection_status
-        self.protection_reason = protection_reason
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def id(self):

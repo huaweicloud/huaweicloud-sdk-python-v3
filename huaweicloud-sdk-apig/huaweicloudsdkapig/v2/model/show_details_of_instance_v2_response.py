@@ -55,12 +55,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'endpoint_service': 'EndpointService',
         'endpoint_services': 'list[EndpointService]',
         'node_ips': 'NodeIps',
-        'node_ipv6_ips': 'NodeIps',
-        'public_ipv6_ips': 'list[str]',
         'publicips': 'list[IpDetails]',
         'privateips': 'list[IpDetails]',
-        'unreliable_ips': 'list[str]',
-        'enable_fullstack_ipv6': 'bool',
         'is_releasable': 'bool',
         'ingress_bandwidth_charging_mode': 'str'
     }
@@ -103,17 +99,13 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'endpoint_service': 'endpoint_service',
         'endpoint_services': 'endpoint_services',
         'node_ips': 'node_ips',
-        'node_ipv6_ips': 'node_ipv6_ips',
-        'public_ipv6_ips': 'public_ipv6_ips',
         'publicips': 'publicips',
         'privateips': 'privateips',
-        'unreliable_ips': 'unreliable_ips',
-        'enable_fullstack_ipv6': 'enable_fullstack_ipv6',
         'is_releasable': 'is_releasable',
         'ingress_bandwidth_charging_mode': 'ingress_bandwidth_charging_mode'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, cbc_operation_locks=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, bandwidth_charging_mode=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, node_ipv6_ips=None, public_ipv6_ips=None, publicips=None, privateips=None, unreliable_ips=None, enable_fullstack_ipv6=None, is_releasable=None, ingress_bandwidth_charging_mode=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, cbc_operation_locks=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, bandwidth_charging_mode=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None, is_releasable=None, ingress_bandwidth_charging_mode=None):
         """ShowDetailsOfInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -192,18 +184,10 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type endpoint_services: list[:class:`huaweicloudsdkapig.v2.EndpointService`]
         :param node_ips: 
         :type node_ips: :class:`huaweicloudsdkapig.v2.NodeIps`
-        :param node_ipv6_ips: 
-        :type node_ipv6_ips: :class:`huaweicloudsdkapig.v2.NodeIps`
-        :param public_ipv6_ips: 实例IPV6出公网IP
-        :type public_ipv6_ips: list[str]
         :param publicips: 公网入口地址列表
         :type publicips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
         :param privateips: 私网入口地址列表
         :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
-        :param unreliable_ips: 不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组
-        :type unreliable_ips: list[str]
-        :param enable_fullstack_ipv6: 实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6
-        :type enable_fullstack_ipv6: bool
         :param is_releasable: 实例是否可释放 - true：可释放 - false：不可释放
         :type is_releasable: bool
         :param ingress_bandwidth_charging_mode: 入公网带宽计费模式
@@ -249,12 +233,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._endpoint_service = None
         self._endpoint_services = None
         self._node_ips = None
-        self._node_ipv6_ips = None
-        self._public_ipv6_ips = None
         self._publicips = None
         self._privateips = None
-        self._unreliable_ips = None
-        self._enable_fullstack_ipv6 = None
         self._is_releasable = None
         self._ingress_bandwidth_charging_mode = None
         self.discriminator = None
@@ -333,18 +313,10 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.endpoint_services = endpoint_services
         if node_ips is not None:
             self.node_ips = node_ips
-        if node_ipv6_ips is not None:
-            self.node_ipv6_ips = node_ipv6_ips
-        if public_ipv6_ips is not None:
-            self.public_ipv6_ips = public_ipv6_ips
         if publicips is not None:
             self.publicips = publicips
         if privateips is not None:
             self.privateips = privateips
-        if unreliable_ips is not None:
-            self.unreliable_ips = unreliable_ips
-        if enable_fullstack_ipv6 is not None:
-            self.enable_fullstack_ipv6 = enable_fullstack_ipv6
         if is_releasable is not None:
             self.is_releasable = is_releasable
         if ingress_bandwidth_charging_mode is not None:
@@ -1157,46 +1129,6 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._node_ips = node_ips
 
     @property
-    def node_ipv6_ips(self):
-        """Gets the node_ipv6_ips of this ShowDetailsOfInstanceV2Response.
-
-        :return: The node_ipv6_ips of this ShowDetailsOfInstanceV2Response.
-        :rtype: :class:`huaweicloudsdkapig.v2.NodeIps`
-        """
-        return self._node_ipv6_ips
-
-    @node_ipv6_ips.setter
-    def node_ipv6_ips(self, node_ipv6_ips):
-        """Sets the node_ipv6_ips of this ShowDetailsOfInstanceV2Response.
-
-        :param node_ipv6_ips: The node_ipv6_ips of this ShowDetailsOfInstanceV2Response.
-        :type node_ipv6_ips: :class:`huaweicloudsdkapig.v2.NodeIps`
-        """
-        self._node_ipv6_ips = node_ipv6_ips
-
-    @property
-    def public_ipv6_ips(self):
-        """Gets the public_ipv6_ips of this ShowDetailsOfInstanceV2Response.
-
-        实例IPV6出公网IP
-
-        :return: The public_ipv6_ips of this ShowDetailsOfInstanceV2Response.
-        :rtype: list[str]
-        """
-        return self._public_ipv6_ips
-
-    @public_ipv6_ips.setter
-    def public_ipv6_ips(self, public_ipv6_ips):
-        """Sets the public_ipv6_ips of this ShowDetailsOfInstanceV2Response.
-
-        实例IPV6出公网IP
-
-        :param public_ipv6_ips: The public_ipv6_ips of this ShowDetailsOfInstanceV2Response.
-        :type public_ipv6_ips: list[str]
-        """
-        self._public_ipv6_ips = public_ipv6_ips
-
-    @property
     def publicips(self):
         """Gets the publicips of this ShowDetailsOfInstanceV2Response.
 
@@ -1239,50 +1171,6 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
         """
         self._privateips = privateips
-
-    @property
-    def unreliable_ips(self):
-        """Gets the unreliable_ips of this ShowDetailsOfInstanceV2Response.
-
-        不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组
-
-        :return: The unreliable_ips of this ShowDetailsOfInstanceV2Response.
-        :rtype: list[str]
-        """
-        return self._unreliable_ips
-
-    @unreliable_ips.setter
-    def unreliable_ips(self, unreliable_ips):
-        """Sets the unreliable_ips of this ShowDetailsOfInstanceV2Response.
-
-        不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组
-
-        :param unreliable_ips: The unreliable_ips of this ShowDetailsOfInstanceV2Response.
-        :type unreliable_ips: list[str]
-        """
-        self._unreliable_ips = unreliable_ips
-
-    @property
-    def enable_fullstack_ipv6(self):
-        """Gets the enable_fullstack_ipv6 of this ShowDetailsOfInstanceV2Response.
-
-        实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6
-
-        :return: The enable_fullstack_ipv6 of this ShowDetailsOfInstanceV2Response.
-        :rtype: bool
-        """
-        return self._enable_fullstack_ipv6
-
-    @enable_fullstack_ipv6.setter
-    def enable_fullstack_ipv6(self, enable_fullstack_ipv6):
-        """Sets the enable_fullstack_ipv6 of this ShowDetailsOfInstanceV2Response.
-
-        实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6
-
-        :param enable_fullstack_ipv6: The enable_fullstack_ipv6 of this ShowDetailsOfInstanceV2Response.
-        :type enable_fullstack_ipv6: bool
-        """
-        self._enable_fullstack_ipv6 = enable_fullstack_ipv6
 
     @property
     def is_releasable(self):

@@ -15,44 +15,43 @@ class ShowComplianceStatusForOrganizationUnitRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('x_security_token')
 
     openapi_types = {
         'managed_organization_unit_id': 'str',
-        'x_security_token': 'str'
+        'control_id': 'str'
     }
 
     attribute_map = {
         'managed_organization_unit_id': 'managed_organization_unit_id',
-        'x_security_token': 'X-Security-Token'
+        'control_id': 'control_id'
     }
 
-    def __init__(self, managed_organization_unit_id=None, x_security_token=None):
+    def __init__(self, managed_organization_unit_id=None, control_id=None):
         """ShowComplianceStatusForOrganizationUnitRequest
 
         The model defined in huaweicloud sdk
 
-        :param managed_organization_unit_id: OU ID。
+        :param managed_organization_unit_id: 注册OU ID。
         :type managed_organization_unit_id: str
-        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-        :type x_security_token: str
+        :param control_id: 启用的控制策略信息。
+        :type control_id: str
         """
         
         
 
         self._managed_organization_unit_id = None
-        self._x_security_token = None
+        self._control_id = None
         self.discriminator = None
 
         self.managed_organization_unit_id = managed_organization_unit_id
-        if x_security_token is not None:
-            self.x_security_token = x_security_token
+        if control_id is not None:
+            self.control_id = control_id
 
     @property
     def managed_organization_unit_id(self):
         """Gets the managed_organization_unit_id of this ShowComplianceStatusForOrganizationUnitRequest.
 
-        OU ID。
+        注册OU ID。
 
         :return: The managed_organization_unit_id of this ShowComplianceStatusForOrganizationUnitRequest.
         :rtype: str
@@ -63,7 +62,7 @@ class ShowComplianceStatusForOrganizationUnitRequest:
     def managed_organization_unit_id(self, managed_organization_unit_id):
         """Sets the managed_organization_unit_id of this ShowComplianceStatusForOrganizationUnitRequest.
 
-        OU ID。
+        注册OU ID。
 
         :param managed_organization_unit_id: The managed_organization_unit_id of this ShowComplianceStatusForOrganizationUnitRequest.
         :type managed_organization_unit_id: str
@@ -71,26 +70,26 @@ class ShowComplianceStatusForOrganizationUnitRequest:
         self._managed_organization_unit_id = managed_organization_unit_id
 
     @property
-    def x_security_token(self):
-        """Gets the x_security_token of this ShowComplianceStatusForOrganizationUnitRequest.
+    def control_id(self):
+        """Gets the control_id of this ShowComplianceStatusForOrganizationUnitRequest.
 
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        启用的控制策略信息。
 
-        :return: The x_security_token of this ShowComplianceStatusForOrganizationUnitRequest.
+        :return: The control_id of this ShowComplianceStatusForOrganizationUnitRequest.
         :rtype: str
         """
-        return self._x_security_token
+        return self._control_id
 
-    @x_security_token.setter
-    def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ShowComplianceStatusForOrganizationUnitRequest.
+    @control_id.setter
+    def control_id(self, control_id):
+        """Sets the control_id of this ShowComplianceStatusForOrganizationUnitRequest.
 
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        启用的控制策略信息。
 
-        :param x_security_token: The x_security_token of this ShowComplianceStatusForOrganizationUnitRequest.
-        :type x_security_token: str
+        :param control_id: The control_id of this ShowComplianceStatusForOrganizationUnitRequest.
+        :type control_id: str
         """
-        self._x_security_token = x_security_token
+        self._control_id = control_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

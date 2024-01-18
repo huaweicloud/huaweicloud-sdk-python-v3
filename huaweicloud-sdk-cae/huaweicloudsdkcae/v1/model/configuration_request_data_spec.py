@@ -83,41 +83,41 @@ class ConfigurationRequestDataSpec:
 
         The model defined in huaweicloud sdk
 
-        :param rds_id: RDS数据库实例ID。  type为\&quot;rds\&quot;时，配置此参数。 
+        :param rds_id: RDS数据库实例ID。  ConfigurationItem.type为\&quot;rds\&quot;时，配置此参数。 
         :type rds_id: str
-        :param rds_db_name: RDS数据库名称。  type为\&quot;rds\&quot;时，配置此参数。 
+        :param rds_db_name: RDS数据库名称。  ConfigurationItem.type为\&quot;rds\&quot;时，配置此参数。 
         :type rds_db_name: str
-        :param rds_address: RDS数据库地址。  type为\&quot;rds\&quot;时，配置此参数。 
+        :param rds_address: RDS数据库地址。  ConfigurationItem.type为\&quot;rds\&quot;时，配置此参数。 
         :type rds_address: str
-        :param rds_username: RDS数据库用户名称。  type为\&quot;rds\&quot;时，配置此参数。 
+        :param rds_username: RDS数据库用户名称。  ConfigurationItem.type为\&quot;rds\&quot;时，配置此参数。 
         :type rds_username: str
-        :param rds_password: RDS数据库密码。  type为\&quot;rds\&quot;时，配置此参数。 
+        :param rds_password: RDS数据库密码。  ConfigurationItem.type为\&quot;rds\&quot;时，配置此参数。 
         :type rds_password: str
-        :param rds_port: RDS数据库端口。  type为\&quot;rds\&quot;时，配置此参数。 
+        :param rds_port: RDS数据库端口。  ConfigurationItem.type为\&quot;rds\&quot;时，配置此参数。 
         :type rds_port: str
-        :param config_center_addr: CSE配置中心地址。  type为\&quot;cse\&quot;时，配置此参数。 
+        :param config_center_addr: CSE配置中心地址。  ConfigurationItem.type为\&quot;cse\&quot;时，配置此参数。 
         :type config_center_addr: str
-        :param service_center_addr: CSE服务注册发现地址。  type为\&quot;cse\&quot;时，配置此参数。 
+        :param service_center_addr: CSE服务注册发现地址。  ConfigurationItem.type为\&quot;cse\&quot;时，配置此参数。 
         :type service_center_addr: str
-        :param cse_id: CSE引擎ID。  type为\&quot;cse\&quot;时，配置此参数。 
+        :param cse_id: CSE引擎ID。  ConfigurationItem.type为\&quot;cse\&quot;时，配置此参数。 
         :type cse_id: str
         :param envs: 环境变量配置。 常用环境变量如下： - TZ: 时区设置，东八区可设置为Asia/Shanghai。 - LANG: 语言字符集设置，中文UTF8可设置为zh_CN.UTF-8。
         :type envs: dict(str, str)
         :param ip: 弹性公网IP，响应体参数，未配置域名时返回此参数。
         :type ip: str
-        :param items: 访问方式配置列表。  type为\&quot;access\&quot;时，配置此参数。 
+        :param items: 访问方式配置列表。  ConfigurationItem.type为\&quot;access\&quot;时，配置此参数。 
         :type items: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationDataItems`]
-        :param scale_strategy: 伸缩策略配置策略类型。  type为\&quot;scaling\&quot;时，配置此参数。 
+        :param scale_strategy: 伸缩策略配置策略类型。  ConfigurationItem.type为\&quot;scaling\&quot;时，配置此参数。 
         :type scale_strategy: str
-        :param max_replica_count: 伸缩策略配置最大伸缩个数。  type为\&quot;scaling\&quot;时，配置此参数。 
+        :param max_replica_count: 伸缩策略配置最大伸缩个数。  ConfigurationItem.type为\&quot;scaling\&quot;时，配置此参数。 
         :type max_replica_count: int
-        :param min_replica_count: 伸缩策略配置最小伸缩个数。  type为\&quot;scaling\&quot;时，配置此参数。 
+        :param min_replica_count: 伸缩策略配置最小伸缩个数。  ConfigurationItem.type为\&quot;scaling\&quot;时，配置此参数。 
         :type min_replica_count: int
         :param advanced: 
         :type advanced: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataAdvanced`
-        :param triggers: 伸缩策略配置触发器列表。  type为\&quot;scaling\&quot;时，配置此参数。 
+        :param triggers: 伸缩策略配置触发器列表。  ConfigurationItem.type为\&quot;scaling\&quot;时，配置此参数。 
         :type triggers: list[:class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTrigger`]
-        :param volumes: 云存储配置列表。  type为\&quot;volume\&quot;时，配置此参数。 
+        :param volumes: 云存储配置列表。  ConfigurationItem.type为\&quot;volume\&quot;时，配置此参数。 
         :type volumes: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationDataVolume`]
         :param liveness_probe: 
         :type liveness_probe: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationLivenessProbe`
@@ -129,15 +129,15 @@ class ConfigurationRequestDataSpec:
         :type post_start: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpecPostStart`
         :param pre_stop: 
         :type pre_stop: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpecPreStop`
-        :param log_paths: 自定义日志路径数组。  type为\&quot;log\&quot;时，配置此参数。 
+        :param log_paths: 自定义日志路径数组。  ConfigurationItem.type为\&quot;log\&quot;时，配置此参数。 
         :type log_paths: list[str]
-        :param instrumentation: 探针注入方式。  type为\&quot;apm2\&quot;时，配置此参数。 
+        :param instrumentation: 探针注入方式。  ConfigurationItem.type为\&quot;apm2\&quot;时，配置此参数。 
         :type instrumentation: str
-        :param path: 自定义监控指标配置采集路径。  type为\&quot;customMetric\&quot;时，配置此参数。 
+        :param path: 自定义监控指标配置采集路径。  ConfigurationItem.type为\&quot;customMetric\&quot;时，配置此参数。 
         :type path: str
-        :param port: 自定义监控指标配置采集端口。  type为\&quot;customMetric\&quot;时，配置此参数。 
+        :param port: 自定义监控指标配置采集端口。  ConfigurationItem.type为\&quot;customMetric\&quot;时，配置此参数。 
         :type port: str
-        :param metrics: 自定义监控指标配置指标名称。  type为\&quot;customMetric\&quot;时，配置此参数。 
+        :param metrics: 自定义监控指标配置指标名称。  ConfigurationItem.type为\&quot;customMetric\&quot;时，配置此参数。 
         :type metrics: list[str]
         """
         
@@ -234,7 +234,7 @@ class ConfigurationRequestDataSpec:
     def rds_id(self):
         """Gets the rds_id of this ConfigurationRequestDataSpec.
 
-        RDS数据库实例ID。  type为\"rds\"时，配置此参数。 
+        RDS数据库实例ID。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :return: The rds_id of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -245,7 +245,7 @@ class ConfigurationRequestDataSpec:
     def rds_id(self, rds_id):
         """Sets the rds_id of this ConfigurationRequestDataSpec.
 
-        RDS数据库实例ID。  type为\"rds\"时，配置此参数。 
+        RDS数据库实例ID。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :param rds_id: The rds_id of this ConfigurationRequestDataSpec.
         :type rds_id: str
@@ -256,7 +256,7 @@ class ConfigurationRequestDataSpec:
     def rds_db_name(self):
         """Gets the rds_db_name of this ConfigurationRequestDataSpec.
 
-        RDS数据库名称。  type为\"rds\"时，配置此参数。 
+        RDS数据库名称。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :return: The rds_db_name of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -267,7 +267,7 @@ class ConfigurationRequestDataSpec:
     def rds_db_name(self, rds_db_name):
         """Sets the rds_db_name of this ConfigurationRequestDataSpec.
 
-        RDS数据库名称。  type为\"rds\"时，配置此参数。 
+        RDS数据库名称。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :param rds_db_name: The rds_db_name of this ConfigurationRequestDataSpec.
         :type rds_db_name: str
@@ -278,7 +278,7 @@ class ConfigurationRequestDataSpec:
     def rds_address(self):
         """Gets the rds_address of this ConfigurationRequestDataSpec.
 
-        RDS数据库地址。  type为\"rds\"时，配置此参数。 
+        RDS数据库地址。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :return: The rds_address of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -289,7 +289,7 @@ class ConfigurationRequestDataSpec:
     def rds_address(self, rds_address):
         """Sets the rds_address of this ConfigurationRequestDataSpec.
 
-        RDS数据库地址。  type为\"rds\"时，配置此参数。 
+        RDS数据库地址。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :param rds_address: The rds_address of this ConfigurationRequestDataSpec.
         :type rds_address: str
@@ -300,7 +300,7 @@ class ConfigurationRequestDataSpec:
     def rds_username(self):
         """Gets the rds_username of this ConfigurationRequestDataSpec.
 
-        RDS数据库用户名称。  type为\"rds\"时，配置此参数。 
+        RDS数据库用户名称。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :return: The rds_username of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -311,7 +311,7 @@ class ConfigurationRequestDataSpec:
     def rds_username(self, rds_username):
         """Sets the rds_username of this ConfigurationRequestDataSpec.
 
-        RDS数据库用户名称。  type为\"rds\"时，配置此参数。 
+        RDS数据库用户名称。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :param rds_username: The rds_username of this ConfigurationRequestDataSpec.
         :type rds_username: str
@@ -322,7 +322,7 @@ class ConfigurationRequestDataSpec:
     def rds_password(self):
         """Gets the rds_password of this ConfigurationRequestDataSpec.
 
-        RDS数据库密码。  type为\"rds\"时，配置此参数。 
+        RDS数据库密码。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :return: The rds_password of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -333,7 +333,7 @@ class ConfigurationRequestDataSpec:
     def rds_password(self, rds_password):
         """Sets the rds_password of this ConfigurationRequestDataSpec.
 
-        RDS数据库密码。  type为\"rds\"时，配置此参数。 
+        RDS数据库密码。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :param rds_password: The rds_password of this ConfigurationRequestDataSpec.
         :type rds_password: str
@@ -344,7 +344,7 @@ class ConfigurationRequestDataSpec:
     def rds_port(self):
         """Gets the rds_port of this ConfigurationRequestDataSpec.
 
-        RDS数据库端口。  type为\"rds\"时，配置此参数。 
+        RDS数据库端口。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :return: The rds_port of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -355,7 +355,7 @@ class ConfigurationRequestDataSpec:
     def rds_port(self, rds_port):
         """Sets the rds_port of this ConfigurationRequestDataSpec.
 
-        RDS数据库端口。  type为\"rds\"时，配置此参数。 
+        RDS数据库端口。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
         :param rds_port: The rds_port of this ConfigurationRequestDataSpec.
         :type rds_port: str
@@ -366,7 +366,7 @@ class ConfigurationRequestDataSpec:
     def config_center_addr(self):
         """Gets the config_center_addr of this ConfigurationRequestDataSpec.
 
-        CSE配置中心地址。  type为\"cse\"时，配置此参数。 
+        CSE配置中心地址。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
         :return: The config_center_addr of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -377,7 +377,7 @@ class ConfigurationRequestDataSpec:
     def config_center_addr(self, config_center_addr):
         """Sets the config_center_addr of this ConfigurationRequestDataSpec.
 
-        CSE配置中心地址。  type为\"cse\"时，配置此参数。 
+        CSE配置中心地址。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
         :param config_center_addr: The config_center_addr of this ConfigurationRequestDataSpec.
         :type config_center_addr: str
@@ -388,7 +388,7 @@ class ConfigurationRequestDataSpec:
     def service_center_addr(self):
         """Gets the service_center_addr of this ConfigurationRequestDataSpec.
 
-        CSE服务注册发现地址。  type为\"cse\"时，配置此参数。 
+        CSE服务注册发现地址。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
         :return: The service_center_addr of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -399,7 +399,7 @@ class ConfigurationRequestDataSpec:
     def service_center_addr(self, service_center_addr):
         """Sets the service_center_addr of this ConfigurationRequestDataSpec.
 
-        CSE服务注册发现地址。  type为\"cse\"时，配置此参数。 
+        CSE服务注册发现地址。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
         :param service_center_addr: The service_center_addr of this ConfigurationRequestDataSpec.
         :type service_center_addr: str
@@ -410,7 +410,7 @@ class ConfigurationRequestDataSpec:
     def cse_id(self):
         """Gets the cse_id of this ConfigurationRequestDataSpec.
 
-        CSE引擎ID。  type为\"cse\"时，配置此参数。 
+        CSE引擎ID。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
         :return: The cse_id of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -421,7 +421,7 @@ class ConfigurationRequestDataSpec:
     def cse_id(self, cse_id):
         """Sets the cse_id of this ConfigurationRequestDataSpec.
 
-        CSE引擎ID。  type为\"cse\"时，配置此参数。 
+        CSE引擎ID。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
         :param cse_id: The cse_id of this ConfigurationRequestDataSpec.
         :type cse_id: str
@@ -476,7 +476,7 @@ class ConfigurationRequestDataSpec:
     def items(self):
         """Gets the items of this ConfigurationRequestDataSpec.
 
-        访问方式配置列表。  type为\"access\"时，配置此参数。 
+        访问方式配置列表。  ConfigurationItem.type为\"access\"时，配置此参数。 
 
         :return: The items of this ConfigurationRequestDataSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationDataItems`]
@@ -487,7 +487,7 @@ class ConfigurationRequestDataSpec:
     def items(self, items):
         """Sets the items of this ConfigurationRequestDataSpec.
 
-        访问方式配置列表。  type为\"access\"时，配置此参数。 
+        访问方式配置列表。  ConfigurationItem.type为\"access\"时，配置此参数。 
 
         :param items: The items of this ConfigurationRequestDataSpec.
         :type items: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationDataItems`]
@@ -498,7 +498,7 @@ class ConfigurationRequestDataSpec:
     def scale_strategy(self):
         """Gets the scale_strategy of this ConfigurationRequestDataSpec.
 
-        伸缩策略配置策略类型。  type为\"scaling\"时，配置此参数。 
+        伸缩策略配置策略类型。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
         :return: The scale_strategy of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -509,7 +509,7 @@ class ConfigurationRequestDataSpec:
     def scale_strategy(self, scale_strategy):
         """Sets the scale_strategy of this ConfigurationRequestDataSpec.
 
-        伸缩策略配置策略类型。  type为\"scaling\"时，配置此参数。 
+        伸缩策略配置策略类型。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
         :param scale_strategy: The scale_strategy of this ConfigurationRequestDataSpec.
         :type scale_strategy: str
@@ -520,7 +520,7 @@ class ConfigurationRequestDataSpec:
     def max_replica_count(self):
         """Gets the max_replica_count of this ConfigurationRequestDataSpec.
 
-        伸缩策略配置最大伸缩个数。  type为\"scaling\"时，配置此参数。 
+        伸缩策略配置最大伸缩个数。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
         :return: The max_replica_count of this ConfigurationRequestDataSpec.
         :rtype: int
@@ -531,7 +531,7 @@ class ConfigurationRequestDataSpec:
     def max_replica_count(self, max_replica_count):
         """Sets the max_replica_count of this ConfigurationRequestDataSpec.
 
-        伸缩策略配置最大伸缩个数。  type为\"scaling\"时，配置此参数。 
+        伸缩策略配置最大伸缩个数。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
         :param max_replica_count: The max_replica_count of this ConfigurationRequestDataSpec.
         :type max_replica_count: int
@@ -542,7 +542,7 @@ class ConfigurationRequestDataSpec:
     def min_replica_count(self):
         """Gets the min_replica_count of this ConfigurationRequestDataSpec.
 
-        伸缩策略配置最小伸缩个数。  type为\"scaling\"时，配置此参数。 
+        伸缩策略配置最小伸缩个数。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
         :return: The min_replica_count of this ConfigurationRequestDataSpec.
         :rtype: int
@@ -553,7 +553,7 @@ class ConfigurationRequestDataSpec:
     def min_replica_count(self, min_replica_count):
         """Sets the min_replica_count of this ConfigurationRequestDataSpec.
 
-        伸缩策略配置最小伸缩个数。  type为\"scaling\"时，配置此参数。 
+        伸缩策略配置最小伸缩个数。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
         :param min_replica_count: The min_replica_count of this ConfigurationRequestDataSpec.
         :type min_replica_count: int
@@ -582,7 +582,7 @@ class ConfigurationRequestDataSpec:
     def triggers(self):
         """Gets the triggers of this ConfigurationRequestDataSpec.
 
-        伸缩策略配置触发器列表。  type为\"scaling\"时，配置此参数。 
+        伸缩策略配置触发器列表。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
         :return: The triggers of this ConfigurationRequestDataSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTrigger`]
@@ -593,7 +593,7 @@ class ConfigurationRequestDataSpec:
     def triggers(self, triggers):
         """Sets the triggers of this ConfigurationRequestDataSpec.
 
-        伸缩策略配置触发器列表。  type为\"scaling\"时，配置此参数。 
+        伸缩策略配置触发器列表。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
         :param triggers: The triggers of this ConfigurationRequestDataSpec.
         :type triggers: list[:class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTrigger`]
@@ -604,7 +604,7 @@ class ConfigurationRequestDataSpec:
     def volumes(self):
         """Gets the volumes of this ConfigurationRequestDataSpec.
 
-        云存储配置列表。  type为\"volume\"时，配置此参数。 
+        云存储配置列表。  ConfigurationItem.type为\"volume\"时，配置此参数。 
 
         :return: The volumes of this ConfigurationRequestDataSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationDataVolume`]
@@ -615,7 +615,7 @@ class ConfigurationRequestDataSpec:
     def volumes(self, volumes):
         """Sets the volumes of this ConfigurationRequestDataSpec.
 
-        云存储配置列表。  type为\"volume\"时，配置此参数。 
+        云存储配置列表。  ConfigurationItem.type为\"volume\"时，配置此参数。 
 
         :param volumes: The volumes of this ConfigurationRequestDataSpec.
         :type volumes: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationDataVolume`]
@@ -716,7 +716,7 @@ class ConfigurationRequestDataSpec:
     def log_paths(self):
         """Gets the log_paths of this ConfigurationRequestDataSpec.
 
-        自定义日志路径数组。  type为\"log\"时，配置此参数。 
+        自定义日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
 
         :return: The log_paths of this ConfigurationRequestDataSpec.
         :rtype: list[str]
@@ -727,7 +727,7 @@ class ConfigurationRequestDataSpec:
     def log_paths(self, log_paths):
         """Sets the log_paths of this ConfigurationRequestDataSpec.
 
-        自定义日志路径数组。  type为\"log\"时，配置此参数。 
+        自定义日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
 
         :param log_paths: The log_paths of this ConfigurationRequestDataSpec.
         :type log_paths: list[str]
@@ -738,7 +738,7 @@ class ConfigurationRequestDataSpec:
     def instrumentation(self):
         """Gets the instrumentation of this ConfigurationRequestDataSpec.
 
-        探针注入方式。  type为\"apm2\"时，配置此参数。 
+        探针注入方式。  ConfigurationItem.type为\"apm2\"时，配置此参数。 
 
         :return: The instrumentation of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -749,7 +749,7 @@ class ConfigurationRequestDataSpec:
     def instrumentation(self, instrumentation):
         """Sets the instrumentation of this ConfigurationRequestDataSpec.
 
-        探针注入方式。  type为\"apm2\"时，配置此参数。 
+        探针注入方式。  ConfigurationItem.type为\"apm2\"时，配置此参数。 
 
         :param instrumentation: The instrumentation of this ConfigurationRequestDataSpec.
         :type instrumentation: str
@@ -760,7 +760,7 @@ class ConfigurationRequestDataSpec:
     def path(self):
         """Gets the path of this ConfigurationRequestDataSpec.
 
-        自定义监控指标配置采集路径。  type为\"customMetric\"时，配置此参数。 
+        自定义监控指标配置采集路径。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
         :return: The path of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -771,7 +771,7 @@ class ConfigurationRequestDataSpec:
     def path(self, path):
         """Sets the path of this ConfigurationRequestDataSpec.
 
-        自定义监控指标配置采集路径。  type为\"customMetric\"时，配置此参数。 
+        自定义监控指标配置采集路径。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
         :param path: The path of this ConfigurationRequestDataSpec.
         :type path: str
@@ -782,7 +782,7 @@ class ConfigurationRequestDataSpec:
     def port(self):
         """Gets the port of this ConfigurationRequestDataSpec.
 
-        自定义监控指标配置采集端口。  type为\"customMetric\"时，配置此参数。 
+        自定义监控指标配置采集端口。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
         :return: The port of this ConfigurationRequestDataSpec.
         :rtype: str
@@ -793,7 +793,7 @@ class ConfigurationRequestDataSpec:
     def port(self, port):
         """Sets the port of this ConfigurationRequestDataSpec.
 
-        自定义监控指标配置采集端口。  type为\"customMetric\"时，配置此参数。 
+        自定义监控指标配置采集端口。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
         :param port: The port of this ConfigurationRequestDataSpec.
         :type port: str
@@ -804,7 +804,7 @@ class ConfigurationRequestDataSpec:
     def metrics(self):
         """Gets the metrics of this ConfigurationRequestDataSpec.
 
-        自定义监控指标配置指标名称。  type为\"customMetric\"时，配置此参数。 
+        自定义监控指标配置指标名称。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
         :return: The metrics of this ConfigurationRequestDataSpec.
         :rtype: list[str]
@@ -815,7 +815,7 @@ class ConfigurationRequestDataSpec:
     def metrics(self, metrics):
         """Sets the metrics of this ConfigurationRequestDataSpec.
 
-        自定义监控指标配置指标名称。  type为\"customMetric\"时，配置此参数。 
+        自定义监控指标配置指标名称。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
         :param metrics: The metrics of this ConfigurationRequestDataSpec.
         :type metrics: list[str]

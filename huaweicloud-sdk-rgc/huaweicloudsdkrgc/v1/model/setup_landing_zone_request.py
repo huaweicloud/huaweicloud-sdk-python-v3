@@ -15,61 +15,31 @@ class SetupLandingZoneRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('x_security_token')
 
     openapi_types = {
-        'x_security_token': 'str',
         'body': 'SetupLandingZoneReqBody'
     }
 
     attribute_map = {
-        'x_security_token': 'X-Security-Token',
         'body': 'body'
     }
 
-    def __init__(self, x_security_token=None, body=None):
+    def __init__(self, body=None):
         """SetupLandingZoneRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-        :type x_security_token: str
         :param body: Body of the SetupLandingZoneRequest
         :type body: :class:`huaweicloudsdkrgc.v1.SetupLandingZoneReqBody`
         """
         
         
 
-        self._x_security_token = None
         self._body = None
         self.discriminator = None
 
-        if x_security_token is not None:
-            self.x_security_token = x_security_token
         if body is not None:
             self.body = body
-
-    @property
-    def x_security_token(self):
-        """Gets the x_security_token of this SetupLandingZoneRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :return: The x_security_token of this SetupLandingZoneRequest.
-        :rtype: str
-        """
-        return self._x_security_token
-
-    @x_security_token.setter
-    def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this SetupLandingZoneRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :param x_security_token: The x_security_token of this SetupLandingZoneRequest.
-        :type x_security_token: str
-        """
-        self._x_security_token = x_security_token
 
     @property
     def body(self):

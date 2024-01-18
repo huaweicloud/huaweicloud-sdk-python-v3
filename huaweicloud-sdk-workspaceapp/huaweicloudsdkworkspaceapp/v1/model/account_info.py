@@ -41,17 +41,17 @@ class AccountInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 用户ID(或用户组ID)，根据 account_type 参数决定值类型 对于用户组类型，必须传入用户组ID &#x60;USER&#x60; - 用户ID &#x60;USER_GROUP&#x60; - 用户组ID
+        :param id: 用户ID(或用户组ID)，根据 account_type 参数决定值类型。 对于用户组类型，必须传入用户组ID。 &#x60;USER&#x60; - 用户ID。 &#x60;USER_GROUP&#x60; - 用户组ID。
         :type id: str
-        :param account: 用户名(或用户组名)，根据 account_type 参数决定值类型 &#x60;USER&#x60; - 用户名 &#x60;USER_GROUP&#x60; - 用户组名
+        :param account: 用户名(或用户组名)，根据 account_type 参数决定值类型。 &#x60;USER&#x60; - 用户名。 &#x60;USER_GROUP&#x60; - 用户组名。
         :type account: str
         :param account_type: 
         :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
-        :param domain: 域名城
+        :param domain: 域名城。
         :type domain: str
-        :param email: 邮箱
+        :param email: 邮箱。
         :type email: str
-        :param telephone_number: 手机
+        :param telephone_number: 手机。
         :type telephone_number: str
         :param platform_type: 
         :type platform_type: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
@@ -85,7 +85,7 @@ class AccountInfo:
     def id(self):
         """Gets the id of this AccountInfo.
 
-        用户ID(或用户组ID)，根据 account_type 参数决定值类型 对于用户组类型，必须传入用户组ID `USER` - 用户ID `USER_GROUP` - 用户组ID
+        用户ID(或用户组ID)，根据 account_type 参数决定值类型。 对于用户组类型，必须传入用户组ID。 `USER` - 用户ID。 `USER_GROUP` - 用户组ID。
 
         :return: The id of this AccountInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class AccountInfo:
     def id(self, id):
         """Sets the id of this AccountInfo.
 
-        用户ID(或用户组ID)，根据 account_type 参数决定值类型 对于用户组类型，必须传入用户组ID `USER` - 用户ID `USER_GROUP` - 用户组ID
+        用户ID(或用户组ID)，根据 account_type 参数决定值类型。 对于用户组类型，必须传入用户组ID。 `USER` - 用户ID。 `USER_GROUP` - 用户组ID。
 
         :param id: The id of this AccountInfo.
         :type id: str
@@ -107,7 +107,7 @@ class AccountInfo:
     def account(self):
         """Gets the account of this AccountInfo.
 
-        用户名(或用户组名)，根据 account_type 参数决定值类型 `USER` - 用户名 `USER_GROUP` - 用户组名
+        用户名(或用户组名)，根据 account_type 参数决定值类型。 `USER` - 用户名。 `USER_GROUP` - 用户组名。
 
         :return: The account of this AccountInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class AccountInfo:
     def account(self, account):
         """Sets the account of this AccountInfo.
 
-        用户名(或用户组名)，根据 account_type 参数决定值类型 `USER` - 用户名 `USER_GROUP` - 用户组名
+        用户名(或用户组名)，根据 account_type 参数决定值类型。 `USER` - 用户名。 `USER_GROUP` - 用户组名。
 
         :param account: The account of this AccountInfo.
         :type account: str
@@ -147,7 +147,7 @@ class AccountInfo:
     def domain(self):
         """Gets the domain of this AccountInfo.
 
-        域名城
+        域名城。
 
         :return: The domain of this AccountInfo.
         :rtype: str
@@ -158,7 +158,7 @@ class AccountInfo:
     def domain(self, domain):
         """Sets the domain of this AccountInfo.
 
-        域名城
+        域名城。
 
         :param domain: The domain of this AccountInfo.
         :type domain: str
@@ -169,7 +169,7 @@ class AccountInfo:
     def email(self):
         """Gets the email of this AccountInfo.
 
-        邮箱
+        邮箱。
 
         :return: The email of this AccountInfo.
         :rtype: str
@@ -180,7 +180,7 @@ class AccountInfo:
     def email(self, email):
         """Sets the email of this AccountInfo.
 
-        邮箱
+        邮箱。
 
         :param email: The email of this AccountInfo.
         :type email: str
@@ -191,7 +191,7 @@ class AccountInfo:
     def telephone_number(self):
         """Gets the telephone_number of this AccountInfo.
 
-        手机
+        手机。
 
         :return: The telephone_number of this AccountInfo.
         :rtype: str
@@ -202,7 +202,7 @@ class AccountInfo:
     def telephone_number(self, telephone_number):
         """Sets the telephone_number of this AccountInfo.
 
-        手机
+        手机。
 
         :param telephone_number: The telephone_number of this AccountInfo.
         :type telephone_number: str

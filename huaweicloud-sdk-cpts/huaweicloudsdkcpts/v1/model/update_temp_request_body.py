@@ -43,21 +43,21 @@ class UpdateTempRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 事务id
         :type id: int
-        :param project_id: project_id
+        :param project_id: 工程id
         :type project_id: int
-        :param name: name
+        :param name: 事务名称
         :type name: str
-        :param temp_type: temp_type
+        :param temp_type: 事务类型
         :type temp_type: int
-        :param description: description
+        :param description: 描述信息
         :type description: str
-        :param for_loop_params: for_loop_params
+        :param for_loop_params: 旧版本逻辑控制器字段，当前已未使用
         :type for_loop_params: list[object]
-        :param enable_pre: enable_pre
+        :param enable_pre: 是否启用预置事务，当前版本已未使用
         :type enable_pre: bool
-        :param contents: contents
+        :param contents: 事务脚本信息
         :type contents: list[:class:`huaweicloudsdkcpts.v1.TempContentInfo`]
         """
         
@@ -91,7 +91,7 @@ class UpdateTempRequestBody:
     def id(self):
         """Gets the id of this UpdateTempRequestBody.
 
-        id
+        事务id
 
         :return: The id of this UpdateTempRequestBody.
         :rtype: int
@@ -102,7 +102,7 @@ class UpdateTempRequestBody:
     def id(self, id):
         """Sets the id of this UpdateTempRequestBody.
 
-        id
+        事务id
 
         :param id: The id of this UpdateTempRequestBody.
         :type id: int
@@ -113,7 +113,7 @@ class UpdateTempRequestBody:
     def project_id(self):
         """Gets the project_id of this UpdateTempRequestBody.
 
-        project_id
+        工程id
 
         :return: The project_id of this UpdateTempRequestBody.
         :rtype: int
@@ -124,7 +124,7 @@ class UpdateTempRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this UpdateTempRequestBody.
 
-        project_id
+        工程id
 
         :param project_id: The project_id of this UpdateTempRequestBody.
         :type project_id: int
@@ -135,7 +135,7 @@ class UpdateTempRequestBody:
     def name(self):
         """Gets the name of this UpdateTempRequestBody.
 
-        name
+        事务名称
 
         :return: The name of this UpdateTempRequestBody.
         :rtype: str
@@ -146,7 +146,7 @@ class UpdateTempRequestBody:
     def name(self, name):
         """Sets the name of this UpdateTempRequestBody.
 
-        name
+        事务名称
 
         :param name: The name of this UpdateTempRequestBody.
         :type name: str
@@ -157,7 +157,7 @@ class UpdateTempRequestBody:
     def temp_type(self):
         """Gets the temp_type of this UpdateTempRequestBody.
 
-        temp_type
+        事务类型
 
         :return: The temp_type of this UpdateTempRequestBody.
         :rtype: int
@@ -168,7 +168,7 @@ class UpdateTempRequestBody:
     def temp_type(self, temp_type):
         """Sets the temp_type of this UpdateTempRequestBody.
 
-        temp_type
+        事务类型
 
         :param temp_type: The temp_type of this UpdateTempRequestBody.
         :type temp_type: int
@@ -179,7 +179,7 @@ class UpdateTempRequestBody:
     def description(self):
         """Gets the description of this UpdateTempRequestBody.
 
-        description
+        描述信息
 
         :return: The description of this UpdateTempRequestBody.
         :rtype: str
@@ -190,7 +190,7 @@ class UpdateTempRequestBody:
     def description(self, description):
         """Sets the description of this UpdateTempRequestBody.
 
-        description
+        描述信息
 
         :param description: The description of this UpdateTempRequestBody.
         :type description: str
@@ -201,7 +201,7 @@ class UpdateTempRequestBody:
     def for_loop_params(self):
         """Gets the for_loop_params of this UpdateTempRequestBody.
 
-        for_loop_params
+        旧版本逻辑控制器字段，当前已未使用
 
         :return: The for_loop_params of this UpdateTempRequestBody.
         :rtype: list[object]
@@ -212,7 +212,7 @@ class UpdateTempRequestBody:
     def for_loop_params(self, for_loop_params):
         """Sets the for_loop_params of this UpdateTempRequestBody.
 
-        for_loop_params
+        旧版本逻辑控制器字段，当前已未使用
 
         :param for_loop_params: The for_loop_params of this UpdateTempRequestBody.
         :type for_loop_params: list[object]
@@ -223,7 +223,7 @@ class UpdateTempRequestBody:
     def enable_pre(self):
         """Gets the enable_pre of this UpdateTempRequestBody.
 
-        enable_pre
+        是否启用预置事务，当前版本已未使用
 
         :return: The enable_pre of this UpdateTempRequestBody.
         :rtype: bool
@@ -234,7 +234,7 @@ class UpdateTempRequestBody:
     def enable_pre(self, enable_pre):
         """Sets the enable_pre of this UpdateTempRequestBody.
 
-        enable_pre
+        是否启用预置事务，当前版本已未使用
 
         :param enable_pre: The enable_pre of this UpdateTempRequestBody.
         :type enable_pre: bool
@@ -245,7 +245,7 @@ class UpdateTempRequestBody:
     def contents(self):
         """Gets the contents of this UpdateTempRequestBody.
 
-        contents
+        事务脚本信息
 
         :return: The contents of this UpdateTempRequestBody.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.TempContentInfo`]
@@ -256,7 +256,7 @@ class UpdateTempRequestBody:
     def contents(self, contents):
         """Sets the contents of this UpdateTempRequestBody.
 
-        contents
+        事务脚本信息
 
         :param contents: The contents of this UpdateTempRequestBody.
         :type contents: list[:class:`huaweicloudsdkcpts.v1.TempContentInfo`]

@@ -37,15 +37,15 @@ class CreateTaskRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: name
+        :param name: 名称
         :type name: str
-        :param project_id: project_id
+        :param project_id: 工程id
         :type project_id: int
-        :param temps: temps
+        :param temps: 事务信息
         :type temps: list[str]
-        :param operate_mode: operate_mode
+        :param operate_mode: 压力阶段模式，0：时长模式；1：次数模式；2：混合模式
         :type operate_mode: int
-        :param bench_concurrent: bench_concurrent
+        :param bench_concurrent: 基准并发
         :type bench_concurrent: int
         """
         
@@ -71,7 +71,7 @@ class CreateTaskRequestBody:
     def name(self):
         """Gets the name of this CreateTaskRequestBody.
 
-        name
+        名称
 
         :return: The name of this CreateTaskRequestBody.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateTaskRequestBody:
     def name(self, name):
         """Sets the name of this CreateTaskRequestBody.
 
-        name
+        名称
 
         :param name: The name of this CreateTaskRequestBody.
         :type name: str
@@ -93,7 +93,7 @@ class CreateTaskRequestBody:
     def project_id(self):
         """Gets the project_id of this CreateTaskRequestBody.
 
-        project_id
+        工程id
 
         :return: The project_id of this CreateTaskRequestBody.
         :rtype: int
@@ -104,7 +104,7 @@ class CreateTaskRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this CreateTaskRequestBody.
 
-        project_id
+        工程id
 
         :param project_id: The project_id of this CreateTaskRequestBody.
         :type project_id: int
@@ -115,7 +115,7 @@ class CreateTaskRequestBody:
     def temps(self):
         """Gets the temps of this CreateTaskRequestBody.
 
-        temps
+        事务信息
 
         :return: The temps of this CreateTaskRequestBody.
         :rtype: list[str]
@@ -126,7 +126,7 @@ class CreateTaskRequestBody:
     def temps(self, temps):
         """Sets the temps of this CreateTaskRequestBody.
 
-        temps
+        事务信息
 
         :param temps: The temps of this CreateTaskRequestBody.
         :type temps: list[str]
@@ -137,7 +137,7 @@ class CreateTaskRequestBody:
     def operate_mode(self):
         """Gets the operate_mode of this CreateTaskRequestBody.
 
-        operate_mode
+        压力阶段模式，0：时长模式；1：次数模式；2：混合模式
 
         :return: The operate_mode of this CreateTaskRequestBody.
         :rtype: int
@@ -148,7 +148,7 @@ class CreateTaskRequestBody:
     def operate_mode(self, operate_mode):
         """Sets the operate_mode of this CreateTaskRequestBody.
 
-        operate_mode
+        压力阶段模式，0：时长模式；1：次数模式；2：混合模式
 
         :param operate_mode: The operate_mode of this CreateTaskRequestBody.
         :type operate_mode: int
@@ -159,7 +159,7 @@ class CreateTaskRequestBody:
     def bench_concurrent(self):
         """Gets the bench_concurrent of this CreateTaskRequestBody.
 
-        bench_concurrent
+        基准并发
 
         :return: The bench_concurrent of this CreateTaskRequestBody.
         :rtype: int
@@ -170,7 +170,7 @@ class CreateTaskRequestBody:
     def bench_concurrent(self, bench_concurrent):
         """Sets the bench_concurrent of this CreateTaskRequestBody.
 
-        bench_concurrent
+        基准并发
 
         :param bench_concurrent: The bench_concurrent of this CreateTaskRequestBody.
         :type bench_concurrent: int

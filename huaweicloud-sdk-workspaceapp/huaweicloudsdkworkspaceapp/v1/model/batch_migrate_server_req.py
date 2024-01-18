@@ -31,9 +31,9 @@ class BatchMigrateServerReq:
 
         The model defined in huaweicloud sdk
 
-        :param server_ids: 应用服务器id集合
+        :param server_ids: 应用服务器id集合。
         :type server_ids: list[str]
-        :param host_id: 目标云办公主机id
+        :param host_id: 目标云办公主机id。
         :type host_id: str
         """
         
@@ -50,7 +50,7 @@ class BatchMigrateServerReq:
     def server_ids(self):
         """Gets the server_ids of this BatchMigrateServerReq.
 
-        应用服务器id集合
+        应用服务器id集合。
 
         :return: The server_ids of this BatchMigrateServerReq.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class BatchMigrateServerReq:
     def server_ids(self, server_ids):
         """Sets the server_ids of this BatchMigrateServerReq.
 
-        应用服务器id集合
+        应用服务器id集合。
 
         :param server_ids: The server_ids of this BatchMigrateServerReq.
         :type server_ids: list[str]
@@ -72,7 +72,7 @@ class BatchMigrateServerReq:
     def host_id(self):
         """Gets the host_id of this BatchMigrateServerReq.
 
-        目标云办公主机id
+        目标云办公主机id。
 
         :return: The host_id of this BatchMigrateServerReq.
         :rtype: str
@@ -83,7 +83,7 @@ class BatchMigrateServerReq:
     def host_id(self, host_id):
         """Sets the host_id of this BatchMigrateServerReq.
 
-        目标云办公主机id
+        目标云办公主机id。
 
         :param host_id: The host_id of this BatchMigrateServerReq.
         :type host_id: str

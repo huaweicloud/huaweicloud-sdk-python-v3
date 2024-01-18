@@ -35,9 +35,9 @@ class QuotaRemainderData:
 
         :param type: 
         :type type: :class:`huaweicloudsdkworkspaceapp.v1.QuotaResourceTypeEnum`
-        :param remainder: 剩余配额
+        :param remainder: 剩余配额。
         :type remainder: int
-        :param need: 所需配额
+        :param need: 所需配额。
         :type need: int
         """
         
@@ -77,7 +77,7 @@ class QuotaRemainderData:
     def remainder(self):
         """Gets the remainder of this QuotaRemainderData.
 
-        剩余配额
+        剩余配额。
 
         :return: The remainder of this QuotaRemainderData.
         :rtype: int
@@ -88,7 +88,7 @@ class QuotaRemainderData:
     def remainder(self, remainder):
         """Sets the remainder of this QuotaRemainderData.
 
-        剩余配额
+        剩余配额。
 
         :param remainder: The remainder of this QuotaRemainderData.
         :type remainder: int
@@ -99,7 +99,7 @@ class QuotaRemainderData:
     def need(self):
         """Gets the need of this QuotaRemainderData.
 
-        所需配额
+        所需配额。
 
         :return: The need of this QuotaRemainderData.
         :rtype: int
@@ -110,7 +110,7 @@ class QuotaRemainderData:
     def need(self, need):
         """Sets the need of this QuotaRemainderData.
 
-        所需配额
+        所需配额。
 
         :param need: The need of this QuotaRemainderData.
         :type need: int

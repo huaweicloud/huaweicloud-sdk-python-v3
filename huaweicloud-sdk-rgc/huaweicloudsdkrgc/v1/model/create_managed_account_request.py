@@ -48,9 +48,9 @@ class CreateManagedAccountRequest:
 
         The model defined in huaweicloud sdk
 
-        :param account_name: 账号名。
+        :param account_name: 纳管账号名。
         :type account_name: str
-        :param account_email: 账号邮箱。
+        :param account_email: 纳管账号邮箱。
         :type account_email: str
         :param phone: 手机号码。
         :type phone: str
@@ -58,9 +58,9 @@ class CreateManagedAccountRequest:
         :type identity_store_user_name: str
         :param identity_store_email: Identity Center邮箱。
         :type identity_store_email: str
-        :param parent_organization_unit_id: 父OU ID。
+        :param parent_organization_unit_id: 父注册OU ID。
         :type parent_organization_unit_id: str
-        :param parent_organization_unit_name: 父OU名称。
+        :param parent_organization_unit_name: 父注册OU名称。
         :type parent_organization_unit_name: str
         :param blueprint: 
         :type blueprint: :class:`huaweicloudsdkrgc.v1.Blueprint`
@@ -79,7 +79,8 @@ class CreateManagedAccountRequest:
         self.discriminator = None
 
         self.account_name = account_name
-        self.account_email = account_email
+        if account_email is not None:
+            self.account_email = account_email
         if phone is not None:
             self.phone = phone
         self.identity_store_user_name = identity_store_user_name
@@ -93,7 +94,7 @@ class CreateManagedAccountRequest:
     def account_name(self):
         """Gets the account_name of this CreateManagedAccountRequest.
 
-        账号名。
+        纳管账号名。
 
         :return: The account_name of this CreateManagedAccountRequest.
         :rtype: str
@@ -104,7 +105,7 @@ class CreateManagedAccountRequest:
     def account_name(self, account_name):
         """Sets the account_name of this CreateManagedAccountRequest.
 
-        账号名。
+        纳管账号名。
 
         :param account_name: The account_name of this CreateManagedAccountRequest.
         :type account_name: str
@@ -115,7 +116,7 @@ class CreateManagedAccountRequest:
     def account_email(self):
         """Gets the account_email of this CreateManagedAccountRequest.
 
-        账号邮箱。
+        纳管账号邮箱。
 
         :return: The account_email of this CreateManagedAccountRequest.
         :rtype: str
@@ -126,7 +127,7 @@ class CreateManagedAccountRequest:
     def account_email(self, account_email):
         """Sets the account_email of this CreateManagedAccountRequest.
 
-        账号邮箱。
+        纳管账号邮箱。
 
         :param account_email: The account_email of this CreateManagedAccountRequest.
         :type account_email: str
@@ -203,7 +204,7 @@ class CreateManagedAccountRequest:
     def parent_organization_unit_id(self):
         """Gets the parent_organization_unit_id of this CreateManagedAccountRequest.
 
-        父OU ID。
+        父注册OU ID。
 
         :return: The parent_organization_unit_id of this CreateManagedAccountRequest.
         :rtype: str
@@ -214,7 +215,7 @@ class CreateManagedAccountRequest:
     def parent_organization_unit_id(self, parent_organization_unit_id):
         """Sets the parent_organization_unit_id of this CreateManagedAccountRequest.
 
-        父OU ID。
+        父注册OU ID。
 
         :param parent_organization_unit_id: The parent_organization_unit_id of this CreateManagedAccountRequest.
         :type parent_organization_unit_id: str
@@ -225,7 +226,7 @@ class CreateManagedAccountRequest:
     def parent_organization_unit_name(self):
         """Gets the parent_organization_unit_name of this CreateManagedAccountRequest.
 
-        父OU名称。
+        父注册OU名称。
 
         :return: The parent_organization_unit_name of this CreateManagedAccountRequest.
         :rtype: str
@@ -236,7 +237,7 @@ class CreateManagedAccountRequest:
     def parent_organization_unit_name(self, parent_organization_unit_name):
         """Sets the parent_organization_unit_name of this CreateManagedAccountRequest.
 
-        父OU名称。
+        父注册OU名称。
 
         :param parent_organization_unit_name: The parent_organization_unit_name of this CreateManagedAccountRequest.
         :type parent_organization_unit_name: str

@@ -37,11 +37,11 @@ class CreateAppGroupReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成 2. 长度范围1~64个字符
+        :param name: 应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
         :type name: str
-        :param app_server_group_id: 应用服务器组ID
+        :param app_server_group_id: 应用服务器组ID。
         :type app_server_group_id: str
-        :param description: 应用组描述
+        :param description: 应用组描述。
         :type description: str
         :param authorization_type: 
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -72,7 +72,7 @@ class CreateAppGroupReq:
     def name(self):
         """Gets the name of this CreateAppGroupReq.
 
-        应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成 2. 长度范围1~64个字符
+        应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
         :return: The name of this CreateAppGroupReq.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateAppGroupReq:
     def name(self, name):
         """Sets the name of this CreateAppGroupReq.
 
-        应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成 2. 长度范围1~64个字符
+        应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
         :param name: The name of this CreateAppGroupReq.
         :type name: str
@@ -94,7 +94,7 @@ class CreateAppGroupReq:
     def app_server_group_id(self):
         """Gets the app_server_group_id of this CreateAppGroupReq.
 
-        应用服务器组ID
+        应用服务器组ID。
 
         :return: The app_server_group_id of this CreateAppGroupReq.
         :rtype: str
@@ -105,7 +105,7 @@ class CreateAppGroupReq:
     def app_server_group_id(self, app_server_group_id):
         """Sets the app_server_group_id of this CreateAppGroupReq.
 
-        应用服务器组ID
+        应用服务器组ID。
 
         :param app_server_group_id: The app_server_group_id of this CreateAppGroupReq.
         :type app_server_group_id: str
@@ -116,7 +116,7 @@ class CreateAppGroupReq:
     def description(self):
         """Gets the description of this CreateAppGroupReq.
 
-        应用组描述
+        应用组描述。
 
         :return: The description of this CreateAppGroupReq.
         :rtype: str
@@ -127,7 +127,7 @@ class CreateAppGroupReq:
     def description(self, description):
         """Sets the description of this CreateAppGroupReq.
 
-        应用组描述
+        应用组描述。
 
         :param description: The description of this CreateAppGroupReq.
         :type description: str

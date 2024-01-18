@@ -30,7 +30,7 @@ class ListSessionTypeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param session_types: 会话列表
+        :param session_types: 会话列表。
         :type session_types: list[:class:`huaweicloudsdkworkspaceapp.v1.SessionTypeEntity`]
         """
         
@@ -46,7 +46,7 @@ class ListSessionTypeResponse(SdkResponse):
     def session_types(self):
         """Gets the session_types of this ListSessionTypeResponse.
 
-        会话列表
+        会话列表。
 
         :return: The session_types of this ListSessionTypeResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.SessionTypeEntity`]
@@ -57,7 +57,7 @@ class ListSessionTypeResponse(SdkResponse):
     def session_types(self, session_types):
         """Sets the session_types of this ListSessionTypeResponse.
 
-        会话列表
+        会话列表。
 
         :param session_types: The session_types of this ListSessionTypeResponse.
         :type session_types: list[:class:`huaweicloudsdkworkspaceapp.v1.SessionTypeEntity`]
