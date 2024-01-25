@@ -43,7 +43,8 @@ class InstanceRequest:
         'tags': 'list[TagWithKeyValue]',
         'unchangeable_param': 'UnchangeableParam',
         'dry_run': 'bool',
-        'count': 'int'
+        'count': 'int',
+        'serverless_info': 'ServerlessInfo'
     }
 
     attribute_map = {
@@ -73,10 +74,11 @@ class InstanceRequest:
         'tags': 'tags',
         'unchangeable_param': 'unchangeable_param',
         'dry_run': 'dry_run',
-        'count': 'count'
+        'count': 'count',
+        'serverless_info': 'serverless_info'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, dry_run=None, count=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, dry_run=None, count=None, serverless_info=None):
         """InstanceRequest
 
         The model defined in huaweicloud sdk
@@ -135,6 +137,8 @@ class InstanceRequest:
         :type dry_run: bool
         :param count: 批量创建实例的数量，取值范围为1~50。
         :type count: int
+        :param serverless_info: 
+        :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
         """
         
         
@@ -166,6 +170,7 @@ class InstanceRequest:
         self._unchangeable_param = None
         self._dry_run = None
         self._count = None
+        self._serverless_info = None
         self.discriminator = None
 
         self.name = name
@@ -213,6 +218,8 @@ class InstanceRequest:
             self.dry_run = dry_run
         if count is not None:
             self.count = count
+        if serverless_info is not None:
+            self.serverless_info = serverless_info
 
     @property
     def name(self):
@@ -779,6 +786,24 @@ class InstanceRequest:
         :type count: int
         """
         self._count = count
+
+    @property
+    def serverless_info(self):
+        """Gets the serverless_info of this InstanceRequest.
+
+        :return: The serverless_info of this InstanceRequest.
+        :rtype: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
+        """
+        return self._serverless_info
+
+    @serverless_info.setter
+    def serverless_info(self, serverless_info):
+        """Sets the serverless_info of this InstanceRequest.
+
+        :param serverless_info: The serverless_info of this InstanceRequest.
+        :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
+        """
+        self._serverless_info = serverless_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

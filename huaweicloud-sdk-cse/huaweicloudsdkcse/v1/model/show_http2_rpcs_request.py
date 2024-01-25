@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListHostsResponse(SdkResponse):
+class ShowHttp2RpcsRequest:
 
     """
     Attributes:
@@ -18,80 +17,79 @@ class ListHostsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_num': 'int',
-        'data_list': 'list[Host]'
+        'gateway_id': 'str',
+        'accept': 'str'
     }
 
     attribute_map = {
-        'total_num': 'total_num',
-        'data_list': 'data_list'
+        'gateway_id': 'gateway_id',
+        'accept': 'Accept'
     }
 
-    def __init__(self, total_num=None, data_list=None):
-        """ListHostsResponse
+    def __init__(self, gateway_id=None, accept=None):
+        """ShowHttp2RpcsRequest
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
-        :type total_num: int
-        :param data_list: 查询弹性云服务器状态列表
-        :type data_list: list[:class:`huaweicloudsdkhss.v1.Host`]
+        :param gateway_id: 网关实例id
+        :type gateway_id: str
+        :param accept: 该字段内容填为 \&quot;application/json\&quot;
+        :type accept: str
         """
         
-        super(ListHostsResponse, self).__init__()
+        
 
-        self._total_num = None
-        self._data_list = None
+        self._gateway_id = None
+        self._accept = None
         self.discriminator = None
 
-        if total_num is not None:
-            self.total_num = total_num
-        if data_list is not None:
-            self.data_list = data_list
+        self.gateway_id = gateway_id
+        if accept is not None:
+            self.accept = accept
 
     @property
-    def total_num(self):
-        """Gets the total_num of this ListHostsResponse.
+    def gateway_id(self):
+        """Gets the gateway_id of this ShowHttp2RpcsRequest.
 
-        总数
+        网关实例id
 
-        :return: The total_num of this ListHostsResponse.
-        :rtype: int
+        :return: The gateway_id of this ShowHttp2RpcsRequest.
+        :rtype: str
         """
-        return self._total_num
+        return self._gateway_id
 
-    @total_num.setter
-    def total_num(self, total_num):
-        """Sets the total_num of this ListHostsResponse.
+    @gateway_id.setter
+    def gateway_id(self, gateway_id):
+        """Sets the gateway_id of this ShowHttp2RpcsRequest.
 
-        总数
+        网关实例id
 
-        :param total_num: The total_num of this ListHostsResponse.
-        :type total_num: int
+        :param gateway_id: The gateway_id of this ShowHttp2RpcsRequest.
+        :type gateway_id: str
         """
-        self._total_num = total_num
+        self._gateway_id = gateway_id
 
     @property
-    def data_list(self):
-        """Gets the data_list of this ListHostsResponse.
+    def accept(self):
+        """Gets the accept of this ShowHttp2RpcsRequest.
 
-        查询弹性云服务器状态列表
+        该字段内容填为 \"application/json\"
 
-        :return: The data_list of this ListHostsResponse.
-        :rtype: list[:class:`huaweicloudsdkhss.v1.Host`]
+        :return: The accept of this ShowHttp2RpcsRequest.
+        :rtype: str
         """
-        return self._data_list
+        return self._accept
 
-    @data_list.setter
-    def data_list(self, data_list):
-        """Sets the data_list of this ListHostsResponse.
+    @accept.setter
+    def accept(self, accept):
+        """Sets the accept of this ShowHttp2RpcsRequest.
 
-        查询弹性云服务器状态列表
+        该字段内容填为 \"application/json\"
 
-        :param data_list: The data_list of this ListHostsResponse.
-        :type data_list: list[:class:`huaweicloudsdkhss.v1.Host`]
+        :param accept: The accept of this ShowHttp2RpcsRequest.
+        :type accept: str
         """
-        self._data_list = data_list
+        self._accept = accept
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -135,7 +133,7 @@ class ListHostsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListHostsResponse):
+        if not isinstance(other, ShowHttp2RpcsRequest):
             return False
 
         return self.__dict__ == other.__dict__

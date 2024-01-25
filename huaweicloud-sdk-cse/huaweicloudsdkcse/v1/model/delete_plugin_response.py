@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateCertificateRequest:
+class DeletePluginResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,47 +18,20 @@ class CreateCertificateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CertificateBody'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
-        """CreateCertificateRequest
+    def __init__(self):
+        """DeletePluginResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: Body of the CreateCertificateRequest
-        :type body: :class:`huaweicloudsdkaad.v1.CertificateBody`
         """
         
-        
-
-        self._body = None
+        super(DeletePluginResponse, self).__init__()
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        """Gets the body of this CreateCertificateRequest.
-
-        :return: The body of this CreateCertificateRequest.
-        :rtype: :class:`huaweicloudsdkaad.v1.CertificateBody`
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateCertificateRequest.
-
-        :param body: The body of this CreateCertificateRequest.
-        :type body: :class:`huaweicloudsdkaad.v1.CertificateBody`
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -101,7 +75,7 @@ class CreateCertificateRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateCertificateRequest):
+        if not isinstance(other, DeletePluginResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -41,7 +41,7 @@ class CreateVariableRequestBody:
         :type id: int
         :param name: 变量名称
         :type name: str
-        :param variable_type: 变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
+        :param variable_type: 变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)
         :type variable_type: int
         :param variable: 变量值
         :type variable: list[object]
@@ -112,7 +112,7 @@ class CreateVariableRequestBody:
     def variable_type(self):
         """Gets the variable_type of this CreateVariableRequestBody.
 
-        变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
+        变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)
 
         :return: The variable_type of this CreateVariableRequestBody.
         :rtype: int
@@ -123,7 +123,7 @@ class CreateVariableRequestBody:
     def variable_type(self, variable_type):
         """Sets the variable_type of this CreateVariableRequestBody.
 
-        变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
+        变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)
 
         :param variable_type: The variable_type of this CreateVariableRequestBody.
         :type variable_type: int

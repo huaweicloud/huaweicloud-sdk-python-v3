@@ -71,7 +71,7 @@ class PrePaidServerDataVolume:
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerDataVolumeExtendParam`
         :param cluster_type: 云服务器数据盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
         :type cluster_type: str
-        :param cluster_id: 数据镜像的ID，UUID格式。
+        :param cluster_id: 云服务器数据盘对应的存储池的ID。
         :type cluster_id: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkecs.v2.PrePaidServerDataVolumeMetadata`
@@ -321,7 +321,7 @@ class PrePaidServerDataVolume:
     def cluster_id(self):
         """Gets the cluster_id of this PrePaidServerDataVolume.
 
-        数据镜像的ID，UUID格式。
+        云服务器数据盘对应的存储池的ID。
 
         :return: The cluster_id of this PrePaidServerDataVolume.
         :rtype: str
@@ -332,7 +332,7 @@ class PrePaidServerDataVolume:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this PrePaidServerDataVolume.
 
-        数据镜像的ID，UUID格式。
+        云服务器数据盘对应的存储池的ID。
 
         :param cluster_id: The cluster_id of this PrePaidServerDataVolume.
         :type cluster_id: str

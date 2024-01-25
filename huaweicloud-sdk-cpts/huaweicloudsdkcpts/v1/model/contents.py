@@ -53,7 +53,7 @@ class Contents:
         :type selected_temp_name: str
         :param data: 数据（循环、条件控制器作用的数据）
         :type data: object
-        :param data_type: 类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
+        :param data_type: 数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
         :type data_type: int
         :param conditions: 若类型为202:条件指令，该字段为条件配置
         :type conditions: object
@@ -204,7 +204,7 @@ class Contents:
     def data_type(self):
         """Gets the data_type of this Contents.
 
-        类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
+        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
         :return: The data_type of this Contents.
         :rtype: int
@@ -215,7 +215,7 @@ class Contents:
     def data_type(self, data_type):
         """Sets the data_type of this Contents.
 
-        类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
+        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
         :param data_type: The data_type of this Contents.
         :type data_type: int

@@ -54,6 +54,8 @@ class DcsRegion:
                         "https://dcs.me-east-1.myhuaweicloud.com")
     EU_WEST_0 = Region("eu-west-0",
                         "https://dcs.eu-west-0.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://dcs.cn-east-5.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -80,6 +82,7 @@ class DcsRegion:
         "eu-west-101": EU_WEST_101,
         "me-east-1": ME_EAST_1,
         "eu-west-0": EU_WEST_0,
+        "cn-east-5": CN_EAST_5,
     }
 
     @classmethod

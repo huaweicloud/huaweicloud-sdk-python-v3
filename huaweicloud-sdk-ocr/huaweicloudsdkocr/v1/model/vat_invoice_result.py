@@ -51,8 +51,26 @@ class VatInvoiceResult:
         'issuer': 'str',
         'seller_seal': 'list[str]',
         'item_list': 'list[ItemList]',
+        'province': 'str',
+        'city': 'str',
         'confidence': 'object',
-        'text_location': 'object'
+        'text_location': 'object',
+        'belong_buyer_name': 'str',
+        'belong_seller_name': 'str',
+        'belong_vat_code': 'str',
+        'belong_number': 'str',
+        'belong_pages': 'str',
+        'belong_current_page': 'str',
+        'belong_remarks': 'str',
+        'belong_issue_date': 'str',
+        'sales_mark': 'bool',
+        'belong_sum_amount': 'str',
+        'belong_sum_tax': 'str',
+        'belong_subtotal_amount': 'str',
+        'belong_subtotal_tax': 'str',
+        'belong_discount_amount': 'str',
+        'belong_discount_tax': 'str',
+        'belong_item_list': 'list[BelongItemList]'
     }
 
     attribute_map = {
@@ -90,11 +108,29 @@ class VatInvoiceResult:
         'issuer': 'issuer',
         'seller_seal': 'seller_seal',
         'item_list': 'item_list',
+        'province': 'province',
+        'city': 'city',
         'confidence': 'confidence',
-        'text_location': 'text_location'
+        'text_location': 'text_location',
+        'belong_buyer_name': 'belong_buyer_name',
+        'belong_seller_name': 'belong_seller_name',
+        'belong_vat_code': 'belong_vat_code',
+        'belong_number': 'belong_number',
+        'belong_pages': 'belong_pages',
+        'belong_current_page': 'belong_current_page',
+        'belong_remarks': 'belong_remarks',
+        'belong_issue_date': 'belong_issue_date',
+        'sales_mark': 'sales_mark',
+        'belong_sum_amount': 'belong_sum_amount',
+        'belong_sum_tax': 'belong_sum_tax',
+        'belong_subtotal_amount': 'belong_subtotal_amount',
+        'belong_subtotal_tax': 'belong_subtotal_tax',
+        'belong_discount_amount': 'belong_discount_amount',
+        'belong_discount_tax': 'belong_discount_tax',
+        'belong_item_list': 'belong_item_list'
     }
 
-    def __init__(self, title=None, type=None, invoice_tag=None, sum_amount=None, sum_tax=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
+    def __init__(self, title=None, type=None, invoice_tag=None, sum_amount=None, sum_tax=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, province=None, city=None, confidence=None, text_location=None, belong_buyer_name=None, belong_seller_name=None, belong_vat_code=None, belong_number=None, belong_pages=None, belong_current_page=None, belong_remarks=None, belong_issue_date=None, sales_mark=None, belong_sum_amount=None, belong_sum_tax=None, belong_subtotal_amount=None, belong_subtotal_tax=None, belong_discount_amount=None, belong_discount_tax=None, belong_item_list=None):
         """VatInvoiceResult
 
         The model defined in huaweicloud sdk
@@ -167,10 +203,46 @@ class VatInvoiceResult:
         :type seller_seal: list[str]
         :param item_list: 货物或应税劳务列表。 
         :type item_list: list[:class:`huaweicloudsdkocr.v1.ItemList`]
+        :param province: 省。 
+        :type province: str
+        :param city: 市。 
+        :type city: str
         :param confidence: 各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
         :type confidence: object
         :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
         :type text_location: object
+        :param belong_buyer_name: 销货清单的购买方名称。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_buyer_name: str
+        :param belong_seller_name: 销货清单的销售方名称。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_seller_name: str
+        :param belong_vat_code: 所属的增值税发票代码。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_vat_code: str
+        :param belong_number: 销货清单的开票号码。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_number: str
+        :param belong_pages: 销货清单的总页码数。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_pages: str
+        :param belong_current_page: 销货清单的当前页码。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_current_page: str
+        :param belong_remarks: 销货清单的备注。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_remarks: str
+        :param belong_issue_date: 销货清单的填开日期。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_issue_date: str
+        :param sales_mark: 是否是销货清单，可选值为： - true：输入图片是销货清单。 - false：输入图片不是销货清单。 
+        :type sales_mark: bool
+        :param belong_sum_amount: 销货清单的小计金额。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_sum_amount: str
+        :param belong_sum_tax: 销货清单的小计税额。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_sum_tax: str
+        :param belong_subtotal_amount: 销货清单的总计或者合计金额。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_subtotal_amount: str
+        :param belong_subtotal_tax: 销货清单的总计税额。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_subtotal_tax: str
+        :param belong_discount_amount: 销货清单的折扣金额。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_discount_amount: str
+        :param belong_discount_tax: 销货清单的折扣税额。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_discount_tax: str
+        :param belong_item_list: 销货清单的货物（劳务）名称列表。 当传入图片为发票销货清单时返回此字段。 
+        :type belong_item_list: list[:class:`huaweicloudsdkocr.v1.BelongItemList`]
         """
         
         
@@ -209,8 +281,26 @@ class VatInvoiceResult:
         self._issuer = None
         self._seller_seal = None
         self._item_list = None
+        self._province = None
+        self._city = None
         self._confidence = None
         self._text_location = None
+        self._belong_buyer_name = None
+        self._belong_seller_name = None
+        self._belong_vat_code = None
+        self._belong_number = None
+        self._belong_pages = None
+        self._belong_current_page = None
+        self._belong_remarks = None
+        self._belong_issue_date = None
+        self._sales_mark = None
+        self._belong_sum_amount = None
+        self._belong_sum_tax = None
+        self._belong_subtotal_amount = None
+        self._belong_subtotal_tax = None
+        self._belong_discount_amount = None
+        self._belong_discount_tax = None
+        self._belong_item_list = None
         self.discriminator = None
 
         if title is not None:
@@ -281,10 +371,46 @@ class VatInvoiceResult:
             self.seller_seal = seller_seal
         if item_list is not None:
             self.item_list = item_list
+        if province is not None:
+            self.province = province
+        if city is not None:
+            self.city = city
         if confidence is not None:
             self.confidence = confidence
         if text_location is not None:
             self.text_location = text_location
+        if belong_buyer_name is not None:
+            self.belong_buyer_name = belong_buyer_name
+        if belong_seller_name is not None:
+            self.belong_seller_name = belong_seller_name
+        if belong_vat_code is not None:
+            self.belong_vat_code = belong_vat_code
+        if belong_number is not None:
+            self.belong_number = belong_number
+        if belong_pages is not None:
+            self.belong_pages = belong_pages
+        if belong_current_page is not None:
+            self.belong_current_page = belong_current_page
+        if belong_remarks is not None:
+            self.belong_remarks = belong_remarks
+        if belong_issue_date is not None:
+            self.belong_issue_date = belong_issue_date
+        if sales_mark is not None:
+            self.sales_mark = sales_mark
+        if belong_sum_amount is not None:
+            self.belong_sum_amount = belong_sum_amount
+        if belong_sum_tax is not None:
+            self.belong_sum_tax = belong_sum_tax
+        if belong_subtotal_amount is not None:
+            self.belong_subtotal_amount = belong_subtotal_amount
+        if belong_subtotal_tax is not None:
+            self.belong_subtotal_tax = belong_subtotal_tax
+        if belong_discount_amount is not None:
+            self.belong_discount_amount = belong_discount_amount
+        if belong_discount_tax is not None:
+            self.belong_discount_tax = belong_discount_tax
+        if belong_item_list is not None:
+            self.belong_item_list = belong_item_list
 
     @property
     def title(self):
@@ -1035,6 +1161,50 @@ class VatInvoiceResult:
         self._item_list = item_list
 
     @property
+    def province(self):
+        """Gets the province of this VatInvoiceResult.
+
+        省。 
+
+        :return: The province of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._province
+
+    @province.setter
+    def province(self, province):
+        """Sets the province of this VatInvoiceResult.
+
+        省。 
+
+        :param province: The province of this VatInvoiceResult.
+        :type province: str
+        """
+        self._province = province
+
+    @property
+    def city(self):
+        """Gets the city of this VatInvoiceResult.
+
+        市。 
+
+        :return: The city of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._city
+
+    @city.setter
+    def city(self, city):
+        """Sets the city of this VatInvoiceResult.
+
+        市。 
+
+        :param city: The city of this VatInvoiceResult.
+        :type city: str
+        """
+        self._city = city
+
+    @property
     def confidence(self):
         """Gets the confidence of this VatInvoiceResult.
 
@@ -1077,6 +1247,358 @@ class VatInvoiceResult:
         :type text_location: object
         """
         self._text_location = text_location
+
+    @property
+    def belong_buyer_name(self):
+        """Gets the belong_buyer_name of this VatInvoiceResult.
+
+        销货清单的购买方名称。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_buyer_name of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_buyer_name
+
+    @belong_buyer_name.setter
+    def belong_buyer_name(self, belong_buyer_name):
+        """Sets the belong_buyer_name of this VatInvoiceResult.
+
+        销货清单的购买方名称。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_buyer_name: The belong_buyer_name of this VatInvoiceResult.
+        :type belong_buyer_name: str
+        """
+        self._belong_buyer_name = belong_buyer_name
+
+    @property
+    def belong_seller_name(self):
+        """Gets the belong_seller_name of this VatInvoiceResult.
+
+        销货清单的销售方名称。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_seller_name of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_seller_name
+
+    @belong_seller_name.setter
+    def belong_seller_name(self, belong_seller_name):
+        """Sets the belong_seller_name of this VatInvoiceResult.
+
+        销货清单的销售方名称。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_seller_name: The belong_seller_name of this VatInvoiceResult.
+        :type belong_seller_name: str
+        """
+        self._belong_seller_name = belong_seller_name
+
+    @property
+    def belong_vat_code(self):
+        """Gets the belong_vat_code of this VatInvoiceResult.
+
+        所属的增值税发票代码。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_vat_code of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_vat_code
+
+    @belong_vat_code.setter
+    def belong_vat_code(self, belong_vat_code):
+        """Sets the belong_vat_code of this VatInvoiceResult.
+
+        所属的增值税发票代码。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_vat_code: The belong_vat_code of this VatInvoiceResult.
+        :type belong_vat_code: str
+        """
+        self._belong_vat_code = belong_vat_code
+
+    @property
+    def belong_number(self):
+        """Gets the belong_number of this VatInvoiceResult.
+
+        销货清单的开票号码。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_number of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_number
+
+    @belong_number.setter
+    def belong_number(self, belong_number):
+        """Sets the belong_number of this VatInvoiceResult.
+
+        销货清单的开票号码。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_number: The belong_number of this VatInvoiceResult.
+        :type belong_number: str
+        """
+        self._belong_number = belong_number
+
+    @property
+    def belong_pages(self):
+        """Gets the belong_pages of this VatInvoiceResult.
+
+        销货清单的总页码数。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_pages of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_pages
+
+    @belong_pages.setter
+    def belong_pages(self, belong_pages):
+        """Sets the belong_pages of this VatInvoiceResult.
+
+        销货清单的总页码数。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_pages: The belong_pages of this VatInvoiceResult.
+        :type belong_pages: str
+        """
+        self._belong_pages = belong_pages
+
+    @property
+    def belong_current_page(self):
+        """Gets the belong_current_page of this VatInvoiceResult.
+
+        销货清单的当前页码。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_current_page of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_current_page
+
+    @belong_current_page.setter
+    def belong_current_page(self, belong_current_page):
+        """Sets the belong_current_page of this VatInvoiceResult.
+
+        销货清单的当前页码。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_current_page: The belong_current_page of this VatInvoiceResult.
+        :type belong_current_page: str
+        """
+        self._belong_current_page = belong_current_page
+
+    @property
+    def belong_remarks(self):
+        """Gets the belong_remarks of this VatInvoiceResult.
+
+        销货清单的备注。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_remarks of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_remarks
+
+    @belong_remarks.setter
+    def belong_remarks(self, belong_remarks):
+        """Sets the belong_remarks of this VatInvoiceResult.
+
+        销货清单的备注。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_remarks: The belong_remarks of this VatInvoiceResult.
+        :type belong_remarks: str
+        """
+        self._belong_remarks = belong_remarks
+
+    @property
+    def belong_issue_date(self):
+        """Gets the belong_issue_date of this VatInvoiceResult.
+
+        销货清单的填开日期。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_issue_date of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_issue_date
+
+    @belong_issue_date.setter
+    def belong_issue_date(self, belong_issue_date):
+        """Sets the belong_issue_date of this VatInvoiceResult.
+
+        销货清单的填开日期。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_issue_date: The belong_issue_date of this VatInvoiceResult.
+        :type belong_issue_date: str
+        """
+        self._belong_issue_date = belong_issue_date
+
+    @property
+    def sales_mark(self):
+        """Gets the sales_mark of this VatInvoiceResult.
+
+        是否是销货清单，可选值为： - true：输入图片是销货清单。 - false：输入图片不是销货清单。 
+
+        :return: The sales_mark of this VatInvoiceResult.
+        :rtype: bool
+        """
+        return self._sales_mark
+
+    @sales_mark.setter
+    def sales_mark(self, sales_mark):
+        """Sets the sales_mark of this VatInvoiceResult.
+
+        是否是销货清单，可选值为： - true：输入图片是销货清单。 - false：输入图片不是销货清单。 
+
+        :param sales_mark: The sales_mark of this VatInvoiceResult.
+        :type sales_mark: bool
+        """
+        self._sales_mark = sales_mark
+
+    @property
+    def belong_sum_amount(self):
+        """Gets the belong_sum_amount of this VatInvoiceResult.
+
+        销货清单的小计金额。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_sum_amount of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_sum_amount
+
+    @belong_sum_amount.setter
+    def belong_sum_amount(self, belong_sum_amount):
+        """Sets the belong_sum_amount of this VatInvoiceResult.
+
+        销货清单的小计金额。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_sum_amount: The belong_sum_amount of this VatInvoiceResult.
+        :type belong_sum_amount: str
+        """
+        self._belong_sum_amount = belong_sum_amount
+
+    @property
+    def belong_sum_tax(self):
+        """Gets the belong_sum_tax of this VatInvoiceResult.
+
+        销货清单的小计税额。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_sum_tax of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_sum_tax
+
+    @belong_sum_tax.setter
+    def belong_sum_tax(self, belong_sum_tax):
+        """Sets the belong_sum_tax of this VatInvoiceResult.
+
+        销货清单的小计税额。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_sum_tax: The belong_sum_tax of this VatInvoiceResult.
+        :type belong_sum_tax: str
+        """
+        self._belong_sum_tax = belong_sum_tax
+
+    @property
+    def belong_subtotal_amount(self):
+        """Gets the belong_subtotal_amount of this VatInvoiceResult.
+
+        销货清单的总计或者合计金额。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_subtotal_amount of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_subtotal_amount
+
+    @belong_subtotal_amount.setter
+    def belong_subtotal_amount(self, belong_subtotal_amount):
+        """Sets the belong_subtotal_amount of this VatInvoiceResult.
+
+        销货清单的总计或者合计金额。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_subtotal_amount: The belong_subtotal_amount of this VatInvoiceResult.
+        :type belong_subtotal_amount: str
+        """
+        self._belong_subtotal_amount = belong_subtotal_amount
+
+    @property
+    def belong_subtotal_tax(self):
+        """Gets the belong_subtotal_tax of this VatInvoiceResult.
+
+        销货清单的总计税额。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_subtotal_tax of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_subtotal_tax
+
+    @belong_subtotal_tax.setter
+    def belong_subtotal_tax(self, belong_subtotal_tax):
+        """Sets the belong_subtotal_tax of this VatInvoiceResult.
+
+        销货清单的总计税额。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_subtotal_tax: The belong_subtotal_tax of this VatInvoiceResult.
+        :type belong_subtotal_tax: str
+        """
+        self._belong_subtotal_tax = belong_subtotal_tax
+
+    @property
+    def belong_discount_amount(self):
+        """Gets the belong_discount_amount of this VatInvoiceResult.
+
+        销货清单的折扣金额。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_discount_amount of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_discount_amount
+
+    @belong_discount_amount.setter
+    def belong_discount_amount(self, belong_discount_amount):
+        """Sets the belong_discount_amount of this VatInvoiceResult.
+
+        销货清单的折扣金额。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_discount_amount: The belong_discount_amount of this VatInvoiceResult.
+        :type belong_discount_amount: str
+        """
+        self._belong_discount_amount = belong_discount_amount
+
+    @property
+    def belong_discount_tax(self):
+        """Gets the belong_discount_tax of this VatInvoiceResult.
+
+        销货清单的折扣税额。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_discount_tax of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._belong_discount_tax
+
+    @belong_discount_tax.setter
+    def belong_discount_tax(self, belong_discount_tax):
+        """Sets the belong_discount_tax of this VatInvoiceResult.
+
+        销货清单的折扣税额。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_discount_tax: The belong_discount_tax of this VatInvoiceResult.
+        :type belong_discount_tax: str
+        """
+        self._belong_discount_tax = belong_discount_tax
+
+    @property
+    def belong_item_list(self):
+        """Gets the belong_item_list of this VatInvoiceResult.
+
+        销货清单的货物（劳务）名称列表。 当传入图片为发票销货清单时返回此字段。 
+
+        :return: The belong_item_list of this VatInvoiceResult.
+        :rtype: list[:class:`huaweicloudsdkocr.v1.BelongItemList`]
+        """
+        return self._belong_item_list
+
+    @belong_item_list.setter
+    def belong_item_list(self, belong_item_list):
+        """Sets the belong_item_list of this VatInvoiceResult.
+
+        销货清单的货物（劳务）名称列表。 当传入图片为发票销货清单时返回此字段。 
+
+        :param belong_item_list: The belong_item_list of this VatInvoiceResult.
+        :type belong_item_list: list[:class:`huaweicloudsdkocr.v1.BelongItemList`]
+        """
+        self._belong_item_list = belong_item_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

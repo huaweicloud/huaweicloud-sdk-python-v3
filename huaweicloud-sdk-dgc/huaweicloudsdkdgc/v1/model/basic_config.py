@@ -23,7 +23,8 @@ class BasicConfig:
         'priority': 'int',
         'execute_user': 'str',
         'instance_timeout': 'int',
-        'custom_fields': 'object'
+        'custom_fields': 'object',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class BasicConfig:
         'priority': 'priority',
         'execute_user': 'executeUser',
         'instance_timeout': 'instanceTimeout',
-        'custom_fields': 'customFields'
+        'custom_fields': 'customFields',
+        'tags': 'tags'
     }
 
-    def __init__(self, owner=None, agency=None, is_ignore_waiting=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None):
+    def __init__(self, owner=None, agency=None, is_ignore_waiting=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None, tags=None):
         """BasicConfig
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class BasicConfig:
         :type instance_timeout: int
         :param custom_fields: 用户自定义属性字段
         :type custom_fields: object
+        :param tags: 作业标签列表
+        :type tags: list[str]
         """
         
         
@@ -66,6 +70,7 @@ class BasicConfig:
         self._execute_user = None
         self._instance_timeout = None
         self._custom_fields = None
+        self._tags = None
         self.discriminator = None
 
         if owner is not None:
@@ -82,6 +87,8 @@ class BasicConfig:
             self.instance_timeout = instance_timeout
         if custom_fields is not None:
             self.custom_fields = custom_fields
+        if tags is not None:
+            self.tags = tags
 
     @property
     def owner(self):
@@ -236,6 +243,28 @@ class BasicConfig:
         :type custom_fields: object
         """
         self._custom_fields = custom_fields
+
+    @property
+    def tags(self):
+        """Gets the tags of this BasicConfig.
+
+        作业标签列表
+
+        :return: The tags of this BasicConfig.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this BasicConfig.
+
+        作业标签列表
+
+        :param tags: The tags of this BasicConfig.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

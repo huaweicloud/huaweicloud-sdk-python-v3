@@ -1598,6 +1598,627 @@ class CseClient(Client):
 
         return http_info
 
+    def create_http2_rpc(self, request):
+        """创建http转rpc方法
+
+        创建http转rpc方法。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateHttp2Rpc
+        :type request: :class:`huaweicloudsdkcse.v1.CreateHttp2RpcRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.CreateHttp2RpcResponse`
+        """
+        http_info = self._create_http2_rpc_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_http2_rpc_invoker(self, request):
+        http_info = self._create_http2_rpc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_http2_rpc_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/http2Rpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHttp2RpcResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_plugin(self, request):
+        """创建插件
+
+        创建插件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePlugin
+        :type request: :class:`huaweicloudsdkcse.v1.CreatePluginRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.CreatePluginResponse`
+        """
+        http_info = self._create_plugin_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_plugin_invoker(self, request):
+        http_info = self._create_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_plugin_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePluginResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_http2_rpc(self, request):
+        """删除http转rpc方法
+
+        删除http转rpc方法。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteHttp2Rpc
+        :type request: :class:`huaweicloudsdkcse.v1.DeleteHttp2RpcRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.DeleteHttp2RpcResponse`
+        """
+        http_info = self._delete_http2_rpc_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_http2_rpc_invoker(self, request):
+        http_info = self._delete_http2_rpc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_http2_rpc_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/http2Rpcs/{http2Rpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHttp2RpcResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+        if 'http2_rpc_id' in local_var_params:
+            path_params['http2Rpc_id'] = local_var_params['http2_rpc_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_plugin(self, request):
+        """删除插件
+
+        删除插件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePlugin
+        :type request: :class:`huaweicloudsdkcse.v1.DeletePluginRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.DeletePluginResponse`
+        """
+        http_info = self._delete_plugin_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_plugin_invoker(self, request):
+        http_info = self._delete_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_plugin_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePluginResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_http2_rpc(self, request):
+        """修改http转rpc方法
+
+        修改http转rpc方法。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyHttp2Rpc
+        :type request: :class:`huaweicloudsdkcse.v1.ModifyHttp2RpcRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ModifyHttp2RpcResponse`
+        """
+        http_info = self._modify_http2_rpc_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_http2_rpc_invoker(self, request):
+        http_info = self._modify_http2_rpc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_http2_rpc_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/http2Rpcs/{http2Rpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyHttp2RpcResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+        if 'http2_rpc_id' in local_var_params:
+            path_params['http2Rpc_id'] = local_var_params['http2_rpc_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_plugin(self, request):
+        """修改插件
+
+        修改插件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyPlugin
+        :type request: :class:`huaweicloudsdkcse.v1.ModifyPluginRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ModifyPluginResponse`
+        """
+        http_info = self._modify_plugin_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_plugin_invoker(self, request):
+        http_info = self._modify_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_plugin_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyPluginResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_http2_rpcs(self, request):
+        """查询http2rpc资源列表
+
+        查询http转rpc资源列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHttp2Rpcs
+        :type request: :class:`huaweicloudsdkcse.v1.ShowHttp2RpcsRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ShowHttp2RpcsResponse`
+        """
+        http_info = self._show_http2_rpcs_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_http2_rpcs_invoker(self, request):
+        http_info = self._show_http2_rpcs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_http2_rpcs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/http2Rpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHttp2RpcsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_plugins(self, request):
+        """查询插件列表
+
+        查询插件列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPlugins
+        :type request: :class:`huaweicloudsdkcse.v1.ShowPluginsRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ShowPluginsResponse`
+        """
+        http_info = self._show_plugins_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_plugins_invoker(self, request):
+        http_info = self._show_plugins_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_plugins_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPluginsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_single_plugin(self, request):
+        """查询单个插件
+
+        查询单个插件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSinglePlugin
+        :type request: :class:`huaweicloudsdkcse.v1.ShowSinglePluginRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ShowSinglePluginResponse`
+        """
+        http_info = self._show_single_plugin_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_single_plugin_invoker(self, request):
+        http_info = self._show_single_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_single_plugin_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/enginemgr/gateways/{gateway_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSinglePluginResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_nacos_namespaces(self, request):
         """创建nacos命名空间
 

@@ -8,9 +8,12 @@ class AadRegion:
 
     CN_NORTH_4 = Region("cn-north-4",
                         "https://aad.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://aad.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "ap-southeast-1": AP_SOUTHEAST_1,
     }
 
     @classmethod

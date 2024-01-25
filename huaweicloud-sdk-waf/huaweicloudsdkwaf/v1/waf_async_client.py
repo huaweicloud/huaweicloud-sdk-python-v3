@@ -3902,6 +3902,8 @@ class WafAsyncClient(Client):
             query_params.append(('instances', local_var_params['instances']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

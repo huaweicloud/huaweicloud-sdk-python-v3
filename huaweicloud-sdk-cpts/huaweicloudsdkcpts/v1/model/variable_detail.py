@@ -53,7 +53,7 @@ class VariableDetail:
         :type name: str
         :param variable: 变量值
         :type variable: list[object]
-        :param variable_type: 变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
+        :param variable_type: 变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)）
         :type variable_type: int
         :param variable_mode: 变量读取模式，0：顺序模式；1：随机模式
         :type variable_mode: int
@@ -204,7 +204,7 @@ class VariableDetail:
     def variable_type(self):
         """Gets the variable_type of this VariableDetail.
 
-        变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
+        变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)）
 
         :return: The variable_type of this VariableDetail.
         :rtype: int
@@ -215,7 +215,7 @@ class VariableDetail:
     def variable_type(self, variable_type):
         """Sets the variable_type of this VariableDetail.
 
-        变量类型（1：整数；2：枚举；3：文件；5：文本（hcs暂无此类型））
+        变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)）
 
         :param variable_type: The variable_type of this VariableDetail.
         :type variable_type: int

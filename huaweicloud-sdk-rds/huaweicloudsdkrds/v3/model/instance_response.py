@@ -57,7 +57,8 @@ class InstanceResponse:
         'associated_with_ddm': 'bool',
         'alias': 'str',
         'max_iops': 'int',
-        'expiration_time': 'str'
+        'expiration_time': 'str',
+        'serverless_info': 'ServerlessInfoResponse'
     }
 
     attribute_map = {
@@ -101,10 +102,11 @@ class InstanceResponse:
         'associated_with_ddm': 'associated_with_ddm',
         'alias': 'alias',
         'max_iops': 'max_iops',
-        'expiration_time': 'expiration_time'
+        'expiration_time': 'expiration_time',
+        'serverless_info': 'serverless_info'
     }
 
-    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, read_only_by_user=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None, max_iops=None, expiration_time=None):
+    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, read_only_by_user=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None, max_iops=None, expiration_time=None, serverless_info=None):
         """InstanceResponse
 
         The model defined in huaweicloud sdk
@@ -191,6 +193,8 @@ class InstanceResponse:
         :type max_iops: int
         :param expiration_time: 实例的到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  仅包周期场景返回。
         :type expiration_time: str
+        :param serverless_info: 
+        :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfoResponse`
         """
         
         
@@ -236,6 +240,7 @@ class InstanceResponse:
         self._alias = None
         self._max_iops = None
         self._expiration_time = None
+        self._serverless_info = None
         self.discriminator = None
 
         self.id = id
@@ -292,6 +297,8 @@ class InstanceResponse:
             self.max_iops = max_iops
         if expiration_time is not None:
             self.expiration_time = expiration_time
+        if serverless_info is not None:
+            self.serverless_info = serverless_info
 
     @property
     def id(self):
@@ -1162,6 +1169,24 @@ class InstanceResponse:
         :type expiration_time: str
         """
         self._expiration_time = expiration_time
+
+    @property
+    def serverless_info(self):
+        """Gets the serverless_info of this InstanceResponse.
+
+        :return: The serverless_info of this InstanceResponse.
+        :rtype: :class:`huaweicloudsdkrds.v3.ServerlessInfoResponse`
+        """
+        return self._serverless_info
+
+    @serverless_info.setter
+    def serverless_info(self, serverless_info):
+        """Sets the serverless_info of this InstanceResponse.
+
+        :param serverless_info: The serverless_info of this InstanceResponse.
+        :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfoResponse`
+        """
+        self._serverless_info = serverless_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

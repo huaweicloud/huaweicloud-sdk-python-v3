@@ -24,13 +24,18 @@ class ShowJobResponse(SdkResponse):
         'params': 'list[JobParam]',
         'directory': 'str',
         'process_type': 'str',
+        'id': 'int',
+        'create_time': 'int',
         'single_node_job_flag': 'bool',
         'single_node_job_type': 'str',
         'last_update_user': 'str',
         'log_path': 'str',
         'basic_config': 'BasicConfig',
-        'target_status': 'str',
-        'approvers': 'list[JobApprover]'
+        'description': 'str',
+        'clean_overdue_days': 'int',
+        'clean_waiting_job': 'str',
+        'empty_running_job': 'str',
+        'version': 'str'
     }
 
     attribute_map = {
@@ -40,16 +45,21 @@ class ShowJobResponse(SdkResponse):
         'params': 'params',
         'directory': 'directory',
         'process_type': 'processType',
+        'id': 'id',
+        'create_time': 'createTime',
         'single_node_job_flag': 'singleNodeJobFlag',
         'single_node_job_type': 'singleNodeJobType',
         'last_update_user': 'lastUpdateUser',
         'log_path': 'logPath',
         'basic_config': 'basicConfig',
-        'target_status': 'targetStatus',
-        'approvers': 'approvers'
+        'description': 'description',
+        'clean_overdue_days': 'cleanOverdueDays',
+        'clean_waiting_job': 'cleanWaitingJob',
+        'empty_running_job': 'emptyRunningJob',
+        'version': 'version'
     }
 
-    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, process_type=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, target_status=None, approvers=None):
+    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, process_type=None, id=None, create_time=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, description=None, clean_overdue_days=None, clean_waiting_job=None, empty_running_job=None, version=None):
         """ShowJobResponse
 
         The model defined in huaweicloud sdk
@@ -66,6 +76,10 @@ class ShowJobResponse(SdkResponse):
         :type directory: str
         :param process_type: 作业类型，REAL_TIME： 实时处理，BATCH：批处理
         :type process_type: str
+        :param id: 作业Id, 用户查询作业时使用。
+        :type id: int
+        :param create_time: 作业创建时间.
+        :type create_time: int
         :param single_node_job_flag: 是否选择单任务，默认为false
         :type single_node_job_flag: bool
         :param single_node_job_type: 单任务类型
@@ -76,10 +90,16 @@ class ShowJobResponse(SdkResponse):
         :type log_path: str
         :param basic_config: 
         :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicConfig`
-        :param target_status: 在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态。
-        :type target_status: str
-        :param approvers: 在开启审批开关后，需要填写该字段，表示作业审批人。
-        :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        :param description: 作业描述信息
+        :type description: str
+        :param clean_overdue_days: 设置作业的最大超时时间。
+        :type clean_overdue_days: int
+        :param clean_waiting_job: 清除等待的作业。
+        :type clean_waiting_job: str
+        :param empty_running_job: 是否空跑。
+        :type empty_running_job: str
+        :param version: 作业版本信息。
+        :type version: str
         """
         
         super(ShowJobResponse, self).__init__()
@@ -90,13 +110,18 @@ class ShowJobResponse(SdkResponse):
         self._params = None
         self._directory = None
         self._process_type = None
+        self._id = None
+        self._create_time = None
         self._single_node_job_flag = None
         self._single_node_job_type = None
         self._last_update_user = None
         self._log_path = None
         self._basic_config = None
-        self._target_status = None
-        self._approvers = None
+        self._description = None
+        self._clean_overdue_days = None
+        self._clean_waiting_job = None
+        self._empty_running_job = None
+        self._version = None
         self.discriminator = None
 
         if name is not None:
@@ -111,6 +136,10 @@ class ShowJobResponse(SdkResponse):
             self.directory = directory
         if process_type is not None:
             self.process_type = process_type
+        if id is not None:
+            self.id = id
+        if create_time is not None:
+            self.create_time = create_time
         if single_node_job_flag is not None:
             self.single_node_job_flag = single_node_job_flag
         if single_node_job_type is not None:
@@ -121,10 +150,16 @@ class ShowJobResponse(SdkResponse):
             self.log_path = log_path
         if basic_config is not None:
             self.basic_config = basic_config
-        if target_status is not None:
-            self.target_status = target_status
-        if approvers is not None:
-            self.approvers = approvers
+        if description is not None:
+            self.description = description
+        if clean_overdue_days is not None:
+            self.clean_overdue_days = clean_overdue_days
+        if clean_waiting_job is not None:
+            self.clean_waiting_job = clean_waiting_job
+        if empty_running_job is not None:
+            self.empty_running_job = empty_running_job
+        if version is not None:
+            self.version = version
 
     @property
     def name(self):
@@ -255,6 +290,50 @@ class ShowJobResponse(SdkResponse):
         self._process_type = process_type
 
     @property
+    def id(self):
+        """Gets the id of this ShowJobResponse.
+
+        作业Id, 用户查询作业时使用。
+
+        :return: The id of this ShowJobResponse.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowJobResponse.
+
+        作业Id, 用户查询作业时使用。
+
+        :param id: The id of this ShowJobResponse.
+        :type id: int
+        """
+        self._id = id
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this ShowJobResponse.
+
+        作业创建时间.
+
+        :return: The create_time of this ShowJobResponse.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ShowJobResponse.
+
+        作业创建时间.
+
+        :param create_time: The create_time of this ShowJobResponse.
+        :type create_time: int
+        """
+        self._create_time = create_time
+
+    @property
     def single_node_job_flag(self):
         """Gets the single_node_job_flag of this ShowJobResponse.
 
@@ -361,48 +440,114 @@ class ShowJobResponse(SdkResponse):
         self._basic_config = basic_config
 
     @property
-    def target_status(self):
-        """Gets the target_status of this ShowJobResponse.
+    def description(self):
+        """Gets the description of this ShowJobResponse.
 
-        在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态。
+        作业描述信息
 
-        :return: The target_status of this ShowJobResponse.
+        :return: The description of this ShowJobResponse.
         :rtype: str
         """
-        return self._target_status
+        return self._description
 
-    @target_status.setter
-    def target_status(self, target_status):
-        """Sets the target_status of this ShowJobResponse.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowJobResponse.
 
-        在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态。
+        作业描述信息
 
-        :param target_status: The target_status of this ShowJobResponse.
-        :type target_status: str
+        :param description: The description of this ShowJobResponse.
+        :type description: str
         """
-        self._target_status = target_status
+        self._description = description
 
     @property
-    def approvers(self):
-        """Gets the approvers of this ShowJobResponse.
+    def clean_overdue_days(self):
+        """Gets the clean_overdue_days of this ShowJobResponse.
 
-        在开启审批开关后，需要填写该字段，表示作业审批人。
+        设置作业的最大超时时间。
 
-        :return: The approvers of this ShowJobResponse.
-        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        :return: The clean_overdue_days of this ShowJobResponse.
+        :rtype: int
         """
-        return self._approvers
+        return self._clean_overdue_days
 
-    @approvers.setter
-    def approvers(self, approvers):
-        """Sets the approvers of this ShowJobResponse.
+    @clean_overdue_days.setter
+    def clean_overdue_days(self, clean_overdue_days):
+        """Sets the clean_overdue_days of this ShowJobResponse.
 
-        在开启审批开关后，需要填写该字段，表示作业审批人。
+        设置作业的最大超时时间。
 
-        :param approvers: The approvers of this ShowJobResponse.
-        :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        :param clean_overdue_days: The clean_overdue_days of this ShowJobResponse.
+        :type clean_overdue_days: int
         """
-        self._approvers = approvers
+        self._clean_overdue_days = clean_overdue_days
+
+    @property
+    def clean_waiting_job(self):
+        """Gets the clean_waiting_job of this ShowJobResponse.
+
+        清除等待的作业。
+
+        :return: The clean_waiting_job of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._clean_waiting_job
+
+    @clean_waiting_job.setter
+    def clean_waiting_job(self, clean_waiting_job):
+        """Sets the clean_waiting_job of this ShowJobResponse.
+
+        清除等待的作业。
+
+        :param clean_waiting_job: The clean_waiting_job of this ShowJobResponse.
+        :type clean_waiting_job: str
+        """
+        self._clean_waiting_job = clean_waiting_job
+
+    @property
+    def empty_running_job(self):
+        """Gets the empty_running_job of this ShowJobResponse.
+
+        是否空跑。
+
+        :return: The empty_running_job of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._empty_running_job
+
+    @empty_running_job.setter
+    def empty_running_job(self, empty_running_job):
+        """Sets the empty_running_job of this ShowJobResponse.
+
+        是否空跑。
+
+        :param empty_running_job: The empty_running_job of this ShowJobResponse.
+        :type empty_running_job: str
+        """
+        self._empty_running_job = empty_running_job
+
+    @property
+    def version(self):
+        """Gets the version of this ShowJobResponse.
+
+        作业版本信息。
+
+        :return: The version of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this ShowJobResponse.
+
+        作业版本信息。
+
+        :param version: The version of this ShowJobResponse.
+        :type version: str
+        """
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

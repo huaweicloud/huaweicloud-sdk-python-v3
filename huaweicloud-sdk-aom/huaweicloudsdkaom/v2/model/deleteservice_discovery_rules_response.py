@@ -20,16 +20,18 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_message': 'str',
-        'response_status': 'int'
+        'response_status': 'int',
+        'id': 'list[str]'
     }
 
     attribute_map = {
         'error_code': 'errorCode',
         'error_message': 'errorMessage',
-        'response_status': 'responseStatus'
+        'response_status': 'responseStatus',
+        'id': 'id'
     }
 
-    def __init__(self, error_code=None, error_message=None, response_status=None):
+    def __init__(self, error_code=None, error_message=None, response_status=None, id=None):
         """DeleteserviceDiscoveryRulesResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
         :type error_message: str
         :param response_status: 响应状态码（不再使用）。
         :type response_status: int
+        :param id: 服务发现规则id列表，多AZ配置同步时使用。
+        :type id: list[str]
         """
         
         super(DeleteserviceDiscoveryRulesResponse, self).__init__()
@@ -47,6 +51,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
         self._error_code = None
         self._error_message = None
         self._response_status = None
+        self._id = None
         self.discriminator = None
 
         if error_code is not None:
@@ -55,6 +60,8 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
             self.error_message = error_message
         if response_status is not None:
             self.response_status = response_status
+        if id is not None:
+            self.id = id
 
     @property
     def error_code(self):
@@ -121,6 +128,28 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
         :type response_status: int
         """
         self._response_status = response_status
+
+    @property
+    def id(self):
+        """Gets the id of this DeleteserviceDiscoveryRulesResponse.
+
+        服务发现规则id列表，多AZ配置同步时使用。
+
+        :return: The id of this DeleteserviceDiscoveryRulesResponse.
+        :rtype: list[str]
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this DeleteserviceDiscoveryRulesResponse.
+
+        服务发现规则id列表，多AZ配置同步时使用。
+
+        :param id: The id of this DeleteserviceDiscoveryRulesResponse.
+        :type id: list[str]
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

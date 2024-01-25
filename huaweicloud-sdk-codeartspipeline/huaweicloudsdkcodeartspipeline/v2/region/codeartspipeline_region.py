@@ -28,6 +28,8 @@ class CodeArtsPipelineRegion:
                         "https://cloudpipeline-ext.la-north-2.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
                         "https://pipeline-external.tr-west-1.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://pipeline-external.la-south-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -41,6 +43,7 @@ class CodeArtsPipelineRegion:
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
         "tr-west-1": TR_WEST_1,
+        "la-south-2": LA_SOUTH_2,
     }
 
     @classmethod

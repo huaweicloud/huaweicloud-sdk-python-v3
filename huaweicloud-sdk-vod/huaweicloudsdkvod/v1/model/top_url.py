@@ -21,7 +21,6 @@ class TopUrl:
         'asset_id': 'str',
         'title': 'str',
         'duration': 'int',
-        'duration_ms': 'int',
         'size': 'int'
     }
 
@@ -30,11 +29,10 @@ class TopUrl:
         'asset_id': 'asset_id',
         'title': 'title',
         'duration': 'duration',
-        'duration_ms': 'duration_ms',
         'size': 'size'
     }
 
-    def __init__(self, value=None, asset_id=None, title=None, duration=None, duration_ms=None, size=None):
+    def __init__(self, value=None, asset_id=None, title=None, duration=None, size=None):
         """TopUrl
 
         The model defined in huaweicloud sdk
@@ -47,8 +45,6 @@ class TopUrl:
         :type title: str
         :param duration: 媒资时长。  单位：秒。
         :type duration: int
-        :param duration_ms: 视频时长，单位毫秒。
-        :type duration_ms: int
         :param size: 媒资原始大小。  单位：字节。
         :type size: int
         """
@@ -59,7 +55,6 @@ class TopUrl:
         self._asset_id = None
         self._title = None
         self._duration = None
-        self._duration_ms = None
         self._size = None
         self.discriminator = None
 
@@ -71,8 +66,6 @@ class TopUrl:
             self.title = title
         if duration is not None:
             self.duration = duration
-        if duration_ms is not None:
-            self.duration_ms = duration_ms
         if size is not None:
             self.size = size
 
@@ -163,28 +156,6 @@ class TopUrl:
         :type duration: int
         """
         self._duration = duration
-
-    @property
-    def duration_ms(self):
-        """Gets the duration_ms of this TopUrl.
-
-        视频时长，单位毫秒。
-
-        :return: The duration_ms of this TopUrl.
-        :rtype: int
-        """
-        return self._duration_ms
-
-    @duration_ms.setter
-    def duration_ms(self, duration_ms):
-        """Sets the duration_ms of this TopUrl.
-
-        视频时长，单位毫秒。
-
-        :param duration_ms: The duration_ms of this TopUrl.
-        :type duration_ms: int
-        """
-        self._duration_ms = duration_ms
 
     @property
     def size(self):

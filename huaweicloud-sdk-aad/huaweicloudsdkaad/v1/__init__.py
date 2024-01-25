@@ -26,8 +26,6 @@ from huaweicloudsdkaad.v1.model.cad_domain_switch_request import CadDomainSwitch
 from huaweicloudsdkaad.v1.model.certificate_body import CertificateBody
 from huaweicloudsdkaad.v1.model.create_aad_domain_request import CreateAadDomainRequest
 from huaweicloudsdkaad.v1.model.create_aad_domain_response import CreateAadDomainResponse
-from huaweicloudsdkaad.v1.model.create_certificate_request import CreateCertificateRequest
-from huaweicloudsdkaad.v1.model.create_certificate_response import CreateCertificateResponse
 from huaweicloudsdkaad.v1.model.create_policy_request import CreatePolicyRequest
 from huaweicloudsdkaad.v1.model.create_policy_request_body import CreatePolicyRequestBody
 from huaweicloudsdkaad.v1.model.create_policy_response import CreatePolicyResponse
@@ -81,6 +79,8 @@ from huaweicloudsdkaad.v1.model.package_response import PackageResponse
 from huaweicloudsdkaad.v1.model.policy_response import PolicyResponse
 from huaweicloudsdkaad.v1.model.pop_policy import PopPolicy
 from huaweicloudsdkaad.v1.model.protected_ip_response import ProtectedIpResponse
+from huaweicloudsdkaad.v1.model.set_cert_for_domain_request import SetCertForDomainRequest
+from huaweicloudsdkaad.v1.model.set_cert_for_domain_response import SetCertForDomainResponse
 from huaweicloudsdkaad.v1.model.show_alarm_config_request import ShowAlarmConfigRequest
 from huaweicloudsdkaad.v1.model.show_alarm_config_response import ShowAlarmConfigResponse
 from huaweicloudsdkaad.v1.model.show_block_statistics_request import ShowBlockStatisticsRequest

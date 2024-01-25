@@ -2553,6 +2553,8 @@ class RdsAsyncClient(Client):
             query_params.append(('version_name', local_var_params['version_name']))
         if 'spec_code' in local_var_params:
             query_params.append(('spec_code', local_var_params['spec_code']))
+        if 'is_serverless' in local_var_params:
+            query_params.append(('is_serverless', local_var_params['is_serverless']))
 
         header_params = {}
         if 'x_language' in local_var_params:

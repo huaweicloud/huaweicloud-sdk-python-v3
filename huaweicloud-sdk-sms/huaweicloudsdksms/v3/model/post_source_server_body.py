@@ -45,7 +45,8 @@ class PostSourceServerBody:
         'kernel_version': 'str',
         'migration_cycle': 'str',
         'state': 'str',
-        'oem_system': 'bool'
+        'oem_system': 'bool',
+        'start_type': 'str'
     }
 
     attribute_map = {
@@ -77,10 +78,11 @@ class PostSourceServerBody:
         'kernel_version': 'kernel_version',
         'migration_cycle': 'migration_cycle',
         'state': 'state',
-        'oem_system': 'oem_system'
+        'oem_system': 'oem_system',
+        'start_type': 'start_type'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, virtualization_type=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, virtualization_type=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None, start_type=None):
         """PostSourceServerBody
 
         The model defined in huaweicloud sdk
@@ -143,6 +145,8 @@ class PostSourceServerBody:
         :type state: str
         :param oem_system: 是否是OEM操作系统(Windows)
         :type oem_system: bool
+        :param start_type: 启动方式，可以取值MANUAL、MGC或者空。
+        :type start_type: str
         """
         
         
@@ -176,6 +180,7 @@ class PostSourceServerBody:
         self._migration_cycle = None
         self._state = None
         self._oem_system = None
+        self._start_type = None
         self.discriminator = None
 
         if id is not None:
@@ -232,6 +237,8 @@ class PostSourceServerBody:
             self.state = state
         if oem_system is not None:
             self.oem_system = oem_system
+        if start_type is not None:
+            self.start_type = start_type
 
     @property
     def id(self):
@@ -870,6 +877,28 @@ class PostSourceServerBody:
         :type oem_system: bool
         """
         self._oem_system = oem_system
+
+    @property
+    def start_type(self):
+        """Gets the start_type of this PostSourceServerBody.
+
+        启动方式，可以取值MANUAL、MGC或者空。
+
+        :return: The start_type of this PostSourceServerBody.
+        :rtype: str
+        """
+        return self._start_type
+
+    @start_type.setter
+    def start_type(self, start_type):
+        """Sets the start_type of this PostSourceServerBody.
+
+        启动方式，可以取值MANUAL、MGC或者空。
+
+        :param start_type: The start_type of this PostSourceServerBody.
+        :type start_type: str
+        """
+        self._start_type = start_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

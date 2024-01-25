@@ -10,10 +10,16 @@ class RgcRegion:
                         "https://rgc.cn-north-4.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
                         "https://rgc.cn-east-3.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://rgc.ap-southeast-4.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://rgc.ap-southeast-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-east-3": CN_EAST_3,
+        "ap-southeast-4": AP_SOUTHEAST_4,
+        "ap-southeast-3": AP_SOUTHEAST_3,
     }
 
     @classmethod

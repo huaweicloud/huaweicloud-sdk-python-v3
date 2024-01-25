@@ -10,6 +10,7 @@ from huaweicloudsdkocr.v1.model.auto_classification_result import AutoClassifica
 from huaweicloudsdkocr.v1.model.auto_classification_result_status import AutoClassificationResultStatus
 from huaweicloudsdkocr.v1.model.bankcard_request_body import BankcardRequestBody
 from huaweicloudsdkocr.v1.model.bankcard_result import BankcardResult
+from huaweicloudsdkocr.v1.model.belong_item_list import BelongItemList
 from huaweicloudsdkocr.v1.model.beneficiary_item import BeneficiaryItem
 from huaweicloudsdkocr.v1.model.business_card_request_body import BusinessCardRequestBody
 from huaweicloudsdkocr.v1.model.business_card_result import BusinessCardResult

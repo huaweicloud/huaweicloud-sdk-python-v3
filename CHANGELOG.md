@@ -1,3 +1,282 @@
+# 3.1.79 2024-01-25
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteserviceDiscoveryRules**
+    - changes of response param
+      - `+ id`
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDetailsOfApiV2**
+    - changes of response param
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+  - **UpdateApiV2**
+    - changes of request param
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+    - changes of response param
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+  - **ListApiVersionDetailV2**
+    - changes of response param
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+  - **CreateApiV2**
+    - changes of request param
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+    - changes of response param
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+  - **ListApisV2**
+    - changes of response param
+      - `+ apis.backend_api.req_protocol: enum value [GRPC]`
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - Support the following APIs:
+    - `ShowPlugins`
+    - `CreatePlugin`
+    - `ShowSinglePlugin`
+    - `ModifyPlugin`
+    - `DeletePlugin`
+    - `ShowHttp2Rpcs`
+    - `CreateHttp2Rpc`
+    - `ModifyHttp2Rpc`
+    - `DeleteHttp2Rpc`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFactoryJob**
+    - changes of request param
+      - `+ nodes.type: enum value [MRSFlinkJob]`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSystemTasks**
+    - changes of response param
+      - `+ subtasks`
+      - `- subTasks`
+      - `* startTime: string -> int64`
+      - `* endTime: string -> int64`
+      - `* lastUpdate: string -> int64`
+  - **CreateJob**
+    - changes of request param
+      - `- singleNodeJobFlag`
+      - `- approvers`
+      - `- params`
+      - `- directory`
+      - `- singleNodeJobType`
+      - `- schedule`
+      - `- nodes`
+      - `- logPath`
+      - `- basicConfig`
+      - `- name`
+      - `- lastUpdateUser`
+      - `- processType`
+      - `- targetStatus`
+      - `+ basicConfig.tags`
+      - `+ nodes.type: enum value [MRSFlinkJob]`
+  - **ShowJob**
+    - changes of response param
+      - `+ cleanOverdueDays`
+      - `+ description`
+      - `+ version`
+      - `+ cleanWaitingJob`
+      - `+ createTime`
+      - `+ id`
+      - `+ emptyRunningJob`
+      - `- approvers`
+      - `- targetStatus`
+      - `+ basicConfig.tags`
+      - `+ nodes.type: enum value [MRSFlinkJob]`
+  - **UpdateJob**
+    - changes of request param
+      - `- singleNodeJobFlag`
+      - `- approvers`
+      - `- params`
+      - `- directory`
+      - `- singleNodeJobType`
+      - `- schedule`
+      - `- nodes`
+      - `- logPath`
+      - `- basicConfig`
+      - `- name`
+      - `- lastUpdateUser`
+      - `- processType`
+      - `- targetStatus`
+      - `+ basicConfig.tags`
+      - `+ nodes.type: enum value [MRSFlinkJob]`
+  - **CreateSupplementdata**
+    - changes of request param
+      - `- singleNodeJobFlag`
+      - `- approvers`
+      - `- params`
+      - `- directory`
+      - `- singleNodeJobType`
+      - `- schedule`
+      - `- nodes`
+      - `- logPath`
+      - `- basicConfig`
+      - `- name`
+      - `- lastUpdateUser`
+      - `- processType`
+      - `- targetStatus`
+      - `+ dependJobs.basicConfig.tags`
+      - `+ dependJobs.nodes.type: enum value [MRSFlinkJob]`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateGaussMySqlReadonlyNode**
+    - changes of request param
+      - `+ availability_zones`
+
+### HuaweiCloud SDK IEC
+
+- _Features_
+  - Support the API `ListVolume`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeAutoClassification**
+    - changes of request param
+      - `+ detect_seal`
+    - changes of response param
+      - `+ result.seal_mark`
+  - **RecognizeVatInvoice**
+    - changes of response param
+      - `+ result.province`
+      - `+ result.city`
+      - `+ result.belong_buyer_name`
+      - `+ result.belong_seller_name`
+      - `+ result.belong_vat_code`
+      - `+ result.belong_number`
+      - `+ result.belong_pages`
+      - `+ result.belong_current_page`
+      - `+ result.belong_remarks`
+      - `+ result.belong_issue_date`
+      - `+ result.sales_mark`
+      - `+ result.belong_sum_amount`
+      - `+ result.belong_sum_tax`
+      - `+ result.belong_subtotal_amount`
+      - `+ result.belong_subtotal_tax`
+      - `+ result.belong_discount_amount`
+      - `+ result.belong_discount_tax`
+      - `+ result.belong_item_list`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlavors**
+    - changes of request param
+      - `+ is_serverless`
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.serverless_info`
+  - **CreateInstance**
+    - changes of request param
+      - `+ serverless_info`
+  - **CreateRestoreInstance**
+    - changes of request param
+      - `+ serverless_info`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateTask**
+    - changes of request param
+      - `+ source_server.start_type`
+  - **RegisterServer**
+    - changes of request param
+      - `+ start_type`
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAssetByFileUpload**
+    - changes of request param
+      - `* category_id: string -> int32`
+  - **CreateAssetProcessTask**
+    - changes of request param
+      - `+ hls_storage_type`
+  - **ListTopStatistics**
+    - changes of response param
+      - `- top_urls.duration_ms`
+  - **ListAssetList**
+    - changes of response param
+      - `- assets.duration_ms`
+  - **ShowTakeOverAssetDetails**
+    - changes of response param
+      - `- base_info.meta_data.duration_ms`
+  - **PublishAssets**
+    - changes of response param
+      - `- asset_info_array.base_info.meta_data.duration_ms`
+  - **UnpublishAssets**
+    - changes of response param
+      - `- asset_info_array.base_info.meta_data.duration_ms`
+  - **ShowAssetMeta**
+    - changes of response param
+      - `- asset_info_array.base_info.meta_data.duration_ms`
+  - **ShowAssetDetail**
+    - changes of response param
+      - `- base_info.meta_data.duration_ms`
+  - **ShowTakeOverTaskDetails**
+    - changes of response param
+      - `- assets.base_info.meta_data.duration_ms`
+
 # 3.1.78 2024-01-18
 
 ### HuaweiCloud SDK AOM

@@ -1,3 +1,282 @@
+# 3.1.79 2024-01-25
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteserviceDiscoveryRules**
+    - 响应参数变更
+      - `+ id`
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDetailsOfApiV2**
+    - 响应参数变更
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+  - **UpdateApiV2**
+    - 请求参数变更
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+    - 响应参数变更
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+  - **ListApiVersionDetailV2**
+    - 响应参数变更
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+  - **CreateApiV2**
+    - 请求参数变更
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+    - 响应参数变更
+      - `+ policy_https.req_protocol: enum value [GRPC]`
+      - `+ backend_api.req_protocol: enum value [GRPC]`
+  - **ListApisV2**
+    - 响应参数变更
+      - `+ apis.backend_api.req_protocol: enum value [GRPC]`
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowPlugins`
+    - `CreatePlugin`
+    - `ShowSinglePlugin`
+    - `ModifyPlugin`
+    - `DeletePlugin`
+    - `ShowHttp2Rpcs`
+    - `CreateHttp2Rpc`
+    - `ModifyHttp2Rpc`
+    - `DeleteHttp2Rpc`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFactoryJob**
+    - 请求参数变更
+      - `+ nodes.type: enum value [MRSFlinkJob]`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSystemTasks**
+    - 响应参数变更
+      - `+ subtasks`
+      - `- subTasks`
+      - `* startTime: string -> int64`
+      - `* endTime: string -> int64`
+      - `* lastUpdate: string -> int64`
+  - **CreateJob**
+    - 请求参数变更
+      - `- singleNodeJobFlag`
+      - `- approvers`
+      - `- params`
+      - `- directory`
+      - `- singleNodeJobType`
+      - `- schedule`
+      - `- nodes`
+      - `- logPath`
+      - `- basicConfig`
+      - `- name`
+      - `- lastUpdateUser`
+      - `- processType`
+      - `- targetStatus`
+      - `+ basicConfig.tags`
+      - `+ nodes.type: enum value [MRSFlinkJob]`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ cleanOverdueDays`
+      - `+ description`
+      - `+ version`
+      - `+ cleanWaitingJob`
+      - `+ createTime`
+      - `+ id`
+      - `+ emptyRunningJob`
+      - `- approvers`
+      - `- targetStatus`
+      - `+ basicConfig.tags`
+      - `+ nodes.type: enum value [MRSFlinkJob]`
+  - **UpdateJob**
+    - 请求参数变更
+      - `- singleNodeJobFlag`
+      - `- approvers`
+      - `- params`
+      - `- directory`
+      - `- singleNodeJobType`
+      - `- schedule`
+      - `- nodes`
+      - `- logPath`
+      - `- basicConfig`
+      - `- name`
+      - `- lastUpdateUser`
+      - `- processType`
+      - `- targetStatus`
+      - `+ basicConfig.tags`
+      - `+ nodes.type: enum value [MRSFlinkJob]`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `- singleNodeJobFlag`
+      - `- approvers`
+      - `- params`
+      - `- directory`
+      - `- singleNodeJobType`
+      - `- schedule`
+      - `- nodes`
+      - `- logPath`
+      - `- basicConfig`
+      - `- name`
+      - `- lastUpdateUser`
+      - `- processType`
+      - `- targetStatus`
+      - `+ dependJobs.basicConfig.tags`
+      - `+ dependJobs.nodes.type: enum value [MRSFlinkJob]`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateGaussMySqlReadonlyNode**
+    - 请求参数变更
+      - `+ availability_zones`
+
+### HuaweiCloud SDK IEC
+
+- _新增特性_
+  - 支持接口`ListVolume`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeAutoClassification**
+    - 请求参数变更
+      - `+ detect_seal`
+    - 响应参数变更
+      - `+ result.seal_mark`
+  - **RecognizeVatInvoice**
+    - 响应参数变更
+      - `+ result.province`
+      - `+ result.city`
+      - `+ result.belong_buyer_name`
+      - `+ result.belong_seller_name`
+      - `+ result.belong_vat_code`
+      - `+ result.belong_number`
+      - `+ result.belong_pages`
+      - `+ result.belong_current_page`
+      - `+ result.belong_remarks`
+      - `+ result.belong_issue_date`
+      - `+ result.sales_mark`
+      - `+ result.belong_sum_amount`
+      - `+ result.belong_sum_tax`
+      - `+ result.belong_subtotal_amount`
+      - `+ result.belong_subtotal_tax`
+      - `+ result.belong_discount_amount`
+      - `+ result.belong_discount_tax`
+      - `+ result.belong_item_list`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlavors**
+    - 请求参数变更
+      - `+ is_serverless`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.serverless_info`
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ serverless_info`
+  - **CreateRestoreInstance**
+    - 请求参数变更
+      - `+ serverless_info`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateTask**
+    - 请求参数变更
+      - `+ source_server.start_type`
+  - **RegisterServer**
+    - 请求参数变更
+      - `+ start_type`
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAssetByFileUpload**
+    - 请求参数变更
+      - `* category_id: string -> int32`
+  - **CreateAssetProcessTask**
+    - 请求参数变更
+      - `+ hls_storage_type`
+  - **ListTopStatistics**
+    - 响应参数变更
+      - `- top_urls.duration_ms`
+  - **ListAssetList**
+    - 响应参数变更
+      - `- assets.duration_ms`
+  - **ShowTakeOverAssetDetails**
+    - 响应参数变更
+      - `- base_info.meta_data.duration_ms`
+  - **PublishAssets**
+    - 响应参数变更
+      - `- asset_info_array.base_info.meta_data.duration_ms`
+  - **UnpublishAssets**
+    - 响应参数变更
+      - `- asset_info_array.base_info.meta_data.duration_ms`
+  - **ShowAssetMeta**
+    - 响应参数变更
+      - `- asset_info_array.base_info.meta_data.duration_ms`
+  - **ShowAssetDetail**
+    - 响应参数变更
+      - `- base_info.meta_data.duration_ms`
+  - **ShowTakeOverTaskDetails**
+    - 响应参数变更
+      - `- assets.base_info.meta_data.duration_ms`
+
 # 3.1.78 2024-01-18
 
 ### HuaweiCloud SDK AOM

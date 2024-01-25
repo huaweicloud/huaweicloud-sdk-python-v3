@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateCertificateResponse(SdkResponse):
+class ShowPluginsRequest:
 
     """
     Attributes:
@@ -18,20 +17,79 @@ class CreateCertificateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'gateway_id': 'str',
+        'accept': 'str'
     }
 
     attribute_map = {
+        'gateway_id': 'gateway_id',
+        'accept': 'Accept'
     }
 
-    def __init__(self):
-        """CreateCertificateResponse
+    def __init__(self, gateway_id=None, accept=None):
+        """ShowPluginsRequest
 
         The model defined in huaweicloud sdk
 
+        :param gateway_id: 网关实例id
+        :type gateway_id: str
+        :param accept: 该字段内容填为 \&quot;application/json\&quot;
+        :type accept: str
         """
         
-        super(CreateCertificateResponse, self).__init__()
+        
+
+        self._gateway_id = None
+        self._accept = None
         self.discriminator = None
+
+        self.gateway_id = gateway_id
+        if accept is not None:
+            self.accept = accept
+
+    @property
+    def gateway_id(self):
+        """Gets the gateway_id of this ShowPluginsRequest.
+
+        网关实例id
+
+        :return: The gateway_id of this ShowPluginsRequest.
+        :rtype: str
+        """
+        return self._gateway_id
+
+    @gateway_id.setter
+    def gateway_id(self, gateway_id):
+        """Sets the gateway_id of this ShowPluginsRequest.
+
+        网关实例id
+
+        :param gateway_id: The gateway_id of this ShowPluginsRequest.
+        :type gateway_id: str
+        """
+        self._gateway_id = gateway_id
+
+    @property
+    def accept(self):
+        """Gets the accept of this ShowPluginsRequest.
+
+        该字段内容填为 \"application/json\"
+
+        :return: The accept of this ShowPluginsRequest.
+        :rtype: str
+        """
+        return self._accept
+
+    @accept.setter
+    def accept(self, accept):
+        """Sets the accept of this ShowPluginsRequest.
+
+        该字段内容填为 \"application/json\"
+
+        :param accept: The accept of this ShowPluginsRequest.
+        :type accept: str
+        """
+        self._accept = accept
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +133,7 @@ class CreateCertificateResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateCertificateResponse):
+        if not isinstance(other, ShowPluginsRequest):
             return False
 
         return self.__dict__ == other.__dict__

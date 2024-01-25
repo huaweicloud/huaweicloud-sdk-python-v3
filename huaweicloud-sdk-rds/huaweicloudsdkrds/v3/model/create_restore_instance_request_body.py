@@ -42,6 +42,7 @@ class CreateRestoreInstanceRequestBody:
         'collation': 'str',
         'tags': 'list[TagWithKeyValue]',
         'unchangeable_param': 'UnchangeableParam',
+        'serverless_info': 'ServerlessInfo',
         'dry_run': 'bool'
     }
 
@@ -71,10 +72,11 @@ class CreateRestoreInstanceRequestBody:
         'collation': 'collation',
         'tags': 'tags',
         'unchangeable_param': 'unchangeable_param',
+        'serverless_info': 'serverless_info',
         'dry_run': 'dry_run'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, dry_run=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, serverless_info=None, dry_run=None):
         """CreateRestoreInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -129,6 +131,8 @@ class CreateRestoreInstanceRequestBody:
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
         :param unchangeable_param: 
         :type unchangeable_param: :class:`huaweicloudsdkrds.v3.UnchangeableParam`
+        :param serverless_info: 
+        :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
         :param dry_run: 是否只预检此次请求，仅支持MySQL。 - true：发送参数检查请求，不会创建实例。   - 检查通过：返回202状态码。   - 检查不通过：返回对应错误码，详情请参考错误码。 - false：发送正常请求，通过检查后，并且执行创建实例的请求。
         :type dry_run: bool
         """
@@ -160,6 +164,7 @@ class CreateRestoreInstanceRequestBody:
         self._collation = None
         self._tags = None
         self._unchangeable_param = None
+        self._serverless_info = None
         self._dry_run = None
         self.discriminator = None
 
@@ -204,6 +209,8 @@ class CreateRestoreInstanceRequestBody:
             self.tags = tags
         if unchangeable_param is not None:
             self.unchangeable_param = unchangeable_param
+        if serverless_info is not None:
+            self.serverless_info = serverless_info
         if dry_run is not None:
             self.dry_run = dry_run
 
@@ -728,6 +735,24 @@ class CreateRestoreInstanceRequestBody:
         :type unchangeable_param: :class:`huaweicloudsdkrds.v3.UnchangeableParam`
         """
         self._unchangeable_param = unchangeable_param
+
+    @property
+    def serverless_info(self):
+        """Gets the serverless_info of this CreateRestoreInstanceRequestBody.
+
+        :return: The serverless_info of this CreateRestoreInstanceRequestBody.
+        :rtype: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
+        """
+        return self._serverless_info
+
+    @serverless_info.setter
+    def serverless_info(self, serverless_info):
+        """Sets the serverless_info of this CreateRestoreInstanceRequestBody.
+
+        :param serverless_info: The serverless_info of this CreateRestoreInstanceRequestBody.
+        :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
+        """
+        self._serverless_info = serverless_info
 
     @property
     def dry_run(self):

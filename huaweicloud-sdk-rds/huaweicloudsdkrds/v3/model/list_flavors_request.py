@@ -20,17 +20,19 @@ class ListFlavorsRequest:
         'x_language': 'str',
         'database_name': 'str',
         'version_name': 'str',
-        'spec_code': 'str'
+        'spec_code': 'str',
+        'is_serverless': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'database_name': 'database_name',
         'version_name': 'version_name',
-        'spec_code': 'spec_code'
+        'spec_code': 'spec_code',
+        'is_serverless': 'is_serverless'
     }
 
-    def __init__(self, x_language=None, database_name=None, version_name=None, spec_code=None):
+    def __init__(self, x_language=None, database_name=None, version_name=None, spec_code=None, is_serverless=None):
         """ListFlavorsRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListFlavorsRequest:
         :type version_name: str
         :param spec_code: 规格编码
         :type spec_code: str
+        :param is_serverless: 是否查询serverless规格。取值范围如下，区分大小写： true：查询serverless规格 false：查询非serverless规格 默认值 false。
+        :type is_serverless: str
         """
         
         
@@ -51,6 +55,7 @@ class ListFlavorsRequest:
         self._database_name = None
         self._version_name = None
         self._spec_code = None
+        self._is_serverless = None
         self.discriminator = None
 
         if x_language is not None:
@@ -60,6 +65,8 @@ class ListFlavorsRequest:
             self.version_name = version_name
         if spec_code is not None:
             self.spec_code = spec_code
+        if is_serverless is not None:
+            self.is_serverless = is_serverless
 
     @property
     def x_language(self):
@@ -148,6 +155,28 @@ class ListFlavorsRequest:
         :type spec_code: str
         """
         self._spec_code = spec_code
+
+    @property
+    def is_serverless(self):
+        """Gets the is_serverless of this ListFlavorsRequest.
+
+        是否查询serverless规格。取值范围如下，区分大小写： true：查询serverless规格 false：查询非serverless规格 默认值 false。
+
+        :return: The is_serverless of this ListFlavorsRequest.
+        :rtype: str
+        """
+        return self._is_serverless
+
+    @is_serverless.setter
+    def is_serverless(self, is_serverless):
+        """Sets the is_serverless of this ListFlavorsRequest.
+
+        是否查询serverless规格。取值范围如下，区分大小写： true：查询serverless规格 false：查询非serverless规格 默认值 false。
+
+        :param is_serverless: The is_serverless of this ListFlavorsRequest.
+        :type is_serverless: str
+        """
+        self._is_serverless = is_serverless
 
     def to_dict(self):
         """Returns the model properties as a dict"""

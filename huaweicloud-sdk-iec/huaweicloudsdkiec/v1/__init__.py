@@ -211,6 +211,8 @@ from huaweicloudsdkiec.v1.model.list_sites_request import ListSitesRequest
 from huaweicloudsdkiec.v1.model.list_sites_response import ListSitesResponse
 from huaweicloudsdkiec.v1.model.list_subnets_request import ListSubnetsRequest
 from huaweicloudsdkiec.v1.model.list_subnets_response import ListSubnetsResponse
+from huaweicloudsdkiec.v1.model.list_volume_request import ListVolumeRequest
+from huaweicloudsdkiec.v1.model.list_volume_response import ListVolumeResponse
 from huaweicloudsdkiec.v1.model.list_vpcs_request import ListVpcsRequest
 from huaweicloudsdkiec.v1.model.list_vpcs_response import ListVpcsResponse
 from huaweicloudsdkiec.v1.model.location import Location

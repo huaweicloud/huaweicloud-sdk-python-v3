@@ -410,6 +410,8 @@ from huaweicloudsdkrds.v3.model.search_query_scale_flavors_request import Search
 from huaweicloudsdkrds.v3.model.search_query_scale_flavors_response import SearchQueryScaleFlavorsResponse
 from huaweicloudsdkrds.v3.model.second_monitor import SecondMonitor
 from huaweicloudsdkrds.v3.model.security_group_request import SecurityGroupRequest
+from huaweicloudsdkrds.v3.model.serverless_info import ServerlessInfo
+from huaweicloudsdkrds.v3.model.serverless_info_response import ServerlessInfoResponse
 from huaweicloudsdkrds.v3.model.set_auditlog_policy_request import SetAuditlogPolicyRequest
 from huaweicloudsdkrds.v3.model.set_auditlog_policy_request_body import SetAuditlogPolicyRequestBody
 from huaweicloudsdkrds.v3.model.set_auditlog_policy_response import SetAuditlogPolicyResponse

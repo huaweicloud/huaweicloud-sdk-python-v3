@@ -45,7 +45,7 @@ class TempContentInfo:
         :type index: int
         :param data: 数据指令内容
         :type data: object
-        :param data_type: 数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；203：vu百分比控制器；204：吞吐量控制器；301：集合点；302：插件请求）
+        :param data_type: 数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
         :type data_type: int
         """
         
@@ -161,7 +161,7 @@ class TempContentInfo:
     def data_type(self):
         """Gets the data_type of this TempContentInfo.
 
-        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；203：vu百分比控制器；204：吞吐量控制器；301：集合点；302：插件请求）
+        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
         :return: The data_type of this TempContentInfo.
         :rtype: int
@@ -172,7 +172,7 @@ class TempContentInfo:
     def data_type(self, data_type):
         """Sets the data_type of this TempContentInfo.
 
-        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；203：vu百分比控制器；204：吞吐量控制器；301：集合点；302：插件请求）
+        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
         :param data_type: The data_type of this TempContentInfo.
         :type data_type: int

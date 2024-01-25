@@ -31,9 +31,9 @@ class Location:
 
         The model defined in huaweicloud sdk
 
-        :param x: 
+        :param x: 节点在作业画布上的横轴位置
         :type x: str
-        :param y: 
+        :param y: 节点在作业画布上的纵轴位置
         :type y: str
         """
         
@@ -50,6 +50,8 @@ class Location:
     def x(self):
         """Gets the x of this Location.
 
+        节点在作业画布上的横轴位置
+
         :return: The x of this Location.
         :rtype: str
         """
@@ -58,6 +60,8 @@ class Location:
     @x.setter
     def x(self, x):
         """Sets the x of this Location.
+
+        节点在作业画布上的横轴位置
 
         :param x: The x of this Location.
         :type x: str
@@ -68,6 +72,8 @@ class Location:
     def y(self):
         """Gets the y of this Location.
 
+        节点在作业画布上的纵轴位置
+
         :return: The y of this Location.
         :rtype: str
         """
@@ -76,6 +82,8 @@ class Location:
     @y.setter
     def y(self, y):
         """Sets the y of this Location.
+
+        节点在作业画布上的纵轴位置
 
         :param y: The y of this Location.
         :type y: str

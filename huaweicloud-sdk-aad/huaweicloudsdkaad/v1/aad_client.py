@@ -434,71 +434,6 @@ class AadClient(Client):
 
         return http_info
 
-    def create_certificate(self, request):
-        """上传/修改域名对应证书
-
-        上传/修改域名对应证书
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateCertificate
-        :type request: :class:`huaweicloudsdkaad.v1.CreateCertificateRequest`
-        :rtype: :class:`huaweicloudsdkaad.v1.CreateCertificateResponse`
-        """
-        http_info = self._create_certificate_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_certificate_invoker(self, request):
-        http_info = self._create_certificate_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _create_certificate_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/aad/external/domains/certificate",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateCertificateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_policy(self, request):
         """创建策略
 
@@ -1584,6 +1519,71 @@ class AadClient(Client):
             "resource_path": "/v1/{project_id}/aad/external/domains/switch",
             "request_type": request.__class__.__name__,
             "response_type": "ModifyDomainWebSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_cert_for_domain(self, request):
+        """上传/修改域名对应证书
+
+        上传/修改域名对应证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetCertForDomain
+        :type request: :class:`huaweicloudsdkaad.v1.SetCertForDomainRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.SetCertForDomainResponse`
+        """
+        http_info = self._set_cert_for_domain_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_cert_for_domain_invoker(self, request):
+        http_info = self._set_cert_for_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_cert_for_domain_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aad/external/domains/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetCertForDomainResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

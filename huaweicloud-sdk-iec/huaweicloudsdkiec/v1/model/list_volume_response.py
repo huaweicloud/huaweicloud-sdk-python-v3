@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListEventsResponse(SdkResponse):
+class ListVolumeResponse(SdkResponse):
 
     """
     Attributes:
@@ -18,80 +18,80 @@ class ListEventsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_num': 'int',
-        'data_list': 'list[Event]'
+        'count': 'int',
+        'volumes': 'list[Volume]'
     }
 
     attribute_map = {
-        'total_num': 'total_num',
-        'data_list': 'data_list'
+        'count': 'count',
+        'volumes': 'volumes'
     }
 
-    def __init__(self, total_num=None, data_list=None):
-        """ListEventsResponse
+    def __init__(self, count=None, volumes=None):
+        """ListVolumeResponse
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
-        :type total_num: int
-        :param data_list: 查询弹性云服务器状态列表
-        :type data_list: list[:class:`huaweicloudsdkhss.v1.Event`]
+        :param count: 硬盘数量。
+        :type count: int
+        :param volumes: 硬盘列表。
+        :type volumes: list[:class:`huaweicloudsdkiec.v1.Volume`]
         """
         
-        super(ListEventsResponse, self).__init__()
+        super(ListVolumeResponse, self).__init__()
 
-        self._total_num = None
-        self._data_list = None
+        self._count = None
+        self._volumes = None
         self.discriminator = None
 
-        if total_num is not None:
-            self.total_num = total_num
-        if data_list is not None:
-            self.data_list = data_list
+        if count is not None:
+            self.count = count
+        if volumes is not None:
+            self.volumes = volumes
 
     @property
-    def total_num(self):
-        """Gets the total_num of this ListEventsResponse.
+    def count(self):
+        """Gets the count of this ListVolumeResponse.
 
-        总数
+        硬盘数量。
 
-        :return: The total_num of this ListEventsResponse.
+        :return: The count of this ListVolumeResponse.
         :rtype: int
         """
-        return self._total_num
+        return self._count
 
-    @total_num.setter
-    def total_num(self, total_num):
-        """Sets the total_num of this ListEventsResponse.
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListVolumeResponse.
 
-        总数
+        硬盘数量。
 
-        :param total_num: The total_num of this ListEventsResponse.
-        :type total_num: int
+        :param count: The count of this ListVolumeResponse.
+        :type count: int
         """
-        self._total_num = total_num
+        self._count = count
 
     @property
-    def data_list(self):
-        """Gets the data_list of this ListEventsResponse.
+    def volumes(self):
+        """Gets the volumes of this ListVolumeResponse.
 
-        查询弹性云服务器状态列表
+        硬盘列表。
 
-        :return: The data_list of this ListEventsResponse.
-        :rtype: list[:class:`huaweicloudsdkhss.v1.Event`]
+        :return: The volumes of this ListVolumeResponse.
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Volume`]
         """
-        return self._data_list
+        return self._volumes
 
-    @data_list.setter
-    def data_list(self, data_list):
-        """Sets the data_list of this ListEventsResponse.
+    @volumes.setter
+    def volumes(self, volumes):
+        """Sets the volumes of this ListVolumeResponse.
 
-        查询弹性云服务器状态列表
+        硬盘列表。
 
-        :param data_list: The data_list of this ListEventsResponse.
-        :type data_list: list[:class:`huaweicloudsdkhss.v1.Event`]
+        :param volumes: The volumes of this ListVolumeResponse.
+        :type volumes: list[:class:`huaweicloudsdkiec.v1.Volume`]
         """
-        self._data_list = data_list
+        self._volumes = volumes
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -135,7 +135,7 @@ class ListEventsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListEventsResponse):
+        if not isinstance(other, ListVolumeResponse):
             return False
 
         return self.__dict__ == other.__dict__
