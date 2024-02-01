@@ -21,11 +21,11 @@ class CreateDigitalAssetRequestBody:
         'asset_description': 'str',
         'asset_type': 'str',
         'asset_owner': 'str',
-        'is_need_generate_cover': 'bool',
         'review_config': 'ReviewConfig',
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
-        'system_properties': 'list[SystemProperty]'
+        'system_properties': 'list[SystemProperty]',
+        'shared_config': 'SharedConfig'
     }
 
     attribute_map = {
@@ -33,14 +33,14 @@ class CreateDigitalAssetRequestBody:
         'asset_description': 'asset_description',
         'asset_type': 'asset_type',
         'asset_owner': 'asset_owner',
-        'is_need_generate_cover': 'is_need_generate_cover',
         'review_config': 'review_config',
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
-        'system_properties': 'system_properties'
+        'system_properties': 'system_properties',
+        'shared_config': 'shared_config'
     }
 
-    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_owner=None, is_need_generate_cover=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None):
+    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None):
         """CreateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
@@ -53,8 +53,6 @@ class CreateDigitalAssetRequestBody:
         :type asset_type: str
         :param asset_owner: 项目ID。 &gt; * 仅管理员帐号可设置此参数。
         :type asset_owner: str
-        :param is_need_generate_cover: 是否需要资产库生成封面图片。 &gt; * 当前支持自动生成封面图片的资产类型包括VIDEO。
-        :type is_need_generate_cover: bool
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param tags: 标签列表。
@@ -63,6 +61,8 @@ class CreateDigitalAssetRequestBody:
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
         :param system_properties: 设置系统属性。
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
+        :param shared_config: 
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         """
         
         
@@ -71,11 +71,11 @@ class CreateDigitalAssetRequestBody:
         self._asset_description = None
         self._asset_type = None
         self._asset_owner = None
-        self._is_need_generate_cover = None
         self._review_config = None
         self._tags = None
         self._asset_extra_meta = None
         self._system_properties = None
+        self._shared_config = None
         self.discriminator = None
 
         self.asset_name = asset_name
@@ -84,8 +84,6 @@ class CreateDigitalAssetRequestBody:
         self.asset_type = asset_type
         if asset_owner is not None:
             self.asset_owner = asset_owner
-        if is_need_generate_cover is not None:
-            self.is_need_generate_cover = is_need_generate_cover
         if review_config is not None:
             self.review_config = review_config
         if tags is not None:
@@ -94,6 +92,8 @@ class CreateDigitalAssetRequestBody:
             self.asset_extra_meta = asset_extra_meta
         if system_properties is not None:
             self.system_properties = system_properties
+        if shared_config is not None:
+            self.shared_config = shared_config
 
     @property
     def asset_name(self):
@@ -184,28 +184,6 @@ class CreateDigitalAssetRequestBody:
         self._asset_owner = asset_owner
 
     @property
-    def is_need_generate_cover(self):
-        """Gets the is_need_generate_cover of this CreateDigitalAssetRequestBody.
-
-        是否需要资产库生成封面图片。 > * 当前支持自动生成封面图片的资产类型包括VIDEO。
-
-        :return: The is_need_generate_cover of this CreateDigitalAssetRequestBody.
-        :rtype: bool
-        """
-        return self._is_need_generate_cover
-
-    @is_need_generate_cover.setter
-    def is_need_generate_cover(self, is_need_generate_cover):
-        """Sets the is_need_generate_cover of this CreateDigitalAssetRequestBody.
-
-        是否需要资产库生成封面图片。 > * 当前支持自动生成封面图片的资产类型包括VIDEO。
-
-        :param is_need_generate_cover: The is_need_generate_cover of this CreateDigitalAssetRequestBody.
-        :type is_need_generate_cover: bool
-        """
-        self._is_need_generate_cover = is_need_generate_cover
-
-    @property
     def review_config(self):
         """Gets the review_config of this CreateDigitalAssetRequestBody.
 
@@ -284,6 +262,24 @@ class CreateDigitalAssetRequestBody:
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         """
         self._system_properties = system_properties
+
+    @property
+    def shared_config(self):
+        """Gets the shared_config of this CreateDigitalAssetRequestBody.
+
+        :return: The shared_config of this CreateDigitalAssetRequestBody.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        return self._shared_config
+
+    @shared_config.setter
+    def shared_config(self, shared_config):
+        """Sets the shared_config of this CreateDigitalAssetRequestBody.
+
+        :param shared_config: The shared_config of this CreateDigitalAssetRequestBody.
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        self._shared_config = shared_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

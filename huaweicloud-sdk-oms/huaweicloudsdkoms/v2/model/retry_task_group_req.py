@@ -19,6 +19,7 @@ class RetryTaskGroupReq:
     openapi_types = {
         'src_ak': 'str',
         'src_sk': 'str',
+        'json_auth_file': 'str',
         'dst_ak': 'str',
         'dst_sk': 'str',
         'source_cdn_authentication_key': 'str',
@@ -28,13 +29,14 @@ class RetryTaskGroupReq:
     attribute_map = {
         'src_ak': 'src_ak',
         'src_sk': 'src_sk',
+        'json_auth_file': 'json_auth_file',
         'dst_ak': 'dst_ak',
         'dst_sk': 'dst_sk',
         'source_cdn_authentication_key': 'source_cdn_authentication_key',
         'migrate_failed_object': 'migrate_failed_object'
     }
 
-    def __init__(self, src_ak=None, src_sk=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None, migrate_failed_object=None):
+    def __init__(self, src_ak=None, src_sk=None, json_auth_file=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None, migrate_failed_object=None):
         """RetryTaskGroupReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class RetryTaskGroupReq:
         :type src_ak: str
         :param src_sk: 源端sk（最大长度100个字符）
         :type src_sk: str
+        :param json_auth_file: 用于谷歌云Cloud Storage鉴权
+        :type json_auth_file: str
         :param dst_ak: 目的端ak（最大长度100个字符）
         :type dst_ak: str
         :param dst_sk: 目的端sk（最大长度100个字符）
@@ -57,6 +61,7 @@ class RetryTaskGroupReq:
 
         self._src_ak = None
         self._src_sk = None
+        self._json_auth_file = None
         self._dst_ak = None
         self._dst_sk = None
         self._source_cdn_authentication_key = None
@@ -67,6 +72,8 @@ class RetryTaskGroupReq:
             self.src_ak = src_ak
         if src_sk is not None:
             self.src_sk = src_sk
+        if json_auth_file is not None:
+            self.json_auth_file = json_auth_file
         if dst_ak is not None:
             self.dst_ak = dst_ak
         if dst_sk is not None:
@@ -119,6 +126,28 @@ class RetryTaskGroupReq:
         :type src_sk: str
         """
         self._src_sk = src_sk
+
+    @property
+    def json_auth_file(self):
+        """Gets the json_auth_file of this RetryTaskGroupReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :return: The json_auth_file of this RetryTaskGroupReq.
+        :rtype: str
+        """
+        return self._json_auth_file
+
+    @json_auth_file.setter
+    def json_auth_file(self, json_auth_file):
+        """Sets the json_auth_file of this RetryTaskGroupReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :param json_auth_file: The json_auth_file of this RetryTaskGroupReq.
+        :type json_auth_file: str
+        """
+        self._json_auth_file = json_auth_file
 
     @property
     def dst_ak(self):

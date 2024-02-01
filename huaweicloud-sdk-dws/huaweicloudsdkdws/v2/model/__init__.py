@@ -41,7 +41,6 @@ from huaweicloudsdkdws.v2.model.batch_delete_resource_tag import BatchDeleteReso
 from huaweicloudsdkdws.v2.model.batch_delete_resource_tag_request import BatchDeleteResourceTagRequest
 from huaweicloudsdkdws.v2.model.batch_delete_resource_tag_response import BatchDeleteResourceTagResponse
 from huaweicloudsdkdws.v2.model.batch_delete_resource_tags import BatchDeleteResourceTags
-from huaweicloudsdkdws.v2.model.build_task_info import BuildTaskInfo
 from huaweicloudsdkdws.v2.model.cancel_readonly_cluster_request import CancelReadonlyClusterRequest
 from huaweicloudsdkdws.v2.model.cancel_readonly_cluster_response import CancelReadonlyClusterResponse
 from huaweicloudsdkdws.v2.model.check_cluster_request import CheckClusterRequest
@@ -352,6 +351,7 @@ from huaweicloudsdkdws.v2.model.rds_redis_info import RdsRedisInfo
 from huaweicloudsdkdws.v2.model.reconfigure_ext_data_source_action import ReconfigureExtDataSourceAction
 from huaweicloudsdkdws.v2.model.reconfigure_ext_data_source_action_req import ReconfigureExtDataSourceActionReq
 from huaweicloudsdkdws.v2.model.redis_conf import RedisConf
+from huaweicloudsdkdws.v2.model.redis_conf_req import RedisConfReq
 from huaweicloudsdkdws.v2.model.redis_progress import RedisProgress
 from huaweicloudsdkdws.v2.model.redis_table import RedisTable
 from huaweicloudsdkdws.v2.model.redis_table_detail import RedisTableDetail
@@ -359,7 +359,6 @@ from huaweicloudsdkdws.v2.model.redistribution_req import RedistributionReq
 from huaweicloudsdkdws.v2.model.reset_password_request import ResetPasswordRequest
 from huaweicloudsdkdws.v2.model.reset_password_request_body import ResetPasswordRequestBody
 from huaweicloudsdkdws.v2.model.reset_password_response import ResetPasswordResponse
-from huaweicloudsdkdws.v2.model.resize import Resize
 from huaweicloudsdkdws.v2.model.resize_cluster_request import ResizeClusterRequest
 from huaweicloudsdkdws.v2.model.resize_cluster_request_body import ResizeClusterRequestBody
 from huaweicloudsdkdws.v2.model.resize_cluster_response import ResizeClusterResponse

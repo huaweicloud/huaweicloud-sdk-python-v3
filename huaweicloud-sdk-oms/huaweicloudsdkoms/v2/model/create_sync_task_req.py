@@ -30,6 +30,7 @@ class CreateSyncTaskReq:
         'enable_metadata_migration': 'bool',
         'enable_kms': 'bool',
         'enable_restore': 'bool',
+        'dst_storage_policy': 'str',
         'app_id': 'str',
         'source_cdn': 'SourceCdnReq',
         'consistency_check': 'str'
@@ -49,12 +50,13 @@ class CreateSyncTaskReq:
         'enable_metadata_migration': 'enable_metadata_migration',
         'enable_kms': 'enable_kms',
         'enable_restore': 'enable_restore',
+        'dst_storage_policy': 'dst_storage_policy',
         'app_id': 'app_id',
         'source_cdn': 'source_cdn',
         'consistency_check': 'consistency_check'
     }
 
-    def __init__(self, src_cloud_type=None, src_region=None, src_bucket=None, src_ak=None, src_sk=None, dst_ak=None, dst_sk=None, dst_region=None, dst_bucket=None, description=None, enable_metadata_migration=None, enable_kms=None, enable_restore=None, app_id=None, source_cdn=None, consistency_check=None):
+    def __init__(self, src_cloud_type=None, src_region=None, src_bucket=None, src_ak=None, src_sk=None, dst_ak=None, dst_sk=None, dst_region=None, dst_bucket=None, description=None, enable_metadata_migration=None, enable_kms=None, enable_restore=None, dst_storage_policy=None, app_id=None, source_cdn=None, consistency_check=None):
         """CreateSyncTaskReq
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class CreateSyncTaskReq:
         :type enable_kms: bool
         :param enable_restore: 是否自动解冻归档数据，默认否。  开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
         :type enable_restore: bool
+        :param dst_storage_policy: 目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+        :type dst_storage_policy: str
         :param app_id: 当源端为腾讯云时，需要填写此参数。
         :type app_id: str
         :param source_cdn: 
@@ -108,6 +112,7 @@ class CreateSyncTaskReq:
         self._enable_metadata_migration = None
         self._enable_kms = None
         self._enable_restore = None
+        self._dst_storage_policy = None
         self._app_id = None
         self._source_cdn = None
         self._consistency_check = None
@@ -131,6 +136,8 @@ class CreateSyncTaskReq:
             self.enable_kms = enable_kms
         if enable_restore is not None:
             self.enable_restore = enable_restore
+        if dst_storage_policy is not None:
+            self.dst_storage_policy = dst_storage_policy
         if app_id is not None:
             self.app_id = app_id
         if source_cdn is not None:
@@ -423,6 +430,28 @@ class CreateSyncTaskReq:
         :type enable_restore: bool
         """
         self._enable_restore = enable_restore
+
+    @property
+    def dst_storage_policy(self):
+        """Gets the dst_storage_policy of this CreateSyncTaskReq.
+
+        目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+
+        :return: The dst_storage_policy of this CreateSyncTaskReq.
+        :rtype: str
+        """
+        return self._dst_storage_policy
+
+    @dst_storage_policy.setter
+    def dst_storage_policy(self, dst_storage_policy):
+        """Sets the dst_storage_policy of this CreateSyncTaskReq.
+
+        目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+
+        :param dst_storage_policy: The dst_storage_policy of this CreateSyncTaskReq.
+        :type dst_storage_policy: str
+        """
+        self._dst_storage_policy = dst_storage_policy
 
     @property
     def app_id(self):

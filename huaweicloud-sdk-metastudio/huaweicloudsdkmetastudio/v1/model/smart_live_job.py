@@ -18,6 +18,8 @@ class SmartLiveJob:
 
     openapi_types = {
         'job_id': 'str',
+        'room_id': 'str',
+        'room_name': 'str',
         'state': 'str',
         'duration': 'float',
         'start_time': 'str',
@@ -29,11 +31,14 @@ class SmartLiveJob:
         'live_event_report_url': 'str',
         'live_event_callback_config': 'LiveEventCallBackConfig',
         'stream_duration': 'float',
-        'block_reason': 'str'
+        'block_reason': 'str',
+        'cover_url': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
+        'room_id': 'room_id',
+        'room_name': 'room_name',
         'state': 'state',
         'duration': 'duration',
         'start_time': 'start_time',
@@ -45,16 +50,21 @@ class SmartLiveJob:
         'live_event_report_url': 'live_event_report_url',
         'live_event_callback_config': 'live_event_callback_config',
         'stream_duration': 'stream_duration',
-        'block_reason': 'block_reason'
+        'block_reason': 'block_reason',
+        'cover_url': 'cover_url'
     }
 
-    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, stream_duration=None, block_reason=None):
+    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, stream_duration=None, block_reason=None, cover_url=None):
         """SmartLiveJob
 
         The model defined in huaweicloud sdk
 
         :param job_id: 数字人直播任务ID。
         :type job_id: str
+        :param room_id: 直播间ID
+        :type room_id: str
+        :param room_name: 直播间名称
+        :type room_name: str
         :param state: 数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * BLOCKED: 封禁
         :type state: str
         :param duration: 数字人直播时长，单位秒。
@@ -79,11 +89,15 @@ class SmartLiveJob:
         :type stream_duration: float
         :param block_reason: 封禁信息
         :type block_reason: str
+        :param cover_url: 直播间封面图UR
+        :type cover_url: str
         """
         
         
 
         self._job_id = None
+        self._room_id = None
+        self._room_name = None
         self._state = None
         self._duration = None
         self._start_time = None
@@ -96,10 +110,15 @@ class SmartLiveJob:
         self._live_event_callback_config = None
         self._stream_duration = None
         self._block_reason = None
+        self._cover_url = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if room_id is not None:
+            self.room_id = room_id
+        if room_name is not None:
+            self.room_name = room_name
         if state is not None:
             self.state = state
         if duration is not None:
@@ -124,6 +143,8 @@ class SmartLiveJob:
             self.stream_duration = stream_duration
         if block_reason is not None:
             self.block_reason = block_reason
+        if cover_url is not None:
+            self.cover_url = cover_url
 
     @property
     def job_id(self):
@@ -146,6 +167,50 @@ class SmartLiveJob:
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def room_id(self):
+        """Gets the room_id of this SmartLiveJob.
+
+        直播间ID
+
+        :return: The room_id of this SmartLiveJob.
+        :rtype: str
+        """
+        return self._room_id
+
+    @room_id.setter
+    def room_id(self, room_id):
+        """Sets the room_id of this SmartLiveJob.
+
+        直播间ID
+
+        :param room_id: The room_id of this SmartLiveJob.
+        :type room_id: str
+        """
+        self._room_id = room_id
+
+    @property
+    def room_name(self):
+        """Gets the room_name of this SmartLiveJob.
+
+        直播间名称
+
+        :return: The room_name of this SmartLiveJob.
+        :rtype: str
+        """
+        return self._room_name
+
+    @room_name.setter
+    def room_name(self, room_name):
+        """Sets the room_name of this SmartLiveJob.
+
+        直播间名称
+
+        :param room_name: The room_name of this SmartLiveJob.
+        :type room_name: str
+        """
+        self._room_name = room_name
 
     @property
     def state(self):
@@ -398,6 +463,28 @@ class SmartLiveJob:
         :type block_reason: str
         """
         self._block_reason = block_reason
+
+    @property
+    def cover_url(self):
+        """Gets the cover_url of this SmartLiveJob.
+
+        直播间封面图UR
+
+        :return: The cover_url of this SmartLiveJob.
+        :rtype: str
+        """
+        return self._cover_url
+
+    @cover_url.setter
+    def cover_url(self, cover_url):
+        """Sets the cover_url of this SmartLiveJob.
+
+        直播间封面图UR
+
+        :param cover_url: The cover_url of this SmartLiveJob.
+        :type cover_url: str
+        """
+        self._cover_url = cover_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

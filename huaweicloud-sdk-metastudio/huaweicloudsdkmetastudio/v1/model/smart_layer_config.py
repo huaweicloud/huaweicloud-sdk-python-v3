@@ -18,6 +18,7 @@ class SmartLayerConfig:
 
     openapi_types = {
         'layer_type': 'str',
+        'asset_id': 'str',
         'position': 'LayerPositionConfig',
         'size': 'LayerSizeConfig',
         'image_config': 'SmartImageLayerConfig',
@@ -26,19 +27,22 @@ class SmartLayerConfig:
 
     attribute_map = {
         'layer_type': 'layer_type',
+        'asset_id': 'asset_id',
         'position': 'position',
         'size': 'size',
         'image_config': 'image_config',
         'video_config': 'video_config'
     }
 
-    def __init__(self, layer_type=None, position=None, size=None, image_config=None, video_config=None):
+    def __init__(self, layer_type=None, asset_id=None, position=None, size=None, image_config=None, video_config=None):
         """SmartLayerConfig
 
         The model defined in huaweicloud sdk
 
         :param layer_type: 图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层
         :type layer_type: str
+        :param asset_id: 图层所需资产的资产id，外部资产信息无需填写
+        :type asset_id: str
         :param position: 
         :type position: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
         :param size: 
@@ -52,6 +56,7 @@ class SmartLayerConfig:
         
 
         self._layer_type = None
+        self._asset_id = None
         self._position = None
         self._size = None
         self._image_config = None
@@ -59,6 +64,8 @@ class SmartLayerConfig:
         self.discriminator = None
 
         self.layer_type = layer_type
+        if asset_id is not None:
+            self.asset_id = asset_id
         self.position = position
         if size is not None:
             self.size = size
@@ -88,6 +95,28 @@ class SmartLayerConfig:
         :type layer_type: str
         """
         self._layer_type = layer_type
+
+    @property
+    def asset_id(self):
+        """Gets the asset_id of this SmartLayerConfig.
+
+        图层所需资产的资产id，外部资产信息无需填写
+
+        :return: The asset_id of this SmartLayerConfig.
+        :rtype: str
+        """
+        return self._asset_id
+
+    @asset_id.setter
+    def asset_id(self, asset_id):
+        """Sets the asset_id of this SmartLayerConfig.
+
+        图层所需资产的资产id，外部资产信息无需填写
+
+        :param asset_id: The asset_id of this SmartLayerConfig.
+        :type asset_id: str
+        """
+        self._asset_id = asset_id
 
     @property
     def position(self):

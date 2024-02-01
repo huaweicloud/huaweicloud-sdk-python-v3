@@ -944,9 +944,9 @@ class AomAsyncClient(Client):
         return http_info
 
     def list_agents_async(self, request):
-        """查询集群主机安装的ICAgent信息
+        """查询主机安装的ICAgent信息
 
-        该接口用于查询集群主机安装的ICAgent信息。
+        该接口用于查询集群主机或用户自定义主机安装的ICAgent信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2301,6 +2301,8 @@ class AomAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
 
         form_params = {}
 
@@ -2595,9 +2597,9 @@ class AomAsyncClient(Client):
         return http_info
 
     def list_instant_query_aom_prom_get_async(self, request):
-        """瞬时数据查询
+        """GET方法查询瞬时数据
 
-        该接口用于查询PromQL(Prometheus Query Language)在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用GET方法查询PromQL(Prometheus Query Language)在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2662,9 +2664,9 @@ class AomAsyncClient(Client):
         return http_info
 
     def list_instant_query_aom_prom_post_async(self, request):
-        """瞬时数据查询
+        """（推荐）POST方法查询瞬时数据
 
-        该接口用于查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口使用POST方法查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2794,9 +2796,9 @@ class AomAsyncClient(Client):
         return http_info
 
     def list_labels_aom_prom_get_async(self, request):
-        """获取标签名列表
+        """GET方法获取标签名列表
 
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用GET方法获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2857,9 +2859,9 @@ class AomAsyncClient(Client):
         return http_info
 
     def list_labels_aom_prom_post_async(self, request):
-        """获取标签名列表
+        """（推荐）POST方法获取标签名列表
 
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用POST方法获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2983,9 +2985,9 @@ class AomAsyncClient(Client):
         return http_info
 
     def list_range_query_aom_prom_get_async(self, request):
-        """区间数据查询
+        """GET方法查询区间数据
 
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用GET方法查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3054,9 +3056,9 @@ class AomAsyncClient(Client):
         return http_info
 
     def list_range_query_aom_prom_post_async(self, request):
-        """区间数据查询
+        """（推荐）POST方法查询区间数据
 
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用POST方法查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

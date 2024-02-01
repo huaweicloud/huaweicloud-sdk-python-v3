@@ -17,28 +17,35 @@ class DeleteConnectorRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'body': 'object'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'body': 'body'
     }
 
-    def __init__(self, instance_id=None):
+    def __init__(self, instance_id=None, body=None):
         """DeleteConnectorRequest
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 实例ID。
         :type instance_id: str
+        :param body: Body of the DeleteConnectorRequest
+        :type body: object
         """
         
         
 
         self._instance_id = None
+        self._body = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if body is not None:
+            self.body = body
 
     @property
     def instance_id(self):
@@ -61,6 +68,24 @@ class DeleteConnectorRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def body(self):
+        """Gets the body of this DeleteConnectorRequest.
+
+        :return: The body of this DeleteConnectorRequest.
+        :rtype: object
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this DeleteConnectorRequest.
+
+        :param body: The body of this DeleteConnectorRequest.
+        :type body: object
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

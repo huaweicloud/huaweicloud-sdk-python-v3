@@ -71,7 +71,7 @@ class CBHInstances:
         :type availability_zone: str
         :param slave_availability_zone: 创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
         :type slave_availability_zone: str
-        :param charging_mode: 计费模式。 - 0 包周期计费。 - 1 按需计费，部分局点支持。
+        :param charging_mode: 计费模式。 - 0 包周期计费。
         :type charging_mode: int
         :param period_type: 订购周期类型。（包周期模式必传） - 2：月 - 3：年
         :type period_type: int
@@ -275,7 +275,7 @@ class CBHInstances:
     def charging_mode(self):
         """Gets the charging_mode of this CBHInstances.
 
-        计费模式。 - 0 包周期计费。 - 1 按需计费，部分局点支持。
+        计费模式。 - 0 包周期计费。
 
         :return: The charging_mode of this CBHInstances.
         :rtype: int
@@ -286,7 +286,7 @@ class CBHInstances:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this CBHInstances.
 
-        计费模式。 - 0 包周期计费。 - 1 按需计费，部分局点支持。
+        计费模式。 - 0 包周期计费。
 
         :param charging_mode: The charging_mode of this CBHInstances.
         :type charging_mode: int

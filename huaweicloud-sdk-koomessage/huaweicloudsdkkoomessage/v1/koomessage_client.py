@@ -761,6 +761,7 @@ class KooMessageClient(Client):
         用于用户创建个人模板。
         
         &gt; 请求中所有字符串不允许携带“&lt;”、“&gt;”、“\\&amp;amp;amp;”或多个空格。
+        &gt; 模板内容需加“拒收请回复R”。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

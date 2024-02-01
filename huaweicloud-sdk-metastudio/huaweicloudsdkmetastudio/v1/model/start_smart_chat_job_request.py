@@ -33,11 +33,11 @@ class StartSmartChatJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
+        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
         :type x_app_user_id: str
-        :param room_id: 直播间ID。
+        :param room_id: 直播间ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
         :type room_id: str
-        :param robot_id: 机器人ID。
+        :param robot_id: 应用ID，获取方法请参考[[创建应用](https://support.huaweicloud.com/api-metastudio/CreateRobot.html)](tag:hc,hk)[“创建应用”](tag:cmcc)。
         :type robot_id: str
         """
         
@@ -57,7 +57,7 @@ class StartSmartChatJobRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this StartSmartChatJobRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        开发者应用作为资产权属的可选字段。
 
         :return: The x_app_user_id of this StartSmartChatJobRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class StartSmartChatJobRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this StartSmartChatJobRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        开发者应用作为资产权属的可选字段。
 
         :param x_app_user_id: The x_app_user_id of this StartSmartChatJobRequest.
         :type x_app_user_id: str
@@ -79,7 +79,7 @@ class StartSmartChatJobRequest:
     def room_id(self):
         """Gets the room_id of this StartSmartChatJobRequest.
 
-        直播间ID。
+        直播间ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
 
         :return: The room_id of this StartSmartChatJobRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class StartSmartChatJobRequest:
     def room_id(self, room_id):
         """Sets the room_id of this StartSmartChatJobRequest.
 
-        直播间ID。
+        直播间ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
 
         :param room_id: The room_id of this StartSmartChatJobRequest.
         :type room_id: str
@@ -101,7 +101,7 @@ class StartSmartChatJobRequest:
     def robot_id(self):
         """Gets the robot_id of this StartSmartChatJobRequest.
 
-        机器人ID。
+        应用ID，获取方法请参考[[创建应用](https://support.huaweicloud.com/api-metastudio/CreateRobot.html)](tag:hc,hk)[“创建应用”](tag:cmcc)。
 
         :return: The robot_id of this StartSmartChatJobRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class StartSmartChatJobRequest:
     def robot_id(self, robot_id):
         """Sets the robot_id of this StartSmartChatJobRequest.
 
-        机器人ID。
+        应用ID，获取方法请参考[[创建应用](https://support.huaweicloud.com/api-metastudio/CreateRobot.html)](tag:hc,hk)[“创建应用”](tag:cmcc)。
 
         :param robot_id: The robot_id of this StartSmartChatJobRequest.
         :type robot_id: str

@@ -17,20 +17,24 @@ class LiveAudioConfig:
     sensitive_list = []
 
     openapi_types = {
+        'asset_id': 'str',
         'audio_url': 'str',
         'subtitle_url': 'str'
     }
 
     attribute_map = {
+        'asset_id': 'asset_id',
         'audio_url': 'audio_url',
         'subtitle_url': 'subtitle_url'
     }
 
-    def __init__(self, audio_url=None, subtitle_url=None):
+    def __init__(self, asset_id=None, audio_url=None, subtitle_url=None):
         """LiveAudioConfig
 
         The model defined in huaweicloud sdk
 
+        :param asset_id: 插入音频资产的资产id，外部资产信息无需填写
+        :type asset_id: str
         :param audio_url: 音频URL。仅支持MP3格式，大小&lt;100MB。输出会自动转化为单声道16KHZ采样。
         :type audio_url: str
         :param subtitle_url: 音频对应的字幕文件URL。仅SRT格式，大小&lt;1MB。
@@ -39,14 +43,39 @@ class LiveAudioConfig:
         
         
 
+        self._asset_id = None
         self._audio_url = None
         self._subtitle_url = None
         self.discriminator = None
 
+        if asset_id is not None:
+            self.asset_id = asset_id
         if audio_url is not None:
             self.audio_url = audio_url
         if subtitle_url is not None:
             self.subtitle_url = subtitle_url
+
+    @property
+    def asset_id(self):
+        """Gets the asset_id of this LiveAudioConfig.
+
+        插入音频资产的资产id，外部资产信息无需填写
+
+        :return: The asset_id of this LiveAudioConfig.
+        :rtype: str
+        """
+        return self._asset_id
+
+    @asset_id.setter
+    def asset_id(self, asset_id):
+        """Sets the asset_id of this LiveAudioConfig.
+
+        插入音频资产的资产id，外部资产信息无需填写
+
+        :param asset_id: The asset_id of this LiveAudioConfig.
+        :type asset_id: str
+        """
+        self._asset_id = asset_id
 
     @property
     def audio_url(self):

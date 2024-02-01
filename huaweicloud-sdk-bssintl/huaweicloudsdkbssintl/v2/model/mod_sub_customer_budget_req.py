@@ -20,17 +20,19 @@ class ModSubCustomerBudgetReq:
         'customer_id': 'str',
         'budget_amount': 'float',
         'cancel_partner_frozen': 'str',
-        'indirect_partner_id': 'str'
+        'indirect_partner_id': 'str',
+        'budget_type': 'str'
     }
 
     attribute_map = {
         'customer_id': 'customer_id',
         'budget_amount': 'budget_amount',
         'cancel_partner_frozen': 'cancel_partner_frozen',
-        'indirect_partner_id': 'indirect_partner_id'
+        'indirect_partner_id': 'indirect_partner_id',
+        'budget_type': 'budget_type'
     }
 
-    def __init__(self, customer_id=None, budget_amount=None, cancel_partner_frozen=None, indirect_partner_id=None):
+    def __init__(self, customer_id=None, budget_amount=None, cancel_partner_frozen=None, indirect_partner_id=None, budget_type=None):
         """ModSubCustomerBudgetReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ModSubCustomerBudgetReq:
         :type cancel_partner_frozen: str
         :param indirect_partner_id: 云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
+        :param budget_type: |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
+        :type budget_type: str
         """
         
         
@@ -51,6 +55,7 @@ class ModSubCustomerBudgetReq:
         self._budget_amount = None
         self._cancel_partner_frozen = None
         self._indirect_partner_id = None
+        self._budget_type = None
         self.discriminator = None
 
         self.customer_id = customer_id
@@ -59,6 +64,8 @@ class ModSubCustomerBudgetReq:
             self.cancel_partner_frozen = cancel_partner_frozen
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
+        if budget_type is not None:
+            self.budget_type = budget_type
 
     @property
     def customer_id(self):
@@ -147,6 +154,28 @@ class ModSubCustomerBudgetReq:
         :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
+
+    @property
+    def budget_type(self):
+        """Gets the budget_type of this ModSubCustomerBudgetReq.
+
+        |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
+
+        :return: The budget_type of this ModSubCustomerBudgetReq.
+        :rtype: str
+        """
+        return self._budget_type
+
+    @budget_type.setter
+    def budget_type(self, budget_type):
+        """Sets the budget_type of this ModSubCustomerBudgetReq.
+
+        |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
+
+        :param budget_type: The budget_type of this ModSubCustomerBudgetReq.
+        :type budget_type: str
+        """
+        self._budget_type = budget_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -231,6 +231,7 @@ from huaweicloudsdkgaussdb.v3.model.mysql_resize_flavor import MysqlResizeFlavor
 from huaweicloudsdkgaussdb.v3.model.mysql_restore_point import MysqlRestorePoint
 from huaweicloudsdkgaussdb.v3.model.mysql_show_proxy_response_v3 import MysqlShowProxyResponseV3
 from huaweicloudsdkgaussdb.v3.model.mysql_tags import MysqlTags
+from huaweicloudsdkgaussdb.v3.model.mysql_tde_info import MysqlTdeInfo
 from huaweicloudsdkgaussdb.v3.model.mysql_update_backup_policy_request import MysqlUpdateBackupPolicyRequest
 from huaweicloudsdkgaussdb.v3.model.mysql_update_instance_name_request import MysqlUpdateInstanceNameRequest
 from huaweicloudsdkgaussdb.v3.model.mysql_volume import MysqlVolume

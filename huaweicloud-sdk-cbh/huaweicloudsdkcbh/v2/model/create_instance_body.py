@@ -38,7 +38,8 @@ class CreateInstanceBody:
         self._server = None
         self.discriminator = None
 
-        self.server = server
+        if server is not None:
+            self.server = server
 
     @property
     def server(self):

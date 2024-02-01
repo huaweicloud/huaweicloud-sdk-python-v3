@@ -844,7 +844,7 @@ class DwsClient(Client):
     def check_disaster_name(self, request):
         """检查容灾名称
 
-        检查容灾名称
+        该接口用于查询容灾名称是否可用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1516,7 +1516,9 @@ class DwsClient(Client):
     def create_disaster_recovery(self, request):
         """创建容灾
 
-        创建容灾
+        该接口用于创建集群间容灾。
+        集群处于可用状态或者非均衡状态才可进行创建容灾操作。
+        仅支持DWS 2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2245,7 +2247,10 @@ class DwsClient(Client):
     def delete_disaster_recovery(self, request):
         """删除容灾
 
-        删除容灾。
+        该接口用于删除容灾操作。
+        容灾状态为“创建失败”、“未启动”、“启动失败”、“已停止”、“停止失败”和“异常”时可以执行删除容灾操作。
+        删除后，将无法进行数据同步，且不可恢复，请谨慎操作。
+        仅支持DWS 2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3112,7 +3117,7 @@ class DwsClient(Client):
     def enable_logical_cluster(self, request):
         """切换逻辑集群开关
 
-        此接口用于切换逻辑集群开关。
+        此接口用于切换逻辑集群开关，仅用于控制逻辑集群相关功能模块是否在页面展示。在集群已经是逻辑集群的场景下，修改该接口无任何作用及影响。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3378,7 +3383,12 @@ class DwsClient(Client):
     def execute_redistribution_cluster(self, request):
         """下发重分布
 
-        下发重分布
+        该接口用于集群扩容后将老节点数据均匀分布到新扩节点的数据重分布操作，数据“重分布”后将大大提升业务响应速率。
+        重分布功能DWS 2.0 8.1.1.200及以上集群版本支持。
+        离线调度重分布模式在8.2.0及以上版本将不再支持。
+        只有在扩容之后，集群任务信息为“待重分布”状态时才能手动使用“重分布”功能，其他时段该功能不可使用。
+        在扩容阶段也可以选择重分布模式等高级配置，详情参见设置高级配置。
+        重分布队列的排序依据表的relpage大小进行，为确保relpage大小正确，建议在重分布之前对需要重分布的表执行analyze操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3910,7 +3920,7 @@ class DwsClient(Client):
     def list_available_disaster_clusters(self, request):
         """查询可用容灾集群列表
 
-        查询可用容灾集群列表
+        该接口用于查询可用的容灾集群列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4871,7 +4881,8 @@ class DwsClient(Client):
     def list_disaster_recover(self, request):
         """查询容灾列表
 
-        查询容灾列表
+        该接口用于查询容灾列表。
+        仅支持DWS 2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7400,7 +7411,10 @@ class DwsClient(Client):
     def pause_disaster_recovery(self, request):
         """停止容灾
 
-        停止容灾
+        该接口用于停止容灾操作。
+        容灾状态为“运行中”和“停止失败”时可以执行停止容灾操作。
+        停止后，将无法进行数据同步，请谨慎操作。
+        仅支持DWS 2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7867,7 +7881,10 @@ class DwsClient(Client):
     def restore_disaster(self, request):
         """恢复容灾
 
-        恢复容灾
+        该接口用于主备集群进行异常切换，备集群恢复可用状态后进行的容灾恢复操作。
+        容灾恢复仅8.1.2及以上集群版本支持。
+        容灾恢复会删除灾备集群数据与新生产集群重新建立容灾关系。
+        仅支持DWS 2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7932,7 +7949,7 @@ class DwsClient(Client):
     def restore_redistribution(self, request):
         """恢复重分布
 
-        此接口用于恢复重分布。
+        此接口用于恢复暂停状态下的重分布操作,仅支持DWS2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8133,7 +8150,8 @@ class DwsClient(Client):
     def show_cluster_redistribution(self, request):
         """查询重分布详情
 
-        查询重分布详情
+        该接口用于查看当前集群的重分布模式、重分布进度、数据表重分布详情等监控信息。
+        查看重分布详情功能DWS 2.0 8.1.1.200及以上集群版本支持，其中数据表重分布进度详情仅DWS 2.0 8.2.1及以上集群版本支持。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8416,7 +8434,7 @@ class DwsClient(Client):
     def show_disaster_detail(self, request):
         """查询容灾详情
 
-        查询容灾详情。
+        该接口用于查询单个容灾详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8481,7 +8499,7 @@ class DwsClient(Client):
     def show_disaster_progress(self, request):
         """容灾-查询容灾进度详情
 
-        容灾-查询容灾进度详情
+        该接口用于查询容灾进度详情信息操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9015,7 +9033,11 @@ class DwsClient(Client):
     def start_disaster_recovery(self, request):
         """启动容灾
 
-        启动容灾
+        该接口用于启动容灾操作。
+        容灾状态为“未启动”、“启动失败”和“已停止”时可以执行启动容灾操作。
+        启动容灾后，生产集群和灾备集群将无法进行恢复、扩容、升级、重启、节点替换、更新密码等操作，此外，灾备集群将无法进行备份操作，请谨慎操作。
+        当容灾启动后，如果灾备集群容灾正常运行且容灾处于恢复状态中，此状态的集群会计费。
+        仅支持DWS 2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9147,7 +9169,8 @@ class DwsClient(Client):
     def stop_redistribution(self, request):
         """暂停重分布
 
-        此接口用于暂停重分布。
+        该接口用于暂停运行状态下的重分布操作，重分布暂停状态可设置重分布优先级，修改重分布并发数等操作。
+        仅支持DWS 2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9279,7 +9302,11 @@ class DwsClient(Client):
     def switch_failover_disaster(self, request):
         """容灾异常切换
 
-        容灾-异常切换
+        该接口用于容灾异常场景下进行主备集群切换操作。
+        “异常切换”按钮用于容灾异常或者生产集群故障情况下主备切换操作。
+        容灾异常切换仅8.1.2及以上集群版本支持。
+        异常切换会将灾备集群升为主，若原生产集群故障后存在部分数据未同步到灾备集群，那灾备集群升主后将缺少这些数据，切换时请确认容灾最后同步时间，谨慎操作。
+        仅支持DWS 2.0集群
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9480,7 +9507,14 @@ class DwsClient(Client):
     def switchover_disaster_recovery(self, request):
         """灾备切换
 
-        容灾-灾备切换
+        该接口用于容灾进行灾备切换操作。
+        “灾备切换”按钮用于在容灾正常情况下主备倒换操作。
+        容灾状态为“运行中”时可以执行灾备切换操作。
+        灾备切换需要一定时间，在此期间，原生产集群将可不用。
+        不同场景下进行灾备切换，RPO（Recovery Point Object，灾难发生后，系统和数据必须恢复到的时间点要求。）说明如下：
+          生产集群在“可用”的状态下，RPO&#x3D;0。
+          生产集群在“不可用”的状态下，无法保证RPO&#x3D;0，但数据至少可恢复到生产集群“最近容灾成功时间”。
+        仅支持DWS 2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10018,7 +10052,9 @@ class DwsClient(Client):
     def update_disaster_info(self, request):
         """更新容灾配置
 
-        更新容灾配置
+        该接口用于更新容灾配置操作。
+        容灾状态为“未启动”或“已停止”时，可以执行容灾配置修改操作。
+        新的配置在容灾重新启动后生效。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

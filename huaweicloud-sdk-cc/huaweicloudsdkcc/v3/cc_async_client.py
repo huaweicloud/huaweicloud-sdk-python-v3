@@ -3621,6 +3621,859 @@ class CcAsyncClient(Client):
 
         return http_info
 
+    def associate_global_connection_bandwidth_instance_async(self, request):
+        """全域互联带宽绑定实例
+
+        全域互联带宽绑定实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateGlobalConnectionBandwidthInstance
+        :type request: :class:`huaweicloudsdkcc.v3.AssociateGlobalConnectionBandwidthInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.AssociateGlobalConnectionBandwidthInstanceResponse`
+        """
+        http_info = self._associate_global_connection_bandwidth_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def associate_global_connection_bandwidth_instance_async_invoker(self, request):
+        http_info = self._associate_global_connection_bandwidth_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_global_connection_bandwidth_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcb/gcbandwidths/{id}/associate-instance",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateGlobalConnectionBandwidthInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_global_connection_bandwidth_async(self, request):
+        """创建全域互联带宽
+
+        创建全域互联带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateGlobalConnectionBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.CreateGlobalConnectionBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateGlobalConnectionBandwidthResponse`
+        """
+        http_info = self._create_global_connection_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_global_connection_bandwidth_async_invoker(self, request):
+        http_info = self._create_global_connection_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_global_connection_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcb/gcbandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGlobalConnectionBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_global_connection_bandwidth_async(self, request):
+        """删除全域互联带宽
+
+        删除全域互联带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGlobalConnectionBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteGlobalConnectionBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteGlobalConnectionBandwidthResponse`
+        """
+        http_info = self._delete_global_connection_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_global_connection_bandwidth_async_invoker(self, request):
+        http_info = self._delete_global_connection_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_global_connection_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/gcb/gcbandwidths/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGlobalConnectionBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def disassociate_global_connection_bandwidth_instance_async(self, request):
+        """全域互联带宽解绑实例
+
+        全域互联带宽解绑实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisassociateGlobalConnectionBandwidthInstance
+        :type request: :class:`huaweicloudsdkcc.v3.DisassociateGlobalConnectionBandwidthInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DisassociateGlobalConnectionBandwidthInstanceResponse`
+        """
+        http_info = self._disassociate_global_connection_bandwidth_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def disassociate_global_connection_bandwidth_instance_async_invoker(self, request):
+        http_info = self._disassociate_global_connection_bandwidth_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_global_connection_bandwidth_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcb/gcbandwidths/{id}/disassociate-instance",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateGlobalConnectionBandwidthInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_global_connection_bandwidth_configs_async(self, request):
+        """查询全域互联带宽租户配置信息
+
+        查询全域互联带宽租户配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGlobalConnectionBandwidthConfigs
+        :type request: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthConfigsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthConfigsResponse`
+        """
+        http_info = self._list_global_connection_bandwidth_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_global_connection_bandwidth_configs_async_invoker(self, request):
+        http_info = self._list_global_connection_bandwidth_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_connection_bandwidth_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcb/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalConnectionBandwidthConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_global_connection_bandwidth_line_levels_async(self, request):
+        """查询线路等级列表
+
+        查询线路等级列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGlobalConnectionBandwidthLineLevels
+        :type request: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthLineLevelsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthLineLevelsResponse`
+        """
+        http_info = self._list_global_connection_bandwidth_line_levels_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_global_connection_bandwidth_line_levels_async_invoker(self, request):
+        http_info = self._list_global_connection_bandwidth_line_levels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_connection_bandwidth_line_levels_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcb/line-levels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalConnectionBandwidthLineLevelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'local_area' in local_var_params:
+            query_params.append(('local_area', local_var_params['local_area']))
+        if 'remote_area' in local_var_params:
+            query_params.append(('remote_area', local_var_params['remote_area']))
+        if 'levels' in local_var_params:
+            query_params.append(('levels', local_var_params['levels']))
+            collection_formats['levels'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_global_connection_bandwidth_sites_async(self, request):
+        """查询站点列表
+
+        查询站点列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGlobalConnectionBandwidthSites
+        :type request: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthSitesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthSitesResponse`
+        """
+        http_info = self._list_global_connection_bandwidth_sites_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_global_connection_bandwidth_sites_async_invoker(self, request):
+        http_info = self._list_global_connection_bandwidth_sites_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_connection_bandwidth_sites_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcb/sites",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalConnectionBandwidthSitesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'site_code' in local_var_params:
+            query_params.append(('site_code', local_var_params['site_code']))
+        if 'site_type' in local_var_params:
+            query_params.append(('site_type', local_var_params['site_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_global_connection_bandwidth_spec_codes_async(self, request):
+        """查询线路规格列表
+
+        查询线路规格列表。租户白名单控制，默认为空。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGlobalConnectionBandwidthSpecCodes
+        :type request: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthSpecCodesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthSpecCodesResponse`
+        """
+        http_info = self._list_global_connection_bandwidth_spec_codes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_global_connection_bandwidth_spec_codes_async_invoker(self, request):
+        http_info = self._list_global_connection_bandwidth_spec_codes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_connection_bandwidth_spec_codes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcb/spec-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalConnectionBandwidthSpecCodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'local_area' in local_var_params:
+            query_params.append(('local_area', local_var_params['local_area']))
+        if 'remote_area' in local_var_params:
+            query_params.append(('remote_area', local_var_params['remote_area']))
+        if 'level' in local_var_params:
+            query_params.append(('level', local_var_params['level']))
+            collection_formats['level'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_global_connection_bandwidths_async(self, request):
+        """查询全域互联带宽列表
+
+        查询全域互联带宽列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGlobalConnectionBandwidths
+        :type request: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthsResponse`
+        """
+        http_info = self._list_global_connection_bandwidths_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_global_connection_bandwidths_async_invoker(self, request):
+        http_info = self._list_global_connection_bandwidths_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_connection_bandwidths_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcb/gcbandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalConnectionBandwidthsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
+        if 'binding_service' in local_var_params:
+            query_params.append(('binding_service', local_var_params['binding_service']))
+            collection_formats['binding_service'] = 'csv'
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+        if 'charge_mode' in local_var_params:
+            query_params.append(('charge_mode', local_var_params['charge_mode']))
+            collection_formats['charge_mode'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_support_binding_connection_bandwidths_async(self, request):
+        """查询符合绑定条件的全域互联带宽列表
+
+        查询符合绑定条件的全域互联带宽列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSupportBindingConnectionBandwidths
+        :type request: :class:`huaweicloudsdkcc.v3.ListSupportBindingConnectionBandwidthsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListSupportBindingConnectionBandwidthsResponse`
+        """
+        http_info = self._list_support_binding_connection_bandwidths_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_support_binding_connection_bandwidths_async_invoker(self, request):
+        http_info = self._list_support_binding_connection_bandwidths_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_support_binding_connection_bandwidths_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcb/gcbandwidths/support-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupportBindingConnectionBandwidthsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
+        if 'local_area' in local_var_params:
+            query_params.append(('local_area', local_var_params['local_area']))
+        if 'remote_area' in local_var_params:
+            query_params.append(('remote_area', local_var_params['remote_area']))
+        if 'binding_service' in local_var_params:
+            query_params.append(('binding_service', local_var_params['binding_service']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_global_connection_bandwidth_async(self, request):
+        """查询全域互联带宽详情
+
+        查询全域互联带宽详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGlobalConnectionBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.ShowGlobalConnectionBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowGlobalConnectionBandwidthResponse`
+        """
+        http_info = self._show_global_connection_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_global_connection_bandwidth_async_invoker(self, request):
+        http_info = self._show_global_connection_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_global_connection_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcb/gcbandwidths/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGlobalConnectionBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_global_connection_bandwidth_async(self, request):
+        """更新全域互联带宽详情
+
+        更新全域互联带宽详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGlobalConnectionBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateGlobalConnectionBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateGlobalConnectionBandwidthResponse`
+        """
+        http_info = self._update_global_connection_bandwidth_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_global_connection_bandwidth_async_invoker(self, request):
+        http_info = self._update_global_connection_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_global_connection_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/gcb/gcbandwidths/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGlobalConnectionBandwidthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_inter_region_bandwidth_async(self, request):
         """创建域间带宽实例
 

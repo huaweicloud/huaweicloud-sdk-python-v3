@@ -31,7 +31,7 @@ class CreateRobotRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
+        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
         :type x_app_user_id: str
         :param body: Body of the CreateRobotRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateRobotReq`
@@ -52,7 +52,7 @@ class CreateRobotRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this CreateRobotRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        开发者应用作为资产权属的可选字段。
 
         :return: The x_app_user_id of this CreateRobotRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class CreateRobotRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this CreateRobotRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        开发者应用作为资产权属的可选字段。
 
         :param x_app_user_id: The x_app_user_id of this CreateRobotRequest.
         :type x_app_user_id: str

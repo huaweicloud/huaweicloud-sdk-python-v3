@@ -22,10 +22,14 @@ class RobotInfo:
         'app_id': 'str',
         'app_type': 'int',
         'concurrency': 'int',
+        'language': 'LanguageEnum',
         'create_time': 'str',
         'update_time': 'str',
         'region': 'int',
-        'cbs_project_id': 'str'
+        'cbs_project_id': 'str',
+        'llm_url': 'str',
+        'is_stream': 'bool',
+        'chat_rounds': 'int'
     }
 
     attribute_map = {
@@ -34,13 +38,17 @@ class RobotInfo:
         'app_id': 'app_id',
         'app_type': 'app_type',
         'concurrency': 'concurrency',
+        'language': 'language',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'region': 'region',
-        'cbs_project_id': 'cbs_project_id'
+        'cbs_project_id': 'cbs_project_id',
+        'llm_url': 'llm_url',
+        'is_stream': 'is_stream',
+        'chat_rounds': 'chat_rounds'
     }
 
-    def __init__(self, robot_id=None, name=None, app_id=None, app_type=None, concurrency=None, create_time=None, update_time=None, region=None, cbs_project_id=None):
+    def __init__(self, robot_id=None, name=None, app_id=None, app_type=None, concurrency=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None):
         """RobotInfo
 
         The model defined in huaweicloud sdk
@@ -51,10 +59,12 @@ class RobotInfo:
         :type name: str
         :param app_id: 第三方应用ID。
         :type app_id: str
-        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
         :type app_type: int
         :param concurrency: 对话的并发数
         :type concurrency: int
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -63,6 +73,12 @@ class RobotInfo:
         :type region: int
         :param cbs_project_id: CBS所在区域的projectId
         :type cbs_project_id: str
+        :param llm_url: 第三方语言模型地址。
+        :type llm_url: str
+        :param is_stream: 是否采用流式响应。
+        :type is_stream: bool
+        :param chat_rounds: 支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
+        :type chat_rounds: int
         """
         
         
@@ -72,10 +88,14 @@ class RobotInfo:
         self._app_id = None
         self._app_type = None
         self._concurrency = None
+        self._language = None
         self._create_time = None
         self._update_time = None
         self._region = None
         self._cbs_project_id = None
+        self._llm_url = None
+        self._is_stream = None
+        self._chat_rounds = None
         self.discriminator = None
 
         if robot_id is not None:
@@ -88,6 +108,8 @@ class RobotInfo:
             self.app_type = app_type
         if concurrency is not None:
             self.concurrency = concurrency
+        if language is not None:
+            self.language = language
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -96,6 +118,12 @@ class RobotInfo:
             self.region = region
         if cbs_project_id is not None:
             self.cbs_project_id = cbs_project_id
+        if llm_url is not None:
+            self.llm_url = llm_url
+        if is_stream is not None:
+            self.is_stream = is_stream
+        if chat_rounds is not None:
+            self.chat_rounds = chat_rounds
 
     @property
     def robot_id(self):
@@ -167,7 +195,7 @@ class RobotInfo:
     def app_type(self):
         """Gets the app_type of this RobotInfo.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
 
         :return: The app_type of this RobotInfo.
         :rtype: int
@@ -178,7 +206,7 @@ class RobotInfo:
     def app_type(self, app_type):
         """Sets the app_type of this RobotInfo.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
 
         :param app_type: The app_type of this RobotInfo.
         :type app_type: int
@@ -206,6 +234,24 @@ class RobotInfo:
         :type concurrency: int
         """
         self._concurrency = concurrency
+
+    @property
+    def language(self):
+        """Gets the language of this RobotInfo.
+
+        :return: The language of this RobotInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this RobotInfo.
+
+        :param language: The language of this RobotInfo.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     @property
     def create_time(self):
@@ -294,6 +340,72 @@ class RobotInfo:
         :type cbs_project_id: str
         """
         self._cbs_project_id = cbs_project_id
+
+    @property
+    def llm_url(self):
+        """Gets the llm_url of this RobotInfo.
+
+        第三方语言模型地址。
+
+        :return: The llm_url of this RobotInfo.
+        :rtype: str
+        """
+        return self._llm_url
+
+    @llm_url.setter
+    def llm_url(self, llm_url):
+        """Sets the llm_url of this RobotInfo.
+
+        第三方语言模型地址。
+
+        :param llm_url: The llm_url of this RobotInfo.
+        :type llm_url: str
+        """
+        self._llm_url = llm_url
+
+    @property
+    def is_stream(self):
+        """Gets the is_stream of this RobotInfo.
+
+        是否采用流式响应。
+
+        :return: The is_stream of this RobotInfo.
+        :rtype: bool
+        """
+        return self._is_stream
+
+    @is_stream.setter
+    def is_stream(self, is_stream):
+        """Sets the is_stream of this RobotInfo.
+
+        是否采用流式响应。
+
+        :param is_stream: The is_stream of this RobotInfo.
+        :type is_stream: bool
+        """
+        self._is_stream = is_stream
+
+    @property
+    def chat_rounds(self):
+        """Gets the chat_rounds of this RobotInfo.
+
+        支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
+
+        :return: The chat_rounds of this RobotInfo.
+        :rtype: int
+        """
+        return self._chat_rounds
+
+    @chat_rounds.setter
+    def chat_rounds(self, chat_rounds):
+        """Sets the chat_rounds of this RobotInfo.
+
+        支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
+
+        :param chat_rounds: The chat_rounds of this RobotInfo.
+        :type chat_rounds: int
+        """
+        self._chat_rounds = chat_rounds
 
     def to_dict(self):
         """Returns the model properties as a dict"""

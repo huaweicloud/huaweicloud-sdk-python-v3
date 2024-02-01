@@ -20,17 +20,19 @@ class DigitalAssetSummary:
         'asset_id': 'str',
         'asset_name': 'str',
         'asset_type': 'str',
-        'cover_url': 'str'
+        'cover_url': 'str',
+        'thumbnail_url': 'str'
     }
 
     attribute_map = {
         'asset_id': 'asset_id',
         'asset_name': 'asset_name',
         'asset_type': 'asset_type',
-        'cover_url': 'cover_url'
+        'cover_url': 'cover_url',
+        'thumbnail_url': 'thumbnail_url'
     }
 
-    def __init__(self, asset_id=None, asset_name=None, asset_type=None, cover_url=None):
+    def __init__(self, asset_id=None, asset_name=None, asset_type=None, cover_url=None, thumbnail_url=None):
         """DigitalAssetSummary
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class DigitalAssetSummary:
         :type asset_type: str
         :param cover_url: 封面图片路径。
         :type cover_url: str
+        :param thumbnail_url: 缩略图路径。
+        :type thumbnail_url: str
         """
         
         
@@ -51,6 +55,7 @@ class DigitalAssetSummary:
         self._asset_name = None
         self._asset_type = None
         self._cover_url = None
+        self._thumbnail_url = None
         self.discriminator = None
 
         if asset_id is not None:
@@ -61,6 +66,8 @@ class DigitalAssetSummary:
             self.asset_type = asset_type
         if cover_url is not None:
             self.cover_url = cover_url
+        if thumbnail_url is not None:
+            self.thumbnail_url = thumbnail_url
 
     @property
     def asset_id(self):
@@ -149,6 +156,28 @@ class DigitalAssetSummary:
         :type cover_url: str
         """
         self._cover_url = cover_url
+
+    @property
+    def thumbnail_url(self):
+        """Gets the thumbnail_url of this DigitalAssetSummary.
+
+        缩略图路径。
+
+        :return: The thumbnail_url of this DigitalAssetSummary.
+        :rtype: str
+        """
+        return self._thumbnail_url
+
+    @thumbnail_url.setter
+    def thumbnail_url(self, thumbnail_url):
+        """Sets the thumbnail_url of this DigitalAssetSummary.
+
+        缩略图路径。
+
+        :param thumbnail_url: The thumbnail_url of this DigitalAssetSummary.
+        :type thumbnail_url: str
+        """
+        self._thumbnail_url = thumbnail_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

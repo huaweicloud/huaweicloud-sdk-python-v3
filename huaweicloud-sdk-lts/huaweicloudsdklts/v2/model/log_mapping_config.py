@@ -53,12 +53,10 @@ class LogMappingConfig:
         self._log_stream_config = None
         self.discriminator = None
 
-        if source_log_group_id is not None:
-            self.source_log_group_id = source_log_group_id
+        self.source_log_group_id = source_log_group_id
         if target_log_group_id is not None:
             self.target_log_group_id = target_log_group_id
-        if target_log_group_name is not None:
-            self.target_log_group_name = target_log_group_name
+        self.target_log_group_name = target_log_group_name
         if log_stream_config is not None:
             self.log_stream_config = log_stream_config
 

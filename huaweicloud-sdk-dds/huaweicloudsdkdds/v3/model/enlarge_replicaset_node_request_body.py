@@ -33,7 +33,7 @@ class EnlargeReplicasetNodeRequestBody:
 
         :param num: 副本集节点扩容个数，副本集有3个节点时，可以扩容2/4个节点，副本集有5个节点时，只能扩容2个
         :type num: int
-        :param is_auto_pay: 变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - 对于降低规格场景，该字段无效。 - 对于扩大规格场景：   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
+        :param is_auto_pay: 扩容包年包月实例的节点数量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
         :type is_auto_pay: bool
         """
         
@@ -73,7 +73,7 @@ class EnlargeReplicasetNodeRequestBody:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this EnlargeReplicasetNodeRequestBody.
 
-        变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - 对于降低规格场景，该字段无效。 - 对于扩大规格场景：   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
+        扩容包年包月实例的节点数量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
 
         :return: The is_auto_pay of this EnlargeReplicasetNodeRequestBody.
         :rtype: bool
@@ -84,7 +84,7 @@ class EnlargeReplicasetNodeRequestBody:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this EnlargeReplicasetNodeRequestBody.
 
-        变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - 对于降低规格场景，该字段无效。 - 对于扩大规格场景：   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
+        扩容包年包月实例的节点数量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
 
         :param is_auto_pay: The is_auto_pay of this EnlargeReplicasetNodeRequestBody.
         :type is_auto_pay: bool

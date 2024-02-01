@@ -426,6 +426,8 @@ class NatClient(Client):
         if 'protocol' in local_var_params:
             query_params.append(('protocol', local_var_params['protocol']))
             collection_formats['protocol'] = 'csv'
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -2075,6 +2077,8 @@ class NatClient(Client):
             query_params.append(('router_id', local_var_params['router_id']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -3326,6 +3330,8 @@ class NatClient(Client):
             query_params.append(('source_type', local_var_params['source_type']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

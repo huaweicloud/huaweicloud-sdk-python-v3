@@ -18,7 +18,7 @@ class ResetConsumeOffsetReq:
 
     openapi_types = {
         'topic': 'str',
-        'timestamp': 'float'
+        'timestamp': 'str'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ResetConsumeOffsetReq:
         :param topic: 重置的主题。
         :type topic: str
         :param timestamp: 重置的时间。
-        :type timestamp: float
+        :type timestamp: str
         """
         
         
@@ -75,7 +75,7 @@ class ResetConsumeOffsetReq:
         重置的时间。
 
         :return: The timestamp of this ResetConsumeOffsetReq.
-        :rtype: float
+        :rtype: str
         """
         return self._timestamp
 
@@ -86,7 +86,7 @@ class ResetConsumeOffsetReq:
         重置的时间。
 
         :param timestamp: The timestamp of this ResetConsumeOffsetReq.
-        :type timestamp: float
+        :type timestamp: str
         """
         self._timestamp = timestamp
 

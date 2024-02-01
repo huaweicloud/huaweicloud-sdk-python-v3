@@ -38,7 +38,8 @@ class MysqlInstanceRequest:
         'lower_case_table_names': 'int',
         'enterprise_project_id': 'str',
         'dedicated_resource_id': 'str',
-        'restore_point': 'MysqlRestorePoint'
+        'restore_point': 'MysqlRestorePoint',
+        'tde_info': 'MysqlTdeInfo'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class MysqlInstanceRequest:
         'lower_case_table_names': 'lower_case_table_names',
         'enterprise_project_id': 'enterprise_project_id',
         'dedicated_resource_id': 'dedicated_resource_id',
-        'restore_point': 'restore_point'
+        'restore_point': 'restore_point',
+        'tde_info': 'tde_info'
     }
 
-    def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, lower_case_table_names=None, enterprise_project_id=None, dedicated_resource_id=None, restore_point=None):
+    def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, lower_case_table_names=None, enterprise_project_id=None, dedicated_resource_id=None, restore_point=None, tde_info=None):
         """MysqlInstanceRequest
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class MysqlInstanceRequest:
         :type dedicated_resource_id: str
         :param restore_point: 
         :type restore_point: :class:`huaweicloudsdkgaussdb.v3.MysqlRestorePoint`
+        :param tde_info: 
+        :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
         """
         
         
@@ -141,6 +145,7 @@ class MysqlInstanceRequest:
         self._enterprise_project_id = None
         self._dedicated_resource_id = None
         self._restore_point = None
+        self._tde_info = None
         self.discriminator = None
 
         if charge_info is not None:
@@ -177,6 +182,8 @@ class MysqlInstanceRequest:
             self.dedicated_resource_id = dedicated_resource_id
         if restore_point is not None:
             self.restore_point = restore_point
+        if tde_info is not None:
+            self.tde_info = tde_info
 
     @property
     def charge_info(self):
@@ -637,6 +644,24 @@ class MysqlInstanceRequest:
         :type restore_point: :class:`huaweicloudsdkgaussdb.v3.MysqlRestorePoint`
         """
         self._restore_point = restore_point
+
+    @property
+    def tde_info(self):
+        """Gets the tde_info of this MysqlInstanceRequest.
+
+        :return: The tde_info of this MysqlInstanceRequest.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
+        """
+        return self._tde_info
+
+    @tde_info.setter
+    def tde_info(self, tde_info):
+        """Sets the tde_info of this MysqlInstanceRequest.
+
+        :param tde_info: The tde_info of this MysqlInstanceRequest.
+        :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
+        """
+        self._tde_info = tde_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

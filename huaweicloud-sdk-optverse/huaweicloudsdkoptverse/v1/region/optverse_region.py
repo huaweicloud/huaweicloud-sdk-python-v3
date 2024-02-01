@@ -7,7 +7,7 @@ class OptVerseRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("OPTVERSE")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://optverse.cn-north-4.huaweicloud.com")
+                        "https://optverse.cn-north-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

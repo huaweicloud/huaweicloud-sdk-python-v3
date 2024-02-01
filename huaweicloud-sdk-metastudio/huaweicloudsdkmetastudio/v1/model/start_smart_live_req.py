@@ -22,7 +22,8 @@ class StartSmartLiveReq:
         'output_urls': 'list[str]',
         'stream_keys': 'list[str]',
         'interaction_callback_url': 'str',
-        'live_event_callback_config': 'LiveEventCallBackConfig'
+        'live_event_callback_config': 'LiveEventCallBackConfig',
+        'view_mode': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class StartSmartLiveReq:
         'output_urls': 'output_urls',
         'stream_keys': 'stream_keys',
         'interaction_callback_url': 'interaction_callback_url',
-        'live_event_callback_config': 'live_event_callback_config'
+        'live_event_callback_config': 'live_event_callback_config',
+        'view_mode': 'view_mode'
     }
 
-    def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None):
+    def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None, view_mode=None):
         """StartSmartLiveReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class StartSmartLiveReq:
         :type interaction_callback_url: str
         :param live_event_callback_config: 
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :type view_mode: str
         """
         
         
@@ -61,6 +65,7 @@ class StartSmartLiveReq:
         self._stream_keys = None
         self._interaction_callback_url = None
         self._live_event_callback_config = None
+        self._view_mode = None
         self.discriminator = None
 
         if video_config is not None:
@@ -75,6 +80,8 @@ class StartSmartLiveReq:
             self.interaction_callback_url = interaction_callback_url
         if live_event_callback_config is not None:
             self.live_event_callback_config = live_event_callback_config
+        if view_mode is not None:
+            self.view_mode = view_mode
 
     @property
     def video_config(self):
@@ -195,6 +202,28 @@ class StartSmartLiveReq:
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
         """
         self._live_event_callback_config = live_event_callback_config
+
+    @property
+    def view_mode(self):
+        """Gets the view_mode of this StartSmartLiveReq.
+
+        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :return: The view_mode of this StartSmartLiveReq.
+        :rtype: str
+        """
+        return self._view_mode
+
+    @view_mode.setter
+    def view_mode(self, view_mode):
+        """Sets the view_mode of this StartSmartLiveReq.
+
+        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :param view_mode: The view_mode of this StartSmartLiveReq.
+        :type view_mode: str
+        """
+        self._view_mode = view_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -39,7 +39,7 @@ class PlayPolicy:
         :type repeat_count: int
         :param auto_play_script: 是否自动播放剧本。 true: 服务完成任务初始化后，自动播放剧本 false: 服务完成任务初始化后，等待信号后再开始播放剧本
         :type auto_play_script: bool
-        :param play_mode: 驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+        :param play_mode: 驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动 * NO_PRESET: 无预置剧本。人工控制模式。
         :type play_mode: str
         :param random_play_mode: 随机播报模式。 * NONE: 不启动随机播报。 * SCENE: 按场景随机播报。场景内段落按顺序播报。 * SCRIPT_ITEM：按段落随机播报。场景按顺序播报。 * SCENE_AND_SCRIPT_ITEM： 场景和段落都随机播报。
         :type random_play_mode: str
@@ -110,7 +110,7 @@ class PlayPolicy:
     def play_mode(self):
         """Gets the play_mode of this PlayPolicy.
 
-        驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+        驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动 * NO_PRESET: 无预置剧本。人工控制模式。
 
         :return: The play_mode of this PlayPolicy.
         :rtype: str
@@ -121,7 +121,7 @@ class PlayPolicy:
     def play_mode(self, play_mode):
         """Sets the play_mode of this PlayPolicy.
 
-        驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+        驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动 * NO_PRESET: 无预置剧本。人工控制模式。
 
         :param play_mode: The play_mode of this PlayPolicy.
         :type play_mode: str

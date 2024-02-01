@@ -39,6 +39,8 @@ from huaweicloudsdkmetastudio.v1.model.confirm_training_segment_request import C
 from huaweicloudsdkmetastudio.v1.model.confirm_training_segment_response import ConfirmTrainingSegmentResponse
 from huaweicloudsdkmetastudio.v1.model.control_digital_human_live_req import ControlDigitalHumanLiveReq
 from huaweicloudsdkmetastudio.v1.model.control_smart_live_req import ControlSmartLiveReq
+from huaweicloudsdkmetastudio.v1.model.copy_video_scripts_request import CopyVideoScriptsRequest
+from huaweicloudsdkmetastudio.v1.model.copy_video_scripts_response import CopyVideoScriptsResponse
 from huaweicloudsdkmetastudio.v1.model.create2_d_digital_human_video_req import Create2DDigitalHumanVideoReq
 from huaweicloudsdkmetastudio.v1.model.create2_d_digital_human_video_request import Create2DDigitalHumanVideoRequest
 from huaweicloudsdkmetastudio.v1.model.create2_d_digital_human_video_response import Create2DDigitalHumanVideoResponse
@@ -138,6 +140,7 @@ from huaweicloudsdkmetastudio.v1.model.execute_smart_live_command_request import
 from huaweicloudsdkmetastudio.v1.model.execute_smart_live_command_response import ExecuteSmartLiveCommandResponse
 from huaweicloudsdkmetastudio.v1.model.execute_video_motion_capture_command_request import ExecuteVideoMotionCaptureCommandRequest
 from huaweicloudsdkmetastudio.v1.model.execute_video_motion_capture_command_response import ExecuteVideoMotionCaptureCommandResponse
+from huaweicloudsdkmetastudio.v1.model.external_voice_asset_meta import ExternalVoiceAssetMeta
 from huaweicloudsdkmetastudio.v1.model.files_create_req import FilesCreateReq
 from huaweicloudsdkmetastudio.v1.model.hit_condition import HitCondition
 from huaweicloudsdkmetastudio.v1.model.hit_condition_tag import HitConditionTag
@@ -161,6 +164,7 @@ from huaweicloudsdkmetastudio.v1.model.job_state import JobState
 from huaweicloudsdkmetastudio.v1.model.job_tag import JobTag
 from huaweicloudsdkmetastudio.v1.model.job_type import JobType
 from huaweicloudsdkmetastudio.v1.model.language_check_info_req import LanguageCheckInfoReq
+from huaweicloudsdkmetastudio.v1.model.language_enum import LanguageEnum
 from huaweicloudsdkmetastudio.v1.model.layer_config import LayerConfig
 from huaweicloudsdkmetastudio.v1.model.layer_position_config import LayerPositionConfig
 from huaweicloudsdkmetastudio.v1.model.layer_size_config import LayerSizeConfig
@@ -185,6 +189,8 @@ from huaweicloudsdkmetastudio.v1.model.list_robot_request import ListRobotReques
 from huaweicloudsdkmetastudio.v1.model.list_robot_response import ListRobotResponse
 from huaweicloudsdkmetastudio.v1.model.list_smart_chat_rooms_request import ListSmartChatRoomsRequest
 from huaweicloudsdkmetastudio.v1.model.list_smart_chat_rooms_response import ListSmartChatRoomsResponse
+from huaweicloudsdkmetastudio.v1.model.list_smart_live_jobs_request import ListSmartLiveJobsRequest
+from huaweicloudsdkmetastudio.v1.model.list_smart_live_jobs_response import ListSmartLiveJobsResponse
 from huaweicloudsdkmetastudio.v1.model.list_smart_live_request import ListSmartLiveRequest
 from huaweicloudsdkmetastudio.v1.model.list_smart_live_response import ListSmartLiveResponse
 from huaweicloudsdkmetastudio.v1.model.list_smart_live_rooms_request import ListSmartLiveRoomsRequest
@@ -211,6 +217,7 @@ from huaweicloudsdkmetastudio.v1.model.live_video_script_info import LiveVideoSc
 from huaweicloudsdkmetastudio.v1.model.live_warning_item import LiveWarningItem
 from huaweicloudsdkmetastudio.v1.model.material_asset_meta import MaterialAssetMeta
 from huaweicloudsdkmetastudio.v1.model.material_component_info import MaterialComponentInfo
+from huaweicloudsdkmetastudio.v1.model.mobvoi_voice_asset_meta import MobvoiVoiceAssetMeta
 from huaweicloudsdkmetastudio.v1.model.model_info import ModelInfo
 from huaweicloudsdkmetastudio.v1.model.motion_item import MotionItem
 from huaweicloudsdkmetastudio.v1.model.multipart_upload_info import MultipartUploadInfo
@@ -308,6 +315,7 @@ from huaweicloudsdkmetastudio.v1.model.system_property import SystemProperty
 from huaweicloudsdkmetastudio.v1.model.ttsa_job import TTSAJob
 from huaweicloudsdkmetastudio.v1.model.text_config import TextConfig
 from huaweicloudsdkmetastudio.v1.model.text_layer_config import TextLayerConfig
+from huaweicloudsdkmetastudio.v1.model.third_party_model_config import ThirdPartyModelConfig
 from huaweicloudsdkmetastudio.v1.model.training_job_basic_info import TrainingJobBasicInfo
 from huaweicloudsdkmetastudio.v1.model.training_job_info import TrainingJobInfo
 from huaweicloudsdkmetastudio.v1.model.trigger_process import TriggerProcess

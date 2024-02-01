@@ -33,11 +33,11 @@ class Agency:
 
         The model defined in huaweicloud sdk
 
-        :param provider_name: 用户使用的provider的名字。如果用户给与的provider_name含有重复的值，则返回400
+        :param provider_name: 用户使用的provider的名字。如果用户给予的provider_name含有重复的值，则返回400
         :type provider_name: str
         :param agency_name: 对应provider所使用的IAM委托名称，资源编排服务会使用此委托的权限去访问、创建对应provider的资源。agency_name和agency_urn必须有且只有一个存在
         :type agency_name: str
-        :param agency_urn: 委托URN  当用户定义Agency时，agency_name和agency_urn 必须有且只有一个存在。  推荐用户在使用v5委托时给与agency_urn，agency_name只支持接收普通委托名称，若给与了v5委托名称，则会在部署模板时失败。
+        :param agency_urn: 委托URN  当用户定义Agency时，agency_name和agency_urn 必须有且只有一个存在。  推荐用户在使用v5委托时给予agency_urn，agency_name只支持接收普通委托名称，若给予了v5委托名称，则会在部署模板时失败。
         :type agency_urn: str
         """
         
@@ -58,7 +58,7 @@ class Agency:
     def provider_name(self):
         """Gets the provider_name of this Agency.
 
-        用户使用的provider的名字。如果用户给与的provider_name含有重复的值，则返回400
+        用户使用的provider的名字。如果用户给予的provider_name含有重复的值，则返回400
 
         :return: The provider_name of this Agency.
         :rtype: str
@@ -69,7 +69,7 @@ class Agency:
     def provider_name(self, provider_name):
         """Sets the provider_name of this Agency.
 
-        用户使用的provider的名字。如果用户给与的provider_name含有重复的值，则返回400
+        用户使用的provider的名字。如果用户给予的provider_name含有重复的值，则返回400
 
         :param provider_name: The provider_name of this Agency.
         :type provider_name: str
@@ -102,7 +102,7 @@ class Agency:
     def agency_urn(self):
         """Gets the agency_urn of this Agency.
 
-        委托URN  当用户定义Agency时，agency_name和agency_urn 必须有且只有一个存在。  推荐用户在使用v5委托时给与agency_urn，agency_name只支持接收普通委托名称，若给与了v5委托名称，则会在部署模板时失败。
+        委托URN  当用户定义Agency时，agency_name和agency_urn 必须有且只有一个存在。  推荐用户在使用v5委托时给予agency_urn，agency_name只支持接收普通委托名称，若给予了v5委托名称，则会在部署模板时失败。
 
         :return: The agency_urn of this Agency.
         :rtype: str
@@ -113,7 +113,7 @@ class Agency:
     def agency_urn(self, agency_urn):
         """Sets the agency_urn of this Agency.
 
-        委托URN  当用户定义Agency时，agency_name和agency_urn 必须有且只有一个存在。  推荐用户在使用v5委托时给与agency_urn，agency_name只支持接收普通委托名称，若给与了v5委托名称，则会在部署模板时失败。
+        委托URN  当用户定义Agency时，agency_name和agency_urn 必须有且只有一个存在。  推荐用户在使用v5委托时给予agency_urn，agency_name只支持接收普通委托名称，若给予了v5委托名称，则会在部署模板时失败。
 
         :param agency_urn: The agency_urn of this Agency.
         :type agency_urn: str

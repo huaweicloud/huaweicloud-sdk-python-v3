@@ -25,6 +25,7 @@ class ExecutionPlanItem:
         'provider_name': 'str',
         'mode': 'str',
         'drifted': 'bool',
+        'imported': 'bool',
         'resource_id': 'str',
         'attributes': 'list[ExecutionPlanDiffAttribute]'
     }
@@ -38,11 +39,12 @@ class ExecutionPlanItem:
         'provider_name': 'provider_name',
         'mode': 'mode',
         'drifted': 'drifted',
+        'imported': 'imported',
         'resource_id': 'resource_id',
         'attributes': 'attributes'
     }
 
-    def __init__(self, resource_type=None, resource_name=None, index=None, action=None, action_reason=None, provider_name=None, mode=None, drifted=None, resource_id=None, attributes=None):
+    def __init__(self, resource_type=None, resource_name=None, index=None, action=None, action_reason=None, provider_name=None, mode=None, drifted=None, imported=None, resource_id=None, attributes=None):
         """ExecutionPlanItem
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ExecutionPlanItem:
         :type mode: str
         :param drifted: 当前资源的变更是否由偏差导致。  偏差，也叫漂移。指的是资源被资源编排服务创建以后，又经历过非资源编排服务触发的修改，如手动修改、调用SDK修改等，使得资源的配置与本服务所记录的资源的配置不一致。这种不一致便称为偏差。  当资源产生偏差以后： * 如果用户试图创建执行计划，则会提示用户产生偏差 * 如果用户直接部署，则偏差有可能被覆盖，资源编排服务只保证资源和模板最终一致。  资源的偏差有两种类型： * 资源定位属性被修改：如果是定位属性被修改，常见于删除后重建，此时资源已经不属于同一个资源。资源编排服务会认为此资源已经被删除，会尝试创建一个新的资源。 * 资源普通属性被修改：如果是普通属性被修改，则资源编排服务依然可以找到资源，但是下次部署会尝试修复偏差，即将资源保持和模板最终一致。  **注：资源编排服务团队极力推荐，如果资源是通过本服务创建的，请一直使用本服务进行维护和更新以确保资源和模板保持一致。建议非紧急事件以外的情况不要手动调整。**
         :type drifted: bool
+        :param imported: 当前资源的变更是否是导入的。
+        :type imported: bool
         :param resource_id: 资源的物理id，是唯一id，由为该资源提供服务的provider、云服务或其他服务提供方在资源部署的时候生成
         :type resource_id: str
         :param attributes: 执行计划项目中变更的属性，当无属性变更时为空列表。
@@ -79,6 +83,7 @@ class ExecutionPlanItem:
         self._provider_name = None
         self._mode = None
         self._drifted = None
+        self._imported = None
         self._resource_id = None
         self._attributes = None
         self.discriminator = None
@@ -99,6 +104,8 @@ class ExecutionPlanItem:
             self.mode = mode
         if drifted is not None:
             self.drifted = drifted
+        if imported is not None:
+            self.imported = imported
         if resource_id is not None:
             self.resource_id = resource_id
         if attributes is not None:
@@ -279,6 +286,28 @@ class ExecutionPlanItem:
         :type drifted: bool
         """
         self._drifted = drifted
+
+    @property
+    def imported(self):
+        """Gets the imported of this ExecutionPlanItem.
+
+        当前资源的变更是否是导入的。
+
+        :return: The imported of this ExecutionPlanItem.
+        :rtype: bool
+        """
+        return self._imported
+
+    @imported.setter
+    def imported(self, imported):
+        """Sets the imported of this ExecutionPlanItem.
+
+        当前资源的变更是否是导入的。
+
+        :param imported: The imported of this ExecutionPlanItem.
+        :type imported: bool
+        """
+        self._imported = imported
 
     @property
     def resource_id(self):

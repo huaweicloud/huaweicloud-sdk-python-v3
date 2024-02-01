@@ -1,3 +1,582 @@
+# 3.1.80 2024-02-01
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEvents**
+    - 响应参数变更
+      - `* events.annotations: map<string, string> -> map<string, object>`
+      - `* events.attach_rule: map<string, string> -> map<string, object>`
+  - **PushEvents**
+    - 请求参数变更
+      - `* events.annotations: map<string, string> -> map<string, object>`
+      - `* events.attach_rule: map<string, string> -> map<string, object>`
+  - **CreatePromInstance**
+    - 请求参数变更
+      - `+ region`
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持接口`CreatePrivateProvider`、`CreatePrivateProviderVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **GetExecutionPlan**
+    - 响应参数变更
+      - `+ execution_plan_items.imported`
+  - **GetExecutionPlanMetadata**
+    - 响应参数变更
+      - `+ summary.resource_import`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSubCustomerBudget**
+    - 响应参数变更
+      - `+ budget_type`
+  - **UpdateSubCustomerBudget**
+    - 请求参数变更
+      - `+ budget_type`
+  - **ListCustomerselfResourceRecordDetails**
+    - 请求参数变更
+      - `+ query_type`
+      - `+ bill_cycle_begin`
+      - `+ bill_cycle_end`
+
+### HuaweiCloud SDK CC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListGcbResourceTags`
+    - `CreateGcbResourceTag`
+    - `DeleteGcbResourceTag`
+    - `BatchCreateGcbResourceTags`
+    - `BatchDeleteGcbResourceTags`
+    - `CountGcbResourceByTag`
+    - `ListGcbResourceByTag`
+    - `ListGcbTenantTags`
+    - `ListGlobalConnectionBandwidths`
+    - `CreateGlobalConnectionBandwidth`
+    - `ShowGlobalConnectionBandwidth`
+    - `UpdateGlobalConnectionBandwidth`
+    - `DeleteGlobalConnectionBandwidth`
+    - `AssociateGlobalConnectionBandwidthInstance`
+    - `DisassociateGlobalConnectionBandwidthInstance`
+    - `ListSupportBindingConnectionBandwidths`
+    - `ListGlobalConnectionBandwidthConfigs`
+    - `ListGlobalConnectionBandwidthSpecCodes`
+    - `ListGlobalConnectionBandwidthSites`
+    - `ListGlobalConnectionBandwidthLineLevels`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持接口`ShowLogs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListProcesses**
+    - 请求参数变更
+      - `+ node_id`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFactoryJob**
+    - 请求参数变更
+      - `+ single_node_job_type: enum value [NormalJob,OneClick]`
+      - `- single_node_job_type: enum value [DataMigration]`
+      - `+ nodes.type: enum value [DataMigration]`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `+ singleNodeJobType: enum value [NormalJob,OneClick]`
+      - `- singleNodeJobType: enum value [DataMigration]`
+      - `+ nodes.type: enum value [DataMigration]`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ nodes.type: enum value [DataMigration]`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ singleNodeJobType: enum value [NormalJob,OneClick]`
+      - `- singleNodeJobType: enum value [DataMigration]`
+      - `+ nodes.type: enum value [DataMigration]`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `+ dependJobs.singleNodeJobType: enum value [NormalJob,OneClick]`
+      - `- dependJobs.singleNodeJobType: enum value [DataMigration]`
+      - `+ dependJobs.nodes.type: enum value [DataMigration]`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSparkJobs**
+    - 请求参数变更
+      - `+ job_name`
+      - `- job-name`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDatabaseUser**
+    - 响应参数变更
+      - `+ user_type`
+      - `+ name`
+      - `+ logical_cluster`
+      - `+ desc`
+  - **ResizeClusterWithExistedNodes**
+    - 请求参数变更
+      - `- resize`
+      - `- create_node_only`
+      - `- is_scheduler_build_mode`
+      - `- build_task_info`
+      - `- order_id`
+      - `- redis_conf.schedule_conf`
+      - `- redis_conf.parallel_job`
+      - `* redis_conf: object<RedisConf> -> object<RedisConfReq>`
+  - **UpdateDatabaseAuthority**
+    - 请求参数变更
+      - `+ all_object`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateGaussMySqlInstance**
+    - 请求参数变更
+      - `+ tde_info`
+  - **ShowGaussMySqlInstanceInfoUnifyStatus**
+    - 响应参数变更
+      - `+ instance.tde_info`
+  - **ListGaussMySqlInstanceDetailInfoUnifyStatus**
+    - 响应参数变更
+      - `+ instances.tde_info`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CreateShrinkageJob`、`ShowShrinkCheckResult`、`UpdateSinkTaskQuota`
+  - **CreateInstanceTopic**
+    - 响应参数变更
+      - `- id`
+
+### HuaweiCloud SDK KooMessage
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAimTemplateReports**
+    - 请求参数变更
+      - `+ factory_type`
+  - **CreateVmsTemplate**
+    - 请求参数变更
+      - `+ is_draft`
+  - **ListVmsTemplateStatus**
+    - 请求参数变更
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 支持接口`ListSmartLiveJobs`、`CopyVideoScripts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRobot**
+    - 响应参数变更
+      - `+ llm_url`
+      - `+ chat_rounds`
+      - `+ is_stream`
+      - `+ language`
+      - `+ data.language`
+      - `+ data.llm_url`
+      - `+ data.is_stream`
+      - `+ data.chat_rounds`
+  - **CreateRobot**
+    - 请求参数变更
+      - `+ language`
+      - `+ third_party_model_config`
+  - **ShowRobot**
+    - 响应参数变更
+      - `+ llm_url`
+      - `+ chat_rounds`
+      - `+ is_stream`
+      - `+ language`
+  - **UpdateRobot**
+    - 请求参数变更
+      - `+ language`
+      - `+ third_party_model_config`
+  - **ListAssetSummary**
+    - 响应参数变更
+      - `+ asset_list.thumbnail_url`
+  - **ListDigitalHumanVideo**
+    - 响应参数变更
+      - `+ jobs.job_type`
+  - **CreateSmartChatRoom**
+    - 请求参数变更
+      - `+ layer_config.asset_id`
+      - `+ layer_config.video_config.loop_count`
+  - **ShowSmartChatRoom**
+    - 响应参数变更
+      - `+ layer_config.asset_id`
+      - `+ layer_config.video_config.loop_count`
+  - **UpdateSmartChatRoom**
+    - 请求参数变更
+      - `+ layer_config.asset_id`
+      - `+ layer_config.video_config.loop_count`
+    - 响应参数变更
+      - `+ layer_config.asset_id`
+      - `+ layer_config.video_config.loop_count`
+  - **ShowSmartLive**
+    - 响应参数变更
+      - `+ room_id`
+      - `+ cover_url`
+      - `+ room_name`
+  - **CheckTextLanguage**
+    - 请求参数变更
+      - `+ shoot_script.audio_config.asset_id`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ app_user_id`
+      - `- is_need_generate_cover`
+      - `+ asset_extra_meta.voice_model_meta.order`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.human_model_2d_meta.model_version: enum value [V3_2]`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ shared_config`
+      - `- is_need_generate_cover`
+      - `+ asset_extra_meta.voice_model_meta.order`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.human_model_2d_meta.model_version: enum value [V3_2]`
+    - 响应参数变更
+      - `+ app_user_id`
+      - `- is_need_generate_cover`
+      - `+ asset_extra_meta.voice_model_meta.order`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.human_model_2d_meta.model_version: enum value [V3_2]`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `+ view_mode`
+      - `+ play_policy.play_mode: enum value [NO_PRESET]`
+  - **ListSmartLive**
+    - 响应参数变更
+      - `+ room_id`
+      - `+ cover_url`
+      - `+ room_name`
+      - `+ smart_live_jobs.room_id`
+      - `+ smart_live_jobs.room_name`
+      - `+ smart_live_jobs.cover_url`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ shared_config`
+      - `- is_need_generate_cover`
+      - `+ asset_extra_meta.voice_model_meta.order`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.human_model_2d_meta.model_version: enum value [V3_2]`
+  - **ListAssets**
+    - 请求参数变更
+      - `+ is_movable`
+      - `+ voice_provider`
+      - `+ role`
+    - 响应参数变更
+      - `+ app_user_id`
+      - `- is_need_generate_cover`
+      - `+ assets.app_user_id`
+      - `- assets.is_need_generate_cover`
+      - `+ assets.asset_extra_meta.voice_model_meta.order`
+      - `+ assets.asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.model_version: enum value [V3_2]`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.layer_config.asset_id`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.loop_count`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ job_type`
+      - `+ shoot_scripts.shoot_script.layer_config.asset_id`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.loop_count`
+  - **CreatePhotoDigitalHumanVideo**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.layer_config.asset_id`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.loop_count`
+  - **ShowPhotoDigitalHumanVideo**
+    - 响应参数变更
+      - `+ job_type`
+      - `+ shoot_scripts.shoot_script.layer_config.asset_id`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.loop_count`
+  - **ListSmartLiveRooms**
+    - 请求参数变更
+      - `+ template_own_type`
+    - 响应参数变更
+      - `+ smart_live_rooms.project_id`
+      - `+ smart_live_rooms.shared_config`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ view_mode`
+      - `+ play_policy.play_mode: enum value [NO_PRESET]`
+      - `+ scene_scripts.layer_config.asset_id`
+      - `+ scene_scripts.layer_config.video_config.loop_count`
+      - `+ scene_scripts.shoot_scripts.audio_config.asset_id`
+      - `+ interaction_rules.trigger.layer_config.asset_id`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ view_mode`
+      - `+ play_policy.play_mode: enum value [NO_PRESET]`
+      - `+ scene_scripts.layer_config.asset_id`
+      - `+ scene_scripts.layer_config.video_config.loop_count`
+      - `+ scene_scripts.shoot_scripts.audio_config.asset_id`
+      - `+ interaction_rules.trigger.layer_config.asset_id`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ view_mode`
+      - `+ play_policy.play_mode: enum value [NO_PRESET]`
+      - `+ scene_scripts.layer_config.asset_id`
+      - `+ scene_scripts.layer_config.video_config.loop_count`
+      - `+ scene_scripts.shoot_scripts.audio_config.asset_id`
+      - `+ interaction_rules.trigger.layer_config.asset_id`
+    - 响应参数变更
+      - `+ view_mode`
+      - `+ play_policy.play_mode: enum value [NO_PRESET]`
+      - `+ scene_scripts.layer_config.asset_id`
+      - `+ scene_scripts.layer_config.video_config.loop_count`
+      - `+ scene_scripts.shoot_scripts.audio_config.asset_id`
+      - `+ interaction_rules.trigger.layer_config.asset_id`
+  - **UpdateInteractionRuleGroup**
+    - 请求参数变更
+      - `+ interaction_rules.trigger.layer_config.asset_id`
+    - 响应参数变更
+      - `+ interaction_rules.trigger.layer_config.asset_id`
+  - **CreateVideoScripts**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.layer_config.asset_id`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.loop_count`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ shoot_scripts.shoot_script.layer_config.asset_id`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.loop_count`
+  - **UpdateVideoScript**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.layer_config.asset_id`
+      - `+ shoot_scripts.shoot_script.layer_config.video_config.loop_count`
+  - **CreateInteractionRuleGroup**
+    - 请求参数变更
+      - `+ interaction_rules.trigger.layer_config.asset_id`
+  - **ListInteractionRuleGroups**
+    - 响应参数变更
+      - `+ interaction_rule_groups.interaction_rules.trigger.layer_config.asset_id`
+
+### HuaweiCloud SDK NAT
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListNatGatewayDnatRules**
+    - 请求参数变更
+      - `+ marker`
+  - **ListNatGatewaySnatRules**
+    - 请求参数变更
+      - `+ marker`
+  - **ListNatGateways**
+    - 请求参数变更
+      - `+ marker`
+
+### HuaweiCloud SDK OMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StartTask**
+    - 请求参数变更
+      - `+ json_auth_file`
+  - **StartTaskGroup**
+    - 请求参数变更
+      - `+ json_auth_file`
+  - **RetryTaskGroup**
+    - 请求参数变更
+      - `+ json_auth_file`
+  - **ShowBucketList**
+    - 请求参数变更
+      - `+ json_auth_file`
+  - **ShowBucketRegion**
+    - 请求参数变更
+      - `+ json_auth_file`
+  - **CheckPrefix**
+    - 请求参数变更
+      - `+ json_auth_file`
+  - **ShowBucketObjects**
+    - 请求参数变更
+      - `+ json_auth_file`
+  - **ShowCdnInfo**
+    - 请求参数变更
+      - `+ source_cdn.authentication_type: enum value [AZURE_SAS_TOKEN]`
+  - **CreateSyncTask**
+    - 请求参数变更
+      - `+ dst_storage_policy`
+      - `+ source_cdn.authentication_type: enum value [AZURE_SAS_TOKEN]`
+  - **ShowTaskGroup**
+    - 响应参数变更
+      - `+ dst_storage_policy`
+      - `+ src_node.cloud_type: enum value [GOOGLE]`
+      - `+ src_node.list_file.list_file_num`
+  - **CreateTask**
+    - 请求参数变更
+      - `+ dst_storage_policy`
+      - `+ source_cdn.authentication_type: enum value [AZURE_SAS_TOKEN]`
+      - `+ smn_config.message_template_name`
+      - `+ src_node.json_auth_file`
+      - `+ src_node.list_file.list_file_num`
+  - **ListTasks**
+    - 响应参数变更
+      - `+ dst_storage_policy`
+      - `+ tasks.dst_storage_policy`
+      - `+ tasks.src_node.cloud_type: enum value [Google]`
+      - `+ tasks.src_node.list_file.list_file_num`
+  - **CreateTaskGroup**
+    - 请求参数变更
+      - `+ dst_storage_policy`
+      - `+ smn_config.message_template_name`
+      - `+ source_cdn.authentication_type: enum value [AZURE_SAS_TOKEN]`
+      - `+ src_node.json_auth_file`
+      - `+ src_node.list_file.list_file_num`
+  - **ListTaskGroup**
+    - 响应参数变更
+      - `+ dst_storage_policy`
+      - `+ taskgroups.dst_storage_policy`
+      - `+ taskgroups.src_node.cloud_type: enum value [GOOGLE]`
+      - `+ taskgroups.src_node.list_file.list_file_num`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持以下接口：
+    - `StartInstanceReduceVolumeAction`
+    - `UpdateHostPrivilege`
+    - `ShowIncreBackupPolicy1`
+    - `UpdateIncreBackupPolicy1`
+    - `ListRdSforMySqlProxy`
+    - `DeleteRdSforMySqlProxy`
+    - `ModifyRdSforMySqlProxyRouteMode`
+    - `RestartRdSforMysqlProxy`
+    - `ListRdSforMysqlProxyFlavors`
+    - `CreateRdSforMySqlProxy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SetAuditlogPolicy**
+    - 请求参数变更
+      - `+ audit_types`
+  - **CreateDbUser**
+    - 请求参数变更
+      - `+ is_privilege`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowGroup**
+    - 响应参数变更
+      - `* retry_max_time: number -> int32`
+  - **UpdateConsumerGroup**
+    - 请求参数变更
+      - `* retry_max_time: number -> int32`
+  - **ResetConsumeOffset**
+    - 请求参数变更
+      - `* timestamp: number -> string`
+  - **CreateConsumerGroupOrBatchDeleteConsumerGroup**
+    - 请求参数变更
+      - `+ createdAt`
+      - `+ permissions`
+      - `+ consume_orderly`
+      - `- from_beginning`
+      - `* retry_max_time: number -> int32`
+  - **ListInstanceConsumerGroups**
+    - 响应参数变更
+      - `+ groups.createdAt`
+      - `+ groups.permissions`
+      - `+ groups.consume_orderly`
+      - `- groups.from_beginning`
+      - `* groups.retry_max_time: number -> int32`
+  - **BatchUpdateConsumerGroup**
+    - 请求参数变更
+      - `+ groups.createdAt`
+      - `+ groups.permissions`
+      - `+ groups.consume_orderly`
+      - `- groups.from_beginning`
+      - `* groups.retry_max_time: number -> int32`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEvent**
+    - 请求参数变更
+      - `+ X-Language`
+  - **ShowEvent**
+    - 请求参数变更
+      - `+ X-Language`
+
 # 3.1.79 2024-01-25
 
 ### HuaweiCloud SDK AOM

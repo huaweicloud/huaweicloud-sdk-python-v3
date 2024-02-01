@@ -26,7 +26,8 @@ class ListSmartLiveRoomsRequest:
         'live_state': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'room_type': 'str'
+        'room_type': 'str',
+        'template_own_type': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListSmartLiveRoomsRequest:
         'live_state': 'live_state',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'room_type': 'room_type'
+        'room_type': 'room_type',
+        'template_own_type': 'template_own_type'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_name=None, dh_id=None, model_name=None, live_state=None, start_time=None, end_time=None, room_type=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_name=None, dh_id=None, model_name=None, live_state=None, start_time=None, end_time=None, room_type=None, template_own_type=None):
         """ListSmartLiveRoomsRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListSmartLiveRoomsRequest:
         :type end_time: str
         :param room_type: 按直播间类型查询。直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
         :type room_type: str
+        :param template_own_type: 按照自己拥有的和别人分享以及公共的模板进行查询 * OWNED 自己拥有且暂未共享的 * SHARED_TO_OHTERS 分享给别人的 * SHARED_FROM_OHTERS 别人分享给我的 * PUBLIC 公共模板
+        :type template_own_type: str
         """
         
         
@@ -81,6 +85,7 @@ class ListSmartLiveRoomsRequest:
         self._start_time = None
         self._end_time = None
         self._room_type = None
+        self._template_own_type = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -103,6 +108,8 @@ class ListSmartLiveRoomsRequest:
             self.end_time = end_time
         if room_type is not None:
             self.room_type = room_type
+        if template_own_type is not None:
+            self.template_own_type = template_own_type
 
     @property
     def x_app_user_id(self):
@@ -323,6 +330,28 @@ class ListSmartLiveRoomsRequest:
         :type room_type: str
         """
         self._room_type = room_type
+
+    @property
+    def template_own_type(self):
+        """Gets the template_own_type of this ListSmartLiveRoomsRequest.
+
+        按照自己拥有的和别人分享以及公共的模板进行查询 * OWNED 自己拥有且暂未共享的 * SHARED_TO_OHTERS 分享给别人的 * SHARED_FROM_OHTERS 别人分享给我的 * PUBLIC 公共模板
+
+        :return: The template_own_type of this ListSmartLiveRoomsRequest.
+        :rtype: str
+        """
+        return self._template_own_type
+
+    @template_own_type.setter
+    def template_own_type(self, template_own_type):
+        """Sets the template_own_type of this ListSmartLiveRoomsRequest.
+
+        按照自己拥有的和别人分享以及公共的模板进行查询 * OWNED 自己拥有且暂未共享的 * SHARED_TO_OHTERS 分享给别人的 * SHARED_FROM_OHTERS 别人分享给我的 * PUBLIC 公共模板
+
+        :param template_own_type: The template_own_type of this ListSmartLiveRoomsRequest.
+        :type template_own_type: str
+        """
+        self._template_own_type = template_own_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

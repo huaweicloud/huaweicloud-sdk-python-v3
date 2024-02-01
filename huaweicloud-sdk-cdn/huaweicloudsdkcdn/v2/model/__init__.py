@@ -51,6 +51,7 @@ from huaweicloudsdkcdn.v2.model.list_cdn_domain_top_refers_request import ListCd
 from huaweicloudsdkcdn.v2.model.list_cdn_domain_top_refers_response import ListCdnDomainTopRefersResponse
 from huaweicloudsdkcdn.v2.model.list_domains_request import ListDomainsRequest
 from huaweicloudsdkcdn.v2.model.list_domains_response import ListDomainsResponse
+from huaweicloudsdkcdn.v2.model.log_object import LogObject
 from huaweicloudsdkcdn.v2.model.modify_domain_config_request_body import ModifyDomainConfigRequestBody
 from huaweicloudsdkcdn.v2.model.origin_request_header import OriginRequestHeader
 from huaweicloudsdkcdn.v2.model.origin_request_url_rewrite import OriginRequestUrlRewrite
@@ -81,6 +82,8 @@ from huaweicloudsdkcdn.v2.model.show_history_task_details_request import ShowHis
 from huaweicloudsdkcdn.v2.model.show_history_task_details_response import ShowHistoryTaskDetailsResponse
 from huaweicloudsdkcdn.v2.model.show_history_tasks_request import ShowHistoryTasksRequest
 from huaweicloudsdkcdn.v2.model.show_history_tasks_response import ShowHistoryTasksResponse
+from huaweicloudsdkcdn.v2.model.show_logs_request import ShowLogsRequest
+from huaweicloudsdkcdn.v2.model.show_logs_response import ShowLogsResponse
 from huaweicloudsdkcdn.v2.model.show_top_domain_names_request import ShowTopDomainNamesRequest
 from huaweicloudsdkcdn.v2.model.show_top_domain_names_response import ShowTopDomainNamesResponse
 from huaweicloudsdkcdn.v2.model.show_top_url_request import ShowTopUrlRequest

@@ -29,7 +29,7 @@ class BatchUpdateConsumerGroupReq:
 
         The model defined in huaweicloud sdk
 
-        :param groups: 消费组列表，当批量删除消费组时使用。
+        :param groups: 消费组列表。
         :type groups: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
         """
         
@@ -45,7 +45,7 @@ class BatchUpdateConsumerGroupReq:
     def groups(self):
         """Gets the groups of this BatchUpdateConsumerGroupReq.
 
-        消费组列表，当批量删除消费组时使用。
+        消费组列表。
 
         :return: The groups of this BatchUpdateConsumerGroupReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
@@ -56,7 +56,7 @@ class BatchUpdateConsumerGroupReq:
     def groups(self, groups):
         """Sets the groups of this BatchUpdateConsumerGroupReq.
 
-        消费组列表，当批量删除消费组时使用。
+        消费组列表。
 
         :param groups: The groups of this BatchUpdateConsumerGroupReq.
         :type groups: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]

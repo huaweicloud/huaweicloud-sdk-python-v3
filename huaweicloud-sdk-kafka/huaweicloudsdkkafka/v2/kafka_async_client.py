@@ -435,11 +435,11 @@ class KafkaAsyncClient(Client):
         return http_info
 
     def create_connector_async(self, request):
-        """创建实例的转储节点
+        """创建实例的Smart Connect节点
 
-        创建实例的转储节点。
+        创建Smart Connect节点。
         
-        **当前通过调用API，只支持按需实例创建转储节点。**
+        **当前通过调用API，只支持按需实例创建Smart Connect节点。**
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1039,75 +1039,6 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
-    def create_shrinkage_job_async(self, request):
-        """实例缩容
-
-        实例缩容
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateShrinkageJob
-        :type request: :class:`huaweicloudsdkkafka.v2.CreateShrinkageJobRequest`
-        :rtype: :class:`huaweicloudsdkkafka.v2.CreateShrinkageJobResponse`
-        """
-        http_info = self._create_shrinkage_job_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_shrinkage_job_async_invoker(self, request):
-        http_info = self._create_shrinkage_job_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_shrinkage_job_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/shrink",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateShrinkageJobResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'engine' in local_var_params:
-            path_params['engine'] = local_var_params['engine']
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_sink_task_async(self, request):
         """创建转储任务
 
@@ -1286,6 +1217,8 @@ class KafkaAsyncClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -4324,75 +4257,6 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
-    def show_shrink_check_result_async(self, request):
-        """实例缩容前置检查
-
-        实例缩容前置检查。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowShrinkCheckResult
-        :type request: :class:`huaweicloudsdkkafka.v2.ShowShrinkCheckResultRequest`
-        :rtype: :class:`huaweicloudsdkkafka.v2.ShowShrinkCheckResultResponse`
-        """
-        http_info = self._show_shrink_check_result_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_shrink_check_result_async_invoker(self, request):
-        http_info = self._show_shrink_check_result_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_shrink_check_result_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/shrink-check",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowShrinkCheckResultResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'engine' in local_var_params:
-            path_params['engine'] = local_var_params['engine']
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_sink_task_detail_async(self, request):
         """查询单个转储任务
 
@@ -4996,75 +4860,6 @@ class KafkaAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['IAM_AUTH_TYPE_NEW']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_sink_task_quota_async(self, request):
-        """修改转储任务的配额
-
-        修改转储任务的配额。
-        
-        2022年9月前创建的实例支持调用此接口新增转储任务配额，2022年9月及以后创建的实例，转储任务配额默认为最大值，由于转储任务配额不支持减少，调用此接口修改转储任务配额会报错。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateSinkTaskQuota
-        :type request: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaRequest`
-        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaResponse`
-        """
-        http_info = self._update_sink_task_quota_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_sink_task_quota_async_invoker(self, request):
-        http_info = self._update_sink_task_quota_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_sink_task_quota_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2/{project_id}/connectors/{connector_id}/sink-tasks",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateSinkTaskQuotaResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'connector_id' in local_var_params:
-            path_params['connector_id'] = local_var_params['connector_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

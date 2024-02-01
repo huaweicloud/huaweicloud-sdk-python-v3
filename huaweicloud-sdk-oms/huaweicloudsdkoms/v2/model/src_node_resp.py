@@ -41,7 +41,7 @@ class SrcNodeResp:
 
         :param bucket: 源端桶的名称。
         :type bucket: str
-        :param cloud_type: 源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        :param cloud_type: 源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Google、Qiniu、URLSource或者UCloud。默认值为Aliyun。
         :type cloud_type: str
         :param region: 源端桶所处的区域。
         :type region: str
@@ -102,7 +102,7 @@ class SrcNodeResp:
     def cloud_type(self):
         """Gets the cloud_type of this SrcNodeResp.
 
-        源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Google、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
         :return: The cloud_type of this SrcNodeResp.
         :rtype: str
@@ -113,7 +113,7 @@ class SrcNodeResp:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this SrcNodeResp.
 
-        源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Google、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
         :param cloud_type: The cloud_type of this SrcNodeResp.
         :type cloud_type: str

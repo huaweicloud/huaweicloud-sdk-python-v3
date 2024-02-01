@@ -34,7 +34,10 @@ class ListAssetsRequest:
         'sex': 'str',
         'language': 'str',
         'system_property': 'str',
-        'action_editable': 'bool'
+        'action_editable': 'bool',
+        'is_movable': 'bool',
+        'voice_provider': 'str',
+        'role': 'str'
     }
 
     attribute_map = {
@@ -55,10 +58,13 @@ class ListAssetsRequest:
         'sex': 'sex',
         'language': 'language',
         'system_property': 'system_property',
-        'action_editable': 'action_editable'
+        'action_editable': 'action_editable',
+        'is_movable': 'is_movable',
+        'voice_provider': 'voice_provider',
+        'role': 'role'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None):
         """ListAssetsRequest
 
         The model defined in huaweicloud sdk
@@ -99,6 +105,12 @@ class ListAssetsRequest:
         :type system_property: str
         :param action_editable: 动作是否可编辑。仅在分身数字人模型查询时有效。
         :type action_editable: bool
+        :param is_movable: 分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+        :type is_movable: bool
+        :param voice_provider: 可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+        :type voice_provider: str
+        :param role: 角色。 SHARER：共享方，SHAREE：被共享方
+        :type role: str
         """
         
         
@@ -121,6 +133,9 @@ class ListAssetsRequest:
         self._language = None
         self._system_property = None
         self._action_editable = None
+        self._is_movable = None
+        self._voice_provider = None
+        self._role = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -159,6 +174,12 @@ class ListAssetsRequest:
             self.system_property = system_property
         if action_editable is not None:
             self.action_editable = action_editable
+        if is_movable is not None:
+            self.is_movable = is_movable
+        if voice_provider is not None:
+            self.voice_provider = voice_provider
+        if role is not None:
+            self.role = role
 
     @property
     def x_app_user_id(self):
@@ -555,6 +576,72 @@ class ListAssetsRequest:
         :type action_editable: bool
         """
         self._action_editable = action_editable
+
+    @property
+    def is_movable(self):
+        """Gets the is_movable of this ListAssetsRequest.
+
+        分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+
+        :return: The is_movable of this ListAssetsRequest.
+        :rtype: bool
+        """
+        return self._is_movable
+
+    @is_movable.setter
+    def is_movable(self, is_movable):
+        """Sets the is_movable of this ListAssetsRequest.
+
+        分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+
+        :param is_movable: The is_movable of this ListAssetsRequest.
+        :type is_movable: bool
+        """
+        self._is_movable = is_movable
+
+    @property
+    def voice_provider(self):
+        """Gets the voice_provider of this ListAssetsRequest.
+
+        可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+
+        :return: The voice_provider of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._voice_provider
+
+    @voice_provider.setter
+    def voice_provider(self, voice_provider):
+        """Sets the voice_provider of this ListAssetsRequest.
+
+        可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+
+        :param voice_provider: The voice_provider of this ListAssetsRequest.
+        :type voice_provider: str
+        """
+        self._voice_provider = voice_provider
+
+    @property
+    def role(self):
+        """Gets the role of this ListAssetsRequest.
+
+        角色。 SHARER：共享方，SHAREE：被共享方
+
+        :return: The role of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        """Sets the role of this ListAssetsRequest.
+
+        角色。 SHARER：共享方，SHAREE：被共享方
+
+        :param role: The role of this ListAssetsRequest.
+        :type role: str
+        """
+        self._role = role
 
     def to_dict(self):
         """Returns the model properties as a dict"""

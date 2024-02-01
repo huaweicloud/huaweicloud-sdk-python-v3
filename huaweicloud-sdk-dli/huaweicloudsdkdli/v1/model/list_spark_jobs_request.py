@@ -33,7 +33,7 @@ class ListSparkJobsRequest:
         'cluster_name': 'cluster_name',
         'end': 'end',
         '_from': 'from',
-        'job_name': 'job-name',
+        'job_name': 'job_name',
         'job_id': 'job-id',
         'order': 'order',
         'queue_name': 'queue_name',

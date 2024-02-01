@@ -50,7 +50,8 @@ class CbsGetResourceIdTags:
 
         self.action = action
         self.tags = tags
-        self.sys_tags = sys_tags
+        if sys_tags is not None:
+            self.sys_tags = sys_tags
 
     @property
     def action(self):

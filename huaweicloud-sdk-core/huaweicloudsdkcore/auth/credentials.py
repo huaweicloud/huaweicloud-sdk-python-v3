@@ -79,7 +79,6 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     _TIME_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
     _X_SECURITY_TOKEN = "X-Security-Token"
     _X_AUTH_TOKEN = "X-Auth-Token"
-    _SIGNER_CACHE = {}
     _SIGNER_CASE = {
         SigningAlgorithm.HMAC_SHA256: Signer,
         SigningAlgorithm.HMAC_SM3: SM3Signer,
@@ -153,18 +152,10 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         if self._is_derived_auth(request):
             return DerivationAKSKSigner(self).sign(request, self._derived_auth_service_name, self._region_id)
 
-        signer_key = str(request.signing_algorithm) + self.ak
-        if signer_key in self._SIGNER_CACHE:
-            signer = self._SIGNER_CACHE.get(signer_key)
-        else:
-            signer_cls = self._SIGNER_CASE.get(request.signing_algorithm)
-            if not signer_cls:
-                raise SdkException("unsupported signing algorithm: " + str(request.signing_algorithm))
-
-            signer = signer_cls(self)
-            self._SIGNER_CACHE[signer_key] = signer
-
-        return signer.sign(request)
+        signer_cls = self._SIGNER_CASE.get(request.signing_algorithm)
+        if not signer_cls:
+            raise SdkException("unsupported signing algorithm: " + str(request.signing_algorithm))
+        return signer_cls(self).sign(request)
 
     def _is_derived_auth(self, request):
         if not self._derived_predicate:

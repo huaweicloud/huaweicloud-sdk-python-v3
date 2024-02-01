@@ -49,9 +49,9 @@ class DataobjectSearch:
         :type sort_by: str
         :param order: 排序方式：DESC | ASC
         :type order: str
-        :param from_date: 搜索开始时间
+        :param from_date: 搜索开始时间，例如：2023-02-20T00:00:00.000Z
         :type from_date: str
-        :param to_date: 搜索结束时间
+        :param to_date: 搜索结束时间，例如：2023-02-27T23:59:59.999Z
         :type to_date: str
         :param condition: 
         :type condition: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
@@ -175,7 +175,7 @@ class DataobjectSearch:
     def from_date(self):
         """Gets the from_date of this DataobjectSearch.
 
-        搜索开始时间
+        搜索开始时间，例如：2023-02-20T00:00:00.000Z
 
         :return: The from_date of this DataobjectSearch.
         :rtype: str
@@ -186,7 +186,7 @@ class DataobjectSearch:
     def from_date(self, from_date):
         """Sets the from_date of this DataobjectSearch.
 
-        搜索开始时间
+        搜索开始时间，例如：2023-02-20T00:00:00.000Z
 
         :param from_date: The from_date of this DataobjectSearch.
         :type from_date: str
@@ -197,7 +197,7 @@ class DataobjectSearch:
     def to_date(self):
         """Gets the to_date of this DataobjectSearch.
 
-        搜索结束时间
+        搜索结束时间，例如：2023-02-27T23:59:59.999Z
 
         :return: The to_date of this DataobjectSearch.
         :rtype: str
@@ -208,7 +208,7 @@ class DataobjectSearch:
     def to_date(self, to_date):
         """Sets the to_date of this DataobjectSearch.
 
-        搜索结束时间
+        搜索结束时间，例如：2023-02-27T23:59:59.999Z
 
         :param to_date: The to_date of this DataobjectSearch.
         :type to_date: str

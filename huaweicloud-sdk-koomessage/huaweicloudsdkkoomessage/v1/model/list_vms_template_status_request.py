@@ -85,8 +85,10 @@ class ListVmsTemplateStatusRequest:
             self.begin_time = begin_time
         if end_time is not None:
             self.end_time = end_time
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def tpl_id(self):

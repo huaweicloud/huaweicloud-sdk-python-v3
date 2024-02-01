@@ -23,10 +23,14 @@ class ShowRobotResponse(SdkResponse):
         'app_id': 'str',
         'app_type': 'int',
         'concurrency': 'int',
+        'language': 'LanguageEnum',
         'create_time': 'str',
         'update_time': 'str',
         'region': 'int',
         'cbs_project_id': 'str',
+        'llm_url': 'str',
+        'is_stream': 'bool',
+        'chat_rounds': 'int',
         'x_request_id': 'str'
     }
 
@@ -36,14 +40,18 @@ class ShowRobotResponse(SdkResponse):
         'app_id': 'app_id',
         'app_type': 'app_type',
         'concurrency': 'concurrency',
+        'language': 'language',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'region': 'region',
         'cbs_project_id': 'cbs_project_id',
+        'llm_url': 'llm_url',
+        'is_stream': 'is_stream',
+        'chat_rounds': 'chat_rounds',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, robot_id=None, name=None, app_id=None, app_type=None, concurrency=None, create_time=None, update_time=None, region=None, cbs_project_id=None, x_request_id=None):
+    def __init__(self, robot_id=None, name=None, app_id=None, app_type=None, concurrency=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, x_request_id=None):
         """ShowRobotResponse
 
         The model defined in huaweicloud sdk
@@ -54,10 +62,12 @@ class ShowRobotResponse(SdkResponse):
         :type name: str
         :param app_id: 第三方应用ID。
         :type app_id: str
-        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
         :type app_type: int
         :param concurrency: 对话的并发数
         :type concurrency: int
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -66,6 +76,12 @@ class ShowRobotResponse(SdkResponse):
         :type region: int
         :param cbs_project_id: CBS所在区域的projectId
         :type cbs_project_id: str
+        :param llm_url: 第三方语言模型地址。
+        :type llm_url: str
+        :param is_stream: 是否采用流式响应。
+        :type is_stream: bool
+        :param chat_rounds: 支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
+        :type chat_rounds: int
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -77,10 +93,14 @@ class ShowRobotResponse(SdkResponse):
         self._app_id = None
         self._app_type = None
         self._concurrency = None
+        self._language = None
         self._create_time = None
         self._update_time = None
         self._region = None
         self._cbs_project_id = None
+        self._llm_url = None
+        self._is_stream = None
+        self._chat_rounds = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -94,6 +114,8 @@ class ShowRobotResponse(SdkResponse):
             self.app_type = app_type
         if concurrency is not None:
             self.concurrency = concurrency
+        if language is not None:
+            self.language = language
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -102,6 +124,12 @@ class ShowRobotResponse(SdkResponse):
             self.region = region
         if cbs_project_id is not None:
             self.cbs_project_id = cbs_project_id
+        if llm_url is not None:
+            self.llm_url = llm_url
+        if is_stream is not None:
+            self.is_stream = is_stream
+        if chat_rounds is not None:
+            self.chat_rounds = chat_rounds
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -175,7 +203,7 @@ class ShowRobotResponse(SdkResponse):
     def app_type(self):
         """Gets the app_type of this ShowRobotResponse.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
 
         :return: The app_type of this ShowRobotResponse.
         :rtype: int
@@ -186,7 +214,7 @@ class ShowRobotResponse(SdkResponse):
     def app_type(self, app_type):
         """Sets the app_type of this ShowRobotResponse.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
 
         :param app_type: The app_type of this ShowRobotResponse.
         :type app_type: int
@@ -214,6 +242,24 @@ class ShowRobotResponse(SdkResponse):
         :type concurrency: int
         """
         self._concurrency = concurrency
+
+    @property
+    def language(self):
+        """Gets the language of this ShowRobotResponse.
+
+        :return: The language of this ShowRobotResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this ShowRobotResponse.
+
+        :param language: The language of this ShowRobotResponse.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     @property
     def create_time(self):
@@ -302,6 +348,72 @@ class ShowRobotResponse(SdkResponse):
         :type cbs_project_id: str
         """
         self._cbs_project_id = cbs_project_id
+
+    @property
+    def llm_url(self):
+        """Gets the llm_url of this ShowRobotResponse.
+
+        第三方语言模型地址。
+
+        :return: The llm_url of this ShowRobotResponse.
+        :rtype: str
+        """
+        return self._llm_url
+
+    @llm_url.setter
+    def llm_url(self, llm_url):
+        """Sets the llm_url of this ShowRobotResponse.
+
+        第三方语言模型地址。
+
+        :param llm_url: The llm_url of this ShowRobotResponse.
+        :type llm_url: str
+        """
+        self._llm_url = llm_url
+
+    @property
+    def is_stream(self):
+        """Gets the is_stream of this ShowRobotResponse.
+
+        是否采用流式响应。
+
+        :return: The is_stream of this ShowRobotResponse.
+        :rtype: bool
+        """
+        return self._is_stream
+
+    @is_stream.setter
+    def is_stream(self, is_stream):
+        """Sets the is_stream of this ShowRobotResponse.
+
+        是否采用流式响应。
+
+        :param is_stream: The is_stream of this ShowRobotResponse.
+        :type is_stream: bool
+        """
+        self._is_stream = is_stream
+
+    @property
+    def chat_rounds(self):
+        """Gets the chat_rounds of this ShowRobotResponse.
+
+        支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
+
+        :return: The chat_rounds of this ShowRobotResponse.
+        :rtype: int
+        """
+        return self._chat_rounds
+
+    @chat_rounds.setter
+    def chat_rounds(self, chat_rounds):
+        """Sets the chat_rounds of this ShowRobotResponse.
+
+        支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
+
+        :param chat_rounds: The chat_rounds of this ShowRobotResponse.
+        :type chat_rounds: int
+        """
+        self._chat_rounds = chat_rounds
 
     @property
     def x_request_id(self):

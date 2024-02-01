@@ -33,11 +33,11 @@ class CreateConnectorReq:
 
         The model defined in huaweicloud sdk
 
-        :param specification: 部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。
+        :param specification: 部署Smart Connect的规格，基准带宽，表示单位时间内传送的最大数据量。请保持和当前实例规格一致。仅老规格实例需要填写。 取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB
         :type specification: str
-        :param node_cnt: 转储节点数量。不能小于2个。 默认是2个。 
+        :param node_cnt: Smart Connect节点数量。不能小于2个。 如果不填，默认是2个。 
         :type node_cnt: str
-        :param spec_code: 转储节点规格编码。 
+        :param spec_code: 转储节点规格编码。仅老规格实例需要填写。 
         :type spec_code: str
         """
         
@@ -52,13 +52,14 @@ class CreateConnectorReq:
             self.specification = specification
         if node_cnt is not None:
             self.node_cnt = node_cnt
-        self.spec_code = spec_code
+        if spec_code is not None:
+            self.spec_code = spec_code
 
     @property
     def specification(self):
         """Gets the specification of this CreateConnectorReq.
 
-        部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。
+        部署Smart Connect的规格，基准带宽，表示单位时间内传送的最大数据量。请保持和当前实例规格一致。仅老规格实例需要填写。 取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB
 
         :return: The specification of this CreateConnectorReq.
         :rtype: str
@@ -69,7 +70,7 @@ class CreateConnectorReq:
     def specification(self, specification):
         """Sets the specification of this CreateConnectorReq.
 
-        部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。
+        部署Smart Connect的规格，基准带宽，表示单位时间内传送的最大数据量。请保持和当前实例规格一致。仅老规格实例需要填写。 取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB
 
         :param specification: The specification of this CreateConnectorReq.
         :type specification: str
@@ -80,7 +81,7 @@ class CreateConnectorReq:
     def node_cnt(self):
         """Gets the node_cnt of this CreateConnectorReq.
 
-        转储节点数量。不能小于2个。 默认是2个。 
+        Smart Connect节点数量。不能小于2个。 如果不填，默认是2个。 
 
         :return: The node_cnt of this CreateConnectorReq.
         :rtype: str
@@ -91,7 +92,7 @@ class CreateConnectorReq:
     def node_cnt(self, node_cnt):
         """Sets the node_cnt of this CreateConnectorReq.
 
-        转储节点数量。不能小于2个。 默认是2个。 
+        Smart Connect节点数量。不能小于2个。 如果不填，默认是2个。 
 
         :param node_cnt: The node_cnt of this CreateConnectorReq.
         :type node_cnt: str
@@ -102,7 +103,7 @@ class CreateConnectorReq:
     def spec_code(self):
         """Gets the spec_code of this CreateConnectorReq.
 
-        转储节点规格编码。 
+        转储节点规格编码。仅老规格实例需要填写。 
 
         :return: The spec_code of this CreateConnectorReq.
         :rtype: str
@@ -113,7 +114,7 @@ class CreateConnectorReq:
     def spec_code(self, spec_code):
         """Sets the spec_code of this CreateConnectorReq.
 
-        转储节点规格编码。 
+        转储节点规格编码。仅老规格实例需要填写。 
 
         :param spec_code: The spec_code of this CreateConnectorReq.
         :type spec_code: str

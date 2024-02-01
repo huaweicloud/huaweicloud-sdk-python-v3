@@ -17,26 +17,32 @@ class VoiceModelAssetMeta:
     sensitive_list = []
 
     openapi_types = {
+        'order': 'int',
         'model_type': 'str',
         'sex': 'str',
         'language': 'str',
         'speed_ratio': 'float',
-        'volume_ratio': 'float'
+        'volume_ratio': 'float',
+        'external_voice_meta': 'ExternalVoiceAssetMeta'
     }
 
     attribute_map = {
+        'order': 'order',
         'model_type': 'model_type',
         'sex': 'sex',
         'language': 'language',
         'speed_ratio': 'speed_ratio',
-        'volume_ratio': 'volume_ratio'
+        'volume_ratio': 'volume_ratio',
+        'external_voice_meta': 'external_voice_meta'
     }
 
-    def __init__(self, model_type=None, sex=None, language=None, speed_ratio=None, volume_ratio=None):
+    def __init__(self, order=None, model_type=None, sex=None, language=None, speed_ratio=None, volume_ratio=None, external_voice_meta=None):
         """VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
 
+        :param order: 展示顺序
+        :type order: int
         :param model_type: 音色资产类型。 * COMMON：通用情感模型 * CLONE：语音克隆模型
         :type model_type: str
         :param sex: 音色性别。 * UNKNOW：中性音色 * MALE：男性音色 * FEMALE：女性音色  默认UNKNOW。
@@ -47,17 +53,23 @@ class VoiceModelAssetMeta:
         :type speed_ratio: float
         :param volume_ratio: 音量缩放比例
         :type volume_ratio: float
+        :param external_voice_meta: 
+        :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
         """
         
         
 
+        self._order = None
         self._model_type = None
         self._sex = None
         self._language = None
         self._speed_ratio = None
         self._volume_ratio = None
+        self._external_voice_meta = None
         self.discriminator = None
 
+        if order is not None:
+            self.order = order
         if model_type is not None:
             self.model_type = model_type
         if sex is not None:
@@ -68,6 +80,30 @@ class VoiceModelAssetMeta:
             self.speed_ratio = speed_ratio
         if volume_ratio is not None:
             self.volume_ratio = volume_ratio
+        if external_voice_meta is not None:
+            self.external_voice_meta = external_voice_meta
+
+    @property
+    def order(self):
+        """Gets the order of this VoiceModelAssetMeta.
+
+        展示顺序
+
+        :return: The order of this VoiceModelAssetMeta.
+        :rtype: int
+        """
+        return self._order
+
+    @order.setter
+    def order(self, order):
+        """Sets the order of this VoiceModelAssetMeta.
+
+        展示顺序
+
+        :param order: The order of this VoiceModelAssetMeta.
+        :type order: int
+        """
+        self._order = order
 
     @property
     def model_type(self):
@@ -178,6 +214,24 @@ class VoiceModelAssetMeta:
         :type volume_ratio: float
         """
         self._volume_ratio = volume_ratio
+
+    @property
+    def external_voice_meta(self):
+        """Gets the external_voice_meta of this VoiceModelAssetMeta.
+
+        :return: The external_voice_meta of this VoiceModelAssetMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        """
+        return self._external_voice_meta
+
+    @external_voice_meta.setter
+    def external_voice_meta(self, external_voice_meta):
+        """Sets the external_voice_meta of this VoiceModelAssetMeta.
+
+        :param external_voice_meta: The external_voice_meta of this VoiceModelAssetMeta.
+        :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        """
+        self._external_voice_meta = external_voice_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""

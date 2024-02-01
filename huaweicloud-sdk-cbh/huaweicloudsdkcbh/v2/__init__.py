@@ -48,6 +48,8 @@ from huaweicloudsdkcbh.v2.model.login_instance_response import LoginInstanceResp
 from huaweicloudsdkcbh.v2.model.match import Match
 from huaweicloudsdkcbh.v2.model.network_info_create import NetworkInfoCreate
 from huaweicloudsdkcbh.v2.model.operate_eip_request_body import OperateEipRequestBody
+from huaweicloudsdkcbh.v2.model.private_ip import PrivateIp
+from huaweicloudsdkcbh.v2.model.public_ip import PublicIp
 from huaweicloudsdkcbh.v2.model.reboot_cbh_request_body import RebootCbhRequestBody
 from huaweicloudsdkcbh.v2.model.reboot_instance_request import RebootInstanceRequest
 from huaweicloudsdkcbh.v2.model.reboot_instance_response import RebootInstanceResponse

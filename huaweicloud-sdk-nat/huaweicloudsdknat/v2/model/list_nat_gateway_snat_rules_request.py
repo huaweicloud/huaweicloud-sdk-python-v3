@@ -28,7 +28,8 @@ class ListNatGatewaySnatRulesRequest:
         'nat_gateway_id': 'list[str]',
         'network_id': 'str',
         'source_type': 'int',
-        'status': 'str'
+        'status': 'str',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ListNatGatewaySnatRulesRequest:
         'nat_gateway_id': 'nat_gateway_id',
         'network_id': 'network_id',
         'source_type': 'source_type',
-        'status': 'status'
+        'status': 'status',
+        'marker': 'marker'
     }
 
-    def __init__(self, admin_state_up=None, cidr=None, limit=None, floating_ip_address=None, floating_ip_id=None, id=None, description=None, created_at=None, nat_gateway_id=None, network_id=None, source_type=None, status=None):
+    def __init__(self, admin_state_up=None, cidr=None, limit=None, floating_ip_address=None, floating_ip_id=None, id=None, description=None, created_at=None, nat_gateway_id=None, network_id=None, source_type=None, status=None, marker=None):
         """ListNatGatewaySnatRulesRequest
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class ListNatGatewaySnatRulesRequest:
         :type source_type: int
         :param status: SNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
         :type status: str
+        :param marker: 分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+        :type marker: str
         """
         
         
@@ -91,6 +95,7 @@ class ListNatGatewaySnatRulesRequest:
         self._network_id = None
         self._source_type = None
         self._status = None
+        self._marker = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -117,6 +122,8 @@ class ListNatGatewaySnatRulesRequest:
             self.source_type = source_type
         if status is not None:
             self.status = status
+        if marker is not None:
+            self.marker = marker
 
     @property
     def admin_state_up(self):
@@ -381,6 +388,28 @@ class ListNatGatewaySnatRulesRequest:
         :type status: str
         """
         self._status = status
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListNatGatewaySnatRulesRequest.
+
+        分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+
+        :return: The marker of this ListNatGatewaySnatRulesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListNatGatewaySnatRulesRequest.
+
+        分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+
+        :param marker: The marker of this ListNatGatewaySnatRulesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

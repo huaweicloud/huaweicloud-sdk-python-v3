@@ -21,6 +21,7 @@ class SrcNodeReq:
         'region': 'str',
         'ak': 'str',
         'sk': 'str',
+        'json_auth_file': 'str',
         'security_token': 'str',
         'app_id': 'str',
         'bucket': 'str',
@@ -33,6 +34,7 @@ class SrcNodeReq:
         'region': 'region',
         'ak': 'ak',
         'sk': 'sk',
+        'json_auth_file': 'json_auth_file',
         'security_token': 'security_token',
         'app_id': 'app_id',
         'bucket': 'bucket',
@@ -40,12 +42,12 @@ class SrcNodeReq:
         'list_file': 'list_file'
     }
 
-    def __init__(self, cloud_type=None, region=None, ak=None, sk=None, security_token=None, app_id=None, bucket=None, object_key=None, list_file=None):
+    def __init__(self, cloud_type=None, region=None, ak=None, sk=None, json_auth_file=None, security_token=None, app_id=None, bucket=None, object_key=None, list_file=None):
         """SrcNodeReq
 
         The model defined in huaweicloud sdk
 
-        :param cloud_type: 源端云服务提供商，task_type为非url_list时，本参数为URLSource且必选。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        :param cloud_type: 源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、Google、URLSource或者UCloud。默认值为Aliyun。
         :type cloud_type: str
         :param region: 源端桶所处的区域，task_type为非url_list时，本参数为必选。
         :type region: str
@@ -53,6 +55,8 @@ class SrcNodeReq:
         :type ak: str
         :param sk: 源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
         :type sk: str
+        :param json_auth_file: 用于谷歌云Cloud Storage鉴权
+        :type json_auth_file: str
         :param security_token: 源端桶的临时Token（最大长度16384个字符）
         :type security_token: str
         :param app_id: 当源端为腾讯云时，需要填写此参数。
@@ -71,6 +75,7 @@ class SrcNodeReq:
         self._region = None
         self._ak = None
         self._sk = None
+        self._json_auth_file = None
         self._security_token = None
         self._app_id = None
         self._bucket = None
@@ -86,6 +91,8 @@ class SrcNodeReq:
             self.ak = ak
         if sk is not None:
             self.sk = sk
+        if json_auth_file is not None:
+            self.json_auth_file = json_auth_file
         if security_token is not None:
             self.security_token = security_token
         if app_id is not None:
@@ -101,7 +108,7 @@ class SrcNodeReq:
     def cloud_type(self):
         """Gets the cloud_type of this SrcNodeReq.
 
-        源端云服务提供商，task_type为非url_list时，本参数为URLSource且必选。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、Google、URLSource或者UCloud。默认值为Aliyun。
 
         :return: The cloud_type of this SrcNodeReq.
         :rtype: str
@@ -112,7 +119,7 @@ class SrcNodeReq:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this SrcNodeReq.
 
-        源端云服务提供商，task_type为非url_list时，本参数为URLSource且必选。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、Google、URLSource或者UCloud。默认值为Aliyun。
 
         :param cloud_type: The cloud_type of this SrcNodeReq.
         :type cloud_type: str
@@ -184,6 +191,28 @@ class SrcNodeReq:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def json_auth_file(self):
+        """Gets the json_auth_file of this SrcNodeReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :return: The json_auth_file of this SrcNodeReq.
+        :rtype: str
+        """
+        return self._json_auth_file
+
+    @json_auth_file.setter
+    def json_auth_file(self, json_auth_file):
+        """Sets the json_auth_file of this SrcNodeReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :param json_auth_file: The json_auth_file of this SrcNodeReq.
+        :type json_auth_file: str
+        """
+        self._json_auth_file = json_auth_file
 
     @property
     def security_token(self):

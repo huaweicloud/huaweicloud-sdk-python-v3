@@ -379,7 +379,7 @@ class MetaStudioClient(Client):
     def delete_asset(self, request):
         """删除资产
 
-        该接口用于删除资产库中的媒体资产。第一次调用删除接口，将指定资产放入回收站；第二次调用删除接口，将指定资产彻底删除。
+        该接口用于删除资产库中的媒体资产。调用该接口删除媒体资产时，媒体资产会放入回收站中，不会彻底删除。如需彻底删除资产，需增加“mode&#x3D;force”参数配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -580,6 +580,12 @@ class MetaStudioClient(Client):
             query_params.append(('system_property', local_var_params['system_property']))
         if 'action_editable' in local_var_params:
             query_params.append(('action_editable', local_var_params['action_editable']))
+        if 'is_movable' in local_var_params:
+            query_params.append(('is_movable', local_var_params['is_movable']))
+        if 'voice_provider' in local_var_params:
+            query_params.append(('voice_provider', local_var_params['voice_provider']))
+        if 'role' in local_var_params:
+            query_params.append(('role', local_var_params['role']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -1994,7 +2000,7 @@ class MetaStudioClient(Client):
     def create_once_code(self, request):
         """创建一次性鉴权码
 
-        该接口用于创建一次性鉴权码。
+        该接口用于创建一次性鉴权码，有效期5分钟，鉴权码只能使用一次，每次使用后需要重新获取。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3182,6 +3188,87 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def list_smart_live_jobs(self, request):
+        """查询数字人智能直播任务列表
+
+        该接口用于查询数字人智能直播任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSmartLiveJobs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveJobsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveJobsResponse`
+        """
+        http_info = self._list_smart_live_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_smart_live_jobs_invoker(self, request):
+        http_info = self._list_smart_live_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_smart_live_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmartLiveJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
+        if 'room_name' in local_var_params:
+            query_params.append(('room_name', local_var_params['room_name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def live_event_report(self, request):
         """上报直播间事件
 
@@ -3928,6 +4015,8 @@ class MetaStudioClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'room_type' in local_var_params:
             query_params.append(('room_type', local_var_params['room_type']))
+        if 'template_own_type' in local_var_params:
+            query_params.append(('template_own_type', local_var_params['template_own_type']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -5764,7 +5853,7 @@ class MetaStudioClient(Client):
     def create_tts_audition(self, request):
         """创建TTS试听任务
 
-        该接口用于创建生成播报内容的语音试听文件任务。
+        该接口用于创建生成播报内容的语音试听文件任务。第三方音色试听需要收费，收费标准参考：https://marketplace.huaweicloud.com/product/OFFI919400645308506112#productid&#x3D;OFFI919400645308506112
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6209,6 +6298,73 @@ class MetaStudioClient(Client):
         path_params = {}
         if 'job_id' in local_var_params:
             path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def copy_video_scripts(self, request):
+        """复制视频制作剧本
+
+        该接口用于复制视频制作剧本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CopyVideoScripts
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CopyVideoScriptsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CopyVideoScriptsResponse`
+        """
+        http_info = self._copy_video_scripts_http_info(request)
+        return self._call_api(**http_info)
+
+    def copy_video_scripts_invoker(self, request):
+        http_info = self._copy_video_scripts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_video_scripts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-video-scripts/{script_id}/copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyVideoScriptsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'script_id' in local_var_params:
+            path_params['script_id'] = local_var_params['script_id']
 
         query_params = []
 

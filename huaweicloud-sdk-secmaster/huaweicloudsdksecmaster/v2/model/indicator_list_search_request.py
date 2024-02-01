@@ -59,9 +59,9 @@ class IndicatorListSearchRequest:
         :type limit: int
         :param sort_by: sort by property, create_time.
         :type sort_by: str
-        :param from_date: 查询起始时间
+        :param from_date: 查询起始时间，例如：2024-01-20T00:00:00.000Z+0800
         :type from_date: str
-        :param to_date: 查询截止时间
+        :param to_date: 查询截止时间，例如：2024-01-26T23:59:59.999Z+0800
         :type to_date: str
         """
         
@@ -248,7 +248,7 @@ class IndicatorListSearchRequest:
     def from_date(self):
         """Gets the from_date of this IndicatorListSearchRequest.
 
-        查询起始时间
+        查询起始时间，例如：2024-01-20T00:00:00.000Z+0800
 
         :return: The from_date of this IndicatorListSearchRequest.
         :rtype: str
@@ -259,7 +259,7 @@ class IndicatorListSearchRequest:
     def from_date(self, from_date):
         """Sets the from_date of this IndicatorListSearchRequest.
 
-        查询起始时间
+        查询起始时间，例如：2024-01-20T00:00:00.000Z+0800
 
         :param from_date: The from_date of this IndicatorListSearchRequest.
         :type from_date: str
@@ -270,7 +270,7 @@ class IndicatorListSearchRequest:
     def to_date(self):
         """Gets the to_date of this IndicatorListSearchRequest.
 
-        查询截止时间
+        查询截止时间，例如：2024-01-26T23:59:59.999Z+0800
 
         :return: The to_date of this IndicatorListSearchRequest.
         :rtype: str
@@ -281,7 +281,7 @@ class IndicatorListSearchRequest:
     def to_date(self, to_date):
         """Sets the to_date of this IndicatorListSearchRequest.
 
-        查询截止时间
+        查询截止时间，例如：2024-01-26T23:59:59.999Z+0800
 
         :param to_date: The to_date of this IndicatorListSearchRequest.
         :type to_date: str

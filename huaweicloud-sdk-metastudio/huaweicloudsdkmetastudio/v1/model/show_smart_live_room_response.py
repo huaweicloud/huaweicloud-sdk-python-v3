@@ -31,6 +31,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'live_event_callback_config': 'LiveEventCallBackConfig',
         'review_config': 'ReviewConfig',
         'shared_config': 'SharedConfig',
+        'view_mode': 'str',
         'room_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
@@ -54,6 +55,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'live_event_callback_config': 'live_event_callback_config',
         'review_config': 'review_config',
         'shared_config': 'shared_config',
+        'view_mode': 'view_mode',
         'room_id': 'room_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -63,7 +65,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None, room_id=None, create_time=None, update_time=None, cover_url=None, room_state=None, error_info=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None, view_mode=None, room_id=None, create_time=None, update_time=None, cover_url=None, room_state=None, error_info=None, x_request_id=None):
         """ShowSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
@@ -94,6 +96,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param shared_config: 
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :type view_mode: str
         :param room_id: 直播间ID
         :type room_id: str
         :param create_time: 直播间创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -125,6 +129,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         self._live_event_callback_config = None
         self._review_config = None
         self._shared_config = None
+        self._view_mode = None
         self._room_id = None
         self._create_time = None
         self._update_time = None
@@ -159,6 +164,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
             self.review_config = review_config
         if shared_config is not None:
             self.shared_config = shared_config
+        if view_mode is not None:
+            self.view_mode = view_mode
         if room_id is not None:
             self.room_id = room_id
         if create_time is not None:
@@ -439,6 +446,28 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         """
         self._shared_config = shared_config
+
+    @property
+    def view_mode(self):
+        """Gets the view_mode of this ShowSmartLiveRoomResponse.
+
+        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :return: The view_mode of this ShowSmartLiveRoomResponse.
+        :rtype: str
+        """
+        return self._view_mode
+
+    @view_mode.setter
+    def view_mode(self, view_mode):
+        """Sets the view_mode of this ShowSmartLiveRoomResponse.
+
+        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :param view_mode: The view_mode of this ShowSmartLiveRoomResponse.
+        :type view_mode: str
+        """
+        self._view_mode = view_mode
 
     @property
     def room_id(self):

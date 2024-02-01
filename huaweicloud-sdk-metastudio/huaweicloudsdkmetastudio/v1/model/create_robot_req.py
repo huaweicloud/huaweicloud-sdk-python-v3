@@ -20,37 +20,45 @@ class CreateRobotReq:
         'name': 'str',
         'app_type': 'int',
         'concurrency': 'int',
+        'language': 'LanguageEnum',
         'huawei_ei_cbs': 'HuaweiEiCbs',
         'iflytek_aiui_config': 'IflytekAiuiConfig',
-        'iflytek_spark': 'IflytekSpark'
+        'iflytek_spark': 'IflytekSpark',
+        'third_party_model_config': 'ThirdPartyModelConfig'
     }
 
     attribute_map = {
         'name': 'name',
         'app_type': 'app_type',
         'concurrency': 'concurrency',
+        'language': 'language',
         'huawei_ei_cbs': 'huawei_ei_cbs',
         'iflytek_aiui_config': 'iflytek_aiui_config',
-        'iflytek_spark': 'iflytek_spark'
+        'iflytek_spark': 'iflytek_spark',
+        'third_party_model_config': 'third_party_model_config'
     }
 
-    def __init__(self, name=None, app_type=None, concurrency=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None):
+    def __init__(self, name=None, app_type=None, concurrency=None, language=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None):
         """CreateRobotReq
 
         The model defined in huaweicloud sdk
 
         :param name: 应用名称。
         :type name: str
-        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
         :type app_type: int
         :param concurrency: 对话的并发数
         :type concurrency: int
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param huawei_ei_cbs: 
         :type huawei_ei_cbs: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
         :param iflytek_aiui_config: 
         :type iflytek_aiui_config: :class:`huaweicloudsdkmetastudio.v1.IflytekAiuiConfig`
         :param iflytek_spark: 
         :type iflytek_spark: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
+        :param third_party_model_config: 
+        :type third_party_model_config: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
         """
         
         
@@ -58,20 +66,26 @@ class CreateRobotReq:
         self._name = None
         self._app_type = None
         self._concurrency = None
+        self._language = None
         self._huawei_ei_cbs = None
         self._iflytek_aiui_config = None
         self._iflytek_spark = None
+        self._third_party_model_config = None
         self.discriminator = None
 
         self.name = name
         self.app_type = app_type
         self.concurrency = concurrency
+        if language is not None:
+            self.language = language
         if huawei_ei_cbs is not None:
             self.huawei_ei_cbs = huawei_ei_cbs
         if iflytek_aiui_config is not None:
             self.iflytek_aiui_config = iflytek_aiui_config
         if iflytek_spark is not None:
             self.iflytek_spark = iflytek_spark
+        if third_party_model_config is not None:
+            self.third_party_model_config = third_party_model_config
 
     @property
     def name(self):
@@ -99,7 +113,7 @@ class CreateRobotReq:
     def app_type(self):
         """Gets the app_type of this CreateRobotReq.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
 
         :return: The app_type of this CreateRobotReq.
         :rtype: int
@@ -110,7 +124,7 @@ class CreateRobotReq:
     def app_type(self, app_type):
         """Sets the app_type of this CreateRobotReq.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
 
         :param app_type: The app_type of this CreateRobotReq.
         :type app_type: int
@@ -138,6 +152,24 @@ class CreateRobotReq:
         :type concurrency: int
         """
         self._concurrency = concurrency
+
+    @property
+    def language(self):
+        """Gets the language of this CreateRobotReq.
+
+        :return: The language of this CreateRobotReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this CreateRobotReq.
+
+        :param language: The language of this CreateRobotReq.
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        """
+        self._language = language
 
     @property
     def huawei_ei_cbs(self):
@@ -192,6 +224,24 @@ class CreateRobotReq:
         :type iflytek_spark: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
         """
         self._iflytek_spark = iflytek_spark
+
+    @property
+    def third_party_model_config(self):
+        """Gets the third_party_model_config of this CreateRobotReq.
+
+        :return: The third_party_model_config of this CreateRobotReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
+        """
+        return self._third_party_model_config
+
+    @third_party_model_config.setter
+    def third_party_model_config(self, third_party_model_config):
+        """Sets the third_party_model_config of this CreateRobotReq.
+
+        :param third_party_model_config: The third_party_model_config of this CreateRobotReq.
+        :type third_party_model_config: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
+        """
+        self._third_party_model_config = third_party_model_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

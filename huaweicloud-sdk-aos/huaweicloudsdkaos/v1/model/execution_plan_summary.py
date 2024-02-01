@@ -19,16 +19,18 @@ class ExecutionPlanSummary:
     openapi_types = {
         'resource_add': 'int',
         'resource_update': 'int',
-        'resource_delete': 'int'
+        'resource_delete': 'int',
+        'resource_import': 'int'
     }
 
     attribute_map = {
         'resource_add': 'resource_add',
         'resource_update': 'resource_update',
-        'resource_delete': 'resource_delete'
+        'resource_delete': 'resource_delete',
+        'resource_import': 'resource_import'
     }
 
-    def __init__(self, resource_add=None, resource_update=None, resource_delete=None):
+    def __init__(self, resource_add=None, resource_update=None, resource_delete=None, resource_import=None):
         """ExecutionPlanSummary
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ExecutionPlanSummary:
         :type resource_update: int
         :param resource_delete: 删除资源数
         :type resource_delete: int
+        :param resource_import: 导入资源数
+        :type resource_import: int
         """
         
         
@@ -46,6 +50,7 @@ class ExecutionPlanSummary:
         self._resource_add = None
         self._resource_update = None
         self._resource_delete = None
+        self._resource_import = None
         self.discriminator = None
 
         if resource_add is not None:
@@ -54,6 +59,8 @@ class ExecutionPlanSummary:
             self.resource_update = resource_update
         if resource_delete is not None:
             self.resource_delete = resource_delete
+        if resource_import is not None:
+            self.resource_import = resource_import
 
     @property
     def resource_add(self):
@@ -120,6 +127,28 @@ class ExecutionPlanSummary:
         :type resource_delete: int
         """
         self._resource_delete = resource_delete
+
+    @property
+    def resource_import(self):
+        """Gets the resource_import of this ExecutionPlanSummary.
+
+        导入资源数
+
+        :return: The resource_import of this ExecutionPlanSummary.
+        :rtype: int
+        """
+        return self._resource_import
+
+    @resource_import.setter
+    def resource_import(self, resource_import):
+        """Sets the resource_import of this ExecutionPlanSummary.
+
+        导入资源数
+
+        :param resource_import: The resource_import of this ExecutionPlanSummary.
+        :type resource_import: int
+        """
+        self._resource_import = resource_import
 
     def to_dict(self):
         """Returns the model properties as a dict"""

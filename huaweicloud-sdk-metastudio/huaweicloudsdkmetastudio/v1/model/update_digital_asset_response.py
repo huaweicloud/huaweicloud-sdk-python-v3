@@ -21,13 +21,13 @@ class UpdateDigitalAssetResponse(SdkResponse):
         'asset_id': 'str',
         'asset_name': 'str',
         'asset_description': 'str',
+        'app_user_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'asset_type': 'str',
         'asset_state': 'str',
         'fail_type': 'str',
         'reason': 'str',
-        'is_need_generate_cover': 'bool',
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
@@ -39,13 +39,13 @@ class UpdateDigitalAssetResponse(SdkResponse):
         'asset_id': 'asset_id',
         'asset_name': 'asset_name',
         'asset_description': 'asset_description',
+        'app_user_id': 'app_user_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'asset_type': 'asset_type',
         'asset_state': 'asset_state',
         'fail_type': 'fail_type',
         'reason': 'reason',
-        'is_need_generate_cover': 'is_need_generate_cover',
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
@@ -53,7 +53,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_id=None, asset_name=None, asset_description=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, is_need_generate_cover=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
+    def __init__(self, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
         """UpdateDigitalAssetResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +64,8 @@ class UpdateDigitalAssetResponse(SdkResponse):
         :type asset_name: str
         :param asset_description: 资产描述。
         :type asset_description: str
+        :param app_user_id: 第三方用户ID。 &gt; * 即创建资产是通过X-App-UserId头域传入的值。
+        :type app_user_id: str
         :param create_time: 资产创建时间。
         :type create_time: str
         :param update_time: 资产更新时间。
@@ -76,8 +78,6 @@ class UpdateDigitalAssetResponse(SdkResponse):
         :type fail_type: str
         :param reason: 冻结/解冻/失败 原因。
         :type reason: str
-        :param is_need_generate_cover: 是否需要资产库生成封面图片。 &gt; * 当前支持自动生成封面图片的资产类型包括VIDEO
-        :type is_need_generate_cover: bool
         :param tags: 标签列表。
         :type tags: list[str]
         :param asset_extra_meta: 
@@ -95,13 +95,13 @@ class UpdateDigitalAssetResponse(SdkResponse):
         self._asset_id = None
         self._asset_name = None
         self._asset_description = None
+        self._app_user_id = None
         self._create_time = None
         self._update_time = None
         self._asset_type = None
         self._asset_state = None
         self._fail_type = None
         self._reason = None
-        self._is_need_generate_cover = None
         self._tags = None
         self._asset_extra_meta = None
         self._system_properties = None
@@ -115,6 +115,8 @@ class UpdateDigitalAssetResponse(SdkResponse):
             self.asset_name = asset_name
         if asset_description is not None:
             self.asset_description = asset_description
+        if app_user_id is not None:
+            self.app_user_id = app_user_id
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -127,8 +129,6 @@ class UpdateDigitalAssetResponse(SdkResponse):
             self.fail_type = fail_type
         if reason is not None:
             self.reason = reason
-        if is_need_generate_cover is not None:
-            self.is_need_generate_cover = is_need_generate_cover
         if tags is not None:
             self.tags = tags
         if asset_extra_meta is not None:
@@ -205,6 +205,28 @@ class UpdateDigitalAssetResponse(SdkResponse):
         :type asset_description: str
         """
         self._asset_description = asset_description
+
+    @property
+    def app_user_id(self):
+        """Gets the app_user_id of this UpdateDigitalAssetResponse.
+
+        第三方用户ID。 > * 即创建资产是通过X-App-UserId头域传入的值。
+
+        :return: The app_user_id of this UpdateDigitalAssetResponse.
+        :rtype: str
+        """
+        return self._app_user_id
+
+    @app_user_id.setter
+    def app_user_id(self, app_user_id):
+        """Sets the app_user_id of this UpdateDigitalAssetResponse.
+
+        第三方用户ID。 > * 即创建资产是通过X-App-UserId头域传入的值。
+
+        :param app_user_id: The app_user_id of this UpdateDigitalAssetResponse.
+        :type app_user_id: str
+        """
+        self._app_user_id = app_user_id
 
     @property
     def create_time(self):
@@ -337,28 +359,6 @@ class UpdateDigitalAssetResponse(SdkResponse):
         :type reason: str
         """
         self._reason = reason
-
-    @property
-    def is_need_generate_cover(self):
-        """Gets the is_need_generate_cover of this UpdateDigitalAssetResponse.
-
-        是否需要资产库生成封面图片。 > * 当前支持自动生成封面图片的资产类型包括VIDEO
-
-        :return: The is_need_generate_cover of this UpdateDigitalAssetResponse.
-        :rtype: bool
-        """
-        return self._is_need_generate_cover
-
-    @is_need_generate_cover.setter
-    def is_need_generate_cover(self, is_need_generate_cover):
-        """Sets the is_need_generate_cover of this UpdateDigitalAssetResponse.
-
-        是否需要资产库生成封面图片。 > * 当前支持自动生成封面图片的资产类型包括VIDEO
-
-        :param is_need_generate_cover: The is_need_generate_cover of this UpdateDigitalAssetResponse.
-        :type is_need_generate_cover: bool
-        """
-        self._is_need_generate_cover = is_need_generate_cover
 
     @property
     def tags(self):

@@ -32,6 +32,237 @@ class AosAsyncClient(Client):
 
         return client_builder
 
+    def create_private_provider_async(self, request):
+        """创建私有provider
+
+        创建私有provider（CreatePrivateProvider）
+        
+        创建一个私有的空provider。若用户给予了provider_version和function_graph_urn，则在创建私有provider的同时，还会在私有provider下创建一个私有provider版本。
+          * 私有provider允许用户将自定义的provider注册到RFS中，并仅提供给当前用户使用。
+          * 如果同名私有provider在当前账户中已经存在，则会返回409。
+          * 版本号遵循语义化版本号（Semantic Version），为用户自定义。
+          * 在本API中，provider_version和function_graph_urn需要搭配使用，若只指定其中一个参数，则会返回400。
+          * 资源编排服务只会对function_graph_urn进行浅校验，如是否符合正则，是否仅指定为当前region等。并不会深度校验，即用户是否存在权限调用，是否真实存在等。
+          * 该API会返回provider_source字段，该字段按照“huawei.com/private-provider/{provider_name}”的形式拼接。关于provider_name和provider_source字段在模板中的使用细节，详见下方描述中。
+          * 若用户期望使用名称中不含有大写英文的provider，可以按照如下展示将provider_source字段指定为模板中定义的required_providers中的source参数。
+          * 若用户期望使用名称含有大写英文的provider，需要将provider_name完全转化为小写英文创建。同时用户既可以在模板中使用API返回的provider_source参数，也可以在模板中以 “huawei.com/private-provider”为固定前缀，按照原含大写英文的provider_name，拼写provider_source参数。
+        
+        以HCL格式的模板为例，模板中引用私有provider的语法如下：
+        &#x60;&#x60;&#x60;
+        Provider \&quot;{provider_name}\&quot; {
+          source &#x3D; \&quot;{provider_source}\&quot;
+          version &#x3D; \&quot;{provider_version}\&quot;
+        }
+        &#x60;&#x60;&#x60;
+        
+        以JSON格式的模板为例，模板中引用私有provider的语法如下：
+        &#x60;&#x60;&#x60;
+        {
+          \&quot;terraform\&quot;:{
+            \&quot;required_providers\&quot;:[
+              {
+                \&quot;{provider_name}\&quot;:{
+                  \&quot;source\&quot;:\&quot;{provider_source}\&quot;,
+                  \&quot;version\&quot;:\&quot;{provider_version}\&quot;
+                }
+              }
+            ]
+          }
+        }
+        &#x60;&#x60;&#x60;
+        
+        RFS在支持用户使用FunctionGraph(以下简称：FG)的HTTP函数运行私有Provider时，定义了一套详细的对接规则，以实现RFS与私有Provider之间的成功交互。
+        其中关于FG的HTTP函数使用，请参考官网文档： https://support.huaweicloud.com/productdesc-functiongraph/functiongraph_02_1002.html。
+        用户需要在提供的FG的HTTP函数方法中，按照如下规则实现一系列对应方法：
+          1. 用户需要首先在FG中启动一个HTTP Server，用于接受来自RFS的HTTP请求，请求的Path固定为\&quot;/provider\&quot;，请求方法为\&quot;POST\&quot;。RFS规定了发送给FG的HTTP请求体，请求体格式如下所示：
+            &#x60;&#x60;&#x60;
+            {
+              \&quot;method_name\&quot;: String,
+              \&quot;request_data\&quot;: String,
+              \&quot;context\&quot;:{
+                \&quot;session_id\&quot;: String,
+                \&quot;config_data\&quot;: String
+              }
+            }
+            &#x60;&#x60;&#x60;
+             用户提供的FG的HTTP函数需要能够接收如上请求。否则会调用私有Provider失败，导致资源编排失败。
+          2. 下面对FG中如何使用请求体中的各个参数，以实现FG与RFS的成功交互做详细解释：
+             \&quot;method_name\&quot;：RFS期望FG的HTTP函数中调用的私有provider的gRPC方法名。RFS会在请求体中，根据实际业务场景，每次从如下方法中选择一个进行传递。其中每个方法名需要与provider中原生的gRPC方法一一对应。在收到携带有某个方法名的请求后，FG的HTTP函数内能够调用对应的私有provider的原生gRPC方法，实现具体资源的处理逻辑。
+             provider内提供的原生gRPC协议请参考：tfplugin5.proto和grpc_controller.proto。方法名列表如下：
+                &#x60;&#x60;&#x60;
+                tfplugin5.proto：
+                  \&quot;/tfplugin5.Provider/GetSchema\&quot;
+                  \&quot;/tfplugin5.Provider/PrepareProviderConfig\&quot;
+                  \&quot;/tfplugin5.Provider/ValidateResourceTypeConfig\&quot;
+                  \&quot;/tfplugin5.Provider/ValidateDataSourceConfig\&quot;
+                  \&quot;/tfplugin5.Provider/UpgradeResourceState\&quot;
+                  \&quot;/tfplugin5.Provider/Configure\&quot;
+                  \&quot;/tfplugin5.Provider/ReadResource\&quot;
+                  \&quot;/tfplugin5.Provider/PlanResourceChange\&quot;
+                  \&quot;/tfplugin5.Provider/ApplyResourceChange\&quot;
+                  \&quot;/tfplugin5.Provider/ImportResourceState\&quot;
+                  \&quot;/tfplugin5.Provider/ReadDataSource\&quot;
+                  \&quot;/tfplugin5.Provider/Stop\&quot;
+                grpc_controller.proto：
+                  \&quot;/plugin.GRPCController/Shutdown\&quot;
+                &#x60;&#x60;&#x60;
+             \&quot;request_data\&quot;：RFS传递给FG的HTTP函数中每个方法的请求内容。在每个方法的处理逻辑中，需要先将request_data中的数据使用base64解码，然后作为私有provider的gRPC方法的数据传入。
+             \&quot;config_data\&quot;：用于自定义provider处理实际请求前的初始化，如果context中config_data非空，FG的HTTP函数需要先将config_data作为输入调用/tfplugin5.Provider/Configure方法，进行初始化，再根据method_name调用对应的方法获取响应。
+             \&quot;session_id\&quot;：表示请求是否来自同一个模板中的同一批编排任务。session_id相同，表示请求来自同一个模板中的同一批编排任务。
+             注意：用户启动的同一个provider进程不能接受多个来自RFS的请求。RFS推荐用户处理请求时，每次都启动新的进程处理相关请求。
+          3. 在FG的HTTP函数中实现的请求响应按照固定格式进行返回，响应体的格式如下，成功响应码固定为200，任何其他响应码均视为失败请求，会导致资源编排失败。
+            &#x60;&#x60;&#x60;
+            {
+              \&quot;response_data\&quot;: String,
+              \&quot;error\&quot;: String
+            }
+            &#x60;&#x60;&#x60;
+            \&quot;response_data\&quot;：调用私有provider的gRPC方法返回的内容。在FG的HTTP函数中，需要将gRPC方法返回的响应序列化后使用base64编码返回。
+            \&quot;error\&quot;：调用gRPC方法返回的错误信息。
+        
+        **约束与限制：**
+          1. 私有provider为用户自行定义，提供给RFS的provider插件，RFS不负责校验其内部逻辑是否正确。
+          2. RFS不负责维护私有provider的生命周期。用户使用私有provider部署的资源栈，由于私有provider缺失或问题，导致资源栈无法继续部署管理的，RFS不负责提供解决方案。
+          3. RFS不负责保障私有provider的信息安全。用户使用私有provider部署的资源栈，由于模板中存在敏感数据，进而导致敏感信息泄露给第三方相关资源的，RFS不承担其相关责任。
+          4. 当前调用私有provider过程中增加了网络因素，因此使用私有provider部署的失败概率会增加。若出现因网络原因导致的部署失败，可以增加重试操作。
+          5. 当前RFS会同步调用用户在FG中定义的一系列方法，单次方法需要确保运行时间不超过30s，否则会极大增加失败概率。
+          6. 当前仅支持在模板中固定私有provider版本，不支持&gt;,&gt;&#x3D;,&lt;,&lt;&#x3D;,~&gt;等定义宽松版本的表达式。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePrivateProvider
+        :type request: :class:`huaweicloudsdkaos.v1.CreatePrivateProviderRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateProviderResponse`
+        """
+        http_info = self._create_private_provider_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_private_provider_async_invoker(self, request):
+        http_info = self._create_private_provider_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_private_provider_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateProviderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_private_provider_version_async(self, request):
+        """创建私有provider版本
+
+        创建私有provider版本（CreatePrivateProviderVersion）
+        
+          * provider的版本号需遵循语义化版本号（Semantic Version），为用户自定义。
+          * 若provider_name和provider_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+          * 资源编排服务只会对function_graph_urn进行浅校验，如是否符合正则，是否仅指定为当前region等。并不会深度校验，即用户是否存在权限调用，是否真实存在等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePrivateProviderVersion
+        :type request: :class:`huaweicloudsdkaos.v1.CreatePrivateProviderVersionRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateProviderVersionResponse`
+        """
+        http_info = self._create_private_provider_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_private_provider_version_async_invoker(self, request):
+        http_info = self._create_private_provider_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_private_provider_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-providers/{provider_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateProviderVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_name' in local_var_params:
+            path_params['provider_name'] = local_var_params['provider_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def apply_execution_plan_async(self, request):
         """执行执行计划
 
@@ -318,6 +549,7 @@ class AosAsyncClient(Client):
                   * 支持的计费模式：按需
               * huaweicloud_rds_instance: 
                   * 支持的计费模式：包周期、按需
+                  * 支持的数据库类型：MySQL、PostgreSQL、Microsoft SQL Server      
               * huaweicloud_sfs_turbo: 
                   * 支持的计费模式：按需
                   * 询价必要参数：share_type（文件系统类型）
@@ -1693,7 +1925,7 @@ class AosAsyncClient(Client):
         
         此API用于在指定资源栈集下生成多个资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
         
-        此API可以通过var_overrides参数，指定创建资源栈实例的参数值，进行参数覆盖。若var_overrides参数未给与，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。
+        此API可以通过var_overrides参数，指定创建资源栈实例的参数值，进行参数覆盖。若var_overrides参数未给予，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。
         
         通过DeployStackSet API更新资源栈集参数后，资源栈实例中已经被覆盖的参数不会被更新，仍然保留覆盖值。
         
@@ -2686,7 +2918,7 @@ class AosAsyncClient(Client):
         
         此API用于更新并部署指定资源栈实例集合，并返回资源栈集操作ID（stack_set_operation_id）
         
-        此API可以通过var_overrides参数，更新指定资源栈实例的参数值，进行参数覆盖。若var_overrides参数未给与，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。用户只可以更新已经存在的资源栈实例，如果用户想要增加额外的资源栈实例，请使用CreateStackInstances API。
+        此API可以通过var_overrides参数，更新指定资源栈实例的参数值，进行参数覆盖。若var_overrides参数未给予，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。用户只可以更新已经存在的资源栈实例，如果用户想要增加额外的资源栈实例，请使用CreateStackInstances API。
         
         通过DeployStackSet API更新资源栈集参数后，资源栈实例中已经被覆盖的参数不会被更新，仍然保留覆盖值。
         
@@ -2920,7 +3152,7 @@ class AosAsyncClient(Client):
         此API用于删除某个模板以及模板下的全部模板版本
         **请谨慎操作，删除模板将会删除模板下的所有模板版本。**
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给与的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2993,7 +3225,7 @@ class AosAsyncClient(Client):
         
         此API用于删除某个模板版本
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给与的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
           * 若模板下只存在唯一模板版本，此模板版本将无法被删除，如果需要删除此模板版本，请调用DeleteTemplate。模板服务不允许存在没有模板版本的模板
         
         **请谨慎操作**
@@ -3074,7 +3306,7 @@ class AosAsyncClient(Client):
           * 默认按照生成时间降序排序，最新生成的模板排列在最前面
           * 注意：目前返回全量模板版本信息，即不支持分页
           * 如果没有任何模板版本，则返回空list
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给与的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
           * 若模板不存在则返回404
         
         ListTemplateVersions返回的信息只包含模板版本摘要信息（具体摘要信息见ListTemplateVersionsResponseBody），若用户需要了解模板版本内容，请调用ShowTemplateVersionContent
@@ -3226,7 +3458,7 @@ class AosAsyncClient(Client):
         
         具体信息见ShowTemplateMetadataResponseBody，若想查看模板下全部模板版本，请调用ListTemplateVersions。
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给与的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3299,7 +3531,7 @@ class AosAsyncClient(Client):
         
         此API用于获取用户的模板版本内容
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给与的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
           * 此api会以临时重定向形式返回模板内容的下载链接，用户通过下载获取模板版本内容（OBS Pre Signed地址，有效期为5分钟）
         
         ShowTemplateVersionContent返回的信息只包含模板版本内容，若想知道模板版本的元数据，请调用ShowTemplateVersionMetadata
@@ -3377,7 +3609,7 @@ class AosAsyncClient(Client):
         
         此API用于展示某一版本模板的元数据
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给与的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
         ShowTemplateVersionMetadata返回的信息只包含模板版本元数据信息（具体摘要信息见ShowTemplateVersionMetadataResponseBody），若用户需要了解模板版本内容，请调用ShowTemplateVersionContent
         

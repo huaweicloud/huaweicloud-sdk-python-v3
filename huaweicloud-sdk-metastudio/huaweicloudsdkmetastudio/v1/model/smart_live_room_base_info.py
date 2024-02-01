@@ -18,10 +18,12 @@ class SmartLiveRoomBaseInfo:
 
     openapi_types = {
         'room_id': 'str',
+        'project_id': 'str',
         'room_name': 'str',
         'room_type': 'str',
         'room_state': 'str',
         'error_info': 'ErrorResponse',
+        'shared_config': 'SharedConfig',
         'room_description': 'str',
         'cover_url': 'str',
         'model_infos': 'list[ModelInfo]',
@@ -34,10 +36,12 @@ class SmartLiveRoomBaseInfo:
 
     attribute_map = {
         'room_id': 'room_id',
+        'project_id': 'project_id',
         'room_name': 'room_name',
         'room_type': 'room_type',
         'room_state': 'room_state',
         'error_info': 'error_info',
+        'shared_config': 'shared_config',
         'room_description': 'room_description',
         'cover_url': 'cover_url',
         'model_infos': 'model_infos',
@@ -48,13 +52,15 @@ class SmartLiveRoomBaseInfo:
         'last_job_status': 'last_job_status'
     }
 
-    def __init__(self, room_id=None, room_name=None, room_type=None, room_state=None, error_info=None, room_description=None, cover_url=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None):
+    def __init__(self, room_id=None, project_id=None, room_name=None, room_type=None, room_state=None, error_info=None, shared_config=None, room_description=None, cover_url=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None):
         """SmartLiveRoomBaseInfo
 
         The model defined in huaweicloud sdk
 
         :param room_id: 直播间ID
         :type room_id: str
+        :param project_id: 租户id
+        :type project_id: str
         :param room_name: 直播间名称
         :type room_name: str
         :param room_type: 直播间类型。 * NORMAL: 普通直播间，直播间一直存在，可以反复开播 * TEMP: 临时直播间,直播任务结束后自动清理直播间。 * TEMPLATE: 直播间模板。
@@ -63,6 +69,8 @@ class SmartLiveRoomBaseInfo:
         :type room_state: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        :param shared_config: 
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         :param room_description: 直播间描述。
         :type room_description: str
         :param cover_url: 直播间封面图URL
@@ -84,10 +92,12 @@ class SmartLiveRoomBaseInfo:
         
 
         self._room_id = None
+        self._project_id = None
         self._room_name = None
         self._room_type = None
         self._room_state = None
         self._error_info = None
+        self._shared_config = None
         self._room_description = None
         self._cover_url = None
         self._model_infos = None
@@ -100,6 +110,8 @@ class SmartLiveRoomBaseInfo:
 
         if room_id is not None:
             self.room_id = room_id
+        if project_id is not None:
+            self.project_id = project_id
         if room_name is not None:
             self.room_name = room_name
         if room_type is not None:
@@ -108,6 +120,8 @@ class SmartLiveRoomBaseInfo:
             self.room_state = room_state
         if error_info is not None:
             self.error_info = error_info
+        if shared_config is not None:
+            self.shared_config = shared_config
         if room_description is not None:
             self.room_description = room_description
         if cover_url is not None:
@@ -146,6 +160,28 @@ class SmartLiveRoomBaseInfo:
         :type room_id: str
         """
         self._room_id = room_id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this SmartLiveRoomBaseInfo.
+
+        租户id
+
+        :return: The project_id of this SmartLiveRoomBaseInfo.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this SmartLiveRoomBaseInfo.
+
+        租户id
+
+        :param project_id: The project_id of this SmartLiveRoomBaseInfo.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def room_name(self):
@@ -230,6 +266,24 @@ class SmartLiveRoomBaseInfo:
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         """
         self._error_info = error_info
+
+    @property
+    def shared_config(self):
+        """Gets the shared_config of this SmartLiveRoomBaseInfo.
+
+        :return: The shared_config of this SmartLiveRoomBaseInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        return self._shared_config
+
+    @shared_config.setter
+    def shared_config(self, shared_config):
+        """Sets the shared_config of this SmartLiveRoomBaseInfo.
+
+        :param shared_config: The shared_config of this SmartLiveRoomBaseInfo.
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        self._shared_config = shared_config
 
     @property
     def room_description(self):

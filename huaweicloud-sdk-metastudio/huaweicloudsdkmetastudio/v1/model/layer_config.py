@@ -18,6 +18,7 @@ class LayerConfig:
 
     openapi_types = {
         'layer_type': 'str',
+        'asset_id': 'str',
         'group_id': 'str',
         'position': 'LayerPositionConfig',
         'size': 'LayerSizeConfig',
@@ -28,6 +29,7 @@ class LayerConfig:
 
     attribute_map = {
         'layer_type': 'layer_type',
+        'asset_id': 'asset_id',
         'group_id': 'group_id',
         'position': 'position',
         'size': 'size',
@@ -36,13 +38,15 @@ class LayerConfig:
         'text_config': 'text_config'
     }
 
-    def __init__(self, layer_type=None, group_id=None, position=None, size=None, image_config=None, video_config=None, text_config=None):
+    def __init__(self, layer_type=None, asset_id=None, group_id=None, position=None, size=None, image_config=None, video_config=None, text_config=None):
         """LayerConfig
 
         The model defined in huaweicloud sdk
 
         :param layer_type: 图层类型。 - HUMAN:  人物图层 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 素材文字图层
         :type layer_type: str
+        :param asset_id: 图层所需资产的资产id，外部资产信息无需填写
+        :type asset_id: str
         :param group_id: 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。
         :type group_id: str
         :param position: 
@@ -60,6 +64,7 @@ class LayerConfig:
         
 
         self._layer_type = None
+        self._asset_id = None
         self._group_id = None
         self._position = None
         self._size = None
@@ -69,6 +74,8 @@ class LayerConfig:
         self.discriminator = None
 
         self.layer_type = layer_type
+        if asset_id is not None:
+            self.asset_id = asset_id
         if group_id is not None:
             self.group_id = group_id
         self.position = position
@@ -102,6 +109,28 @@ class LayerConfig:
         :type layer_type: str
         """
         self._layer_type = layer_type
+
+    @property
+    def asset_id(self):
+        """Gets the asset_id of this LayerConfig.
+
+        图层所需资产的资产id，外部资产信息无需填写
+
+        :return: The asset_id of this LayerConfig.
+        :rtype: str
+        """
+        return self._asset_id
+
+    @asset_id.setter
+    def asset_id(self, asset_id):
+        """Sets the asset_id of this LayerConfig.
+
+        图层所需资产的资产id，外部资产信息无需填写
+
+        :param asset_id: The asset_id of this LayerConfig.
+        :type asset_id: str
+        """
+        self._asset_id = asset_id
 
     @property
     def group_id(self):

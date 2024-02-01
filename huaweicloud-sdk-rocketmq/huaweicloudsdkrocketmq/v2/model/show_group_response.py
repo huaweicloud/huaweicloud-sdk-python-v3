@@ -23,7 +23,7 @@ class ShowGroupResponse(SdkResponse):
         'brokers': 'list[str]',
         'name': 'str',
         'group_desc': 'str',
-        'retry_max_time': 'float',
+        'retry_max_time': 'int',
         'app_id': 'str',
         'app_name': 'str',
         'permissions': 'list[str]'
@@ -57,7 +57,7 @@ class ShowGroupResponse(SdkResponse):
         :param group_desc: 消费组描述。
         :type group_desc: str
         :param retry_max_time: 最大重试次数。
-        :type retry_max_time: float
+        :type retry_max_time: int
         :param app_id: 应用id。
         :type app_id: str
         :param app_name: 应用名称。
@@ -215,7 +215,7 @@ class ShowGroupResponse(SdkResponse):
         最大重试次数。
 
         :return: The retry_max_time of this ShowGroupResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._retry_max_time
 
@@ -226,7 +226,7 @@ class ShowGroupResponse(SdkResponse):
         最大重试次数。
 
         :param retry_max_time: The retry_max_time of this ShowGroupResponse.
-        :type retry_max_time: float
+        :type retry_max_time: int
         """
         self._retry_max_time = retry_max_time
 

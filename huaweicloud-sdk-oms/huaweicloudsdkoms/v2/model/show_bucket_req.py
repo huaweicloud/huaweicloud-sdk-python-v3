@@ -21,6 +21,7 @@ class ShowBucketReq:
         'file_path': 'str',
         'ak': 'str',
         'sk': 'str',
+        'json_auth_file': 'str',
         'data_center': 'str',
         'page_size': 'int',
         'behind_filename': 'str',
@@ -33,6 +34,7 @@ class ShowBucketReq:
         'file_path': 'file_path',
         'ak': 'ak',
         'sk': 'sk',
+        'json_auth_file': 'json_auth_file',
         'data_center': 'data_center',
         'page_size': 'page_size',
         'behind_filename': 'behind_filename',
@@ -40,12 +42,12 @@ class ShowBucketReq:
         'bucket_name': 'bucket_name'
     }
 
-    def __init__(self, cloud_type=None, file_path=None, ak=None, sk=None, data_center=None, page_size=None, behind_filename=None, app_id=None, bucket_name=None):
+    def __init__(self, cloud_type=None, file_path=None, ak=None, sk=None, json_auth_file=None, data_center=None, page_size=None, behind_filename=None, app_id=None, bucket_name=None):
         """ShowBucketReq
 
         The model defined in huaweicloud sdk
 
-        :param cloud_type: 云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
+        :param cloud_type: 云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
         :type cloud_type: str
         :param file_path: 目标桶中需要查询的对象文件路径，/结尾
         :type file_path: str
@@ -53,6 +55,8 @@ class ShowBucketReq:
         :type ak: str
         :param sk: 源端桶的SK（最大长度100个字符）
         :type sk: str
+        :param json_auth_file: 用于谷歌云Cloud Storage鉴权
+        :type json_auth_file: str
         :param data_center: 数据中心，区域
         :type data_center: str
         :param page_size: 分页信息，页大小
@@ -71,6 +75,7 @@ class ShowBucketReq:
         self._file_path = None
         self._ak = None
         self._sk = None
+        self._json_auth_file = None
         self._data_center = None
         self._page_size = None
         self._behind_filename = None
@@ -84,6 +89,8 @@ class ShowBucketReq:
             self.ak = ak
         if sk is not None:
             self.sk = sk
+        if json_auth_file is not None:
+            self.json_auth_file = json_auth_file
         self.data_center = data_center
         self.page_size = page_size
         self.behind_filename = behind_filename
@@ -95,7 +102,7 @@ class ShowBucketReq:
     def cloud_type(self):
         """Gets the cloud_type of this ShowBucketReq.
 
-        云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
+        云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
         :return: The cloud_type of this ShowBucketReq.
         :rtype: str
@@ -106,7 +113,7 @@ class ShowBucketReq:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this ShowBucketReq.
 
-        云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
+        云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
         :param cloud_type: The cloud_type of this ShowBucketReq.
         :type cloud_type: str
@@ -178,6 +185,28 @@ class ShowBucketReq:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def json_auth_file(self):
+        """Gets the json_auth_file of this ShowBucketReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :return: The json_auth_file of this ShowBucketReq.
+        :rtype: str
+        """
+        return self._json_auth_file
+
+    @json_auth_file.setter
+    def json_auth_file(self, json_auth_file):
+        """Sets the json_auth_file of this ShowBucketReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :param json_auth_file: The json_auth_file of this ShowBucketReq.
+        :type json_auth_file: str
+        """
+        self._json_auth_file = json_auth_file
 
     @property
     def data_center(self):

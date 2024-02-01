@@ -18,95 +18,68 @@ class ResizeClusterWithExistedNodesRequestBody:
 
     openapi_types = {
         'scale_out': 'ScaleOut',
-        'resize': 'Resize',
         'force_backup': 'bool',
         'mode': 'str',
         'logical_cluster_name': 'str',
         'expand_with_existed_node': 'bool',
-        'create_node_only': 'bool',
         'auto_redistribute': 'bool',
-        'is_scheduler_build_mode': 'bool',
-        'redis_conf': 'RedisConf',
-        'build_task_info': 'BuildTaskInfo',
-        'order_id': 'str'
+        'redis_conf': 'RedisConfReq'
     }
 
     attribute_map = {
         'scale_out': 'scale_out',
-        'resize': 'resize',
         'force_backup': 'force_backup',
         'mode': 'mode',
         'logical_cluster_name': 'logical_cluster_name',
         'expand_with_existed_node': 'expand_with_existed_node',
-        'create_node_only': 'create_node_only',
         'auto_redistribute': 'auto_redistribute',
-        'is_scheduler_build_mode': 'is_scheduler_build_mode',
-        'redis_conf': 'redis_conf',
-        'build_task_info': 'build_task_info',
-        'order_id': 'order_id'
+        'redis_conf': 'redis_conf'
     }
 
-    def __init__(self, scale_out=None, resize=None, force_backup=None, mode=None, logical_cluster_name=None, expand_with_existed_node=None, create_node_only=None, auto_redistribute=None, is_scheduler_build_mode=None, redis_conf=None, build_task_info=None, order_id=None):
+    def __init__(self, scale_out=None, force_backup=None, mode=None, logical_cluster_name=None, expand_with_existed_node=None, auto_redistribute=None, redis_conf=None):
         """ResizeClusterWithExistedNodesRequestBody
 
         The model defined in huaweicloud sdk
 
         :param scale_out: 
         :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`
-        :param resize: 
-        :type resize: :class:`huaweicloudsdkdws.v2.Resize`
         :param force_backup: 是否强制备份
         :type force_backup: bool
-        :param mode: 扩容模式
+        :param mode: 扩容备份模式，不传默认离线read-only。
         :type mode: str
-        :param logical_cluster_name: 逻辑集群名称
+        :param logical_cluster_name: 逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。
         :type logical_cluster_name: str
         :param expand_with_existed_node: 是否是使用已添加的空闲节点进行扩容
         :type expand_with_existed_node: bool
-        :param create_node_only: 否只是添加节点
-        :type create_node_only: bool
-        :param auto_redistribute: 扩容完成后是否自动启动重分布，默认是
+        :param auto_redistribute: 扩容完成后是否自动启动重分布，默认true
         :type auto_redistribute: bool
-        :param is_scheduler_build_mode: 是否调度模式扩容加节点
-        :type is_scheduler_build_mode: bool
         :param redis_conf: 
-        :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConf`
-        :param build_task_info: 
-        :type build_task_info: :class:`huaweicloudsdkdws.v2.BuildTaskInfo`
-        :param order_id: 扩容订单ID
-        :type order_id: str
+        :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConfReq`
         """
         
         
 
         self._scale_out = None
-        self._resize = None
         self._force_backup = None
         self._mode = None
         self._logical_cluster_name = None
         self._expand_with_existed_node = None
-        self._create_node_only = None
         self._auto_redistribute = None
-        self._is_scheduler_build_mode = None
         self._redis_conf = None
-        self._build_task_info = None
-        self._order_id = None
         self.discriminator = None
 
         self.scale_out = scale_out
-        if resize is not None:
-            self.resize = resize
-        self.force_backup = force_backup
-        self.mode = mode
-        self.logical_cluster_name = logical_cluster_name
+        if force_backup is not None:
+            self.force_backup = force_backup
+        if mode is not None:
+            self.mode = mode
+        if logical_cluster_name is not None:
+            self.logical_cluster_name = logical_cluster_name
         self.expand_with_existed_node = expand_with_existed_node
-        self.create_node_only = create_node_only
-        self.auto_redistribute = auto_redistribute
-        self.is_scheduler_build_mode = is_scheduler_build_mode
-        self.redis_conf = redis_conf
-        self.build_task_info = build_task_info
-        if order_id is not None:
-            self.order_id = order_id
+        if auto_redistribute is not None:
+            self.auto_redistribute = auto_redistribute
+        if redis_conf is not None:
+            self.redis_conf = redis_conf
 
     @property
     def scale_out(self):
@@ -125,24 +98,6 @@ class ResizeClusterWithExistedNodesRequestBody:
         :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`
         """
         self._scale_out = scale_out
-
-    @property
-    def resize(self):
-        """Gets the resize of this ResizeClusterWithExistedNodesRequestBody.
-
-        :return: The resize of this ResizeClusterWithExistedNodesRequestBody.
-        :rtype: :class:`huaweicloudsdkdws.v2.Resize`
-        """
-        return self._resize
-
-    @resize.setter
-    def resize(self, resize):
-        """Sets the resize of this ResizeClusterWithExistedNodesRequestBody.
-
-        :param resize: The resize of this ResizeClusterWithExistedNodesRequestBody.
-        :type resize: :class:`huaweicloudsdkdws.v2.Resize`
-        """
-        self._resize = resize
 
     @property
     def force_backup(self):
@@ -170,7 +125,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def mode(self):
         """Gets the mode of this ResizeClusterWithExistedNodesRequestBody.
 
-        扩容模式
+        扩容备份模式，不传默认离线read-only。
 
         :return: The mode of this ResizeClusterWithExistedNodesRequestBody.
         :rtype: str
@@ -181,7 +136,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def mode(self, mode):
         """Sets the mode of this ResizeClusterWithExistedNodesRequestBody.
 
-        扩容模式
+        扩容备份模式，不传默认离线read-only。
 
         :param mode: The mode of this ResizeClusterWithExistedNodesRequestBody.
         :type mode: str
@@ -192,7 +147,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def logical_cluster_name(self):
         """Gets the logical_cluster_name of this ResizeClusterWithExistedNodesRequestBody.
 
-        逻辑集群名称
+        逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。
 
         :return: The logical_cluster_name of this ResizeClusterWithExistedNodesRequestBody.
         :rtype: str
@@ -203,7 +158,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def logical_cluster_name(self, logical_cluster_name):
         """Sets the logical_cluster_name of this ResizeClusterWithExistedNodesRequestBody.
 
-        逻辑集群名称
+        逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。
 
         :param logical_cluster_name: The logical_cluster_name of this ResizeClusterWithExistedNodesRequestBody.
         :type logical_cluster_name: str
@@ -233,32 +188,10 @@ class ResizeClusterWithExistedNodesRequestBody:
         self._expand_with_existed_node = expand_with_existed_node
 
     @property
-    def create_node_only(self):
-        """Gets the create_node_only of this ResizeClusterWithExistedNodesRequestBody.
-
-        否只是添加节点
-
-        :return: The create_node_only of this ResizeClusterWithExistedNodesRequestBody.
-        :rtype: bool
-        """
-        return self._create_node_only
-
-    @create_node_only.setter
-    def create_node_only(self, create_node_only):
-        """Sets the create_node_only of this ResizeClusterWithExistedNodesRequestBody.
-
-        否只是添加节点
-
-        :param create_node_only: The create_node_only of this ResizeClusterWithExistedNodesRequestBody.
-        :type create_node_only: bool
-        """
-        self._create_node_only = create_node_only
-
-    @property
     def auto_redistribute(self):
         """Gets the auto_redistribute of this ResizeClusterWithExistedNodesRequestBody.
 
-        扩容完成后是否自动启动重分布，默认是
+        扩容完成后是否自动启动重分布，默认true
 
         :return: The auto_redistribute of this ResizeClusterWithExistedNodesRequestBody.
         :rtype: bool
@@ -269,7 +202,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def auto_redistribute(self, auto_redistribute):
         """Sets the auto_redistribute of this ResizeClusterWithExistedNodesRequestBody.
 
-        扩容完成后是否自动启动重分布，默认是
+        扩容完成后是否自动启动重分布，默认true
 
         :param auto_redistribute: The auto_redistribute of this ResizeClusterWithExistedNodesRequestBody.
         :type auto_redistribute: bool
@@ -277,33 +210,11 @@ class ResizeClusterWithExistedNodesRequestBody:
         self._auto_redistribute = auto_redistribute
 
     @property
-    def is_scheduler_build_mode(self):
-        """Gets the is_scheduler_build_mode of this ResizeClusterWithExistedNodesRequestBody.
-
-        是否调度模式扩容加节点
-
-        :return: The is_scheduler_build_mode of this ResizeClusterWithExistedNodesRequestBody.
-        :rtype: bool
-        """
-        return self._is_scheduler_build_mode
-
-    @is_scheduler_build_mode.setter
-    def is_scheduler_build_mode(self, is_scheduler_build_mode):
-        """Sets the is_scheduler_build_mode of this ResizeClusterWithExistedNodesRequestBody.
-
-        是否调度模式扩容加节点
-
-        :param is_scheduler_build_mode: The is_scheduler_build_mode of this ResizeClusterWithExistedNodesRequestBody.
-        :type is_scheduler_build_mode: bool
-        """
-        self._is_scheduler_build_mode = is_scheduler_build_mode
-
-    @property
     def redis_conf(self):
         """Gets the redis_conf of this ResizeClusterWithExistedNodesRequestBody.
 
         :return: The redis_conf of this ResizeClusterWithExistedNodesRequestBody.
-        :rtype: :class:`huaweicloudsdkdws.v2.RedisConf`
+        :rtype: :class:`huaweicloudsdkdws.v2.RedisConfReq`
         """
         return self._redis_conf
 
@@ -312,49 +223,9 @@ class ResizeClusterWithExistedNodesRequestBody:
         """Sets the redis_conf of this ResizeClusterWithExistedNodesRequestBody.
 
         :param redis_conf: The redis_conf of this ResizeClusterWithExistedNodesRequestBody.
-        :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConf`
+        :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConfReq`
         """
         self._redis_conf = redis_conf
-
-    @property
-    def build_task_info(self):
-        """Gets the build_task_info of this ResizeClusterWithExistedNodesRequestBody.
-
-        :return: The build_task_info of this ResizeClusterWithExistedNodesRequestBody.
-        :rtype: :class:`huaweicloudsdkdws.v2.BuildTaskInfo`
-        """
-        return self._build_task_info
-
-    @build_task_info.setter
-    def build_task_info(self, build_task_info):
-        """Sets the build_task_info of this ResizeClusterWithExistedNodesRequestBody.
-
-        :param build_task_info: The build_task_info of this ResizeClusterWithExistedNodesRequestBody.
-        :type build_task_info: :class:`huaweicloudsdkdws.v2.BuildTaskInfo`
-        """
-        self._build_task_info = build_task_info
-
-    @property
-    def order_id(self):
-        """Gets the order_id of this ResizeClusterWithExistedNodesRequestBody.
-
-        扩容订单ID
-
-        :return: The order_id of this ResizeClusterWithExistedNodesRequestBody.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        """Sets the order_id of this ResizeClusterWithExistedNodesRequestBody.
-
-        扩容订单ID
-
-        :param order_id: The order_id of this ResizeClusterWithExistedNodesRequestBody.
-        :type order_id: str
-        """
-        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -8,9 +8,12 @@ class MetaStudioRegion:
 
     CN_NORTH_4 = Region("cn-north-4",
                         "https://metastudio.cn-north-4.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://metastudio.cn-east-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "cn-east-3": CN_EAST_3,
     }
 
     @classmethod

@@ -20,6 +20,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     openapi_types = {
         'job_id': 'str',
         'state': 'str',
+        'job_type': 'str',
         'start_time': 'str',
         'end_time': 'str',
         'duration': 'float',
@@ -41,6 +42,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     attribute_map = {
         'job_id': 'job_id',
         'state': 'state',
+        'job_type': 'job_type',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'duration': 'duration',
@@ -59,7 +61,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, state=None, start_time=None, end_time=None, duration=None, output_asset_config=None, error_info=None, create_time=None, lastupdate_time=None, script_id=None, video_making_type=None, human_image=None, model_asset_id=None, voice_config=None, video_config=None, shoot_scripts=None, background_music_config=None, x_request_id=None):
+    def __init__(self, job_id=None, state=None, job_type=None, start_time=None, end_time=None, duration=None, output_asset_config=None, error_info=None, create_time=None, lastupdate_time=None, script_id=None, video_making_type=None, human_image=None, model_asset_id=None, voice_config=None, video_config=None, shoot_scripts=None, background_music_config=None, x_request_id=None):
         """Show2DDigitalHumanVideoResponse
 
         The model defined in huaweicloud sdk
@@ -68,6 +70,8 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
         :type job_id: str
         :param state: 任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
         :type state: str
+        :param job_type: 任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+        :type job_type: str
         :param start_time: 数字人视频制作开始时间。
         :type start_time: str
         :param end_time: 数字人视频制作结束时间。
@@ -84,7 +88,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
         :type lastupdate_time: str
         :param script_id: 剧本ID。
         :type script_id: str
-        :param video_making_type: 视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
+        :param video_making_type: 视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
         :type video_making_type: str
         :param human_image: 人物照片，需要Base64编码。 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
         :type human_image: str
@@ -106,6 +110,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
         self._job_id = None
         self._state = None
+        self._job_type = None
         self._start_time = None
         self._end_time = None
         self._duration = None
@@ -126,6 +131,8 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
         self.job_id = job_id
         self.state = state
+        if job_type is not None:
+            self.job_type = job_type
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -202,6 +209,28 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
         :type state: str
         """
         self._state = state
+
+    @property
+    def job_type(self):
+        """Gets the job_type of this Show2DDigitalHumanVideoResponse.
+
+        任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+
+        :return: The job_type of this Show2DDigitalHumanVideoResponse.
+        :rtype: str
+        """
+        return self._job_type
+
+    @job_type.setter
+    def job_type(self, job_type):
+        """Sets the job_type of this Show2DDigitalHumanVideoResponse.
+
+        任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
+
+        :param job_type: The job_type of this Show2DDigitalHumanVideoResponse.
+        :type job_type: str
+        """
+        self._job_type = job_type
 
     @property
     def start_time(self):
@@ -375,7 +404,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     def video_making_type(self):
         """Gets the video_making_type of this Show2DDigitalHumanVideoResponse.
 
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
+        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :return: The video_making_type of this Show2DDigitalHumanVideoResponse.
         :rtype: str
@@ -386,7 +415,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     def video_making_type(self, video_making_type):
         """Sets the video_making_type of this Show2DDigitalHumanVideoResponse.
 
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
+        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :param video_making_type: The video_making_type of this Show2DDigitalHumanVideoResponse.
         :type video_making_type: str

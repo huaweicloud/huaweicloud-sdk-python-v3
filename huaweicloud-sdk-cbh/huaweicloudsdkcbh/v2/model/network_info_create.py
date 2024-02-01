@@ -19,9 +19,9 @@ class NetworkInfoCreate:
     openapi_types = {
         'vpc_id': 'str',
         'subnet_id': 'str',
-        'public_ip': 'object',
+        'public_ip': 'PublicIp',
         'security_groups': 'list[SecurityGroup]',
-        'private_ip': 'object'
+        'private_ip': 'PrivateIp'
     }
 
     attribute_map = {
@@ -41,12 +41,12 @@ class NetworkInfoCreate:
         :type vpc_id: str
         :param subnet_id: 子网ID，字母数字下划线连接符组成。
         :type subnet_id: str
-        :param public_ip: 云堡垒机实例弹性公网IP信息。可填写null值
-        :type public_ip: object
+        :param public_ip: 
+        :type public_ip: :class:`huaweicloudsdkcbh.v2.PublicIp`
         :param security_groups: 安全组信息。
         :type security_groups: list[:class:`huaweicloudsdkcbh.v2.SecurityGroup`]
-        :param private_ip: 私网IP信息。
-        :type private_ip: object
+        :param private_ip: 
+        :type private_ip: :class:`huaweicloudsdkcbh.v2.PrivateIp`
         """
         
         
@@ -113,10 +113,8 @@ class NetworkInfoCreate:
     def public_ip(self):
         """Gets the public_ip of this NetworkInfoCreate.
 
-        云堡垒机实例弹性公网IP信息。可填写null值
-
         :return: The public_ip of this NetworkInfoCreate.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcbh.v2.PublicIp`
         """
         return self._public_ip
 
@@ -124,10 +122,8 @@ class NetworkInfoCreate:
     def public_ip(self, public_ip):
         """Sets the public_ip of this NetworkInfoCreate.
 
-        云堡垒机实例弹性公网IP信息。可填写null值
-
         :param public_ip: The public_ip of this NetworkInfoCreate.
-        :type public_ip: object
+        :type public_ip: :class:`huaweicloudsdkcbh.v2.PublicIp`
         """
         self._public_ip = public_ip
 
@@ -157,10 +153,8 @@ class NetworkInfoCreate:
     def private_ip(self):
         """Gets the private_ip of this NetworkInfoCreate.
 
-        私网IP信息。
-
         :return: The private_ip of this NetworkInfoCreate.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcbh.v2.PrivateIp`
         """
         return self._private_ip
 
@@ -168,10 +162,8 @@ class NetworkInfoCreate:
     def private_ip(self, private_ip):
         """Sets the private_ip of this NetworkInfoCreate.
 
-        私网IP信息。
-
         :param private_ip: The private_ip of this NetworkInfoCreate.
-        :type private_ip: object
+        :type private_ip: :class:`huaweicloudsdkcbh.v2.PrivateIp`
         """
         self._private_ip = private_ip
 

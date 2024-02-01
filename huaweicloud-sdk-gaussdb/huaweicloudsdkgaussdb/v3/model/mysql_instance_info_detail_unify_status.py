@@ -47,7 +47,8 @@ class MysqlInstanceInfoDetailUnifyStatus:
         'maintenance_window': 'str',
         'tags': 'list[MysqlTags]',
         'dedicated_resource_id': 'str',
-        'proxies': 'list[MysqlProxyInfo]'
+        'proxies': 'list[MysqlProxyInfo]',
+        'tde_info': 'MysqlTdeInfo'
     }
 
     attribute_map = {
@@ -81,10 +82,11 @@ class MysqlInstanceInfoDetailUnifyStatus:
         'maintenance_window': 'maintenance_window',
         'tags': 'tags',
         'dedicated_resource_id': 'dedicated_resource_id',
-        'proxies': 'proxies'
+        'proxies': 'proxies',
+        'tde_info': 'tde_info'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, private_dns_names=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None):
+    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, private_dns_names=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None, tde_info=None):
         """MysqlInstanceInfoDetailUnifyStatus
 
         The model defined in huaweicloud sdk
@@ -151,6 +153,8 @@ class MysqlInstanceInfoDetailUnifyStatus:
         :type dedicated_resource_id: str
         :param proxies: 代理信息。
         :type proxies: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]
+        :param tde_info: 
+        :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
         """
         
         
@@ -186,6 +190,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
         self._tags = None
         self._dedicated_resource_id = None
         self._proxies = None
+        self._tde_info = None
         self.discriminator = None
 
         self.id = id
@@ -247,6 +252,8 @@ class MysqlInstanceInfoDetailUnifyStatus:
             self.dedicated_resource_id = dedicated_resource_id
         if proxies is not None:
             self.proxies = proxies
+        if tde_info is not None:
+            self.tde_info = tde_info
 
     @property
     def id(self):
@@ -917,6 +924,24 @@ class MysqlInstanceInfoDetailUnifyStatus:
         :type proxies: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]
         """
         self._proxies = proxies
+
+    @property
+    def tde_info(self):
+        """Gets the tde_info of this MysqlInstanceInfoDetailUnifyStatus.
+
+        :return: The tde_info of this MysqlInstanceInfoDetailUnifyStatus.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
+        """
+        return self._tde_info
+
+    @tde_info.setter
+    def tde_info(self, tde_info):
+        """Sets the tde_info of this MysqlInstanceInfoDetailUnifyStatus.
+
+        :param tde_info: The tde_info of this MysqlInstanceInfoDetailUnifyStatus.
+        :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
+        """
+        self._tde_info = tde_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

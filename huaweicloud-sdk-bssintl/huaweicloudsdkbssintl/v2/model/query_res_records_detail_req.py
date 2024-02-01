@@ -30,7 +30,10 @@ class QueryResRecordsDetailReq:
         'limit': 'int',
         'method': 'str',
         'sub_customer_id': 'str',
-        'statistic_type': 'int'
+        'statistic_type': 'int',
+        'query_type': 'str',
+        'bill_cycle_begin': 'str',
+        'bill_cycle_end': 'str'
     }
 
     attribute_map = {
@@ -47,10 +50,13 @@ class QueryResRecordsDetailReq:
         'limit': 'limit',
         'method': 'method',
         'sub_customer_id': 'sub_customer_id',
-        'statistic_type': 'statistic_type'
+        'statistic_type': 'statistic_type',
+        'query_type': 'query_type',
+        'bill_cycle_begin': 'bill_cycle_begin',
+        'bill_cycle_end': 'bill_cycle_end'
     }
 
-    def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None, statistic_type=None):
+    def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None, statistic_type=None, query_type=None, bill_cycle_begin=None, bill_cycle_end=None):
         """QueryResRecordsDetailReq
 
         The model defined in huaweicloud sdk
@@ -83,6 +89,12 @@ class QueryResRecordsDetailReq:
         :type sub_customer_id: str
         :param statistic_type: 统计类型。默认值为1。 1：按账期2：按天
         :type statistic_type: int
+        :param query_type: |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type&#x3D;2时，支持传递query_type&#x3D;DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
+        :type query_type: str
+        :param bill_cycle_begin: |账期开始时间。格式为YYYY-MM-DD。| |参数的约束及描述：仅当query_type&#x3D;DAILY时，必须传递账期开始时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。|
+        :type bill_cycle_begin: str
+        :param bill_cycle_end: |参数名称：账期结束时间。格式为YYYY-MM-DD。| |参数的约束及描述：仅当query_type&#x3D;DAILY时，必须传递账期结束时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。|
+        :type bill_cycle_end: str
         """
         
         
@@ -101,6 +113,9 @@ class QueryResRecordsDetailReq:
         self._method = None
         self._sub_customer_id = None
         self._statistic_type = None
+        self._query_type = None
+        self._bill_cycle_begin = None
+        self._bill_cycle_end = None
         self.discriminator = None
 
         self.cycle = cycle
@@ -130,6 +145,12 @@ class QueryResRecordsDetailReq:
             self.sub_customer_id = sub_customer_id
         if statistic_type is not None:
             self.statistic_type = statistic_type
+        if query_type is not None:
+            self.query_type = query_type
+        if bill_cycle_begin is not None:
+            self.bill_cycle_begin = bill_cycle_begin
+        if bill_cycle_end is not None:
+            self.bill_cycle_end = bill_cycle_end
 
     @property
     def cycle(self):
@@ -438,6 +459,72 @@ class QueryResRecordsDetailReq:
         :type statistic_type: int
         """
         self._statistic_type = statistic_type
+
+    @property
+    def query_type(self):
+        """Gets the query_type of this QueryResRecordsDetailReq.
+
+        |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type=2时，支持传递query_type=DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
+
+        :return: The query_type of this QueryResRecordsDetailReq.
+        :rtype: str
+        """
+        return self._query_type
+
+    @query_type.setter
+    def query_type(self, query_type):
+        """Sets the query_type of this QueryResRecordsDetailReq.
+
+        |参数名称：查询类型。默认值为BILLCYCLE。| |参数的约束及描述：默认值为BILLCYCLE。BILLCYCLE：按月 DAILY：按天 仅当statistic_type=2时，支持传递query_type=DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。|
+
+        :param query_type: The query_type of this QueryResRecordsDetailReq.
+        :type query_type: str
+        """
+        self._query_type = query_type
+
+    @property
+    def bill_cycle_begin(self):
+        """Gets the bill_cycle_begin of this QueryResRecordsDetailReq.
+
+        |账期开始时间。格式为YYYY-MM-DD。| |参数的约束及描述：仅当query_type=DAILY时，必须传递账期开始时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。|
+
+        :return: The bill_cycle_begin of this QueryResRecordsDetailReq.
+        :rtype: str
+        """
+        return self._bill_cycle_begin
+
+    @bill_cycle_begin.setter
+    def bill_cycle_begin(self, bill_cycle_begin):
+        """Sets the bill_cycle_begin of this QueryResRecordsDetailReq.
+
+        |账期开始时间。格式为YYYY-MM-DD。| |参数的约束及描述：仅当query_type=DAILY时，必须传递账期开始时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。|
+
+        :param bill_cycle_begin: The bill_cycle_begin of this QueryResRecordsDetailReq.
+        :type bill_cycle_begin: str
+        """
+        self._bill_cycle_begin = bill_cycle_begin
+
+    @property
+    def bill_cycle_end(self):
+        """Gets the bill_cycle_end of this QueryResRecordsDetailReq.
+
+        |参数名称：账期结束时间。格式为YYYY-MM-DD。| |参数的约束及描述：仅当query_type=DAILY时，必须传递账期结束时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。|
+
+        :return: The bill_cycle_end of this QueryResRecordsDetailReq.
+        :rtype: str
+        """
+        return self._bill_cycle_end
+
+    @bill_cycle_end.setter
+    def bill_cycle_end(self, bill_cycle_end):
+        """Sets the bill_cycle_end of this QueryResRecordsDetailReq.
+
+        |参数名称：账期结束时间。格式为YYYY-MM-DD。| |参数的约束及描述：仅当query_type=DAILY时，必须传递账期结束时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。|
+
+        :param bill_cycle_end: The bill_cycle_end of this QueryResRecordsDetailReq.
+        :type bill_cycle_end: str
+        """
+        self._bill_cycle_end = bill_cycle_end
 
     def to_dict(self):
         """Returns the model properties as a dict"""
