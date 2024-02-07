@@ -1,3 +1,220 @@
+# 3.1.81 2024-02-07
+
+### HuaweiCloud SDK GEIP
+
+- _新增特性_
+  - 支持全域弹性公网IP服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OrgID
+
+- _新增特性_
+  - 支持组织成员账号服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持接口`CreateClusterJob`、`GeneratePocketFile`、`GenerateSurfacePoints`、`GenerateComplexCombine`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateProject**
+    - 请求参数变更
+      - `+ is_new_bucket`
+      - `+ bucket_name`
+  - **ListComputingResourceFlavors**
+    - 响应参数变更
+      - `+ flavors.gpu_info`
+  - **ListDrugJob**
+    - 响应参数变更
+      - `* jobs.expect_charge_num: int32 -> double`
+      - `* jobs.real_charge_num: int32 -> double`
+  - **ShowSynthesisJob**
+    - 响应参数变更
+      - `* basic_info.expect_charge_num: int32 -> double`
+      - `* basic_info.real_charge_num: int32 -> double`
+  - **CreateFepJob**
+    - 请求参数变更
+      - `+ params.pre_equilibrium_time`
+      - `+ params.equilibrium_time`
+  - **ShowFepJob**
+    - 响应参数变更
+      - `+ params.pre_equilibrium_time`
+      - `+ params.equilibrium_time`
+      - `* basic_info.expect_charge_num: int32 -> double`
+      - `* basic_info.real_charge_num: int32 -> double`
+  - **ShowPocketDetectionJob**
+    - 响应参数变更
+      - `* basic_info.expect_charge_num: int32 -> double`
+      - `* basic_info.real_charge_num: int32 -> double`
+  - **ShowAdmetJob**
+    - 响应参数变更
+      - `+ cluster_result`
+      - `* basic_info.expect_charge_num: int32 -> double`
+      - `* basic_info.real_charge_num: int32 -> double`
+      - `+ models.value_range.lower_inclusive`
+      - `+ models.value_range.upper_inclusive`
+      - `* models.value_range.lower: float -> number`
+      - `* models.value_range.upper: float -> number`
+      - `* models.value_range: object<ValueRange2> -> object<ValueRange>`
+  - **CreatePocketMolDesignJob**
+    - 请求参数变更
+      - `+ num_trials`
+      - `+ optimization_mode: enum value [scaffold_hopping]`
+      - `+ receptor.remove_ligand`
+      - `+ receptor.add_hydrogen`
+      - `+ ligands.edited`
+      - `+ ligands.label_sites`
+      - `* ligands: list<DrugFile> -> list<PocketFragment>`
+  - **ShowPocketMolDesignJob**
+    - 响应参数变更
+      - `+ cluster_result`
+      - `+ num_trials`
+      - `+ optimization_mode: enum value [scaffold_hopping]`
+      - `* basic_info.expect_charge_num: int32 -> double`
+      - `* basic_info.real_charge_num: int32 -> double`
+      - `+ receptor.remove_ligand`
+      - `+ receptor.add_hydrogen`
+      - `+ ligands.edited`
+      - `+ ligands.label_sites`
+      - `* ligands: list<DrugFile> -> list<PocketFragment>`
+      - `+ model_list.value_range.lower_inclusive`
+      - `+ model_list.value_range.upper_inclusive`
+      - `* model_list.value_range.lower: float -> number`
+      - `* model_list.value_range.upper: float -> number`
+      - `* model_list.value_range: object<ValueRange2> -> object<ValueRange>`
+  - **RunDrugReceptorPreprocess**
+    - 请求参数变更
+      - `+ add_hydrogen`
+      - `+ file.add_hydrogen`
+      - `* body: object<ReceptorDrugFile> -> object<ReceptorDrugFileReq>`
+  - **RecognizeDrugReceptorPocket**
+    - 请求参数变更
+      - `+ receptor_file.add_hydrogen`
+      - `* body: object<ReceptorDrugFile> -> object<ReceptorDrugFileReq>`
+  - **CreateDrugLigandInteraction2dSvg**
+    - 请求参数变更
+      - `+ receptor_file.add_hydrogen`
+      - `* body: object<ReceptorDrugFile> -> object<ReceptorDrugFileReq>`
+  - **CreateOptmJob**
+    - 请求参数变更
+      - `+ binding_site.add_hydrogen`
+  - **ShowOptmJob**
+    - 响应参数变更
+      - `+ cluster_result`
+      - `* basic_info.expect_charge_num: int32 -> double`
+      - `* basic_info.real_charge_num: int32 -> double`
+      - `+ binding_site.add_hydrogen`
+      - `+ models.value_range.lower_inclusive`
+      - `+ models.value_range.upper_inclusive`
+      - `* models.value_range.lower: float -> number`
+      - `* models.value_range.upper: float -> number`
+      - `* models.value_range: object<ValueRange2> -> object<ValueRange>`
+  - **CreateDockingJob**
+    - 请求参数变更
+      - `+ receptors.add_hydrogen`
+  - **ShowDockingJob**
+    - 响应参数变更
+      - `+ cluster_result`
+      - `* basic_info.expect_charge_num: int32 -> double`
+      - `* basic_info.real_charge_num: int32 -> double`
+      - `+ receptors.add_hydrogen`
+  - **ListDrugModel**
+    - 响应参数变更
+      - `+ models.losses`
+      - `+ models.metrics`
+      - `+ models.ModelMetric`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListTenantVpcIgws`
+    - `CreateTenantVpcIgw`
+    - `ShowInternalVpcIgw`
+    - `UpdateTenantVpcIgw`
+    - `DeleteTenantVpcIgw`
+    - `ListProjectGeipBindings`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`UpdateNewNodeAutoAddSwitch`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateGaussMySqlProxy**
+    - 请求参数变更
+      - `+ new_node_auto_add_status`
+      - `+ new_node_weight`
+  - **ShowGaussMySqlProxyList**
+    - 响应参数变更
+      - `+ proxy_list.proxy.new_node_auto_add_status`
+      - `+ proxy_list.proxy.new_node_weight`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持接口`StopBackup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 支持接口`SetProfileImage`、`SetUserProfileImage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateDatabaseOwner`
+    - `ExecutePrivilegeDatabaseUserRole`
+    - `ExecuteRevokeDatabaseUserRole`
+    - `ListDatabaseUserRole`
+    - `UpdatePostgresqlExtension`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPostgresqlExtension**
+    - 响应参数变更
+      - `+ extensions.version_update`
+
+### HuaweiCloud SDK VPN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateVgwCertificate**
+    - 请求参数变更
+      - `* certificate: object<VpnGatewayCertificateRequestBodyContent> -> object<UpdateVpnGatewayCertificateRequestBodyContent>`
+      - `* body: object<VpnGatewayCertificateRequestBody> -> object<UpdateVpnGatewayCertificateRequestBody>`
+  - **CreateVgw**
+    - 响应参数变更
+      - `+ vpn_gateway.tags`
+  - **UpdateVgw**
+    - 响应参数变更
+      - `+ vpn_gateway.tags`
+
 # 3.1.80 2024-02-01
 
 ### HuaweiCloud SDK AOM

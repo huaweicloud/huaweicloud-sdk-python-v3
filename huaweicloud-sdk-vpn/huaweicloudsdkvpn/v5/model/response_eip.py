@@ -49,7 +49,7 @@ class ResponseEip:
 
         :param id: 功能说明：公网IP的唯一标识
         :type id: str
-        :param ip_version: 功能说明: 公网IP版本号  取值范围：4, 6
+        :param ip_version: 功能说明: 公网IP版本号  取值范围：4
         :type ip_version: int
         :param ip_billing_info: 功能说明：公网IP的订单信息 约束：包周期才会有订单信息，按需资源此字段为空
         :type ip_billing_info: str
@@ -61,7 +61,7 @@ class ResponseEip:
         :type charge_mode: str
         :param bandwidth_id: 功能说明：带宽ID
         :type bandwidth_id: str
-        :param bandwidth_size: 带宽大小Mbit/s，flavor为V300时，取值不能大于300，flavor为V1G时，取值不能大于1024
+        :param bandwidth_size: 带宽大小Mbit/s，flavor为V300时，取值不能大于300，flavor为V1G时，取值不能大于1000
         :type bandwidth_size: int
         :param bandwidth_name: 带宽名称
         :type bandwidth_name: str
@@ -130,7 +130,7 @@ class ResponseEip:
     def ip_version(self):
         """Gets the ip_version of this ResponseEip.
 
-        功能说明: 公网IP版本号  取值范围：4, 6
+        功能说明: 公网IP版本号  取值范围：4
 
         :return: The ip_version of this ResponseEip.
         :rtype: int
@@ -141,7 +141,7 @@ class ResponseEip:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ResponseEip.
 
-        功能说明: 公网IP版本号  取值范围：4, 6
+        功能说明: 公网IP版本号  取值范围：4
 
         :param ip_version: The ip_version of this ResponseEip.
         :type ip_version: int
@@ -262,7 +262,7 @@ class ResponseEip:
     def bandwidth_size(self):
         """Gets the bandwidth_size of this ResponseEip.
 
-        带宽大小Mbit/s，flavor为V300时，取值不能大于300，flavor为V1G时，取值不能大于1024
+        带宽大小Mbit/s，flavor为V300时，取值不能大于300，flavor为V1G时，取值不能大于1000
 
         :return: The bandwidth_size of this ResponseEip.
         :rtype: int
@@ -273,7 +273,7 @@ class ResponseEip:
     def bandwidth_size(self, bandwidth_size):
         """Sets the bandwidth_size of this ResponseEip.
 
-        带宽大小Mbit/s，flavor为V300时，取值不能大于300，flavor为V1G时，取值不能大于1024
+        带宽大小Mbit/s，flavor为V300时，取值不能大于300，flavor为V1G时，取值不能大于1000
 
         :param bandwidth_size: The bandwidth_size of this ResponseEip.
         :type bandwidth_size: int

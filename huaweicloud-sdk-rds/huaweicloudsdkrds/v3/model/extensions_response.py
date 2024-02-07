@@ -20,6 +20,7 @@ class ExtensionsResponse:
         'name': 'str',
         'database_name': 'str',
         'version': 'str',
+        'version_update': 'str',
         'shared_preload_libraries': 'str',
         'created': 'bool',
         'description': 'str'
@@ -29,12 +30,13 @@ class ExtensionsResponse:
         'name': 'name',
         'database_name': 'database_name',
         'version': 'version',
+        'version_update': 'version_update',
         'shared_preload_libraries': 'shared_preload_libraries',
         'created': 'created',
         'description': 'description'
     }
 
-    def __init__(self, name=None, database_name=None, version=None, shared_preload_libraries=None, created=None, description=None):
+    def __init__(self, name=None, database_name=None, version=None, version_update=None, shared_preload_libraries=None, created=None, description=None):
         """ExtensionsResponse
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ExtensionsResponse:
         :type database_name: str
         :param version: 插件版本。
         :type version: str
+        :param version_update: 可更新插件版本
+        :type version_update: str
         :param shared_preload_libraries: 依赖预加载库。
         :type shared_preload_libraries: str
         :param created: 是否创建。
@@ -58,6 +62,7 @@ class ExtensionsResponse:
         self._name = None
         self._database_name = None
         self._version = None
+        self._version_update = None
         self._shared_preload_libraries = None
         self._created = None
         self._description = None
@@ -69,6 +74,8 @@ class ExtensionsResponse:
             self.database_name = database_name
         if version is not None:
             self.version = version
+        if version_update is not None:
+            self.version_update = version_update
         if shared_preload_libraries is not None:
             self.shared_preload_libraries = shared_preload_libraries
         if created is not None:
@@ -141,6 +148,28 @@ class ExtensionsResponse:
         :type version: str
         """
         self._version = version
+
+    @property
+    def version_update(self):
+        """Gets the version_update of this ExtensionsResponse.
+
+        可更新插件版本
+
+        :return: The version_update of this ExtensionsResponse.
+        :rtype: str
+        """
+        return self._version_update
+
+    @version_update.setter
+    def version_update(self, version_update):
+        """Sets the version_update of this ExtensionsResponse.
+
+        可更新插件版本
+
+        :param version_update: The version_update of this ExtensionsResponse.
+        :type version_update: str
+        """
+        self._version_update = version_update
 
     @property
     def shared_preload_libraries(self):

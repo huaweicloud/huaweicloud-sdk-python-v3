@@ -18,7 +18,7 @@ class RecognizeReceptorPocketReq:
 
     openapi_types = {
         'mode': 'RecognizeReceptorPocketMode',
-        'receptor_file': 'ReceptorDrugFile',
+        'receptor_file': 'ReceptorDrugFileReq',
         'ligand_file': 'DrugFile',
         'residues': 'list[str]'
     }
@@ -38,7 +38,7 @@ class RecognizeReceptorPocketReq:
         :param mode: 
         :type mode: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
         :param receptor_file: 
-        :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         :param ligand_file: 
         :type ligand_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
         :param residues: 残基列表，当识别模式为残基时提供
@@ -83,7 +83,7 @@ class RecognizeReceptorPocketReq:
         """Gets the receptor_file of this RecognizeReceptorPocketReq.
 
         :return: The receptor_file of this RecognizeReceptorPocketReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         return self._receptor_file
 
@@ -92,7 +92,7 @@ class RecognizeReceptorPocketReq:
         """Sets the receptor_file of this RecognizeReceptorPocketReq.
 
         :param receptor_file: The receptor_file of this RecognizeReceptorPocketReq.
-        :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         self._receptor_file = receptor_file
 

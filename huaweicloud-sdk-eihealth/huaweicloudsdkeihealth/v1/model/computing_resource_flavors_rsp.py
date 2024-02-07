@@ -30,7 +30,8 @@ class ComputingResourceFlavorsRsp:
         'disk_detail': 'str',
         'memory_detail': 'str',
         'netcard_detail': 'str',
-        'cpu_arch': 'str'
+        'cpu_arch': 'str',
+        'gpu_info': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ComputingResourceFlavorsRsp:
         'disk_detail': 'disk_detail',
         'memory_detail': 'memory_detail',
         'netcard_detail': 'netcard_detail',
-        'cpu_arch': 'cpu_arch'
+        'cpu_arch': 'cpu_arch',
+        'gpu_info': 'gpu_info'
     }
 
-    def __init__(self, code=None, name=None, ram=None, vcpus=None, max_rate=None, min_rate=None, max_pps=None, sold_out=None, az=None, cpu_detail=None, disk_detail=None, memory_detail=None, netcard_detail=None, cpu_arch=None):
+    def __init__(self, code=None, name=None, ram=None, vcpus=None, max_rate=None, min_rate=None, max_pps=None, sold_out=None, az=None, cpu_detail=None, disk_detail=None, memory_detail=None, netcard_detail=None, cpu_arch=None, gpu_info=None):
         """ComputingResourceFlavorsRsp
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class ComputingResourceFlavorsRsp:
         :type netcard_detail: str
         :param cpu_arch: 裸金属服务器的CPU架构类型
         :type cpu_arch: str
+        :param gpu_info: GPU信息
+        :type gpu_info: str
         """
         
         
@@ -101,6 +105,7 @@ class ComputingResourceFlavorsRsp:
         self._memory_detail = None
         self._netcard_detail = None
         self._cpu_arch = None
+        self._gpu_info = None
         self.discriminator = None
 
         self.code = code
@@ -126,6 +131,8 @@ class ComputingResourceFlavorsRsp:
             self.netcard_detail = netcard_detail
         if cpu_arch is not None:
             self.cpu_arch = cpu_arch
+        if gpu_info is not None:
+            self.gpu_info = gpu_info
 
     @property
     def code(self):
@@ -434,6 +441,28 @@ class ComputingResourceFlavorsRsp:
         :type cpu_arch: str
         """
         self._cpu_arch = cpu_arch
+
+    @property
+    def gpu_info(self):
+        """Gets the gpu_info of this ComputingResourceFlavorsRsp.
+
+        GPU信息
+
+        :return: The gpu_info of this ComputingResourceFlavorsRsp.
+        :rtype: str
+        """
+        return self._gpu_info
+
+    @gpu_info.setter
+    def gpu_info(self, gpu_info):
+        """Sets the gpu_info of this ComputingResourceFlavorsRsp.
+
+        GPU信息
+
+        :param gpu_info: The gpu_info of this ComputingResourceFlavorsRsp.
+        :type gpu_info: str
+        """
+        self._gpu_info = gpu_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

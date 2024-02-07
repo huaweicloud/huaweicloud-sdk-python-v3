@@ -21,7 +21,7 @@ class ListObjectsResponse(SdkResponse):
 
     openapi_types = {
         'contents': 'list[Contents]',
-        'common_prefix': 'str',
+        'common_prefixes': 'list[CommonPrefixes]',
         'delimiter': 'str',
         'encoding_type': 'str',
         'is_truncated': 'bool',
@@ -41,7 +41,7 @@ class ListObjectsResponse(SdkResponse):
 
     attribute_map = {
         'contents': 'Contents',
-        'common_prefix': 'CommonPrefix',
+        'common_prefixes': 'CommonPrefixes',
         'delimiter': 'Delimiter',
         'encoding_type': 'EncodingType',
         'is_truncated': 'IsTruncated',
@@ -59,15 +59,15 @@ class ListObjectsResponse(SdkResponse):
         'date': 'Date'
     }
 
-    def __init__(self, contents=None, common_prefix=None, delimiter=None, encoding_type=None, is_truncated=None, marker=None, next_marker=None, max_keys=None, name=None, prefix=None, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, x_obs_bucket_type=None, connection=None, content_length=None, date=None):
+    def __init__(self, contents=None, common_prefixes=None, delimiter=None, encoding_type=None, is_truncated=None, marker=None, next_marker=None, max_keys=None, name=None, prefix=None, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, x_obs_bucket_type=None, connection=None, content_length=None, date=None):
         """ListObjectsResponse
 
         The model defined in huaweicloud sdk
 
         :param contents: 
         :type contents: list[:class:`huaweicloudsdkobs.v1.Contents`]
-        :param common_prefix: Group information. If you use **Delimiter** in the request, the response contains **CommonPrefixes**.
-        :type common_prefix: str
+        :param common_prefixes: 
+        :type common_prefixes: list[:class:`huaweicloudsdkobs.v1.CommonPrefixes`]
         :param delimiter: The **delimiter** parameter specified in the request
         :type delimiter: str
         :param encoding_type: Encodes some elements in the response based on the specified type. If **encoding-type** is specified in the request, **Delimiter**, **Marker**, **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker**, and **Key** in the response will be encoded.
@@ -103,7 +103,7 @@ class ListObjectsResponse(SdkResponse):
         super(ListObjectsResponse, self).__init__()
 
         self._contents = None
-        self._common_prefix = None
+        self._common_prefixes = None
         self._delimiter = None
         self._encoding_type = None
         self._is_truncated = None
@@ -123,8 +123,8 @@ class ListObjectsResponse(SdkResponse):
 
         if contents is not None:
             self.contents = contents
-        if common_prefix is not None:
-            self.common_prefix = common_prefix
+        if common_prefixes is not None:
+            self.common_prefixes = common_prefixes
         if delimiter is not None:
             self.delimiter = delimiter
         if encoding_type is not None:
@@ -175,26 +175,22 @@ class ListObjectsResponse(SdkResponse):
         self._contents = contents
 
     @property
-    def common_prefix(self):
-        """Gets the common_prefix of this ListObjectsResponse.
+    def common_prefixes(self):
+        """Gets the common_prefixes of this ListObjectsResponse.
 
-        Group information. If you use **Delimiter** in the request, the response contains **CommonPrefixes**.
-
-        :return: The common_prefix of this ListObjectsResponse.
-        :rtype: str
+        :return: The common_prefixes of this ListObjectsResponse.
+        :rtype: list[:class:`huaweicloudsdkobs.v1.CommonPrefixes`]
         """
-        return self._common_prefix
+        return self._common_prefixes
 
-    @common_prefix.setter
-    def common_prefix(self, common_prefix):
-        """Sets the common_prefix of this ListObjectsResponse.
+    @common_prefixes.setter
+    def common_prefixes(self, common_prefixes):
+        """Sets the common_prefixes of this ListObjectsResponse.
 
-        Group information. If you use **Delimiter** in the request, the response contains **CommonPrefixes**.
-
-        :param common_prefix: The common_prefix of this ListObjectsResponse.
-        :type common_prefix: str
+        :param common_prefixes: The common_prefixes of this ListObjectsResponse.
+        :type common_prefixes: list[:class:`huaweicloudsdkobs.v1.CommonPrefixes`]
         """
-        self._common_prefix = common_prefix
+        self._common_prefixes = common_prefixes
 
     @property
     def delimiter(self):

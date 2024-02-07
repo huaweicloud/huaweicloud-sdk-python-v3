@@ -192,7 +192,7 @@ class OBSSigner(object):
         if key:
             if not URI.endswith('/'):
                 URI += '/'
-            URI += self.encode_object_key(key)
+            URI += key
 
         if URI:
             str_list.append(URI)

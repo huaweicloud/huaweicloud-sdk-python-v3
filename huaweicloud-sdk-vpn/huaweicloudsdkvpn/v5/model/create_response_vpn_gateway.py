@@ -35,7 +35,8 @@ class CreateResponseVpnGateway:
         'used_connection_group': 'int',
         'enterprise_project_id': 'str',
         'ha_mode': 'str',
-        'policy_template': 'PolicyTemplate'
+        'policy_template': 'PolicyTemplate',
+        'tags': 'list[VpnResourceTag]'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class CreateResponseVpnGateway:
         'used_connection_group': 'used_connection_group',
         'enterprise_project_id': 'enterprise_project_id',
         'ha_mode': 'ha_mode',
-        'policy_template': 'policy_template'
+        'policy_template': 'policy_template',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, attachment_type=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, bgp_asn=None, flavor=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, policy_template=None):
+    def __init__(self, id=None, name=None, attachment_type=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, bgp_asn=None, flavor=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, policy_template=None, tags=None):
         """CreateResponseVpnGateway
 
         The model defined in huaweicloud sdk
@@ -81,7 +83,7 @@ class CreateResponseVpnGateway:
         :type local_subnets: list[str]
         :param connect_subnet: VPN网关所使用的VPC子网ID
         :type connect_subnet: str
-        :param network_type: VPN网关北向类型，默认为公网(public)
+        :param network_type: VPN网关的网络类型，默认为公网(public)
         :type network_type: str
         :param access_vpc_id: VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
         :type access_vpc_id: str
@@ -103,6 +105,8 @@ class CreateResponseVpnGateway:
         :type ha_mode: str
         :param policy_template: 
         :type policy_template: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         
         
@@ -126,6 +130,7 @@ class CreateResponseVpnGateway:
         self._enterprise_project_id = None
         self._ha_mode = None
         self._policy_template = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -166,6 +171,8 @@ class CreateResponseVpnGateway:
             self.ha_mode = ha_mode
         if policy_template is not None:
             self.policy_template = policy_template
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -343,7 +350,7 @@ class CreateResponseVpnGateway:
     def network_type(self):
         """Gets the network_type of this CreateResponseVpnGateway.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :return: The network_type of this CreateResponseVpnGateway.
         :rtype: str
@@ -354,7 +361,7 @@ class CreateResponseVpnGateway:
     def network_type(self, network_type):
         """Sets the network_type of this CreateResponseVpnGateway.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :param network_type: The network_type of this CreateResponseVpnGateway.
         :type network_type: str
@@ -576,6 +583,28 @@ class CreateResponseVpnGateway:
         :type policy_template: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
         """
         self._policy_template = policy_template
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateResponseVpnGateway.
+
+        标签
+
+        :return: The tags of this CreateResponseVpnGateway.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateResponseVpnGateway.
+
+        标签
+
+        :param tags: The tags of this CreateResponseVpnGateway.
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

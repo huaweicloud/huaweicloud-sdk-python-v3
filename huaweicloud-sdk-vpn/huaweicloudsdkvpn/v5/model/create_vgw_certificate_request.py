@@ -18,7 +18,7 @@ class CreateVgwCertificateRequest:
 
     openapi_types = {
         'vgw_id': 'str',
-        'body': 'VpnGatewayCertificateRequestBody'
+        'body': 'CreateVpnGatewayCertificateRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateVgwCertificateRequest:
         :param vgw_id: VPN网关实例ID
         :type vgw_id: str
         :param body: Body of the CreateVgwCertificateRequest
-        :type body: :class:`huaweicloudsdkvpn.v5.VpnGatewayCertificateRequestBody`
+        :type body: :class:`huaweicloudsdkvpn.v5.CreateVpnGatewayCertificateRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class CreateVgwCertificateRequest:
         """Gets the body of this CreateVgwCertificateRequest.
 
         :return: The body of this CreateVgwCertificateRequest.
-        :rtype: :class:`huaweicloudsdkvpn.v5.VpnGatewayCertificateRequestBody`
+        :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnGatewayCertificateRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateVgwCertificateRequest:
         """Sets the body of this CreateVgwCertificateRequest.
 
         :param body: The body of this CreateVgwCertificateRequest.
-        :type body: :class:`huaweicloudsdkvpn.v5.VpnGatewayCertificateRequestBody`
+        :type body: :class:`huaweicloudsdkvpn.v5.CreateVpnGatewayCertificateRequestBody`
         """
         self._body = body
 

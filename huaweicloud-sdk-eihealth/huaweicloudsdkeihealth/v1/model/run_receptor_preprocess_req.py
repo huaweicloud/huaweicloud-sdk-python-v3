@@ -17,32 +17,36 @@ class RunReceptorPreprocessReq:
     sensitive_list = []
 
     openapi_types = {
-        'file': 'ReceptorDrugFile',
+        'file': 'ReceptorDrugFileReq',
         'remove_water': 'bool',
         'remove_ion': 'bool',
-        'remove_ligand': 'bool'
+        'remove_ligand': 'bool',
+        'add_hydrogen': 'bool'
     }
 
     attribute_map = {
         'file': 'file',
         'remove_water': 'remove_water',
         'remove_ion': 'remove_ion',
-        'remove_ligand': 'remove_ligand'
+        'remove_ligand': 'remove_ligand',
+        'add_hydrogen': 'add_hydrogen'
     }
 
-    def __init__(self, file=None, remove_water=None, remove_ion=None, remove_ligand=None):
+    def __init__(self, file=None, remove_water=None, remove_ion=None, remove_ligand=None, add_hydrogen=None):
         """RunReceptorPreprocessReq
 
         The model defined in huaweicloud sdk
 
         :param file: 
-        :type file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :type file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         :param remove_water: 去除水分子
         :type remove_water: bool
         :param remove_ion: 去除离子
         :type remove_ion: bool
         :param remove_ligand: 去除配体分子
         :type remove_ligand: bool
+        :param add_hydrogen: 增加氢原子
+        :type add_hydrogen: bool
         """
         
         
@@ -51,6 +55,7 @@ class RunReceptorPreprocessReq:
         self._remove_water = None
         self._remove_ion = None
         self._remove_ligand = None
+        self._add_hydrogen = None
         self.discriminator = None
 
         self.file = file
@@ -60,13 +65,15 @@ class RunReceptorPreprocessReq:
             self.remove_ion = remove_ion
         if remove_ligand is not None:
             self.remove_ligand = remove_ligand
+        if add_hydrogen is not None:
+            self.add_hydrogen = add_hydrogen
 
     @property
     def file(self):
         """Gets the file of this RunReceptorPreprocessReq.
 
         :return: The file of this RunReceptorPreprocessReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         return self._file
 
@@ -75,7 +82,7 @@ class RunReceptorPreprocessReq:
         """Sets the file of this RunReceptorPreprocessReq.
 
         :param file: The file of this RunReceptorPreprocessReq.
-        :type file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :type file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         self._file = file
 
@@ -144,6 +151,28 @@ class RunReceptorPreprocessReq:
         :type remove_ligand: bool
         """
         self._remove_ligand = remove_ligand
+
+    @property
+    def add_hydrogen(self):
+        """Gets the add_hydrogen of this RunReceptorPreprocessReq.
+
+        增加氢原子
+
+        :return: The add_hydrogen of this RunReceptorPreprocessReq.
+        :rtype: bool
+        """
+        return self._add_hydrogen
+
+    @add_hydrogen.setter
+    def add_hydrogen(self, add_hydrogen):
+        """Sets the add_hydrogen of this RunReceptorPreprocessReq.
+
+        增加氢原子
+
+        :param add_hydrogen: The add_hydrogen of this RunReceptorPreprocessReq.
+        :type add_hydrogen: bool
+        """
+        self._add_hydrogen = add_hydrogen
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,7 +26,8 @@ class ShowOptmJobResponse(SdkResponse):
         'weak_constraints': 'list[WeakConstraintDto]',
         'strong_constraints': 'list[StrongConstraintDto]',
         'sampler_mixin_weight': 'float',
-        'models': 'list[BasicDrugModel]'
+        'models': 'list[BasicDrugModel]',
+        'cluster_result': 'ClusterJobRsp'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class ShowOptmJobResponse(SdkResponse):
         'weak_constraints': 'weak_constraints',
         'strong_constraints': 'strong_constraints',
         'sampler_mixin_weight': 'sampler_mixin_weight',
-        'models': 'models'
+        'models': 'models',
+        'cluster_result': 'cluster_result'
     }
 
-    def __init__(self, basic_info=None, smiles=None, molecule_file=None, num_trials=None, binding_site=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, models=None):
+    def __init__(self, basic_info=None, smiles=None, molecule_file=None, num_trials=None, binding_site=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, models=None, cluster_result=None):
         """ShowOptmJobResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +66,8 @@ class ShowOptmJobResponse(SdkResponse):
         :type sampler_mixin_weight: float
         :param models: 模型列表
         :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
+        :param cluster_result: 
+        :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
         """
         
         super(ShowOptmJobResponse, self).__init__()
@@ -77,6 +81,7 @@ class ShowOptmJobResponse(SdkResponse):
         self._strong_constraints = None
         self._sampler_mixin_weight = None
         self._models = None
+        self._cluster_result = None
         self.discriminator = None
 
         if basic_info is not None:
@@ -97,6 +102,8 @@ class ShowOptmJobResponse(SdkResponse):
             self.sampler_mixin_weight = sampler_mixin_weight
         if models is not None:
             self.models = models
+        if cluster_result is not None:
+            self.cluster_result = cluster_result
 
     @property
     def basic_info(self):
@@ -283,6 +290,24 @@ class ShowOptmJobResponse(SdkResponse):
         :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
         """
         self._models = models
+
+    @property
+    def cluster_result(self):
+        """Gets the cluster_result of this ShowOptmJobResponse.
+
+        :return: The cluster_result of this ShowOptmJobResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        """
+        return self._cluster_result
+
+    @cluster_result.setter
+    def cluster_result(self, cluster_result):
+        """Sets the cluster_result of this ShowOptmJobResponse.
+
+        :param cluster_result: The cluster_result of this ShowOptmJobResponse.
+        :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        """
+        self._cluster_result = cluster_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

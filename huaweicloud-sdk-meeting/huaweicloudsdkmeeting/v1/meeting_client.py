@@ -8064,6 +8064,75 @@ class MeetingClient(Client):
 
         return http_info
 
+    def set_profile_image(self, request):
+        """用户设置头像
+
+        用户设置头像
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetProfileImage
+        :type request: :class:`huaweicloudsdkmeeting.v1.SetProfileImageRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetProfileImageResponse`
+        """
+        http_info = self._set_profile_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_profile_image_invoker(self, request):
+        http_info = self._set_profile_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_profile_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/abs/profile-images",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetProfileImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_role(self, request):
         """申请主持人
 
@@ -8190,6 +8259,77 @@ class MeetingClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_user_profile_image(self, request):
+        """企业管理员设置企业成员头像
+
+        为企业内的用户设置头像（只允许管理员调用）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetUserProfileImage
+        :type request: :class:`huaweicloudsdkmeeting.v1.SetUserProfileImageRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetUserProfileImageResponse`
+        """
+        http_info = self._set_user_profile_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_user_profile_image_invoker(self, request):
+        http_info = self._set_user_profile_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_user_profile_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/abs/profile-images/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetUserProfileImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
 
         auth_settings = []
 

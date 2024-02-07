@@ -23,7 +23,9 @@ class OpenMysqlProxyRequestBody:
         'proxy_mode': 'str',
         'route_mode': 'int',
         'nodes_read_weight': 'list[NodesWeight]',
-        'subnet_id': 'str'
+        'subnet_id': 'str',
+        'new_node_auto_add_status': 'str',
+        'new_node_weight': 'int'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class OpenMysqlProxyRequestBody:
         'proxy_mode': 'proxy_mode',
         'route_mode': 'route_mode',
         'nodes_read_weight': 'nodes_read_weight',
-        'subnet_id': 'subnet_id'
+        'subnet_id': 'subnet_id',
+        'new_node_auto_add_status': 'new_node_auto_add_status',
+        'new_node_weight': 'new_node_weight'
     }
 
-    def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, route_mode=None, nodes_read_weight=None, subnet_id=None):
+    def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, route_mode=None, nodes_read_weight=None, subnet_id=None, new_node_auto_add_status=None, new_node_weight=None):
         """OpenMysqlProxyRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class OpenMysqlProxyRequestBody:
         :type nodes_read_weight: list[:class:`huaweicloudsdkgaussdb.v3.NodesWeight`]
         :param subnet_id: 数据库VPC下的子网ID。
         :type subnet_id: str
+        :param new_node_auto_add_status: 是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
+        :type new_node_auto_add_status: str
+        :param new_node_weight: 新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
+        :type new_node_weight: int
         """
         
         
@@ -66,6 +74,8 @@ class OpenMysqlProxyRequestBody:
         self._route_mode = None
         self._nodes_read_weight = None
         self._subnet_id = None
+        self._new_node_auto_add_status = None
+        self._new_node_weight = None
         self.discriminator = None
 
         self.flavor_ref = flavor_ref
@@ -80,6 +90,10 @@ class OpenMysqlProxyRequestBody:
             self.nodes_read_weight = nodes_read_weight
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if new_node_auto_add_status is not None:
+            self.new_node_auto_add_status = new_node_auto_add_status
+        if new_node_weight is not None:
+            self.new_node_weight = new_node_weight
 
     @property
     def flavor_ref(self):
@@ -234,6 +248,50 @@ class OpenMysqlProxyRequestBody:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def new_node_auto_add_status(self):
+        """Gets the new_node_auto_add_status of this OpenMysqlProxyRequestBody.
+
+        是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
+
+        :return: The new_node_auto_add_status of this OpenMysqlProxyRequestBody.
+        :rtype: str
+        """
+        return self._new_node_auto_add_status
+
+    @new_node_auto_add_status.setter
+    def new_node_auto_add_status(self, new_node_auto_add_status):
+        """Sets the new_node_auto_add_status of this OpenMysqlProxyRequestBody.
+
+        是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
+
+        :param new_node_auto_add_status: The new_node_auto_add_status of this OpenMysqlProxyRequestBody.
+        :type new_node_auto_add_status: str
+        """
+        self._new_node_auto_add_status = new_node_auto_add_status
+
+    @property
+    def new_node_weight(self):
+        """Gets the new_node_weight of this OpenMysqlProxyRequestBody.
+
+        新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
+
+        :return: The new_node_weight of this OpenMysqlProxyRequestBody.
+        :rtype: int
+        """
+        return self._new_node_weight
+
+    @new_node_weight.setter
+    def new_node_weight(self, new_node_weight):
+        """Sets the new_node_weight of this OpenMysqlProxyRequestBody.
+
+        新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
+
+        :param new_node_weight: The new_node_weight of this OpenMysqlProxyRequestBody.
+        :type new_node_weight: int
+        """
+        self._new_node_weight = new_node_weight
 
     def to_dict(self):
         """Returns the model properties as a dict"""

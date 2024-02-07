@@ -98,6 +98,136 @@ class CdnClient(Client):
 
         return http_info
 
+    def batch_delete_tags(self, request):
+        """删除资源标签配置接口
+
+        用于删除资源标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteTags
+        :type request: :class:`huaweicloudsdkcdn.v2.BatchDeleteTagsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.BatchDeleteTagsResponse`
+        """
+        http_info = self._batch_delete_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_tags_invoker(self, request):
+        http_info = self._batch_delete_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/tags/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_domain(self, request):
+        """创建加速域名
+
+        创建加速域名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDomain
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateDomainRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateDomainResponse`
+        """
+        http_info = self._create_domain_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_domain_invoker(self, request):
+        http_info = self._create_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_domain_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_preheating_tasks(self, request):
         """创建预热缓存任务
 
@@ -211,6 +341,205 @@ class CdnClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_tags(self, request):
+        """创建资源标签配置接口
+
+        用于创建资源标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTags
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateTagsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateTagsResponse`
+        """
+        http_info = self._create_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_tags_invoker(self, request):
+        http_info = self._create_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_domain(self, request):
+        """删除加速域名
+
+        删除加速域名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDomain
+        :type request: :class:`huaweicloudsdkcdn.v2.DeleteDomainRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.DeleteDomainResponse`
+        """
+        http_info = self._delete_domain_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_domain_invoker(self, request):
+        http_info = self._delete_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/cdn/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def disable_domain(self, request):
+        """停用加速域名
+
+        停用加速域名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisableDomain
+        :type request: :class:`huaweicloudsdkcdn.v2.DisableDomainRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.DisableDomainResponse`
+        """
+        http_info = self._disable_domain_http_info(request)
+        return self._call_api(**http_info)
+
+    def disable_domain_invoker(self, request):
+        http_info = self._disable_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_domain_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/cdn/domains/{domain_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableDomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -391,6 +720,73 @@ class CdnClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'excel_type' in local_var_params:
             query_params.append(('excel_type', local_var_params['excel_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_domain(self, request):
+        """启用加速域名
+
+        启用加速域名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for EnableDomain
+        :type request: :class:`huaweicloudsdkcdn.v2.EnableDomainRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.EnableDomainResponse`
+        """
+        http_info = self._enable_domain_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_domain_invoker(self, request):
+        http_info = self._enable_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_domain_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/cdn/domains/{domain_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableDomainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -717,6 +1113,79 @@ class CdnClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'calc_type' in local_var_params:
             query_params.append(('calc_type', local_var_params['calc_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_certificates_https_info(self, request):
+        """查询所有绑定HTTPS证书的域名信息
+
+        查询所有绑定HTTPS证书的域名信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCertificatesHttpsInfo
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowCertificatesHttpsInfoRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowCertificatesHttpsInfoResponse`
+        """
+        http_info = self._show_certificates_https_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_certificates_https_info_invoker(self, request):
+        http_info = self._show_certificates_https_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificates_https_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/domains/https-certificate-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificatesHttpsInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_number' in local_var_params:
+            query_params.append(('page_number', local_var_params['page_number']))
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'user_domain_id' in local_var_params:
+            query_params.append(('user_domain_id', local_var_params['user_domain_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1307,6 +1776,73 @@ class CdnClient(Client):
 
         return http_info
 
+    def show_ip_info(self, request):
+        """查询IP归属信息
+
+        查询IP归属信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIpInfo
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowIpInfoRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowIpInfoResponse`
+        """
+        http_info = self._show_ip_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ip_info_invoker(self, request):
+        http_info = self._show_ip_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ip_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/ip-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'ips' in local_var_params:
+            query_params.append(('ips', local_var_params['ips']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_logs(self, request):
         """日志查询
 
@@ -1355,6 +1891,71 @@ class CdnClient(Client):
             query_params.append(('page_number', local_var_params['page_number']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tags(self, request):
+        """查询资源标签列表配置接口
+
+        用于查询资源标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTags
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowTagsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowTagsResponse`
+        """
+        http_info = self._show_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tags_invoker(self, request):
+        http_info = self._show_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
 
         header_params = {}
 
@@ -1637,6 +2238,71 @@ class CdnClient(Client):
 
         return http_info
 
+    def show_verify_domain_owner_info(self, request):
+        """查询域名归属校验信息
+
+        用于查询域名归属校验信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVerifyDomainOwnerInfo
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowVerifyDomainOwnerInfoRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowVerifyDomainOwnerInfoResponse`
+        """
+        http_info = self._show_verify_domain_owner_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_verify_domain_owner_info_invoker(self, request):
+        http_info = self._show_verify_domain_owner_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_verify_domain_owner_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}/domain-verifies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVerifyDomainOwnerInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_domain_full_config(self, request):
         """修改域名全量配置接口
 
@@ -1677,6 +2343,209 @@ class CdnClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_domain_multi_certificates(self, request):
+        """一个证书批量设置多个域名
+
+        一个证书配置多个域名，设置域名强制https回源参数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDomainMultiCertificates
+        :type request: :class:`huaweicloudsdkcdn.v2.UpdateDomainMultiCertificatesRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.UpdateDomainMultiCertificatesResponse`
+        """
+        http_info = self._update_domain_multi_certificates_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_domain_multi_certificates_invoker(self, request):
+        http_info = self._update_domain_multi_certificates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_multi_certificates_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/cdn/domains/config-https-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainMultiCertificatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_private_bucket_access(self, request):
+        """修改私有桶开启关闭状态
+
+        修改私有桶开启关闭状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePrivateBucketAccess
+        :type request: :class:`huaweicloudsdkcdn.v2.UpdatePrivateBucketAccessRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.UpdatePrivateBucketAccessResponse`
+        """
+        http_info = self._update_private_bucket_access_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_private_bucket_access_invoker(self, request):
+        http_info = self._update_private_bucket_access_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_private_bucket_access_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/cdn/domains/{domain_id}/private-bucket-access",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivateBucketAccessResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def verify_domain_owner(self, request):
+        """域名归属校验
+
+        用于域名归属校验
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for VerifyDomainOwner
+        :type request: :class:`huaweicloudsdkcdn.v2.VerifyDomainOwnerRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.VerifyDomainOwnerResponse`
+        """
+        http_info = self._verify_domain_owner_http_info(request)
+        return self._call_api(**http_info)
+
+    def verify_domain_owner_invoker(self, request):
+        http_info = self._verify_domain_owner_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _verify_domain_owner_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}/verify-owner",
+            "request_type": request.__class__.__name__,
+            "response_type": "VerifyDomainOwnerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
 
         header_params = {}
 

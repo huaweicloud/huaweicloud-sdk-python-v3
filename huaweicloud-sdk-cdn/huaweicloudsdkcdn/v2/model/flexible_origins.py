@@ -39,7 +39,7 @@ class FlexibleOrigins:
         :type match_type: str
         :param match_pattern: file_extension（文件后缀）： 支持所有格式的文件类型。 输入首字符为“.”，以“;”进行分隔。 输入的文件后缀名总数不能超过20个。 file_path（目录路径）：输入要求以“/”作为首字符，以“;”进行分隔，输入的目录路径总数不能超过20个。
         :type match_pattern: str
-        :param priority: 优先级取值范围为1~100，数值越大优先级越高。
+        :param priority: 优先级取值范围为1-100，数值越大优先级越高。
         :type priority: int
         :param back_sources: 回源信息。  &gt; 每个目录的回源源站数量不超过1个。
         :type back_sources: list[:class:`huaweicloudsdkcdn.v2.BackSources`]
@@ -106,7 +106,7 @@ class FlexibleOrigins:
     def priority(self):
         """Gets the priority of this FlexibleOrigins.
 
-        优先级取值范围为1~100，数值越大优先级越高。
+        优先级取值范围为1-100，数值越大优先级越高。
 
         :return: The priority of this FlexibleOrigins.
         :rtype: int
@@ -117,7 +117,7 @@ class FlexibleOrigins:
     def priority(self, priority):
         """Sets the priority of this FlexibleOrigins.
 
-        优先级取值范围为1~100，数值越大优先级越高。
+        优先级取值范围为1-100，数值越大优先级越高。
 
         :param priority: The priority of this FlexibleOrigins.
         :type priority: int

@@ -22,7 +22,7 @@ class BasicDrugModel:
         'name': 'str',
         'creator': 'str',
         'type': 'str',
-        'value_range': 'ValueRange2',
+        'value_range': 'ValueRange',
         'description': 'str'
     }
 
@@ -52,7 +52,7 @@ class BasicDrugModel:
         :param type: 模型类型
         :type type: str
         :param value_range: 
-        :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
+        :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange`
         :param description: 模型描述信息
         :type description: str
         """
@@ -198,7 +198,7 @@ class BasicDrugModel:
         """Gets the value_range of this BasicDrugModel.
 
         :return: The value_range of this BasicDrugModel.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange`
         """
         return self._value_range
 
@@ -207,7 +207,7 @@ class BasicDrugModel:
         """Sets the value_range of this BasicDrugModel.
 
         :param value_range: The value_range of this BasicDrugModel.
-        :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
+        :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange`
         """
         self._value_range = value_range
 

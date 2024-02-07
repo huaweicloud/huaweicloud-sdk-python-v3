@@ -41,9 +41,9 @@ class UpdateVgwRequestBodyContent:
         :type name: str
         :param local_subnets: 本端子网
         :type local_subnets: list[str]
-        :param eip_id_1: 主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
+        :param eip_id_1: 有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
         :type eip_id_1: str
-        :param eip_id_2: 备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
+        :param eip_id_2: 有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
         :type eip_id_2: str
         :param policy_template: 
         :type policy_template: :class:`huaweicloudsdkvpn.v5.UpdateRequestPolicyTemplate`
@@ -117,7 +117,7 @@ class UpdateVgwRequestBodyContent:
     def eip_id_1(self):
         """Gets the eip_id_1 of this UpdateVgwRequestBodyContent.
 
-        主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
+        有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
 
         :return: The eip_id_1 of this UpdateVgwRequestBodyContent.
         :rtype: str
@@ -128,7 +128,7 @@ class UpdateVgwRequestBodyContent:
     def eip_id_1(self, eip_id_1):
         """Sets the eip_id_1 of this UpdateVgwRequestBodyContent.
 
-        主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
+        有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
 
         :param eip_id_1: The eip_id_1 of this UpdateVgwRequestBodyContent.
         :type eip_id_1: str
@@ -139,7 +139,7 @@ class UpdateVgwRequestBodyContent:
     def eip_id_2(self):
         """Gets the eip_id_2 of this UpdateVgwRequestBodyContent.
 
-        备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
+        有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
 
         :return: The eip_id_2 of this UpdateVgwRequestBodyContent.
         :rtype: str
@@ -150,7 +150,7 @@ class UpdateVgwRequestBodyContent:
     def eip_id_2(self, eip_id_2):
         """Sets the eip_id_2 of this UpdateVgwRequestBodyContent.
 
-        备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
+        有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
 
         :param eip_id_2: The eip_id_2 of this UpdateVgwRequestBodyContent.
         :type eip_id_2: str

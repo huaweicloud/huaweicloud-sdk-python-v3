@@ -43,7 +43,7 @@ class CreateRequestEip:
         :type type: str
         :param charge_mode: 功能说明：按流量计费还是按带宽计费  取值范围：  bandwidth：按带宽计费  traffic：按流量计费  95peak_plus：按增强型95计费
         :type charge_mode: str
-        :param bandwidth_size: 带宽大小Mbit/s。flavor为Basic时，取值不能大于100；flavor为Professional1时，取值不能大于300；flavor为Professional2时，取值不能大于1024
+        :param bandwidth_size: 带宽大小Mbit/s。flavor为Basic时，取值不能大于100；flavor为Professional1时，取值不能大于300；flavor为Professional2时，取值不能大于1000
         :type bandwidth_size: int
         :param bandwidth_name: 带宽名称
         :type bandwidth_name: str
@@ -139,7 +139,7 @@ class CreateRequestEip:
     def bandwidth_size(self):
         """Gets the bandwidth_size of this CreateRequestEip.
 
-        带宽大小Mbit/s。flavor为Basic时，取值不能大于100；flavor为Professional1时，取值不能大于300；flavor为Professional2时，取值不能大于1024
+        带宽大小Mbit/s。flavor为Basic时，取值不能大于100；flavor为Professional1时，取值不能大于300；flavor为Professional2时，取值不能大于1000
 
         :return: The bandwidth_size of this CreateRequestEip.
         :rtype: int
@@ -150,7 +150,7 @@ class CreateRequestEip:
     def bandwidth_size(self, bandwidth_size):
         """Sets the bandwidth_size of this CreateRequestEip.
 
-        带宽大小Mbit/s。flavor为Basic时，取值不能大于100；flavor为Professional1时，取值不能大于300；flavor为Professional2时，取值不能大于1024
+        带宽大小Mbit/s。flavor为Basic时，取值不能大于100；flavor为Professional1时，取值不能大于300；flavor为Professional2时，取值不能大于1000
 
         :param bandwidth_size: The bandwidth_size of this CreateRequestEip.
         :type bandwidth_size: int

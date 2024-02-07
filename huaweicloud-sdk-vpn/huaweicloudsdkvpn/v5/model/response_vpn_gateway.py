@@ -103,15 +103,15 @@ class ResponseVpnGateway:
         :type local_subnets: list[str]
         :param connect_subnet: VPN网关所使用的VPC子网ID
         :type connect_subnet: str
-        :param network_type: VPN网关北向类型，默认为公网(public)
+        :param network_type: VPN网关的网络类型，默认为公网(public)
         :type network_type: str
         :param access_vpc_id: VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
         :type access_vpc_id: str
         :param access_subnet_id: VPN网关北向接入VPC中的接入子网ID
         :type access_subnet_id: str
-        :param access_private_ip_1: VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        :param access_private_ip_1: 私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第一个私网地址，主备表示主私网地址。
         :type access_private_ip_1: str
-        :param access_private_ip_2: VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        :param access_private_ip_2: 私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第二个私网地址，主备表示备私网地址。
         :type access_private_ip_2: str
         :param bgp_asn: bgp所使用的asn号
         :type bgp_asn: int
@@ -435,7 +435,7 @@ class ResponseVpnGateway:
     def network_type(self):
         """Gets the network_type of this ResponseVpnGateway.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :return: The network_type of this ResponseVpnGateway.
         :rtype: str
@@ -446,7 +446,7 @@ class ResponseVpnGateway:
     def network_type(self, network_type):
         """Sets the network_type of this ResponseVpnGateway.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :param network_type: The network_type of this ResponseVpnGateway.
         :type network_type: str
@@ -501,7 +501,7 @@ class ResponseVpnGateway:
     def access_private_ip_1(self):
         """Gets the access_private_ip_1 of this ResponseVpnGateway.
 
-        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第一个私网地址，主备表示主私网地址。
 
         :return: The access_private_ip_1 of this ResponseVpnGateway.
         :rtype: str
@@ -512,7 +512,7 @@ class ResponseVpnGateway:
     def access_private_ip_1(self, access_private_ip_1):
         """Sets the access_private_ip_1 of this ResponseVpnGateway.
 
-        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第一个私网地址，主备表示主私网地址。
 
         :param access_private_ip_1: The access_private_ip_1 of this ResponseVpnGateway.
         :type access_private_ip_1: str
@@ -523,7 +523,7 @@ class ResponseVpnGateway:
     def access_private_ip_2(self):
         """Gets the access_private_ip_2 of this ResponseVpnGateway.
 
-        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第二个私网地址，主备表示备私网地址。
 
         :return: The access_private_ip_2 of this ResponseVpnGateway.
         :rtype: str
@@ -534,7 +534,7 @@ class ResponseVpnGateway:
     def access_private_ip_2(self, access_private_ip_2):
         """Sets the access_private_ip_2 of this ResponseVpnGateway.
 
-        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第二个私网地址，主备表示备私网地址。
 
         :param access_private_ip_2: The access_private_ip_2 of this ResponseVpnGateway.
         :type access_private_ip_2: str

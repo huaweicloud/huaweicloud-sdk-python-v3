@@ -18,7 +18,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'domain': 'DomainsWithPort'
+        'domain': 'DomainsDetail'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param domain: 
-        :type domain: :class:`huaweicloudsdkcdn.v2.DomainsWithPort`
+        :type domain: :class:`huaweicloudsdkcdn.v2.DomainsDetail`
         """
         
         super(ShowDomainDetailByNameResponse, self).__init__()
@@ -47,7 +47,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
         """Gets the domain of this ShowDomainDetailByNameResponse.
 
         :return: The domain of this ShowDomainDetailByNameResponse.
-        :rtype: :class:`huaweicloudsdkcdn.v2.DomainsWithPort`
+        :rtype: :class:`huaweicloudsdkcdn.v2.DomainsDetail`
         """
         return self._domain
 
@@ -56,7 +56,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
         """Sets the domain of this ShowDomainDetailByNameResponse.
 
         :param domain: The domain of this ShowDomainDetailByNameResponse.
-        :type domain: :class:`huaweicloudsdkcdn.v2.DomainsWithPort`
+        :type domain: :class:`huaweicloudsdkcdn.v2.DomainsDetail`
         """
         self._domain = domain
 

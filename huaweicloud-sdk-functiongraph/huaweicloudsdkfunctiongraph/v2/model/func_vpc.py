@@ -68,12 +68,16 @@ class FuncVpc:
         self._security_groups = None
         self.discriminator = None
 
-        self.vpc_name = vpc_name
+        if vpc_name is not None:
+            self.vpc_name = vpc_name
         self.vpc_id = vpc_id
-        self.subnet_name = subnet_name
+        if subnet_name is not None:
+            self.subnet_name = subnet_name
         self.subnet_id = subnet_id
-        self.cidr = cidr
-        self.gateway = gateway
+        if cidr is not None:
+            self.cidr = cidr
+        if gateway is not None:
+            self.gateway = gateway
         if security_groups is not None:
             self.security_groups = security_groups
 

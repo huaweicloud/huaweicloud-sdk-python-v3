@@ -677,6 +677,115 @@ class EipAsyncClient(Client):
 
         return http_info
 
+    def list_project_geip_bindings_async(self, request):
+        """查询GEIP与实例绑定关系的租户列表
+
+        查询GEIP与实例绑定关系的租户列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectGeipBindings
+        :type request: :class:`huaweicloudsdkeip.v3.ListProjectGeipBindingsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListProjectGeipBindingsResponse`
+        """
+        http_info = self._list_project_geip_bindings_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_geip_bindings_async_invoker(self, request):
+        http_info = self._list_project_geip_bindings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_geip_bindings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/geip/bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectGeipBindingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+        if 'geip_id' in local_var_params:
+            query_params.append(('geip_id', local_var_params['geip_id']))
+        if 'geip_ip_address' in local_var_params:
+            query_params.append(('geip_ip_address', local_var_params['geip_ip_address']))
+        if 'public_border_group' in local_var_params:
+            query_params.append(('public_border_group', local_var_params['public_border_group']))
+        if 'instance_type' in local_var_params:
+            query_params.append(('instance_type', local_var_params['instance_type']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'instance_vpc_id' in local_var_params:
+            query_params.append(('instance_vpc_id', local_var_params['instance_vpc_id']))
+        if 'gcbandwidth_id' in local_var_params:
+            query_params.append(('gcbandwidth.id', local_var_params['gcbandwidth_id']))
+        if 'gcbandwidth_admin_status' in local_var_params:
+            query_params.append(('gcbandwidth.admin_status', local_var_params['gcbandwidth_admin_status']))
+        if 'gcbandwidth_size' in local_var_params:
+            query_params.append(('gcbandwidth.size', local_var_params['gcbandwidth_size']))
+        if 'gcbandwidth_sla_level' in local_var_params:
+            query_params.append(('gcbandwidth.sla_level', local_var_params['gcbandwidth_sla_level']))
+        if 'gcbandwidth_dscp' in local_var_params:
+            query_params.append(('gcbandwidth.dscp', local_var_params['gcbandwidth_dscp']))
+        if 'vnic_private_ip_address' in local_var_params:
+            query_params.append(('vnic.private_ip_address', local_var_params['vnic_private_ip_address']))
+        if 'vnic_vpc_id' in local_var_params:
+            query_params.append(('vnic.vpc_id', local_var_params['vnic_vpc_id']))
+        if 'vnic_port_id' in local_var_params:
+            query_params.append(('vnic.port_id', local_var_params['vnic_port_id']))
+        if 'vnic_device_id' in local_var_params:
+            query_params.append(('vnic.device_id', local_var_params['vnic_device_id']))
+        if 'vnic_device_owner' in local_var_params:
+            query_params.append(('vnic.device_owner', local_var_params['vnic_device_owner']))
+        if 'vnic_device_owner_prefixlike' in local_var_params:
+            query_params.append(('vnic.device_owner_prefixlike', local_var_params['vnic_device_owner_prefixlike']))
+        if 'vnic_instance_type' in local_var_params:
+            query_params.append(('vnic.instance_type', local_var_params['vnic_instance_type']))
+        if 'vnic_instance_id' in local_var_params:
+            query_params.append(('vnic.instance_id', local_var_params['vnic_instance_id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def associate_publicips_async(self, request):
         """绑定弹性公网IP
 
@@ -1549,6 +1658,351 @@ class EipAsyncClient(Client):
             path_params['publicip_id'] = local_var_params['publicip_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_tenant_vpc_igw_async(self, request):
+        """创建虚拟igw
+
+        创建虚拟igw
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTenantVpcIgw
+        :type request: :class:`huaweicloudsdkeip.v3.CreateTenantVpcIgwRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.CreateTenantVpcIgwResponse`
+        """
+        http_info = self._create_tenant_vpc_igw_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_tenant_vpc_igw_async_invoker(self, request):
+        http_info = self._create_tenant_vpc_igw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tenant_vpc_igw_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/geip/vpc-igws",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTenantVpcIgwResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_tenant_vpc_igw_async(self, request):
+        """删除虚拟igw
+
+        删除虚拟igw
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTenantVpcIgw
+        :type request: :class:`huaweicloudsdkeip.v3.DeleteTenantVpcIgwRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.DeleteTenantVpcIgwResponse`
+        """
+        http_info = self._delete_tenant_vpc_igw_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_tenant_vpc_igw_async_invoker(self, request):
+        http_info = self._delete_tenant_vpc_igw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tenant_vpc_igw_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/geip/vpc-igws/{vpc_igw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTenantVpcIgwResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_igw_id' in local_var_params:
+            path_params['vpc_igw_id'] = local_var_params['vpc_igw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tenant_vpc_igws_async(self, request):
+        """查询指定租户下的虚拟igw列表
+
+        查询指定租户下的虚拟igw列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTenantVpcIgws
+        :type request: :class:`huaweicloudsdkeip.v3.ListTenantVpcIgwsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListTenantVpcIgwsResponse`
+        """
+        http_info = self._list_tenant_vpc_igws_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tenant_vpc_igws_async_invoker(self, request):
+        http_info = self._list_tenant_vpc_igws_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tenant_vpc_igws_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/geip/vpc-igws",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTenantVpcIgwsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_internal_vpc_igw_async(self, request):
+        """查询虚拟igw详情
+
+        查询虚拟igw详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInternalVpcIgw
+        :type request: :class:`huaweicloudsdkeip.v3.ShowInternalVpcIgwRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ShowInternalVpcIgwResponse`
+        """
+        http_info = self._show_internal_vpc_igw_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_internal_vpc_igw_async_invoker(self, request):
+        http_info = self._show_internal_vpc_igw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_internal_vpc_igw_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/geip/vpc-igws/{vpc_igw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInternalVpcIgwResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_igw_id' in local_var_params:
+            path_params['vpc_igw_id'] = local_var_params['vpc_igw_id']
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_tenant_vpc_igw_async(self, request):
+        """修改虚拟igw
+
+        修改虚拟igw
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTenantVpcIgw
+        :type request: :class:`huaweicloudsdkeip.v3.UpdateTenantVpcIgwRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.UpdateTenantVpcIgwResponse`
+        """
+        http_info = self._update_tenant_vpc_igw_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_tenant_vpc_igw_async_invoker(self, request):
+        http_info = self._update_tenant_vpc_igw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_tenant_vpc_igw_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/geip/vpc-igws/{vpc_igw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTenantVpcIgwResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_igw_id' in local_var_params:
+            path_params['vpc_igw_id'] = local_var_params['vpc_igw_id']
+
+        query_params = []
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
 
         header_params = {}
 

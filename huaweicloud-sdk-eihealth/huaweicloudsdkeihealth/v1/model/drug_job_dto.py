@@ -28,8 +28,8 @@ class DrugJobDto:
         'failed_message': 'str',
         'user_name': 'str',
         'output_dir': 'str',
-        'expect_charge_num': 'int',
-        'real_charge_num': 'int',
+        'expect_charge_num': 'float',
+        'real_charge_num': 'float',
         'progress': 'Progress'
     }
 
@@ -69,7 +69,7 @@ class DrugJobDto:
         :type create_time: str
         :param finish_time: 作业结束时间
         :type finish_time: str
-        :param start_time: 作业结束时间
+        :param start_time: 作业开始时间
         :type start_time: str
         :param failed_message: 失败提示，当作业执行失败时会返回
         :type failed_message: str
@@ -78,9 +78,9 @@ class DrugJobDto:
         :param output_dir: 作业结果输出目录
         :type output_dir: str
         :param expect_charge_num: 预估功能调用消耗次数
-        :type expect_charge_num: int
+        :type expect_charge_num: float
         :param real_charge_num: 实际功能调用消耗次数
-        :type real_charge_num: int
+        :type real_charge_num: float
         :param progress: 
         :type progress: :class:`huaweicloudsdkeihealth.v1.Progress`
         """
@@ -290,7 +290,7 @@ class DrugJobDto:
     def start_time(self):
         """Gets the start_time of this DrugJobDto.
 
-        作业结束时间
+        作业开始时间
 
         :return: The start_time of this DrugJobDto.
         :rtype: str
@@ -301,7 +301,7 @@ class DrugJobDto:
     def start_time(self, start_time):
         """Sets the start_time of this DrugJobDto.
 
-        作业结束时间
+        作业开始时间
 
         :param start_time: The start_time of this DrugJobDto.
         :type start_time: str
@@ -381,7 +381,7 @@ class DrugJobDto:
         预估功能调用消耗次数
 
         :return: The expect_charge_num of this DrugJobDto.
-        :rtype: int
+        :rtype: float
         """
         return self._expect_charge_num
 
@@ -392,7 +392,7 @@ class DrugJobDto:
         预估功能调用消耗次数
 
         :param expect_charge_num: The expect_charge_num of this DrugJobDto.
-        :type expect_charge_num: int
+        :type expect_charge_num: float
         """
         self._expect_charge_num = expect_charge_num
 
@@ -403,7 +403,7 @@ class DrugJobDto:
         实际功能调用消耗次数
 
         :return: The real_charge_num of this DrugJobDto.
-        :rtype: int
+        :rtype: float
         """
         return self._real_charge_num
 
@@ -414,7 +414,7 @@ class DrugJobDto:
         实际功能调用消耗次数
 
         :param real_charge_num: The real_charge_num of this DrugJobDto.
-        :type real_charge_num: int
+        :type real_charge_num: float
         """
         self._real_charge_num = real_charge_num
 

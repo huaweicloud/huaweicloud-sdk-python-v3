@@ -53,10 +53,14 @@ class Resource:
         self._resource_name = None
         self.discriminator = None
 
-        self.resource_id = resource_id
-        self.resource_detail = resource_detail
-        self.tags = tags
-        self.resource_name = resource_name
+        if resource_id is not None:
+            self.resource_id = resource_id
+        if resource_detail is not None:
+            self.resource_detail = resource_detail
+        if tags is not None:
+            self.tags = tags
+        if resource_name is not None:
+            self.resource_name = resource_name
 
     @property
     def resource_id(self):

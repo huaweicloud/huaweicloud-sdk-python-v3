@@ -35,7 +35,7 @@ class Hsts:
 
         :param status: 状态，on：打开，off：关闭。
         :type status: str
-        :param max_age: 过期时间,即：响应头“Strict-Transport-Security”在客户端的缓存时间。单位:秒,取值范围:0~63072000。  &gt; status参数为on时，必传。
+        :param max_age: 过期时间,即：响应头“Strict-Transport-Security”在客户端的缓存时间。单位:秒,取值范围:0-63072000。  &gt; status参数为on时，必传。
         :type max_age: int
         :param include_subdomains: 包含子域名，on：包含，off：不包含。   &gt; status参数为on时，必传。
         :type include_subdomains: str
@@ -80,7 +80,7 @@ class Hsts:
     def max_age(self):
         """Gets the max_age of this Hsts.
 
-        过期时间,即：响应头“Strict-Transport-Security”在客户端的缓存时间。单位:秒,取值范围:0~63072000。  > status参数为on时，必传。
+        过期时间,即：响应头“Strict-Transport-Security”在客户端的缓存时间。单位:秒,取值范围:0-63072000。  > status参数为on时，必传。
 
         :return: The max_age of this Hsts.
         :rtype: int
@@ -91,7 +91,7 @@ class Hsts:
     def max_age(self, max_age):
         """Sets the max_age of this Hsts.
 
-        过期时间,即：响应头“Strict-Transport-Security”在客户端的缓存时间。单位:秒,取值范围:0~63072000。  > status参数为on时，必传。
+        过期时间,即：响应头“Strict-Transport-Security”在客户端的缓存时间。单位:秒,取值范围:0-63072000。  > status参数为on时，必传。
 
         :param max_age: The max_age of this Hsts.
         :type max_age: int

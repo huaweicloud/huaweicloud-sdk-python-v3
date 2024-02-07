@@ -629,7 +629,7 @@ class VpnAsyncClient(Client):
     def batch_create_resource_tags_async(self, request):
         """批量添加资源标签
 
-        为指定实例批量添加标签,标签管理服务需要使用该接口批量管理实例的标签.一个资源上最多有20个标签
+        为指定实例批量添加标签
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -698,7 +698,7 @@ class VpnAsyncClient(Client):
     def batch_delete_resource_tags_async(self, request):
         """批量删除资源标签
 
-        为指定实例批量删除标签,标签管理服务需要使用该接口批量管理实例的标签.
+        为指定实例批量删除标签
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -765,9 +765,9 @@ class VpnAsyncClient(Client):
         return http_info
 
     def count_resources_by_tags_async(self, request):
-        """查询标签下资源实例数量
+        """查询资源实例数量
 
-        使用标签过滤实例,并查询实例数量,需要各服务提供查询
+        根据标签查询资源实例数量
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -832,9 +832,9 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_project_tags_async(self, request):
-        """查询项目下标签
+        """查询项目标签
 
-        查询租户在指定Project中实例类型的所有资源标签集合
+        查询租户在指定项目中指定资源类型下的所有标签
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -897,9 +897,9 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_resources_by_tags_async(self, request):
-        """按标签查询资源
+        """查询资源实例列表
 
-        使用标签过滤实例,并查询实例数量,需要各服务提供查询
+        根据标签查询资源实例列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -970,7 +970,7 @@ class VpnAsyncClient(Client):
     def show_resource_tags_async(self, request):
         """查询资源标签
 
-        查询指定实例的标签信息,标签管理服务需要使用该接口查询指定实例的全部标签数据
+        查询指定实例的标签信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 

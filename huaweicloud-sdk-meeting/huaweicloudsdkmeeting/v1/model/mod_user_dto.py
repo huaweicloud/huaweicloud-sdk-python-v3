@@ -65,7 +65,7 @@ class ModUserDTO:
         :type email: str
         :param vmr_id: 个人会议ID，若不携带则后台默认生成。
         :type vmr_id: str
-        :param dept_code: 个人会议ID，若不携带则后台默认生成。 默认值：1
+        :param dept_code: 部门编码，若不携带则默认根部门。 默认值：1
         :type dept_code: str
         :param signature: 签名。
         :type signature: str
@@ -261,7 +261,7 @@ class ModUserDTO:
     def dept_code(self):
         """Gets the dept_code of this ModUserDTO.
 
-        个人会议ID，若不携带则后台默认生成。 默认值：1
+        部门编码，若不携带则默认根部门。 默认值：1
 
         :return: The dept_code of this ModUserDTO.
         :rtype: str
@@ -272,7 +272,7 @@ class ModUserDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this ModUserDTO.
 
-        个人会议ID，若不携带则后台默认生成。 默认值：1
+        部门编码，若不携带则默认根部门。 默认值：1
 
         :param dept_code: The dept_code of this ModUserDTO.
         :type dept_code: str

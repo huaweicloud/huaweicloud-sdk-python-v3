@@ -81,7 +81,7 @@ class RemoteAuthRuleVo:
         :type auth_failed_status: str
         :param response_status: 设置鉴权失败时CDN节点返回给用户的状态码。取值范围：2xx/3xx/4xx/5xx。
         :type response_status: str
-        :param timeout: 设置鉴权超时时间，即从CDN转发鉴权请求开始，到CDN节点收到远程鉴权服务器返回的结果的时间。单位为毫秒，值为0或50~3000。
+        :param timeout: 设置鉴权超时时间，即从CDN转发鉴权请求开始，到CDN节点收到远程鉴权服务器返回的结果的时间。单位为毫秒，值为0或50-3000。
         :type timeout: int
         :param timeout_action: 设置鉴权超时后，CDN节点如何处理用户请求。 pass(鉴权失败放过)：鉴权超时后允许用户请求，返回对应的资源。 forbid(鉴权失败拒绝)：鉴权超时后拒绝用户请求，返回配置的响应自定义状态码给用户。
         :type timeout_action: str
@@ -397,7 +397,7 @@ class RemoteAuthRuleVo:
     def timeout(self):
         """Gets the timeout of this RemoteAuthRuleVo.
 
-        设置鉴权超时时间，即从CDN转发鉴权请求开始，到CDN节点收到远程鉴权服务器返回的结果的时间。单位为毫秒，值为0或50~3000。
+        设置鉴权超时时间，即从CDN转发鉴权请求开始，到CDN节点收到远程鉴权服务器返回的结果的时间。单位为毫秒，值为0或50-3000。
 
         :return: The timeout of this RemoteAuthRuleVo.
         :rtype: int
@@ -408,7 +408,7 @@ class RemoteAuthRuleVo:
     def timeout(self, timeout):
         """Sets the timeout of this RemoteAuthRuleVo.
 
-        设置鉴权超时时间，即从CDN转发鉴权请求开始，到CDN节点收到远程鉴权服务器返回的结果的时间。单位为毫秒，值为0或50~3000。
+        设置鉴权超时时间，即从CDN转发鉴权请求开始，到CDN节点收到远程鉴权服务器返回的结果的时间。单位为毫秒，值为0或50-3000。
 
         :param timeout: The timeout of this RemoteAuthRuleVo.
         :type timeout: int

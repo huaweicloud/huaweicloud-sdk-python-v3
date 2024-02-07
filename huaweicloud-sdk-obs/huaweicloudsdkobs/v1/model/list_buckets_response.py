@@ -21,7 +21,7 @@ class ListBucketsResponse(SdkResponse):
 
     openapi_types = {
         'owner': 'Owner',
-        'buckets': 'Bucket',
+        'buckets': 'Buckets',
         'x_obs_id_2': 'str',
         'x_obs_request_id': 'str',
         'e_tag': 'str',
@@ -51,7 +51,7 @@ class ListBucketsResponse(SdkResponse):
         :param owner: 
         :type owner: :class:`huaweicloudsdkobs.v1.Owner`
         :param buckets: 
-        :type buckets: :class:`huaweicloudsdkobs.v1.Bucket`
+        :type buckets: :class:`huaweicloudsdkobs.v1.Buckets`
         :param x_obs_id_2: 
         :type x_obs_id_2: str
         :param x_obs_request_id: 
@@ -123,7 +123,7 @@ class ListBucketsResponse(SdkResponse):
         """Gets the buckets of this ListBucketsResponse.
 
         :return: The buckets of this ListBucketsResponse.
-        :rtype: :class:`huaweicloudsdkobs.v1.Bucket`
+        :rtype: :class:`huaweicloudsdkobs.v1.Buckets`
         """
         return self._buckets
 
@@ -132,7 +132,7 @@ class ListBucketsResponse(SdkResponse):
         """Sets the buckets of this ListBucketsResponse.
 
         :param buckets: The buckets of this ListBucketsResponse.
-        :type buckets: :class:`huaweicloudsdkobs.v1.Bucket`
+        :type buckets: :class:`huaweicloudsdkobs.v1.Buckets`
         """
         self._buckets = buckets
 

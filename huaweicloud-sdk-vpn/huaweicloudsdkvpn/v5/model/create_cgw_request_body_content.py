@@ -67,8 +67,7 @@ class CreateCgwRequestBodyContent:
             self.name = name
         if id_type is not None:
             self.id_type = id_type
-        if id_value is not None:
-            self.id_value = id_value
+        self.id_value = id_value
         if bgp_asn is not None:
             self.bgp_asn = bgp_asn
         if ca_certificate is not None:

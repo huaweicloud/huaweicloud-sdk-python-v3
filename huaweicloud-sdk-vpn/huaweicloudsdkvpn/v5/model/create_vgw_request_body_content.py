@@ -81,7 +81,7 @@ class CreateVgwRequestBodyContent:
         :type bgp_asn: int
         :param flavor: VPN网关的规格类型，当attachment_type为er时不能填写Basic
         :type flavor: str
-        :param availability_zone_ids: 不填写则采用默认可用区。如果需要指定可用区可以调用查询VPN网关可用区接口来选择
+        :param availability_zone_ids: 部署VPN网关的可用区。不填时自动为VPN网关选择可用区。如果需要指定可用区可以通过查询VPN网关可用区查询可用区列表。
         :type availability_zone_ids: list[str]
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
@@ -89,11 +89,11 @@ class CreateVgwRequestBodyContent:
         :type eip1: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
         :param eip2: 
         :type eip2: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
-        :param access_private_ip_1: VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        :param access_private_ip_1: 私网类型VPN网关的接入私网IP1，指定ip创建私网网关时设置，主备网关时为主ip，双活网关时为主ip1
         :type access_private_ip_1: str
-        :param access_private_ip_2: VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        :param access_private_ip_2: 私网类型VPN网关的接入私网IP2，指定ip创建私网网关时设置，主备网关时为备ip，双活网关时为主ip2
         :type access_private_ip_2: str
-        :param network_type: VPN网关北向类型，默认为公网(public)
+        :param network_type: VPN网关的网络类型，默认为公网(public)
         :type network_type: str
         :param access_vpc_id: VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
         :type access_vpc_id: str
@@ -347,7 +347,7 @@ class CreateVgwRequestBodyContent:
     def availability_zone_ids(self):
         """Gets the availability_zone_ids of this CreateVgwRequestBodyContent.
 
-        不填写则采用默认可用区。如果需要指定可用区可以调用查询VPN网关可用区接口来选择
+        部署VPN网关的可用区。不填时自动为VPN网关选择可用区。如果需要指定可用区可以通过查询VPN网关可用区查询可用区列表。
 
         :return: The availability_zone_ids of this CreateVgwRequestBodyContent.
         :rtype: list[str]
@@ -358,7 +358,7 @@ class CreateVgwRequestBodyContent:
     def availability_zone_ids(self, availability_zone_ids):
         """Sets the availability_zone_ids of this CreateVgwRequestBodyContent.
 
-        不填写则采用默认可用区。如果需要指定可用区可以调用查询VPN网关可用区接口来选择
+        部署VPN网关的可用区。不填时自动为VPN网关选择可用区。如果需要指定可用区可以通过查询VPN网关可用区查询可用区列表。
 
         :param availability_zone_ids: The availability_zone_ids of this CreateVgwRequestBodyContent.
         :type availability_zone_ids: list[str]
@@ -427,7 +427,7 @@ class CreateVgwRequestBodyContent:
     def access_private_ip_1(self):
         """Gets the access_private_ip_1 of this CreateVgwRequestBodyContent.
 
-        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        私网类型VPN网关的接入私网IP1，指定ip创建私网网关时设置，主备网关时为主ip，双活网关时为主ip1
 
         :return: The access_private_ip_1 of this CreateVgwRequestBodyContent.
         :rtype: str
@@ -438,7 +438,7 @@ class CreateVgwRequestBodyContent:
     def access_private_ip_1(self, access_private_ip_1):
         """Sets the access_private_ip_1 of this CreateVgwRequestBodyContent.
 
-        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        私网类型VPN网关的接入私网IP1，指定ip创建私网网关时设置，主备网关时为主ip，双活网关时为主ip1
 
         :param access_private_ip_1: The access_private_ip_1 of this CreateVgwRequestBodyContent.
         :type access_private_ip_1: str
@@ -449,7 +449,7 @@ class CreateVgwRequestBodyContent:
     def access_private_ip_2(self):
         """Gets the access_private_ip_2 of this CreateVgwRequestBodyContent.
 
-        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        私网类型VPN网关的接入私网IP2，指定ip创建私网网关时设置，主备网关时为备ip，双活网关时为主ip2
 
         :return: The access_private_ip_2 of this CreateVgwRequestBodyContent.
         :rtype: str
@@ -460,7 +460,7 @@ class CreateVgwRequestBodyContent:
     def access_private_ip_2(self, access_private_ip_2):
         """Sets the access_private_ip_2 of this CreateVgwRequestBodyContent.
 
-        VPN网关北向接入私网IP，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        私网类型VPN网关的接入私网IP2，指定ip创建私网网关时设置，主备网关时为备ip，双活网关时为主ip2
 
         :param access_private_ip_2: The access_private_ip_2 of this CreateVgwRequestBodyContent.
         :type access_private_ip_2: str
@@ -471,7 +471,7 @@ class CreateVgwRequestBodyContent:
     def network_type(self):
         """Gets the network_type of this CreateVgwRequestBodyContent.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :return: The network_type of this CreateVgwRequestBodyContent.
         :rtype: str
@@ -482,7 +482,7 @@ class CreateVgwRequestBodyContent:
     def network_type(self, network_type):
         """Sets the network_type of this CreateVgwRequestBodyContent.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :param network_type: The network_type of this CreateVgwRequestBodyContent.
         :type network_type: str

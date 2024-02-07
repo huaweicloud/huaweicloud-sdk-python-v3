@@ -19,7 +19,8 @@ class CreatePocketMolDesignJobReq:
     openapi_types = {
         'basic_info': 'CreateDrugJobBasicInfo',
         'receptor': 'PocketMolDesignReceptorDto',
-        'ligands': 'list[DrugFile]',
+        'ligands': 'list[PocketFragment]',
+        'num_trials': 'int',
         'model_ids': 'list[str]',
         'molecular_weight': 'list[int]',
         'optimization_mode': 'OptimizationMode'
@@ -29,12 +30,13 @@ class CreatePocketMolDesignJobReq:
         'basic_info': 'basic_info',
         'receptor': 'receptor',
         'ligands': 'ligands',
+        'num_trials': 'num_trials',
         'model_ids': 'model_ids',
         'molecular_weight': 'molecular_weight',
         'optimization_mode': 'optimization_mode'
     }
 
-    def __init__(self, basic_info=None, receptor=None, ligands=None, model_ids=None, molecular_weight=None, optimization_mode=None):
+    def __init__(self, basic_info=None, receptor=None, ligands=None, num_trials=None, model_ids=None, molecular_weight=None, optimization_mode=None):
         """CreatePocketMolDesignJobReq
 
         The model defined in huaweicloud sdk
@@ -44,7 +46,9 @@ class CreatePocketMolDesignJobReq:
         :param receptor: 
         :type receptor: :class:`huaweicloudsdkeihealth.v1.PocketMolDesignReceptorDto`
         :param ligands: 配体文件列表，最多支持1个
-        :type ligands: list[:class:`huaweicloudsdkeihealth.v1.DrugFile`]
+        :type ligands: list[:class:`huaweicloudsdkeihealth.v1.PocketFragment`]
+        :param num_trials: 生成分子数量
+        :type num_trials: int
         :param model_ids: 模型id列表
         :type model_ids: list[str]
         :param molecular_weight: 分子量范围
@@ -58,6 +62,7 @@ class CreatePocketMolDesignJobReq:
         self._basic_info = None
         self._receptor = None
         self._ligands = None
+        self._num_trials = None
         self._model_ids = None
         self._molecular_weight = None
         self._optimization_mode = None
@@ -67,6 +72,8 @@ class CreatePocketMolDesignJobReq:
         self.receptor = receptor
         if ligands is not None:
             self.ligands = ligands
+        if num_trials is not None:
+            self.num_trials = num_trials
         if model_ids is not None:
             self.model_ids = model_ids
         if molecular_weight is not None:
@@ -117,7 +124,7 @@ class CreatePocketMolDesignJobReq:
         配体文件列表，最多支持1个
 
         :return: The ligands of this CreatePocketMolDesignJobReq.
-        :rtype: list[:class:`huaweicloudsdkeihealth.v1.DrugFile`]
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.PocketFragment`]
         """
         return self._ligands
 
@@ -128,9 +135,31 @@ class CreatePocketMolDesignJobReq:
         配体文件列表，最多支持1个
 
         :param ligands: The ligands of this CreatePocketMolDesignJobReq.
-        :type ligands: list[:class:`huaweicloudsdkeihealth.v1.DrugFile`]
+        :type ligands: list[:class:`huaweicloudsdkeihealth.v1.PocketFragment`]
         """
         self._ligands = ligands
+
+    @property
+    def num_trials(self):
+        """Gets the num_trials of this CreatePocketMolDesignJobReq.
+
+        生成分子数量
+
+        :return: The num_trials of this CreatePocketMolDesignJobReq.
+        :rtype: int
+        """
+        return self._num_trials
+
+    @num_trials.setter
+    def num_trials(self, num_trials):
+        """Sets the num_trials of this CreatePocketMolDesignJobReq.
+
+        生成分子数量
+
+        :param num_trials: The num_trials of this CreatePocketMolDesignJobReq.
+        :type num_trials: int
+        """
+        self._num_trials = num_trials
 
     @property
     def model_ids(self):

@@ -20,17 +20,21 @@ class CreateProjectReq:
         'description': 'str',
         'name': 'str',
         'tags': 'list[str]',
-        'is_core': 'bool'
+        'is_core': 'bool',
+        'is_new_bucket': 'bool',
+        'bucket_name': 'str'
     }
 
     attribute_map = {
         'description': 'description',
         'name': 'name',
         'tags': 'tags',
-        'is_core': 'is_core'
+        'is_core': 'is_core',
+        'is_new_bucket': 'is_new_bucket',
+        'bucket_name': 'bucket_name'
     }
 
-    def __init__(self, description=None, name=None, tags=None, is_core=None):
+    def __init__(self, description=None, name=None, tags=None, is_core=None, is_new_bucket=None, bucket_name=None):
         """CreateProjectReq
 
         The model defined in huaweicloud sdk
@@ -41,8 +45,12 @@ class CreateProjectReq:
         :type name: str
         :param tags: 标签
         :type tags: list[str]
-        :param is_core: 标签
+        :param is_core: 是否核心项目
         :type is_core: bool
+        :param is_new_bucket: 是否新桶, 仅气象支持该字段
+        :type is_new_bucket: bool
+        :param bucket_name: 桶名, 仅气象支持该字段
+        :type bucket_name: str
         """
         
         
@@ -51,6 +59,8 @@ class CreateProjectReq:
         self._name = None
         self._tags = None
         self._is_core = None
+        self._is_new_bucket = None
+        self._bucket_name = None
         self.discriminator = None
 
         if description is not None:
@@ -60,6 +70,10 @@ class CreateProjectReq:
             self.tags = tags
         if is_core is not None:
             self.is_core = is_core
+        if is_new_bucket is not None:
+            self.is_new_bucket = is_new_bucket
+        if bucket_name is not None:
+            self.bucket_name = bucket_name
 
     @property
     def description(self):
@@ -131,7 +145,7 @@ class CreateProjectReq:
     def is_core(self):
         """Gets the is_core of this CreateProjectReq.
 
-        标签
+        是否核心项目
 
         :return: The is_core of this CreateProjectReq.
         :rtype: bool
@@ -142,12 +156,56 @@ class CreateProjectReq:
     def is_core(self, is_core):
         """Sets the is_core of this CreateProjectReq.
 
-        标签
+        是否核心项目
 
         :param is_core: The is_core of this CreateProjectReq.
         :type is_core: bool
         """
         self._is_core = is_core
+
+    @property
+    def is_new_bucket(self):
+        """Gets the is_new_bucket of this CreateProjectReq.
+
+        是否新桶, 仅气象支持该字段
+
+        :return: The is_new_bucket of this CreateProjectReq.
+        :rtype: bool
+        """
+        return self._is_new_bucket
+
+    @is_new_bucket.setter
+    def is_new_bucket(self, is_new_bucket):
+        """Sets the is_new_bucket of this CreateProjectReq.
+
+        是否新桶, 仅气象支持该字段
+
+        :param is_new_bucket: The is_new_bucket of this CreateProjectReq.
+        :type is_new_bucket: bool
+        """
+        self._is_new_bucket = is_new_bucket
+
+    @property
+    def bucket_name(self):
+        """Gets the bucket_name of this CreateProjectReq.
+
+        桶名, 仅气象支持该字段
+
+        :return: The bucket_name of this CreateProjectReq.
+        :rtype: str
+        """
+        return self._bucket_name
+
+    @bucket_name.setter
+    def bucket_name(self, bucket_name):
+        """Sets the bucket_name of this CreateProjectReq.
+
+        桶名, 仅气象支持该字段
+
+        :param bucket_name: The bucket_name of this CreateProjectReq.
+        :type bucket_name: str
+        """
+        self._bucket_name = bucket_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""
