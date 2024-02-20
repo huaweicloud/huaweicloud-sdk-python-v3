@@ -17,17 +17,14 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
-import hashlib
 
-import ecdsa
 import pytest
-from ecdsa.util import sigencode_der, sigdecode_der
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.exceptions.exceptions import SdkException
 from huaweicloudsdkcore.sdk_request import SdkRequest
-from huaweicloudsdkcore.signer.gm import SM2SigningKey
 from huaweicloudsdkcore.signer.signer import Signer, DerivationAKSKSigner, SM3Signer, P256SHA256Signer, SM2SM3Signer
+from huaweicloudsdkcore.signer.utils import SM2SigningKey, P256SigningKey
 
 
 @pytest.fixture()
@@ -128,13 +125,11 @@ def test_p256_signing_key(credentials):
     signer = P256SHA256Signer(credentials)
 
     signing_key = signer.get_signing_key()
-    assert isinstance(signing_key, ecdsa.SigningKey)
+    assert isinstance(signing_key, P256SigningKey)
 
     data = b'HelloWorld'
-    signature = signing_key.sign(data, hashfunc=hashlib.sha256, sigencode=sigencode_der)
-
-    public_key = signing_key.get_verifying_key()
-    assert public_key.verify(signature, data, hashfunc=hashlib.sha256, sigdecode=sigdecode_der)
+    signature = signing_key.sign(data)
+    assert signing_key.verify(signature, data)
 
 
 def test_sm2_signing_key(credentials):

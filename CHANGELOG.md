@@ -1,3 +1,35 @@
+# 3.1.82 2024-02-20
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _Features_
+  - Support `IAMAccessAnalyzer`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the APIs `ListClients`, `ScanClients`, `HangUpClients`, `HangUpKillAllClients`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSqlJobs**
+    - changes of response param
+      - `* jobs.duration: int32 -> int64`
+      - `* jobs.result_count: int32 -> int64`
+
 # 3.1.81 2024-02-07
 
 ### HuaweiCloud SDK GEIP

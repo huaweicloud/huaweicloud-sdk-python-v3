@@ -35,6 +35,7 @@ from huaweicloudsdkdcs.v2.model.change_master_standby_async_request import Chang
 from huaweicloudsdkdcs.v2.model.change_master_standby_async_response import ChangeMasterStandbyAsyncResponse
 from huaweicloudsdkdcs.v2.model.change_master_standby_request import ChangeMasterStandbyRequest
 from huaweicloudsdkdcs.v2.model.change_master_standby_response import ChangeMasterStandbyResponse
+from huaweicloudsdkdcs.v2.model.client_info import ClientInfo
 from huaweicloudsdkdcs.v2.model.cluster_redis_node_monitored_object import ClusterRedisNodeMonitoredObject
 from huaweicloudsdkdcs.v2.model.command_time_taken import CommandTimeTaken
 from huaweicloudsdkdcs.v2.model.command_time_taken_list import CommandTimeTakenList
@@ -127,6 +128,12 @@ from huaweicloudsdkdcs.v2.model.features import Features
 from huaweicloudsdkdcs.v2.model.files import Files
 from huaweicloudsdkdcs.v2.model.flavor_az_object import FlavorAzObject
 from huaweicloudsdkdcs.v2.model.flavors_items import FlavorsItems
+from huaweicloudsdkdcs.v2.model.hang_up_clients_request import HangUpClientsRequest
+from huaweicloudsdkdcs.v2.model.hang_up_clients_request_body import HangUpClientsRequestBody
+from huaweicloudsdkdcs.v2.model.hang_up_clients_response import HangUpClientsResponse
+from huaweicloudsdkdcs.v2.model.hang_up_kill_all_clients_request import HangUpKillAllClientsRequest
+from huaweicloudsdkdcs.v2.model.hang_up_kill_all_clients_request_body import HangUpKillAllClientsRequestBody
+from huaweicloudsdkdcs.v2.model.hang_up_kill_all_clients_response import HangUpKillAllClientsResponse
 from huaweicloudsdkdcs.v2.model.history_info import HistoryInfo
 from huaweicloudsdkdcs.v2.model.hotkeys_body import HotkeysBody
 from huaweicloudsdkdcs.v2.model.instance_backup_policy import InstanceBackupPolicy
@@ -157,6 +164,8 @@ from huaweicloudsdkdcs.v2.model.list_bigkey_scan_tasks_response import ListBigke
 from huaweicloudsdkdcs.v2.model.list_center_task_request import ListCenterTaskRequest
 from huaweicloudsdkdcs.v2.model.list_center_task_response import ListCenterTaskResponse
 from huaweicloudsdkdcs.v2.model.list_center_tasks_resp import ListCenterTasksResp
+from huaweicloudsdkdcs.v2.model.list_clients_request import ListClientsRequest
+from huaweicloudsdkdcs.v2.model.list_clients_response import ListClientsResponse
 from huaweicloudsdkdcs.v2.model.list_config_histories_request import ListConfigHistoriesRequest
 from huaweicloudsdkdcs.v2.model.list_config_histories_response import ListConfigHistoriesResponse
 from huaweicloudsdkdcs.v2.model.list_config_templates_request import ListConfigTemplatesRequest
@@ -238,6 +247,9 @@ from huaweicloudsdkdcs.v2.model.restore_instance_body import RestoreInstanceBody
 from huaweicloudsdkdcs.v2.model.restore_instance_request import RestoreInstanceRequest
 from huaweicloudsdkdcs.v2.model.restore_instance_response import RestoreInstanceResponse
 from huaweicloudsdkdcs.v2.model.runlog_item import RunlogItem
+from huaweicloudsdkdcs.v2.model.scan_clients_request import ScanClientsRequest
+from huaweicloudsdkdcs.v2.model.scan_clients_request_body import ScanClientsRequestBody
+from huaweicloudsdkdcs.v2.model.scan_clients_response import ScanClientsResponse
 from huaweicloudsdkdcs.v2.model.scan_expire_key_request import ScanExpireKeyRequest
 from huaweicloudsdkdcs.v2.model.scan_expire_key_response import ScanExpireKeyResponse
 from huaweicloudsdkdcs.v2.model.set_online_migration_task_body import SetOnlineMigrationTaskBody

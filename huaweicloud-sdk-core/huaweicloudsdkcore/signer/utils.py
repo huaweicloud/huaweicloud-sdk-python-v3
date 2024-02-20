@@ -18,37 +18,13 @@
  under the LICENSE.
 """
 from sys import version_info
+from abc import abstractmethod
 
-import ecdsa
-from ecdsa.curves import Curve
-from ecdsa.ellipticcurve import CurveFp, PointJacobi, Point
-from ecdsa.util import sigencode_der, sigdecode_der
+from pyasn1.codec.der import encoder, decoder
+from pyasn1.type import univ
 
 from huaweicloudsdkcore.exceptions.exceptions import SdkException
-
-_CURVE_FP_SM2 = CurveFp(p=0xfffffffeffffffffffffffffffffffffffffffff00000000ffffffffffffffff,
-                        a=0xfffffffeffffffffffffffffffffffffffffffff00000000fffffffffffffffc,
-                        b=0x28e9fa9e9d9f5e344d5a9e4bcf6509a7f39789f515ab8f92ddbcbd414d940e93,
-                        h=0x01)
-
-_GENERATOR_SM2 = PointJacobi(curve=_CURVE_FP_SM2,
-                             x=0x32c4ae2c1f1981195f9904466a39c9948fe30bbff2660be1715a4589334c74c7,
-                             y=0xbc3736a2f4f6779c59bdcee36b692153d0a9877cc62a474002df32e52139f0a0,
-                             z=1,
-                             order=0xfffffffeffffffffffffffffffffffff7203df6b21c6052b53bbf40939d54123,
-                             generator=True)
-
-_BASE_POINT_SM2 = Point(curve=_CURVE_FP_SM2,
-                        x=_GENERATOR_SM2.x(),
-                        y=_GENERATOR_SM2.y(),
-                        order=_GENERATOR_SM2.order())
-
-CURVE_SM2 = Curve(
-    name="SM2",
-    curve=_CURVE_FP_SM2,
-    generator=_GENERATOR_SM2,
-    oid=(1, 2, 156, 10197, 1, 301),
-    openssl_name="prime256v1")
+from huaweicloudsdkcore.utils.six_utils import get_abstract_meta_class
 
 if version_info.major == 3:
     if version_info.minor < 7:
@@ -186,12 +162,6 @@ if version_info.major == 3:
 else:
     new_sm3_hash = None
 
-
-def _int_to_bytes(i):
-    # type: (int) -> bytes
-    return i.to_bytes(length=(i.bit_length() + 7) // 8, byteorder='big', signed=i < 0)
-
-
 try:
     from secrets import randbelow
 
@@ -213,44 +183,186 @@ except ImportError:
         return a + rand_int % range_size
 
 
-def _za(public_key_bytes, uid=b'1234567812345678'):
-    # type: (bytes, bytes) -> bytes
-    """
-    Cryptographic hash algorithm
+def _mod_inverse(a, m):
+    # type: (int, int) -> int
+    def egcd(a, b):
+        if a == 0:
+            return b, 0, 1
+        else:
+            g, y, x = egcd(b % a, a)
+            return g, x - (b // a) * y, y
 
-    ZA = H256(ENTLA | | IDA | | a | | b | | xG | | yG | | xA | | yA)
-    """
-    array = bytearray()
-    uid_len = len(uid)
-    if uid_len >= 8192:
-        raise ValueError("SM2: uid too large")
-
-    entla = uid_len * 8
-    array.append((entla >> 8) & 0xff)
-    array.append(entla & 0xff)
-
-    if uid_len > 0:
-        array.extend(uid)
-
-    array.extend(_int_to_bytes(_CURVE_FP_SM2.a()))
-    array.extend(_int_to_bytes(_CURVE_FP_SM2.b()))
-    array.extend(_int_to_bytes(_BASE_POINT_SM2.x()))
-    array.extend(_int_to_bytes(_BASE_POINT_SM2.y()))
-    array.extend(public_key_bytes)
-    return new_sm3_hash(array).digest()
+    g, x, y = egcd(a, m)
+    if g != 1:
+        raise ValueError("Could not calculate inverse: %d and %d" % (a, m))
+    else:
+        return x % m
 
 
-class SM2SigningKey(object):
-    def __init__(self, private_key_bytes):
-        # type: (bytes) -> None
-        private_key = ecdsa.SigningKey.from_string(private_key_bytes, curve=CURVE_SM2, hashfunc=new_sm3_hash)
-        public_key = private_key.get_verifying_key()
-        self._d = private_key.privkey.secret_multiplier
-        self._public_point = public_key.pubkey.point
-        self._za = _za(public_key.to_string())
+def _int_to_bytes(i):
+    # type: (int) -> bytes
+    return i.to_bytes(length=(i.bit_length() + 7) // 8, byteorder='big', signed=i < 0)
 
+
+class SigningKey(get_abstract_meta_class()):
+    @abstractmethod
     def sign(self, data):
         # type: (bytes) -> bytes
+        pass
+
+    @abstractmethod
+    def verify(self, signature, data):
+        # type: (bytes, bytes) -> bool
+        pass
+
+
+class P256SigningKey(SigningKey):
+    PARAM_p = 0xffffffff00000001000000000000000000000000ffffffffffffffffffffffff
+    PARAM_a = 0xffffffff00000001000000000000000000000000fffffffffffffffffffffffc
+    PARAM_b = 0x5ac635d8aa3a93e7b3ebbd55769886bc651d06b0cc53b0f63bce3c3e27d2604b
+    PARAM_G = (0x6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296,
+               0x4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5)
+    PARAM_n = 0xffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551
+    PARAM_h = 0x1
+    N_MINUS_TWO = PARAM_n - 2
+    OID = "1.2.840.10045.3.1.7"
+
+    def __init__(self, private_key):
+        # type: (int) -> None
+        super(P256SigningKey, self).__init__()
+        self._private_key = private_key
+        self._public_key = self._point_multiply(private_key, self.PARAM_G)
+
+    @classmethod
+    def _point_add(cls, p1, p2):
+        # type: (tuple[int, int], tuple[int, int]) -> tuple[int, int]|None
+        if p1 is None:
+            return p2
+        if p2 is None:
+            return p1
+        x1, y1 = p1
+        x2, y2 = p2
+        if x1 == x2 and y1 != y2:
+            return None
+        if x1 == x2:
+            m = (3 * x1 * x1 + cls.PARAM_a) * pow(2 * y1, cls.PARAM_p - 2, cls.PARAM_p)
+        else:
+            m = (y1 - y2) * pow(x1 - x2, cls.PARAM_p - 2, cls.PARAM_p)
+        x3 = (m * m - x1 - x2) % cls.PARAM_p
+        y3 = (m * (x1 - x3) - y1) % cls.PARAM_p
+        p = (x3, y3)
+        return p
+
+    @classmethod
+    def _point_multiply(cls, k, p):
+        # type: (int, tuple[int, int]) -> tuple[int, int]
+        result = None
+        addend = p
+        while k:
+            if k & 1:
+                result = cls._point_add(result, addend)
+            addend = cls._point_add(addend, addend)
+            k >>= 1
+        return result
+
+    def sign(self, data):
+        while 1:
+            while 1:
+                k = _secure_randint(1, self.PARAM_n - 1)
+                k_inv = pow(k, self.N_MINUS_TWO, self.PARAM_n)
+                r = self._point_multiply(k, self.PARAM_G)[0]
+                r %= self.PARAM_n
+                if r != 0:
+                    break
+            hashed = hashlib.sha256(data).digest()
+            e = int.from_bytes(hashed, byteorder='big')
+            s = self._private_key * r
+            s += e
+            s *= k_inv
+            s %= self.PARAM_n
+            if s != 0:
+                break
+        seq = univ.Sequence()
+        seq.setComponentByPosition(0, univ.Integer(r))
+        seq.setComponentByPosition(1, univ.Integer(s))
+        return encoder.encode(seq)
+
+    def verify(self, signature, data):
+        n = self.PARAM_n
+        seq, _ = decoder.decode(signature)
+        r = int(seq.components[0])
+        s = int(seq.components[1])
+
+        if r <= 0 or s <= 0:
+            return False
+
+        if r >= n or s >= n:
+            return False
+
+        hashed = hashlib.sha256(data).digest()
+        e = int.from_bytes(hashed, byteorder='big')
+        w = _mod_inverse(s, n)
+        if w is None:
+            return False
+
+        u1 = e * w
+        u1 %= n
+        u2 = r * w
+        u2 %= n
+
+        p1 = self._point_multiply(u1, self.PARAM_G)
+        p2 = self._point_multiply(u2, self._public_key)
+        x, y = self._point_add(p1, p2)
+        if x == 0 and y == 0:
+            return False
+
+        x %= n
+        return x == r
+
+
+class SM2SigningKey(P256SigningKey):
+    PARAM_p = 0xfffffffeffffffffffffffffffffffffffffffff00000000ffffffffffffffff
+    PARAM_a = 0xfffffffeffffffffffffffffffffffffffffffff00000000fffffffffffffffc
+    PARAM_b = 0x28e9fa9e9d9f5e344d5a9e4bcf6509a7f39789f515ab8f92ddbcbd414d940e93
+    PARAM_G = (0x32c4ae2c1f1981195f9904466a39c9948fe30bbff2660be1715a4589334c74c7,
+               0xbc3736a2f4f6779c59bdcee36b692153d0a9877cc62a474002df32e52139f0a0)
+    PARAM_n = 0xfffffffeffffffffffffffffffffffff7203df6b21c6052b53bbf40939d54123
+    PARAM_h = 0x01
+    OID = "1.2.156.10197.1.301"
+
+    def __init__(self, private_key):
+        super(SM2SigningKey, self).__init__(private_key)
+        self._z = self._za(self._public_key)
+
+    @classmethod
+    def _za(cls, public_key, uid=b'1234567812345678'):
+        # type: (tuple, bytes) -> bytes
+        """
+        Cryptographic hash algorithm
+
+        ZA = H256(ENTLA | | IDA | | a | | b | | xG | | yG | | xA | | yA)
+        """
+        array = bytearray()
+        uid_len = len(uid)
+        if uid_len >= 8192:
+            raise ValueError("SM2: uid too large")
+
+        entla = uid_len * 8
+        array.append((entla >> 8) & 0xff)
+        array.append(entla & 0xff)
+
+        if uid_len > 0:
+            array.extend(uid)
+
+        array.extend(_int_to_bytes(cls.PARAM_a))
+        array.extend(_int_to_bytes(cls.PARAM_b))
+        array.extend(_int_to_bytes(cls.PARAM_G[0]))
+        array.extend(_int_to_bytes(cls.PARAM_G[1]))
+        array.extend(_int_to_bytes(public_key[0]))
+        array.extend(_int_to_bytes(public_key[1]))
+        return new_sm3_hash(array).digest()
+
+    def sign(self, data):
         """
         SM2 sign, based on GB/T 32918.2-2016
 
@@ -262,9 +374,9 @@ class SM2SigningKey(object):
         Step 6: s = ((1 + D)^-1 · (k - r · D)) mod n, back to step 3 if s = 0
         Step 7: Encode r and s to ASN.1-DER
         """
-        n = CURVE_SM2.order
+        n = self.PARAM_n
 
-        m = self._za + data
+        m = self._z + data
 
         hm = new_sm3_hash(m).digest()
         e = int.from_bytes(hm, byteorder='big')
@@ -272,23 +384,25 @@ class SM2SigningKey(object):
         for _ in range(100):
             k = _secure_randint(1, n - 1)
 
-            kp = k * _BASE_POINT_SM2
+            kp = self._point_multiply(k, self.PARAM_G)
 
-            r = (e + kp.x()) % n
+            r = (e + kp[0]) % n
             if r == 0 or r + k == n:
                 continue
 
-            d_1 = pow(self._d + 1, n - 2, n)
+            d_1 = pow(self._private_key + 1, n - 2, n)
             s = (d_1 * (k + r) - r) % n
             if s == 0:
                 continue
 
-            return sigencode_der(r, s, n)
+            seq = univ.Sequence()
+            seq.setComponentByPosition(0, univ.Integer(r))
+            seq.setComponentByPosition(1, univ.Integer(s))
+            return encoder.encode(seq)
 
         raise SdkException("sm2 sign failed")
 
     def verify(self, signature, data):
-        # type: (bytes, bytes) -> bool
         """
         SM2 verify, based on GB/T 32918.2-2016
 
@@ -300,8 +414,10 @@ class SM2SigningKey(object):
         Step 6: P(x,y) = [s]G(x,y) + [t]Pub(x,y)
         Step 7: R = (e + x1) mod n, assert R = r
         """
-        n = CURVE_SM2.order
-        r, s = sigdecode_der(signature, n)
+        n = self.PARAM_n
+        seq, _ = decoder.decode(signature)
+        r = int(seq.components[0])
+        s = int(seq.components[1])
 
         if r < 1 or r > n - 1:
             return False
@@ -309,7 +425,7 @@ class SM2SigningKey(object):
         if s < 1 or s > n - 1:
             return False
 
-        m = self._za + data
+        m = self._z + data
 
         hm = new_sm3_hash(m).digest()
         e = int.from_bytes(hm, byteorder='big')
@@ -318,7 +434,7 @@ class SM2SigningKey(object):
         if t == 0:
             return False
 
-        p = _BASE_POINT_SM2 * s + self._public_point * t
+        p = self._point_add(self._point_multiply(s, self.PARAM_G), self._point_multiply(t, self._public_key))
 
-        r_ = (e + p.x()) % n
+        r_ = (e + p[0]) % n
         return r_ == r

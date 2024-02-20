@@ -22,13 +22,12 @@ import hashlib
 import hmac
 from datetime import datetime
 
-import ecdsa
 import six
 
 from huaweicloudsdkcore.exceptions.exceptions import SdkException
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.signer import hkdf
-from huaweicloudsdkcore.signer.gm import new_sm3_hash, CURVE_SM2, SM2SigningKey
+from huaweicloudsdkcore.signer.utils import new_sm3_hash, SM2SigningKey, P256SigningKey
 
 if six.PY3:
     from urllib.parse import quote, unquote
@@ -321,8 +320,7 @@ class DerivationAKSKSigner(Signer):
 
 class P256SHA256Signer(Signer):
     _ALGORITHM = "SDK-ECDSA-P256-SHA256"
-    _CURVE = ecdsa.NIST256p
-    _N_MINUS_TWO = _CURVE.order - 2
+    _N_MINUS_TWO = P256SigningKey.N_MINUS_TWO
 
     def _verify_required(self):
         super(P256SHA256Signer, self)._verify_required()
@@ -332,11 +330,11 @@ class P256SHA256Signer(Signer):
     def _sign_string_to_sign(self, data, key=None):
         # type: (str, str) -> str
         signing_key = self.get_signing_key()
-        sig = signing_key.sign(six.ensure_binary(data), hashfunc=self._hash_func, sigencode=ecdsa.util.sigencode_der)
-        return self._hex(sig)
+        signature = signing_key.sign(six.ensure_binary(data))
+        return self._hex(signature)
 
-    def _derive_key_bytes(self):
-        # type: () -> bytes
+    def _derive_key(self):
+        # type: () -> int
         context = bytearray()
         data = bytearray()
         for counter in range(0xff):
@@ -354,35 +352,25 @@ class P256SHA256Signer(Signer):
 
             candidate = int.from_bytes(self._hmac(six.ensure_binary(self._sk), bytes(data)), 'big')
             if candidate <= self._N_MINUS_TWO:
-                secret_key = candidate + 1
-                return int.to_bytes(secret_key, length=(secret_key.bit_length() + 7) // 8, byteorder='big')
+                return candidate + 1
 
         raise SdkException("derive candidate failed, counter out of range")
 
-    def _generate_signing_key(self, key_bytes):
-        return ecdsa.SigningKey.from_string(key_bytes, curve=self._CURVE, hashfunc=self._hash_func)
-
     def get_signing_key(self):
-        key_bytes = self._derive_key_bytes()
-        return self._generate_signing_key(key_bytes)
+        private_key = self._derive_key()
+        return P256SigningKey(private_key)
 
 
 class SM2SM3Signer(P256SHA256Signer):
     _ALGORITHM = "SDK-SM2-SM3"
     _HEADER_CONTENT = "X-Sdk-Content-Sm3"
     _EMPTY_HASH = "1ab21d8355cfa17f8e61194831e81a8f22bec8c728fefb747ed035eb5082aa2b"
-    _CURVE = CURVE_SM2
-    _N_MINUS_TWO = _CURVE.order - 2
+    _N_MINUS_TWO = SM2SigningKey.N_MINUS_TWO
 
     def __init__(self, credentials):
         super(SM2SM3Signer, self).__init__(credentials)
         self._hash_func = new_sm3_hash
 
-    def _sign_string_to_sign(self, data, key=None):
-        # type: (str, str) -> str
-        signing_key = self.get_signing_key()
-        signature = signing_key.sign(six.ensure_binary(data))
-        return self._hex(signature)
-
-    def _generate_signing_key(self, key_bytes):
-        return SM2SigningKey(key_bytes)
+    def get_signing_key(self):
+        private_key = self._derive_key()
+        return SM2SigningKey(private_key)
