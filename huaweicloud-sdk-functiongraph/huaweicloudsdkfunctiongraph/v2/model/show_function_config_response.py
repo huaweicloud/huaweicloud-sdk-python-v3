@@ -61,10 +61,19 @@ class ShowFunctionConfigResponse(SdkResponse):
         'log_group_id': 'str',
         'log_stream_id': 'str',
         'type': 'str',
+        'enable_cloud_debug': 'str',
         'enable_dynamic_memory': 'bool',
         'is_stateful_function': 'bool',
+        'is_bridge_function': 'bool',
         'enable_auth_in_header': 'bool',
-        'custom_image': 'CustomImage'
+        'custom_image': 'CustomImage',
+        'reserved_instance_idle_mode': 'bool',
+        'apig_route_enable': 'bool',
+        'heartbeat_handler': 'str',
+        'enable_class_isolation': 'bool',
+        'gpu_type': 'str',
+        'allow_ephemeral_storage': 'bool',
+        'network_controller': 'NetworkControlConfig'
     }
 
     attribute_map = {
@@ -111,13 +120,22 @@ class ShowFunctionConfigResponse(SdkResponse):
         'log_group_id': 'log_group_id',
         'log_stream_id': 'log_stream_id',
         'type': 'type',
+        'enable_cloud_debug': 'enable_cloud_debug',
         'enable_dynamic_memory': 'enable_dynamic_memory',
         'is_stateful_function': 'is_stateful_function',
+        'is_bridge_function': 'is_bridge_function',
         'enable_auth_in_header': 'enable_auth_in_header',
-        'custom_image': 'custom_image'
+        'custom_image': 'custom_image',
+        'reserved_instance_idle_mode': 'reserved_instance_idle_mode',
+        'apig_route_enable': 'apig_route_enable',
+        'heartbeat_handler': 'heartbeat_handler',
+        'enable_class_isolation': 'enable_class_isolation',
+        'gpu_type': 'gpu_type',
+        'allow_ephemeral_storage': 'allow_ephemeral_storage',
+        'network_controller': 'network_controller'
     }
 
-    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
+    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, is_bridge_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, network_controller=None):
         """ShowFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -138,9 +156,9 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
-        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
         :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
         :type handler: str
@@ -150,7 +168,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type gpu_memory: int
         :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
         :type cpu: int
-        :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        :param code_type: 函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
         :type code_type: str
         :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
         :type code_url: str
@@ -168,15 +186,15 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type version: str
         :param image_name: 函数版本的内部标识。
         :type image_name: str
-        :param xrole: 函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :param xrole: 函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
         :type xrole: str
-        :param app_xrole: 函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :param app_xrole: 函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
         :type app_xrole: str
         :param description: 函数描述。
         :type description: str
         :param last_modified: 函数最后一次更新时间。
         :type last_modified: datetime
-        :param ephemeral_storage: 临时存储大小。
+        :param ephemeral_storage: 临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
         :type ephemeral_storage: int
         :param func_vpc: 
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -190,9 +208,9 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         :param dependencies: 函数依赖代码包列表。
         :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
-        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
         :type initializer_handler: str
-        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
         :type initializer_timeout: int
         :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
         :type pre_stop_handler: str
@@ -206,16 +224,34 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type log_group_id: str
         :param log_stream_id: 自定义日志查询流id
         :type log_stream_id: str
-        :param type: v2表示为公测版本,v1为原来版本。
+        :param type: v2表示为正式版本,v1为废弃版本。
         :type type: str
+        :param enable_cloud_debug: 是否启用cloud debug功能
+        :type enable_cloud_debug: str
         :param enable_dynamic_memory: 是否允许动态内存配置
         :type enable_dynamic_memory: bool
         :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
         :type is_stateful_function: bool
+        :param is_bridge_function: 是否为bridge函数
+        :type is_bridge_function: bool
         :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息
         :type enable_auth_in_header: bool
         :param custom_image: 
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        :param reserved_instance_idle_mode: 是否开启预留实例闲置模式
+        :type reserved_instance_idle_mode: bool
+        :param apig_route_enable: 是否配置下沉apig路由规则。
+        :type apig_route_enable: bool
+        :param heartbeat_handler: 心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+        :type heartbeat_handler: str
+        :param enable_class_isolation: 类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+        :type enable_class_isolation: bool
+        :param gpu_type: 显卡类型。
+        :type gpu_type: str
+        :param allow_ephemeral_storage: 是否支持配置临时存储。
+        :type allow_ephemeral_storage: bool
+        :param network_controller: 
+        :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
         """
         
         super(ShowFunctionConfigResponse, self).__init__()
@@ -263,10 +299,19 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._log_group_id = None
         self._log_stream_id = None
         self._type = None
+        self._enable_cloud_debug = None
         self._enable_dynamic_memory = None
         self._is_stateful_function = None
+        self._is_bridge_function = None
         self._enable_auth_in_header = None
         self._custom_image = None
+        self._reserved_instance_idle_mode = None
+        self._apig_route_enable = None
+        self._heartbeat_handler = None
+        self._enable_class_isolation = None
+        self._gpu_type = None
+        self._allow_ephemeral_storage = None
+        self._network_controller = None
         self.discriminator = None
 
         if func_id is not None:
@@ -355,14 +400,32 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.log_stream_id = log_stream_id
         if type is not None:
             self.type = type
+        if enable_cloud_debug is not None:
+            self.enable_cloud_debug = enable_cloud_debug
         if enable_dynamic_memory is not None:
             self.enable_dynamic_memory = enable_dynamic_memory
         if is_stateful_function is not None:
             self.is_stateful_function = is_stateful_function
+        if is_bridge_function is not None:
+            self.is_bridge_function = is_bridge_function
         if enable_auth_in_header is not None:
             self.enable_auth_in_header = enable_auth_in_header
         if custom_image is not None:
             self.custom_image = custom_image
+        if reserved_instance_idle_mode is not None:
+            self.reserved_instance_idle_mode = reserved_instance_idle_mode
+        if apig_route_enable is not None:
+            self.apig_route_enable = apig_route_enable
+        if heartbeat_handler is not None:
+            self.heartbeat_handler = heartbeat_handler
+        if enable_class_isolation is not None:
+            self.enable_class_isolation = enable_class_isolation
+        if gpu_type is not None:
+            self.gpu_type = gpu_type
+        if allow_ephemeral_storage is not None:
+            self.allow_ephemeral_storage = allow_ephemeral_storage
+        if network_controller is not None:
+            self.network_controller = network_controller
 
     @property
     def func_id(self):
@@ -544,7 +607,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this ShowFunctionConfigResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this ShowFunctionConfigResponse.
         :rtype: str
@@ -555,7 +618,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this ShowFunctionConfigResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this ShowFunctionConfigResponse.
         :type runtime: str
@@ -566,7 +629,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def timeout(self):
         """Gets the timeout of this ShowFunctionConfigResponse.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :return: The timeout of this ShowFunctionConfigResponse.
         :rtype: int
@@ -577,7 +640,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def timeout(self, timeout):
         """Sets the timeout of this ShowFunctionConfigResponse.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :param timeout: The timeout of this ShowFunctionConfigResponse.
         :type timeout: int
@@ -676,7 +739,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def code_type(self):
         """Gets the code_type of this ShowFunctionConfigResponse.
 
-        函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
         :return: The code_type of this ShowFunctionConfigResponse.
         :rtype: str
@@ -687,7 +750,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def code_type(self, code_type):
         """Sets the code_type of this ShowFunctionConfigResponse.
 
-        函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
         :param code_type: The code_type of this ShowFunctionConfigResponse.
         :type code_type: str
@@ -874,7 +937,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def xrole(self):
         """Gets the xrole of this ShowFunctionConfigResponse.
 
-        函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
         :return: The xrole of this ShowFunctionConfigResponse.
         :rtype: str
@@ -885,7 +948,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def xrole(self, xrole):
         """Sets the xrole of this ShowFunctionConfigResponse.
 
-        函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
         :param xrole: The xrole of this ShowFunctionConfigResponse.
         :type xrole: str
@@ -896,7 +959,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def app_xrole(self):
         """Gets the app_xrole of this ShowFunctionConfigResponse.
 
-        函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
         :return: The app_xrole of this ShowFunctionConfigResponse.
         :rtype: str
@@ -907,7 +970,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def app_xrole(self, app_xrole):
         """Sets the app_xrole of this ShowFunctionConfigResponse.
 
-        函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
         :param app_xrole: The app_xrole of this ShowFunctionConfigResponse.
         :type app_xrole: str
@@ -962,7 +1025,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def ephemeral_storage(self):
         """Gets the ephemeral_storage of this ShowFunctionConfigResponse.
 
-        临时存储大小。
+        临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
         :return: The ephemeral_storage of this ShowFunctionConfigResponse.
         :rtype: int
@@ -973,7 +1036,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def ephemeral_storage(self, ephemeral_storage):
         """Sets the ephemeral_storage of this ShowFunctionConfigResponse.
 
-        临时存储大小。
+        临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
         :param ephemeral_storage: The ephemeral_storage of this ShowFunctionConfigResponse.
         :type ephemeral_storage: int
@@ -1104,7 +1167,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def initializer_handler(self):
         """Gets the initializer_handler of this ShowFunctionConfigResponse.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :return: The initializer_handler of this ShowFunctionConfigResponse.
         :rtype: str
@@ -1115,7 +1178,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def initializer_handler(self, initializer_handler):
         """Sets the initializer_handler of this ShowFunctionConfigResponse.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :param initializer_handler: The initializer_handler of this ShowFunctionConfigResponse.
         :type initializer_handler: str
@@ -1126,7 +1189,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def initializer_timeout(self):
         """Gets the initializer_timeout of this ShowFunctionConfigResponse.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :return: The initializer_timeout of this ShowFunctionConfigResponse.
         :rtype: int
@@ -1137,7 +1200,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def initializer_timeout(self, initializer_timeout):
         """Sets the initializer_timeout of this ShowFunctionConfigResponse.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :param initializer_timeout: The initializer_timeout of this ShowFunctionConfigResponse.
         :type initializer_timeout: int
@@ -1280,7 +1343,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowFunctionConfigResponse.
 
-        v2表示为公测版本,v1为原来版本。
+        v2表示为正式版本,v1为废弃版本。
 
         :return: The type of this ShowFunctionConfigResponse.
         :rtype: str
@@ -1291,12 +1354,34 @@ class ShowFunctionConfigResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this ShowFunctionConfigResponse.
 
-        v2表示为公测版本,v1为原来版本。
+        v2表示为正式版本,v1为废弃版本。
 
         :param type: The type of this ShowFunctionConfigResponse.
         :type type: str
         """
         self._type = type
+
+    @property
+    def enable_cloud_debug(self):
+        """Gets the enable_cloud_debug of this ShowFunctionConfigResponse.
+
+        是否启用cloud debug功能
+
+        :return: The enable_cloud_debug of this ShowFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._enable_cloud_debug
+
+    @enable_cloud_debug.setter
+    def enable_cloud_debug(self, enable_cloud_debug):
+        """Sets the enable_cloud_debug of this ShowFunctionConfigResponse.
+
+        是否启用cloud debug功能
+
+        :param enable_cloud_debug: The enable_cloud_debug of this ShowFunctionConfigResponse.
+        :type enable_cloud_debug: str
+        """
+        self._enable_cloud_debug = enable_cloud_debug
 
     @property
     def enable_dynamic_memory(self):
@@ -1343,6 +1428,28 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._is_stateful_function = is_stateful_function
 
     @property
+    def is_bridge_function(self):
+        """Gets the is_bridge_function of this ShowFunctionConfigResponse.
+
+        是否为bridge函数
+
+        :return: The is_bridge_function of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._is_bridge_function
+
+    @is_bridge_function.setter
+    def is_bridge_function(self, is_bridge_function):
+        """Sets the is_bridge_function of this ShowFunctionConfigResponse.
+
+        是否为bridge函数
+
+        :param is_bridge_function: The is_bridge_function of this ShowFunctionConfigResponse.
+        :type is_bridge_function: bool
+        """
+        self._is_bridge_function = is_bridge_function
+
+    @property
     def enable_auth_in_header(self):
         """Gets the enable_auth_in_header of this ShowFunctionConfigResponse.
 
@@ -1381,6 +1488,156 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         """
         self._custom_image = custom_image
+
+    @property
+    def reserved_instance_idle_mode(self):
+        """Gets the reserved_instance_idle_mode of this ShowFunctionConfigResponse.
+
+        是否开启预留实例闲置模式
+
+        :return: The reserved_instance_idle_mode of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._reserved_instance_idle_mode
+
+    @reserved_instance_idle_mode.setter
+    def reserved_instance_idle_mode(self, reserved_instance_idle_mode):
+        """Sets the reserved_instance_idle_mode of this ShowFunctionConfigResponse.
+
+        是否开启预留实例闲置模式
+
+        :param reserved_instance_idle_mode: The reserved_instance_idle_mode of this ShowFunctionConfigResponse.
+        :type reserved_instance_idle_mode: bool
+        """
+        self._reserved_instance_idle_mode = reserved_instance_idle_mode
+
+    @property
+    def apig_route_enable(self):
+        """Gets the apig_route_enable of this ShowFunctionConfigResponse.
+
+        是否配置下沉apig路由规则。
+
+        :return: The apig_route_enable of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._apig_route_enable
+
+    @apig_route_enable.setter
+    def apig_route_enable(self, apig_route_enable):
+        """Sets the apig_route_enable of this ShowFunctionConfigResponse.
+
+        是否配置下沉apig路由规则。
+
+        :param apig_route_enable: The apig_route_enable of this ShowFunctionConfigResponse.
+        :type apig_route_enable: bool
+        """
+        self._apig_route_enable = apig_route_enable
+
+    @property
+    def heartbeat_handler(self):
+        """Gets the heartbeat_handler of this ShowFunctionConfigResponse.
+
+        心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+
+        :return: The heartbeat_handler of this ShowFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._heartbeat_handler
+
+    @heartbeat_handler.setter
+    def heartbeat_handler(self, heartbeat_handler):
+        """Sets the heartbeat_handler of this ShowFunctionConfigResponse.
+
+        心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+
+        :param heartbeat_handler: The heartbeat_handler of this ShowFunctionConfigResponse.
+        :type heartbeat_handler: str
+        """
+        self._heartbeat_handler = heartbeat_handler
+
+    @property
+    def enable_class_isolation(self):
+        """Gets the enable_class_isolation of this ShowFunctionConfigResponse.
+
+        类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+
+        :return: The enable_class_isolation of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._enable_class_isolation
+
+    @enable_class_isolation.setter
+    def enable_class_isolation(self, enable_class_isolation):
+        """Sets the enable_class_isolation of this ShowFunctionConfigResponse.
+
+        类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+
+        :param enable_class_isolation: The enable_class_isolation of this ShowFunctionConfigResponse.
+        :type enable_class_isolation: bool
+        """
+        self._enable_class_isolation = enable_class_isolation
+
+    @property
+    def gpu_type(self):
+        """Gets the gpu_type of this ShowFunctionConfigResponse.
+
+        显卡类型。
+
+        :return: The gpu_type of this ShowFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._gpu_type
+
+    @gpu_type.setter
+    def gpu_type(self, gpu_type):
+        """Sets the gpu_type of this ShowFunctionConfigResponse.
+
+        显卡类型。
+
+        :param gpu_type: The gpu_type of this ShowFunctionConfigResponse.
+        :type gpu_type: str
+        """
+        self._gpu_type = gpu_type
+
+    @property
+    def allow_ephemeral_storage(self):
+        """Gets the allow_ephemeral_storage of this ShowFunctionConfigResponse.
+
+        是否支持配置临时存储。
+
+        :return: The allow_ephemeral_storage of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._allow_ephemeral_storage
+
+    @allow_ephemeral_storage.setter
+    def allow_ephemeral_storage(self, allow_ephemeral_storage):
+        """Sets the allow_ephemeral_storage of this ShowFunctionConfigResponse.
+
+        是否支持配置临时存储。
+
+        :param allow_ephemeral_storage: The allow_ephemeral_storage of this ShowFunctionConfigResponse.
+        :type allow_ephemeral_storage: bool
+        """
+        self._allow_ephemeral_storage = allow_ephemeral_storage
+
+    @property
+    def network_controller(self):
+        """Gets the network_controller of this ShowFunctionConfigResponse.
+
+        :return: The network_controller of this ShowFunctionConfigResponse.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        """
+        return self._network_controller
+
+    @network_controller.setter
+    def network_controller(self, network_controller):
+        """Sets the network_controller of this ShowFunctionConfigResponse.
+
+        :param network_controller: The network_controller of this ShowFunctionConfigResponse.
+        :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        """
+        self._network_controller = network_controller
 
     def to_dict(self):
         """Returns the model properties as a dict"""

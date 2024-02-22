@@ -19,16 +19,20 @@ class ModifyGaussMySqlProxyRouteModeRequestBody:
     openapi_types = {
         'route_mode': 'int',
         'master_weight': 'int',
-        'readonly_nodes': 'list[ModifyProxyRouteWeightReadonlyNode]'
+        'readonly_nodes': 'list[ModifyProxyRouteWeightReadonlyNode]',
+        'new_node_auto_add_status': 'str',
+        'new_node_weight': 'int'
     }
 
     attribute_map = {
         'route_mode': 'route_mode',
         'master_weight': 'master_weight',
-        'readonly_nodes': 'readonly_nodes'
+        'readonly_nodes': 'readonly_nodes',
+        'new_node_auto_add_status': 'new_node_auto_add_status',
+        'new_node_weight': 'new_node_weight'
     }
 
-    def __init__(self, route_mode=None, master_weight=None, readonly_nodes=None):
+    def __init__(self, route_mode=None, master_weight=None, readonly_nodes=None, new_node_auto_add_status=None, new_node_weight=None):
         """ModifyGaussMySqlProxyRouteModeRequestBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ModifyGaussMySqlProxyRouteModeRequestBody:
         :type master_weight: int
         :param readonly_nodes: 只读节点权重配置信息。
         :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.ModifyProxyRouteWeightReadonlyNode`]
+        :param new_node_auto_add_status: 是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
+        :type new_node_auto_add_status: str
+        :param new_node_weight: 新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
+        :type new_node_weight: int
         """
         
         
@@ -46,6 +54,8 @@ class ModifyGaussMySqlProxyRouteModeRequestBody:
         self._route_mode = None
         self._master_weight = None
         self._readonly_nodes = None
+        self._new_node_auto_add_status = None
+        self._new_node_weight = None
         self.discriminator = None
 
         self.route_mode = route_mode
@@ -53,6 +63,10 @@ class ModifyGaussMySqlProxyRouteModeRequestBody:
             self.master_weight = master_weight
         if readonly_nodes is not None:
             self.readonly_nodes = readonly_nodes
+        if new_node_auto_add_status is not None:
+            self.new_node_auto_add_status = new_node_auto_add_status
+        if new_node_weight is not None:
+            self.new_node_weight = new_node_weight
 
     @property
     def route_mode(self):
@@ -119,6 +133,50 @@ class ModifyGaussMySqlProxyRouteModeRequestBody:
         :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.ModifyProxyRouteWeightReadonlyNode`]
         """
         self._readonly_nodes = readonly_nodes
+
+    @property
+    def new_node_auto_add_status(self):
+        """Gets the new_node_auto_add_status of this ModifyGaussMySqlProxyRouteModeRequestBody.
+
+        是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
+
+        :return: The new_node_auto_add_status of this ModifyGaussMySqlProxyRouteModeRequestBody.
+        :rtype: str
+        """
+        return self._new_node_auto_add_status
+
+    @new_node_auto_add_status.setter
+    def new_node_auto_add_status(self, new_node_auto_add_status):
+        """Sets the new_node_auto_add_status of this ModifyGaussMySqlProxyRouteModeRequestBody.
+
+        是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
+
+        :param new_node_auto_add_status: The new_node_auto_add_status of this ModifyGaussMySqlProxyRouteModeRequestBody.
+        :type new_node_auto_add_status: str
+        """
+        self._new_node_auto_add_status = new_node_auto_add_status
+
+    @property
+    def new_node_weight(self):
+        """Gets the new_node_weight of this ModifyGaussMySqlProxyRouteModeRequestBody.
+
+        新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
+
+        :return: The new_node_weight of this ModifyGaussMySqlProxyRouteModeRequestBody.
+        :rtype: int
+        """
+        return self._new_node_weight
+
+    @new_node_weight.setter
+    def new_node_weight(self, new_node_weight):
+        """Sets the new_node_weight of this ModifyGaussMySqlProxyRouteModeRequestBody.
+
+        新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
+
+        :param new_node_weight: The new_node_weight of this ModifyGaussMySqlProxyRouteModeRequestBody.
+        :type new_node_weight: int
+        """
+        self._new_node_weight = new_node_weight
 
     def to_dict(self):
         """Returns the model properties as a dict"""

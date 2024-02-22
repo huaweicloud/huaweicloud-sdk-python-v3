@@ -23,8 +23,8 @@ class WidgetInfo:
         'threshold_enabled': 'bool',
         'view': 'str',
         'metric_display_mode': 'str',
-        'properties': 'BaseWidgetInfoProperties',
-        'location': 'BaseWidgetInfoLocation',
+        'properties': 'UpdateWidgetInfoProperties',
+        'location': 'UpdateWidgetInfoLocation',
         'unit': 'str',
         'create_time': 'int'
     }
@@ -60,9 +60,9 @@ class WidgetInfo:
         :param metric_display_mode: 指标展示类型，single 单指标展示，multiple 多指标展示
         :type metric_display_mode: str
         :param properties: 
-        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
         :param location: 
-        :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
+        :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
         :param unit: 单位
         :type unit: str
         :param create_time: 监控看板创建时间
@@ -241,7 +241,7 @@ class WidgetInfo:
         """Gets the properties of this WidgetInfo.
 
         :return: The properties of this WidgetInfo.
-        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
         """
         return self._properties
 
@@ -250,7 +250,7 @@ class WidgetInfo:
         """Sets the properties of this WidgetInfo.
 
         :param properties: The properties of this WidgetInfo.
-        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
         """
         self._properties = properties
 
@@ -259,7 +259,7 @@ class WidgetInfo:
         """Gets the location of this WidgetInfo.
 
         :return: The location of this WidgetInfo.
-        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
         """
         return self._location
 
@@ -268,7 +268,7 @@ class WidgetInfo:
         """Sets the location of this WidgetInfo.
 
         :param location: The location of this WidgetInfo.
-        :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
+        :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
         """
         self._location = location
 

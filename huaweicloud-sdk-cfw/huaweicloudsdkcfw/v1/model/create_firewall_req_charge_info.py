@@ -63,10 +63,8 @@ class CreateFirewallReqChargeInfo:
             self.period_type = period_type
         if period_num is not None:
             self.period_num = period_num
-        if is_auto_renew is not None:
-            self.is_auto_renew = is_auto_renew
-        if is_auto_pay is not None:
-            self.is_auto_pay = is_auto_pay
+        self.is_auto_renew = is_auto_renew
+        self.is_auto_pay = is_auto_pay
 
     @property
     def charge_mode(self):

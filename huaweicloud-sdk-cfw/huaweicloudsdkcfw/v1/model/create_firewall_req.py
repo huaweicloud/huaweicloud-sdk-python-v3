@@ -59,7 +59,8 @@ class CreateFirewallReq:
         self.discriminator = None
 
         self.name = name
-        self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
         if flavor is not None:

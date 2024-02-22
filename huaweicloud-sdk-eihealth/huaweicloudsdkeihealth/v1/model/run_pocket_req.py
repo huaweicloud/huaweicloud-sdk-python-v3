@@ -19,7 +19,7 @@ class RunPocketReq:
     openapi_types = {
         'center': 'list[float]',
         'size': 'list[float]',
-        'padding': 'int'
+        'padding': 'float'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class RunPocketReq:
         :param size: 口袋大小
         :type size: list[float]
         :param padding: 口袋的padding值
-        :type padding: int
+        :type padding: float
         """
         
         
@@ -103,7 +103,7 @@ class RunPocketReq:
         口袋的padding值
 
         :return: The padding of this RunPocketReq.
-        :rtype: int
+        :rtype: float
         """
         return self._padding
 
@@ -114,7 +114,7 @@ class RunPocketReq:
         口袋的padding值
 
         :param padding: The padding of this RunPocketReq.
-        :type padding: int
+        :type padding: float
         """
         self._padding = padding
 

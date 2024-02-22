@@ -1,3 +1,145 @@
+# 3.1.83 2024-02-22
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSubCustomers**
+    - changes of request param
+      - `+ customer_id`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDashboardWidgets**
+    - changes of request param
+      - `* body: list<BaseWidgetInfo> -> list<object>`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **GeneratePocketFile**
+    - changes of request param
+      - `* padding: int32 -> float`
+  - **ShowAdmetJob**
+    - changes of response param
+      - `- models.value_range.lower_inclusive`
+      - `- models.value_range.upper_inclusive`
+      - `* models.value_range.lower: number -> float`
+      - `* models.value_range.upper: number -> float`
+      - `* models.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **CreatePocketMolDesignJob**
+    - changes of request param
+      - `* receptor.bounding_box.padding: int32 -> float`
+  - **ShowPocketMolDesignJob**
+    - changes of response param
+      - `* receptor.bounding_box.padding: int32 -> float`
+      - `- model_list.value_range.lower_inclusive`
+      - `- model_list.value_range.upper_inclusive`
+      - `* model_list.value_range.lower: number -> float`
+      - `* model_list.value_range.upper: number -> float`
+      - `* model_list.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **ParseDrugReceptorInfo**
+    - changes of request param
+      - `+ add_hydrogen`
+      - `* body: object<ReceptorDrugFile> -> object<ReceptorDrugFileReq>`
+  - **CreateOptmJob**
+    - changes of request param
+      - `* binding_site.bounding_box.padding: int32 -> float`
+  - **ShowOptmJob**
+    - changes of response param
+      - `* binding_site.bounding_box.padding: int32 -> float`
+      - `- models.value_range.lower_inclusive`
+      - `- models.value_range.upper_inclusive`
+      - `* models.value_range.lower: number -> float`
+      - `* models.value_range.upper: number -> float`
+      - `* models.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **CreateDockingJob**
+    - changes of request param
+      - `* receptors.bounding_box.padding: int32 -> float`
+  - **ShowDockingJob**
+    - changes of response param
+      - `* receptors.bounding_box.padding: int32 -> float`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ModifyGaussMySqlProxyRouteMode**
+    - changes of request param
+      - `+ new_node_auto_add_status`
+      - `+ new_node_weight`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRecycleInstances**
+    - changes of response param
+      - `+ instances.engine_name`
+      - `+ instances.volume_size`
+      - `+ instances.enterprise_project_name`
+      - `+ instances.backup_level`
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListImages**
+    - changes of response param
+      - `+ images.__image_displayname`
+  - **UpdateImage**
+    - changes of response param
+      - `+ __image_displayname`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeTrainTicket**
+    - changes of response param
+      - `+ result.invoice_style`
+      - `+ result.issue_date`
+      - `+ result.discount_mark`
+      - `+ result.serial_number`
+      - `+ result.tax_amount`
+      - `+ result.tax_rate`
+      - `+ result.air_conditioning`
+      - `+ result.original_invoice_number`
+      - `+ result.unified_social_credit_code`
+      - `+ result.buyer_name`
+      - `+ result.total_amount_excluding_tax`
+      - `+ result.invoice_number`
+      - `+ result.seal_mark`
+      - `+ result.title`
+      - `+ result.area`
+      - `+ result.receipt_number`
+      - `+ result.amount_in_figures`
+      - `+ result.amount_in_words`
+
 # 3.1.82 2024-02-20
 
 ### HuaweiCloud SDK IAMAccessAnalyzer

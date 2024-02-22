@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BaseWidgetInfoProperties:
+class UpdateWidgetInfoProperties:
 
     """
     Attributes:
@@ -29,7 +29,7 @@ class BaseWidgetInfoProperties:
     }
 
     def __init__(self, filter=None, top_n=None, order=None):
-        """BaseWidgetInfoProperties
+        """UpdateWidgetInfoProperties
 
         The model defined in huaweicloud sdk
 
@@ -57,66 +57,66 @@ class BaseWidgetInfoProperties:
 
     @property
     def filter(self):
-        """Gets the filter of this BaseWidgetInfoProperties.
+        """Gets the filter of this UpdateWidgetInfoProperties.
 
         聚合类型，目前只有TopN这一种类型
 
-        :return: The filter of this BaseWidgetInfoProperties.
+        :return: The filter of this UpdateWidgetInfoProperties.
         :rtype: str
         """
         return self._filter
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this BaseWidgetInfoProperties.
+        """Sets the filter of this UpdateWidgetInfoProperties.
 
         聚合类型，目前只有TopN这一种类型
 
-        :param filter: The filter of this BaseWidgetInfoProperties.
+        :param filter: The filter of this UpdateWidgetInfoProperties.
         :type filter: str
         """
         self._filter = filter
 
     @property
     def top_n(self):
-        """Gets the top_n of this BaseWidgetInfoProperties.
+        """Gets the top_n of this UpdateWidgetInfoProperties.
 
         Top值前N个
 
-        :return: The top_n of this BaseWidgetInfoProperties.
+        :return: The top_n of this UpdateWidgetInfoProperties.
         :rtype: int
         """
         return self._top_n
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this BaseWidgetInfoProperties.
+        """Sets the top_n of this UpdateWidgetInfoProperties.
 
         Top值前N个
 
-        :param top_n: The top_n of this BaseWidgetInfoProperties.
+        :param top_n: The top_n of this UpdateWidgetInfoProperties.
         :type top_n: int
         """
         self._top_n = top_n
 
     @property
     def order(self):
-        """Gets the order of this BaseWidgetInfoProperties.
+        """Gets the order of this UpdateWidgetInfoProperties.
 
         排序字段，asc正序，desc倒序
 
-        :return: The order of this BaseWidgetInfoProperties.
+        :return: The order of this UpdateWidgetInfoProperties.
         :rtype: str
         """
         return self._order
 
     @order.setter
     def order(self, order):
-        """Sets the order of this BaseWidgetInfoProperties.
+        """Sets the order of this UpdateWidgetInfoProperties.
 
         排序字段，asc正序，desc倒序
 
-        :param order: The order of this BaseWidgetInfoProperties.
+        :param order: The order of this UpdateWidgetInfoProperties.
         :type order: str
         """
         self._order = order
@@ -163,7 +163,7 @@ class BaseWidgetInfoProperties:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BaseWidgetInfoProperties):
+        if not isinstance(other, UpdateWidgetInfoProperties):
             return False
 
         return self.__dict__ == other.__dict__

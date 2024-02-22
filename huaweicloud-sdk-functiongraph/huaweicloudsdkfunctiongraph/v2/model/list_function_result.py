@@ -123,9 +123,9 @@ class ListFunctionResult:
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
-        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
         :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
         :type handler: str
@@ -135,7 +135,7 @@ class ListFunctionResult:
         :type gpu_memory: int
         :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
         :type cpu: int
-        :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        :param code_type: 函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
         :type code_type: str
         :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
         :type code_url: str
@@ -149,7 +149,7 @@ class ListFunctionResult:
         :type encrypted_user_data: str
         :param digest: 函数代码SHA512 hash值，用于判断函数是否变化。
         :type digest: str
-        :param version: 函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
+        :param version: 函数版本号。
         :type version: str
         :param image_name: 函数版本的内部标识。
         :type image_name: str
@@ -167,9 +167,9 @@ class ListFunctionResult:
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         :param extend_config: 函数扩展配置。
         :type extend_config: str
-        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
         :type initializer_handler: str
-        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
         :type initializer_timeout: int
         :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
         :type pre_stop_handler: str
@@ -183,7 +183,7 @@ class ListFunctionResult:
         :type log_group_id: str
         :param log_stream_id: 自定义日志查询流id
         :type log_stream_id: str
-        :param type: v2表示为公测版本,v1为原来版本。
+        :param type: v2表示为正式版本,v1为废弃版本。
         :type type: str
         :param fail_count: 函数最近1天内执行失败的次数。
         :type fail_count: int
@@ -462,7 +462,7 @@ class ListFunctionResult:
     def runtime(self):
         """Gets the runtime of this ListFunctionResult.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this ListFunctionResult.
         :rtype: str
@@ -473,7 +473,7 @@ class ListFunctionResult:
     def runtime(self, runtime):
         """Sets the runtime of this ListFunctionResult.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this ListFunctionResult.
         :type runtime: str
@@ -484,7 +484,7 @@ class ListFunctionResult:
     def timeout(self):
         """Gets the timeout of this ListFunctionResult.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :return: The timeout of this ListFunctionResult.
         :rtype: int
@@ -495,7 +495,7 @@ class ListFunctionResult:
     def timeout(self, timeout):
         """Sets the timeout of this ListFunctionResult.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :param timeout: The timeout of this ListFunctionResult.
         :type timeout: int
@@ -594,7 +594,7 @@ class ListFunctionResult:
     def code_type(self):
         """Gets the code_type of this ListFunctionResult.
 
-        函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
         :return: The code_type of this ListFunctionResult.
         :rtype: str
@@ -605,7 +605,7 @@ class ListFunctionResult:
     def code_type(self, code_type):
         """Sets the code_type of this ListFunctionResult.
 
-        函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
         :param code_type: The code_type of this ListFunctionResult.
         :type code_type: str
@@ -748,7 +748,7 @@ class ListFunctionResult:
     def version(self):
         """Gets the version of this ListFunctionResult.
 
-        函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
+        函数版本号。
 
         :return: The version of this ListFunctionResult.
         :rtype: str
@@ -759,7 +759,7 @@ class ListFunctionResult:
     def version(self, version):
         """Sets the version of this ListFunctionResult.
 
-        函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
+        函数版本号。
 
         :param version: The version of this ListFunctionResult.
         :type version: str
@@ -942,7 +942,7 @@ class ListFunctionResult:
     def initializer_handler(self):
         """Gets the initializer_handler of this ListFunctionResult.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :return: The initializer_handler of this ListFunctionResult.
         :rtype: str
@@ -953,7 +953,7 @@ class ListFunctionResult:
     def initializer_handler(self, initializer_handler):
         """Sets the initializer_handler of this ListFunctionResult.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :param initializer_handler: The initializer_handler of this ListFunctionResult.
         :type initializer_handler: str
@@ -964,7 +964,7 @@ class ListFunctionResult:
     def initializer_timeout(self):
         """Gets the initializer_timeout of this ListFunctionResult.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :return: The initializer_timeout of this ListFunctionResult.
         :rtype: int
@@ -975,7 +975,7 @@ class ListFunctionResult:
     def initializer_timeout(self, initializer_timeout):
         """Sets the initializer_timeout of this ListFunctionResult.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :param initializer_timeout: The initializer_timeout of this ListFunctionResult.
         :type initializer_timeout: int
@@ -1118,7 +1118,7 @@ class ListFunctionResult:
     def type(self):
         """Gets the type of this ListFunctionResult.
 
-        v2表示为公测版本,v1为原来版本。
+        v2表示为正式版本,v1为废弃版本。
 
         :return: The type of this ListFunctionResult.
         :rtype: str
@@ -1129,7 +1129,7 @@ class ListFunctionResult:
     def type(self, type):
         """Sets the type of this ListFunctionResult.
 
-        v2表示为公测版本,v1为原来版本。
+        v2表示为正式版本,v1为废弃版本。
 
         :param type: The type of this ListFunctionResult.
         :type type: str

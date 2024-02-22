@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BaseWidgetInfoLocation:
+class UpdateWidgetInfoLocation:
 
     """
     Attributes:
@@ -31,7 +31,7 @@ class BaseWidgetInfoLocation:
     }
 
     def __init__(self, top=None, left=None, width=None, height=None):
-        """BaseWidgetInfoLocation
+        """UpdateWidgetInfoLocation
 
         The model defined in huaweicloud sdk
 
@@ -53,99 +53,95 @@ class BaseWidgetInfoLocation:
         self._height = None
         self.discriminator = None
 
-        if top is not None:
-            self.top = top
-        if left is not None:
-            self.left = left
-        if width is not None:
-            self.width = width
-        if height is not None:
-            self.height = height
+        self.top = top
+        self.left = left
+        self.width = width
+        self.height = height
 
     @property
     def top(self):
-        """Gets the top of this BaseWidgetInfoLocation.
+        """Gets the top of this UpdateWidgetInfoLocation.
 
         监控视图的上坐标
 
-        :return: The top of this BaseWidgetInfoLocation.
+        :return: The top of this UpdateWidgetInfoLocation.
         :rtype: int
         """
         return self._top
 
     @top.setter
     def top(self, top):
-        """Sets the top of this BaseWidgetInfoLocation.
+        """Sets the top of this UpdateWidgetInfoLocation.
 
         监控视图的上坐标
 
-        :param top: The top of this BaseWidgetInfoLocation.
+        :param top: The top of this UpdateWidgetInfoLocation.
         :type top: int
         """
         self._top = top
 
     @property
     def left(self):
-        """Gets the left of this BaseWidgetInfoLocation.
+        """Gets the left of this UpdateWidgetInfoLocation.
 
         监控视图的左坐标
 
-        :return: The left of this BaseWidgetInfoLocation.
+        :return: The left of this UpdateWidgetInfoLocation.
         :rtype: int
         """
         return self._left
 
     @left.setter
     def left(self, left):
-        """Sets the left of this BaseWidgetInfoLocation.
+        """Sets the left of this UpdateWidgetInfoLocation.
 
         监控视图的左坐标
 
-        :param left: The left of this BaseWidgetInfoLocation.
+        :param left: The left of this UpdateWidgetInfoLocation.
         :type left: int
         """
         self._left = left
 
     @property
     def width(self):
-        """Gets the width of this BaseWidgetInfoLocation.
+        """Gets the width of this UpdateWidgetInfoLocation.
 
         监控视图图表宽度
 
-        :return: The width of this BaseWidgetInfoLocation.
+        :return: The width of this UpdateWidgetInfoLocation.
         :rtype: int
         """
         return self._width
 
     @width.setter
     def width(self, width):
-        """Sets the width of this BaseWidgetInfoLocation.
+        """Sets the width of this UpdateWidgetInfoLocation.
 
         监控视图图表宽度
 
-        :param width: The width of this BaseWidgetInfoLocation.
+        :param width: The width of this UpdateWidgetInfoLocation.
         :type width: int
         """
         self._width = width
 
     @property
     def height(self):
-        """Gets the height of this BaseWidgetInfoLocation.
+        """Gets the height of this UpdateWidgetInfoLocation.
 
         监控视图图表高度
 
-        :return: The height of this BaseWidgetInfoLocation.
+        :return: The height of this UpdateWidgetInfoLocation.
         :rtype: int
         """
         return self._height
 
     @height.setter
     def height(self, height):
-        """Sets the height of this BaseWidgetInfoLocation.
+        """Sets the height of this UpdateWidgetInfoLocation.
 
         监控视图图表高度
 
-        :param height: The height of this BaseWidgetInfoLocation.
+        :param height: The height of this UpdateWidgetInfoLocation.
         :type height: int
         """
         self._height = height
@@ -192,7 +188,7 @@ class BaseWidgetInfoLocation:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BaseWidgetInfoLocation):
+        if not isinstance(other, UpdateWidgetInfoLocation):
             return False
 
         return self.__dict__ == other.__dict__

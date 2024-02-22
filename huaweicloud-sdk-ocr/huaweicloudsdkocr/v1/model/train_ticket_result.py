@@ -34,6 +34,24 @@ class TrainTicketResult:
         'name': 'str',
         'log_id': 'str',
         'sale_location': 'str',
+        'invoice_style': 'str',
+        'issue_date': 'str',
+        'discount_mark': 'str',
+        'serial_number': 'str',
+        'tax_amount': 'str',
+        'tax_rate': 'str',
+        'air_conditioning': 'str',
+        'original_invoice_number': 'str',
+        'unified_social_credit_code': 'str',
+        'buyer_name': 'str',
+        'total_amount_excluding_tax': 'str',
+        'invoice_number': 'str',
+        'seal_mark': 'bool',
+        'title': 'str',
+        'area': 'str',
+        'receipt_number': 'str',
+        'amount_in_figures': 'str',
+        'amount_in_words': 'str',
         'confidence': 'object',
         'text_location': 'object'
     }
@@ -56,11 +74,29 @@ class TrainTicketResult:
         'name': 'name',
         'log_id': 'log_id',
         'sale_location': 'sale_location',
+        'invoice_style': 'invoice_style',
+        'issue_date': 'issue_date',
+        'discount_mark': 'discount_mark',
+        'serial_number': 'serial_number',
+        'tax_amount': 'tax_amount',
+        'tax_rate': 'tax_rate',
+        'air_conditioning': 'air_conditioning',
+        'original_invoice_number': 'original_invoice_number',
+        'unified_social_credit_code': 'unified_social_credit_code',
+        'buyer_name': 'buyer_name',
+        'total_amount_excluding_tax': 'total_amount_excluding_tax',
+        'invoice_number': 'invoice_number',
+        'seal_mark': 'seal_mark',
+        'title': 'title',
+        'area': 'area',
+        'receipt_number': 'receipt_number',
+        'amount_in_figures': 'amount_in_figures',
+        'amount_in_words': 'amount_in_words',
         'confidence': 'confidence',
         'text_location': 'text_location'
     }
 
-    def __init__(self, ticket_id=None, check_port=None, train_number=None, departure_station=None, destination_station=None, departure_station_en=None, destination_station_en=None, departure_time=None, seat_number=None, ticket_price=None, sale_method=None, seat_category=None, ticket_changing=None, id_number=None, name=None, log_id=None, sale_location=None, confidence=None, text_location=None):
+    def __init__(self, ticket_id=None, check_port=None, train_number=None, departure_station=None, destination_station=None, departure_station_en=None, destination_station_en=None, departure_time=None, seat_number=None, ticket_price=None, sale_method=None, seat_category=None, ticket_changing=None, id_number=None, name=None, log_id=None, sale_location=None, invoice_style=None, issue_date=None, discount_mark=None, serial_number=None, tax_amount=None, tax_rate=None, air_conditioning=None, original_invoice_number=None, unified_social_credit_code=None, buyer_name=None, total_amount_excluding_tax=None, invoice_number=None, seal_mark=None, title=None, area=None, receipt_number=None, amount_in_figures=None, amount_in_words=None, confidence=None, text_location=None):
         """TrainTicketResult
 
         The model defined in huaweicloud sdk
@@ -99,6 +135,42 @@ class TrainTicketResult:
         :type log_id: str
         :param sale_location: 车票售票地点。 
         :type sale_location: str
+        :param invoice_style: 类型。包含以下几种类型： - paper：纸质火车票 - electronic：电子发票 - refund_old：旧版退票凭证 - refund_new：新版退票凭证 
+        :type invoice_style: str
+        :param issue_date: 开票时间 
+        :type issue_date: str
+        :param discount_mark: 打折标识 
+        :type discount_mark: str
+        :param serial_number: 电子客票号 
+        :type serial_number: str
+        :param tax_amount: 税金价格 
+        :type tax_amount: str
+        :param tax_rate: 税率 
+        :type tax_rate: str
+        :param air_conditioning: 是否是空调车厢 
+        :type air_conditioning: str
+        :param original_invoice_number: 原发票号码 
+        :type original_invoice_number: str
+        :param unified_social_credit_code: 统一社会信用号码 
+        :type unified_social_credit_code: str
+        :param buyer_name: 购买方名称 
+        :type buyer_name: str
+        :param total_amount_excluding_tax: 不含税价格 
+        :type total_amount_excluding_tax: str
+        :param invoice_number: 发票号码 
+        :type invoice_number: str
+        :param seal_mark: 是否有印章，True表示有印章，False表示不含印章，字段默认为False 
+        :type seal_mark: bool
+        :param title: 标题 
+        :type title: str
+        :param area: 地区 
+        :type area: str
+        :param receipt_number: 收据编码 
+        :type receipt_number: str
+        :param amount_in_figures: 小写票据金额 
+        :type amount_in_figures: str
+        :param amount_in_words: 大写票据金额 
+        :type amount_in_words: str
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
         :type confidence: object
         :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
@@ -124,6 +196,24 @@ class TrainTicketResult:
         self._name = None
         self._log_id = None
         self._sale_location = None
+        self._invoice_style = None
+        self._issue_date = None
+        self._discount_mark = None
+        self._serial_number = None
+        self._tax_amount = None
+        self._tax_rate = None
+        self._air_conditioning = None
+        self._original_invoice_number = None
+        self._unified_social_credit_code = None
+        self._buyer_name = None
+        self._total_amount_excluding_tax = None
+        self._invoice_number = None
+        self._seal_mark = None
+        self._title = None
+        self._area = None
+        self._receipt_number = None
+        self._amount_in_figures = None
+        self._amount_in_words = None
         self._confidence = None
         self._text_location = None
         self.discriminator = None
@@ -162,6 +252,42 @@ class TrainTicketResult:
             self.log_id = log_id
         if sale_location is not None:
             self.sale_location = sale_location
+        if invoice_style is not None:
+            self.invoice_style = invoice_style
+        if issue_date is not None:
+            self.issue_date = issue_date
+        if discount_mark is not None:
+            self.discount_mark = discount_mark
+        if serial_number is not None:
+            self.serial_number = serial_number
+        if tax_amount is not None:
+            self.tax_amount = tax_amount
+        if tax_rate is not None:
+            self.tax_rate = tax_rate
+        if air_conditioning is not None:
+            self.air_conditioning = air_conditioning
+        if original_invoice_number is not None:
+            self.original_invoice_number = original_invoice_number
+        if unified_social_credit_code is not None:
+            self.unified_social_credit_code = unified_social_credit_code
+        if buyer_name is not None:
+            self.buyer_name = buyer_name
+        if total_amount_excluding_tax is not None:
+            self.total_amount_excluding_tax = total_amount_excluding_tax
+        if invoice_number is not None:
+            self.invoice_number = invoice_number
+        if seal_mark is not None:
+            self.seal_mark = seal_mark
+        if title is not None:
+            self.title = title
+        if area is not None:
+            self.area = area
+        if receipt_number is not None:
+            self.receipt_number = receipt_number
+        if amount_in_figures is not None:
+            self.amount_in_figures = amount_in_figures
+        if amount_in_words is not None:
+            self.amount_in_words = amount_in_words
         if confidence is not None:
             self.confidence = confidence
         if text_location is not None:
@@ -540,6 +666,402 @@ class TrainTicketResult:
         :type sale_location: str
         """
         self._sale_location = sale_location
+
+    @property
+    def invoice_style(self):
+        """Gets the invoice_style of this TrainTicketResult.
+
+        类型。包含以下几种类型： - paper：纸质火车票 - electronic：电子发票 - refund_old：旧版退票凭证 - refund_new：新版退票凭证 
+
+        :return: The invoice_style of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._invoice_style
+
+    @invoice_style.setter
+    def invoice_style(self, invoice_style):
+        """Sets the invoice_style of this TrainTicketResult.
+
+        类型。包含以下几种类型： - paper：纸质火车票 - electronic：电子发票 - refund_old：旧版退票凭证 - refund_new：新版退票凭证 
+
+        :param invoice_style: The invoice_style of this TrainTicketResult.
+        :type invoice_style: str
+        """
+        self._invoice_style = invoice_style
+
+    @property
+    def issue_date(self):
+        """Gets the issue_date of this TrainTicketResult.
+
+        开票时间 
+
+        :return: The issue_date of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._issue_date
+
+    @issue_date.setter
+    def issue_date(self, issue_date):
+        """Sets the issue_date of this TrainTicketResult.
+
+        开票时间 
+
+        :param issue_date: The issue_date of this TrainTicketResult.
+        :type issue_date: str
+        """
+        self._issue_date = issue_date
+
+    @property
+    def discount_mark(self):
+        """Gets the discount_mark of this TrainTicketResult.
+
+        打折标识 
+
+        :return: The discount_mark of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._discount_mark
+
+    @discount_mark.setter
+    def discount_mark(self, discount_mark):
+        """Sets the discount_mark of this TrainTicketResult.
+
+        打折标识 
+
+        :param discount_mark: The discount_mark of this TrainTicketResult.
+        :type discount_mark: str
+        """
+        self._discount_mark = discount_mark
+
+    @property
+    def serial_number(self):
+        """Gets the serial_number of this TrainTicketResult.
+
+        电子客票号 
+
+        :return: The serial_number of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._serial_number
+
+    @serial_number.setter
+    def serial_number(self, serial_number):
+        """Sets the serial_number of this TrainTicketResult.
+
+        电子客票号 
+
+        :param serial_number: The serial_number of this TrainTicketResult.
+        :type serial_number: str
+        """
+        self._serial_number = serial_number
+
+    @property
+    def tax_amount(self):
+        """Gets the tax_amount of this TrainTicketResult.
+
+        税金价格 
+
+        :return: The tax_amount of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._tax_amount
+
+    @tax_amount.setter
+    def tax_amount(self, tax_amount):
+        """Sets the tax_amount of this TrainTicketResult.
+
+        税金价格 
+
+        :param tax_amount: The tax_amount of this TrainTicketResult.
+        :type tax_amount: str
+        """
+        self._tax_amount = tax_amount
+
+    @property
+    def tax_rate(self):
+        """Gets the tax_rate of this TrainTicketResult.
+
+        税率 
+
+        :return: The tax_rate of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._tax_rate
+
+    @tax_rate.setter
+    def tax_rate(self, tax_rate):
+        """Sets the tax_rate of this TrainTicketResult.
+
+        税率 
+
+        :param tax_rate: The tax_rate of this TrainTicketResult.
+        :type tax_rate: str
+        """
+        self._tax_rate = tax_rate
+
+    @property
+    def air_conditioning(self):
+        """Gets the air_conditioning of this TrainTicketResult.
+
+        是否是空调车厢 
+
+        :return: The air_conditioning of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._air_conditioning
+
+    @air_conditioning.setter
+    def air_conditioning(self, air_conditioning):
+        """Sets the air_conditioning of this TrainTicketResult.
+
+        是否是空调车厢 
+
+        :param air_conditioning: The air_conditioning of this TrainTicketResult.
+        :type air_conditioning: str
+        """
+        self._air_conditioning = air_conditioning
+
+    @property
+    def original_invoice_number(self):
+        """Gets the original_invoice_number of this TrainTicketResult.
+
+        原发票号码 
+
+        :return: The original_invoice_number of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._original_invoice_number
+
+    @original_invoice_number.setter
+    def original_invoice_number(self, original_invoice_number):
+        """Sets the original_invoice_number of this TrainTicketResult.
+
+        原发票号码 
+
+        :param original_invoice_number: The original_invoice_number of this TrainTicketResult.
+        :type original_invoice_number: str
+        """
+        self._original_invoice_number = original_invoice_number
+
+    @property
+    def unified_social_credit_code(self):
+        """Gets the unified_social_credit_code of this TrainTicketResult.
+
+        统一社会信用号码 
+
+        :return: The unified_social_credit_code of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._unified_social_credit_code
+
+    @unified_social_credit_code.setter
+    def unified_social_credit_code(self, unified_social_credit_code):
+        """Sets the unified_social_credit_code of this TrainTicketResult.
+
+        统一社会信用号码 
+
+        :param unified_social_credit_code: The unified_social_credit_code of this TrainTicketResult.
+        :type unified_social_credit_code: str
+        """
+        self._unified_social_credit_code = unified_social_credit_code
+
+    @property
+    def buyer_name(self):
+        """Gets the buyer_name of this TrainTicketResult.
+
+        购买方名称 
+
+        :return: The buyer_name of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._buyer_name
+
+    @buyer_name.setter
+    def buyer_name(self, buyer_name):
+        """Sets the buyer_name of this TrainTicketResult.
+
+        购买方名称 
+
+        :param buyer_name: The buyer_name of this TrainTicketResult.
+        :type buyer_name: str
+        """
+        self._buyer_name = buyer_name
+
+    @property
+    def total_amount_excluding_tax(self):
+        """Gets the total_amount_excluding_tax of this TrainTicketResult.
+
+        不含税价格 
+
+        :return: The total_amount_excluding_tax of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._total_amount_excluding_tax
+
+    @total_amount_excluding_tax.setter
+    def total_amount_excluding_tax(self, total_amount_excluding_tax):
+        """Sets the total_amount_excluding_tax of this TrainTicketResult.
+
+        不含税价格 
+
+        :param total_amount_excluding_tax: The total_amount_excluding_tax of this TrainTicketResult.
+        :type total_amount_excluding_tax: str
+        """
+        self._total_amount_excluding_tax = total_amount_excluding_tax
+
+    @property
+    def invoice_number(self):
+        """Gets the invoice_number of this TrainTicketResult.
+
+        发票号码 
+
+        :return: The invoice_number of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._invoice_number
+
+    @invoice_number.setter
+    def invoice_number(self, invoice_number):
+        """Sets the invoice_number of this TrainTicketResult.
+
+        发票号码 
+
+        :param invoice_number: The invoice_number of this TrainTicketResult.
+        :type invoice_number: str
+        """
+        self._invoice_number = invoice_number
+
+    @property
+    def seal_mark(self):
+        """Gets the seal_mark of this TrainTicketResult.
+
+        是否有印章，True表示有印章，False表示不含印章，字段默认为False 
+
+        :return: The seal_mark of this TrainTicketResult.
+        :rtype: bool
+        """
+        return self._seal_mark
+
+    @seal_mark.setter
+    def seal_mark(self, seal_mark):
+        """Sets the seal_mark of this TrainTicketResult.
+
+        是否有印章，True表示有印章，False表示不含印章，字段默认为False 
+
+        :param seal_mark: The seal_mark of this TrainTicketResult.
+        :type seal_mark: bool
+        """
+        self._seal_mark = seal_mark
+
+    @property
+    def title(self):
+        """Gets the title of this TrainTicketResult.
+
+        标题 
+
+        :return: The title of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._title
+
+    @title.setter
+    def title(self, title):
+        """Sets the title of this TrainTicketResult.
+
+        标题 
+
+        :param title: The title of this TrainTicketResult.
+        :type title: str
+        """
+        self._title = title
+
+    @property
+    def area(self):
+        """Gets the area of this TrainTicketResult.
+
+        地区 
+
+        :return: The area of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._area
+
+    @area.setter
+    def area(self, area):
+        """Sets the area of this TrainTicketResult.
+
+        地区 
+
+        :param area: The area of this TrainTicketResult.
+        :type area: str
+        """
+        self._area = area
+
+    @property
+    def receipt_number(self):
+        """Gets the receipt_number of this TrainTicketResult.
+
+        收据编码 
+
+        :return: The receipt_number of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._receipt_number
+
+    @receipt_number.setter
+    def receipt_number(self, receipt_number):
+        """Sets the receipt_number of this TrainTicketResult.
+
+        收据编码 
+
+        :param receipt_number: The receipt_number of this TrainTicketResult.
+        :type receipt_number: str
+        """
+        self._receipt_number = receipt_number
+
+    @property
+    def amount_in_figures(self):
+        """Gets the amount_in_figures of this TrainTicketResult.
+
+        小写票据金额 
+
+        :return: The amount_in_figures of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._amount_in_figures
+
+    @amount_in_figures.setter
+    def amount_in_figures(self, amount_in_figures):
+        """Sets the amount_in_figures of this TrainTicketResult.
+
+        小写票据金额 
+
+        :param amount_in_figures: The amount_in_figures of this TrainTicketResult.
+        :type amount_in_figures: str
+        """
+        self._amount_in_figures = amount_in_figures
+
+    @property
+    def amount_in_words(self):
+        """Gets the amount_in_words of this TrainTicketResult.
+
+        大写票据金额 
+
+        :return: The amount_in_words of this TrainTicketResult.
+        :rtype: str
+        """
+        return self._amount_in_words
+
+    @amount_in_words.setter
+    def amount_in_words(self, amount_in_words):
+        """Sets the amount_in_words of this TrainTicketResult.
+
+        大写票据金额 
+
+        :param amount_in_words: The amount_in_words of this TrainTicketResult.
+        :type amount_in_words: str
+        """
+        self._amount_in_words = amount_in_words
 
     @property
     def confidence(self):

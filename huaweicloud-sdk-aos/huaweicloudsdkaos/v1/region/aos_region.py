@@ -36,6 +36,8 @@ class AosRegion:
                         "https://rfs.la-north-2.myhuaweicloud.com")
     AF_SOUTH_1 = Region("af-south-1",
                         "https://rfs.af-south-1.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://aos.myhuaweicloud.eu")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -53,6 +55,7 @@ class AosRegion:
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
         "af-south-1": AF_SOUTH_1,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod

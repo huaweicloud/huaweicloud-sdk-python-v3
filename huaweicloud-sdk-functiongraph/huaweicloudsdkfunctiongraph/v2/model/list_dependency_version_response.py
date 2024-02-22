@@ -18,7 +18,7 @@ class ListDependencyVersionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'dependencies': 'list[ListDependenciesResult]',
+        'dependencies': 'list[ListDependencyVersionsResult]',
         'next_marker': 'int',
         'count': 'int'
     }
@@ -35,7 +35,7 @@ class ListDependencyVersionResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param dependencies: 依赖包列表
-        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
+        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependencyVersionsResult`]
         :param next_marker: 下次读取位置
         :type next_marker: int
         :param count: 依赖包总数
@@ -63,7 +63,7 @@ class ListDependencyVersionResponse(SdkResponse):
         依赖包列表
 
         :return: The dependencies of this ListDependencyVersionResponse.
-        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependencyVersionsResult`]
         """
         return self._dependencies
 
@@ -74,7 +74,7 @@ class ListDependencyVersionResponse(SdkResponse):
         依赖包列表
 
         :param dependencies: The dependencies of this ListDependencyVersionResponse.
-        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
+        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependencyVersionsResult`]
         """
         self._dependencies = dependencies
 

@@ -179,7 +179,7 @@ class MonthlyBillRes:
         :type parent_resource_id: str
         :param trade_id: 订单ID 或 交易ID。 账单类型为1，2，3，4，8时为订单ID；其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)。
         :type trade_id: str
-        :param id: 唯一标识。 账单类型为1，2，3，4，8时，存在唯一标识其它场景下，不存在唯一标识。 该字段为预留字段。
+        :param id: 唯一标识。 该字段为预留字段。
         :type id: str
         :param product_spec_desc: 产品的规格描述。
         :type product_spec_desc: str
@@ -1065,7 +1065,7 @@ class MonthlyBillRes:
     def id(self):
         """Gets the id of this MonthlyBillRes.
 
-        唯一标识。 账单类型为1，2，3，4，8时，存在唯一标识其它场景下，不存在唯一标识。 该字段为预留字段。
+        唯一标识。 该字段为预留字段。
 
         :return: The id of this MonthlyBillRes.
         :rtype: str
@@ -1076,7 +1076,7 @@ class MonthlyBillRes:
     def id(self, id):
         """Sets the id of this MonthlyBillRes.
 
-        唯一标识。 账单类型为1，2，3，4，8时，存在唯一标识其它场景下，不存在唯一标识。 该字段为预留字段。
+        唯一标识。 该字段为预留字段。
 
         :param id: The id of this MonthlyBillRes.
         :type id: str

@@ -17,6 +17,8 @@ class FuncVpc:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
+        'namespace': 'str',
         'vpc_name': 'str',
         'vpc_id': 'str',
         'subnet_name': 'str',
@@ -27,6 +29,8 @@ class FuncVpc:
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
+        'namespace': 'namespace',
         'vpc_name': 'vpc_name',
         'vpc_id': 'vpc_id',
         'subnet_name': 'subnet_name',
@@ -36,11 +40,15 @@ class FuncVpc:
         'security_groups': 'security_groups'
     }
 
-    def __init__(self, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None, security_groups=None):
+    def __init__(self, domain_id=None, namespace=None, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None, security_groups=None):
         """FuncVpc
 
         The model defined in huaweicloud sdk
 
+        :param domain_id: 域名id。
+        :type domain_id: str
+        :param namespace: 租户的project id。
+        :type namespace: str
         :param vpc_name: 虚拟私有云名称。
         :type vpc_name: str
         :param vpc_id: 虚拟私有云唯一标识。
@@ -59,6 +67,8 @@ class FuncVpc:
         
         
 
+        self._domain_id = None
+        self._namespace = None
         self._vpc_name = None
         self._vpc_id = None
         self._subnet_name = None
@@ -68,6 +78,10 @@ class FuncVpc:
         self._security_groups = None
         self.discriminator = None
 
+        if domain_id is not None:
+            self.domain_id = domain_id
+        if namespace is not None:
+            self.namespace = namespace
         if vpc_name is not None:
             self.vpc_name = vpc_name
         self.vpc_id = vpc_id
@@ -80,6 +94,50 @@ class FuncVpc:
             self.gateway = gateway
         if security_groups is not None:
             self.security_groups = security_groups
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this FuncVpc.
+
+        域名id。
+
+        :return: The domain_id of this FuncVpc.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this FuncVpc.
+
+        域名id。
+
+        :param domain_id: The domain_id of this FuncVpc.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def namespace(self):
+        """Gets the namespace of this FuncVpc.
+
+        租户的project id。
+
+        :return: The namespace of this FuncVpc.
+        :rtype: str
+        """
+        return self._namespace
+
+    @namespace.setter
+    def namespace(self, namespace):
+        """Sets the namespace of this FuncVpc.
+
+        租户的project id。
+
+        :param namespace: The namespace of this FuncVpc.
+        :type namespace: str
+        """
+        self._namespace = namespace
 
     @property
     def vpc_name(self):

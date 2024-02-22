@@ -7,7 +7,7 @@ class SecMasterRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("SECMASTER")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://sa.myhuaweicloud.com")
+                        "https://secmaster.cn-north-4.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
                         "https://secmaster.cn-east-3.myhuaweicloud.com")
     CN_SOUTH_1 = Region("cn-south-1",

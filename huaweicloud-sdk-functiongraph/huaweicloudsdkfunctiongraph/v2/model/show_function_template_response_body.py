@@ -81,7 +81,7 @@ class ShowFunctionTemplateResponseBody:
         :type code_type: str
         :param code: 代码文件
         :type code: str
-        :param timeout: 超时时间
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
         :param memory_size: 内存大小
         :type memory_size: int
@@ -362,7 +362,7 @@ class ShowFunctionTemplateResponseBody:
     def timeout(self):
         """Gets the timeout of this ShowFunctionTemplateResponseBody.
 
-        超时时间
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :return: The timeout of this ShowFunctionTemplateResponseBody.
         :rtype: int
@@ -373,7 +373,7 @@ class ShowFunctionTemplateResponseBody:
     def timeout(self, timeout):
         """Sets the timeout of this ShowFunctionTemplateResponseBody.
 
-        超时时间
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :param timeout: The timeout of this ShowFunctionTemplateResponseBody.
         :type timeout: int

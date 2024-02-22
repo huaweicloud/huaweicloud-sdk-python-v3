@@ -46,7 +46,10 @@ class UpdateFunctionConfigRequestBody:
         'enable_auth_in_header': 'bool',
         'domain_names': 'str',
         'restore_hook_handler': 'str',
-        'restore_hook_timeout': 'int'
+        'restore_hook_timeout': 'int',
+        'heartbeat_handler': 'str',
+        'enable_class_isolation': 'bool',
+        'gpu_type': 'str'
     }
 
     attribute_map = {
@@ -79,10 +82,13 @@ class UpdateFunctionConfigRequestBody:
         'enable_auth_in_header': 'enable_auth_in_header',
         'domain_names': 'domain_names',
         'restore_hook_handler': 'restore_hook_handler',
-        'restore_hook_timeout': 'restore_hook_timeout'
+        'restore_hook_timeout': 'restore_hook_timeout',
+        'heartbeat_handler': 'heartbeat_handler',
+        'enable_class_isolation': 'enable_class_isolation',
+        'gpu_type': 'gpu_type'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None):
         """UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -91,7 +97,7 @@ class UpdateFunctionConfigRequestBody:
         :type func_name: str
         :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
         :type runtime: str
-        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
         :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
         :type handler: str
@@ -103,9 +109,9 @@ class UpdateFunctionConfigRequestBody:
         :type user_data: str
         :param encrypted_user_data: 用户自定义的name/value信息，用于需要加密的配置。
         :type encrypted_user_data: str
-        :param xrole: 函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :param xrole: 函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
         :type xrole: str
-        :param app_xrole: 函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :param app_xrole: 函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
         :type app_xrole: str
         :param description: 函数描述。
         :type description: str
@@ -119,15 +125,15 @@ class UpdateFunctionConfigRequestBody:
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         :param extend_config: 函数扩展配置。
         :type extend_config: str
-        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
         :type initializer_handler: str
-        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
         :type initializer_timeout: int
         :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
         :type pre_stop_handler: str
         :param pre_stop_timeout: 初始化超时时间，超时函数将被强行停止，范围1～90秒。
         :type pre_stop_timeout: int
-        :param ephemeral_storage: 临时存储大小, 默认512M, 支持配置10G。
+        :param ephemeral_storage: 临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
         :type ephemeral_storage: int
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
         :type enterprise_project_id: str
@@ -147,6 +153,12 @@ class UpdateFunctionConfigRequestBody:
         :type restore_hook_handler: str
         :param restore_hook_timeout: 快照冷启动Restore Hook的超时时间，超时函数将被强行停止，范围1～300秒。
         :type restore_hook_timeout: int
+        :param heartbeat_handler: 心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+        :type heartbeat_handler: str
+        :param enable_class_isolation: 类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+        :type enable_class_isolation: bool
+        :param gpu_type: 显卡类型。
+        :type gpu_type: str
         """
         
         
@@ -181,6 +193,9 @@ class UpdateFunctionConfigRequestBody:
         self._domain_names = None
         self._restore_hook_handler = None
         self._restore_hook_timeout = None
+        self._heartbeat_handler = None
+        self._enable_class_isolation = None
+        self._gpu_type = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -238,6 +253,12 @@ class UpdateFunctionConfigRequestBody:
             self.restore_hook_handler = restore_hook_handler
         if restore_hook_timeout is not None:
             self.restore_hook_timeout = restore_hook_timeout
+        if heartbeat_handler is not None:
+            self.heartbeat_handler = heartbeat_handler
+        if enable_class_isolation is not None:
+            self.enable_class_isolation = enable_class_isolation
+        if gpu_type is not None:
+            self.gpu_type = gpu_type
 
     @property
     def func_name(self):
@@ -287,7 +308,7 @@ class UpdateFunctionConfigRequestBody:
     def timeout(self):
         """Gets the timeout of this UpdateFunctionConfigRequestBody.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :return: The timeout of this UpdateFunctionConfigRequestBody.
         :rtype: int
@@ -298,7 +319,7 @@ class UpdateFunctionConfigRequestBody:
     def timeout(self, timeout):
         """Sets the timeout of this UpdateFunctionConfigRequestBody.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :param timeout: The timeout of this UpdateFunctionConfigRequestBody.
         :type timeout: int
@@ -419,7 +440,7 @@ class UpdateFunctionConfigRequestBody:
     def xrole(self):
         """Gets the xrole of this UpdateFunctionConfigRequestBody.
 
-        函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
         :return: The xrole of this UpdateFunctionConfigRequestBody.
         :rtype: str
@@ -430,7 +451,7 @@ class UpdateFunctionConfigRequestBody:
     def xrole(self, xrole):
         """Sets the xrole of this UpdateFunctionConfigRequestBody.
 
-        函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
         :param xrole: The xrole of this UpdateFunctionConfigRequestBody.
         :type xrole: str
@@ -441,7 +462,7 @@ class UpdateFunctionConfigRequestBody:
     def app_xrole(self):
         """Gets the app_xrole of this UpdateFunctionConfigRequestBody.
 
-        函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
         :return: The app_xrole of this UpdateFunctionConfigRequestBody.
         :rtype: str
@@ -452,7 +473,7 @@ class UpdateFunctionConfigRequestBody:
     def app_xrole(self, app_xrole):
         """Sets the app_xrole of this UpdateFunctionConfigRequestBody.
 
-        函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
         :param app_xrole: The app_xrole of this UpdateFunctionConfigRequestBody.
         :type app_xrole: str
@@ -579,7 +600,7 @@ class UpdateFunctionConfigRequestBody:
     def initializer_handler(self):
         """Gets the initializer_handler of this UpdateFunctionConfigRequestBody.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :return: The initializer_handler of this UpdateFunctionConfigRequestBody.
         :rtype: str
@@ -590,7 +611,7 @@ class UpdateFunctionConfigRequestBody:
     def initializer_handler(self, initializer_handler):
         """Sets the initializer_handler of this UpdateFunctionConfigRequestBody.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :param initializer_handler: The initializer_handler of this UpdateFunctionConfigRequestBody.
         :type initializer_handler: str
@@ -601,7 +622,7 @@ class UpdateFunctionConfigRequestBody:
     def initializer_timeout(self):
         """Gets the initializer_timeout of this UpdateFunctionConfigRequestBody.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :return: The initializer_timeout of this UpdateFunctionConfigRequestBody.
         :rtype: int
@@ -612,7 +633,7 @@ class UpdateFunctionConfigRequestBody:
     def initializer_timeout(self, initializer_timeout):
         """Sets the initializer_timeout of this UpdateFunctionConfigRequestBody.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :param initializer_timeout: The initializer_timeout of this UpdateFunctionConfigRequestBody.
         :type initializer_timeout: int
@@ -667,7 +688,7 @@ class UpdateFunctionConfigRequestBody:
     def ephemeral_storage(self):
         """Gets the ephemeral_storage of this UpdateFunctionConfigRequestBody.
 
-        临时存储大小, 默认512M, 支持配置10G。
+        临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
         :return: The ephemeral_storage of this UpdateFunctionConfigRequestBody.
         :rtype: int
@@ -678,7 +699,7 @@ class UpdateFunctionConfigRequestBody:
     def ephemeral_storage(self, ephemeral_storage):
         """Sets the ephemeral_storage of this UpdateFunctionConfigRequestBody.
 
-        临时存储大小, 默认512M, 支持配置10G。
+        临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
         :param ephemeral_storage: The ephemeral_storage of this UpdateFunctionConfigRequestBody.
         :type ephemeral_storage: int
@@ -874,6 +895,72 @@ class UpdateFunctionConfigRequestBody:
         :type restore_hook_timeout: int
         """
         self._restore_hook_timeout = restore_hook_timeout
+
+    @property
+    def heartbeat_handler(self):
+        """Gets the heartbeat_handler of this UpdateFunctionConfigRequestBody.
+
+        心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+
+        :return: The heartbeat_handler of this UpdateFunctionConfigRequestBody.
+        :rtype: str
+        """
+        return self._heartbeat_handler
+
+    @heartbeat_handler.setter
+    def heartbeat_handler(self, heartbeat_handler):
+        """Sets the heartbeat_handler of this UpdateFunctionConfigRequestBody.
+
+        心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+
+        :param heartbeat_handler: The heartbeat_handler of this UpdateFunctionConfigRequestBody.
+        :type heartbeat_handler: str
+        """
+        self._heartbeat_handler = heartbeat_handler
+
+    @property
+    def enable_class_isolation(self):
+        """Gets the enable_class_isolation of this UpdateFunctionConfigRequestBody.
+
+        类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+
+        :return: The enable_class_isolation of this UpdateFunctionConfigRequestBody.
+        :rtype: bool
+        """
+        return self._enable_class_isolation
+
+    @enable_class_isolation.setter
+    def enable_class_isolation(self, enable_class_isolation):
+        """Sets the enable_class_isolation of this UpdateFunctionConfigRequestBody.
+
+        类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+
+        :param enable_class_isolation: The enable_class_isolation of this UpdateFunctionConfigRequestBody.
+        :type enable_class_isolation: bool
+        """
+        self._enable_class_isolation = enable_class_isolation
+
+    @property
+    def gpu_type(self):
+        """Gets the gpu_type of this UpdateFunctionConfigRequestBody.
+
+        显卡类型。
+
+        :return: The gpu_type of this UpdateFunctionConfigRequestBody.
+        :rtype: str
+        """
+        return self._gpu_type
+
+    @gpu_type.setter
+    def gpu_type(self, gpu_type):
+        """Sets the gpu_type of this UpdateFunctionConfigRequestBody.
+
+        显卡类型。
+
+        :param gpu_type: The gpu_type of this UpdateFunctionConfigRequestBody.
+        :type gpu_type: str
+        """
+        self._gpu_type = gpu_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

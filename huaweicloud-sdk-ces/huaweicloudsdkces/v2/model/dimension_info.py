@@ -48,10 +48,8 @@ class DimensionInfo:
         self._values = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if filter_type is not None:
-            self.filter_type = filter_type
+        self.name = name
+        self.filter_type = filter_type
         if values is not None:
             self.values = values
 

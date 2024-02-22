@@ -20,8 +20,8 @@ class ServerDetails:
         'id': 'str',
         'user_id': 'str',
         'name': 'str',
-        'created': 'datetime',
-        'updated': 'datetime',
+        'created': 'str',
+        'updated': 'str',
         'tenant_id': 'str',
         'host_id': 'str',
         'addresses': 'dict(str, list[AddressInfo])',
@@ -122,9 +122,9 @@ class ServerDetails:
         :param name: 裸金属服务器名称
         :type name: str
         :param created: 裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
-        :type created: datetime
+        :type created: str
         :param updated: 裸金属服务器更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
-        :type updated: datetime
+        :type updated: str
         :param tenant_id: 裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
         :type tenant_id: str
         :param host_id: 裸金属服务器对应的主机ID
@@ -410,7 +410,7 @@ class ServerDetails:
         裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
         :return: The created of this ServerDetails.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created
 
@@ -421,7 +421,7 @@ class ServerDetails:
         裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
         :param created: The created of this ServerDetails.
-        :type created: datetime
+        :type created: str
         """
         self._created = created
 
@@ -432,7 +432,7 @@ class ServerDetails:
         裸金属服务器更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
 
         :return: The updated of this ServerDetails.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated
 
@@ -443,7 +443,7 @@ class ServerDetails:
         裸金属服务器更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
 
         :param updated: The updated of this ServerDetails.
-        :type updated: datetime
+        :type updated: str
         """
         self._updated = updated
 

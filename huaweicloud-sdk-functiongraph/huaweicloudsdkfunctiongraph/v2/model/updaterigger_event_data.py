@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class TriggerEventData:
+class UpdateriggerEventData:
 
     """
     Attributes:
@@ -31,7 +31,7 @@ class TriggerEventData:
     }
 
     def __init__(self, is_serial=None, max_fetch_bytes=None, polling_interval=None, polling_unit=None):
-        """TriggerEventData
+        """UpdateriggerEventData
 
         The model defined in huaweicloud sdk
 
@@ -64,88 +64,88 @@ class TriggerEventData:
 
     @property
     def is_serial(self):
-        """Gets the is_serial of this TriggerEventData.
+        """Gets the is_serial of this UpdateriggerEventData.
 
         串行处理数据
 
-        :return: The is_serial of this TriggerEventData.
+        :return: The is_serial of this UpdateriggerEventData.
         :rtype: bool
         """
         return self._is_serial
 
     @is_serial.setter
     def is_serial(self, is_serial):
-        """Sets the is_serial of this TriggerEventData.
+        """Sets the is_serial of this UpdateriggerEventData.
 
         串行处理数据
 
-        :param is_serial: The is_serial of this TriggerEventData.
+        :param is_serial: The is_serial of this UpdateriggerEventData.
         :type is_serial: bool
         """
         self._is_serial = is_serial
 
     @property
     def max_fetch_bytes(self):
-        """Gets the max_fetch_bytes of this TriggerEventData.
+        """Gets the max_fetch_bytes of this UpdateriggerEventData.
 
         最大字节数
 
-        :return: The max_fetch_bytes of this TriggerEventData.
+        :return: The max_fetch_bytes of this UpdateriggerEventData.
         :rtype: int
         """
         return self._max_fetch_bytes
 
     @max_fetch_bytes.setter
     def max_fetch_bytes(self, max_fetch_bytes):
-        """Sets the max_fetch_bytes of this TriggerEventData.
+        """Sets the max_fetch_bytes of this UpdateriggerEventData.
 
         最大字节数
 
-        :param max_fetch_bytes: The max_fetch_bytes of this TriggerEventData.
+        :param max_fetch_bytes: The max_fetch_bytes of this UpdateriggerEventData.
         :type max_fetch_bytes: int
         """
         self._max_fetch_bytes = max_fetch_bytes
 
     @property
     def polling_interval(self):
-        """Gets the polling_interval of this TriggerEventData.
+        """Gets the polling_interval of this UpdateriggerEventData.
 
         拉取周期
 
-        :return: The polling_interval of this TriggerEventData.
+        :return: The polling_interval of this UpdateriggerEventData.
         :rtype: int
         """
         return self._polling_interval
 
     @polling_interval.setter
     def polling_interval(self, polling_interval):
-        """Sets the polling_interval of this TriggerEventData.
+        """Sets the polling_interval of this UpdateriggerEventData.
 
         拉取周期
 
-        :param polling_interval: The polling_interval of this TriggerEventData.
+        :param polling_interval: The polling_interval of this UpdateriggerEventData.
         :type polling_interval: int
         """
         self._polling_interval = polling_interval
 
     @property
     def polling_unit(self):
-        """Gets the polling_unit of this TriggerEventData.
+        """Gets the polling_unit of this UpdateriggerEventData.
 
         拉取周期单位
 
-        :return: The polling_unit of this TriggerEventData.
+        :return: The polling_unit of this UpdateriggerEventData.
         :rtype: str
         """
         return self._polling_unit
 
     @polling_unit.setter
     def polling_unit(self, polling_unit):
-        """Sets the polling_unit of this TriggerEventData.
+        """Sets the polling_unit of this UpdateriggerEventData.
 
         拉取周期单位
 
-        :param polling_unit: The polling_unit of this TriggerEventData.
+        :param polling_unit: The polling_unit of this UpdateriggerEventData.
         :type polling_unit: str
         """
         self._polling_unit = polling_unit
@@ -192,7 +192,7 @@ class TriggerEventData:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TriggerEventData):
+        if not isinstance(other, UpdateriggerEventData):
             return False
 
         return self.__dict__ == other.__dict__
