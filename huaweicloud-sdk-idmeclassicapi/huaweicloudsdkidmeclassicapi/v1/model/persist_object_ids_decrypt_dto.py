@@ -18,7 +18,7 @@ class PersistObjectIdsDecryptDTO:
 
     openapi_types = {
         'decrypt': 'bool',
-        'ids': 'list[str]'
+        'ids': 'list[int]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class PersistObjectIdsDecryptDTO:
         :param decrypt: 是否加密。 - true：加密。 - false：不加密。
         :type decrypt: bool
         :param ids: ID列表。
-        :type ids: list[str]
+        :type ids: list[int]
         """
         
         
@@ -76,7 +76,7 @@ class PersistObjectIdsDecryptDTO:
         ID列表。
 
         :return: The ids of this PersistObjectIdsDecryptDTO.
-        :rtype: list[str]
+        :rtype: list[int]
         """
         return self._ids
 
@@ -87,7 +87,7 @@ class PersistObjectIdsDecryptDTO:
         ID列表。
 
         :param ids: The ids of this PersistObjectIdsDecryptDTO.
-        :type ids: list[str]
+        :type ids: list[int]
         """
         self._ids = ids
 

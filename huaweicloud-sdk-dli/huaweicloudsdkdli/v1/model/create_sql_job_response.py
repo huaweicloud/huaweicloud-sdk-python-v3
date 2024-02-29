@@ -23,7 +23,7 @@ class CreateSqlJobResponse(SdkResponse):
         'job_id': 'str',
         'job_type': 'str',
         'schema': 'list[object]',
-        'rows': 'list[list[str]]',
+        'rows': 'list[list[object]]',
         'job_mode': 'str'
     }
 
@@ -53,7 +53,7 @@ class CreateSqlJobResponse(SdkResponse):
         :param schema: 当语句类型为DDL时，返回其结果的列名称及类型。
         :type schema: list[object]
         :param rows: 当语句类型为DDL时，直接返回其执行结果。
-        :type rows: list[list[str]]
+        :type rows: list[list[object]]
         :param job_mode: 表示作业执行方式，是同步还是异步的
         :type job_mode: str
         """
@@ -201,7 +201,7 @@ class CreateSqlJobResponse(SdkResponse):
         当语句类型为DDL时，直接返回其执行结果。
 
         :return: The rows of this CreateSqlJobResponse.
-        :rtype: list[list[str]]
+        :rtype: list[list[object]]
         """
         return self._rows
 
@@ -212,7 +212,7 @@ class CreateSqlJobResponse(SdkResponse):
         当语句类型为DDL时，直接返回其执行结果。
 
         :param rows: The rows of this CreateSqlJobResponse.
-        :type rows: list[list[str]]
+        :type rows: list[list[object]]
         """
         self._rows = rows
 

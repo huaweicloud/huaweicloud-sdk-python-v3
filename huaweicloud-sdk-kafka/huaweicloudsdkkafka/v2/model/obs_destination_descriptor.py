@@ -65,7 +65,7 @@ class ObsDestinationDescriptor:
         :type obs_bucket_name: str
         :param obs_path:  存储在obs的路径，默认可以不填。  取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。  默认配置为空。 
         :type obs_path: str
-        :param partition_format:  将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。    - N/A：置空，不使用日期时间目录。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 &gt; 11 &gt; 10 &gt; 14 &gt; 49”，“2017”表示最外层文件夹。  默认值：空  &gt; 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
+        :param partition_format:  将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 &gt; 11 &gt; 10 &gt; 14 &gt; 49”，“2017”表示最外层文件夹。  &gt; 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
         :type partition_format: str
         :param record_delimiter:  转储文件的记录分隔符，用于分隔写入转储文件的用户数据。  取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
         :type record_delimiter: str
@@ -98,8 +98,7 @@ class ObsDestinationDescriptor:
         self.obs_bucket_name = obs_bucket_name
         if obs_path is not None:
             self.obs_path = obs_path
-        if partition_format is not None:
-            self.partition_format = partition_format
+        self.partition_format = partition_format
         if record_delimiter is not None:
             self.record_delimiter = record_delimiter
         self.deliver_time_interval = deliver_time_interval
@@ -284,7 +283,7 @@ class ObsDestinationDescriptor:
     def partition_format(self):
         """Gets the partition_format of this ObsDestinationDescriptor.
 
-         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。    - N/A：置空，不使用日期时间目录。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空  > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
+         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
 
         :return: The partition_format of this ObsDestinationDescriptor.
         :rtype: str
@@ -295,7 +294,7 @@ class ObsDestinationDescriptor:
     def partition_format(self, partition_format):
         """Sets the partition_format of this ObsDestinationDescriptor.
 
-         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。    - N/A：置空，不使用日期时间目录。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空  > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
+         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。      - yyyy：年      - yyyy/MM：年/月      - yyyy/MM/dd：年/月/日      - yyyy/MM/dd/HH：年/月/日/时      - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
 
         :param partition_format: The partition_format of this ObsDestinationDescriptor.
         :type partition_format: str

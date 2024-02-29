@@ -1,3 +1,482 @@
+# 3.1.84 2024-02-29
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAddressSets**
+    - changes of request param
+      - `+ query_address_set_type`
+    - changes of response param
+      - `+ data.records.object_id`
+      - `+ data.records.address_set_type`
+  - **UpdateAclRuleOrder**
+    - changes of response param
+      - `+ data.name`
+  - **AddBlackWhiteList**
+    - changes of response param
+      - `+ data.name`
+  - **UpdateBlackWhiteList**
+    - changes of response param
+      - `+ data.name`
+  - **DeleteBlackWhiteList**
+    - changes of response param
+      - `+ data.name`
+  - **ChangeIpsProtectMode**
+    - changes of response param
+      - `+ data.name`
+  - **AddServiceSet**
+    - changes of response param
+      - `+ data.name`
+  - **ListServiceSetDetail**
+    - changes of response param
+      - `+ data.service_set_type`
+  - **UpdateServiceSet**
+    - changes of response param
+      - `+ data.name`
+  - **DeleteServiceSet**
+    - changes of response param
+      - `+ data.name`
+  - **DeleteServiceItem**
+    - changes of response param
+      - `+ data.name`
+  - **CreateFirewall**
+    - changes of request param
+      - `- flavor.version: enum value [Platinum]`
+    - changes of response param
+      - `- data.flavor.version: enum value [Platinum]`
+  - **ChangeEipStatus**
+    - changes of response param
+      - `+ data.id`
+  - **DeleteAddressItem**
+    - changes of response param
+      - `+ data.name`
+  - **AddAddressSet**
+    - changes of response param
+      - `+ data.name`
+  - **ListAddressSetDetail**
+    - changes of request param
+      - `+ query_address_set_type`
+    - changes of response param
+      - `+ data.address_set_type`
+  - **UpdateAddressSet**
+    - changes of response param
+      - `* data: object<IdObject> -> object<UpdateAddressSetResponseData>`
+  - **DeleteAddressSet**
+    - changes of response param
+      - `+ data.name`
+  - **CreateEastWestFirewall**
+    - changes of response param
+      - `+ data.name`
+  - **ListEastWestFirewall**
+    - changes of response param
+      - `+ data.protect_infos.status`
+  - **AddAclRule**
+    - changes of response param
+      - `+ data.rules.name`
+  - **DeleteAclRule**
+    - changes of response param
+      - `+ data.name`
+  - **UpdateAclRule**
+    - changes of response param
+      - `+ data.name`
+  - **ListAclRules**
+    - changes of response param
+      - `+ data.records.created_date`
+      - `+ data.records.last_open_time`
+  - **AddServiceItems**
+    - changes of response param
+      - `+ data.items.name`
+  - **AddAddressItem**
+    - changes of response param
+      - `+ data.items.name`
+  - **ListServiceSets**
+    - changes of response param
+      - `+ data.records.service_set_type`
+      - `+ data.records.project_id`
+      - `+ data.records.protocols`
+  - **ListProtectedVpcs**
+    - changes of response param
+      - `+ data.total_assets`
+  - **ListFirewallDetail**
+    - changes of response param
+      - `+ data.records.is_available_obs`
+      - `+ data.records.is_support_threat_tags`
+  - **ListFirewallList**
+    - changes of response param
+      - `+ is_support_postpaid`
+      - `+ is_support_buy_professional`
+      - `+ has_ndr`
+      - `+ is_support_basic_version`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPipelineDetail**
+    - changes of response param
+      - `+ sources.type`
+      - `+ sources.params`
+      - `- sources.scmType`
+      - `- sources.hookFlag`
+      - `- sources.defaultBranch`
+      - `- sources.trigger`
+      - `- sources.alias`
+      - `- sources.displayName`
+      - `- sources.repoName`
+      - `- sources.repoId`
+      - `- sources.repoOwner`
+      - `- sources.gitUrl`
+      - `- sources.webUrl`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the following APIs:
+    - `CreateOrUpdateEntities`
+    - `ListFactoryReleasePackages`
+    - `ShowFactoryPackageDetail`
+    - `DeployFactoryPackages`
+    - `CancelFactoryPackages`
+    - `ListFactoryJobInstancesByName`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **PreviewSqlJobResult**
+    - changes of response param
+      - `* rows: list<list<string>> -> list<list<object>>`
+  - **CreateFlinkSqlJobGraph**
+    - changes of request param
+      - `+ flink_version`
+  - **CreateSqlJob**
+    - changes of response param
+      - `* rows: list<list<string>> -> list<list<object>>`
+  - **CreateEnhancedConnection**
+    - changes of request param
+      - `+ elastic_resource_pools`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateProjectTracker**
+    - changes of request param
+      - `- bucket_lifecycle`
+  - **ListDrugModel**
+    - changes of response param
+      - `- models.ModelMetric`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFunctionTrigger**
+    - changes of response param
+      - `+ event_data.triggerid`
+      - `+ event_data.api_id`
+      - `+ event_data.api_name`
+      - `+ event_data.invoke_url`
+      - `+ event_data.roma_app_id`
+      - `+ event_data.db_user`
+      - `+ event_data.instance_addrs`
+      - `+ event_data.mode`
+      - `* event_data: object<TriggerEventDataRequestBody> -> object<TriggerEventDataResponseBody>`
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _Features_
+  - Support the following APIs:
+    - `ShowBatchUpdateAndCheckinUsingPost`
+    - `ShowBatchCheckoutAndUpdateUsingPost`
+    - `ShowUpdateAndCheckinUsingPost`
+    - `ShowCheckoutAndUpdateUsingPost`
+    - `ShowBatchLogicalDeleteBranchUsingPost`
+    - `ShowBatchDeleteBranchUsingPost`
+    - `ShowBatchUndoCheckoutByAdminUsingPost`
+    - `ShowUndoCheckoutByAdminUsingPost`
+    - `ShowCompareBusinessVersionUsingPost`
+    - `ShowLogicalDeleteBranchUsingPost`
+    - `ShowDeleteBranchUsingPost`
+    - `ShowLogicalDeleteLatestVersionUsingPost`
+    - `ShowDeleteLatestVersionUsingPost`
+    - `ShowBatchReviseAndUpdateUsingPost`
+    - `ShowReviseAndUpdateUsingPost`
+    - `ShowBatchReviseUsingPost`
+    - `ShowReviseUsingPost`
+    - `ShowBatchCheckinUsingPost`
+    - `ShowCheckinUsingPost`
+    - `ShowBatchUndoCheckoutUsingPost`
+    - `ShowUndoCheckoutUsingPost`
+    - `ShowBatchCheckoutUsingPost`
+    - `ShowCheckoutUsingPost`
+    - `ShowGetVersionByMasterUsingPost`
+    - `ShowGetAllVersionsUsingPost`
+    - `ShowBatchUpdateVersionUsingPost`
+    - `ShowBatchUpdateByAdminUsingPost`
+    - `ShowUpdateByAdminUsingPost`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowBatchUpdateUsingPost**
+    - changes of request param
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.id: string -> int64`
+    - changes of response param
+      - `+ data.className`
+      - `+ data.createTime`
+      - `+ data.creator`
+      - `+ data.id`
+      - `+ data.rdmDeleteFlag`
+      - `+ data.rdmExtensionType`
+      - `+ data.rdmVersion`
+      - `+ data.modifier`
+      - `+ data.lastUpdateTime`
+      - `+ data.tenant`
+      - `+ data.uniqueKey`
+      - `- data.applicationId`
+      - `- data.params`
+      - `* data: list<RDMParamVOPersistableModelUpdateDTO> -> list<PersistableModelViewDTO>`
+  - **ShowUpdateUsingPost**
+    - changes of request param
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.id: string -> int64`
+    - changes of response param
+      - `+ data.className`
+      - `+ data.createTime`
+      - `+ data.creator`
+      - `+ data.id`
+      - `+ data.rdmDeleteFlag`
+      - `+ data.rdmExtensionType`
+      - `+ data.rdmVersion`
+      - `+ data.modifier`
+      - `+ data.lastUpdateTime`
+      - `+ data.tenant`
+      - `+ data.uniqueKey`
+      - `- data.applicationId`
+      - `- data.params`
+      - `* data: list<RDMParamVOPersistableModelUpdateDTO> -> list<PersistableModelViewDTO>`
+  - **ShowBatchLogicalDeleteUsingPost**
+    - changes of request param
+      - `* params.ids: list<string> -> list<integer>`
+  - **ShowLogicalDeleteUsingPost**
+    - changes of request param
+      - `* params.id: string -> int64`
+  - **ShowBatchDeleteUsingPost**
+    - changes of request param
+      - `* params.ids: list<string> -> list<integer>`
+  - **ShowDeleteUsingPost**
+    - changes of request param
+      - `* params.id: string -> int64`
+  - **ShowSaveAsUsingPost**
+    - changes of request param
+      - `+ params.sourceEntityNumber`
+      - `+ params.needSetNullAttrs`
+      - `+ params.uniqueKey`
+      - `- params.branch`
+      - `- params.checkOutTime`
+      - `- params.checkOutUserName`
+      - `- params.description`
+      - `- params.kiaguid`
+      - `- params.master`
+      - `- params.name`
+      - `- params.securityLevel`
+      - `- params.sourceMasterId`
+      - `- params.workingCopy`
+      - `* params.id: string -> int64`
+      - `* params.sourceInstanceId: string -> int64`
+      - `* params: object<VersionModelSaveAsDTO> -> object<PersistableModelSaveAsDTO>`
+      - `* body: object<RDMParamVOVersionModelSaveAsDTO> -> object<RDMParamVOPersistableModelSaveAsDTO>`
+  - **ShowSaveAllUsingPost**
+    - changes of request param
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.lifecycleTemplate`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.creator: string -> int64`
+      - `* params.id: string -> int64`
+  - **ShowBatchGetUsingPost**
+    - changes of request param
+      - `* params.ids: list<string> -> list<integer>`
+  - **ShowGetUsingPost**
+    - changes of request param
+      - `* params.id: string -> int64`
+  - **ShowBatchCreateUsingPost**
+    - changes of request param
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.lifecycleTemplate`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.id: string -> int64`
+    - changes of response param
+      - `* data.preVersionId: int64 -> string`
+  - **ShowCreateUsingPost**
+    - changes of request param
+      - `+ params.uniqueKey`
+      - `- params.branch`
+      - `- params.checkOutTime`
+      - `- params.checkOutUserName`
+      - `- params.description`
+      - `- params.kiaguid`
+      - `- params.master`
+      - `- params.name`
+      - `- params.securityLevel`
+      - `- params.workingCopy`
+      - `* params.id: string -> int64`
+      - `* params: object<VersionModelCreateDTO> -> object<PersistableModelCreateDTO>`
+      - `* body: object<RDMParamVOVersionModelCreateDTO> -> object<RDMParamVOPersistableModelCreateDTO>`
+    - changes of response param
+      - `* data.preVersionId: int64 -> string`
+  - **ShowSaveUsingPost**
+    - changes of request param
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.lifecycleTemplate`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.id: string -> int64`
+  - **ShowUpdateByConditionUsingPost**
+    - changes of request param
+      - `- params.updateDTO.aclEntry`
+      - `- params.updateDTO.clsAttrs`
+      - `- params.updateDTO.disableFlag`
+      - `- params.updateDTO.extAttrMap`
+      - `- params.updateDTO.extAttrs`
+      - `- params.updateDTO.folder`
+      - `- params.updateDTO.lifecycleState`
+      - `- params.updateDTO.owner`
+      - `- params.updateDTO.parentNode`
+      - `* params.updateDTO.id: string -> int64`
+    - changes of response param
+      - `+ data.className`
+      - `+ data.createTime`
+      - `+ data.creator`
+      - `+ data.id`
+      - `+ data.rdmDeleteFlag`
+      - `+ data.rdmExtensionType`
+      - `+ data.rdmVersion`
+      - `+ data.modifier`
+      - `+ data.lastUpdateTime`
+      - `+ data.tenant`
+      - `+ data.uniqueKey`
+      - `- data.applicationId`
+      - `- data.params`
+      - `* data: list<RDMParamVOPersistableModelUpdateDTO> -> list<PersistableModelViewDTO>`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRule**
+    - changes of response param
+      - `+ actions.smn_forwarding.message_template_name`
+  - **UpdateRule**
+    - changes of request param
+      - `+ actions.smn_forwarding.message_template_name`
+    - changes of response param
+      - `+ actions.smn_forwarding.message_template_name`
+  - **CreateRule**
+    - changes of request param
+      - `+ actions.smn_forwarding.message_template_name`
+    - changes of response param
+      - `+ actions.smn_forwarding.message_template_name`
+  - **ListRules**
+    - changes of response param
+      - `+ rules.actions.smn_forwarding.message_template_name`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the following APIs:
+    - `ListConnectorTasks`
+    - `CreateConnectorTask`
+    - `ShowConnectorTask`
+    - `DeleteConnectorTask`
+    - `PauseConnectorTask`
+    - `ResumeConnectorTask`
+    - `RestartConnectorTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstance**
+    - changes of response param
+      - `+ connector_node_num`
+  - **CreateSinkTask**
+    - changes of request param
+      - `+ obs_destination_descriptor.partition_format: enum value [yyyy,yyyy/MM,yyyy/MM/dd,yyyy/MM/dd/HH,yyyy/MM/dd/HH/mm]`
+  - **ListInstances**
+    - changes of response param
+      - `+ connector_node_num`
+      - `+ instances.connector_node_num`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateLogStream**
+    - changes of request param
+      - `+ log_stream_name_alias`
+      - `+ enterprise_project_name`
+
 # 3.1.83 2024-02-22
 
 ### HuaweiCloud SDK BSSINTL

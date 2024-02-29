@@ -980,6 +980,73 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def cancel_factory_packages_async(self, request):
+        """撤销任务包
+
+        撤销任务包
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelFactoryPackages
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CancelFactoryPackagesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CancelFactoryPackagesResponse`
+        """
+        http_info = self._cancel_factory_packages_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_factory_packages_async_invoker(self, request):
+        http_info = self._cancel_factory_packages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_factory_packages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/release-packages/unpack",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelFactoryPackagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_catalog_async(self, request):
         """修改流程架构
 
@@ -2319,9 +2386,9 @@ class DataArtsStudioAsyncClient(Client):
         return http_info
 
     def create_factory_supplement_data_instance_async(self, request):
-        """创建补数据实例的接口
+        """创建补数据实例
 
-        创建一个补数据实例
+        创建补数据实例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2492,6 +2559,73 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_or_update_entities_async(self, request):
+        """创建或修改资产(邀测)
+
+        创建或修改资产，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOrUpdateEntities
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateOrUpdateEntitiesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateOrUpdateEntitiesResponse`
+        """
+        http_info = self._create_or_update_entities_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_or_update_entities_async_invoker(self, request):
+        http_info = self._create_or_update_entities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_or_update_entities_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/datamap/entities",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrUpdateEntitiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
 
         form_params = {}
 
@@ -4851,6 +4985,73 @@ class DataArtsStudioAsyncClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def deploy_factory_packages_async(self, request):
+        """发布任务包
+
+        发布任务包
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeployFactoryPackages
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeployFactoryPackagesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeployFactoryPackagesResponse`
+        """
+        http_info = self._deploy_factory_packages_http_info(request)
+        return self._call_api(**http_info)
+
+    def deploy_factory_packages_async_invoker(self, request):
+        http_info = self._deploy_factory_packages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _deploy_factory_packages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/release-packages/deploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeployFactoryPackagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -8015,6 +8216,89 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def list_factory_job_instances_by_name_async(self, request):
+        """查询指定作业的实例列表
+
+        查询指定作业的实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFactoryJobInstancesByName
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryJobInstancesByNameRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryJobInstancesByNameResponse`
+        """
+        http_info = self._list_factory_job_instances_by_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_job_instances_by_name_async_invoker(self, request):
+        http_info = self._list_factory_job_instances_by_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_factory_job_instances_by_name_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/jobs/{job_name}/instances/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryJobInstancesByNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_name' in local_var_params:
+            path_params['job_name'] = local_var_params['job_name']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'min_plan_time' in local_var_params:
+            query_params.append(('min_plan_time', local_var_params['min_plan_time']))
+        if 'max_plan_time' in local_var_params:
+            query_params.append(('max_plan_time', local_var_params['max_plan_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'force_success' in local_var_params:
+            query_params.append(('force_success', local_var_params['force_success']))
+        if 'ignore_success' in local_var_params:
+            query_params.append(('ignore_success', local_var_params['ignore_success']))
+        if 'instance_type' in local_var_params:
+            query_params.append(('instance_type', local_var_params['instance_type']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_factory_jobs_async(self, request):
         """查询作业列表
 
@@ -8076,6 +8360,73 @@ class DataArtsStudioAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_factory_release_packages_async(self, request):
+        """查询发布包列表
+
+        查询发布包列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFactoryReleasePackages
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryReleasePackagesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryReleasePackagesResponse`
+        """
+        http_info = self._list_factory_release_packages_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_release_packages_async_invoker(self, request):
+        http_info = self._list_factory_release_packages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_factory_release_packages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/release-packages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryReleasePackagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -13595,10 +13946,77 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
-    def show_factory_supplement_data_async(self, request):
-        """查询所有的补数据实例
+    def show_factory_package_detail_async(self, request):
+        """查询指定发布包详情
 
-        查询所有的补数据实例
+        查询指定发布包详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFactoryPackageDetail
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryPackageDetailRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryPackageDetailResponse`
+        """
+        http_info = self._show_factory_package_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_factory_package_detail_async_invoker(self, request):
+        http_info = self._show_factory_package_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_factory_package_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/release-packages/{package_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactoryPackageDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_factory_supplement_data_async(self, request):
+        """查询补数据实例
+
+        查询补数据实例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15613,9 +16031,9 @@ class DataArtsStudioAsyncClient(Client):
         return http_info
 
     def stop_factory_supplement_data_instance_async(self, request):
-        """停止一个补数据实例
+        """停止补数据实例
 
-        停止一个补数据实例
+        停止补数据实例
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -43,7 +43,7 @@ class ParamTypeLimits:
         :type name: str
         :param displayname: 语言展示名字
         :type displayname: str
-        :param id: 规则集ID
+        :param id: 策略ID
         :type id: str
         :param language: 扫描语言
         :type language: str
@@ -134,7 +134,7 @@ class ParamTypeLimits:
     def id(self):
         """Gets the id of this ParamTypeLimits.
 
-        规则集ID
+        策略ID
 
         :return: The id of this ParamTypeLimits.
         :rtype: str
@@ -145,7 +145,7 @@ class ParamTypeLimits:
     def id(self, id):
         """Sets the id of this ParamTypeLimits.
 
-        规则集ID
+        策略ID
 
         :param id: The id of this ParamTypeLimits.
         :type id: str

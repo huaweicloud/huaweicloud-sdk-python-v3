@@ -17,7 +17,7 @@ class PersistObjectIdsModifierDTO:
     sensitive_list = []
 
     openapi_types = {
-        'ids': 'list[str]',
+        'ids': 'list[int]',
         'modifier': 'str'
     }
 
@@ -32,7 +32,7 @@ class PersistObjectIdsModifierDTO:
         The model defined in huaweicloud sdk
 
         :param ids: ID列表。
-        :type ids: list[str]
+        :type ids: list[int]
         :param modifier: 修改人。
         :type modifier: str
         """
@@ -54,7 +54,7 @@ class PersistObjectIdsModifierDTO:
         ID列表。
 
         :return: The ids of this PersistObjectIdsModifierDTO.
-        :rtype: list[str]
+        :rtype: list[int]
         """
         return self._ids
 
@@ -65,7 +65,7 @@ class PersistObjectIdsModifierDTO:
         ID列表。
 
         :param ids: The ids of this PersistObjectIdsModifierDTO.
-        :type ids: list[str]
+        :type ids: list[int]
         """
         self._ids = ids
 

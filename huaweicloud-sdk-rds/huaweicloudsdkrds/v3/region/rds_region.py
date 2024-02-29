@@ -54,6 +54,8 @@ class RdsRegion:
                         "https://rds.eu-west-101.myhuaweicloud.eu")
     EU_WEST_0 = Region("eu-west-0",
                         "https://rds.eu-west-0.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://rds.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -80,6 +82,7 @@ class RdsRegion:
         "ae-ad-1": AE_AD_1,
         "eu-west-101": EU_WEST_101,
         "eu-west-0": EU_WEST_0,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

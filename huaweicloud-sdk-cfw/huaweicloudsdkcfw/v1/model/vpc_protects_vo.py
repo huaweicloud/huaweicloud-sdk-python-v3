@@ -22,7 +22,8 @@ class VPCProtectsVo:
         'other_total': 'int',
         'protect_vpcs': 'list[VpcAttachmentDetail]',
         'self_protect_vpcs': 'list[VpcAttachmentDetail]',
-        'other_protect_vpcs': 'list[VpcAttachmentDetail]'
+        'other_protect_vpcs': 'list[VpcAttachmentDetail]',
+        'total_assets': 'int'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class VPCProtectsVo:
         'other_total': 'other_total',
         'protect_vpcs': 'protect_vpcs',
         'self_protect_vpcs': 'self_protect_vpcs',
-        'other_protect_vpcs': 'other_protect_vpcs'
+        'other_protect_vpcs': 'other_protect_vpcs',
+        'total_assets': 'total_assets'
     }
 
-    def __init__(self, total=None, self_total=None, other_total=None, protect_vpcs=None, self_protect_vpcs=None, other_protect_vpcs=None):
+    def __init__(self, total=None, self_total=None, other_total=None, protect_vpcs=None, self_protect_vpcs=None, other_protect_vpcs=None, total_assets=None):
         """VPCProtectsVo
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class VPCProtectsVo:
         :type self_protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
         :param other_protect_vpcs: 其他项目防护VPC
         :type other_protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
+        :param total_assets: 所有资产数量
+        :type total_assets: int
         """
         
         
@@ -61,6 +65,7 @@ class VPCProtectsVo:
         self._protect_vpcs = None
         self._self_protect_vpcs = None
         self._other_protect_vpcs = None
+        self._total_assets = None
         self.discriminator = None
 
         if total is not None:
@@ -75,6 +80,8 @@ class VPCProtectsVo:
             self.self_protect_vpcs = self_protect_vpcs
         if other_protect_vpcs is not None:
             self.other_protect_vpcs = other_protect_vpcs
+        if total_assets is not None:
+            self.total_assets = total_assets
 
     @property
     def total(self):
@@ -207,6 +214,28 @@ class VPCProtectsVo:
         :type other_protect_vpcs: list[:class:`huaweicloudsdkcfw.v1.VpcAttachmentDetail`]
         """
         self._other_protect_vpcs = other_protect_vpcs
+
+    @property
+    def total_assets(self):
+        """Gets the total_assets of this VPCProtectsVo.
+
+        所有资产数量
+
+        :return: The total_assets of this VPCProtectsVo.
+        :rtype: int
+        """
+        return self._total_assets
+
+    @total_assets.setter
+    def total_assets(self, total_assets):
+        """Sets the total_assets of this VPCProtectsVo.
+
+        所有资产数量
+
+        :param total_assets: The total_assets of this VPCProtectsVo.
+        :type total_assets: int
+        """
+        self._total_assets = total_assets
 
     def to_dict(self):
         """Returns the model properties as a dict"""

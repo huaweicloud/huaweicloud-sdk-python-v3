@@ -33,7 +33,7 @@ class PersistableModelUniqueKeyDTO:
 
         :param decrypt: 是否加密。 - true：加密。 - false：不加密。
         :type decrypt: bool
-        :param unique_key: 示例模型的唯一键属性。
+        :param unique_key: 示例模型的唯一键属性值。
         :type unique_key: str
         """
         
@@ -73,7 +73,7 @@ class PersistableModelUniqueKeyDTO:
     def unique_key(self):
         """Gets the unique_key of this PersistableModelUniqueKeyDTO.
 
-        示例模型的唯一键属性。
+        示例模型的唯一键属性值。
 
         :return: The unique_key of this PersistableModelUniqueKeyDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class PersistableModelUniqueKeyDTO:
     def unique_key(self, unique_key):
         """Sets the unique_key of this PersistableModelUniqueKeyDTO.
 
-        示例模型的唯一键属性。
+        示例模型的唯一键属性值。
 
         :param unique_key: The unique_key of this PersistableModelUniqueKeyDTO.
         :type unique_key: str

@@ -31,7 +31,7 @@ class CreateRuleSetReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 规则集名称
+        :param name: 策略名称
         :type name: str
         :param rules: 规则集合
         :type rules: list[:class:`huaweicloudsdkcodeartspipeline.v2.RequestRuleInstance`]
@@ -50,7 +50,7 @@ class CreateRuleSetReq:
     def name(self):
         """Gets the name of this CreateRuleSetReq.
 
-        规则集名称
+        策略名称
 
         :return: The name of this CreateRuleSetReq.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateRuleSetReq:
     def name(self, name):
         """Sets the name of this CreateRuleSetReq.
 
-        规则集名称
+        策略名称
 
         :param name: The name of this CreateRuleSetReq.
         :type name: str

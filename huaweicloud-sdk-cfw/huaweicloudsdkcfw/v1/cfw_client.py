@@ -1699,6 +1699,8 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'query_address_set_type' in local_var_params:
+            query_params.append(('query_address_set_type', local_var_params['query_address_set_type']))
 
         header_params = {}
 
@@ -1778,6 +1780,8 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'query_address_set_type' in local_var_params:
+            query_params.append(('query_address_set_type', local_var_params['query_address_set_type']))
 
         header_params = {}
 

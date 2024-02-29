@@ -31,8 +31,7 @@ class ModelDto:
         'description': 'str',
         'failed_message': 'str',
         'losses': 'list[float]',
-        'metrics': 'list[ModelMetric]',
-        'model_metric': 'ModelDtoModelMetric'
+        'metrics': 'list[ModelMetric]'
     }
 
     attribute_map = {
@@ -50,11 +49,10 @@ class ModelDto:
         'description': 'description',
         'failed_message': 'failed_message',
         'losses': 'losses',
-        'metrics': 'metrics',
-        'model_metric': 'ModelMetric'
+        'metrics': 'metrics'
     }
 
-    def __init__(self, name=None, id=None, type=None, create_time=None, finish_time=None, creator=None, status=None, shareable=None, data_quantity=None, file=None, value_range=None, description=None, failed_message=None, losses=None, metrics=None, model_metric=None):
+    def __init__(self, name=None, id=None, type=None, create_time=None, finish_time=None, creator=None, status=None, shareable=None, data_quantity=None, file=None, value_range=None, description=None, failed_message=None, losses=None, metrics=None):
         """ModelDto
 
         The model defined in huaweicloud sdk
@@ -89,8 +87,6 @@ class ModelDto:
         :type losses: list[float]
         :param metrics: 模型评估指标
         :type metrics: list[:class:`huaweicloudsdkeihealth.v1.ModelMetric`]
-        :param model_metric: 
-        :type model_metric: :class:`huaweicloudsdkeihealth.v1.ModelDtoModelMetric`
         """
         
         
@@ -110,7 +106,6 @@ class ModelDto:
         self._failed_message = None
         self._losses = None
         self._metrics = None
-        self._model_metric = None
         self.discriminator = None
 
         if name is not None:
@@ -143,8 +138,6 @@ class ModelDto:
             self.losses = losses
         if metrics is not None:
             self.metrics = metrics
-        if model_metric is not None:
-            self.model_metric = model_metric
 
     @property
     def name(self):
@@ -467,24 +460,6 @@ class ModelDto:
         :type metrics: list[:class:`huaweicloudsdkeihealth.v1.ModelMetric`]
         """
         self._metrics = metrics
-
-    @property
-    def model_metric(self):
-        """Gets the model_metric of this ModelDto.
-
-        :return: The model_metric of this ModelDto.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ModelDtoModelMetric`
-        """
-        return self._model_metric
-
-    @model_metric.setter
-    def model_metric(self, model_metric):
-        """Sets the model_metric of this ModelDto.
-
-        :param model_metric: The model_metric of this ModelDto.
-        :type model_metric: :class:`huaweicloudsdkeihealth.v1.ModelDtoModelMetric`
-        """
-        self._model_metric = model_metric
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,7 +35,7 @@ class CreateFirewallReqFlavor:
 
         The model defined in huaweicloud sdk
 
-        :param version: 防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版 Platinum - 铂金版，防火墙版本“charge_mode”为\&quot;postPaid\&quot;时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
+        :param version: 防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版
         :type version: str
         :param extend_eip_count: 扩展EIP数量，仅包周期场景下生效
         :type extend_eip_count: int
@@ -66,7 +66,7 @@ class CreateFirewallReqFlavor:
     def version(self):
         """Gets the version of this CreateFirewallReqFlavor.
 
-        防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版 Platinum - 铂金版，防火墙版本“charge_mode”为\"postPaid\"时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
+        防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版
 
         :return: The version of this CreateFirewallReqFlavor.
         :rtype: str
@@ -77,7 +77,7 @@ class CreateFirewallReqFlavor:
     def version(self, version):
         """Sets the version of this CreateFirewallReqFlavor.
 
-        防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版 Platinum - 铂金版，防火墙版本“charge_mode”为\"postPaid\"时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
+        防火墙版本 “charge_mode”为“prePaid”时，仅支持专业版。 “charge_mode”为“postPaid”时，支持标准版、专业版。  Standard - 标准版 Professional - 专业版
 
         :param version: The version of this CreateFirewallReqFlavor.
         :type version: str

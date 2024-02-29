@@ -19,16 +19,18 @@ class ServiceSetDetailResponseDto:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'description': 'str'
+        'description': 'str',
+        'service_set_type': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'description': 'description'
+        'description': 'description',
+        'service_set_type': 'service_set_type'
     }
 
-    def __init__(self, id=None, name=None, description=None):
+    def __init__(self, id=None, name=None, description=None, service_set_type=None):
         """ServiceSetDetailResponseDto
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ServiceSetDetailResponseDto:
         :type name: str
         :param description: 服务组描述信息
         :type description: str
+        :param service_set_type: 服务组类型，0表示自定义服务组，1表示预定义服务组
+        :type service_set_type: int
         """
         
         
@@ -46,6 +50,7 @@ class ServiceSetDetailResponseDto:
         self._id = None
         self._name = None
         self._description = None
+        self._service_set_type = None
         self.discriminator = None
 
         if id is not None:
@@ -53,6 +58,8 @@ class ServiceSetDetailResponseDto:
         self.name = name
         if description is not None:
             self.description = description
+        if service_set_type is not None:
+            self.service_set_type = service_set_type
 
     @property
     def id(self):
@@ -119,6 +126,28 @@ class ServiceSetDetailResponseDto:
         :type description: str
         """
         self._description = description
+
+    @property
+    def service_set_type(self):
+        """Gets the service_set_type of this ServiceSetDetailResponseDto.
+
+        服务组类型，0表示自定义服务组，1表示预定义服务组
+
+        :return: The service_set_type of this ServiceSetDetailResponseDto.
+        :rtype: int
+        """
+        return self._service_set_type
+
+    @service_set_type.setter
+    def service_set_type(self, service_set_type):
+        """Sets the service_set_type of this ServiceSetDetailResponseDto.
+
+        服务组类型，0表示自定义服务组，1表示预定义服务组
+
+        :param service_set_type: The service_set_type of this ServiceSetDetailResponseDto.
+        :type service_set_type: int
+        """
+        self._service_set_type = service_set_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

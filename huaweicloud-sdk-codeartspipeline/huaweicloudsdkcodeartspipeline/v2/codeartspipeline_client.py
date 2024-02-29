@@ -632,9 +632,9 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_strategy(self, request):
-        """创建规则集
+        """创建策略
 
-        创建规则集
+        创建策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1036,9 +1036,9 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_strategy(self, request):
-        """删除规则集
+        """删除策略
 
-        删除规则集
+        删除策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1663,7 +1663,7 @@ class CodeArtsPipelineClient(Client):
     def list_project_strategy(self, request):
         """获取规则模板实例列表
 
-        获取规则集列表
+        获取策略列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1951,9 +1951,9 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_strategy(self, request):
-        """获取规则集列表
+        """获取策略列表
 
-        获取规则集列表
+        获取策略列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3179,9 +3179,9 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_strategy(self, request):
-        """获取规则集详情
+        """获取策略详情
 
-        获取规则集详情
+        获取策略详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3451,9 +3451,9 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def switch_strategy(self, request):
-        """开关规则集
+        """开关策略
 
-        修改规则集状态
+        修改策略状态
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3857,9 +3857,9 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_strategy(self, request):
-        """修改规则集
+        """修改策略
 
-        修改规则集
+        修改策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 

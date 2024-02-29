@@ -22,6 +22,7 @@ class ActionSmnForwarding:
         'theme_name': 'str',
         'topic_urn': 'str',
         'message_content': 'str',
+        'message_template_name': 'str',
         'message_title': 'str'
     }
 
@@ -31,10 +32,11 @@ class ActionSmnForwarding:
         'theme_name': 'theme_name',
         'topic_urn': 'topic_urn',
         'message_content': 'message_content',
+        'message_template_name': 'message_template_name',
         'message_title': 'message_title'
     }
 
-    def __init__(self, region_name=None, project_id=None, theme_name=None, topic_urn=None, message_content=None, message_title=None):
+    def __init__(self, region_name=None, project_id=None, theme_name=None, topic_urn=None, message_content=None, message_template_name=None, message_title=None):
         """ActionSmnForwarding
 
         The model defined in huaweicloud sdk
@@ -49,7 +51,9 @@ class ActionSmnForwarding:
         :type topic_urn: str
         :param message_content: **参数说明**：短信或邮件的内容。
         :type message_content: str
-        :param message_title: **参数说明**：短信或邮件的主题。
+        :param message_template_name: **参数说明**：SMN服务对应的模板名称。
+        :type message_template_name: str
+        :param message_title: **参数说明**：短信或邮件的主题。最大长度支持UTF-8编码后的521个字节。
         :type message_title: str
         """
         
@@ -60,6 +64,7 @@ class ActionSmnForwarding:
         self._theme_name = None
         self._topic_urn = None
         self._message_content = None
+        self._message_template_name = None
         self._message_title = None
         self.discriminator = None
 
@@ -67,7 +72,10 @@ class ActionSmnForwarding:
         self.project_id = project_id
         self.theme_name = theme_name
         self.topic_urn = topic_urn
-        self.message_content = message_content
+        if message_content is not None:
+            self.message_content = message_content
+        if message_template_name is not None:
+            self.message_template_name = message_template_name
         self.message_title = message_title
 
     @property
@@ -181,10 +189,32 @@ class ActionSmnForwarding:
         self._message_content = message_content
 
     @property
+    def message_template_name(self):
+        """Gets the message_template_name of this ActionSmnForwarding.
+
+        **参数说明**：SMN服务对应的模板名称。
+
+        :return: The message_template_name of this ActionSmnForwarding.
+        :rtype: str
+        """
+        return self._message_template_name
+
+    @message_template_name.setter
+    def message_template_name(self, message_template_name):
+        """Sets the message_template_name of this ActionSmnForwarding.
+
+        **参数说明**：SMN服务对应的模板名称。
+
+        :param message_template_name: The message_template_name of this ActionSmnForwarding.
+        :type message_template_name: str
+        """
+        self._message_template_name = message_template_name
+
+    @property
     def message_title(self):
         """Gets the message_title of this ActionSmnForwarding.
 
-        **参数说明**：短信或邮件的主题。
+        **参数说明**：短信或邮件的主题。最大长度支持UTF-8编码后的521个字节。
 
         :return: The message_title of this ActionSmnForwarding.
         :rtype: str
@@ -195,7 +225,7 @@ class ActionSmnForwarding:
     def message_title(self, message_title):
         """Sets the message_title of this ActionSmnForwarding.
 
-        **参数说明**：短信或邮件的主题。
+        **参数说明**：短信或邮件的主题。最大长度支持UTF-8编码后的521个字节。
 
         :param message_title: The message_title of this ActionSmnForwarding.
         :type message_title: str

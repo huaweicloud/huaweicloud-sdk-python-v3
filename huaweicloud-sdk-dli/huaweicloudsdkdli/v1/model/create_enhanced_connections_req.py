@@ -20,6 +20,7 @@ class CreateEnhancedConnectionsReq:
         'name': 'str',
         'dest_vpc_id': 'str',
         'dest_network_id': 'str',
+        'elastic_resource_pools': 'list[str]',
         'queues': 'list[str]',
         'hosts': 'list[EnhancedConnectionsHost]',
         'routetable_id': 'str',
@@ -30,13 +31,14 @@ class CreateEnhancedConnectionsReq:
         'name': 'name',
         'dest_vpc_id': 'dest_vpc_id',
         'dest_network_id': 'dest_network_id',
+        'elastic_resource_pools': 'elastic_resource_pools',
         'queues': 'queues',
         'hosts': 'hosts',
         'routetable_id': 'routetable_id',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, dest_vpc_id=None, dest_network_id=None, queues=None, hosts=None, routetable_id=None, tags=None):
+    def __init__(self, name=None, dest_vpc_id=None, dest_network_id=None, elastic_resource_pools=None, queues=None, hosts=None, routetable_id=None, tags=None):
         """CreateEnhancedConnectionsReq
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateEnhancedConnectionsReq:
         :type dest_vpc_id: str
         :param dest_network_id: 对应服务的子网网络ID，即为需要建立连接的服务所在的子网。
         :type dest_network_id: str
+        :param elastic_resource_pools: 弹性资源池列表。
+        :type elastic_resource_pools: list[str]
         :param queues: 需要使用跨源的队列列表。
         :type queues: list[str]
         :param hosts: 用户自定义主机信息，最大支持2万条记录。
@@ -62,6 +66,7 @@ class CreateEnhancedConnectionsReq:
         self._name = None
         self._dest_vpc_id = None
         self._dest_network_id = None
+        self._elastic_resource_pools = None
         self._queues = None
         self._hosts = None
         self._routetable_id = None
@@ -71,6 +76,8 @@ class CreateEnhancedConnectionsReq:
         self.name = name
         self.dest_vpc_id = dest_vpc_id
         self.dest_network_id = dest_network_id
+        if elastic_resource_pools is not None:
+            self.elastic_resource_pools = elastic_resource_pools
         if queues is not None:
             self.queues = queues
         if hosts is not None:
@@ -145,6 +152,28 @@ class CreateEnhancedConnectionsReq:
         :type dest_network_id: str
         """
         self._dest_network_id = dest_network_id
+
+    @property
+    def elastic_resource_pools(self):
+        """Gets the elastic_resource_pools of this CreateEnhancedConnectionsReq.
+
+        弹性资源池列表。
+
+        :return: The elastic_resource_pools of this CreateEnhancedConnectionsReq.
+        :rtype: list[str]
+        """
+        return self._elastic_resource_pools
+
+    @elastic_resource_pools.setter
+    def elastic_resource_pools(self, elastic_resource_pools):
+        """Sets the elastic_resource_pools of this CreateEnhancedConnectionsReq.
+
+        弹性资源池列表。
+
+        :param elastic_resource_pools: The elastic_resource_pools of this CreateEnhancedConnectionsReq.
+        :type elastic_resource_pools: list[str]
+        """
+        self._elastic_resource_pools = elastic_resource_pools
 
     @property
     def queues(self):

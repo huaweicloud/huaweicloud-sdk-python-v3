@@ -4,9 +4,6 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkdns.v2.model.alias_target import AliasTarget
-from huaweicloudsdkdns.v2.model.associate_health_check_req import AssociateHealthCheckReq
-from huaweicloudsdkdns.v2.model.associate_health_check_request import AssociateHealthCheckRequest
-from huaweicloudsdkdns.v2.model.associate_health_check_response import AssociateHealthCheckResponse
 from huaweicloudsdkdns.v2.model.associate_router_request import AssociateRouterRequest
 from huaweicloudsdkdns.v2.model.associate_router_request_body import AssociateRouterRequestBody
 from huaweicloudsdkdns.v2.model.associate_router_response import AssociateRouterResponse
@@ -63,8 +60,6 @@ from huaweicloudsdkdns.v2.model.delete_record_sets_request import DeleteRecordSe
 from huaweicloudsdkdns.v2.model.delete_record_sets_response import DeleteRecordSetsResponse
 from huaweicloudsdkdns.v2.model.delete_tag_request import DeleteTagRequest
 from huaweicloudsdkdns.v2.model.delete_tag_response import DeleteTagResponse
-from huaweicloudsdkdns.v2.model.disassociate_health_check_request import DisassociateHealthCheckRequest
-from huaweicloudsdkdns.v2.model.disassociate_health_check_response import DisassociateHealthCheckResponse
 from huaweicloudsdkdns.v2.model.disassociate_router_request import DisassociateRouterRequest
 from huaweicloudsdkdns.v2.model.disassociate_router_response import DisassociateRouterResponse
 from huaweicloudsdkdns.v2.model.disassociaterouter_request_body import DisassociaterouterRequestBody

@@ -34,7 +34,7 @@ class VersionModelViewDTO:
         'master': 'VersionModelMasterViewDTO',
         'modifier': 'str',
         'name': 'str',
-        'pre_version_id': 'int',
+        'pre_version_id': 'str',
         'rdm_delete_flag': 'int',
         'rdm_extension_type': 'str',
         'rdm_version': 'int',
@@ -116,7 +116,7 @@ class VersionModelViewDTO:
         :param name: 中文名称。
         :type name: str
         :param pre_version_id: 前序版本实例ID。
-        :type pre_version_id: int
+        :type pre_version_id: str
         :param rdm_delete_flag: 软删除标识，参数值为0或1。 - 0：表示未删除。 - 1：表示已删除。
         :type rdm_delete_flag: int
         :param rdm_extension_type: 扩展类型。
@@ -596,7 +596,7 @@ class VersionModelViewDTO:
         前序版本实例ID。
 
         :return: The pre_version_id of this VersionModelViewDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._pre_version_id
 
@@ -607,7 +607,7 @@ class VersionModelViewDTO:
         前序版本实例ID。
 
         :param pre_version_id: The pre_version_id of this VersionModelViewDTO.
-        :type pre_version_id: int
+        :type pre_version_id: str
         """
         self._pre_version_id = pre_version_id
 

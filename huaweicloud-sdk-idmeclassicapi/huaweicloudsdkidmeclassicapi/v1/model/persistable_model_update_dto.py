@@ -17,80 +17,44 @@ class PersistableModelUpdateDTO:
     sensitive_list = []
 
     openapi_types = {
-        'acl_entry': 'str',
-        'cls_attrs': 'list[object]',
         'create_time': 'str',
         'creator': 'str',
-        'disable_flag': 'bool',
-        'ext_attr_map': 'object',
-        'ext_attrs': 'list[EXAValueParamDTO]',
-        'folder': 'ObjectReferenceParamDTO',
-        'id': 'str',
+        'id': 'int',
         'last_update_time': 'str',
-        'lifecycle_state': 'ObjectReferenceParamDTO',
         'modifier': 'str',
         'need_set_null_attrs': 'list[str]',
-        'owner': 'str',
-        'parent_node': 'ObjectReferenceParamDTO',
         'rdm_extension_type': 'str',
         'unique_key': 'str'
     }
 
     attribute_map = {
-        'acl_entry': 'aclEntry',
-        'cls_attrs': 'clsAttrs',
         'create_time': 'createTime',
         'creator': 'creator',
-        'disable_flag': 'disableFlag',
-        'ext_attr_map': 'extAttrMap',
-        'ext_attrs': 'extAttrs',
-        'folder': 'folder',
         'id': 'id',
         'last_update_time': 'lastUpdateTime',
-        'lifecycle_state': 'lifecycleState',
         'modifier': 'modifier',
         'need_set_null_attrs': 'needSetNullAttrs',
-        'owner': 'owner',
-        'parent_node': 'parentNode',
         'rdm_extension_type': 'rdmExtensionType',
         'unique_key': 'uniqueKey'
     }
 
-    def __init__(self, acl_entry=None, cls_attrs=None, create_time=None, creator=None, disable_flag=None, ext_attr_map=None, ext_attrs=None, folder=None, id=None, last_update_time=None, lifecycle_state=None, modifier=None, need_set_null_attrs=None, owner=None, parent_node=None, rdm_extension_type=None, unique_key=None):
+    def __init__(self, create_time=None, creator=None, id=None, last_update_time=None, modifier=None, need_set_null_attrs=None, rdm_extension_type=None, unique_key=None):
         """PersistableModelUpdateDTO
 
         The model defined in huaweicloud sdk
 
-        :param acl_entry: 访问控制列表。
-        :type acl_entry: str
-        :param cls_attrs: 分类属性。
-        :type cls_attrs: list[object]
         :param create_time: 创建时间。
         :type create_time: str
         :param creator: 创建者。
         :type creator: str
-        :param disable_flag: 失效标识。  - true：失效。  - false：未失效。
-        :type disable_flag: bool
-        :param ext_attr_map: 扩展属性映射集。
-        :type ext_attr_map: object
-        :param ext_attrs: 扩展属性列表。
-        :type ext_attrs: list[:class:`huaweicloudsdkidmeclassicapi.v1.EXAValueParamDTO`]
-        :param folder: 
-        :type folder: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
         :param id: 唯一标识。
-        :type id: str
+        :type id: int
         :param last_update_time: 最后更新时间。
         :type last_update_time: str
-        :param lifecycle_state: 
-        :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
         :param modifier: 更新者。
         :type modifier: str
-        :param need_set_null_attrs: 设置NULL值的属性名称。
+        :param need_set_null_attrs: 设置空值。
         :type need_set_null_attrs: list[str]
-        :param owner: 拥有者。
-        :type owner: str
-        :param parent_node: 
-        :type parent_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
         :param rdm_extension_type: 扩展类型。
         :type rdm_extension_type: str
         :param unique_key: 示例模型的唯一键属性。
@@ -99,103 +63,32 @@ class PersistableModelUpdateDTO:
         
         
 
-        self._acl_entry = None
-        self._cls_attrs = None
         self._create_time = None
         self._creator = None
-        self._disable_flag = None
-        self._ext_attr_map = None
-        self._ext_attrs = None
-        self._folder = None
         self._id = None
         self._last_update_time = None
-        self._lifecycle_state = None
         self._modifier = None
         self._need_set_null_attrs = None
-        self._owner = None
-        self._parent_node = None
         self._rdm_extension_type = None
         self._unique_key = None
         self.discriminator = None
 
-        if acl_entry is not None:
-            self.acl_entry = acl_entry
-        if cls_attrs is not None:
-            self.cls_attrs = cls_attrs
         if create_time is not None:
             self.create_time = create_time
         if creator is not None:
             self.creator = creator
-        if disable_flag is not None:
-            self.disable_flag = disable_flag
-        if ext_attr_map is not None:
-            self.ext_attr_map = ext_attr_map
-        if ext_attrs is not None:
-            self.ext_attrs = ext_attrs
-        if folder is not None:
-            self.folder = folder
         if id is not None:
             self.id = id
         if last_update_time is not None:
             self.last_update_time = last_update_time
-        if lifecycle_state is not None:
-            self.lifecycle_state = lifecycle_state
         if modifier is not None:
             self.modifier = modifier
         if need_set_null_attrs is not None:
             self.need_set_null_attrs = need_set_null_attrs
-        if owner is not None:
-            self.owner = owner
-        if parent_node is not None:
-            self.parent_node = parent_node
         if rdm_extension_type is not None:
             self.rdm_extension_type = rdm_extension_type
         if unique_key is not None:
             self.unique_key = unique_key
-
-    @property
-    def acl_entry(self):
-        """Gets the acl_entry of this PersistableModelUpdateDTO.
-
-        访问控制列表。
-
-        :return: The acl_entry of this PersistableModelUpdateDTO.
-        :rtype: str
-        """
-        return self._acl_entry
-
-    @acl_entry.setter
-    def acl_entry(self, acl_entry):
-        """Sets the acl_entry of this PersistableModelUpdateDTO.
-
-        访问控制列表。
-
-        :param acl_entry: The acl_entry of this PersistableModelUpdateDTO.
-        :type acl_entry: str
-        """
-        self._acl_entry = acl_entry
-
-    @property
-    def cls_attrs(self):
-        """Gets the cls_attrs of this PersistableModelUpdateDTO.
-
-        分类属性。
-
-        :return: The cls_attrs of this PersistableModelUpdateDTO.
-        :rtype: list[object]
-        """
-        return self._cls_attrs
-
-    @cls_attrs.setter
-    def cls_attrs(self, cls_attrs):
-        """Sets the cls_attrs of this PersistableModelUpdateDTO.
-
-        分类属性。
-
-        :param cls_attrs: The cls_attrs of this PersistableModelUpdateDTO.
-        :type cls_attrs: list[object]
-        """
-        self._cls_attrs = cls_attrs
 
     @property
     def create_time(self):
@@ -242,97 +135,13 @@ class PersistableModelUpdateDTO:
         self._creator = creator
 
     @property
-    def disable_flag(self):
-        """Gets the disable_flag of this PersistableModelUpdateDTO.
-
-        失效标识。  - true：失效。  - false：未失效。
-
-        :return: The disable_flag of this PersistableModelUpdateDTO.
-        :rtype: bool
-        """
-        return self._disable_flag
-
-    @disable_flag.setter
-    def disable_flag(self, disable_flag):
-        """Sets the disable_flag of this PersistableModelUpdateDTO.
-
-        失效标识。  - true：失效。  - false：未失效。
-
-        :param disable_flag: The disable_flag of this PersistableModelUpdateDTO.
-        :type disable_flag: bool
-        """
-        self._disable_flag = disable_flag
-
-    @property
-    def ext_attr_map(self):
-        """Gets the ext_attr_map of this PersistableModelUpdateDTO.
-
-        扩展属性映射集。
-
-        :return: The ext_attr_map of this PersistableModelUpdateDTO.
-        :rtype: object
-        """
-        return self._ext_attr_map
-
-    @ext_attr_map.setter
-    def ext_attr_map(self, ext_attr_map):
-        """Sets the ext_attr_map of this PersistableModelUpdateDTO.
-
-        扩展属性映射集。
-
-        :param ext_attr_map: The ext_attr_map of this PersistableModelUpdateDTO.
-        :type ext_attr_map: object
-        """
-        self._ext_attr_map = ext_attr_map
-
-    @property
-    def ext_attrs(self):
-        """Gets the ext_attrs of this PersistableModelUpdateDTO.
-
-        扩展属性列表。
-
-        :return: The ext_attrs of this PersistableModelUpdateDTO.
-        :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.EXAValueParamDTO`]
-        """
-        return self._ext_attrs
-
-    @ext_attrs.setter
-    def ext_attrs(self, ext_attrs):
-        """Sets the ext_attrs of this PersistableModelUpdateDTO.
-
-        扩展属性列表。
-
-        :param ext_attrs: The ext_attrs of this PersistableModelUpdateDTO.
-        :type ext_attrs: list[:class:`huaweicloudsdkidmeclassicapi.v1.EXAValueParamDTO`]
-        """
-        self._ext_attrs = ext_attrs
-
-    @property
-    def folder(self):
-        """Gets the folder of this PersistableModelUpdateDTO.
-
-        :return: The folder of this PersistableModelUpdateDTO.
-        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        """
-        return self._folder
-
-    @folder.setter
-    def folder(self, folder):
-        """Sets the folder of this PersistableModelUpdateDTO.
-
-        :param folder: The folder of this PersistableModelUpdateDTO.
-        :type folder: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        """
-        self._folder = folder
-
-    @property
     def id(self):
         """Gets the id of this PersistableModelUpdateDTO.
 
         唯一标识。
 
         :return: The id of this PersistableModelUpdateDTO.
-        :rtype: str
+        :rtype: int
         """
         return self._id
 
@@ -343,7 +152,7 @@ class PersistableModelUpdateDTO:
         唯一标识。
 
         :param id: The id of this PersistableModelUpdateDTO.
-        :type id: str
+        :type id: int
         """
         self._id = id
 
@@ -368,24 +177,6 @@ class PersistableModelUpdateDTO:
         :type last_update_time: str
         """
         self._last_update_time = last_update_time
-
-    @property
-    def lifecycle_state(self):
-        """Gets the lifecycle_state of this PersistableModelUpdateDTO.
-
-        :return: The lifecycle_state of this PersistableModelUpdateDTO.
-        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        """
-        return self._lifecycle_state
-
-    @lifecycle_state.setter
-    def lifecycle_state(self, lifecycle_state):
-        """Sets the lifecycle_state of this PersistableModelUpdateDTO.
-
-        :param lifecycle_state: The lifecycle_state of this PersistableModelUpdateDTO.
-        :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        """
-        self._lifecycle_state = lifecycle_state
 
     @property
     def modifier(self):
@@ -413,7 +204,7 @@ class PersistableModelUpdateDTO:
     def need_set_null_attrs(self):
         """Gets the need_set_null_attrs of this PersistableModelUpdateDTO.
 
-        设置NULL值的属性名称。
+        设置空值。
 
         :return: The need_set_null_attrs of this PersistableModelUpdateDTO.
         :rtype: list[str]
@@ -424,52 +215,12 @@ class PersistableModelUpdateDTO:
     def need_set_null_attrs(self, need_set_null_attrs):
         """Sets the need_set_null_attrs of this PersistableModelUpdateDTO.
 
-        设置NULL值的属性名称。
+        设置空值。
 
         :param need_set_null_attrs: The need_set_null_attrs of this PersistableModelUpdateDTO.
         :type need_set_null_attrs: list[str]
         """
         self._need_set_null_attrs = need_set_null_attrs
-
-    @property
-    def owner(self):
-        """Gets the owner of this PersistableModelUpdateDTO.
-
-        拥有者。
-
-        :return: The owner of this PersistableModelUpdateDTO.
-        :rtype: str
-        """
-        return self._owner
-
-    @owner.setter
-    def owner(self, owner):
-        """Sets the owner of this PersistableModelUpdateDTO.
-
-        拥有者。
-
-        :param owner: The owner of this PersistableModelUpdateDTO.
-        :type owner: str
-        """
-        self._owner = owner
-
-    @property
-    def parent_node(self):
-        """Gets the parent_node of this PersistableModelUpdateDTO.
-
-        :return: The parent_node of this PersistableModelUpdateDTO.
-        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        """
-        return self._parent_node
-
-    @parent_node.setter
-    def parent_node(self, parent_node):
-        """Sets the parent_node of this PersistableModelUpdateDTO.
-
-        :param parent_node: The parent_node of this PersistableModelUpdateDTO.
-        :type parent_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        """
-        self._parent_node = parent_node
 
     @property
     def rdm_extension_type(self):

@@ -46,6 +46,8 @@ class FunctionGraphRegion:
                         "https://functiongraph.cn-north-11.myhuaweicloud.com")
     ME_EAST_1 = Region("me-east-1",
                         "https://functiongraph.me-east-1.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://functiongraph.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -68,6 +70,7 @@ class FunctionGraphRegion:
         "cn-north-9": CN_NORTH_9,
         "cn-north-11": CN_NORTH_11,
         "me-east-1": ME_EAST_1,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

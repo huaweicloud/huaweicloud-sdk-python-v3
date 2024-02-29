@@ -1,3 +1,482 @@
+# 3.1.84 2024-02-29
+
+### HuaweiCloud SDK CFW
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAddressSets**
+    - 请求参数变更
+      - `+ query_address_set_type`
+    - 响应参数变更
+      - `+ data.records.object_id`
+      - `+ data.records.address_set_type`
+  - **UpdateAclRuleOrder**
+    - 响应参数变更
+      - `+ data.name`
+  - **AddBlackWhiteList**
+    - 响应参数变更
+      - `+ data.name`
+  - **UpdateBlackWhiteList**
+    - 响应参数变更
+      - `+ data.name`
+  - **DeleteBlackWhiteList**
+    - 响应参数变更
+      - `+ data.name`
+  - **ChangeIpsProtectMode**
+    - 响应参数变更
+      - `+ data.name`
+  - **AddServiceSet**
+    - 响应参数变更
+      - `+ data.name`
+  - **ListServiceSetDetail**
+    - 响应参数变更
+      - `+ data.service_set_type`
+  - **UpdateServiceSet**
+    - 响应参数变更
+      - `+ data.name`
+  - **DeleteServiceSet**
+    - 响应参数变更
+      - `+ data.name`
+  - **DeleteServiceItem**
+    - 响应参数变更
+      - `+ data.name`
+  - **CreateFirewall**
+    - 请求参数变更
+      - `- flavor.version: enum value [Platinum]`
+    - 响应参数变更
+      - `- data.flavor.version: enum value [Platinum]`
+  - **ChangeEipStatus**
+    - 响应参数变更
+      - `+ data.id`
+  - **DeleteAddressItem**
+    - 响应参数变更
+      - `+ data.name`
+  - **AddAddressSet**
+    - 响应参数变更
+      - `+ data.name`
+  - **ListAddressSetDetail**
+    - 请求参数变更
+      - `+ query_address_set_type`
+    - 响应参数变更
+      - `+ data.address_set_type`
+  - **UpdateAddressSet**
+    - 响应参数变更
+      - `* data: object<IdObject> -> object<UpdateAddressSetResponseData>`
+  - **DeleteAddressSet**
+    - 响应参数变更
+      - `+ data.name`
+  - **CreateEastWestFirewall**
+    - 响应参数变更
+      - `+ data.name`
+  - **ListEastWestFirewall**
+    - 响应参数变更
+      - `+ data.protect_infos.status`
+  - **AddAclRule**
+    - 响应参数变更
+      - `+ data.rules.name`
+  - **DeleteAclRule**
+    - 响应参数变更
+      - `+ data.name`
+  - **UpdateAclRule**
+    - 响应参数变更
+      - `+ data.name`
+  - **ListAclRules**
+    - 响应参数变更
+      - `+ data.records.created_date`
+      - `+ data.records.last_open_time`
+  - **AddServiceItems**
+    - 响应参数变更
+      - `+ data.items.name`
+  - **AddAddressItem**
+    - 响应参数变更
+      - `+ data.items.name`
+  - **ListServiceSets**
+    - 响应参数变更
+      - `+ data.records.service_set_type`
+      - `+ data.records.project_id`
+      - `+ data.records.protocols`
+  - **ListProtectedVpcs**
+    - 响应参数变更
+      - `+ data.total_assets`
+  - **ListFirewallDetail**
+    - 响应参数变更
+      - `+ data.records.is_available_obs`
+      - `+ data.records.is_support_threat_tags`
+  - **ListFirewallList**
+    - 响应参数变更
+      - `+ is_support_postpaid`
+      - `+ is_support_buy_professional`
+      - `+ has_ndr`
+      - `+ is_support_basic_version`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPipelineDetail**
+    - 响应参数变更
+      - `+ sources.type`
+      - `+ sources.params`
+      - `- sources.scmType`
+      - `- sources.hookFlag`
+      - `- sources.defaultBranch`
+      - `- sources.trigger`
+      - `- sources.alias`
+      - `- sources.displayName`
+      - `- sources.repoName`
+      - `- sources.repoId`
+      - `- sources.repoOwner`
+      - `- sources.gitUrl`
+      - `- sources.webUrl`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateOrUpdateEntities`
+    - `ListFactoryReleasePackages`
+    - `ShowFactoryPackageDetail`
+    - `DeployFactoryPackages`
+    - `CancelFactoryPackages`
+    - `ListFactoryJobInstancesByName`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PreviewSqlJobResult**
+    - 响应参数变更
+      - `* rows: list<list<string>> -> list<list<object>>`
+  - **CreateFlinkSqlJobGraph**
+    - 请求参数变更
+      - `+ flink_version`
+  - **CreateSqlJob**
+    - 响应参数变更
+      - `* rows: list<list<string>> -> list<list<object>>`
+  - **CreateEnhancedConnection**
+    - 请求参数变更
+      - `+ elastic_resource_pools`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateProjectTracker**
+    - 请求参数变更
+      - `- bucket_lifecycle`
+  - **ListDrugModel**
+    - 响应参数变更
+      - `- models.ModelMetric`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFunctionTrigger**
+    - 响应参数变更
+      - `+ event_data.triggerid`
+      - `+ event_data.api_id`
+      - `+ event_data.api_name`
+      - `+ event_data.invoke_url`
+      - `+ event_data.roma_app_id`
+      - `+ event_data.db_user`
+      - `+ event_data.instance_addrs`
+      - `+ event_data.mode`
+      - `* event_data: object<TriggerEventDataRequestBody> -> object<TriggerEventDataResponseBody>`
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowBatchUpdateAndCheckinUsingPost`
+    - `ShowBatchCheckoutAndUpdateUsingPost`
+    - `ShowUpdateAndCheckinUsingPost`
+    - `ShowCheckoutAndUpdateUsingPost`
+    - `ShowBatchLogicalDeleteBranchUsingPost`
+    - `ShowBatchDeleteBranchUsingPost`
+    - `ShowBatchUndoCheckoutByAdminUsingPost`
+    - `ShowUndoCheckoutByAdminUsingPost`
+    - `ShowCompareBusinessVersionUsingPost`
+    - `ShowLogicalDeleteBranchUsingPost`
+    - `ShowDeleteBranchUsingPost`
+    - `ShowLogicalDeleteLatestVersionUsingPost`
+    - `ShowDeleteLatestVersionUsingPost`
+    - `ShowBatchReviseAndUpdateUsingPost`
+    - `ShowReviseAndUpdateUsingPost`
+    - `ShowBatchReviseUsingPost`
+    - `ShowReviseUsingPost`
+    - `ShowBatchCheckinUsingPost`
+    - `ShowCheckinUsingPost`
+    - `ShowBatchUndoCheckoutUsingPost`
+    - `ShowUndoCheckoutUsingPost`
+    - `ShowBatchCheckoutUsingPost`
+    - `ShowCheckoutUsingPost`
+    - `ShowGetVersionByMasterUsingPost`
+    - `ShowGetAllVersionsUsingPost`
+    - `ShowBatchUpdateVersionUsingPost`
+    - `ShowBatchUpdateByAdminUsingPost`
+    - `ShowUpdateByAdminUsingPost`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowBatchUpdateUsingPost**
+    - 请求参数变更
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.id: string -> int64`
+    - 响应参数变更
+      - `+ data.className`
+      - `+ data.createTime`
+      - `+ data.creator`
+      - `+ data.id`
+      - `+ data.rdmDeleteFlag`
+      - `+ data.rdmExtensionType`
+      - `+ data.rdmVersion`
+      - `+ data.modifier`
+      - `+ data.lastUpdateTime`
+      - `+ data.tenant`
+      - `+ data.uniqueKey`
+      - `- data.applicationId`
+      - `- data.params`
+      - `* data: list<RDMParamVOPersistableModelUpdateDTO> -> list<PersistableModelViewDTO>`
+  - **ShowUpdateUsingPost**
+    - 请求参数变更
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.id: string -> int64`
+    - 响应参数变更
+      - `+ data.className`
+      - `+ data.createTime`
+      - `+ data.creator`
+      - `+ data.id`
+      - `+ data.rdmDeleteFlag`
+      - `+ data.rdmExtensionType`
+      - `+ data.rdmVersion`
+      - `+ data.modifier`
+      - `+ data.lastUpdateTime`
+      - `+ data.tenant`
+      - `+ data.uniqueKey`
+      - `- data.applicationId`
+      - `- data.params`
+      - `* data: list<RDMParamVOPersistableModelUpdateDTO> -> list<PersistableModelViewDTO>`
+  - **ShowBatchLogicalDeleteUsingPost**
+    - 请求参数变更
+      - `* params.ids: list<string> -> list<integer>`
+  - **ShowLogicalDeleteUsingPost**
+    - 请求参数变更
+      - `* params.id: string -> int64`
+  - **ShowBatchDeleteUsingPost**
+    - 请求参数变更
+      - `* params.ids: list<string> -> list<integer>`
+  - **ShowDeleteUsingPost**
+    - 请求参数变更
+      - `* params.id: string -> int64`
+  - **ShowSaveAsUsingPost**
+    - 请求参数变更
+      - `+ params.sourceEntityNumber`
+      - `+ params.needSetNullAttrs`
+      - `+ params.uniqueKey`
+      - `- params.branch`
+      - `- params.checkOutTime`
+      - `- params.checkOutUserName`
+      - `- params.description`
+      - `- params.kiaguid`
+      - `- params.master`
+      - `- params.name`
+      - `- params.securityLevel`
+      - `- params.sourceMasterId`
+      - `- params.workingCopy`
+      - `* params.id: string -> int64`
+      - `* params.sourceInstanceId: string -> int64`
+      - `* params: object<VersionModelSaveAsDTO> -> object<PersistableModelSaveAsDTO>`
+      - `* body: object<RDMParamVOVersionModelSaveAsDTO> -> object<RDMParamVOPersistableModelSaveAsDTO>`
+  - **ShowSaveAllUsingPost**
+    - 请求参数变更
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.lifecycleTemplate`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.creator: string -> int64`
+      - `* params.id: string -> int64`
+  - **ShowBatchGetUsingPost**
+    - 请求参数变更
+      - `* params.ids: list<string> -> list<integer>`
+  - **ShowGetUsingPost**
+    - 请求参数变更
+      - `* params.id: string -> int64`
+  - **ShowBatchCreateUsingPost**
+    - 请求参数变更
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.lifecycleTemplate`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.id: string -> int64`
+    - 响应参数变更
+      - `* data.preVersionId: int64 -> string`
+  - **ShowCreateUsingPost**
+    - 请求参数变更
+      - `+ params.uniqueKey`
+      - `- params.branch`
+      - `- params.checkOutTime`
+      - `- params.checkOutUserName`
+      - `- params.description`
+      - `- params.kiaguid`
+      - `- params.master`
+      - `- params.name`
+      - `- params.securityLevel`
+      - `- params.workingCopy`
+      - `* params.id: string -> int64`
+      - `* params: object<VersionModelCreateDTO> -> object<PersistableModelCreateDTO>`
+      - `* body: object<RDMParamVOVersionModelCreateDTO> -> object<RDMParamVOPersistableModelCreateDTO>`
+    - 响应参数变更
+      - `* data.preVersionId: int64 -> string`
+  - **ShowSaveUsingPost**
+    - 请求参数变更
+      - `- params.aclEntry`
+      - `- params.clsAttrs`
+      - `- params.disableFlag`
+      - `- params.extAttrMap`
+      - `- params.extAttrs`
+      - `- params.folder`
+      - `- params.lifecycleState`
+      - `- params.lifecycleTemplate`
+      - `- params.owner`
+      - `- params.parentNode`
+      - `* params.id: string -> int64`
+  - **ShowUpdateByConditionUsingPost**
+    - 请求参数变更
+      - `- params.updateDTO.aclEntry`
+      - `- params.updateDTO.clsAttrs`
+      - `- params.updateDTO.disableFlag`
+      - `- params.updateDTO.extAttrMap`
+      - `- params.updateDTO.extAttrs`
+      - `- params.updateDTO.folder`
+      - `- params.updateDTO.lifecycleState`
+      - `- params.updateDTO.owner`
+      - `- params.updateDTO.parentNode`
+      - `* params.updateDTO.id: string -> int64`
+    - 响应参数变更
+      - `+ data.className`
+      - `+ data.createTime`
+      - `+ data.creator`
+      - `+ data.id`
+      - `+ data.rdmDeleteFlag`
+      - `+ data.rdmExtensionType`
+      - `+ data.rdmVersion`
+      - `+ data.modifier`
+      - `+ data.lastUpdateTime`
+      - `+ data.tenant`
+      - `+ data.uniqueKey`
+      - `- data.applicationId`
+      - `- data.params`
+      - `* data: list<RDMParamVOPersistableModelUpdateDTO> -> list<PersistableModelViewDTO>`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRule**
+    - 响应参数变更
+      - `+ actions.smn_forwarding.message_template_name`
+  - **UpdateRule**
+    - 请求参数变更
+      - `+ actions.smn_forwarding.message_template_name`
+    - 响应参数变更
+      - `+ actions.smn_forwarding.message_template_name`
+  - **CreateRule**
+    - 请求参数变更
+      - `+ actions.smn_forwarding.message_template_name`
+    - 响应参数变更
+      - `+ actions.smn_forwarding.message_template_name`
+  - **ListRules**
+    - 响应参数变更
+      - `+ rules.actions.smn_forwarding.message_template_name`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListConnectorTasks`
+    - `CreateConnectorTask`
+    - `ShowConnectorTask`
+    - `DeleteConnectorTask`
+    - `PauseConnectorTask`
+    - `ResumeConnectorTask`
+    - `RestartConnectorTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ connector_node_num`
+  - **CreateSinkTask**
+    - 请求参数变更
+      - `+ obs_destination_descriptor.partition_format: enum value [yyyy,yyyy/MM,yyyy/MM/dd,yyyy/MM/dd/HH,yyyy/MM/dd/HH/mm]`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ connector_node_num`
+      - `+ instances.connector_node_num`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLogStream**
+    - 请求参数变更
+      - `+ log_stream_name_alias`
+      - `+ enterprise_project_name`
+
 # 3.1.83 2024-02-22
 
 ### HuaweiCloud SDK BSSINTL

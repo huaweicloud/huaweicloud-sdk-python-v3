@@ -25,7 +25,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
         'row_count': 'int',
         'input_size': 'int',
         'schema': 'list[object]',
-        'rows': 'list[list[str]]'
+        'rows': 'list[list[object]]'
     }
 
     attribute_map = {
@@ -59,7 +59,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
         :param schema: 作业结果列名称和类型。
         :type schema: list[object]
         :param rows: 作业结果集。
-        :type rows: list[list[str]]
+        :type rows: list[list[object]]
         """
         
         super(PreviewSqlJobResultResponse, self).__init__()
@@ -252,7 +252,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
         作业结果集。
 
         :return: The rows of this PreviewSqlJobResultResponse.
-        :rtype: list[list[str]]
+        :rtype: list[list[object]]
         """
         return self._rows
 
@@ -263,7 +263,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
         作业结果集。
 
         :param rows: The rows of this PreviewSqlJobResultResponse.
-        :type rows: list[list[str]]
+        :type rows: list[list[object]]
         """
         self._rows = rows
 

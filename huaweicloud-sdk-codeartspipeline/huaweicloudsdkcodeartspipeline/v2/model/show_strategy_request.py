@@ -33,7 +33,7 @@ class ShowStrategyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param rule_set_id: 规则集ID
+        :param rule_set_id: 策略ID
         :type rule_set_id: str
         :param domain_id: 租户ID
         :type domain_id: str
@@ -57,7 +57,7 @@ class ShowStrategyRequest:
     def rule_set_id(self):
         """Gets the rule_set_id of this ShowStrategyRequest.
 
-        规则集ID
+        策略ID
 
         :return: The rule_set_id of this ShowStrategyRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ShowStrategyRequest:
     def rule_set_id(self, rule_set_id):
         """Sets the rule_set_id of this ShowStrategyRequest.
 
-        规则集ID
+        策略ID
 
         :param rule_set_id: The rule_set_id of this ShowStrategyRequest.
         :type rule_set_id: str

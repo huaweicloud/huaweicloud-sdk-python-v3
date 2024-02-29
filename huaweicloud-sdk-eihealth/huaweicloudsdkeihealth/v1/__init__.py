@@ -518,7 +518,6 @@ from huaweicloudsdkeihealth.v1.model.member_dto import MemberDto
 from huaweicloudsdkeihealth.v1.model.message_rsp import MessageRsp
 from huaweicloudsdkeihealth.v1.model.mfa_rsp import MfaRsp
 from huaweicloudsdkeihealth.v1.model.model_dto import ModelDto
-from huaweicloudsdkeihealth.v1.model.model_dto_model_metric import ModelDtoModelMetric
 from huaweicloudsdkeihealth.v1.model.model_file import ModelFile
 from huaweicloudsdkeihealth.v1.model.model_file_source import ModelFileSource
 from huaweicloudsdkeihealth.v1.model.model_metric import ModelMetric

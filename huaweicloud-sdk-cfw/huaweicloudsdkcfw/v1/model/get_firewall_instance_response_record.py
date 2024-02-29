@@ -27,6 +27,8 @@ class GetFirewallInstanceResponseRecord:
         'protect_objects': 'list[ProtectObjectVO]',
         'status': 'int',
         'is_old_firewall_instance': 'bool',
+        'is_available_obs': 'bool',
+        'is_support_threat_tags': 'bool',
         'support_ipv6': 'bool',
         'feature_toggle': 'dict(str, bool)',
         'resources': 'list[FirewallInstanceResource]',
@@ -47,6 +49,8 @@ class GetFirewallInstanceResponseRecord:
         'protect_objects': 'protect_objects',
         'status': 'status',
         'is_old_firewall_instance': 'is_old_firewall_instance',
+        'is_available_obs': 'is_available_obs',
+        'is_support_threat_tags': 'is_support_threat_tags',
         'support_ipv6': 'support_ipv6',
         'feature_toggle': 'feature_toggle',
         'resources': 'resources',
@@ -56,7 +60,7 @@ class GetFirewallInstanceResponseRecord:
         'support_url_filtering': 'support_url_filtering'
     }
 
-    def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, support_ipv6=None, feature_toggle=None, resources=None, fw_instance_name=None, enterprise_project_id=None, resource_id=None, support_url_filtering=None):
+    def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, is_available_obs=None, is_support_threat_tags=None, support_ipv6=None, feature_toggle=None, resources=None, fw_instance_name=None, enterprise_project_id=None, resource_id=None, support_url_filtering=None):
         """GetFirewallInstanceResponseRecord
 
         The model defined in huaweicloud sdk
@@ -81,6 +85,10 @@ class GetFirewallInstanceResponseRecord:
         :type status: int
         :param is_old_firewall_instance: 是否为旧引擎，true表示是，false表示不是
         :type is_old_firewall_instance: bool
+        :param is_available_obs: 是否支持obs
+        :type is_available_obs: bool
+        :param is_support_threat_tags: 是否支持威胁标签
+        :type is_support_threat_tags: bool
         :param support_ipv6: 是否支持ipv6，true表示是，false表示不是
         :type support_ipv6: bool
         :param feature_toggle: 特性开关，boolean值为true表示是，false表示否
@@ -109,6 +117,8 @@ class GetFirewallInstanceResponseRecord:
         self._protect_objects = None
         self._status = None
         self._is_old_firewall_instance = None
+        self._is_available_obs = None
+        self._is_support_threat_tags = None
         self._support_ipv6 = None
         self._feature_toggle = None
         self._resources = None
@@ -138,6 +148,10 @@ class GetFirewallInstanceResponseRecord:
             self.status = status
         if is_old_firewall_instance is not None:
             self.is_old_firewall_instance = is_old_firewall_instance
+        if is_available_obs is not None:
+            self.is_available_obs = is_available_obs
+        if is_support_threat_tags is not None:
+            self.is_support_threat_tags = is_support_threat_tags
         if support_ipv6 is not None:
             self.support_ipv6 = support_ipv6
         if feature_toggle is not None:
@@ -368,6 +382,50 @@ class GetFirewallInstanceResponseRecord:
         :type is_old_firewall_instance: bool
         """
         self._is_old_firewall_instance = is_old_firewall_instance
+
+    @property
+    def is_available_obs(self):
+        """Gets the is_available_obs of this GetFirewallInstanceResponseRecord.
+
+        是否支持obs
+
+        :return: The is_available_obs of this GetFirewallInstanceResponseRecord.
+        :rtype: bool
+        """
+        return self._is_available_obs
+
+    @is_available_obs.setter
+    def is_available_obs(self, is_available_obs):
+        """Sets the is_available_obs of this GetFirewallInstanceResponseRecord.
+
+        是否支持obs
+
+        :param is_available_obs: The is_available_obs of this GetFirewallInstanceResponseRecord.
+        :type is_available_obs: bool
+        """
+        self._is_available_obs = is_available_obs
+
+    @property
+    def is_support_threat_tags(self):
+        """Gets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
+
+        是否支持威胁标签
+
+        :return: The is_support_threat_tags of this GetFirewallInstanceResponseRecord.
+        :rtype: bool
+        """
+        return self._is_support_threat_tags
+
+    @is_support_threat_tags.setter
+    def is_support_threat_tags(self, is_support_threat_tags):
+        """Sets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
+
+        是否支持威胁标签
+
+        :param is_support_threat_tags: The is_support_threat_tags of this GetFirewallInstanceResponseRecord.
+        :type is_support_threat_tags: bool
+        """
+        self._is_support_threat_tags = is_support_threat_tags
 
     @property
     def support_ipv6(self):

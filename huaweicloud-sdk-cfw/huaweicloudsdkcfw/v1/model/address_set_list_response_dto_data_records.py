@@ -21,7 +21,9 @@ class AddressSetListResponseDTODataRecords:
         'ref_count': 'int',
         'description': 'str',
         'name': 'str',
-        'address_type': 'int'
+        'address_type': 'int',
+        'object_id': 'str',
+        'address_set_type': 'int'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class AddressSetListResponseDTODataRecords:
         'ref_count': 'ref_count',
         'description': 'description',
         'name': 'name',
-        'address_type': 'address_type'
+        'address_type': 'address_type',
+        'object_id': 'object_id',
+        'address_set_type': 'address_set_type'
     }
 
-    def __init__(self, set_id=None, ref_count=None, description=None, name=None, address_type=None):
+    def __init__(self, set_id=None, ref_count=None, description=None, name=None, address_type=None, object_id=None, address_set_type=None):
         """AddressSetListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class AddressSetListResponseDTODataRecords:
         :type name: str
         :param address_type: 地址类型0 ipv4,1 ipv6
         :type address_type: int
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        :type object_id: str
+        :param address_set_type: 地址组类型，0表示自定义地址组，1表示预定义地址组
+        :type address_set_type: int
         """
         
         
@@ -56,6 +64,8 @@ class AddressSetListResponseDTODataRecords:
         self._description = None
         self._name = None
         self._address_type = None
+        self._object_id = None
+        self._address_set_type = None
         self.discriminator = None
 
         if set_id is not None:
@@ -68,6 +78,10 @@ class AddressSetListResponseDTODataRecords:
             self.name = name
         if address_type is not None:
             self.address_type = address_type
+        if object_id is not None:
+            self.object_id = object_id
+        if address_set_type is not None:
+            self.address_set_type = address_set_type
 
     @property
     def set_id(self):
@@ -178,6 +192,50 @@ class AddressSetListResponseDTODataRecords:
         :type address_type: int
         """
         self._address_type = address_type
+
+    @property
+    def object_id(self):
+        """Gets the object_id of this AddressSetListResponseDTODataRecords.
+
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+
+        :return: The object_id of this AddressSetListResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._object_id
+
+    @object_id.setter
+    def object_id(self, object_id):
+        """Sets the object_id of this AddressSetListResponseDTODataRecords.
+
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+
+        :param object_id: The object_id of this AddressSetListResponseDTODataRecords.
+        :type object_id: str
+        """
+        self._object_id = object_id
+
+    @property
+    def address_set_type(self):
+        """Gets the address_set_type of this AddressSetListResponseDTODataRecords.
+
+        地址组类型，0表示自定义地址组，1表示预定义地址组
+
+        :return: The address_set_type of this AddressSetListResponseDTODataRecords.
+        :rtype: int
+        """
+        return self._address_set_type
+
+    @address_set_type.setter
+    def address_set_type(self, address_set_type):
+        """Sets the address_set_type of this AddressSetListResponseDTODataRecords.
+
+        地址组类型，0表示自定义地址组，1表示预定义地址组
+
+        :param address_set_type: The address_set_type of this AddressSetListResponseDTODataRecords.
+        :type address_set_type: int
+        """
+        self._address_set_type = address_set_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

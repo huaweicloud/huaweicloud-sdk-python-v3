@@ -21,7 +21,7 @@ class CreateFunctionTriggerResponse(SdkResponse):
         'trigger_id': 'str',
         'trigger_type_code': 'str',
         'trigger_status': 'str',
-        'event_data': 'TriggerEventDataRequestBody',
+        'event_data': 'TriggerEventDataResponseBody',
         'last_updated_time': 'datetime',
         'created_time': 'datetime'
     }
@@ -47,7 +47,7 @@ class CreateFunctionTriggerResponse(SdkResponse):
         :param trigger_status: \&quot;触发器状态\&quot;  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
         :type trigger_status: str
         :param event_data: 
-        :type event_data: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataRequestBody`
+        :type event_data: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataResponseBody`
         :param last_updated_time: 最后更新时间。
         :type last_updated_time: datetime
         :param created_time: 触发器创建时间。
@@ -148,7 +148,7 @@ class CreateFunctionTriggerResponse(SdkResponse):
         """Gets the event_data of this CreateFunctionTriggerResponse.
 
         :return: The event_data of this CreateFunctionTriggerResponse.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataRequestBody`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataResponseBody`
         """
         return self._event_data
 
@@ -157,7 +157,7 @@ class CreateFunctionTriggerResponse(SdkResponse):
         """Sets the event_data of this CreateFunctionTriggerResponse.
 
         :param event_data: The event_data of this CreateFunctionTriggerResponse.
-        :type event_data: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataRequestBody`
+        :type event_data: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataResponseBody`
         """
         self._event_data = event_data
 

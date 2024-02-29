@@ -17,56 +17,28 @@ class UpdateTrackerReq:
     sensitive_list = []
 
     openapi_types = {
-        'bucket_lifecycle': 'str',
         'data_event': 'list[DataEvent]'
     }
 
     attribute_map = {
-        'bucket_lifecycle': 'bucket_lifecycle',
         'data_event': 'data_event'
     }
 
-    def __init__(self, bucket_lifecycle=None, data_event=None):
+    def __init__(self, data_event=None):
         """UpdateTrackerReq
 
         The model defined in huaweicloud sdk
 
-        :param bucket_lifecycle: 转储生命周期
-        :type bucket_lifecycle: str
         :param data_event: 审计数据类型列表
         :type data_event: list[:class:`huaweicloudsdkeihealth.v1.DataEvent`]
         """
         
         
 
-        self._bucket_lifecycle = None
         self._data_event = None
         self.discriminator = None
 
-        self.bucket_lifecycle = bucket_lifecycle
         self.data_event = data_event
-
-    @property
-    def bucket_lifecycle(self):
-        """Gets the bucket_lifecycle of this UpdateTrackerReq.
-
-        转储生命周期
-
-        :return: The bucket_lifecycle of this UpdateTrackerReq.
-        :rtype: str
-        """
-        return self._bucket_lifecycle
-
-    @bucket_lifecycle.setter
-    def bucket_lifecycle(self, bucket_lifecycle):
-        """Sets the bucket_lifecycle of this UpdateTrackerReq.
-
-        转储生命周期
-
-        :param bucket_lifecycle: The bucket_lifecycle of this UpdateTrackerReq.
-        :type bucket_lifecycle: str
-        """
-        self._bucket_lifecycle = bucket_lifecycle
 
     @property
     def data_event(self):

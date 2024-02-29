@@ -10,12 +10,15 @@ class SmsRegion:
                         "https://sms.ap-southeast-1.myhuaweicloud.com")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://sms.ap-southeast-3.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://sms.my-kualalumpur-1.alphaedge.tmone.com.my")
     EU_WEST_101 = Region("eu-west-101",
                         "https://sms.eu-west-101.myhuaweicloud.eu")
 
     static_fields = {
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "eu-west-101": EU_WEST_101,
     }
 

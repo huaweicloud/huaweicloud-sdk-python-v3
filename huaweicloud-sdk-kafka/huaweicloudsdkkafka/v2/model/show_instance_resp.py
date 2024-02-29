@@ -76,6 +76,7 @@ class ShowInstanceResp:
         'ipv6_enable': 'bool',
         'ipv6_connect_addresses': 'list[str]',
         'connector_enable': 'bool',
+        'connector_node_num': 'int',
         'connector_id': 'str',
         'rest_enable': 'bool',
         'rest_connect_address': 'str',
@@ -159,6 +160,7 @@ class ShowInstanceResp:
         'ipv6_enable': 'ipv6_enable',
         'ipv6_connect_addresses': 'ipv6_connect_addresses',
         'connector_enable': 'connector_enable',
+        'connector_node_num': 'connector_node_num',
         'connector_id': 'connector_id',
         'rest_enable': 'rest_enable',
         'rest_connect_address': 'rest_connect_address',
@@ -182,7 +184,7 @@ class ShowInstanceResp:
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -305,6 +307,8 @@ class ShowInstanceResp:
         :type ipv6_connect_addresses: list[str]
         :param connector_enable: 是否开启转储。新规格产品暂不支持开启转储。
         :type connector_enable: bool
+        :param connector_node_num: connector节点数量。
+        :type connector_node_num: int
         :param connector_id: 转储任务ID。
         :type connector_id: str
         :param rest_enable: 是否开启Kafka rest功能。
@@ -410,6 +414,7 @@ class ShowInstanceResp:
         self._ipv6_enable = None
         self._ipv6_connect_addresses = None
         self._connector_enable = None
+        self._connector_node_num = None
         self._connector_id = None
         self._rest_enable = None
         self._rest_connect_address = None
@@ -551,6 +556,8 @@ class ShowInstanceResp:
             self.ipv6_connect_addresses = ipv6_connect_addresses
         if connector_enable is not None:
             self.connector_enable = connector_enable
+        if connector_node_num is not None:
+            self.connector_node_num = connector_node_num
         if connector_id is not None:
             self.connector_id = connector_id
         if rest_enable is not None:
@@ -1891,6 +1898,28 @@ class ShowInstanceResp:
         :type connector_enable: bool
         """
         self._connector_enable = connector_enable
+
+    @property
+    def connector_node_num(self):
+        """Gets the connector_node_num of this ShowInstanceResp.
+
+        connector节点数量。
+
+        :return: The connector_node_num of this ShowInstanceResp.
+        :rtype: int
+        """
+        return self._connector_node_num
+
+    @connector_node_num.setter
+    def connector_node_num(self, connector_node_num):
+        """Sets the connector_node_num of this ShowInstanceResp.
+
+        connector节点数量。
+
+        :param connector_node_num: The connector_node_num of this ShowInstanceResp.
+        :type connector_node_num: int
+        """
+        self._connector_node_num = connector_node_num
 
     @property
     def connector_id(self):
