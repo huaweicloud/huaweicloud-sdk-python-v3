@@ -35,8 +35,8 @@ class SmartConnectTaskReqSourceConfig:
         'security_protocol': 'str',
         'direction': 'str',
         'sync_consumer_offsets_enabled': 'bool',
-        'replication_factor': 'str',
-        'task_num': 'str',
+        'replication_factor': 'int',
+        'task_num': 'int',
         'rename_topic_enable': 'bool',
         'provenance_header_enabled': 'bool',
         'consumer_strategy': 'str',
@@ -114,9 +114,9 @@ class SmartConnectTaskReqSourceConfig:
         :param sync_consumer_offsets_enabled: 是否同步消费进度。（仅源端类型为Kafka时需要填写）
         :type sync_consumer_offsets_enabled: bool
         :param replication_factor: 在对端实例中自动创建Topic时，指定Topic的副本数，此参数值不能超过对端实例的代理数。如果对端实例中设置了“default.replication.factor”，此参数的优先级高于“default.replication.factor”。（仅源端类型为Kafka时需要填写）
-        :type replication_factor: str
+        :type replication_factor: int
         :param task_num: 数据复制的任务数。默认值为2，建议保持默认值。如果“同步方式”为“双向”，实际任务数&#x3D;设置的任务数*2。（仅源端类型为Kafka时需要填写）
-        :type task_num: str
+        :type task_num: int
         :param rename_topic_enable: 是否重命名Topic，在目标Topic名称前添加源端Kafka实例的别名，形成目标Topic新的名称。（仅源端类型为Kafka时需要填写）
         :type rename_topic_enable: bool
         :param provenance_header_enabled: 目标Topic接收复制的消息，此消息header中包含消息来源。两端实例数据双向复制时，请开启“添加来源header”，防止循环复制。（仅源端类型为Kafka时需要填写）
@@ -612,7 +612,7 @@ class SmartConnectTaskReqSourceConfig:
         在对端实例中自动创建Topic时，指定Topic的副本数，此参数值不能超过对端实例的代理数。如果对端实例中设置了“default.replication.factor”，此参数的优先级高于“default.replication.factor”。（仅源端类型为Kafka时需要填写）
 
         :return: The replication_factor of this SmartConnectTaskReqSourceConfig.
-        :rtype: str
+        :rtype: int
         """
         return self._replication_factor
 
@@ -623,7 +623,7 @@ class SmartConnectTaskReqSourceConfig:
         在对端实例中自动创建Topic时，指定Topic的副本数，此参数值不能超过对端实例的代理数。如果对端实例中设置了“default.replication.factor”，此参数的优先级高于“default.replication.factor”。（仅源端类型为Kafka时需要填写）
 
         :param replication_factor: The replication_factor of this SmartConnectTaskReqSourceConfig.
-        :type replication_factor: str
+        :type replication_factor: int
         """
         self._replication_factor = replication_factor
 
@@ -634,7 +634,7 @@ class SmartConnectTaskReqSourceConfig:
         数据复制的任务数。默认值为2，建议保持默认值。如果“同步方式”为“双向”，实际任务数=设置的任务数*2。（仅源端类型为Kafka时需要填写）
 
         :return: The task_num of this SmartConnectTaskReqSourceConfig.
-        :rtype: str
+        :rtype: int
         """
         return self._task_num
 
@@ -645,7 +645,7 @@ class SmartConnectTaskReqSourceConfig:
         数据复制的任务数。默认值为2，建议保持默认值。如果“同步方式”为“双向”，实际任务数=设置的任务数*2。（仅源端类型为Kafka时需要填写）
 
         :param task_num: The task_num of this SmartConnectTaskReqSourceConfig.
-        :type task_num: str
+        :type task_num: int
         """
         self._task_num = task_num
 

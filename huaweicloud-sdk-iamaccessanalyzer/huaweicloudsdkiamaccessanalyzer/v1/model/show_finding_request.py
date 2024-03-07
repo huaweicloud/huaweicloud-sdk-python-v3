@@ -33,7 +33,7 @@ class ShowFindingRequest:
 
         :param analyzer_id: 分析器的唯一标识符。
         :type analyzer_id: str
-        :param finding_id: 要检索的结果的ID。
+        :param finding_id: 访问分析结果的唯一标识符。
         :type finding_id: str
         """
         
@@ -72,7 +72,7 @@ class ShowFindingRequest:
     def finding_id(self):
         """Gets the finding_id of this ShowFindingRequest.
 
-        要检索的结果的ID。
+        访问分析结果的唯一标识符。
 
         :return: The finding_id of this ShowFindingRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowFindingRequest:
     def finding_id(self, finding_id):
         """Sets the finding_id of this ShowFindingRequest.
 
-        要检索的结果的ID。
+        访问分析结果的唯一标识符。
 
         :param finding_id: The finding_id of this ShowFindingRequest.
         :type finding_id: str

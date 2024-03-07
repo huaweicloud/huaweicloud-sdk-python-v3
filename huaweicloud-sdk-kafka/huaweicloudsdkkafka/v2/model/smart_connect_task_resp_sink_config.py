@@ -20,7 +20,7 @@ class SmartConnectTaskRespSinkConfig:
         'redis_address': 'str',
         'redis_type': 'str',
         'dcs_instance_id': 'str',
-        'target_db': 'str',
+        'target_db': 'int',
         'consumer_strategy': 'str',
         'destination_file_type': 'str',
         'deliver_time_interval': 'int',
@@ -80,7 +80,7 @@ class SmartConnectTaskRespSinkConfig:
         :param dcs_instance_id: DCS实例ID。（仅目标端类型为Redis时会显示）
         :type dcs_instance_id: str
         :param target_db: 目标数据库，默认为-1。（仅目标端类型为Redis时会显示）
-        :type target_db: str
+        :type target_db: int
         :param consumer_strategy: 转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时会显示）
         :type consumer_strategy: str
         :param destination_file_type: 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示）
@@ -268,7 +268,7 @@ class SmartConnectTaskRespSinkConfig:
         目标数据库，默认为-1。（仅目标端类型为Redis时会显示）
 
         :return: The target_db of this SmartConnectTaskRespSinkConfig.
-        :rtype: str
+        :rtype: int
         """
         return self._target_db
 
@@ -279,7 +279,7 @@ class SmartConnectTaskRespSinkConfig:
         目标数据库，默认为-1。（仅目标端类型为Redis时会显示）
 
         :param target_db: The target_db of this SmartConnectTaskRespSinkConfig.
-        :type target_db: str
+        :type target_db: int
         """
         self._target_db = target_db
 

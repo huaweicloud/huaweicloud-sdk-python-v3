@@ -35,7 +35,7 @@ class ListPreviewFindingsRequest:
 
         :param analyzer_id: 分析器的唯一标识符。
         :type analyzer_id: str
-        :param access_preview_id: 分析预览的唯一标识符。
+        :param access_preview_id: 访问预览的唯一标识符。
         :type access_preview_id: str
         :param body: Body of the ListPreviewFindingsRequest
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListPreviewFindingsReqBody`
@@ -79,7 +79,7 @@ class ListPreviewFindingsRequest:
     def access_preview_id(self):
         """Gets the access_preview_id of this ListPreviewFindingsRequest.
 
-        分析预览的唯一标识符。
+        访问预览的唯一标识符。
 
         :return: The access_preview_id of this ListPreviewFindingsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ListPreviewFindingsRequest:
     def access_preview_id(self, access_preview_id):
         """Sets the access_preview_id of this ListPreviewFindingsRequest.
 
-        分析预览的唯一标识符。
+        访问预览的唯一标识符。
 
         :param access_preview_id: The access_preview_id of this ListPreviewFindingsRequest.
         :type access_preview_id: str

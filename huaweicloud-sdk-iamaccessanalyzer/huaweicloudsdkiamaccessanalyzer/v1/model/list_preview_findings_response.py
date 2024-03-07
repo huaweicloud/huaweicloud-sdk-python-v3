@@ -32,7 +32,7 @@ class ListPreviewFindingsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param findings: 
+        :param findings: 访问预览生成的分析结果列表。
         :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewFinding`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -53,6 +53,8 @@ class ListPreviewFindingsResponse(SdkResponse):
     def findings(self):
         """Gets the findings of this ListPreviewFindingsResponse.
 
+        访问预览生成的分析结果列表。
+
         :return: The findings of this ListPreviewFindingsResponse.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewFinding`]
         """
@@ -61,6 +63,8 @@ class ListPreviewFindingsResponse(SdkResponse):
     @findings.setter
     def findings(self, findings):
         """Sets the findings of this ListPreviewFindingsResponse.
+
+        访问预览生成的分析结果列表。
 
         :param findings: The findings of this ListPreviewFindingsResponse.
         :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewFinding`]

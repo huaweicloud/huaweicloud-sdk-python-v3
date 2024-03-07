@@ -1254,6 +1254,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def create_sql_limit(self, request):
+        """新增SQL限流
+
+        新增SQL限流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSqlLimit
+        :type request: :class:`huaweicloudsdkrds.v3.CreateSqlLimitRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateSqlLimitResponse`
+        """
+        http_info = self._create_sql_limit_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_sql_limit_invoker(self, request):
+        http_info = self._create_sql_limit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_sql_limit_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlLimitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_xel_log_download(self, request):
         """获取扩展日志下载信息
 
@@ -1772,6 +1839,73 @@ class RdsClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_sql_limit(self, request):
+        """删除SQL限流
+
+        删除SQL限流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSqlLimit
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlLimitRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlLimitResponse`
+        """
+        http_info = self._delete_sql_limit_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_sql_limit_invoker(self, request):
+        http_info = self._delete_sql_limit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_sql_limit_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSqlLimitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -4859,6 +4993,77 @@ class RdsClient(Client):
 
         return http_info
 
+    def list_sql_limit(self, request):
+        """查询SQL限流列表
+
+        查询SQL限流列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSqlLimit
+        :type request: :class:`huaweicloudsdkrds.v3.ListSqlLimitRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSqlLimitResponse`
+        """
+        http_info = self._list_sql_limit_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_limit_invoker(self, request):
+        http_info = self._list_sql_limit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sql_limit_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlLimitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'db_name' in local_var_params:
+            query_params.append(('db_name', local_var_params['db_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_ssl_cert_download_link(self, request):
         """获取SSL证书下载地址
 
@@ -7523,6 +7728,71 @@ class RdsClient(Client):
 
         return http_info
 
+    def show_storage_used_space(self, request):
+        """查询实例磁盘空间使用量
+
+        查询实例磁盘空间使用量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowStorageUsedSpace
+        :type request: :class:`huaweicloudsdkrds.v3.ShowStorageUsedSpaceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowStorageUsedSpaceResponse`
+        """
+        http_info = self._show_storage_used_space_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_storage_used_space_invoker(self, request):
+        http_info = self._show_storage_used_space_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_storage_used_space_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/storage-used-space",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStorageUsedSpaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_tde_status(self, request):
         """根据实例id查询sqlserver TDE状态
 
@@ -8339,6 +8609,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def switch_sql_limit(self, request):
+        """开启/关闭/禁用所有SQL限流
+
+        开启/关闭/禁用所有SQL限流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchSqlLimit
+        :type request: :class:`huaweicloudsdkrds.v3.SwitchSqlLimitRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SwitchSqlLimitResponse`
+        """
+        http_info = self._switch_sql_limit_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_sql_limit_invoker(self, request):
+        http_info = self._switch_sql_limit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_sql_limit_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchSqlLimitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def switch_ssl(self, request):
         """设置SSL数据加密
 
@@ -9000,6 +9337,73 @@ class RdsClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sql_limit(self, request):
+        """修改SQL限流
+
+        修改SQL限流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSqlLimit
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateSqlLimitRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateSqlLimitResponse`
+        """
+        http_info = self._update_sql_limit_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sql_limit_invoker(self, request):
+        http_info = self._update_sql_limit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_sql_limit_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSqlLimitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 

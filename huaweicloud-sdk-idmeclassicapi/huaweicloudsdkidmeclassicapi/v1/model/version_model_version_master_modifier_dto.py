@@ -17,7 +17,7 @@ class VersionModelVersionMasterModifierDTO:
     sensitive_list = []
 
     openapi_types = {
-        'master_id': 'int',
+        'master_id': 'str',
         'modifier': 'str',
         'version': 'str'
     }
@@ -34,7 +34,7 @@ class VersionModelVersionMasterModifierDTO:
         The model defined in huaweicloud sdk
 
         :param master_id: 父模型ID。
-        :type master_id: int
+        :type master_id: str
         :param modifier: 修改人。
         :type modifier: str
         :param version: 版本对象。
@@ -62,7 +62,7 @@ class VersionModelVersionMasterModifierDTO:
         父模型ID。
 
         :return: The master_id of this VersionModelVersionMasterModifierDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._master_id
 
@@ -73,7 +73,7 @@ class VersionModelVersionMasterModifierDTO:
         父模型ID。
 
         :param master_id: The master_id of this VersionModelVersionMasterModifierDTO.
-        :type master_id: int
+        :type master_id: str
         """
         self._master_id = master_id
 

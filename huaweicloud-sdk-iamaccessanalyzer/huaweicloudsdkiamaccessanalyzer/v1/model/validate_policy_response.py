@@ -32,7 +32,7 @@ class ValidatePolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param findings: 
+        :param findings: 可用于改进策略的可操作建议。
         :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyFinding`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -53,6 +53,8 @@ class ValidatePolicyResponse(SdkResponse):
     def findings(self):
         """Gets the findings of this ValidatePolicyResponse.
 
+        可用于改进策略的可操作建议。
+
         :return: The findings of this ValidatePolicyResponse.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyFinding`]
         """
@@ -61,6 +63,8 @@ class ValidatePolicyResponse(SdkResponse):
     @findings.setter
     def findings(self, findings):
         """Sets the findings of this ValidatePolicyResponse.
+
+        可用于改进策略的可操作建议。
 
         :param findings: The findings of this ValidatePolicyResponse.
         :type findings: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyFinding`]

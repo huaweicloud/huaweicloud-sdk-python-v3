@@ -19,7 +19,7 @@ class SendKafkaMessageRequestBody:
     openapi_types = {
         'topic': 'str',
         'body': 'str',
-        'property_list': 'list[object]'
+        'property_list': 'list[SendKafkaMessageRequestBodyPropertyList]'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class SendKafkaMessageRequestBody:
         :param body: 消息内容
         :type body: str
         :param property_list: topic的分区信息等
-        :type property_list: list[object]
+        :type property_list: list[:class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequestBodyPropertyList`]
         """
         
         
@@ -103,7 +103,7 @@ class SendKafkaMessageRequestBody:
         topic的分区信息等
 
         :return: The property_list of this SendKafkaMessageRequestBody.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequestBodyPropertyList`]
         """
         return self._property_list
 
@@ -114,7 +114,7 @@ class SendKafkaMessageRequestBody:
         topic的分区信息等
 
         :param property_list: The property_list of this SendKafkaMessageRequestBody.
-        :type property_list: list[object]
+        :type property_list: list[:class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequestBodyPropertyList`]
         """
         self._property_list = property_list
 

@@ -33,7 +33,7 @@ class ValidatePolicyReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param policy_document: 此策略的json格式策略文档。
+        :param policy_document: 该策略JSON格式策略文档。
         :type policy_document: str
         :param policy_type: 
         :type policy_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyType`
@@ -57,7 +57,7 @@ class ValidatePolicyReqBody:
     def policy_document(self):
         """Gets the policy_document of this ValidatePolicyReqBody.
 
-        此策略的json格式策略文档。
+        该策略JSON格式策略文档。
 
         :return: The policy_document of this ValidatePolicyReqBody.
         :rtype: str
@@ -68,7 +68,7 @@ class ValidatePolicyReqBody:
     def policy_document(self, policy_document):
         """Sets the policy_document of this ValidatePolicyReqBody.
 
-        此策略的json格式策略文档。
+        该策略JSON格式策略文档。
 
         :param policy_document: The policy_document of this ValidatePolicyReqBody.
         :type policy_document: str

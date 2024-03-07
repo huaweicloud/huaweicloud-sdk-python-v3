@@ -19,7 +19,7 @@ class VersionModelCompareVersionVO:
     openapi_types = {
         'basic_version': 'str',
         'correlation_version': 'str',
-        'id': 'int'
+        'id': 'str'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class VersionModelCompareVersionVO:
         :param correlation_version: 对比版本号。
         :type correlation_version: str
         :param id: 主对象ID。
-        :type id: int
+        :type id: str
         """
         
         
@@ -103,7 +103,7 @@ class VersionModelCompareVersionVO:
         主对象ID。
 
         :return: The id of this VersionModelCompareVersionVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -114,7 +114,7 @@ class VersionModelCompareVersionVO:
         主对象ID。
 
         :param id: The id of this VersionModelCompareVersionVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 

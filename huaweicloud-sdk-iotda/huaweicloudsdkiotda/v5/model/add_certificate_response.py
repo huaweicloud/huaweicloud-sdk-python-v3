@@ -23,6 +23,8 @@ class AddCertificateResponse(SdkResponse):
         'owner': 'str',
         'status': 'bool',
         'verify_code': 'str',
+        'provision_enable': 'bool',
+        'template_id': 'str',
         'create_date': 'str',
         'effective_date': 'str',
         'expiry_date': 'str'
@@ -34,12 +36,14 @@ class AddCertificateResponse(SdkResponse):
         'owner': 'owner',
         'status': 'status',
         'verify_code': 'verify_code',
+        'provision_enable': 'provision_enable',
+        'template_id': 'template_id',
         'create_date': 'create_date',
         'effective_date': 'effective_date',
         'expiry_date': 'expiry_date'
     }
 
-    def __init__(self, certificate_id=None, cn_name=None, owner=None, status=None, verify_code=None, create_date=None, effective_date=None, expiry_date=None):
+    def __init__(self, certificate_id=None, cn_name=None, owner=None, status=None, verify_code=None, provision_enable=None, template_id=None, create_date=None, effective_date=None, expiry_date=None):
         """AddCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +58,10 @@ class AddCertificateResponse(SdkResponse):
         :type status: bool
         :param verify_code: CA证书验证码。
         :type verify_code: str
+        :param provision_enable: 是否开启自注册能力，当为true时该功能必须配合自注册模板使用，true：是，false：否。
+        :type provision_enable: bool
+        :param template_id: 绑定的自注册模板ID。
+        :type template_id: str
         :param create_date: 创建证书日期。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
         :type create_date: str
         :param effective_date: CA证书生效日期。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
@@ -69,6 +77,8 @@ class AddCertificateResponse(SdkResponse):
         self._owner = None
         self._status = None
         self._verify_code = None
+        self._provision_enable = None
+        self._template_id = None
         self._create_date = None
         self._effective_date = None
         self._expiry_date = None
@@ -84,6 +94,10 @@ class AddCertificateResponse(SdkResponse):
             self.status = status
         if verify_code is not None:
             self.verify_code = verify_code
+        if provision_enable is not None:
+            self.provision_enable = provision_enable
+        if template_id is not None:
+            self.template_id = template_id
         if create_date is not None:
             self.create_date = create_date
         if effective_date is not None:
@@ -200,6 +214,50 @@ class AddCertificateResponse(SdkResponse):
         :type verify_code: str
         """
         self._verify_code = verify_code
+
+    @property
+    def provision_enable(self):
+        """Gets the provision_enable of this AddCertificateResponse.
+
+        是否开启自注册能力，当为true时该功能必须配合自注册模板使用，true：是，false：否。
+
+        :return: The provision_enable of this AddCertificateResponse.
+        :rtype: bool
+        """
+        return self._provision_enable
+
+    @provision_enable.setter
+    def provision_enable(self, provision_enable):
+        """Sets the provision_enable of this AddCertificateResponse.
+
+        是否开启自注册能力，当为true时该功能必须配合自注册模板使用，true：是，false：否。
+
+        :param provision_enable: The provision_enable of this AddCertificateResponse.
+        :type provision_enable: bool
+        """
+        self._provision_enable = provision_enable
+
+    @property
+    def template_id(self):
+        """Gets the template_id of this AddCertificateResponse.
+
+        绑定的自注册模板ID。
+
+        :return: The template_id of this AddCertificateResponse.
+        :rtype: str
+        """
+        return self._template_id
+
+    @template_id.setter
+    def template_id(self, template_id):
+        """Sets the template_id of this AddCertificateResponse.
+
+        绑定的自注册模板ID。
+
+        :param template_id: The template_id of this AddCertificateResponse.
+        :type template_id: str
+        """
+        self._template_id = template_id
 
     @property
     def create_date(self):

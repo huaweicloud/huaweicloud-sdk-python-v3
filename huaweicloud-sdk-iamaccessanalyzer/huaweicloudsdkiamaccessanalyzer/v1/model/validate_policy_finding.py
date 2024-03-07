@@ -39,13 +39,13 @@ class ValidatePolicyFinding:
 
         :param finding_details: 一条本地化消息提供了如何解决该问题的指导。
         :type finding_details: str
-        :param finding_type: 影响级别。  安全警告：策略允许的范围过大。  错误：策略不符合策略语法规则。  警告：非安全问题，策略不符合策略编写最佳实践。  建议：改进策略，不影响访问范围。 
+        :param finding_type: 影响级别。  安全：策略存在安全风险，可能是允许访问的权限过于宽松等导致。  错误：存在策略无法运行的错误，如语法错误、参数错误等。存在错误的情况下策略无法创建。  警告：存在策略无法运行的警告，如参数取值类型不匹配等。存在警告的情况下策略可以创建。  建议：不影响策略运行，但策略可能不能达到预期的效果。如存在空数组、空对象条件等。 
         :type finding_type: str
-        :param issue_code: 问题码提供了与此查找结果关联的问题的标识符。
+        :param issue_code: 问题码提供了与此校验结果关联的问题的标识符。
         :type issue_code: str
-        :param learn_more_link: 指向与此查找结果关联的相关文档的链接。
+        :param learn_more_link: 指向与此校验结果关联的相关文档的链接。
         :type learn_more_link: str
-        :param locations: 策略文档中与查找结果相关的位置列表。
+        :param locations: 策略文档中与校验结果相关的位置列表。
         :type locations: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Location`]
         """
         
@@ -90,7 +90,7 @@ class ValidatePolicyFinding:
     def finding_type(self):
         """Gets the finding_type of this ValidatePolicyFinding.
 
-        影响级别。  安全警告：策略允许的范围过大。  错误：策略不符合策略语法规则。  警告：非安全问题，策略不符合策略编写最佳实践。  建议：改进策略，不影响访问范围。 
+        影响级别。  安全：策略存在安全风险，可能是允许访问的权限过于宽松等导致。  错误：存在策略无法运行的错误，如语法错误、参数错误等。存在错误的情况下策略无法创建。  警告：存在策略无法运行的警告，如参数取值类型不匹配等。存在警告的情况下策略可以创建。  建议：不影响策略运行，但策略可能不能达到预期的效果。如存在空数组、空对象条件等。 
 
         :return: The finding_type of this ValidatePolicyFinding.
         :rtype: str
@@ -101,7 +101,7 @@ class ValidatePolicyFinding:
     def finding_type(self, finding_type):
         """Sets the finding_type of this ValidatePolicyFinding.
 
-        影响级别。  安全警告：策略允许的范围过大。  错误：策略不符合策略语法规则。  警告：非安全问题，策略不符合策略编写最佳实践。  建议：改进策略，不影响访问范围。 
+        影响级别。  安全：策略存在安全风险，可能是允许访问的权限过于宽松等导致。  错误：存在策略无法运行的错误，如语法错误、参数错误等。存在错误的情况下策略无法创建。  警告：存在策略无法运行的警告，如参数取值类型不匹配等。存在警告的情况下策略可以创建。  建议：不影响策略运行，但策略可能不能达到预期的效果。如存在空数组、空对象条件等。 
 
         :param finding_type: The finding_type of this ValidatePolicyFinding.
         :type finding_type: str
@@ -112,7 +112,7 @@ class ValidatePolicyFinding:
     def issue_code(self):
         """Gets the issue_code of this ValidatePolicyFinding.
 
-        问题码提供了与此查找结果关联的问题的标识符。
+        问题码提供了与此校验结果关联的问题的标识符。
 
         :return: The issue_code of this ValidatePolicyFinding.
         :rtype: str
@@ -123,7 +123,7 @@ class ValidatePolicyFinding:
     def issue_code(self, issue_code):
         """Sets the issue_code of this ValidatePolicyFinding.
 
-        问题码提供了与此查找结果关联的问题的标识符。
+        问题码提供了与此校验结果关联的问题的标识符。
 
         :param issue_code: The issue_code of this ValidatePolicyFinding.
         :type issue_code: str
@@ -134,7 +134,7 @@ class ValidatePolicyFinding:
     def learn_more_link(self):
         """Gets the learn_more_link of this ValidatePolicyFinding.
 
-        指向与此查找结果关联的相关文档的链接。
+        指向与此校验结果关联的相关文档的链接。
 
         :return: The learn_more_link of this ValidatePolicyFinding.
         :rtype: str
@@ -145,7 +145,7 @@ class ValidatePolicyFinding:
     def learn_more_link(self, learn_more_link):
         """Sets the learn_more_link of this ValidatePolicyFinding.
 
-        指向与此查找结果关联的相关文档的链接。
+        指向与此校验结果关联的相关文档的链接。
 
         :param learn_more_link: The learn_more_link of this ValidatePolicyFinding.
         :type learn_more_link: str
@@ -156,7 +156,7 @@ class ValidatePolicyFinding:
     def locations(self):
         """Gets the locations of this ValidatePolicyFinding.
 
-        策略文档中与查找结果相关的位置列表。
+        策略文档中与校验结果相关的位置列表。
 
         :return: The locations of this ValidatePolicyFinding.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Location`]
@@ -167,7 +167,7 @@ class ValidatePolicyFinding:
     def locations(self, locations):
         """Sets the locations of this ValidatePolicyFinding.
 
-        策略文档中与查找结果相关的位置列表。
+        策略文档中与校验结果相关的位置列表。
 
         :param locations: The locations of this ValidatePolicyFinding.
         :type locations: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Location`]

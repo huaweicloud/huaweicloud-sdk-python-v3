@@ -18,7 +18,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     openapi_types = {
         'data': 'VersionModel',
-        'master_id': 'int',
+        'master_id': 'str',
         'modifier': 'str'
     }
 
@@ -36,7 +36,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
         :param data: 
         :type data: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
         :param master_id: 主对象ID。
-        :type master_id: int
+        :type master_id: str
         :param modifier: 更新者。
         :type modifier: str
         """
@@ -79,7 +79,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
         主对象ID。
 
         :return: The master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
-        :rtype: int
+        :rtype: str
         """
         return self._master_id
 
@@ -90,7 +90,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
         主对象ID。
 
         :param master_id: The master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
-        :type master_id: int
+        :type master_id: str
         """
         self._master_id = master_id
 

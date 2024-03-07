@@ -55,31 +55,31 @@ class PreviewFinding:
 
         The model defined in huaweicloud sdk
 
-        :param action: 访问信任区域内资源的外部主体。
+        :param action: 允许外部主体使用的操作。
         :type action: list[str]
-        :param change_type: 结果状态的变化
+        :param change_type: 结果状态的变化。
         :type change_type: str
-        :param condition: 
+        :param condition: 分析的策略语句中导致访问预览分析结果的条件。
         :type condition: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingCondition`]
-        :param created_at: 生成查找结果的时间。
+        :param created_at: 生成预览访问分析结果的时间。
         :type created_at: datetime
-        :param existing_finding_id: 要检索的结果的ID。
+        :param existing_finding_id: 访问分析结果的唯一标识符。
         :type existing_finding_id: str
         :param existing_finding_status: 结果的当前状态。
         :type existing_finding_status: str
-        :param id: 要检索的结果的ID。
+        :param id: 访问分析结果的唯一标识符。
         :type id: str
-        :param is_public: 表示生成查找结果的策略是否允许公共访问资源。
+        :param is_public: 表示生成访问分析结果的策略是否允许公共访问资源。
         :type is_public: bool
         :param principal: 
         :type principal: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
-        :param resource: 唯一的资源名称。
+        :param resource: 访问分析的唯一资源标识。
         :type resource: str
-        :param resource_owner_account: 拥有资源的帐户ID。
+        :param resource_owner_account: 拥有资源的账户ID。
         :type resource_owner_account: str
         :param resource_type: 
         :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
-        :param sources: 
+        :param sources: 访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
         :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
         :param status: 变化后的状态。
         :type status: str
@@ -125,7 +125,7 @@ class PreviewFinding:
     def action(self):
         """Gets the action of this PreviewFinding.
 
-        访问信任区域内资源的外部主体。
+        允许外部主体使用的操作。
 
         :return: The action of this PreviewFinding.
         :rtype: list[str]
@@ -136,7 +136,7 @@ class PreviewFinding:
     def action(self, action):
         """Sets the action of this PreviewFinding.
 
-        访问信任区域内资源的外部主体。
+        允许外部主体使用的操作。
 
         :param action: The action of this PreviewFinding.
         :type action: list[str]
@@ -147,7 +147,7 @@ class PreviewFinding:
     def change_type(self):
         """Gets the change_type of this PreviewFinding.
 
-        结果状态的变化
+        结果状态的变化。
 
         :return: The change_type of this PreviewFinding.
         :rtype: str
@@ -158,7 +158,7 @@ class PreviewFinding:
     def change_type(self, change_type):
         """Sets the change_type of this PreviewFinding.
 
-        结果状态的变化
+        结果状态的变化。
 
         :param change_type: The change_type of this PreviewFinding.
         :type change_type: str
@@ -169,6 +169,8 @@ class PreviewFinding:
     def condition(self):
         """Gets the condition of this PreviewFinding.
 
+        分析的策略语句中导致访问预览分析结果的条件。
+
         :return: The condition of this PreviewFinding.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingCondition`]
         """
@@ -177,6 +179,8 @@ class PreviewFinding:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this PreviewFinding.
+
+        分析的策略语句中导致访问预览分析结果的条件。
 
         :param condition: The condition of this PreviewFinding.
         :type condition: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingCondition`]
@@ -187,7 +191,7 @@ class PreviewFinding:
     def created_at(self):
         """Gets the created_at of this PreviewFinding.
 
-        生成查找结果的时间。
+        生成预览访问分析结果的时间。
 
         :return: The created_at of this PreviewFinding.
         :rtype: datetime
@@ -198,7 +202,7 @@ class PreviewFinding:
     def created_at(self, created_at):
         """Sets the created_at of this PreviewFinding.
 
-        生成查找结果的时间。
+        生成预览访问分析结果的时间。
 
         :param created_at: The created_at of this PreviewFinding.
         :type created_at: datetime
@@ -209,7 +213,7 @@ class PreviewFinding:
     def existing_finding_id(self):
         """Gets the existing_finding_id of this PreviewFinding.
 
-        要检索的结果的ID。
+        访问分析结果的唯一标识符。
 
         :return: The existing_finding_id of this PreviewFinding.
         :rtype: str
@@ -220,7 +224,7 @@ class PreviewFinding:
     def existing_finding_id(self, existing_finding_id):
         """Sets the existing_finding_id of this PreviewFinding.
 
-        要检索的结果的ID。
+        访问分析结果的唯一标识符。
 
         :param existing_finding_id: The existing_finding_id of this PreviewFinding.
         :type existing_finding_id: str
@@ -253,7 +257,7 @@ class PreviewFinding:
     def id(self):
         """Gets the id of this PreviewFinding.
 
-        要检索的结果的ID。
+        访问分析结果的唯一标识符。
 
         :return: The id of this PreviewFinding.
         :rtype: str
@@ -264,7 +268,7 @@ class PreviewFinding:
     def id(self, id):
         """Sets the id of this PreviewFinding.
 
-        要检索的结果的ID。
+        访问分析结果的唯一标识符。
 
         :param id: The id of this PreviewFinding.
         :type id: str
@@ -275,7 +279,7 @@ class PreviewFinding:
     def is_public(self):
         """Gets the is_public of this PreviewFinding.
 
-        表示生成查找结果的策略是否允许公共访问资源。
+        表示生成访问分析结果的策略是否允许公共访问资源。
 
         :return: The is_public of this PreviewFinding.
         :rtype: bool
@@ -286,7 +290,7 @@ class PreviewFinding:
     def is_public(self, is_public):
         """Sets the is_public of this PreviewFinding.
 
-        表示生成查找结果的策略是否允许公共访问资源。
+        表示生成访问分析结果的策略是否允许公共访问资源。
 
         :param is_public: The is_public of this PreviewFinding.
         :type is_public: bool
@@ -315,7 +319,7 @@ class PreviewFinding:
     def resource(self):
         """Gets the resource of this PreviewFinding.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :return: The resource of this PreviewFinding.
         :rtype: str
@@ -326,7 +330,7 @@ class PreviewFinding:
     def resource(self, resource):
         """Sets the resource of this PreviewFinding.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :param resource: The resource of this PreviewFinding.
         :type resource: str
@@ -337,7 +341,7 @@ class PreviewFinding:
     def resource_owner_account(self):
         """Gets the resource_owner_account of this PreviewFinding.
 
-        拥有资源的帐户ID。
+        拥有资源的账户ID。
 
         :return: The resource_owner_account of this PreviewFinding.
         :rtype: str
@@ -348,7 +352,7 @@ class PreviewFinding:
     def resource_owner_account(self, resource_owner_account):
         """Sets the resource_owner_account of this PreviewFinding.
 
-        拥有资源的帐户ID。
+        拥有资源的账户ID。
 
         :param resource_owner_account: The resource_owner_account of this PreviewFinding.
         :type resource_owner_account: str
@@ -377,6 +381,8 @@ class PreviewFinding:
     def sources(self):
         """Gets the sources of this PreviewFinding.
 
+        访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
+
         :return: The sources of this PreviewFinding.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
         """
@@ -385,6 +391,8 @@ class PreviewFinding:
     @sources.setter
     def sources(self, sources):
         """Sets the sources of this PreviewFinding.
+
+        访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
         :param sources: The sources of this PreviewFinding.
         :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]

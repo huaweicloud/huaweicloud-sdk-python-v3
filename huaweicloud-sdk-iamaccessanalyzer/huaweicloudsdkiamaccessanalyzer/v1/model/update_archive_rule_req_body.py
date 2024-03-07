@@ -29,7 +29,7 @@ class UpdateArchiveRuleReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param filters: 
+        :param filters: 匹配要返回的访问分析结果的筛选器。
         :type filters: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
         """
         
@@ -44,6 +44,8 @@ class UpdateArchiveRuleReqBody:
     def filters(self):
         """Gets the filters of this UpdateArchiveRuleReqBody.
 
+        匹配要返回的访问分析结果的筛选器。
+
         :return: The filters of this UpdateArchiveRuleReqBody.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
         """
@@ -52,6 +54,8 @@ class UpdateArchiveRuleReqBody:
     @filters.setter
     def filters(self, filters):
         """Sets the filters of this UpdateArchiveRuleReqBody.
+
+        匹配要返回的访问分析结果的筛选器。
 
         :param filters: The filters of this UpdateArchiveRuleReqBody.
         :type filters: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]

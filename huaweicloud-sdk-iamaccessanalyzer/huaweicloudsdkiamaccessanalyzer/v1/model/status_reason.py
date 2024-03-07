@@ -29,7 +29,7 @@ class StatusReason:
 
         The model defined in huaweicloud sdk
 
-        :param code: 分析器的当前状态的原因。
+        :param code: 分析器当前状态的原因。
         :type code: str
         """
         
@@ -44,7 +44,7 @@ class StatusReason:
     def code(self):
         """Gets the code of this StatusReason.
 
-        分析器的当前状态的原因。
+        分析器当前状态的原因。
 
         :return: The code of this StatusReason.
         :rtype: str
@@ -55,7 +55,7 @@ class StatusReason:
     def code(self, code):
         """Sets the code of this StatusReason.
 
-        分析器的当前状态的原因。
+        分析器当前状态的原因。
 
         :param code: The code of this StatusReason.
         :type code: str

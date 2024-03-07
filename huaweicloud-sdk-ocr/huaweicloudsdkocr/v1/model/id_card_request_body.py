@@ -25,6 +25,8 @@ class IdCardRequestBody:
         'detect_reproduce': 'bool',
         'detect_copy': 'bool',
         'return_portrait_location': 'bool',
+        'return_portrait_image': 'bool',
+        'return_adjusted_image': 'bool',
         'detect_tampering': 'bool',
         'detect_border_integrity': 'bool',
         'detect_blocking_within_border': 'bool',
@@ -42,6 +44,8 @@ class IdCardRequestBody:
         'detect_reproduce': 'detect_reproduce',
         'detect_copy': 'detect_copy',
         'return_portrait_location': 'return_portrait_location',
+        'return_portrait_image': 'return_portrait_image',
+        'return_adjusted_image': 'return_adjusted_image',
         'detect_tampering': 'detect_tampering',
         'detect_border_integrity': 'detect_border_integrity',
         'detect_blocking_within_border': 'detect_blocking_within_border',
@@ -50,7 +54,7 @@ class IdCardRequestBody:
         'detect_glare': 'detect_glare'
     }
 
-    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None, detect_copy=None, return_portrait_location=None, detect_tampering=None, detect_border_integrity=None, detect_blocking_within_border=None, detect_blur=None, detect_interim=None, detect_glare=None):
+    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None, detect_copy=None, return_portrait_location=None, return_portrait_image=None, return_adjusted_image=None, detect_tampering=None, detect_border_integrity=None, detect_blocking_within_border=None, detect_blur=None, detect_interim=None, detect_glare=None):
         """IdCardRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class IdCardRequestBody:
         :type detect_copy: bool
         :param return_portrait_location: 返回头像位置信息的开关，默认false，可选值如下所示：  - true ：开启返回头像位置信息的功能 - false : 关闭返回头像位置信息的功能 
         :type return_portrait_location: bool
+        :param return_portrait_image: 返回头像图片信息（base64码）的开关，默认false，可选值如下所示：  - true ：开启头像图片信息（base64码）的功能 - false : 关闭头像图片信息（base64码）的功能 
+        :type return_portrait_image: bool
+        :param return_adjusted_image: 返回身份证卡面（base64码）的开关，默认false，可选值如下所示：  - true ：开启身份证卡面（base64码）的功能 - false : 关闭身份证卡面（base64码）的功能 
+        :type return_adjusted_image: bool
         :param detect_tampering: 身份证图像PS告警功能开关，默认false，可选值如下：  - true ：开启身份证图像PS告警功能 - false : 关闭身份证图像告警功能 
         :type detect_tampering: bool
         :param detect_border_integrity: 身份证图像边框完整性告警功能开关，默认false，可选值如下：  - true ：打开身份证图像边框完整性告警功能 - false : 关闭身份证图像边框完整性告警功能 
@@ -95,6 +103,8 @@ class IdCardRequestBody:
         self._detect_reproduce = None
         self._detect_copy = None
         self._return_portrait_location = None
+        self._return_portrait_image = None
+        self._return_adjusted_image = None
         self._detect_tampering = None
         self._detect_border_integrity = None
         self._detect_blocking_within_border = None
@@ -119,6 +129,10 @@ class IdCardRequestBody:
             self.detect_copy = detect_copy
         if return_portrait_location is not None:
             self.return_portrait_location = return_portrait_location
+        if return_portrait_image is not None:
+            self.return_portrait_image = return_portrait_image
+        if return_adjusted_image is not None:
+            self.return_adjusted_image = return_adjusted_image
         if detect_tampering is not None:
             self.detect_tampering = detect_tampering
         if detect_border_integrity is not None:
@@ -307,6 +321,50 @@ class IdCardRequestBody:
         :type return_portrait_location: bool
         """
         self._return_portrait_location = return_portrait_location
+
+    @property
+    def return_portrait_image(self):
+        """Gets the return_portrait_image of this IdCardRequestBody.
+
+        返回头像图片信息（base64码）的开关，默认false，可选值如下所示：  - true ：开启头像图片信息（base64码）的功能 - false : 关闭头像图片信息（base64码）的功能 
+
+        :return: The return_portrait_image of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._return_portrait_image
+
+    @return_portrait_image.setter
+    def return_portrait_image(self, return_portrait_image):
+        """Sets the return_portrait_image of this IdCardRequestBody.
+
+        返回头像图片信息（base64码）的开关，默认false，可选值如下所示：  - true ：开启头像图片信息（base64码）的功能 - false : 关闭头像图片信息（base64码）的功能 
+
+        :param return_portrait_image: The return_portrait_image of this IdCardRequestBody.
+        :type return_portrait_image: bool
+        """
+        self._return_portrait_image = return_portrait_image
+
+    @property
+    def return_adjusted_image(self):
+        """Gets the return_adjusted_image of this IdCardRequestBody.
+
+        返回身份证卡面（base64码）的开关，默认false，可选值如下所示：  - true ：开启身份证卡面（base64码）的功能 - false : 关闭身份证卡面（base64码）的功能 
+
+        :return: The return_adjusted_image of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._return_adjusted_image
+
+    @return_adjusted_image.setter
+    def return_adjusted_image(self, return_adjusted_image):
+        """Sets the return_adjusted_image of this IdCardRequestBody.
+
+        返回身份证卡面（base64码）的开关，默认false，可选值如下所示：  - true ：开启身份证卡面（base64码）的功能 - false : 关闭身份证卡面（base64码）的功能 
+
+        :param return_adjusted_image: The return_adjusted_image of this IdCardRequestBody.
+        :type return_adjusted_image: bool
+        """
+        self._return_adjusted_image = return_adjusted_image
 
     @property
     def detect_tampering(self):

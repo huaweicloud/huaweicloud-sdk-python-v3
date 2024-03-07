@@ -29,7 +29,7 @@ class TagResourceReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 
+        :param tags: 自定义标签列表。
         :type tags: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
         """
         
@@ -44,6 +44,8 @@ class TagResourceReqBody:
     def tags(self):
         """Gets the tags of this TagResourceReqBody.
 
+        自定义标签列表。
+
         :return: The tags of this TagResourceReqBody.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
         """
@@ -52,6 +54,8 @@ class TagResourceReqBody:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this TagResourceReqBody.
+
+        自定义标签列表。
 
         :param tags: The tags of this TagResourceReqBody.
         :type tags: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]

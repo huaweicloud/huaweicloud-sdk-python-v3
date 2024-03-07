@@ -19,6 +19,7 @@ class ClientInfo:
     openapi_types = {
         'id': 'str',
         'addr': 'str',
+        'fd': 'str',
         'name': 'str',
         'cmd': 'str',
         'age': 'int',
@@ -33,12 +34,16 @@ class ClientInfo:
         'obl': 'int',
         'oll': 'int',
         'omem': 'int',
-        'events': 'str'
+        'events': 'str',
+        'network': 'str',
+        'peer': 'str',
+        'user': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'addr': 'addr',
+        'fd': 'fd',
         'name': 'name',
         'cmd': 'cmd',
         'age': 'age',
@@ -53,10 +58,13 @@ class ClientInfo:
         'obl': 'obl',
         'oll': 'oll',
         'omem': 'omem',
-        'events': 'events'
+        'events': 'events',
+        'network': 'network',
+        'peer': 'peer',
+        'user': 'user'
     }
 
-    def __init__(self, id=None, addr=None, name=None, cmd=None, age=None, idle=None, db=None, flags=None, sub=None, psub=None, multi=None, qbuf=None, qbuf_free=None, obl=None, oll=None, omem=None, events=None):
+    def __init__(self, id=None, addr=None, fd=None, name=None, cmd=None, age=None, idle=None, db=None, flags=None, sub=None, psub=None, multi=None, qbuf=None, qbuf_free=None, obl=None, oll=None, omem=None, events=None, network=None, peer=None, user=None):
         """ClientInfo
 
         The model defined in huaweicloud sdk
@@ -65,6 +73,8 @@ class ClientInfo:
         :type id: str
         :param addr: 客户端的地址和端口
         :type addr: str
+        :param fd: 套接字所使用的文件描述符。
+        :type fd: str
         :param name: 客户端的名称
         :type name: str
         :param cmd: 最近一次执行的命令
@@ -95,12 +105,19 @@ class ClientInfo:
         :type omem: int
         :param events: 文件描述符事件
         :type events: str
+        :param network: 客户端所使用的网络类型。
+        :type network: str
+        :param peer: 单机，主备和cluster实例地址和端口。
+        :type peer: str
+        :param user: 客户端用户。
+        :type user: str
         """
         
         
 
         self._id = None
         self._addr = None
+        self._fd = None
         self._name = None
         self._cmd = None
         self._age = None
@@ -116,12 +133,17 @@ class ClientInfo:
         self._oll = None
         self._omem = None
         self._events = None
+        self._network = None
+        self._peer = None
+        self._user = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if addr is not None:
             self.addr = addr
+        if fd is not None:
+            self.fd = fd
         if name is not None:
             self.name = name
         if cmd is not None:
@@ -152,6 +174,12 @@ class ClientInfo:
             self.omem = omem
         if events is not None:
             self.events = events
+        if network is not None:
+            self.network = network
+        if peer is not None:
+            self.peer = peer
+        if user is not None:
+            self.user = user
 
     @property
     def id(self):
@@ -196,6 +224,28 @@ class ClientInfo:
         :type addr: str
         """
         self._addr = addr
+
+    @property
+    def fd(self):
+        """Gets the fd of this ClientInfo.
+
+        套接字所使用的文件描述符。
+
+        :return: The fd of this ClientInfo.
+        :rtype: str
+        """
+        return self._fd
+
+    @fd.setter
+    def fd(self, fd):
+        """Sets the fd of this ClientInfo.
+
+        套接字所使用的文件描述符。
+
+        :param fd: The fd of this ClientInfo.
+        :type fd: str
+        """
+        self._fd = fd
 
     @property
     def name(self):
@@ -526,6 +576,72 @@ class ClientInfo:
         :type events: str
         """
         self._events = events
+
+    @property
+    def network(self):
+        """Gets the network of this ClientInfo.
+
+        客户端所使用的网络类型。
+
+        :return: The network of this ClientInfo.
+        :rtype: str
+        """
+        return self._network
+
+    @network.setter
+    def network(self, network):
+        """Sets the network of this ClientInfo.
+
+        客户端所使用的网络类型。
+
+        :param network: The network of this ClientInfo.
+        :type network: str
+        """
+        self._network = network
+
+    @property
+    def peer(self):
+        """Gets the peer of this ClientInfo.
+
+        单机，主备和cluster实例地址和端口。
+
+        :return: The peer of this ClientInfo.
+        :rtype: str
+        """
+        return self._peer
+
+    @peer.setter
+    def peer(self, peer):
+        """Sets the peer of this ClientInfo.
+
+        单机，主备和cluster实例地址和端口。
+
+        :param peer: The peer of this ClientInfo.
+        :type peer: str
+        """
+        self._peer = peer
+
+    @property
+    def user(self):
+        """Gets the user of this ClientInfo.
+
+        客户端用户。
+
+        :return: The user of this ClientInfo.
+        :rtype: str
+        """
+        return self._user
+
+    @user.setter
+    def user(self, user):
+        """Sets the user of this ClientInfo.
+
+        客户端用户。
+
+        :param user: The user of this ClientInfo.
+        :type user: str
+        """
+        self._user = user
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,6 +20,7 @@ class IdcardBackResult:
         'issue': 'str',
         'valid_from': 'str',
         'valid_to': 'str',
+        'adjusted_image': 'str',
         'verification_result': 'IdcardBackVerificationResult',
         'text_location': 'object',
         'detect_reproduce_result': 'bool',
@@ -37,6 +38,7 @@ class IdcardBackResult:
         'issue': 'issue',
         'valid_from': 'valid_from',
         'valid_to': 'valid_to',
+        'adjusted_image': 'adjusted_image',
         'verification_result': 'verification_result',
         'text_location': 'text_location',
         'detect_reproduce_result': 'detect_reproduce_result',
@@ -50,7 +52,7 @@ class IdcardBackResult:
         'score_info': 'score_info'
     }
 
-    def __init__(self, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None, detect_reproduce_result=None, detect_copy_result=None, detect_tampering_result=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_interim_result=None, detect_glare_result=None, score_info=None):
+    def __init__(self, issue=None, valid_from=None, valid_to=None, adjusted_image=None, verification_result=None, text_location=None, detect_reproduce_result=None, detect_copy_result=None, detect_tampering_result=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_interim_result=None, detect_glare_result=None, score_info=None):
         """IdcardBackResult
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class IdcardBackResult:
         :type valid_from: str
         :param valid_to: 有效结束日期。 
         :type valid_to: str
+        :param adjusted_image: 身份证卡面图片信息的base64码结果。  &gt; 说明： - 仅在输入参数return_adjusted_image为true时，返回该字段。 
+        :type adjusted_image: str
         :param verification_result: 
         :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardBackVerificationResult`
         :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。 仅return_text_location设置为true时才返回。 
@@ -90,6 +94,7 @@ class IdcardBackResult:
         self._issue = None
         self._valid_from = None
         self._valid_to = None
+        self._adjusted_image = None
         self._verification_result = None
         self._text_location = None
         self._detect_reproduce_result = None
@@ -109,6 +114,8 @@ class IdcardBackResult:
             self.valid_from = valid_from
         if valid_to is not None:
             self.valid_to = valid_to
+        if adjusted_image is not None:
+            self.adjusted_image = adjusted_image
         if verification_result is not None:
             self.verification_result = verification_result
         if text_location is not None:
@@ -197,6 +204,28 @@ class IdcardBackResult:
         :type valid_to: str
         """
         self._valid_to = valid_to
+
+    @property
+    def adjusted_image(self):
+        """Gets the adjusted_image of this IdcardBackResult.
+
+        身份证卡面图片信息的base64码结果。  > 说明： - 仅在输入参数return_adjusted_image为true时，返回该字段。 
+
+        :return: The adjusted_image of this IdcardBackResult.
+        :rtype: str
+        """
+        return self._adjusted_image
+
+    @adjusted_image.setter
+    def adjusted_image(self, adjusted_image):
+        """Sets the adjusted_image of this IdcardBackResult.
+
+        身份证卡面图片信息的base64码结果。  > 说明： - 仅在输入参数return_adjusted_image为true时，返回该字段。 
+
+        :param adjusted_image: The adjusted_image of this IdcardBackResult.
+        :type adjusted_image: str
+        """
+        self._adjusted_image = adjusted_image
 
     @property
     def verification_result(self):

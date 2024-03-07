@@ -52,21 +52,21 @@ class AnalyzerSummary:
         :type created_at: datetime
         :param id: 分析器的唯一标识符。
         :type id: str
-        :param last_analyzed_resource: 唯一的资源名称。
+        :param last_analyzed_resource: 访问分析的唯一资源标识。
         :type last_analyzed_resource: str
-        :param last_resource_analyzed_at: 分析最近分析的资源的时间。
+        :param last_resource_analyzed_at: 最近一次分析资源的时间。
         :type last_resource_analyzed_at: datetime
         :param name: 分析器的名称。
         :type name: str
-        :param status: 分析器的状态
+        :param status: 分析器的状态。
         :type status: str
         :param status_reason: 
         :type status_reason: :class:`huaweicloudsdkiamaccessanalyzer.v1.StatusReason`
-        :param tags: 
+        :param tags: 自定义标签列表。
         :type tags: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
         :param type: 
         :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
-        :param urn: 唯一的资源名称。
+        :param urn: 访问分析的唯一资源标识。
         :type urn: str
         """
         
@@ -147,7 +147,7 @@ class AnalyzerSummary:
     def last_analyzed_resource(self):
         """Gets the last_analyzed_resource of this AnalyzerSummary.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :return: The last_analyzed_resource of this AnalyzerSummary.
         :rtype: str
@@ -158,7 +158,7 @@ class AnalyzerSummary:
     def last_analyzed_resource(self, last_analyzed_resource):
         """Sets the last_analyzed_resource of this AnalyzerSummary.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :param last_analyzed_resource: The last_analyzed_resource of this AnalyzerSummary.
         :type last_analyzed_resource: str
@@ -169,7 +169,7 @@ class AnalyzerSummary:
     def last_resource_analyzed_at(self):
         """Gets the last_resource_analyzed_at of this AnalyzerSummary.
 
-        分析最近分析的资源的时间。
+        最近一次分析资源的时间。
 
         :return: The last_resource_analyzed_at of this AnalyzerSummary.
         :rtype: datetime
@@ -180,7 +180,7 @@ class AnalyzerSummary:
     def last_resource_analyzed_at(self, last_resource_analyzed_at):
         """Sets the last_resource_analyzed_at of this AnalyzerSummary.
 
-        分析最近分析的资源的时间。
+        最近一次分析资源的时间。
 
         :param last_resource_analyzed_at: The last_resource_analyzed_at of this AnalyzerSummary.
         :type last_resource_analyzed_at: datetime
@@ -213,7 +213,7 @@ class AnalyzerSummary:
     def status(self):
         """Gets the status of this AnalyzerSummary.
 
-        分析器的状态
+        分析器的状态。
 
         :return: The status of this AnalyzerSummary.
         :rtype: str
@@ -224,7 +224,7 @@ class AnalyzerSummary:
     def status(self, status):
         """Sets the status of this AnalyzerSummary.
 
-        分析器的状态
+        分析器的状态。
 
         :param status: The status of this AnalyzerSummary.
         :type status: str
@@ -253,6 +253,8 @@ class AnalyzerSummary:
     def tags(self):
         """Gets the tags of this AnalyzerSummary.
 
+        自定义标签列表。
+
         :return: The tags of this AnalyzerSummary.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
         """
@@ -261,6 +263,8 @@ class AnalyzerSummary:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this AnalyzerSummary.
+
+        自定义标签列表。
 
         :param tags: The tags of this AnalyzerSummary.
         :type tags: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
@@ -289,7 +293,7 @@ class AnalyzerSummary:
     def urn(self):
         """Gets the urn of this AnalyzerSummary.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :return: The urn of this AnalyzerSummary.
         :rtype: str
@@ -300,7 +304,7 @@ class AnalyzerSummary:
     def urn(self, urn):
         """Sets the urn of this AnalyzerSummary.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :param urn: The urn of this AnalyzerSummary.
         :type urn: str

@@ -1,3 +1,514 @@
+# 3.1.85 2024-03-07
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBareMetalServers**
+    - changes of response param
+      - `* servers.OS-SRV-USG:launched_at: date-time -> string`
+      - `* servers.OS-SRV-USG:terminated_at: date-time -> string`
+  - **ListBareMetalServerDetails**
+    - changes of response param
+      - `* server.OS-SRV-USG:launched_at: date-time -> string`
+      - `* server.OS-SRV-USG:terminated_at: date-time -> string`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - Support the APIs `ShowStepOutputs`, `ShowPipelineArtifacts`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Config
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowBuiltInPolicyDefinition**
+    - changes of response param
+      - `+ display_name`
+  - **ShowOrganizationPolicyAssignmentStatuses**
+    - changes of request param
+      - `+ organization_policy_assignment_id`
+  - **ListBuiltInPolicyDefinitions**
+    - changes of response param
+      - `+ display_name`
+      - `+ value.display_name`
+  - **ListPolicyAssignments**
+    - changes of request param
+      - `+ policy_assignment_name`
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSslSwitch**
+    - changes of response param
+      - `+ result`
+      - `+ instance_id`
+  - **ListClients**
+    - changes of response param
+      - `+ clients.fd`
+      - `+ clients.network`
+      - `+ clients.peer`
+      - `+ clients.user`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJob**
+    - changes of request param
+      - `+ version`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAuthorizationPrivileges**
+    - changes of response param
+      - `+ privileges.object`
+      - `* privileges: list<ShowDatabaseUsersPrivilege> -> list<AuthorizationPrivilege>`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListWorkloadQueue**
+    - changes of request param
+      - `+ logical_cluster_name`
+  - **ShowWorkloadQueue**
+    - changes of request param
+      - `+ logical_cluster_name`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the API `UpdateDatabases`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CompareBusinessVersion**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **DeleteLogicalBranch**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **DeleteBranch**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **DeleteLogicalLatestVersion**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **DeleteLatestVersion**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **BatchUpdateVersion**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **BatchDeleteLogicalUsingPost**
+    - changes of request param
+      - `* params.ids: list<integer> -> list<string>`
+  - **ShowLogicalDeleteUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **BatchDeleteUsingPost**
+    - changes of request param
+      - `* params.ids: list<integer> -> list<string>`
+  - **DeleteUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **BatchDeleteLogicalBranch**
+    - changes of request param
+      - `* params.masterIds.masterId: int64 -> string`
+  - **BatchDeleteBranch**
+    - changes of request param
+      - `* params.masterIds.masterId: int64 -> string`
+  - **BatchCheckoutUndoByAdmin**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **CheckoutUndoByAdmin**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **BatchExecuteRevise**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **ExecuteRevise**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **BatchCheckin**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **Checkin**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **BatchCheckoutUndo**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **CheckoutUndo**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **BatchCheckout**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **Checkout**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **ShowVersionByMaster**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **ListAllVersions**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+  - **BatchUpdateByAdmin**
+    - changes of request param
+      - `* params.id: int64 -> string`
+      - `* params.branch.id: int64 -> string`
+      - `* params.master.id: int64 -> string`
+  - **UpdateByAdmin**
+    - changes of request param
+      - `* params.id: int64 -> string`
+      - `* params.branch.id: int64 -> string`
+      - `* params.master.id: int64 -> string`
+  - **SaveAsUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+      - `* params.sourceInstanceId: int64 -> string`
+  - **SaveAllUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **BatchShowGetUsingPost**
+    - changes of request param
+      - `* params.ids: list<integer> -> list<string>`
+  - **ShowGetUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **BatchUpdateUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **UpdateUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **BatchCreateUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+    - changes of response param
+      - `+ data.uniqueKey`
+      - `- data.branch`
+      - `- data.checkOutTime`
+      - `- data.checkOutUserName`
+      - `- data.description`
+      - `- data.iteration`
+      - `- data.kiaguid`
+      - `- data.latest`
+      - `- data.latestIteration`
+      - `- data.latestVersion`
+      - `- data.master`
+      - `- data.name`
+      - `- data.preVersionId`
+      - `- data.securityLevel`
+      - `- data.version`
+      - `- data.versionCode`
+      - `- data.workingCopy`
+      - `- data.workingState`
+      - `* data.lastUpdateTime: string -> object`
+      - `* data: list<VersionModelViewDTO> -> list<PersistableModelViewDTO>`
+  - **CreateUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+    - changes of response param
+      - `+ data.uniqueKey`
+      - `- data.branch`
+      - `- data.checkOutTime`
+      - `- data.checkOutUserName`
+      - `- data.description`
+      - `- data.iteration`
+      - `- data.kiaguid`
+      - `- data.latest`
+      - `- data.latestIteration`
+      - `- data.latestVersion`
+      - `- data.master`
+      - `- data.name`
+      - `- data.preVersionId`
+      - `- data.securityLevel`
+      - `- data.version`
+      - `- data.versionCode`
+      - `- data.workingCopy`
+      - `- data.workingState`
+      - `* data.lastUpdateTime: string -> object`
+      - `* data: list<VersionModelViewDTO> -> list<PersistableModelViewDTO>`
+  - **SaveUsingPost**
+    - changes of request param
+      - `* params.id: int64 -> string`
+  - **BatchUpdateAndCheckin**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **BatchCheckoutAndUpdate**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **UpdateAndCheckin**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **CheckoutAndUpdate**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **BatchUpdateAndRevise**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **UpdateAndRevise**
+    - changes of request param
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **UpdateByConditionUsingPost**
+    - changes of request param
+      - `* params.updateDTO.id: int64 -> string`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AddCertificate**
+    - changes of response param
+      - `+ template_id`
+      - `+ provision_enable`
+  - **ListCertificates**
+    - changes of response param
+      - `+ template_id`
+      - `+ provision_enable`
+      - `+ certificates.provision_enable`
+      - `+ certificates.template_id`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `CreateDeleteConnectorOrder`
+    - `ListSinkTasks`
+    - `CreateSinkTask`
+    - `ShowSinkTaskDetail`
+    - `DeleteSinkTask`
+  - **SendKafkaMessage**
+    - changes of request param
+      - `+ property_list.name`
+      - `+ property_list.value`
+  - **ShowConnectorTask**
+    - changes of response param
+      - `* source_task.replication_factor: string -> int32`
+      - `* source_task.task_num: string -> int32`
+      - `* sink_task.target_db: string -> int32`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `+ ipv6_enable`
+  - **CreateConnectorTask**
+    - changes of request param
+      - `* source_task.replication_factor: string -> int32`
+      - `* source_task.task_num: string -> int32`
+    - changes of response param
+      - `* source_task.replication_factor: string -> int32`
+      - `* source_task.task_num: string -> int32`
+      - `* sink_task.target_db: string -> int32`
+  - **ListConnectorTasks**
+    - changes of response param
+      - `* tasks.source_task.replication_factor: string -> int32`
+      - `* tasks.source_task.task_num: string -> int32`
+      - `* tasks.sink_task.target_db: string -> int32`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeIdCard**
+    - changes of request param
+      - `+ return_portrait_image`
+      - `+ return_adjusted_image`
+    - changes of response param
+      - `+ result.portrait_image`
+      - `+ result.adjusted_image`
+      - `+ result.front.portrait_image`
+      - `+ result.front.adjusted_image`
+      - `+ result.back.adjusted_image`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the following APIs:
+    - `ShowStorageUsedSpace`
+    - `SwitchSqlLimit`
+    - `UpdateSqlLimit`
+    - `ListSqlLimit`
+    - `CreateSqlLimit`
+    - `DeleteSqlLimit`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of response param
+      - `* instances.volume: object<Volume> -> object<VolumeForInstanceResponse>`
+  - **CreateRestoreInstance**
+    - changes of request param
+      - `- replica_of_id`
+      - `- unchangeable_param`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDiskInfo**
+    - changes of request param
+      - `* volumegroups.logical_volumes.device_use: int32 -> string`
+  - **ShowServer**
+    - changes of response param
+      - `* volume_groups.logical_volumes.device_use: int32 -> string`
+  - **CreateTask**
+    - changes of request param
+      - `* target_server.volume_groups.logical_volumes.device_use: int32 -> string`
+  - **ShowTask**
+    - changes of response param
+      - `* target_server.volume_groups.logical_volumes.device_use: int32 -> string`
+  - **UpdateTask**
+    - changes of request param
+      - `* source_server.volume_groups.logical_volumes.device_use: int32 -> string`
+  - **RegisterServer**
+    - changes of request param
+      - `* volume_groups.logical_volumes.device_use: int32 -> string`
+  - **ListServers**
+    - changes of response param
+      - `* source_servers.init_target_server.volume_groups.logical_volumes.device_use: int32 -> string`
+
+### HuaweiCloud SDK Workspace
+
+- _Features_
+  - Support the following APIs:
+    - `ListAgencies`
+    - `CreateAgencies`
+    - `DetachInstances`
+    - `AttachInstances`
+    - `ListScheduledTasks`
+    - `CreateScheduledTasks`
+    - `ShowScheduledTasks`
+    - `UpdateScheduledTasks`
+    - `DeleteScheduledTasks`
+    - `ListFutureExecutions`
+    - `BatchDeleteScheduledTasks`
+    - `ListScheduledTasksRecords`
+    - `ListScheduledTasksRecordsDetails`
+    - `UpdateMetricNotifyRule`
+    - `DeleteMetricNotifyRule`
+    - `ListMetricNotifyRule`
+    - `AddMetricNotifyRule`
+    - `ListMetricNotifyRecord`
+    - `ListDesktopUsageMetric`
+    - `ListUserUsageMetric`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListImages**
+    - changes of request param
+      - `+ image_id`
+    - changes of response param
+      - `+ images.architecture`
+      - `- images.image_type: enum value [gold,private]`
+  - **CreateDesktop**
+    - changes of request param
+      - `+ security_groups.name`
+      - `* security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+  - **ListDesktops**
+    - changes of request param
+      - `+ subnet_id`
+    - changes of response param
+      - `+ desktops.tags`
+      - `+ desktops.subnet_id`
+      - `+ desktops.bill_resource_id`
+      - `+ desktops.attach_user_infos.type`
+  - **ListItaSubJobs**
+    - changes of response param
+      - `+ jobs.desktop_name`
+      - `+ jobs.ip_address`
+      - `+ jobs.mac_address`
+      - `- jobs.entities.desktop_name`
+      - `- jobs.entities.ip_address`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `+ desktop.subnet_id`
+      - `+ desktop.bill_resource_id`
+      - `+ desktop.process`
+      - `+ desktop.security_groups.name`
+      - `* desktop.security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+      - `+ desktop.attach_user_infos.type`
+      - `+ desktop.root_volume.bill_resource_id`
+  - **ListDesktopsDetail**
+    - changes of request param
+      - `+ subnet_id`
+    - changes of response param
+      - `+ desktops.subnet_id`
+      - `+ desktops.bill_resource_id`
+      - `+ desktops.process`
+      - `+ desktops.security_groups.name`
+      - `* desktops.security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+      - `+ desktops.attach_user_infos.type`
+      - `+ desktops.root_volume.bill_resource_id`
+
 # 3.1.84 2024-02-29
 
 ### HuaweiCloud SDK CFW

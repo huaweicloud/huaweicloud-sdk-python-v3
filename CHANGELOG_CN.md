@@ -1,3 +1,514 @@
+# 3.1.85 2024-03-07
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBareMetalServers**
+    - 响应参数变更
+      - `* servers.OS-SRV-USG:launched_at: date-time -> string`
+      - `* servers.OS-SRV-USG:terminated_at: date-time -> string`
+  - **ListBareMetalServerDetails**
+    - 响应参数变更
+      - `* server.OS-SRV-USG:launched_at: date-time -> string`
+      - `* server.OS-SRV-USG:terminated_at: date-time -> string`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _新增特性_
+  - 支持接口`ShowStepOutputs`、`ShowPipelineArtifacts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowBuiltInPolicyDefinition**
+    - 响应参数变更
+      - `+ display_name`
+  - **ShowOrganizationPolicyAssignmentStatuses**
+    - 请求参数变更
+      - `+ organization_policy_assignment_id`
+  - **ListBuiltInPolicyDefinitions**
+    - 响应参数变更
+      - `+ display_name`
+      - `+ value.display_name`
+  - **ListPolicyAssignments**
+    - 请求参数变更
+      - `+ policy_assignment_name`
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSslSwitch**
+    - 响应参数变更
+      - `+ result`
+      - `+ instance_id`
+  - **ListClients**
+    - 响应参数变更
+      - `+ clients.fd`
+      - `+ clients.network`
+      - `+ clients.peer`
+      - `+ clients.user`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJob**
+    - 请求参数变更
+      - `+ version`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAuthorizationPrivileges**
+    - 响应参数变更
+      - `+ privileges.object`
+      - `* privileges: list<ShowDatabaseUsersPrivilege> -> list<AuthorizationPrivilege>`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListWorkloadQueue**
+    - 请求参数变更
+      - `+ logical_cluster_name`
+  - **ShowWorkloadQueue**
+    - 请求参数变更
+      - `+ logical_cluster_name`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持接口`UpdateDatabases`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CompareBusinessVersion**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **DeleteLogicalBranch**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **DeleteBranch**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **DeleteLogicalLatestVersion**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **DeleteLatestVersion**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **BatchUpdateVersion**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **BatchDeleteLogicalUsingPost**
+    - 请求参数变更
+      - `* params.ids: list<integer> -> list<string>`
+  - **ShowLogicalDeleteUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **BatchDeleteUsingPost**
+    - 请求参数变更
+      - `* params.ids: list<integer> -> list<string>`
+  - **DeleteUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **BatchDeleteLogicalBranch**
+    - 请求参数变更
+      - `* params.masterIds.masterId: int64 -> string`
+  - **BatchDeleteBranch**
+    - 请求参数变更
+      - `* params.masterIds.masterId: int64 -> string`
+  - **BatchCheckoutUndoByAdmin**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **CheckoutUndoByAdmin**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **BatchExecuteRevise**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **ExecuteRevise**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **BatchCheckin**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **Checkin**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **BatchCheckoutUndo**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **CheckoutUndo**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **BatchCheckout**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **Checkout**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **ShowVersionByMaster**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **ListAllVersions**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+  - **BatchUpdateByAdmin**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+      - `* params.branch.id: int64 -> string`
+      - `* params.master.id: int64 -> string`
+  - **UpdateByAdmin**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+      - `* params.branch.id: int64 -> string`
+      - `* params.master.id: int64 -> string`
+  - **SaveAsUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+      - `* params.sourceInstanceId: int64 -> string`
+  - **SaveAllUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **BatchShowGetUsingPost**
+    - 请求参数变更
+      - `* params.ids: list<integer> -> list<string>`
+  - **ShowGetUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **BatchUpdateUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **UpdateUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **BatchCreateUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+    - 响应参数变更
+      - `+ data.uniqueKey`
+      - `- data.branch`
+      - `- data.checkOutTime`
+      - `- data.checkOutUserName`
+      - `- data.description`
+      - `- data.iteration`
+      - `- data.kiaguid`
+      - `- data.latest`
+      - `- data.latestIteration`
+      - `- data.latestVersion`
+      - `- data.master`
+      - `- data.name`
+      - `- data.preVersionId`
+      - `- data.securityLevel`
+      - `- data.version`
+      - `- data.versionCode`
+      - `- data.workingCopy`
+      - `- data.workingState`
+      - `* data.lastUpdateTime: string -> object`
+      - `* data: list<VersionModelViewDTO> -> list<PersistableModelViewDTO>`
+  - **CreateUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+    - 响应参数变更
+      - `+ data.uniqueKey`
+      - `- data.branch`
+      - `- data.checkOutTime`
+      - `- data.checkOutUserName`
+      - `- data.description`
+      - `- data.iteration`
+      - `- data.kiaguid`
+      - `- data.latest`
+      - `- data.latestIteration`
+      - `- data.latestVersion`
+      - `- data.master`
+      - `- data.name`
+      - `- data.preVersionId`
+      - `- data.securityLevel`
+      - `- data.version`
+      - `- data.versionCode`
+      - `- data.workingCopy`
+      - `- data.workingState`
+      - `* data.lastUpdateTime: string -> object`
+      - `* data: list<VersionModelViewDTO> -> list<PersistableModelViewDTO>`
+  - **SaveUsingPost**
+    - 请求参数变更
+      - `* params.id: int64 -> string`
+  - **BatchUpdateAndCheckin**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **BatchCheckoutAndUpdate**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **UpdateAndCheckin**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **CheckoutAndUpdate**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **BatchUpdateAndRevise**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **UpdateAndRevise**
+    - 请求参数变更
+      - `* params.masterId: int64 -> string`
+      - `* params.data.id: int64 -> string`
+      - `* params.data.branch.id: int64 -> string`
+      - `* params.data.master.id: int64 -> string`
+  - **UpdateByConditionUsingPost**
+    - 请求参数变更
+      - `* params.updateDTO.id: int64 -> string`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AddCertificate**
+    - 响应参数变更
+      - `+ template_id`
+      - `+ provision_enable`
+  - **ListCertificates**
+    - 响应参数变更
+      - `+ template_id`
+      - `+ provision_enable`
+      - `+ certificates.provision_enable`
+      - `+ certificates.template_id`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `CreateDeleteConnectorOrder`
+    - `ListSinkTasks`
+    - `CreateSinkTask`
+    - `ShowSinkTaskDetail`
+    - `DeleteSinkTask`
+  - **SendKafkaMessage**
+    - 请求参数变更
+      - `+ property_list.name`
+      - `+ property_list.value`
+  - **ShowConnectorTask**
+    - 响应参数变更
+      - `* source_task.replication_factor: string -> int32`
+      - `* source_task.task_num: string -> int32`
+      - `* sink_task.target_db: string -> int32`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `+ ipv6_enable`
+  - **CreateConnectorTask**
+    - 请求参数变更
+      - `* source_task.replication_factor: string -> int32`
+      - `* source_task.task_num: string -> int32`
+    - 响应参数变更
+      - `* source_task.replication_factor: string -> int32`
+      - `* source_task.task_num: string -> int32`
+      - `* sink_task.target_db: string -> int32`
+  - **ListConnectorTasks**
+    - 响应参数变更
+      - `* tasks.source_task.replication_factor: string -> int32`
+      - `* tasks.source_task.task_num: string -> int32`
+      - `* tasks.sink_task.target_db: string -> int32`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeIdCard**
+    - 请求参数变更
+      - `+ return_portrait_image`
+      - `+ return_adjusted_image`
+    - 响应参数变更
+      - `+ result.portrait_image`
+      - `+ result.adjusted_image`
+      - `+ result.front.portrait_image`
+      - `+ result.front.adjusted_image`
+      - `+ result.back.adjusted_image`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowStorageUsedSpace`
+    - `SwitchSqlLimit`
+    - `UpdateSqlLimit`
+    - `ListSqlLimit`
+    - `CreateSqlLimit`
+    - `DeleteSqlLimit`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 响应参数变更
+      - `* instances.volume: object<Volume> -> object<VolumeForInstanceResponse>`
+  - **CreateRestoreInstance**
+    - 请求参数变更
+      - `- replica_of_id`
+      - `- unchangeable_param`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateDiskInfo**
+    - 请求参数变更
+      - `* volumegroups.logical_volumes.device_use: int32 -> string`
+  - **ShowServer**
+    - 响应参数变更
+      - `* volume_groups.logical_volumes.device_use: int32 -> string`
+  - **CreateTask**
+    - 请求参数变更
+      - `* target_server.volume_groups.logical_volumes.device_use: int32 -> string`
+  - **ShowTask**
+    - 响应参数变更
+      - `* target_server.volume_groups.logical_volumes.device_use: int32 -> string`
+  - **UpdateTask**
+    - 请求参数变更
+      - `* source_server.volume_groups.logical_volumes.device_use: int32 -> string`
+  - **RegisterServer**
+    - 请求参数变更
+      - `* volume_groups.logical_volumes.device_use: int32 -> string`
+  - **ListServers**
+    - 响应参数变更
+      - `* source_servers.init_target_server.volume_groups.logical_volumes.device_use: int32 -> string`
+
+### HuaweiCloud SDK Workspace
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAgencies`
+    - `CreateAgencies`
+    - `DetachInstances`
+    - `AttachInstances`
+    - `ListScheduledTasks`
+    - `CreateScheduledTasks`
+    - `ShowScheduledTasks`
+    - `UpdateScheduledTasks`
+    - `DeleteScheduledTasks`
+    - `ListFutureExecutions`
+    - `BatchDeleteScheduledTasks`
+    - `ListScheduledTasksRecords`
+    - `ListScheduledTasksRecordsDetails`
+    - `UpdateMetricNotifyRule`
+    - `DeleteMetricNotifyRule`
+    - `ListMetricNotifyRule`
+    - `AddMetricNotifyRule`
+    - `ListMetricNotifyRecord`
+    - `ListDesktopUsageMetric`
+    - `ListUserUsageMetric`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListImages**
+    - 请求参数变更
+      - `+ image_id`
+    - 响应参数变更
+      - `+ images.architecture`
+      - `- images.image_type: enum value [gold,private]`
+  - **CreateDesktop**
+    - 请求参数变更
+      - `+ security_groups.name`
+      - `* security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+  - **ListDesktops**
+    - 请求参数变更
+      - `+ subnet_id`
+    - 响应参数变更
+      - `+ desktops.tags`
+      - `+ desktops.subnet_id`
+      - `+ desktops.bill_resource_id`
+      - `+ desktops.attach_user_infos.type`
+  - **ListItaSubJobs**
+    - 响应参数变更
+      - `+ jobs.desktop_name`
+      - `+ jobs.ip_address`
+      - `+ jobs.mac_address`
+      - `- jobs.entities.desktop_name`
+      - `- jobs.entities.ip_address`
+  - **ShowDesktopDetail**
+    - 响应参数变更
+      - `+ desktop.subnet_id`
+      - `+ desktop.bill_resource_id`
+      - `+ desktop.process`
+      - `+ desktop.security_groups.name`
+      - `* desktop.security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+      - `+ desktop.attach_user_infos.type`
+      - `+ desktop.root_volume.bill_resource_id`
+  - **ListDesktopsDetail**
+    - 请求参数变更
+      - `+ subnet_id`
+    - 响应参数变更
+      - `+ desktops.subnet_id`
+      - `+ desktops.bill_resource_id`
+      - `+ desktops.process`
+      - `+ desktops.security_groups.name`
+      - `* desktops.security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+      - `+ desktops.attach_user_infos.type`
+      - `+ desktops.root_volume.bill_resource_id`
+
 # 3.1.84 2024-02-29
 
 ### HuaweiCloud SDK CFW

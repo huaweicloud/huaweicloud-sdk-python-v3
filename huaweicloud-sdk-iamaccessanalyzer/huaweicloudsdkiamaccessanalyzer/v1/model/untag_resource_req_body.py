@@ -29,7 +29,7 @@ class UntagResourceReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param tag_keys: 
+        :param tag_keys: 待删除的标签键列表。
         :type tag_keys: list[str]
         """
         
@@ -44,6 +44,8 @@ class UntagResourceReqBody:
     def tag_keys(self):
         """Gets the tag_keys of this UntagResourceReqBody.
 
+        待删除的标签键列表。
+
         :return: The tag_keys of this UntagResourceReqBody.
         :rtype: list[str]
         """
@@ -52,6 +54,8 @@ class UntagResourceReqBody:
     @tag_keys.setter
     def tag_keys(self, tag_keys):
         """Sets the tag_keys of this UntagResourceReqBody.
+
+        待删除的标签键列表。
 
         :param tag_keys: The tag_keys of this UntagResourceReqBody.
         :type tag_keys: list[str]

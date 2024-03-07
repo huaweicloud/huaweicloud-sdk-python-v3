@@ -35,9 +35,9 @@ class StartResourceScanReqBody:
 
         :param resource_id: 资源的唯一标识符。
         :type resource_id: str
-        :param resource_owner_account: 拥有资源的帐户ID。
+        :param resource_owner_account: 拥有资源的账户ID。
         :type resource_owner_account: str
-        :param resource_urn: 唯一的资源名称。
+        :param resource_urn: 访问分析的唯一资源标识。
         :type resource_urn: str
         """
         
@@ -79,7 +79,7 @@ class StartResourceScanReqBody:
     def resource_owner_account(self):
         """Gets the resource_owner_account of this StartResourceScanReqBody.
 
-        拥有资源的帐户ID。
+        拥有资源的账户ID。
 
         :return: The resource_owner_account of this StartResourceScanReqBody.
         :rtype: str
@@ -90,7 +90,7 @@ class StartResourceScanReqBody:
     def resource_owner_account(self, resource_owner_account):
         """Sets the resource_owner_account of this StartResourceScanReqBody.
 
-        拥有资源的帐户ID。
+        拥有资源的账户ID。
 
         :param resource_owner_account: The resource_owner_account of this StartResourceScanReqBody.
         :type resource_owner_account: str
@@ -101,7 +101,7 @@ class StartResourceScanReqBody:
     def resource_urn(self):
         """Gets the resource_urn of this StartResourceScanReqBody.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :return: The resource_urn of this StartResourceScanReqBody.
         :rtype: str
@@ -112,7 +112,7 @@ class StartResourceScanReqBody:
     def resource_urn(self, resource_urn):
         """Sets the resource_urn of this StartResourceScanReqBody.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :param resource_urn: The resource_urn of this StartResourceScanReqBody.
         :type resource_urn: str

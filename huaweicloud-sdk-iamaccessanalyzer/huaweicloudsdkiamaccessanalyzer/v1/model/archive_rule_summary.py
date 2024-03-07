@@ -40,17 +40,17 @@ class ArchiveRuleSummary:
 
         The model defined in huaweicloud sdk
 
-        :param created_at: 创建归档规则的时间。
+        :param created_at: 创建存档规则的时间。
         :type created_at: datetime
-        :param filters: 
+        :param filters: 匹配要返回的访问分析结果的筛选器。
         :type filters: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
         :param id: 存档规则的唯一标识符。
         :type id: str
-        :param name: 创建归档规则的名称。
+        :param name: 创建存档规则的名称。
         :type name: str
         :param updated_at: 上次更新存档规则的时间。
         :type updated_at: datetime
-        :param urn: 唯一的资源名称。
+        :param urn: 访问分析的唯一资源标识。
         :type urn: str
         """
         
@@ -75,7 +75,7 @@ class ArchiveRuleSummary:
     def created_at(self):
         """Gets the created_at of this ArchiveRuleSummary.
 
-        创建归档规则的时间。
+        创建存档规则的时间。
 
         :return: The created_at of this ArchiveRuleSummary.
         :rtype: datetime
@@ -86,7 +86,7 @@ class ArchiveRuleSummary:
     def created_at(self, created_at):
         """Sets the created_at of this ArchiveRuleSummary.
 
-        创建归档规则的时间。
+        创建存档规则的时间。
 
         :param created_at: The created_at of this ArchiveRuleSummary.
         :type created_at: datetime
@@ -97,6 +97,8 @@ class ArchiveRuleSummary:
     def filters(self):
         """Gets the filters of this ArchiveRuleSummary.
 
+        匹配要返回的访问分析结果的筛选器。
+
         :return: The filters of this ArchiveRuleSummary.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
         """
@@ -105,6 +107,8 @@ class ArchiveRuleSummary:
     @filters.setter
     def filters(self, filters):
         """Sets the filters of this ArchiveRuleSummary.
+
+        匹配要返回的访问分析结果的筛选器。
 
         :param filters: The filters of this ArchiveRuleSummary.
         :type filters: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
@@ -137,7 +141,7 @@ class ArchiveRuleSummary:
     def name(self):
         """Gets the name of this ArchiveRuleSummary.
 
-        创建归档规则的名称。
+        创建存档规则的名称。
 
         :return: The name of this ArchiveRuleSummary.
         :rtype: str
@@ -148,7 +152,7 @@ class ArchiveRuleSummary:
     def name(self, name):
         """Sets the name of this ArchiveRuleSummary.
 
-        创建归档规则的名称。
+        创建存档规则的名称。
 
         :param name: The name of this ArchiveRuleSummary.
         :type name: str
@@ -181,7 +185,7 @@ class ArchiveRuleSummary:
     def urn(self):
         """Gets the urn of this ArchiveRuleSummary.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :return: The urn of this ArchiveRuleSummary.
         :rtype: str
@@ -192,7 +196,7 @@ class ArchiveRuleSummary:
     def urn(self, urn):
         """Sets the urn of this ArchiveRuleSummary.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :param urn: The urn of this ArchiveRuleSummary.
         :type urn: str

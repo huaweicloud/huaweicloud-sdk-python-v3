@@ -43,7 +43,7 @@ class InstanceResponse:
         'flavor_ref': 'str',
         'cpu': 'str',
         'mem': 'str',
-        'volume': 'Volume',
+        'volume': 'VolumeForInstanceResponse',
         'region': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
@@ -164,7 +164,7 @@ class InstanceResponse:
         :param mem: 内存大小（单位：GB）。
         :type mem: str
         :param volume: 
-        :type volume: :class:`huaweicloudsdkrds.v3.Volume`
+        :type volume: :class:`huaweicloudsdkrds.v3.VolumeForInstanceResponse`
         :param region: 区域ID。
         :type region: str
         :param vpc_id: 虚拟私有云ID。
@@ -857,7 +857,7 @@ class InstanceResponse:
         """Gets the volume of this InstanceResponse.
 
         :return: The volume of this InstanceResponse.
-        :rtype: :class:`huaweicloudsdkrds.v3.Volume`
+        :rtype: :class:`huaweicloudsdkrds.v3.VolumeForInstanceResponse`
         """
         return self._volume
 
@@ -866,7 +866,7 @@ class InstanceResponse:
         """Sets the volume of this InstanceResponse.
 
         :param volume: The volume of this InstanceResponse.
-        :type volume: :class:`huaweicloudsdkrds.v3.Volume`
+        :type volume: :class:`huaweicloudsdkrds.v3.VolumeForInstanceResponse`
         """
         self._volume = volume
 

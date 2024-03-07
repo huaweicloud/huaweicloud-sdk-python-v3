@@ -29,7 +29,7 @@ class IAMAgency:
 
         The model defined in huaweicloud sdk
 
-        :param trust_policy: 此策略的json格式策略文档。
+        :param trust_policy: 该策略JSON格式策略文档。
         :type trust_policy: str
         """
         
@@ -44,7 +44,7 @@ class IAMAgency:
     def trust_policy(self):
         """Gets the trust_policy of this IAMAgency.
 
-        此策略的json格式策略文档。
+        该策略JSON格式策略文档。
 
         :return: The trust_policy of this IAMAgency.
         :rtype: str
@@ -55,7 +55,7 @@ class IAMAgency:
     def trust_policy(self, trust_policy):
         """Sets the trust_policy of this IAMAgency.
 
-        此策略的json格式策略文档。
+        该策略JSON格式策略文档。
 
         :param trust_policy: The trust_policy of this IAMAgency.
         :type trust_policy: str

@@ -17,7 +17,7 @@ class VersionModelVersionUndoCheckOutDTO:
     sensitive_list = []
 
     openapi_types = {
-        'master_id': 'int',
+        'master_id': 'str',
         'modifier': 'str'
     }
 
@@ -32,7 +32,7 @@ class VersionModelVersionUndoCheckOutDTO:
         The model defined in huaweicloud sdk
 
         :param master_id: 主对象ID。
-        :type master_id: int
+        :type master_id: str
         :param modifier: 更新者。
         :type modifier: str
         """
@@ -54,7 +54,7 @@ class VersionModelVersionUndoCheckOutDTO:
         主对象ID。
 
         :return: The master_id of this VersionModelVersionUndoCheckOutDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._master_id
 
@@ -65,7 +65,7 @@ class VersionModelVersionUndoCheckOutDTO:
         主对象ID。
 
         :param master_id: The master_id of this VersionModelVersionUndoCheckOutDTO.
-        :type master_id: int
+        :type master_id: str
         """
         self._master_id = master_id
 

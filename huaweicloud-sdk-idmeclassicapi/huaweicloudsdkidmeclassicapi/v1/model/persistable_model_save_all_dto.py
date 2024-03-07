@@ -19,7 +19,7 @@ class PersistableModelSaveAllDTO:
     openapi_types = {
         'create_time': 'str',
         'creator': 'int',
-        'id': 'int',
+        'id': 'str',
         'last_update_time': 'str',
         'modifier': 'str',
         'need_set_null_attrs': 'list[str]',
@@ -50,7 +50,7 @@ class PersistableModelSaveAllDTO:
         :param creator: 创建者。
         :type creator: int
         :param id: 唯一标识。
-        :type id: int
+        :type id: str
         :param last_update_time: 最后更新时间。
         :type last_update_time: str
         :param modifier: 更新者。
@@ -148,7 +148,7 @@ class PersistableModelSaveAllDTO:
         唯一标识。
 
         :return: The id of this PersistableModelSaveAllDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -159,7 +159,7 @@ class PersistableModelSaveAllDTO:
         唯一标识。
 
         :param id: The id of this PersistableModelSaveAllDTO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 

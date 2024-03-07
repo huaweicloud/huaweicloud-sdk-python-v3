@@ -43,6 +43,7 @@ class CreatePostPaidInstanceReq:
         'kafka_security_protocol': 'str',
         'sasl_enabled_mechanisms': 'list[str]',
         'retention_policy': 'str',
+        'ipv6_enable': 'bool',
         'disk_encrypted_enable': 'bool',
         'disk_encrypted_key': 'str',
         'connector_enable': 'bool',
@@ -79,6 +80,7 @@ class CreatePostPaidInstanceReq:
         'kafka_security_protocol': 'kafka_security_protocol',
         'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
         'retention_policy': 'retention_policy',
+        'ipv6_enable': 'ipv6_enable',
         'disk_encrypted_enable': 'disk_encrypted_enable',
         'disk_encrypted_key': 'disk_encrypted_key',
         'connector_enable': 'connector_enable',
@@ -88,7 +90,7 @@ class CreatePostPaidInstanceReq:
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, ipv6_enable=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
         """CreatePostPaidInstanceReq
 
         The model defined in huaweicloud sdk
@@ -145,6 +147,8 @@ class CreatePostPaidInstanceReq:
         :type sasl_enabled_mechanisms: list[str]
         :param retention_policy: 磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
         :type retention_policy: str
+        :param ipv6_enable: 是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
+        :type ipv6_enable: bool
         :param disk_encrypted_enable: 是否开启磁盘加密。
         :type disk_encrypted_enable: bool
         :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空
@@ -189,6 +193,7 @@ class CreatePostPaidInstanceReq:
         self._kafka_security_protocol = None
         self._sasl_enabled_mechanisms = None
         self._retention_policy = None
+        self._ipv6_enable = None
         self._disk_encrypted_enable = None
         self._disk_encrypted_key = None
         self._connector_enable = None
@@ -241,6 +246,8 @@ class CreatePostPaidInstanceReq:
             self.sasl_enabled_mechanisms = sasl_enabled_mechanisms
         if retention_policy is not None:
             self.retention_policy = retention_policy
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
         if disk_encrypted_enable is not None:
             self.disk_encrypted_enable = disk_encrypted_enable
         if disk_encrypted_key is not None:
@@ -826,6 +833,28 @@ class CreatePostPaidInstanceReq:
         :type retention_policy: str
         """
         self._retention_policy = retention_policy
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this CreatePostPaidInstanceReq.
+
+        是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
+
+        :return: The ipv6_enable of this CreatePostPaidInstanceReq.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this CreatePostPaidInstanceReq.
+
+        是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
+
+        :param ipv6_enable: The ipv6_enable of this CreatePostPaidInstanceReq.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
 
     @property
     def disk_encrypted_enable(self):

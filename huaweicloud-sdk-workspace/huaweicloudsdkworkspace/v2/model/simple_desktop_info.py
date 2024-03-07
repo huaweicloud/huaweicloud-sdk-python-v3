@@ -27,7 +27,10 @@ class SimpleDesktopInfo:
         'sid': 'str',
         'ou_name': 'str',
         'enterprise_project_id': 'str',
-        'in_maintenance_mode': 'bool'
+        'tags': 'list[Tag]',
+        'in_maintenance_mode': 'bool',
+        'subnet_id': 'str',
+        'bill_resource_id': 'str'
     }
 
     attribute_map = {
@@ -41,10 +44,13 @@ class SimpleDesktopInfo:
         'sid': 'sid',
         'ou_name': 'ou_name',
         'enterprise_project_id': 'enterprise_project_id',
-        'in_maintenance_mode': 'in_maintenance_mode'
+        'tags': 'tags',
+        'in_maintenance_mode': 'in_maintenance_mode',
+        'subnet_id': 'subnet_id',
+        'bill_resource_id': 'bill_resource_id'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, in_maintenance_mode=None):
+    def __init__(self, desktop_id=None, computer_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, subnet_id=None, bill_resource_id=None):
         """SimpleDesktopInfo
 
         The model defined in huaweicloud sdk
@@ -69,8 +75,14 @@ class SimpleDesktopInfo:
         :type ou_name: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         :param in_maintenance_mode: 是否处于管理员维护模式
         :type in_maintenance_mode: bool
+        :param subnet_id: 桌面的子网ID。
+        :type subnet_id: str
+        :param bill_resource_id: 桌面计费资源ID。
+        :type bill_resource_id: str
         """
         
         
@@ -85,7 +97,10 @@ class SimpleDesktopInfo:
         self._sid = None
         self._ou_name = None
         self._enterprise_project_id = None
+        self._tags = None
         self._in_maintenance_mode = None
+        self._subnet_id = None
+        self._bill_resource_id = None
         self.discriminator = None
 
         if desktop_id is not None:
@@ -108,8 +123,14 @@ class SimpleDesktopInfo:
             self.ou_name = ou_name
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if tags is not None:
+            self.tags = tags
         if in_maintenance_mode is not None:
             self.in_maintenance_mode = in_maintenance_mode
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
+        if bill_resource_id is not None:
+            self.bill_resource_id = bill_resource_id
 
     @property
     def desktop_id(self):
@@ -332,6 +353,28 @@ class SimpleDesktopInfo:
         self._enterprise_project_id = enterprise_project_id
 
     @property
+    def tags(self):
+        """Gets the tags of this SimpleDesktopInfo.
+
+        标签列表。
+
+        :return: The tags of this SimpleDesktopInfo.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this SimpleDesktopInfo.
+
+        标签列表。
+
+        :param tags: The tags of this SimpleDesktopInfo.
+        :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
+        """
+        self._tags = tags
+
+    @property
     def in_maintenance_mode(self):
         """Gets the in_maintenance_mode of this SimpleDesktopInfo.
 
@@ -352,6 +395,50 @@ class SimpleDesktopInfo:
         :type in_maintenance_mode: bool
         """
         self._in_maintenance_mode = in_maintenance_mode
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this SimpleDesktopInfo.
+
+        桌面的子网ID。
+
+        :return: The subnet_id of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this SimpleDesktopInfo.
+
+        桌面的子网ID。
+
+        :param subnet_id: The subnet_id of this SimpleDesktopInfo.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
+
+    @property
+    def bill_resource_id(self):
+        """Gets the bill_resource_id of this SimpleDesktopInfo.
+
+        桌面计费资源ID。
+
+        :return: The bill_resource_id of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._bill_resource_id
+
+    @bill_resource_id.setter
+    def bill_resource_id(self, bill_resource_id):
+        """Sets the bill_resource_id of this SimpleDesktopInfo.
+
+        桌面计费资源ID。
+
+        :param bill_resource_id: The bill_resource_id of this SimpleDesktopInfo.
+        :type bill_resource_id: str
+        """
+        self._bill_resource_id = bill_resource_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

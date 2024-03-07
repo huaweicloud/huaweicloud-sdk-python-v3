@@ -34,11 +34,11 @@ class SendKafkaMessageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topic: 
+        :param topic: Kafka的topic
         :type topic: str
-        :param body: 
+        :param body: 消息内容
         :type body: str
-        :param property_list: 
+        :param property_list: topic的分区信息等
         :type property_list: list[object]
         """
         
@@ -60,6 +60,8 @@ class SendKafkaMessageResponse(SdkResponse):
     def topic(self):
         """Gets the topic of this SendKafkaMessageResponse.
 
+        Kafka的topic
+
         :return: The topic of this SendKafkaMessageResponse.
         :rtype: str
         """
@@ -68,6 +70,8 @@ class SendKafkaMessageResponse(SdkResponse):
     @topic.setter
     def topic(self, topic):
         """Sets the topic of this SendKafkaMessageResponse.
+
+        Kafka的topic
 
         :param topic: The topic of this SendKafkaMessageResponse.
         :type topic: str
@@ -78,6 +82,8 @@ class SendKafkaMessageResponse(SdkResponse):
     def body(self):
         """Gets the body of this SendKafkaMessageResponse.
 
+        消息内容
+
         :return: The body of this SendKafkaMessageResponse.
         :rtype: str
         """
@@ -86,6 +92,8 @@ class SendKafkaMessageResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this SendKafkaMessageResponse.
+
+        消息内容
 
         :param body: The body of this SendKafkaMessageResponse.
         :type body: str
@@ -96,6 +104,8 @@ class SendKafkaMessageResponse(SdkResponse):
     def property_list(self):
         """Gets the property_list of this SendKafkaMessageResponse.
 
+        topic的分区信息等
+
         :return: The property_list of this SendKafkaMessageResponse.
         :rtype: list[object]
         """
@@ -104,6 +114,8 @@ class SendKafkaMessageResponse(SdkResponse):
     @property_list.setter
     def property_list(self, property_list):
         """Sets the property_list of this SendKafkaMessageResponse.
+
+        topic的分区信息等
 
         :param property_list: The property_list of this SendKafkaMessageResponse.
         :type property_list: list[object]

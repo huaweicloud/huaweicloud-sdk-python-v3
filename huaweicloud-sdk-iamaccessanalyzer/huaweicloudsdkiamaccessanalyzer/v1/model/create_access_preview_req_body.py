@@ -33,7 +33,7 @@ class CreateAccessPreviewReqBody:
 
         :param configurations: 
         :type configurations: :class:`huaweicloudsdkiamaccessanalyzer.v1.Configuration`
-        :param resource_urn: 唯一的资源名称。
+        :param resource_urn: 访问分析的唯一资源标识。
         :type resource_urn: str
         """
         
@@ -68,7 +68,7 @@ class CreateAccessPreviewReqBody:
     def resource_urn(self):
         """Gets the resource_urn of this CreateAccessPreviewReqBody.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :return: The resource_urn of this CreateAccessPreviewReqBody.
         :rtype: str
@@ -79,7 +79,7 @@ class CreateAccessPreviewReqBody:
     def resource_urn(self, resource_urn):
         """Sets the resource_urn of this CreateAccessPreviewReqBody.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :param resource_urn: The resource_urn of this CreateAccessPreviewReqBody.
         :type resource_urn: str

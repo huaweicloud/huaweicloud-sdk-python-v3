@@ -24,7 +24,8 @@ class ListDesktopsRequest:
         'limit': 'int',
         'pool_id': 'str',
         'enterprise_project_id': 'str',
-        'desktop_type': 'str'
+        'desktop_type': 'str',
+        'subnet_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListDesktopsRequest:
         'limit': 'limit',
         'pool_id': 'pool_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'desktop_type': 'desktop_type'
+        'desktop_type': 'desktop_type',
+        'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None, pool_id=None, enterprise_project_id=None, desktop_type=None):
+    def __init__(self, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None, pool_id=None, enterprise_project_id=None, desktop_type=None, subnet_id=None):
         """ListDesktopsRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListDesktopsRequest:
         :type enterprise_project_id: str
         :param desktop_type: 桌面类型，为空时查所有桌面。查询多个类型时用,隔开。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等。 - SHARED: 多用户共享桌面。
         :type desktop_type: str
+        :param subnet_id: 桌面的子网ID。
+        :type subnet_id: str
         """
         
         
@@ -71,6 +75,7 @@ class ListDesktopsRequest:
         self._pool_id = None
         self._enterprise_project_id = None
         self._desktop_type = None
+        self._subnet_id = None
         self.discriminator = None
 
         if user_name is not None:
@@ -89,6 +94,8 @@ class ListDesktopsRequest:
             self.enterprise_project_id = enterprise_project_id
         if desktop_type is not None:
             self.desktop_type = desktop_type
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
 
     @property
     def user_name(self):
@@ -265,6 +272,28 @@ class ListDesktopsRequest:
         :type desktop_type: str
         """
         self._desktop_type = desktop_type
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this ListDesktopsRequest.
+
+        桌面的子网ID。
+
+        :return: The subnet_id of this ListDesktopsRequest.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this ListDesktopsRequest.
+
+        桌面的子网ID。
+
+        :param subnet_id: The subnet_id of this ListDesktopsRequest.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,7 +32,7 @@ class ListArchiveRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param archive_rules: 
+        :param archive_rules: 为指定分析器创建的存档规则的列表。
         :type archive_rules: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.ArchiveRuleSummary`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -53,6 +53,8 @@ class ListArchiveRulesResponse(SdkResponse):
     def archive_rules(self):
         """Gets the archive_rules of this ListArchiveRulesResponse.
 
+        为指定分析器创建的存档规则的列表。
+
         :return: The archive_rules of this ListArchiveRulesResponse.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.ArchiveRuleSummary`]
         """
@@ -61,6 +63,8 @@ class ListArchiveRulesResponse(SdkResponse):
     @archive_rules.setter
     def archive_rules(self, archive_rules):
         """Sets the archive_rules of this ListArchiveRulesResponse.
+
+        为指定分析器创建的存档规则的列表。
 
         :param archive_rules: The archive_rules of this ListArchiveRulesResponse.
         :type archive_rules: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.ArchiveRuleSummary`]

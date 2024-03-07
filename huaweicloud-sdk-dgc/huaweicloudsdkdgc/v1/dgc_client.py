@@ -1972,6 +1972,8 @@ class DgcClient(Client):
             path_params['job_name'] = local_var_params['job_name']
 
         query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
 
         header_params = {}
         if 'workspace' in local_var_params:

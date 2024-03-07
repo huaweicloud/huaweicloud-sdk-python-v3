@@ -36,7 +36,7 @@ class CreateAnalyzerReqBody:
 
         :param name: 分析器的名称。
         :type name: str
-        :param tags: 
+        :param tags: 自定义标签列表。
         :type tags: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
         :param type: 
         :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
@@ -80,6 +80,8 @@ class CreateAnalyzerReqBody:
     def tags(self):
         """Gets the tags of this CreateAnalyzerReqBody.
 
+        自定义标签列表。
+
         :return: The tags of this CreateAnalyzerReqBody.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
         """
@@ -88,6 +90,8 @@ class CreateAnalyzerReqBody:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this CreateAnalyzerReqBody.
+
+        自定义标签列表。
 
         :param tags: The tags of this CreateAnalyzerReqBody.
         :type tags: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]

@@ -33,9 +33,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标记的密钥标识符或名称。
+        :param key: 标签键。
         :type key: str
-        :param value: 与标记键关联的字符串值。
+        :param value: 与标签键关联的字符串值。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class Tag:
     def key(self):
         """Gets the key of this Tag.
 
-        标记的密钥标识符或名称。
+        标签键。
 
         :return: The key of this Tag.
         :rtype: str
@@ -63,7 +63,7 @@ class Tag:
     def key(self, key):
         """Sets the key of this Tag.
 
-        标记的密钥标识符或名称。
+        标签键。
 
         :param key: The key of this Tag.
         :type key: str
@@ -74,7 +74,7 @@ class Tag:
     def value(self):
         """Gets the value of this Tag.
 
-        与标记键关联的字符串值。
+        与标签键关联的字符串值。
 
         :return: The value of this Tag.
         :rtype: str
@@ -85,7 +85,7 @@ class Tag:
     def value(self, value):
         """Sets the value of this Tag.
 
-        与标记键关联的字符串值。
+        与标签键关联的字符串值。
 
         :param value: The value of this Tag.
         :type value: str

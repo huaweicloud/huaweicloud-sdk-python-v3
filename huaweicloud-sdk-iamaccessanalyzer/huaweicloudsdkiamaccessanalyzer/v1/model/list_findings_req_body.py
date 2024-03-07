@@ -33,7 +33,7 @@ class ListFindingsReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param filters: 
+        :param filters: 匹配要返回的访问分析结果的筛选器。
         :type filters: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
         :param limit: 单页最大结果数。
         :type limit: int
@@ -59,6 +59,8 @@ class ListFindingsReqBody:
     def filters(self):
         """Gets the filters of this ListFindingsReqBody.
 
+        匹配要返回的访问分析结果的筛选器。
+
         :return: The filters of this ListFindingsReqBody.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
         """
@@ -67,6 +69,8 @@ class ListFindingsReqBody:
     @filters.setter
     def filters(self, filters):
         """Sets the filters of this ListFindingsReqBody.
+
+        匹配要返回的访问分析结果的筛选器。
 
         :param filters: The filters of this ListFindingsReqBody.
         :type filters: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]

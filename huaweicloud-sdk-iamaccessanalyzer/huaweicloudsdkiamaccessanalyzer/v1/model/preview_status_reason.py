@@ -29,7 +29,7 @@ class PreviewStatusReason:
 
         The model defined in huaweicloud sdk
 
-        :param code: 分析预览状态原因
+        :param code: 访问预览当前状态的原因。
         :type code: str
         """
         
@@ -44,7 +44,7 @@ class PreviewStatusReason:
     def code(self):
         """Gets the code of this PreviewStatusReason.
 
-        分析预览状态原因
+        访问预览当前状态的原因。
 
         :return: The code of this PreviewStatusReason.
         :rtype: str
@@ -55,7 +55,7 @@ class PreviewStatusReason:
     def code(self, code):
         """Sets the code of this PreviewStatusReason.
 
-        分析预览状态原因
+        访问预览当前状态的原因。
 
         :param code: The code of this PreviewStatusReason.
         :type code: str

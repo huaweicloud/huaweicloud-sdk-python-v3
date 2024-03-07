@@ -31,9 +31,9 @@ class FindingCondition:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签\&quot;键\&quot;的标识符或名称。
+        :param key: 条件\&quot;键\&quot;的标识符或名称。
         :type key: str
-        :param value: 标签\&quot;键\&quot;对应的\&quot;值\&quot;。
+        :param value: 条件\&quot;键\&quot;对应的\&quot;值\&quot;。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class FindingCondition:
     def key(self):
         """Gets the key of this FindingCondition.
 
-        标签\"键\"的标识符或名称。
+        条件\"键\"的标识符或名称。
 
         :return: The key of this FindingCondition.
         :rtype: str
@@ -61,7 +61,7 @@ class FindingCondition:
     def key(self, key):
         """Sets the key of this FindingCondition.
 
-        标签\"键\"的标识符或名称。
+        条件\"键\"的标识符或名称。
 
         :param key: The key of this FindingCondition.
         :type key: str
@@ -72,7 +72,7 @@ class FindingCondition:
     def value(self):
         """Gets the value of this FindingCondition.
 
-        标签\"键\"对应的\"值\"。
+        条件\"键\"对应的\"值\"。
 
         :return: The value of this FindingCondition.
         :rtype: str
@@ -83,7 +83,7 @@ class FindingCondition:
     def value(self, value):
         """Sets the value of this FindingCondition.
 
-        标签\"键\"对应的\"值\"。
+        条件\"键\"对应的\"值\"。
 
         :param value: The value of this FindingCondition.
         :type value: str

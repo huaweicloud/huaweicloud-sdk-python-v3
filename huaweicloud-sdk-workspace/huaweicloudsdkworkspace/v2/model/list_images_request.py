@@ -22,6 +22,7 @@ class ListImagesRequest:
         'platform': 'str',
         'architecture': 'str',
         'package_type': 'str',
+        'image_id': 'str',
         'limit': 'int',
         'offset': 'int'
     }
@@ -32,11 +33,12 @@ class ListImagesRequest:
         'platform': 'platform',
         'architecture': 'architecture',
         'package_type': 'package_type',
+        'image_id': 'image_id',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, os_type=None, image_type=None, platform=None, architecture=None, package_type=None, limit=None, offset=None):
+    def __init__(self, os_type=None, image_type=None, platform=None, architecture=None, package_type=None, image_id=None, limit=None, offset=None):
         """ListImagesRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListImagesRequest:
         :type architecture: str
         :param package_type: 套餐系列
         :type package_type: str
+        :param image_id: 镜像Id
+        :type image_id: str
         :param limit: 每页数量，范围0-100，默认100。
         :type limit: int
         :param offset: 偏移量,默认0。
@@ -64,6 +68,7 @@ class ListImagesRequest:
         self._platform = None
         self._architecture = None
         self._package_type = None
+        self._image_id = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -78,6 +83,8 @@ class ListImagesRequest:
             self.architecture = architecture
         if package_type is not None:
             self.package_type = package_type
+        if image_id is not None:
+            self.image_id = image_id
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -192,6 +199,28 @@ class ListImagesRequest:
         :type package_type: str
         """
         self._package_type = package_type
+
+    @property
+    def image_id(self):
+        """Gets the image_id of this ListImagesRequest.
+
+        镜像Id
+
+        :return: The image_id of this ListImagesRequest.
+        :rtype: str
+        """
+        return self._image_id
+
+    @image_id.setter
+    def image_id(self, image_id):
+        """Sets the image_id of this ListImagesRequest.
+
+        镜像Id
+
+        :param image_id: The image_id of this ListImagesRequest.
+        :type image_id: str
+        """
+        self._image_id = image_id
 
     @property
     def limit(self):

@@ -31,9 +31,9 @@ class FindingPrincipal:
 
         The model defined in huaweicloud sdk
 
-        :param identifier: 检索结果的身份的类型。
+        :param identifier: 外部主体身份的标识符。
         :type identifier: str
-        :param type: 检索结果的标识符。
+        :param type: 外部主体身份的类型。
         :type type: str
         """
         
@@ -50,7 +50,7 @@ class FindingPrincipal:
     def identifier(self):
         """Gets the identifier of this FindingPrincipal.
 
-        检索结果的身份的类型。
+        外部主体身份的标识符。
 
         :return: The identifier of this FindingPrincipal.
         :rtype: str
@@ -61,7 +61,7 @@ class FindingPrincipal:
     def identifier(self, identifier):
         """Sets the identifier of this FindingPrincipal.
 
-        检索结果的身份的类型。
+        外部主体身份的标识符。
 
         :param identifier: The identifier of this FindingPrincipal.
         :type identifier: str
@@ -72,7 +72,7 @@ class FindingPrincipal:
     def type(self):
         """Gets the type of this FindingPrincipal.
 
-        检索结果的标识符。
+        外部主体身份的类型。
 
         :return: The type of this FindingPrincipal.
         :rtype: str
@@ -83,7 +83,7 @@ class FindingPrincipal:
     def type(self, type):
         """Sets the type of this FindingPrincipal.
 
-        检索结果的标识符。
+        外部主体身份的类型。
 
         :param type: The type of this FindingPrincipal.
         :type type: str

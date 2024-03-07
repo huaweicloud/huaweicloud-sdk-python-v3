@@ -50,6 +50,8 @@ class LtsRegion:
                         "https://lts.tr-west-1.myhuaweicloud.com")
     ME_EAST_1 = Region("me-east-1",
                         "https://lts.me-east-1.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://lts.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-2": CN_EAST_2,
@@ -74,6 +76,7 @@ class LtsRegion:
         "eu-west-101": EU_WEST_101,
         "tr-west-1": TR_WEST_1,
         "me-east-1": ME_EAST_1,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

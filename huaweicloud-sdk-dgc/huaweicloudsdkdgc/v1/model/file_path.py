@@ -38,8 +38,7 @@ class FilePath:
         self._path = None
         self.discriminator = None
 
-        if path is not None:
-            self.path = path
+        self.path = path
 
     @property
     def path(self):

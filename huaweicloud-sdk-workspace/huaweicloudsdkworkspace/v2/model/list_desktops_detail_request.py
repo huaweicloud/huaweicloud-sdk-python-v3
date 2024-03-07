@@ -34,7 +34,8 @@ class ListDesktopsDetailRequest:
         'enterprise_project_id': 'str',
         'image_id': 'str',
         'charge_mode': 'str',
-        'in_maintenance_mode': 'bool'
+        'in_maintenance_mode': 'bool',
+        'subnet_id': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class ListDesktopsDetailRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'image_id': 'image_id',
         'charge_mode': 'charge_mode',
-        'in_maintenance_mode': 'in_maintenance_mode'
+        'in_maintenance_mode': 'in_maintenance_mode',
+        'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None):
+    def __init__(self, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, subnet_id=None):
         """ListDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class ListDesktopsDetailRequest:
         :type charge_mode: str
         :param in_maintenance_mode: 按照维护模式过滤
         :type in_maintenance_mode: bool
+        :param subnet_id: 桌面的子网ID。
+        :type subnet_id: str
         """
         
         
@@ -121,6 +125,7 @@ class ListDesktopsDetailRequest:
         self._image_id = None
         self._charge_mode = None
         self._in_maintenance_mode = None
+        self._subnet_id = None
         self.discriminator = None
 
         if status is not None:
@@ -159,6 +164,8 @@ class ListDesktopsDetailRequest:
             self.charge_mode = charge_mode
         if in_maintenance_mode is not None:
             self.in_maintenance_mode = in_maintenance_mode
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
 
     @property
     def status(self):
@@ -555,6 +562,28 @@ class ListDesktopsDetailRequest:
         :type in_maintenance_mode: bool
         """
         self._in_maintenance_mode = in_maintenance_mode
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this ListDesktopsDetailRequest.
+
+        桌面的子网ID。
+
+        :return: The subnet_id of this ListDesktopsDetailRequest.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this ListDesktopsDetailRequest.
+
+        桌面的子网ID。
+
+        :param subnet_id: The subnet_id of this ListDesktopsDetailRequest.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

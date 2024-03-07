@@ -32,7 +32,7 @@ class ListAnalyzersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param analyzers: 
+        :param analyzers: 分析器列表信息。
         :type analyzers: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerSummary`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -53,6 +53,8 @@ class ListAnalyzersResponse(SdkResponse):
     def analyzers(self):
         """Gets the analyzers of this ListAnalyzersResponse.
 
+        分析器列表信息。
+
         :return: The analyzers of this ListAnalyzersResponse.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerSummary`]
         """
@@ -61,6 +63,8 @@ class ListAnalyzersResponse(SdkResponse):
     @analyzers.setter
     def analyzers(self, analyzers):
         """Sets the analyzers of this ListAnalyzersResponse.
+
+        分析器列表信息。
 
         :param analyzers: The analyzers of this ListAnalyzersResponse.
         :type analyzers: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerSummary`]

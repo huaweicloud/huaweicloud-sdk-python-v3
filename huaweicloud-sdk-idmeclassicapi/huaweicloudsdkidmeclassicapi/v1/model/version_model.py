@@ -23,7 +23,7 @@ class VersionModel:
         'create_time': 'str',
         'creator': 'str',
         'description': 'str',
-        'id': 'int',
+        'id': 'str',
         'kiaguid': 'str',
         'last_update_time': 'str',
         'master': 'VersionModelMaster',
@@ -70,7 +70,7 @@ class VersionModel:
         :param description: 描述信息。
         :type description: str
         :param id: 唯一标识。
-        :type id: int
+        :type id: str
         :param kiaguid: 关键信息资产ID。
         :type kiaguid: str
         :param last_update_time: 最后更新时间。
@@ -274,7 +274,7 @@ class VersionModel:
         唯一标识。
 
         :return: The id of this VersionModel.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -285,7 +285,7 @@ class VersionModel:
         唯一标识。
 
         :param id: The id of this VersionModel.
-        :type id: int
+        :type id: str
         """
         self._id = id
 

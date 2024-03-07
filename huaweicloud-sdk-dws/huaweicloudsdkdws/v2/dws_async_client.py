@@ -2847,9 +2847,9 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_workload_queue_async(self, request):
-        """删除工作负载队列
+        """删除资源池
 
-        该接口用于删除工作负载队列。
+        该接口用于删除资源池。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7310,6 +7310,8 @@ class DwsAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'logical_cluster_name' in local_var_params:
+            query_params.append(('logical_cluster_name', local_var_params['logical_cluster_name']))
 
         header_params = {}
 
@@ -8936,6 +8938,8 @@ class DwsAsyncClient(Client):
             path_params['queue_name'] = local_var_params['queue_name']
 
         query_params = []
+        if 'logical_cluster_name' in local_var_params:
+            query_params.append(('logical_cluster_name', local_var_params['logical_cluster_name']))
 
         header_params = {}
 

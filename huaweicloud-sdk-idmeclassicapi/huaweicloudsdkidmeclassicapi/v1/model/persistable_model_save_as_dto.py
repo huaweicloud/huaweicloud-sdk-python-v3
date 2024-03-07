@@ -17,7 +17,7 @@ class PersistableModelSaveAsDTO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'modifier': 'str',
         'last_update_time': 'str',
         'creator': 'str',
@@ -25,7 +25,7 @@ class PersistableModelSaveAsDTO:
         'rdm_extension_type': 'str',
         'tenant': 'ObjectReferenceParamDTO',
         'source_entity_number': 'str',
-        'source_instance_id': 'int',
+        'source_instance_id': 'str',
         'need_set_null_attrs': 'list[str]',
         'entity_to_save': 'object',
         'entity_to_return': 'object',
@@ -54,7 +54,7 @@ class PersistableModelSaveAsDTO:
         The model defined in huaweicloud sdk
 
         :param id: 唯一标识。
-        :type id: int
+        :type id: str
         :param modifier: 修改者。
         :type modifier: str
         :param last_update_time: 最后更新时间。
@@ -70,7 +70,7 @@ class PersistableModelSaveAsDTO:
         :param source_entity_number: 源模型编号。
         :type source_entity_number: str
         :param source_instance_id: 源实例的唯一标识(单实例为ID，版本实例为versionId)。
-        :type source_instance_id: int
+        :type source_instance_id: str
         :param need_set_null_attrs: 置空字段数组。
         :type need_set_null_attrs: list[str]
         :param entity_to_save: 要保存的属性。
@@ -131,7 +131,7 @@ class PersistableModelSaveAsDTO:
         唯一标识。
 
         :return: The id of this PersistableModelSaveAsDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -142,7 +142,7 @@ class PersistableModelSaveAsDTO:
         唯一标识。
 
         :param id: The id of this PersistableModelSaveAsDTO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -303,7 +303,7 @@ class PersistableModelSaveAsDTO:
         源实例的唯一标识(单实例为ID，版本实例为versionId)。
 
         :return: The source_instance_id of this PersistableModelSaveAsDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._source_instance_id
 
@@ -314,7 +314,7 @@ class PersistableModelSaveAsDTO:
         源实例的唯一标识(单实例为ID，版本实例为versionId)。
 
         :param source_instance_id: The source_instance_id of this PersistableModelSaveAsDTO.
-        :type source_instance_id: int
+        :type source_instance_id: str
         """
         self._source_instance_id = source_instance_id
 

@@ -33,8 +33,8 @@ class SmartConnectTaskRespSourceConfig:
         'security_protocol': 'str',
         'direction': 'str',
         'sync_consumer_offsets_enabled': 'bool',
-        'replication_factor': 'str',
-        'task_num': 'str',
+        'replication_factor': 'int',
+        'task_num': 'int',
         'rename_topic_enable': 'bool',
         'provenance_header_enabled': 'bool',
         'consumer_strategy': 'str',
@@ -106,9 +106,9 @@ class SmartConnectTaskRespSourceConfig:
         :param sync_consumer_offsets_enabled: 是否同步消费进度。（仅源端类型为Kafka时会显示）
         :type sync_consumer_offsets_enabled: bool
         :param replication_factor: 副本数。（仅源端类型为Kafka时会显示）
-        :type replication_factor: str
+        :type replication_factor: int
         :param task_num: 任务数。（仅源端类型为Kafka时会显示）
-        :type task_num: str
+        :type task_num: int
         :param rename_topic_enable: 是否重命名Topic。（仅源端类型为Kafka时会显示）
         :type rename_topic_enable: bool
         :param provenance_header_enabled: 是否添加来源header。（仅源端类型为Kafka时会显示）
@@ -554,7 +554,7 @@ class SmartConnectTaskRespSourceConfig:
         副本数。（仅源端类型为Kafka时会显示）
 
         :return: The replication_factor of this SmartConnectTaskRespSourceConfig.
-        :rtype: str
+        :rtype: int
         """
         return self._replication_factor
 
@@ -565,7 +565,7 @@ class SmartConnectTaskRespSourceConfig:
         副本数。（仅源端类型为Kafka时会显示）
 
         :param replication_factor: The replication_factor of this SmartConnectTaskRespSourceConfig.
-        :type replication_factor: str
+        :type replication_factor: int
         """
         self._replication_factor = replication_factor
 
@@ -576,7 +576,7 @@ class SmartConnectTaskRespSourceConfig:
         任务数。（仅源端类型为Kafka时会显示）
 
         :return: The task_num of this SmartConnectTaskRespSourceConfig.
-        :rtype: str
+        :rtype: int
         """
         return self._task_num
 
@@ -587,7 +587,7 @@ class SmartConnectTaskRespSourceConfig:
         任务数。（仅源端类型为Kafka时会显示）
 
         :param task_num: The task_num of this SmartConnectTaskRespSourceConfig.
-        :type task_num: str
+        :type task_num: int
         """
         self._task_num = task_num
 

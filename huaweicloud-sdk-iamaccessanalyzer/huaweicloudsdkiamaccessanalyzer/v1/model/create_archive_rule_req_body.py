@@ -32,9 +32,9 @@ class CreateArchiveRuleReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param filters: 
+        :param filters: 匹配要返回的访问分析结果的筛选器。
         :type filters: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
-        :param name: 创建归档规则的名称。
+        :param name: 创建存档规则的名称。
         :type name: str
         """
         
@@ -51,6 +51,8 @@ class CreateArchiveRuleReqBody:
     def filters(self):
         """Gets the filters of this CreateArchiveRuleReqBody.
 
+        匹配要返回的访问分析结果的筛选器。
+
         :return: The filters of this CreateArchiveRuleReqBody.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
         """
@@ -59,6 +61,8 @@ class CreateArchiveRuleReqBody:
     @filters.setter
     def filters(self, filters):
         """Sets the filters of this CreateArchiveRuleReqBody.
+
+        匹配要返回的访问分析结果的筛选器。
 
         :param filters: The filters of this CreateArchiveRuleReqBody.
         :type filters: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingFilter`]
@@ -69,7 +73,7 @@ class CreateArchiveRuleReqBody:
     def name(self):
         """Gets the name of this CreateArchiveRuleReqBody.
 
-        创建归档规则的名称。
+        创建存档规则的名称。
 
         :return: The name of this CreateArchiveRuleReqBody.
         :rtype: str
@@ -80,7 +84,7 @@ class CreateArchiveRuleReqBody:
     def name(self, name):
         """Sets the name of this CreateArchiveRuleReqBody.
 
-        创建归档规则的名称。
+        创建存档规则的名称。
 
         :param name: The name of this CreateArchiveRuleReqBody.
         :type name: str

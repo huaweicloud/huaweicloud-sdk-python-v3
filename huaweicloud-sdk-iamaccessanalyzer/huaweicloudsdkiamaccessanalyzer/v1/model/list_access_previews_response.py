@@ -32,7 +32,7 @@ class ListAccessPreviewsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_previews: 
+        :param access_previews: 访问预览列表。
         :type access_previews: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewSummary`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -53,6 +53,8 @@ class ListAccessPreviewsResponse(SdkResponse):
     def access_previews(self):
         """Gets the access_previews of this ListAccessPreviewsResponse.
 
+        访问预览列表。
+
         :return: The access_previews of this ListAccessPreviewsResponse.
         :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewSummary`]
         """
@@ -61,6 +63,8 @@ class ListAccessPreviewsResponse(SdkResponse):
     @access_previews.setter
     def access_previews(self, access_previews):
         """Sets the access_previews of this ListAccessPreviewsResponse.
+
+        访问预览列表。
 
         :param access_previews: The access_previews of this ListAccessPreviewsResponse.
         :type access_previews: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewSummary`]

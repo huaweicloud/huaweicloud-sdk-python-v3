@@ -19,7 +19,7 @@ class VersionModelVersionMasterQueryDTO:
     openapi_types = {
         'decrypt': 'bool',
         'iteration': 'int',
-        'master_id': 'int',
+        'master_id': 'str',
         'version': 'str'
     }
 
@@ -40,7 +40,7 @@ class VersionModelVersionMasterQueryDTO:
         :param iteration: 迭代版本。
         :type iteration: int
         :param master_id: 主对象ID。
-        :type master_id: int
+        :type master_id: str
         :param version: 版本号。
         :type version: str
         """
@@ -113,7 +113,7 @@ class VersionModelVersionMasterQueryDTO:
         主对象ID。
 
         :return: The master_id of this VersionModelVersionMasterQueryDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._master_id
 
@@ -124,7 +124,7 @@ class VersionModelVersionMasterQueryDTO:
         主对象ID。
 
         :param master_id: The master_id of this VersionModelVersionMasterQueryDTO.
-        :type master_id: int
+        :type master_id: str
         """
         self._master_id = master_id
 

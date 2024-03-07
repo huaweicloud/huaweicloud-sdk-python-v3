@@ -20,7 +20,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
         'creator': 'str',
         'custom_link_set': 'list[str]',
         'data': 'VersionModel',
-        'master_id': 'int',
+        'master_id': 'str',
         'modifier': 'str',
         'work_copy_type': 'str'
     }
@@ -46,7 +46,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
         :param data: 
         :type data: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
         :param master_id: 小版本ID。
-        :type master_id: int
+        :type master_id: str
         :param modifier: 更新者。
         :type modifier: str
         :param work_copy_type: 关系COPY类型。 - BOTH:以其为源或目标的均需要复制。 - CUSTOM:自定义复制。 - NONE:不复制。 - SOURCE:仅复制以此为源的。 - TARGET:仅复制以此为目标的。
@@ -144,7 +144,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
         小版本ID。
 
         :return: The master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
-        :rtype: int
+        :rtype: str
         """
         return self._master_id
 
@@ -155,7 +155,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
         小版本ID。
 
         :param master_id: The master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
-        :type master_id: int
+        :type master_id: str
         """
         self._master_id = master_id
 

@@ -44,8 +44,8 @@ class ServerDetails:
         'os_ext_a_zavailability_zone': 'str',
         'os_dc_fdisk_config': 'str',
         'fault': 'Fault',
-        'os_srv_us_glaunched_at': 'datetime',
-        'os_srv_us_gterminated_at': 'datetime',
+        'os_srv_us_glaunched_at': 'str',
+        'os_srv_us_gterminated_at': 'str',
         'os_extended_volumesvolumes_attached': 'list[OsExtendedVolumesInfo]',
         'description': 'str',
         'host_status': 'str',
@@ -170,9 +170,9 @@ class ServerDetails:
         :param fault: 
         :type fault: :class:`huaweicloudsdkbms.v1.Fault`
         :param os_srv_us_glaunched_at: 裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-22T03:23:59.000000
-        :type os_srv_us_glaunched_at: datetime
+        :type os_srv_us_glaunched_at: str
         :param os_srv_us_gterminated_at: 裸金属服务器删除时间。时间戳格式为ISO 8601，例如：2019-05-22T04:23:59.000000
-        :type os_srv_us_gterminated_at: datetime
+        :type os_srv_us_gterminated_at: str
         :param os_extended_volumesvolumes_attached: 挂载到裸金属服务器上的磁盘。详情请参见表9 os-extended-volumes:volumes_attached 数据结构说明。
         :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkbms.v1.OsExtendedVolumesInfo`]
         :param description: 裸金属服务器的描述信息
@@ -922,7 +922,7 @@ class ServerDetails:
         裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-22T03:23:59.000000
 
         :return: The os_srv_us_glaunched_at of this ServerDetails.
-        :rtype: datetime
+        :rtype: str
         """
         return self._os_srv_us_glaunched_at
 
@@ -933,7 +933,7 @@ class ServerDetails:
         裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-22T03:23:59.000000
 
         :param os_srv_us_glaunched_at: The os_srv_us_glaunched_at of this ServerDetails.
-        :type os_srv_us_glaunched_at: datetime
+        :type os_srv_us_glaunched_at: str
         """
         self._os_srv_us_glaunched_at = os_srv_us_glaunched_at
 
@@ -944,7 +944,7 @@ class ServerDetails:
         裸金属服务器删除时间。时间戳格式为ISO 8601，例如：2019-05-22T04:23:59.000000
 
         :return: The os_srv_us_gterminated_at of this ServerDetails.
-        :rtype: datetime
+        :rtype: str
         """
         return self._os_srv_us_gterminated_at
 
@@ -955,7 +955,7 @@ class ServerDetails:
         裸金属服务器删除时间。时间戳格式为ISO 8601，例如：2019-05-22T04:23:59.000000
 
         :param os_srv_us_gterminated_at: The os_srv_us_gterminated_at of this ServerDetails.
-        :type os_srv_us_gterminated_at: datetime
+        :type os_srv_us_gterminated_at: str
         """
         self._os_srv_us_gterminated_at = os_srv_us_gterminated_at
 

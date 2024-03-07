@@ -17,7 +17,7 @@ class VersionModelVersionUpdateDTO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'iteration': 'int',
         'version': 'str'
     }
@@ -34,7 +34,7 @@ class VersionModelVersionUpdateDTO:
         The model defined in huaweicloud sdk
 
         :param id: 唯一标识。
-        :type id: int
+        :type id: str
         :param iteration: 迭代版本。
         :type iteration: int
         :param version: 版本号。
@@ -62,7 +62,7 @@ class VersionModelVersionUpdateDTO:
         唯一标识。
 
         :return: The id of this VersionModelVersionUpdateDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -73,7 +73,7 @@ class VersionModelVersionUpdateDTO:
         唯一标识。
 
         :param id: The id of this VersionModelVersionUpdateDTO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 

@@ -39,13 +39,13 @@ class AccessPreview:
 
         The model defined in huaweicloud sdk
 
-        :param access_preview_id: 分析预览的唯一标识符。
+        :param access_preview_id: 访问预览的唯一标识符。
         :type access_preview_id: str
         :param analyzer_id: 分析器的唯一标识符。
         :type analyzer_id: str
         :param configurations: 
         :type configurations: :class:`huaweicloudsdkiamaccessanalyzer.v1.Configuration`
-        :param created_at: 
+        :param created_at: 访问预览创建时间。
         :type created_at: datetime
         :param status: 
         :type status: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewStatus`
@@ -75,7 +75,7 @@ class AccessPreview:
     def access_preview_id(self):
         """Gets the access_preview_id of this AccessPreview.
 
-        分析预览的唯一标识符。
+        访问预览的唯一标识符。
 
         :return: The access_preview_id of this AccessPreview.
         :rtype: str
@@ -86,7 +86,7 @@ class AccessPreview:
     def access_preview_id(self, access_preview_id):
         """Sets the access_preview_id of this AccessPreview.
 
-        分析预览的唯一标识符。
+        访问预览的唯一标识符。
 
         :param access_preview_id: The access_preview_id of this AccessPreview.
         :type access_preview_id: str
@@ -137,6 +137,8 @@ class AccessPreview:
     def created_at(self):
         """Gets the created_at of this AccessPreview.
 
+        访问预览创建时间。
+
         :return: The created_at of this AccessPreview.
         :rtype: datetime
         """
@@ -145,6 +147,8 @@ class AccessPreview:
     @created_at.setter
     def created_at(self, created_at):
         """Sets the created_at of this AccessPreview.
+
+        访问预览创建时间。
 
         :param created_at: The created_at of this AccessPreview.
         :type created_at: datetime

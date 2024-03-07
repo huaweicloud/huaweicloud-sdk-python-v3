@@ -23,6 +23,8 @@ class IdcardFrontResult:
         'ethnicity': 'str',
         'address': 'str',
         'number': 'str',
+        'portrait_image': 'str',
+        'adjusted_image': 'str',
         'verification_result': 'IdcardFrontVerificationResult',
         'text_location': 'object',
         'portrait_location': 'list[list[int]]',
@@ -44,6 +46,8 @@ class IdcardFrontResult:
         'ethnicity': 'ethnicity',
         'address': 'address',
         'number': 'number',
+        'portrait_image': 'portrait_image',
+        'adjusted_image': 'adjusted_image',
         'verification_result': 'verification_result',
         'text_location': 'text_location',
         'portrait_location': 'portrait_location',
@@ -58,7 +62,7 @@ class IdcardFrontResult:
         'score_info': 'score_info'
     }
 
-    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, verification_result=None, text_location=None, portrait_location=None, detect_reproduce_result=None, detect_copy_result=None, detect_tampering_result=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_interim_result=None, detect_glare_result=None, score_info=None):
+    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, portrait_image=None, adjusted_image=None, verification_result=None, text_location=None, portrait_location=None, detect_reproduce_result=None, detect_copy_result=None, detect_tampering_result=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_interim_result=None, detect_glare_result=None, score_info=None):
         """IdcardFrontResult
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class IdcardFrontResult:
         :type address: str
         :param number: 身份证号。 
         :type number: str
+        :param portrait_image: 身份证头像图片信息的base64码结果。  &gt; 说明： - 仅在输入参数return_portrait_image为true时，返回该字段。 - 当输入为身份证背面时返回为空字符串。 
+        :type portrait_image: str
+        :param adjusted_image: 身份证卡面图片信息的base64码结果。  &gt; 说明： - 仅在输入参数return_adjusted_image为true时，返回该字段。 
+        :type adjusted_image: str
         :param verification_result: 
         :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardFrontVerificationResult`
         :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。 仅return_text_location设置为true时才返回。 
@@ -109,6 +117,8 @@ class IdcardFrontResult:
         self._ethnicity = None
         self._address = None
         self._number = None
+        self._portrait_image = None
+        self._adjusted_image = None
         self._verification_result = None
         self._text_location = None
         self._portrait_location = None
@@ -135,6 +145,10 @@ class IdcardFrontResult:
             self.address = address
         if number is not None:
             self.number = number
+        if portrait_image is not None:
+            self.portrait_image = portrait_image
+        if adjusted_image is not None:
+            self.adjusted_image = adjusted_image
         if verification_result is not None:
             self.verification_result = verification_result
         if text_location is not None:
@@ -291,6 +305,50 @@ class IdcardFrontResult:
         :type number: str
         """
         self._number = number
+
+    @property
+    def portrait_image(self):
+        """Gets the portrait_image of this IdcardFrontResult.
+
+        身份证头像图片信息的base64码结果。  > 说明： - 仅在输入参数return_portrait_image为true时，返回该字段。 - 当输入为身份证背面时返回为空字符串。 
+
+        :return: The portrait_image of this IdcardFrontResult.
+        :rtype: str
+        """
+        return self._portrait_image
+
+    @portrait_image.setter
+    def portrait_image(self, portrait_image):
+        """Sets the portrait_image of this IdcardFrontResult.
+
+        身份证头像图片信息的base64码结果。  > 说明： - 仅在输入参数return_portrait_image为true时，返回该字段。 - 当输入为身份证背面时返回为空字符串。 
+
+        :param portrait_image: The portrait_image of this IdcardFrontResult.
+        :type portrait_image: str
+        """
+        self._portrait_image = portrait_image
+
+    @property
+    def adjusted_image(self):
+        """Gets the adjusted_image of this IdcardFrontResult.
+
+        身份证卡面图片信息的base64码结果。  > 说明： - 仅在输入参数return_adjusted_image为true时，返回该字段。 
+
+        :return: The adjusted_image of this IdcardFrontResult.
+        :rtype: str
+        """
+        return self._adjusted_image
+
+    @adjusted_image.setter
+    def adjusted_image(self, adjusted_image):
+        """Sets the adjusted_image of this IdcardFrontResult.
+
+        身份证卡面图片信息的base64码结果。  > 说明： - 仅在输入参数return_adjusted_image为true时，返回该字段。 
+
+        :param adjusted_image: The adjusted_image of this IdcardFrontResult.
+        :type adjusted_image: str
+        """
+        self._adjusted_image = adjusted_image
 
     @property
     def verification_result(self):

@@ -18,15 +18,17 @@ class ShowWorkloadQueueRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'queue_name': 'str'
+        'queue_name': 'str',
+        'logical_cluster_name': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'queue_name': 'queue_name'
+        'queue_name': 'queue_name',
+        'logical_cluster_name': 'logical_cluster_name'
     }
 
-    def __init__(self, cluster_id=None, queue_name=None):
+    def __init__(self, cluster_id=None, queue_name=None, logical_cluster_name=None):
         """ShowWorkloadQueueRequest
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class ShowWorkloadQueueRequest:
         :type cluster_id: str
         :param queue_name: 资源队列名
         :type queue_name: str
+        :param logical_cluster_name: 逻辑集群名称。非逻辑集群模式下该字段不填,逻辑集群模式下需指定逻辑集群名称。
+        :type logical_cluster_name: str
         """
         
         
 
         self._cluster_id = None
         self._queue_name = None
+        self._logical_cluster_name = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.queue_name = queue_name
+        if logical_cluster_name is not None:
+            self.logical_cluster_name = logical_cluster_name
 
     @property
     def cluster_id(self):
@@ -89,6 +96,28 @@ class ShowWorkloadQueueRequest:
         :type queue_name: str
         """
         self._queue_name = queue_name
+
+    @property
+    def logical_cluster_name(self):
+        """Gets the logical_cluster_name of this ShowWorkloadQueueRequest.
+
+        逻辑集群名称。非逻辑集群模式下该字段不填,逻辑集群模式下需指定逻辑集群名称。
+
+        :return: The logical_cluster_name of this ShowWorkloadQueueRequest.
+        :rtype: str
+        """
+        return self._logical_cluster_name
+
+    @logical_cluster_name.setter
+    def logical_cluster_name(self, logical_cluster_name):
+        """Sets the logical_cluster_name of this ShowWorkloadQueueRequest.
+
+        逻辑集群名称。非逻辑集群模式下该字段不填,逻辑集群模式下需指定逻辑集群名称。
+
+        :param logical_cluster_name: The logical_cluster_name of this ShowWorkloadQueueRequest.
+        :type logical_cluster_name: str
+        """
+        self._logical_cluster_name = logical_cluster_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

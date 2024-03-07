@@ -361,20 +361,14 @@ class Client(object):
         return XmlTransfer().to_string(_dict)
 
     @classmethod
-    def _parse_body(cls, body, post_params):
-        str_body = ""
-        if body:
-            if cls._is_iterable_body(body):
-                return body
+    def _parse_body(cls, body, post_params=None):
+        # type: (str|list|dict|Iterable|None, dict) -> dict|str|Iterable|None
+        if post_params:
+            return post_params
+        if body is None or isinstance(body, six.text_type) or cls._is_iterable_body(body):
+            return body
 
-            if isinstance(body, six.text_type):
-                return body
-
-            str_body = json.dumps(http_utils.sanitize_for_serialization(body), use_decimal=True)
-        elif len(post_params) != 0:
-            str_body = post_params
-
-        return str_body
+        return json.dumps(http_utils.sanitize_for_serialization(body), use_decimal=True) if body else json.dumps(body)
 
     @classmethod
     def _is_iterable_body(cls, body):

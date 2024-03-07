@@ -33,11 +33,11 @@ class UpdateFindingsReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 要更新的调查结果的ID。
+        :param ids: 要更新的访问分析结果唯一标识符数组。
         :type ids: list[str]
-        :param resource_urn: 唯一的资源名称。
+        :param resource_urn: 访问分析的唯一资源标识。
         :type resource_urn: str
-        :param status: 状态表示为更新查找状态而要采取的操作。使用“存档”将活动查找更改为存档查找。使用“活动”将存档的查找更改为活动查找。
+        :param status: 要更新的访问分析结果状态。
         :type status: str
         """
         
@@ -58,7 +58,7 @@ class UpdateFindingsReqBody:
     def ids(self):
         """Gets the ids of this UpdateFindingsReqBody.
 
-        要更新的调查结果的ID。
+        要更新的访问分析结果唯一标识符数组。
 
         :return: The ids of this UpdateFindingsReqBody.
         :rtype: list[str]
@@ -69,7 +69,7 @@ class UpdateFindingsReqBody:
     def ids(self, ids):
         """Sets the ids of this UpdateFindingsReqBody.
 
-        要更新的调查结果的ID。
+        要更新的访问分析结果唯一标识符数组。
 
         :param ids: The ids of this UpdateFindingsReqBody.
         :type ids: list[str]
@@ -80,7 +80,7 @@ class UpdateFindingsReqBody:
     def resource_urn(self):
         """Gets the resource_urn of this UpdateFindingsReqBody.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :return: The resource_urn of this UpdateFindingsReqBody.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateFindingsReqBody:
     def resource_urn(self, resource_urn):
         """Sets the resource_urn of this UpdateFindingsReqBody.
 
-        唯一的资源名称。
+        访问分析的唯一资源标识。
 
         :param resource_urn: The resource_urn of this UpdateFindingsReqBody.
         :type resource_urn: str
@@ -102,7 +102,7 @@ class UpdateFindingsReqBody:
     def status(self):
         """Gets the status of this UpdateFindingsReqBody.
 
-        状态表示为更新查找状态而要采取的操作。使用“存档”将活动查找更改为存档查找。使用“活动”将存档的查找更改为活动查找。
+        要更新的访问分析结果状态。
 
         :return: The status of this UpdateFindingsReqBody.
         :rtype: str
@@ -113,7 +113,7 @@ class UpdateFindingsReqBody:
     def status(self, status):
         """Sets the status of this UpdateFindingsReqBody.
 
-        状态表示为更新查找状态而要采取的操作。使用“存档”将活动查找更改为存档查找。使用“活动”将存档的查找更改为活动查找。
+        要更新的访问分析结果状态。
 
         :param status: The status of this UpdateFindingsReqBody.
         :type status: str

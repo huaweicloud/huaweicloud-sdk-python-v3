@@ -3040,6 +3040,12 @@ class ConfigClient(Client):
         path_params = {}
 
         query_params = []
+        if 'policy_assignment_name' in local_var_params:
+            query_params.append(('policy_assignment_name', local_var_params['policy_assignment_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -3661,6 +3667,8 @@ class ConfigClient(Client):
             path_params['organization_id'] = local_var_params['organization_id']
 
         query_params = []
+        if 'organization_policy_assignment_id' in local_var_params:
+            query_params.append(('organization_policy_assignment_id', local_var_params['organization_policy_assignment_id']))
         if 'organization_policy_assignment_name' in local_var_params:
             query_params.append(('organization_policy_assignment_name', local_var_params['organization_policy_assignment_name']))
         if 'limit' in local_var_params:

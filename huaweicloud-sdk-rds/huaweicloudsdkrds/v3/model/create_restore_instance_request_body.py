@@ -37,11 +37,9 @@ class CreateRestoreInstanceRequestBody:
         'charge_info': 'ChargeInfo',
         'time_zone': 'str',
         'dsspool_id': 'str',
-        'replica_of_id': 'str',
         'restore_point': 'RestorePoint',
         'collation': 'str',
         'tags': 'list[TagWithKeyValue]',
-        'unchangeable_param': 'UnchangeableParam',
         'serverless_info': 'ServerlessInfo',
         'dry_run': 'bool'
     }
@@ -67,16 +65,14 @@ class CreateRestoreInstanceRequestBody:
         'charge_info': 'charge_info',
         'time_zone': 'time_zone',
         'dsspool_id': 'dsspool_id',
-        'replica_of_id': 'replica_of_id',
         'restore_point': 'restore_point',
         'collation': 'collation',
         'tags': 'tags',
-        'unchangeable_param': 'unchangeable_param',
         'serverless_info': 'serverless_info',
         'dry_run': 'dry_run'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, serverless_info=None, dry_run=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, restore_point=None, collation=None, tags=None, serverless_info=None, dry_run=None):
         """CreateRestoreInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -103,17 +99,17 @@ class CreateRestoreInstanceRequestBody:
         :type flavor_ref: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkrds.v3.Volume`
-        :param region: 区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :param region: 区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
         :type region: str
         :param availability_zone: 可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
         :type availability_zone: str
-        :param vpc_id: 虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
+        :param vpc_id: 虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
         :type vpc_id: str
-        :param subnet_id: 子网的网络ID信息。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
+        :param subnet_id: 子网的网络ID信息。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
         :type subnet_id: str
         :param data_vip: 指定实例的内网IP,目前仅支持设置IPv4地址。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询私有IP列表](https://support.huaweicloud.com/api-vpc/vpc_privateip_0003.html),选择“device_owner”为空的私有IP。
         :type data_vip: str
-        :param security_group_id: 安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。
+        :param security_group_id: 安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
         :type security_group_id: str
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfo`
@@ -121,16 +117,12 @@ class CreateRestoreInstanceRequestBody:
         :type time_zone: str
         :param dsspool_id: Dec用户专属存储ID，每个az配置的专属存储不同，Dec用户创建实例时，对于数据库实例类型不是单机或只读的实例，需要分别为实例所有节点指定dsspoolId，并用逗号隔开。 获取方法如下： - 方法1：登录专属分布式存储服务DSS的控制台界面，查看专属存储列表，选择符合条件的az下的专属dss的ID。 - 方法2：通过专属分布式存储服务DSS的API接口查询，具体操作可参考[获取专属存储详情列表](https://support.huaweicloud.com/api-dss/dss_02_1002.html)。
         :type dsspool_id: str
-        :param replica_of_id: 只读实例的主实例ID。创建只读实例时必选，其它场景不可选。
-        :type replica_of_id: str
         :param restore_point: 
         :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`
         :param collation: 仅限Microsoft SQL Server实例创建使用。对于MySQL和PostgreSQL实例，该参数无意义。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。 取值范围：根据[查询SQL Server可用字符集](https://support.huaweicloud.com/api-rds/rds_05_0010.html)查询可设置的字符集。
         :type collation: str
         :param tags: 标签列表。单个实例总标签数上限20个。
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
-        :param unchangeable_param: 
-        :type unchangeable_param: :class:`huaweicloudsdkrds.v3.UnchangeableParam`
         :param serverless_info: 
         :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
         :param dry_run: 是否只预检此次请求，仅支持MySQL。 - true：发送参数检查请求，不会创建实例。   - 检查通过：返回202状态码。   - 检查不通过：返回对应错误码，详情请参考错误码。 - false：发送正常请求，通过检查后，并且执行创建实例的请求。
@@ -159,17 +151,16 @@ class CreateRestoreInstanceRequestBody:
         self._charge_info = None
         self._time_zone = None
         self._dsspool_id = None
-        self._replica_of_id = None
         self._restore_point = None
         self._collation = None
         self._tags = None
-        self._unchangeable_param = None
         self._serverless_info = None
         self._dry_run = None
         self.discriminator = None
 
         self.name = name
-        self.datastore = datastore
+        if datastore is not None:
+            self.datastore = datastore
         if ha is not None:
             self.ha = ha
         if configuration_id is not None:
@@ -186,29 +177,29 @@ class CreateRestoreInstanceRequestBody:
             self.disk_encryption_id = disk_encryption_id
         self.flavor_ref = flavor_ref
         self.volume = volume
-        self.region = region
+        if region is not None:
+            self.region = region
         self.availability_zone = availability_zone
-        self.vpc_id = vpc_id
-        self.subnet_id = subnet_id
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
         if data_vip is not None:
             self.data_vip = data_vip
-        self.security_group_id = security_group_id
+        if security_group_id is not None:
+            self.security_group_id = security_group_id
         if charge_info is not None:
             self.charge_info = charge_info
         if time_zone is not None:
             self.time_zone = time_zone
         if dsspool_id is not None:
             self.dsspool_id = dsspool_id
-        if replica_of_id is not None:
-            self.replica_of_id = replica_of_id
         if restore_point is not None:
             self.restore_point = restore_point
         if collation is not None:
             self.collation = collation
         if tags is not None:
             self.tags = tags
-        if unchangeable_param is not None:
-            self.unchangeable_param = unchangeable_param
         if serverless_info is not None:
             self.serverless_info = serverless_info
         if dry_run is not None:
@@ -444,7 +435,7 @@ class CreateRestoreInstanceRequestBody:
     def region(self):
         """Gets the region of this CreateRestoreInstanceRequestBody.
 
-        区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
         :return: The region of this CreateRestoreInstanceRequestBody.
         :rtype: str
@@ -455,7 +446,7 @@ class CreateRestoreInstanceRequestBody:
     def region(self, region):
         """Sets the region of this CreateRestoreInstanceRequestBody.
 
-        区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
         :param region: The region of this CreateRestoreInstanceRequestBody.
         :type region: str
@@ -488,7 +479,7 @@ class CreateRestoreInstanceRequestBody:
     def vpc_id(self):
         """Gets the vpc_id of this CreateRestoreInstanceRequestBody.
 
-        虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
+        虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
         :return: The vpc_id of this CreateRestoreInstanceRequestBody.
         :rtype: str
@@ -499,7 +490,7 @@ class CreateRestoreInstanceRequestBody:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateRestoreInstanceRequestBody.
 
-        虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
+        虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
         :param vpc_id: The vpc_id of this CreateRestoreInstanceRequestBody.
         :type vpc_id: str
@@ -510,7 +501,7 @@ class CreateRestoreInstanceRequestBody:
     def subnet_id(self):
         """Gets the subnet_id of this CreateRestoreInstanceRequestBody.
 
-        子网的网络ID信息。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
+        子网的网络ID信息。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
         :return: The subnet_id of this CreateRestoreInstanceRequestBody.
         :rtype: str
@@ -521,7 +512,7 @@ class CreateRestoreInstanceRequestBody:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this CreateRestoreInstanceRequestBody.
 
-        子网的网络ID信息。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
+        子网的网络ID信息。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
         :param subnet_id: The subnet_id of this CreateRestoreInstanceRequestBody.
         :type subnet_id: str
@@ -554,7 +545,7 @@ class CreateRestoreInstanceRequestBody:
     def security_group_id(self):
         """Gets the security_group_id of this CreateRestoreInstanceRequestBody.
 
-        安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。
+        安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
         :return: The security_group_id of this CreateRestoreInstanceRequestBody.
         :rtype: str
@@ -565,7 +556,7 @@ class CreateRestoreInstanceRequestBody:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this CreateRestoreInstanceRequestBody.
 
-        安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。
+        安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
         :param security_group_id: The security_group_id of this CreateRestoreInstanceRequestBody.
         :type security_group_id: str
@@ -635,28 +626,6 @@ class CreateRestoreInstanceRequestBody:
         self._dsspool_id = dsspool_id
 
     @property
-    def replica_of_id(self):
-        """Gets the replica_of_id of this CreateRestoreInstanceRequestBody.
-
-        只读实例的主实例ID。创建只读实例时必选，其它场景不可选。
-
-        :return: The replica_of_id of this CreateRestoreInstanceRequestBody.
-        :rtype: str
-        """
-        return self._replica_of_id
-
-    @replica_of_id.setter
-    def replica_of_id(self, replica_of_id):
-        """Sets the replica_of_id of this CreateRestoreInstanceRequestBody.
-
-        只读实例的主实例ID。创建只读实例时必选，其它场景不可选。
-
-        :param replica_of_id: The replica_of_id of this CreateRestoreInstanceRequestBody.
-        :type replica_of_id: str
-        """
-        self._replica_of_id = replica_of_id
-
-    @property
     def restore_point(self):
         """Gets the restore_point of this CreateRestoreInstanceRequestBody.
 
@@ -717,24 +686,6 @@ class CreateRestoreInstanceRequestBody:
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
         """
         self._tags = tags
-
-    @property
-    def unchangeable_param(self):
-        """Gets the unchangeable_param of this CreateRestoreInstanceRequestBody.
-
-        :return: The unchangeable_param of this CreateRestoreInstanceRequestBody.
-        :rtype: :class:`huaweicloudsdkrds.v3.UnchangeableParam`
-        """
-        return self._unchangeable_param
-
-    @unchangeable_param.setter
-    def unchangeable_param(self, unchangeable_param):
-        """Sets the unchangeable_param of this CreateRestoreInstanceRequestBody.
-
-        :param unchangeable_param: The unchangeable_param of this CreateRestoreInstanceRequestBody.
-        :type unchangeable_param: :class:`huaweicloudsdkrds.v3.UnchangeableParam`
-        """
-        self._unchangeable_param = unchangeable_param
 
     @property
     def serverless_info(self):

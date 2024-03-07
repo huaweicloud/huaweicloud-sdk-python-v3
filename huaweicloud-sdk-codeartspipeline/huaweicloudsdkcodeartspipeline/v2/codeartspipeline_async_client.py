@@ -5035,6 +5035,75 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
+    def show_pipeline_artifacts_async(self, request):
+        """查询流水线上的构建产物
+
+        查询流水线上的构建产物
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPipelineArtifacts
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowPipelineArtifactsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowPipelineArtifactsResponse`
+        """
+        http_info = self._show_pipeline_artifacts_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pipeline_artifacts_async_invoker(self, request):
+        http_info = self._show_pipeline_artifacts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_pipeline_artifacts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/artifacts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPipelineArtifactsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_pipeline_log_async(self, request):
         """查询流水线日志
 
@@ -5219,6 +5288,77 @@ class CodeArtsPipelineAsyncClient(Client):
             path_params['template_id'] = local_var_params['template_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_step_outputs_async(self, request):
+        """获取流水线步骤执行输出
+
+        获取流水线步骤执行输出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStepOutputs
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowStepOutputsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowStepOutputsResponse`
+        """
+        http_info = self._show_step_outputs_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_step_outputs_async_invoker(self, request):
+        http_info = self._show_step_outputs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_step_outputs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/steps/outputs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStepOutputsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+        if 'step_run_ids' in local_var_params:
+            query_params.append(('step_run_ids', local_var_params['step_run_ids']))
 
         header_params = {}
 

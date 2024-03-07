@@ -21,7 +21,7 @@ class LogicalVolumes:
         'block_size': 'int',
         'file_system': 'str',
         'inode_size': 'int',
-        'device_use': 'int',
+        'device_use': 'str',
         'mount_point': 'str',
         'name': 'str',
         'size': 'int',
@@ -55,8 +55,8 @@ class LogicalVolumes:
         :type file_system: str
         :param inode_size: inode数量
         :type inode_size: int
-        :param device_use: 已使用大小
-        :type device_use: int
+        :param device_use: 分区类型，普通分区，启动分区，系统分区
+        :type device_use: str
         :param mount_point: 挂载点
         :type mount_point: str
         :param name: 名称
@@ -189,10 +189,10 @@ class LogicalVolumes:
     def device_use(self):
         """Gets the device_use of this LogicalVolumes.
 
-        已使用大小
+        分区类型，普通分区，启动分区，系统分区
 
         :return: The device_use of this LogicalVolumes.
-        :rtype: int
+        :rtype: str
         """
         return self._device_use
 
@@ -200,10 +200,10 @@ class LogicalVolumes:
     def device_use(self, device_use):
         """Sets the device_use of this LogicalVolumes.
 
-        已使用大小
+        分区类型，普通分区，启动分区，系统分区
 
         :param device_use: The device_use of this LogicalVolumes.
-        :type device_use: int
+        :type device_use: str
         """
         self._device_use = device_use
 
