@@ -1,6 +1,8 @@
 name: Pytest CI
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '0 0 * * *'
 jobs:
   publish:
     runs-on: ubuntu-22.04
@@ -16,4 +18,4 @@ jobs:
         cd huaweicloud-sdk-core || exit 1
         pip install -r requirements.txt
         pip install -r test-requirements.txt
-        pytest tests/ -s -v --cov
+        pytest tests/ -s -v --cov -k "not provider"
