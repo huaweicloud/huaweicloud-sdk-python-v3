@@ -29,7 +29,10 @@ class Event2alarmRuleBody:
         'alarm_type': 'str',
         'action_rule': 'str',
         'inhibit_rule': 'str',
-        'route_group_rule': 'str'
+        'route_group_rule': 'str',
+        'event_names': 'list[str]',
+        'migrated': 'bool',
+        'topics': 'list[SmnTopics]'
     }
 
     attribute_map = {
@@ -45,19 +48,22 @@ class Event2alarmRuleBody:
         'alarm_type': 'alarm_type',
         'action_rule': 'action_rule',
         'inhibit_rule': 'inhibit_rule',
-        'route_group_rule': 'route_group_rule'
+        'route_group_rule': 'route_group_rule',
+        'event_names': 'event_names',
+        'migrated': 'migrated',
+        'topics': 'topics'
     }
 
-    def __init__(self, user_id=None, name=None, description=None, create_time=None, update_time=None, resource_provider=None, metadata=None, enable=None, trigger_policies=None, alarm_type=None, action_rule=None, inhibit_rule=None, route_group_rule=None):
+    def __init__(self, user_id=None, name=None, description=None, create_time=None, update_time=None, resource_provider=None, metadata=None, enable=None, trigger_policies=None, alarm_type=None, action_rule=None, inhibit_rule=None, route_group_rule=None, event_names=None, migrated=None, topics=None):
         """Event2alarmRuleBody
 
         The model defined in huaweicloud sdk
 
         :param user_id: 用户项目id
         :type user_id: str
-        :param name: 规则名称
+        :param name: 规则名称。规则名称包含大小写字母，数字，特殊字符（_-）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
         :type name: str
-        :param description: 规则描述
+        :param description: 规则描述。描述包含大小写字母，数字，特殊字符（_-&lt;&gt;&#x3D;,.）和汉字组成，不能以下划线、中划线开头结尾，最大长度为1024。
         :type description: str
         :param create_time: 创建时间
         :type create_time: int
@@ -71,14 +77,20 @@ class Event2alarmRuleBody:
         :type enable: bool
         :param trigger_policies: 触发策略
         :type trigger_policies: list[:class:`huaweicloudsdkaom.v2.Event2alarmRuleBodyTriggerPolicies`]
-        :param alarm_type: 告警类型
+        :param alarm_type: 告警类型。notification：直接告警。denoising：告警降噪。
         :type alarm_type: str
         :param action_rule: 告警行动规则
         :type action_rule: str
         :param inhibit_rule: 告警抑制规则
         :type inhibit_rule: str
-        :param route_group_rule: 告警静默规则
+        :param route_group_rule: 告警分组规则
         :type route_group_rule: str
+        :param event_names: 事件名称
+        :type event_names: list[str]
+        :param migrated: 是否迁移到2.0
+        :type migrated: bool
+        :param topics: smn信息
+        :type topics: list[:class:`huaweicloudsdkaom.v2.SmnTopics`]
         """
         
         
@@ -96,6 +108,9 @@ class Event2alarmRuleBody:
         self._action_rule = None
         self._inhibit_rule = None
         self._route_group_rule = None
+        self._event_names = None
+        self._migrated = None
+        self._topics = None
         self.discriminator = None
 
         self.user_id = user_id
@@ -116,6 +131,12 @@ class Event2alarmRuleBody:
             self.inhibit_rule = inhibit_rule
         if route_group_rule is not None:
             self.route_group_rule = route_group_rule
+        if event_names is not None:
+            self.event_names = event_names
+        if migrated is not None:
+            self.migrated = migrated
+        if topics is not None:
+            self.topics = topics
 
     @property
     def user_id(self):
@@ -143,7 +164,7 @@ class Event2alarmRuleBody:
     def name(self):
         """Gets the name of this Event2alarmRuleBody.
 
-        规则名称
+        规则名称。规则名称包含大小写字母，数字，特殊字符（_-）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
 
         :return: The name of this Event2alarmRuleBody.
         :rtype: str
@@ -154,7 +175,7 @@ class Event2alarmRuleBody:
     def name(self, name):
         """Sets the name of this Event2alarmRuleBody.
 
-        规则名称
+        规则名称。规则名称包含大小写字母，数字，特殊字符（_-）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
 
         :param name: The name of this Event2alarmRuleBody.
         :type name: str
@@ -165,7 +186,7 @@ class Event2alarmRuleBody:
     def description(self):
         """Gets the description of this Event2alarmRuleBody.
 
-        规则描述
+        规则描述。描述包含大小写字母，数字，特殊字符（_-<>=,.）和汉字组成，不能以下划线、中划线开头结尾，最大长度为1024。
 
         :return: The description of this Event2alarmRuleBody.
         :rtype: str
@@ -176,7 +197,7 @@ class Event2alarmRuleBody:
     def description(self, description):
         """Sets the description of this Event2alarmRuleBody.
 
-        规则描述
+        规则描述。描述包含大小写字母，数字，特殊字符（_-<>=,.）和汉字组成，不能以下划线、中划线开头结尾，最大长度为1024。
 
         :param description: The description of this Event2alarmRuleBody.
         :type description: str
@@ -315,7 +336,7 @@ class Event2alarmRuleBody:
     def alarm_type(self):
         """Gets the alarm_type of this Event2alarmRuleBody.
 
-        告警类型
+        告警类型。notification：直接告警。denoising：告警降噪。
 
         :return: The alarm_type of this Event2alarmRuleBody.
         :rtype: str
@@ -326,7 +347,7 @@ class Event2alarmRuleBody:
     def alarm_type(self, alarm_type):
         """Sets the alarm_type of this Event2alarmRuleBody.
 
-        告警类型
+        告警类型。notification：直接告警。denoising：告警降噪。
 
         :param alarm_type: The alarm_type of this Event2alarmRuleBody.
         :type alarm_type: str
@@ -381,7 +402,7 @@ class Event2alarmRuleBody:
     def route_group_rule(self):
         """Gets the route_group_rule of this Event2alarmRuleBody.
 
-        告警静默规则
+        告警分组规则
 
         :return: The route_group_rule of this Event2alarmRuleBody.
         :rtype: str
@@ -392,12 +413,78 @@ class Event2alarmRuleBody:
     def route_group_rule(self, route_group_rule):
         """Sets the route_group_rule of this Event2alarmRuleBody.
 
-        告警静默规则
+        告警分组规则
 
         :param route_group_rule: The route_group_rule of this Event2alarmRuleBody.
         :type route_group_rule: str
         """
         self._route_group_rule = route_group_rule
+
+    @property
+    def event_names(self):
+        """Gets the event_names of this Event2alarmRuleBody.
+
+        事件名称
+
+        :return: The event_names of this Event2alarmRuleBody.
+        :rtype: list[str]
+        """
+        return self._event_names
+
+    @event_names.setter
+    def event_names(self, event_names):
+        """Sets the event_names of this Event2alarmRuleBody.
+
+        事件名称
+
+        :param event_names: The event_names of this Event2alarmRuleBody.
+        :type event_names: list[str]
+        """
+        self._event_names = event_names
+
+    @property
+    def migrated(self):
+        """Gets the migrated of this Event2alarmRuleBody.
+
+        是否迁移到2.0
+
+        :return: The migrated of this Event2alarmRuleBody.
+        :rtype: bool
+        """
+        return self._migrated
+
+    @migrated.setter
+    def migrated(self, migrated):
+        """Sets the migrated of this Event2alarmRuleBody.
+
+        是否迁移到2.0
+
+        :param migrated: The migrated of this Event2alarmRuleBody.
+        :type migrated: bool
+        """
+        self._migrated = migrated
+
+    @property
+    def topics(self):
+        """Gets the topics of this Event2alarmRuleBody.
+
+        smn信息
+
+        :return: The topics of this Event2alarmRuleBody.
+        :rtype: list[:class:`huaweicloudsdkaom.v2.SmnTopics`]
+        """
+        return self._topics
+
+    @topics.setter
+    def topics(self, topics):
+        """Sets the topics of this Event2alarmRuleBody.
+
+        smn信息
+
+        :param topics: The topics of this Event2alarmRuleBody.
+        :type topics: list[:class:`huaweicloudsdkaom.v2.SmnTopics`]
+        """
+        self._topics = topics
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,7 +31,7 @@ class CreateShareFolderRequest:
 
         The model defined in huaweicloud sdk
 
-        :param storage_id: WKS存储ID
+        :param storage_id: WKS存储ID。
         :type storage_id: str
         :param body: Body of the CreateShareFolderRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateShareFolderReq`
@@ -51,7 +51,7 @@ class CreateShareFolderRequest:
     def storage_id(self):
         """Gets the storage_id of this CreateShareFolderRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :return: The storage_id of this CreateShareFolderRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateShareFolderRequest:
     def storage_id(self, storage_id):
         """Sets the storage_id of this CreateShareFolderRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :param storage_id: The storage_id of this CreateShareFolderRequest.
         :type storage_id: str

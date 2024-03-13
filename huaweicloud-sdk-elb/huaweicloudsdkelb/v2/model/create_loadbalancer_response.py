@@ -18,29 +18,43 @@ class CreateLoadbalancerResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'loadbalancer': 'LoadbalancerResp'
+        'loadbalancer': 'LoadbalancerResp',
+        'order_id': 'str',
+        'loadbalancer_id': 'str'
     }
 
     attribute_map = {
-        'loadbalancer': 'loadbalancer'
+        'loadbalancer': 'loadbalancer',
+        'order_id': 'order_id',
+        'loadbalancer_id': 'loadbalancer_id'
     }
 
-    def __init__(self, loadbalancer=None):
+    def __init__(self, loadbalancer=None, order_id=None, loadbalancer_id=None):
         """CreateLoadbalancerResponse
 
         The model defined in huaweicloud sdk
 
         :param loadbalancer: 
         :type loadbalancer: :class:`huaweicloudsdkelb.v2.LoadbalancerResp`
+        :param order_id: 订单号[（包周期场景返回该字段）](tag:hws)
+        :type order_id: str
+        :param loadbalancer_id: 负载均衡器的ID[（包周期场景返回该字段）](tag:hws)
+        :type loadbalancer_id: str
         """
         
         super(CreateLoadbalancerResponse, self).__init__()
 
         self._loadbalancer = None
+        self._order_id = None
+        self._loadbalancer_id = None
         self.discriminator = None
 
         if loadbalancer is not None:
             self.loadbalancer = loadbalancer
+        if order_id is not None:
+            self.order_id = order_id
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
 
     @property
     def loadbalancer(self):
@@ -59,6 +73,50 @@ class CreateLoadbalancerResponse(SdkResponse):
         :type loadbalancer: :class:`huaweicloudsdkelb.v2.LoadbalancerResp`
         """
         self._loadbalancer = loadbalancer
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this CreateLoadbalancerResponse.
+
+        订单号[（包周期场景返回该字段）](tag:hws)
+
+        :return: The order_id of this CreateLoadbalancerResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateLoadbalancerResponse.
+
+        订单号[（包周期场景返回该字段）](tag:hws)
+
+        :param order_id: The order_id of this CreateLoadbalancerResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
+
+    @property
+    def loadbalancer_id(self):
+        """Gets the loadbalancer_id of this CreateLoadbalancerResponse.
+
+        负载均衡器的ID[（包周期场景返回该字段）](tag:hws)
+
+        :return: The loadbalancer_id of this CreateLoadbalancerResponse.
+        :rtype: str
+        """
+        return self._loadbalancer_id
+
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        """Sets the loadbalancer_id of this CreateLoadbalancerResponse.
+
+        负载均衡器的ID[（包周期场景返回该字段）](tag:hws)
+
+        :param loadbalancer_id: The loadbalancer_id of this CreateLoadbalancerResponse.
+        :type loadbalancer_id: str
+        """
+        self._loadbalancer_id = loadbalancer_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

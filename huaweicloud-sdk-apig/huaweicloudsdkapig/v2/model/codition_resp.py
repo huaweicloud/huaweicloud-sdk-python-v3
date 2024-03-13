@@ -55,11 +55,11 @@ class CoditionResp:
         :type cookie_param_name: str
         :param frontend_authorizer_param_name: 系统参数-前端认证参数名称。策略类型为frontend_authorizer时必选，前端认证参数名称以\&quot;$context.authorizer.frontend.\&quot;字符串为前缀。例如，前端认证参数名称为user_name，加上前缀为$context.authorizer.frontend.user_name。
         :type frontend_authorizer_param_name: str
-        :param condition_type: 策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param,system,cookie,frontend_authorizer时必选 
+        :param condition_type: 策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param，system，cookie，frontend_authorizer时必选 
         :type condition_type: str
         :param condition_origin: 策略类型 - param：参数 - source：源IP - system: 系统参数-网关内置参数 - cookie: COOKIE参数 - frontend_authorizer: 系统参数-前端认证参数
         :type condition_origin: str
-        :param condition_value: 策略值;
+        :param condition_value: 策略值。策略类型为param，source，cookie，frontend_authorizer时必填
         :type condition_value: str
         :param id: 编号
         :type id: str
@@ -194,7 +194,7 @@ class CoditionResp:
     def condition_type(self):
         """Gets the condition_type of this CoditionResp.
 
-        策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param,system,cookie,frontend_authorizer时必选 
+        策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param，system，cookie，frontend_authorizer时必选 
 
         :return: The condition_type of this CoditionResp.
         :rtype: str
@@ -205,7 +205,7 @@ class CoditionResp:
     def condition_type(self, condition_type):
         """Sets the condition_type of this CoditionResp.
 
-        策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param,system,cookie,frontend_authorizer时必选 
+        策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param，system，cookie，frontend_authorizer时必选 
 
         :param condition_type: The condition_type of this CoditionResp.
         :type condition_type: str
@@ -238,7 +238,7 @@ class CoditionResp:
     def condition_value(self):
         """Gets the condition_value of this CoditionResp.
 
-        策略值;
+        策略值。策略类型为param，source，cookie，frontend_authorizer时必填
 
         :return: The condition_value of this CoditionResp.
         :rtype: str
@@ -249,7 +249,7 @@ class CoditionResp:
     def condition_value(self, condition_value):
         """Sets the condition_value of this CoditionResp.
 
-        策略值;
+        策略值。策略类型为param，source，cookie，frontend_authorizer时必填
 
         :param condition_value: The condition_value of this CoditionResp.
         :type condition_value: str

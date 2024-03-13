@@ -19,16 +19,20 @@ class ListStatisticsRequest:
     openapi_types = {
         'filter': 'str',
         'period': 'str',
-        'option': 'str'
+        'option': 'str',
+        'limit': 'str',
+        'marker': 'str'
     }
 
     attribute_map = {
         'filter': 'filter',
         'period': 'period',
-        'option': 'option'
+        'option': 'option',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, filter=None, period=None, option=None):
+    def __init__(self, filter=None, period=None, option=None, limit=None, marker=None):
         """ListStatisticsRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ListStatisticsRequest:
         :type period: str
         :param option: 月度统计的维度，filter参数取值为monthly_report时才生效。 当取值不在以上范围时，默认取\&quot;0\&quot;。 - \&quot;0\&quot;: 表示统计本月。 - \&quot;1\&quot;: 表示统计上月。 - \&quot;2\&quot;: 表示统计最近三个月。 - \&quot;3\&quot;: 表示统计最近六个月。
         :type option: str
+        :param limit: 本次查询最大返回的数据条数，最大值500，默认值100
+        :type limit: str
+        :param marker: 本次查询起始位置，默认值0
+        :type marker: str
         """
         
         
@@ -46,6 +54,8 @@ class ListStatisticsRequest:
         self._filter = None
         self._period = None
         self._option = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         self.filter = filter
@@ -53,6 +63,10 @@ class ListStatisticsRequest:
             self.period = period
         if option is not None:
             self.option = option
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def filter(self):
@@ -119,6 +133,50 @@ class ListStatisticsRequest:
         :type option: str
         """
         self._option = option
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListStatisticsRequest.
+
+        本次查询最大返回的数据条数，最大值500，默认值100
+
+        :return: The limit of this ListStatisticsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListStatisticsRequest.
+
+        本次查询最大返回的数据条数，最大值500，默认值100
+
+        :param limit: The limit of this ListStatisticsRequest.
+        :type limit: str
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListStatisticsRequest.
+
+        本次查询起始位置，默认值0
+
+        :return: The marker of this ListStatisticsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListStatisticsRequest.
+
+        本次查询起始位置，默认值0
+
+        :param marker: The marker of this ListStatisticsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

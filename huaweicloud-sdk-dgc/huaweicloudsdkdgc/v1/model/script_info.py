@@ -24,8 +24,9 @@ class ScriptInfo:
         'connection_name': 'str',
         'database': 'str',
         'queue_name': 'str',
-        'configuration': 'str',
+        'configuration': 'dict(str, object)',
         'description': 'str',
+        'owner': 'str',
         'target_status': 'str',
         'approvers': 'list[JobApprover]'
     }
@@ -40,34 +41,37 @@ class ScriptInfo:
         'queue_name': 'queueName',
         'configuration': 'configuration',
         'description': 'description',
+        'owner': 'owner',
         'target_status': 'targetStatus',
         'approvers': 'approvers'
     }
 
-    def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, target_status=None, approvers=None):
+    def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, target_status=None, approvers=None):
         """ScriptInfo
 
         The model defined in huaweicloud sdk
 
         :param name: 
         :type name: str
-        :param type: 脚本类型
+        :param type: 脚本类型： - FlinkSQL - DLISQL - SparkSQL - HiveSQL - DWSSQL - RDSSQL - Shell - PRESTO - ClickHouseSQL - HetuEngineSQL - PYTHON - ImpalaSQL - SparkPython
         :type type: str
-        :param directory: 脚本关联的目录
+        :param directory: 脚本关联的目录。通过DataArts Studio管理控制台 &gt; 数据开发，左侧列表选择“数据开发 &gt; 脚本开发”。在脚本的目录树上，可以查看到当前已经创建的目录，默认在根目录/。
         :type directory: str
-        :param content: 脚本内容
+        :param content: 脚本内容。最大支持4M。
         :type content: str
-        :param connection_name: 脚本关联的连接名称
+        :param connection_name: 脚本关联的连接名称。当type参数值为DLISQL、SparkSQL、HiveSQL、DWSSQL、Shell、PRESTO、ClickHouseSQL、HetuEngineSQL、RDSSQL、ImpalaSQL、PYTHON、SparkPython其中之一时，这个参数是必选的。用户可以通过查询连接列表（待下线）接口获取当前系统中已经存在的连接。默认值为空。
         :type connection_name: str
-        :param database: 脚本执行所在的数据库
+        :param database: 脚本执行所在的数据库。当type参数值为DLISQL、SparkSQL、HiveSQL、DWSSQL、PRESTO、ClickHouseSQL、ImpalaSQL、HetuEngineSQL、RDSSQL其中之一时，才支持此参数。type为DLI SQL时，可以通过查看所有数据库接口获取数据库信息。type为其他类型的时候，必选。
         :type database: str
-        :param queue_name: 脚本关联的DLI队列名称
+        :param queue_name: 脚本关联的DLI队列名称。当type参数值为DLI SQL时，才支持此参数。可以通过查询队列列表接口获取队列信息。默认值为空。
         :type queue_name: str
-        :param configuration: 脚本的配置项参数
-        :type configuration: str
+        :param configuration: 脚本的配置项参数。当type参数值为DLISQL时，才支持此参数。当前支持的配置项列表请参考 conf参数说明。默认值为空。
+        :type configuration: dict(str, object)
         :param description: 脚本描述，长度不能超过255个字符
         :type description: str
-        :param target_status: 在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态。
+        :param owner: 责任人名称
+        :type owner: str
+        :param target_status: 在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态: - 保存态表示脚本仅保存，无法调度运行，需要提交并审核通过后才能运行。 - 提交态表示脚本保存后会自动提交，需要审核通过才能运行。 - 生产态表示脚本跳过审批环节，创建后可以直接运行。注意：只有工作空间的管理员用户才能创建生产态的脚本。
         :type target_status: str
         :param approvers: 在开启审批开关后，需要填写该字段，表示脚本审批人
         :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
@@ -84,6 +88,7 @@ class ScriptInfo:
         self._queue_name = None
         self._configuration = None
         self._description = None
+        self._owner = None
         self._target_status = None
         self._approvers = None
         self.discriminator = None
@@ -106,6 +111,8 @@ class ScriptInfo:
             self.configuration = configuration
         if description is not None:
             self.description = description
+        if owner is not None:
+            self.owner = owner
         if target_status is not None:
             self.target_status = target_status
         if approvers is not None:
@@ -133,7 +140,7 @@ class ScriptInfo:
     def type(self):
         """Gets the type of this ScriptInfo.
 
-        脚本类型
+        脚本类型： - FlinkSQL - DLISQL - SparkSQL - HiveSQL - DWSSQL - RDSSQL - Shell - PRESTO - ClickHouseSQL - HetuEngineSQL - PYTHON - ImpalaSQL - SparkPython
 
         :return: The type of this ScriptInfo.
         :rtype: str
@@ -144,7 +151,7 @@ class ScriptInfo:
     def type(self, type):
         """Sets the type of this ScriptInfo.
 
-        脚本类型
+        脚本类型： - FlinkSQL - DLISQL - SparkSQL - HiveSQL - DWSSQL - RDSSQL - Shell - PRESTO - ClickHouseSQL - HetuEngineSQL - PYTHON - ImpalaSQL - SparkPython
 
         :param type: The type of this ScriptInfo.
         :type type: str
@@ -155,7 +162,7 @@ class ScriptInfo:
     def directory(self):
         """Gets the directory of this ScriptInfo.
 
-        脚本关联的目录
+        脚本关联的目录。通过DataArts Studio管理控制台 > 数据开发，左侧列表选择“数据开发 > 脚本开发”。在脚本的目录树上，可以查看到当前已经创建的目录，默认在根目录/。
 
         :return: The directory of this ScriptInfo.
         :rtype: str
@@ -166,7 +173,7 @@ class ScriptInfo:
     def directory(self, directory):
         """Sets the directory of this ScriptInfo.
 
-        脚本关联的目录
+        脚本关联的目录。通过DataArts Studio管理控制台 > 数据开发，左侧列表选择“数据开发 > 脚本开发”。在脚本的目录树上，可以查看到当前已经创建的目录，默认在根目录/。
 
         :param directory: The directory of this ScriptInfo.
         :type directory: str
@@ -177,7 +184,7 @@ class ScriptInfo:
     def content(self):
         """Gets the content of this ScriptInfo.
 
-        脚本内容
+        脚本内容。最大支持4M。
 
         :return: The content of this ScriptInfo.
         :rtype: str
@@ -188,7 +195,7 @@ class ScriptInfo:
     def content(self, content):
         """Sets the content of this ScriptInfo.
 
-        脚本内容
+        脚本内容。最大支持4M。
 
         :param content: The content of this ScriptInfo.
         :type content: str
@@ -199,7 +206,7 @@ class ScriptInfo:
     def connection_name(self):
         """Gets the connection_name of this ScriptInfo.
 
-        脚本关联的连接名称
+        脚本关联的连接名称。当type参数值为DLISQL、SparkSQL、HiveSQL、DWSSQL、Shell、PRESTO、ClickHouseSQL、HetuEngineSQL、RDSSQL、ImpalaSQL、PYTHON、SparkPython其中之一时，这个参数是必选的。用户可以通过查询连接列表（待下线）接口获取当前系统中已经存在的连接。默认值为空。
 
         :return: The connection_name of this ScriptInfo.
         :rtype: str
@@ -210,7 +217,7 @@ class ScriptInfo:
     def connection_name(self, connection_name):
         """Sets the connection_name of this ScriptInfo.
 
-        脚本关联的连接名称
+        脚本关联的连接名称。当type参数值为DLISQL、SparkSQL、HiveSQL、DWSSQL、Shell、PRESTO、ClickHouseSQL、HetuEngineSQL、RDSSQL、ImpalaSQL、PYTHON、SparkPython其中之一时，这个参数是必选的。用户可以通过查询连接列表（待下线）接口获取当前系统中已经存在的连接。默认值为空。
 
         :param connection_name: The connection_name of this ScriptInfo.
         :type connection_name: str
@@ -221,7 +228,7 @@ class ScriptInfo:
     def database(self):
         """Gets the database of this ScriptInfo.
 
-        脚本执行所在的数据库
+        脚本执行所在的数据库。当type参数值为DLISQL、SparkSQL、HiveSQL、DWSSQL、PRESTO、ClickHouseSQL、ImpalaSQL、HetuEngineSQL、RDSSQL其中之一时，才支持此参数。type为DLI SQL时，可以通过查看所有数据库接口获取数据库信息。type为其他类型的时候，必选。
 
         :return: The database of this ScriptInfo.
         :rtype: str
@@ -232,7 +239,7 @@ class ScriptInfo:
     def database(self, database):
         """Sets the database of this ScriptInfo.
 
-        脚本执行所在的数据库
+        脚本执行所在的数据库。当type参数值为DLISQL、SparkSQL、HiveSQL、DWSSQL、PRESTO、ClickHouseSQL、ImpalaSQL、HetuEngineSQL、RDSSQL其中之一时，才支持此参数。type为DLI SQL时，可以通过查看所有数据库接口获取数据库信息。type为其他类型的时候，必选。
 
         :param database: The database of this ScriptInfo.
         :type database: str
@@ -243,7 +250,7 @@ class ScriptInfo:
     def queue_name(self):
         """Gets the queue_name of this ScriptInfo.
 
-        脚本关联的DLI队列名称
+        脚本关联的DLI队列名称。当type参数值为DLI SQL时，才支持此参数。可以通过查询队列列表接口获取队列信息。默认值为空。
 
         :return: The queue_name of this ScriptInfo.
         :rtype: str
@@ -254,7 +261,7 @@ class ScriptInfo:
     def queue_name(self, queue_name):
         """Sets the queue_name of this ScriptInfo.
 
-        脚本关联的DLI队列名称
+        脚本关联的DLI队列名称。当type参数值为DLI SQL时，才支持此参数。可以通过查询队列列表接口获取队列信息。默认值为空。
 
         :param queue_name: The queue_name of this ScriptInfo.
         :type queue_name: str
@@ -265,10 +272,10 @@ class ScriptInfo:
     def configuration(self):
         """Gets the configuration of this ScriptInfo.
 
-        脚本的配置项参数
+        脚本的配置项参数。当type参数值为DLISQL时，才支持此参数。当前支持的配置项列表请参考 conf参数说明。默认值为空。
 
         :return: The configuration of this ScriptInfo.
-        :rtype: str
+        :rtype: dict(str, object)
         """
         return self._configuration
 
@@ -276,10 +283,10 @@ class ScriptInfo:
     def configuration(self, configuration):
         """Sets the configuration of this ScriptInfo.
 
-        脚本的配置项参数
+        脚本的配置项参数。当type参数值为DLISQL时，才支持此参数。当前支持的配置项列表请参考 conf参数说明。默认值为空。
 
         :param configuration: The configuration of this ScriptInfo.
-        :type configuration: str
+        :type configuration: dict(str, object)
         """
         self._configuration = configuration
 
@@ -306,10 +313,32 @@ class ScriptInfo:
         self._description = description
 
     @property
+    def owner(self):
+        """Gets the owner of this ScriptInfo.
+
+        责任人名称
+
+        :return: The owner of this ScriptInfo.
+        :rtype: str
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        """Sets the owner of this ScriptInfo.
+
+        责任人名称
+
+        :param owner: The owner of this ScriptInfo.
+        :type owner: str
+        """
+        self._owner = owner
+
+    @property
     def target_status(self):
         """Gets the target_status of this ScriptInfo.
 
-        在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态。
+        在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态: - 保存态表示脚本仅保存，无法调度运行，需要提交并审核通过后才能运行。 - 提交态表示脚本保存后会自动提交，需要审核通过才能运行。 - 生产态表示脚本跳过审批环节，创建后可以直接运行。注意：只有工作空间的管理员用户才能创建生产态的脚本。
 
         :return: The target_status of this ScriptInfo.
         :rtype: str
@@ -320,7 +349,7 @@ class ScriptInfo:
     def target_status(self, target_status):
         """Sets the target_status of this ScriptInfo.
 
-        在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态。
+        在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态: - 保存态表示脚本仅保存，无法调度运行，需要提交并审核通过后才能运行。 - 提交态表示脚本保存后会自动提交，需要审核通过才能运行。 - 生产态表示脚本跳过审批环节，创建后可以直接运行。注意：只有工作空间的管理员用户才能创建生产态的脚本。
 
         :param target_status: The target_status of this ScriptInfo.
         :type target_status: str

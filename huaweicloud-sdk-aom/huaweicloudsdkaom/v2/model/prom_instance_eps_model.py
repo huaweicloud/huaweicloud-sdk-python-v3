@@ -21,8 +21,6 @@ class PromInstanceEpsModel:
         'prom_id': 'str',
         'prom_type': 'str',
         'prom_version': 'str',
-        'cce_spec': 'str',
-        'prom_config': 'PromConfigModel',
         'prom_create_timestamp': 'int',
         'prom_update_timestamp': 'int',
         'prom_status': 'str',
@@ -31,8 +29,7 @@ class PromInstanceEpsModel:
         'is_deleted_tag': 'int',
         'deleted_time': 'int',
         'prom_spec_config': 'PromConfigModel',
-        'cce_spec_config': 'str',
-        'application': 'ApplicationModel'
+        'cce_spec_config': 'str'
     }
 
     attribute_map = {
@@ -40,8 +37,6 @@ class PromInstanceEpsModel:
         'prom_id': 'prom_id',
         'prom_type': 'prom_type',
         'prom_version': 'prom_version',
-        'cce_spec': 'cce_spec',
-        'prom_config': 'prom_config',
         'prom_create_timestamp': 'prom_create_timestamp',
         'prom_update_timestamp': 'prom_update_timestamp',
         'prom_status': 'prom_status',
@@ -50,11 +45,10 @@ class PromInstanceEpsModel:
         'is_deleted_tag': 'is_deleted_tag',
         'deleted_time': 'deleted_time',
         'prom_spec_config': 'prom_spec_config',
-        'cce_spec_config': 'cce_spec_config',
-        'application': 'application'
+        'cce_spec_config': 'cce_spec_config'
     }
 
-    def __init__(self, prom_name=None, prom_id=None, prom_type=None, prom_version=None, cce_spec=None, prom_config=None, prom_create_timestamp=None, prom_update_timestamp=None, prom_status=None, enterprise_project_id=None, project_id=None, is_deleted_tag=None, deleted_time=None, prom_spec_config=None, cce_spec_config=None, application=None):
+    def __init__(self, prom_name=None, prom_id=None, prom_type=None, prom_version=None, prom_create_timestamp=None, prom_update_timestamp=None, prom_status=None, enterprise_project_id=None, project_id=None, is_deleted_tag=None, deleted_time=None, prom_spec_config=None, cce_spec_config=None):
         """PromInstanceEpsModel
 
         The model defined in huaweicloud sdk
@@ -63,14 +57,10 @@ class PromInstanceEpsModel:
         :type prom_name: str
         :param prom_id: Prometheus实例id。
         :type prom_id: str
-        :param prom_type: Prometheus实例类型。
+        :param prom_type: Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
         :type prom_type: str
         :param prom_version: Prometheus实例版本号。
         :type prom_version: str
-        :param cce_spec: CCE场景特殊字段。
-        :type cce_spec: str
-        :param prom_config: 
-        :type prom_config: :class:`huaweicloudsdkaom.v2.PromConfigModel`
         :param prom_create_timestamp: Prometheus实例创建时间戳。
         :type prom_create_timestamp: int
         :param prom_update_timestamp: Prometheus实例更新时间戳。
@@ -89,8 +79,6 @@ class PromInstanceEpsModel:
         :type prom_spec_config: :class:`huaweicloudsdkaom.v2.PromConfigModel`
         :param cce_spec_config: Prometheus实例所属CCE特殊配置。
         :type cce_spec_config: str
-        :param application: 
-        :type application: :class:`huaweicloudsdkaom.v2.ApplicationModel`
         """
         
         
@@ -99,8 +87,6 @@ class PromInstanceEpsModel:
         self._prom_id = None
         self._prom_type = None
         self._prom_version = None
-        self._cce_spec = None
-        self._prom_config = None
         self._prom_create_timestamp = None
         self._prom_update_timestamp = None
         self._prom_status = None
@@ -110,7 +96,6 @@ class PromInstanceEpsModel:
         self._deleted_time = None
         self._prom_spec_config = None
         self._cce_spec_config = None
-        self._application = None
         self.discriminator = None
 
         self.prom_name = prom_name
@@ -119,10 +104,6 @@ class PromInstanceEpsModel:
         self.prom_type = prom_type
         if prom_version is not None:
             self.prom_version = prom_version
-        if cce_spec is not None:
-            self.cce_spec = cce_spec
-        if prom_config is not None:
-            self.prom_config = prom_config
         if prom_create_timestamp is not None:
             self.prom_create_timestamp = prom_create_timestamp
         if prom_update_timestamp is not None:
@@ -141,8 +122,6 @@ class PromInstanceEpsModel:
             self.prom_spec_config = prom_spec_config
         if cce_spec_config is not None:
             self.cce_spec_config = cce_spec_config
-        if application is not None:
-            self.application = application
 
     @property
     def prom_name(self):
@@ -192,7 +171,7 @@ class PromInstanceEpsModel:
     def prom_type(self):
         """Gets the prom_type of this PromInstanceEpsModel.
 
-        Prometheus实例类型。
+        Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
         :return: The prom_type of this PromInstanceEpsModel.
         :rtype: str
@@ -203,7 +182,7 @@ class PromInstanceEpsModel:
     def prom_type(self, prom_type):
         """Sets the prom_type of this PromInstanceEpsModel.
 
-        Prometheus实例类型。
+        Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
         :param prom_type: The prom_type of this PromInstanceEpsModel.
         :type prom_type: str
@@ -231,46 +210,6 @@ class PromInstanceEpsModel:
         :type prom_version: str
         """
         self._prom_version = prom_version
-
-    @property
-    def cce_spec(self):
-        """Gets the cce_spec of this PromInstanceEpsModel.
-
-        CCE场景特殊字段。
-
-        :return: The cce_spec of this PromInstanceEpsModel.
-        :rtype: str
-        """
-        return self._cce_spec
-
-    @cce_spec.setter
-    def cce_spec(self, cce_spec):
-        """Sets the cce_spec of this PromInstanceEpsModel.
-
-        CCE场景特殊字段。
-
-        :param cce_spec: The cce_spec of this PromInstanceEpsModel.
-        :type cce_spec: str
-        """
-        self._cce_spec = cce_spec
-
-    @property
-    def prom_config(self):
-        """Gets the prom_config of this PromInstanceEpsModel.
-
-        :return: The prom_config of this PromInstanceEpsModel.
-        :rtype: :class:`huaweicloudsdkaom.v2.PromConfigModel`
-        """
-        return self._prom_config
-
-    @prom_config.setter
-    def prom_config(self, prom_config):
-        """Sets the prom_config of this PromInstanceEpsModel.
-
-        :param prom_config: The prom_config of this PromInstanceEpsModel.
-        :type prom_config: :class:`huaweicloudsdkaom.v2.PromConfigModel`
-        """
-        self._prom_config = prom_config
 
     @property
     def prom_create_timestamp(self):
@@ -465,24 +404,6 @@ class PromInstanceEpsModel:
         :type cce_spec_config: str
         """
         self._cce_spec_config = cce_spec_config
-
-    @property
-    def application(self):
-        """Gets the application of this PromInstanceEpsModel.
-
-        :return: The application of this PromInstanceEpsModel.
-        :rtype: :class:`huaweicloudsdkaom.v2.ApplicationModel`
-        """
-        return self._application
-
-    @application.setter
-    def application(self, application):
-        """Sets the application of this PromInstanceEpsModel.
-
-        :param application: The application of this PromInstanceEpsModel.
-        :type application: :class:`huaweicloudsdkaom.v2.ApplicationModel`
-        """
-        self._application = application
 
     def to_dict(self):
         """Returns the model properties as a dict"""

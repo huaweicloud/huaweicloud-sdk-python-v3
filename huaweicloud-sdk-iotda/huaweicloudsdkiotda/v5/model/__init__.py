@@ -29,6 +29,7 @@ from huaweicloudsdkiotda.v5.model.amqp_forwarding import AmqpForwarding
 from huaweicloudsdkiotda.v5.model.application_dto import ApplicationDTO
 from huaweicloudsdkiotda.v5.model.async_device_command_request import AsyncDeviceCommandRequest
 from huaweicloudsdkiotda.v5.model.auth_info import AuthInfo
+from huaweicloudsdkiotda.v5.model.auth_info_res import AuthInfoRes
 from huaweicloudsdkiotda.v5.model.auth_info_without_secret import AuthInfoWithoutSecret
 from huaweicloudsdkiotda.v5.model.batch_show_queue_request import BatchShowQueueRequest
 from huaweicloudsdkiotda.v5.model.batch_show_queue_response import BatchShowQueueResponse

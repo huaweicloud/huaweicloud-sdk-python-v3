@@ -18,6 +18,7 @@ class CreateFunctionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'func_id': 'str',
         'func_urn': 'str',
         'func_name': 'str',
         'domain_id': 'str',
@@ -34,6 +35,7 @@ class CreateFunctionResponse(SdkResponse):
         'code_url': 'str',
         'code_filename': 'str',
         'code_size': 'int',
+        'domain_names': 'str',
         'user_data': 'str',
         'encrypted_user_data': 'str',
         'digest': 'str',
@@ -45,22 +47,39 @@ class CreateFunctionResponse(SdkResponse):
         'last_modified': 'datetime',
         'func_vpc': 'FuncVpc',
         'mount_config': 'MountConfig',
+        'reserved_instance_count': 'int',
         'depend_list': 'list[str]',
         'depend_version_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
         'extend_config': 'str',
+        'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
         'pre_stop_handler': 'str',
         'pre_stop_timeout': 'int',
         'enterprise_project_id': 'str',
+        'long_time': 'bool',
+        'log_group_id': 'str',
+        'log_stream_id': 'str',
+        'type': 'str',
+        'enable_cloud_debug': 'str',
         'enable_dynamic_memory': 'bool',
         'is_stateful_function': 'bool',
         'enable_auth_in_header': 'bool',
-        'custom_image': 'CustomImage'
+        'custom_image': 'CustomImage',
+        'is_bridge_function': 'bool',
+        'apig_route_enable': 'bool',
+        'heartbeat_handler': 'str',
+        'enable_class_isolation': 'bool',
+        'gpu_type': 'str',
+        'allow_ephemeral_storage': 'bool',
+        'ephemeral_storage': 'int',
+        'network_controller': 'NetworkControlConfig',
+        'resource_id': 'str'
     }
 
     attribute_map = {
+        'func_id': 'func_id',
         'func_urn': 'func_urn',
         'func_name': 'func_name',
         'domain_id': 'domain_id',
@@ -77,6 +96,7 @@ class CreateFunctionResponse(SdkResponse):
         'code_url': 'code_url',
         'code_filename': 'code_filename',
         'code_size': 'code_size',
+        'domain_names': 'domain_names',
         'user_data': 'user_data',
         'encrypted_user_data': 'encrypted_user_data',
         'digest': 'digest',
@@ -88,26 +108,44 @@ class CreateFunctionResponse(SdkResponse):
         'last_modified': 'last_modified',
         'func_vpc': 'func_vpc',
         'mount_config': 'mount_config',
+        'reserved_instance_count': 'reserved_instance_count',
         'depend_list': 'depend_list',
         'depend_version_list': 'depend_version_list',
         'strategy_config': 'strategy_config',
         'extend_config': 'extend_config',
+        'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
         'pre_stop_handler': 'pre_stop_handler',
         'pre_stop_timeout': 'pre_stop_timeout',
         'enterprise_project_id': 'enterprise_project_id',
+        'long_time': 'long_time',
+        'log_group_id': 'log_group_id',
+        'log_stream_id': 'log_stream_id',
+        'type': 'type',
+        'enable_cloud_debug': 'enable_cloud_debug',
         'enable_dynamic_memory': 'enable_dynamic_memory',
         'is_stateful_function': 'is_stateful_function',
         'enable_auth_in_header': 'enable_auth_in_header',
-        'custom_image': 'custom_image'
+        'custom_image': 'custom_image',
+        'is_bridge_function': 'is_bridge_function',
+        'apig_route_enable': 'apig_route_enable',
+        'heartbeat_handler': 'heartbeat_handler',
+        'enable_class_isolation': 'enable_class_isolation',
+        'gpu_type': 'gpu_type',
+        'allow_ephemeral_storage': 'allow_ephemeral_storage',
+        'ephemeral_storage': 'ephemeral_storage',
+        'network_controller': 'network_controller',
+        'resource_id': 'resource_id'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
+    def __init__(self, func_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, domain_names=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, reserved_instance_count=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None, is_bridge_function=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, ephemeral_storage=None, network_controller=None, resource_id=None):
         """CreateFunctionResponse
 
         The model defined in huaweicloud sdk
 
+        :param func_id: 函数id，唯一标识函数。
+        :type func_id: str
         :param func_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
         :type func_urn: str
         :param func_name: 函数名称。
@@ -120,9 +158,9 @@ class CreateFunctionResponse(SdkResponse):
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
-        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
         :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
         :type handler: str
@@ -132,7 +170,7 @@ class CreateFunctionResponse(SdkResponse):
         :type gpu_memory: int
         :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
         :type cpu: int
-        :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        :param code_type: 函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
         :type code_type: str
         :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
         :type code_url: str
@@ -140,13 +178,15 @@ class CreateFunctionResponse(SdkResponse):
         :type code_filename: str
         :param code_size: 函数大小，单位：字节。
         :type code_size: int
+        :param domain_names: 函数配置的需要支持域名解析的内网域名。
+        :type domain_names: str
         :param user_data: 用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host&#x3D;{host_ip}，最多定义20个，总长度不超过4KB。
         :type user_data: str
         :param encrypted_user_data: 用户自定义的name/value信息，用于需要加密的配置。
         :type encrypted_user_data: str
         :param digest: 函数代码SHA512 hash值，用于判断函数是否变化。
         :type digest: str
-        :param version: 函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
+        :param version: 函数版本号。
         :type version: str
         :param image_name: 函数版本的内部标识。
         :type image_name: str
@@ -162,6 +202,8 @@ class CreateFunctionResponse(SdkResponse):
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         :param mount_config: 
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
+        :param reserved_instance_count: 函数预留实例数量。
+        :type reserved_instance_count: int
         :param depend_list: 依赖id列表
         :type depend_list: list[str]
         :param depend_version_list: 依赖版本id列表
@@ -170,9 +212,11 @@ class CreateFunctionResponse(SdkResponse):
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         :param extend_config: 函数扩展配置。
         :type extend_config: str
-        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        :param dependencies: 函数依赖代码包列表。
+        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
+        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
         :type initializer_handler: str
-        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
         :type initializer_timeout: int
         :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
         :type pre_stop_handler: str
@@ -180,6 +224,16 @@ class CreateFunctionResponse(SdkResponse):
         :type pre_stop_timeout: int
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
         :type enterprise_project_id: str
+        :param long_time: 是否允许进行长时间超时设置。
+        :type long_time: bool
+        :param log_group_id: 自定义日志查询组id
+        :type log_group_id: str
+        :param log_stream_id: 自定义日志查询流id
+        :type log_stream_id: str
+        :param type: v2表示为正式版本,v1为废弃版本。
+        :type type: str
+        :param enable_cloud_debug: 是否启用cloud debug功能
+        :type enable_cloud_debug: str
         :param enable_dynamic_memory: 是否启动动态内存配置
         :type enable_dynamic_memory: bool
         :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
@@ -188,10 +242,29 @@ class CreateFunctionResponse(SdkResponse):
         :type enable_auth_in_header: bool
         :param custom_image: 
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        :param is_bridge_function: 是否为bridge函数
+        :type is_bridge_function: bool
+        :param apig_route_enable: 是否配置下沉apig路由规则。
+        :type apig_route_enable: bool
+        :param heartbeat_handler: 心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+        :type heartbeat_handler: str
+        :param enable_class_isolation: 类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+        :type enable_class_isolation: bool
+        :param gpu_type: 显卡类型。
+        :type gpu_type: str
+        :param allow_ephemeral_storage: 是否支持配置临时存储。
+        :type allow_ephemeral_storage: bool
+        :param ephemeral_storage: 临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
+        :type ephemeral_storage: int
+        :param network_controller: 
+        :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        :param resource_id: 资源id。
+        :type resource_id: str
         """
         
         super(CreateFunctionResponse, self).__init__()
 
+        self._func_id = None
         self._func_urn = None
         self._func_name = None
         self._domain_id = None
@@ -208,6 +281,7 @@ class CreateFunctionResponse(SdkResponse):
         self._code_url = None
         self._code_filename = None
         self._code_size = None
+        self._domain_names = None
         self._user_data = None
         self._encrypted_user_data = None
         self._digest = None
@@ -219,21 +293,39 @@ class CreateFunctionResponse(SdkResponse):
         self._last_modified = None
         self._func_vpc = None
         self._mount_config = None
+        self._reserved_instance_count = None
         self._depend_list = None
         self._depend_version_list = None
         self._strategy_config = None
         self._extend_config = None
+        self._dependencies = None
         self._initializer_handler = None
         self._initializer_timeout = None
         self._pre_stop_handler = None
         self._pre_stop_timeout = None
         self._enterprise_project_id = None
+        self._long_time = None
+        self._log_group_id = None
+        self._log_stream_id = None
+        self._type = None
+        self._enable_cloud_debug = None
         self._enable_dynamic_memory = None
         self._is_stateful_function = None
         self._enable_auth_in_header = None
         self._custom_image = None
+        self._is_bridge_function = None
+        self._apig_route_enable = None
+        self._heartbeat_handler = None
+        self._enable_class_isolation = None
+        self._gpu_type = None
+        self._allow_ephemeral_storage = None
+        self._ephemeral_storage = None
+        self._network_controller = None
+        self._resource_id = None
         self.discriminator = None
 
+        if func_id is not None:
+            self.func_id = func_id
         if func_urn is not None:
             self.func_urn = func_urn
         if func_name is not None:
@@ -266,6 +358,8 @@ class CreateFunctionResponse(SdkResponse):
             self.code_filename = code_filename
         if code_size is not None:
             self.code_size = code_size
+        if domain_names is not None:
+            self.domain_names = domain_names
         if user_data is not None:
             self.user_data = user_data
         if encrypted_user_data is not None:
@@ -288,6 +382,8 @@ class CreateFunctionResponse(SdkResponse):
             self.func_vpc = func_vpc
         if mount_config is not None:
             self.mount_config = mount_config
+        if reserved_instance_count is not None:
+            self.reserved_instance_count = reserved_instance_count
         if depend_list is not None:
             self.depend_list = depend_list
         if depend_version_list is not None:
@@ -296,6 +392,8 @@ class CreateFunctionResponse(SdkResponse):
             self.strategy_config = strategy_config
         if extend_config is not None:
             self.extend_config = extend_config
+        if dependencies is not None:
+            self.dependencies = dependencies
         if initializer_handler is not None:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
@@ -306,6 +404,16 @@ class CreateFunctionResponse(SdkResponse):
             self.pre_stop_timeout = pre_stop_timeout
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if long_time is not None:
+            self.long_time = long_time
+        if log_group_id is not None:
+            self.log_group_id = log_group_id
+        if log_stream_id is not None:
+            self.log_stream_id = log_stream_id
+        if type is not None:
+            self.type = type
+        if enable_cloud_debug is not None:
+            self.enable_cloud_debug = enable_cloud_debug
         if enable_dynamic_memory is not None:
             self.enable_dynamic_memory = enable_dynamic_memory
         if is_stateful_function is not None:
@@ -314,6 +422,46 @@ class CreateFunctionResponse(SdkResponse):
             self.enable_auth_in_header = enable_auth_in_header
         if custom_image is not None:
             self.custom_image = custom_image
+        if is_bridge_function is not None:
+            self.is_bridge_function = is_bridge_function
+        if apig_route_enable is not None:
+            self.apig_route_enable = apig_route_enable
+        if heartbeat_handler is not None:
+            self.heartbeat_handler = heartbeat_handler
+        if enable_class_isolation is not None:
+            self.enable_class_isolation = enable_class_isolation
+        if gpu_type is not None:
+            self.gpu_type = gpu_type
+        if allow_ephemeral_storage is not None:
+            self.allow_ephemeral_storage = allow_ephemeral_storage
+        if ephemeral_storage is not None:
+            self.ephemeral_storage = ephemeral_storage
+        if network_controller is not None:
+            self.network_controller = network_controller
+        if resource_id is not None:
+            self.resource_id = resource_id
+
+    @property
+    def func_id(self):
+        """Gets the func_id of this CreateFunctionResponse.
+
+        函数id，唯一标识函数。
+
+        :return: The func_id of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._func_id
+
+    @func_id.setter
+    def func_id(self, func_id):
+        """Sets the func_id of this CreateFunctionResponse.
+
+        函数id，唯一标识函数。
+
+        :param func_id: The func_id of this CreateFunctionResponse.
+        :type func_id: str
+        """
+        self._func_id = func_id
 
     @property
     def func_urn(self):
@@ -451,7 +599,7 @@ class CreateFunctionResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this CreateFunctionResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this CreateFunctionResponse.
         :rtype: str
@@ -462,7 +610,7 @@ class CreateFunctionResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this CreateFunctionResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this CreateFunctionResponse.
         :type runtime: str
@@ -473,7 +621,7 @@ class CreateFunctionResponse(SdkResponse):
     def timeout(self):
         """Gets the timeout of this CreateFunctionResponse.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :return: The timeout of this CreateFunctionResponse.
         :rtype: int
@@ -484,7 +632,7 @@ class CreateFunctionResponse(SdkResponse):
     def timeout(self, timeout):
         """Sets the timeout of this CreateFunctionResponse.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :param timeout: The timeout of this CreateFunctionResponse.
         :type timeout: int
@@ -583,7 +731,7 @@ class CreateFunctionResponse(SdkResponse):
     def code_type(self):
         """Gets the code_type of this CreateFunctionResponse.
 
-        函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
         :return: The code_type of this CreateFunctionResponse.
         :rtype: str
@@ -594,7 +742,7 @@ class CreateFunctionResponse(SdkResponse):
     def code_type(self, code_type):
         """Sets the code_type of this CreateFunctionResponse.
 
-        函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
         :param code_type: The code_type of this CreateFunctionResponse.
         :type code_type: str
@@ -668,6 +816,28 @@ class CreateFunctionResponse(SdkResponse):
         self._code_size = code_size
 
     @property
+    def domain_names(self):
+        """Gets the domain_names of this CreateFunctionResponse.
+
+        函数配置的需要支持域名解析的内网域名。
+
+        :return: The domain_names of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._domain_names
+
+    @domain_names.setter
+    def domain_names(self, domain_names):
+        """Sets the domain_names of this CreateFunctionResponse.
+
+        函数配置的需要支持域名解析的内网域名。
+
+        :param domain_names: The domain_names of this CreateFunctionResponse.
+        :type domain_names: str
+        """
+        self._domain_names = domain_names
+
+    @property
     def user_data(self):
         """Gets the user_data of this CreateFunctionResponse.
 
@@ -737,7 +907,7 @@ class CreateFunctionResponse(SdkResponse):
     def version(self):
         """Gets the version of this CreateFunctionResponse.
 
-        函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
+        函数版本号。
 
         :return: The version of this CreateFunctionResponse.
         :rtype: str
@@ -748,7 +918,7 @@ class CreateFunctionResponse(SdkResponse):
     def version(self, version):
         """Sets the version of this CreateFunctionResponse.
 
-        函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
+        函数版本号。
 
         :param version: The version of this CreateFunctionResponse.
         :type version: str
@@ -902,6 +1072,28 @@ class CreateFunctionResponse(SdkResponse):
         self._mount_config = mount_config
 
     @property
+    def reserved_instance_count(self):
+        """Gets the reserved_instance_count of this CreateFunctionResponse.
+
+        函数预留实例数量。
+
+        :return: The reserved_instance_count of this CreateFunctionResponse.
+        :rtype: int
+        """
+        return self._reserved_instance_count
+
+    @reserved_instance_count.setter
+    def reserved_instance_count(self, reserved_instance_count):
+        """Sets the reserved_instance_count of this CreateFunctionResponse.
+
+        函数预留实例数量。
+
+        :param reserved_instance_count: The reserved_instance_count of this CreateFunctionResponse.
+        :type reserved_instance_count: int
+        """
+        self._reserved_instance_count = reserved_instance_count
+
+    @property
     def depend_list(self):
         """Gets the depend_list of this CreateFunctionResponse.
 
@@ -986,10 +1178,32 @@ class CreateFunctionResponse(SdkResponse):
         self._extend_config = extend_config
 
     @property
+    def dependencies(self):
+        """Gets the dependencies of this CreateFunctionResponse.
+
+        函数依赖代码包列表。
+
+        :return: The dependencies of this CreateFunctionResponse.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
+        """
+        return self._dependencies
+
+    @dependencies.setter
+    def dependencies(self, dependencies):
+        """Sets the dependencies of this CreateFunctionResponse.
+
+        函数依赖代码包列表。
+
+        :param dependencies: The dependencies of this CreateFunctionResponse.
+        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
+        """
+        self._dependencies = dependencies
+
+    @property
     def initializer_handler(self):
         """Gets the initializer_handler of this CreateFunctionResponse.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :return: The initializer_handler of this CreateFunctionResponse.
         :rtype: str
@@ -1000,7 +1214,7 @@ class CreateFunctionResponse(SdkResponse):
     def initializer_handler(self, initializer_handler):
         """Sets the initializer_handler of this CreateFunctionResponse.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :param initializer_handler: The initializer_handler of this CreateFunctionResponse.
         :type initializer_handler: str
@@ -1011,7 +1225,7 @@ class CreateFunctionResponse(SdkResponse):
     def initializer_timeout(self):
         """Gets the initializer_timeout of this CreateFunctionResponse.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :return: The initializer_timeout of this CreateFunctionResponse.
         :rtype: int
@@ -1022,7 +1236,7 @@ class CreateFunctionResponse(SdkResponse):
     def initializer_timeout(self, initializer_timeout):
         """Sets the initializer_timeout of this CreateFunctionResponse.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :param initializer_timeout: The initializer_timeout of this CreateFunctionResponse.
         :type initializer_timeout: int
@@ -1094,6 +1308,116 @@ class CreateFunctionResponse(SdkResponse):
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def long_time(self):
+        """Gets the long_time of this CreateFunctionResponse.
+
+        是否允许进行长时间超时设置。
+
+        :return: The long_time of this CreateFunctionResponse.
+        :rtype: bool
+        """
+        return self._long_time
+
+    @long_time.setter
+    def long_time(self, long_time):
+        """Sets the long_time of this CreateFunctionResponse.
+
+        是否允许进行长时间超时设置。
+
+        :param long_time: The long_time of this CreateFunctionResponse.
+        :type long_time: bool
+        """
+        self._long_time = long_time
+
+    @property
+    def log_group_id(self):
+        """Gets the log_group_id of this CreateFunctionResponse.
+
+        自定义日志查询组id
+
+        :return: The log_group_id of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._log_group_id
+
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        """Sets the log_group_id of this CreateFunctionResponse.
+
+        自定义日志查询组id
+
+        :param log_group_id: The log_group_id of this CreateFunctionResponse.
+        :type log_group_id: str
+        """
+        self._log_group_id = log_group_id
+
+    @property
+    def log_stream_id(self):
+        """Gets the log_stream_id of this CreateFunctionResponse.
+
+        自定义日志查询流id
+
+        :return: The log_stream_id of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._log_stream_id
+
+    @log_stream_id.setter
+    def log_stream_id(self, log_stream_id):
+        """Sets the log_stream_id of this CreateFunctionResponse.
+
+        自定义日志查询流id
+
+        :param log_stream_id: The log_stream_id of this CreateFunctionResponse.
+        :type log_stream_id: str
+        """
+        self._log_stream_id = log_stream_id
+
+    @property
+    def type(self):
+        """Gets the type of this CreateFunctionResponse.
+
+        v2表示为正式版本,v1为废弃版本。
+
+        :return: The type of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CreateFunctionResponse.
+
+        v2表示为正式版本,v1为废弃版本。
+
+        :param type: The type of this CreateFunctionResponse.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def enable_cloud_debug(self):
+        """Gets the enable_cloud_debug of this CreateFunctionResponse.
+
+        是否启用cloud debug功能
+
+        :return: The enable_cloud_debug of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._enable_cloud_debug
+
+    @enable_cloud_debug.setter
+    def enable_cloud_debug(self, enable_cloud_debug):
+        """Sets the enable_cloud_debug of this CreateFunctionResponse.
+
+        是否启用cloud debug功能
+
+        :param enable_cloud_debug: The enable_cloud_debug of this CreateFunctionResponse.
+        :type enable_cloud_debug: str
+        """
+        self._enable_cloud_debug = enable_cloud_debug
 
     @property
     def enable_dynamic_memory(self):
@@ -1178,6 +1502,200 @@ class CreateFunctionResponse(SdkResponse):
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         """
         self._custom_image = custom_image
+
+    @property
+    def is_bridge_function(self):
+        """Gets the is_bridge_function of this CreateFunctionResponse.
+
+        是否为bridge函数
+
+        :return: The is_bridge_function of this CreateFunctionResponse.
+        :rtype: bool
+        """
+        return self._is_bridge_function
+
+    @is_bridge_function.setter
+    def is_bridge_function(self, is_bridge_function):
+        """Sets the is_bridge_function of this CreateFunctionResponse.
+
+        是否为bridge函数
+
+        :param is_bridge_function: The is_bridge_function of this CreateFunctionResponse.
+        :type is_bridge_function: bool
+        """
+        self._is_bridge_function = is_bridge_function
+
+    @property
+    def apig_route_enable(self):
+        """Gets the apig_route_enable of this CreateFunctionResponse.
+
+        是否配置下沉apig路由规则。
+
+        :return: The apig_route_enable of this CreateFunctionResponse.
+        :rtype: bool
+        """
+        return self._apig_route_enable
+
+    @apig_route_enable.setter
+    def apig_route_enable(self, apig_route_enable):
+        """Sets the apig_route_enable of this CreateFunctionResponse.
+
+        是否配置下沉apig路由规则。
+
+        :param apig_route_enable: The apig_route_enable of this CreateFunctionResponse.
+        :type apig_route_enable: bool
+        """
+        self._apig_route_enable = apig_route_enable
+
+    @property
+    def heartbeat_handler(self):
+        """Gets the heartbeat_handler of this CreateFunctionResponse.
+
+        心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+
+        :return: The heartbeat_handler of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._heartbeat_handler
+
+    @heartbeat_handler.setter
+    def heartbeat_handler(self, heartbeat_handler):
+        """Sets the heartbeat_handler of this CreateFunctionResponse.
+
+        心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
+
+        :param heartbeat_handler: The heartbeat_handler of this CreateFunctionResponse.
+        :type heartbeat_handler: str
+        """
+        self._heartbeat_handler = heartbeat_handler
+
+    @property
+    def enable_class_isolation(self):
+        """Gets the enable_class_isolation of this CreateFunctionResponse.
+
+        类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+
+        :return: The enable_class_isolation of this CreateFunctionResponse.
+        :rtype: bool
+        """
+        return self._enable_class_isolation
+
+    @enable_class_isolation.setter
+    def enable_class_isolation(self, enable_class_isolation):
+        """Sets the enable_class_isolation of this CreateFunctionResponse.
+
+        类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
+
+        :param enable_class_isolation: The enable_class_isolation of this CreateFunctionResponse.
+        :type enable_class_isolation: bool
+        """
+        self._enable_class_isolation = enable_class_isolation
+
+    @property
+    def gpu_type(self):
+        """Gets the gpu_type of this CreateFunctionResponse.
+
+        显卡类型。
+
+        :return: The gpu_type of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._gpu_type
+
+    @gpu_type.setter
+    def gpu_type(self, gpu_type):
+        """Sets the gpu_type of this CreateFunctionResponse.
+
+        显卡类型。
+
+        :param gpu_type: The gpu_type of this CreateFunctionResponse.
+        :type gpu_type: str
+        """
+        self._gpu_type = gpu_type
+
+    @property
+    def allow_ephemeral_storage(self):
+        """Gets the allow_ephemeral_storage of this CreateFunctionResponse.
+
+        是否支持配置临时存储。
+
+        :return: The allow_ephemeral_storage of this CreateFunctionResponse.
+        :rtype: bool
+        """
+        return self._allow_ephemeral_storage
+
+    @allow_ephemeral_storage.setter
+    def allow_ephemeral_storage(self, allow_ephemeral_storage):
+        """Sets the allow_ephemeral_storage of this CreateFunctionResponse.
+
+        是否支持配置临时存储。
+
+        :param allow_ephemeral_storage: The allow_ephemeral_storage of this CreateFunctionResponse.
+        :type allow_ephemeral_storage: bool
+        """
+        self._allow_ephemeral_storage = allow_ephemeral_storage
+
+    @property
+    def ephemeral_storage(self):
+        """Gets the ephemeral_storage of this CreateFunctionResponse.
+
+        临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
+
+        :return: The ephemeral_storage of this CreateFunctionResponse.
+        :rtype: int
+        """
+        return self._ephemeral_storage
+
+    @ephemeral_storage.setter
+    def ephemeral_storage(self, ephemeral_storage):
+        """Sets the ephemeral_storage of this CreateFunctionResponse.
+
+        临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
+
+        :param ephemeral_storage: The ephemeral_storage of this CreateFunctionResponse.
+        :type ephemeral_storage: int
+        """
+        self._ephemeral_storage = ephemeral_storage
+
+    @property
+    def network_controller(self):
+        """Gets the network_controller of this CreateFunctionResponse.
+
+        :return: The network_controller of this CreateFunctionResponse.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        """
+        return self._network_controller
+
+    @network_controller.setter
+    def network_controller(self, network_controller):
+        """Sets the network_controller of this CreateFunctionResponse.
+
+        :param network_controller: The network_controller of this CreateFunctionResponse.
+        :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        """
+        self._network_controller = network_controller
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this CreateFunctionResponse.
+
+        资源id。
+
+        :return: The resource_id of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this CreateFunctionResponse.
+
+        资源id。
+
+        :param resource_id: The resource_id of this CreateFunctionResponse.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

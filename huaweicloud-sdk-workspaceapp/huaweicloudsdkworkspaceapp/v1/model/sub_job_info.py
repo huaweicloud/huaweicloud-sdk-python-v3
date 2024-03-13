@@ -45,23 +45,23 @@ class SubJobInfo:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 子job标识
+        :param job_id: 子job标识。
         :type job_id: str
-        :param job_type: 任务类型，固定值2：子Job
+        :param job_type: 任务类型，固定值2：子Job。
         :type job_type: int
         :param job_status: job状态 - 0：失败。 - 1：成功。 - 2：处理中。 - 3：正在初始化。
         :type job_status: int
         :param entities: SubJob中处理的云服务/云资源对象。 创建、规格变更等场景是必填；冻结、解冻、删除等场景可空。
         :type entities: list[:class:`huaweicloudsdkworkspaceapp.v1.JobResourceInfo`]
-        :param begin_time: 任务开始时间
+        :param begin_time: 任务开始时间。
         :type begin_time: datetime
-        :param end_time: 任务结束时间
+        :param end_time: 任务结束时间。
         :type end_time: datetime
         :param expected_end_time: 云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
         :type expected_end_time: datetime
-        :param execute_code: Job执行结果码
+        :param execute_code: Job执行结果码。
         :type execute_code: str
-        :param execute_message: Job执行结果描述，以及每个SubJob的执行结果描述
+        :param execute_message: Job执行结果描述，以及每个SubJob的执行结果描述。
         :type execute_message: str
         """
         
@@ -101,7 +101,7 @@ class SubJobInfo:
     def job_id(self):
         """Gets the job_id of this SubJobInfo.
 
-        子job标识
+        子job标识。
 
         :return: The job_id of this SubJobInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class SubJobInfo:
     def job_id(self, job_id):
         """Sets the job_id of this SubJobInfo.
 
-        子job标识
+        子job标识。
 
         :param job_id: The job_id of this SubJobInfo.
         :type job_id: str
@@ -123,7 +123,7 @@ class SubJobInfo:
     def job_type(self):
         """Gets the job_type of this SubJobInfo.
 
-        任务类型，固定值2：子Job
+        任务类型，固定值2：子Job。
 
         :return: The job_type of this SubJobInfo.
         :rtype: int
@@ -134,7 +134,7 @@ class SubJobInfo:
     def job_type(self, job_type):
         """Sets the job_type of this SubJobInfo.
 
-        任务类型，固定值2：子Job
+        任务类型，固定值2：子Job。
 
         :param job_type: The job_type of this SubJobInfo.
         :type job_type: int
@@ -189,7 +189,7 @@ class SubJobInfo:
     def begin_time(self):
         """Gets the begin_time of this SubJobInfo.
 
-        任务开始时间
+        任务开始时间。
 
         :return: The begin_time of this SubJobInfo.
         :rtype: datetime
@@ -200,7 +200,7 @@ class SubJobInfo:
     def begin_time(self, begin_time):
         """Sets the begin_time of this SubJobInfo.
 
-        任务开始时间
+        任务开始时间。
 
         :param begin_time: The begin_time of this SubJobInfo.
         :type begin_time: datetime
@@ -211,7 +211,7 @@ class SubJobInfo:
     def end_time(self):
         """Gets the end_time of this SubJobInfo.
 
-        任务结束时间
+        任务结束时间。
 
         :return: The end_time of this SubJobInfo.
         :rtype: datetime
@@ -222,7 +222,7 @@ class SubJobInfo:
     def end_time(self, end_time):
         """Sets the end_time of this SubJobInfo.
 
-        任务结束时间
+        任务结束时间。
 
         :param end_time: The end_time of this SubJobInfo.
         :type end_time: datetime
@@ -255,7 +255,7 @@ class SubJobInfo:
     def execute_code(self):
         """Gets the execute_code of this SubJobInfo.
 
-        Job执行结果码
+        Job执行结果码。
 
         :return: The execute_code of this SubJobInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class SubJobInfo:
     def execute_code(self, execute_code):
         """Sets the execute_code of this SubJobInfo.
 
-        Job执行结果码
+        Job执行结果码。
 
         :param execute_code: The execute_code of this SubJobInfo.
         :type execute_code: str
@@ -277,7 +277,7 @@ class SubJobInfo:
     def execute_message(self):
         """Gets the execute_message of this SubJobInfo.
 
-        Job执行结果描述，以及每个SubJob的执行结果描述
+        Job执行结果描述，以及每个SubJob的执行结果描述。
 
         :return: The execute_message of this SubJobInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class SubJobInfo:
     def execute_message(self, execute_message):
         """Sets the execute_message of this SubJobInfo.
 
-        Job执行结果描述，以及每个SubJob的执行结果描述
+        Job执行结果描述，以及每个SubJob的执行结果描述。
 
         :param execute_message: The execute_message of this SubJobInfo.
         :type execute_message: str

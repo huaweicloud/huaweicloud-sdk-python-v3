@@ -51,15 +51,15 @@ class BatchUpdateTaskStatusRequestBody:
         :type project_id: int
         :param task_id_list: 任务id列表
         :type task_id_list: list[int]
-        :param cluster_id: cluster_id
+        :param cluster_id: 资源组id
         :type cluster_id: int
-        :param cluster_type: cluster_type
+        :param cluster_type: 资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
         :type cluster_type: str
-        :param without_package: without_package
+        :param without_package: 套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
         :type without_package: int
         :param network_info: 
         :type network_info: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
-        :param status: status
+        :param status: 状态（9：启动任务；2：停止任务）
         :type status: int
         :param enterprise_project_id: 企业项目id
         :type enterprise_project_id: str
@@ -162,7 +162,7 @@ class BatchUpdateTaskStatusRequestBody:
     def cluster_id(self):
         """Gets the cluster_id of this BatchUpdateTaskStatusRequestBody.
 
-        cluster_id
+        资源组id
 
         :return: The cluster_id of this BatchUpdateTaskStatusRequestBody.
         :rtype: int
@@ -173,7 +173,7 @@ class BatchUpdateTaskStatusRequestBody:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this BatchUpdateTaskStatusRequestBody.
 
-        cluster_id
+        资源组id
 
         :param cluster_id: The cluster_id of this BatchUpdateTaskStatusRequestBody.
         :type cluster_id: int
@@ -184,7 +184,7 @@ class BatchUpdateTaskStatusRequestBody:
     def cluster_type(self):
         """Gets the cluster_type of this BatchUpdateTaskStatusRequestBody.
 
-        cluster_type
+        资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
         :return: The cluster_type of this BatchUpdateTaskStatusRequestBody.
         :rtype: str
@@ -195,7 +195,7 @@ class BatchUpdateTaskStatusRequestBody:
     def cluster_type(self, cluster_type):
         """Sets the cluster_type of this BatchUpdateTaskStatusRequestBody.
 
-        cluster_type
+        资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
         :param cluster_type: The cluster_type of this BatchUpdateTaskStatusRequestBody.
         :type cluster_type: str
@@ -206,7 +206,7 @@ class BatchUpdateTaskStatusRequestBody:
     def without_package(self):
         """Gets the without_package of this BatchUpdateTaskStatusRequestBody.
 
-        without_package
+        套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
         :return: The without_package of this BatchUpdateTaskStatusRequestBody.
         :rtype: int
@@ -217,7 +217,7 @@ class BatchUpdateTaskStatusRequestBody:
     def without_package(self, without_package):
         """Sets the without_package of this BatchUpdateTaskStatusRequestBody.
 
-        without_package
+        套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
         :param without_package: The without_package of this BatchUpdateTaskStatusRequestBody.
         :type without_package: int
@@ -246,7 +246,7 @@ class BatchUpdateTaskStatusRequestBody:
     def status(self):
         """Gets the status of this BatchUpdateTaskStatusRequestBody.
 
-        status
+        状态（9：启动任务；2：停止任务）
 
         :return: The status of this BatchUpdateTaskStatusRequestBody.
         :rtype: int
@@ -257,7 +257,7 @@ class BatchUpdateTaskStatusRequestBody:
     def status(self, status):
         """Sets the status of this BatchUpdateTaskStatusRequestBody.
 
-        status
+        状态（9：启动任务；2：停止任务）
 
         :param status: The status of this BatchUpdateTaskStatusRequestBody.
         :type status: int

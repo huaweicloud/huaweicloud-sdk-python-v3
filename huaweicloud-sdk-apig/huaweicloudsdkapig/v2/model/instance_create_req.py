@@ -67,13 +67,13 @@ class InstanceCreateReq:
 
         The model defined in huaweicloud sdk
 
-        :param description: 实例描述
+        :param description: 实例描述。支持除&gt;和&lt;以外的字符，长度为0~255。
         :type description: str
         :param maintain_begin: 维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_begin: str
         :param maintain_end: 维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_end: str
-        :param instance_name: 实例名称
+        :param instance_name: 实例名称。  中英文字符开头，只能由中英文字符、数字、中划线、下划线组成，长度为3~64。  &gt; 中文字符必须为UTF-8或者unicode编码。
         :type instance_name: str
         :param instance_id: 实例编号，不填写自动生成
         :type instance_id: str
@@ -87,7 +87,7 @@ class InstanceCreateReq:
         :type security_group_id: str
         :param eip_id: 弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
         :type eip_id: str
-        :param enterprise_project_id: 企业项目ID，企业帐号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
+        :param enterprise_project_id: 企业项目ID，企业账号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
         :type enterprise_project_id: str
         :param available_zone_ids: 可用区列表。  可用区指在同一地域下，电力、网络隔离的物理区域，可用区之内内网互通，不同可用区之间物理隔离。选择多个AZ部署可以有效提升可靠性。  获取方法：通过文档中实例管理的可用区列表接口查询。
         :type available_zone_ids: list[str]
@@ -178,7 +178,7 @@ class InstanceCreateReq:
     def description(self):
         """Gets the description of this InstanceCreateReq.
 
-        实例描述
+        实例描述。支持除>和<以外的字符，长度为0~255。
 
         :return: The description of this InstanceCreateReq.
         :rtype: str
@@ -189,7 +189,7 @@ class InstanceCreateReq:
     def description(self, description):
         """Sets the description of this InstanceCreateReq.
 
-        实例描述
+        实例描述。支持除>和<以外的字符，长度为0~255。
 
         :param description: The description of this InstanceCreateReq.
         :type description: str
@@ -244,7 +244,7 @@ class InstanceCreateReq:
     def instance_name(self):
         """Gets the instance_name of this InstanceCreateReq.
 
-        实例名称
+        实例名称。  中英文字符开头，只能由中英文字符、数字、中划线、下划线组成，长度为3~64。  > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The instance_name of this InstanceCreateReq.
         :rtype: str
@@ -255,7 +255,7 @@ class InstanceCreateReq:
     def instance_name(self, instance_name):
         """Sets the instance_name of this InstanceCreateReq.
 
-        实例名称
+        实例名称。  中英文字符开头，只能由中英文字符、数字、中划线、下划线组成，长度为3~64。  > 中文字符必须为UTF-8或者unicode编码。
 
         :param instance_name: The instance_name of this InstanceCreateReq.
         :type instance_name: str
@@ -398,7 +398,7 @@ class InstanceCreateReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this InstanceCreateReq.
 
-        企业项目ID，企业帐号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
+        企业项目ID，企业账号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
 
         :return: The enterprise_project_id of this InstanceCreateReq.
         :rtype: str
@@ -409,7 +409,7 @@ class InstanceCreateReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this InstanceCreateReq.
 
-        企业项目ID，企业帐号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
+        企业项目ID，企业账号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
 
         :param enterprise_project_id: The enterprise_project_id of this InstanceCreateReq.
         :type enterprise_project_id: str

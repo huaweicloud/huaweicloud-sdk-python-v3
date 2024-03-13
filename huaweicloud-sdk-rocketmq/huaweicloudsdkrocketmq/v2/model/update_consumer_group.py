@@ -21,7 +21,7 @@ class UpdateConsumerGroup:
         'broadcast': 'bool',
         'brokers': 'list[str]',
         'name': 'str',
-        'retry_max_time': 'float',
+        'retry_max_time': 'int',
         'from_beginning': 'bool'
     }
 
@@ -48,7 +48,7 @@ class UpdateConsumerGroup:
         :param name: 待修改参数的消费组（消费组名称不支持修改）。
         :type name: str
         :param retry_max_time: 最大重试次数，取值范围为1~16。
-        :type retry_max_time: float
+        :type retry_max_time: int
         :param from_beginning: 是否重头消费。
         :type from_beginning: bool
         """
@@ -168,7 +168,7 @@ class UpdateConsumerGroup:
         最大重试次数，取值范围为1~16。
 
         :return: The retry_max_time of this UpdateConsumerGroup.
-        :rtype: float
+        :rtype: int
         """
         return self._retry_max_time
 
@@ -179,7 +179,7 @@ class UpdateConsumerGroup:
         最大重试次数，取值范围为1~16。
 
         :param retry_max_time: The retry_max_time of this UpdateConsumerGroup.
-        :type retry_max_time: float
+        :type retry_max_time: int
         """
         self._retry_max_time = retry_max_time
 

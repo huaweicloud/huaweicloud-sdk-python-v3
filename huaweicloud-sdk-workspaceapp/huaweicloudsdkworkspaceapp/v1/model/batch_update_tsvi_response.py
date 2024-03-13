@@ -30,7 +30,7 @@ class BatchUpdateTsviResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: 任务ID。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class BatchUpdateTsviResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this BatchUpdateTsviResponse.
 
-        任务ID
+        任务ID。
 
         :return: The job_id of this BatchUpdateTsviResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class BatchUpdateTsviResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this BatchUpdateTsviResponse.
 
-        任务ID
+        任务ID。
 
         :param job_id: The job_id of this BatchUpdateTsviResponse.
         :type job_id: str

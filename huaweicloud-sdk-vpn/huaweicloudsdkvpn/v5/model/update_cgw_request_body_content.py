@@ -17,29 +17,36 @@ class UpdateCgwRequestBodyContent:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'name': 'str',
+        'ca_certificate': 'CaCertificateRequest'
     }
 
     attribute_map = {
-        'name': 'name'
+        'name': 'name',
+        'ca_certificate': 'ca_certificate'
     }
 
-    def __init__(self, name=None):
+    def __init__(self, name=None, ca_certificate=None):
         """UpdateCgwRequestBodyContent
 
         The model defined in huaweicloud sdk
 
         :param name: 网关名称
         :type name: str
+        :param ca_certificate: 
+        :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
         """
         
         
 
         self._name = None
+        self._ca_certificate = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
+        if ca_certificate is not None:
+            self.ca_certificate = ca_certificate
 
     @property
     def name(self):
@@ -62,6 +69,24 @@ class UpdateCgwRequestBodyContent:
         :type name: str
         """
         self._name = name
+
+    @property
+    def ca_certificate(self):
+        """Gets the ca_certificate of this UpdateCgwRequestBodyContent.
+
+        :return: The ca_certificate of this UpdateCgwRequestBodyContent.
+        :rtype: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
+        """
+        return self._ca_certificate
+
+    @ca_certificate.setter
+    def ca_certificate(self, ca_certificate):
+        """Sets the ca_certificate of this UpdateCgwRequestBodyContent.
+
+        :param ca_certificate: The ca_certificate of this UpdateCgwRequestBodyContent.
+        :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
+        """
+        self._ca_certificate = ca_certificate
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,6 +20,7 @@ class ImageInfo:
         'id': 'str',
         'image_type': 'str',
         'os_type': 'str',
+        'architecture': 'str',
         'os_version': 'str',
         'disk_format': 'str',
         'name': 'str',
@@ -32,6 +33,7 @@ class ImageInfo:
         'id': 'id',
         'image_type': 'image_type',
         'os_type': 'os_type',
+        'architecture': 'architecture',
         'os_version': 'os_version',
         'disk_format': 'disk_format',
         'name': 'name',
@@ -40,7 +42,7 @@ class ImageInfo:
         'product_code': 'product_code'
     }
 
-    def __init__(self, id=None, image_type=None, os_type=None, os_version=None, disk_format=None, name=None, min_ram=None, min_disk=None, product_code=None):
+    def __init__(self, id=None, image_type=None, os_type=None, architecture=None, os_version=None, disk_format=None, name=None, min_ram=None, min_disk=None, product_code=None):
         """ImageInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ImageInfo:
         :type image_type: str
         :param os_type: 操作系统类型，目前取值Linux， Windows，Other。
         :type os_type: str
+        :param architecture: 操作系统架构，目前取值arm，x86
+        :type architecture: str
         :param os_version: 操作系统具体版本。
         :type os_version: str
         :param disk_format: 镜像格式，目前支持vhd，raw，qcow2，zvhd2格式。
@@ -70,6 +74,7 @@ class ImageInfo:
         self._id = None
         self._image_type = None
         self._os_type = None
+        self._architecture = None
         self._os_version = None
         self._disk_format = None
         self._name = None
@@ -84,6 +89,8 @@ class ImageInfo:
             self.image_type = image_type
         if os_type is not None:
             self.os_type = os_type
+        if architecture is not None:
+            self.architecture = architecture
         if os_version is not None:
             self.os_version = os_version
         if disk_format is not None:
@@ -162,6 +169,28 @@ class ImageInfo:
         :type os_type: str
         """
         self._os_type = os_type
+
+    @property
+    def architecture(self):
+        """Gets the architecture of this ImageInfo.
+
+        操作系统架构，目前取值arm，x86
+
+        :return: The architecture of this ImageInfo.
+        :rtype: str
+        """
+        return self._architecture
+
+    @architecture.setter
+    def architecture(self, architecture):
+        """Sets the architecture of this ImageInfo.
+
+        操作系统架构，目前取值arm，x86
+
+        :param architecture: The architecture of this ImageInfo.
+        :type architecture: str
+        """
+        self._architecture = architecture
 
     @property
     def os_version(self):

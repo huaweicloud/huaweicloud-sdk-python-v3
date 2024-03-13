@@ -38,9 +38,7 @@ class AgentConfig:
         'clickhouse_shadow_repository': 'str',
         'pulsar_enable': 'bool',
         'pulsar_shadow_topic_prefix': 'str',
-        'elasticsearch_enable': 'bool',
-        'elasticsearch_shadow_type': 'str',
-        'elasticsearch_shadow_repository': 'str'
+        'extensions': 'str'
     }
 
     attribute_map = {
@@ -65,12 +63,10 @@ class AgentConfig:
         'clickhouse_shadow_repository': 'clickhouse_shadow_repository',
         'pulsar_enable': 'pulsar_enable',
         'pulsar_shadow_topic_prefix': 'pulsar_shadow_topic_prefix',
-        'elasticsearch_enable': 'elasticsearch_enable',
-        'elasticsearch_shadow_type': 'elasticsearch_shadow_type',
-        'elasticsearch_shadow_repository': 'elasticsearch_shadow_repository'
+        'extensions': 'extensions'
     }
 
-    def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None, kafka_enable=None, kafka_shadow_topic_prefix=None, app_log_level=None, app_log_path=None, mock_rule_list=None, clickhouse_enable=None, clickhouse_shadow_type=None, clickhouse_shadow_repository=None, pulsar_enable=None, pulsar_shadow_topic_prefix=None, elasticsearch_enable=None, elasticsearch_shadow_type=None, elasticsearch_shadow_repository=None):
+    def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None, kafka_enable=None, kafka_shadow_topic_prefix=None, app_log_level=None, app_log_path=None, mock_rule_list=None, clickhouse_enable=None, clickhouse_shadow_type=None, clickhouse_shadow_repository=None, pulsar_enable=None, pulsar_shadow_topic_prefix=None, extensions=None):
         """AgentConfig
 
         The model defined in huaweicloud sdk
@@ -117,12 +113,8 @@ class AgentConfig:
         :type pulsar_enable: bool
         :param pulsar_shadow_topic_prefix: pulsar影子库前缀
         :type pulsar_shadow_topic_prefix: str
-        :param elasticsearch_enable: elasticsearch影子规则开关
-        :type elasticsearch_enable: bool
-        :param elasticsearch_shadow_type: elasticsearch影子规则类型
-        :type elasticsearch_shadow_type: str
-        :param elasticsearch_shadow_repository: elasticsearch影子库映射信息
-        :type elasticsearch_shadow_repository: str
+        :param extensions: 自定义配置
+        :type extensions: str
         """
         
         
@@ -148,9 +140,7 @@ class AgentConfig:
         self._clickhouse_shadow_repository = None
         self._pulsar_enable = None
         self._pulsar_shadow_topic_prefix = None
-        self._elasticsearch_enable = None
-        self._elasticsearch_shadow_type = None
-        self._elasticsearch_shadow_repository = None
+        self._extensions = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -195,12 +185,8 @@ class AgentConfig:
             self.pulsar_enable = pulsar_enable
         if pulsar_shadow_topic_prefix is not None:
             self.pulsar_shadow_topic_prefix = pulsar_shadow_topic_prefix
-        if elasticsearch_enable is not None:
-            self.elasticsearch_enable = elasticsearch_enable
-        if elasticsearch_shadow_type is not None:
-            self.elasticsearch_shadow_type = elasticsearch_shadow_type
-        if elasticsearch_shadow_repository is not None:
-            self.elasticsearch_shadow_repository = elasticsearch_shadow_repository
+        if extensions is not None:
+            self.extensions = extensions
 
     @property
     def agent_id(self):
@@ -665,70 +651,26 @@ class AgentConfig:
         self._pulsar_shadow_topic_prefix = pulsar_shadow_topic_prefix
 
     @property
-    def elasticsearch_enable(self):
-        """Gets the elasticsearch_enable of this AgentConfig.
+    def extensions(self):
+        """Gets the extensions of this AgentConfig.
 
-        elasticsearch影子规则开关
+        自定义配置
 
-        :return: The elasticsearch_enable of this AgentConfig.
-        :rtype: bool
-        """
-        return self._elasticsearch_enable
-
-    @elasticsearch_enable.setter
-    def elasticsearch_enable(self, elasticsearch_enable):
-        """Sets the elasticsearch_enable of this AgentConfig.
-
-        elasticsearch影子规则开关
-
-        :param elasticsearch_enable: The elasticsearch_enable of this AgentConfig.
-        :type elasticsearch_enable: bool
-        """
-        self._elasticsearch_enable = elasticsearch_enable
-
-    @property
-    def elasticsearch_shadow_type(self):
-        """Gets the elasticsearch_shadow_type of this AgentConfig.
-
-        elasticsearch影子规则类型
-
-        :return: The elasticsearch_shadow_type of this AgentConfig.
+        :return: The extensions of this AgentConfig.
         :rtype: str
         """
-        return self._elasticsearch_shadow_type
+        return self._extensions
 
-    @elasticsearch_shadow_type.setter
-    def elasticsearch_shadow_type(self, elasticsearch_shadow_type):
-        """Sets the elasticsearch_shadow_type of this AgentConfig.
+    @extensions.setter
+    def extensions(self, extensions):
+        """Sets the extensions of this AgentConfig.
 
-        elasticsearch影子规则类型
+        自定义配置
 
-        :param elasticsearch_shadow_type: The elasticsearch_shadow_type of this AgentConfig.
-        :type elasticsearch_shadow_type: str
+        :param extensions: The extensions of this AgentConfig.
+        :type extensions: str
         """
-        self._elasticsearch_shadow_type = elasticsearch_shadow_type
-
-    @property
-    def elasticsearch_shadow_repository(self):
-        """Gets the elasticsearch_shadow_repository of this AgentConfig.
-
-        elasticsearch影子库映射信息
-
-        :return: The elasticsearch_shadow_repository of this AgentConfig.
-        :rtype: str
-        """
-        return self._elasticsearch_shadow_repository
-
-    @elasticsearch_shadow_repository.setter
-    def elasticsearch_shadow_repository(self, elasticsearch_shadow_repository):
-        """Sets the elasticsearch_shadow_repository of this AgentConfig.
-
-        elasticsearch影子库映射信息
-
-        :param elasticsearch_shadow_repository: The elasticsearch_shadow_repository of this AgentConfig.
-        :type elasticsearch_shadow_repository: str
-        """
-        self._elasticsearch_shadow_repository = elasticsearch_shadow_repository
+        self._extensions = extensions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

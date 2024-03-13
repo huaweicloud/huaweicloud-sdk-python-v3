@@ -17,7 +17,7 @@ class CreateDrugLigandInteraction2dSvgReq:
     sensitive_list = []
 
     openapi_types = {
-        'receptor_file': 'ReceptorDrugFile',
+        'receptor_file': 'ReceptorDrugFileReq',
         'ligand_file': 'DrugFile'
     }
 
@@ -32,7 +32,7 @@ class CreateDrugLigandInteraction2dSvgReq:
         The model defined in huaweicloud sdk
 
         :param receptor_file: 
-        :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         :param ligand_file: 
         :type ligand_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
         """
@@ -52,7 +52,7 @@ class CreateDrugLigandInteraction2dSvgReq:
         """Gets the receptor_file of this CreateDrugLigandInteraction2dSvgReq.
 
         :return: The receptor_file of this CreateDrugLigandInteraction2dSvgReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         return self._receptor_file
 
@@ -61,7 +61,7 @@ class CreateDrugLigandInteraction2dSvgReq:
         """Sets the receptor_file of this CreateDrugLigandInteraction2dSvgReq.
 
         :param receptor_file: The receptor_file of this CreateDrugLigandInteraction2dSvgReq.
-        :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         self._receptor_file = receptor_file
 

@@ -22,8 +22,10 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
         'card_templet_asset_id': 'str',
         'card_text_config': 'BusinessCardTextConfig',
         'card_image_url': 'BusinessCardImageUrl',
+        'introduction_type': 'str',
         'introduction_text': 'str',
         'voice_asset_id': 'str',
+        'introduction_audio_asset_id': 'str',
         'gender': 'str',
         'x_request_id': 'str'
     }
@@ -33,13 +35,15 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
         'card_templet_asset_id': 'card_templet_asset_id',
         'card_text_config': 'card_text_config',
         'card_image_url': 'card_image_url',
+        'introduction_type': 'introduction_type',
         'introduction_text': 'introduction_text',
         'voice_asset_id': 'voice_asset_id',
+        'introduction_audio_asset_id': 'introduction_audio_asset_id',
         'gender': 'gender',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_info=None, card_templet_asset_id=None, card_text_config=None, card_image_url=None, introduction_text=None, voice_asset_id=None, gender=None, x_request_id=None):
+    def __init__(self, job_info=None, card_templet_asset_id=None, card_text_config=None, card_image_url=None, introduction_type=None, introduction_text=None, voice_asset_id=None, introduction_audio_asset_id=None, gender=None, x_request_id=None):
         """ShowDigitalHumanBusinessCardResponse
 
         The model defined in huaweicloud sdk
@@ -52,10 +56,14 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
         :type card_text_config: :class:`huaweicloudsdkmetastudio.v1.BusinessCardTextConfig`
         :param card_image_url: 
         :type card_image_url: :class:`huaweicloudsdkmetastudio.v1.BusinessCardImageUrl`
+        :param introduction_type: 自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动，需要在资产库中先上传语音资产
+        :type introduction_type: str
         :param introduction_text: 自我介绍文本，用于驱动数字人口型。
         :type introduction_text: str
         :param voice_asset_id: 音色资产ID。
         :type voice_asset_id: str
+        :param introduction_audio_asset_id: 自我介绍语音资产ID，用于驱动数字人口型。 &gt; * 介绍语音需要作为asset_type&#x3D;AUDIO资产先上传至资产库。
+        :type introduction_audio_asset_id: str
         :param gender: 性别。 * MALE：男性 * FEMALE：女性
         :type gender: str
         :param x_request_id: 
@@ -68,8 +76,10 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
         self._card_templet_asset_id = None
         self._card_text_config = None
         self._card_image_url = None
+        self._introduction_type = None
         self._introduction_text = None
         self._voice_asset_id = None
+        self._introduction_audio_asset_id = None
         self._gender = None
         self._x_request_id = None
         self.discriminator = None
@@ -82,10 +92,14 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
             self.card_text_config = card_text_config
         if card_image_url is not None:
             self.card_image_url = card_image_url
+        if introduction_type is not None:
+            self.introduction_type = introduction_type
         if introduction_text is not None:
             self.introduction_text = introduction_text
         if voice_asset_id is not None:
             self.voice_asset_id = voice_asset_id
+        if introduction_audio_asset_id is not None:
+            self.introduction_audio_asset_id = introduction_audio_asset_id
         if gender is not None:
             self.gender = gender
         if x_request_id is not None:
@@ -168,6 +182,28 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
         self._card_image_url = card_image_url
 
     @property
+    def introduction_type(self):
+        """Gets the introduction_type of this ShowDigitalHumanBusinessCardResponse.
+
+        自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动，需要在资产库中先上传语音资产
+
+        :return: The introduction_type of this ShowDigitalHumanBusinessCardResponse.
+        :rtype: str
+        """
+        return self._introduction_type
+
+    @introduction_type.setter
+    def introduction_type(self, introduction_type):
+        """Sets the introduction_type of this ShowDigitalHumanBusinessCardResponse.
+
+        自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动，需要在资产库中先上传语音资产
+
+        :param introduction_type: The introduction_type of this ShowDigitalHumanBusinessCardResponse.
+        :type introduction_type: str
+        """
+        self._introduction_type = introduction_type
+
+    @property
     def introduction_text(self):
         """Gets the introduction_text of this ShowDigitalHumanBusinessCardResponse.
 
@@ -210,6 +246,28 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
         :type voice_asset_id: str
         """
         self._voice_asset_id = voice_asset_id
+
+    @property
+    def introduction_audio_asset_id(self):
+        """Gets the introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
+
+        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。
+
+        :return: The introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
+        :rtype: str
+        """
+        return self._introduction_audio_asset_id
+
+    @introduction_audio_asset_id.setter
+    def introduction_audio_asset_id(self, introduction_audio_asset_id):
+        """Sets the introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
+
+        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。
+
+        :param introduction_audio_asset_id: The introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
+        :type introduction_audio_asset_id: str
+        """
+        self._introduction_audio_asset_id = introduction_audio_asset_id
 
     @property
     def gender(self):

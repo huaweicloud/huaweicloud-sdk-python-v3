@@ -24,7 +24,8 @@ class ListPortStatisticsRequest:
         'sort_key': 'str',
         'sort_dir': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'category': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListPortStatisticsRequest:
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'category': 'category'
     }
 
-    def __init__(self, port=None, port_string=None, type=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None):
+    def __init__(self, port=None, port_string=None, type=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None, category=None):
         """ListPortStatisticsRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListPortStatisticsRequest:
         :type limit: int
         :param offset: 默认是0
         :type offset: int
+        :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
+        :type category: str
         """
         
         
@@ -71,6 +75,7 @@ class ListPortStatisticsRequest:
         self._sort_dir = None
         self._limit = None
         self._offset = None
+        self._category = None
         self.discriminator = None
 
         if port is not None:
@@ -89,6 +94,8 @@ class ListPortStatisticsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if category is not None:
+            self.category = category
 
     @property
     def port(self):
@@ -265,6 +272,28 @@ class ListPortStatisticsRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def category(self):
+        """Gets the category of this ListPortStatisticsRequest.
+
+        类别，默认为host，包含如下： - host：主机 - container：容器
+
+        :return: The category of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        """Sets the category of this ListPortStatisticsRequest.
+
+        类别，默认为host，包含如下： - host：主机 - container：容器
+
+        :param category: The category of this ListPortStatisticsRequest.
+        :type category: str
+        """
+        self._category = category
 
     def to_dict(self):
         """Returns the model properties as a dict"""

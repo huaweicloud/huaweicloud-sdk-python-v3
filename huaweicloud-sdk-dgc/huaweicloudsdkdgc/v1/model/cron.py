@@ -22,7 +22,7 @@ class Cron:
         'expression': 'str',
         'expression_time_zone': 'str',
         'depend_pre_period': 'bool',
-        'depend_jobs': 'DependJobs'
+        'depend_jobs': 'DependJob'
     }
 
     attribute_map = {
@@ -50,7 +50,7 @@ class Cron:
         :param depend_pre_period: 是否依赖本作业上一个运行周期任务的执行结果
         :type depend_pre_period: bool
         :param depend_jobs: 
-        :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJobs`
+        :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`
         """
         
         
@@ -189,7 +189,7 @@ class Cron:
         """Gets the depend_jobs of this Cron.
 
         :return: The depend_jobs of this Cron.
-        :rtype: :class:`huaweicloudsdkdgc.v1.DependJobs`
+        :rtype: :class:`huaweicloudsdkdgc.v1.DependJob`
         """
         return self._depend_jobs
 
@@ -198,7 +198,7 @@ class Cron:
         """Sets the depend_jobs of this Cron.
 
         :param depend_jobs: The depend_jobs of this Cron.
-        :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJobs`
+        :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`
         """
         self._depend_jobs = depend_jobs
 

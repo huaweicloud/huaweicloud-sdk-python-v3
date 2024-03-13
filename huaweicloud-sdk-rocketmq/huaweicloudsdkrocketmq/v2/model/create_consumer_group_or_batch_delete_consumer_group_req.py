@@ -23,8 +23,10 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         'brokers': 'list[str]',
         'name': 'str',
         'group_desc': 'str',
-        'retry_max_time': 'float',
-        'from_beginning': 'bool'
+        'retry_max_time': 'int',
+        'created_at': 'str',
+        'permissions': 'list[str]',
+        'consume_orderly': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         'name': 'name',
         'group_desc': 'group_desc',
         'retry_max_time': 'retry_max_time',
-        'from_beginning': 'from_beginning'
+        'created_at': 'createdAt',
+        'permissions': 'permissions',
+        'consume_orderly': 'consume_orderly'
     }
 
-    def __init__(self, groups=None, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, from_beginning=None):
+    def __init__(self, groups=None, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, created_at=None, permissions=None, consume_orderly=None):
         """CreateConsumerGroupOrBatchDeleteConsumerGroupReq
 
         The model defined in huaweicloud sdk
@@ -56,9 +60,13 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         :param group_desc: 消费组描述，长度0~200个字符。
         :type group_desc: str
         :param retry_max_time: 最大重试次数，取值范围为1~16。
-        :type retry_max_time: float
-        :param from_beginning: 是否重头消费。
-        :type from_beginning: bool
+        :type retry_max_time: int
+        :param created_at: 创建时间戳。
+        :type created_at: str
+        :param permissions: 权限集。
+        :type permissions: list[str]
+        :param consume_orderly: 是否按序消费。
+        :type consume_orderly: bool
         """
         
         
@@ -70,7 +78,9 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         self._name = None
         self._group_desc = None
         self._retry_max_time = None
-        self._from_beginning = None
+        self._created_at = None
+        self._permissions = None
+        self._consume_orderly = None
         self.discriminator = None
 
         if groups is not None:
@@ -87,8 +97,12 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
             self.group_desc = group_desc
         if retry_max_time is not None:
             self.retry_max_time = retry_max_time
-        if from_beginning is not None:
-            self.from_beginning = from_beginning
+        if created_at is not None:
+            self.created_at = created_at
+        if permissions is not None:
+            self.permissions = permissions
+        if consume_orderly is not None:
+            self.consume_orderly = consume_orderly
 
     @property
     def groups(self):
@@ -229,7 +243,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         最大重试次数，取值范围为1~16。
 
         :return: The retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: float
+        :rtype: int
         """
         return self._retry_max_time
 
@@ -240,31 +254,75 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         最大重试次数，取值范围为1~16。
 
         :param retry_max_time: The retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type retry_max_time: float
+        :type retry_max_time: int
         """
         self._retry_max_time = retry_max_time
 
     @property
-    def from_beginning(self):
-        """Gets the from_beginning of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    def created_at(self):
+        """Gets the created_at of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否重头消费。
+        创建时间戳。
 
-        :return: The from_beginning of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :return: The created_at of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+
+        创建时间戳。
+
+        :param created_at: The created_at of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type created_at: str
+        """
+        self._created_at = created_at
+
+    @property
+    def permissions(self):
+        """Gets the permissions of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+
+        权限集。
+
+        :return: The permissions of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :rtype: list[str]
+        """
+        return self._permissions
+
+    @permissions.setter
+    def permissions(self, permissions):
+        """Sets the permissions of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+
+        权限集。
+
+        :param permissions: The permissions of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type permissions: list[str]
+        """
+        self._permissions = permissions
+
+    @property
+    def consume_orderly(self):
+        """Gets the consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+
+        是否按序消费。
+
+        :return: The consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: bool
         """
-        return self._from_beginning
+        return self._consume_orderly
 
-    @from_beginning.setter
-    def from_beginning(self, from_beginning):
-        """Sets the from_beginning of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    @consume_orderly.setter
+    def consume_orderly(self, consume_orderly):
+        """Sets the consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否重头消费。
+        是否按序消费。
 
-        :param from_beginning: The from_beginning of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type from_beginning: bool
+        :param consume_orderly: The consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type consume_orderly: bool
         """
-        self._from_beginning = from_beginning
+        self._consume_orderly = consume_orderly
 
     def to_dict(self):
         """Returns the model properties as a dict"""

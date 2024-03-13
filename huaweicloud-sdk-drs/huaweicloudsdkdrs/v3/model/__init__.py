@@ -105,6 +105,7 @@ from huaweicloudsdkdrs.v3.model.create_compare_task_result import CreateCompareT
 from huaweicloudsdkdrs.v3.model.create_data_level_compare_req import CreateDataLevelCompareReq
 from huaweicloudsdkdrs.v3.model.create_job_req import CreateJobReq
 from huaweicloudsdkdrs.v3.model.create_job_resp import CreateJobResp
+from huaweicloudsdkdrs.v3.model.customized_dns import CustomizedDns
 from huaweicloudsdkdrs.v3.model.data_transformation_info import DataTransformationInfo
 from huaweicloudsdkdrs.v3.model.data_transformation_object_vo import DataTransformationObjectVO
 from huaweicloudsdkdrs.v3.model.data_transformation_resp import DataTransformationResp

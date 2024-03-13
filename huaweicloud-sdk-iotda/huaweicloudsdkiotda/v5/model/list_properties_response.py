@@ -18,22 +18,26 @@ class ListPropertiesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'request_id': 'str',
         'response': 'object',
         'error_code': 'str',
         'error_msg': 'object'
     }
 
     attribute_map = {
+        'request_id': 'request_id',
         'response': 'response',
         'error_code': 'error_code',
         'error_msg': 'error_msg'
     }
 
-    def __init__(self, response=None, error_code=None, error_msg=None):
+    def __init__(self, request_id=None, response=None, error_code=None, error_msg=None):
         """ListPropertiesResponse
 
         The model defined in huaweicloud sdk
 
+        :param request_id: 设备属性查询ID，用于唯一标识一条属性查询，在下发查询属性时由物联网平台分配获得。
+        :type request_id: str
         :param response: 设备上报的属性执行结果。Json格式，具体格式需要应用和设备约定。
         :type response: object
         :param error_code: 属性查询异常错误码。
@@ -44,17 +48,42 @@ class ListPropertiesResponse(SdkResponse):
         
         super(ListPropertiesResponse, self).__init__()
 
+        self._request_id = None
         self._response = None
         self._error_code = None
         self._error_msg = None
         self.discriminator = None
 
+        if request_id is not None:
+            self.request_id = request_id
         if response is not None:
             self.response = response
         if error_code is not None:
             self.error_code = error_code
         if error_msg is not None:
             self.error_msg = error_msg
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ListPropertiesResponse.
+
+        设备属性查询ID，用于唯一标识一条属性查询，在下发查询属性时由物联网平台分配获得。
+
+        :return: The request_id of this ListPropertiesResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListPropertiesResponse.
+
+        设备属性查询ID，用于唯一标识一条属性查询，在下发查询属性时由物联网平台分配获得。
+
+        :param request_id: The request_id of this ListPropertiesResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     @property
     def response(self):

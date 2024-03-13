@@ -19,26 +19,28 @@ class ResponseCustomerGateway:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'route_mode': 'str',
         'bgp_asn': 'int',
-        'ip': 'str',
+        'id_type': 'str',
+        'id_value': 'str',
         'ca_certificate': 'CaCertificate',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'tags': 'list[VpnResourceTag]'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'route_mode': 'route_mode',
         'bgp_asn': 'bgp_asn',
-        'ip': 'ip',
+        'id_type': 'id_type',
+        'id_value': 'id_value',
         'ca_certificate': 'ca_certificate',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, route_mode=None, bgp_asn=None, ip=None, ca_certificate=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, bgp_asn=None, id_type=None, id_value=None, ca_certificate=None, created_at=None, updated_at=None, tags=None):
         """ResponseCustomerGateway
 
         The model defined in huaweicloud sdk
@@ -47,48 +49,53 @@ class ResponseCustomerGateway:
         :type id: str
         :param name: 网关名称
         :type name: str
-        :param route_mode: 网关路由模式
-        :type route_mode: str
         :param bgp_asn: 网关的bgp asn号
         :type bgp_asn: int
-        :param ip: 网关ip地址
-        :type ip: str
+        :param id_type: 对端网关标识类型
+        :type id_type: str
+        :param id_value: 对端网关标识值
+        :type id_value: str
         :param ca_certificate: 
         :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificate`
         :param created_at: 创建时间
         :type created_at: datetime
         :param updated_at: 更新时间
         :type updated_at: datetime
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         
         
 
         self._id = None
         self._name = None
-        self._route_mode = None
         self._bgp_asn = None
-        self._ip = None
+        self._id_type = None
+        self._id_value = None
         self._ca_certificate = None
         self._created_at = None
         self._updated_at = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
-        if route_mode is not None:
-            self.route_mode = route_mode
         if bgp_asn is not None:
             self.bgp_asn = bgp_asn
-        if ip is not None:
-            self.ip = ip
+        if id_type is not None:
+            self.id_type = id_type
+        if id_value is not None:
+            self.id_value = id_value
         if ca_certificate is not None:
             self.ca_certificate = ca_certificate
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -135,28 +142,6 @@ class ResponseCustomerGateway:
         self._name = name
 
     @property
-    def route_mode(self):
-        """Gets the route_mode of this ResponseCustomerGateway.
-
-        网关路由模式
-
-        :return: The route_mode of this ResponseCustomerGateway.
-        :rtype: str
-        """
-        return self._route_mode
-
-    @route_mode.setter
-    def route_mode(self, route_mode):
-        """Sets the route_mode of this ResponseCustomerGateway.
-
-        网关路由模式
-
-        :param route_mode: The route_mode of this ResponseCustomerGateway.
-        :type route_mode: str
-        """
-        self._route_mode = route_mode
-
-    @property
     def bgp_asn(self):
         """Gets the bgp_asn of this ResponseCustomerGateway.
 
@@ -179,26 +164,48 @@ class ResponseCustomerGateway:
         self._bgp_asn = bgp_asn
 
     @property
-    def ip(self):
-        """Gets the ip of this ResponseCustomerGateway.
+    def id_type(self):
+        """Gets the id_type of this ResponseCustomerGateway.
 
-        网关ip地址
+        对端网关标识类型
 
-        :return: The ip of this ResponseCustomerGateway.
+        :return: The id_type of this ResponseCustomerGateway.
         :rtype: str
         """
-        return self._ip
+        return self._id_type
 
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this ResponseCustomerGateway.
+    @id_type.setter
+    def id_type(self, id_type):
+        """Sets the id_type of this ResponseCustomerGateway.
 
-        网关ip地址
+        对端网关标识类型
 
-        :param ip: The ip of this ResponseCustomerGateway.
-        :type ip: str
+        :param id_type: The id_type of this ResponseCustomerGateway.
+        :type id_type: str
         """
-        self._ip = ip
+        self._id_type = id_type
+
+    @property
+    def id_value(self):
+        """Gets the id_value of this ResponseCustomerGateway.
+
+        对端网关标识值
+
+        :return: The id_value of this ResponseCustomerGateway.
+        :rtype: str
+        """
+        return self._id_value
+
+    @id_value.setter
+    def id_value(self, id_value):
+        """Sets the id_value of this ResponseCustomerGateway.
+
+        对端网关标识值
+
+        :param id_value: The id_value of this ResponseCustomerGateway.
+        :type id_value: str
+        """
+        self._id_value = id_value
 
     @property
     def ca_certificate(self):
@@ -261,6 +268,28 @@ class ResponseCustomerGateway:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def tags(self):
+        """Gets the tags of this ResponseCustomerGateway.
+
+        标签
+
+        :return: The tags of this ResponseCustomerGateway.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ResponseCustomerGateway.
+
+        标签
+
+        :param tags: The tags of this ResponseCustomerGateway.
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

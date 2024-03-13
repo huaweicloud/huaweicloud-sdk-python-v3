@@ -41,7 +41,7 @@ class ListEndpointPermissionsRequest:
         :type offset: int
         :param limit: 每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
         :type limit: int
-        :param permission: 权限帐号ID，格式为“iam:domain::domain_id”，支持模糊搜索
+        :param permission: 权限账号ID，格式为“iam:domain::domain_id”，支持模糊搜索
         :type permission: str
         """
         
@@ -131,7 +131,7 @@ class ListEndpointPermissionsRequest:
     def permission(self):
         """Gets the permission of this ListEndpointPermissionsRequest.
 
-        权限帐号ID，格式为“iam:domain::domain_id”，支持模糊搜索
+        权限账号ID，格式为“iam:domain::domain_id”，支持模糊搜索
 
         :return: The permission of this ListEndpointPermissionsRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListEndpointPermissionsRequest:
     def permission(self, permission):
         """Sets the permission of this ListEndpointPermissionsRequest.
 
-        权限帐号ID，格式为“iam:domain::domain_id”，支持模糊搜索
+        权限账号ID，格式为“iam:domain::domain_id”，支持模糊搜索
 
         :param permission: The permission of this ListEndpointPermissionsRequest.
         :type permission: str

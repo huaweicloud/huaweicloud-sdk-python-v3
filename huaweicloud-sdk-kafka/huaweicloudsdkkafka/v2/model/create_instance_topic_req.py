@@ -43,17 +43,17 @@ class CreateInstanceTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param id: topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        :param id: topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
         :type id: str
         :param replication: 副本数，配置数据的可靠性。 取值范围：1-3。
         :type replication: int
         :param sync_message_flush: 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
         :type sync_message_flush: bool
-        :param partition: topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[1-20](tag:cmcc)。
+        :param partition: topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hws,hws_hk,dt,hws_ocb,ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[1-20](tag:cmcc)。
         :type partition: int
         :param sync_replication: 是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效，默认关闭。
         :type sync_replication: bool
-        :param retention_time: 消息老化时间。默认值为72。 取值范围[1~168](tag:hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm)[1-720](tag:ocb,otc)，单位小时。
+        :param retention_time: 消息老化时间。默认值为72。 取值范围[1~168](tag:hws,hws_hk,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm)[1-720](tag:ocb,dt,hws_ocb)，单位小时。
         :type retention_time: int
         :param topic_other_configs: topic配置
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
@@ -93,7 +93,7 @@ class CreateInstanceTopicReq:
     def id(self):
         """Gets the id of this CreateInstanceTopicReq.
 
-        topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
 
         :return: The id of this CreateInstanceTopicReq.
         :rtype: str
@@ -104,7 +104,7 @@ class CreateInstanceTopicReq:
     def id(self, id):
         """Sets the id of this CreateInstanceTopicReq.
 
-        topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
 
         :param id: The id of this CreateInstanceTopicReq.
         :type id: str
@@ -159,7 +159,7 @@ class CreateInstanceTopicReq:
     def partition(self):
         """Gets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[1-20](tag:cmcc)。
+        topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hws,hws_hk,dt,hws_ocb,ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[1-20](tag:cmcc)。
 
         :return: The partition of this CreateInstanceTopicReq.
         :rtype: int
@@ -170,7 +170,7 @@ class CreateInstanceTopicReq:
     def partition(self, partition):
         """Sets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[1-20](tag:cmcc)。
+        topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hws,hws_hk,dt,hws_ocb,ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[1-20](tag:cmcc)。
 
         :param partition: The partition of this CreateInstanceTopicReq.
         :type partition: int
@@ -203,7 +203,7 @@ class CreateInstanceTopicReq:
     def retention_time(self):
         """Gets the retention_time of this CreateInstanceTopicReq.
 
-        消息老化时间。默认值为72。 取值范围[1~168](tag:hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm)[1-720](tag:ocb,otc)，单位小时。
+        消息老化时间。默认值为72。 取值范围[1~168](tag:hws,hws_hk,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm)[1-720](tag:ocb,dt,hws_ocb)，单位小时。
 
         :return: The retention_time of this CreateInstanceTopicReq.
         :rtype: int
@@ -214,7 +214,7 @@ class CreateInstanceTopicReq:
     def retention_time(self, retention_time):
         """Sets the retention_time of this CreateInstanceTopicReq.
 
-        消息老化时间。默认值为72。 取值范围[1~168](tag:hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm)[1-720](tag:ocb,otc)，单位小时。
+        消息老化时间。默认值为72。 取值范围[1~168](tag:hws,hws_hk,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm)[1-720](tag:ocb,dt,hws_ocb)，单位小时。
 
         :param retention_time: The retention_time of this CreateInstanceTopicReq.
         :type retention_time: int

@@ -51,7 +51,7 @@ class ListInstancesDetailsRequest:
         :type name: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param status: 实例状态，详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)。
+        :param status: 实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
         :type status: str
         :param include_failure: 是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
         :type include_failure: str
@@ -167,7 +167,7 @@ class ListInstancesDetailsRequest:
     def status(self):
         """Gets the status of this ListInstancesDetailsRequest.
 
-        实例状态，详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)。
+        实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
 
         :return: The status of this ListInstancesDetailsRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListInstancesDetailsRequest:
     def status(self, status):
         """Sets the status of this ListInstancesDetailsRequest.
 
-        实例状态，详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)。
+        实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
 
         :param status: The status of this ListInstancesDetailsRequest.
         :type status: str

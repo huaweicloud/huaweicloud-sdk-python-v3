@@ -39,7 +39,7 @@ class Source:
         :type code: :class:`huaweicloudsdkcae.v1.Repo`
         :param type: 源类型。
         :type type: str
-        :param sub_type: 源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts)、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库)。
+        :param sub_type: 源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts）、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库）。
         :type sub_type: str
         :param url: url地址。 - 源类型为image时，url地址为镜像地址。 - 源类型为code时，url地址为git地址。 - 源类型为softwarePackage时，url地址为软件包地址。
         :type url: str
@@ -104,7 +104,7 @@ class Source:
     def sub_type(self):
         """Gets the sub_type of this Source.
 
-        源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts)、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库)。
+        源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts）、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库）。
 
         :return: The sub_type of this Source.
         :rtype: str
@@ -115,7 +115,7 @@ class Source:
     def sub_type(self, sub_type):
         """Sets the sub_type of this Source.
 
-        源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts)、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库)。
+        源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts）、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库）。
 
         :param sub_type: The sub_type of this Source.
         :type sub_type: str

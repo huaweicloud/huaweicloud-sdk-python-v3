@@ -29,7 +29,7 @@ class DesktopDetailInfo:
         'status': 'str',
         'task_status': 'str',
         'created': 'str',
-        'security_groups': 'list[SecurityGroupInfo]',
+        'security_groups': 'list[SecurityGroup]',
         'login_status': 'str',
         'user_name': 'str',
         'attach_user_infos': 'list[AttachInstancesUserInfo]',
@@ -49,7 +49,10 @@ class DesktopDetailInfo:
         'internet_mode': 'str',
         'is_attaching_eip': 'bool',
         'attach_state': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'subnet_id': 'str',
+        'bill_resource_id': 'str',
+        'process': 'int'
     }
 
     attribute_map = {
@@ -85,10 +88,13 @@ class DesktopDetailInfo:
         'internet_mode': 'internet_mode',
         'is_attaching_eip': 'is_attaching_eip',
         'attach_state': 'attach_state',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'subnet_id': 'subnet_id',
+        'bill_resource_id': 'bill_resource_id',
+        'process': 'process'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, addresses=None, ip_addresses=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, internet_mode=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None):
+    def __init__(self, desktop_id=None, computer_name=None, addresses=None, ip_addresses=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, internet_mode=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None):
         """DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -107,7 +113,7 @@ class DesktopDetailInfo:
         :type user_group_list: list[str]
         :param desktop_type: 桌面类型。  - DEDICATED：专属桌面。
         :type desktop_type: str
-        :param metadata: 桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        :param metadata: 桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
         :type metadata: dict(str, str)
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
@@ -118,7 +124,7 @@ class DesktopDetailInfo:
         :param created: 桌面创建时间。
         :type created: str
         :param security_groups: 桌面安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         :param login_status: 桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
         :type login_status: str
         :param user_name: 桌面所属用户。
@@ -159,6 +165,12 @@ class DesktopDetailInfo:
         :type attach_state: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param subnet_id: 桌面的子网ID。
+        :type subnet_id: str
+        :param bill_resource_id: 桌面计费资源ID
+        :type bill_resource_id: str
+        :param process: 桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
+        :type process: int
         """
         
         
@@ -196,6 +208,9 @@ class DesktopDetailInfo:
         self._is_attaching_eip = None
         self._attach_state = None
         self._enterprise_project_id = None
+        self._subnet_id = None
+        self._bill_resource_id = None
+        self._process = None
         self.discriminator = None
 
         if desktop_id is not None:
@@ -264,6 +279,12 @@ class DesktopDetailInfo:
             self.attach_state = attach_state
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
+        if bill_resource_id is not None:
+            self.bill_resource_id = bill_resource_id
+        if process is not None:
+            self.process = process
 
     @property
     def desktop_id(self):
@@ -423,7 +444,7 @@ class DesktopDetailInfo:
     def metadata(self):
         """Gets the metadata of this DesktopDetailInfo.
 
-        桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
         :return: The metadata of this DesktopDetailInfo.
         :rtype: dict(str, str)
@@ -434,7 +455,7 @@ class DesktopDetailInfo:
     def metadata(self, metadata):
         """Sets the metadata of this DesktopDetailInfo.
 
-        桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
         :param metadata: The metadata of this DesktopDetailInfo.
         :type metadata: dict(str, str)
@@ -532,7 +553,7 @@ class DesktopDetailInfo:
         桌面安全组。
 
         :return: The security_groups of this DesktopDetailInfo.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         return self._security_groups
 
@@ -543,7 +564,7 @@ class DesktopDetailInfo:
         桌面安全组。
 
         :param security_groups: The security_groups of this DesktopDetailInfo.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -978,6 +999,72 @@ class DesktopDetailInfo:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this DesktopDetailInfo.
+
+        桌面的子网ID。
+
+        :return: The subnet_id of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this DesktopDetailInfo.
+
+        桌面的子网ID。
+
+        :param subnet_id: The subnet_id of this DesktopDetailInfo.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
+
+    @property
+    def bill_resource_id(self):
+        """Gets the bill_resource_id of this DesktopDetailInfo.
+
+        桌面计费资源ID
+
+        :return: The bill_resource_id of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._bill_resource_id
+
+    @bill_resource_id.setter
+    def bill_resource_id(self, bill_resource_id):
+        """Sets the bill_resource_id of this DesktopDetailInfo.
+
+        桌面计费资源ID
+
+        :param bill_resource_id: The bill_resource_id of this DesktopDetailInfo.
+        :type bill_resource_id: str
+        """
+        self._bill_resource_id = bill_resource_id
+
+    @property
+    def process(self):
+        """Gets the process of this DesktopDetailInfo.
+
+        桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
+
+        :return: The process of this DesktopDetailInfo.
+        :rtype: int
+        """
+        return self._process
+
+    @process.setter
+    def process(self, process):
+        """Sets the process of this DesktopDetailInfo.
+
+        桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
+
+        :param process: The process of this DesktopDetailInfo.
+        :type process: int
+        """
+        self._process = process
 
     def to_dict(self):
         """Returns the model properties as a dict"""

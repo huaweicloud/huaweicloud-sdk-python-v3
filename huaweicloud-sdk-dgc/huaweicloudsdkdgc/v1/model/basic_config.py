@@ -18,27 +18,37 @@ class BasicConfig:
 
     openapi_types = {
         'owner': 'str',
+        'agency': 'str',
+        'is_ignore_waiting': 'int',
         'priority': 'int',
         'execute_user': 'str',
         'instance_timeout': 'int',
-        'custom_fields': 'object'
+        'custom_fields': 'object',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
         'owner': 'owner',
+        'agency': 'agency',
+        'is_ignore_waiting': 'isIgnoreWaiting',
         'priority': 'priority',
         'execute_user': 'executeUser',
         'instance_timeout': 'instanceTimeout',
-        'custom_fields': 'customFields'
+        'custom_fields': 'customFields',
+        'tags': 'tags'
     }
 
-    def __init__(self, owner=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None):
+    def __init__(self, owner=None, agency=None, is_ignore_waiting=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None, tags=None):
         """BasicConfig
 
         The model defined in huaweicloud sdk
 
         :param owner: 作业责任人
         :type owner: str
+        :param agency: 作业委托的名称
+        :type agency: str
+        :param is_ignore_waiting: 实例超时是否忽略等待时间, 取值范围为0和1, 0：表示实例超时不忽略等待时间1：表示实例超时忽略等待时间
+        :type is_ignore_waiting: int
         :param priority: 作业优先级
         :type priority: int
         :param execute_user: 作业执行用户
@@ -47,19 +57,28 @@ class BasicConfig:
         :type instance_timeout: int
         :param custom_fields: 用户自定义属性字段
         :type custom_fields: object
+        :param tags: 作业标签列表
+        :type tags: list[str]
         """
         
         
 
         self._owner = None
+        self._agency = None
+        self._is_ignore_waiting = None
         self._priority = None
         self._execute_user = None
         self._instance_timeout = None
         self._custom_fields = None
+        self._tags = None
         self.discriminator = None
 
         if owner is not None:
             self.owner = owner
+        if agency is not None:
+            self.agency = agency
+        if is_ignore_waiting is not None:
+            self.is_ignore_waiting = is_ignore_waiting
         if priority is not None:
             self.priority = priority
         if execute_user is not None:
@@ -68,6 +87,8 @@ class BasicConfig:
             self.instance_timeout = instance_timeout
         if custom_fields is not None:
             self.custom_fields = custom_fields
+        if tags is not None:
+            self.tags = tags
 
     @property
     def owner(self):
@@ -90,6 +111,50 @@ class BasicConfig:
         :type owner: str
         """
         self._owner = owner
+
+    @property
+    def agency(self):
+        """Gets the agency of this BasicConfig.
+
+        作业委托的名称
+
+        :return: The agency of this BasicConfig.
+        :rtype: str
+        """
+        return self._agency
+
+    @agency.setter
+    def agency(self, agency):
+        """Sets the agency of this BasicConfig.
+
+        作业委托的名称
+
+        :param agency: The agency of this BasicConfig.
+        :type agency: str
+        """
+        self._agency = agency
+
+    @property
+    def is_ignore_waiting(self):
+        """Gets the is_ignore_waiting of this BasicConfig.
+
+        实例超时是否忽略等待时间, 取值范围为0和1, 0：表示实例超时不忽略等待时间1：表示实例超时忽略等待时间
+
+        :return: The is_ignore_waiting of this BasicConfig.
+        :rtype: int
+        """
+        return self._is_ignore_waiting
+
+    @is_ignore_waiting.setter
+    def is_ignore_waiting(self, is_ignore_waiting):
+        """Sets the is_ignore_waiting of this BasicConfig.
+
+        实例超时是否忽略等待时间, 取值范围为0和1, 0：表示实例超时不忽略等待时间1：表示实例超时忽略等待时间
+
+        :param is_ignore_waiting: The is_ignore_waiting of this BasicConfig.
+        :type is_ignore_waiting: int
+        """
+        self._is_ignore_waiting = is_ignore_waiting
 
     @property
     def priority(self):
@@ -178,6 +243,28 @@ class BasicConfig:
         :type custom_fields: object
         """
         self._custom_fields = custom_fields
+
+    @property
+    def tags(self):
+        """Gets the tags of this BasicConfig.
+
+        作业标签列表
+
+        :return: The tags of this BasicConfig.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this BasicConfig.
+
+        作业标签列表
+
+        :param tags: The tags of this BasicConfig.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

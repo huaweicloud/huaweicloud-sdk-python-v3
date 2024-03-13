@@ -35,7 +35,7 @@ class UpdateTemplateRequest:
 
         :param id: id
         :type id: str
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param body: Body of the UpdateTemplateRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.TemplateRO`
@@ -79,7 +79,7 @@ class UpdateTemplateRequest:
     def workspace(self):
         """Gets the workspace of this UpdateTemplateRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this UpdateTemplateRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateTemplateRequest:
     def workspace(self, workspace):
         """Sets the workspace of this UpdateTemplateRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this UpdateTemplateRequest.
         :type workspace: str

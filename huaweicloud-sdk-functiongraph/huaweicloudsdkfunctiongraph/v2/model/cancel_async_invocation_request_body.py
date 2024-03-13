@@ -33,7 +33,7 @@ class CancelAsyncInvocationRequestBody:
 
         :param request_id: 被停止的请求id
         :type request_id: str
-        :param type: 停止的类型 支持recursive, force。 recursive: 停止正在调用的子函数。 force: 直接杀死runtime。
+        :param type: 停止的类型 支持recursive, force。 recursive: 停止正在调用的子函数。 force: 直接终止runtime。
         :type type: str
         """
         
@@ -73,7 +73,7 @@ class CancelAsyncInvocationRequestBody:
     def type(self):
         """Gets the type of this CancelAsyncInvocationRequestBody.
 
-        停止的类型 支持recursive, force。 recursive: 停止正在调用的子函数。 force: 直接杀死runtime。
+        停止的类型 支持recursive, force。 recursive: 停止正在调用的子函数。 force: 直接终止runtime。
 
         :return: The type of this CancelAsyncInvocationRequestBody.
         :rtype: str
@@ -84,7 +84,7 @@ class CancelAsyncInvocationRequestBody:
     def type(self, type):
         """Sets the type of this CancelAsyncInvocationRequestBody.
 
-        停止的类型 支持recursive, force。 recursive: 停止正在调用的子函数。 force: 直接杀死runtime。
+        停止的类型 支持recursive, force。 recursive: 停止正在调用的子函数。 force: 直接终止runtime。
 
         :param type: The type of this CancelAsyncInvocationRequestBody.
         :type type: str

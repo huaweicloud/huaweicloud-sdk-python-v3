@@ -33,11 +33,11 @@ class CreateCaseRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: name
+        :param name: 名称
         :type name: str
         :param type: type（0-常规用例，1-视频流用例，2-预制用例）
         :type type: int
-        :param task_id: task_id
+        :param task_id: 所属任务id
         :type task_id: int
         """
         
@@ -56,7 +56,7 @@ class CreateCaseRequestBody:
     def name(self):
         """Gets the name of this CreateCaseRequestBody.
 
-        name
+        名称
 
         :return: The name of this CreateCaseRequestBody.
         :rtype: str
@@ -67,7 +67,7 @@ class CreateCaseRequestBody:
     def name(self, name):
         """Sets the name of this CreateCaseRequestBody.
 
-        name
+        名称
 
         :param name: The name of this CreateCaseRequestBody.
         :type name: str
@@ -100,7 +100,7 @@ class CreateCaseRequestBody:
     def task_id(self):
         """Gets the task_id of this CreateCaseRequestBody.
 
-        task_id
+        所属任务id
 
         :return: The task_id of this CreateCaseRequestBody.
         :rtype: int
@@ -111,7 +111,7 @@ class CreateCaseRequestBody:
     def task_id(self, task_id):
         """Sets the task_id of this CreateCaseRequestBody.
 
-        task_id
+        所属任务id
 
         :param task_id: The task_id of this CreateCaseRequestBody.
         :type task_id: int

@@ -21,6 +21,7 @@ class ListProcessesRequest:
         'db_user_id': 'str',
         'user': 'str',
         'database': 'str',
+        'node_id': 'str',
         'offset': 'int',
         'limit': 'int',
         'x_language': 'str'
@@ -31,12 +32,13 @@ class ListProcessesRequest:
         'db_user_id': 'db_user_id',
         'user': 'user',
         'database': 'database',
+        'node_id': 'node_id',
         'offset': 'offset',
         'limit': 'limit',
         'x_language': 'X-Language'
     }
 
-    def __init__(self, instance_id=None, db_user_id=None, user=None, database=None, offset=None, limit=None, x_language=None):
+    def __init__(self, instance_id=None, db_user_id=None, user=None, database=None, node_id=None, offset=None, limit=None, x_language=None):
         """ListProcessesRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ListProcessesRequest:
         :type user: str
         :param database: 数据库
         :type database: str
+        :param node_id: 节点ID
+        :type node_id: str
         :param offset: 偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
         :param limit: 每页记录数，默认为20，最大取值100。
@@ -63,6 +67,7 @@ class ListProcessesRequest:
         self._db_user_id = None
         self._user = None
         self._database = None
+        self._node_id = None
         self._offset = None
         self._limit = None
         self._x_language = None
@@ -74,6 +79,8 @@ class ListProcessesRequest:
             self.user = user
         if database is not None:
             self.database = database
+        if node_id is not None:
+            self.node_id = node_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -168,6 +175,28 @@ class ListProcessesRequest:
         :type database: str
         """
         self._database = database
+
+    @property
+    def node_id(self):
+        """Gets the node_id of this ListProcessesRequest.
+
+        节点ID
+
+        :return: The node_id of this ListProcessesRequest.
+        :rtype: str
+        """
+        return self._node_id
+
+    @node_id.setter
+    def node_id(self, node_id):
+        """Sets the node_id of this ListProcessesRequest.
+
+        节点ID
+
+        :param node_id: The node_id of this ListProcessesRequest.
+        :type node_id: str
+        """
+        self._node_id = node_id
 
     @property
     def offset(self):

@@ -50,19 +50,19 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务id
+        :param task_id: 任务ID
         :type task_id: str
         :param type: 任务类型
         :type type: str
         :param status: 任务状态
         :type status: str
-        :param src_target: 源端对象
+        :param src_target: 联动目录名称
         :type src_target: str
-        :param src_prefix: 源端路径
+        :param src_prefix: 导入导出任务的源端路径前缀
         :type src_prefix: str
-        :param dest_target: 目的端对象
+        :param dest_target: 和src_target保持一致
         :type dest_target: str
-        :param dest_prefix: 目的端路径
+        :param dest_prefix: 和src_prefix保持一致
         :type dest_prefix: str
         :param start_time: 任务开始时间
         :type start_time: str
@@ -116,7 +116,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def task_id(self):
         """Gets the task_id of this ShowHpcCacheTaskResponse.
 
-        任务id
+        任务ID
 
         :return: The task_id of this ShowHpcCacheTaskResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def task_id(self, task_id):
         """Sets the task_id of this ShowHpcCacheTaskResponse.
 
-        任务id
+        任务ID
 
         :param task_id: The task_id of this ShowHpcCacheTaskResponse.
         :type task_id: str
@@ -182,7 +182,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def src_target(self):
         """Gets the src_target of this ShowHpcCacheTaskResponse.
 
-        源端对象
+        联动目录名称
 
         :return: The src_target of this ShowHpcCacheTaskResponse.
         :rtype: str
@@ -193,7 +193,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def src_target(self, src_target):
         """Sets the src_target of this ShowHpcCacheTaskResponse.
 
-        源端对象
+        联动目录名称
 
         :param src_target: The src_target of this ShowHpcCacheTaskResponse.
         :type src_target: str
@@ -204,7 +204,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def src_prefix(self):
         """Gets the src_prefix of this ShowHpcCacheTaskResponse.
 
-        源端路径
+        导入导出任务的源端路径前缀
 
         :return: The src_prefix of this ShowHpcCacheTaskResponse.
         :rtype: str
@@ -215,7 +215,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def src_prefix(self, src_prefix):
         """Sets the src_prefix of this ShowHpcCacheTaskResponse.
 
-        源端路径
+        导入导出任务的源端路径前缀
 
         :param src_prefix: The src_prefix of this ShowHpcCacheTaskResponse.
         :type src_prefix: str
@@ -226,7 +226,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def dest_target(self):
         """Gets the dest_target of this ShowHpcCacheTaskResponse.
 
-        目的端对象
+        和src_target保持一致
 
         :return: The dest_target of this ShowHpcCacheTaskResponse.
         :rtype: str
@@ -237,7 +237,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def dest_target(self, dest_target):
         """Sets the dest_target of this ShowHpcCacheTaskResponse.
 
-        目的端对象
+        和src_target保持一致
 
         :param dest_target: The dest_target of this ShowHpcCacheTaskResponse.
         :type dest_target: str
@@ -248,7 +248,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def dest_prefix(self):
         """Gets the dest_prefix of this ShowHpcCacheTaskResponse.
 
-        目的端路径
+        和src_prefix保持一致
 
         :return: The dest_prefix of this ShowHpcCacheTaskResponse.
         :rtype: str
@@ -259,7 +259,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     def dest_prefix(self, dest_prefix):
         """Sets the dest_prefix of this ShowHpcCacheTaskResponse.
 
-        目的端路径
+        和src_prefix保持一致
 
         :param dest_prefix: The dest_prefix of this ShowHpcCacheTaskResponse.
         :type dest_prefix: str

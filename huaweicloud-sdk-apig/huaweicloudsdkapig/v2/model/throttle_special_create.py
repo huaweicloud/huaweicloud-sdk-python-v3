@@ -35,7 +35,7 @@ class ThrottleSpecialCreate:
 
         :param call_limits: 流控时间内特殊对象能够访问API的最大次数限制
         :type call_limits: int
-        :param object_id: 特殊APP的编号或特殊租户的帐号ID
+        :param object_id: 特殊APP的编号或特殊租户的账号ID
         :type object_id: str
         :param object_type: 特殊对象类型
         :type object_type: str
@@ -78,7 +78,7 @@ class ThrottleSpecialCreate:
     def object_id(self):
         """Gets the object_id of this ThrottleSpecialCreate.
 
-        特殊APP的编号或特殊租户的帐号ID
+        特殊APP的编号或特殊租户的账号ID
 
         :return: The object_id of this ThrottleSpecialCreate.
         :rtype: str
@@ -89,7 +89,7 @@ class ThrottleSpecialCreate:
     def object_id(self, object_id):
         """Sets the object_id of this ThrottleSpecialCreate.
 
-        特殊APP的编号或特殊租户的帐号ID
+        特殊APP的编号或特殊租户的账号ID
 
         :param object_id: The object_id of this ThrottleSpecialCreate.
         :type object_id: str

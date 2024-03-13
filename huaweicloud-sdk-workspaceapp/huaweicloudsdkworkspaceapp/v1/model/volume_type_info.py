@@ -41,17 +41,17 @@ class VolumeTypeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_spec_code: 资源规格编码
+        :param resource_spec_code: 资源规格编码。
         :type resource_spec_code: str
-        :param volume_type: 磁盘类型
+        :param volume_type: 磁盘类型。
         :type volume_type: str
-        :param volume_product_type: 磁盘产品类型
+        :param volume_product_type: 磁盘产品类型。
         :type volume_product_type: str
-        :param resource_type: 资源类型字段
+        :param resource_type: 资源类型字段。
         :type resource_type: str
-        :param cloud_service_type: 资源所属云服务类型编码
+        :param cloud_service_type: 资源所属云服务类型编码。
         :type cloud_service_type: str
-        :param name: 磁盘中英文名称
+        :param name: 磁盘中英文名称。
         :type name: list[dict(str, str)]
         :param volume_type_extra_specs: 
         :type volume_type_extra_specs: :class:`huaweicloudsdkworkspaceapp.v1.VolumeTypeExtraSpecs`
@@ -87,7 +87,7 @@ class VolumeTypeInfo:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this VolumeTypeInfo.
 
-        资源规格编码
+        资源规格编码。
 
         :return: The resource_spec_code of this VolumeTypeInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class VolumeTypeInfo:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this VolumeTypeInfo.
 
-        资源规格编码
+        资源规格编码。
 
         :param resource_spec_code: The resource_spec_code of this VolumeTypeInfo.
         :type resource_spec_code: str
@@ -109,7 +109,7 @@ class VolumeTypeInfo:
     def volume_type(self):
         """Gets the volume_type of this VolumeTypeInfo.
 
-        磁盘类型
+        磁盘类型。
 
         :return: The volume_type of this VolumeTypeInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class VolumeTypeInfo:
     def volume_type(self, volume_type):
         """Sets the volume_type of this VolumeTypeInfo.
 
-        磁盘类型
+        磁盘类型。
 
         :param volume_type: The volume_type of this VolumeTypeInfo.
         :type volume_type: str
@@ -131,7 +131,7 @@ class VolumeTypeInfo:
     def volume_product_type(self):
         """Gets the volume_product_type of this VolumeTypeInfo.
 
-        磁盘产品类型
+        磁盘产品类型。
 
         :return: The volume_product_type of this VolumeTypeInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class VolumeTypeInfo:
     def volume_product_type(self, volume_product_type):
         """Sets the volume_product_type of this VolumeTypeInfo.
 
-        磁盘产品类型
+        磁盘产品类型。
 
         :param volume_product_type: The volume_product_type of this VolumeTypeInfo.
         :type volume_product_type: str
@@ -153,7 +153,7 @@ class VolumeTypeInfo:
     def resource_type(self):
         """Gets the resource_type of this VolumeTypeInfo.
 
-        资源类型字段
+        资源类型字段。
 
         :return: The resource_type of this VolumeTypeInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class VolumeTypeInfo:
     def resource_type(self, resource_type):
         """Sets the resource_type of this VolumeTypeInfo.
 
-        资源类型字段
+        资源类型字段。
 
         :param resource_type: The resource_type of this VolumeTypeInfo.
         :type resource_type: str
@@ -175,7 +175,7 @@ class VolumeTypeInfo:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this VolumeTypeInfo.
 
-        资源所属云服务类型编码
+        资源所属云服务类型编码。
 
         :return: The cloud_service_type of this VolumeTypeInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class VolumeTypeInfo:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this VolumeTypeInfo.
 
-        资源所属云服务类型编码
+        资源所属云服务类型编码。
 
         :param cloud_service_type: The cloud_service_type of this VolumeTypeInfo.
         :type cloud_service_type: str
@@ -197,7 +197,7 @@ class VolumeTypeInfo:
     def name(self):
         """Gets the name of this VolumeTypeInfo.
 
-        磁盘中英文名称
+        磁盘中英文名称。
 
         :return: The name of this VolumeTypeInfo.
         :rtype: list[dict(str, str)]
@@ -208,7 +208,7 @@ class VolumeTypeInfo:
     def name(self, name):
         """Sets the name of this VolumeTypeInfo.
 
-        磁盘中英文名称
+        磁盘中英文名称。
 
         :param name: The name of this VolumeTypeInfo.
         :type name: list[dict(str, str)]

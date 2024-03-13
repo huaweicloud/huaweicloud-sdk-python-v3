@@ -29,7 +29,7 @@ class NetworkInfo:
 
         The model defined in huaweicloud sdk
 
-        :param network_type: network_type
+        :param network_type: 网络类型（固定值：internet）
         :type network_type: str
         """
         
@@ -44,7 +44,7 @@ class NetworkInfo:
     def network_type(self):
         """Gets the network_type of this NetworkInfo.
 
-        network_type
+        网络类型（固定值：internet）
 
         :return: The network_type of this NetworkInfo.
         :rtype: str
@@ -55,7 +55,7 @@ class NetworkInfo:
     def network_type(self, network_type):
         """Sets the network_type of this NetworkInfo.
 
-        network_type
+        网络类型（固定值：internet）
 
         :param network_type: The network_type of this NetworkInfo.
         :type network_type: str

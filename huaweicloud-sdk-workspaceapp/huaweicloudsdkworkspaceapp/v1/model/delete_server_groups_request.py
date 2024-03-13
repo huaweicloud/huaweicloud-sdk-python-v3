@@ -29,7 +29,7 @@ class DeleteServerGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_group_id: 服务器组唯一标识
+        :param server_group_id: 服务器组唯一标识。
         :type server_group_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteServerGroupsRequest:
     def server_group_id(self):
         """Gets the server_group_id of this DeleteServerGroupsRequest.
 
-        服务器组唯一标识
+        服务器组唯一标识。
 
         :return: The server_group_id of this DeleteServerGroupsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteServerGroupsRequest:
     def server_group_id(self, server_group_id):
         """Sets the server_group_id of this DeleteServerGroupsRequest.
 
-        服务器组唯一标识
+        服务器组唯一标识。
 
         :param server_group_id: The server_group_id of this DeleteServerGroupsRequest.
         :type server_group_id: str

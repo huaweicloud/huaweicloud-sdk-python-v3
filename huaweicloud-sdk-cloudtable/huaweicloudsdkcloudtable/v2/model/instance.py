@@ -20,7 +20,7 @@ class Instance:
         'availability_zone': 'str',
         'cu_num': 'int',
         'lemon_num': 'int',
-        'nics': 'list[Nics]',
+        'nics': 'list[Nic]',
         'tsd_num': 'int'
     }
 
@@ -44,7 +44,7 @@ class Instance:
         :param lemon_num: CloudTable集群Lemon节点数目。
         :type lemon_num: int
         :param nics: 集群所在网络信息。
-        :type nics: list[:class:`huaweicloudsdkcloudtable.v2.Nics`]
+        :type nics: list[:class:`huaweicloudsdkcloudtable.v2.Nic`]
         :param tsd_num: CloudTable集群TSD节点数目，至少为2。
         :type tsd_num: int
         """
@@ -138,7 +138,7 @@ class Instance:
         集群所在网络信息。
 
         :return: The nics of this Instance.
-        :rtype: list[:class:`huaweicloudsdkcloudtable.v2.Nics`]
+        :rtype: list[:class:`huaweicloudsdkcloudtable.v2.Nic`]
         """
         return self._nics
 
@@ -149,7 +149,7 @@ class Instance:
         集群所在网络信息。
 
         :param nics: The nics of this Instance.
-        :type nics: list[:class:`huaweicloudsdkcloudtable.v2.Nics`]
+        :type nics: list[:class:`huaweicloudsdkcloudtable.v2.Nic`]
         """
         self._nics = nics
 

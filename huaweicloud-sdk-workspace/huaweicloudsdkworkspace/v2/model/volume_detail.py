@@ -22,6 +22,7 @@ class VolumeDetail:
         'device': 'str',
         'id': 'str',
         'volume_id': 'str',
+        'bill_resource_id': 'str',
         'create_time': 'str',
         'display_name': 'str'
     }
@@ -32,11 +33,12 @@ class VolumeDetail:
         'device': 'device',
         'id': 'id',
         'volume_id': 'volume_id',
+        'bill_resource_id': 'bill_resource_id',
         'create_time': 'create_time',
         'display_name': 'display_name'
     }
 
-    def __init__(self, type=None, size=None, device=None, id=None, volume_id=None, create_time=None, display_name=None):
+    def __init__(self, type=None, size=None, device=None, id=None, volume_id=None, bill_resource_id=None, create_time=None, display_name=None):
         """VolumeDetail
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class VolumeDetail:
         :type id: str
         :param volume_id: 磁盘ID。
         :type volume_id: str
+        :param bill_resource_id: 磁盘计费资源ID。
+        :type bill_resource_id: str
         :param create_time: 磁盘的创建时间
         :type create_time: str
         :param display_name: 磁盘名
@@ -64,6 +68,7 @@ class VolumeDetail:
         self._device = None
         self._id = None
         self._volume_id = None
+        self._bill_resource_id = None
         self._create_time = None
         self._display_name = None
         self.discriminator = None
@@ -76,6 +81,8 @@ class VolumeDetail:
             self.id = id
         if volume_id is not None:
             self.volume_id = volume_id
+        if bill_resource_id is not None:
+            self.bill_resource_id = bill_resource_id
         if create_time is not None:
             self.create_time = create_time
         if display_name is not None:
@@ -190,6 +197,28 @@ class VolumeDetail:
         :type volume_id: str
         """
         self._volume_id = volume_id
+
+    @property
+    def bill_resource_id(self):
+        """Gets the bill_resource_id of this VolumeDetail.
+
+        磁盘计费资源ID。
+
+        :return: The bill_resource_id of this VolumeDetail.
+        :rtype: str
+        """
+        return self._bill_resource_id
+
+    @bill_resource_id.setter
+    def bill_resource_id(self, bill_resource_id):
+        """Sets the bill_resource_id of this VolumeDetail.
+
+        磁盘计费资源ID。
+
+        :param bill_resource_id: The bill_resource_id of this VolumeDetail.
+        :type bill_resource_id: str
+        """
+        self._bill_resource_id = bill_resource_id
 
     @property
     def create_time(self):

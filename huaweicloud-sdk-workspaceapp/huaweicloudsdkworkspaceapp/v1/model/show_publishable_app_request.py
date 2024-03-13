@@ -29,7 +29,7 @@ class ShowPublishableAppRequest:
 
         The model defined in huaweicloud sdk
 
-        :param app_group_id: 应用组ID
+        :param app_group_id: 应用组ID。
         :type app_group_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowPublishableAppRequest:
     def app_group_id(self):
         """Gets the app_group_id of this ShowPublishableAppRequest.
 
-        应用组ID
+        应用组ID。
 
         :return: The app_group_id of this ShowPublishableAppRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowPublishableAppRequest:
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this ShowPublishableAppRequest.
 
-        应用组ID
+        应用组ID。
 
         :param app_group_id: The app_group_id of this ShowPublishableAppRequest.
         :type app_group_id: str

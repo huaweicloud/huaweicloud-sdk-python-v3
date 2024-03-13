@@ -35,13 +35,13 @@ class UploadProcessJsonDetail:
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 导入进度Id
         :type id: int
-        :param name: name
+        :param name: 工程名称
         :type name: str
-        :param status: status
+        :param status: 导入状态（0：导入中；1：成功；2：失败）
         :type status: int
-        :param cause: cause
+        :param cause: 失败原因
         :type cause: str
         """
         
@@ -66,7 +66,7 @@ class UploadProcessJsonDetail:
     def id(self):
         """Gets the id of this UploadProcessJsonDetail.
 
-        id
+        导入进度Id
 
         :return: The id of this UploadProcessJsonDetail.
         :rtype: int
@@ -77,7 +77,7 @@ class UploadProcessJsonDetail:
     def id(self, id):
         """Sets the id of this UploadProcessJsonDetail.
 
-        id
+        导入进度Id
 
         :param id: The id of this UploadProcessJsonDetail.
         :type id: int
@@ -88,7 +88,7 @@ class UploadProcessJsonDetail:
     def name(self):
         """Gets the name of this UploadProcessJsonDetail.
 
-        name
+        工程名称
 
         :return: The name of this UploadProcessJsonDetail.
         :rtype: str
@@ -99,7 +99,7 @@ class UploadProcessJsonDetail:
     def name(self, name):
         """Sets the name of this UploadProcessJsonDetail.
 
-        name
+        工程名称
 
         :param name: The name of this UploadProcessJsonDetail.
         :type name: str
@@ -110,7 +110,7 @@ class UploadProcessJsonDetail:
     def status(self):
         """Gets the status of this UploadProcessJsonDetail.
 
-        status
+        导入状态（0：导入中；1：成功；2：失败）
 
         :return: The status of this UploadProcessJsonDetail.
         :rtype: int
@@ -121,7 +121,7 @@ class UploadProcessJsonDetail:
     def status(self, status):
         """Sets the status of this UploadProcessJsonDetail.
 
-        status
+        导入状态（0：导入中；1：成功；2：失败）
 
         :param status: The status of this UploadProcessJsonDetail.
         :type status: int
@@ -132,7 +132,7 @@ class UploadProcessJsonDetail:
     def cause(self):
         """Gets the cause of this UploadProcessJsonDetail.
 
-        cause
+        失败原因
 
         :return: The cause of this UploadProcessJsonDetail.
         :rtype: str
@@ -143,7 +143,7 @@ class UploadProcessJsonDetail:
     def cause(self, cause):
         """Sets the cause of this UploadProcessJsonDetail.
 
-        cause
+        失败原因
 
         :param cause: The cause of this UploadProcessJsonDetail.
         :type cause: str

@@ -15,6 +15,8 @@ from huaweicloudsdksms.v3.model.comand_param import ComandParam
 from huaweicloudsdksms.v3.model.command_body import CommandBody
 from huaweicloudsdksms.v3.model.config_body import ConfigBody
 from huaweicloudsdksms.v3.model.configuration_request_body import ConfigurationRequestBody
+from huaweicloudsdksms.v3.model.consistency_result import ConsistencyResult
+from huaweicloudsdksms.v3.model.consistency_result_request_body import ConsistencyResultRequestBody
 from huaweicloudsdksms.v3.model.create_migproject_request import CreateMigprojectRequest
 from huaweicloudsdksms.v3.model.create_migproject_response import CreateMigprojectResponse
 from huaweicloudsdksms.v3.model.create_privacy_agreements_request import CreatePrivacyAgreementsRequest
@@ -94,6 +96,8 @@ from huaweicloudsdksms.v3.model.show_config_request import ShowConfigRequest
 from huaweicloudsdksms.v3.model.show_config_response import ShowConfigResponse
 from huaweicloudsdksms.v3.model.show_config_setting_request import ShowConfigSettingRequest
 from huaweicloudsdksms.v3.model.show_config_setting_response import ShowConfigSettingResponse
+from huaweicloudsdksms.v3.model.show_consistency_result_request import ShowConsistencyResultRequest
+from huaweicloudsdksms.v3.model.show_consistency_result_response import ShowConsistencyResultResponse
 from huaweicloudsdksms.v3.model.show_migproject_request import ShowMigprojectRequest
 from huaweicloudsdksms.v3.model.show_migproject_response import ShowMigprojectResponse
 from huaweicloudsdksms.v3.model.show_overview_request import ShowOverviewRequest
@@ -140,6 +144,8 @@ from huaweicloudsdksms.v3.model.unlock_target_ecs_request import UnlockTargetEcs
 from huaweicloudsdksms.v3.model.unlock_target_ecs_response import UnlockTargetEcsResponse
 from huaweicloudsdksms.v3.model.update_command_result_request import UpdateCommandResultRequest
 from huaweicloudsdksms.v3.model.update_command_result_response import UpdateCommandResultResponse
+from huaweicloudsdksms.v3.model.update_consistency_result_request import UpdateConsistencyResultRequest
+from huaweicloudsdksms.v3.model.update_consistency_result_response import UpdateConsistencyResultResponse
 from huaweicloudsdksms.v3.model.update_copy_state_request import UpdateCopyStateRequest
 from huaweicloudsdksms.v3.model.update_copy_state_response import UpdateCopyStateResponse
 from huaweicloudsdksms.v3.model.update_default_migproject_request import UpdateDefaultMigprojectRequest

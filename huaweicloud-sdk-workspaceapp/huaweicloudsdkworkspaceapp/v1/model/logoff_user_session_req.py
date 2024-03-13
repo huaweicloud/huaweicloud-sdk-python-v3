@@ -39,17 +39,17 @@ class LogoffUserSessionReq:
 
         The model defined in huaweicloud sdk
 
-        :param session_ids: 会话信息id列表
+        :param session_ids: 会话信息id列表。
         :type session_ids: list[str]
-        :param message_type: 客户端弹框级别，代表给会话发消息时的严重程度（比如info、warning、error级别） 0-&gt;info; 1-&gt; warn; 2-&gt;serious;
+        :param message_type: 客户端弹框级别，代表给会话发消息时的严重程度（比如info、warning、error级别） 0-&gt;info; 1-&gt; warn; 2-&gt;serious。
         :type message_type: int
-        :param message: 客户端弹框内容
+        :param message: 客户端弹框内容。
         :type message: str
-        :param title: 弹框标题
+        :param title: 弹框标题。
         :type title: str
-        :param delay_time: 延迟多长时间注销会话
+        :param delay_time: 延迟多长时间注销会话。
         :type delay_time: int
-        :param transaction_id: 事务id，用作客户端日志定位跟踪
+        :param transaction_id: 事务id，用作客户端日志定位跟踪。
         :type transaction_id: str
         """
         
@@ -78,7 +78,7 @@ class LogoffUserSessionReq:
     def session_ids(self):
         """Gets the session_ids of this LogoffUserSessionReq.
 
-        会话信息id列表
+        会话信息id列表。
 
         :return: The session_ids of this LogoffUserSessionReq.
         :rtype: list[str]
@@ -89,7 +89,7 @@ class LogoffUserSessionReq:
     def session_ids(self, session_ids):
         """Sets the session_ids of this LogoffUserSessionReq.
 
-        会话信息id列表
+        会话信息id列表。
 
         :param session_ids: The session_ids of this LogoffUserSessionReq.
         :type session_ids: list[str]
@@ -100,7 +100,7 @@ class LogoffUserSessionReq:
     def message_type(self):
         """Gets the message_type of this LogoffUserSessionReq.
 
-        客户端弹框级别，代表给会话发消息时的严重程度（比如info、warning、error级别） 0->info; 1-> warn; 2->serious;
+        客户端弹框级别，代表给会话发消息时的严重程度（比如info、warning、error级别） 0->info; 1-> warn; 2->serious。
 
         :return: The message_type of this LogoffUserSessionReq.
         :rtype: int
@@ -111,7 +111,7 @@ class LogoffUserSessionReq:
     def message_type(self, message_type):
         """Sets the message_type of this LogoffUserSessionReq.
 
-        客户端弹框级别，代表给会话发消息时的严重程度（比如info、warning、error级别） 0->info; 1-> warn; 2->serious;
+        客户端弹框级别，代表给会话发消息时的严重程度（比如info、warning、error级别） 0->info; 1-> warn; 2->serious。
 
         :param message_type: The message_type of this LogoffUserSessionReq.
         :type message_type: int
@@ -122,7 +122,7 @@ class LogoffUserSessionReq:
     def message(self):
         """Gets the message of this LogoffUserSessionReq.
 
-        客户端弹框内容
+        客户端弹框内容。
 
         :return: The message of this LogoffUserSessionReq.
         :rtype: str
@@ -133,7 +133,7 @@ class LogoffUserSessionReq:
     def message(self, message):
         """Sets the message of this LogoffUserSessionReq.
 
-        客户端弹框内容
+        客户端弹框内容。
 
         :param message: The message of this LogoffUserSessionReq.
         :type message: str
@@ -144,7 +144,7 @@ class LogoffUserSessionReq:
     def title(self):
         """Gets the title of this LogoffUserSessionReq.
 
-        弹框标题
+        弹框标题。
 
         :return: The title of this LogoffUserSessionReq.
         :rtype: str
@@ -155,7 +155,7 @@ class LogoffUserSessionReq:
     def title(self, title):
         """Sets the title of this LogoffUserSessionReq.
 
-        弹框标题
+        弹框标题。
 
         :param title: The title of this LogoffUserSessionReq.
         :type title: str
@@ -166,7 +166,7 @@ class LogoffUserSessionReq:
     def delay_time(self):
         """Gets the delay_time of this LogoffUserSessionReq.
 
-        延迟多长时间注销会话
+        延迟多长时间注销会话。
 
         :return: The delay_time of this LogoffUserSessionReq.
         :rtype: int
@@ -177,7 +177,7 @@ class LogoffUserSessionReq:
     def delay_time(self, delay_time):
         """Sets the delay_time of this LogoffUserSessionReq.
 
-        延迟多长时间注销会话
+        延迟多长时间注销会话。
 
         :param delay_time: The delay_time of this LogoffUserSessionReq.
         :type delay_time: int
@@ -188,7 +188,7 @@ class LogoffUserSessionReq:
     def transaction_id(self):
         """Gets the transaction_id of this LogoffUserSessionReq.
 
-        事务id，用作客户端日志定位跟踪
+        事务id，用作客户端日志定位跟踪。
 
         :return: The transaction_id of this LogoffUserSessionReq.
         :rtype: str
@@ -199,7 +199,7 @@ class LogoffUserSessionReq:
     def transaction_id(self, transaction_id):
         """Sets the transaction_id of this LogoffUserSessionReq.
 
-        事务id，用作客户端日志定位跟踪
+        事务id，用作客户端日志定位跟踪。
 
         :param transaction_id: The transaction_id of this LogoffUserSessionReq.
         :type transaction_id: str

@@ -27,14 +27,15 @@ class CreateVgwRequestBodyContent:
         'flavor': 'str',
         'availability_zone_ids': 'list[str]',
         'enterprise_project_id': 'str',
-        'master_eip': 'CreateRequestEip',
-        'slave_eip': 'CreateRequestEip',
         'eip1': 'CreateRequestEip',
         'eip2': 'CreateRequestEip',
+        'access_private_ip_1': 'str',
+        'access_private_ip_2': 'str',
         'network_type': 'str',
         'access_vpc_id': 'str',
         'access_subnet_id': 'str',
-        'ha_mode': 'str'
+        'ha_mode': 'str',
+        'tags': 'list[VpnResourceTag]'
     }
 
     attribute_map = {
@@ -48,17 +49,18 @@ class CreateVgwRequestBodyContent:
         'flavor': 'flavor',
         'availability_zone_ids': 'availability_zone_ids',
         'enterprise_project_id': 'enterprise_project_id',
-        'master_eip': 'master_eip',
-        'slave_eip': 'slave_eip',
         'eip1': 'eip1',
         'eip2': 'eip2',
+        'access_private_ip_1': 'access_private_ip_1',
+        'access_private_ip_2': 'access_private_ip_2',
         'network_type': 'network_type',
         'access_vpc_id': 'access_vpc_id',
         'access_subnet_id': 'access_subnet_id',
-        'ha_mode': 'ha_mode'
+        'ha_mode': 'ha_mode',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, attachment_type=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, bgp_asn=None, flavor=None, availability_zone_ids=None, enterprise_project_id=None, master_eip=None, slave_eip=None, eip1=None, eip2=None, network_type=None, access_vpc_id=None, access_subnet_id=None, ha_mode=None):
+    def __init__(self, name=None, attachment_type=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, bgp_asn=None, flavor=None, availability_zone_ids=None, enterprise_project_id=None, eip1=None, eip2=None, access_private_ip_1=None, access_private_ip_2=None, network_type=None, access_vpc_id=None, access_subnet_id=None, ha_mode=None, tags=None):
         """CreateVgwRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -79,19 +81,19 @@ class CreateVgwRequestBodyContent:
         :type bgp_asn: int
         :param flavor: VPN网关的规格类型，当attachment_type为er时不能填写Basic
         :type flavor: str
-        :param availability_zone_ids: 不填写则采用默认可用区。如果需要指定可用区可以调用查询VPN网关可用区接口来选择
+        :param availability_zone_ids: 部署VPN网关的可用区。不填时自动为VPN网关选择可用区。如果需要指定可用区可以通过查询VPN网关可用区查询可用区列表。
         :type availability_zone_ids: list[str]
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
-        :param master_eip: 
-        :type master_eip: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
-        :param slave_eip: 
-        :type slave_eip: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
         :param eip1: 
         :type eip1: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
         :param eip2: 
         :type eip2: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
-        :param network_type: VPN网关北向类型，默认为公网(public)
+        :param access_private_ip_1: 私网类型VPN网关的接入私网IP1，指定ip创建私网网关时设置，主备网关时为主ip，双活网关时为主ip1
+        :type access_private_ip_1: str
+        :param access_private_ip_2: 私网类型VPN网关的接入私网IP2，指定ip创建私网网关时设置，主备网关时为备ip，双活网关时为主ip2
+        :type access_private_ip_2: str
+        :param network_type: VPN网关的网络类型，默认为公网(public)
         :type network_type: str
         :param access_vpc_id: VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
         :type access_vpc_id: str
@@ -99,6 +101,8 @@ class CreateVgwRequestBodyContent:
         :type access_subnet_id: str
         :param ha_mode: ha模式
         :type ha_mode: str
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         
         
@@ -113,14 +117,15 @@ class CreateVgwRequestBodyContent:
         self._flavor = None
         self._availability_zone_ids = None
         self._enterprise_project_id = None
-        self._master_eip = None
-        self._slave_eip = None
         self._eip1 = None
         self._eip2 = None
+        self._access_private_ip_1 = None
+        self._access_private_ip_2 = None
         self._network_type = None
         self._access_vpc_id = None
         self._access_subnet_id = None
         self._ha_mode = None
+        self._tags = None
         self.discriminator = None
 
         if name is not None:
@@ -143,14 +148,14 @@ class CreateVgwRequestBodyContent:
             self.availability_zone_ids = availability_zone_ids
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if master_eip is not None:
-            self.master_eip = master_eip
-        if slave_eip is not None:
-            self.slave_eip = slave_eip
         if eip1 is not None:
             self.eip1 = eip1
         if eip2 is not None:
             self.eip2 = eip2
+        if access_private_ip_1 is not None:
+            self.access_private_ip_1 = access_private_ip_1
+        if access_private_ip_2 is not None:
+            self.access_private_ip_2 = access_private_ip_2
         if network_type is not None:
             self.network_type = network_type
         if access_vpc_id is not None:
@@ -159,6 +164,8 @@ class CreateVgwRequestBodyContent:
             self.access_subnet_id = access_subnet_id
         if ha_mode is not None:
             self.ha_mode = ha_mode
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -340,7 +347,7 @@ class CreateVgwRequestBodyContent:
     def availability_zone_ids(self):
         """Gets the availability_zone_ids of this CreateVgwRequestBodyContent.
 
-        不填写则采用默认可用区。如果需要指定可用区可以调用查询VPN网关可用区接口来选择
+        部署VPN网关的可用区。不填时自动为VPN网关选择可用区。如果需要指定可用区可以通过查询VPN网关可用区查询可用区列表。
 
         :return: The availability_zone_ids of this CreateVgwRequestBodyContent.
         :rtype: list[str]
@@ -351,7 +358,7 @@ class CreateVgwRequestBodyContent:
     def availability_zone_ids(self, availability_zone_ids):
         """Sets the availability_zone_ids of this CreateVgwRequestBodyContent.
 
-        不填写则采用默认可用区。如果需要指定可用区可以调用查询VPN网关可用区接口来选择
+        部署VPN网关的可用区。不填时自动为VPN网关选择可用区。如果需要指定可用区可以通过查询VPN网关可用区查询可用区列表。
 
         :param availability_zone_ids: The availability_zone_ids of this CreateVgwRequestBodyContent.
         :type availability_zone_ids: list[str]
@@ -379,42 +386,6 @@ class CreateVgwRequestBodyContent:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def master_eip(self):
-        """Gets the master_eip of this CreateVgwRequestBodyContent.
-
-        :return: The master_eip of this CreateVgwRequestBodyContent.
-        :rtype: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
-        """
-        return self._master_eip
-
-    @master_eip.setter
-    def master_eip(self, master_eip):
-        """Sets the master_eip of this CreateVgwRequestBodyContent.
-
-        :param master_eip: The master_eip of this CreateVgwRequestBodyContent.
-        :type master_eip: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
-        """
-        self._master_eip = master_eip
-
-    @property
-    def slave_eip(self):
-        """Gets the slave_eip of this CreateVgwRequestBodyContent.
-
-        :return: The slave_eip of this CreateVgwRequestBodyContent.
-        :rtype: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
-        """
-        return self._slave_eip
-
-    @slave_eip.setter
-    def slave_eip(self, slave_eip):
-        """Sets the slave_eip of this CreateVgwRequestBodyContent.
-
-        :param slave_eip: The slave_eip of this CreateVgwRequestBodyContent.
-        :type slave_eip: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
-        """
-        self._slave_eip = slave_eip
 
     @property
     def eip1(self):
@@ -453,10 +424,54 @@ class CreateVgwRequestBodyContent:
         self._eip2 = eip2
 
     @property
+    def access_private_ip_1(self):
+        """Gets the access_private_ip_1 of this CreateVgwRequestBodyContent.
+
+        私网类型VPN网关的接入私网IP1，指定ip创建私网网关时设置，主备网关时为主ip，双活网关时为主ip1
+
+        :return: The access_private_ip_1 of this CreateVgwRequestBodyContent.
+        :rtype: str
+        """
+        return self._access_private_ip_1
+
+    @access_private_ip_1.setter
+    def access_private_ip_1(self, access_private_ip_1):
+        """Sets the access_private_ip_1 of this CreateVgwRequestBodyContent.
+
+        私网类型VPN网关的接入私网IP1，指定ip创建私网网关时设置，主备网关时为主ip，双活网关时为主ip1
+
+        :param access_private_ip_1: The access_private_ip_1 of this CreateVgwRequestBodyContent.
+        :type access_private_ip_1: str
+        """
+        self._access_private_ip_1 = access_private_ip_1
+
+    @property
+    def access_private_ip_2(self):
+        """Gets the access_private_ip_2 of this CreateVgwRequestBodyContent.
+
+        私网类型VPN网关的接入私网IP2，指定ip创建私网网关时设置，主备网关时为备ip，双活网关时为主ip2
+
+        :return: The access_private_ip_2 of this CreateVgwRequestBodyContent.
+        :rtype: str
+        """
+        return self._access_private_ip_2
+
+    @access_private_ip_2.setter
+    def access_private_ip_2(self, access_private_ip_2):
+        """Sets the access_private_ip_2 of this CreateVgwRequestBodyContent.
+
+        私网类型VPN网关的接入私网IP2，指定ip创建私网网关时设置，主备网关时为备ip，双活网关时为主ip2
+
+        :param access_private_ip_2: The access_private_ip_2 of this CreateVgwRequestBodyContent.
+        :type access_private_ip_2: str
+        """
+        self._access_private_ip_2 = access_private_ip_2
+
+    @property
     def network_type(self):
         """Gets the network_type of this CreateVgwRequestBodyContent.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :return: The network_type of this CreateVgwRequestBodyContent.
         :rtype: str
@@ -467,7 +482,7 @@ class CreateVgwRequestBodyContent:
     def network_type(self, network_type):
         """Sets the network_type of this CreateVgwRequestBodyContent.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :param network_type: The network_type of this CreateVgwRequestBodyContent.
         :type network_type: str
@@ -539,6 +554,28 @@ class CreateVgwRequestBodyContent:
         :type ha_mode: str
         """
         self._ha_mode = ha_mode
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateVgwRequestBodyContent.
+
+        标签
+
+        :return: The tags of this CreateVgwRequestBodyContent.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateVgwRequestBodyContent.
+
+        标签
+
+        :param tags: The tags of this CreateVgwRequestBodyContent.
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

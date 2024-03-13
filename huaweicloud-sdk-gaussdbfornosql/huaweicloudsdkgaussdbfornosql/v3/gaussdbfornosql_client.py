@@ -2707,6 +2707,83 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def list_jobs(self, request):
+        """查询任务列表和详情
+
+        查询任务列表和详情，默认查询任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListJobs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListJobsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListJobsResponse`
+        """
+        http_info = self._list_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_jobs_invoker(self, request):
+        http_info = self._list_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_lts_configs(self, request):
         """查询LTS日志配置信息
 
@@ -3702,6 +3779,73 @@ class GaussDBforNoSQLClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/volume",
             "request_type": request.__class__.__name__,
             "response_type": "ModifyVolumeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def offline_nodes(self, request):
+        """支持节点的开关机
+
+        当底层故障导致节点无法正常工作时，可以对该节点执行关机操作，关机后会由其他节点接管业务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for OfflineNodes
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.OfflineNodesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.OfflineNodesResponse`
+        """
+        http_info = self._offline_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def offline_nodes_invoker(self, request):
+        http_info = self._offline_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _offline_nodes_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "OfflineNodesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6479,6 +6623,73 @@ class GaussDBforNoSQLClient(Client):
         path_params = {}
         if 'config_id' in local_var_params:
             path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_databases(self, request):
+        """操作GeminDB实例数据库
+
+        操作GeminDB实例数据库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDatabases
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateDatabasesResponse`
+        """
+        http_info = self._update_databases_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_databases_invoker(self, request):
+        http_info = self._update_databases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_databases_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatabasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 

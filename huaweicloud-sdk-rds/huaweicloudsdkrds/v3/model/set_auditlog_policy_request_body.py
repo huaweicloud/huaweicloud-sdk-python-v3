@@ -18,15 +18,17 @@ class SetAuditlogPolicyRequestBody:
 
     openapi_types = {
         'keep_days': 'int',
-        'reserve_auditlogs': 'bool'
+        'reserve_auditlogs': 'bool',
+        'audit_types': 'list[str]'
     }
 
     attribute_map = {
         'keep_days': 'keep_days',
-        'reserve_auditlogs': 'reserve_auditlogs'
+        'reserve_auditlogs': 'reserve_auditlogs',
+        'audit_types': 'audit_types'
     }
 
-    def __init__(self, keep_days=None, reserve_auditlogs=None):
+    def __init__(self, keep_days=None, reserve_auditlogs=None, audit_types=None):
         """SetAuditlogPolicyRequestBody
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class SetAuditlogPolicyRequestBody:
         :type keep_days: int
         :param reserve_auditlogs: 仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，延迟删除已有的历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
         :type reserve_auditlogs: bool
+        :param audit_types: 审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+        :type audit_types: list[str]
         """
         
         
 
         self._keep_days = None
         self._reserve_auditlogs = None
+        self._audit_types = None
         self.discriminator = None
 
         self.keep_days = keep_days
         if reserve_auditlogs is not None:
             self.reserve_auditlogs = reserve_auditlogs
+        if audit_types is not None:
+            self.audit_types = audit_types
 
     @property
     def keep_days(self):
@@ -90,6 +97,28 @@ class SetAuditlogPolicyRequestBody:
         :type reserve_auditlogs: bool
         """
         self._reserve_auditlogs = reserve_auditlogs
+
+    @property
+    def audit_types(self):
+        """Gets the audit_types of this SetAuditlogPolicyRequestBody.
+
+        审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+
+        :return: The audit_types of this SetAuditlogPolicyRequestBody.
+        :rtype: list[str]
+        """
+        return self._audit_types
+
+    @audit_types.setter
+    def audit_types(self, audit_types):
+        """Sets the audit_types of this SetAuditlogPolicyRequestBody.
+
+        审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+
+        :param audit_types: The audit_types of this SetAuditlogPolicyRequestBody.
+        :type audit_types: list[str]
+        """
+        self._audit_types = audit_types
 
     def to_dict(self):
         """Returns the model properties as a dict"""

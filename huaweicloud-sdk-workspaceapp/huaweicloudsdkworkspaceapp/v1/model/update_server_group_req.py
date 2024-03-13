@@ -49,25 +49,25 @@ class UpdateServerGroupReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-空格组成，不能全为空格, 首位不为空 2. 长度范围1~64个字符
+        :param name: 服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
         :type name: str
-        :param description: 服务器组描述
+        :param description: 服务器组描述。
         :type description: str
         :param route_policy: 
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
         :param storage_mount_policy: 
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
-        :param image_id: 服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效
+        :param image_id: 服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效。
         :type image_id: str
-        :param image_product_id: 服务器组的镜像的productId
+        :param image_product_id: 服务器组的镜像的productId。
         :type image_product_id: str
         :param image_type: 
         :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         :param system_disk_type: 
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
-        :param system_disk_size: 磁盘容量，单位GB
+        :param system_disk_size: 磁盘容量，单位GB。
         :type system_disk_size: int
-        :param ou_name: 默认组织名称
+        :param ou_name: 默认组织名称。
         :type ou_name: str
         :param app_type: 
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -115,7 +115,7 @@ class UpdateServerGroupReq:
     def name(self):
         """Gets the name of this UpdateServerGroupReq.
 
-        服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-空格组成，不能全为空格, 首位不为空 2. 长度范围1~64个字符
+        服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
         :return: The name of this UpdateServerGroupReq.
         :rtype: str
@@ -126,7 +126,7 @@ class UpdateServerGroupReq:
     def name(self, name):
         """Sets the name of this UpdateServerGroupReq.
 
-        服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-空格组成，不能全为空格, 首位不为空 2. 长度范围1~64个字符
+        服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
         :param name: The name of this UpdateServerGroupReq.
         :type name: str
@@ -137,7 +137,7 @@ class UpdateServerGroupReq:
     def description(self):
         """Gets the description of this UpdateServerGroupReq.
 
-        服务器组描述
+        服务器组描述。
 
         :return: The description of this UpdateServerGroupReq.
         :rtype: str
@@ -148,7 +148,7 @@ class UpdateServerGroupReq:
     def description(self, description):
         """Sets the description of this UpdateServerGroupReq.
 
-        服务器组描述
+        服务器组描述。
 
         :param description: The description of this UpdateServerGroupReq.
         :type description: str
@@ -195,7 +195,7 @@ class UpdateServerGroupReq:
     def image_id(self):
         """Gets the image_id of this UpdateServerGroupReq.
 
-        服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效
+        服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效。
 
         :return: The image_id of this UpdateServerGroupReq.
         :rtype: str
@@ -206,7 +206,7 @@ class UpdateServerGroupReq:
     def image_id(self, image_id):
         """Sets the image_id of this UpdateServerGroupReq.
 
-        服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效
+        服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效。
 
         :param image_id: The image_id of this UpdateServerGroupReq.
         :type image_id: str
@@ -217,7 +217,7 @@ class UpdateServerGroupReq:
     def image_product_id(self):
         """Gets the image_product_id of this UpdateServerGroupReq.
 
-        服务器组的镜像的productId
+        服务器组的镜像的productId。
 
         :return: The image_product_id of this UpdateServerGroupReq.
         :rtype: str
@@ -228,7 +228,7 @@ class UpdateServerGroupReq:
     def image_product_id(self, image_product_id):
         """Sets the image_product_id of this UpdateServerGroupReq.
 
-        服务器组的镜像的productId
+        服务器组的镜像的productId。
 
         :param image_product_id: The image_product_id of this UpdateServerGroupReq.
         :type image_product_id: str
@@ -275,7 +275,7 @@ class UpdateServerGroupReq:
     def system_disk_size(self):
         """Gets the system_disk_size of this UpdateServerGroupReq.
 
-        磁盘容量，单位GB
+        磁盘容量，单位GB。
 
         :return: The system_disk_size of this UpdateServerGroupReq.
         :rtype: int
@@ -286,7 +286,7 @@ class UpdateServerGroupReq:
     def system_disk_size(self, system_disk_size):
         """Sets the system_disk_size of this UpdateServerGroupReq.
 
-        磁盘容量，单位GB
+        磁盘容量，单位GB。
 
         :param system_disk_size: The system_disk_size of this UpdateServerGroupReq.
         :type system_disk_size: int
@@ -297,7 +297,7 @@ class UpdateServerGroupReq:
     def ou_name(self):
         """Gets the ou_name of this UpdateServerGroupReq.
 
-        默认组织名称
+        默认组织名称。
 
         :return: The ou_name of this UpdateServerGroupReq.
         :rtype: str
@@ -308,7 +308,7 @@ class UpdateServerGroupReq:
     def ou_name(self, ou_name):
         """Sets the ou_name of this UpdateServerGroupReq.
 
-        默认组织名称
+        默认组织名称。
 
         :param ou_name: The ou_name of this UpdateServerGroupReq.
         :type ou_name: str

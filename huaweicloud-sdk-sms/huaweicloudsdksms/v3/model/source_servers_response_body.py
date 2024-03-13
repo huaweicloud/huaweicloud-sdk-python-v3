@@ -37,7 +37,8 @@ class SourceServersResponseBody:
         'totalsize': 'int',
         'last_visit_time': 'int',
         'migration_cycle': 'str',
-        'state_action_time': 'int'
+        'state_action_time': 'int',
+        'is_consistency_result_exist': 'bool'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class SourceServersResponseBody:
         'totalsize': 'totalsize',
         'last_visit_time': 'last_visit_time',
         'migration_cycle': 'migration_cycle',
-        'state_action_time': 'state_action_time'
+        'state_action_time': 'state_action_time',
+        'is_consistency_result_exist': 'is_consistency_result_exist'
     }
 
-    def __init__(self, id=None, ip=None, name=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, cpu_quantity=None, memory=None, current_task=None, checks=None, init_target_server=None, replicatesize=None, stage_action_time=None, totalsize=None, last_visit_time=None, migration_cycle=None, state_action_time=None):
+    def __init__(self, id=None, ip=None, name=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, cpu_quantity=None, memory=None, current_task=None, checks=None, init_target_server=None, replicatesize=None, stage_action_time=None, totalsize=None, last_visit_time=None, migration_cycle=None, state_action_time=None, is_consistency_result_exist=None):
         """SourceServersResponseBody
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class SourceServersResponseBody:
         :type migration_cycle: str
         :param state_action_time: 源端状态（state）上次发生变化的时间
         :type state_action_time: int
+        :param is_consistency_result_exist: 是否有一致性校验结果
+        :type is_consistency_result_exist: bool
         """
         
         
@@ -136,6 +140,7 @@ class SourceServersResponseBody:
         self._last_visit_time = None
         self._migration_cycle = None
         self._state_action_time = None
+        self._is_consistency_result_exist = None
         self.discriminator = None
 
         if id is not None:
@@ -180,6 +185,8 @@ class SourceServersResponseBody:
             self.migration_cycle = migration_cycle
         if state_action_time is not None:
             self.state_action_time = state_action_time
+        if is_consistency_result_exist is not None:
+            self.is_consistency_result_exist = is_consistency_result_exist
 
     @property
     def id(self):
@@ -634,6 +641,28 @@ class SourceServersResponseBody:
         :type state_action_time: int
         """
         self._state_action_time = state_action_time
+
+    @property
+    def is_consistency_result_exist(self):
+        """Gets the is_consistency_result_exist of this SourceServersResponseBody.
+
+        是否有一致性校验结果
+
+        :return: The is_consistency_result_exist of this SourceServersResponseBody.
+        :rtype: bool
+        """
+        return self._is_consistency_result_exist
+
+    @is_consistency_result_exist.setter
+    def is_consistency_result_exist(self, is_consistency_result_exist):
+        """Sets the is_consistency_result_exist of this SourceServersResponseBody.
+
+        是否有一致性校验结果
+
+        :param is_consistency_result_exist: The is_consistency_result_exist of this SourceServersResponseBody.
+        :type is_consistency_result_exist: bool
+        """
+        self._is_consistency_result_exist = is_consistency_result_exist
 
     def to_dict(self):
         """Returns the model properties as a dict"""

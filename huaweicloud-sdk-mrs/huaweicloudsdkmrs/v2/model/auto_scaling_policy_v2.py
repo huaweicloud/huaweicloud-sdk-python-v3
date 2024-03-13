@@ -19,7 +19,7 @@ class AutoScalingPolicyV2:
     openapi_types = {
         'node_group_name': 'str',
         'resource_pool_name': 'str',
-        'auto_scaling_policy': 'AutoScalingPolicy'
+        'auto_scaling_policy': 'AutoScalingPolicyInfo'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class AutoScalingPolicyV2:
 
         The model defined in huaweicloud sdk
 
-        :param node_group_name: 节点组名称。
+        :param node_group_name: 节点组名称。必填参数。如果resource_pool_name为default，则创建节点组维度的弹性伸缩策略。如果resource_pool_name不为default，则在该节点组下创建对应资源池维度的策略。
         :type node_group_name: str
-        :param resource_pool_name: 资源计划名称
+        :param resource_pool_name: 资源池名称。必填参数。当集群版本不支持按指定资源池进行弹性伸缩时，需要填写为default资源池。不为default时删除指定资源池维度的弹性伸缩策略。
         :type resource_pool_name: str
         :param auto_scaling_policy: 
-        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
+        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyInfo`
         """
         
         
@@ -48,8 +48,7 @@ class AutoScalingPolicyV2:
         self._auto_scaling_policy = None
         self.discriminator = None
 
-        if node_group_name is not None:
-            self.node_group_name = node_group_name
+        self.node_group_name = node_group_name
         self.resource_pool_name = resource_pool_name
         if auto_scaling_policy is not None:
             self.auto_scaling_policy = auto_scaling_policy
@@ -58,7 +57,7 @@ class AutoScalingPolicyV2:
     def node_group_name(self):
         """Gets the node_group_name of this AutoScalingPolicyV2.
 
-        节点组名称。
+        节点组名称。必填参数。如果resource_pool_name为default，则创建节点组维度的弹性伸缩策略。如果resource_pool_name不为default，则在该节点组下创建对应资源池维度的策略。
 
         :return: The node_group_name of this AutoScalingPolicyV2.
         :rtype: str
@@ -69,7 +68,7 @@ class AutoScalingPolicyV2:
     def node_group_name(self, node_group_name):
         """Sets the node_group_name of this AutoScalingPolicyV2.
 
-        节点组名称。
+        节点组名称。必填参数。如果resource_pool_name为default，则创建节点组维度的弹性伸缩策略。如果resource_pool_name不为default，则在该节点组下创建对应资源池维度的策略。
 
         :param node_group_name: The node_group_name of this AutoScalingPolicyV2.
         :type node_group_name: str
@@ -80,7 +79,7 @@ class AutoScalingPolicyV2:
     def resource_pool_name(self):
         """Gets the resource_pool_name of this AutoScalingPolicyV2.
 
-        资源计划名称
+        资源池名称。必填参数。当集群版本不支持按指定资源池进行弹性伸缩时，需要填写为default资源池。不为default时删除指定资源池维度的弹性伸缩策略。
 
         :return: The resource_pool_name of this AutoScalingPolicyV2.
         :rtype: str
@@ -91,7 +90,7 @@ class AutoScalingPolicyV2:
     def resource_pool_name(self, resource_pool_name):
         """Sets the resource_pool_name of this AutoScalingPolicyV2.
 
-        资源计划名称
+        资源池名称。必填参数。当集群版本不支持按指定资源池进行弹性伸缩时，需要填写为default资源池。不为default时删除指定资源池维度的弹性伸缩策略。
 
         :param resource_pool_name: The resource_pool_name of this AutoScalingPolicyV2.
         :type resource_pool_name: str
@@ -103,7 +102,7 @@ class AutoScalingPolicyV2:
         """Gets the auto_scaling_policy of this AutoScalingPolicyV2.
 
         :return: The auto_scaling_policy of this AutoScalingPolicyV2.
-        :rtype: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
+        :rtype: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyInfo`
         """
         return self._auto_scaling_policy
 
@@ -112,7 +111,7 @@ class AutoScalingPolicyV2:
         """Sets the auto_scaling_policy of this AutoScalingPolicyV2.
 
         :param auto_scaling_policy: The auto_scaling_policy of this AutoScalingPolicyV2.
-        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
+        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyInfo`
         """
         self._auto_scaling_policy = auto_scaling_policy
 

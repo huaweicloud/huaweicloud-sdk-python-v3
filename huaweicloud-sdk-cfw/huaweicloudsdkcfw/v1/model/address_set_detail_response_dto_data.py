@@ -20,6 +20,7 @@ class AddressSetDetailResponseDTOData:
         'id': 'str',
         'name': 'str',
         'description': 'str',
+        'address_set_type': 'int',
         'address_type': 'int'
     }
 
@@ -27,10 +28,11 @@ class AddressSetDetailResponseDTOData:
         'id': 'id',
         'name': 'name',
         'description': 'description',
+        'address_set_type': 'address_set_type',
         'address_type': 'address_type'
     }
 
-    def __init__(self, id=None, name=None, description=None, address_type=None):
+    def __init__(self, id=None, name=None, description=None, address_set_type=None, address_type=None):
         """AddressSetDetailResponseDTOData
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class AddressSetDetailResponseDTOData:
         :type name: str
         :param description: 地址组描述
         :type description: str
+        :param address_set_type: 地址组类型，0表示自定义地址组，1表示预定义地址组
+        :type address_set_type: int
         :param address_type: 地址类型0 ipv4,1 ipv6
         :type address_type: int
         """
@@ -50,6 +54,7 @@ class AddressSetDetailResponseDTOData:
         self._id = None
         self._name = None
         self._description = None
+        self._address_set_type = None
         self._address_type = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class AddressSetDetailResponseDTOData:
             self.name = name
         if description is not None:
             self.description = description
+        if address_set_type is not None:
+            self.address_set_type = address_set_type
         if address_type is not None:
             self.address_type = address_type
 
@@ -127,6 +134,28 @@ class AddressSetDetailResponseDTOData:
         :type description: str
         """
         self._description = description
+
+    @property
+    def address_set_type(self):
+        """Gets the address_set_type of this AddressSetDetailResponseDTOData.
+
+        地址组类型，0表示自定义地址组，1表示预定义地址组
+
+        :return: The address_set_type of this AddressSetDetailResponseDTOData.
+        :rtype: int
+        """
+        return self._address_set_type
+
+    @address_set_type.setter
+    def address_set_type(self, address_set_type):
+        """Sets the address_set_type of this AddressSetDetailResponseDTOData.
+
+        地址组类型，0表示自定义地址组，1表示预定义地址组
+
+        :param address_set_type: The address_set_type of this AddressSetDetailResponseDTOData.
+        :type address_set_type: int
+        """
+        self._address_set_type = address_set_type
 
     @property
     def address_type(self):

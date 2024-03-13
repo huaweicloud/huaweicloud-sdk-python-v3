@@ -31,7 +31,7 @@ class UpdateTsvi:
 
         The model defined in huaweicloud sdk
 
-        :param id: 服务器ID
+        :param id: 服务器ID。
         :type id: str
         :param enable: **⚠ 预留字段，不使用，是否启用虚拟IP功能与服务器组配置保持一致。 是否启用虚拟IP功能。 开关只在租户配置允许启用虚拟IP场景有效，否则忽略传值并设置为关闭。
         :type enable: bool
@@ -50,7 +50,7 @@ class UpdateTsvi:
     def id(self):
         """Gets the id of this UpdateTsvi.
 
-        服务器ID
+        服务器ID。
 
         :return: The id of this UpdateTsvi.
         :rtype: str
@@ -61,7 +61,7 @@ class UpdateTsvi:
     def id(self, id):
         """Sets the id of this UpdateTsvi.
 
-        服务器ID
+        服务器ID。
 
         :param id: The id of this UpdateTsvi.
         :type id: str

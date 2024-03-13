@@ -38,8 +38,7 @@ class BatchDeleteGroupReq:
         self._group_ids = None
         self.discriminator = None
 
-        if group_ids is not None:
-            self.group_ids = group_ids
+        self.group_ids = group_ids
 
     @property
     def group_ids(self):

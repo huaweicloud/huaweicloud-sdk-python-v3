@@ -17,47 +17,59 @@ class InteractionRuleInfo:
     sensitive_list = []
 
     openapi_types = {
+        'rule_index': 'str',
         'rule_name': 'str',
         'enabled': 'bool',
         'event_type': 'int',
         'hit_condition': 'HitCondition',
-        'trigger': 'TriggerProcess'
+        'trigger': 'TriggerProcess',
+        'review_config': 'ReviewConfig'
     }
 
     attribute_map = {
+        'rule_index': 'rule_index',
         'rule_name': 'rule_name',
         'enabled': 'enabled',
         'event_type': 'event_type',
         'hit_condition': 'hit_condition',
-        'trigger': 'trigger'
+        'trigger': 'trigger',
+        'review_config': 'review_config'
     }
 
-    def __init__(self, rule_name=None, enabled=None, event_type=None, hit_condition=None, trigger=None):
+    def __init__(self, rule_index=None, rule_name=None, enabled=None, event_type=None, hit_condition=None, trigger=None, review_config=None):
         """InteractionRuleInfo
 
         The model defined in huaweicloud sdk
 
+        :param rule_index: 规则索引
+        :type rule_index: str
         :param rule_name: 规则名称
         :type rule_name: str
         :param enabled: 是否启用
         :type enabled: bool
-        :param event_type: 事件类型
+        :param event_type: 事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
         :type event_type: int
         :param hit_condition: 
         :type hit_condition: :class:`huaweicloudsdkmetastudio.v1.HitCondition`
         :param trigger: 
         :type trigger: :class:`huaweicloudsdkmetastudio.v1.TriggerProcess`
+        :param review_config: 
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         """
         
         
 
+        self._rule_index = None
         self._rule_name = None
         self._enabled = None
         self._event_type = None
         self._hit_condition = None
         self._trigger = None
+        self._review_config = None
         self.discriminator = None
 
+        if rule_index is not None:
+            self.rule_index = rule_index
         if rule_name is not None:
             self.rule_name = rule_name
         if enabled is not None:
@@ -68,6 +80,30 @@ class InteractionRuleInfo:
             self.hit_condition = hit_condition
         if trigger is not None:
             self.trigger = trigger
+        if review_config is not None:
+            self.review_config = review_config
+
+    @property
+    def rule_index(self):
+        """Gets the rule_index of this InteractionRuleInfo.
+
+        规则索引
+
+        :return: The rule_index of this InteractionRuleInfo.
+        :rtype: str
+        """
+        return self._rule_index
+
+    @rule_index.setter
+    def rule_index(self, rule_index):
+        """Sets the rule_index of this InteractionRuleInfo.
+
+        规则索引
+
+        :param rule_index: The rule_index of this InteractionRuleInfo.
+        :type rule_index: str
+        """
+        self._rule_index = rule_index
 
     @property
     def rule_name(self):
@@ -117,7 +153,7 @@ class InteractionRuleInfo:
     def event_type(self):
         """Gets the event_type of this InteractionRuleInfo.
 
-        事件类型
+        事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
 
         :return: The event_type of this InteractionRuleInfo.
         :rtype: int
@@ -128,7 +164,7 @@ class InteractionRuleInfo:
     def event_type(self, event_type):
         """Sets the event_type of this InteractionRuleInfo.
 
-        事件类型
+        事件类型。 * 1：弹幕事件 * 2：用户入场事件 * 3：用户点赞事件 * 4：用户送礼事件 * 10: 预置话术事件
 
         :param event_type: The event_type of this InteractionRuleInfo.
         :type event_type: int
@@ -170,6 +206,24 @@ class InteractionRuleInfo:
         :type trigger: :class:`huaweicloudsdkmetastudio.v1.TriggerProcess`
         """
         self._trigger = trigger
+
+    @property
+    def review_config(self):
+        """Gets the review_config of this InteractionRuleInfo.
+
+        :return: The review_config of this InteractionRuleInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        return self._review_config
+
+    @review_config.setter
+    def review_config(self, review_config):
+        """Sets the review_config of this InteractionRuleInfo.
+
+        :param review_config: The review_config of this InteractionRuleInfo.
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        self._review_config = review_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

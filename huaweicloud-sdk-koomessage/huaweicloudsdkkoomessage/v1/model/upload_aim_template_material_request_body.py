@@ -43,7 +43,7 @@ class UploadAimTemplateMaterialRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。  - image：图片 - video：视频 - thumbnail：缩略图  &gt; 图片支持png、jpeg、jpg格式，最大2M; &gt; 视频支持格式mp4，大小不超过10M，建议时长不超过33S; &gt; 缩略图支持png、jpeg、jpg格式，大小不超过100K。 
+        :param resource_type: 资源类型。  - image：图片 - video：视频 - thumbnail：缩略图  &gt; 图片支持png、jpeg、jpg格式，最大2M; &gt; 视频支持格式mp4，大小不超过7M，建议时长不超过33S; &gt; 缩略图支持png、jpeg、jpg格式，大小不超过100K。 
         :type resource_type: str
         :param material_id: 素材ID。 &gt; resource_type&#x3D;thumbnail时，material_id必填，填写内容为上传视频资源返回的material_id字段的值。 
         :type material_id: str
@@ -92,7 +92,7 @@ class UploadAimTemplateMaterialRequestBody:
     def resource_type(self):
         """Gets the resource_type of this UploadAimTemplateMaterialRequestBody.
 
-        资源类型。  - image：图片 - video：视频 - thumbnail：缩略图  > 图片支持png、jpeg、jpg格式，最大2M; > 视频支持格式mp4，大小不超过10M，建议时长不超过33S; > 缩略图支持png、jpeg、jpg格式，大小不超过100K。 
+        资源类型。  - image：图片 - video：视频 - thumbnail：缩略图  > 图片支持png、jpeg、jpg格式，最大2M; > 视频支持格式mp4，大小不超过7M，建议时长不超过33S; > 缩略图支持png、jpeg、jpg格式，大小不超过100K。 
 
         :return: The resource_type of this UploadAimTemplateMaterialRequestBody.
         :rtype: str
@@ -103,7 +103,7 @@ class UploadAimTemplateMaterialRequestBody:
     def resource_type(self, resource_type):
         """Sets the resource_type of this UploadAimTemplateMaterialRequestBody.
 
-        资源类型。  - image：图片 - video：视频 - thumbnail：缩略图  > 图片支持png、jpeg、jpg格式，最大2M; > 视频支持格式mp4，大小不超过10M，建议时长不超过33S; > 缩略图支持png、jpeg、jpg格式，大小不超过100K。 
+        资源类型。  - image：图片 - video：视频 - thumbnail：缩略图  > 图片支持png、jpeg、jpg格式，最大2M; > 视频支持格式mp4，大小不超过7M，建议时长不超过33S; > 缩略图支持png、jpeg、jpg格式，大小不超过100K。 
 
         :param resource_type: The resource_type of this UploadAimTemplateMaterialRequestBody.
         :type resource_type: str

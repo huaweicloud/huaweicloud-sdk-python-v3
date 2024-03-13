@@ -18,15 +18,17 @@ class EIPSwitchStatusVO:
 
     openapi_types = {
         'object_id': 'str',
-        'fail_eip_id_list': 'list[str]'
+        'fail_eip_id_list': 'list[str]',
+        'id': 'str'
     }
 
     attribute_map = {
         'object_id': 'object_id',
-        'fail_eip_id_list': 'fail_eip_id_list'
+        'fail_eip_id_list': 'fail_eip_id_list',
+        'id': 'id'
     }
 
-    def __init__(self, object_id=None, fail_eip_id_list=None):
+    def __init__(self, object_id=None, fail_eip_id_list=None, id=None):
         """EIPSwitchStatusVO
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class EIPSwitchStatusVO:
         :type object_id: str
         :param fail_eip_id_list: 修改eip防护状态失败列表。
         :type fail_eip_id_list: list[str]
+        :param id: ID
+        :type id: str
         """
         
         
 
         self._object_id = None
         self._fail_eip_id_list = None
+        self._id = None
         self.discriminator = None
 
         if object_id is not None:
             self.object_id = object_id
         if fail_eip_id_list is not None:
             self.fail_eip_id_list = fail_eip_id_list
+        if id is not None:
+            self.id = id
 
     @property
     def object_id(self):
@@ -91,6 +98,28 @@ class EIPSwitchStatusVO:
         :type fail_eip_id_list: list[str]
         """
         self._fail_eip_id_list = fail_eip_id_list
+
+    @property
+    def id(self):
+        """Gets the id of this EIPSwitchStatusVO.
+
+        ID
+
+        :return: The id of this EIPSwitchStatusVO.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this EIPSwitchStatusVO.
+
+        ID
+
+        :param id: The id of this EIPSwitchStatusVO.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

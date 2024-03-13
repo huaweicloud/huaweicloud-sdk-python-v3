@@ -99,6 +99,73 @@ class SmnAsyncClient(Client):
 
         return http_info
 
+    def add_subscription_from_subscription_user_async(self, request):
+        """导入订阅
+
+        为指定的Topic添加订阅者，订阅者信息来源为订阅用户列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddSubscriptionFromSubscriptionUser
+        :type request: :class:`huaweicloudsdksmn.v2.AddSubscriptionFromSubscriptionUserRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.AddSubscriptionFromSubscriptionUserResponse`
+        """
+        http_info = self._add_subscription_from_subscription_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_subscription_from_subscription_user_async_invoker(self, request):
+        http_info = self._add_subscription_from_subscription_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_subscription_from_subscription_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions/from-subscription-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddSubscriptionFromSubscriptionUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_or_delete_resource_tags_async(self, request):
         """批量添加删除资源标签
 
@@ -140,6 +207,201 @@ class SmnAsyncClient(Client):
             path_params['resource_type'] = local_var_params['resource_type']
         if 'resource_id' in local_var_params:
             path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_subscriptions_filter_polices_async(self, request):
+        """批量创建订阅过滤策略
+
+        创建订阅者的消息过滤策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateSubscriptionsFilterPolices
+        :type request: :class:`huaweicloudsdksmn.v2.BatchCreateSubscriptionsFilterPolicesRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.BatchCreateSubscriptionsFilterPolicesResponse`
+        """
+        http_info = self._batch_create_subscriptions_filter_polices_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_subscriptions_filter_polices_async_invoker(self, request):
+        http_info = self._batch_create_subscriptions_filter_polices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_subscriptions_filter_polices_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/subscriptions/filter_polices",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSubscriptionsFilterPolicesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_subscriptions_filter_polices_async(self, request):
+        """批量删除订阅过滤策略
+
+        删除订阅者的消息过滤策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteSubscriptionsFilterPolices
+        :type request: :class:`huaweicloudsdksmn.v2.BatchDeleteSubscriptionsFilterPolicesRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.BatchDeleteSubscriptionsFilterPolicesResponse`
+        """
+        http_info = self._batch_delete_subscriptions_filter_polices_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_subscriptions_filter_polices_async_invoker(self, request):
+        http_info = self._batch_delete_subscriptions_filter_polices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_subscriptions_filter_polices_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/subscriptions/filter_polices",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSubscriptionsFilterPolicesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_update_subscriptions_filter_polices_async(self, request):
+        """批量更新订阅过滤策略
+
+        更新订阅者的消息过滤策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateSubscriptionsFilterPolices
+        :type request: :class:`huaweicloudsdksmn.v2.BatchUpdateSubscriptionsFilterPolicesRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.BatchUpdateSubscriptionsFilterPolicesResponse`
+        """
+        http_info = self._batch_update_subscriptions_filter_polices_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_subscriptions_filter_polices_async_invoker(self, request):
+        http_info = self._batch_update_subscriptions_filter_polices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_subscriptions_filter_polices_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/subscriptions/filter_polices",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateSubscriptionsFilterPolicesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -1348,6 +1610,8 @@ class SmnAsyncClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'endpoint' in local_var_params:
             query_params.append(('endpoint', local_var_params['endpoint']))
+        if 'fuzzy_remark' in local_var_params:
+            query_params.append(('fuzzy_remark', local_var_params['fuzzy_remark']))
 
         header_params = {}
 
@@ -1417,6 +1681,8 @@ class SmnAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'fuzzy_remark' in local_var_params:
+            query_params.append(('fuzzy_remark', local_var_params['fuzzy_remark']))
 
         header_params = {}
 
@@ -1624,6 +1890,8 @@ class SmnAsyncClient(Client):
             query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
         if 'topic_id' in local_var_params:
             query_params.append(('topic_id', local_var_params['topic_id']))
+        if 'fuzzy_display_name' in local_var_params:
+            query_params.append(('fuzzy_display_name', local_var_params['fuzzy_display_name']))
 
         header_params = {}
 
@@ -1777,6 +2045,73 @@ class SmnAsyncClient(Client):
 
         return http_info
 
+    def publish_http_detect_async(self, request):
+        """发布探测消息
+
+        基于主题发送http/https探测消息，探测当前http/https 终端是否可用，SMN出口是否能够正常访问该终端。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PublishHttpDetect
+        :type request: :class:`huaweicloudsdksmn.v2.PublishHttpDetectRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.PublishHttpDetectResponse`
+        """
+        http_info = self._publish_http_detect_http_info(request)
+        return self._call_api(**http_info)
+
+    def publish_http_detect_async_invoker(self, request):
+        http_info = self._publish_http_detect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_http_detect_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/detection",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishHttpDetectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def publish_message_async(self, request):
         """消息发布
 
@@ -1839,6 +2174,73 @@ class SmnAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_http_detect_result_async(self, request):
+        """获取http探测结果
+
+        根据http探测发送返回的task_id查询探测结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHttpDetectResult
+        :type request: :class:`huaweicloudsdksmn.v2.ShowHttpDetectResultRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ShowHttpDetectResultResponse`
+        """
+        http_info = self._show_http_detect_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_http_detect_result_async_invoker(self, request):
+        http_info = self._show_http_detect_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_http_detect_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/detection/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHttpDetectResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -2206,10 +2608,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateApplicationResponse`
         """
+        warnings.warn("Method 'create_application_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_application_http_info(request)
         return self._call_api(**http_info)
 
     def create_application_async_invoker(self, request):
+        warnings.warn("Method 'create_application_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_application_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2271,10 +2675,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteApplicationResponse`
         """
+        warnings.warn("Method 'delete_application_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_application_http_info(request)
         return self._call_api(**http_info)
 
     def delete_application_async_invoker(self, request):
+        warnings.warn("Method 'delete_application_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_application_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2336,10 +2742,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesResponse`
         """
+        warnings.warn("Method 'list_application_attributes_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_application_attributes_http_info(request)
         return self._call_api(**http_info)
 
     def list_application_attributes_async_invoker(self, request):
+        warnings.warn("Method 'list_application_attributes_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_application_attributes_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2401,10 +2809,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationsResponse`
         """
+        warnings.warn("Method 'list_applications_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_applications_http_info(request)
         return self._call_api(**http_info)
 
     def list_applications_async_invoker(self, request):
+        warnings.warn("Method 'list_applications_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_applications_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2472,10 +2882,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.PublishAppMessageResponse`
         """
+        warnings.warn("Method 'publish_app_message_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._publish_app_message_http_info(request)
         return self._call_api(**http_info)
 
     def publish_app_message_async_invoker(self, request):
+        warnings.warn("Method 'publish_app_message_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._publish_app_message_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2539,10 +2951,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationResponse`
         """
+        warnings.warn("Method 'update_application_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_application_http_info(request)
         return self._call_api(**http_info)
 
     def update_application_async_invoker(self, request):
+        warnings.warn("Method 'update_application_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_application_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2606,10 +3020,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointResponse`
         """
+        warnings.warn("Method 'create_application_endpoint_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_application_endpoint_http_info(request)
         return self._call_api(**http_info)
 
     def create_application_endpoint_async_invoker(self, request):
+        warnings.warn("Method 'create_application_endpoint_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_application_endpoint_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2673,10 +3089,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteApplicationEndpointResponse`
         """
+        warnings.warn("Method 'delete_application_endpoint_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_application_endpoint_http_info(request)
         return self._call_api(**http_info)
 
     def delete_application_endpoint_async_invoker(self, request):
+        warnings.warn("Method 'delete_application_endpoint_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_application_endpoint_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2738,10 +3156,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointAttributesResponse`
         """
+        warnings.warn("Method 'list_application_endpoint_attributes_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_application_endpoint_attributes_http_info(request)
         return self._call_api(**http_info)
 
     def list_application_endpoint_attributes_async_invoker(self, request):
+        warnings.warn("Method 'list_application_endpoint_attributes_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_application_endpoint_attributes_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2803,10 +3223,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointsResponse`
         """
+        warnings.warn("Method 'list_application_endpoints_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_application_endpoints_http_info(request)
         return self._call_api(**http_info)
 
     def list_application_endpoints_async_invoker(self, request):
+        warnings.warn("Method 'list_application_endpoints_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_application_endpoints_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2878,10 +3300,12 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointResponse`
         """
+        warnings.warn("Method 'update_application_endpoint_async' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_application_endpoint_http_info(request)
         return self._call_api(**http_info)
 
     def update_application_endpoint_async_invoker(self, request):
+        warnings.warn("Method 'update_application_endpoint_async_invoker' of SmnAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_application_endpoint_http_info(request)
         return AsyncInvoker(self, http_info)
 

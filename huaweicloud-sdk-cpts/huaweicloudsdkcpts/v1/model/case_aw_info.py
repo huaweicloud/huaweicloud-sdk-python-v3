@@ -51,7 +51,7 @@ class CaseAwInfo:
 
         The model defined in huaweicloud sdk
 
-        :param aw: aw信息Dto
+        :param aw: aw信息
         :type aw: list[:class:`huaweicloudsdkcpts.v1.AwInfoDTO`]
         :param aw_list: aw详细信息列表
         :type aw_list: list[:class:`huaweicloudsdkcpts.v1.DetailItem`]
@@ -122,7 +122,7 @@ class CaseAwInfo:
     def aw(self):
         """Gets the aw of this CaseAwInfo.
 
-        aw信息Dto
+        aw信息
 
         :return: The aw of this CaseAwInfo.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.AwInfoDTO`]
@@ -133,7 +133,7 @@ class CaseAwInfo:
     def aw(self, aw):
         """Sets the aw of this CaseAwInfo.
 
-        aw信息Dto
+        aw信息
 
         :param aw: The aw of this CaseAwInfo.
         :type aw: list[:class:`huaweicloudsdkcpts.v1.AwInfoDTO`]

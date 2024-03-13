@@ -37,15 +37,15 @@ class SharePersistentStorageClaim:
 
         The model defined in huaweicloud sdk
 
-        :param storage_claim_id: WKS存储目录声明ID
+        :param storage_claim_id: WKS存储目录声明ID。
         :type storage_claim_id: str
-        :param folder_path: 存储对象路径 注: path是对象在系统中的完整路径 例如系统中存在如下目录结构的数据. SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
+        :param folder_path: 存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
         :type folder_path: str
-        :param delimiter: 路径分隔符
+        :param delimiter: 路径分隔符。
         :type delimiter: str
         :param claim_mode: 
         :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
-        :param count: 共享目录的关联用户、用户组数量
+        :param count: 共享目录的关联用户、用户组数量。
         :type count: dict(str, int)
         """
         
@@ -73,7 +73,7 @@ class SharePersistentStorageClaim:
     def storage_claim_id(self):
         """Gets the storage_claim_id of this SharePersistentStorageClaim.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :return: The storage_claim_id of this SharePersistentStorageClaim.
         :rtype: str
@@ -84,7 +84,7 @@ class SharePersistentStorageClaim:
     def storage_claim_id(self, storage_claim_id):
         """Sets the storage_claim_id of this SharePersistentStorageClaim.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :param storage_claim_id: The storage_claim_id of this SharePersistentStorageClaim.
         :type storage_claim_id: str
@@ -95,7 +95,7 @@ class SharePersistentStorageClaim:
     def folder_path(self):
         """Gets the folder_path of this SharePersistentStorageClaim.
 
-        存储对象路径 注: path是对象在系统中的完整路径 例如系统中存在如下目录结构的数据. SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
+        存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
         :return: The folder_path of this SharePersistentStorageClaim.
         :rtype: str
@@ -106,7 +106,7 @@ class SharePersistentStorageClaim:
     def folder_path(self, folder_path):
         """Sets the folder_path of this SharePersistentStorageClaim.
 
-        存储对象路径 注: path是对象在系统中的完整路径 例如系统中存在如下目录结构的数据. SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
+        存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
         :param folder_path: The folder_path of this SharePersistentStorageClaim.
         :type folder_path: str
@@ -117,7 +117,7 @@ class SharePersistentStorageClaim:
     def delimiter(self):
         """Gets the delimiter of this SharePersistentStorageClaim.
 
-        路径分隔符
+        路径分隔符。
 
         :return: The delimiter of this SharePersistentStorageClaim.
         :rtype: str
@@ -128,7 +128,7 @@ class SharePersistentStorageClaim:
     def delimiter(self, delimiter):
         """Sets the delimiter of this SharePersistentStorageClaim.
 
-        路径分隔符
+        路径分隔符。
 
         :param delimiter: The delimiter of this SharePersistentStorageClaim.
         :type delimiter: str
@@ -157,7 +157,7 @@ class SharePersistentStorageClaim:
     def count(self):
         """Gets the count of this SharePersistentStorageClaim.
 
-        共享目录的关联用户、用户组数量
+        共享目录的关联用户、用户组数量。
 
         :return: The count of this SharePersistentStorageClaim.
         :rtype: dict(str, int)
@@ -168,7 +168,7 @@ class SharePersistentStorageClaim:
     def count(self, count):
         """Sets the count of this SharePersistentStorageClaim.
 
-        共享目录的关联用户、用户组数量
+        共享目录的关联用户、用户组数量。
 
         :param count: The count of this SharePersistentStorageClaim.
         :type count: dict(str, int)

@@ -37,7 +37,7 @@ class MetricConfig:
 
         :param name: 流量配置名称
         :type name: str
-        :param type: 流量配置类型
+        :param type: 流量配置类型，当前只支持预留实例使用率一种类型
         :type type: str
         :param threshold: 流量阈值
         :type threshold: int
@@ -88,7 +88,7 @@ class MetricConfig:
     def type(self):
         """Gets the type of this MetricConfig.
 
-        流量配置类型
+        流量配置类型，当前只支持预留实例使用率一种类型
 
         :return: The type of this MetricConfig.
         :rtype: str
@@ -99,7 +99,7 @@ class MetricConfig:
     def type(self, type):
         """Sets the type of this MetricConfig.
 
-        流量配置类型
+        流量配置类型，当前只支持预留实例使用率一种类型
 
         :param type: The type of this MetricConfig.
         :type type: str

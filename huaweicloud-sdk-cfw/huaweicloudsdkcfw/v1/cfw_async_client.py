@@ -862,6 +862,75 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def create_firewall_async(self, request):
+        """创建防火墙
+
+        创建防火墙
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFirewall
+        :type request: :class:`huaweicloudsdkcfw.v1.CreateFirewallRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CreateFirewallResponse`
+        """
+        http_info = self._create_firewall_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_firewall_async_invoker(self, request):
+        http_info = self._create_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_firewall_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/firewall",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFirewallResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+        if 'x_trace_id' in local_var_params:
+            header_params['X-Trace-Id'] = local_var_params['x_trace_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_address_item_async(self, request):
         """删除地址组成员
 
@@ -1186,6 +1255,71 @@ class CfwAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_firewall_async(self, request):
+        """删除防火墙
+
+        删除防火墙，仅按需生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteFirewall
+        :type request: :class:`huaweicloudsdkcfw.v1.DeleteFirewallRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.DeleteFirewallResponse`
+        """
+        http_info = self._delete_firewall_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_firewall_async_invoker(self, request):
+        http_info = self._delete_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_firewall_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/firewall/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFirewallResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1565,6 +1699,8 @@ class CfwAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'query_address_set_type' in local_var_params:
+            query_params.append(('query_address_set_type', local_var_params['query_address_set_type']))
 
         header_params = {}
 
@@ -1644,6 +1780,8 @@ class CfwAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'query_address_set_type' in local_var_params:
+            query_params.append(('query_address_set_type', local_var_params['query_address_set_type']))
 
         header_params = {}
 
@@ -2442,6 +2580,71 @@ class CfwAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'dst_host' in local_var_params:
             query_params.append(('dst_host', local_var_params['dst_host']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_job_async(self, request):
+        """获取CFW任务执行状态
+
+        获取CFW任务执行状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJob
+        :type request: :class:`huaweicloudsdkcfw.v1.ListJobRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListJobResponse`
+        """
+        http_info = self._list_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_job_async_invoker(self, request):
+        http_info = self._list_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
 
         header_params = {}
 

@@ -33,7 +33,7 @@ class ObsBucketInfoOwner:
 
         :param display_name: 显示名称
         :type display_name: str
-        :param id: 用户的DomainID（帐号ID）
+        :param id: 用户的DomainID，即帐号ID
         :type id: str
         """
         
@@ -74,7 +74,7 @@ class ObsBucketInfoOwner:
     def id(self):
         """Gets the id of this ObsBucketInfoOwner.
 
-        用户的DomainID（帐号ID）
+        用户的DomainID，即帐号ID
 
         :return: The id of this ObsBucketInfoOwner.
         :rtype: str
@@ -85,7 +85,7 @@ class ObsBucketInfoOwner:
     def id(self, id):
         """Sets the id of this ObsBucketInfoOwner.
 
-        用户的DomainID（帐号ID）
+        用户的DomainID，即帐号ID
 
         :param id: The id of this ObsBucketInfoOwner.
         :type id: str

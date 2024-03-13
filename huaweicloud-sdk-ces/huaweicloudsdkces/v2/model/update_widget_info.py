@@ -24,8 +24,8 @@ class UpdateWidgetInfo:
         'threshold_enabled': 'bool',
         'view': 'str',
         'metric_display_mode': 'str',
-        'properties': 'BaseWidgetInfoProperties',
-        'location': 'BaseWidgetInfoLocation',
+        'properties': 'UpdateWidgetInfoProperties',
+        'location': 'UpdateWidgetInfoLocation',
         'unit': 'str'
     }
 
@@ -62,9 +62,9 @@ class UpdateWidgetInfo:
         :param metric_display_mode: 指标展示类型，single 单指标展示，multiple 多指标展示
         :type metric_display_mode: str
         :param properties: 
-        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
         :param location: 
-        :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
+        :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
         :param unit: 单位
         :type unit: str
         """
@@ -83,8 +83,7 @@ class UpdateWidgetInfo:
         self._unit = None
         self.discriminator = None
 
-        if widget_id is not None:
-            self.widget_id = widget_id
+        self.widget_id = widget_id
         if metrics is not None:
             self.metrics = metrics
         if title is not None:
@@ -263,7 +262,7 @@ class UpdateWidgetInfo:
         """Gets the properties of this UpdateWidgetInfo.
 
         :return: The properties of this UpdateWidgetInfo.
-        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
         """
         return self._properties
 
@@ -272,7 +271,7 @@ class UpdateWidgetInfo:
         """Sets the properties of this UpdateWidgetInfo.
 
         :param properties: The properties of this UpdateWidgetInfo.
-        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
         """
         self._properties = properties
 
@@ -281,7 +280,7 @@ class UpdateWidgetInfo:
         """Gets the location of this UpdateWidgetInfo.
 
         :return: The location of this UpdateWidgetInfo.
-        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
         """
         return self._location
 
@@ -290,7 +289,7 @@ class UpdateWidgetInfo:
         """Sets the location of this UpdateWidgetInfo.
 
         :param location: The location of this UpdateWidgetInfo.
-        :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
+        :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
         """
         self._location = location
 

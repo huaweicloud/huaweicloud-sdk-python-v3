@@ -20,13 +20,17 @@ class RecycleInstancesDetailResult:
         'id': 'str',
         'name': 'str',
         'ha_mode': 'str',
+        'engine_name': 'str',
         'engine_version': 'str',
         'pay_model': 'str',
         'created_at': 'str',
         'deleted_at': 'str',
         'volume_type': 'str',
+        'volume_size': 'str',
         'data_vip': 'str',
         'enterprise_project_id': 'str',
+        'enterprise_project_name': 'str',
+        'backup_level': 'str',
         'recycle_backup_id': 'str',
         'recycle_status': 'str',
         'mode': 'str'
@@ -36,19 +40,23 @@ class RecycleInstancesDetailResult:
         'id': 'id',
         'name': 'name',
         'ha_mode': 'ha_mode',
+        'engine_name': 'engine_name',
         'engine_version': 'engine_version',
         'pay_model': 'pay_model',
         'created_at': 'created_at',
         'deleted_at': 'deleted_at',
         'volume_type': 'volume_type',
+        'volume_size': 'volume_size',
         'data_vip': 'data_vip',
         'enterprise_project_id': 'enterprise_project_id',
+        'enterprise_project_name': 'enterprise_project_name',
+        'backup_level': 'backup_level',
         'recycle_backup_id': 'recycle_backup_id',
         'recycle_status': 'recycle_status',
         'mode': 'mode'
     }
 
-    def __init__(self, id=None, name=None, ha_mode=None, engine_version=None, pay_model=None, created_at=None, deleted_at=None, volume_type=None, data_vip=None, enterprise_project_id=None, recycle_backup_id=None, recycle_status=None, mode=None):
+    def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, created_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, enterprise_project_id=None, enterprise_project_name=None, backup_level=None, recycle_backup_id=None, recycle_status=None, mode=None):
         """RecycleInstancesDetailResult
 
         The model defined in huaweicloud sdk
@@ -59,6 +67,8 @@ class RecycleInstancesDetailResult:
         :type name: str
         :param ha_mode: 部署形态。
         :type ha_mode: str
+        :param engine_name: 引擎名称
+        :type engine_name: str
         :param engine_version: 引擎版本号。
         :type engine_version: str
         :param pay_model: 计费模式（0：按需计费；1：包年/包月）。
@@ -69,10 +79,16 @@ class RecycleInstancesDetailResult:
         :type deleted_at: str
         :param volume_type: 磁盘类型。（SAS：high；SSD：ultrahigh；ESSD：essd）。
         :type volume_type: str
+        :param volume_size: 磁盘大小
+        :type volume_size: str
         :param data_vip: 数据vip。
         :type data_vip: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param enterprise_project_name: 企业项目名称
+        :type enterprise_project_name: str
+        :param backup_level: 备份级别
+        :type backup_level: str
         :param recycle_backup_id: 备份ID。（指删除实例时产生备份信息中的备份ID）。
         :type recycle_backup_id: str
         :param recycle_status: 回收站备份状态。（Running：运行中；Active：有效的）。
@@ -86,13 +102,17 @@ class RecycleInstancesDetailResult:
         self._id = None
         self._name = None
         self._ha_mode = None
+        self._engine_name = None
         self._engine_version = None
         self._pay_model = None
         self._created_at = None
         self._deleted_at = None
         self._volume_type = None
+        self._volume_size = None
         self._data_vip = None
         self._enterprise_project_id = None
+        self._enterprise_project_name = None
+        self._backup_level = None
         self._recycle_backup_id = None
         self._recycle_status = None
         self._mode = None
@@ -101,13 +121,21 @@ class RecycleInstancesDetailResult:
         self.id = id
         self.name = name
         self.ha_mode = ha_mode
+        if engine_name is not None:
+            self.engine_name = engine_name
         self.engine_version = engine_version
         self.pay_model = pay_model
         self.created_at = created_at
         self.deleted_at = deleted_at
         self.volume_type = volume_type
+        if volume_size is not None:
+            self.volume_size = volume_size
         self.data_vip = data_vip
         self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_name is not None:
+            self.enterprise_project_name = enterprise_project_name
+        if backup_level is not None:
+            self.backup_level = backup_level
         self.recycle_backup_id = recycle_backup_id
         self.recycle_status = recycle_status
         self.mode = mode
@@ -177,6 +205,28 @@ class RecycleInstancesDetailResult:
         :type ha_mode: str
         """
         self._ha_mode = ha_mode
+
+    @property
+    def engine_name(self):
+        """Gets the engine_name of this RecycleInstancesDetailResult.
+
+        引擎名称
+
+        :return: The engine_name of this RecycleInstancesDetailResult.
+        :rtype: str
+        """
+        return self._engine_name
+
+    @engine_name.setter
+    def engine_name(self, engine_name):
+        """Sets the engine_name of this RecycleInstancesDetailResult.
+
+        引擎名称
+
+        :param engine_name: The engine_name of this RecycleInstancesDetailResult.
+        :type engine_name: str
+        """
+        self._engine_name = engine_name
 
     @property
     def engine_version(self):
@@ -289,6 +339,28 @@ class RecycleInstancesDetailResult:
         self._volume_type = volume_type
 
     @property
+    def volume_size(self):
+        """Gets the volume_size of this RecycleInstancesDetailResult.
+
+        磁盘大小
+
+        :return: The volume_size of this RecycleInstancesDetailResult.
+        :rtype: str
+        """
+        return self._volume_size
+
+    @volume_size.setter
+    def volume_size(self, volume_size):
+        """Sets the volume_size of this RecycleInstancesDetailResult.
+
+        磁盘大小
+
+        :param volume_size: The volume_size of this RecycleInstancesDetailResult.
+        :type volume_size: str
+        """
+        self._volume_size = volume_size
+
+    @property
     def data_vip(self):
         """Gets the data_vip of this RecycleInstancesDetailResult.
 
@@ -331,6 +403,50 @@ class RecycleInstancesDetailResult:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enterprise_project_name(self):
+        """Gets the enterprise_project_name of this RecycleInstancesDetailResult.
+
+        企业项目名称
+
+        :return: The enterprise_project_name of this RecycleInstancesDetailResult.
+        :rtype: str
+        """
+        return self._enterprise_project_name
+
+    @enterprise_project_name.setter
+    def enterprise_project_name(self, enterprise_project_name):
+        """Sets the enterprise_project_name of this RecycleInstancesDetailResult.
+
+        企业项目名称
+
+        :param enterprise_project_name: The enterprise_project_name of this RecycleInstancesDetailResult.
+        :type enterprise_project_name: str
+        """
+        self._enterprise_project_name = enterprise_project_name
+
+    @property
+    def backup_level(self):
+        """Gets the backup_level of this RecycleInstancesDetailResult.
+
+        备份级别
+
+        :return: The backup_level of this RecycleInstancesDetailResult.
+        :rtype: str
+        """
+        return self._backup_level
+
+    @backup_level.setter
+    def backup_level(self, backup_level):
+        """Sets the backup_level of this RecycleInstancesDetailResult.
+
+        备份级别
+
+        :param backup_level: The backup_level of this RecycleInstancesDetailResult.
+        :type backup_level: str
+        """
+        self._backup_level = backup_level
 
     @property
     def recycle_backup_id(self):

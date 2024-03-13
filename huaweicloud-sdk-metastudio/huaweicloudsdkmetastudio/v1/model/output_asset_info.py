@@ -41,7 +41,7 @@ class OutputAssetInfo:
         :type asset_name: str
         :param cover_url: 视频封面URL。
         :type cover_url: str
-        :param preview_video_url: 预览视频下载URL。URL有效期24小时。 &gt; * 分数数字人视频制作不支持预览。
+        :param preview_video_url: 预览视频下载URL。URL有效期24小时。 &gt; * 分身数字人视频制作不支持预览。
         :type preview_video_url: str
         """
         
@@ -130,7 +130,7 @@ class OutputAssetInfo:
     def preview_video_url(self):
         """Gets the preview_video_url of this OutputAssetInfo.
 
-        预览视频下载URL。URL有效期24小时。 > * 分数数字人视频制作不支持预览。
+        预览视频下载URL。URL有效期24小时。 > * 分身数字人视频制作不支持预览。
 
         :return: The preview_video_url of this OutputAssetInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class OutputAssetInfo:
     def preview_video_url(self, preview_video_url):
         """Sets the preview_video_url of this OutputAssetInfo.
 
-        预览视频下载URL。URL有效期24小时。 > * 分数数字人视频制作不支持预览。
+        预览视频下载URL。URL有效期24小时。 > * 分身数字人视频制作不支持预览。
 
         :param preview_video_url: The preview_video_url of this OutputAssetInfo.
         :type preview_video_url: str

@@ -20,7 +20,7 @@ class IndicatorListSearchRequest:
         'ids': 'list[str]',
         'name': 'str',
         'dataclass_id': 'str',
-        'condition': 'str',
+        'condition': 'DataobjectSearchCondition',
         'offset': 'int',
         'limit': 'int',
         'sort_by': 'str',
@@ -51,17 +51,17 @@ class IndicatorListSearchRequest:
         :type name: str
         :param dataclass_id: 数据类ID
         :type dataclass_id: str
-        :param condition: 查询条件
-        :type condition: str
+        :param condition: 
+        :type condition: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
         :param offset: request offset, from 0
         :type offset: int
         :param limit: request limit size
         :type limit: int
         :param sort_by: sort by property, create_time.
         :type sort_by: str
-        :param from_date: 查询起始时间
+        :param from_date: 查询起始时间，例如：2024-01-20T00:00:00.000Z+0800
         :type from_date: str
-        :param to_date: 查询截止时间
+        :param to_date: 查询截止时间，例如：2024-01-26T23:59:59.999Z+0800
         :type to_date: str
         """
         
@@ -164,10 +164,8 @@ class IndicatorListSearchRequest:
     def condition(self):
         """Gets the condition of this IndicatorListSearchRequest.
 
-        查询条件
-
         :return: The condition of this IndicatorListSearchRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
         """
         return self._condition
 
@@ -175,10 +173,8 @@ class IndicatorListSearchRequest:
     def condition(self, condition):
         """Sets the condition of this IndicatorListSearchRequest.
 
-        查询条件
-
         :param condition: The condition of this IndicatorListSearchRequest.
-        :type condition: str
+        :type condition: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
         """
         self._condition = condition
 
@@ -252,7 +248,7 @@ class IndicatorListSearchRequest:
     def from_date(self):
         """Gets the from_date of this IndicatorListSearchRequest.
 
-        查询起始时间
+        查询起始时间，例如：2024-01-20T00:00:00.000Z+0800
 
         :return: The from_date of this IndicatorListSearchRequest.
         :rtype: str
@@ -263,7 +259,7 @@ class IndicatorListSearchRequest:
     def from_date(self, from_date):
         """Sets the from_date of this IndicatorListSearchRequest.
 
-        查询起始时间
+        查询起始时间，例如：2024-01-20T00:00:00.000Z+0800
 
         :param from_date: The from_date of this IndicatorListSearchRequest.
         :type from_date: str
@@ -274,7 +270,7 @@ class IndicatorListSearchRequest:
     def to_date(self):
         """Gets the to_date of this IndicatorListSearchRequest.
 
-        查询截止时间
+        查询截止时间，例如：2024-01-26T23:59:59.999Z+0800
 
         :return: The to_date of this IndicatorListSearchRequest.
         :rtype: str
@@ -285,7 +281,7 @@ class IndicatorListSearchRequest:
     def to_date(self, to_date):
         """Sets the to_date of this IndicatorListSearchRequest.
 
-        查询截止时间
+        查询截止时间，例如：2024-01-26T23:59:59.999Z+0800
 
         :param to_date: The to_date of this IndicatorListSearchRequest.
         :type to_date: str

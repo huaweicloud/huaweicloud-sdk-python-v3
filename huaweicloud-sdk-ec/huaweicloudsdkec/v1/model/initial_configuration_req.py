@@ -39,7 +39,8 @@ class InitialConfigurationReq:
         self._password = None
         self.discriminator = None
 
-        self.password = password
+        if password is not None:
+            self.password = password
 
     @property
     def password(self):

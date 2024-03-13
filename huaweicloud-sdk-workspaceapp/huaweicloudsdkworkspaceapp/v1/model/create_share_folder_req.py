@@ -29,7 +29,7 @@ class CreateShareFolderReq:
 
         The model defined in huaweicloud sdk
 
-        :param folder_name: - 仅支持创建单层级的文件夹 - 单个文件夹名称仅支持以下字符: 英文字母、数字、空格、下划线、中划线 - 名称不能超过32字符 - 不能为全空格或者以空格开头
+        :param folder_name: - 仅支持创建单层级的文件夹。 - 单个文件夹名称仅支持以下字符: 英文字母、数字、空格、下划线、中划线。 - 名称不能超过32字符。 - 不能为全空格或者以空格开头。
         :type folder_name: str
         """
         
@@ -45,7 +45,7 @@ class CreateShareFolderReq:
     def folder_name(self):
         """Gets the folder_name of this CreateShareFolderReq.
 
-        - 仅支持创建单层级的文件夹 - 单个文件夹名称仅支持以下字符: 英文字母、数字、空格、下划线、中划线 - 名称不能超过32字符 - 不能为全空格或者以空格开头
+        - 仅支持创建单层级的文件夹。 - 单个文件夹名称仅支持以下字符: 英文字母、数字、空格、下划线、中划线。 - 名称不能超过32字符。 - 不能为全空格或者以空格开头。
 
         :return: The folder_name of this CreateShareFolderReq.
         :rtype: str
@@ -56,7 +56,7 @@ class CreateShareFolderReq:
     def folder_name(self, folder_name):
         """Sets the folder_name of this CreateShareFolderReq.
 
-        - 仅支持创建单层级的文件夹 - 单个文件夹名称仅支持以下字符: 英文字母、数字、空格、下划线、中划线 - 名称不能超过32字符 - 不能为全空格或者以空格开头
+        - 仅支持创建单层级的文件夹。 - 单个文件夹名称仅支持以下字符: 英文字母、数字、空格、下划线、中划线。 - 名称不能超过32字符。 - 不能为全空格或者以空格开头。
 
         :param folder_name: The folder_name of this CreateShareFolderReq.
         :type folder_name: str

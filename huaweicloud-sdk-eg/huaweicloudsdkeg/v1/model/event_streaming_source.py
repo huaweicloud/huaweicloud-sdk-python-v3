@@ -18,21 +18,25 @@ class EventStreamingSource:
 
     openapi_types = {
         'source_kafka': 'SourceKafkaMQParameters',
+        'source_mobile_rocketmq': 'SourceMobileMQParameters',
         'name': 'str'
     }
 
     attribute_map = {
         'source_kafka': 'source_kafka',
+        'source_mobile_rocketmq': 'source_mobile_rocketmq',
         'name': 'name'
     }
 
-    def __init__(self, source_kafka=None, name=None):
+    def __init__(self, source_kafka=None, source_mobile_rocketmq=None, name=None):
         """EventStreamingSource
 
         The model defined in huaweicloud sdk
 
         :param source_kafka: 
         :type source_kafka: :class:`huaweicloudsdkeg.v1.SourceKafkaMQParameters`
+        :param source_mobile_rocketmq: 
+        :type source_mobile_rocketmq: :class:`huaweicloudsdkeg.v1.SourceMobileMQParameters`
         :param name: 事件源类型名称
         :type name: str
         """
@@ -40,11 +44,14 @@ class EventStreamingSource:
         
 
         self._source_kafka = None
+        self._source_mobile_rocketmq = None
         self._name = None
         self.discriminator = None
 
         if source_kafka is not None:
             self.source_kafka = source_kafka
+        if source_mobile_rocketmq is not None:
+            self.source_mobile_rocketmq = source_mobile_rocketmq
         if name is not None:
             self.name = name
 
@@ -65,6 +72,24 @@ class EventStreamingSource:
         :type source_kafka: :class:`huaweicloudsdkeg.v1.SourceKafkaMQParameters`
         """
         self._source_kafka = source_kafka
+
+    @property
+    def source_mobile_rocketmq(self):
+        """Gets the source_mobile_rocketmq of this EventStreamingSource.
+
+        :return: The source_mobile_rocketmq of this EventStreamingSource.
+        :rtype: :class:`huaweicloudsdkeg.v1.SourceMobileMQParameters`
+        """
+        return self._source_mobile_rocketmq
+
+    @source_mobile_rocketmq.setter
+    def source_mobile_rocketmq(self, source_mobile_rocketmq):
+        """Sets the source_mobile_rocketmq of this EventStreamingSource.
+
+        :param source_mobile_rocketmq: The source_mobile_rocketmq of this EventStreamingSource.
+        :type source_mobile_rocketmq: :class:`huaweicloudsdkeg.v1.SourceMobileMQParameters`
+        """
+        self._source_mobile_rocketmq = source_mobile_rocketmq
 
     @property
     def name(self):

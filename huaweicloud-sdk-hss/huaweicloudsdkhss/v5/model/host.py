@@ -33,6 +33,7 @@ class Host:
         'os_type': 'str',
         'os_bit': 'str',
         'detect_result': 'str',
+        'expire_time': 'int',
         'charging_mode': 'str',
         'resource_id': 'str',
         'outside_host': 'bool',
@@ -52,7 +53,8 @@ class Host:
         'upgrade_status': 'str',
         'upgrade_result_code': 'str',
         'upgradable': 'bool',
-        'open_time': 'int'
+        'open_time': 'int',
+        'protect_interrupt': 'bool'
     }
 
     attribute_map = {
@@ -72,6 +74,7 @@ class Host:
         'os_type': 'os_type',
         'os_bit': 'os_bit',
         'detect_result': 'detect_result',
+        'expire_time': 'expire_time',
         'charging_mode': 'charging_mode',
         'resource_id': 'resource_id',
         'outside_host': 'outside_host',
@@ -91,10 +94,11 @@ class Host:
         'upgrade_status': 'upgrade_status',
         'upgrade_result_code': 'upgrade_result_code',
         'upgradable': 'upgradable',
-        'open_time': 'open_time'
+        'open_time': 'open_time',
+        'protect_interrupt': 'protect_interrupt'
     }
 
-    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None, open_time=None):
+    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, expire_time=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None, open_time=None, protect_interrupt=None):
         """Host
 
         The model defined in huaweicloud sdk
@@ -131,6 +135,8 @@ class Host:
         :type os_bit: str
         :param detect_result: 云主机安全检测结果，包含如下4种。 - undetected ：未检测。 - clean ：无风险。 - risk ：有风险。 - scanning ：检测中。
         :type detect_result: str
+        :param expire_time: 试用版到期时间（-1表示非试用版配额，当值不为-1时为试用版本过期时间）
+        :type expire_time: int
         :param charging_mode: 收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
         :type charging_mode: str
         :param resource_id: 主机安全配额ID（UUID）
@@ -171,6 +177,8 @@ class Host:
         :type upgradable: bool
         :param open_time: 开启防护时间，采用时间戳，默认毫秒，
         :type open_time: int
+        :param protect_interrupt: 防护是否中断
+        :type protect_interrupt: bool
         """
         
         
@@ -191,6 +199,7 @@ class Host:
         self._os_type = None
         self._os_bit = None
         self._detect_result = None
+        self._expire_time = None
         self._charging_mode = None
         self._resource_id = None
         self._outside_host = None
@@ -211,6 +220,7 @@ class Host:
         self._upgrade_result_code = None
         self._upgradable = None
         self._open_time = None
+        self._protect_interrupt = None
         self.discriminator = None
 
         if host_name is not None:
@@ -245,6 +255,8 @@ class Host:
             self.os_bit = os_bit
         if detect_result is not None:
             self.detect_result = detect_result
+        if expire_time is not None:
+            self.expire_time = expire_time
         if charging_mode is not None:
             self.charging_mode = charging_mode
         if resource_id is not None:
@@ -285,6 +297,8 @@ class Host:
             self.upgradable = upgradable
         if open_time is not None:
             self.open_time = open_time
+        if protect_interrupt is not None:
+            self.protect_interrupt = protect_interrupt
 
     @property
     def host_name(self):
@@ -637,6 +651,28 @@ class Host:
         :type detect_result: str
         """
         self._detect_result = detect_result
+
+    @property
+    def expire_time(self):
+        """Gets the expire_time of this Host.
+
+        试用版到期时间（-1表示非试用版配额，当值不为-1时为试用版本过期时间）
+
+        :return: The expire_time of this Host.
+        :rtype: int
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        """Sets the expire_time of this Host.
+
+        试用版到期时间（-1表示非试用版配额，当值不为-1时为试用版本过期时间）
+
+        :param expire_time: The expire_time of this Host.
+        :type expire_time: int
+        """
+        self._expire_time = expire_time
 
     @property
     def charging_mode(self):
@@ -1077,6 +1113,28 @@ class Host:
         :type open_time: int
         """
         self._open_time = open_time
+
+    @property
+    def protect_interrupt(self):
+        """Gets the protect_interrupt of this Host.
+
+        防护是否中断
+
+        :return: The protect_interrupt of this Host.
+        :rtype: bool
+        """
+        return self._protect_interrupt
+
+    @protect_interrupt.setter
+    def protect_interrupt(self, protect_interrupt):
+        """Sets the protect_interrupt of this Host.
+
+        防护是否中断
+
+        :param protect_interrupt: The protect_interrupt of this Host.
+        :type protect_interrupt: bool
+        """
+        self._protect_interrupt = protect_interrupt
 
     def to_dict(self):
         """Returns the model properties as a dict"""

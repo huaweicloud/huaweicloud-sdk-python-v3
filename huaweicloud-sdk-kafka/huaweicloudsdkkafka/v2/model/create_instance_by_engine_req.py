@@ -99,15 +99,15 @@ class CreateInstanceByEngineReq:
         :type description: str
         :param engine: 消息引擎。取值填写为：kafka。
         :type engine: str
-        :param engine_version: 消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm)   - 2.7
+        :param engine_version: 消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt)   - 2.7
         :type engine_version: str
         :param broker_num: 代理个数。
         :type broker_num: int
-        :param storage_space: 消息存储空间，单位GB。   - Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。
+        :param storage_space: 消息存储空间，单位GB。   - Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。
         :type storage_space: int
         :param access_user: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type access_user: str
-        :param password: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :param password: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
         :type password: str
         :param vpc_id: 虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
         :type vpc_id: str
@@ -117,15 +117,15 @@ class CreateInstanceByEngineReq:
         :type subnet_id: str
         :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。  创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
         :type available_zones: list[str]
-        :param product_id: 产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        :param product_id: 产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
         :type product_id: str
-        :param kafka_manager_user: 表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        :param kafka_manager_user: 表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type kafka_manager_user: str
-        :param kafka_manager_password: 表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的两种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :param kafka_manager_password: 表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
         :type kafka_manager_password: str
-        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
+        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。
         :type maintain_begin: str
-        :param maintain_end: 维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
+        :param maintain_end: 维护时间窗结束时间，格式为HH:mm。
         :type maintain_end: str
         :param enable_publicip: 是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
         :type enable_publicip: bool
@@ -133,7 +133,7 @@ class CreateInstanceByEngineReq:
         :type publicip_id: str
         :param ssl_enable: 是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
         :type ssl_enable: bool
-        :param kafka_security_protocol: 开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        :param kafka_security_protocol: 开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
         :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可，支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
         :type sasl_enabled_mechanisms: list[str]
@@ -147,9 +147,9 @@ class CreateInstanceByEngineReq:
         :type connector_enable: bool
         :param enable_auto_topic: 是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
         :type enable_auto_topic: bool
-        :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:otc,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
+        :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
         :type storage_spec_code: str
-        :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
+        :param enterprise_project_id: 企业项目ID。若为企业项目账号，该参数必填。
         :type enterprise_project_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
@@ -324,7 +324,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self):
         """Gets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm)   - 2.7
+        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt)   - 2.7
 
         :return: The engine_version of this CreateInstanceByEngineReq.
         :rtype: str
@@ -335,7 +335,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm)   - 2.7
+        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt)   - 2.7
 
         :param engine_version: The engine_version of this CreateInstanceByEngineReq.
         :type engine_version: str
@@ -368,7 +368,7 @@ class CreateInstanceByEngineReq:
     def storage_space(self):
         """Gets the storage_space of this CreateInstanceByEngineReq.
 
-        消息存储空间，单位GB。   - Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。
+        消息存储空间，单位GB。   - Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。
 
         :return: The storage_space of this CreateInstanceByEngineReq.
         :rtype: int
@@ -379,7 +379,7 @@ class CreateInstanceByEngineReq:
     def storage_space(self, storage_space):
         """Sets the storage_space of this CreateInstanceByEngineReq.
 
-        消息存储空间，单位GB。   - Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb)[900000](tag:g42,tm,hk_g42,ctc,hk_tm,hws_eu)GB。
+        消息存储空间，单位GB。   - Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ [1500000](tag:hws,hws_hk,ocb,hws_ocb,ctc,dt,g42,hk_g42)[900000](tag:tm,hk_tm,hws_eu)GB。
 
         :param storage_space: The storage_space of this CreateInstanceByEngineReq.
         :type storage_space: int
@@ -412,7 +412,7 @@ class CreateInstanceByEngineReq:
     def password(self):
         """Gets the password of this CreateInstanceByEngineReq.
 
-        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :return: The password of this CreateInstanceByEngineReq.
         :rtype: str
@@ -423,7 +423,7 @@ class CreateInstanceByEngineReq:
     def password(self, password):
         """Sets the password of this CreateInstanceByEngineReq.
 
-        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :param password: The password of this CreateInstanceByEngineReq.
         :type password: str
@@ -522,7 +522,7 @@ class CreateInstanceByEngineReq:
     def product_id(self):
         """Gets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
 
         :return: The product_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -533,7 +533,7 @@ class CreateInstanceByEngineReq:
     def product_id(self, product_id):
         """Sets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
 
         :param product_id: The product_id of this CreateInstanceByEngineReq.
         :type product_id: str
@@ -544,7 +544,7 @@ class CreateInstanceByEngineReq:
     def kafka_manager_user(self):
         """Gets the kafka_manager_user of this CreateInstanceByEngineReq.
 
-        表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
         :return: The kafka_manager_user of this CreateInstanceByEngineReq.
         :rtype: str
@@ -555,7 +555,7 @@ class CreateInstanceByEngineReq:
     def kafka_manager_user(self, kafka_manager_user):
         """Sets the kafka_manager_user of this CreateInstanceByEngineReq.
 
-        表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
         :param kafka_manager_user: The kafka_manager_user of this CreateInstanceByEngineReq.
         :type kafka_manager_user: str
@@ -566,7 +566,7 @@ class CreateInstanceByEngineReq:
     def kafka_manager_password(self):
         """Gets the kafka_manager_password of this CreateInstanceByEngineReq.
 
-        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的两种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :return: The kafka_manager_password of this CreateInstanceByEngineReq.
         :rtype: str
@@ -577,7 +577,7 @@ class CreateInstanceByEngineReq:
     def kafka_manager_password(self, kafka_manager_password):
         """Sets the kafka_manager_password of this CreateInstanceByEngineReq.
 
-        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的两种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :param kafka_manager_password: The kafka_manager_password of this CreateInstanceByEngineReq.
         :type kafka_manager_password: str
@@ -588,7 +588,7 @@ class CreateInstanceByEngineReq:
     def maintain_begin(self):
         """Gets the maintain_begin of this CreateInstanceByEngineReq.
 
-        维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
+        维护时间窗开始时间，格式为HH:mm。
 
         :return: The maintain_begin of this CreateInstanceByEngineReq.
         :rtype: str
@@ -599,7 +599,7 @@ class CreateInstanceByEngineReq:
     def maintain_begin(self, maintain_begin):
         """Sets the maintain_begin of this CreateInstanceByEngineReq.
 
-        维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
+        维护时间窗开始时间，格式为HH:mm。
 
         :param maintain_begin: The maintain_begin of this CreateInstanceByEngineReq.
         :type maintain_begin: str
@@ -610,7 +610,7 @@ class CreateInstanceByEngineReq:
     def maintain_end(self):
         """Gets the maintain_end of this CreateInstanceByEngineReq.
 
-        维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
+        维护时间窗结束时间，格式为HH:mm。
 
         :return: The maintain_end of this CreateInstanceByEngineReq.
         :rtype: str
@@ -621,7 +621,7 @@ class CreateInstanceByEngineReq:
     def maintain_end(self, maintain_end):
         """Sets the maintain_end of this CreateInstanceByEngineReq.
 
-        维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
+        维护时间窗结束时间，格式为HH:mm。
 
         :param maintain_end: The maintain_end of this CreateInstanceByEngineReq.
         :type maintain_end: str
@@ -698,7 +698,7 @@ class CreateInstanceByEngineReq:
     def kafka_security_protocol(self):
         """Gets the kafka_security_protocol of this CreateInstanceByEngineReq.
 
-        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
 
         :return: The kafka_security_protocol of this CreateInstanceByEngineReq.
         :rtype: str
@@ -709,7 +709,7 @@ class CreateInstanceByEngineReq:
     def kafka_security_protocol(self, kafka_security_protocol):
         """Sets the kafka_security_protocol of this CreateInstanceByEngineReq.
 
-        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
 
         :param kafka_security_protocol: The kafka_security_protocol of this CreateInstanceByEngineReq.
         :type kafka_security_protocol: str
@@ -852,7 +852,7 @@ class CreateInstanceByEngineReq:
     def storage_spec_code(self):
         """Gets the storage_spec_code of this CreateInstanceByEngineReq.
 
-        存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:otc,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
+        存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
 
         :return: The storage_spec_code of this CreateInstanceByEngineReq.
         :rtype: str
@@ -863,7 +863,7 @@ class CreateInstanceByEngineReq:
     def storage_spec_code(self, storage_spec_code):
         """Sets the storage_spec_code of this CreateInstanceByEngineReq.
 
-        存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:otc,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
+        存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
 
         :param storage_spec_code: The storage_spec_code of this CreateInstanceByEngineReq.
         :type storage_spec_code: str
@@ -874,7 +874,7 @@ class CreateInstanceByEngineReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateInstanceByEngineReq.
 
-        企业项目ID。若为企业项目帐号，该参数必填。
+        企业项目ID。若为企业项目账号，该参数必填。
 
         :return: The enterprise_project_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -885,7 +885,7 @@ class CreateInstanceByEngineReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateInstanceByEngineReq.
 
-        企业项目ID。若为企业项目帐号，该参数必填。
+        企业项目ID。若为企业项目账号，该参数必填。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceByEngineReq.
         :type enterprise_project_id: str

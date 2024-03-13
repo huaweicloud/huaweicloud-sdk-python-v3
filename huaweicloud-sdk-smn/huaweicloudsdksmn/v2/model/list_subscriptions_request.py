@@ -21,7 +21,8 @@ class ListSubscriptionsRequest:
         'limit': 'int',
         'protocol': 'str',
         'status': 'int',
-        'endpoint': 'str'
+        'endpoint': 'str',
+        'fuzzy_remark': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListSubscriptionsRequest:
         'limit': 'limit',
         'protocol': 'protocol',
         'status': 'status',
-        'endpoint': 'endpoint'
+        'endpoint': 'endpoint',
+        'fuzzy_remark': 'fuzzy_remark'
     }
 
-    def __init__(self, offset=None, limit=None, protocol=None, status=None, endpoint=None):
+    def __init__(self, offset=None, limit=None, protocol=None, status=None, endpoint=None, fuzzy_remark=None):
         """ListSubscriptionsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListSubscriptionsRequest:
         :type status: int
         :param endpoint: 订阅终端。
         :type endpoint: str
+        :param fuzzy_remark: 检索的订阅备注字段，模糊匹配。最大长度限制为128个字节。
+        :type fuzzy_remark: str
         """
         
         
@@ -56,6 +60,7 @@ class ListSubscriptionsRequest:
         self._protocol = None
         self._status = None
         self._endpoint = None
+        self._fuzzy_remark = None
         self.discriminator = None
 
         if offset is not None:
@@ -68,6 +73,8 @@ class ListSubscriptionsRequest:
             self.status = status
         if endpoint is not None:
             self.endpoint = endpoint
+        if fuzzy_remark is not None:
+            self.fuzzy_remark = fuzzy_remark
 
     @property
     def offset(self):
@@ -178,6 +185,28 @@ class ListSubscriptionsRequest:
         :type endpoint: str
         """
         self._endpoint = endpoint
+
+    @property
+    def fuzzy_remark(self):
+        """Gets the fuzzy_remark of this ListSubscriptionsRequest.
+
+        检索的订阅备注字段，模糊匹配。最大长度限制为128个字节。
+
+        :return: The fuzzy_remark of this ListSubscriptionsRequest.
+        :rtype: str
+        """
+        return self._fuzzy_remark
+
+    @fuzzy_remark.setter
+    def fuzzy_remark(self, fuzzy_remark):
+        """Sets the fuzzy_remark of this ListSubscriptionsRequest.
+
+        检索的订阅备注字段，模糊匹配。最大长度限制为128个字节。
+
+        :param fuzzy_remark: The fuzzy_remark of this ListSubscriptionsRequest.
+        :type fuzzy_remark: str
+        """
+        self._fuzzy_remark = fuzzy_remark
 
     def to_dict(self):
         """Returns the model properties as a dict"""

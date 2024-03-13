@@ -29,7 +29,7 @@ class UploadAppIconRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param data: 应用图标,png格式,限制大小8KB
+        :param data: 应用图标，png格式，限制大小8KB。
         :type data: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -44,7 +44,7 @@ class UploadAppIconRequestBody:
     def data(self):
         """Gets the data of this UploadAppIconRequestBody.
 
-        应用图标,png格式,限制大小8KB
+        应用图标，png格式，限制大小8KB。
 
         :return: The data of this UploadAppIconRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -55,7 +55,7 @@ class UploadAppIconRequestBody:
     def data(self, data):
         """Sets the data of this UploadAppIconRequestBody.
 
-        应用图标,png格式,限制大小8KB
+        应用图标，png格式，限制大小8KB。
 
         :param data: The data of this UploadAppIconRequestBody.
         :type data: :class:`huaweicloudsdkcore.http.formdata.FormFile`

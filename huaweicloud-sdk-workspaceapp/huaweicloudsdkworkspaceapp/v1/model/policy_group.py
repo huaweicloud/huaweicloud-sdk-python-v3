@@ -43,21 +43,21 @@ class PolicyGroup:
 
         The model defined in huaweicloud sdk
 
-        :param id: 策略组的唯一标识
+        :param id: 策略组的唯一标识。
         :type id: str
-        :param name: 策略组名称
+        :param name: 策略组名称。
         :type name: str
-        :param priority: 优先级
+        :param priority: 优先级。
         :type priority: int
-        :param description: 服务器组描述
+        :param description: 服务器组描述。
         :type description: str
         :param targets: 应用对象列表。
         :type targets: list[:class:`huaweicloudsdkworkspaceapp.v1.Target`]
         :param policies: 
         :type policies: :class:`huaweicloudsdkworkspaceapp.v1.Policies`
-        :param create_time: 策略组创建时间
+        :param create_time: 策略组创建时间。
         :type create_time: datetime
-        :param update_time: 策略组更新时间
+        :param update_time: 策略组更新时间。
         :type update_time: datetime
         """
         
@@ -94,7 +94,7 @@ class PolicyGroup:
     def id(self):
         """Gets the id of this PolicyGroup.
 
-        策略组的唯一标识
+        策略组的唯一标识。
 
         :return: The id of this PolicyGroup.
         :rtype: str
@@ -105,7 +105,7 @@ class PolicyGroup:
     def id(self, id):
         """Sets the id of this PolicyGroup.
 
-        策略组的唯一标识
+        策略组的唯一标识。
 
         :param id: The id of this PolicyGroup.
         :type id: str
@@ -116,7 +116,7 @@ class PolicyGroup:
     def name(self):
         """Gets the name of this PolicyGroup.
 
-        策略组名称
+        策略组名称。
 
         :return: The name of this PolicyGroup.
         :rtype: str
@@ -127,7 +127,7 @@ class PolicyGroup:
     def name(self, name):
         """Sets the name of this PolicyGroup.
 
-        策略组名称
+        策略组名称。
 
         :param name: The name of this PolicyGroup.
         :type name: str
@@ -138,7 +138,7 @@ class PolicyGroup:
     def priority(self):
         """Gets the priority of this PolicyGroup.
 
-        优先级
+        优先级。
 
         :return: The priority of this PolicyGroup.
         :rtype: int
@@ -149,7 +149,7 @@ class PolicyGroup:
     def priority(self, priority):
         """Sets the priority of this PolicyGroup.
 
-        优先级
+        优先级。
 
         :param priority: The priority of this PolicyGroup.
         :type priority: int
@@ -160,7 +160,7 @@ class PolicyGroup:
     def description(self):
         """Gets the description of this PolicyGroup.
 
-        服务器组描述
+        服务器组描述。
 
         :return: The description of this PolicyGroup.
         :rtype: str
@@ -171,7 +171,7 @@ class PolicyGroup:
     def description(self, description):
         """Sets the description of this PolicyGroup.
 
-        服务器组描述
+        服务器组描述。
 
         :param description: The description of this PolicyGroup.
         :type description: str
@@ -222,7 +222,7 @@ class PolicyGroup:
     def create_time(self):
         """Gets the create_time of this PolicyGroup.
 
-        策略组创建时间
+        策略组创建时间。
 
         :return: The create_time of this PolicyGroup.
         :rtype: datetime
@@ -233,7 +233,7 @@ class PolicyGroup:
     def create_time(self, create_time):
         """Sets the create_time of this PolicyGroup.
 
-        策略组创建时间
+        策略组创建时间。
 
         :param create_time: The create_time of this PolicyGroup.
         :type create_time: datetime
@@ -244,7 +244,7 @@ class PolicyGroup:
     def update_time(self):
         """Gets the update_time of this PolicyGroup.
 
-        策略组更新时间
+        策略组更新时间。
 
         :return: The update_time of this PolicyGroup.
         :rtype: datetime
@@ -255,7 +255,7 @@ class PolicyGroup:
     def update_time(self, update_time):
         """Sets the update_time of this PolicyGroup.
 
-        策略组更新时间
+        策略组更新时间。
 
         :param update_time: The update_time of this PolicyGroup.
         :type update_time: datetime

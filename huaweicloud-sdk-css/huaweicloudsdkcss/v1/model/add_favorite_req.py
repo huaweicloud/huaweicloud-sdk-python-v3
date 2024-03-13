@@ -31,7 +31,7 @@ class AddFavoriteReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 自定义模板名称。
+        :param name: 配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
         :type name: str
         :param template: 
         :type template: :class:`huaweicloudsdkcss.v1.AddFavoriteReqTemplate`
@@ -50,7 +50,7 @@ class AddFavoriteReq:
     def name(self):
         """Gets the name of this AddFavoriteReq.
 
-        自定义模板名称。
+        配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
         :return: The name of this AddFavoriteReq.
         :rtype: str
@@ -61,7 +61,7 @@ class AddFavoriteReq:
     def name(self, name):
         """Sets the name of this AddFavoriteReq.
 
-        自定义模板名称。
+        配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
         :param name: The name of this AddFavoriteReq.
         :type name: str

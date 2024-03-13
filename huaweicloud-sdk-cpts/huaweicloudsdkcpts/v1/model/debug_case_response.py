@@ -36,13 +36,13 @@ class DebugCaseResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
-        :param extend: extend
+        :param extend: 扩展信息
         :type extend: str
-        :param result: result
+        :param result: 结果
         :type result: list[:class:`huaweicloudsdkcpts.v1.DebugCaseResult`]
         """
         
@@ -67,7 +67,7 @@ class DebugCaseResponse(SdkResponse):
     def code(self):
         """Gets the code of this DebugCaseResponse.
 
-        code
+        响应码
 
         :return: The code of this DebugCaseResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class DebugCaseResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this DebugCaseResponse.
 
-        code
+        响应码
 
         :param code: The code of this DebugCaseResponse.
         :type code: str
@@ -89,7 +89,7 @@ class DebugCaseResponse(SdkResponse):
     def message(self):
         """Gets the message of this DebugCaseResponse.
 
-        message
+        响应消息
 
         :return: The message of this DebugCaseResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class DebugCaseResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this DebugCaseResponse.
 
-        message
+        响应消息
 
         :param message: The message of this DebugCaseResponse.
         :type message: str
@@ -111,7 +111,7 @@ class DebugCaseResponse(SdkResponse):
     def extend(self):
         """Gets the extend of this DebugCaseResponse.
 
-        extend
+        扩展信息
 
         :return: The extend of this DebugCaseResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class DebugCaseResponse(SdkResponse):
     def extend(self, extend):
         """Sets the extend of this DebugCaseResponse.
 
-        extend
+        扩展信息
 
         :param extend: The extend of this DebugCaseResponse.
         :type extend: str
@@ -133,7 +133,7 @@ class DebugCaseResponse(SdkResponse):
     def result(self):
         """Gets the result of this DebugCaseResponse.
 
-        result
+        结果
 
         :return: The result of this DebugCaseResponse.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.DebugCaseResult`]
@@ -144,7 +144,7 @@ class DebugCaseResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this DebugCaseResponse.
 
-        result
+        结果
 
         :param result: The result of this DebugCaseResponse.
         :type result: list[:class:`huaweicloudsdkcpts.v1.DebugCaseResult`]

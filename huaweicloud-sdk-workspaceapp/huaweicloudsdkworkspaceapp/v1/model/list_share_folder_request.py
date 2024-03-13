@@ -37,15 +37,15 @@ class ListShareFolderRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
-        :param storage_id: WKS存储ID
+        :param storage_id: WKS存储ID。
         :type storage_id: str
-        :param storage_claim_id: WKS存储目录声明ID
+        :param storage_claim_id: WKS存储目录声明ID。
         :type storage_claim_id: str
-        :param path: 查询名称需满足如下规则: 1. 可见字符+空格 2. 长度0~128个字符
+        :param path: 查询名称需满足如下规则: 1. 可见字符+空格。 2. 长度0~128个字符。
         :type path: str
         """
         
@@ -72,7 +72,7 @@ class ListShareFolderRequest:
     def offset(self):
         """Gets the offset of this ListShareFolderRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListShareFolderRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class ListShareFolderRequest:
     def offset(self, offset):
         """Sets the offset of this ListShareFolderRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListShareFolderRequest.
         :type offset: int
@@ -94,7 +94,7 @@ class ListShareFolderRequest:
     def limit(self):
         """Gets the limit of this ListShareFolderRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListShareFolderRequest.
         :rtype: int
@@ -105,7 +105,7 @@ class ListShareFolderRequest:
     def limit(self, limit):
         """Sets the limit of this ListShareFolderRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListShareFolderRequest.
         :type limit: int
@@ -116,7 +116,7 @@ class ListShareFolderRequest:
     def storage_id(self):
         """Gets the storage_id of this ListShareFolderRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :return: The storage_id of this ListShareFolderRequest.
         :rtype: str
@@ -127,7 +127,7 @@ class ListShareFolderRequest:
     def storage_id(self, storage_id):
         """Sets the storage_id of this ListShareFolderRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :param storage_id: The storage_id of this ListShareFolderRequest.
         :type storage_id: str
@@ -138,7 +138,7 @@ class ListShareFolderRequest:
     def storage_claim_id(self):
         """Gets the storage_claim_id of this ListShareFolderRequest.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :return: The storage_claim_id of this ListShareFolderRequest.
         :rtype: str
@@ -149,7 +149,7 @@ class ListShareFolderRequest:
     def storage_claim_id(self, storage_claim_id):
         """Sets the storage_claim_id of this ListShareFolderRequest.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :param storage_claim_id: The storage_claim_id of this ListShareFolderRequest.
         :type storage_claim_id: str
@@ -160,7 +160,7 @@ class ListShareFolderRequest:
     def path(self):
         """Gets the path of this ListShareFolderRequest.
 
-        查询名称需满足如下规则: 1. 可见字符+空格 2. 长度0~128个字符
+        查询名称需满足如下规则: 1. 可见字符+空格。 2. 长度0~128个字符。
 
         :return: The path of this ListShareFolderRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class ListShareFolderRequest:
     def path(self, path):
         """Sets the path of this ListShareFolderRequest.
 
-        查询名称需满足如下规则: 1. 可见字符+空格 2. 长度0~128个字符
+        查询名称需满足如下规则: 1. 可见字符+空格。 2. 长度0~128个字符。
 
         :param path: The path of this ListShareFolderRequest.
         :type path: str

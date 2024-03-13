@@ -51,7 +51,7 @@ class AIMResolveTask:
         :type generation_type: str
         :param domain: 自定义短链域名，由大小写字母和数字组成的二级域名。   &gt; 自定义短码即generation_type为2时，此参数为必填。域名需要提前报备，请联系KooMessage运营人员进行域名报备，域名区分生成短码方式，如报备的是标准生成短码方式，则在自定义生成短码时不能使用此域名。 
         :type domain: str
-        :param expiration_time: 失效时间（天）。aim_code_type为group时，取值范围为1~100；aim_code_type为individual个性化时，取值范围为1~7。  &gt; 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
+        :param expiration_time: 失效时间（天）。aim_code_type为group时，取值范围为1~180；aim_code_type为individual个性化时，取值范围为1~7。  &gt; 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
         :type expiration_time: int
         :param params: 短链解析详情列表。一次请求最多100个短链。  &gt; OPPO模板一次最多申请10个短链。 
         :type params: list[:class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskParam`]
@@ -192,7 +192,7 @@ class AIMResolveTask:
     def expiration_time(self):
         """Gets the expiration_time of this AIMResolveTask.
 
-        失效时间（天）。aim_code_type为group时，取值范围为1~100；aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
+        失效时间（天）。aim_code_type为group时，取值范围为1~180；aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
 
         :return: The expiration_time of this AIMResolveTask.
         :rtype: int
@@ -203,7 +203,7 @@ class AIMResolveTask:
     def expiration_time(self, expiration_time):
         """Sets the expiration_time of this AIMResolveTask.
 
-        失效时间（天）。aim_code_type为group时，取值范围为1~100；aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
+        失效时间（天）。aim_code_type为group时，取值范围为1~180；aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
 
         :param expiration_time: The expiration_time of this AIMResolveTask.
         :type expiration_time: int

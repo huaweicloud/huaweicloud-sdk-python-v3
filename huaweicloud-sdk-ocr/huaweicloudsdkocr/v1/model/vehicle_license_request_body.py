@@ -45,7 +45,7 @@ class VehicleLicenseRequestBody:
         :type side: str
         :param return_issuing_authority: 是否返回发证机关的开关，可选值包括： - true：返回发证机关 - false：不返回发证机关  &gt; 说明： - 如果无该参数，系统默认不返回发证机关。如果输入参数不是Boolean类型，则会报非法参数错误。 
         :type return_issuing_authority: bool
-        :param return_text_location: 识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。:: 
+        :param return_text_location: 识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
         :type return_text_location: bool
         """
         
@@ -161,7 +161,7 @@ class VehicleLicenseRequestBody:
     def return_text_location(self):
         """Gets the return_text_location of this VehicleLicenseRequestBody.
 
-        识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。:: 
+        识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
         :return: The return_text_location of this VehicleLicenseRequestBody.
         :rtype: bool
@@ -172,7 +172,7 @@ class VehicleLicenseRequestBody:
     def return_text_location(self, return_text_location):
         """Sets the return_text_location of this VehicleLicenseRequestBody.
 
-        识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。:: 
+        识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
         :param return_text_location: The return_text_location of this VehicleLicenseRequestBody.
         :type return_text_location: bool

@@ -67,25 +67,25 @@ class JobResourceInfo:
         :type resource_type: str
         :param resource_spec_code: 资源规格编码；新购、规格变更场景，必填。
         :type resource_spec_code: str
-        :param spec_type: 规格类型，运营上需要呈现和使用的一些规格属性，多个使用K:V格式； 比如带宽的共享/独享(shareable:true/false)，数据盘的系统盘/数据盘类型(root:true/false) 当前针对共享带宽、共享盘使用，必填。
+        :param spec_type: 规格类型，运营上需要呈现和使用的一些规格属性，多个使用K:V格式。 比如带宽的共享/独享(shareable:true/false)，数据盘的系统盘/数据盘类型(root:true/false)。 当前针对共享带宽、共享盘使用，必填。
         :type spec_type: dict(str, object)
-        :param spec_size: 某些规格属性大小：比如带宽大小、数据盘大小
+        :param spec_size: 某些规格属性大小：比如带宽大小、数据盘大小。
         :type spec_size: float
         :param measure: specSize的单位编码，比如GB、M，有specSize时，此字段必填。
         :type measure: int
-        :param processed_time: 处理时间
+        :param processed_time: 处理时间。
         :type processed_time: datetime
-        :param is_main_resource: 该resourceId是否是主资源（仅开通场景使用，其他场景为空） * &#x60;1&#x60; - 是 * &#x60;0&#x60; - 否
+        :param is_main_resource: 该resourceId是否是主资源（仅开通场景使用，其他场景为空）。 * &#x60;1&#x60; - 是 * &#x60;0&#x60; - 否
         :type is_main_resource: int
         :param main_resources: resourceId的主资源。  是挂载到/绑定到/依附到/包含于/关联到资源，比如IP的主资源‘云主机’、数据盘的主资源‘云主机’。  如果resourceId是依附在多个资源上，则有多个主资源，比如共享盘挂载到多个云主机上。  无关联主资源，则空，比如独立未挂载的数据盘。
         :type main_resources: list[:class:`huaweicloudsdkworkspaceapp.v1.RelativeResource`]
-        :param extend_params: expireTime：到期时间，域名注册服务使用。  UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ（2016-06-28T00:00:00Z）
+        :param extend_params: expireTime：到期时间，域名注册服务使用。  UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ（2016-06-28T00:00:00Z）。
         :type extend_params: str
-        :param old_resource_id: 仅针对ECS/BMS云服务的“切换操作系统”场景使用： 云主机切换操作系统的资源id会变化场景 填写变更前老的资源Id。资源Id未变化，无此字段
+        :param old_resource_id: 仅针对ECS/BMS云服务的“切换操作系统”场景使用。 云主机切换操作系统的资源id会变化场景。 填写变更前老的资源Id。资源Id未变化，无此字段。
         :type old_resource_id: str
-        :param old_cloud_service_type: 仅针对ECS/BMS云服务的“切换操作系统”场景使用：云主机切换操作系统的云服务类型编码会变化场景， 填写变更前老的云服务类型编码。云服务类型未变化，无此字段。
+        :param old_cloud_service_type: 仅针对ECS/BMS云服务的“切换操作系统”场景使用：云主机切换操作系统的云服务类型编码会变化场景。 填写变更前老的云服务类型编码。云服务类型未变化，无此字段。
         :type old_cloud_service_type: str
-        :param old_resource_type: 仅针对ECS/BMS云服务“切换操作系统”场景使用： 云主机切换操作系统的资源类型编码会变化场景， 填写变更前老的资源类型编码。资源类型未变化，无此字段
+        :param old_resource_type: 仅针对ECS/BMS云服务“切换操作系统”场景使用。 云主机切换操作系统的资源类型编码会变化场景。 填写变更前老的资源类型编码。资源类型未变化，无此字段。
         :type old_resource_type: str
         """
         
@@ -253,7 +253,7 @@ class JobResourceInfo:
     def spec_type(self):
         """Gets the spec_type of this JobResourceInfo.
 
-        规格类型，运营上需要呈现和使用的一些规格属性，多个使用K:V格式； 比如带宽的共享/独享(shareable:true/false)，数据盘的系统盘/数据盘类型(root:true/false) 当前针对共享带宽、共享盘使用，必填。
+        规格类型，运营上需要呈现和使用的一些规格属性，多个使用K:V格式。 比如带宽的共享/独享(shareable:true/false)，数据盘的系统盘/数据盘类型(root:true/false)。 当前针对共享带宽、共享盘使用，必填。
 
         :return: The spec_type of this JobResourceInfo.
         :rtype: dict(str, object)
@@ -264,7 +264,7 @@ class JobResourceInfo:
     def spec_type(self, spec_type):
         """Sets the spec_type of this JobResourceInfo.
 
-        规格类型，运营上需要呈现和使用的一些规格属性，多个使用K:V格式； 比如带宽的共享/独享(shareable:true/false)，数据盘的系统盘/数据盘类型(root:true/false) 当前针对共享带宽、共享盘使用，必填。
+        规格类型，运营上需要呈现和使用的一些规格属性，多个使用K:V格式。 比如带宽的共享/独享(shareable:true/false)，数据盘的系统盘/数据盘类型(root:true/false)。 当前针对共享带宽、共享盘使用，必填。
 
         :param spec_type: The spec_type of this JobResourceInfo.
         :type spec_type: dict(str, object)
@@ -275,7 +275,7 @@ class JobResourceInfo:
     def spec_size(self):
         """Gets the spec_size of this JobResourceInfo.
 
-        某些规格属性大小：比如带宽大小、数据盘大小
+        某些规格属性大小：比如带宽大小、数据盘大小。
 
         :return: The spec_size of this JobResourceInfo.
         :rtype: float
@@ -286,7 +286,7 @@ class JobResourceInfo:
     def spec_size(self, spec_size):
         """Sets the spec_size of this JobResourceInfo.
 
-        某些规格属性大小：比如带宽大小、数据盘大小
+        某些规格属性大小：比如带宽大小、数据盘大小。
 
         :param spec_size: The spec_size of this JobResourceInfo.
         :type spec_size: float
@@ -319,7 +319,7 @@ class JobResourceInfo:
     def processed_time(self):
         """Gets the processed_time of this JobResourceInfo.
 
-        处理时间
+        处理时间。
 
         :return: The processed_time of this JobResourceInfo.
         :rtype: datetime
@@ -330,7 +330,7 @@ class JobResourceInfo:
     def processed_time(self, processed_time):
         """Sets the processed_time of this JobResourceInfo.
 
-        处理时间
+        处理时间。
 
         :param processed_time: The processed_time of this JobResourceInfo.
         :type processed_time: datetime
@@ -341,7 +341,7 @@ class JobResourceInfo:
     def is_main_resource(self):
         """Gets the is_main_resource of this JobResourceInfo.
 
-        该resourceId是否是主资源（仅开通场景使用，其他场景为空） * `1` - 是 * `0` - 否
+        该resourceId是否是主资源（仅开通场景使用，其他场景为空）。 * `1` - 是 * `0` - 否
 
         :return: The is_main_resource of this JobResourceInfo.
         :rtype: int
@@ -352,7 +352,7 @@ class JobResourceInfo:
     def is_main_resource(self, is_main_resource):
         """Sets the is_main_resource of this JobResourceInfo.
 
-        该resourceId是否是主资源（仅开通场景使用，其他场景为空） * `1` - 是 * `0` - 否
+        该resourceId是否是主资源（仅开通场景使用，其他场景为空）。 * `1` - 是 * `0` - 否
 
         :param is_main_resource: The is_main_resource of this JobResourceInfo.
         :type is_main_resource: int
@@ -385,7 +385,7 @@ class JobResourceInfo:
     def extend_params(self):
         """Gets the extend_params of this JobResourceInfo.
 
-        expireTime：到期时间，域名注册服务使用。  UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ（2016-06-28T00:00:00Z）
+        expireTime：到期时间，域名注册服务使用。  UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ（2016-06-28T00:00:00Z）。
 
         :return: The extend_params of this JobResourceInfo.
         :rtype: str
@@ -396,7 +396,7 @@ class JobResourceInfo:
     def extend_params(self, extend_params):
         """Sets the extend_params of this JobResourceInfo.
 
-        expireTime：到期时间，域名注册服务使用。  UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ（2016-06-28T00:00:00Z）
+        expireTime：到期时间，域名注册服务使用。  UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ（2016-06-28T00:00:00Z）。
 
         :param extend_params: The extend_params of this JobResourceInfo.
         :type extend_params: str
@@ -407,7 +407,7 @@ class JobResourceInfo:
     def old_resource_id(self):
         """Gets the old_resource_id of this JobResourceInfo.
 
-        仅针对ECS/BMS云服务的“切换操作系统”场景使用： 云主机切换操作系统的资源id会变化场景 填写变更前老的资源Id。资源Id未变化，无此字段
+        仅针对ECS/BMS云服务的“切换操作系统”场景使用。 云主机切换操作系统的资源id会变化场景。 填写变更前老的资源Id。资源Id未变化，无此字段。
 
         :return: The old_resource_id of this JobResourceInfo.
         :rtype: str
@@ -418,7 +418,7 @@ class JobResourceInfo:
     def old_resource_id(self, old_resource_id):
         """Sets the old_resource_id of this JobResourceInfo.
 
-        仅针对ECS/BMS云服务的“切换操作系统”场景使用： 云主机切换操作系统的资源id会变化场景 填写变更前老的资源Id。资源Id未变化，无此字段
+        仅针对ECS/BMS云服务的“切换操作系统”场景使用。 云主机切换操作系统的资源id会变化场景。 填写变更前老的资源Id。资源Id未变化，无此字段。
 
         :param old_resource_id: The old_resource_id of this JobResourceInfo.
         :type old_resource_id: str
@@ -429,7 +429,7 @@ class JobResourceInfo:
     def old_cloud_service_type(self):
         """Gets the old_cloud_service_type of this JobResourceInfo.
 
-        仅针对ECS/BMS云服务的“切换操作系统”场景使用：云主机切换操作系统的云服务类型编码会变化场景， 填写变更前老的云服务类型编码。云服务类型未变化，无此字段。
+        仅针对ECS/BMS云服务的“切换操作系统”场景使用：云主机切换操作系统的云服务类型编码会变化场景。 填写变更前老的云服务类型编码。云服务类型未变化，无此字段。
 
         :return: The old_cloud_service_type of this JobResourceInfo.
         :rtype: str
@@ -440,7 +440,7 @@ class JobResourceInfo:
     def old_cloud_service_type(self, old_cloud_service_type):
         """Sets the old_cloud_service_type of this JobResourceInfo.
 
-        仅针对ECS/BMS云服务的“切换操作系统”场景使用：云主机切换操作系统的云服务类型编码会变化场景， 填写变更前老的云服务类型编码。云服务类型未变化，无此字段。
+        仅针对ECS/BMS云服务的“切换操作系统”场景使用：云主机切换操作系统的云服务类型编码会变化场景。 填写变更前老的云服务类型编码。云服务类型未变化，无此字段。
 
         :param old_cloud_service_type: The old_cloud_service_type of this JobResourceInfo.
         :type old_cloud_service_type: str
@@ -451,7 +451,7 @@ class JobResourceInfo:
     def old_resource_type(self):
         """Gets the old_resource_type of this JobResourceInfo.
 
-        仅针对ECS/BMS云服务“切换操作系统”场景使用： 云主机切换操作系统的资源类型编码会变化场景， 填写变更前老的资源类型编码。资源类型未变化，无此字段
+        仅针对ECS/BMS云服务“切换操作系统”场景使用。 云主机切换操作系统的资源类型编码会变化场景。 填写变更前老的资源类型编码。资源类型未变化，无此字段。
 
         :return: The old_resource_type of this JobResourceInfo.
         :rtype: str
@@ -462,7 +462,7 @@ class JobResourceInfo:
     def old_resource_type(self, old_resource_type):
         """Sets the old_resource_type of this JobResourceInfo.
 
-        仅针对ECS/BMS云服务“切换操作系统”场景使用： 云主机切换操作系统的资源类型编码会变化场景， 填写变更前老的资源类型编码。资源类型未变化，无此字段
+        仅针对ECS/BMS云服务“切换操作系统”场景使用。 云主机切换操作系统的资源类型编码会变化场景。 填写变更前老的资源类型编码。资源类型未变化，无此字段。
 
         :param old_resource_type: The old_resource_type of this JobResourceInfo.
         :type old_resource_type: str

@@ -18,7 +18,7 @@ class ParseDrugReceptorInfoRequest:
 
     openapi_types = {
         'eihealth_project_id': 'str',
-        'body': 'ReceptorDrugFile'
+        'body': 'ReceptorDrugFileReq'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ParseDrugReceptorInfoRequest:
         :param eihealth_project_id: 平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         :param body: Body of the ParseDrugReceptorInfoRequest
-        :type body: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :type body: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         
         
@@ -74,7 +74,7 @@ class ParseDrugReceptorInfoRequest:
         """Gets the body of this ParseDrugReceptorInfoRequest.
 
         :return: The body of this ParseDrugReceptorInfoRequest.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class ParseDrugReceptorInfoRequest:
         """Sets the body of this ParseDrugReceptorInfoRequest.
 
         :param body: The body of this ParseDrugReceptorInfoRequest.
-        :type body: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :type body: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         """
         self._body = body
 

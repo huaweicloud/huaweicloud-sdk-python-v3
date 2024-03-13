@@ -31,9 +31,9 @@ class UserAssignment:
 
         The model defined in huaweicloud sdk
 
-        :param attach: 目标用户
+        :param attach: 目标用户。
         :type attach: str
-        :param policy_statement_id: 策略ID
+        :param policy_statement_id: 策略ID。
         :type policy_statement_id: str
         """
         
@@ -50,7 +50,7 @@ class UserAssignment:
     def attach(self):
         """Gets the attach of this UserAssignment.
 
-        目标用户
+        目标用户。
 
         :return: The attach of this UserAssignment.
         :rtype: str
@@ -61,7 +61,7 @@ class UserAssignment:
     def attach(self, attach):
         """Sets the attach of this UserAssignment.
 
-        目标用户
+        目标用户。
 
         :param attach: The attach of this UserAssignment.
         :type attach: str
@@ -72,7 +72,7 @@ class UserAssignment:
     def policy_statement_id(self):
         """Gets the policy_statement_id of this UserAssignment.
 
-        策略ID
+        策略ID。
 
         :return: The policy_statement_id of this UserAssignment.
         :rtype: str
@@ -83,7 +83,7 @@ class UserAssignment:
     def policy_statement_id(self, policy_statement_id):
         """Sets the policy_statement_id of this UserAssignment.
 
-        策略ID
+        策略ID。
 
         :param policy_statement_id: The policy_statement_id of this UserAssignment.
         :type policy_statement_id: str

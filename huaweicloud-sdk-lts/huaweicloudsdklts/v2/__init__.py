@@ -36,6 +36,8 @@ from huaweicloudsdklts.v2.model.chart_config import ChartConfig
 from huaweicloudsdklts.v2.model.create_access_config_request import CreateAccessConfigRequest
 from huaweicloudsdklts.v2.model.create_access_config_request_body import CreateAccessConfigRequestBody
 from huaweicloudsdklts.v2.model.create_access_config_response import CreateAccessConfigResponse
+from huaweicloudsdklts.v2.model.create_agency_access_request import CreateAgencyAccessRequest
+from huaweicloudsdklts.v2.model.create_agency_access_response import CreateAgencyAccessResponse
 from huaweicloudsdklts.v2.model.create_aom_mapping_rules_request import CreateAomMappingRulesRequest
 from huaweicloudsdklts.v2.model.create_aom_mapping_rules_response import CreateAomMappingRulesResponse
 from huaweicloudsdklts.v2.model.create_dash_board_req_body import CreateDashBoardReqBody
@@ -56,6 +58,8 @@ from huaweicloudsdklts.v2.model.create_log_dump_obs_response import CreateLogDum
 from huaweicloudsdklts.v2.model.create_log_group_params import CreateLogGroupParams
 from huaweicloudsdklts.v2.model.create_log_group_request import CreateLogGroupRequest
 from huaweicloudsdklts.v2.model.create_log_group_response import CreateLogGroupResponse
+from huaweicloudsdklts.v2.model.create_log_stream_index_request import CreateLogStreamIndexRequest
+from huaweicloudsdklts.v2.model.create_log_stream_index_response import CreateLogStreamIndexResponse
 from huaweicloudsdklts.v2.model.create_log_stream_params import CreateLogStreamParams
 from huaweicloudsdklts.v2.model.create_log_stream_request import CreateLogStreamRequest
 from huaweicloudsdklts.v2.model.create_log_stream_response import CreateLogStreamResponse
@@ -65,6 +69,7 @@ from huaweicloudsdklts.v2.model.create_notification_template_response import Cre
 from huaweicloudsdklts.v2.model.create_search_criterias_body import CreateSearchCriteriasBody
 from huaweicloudsdklts.v2.model.create_search_criterias_request import CreateSearchCriteriasRequest
 from huaweicloudsdklts.v2.model.create_search_criterias_response import CreateSearchCriteriasResponse
+from huaweicloudsdklts.v2.model.create_sql_alarm_rule_frequency import CreateSqlAlarmRuleFrequency
 from huaweicloudsdklts.v2.model.create_sql_alarm_rule_request import CreateSqlAlarmRuleRequest
 from huaweicloudsdklts.v2.model.create_sql_alarm_rule_request_body import CreateSqlAlarmRuleRequestBody
 from huaweicloudsdklts.v2.model.create_sql_alarm_rule_response import CreateSqlAlarmRuleResponse
@@ -131,6 +136,7 @@ from huaweicloudsdklts.v2.model.event import Event
 from huaweicloudsdklts.v2.model.events import Events
 from huaweicloudsdklts.v2.model.field_model import FieldModel
 from huaweicloudsdklts.v2.model.frequency import Frequency
+from huaweicloudsdklts.v2.model.frequency_resp_body import FrequencyRespBody
 from huaweicloudsdklts.v2.model.get_access_config_list_request_body import GetAccessConfigListRequestBody
 from huaweicloudsdklts.v2.model.get_host_group_info import GetHostGroupInfo
 from huaweicloudsdklts.v2.model.get_host_group_list_filter import GetHostGroupListFilter
@@ -143,6 +149,11 @@ from huaweicloudsdklts.v2.model.get_query_search_criterias_body import GetQueryS
 from huaweicloudsdklts.v2.model.host_group_tag import HostGroupTag
 from huaweicloudsdklts.v2.model.keywords_alarm_rule_resp_list import KeywordsAlarmRuleRespList
 from huaweicloudsdklts.v2.model.keywords_request import KeywordsRequest
+from huaweicloudsdklts.v2.model.keywords_res_body import KeywordsResBody
+from huaweicloudsdklts.v2.model.lts_access_config_info_respon200 import LTSAccessConfigInfoRespon200
+from huaweicloudsdklts.v2.model.lts_fields_info import LTSFieldsInfo
+from huaweicloudsdklts.v2.model.lts_full_text_index_info import LTSFullTextIndexInfo
+from huaweicloudsdklts.v2.model.lts_index_config_info import LTSIndexConfigInfo
 from huaweicloudsdklts.v2.model.list_access_config_request import ListAccessConfigRequest
 from huaweicloudsdklts.v2.model.list_access_config_response import ListAccessConfigResponse
 from huaweicloudsdklts.v2.model.list_active_or_history_alarms_request import ListActiveOrHistoryAlarmsRequest
@@ -206,6 +217,8 @@ from huaweicloudsdklts.v2.model.member_groupand_stream_results import MemberGrou
 from huaweicloudsdklts.v2.model.metadata import Metadata
 from huaweicloudsdklts.v2.model.notification_template import NotificationTemplate
 from huaweicloudsdklts.v2.model.page_info import PageInfo
+from huaweicloudsdklts.v2.model.preview_agency_log_access_req_body import PreviewAgencyLogAccessReqBody
+from huaweicloudsdklts.v2.model.preview_agency_log_access_req_list_body import PreviewAgencyLogAccessReqListBody
 from huaweicloudsdklts.v2.model.preview_template_body import PreviewTemplateBody
 from huaweicloudsdklts.v2.model.quert_history_sql_results_body import QuertHistorySQLResultsBody
 from huaweicloudsdklts.v2.model.query_log_key_word_count_request_body import QueryLogKeyWordCountRequestBody

@@ -18,6 +18,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'login': 'bool',
         'createrole': 'bool',
         'createdb': 'bool',
@@ -29,10 +30,14 @@ class ShowDatabaseUserResponse(SdkResponse):
         'replication': 'bool',
         'valid_begin': 'int',
         'valid_until': 'int',
-        'lock': 'bool'
+        'lock': 'bool',
+        'desc': 'str',
+        'user_type': 'str',
+        'logical_cluster': 'str'
     }
 
     attribute_map = {
+        'name': 'name',
         'login': 'login',
         'createrole': 'createrole',
         'createdb': 'createdb',
@@ -44,14 +49,19 @@ class ShowDatabaseUserResponse(SdkResponse):
         'replication': 'replication',
         'valid_begin': 'valid_begin',
         'valid_until': 'valid_until',
-        'lock': 'lock'
+        'lock': 'lock',
+        'desc': 'desc',
+        'user_type': 'user_type',
+        'logical_cluster': 'logical_cluster'
     }
 
-    def __init__(self, login=None, createrole=None, createdb=None, systemadmin=None, auditadmin=None, inherit=None, useft=None, conn_limit=None, replication=None, valid_begin=None, valid_until=None, lock=None):
+    def __init__(self, name=None, login=None, createrole=None, createdb=None, systemadmin=None, auditadmin=None, inherit=None, useft=None, conn_limit=None, replication=None, valid_begin=None, valid_until=None, lock=None, desc=None, user_type=None, logical_cluster=None):
         """ShowDatabaseUserResponse
 
         The model defined in huaweicloud sdk
 
+        :param name: 用户名称
+        :type name: str
         :param login: 是否可以登陆
         :type login: bool
         :param createrole: 创建角色权限
@@ -76,10 +86,17 @@ class ShowDatabaseUserResponse(SdkResponse):
         :type valid_until: int
         :param lock: 是否锁定
         :type lock: bool
+        :param desc: 描述
+        :type desc: str
+        :param user_type: 用户类型
+        :type user_type: str
+        :param logical_cluster: 所属逻辑集群
+        :type logical_cluster: str
         """
         
         super(ShowDatabaseUserResponse, self).__init__()
 
+        self._name = None
         self._login = None
         self._createrole = None
         self._createdb = None
@@ -92,8 +109,13 @@ class ShowDatabaseUserResponse(SdkResponse):
         self._valid_begin = None
         self._valid_until = None
         self._lock = None
+        self._desc = None
+        self._user_type = None
+        self._logical_cluster = None
         self.discriminator = None
 
+        if name is not None:
+            self.name = name
         if login is not None:
             self.login = login
         if createrole is not None:
@@ -118,6 +140,34 @@ class ShowDatabaseUserResponse(SdkResponse):
             self.valid_until = valid_until
         if lock is not None:
             self.lock = lock
+        if desc is not None:
+            self.desc = desc
+        if user_type is not None:
+            self.user_type = user_type
+        if logical_cluster is not None:
+            self.logical_cluster = logical_cluster
+
+    @property
+    def name(self):
+        """Gets the name of this ShowDatabaseUserResponse.
+
+        用户名称
+
+        :return: The name of this ShowDatabaseUserResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ShowDatabaseUserResponse.
+
+        用户名称
+
+        :param name: The name of this ShowDatabaseUserResponse.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def login(self):
@@ -382,6 +432,72 @@ class ShowDatabaseUserResponse(SdkResponse):
         :type lock: bool
         """
         self._lock = lock
+
+    @property
+    def desc(self):
+        """Gets the desc of this ShowDatabaseUserResponse.
+
+        描述
+
+        :return: The desc of this ShowDatabaseUserResponse.
+        :rtype: str
+        """
+        return self._desc
+
+    @desc.setter
+    def desc(self, desc):
+        """Sets the desc of this ShowDatabaseUserResponse.
+
+        描述
+
+        :param desc: The desc of this ShowDatabaseUserResponse.
+        :type desc: str
+        """
+        self._desc = desc
+
+    @property
+    def user_type(self):
+        """Gets the user_type of this ShowDatabaseUserResponse.
+
+        用户类型
+
+        :return: The user_type of this ShowDatabaseUserResponse.
+        :rtype: str
+        """
+        return self._user_type
+
+    @user_type.setter
+    def user_type(self, user_type):
+        """Sets the user_type of this ShowDatabaseUserResponse.
+
+        用户类型
+
+        :param user_type: The user_type of this ShowDatabaseUserResponse.
+        :type user_type: str
+        """
+        self._user_type = user_type
+
+    @property
+    def logical_cluster(self):
+        """Gets the logical_cluster of this ShowDatabaseUserResponse.
+
+        所属逻辑集群
+
+        :return: The logical_cluster of this ShowDatabaseUserResponse.
+        :rtype: str
+        """
+        return self._logical_cluster
+
+    @logical_cluster.setter
+    def logical_cluster(self, logical_cluster):
+        """Sets the logical_cluster of this ShowDatabaseUserResponse.
+
+        所属逻辑集群
+
+        :param logical_cluster: The logical_cluster of this ShowDatabaseUserResponse.
+        :type logical_cluster: str
+        """
+        self._logical_cluster = logical_cluster
 
     def to_dict(self):
         """Returns the model properties as a dict"""

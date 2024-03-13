@@ -99,73 +99,6 @@ class FunctionGraphClient(Client):
 
         return http_info
 
-    def async_invoke_reserved_function(self, request):
-        """函数异步执行并返回预留实例ID
-
-        函数异步执行并返回预留实例ID用于场景指客户端请求执行比较费时任务，不需要同步等待执行完成返回结果，该方法提前返回任务执行对应的预留实例ID, 如果预留实例有异常，可以通过该实例ID把对应实例删除（该接口主要针对白名单用户）。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for AsyncInvokeReservedFunction
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeReservedFunctionRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeReservedFunctionResponse`
-        """
-        http_info = self._async_invoke_reserved_function_http_info(request)
-        return self._call_api(**http_info)
-
-    def async_invoke_reserved_function_invoker(self, request):
-        http_info = self._async_invoke_reserved_function_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _async_invoke_reserved_function_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{project_id}/fgs/functions/{function_urn}/reserved-invocations",
-            "request_type": request.__class__.__name__,
-            "response_type": "AsyncInvokeReservedFunctionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["Content-Type", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def batch_delete_function_triggers(self, request):
         """删除指定函数的所有触发器
 
@@ -438,71 +371,6 @@ class FunctionGraphClient(Client):
 
         return http_info
 
-    def create_dependency(self, request):
-        """创建依赖包
-
-        创建依赖包
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateDependency
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyResponse`
-        """
-        http_info = self._create_dependency_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_dependency_invoker(self, request):
-        http_info = self._create_dependency_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _create_dependency_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{project_id}/fgs/dependencies",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateDependencyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_dependency_version(self, request):
         """创建依赖包版本
 
@@ -703,7 +571,7 @@ class FunctionGraphClient(Client):
     def create_function_app(self, request):
         """创建应用程序
 
-        创建应用程序
+        创建应用程序（该功能目前仅支持华北-北京四、华东-上海一）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1042,7 +910,7 @@ class FunctionGraphClient(Client):
     def create_vpc_endpoint(self, request):
         """创建下沉入口
 
-        创建下沉入口。
+        创建下沉入口。（该功能目前仅支持华北-北京四、华东-上海一、华东-上海二、西南-贵阳一）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1148,71 +1016,6 @@ class FunctionGraphClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_dependency(self, request):
-        """删除指定的依赖包
-
-        删除指定的依赖包
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteDependency
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyResponse`
-        """
-        http_info = self._delete_dependency_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_dependency_invoker(self, request):
-        http_info = self._delete_dependency_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _delete_dependency_http_info(cls, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2/{project_id}/fgs/dependencies/{depend_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteDependencyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'depend_id' in local_var_params:
-            path_params['depend_id'] = local_var_params['depend_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1439,7 +1242,7 @@ class FunctionGraphClient(Client):
     def delete_function_app(self, request):
         """删除应用程序
 
-        删除应用程序
+        删除应用程序（该功能目前仅支持华北-北京四、华东-上海一）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1774,7 +1577,7 @@ class FunctionGraphClient(Client):
     def delete_vpc_endpoint(self, request):
         """删除下沉入口
 
-        删除下沉入口。
+        删除下沉入口。（该功能目前仅支持华北-北京四、华东-上海一、华东-上海二、西南-贵阳一）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2251,7 +2054,7 @@ class FunctionGraphClient(Client):
     def list_app_templates(self, request):
         """查询应用程序模板列表
 
-        查询应用程序模板列表
+        查询应用程序模板列表（该功能目前仅支持华北-北京四、华东-上海一）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2744,7 +2547,7 @@ class FunctionGraphClient(Client):
     def list_function_applications(self, request):
         """查询应用程序列表
 
-        查询应用程序列表
+        查询应用程序列表（该功能目前仅支持华北-北京四、华东-上海一）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2777,6 +2580,10 @@ class FunctionGraphClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -3604,6 +3411,10 @@ class FunctionGraphClient(Client):
             query_params.append(('period', local_var_params['period']))
         if 'option' in local_var_params:
             query_params.append(('option', local_var_params['option']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -3912,7 +3723,7 @@ class FunctionGraphClient(Client):
     def show_app_template(self, request):
         """查询应用程序模板详情
 
-        查询应用程序模板详情
+        查询应用程序模板详情（该功能目前仅支持华北-北京四、华东-上海一）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3945,71 +3756,6 @@ class FunctionGraphClient(Client):
         path_params = {}
         if 'id' in local_var_params:
             path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_dependcy(self, request):
-        """获取指定依赖包
-
-        获取指定依赖包
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowDependcy
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyResponse`
-        """
-        http_info = self._show_dependcy_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_dependcy_invoker(self, request):
-        http_info = self._show_dependcy_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _show_dependcy_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/fgs/dependencies/{depend_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowDependcyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'depend_id' in local_var_params:
-            path_params['depend_id'] = local_var_params['depend_id']
 
         query_params = []
 
@@ -4217,6 +3963,10 @@ class FunctionGraphClient(Client):
             path_params['func_urn'] = local_var_params['func_urn']
 
         query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -4314,7 +4064,7 @@ class FunctionGraphClient(Client):
     def show_function_app(self, request):
         """查询应用程序详情
 
-        查询应用程序详情
+        查询应用程序详情（该功能目前仅支持华北-北京四、华东-上海一）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5701,73 +5451,6 @@ class FunctionGraphClient(Client):
         form_params = {}
 
         body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_dependcy(self, request):
-        """更新指定依赖包
-
-        更新指定依赖包
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateDependcy
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyResponse`
-        """
-        http_info = self._update_dependcy_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_dependcy_invoker(self, request):
-        http_info = self._update_dependcy_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _update_dependcy_http_info(cls, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2/{project_id}/fgs/dependencies/{depend_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateDependcyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'depend_id' in local_var_params:
-            path_params['depend_id'] = local_var_params['depend_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

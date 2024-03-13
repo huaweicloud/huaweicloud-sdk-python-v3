@@ -38,6 +38,20 @@ class VirtualInterface:
         'device_id': 'str',
         'enterprise_project_id': 'str',
         'tags': 'list[Tag]',
+        'local_gateway_v4_ip': 'str',
+        'remote_gateway_v4_ip': 'str',
+        'ies_id': 'str',
+        'reason': 'str',
+        'rate_limit': 'bool',
+        'address_family': 'str',
+        'local_gateway_v6_ip': 'str',
+        'remote_gateway_v6_ip': 'str',
+        'lgw_id': 'str',
+        'gateway_id': 'str',
+        'remote_ep_group': 'list[str]',
+        'service_ep_group': 'list[str]',
+        'bgp_route_limit': 'int',
+        'priority': 'str',
         'vif_peers': 'list[VifPeer]',
         'extend_attribute': 'VifExtendAttribute'
     }
@@ -64,11 +78,25 @@ class VirtualInterface:
         'device_id': 'device_id',
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
+        'local_gateway_v4_ip': 'local_gateway_v4_ip',
+        'remote_gateway_v4_ip': 'remote_gateway_v4_ip',
+        'ies_id': 'ies_id',
+        'reason': 'reason',
+        'rate_limit': 'rate_limit',
+        'address_family': 'address_family',
+        'local_gateway_v6_ip': 'local_gateway_v6_ip',
+        'remote_gateway_v6_ip': 'remote_gateway_v6_ip',
+        'lgw_id': 'lgw_id',
+        'gateway_id': 'gateway_id',
+        'remote_ep_group': 'remote_ep_group',
+        'service_ep_group': 'service_ep_group',
+        'bgp_route_limit': 'bgp_route_limit',
+        'priority': 'priority',
         'vif_peers': 'vif_peers',
         'extend_attribute': 'extend_attribute'
     }
 
-    def __init__(self, id=None, name=None, admin_state_up=None, bandwidth=None, create_time=None, update_time=None, description=None, direct_connect_id=None, service_type=None, status=None, tenant_id=None, type=None, vgw_id=None, vlan=None, route_limit=None, enable_nqa=None, enable_bfd=None, lag_id=None, device_id=None, enterprise_project_id=None, tags=None, vif_peers=None, extend_attribute=None):
+    def __init__(self, id=None, name=None, admin_state_up=None, bandwidth=None, create_time=None, update_time=None, description=None, direct_connect_id=None, service_type=None, status=None, tenant_id=None, type=None, vgw_id=None, vlan=None, route_limit=None, enable_nqa=None, enable_bfd=None, lag_id=None, device_id=None, enterprise_project_id=None, tags=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, ies_id=None, reason=None, rate_limit=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, lgw_id=None, gateway_id=None, remote_ep_group=None, service_ep_group=None, bgp_route_limit=None, priority=None, vif_peers=None, extend_attribute=None):
         """VirtualInterface
 
         The model defined in huaweicloud sdk
@@ -115,6 +143,34 @@ class VirtualInterface:
         :type enterprise_project_id: str
         :param tags: 标签信息
         :type tags: list[:class:`huaweicloudsdkdc.v3.Tag`]
+        :param local_gateway_v4_ip: 云侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
+        :type local_gateway_v4_ip: str
+        :param remote_gateway_v4_ip: 客户侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
+        :type remote_gateway_v4_ip: str
+        :param ies_id: 归属的IES站点的ID[（功能暂不支持）](tag:dt)
+        :type ies_id: str
+        :param reason: 如果资源的状态是Error的情况下，该参数会显示相关错误信息。
+        :type reason: str
+        :param rate_limit: 标识虚拟接口是否开启限速
+        :type rate_limit: bool
+        :param address_family: 接口的地址簇类型，ipv4，ipv6。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+        :type address_family: str
+        :param local_gateway_v6_ip: 云侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+        :type local_gateway_v6_ip: str
+        :param remote_gateway_v6_ip: 客户侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+        :type remote_gateway_v6_ip: str
+        :param lgw_id: 本地网关的ID，用于IES场景。[（功能暂不支持）](tag:dt)
+        :type lgw_id: str
+        :param gateway_id: 虚拟接口关联的网关的ID
+        :type gateway_id: str
+        :param remote_ep_group: 远端子网列表，记录租户侧的cidrs。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+        :type remote_ep_group: list[str]
+        :param service_ep_group: 该字段用于公网专线接口，表示租户可以访问云上公网服务地址列表。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+        :type service_ep_group: list[str]
+        :param bgp_route_limit: BGP的路由配置规格
+        :type bgp_route_limit: int
+        :param priority: 虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+        :type priority: str
         :param vif_peers: vif的Peer的相关信息
         :type vif_peers: list[:class:`huaweicloudsdkdc.v3.VifPeer`]
         :param extend_attribute: 
@@ -144,6 +200,20 @@ class VirtualInterface:
         self._device_id = None
         self._enterprise_project_id = None
         self._tags = None
+        self._local_gateway_v4_ip = None
+        self._remote_gateway_v4_ip = None
+        self._ies_id = None
+        self._reason = None
+        self._rate_limit = None
+        self._address_family = None
+        self._local_gateway_v6_ip = None
+        self._remote_gateway_v6_ip = None
+        self._lgw_id = None
+        self._gateway_id = None
+        self._remote_ep_group = None
+        self._service_ep_group = None
+        self._bgp_route_limit = None
+        self._priority = None
         self._vif_peers = None
         self._extend_attribute = None
         self.discriminator = None
@@ -190,6 +260,34 @@ class VirtualInterface:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        if local_gateway_v4_ip is not None:
+            self.local_gateway_v4_ip = local_gateway_v4_ip
+        if remote_gateway_v4_ip is not None:
+            self.remote_gateway_v4_ip = remote_gateway_v4_ip
+        if ies_id is not None:
+            self.ies_id = ies_id
+        if reason is not None:
+            self.reason = reason
+        if rate_limit is not None:
+            self.rate_limit = rate_limit
+        if address_family is not None:
+            self.address_family = address_family
+        if local_gateway_v6_ip is not None:
+            self.local_gateway_v6_ip = local_gateway_v6_ip
+        if remote_gateway_v6_ip is not None:
+            self.remote_gateway_v6_ip = remote_gateway_v6_ip
+        if lgw_id is not None:
+            self.lgw_id = lgw_id
+        if gateway_id is not None:
+            self.gateway_id = gateway_id
+        if remote_ep_group is not None:
+            self.remote_ep_group = remote_ep_group
+        if service_ep_group is not None:
+            self.service_ep_group = service_ep_group
+        if bgp_route_limit is not None:
+            self.bgp_route_limit = bgp_route_limit
+        if priority is not None:
+            self.priority = priority
         if vif_peers is not None:
             self.vif_peers = vif_peers
         if extend_attribute is not None:
@@ -656,6 +754,314 @@ class VirtualInterface:
         :type tags: list[:class:`huaweicloudsdkdc.v3.Tag`]
         """
         self._tags = tags
+
+    @property
+    def local_gateway_v4_ip(self):
+        """Gets the local_gateway_v4_ip of this VirtualInterface.
+
+        云侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
+
+        :return: The local_gateway_v4_ip of this VirtualInterface.
+        :rtype: str
+        """
+        return self._local_gateway_v4_ip
+
+    @local_gateway_v4_ip.setter
+    def local_gateway_v4_ip(self, local_gateway_v4_ip):
+        """Sets the local_gateway_v4_ip of this VirtualInterface.
+
+        云侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
+
+        :param local_gateway_v4_ip: The local_gateway_v4_ip of this VirtualInterface.
+        :type local_gateway_v4_ip: str
+        """
+        self._local_gateway_v4_ip = local_gateway_v4_ip
+
+    @property
+    def remote_gateway_v4_ip(self):
+        """Gets the remote_gateway_v4_ip of this VirtualInterface.
+
+        客户侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
+
+        :return: The remote_gateway_v4_ip of this VirtualInterface.
+        :rtype: str
+        """
+        return self._remote_gateway_v4_ip
+
+    @remote_gateway_v4_ip.setter
+    def remote_gateway_v4_ip(self, remote_gateway_v4_ip):
+        """Sets the remote_gateway_v4_ip of this VirtualInterface.
+
+        客户侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
+
+        :param remote_gateway_v4_ip: The remote_gateway_v4_ip of this VirtualInterface.
+        :type remote_gateway_v4_ip: str
+        """
+        self._remote_gateway_v4_ip = remote_gateway_v4_ip
+
+    @property
+    def ies_id(self):
+        """Gets the ies_id of this VirtualInterface.
+
+        归属的IES站点的ID[（功能暂不支持）](tag:dt)
+
+        :return: The ies_id of this VirtualInterface.
+        :rtype: str
+        """
+        return self._ies_id
+
+    @ies_id.setter
+    def ies_id(self, ies_id):
+        """Sets the ies_id of this VirtualInterface.
+
+        归属的IES站点的ID[（功能暂不支持）](tag:dt)
+
+        :param ies_id: The ies_id of this VirtualInterface.
+        :type ies_id: str
+        """
+        self._ies_id = ies_id
+
+    @property
+    def reason(self):
+        """Gets the reason of this VirtualInterface.
+
+        如果资源的状态是Error的情况下，该参数会显示相关错误信息。
+
+        :return: The reason of this VirtualInterface.
+        :rtype: str
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this VirtualInterface.
+
+        如果资源的状态是Error的情况下，该参数会显示相关错误信息。
+
+        :param reason: The reason of this VirtualInterface.
+        :type reason: str
+        """
+        self._reason = reason
+
+    @property
+    def rate_limit(self):
+        """Gets the rate_limit of this VirtualInterface.
+
+        标识虚拟接口是否开启限速
+
+        :return: The rate_limit of this VirtualInterface.
+        :rtype: bool
+        """
+        return self._rate_limit
+
+    @rate_limit.setter
+    def rate_limit(self, rate_limit):
+        """Sets the rate_limit of this VirtualInterface.
+
+        标识虚拟接口是否开启限速
+
+        :param rate_limit: The rate_limit of this VirtualInterface.
+        :type rate_limit: bool
+        """
+        self._rate_limit = rate_limit
+
+    @property
+    def address_family(self):
+        """Gets the address_family of this VirtualInterface.
+
+        接口的地址簇类型，ipv4，ipv6。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :return: The address_family of this VirtualInterface.
+        :rtype: str
+        """
+        return self._address_family
+
+    @address_family.setter
+    def address_family(self, address_family):
+        """Sets the address_family of this VirtualInterface.
+
+        接口的地址簇类型，ipv4，ipv6。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :param address_family: The address_family of this VirtualInterface.
+        :type address_family: str
+        """
+        self._address_family = address_family
+
+    @property
+    def local_gateway_v6_ip(self):
+        """Gets the local_gateway_v6_ip of this VirtualInterface.
+
+        云侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :return: The local_gateway_v6_ip of this VirtualInterface.
+        :rtype: str
+        """
+        return self._local_gateway_v6_ip
+
+    @local_gateway_v6_ip.setter
+    def local_gateway_v6_ip(self, local_gateway_v6_ip):
+        """Sets the local_gateway_v6_ip of this VirtualInterface.
+
+        云侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :param local_gateway_v6_ip: The local_gateway_v6_ip of this VirtualInterface.
+        :type local_gateway_v6_ip: str
+        """
+        self._local_gateway_v6_ip = local_gateway_v6_ip
+
+    @property
+    def remote_gateway_v6_ip(self):
+        """Gets the remote_gateway_v6_ip of this VirtualInterface.
+
+        客户侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :return: The remote_gateway_v6_ip of this VirtualInterface.
+        :rtype: str
+        """
+        return self._remote_gateway_v6_ip
+
+    @remote_gateway_v6_ip.setter
+    def remote_gateway_v6_ip(self, remote_gateway_v6_ip):
+        """Sets the remote_gateway_v6_ip of this VirtualInterface.
+
+        客户侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :param remote_gateway_v6_ip: The remote_gateway_v6_ip of this VirtualInterface.
+        :type remote_gateway_v6_ip: str
+        """
+        self._remote_gateway_v6_ip = remote_gateway_v6_ip
+
+    @property
+    def lgw_id(self):
+        """Gets the lgw_id of this VirtualInterface.
+
+        本地网关的ID，用于IES场景。[（功能暂不支持）](tag:dt)
+
+        :return: The lgw_id of this VirtualInterface.
+        :rtype: str
+        """
+        return self._lgw_id
+
+    @lgw_id.setter
+    def lgw_id(self, lgw_id):
+        """Sets the lgw_id of this VirtualInterface.
+
+        本地网关的ID，用于IES场景。[（功能暂不支持）](tag:dt)
+
+        :param lgw_id: The lgw_id of this VirtualInterface.
+        :type lgw_id: str
+        """
+        self._lgw_id = lgw_id
+
+    @property
+    def gateway_id(self):
+        """Gets the gateway_id of this VirtualInterface.
+
+        虚拟接口关联的网关的ID
+
+        :return: The gateway_id of this VirtualInterface.
+        :rtype: str
+        """
+        return self._gateway_id
+
+    @gateway_id.setter
+    def gateway_id(self, gateway_id):
+        """Sets the gateway_id of this VirtualInterface.
+
+        虚拟接口关联的网关的ID
+
+        :param gateway_id: The gateway_id of this VirtualInterface.
+        :type gateway_id: str
+        """
+        self._gateway_id = gateway_id
+
+    @property
+    def remote_ep_group(self):
+        """Gets the remote_ep_group of this VirtualInterface.
+
+        远端子网列表，记录租户侧的cidrs。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :return: The remote_ep_group of this VirtualInterface.
+        :rtype: list[str]
+        """
+        return self._remote_ep_group
+
+    @remote_ep_group.setter
+    def remote_ep_group(self, remote_ep_group):
+        """Sets the remote_ep_group of this VirtualInterface.
+
+        远端子网列表，记录租户侧的cidrs。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :param remote_ep_group: The remote_ep_group of this VirtualInterface.
+        :type remote_ep_group: list[str]
+        """
+        self._remote_ep_group = remote_ep_group
+
+    @property
+    def service_ep_group(self):
+        """Gets the service_ep_group of this VirtualInterface.
+
+        该字段用于公网专线接口，表示租户可以访问云上公网服务地址列表。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :return: The service_ep_group of this VirtualInterface.
+        :rtype: list[str]
+        """
+        return self._service_ep_group
+
+    @service_ep_group.setter
+    def service_ep_group(self, service_ep_group):
+        """Sets the service_ep_group of this VirtualInterface.
+
+        该字段用于公网专线接口，表示租户可以访问云上公网服务地址列表。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
+
+        :param service_ep_group: The service_ep_group of this VirtualInterface.
+        :type service_ep_group: list[str]
+        """
+        self._service_ep_group = service_ep_group
+
+    @property
+    def bgp_route_limit(self):
+        """Gets the bgp_route_limit of this VirtualInterface.
+
+        BGP的路由配置规格
+
+        :return: The bgp_route_limit of this VirtualInterface.
+        :rtype: int
+        """
+        return self._bgp_route_limit
+
+    @bgp_route_limit.setter
+    def bgp_route_limit(self, bgp_route_limit):
+        """Sets the bgp_route_limit of this VirtualInterface.
+
+        BGP的路由配置规格
+
+        :param bgp_route_limit: The bgp_route_limit of this VirtualInterface.
+        :type bgp_route_limit: int
+        """
+        self._bgp_route_limit = bgp_route_limit
+
+    @property
+    def priority(self):
+        """Gets the priority of this VirtualInterface.
+
+        虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+
+        :return: The priority of this VirtualInterface.
+        :rtype: str
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this VirtualInterface.
+
+        虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+
+        :param priority: The priority of this VirtualInterface.
+        :type priority: str
+        """
+        self._priority = priority
 
     @property
     def vif_peers(self):

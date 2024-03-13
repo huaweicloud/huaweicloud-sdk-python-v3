@@ -20,6 +20,8 @@ class AvailabilityZones:
         'basic': 'VpnGatewayAvailabilityZones',
         'professional1': 'VpnGatewayAvailabilityZones',
         'professional2': 'VpnGatewayAvailabilityZones',
+        'professional1_non_fixed_ip': 'VpnGatewayAvailabilityZones',
+        'professional2_non_fixed_ip': 'VpnGatewayAvailabilityZones',
         'gm': 'VpnGatewayAvailabilityZones'
     }
 
@@ -27,10 +29,12 @@ class AvailabilityZones:
         'basic': 'basic',
         'professional1': 'professional1',
         'professional2': 'professional2',
+        'professional1_non_fixed_ip': 'Professional1-NonFixedIP',
+        'professional2_non_fixed_ip': 'Professional2-NonFixedIP',
         'gm': 'gm'
     }
 
-    def __init__(self, basic=None, professional1=None, professional2=None, gm=None):
+    def __init__(self, basic=None, professional1=None, professional2=None, professional1_non_fixed_ip=None, professional2_non_fixed_ip=None, gm=None):
         """AvailabilityZones
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class AvailabilityZones:
         :type professional1: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
         :param professional2: 
         :type professional2: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
+        :param professional1_non_fixed_ip: 
+        :type professional1_non_fixed_ip: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
+        :param professional2_non_fixed_ip: 
+        :type professional2_non_fixed_ip: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
         :param gm: 
         :type gm: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
         """
@@ -50,6 +58,8 @@ class AvailabilityZones:
         self._basic = None
         self._professional1 = None
         self._professional2 = None
+        self._professional1_non_fixed_ip = None
+        self._professional2_non_fixed_ip = None
         self._gm = None
         self.discriminator = None
 
@@ -59,6 +69,10 @@ class AvailabilityZones:
             self.professional1 = professional1
         if professional2 is not None:
             self.professional2 = professional2
+        if professional1_non_fixed_ip is not None:
+            self.professional1_non_fixed_ip = professional1_non_fixed_ip
+        if professional2_non_fixed_ip is not None:
+            self.professional2_non_fixed_ip = professional2_non_fixed_ip
         if gm is not None:
             self.gm = gm
 
@@ -115,6 +129,42 @@ class AvailabilityZones:
         :type professional2: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
         """
         self._professional2 = professional2
+
+    @property
+    def professional1_non_fixed_ip(self):
+        """Gets the professional1_non_fixed_ip of this AvailabilityZones.
+
+        :return: The professional1_non_fixed_ip of this AvailabilityZones.
+        :rtype: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
+        """
+        return self._professional1_non_fixed_ip
+
+    @professional1_non_fixed_ip.setter
+    def professional1_non_fixed_ip(self, professional1_non_fixed_ip):
+        """Sets the professional1_non_fixed_ip of this AvailabilityZones.
+
+        :param professional1_non_fixed_ip: The professional1_non_fixed_ip of this AvailabilityZones.
+        :type professional1_non_fixed_ip: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
+        """
+        self._professional1_non_fixed_ip = professional1_non_fixed_ip
+
+    @property
+    def professional2_non_fixed_ip(self):
+        """Gets the professional2_non_fixed_ip of this AvailabilityZones.
+
+        :return: The professional2_non_fixed_ip of this AvailabilityZones.
+        :rtype: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
+        """
+        return self._professional2_non_fixed_ip
+
+    @professional2_non_fixed_ip.setter
+    def professional2_non_fixed_ip(self, professional2_non_fixed_ip):
+        """Sets the professional2_non_fixed_ip of this AvailabilityZones.
+
+        :param professional2_non_fixed_ip: The professional2_non_fixed_ip of this AvailabilityZones.
+        :type professional2_non_fixed_ip: :class:`huaweicloudsdkvpn.v5.VpnGatewayAvailabilityZones`
+        """
+        self._professional2_non_fixed_ip = professional2_non_fixed_ip
 
     @property
     def gm(self):

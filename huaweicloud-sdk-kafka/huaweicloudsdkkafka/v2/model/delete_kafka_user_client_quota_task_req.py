@@ -35,13 +35,13 @@ class DeleteKafkaUserClientQuotaTaskReq:
 
         The model defined in huaweicloud sdk
 
-        :param user: 用户名
+        :param user: 用户名。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
         :type user: str
-        :param client: 客户端ID
+        :param client: 客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
         :type client: str
-        :param user_default: 是否使用用户默认设置（是则表示对全部用户限流）。
+        :param user_default: 是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
         :type user_default: bool
-        :param client_default: 是否使用客户端默认设置（是则表示对全部客户端限流）。
+        :param client_default: 是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
         :type client_default: bool
         """
         
@@ -66,7 +66,7 @@ class DeleteKafkaUserClientQuotaTaskReq:
     def user(self):
         """Gets the user of this DeleteKafkaUserClientQuotaTaskReq.
 
-        用户名
+        用户名。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
         :return: The user of this DeleteKafkaUserClientQuotaTaskReq.
         :rtype: str
@@ -77,7 +77,7 @@ class DeleteKafkaUserClientQuotaTaskReq:
     def user(self, user):
         """Sets the user of this DeleteKafkaUserClientQuotaTaskReq.
 
-        用户名
+        用户名。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
         :param user: The user of this DeleteKafkaUserClientQuotaTaskReq.
         :type user: str
@@ -88,7 +88,7 @@ class DeleteKafkaUserClientQuotaTaskReq:
     def client(self):
         """Gets the client of this DeleteKafkaUserClientQuotaTaskReq.
 
-        客户端ID
+        客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
         :return: The client of this DeleteKafkaUserClientQuotaTaskReq.
         :rtype: str
@@ -99,7 +99,7 @@ class DeleteKafkaUserClientQuotaTaskReq:
     def client(self, client):
         """Sets the client of this DeleteKafkaUserClientQuotaTaskReq.
 
-        客户端ID
+        客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
         :param client: The client of this DeleteKafkaUserClientQuotaTaskReq.
         :type client: str
@@ -110,7 +110,7 @@ class DeleteKafkaUserClientQuotaTaskReq:
     def user_default(self):
         """Gets the user_default of this DeleteKafkaUserClientQuotaTaskReq.
 
-        是否使用用户默认设置（是则表示对全部用户限流）。
+        是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
 
         :return: The user_default of this DeleteKafkaUserClientQuotaTaskReq.
         :rtype: bool
@@ -121,7 +121,7 @@ class DeleteKafkaUserClientQuotaTaskReq:
     def user_default(self, user_default):
         """Sets the user_default of this DeleteKafkaUserClientQuotaTaskReq.
 
-        是否使用用户默认设置（是则表示对全部用户限流）。
+        是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
 
         :param user_default: The user_default of this DeleteKafkaUserClientQuotaTaskReq.
         :type user_default: bool
@@ -132,7 +132,7 @@ class DeleteKafkaUserClientQuotaTaskReq:
     def client_default(self):
         """Gets the client_default of this DeleteKafkaUserClientQuotaTaskReq.
 
-        是否使用客户端默认设置（是则表示对全部客户端限流）。
+        是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
 
         :return: The client_default of this DeleteKafkaUserClientQuotaTaskReq.
         :rtype: bool
@@ -143,7 +143,7 @@ class DeleteKafkaUserClientQuotaTaskReq:
     def client_default(self, client_default):
         """Sets the client_default of this DeleteKafkaUserClientQuotaTaskReq.
 
-        是否使用客户端默认设置（是则表示对全部客户端限流）。
+        是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
 
         :param client_default: The client_default of this DeleteKafkaUserClientQuotaTaskReq.
         :type client_default: bool

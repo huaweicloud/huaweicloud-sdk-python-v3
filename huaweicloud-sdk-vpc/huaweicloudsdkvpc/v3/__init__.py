@@ -101,6 +101,8 @@ from huaweicloudsdkvpc.v3.model.firewall_rule_detail import FirewallRuleDetail
 from huaweicloudsdkvpc.v3.model.firewall_update_rule_item_option import FirewallUpdateRuleItemOption
 from huaweicloudsdkvpc.v3.model.firewall_update_rule_option import FirewallUpdateRuleOption
 from huaweicloudsdkvpc.v3.model.insert_security_group_option import InsertSecurityGroupOption
+from huaweicloudsdkvpc.v3.model.ip_extra_set_option import IpExtraSetOption
+from huaweicloudsdkvpc.v3.model.ip_extra_set_resp_option import IpExtraSetRespOption
 from huaweicloudsdkvpc.v3.model.list_address_group_request import ListAddressGroupRequest
 from huaweicloudsdkvpc.v3.model.list_address_group_response import ListAddressGroupResponse
 from huaweicloudsdkvpc.v3.model.list_firewall_detail import ListFirewallDetail

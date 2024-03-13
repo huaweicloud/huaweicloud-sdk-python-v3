@@ -31,9 +31,9 @@ class ListStoragePolicyStatementRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
         """
         
@@ -52,7 +52,7 @@ class ListStoragePolicyStatementRequest:
     def offset(self):
         """Gets the offset of this ListStoragePolicyStatementRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListStoragePolicyStatementRequest.
         :rtype: int
@@ -63,7 +63,7 @@ class ListStoragePolicyStatementRequest:
     def offset(self, offset):
         """Sets the offset of this ListStoragePolicyStatementRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListStoragePolicyStatementRequest.
         :type offset: int
@@ -74,7 +74,7 @@ class ListStoragePolicyStatementRequest:
     def limit(self):
         """Gets the limit of this ListStoragePolicyStatementRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListStoragePolicyStatementRequest.
         :rtype: int
@@ -85,7 +85,7 @@ class ListStoragePolicyStatementRequest:
     def limit(self, limit):
         """Sets the limit of this ListStoragePolicyStatementRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListStoragePolicyStatementRequest.
         :type limit: int

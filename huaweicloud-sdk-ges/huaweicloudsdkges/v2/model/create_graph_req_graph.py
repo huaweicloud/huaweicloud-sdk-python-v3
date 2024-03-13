@@ -36,7 +36,8 @@ class CreateGraphReqGraph:
         'enable_https': 'bool',
         'product_type': 'str',
         'vertex_id_type': 'CreateGraphReqGraphVertexIdType',
-        'enable_multi_label': 'bool'
+        'enable_multi_label': 'bool',
+        'capacity_ratio': 'int'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class CreateGraphReqGraph:
         'enable_https': 'enable_https',
         'product_type': 'product_type',
         'vertex_id_type': 'vertex_id_type',
-        'enable_multi_label': 'enable_multi_label'
+        'enable_multi_label': 'enable_multi_label',
+        'capacity_ratio': 'capacity_ratio'
     }
 
-    def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None, enable_multi_label=None):
+    def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None, enable_multi_label=None, capacity_ratio=None):
         """CreateGraphReqGraph
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class CreateGraphReqGraph:
         :type vertex_id_type: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphVertexIdType`
         :param enable_multi_label: 是否启用多标签
         :type enable_multi_label: bool
+        :param capacity_ratio: 图的容量倍率。该参数只有持久化版百亿规格图支持，且从2.3.18版本后开始支持。
+        :type capacity_ratio: int
         """
         
         
@@ -131,6 +135,7 @@ class CreateGraphReqGraph:
         self._product_type = None
         self._vertex_id_type = None
         self._enable_multi_label = None
+        self._capacity_ratio = None
         self.discriminator = None
 
         self.name = name
@@ -166,6 +171,8 @@ class CreateGraphReqGraph:
             self.vertex_id_type = vertex_id_type
         if enable_multi_label is not None:
             self.enable_multi_label = enable_multi_label
+        if capacity_ratio is not None:
+            self.capacity_ratio = capacity_ratio
 
     @property
     def name(self):
@@ -590,6 +597,28 @@ class CreateGraphReqGraph:
         :type enable_multi_label: bool
         """
         self._enable_multi_label = enable_multi_label
+
+    @property
+    def capacity_ratio(self):
+        """Gets the capacity_ratio of this CreateGraphReqGraph.
+
+        图的容量倍率。该参数只有持久化版百亿规格图支持，且从2.3.18版本后开始支持。
+
+        :return: The capacity_ratio of this CreateGraphReqGraph.
+        :rtype: int
+        """
+        return self._capacity_ratio
+
+    @capacity_ratio.setter
+    def capacity_ratio(self, capacity_ratio):
+        """Sets the capacity_ratio of this CreateGraphReqGraph.
+
+        图的容量倍率。该参数只有持久化版百亿规格图支持，且从2.3.18版本后开始支持。
+
+        :param capacity_ratio: The capacity_ratio of this CreateGraphReqGraph.
+        :type capacity_ratio: int
+        """
+        self._capacity_ratio = capacity_ratio
 
     def to_dict(self):
         """Returns the model properties as a dict"""

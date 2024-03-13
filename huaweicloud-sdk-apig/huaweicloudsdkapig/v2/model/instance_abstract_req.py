@@ -33,7 +33,7 @@ class InstanceAbstractReq:
 
         The model defined in huaweicloud sdk
 
-        :param description: 实例描述
+        :param description: 实例描述。支持除&gt;和&lt;以外的字符，长度为0~255。
         :type description: str
         :param maintain_begin: 维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_begin: str
@@ -59,7 +59,7 @@ class InstanceAbstractReq:
     def description(self):
         """Gets the description of this InstanceAbstractReq.
 
-        实例描述
+        实例描述。支持除>和<以外的字符，长度为0~255。
 
         :return: The description of this InstanceAbstractReq.
         :rtype: str
@@ -70,7 +70,7 @@ class InstanceAbstractReq:
     def description(self, description):
         """Sets the description of this InstanceAbstractReq.
 
-        实例描述
+        实例描述。支持除>和<以外的字符，长度为0~255。
 
         :param description: The description of this InstanceAbstractReq.
         :type description: str

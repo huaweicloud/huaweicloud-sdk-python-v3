@@ -20,6 +20,7 @@ class UpdateResponseVpnGateway:
         'id': 'str',
         'name': 'str',
         'attachment_type': 'str',
+        'certificate_id': 'str',
         'er_id': 'str',
         'vpc_id': 'str',
         'local_subnets': 'list[str]',
@@ -27,7 +28,6 @@ class UpdateResponseVpnGateway:
         'network_type': 'str',
         'access_vpc_id': 'str',
         'access_subnet_id': 'str',
-        'access_private_ips': 'list[str]',
         'access_private_ip_1': 'str',
         'access_private_ip_2': 'str',
         'bgp_asn': 'int',
@@ -38,18 +38,19 @@ class UpdateResponseVpnGateway:
         'used_connection_group': 'int',
         'enterprise_project_id': 'str',
         'ha_mode': 'str',
-        'master_eip': 'ResponseEip',
-        'slave_eip': 'ResponseEip',
         'eip1': 'ResponseEip',
         'eip2': 'ResponseEip',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'policy_template': 'PolicyTemplate',
+        'tags': 'list[VpnResourceTag]'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'attachment_type': 'attachment_type',
+        'certificate_id': 'certificate_id',
         'er_id': 'er_id',
         'vpc_id': 'vpc_id',
         'local_subnets': 'local_subnets',
@@ -57,7 +58,6 @@ class UpdateResponseVpnGateway:
         'network_type': 'network_type',
         'access_vpc_id': 'access_vpc_id',
         'access_subnet_id': 'access_subnet_id',
-        'access_private_ips': 'access_private_ips',
         'access_private_ip_1': 'access_private_ip_1',
         'access_private_ip_2': 'access_private_ip_2',
         'bgp_asn': 'bgp_asn',
@@ -68,15 +68,15 @@ class UpdateResponseVpnGateway:
         'used_connection_group': 'used_connection_group',
         'enterprise_project_id': 'enterprise_project_id',
         'ha_mode': 'ha_mode',
-        'master_eip': 'master_eip',
-        'slave_eip': 'slave_eip',
         'eip1': 'eip1',
         'eip2': 'eip2',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'policy_template': 'policy_template',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, attachment_type=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ips=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, master_eip=None, slave_eip=None, eip1=None, eip2=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, attachment_type=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, updated_at=None, policy_template=None, tags=None):
         """UpdateResponseVpnGateway
 
         The model defined in huaweicloud sdk
@@ -87,6 +87,8 @@ class UpdateResponseVpnGateway:
         :type name: str
         :param attachment_type: 关联模式
         :type attachment_type: str
+        :param certificate_id: 
+        :type certificate_id: str
         :param er_id: VPN网关所连接的ER实例的ID
         :type er_id: str
         :param vpc_id: VPN网关所连接的VPC的ID
@@ -95,17 +97,15 @@ class UpdateResponseVpnGateway:
         :type local_subnets: list[str]
         :param connect_subnet: VPN网关所使用的VPC子网ID
         :type connect_subnet: str
-        :param network_type: VPN网关北向类型，默认为公网(public)
+        :param network_type: VPN网关的网络类型，默认为公网(public)
         :type network_type: str
         :param access_vpc_id: VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
         :type access_vpc_id: str
         :param access_subnet_id: VPN网关北向接入VPC中的接入子网ID
         :type access_subnet_id: str
-        :param access_private_ips: VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值
-        :type access_private_ips: list[str]
-        :param access_private_ip_1: VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        :param access_private_ip_1: 私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第一个私网地址，主备表示主私网地址。
         :type access_private_ip_1: str
-        :param access_private_ip_2: VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        :param access_private_ip_2: 私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第二个私网地址，主备表示备私网地址。
         :type access_private_ip_2: str
         :param bgp_asn: bgp所使用的asn号
         :type bgp_asn: int
@@ -123,10 +123,6 @@ class UpdateResponseVpnGateway:
         :type enterprise_project_id: str
         :param ha_mode: ha模式
         :type ha_mode: str
-        :param master_eip: 
-        :type master_eip: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        :param slave_eip: 
-        :type slave_eip: :class:`huaweicloudsdkvpn.v5.ResponseEip`
         :param eip1: 
         :type eip1: :class:`huaweicloudsdkvpn.v5.ResponseEip`
         :param eip2: 
@@ -135,6 +131,10 @@ class UpdateResponseVpnGateway:
         :type created_at: datetime
         :param updated_at: 更新时间
         :type updated_at: datetime
+        :param policy_template: 
+        :type policy_template: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         
         
@@ -142,6 +142,7 @@ class UpdateResponseVpnGateway:
         self._id = None
         self._name = None
         self._attachment_type = None
+        self._certificate_id = None
         self._er_id = None
         self._vpc_id = None
         self._local_subnets = None
@@ -149,7 +150,6 @@ class UpdateResponseVpnGateway:
         self._network_type = None
         self._access_vpc_id = None
         self._access_subnet_id = None
-        self._access_private_ips = None
         self._access_private_ip_1 = None
         self._access_private_ip_2 = None
         self._bgp_asn = None
@@ -160,12 +160,12 @@ class UpdateResponseVpnGateway:
         self._used_connection_group = None
         self._enterprise_project_id = None
         self._ha_mode = None
-        self._master_eip = None
-        self._slave_eip = None
         self._eip1 = None
         self._eip2 = None
         self._created_at = None
         self._updated_at = None
+        self._policy_template = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -174,6 +174,8 @@ class UpdateResponseVpnGateway:
             self.name = name
         if attachment_type is not None:
             self.attachment_type = attachment_type
+        if certificate_id is not None:
+            self.certificate_id = certificate_id
         if er_id is not None:
             self.er_id = er_id
         if vpc_id is not None:
@@ -188,8 +190,6 @@ class UpdateResponseVpnGateway:
             self.access_vpc_id = access_vpc_id
         if access_subnet_id is not None:
             self.access_subnet_id = access_subnet_id
-        if access_private_ips is not None:
-            self.access_private_ips = access_private_ips
         if access_private_ip_1 is not None:
             self.access_private_ip_1 = access_private_ip_1
         if access_private_ip_2 is not None:
@@ -210,10 +210,6 @@ class UpdateResponseVpnGateway:
             self.enterprise_project_id = enterprise_project_id
         if ha_mode is not None:
             self.ha_mode = ha_mode
-        if master_eip is not None:
-            self.master_eip = master_eip
-        if slave_eip is not None:
-            self.slave_eip = slave_eip
         if eip1 is not None:
             self.eip1 = eip1
         if eip2 is not None:
@@ -222,6 +218,10 @@ class UpdateResponseVpnGateway:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if policy_template is not None:
+            self.policy_template = policy_template
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -288,6 +288,24 @@ class UpdateResponseVpnGateway:
         :type attachment_type: str
         """
         self._attachment_type = attachment_type
+
+    @property
+    def certificate_id(self):
+        """Gets the certificate_id of this UpdateResponseVpnGateway.
+
+        :return: The certificate_id of this UpdateResponseVpnGateway.
+        :rtype: str
+        """
+        return self._certificate_id
+
+    @certificate_id.setter
+    def certificate_id(self, certificate_id):
+        """Sets the certificate_id of this UpdateResponseVpnGateway.
+
+        :param certificate_id: The certificate_id of this UpdateResponseVpnGateway.
+        :type certificate_id: str
+        """
+        self._certificate_id = certificate_id
 
     @property
     def er_id(self):
@@ -381,7 +399,7 @@ class UpdateResponseVpnGateway:
     def network_type(self):
         """Gets the network_type of this UpdateResponseVpnGateway.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :return: The network_type of this UpdateResponseVpnGateway.
         :rtype: str
@@ -392,7 +410,7 @@ class UpdateResponseVpnGateway:
     def network_type(self, network_type):
         """Sets the network_type of this UpdateResponseVpnGateway.
 
-        VPN网关北向类型，默认为公网(public)
+        VPN网关的网络类型，默认为公网(public)
 
         :param network_type: The network_type of this UpdateResponseVpnGateway.
         :type network_type: str
@@ -444,32 +462,10 @@ class UpdateResponseVpnGateway:
         self._access_subnet_id = access_subnet_id
 
     @property
-    def access_private_ips(self):
-        """Gets the access_private_ips of this UpdateResponseVpnGateway.
-
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值
-
-        :return: The access_private_ips of this UpdateResponseVpnGateway.
-        :rtype: list[str]
-        """
-        return self._access_private_ips
-
-    @access_private_ips.setter
-    def access_private_ips(self, access_private_ips):
-        """Sets the access_private_ips of this UpdateResponseVpnGateway.
-
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值
-
-        :param access_private_ips: The access_private_ips of this UpdateResponseVpnGateway.
-        :type access_private_ips: list[str]
-        """
-        self._access_private_ips = access_private_ips
-
-    @property
     def access_private_ip_1(self):
         """Gets the access_private_ip_1 of this UpdateResponseVpnGateway.
 
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第一个私网地址，主备表示主私网地址。
 
         :return: The access_private_ip_1 of this UpdateResponseVpnGateway.
         :rtype: str
@@ -480,7 +476,7 @@ class UpdateResponseVpnGateway:
     def access_private_ip_1(self, access_private_ip_1):
         """Sets the access_private_ip_1 of this UpdateResponseVpnGateway.
 
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表主worker的私网IP
+        私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第一个私网地址，主备表示主私网地址。
 
         :param access_private_ip_1: The access_private_ip_1 of this UpdateResponseVpnGateway.
         :type access_private_ip_1: str
@@ -491,7 +487,7 @@ class UpdateResponseVpnGateway:
     def access_private_ip_2(self):
         """Gets the access_private_ip_2 of this UpdateResponseVpnGateway.
 
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第二个私网地址，主备表示备私网地址。
 
         :return: The access_private_ip_2 of this UpdateResponseVpnGateway.
         :rtype: str
@@ -502,7 +498,7 @@ class UpdateResponseVpnGateway:
     def access_private_ip_2(self, access_private_ip_2):
         """Sets the access_private_ip_2 of this UpdateResponseVpnGateway.
 
-        VPN网关北向接入私网IP列表，当VPN网关的北向类型是私网(private)时有值,主备模式代表备worker的私网IP
+        私网类型VPN网关的接入私网IP，VPN网关使用该私网IP与对端网关建连。双活网关表示使用的第二个私网地址，主备表示备私网地址。
 
         :param access_private_ip_2: The access_private_ip_2 of this UpdateResponseVpnGateway.
         :type access_private_ip_2: str
@@ -686,42 +682,6 @@ class UpdateResponseVpnGateway:
         self._ha_mode = ha_mode
 
     @property
-    def master_eip(self):
-        """Gets the master_eip of this UpdateResponseVpnGateway.
-
-        :return: The master_eip of this UpdateResponseVpnGateway.
-        :rtype: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        """
-        return self._master_eip
-
-    @master_eip.setter
-    def master_eip(self, master_eip):
-        """Sets the master_eip of this UpdateResponseVpnGateway.
-
-        :param master_eip: The master_eip of this UpdateResponseVpnGateway.
-        :type master_eip: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        """
-        self._master_eip = master_eip
-
-    @property
-    def slave_eip(self):
-        """Gets the slave_eip of this UpdateResponseVpnGateway.
-
-        :return: The slave_eip of this UpdateResponseVpnGateway.
-        :rtype: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        """
-        return self._slave_eip
-
-    @slave_eip.setter
-    def slave_eip(self, slave_eip):
-        """Sets the slave_eip of this UpdateResponseVpnGateway.
-
-        :param slave_eip: The slave_eip of this UpdateResponseVpnGateway.
-        :type slave_eip: :class:`huaweicloudsdkvpn.v5.ResponseEip`
-        """
-        self._slave_eip = slave_eip
-
-    @property
     def eip1(self):
         """Gets the eip1 of this UpdateResponseVpnGateway.
 
@@ -800,6 +760,46 @@ class UpdateResponseVpnGateway:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def policy_template(self):
+        """Gets the policy_template of this UpdateResponseVpnGateway.
+
+        :return: The policy_template of this UpdateResponseVpnGateway.
+        :rtype: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
+        """
+        return self._policy_template
+
+    @policy_template.setter
+    def policy_template(self, policy_template):
+        """Sets the policy_template of this UpdateResponseVpnGateway.
+
+        :param policy_template: The policy_template of this UpdateResponseVpnGateway.
+        :type policy_template: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
+        """
+        self._policy_template = policy_template
+
+    @property
+    def tags(self):
+        """Gets the tags of this UpdateResponseVpnGateway.
+
+        标签
+
+        :return: The tags of this UpdateResponseVpnGateway.
+        :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this UpdateResponseVpnGateway.
+
+        标签
+
+        :param tags: The tags of this UpdateResponseVpnGateway.
+        :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

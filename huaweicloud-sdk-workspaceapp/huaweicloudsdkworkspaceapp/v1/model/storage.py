@@ -31,9 +31,9 @@ class Storage:
 
         The model defined in huaweicloud sdk
 
-        :param storage_handle: SFS文件系统名称
+        :param storage_handle: SFS文件系统名称。
         :type storage_handle: str
-        :param storage_class: 存储类型 * &#x60;sfs&#x60; - sfs3.0存储
+        :param storage_class: 存储类型： * &#x60;sfs&#x60; - sfs3.0存储。
         :type storage_class: str
         """
         
@@ -50,7 +50,7 @@ class Storage:
     def storage_handle(self):
         """Gets the storage_handle of this Storage.
 
-        SFS文件系统名称
+        SFS文件系统名称。
 
         :return: The storage_handle of this Storage.
         :rtype: str
@@ -61,7 +61,7 @@ class Storage:
     def storage_handle(self, storage_handle):
         """Sets the storage_handle of this Storage.
 
-        SFS文件系统名称
+        SFS文件系统名称。
 
         :param storage_handle: The storage_handle of this Storage.
         :type storage_handle: str
@@ -72,7 +72,7 @@ class Storage:
     def storage_class(self):
         """Gets the storage_class of this Storage.
 
-        存储类型 * `sfs` - sfs3.0存储
+        存储类型： * `sfs` - sfs3.0存储。
 
         :return: The storage_class of this Storage.
         :rtype: str
@@ -83,7 +83,7 @@ class Storage:
     def storage_class(self, storage_class):
         """Sets the storage_class of this Storage.
 
-        存储类型 * `sfs` - sfs3.0存储
+        存储类型： * `sfs` - sfs3.0存储。
 
         :param storage_class: The storage_class of this Storage.
         :type storage_class: str

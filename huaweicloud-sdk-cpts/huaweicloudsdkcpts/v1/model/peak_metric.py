@@ -37,11 +37,11 @@ class PeakMetric:
 
         The model defined in huaweicloud sdk
 
-        :param vuser: vusers
+        :param vuser: 虚拟用户数
         :type vuser: int
-        :param rps: tps
+        :param rps: 每秒事务数
         :type rps: float
-        :param avg_rt: avgRT
+        :param avg_rt: 平均响应时间
         :type avg_rt: float
         :param success_rate: 成功率
         :type success_rate: float
@@ -73,7 +73,7 @@ class PeakMetric:
     def vuser(self):
         """Gets the vuser of this PeakMetric.
 
-        vusers
+        虚拟用户数
 
         :return: The vuser of this PeakMetric.
         :rtype: int
@@ -84,7 +84,7 @@ class PeakMetric:
     def vuser(self, vuser):
         """Sets the vuser of this PeakMetric.
 
-        vusers
+        虚拟用户数
 
         :param vuser: The vuser of this PeakMetric.
         :type vuser: int
@@ -95,7 +95,7 @@ class PeakMetric:
     def rps(self):
         """Gets the rps of this PeakMetric.
 
-        tps
+        每秒事务数
 
         :return: The rps of this PeakMetric.
         :rtype: float
@@ -106,7 +106,7 @@ class PeakMetric:
     def rps(self, rps):
         """Sets the rps of this PeakMetric.
 
-        tps
+        每秒事务数
 
         :param rps: The rps of this PeakMetric.
         :type rps: float
@@ -117,7 +117,7 @@ class PeakMetric:
     def avg_rt(self):
         """Gets the avg_rt of this PeakMetric.
 
-        avgRT
+        平均响应时间
 
         :return: The avg_rt of this PeakMetric.
         :rtype: float
@@ -128,7 +128,7 @@ class PeakMetric:
     def avg_rt(self, avg_rt):
         """Sets the avg_rt of this PeakMetric.
 
-        avgRT
+        平均响应时间
 
         :param avg_rt: The avg_rt of this PeakMetric.
         :type avg_rt: float

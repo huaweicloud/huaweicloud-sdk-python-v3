@@ -29,7 +29,7 @@ class DeleteAlarmRulesBody:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_rules: 阈值规则列表
+        :param alarm_rules: 要删除的规则名称
         :type alarm_rules: list[str]
         """
         
@@ -44,7 +44,7 @@ class DeleteAlarmRulesBody:
     def alarm_rules(self):
         """Gets the alarm_rules of this DeleteAlarmRulesBody.
 
-        阈值规则列表
+        要删除的规则名称
 
         :return: The alarm_rules of this DeleteAlarmRulesBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class DeleteAlarmRulesBody:
     def alarm_rules(self, alarm_rules):
         """Sets the alarm_rules of this DeleteAlarmRulesBody.
 
-        阈值规则列表
+        要删除的规则名称
 
         :param alarm_rules: The alarm_rules of this DeleteAlarmRulesBody.
         :type alarm_rules: list[str]

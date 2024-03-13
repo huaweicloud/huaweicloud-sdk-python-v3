@@ -150,7 +150,7 @@ class ShowInstanceResponse(SdkResponse):
         :type engine_version: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param charging_mode: [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb)
+        :param charging_mode: [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
         :type charging_mode: int
         :param vpc_id: 私有云ID。
         :type vpc_id: str
@@ -168,7 +168,7 @@ class ShowInstanceResponse(SdkResponse):
         :type subnet_id: str
         :param subnet_name: 子网名称。
         :type subnet_name: str
-        :param subnet_cidr: 子网路由。
+        :param subnet_cidr: 子网路由（仅RocketMQ 5.x版本会显示此字段）。
         :type subnet_cidr: str
         :param available_zones: IO未售罄的可用区列表。
         :type available_zones: list[str]
@@ -220,7 +220,7 @@ class ShowInstanceResponse(SdkResponse):
         :type new_spec_billing_enable: bool
         :param enable_acl: 是否开启访问控制列表。
         :type enable_acl: bool
-        :param broker_num: 节点数。
+        :param broker_num: 节点数（仅RocketMQ 4.8.0版本会显示此字段）。
         :type broker_num: int
         :param namesrv_address: 元数据地址。
         :type namesrv_address: str
@@ -230,9 +230,9 @@ class ShowInstanceResponse(SdkResponse):
         :type public_namesrv_address: str
         :param public_broker_address: 公网业务数据地址。
         :type public_broker_address: str
-        :param grpc_address: grpc连接地址。
+        :param grpc_address: grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
         :type grpc_address: str
-        :param public_grpc_address: 公网grpc连接地址。
+        :param public_grpc_address: 公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
         :type public_grpc_address: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
@@ -586,7 +586,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResponse.
 
-        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb)
+        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
 
         :return: The charging_mode of this ShowInstanceResponse.
         :rtype: int
@@ -597,7 +597,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResponse.
 
-        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb)
+        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
 
         :param charging_mode: The charging_mode of this ShowInstanceResponse.
         :type charging_mode: int
@@ -784,7 +784,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_cidr(self):
         """Gets the subnet_cidr of this ShowInstanceResponse.
 
-        子网路由。
+        子网路由（仅RocketMQ 5.x版本会显示此字段）。
 
         :return: The subnet_cidr of this ShowInstanceResponse.
         :rtype: str
@@ -795,7 +795,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_cidr(self, subnet_cidr):
         """Sets the subnet_cidr of this ShowInstanceResponse.
 
-        子网路由。
+        子网路由（仅RocketMQ 5.x版本会显示此字段）。
 
         :param subnet_cidr: The subnet_cidr of this ShowInstanceResponse.
         :type subnet_cidr: str
@@ -1356,7 +1356,7 @@ class ShowInstanceResponse(SdkResponse):
     def broker_num(self):
         """Gets the broker_num of this ShowInstanceResponse.
 
-        节点数。
+        节点数（仅RocketMQ 4.8.0版本会显示此字段）。
 
         :return: The broker_num of this ShowInstanceResponse.
         :rtype: int
@@ -1367,7 +1367,7 @@ class ShowInstanceResponse(SdkResponse):
     def broker_num(self, broker_num):
         """Sets the broker_num of this ShowInstanceResponse.
 
-        节点数。
+        节点数（仅RocketMQ 4.8.0版本会显示此字段）。
 
         :param broker_num: The broker_num of this ShowInstanceResponse.
         :type broker_num: int
@@ -1466,7 +1466,7 @@ class ShowInstanceResponse(SdkResponse):
     def grpc_address(self):
         """Gets the grpc_address of this ShowInstanceResponse.
 
-        grpc连接地址。
+        grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
 
         :return: The grpc_address of this ShowInstanceResponse.
         :rtype: str
@@ -1477,7 +1477,7 @@ class ShowInstanceResponse(SdkResponse):
     def grpc_address(self, grpc_address):
         """Sets the grpc_address of this ShowInstanceResponse.
 
-        grpc连接地址。
+        grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
 
         :param grpc_address: The grpc_address of this ShowInstanceResponse.
         :type grpc_address: str
@@ -1488,7 +1488,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_grpc_address(self):
         """Gets the public_grpc_address of this ShowInstanceResponse.
 
-        公网grpc连接地址。
+        公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
 
         :return: The public_grpc_address of this ShowInstanceResponse.
         :rtype: str
@@ -1499,7 +1499,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_grpc_address(self, public_grpc_address):
         """Sets the public_grpc_address of this ShowInstanceResponse.
 
-        公网grpc连接地址。
+        公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
 
         :param public_grpc_address: The public_grpc_address of this ShowInstanceResponse.
         :type public_grpc_address: str

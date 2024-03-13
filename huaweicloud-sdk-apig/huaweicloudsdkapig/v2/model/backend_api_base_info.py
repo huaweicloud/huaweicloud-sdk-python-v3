@@ -47,11 +47,11 @@ class BackendApiBaseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param authorizer_id: 后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
+        :param authorizer_id: 后端自定义认证对象的ID
         :type authorizer_id: str
         :param url_domain: 后端服务的地址。   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
         :type url_domain: str
-        :param req_protocol: 请求协议，后端类型为GRPC时请求协议可选GRPCS
+        :param req_protocol: 请求协议，后端类型为GRPC时请求协议可选GRPC、GRPCS
         :type req_protocol: str
         :param remark: 描述。字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
@@ -104,7 +104,7 @@ class BackendApiBaseInfo:
     def authorizer_id(self):
         """Gets the authorizer_id of this BackendApiBaseInfo.
 
-        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
+        后端自定义认证对象的ID
 
         :return: The authorizer_id of this BackendApiBaseInfo.
         :rtype: str
@@ -115,7 +115,7 @@ class BackendApiBaseInfo:
     def authorizer_id(self, authorizer_id):
         """Sets the authorizer_id of this BackendApiBaseInfo.
 
-        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
+        后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this BackendApiBaseInfo.
         :type authorizer_id: str
@@ -148,7 +148,7 @@ class BackendApiBaseInfo:
     def req_protocol(self):
         """Gets the req_protocol of this BackendApiBaseInfo.
 
-        请求协议，后端类型为GRPC时请求协议可选GRPCS
+        请求协议，后端类型为GRPC时请求协议可选GRPC、GRPCS
 
         :return: The req_protocol of this BackendApiBaseInfo.
         :rtype: str
@@ -159,7 +159,7 @@ class BackendApiBaseInfo:
     def req_protocol(self, req_protocol):
         """Sets the req_protocol of this BackendApiBaseInfo.
 
-        请求协议，后端类型为GRPC时请求协议可选GRPCS
+        请求协议，后端类型为GRPC时请求协议可选GRPC、GRPCS
 
         :param req_protocol: The req_protocol of this BackendApiBaseInfo.
         :type req_protocol: str

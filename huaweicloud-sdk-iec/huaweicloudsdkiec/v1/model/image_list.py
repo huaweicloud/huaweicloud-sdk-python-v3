@@ -45,7 +45,8 @@ class ImageList:
         'support_arm': 'str',
         'hw_firmware_type': 'str',
         'data_source': 'str',
-        'support_gpu_t4': 'str'
+        'support_gpu_t4': 'str',
+        'support_amd': 'str'
     }
 
     attribute_map = {
@@ -77,10 +78,11 @@ class ImageList:
         'support_arm': '__support_arm',
         'hw_firmware_type': 'hw_firmware_type',
         'data_source': 'data_source',
-        'support_gpu_t4': '__support_gpu_t4'
+        'support_gpu_t4': '__support_gpu_t4',
+        'support_amd': '__support_amd'
     }
 
-    def __init__(self, id=None, name=None, status=None, disk_format=None, min_disk=None, min_ram=None, owner=None, protected=None, visibility=None, created_at=None, updated_at=None, _self=None, deleted=None, virtual_env_type=None, deleted_at=None, relation_job_id=None, imagetype=None, platform=None, os_type=None, os_version=None, isregistered=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_ascend_310=None, support_kvm_hi1822_hiovs=None, support_arm=None, hw_firmware_type=None, data_source=None, support_gpu_t4=None):
+    def __init__(self, id=None, name=None, status=None, disk_format=None, min_disk=None, min_ram=None, owner=None, protected=None, visibility=None, created_at=None, updated_at=None, _self=None, deleted=None, virtual_env_type=None, deleted_at=None, relation_job_id=None, imagetype=None, platform=None, os_type=None, os_version=None, isregistered=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_ascend_310=None, support_kvm_hi1822_hiovs=None, support_arm=None, hw_firmware_type=None, data_source=None, support_gpu_t4=None, support_amd=None):
         """ImageList
 
         The model defined in huaweicloud sdk
@@ -143,6 +145,8 @@ class ImageList:
         :type data_source: str
         :param support_gpu_t4: 如果镜像支持GPU T4类型，取值为true，否则无该属性。
         :type support_gpu_t4: str
+        :param support_amd: 是否是AMD架构类型的镜像。取值为“true”或者“false”。
+        :type support_amd: str
         """
         
         
@@ -176,6 +180,7 @@ class ImageList:
         self._hw_firmware_type = None
         self._data_source = None
         self._support_gpu_t4 = None
+        self._support_amd = None
         self.discriminator = None
 
         if id is not None:
@@ -236,6 +241,8 @@ class ImageList:
             self.data_source = data_source
         if support_gpu_t4 is not None:
             self.support_gpu_t4 = support_gpu_t4
+        if support_amd is not None:
+            self.support_amd = support_amd
 
     @property
     def id(self):
@@ -874,6 +881,28 @@ class ImageList:
         :type support_gpu_t4: str
         """
         self._support_gpu_t4 = support_gpu_t4
+
+    @property
+    def support_amd(self):
+        """Gets the support_amd of this ImageList.
+
+        是否是AMD架构类型的镜像。取值为“true”或者“false”。
+
+        :return: The support_amd of this ImageList.
+        :rtype: str
+        """
+        return self._support_amd
+
+    @support_amd.setter
+    def support_amd(self, support_amd):
+        """Sets the support_amd of this ImageList.
+
+        是否是AMD架构类型的镜像。取值为“true”或者“false”。
+
+        :param support_amd: The support_amd of this ImageList.
+        :type support_amd: str
+        """
+        self._support_amd = support_amd
 
     def to_dict(self):
         """Returns the model properties as a dict"""

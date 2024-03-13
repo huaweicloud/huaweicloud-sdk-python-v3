@@ -18,15 +18,17 @@ class ListFile:
 
     openapi_types = {
         'list_file_key': 'str',
-        'obs_bucket': 'str'
+        'obs_bucket': 'str',
+        'list_file_num': 'str'
     }
 
     attribute_map = {
         'list_file_key': 'list_file_key',
-        'obs_bucket': 'obs_bucket'
+        'obs_bucket': 'obs_bucket',
+        'list_file_num': 'list_file_num'
     }
 
-    def __init__(self, list_file_key=None, obs_bucket=None):
+    def __init__(self, list_file_key=None, obs_bucket=None, list_file_num=None):
         """ListFile
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class ListFile:
         :type list_file_key: str
         :param obs_bucket: 存放对象列表文件的OBS桶名。  请确保与目的端桶处于同一区域，否则将导致任务创建失败。
         :type obs_bucket: str
+        :param list_file_num: 存放对象列表文件的数量
+        :type list_file_num: str
         """
         
         
 
         self._list_file_key = None
         self._obs_bucket = None
+        self._list_file_num = None
         self.discriminator = None
 
         self.list_file_key = list_file_key
         self.obs_bucket = obs_bucket
+        if list_file_num is not None:
+            self.list_file_num = list_file_num
 
     @property
     def list_file_key(self):
@@ -89,6 +96,28 @@ class ListFile:
         :type obs_bucket: str
         """
         self._obs_bucket = obs_bucket
+
+    @property
+    def list_file_num(self):
+        """Gets the list_file_num of this ListFile.
+
+        存放对象列表文件的数量
+
+        :return: The list_file_num of this ListFile.
+        :rtype: str
+        """
+        return self._list_file_num
+
+    @list_file_num.setter
+    def list_file_num(self, list_file_num):
+        """Sets the list_file_num of this ListFile.
+
+        存放对象列表文件的数量
+
+        :param list_file_num: The list_file_num of this ListFile.
+        :type list_file_num: str
+        """
+        self._list_file_num = list_file_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

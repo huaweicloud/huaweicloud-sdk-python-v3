@@ -33,11 +33,11 @@ class RoutePolicy:
 
         The model defined in huaweicloud sdk
 
-        :param max_session: 单台服务器最大的链接会话数
+        :param max_session: 单台服务器最大的链接会话数。
         :type max_session: int
-        :param cpu_threshold: cpu使用率阈值，单位为%
+        :param cpu_threshold: cpu使用率阈值，单位为%。
         :type cpu_threshold: int
-        :param mem_threshold: 内存使用率阈值，单位为%
+        :param mem_threshold: 内存使用率阈值，单位为%。
         :type mem_threshold: int
         """
         
@@ -59,7 +59,7 @@ class RoutePolicy:
     def max_session(self):
         """Gets the max_session of this RoutePolicy.
 
-        单台服务器最大的链接会话数
+        单台服务器最大的链接会话数。
 
         :return: The max_session of this RoutePolicy.
         :rtype: int
@@ -70,7 +70,7 @@ class RoutePolicy:
     def max_session(self, max_session):
         """Sets the max_session of this RoutePolicy.
 
-        单台服务器最大的链接会话数
+        单台服务器最大的链接会话数。
 
         :param max_session: The max_session of this RoutePolicy.
         :type max_session: int
@@ -81,7 +81,7 @@ class RoutePolicy:
     def cpu_threshold(self):
         """Gets the cpu_threshold of this RoutePolicy.
 
-        cpu使用率阈值，单位为%
+        cpu使用率阈值，单位为%。
 
         :return: The cpu_threshold of this RoutePolicy.
         :rtype: int
@@ -92,7 +92,7 @@ class RoutePolicy:
     def cpu_threshold(self, cpu_threshold):
         """Sets the cpu_threshold of this RoutePolicy.
 
-        cpu使用率阈值，单位为%
+        cpu使用率阈值，单位为%。
 
         :param cpu_threshold: The cpu_threshold of this RoutePolicy.
         :type cpu_threshold: int
@@ -103,7 +103,7 @@ class RoutePolicy:
     def mem_threshold(self):
         """Gets the mem_threshold of this RoutePolicy.
 
-        内存使用率阈值，单位为%
+        内存使用率阈值，单位为%。
 
         :return: The mem_threshold of this RoutePolicy.
         :rtype: int
@@ -114,7 +114,7 @@ class RoutePolicy:
     def mem_threshold(self, mem_threshold):
         """Sets the mem_threshold of this RoutePolicy.
 
-        内存使用率阈值，单位为%
+        内存使用率阈值，单位为%。
 
         :param mem_threshold: The mem_threshold of this RoutePolicy.
         :type mem_threshold: int

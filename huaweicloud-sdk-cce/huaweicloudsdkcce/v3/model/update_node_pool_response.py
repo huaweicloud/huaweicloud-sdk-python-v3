@@ -22,7 +22,7 @@ class UpdateNodePoolResponse(SdkResponse):
         'api_version': 'str',
         'metadata': 'NodePoolMetadata',
         'spec': 'NodePoolSpec',
-        'status': 'NodePoolStatus'
+        'status': 'UpdateNodePoolStatus'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class UpdateNodePoolResponse(SdkResponse):
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
         :param status: 
-        :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
+        :type status: :class:`huaweicloudsdkcce.v3.UpdateNodePoolStatus`
         """
         
         super(UpdateNodePoolResponse, self).__init__()
@@ -155,7 +155,7 @@ class UpdateNodePoolResponse(SdkResponse):
         """Gets the status of this UpdateNodePoolResponse.
 
         :return: The status of this UpdateNodePoolResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodePoolStatus`
         """
         return self._status
 
@@ -164,7 +164,7 @@ class UpdateNodePoolResponse(SdkResponse):
         """Sets the status of this UpdateNodePoolResponse.
 
         :param status: The status of this UpdateNodePoolResponse.
-        :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
+        :type status: :class:`huaweicloudsdkcce.v3.UpdateNodePoolStatus`
         """
         self._status = status
 

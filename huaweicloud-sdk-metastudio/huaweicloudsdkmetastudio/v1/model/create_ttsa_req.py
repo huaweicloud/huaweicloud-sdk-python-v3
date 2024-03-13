@@ -18,35 +18,45 @@ class CreateTTSAReq:
 
     openapi_types = {
         'voice_asset_id': 'str',
+        'script_type': 'str',
         'text': 'str',
+        'audio_file_download_url': 'str',
         'speed': 'int',
         'pitch': 'int',
         'volume': 'int',
         'emotion': 'str',
         'style_id': 'str',
-        'camera_position': 'str'
+        'camera_position': 'str',
+        'job_type': 'str'
     }
 
     attribute_map = {
         'voice_asset_id': 'voice_asset_id',
+        'script_type': 'script_type',
         'text': 'text',
+        'audio_file_download_url': 'audio_file_download_url',
         'speed': 'speed',
         'pitch': 'pitch',
         'volume': 'volume',
         'emotion': 'emotion',
         'style_id': 'style_id',
-        'camera_position': 'camera_position'
+        'camera_position': 'camera_position',
+        'job_type': 'job_type'
     }
 
-    def __init__(self, voice_asset_id=None, text=None, speed=None, pitch=None, volume=None, emotion=None, style_id=None, camera_position=None):
+    def __init__(self, voice_asset_id=None, script_type=None, text=None, audio_file_download_url=None, speed=None, pitch=None, volume=None, emotion=None, style_id=None, camera_position=None, job_type=None):
         """CreateTTSAReq
 
         The model defined in huaweicloud sdk
 
-        :param voice_asset_id: 音色模型ID
+        :param voice_asset_id: 音色模型ID。需要使用MetaStudio的数字资产管理相关接口从资产库查出。
         :type voice_asset_id: str
+        :param script_type: 脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+        :type script_type: str
         :param text: HTML格式的台词，可包含动作。最多2048个字符。 &gt; * HTML格式举例：\\&lt;speak&gt;大家好&lt;insert-action id&#x3D;\\\&quot;14cc7bbcde4982aab82f9d9af9e0f743\\\&quot;/&gt;，非常高兴给大家介绍MetaStudio。\\&lt;/speak&gt; &gt; * insert-action id通过查询资产列表接口获取，查询时asset_type&#x3D;ANIMATION &gt; * 多音字标签：\\&lt;phoneme ph&#x3D;\\\&quot;拼音\\\&quot;&gt;汉字\\&lt;/phoneme&gt;，南京\\&lt;phoneme ph&#x3D;\\\&quot;shi4 zhang3\\\&quot;&gt;市长\\&lt;/phoneme&gt;江大桥。 &gt; * 停顿标签：\\&lt;break/&gt;，中方一贯主张\\&lt;break/&gt;维护国家主权平等，不干涉他国内政\\&lt;break time&#x3D;\\\&quot;300ms\\\&quot;/&gt;是联合国宪章\\&lt;break time&#x3D;\\\&quot;500ms\\\&quot;/&gt;最重要的原则。
         :type text: str
+        :param audio_file_download_url: 语音驱动音频文件下载URL。
+        :type audio_file_download_url: str
         :param speed: 语速。  取值范围[50,200]   默认值：100
         :type speed: int
         :param pitch: 基频。  取值范围[50,200]  默认值：100
@@ -55,26 +65,36 @@ class CreateTTSAReq:
         :type volume: int
         :param emotion: 情感标签。 * ANGER：愤怒 * HAPPY：开心 * SAD：悲伤 * CALM：平静
         :type emotion: str
-        :param style_id: 风格化ID。
+        :param style_id: 风格化ID。需要调用数字人风格管理相关接口，从系统重查得。
         :type style_id: str
         :param camera_position: 人位置及相机位置。由如下4组浮点数组成的字符：人位置的X/Y/Z值，人角度的Pitch/Yaw/Roll值；相机位置的X/Y/Z值，相机角度的Pitch/Yaw/Roll值。
         :type camera_position: str
+        :param job_type: 任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
+        :type job_type: str
         """
         
         
 
         self._voice_asset_id = None
+        self._script_type = None
         self._text = None
+        self._audio_file_download_url = None
         self._speed = None
         self._pitch = None
         self._volume = None
         self._emotion = None
         self._style_id = None
         self._camera_position = None
+        self._job_type = None
         self.discriminator = None
 
         self.voice_asset_id = voice_asset_id
-        self.text = text
+        if script_type is not None:
+            self.script_type = script_type
+        if text is not None:
+            self.text = text
+        if audio_file_download_url is not None:
+            self.audio_file_download_url = audio_file_download_url
         if speed is not None:
             self.speed = speed
         if pitch is not None:
@@ -83,16 +103,17 @@ class CreateTTSAReq:
             self.volume = volume
         if emotion is not None:
             self.emotion = emotion
-        if style_id is not None:
-            self.style_id = style_id
+        self.style_id = style_id
         if camera_position is not None:
             self.camera_position = camera_position
+        if job_type is not None:
+            self.job_type = job_type
 
     @property
     def voice_asset_id(self):
         """Gets the voice_asset_id of this CreateTTSAReq.
 
-        音色模型ID
+        音色模型ID。需要使用MetaStudio的数字资产管理相关接口从资产库查出。
 
         :return: The voice_asset_id of this CreateTTSAReq.
         :rtype: str
@@ -103,12 +124,34 @@ class CreateTTSAReq:
     def voice_asset_id(self, voice_asset_id):
         """Sets the voice_asset_id of this CreateTTSAReq.
 
-        音色模型ID
+        音色模型ID。需要使用MetaStudio的数字资产管理相关接口从资产库查出。
 
         :param voice_asset_id: The voice_asset_id of this CreateTTSAReq.
         :type voice_asset_id: str
         """
         self._voice_asset_id = voice_asset_id
+
+    @property
+    def script_type(self):
+        """Gets the script_type of this CreateTTSAReq.
+
+        脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+
+        :return: The script_type of this CreateTTSAReq.
+        :rtype: str
+        """
+        return self._script_type
+
+    @script_type.setter
+    def script_type(self, script_type):
+        """Sets the script_type of this CreateTTSAReq.
+
+        脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
+
+        :param script_type: The script_type of this CreateTTSAReq.
+        :type script_type: str
+        """
+        self._script_type = script_type
 
     @property
     def text(self):
@@ -131,6 +174,28 @@ class CreateTTSAReq:
         :type text: str
         """
         self._text = text
+
+    @property
+    def audio_file_download_url(self):
+        """Gets the audio_file_download_url of this CreateTTSAReq.
+
+        语音驱动音频文件下载URL。
+
+        :return: The audio_file_download_url of this CreateTTSAReq.
+        :rtype: str
+        """
+        return self._audio_file_download_url
+
+    @audio_file_download_url.setter
+    def audio_file_download_url(self, audio_file_download_url):
+        """Sets the audio_file_download_url of this CreateTTSAReq.
+
+        语音驱动音频文件下载URL。
+
+        :param audio_file_download_url: The audio_file_download_url of this CreateTTSAReq.
+        :type audio_file_download_url: str
+        """
+        self._audio_file_download_url = audio_file_download_url
 
     @property
     def speed(self):
@@ -224,7 +289,7 @@ class CreateTTSAReq:
     def style_id(self):
         """Gets the style_id of this CreateTTSAReq.
 
-        风格化ID。
+        风格化ID。需要调用数字人风格管理相关接口，从系统重查得。
 
         :return: The style_id of this CreateTTSAReq.
         :rtype: str
@@ -235,7 +300,7 @@ class CreateTTSAReq:
     def style_id(self, style_id):
         """Sets the style_id of this CreateTTSAReq.
 
-        风格化ID。
+        风格化ID。需要调用数字人风格管理相关接口，从系统重查得。
 
         :param style_id: The style_id of this CreateTTSAReq.
         :type style_id: str
@@ -263,6 +328,28 @@ class CreateTTSAReq:
         :type camera_position: str
         """
         self._camera_position = camera_position
+
+    @property
+    def job_type(self):
+        """Gets the job_type of this CreateTTSAReq.
+
+        任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
+
+        :return: The job_type of this CreateTTSAReq.
+        :rtype: str
+        """
+        return self._job_type
+
+    @job_type.setter
+    def job_type(self, job_type):
+        """Sets the job_type of this CreateTTSAReq.
+
+        任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
+
+        :param job_type: The job_type of this CreateTTSAReq.
+        :type job_type: str
+        """
+        self._job_type = job_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

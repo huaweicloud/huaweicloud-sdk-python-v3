@@ -21,7 +21,7 @@ class CreateAssetByFileUploadReq:
         'description': 'str',
         'video_name': 'str',
         'video_type': 'str',
-        'category_id': 'str',
+        'category_id': 'int',
         'video_md5': 'str',
         'cover_type': 'str',
         'cover_md5': 'str',
@@ -70,7 +70,7 @@ class CreateAssetByFileUploadReq:
         :param video_type: 上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
         :type video_type: str
         :param category_id: 媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  &gt; 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
-        :type category_id: str
+        :type category_id: int
         :param video_md5: 视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
         :type video_md5: str
         :param cover_type: 封面图片文件类型。  取值如下： - JPG - PNG  上传后的封面名称是固定的，后缀名为封面类型缩写。例如cover0.jpg，cover1.png 若不指定类型，则封面文件无后缀名。  &gt; 如果设置了图片格式，则不会执行首帧截图作为封面动作，需自行上传封面。
@@ -245,7 +245,7 @@ class CreateAssetByFileUploadReq:
         媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  > 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
 
         :return: The category_id of this CreateAssetByFileUploadReq.
-        :rtype: str
+        :rtype: int
         """
         return self._category_id
 
@@ -256,7 +256,7 @@ class CreateAssetByFileUploadReq:
         媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  > 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
 
         :param category_id: The category_id of this CreateAssetByFileUploadReq.
-        :type category_id: str
+        :type category_id: int
         """
         self._category_id = category_id
 

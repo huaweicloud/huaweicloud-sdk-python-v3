@@ -38,7 +38,7 @@ class ListProductResponse(SdkResponse):
         :type availability_zone: str
         :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
         :type os_type: str
-        :param products: 产品列表
+        :param products: 产品列表。
         :type products: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`]
         """
         
@@ -104,7 +104,7 @@ class ListProductResponse(SdkResponse):
     def products(self):
         """Gets the products of this ListProductResponse.
 
-        产品列表
+        产品列表。
 
         :return: The products of this ListProductResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`]
@@ -115,7 +115,7 @@ class ListProductResponse(SdkResponse):
     def products(self, products):
         """Sets the products of this ListProductResponse.
 
-        产品列表
+        产品列表。
 
         :param products: The products of this ListProductResponse.
         :type products: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`]

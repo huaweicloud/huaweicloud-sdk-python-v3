@@ -21,9 +21,11 @@ class CreateDigitalAssetRequestBody:
         'asset_description': 'str',
         'asset_type': 'str',
         'asset_owner': 'str',
+        'review_config': 'ReviewConfig',
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
-        'system_properties': 'list[SystemProperty]'
+        'system_properties': 'list[SystemProperty]',
+        'shared_config': 'SharedConfig'
     }
 
     attribute_map = {
@@ -31,12 +33,14 @@ class CreateDigitalAssetRequestBody:
         'asset_description': 'asset_description',
         'asset_type': 'asset_type',
         'asset_owner': 'asset_owner',
+        'review_config': 'review_config',
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
-        'system_properties': 'system_properties'
+        'system_properties': 'system_properties',
+        'shared_config': 'shared_config'
     }
 
-    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_owner=None, tags=None, asset_extra_meta=None, system_properties=None):
+    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None):
         """CreateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,16 +49,20 @@ class CreateDigitalAssetRequestBody:
         :type asset_name: str
         :param asset_description: 资产描述。
         :type asset_description: str
-        :param asset_type: 资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        :param asset_type: 资产类型。  公共资产类型： * VOICE_MODEL：音色模型（仅系统管理员可上传，普通租户仅可查询） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
         :type asset_type: str
-        :param asset_owner: 项目ID。
+        :param asset_owner: 项目ID。 &gt; * 仅管理员帐号可设置此参数。
         :type asset_owner: str
+        :param review_config: 
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param tags: 标签列表。
         :type tags: list[str]
         :param asset_extra_meta: 
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
         :param system_properties: 设置系统属性。
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
+        :param shared_config: 
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         """
         
         
@@ -63,9 +71,11 @@ class CreateDigitalAssetRequestBody:
         self._asset_description = None
         self._asset_type = None
         self._asset_owner = None
+        self._review_config = None
         self._tags = None
         self._asset_extra_meta = None
         self._system_properties = None
+        self._shared_config = None
         self.discriminator = None
 
         self.asset_name = asset_name
@@ -74,12 +84,16 @@ class CreateDigitalAssetRequestBody:
         self.asset_type = asset_type
         if asset_owner is not None:
             self.asset_owner = asset_owner
+        if review_config is not None:
+            self.review_config = review_config
         if tags is not None:
             self.tags = tags
         if asset_extra_meta is not None:
             self.asset_extra_meta = asset_extra_meta
         if system_properties is not None:
             self.system_properties = system_properties
+        if shared_config is not None:
+            self.shared_config = shared_config
 
     @property
     def asset_name(self):
@@ -129,7 +143,7 @@ class CreateDigitalAssetRequestBody:
     def asset_type(self):
         """Gets the asset_type of this CreateDigitalAssetRequestBody.
 
-        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        资产类型。  公共资产类型： * VOICE_MODEL：音色模型（仅系统管理员可上传，普通租户仅可查询） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
         :return: The asset_type of this CreateDigitalAssetRequestBody.
         :rtype: str
@@ -140,7 +154,7 @@ class CreateDigitalAssetRequestBody:
     def asset_type(self, asset_type):
         """Sets the asset_type of this CreateDigitalAssetRequestBody.
 
-        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        资产类型。  公共资产类型： * VOICE_MODEL：音色模型（仅系统管理员可上传，普通租户仅可查询） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
         :param asset_type: The asset_type of this CreateDigitalAssetRequestBody.
         :type asset_type: str
@@ -151,7 +165,7 @@ class CreateDigitalAssetRequestBody:
     def asset_owner(self):
         """Gets the asset_owner of this CreateDigitalAssetRequestBody.
 
-        项目ID。
+        项目ID。 > * 仅管理员帐号可设置此参数。
 
         :return: The asset_owner of this CreateDigitalAssetRequestBody.
         :rtype: str
@@ -162,12 +176,30 @@ class CreateDigitalAssetRequestBody:
     def asset_owner(self, asset_owner):
         """Sets the asset_owner of this CreateDigitalAssetRequestBody.
 
-        项目ID。
+        项目ID。 > * 仅管理员帐号可设置此参数。
 
         :param asset_owner: The asset_owner of this CreateDigitalAssetRequestBody.
         :type asset_owner: str
         """
         self._asset_owner = asset_owner
+
+    @property
+    def review_config(self):
+        """Gets the review_config of this CreateDigitalAssetRequestBody.
+
+        :return: The review_config of this CreateDigitalAssetRequestBody.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        return self._review_config
+
+    @review_config.setter
+    def review_config(self, review_config):
+        """Sets the review_config of this CreateDigitalAssetRequestBody.
+
+        :param review_config: The review_config of this CreateDigitalAssetRequestBody.
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        self._review_config = review_config
 
     @property
     def tags(self):
@@ -230,6 +262,24 @@ class CreateDigitalAssetRequestBody:
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         """
         self._system_properties = system_properties
+
+    @property
+    def shared_config(self):
+        """Gets the shared_config of this CreateDigitalAssetRequestBody.
+
+        :return: The shared_config of this CreateDigitalAssetRequestBody.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        return self._shared_config
+
+    @shared_config.setter
+    def shared_config(self, shared_config):
+        """Sets the shared_config of this CreateDigitalAssetRequestBody.
+
+        :param shared_config: The shared_config of this CreateDigitalAssetRequestBody.
+        :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        """
+        self._shared_config = shared_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,6 +17,7 @@ class ListOverviewsClassificationRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'enterprise_project_id': 'str',
         '_from': 'int',
         'to': 'int',
@@ -26,6 +27,7 @@ class ListOverviewsClassificationRequest:
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'enterprise_project_id': 'enterprise_project_id',
         '_from': 'from',
         'to': 'to',
@@ -34,11 +36,13 @@ class ListOverviewsClassificationRequest:
         'instances': 'instances'
     }
 
-    def __init__(self, enterprise_project_id=None, _from=None, to=None, top=None, hosts=None, instances=None):
+    def __init__(self, x_language=None, enterprise_project_id=None, _from=None, to=None, top=None, hosts=None, instances=None):
         """ListOverviewsClassificationRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_language: 语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+        :type x_language: str
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param _from: 起始时间（13位毫秒时间戳），需要和to同时使用
@@ -55,6 +59,7 @@ class ListOverviewsClassificationRequest:
         
         
 
+        self._x_language = None
         self._enterprise_project_id = None
         self.__from = None
         self._to = None
@@ -63,6 +68,8 @@ class ListOverviewsClassificationRequest:
         self._instances = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self._from = _from
@@ -73,6 +80,28 @@ class ListOverviewsClassificationRequest:
             self.hosts = hosts
         if instances is not None:
             self.instances = instances
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ListOverviewsClassificationRequest.
+
+        语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+
+        :return: The x_language of this ListOverviewsClassificationRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ListOverviewsClassificationRequest.
+
+        语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+
+        :param x_language: The x_language of this ListOverviewsClassificationRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     @property
     def enterprise_project_id(self):

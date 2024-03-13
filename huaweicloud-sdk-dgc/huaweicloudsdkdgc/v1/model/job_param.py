@@ -33,9 +33,9 @@ class JobParam:
 
         The model defined in huaweicloud sdk
 
-        :param name: 
+        :param name: 参数名称，只能包含英文字母、数字、中划线和下划线。
         :type name: str
-        :param value: 
+        :param value: 参数值
         :type value: str
         :param type: 参数类型
         :type type: str
@@ -57,6 +57,8 @@ class JobParam:
     def name(self):
         """Gets the name of this JobParam.
 
+        参数名称，只能包含英文字母、数字、中划线和下划线。
+
         :return: The name of this JobParam.
         :rtype: str
         """
@@ -65,6 +67,8 @@ class JobParam:
     @name.setter
     def name(self, name):
         """Sets the name of this JobParam.
+
+        参数名称，只能包含英文字母、数字、中划线和下划线。
 
         :param name: The name of this JobParam.
         :type name: str
@@ -75,6 +79,8 @@ class JobParam:
     def value(self):
         """Gets the value of this JobParam.
 
+        参数值
+
         :return: The value of this JobParam.
         :rtype: str
         """
@@ -83,6 +89,8 @@ class JobParam:
     @value.setter
     def value(self, value):
         """Sets the value of this JobParam.
+
+        参数值
 
         :param value: The value of this JobParam.
         :type value: str

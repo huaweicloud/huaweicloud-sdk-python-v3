@@ -37,13 +37,13 @@ class ServerAddress:
 
         The model defined in huaweicloud sdk
 
-        :param addr: IP地址信息
+        :param addr: IP地址信息。
         :type addr: str
-        :param version: IP地址类型， &#x60;4&#x60; - IPV4 &#x60;6&#x60; - IPV6
+        :param version: IP地址类型： &#x60;4&#x60; - IPV4 &#x60;6&#x60; - IPV6
         :type version: int
-        :param os_ext_ips_ma_cmac_addr: MAC地址
+        :param os_ext_ips_ma_cmac_addr: MAC地址。
         :type os_ext_ips_ma_cmac_addr: str
-        :param os_ext_ip_stype: IP地址分配方式，字符串是大小写不敏感格式 * &#x60;fixed&#x60; - 代表私有IP地址 * &#x60;floating&#x60; - 代表浮动IP地址
+        :param os_ext_ip_stype: IP地址分配方式，字符串是大小写不敏感格式。 * &#x60;fixed&#x60; - 代表私有IP地址。 * &#x60;floating&#x60; - 代表浮动IP地址。
         :type os_ext_ip_stype: str
         :param os_ext_ip_sport_id: IP地址对应的端口ID。
         :type os_ext_ip_sport_id: str
@@ -73,7 +73,7 @@ class ServerAddress:
     def addr(self):
         """Gets the addr of this ServerAddress.
 
-        IP地址信息
+        IP地址信息。
 
         :return: The addr of this ServerAddress.
         :rtype: str
@@ -84,7 +84,7 @@ class ServerAddress:
     def addr(self, addr):
         """Sets the addr of this ServerAddress.
 
-        IP地址信息
+        IP地址信息。
 
         :param addr: The addr of this ServerAddress.
         :type addr: str
@@ -95,7 +95,7 @@ class ServerAddress:
     def version(self):
         """Gets the version of this ServerAddress.
 
-        IP地址类型， `4` - IPV4 `6` - IPV6
+        IP地址类型： `4` - IPV4 `6` - IPV6
 
         :return: The version of this ServerAddress.
         :rtype: int
@@ -106,7 +106,7 @@ class ServerAddress:
     def version(self, version):
         """Sets the version of this ServerAddress.
 
-        IP地址类型， `4` - IPV4 `6` - IPV6
+        IP地址类型： `4` - IPV4 `6` - IPV6
 
         :param version: The version of this ServerAddress.
         :type version: int
@@ -117,7 +117,7 @@ class ServerAddress:
     def os_ext_ips_ma_cmac_addr(self):
         """Gets the os_ext_ips_ma_cmac_addr of this ServerAddress.
 
-        MAC地址
+        MAC地址。
 
         :return: The os_ext_ips_ma_cmac_addr of this ServerAddress.
         :rtype: str
@@ -128,7 +128,7 @@ class ServerAddress:
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
         """Sets the os_ext_ips_ma_cmac_addr of this ServerAddress.
 
-        MAC地址
+        MAC地址。
 
         :param os_ext_ips_ma_cmac_addr: The os_ext_ips_ma_cmac_addr of this ServerAddress.
         :type os_ext_ips_ma_cmac_addr: str
@@ -139,7 +139,7 @@ class ServerAddress:
     def os_ext_ip_stype(self):
         """Gets the os_ext_ip_stype of this ServerAddress.
 
-        IP地址分配方式，字符串是大小写不敏感格式 * `fixed` - 代表私有IP地址 * `floating` - 代表浮动IP地址
+        IP地址分配方式，字符串是大小写不敏感格式。 * `fixed` - 代表私有IP地址。 * `floating` - 代表浮动IP地址。
 
         :return: The os_ext_ip_stype of this ServerAddress.
         :rtype: str
@@ -150,7 +150,7 @@ class ServerAddress:
     def os_ext_ip_stype(self, os_ext_ip_stype):
         """Sets the os_ext_ip_stype of this ServerAddress.
 
-        IP地址分配方式，字符串是大小写不敏感格式 * `fixed` - 代表私有IP地址 * `floating` - 代表浮动IP地址
+        IP地址分配方式，字符串是大小写不敏感格式。 * `fixed` - 代表私有IP地址。 * `floating` - 代表浮动IP地址。
 
         :param os_ext_ip_stype: The os_ext_ip_stype of this ServerAddress.
         :type os_ext_ip_stype: str

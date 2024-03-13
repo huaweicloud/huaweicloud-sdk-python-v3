@@ -49,27 +49,27 @@ class TaskInfo:
 
         The model defined in huaweicloud sdk
 
-        :param bench_concurrent: bench_concurrent
+        :param bench_concurrent: 基准并发
         :type bench_concurrent: int
-        :param case_list: case_list
+        :param case_list: 用例Id列表
         :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
         :param create_time: 创建时间
         :type create_time: datetime
-        :param description: description
+        :param description: 描述信息
         :type description: str
-        :param name: name
+        :param name: 任务名称
         :type name: str
-        :param operate_mode: operate_mode
+        :param operate_mode: 任务模式（0：时长模式；1：次数模式；2：混合模式）
         :type operate_mode: int
-        :param project_id: project_id
+        :param project_id: 任务所属工程id
         :type project_id: int
-        :param related_temp_running_data: related_temp_running_data
+        :param related_temp_running_data: 最近一次运行的报告简略信息，包括运行任务id，即本对象的task_run_info_id。运行用例id，即本对象的related_temp_running_id。
         :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
-        :param run_status: run_status
+        :param run_status: 任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
         :type run_status: int
-        :param update_time: update_time
+        :param update_time: 任务更新时间
         :type update_time: str
-        :param parallel: parallel
+        :param parallel: 任务间用例是否并行执行
         :type parallel: bool
         """
         
@@ -115,7 +115,7 @@ class TaskInfo:
     def bench_concurrent(self):
         """Gets the bench_concurrent of this TaskInfo.
 
-        bench_concurrent
+        基准并发
 
         :return: The bench_concurrent of this TaskInfo.
         :rtype: int
@@ -126,7 +126,7 @@ class TaskInfo:
     def bench_concurrent(self, bench_concurrent):
         """Sets the bench_concurrent of this TaskInfo.
 
-        bench_concurrent
+        基准并发
 
         :param bench_concurrent: The bench_concurrent of this TaskInfo.
         :type bench_concurrent: int
@@ -137,7 +137,7 @@ class TaskInfo:
     def case_list(self):
         """Gets the case_list of this TaskInfo.
 
-        case_list
+        用例Id列表
 
         :return: The case_list of this TaskInfo.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
@@ -148,7 +148,7 @@ class TaskInfo:
     def case_list(self, case_list):
         """Sets the case_list of this TaskInfo.
 
-        case_list
+        用例Id列表
 
         :param case_list: The case_list of this TaskInfo.
         :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
@@ -181,7 +181,7 @@ class TaskInfo:
     def description(self):
         """Gets the description of this TaskInfo.
 
-        description
+        描述信息
 
         :return: The description of this TaskInfo.
         :rtype: str
@@ -192,7 +192,7 @@ class TaskInfo:
     def description(self, description):
         """Sets the description of this TaskInfo.
 
-        description
+        描述信息
 
         :param description: The description of this TaskInfo.
         :type description: str
@@ -203,7 +203,7 @@ class TaskInfo:
     def name(self):
         """Gets the name of this TaskInfo.
 
-        name
+        任务名称
 
         :return: The name of this TaskInfo.
         :rtype: str
@@ -214,7 +214,7 @@ class TaskInfo:
     def name(self, name):
         """Sets the name of this TaskInfo.
 
-        name
+        任务名称
 
         :param name: The name of this TaskInfo.
         :type name: str
@@ -225,7 +225,7 @@ class TaskInfo:
     def operate_mode(self):
         """Gets the operate_mode of this TaskInfo.
 
-        operate_mode
+        任务模式（0：时长模式；1：次数模式；2：混合模式）
 
         :return: The operate_mode of this TaskInfo.
         :rtype: int
@@ -236,7 +236,7 @@ class TaskInfo:
     def operate_mode(self, operate_mode):
         """Sets the operate_mode of this TaskInfo.
 
-        operate_mode
+        任务模式（0：时长模式；1：次数模式；2：混合模式）
 
         :param operate_mode: The operate_mode of this TaskInfo.
         :type operate_mode: int
@@ -247,7 +247,7 @@ class TaskInfo:
     def project_id(self):
         """Gets the project_id of this TaskInfo.
 
-        project_id
+        任务所属工程id
 
         :return: The project_id of this TaskInfo.
         :rtype: int
@@ -258,7 +258,7 @@ class TaskInfo:
     def project_id(self, project_id):
         """Sets the project_id of this TaskInfo.
 
-        project_id
+        任务所属工程id
 
         :param project_id: The project_id of this TaskInfo.
         :type project_id: int
@@ -269,7 +269,7 @@ class TaskInfo:
     def related_temp_running_data(self):
         """Gets the related_temp_running_data of this TaskInfo.
 
-        related_temp_running_data
+        最近一次运行的报告简略信息，包括运行任务id，即本对象的task_run_info_id。运行用例id，即本对象的related_temp_running_id。
 
         :return: The related_temp_running_data of this TaskInfo.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
@@ -280,7 +280,7 @@ class TaskInfo:
     def related_temp_running_data(self, related_temp_running_data):
         """Sets the related_temp_running_data of this TaskInfo.
 
-        related_temp_running_data
+        最近一次运行的报告简略信息，包括运行任务id，即本对象的task_run_info_id。运行用例id，即本对象的related_temp_running_id。
 
         :param related_temp_running_data: The related_temp_running_data of this TaskInfo.
         :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
@@ -291,7 +291,7 @@ class TaskInfo:
     def run_status(self):
         """Gets the run_status of this TaskInfo.
 
-        run_status
+        任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
 
         :return: The run_status of this TaskInfo.
         :rtype: int
@@ -302,7 +302,7 @@ class TaskInfo:
     def run_status(self, run_status):
         """Sets the run_status of this TaskInfo.
 
-        run_status
+        任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
 
         :param run_status: The run_status of this TaskInfo.
         :type run_status: int
@@ -313,7 +313,7 @@ class TaskInfo:
     def update_time(self):
         """Gets the update_time of this TaskInfo.
 
-        update_time
+        任务更新时间
 
         :return: The update_time of this TaskInfo.
         :rtype: str
@@ -324,7 +324,7 @@ class TaskInfo:
     def update_time(self, update_time):
         """Sets the update_time of this TaskInfo.
 
-        update_time
+        任务更新时间
 
         :param update_time: The update_time of this TaskInfo.
         :type update_time: str
@@ -335,7 +335,7 @@ class TaskInfo:
     def parallel(self):
         """Gets the parallel of this TaskInfo.
 
-        parallel
+        任务间用例是否并行执行
 
         :return: The parallel of this TaskInfo.
         :rtype: bool
@@ -346,7 +346,7 @@ class TaskInfo:
     def parallel(self, parallel):
         """Sets the parallel of this TaskInfo.
 
-        parallel
+        任务间用例是否并行执行
 
         :param parallel: The parallel of this TaskInfo.
         :type parallel: bool

@@ -37,7 +37,7 @@ class PolicyGroupForUpdate:
 
         The model defined in huaweicloud sdk
 
-        :param policy_group_name: 策略组名称，名称需要满足如下规则 1. 由英文、数字或者下划线组成，不能有空格 2. 字符长度范围1-55
+        :param policy_group_name: 策略组名称，名称需要满足如下规则： 1. 由英文、数字或者下划线组成，不能有空格。 2. 字符长度范围1-55。
         :type policy_group_name: str
         :param description: 策略组描述。
         :type description: str
@@ -72,7 +72,7 @@ class PolicyGroupForUpdate:
     def policy_group_name(self):
         """Gets the policy_group_name of this PolicyGroupForUpdate.
 
-        策略组名称，名称需要满足如下规则 1. 由英文、数字或者下划线组成，不能有空格 2. 字符长度范围1-55
+        策略组名称，名称需要满足如下规则： 1. 由英文、数字或者下划线组成，不能有空格。 2. 字符长度范围1-55。
 
         :return: The policy_group_name of this PolicyGroupForUpdate.
         :rtype: str
@@ -83,7 +83,7 @@ class PolicyGroupForUpdate:
     def policy_group_name(self, policy_group_name):
         """Sets the policy_group_name of this PolicyGroupForUpdate.
 
-        策略组名称，名称需要满足如下规则 1. 由英文、数字或者下划线组成，不能有空格 2. 字符长度范围1-55
+        策略组名称，名称需要满足如下规则： 1. 由英文、数字或者下划线组成，不能有空格。 2. 字符长度范围1-55。
 
         :param policy_group_name: The policy_group_name of this PolicyGroupForUpdate.
         :type policy_group_name: str

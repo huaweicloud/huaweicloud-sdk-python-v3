@@ -34,7 +34,7 @@ class ListAvailabilityZoneResponse(SdkResponse):
 
         :param availability_zones: 云应用支持的可用分区列表。
         :type availability_zones: list[:class:`huaweicloudsdkworkspaceapp.v1.AvailabilityZoneInfo`]
-        :param total_count: 总数
+        :param total_count: 总数。
         :type total_count: int
         """
         
@@ -75,7 +75,7 @@ class ListAvailabilityZoneResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListAvailabilityZoneResponse.
 
-        总数
+        总数。
 
         :return: The total_count of this ListAvailabilityZoneResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAvailabilityZoneResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListAvailabilityZoneResponse.
 
-        总数
+        总数。
 
         :param total_count: The total_count of this ListAvailabilityZoneResponse.
         :type total_count: int

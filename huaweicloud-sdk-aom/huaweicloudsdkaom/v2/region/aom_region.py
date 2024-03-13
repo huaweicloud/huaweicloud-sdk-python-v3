@@ -1,8 +1,5 @@
 # coding: utf-8
 
-import types
-import six
-
 from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.region.provider import RegionProviderChain
 
@@ -49,8 +46,8 @@ class AomRegion:
                         "https://aom.na-mexico-1.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
                         "https://aom.tr-west-1.myhuaweicloud.com")
-    EU_WEST_101 = Region("eu-west-101",
-                        "https://aom.eu-west-101.myhuaweicloud.eu")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://aom.me-east-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -73,15 +70,15 @@ class AomRegion:
         "cn-south-2": CN_SOUTH_2,
         "na-mexico-1": NA_MEXICO_1,
         "tr-west-1": TR_WEST_1,
-        "eu-west-101": EU_WEST_101,
+        "me-east-1": ME_EAST_1,
     }
 
     @classmethod
     def value_of(cls, region_id, static_fields=None):
         if not region_id:
-            raise KeyError("Unexpected empty parameter: region_id.")
+            raise KeyError("Unexpected empty parameter: region_id")
 
-        fields = static_fields if static_fields else cls.static_fields
+        fields = static_fields or cls.static_fields
 
         region = cls._PROVIDER.get_region(region_id)
         if region:
@@ -90,6 +87,5 @@ class AomRegion:
         if region_id in fields:
             return fields.get(region_id)
 
-        raise KeyError("Unexpected region_id: " + region_id)
-
-
+        raise KeyError("region_id '%s' is not in the following supported regions of service 'Aom': [%s]" % (
+            region_id, ", ".join(sorted(fields.keys()))))

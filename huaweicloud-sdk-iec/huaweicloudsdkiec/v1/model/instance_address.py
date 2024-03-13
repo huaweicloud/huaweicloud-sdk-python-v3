@@ -45,7 +45,7 @@ class InstanceAddress:
         :type os_ext_ip_stype: str
         :param addr: IP地址。
         :type addr: str
-        :param version: IP地址版本。  - “4”：代表IPv4。 [- “6”：代表IPv6。](tag:hide)
+        :param version: IP地址版本。  - “4”：代表IPv4。 - “6”：代表IPv6。
         :type version: str
         """
         
@@ -161,7 +161,7 @@ class InstanceAddress:
     def version(self):
         """Gets the version of this InstanceAddress.
 
-        IP地址版本。  - “4”：代表IPv4。 [- “6”：代表IPv6。](tag:hide)
+        IP地址版本。  - “4”：代表IPv4。 - “6”：代表IPv6。
 
         :return: The version of this InstanceAddress.
         :rtype: str
@@ -172,7 +172,7 @@ class InstanceAddress:
     def version(self, version):
         """Sets the version of this InstanceAddress.
 
-        IP地址版本。  - “4”：代表IPv4。 [- “6”：代表IPv6。](tag:hide)
+        IP地址版本。  - “4”：代表IPv4。 - “6”：代表IPv6。
 
         :param version: The version of this InstanceAddress.
         :type version: str

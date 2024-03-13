@@ -37,7 +37,7 @@ class ListFunctionsRequest:
         :type marker: str
         :param maxitems: 每次查询获取的最大函数记录数量 最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
         :type maxitems: str
-        :param package_name: 应用名称。
+        :param package_name: 自定义分组名称。
         :type package_name: str
         """
         
@@ -103,7 +103,7 @@ class ListFunctionsRequest:
     def package_name(self):
         """Gets the package_name of this ListFunctionsRequest.
 
-        应用名称。
+        自定义分组名称。
 
         :return: The package_name of this ListFunctionsRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class ListFunctionsRequest:
     def package_name(self, package_name):
         """Sets the package_name of this ListFunctionsRequest.
 
-        应用名称。
+        自定义分组名称。
 
         :param package_name: The package_name of this ListFunctionsRequest.
         :type package_name: str

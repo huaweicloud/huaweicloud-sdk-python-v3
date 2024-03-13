@@ -34,11 +34,11 @@ class ListVariablesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应吗
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
-        :param variable_list: variable_list
+        :param variable_list: 变量列表
         :type variable_list: list[:class:`huaweicloudsdkcpts.v1.VariableDetail`]
         """
         
@@ -60,7 +60,7 @@ class ListVariablesResponse(SdkResponse):
     def code(self):
         """Gets the code of this ListVariablesResponse.
 
-        code
+        响应吗
 
         :return: The code of this ListVariablesResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListVariablesResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ListVariablesResponse.
 
-        code
+        响应吗
 
         :param code: The code of this ListVariablesResponse.
         :type code: str
@@ -82,7 +82,7 @@ class ListVariablesResponse(SdkResponse):
     def message(self):
         """Gets the message of this ListVariablesResponse.
 
-        message
+        响应消息
 
         :return: The message of this ListVariablesResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListVariablesResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ListVariablesResponse.
 
-        message
+        响应消息
 
         :param message: The message of this ListVariablesResponse.
         :type message: str
@@ -104,7 +104,7 @@ class ListVariablesResponse(SdkResponse):
     def variable_list(self):
         """Gets the variable_list of this ListVariablesResponse.
 
-        variable_list
+        变量列表
 
         :return: The variable_list of this ListVariablesResponse.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.VariableDetail`]
@@ -115,7 +115,7 @@ class ListVariablesResponse(SdkResponse):
     def variable_list(self, variable_list):
         """Sets the variable_list of this ListVariablesResponse.
 
-        variable_list
+        变量列表
 
         :param variable_list: The variable_list of this ListVariablesResponse.
         :type variable_list: list[:class:`huaweicloudsdkcpts.v1.VariableDetail`]

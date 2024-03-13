@@ -21,7 +21,7 @@ class Cron:
         'end_time': 'str',
         'expression': 'str',
         'depend_pre_period': 'bool',
-        'depend_jobs': 'list[DependJob]'
+        'depend_jobs': 'DependJob'
     }
 
     attribute_map = {
@@ -45,8 +45,8 @@ class Cron:
         :type expression: str
         :param depend_pre_period: 是否依赖本作业上一个运行周期任务的执行结果
         :type depend_pre_period: bool
-        :param depend_jobs: 依赖其它作业列表
-        :type depend_jobs: list[:class:`huaweicloudsdkdlf.v1.DependJob`]
+        :param depend_jobs: 
+        :type depend_jobs: :class:`huaweicloudsdkdlf.v1.DependJob`
         """
         
         
@@ -153,10 +153,8 @@ class Cron:
     def depend_jobs(self):
         """Gets the depend_jobs of this Cron.
 
-        依赖其它作业列表
-
         :return: The depend_jobs of this Cron.
-        :rtype: list[:class:`huaweicloudsdkdlf.v1.DependJob`]
+        :rtype: :class:`huaweicloudsdkdlf.v1.DependJob`
         """
         return self._depend_jobs
 
@@ -164,10 +162,8 @@ class Cron:
     def depend_jobs(self, depend_jobs):
         """Sets the depend_jobs of this Cron.
 
-        依赖其它作业列表
-
         :param depend_jobs: The depend_jobs of this Cron.
-        :type depend_jobs: list[:class:`huaweicloudsdkdlf.v1.DependJob`]
+        :type depend_jobs: :class:`huaweicloudsdkdlf.v1.DependJob`
         """
         self._depend_jobs = depend_jobs
 

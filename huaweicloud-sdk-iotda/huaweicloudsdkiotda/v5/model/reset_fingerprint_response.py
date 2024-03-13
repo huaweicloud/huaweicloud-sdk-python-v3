@@ -19,15 +19,17 @@ class ResetFingerprintResponse(SdkResponse):
 
     openapi_types = {
         'device_id': 'str',
-        'fingerprint': 'str'
+        'fingerprint': 'str',
+        'fingerprint_type': 'str'
     }
 
     attribute_map = {
         'device_id': 'device_id',
-        'fingerprint': 'fingerprint'
+        'fingerprint': 'fingerprint',
+        'fingerprint_type': 'fingerprint_type'
     }
 
-    def __init__(self, device_id=None, fingerprint=None):
+    def __init__(self, device_id=None, fingerprint=None, fingerprint_type=None):
         """ResetFingerprintResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ResetFingerprintResponse(SdkResponse):
         :type device_id: str
         :param fingerprint: 设备指纹。
         :type fingerprint: str
+        :param fingerprint_type: **参数说明**：重置设备证书指纹的的类型。 **取值范围**： - PRIMARY：重置主指纹。 - SECONDARY：重置辅指纹。
+        :type fingerprint_type: str
         """
         
         super(ResetFingerprintResponse, self).__init__()
 
         self._device_id = None
         self._fingerprint = None
+        self._fingerprint_type = None
         self.discriminator = None
 
         if device_id is not None:
             self.device_id = device_id
         if fingerprint is not None:
             self.fingerprint = fingerprint
+        if fingerprint_type is not None:
+            self.fingerprint_type = fingerprint_type
 
     @property
     def device_id(self):
@@ -92,6 +99,28 @@ class ResetFingerprintResponse(SdkResponse):
         :type fingerprint: str
         """
         self._fingerprint = fingerprint
+
+    @property
+    def fingerprint_type(self):
+        """Gets the fingerprint_type of this ResetFingerprintResponse.
+
+        **参数说明**：重置设备证书指纹的的类型。 **取值范围**： - PRIMARY：重置主指纹。 - SECONDARY：重置辅指纹。
+
+        :return: The fingerprint_type of this ResetFingerprintResponse.
+        :rtype: str
+        """
+        return self._fingerprint_type
+
+    @fingerprint_type.setter
+    def fingerprint_type(self, fingerprint_type):
+        """Sets the fingerprint_type of this ResetFingerprintResponse.
+
+        **参数说明**：重置设备证书指纹的的类型。 **取值范围**： - PRIMARY：重置主指纹。 - SECONDARY：重置辅指纹。
+
+        :param fingerprint_type: The fingerprint_type of this ResetFingerprintResponse.
+        :type fingerprint_type: str
+        """
+        self._fingerprint_type = fingerprint_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

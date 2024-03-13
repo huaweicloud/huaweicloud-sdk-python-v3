@@ -441,7 +441,7 @@ class CaseReportDetail:
         :type avg_tran_resp_time_check_point: float
         :param avg_tran_resp_time_check_res: 事务平均响应时间检查结果
         :type avg_tran_resp_time_check_res: bool
-        :param aw_id: awId
+        :param aw_id: 请求id
         :type aw_id: str
         :param case_uri: 用例Uri
         :type case_uri: str
@@ -1712,7 +1712,7 @@ class CaseReportDetail:
     def aw_id(self):
         """Gets the aw_id of this CaseReportDetail.
 
-        awId
+        请求id
 
         :return: The aw_id of this CaseReportDetail.
         :rtype: str
@@ -1723,7 +1723,7 @@ class CaseReportDetail:
     def aw_id(self, aw_id):
         """Sets the aw_id of this CaseReportDetail.
 
-        awId
+        请求id
 
         :param aw_id: The aw_id of this CaseReportDetail.
         :type aw_id: str

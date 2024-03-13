@@ -25,7 +25,12 @@ class BatchScanPrivateImageRequestInfo:
         'image_version': 'str',
         'image_type': 'str',
         'scan_status': 'str',
-        'latest_version': 'bool'
+        'latest_version': 'bool',
+        'image_size': 'int',
+        'start_latest_update_time': 'int',
+        'end_latest_update_time': 'int',
+        'start_latest_scan_time': 'int',
+        'end_latest_scan_time': 'int'
     }
 
     attribute_map = {
@@ -37,10 +42,15 @@ class BatchScanPrivateImageRequestInfo:
         'image_version': 'image_version',
         'image_type': 'image_type',
         'scan_status': 'scan_status',
-        'latest_version': 'latest_version'
+        'latest_version': 'latest_version',
+        'image_size': 'image_size',
+        'start_latest_update_time': 'start_latest_update_time',
+        'end_latest_update_time': 'end_latest_update_time',
+        'start_latest_scan_time': 'start_latest_scan_time',
+        'end_latest_scan_time': 'end_latest_scan_time'
     }
 
-    def __init__(self, repo_type=None, image_info_list=None, operate_all=None, namespace=None, image_name=None, image_version=None, image_type=None, scan_status=None, latest_version=None):
+    def __init__(self, repo_type=None, image_info_list=None, operate_all=None, namespace=None, image_name=None, image_version=None, image_type=None, scan_status=None, latest_version=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None):
         """BatchScanPrivateImageRequestInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +73,16 @@ class BatchScanPrivateImageRequestInfo:
         :type scan_status: str
         :param latest_version: 仅关注最新版本镜像
         :type latest_version: bool
+        :param image_size: 镜像大小
+        :type image_size: int
+        :param start_latest_update_time: 创建时间开始日期
+        :type start_latest_update_time: int
+        :param end_latest_update_time: 创建时间结束日期
+        :type end_latest_update_time: int
+        :param start_latest_scan_time: 最近一次扫描完成时间开始日期
+        :type start_latest_scan_time: int
+        :param end_latest_scan_time: 最近一次扫描完成时间结束日期
+        :type end_latest_scan_time: int
         """
         
         
@@ -76,6 +96,11 @@ class BatchScanPrivateImageRequestInfo:
         self._image_type = None
         self._scan_status = None
         self._latest_version = None
+        self._image_size = None
+        self._start_latest_update_time = None
+        self._end_latest_update_time = None
+        self._start_latest_scan_time = None
+        self._end_latest_scan_time = None
         self.discriminator = None
 
         if repo_type is not None:
@@ -95,6 +120,16 @@ class BatchScanPrivateImageRequestInfo:
             self.scan_status = scan_status
         if latest_version is not None:
             self.latest_version = latest_version
+        if image_size is not None:
+            self.image_size = image_size
+        if start_latest_update_time is not None:
+            self.start_latest_update_time = start_latest_update_time
+        if end_latest_update_time is not None:
+            self.end_latest_update_time = end_latest_update_time
+        if start_latest_scan_time is not None:
+            self.start_latest_scan_time = start_latest_scan_time
+        if end_latest_scan_time is not None:
+            self.end_latest_scan_time = end_latest_scan_time
 
     @property
     def repo_type(self):
@@ -293,6 +328,116 @@ class BatchScanPrivateImageRequestInfo:
         :type latest_version: bool
         """
         self._latest_version = latest_version
+
+    @property
+    def image_size(self):
+        """Gets the image_size of this BatchScanPrivateImageRequestInfo.
+
+        镜像大小
+
+        :return: The image_size of this BatchScanPrivateImageRequestInfo.
+        :rtype: int
+        """
+        return self._image_size
+
+    @image_size.setter
+    def image_size(self, image_size):
+        """Sets the image_size of this BatchScanPrivateImageRequestInfo.
+
+        镜像大小
+
+        :param image_size: The image_size of this BatchScanPrivateImageRequestInfo.
+        :type image_size: int
+        """
+        self._image_size = image_size
+
+    @property
+    def start_latest_update_time(self):
+        """Gets the start_latest_update_time of this BatchScanPrivateImageRequestInfo.
+
+        创建时间开始日期
+
+        :return: The start_latest_update_time of this BatchScanPrivateImageRequestInfo.
+        :rtype: int
+        """
+        return self._start_latest_update_time
+
+    @start_latest_update_time.setter
+    def start_latest_update_time(self, start_latest_update_time):
+        """Sets the start_latest_update_time of this BatchScanPrivateImageRequestInfo.
+
+        创建时间开始日期
+
+        :param start_latest_update_time: The start_latest_update_time of this BatchScanPrivateImageRequestInfo.
+        :type start_latest_update_time: int
+        """
+        self._start_latest_update_time = start_latest_update_time
+
+    @property
+    def end_latest_update_time(self):
+        """Gets the end_latest_update_time of this BatchScanPrivateImageRequestInfo.
+
+        创建时间结束日期
+
+        :return: The end_latest_update_time of this BatchScanPrivateImageRequestInfo.
+        :rtype: int
+        """
+        return self._end_latest_update_time
+
+    @end_latest_update_time.setter
+    def end_latest_update_time(self, end_latest_update_time):
+        """Sets the end_latest_update_time of this BatchScanPrivateImageRequestInfo.
+
+        创建时间结束日期
+
+        :param end_latest_update_time: The end_latest_update_time of this BatchScanPrivateImageRequestInfo.
+        :type end_latest_update_time: int
+        """
+        self._end_latest_update_time = end_latest_update_time
+
+    @property
+    def start_latest_scan_time(self):
+        """Gets the start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+
+        最近一次扫描完成时间开始日期
+
+        :return: The start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+        :rtype: int
+        """
+        return self._start_latest_scan_time
+
+    @start_latest_scan_time.setter
+    def start_latest_scan_time(self, start_latest_scan_time):
+        """Sets the start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+
+        最近一次扫描完成时间开始日期
+
+        :param start_latest_scan_time: The start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+        :type start_latest_scan_time: int
+        """
+        self._start_latest_scan_time = start_latest_scan_time
+
+    @property
+    def end_latest_scan_time(self):
+        """Gets the end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+
+        最近一次扫描完成时间结束日期
+
+        :return: The end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+        :rtype: int
+        """
+        return self._end_latest_scan_time
+
+    @end_latest_scan_time.setter
+    def end_latest_scan_time(self, end_latest_scan_time):
+        """Sets the end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+
+        最近一次扫描完成时间结束日期
+
+        :param end_latest_scan_time: The end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+        :type end_latest_scan_time: int
+        """
+        self._end_latest_scan_time = end_latest_scan_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

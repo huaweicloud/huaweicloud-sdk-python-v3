@@ -33,7 +33,7 @@ class AssociatePublicipsOption:
 
         :param associate_instance_type: 功能说明：端口所属实例类型 取值范围：PORT、NATGW、VPN、ELB 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例 约束：associate_instance_type字段不允许为空 约束：双栈公网IP不允许修改绑定的实例
         :type associate_instance_type: str
-        :param associate_instance_id: 功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； associate_instance_type和associate_instance_id都为null时解绑实例 约束：双栈公网IP不允许修改绑定的实例
+        :param associate_instance_id: 功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； 约束：associate_instance_id不允许为空 约束：双栈公网IP不允许修改绑定的实例
         :type associate_instance_id: str
         """
         
@@ -72,7 +72,7 @@ class AssociatePublicipsOption:
     def associate_instance_id(self):
         """Gets the associate_instance_id of this AssociatePublicipsOption.
 
-        功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； associate_instance_type和associate_instance_id都为null时解绑实例 约束：双栈公网IP不允许修改绑定的实例
+        功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； 约束：associate_instance_id不允许为空 约束：双栈公网IP不允许修改绑定的实例
 
         :return: The associate_instance_id of this AssociatePublicipsOption.
         :rtype: str
@@ -83,7 +83,7 @@ class AssociatePublicipsOption:
     def associate_instance_id(self, associate_instance_id):
         """Sets the associate_instance_id of this AssociatePublicipsOption.
 
-        功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； associate_instance_type和associate_instance_id都为null时解绑实例 约束：双栈公网IP不允许修改绑定的实例
+        功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； 约束：associate_instance_id不允许为空 约束：双栈公网IP不允许修改绑定的实例
 
         :param associate_instance_id: The associate_instance_id of this AssociatePublicipsOption.
         :type associate_instance_id: str

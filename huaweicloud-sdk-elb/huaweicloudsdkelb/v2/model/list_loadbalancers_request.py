@@ -79,7 +79,7 @@ class ListLoadbalancersRequest:
         :type vip_address: str
         :param vip_port_id: 负载均衡器内网IP对应的端口ID。
         :type vip_port_id: str
-        :param vip_subnet_id: 负载均衡器所在的子网IPv4网络ID。
+        :param vip_subnet_id: 负载均衡器所在的子网IPv4子网ID。
         :type vip_subnet_id: str
         :param vpc_id: 负载均衡器所在的虚拟私有云ID。
         :type vpc_id: str
@@ -370,7 +370,7 @@ class ListLoadbalancersRequest:
     def vip_subnet_id(self):
         """Gets the vip_subnet_id of this ListLoadbalancersRequest.
 
-        负载均衡器所在的子网IPv4网络ID。
+        负载均衡器所在的子网IPv4子网ID。
 
         :return: The vip_subnet_id of this ListLoadbalancersRequest.
         :rtype: str
@@ -381,7 +381,7 @@ class ListLoadbalancersRequest:
     def vip_subnet_id(self, vip_subnet_id):
         """Sets the vip_subnet_id of this ListLoadbalancersRequest.
 
-        负载均衡器所在的子网IPv4网络ID。
+        负载均衡器所在的子网IPv4子网ID。
 
         :param vip_subnet_id: The vip_subnet_id of this ListLoadbalancersRequest.
         :type vip_subnet_id: str

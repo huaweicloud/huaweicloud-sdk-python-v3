@@ -29,7 +29,7 @@ class CreateVariableResultJson:
 
         The model defined in huaweicloud sdk
 
-        :param variable_id: variable_id
+        :param variable_id: 变量id
         :type variable_id: int
         """
         
@@ -45,7 +45,7 @@ class CreateVariableResultJson:
     def variable_id(self):
         """Gets the variable_id of this CreateVariableResultJson.
 
-        variable_id
+        变量id
 
         :return: The variable_id of this CreateVariableResultJson.
         :rtype: int
@@ -56,7 +56,7 @@ class CreateVariableResultJson:
     def variable_id(self, variable_id):
         """Sets the variable_id of this CreateVariableResultJson.
 
-        variable_id
+        变量id
 
         :param variable_id: The variable_id of this CreateVariableResultJson.
         :type variable_id: int

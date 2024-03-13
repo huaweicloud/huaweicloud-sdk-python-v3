@@ -30,7 +30,7 @@ class UpdatePolicyTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 被修改策略模板主键
+        :param id: 被修改策略模板主键。
         :type id: str
         """
         
@@ -46,7 +46,7 @@ class UpdatePolicyTemplateResponse(SdkResponse):
     def id(self):
         """Gets the id of this UpdatePolicyTemplateResponse.
 
-        被修改策略模板主键
+        被修改策略模板主键。
 
         :return: The id of this UpdatePolicyTemplateResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdatePolicyTemplateResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this UpdatePolicyTemplateResponse.
 
-        被修改策略模板主键
+        被修改策略模板主键。
 
         :param id: The id of this UpdatePolicyTemplateResponse.
         :type id: str

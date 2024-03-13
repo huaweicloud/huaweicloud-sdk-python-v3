@@ -24,8 +24,8 @@ class ListSmartLiveRequest:
         'state': 'str',
         'sort_key': 'str',
         'sort_dir': 'str',
-        'create_until': 'str',
-        'create_since': 'str'
+        'create_since': 'str',
+        'create_until': 'str'
     }
 
     attribute_map = {
@@ -36,18 +36,18 @@ class ListSmartLiveRequest:
         'state': 'state',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
-        'create_until': 'create_until',
-        'create_since': 'create_since'
+        'create_since': 'create_since',
+        'create_until': 'create_until'
     }
 
-    def __init__(self, room_id=None, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None):
+    def __init__(self, room_id=None, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_since=None, create_until=None):
         """ListSmartLiveRequest
 
         The model defined in huaweicloud sdk
 
         :param room_id: 剧本ID。
         :type room_id: str
-        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
         :type x_app_user_id: str
         :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
@@ -59,10 +59,10 @@ class ListSmartLiveRequest:
         :type sort_key: str
         :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
         :type sort_dir: str
-        :param create_until: 过滤创建时间&lt;&#x3D;输入时间的记录。
-        :type create_until: str
         :param create_since: 过滤创建时间&gt;&#x3D;输入时间的记录。
         :type create_since: str
+        :param create_until: 过滤创建时间&lt;&#x3D;输入时间的记录。
+        :type create_until: str
         """
         
         
@@ -74,8 +74,8 @@ class ListSmartLiveRequest:
         self._state = None
         self._sort_key = None
         self._sort_dir = None
-        self._create_until = None
         self._create_since = None
+        self._create_until = None
         self.discriminator = None
 
         self.room_id = room_id
@@ -91,10 +91,10 @@ class ListSmartLiveRequest:
             self.sort_key = sort_key
         if sort_dir is not None:
             self.sort_dir = sort_dir
-        if create_until is not None:
-            self.create_until = create_until
         if create_since is not None:
             self.create_since = create_since
+        if create_until is not None:
+            self.create_until = create_until
 
     @property
     def room_id(self):
@@ -122,7 +122,7 @@ class ListSmartLiveRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this ListSmartLiveRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。 > * 不允许输入中文。
 
         :return: The x_app_user_id of this ListSmartLiveRequest.
         :rtype: str
@@ -133,7 +133,7 @@ class ListSmartLiveRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this ListSmartLiveRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。 > * 不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this ListSmartLiveRequest.
         :type x_app_user_id: str
@@ -251,28 +251,6 @@ class ListSmartLiveRequest:
         self._sort_dir = sort_dir
 
     @property
-    def create_until(self):
-        """Gets the create_until of this ListSmartLiveRequest.
-
-        过滤创建时间<=输入时间的记录。
-
-        :return: The create_until of this ListSmartLiveRequest.
-        :rtype: str
-        """
-        return self._create_until
-
-    @create_until.setter
-    def create_until(self, create_until):
-        """Sets the create_until of this ListSmartLiveRequest.
-
-        过滤创建时间<=输入时间的记录。
-
-        :param create_until: The create_until of this ListSmartLiveRequest.
-        :type create_until: str
-        """
-        self._create_until = create_until
-
-    @property
     def create_since(self):
         """Gets the create_since of this ListSmartLiveRequest.
 
@@ -293,6 +271,28 @@ class ListSmartLiveRequest:
         :type create_since: str
         """
         self._create_since = create_since
+
+    @property
+    def create_until(self):
+        """Gets the create_until of this ListSmartLiveRequest.
+
+        过滤创建时间<=输入时间的记录。
+
+        :return: The create_until of this ListSmartLiveRequest.
+        :rtype: str
+        """
+        return self._create_until
+
+    @create_until.setter
+    def create_until(self, create_until):
+        """Sets the create_until of this ListSmartLiveRequest.
+
+        过滤创建时间<=输入时间的记录。
+
+        :param create_until: The create_until of this ListSmartLiveRequest.
+        :type create_until: str
+        """
+        self._create_until = create_until
 
     def to_dict(self):
         """Returns the model properties as a dict"""

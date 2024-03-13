@@ -18,47 +18,40 @@ class ExternalVoiceAssetMeta:
 
     openapi_types = {
         'provider': 'str',
-        'ximalaya_voice_meta': 'XimalayaVoiceAssetMeta',
-        'huawei_ei_voice_meta': 'HuaweiEIVoiceAssetMeta'
+        'mobvoi_voice_meta': 'MobvoiVoiceAssetMeta'
     }
 
     attribute_map = {
         'provider': 'provider',
-        'ximalaya_voice_meta': 'ximalaya_voice_meta',
-        'huawei_ei_voice_meta': 'huawei_ei_voice_meta'
+        'mobvoi_voice_meta': 'mobvoi_voice_meta'
     }
 
-    def __init__(self, provider=None, ximalaya_voice_meta=None, huawei_ei_voice_meta=None):
+    def __init__(self, provider=None, mobvoi_voice_meta=None):
         """ExternalVoiceAssetMeta
 
         The model defined in huaweicloud sdk
 
-        :param provider: 第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: 华为云EI TTS
+        :param provider: 第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: EI TTS * MOBVOI: 出门问问 TTSS
         :type provider: str
-        :param ximalaya_voice_meta: 
-        :type ximalaya_voice_meta: :class:`huaweicloudsdkmetastudio.v1.XimalayaVoiceAssetMeta`
-        :param huawei_ei_voice_meta: 
-        :type huawei_ei_voice_meta: :class:`huaweicloudsdkmetastudio.v1.HuaweiEIVoiceAssetMeta`
+        :param mobvoi_voice_meta: 
+        :type mobvoi_voice_meta: :class:`huaweicloudsdkmetastudio.v1.MobvoiVoiceAssetMeta`
         """
         
         
 
         self._provider = None
-        self._ximalaya_voice_meta = None
-        self._huawei_ei_voice_meta = None
+        self._mobvoi_voice_meta = None
         self.discriminator = None
 
         self.provider = provider
-        if ximalaya_voice_meta is not None:
-            self.ximalaya_voice_meta = ximalaya_voice_meta
-        if huawei_ei_voice_meta is not None:
-            self.huawei_ei_voice_meta = huawei_ei_voice_meta
+        if mobvoi_voice_meta is not None:
+            self.mobvoi_voice_meta = mobvoi_voice_meta
 
     @property
     def provider(self):
         """Gets the provider of this ExternalVoiceAssetMeta.
 
-        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: 华为云EI TTS
+        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: EI TTS * MOBVOI: 出门问问 TTSS
 
         :return: The provider of this ExternalVoiceAssetMeta.
         :rtype: str
@@ -69,7 +62,7 @@ class ExternalVoiceAssetMeta:
     def provider(self, provider):
         """Sets the provider of this ExternalVoiceAssetMeta.
 
-        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: 华为云EI TTS
+        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: EI TTS * MOBVOI: 出门问问 TTSS
 
         :param provider: The provider of this ExternalVoiceAssetMeta.
         :type provider: str
@@ -77,40 +70,22 @@ class ExternalVoiceAssetMeta:
         self._provider = provider
 
     @property
-    def ximalaya_voice_meta(self):
-        """Gets the ximalaya_voice_meta of this ExternalVoiceAssetMeta.
+    def mobvoi_voice_meta(self):
+        """Gets the mobvoi_voice_meta of this ExternalVoiceAssetMeta.
 
-        :return: The ximalaya_voice_meta of this ExternalVoiceAssetMeta.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.XimalayaVoiceAssetMeta`
+        :return: The mobvoi_voice_meta of this ExternalVoiceAssetMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.MobvoiVoiceAssetMeta`
         """
-        return self._ximalaya_voice_meta
+        return self._mobvoi_voice_meta
 
-    @ximalaya_voice_meta.setter
-    def ximalaya_voice_meta(self, ximalaya_voice_meta):
-        """Sets the ximalaya_voice_meta of this ExternalVoiceAssetMeta.
+    @mobvoi_voice_meta.setter
+    def mobvoi_voice_meta(self, mobvoi_voice_meta):
+        """Sets the mobvoi_voice_meta of this ExternalVoiceAssetMeta.
 
-        :param ximalaya_voice_meta: The ximalaya_voice_meta of this ExternalVoiceAssetMeta.
-        :type ximalaya_voice_meta: :class:`huaweicloudsdkmetastudio.v1.XimalayaVoiceAssetMeta`
+        :param mobvoi_voice_meta: The mobvoi_voice_meta of this ExternalVoiceAssetMeta.
+        :type mobvoi_voice_meta: :class:`huaweicloudsdkmetastudio.v1.MobvoiVoiceAssetMeta`
         """
-        self._ximalaya_voice_meta = ximalaya_voice_meta
-
-    @property
-    def huawei_ei_voice_meta(self):
-        """Gets the huawei_ei_voice_meta of this ExternalVoiceAssetMeta.
-
-        :return: The huawei_ei_voice_meta of this ExternalVoiceAssetMeta.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.HuaweiEIVoiceAssetMeta`
-        """
-        return self._huawei_ei_voice_meta
-
-    @huawei_ei_voice_meta.setter
-    def huawei_ei_voice_meta(self, huawei_ei_voice_meta):
-        """Sets the huawei_ei_voice_meta of this ExternalVoiceAssetMeta.
-
-        :param huawei_ei_voice_meta: The huawei_ei_voice_meta of this ExternalVoiceAssetMeta.
-        :type huawei_ei_voice_meta: :class:`huaweicloudsdkmetastudio.v1.HuaweiEIVoiceAssetMeta`
-        """
-        self._huawei_ei_voice_meta = huawei_ei_voice_meta
+        self._mobvoi_voice_meta = mobvoi_voice_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""

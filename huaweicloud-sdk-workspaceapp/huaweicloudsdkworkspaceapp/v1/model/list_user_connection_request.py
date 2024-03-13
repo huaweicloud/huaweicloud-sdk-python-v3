@@ -33,9 +33,9 @@ class ListUserConnectionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
         :param body: Body of the ListUserConnectionRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ListUserConnectionReq`
@@ -59,7 +59,7 @@ class ListUserConnectionRequest:
     def limit(self):
         """Gets the limit of this ListUserConnectionRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListUserConnectionRequest.
         :rtype: int
@@ -70,7 +70,7 @@ class ListUserConnectionRequest:
     def limit(self, limit):
         """Sets the limit of this ListUserConnectionRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListUserConnectionRequest.
         :type limit: int
@@ -81,7 +81,7 @@ class ListUserConnectionRequest:
     def offset(self):
         """Gets the offset of this ListUserConnectionRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListUserConnectionRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class ListUserConnectionRequest:
     def offset(self, offset):
         """Sets the offset of this ListUserConnectionRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListUserConnectionRequest.
         :type offset: int

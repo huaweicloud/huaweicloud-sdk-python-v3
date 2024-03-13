@@ -22,7 +22,8 @@ class ShowAdmetJobResponse(SdkResponse):
         'molecule_file': 'MoleculeFileDto',
         'job_result': 'JobResult',
         'part_failed_reason': 'list[FailedReasonRecord]',
-        'models': 'list[BasicDrugModel]'
+        'models': 'list[BasicDrugModel]',
+        'cluster_result': 'ClusterJobRsp'
     }
 
     attribute_map = {
@@ -30,10 +31,11 @@ class ShowAdmetJobResponse(SdkResponse):
         'molecule_file': 'molecule_file',
         'job_result': 'job_result',
         'part_failed_reason': 'part_failed_reason',
-        'models': 'models'
+        'models': 'models',
+        'cluster_result': 'cluster_result'
     }
 
-    def __init__(self, basic_info=None, molecule_file=None, job_result=None, part_failed_reason=None, models=None):
+    def __init__(self, basic_info=None, molecule_file=None, job_result=None, part_failed_reason=None, models=None, cluster_result=None):
         """ShowAdmetJobResponse
 
         The model defined in huaweicloud sdk
@@ -48,6 +50,8 @@ class ShowAdmetJobResponse(SdkResponse):
         :type part_failed_reason: list[:class:`huaweicloudsdkeihealth.v1.FailedReasonRecord`]
         :param models: 模型信息
         :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
+        :param cluster_result: 
+        :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
         """
         
         super(ShowAdmetJobResponse, self).__init__()
@@ -57,6 +61,7 @@ class ShowAdmetJobResponse(SdkResponse):
         self._job_result = None
         self._part_failed_reason = None
         self._models = None
+        self._cluster_result = None
         self.discriminator = None
 
         if basic_info is not None:
@@ -69,6 +74,8 @@ class ShowAdmetJobResponse(SdkResponse):
             self.part_failed_reason = part_failed_reason
         if models is not None:
             self.models = models
+        if cluster_result is not None:
+            self.cluster_result = cluster_result
 
     @property
     def basic_info(self):
@@ -167,6 +174,24 @@ class ShowAdmetJobResponse(SdkResponse):
         :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
         """
         self._models = models
+
+    @property
+    def cluster_result(self):
+        """Gets the cluster_result of this ShowAdmetJobResponse.
+
+        :return: The cluster_result of this ShowAdmetJobResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        """
+        return self._cluster_result
+
+    @cluster_result.setter
+    def cluster_result(self, cluster_result):
+        """Sets the cluster_result of this ShowAdmetJobResponse.
+
+        :param cluster_result: The cluster_result of this ShowAdmetJobResponse.
+        :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        """
+        self._cluster_result = cluster_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

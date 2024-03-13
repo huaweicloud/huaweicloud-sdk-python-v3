@@ -32,7 +32,7 @@ class UpdateHpcShareResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param gc_time: 文件系统 gc_time
+        :param gc_time: 文件系统冷数据淘汰时间
         :type gc_time: int
         :param x_request_id: 
         :type x_request_id: str
@@ -53,7 +53,7 @@ class UpdateHpcShareResponse(SdkResponse):
     def gc_time(self):
         """Gets the gc_time of this UpdateHpcShareResponse.
 
-        文件系统 gc_time
+        文件系统冷数据淘汰时间
 
         :return: The gc_time of this UpdateHpcShareResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class UpdateHpcShareResponse(SdkResponse):
     def gc_time(self, gc_time):
         """Sets the gc_time of this UpdateHpcShareResponse.
 
-        文件系统 gc_time
+        文件系统冷数据淘汰时间
 
         :param gc_time: The gc_time of this UpdateHpcShareResponse.
         :type gc_time: int

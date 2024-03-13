@@ -84,8 +84,10 @@ class UrlAuth:
         self.discriminator = None
 
         self.status = status
-        self.type = type
-        self.expire_time = expire_time
+        if type is not None:
+            self.type = type
+        if expire_time is not None:
+            self.expire_time = expire_time
         if sign_method is not None:
             self.sign_method = sign_method
         if match_type is not None:
@@ -98,7 +100,8 @@ class UrlAuth:
             self.backup_key = backup_key
         if sign_arg is not None:
             self.sign_arg = sign_arg
-        self.time_format = time_format
+        if time_format is not None:
+            self.time_format = time_format
 
     @property
     def status(self):

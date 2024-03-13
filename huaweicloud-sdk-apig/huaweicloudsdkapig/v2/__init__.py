@@ -47,6 +47,7 @@ from huaweicloudsdkapig.v2.model.api_for_throttle import ApiForThrottle
 from huaweicloudsdkapig.v2.model.api_func import ApiFunc
 from huaweicloudsdkapig.v2.model.api_func_create import ApiFuncCreate
 from huaweicloudsdkapig.v2.model.api_group_base import ApiGroupBase
+from huaweicloudsdkapig.v2.model.api_group_check import ApiGroupCheck
 from huaweicloudsdkapig.v2.model.api_group_common_info import ApiGroupCommonInfo
 from huaweicloudsdkapig.v2.model.api_group_create import ApiGroupCreate
 from huaweicloudsdkapig.v2.model.api_group_info import ApiGroupInfo
@@ -146,6 +147,8 @@ from huaweicloudsdkapig.v2.model.cert_form import CertForm
 from huaweicloudsdkapig.v2.model.certificate_form import CertificateForm
 from huaweicloudsdkapig.v2.model.change_api_version_v2_request import ChangeApiVersionV2Request
 from huaweicloudsdkapig.v2.model.change_api_version_v2_response import ChangeApiVersionV2Response
+from huaweicloudsdkapig.v2.model.check_api_groups_v2_request import CheckApiGroupsV2Request
+from huaweicloudsdkapig.v2.model.check_api_groups_v2_response import CheckApiGroupsV2Response
 from huaweicloudsdkapig.v2.model.check_apis_v2_request import CheckApisV2Request
 from huaweicloudsdkapig.v2.model.check_apis_v2_response import CheckApisV2Response
 from huaweicloudsdkapig.v2.model.check_app_v2_request import CheckAppV2Request

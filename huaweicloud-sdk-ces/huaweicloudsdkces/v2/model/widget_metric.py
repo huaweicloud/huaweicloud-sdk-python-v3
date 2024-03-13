@@ -58,12 +58,9 @@ class WidgetMetric:
         self._extra_info = None
         self.discriminator = None
 
-        if namespace is not None:
-            self.namespace = namespace
-        if dimensions is not None:
-            self.dimensions = dimensions
-        if metric_name is not None:
-            self.metric_name = metric_name
+        self.namespace = namespace
+        self.dimensions = dimensions
+        self.metric_name = metric_name
         if alias is not None:
             self.alias = alias
         if extra_info is not None:

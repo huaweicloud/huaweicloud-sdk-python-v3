@@ -31,9 +31,9 @@ class LogicController:
 
         The model defined in huaweicloud sdk
 
-        :param for_loop_params: for_loop_params
+        :param for_loop_params: 旧版本逻辑控制器字段，当前已未使用
         :type for_loop_params: str
-        :param condition: condition
+        :param condition: 逻辑控制器条件
         :type condition: str
         """
         
@@ -52,7 +52,7 @@ class LogicController:
     def for_loop_params(self):
         """Gets the for_loop_params of this LogicController.
 
-        for_loop_params
+        旧版本逻辑控制器字段，当前已未使用
 
         :return: The for_loop_params of this LogicController.
         :rtype: str
@@ -63,7 +63,7 @@ class LogicController:
     def for_loop_params(self, for_loop_params):
         """Sets the for_loop_params of this LogicController.
 
-        for_loop_params
+        旧版本逻辑控制器字段，当前已未使用
 
         :param for_loop_params: The for_loop_params of this LogicController.
         :type for_loop_params: str
@@ -74,7 +74,7 @@ class LogicController:
     def condition(self):
         """Gets the condition of this LogicController.
 
-        condition
+        逻辑控制器条件
 
         :return: The condition of this LogicController.
         :rtype: str
@@ -85,7 +85,7 @@ class LogicController:
     def condition(self, condition):
         """Sets the condition of this LogicController.
 
-        condition
+        逻辑控制器条件
 
         :param condition: The condition of this LogicController.
         :type condition: str

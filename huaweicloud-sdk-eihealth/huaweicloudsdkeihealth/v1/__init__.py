@@ -85,6 +85,7 @@ from huaweicloudsdkeihealth.v1.model.checkpoint_rsp import CheckpointRsp
 from huaweicloudsdkeihealth.v1.model.clean_nextflow_cache_request import CleanNextflowCacheRequest
 from huaweicloudsdkeihealth.v1.model.clean_nextflow_cache_response import CleanNextflowCacheResponse
 from huaweicloudsdkeihealth.v1.model.clone_data_req import CloneDataReq
+from huaweicloudsdkeihealth.v1.model.cluster_job_rsp import ClusterJobRsp
 from huaweicloudsdkeihealth.v1.model.code_verify_req import CodeVerifyReq
 from huaweicloudsdkeihealth.v1.model.column_type import ColumnType
 from huaweicloudsdkeihealth.v1.model.column_value_dto import ColumnValueDto
@@ -107,6 +108,9 @@ from huaweicloudsdkeihealth.v1.model.create_auto_job_response import CreateAutoJ
 from huaweicloudsdkeihealth.v1.model.create_backup_req import CreateBackupReq
 from huaweicloudsdkeihealth.v1.model.create_backup_request import CreateBackupRequest
 from huaweicloudsdkeihealth.v1.model.create_backup_response import CreateBackupResponse
+from huaweicloudsdkeihealth.v1.model.create_cluster_job_req import CreateClusterJobReq
+from huaweicloudsdkeihealth.v1.model.create_cluster_job_request import CreateClusterJobRequest
+from huaweicloudsdkeihealth.v1.model.create_cluster_job_response import CreateClusterJobResponse
 from huaweicloudsdkeihealth.v1.model.create_code_request import CreateCodeRequest
 from huaweicloudsdkeihealth.v1.model.create_code_response import CreateCodeResponse
 from huaweicloudsdkeihealth.v1.model.create_computing_resource_req import CreateComputingResourceReq
@@ -311,6 +315,7 @@ from huaweicloudsdkeihealth.v1.model.drug_bounding_box_dto import DrugBoundingBo
 from huaweicloudsdkeihealth.v1.model.drug_file import DrugFile
 from huaweicloudsdkeihealth.v1.model.drug_file_source import DrugFileSource
 from huaweicloudsdkeihealth.v1.model.drug_job_dto import DrugJobDto
+from huaweicloudsdkeihealth.v1.model.edited_ligand import EditedLigand
 from huaweicloudsdkeihealth.v1.model.event_rsp import EventRsp
 from huaweicloudsdkeihealth.v1.model.execute_asset_action_request import ExecuteAssetActionRequest
 from huaweicloudsdkeihealth.v1.model.execute_asset_action_response import ExecuteAssetActionResponse
@@ -322,6 +327,13 @@ from huaweicloudsdkeihealth.v1.model.feature_enum import FeatureEnum
 from huaweicloudsdkeihealth.v1.model.fep_graph_dto import FepGraphDto
 from huaweicloudsdkeihealth.v1.model.fep_param_dto import FepParamDto
 from huaweicloudsdkeihealth.v1.model.flavor_info import FlavorInfo
+from huaweicloudsdkeihealth.v1.model.generate_complex_combine_req import GenerateComplexCombineReq
+from huaweicloudsdkeihealth.v1.model.generate_complex_combine_request import GenerateComplexCombineRequest
+from huaweicloudsdkeihealth.v1.model.generate_complex_combine_response import GenerateComplexCombineResponse
+from huaweicloudsdkeihealth.v1.model.generate_pocket_file_request import GeneratePocketFileRequest
+from huaweicloudsdkeihealth.v1.model.generate_pocket_file_response import GeneratePocketFileResponse
+from huaweicloudsdkeihealth.v1.model.generate_surface_points_request import GenerateSurfacePointsRequest
+from huaweicloudsdkeihealth.v1.model.generate_surface_points_response import GenerateSurfacePointsResponse
 from huaweicloudsdkeihealth.v1.model.generation_result import GenerationResult
 from huaweicloudsdkeihealth.v1.model.generation_result_item import GenerationResultItem
 from huaweicloudsdkeihealth.v1.model.generation_task_data import GenerationTaskData
@@ -372,6 +384,7 @@ from huaweicloudsdkeihealth.v1.model.job_result import JobResult
 from huaweicloudsdkeihealth.v1.model.job_task_dto import JobTaskDto
 from huaweicloudsdkeihealth.v1.model.label_page_list_dto import LabelPageListDto
 from huaweicloudsdkeihealth.v1.model.label_rsp import LabelRsp
+from huaweicloudsdkeihealth.v1.model.label_site import LabelSite
 from huaweicloudsdkeihealth.v1.model.language_enum import LanguageEnum
 from huaweicloudsdkeihealth.v1.model.ligand_dto import LigandDto
 from huaweicloudsdkeihealth.v1.model.ligand_preview_dto import LigandPreviewDto
@@ -507,6 +520,7 @@ from huaweicloudsdkeihealth.v1.model.mfa_rsp import MfaRsp
 from huaweicloudsdkeihealth.v1.model.model_dto import ModelDto
 from huaweicloudsdkeihealth.v1.model.model_file import ModelFile
 from huaweicloudsdkeihealth.v1.model.model_file_source import ModelFileSource
+from huaweicloudsdkeihealth.v1.model.model_metric import ModelMetric
 from huaweicloudsdkeihealth.v1.model.model_type import ModelType
 from huaweicloudsdkeihealth.v1.model.molecule_constraint import MoleculeConstraint
 from huaweicloudsdkeihealth.v1.model.molecule_file import MoleculeFile
@@ -545,6 +559,7 @@ from huaweicloudsdkeihealth.v1.model.performance_resource_rsp import Performance
 from huaweicloudsdkeihealth.v1.model.performance_resources_rsp import PerformanceResourcesRsp
 from huaweicloudsdkeihealth.v1.model.plain_molecule_item import PlainMoleculeItem
 from huaweicloudsdkeihealth.v1.model.pocket_detection_param_dto import PocketDetectionParamDto
+from huaweicloudsdkeihealth.v1.model.pocket_fragment import PocketFragment
 from huaweicloudsdkeihealth.v1.model.pocket_mol_design_receptor_dto import PocketMolDesignReceptorDto
 from huaweicloudsdkeihealth.v1.model.policy_event_rsp import PolicyEventRsp
 from huaweicloudsdkeihealth.v1.model.policy_type import PolicyType
@@ -583,6 +598,7 @@ from huaweicloudsdkeihealth.v1.model.quote_instance_response import QuoteInstanc
 from huaweicloudsdkeihealth.v1.model.reboot_node_request import RebootNodeRequest
 from huaweicloudsdkeihealth.v1.model.reboot_node_response import RebootNodeResponse
 from huaweicloudsdkeihealth.v1.model.receptor_drug_file import ReceptorDrugFile
+from huaweicloudsdkeihealth.v1.model.receptor_drug_file_req import ReceptorDrugFileReq
 from huaweicloudsdkeihealth.v1.model.receptor_ligand_info_dto import ReceptorLigandInfoDto
 from huaweicloudsdkeihealth.v1.model.recognize_drug_receptor_pocket_request import RecognizeDrugReceptorPocketRequest
 from huaweicloudsdkeihealth.v1.model.recognize_drug_receptor_pocket_response import RecognizeDrugReceptorPocketResponse
@@ -608,7 +624,9 @@ from huaweicloudsdkeihealth.v1.model.run_drug_ligand_to_smiles_conversion_reques
 from huaweicloudsdkeihealth.v1.model.run_drug_ligand_to_smiles_conversion_response import RunDrugLigandToSmilesConversionResponse
 from huaweicloudsdkeihealth.v1.model.run_drug_receptor_preprocess_request import RunDrugReceptorPreprocessRequest
 from huaweicloudsdkeihealth.v1.model.run_drug_receptor_preprocess_response import RunDrugReceptorPreprocessResponse
+from huaweicloudsdkeihealth.v1.model.run_pocket_req import RunPocketReq
 from huaweicloudsdkeihealth.v1.model.run_receptor_preprocess_req import RunReceptorPreprocessReq
+from huaweicloudsdkeihealth.v1.model.run_surface_points_req import RunSurfacePointsReq
 from huaweicloudsdkeihealth.v1.model.scale_out_policy_rsp import ScaleOutPolicyRsp
 from huaweicloudsdkeihealth.v1.model.scaling_history import ScalingHistory
 from huaweicloudsdkeihealth.v1.model.search_result import SearchResult

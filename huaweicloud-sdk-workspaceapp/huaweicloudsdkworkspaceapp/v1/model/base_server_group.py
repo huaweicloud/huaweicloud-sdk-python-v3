@@ -59,29 +59,29 @@ class BaseServerGroup:
 
         The model defined in huaweicloud sdk
 
-        :param id: 服务器组的唯一标识
+        :param id: 服务器组的唯一标识。
         :type id: str
-        :param name: 服务器组名称
+        :param name: 服务器组名称。
         :type name: str
-        :param description: 服务器组描述
+        :param description: 服务器组描述。
         :type description: str
-        :param image_id: 服务器组关联的镜像ID，用于创建对应组下的云服务器
+        :param image_id: 服务器组关联的镜像ID，用于创建对应组下的云服务器。
         :type image_id: str
         :param os_type: 
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
-        :param product_id: 产品id
+        :param product_id: 产品id。
         :type product_id: str
-        :param subnet_id: 网卡对应的子网ID
+        :param subnet_id: 网卡对应的子网ID。
         :type subnet_id: str
         :param system_disk_type: 
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
-        :param system_disk_size: 磁盘容量，单位GB
+        :param system_disk_size: 磁盘容量，单位GB。
         :type system_disk_size: int
-        :param is_vdi: 是否为vdi单会话模式
+        :param is_vdi: 是否为vdi单会话模式。
         :type is_vdi: bool
         :param extra_session_type: 
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
-        :param extra_session_size: 付费会话个数
+        :param extra_session_size: 付费会话个数。
         :type extra_session_size: int
         :param app_type: 
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -150,7 +150,7 @@ class BaseServerGroup:
     def id(self):
         """Gets the id of this BaseServerGroup.
 
-        服务器组的唯一标识
+        服务器组的唯一标识。
 
         :return: The id of this BaseServerGroup.
         :rtype: str
@@ -161,7 +161,7 @@ class BaseServerGroup:
     def id(self, id):
         """Sets the id of this BaseServerGroup.
 
-        服务器组的唯一标识
+        服务器组的唯一标识。
 
         :param id: The id of this BaseServerGroup.
         :type id: str
@@ -172,7 +172,7 @@ class BaseServerGroup:
     def name(self):
         """Gets the name of this BaseServerGroup.
 
-        服务器组名称
+        服务器组名称。
 
         :return: The name of this BaseServerGroup.
         :rtype: str
@@ -183,7 +183,7 @@ class BaseServerGroup:
     def name(self, name):
         """Sets the name of this BaseServerGroup.
 
-        服务器组名称
+        服务器组名称。
 
         :param name: The name of this BaseServerGroup.
         :type name: str
@@ -194,7 +194,7 @@ class BaseServerGroup:
     def description(self):
         """Gets the description of this BaseServerGroup.
 
-        服务器组描述
+        服务器组描述。
 
         :return: The description of this BaseServerGroup.
         :rtype: str
@@ -205,7 +205,7 @@ class BaseServerGroup:
     def description(self, description):
         """Sets the description of this BaseServerGroup.
 
-        服务器组描述
+        服务器组描述。
 
         :param description: The description of this BaseServerGroup.
         :type description: str
@@ -216,7 +216,7 @@ class BaseServerGroup:
     def image_id(self):
         """Gets the image_id of this BaseServerGroup.
 
-        服务器组关联的镜像ID，用于创建对应组下的云服务器
+        服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
         :return: The image_id of this BaseServerGroup.
         :rtype: str
@@ -227,7 +227,7 @@ class BaseServerGroup:
     def image_id(self, image_id):
         """Sets the image_id of this BaseServerGroup.
 
-        服务器组关联的镜像ID，用于创建对应组下的云服务器
+        服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
         :param image_id: The image_id of this BaseServerGroup.
         :type image_id: str
@@ -256,7 +256,7 @@ class BaseServerGroup:
     def product_id(self):
         """Gets the product_id of this BaseServerGroup.
 
-        产品id
+        产品id。
 
         :return: The product_id of this BaseServerGroup.
         :rtype: str
@@ -267,7 +267,7 @@ class BaseServerGroup:
     def product_id(self, product_id):
         """Sets the product_id of this BaseServerGroup.
 
-        产品id
+        产品id。
 
         :param product_id: The product_id of this BaseServerGroup.
         :type product_id: str
@@ -278,7 +278,7 @@ class BaseServerGroup:
     def subnet_id(self):
         """Gets the subnet_id of this BaseServerGroup.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :return: The subnet_id of this BaseServerGroup.
         :rtype: str
@@ -289,7 +289,7 @@ class BaseServerGroup:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this BaseServerGroup.
 
-        网卡对应的子网ID
+        网卡对应的子网ID。
 
         :param subnet_id: The subnet_id of this BaseServerGroup.
         :type subnet_id: str
@@ -318,7 +318,7 @@ class BaseServerGroup:
     def system_disk_size(self):
         """Gets the system_disk_size of this BaseServerGroup.
 
-        磁盘容量，单位GB
+        磁盘容量，单位GB。
 
         :return: The system_disk_size of this BaseServerGroup.
         :rtype: int
@@ -329,7 +329,7 @@ class BaseServerGroup:
     def system_disk_size(self, system_disk_size):
         """Sets the system_disk_size of this BaseServerGroup.
 
-        磁盘容量，单位GB
+        磁盘容量，单位GB。
 
         :param system_disk_size: The system_disk_size of this BaseServerGroup.
         :type system_disk_size: int
@@ -340,7 +340,7 @@ class BaseServerGroup:
     def is_vdi(self):
         """Gets the is_vdi of this BaseServerGroup.
 
-        是否为vdi单会话模式
+        是否为vdi单会话模式。
 
         :return: The is_vdi of this BaseServerGroup.
         :rtype: bool
@@ -351,7 +351,7 @@ class BaseServerGroup:
     def is_vdi(self, is_vdi):
         """Sets the is_vdi of this BaseServerGroup.
 
-        是否为vdi单会话模式
+        是否为vdi单会话模式。
 
         :param is_vdi: The is_vdi of this BaseServerGroup.
         :type is_vdi: bool
@@ -380,7 +380,7 @@ class BaseServerGroup:
     def extra_session_size(self):
         """Gets the extra_session_size of this BaseServerGroup.
 
-        付费会话个数
+        付费会话个数。
 
         :return: The extra_session_size of this BaseServerGroup.
         :rtype: int
@@ -391,7 +391,7 @@ class BaseServerGroup:
     def extra_session_size(self, extra_session_size):
         """Sets the extra_session_size of this BaseServerGroup.
 
-        付费会话个数
+        付费会话个数。
 
         :param extra_session_size: The extra_session_size of this BaseServerGroup.
         :type extra_session_size: int

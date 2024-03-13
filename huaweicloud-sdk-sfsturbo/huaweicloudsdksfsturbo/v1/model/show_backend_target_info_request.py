@@ -33,7 +33,7 @@ class ShowBackendTargetInfoRequest:
 
         :param share_id: 文件系统id
         :type share_id: str
-        :param target_id: 数据存储库 id
+        :param target_id: 绑定关系id
         :type target_id: str
         """
         
@@ -72,7 +72,7 @@ class ShowBackendTargetInfoRequest:
     def target_id(self):
         """Gets the target_id of this ShowBackendTargetInfoRequest.
 
-        数据存储库 id
+        绑定关系id
 
         :return: The target_id of this ShowBackendTargetInfoRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowBackendTargetInfoRequest:
     def target_id(self, target_id):
         """Sets the target_id of this ShowBackendTargetInfoRequest.
 
-        数据存储库 id
+        绑定关系id
 
         :param target_id: The target_id of this ShowBackendTargetInfoRequest.
         :type target_id: str

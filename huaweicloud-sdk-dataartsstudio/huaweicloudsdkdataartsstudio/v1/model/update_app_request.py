@@ -54,7 +54,8 @@ class UpdateAppRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         self.app_id = app_id
         if body is not None:
             self.body = body

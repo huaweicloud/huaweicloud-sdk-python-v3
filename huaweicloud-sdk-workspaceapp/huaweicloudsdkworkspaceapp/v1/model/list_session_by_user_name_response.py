@@ -30,7 +30,7 @@ class ListSessionByUserNameResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param session_info_list: 会话信息列表
+        :param session_info_list: 会话信息列表。
         :type session_info_list: list[:class:`huaweicloudsdkworkspaceapp.v1.AppSession`]
         """
         
@@ -46,7 +46,7 @@ class ListSessionByUserNameResponse(SdkResponse):
     def session_info_list(self):
         """Gets the session_info_list of this ListSessionByUserNameResponse.
 
-        会话信息列表
+        会话信息列表。
 
         :return: The session_info_list of this ListSessionByUserNameResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.AppSession`]
@@ -57,7 +57,7 @@ class ListSessionByUserNameResponse(SdkResponse):
     def session_info_list(self, session_info_list):
         """Sets the session_info_list of this ListSessionByUserNameResponse.
 
-        会话信息列表
+        会话信息列表。
 
         :param session_info_list: The session_info_list of this ListSessionByUserNameResponse.
         :type session_info_list: list[:class:`huaweicloudsdkworkspaceapp.v1.AppSession`]

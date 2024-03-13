@@ -15,6 +15,7 @@ from huaweicloudsdkcdm.v1.model.cdm_random_create_and_start_job_json_req import 
 from huaweicloudsdkcdm.v1.model.cdm_restart_cluster_req import CdmRestartClusterReq
 from huaweicloudsdkcdm.v1.model.cdm_restart_cluster_req_restart import CdmRestartClusterReqRestart
 from huaweicloudsdkcdm.v1.model.cdm_start_cluster_req import CdmStartClusterReq
+from huaweicloudsdkcdm.v1.model.cdm_start_job_req import CdmStartJobReq
 from huaweicloudsdkcdm.v1.model.cdm_stop_cluster_req import CdmStopClusterReq
 from huaweicloudsdkcdm.v1.model.cdm_stop_cluster_req_stop import CdmStopClusterReqStop
 from huaweicloudsdkcdm.v1.model.cdm_update_job_json_req import CdmUpdateJobJsonReq

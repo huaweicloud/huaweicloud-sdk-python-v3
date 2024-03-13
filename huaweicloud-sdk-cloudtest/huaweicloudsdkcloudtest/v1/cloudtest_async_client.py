@@ -1069,6 +1069,73 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def show_project_data_dashboard_async(self, request):
+        """查询质量报告看板统计信息
+
+        查询质量报告看板统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectDataDashboard
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowProjectDataDashboardRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowProjectDataDashboardResponse`
+        """
+        http_info = self._show_project_data_dashboard_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_data_dashboard_async_invoker(self, request):
+        http_info = self._show_project_data_dashboard_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_data_dashboard_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data-dashboard/overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectDataDashboardResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_register_service_async(self, request):
         """用户获取自己当前已经注册的服务
 

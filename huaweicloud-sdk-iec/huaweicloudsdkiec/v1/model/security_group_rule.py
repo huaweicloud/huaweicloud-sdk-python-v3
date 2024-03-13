@@ -59,9 +59,9 @@ class SecurityGroupRule:
         :type security_group_id: str
         :param direction: 出入控制方向。  取值范围：  - egress：出方向  - ingress：入方向
         :type direction: str
-        :param ethertype: IP协议类型。  取值范围：IPv4[，IPv6](tag:hide)  约束：不填默认值为IPv4
+        :param ethertype: IP协议类型。  取值范围：IPv4，IPv6  约束：不填默认值为IPv4
         :type ethertype: str
-        :param protocol: 协议类型。  取值范围：icmp、tcp、udp等  约束：为空表示支持所有协议
+        :param protocol: 协议类型。  取值范围：icmp、tcp、udp、icmpv6等  约束：为空表示支持所有协议
         :type protocol: str
         :param port_range_min: 起始端口值。  取值范围：1~65535  约束：取值不能大于port_range_max的值，为空表示所有端口
         :type port_range_min: str
@@ -210,7 +210,7 @@ class SecurityGroupRule:
     def ethertype(self):
         """Gets the ethertype of this SecurityGroupRule.
 
-        IP协议类型。  取值范围：IPv4[，IPv6](tag:hide)  约束：不填默认值为IPv4
+        IP协议类型。  取值范围：IPv4，IPv6  约束：不填默认值为IPv4
 
         :return: The ethertype of this SecurityGroupRule.
         :rtype: str
@@ -221,7 +221,7 @@ class SecurityGroupRule:
     def ethertype(self, ethertype):
         """Sets the ethertype of this SecurityGroupRule.
 
-        IP协议类型。  取值范围：IPv4[，IPv6](tag:hide)  约束：不填默认值为IPv4
+        IP协议类型。  取值范围：IPv4，IPv6  约束：不填默认值为IPv4
 
         :param ethertype: The ethertype of this SecurityGroupRule.
         :type ethertype: str
@@ -232,7 +232,7 @@ class SecurityGroupRule:
     def protocol(self):
         """Gets the protocol of this SecurityGroupRule.
 
-        协议类型。  取值范围：icmp、tcp、udp等  约束：为空表示支持所有协议
+        协议类型。  取值范围：icmp、tcp、udp、icmpv6等  约束：为空表示支持所有协议
 
         :return: The protocol of this SecurityGroupRule.
         :rtype: str
@@ -243,7 +243,7 @@ class SecurityGroupRule:
     def protocol(self, protocol):
         """Sets the protocol of this SecurityGroupRule.
 
-        协议类型。  取值范围：icmp、tcp、udp等  约束：为空表示支持所有协议
+        协议类型。  取值范围：icmp、tcp、udp、icmpv6等  约束：为空表示支持所有协议
 
         :param protocol: The protocol of this SecurityGroupRule.
         :type protocol: str

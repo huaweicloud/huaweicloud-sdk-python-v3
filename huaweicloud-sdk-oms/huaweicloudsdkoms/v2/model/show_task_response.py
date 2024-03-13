@@ -53,6 +53,7 @@ class ShowTaskResponse(SdkResponse):
         'success_record_error_reason': 'str',
         'skip_record_error_reason': 'str',
         'object_overwrite_mode': 'str',
+        'dst_storage_policy': 'str',
         'consistency_check': 'str',
         'enable_requester_pays': 'bool'
     }
@@ -93,11 +94,12 @@ class ShowTaskResponse(SdkResponse):
         'success_record_error_reason': 'success_record_error_reason',
         'skip_record_error_reason': 'skip_record_error_reason',
         'object_overwrite_mode': 'object_overwrite_mode',
+        'dst_storage_policy': 'dst_storage_policy',
         'consistency_check': 'consistency_check',
         'enable_requester_pays': 'enable_requester_pays'
     }
 
-    def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_kms=None, enable_metadata_migration=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, group_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None, success_record_error_reason=None, skip_record_error_reason=None, object_overwrite_mode=None, consistency_check=None, enable_requester_pays=None):
+    def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_kms=None, enable_metadata_migration=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, group_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None, success_record_error_reason=None, skip_record_error_reason=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None):
         """ShowTaskResponse
 
         The model defined in huaweicloud sdk
@@ -172,6 +174,8 @@ class ShowTaskResponse(SdkResponse):
         :type skip_record_error_reason: str
         :param object_overwrite_mode: 迁移前同名对象覆盖方式，用于迁移前判断源端与目的端有同名对象时，覆盖目的端或跳过迁移。默认SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE。 NO_OVERWRITE：不覆盖。迁移前源端对象与目的端对象同名时，不做对比直接跳过迁移。 SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE：大小/最后修改时间对比覆盖。默认配置。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象大小和最后修改时间，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。源端与目的端同名对象大小不相同，或目的端对象的最后修改时间晚于源端对象的最后修改时间(源端较新)，覆盖目的端。 CRC64_COMPARISON_OVERWRITE：CRC64对比覆盖。目前仅支持华为/阿里/腾讯。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象元数据中CRC64值是否相同，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE(大小/最后修改时间对比覆盖)来对比进行覆盖判断。 FULL_OVERWRITE：全覆盖。迁移前源端对象与目的端对象同名时，不做对比覆盖目的端。
         :type object_overwrite_mode: str
+        :param dst_storage_policy: 目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+        :type dst_storage_policy: str
         :param consistency_check: 一致性校验方式，用于迁移前/后校验对象是否一致，所有校验方式需满足源端/目的端对象的加密状态一致，具体校验方式和校验结果可通过对象列表查看。默认size_last_modified。 size_last_modified：默认配置。迁移前后，通过对比源端和目的端对象大小+最后修改时间，判断对象是否已存在或迁移后数据是否完整。源端与目的端同名对象大小相同，且目的端对象的最后修改时间不早于源端对象的最后修改时间，则代表该对象已存在/迁移成功。 crc64：目前仅支持华为/阿里/腾讯。迁移前后，通过对比源端和目的端对象元数据中CRC64值是否相同，判断对象是否已存在/迁移完成。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用大小/最后修改时间校验方式来校验。 no_check：目前仅支持HTTP/HTTPS数据源。当源端对象无法通过标准http协议中content-length字段获取数据大小时，默认数据下载成功即迁移成功，不对数据做额外校验，且迁移时源端对象默认覆盖目的端同名对象。当源端对象能正常通过标准http协议中content-length字段获取数据大小时，则采用大小/最后修改时间校验方式来校验。
         :type consistency_check: str
         :param enable_requester_pays: 是否开启请求者付款，在启用后，请求者支付请求和数据传输费用。
@@ -215,6 +219,7 @@ class ShowTaskResponse(SdkResponse):
         self._success_record_error_reason = None
         self._skip_record_error_reason = None
         self._object_overwrite_mode = None
+        self._dst_storage_policy = None
         self._consistency_check = None
         self._enable_requester_pays = None
         self.discriminator = None
@@ -289,6 +294,8 @@ class ShowTaskResponse(SdkResponse):
             self.skip_record_error_reason = skip_record_error_reason
         if object_overwrite_mode is not None:
             self.object_overwrite_mode = object_overwrite_mode
+        if dst_storage_policy is not None:
+            self.dst_storage_policy = dst_storage_policy
         if consistency_check is not None:
             self.consistency_check = consistency_check
         if enable_requester_pays is not None:
@@ -1039,6 +1046,28 @@ class ShowTaskResponse(SdkResponse):
         :type object_overwrite_mode: str
         """
         self._object_overwrite_mode = object_overwrite_mode
+
+    @property
+    def dst_storage_policy(self):
+        """Gets the dst_storage_policy of this ShowTaskResponse.
+
+        目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+
+        :return: The dst_storage_policy of this ShowTaskResponse.
+        :rtype: str
+        """
+        return self._dst_storage_policy
+
+    @dst_storage_policy.setter
+    def dst_storage_policy(self, dst_storage_policy):
+        """Sets the dst_storage_policy of this ShowTaskResponse.
+
+        目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+
+        :param dst_storage_policy: The dst_storage_policy of this ShowTaskResponse.
+        :type dst_storage_policy: str
+        """
+        self._dst_storage_policy = dst_storage_policy
 
     @property
     def consistency_check(self):

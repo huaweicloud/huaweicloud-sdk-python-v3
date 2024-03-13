@@ -19,26 +19,38 @@ class ListVideoScriptsRequest:
     openapi_types = {
         'x_app_user_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'name': 'str',
+        'script_catalog': 'str',
+        'view_mode': 'str'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'name': 'name',
+        'script_catalog': 'script_catalog',
+        'view_mode': 'view_mode'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, name=None, script_catalog=None, view_mode=None):
         """ListVideoScriptsRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
         :type x_app_user_id: str
         :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: int
+        :param name: 按名称模糊查询。
+        :type name: str
+        :param script_catalog: 剧本类型。默认查询VIDEO_DRAFT。 * VIDEO_DRAFT：视频草稿。 * SYSTEM_VIDEO_TEMPLET： 系统视频模板。
+        :type script_catalog: str
+        :param view_mode: 横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :type view_mode: str
         """
         
         
@@ -46,6 +58,9 @@ class ListVideoScriptsRequest:
         self._x_app_user_id = None
         self._offset = None
         self._limit = None
+        self._name = None
+        self._script_catalog = None
+        self._view_mode = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -54,12 +69,18 @@ class ListVideoScriptsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if name is not None:
+            self.name = name
+        if script_catalog is not None:
+            self.script_catalog = script_catalog
+        if view_mode is not None:
+            self.view_mode = view_mode
 
     @property
     def x_app_user_id(self):
         """Gets the x_app_user_id of this ListVideoScriptsRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。 > * 不允许输入中文。
 
         :return: The x_app_user_id of this ListVideoScriptsRequest.
         :rtype: str
@@ -70,7 +91,7 @@ class ListVideoScriptsRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this ListVideoScriptsRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。 > * 不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this ListVideoScriptsRequest.
         :type x_app_user_id: str
@@ -120,6 +141,72 @@ class ListVideoScriptsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def name(self):
+        """Gets the name of this ListVideoScriptsRequest.
+
+        按名称模糊查询。
+
+        :return: The name of this ListVideoScriptsRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListVideoScriptsRequest.
+
+        按名称模糊查询。
+
+        :param name: The name of this ListVideoScriptsRequest.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def script_catalog(self):
+        """Gets the script_catalog of this ListVideoScriptsRequest.
+
+        剧本类型。默认查询VIDEO_DRAFT。 * VIDEO_DRAFT：视频草稿。 * SYSTEM_VIDEO_TEMPLET： 系统视频模板。
+
+        :return: The script_catalog of this ListVideoScriptsRequest.
+        :rtype: str
+        """
+        return self._script_catalog
+
+    @script_catalog.setter
+    def script_catalog(self, script_catalog):
+        """Sets the script_catalog of this ListVideoScriptsRequest.
+
+        剧本类型。默认查询VIDEO_DRAFT。 * VIDEO_DRAFT：视频草稿。 * SYSTEM_VIDEO_TEMPLET： 系统视频模板。
+
+        :param script_catalog: The script_catalog of this ListVideoScriptsRequest.
+        :type script_catalog: str
+        """
+        self._script_catalog = script_catalog
+
+    @property
+    def view_mode(self):
+        """Gets the view_mode of this ListVideoScriptsRequest.
+
+        横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :return: The view_mode of this ListVideoScriptsRequest.
+        :rtype: str
+        """
+        return self._view_mode
+
+    @view_mode.setter
+    def view_mode(self, view_mode):
+        """Sets the view_mode of this ListVideoScriptsRequest.
+
+        横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :param view_mode: The view_mode of this ListVideoScriptsRequest.
+        :type view_mode: str
+        """
+        self._view_mode = view_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

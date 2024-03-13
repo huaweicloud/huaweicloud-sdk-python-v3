@@ -59,7 +59,8 @@ class ShowApisOverviewRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         self.start_time = start_time
         self.end_time = end_time
         self.time_unit = time_unit

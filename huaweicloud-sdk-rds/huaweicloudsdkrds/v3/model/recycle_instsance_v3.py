@@ -32,7 +32,8 @@ class RecycleInstsanceV3:
         'enterprise_project_id': 'str',
         'retained_until': 'str',
         'recycle_backup_id': 'str',
-        'recycle_status': 'str'
+        'recycle_status': 'str',
+        'is_serverless': 'bool'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class RecycleInstsanceV3:
         'enterprise_project_id': 'enterprise_project_id',
         'retained_until': 'retained_until',
         'recycle_backup_id': 'recycle_backup_id',
-        'recycle_status': 'recycle_status'
+        'recycle_status': 'recycle_status',
+        'is_serverless': 'is_serverless'
     }
 
-    def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, created_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, data_vip_v6=None, enterprise_project_id=None, retained_until=None, recycle_backup_id=None, recycle_status=None):
+    def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, created_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, data_vip_v6=None, enterprise_project_id=None, retained_until=None, recycle_backup_id=None, recycle_status=None, is_serverless=None):
         """RecycleInstsanceV3
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class RecycleInstsanceV3:
         :type recycle_backup_id: str
         :param recycle_status: 备份状态 取值范围如下，区分大小写: - BUILDING 备份中，不能进行重建 - COMPLETED，标识备份完成，可以重建
         :type recycle_status: str
+        :param is_serverless: 是否为serverless实例 - false 不是serverless实例 - true 是serverless实例
+        :type is_serverless: bool
         """
         
         
@@ -111,6 +115,7 @@ class RecycleInstsanceV3:
         self._retained_until = None
         self._recycle_backup_id = None
         self._recycle_status = None
+        self._is_serverless = None
         self.discriminator = None
 
         if id is not None:
@@ -145,6 +150,8 @@ class RecycleInstsanceV3:
             self.recycle_backup_id = recycle_backup_id
         if recycle_status is not None:
             self.recycle_status = recycle_status
+        if is_serverless is not None:
+            self.is_serverless = is_serverless
 
     @property
     def id(self):
@@ -497,6 +504,28 @@ class RecycleInstsanceV3:
         :type recycle_status: str
         """
         self._recycle_status = recycle_status
+
+    @property
+    def is_serverless(self):
+        """Gets the is_serverless of this RecycleInstsanceV3.
+
+        是否为serverless实例 - false 不是serverless实例 - true 是serverless实例
+
+        :return: The is_serverless of this RecycleInstsanceV3.
+        :rtype: bool
+        """
+        return self._is_serverless
+
+    @is_serverless.setter
+    def is_serverless(self, is_serverless):
+        """Sets the is_serverless of this RecycleInstsanceV3.
+
+        是否为serverless实例 - false 不是serverless实例 - true 是serverless实例
+
+        :param is_serverless: The is_serverless of this RecycleInstsanceV3.
+        :type is_serverless: bool
+        """
+        self._is_serverless = is_serverless
 
     def to_dict(self):
         """Returns the model properties as a dict"""

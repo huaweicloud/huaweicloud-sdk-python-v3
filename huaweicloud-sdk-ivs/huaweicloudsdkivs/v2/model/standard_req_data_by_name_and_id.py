@@ -19,16 +19,20 @@ class StandardReqDataByNameAndId:
     openapi_types = {
         'verification_name': 'str',
         'verification_id': 'str',
-        'face_image': 'str'
+        'face_image': 'str',
+        'detail': 'bool',
+        'crop': 'bool'
     }
 
     attribute_map = {
         'verification_name': 'verification_name',
         'verification_id': 'verification_id',
-        'face_image': 'face_image'
+        'face_image': 'face_image',
+        'detail': 'detail',
+        'crop': 'crop'
     }
 
-    def __init__(self, verification_name=None, verification_id=None, face_image=None):
+    def __init__(self, verification_name=None, verification_id=None, face_image=None, detail=None, crop=None):
         """StandardReqDataByNameAndId
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class StandardReqDataByNameAndId:
         :type verification_id: str
         :param face_image: 现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
         :type face_image: str
+        :param detail: 响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+        :type detail: bool
+        :param crop: 是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
+        :type crop: bool
         """
         
         
@@ -46,11 +54,17 @@ class StandardReqDataByNameAndId:
         self._verification_name = None
         self._verification_id = None
         self._face_image = None
+        self._detail = None
+        self._crop = None
         self.discriminator = None
 
         self.verification_name = verification_name
         self.verification_id = verification_id
         self.face_image = face_image
+        if detail is not None:
+            self.detail = detail
+        if crop is not None:
+            self.crop = crop
 
     @property
     def verification_name(self):
@@ -117,6 +131,50 @@ class StandardReqDataByNameAndId:
         :type face_image: str
         """
         self._face_image = face_image
+
+    @property
+    def detail(self):
+        """Gets the detail of this StandardReqDataByNameAndId.
+
+        响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+
+        :return: The detail of this StandardReqDataByNameAndId.
+        :rtype: bool
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        """Sets the detail of this StandardReqDataByNameAndId.
+
+        响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
+
+        :param detail: The detail of this StandardReqDataByNameAndId.
+        :type detail: bool
+        """
+        self._detail = detail
+
+    @property
+    def crop(self):
+        """Gets the crop of this StandardReqDataByNameAndId.
+
+        是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
+
+        :return: The crop of this StandardReqDataByNameAndId.
+        :rtype: bool
+        """
+        return self._crop
+
+    @crop.setter
+    def crop(self, crop):
+        """Sets the crop of this StandardReqDataByNameAndId.
+
+        是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
+
+        :param crop: The crop of this StandardReqDataByNameAndId.
+        :type crop: bool
+        """
+        self._crop = crop
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -59,7 +59,8 @@ class DebugApiRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         self.api_id = api_id
         self.instance_id = instance_id
         if body is not None:

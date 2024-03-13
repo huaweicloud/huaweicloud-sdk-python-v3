@@ -19,22 +19,20 @@ class UpdateVgwRequestBodyContent:
     openapi_types = {
         'name': 'str',
         'local_subnets': 'list[str]',
-        'master_eip_id': 'str',
-        'slave_eip_id': 'str',
         'eip_id_1': 'str',
-        'eip_id_2': 'str'
+        'eip_id_2': 'str',
+        'policy_template': 'UpdateRequestPolicyTemplate'
     }
 
     attribute_map = {
         'name': 'name',
         'local_subnets': 'local_subnets',
-        'master_eip_id': 'master_eip_id',
-        'slave_eip_id': 'slave_eip_id',
         'eip_id_1': 'eip_id_1',
-        'eip_id_2': 'eip_id_2'
+        'eip_id_2': 'eip_id_2',
+        'policy_template': 'policy_template'
     }
 
-    def __init__(self, name=None, local_subnets=None, master_eip_id=None, slave_eip_id=None, eip_id_1=None, eip_id_2=None):
+    def __init__(self, name=None, local_subnets=None, eip_id_1=None, eip_id_2=None, policy_template=None):
         """UpdateVgwRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -43,38 +41,33 @@ class UpdateVgwRequestBodyContent:
         :type name: str
         :param local_subnets: 本端子网
         :type local_subnets: list[str]
-        :param master_eip_id: 主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
-        :type master_eip_id: str
-        :param slave_eip_id: 备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
-        :type slave_eip_id: str
-        :param eip_id_1: 主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
+        :param eip_id_1: 有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
         :type eip_id_1: str
-        :param eip_id_2: 备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
+        :param eip_id_2: 有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
         :type eip_id_2: str
+        :param policy_template: 
+        :type policy_template: :class:`huaweicloudsdkvpn.v5.UpdateRequestPolicyTemplate`
         """
         
         
 
         self._name = None
         self._local_subnets = None
-        self._master_eip_id = None
-        self._slave_eip_id = None
         self._eip_id_1 = None
         self._eip_id_2 = None
+        self._policy_template = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if local_subnets is not None:
             self.local_subnets = local_subnets
-        if master_eip_id is not None:
-            self.master_eip_id = master_eip_id
-        if slave_eip_id is not None:
-            self.slave_eip_id = slave_eip_id
         if eip_id_1 is not None:
             self.eip_id_1 = eip_id_1
         if eip_id_2 is not None:
             self.eip_id_2 = eip_id_2
+        if policy_template is not None:
+            self.policy_template = policy_template
 
     @property
     def name(self):
@@ -121,54 +114,10 @@ class UpdateVgwRequestBodyContent:
         self._local_subnets = local_subnets
 
     @property
-    def master_eip_id(self):
-        """Gets the master_eip_id of this UpdateVgwRequestBodyContent.
-
-        主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
-
-        :return: The master_eip_id of this UpdateVgwRequestBodyContent.
-        :rtype: str
-        """
-        return self._master_eip_id
-
-    @master_eip_id.setter
-    def master_eip_id(self, master_eip_id):
-        """Sets the master_eip_id of this UpdateVgwRequestBodyContent.
-
-        主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
-
-        :param master_eip_id: The master_eip_id of this UpdateVgwRequestBodyContent.
-        :type master_eip_id: str
-        """
-        self._master_eip_id = master_eip_id
-
-    @property
-    def slave_eip_id(self):
-        """Gets the slave_eip_id of this UpdateVgwRequestBodyContent.
-
-        备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
-
-        :return: The slave_eip_id of this UpdateVgwRequestBodyContent.
-        :rtype: str
-        """
-        return self._slave_eip_id
-
-    @slave_eip_id.setter
-    def slave_eip_id(self, slave_eip_id):
-        """Sets the slave_eip_id of this UpdateVgwRequestBodyContent.
-
-        备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
-
-        :param slave_eip_id: The slave_eip_id of this UpdateVgwRequestBodyContent.
-        :type slave_eip_id: str
-        """
-        self._slave_eip_id = slave_eip_id
-
-    @property
     def eip_id_1(self):
         """Gets the eip_id_1 of this UpdateVgwRequestBodyContent.
 
-        主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
+        有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
 
         :return: The eip_id_1 of this UpdateVgwRequestBodyContent.
         :rtype: str
@@ -179,7 +128,7 @@ class UpdateVgwRequestBodyContent:
     def eip_id_1(self, eip_id_1):
         """Sets the eip_id_1 of this UpdateVgwRequestBodyContent.
 
-        主eip的ID。用于给VPN网关绑定新的主EIP，需要先解绑当前的主EIP
+        有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
 
         :param eip_id_1: The eip_id_1 of this UpdateVgwRequestBodyContent.
         :type eip_id_1: str
@@ -190,7 +139,7 @@ class UpdateVgwRequestBodyContent:
     def eip_id_2(self):
         """Gets the eip_id_2 of this UpdateVgwRequestBodyContent.
 
-        备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
+        有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
 
         :return: The eip_id_2 of this UpdateVgwRequestBodyContent.
         :rtype: str
@@ -201,12 +150,30 @@ class UpdateVgwRequestBodyContent:
     def eip_id_2(self, eip_id_2):
         """Sets the eip_id_2 of this UpdateVgwRequestBodyContent.
 
-        备eip的ID。用于给VPN网关绑定新的备EIP，需要先解绑当前的备EIP
+        有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
 
         :param eip_id_2: The eip_id_2 of this UpdateVgwRequestBodyContent.
         :type eip_id_2: str
         """
         self._eip_id_2 = eip_id_2
+
+    @property
+    def policy_template(self):
+        """Gets the policy_template of this UpdateVgwRequestBodyContent.
+
+        :return: The policy_template of this UpdateVgwRequestBodyContent.
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpdateRequestPolicyTemplate`
+        """
+        return self._policy_template
+
+    @policy_template.setter
+    def policy_template(self, policy_template):
+        """Sets the policy_template of this UpdateVgwRequestBodyContent.
+
+        :param policy_template: The policy_template of this UpdateVgwRequestBodyContent.
+        :type policy_template: :class:`huaweicloudsdkvpn.v5.UpdateRequestPolicyTemplate`
+        """
+        self._policy_template = policy_template
 
     def to_dict(self):
         """Returns the model properties as a dict"""

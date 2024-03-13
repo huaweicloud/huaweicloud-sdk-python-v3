@@ -37,7 +37,7 @@ class UpdateSecurityPolciesActionDto:
         :type object_id: str
         :param action: 动作
         :type action: str
-        :param rule_ids: 规则列表
+        :param rule_ids: 规则ID列表
         :type rule_ids: list[str]
         """
         
@@ -100,7 +100,7 @@ class UpdateSecurityPolciesActionDto:
     def rule_ids(self):
         """Gets the rule_ids of this UpdateSecurityPolciesActionDto.
 
-        规则列表
+        规则ID列表
 
         :return: The rule_ids of this UpdateSecurityPolciesActionDto.
         :rtype: list[str]
@@ -111,7 +111,7 @@ class UpdateSecurityPolciesActionDto:
     def rule_ids(self, rule_ids):
         """Sets the rule_ids of this UpdateSecurityPolciesActionDto.
 
-        规则列表
+        规则ID列表
 
         :param rule_ids: The rule_ids of this UpdateSecurityPolciesActionDto.
         :type rule_ids: list[str]

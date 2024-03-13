@@ -23,6 +23,7 @@ class DatabasePermissionReq:
         'revoke_list': 'list[Revoke]',
         'role_list': 'list[str]',
         'object_list': 'object',
+        'all_object': 'bool',
         'cascade': 'bool',
         'database': 'str',
         'schema': 'str',
@@ -36,13 +37,14 @@ class DatabasePermissionReq:
         'revoke_list': 'revoke_list',
         'role_list': 'role_list',
         'object_list': 'object_list',
+        'all_object': 'all_object',
         'cascade': 'cascade',
         'database': 'database',
         'schema': 'schema',
         'table': 'table'
     }
 
-    def __init__(self, type=None, is_grant=None, grant_list=None, revoke_list=None, role_list=None, object_list=None, cascade=None, database=None, schema=None, table=None):
+    def __init__(self, type=None, is_grant=None, grant_list=None, revoke_list=None, role_list=None, object_list=None, all_object=None, cascade=None, database=None, schema=None, table=None):
         """DatabasePermissionReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class DatabasePermissionReq:
         :type role_list: list[str]
         :param object_list: 权限所属对象列表
         :type object_list: object
+        :param all_object: schema下所有数据库对象权限，默认false
+        :type all_object: bool
         :param cascade: 撤销权限是否级联撤销 默认 true
         :type cascade: bool
         :param database: 数据库名称
@@ -77,6 +81,7 @@ class DatabasePermissionReq:
         self._revoke_list = None
         self._role_list = None
         self._object_list = None
+        self._all_object = None
         self._cascade = None
         self._database = None
         self._schema = None
@@ -91,6 +96,8 @@ class DatabasePermissionReq:
             self.revoke_list = revoke_list
         self.role_list = role_list
         self.object_list = object_list
+        if all_object is not None:
+            self.all_object = all_object
         if cascade is not None:
             self.cascade = cascade
         self.database = database
@@ -230,6 +237,28 @@ class DatabasePermissionReq:
         :type object_list: object
         """
         self._object_list = object_list
+
+    @property
+    def all_object(self):
+        """Gets the all_object of this DatabasePermissionReq.
+
+        schema下所有数据库对象权限，默认false
+
+        :return: The all_object of this DatabasePermissionReq.
+        :rtype: bool
+        """
+        return self._all_object
+
+    @all_object.setter
+    def all_object(self, all_object):
+        """Sets the all_object of this DatabasePermissionReq.
+
+        schema下所有数据库对象权限，默认false
+
+        :param all_object: The all_object of this DatabasePermissionReq.
+        :type all_object: bool
+        """
+        self._all_object = all_object
 
     @property
     def cascade(self):

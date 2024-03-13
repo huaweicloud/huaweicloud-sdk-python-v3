@@ -38,7 +38,10 @@ class OpenWebinarBaseInfo:
         'guest_passwd': 'str',
         'audience_join_uri': 'str',
         'audience_passwd': 'str',
-        'enable_recording': 'YesNoEnum'
+        'enable_recording': 'YesNoEnum',
+        'live_address': 'str',
+        'aux_address': 'str',
+        'live_url': 'str'
     }
 
     attribute_map = {
@@ -63,10 +66,13 @@ class OpenWebinarBaseInfo:
         'guest_passwd': 'guestPasswd',
         'audience_join_uri': 'audienceJoinUri',
         'audience_passwd': 'audiencePasswd',
-        'enable_recording': 'enableRecording'
+        'enable_recording': 'enableRecording',
+        'live_address': 'liveAddress',
+        'aux_address': 'auxAddress',
+        'live_url': 'liveUrl'
     }
 
-    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, enable_recording=None):
+    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, enable_recording=None, live_address=None, aux_address=None, live_url=None):
         """OpenWebinarBaseInfo
 
         The model defined in huaweicloud sdk
@@ -115,6 +121,12 @@ class OpenWebinarBaseInfo:
         :type audience_passwd: str
         :param enable_recording: 
         :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        :param live_address: 主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+        :type live_address: str
+        :param aux_address: 辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+        :type aux_address: str
+        :param live_url: 直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
+        :type live_url: str
         """
         
         
@@ -141,6 +153,9 @@ class OpenWebinarBaseInfo:
         self._audience_join_uri = None
         self._audience_passwd = None
         self._enable_recording = None
+        self._live_address = None
+        self._aux_address = None
+        self._live_url = None
         self.discriminator = None
 
         if conference_id is not None:
@@ -187,6 +202,12 @@ class OpenWebinarBaseInfo:
             self.audience_passwd = audience_passwd
         if enable_recording is not None:
             self.enable_recording = enable_recording
+        if live_address is not None:
+            self.live_address = live_address
+        if aux_address is not None:
+            self.aux_address = aux_address
+        if live_url is not None:
+            self.live_url = live_url
 
     @property
     def conference_id(self):
@@ -663,6 +684,72 @@ class OpenWebinarBaseInfo:
         :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
         """
         self._enable_recording = enable_recording
+
+    @property
+    def live_address(self):
+        """Gets the live_address of this OpenWebinarBaseInfo.
+
+        主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+
+        :return: The live_address of this OpenWebinarBaseInfo.
+        :rtype: str
+        """
+        return self._live_address
+
+    @live_address.setter
+    def live_address(self, live_address):
+        """Sets the live_address of this OpenWebinarBaseInfo.
+
+        主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+
+        :param live_address: The live_address of this OpenWebinarBaseInfo.
+        :type live_address: str
+        """
+        self._live_address = live_address
+
+    @property
+    def aux_address(self):
+        """Gets the aux_address of this OpenWebinarBaseInfo.
+
+        辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+
+        :return: The aux_address of this OpenWebinarBaseInfo.
+        :rtype: str
+        """
+        return self._aux_address
+
+    @aux_address.setter
+    def aux_address(self, aux_address):
+        """Sets the aux_address of this OpenWebinarBaseInfo.
+
+        辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+
+        :param aux_address: The aux_address of this OpenWebinarBaseInfo.
+        :type aux_address: str
+        """
+        self._aux_address = aux_address
+
+    @property
+    def live_url(self):
+        """Gets the live_url of this OpenWebinarBaseInfo.
+
+        直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
+
+        :return: The live_url of this OpenWebinarBaseInfo.
+        :rtype: str
+        """
+        return self._live_url
+
+    @live_url.setter
+    def live_url(self, live_url):
+        """Sets the live_url of this OpenWebinarBaseInfo.
+
+        直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
+
+        :param live_url: The live_url of this OpenWebinarBaseInfo.
+        :type live_url: str
+        """
+        self._live_url = live_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

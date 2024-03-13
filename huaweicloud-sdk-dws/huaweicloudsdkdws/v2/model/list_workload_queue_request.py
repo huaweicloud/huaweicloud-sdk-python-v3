@@ -17,28 +17,35 @@ class ListWorkloadQueueRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'logical_cluster_name': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'logical_cluster_name': 'logical_cluster_name'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, logical_cluster_name=None):
         """ListWorkloadQueueRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 集群ID
         :type cluster_id: str
+        :param logical_cluster_name: 逻辑集群名称。逻辑集群模式下该字段必填。
+        :type logical_cluster_name: str
         """
         
         
 
         self._cluster_id = None
+        self._logical_cluster_name = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if logical_cluster_name is not None:
+            self.logical_cluster_name = logical_cluster_name
 
     @property
     def cluster_id(self):
@@ -61,6 +68,28 @@ class ListWorkloadQueueRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def logical_cluster_name(self):
+        """Gets the logical_cluster_name of this ListWorkloadQueueRequest.
+
+        逻辑集群名称。逻辑集群模式下该字段必填。
+
+        :return: The logical_cluster_name of this ListWorkloadQueueRequest.
+        :rtype: str
+        """
+        return self._logical_cluster_name
+
+    @logical_cluster_name.setter
+    def logical_cluster_name(self, logical_cluster_name):
+        """Sets the logical_cluster_name of this ListWorkloadQueueRequest.
+
+        逻辑集群名称。逻辑集群模式下该字段必填。
+
+        :param logical_cluster_name: The logical_cluster_name of this ListWorkloadQueueRequest.
+        :type logical_cluster_name: str
+        """
+        self._logical_cluster_name = logical_cluster_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

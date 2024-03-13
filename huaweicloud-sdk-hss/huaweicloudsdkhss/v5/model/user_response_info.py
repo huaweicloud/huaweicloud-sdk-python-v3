@@ -28,7 +28,9 @@ class UserResponseInfo:
         'user_home_dir': 'str',
         'shell': 'str',
         'expire_time': 'int',
-        'recent_scan_time': 'int'
+        'recent_scan_time': 'int',
+        'container_id': 'str',
+        'container_name': 'str'
     }
 
     attribute_map = {
@@ -43,10 +45,12 @@ class UserResponseInfo:
         'user_home_dir': 'user_home_dir',
         'shell': 'shell',
         'expire_time': 'expire_time',
-        'recent_scan_time': 'recent_scan_time'
+        'recent_scan_time': 'recent_scan_time',
+        'container_id': 'container_id',
+        'container_name': 'container_name'
     }
 
-    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, user_name=None, login_permission=None, root_permission=None, user_group_name=None, user_home_dir=None, shell=None, expire_time=None, recent_scan_time=None):
+    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, user_name=None, login_permission=None, root_permission=None, user_group_name=None, user_home_dir=None, shell=None, expire_time=None, recent_scan_time=None, container_id=None, container_name=None):
         """UserResponseInfo
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class UserResponseInfo:
         :type expire_time: int
         :param recent_scan_time: 最近扫描时间
         :type recent_scan_time: int
+        :param container_id: 容器id
+        :type container_id: str
+        :param container_name: 容器名称
+        :type container_name: str
         """
         
         
@@ -91,6 +99,8 @@ class UserResponseInfo:
         self._shell = None
         self._expire_time = None
         self._recent_scan_time = None
+        self._container_id = None
+        self._container_name = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -117,6 +127,10 @@ class UserResponseInfo:
             self.expire_time = expire_time
         if recent_scan_time is not None:
             self.recent_scan_time = recent_scan_time
+        if container_id is not None:
+            self.container_id = container_id
+        if container_name is not None:
+            self.container_name = container_name
 
     @property
     def agent_id(self):
@@ -381,6 +395,50 @@ class UserResponseInfo:
         :type recent_scan_time: int
         """
         self._recent_scan_time = recent_scan_time
+
+    @property
+    def container_id(self):
+        """Gets the container_id of this UserResponseInfo.
+
+        容器id
+
+        :return: The container_id of this UserResponseInfo.
+        :rtype: str
+        """
+        return self._container_id
+
+    @container_id.setter
+    def container_id(self, container_id):
+        """Sets the container_id of this UserResponseInfo.
+
+        容器id
+
+        :param container_id: The container_id of this UserResponseInfo.
+        :type container_id: str
+        """
+        self._container_id = container_id
+
+    @property
+    def container_name(self):
+        """Gets the container_name of this UserResponseInfo.
+
+        容器名称
+
+        :return: The container_name of this UserResponseInfo.
+        :rtype: str
+        """
+        return self._container_name
+
+    @container_name.setter
+    def container_name(self, container_name):
+        """Sets the container_name of this UserResponseInfo.
+
+        容器名称
+
+        :param container_name: The container_name of this UserResponseInfo.
+        :type container_name: str
+        """
+        self._container_name = container_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

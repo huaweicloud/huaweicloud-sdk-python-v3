@@ -34,11 +34,11 @@ class ShowHistoryRunInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
-        :param log_list: log_list
+        :param log_list: 报告列表
         :type log_list: list[:class:`huaweicloudsdkcpts.v1.HistoryRunInfo`]
         """
         
@@ -60,7 +60,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowHistoryRunInfoResponse.
 
-        code
+        响应码
 
         :return: The code of this ShowHistoryRunInfoResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowHistoryRunInfoResponse.
 
-        code
+        响应码
 
         :param code: The code of this ShowHistoryRunInfoResponse.
         :type code: str
@@ -82,7 +82,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowHistoryRunInfoResponse.
 
-        message
+        响应消息
 
         :return: The message of this ShowHistoryRunInfoResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowHistoryRunInfoResponse.
 
-        message
+        响应消息
 
         :param message: The message of this ShowHistoryRunInfoResponse.
         :type message: str
@@ -104,7 +104,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     def log_list(self):
         """Gets the log_list of this ShowHistoryRunInfoResponse.
 
-        log_list
+        报告列表
 
         :return: The log_list of this ShowHistoryRunInfoResponse.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.HistoryRunInfo`]
@@ -115,7 +115,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     def log_list(self, log_list):
         """Sets the log_list of this ShowHistoryRunInfoResponse.
 
-        log_list
+        报告列表
 
         :param log_list: The log_list of this ShowHistoryRunInfoResponse.
         :type log_list: list[:class:`huaweicloudsdkcpts.v1.HistoryRunInfo`]

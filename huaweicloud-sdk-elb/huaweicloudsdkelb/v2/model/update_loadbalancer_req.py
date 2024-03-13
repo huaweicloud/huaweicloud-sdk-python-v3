@@ -19,16 +19,20 @@ class UpdateLoadbalancerReq:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'admin_state_up': 'bool'
+        'admin_state_up': 'bool',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'admin_state_up': 'admin_state_up'
+        'admin_state_up': 'admin_state_up',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, name=None, description=None, admin_state_up=None):
+    def __init__(self, name=None, description=None, admin_state_up=None, protection_status=None, protection_reason=None):
         """UpdateLoadbalancerReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class UpdateLoadbalancerReq:
         :type description: str
         :param admin_state_up: 负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
         :type admin_state_up: bool
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -46,6 +54,8 @@ class UpdateLoadbalancerReq:
         self._name = None
         self._description = None
         self._admin_state_up = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         if name is not None:
@@ -54,6 +64,10 @@ class UpdateLoadbalancerReq:
             self.description = description
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def name(self):
@@ -120,6 +134,50 @@ class UpdateLoadbalancerReq:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this UpdateLoadbalancerReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this UpdateLoadbalancerReq.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this UpdateLoadbalancerReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this UpdateLoadbalancerReq.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this UpdateLoadbalancerReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this UpdateLoadbalancerReq.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this UpdateLoadbalancerReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this UpdateLoadbalancerReq.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

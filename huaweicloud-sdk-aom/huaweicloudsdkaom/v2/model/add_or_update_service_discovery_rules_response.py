@@ -20,16 +20,20 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_message': 'str',
-        'response_status': 'int'
+        'response_status': 'int',
+        'id': 'list[str]',
+        'results': 'list[dict(str, str)]'
     }
 
     attribute_map = {
         'error_code': 'errorCode',
         'error_message': 'errorMessage',
-        'response_status': 'responseStatus'
+        'response_status': 'responseStatus',
+        'id': 'id',
+        'results': 'results'
     }
 
-    def __init__(self, error_code=None, error_message=None, response_status=None):
+    def __init__(self, error_code=None, error_message=None, response_status=None, id=None, results=None):
         """AddOrUpdateServiceDiscoveryRulesResponse
 
         The model defined in huaweicloud sdk
@@ -38,8 +42,12 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
         :type error_code: str
         :param error_message: 响应信息描述。
         :type error_message: str
-        :param response_status: 响应状态码。
+        :param response_status: 响应状态码（不再使用）。
         :type response_status: int
+        :param id: 服务发现规则id列表，多AZ配置同步时使用。
+        :type id: list[str]
+        :param results: 服务发现规则详细信息列表。
+        :type results: list[dict(str, str)]
         """
         
         super(AddOrUpdateServiceDiscoveryRulesResponse, self).__init__()
@@ -47,6 +55,8 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
         self._error_code = None
         self._error_message = None
         self._response_status = None
+        self._id = None
+        self._results = None
         self.discriminator = None
 
         if error_code is not None:
@@ -55,6 +65,10 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
             self.error_message = error_message
         if response_status is not None:
             self.response_status = response_status
+        if id is not None:
+            self.id = id
+        if results is not None:
+            self.results = results
 
     @property
     def error_code(self):
@@ -104,7 +118,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
     def response_status(self):
         """Gets the response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
 
-        响应状态码。
+        响应状态码（不再使用）。
 
         :return: The response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
         :rtype: int
@@ -115,12 +129,56 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
     def response_status(self, response_status):
         """Sets the response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
 
-        响应状态码。
+        响应状态码（不再使用）。
 
         :param response_status: The response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
         :type response_status: int
         """
         self._response_status = response_status
+
+    @property
+    def id(self):
+        """Gets the id of this AddOrUpdateServiceDiscoveryRulesResponse.
+
+        服务发现规则id列表，多AZ配置同步时使用。
+
+        :return: The id of this AddOrUpdateServiceDiscoveryRulesResponse.
+        :rtype: list[str]
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this AddOrUpdateServiceDiscoveryRulesResponse.
+
+        服务发现规则id列表，多AZ配置同步时使用。
+
+        :param id: The id of this AddOrUpdateServiceDiscoveryRulesResponse.
+        :type id: list[str]
+        """
+        self._id = id
+
+    @property
+    def results(self):
+        """Gets the results of this AddOrUpdateServiceDiscoveryRulesResponse.
+
+        服务发现规则详细信息列表。
+
+        :return: The results of this AddOrUpdateServiceDiscoveryRulesResponse.
+        :rtype: list[dict(str, str)]
+        """
+        return self._results
+
+    @results.setter
+    def results(self, results):
+        """Sets the results of this AddOrUpdateServiceDiscoveryRulesResponse.
+
+        服务发现规则详细信息列表。
+
+        :param results: The results of this AddOrUpdateServiceDiscoveryRulesResponse.
+        :type results: list[dict(str, str)]
+        """
+        self._results = results
 
     def to_dict(self):
         """Returns the model properties as a dict"""

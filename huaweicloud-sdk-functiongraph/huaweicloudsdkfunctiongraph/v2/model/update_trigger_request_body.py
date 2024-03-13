@@ -18,7 +18,7 @@ class UpdateTriggerRequestBody:
 
     openapi_types = {
         'trigger_status': 'str',
-        'event_data': 'list[TriggerEventData]'
+        'event_data': 'list[UpdateriggerEventData]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateTriggerRequestBody:
         :param trigger_status: 触发器状态
         :type trigger_status: str
         :param event_data: 触发器更新事件
-        :type event_data: list[:class:`huaweicloudsdkfunctiongraph.v2.TriggerEventData`]
+        :type event_data: list[:class:`huaweicloudsdkfunctiongraph.v2.UpdateriggerEventData`]
         """
         
         
@@ -77,7 +77,7 @@ class UpdateTriggerRequestBody:
         触发器更新事件
 
         :return: The event_data of this UpdateTriggerRequestBody.
-        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.TriggerEventData`]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.UpdateriggerEventData`]
         """
         return self._event_data
 
@@ -88,7 +88,7 @@ class UpdateTriggerRequestBody:
         触发器更新事件
 
         :param event_data: The event_data of this UpdateTriggerRequestBody.
-        :type event_data: list[:class:`huaweicloudsdkfunctiongraph.v2.TriggerEventData`]
+        :type event_data: list[:class:`huaweicloudsdkfunctiongraph.v2.UpdateriggerEventData`]
         """
         self._event_data = event_data
 

@@ -30,7 +30,8 @@ class ListNatGatewayDnatRulesRequest:
         'nat_gateway_id': 'list[str]',
         'port_id': 'str',
         'private_ip': 'str',
-        'protocol': 'list[str]'
+        'protocol': 'list[str]',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ListNatGatewayDnatRulesRequest:
         'nat_gateway_id': 'nat_gateway_id',
         'port_id': 'port_id',
         'private_ip': 'private_ip',
-        'protocol': 'protocol'
+        'protocol': 'protocol',
+        'marker': 'marker'
     }
 
-    def __init__(self, admin_state_up=None, external_service_port=None, floating_ip_address=None, status=None, floating_ip_id=None, internal_service_port=None, limit=None, id=None, description=None, created_at=None, nat_gateway_id=None, port_id=None, private_ip=None, protocol=None):
+    def __init__(self, admin_state_up=None, external_service_port=None, floating_ip_address=None, status=None, floating_ip_id=None, internal_service_port=None, limit=None, id=None, description=None, created_at=None, nat_gateway_id=None, port_id=None, private_ip=None, protocol=None, marker=None):
         """ListNatGatewayDnatRulesRequest
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class ListNatGatewayDnatRulesRequest:
         :type private_ip: str
         :param protocol: 协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
         :type protocol: list[str]
+        :param marker: 分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+        :type marker: str
         """
         
         
@@ -101,6 +105,7 @@ class ListNatGatewayDnatRulesRequest:
         self._port_id = None
         self._private_ip = None
         self._protocol = None
+        self._marker = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -131,6 +136,8 @@ class ListNatGatewayDnatRulesRequest:
             self.private_ip = private_ip
         if protocol is not None:
             self.protocol = protocol
+        if marker is not None:
+            self.marker = marker
 
     @property
     def admin_state_up(self):
@@ -439,6 +446,28 @@ class ListNatGatewayDnatRulesRequest:
         :type protocol: list[str]
         """
         self._protocol = protocol
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListNatGatewayDnatRulesRequest.
+
+        分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+
+        :return: The marker of this ListNatGatewayDnatRulesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListNatGatewayDnatRulesRequest.
+
+        分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+
+        :param marker: The marker of this ListNatGatewayDnatRulesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

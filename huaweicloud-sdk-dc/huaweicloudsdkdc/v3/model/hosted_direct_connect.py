@@ -31,7 +31,9 @@ class HostedDirectConnect:
         'status': 'str',
         'apply_time': 'str',
         'create_time': 'str',
-        'provider_status': 'str'
+        'provider_status': 'str',
+        'port_type': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class HostedDirectConnect:
         'status': 'status',
         'apply_time': 'apply_time',
         'create_time': 'create_time',
-        'provider_status': 'provider_status'
+        'provider_status': 'provider_status',
+        'port_type': 'port_type',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, bandwidth=None, location=None, peer_location=None, hosting_id=None, provider=None, admin_state_up=None, vlan=None, status=None, apply_time=None, create_time=None, provider_status=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, bandwidth=None, location=None, peer_location=None, hosting_id=None, provider=None, admin_state_up=None, vlan=None, status=None, apply_time=None, create_time=None, provider_status=None, port_type=None, type=None):
         """HostedDirectConnect
 
         The model defined in huaweicloud sdk
@@ -79,7 +83,7 @@ class HostedDirectConnect:
         :type admin_state_up: bool
         :param vlan: hosted物理专线预分配的vlan。
         :type vlan: int
-        :param status: 操作状态，合法值是：ACTIVE， ERROR，PENDING_CREATE，PENDING_UPDATE。ACTIVE：虚拟网关正常ERROR： 虚拟网关异常PENDING_CREATE：创建中PENDING_UPDATE：更新中
+        :param status: 操作状态，合法值是： BUILD：已开通 ACTIVE：虚拟网关正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：虚拟网关异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
         :type status: str
         :param apply_time: 物理专线申请时间
         :type apply_time: str
@@ -87,6 +91,10 @@ class HostedDirectConnect:
         :type create_time: str
         :param provider_status: 物理专线的运营商操作状态，合法值是：ACTIVE， DOWN
         :type provider_status: str
+        :param port_type: 物理专线接入接口的类型，支持1G 10G 40G 100G
+        :type port_type: str
+        :param type: 物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
+        :type type: str
         """
         
         
@@ -106,6 +114,8 @@ class HostedDirectConnect:
         self._apply_time = None
         self._create_time = None
         self._provider_status = None
+        self._port_type = None
+        self._type = None
         self.discriminator = None
 
         if id is not None:
@@ -138,6 +148,10 @@ class HostedDirectConnect:
             self.create_time = create_time
         if provider_status is not None:
             self.provider_status = provider_status
+        if port_type is not None:
+            self.port_type = port_type
+        if type is not None:
+            self.type = type
 
     @property
     def id(self):
@@ -385,7 +399,7 @@ class HostedDirectConnect:
     def status(self):
         """Gets the status of this HostedDirectConnect.
 
-        操作状态，合法值是：ACTIVE， ERROR，PENDING_CREATE，PENDING_UPDATE。ACTIVE：虚拟网关正常ERROR： 虚拟网关异常PENDING_CREATE：创建中PENDING_UPDATE：更新中
+        操作状态，合法值是： BUILD：已开通 ACTIVE：虚拟网关正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：虚拟网关异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
 
         :return: The status of this HostedDirectConnect.
         :rtype: str
@@ -396,7 +410,7 @@ class HostedDirectConnect:
     def status(self, status):
         """Sets the status of this HostedDirectConnect.
 
-        操作状态，合法值是：ACTIVE， ERROR，PENDING_CREATE，PENDING_UPDATE。ACTIVE：虚拟网关正常ERROR： 虚拟网关异常PENDING_CREATE：创建中PENDING_UPDATE：更新中
+        操作状态，合法值是： BUILD：已开通 ACTIVE：虚拟网关正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：虚拟网关异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
 
         :param status: The status of this HostedDirectConnect.
         :type status: str
@@ -468,6 +482,50 @@ class HostedDirectConnect:
         :type provider_status: str
         """
         self._provider_status = provider_status
+
+    @property
+    def port_type(self):
+        """Gets the port_type of this HostedDirectConnect.
+
+        物理专线接入接口的类型，支持1G 10G 40G 100G
+
+        :return: The port_type of this HostedDirectConnect.
+        :rtype: str
+        """
+        return self._port_type
+
+    @port_type.setter
+    def port_type(self, port_type):
+        """Sets the port_type of this HostedDirectConnect.
+
+        物理专线接入接口的类型，支持1G 10G 40G 100G
+
+        :param port_type: The port_type of this HostedDirectConnect.
+        :type port_type: str
+        """
+        self._port_type = port_type
+
+    @property
+    def type(self):
+        """Gets the type of this HostedDirectConnect.
+
+        物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
+
+        :return: The type of this HostedDirectConnect.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this HostedDirectConnect.
+
+        物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
+
+        :param type: The type of this HostedDirectConnect.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class PluginCreate:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_name: 插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param plugin_name: 插件名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type plugin_name: str
         :param plugin_type: 插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送  - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证
         :type plugin_type: str
@@ -69,7 +69,7 @@ class PluginCreate:
     def plugin_name(self):
         """Gets the plugin_name of this PluginCreate.
 
-        插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
+        插件名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The plugin_name of this PluginCreate.
         :rtype: str
@@ -80,7 +80,7 @@ class PluginCreate:
     def plugin_name(self, plugin_name):
         """Sets the plugin_name of this PluginCreate.
 
-        插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
+        插件名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param plugin_name: The plugin_name of this PluginCreate.
         :type plugin_name: str

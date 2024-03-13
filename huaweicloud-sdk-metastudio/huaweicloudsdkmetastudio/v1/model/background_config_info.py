@@ -43,15 +43,15 @@ class BackgroundConfigInfo:
 
         :param background_type: 背景类型。 - IMAGE：图片，用于3D数字人演示素材讲解模式的图片或分身数字背景图片 - IMAGE_2D：图片，用于3D数字人主播播报模式的2D场景背景图片 - VIDEO：视频 - AUDIO：音频 &gt; * 分身数字人视频制作仅支持IMAGE
         :type background_type: str
-        :param background_title: 背景标题。
+        :param background_title: 背景标题。 &gt; * 分身数字人视频制作此参数不生效。
         :type background_title: str
         :param human_position_2d: 
         :type human_position_2d: :class:`huaweicloudsdkmetastudio.v1.HumanPosition2D`
         :param human_size_2d: 
         :type human_size_2d: :class:`huaweicloudsdkmetastudio.v1.HumanSize2D`
-        :param background_cover_url: 视频文件封面图片的下载URL。  演示素材为视频时有效。
+        :param background_cover_url: 视频文件封面图片的下载URL。  演示素材为视频时有效。 &gt; * 分身数字人视频制作此参数不生效。
         :type background_cover_url: str
-        :param background_config: 背景文件的URL。
+        :param background_config: 背景文件的URL。 &gt; * 通过资产库查询获取，不支持外部URL。
         :type background_config: str
         :param background_asset_id: 背景资产ID。 &gt; * 背景是背景图片时，填图片资产ID。
         :type background_asset_id: str
@@ -107,7 +107,7 @@ class BackgroundConfigInfo:
     def background_title(self):
         """Gets the background_title of this BackgroundConfigInfo.
 
-        背景标题。
+        背景标题。 > * 分身数字人视频制作此参数不生效。
 
         :return: The background_title of this BackgroundConfigInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class BackgroundConfigInfo:
     def background_title(self, background_title):
         """Sets the background_title of this BackgroundConfigInfo.
 
-        背景标题。
+        背景标题。 > * 分身数字人视频制作此参数不生效。
 
         :param background_title: The background_title of this BackgroundConfigInfo.
         :type background_title: str
@@ -165,7 +165,7 @@ class BackgroundConfigInfo:
     def background_cover_url(self):
         """Gets the background_cover_url of this BackgroundConfigInfo.
 
-        视频文件封面图片的下载URL。  演示素材为视频时有效。
+        视频文件封面图片的下载URL。  演示素材为视频时有效。 > * 分身数字人视频制作此参数不生效。
 
         :return: The background_cover_url of this BackgroundConfigInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class BackgroundConfigInfo:
     def background_cover_url(self, background_cover_url):
         """Sets the background_cover_url of this BackgroundConfigInfo.
 
-        视频文件封面图片的下载URL。  演示素材为视频时有效。
+        视频文件封面图片的下载URL。  演示素材为视频时有效。 > * 分身数字人视频制作此参数不生效。
 
         :param background_cover_url: The background_cover_url of this BackgroundConfigInfo.
         :type background_cover_url: str
@@ -187,7 +187,7 @@ class BackgroundConfigInfo:
     def background_config(self):
         """Gets the background_config of this BackgroundConfigInfo.
 
-        背景文件的URL。
+        背景文件的URL。 > * 通过资产库查询获取，不支持外部URL。
 
         :return: The background_config of this BackgroundConfigInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class BackgroundConfigInfo:
     def background_config(self, background_config):
         """Sets the background_config of this BackgroundConfigInfo.
 
-        背景文件的URL。
+        背景文件的URL。 > * 通过资产库查询获取，不支持外部URL。
 
         :param background_config: The background_config of this BackgroundConfigInfo.
         :type background_config: str

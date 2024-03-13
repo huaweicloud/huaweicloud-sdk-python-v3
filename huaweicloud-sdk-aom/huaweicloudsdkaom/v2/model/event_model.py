@@ -20,9 +20,9 @@ class EventModel:
         'starts_at': 'int',
         'ends_at': 'int',
         'timeout': 'int',
-        'metadata': 'object',
-        'annotations': 'object',
-        'attach_rule': 'object',
+        'metadata': 'dict(str, str)',
+        'annotations': 'dict(str, object)',
+        'attach_rule': 'dict(str, object)',
         'id': 'str'
     }
 
@@ -47,12 +47,12 @@ class EventModel:
         :type ends_at: int
         :param timeout: 告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
         :type timeout: int
-        :param metadata: 事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \&quot;Critical\&quot;, \&quot;Major\&quot;, \&quot;Minor\&quot;, \&quot;Info\&quot;； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。
-        :type metadata: object
+        :param metadata: 事件或者告警的详细信息，为键值对形式。必须字段为：  - event_name：事件或者告警名称,类型为String；  - event_severity：事件级别枚举值。类型为String，四种类型 \&quot;Critical\&quot;, \&quot;Major\&quot;, \&quot;Minor\&quot;, \&quot;Info\&quot;；  - event_type：事件类别枚举值。类型为String，event为告警事件，alarm为普通告警；  - resource_provider：事件对应云服务名称。类型为String；  - resource_type：事件对应资源类型。类型为String；  - resource_id：事件对应资源信息。类型为String。
+        :type metadata: dict(str, str)
         :param annotations: 事件或者告警附加字段，可以为空。
-        :type annotations: object
+        :type annotations: dict(str, object)
         :param attach_rule: 事件或者告警预留字段，为空。
-        :type attach_rule: object
+        :type attach_rule: dict(str, object)
         :param id: 事件或者告警id，系统会自动生成，上报无须填写该字段。
         :type id: str
         """
@@ -153,10 +153,10 @@ class EventModel:
     def metadata(self):
         """Gets the metadata of this EventModel.
 
-        事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。
+        事件或者告警的详细信息，为键值对形式。必须字段为：  - event_name：事件或者告警名称,类型为String；  - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"；  - event_type：事件类别枚举值。类型为String，event为告警事件，alarm为普通告警；  - resource_provider：事件对应云服务名称。类型为String；  - resource_type：事件对应资源类型。类型为String；  - resource_id：事件对应资源信息。类型为String。
 
         :return: The metadata of this EventModel.
-        :rtype: object
+        :rtype: dict(str, str)
         """
         return self._metadata
 
@@ -164,10 +164,10 @@ class EventModel:
     def metadata(self, metadata):
         """Sets the metadata of this EventModel.
 
-        事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。
+        事件或者告警的详细信息，为键值对形式。必须字段为：  - event_name：事件或者告警名称,类型为String；  - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"；  - event_type：事件类别枚举值。类型为String，event为告警事件，alarm为普通告警；  - resource_provider：事件对应云服务名称。类型为String；  - resource_type：事件对应资源类型。类型为String；  - resource_id：事件对应资源信息。类型为String。
 
         :param metadata: The metadata of this EventModel.
-        :type metadata: object
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -178,7 +178,7 @@ class EventModel:
         事件或者告警附加字段，可以为空。
 
         :return: The annotations of this EventModel.
-        :rtype: object
+        :rtype: dict(str, object)
         """
         return self._annotations
 
@@ -189,7 +189,7 @@ class EventModel:
         事件或者告警附加字段，可以为空。
 
         :param annotations: The annotations of this EventModel.
-        :type annotations: object
+        :type annotations: dict(str, object)
         """
         self._annotations = annotations
 
@@ -200,7 +200,7 @@ class EventModel:
         事件或者告警预留字段，为空。
 
         :return: The attach_rule of this EventModel.
-        :rtype: object
+        :rtype: dict(str, object)
         """
         return self._attach_rule
 
@@ -211,7 +211,7 @@ class EventModel:
         事件或者告警预留字段，为空。
 
         :param attach_rule: The attach_rule of this EventModel.
-        :type attach_rule: object
+        :type attach_rule: dict(str, object)
         """
         self._attach_rule = attach_rule
 

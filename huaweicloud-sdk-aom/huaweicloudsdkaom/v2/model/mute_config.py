@@ -18,7 +18,7 @@ class MuteConfig:
 
     openapi_types = {
         'ends_at': 'int',
-        'scope': 'list[str]',
+        'scope': 'list[int]',
         'starts_at': 'int',
         'type': 'str'
     }
@@ -38,10 +38,10 @@ class MuteConfig:
         :param ends_at: 静默规则结束时间
         :type ends_at: int
         :param scope: 当type为每周或者每月时，scope不能为空
-        :type scope: list[str]
+        :type scope: list[int]
         :param starts_at: 静默规则开始时间
         :type starts_at: int
-        :param type: 静默规则生效时间种类。FIXED:固定方式统计,DAILY:按日合计,WEEKLY:按周统计,MONTHLY:按月统计
+        :param type: 静默规则生效时间种类。FIXED：固定方式统计，DAILY：按日合计，WEEKLY：按周统计，MONTHLY：按月统计
         :type type: str
         """
         
@@ -89,7 +89,7 @@ class MuteConfig:
         当type为每周或者每月时，scope不能为空
 
         :return: The scope of this MuteConfig.
-        :rtype: list[str]
+        :rtype: list[int]
         """
         return self._scope
 
@@ -100,7 +100,7 @@ class MuteConfig:
         当type为每周或者每月时，scope不能为空
 
         :param scope: The scope of this MuteConfig.
-        :type scope: list[str]
+        :type scope: list[int]
         """
         self._scope = scope
 
@@ -130,7 +130,7 @@ class MuteConfig:
     def type(self):
         """Gets the type of this MuteConfig.
 
-        静默规则生效时间种类。FIXED:固定方式统计,DAILY:按日合计,WEEKLY:按周统计,MONTHLY:按月统计
+        静默规则生效时间种类。FIXED：固定方式统计，DAILY：按日合计，WEEKLY：按周统计，MONTHLY：按月统计
 
         :return: The type of this MuteConfig.
         :rtype: str
@@ -141,7 +141,7 @@ class MuteConfig:
     def type(self, type):
         """Sets the type of this MuteConfig.
 
-        静默规则生效时间种类。FIXED:固定方式统计,DAILY:按日合计,WEEKLY:按周统计,MONTHLY:按月统计
+        静默规则生效时间种类。FIXED：固定方式统计，DAILY：按日合计，WEEKLY：按周统计，MONTHLY：按月统计
 
         :param type: The type of this MuteConfig.
         :type type: str

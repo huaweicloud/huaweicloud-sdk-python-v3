@@ -99,6 +99,73 @@ class MrsClient(Client):
 
         return http_info
 
+    def create_auto_scaling_policy(self, request):
+        """创建弹性伸缩策略
+
+        创建弹性伸缩策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkmrs.v2.CreateAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.CreateAutoScalingPolicyResponse`
+        """
+        http_info = self._create_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_auto_scaling_policy_invoker(self, request):
+        http_info = self._create_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/autoscaling-policy/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutoScalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_cluster(self, request):
         """创建集群
 
@@ -227,6 +294,73 @@ class MrsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_auto_scaling_policy(self, request):
+        """删除弹性伸缩策略
+
+        删除弹性伸缩策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkmrs.v2.DeleteAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.DeleteAutoScalingPolicyResponse`
+        """
+        http_info = self._delete_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_auto_scaling_policy_invoker(self, request):
+        http_info = self._delete_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/autoscaling-policy/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutoScalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -755,6 +889,73 @@ class MrsClient(Client):
             "resource_path": "/v2/{project_id}/clusters/{cluster_id}/agency-mapping",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateAgencyMappingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_auto_scaling_policy(self, request):
+        """更新弹性伸缩策略
+
+        更新弹性伸缩策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkmrs.v2.UpdateAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.UpdateAutoScalingPolicyResponse`
+        """
+        http_info = self._update_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_auto_scaling_policy_invoker(self, request):
+        http_info = self._update_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/autoscaling-policy/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutoScalingPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1412,6 +1613,205 @@ class MrsClient(Client):
 
         return http_info
 
+    def cancel_sync_iam_user(self, request):
+        """指定用户、用户组取消同步
+
+        指定用户、用户组取消同步
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CancelSyncIamUser
+        :type request: :class:`huaweicloudsdkmrs.v2.CancelSyncIamUserRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.CancelSyncIamUserResponse`
+        """
+        http_info = self._cancel_sync_iam_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_sync_iam_user_invoker(self, request):
+        http_info = self._cancel_sync_iam_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_sync_iam_user_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/iam-sync-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelSyncIamUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sync_iam_user(self, request):
+        """获取已经同步的IAM用户和用户组
+
+        获取已经同步的IAM用户和用户组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSyncIamUser
+        :type request: :class:`huaweicloudsdkmrs.v2.ShowSyncIamUserRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ShowSyncIamUserResponse`
+        """
+        http_info = self._show_sync_iam_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sync_iam_user_invoker(self, request):
+        http_info = self._show_sync_iam_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sync_iam_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/iam-sync-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSyncIamUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sync_iam_user(self, request):
+        """IAM同步
+
+        将IAM用户和用户组同步到manager，指定用户的情况下，会将该用户关联的IAM用户组也同步到manager。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSyncIamUser
+        :type request: :class:`huaweicloudsdkmrs.v2.UpdateSyncIamUserRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.UpdateSyncIamUserResponse`
+        """
+        http_info = self._update_sync_iam_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sync_iam_user_invoker(self, request):
+        http_info = self._update_sync_iam_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_sync_iam_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/iam-sync-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSyncIamUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_sql(self, request):
         """取消SQL执行任务
 
@@ -1584,6 +1984,270 @@ class MrsClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'sql_id' in local_var_params:
             path_params['sql_id'] = local_var_params['sql_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tag_quota(self, request):
+        """查询标签配额
+
+        查询标签配额信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTagQuota
+        :type request: :class:`huaweicloudsdkmrs.v2.ShowTagQuotaRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ShowTagQuotaResponse`
+        """
+        http_info = self._show_tag_quota_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tag_quota_invoker(self, request):
+        http_info = self._show_tag_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tag_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/tags/quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'auto_scaling_policy_tags' in local_var_params:
+            query_params.append(('auto_scaling_policy_tags', local_var_params['auto_scaling_policy_tags']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tag_status(self, request):
+        """查询默认标签状态
+
+        查询集群默认标签状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTagStatus
+        :type request: :class:`huaweicloudsdkmrs.v2.ShowTagStatusRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ShowTagStatusResponse`
+        """
+        http_info = self._show_tag_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tag_status_invoker(self, request):
+        http_info = self._show_tag_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tag_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/tags/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_cluster_tags(self, request):
+        """集群操作默认标签
+
+        对已有集群启用或关闭集群默认标签。开启后，集群内节点会打上集群默认标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchClusterTags
+        :type request: :class:`huaweicloudsdkmrs.v2.SwitchClusterTagsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.SwitchClusterTagsResponse`
+        """
+        http_info = self._switch_cluster_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_cluster_tags_invoker(self, request):
+        http_info = self._switch_cluster_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_cluster_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/tags/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchClusterTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_mrs_flavors(self, request):
+        """查询MRS集群版本可用的规格
+
+        查询MRS集群版本可用的规格
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMrsFlavors
+        :type request: :class:`huaweicloudsdkmrs.v2.ShowMrsFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ShowMrsFlavorsResponse`
+        """
+        http_info = self._show_mrs_flavors_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_mrs_flavors_invoker(self, request):
+        http_info = self._show_mrs_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_mrs_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/metadata/version/{version_name}/available-flavor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMrsFlavorsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version_name' in local_var_params:
+            path_params['version_name'] = local_var_params['version_name']
 
         query_params = []
 

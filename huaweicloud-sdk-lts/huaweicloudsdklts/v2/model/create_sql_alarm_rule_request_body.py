@@ -18,9 +18,10 @@ class CreateSqlAlarmRuleRequestBody:
 
     openapi_types = {
         'sql_alarm_rule_name': 'str',
+        'is_css_sql': 'bool',
         'sql_alarm_rule_description': 'str',
         'sql_requests': 'list[SqlRequest]',
-        'frequency': 'Frequency',
+        'frequency': 'CreateSqlAlarmRuleFrequency',
         'condition_expression': 'str',
         'sql_alarm_level': 'str',
         'sql_alarm_send': 'bool',
@@ -29,11 +30,14 @@ class CreateSqlAlarmRuleRequestBody:
         'trigger_condition_count': 'int',
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
-        'recovery_policy': 'int'
+        'recovery_policy': 'int',
+        'notification_frequency': 'int',
+        'alarm_action_rule_name': 'str'
     }
 
     attribute_map = {
         'sql_alarm_rule_name': 'sql_alarm_rule_name',
+        'is_css_sql': 'is_css_sql',
         'sql_alarm_rule_description': 'sql_alarm_rule_description',
         'sql_requests': 'sql_requests',
         'frequency': 'frequency',
@@ -45,22 +49,26 @@ class CreateSqlAlarmRuleRequestBody:
         'trigger_condition_count': 'trigger_condition_count',
         'trigger_condition_frequency': 'trigger_condition_frequency',
         'whether_recovery_policy': 'whether_recovery_policy',
-        'recovery_policy': 'recovery_policy'
+        'recovery_policy': 'recovery_policy',
+        'notification_frequency': 'notification_frequency',
+        'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None):
+    def __init__(self, sql_alarm_rule_name=None, is_css_sql=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
         """CreateSqlAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
 
         :param sql_alarm_rule_name: SQL告警名称
         :type sql_alarm_rule_name: str
+        :param is_css_sql: 是否管道符sql查询
+        :type is_css_sql: bool
         :param sql_alarm_rule_description: SQL告警信息描述
         :type sql_alarm_rule_description: str
         :param sql_requests: SQL详细信息
         :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
         :param frequency: 
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleFrequency`
         :param condition_expression: 条件表达式
         :type condition_expression: str
         :param sql_alarm_level: 告警级别
@@ -79,11 +87,16 @@ class CreateSqlAlarmRuleRequestBody:
         :type whether_recovery_policy: bool
         :param recovery_policy: 恢复策略周期;默认为3
         :type recovery_policy: int
+        :param notification_frequency: 通知频率,单位(分钟)
+        :type notification_frequency: int
+        :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+        :type alarm_action_rule_name: str
         """
         
         
 
         self._sql_alarm_rule_name = None
+        self._is_css_sql = None
         self._sql_alarm_rule_description = None
         self._sql_requests = None
         self._frequency = None
@@ -96,9 +109,13 @@ class CreateSqlAlarmRuleRequestBody:
         self._trigger_condition_frequency = None
         self._whether_recovery_policy = None
         self._recovery_policy = None
+        self._notification_frequency = None
+        self._alarm_action_rule_name = None
         self.discriminator = None
 
         self.sql_alarm_rule_name = sql_alarm_rule_name
+        if is_css_sql is not None:
+            self.is_css_sql = is_css_sql
         if sql_alarm_rule_description is not None:
             self.sql_alarm_rule_description = sql_alarm_rule_description
         self.sql_requests = sql_requests
@@ -117,6 +134,9 @@ class CreateSqlAlarmRuleRequestBody:
             self.whether_recovery_policy = whether_recovery_policy
         if recovery_policy is not None:
             self.recovery_policy = recovery_policy
+        self.notification_frequency = notification_frequency
+        if alarm_action_rule_name is not None:
+            self.alarm_action_rule_name = alarm_action_rule_name
 
     @property
     def sql_alarm_rule_name(self):
@@ -139,6 +159,28 @@ class CreateSqlAlarmRuleRequestBody:
         :type sql_alarm_rule_name: str
         """
         self._sql_alarm_rule_name = sql_alarm_rule_name
+
+    @property
+    def is_css_sql(self):
+        """Gets the is_css_sql of this CreateSqlAlarmRuleRequestBody.
+
+        是否管道符sql查询
+
+        :return: The is_css_sql of this CreateSqlAlarmRuleRequestBody.
+        :rtype: bool
+        """
+        return self._is_css_sql
+
+    @is_css_sql.setter
+    def is_css_sql(self, is_css_sql):
+        """Sets the is_css_sql of this CreateSqlAlarmRuleRequestBody.
+
+        是否管道符sql查询
+
+        :param is_css_sql: The is_css_sql of this CreateSqlAlarmRuleRequestBody.
+        :type is_css_sql: bool
+        """
+        self._is_css_sql = is_css_sql
 
     @property
     def sql_alarm_rule_description(self):
@@ -189,7 +231,7 @@ class CreateSqlAlarmRuleRequestBody:
         """Gets the frequency of this CreateSqlAlarmRuleRequestBody.
 
         :return: The frequency of this CreateSqlAlarmRuleRequestBody.
-        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
+        :rtype: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleFrequency`
         """
         return self._frequency
 
@@ -198,7 +240,7 @@ class CreateSqlAlarmRuleRequestBody:
         """Sets the frequency of this CreateSqlAlarmRuleRequestBody.
 
         :param frequency: The frequency of this CreateSqlAlarmRuleRequestBody.
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleFrequency`
         """
         self._frequency = frequency
 
@@ -395,6 +437,50 @@ class CreateSqlAlarmRuleRequestBody:
         :type recovery_policy: int
         """
         self._recovery_policy = recovery_policy
+
+    @property
+    def notification_frequency(self):
+        """Gets the notification_frequency of this CreateSqlAlarmRuleRequestBody.
+
+        通知频率,单位(分钟)
+
+        :return: The notification_frequency of this CreateSqlAlarmRuleRequestBody.
+        :rtype: int
+        """
+        return self._notification_frequency
+
+    @notification_frequency.setter
+    def notification_frequency(self, notification_frequency):
+        """Sets the notification_frequency of this CreateSqlAlarmRuleRequestBody.
+
+        通知频率,单位(分钟)
+
+        :param notification_frequency: The notification_frequency of this CreateSqlAlarmRuleRequestBody.
+        :type notification_frequency: int
+        """
+        self._notification_frequency = notification_frequency
+
+    @property
+    def alarm_action_rule_name(self):
+        """Gets the alarm_action_rule_name of this CreateSqlAlarmRuleRequestBody.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :return: The alarm_action_rule_name of this CreateSqlAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._alarm_action_rule_name
+
+    @alarm_action_rule_name.setter
+    def alarm_action_rule_name(self, alarm_action_rule_name):
+        """Sets the alarm_action_rule_name of this CreateSqlAlarmRuleRequestBody.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :param alarm_action_rule_name: The alarm_action_rule_name of this CreateSqlAlarmRuleRequestBody.
+        :type alarm_action_rule_name: str
+        """
+        self._alarm_action_rule_name = alarm_action_rule_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

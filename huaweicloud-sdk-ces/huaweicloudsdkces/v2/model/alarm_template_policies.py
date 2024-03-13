@@ -65,7 +65,7 @@ class AlarmTemplatePolicies:
         :type value: float
         :param unit: 数据的单位字符串，长度不超过32
         :type unit: str
-        :param count: 告警连续触发次数，正整数[1, 5]
+        :param count: 次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
         :type count: int
         :param alarm_level: 告警级别，1为紧急，2为重要，3为次要，4为提示
         :type alarm_level: int
@@ -280,7 +280,7 @@ class AlarmTemplatePolicies:
     def count(self):
         """Gets the count of this AlarmTemplatePolicies.
 
-        告警连续触发次数，正整数[1, 5]
+        次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
 
         :return: The count of this AlarmTemplatePolicies.
         :rtype: int
@@ -291,7 +291,7 @@ class AlarmTemplatePolicies:
     def count(self, count):
         """Sets the count of this AlarmTemplatePolicies.
 
-        告警连续触发次数，正整数[1, 5]
+        次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
 
         :param count: The count of this AlarmTemplatePolicies.
         :type count: int

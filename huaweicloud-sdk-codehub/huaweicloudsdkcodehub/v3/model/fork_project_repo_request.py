@@ -49,9 +49,9 @@ class ForkProjectRepoRequest:
         :type repo_name: str
         :param template_id: 复制模板的ID
         :type template_id: str
-        :param type: 项目类型，normal|scrum
+        :param type: 项目类型，scrum
         :type type: str
-        :param visibility_level: 是否是公仓
+        :param visibility_level: 仓库可见性：  *私有仓库：仓库仅对仓库成员可见，仓库成员可读写和访问仓库，取值范围为0  *公开仓库：   1.项目内成员只读仓库：仓库对项目内成员公开只读，并项目内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   2.租户内成员只读仓库：仓库对租户内成员公开只读，并租户内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   3.所有访客只读仓库：仓库对所有访客公开只读，并所有访客可在项目下和代码组下的仓库列表中查看和搜索，取值范围为20
         :type visibility_level: int
         :param external_project_info: 
         :type external_project_info: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
@@ -172,7 +172,7 @@ class ForkProjectRepoRequest:
     def type(self):
         """Gets the type of this ForkProjectRepoRequest.
 
-        项目类型，normal|scrum
+        项目类型，scrum
 
         :return: The type of this ForkProjectRepoRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ForkProjectRepoRequest:
     def type(self, type):
         """Sets the type of this ForkProjectRepoRequest.
 
-        项目类型，normal|scrum
+        项目类型，scrum
 
         :param type: The type of this ForkProjectRepoRequest.
         :type type: str
@@ -194,7 +194,7 @@ class ForkProjectRepoRequest:
     def visibility_level(self):
         """Gets the visibility_level of this ForkProjectRepoRequest.
 
-        是否是公仓
+        仓库可见性：  *私有仓库：仓库仅对仓库成员可见，仓库成员可读写和访问仓库，取值范围为0  *公开仓库：   1.项目内成员只读仓库：仓库对项目内成员公开只读，并项目内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   2.租户内成员只读仓库：仓库对租户内成员公开只读，并租户内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   3.所有访客只读仓库：仓库对所有访客公开只读，并所有访客可在项目下和代码组下的仓库列表中查看和搜索，取值范围为20
 
         :return: The visibility_level of this ForkProjectRepoRequest.
         :rtype: int
@@ -205,7 +205,7 @@ class ForkProjectRepoRequest:
     def visibility_level(self, visibility_level):
         """Sets the visibility_level of this ForkProjectRepoRequest.
 
-        是否是公仓
+        仓库可见性：  *私有仓库：仓库仅对仓库成员可见，仓库成员可读写和访问仓库，取值范围为0  *公开仓库：   1.项目内成员只读仓库：仓库对项目内成员公开只读，并项目内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   2.租户内成员只读仓库：仓库对租户内成员公开只读，并租户内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   3.所有访客只读仓库：仓库对所有访客公开只读，并所有访客可在项目下和代码组下的仓库列表中查看和搜索，取值范围为20
 
         :param visibility_level: The visibility_level of this ForkProjectRepoRequest.
         :type visibility_level: int

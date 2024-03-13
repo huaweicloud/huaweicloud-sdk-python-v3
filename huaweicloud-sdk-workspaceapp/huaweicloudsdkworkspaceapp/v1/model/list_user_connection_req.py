@@ -65,43 +65,43 @@ class ListUserConnectionReq:
 
         The model defined in huaweicloud sdk
 
-        :param id: 登录记录唯一标识ID
+        :param id: 登录记录唯一标识ID。
         :type id: str
-        :param connect_type: 用户连接类别
+        :param connect_type: 用户连接类别。
         :type connect_type: str
-        :param user_name: 登录用户名称
+        :param user_name: 登录用户名称。
         :type user_name: str
-        :param machine_sid: 应用服务器sid
+        :param machine_sid: 应用服务器sid。
         :type machine_sid: str
-        :param machine_name: 应用服务器名称
+        :param machine_name: 应用服务器名称。
         :type machine_name: str
-        :param failed_reason: 连接失败原因
+        :param failed_reason: 连接失败原因。
         :type failed_reason: str
-        :param failed_code: 连接失败状态码
+        :param failed_code: 连接失败状态码。
         :type failed_code: str
-        :param client_name: 客户端名称
+        :param client_name: 客户端名称。
         :type client_name: str
-        :param client_version: 客户端版本
+        :param client_version: 客户端版本。
         :type client_version: str
-        :param client_type: 客户端操作系统类型
+        :param client_type: 客户端操作系统类型。
         :type client_type: str
-        :param agent_version: aps hda版本
+        :param agent_version: aps hda版本。
         :type agent_version: str
-        :param vm_ip: 应用服务器ip
+        :param vm_ip: 应用服务器ip。
         :type vm_ip: str
-        :param connect_flag: 连接标志，目前值为0
+        :param connect_flag: 连接标志，目前值为0。
         :type connect_flag: str
-        :param wi_ip: 连接IP
+        :param wi_ip: 连接IP。
         :type wi_ip: str
-        :param update_time: 登录应用开始时间，格式 2022-10-31 08:07:39
+        :param update_time: 登录应用开始时间，格式 2022-10-31 08:07:39。
         :type update_time: datetime
-        :param tenant_id: 租户id
+        :param tenant_id: 租户id。
         :type tenant_id: str
-        :param login_start_time: 登录应用开始时间，格式 2022-10-31 08:07:39
+        :param login_start_time: 登录应用开始时间，格式 2022-10-31 08:07:39。
         :type login_start_time: datetime
-        :param login_end_time: 登录应用结束时间，格式 2022-10-31 08:07:39
+        :param login_end_time: 登录应用结束时间，格式 2022-10-31 08:07:39。
         :type login_end_time: datetime
-        :param virtual_ip: 会话虚拟ip
+        :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
         """
         
@@ -171,7 +171,7 @@ class ListUserConnectionReq:
     def id(self):
         """Gets the id of this ListUserConnectionReq.
 
-        登录记录唯一标识ID
+        登录记录唯一标识ID。
 
         :return: The id of this ListUserConnectionReq.
         :rtype: str
@@ -182,7 +182,7 @@ class ListUserConnectionReq:
     def id(self, id):
         """Sets the id of this ListUserConnectionReq.
 
-        登录记录唯一标识ID
+        登录记录唯一标识ID。
 
         :param id: The id of this ListUserConnectionReq.
         :type id: str
@@ -193,7 +193,7 @@ class ListUserConnectionReq:
     def connect_type(self):
         """Gets the connect_type of this ListUserConnectionReq.
 
-        用户连接类别
+        用户连接类别。
 
         :return: The connect_type of this ListUserConnectionReq.
         :rtype: str
@@ -204,7 +204,7 @@ class ListUserConnectionReq:
     def connect_type(self, connect_type):
         """Sets the connect_type of this ListUserConnectionReq.
 
-        用户连接类别
+        用户连接类别。
 
         :param connect_type: The connect_type of this ListUserConnectionReq.
         :type connect_type: str
@@ -215,7 +215,7 @@ class ListUserConnectionReq:
     def user_name(self):
         """Gets the user_name of this ListUserConnectionReq.
 
-        登录用户名称
+        登录用户名称。
 
         :return: The user_name of this ListUserConnectionReq.
         :rtype: str
@@ -226,7 +226,7 @@ class ListUserConnectionReq:
     def user_name(self, user_name):
         """Sets the user_name of this ListUserConnectionReq.
 
-        登录用户名称
+        登录用户名称。
 
         :param user_name: The user_name of this ListUserConnectionReq.
         :type user_name: str
@@ -237,7 +237,7 @@ class ListUserConnectionReq:
     def machine_sid(self):
         """Gets the machine_sid of this ListUserConnectionReq.
 
-        应用服务器sid
+        应用服务器sid。
 
         :return: The machine_sid of this ListUserConnectionReq.
         :rtype: str
@@ -248,7 +248,7 @@ class ListUserConnectionReq:
     def machine_sid(self, machine_sid):
         """Sets the machine_sid of this ListUserConnectionReq.
 
-        应用服务器sid
+        应用服务器sid。
 
         :param machine_sid: The machine_sid of this ListUserConnectionReq.
         :type machine_sid: str
@@ -259,7 +259,7 @@ class ListUserConnectionReq:
     def machine_name(self):
         """Gets the machine_name of this ListUserConnectionReq.
 
-        应用服务器名称
+        应用服务器名称。
 
         :return: The machine_name of this ListUserConnectionReq.
         :rtype: str
@@ -270,7 +270,7 @@ class ListUserConnectionReq:
     def machine_name(self, machine_name):
         """Sets the machine_name of this ListUserConnectionReq.
 
-        应用服务器名称
+        应用服务器名称。
 
         :param machine_name: The machine_name of this ListUserConnectionReq.
         :type machine_name: str
@@ -281,7 +281,7 @@ class ListUserConnectionReq:
     def failed_reason(self):
         """Gets the failed_reason of this ListUserConnectionReq.
 
-        连接失败原因
+        连接失败原因。
 
         :return: The failed_reason of this ListUserConnectionReq.
         :rtype: str
@@ -292,7 +292,7 @@ class ListUserConnectionReq:
     def failed_reason(self, failed_reason):
         """Sets the failed_reason of this ListUserConnectionReq.
 
-        连接失败原因
+        连接失败原因。
 
         :param failed_reason: The failed_reason of this ListUserConnectionReq.
         :type failed_reason: str
@@ -303,7 +303,7 @@ class ListUserConnectionReq:
     def failed_code(self):
         """Gets the failed_code of this ListUserConnectionReq.
 
-        连接失败状态码
+        连接失败状态码。
 
         :return: The failed_code of this ListUserConnectionReq.
         :rtype: str
@@ -314,7 +314,7 @@ class ListUserConnectionReq:
     def failed_code(self, failed_code):
         """Sets the failed_code of this ListUserConnectionReq.
 
-        连接失败状态码
+        连接失败状态码。
 
         :param failed_code: The failed_code of this ListUserConnectionReq.
         :type failed_code: str
@@ -325,7 +325,7 @@ class ListUserConnectionReq:
     def client_name(self):
         """Gets the client_name of this ListUserConnectionReq.
 
-        客户端名称
+        客户端名称。
 
         :return: The client_name of this ListUserConnectionReq.
         :rtype: str
@@ -336,7 +336,7 @@ class ListUserConnectionReq:
     def client_name(self, client_name):
         """Sets the client_name of this ListUserConnectionReq.
 
-        客户端名称
+        客户端名称。
 
         :param client_name: The client_name of this ListUserConnectionReq.
         :type client_name: str
@@ -347,7 +347,7 @@ class ListUserConnectionReq:
     def client_version(self):
         """Gets the client_version of this ListUserConnectionReq.
 
-        客户端版本
+        客户端版本。
 
         :return: The client_version of this ListUserConnectionReq.
         :rtype: str
@@ -358,7 +358,7 @@ class ListUserConnectionReq:
     def client_version(self, client_version):
         """Sets the client_version of this ListUserConnectionReq.
 
-        客户端版本
+        客户端版本。
 
         :param client_version: The client_version of this ListUserConnectionReq.
         :type client_version: str
@@ -369,7 +369,7 @@ class ListUserConnectionReq:
     def client_type(self):
         """Gets the client_type of this ListUserConnectionReq.
 
-        客户端操作系统类型
+        客户端操作系统类型。
 
         :return: The client_type of this ListUserConnectionReq.
         :rtype: str
@@ -380,7 +380,7 @@ class ListUserConnectionReq:
     def client_type(self, client_type):
         """Sets the client_type of this ListUserConnectionReq.
 
-        客户端操作系统类型
+        客户端操作系统类型。
 
         :param client_type: The client_type of this ListUserConnectionReq.
         :type client_type: str
@@ -391,7 +391,7 @@ class ListUserConnectionReq:
     def agent_version(self):
         """Gets the agent_version of this ListUserConnectionReq.
 
-        aps hda版本
+        aps hda版本。
 
         :return: The agent_version of this ListUserConnectionReq.
         :rtype: str
@@ -402,7 +402,7 @@ class ListUserConnectionReq:
     def agent_version(self, agent_version):
         """Sets the agent_version of this ListUserConnectionReq.
 
-        aps hda版本
+        aps hda版本。
 
         :param agent_version: The agent_version of this ListUserConnectionReq.
         :type agent_version: str
@@ -413,7 +413,7 @@ class ListUserConnectionReq:
     def vm_ip(self):
         """Gets the vm_ip of this ListUserConnectionReq.
 
-        应用服务器ip
+        应用服务器ip。
 
         :return: The vm_ip of this ListUserConnectionReq.
         :rtype: str
@@ -424,7 +424,7 @@ class ListUserConnectionReq:
     def vm_ip(self, vm_ip):
         """Sets the vm_ip of this ListUserConnectionReq.
 
-        应用服务器ip
+        应用服务器ip。
 
         :param vm_ip: The vm_ip of this ListUserConnectionReq.
         :type vm_ip: str
@@ -435,7 +435,7 @@ class ListUserConnectionReq:
     def connect_flag(self):
         """Gets the connect_flag of this ListUserConnectionReq.
 
-        连接标志，目前值为0
+        连接标志，目前值为0。
 
         :return: The connect_flag of this ListUserConnectionReq.
         :rtype: str
@@ -446,7 +446,7 @@ class ListUserConnectionReq:
     def connect_flag(self, connect_flag):
         """Sets the connect_flag of this ListUserConnectionReq.
 
-        连接标志，目前值为0
+        连接标志，目前值为0。
 
         :param connect_flag: The connect_flag of this ListUserConnectionReq.
         :type connect_flag: str
@@ -457,7 +457,7 @@ class ListUserConnectionReq:
     def wi_ip(self):
         """Gets the wi_ip of this ListUserConnectionReq.
 
-        连接IP
+        连接IP。
 
         :return: The wi_ip of this ListUserConnectionReq.
         :rtype: str
@@ -468,7 +468,7 @@ class ListUserConnectionReq:
     def wi_ip(self, wi_ip):
         """Sets the wi_ip of this ListUserConnectionReq.
 
-        连接IP
+        连接IP。
 
         :param wi_ip: The wi_ip of this ListUserConnectionReq.
         :type wi_ip: str
@@ -479,7 +479,7 @@ class ListUserConnectionReq:
     def update_time(self):
         """Gets the update_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39
+        登录应用开始时间，格式 2022-10-31 08:07:39。
 
         :return: The update_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -490,7 +490,7 @@ class ListUserConnectionReq:
     def update_time(self, update_time):
         """Sets the update_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39
+        登录应用开始时间，格式 2022-10-31 08:07:39。
 
         :param update_time: The update_time of this ListUserConnectionReq.
         :type update_time: datetime
@@ -501,7 +501,7 @@ class ListUserConnectionReq:
     def tenant_id(self):
         """Gets the tenant_id of this ListUserConnectionReq.
 
-        租户id
+        租户id。
 
         :return: The tenant_id of this ListUserConnectionReq.
         :rtype: str
@@ -512,7 +512,7 @@ class ListUserConnectionReq:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this ListUserConnectionReq.
 
-        租户id
+        租户id。
 
         :param tenant_id: The tenant_id of this ListUserConnectionReq.
         :type tenant_id: str
@@ -523,7 +523,7 @@ class ListUserConnectionReq:
     def login_start_time(self):
         """Gets the login_start_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39
+        登录应用开始时间，格式 2022-10-31 08:07:39。
 
         :return: The login_start_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -534,7 +534,7 @@ class ListUserConnectionReq:
     def login_start_time(self, login_start_time):
         """Sets the login_start_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39
+        登录应用开始时间，格式 2022-10-31 08:07:39。
 
         :param login_start_time: The login_start_time of this ListUserConnectionReq.
         :type login_start_time: datetime
@@ -545,7 +545,7 @@ class ListUserConnectionReq:
     def login_end_time(self):
         """Gets the login_end_time of this ListUserConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31 08:07:39
+        登录应用结束时间，格式 2022-10-31 08:07:39。
 
         :return: The login_end_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -556,7 +556,7 @@ class ListUserConnectionReq:
     def login_end_time(self, login_end_time):
         """Sets the login_end_time of this ListUserConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31 08:07:39
+        登录应用结束时间，格式 2022-10-31 08:07:39。
 
         :param login_end_time: The login_end_time of this ListUserConnectionReq.
         :type login_end_time: datetime
@@ -567,7 +567,7 @@ class ListUserConnectionReq:
     def virtual_ip(self):
         """Gets the virtual_ip of this ListUserConnectionReq.
 
-        会话虚拟ip
+        会话虚拟ip。
 
         :return: The virtual_ip of this ListUserConnectionReq.
         :rtype: str
@@ -578,7 +578,7 @@ class ListUserConnectionReq:
     def virtual_ip(self, virtual_ip):
         """Sets the virtual_ip of this ListUserConnectionReq.
 
-        会话虚拟ip
+        会话虚拟ip。
 
         :param virtual_ip: The virtual_ip of this ListUserConnectionReq.
         :type virtual_ip: str

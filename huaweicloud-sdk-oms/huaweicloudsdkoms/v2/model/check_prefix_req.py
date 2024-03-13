@@ -20,6 +20,7 @@ class CheckPrefixReq:
         'cloud_type': 'str',
         'ak': 'str',
         'sk': 'str',
+        'json_auth_file': 'str',
         'app_id': 'str',
         'bucket_name': 'str',
         'file_name': 'str',
@@ -31,6 +32,7 @@ class CheckPrefixReq:
         'cloud_type': 'cloud_type',
         'ak': 'ak',
         'sk': 'sk',
+        'json_auth_file': 'json_auth_file',
         'app_id': 'app_id',
         'bucket_name': 'bucket_name',
         'file_name': 'file_name',
@@ -38,17 +40,19 @@ class CheckPrefixReq:
         'security_token': 'security_token'
     }
 
-    def __init__(self, cloud_type=None, ak=None, sk=None, app_id=None, bucket_name=None, file_name=None, data_center=None, security_token=None):
+    def __init__(self, cloud_type=None, ak=None, sk=None, json_auth_file=None, app_id=None, bucket_name=None, file_name=None, data_center=None, security_token=None):
         """CheckPrefixReq
 
         The model defined in huaweicloud sdk
 
-        :param cloud_type: 云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
+        :param cloud_type: 云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
         :type cloud_type: str
         :param ak: 源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
         :type ak: str
         :param sk: 源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
         :type sk: str
+        :param json_auth_file: 用于谷歌云Cloud Storage鉴权
+        :type json_auth_file: str
         :param app_id: 当源端为腾讯云时，会返回此参数。
         :type app_id: str
         :param bucket_name: 桶名
@@ -66,6 +70,7 @@ class CheckPrefixReq:
         self._cloud_type = None
         self._ak = None
         self._sk = None
+        self._json_auth_file = None
         self._app_id = None
         self._bucket_name = None
         self._file_name = None
@@ -78,6 +83,8 @@ class CheckPrefixReq:
             self.ak = ak
         if sk is not None:
             self.sk = sk
+        if json_auth_file is not None:
+            self.json_auth_file = json_auth_file
         if app_id is not None:
             self.app_id = app_id
         self.bucket_name = bucket_name
@@ -90,7 +97,7 @@ class CheckPrefixReq:
     def cloud_type(self):
         """Gets the cloud_type of this CheckPrefixReq.
 
-        云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
+        云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
         :return: The cloud_type of this CheckPrefixReq.
         :rtype: str
@@ -101,7 +108,7 @@ class CheckPrefixReq:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this CheckPrefixReq.
 
-        云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
+        云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
         :param cloud_type: The cloud_type of this CheckPrefixReq.
         :type cloud_type: str
@@ -151,6 +158,28 @@ class CheckPrefixReq:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def json_auth_file(self):
+        """Gets the json_auth_file of this CheckPrefixReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :return: The json_auth_file of this CheckPrefixReq.
+        :rtype: str
+        """
+        return self._json_auth_file
+
+    @json_auth_file.setter
+    def json_auth_file(self, json_auth_file):
+        """Sets the json_auth_file of this CheckPrefixReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :param json_auth_file: The json_auth_file of this CheckPrefixReq.
+        :type json_auth_file: str
+        """
+        self._json_auth_file = json_auth_file
 
     @property
     def app_id(self):

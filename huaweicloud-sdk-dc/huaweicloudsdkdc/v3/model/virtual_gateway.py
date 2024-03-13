@@ -29,6 +29,9 @@ class VirtualGateway:
         'status': 'str',
         'bgp_asn': 'int',
         'enterprise_project_id': 'str',
+        'device_id': 'str',
+        'redundant_device_id': 'str',
+        'public_border_group': 'str',
         'tags': 'list[Tag]'
     }
 
@@ -45,10 +48,13 @@ class VirtualGateway:
         'status': 'status',
         'bgp_asn': 'bgp_asn',
         'enterprise_project_id': 'enterprise_project_id',
+        'device_id': 'device_id',
+        'redundant_device_id': 'redundant_device_id',
+        'public_border_group': 'public_border_group',
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, vpc_id=None, tenant_id=None, name=None, description=None, type=None, local_ep_group=None, local_ep_group_ipv6=None, admin_state_up=None, status=None, bgp_asn=None, enterprise_project_id=None, tags=None):
+    def __init__(self, id=None, vpc_id=None, tenant_id=None, name=None, description=None, type=None, local_ep_group=None, local_ep_group_ipv6=None, admin_state_up=None, status=None, bgp_asn=None, enterprise_project_id=None, device_id=None, redundant_device_id=None, public_border_group=None, tags=None):
         """VirtualGateway
 
         The model defined in huaweicloud sdk
@@ -77,6 +83,12 @@ class VirtualGateway:
         :type bgp_asn: int
         :param enterprise_project_id: 实例所属企业项目ID
         :type enterprise_project_id: str
+        :param device_id: 归属的设备ID
+        :type device_id: str
+        :param redundant_device_id: 归属的冗余设备ID
+        :type redundant_device_id: str
+        :param public_border_group: 归属的可用区对应的边界组(public border group)，标识是否homezone局点。
+        :type public_border_group: str
         :param tags: 标签信息
         :type tags: list[:class:`huaweicloudsdkdc.v3.Tag`]
         """
@@ -95,6 +107,9 @@ class VirtualGateway:
         self._status = None
         self._bgp_asn = None
         self._enterprise_project_id = None
+        self._device_id = None
+        self._redundant_device_id = None
+        self._public_border_group = None
         self._tags = None
         self.discriminator = None
 
@@ -122,6 +137,12 @@ class VirtualGateway:
             self.bgp_asn = bgp_asn
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if device_id is not None:
+            self.device_id = device_id
+        if redundant_device_id is not None:
+            self.redundant_device_id = redundant_device_id
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
         if tags is not None:
             self.tags = tags
 
@@ -388,6 +409,72 @@ class VirtualGateway:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def device_id(self):
+        """Gets the device_id of this VirtualGateway.
+
+        归属的设备ID
+
+        :return: The device_id of this VirtualGateway.
+        :rtype: str
+        """
+        return self._device_id
+
+    @device_id.setter
+    def device_id(self, device_id):
+        """Sets the device_id of this VirtualGateway.
+
+        归属的设备ID
+
+        :param device_id: The device_id of this VirtualGateway.
+        :type device_id: str
+        """
+        self._device_id = device_id
+
+    @property
+    def redundant_device_id(self):
+        """Gets the redundant_device_id of this VirtualGateway.
+
+        归属的冗余设备ID
+
+        :return: The redundant_device_id of this VirtualGateway.
+        :rtype: str
+        """
+        return self._redundant_device_id
+
+    @redundant_device_id.setter
+    def redundant_device_id(self, redundant_device_id):
+        """Sets the redundant_device_id of this VirtualGateway.
+
+        归属的冗余设备ID
+
+        :param redundant_device_id: The redundant_device_id of this VirtualGateway.
+        :type redundant_device_id: str
+        """
+        self._redundant_device_id = redundant_device_id
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this VirtualGateway.
+
+        归属的可用区对应的边界组(public border group)，标识是否homezone局点。
+
+        :return: The public_border_group of this VirtualGateway.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this VirtualGateway.
+
+        归属的可用区对应的边界组(public border group)，标识是否homezone局点。
+
+        :param public_border_group: The public_border_group of this VirtualGateway.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     @property
     def tags(self):

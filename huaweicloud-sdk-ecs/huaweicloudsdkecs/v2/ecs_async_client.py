@@ -2042,7 +2042,7 @@ class EcsAsyncClient(Client):
         return http_info
 
     def list_server_block_devices_async(self, request):
-        """查询弹性云服务器磁盘信息
+        """查询弹性云服务器挂载磁盘列表详情信息
 
         查询弹性云服务器挂载的磁盘信息。
         
@@ -2317,10 +2317,12 @@ class EcsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServersByTagRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServersByTagResponse`
         """
+        warnings.warn("Method 'list_servers_by_tag_async' of EcsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_servers_by_tag_http_info(request)
         return self._call_api(**http_info)
 
     def list_servers_by_tag_async_invoker(self, request):
+        warnings.warn("Method 'list_servers_by_tag_async_invoker' of EcsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_servers_by_tag_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3396,6 +3398,73 @@ class EcsAsyncClient(Client):
         header_params = {}
         if 'open_stack_api_version' in local_var_params:
             header_params['OpenStack-API-Version'] = local_var_params['open_stack_api_version']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def nova_show_server_interface_async(self, request):
+        """查询指定云服务器网卡信息
+
+        根据网卡ID，查询云服务器网卡信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NovaShowServerInterface
+        :type request: :class:`huaweicloudsdkecs.v2.NovaShowServerInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaShowServerInterfaceResponse`
+        """
+        http_info = self._nova_show_server_interface_http_info(request)
+        return self._call_api(**http_info)
+
+    def nova_show_server_interface_async_invoker(self, request):
+        http_info = self._nova_show_server_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _nova_show_server_interface_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/servers/{server_id}/os-interface/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaShowServerInterfaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 

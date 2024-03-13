@@ -31,9 +31,9 @@ class ObsDataRepository:
 
         The model defined in huaweicloud sdk
 
-        :param bucket: obs 桶名称
+        :param bucket: OBS桶名称
         :type bucket: str
-        :param endpoint: obs 桶 endpoint
+        :param endpoint: OBS桶所在的区域域名
         :type endpoint: str
         """
         
@@ -50,7 +50,7 @@ class ObsDataRepository:
     def bucket(self):
         """Gets the bucket of this ObsDataRepository.
 
-        obs 桶名称
+        OBS桶名称
 
         :return: The bucket of this ObsDataRepository.
         :rtype: str
@@ -61,7 +61,7 @@ class ObsDataRepository:
     def bucket(self, bucket):
         """Sets the bucket of this ObsDataRepository.
 
-        obs 桶名称
+        OBS桶名称
 
         :param bucket: The bucket of this ObsDataRepository.
         :type bucket: str
@@ -72,7 +72,7 @@ class ObsDataRepository:
     def endpoint(self):
         """Gets the endpoint of this ObsDataRepository.
 
-        obs 桶 endpoint
+        OBS桶所在的区域域名
 
         :return: The endpoint of this ObsDataRepository.
         :rtype: str
@@ -83,7 +83,7 @@ class ObsDataRepository:
     def endpoint(self, endpoint):
         """Sets the endpoint of this ObsDataRepository.
 
-        obs 桶 endpoint
+        OBS桶所在的区域域名
 
         :param endpoint: The endpoint of this ObsDataRepository.
         :type endpoint: str

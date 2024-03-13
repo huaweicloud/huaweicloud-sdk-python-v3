@@ -208,19 +208,15 @@ class Job:
         self._status = None
         self.discriminator = None
 
-        if job_type is not None:
-            self.job_type = job_type
+        self.job_type = job_type
         self.from_connector_name = from_connector_name
         self.to_config_values = to_config_values
         self.to_link_name = to_link_name
         self.driver_config_values = driver_config_values
         self.from_config_values = from_config_values
-        if to_connector_name is not None:
-            self.to_connector_name = to_connector_name
-        if name is not None:
-            self.name = name
-        if from_link_name is not None:
-            self.from_link_name = from_link_name
+        self.to_connector_name = to_connector_name
+        self.name = name
+        self.from_link_name = from_link_name
         if creation_user is not None:
             self.creation_user = creation_user
         if creation_date is not None:

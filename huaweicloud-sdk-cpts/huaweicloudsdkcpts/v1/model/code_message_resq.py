@@ -31,9 +31,9 @@ class CodeMessageResq:
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
         """
         
@@ -52,7 +52,7 @@ class CodeMessageResq:
     def code(self):
         """Gets the code of this CodeMessageResq.
 
-        code
+        响应码
 
         :return: The code of this CodeMessageResq.
         :rtype: str
@@ -63,7 +63,7 @@ class CodeMessageResq:
     def code(self, code):
         """Sets the code of this CodeMessageResq.
 
-        code
+        响应码
 
         :param code: The code of this CodeMessageResq.
         :type code: str
@@ -74,7 +74,7 @@ class CodeMessageResq:
     def message(self):
         """Gets the message of this CodeMessageResq.
 
-        message
+        响应消息
 
         :return: The message of this CodeMessageResq.
         :rtype: str
@@ -85,7 +85,7 @@ class CodeMessageResq:
     def message(self, message):
         """Sets the message of this CodeMessageResq.
 
-        message
+        响应消息
 
         :param message: The message of this CodeMessageResq.
         :type message: str

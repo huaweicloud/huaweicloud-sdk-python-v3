@@ -29,7 +29,8 @@ class ListImageRiskConfigRulesRequest:
         'standard': 'str',
         'result_type': 'str',
         'check_rule_name': 'str',
-        'severity': 'str'
+        'severity': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ListImageRiskConfigRulesRequest:
         'standard': 'standard',
         'result_type': 'result_type',
         'check_rule_name': 'check_rule_name',
-        'severity': 'severity'
+        'severity': 'severity',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, image_type=None, offset=None, limit=None, namespace=None, image_name=None, image_version=None, check_name=None, standard=None, result_type=None, check_rule_name=None, severity=None):
+    def __init__(self, region=None, enterprise_project_id=None, image_type=None, offset=None, limit=None, namespace=None, image_name=None, image_version=None, check_name=None, standard=None, result_type=None, check_rule_name=None, severity=None, instance_id=None):
         """ListImageRiskConfigRulesRequest
 
         The model defined in huaweicloud sdk
@@ -57,7 +59,7 @@ class ListImageRiskConfigRulesRequest:
         :type region: str
         :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
@@ -79,6 +81,8 @@ class ListImageRiskConfigRulesRequest:
         :type check_rule_name: str
         :param severity: 风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
         :type severity: str
+        :param instance_id: 企业仓库实例ID，swr共享版无需使用该参数
+        :type instance_id: str
         """
         
         
@@ -96,6 +100,7 @@ class ListImageRiskConfigRulesRequest:
         self._result_type = None
         self._check_rule_name = None
         self._severity = None
+        self._instance_id = None
         self.discriminator = None
 
         self.region = region
@@ -120,6 +125,8 @@ class ListImageRiskConfigRulesRequest:
             self.check_rule_name = check_rule_name
         if severity is not None:
             self.severity = severity
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def region(self):
@@ -169,7 +176,7 @@ class ListImageRiskConfigRulesRequest:
     def image_type(self):
         """Gets the image_type of this ListImageRiskConfigRulesRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
         :return: The image_type of this ListImageRiskConfigRulesRequest.
         :rtype: str
@@ -180,7 +187,7 @@ class ListImageRiskConfigRulesRequest:
     def image_type(self, image_type):
         """Sets the image_type of this ListImageRiskConfigRulesRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
         :param image_type: The image_type of this ListImageRiskConfigRulesRequest.
         :type image_type: str
@@ -406,6 +413,28 @@ class ListImageRiskConfigRulesRequest:
         :type severity: str
         """
         self._severity = severity
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ListImageRiskConfigRulesRequest.
+
+        企业仓库实例ID，swr共享版无需使用该参数
+
+        :return: The instance_id of this ListImageRiskConfigRulesRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListImageRiskConfigRulesRequest.
+
+        企业仓库实例ID，swr共享版无需使用该参数
+
+        :param instance_id: The instance_id of this ListImageRiskConfigRulesRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

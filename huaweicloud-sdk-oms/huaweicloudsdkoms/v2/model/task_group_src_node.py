@@ -19,6 +19,7 @@ class TaskGroupSrcNode:
     openapi_types = {
         'ak': 'str',
         'sk': 'str',
+        'json_auth_file': 'str',
         'app_id': 'str',
         'region': 'str',
         'object_key': 'list[str]',
@@ -30,6 +31,7 @@ class TaskGroupSrcNode:
     attribute_map = {
         'ak': 'ak',
         'sk': 'sk',
+        'json_auth_file': 'json_auth_file',
         'app_id': 'app_id',
         'region': 'region',
         'object_key': 'object_key',
@@ -38,7 +40,7 @@ class TaskGroupSrcNode:
         'list_file': 'list_file'
     }
 
-    def __init__(self, ak=None, sk=None, app_id=None, region=None, object_key=None, bucket=None, cloud_type=None, list_file=None):
+    def __init__(self, ak=None, sk=None, json_auth_file=None, app_id=None, region=None, object_key=None, bucket=None, cloud_type=None, list_file=None):
         """TaskGroupSrcNode
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class TaskGroupSrcNode:
         :type ak: str
         :param sk: 源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
         :type sk: str
+        :param json_auth_file: 用于谷歌云Cloud Storage鉴权
+        :type json_auth_file: str
         :param app_id: 当源端为腾讯云时，需要填写此参数。
         :type app_id: str
         :param region: 源端桶所处的区域，task_type为非URL_LIST时，本参数为必选。
@@ -55,7 +59,7 @@ class TaskGroupSrcNode:
         :type object_key: list[str]
         :param bucket: 源端所在桶
         :type bucket: str
-        :param cloud_type: 源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        :param cloud_type: 源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource、Google或者UCloud。默认值为Aliyun。
         :type cloud_type: str
         :param list_file: 
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`
@@ -65,6 +69,7 @@ class TaskGroupSrcNode:
 
         self._ak = None
         self._sk = None
+        self._json_auth_file = None
         self._app_id = None
         self._region = None
         self._object_key = None
@@ -77,6 +82,8 @@ class TaskGroupSrcNode:
             self.ak = ak
         if sk is not None:
             self.sk = sk
+        if json_auth_file is not None:
+            self.json_auth_file = json_auth_file
         if app_id is not None:
             self.app_id = app_id
         if region is not None:
@@ -133,6 +140,28 @@ class TaskGroupSrcNode:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def json_auth_file(self):
+        """Gets the json_auth_file of this TaskGroupSrcNode.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :return: The json_auth_file of this TaskGroupSrcNode.
+        :rtype: str
+        """
+        return self._json_auth_file
+
+    @json_auth_file.setter
+    def json_auth_file(self, json_auth_file):
+        """Sets the json_auth_file of this TaskGroupSrcNode.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :param json_auth_file: The json_auth_file of this TaskGroupSrcNode.
+        :type json_auth_file: str
+        """
+        self._json_auth_file = json_auth_file
 
     @property
     def app_id(self):
@@ -226,7 +255,7 @@ class TaskGroupSrcNode:
     def cloud_type(self):
         """Gets the cloud_type of this TaskGroupSrcNode.
 
-        源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource、Google或者UCloud。默认值为Aliyun。
 
         :return: The cloud_type of this TaskGroupSrcNode.
         :rtype: str
@@ -237,7 +266,7 @@ class TaskGroupSrcNode:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this TaskGroupSrcNode.
 
-        源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource、Google或者UCloud。默认值为Aliyun。
 
         :param cloud_type: The cloud_type of this TaskGroupSrcNode.
         :type cloud_type: str

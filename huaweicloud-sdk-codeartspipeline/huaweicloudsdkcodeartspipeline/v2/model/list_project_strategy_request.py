@@ -53,7 +53,7 @@ class ListProjectStrategyRequest:
         :type name: str
         :param is_valid: 是否有效
         :type is_valid: bool
-        :param type: 规则集类型
+        :param type: 策略类型
         :type type: str
         """
         
@@ -215,7 +215,7 @@ class ListProjectStrategyRequest:
     def type(self):
         """Gets the type of this ListProjectStrategyRequest.
 
-        规则集类型
+        策略类型
 
         :return: The type of this ListProjectStrategyRequest.
         :rtype: str
@@ -226,7 +226,7 @@ class ListProjectStrategyRequest:
     def type(self, type):
         """Sets the type of this ListProjectStrategyRequest.
 
-        规则集类型
+        策略类型
 
         :param type: The type of this ListProjectStrategyRequest.
         :type type: str

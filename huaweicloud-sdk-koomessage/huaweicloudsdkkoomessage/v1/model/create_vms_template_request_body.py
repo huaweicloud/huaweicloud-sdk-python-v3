@@ -22,7 +22,8 @@ class CreateVmsTemplateRequestBody:
         'title': 'str',
         'reslist': 'list[ResourceInfo]',
         'remarks': 'str',
-        'callbackurl': 'str'
+        'callbackurl': 'str',
+        'is_draft': 'int'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateVmsTemplateRequestBody:
         'title': 'title',
         'reslist': 'reslist',
         'remarks': 'remarks',
-        'callbackurl': 'callbackurl'
+        'callbackurl': 'callbackurl',
+        'is_draft': 'is_draft'
     }
 
-    def __init__(self, expiration_time=None, tpl_name=None, title=None, reslist=None, remarks=None, callbackurl=None):
+    def __init__(self, expiration_time=None, tpl_name=None, title=None, reslist=None, remarks=None, callbackurl=None, is_draft=None):
         """CreateVmsTemplateRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateVmsTemplateRequestBody:
         :type remarks: str
         :param callbackurl: 客户系统回调URL，可用于通知对端模板审核状态信息。  &gt; 接口规格需参照定义智能信息基础版模板状态回执完成实现。 
         :type callbackurl: str
+        :param is_draft: 以草稿状态提交模板。 - 0：非草稿模板 - 1：草稿模板 
+        :type is_draft: int
         """
         
         
@@ -61,6 +65,7 @@ class CreateVmsTemplateRequestBody:
         self._reslist = None
         self._remarks = None
         self._callbackurl = None
+        self._is_draft = None
         self.discriminator = None
 
         self.expiration_time = expiration_time
@@ -71,6 +76,8 @@ class CreateVmsTemplateRequestBody:
             self.remarks = remarks
         if callbackurl is not None:
             self.callbackurl = callbackurl
+        if is_draft is not None:
+            self.is_draft = is_draft
 
     @property
     def expiration_time(self):
@@ -203,6 +210,28 @@ class CreateVmsTemplateRequestBody:
         :type callbackurl: str
         """
         self._callbackurl = callbackurl
+
+    @property
+    def is_draft(self):
+        """Gets the is_draft of this CreateVmsTemplateRequestBody.
+
+        以草稿状态提交模板。 - 0：非草稿模板 - 1：草稿模板 
+
+        :return: The is_draft of this CreateVmsTemplateRequestBody.
+        :rtype: int
+        """
+        return self._is_draft
+
+    @is_draft.setter
+    def is_draft(self, is_draft):
+        """Sets the is_draft of this CreateVmsTemplateRequestBody.
+
+        以草稿状态提交模板。 - 0：非草稿模板 - 1：草稿模板 
+
+        :param is_draft: The is_draft of this CreateVmsTemplateRequestBody.
+        :type is_draft: int
+        """
+        self._is_draft = is_draft
 
     def to_dict(self):
         """Returns the model properties as a dict"""

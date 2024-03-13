@@ -39,17 +39,17 @@ class Quota:
 
         The model defined in huaweicloud sdk
 
-        :param user: 用户名
+        :param user: 用户名。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
         :type user: str
-        :param client: 客户端ID
+        :param client: 客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
         :type client: str
-        :param user_default: 是否使用用户默认设置（是则表示对全部用户限流）。
+        :param user_default: 是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
         :type user_default: bool
-        :param client_default: 是否使用客户端默认设置（是则表示对全部客户端限流）。
+        :param client_default: 是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
         :type client_default: bool
-        :param producer_byte_rate: 生产上限速率（单位为B/s）
+        :param producer_byte_rate: 生产上限速率（单位为B/s）。
         :type producer_byte_rate: int
-        :param consumer_byte_rate: 消费上限速率（单位为B/s）
+        :param consumer_byte_rate: 消费上限速率（单位为B/s）。  &gt; “生产上限速率”和“消费上限速率”不可同时为空。
         :type consumer_byte_rate: int
         """
         
@@ -80,7 +80,7 @@ class Quota:
     def user(self):
         """Gets the user of this Quota.
 
-        用户名
+        用户名。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
         :return: The user of this Quota.
         :rtype: str
@@ -91,7 +91,7 @@ class Quota:
     def user(self, user):
         """Sets the user of this Quota.
 
-        用户名
+        用户名。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
         :param user: The user of this Quota.
         :type user: str
@@ -102,7 +102,7 @@ class Quota:
     def client(self):
         """Gets the client of this Quota.
 
-        客户端ID
+        客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
         :return: The client of this Quota.
         :rtype: str
@@ -113,7 +113,7 @@ class Quota:
     def client(self, client):
         """Sets the client of this Quota.
 
-        客户端ID
+        客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
         :param client: The client of this Quota.
         :type client: str
@@ -124,7 +124,7 @@ class Quota:
     def user_default(self):
         """Gets the user_default of this Quota.
 
-        是否使用用户默认设置（是则表示对全部用户限流）。
+        是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
 
         :return: The user_default of this Quota.
         :rtype: bool
@@ -135,7 +135,7 @@ class Quota:
     def user_default(self, user_default):
         """Sets the user_default of this Quota.
 
-        是否使用用户默认设置（是则表示对全部用户限流）。
+        是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
 
         :param user_default: The user_default of this Quota.
         :type user_default: bool
@@ -146,7 +146,7 @@ class Quota:
     def client_default(self):
         """Gets the client_default of this Quota.
 
-        是否使用客户端默认设置（是则表示对全部客户端限流）。
+        是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
 
         :return: The client_default of this Quota.
         :rtype: bool
@@ -157,7 +157,7 @@ class Quota:
     def client_default(self, client_default):
         """Sets the client_default of this Quota.
 
-        是否使用客户端默认设置（是则表示对全部客户端限流）。
+        是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
 
         :param client_default: The client_default of this Quota.
         :type client_default: bool
@@ -168,7 +168,7 @@ class Quota:
     def producer_byte_rate(self):
         """Gets the producer_byte_rate of this Quota.
 
-        生产上限速率（单位为B/s）
+        生产上限速率（单位为B/s）。
 
         :return: The producer_byte_rate of this Quota.
         :rtype: int
@@ -179,7 +179,7 @@ class Quota:
     def producer_byte_rate(self, producer_byte_rate):
         """Sets the producer_byte_rate of this Quota.
 
-        生产上限速率（单位为B/s）
+        生产上限速率（单位为B/s）。
 
         :param producer_byte_rate: The producer_byte_rate of this Quota.
         :type producer_byte_rate: int
@@ -190,7 +190,7 @@ class Quota:
     def consumer_byte_rate(self):
         """Gets the consumer_byte_rate of this Quota.
 
-        消费上限速率（单位为B/s）
+        消费上限速率（单位为B/s）。  > “生产上限速率”和“消费上限速率”不可同时为空。
 
         :return: The consumer_byte_rate of this Quota.
         :rtype: int
@@ -201,7 +201,7 @@ class Quota:
     def consumer_byte_rate(self, consumer_byte_rate):
         """Sets the consumer_byte_rate of this Quota.
 
-        消费上限速率（单位为B/s）
+        消费上限速率（单位为B/s）。  > “生产上限速率”和“消费上限速率”不可同时为空。
 
         :param consumer_byte_rate: The consumer_byte_rate of this Quota.
         :type consumer_byte_rate: int

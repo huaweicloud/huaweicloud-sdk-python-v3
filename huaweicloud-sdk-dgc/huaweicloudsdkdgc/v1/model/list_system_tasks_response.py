@@ -20,12 +20,12 @@ class ListSystemTasksResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'start_time': 'str',
-        'end_time': 'str',
-        'last_update': 'str',
+        'start_time': 'int',
+        'end_time': 'int',
+        'last_update': 'int',
         'status': 'str',
         'message': 'str',
-        'sub_tasks': 'list[SubTaskStatus]'
+        'subtasks': 'list[SubTaskStatus]'
     }
 
     attribute_map = {
@@ -36,30 +36,30 @@ class ListSystemTasksResponse(SdkResponse):
         'last_update': 'lastUpdate',
         'status': 'status',
         'message': 'message',
-        'sub_tasks': 'subTasks'
+        'subtasks': 'subtasks'
     }
 
-    def __init__(self, id=None, name=None, start_time=None, end_time=None, last_update=None, status=None, message=None, sub_tasks=None):
+    def __init__(self, id=None, name=None, start_time=None, end_time=None, last_update=None, status=None, message=None, subtasks=None):
         """ListSystemTasksResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 
+        :param id: 作业ID
         :type id: str
-        :param name: 
+        :param name: 作业名称
         :type name: str
-        :param start_time: 
-        :type start_time: str
-        :param end_time: 
-        :type end_time: str
-        :param last_update: 
-        :type last_update: str
-        :param status: 
+        :param start_time: 作业开始日期 13位时间戳
+        :type start_time: int
+        :param end_time: 作业结束日期 13位时间戳
+        :type end_time: int
+        :param last_update: 作业最后更新日期 13位时间戳
+        :type last_update: int
+        :param status: 作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
         :type status: str
-        :param message: 
+        :param message: 作业消息
         :type message: str
-        :param sub_tasks: 
-        :type sub_tasks: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
+        :param subtasks: 当前作业包含的子作业
+        :type subtasks: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
         """
         
         super(ListSystemTasksResponse, self).__init__()
@@ -71,7 +71,7 @@ class ListSystemTasksResponse(SdkResponse):
         self._last_update = None
         self._status = None
         self._message = None
-        self._sub_tasks = None
+        self._subtasks = None
         self.discriminator = None
 
         if id is not None:
@@ -88,12 +88,14 @@ class ListSystemTasksResponse(SdkResponse):
             self.status = status
         if message is not None:
             self.message = message
-        if sub_tasks is not None:
-            self.sub_tasks = sub_tasks
+        if subtasks is not None:
+            self.subtasks = subtasks
 
     @property
     def id(self):
         """Gets the id of this ListSystemTasksResponse.
+
+        作业ID
 
         :return: The id of this ListSystemTasksResponse.
         :rtype: str
@@ -104,6 +106,8 @@ class ListSystemTasksResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ListSystemTasksResponse.
 
+        作业ID
+
         :param id: The id of this ListSystemTasksResponse.
         :type id: str
         """
@@ -112,6 +116,8 @@ class ListSystemTasksResponse(SdkResponse):
     @property
     def name(self):
         """Gets the name of this ListSystemTasksResponse.
+
+        作业名称
 
         :return: The name of this ListSystemTasksResponse.
         :rtype: str
@@ -122,6 +128,8 @@ class ListSystemTasksResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ListSystemTasksResponse.
 
+        作业名称
+
         :param name: The name of this ListSystemTasksResponse.
         :type name: str
         """
@@ -131,8 +139,10 @@ class ListSystemTasksResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this ListSystemTasksResponse.
 
+        作业开始日期 13位时间戳
+
         :return: The start_time of this ListSystemTasksResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._start_time
 
@@ -140,8 +150,10 @@ class ListSystemTasksResponse(SdkResponse):
     def start_time(self, start_time):
         """Sets the start_time of this ListSystemTasksResponse.
 
+        作业开始日期 13位时间戳
+
         :param start_time: The start_time of this ListSystemTasksResponse.
-        :type start_time: str
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -149,8 +161,10 @@ class ListSystemTasksResponse(SdkResponse):
     def end_time(self):
         """Gets the end_time of this ListSystemTasksResponse.
 
+        作业结束日期 13位时间戳
+
         :return: The end_time of this ListSystemTasksResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -158,8 +172,10 @@ class ListSystemTasksResponse(SdkResponse):
     def end_time(self, end_time):
         """Sets the end_time of this ListSystemTasksResponse.
 
+        作业结束日期 13位时间戳
+
         :param end_time: The end_time of this ListSystemTasksResponse.
-        :type end_time: str
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -167,8 +183,10 @@ class ListSystemTasksResponse(SdkResponse):
     def last_update(self):
         """Gets the last_update of this ListSystemTasksResponse.
 
+        作业最后更新日期 13位时间戳
+
         :return: The last_update of this ListSystemTasksResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._last_update
 
@@ -176,14 +194,18 @@ class ListSystemTasksResponse(SdkResponse):
     def last_update(self, last_update):
         """Sets the last_update of this ListSystemTasksResponse.
 
+        作业最后更新日期 13位时间戳
+
         :param last_update: The last_update of this ListSystemTasksResponse.
-        :type last_update: str
+        :type last_update: int
         """
         self._last_update = last_update
 
     @property
     def status(self):
         """Gets the status of this ListSystemTasksResponse.
+
+        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
 
         :return: The status of this ListSystemTasksResponse.
         :rtype: str
@@ -194,6 +216,8 @@ class ListSystemTasksResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListSystemTasksResponse.
 
+        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
+
         :param status: The status of this ListSystemTasksResponse.
         :type status: str
         """
@@ -202,6 +226,8 @@ class ListSystemTasksResponse(SdkResponse):
     @property
     def message(self):
         """Gets the message of this ListSystemTasksResponse.
+
+        作业消息
 
         :return: The message of this ListSystemTasksResponse.
         :rtype: str
@@ -212,28 +238,34 @@ class ListSystemTasksResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ListSystemTasksResponse.
 
+        作业消息
+
         :param message: The message of this ListSystemTasksResponse.
         :type message: str
         """
         self._message = message
 
     @property
-    def sub_tasks(self):
-        """Gets the sub_tasks of this ListSystemTasksResponse.
+    def subtasks(self):
+        """Gets the subtasks of this ListSystemTasksResponse.
 
-        :return: The sub_tasks of this ListSystemTasksResponse.
+        当前作业包含的子作业
+
+        :return: The subtasks of this ListSystemTasksResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
         """
-        return self._sub_tasks
+        return self._subtasks
 
-    @sub_tasks.setter
-    def sub_tasks(self, sub_tasks):
-        """Sets the sub_tasks of this ListSystemTasksResponse.
+    @subtasks.setter
+    def subtasks(self, subtasks):
+        """Sets the subtasks of this ListSystemTasksResponse.
 
-        :param sub_tasks: The sub_tasks of this ListSystemTasksResponse.
-        :type sub_tasks: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
+        当前作业包含的子作业
+
+        :param subtasks: The subtasks of this ListSystemTasksResponse.
+        :type subtasks: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
         """
-        self._sub_tasks = sub_tasks
+        self._subtasks = subtasks
 
     def to_dict(self):
         """Returns the model properties as a dict"""

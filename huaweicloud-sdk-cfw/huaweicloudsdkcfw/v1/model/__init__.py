@@ -66,6 +66,12 @@ from huaweicloudsdkcfw.v1.model.covered_ipvo import CoveredIPVO
 from huaweicloudsdkcfw.v1.model.create_east_west_firewall_request import CreateEastWestFirewallRequest
 from huaweicloudsdkcfw.v1.model.create_east_west_firewall_request_body import CreateEastWestFirewallRequestBody
 from huaweicloudsdkcfw.v1.model.create_east_west_firewall_response import CreateEastWestFirewallResponse
+from huaweicloudsdkcfw.v1.model.create_firewall_req import CreateFirewallReq
+from huaweicloudsdkcfw.v1.model.create_firewall_req_charge_info import CreateFirewallReqChargeInfo
+from huaweicloudsdkcfw.v1.model.create_firewall_req_flavor import CreateFirewallReqFlavor
+from huaweicloudsdkcfw.v1.model.create_firewall_req_tags import CreateFirewallReqTags
+from huaweicloudsdkcfw.v1.model.create_firewall_request import CreateFirewallRequest
+from huaweicloudsdkcfw.v1.model.create_firewall_response import CreateFirewallResponse
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_hit_count_request import DeleteAclRuleHitCountRequest
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_hit_count_response import DeleteAclRuleHitCountResponse
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_request import DeleteAclRuleRequest
@@ -82,6 +88,8 @@ from huaweicloudsdkcfw.v1.model.delete_domain_set_request import DeleteDomainSet
 from huaweicloudsdkcfw.v1.model.delete_domain_set_response import DeleteDomainSetResponse
 from huaweicloudsdkcfw.v1.model.delete_domains_request import DeleteDomainsRequest
 from huaweicloudsdkcfw.v1.model.delete_domains_response import DeleteDomainsResponse
+from huaweicloudsdkcfw.v1.model.delete_firewall_request import DeleteFirewallRequest
+from huaweicloudsdkcfw.v1.model.delete_firewall_response import DeleteFirewallResponse
 from huaweicloudsdkcfw.v1.model.delete_rule_acl_dto import DeleteRuleAclDto
 from huaweicloudsdkcfw.v1.model.delete_service_item_dto import DeleteServiceItemDto
 from huaweicloudsdkcfw.v1.model.delete_service_item_request import DeleteServiceItemRequest
@@ -100,6 +108,7 @@ from huaweicloudsdkcfw.v1.model.eip_operate_protect_req_ip_infos import EipOpera
 from huaweicloudsdkcfw.v1.model.eip_resource import EipResource
 from huaweicloudsdkcfw.v1.model.eip_response_data import EipResponseData
 from huaweicloudsdkcfw.v1.model.er_instance import ErInstance
+from huaweicloudsdkcfw.v1.model.error_rsp import ErrorRsp
 from huaweicloudsdkcfw.v1.model.ew_protect_resource_info import EwProtectResourceInfo
 from huaweicloudsdkcfw.v1.model.firewall_instance_resource import FirewallInstanceResource
 from huaweicloudsdkcfw.v1.model.firewall_instance_vo import FirewallInstanceVO
@@ -163,6 +172,8 @@ from huaweicloudsdkcfw.v1.model.list_ips_protect_mode_request import ListIpsProt
 from huaweicloudsdkcfw.v1.model.list_ips_protect_mode_response import ListIpsProtectModeResponse
 from huaweicloudsdkcfw.v1.model.list_ips_switch_status_request import ListIpsSwitchStatusRequest
 from huaweicloudsdkcfw.v1.model.list_ips_switch_status_response import ListIpsSwitchStatusResponse
+from huaweicloudsdkcfw.v1.model.list_job_request import ListJobRequest
+from huaweicloudsdkcfw.v1.model.list_job_response import ListJobResponse
 from huaweicloudsdkcfw.v1.model.list_log_config_request import ListLogConfigRequest
 from huaweicloudsdkcfw.v1.model.list_log_config_response import ListLogConfigResponse
 from huaweicloudsdkcfw.v1.model.list_protected_vpcs_request import ListProtectedVpcsRequest
@@ -208,6 +219,7 @@ from huaweicloudsdkcfw.v1.model.update_acl_rule_response import UpdateAclRuleRes
 from huaweicloudsdkcfw.v1.model.update_address_set_dto import UpdateAddressSetDto
 from huaweicloudsdkcfw.v1.model.update_address_set_request import UpdateAddressSetRequest
 from huaweicloudsdkcfw.v1.model.update_address_set_response import UpdateAddressSetResponse
+from huaweicloudsdkcfw.v1.model.update_address_set_response_data import UpdateAddressSetResponseData
 from huaweicloudsdkcfw.v1.model.update_black_white_list_dto import UpdateBlackWhiteListDto
 from huaweicloudsdkcfw.v1.model.update_black_white_list_request import UpdateBlackWhiteListRequest
 from huaweicloudsdkcfw.v1.model.update_black_white_list_response import UpdateBlackWhiteListResponse

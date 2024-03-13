@@ -35,9 +35,9 @@ class ListPolicyGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]
+        :param limit: 查询的数量，值区间[1-100]。
         :type limit: int
         :param policy_group_name: 根据策略组名字过滤结果。
         :type policy_group_name: str
@@ -66,7 +66,7 @@ class ListPolicyGroupRequest:
     def offset(self):
         """Gets the offset of this ListPolicyGroupRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListPolicyGroupRequest.
         :rtype: int
@@ -77,7 +77,7 @@ class ListPolicyGroupRequest:
     def offset(self, offset):
         """Sets the offset of this ListPolicyGroupRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListPolicyGroupRequest.
         :type offset: int
@@ -88,7 +88,7 @@ class ListPolicyGroupRequest:
     def limit(self):
         """Gets the limit of this ListPolicyGroupRequest.
 
-        查询的数量，值区间[1-100]
+        查询的数量，值区间[1-100]。
 
         :return: The limit of this ListPolicyGroupRequest.
         :rtype: int
@@ -99,7 +99,7 @@ class ListPolicyGroupRequest:
     def limit(self, limit):
         """Sets the limit of this ListPolicyGroupRequest.
 
-        查询的数量，值区间[1-100]
+        查询的数量，值区间[1-100]。
 
         :param limit: The limit of this ListPolicyGroupRequest.
         :type limit: int

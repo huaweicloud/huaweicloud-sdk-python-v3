@@ -31,9 +31,9 @@ class CreateProjectRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: name
+        :param name: 名称
         :type name: str
-        :param description: description
+        :param description: 描述
         :type description: str
         """
         
@@ -51,7 +51,7 @@ class CreateProjectRequestBody:
     def name(self):
         """Gets the name of this CreateProjectRequestBody.
 
-        name
+        名称
 
         :return: The name of this CreateProjectRequestBody.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateProjectRequestBody:
     def name(self, name):
         """Sets the name of this CreateProjectRequestBody.
 
-        name
+        名称
 
         :param name: The name of this CreateProjectRequestBody.
         :type name: str
@@ -73,7 +73,7 @@ class CreateProjectRequestBody:
     def description(self):
         """Gets the description of this CreateProjectRequestBody.
 
-        description
+        描述
 
         :return: The description of this CreateProjectRequestBody.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateProjectRequestBody:
     def description(self, description):
         """Sets the description of this CreateProjectRequestBody.
 
-        description
+        描述
 
         :param description: The description of this CreateProjectRequestBody.
         :type description: str

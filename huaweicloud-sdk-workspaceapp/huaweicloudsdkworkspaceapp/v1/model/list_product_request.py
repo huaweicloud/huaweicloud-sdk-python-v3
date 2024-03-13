@@ -43,13 +43,13 @@ class ListProductRequest:
         :type product_id: str
         :param availability_zone: 可用分区，如果不为空，将按可用分区进行过滤后返回。 - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
         :type availability_zone: str
-        :param os_type: 产品套餐的操作系统类型，当前支持：Windows - Linux - Windows - Other
+        :param os_type: 产品套餐的操作系统类型，当前支持：Windows。 - Linux - Windows - Other
         :type os_type: str
         :param charge_mode: 套餐标识。 - 1：表示包周期。 - 0：表示按需。
         :type charge_mode: str
         :param architecture: 架构类型，当前支持：x86。 - x86 - arm
         :type architecture: str
-        :param package_type: 套餐类型。 - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
+        :param package_type: 套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
         :type package_type: str
         """
         
@@ -124,7 +124,7 @@ class ListProductRequest:
     def os_type(self):
         """Gets the os_type of this ListProductRequest.
 
-        产品套餐的操作系统类型，当前支持：Windows - Linux - Windows - Other
+        产品套餐的操作系统类型，当前支持：Windows。 - Linux - Windows - Other
 
         :return: The os_type of this ListProductRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListProductRequest:
     def os_type(self, os_type):
         """Sets the os_type of this ListProductRequest.
 
-        产品套餐的操作系统类型，当前支持：Windows - Linux - Windows - Other
+        产品套餐的操作系统类型，当前支持：Windows。 - Linux - Windows - Other
 
         :param os_type: The os_type of this ListProductRequest.
         :type os_type: str
@@ -190,7 +190,7 @@ class ListProductRequest:
     def package_type(self):
         """Gets the package_type of this ListProductRequest.
 
-        套餐类型。 - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
+        套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
 
         :return: The package_type of this ListProductRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class ListProductRequest:
     def package_type(self, package_type):
         """Sets the package_type of this ListProductRequest.
 
-        套餐类型。 - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
+        套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
 
         :param package_type: The package_type of this ListProductRequest.
         :type package_type: str

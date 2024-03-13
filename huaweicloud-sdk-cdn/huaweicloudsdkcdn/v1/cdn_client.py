@@ -1004,10 +1004,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainItemDetailsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainItemDetailsResponse`
         """
+        warnings.warn("Method 'show_domain_item_details' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_item_details_http_info(request)
         return self._call_api(**http_info)
 
     def show_domain_item_details_invoker(self, request):
+        warnings.warn("Method 'show_domain_item_details_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_item_details_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1090,10 +1092,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainItemLocationDetailsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainItemLocationDetailsResponse`
         """
+        warnings.warn("Method 'show_domain_item_location_details' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_item_location_details_http_info(request)
         return self._call_api(**http_info)
 
     def show_domain_item_location_details_invoker(self, request):
+        warnings.warn("Method 'show_domain_item_location_details_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_item_location_details_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1179,10 +1183,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainLocationStatsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainLocationStatsResponse`
         """
+        warnings.warn("Method 'show_domain_location_stats' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_location_stats_http_info(request)
         return self._call_api(**http_info)
 
     def show_domain_location_stats_invoker(self, request):
+        warnings.warn("Method 'show_domain_location_stats_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_location_stats_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1276,10 +1282,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainStatsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainStatsResponse`
         """
+        warnings.warn("Method 'show_domain_stats' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_stats_http_info(request)
         return self._call_api(**http_info)
 
     def show_domain_stats_invoker(self, request):
+        warnings.warn("Method 'show_domain_stats_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_stats_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2068,10 +2076,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowTopUrlRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowTopUrlResponse`
         """
+        warnings.warn("Method 'show_top_url' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_top_url_http_info(request)
         return self._call_api(**http_info)
 
     def show_top_url_invoker(self, request):
+        warnings.warn("Method 'show_top_url_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_top_url_http_info(request)
         return SyncInvoker(self, http_info)
 

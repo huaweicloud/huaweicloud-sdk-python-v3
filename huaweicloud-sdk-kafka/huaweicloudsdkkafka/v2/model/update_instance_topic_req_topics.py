@@ -22,6 +22,7 @@ class UpdateInstanceTopicReqTopics:
         'sync_replication': 'bool',
         'sync_message_flush': 'bool',
         'new_partition_numbers': 'int',
+        'new_partition_brokers': 'list[int]',
         'topic_other_configs': 'list[CreateInstanceTopicReqTopicOtherConfigs]',
         'topic_desc': 'str'
     }
@@ -32,11 +33,12 @@ class UpdateInstanceTopicReqTopics:
         'sync_replication': 'sync_replication',
         'sync_message_flush': 'sync_message_flush',
         'new_partition_numbers': 'new_partition_numbers',
+        'new_partition_brokers': 'new_partition_brokers',
         'topic_other_configs': 'topic_other_configs',
         'topic_desc': 'topic_desc'
     }
 
-    def __init__(self, id=None, retention_time=None, sync_replication=None, sync_message_flush=None, new_partition_numbers=None, topic_other_configs=None, topic_desc=None):
+    def __init__(self, id=None, retention_time=None, sync_replication=None, sync_message_flush=None, new_partition_numbers=None, new_partition_brokers=None, topic_other_configs=None, topic_desc=None):
         """UpdateInstanceTopicReqTopics
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class UpdateInstanceTopicReqTopics:
         :type sync_message_flush: bool
         :param new_partition_numbers: 分区数。
         :type new_partition_numbers: int
+        :param new_partition_brokers: 增加分区时指定broker列表
+        :type new_partition_brokers: list[int]
         :param topic_other_configs: topic配置
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
         :param topic_desc: topic描述
@@ -64,6 +68,7 @@ class UpdateInstanceTopicReqTopics:
         self._sync_replication = None
         self._sync_message_flush = None
         self._new_partition_numbers = None
+        self._new_partition_brokers = None
         self._topic_other_configs = None
         self._topic_desc = None
         self.discriminator = None
@@ -77,6 +82,8 @@ class UpdateInstanceTopicReqTopics:
             self.sync_message_flush = sync_message_flush
         if new_partition_numbers is not None:
             self.new_partition_numbers = new_partition_numbers
+        if new_partition_brokers is not None:
+            self.new_partition_brokers = new_partition_brokers
         if topic_other_configs is not None:
             self.topic_other_configs = topic_other_configs
         if topic_desc is not None:
@@ -191,6 +198,28 @@ class UpdateInstanceTopicReqTopics:
         :type new_partition_numbers: int
         """
         self._new_partition_numbers = new_partition_numbers
+
+    @property
+    def new_partition_brokers(self):
+        """Gets the new_partition_brokers of this UpdateInstanceTopicReqTopics.
+
+        增加分区时指定broker列表
+
+        :return: The new_partition_brokers of this UpdateInstanceTopicReqTopics.
+        :rtype: list[int]
+        """
+        return self._new_partition_brokers
+
+    @new_partition_brokers.setter
+    def new_partition_brokers(self, new_partition_brokers):
+        """Sets the new_partition_brokers of this UpdateInstanceTopicReqTopics.
+
+        增加分区时指定broker列表
+
+        :param new_partition_brokers: The new_partition_brokers of this UpdateInstanceTopicReqTopics.
+        :type new_partition_brokers: list[int]
+        """
+        self._new_partition_brokers = new_partition_brokers
 
     @property
     def topic_other_configs(self):

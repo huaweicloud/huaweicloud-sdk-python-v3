@@ -39,7 +39,7 @@ class CreateShortChainParam:
         :type cust_flag: str
         :param dync_params: 动态参数。  &gt; 使用动态参数模板时，aim_code_type字段只能为individual。 
         :type dync_params: dict(str, str)
-        :param custom_url: 自定义跳转地址。长度要求不超过2048。 &gt; - 未填时，终端用户点击短信原文中的短链后，跳转智能信息模板H5页 &gt; - 已填时，终端用户点击短信原文中的短链后，跳转该字段对应的页面，填写时必须为http或https作为前缀 &gt; - 使用自定义跳转链接功能请联系KooMessage运营人员进行域名备案 &gt; - 自定义短码时即generation_type为2时不支持自定义跳转链接功能，传入的参数值无效 
+        :param custom_url: 自定义跳转地址。长度要求不超过256。 &gt; - 未填时，终端用户点击短信原文中的短链后，跳转智能信息模板H5页 &gt; - 已填时，终端用户点击短信原文中的短链后，跳转该字段对应的页面，填写时必须为http或https作为前缀 &gt; - 使用自定义跳转链接功能请联系KooMessage运营人员进行域名备案 &gt; - 自定义短码时即generation_type为2时不支持自定义跳转链接功能，传入的参数值无效 
         :type custom_url: str
         :param custom_short_code: 自定义短码，支持长度为3到10位的数字或大小写字母。样例为：aDC123。 &gt; 自定义短码时即generation_type为2时，此参数为必填。
         :type custom_short_code: str
@@ -109,7 +109,7 @@ class CreateShortChainParam:
     def custom_url(self):
         """Gets the custom_url of this CreateShortChainParam.
 
-        自定义跳转地址。长度要求不超过2048。 > - 未填时，终端用户点击短信原文中的短链后，跳转智能信息模板H5页 > - 已填时，终端用户点击短信原文中的短链后，跳转该字段对应的页面，填写时必须为http或https作为前缀 > - 使用自定义跳转链接功能请联系KooMessage运营人员进行域名备案 > - 自定义短码时即generation_type为2时不支持自定义跳转链接功能，传入的参数值无效 
+        自定义跳转地址。长度要求不超过256。 > - 未填时，终端用户点击短信原文中的短链后，跳转智能信息模板H5页 > - 已填时，终端用户点击短信原文中的短链后，跳转该字段对应的页面，填写时必须为http或https作为前缀 > - 使用自定义跳转链接功能请联系KooMessage运营人员进行域名备案 > - 自定义短码时即generation_type为2时不支持自定义跳转链接功能，传入的参数值无效 
 
         :return: The custom_url of this CreateShortChainParam.
         :rtype: str
@@ -120,7 +120,7 @@ class CreateShortChainParam:
     def custom_url(self, custom_url):
         """Sets the custom_url of this CreateShortChainParam.
 
-        自定义跳转地址。长度要求不超过2048。 > - 未填时，终端用户点击短信原文中的短链后，跳转智能信息模板H5页 > - 已填时，终端用户点击短信原文中的短链后，跳转该字段对应的页面，填写时必须为http或https作为前缀 > - 使用自定义跳转链接功能请联系KooMessage运营人员进行域名备案 > - 自定义短码时即generation_type为2时不支持自定义跳转链接功能，传入的参数值无效 
+        自定义跳转地址。长度要求不超过256。 > - 未填时，终端用户点击短信原文中的短链后，跳转智能信息模板H5页 > - 已填时，终端用户点击短信原文中的短链后，跳转该字段对应的页面，填写时必须为http或https作为前缀 > - 使用自定义跳转链接功能请联系KooMessage运营人员进行域名备案 > - 自定义短码时即generation_type为2时不支持自定义跳转链接功能，传入的参数值无效 
 
         :param custom_url: The custom_url of this CreateShortChainParam.
         :type custom_url: str

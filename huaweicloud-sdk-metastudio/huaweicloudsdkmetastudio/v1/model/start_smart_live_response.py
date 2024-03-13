@@ -21,6 +21,8 @@ class StartSmartLiveResponse(SdkResponse):
         'job_id': 'str',
         'rtc_room_info': 'RTCRoomInfoList',
         'live_event_report_url': 'str',
+        'live_event_callback_config': 'LiveEventCallBackConfig',
+        'live_warning_info': 'list[LiveWarningItem]',
         'x_request_id': 'str'
     }
 
@@ -28,10 +30,12 @@ class StartSmartLiveResponse(SdkResponse):
         'job_id': 'job_id',
         'rtc_room_info': 'rtc_room_info',
         'live_event_report_url': 'live_event_report_url',
+        'live_event_callback_config': 'live_event_callback_config',
+        'live_warning_info': 'live_warning_info',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, rtc_room_info=None, live_event_report_url=None, x_request_id=None):
+    def __init__(self, job_id=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, live_warning_info=None, x_request_id=None):
         """StartSmartLiveResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +46,10 @@ class StartSmartLiveResponse(SdkResponse):
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
         :param live_event_report_url: 直播事件上报地址。用户将自行获取的直播间事件上报到此地址，用于触发智能互动，自动回复话术。
         :type live_event_report_url: str
+        :param live_event_callback_config: 
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        :param live_warning_info: 开播风险告警列表。
+        :type live_warning_info: list[:class:`huaweicloudsdkmetastudio.v1.LiveWarningItem`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -51,6 +59,8 @@ class StartSmartLiveResponse(SdkResponse):
         self._job_id = None
         self._rtc_room_info = None
         self._live_event_report_url = None
+        self._live_event_callback_config = None
+        self._live_warning_info = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -60,6 +70,10 @@ class StartSmartLiveResponse(SdkResponse):
             self.rtc_room_info = rtc_room_info
         if live_event_report_url is not None:
             self.live_event_report_url = live_event_report_url
+        if live_event_callback_config is not None:
+            self.live_event_callback_config = live_event_callback_config
+        if live_warning_info is not None:
+            self.live_warning_info = live_warning_info
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -124,6 +138,46 @@ class StartSmartLiveResponse(SdkResponse):
         :type live_event_report_url: str
         """
         self._live_event_report_url = live_event_report_url
+
+    @property
+    def live_event_callback_config(self):
+        """Gets the live_event_callback_config of this StartSmartLiveResponse.
+
+        :return: The live_event_callback_config of this StartSmartLiveResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        """
+        return self._live_event_callback_config
+
+    @live_event_callback_config.setter
+    def live_event_callback_config(self, live_event_callback_config):
+        """Sets the live_event_callback_config of this StartSmartLiveResponse.
+
+        :param live_event_callback_config: The live_event_callback_config of this StartSmartLiveResponse.
+        :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
+        """
+        self._live_event_callback_config = live_event_callback_config
+
+    @property
+    def live_warning_info(self):
+        """Gets the live_warning_info of this StartSmartLiveResponse.
+
+        开播风险告警列表。
+
+        :return: The live_warning_info of this StartSmartLiveResponse.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.LiveWarningItem`]
+        """
+        return self._live_warning_info
+
+    @live_warning_info.setter
+    def live_warning_info(self, live_warning_info):
+        """Sets the live_warning_info of this StartSmartLiveResponse.
+
+        开播风险告警列表。
+
+        :param live_warning_info: The live_warning_info of this StartSmartLiveResponse.
+        :type live_warning_info: list[:class:`huaweicloudsdkmetastudio.v1.LiveWarningItem`]
+        """
+        self._live_warning_info = live_warning_info
 
     @property
     def x_request_id(self):

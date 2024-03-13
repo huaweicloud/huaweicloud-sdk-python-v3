@@ -33,7 +33,7 @@ class Schedule:
 
         The model defined in huaweicloud sdk
 
-        :param type: 
+        :param type: 调度类型 - EXECUTE_ONCE: 作业立即运行，只运行一次。 - CRON: 作业按指定频率周期执行。 - EVENT:  根据事件触发执行。
         :type type: str
         :param cron: 
         :type cron: :class:`huaweicloudsdkdgc.v1.Cron`
@@ -59,6 +59,8 @@ class Schedule:
     def type(self):
         """Gets the type of this Schedule.
 
+        调度类型 - EXECUTE_ONCE: 作业立即运行，只运行一次。 - CRON: 作业按指定频率周期执行。 - EVENT:  根据事件触发执行。
+
         :return: The type of this Schedule.
         :rtype: str
         """
@@ -67,6 +69,8 @@ class Schedule:
     @type.setter
     def type(self, type):
         """Sets the type of this Schedule.
+
+        调度类型 - EXECUTE_ONCE: 作业立即运行，只运行一次。 - CRON: 作业按指定频率周期执行。 - EVENT:  根据事件触发执行。
 
         :param type: The type of this Schedule.
         :type type: str

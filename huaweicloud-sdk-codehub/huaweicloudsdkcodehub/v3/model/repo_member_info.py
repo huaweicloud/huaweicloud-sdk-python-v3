@@ -45,7 +45,7 @@ class RepoMemberInfo:
         :type id: str
         :param name: 添加的用户名
         :type name: str
-        :param role: 添加的用户权限，取值范围：30-&gt;普通成员，40-&gt;管理员
+        :param role: 添加的用户权限，取值范围：20-&gt;浏览者，30-&gt;普通成员，40-&gt;管理员
         :type role: int
         """
         
@@ -158,7 +158,7 @@ class RepoMemberInfo:
     def role(self):
         """Gets the role of this RepoMemberInfo.
 
-        添加的用户权限，取值范围：30->普通成员，40->管理员
+        添加的用户权限，取值范围：20->浏览者，30->普通成员，40->管理员
 
         :return: The role of this RepoMemberInfo.
         :rtype: int
@@ -169,7 +169,7 @@ class RepoMemberInfo:
     def role(self, role):
         """Sets the role of this RepoMemberInfo.
 
-        添加的用户权限，取值范围：30->普通成员，40->管理员
+        添加的用户权限，取值范围：20->浏览者，30->普通成员，40->管理员
 
         :param role: The role of this RepoMemberInfo.
         :type role: int

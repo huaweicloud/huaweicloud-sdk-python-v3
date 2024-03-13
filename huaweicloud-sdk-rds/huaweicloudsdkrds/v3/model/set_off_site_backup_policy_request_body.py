@@ -17,7 +17,7 @@ class SetOffSiteBackupPolicyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'policy_para': 'list[OffSiteBackupPolicy]'
+        'policy_para': 'OffSiteBackupPolicy'
     }
 
     attribute_map = {
@@ -29,8 +29,8 @@ class SetOffSiteBackupPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param policy_para: 备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
-        :type policy_para: list[:class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`]
+        :param policy_para: 
+        :type policy_para: :class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`
         """
         
         
@@ -44,10 +44,8 @@ class SetOffSiteBackupPolicyRequestBody:
     def policy_para(self):
         """Gets the policy_para of this SetOffSiteBackupPolicyRequestBody.
 
-        备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
-
         :return: The policy_para of this SetOffSiteBackupPolicyRequestBody.
-        :rtype: list[:class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`]
+        :rtype: :class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`
         """
         return self._policy_para
 
@@ -55,10 +53,8 @@ class SetOffSiteBackupPolicyRequestBody:
     def policy_para(self, policy_para):
         """Sets the policy_para of this SetOffSiteBackupPolicyRequestBody.
 
-        备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
-
         :param policy_para: The policy_para of this SetOffSiteBackupPolicyRequestBody.
-        :type policy_para: list[:class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`]
+        :type policy_para: :class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`
         """
         self._policy_para = policy_para
 

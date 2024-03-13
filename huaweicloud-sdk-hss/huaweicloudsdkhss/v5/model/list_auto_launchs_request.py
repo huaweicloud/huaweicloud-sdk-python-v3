@@ -24,7 +24,8 @@ class ListAutoLaunchsRequest:
         'type': 'str',
         'enterprise_project_id': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'part_match': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListAutoLaunchsRequest:
         'type': 'type',
         'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'part_match': 'part_match'
     }
 
-    def __init__(self, host_id=None, host_name=None, name=None, host_ip=None, type=None, enterprise_project_id=None, limit=None, offset=None):
+    def __init__(self, host_id=None, host_name=None, name=None, host_ip=None, type=None, enterprise_project_id=None, limit=None, offset=None, part_match=None):
         """ListAutoLaunchsRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListAutoLaunchsRequest:
         :type limit: int
         :param offset: 默认是0
         :type offset: int
+        :param part_match: 是否模糊匹配，默认false表示精确匹配
+        :type part_match: bool
         """
         
         
@@ -71,6 +75,7 @@ class ListAutoLaunchsRequest:
         self._enterprise_project_id = None
         self._limit = None
         self._offset = None
+        self._part_match = None
         self.discriminator = None
 
         if host_id is not None:
@@ -89,6 +94,8 @@ class ListAutoLaunchsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if part_match is not None:
+            self.part_match = part_match
 
     @property
     def host_id(self):
@@ -265,6 +272,28 @@ class ListAutoLaunchsRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def part_match(self):
+        """Gets the part_match of this ListAutoLaunchsRequest.
+
+        是否模糊匹配，默认false表示精确匹配
+
+        :return: The part_match of this ListAutoLaunchsRequest.
+        :rtype: bool
+        """
+        return self._part_match
+
+    @part_match.setter
+    def part_match(self, part_match):
+        """Sets the part_match of this ListAutoLaunchsRequest.
+
+        是否模糊匹配，默认false表示精确匹配
+
+        :param part_match: The part_match of this ListAutoLaunchsRequest.
+        :type part_match: bool
+        """
+        self._part_match = part_match
 
     def to_dict(self):
         """Returns the model properties as a dict"""

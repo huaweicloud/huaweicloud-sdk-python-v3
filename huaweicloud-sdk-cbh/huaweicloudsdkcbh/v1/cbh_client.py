@@ -166,31 +166,31 @@ class CbhClient(Client):
 
         return http_info
 
-    def create_instance(self, request):
+    def create_cbh(self, request):
         """创建云堡垒机实例
 
         创建云堡垒机实例。（创建云堡垒机实例订单前，先调用此接口）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CreateInstance
-        :type request: :class:`huaweicloudsdkcbh.v1.CreateInstanceRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.CreateInstanceResponse`
+        :param request: Request instance for CreateCbh
+        :type request: :class:`huaweicloudsdkcbh.v1.CreateCbhRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.CreateCbhResponse`
         """
-        http_info = self._create_instance_http_info(request)
+        http_info = self._create_cbh_http_info(request)
         return self._call_api(**http_info)
 
-    def create_instance_invoker(self, request):
-        http_info = self._create_instance_http_info(request)
+    def create_cbh_invoker(self, request):
+        http_info = self._create_cbh_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _create_instance_http_info(cls, request):
+    def _create_cbh_http_info(cls, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1/{project_id}/cbs/instance/create",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateInstanceResponse"
+            "response_type": "CreateCbhResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -296,31 +296,31 @@ class CbhClient(Client):
 
         return http_info
 
-    def install_instance_eip(self, request):
+    def install_cbh_eip(self, request):
         """绑定弹性公网IP
 
         云堡垒机实例绑定弹性公网IP
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for InstallInstanceEip
-        :type request: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipResponse`
+        :param request: Request instance for InstallCbhEip
+        :type request: :class:`huaweicloudsdkcbh.v1.InstallCbhEipRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.InstallCbhEipResponse`
         """
-        http_info = self._install_instance_eip_http_info(request)
+        http_info = self._install_cbh_eip_http_info(request)
         return self._call_api(**http_info)
 
-    def install_instance_eip_invoker(self, request):
-        http_info = self._install_instance_eip_http_info(request)
+    def install_cbh_eip_invoker(self, request):
+        http_info = self._install_cbh_eip_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _install_instance_eip_http_info(cls, request):
+    def _install_cbh_eip_http_info(cls, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1/{project_id}/cbs/instance/{server_id}/eip/bind",
             "request_type": request.__class__.__name__,
-            "response_type": "InstallInstanceEipResponse"
+            "response_type": "InstallCbhEipResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1009,31 +1009,31 @@ class CbhClient(Client):
 
         return http_info
 
-    def uninstall_instance_eip(self, request):
+    def uninstall_cbh_eip(self, request):
         """解绑弹性公网IP
 
         云堡垒机实例解绑弹性公网IP。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for UninstallInstanceEip
-        :type request: :class:`huaweicloudsdkcbh.v1.UninstallInstanceEipRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.UninstallInstanceEipResponse`
+        :param request: Request instance for UninstallCbhEip
+        :type request: :class:`huaweicloudsdkcbh.v1.UninstallCbhEipRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.UninstallCbhEipResponse`
         """
-        http_info = self._uninstall_instance_eip_http_info(request)
+        http_info = self._uninstall_cbh_eip_http_info(request)
         return self._call_api(**http_info)
 
-    def uninstall_instance_eip_invoker(self, request):
-        http_info = self._uninstall_instance_eip_http_info(request)
+    def uninstall_cbh_eip_invoker(self, request):
+        http_info = self._uninstall_cbh_eip_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _uninstall_instance_eip_http_info(cls, request):
+    def _uninstall_cbh_eip_http_info(cls, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1/{project_id}/cbs/instance/{server_id}/eip/unbind",
             "request_type": request.__class__.__name__,
-            "response_type": "UninstallInstanceEipResponse"
+            "response_type": "UninstallCbhEipResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1101,6 +1101,71 @@ class CbhClient(Client):
             "resource_path": "/v1/{project_id}/cbs/instance/upgrade",
             "request_type": request.__class__.__name__,
             "response_type": "UpgradeCbhInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def login_cbh(self, request):
+        """获取IAM登录实例链接
+
+        获取当前IAM用户登录堡垒机的免登录链接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for LoginCbh
+        :type request: :class:`huaweicloudsdkcbh.v1.LoginCbhRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.LoginCbhResponse`
+        """
+        http_info = self._login_cbh_http_info(request)
+        return self._call_api(**http_info)
+
+    def login_cbh_invoker(self, request):
+        http_info = self._login_cbh_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _login_cbh_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/instance/login",
+            "request_type": request.__class__.__name__,
+            "response_type": "LoginCbhResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

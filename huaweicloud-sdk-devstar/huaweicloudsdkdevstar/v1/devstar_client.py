@@ -1694,10 +1694,12 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesResponse`
         """
+        warnings.warn("Method 'list_published_templates' of DevStarClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_published_templates_http_info(request)
         return self._call_api(**http_info)
 
     def list_published_templates_invoker(self, request):
+        warnings.warn("Method 'list_published_templates_invoker' of DevStarClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_published_templates_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1899,10 +1901,12 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Response`
         """
+        warnings.warn("Method 'list_templates_v2' of DevStarClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_templates_v2_http_info(request)
         return self._call_api(**http_info)
 
     def list_templates_v2_invoker(self, request):
+        warnings.warn("Method 'list_templates_v2_invoker' of DevStarClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_templates_v2_http_info(request)
         return SyncInvoker(self, http_info)
 

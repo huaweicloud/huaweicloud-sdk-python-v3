@@ -33,9 +33,9 @@ class UpdateAppRequest:
 
         The model defined in huaweicloud sdk
 
-        :param app_group_id: 应用组ID
+        :param app_group_id: 应用组ID。
         :type app_group_id: str
-        :param app_id: 应用ID
+        :param app_id: 应用ID。
         :type app_id: str
         :param body: Body of the UpdateAppRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UpdateAppReq`
@@ -57,7 +57,7 @@ class UpdateAppRequest:
     def app_group_id(self):
         """Gets the app_group_id of this UpdateAppRequest.
 
-        应用组ID
+        应用组ID。
 
         :return: The app_group_id of this UpdateAppRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateAppRequest:
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this UpdateAppRequest.
 
-        应用组ID
+        应用组ID。
 
         :param app_group_id: The app_group_id of this UpdateAppRequest.
         :type app_group_id: str
@@ -79,7 +79,7 @@ class UpdateAppRequest:
     def app_id(self):
         """Gets the app_id of this UpdateAppRequest.
 
-        应用ID
+        应用ID。
 
         :return: The app_id of this UpdateAppRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateAppRequest:
     def app_id(self, app_id):
         """Sets the app_id of this UpdateAppRequest.
 
-        应用ID
+        应用ID。
 
         :param app_id: The app_id of this UpdateAppRequest.
         :type app_id: str

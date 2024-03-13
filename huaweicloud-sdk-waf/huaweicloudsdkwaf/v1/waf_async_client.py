@@ -3326,16 +3326,18 @@ class WafAsyncClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'attacks' in local_var_params:
             query_params.append(('attacks', local_var_params['attacks']))
-            collection_formats['attacks'] = 'csv'
+            collection_formats['attacks'] = 'multi'
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
-            collection_formats['hosts'] = 'csv'
+            collection_formats['hosts'] = 'multi'
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
             query_params.append(('pagesize', local_var_params['pagesize']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -3902,6 +3904,8 @@ class WafAsyncClient(Client):
             query_params.append(('instances', local_var_params['instances']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -4334,10 +4338,10 @@ class WafAsyncClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
-            collection_formats['hosts'] = 'csv'
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
-            collection_formats['instances'] = 'csv'
+            collection_formats['instances'] = 'multi'
         if 'group_by' in local_var_params:
             query_params.append(('group_by', local_var_params['group_by']))
 
@@ -5381,6 +5385,8 @@ class WafAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

@@ -33,7 +33,7 @@ class ShowInstanceResultRequest:
 
         :param instance_id: projectId
         :type instance_id: str
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         """
         
@@ -72,7 +72,7 @@ class ShowInstanceResultRequest:
     def workspace(self):
         """Gets the workspace of this ShowInstanceResultRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this ShowInstanceResultRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowInstanceResultRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowInstanceResultRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this ShowInstanceResultRequest.
         :type workspace: str

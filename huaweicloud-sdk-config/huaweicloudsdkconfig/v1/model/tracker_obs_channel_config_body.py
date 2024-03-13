@@ -18,21 +18,25 @@ class TrackerOBSChannelConfigBody:
 
     openapi_types = {
         'bucket_name': 'str',
+        'bucket_prefix': 'str',
         'region_id': 'str'
     }
 
     attribute_map = {
         'bucket_name': 'bucket_name',
+        'bucket_prefix': 'bucket_prefix',
         'region_id': 'region_id'
     }
 
-    def __init__(self, bucket_name=None, region_id=None):
+    def __init__(self, bucket_name=None, bucket_prefix=None, region_id=None):
         """TrackerOBSChannelConfigBody
 
         The model defined in huaweicloud sdk
 
         :param bucket_name: OBS桶名称
         :type bucket_name: str
+        :param bucket_prefix: OBS桶前缀
+        :type bucket_prefix: str
         :param region_id: 区域id
         :type region_id: str
         """
@@ -40,10 +44,13 @@ class TrackerOBSChannelConfigBody:
         
 
         self._bucket_name = None
+        self._bucket_prefix = None
         self._region_id = None
         self.discriminator = None
 
         self.bucket_name = bucket_name
+        if bucket_prefix is not None:
+            self.bucket_prefix = bucket_prefix
         self.region_id = region_id
 
     @property
@@ -67,6 +74,28 @@ class TrackerOBSChannelConfigBody:
         :type bucket_name: str
         """
         self._bucket_name = bucket_name
+
+    @property
+    def bucket_prefix(self):
+        """Gets the bucket_prefix of this TrackerOBSChannelConfigBody.
+
+        OBS桶前缀
+
+        :return: The bucket_prefix of this TrackerOBSChannelConfigBody.
+        :rtype: str
+        """
+        return self._bucket_prefix
+
+    @bucket_prefix.setter
+    def bucket_prefix(self, bucket_prefix):
+        """Sets the bucket_prefix of this TrackerOBSChannelConfigBody.
+
+        OBS桶前缀
+
+        :param bucket_prefix: The bucket_prefix of this TrackerOBSChannelConfigBody.
+        :type bucket_prefix: str
+        """
+        self._bucket_prefix = bucket_prefix
 
     @property
     def region_id(self):

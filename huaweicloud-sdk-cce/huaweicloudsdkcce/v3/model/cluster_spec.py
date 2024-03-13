@@ -20,6 +20,7 @@ class ClusterSpec:
         'category': 'str',
         'type': 'str',
         'flavor': 'str',
+        'enable_autopilot': 'bool',
         'version': 'str',
         'platform_version': 'str',
         'description': 'str',
@@ -46,6 +47,7 @@ class ClusterSpec:
         'category': 'category',
         'type': 'type',
         'flavor': 'flavor',
+        'enable_autopilot': 'enableAutopilot',
         'version': 'version',
         'platform_version': 'platformVersion',
         'description': 'description',
@@ -68,7 +70,7 @@ class ClusterSpec:
         'configurations_override': 'configurationsOverride'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, configurations_override=None):
+    def __init__(self, category=None, type=None, flavor=None, enable_autopilot=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, configurations_override=None):
         """ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ClusterSpec:
         :type type: str
         :param flavor: 集群规格，当集群为v1.15及以上版本时支持创建后变更，详情请参见[变更集群规格](ResizeCluster.xml)。请按实际业务需求进行选择： - cce.s1.small: 小规模单控制节点CCE集群（最大50节点） - cce.s1.medium: 中等规模单控制节点CCE集群（最大200节点） - cce.s2.small: 小规模多控制节点CCE集群（最大50节点） - cce.s2.medium: 中等规模多控制节点CCE集群（最大200节点） - cce.s2.large: 大规模多控制节点CCE集群（最大1000节点） - cce.s2.xlarge: 超大规模多控制节点CCE集群（最大2000节点）  &gt;    关于规格参数中的字段说明如下： &gt;    - s1：单控制节点的集群，控制节点数为1。单控制节点故障后，集群将不可用，但已运行工作负载不受影响。 &gt;    - s2：多控制节点的集群，即高可用集群，控制节点数为3。当某个控制节点故障时，集群仍然可用。 &gt;    [- dec：表示专属云的CCE集群规格。例如cce.dec.s1.small表示小规模单控制节点的专属云CCE集群（最大50节点）。](tag:hws,hws_hk) &gt;    - small：表示集群支持管理的最大节点规模为50节点。 &gt;    - medium：表示集群支持管理的最大节点规模为200节点。 &gt;    - large：表示集群支持管理的最大节点规模为1000节点。 &gt;    - xlarge：表示集群支持管理的最大节点规模为2000节点。 
         :type flavor: str
+        :param enable_autopilot: CCE Autopilot集群开关： - true：创建集群为CCE Autopilot集群 
+        :type enable_autopilot: bool
         :param version: 集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  &gt;    - 若不配置，默认创建最新版本的集群。 &gt;    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。 [&gt;    - Turbo集群支持1.19及以上版本商用。](tag:hws,hws_hk,dt) [&gt;    - Turbo集群支持1.23及以上版本商用。](tag:hcs,g42,sbc)
         :type version: str
         :param platform_version: CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。不支持用户指定，集群创建时自动选择对应集群版本的最新平台版本。  platformVersion格式为：cce.X.Y - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。 - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。 
@@ -126,6 +130,7 @@ class ClusterSpec:
         self._category = None
         self._type = None
         self._flavor = None
+        self._enable_autopilot = None
         self._version = None
         self._platform_version = None
         self._description = None
@@ -153,6 +158,8 @@ class ClusterSpec:
         if type is not None:
             self.type = type
         self.flavor = flavor
+        if enable_autopilot is not None:
+            self.enable_autopilot = enable_autopilot
         if version is not None:
             self.version = version
         if platform_version is not None:
@@ -257,6 +264,28 @@ class ClusterSpec:
         :type flavor: str
         """
         self._flavor = flavor
+
+    @property
+    def enable_autopilot(self):
+        """Gets the enable_autopilot of this ClusterSpec.
+
+        CCE Autopilot集群开关： - true：创建集群为CCE Autopilot集群 
+
+        :return: The enable_autopilot of this ClusterSpec.
+        :rtype: bool
+        """
+        return self._enable_autopilot
+
+    @enable_autopilot.setter
+    def enable_autopilot(self, enable_autopilot):
+        """Sets the enable_autopilot of this ClusterSpec.
+
+        CCE Autopilot集群开关： - true：创建集群为CCE Autopilot集群 
+
+        :param enable_autopilot: The enable_autopilot of this ClusterSpec.
+        :type enable_autopilot: bool
+        """
+        self._enable_autopilot = enable_autopilot
 
     @property
     def version(self):

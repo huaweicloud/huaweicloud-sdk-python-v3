@@ -41,7 +41,7 @@ class TaskGroupSrcNodeResp:
 
         :param bucket: 源端桶的名称。
         :type bucket: str
-        :param cloud_type: 源端云服务提供商。  可选值有AWS、AZURE、ALIYUN、TENCENT、HUAWEICLOUD、QINGCLOUD、KINGSOFTCLOUD、BAIDU、QINIU、URLSOURCE或者UCLOUD。默认值为ALIYUN。
+        :param cloud_type: 源端云服务提供商。  可选值有AWS、AZURE、ALIYUN、TENCENT、HUAWEICLOUD、QINGCLOUD、KINGSOFTCLOUD、BAIDU、QINIU、GOOGLE、URLSOURCE或者UCLOUD。默认值为ALIYUN。
         :type cloud_type: str
         :param region: 源端桶所处的区域。
         :type region: str
@@ -102,7 +102,7 @@ class TaskGroupSrcNodeResp:
     def cloud_type(self):
         """Gets the cloud_type of this TaskGroupSrcNodeResp.
 
-        源端云服务提供商。  可选值有AWS、AZURE、ALIYUN、TENCENT、HUAWEICLOUD、QINGCLOUD、KINGSOFTCLOUD、BAIDU、QINIU、URLSOURCE或者UCLOUD。默认值为ALIYUN。
+        源端云服务提供商。  可选值有AWS、AZURE、ALIYUN、TENCENT、HUAWEICLOUD、QINGCLOUD、KINGSOFTCLOUD、BAIDU、QINIU、GOOGLE、URLSOURCE或者UCLOUD。默认值为ALIYUN。
 
         :return: The cloud_type of this TaskGroupSrcNodeResp.
         :rtype: str
@@ -113,7 +113,7 @@ class TaskGroupSrcNodeResp:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this TaskGroupSrcNodeResp.
 
-        源端云服务提供商。  可选值有AWS、AZURE、ALIYUN、TENCENT、HUAWEICLOUD、QINGCLOUD、KINGSOFTCLOUD、BAIDU、QINIU、URLSOURCE或者UCLOUD。默认值为ALIYUN。
+        源端云服务提供商。  可选值有AWS、AZURE、ALIYUN、TENCENT、HUAWEICLOUD、QINGCLOUD、KINGSOFTCLOUD、BAIDU、QINIU、GOOGLE、URLSOURCE或者UCLOUD。默认值为ALIYUN。
 
         :param cloud_type: The cloud_type of this TaskGroupSrcNodeResp.
         :type cloud_type: str

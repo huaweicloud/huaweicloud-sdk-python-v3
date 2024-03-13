@@ -37,7 +37,7 @@ class RestoreTablesRequestBody:
         :type restore_time: int
         :param restore_tables: 表信息
         :type restore_tables: list[:class:`huaweicloudsdkrds.v3.RestoreDatabasesInfo`]
-        :param is_fast_restore: 是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用急速恢复。 如果实例使用了XA事务，则不可使用极速恢复！使用恢复会导致恢复失败！
+        :param is_fast_restore: 是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
         :type is_fast_restore: bool
         """
         
@@ -101,7 +101,7 @@ class RestoreTablesRequestBody:
     def is_fast_restore(self):
         """Gets the is_fast_restore of this RestoreTablesRequestBody.
 
-        是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用急速恢复。 如果实例使用了XA事务，则不可使用极速恢复！使用恢复会导致恢复失败！
+        是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
 
         :return: The is_fast_restore of this RestoreTablesRequestBody.
         :rtype: bool
@@ -112,7 +112,7 @@ class RestoreTablesRequestBody:
     def is_fast_restore(self, is_fast_restore):
         """Sets the is_fast_restore of this RestoreTablesRequestBody.
 
-        是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用急速恢复。 如果实例使用了XA事务，则不可使用极速恢复！使用恢复会导致恢复失败！
+        是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
 
         :param is_fast_restore: The is_fast_restore of this RestoreTablesRequestBody.
         :type is_fast_restore: bool

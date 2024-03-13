@@ -19,16 +19,18 @@ class UpdateTaskStatusReq:
     openapi_types = {
         'operation': 'str',
         'param': 'dict(str, str)',
-        'switch_hce': 'bool'
+        'switch_hce': 'bool',
+        'is_need_consistency_check': 'bool'
     }
 
     attribute_map = {
         'operation': 'operation',
         'param': 'param',
-        'switch_hce': 'switch_hce'
+        'switch_hce': 'switch_hce',
+        'is_need_consistency_check': 'is_need_consistency_check'
     }
 
-    def __init__(self, operation=None, param=None, switch_hce=None):
+    def __init__(self, operation=None, param=None, switch_hce=None, is_need_consistency_check=None):
         """UpdateTaskStatusReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UpdateTaskStatusReq:
         :type param: dict(str, str)
         :param switch_hce: 是否切换hce
         :type switch_hce: bool
+        :param is_need_consistency_check: 是否进行一致性校验
+        :type is_need_consistency_check: bool
         """
         
         
@@ -46,6 +50,7 @@ class UpdateTaskStatusReq:
         self._operation = None
         self._param = None
         self._switch_hce = None
+        self._is_need_consistency_check = None
         self.discriminator = None
 
         self.operation = operation
@@ -53,6 +58,8 @@ class UpdateTaskStatusReq:
             self.param = param
         if switch_hce is not None:
             self.switch_hce = switch_hce
+        if is_need_consistency_check is not None:
+            self.is_need_consistency_check = is_need_consistency_check
 
     @property
     def operation(self):
@@ -119,6 +126,28 @@ class UpdateTaskStatusReq:
         :type switch_hce: bool
         """
         self._switch_hce = switch_hce
+
+    @property
+    def is_need_consistency_check(self):
+        """Gets the is_need_consistency_check of this UpdateTaskStatusReq.
+
+        是否进行一致性校验
+
+        :return: The is_need_consistency_check of this UpdateTaskStatusReq.
+        :rtype: bool
+        """
+        return self._is_need_consistency_check
+
+    @is_need_consistency_check.setter
+    def is_need_consistency_check(self, is_need_consistency_check):
+        """Sets the is_need_consistency_check of this UpdateTaskStatusReq.
+
+        是否进行一致性校验
+
+        :param is_need_consistency_check: The is_need_consistency_check of this UpdateTaskStatusReq.
+        :type is_need_consistency_check: bool
+        """
+        self._is_need_consistency_check = is_need_consistency_check
 
     def to_dict(self):
         """Returns the model properties as a dict"""

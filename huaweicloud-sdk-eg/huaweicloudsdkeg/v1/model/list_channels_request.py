@@ -22,7 +22,8 @@ class ListChannelsRequest:
         'sort': 'str',
         'provider_type': 'str',
         'name': 'str',
-        'fuzzy_name': 'str'
+        'fuzzy_name': 'str',
+        'eps_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListChannelsRequest:
         'sort': 'sort',
         'provider_type': 'provider_type',
         'name': 'name',
-        'fuzzy_name': 'fuzzy_name'
+        'fuzzy_name': 'fuzzy_name',
+        'eps_id': 'eps_id'
     }
 
-    def __init__(self, offset=None, limit=None, sort=None, provider_type=None, name=None, fuzzy_name=None):
+    def __init__(self, offset=None, limit=None, sort=None, provider_type=None, name=None, fuzzy_name=None, eps_id=None):
         """ListChannelsRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListChannelsRequest:
         :type name: str
         :param fuzzy_name: 指定查询的事件通道名称，模糊匹配
         :type fuzzy_name: str
+        :param eps_id: 指定查询的企业项目id，精确匹配
+        :type eps_id: str
         """
         
         
@@ -61,6 +65,7 @@ class ListChannelsRequest:
         self._provider_type = None
         self._name = None
         self._fuzzy_name = None
+        self._eps_id = None
         self.discriminator = None
 
         if offset is not None:
@@ -75,6 +80,8 @@ class ListChannelsRequest:
             self.name = name
         if fuzzy_name is not None:
             self.fuzzy_name = fuzzy_name
+        if eps_id is not None:
+            self.eps_id = eps_id
 
     @property
     def offset(self):
@@ -207,6 +214,28 @@ class ListChannelsRequest:
         :type fuzzy_name: str
         """
         self._fuzzy_name = fuzzy_name
+
+    @property
+    def eps_id(self):
+        """Gets the eps_id of this ListChannelsRequest.
+
+        指定查询的企业项目id，精确匹配
+
+        :return: The eps_id of this ListChannelsRequest.
+        :rtype: str
+        """
+        return self._eps_id
+
+    @eps_id.setter
+    def eps_id(self, eps_id):
+        """Sets the eps_id of this ListChannelsRequest.
+
+        指定查询的企业项目id，精确匹配
+
+        :param eps_id: The eps_id of this ListChannelsRequest.
+        :type eps_id: str
+        """
+        self._eps_id = eps_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

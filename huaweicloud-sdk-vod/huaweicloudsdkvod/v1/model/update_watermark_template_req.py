@@ -89,8 +89,7 @@ class UpdateWatermarkTemplateReq:
         self.discriminator = None
 
         self.id = id
-        if name is not None:
-            self.name = name
+        self.name = name
         if dx is not None:
             self.dx = dx
         if dy is not None:

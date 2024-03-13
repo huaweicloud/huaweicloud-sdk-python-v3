@@ -35,7 +35,9 @@ class KeywordsAlarmRuleRespList:
         'trigger_condition_count': 'int',
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
-        'recovery_policy': 'int'
+        'recovery_policy': 'int',
+        'notification_frequency': 'int',
+        'alarm_action_rule_name': 'str'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class KeywordsAlarmRuleRespList:
         'trigger_condition_count': 'trigger_condition_count',
         'trigger_condition_frequency': 'trigger_condition_frequency',
         'whether_recovery_policy': 'whether_recovery_policy',
-        'recovery_policy': 'recovery_policy'
+        'recovery_policy': 'recovery_policy',
+        'notification_frequency': 'notification_frequency',
+        'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None):
+    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
         """KeywordsAlarmRuleRespList
 
         The model defined in huaweicloud sdk
@@ -85,24 +89,28 @@ class KeywordsAlarmRuleRespList:
         :type keywords_alarm_send: bool
         :param domain_id: domainId
         :type domain_id: str
-        :param create_time: 创建时间(毫秒时间戳)
+        :param create_time: 创建时间（毫秒时间戳）
         :type create_time: int
-        :param update_time: 更新时间(毫秒时间戳)
+        :param update_time: 更新时间（毫秒时间戳）
         :type update_time: int
-        :param topics: 主题
+        :param topics: 通知主题
         :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
-        :param template_name: 
+        :param template_name: 消息模板名称
         :type template_name: str
-        :param status: 
+        :param status: 告警状态
         :type status: str
-        :param trigger_condition_count: 触发条件：触发次数;默认为1
+        :param trigger_condition_count: 触发条件：触发周期;默认为1
         :type trigger_condition_count: int
-        :param trigger_condition_frequency: 触发条件：触发周期;默认为1
+        :param trigger_condition_frequency: 触发条件：触发次数;默认为1
         :type trigger_condition_frequency: int
         :param whether_recovery_policy: 是否打开恢复通知;默认false
         :type whether_recovery_policy: bool
         :param recovery_policy: 恢复策略周期;默认为3
         :type recovery_policy: int
+        :param notification_frequency: 通知频率,单位(分钟)
+        :type notification_frequency: int
+        :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+        :type alarm_action_rule_name: str
         """
         
         
@@ -126,9 +134,12 @@ class KeywordsAlarmRuleRespList:
         self._trigger_condition_frequency = None
         self._whether_recovery_policy = None
         self._recovery_policy = None
+        self._notification_frequency = None
+        self._alarm_action_rule_name = None
         self.discriminator = None
 
-        self.project_id = project_id
+        if project_id is not None:
+            self.project_id = project_id
         self.keywords_alarm_rule_id = keywords_alarm_rule_id
         self.keywords_alarm_rule_name = keywords_alarm_rule_name
         self.keywords_alarm_rule_description = keywords_alarm_rule_description
@@ -153,6 +164,9 @@ class KeywordsAlarmRuleRespList:
             self.whether_recovery_policy = whether_recovery_policy
         if recovery_policy is not None:
             self.recovery_policy = recovery_policy
+        self.notification_frequency = notification_frequency
+        if alarm_action_rule_name is not None:
+            self.alarm_action_rule_name = alarm_action_rule_name
 
     @property
     def project_id(self):
@@ -374,7 +388,7 @@ class KeywordsAlarmRuleRespList:
     def create_time(self):
         """Gets the create_time of this KeywordsAlarmRuleRespList.
 
-        创建时间(毫秒时间戳)
+        创建时间（毫秒时间戳）
 
         :return: The create_time of this KeywordsAlarmRuleRespList.
         :rtype: int
@@ -385,7 +399,7 @@ class KeywordsAlarmRuleRespList:
     def create_time(self, create_time):
         """Sets the create_time of this KeywordsAlarmRuleRespList.
 
-        创建时间(毫秒时间戳)
+        创建时间（毫秒时间戳）
 
         :param create_time: The create_time of this KeywordsAlarmRuleRespList.
         :type create_time: int
@@ -396,7 +410,7 @@ class KeywordsAlarmRuleRespList:
     def update_time(self):
         """Gets the update_time of this KeywordsAlarmRuleRespList.
 
-        更新时间(毫秒时间戳)
+        更新时间（毫秒时间戳）
 
         :return: The update_time of this KeywordsAlarmRuleRespList.
         :rtype: int
@@ -407,7 +421,7 @@ class KeywordsAlarmRuleRespList:
     def update_time(self, update_time):
         """Sets the update_time of this KeywordsAlarmRuleRespList.
 
-        更新时间(毫秒时间戳)
+        更新时间（毫秒时间戳）
 
         :param update_time: The update_time of this KeywordsAlarmRuleRespList.
         :type update_time: int
@@ -418,7 +432,7 @@ class KeywordsAlarmRuleRespList:
     def topics(self):
         """Gets the topics of this KeywordsAlarmRuleRespList.
 
-        主题
+        通知主题
 
         :return: The topics of this KeywordsAlarmRuleRespList.
         :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
@@ -429,7 +443,7 @@ class KeywordsAlarmRuleRespList:
     def topics(self, topics):
         """Sets the topics of this KeywordsAlarmRuleRespList.
 
-        主题
+        通知主题
 
         :param topics: The topics of this KeywordsAlarmRuleRespList.
         :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
@@ -440,6 +454,8 @@ class KeywordsAlarmRuleRespList:
     def template_name(self):
         """Gets the template_name of this KeywordsAlarmRuleRespList.
 
+        消息模板名称
+
         :return: The template_name of this KeywordsAlarmRuleRespList.
         :rtype: str
         """
@@ -448,6 +464,8 @@ class KeywordsAlarmRuleRespList:
     @template_name.setter
     def template_name(self, template_name):
         """Sets the template_name of this KeywordsAlarmRuleRespList.
+
+        消息模板名称
 
         :param template_name: The template_name of this KeywordsAlarmRuleRespList.
         :type template_name: str
@@ -458,6 +476,8 @@ class KeywordsAlarmRuleRespList:
     def status(self):
         """Gets the status of this KeywordsAlarmRuleRespList.
 
+        告警状态
+
         :return: The status of this KeywordsAlarmRuleRespList.
         :rtype: str
         """
@@ -466,6 +486,8 @@ class KeywordsAlarmRuleRespList:
     @status.setter
     def status(self, status):
         """Sets the status of this KeywordsAlarmRuleRespList.
+
+        告警状态
 
         :param status: The status of this KeywordsAlarmRuleRespList.
         :type status: str
@@ -476,7 +498,7 @@ class KeywordsAlarmRuleRespList:
     def trigger_condition_count(self):
         """Gets the trigger_condition_count of this KeywordsAlarmRuleRespList.
 
-        触发条件：触发次数;默认为1
+        触发条件：触发周期;默认为1
 
         :return: The trigger_condition_count of this KeywordsAlarmRuleRespList.
         :rtype: int
@@ -487,7 +509,7 @@ class KeywordsAlarmRuleRespList:
     def trigger_condition_count(self, trigger_condition_count):
         """Sets the trigger_condition_count of this KeywordsAlarmRuleRespList.
 
-        触发条件：触发次数;默认为1
+        触发条件：触发周期;默认为1
 
         :param trigger_condition_count: The trigger_condition_count of this KeywordsAlarmRuleRespList.
         :type trigger_condition_count: int
@@ -498,7 +520,7 @@ class KeywordsAlarmRuleRespList:
     def trigger_condition_frequency(self):
         """Gets the trigger_condition_frequency of this KeywordsAlarmRuleRespList.
 
-        触发条件：触发周期;默认为1
+        触发条件：触发次数;默认为1
 
         :return: The trigger_condition_frequency of this KeywordsAlarmRuleRespList.
         :rtype: int
@@ -509,7 +531,7 @@ class KeywordsAlarmRuleRespList:
     def trigger_condition_frequency(self, trigger_condition_frequency):
         """Sets the trigger_condition_frequency of this KeywordsAlarmRuleRespList.
 
-        触发条件：触发周期;默认为1
+        触发条件：触发次数;默认为1
 
         :param trigger_condition_frequency: The trigger_condition_frequency of this KeywordsAlarmRuleRespList.
         :type trigger_condition_frequency: int
@@ -559,6 +581,50 @@ class KeywordsAlarmRuleRespList:
         :type recovery_policy: int
         """
         self._recovery_policy = recovery_policy
+
+    @property
+    def notification_frequency(self):
+        """Gets the notification_frequency of this KeywordsAlarmRuleRespList.
+
+        通知频率,单位(分钟)
+
+        :return: The notification_frequency of this KeywordsAlarmRuleRespList.
+        :rtype: int
+        """
+        return self._notification_frequency
+
+    @notification_frequency.setter
+    def notification_frequency(self, notification_frequency):
+        """Sets the notification_frequency of this KeywordsAlarmRuleRespList.
+
+        通知频率,单位(分钟)
+
+        :param notification_frequency: The notification_frequency of this KeywordsAlarmRuleRespList.
+        :type notification_frequency: int
+        """
+        self._notification_frequency = notification_frequency
+
+    @property
+    def alarm_action_rule_name(self):
+        """Gets the alarm_action_rule_name of this KeywordsAlarmRuleRespList.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :return: The alarm_action_rule_name of this KeywordsAlarmRuleRespList.
+        :rtype: str
+        """
+        return self._alarm_action_rule_name
+
+    @alarm_action_rule_name.setter
+    def alarm_action_rule_name(self, alarm_action_rule_name):
+        """Sets the alarm_action_rule_name of this KeywordsAlarmRuleRespList.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :param alarm_action_rule_name: The alarm_action_rule_name of this KeywordsAlarmRuleRespList.
+        :type alarm_action_rule_name: str
+        """
+        self._alarm_action_rule_name = alarm_action_rule_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

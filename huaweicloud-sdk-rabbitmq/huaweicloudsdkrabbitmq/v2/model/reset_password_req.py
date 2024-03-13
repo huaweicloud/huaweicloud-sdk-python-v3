@@ -29,7 +29,7 @@ class ResetPasswordReq:
 
         The model defined in huaweicloud sdk
 
-        :param new_password: 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?  和空格，并且不能以-开头。
+        :param new_password: 8-32个字符。  至少包含以下字符中的3种：  - 大写字母  - 小写字母  - 数字  - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?  和空格，并且不能以-开头。
         :type new_password: str
         """
         
@@ -45,7 +45,7 @@ class ResetPasswordReq:
     def new_password(self):
         """Gets the new_password of this ResetPasswordReq.
 
-        8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?  和空格，并且不能以-开头。
+        8-32个字符。  至少包含以下字符中的3种：  - 大写字母  - 小写字母  - 数字  - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?  和空格，并且不能以-开头。
 
         :return: The new_password of this ResetPasswordReq.
         :rtype: str
@@ -56,7 +56,7 @@ class ResetPasswordReq:
     def new_password(self, new_password):
         """Sets the new_password of this ResetPasswordReq.
 
-        8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?  和空格，并且不能以-开头。
+        8-32个字符。  至少包含以下字符中的3种：  - 大写字母  - 小写字母  - 数字  - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?  和空格，并且不能以-开头。
 
         :param new_password: The new_password of this ResetPasswordReq.
         :type new_password: str

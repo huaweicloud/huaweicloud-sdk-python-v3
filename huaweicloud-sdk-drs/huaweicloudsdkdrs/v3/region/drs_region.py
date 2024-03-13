@@ -1,8 +1,5 @@
 # coding: utf-8
 
-import types
-import six
-
 from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.region.provider import RegionProviderChain
 
@@ -51,6 +48,8 @@ class DrsRegion:
                         "https://drs.tr-west-1.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
                         "https://drs.ap-southeast-4.myhuaweicloud.com")
+    EU_WEST_0 = Region("eu-west-0",
+                        "https://drs.eu-west-0.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -74,14 +73,15 @@ class DrsRegion:
         "cn-south-4": CN_SOUTH_4,
         "tr-west-1": TR_WEST_1,
         "ap-southeast-4": AP_SOUTHEAST_4,
+        "eu-west-0": EU_WEST_0,
     }
 
     @classmethod
     def value_of(cls, region_id, static_fields=None):
         if not region_id:
-            raise KeyError("Unexpected empty parameter: region_id.")
+            raise KeyError("Unexpected empty parameter: region_id")
 
-        fields = static_fields if static_fields else cls.static_fields
+        fields = static_fields or cls.static_fields
 
         region = cls._PROVIDER.get_region(region_id)
         if region:
@@ -90,6 +90,5 @@ class DrsRegion:
         if region_id in fields:
             return fields.get(region_id)
 
-        raise KeyError("Unexpected region_id: " + region_id)
-
-
+        raise KeyError("region_id '%s' is not in the following supported regions of service 'Drs': [%s]" % (
+            region_id, ", ".join(sorted(fields.keys()))))

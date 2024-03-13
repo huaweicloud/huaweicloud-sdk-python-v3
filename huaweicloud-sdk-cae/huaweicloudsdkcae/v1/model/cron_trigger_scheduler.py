@@ -31,7 +31,7 @@ class CronTriggerScheduler:
 
         The model defined in huaweicloud sdk
 
-        :param cron: 触发触发时间点，以五位cron表达式表示。
+        :param cron: 触发时间点，以五位cron表达式表示。
         :type cron: str
         :param target_replica: 要求达到的实例数。
         :type target_replica: int
@@ -52,7 +52,7 @@ class CronTriggerScheduler:
     def cron(self):
         """Gets the cron of this CronTriggerScheduler.
 
-        触发触发时间点，以五位cron表达式表示。
+        触发时间点，以五位cron表达式表示。
 
         :return: The cron of this CronTriggerScheduler.
         :rtype: str
@@ -63,7 +63,7 @@ class CronTriggerScheduler:
     def cron(self, cron):
         """Sets the cron of this CronTriggerScheduler.
 
-        触发触发时间点，以五位cron表达式表示。
+        触发时间点，以五位cron表达式表示。
 
         :param cron: The cron of this CronTriggerScheduler.
         :type cron: str

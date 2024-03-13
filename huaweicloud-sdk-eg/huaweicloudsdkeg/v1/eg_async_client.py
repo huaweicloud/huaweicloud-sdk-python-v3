@@ -198,6 +198,8 @@ class EgAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -657,6 +659,8 @@ class EgAsyncClient(Client):
             path_params['channel_id'] = local_var_params['channel_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -926,7 +930,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-Request-Id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1189,6 +1193,8 @@ class EgAsyncClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'fuzzy_name' in local_var_params:
             query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+        if 'eps_id' in local_var_params:
+            query_params.append(('eps_id', local_var_params['eps_id']))
 
         header_params = {}
 
@@ -1489,6 +1495,10 @@ class EgAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'fuzzy_name' in local_var_params:
+            query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
 
         header_params = {}
 
@@ -2413,6 +2423,8 @@ class EgAsyncClient(Client):
             path_params['channel_id'] = local_var_params['channel_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2543,6 +2555,8 @@ class EgAsyncClient(Client):
             path_params['trace_id'] = local_var_params['trace_id']
 
         query_params = []
+        if 'channel_id' in local_var_params:
+            query_params.append(('channel_id', local_var_params['channel_id']))
 
         header_params = {}
 
@@ -2937,6 +2951,8 @@ class EgAsyncClient(Client):
             path_params['channel_id'] = local_var_params['channel_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

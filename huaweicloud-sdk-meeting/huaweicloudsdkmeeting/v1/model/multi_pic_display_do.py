@@ -20,7 +20,7 @@ class MultiPicDisplayDO:
         'manual_set': 'int',
         'image_type': 'str',
         'subscriber_in_pics': 'list[PicInfoNotify]',
-        'switch_time': 'str',
+        'switch_time': 'int',
         'pic_layout_info': 'PicLayoutInfo'
     }
 
@@ -44,7 +44,7 @@ class MultiPicDisplayDO:
         :param subscriber_in_pics: 子画面列表。
         :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.PicInfoNotify`]
         :param switch_time: 表示轮询间隔，单位：秒。当同一个子画面中包含有多个视频源时，此参数有效。
-        :type switch_time: str
+        :type switch_time: int
         :param pic_layout_info: 
         :type pic_layout_info: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
         """
@@ -142,7 +142,7 @@ class MultiPicDisplayDO:
         表示轮询间隔，单位：秒。当同一个子画面中包含有多个视频源时，此参数有效。
 
         :return: The switch_time of this MultiPicDisplayDO.
-        :rtype: str
+        :rtype: int
         """
         return self._switch_time
 
@@ -153,7 +153,7 @@ class MultiPicDisplayDO:
         表示轮询间隔，单位：秒。当同一个子画面中包含有多个视频源时，此参数有效。
 
         :param switch_time: The switch_time of this MultiPicDisplayDO.
-        :type switch_time: str
+        :type switch_time: int
         """
         self._switch_time = switch_time
 

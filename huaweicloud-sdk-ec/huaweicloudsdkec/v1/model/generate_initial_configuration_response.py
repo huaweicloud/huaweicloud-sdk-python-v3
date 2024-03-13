@@ -16,29 +16,34 @@ class GenerateInitialConfigurationResponse(SdkResponse):
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('config_content')
+    sensitive_list.append('url_config_content')
+    sensitive_list.append('script_config_content')
 
     openapi_types = {
         'equipment_id': 'str',
-        'config_content': 'str',
+        'url_config_content': 'str',
+        'script_config_content': 'str',
         'expire_at': 'str'
     }
 
     attribute_map = {
         'equipment_id': 'equipment_id',
-        'config_content': 'config_content',
+        'url_config_content': 'url_config_content',
+        'script_config_content': 'script_config_content',
         'expire_at': 'expire_at'
     }
 
-    def __init__(self, equipment_id=None, config_content=None, expire_at=None):
+    def __init__(self, equipment_id=None, url_config_content=None, script_config_content=None, expire_at=None):
         """GenerateInitialConfigurationResponse
 
         The model defined in huaweicloud sdk
 
         :param equipment_id: 智能企业网关设备ID
         :type equipment_id: str
-        :param config_content: 初始配置URL
-        :type config_content: str
+        :param url_config_content: 初始配置URL
+        :type url_config_content: str
+        :param script_config_content: 初始配置文件
+        :type script_config_content: str
         :param expire_at: URL失效时间
         :type expire_at: str
         """
@@ -46,14 +51,17 @@ class GenerateInitialConfigurationResponse(SdkResponse):
         super(GenerateInitialConfigurationResponse, self).__init__()
 
         self._equipment_id = None
-        self._config_content = None
+        self._url_config_content = None
+        self._script_config_content = None
         self._expire_at = None
         self.discriminator = None
 
         if equipment_id is not None:
             self.equipment_id = equipment_id
-        if config_content is not None:
-            self.config_content = config_content
+        if url_config_content is not None:
+            self.url_config_content = url_config_content
+        if script_config_content is not None:
+            self.script_config_content = script_config_content
         if expire_at is not None:
             self.expire_at = expire_at
 
@@ -80,26 +88,48 @@ class GenerateInitialConfigurationResponse(SdkResponse):
         self._equipment_id = equipment_id
 
     @property
-    def config_content(self):
-        """Gets the config_content of this GenerateInitialConfigurationResponse.
+    def url_config_content(self):
+        """Gets the url_config_content of this GenerateInitialConfigurationResponse.
 
         初始配置URL
 
-        :return: The config_content of this GenerateInitialConfigurationResponse.
+        :return: The url_config_content of this GenerateInitialConfigurationResponse.
         :rtype: str
         """
-        return self._config_content
+        return self._url_config_content
 
-    @config_content.setter
-    def config_content(self, config_content):
-        """Sets the config_content of this GenerateInitialConfigurationResponse.
+    @url_config_content.setter
+    def url_config_content(self, url_config_content):
+        """Sets the url_config_content of this GenerateInitialConfigurationResponse.
 
         初始配置URL
 
-        :param config_content: The config_content of this GenerateInitialConfigurationResponse.
-        :type config_content: str
+        :param url_config_content: The url_config_content of this GenerateInitialConfigurationResponse.
+        :type url_config_content: str
         """
-        self._config_content = config_content
+        self._url_config_content = url_config_content
+
+    @property
+    def script_config_content(self):
+        """Gets the script_config_content of this GenerateInitialConfigurationResponse.
+
+        初始配置文件
+
+        :return: The script_config_content of this GenerateInitialConfigurationResponse.
+        :rtype: str
+        """
+        return self._script_config_content
+
+    @script_config_content.setter
+    def script_config_content(self, script_config_content):
+        """Sets the script_config_content of this GenerateInitialConfigurationResponse.
+
+        初始配置文件
+
+        :param script_config_content: The script_config_content of this GenerateInitialConfigurationResponse.
+        :type script_config_content: str
+        """
+        self._script_config_content = script_config_content
 
     @property
     def expire_at(self):

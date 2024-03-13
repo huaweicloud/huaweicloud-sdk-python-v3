@@ -37,11 +37,11 @@ class OneFsTaskResp:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务id
+        :param task_id: 任务ID
         :type task_id: str
         :param status: 任务状态, SUCCESS表示成功，DOING表示正在执行，FAIL表示失败
         :type status: str
-        :param dir_usage: 目录资源使用情况(包含子目录)
+        :param dir_usage: 
         :type dir_usage: :class:`huaweicloudsdksfsturbo.v1.FsDuInfo`
         :param begin_time: 任务开始时间，UTC时间，例如：2006-01-02 15:04:05&#39;
         :type begin_time: str
@@ -69,7 +69,7 @@ class OneFsTaskResp:
     def task_id(self):
         """Gets the task_id of this OneFsTaskResp.
 
-        任务id
+        任务ID
 
         :return: The task_id of this OneFsTaskResp.
         :rtype: str
@@ -80,7 +80,7 @@ class OneFsTaskResp:
     def task_id(self, task_id):
         """Sets the task_id of this OneFsTaskResp.
 
-        任务id
+        任务ID
 
         :param task_id: The task_id of this OneFsTaskResp.
         :type task_id: str
@@ -113,8 +113,6 @@ class OneFsTaskResp:
     def dir_usage(self):
         """Gets the dir_usage of this OneFsTaskResp.
 
-        目录资源使用情况(包含子目录)
-
         :return: The dir_usage of this OneFsTaskResp.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FsDuInfo`
         """
@@ -123,8 +121,6 @@ class OneFsTaskResp:
     @dir_usage.setter
     def dir_usage(self, dir_usage):
         """Sets the dir_usage of this OneFsTaskResp.
-
-        目录资源使用情况(包含子目录)
 
         :param dir_usage: The dir_usage of this OneFsTaskResp.
         :type dir_usage: :class:`huaweicloudsdksfsturbo.v1.FsDuInfo`

@@ -81,59 +81,59 @@ class BaseServer:
 
         The model defined in huaweicloud sdk
 
-        :param id: aps实例的唯一标识
+        :param id: aps实例的唯一标识。
         :type id: str
-        :param name: 服务器名称
+        :param name: 服务器名称。
         :type name: str
-        :param machine_name: 计算机名称
+        :param machine_name: 计算机名称。
         :type machine_name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
-        :param server_group_id: 服务器组ID
+        :param server_group_id: 服务器组ID。
         :type server_group_id: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
         :param status: 
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
-        :param create_time: 服务器创建时间
+        :param create_time: 服务器创建时间。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间。
         :type update_time: datetime
-        :param image_id: 镜像ID
+        :param image_id: 镜像ID。
         :type image_id: str
-        :param availability_zone: 服务器可用分区
+        :param availability_zone: 服务器可用分区。
         :type availability_zone: str
-        :param domain: 域
+        :param domain: 域。
         :type domain: str
-        :param ou_name: 组织名称
+        :param ou_name: 组织名称。
         :type ou_name: str
-        :param sid: 实例的SID
+        :param sid: 实例的SID。
         :type sid: str
-        :param instance_id: 实例的ID
+        :param instance_id: 实例的ID。
         :type instance_id: str
-        :param os_version: 服务器系统版本
+        :param os_version: 服务器系统版本。
         :type os_version: str
-        :param os_type: 操作系统类型，当前仅支持Windows - Linux - Windows - Other
+        :param os_type: 操作系统类型，当前仅支持Windows： - Linux - Windows - Other
         :type os_type: str
-        :param order_id: 包周期产品的订单ID
+        :param order_id: 包周期产品的订单ID。
         :type order_id: str
-        :param maintain_status: 是否维护状态
+        :param maintain_status: 是否维护状态。
         :type maintain_status: bool
-        :param scaling_auto_create: 配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建 - false: 不是通过弹性伸缩创建
+        :param scaling_auto_create: 配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
         :type scaling_auto_create: bool
-        :param job_id: 上一次执行job的id
+        :param job_id: 上一次执行job的id。
         :type job_id: str
         :param job_type: 
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
         :param job_status: 
         :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
-        :param job_time: 上一次执行job的执行时间
+        :param job_time: 上一次执行job的执行时间。
         :type job_time: datetime
-        :param resource_pool_id: 资源池ID
+        :param resource_pool_id: 资源池ID。
         :type resource_pool_id: str
-        :param resource_pool_type: 资源池类型 - private：私有资源池 - public: 工作资源池
+        :param resource_pool_type: 资源池类型： - private：私有资源池。 - public: 工作资源池。
         :type resource_pool_type: str
-        :param host_id: 云专属主机id
+        :param host_id: 云专属主机id。
         :type host_id: str
         """
         
@@ -227,7 +227,7 @@ class BaseServer:
     def id(self):
         """Gets the id of this BaseServer.
 
-        aps实例的唯一标识
+        aps实例的唯一标识。
 
         :return: The id of this BaseServer.
         :rtype: str
@@ -238,7 +238,7 @@ class BaseServer:
     def id(self, id):
         """Sets the id of this BaseServer.
 
-        aps实例的唯一标识
+        aps实例的唯一标识。
 
         :param id: The id of this BaseServer.
         :type id: str
@@ -249,7 +249,7 @@ class BaseServer:
     def name(self):
         """Gets the name of this BaseServer.
 
-        服务器名称
+        服务器名称。
 
         :return: The name of this BaseServer.
         :rtype: str
@@ -260,7 +260,7 @@ class BaseServer:
     def name(self, name):
         """Sets the name of this BaseServer.
 
-        服务器名称
+        服务器名称。
 
         :param name: The name of this BaseServer.
         :type name: str
@@ -271,7 +271,7 @@ class BaseServer:
     def machine_name(self):
         """Gets the machine_name of this BaseServer.
 
-        计算机名称
+        计算机名称。
 
         :return: The machine_name of this BaseServer.
         :rtype: str
@@ -282,7 +282,7 @@ class BaseServer:
     def machine_name(self, machine_name):
         """Sets the machine_name of this BaseServer.
 
-        计算机名称
+        计算机名称。
 
         :param machine_name: The machine_name of this BaseServer.
         :type machine_name: str
@@ -293,7 +293,7 @@ class BaseServer:
     def description(self):
         """Gets the description of this BaseServer.
 
-        描述
+        描述。
 
         :return: The description of this BaseServer.
         :rtype: str
@@ -304,7 +304,7 @@ class BaseServer:
     def description(self, description):
         """Sets the description of this BaseServer.
 
-        描述
+        描述。
 
         :param description: The description of this BaseServer.
         :type description: str
@@ -315,7 +315,7 @@ class BaseServer:
     def server_group_id(self):
         """Gets the server_group_id of this BaseServer.
 
-        服务器组ID
+        服务器组ID。
 
         :return: The server_group_id of this BaseServer.
         :rtype: str
@@ -326,7 +326,7 @@ class BaseServer:
     def server_group_id(self, server_group_id):
         """Sets the server_group_id of this BaseServer.
 
-        服务器组ID
+        服务器组ID。
 
         :param server_group_id: The server_group_id of this BaseServer.
         :type server_group_id: str
@@ -373,7 +373,7 @@ class BaseServer:
     def create_time(self):
         """Gets the create_time of this BaseServer.
 
-        服务器创建时间
+        服务器创建时间。
 
         :return: The create_time of this BaseServer.
         :rtype: datetime
@@ -384,7 +384,7 @@ class BaseServer:
     def create_time(self, create_time):
         """Sets the create_time of this BaseServer.
 
-        服务器创建时间
+        服务器创建时间。
 
         :param create_time: The create_time of this BaseServer.
         :type create_time: datetime
@@ -395,7 +395,7 @@ class BaseServer:
     def update_time(self):
         """Gets the update_time of this BaseServer.
 
-        更新时间
+        更新时间。
 
         :return: The update_time of this BaseServer.
         :rtype: datetime
@@ -406,7 +406,7 @@ class BaseServer:
     def update_time(self, update_time):
         """Sets the update_time of this BaseServer.
 
-        更新时间
+        更新时间。
 
         :param update_time: The update_time of this BaseServer.
         :type update_time: datetime
@@ -417,7 +417,7 @@ class BaseServer:
     def image_id(self):
         """Gets the image_id of this BaseServer.
 
-        镜像ID
+        镜像ID。
 
         :return: The image_id of this BaseServer.
         :rtype: str
@@ -428,7 +428,7 @@ class BaseServer:
     def image_id(self, image_id):
         """Sets the image_id of this BaseServer.
 
-        镜像ID
+        镜像ID。
 
         :param image_id: The image_id of this BaseServer.
         :type image_id: str
@@ -439,7 +439,7 @@ class BaseServer:
     def availability_zone(self):
         """Gets the availability_zone of this BaseServer.
 
-        服务器可用分区
+        服务器可用分区。
 
         :return: The availability_zone of this BaseServer.
         :rtype: str
@@ -450,7 +450,7 @@ class BaseServer:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this BaseServer.
 
-        服务器可用分区
+        服务器可用分区。
 
         :param availability_zone: The availability_zone of this BaseServer.
         :type availability_zone: str
@@ -461,7 +461,7 @@ class BaseServer:
     def domain(self):
         """Gets the domain of this BaseServer.
 
-        域
+        域。
 
         :return: The domain of this BaseServer.
         :rtype: str
@@ -472,7 +472,7 @@ class BaseServer:
     def domain(self, domain):
         """Sets the domain of this BaseServer.
 
-        域
+        域。
 
         :param domain: The domain of this BaseServer.
         :type domain: str
@@ -483,7 +483,7 @@ class BaseServer:
     def ou_name(self):
         """Gets the ou_name of this BaseServer.
 
-        组织名称
+        组织名称。
 
         :return: The ou_name of this BaseServer.
         :rtype: str
@@ -494,7 +494,7 @@ class BaseServer:
     def ou_name(self, ou_name):
         """Sets the ou_name of this BaseServer.
 
-        组织名称
+        组织名称。
 
         :param ou_name: The ou_name of this BaseServer.
         :type ou_name: str
@@ -505,7 +505,7 @@ class BaseServer:
     def sid(self):
         """Gets the sid of this BaseServer.
 
-        实例的SID
+        实例的SID。
 
         :return: The sid of this BaseServer.
         :rtype: str
@@ -516,7 +516,7 @@ class BaseServer:
     def sid(self, sid):
         """Sets the sid of this BaseServer.
 
-        实例的SID
+        实例的SID。
 
         :param sid: The sid of this BaseServer.
         :type sid: str
@@ -527,7 +527,7 @@ class BaseServer:
     def instance_id(self):
         """Gets the instance_id of this BaseServer.
 
-        实例的ID
+        实例的ID。
 
         :return: The instance_id of this BaseServer.
         :rtype: str
@@ -538,7 +538,7 @@ class BaseServer:
     def instance_id(self, instance_id):
         """Sets the instance_id of this BaseServer.
 
-        实例的ID
+        实例的ID。
 
         :param instance_id: The instance_id of this BaseServer.
         :type instance_id: str
@@ -549,7 +549,7 @@ class BaseServer:
     def os_version(self):
         """Gets the os_version of this BaseServer.
 
-        服务器系统版本
+        服务器系统版本。
 
         :return: The os_version of this BaseServer.
         :rtype: str
@@ -560,7 +560,7 @@ class BaseServer:
     def os_version(self, os_version):
         """Sets the os_version of this BaseServer.
 
-        服务器系统版本
+        服务器系统版本。
 
         :param os_version: The os_version of this BaseServer.
         :type os_version: str
@@ -571,7 +571,7 @@ class BaseServer:
     def os_type(self):
         """Gets the os_type of this BaseServer.
 
-        操作系统类型，当前仅支持Windows - Linux - Windows - Other
+        操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
         :return: The os_type of this BaseServer.
         :rtype: str
@@ -582,7 +582,7 @@ class BaseServer:
     def os_type(self, os_type):
         """Sets the os_type of this BaseServer.
 
-        操作系统类型，当前仅支持Windows - Linux - Windows - Other
+        操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
         :param os_type: The os_type of this BaseServer.
         :type os_type: str
@@ -593,7 +593,7 @@ class BaseServer:
     def order_id(self):
         """Gets the order_id of this BaseServer.
 
-        包周期产品的订单ID
+        包周期产品的订单ID。
 
         :return: The order_id of this BaseServer.
         :rtype: str
@@ -604,7 +604,7 @@ class BaseServer:
     def order_id(self, order_id):
         """Sets the order_id of this BaseServer.
 
-        包周期产品的订单ID
+        包周期产品的订单ID。
 
         :param order_id: The order_id of this BaseServer.
         :type order_id: str
@@ -615,7 +615,7 @@ class BaseServer:
     def maintain_status(self):
         """Gets the maintain_status of this BaseServer.
 
-        是否维护状态
+        是否维护状态。
 
         :return: The maintain_status of this BaseServer.
         :rtype: bool
@@ -626,7 +626,7 @@ class BaseServer:
     def maintain_status(self, maintain_status):
         """Sets the maintain_status of this BaseServer.
 
-        是否维护状态
+        是否维护状态。
 
         :param maintain_status: The maintain_status of this BaseServer.
         :type maintain_status: bool
@@ -637,7 +637,7 @@ class BaseServer:
     def scaling_auto_create(self):
         """Gets the scaling_auto_create of this BaseServer.
 
-        配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建 - false: 不是通过弹性伸缩创建
+        配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
         :return: The scaling_auto_create of this BaseServer.
         :rtype: bool
@@ -648,7 +648,7 @@ class BaseServer:
     def scaling_auto_create(self, scaling_auto_create):
         """Sets the scaling_auto_create of this BaseServer.
 
-        配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建 - false: 不是通过弹性伸缩创建
+        配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
         :param scaling_auto_create: The scaling_auto_create of this BaseServer.
         :type scaling_auto_create: bool
@@ -659,7 +659,7 @@ class BaseServer:
     def job_id(self):
         """Gets the job_id of this BaseServer.
 
-        上一次执行job的id
+        上一次执行job的id。
 
         :return: The job_id of this BaseServer.
         :rtype: str
@@ -670,7 +670,7 @@ class BaseServer:
     def job_id(self, job_id):
         """Sets the job_id of this BaseServer.
 
-        上一次执行job的id
+        上一次执行job的id。
 
         :param job_id: The job_id of this BaseServer.
         :type job_id: str
@@ -717,7 +717,7 @@ class BaseServer:
     def job_time(self):
         """Gets the job_time of this BaseServer.
 
-        上一次执行job的执行时间
+        上一次执行job的执行时间。
 
         :return: The job_time of this BaseServer.
         :rtype: datetime
@@ -728,7 +728,7 @@ class BaseServer:
     def job_time(self, job_time):
         """Sets the job_time of this BaseServer.
 
-        上一次执行job的执行时间
+        上一次执行job的执行时间。
 
         :param job_time: The job_time of this BaseServer.
         :type job_time: datetime
@@ -739,7 +739,7 @@ class BaseServer:
     def resource_pool_id(self):
         """Gets the resource_pool_id of this BaseServer.
 
-        资源池ID
+        资源池ID。
 
         :return: The resource_pool_id of this BaseServer.
         :rtype: str
@@ -750,7 +750,7 @@ class BaseServer:
     def resource_pool_id(self, resource_pool_id):
         """Sets the resource_pool_id of this BaseServer.
 
-        资源池ID
+        资源池ID。
 
         :param resource_pool_id: The resource_pool_id of this BaseServer.
         :type resource_pool_id: str
@@ -761,7 +761,7 @@ class BaseServer:
     def resource_pool_type(self):
         """Gets the resource_pool_type of this BaseServer.
 
-        资源池类型 - private：私有资源池 - public: 工作资源池
+        资源池类型： - private：私有资源池。 - public: 工作资源池。
 
         :return: The resource_pool_type of this BaseServer.
         :rtype: str
@@ -772,7 +772,7 @@ class BaseServer:
     def resource_pool_type(self, resource_pool_type):
         """Sets the resource_pool_type of this BaseServer.
 
-        资源池类型 - private：私有资源池 - public: 工作资源池
+        资源池类型： - private：私有资源池。 - public: 工作资源池。
 
         :param resource_pool_type: The resource_pool_type of this BaseServer.
         :type resource_pool_type: str
@@ -783,7 +783,7 @@ class BaseServer:
     def host_id(self):
         """Gets the host_id of this BaseServer.
 
-        云专属主机id
+        云专属主机id。
 
         :return: The host_id of this BaseServer.
         :rtype: str
@@ -794,7 +794,7 @@ class BaseServer:
     def host_id(self, host_id):
         """Sets the host_id of this BaseServer.
 
-        云专属主机id
+        云专属主机id。
 
         :param host_id: The host_id of this BaseServer.
         :type host_id: str

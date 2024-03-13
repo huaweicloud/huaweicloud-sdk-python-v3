@@ -18,29 +18,58 @@ class CaCertificateRequest:
     sensitive_list.append('content')
 
     openapi_types = {
+        'id': 'str',
         'content': 'str'
     }
 
     attribute_map = {
+        'id': 'id',
         'content': 'content'
     }
 
-    def __init__(self, content=None):
+    def __init__(self, id=None, content=None):
         """CaCertificateRequest
 
         The model defined in huaweicloud sdk
 
+        :param id: 使用已有证书ID
+        :type id: str
         :param content: 对端网关CA证书内容
         :type content: str
         """
         
         
 
+        self._id = None
         self._content = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if content is not None:
             self.content = content
+
+    @property
+    def id(self):
+        """Gets the id of this CaCertificateRequest.
+
+        使用已有证书ID
+
+        :return: The id of this CaCertificateRequest.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CaCertificateRequest.
+
+        使用已有证书ID
+
+        :param id: The id of this CaCertificateRequest.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def content(self):

@@ -29,7 +29,7 @@ class VusersBrokens:
 
         The model defined in huaweicloud sdk
 
-        :param vusers: vusers
+        :param vusers: 虚拟用户数
         :type vusers: list[float]
         """
         
@@ -45,7 +45,7 @@ class VusersBrokens:
     def vusers(self):
         """Gets the vusers of this VusersBrokens.
 
-        vusers
+        虚拟用户数
 
         :return: The vusers of this VusersBrokens.
         :rtype: list[float]
@@ -56,7 +56,7 @@ class VusersBrokens:
     def vusers(self, vusers):
         """Sets the vusers of this VusersBrokens.
 
-        vusers
+        虚拟用户数
 
         :param vusers: The vusers of this VusersBrokens.
         :type vusers: list[float]

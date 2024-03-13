@@ -27,7 +27,8 @@ class ListNatGatewaysRequest:
         'admin_state_up': 'bool',
         'internal_network_id': 'str',
         'router_id': 'str',
-        'limit': 'int'
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ListNatGatewaysRequest:
         'admin_state_up': 'admin_state_up',
         'internal_network_id': 'internal_network_id',
         'router_id': 'router_id',
-        'limit': 'limit'
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None):
+    def __init__(self, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None, marker=None):
         """ListNatGatewaysRequest
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ListNatGatewaysRequest:
         :type router_id: str
         :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
         :type limit: int
+        :param marker: 分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+        :type marker: str
         """
         
         
@@ -86,6 +90,7 @@ class ListNatGatewaysRequest:
         self._internal_network_id = None
         self._router_id = None
         self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if id is not None:
@@ -110,6 +115,8 @@ class ListNatGatewaysRequest:
             self.router_id = router_id
         if limit is not None:
             self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def id(self):
@@ -352,6 +359,28 @@ class ListNatGatewaysRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListNatGatewaysRequest.
+
+        分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+
+        :return: The marker of this ListNatGatewaysRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListNatGatewaysRequest.
+
+        分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
+
+        :param marker: The marker of this ListNatGatewaysRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

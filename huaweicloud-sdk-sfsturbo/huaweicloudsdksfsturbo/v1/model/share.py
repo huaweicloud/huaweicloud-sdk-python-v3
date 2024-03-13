@@ -28,7 +28,8 @@ class Share:
         'size': 'int',
         'subnet_id': 'str',
         'vpc_id': 'str',
-        'backup_id': 'str'
+        'backup_id': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class Share:
         'size': 'size',
         'subnet_id': 'subnet_id',
         'vpc_id': 'vpc_id',
-        'backup_id': 'backup_id'
+        'backup_id': 'backup_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, availability_zone=None, description=None, enterprise_project_id=None, metadata=None, name=None, security_group_id=None, share_proto=None, share_type=None, size=None, subnet_id=None, vpc_id=None, backup_id=None):
+    def __init__(self, availability_zone=None, description=None, enterprise_project_id=None, metadata=None, name=None, security_group_id=None, share_proto=None, share_type=None, size=None, subnet_id=None, vpc_id=None, backup_id=None, tags=None):
         """Share
 
         The model defined in huaweicloud sdk
@@ -67,7 +69,7 @@ class Share:
         :type share_proto: str
         :param share_type: 文件系统类型，有效值为STANDARD或者PERFORMANCE。 通用型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。 HPC型：不校验该字段，可填写STANDARD或者PERFORMANCE。 HPC缓存型：不校验该字段，可填写STANDARD或者PERFORMANCE。 
         :type share_type: str
-        :param size: 通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;bandwidth\&quot;，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;，则容量范围是3686~1048576，单位GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc_cache\&quot;，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
+        :param size: 通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;bandwidth\&quot;，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;，则容量范围是3686(或1228)~1048576，单位GiB。对于20MB/s/TiB的规格，起步容量为3686GiB；对于HPC其他规格，起步容量为1228GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc_cache\&quot;，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
         :type size: int
         :param subnet_id: 用户在VPC下面的子网的网络ID。
         :type subnet_id: str
@@ -75,6 +77,8 @@ class Share:
         :type vpc_id: str
         :param backup_id: 备份ID，从备份创建文件系统时为必选。
         :type backup_id: str
+        :param tags: tag标签的列表。
+        :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         
         
@@ -91,6 +95,7 @@ class Share:
         self._subnet_id = None
         self._vpc_id = None
         self._backup_id = None
+        self._tags = None
         self.discriminator = None
 
         self.availability_zone = availability_zone
@@ -109,6 +114,8 @@ class Share:
         self.vpc_id = vpc_id
         if backup_id is not None:
             self.backup_id = backup_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def availability_zone(self):
@@ -286,7 +293,7 @@ class Share:
     def size(self):
         """Gets the size of this Share.
 
-        通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type=\"hpc\"，则容量范围是3686~1048576，单位GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
+        通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type=\"hpc\"，则容量范围是3686(或1228)~1048576，单位GiB。对于20MB/s/TiB的规格，起步容量为3686GiB；对于HPC其他规格，起步容量为1228GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
 
         :return: The size of this Share.
         :rtype: int
@@ -297,7 +304,7 @@ class Share:
     def size(self, size):
         """Sets the size of this Share.
 
-        通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type=\"hpc\"，则容量范围是3686~1048576，单位GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
+        通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type=\"hpc\"，则容量范围是3686(或1228)~1048576，单位GiB。对于20MB/s/TiB的规格，起步容量为3686GiB；对于HPC其他规格，起步容量为1228GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
 
         :param size: The size of this Share.
         :type size: int
@@ -369,6 +376,28 @@ class Share:
         :type backup_id: str
         """
         self._backup_id = backup_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this Share.
+
+        tag标签的列表。
+
+        :return: The tags of this Share.
+        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this Share.
+
+        tag标签的列表。
+
+        :param tags: The tags of this Share.
+        :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

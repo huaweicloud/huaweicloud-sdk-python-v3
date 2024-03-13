@@ -34,6 +34,8 @@ class RuleAclListResponseDTODataRecords:
         'destination': 'RuleAddressDto',
         'service': 'RuleServiceDto',
         'type': 'int',
+        'created_date': 'str',
+        'last_open_time': 'str',
         'tag': 'TagsVO'
     }
 
@@ -55,10 +57,12 @@ class RuleAclListResponseDTODataRecords:
         'destination': 'destination',
         'service': 'service',
         'type': 'type',
+        'created_date': 'created_date',
+        'last_open_time': 'last_open_time',
         'tag': 'tag'
     }
 
-    def __init__(self, rule_id=None, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, tag=None):
+    def __init__(self, rule_id=None, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, created_date=None, last_open_time=None, tag=None):
         """RuleAclListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -97,6 +101,10 @@ class RuleAclListResponseDTODataRecords:
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
         :param type: 规则type，0：互联网规则，1：vpc规则，2：nat规则
         :type type: int
+        :param created_date: 创建时间
+        :type created_date: str
+        :param last_open_time: 最后开启时间
+        :type last_open_time: str
         :param tag: 
         :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
         """
@@ -120,6 +128,8 @@ class RuleAclListResponseDTODataRecords:
         self._destination = None
         self._service = None
         self._type = None
+        self._created_date = None
+        self._last_open_time = None
         self._tag = None
         self.discriminator = None
 
@@ -157,6 +167,10 @@ class RuleAclListResponseDTODataRecords:
             self.service = service
         if type is not None:
             self.type = type
+        if created_date is not None:
+            self.created_date = created_date
+        if last_open_time is not None:
+            self.last_open_time = last_open_time
         if tag is not None:
             self.tag = tag
 
@@ -517,6 +531,50 @@ class RuleAclListResponseDTODataRecords:
         :type type: int
         """
         self._type = type
+
+    @property
+    def created_date(self):
+        """Gets the created_date of this RuleAclListResponseDTODataRecords.
+
+        创建时间
+
+        :return: The created_date of this RuleAclListResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._created_date
+
+    @created_date.setter
+    def created_date(self, created_date):
+        """Sets the created_date of this RuleAclListResponseDTODataRecords.
+
+        创建时间
+
+        :param created_date: The created_date of this RuleAclListResponseDTODataRecords.
+        :type created_date: str
+        """
+        self._created_date = created_date
+
+    @property
+    def last_open_time(self):
+        """Gets the last_open_time of this RuleAclListResponseDTODataRecords.
+
+        最后开启时间
+
+        :return: The last_open_time of this RuleAclListResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._last_open_time
+
+    @last_open_time.setter
+    def last_open_time(self, last_open_time):
+        """Sets the last_open_time of this RuleAclListResponseDTODataRecords.
+
+        最后开启时间
+
+        :param last_open_time: The last_open_time of this RuleAclListResponseDTODataRecords.
+        :type last_open_time: str
+        """
+        self._last_open_time = last_open_time
 
     @property
     def tag(self):

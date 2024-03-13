@@ -21,7 +21,9 @@ class UpdateSubnetOption:
         'dhcp_enable': 'bool',
         'primary_dns': 'str',
         'secondary_dns': 'str',
-        'dns_list': 'list[str]'
+        'dns_list': 'list[str]',
+        'ipv6_enable': 'bool',
+        'pool_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class UpdateSubnetOption:
         'dhcp_enable': 'dhcp_enable',
         'primary_dns': 'primary_dns',
         'secondary_dns': 'secondary_dns',
-        'dns_list': 'dnsList'
+        'dns_list': 'dnsList',
+        'ipv6_enable': 'ipv6_enable',
+        'pool_id': 'pool_id'
     }
 
-    def __init__(self, name=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None):
+    def __init__(self, name=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, ipv6_enable=None, pool_id=None):
         """UpdateSubnetOption
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class UpdateSubnetOption:
         :type secondary_dns: str
         :param dns_list: 子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。  约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集
         :type dns_list: list[str]
+        :param ipv6_enable: 是否创建IPv6子网  取值范围：  - true：开启  - false：关闭  约束：   1、若该字段为true，则pool_id字段必填；若该字段为false，则pool_id字段不生效。   2、子网开启IPv6后不支持关闭。
+        :type ipv6_enable: bool
+        :param pool_id: IPv6线路ID。
+        :type pool_id: str
         """
         
         
@@ -56,6 +64,8 @@ class UpdateSubnetOption:
         self._primary_dns = None
         self._secondary_dns = None
         self._dns_list = None
+        self._ipv6_enable = None
+        self._pool_id = None
         self.discriminator = None
 
         if name is not None:
@@ -68,6 +78,10 @@ class UpdateSubnetOption:
             self.secondary_dns = secondary_dns
         if dns_list is not None:
             self.dns_list = dns_list
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if pool_id is not None:
+            self.pool_id = pool_id
 
     @property
     def name(self):
@@ -178,6 +192,50 @@ class UpdateSubnetOption:
         :type dns_list: list[str]
         """
         self._dns_list = dns_list
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this UpdateSubnetOption.
+
+        是否创建IPv6子网  取值范围：  - true：开启  - false：关闭  约束：   1、若该字段为true，则pool_id字段必填；若该字段为false，则pool_id字段不生效。   2、子网开启IPv6后不支持关闭。
+
+        :return: The ipv6_enable of this UpdateSubnetOption.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this UpdateSubnetOption.
+
+        是否创建IPv6子网  取值范围：  - true：开启  - false：关闭  约束：   1、若该字段为true，则pool_id字段必填；若该字段为false，则pool_id字段不生效。   2、子网开启IPv6后不支持关闭。
+
+        :param ipv6_enable: The ipv6_enable of this UpdateSubnetOption.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def pool_id(self):
+        """Gets the pool_id of this UpdateSubnetOption.
+
+        IPv6线路ID。
+
+        :return: The pool_id of this UpdateSubnetOption.
+        :rtype: str
+        """
+        return self._pool_id
+
+    @pool_id.setter
+    def pool_id(self, pool_id):
+        """Sets the pool_id of this UpdateSubnetOption.
+
+        IPv6线路ID。
+
+        :param pool_id: The pool_id of this UpdateSubnetOption.
+        :type pool_id: str
+        """
+        self._pool_id = pool_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

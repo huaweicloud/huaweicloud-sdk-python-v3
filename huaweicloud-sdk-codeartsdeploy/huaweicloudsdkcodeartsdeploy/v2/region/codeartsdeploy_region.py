@@ -1,8 +1,5 @@
 # coding: utf-8
 
-import types
-import six
-
 from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.region.provider import RegionProviderChain
 
@@ -25,6 +22,8 @@ class CodeArtsDeployRegion:
                         "https://codearts-deploy.sa-brazil-1.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://codearts-deploy.la-north-2.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://codearts-deploy.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "ap-southeast-3": AP_SOUTHEAST_3,
@@ -35,14 +34,15 @@ class CodeArtsDeployRegion:
         "cn-north-4": CN_NORTH_4,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod
     def value_of(cls, region_id, static_fields=None):
         if not region_id:
-            raise KeyError("Unexpected empty parameter: region_id.")
+            raise KeyError("Unexpected empty parameter: region_id")
 
-        fields = static_fields if static_fields else cls.static_fields
+        fields = static_fields or cls.static_fields
 
         region = cls._PROVIDER.get_region(region_id)
         if region:
@@ -51,6 +51,5 @@ class CodeArtsDeployRegion:
         if region_id in fields:
             return fields.get(region_id)
 
-        raise KeyError("Unexpected region_id: " + region_id)
-
-
+        raise KeyError("region_id '%s' is not in the following supported regions of service 'CodeArtsDeploy': [%s]" % (
+            region_id, ", ".join(sorted(fields.keys()))))

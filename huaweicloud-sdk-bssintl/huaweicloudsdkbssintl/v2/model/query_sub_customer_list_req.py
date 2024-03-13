@@ -25,6 +25,7 @@ class QuerySubCustomerListReq:
         'association_type': 'str',
         'associated_on_begin': 'str',
         'associated_on_end': 'str',
+        'customer_id': 'str',
         'indirect_partner_id': 'str'
     }
 
@@ -37,10 +38,11 @@ class QuerySubCustomerListReq:
         'association_type': 'association_type',
         'associated_on_begin': 'associated_on_begin',
         'associated_on_end': 'associated_on_end',
+        'customer_id': 'customer_id',
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, account_name=None, customer=None, offset=None, limit=None, label=None, association_type=None, associated_on_begin=None, associated_on_end=None, indirect_partner_id=None):
+    def __init__(self, account_name=None, customer=None, offset=None, limit=None, label=None, association_type=None, associated_on_begin=None, associated_on_end=None, customer_id=None, indirect_partner_id=None):
         """QuerySubCustomerListReq
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class QuerySubCustomerListReq:
         :type associated_on_begin: str
         :param associated_on_end: 关联时间区间段结束，UTC时间。 格式：YYYY-MM-DD&#39;T&#39;hh:mm:ss&#39;Z&#39;，例如“2019-05-06T08:05:01Z”。
         :type associated_on_end: str
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+        :type customer_id: str
         :param indirect_partner_id: 云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
         """
@@ -75,6 +79,7 @@ class QuerySubCustomerListReq:
         self._association_type = None
         self._associated_on_begin = None
         self._associated_on_end = None
+        self._customer_id = None
         self._indirect_partner_id = None
         self.discriminator = None
 
@@ -94,6 +99,8 @@ class QuerySubCustomerListReq:
             self.associated_on_begin = associated_on_begin
         if associated_on_end is not None:
             self.associated_on_end = associated_on_end
+        if customer_id is not None:
+            self.customer_id = customer_id
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
 
@@ -272,6 +279,28 @@ class QuerySubCustomerListReq:
         :type associated_on_end: str
         """
         self._associated_on_end = associated_on_end
+
+    @property
+    def customer_id(self):
+        """Gets the customer_id of this QuerySubCustomerListReq.
+
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+
+        :return: The customer_id of this QuerySubCustomerListReq.
+        :rtype: str
+        """
+        return self._customer_id
+
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        """Sets the customer_id of this QuerySubCustomerListReq.
+
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+
+        :param customer_id: The customer_id of this QuerySubCustomerListReq.
+        :type customer_id: str
+        """
+        self._customer_id = customer_id
 
     @property
     def indirect_partner_id(self):

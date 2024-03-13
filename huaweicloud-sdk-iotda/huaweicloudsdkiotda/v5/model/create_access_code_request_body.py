@@ -17,29 +17,36 @@ class CreateAccessCodeRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str'
+        'type': 'str',
+        'force_disconnect': 'bool'
     }
 
     attribute_map = {
-        'type': 'type'
+        'type': 'type',
+        'force_disconnect': 'force_disconnect'
     }
 
-    def __init__(self, type=None):
+    def __init__(self, type=None, force_disconnect=None):
         """CreateAccessCodeRequestBody
 
         The model defined in huaweicloud sdk
 
         :param type: **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - [AMQP,MQTT]
         :type type: str
+        :param force_disconnect: **参数说明**: 是否将AMQP/MQTT连接断开
+        :type force_disconnect: bool
         """
         
         
 
         self._type = None
+        self._force_disconnect = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
+        if force_disconnect is not None:
+            self.force_disconnect = force_disconnect
 
     @property
     def type(self):
@@ -62,6 +69,28 @@ class CreateAccessCodeRequestBody:
         :type type: str
         """
         self._type = type
+
+    @property
+    def force_disconnect(self):
+        """Gets the force_disconnect of this CreateAccessCodeRequestBody.
+
+        **参数说明**: 是否将AMQP/MQTT连接断开
+
+        :return: The force_disconnect of this CreateAccessCodeRequestBody.
+        :rtype: bool
+        """
+        return self._force_disconnect
+
+    @force_disconnect.setter
+    def force_disconnect(self, force_disconnect):
+        """Sets the force_disconnect of this CreateAccessCodeRequestBody.
+
+        **参数说明**: 是否将AMQP/MQTT连接断开
+
+        :param force_disconnect: The force_disconnect of this CreateAccessCodeRequestBody.
+        :type force_disconnect: bool
+        """
+        self._force_disconnect = force_disconnect
 
     def to_dict(self):
         """Returns the model properties as a dict"""

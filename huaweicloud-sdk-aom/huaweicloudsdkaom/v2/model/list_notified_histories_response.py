@@ -18,80 +18,51 @@ class ListNotifiedHistoriesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'event_sn': 'str',
-        'notifications': 'list[Notifications]'
+        'notified_histories': 'list[NotifiedHistoriesResult]'
     }
 
     attribute_map = {
-        'event_sn': 'event_sn',
-        'notifications': 'notifications'
+        'notified_histories': 'notified_histories'
     }
 
-    def __init__(self, event_sn=None, notifications=None):
+    def __init__(self, notified_histories=None):
         """ListNotifiedHistoriesResponse
 
         The model defined in huaweicloud sdk
 
-        :param event_sn: 告警流水号
-        :type event_sn: str
-        :param notifications: 通知结果
-        :type notifications: list[:class:`huaweicloudsdkaom.v2.Notifications`]
+        :param notified_histories: 通知历史列表。
+        :type notified_histories: list[:class:`huaweicloudsdkaom.v2.NotifiedHistoriesResult`]
         """
         
         super(ListNotifiedHistoriesResponse, self).__init__()
 
-        self._event_sn = None
-        self._notifications = None
+        self._notified_histories = None
         self.discriminator = None
 
-        if event_sn is not None:
-            self.event_sn = event_sn
-        if notifications is not None:
-            self.notifications = notifications
+        if notified_histories is not None:
+            self.notified_histories = notified_histories
 
     @property
-    def event_sn(self):
-        """Gets the event_sn of this ListNotifiedHistoriesResponse.
+    def notified_histories(self):
+        """Gets the notified_histories of this ListNotifiedHistoriesResponse.
 
-        告警流水号
+        通知历史列表。
 
-        :return: The event_sn of this ListNotifiedHistoriesResponse.
-        :rtype: str
+        :return: The notified_histories of this ListNotifiedHistoriesResponse.
+        :rtype: list[:class:`huaweicloudsdkaom.v2.NotifiedHistoriesResult`]
         """
-        return self._event_sn
+        return self._notified_histories
 
-    @event_sn.setter
-    def event_sn(self, event_sn):
-        """Sets the event_sn of this ListNotifiedHistoriesResponse.
+    @notified_histories.setter
+    def notified_histories(self, notified_histories):
+        """Sets the notified_histories of this ListNotifiedHistoriesResponse.
 
-        告警流水号
+        通知历史列表。
 
-        :param event_sn: The event_sn of this ListNotifiedHistoriesResponse.
-        :type event_sn: str
+        :param notified_histories: The notified_histories of this ListNotifiedHistoriesResponse.
+        :type notified_histories: list[:class:`huaweicloudsdkaom.v2.NotifiedHistoriesResult`]
         """
-        self._event_sn = event_sn
-
-    @property
-    def notifications(self):
-        """Gets the notifications of this ListNotifiedHistoriesResponse.
-
-        通知结果
-
-        :return: The notifications of this ListNotifiedHistoriesResponse.
-        :rtype: list[:class:`huaweicloudsdkaom.v2.Notifications`]
-        """
-        return self._notifications
-
-    @notifications.setter
-    def notifications(self, notifications):
-        """Sets the notifications of this ListNotifiedHistoriesResponse.
-
-        通知结果
-
-        :param notifications: The notifications of this ListNotifiedHistoriesResponse.
-        :type notifications: list[:class:`huaweicloudsdkaom.v2.Notifications`]
-        """
-        self._notifications = notifications
+        self._notified_histories = notified_histories
 
     def to_dict(self):
         """Returns the model properties as a dict"""

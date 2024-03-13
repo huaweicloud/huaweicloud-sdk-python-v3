@@ -19,26 +19,30 @@ class AttachInstancesUserInfo:
     openapi_types = {
         'user_id': 'str',
         'user_name': 'str',
-        'user_group': 'str'
+        'user_group': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
         'user_id': 'user_id',
         'user_name': 'user_name',
-        'user_group': 'user_group'
+        'user_group': 'user_group',
+        'type': 'type'
     }
 
-    def __init__(self, user_id=None, user_name=None, user_group=None):
+    def __init__(self, user_id=None, user_name=None, user_group=None, type=None):
         """AttachInstancesUserInfo
 
         The model defined in huaweicloud sdk
 
         :param user_id: 用户id
         :type user_id: str
-        :param user_name: 桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-20]。
+        :param user_name: 桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-32]。Windows桌面用户最长支持20个字符，Linux桌面用户最长支持32个字符。
         :type user_name: str
         :param user_group: 桌面用户所属的用户组。 - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
         :type user_group: str
+        :param type: 对象类型，可选值为： - USER：用户。 - GROUP：用户组。
+        :type type: str
         """
         
         
@@ -46,6 +50,7 @@ class AttachInstancesUserInfo:
         self._user_id = None
         self._user_name = None
         self._user_group = None
+        self._type = None
         self.discriminator = None
 
         if user_id is not None:
@@ -54,6 +59,8 @@ class AttachInstancesUserInfo:
             self.user_name = user_name
         if user_group is not None:
             self.user_group = user_group
+        if type is not None:
+            self.type = type
 
     @property
     def user_id(self):
@@ -81,7 +88,7 @@ class AttachInstancesUserInfo:
     def user_name(self):
         """Gets the user_name of this AttachInstancesUserInfo.
 
-        桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-20]。
+        桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-32]。Windows桌面用户最长支持20个字符，Linux桌面用户最长支持32个字符。
 
         :return: The user_name of this AttachInstancesUserInfo.
         :rtype: str
@@ -92,7 +99,7 @@ class AttachInstancesUserInfo:
     def user_name(self, user_name):
         """Sets the user_name of this AttachInstancesUserInfo.
 
-        桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-20]。
+        桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-32]。Windows桌面用户最长支持20个字符，Linux桌面用户最长支持32个字符。
 
         :param user_name: The user_name of this AttachInstancesUserInfo.
         :type user_name: str
@@ -120,6 +127,28 @@ class AttachInstancesUserInfo:
         :type user_group: str
         """
         self._user_group = user_group
+
+    @property
+    def type(self):
+        """Gets the type of this AttachInstancesUserInfo.
+
+        对象类型，可选值为： - USER：用户。 - GROUP：用户组。
+
+        :return: The type of this AttachInstancesUserInfo.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this AttachInstancesUserInfo.
+
+        对象类型，可选值为： - USER：用户。 - GROUP：用户组。
+
+        :param type: The type of this AttachInstancesUserInfo.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

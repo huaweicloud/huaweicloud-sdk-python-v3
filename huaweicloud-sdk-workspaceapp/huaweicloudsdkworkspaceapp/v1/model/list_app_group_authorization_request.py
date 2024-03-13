@@ -37,15 +37,15 @@ class ListAppGroupAuthorizationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param app_group_id: 应用组ID
+        :param app_group_id: 应用组ID。
         :type app_group_id: str
         :param account: 应用授权的用户(组)名称，精确查询。
         :type account: str
-        :param account_type: 应用授权的用户(组)类型 * &#39;USER&#39; - 用户 * &#39;USER_GROUP&#39; - 用户组
+        :param account_type: 应用授权的用户(组)类型： * &#39;USER&#39; - 用户 * &#39;USER_GROUP&#39; - 用户组
         :type account_type: str
         """
         
@@ -73,7 +73,7 @@ class ListAppGroupAuthorizationRequest:
     def limit(self):
         """Gets the limit of this ListAppGroupAuthorizationRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListAppGroupAuthorizationRequest.
         :rtype: int
@@ -84,7 +84,7 @@ class ListAppGroupAuthorizationRequest:
     def limit(self, limit):
         """Sets the limit of this ListAppGroupAuthorizationRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListAppGroupAuthorizationRequest.
         :type limit: int
@@ -95,7 +95,7 @@ class ListAppGroupAuthorizationRequest:
     def offset(self):
         """Gets the offset of this ListAppGroupAuthorizationRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListAppGroupAuthorizationRequest.
         :rtype: int
@@ -106,7 +106,7 @@ class ListAppGroupAuthorizationRequest:
     def offset(self, offset):
         """Sets the offset of this ListAppGroupAuthorizationRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListAppGroupAuthorizationRequest.
         :type offset: int
@@ -117,7 +117,7 @@ class ListAppGroupAuthorizationRequest:
     def app_group_id(self):
         """Gets the app_group_id of this ListAppGroupAuthorizationRequest.
 
-        应用组ID
+        应用组ID。
 
         :return: The app_group_id of this ListAppGroupAuthorizationRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class ListAppGroupAuthorizationRequest:
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this ListAppGroupAuthorizationRequest.
 
-        应用组ID
+        应用组ID。
 
         :param app_group_id: The app_group_id of this ListAppGroupAuthorizationRequest.
         :type app_group_id: str
@@ -161,7 +161,7 @@ class ListAppGroupAuthorizationRequest:
     def account_type(self):
         """Gets the account_type of this ListAppGroupAuthorizationRequest.
 
-        应用授权的用户(组)类型 * 'USER' - 用户 * 'USER_GROUP' - 用户组
+        应用授权的用户(组)类型： * 'USER' - 用户 * 'USER_GROUP' - 用户组
 
         :return: The account_type of this ListAppGroupAuthorizationRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListAppGroupAuthorizationRequest:
     def account_type(self, account_type):
         """Sets the account_type of this ListAppGroupAuthorizationRequest.
 
-        应用授权的用户(组)类型 * 'USER' - 用户 * 'USER_GROUP' - 用户组
+        应用授权的用户(组)类型： * 'USER' - 用户 * 'USER_GROUP' - 用户组
 
         :param account_type: The account_type of this ListAppGroupAuthorizationRequest.
         :type account_type: str

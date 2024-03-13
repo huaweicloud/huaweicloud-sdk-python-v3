@@ -18,6 +18,8 @@ class CreateLocation:
 
     openapi_types = {
         'name': 'str',
+        'address': 'str',
+        'zone_code': 'str',
         'province': 'str',
         'city': 'str',
         'district': 'str',
@@ -28,6 +30,8 @@ class CreateLocation:
 
     attribute_map = {
         'name': 'name',
+        'address': 'address',
+        'zone_code': 'zone_code',
         'province': 'province',
         'city': 'city',
         'district': 'district',
@@ -36,20 +40,24 @@ class CreateLocation:
         'description': 'description'
     }
 
-    def __init__(self, name=None, province=None, city=None, district=None, country=None, condition=None, description=None):
+    def __init__(self, name=None, address=None, zone_code=None, province=None, city=None, district=None, country=None, condition=None, description=None):
         """CreateLocation
 
         The model defined in huaweicloud sdk
 
         :param name: 场地名称（已废弃）,该参数不会再持久化存储，新建站点也不会再返回该字段
         :type name: str
+        :param address: 场地所在省/自治区/直辖市
+        :type address: str
+        :param zone_code: 场地所在地区
+        :type zone_code: str
         :param province: 场地所在省/自治区/直辖市
         :type province: str
         :param city: 场地所在市/区
         :type city: str
         :param district: 场地所在区/县
         :type district: str
-        :param country: 场地所在国家
+        :param country: 场地所在国家（逐步下线，使用zone_code替代）
         :type country: str
         :param condition: 
         :type condition: :class:`huaweicloudsdkcloudpond.v1.Condition`
@@ -60,6 +68,8 @@ class CreateLocation:
         
 
         self._name = None
+        self._address = None
+        self._zone_code = None
         self._province = None
         self._city = None
         self._district = None
@@ -70,9 +80,16 @@ class CreateLocation:
 
         if name is not None:
             self.name = name
-        self.province = province
-        self.city = city
-        self.district = district
+        if address is not None:
+            self.address = address
+        if zone_code is not None:
+            self.zone_code = zone_code
+        if province is not None:
+            self.province = province
+        if city is not None:
+            self.city = city
+        if district is not None:
+            self.district = district
         if country is not None:
             self.country = country
         self.condition = condition
@@ -100,6 +117,50 @@ class CreateLocation:
         :type name: str
         """
         self._name = name
+
+    @property
+    def address(self):
+        """Gets the address of this CreateLocation.
+
+        场地所在省/自治区/直辖市
+
+        :return: The address of this CreateLocation.
+        :rtype: str
+        """
+        return self._address
+
+    @address.setter
+    def address(self, address):
+        """Sets the address of this CreateLocation.
+
+        场地所在省/自治区/直辖市
+
+        :param address: The address of this CreateLocation.
+        :type address: str
+        """
+        self._address = address
+
+    @property
+    def zone_code(self):
+        """Gets the zone_code of this CreateLocation.
+
+        场地所在地区
+
+        :return: The zone_code of this CreateLocation.
+        :rtype: str
+        """
+        return self._zone_code
+
+    @zone_code.setter
+    def zone_code(self, zone_code):
+        """Sets the zone_code of this CreateLocation.
+
+        场地所在地区
+
+        :param zone_code: The zone_code of this CreateLocation.
+        :type zone_code: str
+        """
+        self._zone_code = zone_code
 
     @property
     def province(self):
@@ -171,7 +232,7 @@ class CreateLocation:
     def country(self):
         """Gets the country of this CreateLocation.
 
-        场地所在国家
+        场地所在国家（逐步下线，使用zone_code替代）
 
         :return: The country of this CreateLocation.
         :rtype: str
@@ -182,7 +243,7 @@ class CreateLocation:
     def country(self, country):
         """Sets the country of this CreateLocation.
 
-        场地所在国家
+        场地所在国家（逐步下线，使用zone_code替代）
 
         :param country: The country of this CreateLocation.
         :type country: str

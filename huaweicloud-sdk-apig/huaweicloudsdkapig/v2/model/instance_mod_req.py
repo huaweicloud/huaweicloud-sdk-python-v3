@@ -39,13 +39,13 @@ class InstanceModReq:
 
         The model defined in huaweicloud sdk
 
-        :param description: 实例描述
+        :param description: 实例描述。支持除&gt;和&lt;以外的字符，长度为0~255。
         :type description: str
         :param maintain_begin: 维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_begin: str
         :param maintain_end: 维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_end: str
-        :param instance_name: 实例名称
+        :param instance_name: 实例名称。  中英文字符开头，只能由中英文字符、数字、中划线、下划线组成，长度为3~64。  &gt; 中文字符必须为UTF-8或者unicode编码。
         :type instance_name: str
         :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
         :type security_group_id: str
@@ -80,7 +80,7 @@ class InstanceModReq:
     def description(self):
         """Gets the description of this InstanceModReq.
 
-        实例描述
+        实例描述。支持除>和<以外的字符，长度为0~255。
 
         :return: The description of this InstanceModReq.
         :rtype: str
@@ -91,7 +91,7 @@ class InstanceModReq:
     def description(self, description):
         """Sets the description of this InstanceModReq.
 
-        实例描述
+        实例描述。支持除>和<以外的字符，长度为0~255。
 
         :param description: The description of this InstanceModReq.
         :type description: str
@@ -146,7 +146,7 @@ class InstanceModReq:
     def instance_name(self):
         """Gets the instance_name of this InstanceModReq.
 
-        实例名称
+        实例名称。  中英文字符开头，只能由中英文字符、数字、中划线、下划线组成，长度为3~64。  > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The instance_name of this InstanceModReq.
         :rtype: str
@@ -157,7 +157,7 @@ class InstanceModReq:
     def instance_name(self, instance_name):
         """Sets the instance_name of this InstanceModReq.
 
-        实例名称
+        实例名称。  中英文字符开头，只能由中英文字符、数字、中划线、下划线组成，长度为3~64。  > 中文字符必须为UTF-8或者unicode编码。
 
         :param instance_name: The instance_name of this InstanceModReq.
         :type instance_name: str

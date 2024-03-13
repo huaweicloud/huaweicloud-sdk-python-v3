@@ -47,7 +47,7 @@ class ShowTopUrlRequest:
         :type domain_name: str
         :param stat_type: - 参数类型支持：flux(流量),req_num(请求数)
         :type stat_type: str
-        :param service_area: 服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为mainland_china
+        :param service_area: 服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
         :type service_area: str
         :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
@@ -164,7 +164,7 @@ class ShowTopUrlRequest:
     def service_area(self):
         """Gets the service_area of this ShowTopUrlRequest.
 
-        服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为mainland_china
+        服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
 
         :return: The service_area of this ShowTopUrlRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class ShowTopUrlRequest:
     def service_area(self, service_area):
         """Sets the service_area of this ShowTopUrlRequest.
 
-        服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为mainland_china
+        服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
 
         :param service_area: The service_area of this ShowTopUrlRequest.
         :type service_area: str

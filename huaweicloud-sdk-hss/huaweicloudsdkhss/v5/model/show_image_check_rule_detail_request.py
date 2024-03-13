@@ -26,7 +26,8 @@ class ShowImageCheckRuleDetailRequest:
         'check_name': 'str',
         'check_type': 'str',
         'check_rule_id': 'str',
-        'standard': 'str'
+        'standard': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ShowImageCheckRuleDetailRequest:
         'check_name': 'check_name',
         'check_type': 'check_type',
         'check_rule_id': 'check_rule_id',
-        'standard': 'standard'
+        'standard': 'standard',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, image_type=None, namespace=None, image_name=None, image_version=None, check_name=None, check_type=None, check_rule_id=None, standard=None):
+    def __init__(self, region=None, enterprise_project_id=None, image_type=None, namespace=None, image_name=None, image_version=None, check_name=None, check_type=None, check_rule_id=None, standard=None, instance_id=None):
         """ShowImageCheckRuleDetailRequest
 
         The model defined in huaweicloud sdk
@@ -51,7 +53,7 @@ class ShowImageCheckRuleDetailRequest:
         :type region: str
         :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
         :param namespace: 组织名称（没有镜像相关信息时，表示查询所有镜像）
         :type namespace: str
@@ -67,6 +69,8 @@ class ShowImageCheckRuleDetailRequest:
         :type check_rule_id: str
         :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
         :type standard: str
+        :param instance_id: 企业仓库实例ID，swr共享版无需使用该参数
+        :type instance_id: str
         """
         
         
@@ -81,6 +85,7 @@ class ShowImageCheckRuleDetailRequest:
         self._check_type = None
         self._check_rule_id = None
         self._standard = None
+        self._instance_id = None
         self.discriminator = None
 
         self.region = region
@@ -97,6 +102,8 @@ class ShowImageCheckRuleDetailRequest:
         self.check_type = check_type
         self.check_rule_id = check_rule_id
         self.standard = standard
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def region(self):
@@ -146,7 +153,7 @@ class ShowImageCheckRuleDetailRequest:
     def image_type(self):
         """Gets the image_type of this ShowImageCheckRuleDetailRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
         :return: The image_type of this ShowImageCheckRuleDetailRequest.
         :rtype: str
@@ -157,7 +164,7 @@ class ShowImageCheckRuleDetailRequest:
     def image_type(self, image_type):
         """Sets the image_type of this ShowImageCheckRuleDetailRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
         :param image_type: The image_type of this ShowImageCheckRuleDetailRequest.
         :type image_type: str
@@ -317,6 +324,28 @@ class ShowImageCheckRuleDetailRequest:
         :type standard: str
         """
         self._standard = standard
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ShowImageCheckRuleDetailRequest.
+
+        企业仓库实例ID，swr共享版无需使用该参数
+
+        :return: The instance_id of this ShowImageCheckRuleDetailRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ShowImageCheckRuleDetailRequest.
+
+        企业仓库实例ID，swr共享版无需使用该参数
+
+        :param instance_id: The instance_id of this ShowImageCheckRuleDetailRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

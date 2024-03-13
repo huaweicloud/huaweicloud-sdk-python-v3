@@ -37,15 +37,15 @@ class DebugCaseReturnHeader:
 
         The model defined in huaweicloud sdk
 
-        :param connection: Connection
+        :param connection: 连接
         :type connection: str
-        :param content_length: Content-Length
+        :param content_length: 内容长度
         :type content_length: str
-        :param content_type: Content-Type
+        :param content_type: 内容类型
         :type content_type: str
-        :param date: Date
+        :param date: 时间
         :type date: str
-        :param vary: Vary
+        :param vary: 兼容性保留，当前版本未使用
         :type vary: str
         """
         
@@ -73,7 +73,7 @@ class DebugCaseReturnHeader:
     def connection(self):
         """Gets the connection of this DebugCaseReturnHeader.
 
-        Connection
+        连接
 
         :return: The connection of this DebugCaseReturnHeader.
         :rtype: str
@@ -84,7 +84,7 @@ class DebugCaseReturnHeader:
     def connection(self, connection):
         """Sets the connection of this DebugCaseReturnHeader.
 
-        Connection
+        连接
 
         :param connection: The connection of this DebugCaseReturnHeader.
         :type connection: str
@@ -95,7 +95,7 @@ class DebugCaseReturnHeader:
     def content_length(self):
         """Gets the content_length of this DebugCaseReturnHeader.
 
-        Content-Length
+        内容长度
 
         :return: The content_length of this DebugCaseReturnHeader.
         :rtype: str
@@ -106,7 +106,7 @@ class DebugCaseReturnHeader:
     def content_length(self, content_length):
         """Sets the content_length of this DebugCaseReturnHeader.
 
-        Content-Length
+        内容长度
 
         :param content_length: The content_length of this DebugCaseReturnHeader.
         :type content_length: str
@@ -117,7 +117,7 @@ class DebugCaseReturnHeader:
     def content_type(self):
         """Gets the content_type of this DebugCaseReturnHeader.
 
-        Content-Type
+        内容类型
 
         :return: The content_type of this DebugCaseReturnHeader.
         :rtype: str
@@ -128,7 +128,7 @@ class DebugCaseReturnHeader:
     def content_type(self, content_type):
         """Sets the content_type of this DebugCaseReturnHeader.
 
-        Content-Type
+        内容类型
 
         :param content_type: The content_type of this DebugCaseReturnHeader.
         :type content_type: str
@@ -139,7 +139,7 @@ class DebugCaseReturnHeader:
     def date(self):
         """Gets the date of this DebugCaseReturnHeader.
 
-        Date
+        时间
 
         :return: The date of this DebugCaseReturnHeader.
         :rtype: str
@@ -150,7 +150,7 @@ class DebugCaseReturnHeader:
     def date(self, date):
         """Sets the date of this DebugCaseReturnHeader.
 
-        Date
+        时间
 
         :param date: The date of this DebugCaseReturnHeader.
         :type date: str
@@ -161,7 +161,7 @@ class DebugCaseReturnHeader:
     def vary(self):
         """Gets the vary of this DebugCaseReturnHeader.
 
-        Vary
+        兼容性保留，当前版本未使用
 
         :return: The vary of this DebugCaseReturnHeader.
         :rtype: str
@@ -172,7 +172,7 @@ class DebugCaseReturnHeader:
     def vary(self, vary):
         """Sets the vary of this DebugCaseReturnHeader.
 
-        Vary
+        兼容性保留，当前版本未使用
 
         :param vary: The vary of this DebugCaseReturnHeader.
         :type vary: str

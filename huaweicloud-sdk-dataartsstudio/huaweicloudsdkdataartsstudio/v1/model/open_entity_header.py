@@ -18,7 +18,7 @@ class OpenEntityHeader:
 
     openapi_types = {
         'attributes': 'object',
-        'connection': 'list[Connection]',
+        'connection': 'Connection',
         'display_text': 'str',
         'guid': 'str',
         'type_name': 'str',
@@ -43,8 +43,8 @@ class OpenEntityHeader:
 
         :param attributes: 属性
         :type attributes: object
-        :param connection: 数据连接
-        :type connection: list[:class:`huaweicloudsdkdataartsstudio.v1.Connection`]
+        :param connection: 
+        :type connection: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
         :param display_text: 展示文档
         :type display_text: str
         :param guid: 资产guid
@@ -109,10 +109,8 @@ class OpenEntityHeader:
     def connection(self):
         """Gets the connection of this OpenEntityHeader.
 
-        数据连接
-
         :return: The connection of this OpenEntityHeader.
-        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.Connection`]
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
         """
         return self._connection
 
@@ -120,10 +118,8 @@ class OpenEntityHeader:
     def connection(self, connection):
         """Sets the connection of this OpenEntityHeader.
 
-        数据连接
-
         :param connection: The connection of this OpenEntityHeader.
-        :type connection: list[:class:`huaweicloudsdkdataartsstudio.v1.Connection`]
+        :type connection: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
         """
         self._connection = connection
 

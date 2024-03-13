@@ -839,6 +839,7 @@ class ElbAsyncClient(Client):
         4. 若要创建内网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id。
         5. 若要创建公网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id和ipv6_bandwidth。
         6. 不支持绑定已有未使用的内网IPv4、内网IPv6或公网IPv6地址。
+        7. l4_flavor_id需要传入网络型规格id，l7_flavor_id需要传入应用型规格id。
         
         [&gt; 关于计费：
         - 若billing_info非空时，包周期。
@@ -3214,6 +3215,8 @@ class ElbAsyncClient(Client):
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
             collection_formats['type'] = 'csv'
+        if 'connection_drain' in local_var_params:
+            query_params.append(('connection_drain', local_var_params['connection_drain']))
 
         header_params = {}
 
@@ -3441,6 +3444,8 @@ class ElbAsyncClient(Client):
         if 'protection_status' in local_var_params:
             query_params.append(('protection_status', local_var_params['protection_status']))
             collection_formats['protection_status'] = 'csv'
+        if 'connection_drain' in local_var_params:
+            query_params.append(('connection_drain', local_var_params['connection_drain']))
 
         header_params = {}
 

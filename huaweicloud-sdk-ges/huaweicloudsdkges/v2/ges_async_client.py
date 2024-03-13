@@ -697,6 +697,73 @@ class GesAsyncClient(Client):
 
         return http_info
 
+    def export_backup2_async(self, request):
+        """导出备份
+
+        导出备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportBackup2
+        :type request: :class:`huaweicloudsdkges.v2.ExportBackup2Request`
+        :rtype: :class:`huaweicloudsdkges.v2.ExportBackup2Response`
+        """
+        http_info = self._export_backup2_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_backup2_async_invoker(self, request):
+        http_info = self._export_backup2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_backup2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/backups/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportBackup2Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'graph_id' in local_var_params:
+            path_params['graph_id'] = local_var_params['graph_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def export_graph2_async(self, request):
         """导出图
 
@@ -722,6 +789,73 @@ class GesAsyncClient(Client):
             "resource_path": "/v2/{project_id}/graphs/{graph_id}/export-graph",
             "request_type": request.__class__.__name__,
             "response_type": "ExportGraph2Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'graph_id' in local_var_params:
+            path_params['graph_id'] = local_var_params['graph_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_backup2_async(self, request):
+        """导入备份
+
+        导入备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportBackup2
+        :type request: :class:`huaweicloudsdkges.v2.ImportBackup2Request`
+        :rtype: :class:`huaweicloudsdkges.v2.ImportBackup2Response`
+        """
+        http_info = self._import_backup2_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_backup2_async_invoker(self, request):
+        http_info = self._import_backup2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_backup2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/backups/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportBackup2Response"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

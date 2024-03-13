@@ -43,19 +43,19 @@ class EcsNetWork:
 
         The model defined in huaweicloud sdk
 
-        :param addr: IP地址信息
+        :param addr: IP地址信息。
         :type addr: str
-        :param version: IP地址类型， &#x60;4&#x60; - IPV4 &#x60;6&#x60; - IPV6
+        :param version: IP地址类型： &#x60;4&#x60; - IPV4 &#x60;6&#x60; - IPV6
         :type version: int
-        :param os_ext_ips_ma_cmac_addr: MAC地址
+        :param os_ext_ips_ma_cmac_addr: MAC地址。
         :type os_ext_ips_ma_cmac_addr: str
-        :param os_ext_ip_stype: IP地址分配方式，字符串是大小写不敏感格式 * &#x60;fixed&#x60; - 代表私有IP地址 * &#x60;floating&#x60; - 代表浮动IP地址
+        :param os_ext_ip_stype: IP地址分配方式，字符串是大小写不敏感格式。 * &#x60;fixed&#x60; - 代表私有IP地址。 * &#x60;floating&#x60; - 代表浮动IP地址。
         :type os_ext_ip_stype: str
         :param os_ext_ip_sport_id: IP地址对应的端口ID。
         :type os_ext_ip_sport_id: str
-        :param vpc_id: 虚拟私有云ID
+        :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
-        :param subnet_id: 子网id
+        :param subnet_id: 子网id。
         :type subnet_id: str
         :param tenant_type: 租户类别: - tenant: 租户 - resource_tenant: 资源租户
         :type tenant_type: str
@@ -94,7 +94,7 @@ class EcsNetWork:
     def addr(self):
         """Gets the addr of this EcsNetWork.
 
-        IP地址信息
+        IP地址信息。
 
         :return: The addr of this EcsNetWork.
         :rtype: str
@@ -105,7 +105,7 @@ class EcsNetWork:
     def addr(self, addr):
         """Sets the addr of this EcsNetWork.
 
-        IP地址信息
+        IP地址信息。
 
         :param addr: The addr of this EcsNetWork.
         :type addr: str
@@ -116,7 +116,7 @@ class EcsNetWork:
     def version(self):
         """Gets the version of this EcsNetWork.
 
-        IP地址类型， `4` - IPV4 `6` - IPV6
+        IP地址类型： `4` - IPV4 `6` - IPV6
 
         :return: The version of this EcsNetWork.
         :rtype: int
@@ -127,7 +127,7 @@ class EcsNetWork:
     def version(self, version):
         """Sets the version of this EcsNetWork.
 
-        IP地址类型， `4` - IPV4 `6` - IPV6
+        IP地址类型： `4` - IPV4 `6` - IPV6
 
         :param version: The version of this EcsNetWork.
         :type version: int
@@ -138,7 +138,7 @@ class EcsNetWork:
     def os_ext_ips_ma_cmac_addr(self):
         """Gets the os_ext_ips_ma_cmac_addr of this EcsNetWork.
 
-        MAC地址
+        MAC地址。
 
         :return: The os_ext_ips_ma_cmac_addr of this EcsNetWork.
         :rtype: str
@@ -149,7 +149,7 @@ class EcsNetWork:
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
         """Sets the os_ext_ips_ma_cmac_addr of this EcsNetWork.
 
-        MAC地址
+        MAC地址。
 
         :param os_ext_ips_ma_cmac_addr: The os_ext_ips_ma_cmac_addr of this EcsNetWork.
         :type os_ext_ips_ma_cmac_addr: str
@@ -160,7 +160,7 @@ class EcsNetWork:
     def os_ext_ip_stype(self):
         """Gets the os_ext_ip_stype of this EcsNetWork.
 
-        IP地址分配方式，字符串是大小写不敏感格式 * `fixed` - 代表私有IP地址 * `floating` - 代表浮动IP地址
+        IP地址分配方式，字符串是大小写不敏感格式。 * `fixed` - 代表私有IP地址。 * `floating` - 代表浮动IP地址。
 
         :return: The os_ext_ip_stype of this EcsNetWork.
         :rtype: str
@@ -171,7 +171,7 @@ class EcsNetWork:
     def os_ext_ip_stype(self, os_ext_ip_stype):
         """Sets the os_ext_ip_stype of this EcsNetWork.
 
-        IP地址分配方式，字符串是大小写不敏感格式 * `fixed` - 代表私有IP地址 * `floating` - 代表浮动IP地址
+        IP地址分配方式，字符串是大小写不敏感格式。 * `fixed` - 代表私有IP地址。 * `floating` - 代表浮动IP地址。
 
         :param os_ext_ip_stype: The os_ext_ip_stype of this EcsNetWork.
         :type os_ext_ip_stype: str
@@ -204,7 +204,7 @@ class EcsNetWork:
     def vpc_id(self):
         """Gets the vpc_id of this EcsNetWork.
 
-        虚拟私有云ID
+        虚拟私有云ID。
 
         :return: The vpc_id of this EcsNetWork.
         :rtype: str
@@ -215,7 +215,7 @@ class EcsNetWork:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this EcsNetWork.
 
-        虚拟私有云ID
+        虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this EcsNetWork.
         :type vpc_id: str
@@ -226,7 +226,7 @@ class EcsNetWork:
     def subnet_id(self):
         """Gets the subnet_id of this EcsNetWork.
 
-        子网id
+        子网id。
 
         :return: The subnet_id of this EcsNetWork.
         :rtype: str
@@ -237,7 +237,7 @@ class EcsNetWork:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this EcsNetWork.
 
-        子网id
+        子网id。
 
         :param subnet_id: The subnet_id of this EcsNetWork.
         :type subnet_id: str

@@ -31,9 +31,9 @@ class BatchDeleteInstanceUsersReq:
 
         The model defined in huaweicloud sdk
 
-        :param action: 删除类型。当前只支持delete。
+        :param action: 删除类型。当前只支持delete。  当删除用户时，为必选参数。
         :type action: str
-        :param users: 用户列表。
+        :param users: 用户列表。  当删除用户时，为必选参数。
         :type users: list[str]
         """
         
@@ -52,7 +52,7 @@ class BatchDeleteInstanceUsersReq:
     def action(self):
         """Gets the action of this BatchDeleteInstanceUsersReq.
 
-        删除类型。当前只支持delete。
+        删除类型。当前只支持delete。  当删除用户时，为必选参数。
 
         :return: The action of this BatchDeleteInstanceUsersReq.
         :rtype: str
@@ -63,7 +63,7 @@ class BatchDeleteInstanceUsersReq:
     def action(self, action):
         """Sets the action of this BatchDeleteInstanceUsersReq.
 
-        删除类型。当前只支持delete。
+        删除类型。当前只支持delete。  当删除用户时，为必选参数。
 
         :param action: The action of this BatchDeleteInstanceUsersReq.
         :type action: str
@@ -74,7 +74,7 @@ class BatchDeleteInstanceUsersReq:
     def users(self):
         """Gets the users of this BatchDeleteInstanceUsersReq.
 
-        用户列表。
+        用户列表。  当删除用户时，为必选参数。
 
         :return: The users of this BatchDeleteInstanceUsersReq.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class BatchDeleteInstanceUsersReq:
     def users(self, users):
         """Sets the users of this BatchDeleteInstanceUsersReq.
 
-        用户列表。
+        用户列表。  当删除用户时，为必选参数。
 
         :param users: The users of this BatchDeleteInstanceUsersReq.
         :type users: list[str]

@@ -35,7 +35,7 @@ class OriginRequestHeader:
 
         :param name: 设置回源请求头参数。格式要求：由数字，大小写字母，中划线组成，只能以字母开头。
         :type name: str
-        :param value: 设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1~512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
+        :param value: 设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1-512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
         :type value: str
         :param action: 回源请求头设置类型。delete：删除，set：设置。同一个请求头字段只允许删除或者设置。设置：若原始回源请求中不存在该字段，先执行新增再执行设置。
         :type action: str
@@ -79,7 +79,7 @@ class OriginRequestHeader:
     def value(self):
         """Gets the value of this OriginRequestHeader.
 
-        设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1~512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
+        设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1-512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
 
         :return: The value of this OriginRequestHeader.
         :rtype: str
@@ -90,7 +90,7 @@ class OriginRequestHeader:
     def value(self, value):
         """Sets the value of this OriginRequestHeader.
 
-        设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1~512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
+        设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1-512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
 
         :param value: The value of this OriginRequestHeader.
         :type value: str

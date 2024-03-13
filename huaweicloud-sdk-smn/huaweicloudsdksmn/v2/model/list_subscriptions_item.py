@@ -23,7 +23,8 @@ class ListSubscriptionsItem:
         'owner': 'str',
         'endpoint': 'str',
         'remark': 'str',
-        'status': 'int'
+        'status': 'int',
+        'filter_polices': 'list[SubscriptionsFilterPolicy]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListSubscriptionsItem:
         'owner': 'owner',
         'endpoint': 'endpoint',
         'remark': 'remark',
-        'status': 'status'
+        'status': 'status',
+        'filter_polices': 'filter_polices'
     }
 
-    def __init__(self, topic_urn=None, protocol=None, subscription_urn=None, owner=None, endpoint=None, remark=None, status=None):
+    def __init__(self, topic_urn=None, protocol=None, subscription_urn=None, owner=None, endpoint=None, remark=None, status=None, filter_polices=None):
         """ListSubscriptionsItem
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListSubscriptionsItem:
         :type remark: str
         :param status: 订阅者状态：0表示订阅还未确认，1表示已经确认，3表示已经取消确认。
         :type status: int
+        :param filter_polices: 
+        :type filter_polices: list[:class:`huaweicloudsdksmn.v2.SubscriptionsFilterPolicy`]
         """
         
         
@@ -66,6 +70,7 @@ class ListSubscriptionsItem:
         self._endpoint = None
         self._remark = None
         self._status = None
+        self._filter_polices = None
         self.discriminator = None
 
         self.topic_urn = topic_urn
@@ -75,6 +80,8 @@ class ListSubscriptionsItem:
         self.endpoint = endpoint
         self.remark = remark
         self.status = status
+        if filter_polices is not None:
+            self.filter_polices = filter_polices
 
     @property
     def topic_urn(self):
@@ -229,6 +236,24 @@ class ListSubscriptionsItem:
         :type status: int
         """
         self._status = status
+
+    @property
+    def filter_polices(self):
+        """Gets the filter_polices of this ListSubscriptionsItem.
+
+        :return: The filter_polices of this ListSubscriptionsItem.
+        :rtype: list[:class:`huaweicloudsdksmn.v2.SubscriptionsFilterPolicy`]
+        """
+        return self._filter_polices
+
+    @filter_polices.setter
+    def filter_polices(self, filter_polices):
+        """Sets the filter_polices of this ListSubscriptionsItem.
+
+        :param filter_polices: The filter_polices of this ListSubscriptionsItem.
+        :type filter_polices: list[:class:`huaweicloudsdksmn.v2.SubscriptionsFilterPolicy`]
+        """
+        self._filter_polices = filter_polices
 
     def to_dict(self):
         """Returns the model properties as a dict"""

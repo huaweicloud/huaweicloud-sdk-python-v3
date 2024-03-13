@@ -38,7 +38,8 @@ class Pool:
         'type': 'str',
         'protection_status': 'str',
         'protection_reason': 'str',
-        'any_port_enable': 'bool'
+        'any_port_enable': 'bool',
+        'connection_drain': 'ConnectionDrain'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class Pool:
         'type': 'type',
         'protection_status': 'protection_status',
         'protection_reason': 'protection_reason',
-        'any_port_enable': 'any_port_enable'
+        'any_port_enable': 'any_port_enable',
+        'connection_drain': 'connection_drain'
     }
 
-    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None):
+    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None):
         """Pool
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class Pool:
         :type protection_reason: str
         :param any_port_enable: 后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启，默认false。 &gt; 关闭端口透传后，请求会转发给后端服务器protocol_port字段指定端口。
         :type any_port_enable: bool
+        :param connection_drain: 
+        :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
         """
         
         
@@ -141,6 +145,7 @@ class Pool:
         self._protection_status = None
         self._protection_reason = None
         self._any_port_enable = None
+        self._connection_drain = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -170,6 +175,8 @@ class Pool:
             self.protection_reason = protection_reason
         if any_port_enable is not None:
             self.any_port_enable = any_port_enable
+        if connection_drain is not None:
+            self.connection_drain = connection_drain
 
     @property
     def admin_state_up(self):
@@ -646,6 +653,24 @@ class Pool:
         :type any_port_enable: bool
         """
         self._any_port_enable = any_port_enable
+
+    @property
+    def connection_drain(self):
+        """Gets the connection_drain of this Pool.
+
+        :return: The connection_drain of this Pool.
+        :rtype: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
+        """
+        return self._connection_drain
+
+    @connection_drain.setter
+    def connection_drain(self, connection_drain):
+        """Sets the connection_drain of this Pool.
+
+        :param connection_drain: The connection_drain of this Pool.
+        :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
+        """
+        self._connection_drain = connection_drain
 
     def to_dict(self):
         """Returns the model properties as a dict"""

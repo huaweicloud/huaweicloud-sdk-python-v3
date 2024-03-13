@@ -24,6 +24,7 @@ class TicsAgentDeployDetail:
         'console_ip': 'str',
         'console_port': 'int',
         'host_path': 'str',
+        'ief_instance_id': 'str',
         'namespace_name': 'str',
         'obs_pvc_name': 'str',
         'persistence_id': 'str',
@@ -39,6 +40,7 @@ class TicsAgentDeployDetail:
         'console_ip': 'console_ip',
         'console_port': 'console_port',
         'host_path': 'host_path',
+        'ief_instance_id': 'ief_instance_id',
         'namespace_name': 'namespace_name',
         'obs_pvc_name': 'obs_pvc_name',
         'persistence_id': 'persistence_id',
@@ -46,7 +48,7 @@ class TicsAgentDeployDetail:
         'web_port': 'web_port'
     }
 
-    def __init__(self, agent_access_address=None, agent_id=None, cce_cluster_id=None, cce_cluster_name=None, console_ip=None, console_port=None, host_path=None, namespace_name=None, obs_pvc_name=None, persistence_id=None, resource_spec_code=None, web_port=None):
+    def __init__(self, agent_access_address=None, agent_id=None, cce_cluster_id=None, cce_cluster_name=None, console_ip=None, console_port=None, host_path=None, ief_instance_id=None, namespace_name=None, obs_pvc_name=None, persistence_id=None, resource_spec_code=None, web_port=None):
         """TicsAgentDeployDetail
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class TicsAgentDeployDetail:
         :type console_port: int
         :param host_path: 主机挂载路径，本地挂载才会有值
         :type host_path: str
+        :param ief_instance_id: ief白金版实例id, 仅IEF高可用部署有值
+        :type ief_instance_id: str
         :param namespace_name: 命名空间名称
         :type namespace_name: str
         :param obs_pvc_name: 可信节点CCE部署场景，对象文件存储PVC
@@ -86,6 +90,7 @@ class TicsAgentDeployDetail:
         self._console_ip = None
         self._console_port = None
         self._host_path = None
+        self._ief_instance_id = None
         self._namespace_name = None
         self._obs_pvc_name = None
         self._persistence_id = None
@@ -107,6 +112,8 @@ class TicsAgentDeployDetail:
             self.console_port = console_port
         if host_path is not None:
             self.host_path = host_path
+        if ief_instance_id is not None:
+            self.ief_instance_id = ief_instance_id
         if namespace_name is not None:
             self.namespace_name = namespace_name
         if obs_pvc_name is not None:
@@ -271,6 +278,28 @@ class TicsAgentDeployDetail:
         :type host_path: str
         """
         self._host_path = host_path
+
+    @property
+    def ief_instance_id(self):
+        """Gets the ief_instance_id of this TicsAgentDeployDetail.
+
+        ief白金版实例id, 仅IEF高可用部署有值
+
+        :return: The ief_instance_id of this TicsAgentDeployDetail.
+        :rtype: str
+        """
+        return self._ief_instance_id
+
+    @ief_instance_id.setter
+    def ief_instance_id(self, ief_instance_id):
+        """Sets the ief_instance_id of this TicsAgentDeployDetail.
+
+        ief白金版实例id, 仅IEF高可用部署有值
+
+        :param ief_instance_id: The ief_instance_id of this TicsAgentDeployDetail.
+        :type ief_instance_id: str
+        """
+        self._ief_instance_id = ief_instance_id
 
     @property
     def namespace_name(self):

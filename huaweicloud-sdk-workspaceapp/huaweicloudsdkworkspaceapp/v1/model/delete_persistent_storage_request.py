@@ -29,7 +29,7 @@ class DeletePersistentStorageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param storage_id: WKS存储ID
+        :param storage_id: WKS存储ID。
         :type storage_id: str
         """
         
@@ -44,7 +44,7 @@ class DeletePersistentStorageRequest:
     def storage_id(self):
         """Gets the storage_id of this DeletePersistentStorageRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :return: The storage_id of this DeletePersistentStorageRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeletePersistentStorageRequest:
     def storage_id(self, storage_id):
         """Sets the storage_id of this DeletePersistentStorageRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :param storage_id: The storage_id of this DeletePersistentStorageRequest.
         :type storage_id: str

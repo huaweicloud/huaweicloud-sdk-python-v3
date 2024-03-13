@@ -23,7 +23,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
         'object_name': 'str',
         'object_type': 'str',
         'count': 'int',
-        'privileges': 'list[ShowDatabaseUsersPrivilege]'
+        'privileges': 'list[AuthorizationPrivilege]'
     }
 
     attribute_map = {
@@ -51,7 +51,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
         :param count: 对象类型
         :type count: int
         :param privileges: 权限信息
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.ShowDatabaseUsersPrivilege`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.AuthorizationPrivilege`]
         """
         
         super(ListAuthorizationPrivilegesResponse, self).__init__()
@@ -194,7 +194,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
         权限信息
 
         :return: The privileges of this ListAuthorizationPrivilegesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ShowDatabaseUsersPrivilege`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.AuthorizationPrivilege`]
         """
         return self._privileges
 
@@ -205,7 +205,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
         权限信息
 
         :param privileges: The privileges of this ListAuthorizationPrivilegesResponse.
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.ShowDatabaseUsersPrivilege`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.AuthorizationPrivilege`]
         """
         self._privileges = privileges
 

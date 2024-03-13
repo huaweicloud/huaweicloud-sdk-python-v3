@@ -18,35 +18,53 @@ class TicsAgentNodeInfo:
 
     openapi_types = {
         'agent_id': 'str',
+        'agent_vpcep_eps_id': 'str',
         'ecs_server_id': 'str',
+        'league_server_ip_security_group_rule': 'str',
+        'league_server_snat_ip': 'str',
         'nat_eip': 'str',
         'nat_eip_id': 'str',
         'node_az': 'str',
         'node_id': 'str',
         'node_ip': 'str',
-        'node_name': 'str'
+        'node_name': 'str',
+        'server_to_agent_vpcep_epi_id': 'str',
+        'server_to_agent_vpcep_epi_ip': 'str',
+        'snat_rule_id': 'str'
     }
 
     attribute_map = {
         'agent_id': 'agent_id',
+        'agent_vpcep_eps_id': 'agent_vpcep_eps_id',
         'ecs_server_id': 'ecs_server_id',
+        'league_server_ip_security_group_rule': 'league_server_ip_security_group_rule',
+        'league_server_snat_ip': 'league_server_snat_ip',
         'nat_eip': 'nat_eip',
         'nat_eip_id': 'nat_eip_id',
         'node_az': 'node_az',
         'node_id': 'node_id',
         'node_ip': 'node_ip',
-        'node_name': 'node_name'
+        'node_name': 'node_name',
+        'server_to_agent_vpcep_epi_id': 'server_to_agent_vpcep_epi_id',
+        'server_to_agent_vpcep_epi_ip': 'server_to_agent_vpcep_epi_ip',
+        'snat_rule_id': 'snat_rule_id'
     }
 
-    def __init__(self, agent_id=None, ecs_server_id=None, nat_eip=None, nat_eip_id=None, node_az=None, node_id=None, node_ip=None, node_name=None):
+    def __init__(self, agent_id=None, agent_vpcep_eps_id=None, ecs_server_id=None, league_server_ip_security_group_rule=None, league_server_snat_ip=None, nat_eip=None, nat_eip_id=None, node_az=None, node_id=None, node_ip=None, node_name=None, server_to_agent_vpcep_epi_id=None, server_to_agent_vpcep_epi_ip=None, snat_rule_id=None):
         """TicsAgentNodeInfo
 
         The model defined in huaweicloud sdk
 
         :param agent_id: 可信节点Id
         :type agent_id: str
+        :param agent_vpcep_eps_id: 无eip场景下,agent的eps id
+        :type agent_vpcep_eps_id: str
         :param ecs_server_id: 弹性云服务器Id，IEF部署同node_id
         :type ecs_server_id: str
+        :param league_server_ip_security_group_rule: 入方向安全组规则ID
+        :type league_server_ip_security_group_rule: str
+        :param league_server_snat_ip: 联盟server组件的ip，为server的snatip，设置代理节点的入方向安全组规则
+        :type league_server_snat_ip: str
         :param nat_eip: 可信节点绑定的网关的ip，CCE部署时会返回该值
         :type nat_eip: str
         :param nat_eip_id: 可信节点绑定的网关的ip的Id，CCE部署时会返回该值
@@ -59,24 +77,42 @@ class TicsAgentNodeInfo:
         :type node_ip: str
         :param node_name: 弹性云服务器的名称
         :type node_name: str
+        :param server_to_agent_vpcep_epi_id: 无eip场景下,server访问agent的epi id
+        :type server_to_agent_vpcep_epi_id: str
+        :param server_to_agent_vpcep_epi_ip: 无eip场景下,server访问agent的ip
+        :type server_to_agent_vpcep_epi_ip: str
+        :param snat_rule_id: 节点绑定的snat id
+        :type snat_rule_id: str
         """
         
         
 
         self._agent_id = None
+        self._agent_vpcep_eps_id = None
         self._ecs_server_id = None
+        self._league_server_ip_security_group_rule = None
+        self._league_server_snat_ip = None
         self._nat_eip = None
         self._nat_eip_id = None
         self._node_az = None
         self._node_id = None
         self._node_ip = None
         self._node_name = None
+        self._server_to_agent_vpcep_epi_id = None
+        self._server_to_agent_vpcep_epi_ip = None
+        self._snat_rule_id = None
         self.discriminator = None
 
         if agent_id is not None:
             self.agent_id = agent_id
+        if agent_vpcep_eps_id is not None:
+            self.agent_vpcep_eps_id = agent_vpcep_eps_id
         if ecs_server_id is not None:
             self.ecs_server_id = ecs_server_id
+        if league_server_ip_security_group_rule is not None:
+            self.league_server_ip_security_group_rule = league_server_ip_security_group_rule
+        if league_server_snat_ip is not None:
+            self.league_server_snat_ip = league_server_snat_ip
         if nat_eip is not None:
             self.nat_eip = nat_eip
         if nat_eip_id is not None:
@@ -89,6 +125,12 @@ class TicsAgentNodeInfo:
             self.node_ip = node_ip
         if node_name is not None:
             self.node_name = node_name
+        if server_to_agent_vpcep_epi_id is not None:
+            self.server_to_agent_vpcep_epi_id = server_to_agent_vpcep_epi_id
+        if server_to_agent_vpcep_epi_ip is not None:
+            self.server_to_agent_vpcep_epi_ip = server_to_agent_vpcep_epi_ip
+        if snat_rule_id is not None:
+            self.snat_rule_id = snat_rule_id
 
     @property
     def agent_id(self):
@@ -113,6 +155,28 @@ class TicsAgentNodeInfo:
         self._agent_id = agent_id
 
     @property
+    def agent_vpcep_eps_id(self):
+        """Gets the agent_vpcep_eps_id of this TicsAgentNodeInfo.
+
+        无eip场景下,agent的eps id
+
+        :return: The agent_vpcep_eps_id of this TicsAgentNodeInfo.
+        :rtype: str
+        """
+        return self._agent_vpcep_eps_id
+
+    @agent_vpcep_eps_id.setter
+    def agent_vpcep_eps_id(self, agent_vpcep_eps_id):
+        """Sets the agent_vpcep_eps_id of this TicsAgentNodeInfo.
+
+        无eip场景下,agent的eps id
+
+        :param agent_vpcep_eps_id: The agent_vpcep_eps_id of this TicsAgentNodeInfo.
+        :type agent_vpcep_eps_id: str
+        """
+        self._agent_vpcep_eps_id = agent_vpcep_eps_id
+
+    @property
     def ecs_server_id(self):
         """Gets the ecs_server_id of this TicsAgentNodeInfo.
 
@@ -133,6 +197,50 @@ class TicsAgentNodeInfo:
         :type ecs_server_id: str
         """
         self._ecs_server_id = ecs_server_id
+
+    @property
+    def league_server_ip_security_group_rule(self):
+        """Gets the league_server_ip_security_group_rule of this TicsAgentNodeInfo.
+
+        入方向安全组规则ID
+
+        :return: The league_server_ip_security_group_rule of this TicsAgentNodeInfo.
+        :rtype: str
+        """
+        return self._league_server_ip_security_group_rule
+
+    @league_server_ip_security_group_rule.setter
+    def league_server_ip_security_group_rule(self, league_server_ip_security_group_rule):
+        """Sets the league_server_ip_security_group_rule of this TicsAgentNodeInfo.
+
+        入方向安全组规则ID
+
+        :param league_server_ip_security_group_rule: The league_server_ip_security_group_rule of this TicsAgentNodeInfo.
+        :type league_server_ip_security_group_rule: str
+        """
+        self._league_server_ip_security_group_rule = league_server_ip_security_group_rule
+
+    @property
+    def league_server_snat_ip(self):
+        """Gets the league_server_snat_ip of this TicsAgentNodeInfo.
+
+        联盟server组件的ip，为server的snatip，设置代理节点的入方向安全组规则
+
+        :return: The league_server_snat_ip of this TicsAgentNodeInfo.
+        :rtype: str
+        """
+        return self._league_server_snat_ip
+
+    @league_server_snat_ip.setter
+    def league_server_snat_ip(self, league_server_snat_ip):
+        """Sets the league_server_snat_ip of this TicsAgentNodeInfo.
+
+        联盟server组件的ip，为server的snatip，设置代理节点的入方向安全组规则
+
+        :param league_server_snat_ip: The league_server_snat_ip of this TicsAgentNodeInfo.
+        :type league_server_snat_ip: str
+        """
+        self._league_server_snat_ip = league_server_snat_ip
 
     @property
     def nat_eip(self):
@@ -265,6 +373,72 @@ class TicsAgentNodeInfo:
         :type node_name: str
         """
         self._node_name = node_name
+
+    @property
+    def server_to_agent_vpcep_epi_id(self):
+        """Gets the server_to_agent_vpcep_epi_id of this TicsAgentNodeInfo.
+
+        无eip场景下,server访问agent的epi id
+
+        :return: The server_to_agent_vpcep_epi_id of this TicsAgentNodeInfo.
+        :rtype: str
+        """
+        return self._server_to_agent_vpcep_epi_id
+
+    @server_to_agent_vpcep_epi_id.setter
+    def server_to_agent_vpcep_epi_id(self, server_to_agent_vpcep_epi_id):
+        """Sets the server_to_agent_vpcep_epi_id of this TicsAgentNodeInfo.
+
+        无eip场景下,server访问agent的epi id
+
+        :param server_to_agent_vpcep_epi_id: The server_to_agent_vpcep_epi_id of this TicsAgentNodeInfo.
+        :type server_to_agent_vpcep_epi_id: str
+        """
+        self._server_to_agent_vpcep_epi_id = server_to_agent_vpcep_epi_id
+
+    @property
+    def server_to_agent_vpcep_epi_ip(self):
+        """Gets the server_to_agent_vpcep_epi_ip of this TicsAgentNodeInfo.
+
+        无eip场景下,server访问agent的ip
+
+        :return: The server_to_agent_vpcep_epi_ip of this TicsAgentNodeInfo.
+        :rtype: str
+        """
+        return self._server_to_agent_vpcep_epi_ip
+
+    @server_to_agent_vpcep_epi_ip.setter
+    def server_to_agent_vpcep_epi_ip(self, server_to_agent_vpcep_epi_ip):
+        """Sets the server_to_agent_vpcep_epi_ip of this TicsAgentNodeInfo.
+
+        无eip场景下,server访问agent的ip
+
+        :param server_to_agent_vpcep_epi_ip: The server_to_agent_vpcep_epi_ip of this TicsAgentNodeInfo.
+        :type server_to_agent_vpcep_epi_ip: str
+        """
+        self._server_to_agent_vpcep_epi_ip = server_to_agent_vpcep_epi_ip
+
+    @property
+    def snat_rule_id(self):
+        """Gets the snat_rule_id of this TicsAgentNodeInfo.
+
+        节点绑定的snat id
+
+        :return: The snat_rule_id of this TicsAgentNodeInfo.
+        :rtype: str
+        """
+        return self._snat_rule_id
+
+    @snat_rule_id.setter
+    def snat_rule_id(self, snat_rule_id):
+        """Sets the snat_rule_id of this TicsAgentNodeInfo.
+
+        节点绑定的snat id
+
+        :param snat_rule_id: The snat_rule_id of this TicsAgentNodeInfo.
+        :type snat_rule_id: str
+        """
+        self._snat_rule_id = snat_rule_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

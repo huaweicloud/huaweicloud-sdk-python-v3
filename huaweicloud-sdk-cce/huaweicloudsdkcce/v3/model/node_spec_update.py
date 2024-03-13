@@ -20,17 +20,19 @@ class NodeSpecUpdate:
         'taints': 'list[Taint]',
         'k8s_tags': 'dict(str, str)',
         'user_tags': 'list[UserTag]',
-        'initialized_conditions': 'list[str]'
+        'initialized_conditions': 'list[str]',
+        'login': 'Login'
     }
 
     attribute_map = {
         'taints': 'taints',
         'k8s_tags': 'k8sTags',
         'user_tags': 'userTags',
-        'initialized_conditions': 'initializedConditions'
+        'initialized_conditions': 'initializedConditions',
+        'login': 'login'
     }
 
-    def __init__(self, taints=None, k8s_tags=None, user_tags=None, initialized_conditions=None):
+    def __init__(self, taints=None, k8s_tags=None, user_tags=None, initialized_conditions=None, login=None):
         """NodeSpecUpdate
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class NodeSpecUpdate:
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         :param initialized_conditions: 自定义初始化标记。  CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。  cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions&#x3D;CCEInitial_CustomedInitial。  当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。  默认值为空。  - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个 
         :type initialized_conditions: list[str]
+        :param login: 
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
         """
         
         
@@ -51,6 +55,7 @@ class NodeSpecUpdate:
         self._k8s_tags = None
         self._user_tags = None
         self._initialized_conditions = None
+        self._login = None
         self.discriminator = None
 
         self.taints = taints
@@ -58,6 +63,8 @@ class NodeSpecUpdate:
         self.user_tags = user_tags
         if initialized_conditions is not None:
             self.initialized_conditions = initialized_conditions
+        if login is not None:
+            self.login = login
 
     @property
     def taints(self):
@@ -146,6 +153,24 @@ class NodeSpecUpdate:
         :type initialized_conditions: list[str]
         """
         self._initialized_conditions = initialized_conditions
+
+    @property
+    def login(self):
+        """Gets the login of this NodeSpecUpdate.
+
+        :return: The login of this NodeSpecUpdate.
+        :rtype: :class:`huaweicloudsdkcce.v3.Login`
+        """
+        return self._login
+
+    @login.setter
+    def login(self, login):
+        """Sets the login of this NodeSpecUpdate.
+
+        :param login: The login of this NodeSpecUpdate.
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
+        """
+        self._login = login
 
     def to_dict(self):
         """Returns the model properties as a dict"""

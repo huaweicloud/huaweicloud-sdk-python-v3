@@ -45,15 +45,15 @@ class Contents:
 
         :param content_id: 事务id，若不为0表示此卡片为事务；为0表示非事务
         :type content_id: int
-        :param content: content
+        :param content: 内容
         :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
         :param index: 排序索引标识
         :type index: int
-        :param selected_temp_name: selected_temp_name
+        :param selected_temp_name: 选择的事务或者用例名称
         :type selected_temp_name: str
         :param data: 数据（循环、条件控制器作用的数据）
         :type data: object
-        :param data_type: 类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
+        :param data_type: 数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
         :type data_type: int
         :param conditions: 若类型为202:条件指令，该字段为条件配置
         :type conditions: object
@@ -116,7 +116,7 @@ class Contents:
     def content(self):
         """Gets the content of this Contents.
 
-        content
+        内容
 
         :return: The content of this Contents.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.Content`]
@@ -127,7 +127,7 @@ class Contents:
     def content(self, content):
         """Sets the content of this Contents.
 
-        content
+        内容
 
         :param content: The content of this Contents.
         :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
@@ -160,7 +160,7 @@ class Contents:
     def selected_temp_name(self):
         """Gets the selected_temp_name of this Contents.
 
-        selected_temp_name
+        选择的事务或者用例名称
 
         :return: The selected_temp_name of this Contents.
         :rtype: str
@@ -171,7 +171,7 @@ class Contents:
     def selected_temp_name(self, selected_temp_name):
         """Sets the selected_temp_name of this Contents.
 
-        selected_temp_name
+        选择的事务或者用例名称
 
         :param selected_temp_name: The selected_temp_name of this Contents.
         :type selected_temp_name: str
@@ -204,7 +204,7 @@ class Contents:
     def data_type(self):
         """Gets the data_type of this Contents.
 
-        类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
+        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
         :return: The data_type of this Contents.
         :rtype: int
@@ -215,7 +215,7 @@ class Contents:
     def data_type(self, data_type):
         """Sets the data_type of this Contents.
 
-        类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
+        数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
         :param data_type: The data_type of this Contents.
         :type data_type: int

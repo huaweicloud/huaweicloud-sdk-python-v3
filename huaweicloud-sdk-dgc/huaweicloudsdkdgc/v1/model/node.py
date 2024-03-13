@@ -24,6 +24,7 @@ class Node:
         'conditions': 'list[Condition]',
         'properties': 'list[ModelProperty]',
         'polling_interval': 'int',
+        'exec_time_out_retry': 'str',
         'max_execution_time': 'int',
         'retry_times': 'int',
         'retry_interval': 'int',
@@ -40,6 +41,7 @@ class Node:
         'conditions': 'conditions',
         'properties': 'properties',
         'polling_interval': 'pollingInterval',
+        'exec_time_out_retry': 'execTimeOutRetry',
         'max_execution_time': 'maxExecutionTime',
         'retry_times': 'retryTimes',
         'retry_interval': 'retryInterval',
@@ -48,7 +50,7 @@ class Node:
         'cron_trigger': 'cronTrigger'
     }
 
-    def __init__(self, name=None, type=None, location=None, pre_node_name=None, conditions=None, properties=None, polling_interval=None, max_execution_time=None, retry_times=None, retry_interval=None, fail_policy=None, event_trigger=None, cron_trigger=None):
+    def __init__(self, name=None, type=None, location=None, pre_node_name=None, conditions=None, properties=None, polling_interval=None, exec_time_out_retry=None, max_execution_time=None, retry_times=None, retry_interval=None, fail_policy=None, event_trigger=None, cron_trigger=None):
         """Node
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class Node:
         :type properties: list[:class:`huaweicloudsdkdgc.v1.ModelProperty`]
         :param polling_interval: 轮询节点执行结果时间间隔
         :type polling_interval: int
+        :param exec_time_out_retry: 节点是否超时重试
+        :type exec_time_out_retry: str
         :param max_execution_time: 节点最大执行时间
         :type max_execution_time: int
         :param retry_times: 节点失败重试次数
@@ -90,6 +94,7 @@ class Node:
         self._conditions = None
         self._properties = None
         self._polling_interval = None
+        self._exec_time_out_retry = None
         self._max_execution_time = None
         self._retry_times = None
         self._retry_interval = None
@@ -108,6 +113,8 @@ class Node:
         self.properties = properties
         if polling_interval is not None:
             self.polling_interval = polling_interval
+        if exec_time_out_retry is not None:
+            self.exec_time_out_retry = exec_time_out_retry
         if max_execution_time is not None:
             self.max_execution_time = max_execution_time
         if retry_times is not None:
@@ -270,6 +277,28 @@ class Node:
         :type polling_interval: int
         """
         self._polling_interval = polling_interval
+
+    @property
+    def exec_time_out_retry(self):
+        """Gets the exec_time_out_retry of this Node.
+
+        节点是否超时重试
+
+        :return: The exec_time_out_retry of this Node.
+        :rtype: str
+        """
+        return self._exec_time_out_retry
+
+    @exec_time_out_retry.setter
+    def exec_time_out_retry(self, exec_time_out_retry):
+        """Sets the exec_time_out_retry of this Node.
+
+        节点是否超时重试
+
+        :param exec_time_out_retry: The exec_time_out_retry of this Node.
+        :type exec_time_out_retry: str
+        """
+        self._exec_time_out_retry = exec_time_out_retry
 
     @property
     def max_execution_time(self):

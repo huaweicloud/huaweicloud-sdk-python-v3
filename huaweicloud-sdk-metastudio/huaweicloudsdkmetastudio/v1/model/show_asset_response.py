@@ -21,10 +21,13 @@ class ShowAssetResponse(SdkResponse):
         'asset_id': 'str',
         'asset_name': 'str',
         'asset_description': 'str',
+        'app_user_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'asset_type': 'str',
         'asset_state': 'str',
+        'fail_type': 'str',
+        'reason': 'str',
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
@@ -36,10 +39,13 @@ class ShowAssetResponse(SdkResponse):
         'asset_id': 'asset_id',
         'asset_name': 'asset_name',
         'asset_description': 'asset_description',
+        'app_user_id': 'app_user_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'asset_type': 'asset_type',
         'asset_state': 'asset_state',
+        'fail_type': 'fail_type',
+        'reason': 'reason',
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
@@ -47,7 +53,7 @@ class ShowAssetResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_id=None, asset_name=None, asset_description=None, create_time=None, update_time=None, asset_type=None, asset_state=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
+    def __init__(self, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
         """ShowAssetResponse
 
         The model defined in huaweicloud sdk
@@ -58,14 +64,20 @@ class ShowAssetResponse(SdkResponse):
         :type asset_name: str
         :param asset_description: 资产描述。
         :type asset_description: str
+        :param app_user_id: 第三方用户ID。 &gt; * 即创建资产是通过X-App-UserId头域传入的值。
+        :type app_user_id: str
         :param create_time: 资产创建时间。
         :type create_time: str
         :param update_time: 资产更新时间。
         :type update_time: str
-        :param asset_type: 资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        :param asset_type: 资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
         :type asset_type: str
         :param asset_state: 资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK: 资产被冻结，资产不可用，不可查看文件。
         :type asset_state: str
+        :param fail_type: 失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
+        :type fail_type: str
+        :param reason: 冻结/解冻/失败 原因。
+        :type reason: str
         :param tags: 标签列表。
         :type tags: list[str]
         :param asset_extra_meta: 
@@ -83,10 +95,13 @@ class ShowAssetResponse(SdkResponse):
         self._asset_id = None
         self._asset_name = None
         self._asset_description = None
+        self._app_user_id = None
         self._create_time = None
         self._update_time = None
         self._asset_type = None
         self._asset_state = None
+        self._fail_type = None
+        self._reason = None
         self._tags = None
         self._asset_extra_meta = None
         self._system_properties = None
@@ -100,6 +115,8 @@ class ShowAssetResponse(SdkResponse):
             self.asset_name = asset_name
         if asset_description is not None:
             self.asset_description = asset_description
+        if app_user_id is not None:
+            self.app_user_id = app_user_id
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -108,6 +125,10 @@ class ShowAssetResponse(SdkResponse):
             self.asset_type = asset_type
         if asset_state is not None:
             self.asset_state = asset_state
+        if fail_type is not None:
+            self.fail_type = fail_type
+        if reason is not None:
+            self.reason = reason
         if tags is not None:
             self.tags = tags
         if asset_extra_meta is not None:
@@ -186,6 +207,28 @@ class ShowAssetResponse(SdkResponse):
         self._asset_description = asset_description
 
     @property
+    def app_user_id(self):
+        """Gets the app_user_id of this ShowAssetResponse.
+
+        第三方用户ID。 > * 即创建资产是通过X-App-UserId头域传入的值。
+
+        :return: The app_user_id of this ShowAssetResponse.
+        :rtype: str
+        """
+        return self._app_user_id
+
+    @app_user_id.setter
+    def app_user_id(self, app_user_id):
+        """Sets the app_user_id of this ShowAssetResponse.
+
+        第三方用户ID。 > * 即创建资产是通过X-App-UserId头域传入的值。
+
+        :param app_user_id: The app_user_id of this ShowAssetResponse.
+        :type app_user_id: str
+        """
+        self._app_user_id = app_user_id
+
+    @property
     def create_time(self):
         """Gets the create_time of this ShowAssetResponse.
 
@@ -233,7 +276,7 @@ class ShowAssetResponse(SdkResponse):
     def asset_type(self):
         """Gets the asset_type of this ShowAssetResponse.
 
-        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
         :return: The asset_type of this ShowAssetResponse.
         :rtype: str
@@ -244,7 +287,7 @@ class ShowAssetResponse(SdkResponse):
     def asset_type(self, asset_type):
         """Sets the asset_type of this ShowAssetResponse.
 
-        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
         :param asset_type: The asset_type of this ShowAssetResponse.
         :type asset_type: str
@@ -272,6 +315,50 @@ class ShowAssetResponse(SdkResponse):
         :type asset_state: str
         """
         self._asset_state = asset_state
+
+    @property
+    def fail_type(self):
+        """Gets the fail_type of this ShowAssetResponse.
+
+        失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
+
+        :return: The fail_type of this ShowAssetResponse.
+        :rtype: str
+        """
+        return self._fail_type
+
+    @fail_type.setter
+    def fail_type(self, fail_type):
+        """Sets the fail_type of this ShowAssetResponse.
+
+        失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
+
+        :param fail_type: The fail_type of this ShowAssetResponse.
+        :type fail_type: str
+        """
+        self._fail_type = fail_type
+
+    @property
+    def reason(self):
+        """Gets the reason of this ShowAssetResponse.
+
+        冻结/解冻/失败 原因。
+
+        :return: The reason of this ShowAssetResponse.
+        :rtype: str
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this ShowAssetResponse.
+
+        冻结/解冻/失败 原因。
+
+        :param reason: The reason of this ShowAssetResponse.
+        :type reason: str
+        """
+        self._reason = reason
 
     @property
     def tags(self):

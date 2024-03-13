@@ -30,7 +30,7 @@ class BatchRejoinDomainResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: 任务ID。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class BatchRejoinDomainResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this BatchRejoinDomainResponse.
 
-        任务ID
+        任务ID。
 
         :return: The job_id of this BatchRejoinDomainResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class BatchRejoinDomainResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this BatchRejoinDomainResponse.
 
-        任务ID
+        任务ID。
 
         :param job_id: The job_id of this BatchRejoinDomainResponse.
         :type job_id: str

@@ -33,6 +33,7 @@ class VaultGet:
         'auto_expand': 'bool',
         'smn_notify': 'bool',
         'threshold': 'int',
+        'sys_lock_source_service': 'str',
         'updated_at': 'str',
         'version': 'str'
     }
@@ -54,11 +55,12 @@ class VaultGet:
         'auto_expand': 'auto_expand',
         'smn_notify': 'smn_notify',
         'threshold': 'threshold',
+        'sys_lock_source_service': 'sys_lock_source_service',
         'updated_at': 'updated_at',
         'version': 'version'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, updated_at=None, version=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, updated_at=None, version=None):
         """VaultGet
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class VaultGet:
         :type smn_notify: bool
         :param threshold: 存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
         :type threshold: int
+        :param sys_lock_source_service: 用于标识SMB服务
+        :type sys_lock_source_service: str
         :param updated_at: 更新时间,例如:\&quot;2020-02-05T10:38:34.209782\&quot;
         :type updated_at: str
         :param version: 版本
@@ -119,6 +123,7 @@ class VaultGet:
         self._auto_expand = None
         self._smn_notify = None
         self._threshold = None
+        self._sys_lock_source_service = None
         self._updated_at = None
         self._version = None
         self.discriminator = None
@@ -149,6 +154,8 @@ class VaultGet:
             self.smn_notify = smn_notify
         if threshold is not None:
             self.threshold = threshold
+        if sys_lock_source_service is not None:
+            self.sys_lock_source_service = sys_lock_source_service
         self.updated_at = updated_at
         if version is not None:
             self.version = version
@@ -496,6 +503,28 @@ class VaultGet:
         :type threshold: int
         """
         self._threshold = threshold
+
+    @property
+    def sys_lock_source_service(self):
+        """Gets the sys_lock_source_service of this VaultGet.
+
+        用于标识SMB服务
+
+        :return: The sys_lock_source_service of this VaultGet.
+        :rtype: str
+        """
+        return self._sys_lock_source_service
+
+    @sys_lock_source_service.setter
+    def sys_lock_source_service(self, sys_lock_source_service):
+        """Sets the sys_lock_source_service of this VaultGet.
+
+        用于标识SMB服务
+
+        :param sys_lock_source_service: The sys_lock_source_service of this VaultGet.
+        :type sys_lock_source_service: str
+        """
+        self._sys_lock_source_service = sys_lock_source_service
 
     @property
     def updated_at(self):

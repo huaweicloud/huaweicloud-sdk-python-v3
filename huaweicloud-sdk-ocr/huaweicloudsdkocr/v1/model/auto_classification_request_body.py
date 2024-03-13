@@ -20,17 +20,19 @@ class AutoClassificationRequestBody:
         'image': 'str',
         'url': 'str',
         'type_list': 'list[str]',
-        'extended_parameters': 'object'
+        'extended_parameters': 'object',
+        'detect_seal': 'bool'
     }
 
     attribute_map = {
         'image': 'image',
         'url': 'url',
         'type_list': 'type_list',
-        'extended_parameters': 'extended_parameters'
+        'extended_parameters': 'extended_parameters',
+        'detect_seal': 'detect_seal'
     }
 
-    def __init__(self, image=None, url=None, type_list=None, extended_parameters=None):
+    def __init__(self, image=None, url=None, type_list=None, extended_parameters=None, detect_seal=None):
         """AutoClassificationRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,8 +43,10 @@ class AutoClassificationRequestBody:
         :type url: str
         :param type_list: 可以指定要识别的票证，指定后不出现在此List的票证不识别。不指定时默认返回所有支持类别票证的识别信息。 
         :type type_list: list[str]
-        :param extended_parameters: 可指定需要识别票证的传入参数，具体参数可参考各票证API文档。若不指定则默认传入image 。 当前版本支持票证类型如下： - vat_invoice：增值税发票  - quota_invoice：定额发票  - taxi_invoice：出租车票  - train_ticket：火车票  - flight_itinerary：飞机行程单  - toll_invoice：车辆通行费发票  - mvs_invoice：机动车销售发票  - id_card：身份证  - passport：护照  - driver_license：驾驶证  - vehicle_license：行驶证  - transportation_license：道路运输证  - bankcard：银行卡 &gt; 说明： - 若指定票证参数填写错误会导致该票证识别错误，会提示\&quot;AIS.0101\&quot;:\&quot;The input parameter is invalid.\&quot;报错。 
+        :param extended_parameters: 可指定需要识别票证的传入参数，具体参数可参考各票证API文档。若不指定则默认传入image 。 当前版本支持票证类型如下： - vat_invoice：增值税发票  - quota_invoice：定额发票  - taxi_invoice：出租车票  - train_ticket：火车票  - flight_itinerary：飞机行程单  - toll_invoice：车辆通行费发票  - mvs_invoice：机动车销售发票  - id_card：身份证  - passport：护照  - driver_license：驾驶证  - vehicle_license：行驶证  - transportation_license：道路运输证  - bankcard：银行卡  - bus_ship_ticket：车船票  - ride_hailing_itinerary：网约车行程单  - machine_printed_invoice：通用机打发票 &gt; 说明： - 若指定票证参数填写错误会导致该票证识别错误，会提示\&quot;AIS.0101\&quot;:\&quot;The input parameter is invalid.\&quot;报错。 
         :type extended_parameters: object
+        :param detect_seal: 检测印章开关，开启时则返回单张票证是否含有印章，否则不返回是否含有印章。可选值包括： - true：开启检测票证是否含有印章功能。  - false：关闭检测票证是否含有印章功能。 &gt; 说明： - 该功能仅检测判断有无印章，不返回印章具体内容。 
+        :type detect_seal: bool
         """
         
         
@@ -51,6 +55,7 @@ class AutoClassificationRequestBody:
         self._url = None
         self._type_list = None
         self._extended_parameters = None
+        self._detect_seal = None
         self.discriminator = None
 
         if image is not None:
@@ -61,6 +66,8 @@ class AutoClassificationRequestBody:
             self.type_list = type_list
         if extended_parameters is not None:
             self.extended_parameters = extended_parameters
+        if detect_seal is not None:
+            self.detect_seal = detect_seal
 
     @property
     def image(self):
@@ -132,7 +139,7 @@ class AutoClassificationRequestBody:
     def extended_parameters(self):
         """Gets the extended_parameters of this AutoClassificationRequestBody.
 
-        可指定需要识别票证的传入参数，具体参数可参考各票证API文档。若不指定则默认传入image 。 当前版本支持票证类型如下： - vat_invoice：增值税发票  - quota_invoice：定额发票  - taxi_invoice：出租车票  - train_ticket：火车票  - flight_itinerary：飞机行程单  - toll_invoice：车辆通行费发票  - mvs_invoice：机动车销售发票  - id_card：身份证  - passport：护照  - driver_license：驾驶证  - vehicle_license：行驶证  - transportation_license：道路运输证  - bankcard：银行卡 > 说明： - 若指定票证参数填写错误会导致该票证识别错误，会提示\"AIS.0101\":\"The input parameter is invalid.\"报错。 
+        可指定需要识别票证的传入参数，具体参数可参考各票证API文档。若不指定则默认传入image 。 当前版本支持票证类型如下： - vat_invoice：增值税发票  - quota_invoice：定额发票  - taxi_invoice：出租车票  - train_ticket：火车票  - flight_itinerary：飞机行程单  - toll_invoice：车辆通行费发票  - mvs_invoice：机动车销售发票  - id_card：身份证  - passport：护照  - driver_license：驾驶证  - vehicle_license：行驶证  - transportation_license：道路运输证  - bankcard：银行卡  - bus_ship_ticket：车船票  - ride_hailing_itinerary：网约车行程单  - machine_printed_invoice：通用机打发票 > 说明： - 若指定票证参数填写错误会导致该票证识别错误，会提示\"AIS.0101\":\"The input parameter is invalid.\"报错。 
 
         :return: The extended_parameters of this AutoClassificationRequestBody.
         :rtype: object
@@ -143,12 +150,34 @@ class AutoClassificationRequestBody:
     def extended_parameters(self, extended_parameters):
         """Sets the extended_parameters of this AutoClassificationRequestBody.
 
-        可指定需要识别票证的传入参数，具体参数可参考各票证API文档。若不指定则默认传入image 。 当前版本支持票证类型如下： - vat_invoice：增值税发票  - quota_invoice：定额发票  - taxi_invoice：出租车票  - train_ticket：火车票  - flight_itinerary：飞机行程单  - toll_invoice：车辆通行费发票  - mvs_invoice：机动车销售发票  - id_card：身份证  - passport：护照  - driver_license：驾驶证  - vehicle_license：行驶证  - transportation_license：道路运输证  - bankcard：银行卡 > 说明： - 若指定票证参数填写错误会导致该票证识别错误，会提示\"AIS.0101\":\"The input parameter is invalid.\"报错。 
+        可指定需要识别票证的传入参数，具体参数可参考各票证API文档。若不指定则默认传入image 。 当前版本支持票证类型如下： - vat_invoice：增值税发票  - quota_invoice：定额发票  - taxi_invoice：出租车票  - train_ticket：火车票  - flight_itinerary：飞机行程单  - toll_invoice：车辆通行费发票  - mvs_invoice：机动车销售发票  - id_card：身份证  - passport：护照  - driver_license：驾驶证  - vehicle_license：行驶证  - transportation_license：道路运输证  - bankcard：银行卡  - bus_ship_ticket：车船票  - ride_hailing_itinerary：网约车行程单  - machine_printed_invoice：通用机打发票 > 说明： - 若指定票证参数填写错误会导致该票证识别错误，会提示\"AIS.0101\":\"The input parameter is invalid.\"报错。 
 
         :param extended_parameters: The extended_parameters of this AutoClassificationRequestBody.
         :type extended_parameters: object
         """
         self._extended_parameters = extended_parameters
+
+    @property
+    def detect_seal(self):
+        """Gets the detect_seal of this AutoClassificationRequestBody.
+
+        检测印章开关，开启时则返回单张票证是否含有印章，否则不返回是否含有印章。可选值包括： - true：开启检测票证是否含有印章功能。  - false：关闭检测票证是否含有印章功能。 > 说明： - 该功能仅检测判断有无印章，不返回印章具体内容。 
+
+        :return: The detect_seal of this AutoClassificationRequestBody.
+        :rtype: bool
+        """
+        return self._detect_seal
+
+    @detect_seal.setter
+    def detect_seal(self, detect_seal):
+        """Sets the detect_seal of this AutoClassificationRequestBody.
+
+        检测印章开关，开启时则返回单张票证是否含有印章，否则不返回是否含有印章。可选值包括： - true：开启检测票证是否含有印章功能。  - false：关闭检测票证是否含有印章功能。 > 说明： - 该功能仅检测判断有无印章，不返回印章具体内容。 
+
+        :param detect_seal: The detect_seal of this AutoClassificationRequestBody.
+        :type detect_seal: bool
+        """
+        self._detect_seal = detect_seal
 
     def to_dict(self):
         """Returns the model properties as a dict"""

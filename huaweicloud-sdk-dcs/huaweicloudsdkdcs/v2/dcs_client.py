@@ -365,6 +365,71 @@ class DcsClient(Client):
 
         return http_info
 
+    def change_master_standby_async(self, request):
+        """异步交换实例主备节点
+
+        异步交换实例主备节点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeMasterStandbyAsync
+        :type request: :class:`huaweicloudsdkdcs.v2.ChangeMasterStandbyAsyncRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ChangeMasterStandbyAsyncResponse`
+        """
+        http_info = self._change_master_standby_async_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_master_standby_async_invoker(self, request):
+        http_info = self._change_master_standby_async_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_master_standby_async_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/async-swap",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeMasterStandbyAsyncResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def copy_instance(self, request):
         """备份指定实例
 
@@ -1968,6 +2033,71 @@ class DcsClient(Client):
 
         return http_info
 
+    def download_ssl_cert(self, request):
+        """下载实例SSL证书
+
+        下载实例SSL证书。该接口目前仅针对Redis 6.0[基础版](tag:hws,hws_hk)版本实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadSslCert
+        :type request: :class:`huaweicloudsdkdcs.v2.DownloadSslCertRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.DownloadSslCertResponse`
+        """
+        http_info = self._download_ssl_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_ssl_cert_invoker(self, request):
+        http_info = self._download_ssl_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_ssl_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/ssl-certs/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadSslCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def exchange_instance_ip(self, request):
         """进行IP交换
 
@@ -2270,6 +2400,140 @@ class DcsClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def hang_up_clients(self, request):
+        """kill指定的会话
+
+        kill指定的会话
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for HangUpClients
+        :type request: :class:`huaweicloudsdkdcs.v2.HangUpClientsRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.HangUpClientsResponse`
+        """
+        http_info = self._hang_up_clients_http_info(request)
+        return self._call_api(**http_info)
+
+    def hang_up_clients_invoker(self, request):
+        http_info = self._hang_up_clients_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _hang_up_clients_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/clients/kill",
+            "request_type": request.__class__.__name__,
+            "response_type": "HangUpClientsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def hang_up_kill_all_clients(self, request):
+        """下发kill指定节点或实例的全部会话任务
+
+        下发kill指定节点或实例的全部会话任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for HangUpKillAllClients
+        :type request: :class:`huaweicloudsdkdcs.v2.HangUpKillAllClientsRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.HangUpKillAllClientsResponse`
+        """
+        http_info = self._hang_up_kill_all_clients_http_info(request)
+        return self._call_api(**http_info)
+
+    def hang_up_kill_all_clients_invoker(self, request):
+        http_info = self._hang_up_kill_all_clients_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _hang_up_kill_all_clients_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/clients/kill-all",
+            "request_type": request.__class__.__name__,
+            "response_type": "HangUpKillAllClientsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -2759,6 +3023,83 @@ class DcsClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_clients(self, request):
+        """获取会话列表
+
+        获取会话列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClients
+        :type request: :class:`huaweicloudsdkdcs.v2.ListClientsRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ListClientsResponse`
+        """
+        http_info = self._list_clients_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_clients_invoker(self, request):
+        http_info = self._list_clients_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_clients_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/clients",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClientsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'addr' in local_var_params:
+            query_params.append(('addr', local_var_params['addr']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
 
         header_params = {}
 
@@ -4658,6 +4999,73 @@ class DcsClient(Client):
 
         return http_info
 
+    def scan_clients(self, request):
+        """下发查询会话列表任务
+
+        下发查询会话列表任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ScanClients
+        :type request: :class:`huaweicloudsdkdcs.v2.ScanClientsRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ScanClientsResponse`
+        """
+        http_info = self._scan_clients_http_info(request)
+        return self._call_api(**http_info)
+
+    def scan_clients_invoker(self, request):
+        http_info = self._scan_clients_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _scan_clients_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/clients",
+            "request_type": request.__class__.__name__,
+            "response_type": "ScanClientsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def scan_expire_key(self, request):
         """立刻扫描过期Key
 
@@ -5291,6 +5699,12 @@ class DcsClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
 
         header_params = {}
 
@@ -5475,6 +5889,71 @@ class DcsClient(Client):
             "resource_path": "/v2/{project_id}/instances/{instance_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_ssl_detail(self, request):
+        """查询实例SSL信息
+
+        查询实例SSL信息。该接口目前仅针对Redis 6.0[基础版](tag:hws,hws_hk)版本实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceSslDetail
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowInstanceSslDetailRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowInstanceSslDetailResponse`
+        """
+        http_info = self._show_instance_ssl_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_ssl_detail_invoker(self, request):
+        http_info = self._show_instance_ssl_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_ssl_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/ssl",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceSslDetailResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -7168,6 +7647,138 @@ class DcsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ssl_switch(self, request):
+        """开启/关闭SSL
+
+        开启/关闭SSL。该接口目前仅针对Redis 6.0[基础版](tag:hws,hws_hk)版本实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSslSwitch
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateSslSwitchRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateSslSwitchResponse`
+        """
+        http_info = self._update_ssl_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ssl_switch_invoker(self, request):
+        http_info = self._update_ssl_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ssl_switch_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/ssl",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSslSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_deletable_replica(self, request):
+        """校验集群副本是否支持删除
+
+        校验集群副本是否支持删除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ValidateDeletableReplica
+        :type request: :class:`huaweicloudsdkdcs.v2.ValidateDeletableReplicaRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ValidateDeletableReplicaResponse`
+        """
+        http_info = self._validate_deletable_replica_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_deletable_replica_invoker(self, request):
+        http_info = self._validate_deletable_replica_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_deletable_replica_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/deletable-replication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateDeletableReplicaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

@@ -50,9 +50,9 @@ class ShowCesHierarchyResponse(SdkResponse):
         :type nodes: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespNodes`]
         :param queues: 队列信息。
         :type queues: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespQueues`]
-        :param vhosts: 
+        :param vhosts: vhost信息
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]
-        :param exchanges: 
+        :param exchanges: exchange信息
         :type exchanges: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespExchanges`]
         :param groups: 消费组信息。
         :type groups: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespGroups`]
@@ -176,6 +176,8 @@ class ShowCesHierarchyResponse(SdkResponse):
     def vhosts(self):
         """Gets the vhosts of this ShowCesHierarchyResponse.
 
+        vhost信息
+
         :return: The vhosts of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]
         """
@@ -184,6 +186,8 @@ class ShowCesHierarchyResponse(SdkResponse):
     @vhosts.setter
     def vhosts(self, vhosts):
         """Sets the vhosts of this ShowCesHierarchyResponse.
+
+        vhost信息
 
         :param vhosts: The vhosts of this ShowCesHierarchyResponse.
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]
@@ -194,6 +198,8 @@ class ShowCesHierarchyResponse(SdkResponse):
     def exchanges(self):
         """Gets the exchanges of this ShowCesHierarchyResponse.
 
+        exchange信息
+
         :return: The exchanges of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespExchanges`]
         """
@@ -202,6 +208,8 @@ class ShowCesHierarchyResponse(SdkResponse):
     @exchanges.setter
     def exchanges(self, exchanges):
         """Sets the exchanges of this ShowCesHierarchyResponse.
+
+        exchange信息
 
         :param exchanges: The exchanges of this ShowCesHierarchyResponse.
         :type exchanges: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespExchanges`]

@@ -32,6 +32,71 @@ class OmsAsyncClient(Client):
 
         return client_builder
 
+    def batch_update_tasks_async(self, request):
+        """批量更新任务
+
+        批量更新迁移任务，可指定单个迁移任务组下所有的迁移任务或通过迁移任务ID来执行。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateTasks
+        :type request: :class:`huaweicloudsdkoms.v2.BatchUpdateTasksRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.BatchUpdateTasksResponse`
+        """
+        http_info = self._batch_update_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_tasks_async_invoker(self, request):
+        http_info = self._batch_update_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_tasks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/tasks/batch-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def check_prefix_async(self, request):
         """检查前缀是否在源端桶中存在
 
@@ -363,7 +428,7 @@ class OmsAsyncClient(Client):
         """删除同步任务
 
         调用该接口删除同步任务。
-        正在同步的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务(目前只支持华北-北京四、华东-上海一地区)。
+        正在同步的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -631,7 +696,7 @@ class OmsAsyncClient(Client):
     def list_sync_tasks_async(self, request):
         """查询同步任务列表
 
-        查询用户名下所有同步任务信息(目前只支持华北-北京四、华东-上海一地区)。
+        查询用户名下所有同步任务信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1295,7 +1360,7 @@ class OmsAsyncClient(Client):
     def show_sync_task_async(self, request):
         """查询指定ID的同步任务详情
 
-        查询指定ID的同步任务详情(目前只支持华北-北京四、华东-上海一地区)。
+        查询指定ID的同步任务详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

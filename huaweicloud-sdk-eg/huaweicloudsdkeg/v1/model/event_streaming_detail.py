@@ -24,7 +24,7 @@ class EventStreamingDetail:
         'rule_config': 'EventStreamingCreateReqRuleConfig',
         'option': 'RunOption',
         'status': 'str',
-        'streaming_id': 'str',
+        'id': 'str',
         'created_time': 'str',
         'updated_time': 'str'
     }
@@ -37,12 +37,12 @@ class EventStreamingDetail:
         'rule_config': 'rule_config',
         'option': 'option',
         'status': 'status',
-        'streaming_id': 'streaming_id',
+        'id': 'id',
         'created_time': 'created_time',
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, name=None, description=None, source=None, sink=None, rule_config=None, option=None, status=None, streaming_id=None, created_time=None, updated_time=None):
+    def __init__(self, name=None, description=None, source=None, sink=None, rule_config=None, option=None, status=None, id=None, created_time=None, updated_time=None):
         """EventStreamingDetail
 
         The model defined in huaweicloud sdk
@@ -61,8 +61,8 @@ class EventStreamingDetail:
         :type option: :class:`huaweicloudsdkeg.v1.RunOption`
         :param status: 事件流状态
         :type status: str
-        :param streaming_id: 事件流ID
-        :type streaming_id: str
+        :param id: 事件流ID
+        :type id: str
         :param created_time: 创建时间
         :type created_time: str
         :param updated_time: 更新时间
@@ -78,7 +78,7 @@ class EventStreamingDetail:
         self._rule_config = None
         self._option = None
         self._status = None
-        self._streaming_id = None
+        self._id = None
         self._created_time = None
         self._updated_time = None
         self.discriminator = None
@@ -94,8 +94,8 @@ class EventStreamingDetail:
             self.option = option
         if status is not None:
             self.status = status
-        if streaming_id is not None:
-            self.streaming_id = streaming_id
+        if id is not None:
+            self.id = id
         if created_time is not None:
             self.created_time = created_time
         if updated_time is not None:
@@ -240,26 +240,26 @@ class EventStreamingDetail:
         self._status = status
 
     @property
-    def streaming_id(self):
-        """Gets the streaming_id of this EventStreamingDetail.
+    def id(self):
+        """Gets the id of this EventStreamingDetail.
 
         事件流ID
 
-        :return: The streaming_id of this EventStreamingDetail.
+        :return: The id of this EventStreamingDetail.
         :rtype: str
         """
-        return self._streaming_id
+        return self._id
 
-    @streaming_id.setter
-    def streaming_id(self, streaming_id):
-        """Sets the streaming_id of this EventStreamingDetail.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this EventStreamingDetail.
 
         事件流ID
 
-        :param streaming_id: The streaming_id of this EventStreamingDetail.
-        :type streaming_id: str
+        :param id: The id of this EventStreamingDetail.
+        :type id: str
         """
-        self._streaming_id = streaming_id
+        self._id = id
 
     @property
     def created_time(self):

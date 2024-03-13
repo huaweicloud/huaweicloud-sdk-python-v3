@@ -21,7 +21,8 @@ class DockingReceptorDto:
         'bounding_box': 'BoundingBoxDto',
         'remove_ion': 'bool',
         'remove_water': 'bool',
-        'remove_ligand': 'bool'
+        'remove_ligand': 'bool',
+        'add_hydrogen': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class DockingReceptorDto:
         'bounding_box': 'bounding_box',
         'remove_ion': 'remove_ion',
         'remove_water': 'remove_water',
-        'remove_ligand': 'remove_ligand'
+        'remove_ligand': 'remove_ligand',
+        'add_hydrogen': 'add_hydrogen'
     }
 
-    def __init__(self, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None):
+    def __init__(self, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
         """DockingReceptorDto
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class DockingReceptorDto:
         :type remove_water: bool
         :param remove_ligand: 去除受体中的配体分子
         :type remove_ligand: bool
+        :param add_hydrogen: 增加氢原子
+        :type add_hydrogen: bool
         """
         
         
@@ -56,6 +60,7 @@ class DockingReceptorDto:
         self._remove_ion = None
         self._remove_water = None
         self._remove_ligand = None
+        self._add_hydrogen = None
         self.discriminator = None
 
         self.receptor = receptor
@@ -66,6 +71,8 @@ class DockingReceptorDto:
             self.remove_water = remove_water
         if remove_ligand is not None:
             self.remove_ligand = remove_ligand
+        if add_hydrogen is not None:
+            self.add_hydrogen = add_hydrogen
 
     @property
     def receptor(self):
@@ -168,6 +175,28 @@ class DockingReceptorDto:
         :type remove_ligand: bool
         """
         self._remove_ligand = remove_ligand
+
+    @property
+    def add_hydrogen(self):
+        """Gets the add_hydrogen of this DockingReceptorDto.
+
+        增加氢原子
+
+        :return: The add_hydrogen of this DockingReceptorDto.
+        :rtype: bool
+        """
+        return self._add_hydrogen
+
+    @add_hydrogen.setter
+    def add_hydrogen(self, add_hydrogen):
+        """Sets the add_hydrogen of this DockingReceptorDto.
+
+        增加氢原子
+
+        :param add_hydrogen: The add_hydrogen of this DockingReceptorDto.
+        :type add_hydrogen: bool
+        """
+        self._add_hydrogen = add_hydrogen
 
     def to_dict(self):
         """Returns the model properties as a dict"""

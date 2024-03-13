@@ -29,7 +29,7 @@ class ListSessionByUserNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 用户名
+        :param user_name: 用户名。
         :type user_name: str
         """
         
@@ -44,7 +44,7 @@ class ListSessionByUserNameRequest:
     def user_name(self):
         """Gets the user_name of this ListSessionByUserNameRequest.
 
-        用户名
+        用户名。
 
         :return: The user_name of this ListSessionByUserNameRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListSessionByUserNameRequest:
     def user_name(self, user_name):
         """Sets the user_name of this ListSessionByUserNameRequest.
 
-        用户名
+        用户名。
 
         :param user_name: The user_name of this ListSessionByUserNameRequest.
         :type user_name: str

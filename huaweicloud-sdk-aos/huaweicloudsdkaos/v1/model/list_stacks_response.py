@@ -30,7 +30,7 @@ class ListStacksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param stacks: 资源栈列表。默认按照生成时间排序，最早生成的在最前
+        :param stacks: 资源栈列表。默认按照生成时间降序排序，最新生成的在最前
         :type stacks: list[:class:`huaweicloudsdkaos.v1.Stack`]
         """
         
@@ -46,7 +46,7 @@ class ListStacksResponse(SdkResponse):
     def stacks(self):
         """Gets the stacks of this ListStacksResponse.
 
-        资源栈列表。默认按照生成时间排序，最早生成的在最前
+        资源栈列表。默认按照生成时间降序排序，最新生成的在最前
 
         :return: The stacks of this ListStacksResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.Stack`]
@@ -57,7 +57,7 @@ class ListStacksResponse(SdkResponse):
     def stacks(self, stacks):
         """Sets the stacks of this ListStacksResponse.
 
-        资源栈列表。默认按照生成时间排序，最早生成的在最前
+        资源栈列表。默认按照生成时间降序排序，最新生成的在最前
 
         :param stacks: The stacks of this ListStacksResponse.
         :type stacks: list[:class:`huaweicloudsdkaos.v1.Stack`]

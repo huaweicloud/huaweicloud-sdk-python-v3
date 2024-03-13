@@ -1565,6 +1565,75 @@ class EiHealthClient(Client):
 
         return http_info
 
+    def create_cluster_job(self, request):
+        """创建分子聚类作业
+
+        创建分子聚类作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateClusterJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateClusterJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateClusterJobResponse`
+        """
+        http_info = self._create_cluster_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_cluster_job_invoker(self, request):
+        http_info = self._create_cluster_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/{job_id}/cluster",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_code(self, request):
         """发送验证码
 
@@ -5115,6 +5184,207 @@ class EiHealthClient(Client):
             "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs",
             "request_type": request.__class__.__name__,
             "response_type": "ExecuteJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def generate_complex_combine(self, request):
+        """将传入的蛋白和小分子拼接成复合物结构
+
+        将传入的蛋白和小分子拼接成复合物结构
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GenerateComplexCombine
+        :type request: :class:`huaweicloudsdkeihealth.v1.GenerateComplexCombineRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.GenerateComplexCombineResponse`
+        """
+        http_info = self._generate_complex_combine_http_info(request)
+        return self._call_api(**http_info)
+
+    def generate_complex_combine_invoker(self, request):
+        http_info = self._generate_complex_combine_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _generate_complex_combine_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/toolkit/complex-combine",
+            "request_type": request.__class__.__name__,
+            "response_type": "GenerateComplexCombineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def generate_pocket_file(self, request):
+        """根据center、size、padding参数生成可渲染的口袋文件内容
+
+        根据center、size、padding参数生成可渲染的口袋文件内容
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GeneratePocketFile
+        :type request: :class:`huaweicloudsdkeihealth.v1.GeneratePocketFileRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.GeneratePocketFileResponse`
+        """
+        http_info = self._generate_pocket_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def generate_pocket_file_invoker(self, request):
+        http_info = self._generate_pocket_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _generate_pocket_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/toolkit/pocket",
+            "request_type": request.__class__.__name__,
+            "response_type": "GeneratePocketFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def generate_surface_points(self, request):
+        """根据表面离散点坐标集生成可渲染的文件内容
+
+        根据表面离散点坐标集生成可渲染的文件内容
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GenerateSurfacePoints
+        :type request: :class:`huaweicloudsdkeihealth.v1.GenerateSurfacePointsRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.GenerateSurfacePointsResponse`
+        """
+        http_info = self._generate_surface_points_http_info(request)
+        return self._call_api(**http_info)
+
+    def generate_surface_points_invoker(self, request):
+        http_info = self._generate_surface_points_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _generate_surface_points_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/toolkit/surface-points",
+            "request_type": request.__class__.__name__,
+            "response_type": "GenerateSurfacePointsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -24,7 +24,8 @@ class AppRules:
         'id': 'str',
         'name': 'str',
         'projectid': 'str',
-        'spec': 'AppRulesSpec'
+        'spec': 'AppRulesSpec',
+        'desc': 'str'
     }
 
     attribute_map = {
@@ -35,30 +36,33 @@ class AppRules:
         'id': 'id',
         'name': 'name',
         'projectid': 'projectid',
-        'spec': 'spec'
+        'spec': 'spec',
+        'desc': 'desc'
     }
 
-    def __init__(self, create_time=None, enable=None, event_name=None, hostid=None, id=None, name=None, projectid=None, spec=None):
+    def __init__(self, create_time=None, enable=None, event_name=None, hostid=None, id=None, name=None, projectid=None, spec=None, desc=None):
         """AppRules
 
         The model defined in huaweicloud sdk
 
-        :param create_time: 规则创建时间(创建时不传,修改时传查询返回的createTime)。
+        :param create_time: 规则创建时间(创建时不传，修改时传查询返回的createTime)。
         :type create_time: str
         :param enable: true、false 规则是否启用。
         :type enable: bool
-        :param event_name: aom_inventory_rules_event 规则事件名称,对于服务发现固定 为\&quot;aom_inventory_rules_event\&quot;。
+        :param event_name: aom_inventory_rules_event规则事件名称，对于服务发现固定为\&quot;aom_inventory_rules_event\&quot;。
         :type event_name: str
-        :param hostid: 主机ID(暂不使用,传空即可)。
+        :param hostid: 主机ID（暂不使用，传空即可）。
         :type hostid: list[str]
         :param id: 创建时填空，修改时填规则ID。
         :type id: str
-        :param name: 规则名称。 字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。
+        :param name: 规则名称。 字符长度为4到63位，以小写字母a-z开头，只能包含0-9/a-z/-，不能以-结尾。
         :type name: str
-        :param projectid: 租户从IAM申请到的projectid,一般为32位字符串。
+        :param projectid: 租户从IAM申请到的projectid，一般为32位字符串。
         :type projectid: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkaom.v2.AppRulesSpec`
+        :param desc: 自定义描述信息
+        :type desc: str
         """
         
         
@@ -71,6 +75,7 @@ class AppRules:
         self._name = None
         self._projectid = None
         self._spec = None
+        self._desc = None
         self.discriminator = None
 
         if create_time is not None:
@@ -83,12 +88,14 @@ class AppRules:
         self.name = name
         self.projectid = projectid
         self.spec = spec
+        if desc is not None:
+            self.desc = desc
 
     @property
     def create_time(self):
         """Gets the create_time of this AppRules.
 
-        规则创建时间(创建时不传,修改时传查询返回的createTime)。
+        规则创建时间(创建时不传，修改时传查询返回的createTime)。
 
         :return: The create_time of this AppRules.
         :rtype: str
@@ -99,7 +106,7 @@ class AppRules:
     def create_time(self, create_time):
         """Sets the create_time of this AppRules.
 
-        规则创建时间(创建时不传,修改时传查询返回的createTime)。
+        规则创建时间(创建时不传，修改时传查询返回的createTime)。
 
         :param create_time: The create_time of this AppRules.
         :type create_time: str
@@ -132,7 +139,7 @@ class AppRules:
     def event_name(self):
         """Gets the event_name of this AppRules.
 
-        aom_inventory_rules_event 规则事件名称,对于服务发现固定 为\"aom_inventory_rules_event\"。
+        aom_inventory_rules_event规则事件名称，对于服务发现固定为\"aom_inventory_rules_event\"。
 
         :return: The event_name of this AppRules.
         :rtype: str
@@ -143,7 +150,7 @@ class AppRules:
     def event_name(self, event_name):
         """Sets the event_name of this AppRules.
 
-        aom_inventory_rules_event 规则事件名称,对于服务发现固定 为\"aom_inventory_rules_event\"。
+        aom_inventory_rules_event规则事件名称，对于服务发现固定为\"aom_inventory_rules_event\"。
 
         :param event_name: The event_name of this AppRules.
         :type event_name: str
@@ -154,7 +161,7 @@ class AppRules:
     def hostid(self):
         """Gets the hostid of this AppRules.
 
-        主机ID(暂不使用,传空即可)。
+        主机ID（暂不使用，传空即可）。
 
         :return: The hostid of this AppRules.
         :rtype: list[str]
@@ -165,7 +172,7 @@ class AppRules:
     def hostid(self, hostid):
         """Sets the hostid of this AppRules.
 
-        主机ID(暂不使用,传空即可)。
+        主机ID（暂不使用，传空即可）。
 
         :param hostid: The hostid of this AppRules.
         :type hostid: list[str]
@@ -198,7 +205,7 @@ class AppRules:
     def name(self):
         """Gets the name of this AppRules.
 
-        规则名称。 字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。
+        规则名称。 字符长度为4到63位，以小写字母a-z开头，只能包含0-9/a-z/-，不能以-结尾。
 
         :return: The name of this AppRules.
         :rtype: str
@@ -209,7 +216,7 @@ class AppRules:
     def name(self, name):
         """Sets the name of this AppRules.
 
-        规则名称。 字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。
+        规则名称。 字符长度为4到63位，以小写字母a-z开头，只能包含0-9/a-z/-，不能以-结尾。
 
         :param name: The name of this AppRules.
         :type name: str
@@ -220,7 +227,7 @@ class AppRules:
     def projectid(self):
         """Gets the projectid of this AppRules.
 
-        租户从IAM申请到的projectid,一般为32位字符串。
+        租户从IAM申请到的projectid，一般为32位字符串。
 
         :return: The projectid of this AppRules.
         :rtype: str
@@ -231,7 +238,7 @@ class AppRules:
     def projectid(self, projectid):
         """Sets the projectid of this AppRules.
 
-        租户从IAM申请到的projectid,一般为32位字符串。
+        租户从IAM申请到的projectid，一般为32位字符串。
 
         :param projectid: The projectid of this AppRules.
         :type projectid: str
@@ -255,6 +262,28 @@ class AppRules:
         :type spec: :class:`huaweicloudsdkaom.v2.AppRulesSpec`
         """
         self._spec = spec
+
+    @property
+    def desc(self):
+        """Gets the desc of this AppRules.
+
+        自定义描述信息
+
+        :return: The desc of this AppRules.
+        :rtype: str
+        """
+        return self._desc
+
+    @desc.setter
+    def desc(self, desc):
+        """Sets the desc of this AppRules.
+
+        自定义描述信息
+
+        :param desc: The desc of this AppRules.
+        :type desc: str
+        """
+        self._desc = desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -40,6 +40,9 @@ class CreateWebinarResponse(SdkResponse):
         'audience_join_uri': 'str',
         'audience_passwd': 'str',
         'enable_recording': 'YesNoEnum',
+        'live_address': 'str',
+        'aux_address': 'str',
+        'live_url': 'str',
         'attendees': 'list[str]'
     }
 
@@ -66,10 +69,13 @@ class CreateWebinarResponse(SdkResponse):
         'audience_join_uri': 'audienceJoinUri',
         'audience_passwd': 'audiencePasswd',
         'enable_recording': 'enableRecording',
+        'live_address': 'liveAddress',
+        'aux_address': 'auxAddress',
+        'live_url': 'liveUrl',
         'attendees': 'attendees'
     }
 
-    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, enable_recording=None, attendees=None):
+    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, enable_recording=None, live_address=None, aux_address=None, live_url=None, attendees=None):
         """CreateWebinarResponse
 
         The model defined in huaweicloud sdk
@@ -118,6 +124,12 @@ class CreateWebinarResponse(SdkResponse):
         :type audience_passwd: str
         :param enable_recording: 
         :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        :param live_address: 主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+        :type live_address: str
+        :param aux_address: 辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+        :type aux_address: str
+        :param live_url: 直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
+        :type live_url: str
         :param attendees: 与会嘉宾名称列表。
         :type attendees: list[str]
         """
@@ -146,6 +158,9 @@ class CreateWebinarResponse(SdkResponse):
         self._audience_join_uri = None
         self._audience_passwd = None
         self._enable_recording = None
+        self._live_address = None
+        self._aux_address = None
+        self._live_url = None
         self._attendees = None
         self.discriminator = None
 
@@ -193,6 +208,12 @@ class CreateWebinarResponse(SdkResponse):
             self.audience_passwd = audience_passwd
         if enable_recording is not None:
             self.enable_recording = enable_recording
+        if live_address is not None:
+            self.live_address = live_address
+        if aux_address is not None:
+            self.aux_address = aux_address
+        if live_url is not None:
+            self.live_url = live_url
         if attendees is not None:
             self.attendees = attendees
 
@@ -671,6 +692,72 @@ class CreateWebinarResponse(SdkResponse):
         :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
         """
         self._enable_recording = enable_recording
+
+    @property
+    def live_address(self):
+        """Gets the live_address of this CreateWebinarResponse.
+
+        主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+
+        :return: The live_address of this CreateWebinarResponse.
+        :rtype: str
+        """
+        return self._live_address
+
+    @live_address.setter
+    def live_address(self, live_address):
+        """Sets the live_address of this CreateWebinarResponse.
+
+        主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+
+        :param live_address: The live_address of this CreateWebinarResponse.
+        :type live_address: str
+        """
+        self._live_address = live_address
+
+    @property
+    def aux_address(self):
+        """Gets the aux_address of this CreateWebinarResponse.
+
+        辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+
+        :return: The aux_address of this CreateWebinarResponse.
+        :rtype: str
+        """
+        return self._aux_address
+
+    @aux_address.setter
+    def aux_address(self, aux_address):
+        """Sets the aux_address of this CreateWebinarResponse.
+
+        辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
+
+        :param aux_address: The aux_address of this CreateWebinarResponse.
+        :type aux_address: str
+        """
+        self._aux_address = aux_address
+
+    @property
+    def live_url(self):
+        """Gets the live_url of this CreateWebinarResponse.
+
+        直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
+
+        :return: The live_url of this CreateWebinarResponse.
+        :rtype: str
+        """
+        return self._live_url
+
+    @live_url.setter
+    def live_url(self, live_url):
+        """Sets the live_url of this CreateWebinarResponse.
+
+        直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
+
+        :param live_url: The live_url of this CreateWebinarResponse.
+        :type live_url: str
+        """
+        self._live_url = live_url
 
     @property
     def attendees(self):

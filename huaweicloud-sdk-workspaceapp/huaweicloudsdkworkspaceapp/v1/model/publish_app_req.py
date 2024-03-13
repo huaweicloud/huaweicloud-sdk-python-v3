@@ -29,7 +29,7 @@ class PublishAppReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: 发布应用列表(单次最多20个应用)
+        :param items: 发布应用列表(单次最多20个应用)。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PublishApp`]
         """
         
@@ -44,7 +44,7 @@ class PublishAppReq:
     def items(self):
         """Gets the items of this PublishAppReq.
 
-        发布应用列表(单次最多20个应用)
+        发布应用列表(单次最多20个应用)。
 
         :return: The items of this PublishAppReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.PublishApp`]
@@ -55,7 +55,7 @@ class PublishAppReq:
     def items(self, items):
         """Sets the items of this PublishAppReq.
 
-        发布应用列表(单次最多20个应用)
+        发布应用列表(单次最多20个应用)。
 
         :param items: The items of this PublishAppReq.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PublishApp`]

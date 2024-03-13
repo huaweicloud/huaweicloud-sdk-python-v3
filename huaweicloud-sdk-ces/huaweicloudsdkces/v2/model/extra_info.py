@@ -53,8 +53,7 @@ class ExtraInfo:
         self._custom_proc_name = None
         self.discriminator = None
 
-        if origin_metric_name is not None:
-            self.origin_metric_name = origin_metric_name
+        self.origin_metric_name = origin_metric_name
         if metric_prefix is not None:
             self.metric_prefix = metric_prefix
         if metric_type is not None:

@@ -18,15 +18,17 @@ class VideoLayerConfig:
 
     openapi_types = {
         'video_url': 'str',
-        'video_cover_url': 'str'
+        'video_cover_url': 'str',
+        'loop_count': 'int'
     }
 
     attribute_map = {
         'video_url': 'video_url',
-        'video_cover_url': 'video_cover_url'
+        'video_cover_url': 'video_cover_url',
+        'loop_count': 'loop_count'
     }
 
-    def __init__(self, video_url=None, video_cover_url=None):
+    def __init__(self, video_url=None, video_cover_url=None, loop_count=None):
         """VideoLayerConfig
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class VideoLayerConfig:
         :type video_url: str
         :param video_cover_url: 视频封面文件的URL。
         :type video_cover_url: str
+        :param loop_count: 循环播放视频次数。
+        :type loop_count: int
         """
         
         
 
         self._video_url = None
         self._video_cover_url = None
+        self._loop_count = None
         self.discriminator = None
 
         if video_url is not None:
             self.video_url = video_url
         if video_cover_url is not None:
             self.video_cover_url = video_cover_url
+        if loop_count is not None:
+            self.loop_count = loop_count
 
     @property
     def video_url(self):
@@ -91,6 +98,28 @@ class VideoLayerConfig:
         :type video_cover_url: str
         """
         self._video_cover_url = video_cover_url
+
+    @property
+    def loop_count(self):
+        """Gets the loop_count of this VideoLayerConfig.
+
+        循环播放视频次数。
+
+        :return: The loop_count of this VideoLayerConfig.
+        :rtype: int
+        """
+        return self._loop_count
+
+    @loop_count.setter
+    def loop_count(self, loop_count):
+        """Sets the loop_count of this VideoLayerConfig.
+
+        循环播放视频次数。
+
+        :param loop_count: The loop_count of this VideoLayerConfig.
+        :type loop_count: int
+        """
+        self._loop_count = loop_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

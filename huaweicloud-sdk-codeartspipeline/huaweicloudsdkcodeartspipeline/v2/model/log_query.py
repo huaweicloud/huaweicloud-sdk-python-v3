@@ -20,21 +20,17 @@ class LogQuery:
         'start_offset': 'int',
         'end_offset': 'int',
         'limit': 'int',
-        'sort': 'str',
-        'level': 'str',
-        'job_run_id': 'str'
+        'sort': 'str'
     }
 
     attribute_map = {
         'start_offset': 'start_offset',
         'end_offset': 'end_offset',
         'limit': 'limit',
-        'sort': 'sort',
-        'level': 'level',
-        'job_run_id': 'job_run_id'
+        'sort': 'sort'
     }
 
-    def __init__(self, start_offset=None, end_offset=None, limit=None, sort=None, level=None, job_run_id=None):
+    def __init__(self, start_offset=None, end_offset=None, limit=None, sort=None):
         """LogQuery
 
         The model defined in huaweicloud sdk
@@ -47,10 +43,6 @@ class LogQuery:
         :type limit: int
         :param sort: 排序规则[\&quot;asc\&quot;,\&quot;desc\&quot;]
         :type sort: str
-        :param level: 
-        :type level: str
-        :param job_run_id: 
-        :type job_run_id: str
         """
         
         
@@ -59,8 +51,6 @@ class LogQuery:
         self._end_offset = None
         self._limit = None
         self._sort = None
-        self._level = None
-        self._job_run_id = None
         self.discriminator = None
 
         if start_offset is not None:
@@ -69,10 +59,6 @@ class LogQuery:
             self.end_offset = end_offset
         self.limit = limit
         self.sort = sort
-        if level is not None:
-            self.level = level
-        if job_run_id is not None:
-            self.job_run_id = job_run_id
 
     @property
     def start_offset(self):
@@ -161,42 +147,6 @@ class LogQuery:
         :type sort: str
         """
         self._sort = sort
-
-    @property
-    def level(self):
-        """Gets the level of this LogQuery.
-
-        :return: The level of this LogQuery.
-        :rtype: str
-        """
-        return self._level
-
-    @level.setter
-    def level(self, level):
-        """Sets the level of this LogQuery.
-
-        :param level: The level of this LogQuery.
-        :type level: str
-        """
-        self._level = level
-
-    @property
-    def job_run_id(self):
-        """Gets the job_run_id of this LogQuery.
-
-        :return: The job_run_id of this LogQuery.
-        :rtype: str
-        """
-        return self._job_run_id
-
-    @job_run_id.setter
-    def job_run_id(self, job_run_id):
-        """Sets the job_run_id of this LogQuery.
-
-        :param job_run_id: The job_run_id of this LogQuery.
-        :type job_run_id: str
-        """
-        self._job_run_id = job_run_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

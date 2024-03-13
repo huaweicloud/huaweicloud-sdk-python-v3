@@ -19,16 +19,18 @@ class CreateAlarmTemplateRequestBody:
     openapi_types = {
         'template_name': 'str',
         'template_description': 'str',
+        'template_type': 'int',
         'policies': 'list[Policies]'
     }
 
     attribute_map = {
         'template_name': 'template_name',
         'template_description': 'template_description',
+        'template_type': 'template_type',
         'policies': 'policies'
     }
 
-    def __init__(self, template_name=None, template_description=None, policies=None):
+    def __init__(self, template_name=None, template_description=None, template_type=None, policies=None):
         """CreateAlarmTemplateRequestBody
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class CreateAlarmTemplateRequestBody:
         :type template_name: str
         :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
         :type template_description: str
+        :param template_type: 自定义告警模板类型 0：指标 2： 事件
+        :type template_type: int
         :param policies: 告警模板策略列表
         :type policies: list[:class:`huaweicloudsdkces.v2.Policies`]
         """
@@ -45,12 +49,15 @@ class CreateAlarmTemplateRequestBody:
 
         self._template_name = None
         self._template_description = None
+        self._template_type = None
         self._policies = None
         self.discriminator = None
 
         self.template_name = template_name
         if template_description is not None:
             self.template_description = template_description
+        if template_type is not None:
+            self.template_type = template_type
         self.policies = policies
 
     @property
@@ -96,6 +103,28 @@ class CreateAlarmTemplateRequestBody:
         :type template_description: str
         """
         self._template_description = template_description
+
+    @property
+    def template_type(self):
+        """Gets the template_type of this CreateAlarmTemplateRequestBody.
+
+        自定义告警模板类型 0：指标 2： 事件
+
+        :return: The template_type of this CreateAlarmTemplateRequestBody.
+        :rtype: int
+        """
+        return self._template_type
+
+    @template_type.setter
+    def template_type(self, template_type):
+        """Sets the template_type of this CreateAlarmTemplateRequestBody.
+
+        自定义告警模板类型 0：指标 2： 事件
+
+        :param template_type: The template_type of this CreateAlarmTemplateRequestBody.
+        :type template_type: int
+        """
+        self._template_type = template_type
 
     @property
     def policies(self):

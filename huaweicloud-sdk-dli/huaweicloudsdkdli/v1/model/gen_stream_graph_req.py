@@ -18,6 +18,7 @@ class GenStreamGraphReq:
 
     openapi_types = {
         'sql_body': 'str',
+        'flink_version': 'str',
         'cu_number': 'int',
         'manager_cu_number': 'int',
         'parallel_number': 'int',
@@ -32,6 +33,7 @@ class GenStreamGraphReq:
 
     attribute_map = {
         'sql_body': 'sql_body',
+        'flink_version': 'flink_version',
         'cu_number': 'cu_number',
         'manager_cu_number': 'manager_cu_number',
         'parallel_number': 'parallel_number',
@@ -44,13 +46,15 @@ class GenStreamGraphReq:
         'static_estimator_config': 'static_estimator_config'
     }
 
-    def __init__(self, sql_body=None, cu_number=None, manager_cu_number=None, parallel_number=None, tm_cus=None, tm_slot_num=None, operator_config=None, static_estimator=None, job_type=None, graph_type=None, static_estimator_config=None):
+    def __init__(self, sql_body=None, flink_version=None, cu_number=None, manager_cu_number=None, parallel_number=None, tm_cus=None, tm_slot_num=None, operator_config=None, static_estimator=None, job_type=None, graph_type=None, static_estimator_config=None):
         """GenStreamGraphReq
 
         The model defined in huaweicloud sdk
 
         :param sql_body: SQL
         :type sql_body: str
+        :param flink_version: flink版本。可以为空，也可以填写1.10或1.12。
+        :type flink_version: str
         :param cu_number: CU总数
         :type cu_number: int
         :param manager_cu_number: 管理单元CU数量
@@ -76,6 +80,7 @@ class GenStreamGraphReq:
         
 
         self._sql_body = None
+        self._flink_version = None
         self._cu_number = None
         self._manager_cu_number = None
         self._parallel_number = None
@@ -89,6 +94,8 @@ class GenStreamGraphReq:
         self.discriminator = None
 
         self.sql_body = sql_body
+        if flink_version is not None:
+            self.flink_version = flink_version
         if cu_number is not None:
             self.cu_number = cu_number
         if manager_cu_number is not None:
@@ -131,6 +138,28 @@ class GenStreamGraphReq:
         :type sql_body: str
         """
         self._sql_body = sql_body
+
+    @property
+    def flink_version(self):
+        """Gets the flink_version of this GenStreamGraphReq.
+
+        flink版本。可以为空，也可以填写1.10或1.12。
+
+        :return: The flink_version of this GenStreamGraphReq.
+        :rtype: str
+        """
+        return self._flink_version
+
+    @flink_version.setter
+    def flink_version(self, flink_version):
+        """Sets the flink_version of this GenStreamGraphReq.
+
+        flink版本。可以为空，也可以填写1.10或1.12。
+
+        :param flink_version: The flink_version of this GenStreamGraphReq.
+        :type flink_version: str
+        """
+        self._flink_version = flink_version
 
     @property
     def cu_number(self):

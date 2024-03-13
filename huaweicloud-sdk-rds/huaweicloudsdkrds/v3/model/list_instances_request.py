@@ -22,6 +22,7 @@ class ListInstancesRequest:
         'name': 'str',
         'type': 'str',
         'datastore_type': 'str',
+        'eps_id': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
         'offset': 'int',
@@ -35,6 +36,7 @@ class ListInstancesRequest:
         'name': 'name',
         'type': 'type',
         'datastore_type': 'datastore_type',
+        'eps_id': 'eps_id',
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
         'offset': 'offset',
@@ -42,7 +44,7 @@ class ListInstancesRequest:
         'tags': 'tags'
     }
 
-    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None):
+    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, eps_id=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None):
         """ListInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ListInstancesRequest:
         :type type: str
         :param datastore_type: 数据库类型，区分大小写。 - MySQL - PostgreSQL - SQLServer - MariaDB
         :type datastore_type: str
+        :param eps_id: 企业项目id。
+        :type eps_id: str
         :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
         :param subnet_id: 子网ID。
@@ -76,6 +80,7 @@ class ListInstancesRequest:
         self._name = None
         self._type = None
         self._datastore_type = None
+        self._eps_id = None
         self._vpc_id = None
         self._subnet_id = None
         self._offset = None
@@ -93,6 +98,8 @@ class ListInstancesRequest:
             self.type = type
         if datastore_type is not None:
             self.datastore_type = datastore_type
+        if eps_id is not None:
+            self.eps_id = eps_id
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if subnet_id is not None:
@@ -213,6 +220,28 @@ class ListInstancesRequest:
         :type datastore_type: str
         """
         self._datastore_type = datastore_type
+
+    @property
+    def eps_id(self):
+        """Gets the eps_id of this ListInstancesRequest.
+
+        企业项目id。
+
+        :return: The eps_id of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._eps_id
+
+    @eps_id.setter
+    def eps_id(self, eps_id):
+        """Sets the eps_id of this ListInstancesRequest.
+
+        企业项目id。
+
+        :param eps_id: The eps_id of this ListInstancesRequest.
+        :type eps_id: str
+        """
+        self._eps_id = eps_id
 
     @property
     def vpc_id(self):

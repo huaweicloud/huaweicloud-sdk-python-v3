@@ -41,19 +41,19 @@ class ListStorageAssignmentRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
-        :param storage_id: WKS存储ID
+        :param storage_id: WKS存储ID。
         :type storage_id: str
-        :param claim_mode: 存储声明的类型,claim_mode为share时,storage_claim_id必填 * &#x60;USER&#x60; -  用户目录 * &#x60;SHARE&#x60; - 共享目录
+        :param claim_mode: 存储声明的类型，claim_mode为share时，storage_claim_id必填。 * &#x60;USER&#x60; -  用户目录 * &#x60;SHARE&#x60; - 共享目录
         :type claim_mode: str
-        :param storage_claim_id: WKS存储目录声明ID
+        :param storage_claim_id: WKS存储目录声明ID。
         :type storage_claim_id: str
-        :param attach: 成员
+        :param attach: 成员。
         :type attach: str
-        :param attach_type: 关联对象类型 * &#x60;USER&#x60; -  用户 * &#x60;USER_GROUP&#x60; - 用户组
+        :param attach_type: 关联对象类型： * &#x60;USER&#x60; -  用户 * &#x60;USER_GROUP&#x60; - 用户组
         :type attach_type: str
         """
         
@@ -85,7 +85,7 @@ class ListStorageAssignmentRequest:
     def offset(self):
         """Gets the offset of this ListStorageAssignmentRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListStorageAssignmentRequest.
         :rtype: int
@@ -96,7 +96,7 @@ class ListStorageAssignmentRequest:
     def offset(self, offset):
         """Sets the offset of this ListStorageAssignmentRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListStorageAssignmentRequest.
         :type offset: int
@@ -107,7 +107,7 @@ class ListStorageAssignmentRequest:
     def limit(self):
         """Gets the limit of this ListStorageAssignmentRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListStorageAssignmentRequest.
         :rtype: int
@@ -118,7 +118,7 @@ class ListStorageAssignmentRequest:
     def limit(self, limit):
         """Sets the limit of this ListStorageAssignmentRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListStorageAssignmentRequest.
         :type limit: int
@@ -129,7 +129,7 @@ class ListStorageAssignmentRequest:
     def storage_id(self):
         """Gets the storage_id of this ListStorageAssignmentRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :return: The storage_id of this ListStorageAssignmentRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListStorageAssignmentRequest:
     def storage_id(self, storage_id):
         """Sets the storage_id of this ListStorageAssignmentRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :param storage_id: The storage_id of this ListStorageAssignmentRequest.
         :type storage_id: str
@@ -151,7 +151,7 @@ class ListStorageAssignmentRequest:
     def claim_mode(self):
         """Gets the claim_mode of this ListStorageAssignmentRequest.
 
-        存储声明的类型,claim_mode为share时,storage_claim_id必填 * `USER` -  用户目录 * `SHARE` - 共享目录
+        存储声明的类型，claim_mode为share时，storage_claim_id必填。 * `USER` -  用户目录 * `SHARE` - 共享目录
 
         :return: The claim_mode of this ListStorageAssignmentRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListStorageAssignmentRequest:
     def claim_mode(self, claim_mode):
         """Sets the claim_mode of this ListStorageAssignmentRequest.
 
-        存储声明的类型,claim_mode为share时,storage_claim_id必填 * `USER` -  用户目录 * `SHARE` - 共享目录
+        存储声明的类型，claim_mode为share时，storage_claim_id必填。 * `USER` -  用户目录 * `SHARE` - 共享目录
 
         :param claim_mode: The claim_mode of this ListStorageAssignmentRequest.
         :type claim_mode: str
@@ -173,7 +173,7 @@ class ListStorageAssignmentRequest:
     def storage_claim_id(self):
         """Gets the storage_claim_id of this ListStorageAssignmentRequest.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :return: The storage_claim_id of this ListStorageAssignmentRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class ListStorageAssignmentRequest:
     def storage_claim_id(self, storage_claim_id):
         """Sets the storage_claim_id of this ListStorageAssignmentRequest.
 
-        WKS存储目录声明ID
+        WKS存储目录声明ID。
 
         :param storage_claim_id: The storage_claim_id of this ListStorageAssignmentRequest.
         :type storage_claim_id: str
@@ -195,7 +195,7 @@ class ListStorageAssignmentRequest:
     def attach(self):
         """Gets the attach of this ListStorageAssignmentRequest.
 
-        成员
+        成员。
 
         :return: The attach of this ListStorageAssignmentRequest.
         :rtype: str
@@ -206,7 +206,7 @@ class ListStorageAssignmentRequest:
     def attach(self, attach):
         """Sets the attach of this ListStorageAssignmentRequest.
 
-        成员
+        成员。
 
         :param attach: The attach of this ListStorageAssignmentRequest.
         :type attach: str
@@ -217,7 +217,7 @@ class ListStorageAssignmentRequest:
     def attach_type(self):
         """Gets the attach_type of this ListStorageAssignmentRequest.
 
-        关联对象类型 * `USER` -  用户 * `USER_GROUP` - 用户组
+        关联对象类型： * `USER` -  用户 * `USER_GROUP` - 用户组
 
         :return: The attach_type of this ListStorageAssignmentRequest.
         :rtype: str
@@ -228,7 +228,7 @@ class ListStorageAssignmentRequest:
     def attach_type(self, attach_type):
         """Sets the attach_type of this ListStorageAssignmentRequest.
 
-        关联对象类型 * `USER` -  用户 * `USER_GROUP` - 用户组
+        关联对象类型： * `USER` -  用户 * `USER_GROUP` - 用户组
 
         :param attach_type: The attach_type of this ListStorageAssignmentRequest.
         :type attach_type: str

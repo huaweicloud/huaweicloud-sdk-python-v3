@@ -23,7 +23,8 @@ class CreateVersionAliasResponse(SdkResponse):
         'description': 'str',
         'last_modified': 'datetime',
         'alias_urn': 'str',
-        'additional_version_weights': 'dict(str, int)'
+        'additional_version_weights': 'dict(str, int)',
+        'additional_version_strategy': 'dict(str, VersionStrategy)'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class CreateVersionAliasResponse(SdkResponse):
         'description': 'description',
         'last_modified': 'last_modified',
         'alias_urn': 'alias_urn',
-        'additional_version_weights': 'additional_version_weights'
+        'additional_version_weights': 'additional_version_weights',
+        'additional_version_strategy': 'additional_version_strategy'
     }
 
-    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):
+    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None, additional_version_strategy=None):
         """CreateVersionAliasResponse
 
         The model defined in huaweicloud sdk
@@ -50,8 +52,10 @@ class CreateVersionAliasResponse(SdkResponse):
         :type last_modified: datetime
         :param alias_urn: 版本别名唯一标识。
         :type alias_urn: str
-        :param additional_version_weights: 灰度版本信息
+        :param additional_version_weights: 百分比灰度配置信息
         :type additional_version_weights: dict(str, int)
+        :param additional_version_strategy: 指定规则灰度策略信息
+        :type additional_version_strategy: dict(str, VersionStrategy)
         """
         
         super(CreateVersionAliasResponse, self).__init__()
@@ -62,6 +66,7 @@ class CreateVersionAliasResponse(SdkResponse):
         self._last_modified = None
         self._alias_urn = None
         self._additional_version_weights = None
+        self._additional_version_strategy = None
         self.discriminator = None
 
         if name is not None:
@@ -76,6 +81,8 @@ class CreateVersionAliasResponse(SdkResponse):
             self.alias_urn = alias_urn
         if additional_version_weights is not None:
             self.additional_version_weights = additional_version_weights
+        if additional_version_strategy is not None:
+            self.additional_version_strategy = additional_version_strategy
 
     @property
     def name(self):
@@ -191,7 +198,7 @@ class CreateVersionAliasResponse(SdkResponse):
     def additional_version_weights(self):
         """Gets the additional_version_weights of this CreateVersionAliasResponse.
 
-        灰度版本信息
+        百分比灰度配置信息
 
         :return: The additional_version_weights of this CreateVersionAliasResponse.
         :rtype: dict(str, int)
@@ -202,12 +209,34 @@ class CreateVersionAliasResponse(SdkResponse):
     def additional_version_weights(self, additional_version_weights):
         """Sets the additional_version_weights of this CreateVersionAliasResponse.
 
-        灰度版本信息
+        百分比灰度配置信息
 
         :param additional_version_weights: The additional_version_weights of this CreateVersionAliasResponse.
         :type additional_version_weights: dict(str, int)
         """
         self._additional_version_weights = additional_version_weights
+
+    @property
+    def additional_version_strategy(self):
+        """Gets the additional_version_strategy of this CreateVersionAliasResponse.
+
+        指定规则灰度策略信息
+
+        :return: The additional_version_strategy of this CreateVersionAliasResponse.
+        :rtype: dict(str, VersionStrategy)
+        """
+        return self._additional_version_strategy
+
+    @additional_version_strategy.setter
+    def additional_version_strategy(self, additional_version_strategy):
+        """Sets the additional_version_strategy of this CreateVersionAliasResponse.
+
+        指定规则灰度策略信息
+
+        :param additional_version_strategy: The additional_version_strategy of this CreateVersionAliasResponse.
+        :type additional_version_strategy: dict(str, VersionStrategy)
+        """
+        self._additional_version_strategy = additional_version_strategy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

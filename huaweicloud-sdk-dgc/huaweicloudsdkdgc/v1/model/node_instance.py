@@ -19,61 +19,61 @@ class NodeInstance:
     openapi_types = {
         'node_name': 'str',
         'status': 'str',
+        'queue': 'str',
         'plan_time': 'int',
         'start_time': 'int',
         'end_time': 'int',
-        'execute_time': 'int',
-        'node_type': 'str',
+        'type': 'str',
         'retry_times': 'int',
         'instance_id': 'int',
         'input_row_count': 'int',
-        'output_row_count': 'int',
+        'speed': 'float',
         'log_path': 'str'
     }
 
     attribute_map = {
         'node_name': 'nodeName',
         'status': 'status',
+        'queue': 'queue',
         'plan_time': 'planTime',
         'start_time': 'startTime',
         'end_time': 'endTime',
-        'execute_time': 'executeTime',
-        'node_type': 'nodeType',
+        'type': 'type',
         'retry_times': 'retryTimes',
         'instance_id': 'instanceId',
         'input_row_count': 'inputRowCount',
-        'output_row_count': 'outputRowCount',
+        'speed': 'speed',
         'log_path': 'logPath'
     }
 
-    def __init__(self, node_name=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, node_type=None, retry_times=None, instance_id=None, input_row_count=None, output_row_count=None, log_path=None):
+    def __init__(self, node_name=None, status=None, queue=None, plan_time=None, start_time=None, end_time=None, type=None, retry_times=None, instance_id=None, input_row_count=None, speed=None, log_path=None):
         """NodeInstance
 
         The model defined in huaweicloud sdk
 
-        :param node_name: 
+        :param node_name: 节点名称
         :type node_name: str
-        :param status: 
+        :param status: 节点状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - skip：跳过 - pause： 暂停 - manual-stop：取消
         :type status: str
-        :param plan_time: 
+        :param queue: DLI资源队列名称。在返回响应中，仅DLI SQL或者DLI SPARK算子会返回DLI队列名称。
+        :type queue: str
+        :param plan_time: 作业实例计划执行时间
         :type plan_time: int
-        :param start_time: 
+        :param start_time: 节点实际执行开始时间
         :type start_time: int
-        :param end_time: 
+        :param end_time: 节点实际执行结束时间
         :type end_time: int
-        :param execute_time: 
-        :type execute_time: int
-        :param node_type: 
-        :type node_type: str
-        :param retry_times: 
+        :param type: 节点类型： - HiveSQL：执行Hive SQL脚本 - SparkSQL：执行Spark SQL脚本 - DWSSQL：执行DWS SQL脚本 - DLISQL：执行DLI SQL脚本 - Shell：执行Shell SQL脚本 - CDMJob：执行CDM作业 - DISTransferTask：创建DIS转储任务 - CloudTableManager：CloudTable表管理，创建和删除表。 - OBSManager：OBS路径管理，包括创建和删除路径。 - RestClient：REST API请求 - SMN：发送短信或邮件 - MRSSpark：执行MRS服务的Spark作业 - MapReduce：执行MRS服务的MapReduce作业 - MRSFlinkJob：执行MRS服务的FlinkJob作业。 - MRSHetuEngine：执行MRS服务的HetuEngine作业。 - DLISpark：执行DLF服务的Spark作业 - RDSSQL：传递SQL语句到RDS中执行。 - ModelArts Train：执行ModelArts服务的workflow作业。
+        :type type: str
+        :param retry_times: 失败重试次数
         :type retry_times: int
-        :param instance_id: 
+        :param instance_id: 作业实例id
         :type instance_id: int
-        :param input_row_count: 
+        :param input_row_count: 写入数据行数
         :type input_row_count: int
-        :param output_row_count: 
-        :type output_row_count: int
-        :param log_path: 
+        :param speed: 写入速度(行/秒)
+        :type speed: float
+        :param log_path: 节点执行的日志路径
         :type log_path: str
         """
         
@@ -81,46 +81,41 @@ class NodeInstance:
 
         self._node_name = None
         self._status = None
+        self._queue = None
         self._plan_time = None
         self._start_time = None
         self._end_time = None
-        self._execute_time = None
-        self._node_type = None
+        self._type = None
         self._retry_times = None
         self._instance_id = None
         self._input_row_count = None
-        self._output_row_count = None
+        self._speed = None
         self._log_path = None
         self.discriminator = None
 
-        if node_name is not None:
-            self.node_name = node_name
-        if status is not None:
-            self.status = status
-        if plan_time is not None:
-            self.plan_time = plan_time
-        if start_time is not None:
-            self.start_time = start_time
+        self.node_name = node_name
+        self.status = status
+        self.queue = queue
+        self.plan_time = plan_time
+        self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
-        if execute_time is not None:
-            self.execute_time = execute_time
-        if node_type is not None:
-            self.node_type = node_type
+        self.type = type
         if retry_times is not None:
             self.retry_times = retry_times
-        if instance_id is not None:
-            self.instance_id = instance_id
+        self.instance_id = instance_id
         if input_row_count is not None:
             self.input_row_count = input_row_count
-        if output_row_count is not None:
-            self.output_row_count = output_row_count
+        if speed is not None:
+            self.speed = speed
         if log_path is not None:
             self.log_path = log_path
 
     @property
     def node_name(self):
         """Gets the node_name of this NodeInstance.
+
+        节点名称
 
         :return: The node_name of this NodeInstance.
         :rtype: str
@@ -131,6 +126,8 @@ class NodeInstance:
     def node_name(self, node_name):
         """Sets the node_name of this NodeInstance.
 
+        节点名称
+
         :param node_name: The node_name of this NodeInstance.
         :type node_name: str
         """
@@ -139,6 +136,8 @@ class NodeInstance:
     @property
     def status(self):
         """Gets the status of this NodeInstance.
+
+        节点状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - skip：跳过 - pause： 暂停 - manual-stop：取消
 
         :return: The status of this NodeInstance.
         :rtype: str
@@ -149,14 +148,40 @@ class NodeInstance:
     def status(self, status):
         """Sets the status of this NodeInstance.
 
+        节点状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - skip：跳过 - pause： 暂停 - manual-stop：取消
+
         :param status: The status of this NodeInstance.
         :type status: str
         """
         self._status = status
 
     @property
+    def queue(self):
+        """Gets the queue of this NodeInstance.
+
+        DLI资源队列名称。在返回响应中，仅DLI SQL或者DLI SPARK算子会返回DLI队列名称。
+
+        :return: The queue of this NodeInstance.
+        :rtype: str
+        """
+        return self._queue
+
+    @queue.setter
+    def queue(self, queue):
+        """Sets the queue of this NodeInstance.
+
+        DLI资源队列名称。在返回响应中，仅DLI SQL或者DLI SPARK算子会返回DLI队列名称。
+
+        :param queue: The queue of this NodeInstance.
+        :type queue: str
+        """
+        self._queue = queue
+
+    @property
     def plan_time(self):
         """Gets the plan_time of this NodeInstance.
+
+        作业实例计划执行时间
 
         :return: The plan_time of this NodeInstance.
         :rtype: int
@@ -167,6 +192,8 @@ class NodeInstance:
     def plan_time(self, plan_time):
         """Sets the plan_time of this NodeInstance.
 
+        作业实例计划执行时间
+
         :param plan_time: The plan_time of this NodeInstance.
         :type plan_time: int
         """
@@ -175,6 +202,8 @@ class NodeInstance:
     @property
     def start_time(self):
         """Gets the start_time of this NodeInstance.
+
+        节点实际执行开始时间
 
         :return: The start_time of this NodeInstance.
         :rtype: int
@@ -185,6 +214,8 @@ class NodeInstance:
     def start_time(self, start_time):
         """Sets the start_time of this NodeInstance.
 
+        节点实际执行开始时间
+
         :param start_time: The start_time of this NodeInstance.
         :type start_time: int
         """
@@ -193,6 +224,8 @@ class NodeInstance:
     @property
     def end_time(self):
         """Gets the end_time of this NodeInstance.
+
+        节点实际执行结束时间
 
         :return: The end_time of this NodeInstance.
         :rtype: int
@@ -203,50 +236,40 @@ class NodeInstance:
     def end_time(self, end_time):
         """Sets the end_time of this NodeInstance.
 
+        节点实际执行结束时间
+
         :param end_time: The end_time of this NodeInstance.
         :type end_time: int
         """
         self._end_time = end_time
 
     @property
-    def execute_time(self):
-        """Gets the execute_time of this NodeInstance.
+    def type(self):
+        """Gets the type of this NodeInstance.
 
-        :return: The execute_time of this NodeInstance.
-        :rtype: int
-        """
-        return self._execute_time
+        节点类型： - HiveSQL：执行Hive SQL脚本 - SparkSQL：执行Spark SQL脚本 - DWSSQL：执行DWS SQL脚本 - DLISQL：执行DLI SQL脚本 - Shell：执行Shell SQL脚本 - CDMJob：执行CDM作业 - DISTransferTask：创建DIS转储任务 - CloudTableManager：CloudTable表管理，创建和删除表。 - OBSManager：OBS路径管理，包括创建和删除路径。 - RestClient：REST API请求 - SMN：发送短信或邮件 - MRSSpark：执行MRS服务的Spark作业 - MapReduce：执行MRS服务的MapReduce作业 - MRSFlinkJob：执行MRS服务的FlinkJob作业。 - MRSHetuEngine：执行MRS服务的HetuEngine作业。 - DLISpark：执行DLF服务的Spark作业 - RDSSQL：传递SQL语句到RDS中执行。 - ModelArts Train：执行ModelArts服务的workflow作业。
 
-    @execute_time.setter
-    def execute_time(self, execute_time):
-        """Sets the execute_time of this NodeInstance.
-
-        :param execute_time: The execute_time of this NodeInstance.
-        :type execute_time: int
-        """
-        self._execute_time = execute_time
-
-    @property
-    def node_type(self):
-        """Gets the node_type of this NodeInstance.
-
-        :return: The node_type of this NodeInstance.
+        :return: The type of this NodeInstance.
         :rtype: str
         """
-        return self._node_type
+        return self._type
 
-    @node_type.setter
-    def node_type(self, node_type):
-        """Sets the node_type of this NodeInstance.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this NodeInstance.
 
-        :param node_type: The node_type of this NodeInstance.
-        :type node_type: str
+        节点类型： - HiveSQL：执行Hive SQL脚本 - SparkSQL：执行Spark SQL脚本 - DWSSQL：执行DWS SQL脚本 - DLISQL：执行DLI SQL脚本 - Shell：执行Shell SQL脚本 - CDMJob：执行CDM作业 - DISTransferTask：创建DIS转储任务 - CloudTableManager：CloudTable表管理，创建和删除表。 - OBSManager：OBS路径管理，包括创建和删除路径。 - RestClient：REST API请求 - SMN：发送短信或邮件 - MRSSpark：执行MRS服务的Spark作业 - MapReduce：执行MRS服务的MapReduce作业 - MRSFlinkJob：执行MRS服务的FlinkJob作业。 - MRSHetuEngine：执行MRS服务的HetuEngine作业。 - DLISpark：执行DLF服务的Spark作业 - RDSSQL：传递SQL语句到RDS中执行。 - ModelArts Train：执行ModelArts服务的workflow作业。
+
+        :param type: The type of this NodeInstance.
+        :type type: str
         """
-        self._node_type = node_type
+        self._type = type
 
     @property
     def retry_times(self):
         """Gets the retry_times of this NodeInstance.
+
+        失败重试次数
 
         :return: The retry_times of this NodeInstance.
         :rtype: int
@@ -257,6 +280,8 @@ class NodeInstance:
     def retry_times(self, retry_times):
         """Sets the retry_times of this NodeInstance.
 
+        失败重试次数
+
         :param retry_times: The retry_times of this NodeInstance.
         :type retry_times: int
         """
@@ -265,6 +290,8 @@ class NodeInstance:
     @property
     def instance_id(self):
         """Gets the instance_id of this NodeInstance.
+
+        作业实例id
 
         :return: The instance_id of this NodeInstance.
         :rtype: int
@@ -275,6 +302,8 @@ class NodeInstance:
     def instance_id(self, instance_id):
         """Sets the instance_id of this NodeInstance.
 
+        作业实例id
+
         :param instance_id: The instance_id of this NodeInstance.
         :type instance_id: int
         """
@@ -283,6 +312,8 @@ class NodeInstance:
     @property
     def input_row_count(self):
         """Gets the input_row_count of this NodeInstance.
+
+        写入数据行数
 
         :return: The input_row_count of this NodeInstance.
         :rtype: int
@@ -293,32 +324,40 @@ class NodeInstance:
     def input_row_count(self, input_row_count):
         """Sets the input_row_count of this NodeInstance.
 
+        写入数据行数
+
         :param input_row_count: The input_row_count of this NodeInstance.
         :type input_row_count: int
         """
         self._input_row_count = input_row_count
 
     @property
-    def output_row_count(self):
-        """Gets the output_row_count of this NodeInstance.
+    def speed(self):
+        """Gets the speed of this NodeInstance.
 
-        :return: The output_row_count of this NodeInstance.
-        :rtype: int
+        写入速度(行/秒)
+
+        :return: The speed of this NodeInstance.
+        :rtype: float
         """
-        return self._output_row_count
+        return self._speed
 
-    @output_row_count.setter
-    def output_row_count(self, output_row_count):
-        """Sets the output_row_count of this NodeInstance.
+    @speed.setter
+    def speed(self, speed):
+        """Sets the speed of this NodeInstance.
 
-        :param output_row_count: The output_row_count of this NodeInstance.
-        :type output_row_count: int
+        写入速度(行/秒)
+
+        :param speed: The speed of this NodeInstance.
+        :type speed: float
         """
-        self._output_row_count = output_row_count
+        self._speed = speed
 
     @property
     def log_path(self):
         """Gets the log_path of this NodeInstance.
+
+        节点执行的日志路径
 
         :return: The log_path of this NodeInstance.
         :rtype: str
@@ -328,6 +367,8 @@ class NodeInstance:
     @log_path.setter
     def log_path(self, log_path):
         """Sets the log_path of this NodeInstance.
+
+        节点执行的日志路径
 
         :param log_path: The log_path of this NodeInstance.
         :type log_path: str

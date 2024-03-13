@@ -45,7 +45,8 @@ class ShootScriptItem:
 
         if sequence_no is not None:
             self.sequence_no = sequence_no
-        self.shoot_script = shoot_script
+        if shoot_script is not None:
+            self.shoot_script = shoot_script
 
     @property
     def sequence_no(self):

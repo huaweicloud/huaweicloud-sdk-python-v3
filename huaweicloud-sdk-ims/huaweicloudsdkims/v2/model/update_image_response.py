@@ -76,6 +76,7 @@ class UpdateImageResponse(SdkResponse):
         'sequence_num': 'str',
         'active_at': 'str',
         'support_agent_list': 'str',
+        'image_displayname': 'str',
         'support_amd': 'str'
     }
 
@@ -138,10 +139,11 @@ class UpdateImageResponse(SdkResponse):
         'sequence_num': '__sequence_num',
         'active_at': 'active_at',
         'support_agent_list': '__support_agent_list',
+        'image_displayname': '__image_displayname',
         'support_amd': '__support_amd'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, support_amd=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, image_displayname=None, support_amd=None):
         """UpdateImageResponse
 
         The model defined in huaweicloud sdk
@@ -262,6 +264,8 @@ class UpdateImageResponse(SdkResponse):
         :type active_at: str
         :param support_agent_list: 镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
         :type support_agent_list: str
+        :param image_displayname: 对外展示名称。
+        :type image_displayname: str
         :param support_amd: 是否是AMD架构类型的镜像。取值为“true”或者“false”。
         :type support_amd: str
         """
@@ -326,6 +330,7 @@ class UpdateImageResponse(SdkResponse):
         self._sequence_num = None
         self._active_at = None
         self._support_agent_list = None
+        self._image_displayname = None
         self._support_amd = None
         self.discriminator = None
 
@@ -445,6 +450,8 @@ class UpdateImageResponse(SdkResponse):
             self.active_at = active_at
         if support_agent_list is not None:
             self.support_agent_list = support_agent_list
+        if image_displayname is not None:
+            self.image_displayname = image_displayname
         if support_amd is not None:
             self.support_amd = support_amd
 
@@ -1723,6 +1730,28 @@ class UpdateImageResponse(SdkResponse):
         :type support_agent_list: str
         """
         self._support_agent_list = support_agent_list
+
+    @property
+    def image_displayname(self):
+        """Gets the image_displayname of this UpdateImageResponse.
+
+        对外展示名称。
+
+        :return: The image_displayname of this UpdateImageResponse.
+        :rtype: str
+        """
+        return self._image_displayname
+
+    @image_displayname.setter
+    def image_displayname(self, image_displayname):
+        """Sets the image_displayname of this UpdateImageResponse.
+
+        对外展示名称。
+
+        :param image_displayname: The image_displayname of this UpdateImageResponse.
+        :type image_displayname: str
+        """
+        self._image_displayname = image_displayname
 
     @property
     def support_amd(self):

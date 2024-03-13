@@ -11,6 +11,9 @@ from huaweicloudsdkcloudtest.v1.model.attribute_change import AttributeChange
 from huaweicloudsdkcloudtest.v1.model.batch_delete_test_case_request import BatchDeleteTestCaseRequest
 from huaweicloudsdkcloudtest.v1.model.batch_delete_test_case_request_body import BatchDeleteTestCaseRequestBody
 from huaweicloudsdkcloudtest.v1.model.batch_delete_test_case_response import BatchDeleteTestCaseResponse
+from huaweicloudsdkcloudtest.v1.model.case_completion_rate_vo import CaseCompletionRateVo
+from huaweicloudsdkcloudtest.v1.model.case_pass_rate_vo import CasePassRateVo
+from huaweicloudsdkcloudtest.v1.model.cover_rate_vo import CoverRateVo
 from huaweicloudsdkcloudtest.v1.model.create_api_test_suite_by_repo_file_request import CreateApiTestSuiteByRepoFileRequest
 from huaweicloudsdkcloudtest.v1.model.create_api_test_suite_by_repo_file_response import CreateApiTestSuiteByRepoFileResponse
 from huaweicloudsdkcloudtest.v1.model.create_info_vo import CreateInfoVo
@@ -27,6 +30,7 @@ from huaweicloudsdkcloudtest.v1.model.create_test_case_request_body import Creat
 from huaweicloudsdkcloudtest.v1.model.create_test_case_response import CreateTestCaseResponse
 from huaweicloudsdkcloudtest.v1.model.create_test_suit_by_repo_file_info import CreateTestSuitByRepoFileInfo
 from huaweicloudsdkcloudtest.v1.model.custom_report_list_vo import CustomReportListVo
+from huaweicloudsdkcloudtest.v1.model.defect_vo import DefectVo
 from huaweicloudsdkcloudtest.v1.model.delete_service_request import DeleteServiceRequest
 from huaweicloudsdkcloudtest.v1.model.delete_service_response import DeleteServiceResponse
 from huaweicloudsdkcloudtest.v1.model.element_resource_change_external_vo import ElementResourceChangeExternalVo
@@ -46,6 +50,7 @@ from huaweicloudsdkcloudtest.v1.model.external_user_case_and_defect import Exter
 from huaweicloudsdkcloudtest.v1.model.external_user_execute_info import ExternalUserExecuteInfo
 from huaweicloudsdkcloudtest.v1.model.generate_report_info import GenerateReportInfo
 from huaweicloudsdkcloudtest.v1.model.integer_id_and_name_vo import IntegerIdAndNameVo
+from huaweicloudsdkcloudtest.v1.model.issue_cover_rate_vo import IssueCoverRateVo
 from huaweicloudsdkcloudtest.v1.model.list_branches_request import ListBranchesRequest
 from huaweicloudsdkcloudtest.v1.model.list_branches_response import ListBranchesResponse
 from huaweicloudsdkcloudtest.v1.model.list_environments_request import ListEnvironmentsRequest
@@ -58,6 +63,7 @@ from huaweicloudsdkcloudtest.v1.model.list_test_cases_request_body import ListTe
 from huaweicloudsdkcloudtest.v1.model.list_test_cases_response import ListTestCasesResponse
 from huaweicloudsdkcloudtest.v1.model.name_and_id import NameAndId
 from huaweicloudsdkcloudtest.v1.model.name_and_id_vo import NameAndIdVo
+from huaweicloudsdkcloudtest.v1.model.name_and_value_vo import NameAndValueVo
 from huaweicloudsdkcloudtest.v1.model.plan_cycle import PlanCycle
 from huaweicloudsdkcloudtest.v1.model.report_chart_data_vo import ReportChartDataVo
 from huaweicloudsdkcloudtest.v1.model.report_dim_vo import ReportDimVo
@@ -79,6 +85,8 @@ from huaweicloudsdkcloudtest.v1.model.show_plan_list_request import ShowPlanList
 from huaweicloudsdkcloudtest.v1.model.show_plan_list_response import ShowPlanListResponse
 from huaweicloudsdkcloudtest.v1.model.show_plans_request import ShowPlansRequest
 from huaweicloudsdkcloudtest.v1.model.show_plans_response import ShowPlansResponse
+from huaweicloudsdkcloudtest.v1.model.show_project_data_dashboard_request import ShowProjectDataDashboardRequest
+from huaweicloudsdkcloudtest.v1.model.show_project_data_dashboard_response import ShowProjectDataDashboardResponse
 from huaweicloudsdkcloudtest.v1.model.show_register_service_request import ShowRegisterServiceRequest
 from huaweicloudsdkcloudtest.v1.model.show_register_service_response import ShowRegisterServiceResponse
 from huaweicloudsdkcloudtest.v1.model.show_report_request import ShowReportRequest
@@ -103,6 +111,7 @@ from huaweicloudsdkcloudtest.v1.model.test_plan_detail_report_stage import TestP
 from huaweicloudsdkcloudtest.v1.model.test_plan_issue_detail import TestPlanIssueDetail
 from huaweicloudsdkcloudtest.v1.model.test_plan_journal_detail import TestPlanJournalDetail
 from huaweicloudsdkcloudtest.v1.model.test_plan_journal_list import TestPlanJournalList
+from huaweicloudsdkcloudtest.v1.model.test_report_info_request_body import TestReportInfoRequestBody
 from huaweicloudsdkcloudtest.v1.model.testcase_result import TestcaseResult
 from huaweicloudsdkcloudtest.v1.model.update_service_request import UpdateServiceRequest
 from huaweicloudsdkcloudtest.v1.model.update_service_response import UpdateServiceResponse

@@ -31,7 +31,7 @@ class CreatePersistentStorageReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: WKS存储名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格 2. 长度1~128个字符
+        :param name: WKS存储名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~128个字符。
         :type name: str
         :param storage_metadata: 
         :type storage_metadata: :class:`huaweicloudsdkworkspaceapp.v1.Storage`
@@ -50,7 +50,7 @@ class CreatePersistentStorageReq:
     def name(self):
         """Gets the name of this CreatePersistentStorageReq.
 
-        WKS存储名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格 2. 长度1~128个字符
+        WKS存储名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~128个字符。
 
         :return: The name of this CreatePersistentStorageReq.
         :rtype: str
@@ -61,7 +61,7 @@ class CreatePersistentStorageReq:
     def name(self, name):
         """Sets the name of this CreatePersistentStorageReq.
 
-        WKS存储名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格 2. 长度1~128个字符
+        WKS存储名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~128个字符。
 
         :param name: The name of this CreatePersistentStorageReq.
         :type name: str

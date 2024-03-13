@@ -37,7 +37,7 @@ class HealthCheckConfigurationHttpGet:
         :type path: str
         :param port: 端口。
         :type port: str
-        :param scheme: 协议，支持HTTP、HTTPS。
+        :param scheme: 协议。
         :type scheme: str
         """
         
@@ -103,7 +103,7 @@ class HealthCheckConfigurationHttpGet:
     def scheme(self):
         """Gets the scheme of this HealthCheckConfigurationHttpGet.
 
-        协议，支持HTTP、HTTPS。
+        协议。
 
         :return: The scheme of this HealthCheckConfigurationHttpGet.
         :rtype: str
@@ -114,7 +114,7 @@ class HealthCheckConfigurationHttpGet:
     def scheme(self, scheme):
         """Sets the scheme of this HealthCheckConfigurationHttpGet.
 
-        协议，支持HTTP、HTTPS。
+        协议。
 
         :param scheme: The scheme of this HealthCheckConfigurationHttpGet.
         :type scheme: str

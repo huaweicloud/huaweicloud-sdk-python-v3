@@ -33,7 +33,7 @@ class SbcAutomaticDisconnectionOptions:
 
         The model defined in huaweicloud sdk
 
-        :param disconnection_waiting_time: 等待时间（分钟）
+        :param disconnection_waiting_time: 等待时间（分钟）。
         :type disconnection_waiting_time: int
         :param sbc_auto_logout: 是否自动注销。取值为：false：表示是。true：表示否。
         :type sbc_auto_logout: bool
@@ -59,7 +59,7 @@ class SbcAutomaticDisconnectionOptions:
     def disconnection_waiting_time(self):
         """Gets the disconnection_waiting_time of this SbcAutomaticDisconnectionOptions.
 
-        等待时间（分钟）
+        等待时间（分钟）。
 
         :return: The disconnection_waiting_time of this SbcAutomaticDisconnectionOptions.
         :rtype: int
@@ -70,7 +70,7 @@ class SbcAutomaticDisconnectionOptions:
     def disconnection_waiting_time(self, disconnection_waiting_time):
         """Sets the disconnection_waiting_time of this SbcAutomaticDisconnectionOptions.
 
-        等待时间（分钟）
+        等待时间（分钟）。
 
         :param disconnection_waiting_time: The disconnection_waiting_time of this SbcAutomaticDisconnectionOptions.
         :type disconnection_waiting_time: int

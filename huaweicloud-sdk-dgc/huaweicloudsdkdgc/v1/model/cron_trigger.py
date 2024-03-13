@@ -23,7 +23,7 @@ class CronTrigger:
         'expression_time_zone': 'str',
         'period': 'str',
         'depend_pre_period': 'bool',
-        'depend_jobs': 'list[DependJobs]',
+        'depend_jobs': 'DependJob',
         'concurrent': 'int'
     }
 
@@ -43,20 +43,20 @@ class CronTrigger:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 
+        :param start_time: 调度开始时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd&#39;T&#39;HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。
         :type start_time: str
-        :param end_time: 
+        :param end_time: 调度结束时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd&#39;T&#39;HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。如果结束时间不配置，作业会按照调度周期一直执行下去。
         :type end_time: str
         :param expression: Cron表达式
         :type expression: str
         :param expression_time_zone: 时区
         :type expression_time_zone: str
-        :param period: 
+        :param period: 用于描述运行的间隔时间，格式为时间+时间单位。需要与expression中的表达式对应
         :type period: str
         :param depend_pre_period: 是否依赖本作业上一个运行周期任务的执行结果
         :type depend_pre_period: bool
-        :param depend_jobs: 依赖其它作业列表
-        :type depend_jobs: list[:class:`huaweicloudsdkdgc.v1.DependJobs`]
+        :param depend_jobs: 
+        :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`
         :param concurrent: 并发调用数
         :type concurrent: int
         """
@@ -91,6 +91,8 @@ class CronTrigger:
     def start_time(self):
         """Gets the start_time of this CronTrigger.
 
+        调度开始时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。
+
         :return: The start_time of this CronTrigger.
         :rtype: str
         """
@@ -99,6 +101,8 @@ class CronTrigger:
     @start_time.setter
     def start_time(self, start_time):
         """Sets the start_time of this CronTrigger.
+
+        调度开始时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。
 
         :param start_time: The start_time of this CronTrigger.
         :type start_time: str
@@ -109,6 +113,8 @@ class CronTrigger:
     def end_time(self):
         """Gets the end_time of this CronTrigger.
 
+        调度结束时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。如果结束时间不配置，作业会按照调度周期一直执行下去。
+
         :return: The end_time of this CronTrigger.
         :rtype: str
         """
@@ -117,6 +123,8 @@ class CronTrigger:
     @end_time.setter
     def end_time(self, end_time):
         """Sets the end_time of this CronTrigger.
+
+        调度结束时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。如果结束时间不配置，作业会按照调度周期一直执行下去。
 
         :param end_time: The end_time of this CronTrigger.
         :type end_time: str
@@ -171,6 +179,8 @@ class CronTrigger:
     def period(self):
         """Gets the period of this CronTrigger.
 
+        用于描述运行的间隔时间，格式为时间+时间单位。需要与expression中的表达式对应
+
         :return: The period of this CronTrigger.
         :rtype: str
         """
@@ -179,6 +189,8 @@ class CronTrigger:
     @period.setter
     def period(self, period):
         """Sets the period of this CronTrigger.
+
+        用于描述运行的间隔时间，格式为时间+时间单位。需要与expression中的表达式对应
 
         :param period: The period of this CronTrigger.
         :type period: str
@@ -211,10 +223,8 @@ class CronTrigger:
     def depend_jobs(self):
         """Gets the depend_jobs of this CronTrigger.
 
-        依赖其它作业列表
-
         :return: The depend_jobs of this CronTrigger.
-        :rtype: list[:class:`huaweicloudsdkdgc.v1.DependJobs`]
+        :rtype: :class:`huaweicloudsdkdgc.v1.DependJob`
         """
         return self._depend_jobs
 
@@ -222,10 +232,8 @@ class CronTrigger:
     def depend_jobs(self, depend_jobs):
         """Sets the depend_jobs of this CronTrigger.
 
-        依赖其它作业列表
-
         :param depend_jobs: The depend_jobs of this CronTrigger.
-        :type depend_jobs: list[:class:`huaweicloudsdkdgc.v1.DependJobs`]
+        :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`
         """
         self._depend_jobs = depend_jobs
 

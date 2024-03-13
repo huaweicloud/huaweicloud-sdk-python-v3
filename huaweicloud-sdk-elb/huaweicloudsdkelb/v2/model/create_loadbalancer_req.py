@@ -24,7 +24,9 @@ class CreateLoadbalancerReq:
         'vip_address': 'str',
         'provider': 'str',
         'admin_state_up': 'bool',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class CreateLoadbalancerReq:
         'vip_address': 'vip_address',
         'provider': 'provider',
         'admin_state_up': 'admin_state_up',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_address=None, provider=None, admin_state_up=None, enterprise_project_id=None):
+    def __init__(self, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_address=None, provider=None, admin_state_up=None, enterprise_project_id=None, protection_status=None, protection_reason=None):
         """CreateLoadbalancerReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class CreateLoadbalancerReq:
         :type admin_state_up: bool
         :param enterprise_project_id: 企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理用户指南》。
         :type enterprise_project_id: str
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -71,6 +79,8 @@ class CreateLoadbalancerReq:
         self._provider = None
         self._admin_state_up = None
         self._enterprise_project_id = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         if tenant_id is not None:
@@ -88,6 +98,10 @@ class CreateLoadbalancerReq:
             self.admin_state_up = admin_state_up
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def tenant_id(self):
@@ -264,6 +278,50 @@ class CreateLoadbalancerReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this CreateLoadbalancerReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this CreateLoadbalancerReq.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this CreateLoadbalancerReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this CreateLoadbalancerReq.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this CreateLoadbalancerReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this CreateLoadbalancerReq.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this CreateLoadbalancerReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this CreateLoadbalancerReq.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

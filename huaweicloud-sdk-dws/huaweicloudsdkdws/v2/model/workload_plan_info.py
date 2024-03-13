@@ -17,7 +17,7 @@ class WorkloadPlanInfo:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str',
+        'status': 'int',
         'project_id': 'str',
         'cluster_id': 'str',
         'plan_id': 'str',
@@ -44,7 +44,7 @@ class WorkloadPlanInfo:
         The model defined in huaweicloud sdk
 
         :param status: 计划状态。
-        :type status: str
+        :type status: int
         :param project_id: 项目ID。
         :type project_id: str
         :param cluster_id: 集群ID。
@@ -93,7 +93,7 @@ class WorkloadPlanInfo:
         计划状态。
 
         :return: The status of this WorkloadPlanInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._status
 
@@ -104,7 +104,7 @@ class WorkloadPlanInfo:
         计划状态。
 
         :param status: The status of this WorkloadPlanInfo.
-        :type status: str
+        :type status: int
         """
         self._status = status
 

@@ -19,8 +19,8 @@ class TicsAgentDeploy:
     openapi_types = {
         'agent_id': 'str',
         'agent_name': 'str',
-        'aom_flag': 'str',
-        'bcs_flag': 'str',
+        'aom_flag': 'bool',
+        'bcs_flag': 'bool',
         'cce_version': 'str',
         'create_time': 'datetime',
         'creator_domain_id': 'str',
@@ -30,7 +30,7 @@ class TicsAgentDeploy:
         'deploy_status': 'str',
         'deploy_type': 'str',
         'deployment_event_information': 'str',
-        'high_avail': 'str',
+        'high_avail': 'bool',
         'image_id': 'str',
         'image_version': 'str',
         'league_id': 'str',
@@ -76,9 +76,9 @@ class TicsAgentDeploy:
         :param agent_name: 可信节点名称
         :type agent_name: str
         :param aom_flag: 是否开启aom监控
-        :type aom_flag: str
+        :type aom_flag: bool
         :param bcs_flag: 是否使用区块链存证
-        :type bcs_flag: str
+        :type bcs_flag: bool
         :param cce_version: 可信节点使用cce集群的版本
         :type cce_version: str
         :param create_time: 可信节点创建时间
@@ -98,7 +98,7 @@ class TicsAgentDeploy:
         :param deployment_event_information: 可信节点部署类型
         :type deployment_event_information: str
         :param high_avail: 可信节点是否高可用部署
-        :type high_avail: str
+        :type high_avail: bool
         :param image_id: 可信节点部署使用的镜像Id
         :type image_id: str
         :param image_version: 可信节点部署使用的镜像版本
@@ -239,7 +239,7 @@ class TicsAgentDeploy:
         是否开启aom监控
 
         :return: The aom_flag of this TicsAgentDeploy.
-        :rtype: str
+        :rtype: bool
         """
         return self._aom_flag
 
@@ -250,7 +250,7 @@ class TicsAgentDeploy:
         是否开启aom监控
 
         :param aom_flag: The aom_flag of this TicsAgentDeploy.
-        :type aom_flag: str
+        :type aom_flag: bool
         """
         self._aom_flag = aom_flag
 
@@ -261,7 +261,7 @@ class TicsAgentDeploy:
         是否使用区块链存证
 
         :return: The bcs_flag of this TicsAgentDeploy.
-        :rtype: str
+        :rtype: bool
         """
         return self._bcs_flag
 
@@ -272,7 +272,7 @@ class TicsAgentDeploy:
         是否使用区块链存证
 
         :param bcs_flag: The bcs_flag of this TicsAgentDeploy.
-        :type bcs_flag: str
+        :type bcs_flag: bool
         """
         self._bcs_flag = bcs_flag
 
@@ -481,7 +481,7 @@ class TicsAgentDeploy:
         可信节点是否高可用部署
 
         :return: The high_avail of this TicsAgentDeploy.
-        :rtype: str
+        :rtype: bool
         """
         return self._high_avail
 
@@ -492,7 +492,7 @@ class TicsAgentDeploy:
         可信节点是否高可用部署
 
         :param high_avail: The high_avail of this TicsAgentDeploy.
-        :type high_avail: str
+        :type high_avail: bool
         """
         self._high_avail = high_avail
 

@@ -26,7 +26,8 @@ class OsExtraSpecs:
         'pci_passthroughalias': 'str',
         'pci_passthroughenable_gpu': 'str',
         'pci_passthroughgpu_specs': 'str',
-        'resource_type': 'str'
+        'resource_type': 'str',
+        'condnetwork': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class OsExtraSpecs:
         'pci_passthroughalias': 'pci_passthrough:alias',
         'pci_passthroughenable_gpu': 'pci_passthrough:enable_gpu',
         'pci_passthroughgpu_specs': 'pci_passthrough:gpu_specs',
-        'resource_type': 'resource_type'
+        'resource_type': 'resource_type',
+        'condnetwork': 'cond:network'
     }
 
-    def __init__(self, condoperationstatus=None, ecsgeneration=None, ecsperformancetype=None, ecsvirtualization_env_types=None, infocpuname=None, infogpuname=None, pci_passthroughalias=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, resource_type=None):
+    def __init__(self, condoperationstatus=None, ecsgeneration=None, ecsperformancetype=None, ecsvirtualization_env_types=None, infocpuname=None, infogpuname=None, pci_passthroughalias=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, resource_type=None, condnetwork=None):
         """OsExtraSpecs
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class OsExtraSpecs:
         :type pci_passthroughgpu_specs: str
         :param resource_type: 资源类型，resource_type是为了区分边缘实例的物理主机类型。
         :type resource_type: str
+        :param condnetwork: 网络约束  支持网络特性，不配置时以控制台默认配置为准。
+        :type condnetwork: str
         """
         
         
@@ -81,6 +85,7 @@ class OsExtraSpecs:
         self._pci_passthroughenable_gpu = None
         self._pci_passthroughgpu_specs = None
         self._resource_type = None
+        self._condnetwork = None
         self.discriminator = None
 
         if condoperationstatus is not None:
@@ -103,6 +108,8 @@ class OsExtraSpecs:
             self.pci_passthroughgpu_specs = pci_passthroughgpu_specs
         if resource_type is not None:
             self.resource_type = resource_type
+        if condnetwork is not None:
+            self.condnetwork = condnetwork
 
     @property
     def condoperationstatus(self):
@@ -323,6 +330,28 @@ class OsExtraSpecs:
         :type resource_type: str
         """
         self._resource_type = resource_type
+
+    @property
+    def condnetwork(self):
+        """Gets the condnetwork of this OsExtraSpecs.
+
+        网络约束  支持网络特性，不配置时以控制台默认配置为准。
+
+        :return: The condnetwork of this OsExtraSpecs.
+        :rtype: str
+        """
+        return self._condnetwork
+
+    @condnetwork.setter
+    def condnetwork(self, condnetwork):
+        """Sets the condnetwork of this OsExtraSpecs.
+
+        网络约束  支持网络特性，不配置时以控制台默认配置为准。
+
+        :param condnetwork: The condnetwork of this OsExtraSpecs.
+        :type condnetwork: str
+        """
+        self._condnetwork = condnetwork
 
     def to_dict(self):
         """Returns the model properties as a dict"""

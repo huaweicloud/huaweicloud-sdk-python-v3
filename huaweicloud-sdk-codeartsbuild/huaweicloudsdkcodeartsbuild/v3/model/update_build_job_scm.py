@@ -55,7 +55,7 @@ class UpdateBuildJobScm:
         :type repo_id: str
         :param web_url: 代码仓http地址
         :type web_url: str
-        :param scm_type: 仓库类别，codehub还是github等等
+        :param scm_type: 仓库类别，Repo、Github等
         :type scm_type: str
         :param is_auto_build: 是否自动构建
         :type is_auto_build: bool
@@ -194,7 +194,7 @@ class UpdateBuildJobScm:
     def scm_type(self):
         """Gets the scm_type of this UpdateBuildJobScm.
 
-        仓库类别，codehub还是github等等
+        仓库类别，Repo、Github等
 
         :return: The scm_type of this UpdateBuildJobScm.
         :rtype: str
@@ -205,7 +205,7 @@ class UpdateBuildJobScm:
     def scm_type(self, scm_type):
         """Sets the scm_type of this UpdateBuildJobScm.
 
-        仓库类别，codehub还是github等等
+        仓库类别，Repo、Github等
 
         :param scm_type: The scm_type of this UpdateBuildJobScm.
         :type scm_type: str

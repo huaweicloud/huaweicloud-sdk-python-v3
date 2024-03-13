@@ -38,7 +38,10 @@ class MysqlProxyV3:
         'route_mode': 'int',
         'balance_route_mode_enabled': 'bool',
         'consistence_mode': 'str',
-        'subnet_id': 'str'
+        'subnet_id': 'str',
+        'ssl_option': 'str',
+        'new_node_auto_add_status': 'str',
+        'new_node_weight': 'int'
     }
 
     attribute_map = {
@@ -63,10 +66,13 @@ class MysqlProxyV3:
         'route_mode': 'route_mode',
         'balance_route_mode_enabled': 'balance_route_mode_enabled',
         'consistence_mode': 'consistence_mode',
-        'subnet_id': 'subnet_id'
+        'subnet_id': 'subnet_id',
+        'ssl_option': 'ssl_option',
+        'new_node_auto_add_status': 'new_node_auto_add_status',
+        'new_node_weight': 'new_node_weight'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None, subnet_id=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None, subnet_id=None, ssl_option=None, new_node_auto_add_status=None, new_node_weight=None):
         """MysqlProxyV3
 
         The model defined in huaweicloud sdk
@@ -115,6 +121,12 @@ class MysqlProxyV3:
         :type consistence_mode: str
         :param subnet_id: 数据库代理所属的子网ID。
         :type subnet_id: str
+        :param ssl_option: SSL数据加密开关设置。  取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
+        :type ssl_option: str
+        :param new_node_auto_add_status: 新增节点是否自动加入该Proxy。  取值范围： - ON：自动加入。 - OFF：不自动加入。
+        :type new_node_auto_add_status: str
+        :param new_node_weight: 新增节点的读权重。
+        :type new_node_weight: int
         """
         
         
@@ -141,6 +153,9 @@ class MysqlProxyV3:
         self._balance_route_mode_enabled = None
         self._consistence_mode = None
         self._subnet_id = None
+        self._ssl_option = None
+        self._new_node_auto_add_status = None
+        self._new_node_weight = None
         self.discriminator = None
 
         if pool_id is not None:
@@ -187,6 +202,12 @@ class MysqlProxyV3:
             self.consistence_mode = consistence_mode
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if ssl_option is not None:
+            self.ssl_option = ssl_option
+        if new_node_auto_add_status is not None:
+            self.new_node_auto_add_status = new_node_auto_add_status
+        if new_node_weight is not None:
+            self.new_node_weight = new_node_weight
 
     @property
     def pool_id(self):
@@ -671,6 +692,72 @@ class MysqlProxyV3:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def ssl_option(self):
+        """Gets the ssl_option of this MysqlProxyV3.
+
+        SSL数据加密开关设置。  取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
+
+        :return: The ssl_option of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._ssl_option
+
+    @ssl_option.setter
+    def ssl_option(self, ssl_option):
+        """Sets the ssl_option of this MysqlProxyV3.
+
+        SSL数据加密开关设置。  取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
+
+        :param ssl_option: The ssl_option of this MysqlProxyV3.
+        :type ssl_option: str
+        """
+        self._ssl_option = ssl_option
+
+    @property
+    def new_node_auto_add_status(self):
+        """Gets the new_node_auto_add_status of this MysqlProxyV3.
+
+        新增节点是否自动加入该Proxy。  取值范围： - ON：自动加入。 - OFF：不自动加入。
+
+        :return: The new_node_auto_add_status of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._new_node_auto_add_status
+
+    @new_node_auto_add_status.setter
+    def new_node_auto_add_status(self, new_node_auto_add_status):
+        """Sets the new_node_auto_add_status of this MysqlProxyV3.
+
+        新增节点是否自动加入该Proxy。  取值范围： - ON：自动加入。 - OFF：不自动加入。
+
+        :param new_node_auto_add_status: The new_node_auto_add_status of this MysqlProxyV3.
+        :type new_node_auto_add_status: str
+        """
+        self._new_node_auto_add_status = new_node_auto_add_status
+
+    @property
+    def new_node_weight(self):
+        """Gets the new_node_weight of this MysqlProxyV3.
+
+        新增节点的读权重。
+
+        :return: The new_node_weight of this MysqlProxyV3.
+        :rtype: int
+        """
+        return self._new_node_weight
+
+    @new_node_weight.setter
+    def new_node_weight(self, new_node_weight):
+        """Sets the new_node_weight of this MysqlProxyV3.
+
+        新增节点的读权重。
+
+        :param new_node_weight: The new_node_weight of this MysqlProxyV3.
+        :type new_node_weight: int
+        """
+        self._new_node_weight = new_node_weight
 
     def to_dict(self):
         """Returns the model properties as a dict"""

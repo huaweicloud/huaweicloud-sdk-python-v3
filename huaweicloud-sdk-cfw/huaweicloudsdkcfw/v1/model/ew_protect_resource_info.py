@@ -23,7 +23,8 @@ class EwProtectResourceInfo:
         'protected_resource_nat_name': 'str',
         'protected_resource_nat_id': 'str',
         'protected_resource_project_id': 'str',
-        'protected_resource_mode': 'str'
+        'protected_resource_mode': 'str',
+        'status': 'int'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class EwProtectResourceInfo:
         'protected_resource_nat_name': 'protected_resource_nat_name',
         'protected_resource_nat_id': 'protected_resource_nat_id',
         'protected_resource_project_id': 'protected_resource_project_id',
-        'protected_resource_mode': 'protected_resource_mode'
+        'protected_resource_mode': 'protected_resource_mode',
+        'status': 'status'
     }
 
-    def __init__(self, protected_resource_type=None, protected_resource_name=None, protected_resource_id=None, protected_resource_nat_name=None, protected_resource_nat_id=None, protected_resource_project_id=None, protected_resource_mode=None):
+    def __init__(self, protected_resource_type=None, protected_resource_name=None, protected_resource_id=None, protected_resource_nat_name=None, protected_resource_nat_id=None, protected_resource_project_id=None, protected_resource_mode=None, status=None):
         """EwProtectResourceInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class EwProtectResourceInfo:
         :type protected_resource_project_id: str
         :param protected_resource_mode: 防护资源模式
         :type protected_resource_mode: str
+        :param status: 防护VPC的防护状态，0表示已关联，1表示未关联。
+        :type status: int
         """
         
         
@@ -66,6 +70,7 @@ class EwProtectResourceInfo:
         self._protected_resource_nat_id = None
         self._protected_resource_project_id = None
         self._protected_resource_mode = None
+        self._status = None
         self.discriminator = None
 
         self.protected_resource_type = protected_resource_type
@@ -79,6 +84,8 @@ class EwProtectResourceInfo:
             self.protected_resource_project_id = protected_resource_project_id
         if protected_resource_mode is not None:
             self.protected_resource_mode = protected_resource_mode
+        if status is not None:
+            self.status = status
 
     @property
     def protected_resource_type(self):
@@ -233,6 +240,28 @@ class EwProtectResourceInfo:
         :type protected_resource_mode: str
         """
         self._protected_resource_mode = protected_resource_mode
+
+    @property
+    def status(self):
+        """Gets the status of this EwProtectResourceInfo.
+
+        防护VPC的防护状态，0表示已关联，1表示未关联。
+
+        :return: The status of this EwProtectResourceInfo.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this EwProtectResourceInfo.
+
+        防护VPC的防护状态，0表示已关联，1表示未关联。
+
+        :param status: The status of this EwProtectResourceInfo.
+        :type status: int
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

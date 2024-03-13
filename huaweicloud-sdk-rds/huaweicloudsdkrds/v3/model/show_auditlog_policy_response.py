@@ -18,29 +18,43 @@ class ShowAuditlogPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'keep_days': 'int'
+        'keep_days': 'int',
+        'audit_types': 'list[str]',
+        'all_audit_log_action': 'str'
     }
 
     attribute_map = {
-        'keep_days': 'keep_days'
+        'keep_days': 'keep_days',
+        'audit_types': 'audit_types',
+        'all_audit_log_action': 'all_audit_log_action'
     }
 
-    def __init__(self, keep_days=None):
+    def __init__(self, keep_days=None, audit_types=None, all_audit_log_action=None):
         """ShowAuditlogPolicyResponse
 
         The model defined in huaweicloud sdk
 
         :param keep_days: 审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
         :type keep_days: int
+        :param audit_types: 审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+        :type audit_types: list[str]
+        :param all_audit_log_action: 审计记录的所有操作类型。
+        :type all_audit_log_action: str
         """
         
         super(ShowAuditlogPolicyResponse, self).__init__()
 
         self._keep_days = None
+        self._audit_types = None
+        self._all_audit_log_action = None
         self.discriminator = None
 
         if keep_days is not None:
             self.keep_days = keep_days
+        if audit_types is not None:
+            self.audit_types = audit_types
+        if all_audit_log_action is not None:
+            self.all_audit_log_action = all_audit_log_action
 
     @property
     def keep_days(self):
@@ -63,6 +77,50 @@ class ShowAuditlogPolicyResponse(SdkResponse):
         :type keep_days: int
         """
         self._keep_days = keep_days
+
+    @property
+    def audit_types(self):
+        """Gets the audit_types of this ShowAuditlogPolicyResponse.
+
+        审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+
+        :return: The audit_types of this ShowAuditlogPolicyResponse.
+        :rtype: list[str]
+        """
+        return self._audit_types
+
+    @audit_types.setter
+    def audit_types(self, audit_types):
+        """Sets the audit_types of this ShowAuditlogPolicyResponse.
+
+        审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+
+        :param audit_types: The audit_types of this ShowAuditlogPolicyResponse.
+        :type audit_types: list[str]
+        """
+        self._audit_types = audit_types
+
+    @property
+    def all_audit_log_action(self):
+        """Gets the all_audit_log_action of this ShowAuditlogPolicyResponse.
+
+        审计记录的所有操作类型。
+
+        :return: The all_audit_log_action of this ShowAuditlogPolicyResponse.
+        :rtype: str
+        """
+        return self._all_audit_log_action
+
+    @all_audit_log_action.setter
+    def all_audit_log_action(self, all_audit_log_action):
+        """Sets the all_audit_log_action of this ShowAuditlogPolicyResponse.
+
+        审计记录的所有操作类型。
+
+        :param all_audit_log_action: The all_audit_log_action of this ShowAuditlogPolicyResponse.
+        :type all_audit_log_action: str
+        """
+        self._all_audit_log_action = all_audit_log_action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

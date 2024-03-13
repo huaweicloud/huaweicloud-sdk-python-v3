@@ -22,7 +22,8 @@ class PublishMessageRequestBody:
         'message_structure': 'str',
         'message_template_name': 'str',
         'tags': 'dict(str, str)',
-        'time_to_live': 'str'
+        'time_to_live': 'str',
+        'message_attributes': 'list[MessageAttribute]'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class PublishMessageRequestBody:
         'message_structure': 'message_structure',
         'message_template_name': 'message_template_name',
         'tags': 'tags',
-        'time_to_live': 'time_to_live'
+        'time_to_live': 'time_to_live',
+        'message_attributes': 'message_attributes'
     }
 
-    def __init__(self, subject=None, message=None, message_structure=None, message_template_name=None, tags=None, time_to_live=None):
+    def __init__(self, subject=None, message=None, message_structure=None, message_template_name=None, tags=None, time_to_live=None, message_attributes=None):
         """PublishMessageRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class PublishMessageRequestBody:
         :type tags: dict(str, str)
         :param time_to_live: 指消息在SMN系统内部的最长存留时间。超过该存留时间，系统将不再发送该消息。单位是s，变量默认值是3600s，即一小时。值为正整数且小于等于3600*24。
         :type time_to_live: str
+        :param message_attributes: 消息属性列表
+        :type message_attributes: list[:class:`huaweicloudsdksmn.v2.MessageAttribute`]
         """
         
         
@@ -61,6 +65,7 @@ class PublishMessageRequestBody:
         self._message_template_name = None
         self._tags = None
         self._time_to_live = None
+        self._message_attributes = None
         self.discriminator = None
 
         if subject is not None:
@@ -75,6 +80,8 @@ class PublishMessageRequestBody:
             self.tags = tags
         if time_to_live is not None:
             self.time_to_live = time_to_live
+        if message_attributes is not None:
+            self.message_attributes = message_attributes
 
     @property
     def subject(self):
@@ -207,6 +214,28 @@ class PublishMessageRequestBody:
         :type time_to_live: str
         """
         self._time_to_live = time_to_live
+
+    @property
+    def message_attributes(self):
+        """Gets the message_attributes of this PublishMessageRequestBody.
+
+        消息属性列表
+
+        :return: The message_attributes of this PublishMessageRequestBody.
+        :rtype: list[:class:`huaweicloudsdksmn.v2.MessageAttribute`]
+        """
+        return self._message_attributes
+
+    @message_attributes.setter
+    def message_attributes(self, message_attributes):
+        """Sets the message_attributes of this PublishMessageRequestBody.
+
+        消息属性列表
+
+        :param message_attributes: The message_attributes of this PublishMessageRequestBody.
+        :type message_attributes: list[:class:`huaweicloudsdksmn.v2.MessageAttribute`]
+        """
+        self._message_attributes = message_attributes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

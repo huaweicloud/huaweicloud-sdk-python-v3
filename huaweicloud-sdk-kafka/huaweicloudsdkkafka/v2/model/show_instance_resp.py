@@ -76,6 +76,7 @@ class ShowInstanceResp:
         'ipv6_enable': 'bool',
         'ipv6_connect_addresses': 'list[str]',
         'connector_enable': 'bool',
+        'connector_node_num': 'int',
         'connector_id': 'str',
         'rest_enable': 'bool',
         'rest_connect_address': 'str',
@@ -159,6 +160,7 @@ class ShowInstanceResp:
         'ipv6_enable': 'ipv6_enable',
         'ipv6_connect_addresses': 'ipv6_connect_addresses',
         'connector_enable': 'connector_enable',
+        'connector_node_num': 'connector_node_num',
         'connector_id': 'connector_id',
         'rest_enable': 'rest_enable',
         'rest_connect_address': 'rest_connect_address',
@@ -182,7 +184,7 @@ class ShowInstanceResp:
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -213,7 +215,7 @@ class ShowInstanceResp:
         :type instance_id: str
         :param resource_spec_code: 资源规格标识。   - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
         :type resource_spec_code: str
-        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)
+        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs)
         :type charging_mode: int
         :param vpc_id: VPC ID。
         :type vpc_id: str
@@ -243,7 +245,7 @@ class ShowInstanceResp:
         :type management_connect_address: str
         :param ssl_enable: 是否开启安全认证。 - true：开启 - false：未开启
         :type ssl_enable: bool
-        :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
         :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
         :type sasl_enabled_mechanisms: list[str]
@@ -305,6 +307,8 @@ class ShowInstanceResp:
         :type ipv6_connect_addresses: list[str]
         :param connector_enable: 是否开启转储。新规格产品暂不支持开启转储。
         :type connector_enable: bool
+        :param connector_node_num: connector节点数量。
+        :type connector_node_num: int
         :param connector_id: 转储任务ID。
         :type connector_id: str
         :param rest_enable: 是否开启Kafka rest功能。
@@ -410,6 +414,7 @@ class ShowInstanceResp:
         self._ipv6_enable = None
         self._ipv6_connect_addresses = None
         self._connector_enable = None
+        self._connector_node_num = None
         self._connector_id = None
         self._rest_enable = None
         self._rest_connect_address = None
@@ -551,6 +556,8 @@ class ShowInstanceResp:
             self.ipv6_connect_addresses = ipv6_connect_addresses
         if connector_enable is not None:
             self.connector_enable = connector_enable
+        if connector_node_num is not None:
+            self.connector_node_num = connector_node_num
         if connector_id is not None:
             self.connector_id = connector_id
         if rest_enable is not None:
@@ -884,7 +891,7 @@ class ShowInstanceResp:
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs)
 
         :return: The charging_mode of this ShowInstanceResp.
         :rtype: int
@@ -895,7 +902,7 @@ class ShowInstanceResp:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs)
 
         :param charging_mode: The charging_mode of this ShowInstanceResp.
         :type charging_mode: int
@@ -1214,7 +1221,7 @@ class ShowInstanceResp:
     def kafka_security_protocol(self):
         """Gets the kafka_security_protocol of this ShowInstanceResp.
 
-        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
 
         :return: The kafka_security_protocol of this ShowInstanceResp.
         :rtype: str
@@ -1225,7 +1232,7 @@ class ShowInstanceResp:
     def kafka_security_protocol(self, kafka_security_protocol):
         """Sets the kafka_security_protocol of this ShowInstanceResp.
 
-        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持帐号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
 
         :param kafka_security_protocol: The kafka_security_protocol of this ShowInstanceResp.
         :type kafka_security_protocol: str
@@ -1891,6 +1898,28 @@ class ShowInstanceResp:
         :type connector_enable: bool
         """
         self._connector_enable = connector_enable
+
+    @property
+    def connector_node_num(self):
+        """Gets the connector_node_num of this ShowInstanceResp.
+
+        connector节点数量。
+
+        :return: The connector_node_num of this ShowInstanceResp.
+        :rtype: int
+        """
+        return self._connector_node_num
+
+    @connector_node_num.setter
+    def connector_node_num(self, connector_node_num):
+        """Sets the connector_node_num of this ShowInstanceResp.
+
+        connector节点数量。
+
+        :param connector_node_num: The connector_node_num of this ShowInstanceResp.
+        :type connector_node_num: int
+        """
+        self._connector_node_num = connector_node_num
 
     @property
     def connector_id(self):

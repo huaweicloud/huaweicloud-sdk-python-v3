@@ -45,23 +45,23 @@ class JobDetail:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: 任务ID。
         :type job_id: str
-        :param job_type: job类型,固定值1
+        :param job_type: job类型，固定值1。
         :type job_type: int
-        :param job_status: job执行状态 - 0：失败。（如果是开通失败，云运营查询到失败状态，直接退费给客户。如果是变更失败，当前是发运维工单，暂时还不是直接退费给客户） - 1：成功。（处理结果成功） - 2：处理中。 - 3：正在初始化。
+        :param job_status: job执行状态 - 0：失败。（如果是开通失败，云运营查询到失败状态，直接退费给客户。如果是变更失败，当前是发运维工单，暂时还不是直接退费给客户。） - 1：成功。（处理结果成功。） - 2：处理中。 - 3：正在初始化。
         :type job_status: int
-        :param sub_jobs: 子任务信息
+        :param sub_jobs: 子任务信息。
         :type sub_jobs: list[:class:`huaweicloudsdkworkspaceapp.v1.SubJobInfo`]
-        :param begin_time: Job处理开始时间
+        :param begin_time: Job处理开始时间。
         :type begin_time: datetime
-        :param end_time: job处理结束时间
+        :param end_time: job处理结束时间。
         :type end_time: datetime
-        :param expected_end_time: 云服务预估的Job处理结束时间，只针对job有效，针对子job无效
+        :param expected_end_time: 云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
         :type expected_end_time: datetime
         :param execute_code: Job执行结果码
         :type execute_code: str
-        :param execute_message: Job执行结果描述，以及每个SubJob的执行结果描述
+        :param execute_message: Job执行结果描述，以及每个SubJob的执行结果描述。
         :type execute_message: str
         """
         
@@ -101,7 +101,7 @@ class JobDetail:
     def job_id(self):
         """Gets the job_id of this JobDetail.
 
-        任务ID
+        任务ID。
 
         :return: The job_id of this JobDetail.
         :rtype: str
@@ -112,7 +112,7 @@ class JobDetail:
     def job_id(self, job_id):
         """Sets the job_id of this JobDetail.
 
-        任务ID
+        任务ID。
 
         :param job_id: The job_id of this JobDetail.
         :type job_id: str
@@ -123,7 +123,7 @@ class JobDetail:
     def job_type(self):
         """Gets the job_type of this JobDetail.
 
-        job类型,固定值1
+        job类型，固定值1。
 
         :return: The job_type of this JobDetail.
         :rtype: int
@@ -134,7 +134,7 @@ class JobDetail:
     def job_type(self, job_type):
         """Sets the job_type of this JobDetail.
 
-        job类型,固定值1
+        job类型，固定值1。
 
         :param job_type: The job_type of this JobDetail.
         :type job_type: int
@@ -145,7 +145,7 @@ class JobDetail:
     def job_status(self):
         """Gets the job_status of this JobDetail.
 
-        job执行状态 - 0：失败。（如果是开通失败，云运营查询到失败状态，直接退费给客户。如果是变更失败，当前是发运维工单，暂时还不是直接退费给客户） - 1：成功。（处理结果成功） - 2：处理中。 - 3：正在初始化。
+        job执行状态 - 0：失败。（如果是开通失败，云运营查询到失败状态，直接退费给客户。如果是变更失败，当前是发运维工单，暂时还不是直接退费给客户。） - 1：成功。（处理结果成功。） - 2：处理中。 - 3：正在初始化。
 
         :return: The job_status of this JobDetail.
         :rtype: int
@@ -156,7 +156,7 @@ class JobDetail:
     def job_status(self, job_status):
         """Sets the job_status of this JobDetail.
 
-        job执行状态 - 0：失败。（如果是开通失败，云运营查询到失败状态，直接退费给客户。如果是变更失败，当前是发运维工单，暂时还不是直接退费给客户） - 1：成功。（处理结果成功） - 2：处理中。 - 3：正在初始化。
+        job执行状态 - 0：失败。（如果是开通失败，云运营查询到失败状态，直接退费给客户。如果是变更失败，当前是发运维工单，暂时还不是直接退费给客户。） - 1：成功。（处理结果成功。） - 2：处理中。 - 3：正在初始化。
 
         :param job_status: The job_status of this JobDetail.
         :type job_status: int
@@ -167,7 +167,7 @@ class JobDetail:
     def sub_jobs(self):
         """Gets the sub_jobs of this JobDetail.
 
-        子任务信息
+        子任务信息。
 
         :return: The sub_jobs of this JobDetail.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.SubJobInfo`]
@@ -178,7 +178,7 @@ class JobDetail:
     def sub_jobs(self, sub_jobs):
         """Sets the sub_jobs of this JobDetail.
 
-        子任务信息
+        子任务信息。
 
         :param sub_jobs: The sub_jobs of this JobDetail.
         :type sub_jobs: list[:class:`huaweicloudsdkworkspaceapp.v1.SubJobInfo`]
@@ -189,7 +189,7 @@ class JobDetail:
     def begin_time(self):
         """Gets the begin_time of this JobDetail.
 
-        Job处理开始时间
+        Job处理开始时间。
 
         :return: The begin_time of this JobDetail.
         :rtype: datetime
@@ -200,7 +200,7 @@ class JobDetail:
     def begin_time(self, begin_time):
         """Sets the begin_time of this JobDetail.
 
-        Job处理开始时间
+        Job处理开始时间。
 
         :param begin_time: The begin_time of this JobDetail.
         :type begin_time: datetime
@@ -211,7 +211,7 @@ class JobDetail:
     def end_time(self):
         """Gets the end_time of this JobDetail.
 
-        job处理结束时间
+        job处理结束时间。
 
         :return: The end_time of this JobDetail.
         :rtype: datetime
@@ -222,7 +222,7 @@ class JobDetail:
     def end_time(self, end_time):
         """Sets the end_time of this JobDetail.
 
-        job处理结束时间
+        job处理结束时间。
 
         :param end_time: The end_time of this JobDetail.
         :type end_time: datetime
@@ -233,7 +233,7 @@ class JobDetail:
     def expected_end_time(self):
         """Gets the expected_end_time of this JobDetail.
 
-        云服务预估的Job处理结束时间，只针对job有效，针对子job无效
+        云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
 
         :return: The expected_end_time of this JobDetail.
         :rtype: datetime
@@ -244,7 +244,7 @@ class JobDetail:
     def expected_end_time(self, expected_end_time):
         """Sets the expected_end_time of this JobDetail.
 
-        云服务预估的Job处理结束时间，只针对job有效，针对子job无效
+        云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
 
         :param expected_end_time: The expected_end_time of this JobDetail.
         :type expected_end_time: datetime
@@ -277,7 +277,7 @@ class JobDetail:
     def execute_message(self):
         """Gets the execute_message of this JobDetail.
 
-        Job执行结果描述，以及每个SubJob的执行结果描述
+        Job执行结果描述，以及每个SubJob的执行结果描述。
 
         :return: The execute_message of this JobDetail.
         :rtype: str
@@ -288,7 +288,7 @@ class JobDetail:
     def execute_message(self, execute_message):
         """Sets the execute_message of this JobDetail.
 
-        Job执行结果描述，以及每个SubJob的执行结果描述
+        Job执行结果描述，以及每个SubJob的执行结果描述。
 
         :param execute_message: The execute_message of this JobDetail.
         :type execute_message: str

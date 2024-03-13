@@ -3040,6 +3040,12 @@ class ConfigClient(Client):
         path_params = {}
 
         query_params = []
+        if 'policy_assignment_name' in local_var_params:
+            query_params.append(('policy_assignment_name', local_var_params['policy_assignment_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -3661,6 +3667,8 @@ class ConfigClient(Client):
             path_params['organization_id'] = local_var_params['organization_id']
 
         query_params = []
+        if 'organization_policy_assignment_id' in local_var_params:
+            query_params.append(('organization_policy_assignment_id', local_var_params['organization_policy_assignment_id']))
         if 'organization_policy_assignment_name' in local_var_params:
             query_params.append(('organization_policy_assignment_name', local_var_params['organization_policy_assignment_name']))
         if 'limit' in local_var_params:
@@ -4641,6 +4649,86 @@ class ConfigClient(Client):
 
         return http_info
 
+    def collect_tracked_resources_summary(self, request):
+        """列举资源记录器收集的资源概要
+
+        查询当前用户资源记录器收集的资源概览。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CollectTrackedResourcesSummary
+        :type request: :class:`huaweicloudsdkconfig.v1.CollectTrackedResourcesSummaryRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CollectTrackedResourcesSummaryResponse`
+        """
+        http_info = self._collect_tracked_resources_summary_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_tracked_resources_summary_invoker(self, request):
+        http_info = self._collect_tracked_resources_summary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_tracked_resources_summary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/tracked-resources/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectTrackedResourcesSummaryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+            collection_formats['region_id'] = 'csv'
+        if 'ep_id' in local_var_params:
+            query_params.append(('ep_id', local_var_params['ep_id']))
+            collection_formats['ep_id'] = 'csv'
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+            collection_formats['project_id'] = 'csv'
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def count_all_resources(self, request):
         """查询资源数量
 
@@ -4711,6 +4799,88 @@ class ConfigClient(Client):
             ['application/json'])
 
         auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_tracked_resources(self, request):
+        """查询资源记录器收集的资源数量
+
+        查询当前用户资源记录器收集的资源数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountTrackedResources
+        :type request: :class:`huaweicloudsdkconfig.v1.CountTrackedResourcesRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CountTrackedResourcesResponse`
+        """
+        http_info = self._count_tracked_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_tracked_resources_invoker(self, request):
+        http_info = self._count_tracked_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_tracked_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/tracked-resources/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountTrackedResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+            collection_formats['region_id'] = 'csv'
+        if 'ep_id' in local_var_params:
+            query_params.append(('ep_id', local_var_params['ep_id']))
+            collection_formats['ep_id'] = 'csv'
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+            collection_formats['project_id'] = 'csv'
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -5020,6 +5190,155 @@ class ConfigClient(Client):
 
         return http_info
 
+    def list_tracked_resource_tags(self, request):
+        """列举资源记录器收集的资源标签
+
+        查询当前用户资源记录器收集的资源的标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTrackedResourceTags
+        :type request: :class:`huaweicloudsdkconfig.v1.ListTrackedResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListTrackedResourceTagsResponse`
+        """
+        http_info = self._list_tracked_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tracked_resource_tags_invoker(self, request):
+        http_info = self._list_tracked_resource_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tracked_resource_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/tracked-resources/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrackedResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tracked_resources(self, request):
+        """列举资源记录器收集的全部资源
+
+        查询当前用户资源记录器收集的全部资源，需要当前用户有rms:resources:list权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTrackedResources
+        :type request: :class:`huaweicloudsdkconfig.v1.ListTrackedResourcesRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListTrackedResourcesResponse`
+        """
+        http_info = self._list_tracked_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tracked_resources_invoker(self, request):
+        http_info = self._list_tracked_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tracked_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/tracked-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrackedResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'ep_id' in local_var_params:
+            query_params.append(('ep_id', local_var_params['ep_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_resource_by_id(self, request):
         """查询单个资源
 
@@ -5142,6 +5461,71 @@ class ConfigClient(Client):
             ['application/json'])
 
         auth_settings = ['AccessKeyAuth', 'PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tracked_resource_detail(self, request):
+        """查询资源记录器收集的单个资源
+
+        查询当前用户资源记录器收集的单个资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTrackedResourceDetail
+        :type request: :class:`huaweicloudsdkconfig.v1.ShowTrackedResourceDetailRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ShowTrackedResourceDetailResponse`
+        """
+        http_info = self._show_tracked_resource_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tracked_resource_detail_invoker(self, request):
+        http_info = self._show_tracked_resource_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tracked_resource_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/tracked-resources/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrackedResourceDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

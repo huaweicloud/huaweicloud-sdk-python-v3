@@ -17,36 +17,64 @@ class CreatePromInstanceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'PromInstanceEpsModel'
+        'region': 'str',
+        'body': 'PromInstanceRequestModel'
     }
 
     attribute_map = {
+        'region': 'region',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, region=None, body=None):
         """CreatePromInstanceRequest
 
         The model defined in huaweicloud sdk
 
+        :param region: Prometheus实例所属Region，一般为承载REST服务端点的服务器域名或IP，不同服务不同区域的名称不同。
+        :type region: str
         :param body: Body of the CreatePromInstanceRequest
-        :type body: :class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`
+        :type body: :class:`huaweicloudsdkaom.v2.PromInstanceRequestModel`
         """
         
         
 
+        self._region = None
         self._body = None
         self.discriminator = None
 
+        self.region = region
         if body is not None:
             self.body = body
+
+    @property
+    def region(self):
+        """Gets the region of this CreatePromInstanceRequest.
+
+        Prometheus实例所属Region，一般为承载REST服务端点的服务器域名或IP，不同服务不同区域的名称不同。
+
+        :return: The region of this CreatePromInstanceRequest.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this CreatePromInstanceRequest.
+
+        Prometheus实例所属Region，一般为承载REST服务端点的服务器域名或IP，不同服务不同区域的名称不同。
+
+        :param region: The region of this CreatePromInstanceRequest.
+        :type region: str
+        """
+        self._region = region
 
     @property
     def body(self):
         """Gets the body of this CreatePromInstanceRequest.
 
         :return: The body of this CreatePromInstanceRequest.
-        :rtype: :class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`
+        :rtype: :class:`huaweicloudsdkaom.v2.PromInstanceRequestModel`
         """
         return self._body
 
@@ -55,7 +83,7 @@ class CreatePromInstanceRequest:
         """Sets the body of this CreatePromInstanceRequest.
 
         :param body: The body of this CreatePromInstanceRequest.
-        :type body: :class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`
+        :type body: :class:`huaweicloudsdkaom.v2.PromInstanceRequestModel`
         """
         self._body = body
 

@@ -28,7 +28,9 @@ class ShowDependencyVersionResponse(SdkResponse):
         'description': 'str',
         'file_name': 'str',
         'version': 'int',
-        'last_modified': 'int'
+        'last_modified': 'int',
+        'dep_id': 'str',
+        'download_link': 'str'
     }
 
     attribute_map = {
@@ -42,23 +44,25 @@ class ShowDependencyVersionResponse(SdkResponse):
         'description': 'description',
         'file_name': 'file_name',
         'version': 'version',
-        'last_modified': 'last_modified'
+        'last_modified': 'last_modified',
+        'dep_id': 'dep_id',
+        'download_link': 'download_link'
     }
 
-    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, last_modified=None):
+    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, last_modified=None, dep_id=None, download_link=None):
         """ShowDependencyVersionResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 依赖包ID。
+        :param id: 依赖包版本ID。
         :type id: str
         :param owner: 依赖包拥有者。
         :type owner: str
         :param link: 依赖包在obs的存储地址。
         :type link: str
-        :param runtime: 运行时语言。
+        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
-        :param etag: 依赖包唯一标志。
+        :param etag: 依赖包唯一标志（MD5校验值）。
         :type etag: str
         :param size: 依赖包大小。
         :type size: int
@@ -72,6 +76,10 @@ class ShowDependencyVersionResponse(SdkResponse):
         :type version: int
         :param last_modified: 依赖包更新时间
         :type last_modified: int
+        :param dep_id: 依赖包ID
+        :type dep_id: str
+        :param download_link: 依赖包文件临时下载链接
+        :type download_link: str
         """
         
         super(ShowDependencyVersionResponse, self).__init__()
@@ -87,6 +95,8 @@ class ShowDependencyVersionResponse(SdkResponse):
         self._file_name = None
         self._version = None
         self._last_modified = None
+        self._dep_id = None
+        self._download_link = None
         self.discriminator = None
 
         if id is not None:
@@ -111,12 +121,16 @@ class ShowDependencyVersionResponse(SdkResponse):
             self.version = version
         if last_modified is not None:
             self.last_modified = last_modified
+        if dep_id is not None:
+            self.dep_id = dep_id
+        if download_link is not None:
+            self.download_link = download_link
 
     @property
     def id(self):
         """Gets the id of this ShowDependencyVersionResponse.
 
-        依赖包ID。
+        依赖包版本ID。
 
         :return: The id of this ShowDependencyVersionResponse.
         :rtype: str
@@ -127,7 +141,7 @@ class ShowDependencyVersionResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowDependencyVersionResponse.
 
-        依赖包ID。
+        依赖包版本ID。
 
         :param id: The id of this ShowDependencyVersionResponse.
         :type id: str
@@ -182,7 +196,7 @@ class ShowDependencyVersionResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this ShowDependencyVersionResponse.
 
-        运行时语言。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this ShowDependencyVersionResponse.
         :rtype: str
@@ -193,7 +207,7 @@ class ShowDependencyVersionResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this ShowDependencyVersionResponse.
 
-        运行时语言。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this ShowDependencyVersionResponse.
         :type runtime: str
@@ -204,7 +218,7 @@ class ShowDependencyVersionResponse(SdkResponse):
     def etag(self):
         """Gets the etag of this ShowDependencyVersionResponse.
 
-        依赖包唯一标志。
+        依赖包唯一标志（MD5校验值）。
 
         :return: The etag of this ShowDependencyVersionResponse.
         :rtype: str
@@ -215,7 +229,7 @@ class ShowDependencyVersionResponse(SdkResponse):
     def etag(self, etag):
         """Sets the etag of this ShowDependencyVersionResponse.
 
-        依赖包唯一标志。
+        依赖包唯一标志（MD5校验值）。
 
         :param etag: The etag of this ShowDependencyVersionResponse.
         :type etag: str
@@ -353,6 +367,50 @@ class ShowDependencyVersionResponse(SdkResponse):
         :type last_modified: int
         """
         self._last_modified = last_modified
+
+    @property
+    def dep_id(self):
+        """Gets the dep_id of this ShowDependencyVersionResponse.
+
+        依赖包ID
+
+        :return: The dep_id of this ShowDependencyVersionResponse.
+        :rtype: str
+        """
+        return self._dep_id
+
+    @dep_id.setter
+    def dep_id(self, dep_id):
+        """Sets the dep_id of this ShowDependencyVersionResponse.
+
+        依赖包ID
+
+        :param dep_id: The dep_id of this ShowDependencyVersionResponse.
+        :type dep_id: str
+        """
+        self._dep_id = dep_id
+
+    @property
+    def download_link(self):
+        """Gets the download_link of this ShowDependencyVersionResponse.
+
+        依赖包文件临时下载链接
+
+        :return: The download_link of this ShowDependencyVersionResponse.
+        :rtype: str
+        """
+        return self._download_link
+
+    @download_link.setter
+    def download_link(self, download_link):
+        """Sets the download_link of this ShowDependencyVersionResponse.
+
+        依赖包文件临时下载链接
+
+        :param download_link: The download_link of this ShowDependencyVersionResponse.
+        :type download_link: str
+        """
+        self._download_link = download_link
 
     def to_dict(self):
         """Returns the model properties as a dict"""

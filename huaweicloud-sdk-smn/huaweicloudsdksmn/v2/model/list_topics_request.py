@@ -22,7 +22,8 @@ class ListTopicsRequest:
         'enterprise_project_id': 'str',
         'name': 'str',
         'fuzzy_name': 'str',
-        'topic_id': 'str'
+        'topic_id': 'str',
+        'fuzzy_display_name': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListTopicsRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'name': 'name',
         'fuzzy_name': 'fuzzy_name',
-        'topic_id': 'topic_id'
+        'topic_id': 'topic_id',
+        'fuzzy_display_name': 'fuzzy_display_name'
     }
 
-    def __init__(self, offset=None, limit=None, enterprise_project_id=None, name=None, fuzzy_name=None, topic_id=None):
+    def __init__(self, offset=None, limit=None, enterprise_project_id=None, name=None, fuzzy_name=None, topic_id=None, fuzzy_display_name=None):
         """ListTopicsRequest
 
         The model defined in huaweicloud sdk
@@ -47,10 +49,12 @@ class ListTopicsRequest:
         :type enterprise_project_id: str
         :param name: 检索的主题名称，完全匹配。
         :type name: str
-        :param fuzzy_name: 检索的主题名称，模糊匹配，按照startwith模式进行匹配。
+        :param fuzzy_name: 检索的主题名称，模糊匹配。
         :type fuzzy_name: str
         :param topic_id: 检索的主题ID，完全匹配。
         :type topic_id: str
+        :param fuzzy_display_name: 检索的主题显示名。模糊匹配。参数字节长度不能大于192字节。
+        :type fuzzy_display_name: str
         """
         
         
@@ -61,6 +65,7 @@ class ListTopicsRequest:
         self._name = None
         self._fuzzy_name = None
         self._topic_id = None
+        self._fuzzy_display_name = None
         self.discriminator = None
 
         if offset is not None:
@@ -75,6 +80,8 @@ class ListTopicsRequest:
             self.fuzzy_name = fuzzy_name
         if topic_id is not None:
             self.topic_id = topic_id
+        if fuzzy_display_name is not None:
+            self.fuzzy_display_name = fuzzy_display_name
 
     @property
     def offset(self):
@@ -168,7 +175,7 @@ class ListTopicsRequest:
     def fuzzy_name(self):
         """Gets the fuzzy_name of this ListTopicsRequest.
 
-        检索的主题名称，模糊匹配，按照startwith模式进行匹配。
+        检索的主题名称，模糊匹配。
 
         :return: The fuzzy_name of this ListTopicsRequest.
         :rtype: str
@@ -179,7 +186,7 @@ class ListTopicsRequest:
     def fuzzy_name(self, fuzzy_name):
         """Sets the fuzzy_name of this ListTopicsRequest.
 
-        检索的主题名称，模糊匹配，按照startwith模式进行匹配。
+        检索的主题名称，模糊匹配。
 
         :param fuzzy_name: The fuzzy_name of this ListTopicsRequest.
         :type fuzzy_name: str
@@ -207,6 +214,28 @@ class ListTopicsRequest:
         :type topic_id: str
         """
         self._topic_id = topic_id
+
+    @property
+    def fuzzy_display_name(self):
+        """Gets the fuzzy_display_name of this ListTopicsRequest.
+
+        检索的主题显示名。模糊匹配。参数字节长度不能大于192字节。
+
+        :return: The fuzzy_display_name of this ListTopicsRequest.
+        :rtype: str
+        """
+        return self._fuzzy_display_name
+
+    @fuzzy_display_name.setter
+    def fuzzy_display_name(self, fuzzy_display_name):
+        """Sets the fuzzy_display_name of this ListTopicsRequest.
+
+        检索的主题显示名。模糊匹配。参数字节长度不能大于192字节。
+
+        :param fuzzy_display_name: The fuzzy_display_name of this ListTopicsRequest.
+        :type fuzzy_display_name: str
+        """
+        self._fuzzy_display_name = fuzzy_display_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,7 @@ class ShowTemplateVideoThumbnailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param aim_resource_id: 目标资源ID
+        :param aim_resource_id: 目标资源ID。
         :type aim_resource_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowTemplateVideoThumbnailRequest:
     def aim_resource_id(self):
         """Gets the aim_resource_id of this ShowTemplateVideoThumbnailRequest.
 
-        目标资源ID
+        目标资源ID。
 
         :return: The aim_resource_id of this ShowTemplateVideoThumbnailRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowTemplateVideoThumbnailRequest:
     def aim_resource_id(self, aim_resource_id):
         """Sets the aim_resource_id of this ShowTemplateVideoThumbnailRequest.
 
-        目标资源ID
+        目标资源ID。
 
         :param aim_resource_id: The aim_resource_id of this ShowTemplateVideoThumbnailRequest.
         :type aim_resource_id: str

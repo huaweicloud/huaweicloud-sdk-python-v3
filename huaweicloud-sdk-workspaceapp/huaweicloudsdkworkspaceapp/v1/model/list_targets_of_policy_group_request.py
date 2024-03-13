@@ -33,7 +33,7 @@ class ListTargetsOfPolicyGroupRequest:
 
         :param policy_group_id: 策略组id。
         :type policy_group_id: str
-        :param target_type: 应用对象的类型。 - USER：表示用户 - USERGROUP：表示用户组。 - APPGROUP：应用组。 - OU：组织单元。 - ALl：所有类型
+        :param target_type: 应用对象的类型： - USER：表示用户。 - USERGROUP：表示用户组。 - APPGROUP：应用组。 - OU：组织单元。 - ALl：所有类型
         :type target_type: str
         """
         
@@ -73,7 +73,7 @@ class ListTargetsOfPolicyGroupRequest:
     def target_type(self):
         """Gets the target_type of this ListTargetsOfPolicyGroupRequest.
 
-        应用对象的类型。 - USER：表示用户 - USERGROUP：表示用户组。 - APPGROUP：应用组。 - OU：组织单元。 - ALl：所有类型
+        应用对象的类型： - USER：表示用户。 - USERGROUP：表示用户组。 - APPGROUP：应用组。 - OU：组织单元。 - ALl：所有类型
 
         :return: The target_type of this ListTargetsOfPolicyGroupRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ListTargetsOfPolicyGroupRequest:
     def target_type(self, target_type):
         """Sets the target_type of this ListTargetsOfPolicyGroupRequest.
 
-        应用对象的类型。 - USER：表示用户 - USERGROUP：表示用户组。 - APPGROUP：应用组。 - OU：组织单元。 - ALl：所有类型
+        应用对象的类型： - USER：表示用户。 - USERGROUP：表示用户组。 - APPGROUP：应用组。 - OU：组织单元。 - ALl：所有类型
 
         :param target_type: The target_type of this ListTargetsOfPolicyGroupRequest.
         :type target_type: str

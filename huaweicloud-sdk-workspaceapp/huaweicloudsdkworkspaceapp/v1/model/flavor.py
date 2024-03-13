@@ -31,9 +31,9 @@ class Flavor:
 
         The model defined in huaweicloud sdk
 
-        :param id: 服务器对应的规格ID
+        :param id: 服务器对应的规格ID。
         :type id: str
-        :param links: 服务器对应规格的相关标记快捷链接信息
+        :param links: 服务器对应规格的相关标记快捷链接信息。
         :type links: list[:class:`huaweicloudsdkworkspaceapp.v1.FlavorLink`]
         """
         
@@ -52,7 +52,7 @@ class Flavor:
     def id(self):
         """Gets the id of this Flavor.
 
-        服务器对应的规格ID
+        服务器对应的规格ID。
 
         :return: The id of this Flavor.
         :rtype: str
@@ -63,7 +63,7 @@ class Flavor:
     def id(self, id):
         """Sets the id of this Flavor.
 
-        服务器对应的规格ID
+        服务器对应的规格ID。
 
         :param id: The id of this Flavor.
         :type id: str
@@ -74,7 +74,7 @@ class Flavor:
     def links(self):
         """Gets the links of this Flavor.
 
-        服务器对应规格的相关标记快捷链接信息
+        服务器对应规格的相关标记快捷链接信息。
 
         :return: The links of this Flavor.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.FlavorLink`]
@@ -85,7 +85,7 @@ class Flavor:
     def links(self, links):
         """Sets the links of this Flavor.
 
-        服务器对应规格的相关标记快捷链接信息
+        服务器对应规格的相关标记快捷链接信息。
 
         :param links: The links of this Flavor.
         :type links: list[:class:`huaweicloudsdkworkspaceapp.v1.FlavorLink`]

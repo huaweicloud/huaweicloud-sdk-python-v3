@@ -46,8 +46,24 @@ class DirectConnect:
         'vgw_type': 'str',
         'lag_id': 'str',
         'signed_agreement_status': 'str',
+        'signed_agreement_time': 'datetime',
         'enterprise_project_id': 'str',
-        'tags': 'list[Tag]'
+        'tags': 'list[Tag]',
+        'locales': 'LocalesBody',
+        'support_feature': 'list[str]',
+        'ies_id': 'str',
+        'reason': 'str',
+        'email': 'str',
+        'onestop_product_id': 'str',
+        'building_line_product_id': 'str',
+        'last_onestop_product_id': 'str',
+        'last_building_line_product_id': 'str',
+        'modified_bandwidth': 'int',
+        'change_mode': 'int',
+        'onestopdc_status': 'str',
+        'public_border_group': 'str',
+        'auto_renew': 'int',
+        'ratio_95peak': 'int'
     }
 
     attribute_map = {
@@ -80,11 +96,27 @@ class DirectConnect:
         'vgw_type': 'vgw_type',
         'lag_id': 'lag_id',
         'signed_agreement_status': 'signed_agreement_status',
+        'signed_agreement_time': 'signed_agreement_time',
         'enterprise_project_id': 'enterprise_project_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'locales': 'locales',
+        'support_feature': 'support_feature',
+        'ies_id': 'ies_id',
+        'reason': 'reason',
+        'email': 'email',
+        'onestop_product_id': 'onestop_product_id',
+        'building_line_product_id': 'building_line_product_id',
+        'last_onestop_product_id': 'last_onestop_product_id',
+        'last_building_line_product_id': 'last_building_line_product_id',
+        'modified_bandwidth': 'modified_bandwidth',
+        'change_mode': 'change_mode',
+        'onestopdc_status': 'onestopdc_status',
+        'public_border_group': 'public_border_group',
+        'auto_renew': 'auto_renew',
+        'ratio_95peak': 'ratio_95peak'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, port_type=None, bandwidth=None, location=None, peer_location=None, device_id=None, type=None, hosting_id=None, charge_mode=None, provider=None, admin_state_up=None, vlan=None, status=None, apply_time=None, create_time=None, provider_status=None, peer_port_type=None, peer_provider=None, order_id=None, product_id=None, spec_code=None, period_type=None, period_num=None, vgw_type=None, lag_id=None, signed_agreement_status=None, enterprise_project_id=None, tags=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, port_type=None, bandwidth=None, location=None, peer_location=None, device_id=None, type=None, hosting_id=None, charge_mode=None, provider=None, admin_state_up=None, vlan=None, status=None, apply_time=None, create_time=None, provider_status=None, peer_port_type=None, peer_provider=None, order_id=None, product_id=None, spec_code=None, period_type=None, period_num=None, vgw_type=None, lag_id=None, signed_agreement_status=None, signed_agreement_time=None, enterprise_project_id=None, tags=None, locales=None, support_feature=None, ies_id=None, reason=None, email=None, onestop_product_id=None, building_line_product_id=None, last_onestop_product_id=None, last_building_line_product_id=None, modified_bandwidth=None, change_mode=None, onestopdc_status=None, public_border_group=None, auto_renew=None, ratio_95peak=None):
         """DirectConnect
 
         The model defined in huaweicloud sdk
@@ -107,19 +139,19 @@ class DirectConnect:
         :type peer_location: str
         :param device_id: 物理专线连接的设备的标识ID
         :type device_id: str
-        :param type: 物理专线的类型，类似包括标准(standard),运营专线(hosting),托管专线（hosted）
+        :param type: 物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
         :type type: str
         :param hosting_id: hosted物理专线对应的hosting物理专线的ID
         :type hosting_id: str
         :param charge_mode: 计费模式：prepayment/bandwidth/traffic
         :type charge_mode: str
-        :param provider: 物理专线连接的线路运营商如：中国电信 中国联通 中国移动 中国其他 境外其他专线归属的运营商
+        :param provider: 物理专线连接的线路运营商 [如：中国电信 中国联通 中国移动 中国其他 境外其他专线归属的运营商](tag:hws,hws_hk)
         :type provider: str
         :param admin_state_up: 管理状态：true或false
         :type admin_state_up: bool
         :param vlan: 为托管hosted物理专线分配的vlan。
         :type vlan: int
-        :param status: 资源状态，合法值是：ACTIVE，DOWN，BUILD，ERROR，PENDING_DELETE，DELETED，APPLY，DENY，PENDING_PAY，PAID，ORDERING，ACCEPT，REJECTED
+        :param status: 资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘
         :type status: str
         :param apply_time: 物理专线的申请时间
         :type apply_time: datetime
@@ -147,10 +179,42 @@ class DirectConnect:
         :type lag_id: str
         :param signed_agreement_status: 专线协议的签暑状态
         :type signed_agreement_status: str
+        :param signed_agreement_time: 专线协议的签暑时间
+        :type signed_agreement_time: datetime
         :param enterprise_project_id: 实例所属企业项目ID
         :type enterprise_project_id: str
         :param tags: 标签信息
         :type tags: list[:class:`huaweicloudsdkdc.v3.Tag`]
+        :param locales: 
+        :type locales: :class:`huaweicloudsdkdc.v3.LocalesBody`
+        :param support_feature: 用户专线可支持的特性列表[（功能暂不支持）](tag:dt)
+        :type support_feature: list[str]
+        :param ies_id: 归属的IES站点的ID[（功能暂不支持）](tag:dt)
+        :type ies_id: str
+        :param reason: 如果专线资源的状态是Error的情况下，该参数会显示相关错误信息。[（功能暂不支持）](tag:dt)
+        :type reason: str
+        :param email: 客户邮箱信息[（功能暂不支持）](tag:dt)
+        :type email: str
+        :param onestop_product_id: 该参数用于销售线路场景，标识一站式专线产品ID[（功能暂不支持）](tag:dt)
+        :type onestop_product_id: str
+        :param building_line_product_id: 该参数用于销售线路场景，标识机房内部线路资源产品ID[（功能暂不支持）](tag:dt)
+        :type building_line_product_id: str
+        :param last_onestop_product_id: 该参数用于销售线路场景，标识变更前的一站式专线产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
+        :type last_onestop_product_id: str
+        :param last_building_line_product_id: 该参数用于销售线路场景，标识变更前机房内部线路资源产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
+        :type last_building_line_product_id: str
+        :param modified_bandwidth: 线路带宽变更后的带宽值[（功能暂不支持）](tag:dt)
+        :type modified_bandwidth: int
+        :param change_mode: 标识续费变更的一种状态[（功能暂不支持）](tag:dt)
+        :type change_mode: int
+        :param onestopdc_status: 一站式专线状态[（功能暂不支持）](tag:dt)
+        :type onestopdc_status: str
+        :param public_border_group: 归属的可用区对应的边界组(public border group)，标识是否homezone局点。[（功能暂不支持）](tag:dt)
+        :type public_border_group: str
+        :param auto_renew: 用于标识包周期产品是否自动续订[（功能暂不支持）](tag:dt)
+        :type auto_renew: int
+        :param ratio_95peak: 95计费保底带宽率[（功能暂不支持）](tag:dt)
+        :type ratio_95peak: int
         """
         
         
@@ -184,8 +248,24 @@ class DirectConnect:
         self._vgw_type = None
         self._lag_id = None
         self._signed_agreement_status = None
+        self._signed_agreement_time = None
         self._enterprise_project_id = None
         self._tags = None
+        self._locales = None
+        self._support_feature = None
+        self._ies_id = None
+        self._reason = None
+        self._email = None
+        self._onestop_product_id = None
+        self._building_line_product_id = None
+        self._last_onestop_product_id = None
+        self._last_building_line_product_id = None
+        self._modified_bandwidth = None
+        self._change_mode = None
+        self._onestopdc_status = None
+        self._public_border_group = None
+        self._auto_renew = None
+        self._ratio_95peak = None
         self.discriminator = None
 
         if id is not None:
@@ -246,10 +326,42 @@ class DirectConnect:
             self.lag_id = lag_id
         if signed_agreement_status is not None:
             self.signed_agreement_status = signed_agreement_status
+        if signed_agreement_time is not None:
+            self.signed_agreement_time = signed_agreement_time
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        if locales is not None:
+            self.locales = locales
+        if support_feature is not None:
+            self.support_feature = support_feature
+        if ies_id is not None:
+            self.ies_id = ies_id
+        if reason is not None:
+            self.reason = reason
+        if email is not None:
+            self.email = email
+        if onestop_product_id is not None:
+            self.onestop_product_id = onestop_product_id
+        if building_line_product_id is not None:
+            self.building_line_product_id = building_line_product_id
+        if last_onestop_product_id is not None:
+            self.last_onestop_product_id = last_onestop_product_id
+        if last_building_line_product_id is not None:
+            self.last_building_line_product_id = last_building_line_product_id
+        if modified_bandwidth is not None:
+            self.modified_bandwidth = modified_bandwidth
+        if change_mode is not None:
+            self.change_mode = change_mode
+        if onestopdc_status is not None:
+            self.onestopdc_status = onestopdc_status
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
+        if auto_renew is not None:
+            self.auto_renew = auto_renew
+        if ratio_95peak is not None:
+            self.ratio_95peak = ratio_95peak
 
     @property
     def id(self):
@@ -453,7 +565,7 @@ class DirectConnect:
     def type(self):
         """Gets the type of this DirectConnect.
 
-        物理专线的类型，类似包括标准(standard),运营专线(hosting),托管专线（hosted）
+        物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
 
         :return: The type of this DirectConnect.
         :rtype: str
@@ -464,7 +576,7 @@ class DirectConnect:
     def type(self, type):
         """Sets the type of this DirectConnect.
 
-        物理专线的类型，类似包括标准(standard),运营专线(hosting),托管专线（hosted）
+        物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
 
         :param type: The type of this DirectConnect.
         :type type: str
@@ -519,7 +631,7 @@ class DirectConnect:
     def provider(self):
         """Gets the provider of this DirectConnect.
 
-        物理专线连接的线路运营商如：中国电信 中国联通 中国移动 中国其他 境外其他专线归属的运营商
+        物理专线连接的线路运营商 [如：中国电信 中国联通 中国移动 中国其他 境外其他专线归属的运营商](tag:hws,hws_hk)
 
         :return: The provider of this DirectConnect.
         :rtype: str
@@ -530,7 +642,7 @@ class DirectConnect:
     def provider(self, provider):
         """Sets the provider of this DirectConnect.
 
-        物理专线连接的线路运营商如：中国电信 中国联通 中国移动 中国其他 境外其他专线归属的运营商
+        物理专线连接的线路运营商 [如：中国电信 中国联通 中国移动 中国其他 境外其他专线归属的运营商](tag:hws,hws_hk)
 
         :param provider: The provider of this DirectConnect.
         :type provider: str
@@ -585,7 +697,7 @@ class DirectConnect:
     def status(self):
         """Gets the status of this DirectConnect.
 
-        资源状态，合法值是：ACTIVE，DOWN，BUILD，ERROR，PENDING_DELETE，DELETED，APPLY，DENY，PENDING_PAY，PAID，ORDERING，ACCEPT，REJECTED
+        资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘
 
         :return: The status of this DirectConnect.
         :rtype: str
@@ -596,7 +708,7 @@ class DirectConnect:
     def status(self, status):
         """Sets the status of this DirectConnect.
 
-        资源状态，合法值是：ACTIVE，DOWN，BUILD，ERROR，PENDING_DELETE，DELETED，APPLY，DENY，PENDING_PAY，PAID，ORDERING，ACCEPT，REJECTED
+        资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘
 
         :param status: The status of this DirectConnect.
         :type status: str
@@ -890,6 +1002,28 @@ class DirectConnect:
         self._signed_agreement_status = signed_agreement_status
 
     @property
+    def signed_agreement_time(self):
+        """Gets the signed_agreement_time of this DirectConnect.
+
+        专线协议的签暑时间
+
+        :return: The signed_agreement_time of this DirectConnect.
+        :rtype: datetime
+        """
+        return self._signed_agreement_time
+
+    @signed_agreement_time.setter
+    def signed_agreement_time(self, signed_agreement_time):
+        """Sets the signed_agreement_time of this DirectConnect.
+
+        专线协议的签暑时间
+
+        :param signed_agreement_time: The signed_agreement_time of this DirectConnect.
+        :type signed_agreement_time: datetime
+        """
+        self._signed_agreement_time = signed_agreement_time
+
+    @property
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DirectConnect.
 
@@ -932,6 +1066,332 @@ class DirectConnect:
         :type tags: list[:class:`huaweicloudsdkdc.v3.Tag`]
         """
         self._tags = tags
+
+    @property
+    def locales(self):
+        """Gets the locales of this DirectConnect.
+
+        :return: The locales of this DirectConnect.
+        :rtype: :class:`huaweicloudsdkdc.v3.LocalesBody`
+        """
+        return self._locales
+
+    @locales.setter
+    def locales(self, locales):
+        """Sets the locales of this DirectConnect.
+
+        :param locales: The locales of this DirectConnect.
+        :type locales: :class:`huaweicloudsdkdc.v3.LocalesBody`
+        """
+        self._locales = locales
+
+    @property
+    def support_feature(self):
+        """Gets the support_feature of this DirectConnect.
+
+        用户专线可支持的特性列表[（功能暂不支持）](tag:dt)
+
+        :return: The support_feature of this DirectConnect.
+        :rtype: list[str]
+        """
+        return self._support_feature
+
+    @support_feature.setter
+    def support_feature(self, support_feature):
+        """Sets the support_feature of this DirectConnect.
+
+        用户专线可支持的特性列表[（功能暂不支持）](tag:dt)
+
+        :param support_feature: The support_feature of this DirectConnect.
+        :type support_feature: list[str]
+        """
+        self._support_feature = support_feature
+
+    @property
+    def ies_id(self):
+        """Gets the ies_id of this DirectConnect.
+
+        归属的IES站点的ID[（功能暂不支持）](tag:dt)
+
+        :return: The ies_id of this DirectConnect.
+        :rtype: str
+        """
+        return self._ies_id
+
+    @ies_id.setter
+    def ies_id(self, ies_id):
+        """Sets the ies_id of this DirectConnect.
+
+        归属的IES站点的ID[（功能暂不支持）](tag:dt)
+
+        :param ies_id: The ies_id of this DirectConnect.
+        :type ies_id: str
+        """
+        self._ies_id = ies_id
+
+    @property
+    def reason(self):
+        """Gets the reason of this DirectConnect.
+
+        如果专线资源的状态是Error的情况下，该参数会显示相关错误信息。[（功能暂不支持）](tag:dt)
+
+        :return: The reason of this DirectConnect.
+        :rtype: str
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this DirectConnect.
+
+        如果专线资源的状态是Error的情况下，该参数会显示相关错误信息。[（功能暂不支持）](tag:dt)
+
+        :param reason: The reason of this DirectConnect.
+        :type reason: str
+        """
+        self._reason = reason
+
+    @property
+    def email(self):
+        """Gets the email of this DirectConnect.
+
+        客户邮箱信息[（功能暂不支持）](tag:dt)
+
+        :return: The email of this DirectConnect.
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this DirectConnect.
+
+        客户邮箱信息[（功能暂不支持）](tag:dt)
+
+        :param email: The email of this DirectConnect.
+        :type email: str
+        """
+        self._email = email
+
+    @property
+    def onestop_product_id(self):
+        """Gets the onestop_product_id of this DirectConnect.
+
+        该参数用于销售线路场景，标识一站式专线产品ID[（功能暂不支持）](tag:dt)
+
+        :return: The onestop_product_id of this DirectConnect.
+        :rtype: str
+        """
+        return self._onestop_product_id
+
+    @onestop_product_id.setter
+    def onestop_product_id(self, onestop_product_id):
+        """Sets the onestop_product_id of this DirectConnect.
+
+        该参数用于销售线路场景，标识一站式专线产品ID[（功能暂不支持）](tag:dt)
+
+        :param onestop_product_id: The onestop_product_id of this DirectConnect.
+        :type onestop_product_id: str
+        """
+        self._onestop_product_id = onestop_product_id
+
+    @property
+    def building_line_product_id(self):
+        """Gets the building_line_product_id of this DirectConnect.
+
+        该参数用于销售线路场景，标识机房内部线路资源产品ID[（功能暂不支持）](tag:dt)
+
+        :return: The building_line_product_id of this DirectConnect.
+        :rtype: str
+        """
+        return self._building_line_product_id
+
+    @building_line_product_id.setter
+    def building_line_product_id(self, building_line_product_id):
+        """Sets the building_line_product_id of this DirectConnect.
+
+        该参数用于销售线路场景，标识机房内部线路资源产品ID[（功能暂不支持）](tag:dt)
+
+        :param building_line_product_id: The building_line_product_id of this DirectConnect.
+        :type building_line_product_id: str
+        """
+        self._building_line_product_id = building_line_product_id
+
+    @property
+    def last_onestop_product_id(self):
+        """Gets the last_onestop_product_id of this DirectConnect.
+
+        该参数用于销售线路场景，标识变更前的一站式专线产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
+
+        :return: The last_onestop_product_id of this DirectConnect.
+        :rtype: str
+        """
+        return self._last_onestop_product_id
+
+    @last_onestop_product_id.setter
+    def last_onestop_product_id(self, last_onestop_product_id):
+        """Sets the last_onestop_product_id of this DirectConnect.
+
+        该参数用于销售线路场景，标识变更前的一站式专线产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
+
+        :param last_onestop_product_id: The last_onestop_product_id of this DirectConnect.
+        :type last_onestop_product_id: str
+        """
+        self._last_onestop_product_id = last_onestop_product_id
+
+    @property
+    def last_building_line_product_id(self):
+        """Gets the last_building_line_product_id of this DirectConnect.
+
+        该参数用于销售线路场景，标识变更前机房内部线路资源产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
+
+        :return: The last_building_line_product_id of this DirectConnect.
+        :rtype: str
+        """
+        return self._last_building_line_product_id
+
+    @last_building_line_product_id.setter
+    def last_building_line_product_id(self, last_building_line_product_id):
+        """Sets the last_building_line_product_id of this DirectConnect.
+
+        该参数用于销售线路场景，标识变更前机房内部线路资源产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
+
+        :param last_building_line_product_id: The last_building_line_product_id of this DirectConnect.
+        :type last_building_line_product_id: str
+        """
+        self._last_building_line_product_id = last_building_line_product_id
+
+    @property
+    def modified_bandwidth(self):
+        """Gets the modified_bandwidth of this DirectConnect.
+
+        线路带宽变更后的带宽值[（功能暂不支持）](tag:dt)
+
+        :return: The modified_bandwidth of this DirectConnect.
+        :rtype: int
+        """
+        return self._modified_bandwidth
+
+    @modified_bandwidth.setter
+    def modified_bandwidth(self, modified_bandwidth):
+        """Sets the modified_bandwidth of this DirectConnect.
+
+        线路带宽变更后的带宽值[（功能暂不支持）](tag:dt)
+
+        :param modified_bandwidth: The modified_bandwidth of this DirectConnect.
+        :type modified_bandwidth: int
+        """
+        self._modified_bandwidth = modified_bandwidth
+
+    @property
+    def change_mode(self):
+        """Gets the change_mode of this DirectConnect.
+
+        标识续费变更的一种状态[（功能暂不支持）](tag:dt)
+
+        :return: The change_mode of this DirectConnect.
+        :rtype: int
+        """
+        return self._change_mode
+
+    @change_mode.setter
+    def change_mode(self, change_mode):
+        """Sets the change_mode of this DirectConnect.
+
+        标识续费变更的一种状态[（功能暂不支持）](tag:dt)
+
+        :param change_mode: The change_mode of this DirectConnect.
+        :type change_mode: int
+        """
+        self._change_mode = change_mode
+
+    @property
+    def onestopdc_status(self):
+        """Gets the onestopdc_status of this DirectConnect.
+
+        一站式专线状态[（功能暂不支持）](tag:dt)
+
+        :return: The onestopdc_status of this DirectConnect.
+        :rtype: str
+        """
+        return self._onestopdc_status
+
+    @onestopdc_status.setter
+    def onestopdc_status(self, onestopdc_status):
+        """Sets the onestopdc_status of this DirectConnect.
+
+        一站式专线状态[（功能暂不支持）](tag:dt)
+
+        :param onestopdc_status: The onestopdc_status of this DirectConnect.
+        :type onestopdc_status: str
+        """
+        self._onestopdc_status = onestopdc_status
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this DirectConnect.
+
+        归属的可用区对应的边界组(public border group)，标识是否homezone局点。[（功能暂不支持）](tag:dt)
+
+        :return: The public_border_group of this DirectConnect.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this DirectConnect.
+
+        归属的可用区对应的边界组(public border group)，标识是否homezone局点。[（功能暂不支持）](tag:dt)
+
+        :param public_border_group: The public_border_group of this DirectConnect.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
+
+    @property
+    def auto_renew(self):
+        """Gets the auto_renew of this DirectConnect.
+
+        用于标识包周期产品是否自动续订[（功能暂不支持）](tag:dt)
+
+        :return: The auto_renew of this DirectConnect.
+        :rtype: int
+        """
+        return self._auto_renew
+
+    @auto_renew.setter
+    def auto_renew(self, auto_renew):
+        """Sets the auto_renew of this DirectConnect.
+
+        用于标识包周期产品是否自动续订[（功能暂不支持）](tag:dt)
+
+        :param auto_renew: The auto_renew of this DirectConnect.
+        :type auto_renew: int
+        """
+        self._auto_renew = auto_renew
+
+    @property
+    def ratio_95peak(self):
+        """Gets the ratio_95peak of this DirectConnect.
+
+        95计费保底带宽率[（功能暂不支持）](tag:dt)
+
+        :return: The ratio_95peak of this DirectConnect.
+        :rtype: int
+        """
+        return self._ratio_95peak
+
+    @ratio_95peak.setter
+    def ratio_95peak(self, ratio_95peak):
+        """Sets the ratio_95peak of this DirectConnect.
+
+        95计费保底带宽率[（功能暂不支持）](tag:dt)
+
+        :param ratio_95peak: The ratio_95peak of this DirectConnect.
+        :type ratio_95peak: int
+        """
+        self._ratio_95peak = ratio_95peak
 
     def to_dict(self):
         """Returns the model properties as a dict"""

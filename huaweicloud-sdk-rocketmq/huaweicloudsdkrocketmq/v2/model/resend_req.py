@@ -18,23 +18,27 @@ class ResendReq:
 
     openapi_types = {
         'group': 'str',
+        'topic': 'str',
         'client_id': 'str',
         'msg_id_list': 'list[str]'
     }
 
     attribute_map = {
         'group': 'group',
+        'topic': 'topic',
         'client_id': 'client_id',
         'msg_id_list': 'msg_id_list'
     }
 
-    def __init__(self, group=None, client_id=None, msg_id_list=None):
+    def __init__(self, group=None, topic=None, client_id=None, msg_id_list=None):
         """ResendReq
 
         The model defined in huaweicloud sdk
 
         :param group: Group ID。
         :type group: str
+        :param topic: 消息所属topic。
+        :type topic: str
         :param client_id: 客户端ID。
         :type client_id: str
         :param msg_id_list: 消息列表。
@@ -44,12 +48,15 @@ class ResendReq:
         
 
         self._group = None
+        self._topic = None
         self._client_id = None
         self._msg_id_list = None
         self.discriminator = None
 
         if group is not None:
             self.group = group
+        if topic is not None:
+            self.topic = topic
         if client_id is not None:
             self.client_id = client_id
         if msg_id_list is not None:
@@ -76,6 +83,28 @@ class ResendReq:
         :type group: str
         """
         self._group = group
+
+    @property
+    def topic(self):
+        """Gets the topic of this ResendReq.
+
+        消息所属topic。
+
+        :return: The topic of this ResendReq.
+        :rtype: str
+        """
+        return self._topic
+
+    @topic.setter
+    def topic(self, topic):
+        """Sets the topic of this ResendReq.
+
+        消息所属topic。
+
+        :param topic: The topic of this ResendReq.
+        :type topic: str
+        """
+        self._topic = topic
 
     @property
     def client_id(self):

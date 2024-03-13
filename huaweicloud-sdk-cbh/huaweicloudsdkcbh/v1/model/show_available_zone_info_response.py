@@ -18,7 +18,7 @@ class ShowAvailableZoneInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'availability_zone': 'AvailabilityZones'
+        'availability_zone': 'list[AvailabilityZones]'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ShowAvailableZoneInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone: 
-        :type availability_zone: :class:`huaweicloudsdkcbh.v1.AvailabilityZones`
+        :param availability_zone: 可用区信息。
+        :type availability_zone: list[:class:`huaweicloudsdkcbh.v1.AvailabilityZones`]
         """
         
         super(ShowAvailableZoneInfoResponse, self).__init__()
@@ -46,8 +46,10 @@ class ShowAvailableZoneInfoResponse(SdkResponse):
     def availability_zone(self):
         """Gets the availability_zone of this ShowAvailableZoneInfoResponse.
 
+        可用区信息。
+
         :return: The availability_zone of this ShowAvailableZoneInfoResponse.
-        :rtype: :class:`huaweicloudsdkcbh.v1.AvailabilityZones`
+        :rtype: list[:class:`huaweicloudsdkcbh.v1.AvailabilityZones`]
         """
         return self._availability_zone
 
@@ -55,8 +57,10 @@ class ShowAvailableZoneInfoResponse(SdkResponse):
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ShowAvailableZoneInfoResponse.
 
+        可用区信息。
+
         :param availability_zone: The availability_zone of this ShowAvailableZoneInfoResponse.
-        :type availability_zone: :class:`huaweicloudsdkcbh.v1.AvailabilityZones`
+        :type availability_zone: list[:class:`huaweicloudsdkcbh.v1.AvailabilityZones`]
         """
         self._availability_zone = availability_zone
 

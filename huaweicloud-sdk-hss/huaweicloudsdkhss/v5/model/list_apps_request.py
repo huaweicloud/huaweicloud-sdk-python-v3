@@ -25,7 +25,9 @@ class ListAppsRequest:
         'install_dir': 'str',
         'enterprise_project_id': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'category': 'str',
+        'part_match': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class ListAppsRequest:
         'install_dir': 'install_dir',
         'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'category': 'category',
+        'part_match': 'part_match'
     }
 
-    def __init__(self, host_id=None, host_name=None, app_name=None, host_ip=None, version=None, install_dir=None, enterprise_project_id=None, limit=None, offset=None):
+    def __init__(self, host_id=None, host_name=None, app_name=None, host_ip=None, version=None, install_dir=None, enterprise_project_id=None, limit=None, offset=None, category=None, part_match=None):
         """ListAppsRequest
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class ListAppsRequest:
         :type limit: int
         :param offset: 默认是0
         :type offset: int
+        :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
+        :type category: str
+        :param part_match: 是否模糊匹配，默认false表示精确匹配
+        :type part_match: bool
         """
         
         
@@ -76,6 +84,8 @@ class ListAppsRequest:
         self._enterprise_project_id = None
         self._limit = None
         self._offset = None
+        self._category = None
+        self._part_match = None
         self.discriminator = None
 
         self.host_id = host_id
@@ -95,6 +105,10 @@ class ListAppsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if category is not None:
+            self.category = category
+        if part_match is not None:
+            self.part_match = part_match
 
     @property
     def host_id(self):
@@ -293,6 +307,50 @@ class ListAppsRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def category(self):
+        """Gets the category of this ListAppsRequest.
+
+        类别，默认为host，包含如下： - host：主机 - container：容器
+
+        :return: The category of this ListAppsRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        """Sets the category of this ListAppsRequest.
+
+        类别，默认为host，包含如下： - host：主机 - container：容器
+
+        :param category: The category of this ListAppsRequest.
+        :type category: str
+        """
+        self._category = category
+
+    @property
+    def part_match(self):
+        """Gets the part_match of this ListAppsRequest.
+
+        是否模糊匹配，默认false表示精确匹配
+
+        :return: The part_match of this ListAppsRequest.
+        :rtype: bool
+        """
+        return self._part_match
+
+    @part_match.setter
+    def part_match(self, part_match):
+        """Sets the part_match of this ListAppsRequest.
+
+        是否模糊匹配，默认false表示精确匹配
+
+        :param part_match: The part_match of this ListAppsRequest.
+        :type part_match: bool
+        """
+        self._part_match = part_match
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -93,7 +93,7 @@ class NodeSpec:
         :type taints: list[:class:`huaweicloudsdkcce.v3.Taint`]
         :param k8s_tags: 格式为key/value键值对。键值对个数不超过20条。 - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。   示例： &#x60;&#x60;&#x60; \&quot;k8sTags\&quot;: {   \&quot;key\&quot;: \&quot;value\&quot; } &#x60;&#x60;&#x60; 
         :type k8s_tags: dict(str, str)
-        :param ecs_group_id: 云服务器组ID，若指定，将节点创建在该云服务器组下
+        :param ecs_group_id: 云服务器组ID，若指定，将节点创建在该云服务器组下 &gt; 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置
         :type ecs_group_id: str
         :param dedicated_host_id: 指定DeH主机的ID，将节点调度到自己的DeH上。 &gt;创建节点池添加节点时不支持该参数。 
         :type dedicated_host_id: str
@@ -439,7 +439,7 @@ class NodeSpec:
     def ecs_group_id(self):
         """Gets the ecs_group_id of this NodeSpec.
 
-        云服务器组ID，若指定，将节点创建在该云服务器组下
+        云服务器组ID，若指定，将节点创建在该云服务器组下 > 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置
 
         :return: The ecs_group_id of this NodeSpec.
         :rtype: str
@@ -450,7 +450,7 @@ class NodeSpec:
     def ecs_group_id(self, ecs_group_id):
         """Sets the ecs_group_id of this NodeSpec.
 
-        云服务器组ID，若指定，将节点创建在该云服务器组下
+        云服务器组ID，若指定，将节点创建在该云服务器组下 > 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置
 
         :param ecs_group_id: The ecs_group_id of this NodeSpec.
         :type ecs_group_id: str

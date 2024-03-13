@@ -93,7 +93,8 @@ class EquipmentItem:
         self._status = None
         self.discriminator = None
 
-        self.id = id
+        if id is not None:
+            self.id = id
         if ieg_id is not None:
             self.ieg_id = ieg_id
         if esn is not None:

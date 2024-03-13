@@ -49,7 +49,8 @@ class DeleteServiceCatalogRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         if body is not None:
             self.body = body
 

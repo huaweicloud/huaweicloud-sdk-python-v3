@@ -33,11 +33,11 @@ class UpdateDpd:
 
         The model defined in huaweicloud sdk
 
-        :param interval: DPD检测间隔时长
+        :param interval: 对等体存活检测空闲时间
         :type interval: int
-        :param timeout: DPD检测间隔超时时间
+        :param timeout: 对等体存活检测报文重传间隔
         :type timeout: int
-        :param msg: DPD检测报文格式
+        :param msg: 对等体存活检测报文格式
         :type msg: str
         """
         
@@ -59,7 +59,7 @@ class UpdateDpd:
     def interval(self):
         """Gets the interval of this UpdateDpd.
 
-        DPD检测间隔时长
+        对等体存活检测空闲时间
 
         :return: The interval of this UpdateDpd.
         :rtype: int
@@ -70,7 +70,7 @@ class UpdateDpd:
     def interval(self, interval):
         """Sets the interval of this UpdateDpd.
 
-        DPD检测间隔时长
+        对等体存活检测空闲时间
 
         :param interval: The interval of this UpdateDpd.
         :type interval: int
@@ -81,7 +81,7 @@ class UpdateDpd:
     def timeout(self):
         """Gets the timeout of this UpdateDpd.
 
-        DPD检测间隔超时时间
+        对等体存活检测报文重传间隔
 
         :return: The timeout of this UpdateDpd.
         :rtype: int
@@ -92,7 +92,7 @@ class UpdateDpd:
     def timeout(self, timeout):
         """Sets the timeout of this UpdateDpd.
 
-        DPD检测间隔超时时间
+        对等体存活检测报文重传间隔
 
         :param timeout: The timeout of this UpdateDpd.
         :type timeout: int
@@ -103,7 +103,7 @@ class UpdateDpd:
     def msg(self):
         """Gets the msg of this UpdateDpd.
 
-        DPD检测报文格式
+        对等体存活检测报文格式
 
         :return: The msg of this UpdateDpd.
         :rtype: str
@@ -114,7 +114,7 @@ class UpdateDpd:
     def msg(self, msg):
         """Sets the msg of this UpdateDpd.
 
-        DPD检测报文格式
+        对等体存活检测报文格式
 
         :param msg: The msg of this UpdateDpd.
         :type msg: str

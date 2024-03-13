@@ -25,7 +25,10 @@ class ModifyWorkspaceAttributesReq:
         'internet_access_port': 'str',
         'enterprise_id': 'str',
         'is_send_email': 'bool',
-        'dc_vnc_ip': 'str'
+        'dc_vnc_ip': 'str',
+        'authorized_collect_log': 'bool',
+        'authorized_hda_upgrade': 'bool',
+        'apply_dedicated_standby_network_param': 'ApplyDedicatedStandbyNetworkParam'
     }
 
     attribute_map = {
@@ -37,10 +40,13 @@ class ModifyWorkspaceAttributesReq:
         'internet_access_port': 'internet_access_port',
         'enterprise_id': 'enterprise_id',
         'is_send_email': 'is_send_email',
-        'dc_vnc_ip': 'dc_vnc_ip'
+        'dc_vnc_ip': 'dc_vnc_ip',
+        'authorized_collect_log': 'authorized_collect_log',
+        'authorized_hda_upgrade': 'authorized_hda_upgrade',
+        'apply_dedicated_standby_network_param': 'apply_dedicated_standby_network_param'
     }
 
-    def __init__(self, ad_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, subnet_ids=None, internet_access_port=None, enterprise_id=None, is_send_email=None, dc_vnc_ip=None):
+    def __init__(self, ad_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, subnet_ids=None, internet_access_port=None, enterprise_id=None, is_send_email=None, dc_vnc_ip=None, authorized_collect_log=None, authorized_hda_upgrade=None, apply_dedicated_standby_network_param=None):
         """ModifyWorkspaceAttributesReq
 
         The model defined in huaweicloud sdk
@@ -63,6 +69,12 @@ class ModifyWorkspaceAttributesReq:
         :type is_send_email: bool
         :param dc_vnc_ip: 开通专线访问VNC功能，如果传入的是default则自动创建，如果传入的自定义的dc_vnc_ip则直接使用，如果传入的是close表示关闭自定义VNC
         :type dc_vnc_ip: str
+        :param authorized_collect_log: 是否授权收集日志。
+        :type authorized_collect_log: bool
+        :param authorized_hda_upgrade: 是否授权hda升级。
+        :type authorized_hda_upgrade: bool
+        :param apply_dedicated_standby_network_param: 
+        :type apply_dedicated_standby_network_param: :class:`huaweicloudsdkworkspace.v2.ApplyDedicatedStandbyNetworkParam`
         """
         
         
@@ -76,6 +88,9 @@ class ModifyWorkspaceAttributesReq:
         self._enterprise_id = None
         self._is_send_email = None
         self._dc_vnc_ip = None
+        self._authorized_collect_log = None
+        self._authorized_hda_upgrade = None
+        self._apply_dedicated_standby_network_param = None
         self.discriminator = None
 
         if ad_info is not None:
@@ -96,6 +111,12 @@ class ModifyWorkspaceAttributesReq:
             self.is_send_email = is_send_email
         if dc_vnc_ip is not None:
             self.dc_vnc_ip = dc_vnc_ip
+        if authorized_collect_log is not None:
+            self.authorized_collect_log = authorized_collect_log
+        if authorized_hda_upgrade is not None:
+            self.authorized_hda_upgrade = authorized_hda_upgrade
+        if apply_dedicated_standby_network_param is not None:
+            self.apply_dedicated_standby_network_param = apply_dedicated_standby_network_param
 
     @property
     def ad_info(self):
@@ -286,6 +307,68 @@ class ModifyWorkspaceAttributesReq:
         :type dc_vnc_ip: str
         """
         self._dc_vnc_ip = dc_vnc_ip
+
+    @property
+    def authorized_collect_log(self):
+        """Gets the authorized_collect_log of this ModifyWorkspaceAttributesReq.
+
+        是否授权收集日志。
+
+        :return: The authorized_collect_log of this ModifyWorkspaceAttributesReq.
+        :rtype: bool
+        """
+        return self._authorized_collect_log
+
+    @authorized_collect_log.setter
+    def authorized_collect_log(self, authorized_collect_log):
+        """Sets the authorized_collect_log of this ModifyWorkspaceAttributesReq.
+
+        是否授权收集日志。
+
+        :param authorized_collect_log: The authorized_collect_log of this ModifyWorkspaceAttributesReq.
+        :type authorized_collect_log: bool
+        """
+        self._authorized_collect_log = authorized_collect_log
+
+    @property
+    def authorized_hda_upgrade(self):
+        """Gets the authorized_hda_upgrade of this ModifyWorkspaceAttributesReq.
+
+        是否授权hda升级。
+
+        :return: The authorized_hda_upgrade of this ModifyWorkspaceAttributesReq.
+        :rtype: bool
+        """
+        return self._authorized_hda_upgrade
+
+    @authorized_hda_upgrade.setter
+    def authorized_hda_upgrade(self, authorized_hda_upgrade):
+        """Sets the authorized_hda_upgrade of this ModifyWorkspaceAttributesReq.
+
+        是否授权hda升级。
+
+        :param authorized_hda_upgrade: The authorized_hda_upgrade of this ModifyWorkspaceAttributesReq.
+        :type authorized_hda_upgrade: bool
+        """
+        self._authorized_hda_upgrade = authorized_hda_upgrade
+
+    @property
+    def apply_dedicated_standby_network_param(self):
+        """Gets the apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
+
+        :return: The apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyDedicatedStandbyNetworkParam`
+        """
+        return self._apply_dedicated_standby_network_param
+
+    @apply_dedicated_standby_network_param.setter
+    def apply_dedicated_standby_network_param(self, apply_dedicated_standby_network_param):
+        """Sets the apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
+
+        :param apply_dedicated_standby_network_param: The apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
+        :type apply_dedicated_standby_network_param: :class:`huaweicloudsdkworkspace.v2.ApplyDedicatedStandbyNetworkParam`
+        """
+        self._apply_dedicated_standby_network_param = apply_dedicated_standby_network_param
 
     def to_dict(self):
         """Returns the model properties as a dict"""

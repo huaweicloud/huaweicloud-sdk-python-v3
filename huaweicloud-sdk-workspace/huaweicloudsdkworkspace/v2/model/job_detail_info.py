@@ -29,7 +29,8 @@ class JobDetailInfo:
         'job_id': 'str',
         'desktop_name': 'str',
         'ip_address': 'str',
-        'mac_address': 'str'
+        'mac_address': 'str',
+        'process': 'int'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class JobDetailInfo:
         'job_id': 'job_id',
         'desktop_name': 'desktop_name',
         'ip_address': 'ip_address',
-        'mac_address': 'mac_address'
+        'mac_address': 'mac_address',
+        'process': 'process'
     }
 
-    def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, message=None, job_id=None, desktop_name=None, ip_address=None, mac_address=None):
+    def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, message=None, job_id=None, desktop_name=None, ip_address=None, mac_address=None, process=None):
         """JobDetailInfo
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class JobDetailInfo:
         :type ip_address: str
         :param mac_address: mac地址。
         :type mac_address: str
+        :param process: 任务进度。
+        :type process: int
         """
         
         
@@ -96,6 +100,7 @@ class JobDetailInfo:
         self._desktop_name = None
         self._ip_address = None
         self._mac_address = None
+        self._process = None
         self.discriminator = None
 
         if id is not None:
@@ -124,6 +129,8 @@ class JobDetailInfo:
             self.ip_address = ip_address
         if mac_address is not None:
             self.mac_address = mac_address
+        if process is not None:
+            self.process = process
 
     @property
     def id(self):
@@ -406,6 +413,28 @@ class JobDetailInfo:
         :type mac_address: str
         """
         self._mac_address = mac_address
+
+    @property
+    def process(self):
+        """Gets the process of this JobDetailInfo.
+
+        任务进度。
+
+        :return: The process of this JobDetailInfo.
+        :rtype: int
+        """
+        return self._process
+
+    @process.setter
+    def process(self, process):
+        """Sets the process of this JobDetailInfo.
+
+        任务进度。
+
+        :param process: The process of this JobDetailInfo.
+        :type process: int
+        """
+        self._process = process
 
     def to_dict(self):
         """Returns the model properties as a dict"""

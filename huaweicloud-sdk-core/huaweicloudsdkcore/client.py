@@ -341,7 +341,10 @@ class Client(object):
         query_params = self._post_process_params(query_params) or []
         if query_params:
             query_params = http_utils.sanitize_for_serialization(query_params)
-            query_params = http_utils.parameters_to_tuples(query_params, collection_formats)
+            # Use 'multi' collection format to parse query params
+            multi_collection_formats = {k: 'multi' for k, v in collection_formats.items()} \
+                if isinstance(collection_formats, dict) else {}
+            query_params = http_utils.parameters_to_tuples(query_params, multi_collection_formats)
         return query_params
 
     def _parse_post_params(self, collection_formats, post_params):
@@ -358,20 +361,14 @@ class Client(object):
         return XmlTransfer().to_string(_dict)
 
     @classmethod
-    def _parse_body(cls, body, post_params):
-        str_body = ""
-        if body:
-            if cls._is_iterable_body(body):
-                return body
+    def _parse_body(cls, body, post_params=None):
+        # type: (str|list|dict|Iterable|None, dict) -> dict|str|Iterable|None
+        if post_params:
+            return post_params
+        if body is None or isinstance(body, six.text_type) or cls._is_iterable_body(body):
+            return body
 
-            if isinstance(body, six.text_type):
-                return body
-
-            str_body = json.dumps(http_utils.sanitize_for_serialization(body), use_decimal=True)
-        elif len(post_params) != 0:
-            str_body = post_params
-
-        return str_body
+        return json.dumps(http_utils.sanitize_for_serialization(body), use_decimal=True) if body else json.dumps(body)
 
     @classmethod
     def _is_iterable_body(cls, body):

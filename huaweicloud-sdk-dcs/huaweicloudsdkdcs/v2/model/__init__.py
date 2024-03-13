@@ -31,8 +31,11 @@ from huaweicloudsdkdcs.v2.model.bigkeys_body import BigkeysBody
 from huaweicloudsdkdcs.v2.model.bss_param import BssParam
 from huaweicloudsdkdcs.v2.model.bss_param_entity import BssParamEntity
 from huaweicloudsdkdcs.v2.model.change_instance_status_body import ChangeInstanceStatusBody
+from huaweicloudsdkdcs.v2.model.change_master_standby_async_request import ChangeMasterStandbyAsyncRequest
+from huaweicloudsdkdcs.v2.model.change_master_standby_async_response import ChangeMasterStandbyAsyncResponse
 from huaweicloudsdkdcs.v2.model.change_master_standby_request import ChangeMasterStandbyRequest
 from huaweicloudsdkdcs.v2.model.change_master_standby_response import ChangeMasterStandbyResponse
+from huaweicloudsdkdcs.v2.model.client_info import ClientInfo
 from huaweicloudsdkdcs.v2.model.cluster_redis_node_monitored_object import ClusterRedisNodeMonitoredObject
 from huaweicloudsdkdcs.v2.model.command_time_taken import CommandTimeTaken
 from huaweicloudsdkdcs.v2.model.command_time_taken_list import CommandTimeTakenList
@@ -107,6 +110,8 @@ from huaweicloudsdkdcs.v2.model.dim_child import DimChild
 from huaweicloudsdkdcs.v2.model.domain_name_entity import DomainNameEntity
 from huaweicloudsdkdcs.v2.model.domain_name_info import DomainNameInfo
 from huaweicloudsdkdcs.v2.model.download_backup_files_req import DownloadBackupFilesReq
+from huaweicloudsdkdcs.v2.model.download_ssl_cert_request import DownloadSslCertRequest
+from huaweicloudsdkdcs.v2.model.download_ssl_cert_response import DownloadSslCertResponse
 from huaweicloudsdkdcs.v2.model.exchange_instance_ip_request import ExchangeInstanceIpRequest
 from huaweicloudsdkdcs.v2.model.exchange_instance_ip_response import ExchangeInstanceIpResponse
 from huaweicloudsdkdcs.v2.model.execute_cluster_switchover_request import ExecuteClusterSwitchoverRequest
@@ -123,6 +128,12 @@ from huaweicloudsdkdcs.v2.model.features import Features
 from huaweicloudsdkdcs.v2.model.files import Files
 from huaweicloudsdkdcs.v2.model.flavor_az_object import FlavorAzObject
 from huaweicloudsdkdcs.v2.model.flavors_items import FlavorsItems
+from huaweicloudsdkdcs.v2.model.hang_up_clients_request import HangUpClientsRequest
+from huaweicloudsdkdcs.v2.model.hang_up_clients_request_body import HangUpClientsRequestBody
+from huaweicloudsdkdcs.v2.model.hang_up_clients_response import HangUpClientsResponse
+from huaweicloudsdkdcs.v2.model.hang_up_kill_all_clients_request import HangUpKillAllClientsRequest
+from huaweicloudsdkdcs.v2.model.hang_up_kill_all_clients_request_body import HangUpKillAllClientsRequestBody
+from huaweicloudsdkdcs.v2.model.hang_up_kill_all_clients_response import HangUpKillAllClientsResponse
 from huaweicloudsdkdcs.v2.model.history_info import HistoryInfo
 from huaweicloudsdkdcs.v2.model.hotkeys_body import HotkeysBody
 from huaweicloudsdkdcs.v2.model.instance_backup_policy import InstanceBackupPolicy
@@ -153,6 +164,8 @@ from huaweicloudsdkdcs.v2.model.list_bigkey_scan_tasks_response import ListBigke
 from huaweicloudsdkdcs.v2.model.list_center_task_request import ListCenterTaskRequest
 from huaweicloudsdkdcs.v2.model.list_center_task_response import ListCenterTaskResponse
 from huaweicloudsdkdcs.v2.model.list_center_tasks_resp import ListCenterTasksResp
+from huaweicloudsdkdcs.v2.model.list_clients_request import ListClientsRequest
+from huaweicloudsdkdcs.v2.model.list_clients_response import ListClientsResponse
 from huaweicloudsdkdcs.v2.model.list_config_histories_request import ListConfigHistoriesRequest
 from huaweicloudsdkdcs.v2.model.list_config_histories_response import ListConfigHistoriesResponse
 from huaweicloudsdkdcs.v2.model.list_config_templates_request import ListConfigTemplatesRequest
@@ -217,6 +230,7 @@ from huaweicloudsdkdcs.v2.model.query_tenant_quota_resp_quotas import QueryTenan
 from huaweicloudsdkdcs.v2.model.records_response import RecordsResponse
 from huaweicloudsdkdcs.v2.model.redis_config import RedisConfig
 from huaweicloudsdkdcs.v2.model.rename_command_resp import RenameCommandResp
+from huaweicloudsdkdcs.v2.model.replication_info import ReplicationInfo
 from huaweicloudsdkdcs.v2.model.reset_acl_account_pass_word_request import ResetAclAccountPassWordRequest
 from huaweicloudsdkdcs.v2.model.reset_acl_account_pass_word_response import ResetAclAccountPassWordResponse
 from huaweicloudsdkdcs.v2.model.reset_instance_password_body import ResetInstancePasswordBody
@@ -233,6 +247,9 @@ from huaweicloudsdkdcs.v2.model.restore_instance_body import RestoreInstanceBody
 from huaweicloudsdkdcs.v2.model.restore_instance_request import RestoreInstanceRequest
 from huaweicloudsdkdcs.v2.model.restore_instance_response import RestoreInstanceResponse
 from huaweicloudsdkdcs.v2.model.runlog_item import RunlogItem
+from huaweicloudsdkdcs.v2.model.scan_clients_request import ScanClientsRequest
+from huaweicloudsdkdcs.v2.model.scan_clients_request_body import ScanClientsRequestBody
+from huaweicloudsdkdcs.v2.model.scan_clients_response import ScanClientsResponse
 from huaweicloudsdkdcs.v2.model.scan_expire_key_request import ScanExpireKeyRequest
 from huaweicloudsdkdcs.v2.model.scan_expire_key_response import ScanExpireKeyResponse
 from huaweicloudsdkdcs.v2.model.set_online_migration_task_body import SetOnlineMigrationTaskBody
@@ -260,6 +277,8 @@ from huaweicloudsdkdcs.v2.model.show_hotkey_task_details_request import ShowHotk
 from huaweicloudsdkdcs.v2.model.show_hotkey_task_details_response import ShowHotkeyTaskDetailsResponse
 from huaweicloudsdkdcs.v2.model.show_instance_request import ShowInstanceRequest
 from huaweicloudsdkdcs.v2.model.show_instance_response import ShowInstanceResponse
+from huaweicloudsdkdcs.v2.model.show_instance_ssl_detail_request import ShowInstanceSslDetailRequest
+from huaweicloudsdkdcs.v2.model.show_instance_ssl_detail_response import ShowInstanceSslDetailResponse
 from huaweicloudsdkdcs.v2.model.show_ip_whitelist_request import ShowIpWhitelistRequest
 from huaweicloudsdkdcs.v2.model.show_ip_whitelist_response import ShowIpWhitelistResponse
 from huaweicloudsdkdcs.v2.model.show_job_info_request import ShowJobInfoRequest
@@ -327,6 +346,11 @@ from huaweicloudsdkdcs.v2.model.update_migration_task_request import UpdateMigra
 from huaweicloudsdkdcs.v2.model.update_migration_task_response import UpdateMigrationTaskResponse
 from huaweicloudsdkdcs.v2.model.update_password_request import UpdatePasswordRequest
 from huaweicloudsdkdcs.v2.model.update_password_response import UpdatePasswordResponse
+from huaweicloudsdkdcs.v2.model.update_ssl_switch_request_body import UpdateSSLSwitchRequestBody
 from huaweicloudsdkdcs.v2.model.update_slave_priority_request import UpdateSlavePriorityRequest
 from huaweicloudsdkdcs.v2.model.update_slave_priority_response import UpdateSlavePriorityResponse
+from huaweicloudsdkdcs.v2.model.update_ssl_switch_request import UpdateSslSwitchRequest
+from huaweicloudsdkdcs.v2.model.update_ssl_switch_response import UpdateSslSwitchResponse
+from huaweicloudsdkdcs.v2.model.validate_deletable_replica_request import ValidateDeletableReplicaRequest
+from huaweicloudsdkdcs.v2.model.validate_deletable_replica_response import ValidateDeletableReplicaResponse
 from huaweicloudsdkdcs.v2.model.whitelist import Whitelist

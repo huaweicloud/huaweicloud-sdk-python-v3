@@ -25,14 +25,15 @@ class CreateDesktopReq:
         'root_volume': 'Volume',
         'data_volumes': 'list[Volume]',
         'nics': 'list[Nic]',
-        'security_groups': 'list[SecurityGroupInfo]',
+        'security_groups': 'list[SecurityGroup]',
         'desktops': 'list[Desktop]',
         'desktop_name': 'str',
         'size': 'int',
         'email_notification': 'bool',
         'enterprise_project_id': 'str',
         'tags': 'list[Tag]',
-        'eip': 'Eip'
+        'eip': 'Eip',
+        'desktop_name_policy_id': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CreateDesktopReq:
         'email_notification': 'email_notification',
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
-        'eip': 'eip'
+        'eip': 'eip',
+        'desktop_name_policy_id': 'desktop_name_policy_id'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, eip=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, eip=None, desktop_name_policy_id=None):
         """CreateDesktopReq
 
         The model defined in huaweicloud sdk
@@ -76,7 +78,7 @@ class CreateDesktopReq:
         :param nics: 桌面对应的网卡信息，如果不指定则使用默认网卡。
         :type nics: list[:class:`huaweicloudsdkworkspace.v2.Nic`]
         :param security_groups: 桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         :param desktops: 创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
         :param desktop_name: 搭配size使用，当size为1时代表桌面名，位数1-15，当size大于1时代表桌面名前缀，位数：1-13。
@@ -91,6 +93,8 @@ class CreateDesktopReq:
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         :param eip: 
         :type eip: :class:`huaweicloudsdkworkspace.v2.Eip`
+        :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
+        :type desktop_name_policy_id: str
         """
         
         
@@ -111,6 +115,7 @@ class CreateDesktopReq:
         self._enterprise_project_id = None
         self._tags = None
         self._eip = None
+        self._desktop_name_policy_id = None
         self.discriminator = None
 
         self.desktop_type = desktop_type
@@ -139,6 +144,8 @@ class CreateDesktopReq:
             self.tags = tags
         if eip is not None:
             self.eip = eip
+        if desktop_name_policy_id is not None:
+            self.desktop_name_policy_id = desktop_name_policy_id
 
     @property
     def desktop_type(self):
@@ -319,7 +326,7 @@ class CreateDesktopReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :return: The security_groups of this CreateDesktopReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         return self._security_groups
 
@@ -330,7 +337,7 @@ class CreateDesktopReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :param security_groups: The security_groups of this CreateDesktopReq.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -483,6 +490,28 @@ class CreateDesktopReq:
         :type eip: :class:`huaweicloudsdkworkspace.v2.Eip`
         """
         self._eip = eip
+
+    @property
+    def desktop_name_policy_id(self):
+        """Gets the desktop_name_policy_id of this CreateDesktopReq.
+
+        策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
+
+        :return: The desktop_name_policy_id of this CreateDesktopReq.
+        :rtype: str
+        """
+        return self._desktop_name_policy_id
+
+    @desktop_name_policy_id.setter
+    def desktop_name_policy_id(self, desktop_name_policy_id):
+        """Sets the desktop_name_policy_id of this CreateDesktopReq.
+
+        策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
+
+        :param desktop_name_policy_id: The desktop_name_policy_id of this CreateDesktopReq.
+        :type desktop_name_policy_id: str
+        """
+        self._desktop_name_policy_id = desktop_name_policy_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,9 +35,9 @@ class ListPromInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param prom_id: Prometheus实例id。
+        :param prom_id: Prometheus实例id(prom_id与prom_type同时存在时，仅prom_id生效)。
         :type prom_id: str
-        :param prom_type: Prometheus实例类型。
+        :param prom_type: Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
         :type prom_type: str
         :param cce_cluster_enable: cce集群开关。
         :type cce_cluster_enable: str
@@ -66,7 +66,7 @@ class ListPromInstanceRequest:
     def prom_id(self):
         """Gets the prom_id of this ListPromInstanceRequest.
 
-        Prometheus实例id。
+        Prometheus实例id(prom_id与prom_type同时存在时，仅prom_id生效)。
 
         :return: The prom_id of this ListPromInstanceRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListPromInstanceRequest:
     def prom_id(self, prom_id):
         """Sets the prom_id of this ListPromInstanceRequest.
 
-        Prometheus实例id。
+        Prometheus实例id(prom_id与prom_type同时存在时，仅prom_id生效)。
 
         :param prom_id: The prom_id of this ListPromInstanceRequest.
         :type prom_id: str
@@ -88,7 +88,7 @@ class ListPromInstanceRequest:
     def prom_type(self):
         """Gets the prom_type of this ListPromInstanceRequest.
 
-        Prometheus实例类型。
+        Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
         :return: The prom_type of this ListPromInstanceRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class ListPromInstanceRequest:
     def prom_type(self, prom_type):
         """Sets the prom_type of this ListPromInstanceRequest.
 
-        Prometheus实例类型。
+        Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
         :param prom_type: The prom_type of this ListPromInstanceRequest.
         :type prom_type: str

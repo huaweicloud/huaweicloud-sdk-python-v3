@@ -75,7 +75,7 @@ class ChildrenJobListResp:
         :type description: str
         :param create_time: 任务创建时间。
         :type create_time: str
-        :param engine_type: 引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。
+        :param engine_type: 引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
         :type engine_type: str
         :param net_type: 网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
         :type net_type: str
@@ -262,7 +262,7 @@ class ChildrenJobListResp:
     def engine_type(self):
         """Gets the engine_type of this ChildrenJobListResp.
 
-        引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。
+        引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
 
         :return: The engine_type of this ChildrenJobListResp.
         :rtype: str
@@ -273,7 +273,7 @@ class ChildrenJobListResp:
     def engine_type(self, engine_type):
         """Sets the engine_type of this ChildrenJobListResp.
 
-        引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。
+        引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
 
         :param engine_type: The engine_type of this ChildrenJobListResp.
         :type engine_type: str

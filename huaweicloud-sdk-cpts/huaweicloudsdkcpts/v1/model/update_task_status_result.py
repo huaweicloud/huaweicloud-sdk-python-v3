@@ -29,7 +29,7 @@ class UpdateTaskStatusResult:
 
         The model defined in huaweicloud sdk
 
-        :param task_run_id: task_run_id
+        :param task_run_id: 运行任务id，即报告id
         :type task_run_id: int
         """
         
@@ -45,7 +45,7 @@ class UpdateTaskStatusResult:
     def task_run_id(self):
         """Gets the task_run_id of this UpdateTaskStatusResult.
 
-        task_run_id
+        运行任务id，即报告id
 
         :return: The task_run_id of this UpdateTaskStatusResult.
         :rtype: int
@@ -56,7 +56,7 @@ class UpdateTaskStatusResult:
     def task_run_id(self, task_run_id):
         """Sets the task_run_id of this UpdateTaskStatusResult.
 
-        task_run_id
+        运行任务id，即报告id
 
         :param task_run_id: The task_run_id of this UpdateTaskStatusResult.
         :type task_run_id: int

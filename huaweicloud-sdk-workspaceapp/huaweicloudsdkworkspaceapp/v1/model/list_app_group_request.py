@@ -41,19 +41,19 @@ class ListAppGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]
+        :param limit: 单次查询的大小[1-100]。
         :type limit: int
-        :param offset: 查询的偏移量
+        :param offset: 查询的偏移量。
         :type offset: int
-        :param app_server_group_id: 应用服务器组ID
+        :param app_server_group_id: 应用服务器组ID。
         :type app_server_group_id: str
-        :param app_group_id: 应用组ID
+        :param app_group_id: 应用组ID。
         :type app_group_id: str
         :param name: 应用组名称
         :type name: str
-        :param authorization_type: 授权类型(APP、APP_GROUP)
+        :param authorization_type: 授权类型： * &#x60;APP&#x60; - 应用 * &#x60;APP_GROUP&#x60; - 应用组
         :type authorization_type: str
-        :param app_type: 应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+        :param app_type: 应用组类型： * &#x60;SESSION_DESKTOP_APP&#x60; - 会话桌面app * &#x60;COMMON_APP&#x60; - 普通app
         :type app_type: str
         """
         
@@ -87,7 +87,7 @@ class ListAppGroupRequest:
     def limit(self):
         """Gets the limit of this ListAppGroupRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :return: The limit of this ListAppGroupRequest.
         :rtype: int
@@ -98,7 +98,7 @@ class ListAppGroupRequest:
     def limit(self, limit):
         """Sets the limit of this ListAppGroupRequest.
 
-        单次查询的大小[1-100]
+        单次查询的大小[1-100]。
 
         :param limit: The limit of this ListAppGroupRequest.
         :type limit: int
@@ -109,7 +109,7 @@ class ListAppGroupRequest:
     def offset(self):
         """Gets the offset of this ListAppGroupRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :return: The offset of this ListAppGroupRequest.
         :rtype: int
@@ -120,7 +120,7 @@ class ListAppGroupRequest:
     def offset(self, offset):
         """Sets the offset of this ListAppGroupRequest.
 
-        查询的偏移量
+        查询的偏移量。
 
         :param offset: The offset of this ListAppGroupRequest.
         :type offset: int
@@ -131,7 +131,7 @@ class ListAppGroupRequest:
     def app_server_group_id(self):
         """Gets the app_server_group_id of this ListAppGroupRequest.
 
-        应用服务器组ID
+        应用服务器组ID。
 
         :return: The app_server_group_id of this ListAppGroupRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListAppGroupRequest:
     def app_server_group_id(self, app_server_group_id):
         """Sets the app_server_group_id of this ListAppGroupRequest.
 
-        应用服务器组ID
+        应用服务器组ID。
 
         :param app_server_group_id: The app_server_group_id of this ListAppGroupRequest.
         :type app_server_group_id: str
@@ -153,7 +153,7 @@ class ListAppGroupRequest:
     def app_group_id(self):
         """Gets the app_group_id of this ListAppGroupRequest.
 
-        应用组ID
+        应用组ID。
 
         :return: The app_group_id of this ListAppGroupRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListAppGroupRequest:
     def app_group_id(self, app_group_id):
         """Sets the app_group_id of this ListAppGroupRequest.
 
-        应用组ID
+        应用组ID。
 
         :param app_group_id: The app_group_id of this ListAppGroupRequest.
         :type app_group_id: str
@@ -197,7 +197,7 @@ class ListAppGroupRequest:
     def authorization_type(self):
         """Gets the authorization_type of this ListAppGroupRequest.
 
-        授权类型(APP、APP_GROUP)
+        授权类型： * `APP` - 应用 * `APP_GROUP` - 应用组
 
         :return: The authorization_type of this ListAppGroupRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ListAppGroupRequest:
     def authorization_type(self, authorization_type):
         """Sets the authorization_type of this ListAppGroupRequest.
 
-        授权类型(APP、APP_GROUP)
+        授权类型： * `APP` - 应用 * `APP_GROUP` - 应用组
 
         :param authorization_type: The authorization_type of this ListAppGroupRequest.
         :type authorization_type: str
@@ -219,7 +219,7 @@ class ListAppGroupRequest:
     def app_type(self):
         """Gets the app_type of this ListAppGroupRequest.
 
-        应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+        应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
         :return: The app_type of this ListAppGroupRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ListAppGroupRequest:
     def app_type(self, app_type):
         """Sets the app_type of this ListAppGroupRequest.
 
-        应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+        应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
         :param app_type: The app_type of this ListAppGroupRequest.
         :type app_type: str

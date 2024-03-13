@@ -35,9 +35,9 @@ class ShowKafkaUserClientQuotaRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param offset: 偏移量，表示查询该偏移量后面的记录
+        :param offset: 偏移量，表示查询该偏移量后面的记录。
         :type offset: int
-        :param limit: 查询返回记录的数量限制
+        :param limit: 查询返回记录的数量限制。
         :type limit: int
         """
         
@@ -80,7 +80,7 @@ class ShowKafkaUserClientQuotaRequest:
     def offset(self):
         """Gets the offset of this ShowKafkaUserClientQuotaRequest.
 
-        偏移量，表示查询该偏移量后面的记录
+        偏移量，表示查询该偏移量后面的记录。
 
         :return: The offset of this ShowKafkaUserClientQuotaRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ShowKafkaUserClientQuotaRequest:
     def offset(self, offset):
         """Sets the offset of this ShowKafkaUserClientQuotaRequest.
 
-        偏移量，表示查询该偏移量后面的记录
+        偏移量，表示查询该偏移量后面的记录。
 
         :param offset: The offset of this ShowKafkaUserClientQuotaRequest.
         :type offset: int
@@ -102,7 +102,7 @@ class ShowKafkaUserClientQuotaRequest:
     def limit(self):
         """Gets the limit of this ShowKafkaUserClientQuotaRequest.
 
-        查询返回记录的数量限制
+        查询返回记录的数量限制。
 
         :return: The limit of this ShowKafkaUserClientQuotaRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ShowKafkaUserClientQuotaRequest:
     def limit(self, limit):
         """Sets the limit of this ShowKafkaUserClientQuotaRequest.
 
-        查询返回记录的数量限制
+        查询返回记录的数量限制。
 
         :param limit: The limit of this ShowKafkaUserClientQuotaRequest.
         :type limit: int

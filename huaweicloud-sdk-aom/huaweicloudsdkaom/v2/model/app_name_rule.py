@@ -33,7 +33,7 @@ class AppNameRule:
 
         The model defined in huaweicloud sdk
 
-        :param name_type: 取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
+        :param name_type: 取值类型。从cmdLineHash、cmdLine、env、str里面选取。
         :type name_type: str
         :param args: 输入值。
         :type args: list[str]
@@ -57,7 +57,7 @@ class AppNameRule:
     def name_type(self):
         """Gets the name_type of this AppNameRule.
 
-        取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
+        取值类型。从cmdLineHash、cmdLine、env、str里面选取。
 
         :return: The name_type of this AppNameRule.
         :rtype: str
@@ -68,7 +68,7 @@ class AppNameRule:
     def name_type(self, name_type):
         """Sets the name_type of this AppNameRule.
 
-        取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
+        取值类型。从cmdLineHash、cmdLine、env、str里面选取。
 
         :param name_type: The name_type of this AppNameRule.
         :type name_type: str

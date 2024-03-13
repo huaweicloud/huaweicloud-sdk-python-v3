@@ -18,51 +18,51 @@ class ShowClusterConfigurationDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'responses': 'dict(str, list[PackageOptions])'
+        'body': 'dict(str, list[PackageOptions])'
     }
 
     attribute_map = {
-        'responses': 'responses'
+        'body': 'body'
     }
 
-    def __init__(self, responses=None):
+    def __init__(self, body=None):
         """ShowClusterConfigurationDetailsResponse
 
         The model defined in huaweicloud sdk
 
-        :param responses: 指定集群配置项列表返回体，非实际返回参数
-        :type responses: dict(str, list[PackageOptions])
+        :param body: 获取指定集群配置项列表返回体
+        :type body: dict(str, list[PackageOptions])
         """
         
         super(ShowClusterConfigurationDetailsResponse, self).__init__()
 
-        self._responses = None
+        self._body = None
         self.discriminator = None
 
-        if responses is not None:
-            self.responses = responses
+        if body is not None:
+            self.body = body
 
     @property
-    def responses(self):
-        """Gets the responses of this ShowClusterConfigurationDetailsResponse.
+    def body(self):
+        """Gets the body of this ShowClusterConfigurationDetailsResponse.
 
-        指定集群配置项列表返回体，非实际返回参数
+        获取指定集群配置项列表返回体
 
-        :return: The responses of this ShowClusterConfigurationDetailsResponse.
+        :return: The body of this ShowClusterConfigurationDetailsResponse.
         :rtype: dict(str, list[PackageOptions])
         """
-        return self._responses
+        return self._body
 
-    @responses.setter
-    def responses(self, responses):
-        """Sets the responses of this ShowClusterConfigurationDetailsResponse.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ShowClusterConfigurationDetailsResponse.
 
-        指定集群配置项列表返回体，非实际返回参数
+        获取指定集群配置项列表返回体
 
-        :param responses: The responses of this ShowClusterConfigurationDetailsResponse.
-        :type responses: dict(str, list[PackageOptions])
+        :param body: The body of this ShowClusterConfigurationDetailsResponse.
+        :type body: dict(str, list[PackageOptions])
         """
-        self._responses = responses
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

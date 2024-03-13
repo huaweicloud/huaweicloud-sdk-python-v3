@@ -47,11 +47,11 @@ class MuteRule:
         :type create_time: int
         :param desc: 规则描述
         :type desc: str
-        :param match: 规则的匹配条件
+        :param match: 规则的匹配条件。串行条件和并行条件的最大数量限制为10。
         :type match: list[list[Match]]
         :param mute_config: 
         :type mute_config: :class:`huaweicloudsdkaom.v2.MuteConfig`
-        :param name: 规则名称
+        :param name: 规则名称。名称包含大小写字母、数字、特殊字符（_）、不能以下划线开头或结尾，最大长度为100。
         :type name: str
         :param timezone: 时区
         :type timezone: str
@@ -134,7 +134,7 @@ class MuteRule:
     def match(self):
         """Gets the match of this MuteRule.
 
-        规则的匹配条件
+        规则的匹配条件。串行条件和并行条件的最大数量限制为10。
 
         :return: The match of this MuteRule.
         :rtype: list[list[Match]]
@@ -145,7 +145,7 @@ class MuteRule:
     def match(self, match):
         """Sets the match of this MuteRule.
 
-        规则的匹配条件
+        规则的匹配条件。串行条件和并行条件的最大数量限制为10。
 
         :param match: The match of this MuteRule.
         :type match: list[list[Match]]
@@ -174,7 +174,7 @@ class MuteRule:
     def name(self):
         """Gets the name of this MuteRule.
 
-        规则名称
+        规则名称。名称包含大小写字母、数字、特殊字符（_）、不能以下划线开头或结尾，最大长度为100。
 
         :return: The name of this MuteRule.
         :rtype: str
@@ -185,7 +185,7 @@ class MuteRule:
     def name(self, name):
         """Sets the name of this MuteRule.
 
-        规则名称
+        规则名称。名称包含大小写字母、数字、特殊字符（_）、不能以下划线开头或结尾，最大长度为100。
 
         :param name: The name of this MuteRule.
         :type name: str

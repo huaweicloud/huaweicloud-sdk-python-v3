@@ -35,7 +35,7 @@ class WorkspaceAppClient(Client):
     def list_published_app(self, request):
         """查询已发布应用
 
-        查询已发布的应用
+        查询已发布的应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -110,7 +110,7 @@ class WorkspaceAppClient(Client):
     def publish_app(self, request):
         """发布应用
 
-        批量发布应用,不允许发布同名的应用。
+        批量发布应用，不允许发布同名的应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -177,7 +177,7 @@ class WorkspaceAppClient(Client):
     def show_publishable_app(self, request):
         """可发布应用列表
 
-        查询应用组下可发布的应用
+        查询应用组下可发布的应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -243,7 +243,7 @@ class WorkspaceAppClient(Client):
         """批量取消应用发布
 
         批量取消应用发布。
-        &gt; - 批量取消应用组下已经发布的应用，应用对应的授权会一起删除，重复执行会按照成功处理(响应200)
+        &gt; - 批量取消应用组下已经发布的应用，应用对应的授权会一起删除，重复执行会按照成功处理(响应200)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -310,7 +310,7 @@ class WorkspaceAppClient(Client):
     def update_app(self, request):
         """修改应用信息
 
-        编辑修改应用信息
+        编辑修改应用信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -379,7 +379,7 @@ class WorkspaceAppClient(Client):
     def upload_app_icon(self, request):
         """修改自定义应用图标
 
-        修改自定义应用图标
+        修改自定义应用图标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -450,7 +450,7 @@ class WorkspaceAppClient(Client):
     def batch_delete_app_group(self, request):
         """批量删除应用组
 
-        批量删除应用组,重复执行会按照成功处理(响应200)
+        批量删除应用组,重复执行会按照成功处理(响应200)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -658,7 +658,7 @@ class WorkspaceAppClient(Client):
     def update_app_group(self, request):
         """修改应用组
 
-        修改应用组
+        修改应用组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -800,7 +800,7 @@ class WorkspaceAppClient(Client):
     def list_session_type(self, request):
         """查询会话套餐列表
 
-        该接口用于查询会话套餐列表
+        该接口用于查询会话套餐列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1197,10 +1197,77 @@ class WorkspaceAppClient(Client):
 
         return http_info
 
+    def show_job_detail(self, request):
+        """查询任务的执行状态
+
+        查询Job的执行状态。
+        
+        对于创建云服务器、删除云服务器、重建镜像等异步API，下发命令后会返回job_id，通过job_id可以查询任务的执行状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobDetail
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowJobDetailRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowJobDetailResponse`
+        """
+        http_info = self._show_job_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_detail_invoker(self, request):
+        http_info = self._show_job_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/job/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_or_update_storage_policy_statement(self, request):
         """新增或更新存储目录访问权限自定义策略
 
-        新增或更新存储目录访问权限自定义策略(已存在自定义策略时会对已有策略更新)
+        新增或更新存储目录访问权限自定义策略(已存在自定义策略时会对已有策略更新)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1597,7 +1664,7 @@ class WorkspaceAppClient(Client):
     def list_persistent_storage(self, request):
         """查询WKS存储
 
-        查询WKS存储
+        查询WKS存储。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1741,7 +1808,7 @@ class WorkspaceAppClient(Client):
     def list_storage_assignment(self, request):
         """查询个人存储目录
 
-        查询个人存储目录
+        查询个人存储目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1818,7 +1885,7 @@ class WorkspaceAppClient(Client):
     def list_storage_policy_statement(self, request):
         """查询存储目录访问权限策略
 
-        查询存储目录访问权限策略
+        查询存储目录访问权限策略。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1885,7 +1952,7 @@ class WorkspaceAppClient(Client):
     def update_share_folder_assignment(self, request):
         """修改共享目录成员
 
-        批量添加或者移除共享目录成员
+        批量添加或者移除共享目录成员。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1952,7 +2019,7 @@ class WorkspaceAppClient(Client):
     def update_user_folder_assignment(self, request):
         """创建个人存储目录
 
-        创建个人存储目录,已存在对应目录时,仅更新策略不会重复创建目录
+        创建个人存储目录，已存在对应目录时，仅更新策略不会重复创建目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2149,7 +2216,7 @@ class WorkspaceAppClient(Client):
     def delete_policy_group(self, request):
         """删除策略组
 
-        删除指定策略组，包含策略组对应的策略信息以及应用对象信息
+        删除指定策略组，包含策略组对应的策略信息以及应用对象信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2214,7 +2281,7 @@ class WorkspaceAppClient(Client):
     def delete_policy_template(self, request):
         """删除策略模板
 
-        删除指定策略模板，包含策略模板对应的策略信息以及应用对象信息
+        删除指定策略模板，包含策略模板对应的策略信息以及应用对象信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2549,7 +2616,7 @@ class WorkspaceAppClient(Client):
     def update_policy_group(self, request):
         """修改策略组
 
-        修改指定策略组的信息
+        修改指定策略组的信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2616,7 +2683,7 @@ class WorkspaceAppClient(Client):
     def update_policy_template(self, request):
         """修改策略模板
 
-        修改指定策略模板的信息
+        修改指定策略模板的信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2760,7 +2827,7 @@ class WorkspaceAppClient(Client):
     def batch_delete_server(self, request):
         """批量删除服务器
 
-        批量删除服务器
+        批量删除服务器。
         &gt; - 仅支持删除按需订购的服务器，包周期订购的服务器需要到Console界面进行退订，订单退订成功后服务器将会自动删除。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2826,7 +2893,7 @@ class WorkspaceAppClient(Client):
     def batch_migrate_hosts_server(self, request):
         """迁移云办公主机下面的服务器到目标云办公主机
 
-        迁移云办公主机下面的服务器到目标云办公主机
+        迁移云办公主机下面的服务器到目标云办公主机。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2891,7 +2958,7 @@ class WorkspaceAppClient(Client):
     def batch_reboot_server(self, request):
         """重启服务器
 
-        重启服务器
+        重启服务器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3021,7 +3088,7 @@ class WorkspaceAppClient(Client):
     def batch_start_server(self, request):
         """启动服务器
 
-        启动服务器
+        启动服务器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3086,7 +3153,7 @@ class WorkspaceAppClient(Client):
     def batch_stop_server(self, request):
         """关闭服务器
 
-        关闭服务器
+        关闭服务器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3216,7 +3283,7 @@ class WorkspaceAppClient(Client):
     def change_server_image(self, request):
         """修改服务器的镜像
 
-        修改服务器的镜像
+        修改服务器的镜像。
         &gt; - 服务器的镜像和服务器组的镜像不一样时，支持服务器的镜像切换为服务器组的镜像，并且仅允许同等镜像进行切换，例如：同操作系统，免费镜像切换，同源同价的付费镜像切换。如果服务器组的镜像和服务器的镜像为非同等镜像，建议您直接购买新的服务器，删除或者退订老的服务器。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -3284,7 +3351,7 @@ class WorkspaceAppClient(Client):
     def create_app_servers(self, request):
         """创建云服务器
 
-        创建云服务器接口
+        创建云服务器接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3349,7 +3416,7 @@ class WorkspaceAppClient(Client):
     def list_servers(self, request):
         """查询服务器列表
 
-        查询服务器列表
+        查询服务器列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3694,7 +3761,7 @@ class WorkspaceAppClient(Client):
     def list_server_groups(self, request):
         """查询服务器组列表
 
-        查询服务器组列表
+        查询服务器组列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3835,7 +3902,7 @@ class WorkspaceAppClient(Client):
     def list_app_connection(self, request):
         """查询应用使用记录
 
-        查询应用使用记录
+        查询应用使用记录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3904,7 +3971,7 @@ class WorkspaceAppClient(Client):
     def list_session_by_user_name(self, request):
         """根据用户名查询当前会话
 
-        根据用户名查询当前会话
+        根据用户名查询当前会话。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3969,7 +4036,7 @@ class WorkspaceAppClient(Client):
     def list_user_connection(self, request):
         """查询用户登录记录
 
-        查询用户登录记录
+        查询用户登录记录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4038,7 +4105,7 @@ class WorkspaceAppClient(Client):
     def logoff_user_session(self, request):
         """用户会话注销
 
-        用户会话注销
+        用户会话注销。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -19,6 +19,7 @@ class StartTaskGroupReq:
     openapi_types = {
         'src_ak': 'str',
         'src_sk': 'str',
+        'json_auth_file': 'str',
         'dst_ak': 'str',
         'dst_sk': 'str',
         'source_cdn_authentication_key': 'str'
@@ -27,12 +28,13 @@ class StartTaskGroupReq:
     attribute_map = {
         'src_ak': 'src_ak',
         'src_sk': 'src_sk',
+        'json_auth_file': 'json_auth_file',
         'dst_ak': 'dst_ak',
         'dst_sk': 'dst_sk',
         'source_cdn_authentication_key': 'source_cdn_authentication_key'
     }
 
-    def __init__(self, src_ak=None, src_sk=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None):
+    def __init__(self, src_ak=None, src_sk=None, json_auth_file=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None):
         """StartTaskGroupReq
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class StartTaskGroupReq:
         :type src_ak: str
         :param src_sk: 源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
         :type src_sk: str
+        :param json_auth_file: 用于谷歌云Cloud Storage鉴权
+        :type json_auth_file: str
         :param dst_ak: 目的端节点AK（最大长度100个字符）。
         :type dst_ak: str
         :param dst_sk: 目的端节点SK（最大长度100个字符）。
@@ -53,6 +57,7 @@ class StartTaskGroupReq:
 
         self._src_ak = None
         self._src_sk = None
+        self._json_auth_file = None
         self._dst_ak = None
         self._dst_sk = None
         self._source_cdn_authentication_key = None
@@ -62,6 +67,8 @@ class StartTaskGroupReq:
             self.src_ak = src_ak
         if src_sk is not None:
             self.src_sk = src_sk
+        if json_auth_file is not None:
+            self.json_auth_file = json_auth_file
         self.dst_ak = dst_ak
         self.dst_sk = dst_sk
         if source_cdn_authentication_key is not None:
@@ -110,6 +117,28 @@ class StartTaskGroupReq:
         :type src_sk: str
         """
         self._src_sk = src_sk
+
+    @property
+    def json_auth_file(self):
+        """Gets the json_auth_file of this StartTaskGroupReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :return: The json_auth_file of this StartTaskGroupReq.
+        :rtype: str
+        """
+        return self._json_auth_file
+
+    @json_auth_file.setter
+    def json_auth_file(self, json_auth_file):
+        """Sets the json_auth_file of this StartTaskGroupReq.
+
+        用于谷歌云Cloud Storage鉴权
+
+        :param json_auth_file: The json_auth_file of this StartTaskGroupReq.
+        :type json_auth_file: str
+        """
+        self._json_auth_file = json_auth_file
 
     @property
     def dst_ak(self):

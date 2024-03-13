@@ -49,7 +49,7 @@ class ChangeVulStatusRequestInfo:
         :type remark: str
         :param select_type: 选择全部漏洞类型 - all_vul : 选择全部漏洞 - all_host : 选择全部主机漏洞
         :type select_type: str
-        :param type: 漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        :param type: 漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
         :type type: str
         :param data_list: 漏洞列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulOperateInfo`]
@@ -158,7 +158,7 @@ class ChangeVulStatusRequestInfo:
     def type(self):
         """Gets the type of this ChangeVulStatusRequestInfo.
 
-        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
         :return: The type of this ChangeVulStatusRequestInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class ChangeVulStatusRequestInfo:
     def type(self, type):
         """Sets the type of this ChangeVulStatusRequestInfo.
 
-        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
         :param type: The type of this ChangeVulStatusRequestInfo.
         :type type: str

@@ -84,7 +84,8 @@ class ListInstanceListRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         self.api_id = api_id
         self.action = action
         if show_all is not None:

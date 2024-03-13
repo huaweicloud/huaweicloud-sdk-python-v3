@@ -53,11 +53,11 @@ class ListVulHostsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业租户ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param vul_id: 漏洞ID
         :type vul_id: str
-        :param type: 漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        :param type: 漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
         :type type: str
         :param host_name: 受影响资产名称
         :type host_name: str
@@ -127,7 +127,7 @@ class ListVulHostsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListVulHostsRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListVulHostsRequest.
         :rtype: str
@@ -138,7 +138,7 @@ class ListVulHostsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListVulHostsRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulHostsRequest.
         :type enterprise_project_id: str
@@ -171,7 +171,7 @@ class ListVulHostsRequest:
     def type(self):
         """Gets the type of this ListVulHostsRequest.
 
-        漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
         :return: The type of this ListVulHostsRequest.
         :rtype: str
@@ -182,7 +182,7 @@ class ListVulHostsRequest:
     def type(self, type):
         """Sets the type of this ListVulHostsRequest.
 
-        漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
+        漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
         :param type: The type of this ListVulHostsRequest.
         :type type: str

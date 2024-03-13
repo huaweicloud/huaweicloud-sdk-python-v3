@@ -39,17 +39,17 @@ class TempDetailInfo:
 
         The model defined in huaweicloud sdk
 
-        :param description: description
+        :param description: 描述
         :type description: str
-        :param id: id
+        :param id: 事务id
         :type id: int
         :param is_quoted: 是否被引用
         :type is_quoted: bool
-        :param name: name
+        :param name: 事务名称
         :type name: str
-        :param temp_type: temp_type
+        :param temp_type: 事务类型（已弃用，兼容性保留）
         :type temp_type: int
-        :param update_time: update_time
+        :param update_time: 更新时间
         :type update_time: str
         """
         
@@ -80,7 +80,7 @@ class TempDetailInfo:
     def description(self):
         """Gets the description of this TempDetailInfo.
 
-        description
+        描述
 
         :return: The description of this TempDetailInfo.
         :rtype: str
@@ -91,7 +91,7 @@ class TempDetailInfo:
     def description(self, description):
         """Sets the description of this TempDetailInfo.
 
-        description
+        描述
 
         :param description: The description of this TempDetailInfo.
         :type description: str
@@ -102,7 +102,7 @@ class TempDetailInfo:
     def id(self):
         """Gets the id of this TempDetailInfo.
 
-        id
+        事务id
 
         :return: The id of this TempDetailInfo.
         :rtype: int
@@ -113,7 +113,7 @@ class TempDetailInfo:
     def id(self, id):
         """Sets the id of this TempDetailInfo.
 
-        id
+        事务id
 
         :param id: The id of this TempDetailInfo.
         :type id: int
@@ -146,7 +146,7 @@ class TempDetailInfo:
     def name(self):
         """Gets the name of this TempDetailInfo.
 
-        name
+        事务名称
 
         :return: The name of this TempDetailInfo.
         :rtype: str
@@ -157,7 +157,7 @@ class TempDetailInfo:
     def name(self, name):
         """Sets the name of this TempDetailInfo.
 
-        name
+        事务名称
 
         :param name: The name of this TempDetailInfo.
         :type name: str
@@ -168,7 +168,7 @@ class TempDetailInfo:
     def temp_type(self):
         """Gets the temp_type of this TempDetailInfo.
 
-        temp_type
+        事务类型（已弃用，兼容性保留）
 
         :return: The temp_type of this TempDetailInfo.
         :rtype: int
@@ -179,7 +179,7 @@ class TempDetailInfo:
     def temp_type(self, temp_type):
         """Sets the temp_type of this TempDetailInfo.
 
-        temp_type
+        事务类型（已弃用，兼容性保留）
 
         :param temp_type: The temp_type of this TempDetailInfo.
         :type temp_type: int
@@ -190,7 +190,7 @@ class TempDetailInfo:
     def update_time(self):
         """Gets the update_time of this TempDetailInfo.
 
-        update_time
+        更新时间
 
         :return: The update_time of this TempDetailInfo.
         :rtype: str
@@ -201,7 +201,7 @@ class TempDetailInfo:
     def update_time(self, update_time):
         """Sets the update_time of this TempDetailInfo.
 
-        update_time
+        更新时间
 
         :param update_time: The update_time of this TempDetailInfo.
         :type update_time: str

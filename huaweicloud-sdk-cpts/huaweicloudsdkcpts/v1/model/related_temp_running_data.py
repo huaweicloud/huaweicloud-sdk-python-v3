@@ -21,6 +21,7 @@ class RelatedTempRunningData:
         'related_temp_running_id': 'int',
         'temp_id': 'int',
         'temp_name': 'str',
+        'content_method_url': 'list[str]',
         'related_temp_running_data': 'list[TempRunningData]'
     }
 
@@ -29,23 +30,26 @@ class RelatedTempRunningData:
         'related_temp_running_id': 'related_temp_running_id',
         'temp_id': 'temp_id',
         'temp_name': 'temp_name',
+        'content_method_url': 'content_method_url',
         'related_temp_running_data': 'related_temp_running_data'
     }
 
-    def __init__(self, task_run_info_id=None, related_temp_running_id=None, temp_id=None, temp_name=None, related_temp_running_data=None):
+    def __init__(self, task_run_info_id=None, related_temp_running_id=None, temp_id=None, temp_name=None, content_method_url=None, related_temp_running_data=None):
         """RelatedTempRunningData
 
         The model defined in huaweicloud sdk
 
-        :param task_run_info_id: task_run_info_id
+        :param task_run_info_id: 运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
         :type task_run_info_id: int
-        :param related_temp_running_id: related_temp_running_id
+        :param related_temp_running_id: 运行用例id。对应其他（如报告）接口的运行用例id（case_run_id）。
         :type related_temp_running_id: int
-        :param temp_id: temp_id
+        :param temp_id: 用例id
         :type temp_id: int
-        :param temp_name: temp_name
+        :param temp_name: 用例名称
         :type temp_name: str
-        :param related_temp_running_data: related_temp_running_data
+        :param content_method_url: 请求信息，包括请求名称，方法，url信息
+        :type content_method_url: list[str]
+        :param related_temp_running_data: 最近一次运行的报告简略信息
         :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.TempRunningData`]
         """
         
@@ -55,6 +59,7 @@ class RelatedTempRunningData:
         self._related_temp_running_id = None
         self._temp_id = None
         self._temp_name = None
+        self._content_method_url = None
         self._related_temp_running_data = None
         self.discriminator = None
 
@@ -66,6 +71,8 @@ class RelatedTempRunningData:
             self.temp_id = temp_id
         if temp_name is not None:
             self.temp_name = temp_name
+        if content_method_url is not None:
+            self.content_method_url = content_method_url
         if related_temp_running_data is not None:
             self.related_temp_running_data = related_temp_running_data
 
@@ -73,7 +80,7 @@ class RelatedTempRunningData:
     def task_run_info_id(self):
         """Gets the task_run_info_id of this RelatedTempRunningData.
 
-        task_run_info_id
+        运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
         :return: The task_run_info_id of this RelatedTempRunningData.
         :rtype: int
@@ -84,7 +91,7 @@ class RelatedTempRunningData:
     def task_run_info_id(self, task_run_info_id):
         """Sets the task_run_info_id of this RelatedTempRunningData.
 
-        task_run_info_id
+        运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
         :param task_run_info_id: The task_run_info_id of this RelatedTempRunningData.
         :type task_run_info_id: int
@@ -95,7 +102,7 @@ class RelatedTempRunningData:
     def related_temp_running_id(self):
         """Gets the related_temp_running_id of this RelatedTempRunningData.
 
-        related_temp_running_id
+        运行用例id。对应其他（如报告）接口的运行用例id（case_run_id）。
 
         :return: The related_temp_running_id of this RelatedTempRunningData.
         :rtype: int
@@ -106,7 +113,7 @@ class RelatedTempRunningData:
     def related_temp_running_id(self, related_temp_running_id):
         """Sets the related_temp_running_id of this RelatedTempRunningData.
 
-        related_temp_running_id
+        运行用例id。对应其他（如报告）接口的运行用例id（case_run_id）。
 
         :param related_temp_running_id: The related_temp_running_id of this RelatedTempRunningData.
         :type related_temp_running_id: int
@@ -117,7 +124,7 @@ class RelatedTempRunningData:
     def temp_id(self):
         """Gets the temp_id of this RelatedTempRunningData.
 
-        temp_id
+        用例id
 
         :return: The temp_id of this RelatedTempRunningData.
         :rtype: int
@@ -128,7 +135,7 @@ class RelatedTempRunningData:
     def temp_id(self, temp_id):
         """Sets the temp_id of this RelatedTempRunningData.
 
-        temp_id
+        用例id
 
         :param temp_id: The temp_id of this RelatedTempRunningData.
         :type temp_id: int
@@ -139,7 +146,7 @@ class RelatedTempRunningData:
     def temp_name(self):
         """Gets the temp_name of this RelatedTempRunningData.
 
-        temp_name
+        用例名称
 
         :return: The temp_name of this RelatedTempRunningData.
         :rtype: str
@@ -150,7 +157,7 @@ class RelatedTempRunningData:
     def temp_name(self, temp_name):
         """Sets the temp_name of this RelatedTempRunningData.
 
-        temp_name
+        用例名称
 
         :param temp_name: The temp_name of this RelatedTempRunningData.
         :type temp_name: str
@@ -158,10 +165,32 @@ class RelatedTempRunningData:
         self._temp_name = temp_name
 
     @property
+    def content_method_url(self):
+        """Gets the content_method_url of this RelatedTempRunningData.
+
+        请求信息，包括请求名称，方法，url信息
+
+        :return: The content_method_url of this RelatedTempRunningData.
+        :rtype: list[str]
+        """
+        return self._content_method_url
+
+    @content_method_url.setter
+    def content_method_url(self, content_method_url):
+        """Sets the content_method_url of this RelatedTempRunningData.
+
+        请求信息，包括请求名称，方法，url信息
+
+        :param content_method_url: The content_method_url of this RelatedTempRunningData.
+        :type content_method_url: list[str]
+        """
+        self._content_method_url = content_method_url
+
+    @property
     def related_temp_running_data(self):
         """Gets the related_temp_running_data of this RelatedTempRunningData.
 
-        related_temp_running_data
+        最近一次运行的报告简略信息
 
         :return: The related_temp_running_data of this RelatedTempRunningData.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.TempRunningData`]
@@ -172,7 +201,7 @@ class RelatedTempRunningData:
     def related_temp_running_data(self, related_temp_running_data):
         """Sets the related_temp_running_data of this RelatedTempRunningData.
 
-        related_temp_running_data
+        最近一次运行的报告简略信息
 
         :param related_temp_running_data: The related_temp_running_data of this RelatedTempRunningData.
         :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.TempRunningData`]

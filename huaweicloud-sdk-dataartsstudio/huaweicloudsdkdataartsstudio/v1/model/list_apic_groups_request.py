@@ -64,7 +64,8 @@ class ListApicGroupsRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         self.apig_instance_id = apig_instance_id
         self.apig_type = apig_type
         if limit is not None:

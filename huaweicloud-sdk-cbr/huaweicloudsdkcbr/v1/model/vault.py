@@ -32,7 +32,8 @@ class Vault:
         'created_at': 'str',
         'auto_expand': 'bool',
         'smn_notify': 'bool',
-        'threshold': 'int'
+        'threshold': 'int',
+        'sys_lock_source_service': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class Vault:
         'created_at': 'created_at',
         'auto_expand': 'auto_expand',
         'smn_notify': 'smn_notify',
-        'threshold': 'threshold'
+        'threshold': 'threshold',
+        'sys_lock_source_service': 'sys_lock_source_service'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None):
         """Vault
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class Vault:
         :type smn_notify: bool
         :param threshold: 存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
         :type threshold: int
+        :param sys_lock_source_service: 用于标识SMB服务
+        :type sys_lock_source_service: str
         """
         
         
@@ -111,6 +115,7 @@ class Vault:
         self._auto_expand = None
         self._smn_notify = None
         self._threshold = None
+        self._sys_lock_source_service = None
         self.discriminator = None
 
         self.billing = billing
@@ -139,6 +144,8 @@ class Vault:
             self.smn_notify = smn_notify
         if threshold is not None:
             self.threshold = threshold
+        if sys_lock_source_service is not None:
+            self.sys_lock_source_service = sys_lock_source_service
 
     @property
     def billing(self):
@@ -483,6 +490,28 @@ class Vault:
         :type threshold: int
         """
         self._threshold = threshold
+
+    @property
+    def sys_lock_source_service(self):
+        """Gets the sys_lock_source_service of this Vault.
+
+        用于标识SMB服务
+
+        :return: The sys_lock_source_service of this Vault.
+        :rtype: str
+        """
+        return self._sys_lock_source_service
+
+    @sys_lock_source_service.setter
+    def sys_lock_source_service(self, sys_lock_source_service):
+        """Sets the sys_lock_source_service of this Vault.
+
+        用于标识SMB服务
+
+        :param sys_lock_source_service: The sys_lock_source_service of this Vault.
+        :type sys_lock_source_service: str
+        """
+        self._sys_lock_source_service = sys_lock_source_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

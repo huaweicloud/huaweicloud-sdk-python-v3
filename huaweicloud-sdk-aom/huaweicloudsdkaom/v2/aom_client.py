@@ -35,7 +35,7 @@ class AomClient(Client):
     def add_action_rule(self, request):
         """新增告警行动规则
 
-        新增告警行动规则。（注：接口目前开放的region为：上海一）。
+        新增告警行动规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -100,7 +100,7 @@ class AomClient(Client):
     def add_alarm_rule(self, request):
         """添加阈值规则
 
-        该接口用于添加一条阈值规则。
+        该接口用于添加一条阈值规则。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -165,7 +165,7 @@ class AomClient(Client):
     def add_event2alarm_rule(self, request):
         """新增一条事件类告警规则
 
-        新增一条事件类告警规则。（注：接口目前开放的region为：上海一）。
+        新增一条事件类告警规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -230,7 +230,7 @@ class AomClient(Client):
     def add_metric_data(self, request):
         """添加监控数据
 
-        该接口用于向服务端添加一条或多条监控数据。
+        该接口用于向服务端添加一条或多条监控数据。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -295,7 +295,7 @@ class AomClient(Client):
     def add_mute_rules(self, request):
         """新增静默规则
 
-        新增静默规则。（注：接口目前开放的region为：上海一）。
+        新增静默规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -360,7 +360,7 @@ class AomClient(Client):
     def add_or_update_service_discovery_rules(self, request):
         """添加或修改服务发现规则
 
-        该接口用于添加或修改一条或多条服务发现规则。同一projectid下可添加的规则上限为100条。
+        该接口用于添加或修改一条或多条服务发现规则。同一projectid下可添加的规则上限为100条。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -492,7 +492,7 @@ class AomClient(Client):
     def delete_action_rule(self, request):
         """删除告警行动规则
 
-        删除告警行动规则。（注：接口目前开放的region为：上海一）。
+        删除告警行动规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -557,7 +557,7 @@ class AomClient(Client):
     def delete_alarm_rule(self, request):
         """删除阈值规则
 
-        该接口用于删除阈值规则。
+        该接口用于删除阈值规则。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -622,7 +622,7 @@ class AomClient(Client):
     def delete_alarm_rules(self, request):
         """批量删除阈值规则
 
-        批量删除阈值规则
+        批量删除阈值规则[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -687,7 +687,7 @@ class AomClient(Client):
     def delete_event2alarm_rule(self, request):
         """删除事件类告警规则
 
-        删除一条事件类告警规则。（注：接口目前开放的region为：上海一）。
+        删除一条事件类告警规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -752,7 +752,7 @@ class AomClient(Client):
     def delete_mute_rules(self, request):
         """删除静默规则
 
-        删除静默规则。（注：接口目前开放的region为：上海一）。
+        删除静默规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -817,7 +817,7 @@ class AomClient(Client):
     def deleteservice_discovery_rules(self, request):
         """删除服务发现规则
 
-        该接口用于删除服务发现规则。
+        该接口用于删除服务发现规则。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -883,7 +883,7 @@ class AomClient(Client):
     def list_action_rule(self, request):
         """获取告警行动规则列表
 
-        获取告警行动规则列表。（注：接口目前开放的region为：上海一）。
+        获取告警行动规则列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -944,9 +944,9 @@ class AomClient(Client):
         return http_info
 
     def list_agents(self, request):
-        """查询集群主机安装的ICAgent信息
+        """查询主机安装的ICAgent信息
 
-        该接口用于查询集群主机安装的ICAgent信息。
+        该接口用于查询集群主机或用户自定义主机安装的ICAgent信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1013,7 +1013,7 @@ class AomClient(Client):
     def list_alarm_rule(self, request):
         """查询阈值规则列表
 
-        该接口用于查询阈值规则列表。
+        该接口用于查询阈值规则列表。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1080,7 +1080,7 @@ class AomClient(Client):
     def list_event2alarm_rule(self, request):
         """查询事件类告警规则列表
 
-        查询事件类告警规则列表。（注：接口目前开放的region为：上海一）。
+        查询事件类告警规则列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1277,7 +1277,7 @@ class AomClient(Client):
     def list_metric_items(self, request):
         """查询指标
 
-        该接口用于查询系统当前可监控的指标列表，可以指定指标命名空间、指标名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
+        该接口用于查询系统当前可监控的指标列表，可以指定指标命名空间、指标名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1348,7 +1348,7 @@ class AomClient(Client):
     def list_mute_rule(self, request):
         """获取静默规则列表
 
-        获取静默规则列表。（注：接口目前开放的region为：上海一）。
+        获取静默规则列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1411,7 +1411,7 @@ class AomClient(Client):
     def list_notified_histories(self, request):
         """获取告警发送结果
 
-        获取告警发送结果。（注：接口目前开放的region为：上海一）。
+        获取告警发送结果。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1539,7 +1539,7 @@ class AomClient(Client):
     def list_sample(self, request):
         """查询时序数据
 
-        该接口用于查询指定时间范围内的监控时序数据，可以通过参数指定需要查询的数据维度，数据周期等。
+        该接口用于查询指定时间范围内的监控时序数据，可以通过参数指定需要查询的数据维度，数据周期等。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1606,7 +1606,7 @@ class AomClient(Client):
     def list_series(self, request):
         """查询时间序列
 
-        该接口用于查询系统当前可监控的时间序列列表，可以指定时间序列命名空间、名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
+        该接口用于查询系统当前可监控的时间序列列表，可以指定时间序列命名空间、名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1675,7 +1675,7 @@ class AomClient(Client):
     def list_service_discovery_rules(self, request):
         """查询系统中已有服务发现规则
 
-        该接口用于查询系统当前已存在的服务发现规则。
+        该接口用于查询系统当前已存在的服务发现规则。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1809,7 +1809,7 @@ class AomClient(Client):
     def show_action_rule(self, request):
         """通过规则名称获取告警行动规则
 
-        通过规则名称获取告警行动规则。（注：接口目前开放的region为：上海一）。
+        通过规则名称获取告警行动规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1874,7 +1874,7 @@ class AomClient(Client):
     def show_alarm_rule(self, request):
         """查询单条阈值规则
 
-        该接口用于查询单条阈值规则。
+        该接口用于查询单条阈值规则。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1939,7 +1939,7 @@ class AomClient(Client):
     def show_metrics_data(self, request):
         """查询监控数据
 
-        该接口用于查询指定时间范围内指标的监控数据，可以通过参数指定需要查询的数据维度，数据周期等。
+        该接口用于查询指定时间范围内指标的监控数据，可以通过参数指定需要查询的数据维度，数据周期等。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2006,7 +2006,7 @@ class AomClient(Client):
     def update_action_rule(self, request):
         """修改告警行动规则
 
-        修改告警行动规则。（注：接口目前开放的region为：上海一）。
+        修改告警行动规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2071,7 +2071,7 @@ class AomClient(Client):
     def update_alarm_rule(self, request):
         """修改阈值规则
 
-        该接口用于修改一条阈值规则。
+        该接口用于修改一条阈值规则。[（当前接口未上线墨西哥城二、圣地亚哥、圣保罗一）](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2136,7 +2136,7 @@ class AomClient(Client):
     def update_event_rule(self, request):
         """更新事件类告警规则
 
-        更新事件类告警规则。（注：接口目前开放的region为：上海一）。
+        更新事件类告警规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2201,7 +2201,7 @@ class AomClient(Client):
     def update_mute_rule(self, request):
         """修改静默规则
 
-        修改静默规则。（注：接口目前开放的region为：上海一）。
+        修改静默规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2301,6 +2301,8 @@ class AomClient(Client):
         query_params = []
 
         header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
 
         form_params = {}
 
@@ -2595,9 +2597,9 @@ class AomClient(Client):
         return http_info
 
     def list_instant_query_aom_prom_get(self, request):
-        """瞬时数据查询
+        """GET方法查询瞬时数据
 
-        该接口用于查询PromQL(Prometheus Query Language)在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用GET方法查询PromQL(Prometheus Query Language)在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2662,9 +2664,9 @@ class AomClient(Client):
         return http_info
 
     def list_instant_query_aom_prom_post(self, request):
-        """瞬时数据查询
+        """（推荐）POST方法查询瞬时数据
 
-        该接口用于查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口使用POST方法查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2794,9 +2796,9 @@ class AomClient(Client):
         return http_info
 
     def list_labels_aom_prom_get(self, request):
-        """获取标签名列表
+        """GET方法获取标签名列表
 
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用GET方法获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2857,9 +2859,9 @@ class AomClient(Client):
         return http_info
 
     def list_labels_aom_prom_post(self, request):
-        """获取标签名列表
+        """（推荐）POST方法获取标签名列表
 
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用POST方法获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2983,9 +2985,9 @@ class AomClient(Client):
         return http_info
 
     def list_range_query_aom_prom_get(self, request):
-        """区间数据查询
+        """GET方法查询区间数据
 
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用GET方法查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3054,9 +3056,9 @@ class AomClient(Client):
         return http_info
 
     def list_range_query_aom_prom_post(self, request):
-        """区间数据查询
+        """（推荐）POST方法查询区间数据
 
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口使用POST方法查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

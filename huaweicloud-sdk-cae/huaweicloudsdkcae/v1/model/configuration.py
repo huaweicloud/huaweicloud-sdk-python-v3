@@ -43,7 +43,7 @@ class Configuration:
         :type operated_at: datetime
         :param operation_id: 操作ID。
         :type operation_id: str
-        :param type: 组件配置类型，当前CAE支持组件配置如下11类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。  - apm2：性能管理。  - log: 自定义日志路径。  - customMetric: 自定义监控指标。
+        :param type: 组件配置类型。
         :type type: str
         :param is_activated: 配置是否生效。
         :type is_activated: bool
@@ -135,7 +135,7 @@ class Configuration:
     def type(self):
         """Gets the type of this Configuration.
 
-        组件配置类型，当前CAE支持组件配置如下11类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。  - apm2：性能管理。  - log: 自定义日志路径。  - customMetric: 自定义监控指标。
+        组件配置类型。
 
         :return: The type of this Configuration.
         :rtype: str
@@ -146,7 +146,7 @@ class Configuration:
     def type(self, type):
         """Sets the type of this Configuration.
 
-        组件配置类型，当前CAE支持组件配置如下11类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。  - apm2：性能管理。  - log: 自定义日志路径。  - customMetric: 自定义监控指标。
+        组件配置类型。
 
         :param type: The type of this Configuration.
         :type type: str

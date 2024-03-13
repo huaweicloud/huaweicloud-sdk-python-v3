@@ -63,9 +63,9 @@ class BusinessCardTextConfig:
         :type address: str
         :param other1: 其他信息1。可填写一些公司广告语等
         :type other1: str
-        :param other2: 其他信息1。可填写一些公司广告语等
+        :param other2: 其他信息2。可填写一些公司广告语等
         :type other2: str
-        :param other3: 其他信息1。可填写一些公司广告语等
+        :param other3: 其他信息3。可填写一些公司广告语等
         :type other3: str
         """
         
@@ -284,7 +284,7 @@ class BusinessCardTextConfig:
     def other2(self):
         """Gets the other2 of this BusinessCardTextConfig.
 
-        其他信息1。可填写一些公司广告语等
+        其他信息2。可填写一些公司广告语等
 
         :return: The other2 of this BusinessCardTextConfig.
         :rtype: str
@@ -295,7 +295,7 @@ class BusinessCardTextConfig:
     def other2(self, other2):
         """Sets the other2 of this BusinessCardTextConfig.
 
-        其他信息1。可填写一些公司广告语等
+        其他信息2。可填写一些公司广告语等
 
         :param other2: The other2 of this BusinessCardTextConfig.
         :type other2: str
@@ -306,7 +306,7 @@ class BusinessCardTextConfig:
     def other3(self):
         """Gets the other3 of this BusinessCardTextConfig.
 
-        其他信息1。可填写一些公司广告语等
+        其他信息3。可填写一些公司广告语等
 
         :return: The other3 of this BusinessCardTextConfig.
         :rtype: str
@@ -317,7 +317,7 @@ class BusinessCardTextConfig:
     def other3(self, other3):
         """Sets the other3 of this BusinessCardTextConfig.
 
-        其他信息1。可填写一些公司广告语等
+        其他信息3。可填写一些公司广告语等
 
         :param other3: The other3 of this BusinessCardTextConfig.
         :type other3: str

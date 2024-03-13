@@ -34,11 +34,11 @@ class CreateProjectResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
-        :param project_id: project_id
+        :param project_id: 项目ID
         :type project_id: int
         """
         
@@ -60,7 +60,7 @@ class CreateProjectResponse(SdkResponse):
     def code(self):
         """Gets the code of this CreateProjectResponse.
 
-        code
+        响应码
 
         :return: The code of this CreateProjectResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class CreateProjectResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this CreateProjectResponse.
 
-        code
+        响应码
 
         :param code: The code of this CreateProjectResponse.
         :type code: str
@@ -82,7 +82,7 @@ class CreateProjectResponse(SdkResponse):
     def message(self):
         """Gets the message of this CreateProjectResponse.
 
-        message
+        响应消息
 
         :return: The message of this CreateProjectResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateProjectResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this CreateProjectResponse.
 
-        message
+        响应消息
 
         :param message: The message of this CreateProjectResponse.
         :type message: str
@@ -104,7 +104,7 @@ class CreateProjectResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this CreateProjectResponse.
 
-        project_id
+        项目ID
 
         :return: The project_id of this CreateProjectResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class CreateProjectResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this CreateProjectResponse.
 
-        project_id
+        项目ID
 
         :param project_id: The project_id of this CreateProjectResponse.
         :type project_id: int

@@ -1517,6 +1517,8 @@ class DasAsyncClient(Client):
             query_params.append(('user', local_var_params['user']))
         if 'database' in local_var_params:
             query_params.append(('database', local_var_params['database']))
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:

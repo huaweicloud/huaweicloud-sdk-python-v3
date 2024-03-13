@@ -17,29 +17,50 @@ class ChannelUpdateReq:
     sensitive_list = []
 
     openapi_types = {
-        'description': 'str'
+        'description': 'str',
+        'eps_id': 'str',
+        'cross_account': 'bool',
+        'policy': 'dict(str, ChannelCreateReqPolicy)'
     }
 
     attribute_map = {
-        'description': 'description'
+        'description': 'description',
+        'eps_id': 'eps_id',
+        'cross_account': 'cross_account',
+        'policy': 'policy'
     }
 
-    def __init__(self, description=None):
+    def __init__(self, description=None, eps_id=None, cross_account=None, policy=None):
         """ChannelUpdateReq
 
         The model defined in huaweicloud sdk
 
         :param description: 通道描述
         :type description: str
+        :param eps_id: 企业项目id
+        :type eps_id: str
+        :param cross_account: 跨账号开关
+        :type cross_account: bool
+        :param policy: 策略
+        :type policy: dict(str, ChannelCreateReqPolicy)
         """
         
         
 
         self._description = None
+        self._eps_id = None
+        self._cross_account = None
+        self._policy = None
         self.discriminator = None
 
         if description is not None:
             self.description = description
+        if eps_id is not None:
+            self.eps_id = eps_id
+        if cross_account is not None:
+            self.cross_account = cross_account
+        if policy is not None:
+            self.policy = policy
 
     @property
     def description(self):
@@ -62,6 +83,72 @@ class ChannelUpdateReq:
         :type description: str
         """
         self._description = description
+
+    @property
+    def eps_id(self):
+        """Gets the eps_id of this ChannelUpdateReq.
+
+        企业项目id
+
+        :return: The eps_id of this ChannelUpdateReq.
+        :rtype: str
+        """
+        return self._eps_id
+
+    @eps_id.setter
+    def eps_id(self, eps_id):
+        """Sets the eps_id of this ChannelUpdateReq.
+
+        企业项目id
+
+        :param eps_id: The eps_id of this ChannelUpdateReq.
+        :type eps_id: str
+        """
+        self._eps_id = eps_id
+
+    @property
+    def cross_account(self):
+        """Gets the cross_account of this ChannelUpdateReq.
+
+        跨账号开关
+
+        :return: The cross_account of this ChannelUpdateReq.
+        :rtype: bool
+        """
+        return self._cross_account
+
+    @cross_account.setter
+    def cross_account(self, cross_account):
+        """Sets the cross_account of this ChannelUpdateReq.
+
+        跨账号开关
+
+        :param cross_account: The cross_account of this ChannelUpdateReq.
+        :type cross_account: bool
+        """
+        self._cross_account = cross_account
+
+    @property
+    def policy(self):
+        """Gets the policy of this ChannelUpdateReq.
+
+        策略
+
+        :return: The policy of this ChannelUpdateReq.
+        :rtype: dict(str, ChannelCreateReqPolicy)
+        """
+        return self._policy
+
+    @policy.setter
+    def policy(self, policy):
+        """Sets the policy of this ChannelUpdateReq.
+
+        策略
+
+        :param policy: The policy of this ChannelUpdateReq.
+        :type policy: dict(str, ChannelCreateReqPolicy)
+        """
+        self._policy = policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

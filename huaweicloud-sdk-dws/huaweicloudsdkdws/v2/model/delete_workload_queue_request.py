@@ -35,7 +35,7 @@ class DeleteWorkloadQueueRequest:
 
         :param cluster_id: 集群ID。
         :type cluster_id: str
-        :param logical_cluster_name: 逻辑集群名称。
+        :param logical_cluster_name: 逻辑集群名称。逻辑集群模式下该字段必填。
         :type logical_cluster_name: str
         :param workload_queue_name: 工作负载队列名称。
         :type workload_queue_name: str
@@ -79,7 +79,7 @@ class DeleteWorkloadQueueRequest:
     def logical_cluster_name(self):
         """Gets the logical_cluster_name of this DeleteWorkloadQueueRequest.
 
-        逻辑集群名称。
+        逻辑集群名称。逻辑集群模式下该字段必填。
 
         :return: The logical_cluster_name of this DeleteWorkloadQueueRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteWorkloadQueueRequest:
     def logical_cluster_name(self, logical_cluster_name):
         """Sets the logical_cluster_name of this DeleteWorkloadQueueRequest.
 
-        逻辑集群名称。
+        逻辑集群名称。逻辑集群模式下该字段必填。
 
         :param logical_cluster_name: The logical_cluster_name of this DeleteWorkloadQueueRequest.
         :type logical_cluster_name: str

@@ -21,7 +21,8 @@ class ListJobsRequest:
         'limit': 'int',
         'offset': 'int',
         'job_type': 'str',
-        'job_name': 'str'
+        'job_name': 'str',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListJobsRequest:
         'limit': 'limit',
         'offset': 'offset',
         'job_type': 'jobType',
-        'job_name': 'jobName'
+        'job_name': 'jobName',
+        'tags': 'tags'
     }
 
-    def __init__(self, workspace=None, limit=None, offset=None, job_type=None, job_name=None):
+    def __init__(self, workspace=None, limit=None, offset=None, job_type=None, job_name=None, tags=None):
         """ListJobsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListJobsRequest:
         :type job_type: str
         :param job_name: 作业名称
         :type job_name: str
+        :param tags: 作业标签
+        :type tags: str
         """
         
         
@@ -56,6 +60,7 @@ class ListJobsRequest:
         self._offset = None
         self._job_type = None
         self._job_name = None
+        self._tags = None
         self.discriminator = None
 
         if workspace is not None:
@@ -68,6 +73,8 @@ class ListJobsRequest:
             self.job_type = job_type
         if job_name is not None:
             self.job_name = job_name
+        if tags is not None:
+            self.tags = tags
 
     @property
     def workspace(self):
@@ -178,6 +185,28 @@ class ListJobsRequest:
         :type job_name: str
         """
         self._job_name = job_name
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListJobsRequest.
+
+        作业标签
+
+        :return: The tags of this ListJobsRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListJobsRequest.
+
+        作业标签
+
+        :param tags: The tags of this ListJobsRequest.
+        :type tags: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -15,6 +15,7 @@ class VpnGatewayCertificateConfig:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('issuer')
 
     openapi_types = {
         'id': 'str',
@@ -63,15 +64,15 @@ class VpnGatewayCertificateConfig:
         :type name: str
         :param vgw_id: VPN网关ID
         :type vgw_id: str
-        :param issuer: 签名证书颁发者，国密证书时为签名证书颁发者
+        :param issuer: 证书颁发者，国密证书时为签名证书颁发者
         :type issuer: str
-        :param signature_algorithm: 签名证书签名算法，国密证书时为签名证书签名算法
+        :param signature_algorithm: 证书签名算法，国密证书时为签名证书签名算法
         :type signature_algorithm: str
         :param certificate_serial_number: 证书序列号，国密证书时为签名证书序列号
         :type certificate_serial_number: str
-        :param certificate_subject: 签名证书主题，国密证书时为签名证书主题
+        :param certificate_subject: 证书主题，国密证书时为签名证书主题
         :type certificate_subject: str
-        :param certificate_expire_time: 签名证书过期时间，国密证书时为签名证书过期时间
+        :param certificate_expire_time: 证书过期时间，国密证书时为签名证书过期时间
         :type certificate_expire_time: datetime
         :param certificate_chain_serial_number: CA证书序列号
         :type certificate_chain_serial_number: str
@@ -209,7 +210,7 @@ class VpnGatewayCertificateConfig:
     def issuer(self):
         """Gets the issuer of this VpnGatewayCertificateConfig.
 
-        签名证书颁发者，国密证书时为签名证书颁发者
+        证书颁发者，国密证书时为签名证书颁发者
 
         :return: The issuer of this VpnGatewayCertificateConfig.
         :rtype: str
@@ -220,7 +221,7 @@ class VpnGatewayCertificateConfig:
     def issuer(self, issuer):
         """Sets the issuer of this VpnGatewayCertificateConfig.
 
-        签名证书颁发者，国密证书时为签名证书颁发者
+        证书颁发者，国密证书时为签名证书颁发者
 
         :param issuer: The issuer of this VpnGatewayCertificateConfig.
         :type issuer: str
@@ -231,7 +232,7 @@ class VpnGatewayCertificateConfig:
     def signature_algorithm(self):
         """Gets the signature_algorithm of this VpnGatewayCertificateConfig.
 
-        签名证书签名算法，国密证书时为签名证书签名算法
+        证书签名算法，国密证书时为签名证书签名算法
 
         :return: The signature_algorithm of this VpnGatewayCertificateConfig.
         :rtype: str
@@ -242,7 +243,7 @@ class VpnGatewayCertificateConfig:
     def signature_algorithm(self, signature_algorithm):
         """Sets the signature_algorithm of this VpnGatewayCertificateConfig.
 
-        签名证书签名算法，国密证书时为签名证书签名算法
+        证书签名算法，国密证书时为签名证书签名算法
 
         :param signature_algorithm: The signature_algorithm of this VpnGatewayCertificateConfig.
         :type signature_algorithm: str
@@ -275,7 +276,7 @@ class VpnGatewayCertificateConfig:
     def certificate_subject(self):
         """Gets the certificate_subject of this VpnGatewayCertificateConfig.
 
-        签名证书主题，国密证书时为签名证书主题
+        证书主题，国密证书时为签名证书主题
 
         :return: The certificate_subject of this VpnGatewayCertificateConfig.
         :rtype: str
@@ -286,7 +287,7 @@ class VpnGatewayCertificateConfig:
     def certificate_subject(self, certificate_subject):
         """Sets the certificate_subject of this VpnGatewayCertificateConfig.
 
-        签名证书主题，国密证书时为签名证书主题
+        证书主题，国密证书时为签名证书主题
 
         :param certificate_subject: The certificate_subject of this VpnGatewayCertificateConfig.
         :type certificate_subject: str
@@ -297,7 +298,7 @@ class VpnGatewayCertificateConfig:
     def certificate_expire_time(self):
         """Gets the certificate_expire_time of this VpnGatewayCertificateConfig.
 
-        签名证书过期时间，国密证书时为签名证书过期时间
+        证书过期时间，国密证书时为签名证书过期时间
 
         :return: The certificate_expire_time of this VpnGatewayCertificateConfig.
         :rtype: datetime
@@ -308,7 +309,7 @@ class VpnGatewayCertificateConfig:
     def certificate_expire_time(self, certificate_expire_time):
         """Sets the certificate_expire_time of this VpnGatewayCertificateConfig.
 
-        签名证书过期时间，国密证书时为签名证书过期时间
+        证书过期时间，国密证书时为签名证书过期时间
 
         :param certificate_expire_time: The certificate_expire_time of this VpnGatewayCertificateConfig.
         :type certificate_expire_time: datetime

@@ -653,6 +653,78 @@ class CloudTableClient(Client):
 
         return http_info
 
+    def create_cloud_table_cluster(self, request):
+        """创建CloudTable集群
+
+        创建一个CloudTable集群。
+        使用接口前，您需要先获取如下资源信息。
+        - 通过VPC创建或查询VPC、子网
+        - 通过安全组创建或查询可用的security_group_id
+        
+        本接口是一个同步接口，当创建CloudTable集群成功后会返回集群id。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCloudTableCluster
+        :type request: :class:`huaweicloudsdkcloudtable.v2.CreateCloudTableClusterRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.CreateCloudTableClusterResponse`
+        """
+        http_info = self._create_cloud_table_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_cloud_table_cluster_invoker(self, request):
+        http_info = self._create_cloud_table_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cloud_table_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCloudTableClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def _call_api(self, **kwargs):
         try:
             return self.do_http_request(**kwargs)

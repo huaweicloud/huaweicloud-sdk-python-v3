@@ -33,11 +33,11 @@ class CreateInstanceUserReq:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 用户名称。
+        :param user_name: 用户名称。  创建用户时，为必选参数。
         :type user_name: str
         :param user_desc: 用户描述。
         :type user_desc: str
-        :param user_passwd: 用户密码。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :param user_passwd: 用户密码。  创建用户时，为必选参数。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
         :type user_passwd: str
         """
         
@@ -59,7 +59,7 @@ class CreateInstanceUserReq:
     def user_name(self):
         """Gets the user_name of this CreateInstanceUserReq.
 
-        用户名称。
+        用户名称。  创建用户时，为必选参数。
 
         :return: The user_name of this CreateInstanceUserReq.
         :rtype: str
@@ -70,7 +70,7 @@ class CreateInstanceUserReq:
     def user_name(self, user_name):
         """Sets the user_name of this CreateInstanceUserReq.
 
-        用户名称。
+        用户名称。  创建用户时，为必选参数。
 
         :param user_name: The user_name of this CreateInstanceUserReq.
         :type user_name: str
@@ -103,7 +103,7 @@ class CreateInstanceUserReq:
     def user_passwd(self):
         """Gets the user_passwd of this CreateInstanceUserReq.
 
-        用户密码。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        用户密码。  创建用户时，为必选参数。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :return: The user_passwd of this CreateInstanceUserReq.
         :rtype: str
@@ -114,7 +114,7 @@ class CreateInstanceUserReq:
     def user_passwd(self, user_passwd):
         """Sets the user_passwd of this CreateInstanceUserReq.
 
-        用户密码。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        用户密码。  创建用户时，为必选参数。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :param user_passwd: The user_passwd of this CreateInstanceUserReq.
         :type user_passwd: str

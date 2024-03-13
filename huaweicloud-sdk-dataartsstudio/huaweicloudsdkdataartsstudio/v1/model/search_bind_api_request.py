@@ -59,7 +59,8 @@ class SearchBindApiRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         self.app_id = app_id
         if offset is not None:
             self.offset = offset

@@ -59,7 +59,8 @@ class ListApisRequest:
         self.discriminator = None
 
         self.workspace = workspace
-        self.dlm_type = dlm_type
+        if dlm_type is not None:
+            self.dlm_type = dlm_type
         if x_return_publish_messages is not None:
             self.x_return_publish_messages = x_return_publish_messages
         if offset is not None:

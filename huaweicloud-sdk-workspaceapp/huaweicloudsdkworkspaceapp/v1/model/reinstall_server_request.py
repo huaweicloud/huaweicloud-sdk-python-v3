@@ -31,7 +31,7 @@ class ReinstallServerRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 服务器唯一标识
+        :param server_id: 服务器唯一标识。
         :type server_id: str
         :param body: Body of the ReinstallServerRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ReinstallServerReq`
@@ -51,7 +51,7 @@ class ReinstallServerRequest:
     def server_id(self):
         """Gets the server_id of this ReinstallServerRequest.
 
-        服务器唯一标识
+        服务器唯一标识。
 
         :return: The server_id of this ReinstallServerRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ReinstallServerRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ReinstallServerRequest.
 
-        服务器唯一标识
+        服务器唯一标识。
 
         :param server_id: The server_id of this ReinstallServerRequest.
         :type server_id: str

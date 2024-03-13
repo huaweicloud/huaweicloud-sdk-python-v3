@@ -31,7 +31,7 @@ class CreateTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: workspace 信息
+        :param workspace: DataArts Studio工作空间ID
         :type workspace: str
         :param body: Body of the CreateTemplateRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.TemplateRO`
@@ -51,7 +51,7 @@ class CreateTemplateRequest:
     def workspace(self):
         """Gets the workspace of this CreateTemplateRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :return: The workspace of this CreateTemplateRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateTemplateRequest:
     def workspace(self, workspace):
         """Sets the workspace of this CreateTemplateRequest.
 
-        workspace 信息
+        DataArts Studio工作空间ID
 
         :param workspace: The workspace of this CreateTemplateRequest.
         :type workspace: str

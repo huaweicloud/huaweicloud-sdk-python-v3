@@ -1,8 +1,5 @@
 # coding: utf-8
 
-import types
-import six
-
 from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.region.provider import RegionProviderChain
 
@@ -45,6 +42,10 @@ class IamRegion:
                         "https://iam.cn-north-9.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
                         "https://iam.eu-west-101.myhuaweicloud.eu")
+    EU_WEST_0 = Region("eu-west-0",
+                        "https://iam.eu-west-0.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://iam.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-2": CN_NORTH_2,
@@ -65,14 +66,16 @@ class IamRegion:
         "la-north-2": LA_NORTH_2,
         "cn-north-9": CN_NORTH_9,
         "eu-west-101": EU_WEST_101,
+        "eu-west-0": EU_WEST_0,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod
     def value_of(cls, region_id, static_fields=None):
         if not region_id:
-            raise KeyError("Unexpected empty parameter: region_id.")
+            raise KeyError("Unexpected empty parameter: region_id")
 
-        fields = static_fields if static_fields else cls.static_fields
+        fields = static_fields or cls.static_fields
 
         region = cls._PROVIDER.get_region(region_id)
         if region:
@@ -81,6 +84,5 @@ class IamRegion:
         if region_id in fields:
             return fields.get(region_id)
 
-        raise KeyError("Unexpected region_id: " + region_id)
-
-
+        raise KeyError("region_id '%s' is not in the following supported regions of service 'Iam': [%s]" % (
+            region_id, ", ".join(sorted(fields.keys()))))

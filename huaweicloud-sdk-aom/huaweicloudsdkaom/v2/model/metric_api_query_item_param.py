@@ -31,7 +31,7 @@ class MetricAPIQueryItemParam:
 
         The model defined in huaweicloud sdk
 
-        :param inventory_id: 资源编号,格式为resType_resId。其中resType部分的枚举值为：host, application, instance, container, process, network, storage, volume。当URI参数中的type取值为“inventory”时，通过该参数查询关联的指标，不再使用metricItems数组中的信息。
+        :param inventory_id: 资源编号，格式为resType_resId。其中resType部分的枚举值为：host，application，instance， container，process，network，storage， volume。当URI参数中的type取值为“inventory”时，通过该参数查询关联的指标，不再使用metricItems数组中的信息。
         :type inventory_id: str
         :param metric_items: 当URI参数中的type取值不为“inventory”时，就通过该数组传递的参数信息进行指标查询。
         :type metric_items: list[:class:`huaweicloudsdkaom.v2.QueryMetricItemOptionParam`]
@@ -52,7 +52,7 @@ class MetricAPIQueryItemParam:
     def inventory_id(self):
         """Gets the inventory_id of this MetricAPIQueryItemParam.
 
-        资源编号,格式为resType_resId。其中resType部分的枚举值为：host, application, instance, container, process, network, storage, volume。当URI参数中的type取值为“inventory”时，通过该参数查询关联的指标，不再使用metricItems数组中的信息。
+        资源编号，格式为resType_resId。其中resType部分的枚举值为：host，application，instance， container，process，network，storage， volume。当URI参数中的type取值为“inventory”时，通过该参数查询关联的指标，不再使用metricItems数组中的信息。
 
         :return: The inventory_id of this MetricAPIQueryItemParam.
         :rtype: str
@@ -63,7 +63,7 @@ class MetricAPIQueryItemParam:
     def inventory_id(self, inventory_id):
         """Sets the inventory_id of this MetricAPIQueryItemParam.
 
-        资源编号,格式为resType_resId。其中resType部分的枚举值为：host, application, instance, container, process, network, storage, volume。当URI参数中的type取值为“inventory”时，通过该参数查询关联的指标，不再使用metricItems数组中的信息。
+        资源编号，格式为resType_resId。其中resType部分的枚举值为：host，application，instance， container，process，network，storage， volume。当URI参数中的type取值为“inventory”时，通过该参数查询关联的指标，不再使用metricItems数组中的信息。
 
         :param inventory_id: The inventory_id of this MetricAPIQueryItemParam.
         :type inventory_id: str

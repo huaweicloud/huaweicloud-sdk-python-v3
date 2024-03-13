@@ -17,8 +17,10 @@ class SourceKafkaMQParameters:
     sensitive_list = []
 
     openapi_types = {
+        'addr': 'str',
         'group': 'str',
         'instance_name': 'str',
+        'security_protocol': 'str',
         'instance_id': 'str',
         'topic': 'str',
         'seek_to': 'str',
@@ -31,8 +33,10 @@ class SourceKafkaMQParameters:
     }
 
     attribute_map = {
+        'addr': 'addr',
         'group': 'group',
         'instance_name': 'instance_name',
+        'security_protocol': 'security_protocol',
         'instance_id': 'instance_id',
         'topic': 'topic',
         'seek_to': 'seek_to',
@@ -44,15 +48,19 @@ class SourceKafkaMQParameters:
         'password': 'password'
     }
 
-    def __init__(self, group=None, instance_name=None, instance_id=None, topic=None, seek_to=None, enable_sasl_ssl=None, sasl_mechanism=None, ssl_certificate_url=None, ssl_certificate_pwd=None, user_name=None, password=None):
+    def __init__(self, addr=None, group=None, instance_name=None, security_protocol=None, instance_id=None, topic=None, seek_to=None, enable_sasl_ssl=None, sasl_mechanism=None, ssl_certificate_url=None, ssl_certificate_pwd=None, user_name=None, password=None):
         """SourceKafkaMQParameters
 
         The model defined in huaweicloud sdk
 
+        :param addr: kafka连接地址
+        :type addr: str
         :param group: kafka消费组
         :type group: str
         :param instance_name: kafka实例名称
         :type instance_name: str
+        :param security_protocol: 安全协议
+        :type security_protocol: str
         :param instance_id: kafka实例ID
         :type instance_id: str
         :param topic: kafka topic名称
@@ -75,8 +83,10 @@ class SourceKafkaMQParameters:
         
         
 
+        self._addr = None
         self._group = None
         self._instance_name = None
+        self._security_protocol = None
         self._instance_id = None
         self._topic = None
         self._seek_to = None
@@ -88,9 +98,13 @@ class SourceKafkaMQParameters:
         self._password = None
         self.discriminator = None
 
+        if addr is not None:
+            self.addr = addr
         self.group = group
         if instance_name is not None:
             self.instance_name = instance_name
+        if security_protocol is not None:
+            self.security_protocol = security_protocol
         if instance_id is not None:
             self.instance_id = instance_id
         self.topic = topic
@@ -108,6 +122,28 @@ class SourceKafkaMQParameters:
             self.user_name = user_name
         if password is not None:
             self.password = password
+
+    @property
+    def addr(self):
+        """Gets the addr of this SourceKafkaMQParameters.
+
+        kafka连接地址
+
+        :return: The addr of this SourceKafkaMQParameters.
+        :rtype: str
+        """
+        return self._addr
+
+    @addr.setter
+    def addr(self, addr):
+        """Sets the addr of this SourceKafkaMQParameters.
+
+        kafka连接地址
+
+        :param addr: The addr of this SourceKafkaMQParameters.
+        :type addr: str
+        """
+        self._addr = addr
 
     @property
     def group(self):
@@ -152,6 +188,28 @@ class SourceKafkaMQParameters:
         :type instance_name: str
         """
         self._instance_name = instance_name
+
+    @property
+    def security_protocol(self):
+        """Gets the security_protocol of this SourceKafkaMQParameters.
+
+        安全协议
+
+        :return: The security_protocol of this SourceKafkaMQParameters.
+        :rtype: str
+        """
+        return self._security_protocol
+
+    @security_protocol.setter
+    def security_protocol(self, security_protocol):
+        """Sets the security_protocol of this SourceKafkaMQParameters.
+
+        安全协议
+
+        :param security_protocol: The security_protocol of this SourceKafkaMQParameters.
+        :type security_protocol: str
+        """
+        self._security_protocol = security_protocol
 
     @property
     def instance_id(self):

@@ -33,9 +33,9 @@ class PolicyTemplate:
 
         The model defined in huaweicloud sdk
 
-        :param policy_group_name: 策略组名称，名称需要满足如下规则 1. 不能有空格和.开头，可以由中文、数字、英文大小写组成 2. 字符长度范围1-55
+        :param policy_group_name: 策略组名称，名称需要满足如下规则： 1. 不能有空格和.开头，可以由中文、数字、英文大小写组成。 2. 字符长度范围1-55。
         :type policy_group_name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         :param policies: 
         :type policies: :class:`huaweicloudsdkworkspaceapp.v1.Policies`
@@ -57,7 +57,7 @@ class PolicyTemplate:
     def policy_group_name(self):
         """Gets the policy_group_name of this PolicyTemplate.
 
-        策略组名称，名称需要满足如下规则 1. 不能有空格和.开头，可以由中文、数字、英文大小写组成 2. 字符长度范围1-55
+        策略组名称，名称需要满足如下规则： 1. 不能有空格和.开头，可以由中文、数字、英文大小写组成。 2. 字符长度范围1-55。
 
         :return: The policy_group_name of this PolicyTemplate.
         :rtype: str
@@ -68,7 +68,7 @@ class PolicyTemplate:
     def policy_group_name(self, policy_group_name):
         """Sets the policy_group_name of this PolicyTemplate.
 
-        策略组名称，名称需要满足如下规则 1. 不能有空格和.开头，可以由中文、数字、英文大小写组成 2. 字符长度范围1-55
+        策略组名称，名称需要满足如下规则： 1. 不能有空格和.开头，可以由中文、数字、英文大小写组成。 2. 字符长度范围1-55。
 
         :param policy_group_name: The policy_group_name of this PolicyTemplate.
         :type policy_group_name: str
@@ -79,7 +79,7 @@ class PolicyTemplate:
     def description(self):
         """Gets the description of this PolicyTemplate.
 
-        描述
+        描述。
 
         :return: The description of this PolicyTemplate.
         :rtype: str
@@ -90,7 +90,7 @@ class PolicyTemplate:
     def description(self, description):
         """Sets the description of this PolicyTemplate.
 
-        描述
+        描述。
 
         :param description: The description of this PolicyTemplate.
         :type description: str

@@ -33,7 +33,7 @@ class UpdateHpcShareRequestBody:
 
         :param action: 更新 HPC 型文件系统的操作类型。当前仅支持取值 config_gc_time
         :type action: str
-        :param gc_time: 文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。新建立的 OBS 绑定关系冷数据淘汰时间默认为 60 小时
+        :param gc_time: 文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。系统默认为 60 小时
         :type gc_time: int
         """
         
@@ -72,7 +72,7 @@ class UpdateHpcShareRequestBody:
     def gc_time(self):
         """Gets the gc_time of this UpdateHpcShareRequestBody.
 
-        文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。新建立的 OBS 绑定关系冷数据淘汰时间默认为 60 小时
+        文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。系统默认为 60 小时
 
         :return: The gc_time of this UpdateHpcShareRequestBody.
         :rtype: int
@@ -83,7 +83,7 @@ class UpdateHpcShareRequestBody:
     def gc_time(self, gc_time):
         """Sets the gc_time of this UpdateHpcShareRequestBody.
 
-        文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。新建立的 OBS 绑定关系冷数据淘汰时间默认为 60 小时
+        文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。系统默认为 60 小时
 
         :param gc_time: The gc_time of this UpdateHpcShareRequestBody.
         :type gc_time: int

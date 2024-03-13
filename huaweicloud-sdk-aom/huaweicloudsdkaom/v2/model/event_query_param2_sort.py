@@ -33,7 +33,7 @@ class EventQueryParam2Sort:
 
         :param order_by: 排序字段列表。会根据列表中定义顺序对返回列表最排序。
         :type order_by: list[str]
-        :param order: 排序方式枚举值。asc代表正序，desc代表倒叙。
+        :param order: 排序方式枚举值。asc代表正序，desc代表倒序。
         :type order: str
         """
         
@@ -74,7 +74,7 @@ class EventQueryParam2Sort:
     def order(self):
         """Gets the order of this EventQueryParam2Sort.
 
-        排序方式枚举值。asc代表正序，desc代表倒叙。
+        排序方式枚举值。asc代表正序，desc代表倒序。
 
         :return: The order of this EventQueryParam2Sort.
         :rtype: str
@@ -85,7 +85,7 @@ class EventQueryParam2Sort:
     def order(self, order):
         """Sets the order of this EventQueryParam2Sort.
 
-        排序方式枚举值。asc代表正序，desc代表倒叙。
+        排序方式枚举值。asc代表正序，desc代表倒序。
 
         :param order: The order of this EventQueryParam2Sort.
         :type order: str

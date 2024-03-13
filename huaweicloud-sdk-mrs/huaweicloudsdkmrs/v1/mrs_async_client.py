@@ -193,10 +193,12 @@ class MrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobResponse`
         """
+        warnings.warn("Method 'create_and_execute_job_async' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_and_execute_job_http_info(request)
         return self._call_api(**http_info)
 
     def create_and_execute_job_async_invoker(self, request):
+        warnings.warn("Method 'create_and_execute_job_async_invoker' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_and_execute_job_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -607,10 +609,12 @@ class MrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionResponse`
         """
+        warnings.warn("Method 'delete_job_execution_async' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_job_execution_http_info(request)
         return self._call_api(**http_info)
 
     def delete_job_execution_async_invoker(self, request):
+        warnings.warn("Method 'delete_job_execution_async_invoker' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_job_execution_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -943,10 +947,12 @@ class MrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ListExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListExecuteJobResponse`
         """
+        warnings.warn("Method 'list_execute_job_async' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_execute_job_http_info(request)
         return self._call_api(**http_info)
 
     def list_execute_job_async_invoker(self, request):
+        warnings.warn("Method 'list_execute_job_async_invoker' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_execute_job_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1153,10 +1159,12 @@ class MrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ShowJobExesRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ShowJobExesResponse`
         """
+        warnings.warn("Method 'show_job_exes_async' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_exes_http_info(request)
         return self._call_api(**http_info)
 
     def show_job_exes_async_invoker(self, request):
+        warnings.warn("Method 'show_job_exes_async_invoker' of MrsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_exes_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1314,6 +1322,73 @@ class MrsAsyncClient(Client):
         query_params = []
         if 'scope' in local_var_params:
             query_params.append(('scope', local_var_params['scope']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_mrs_version_metadata_async(self, request):
+        """查询对应版本元数据
+
+        查询对应版本元数据。如果参数里指定集群id，则可查询集群更新过补丁之后的最新元数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMrsVersionMetadata
+        :type request: :class:`huaweicloudsdkmrs.v1.ShowMrsVersionMetadataRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ShowMrsVersionMetadataResponse`
+        """
+        http_info = self._show_mrs_version_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_mrs_version_metadata_async_invoker(self, request):
+        http_info = self._show_mrs_version_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_mrs_version_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/metadata/versions/{version_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMrsVersionMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version_name' in local_var_params:
+            path_params['version_name'] = local_var_params['version_name']
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
 
         header_params = {}
 

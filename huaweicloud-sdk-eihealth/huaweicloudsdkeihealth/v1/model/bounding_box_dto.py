@@ -19,7 +19,7 @@ class BoundingBoxDto:
     openapi_types = {
         'center': 'list[float]',
         'size': 'list[float]',
-        'padding': 'int'
+        'padding': 'float'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class BoundingBoxDto:
         :param size: 口袋尺寸大小；  x, y, z轴的大小
         :type size: list[float]
         :param padding: 填充
-        :type padding: int
+        :type padding: float
         """
         
         
@@ -104,7 +104,7 @@ class BoundingBoxDto:
         填充
 
         :return: The padding of this BoundingBoxDto.
-        :rtype: int
+        :rtype: float
         """
         return self._padding
 
@@ -115,7 +115,7 @@ class BoundingBoxDto:
         填充
 
         :param padding: The padding of this BoundingBoxDto.
-        :type padding: int
+        :type padding: float
         """
         self._padding = padding
 

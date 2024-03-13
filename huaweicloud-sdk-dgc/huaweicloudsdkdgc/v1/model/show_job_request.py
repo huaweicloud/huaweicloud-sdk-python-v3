@@ -18,15 +18,17 @@ class ShowJobRequest:
 
     openapi_types = {
         'workspace': 'str',
-        'job_name': 'str'
+        'job_name': 'str',
+        'version': 'int'
     }
 
     attribute_map = {
         'workspace': 'workspace',
-        'job_name': 'job_name'
+        'job_name': 'job_name',
+        'version': 'version'
     }
 
-    def __init__(self, workspace=None, job_name=None):
+    def __init__(self, workspace=None, job_name=None, version=None):
         """ShowJobRequest
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class ShowJobRequest:
         :type workspace: str
         :param job_name: 作业名称.
         :type job_name: str
+        :param version: 作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
+        :type version: int
         """
         
         
 
         self._workspace = None
         self._job_name = None
+        self._version = None
         self.discriminator = None
 
         if workspace is not None:
             self.workspace = workspace
         self.job_name = job_name
+        if version is not None:
+            self.version = version
 
     @property
     def workspace(self):
@@ -90,6 +97,28 @@ class ShowJobRequest:
         :type job_name: str
         """
         self._job_name = job_name
+
+    @property
+    def version(self):
+        """Gets the version of this ShowJobRequest.
+
+        作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
+
+        :return: The version of this ShowJobRequest.
+        :rtype: int
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this ShowJobRequest.
+
+        作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
+
+        :param version: The version of this ShowJobRequest.
+        :type version: int
+        """
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

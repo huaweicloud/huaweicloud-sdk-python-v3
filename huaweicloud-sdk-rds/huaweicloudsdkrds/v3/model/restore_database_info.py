@@ -43,10 +43,8 @@ class RestoreDatabaseInfo:
         self._new_name = None
         self.discriminator = None
 
-        if old_name is not None:
-            self.old_name = old_name
-        if new_name is not None:
-            self.new_name = new_name
+        self.old_name = old_name
+        self.new_name = new_name
 
     @property
     def old_name(self):

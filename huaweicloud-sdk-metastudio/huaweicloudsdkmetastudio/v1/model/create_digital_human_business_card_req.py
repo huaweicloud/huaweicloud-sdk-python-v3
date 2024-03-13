@@ -21,10 +21,13 @@ class CreateDigitalHumanBusinessCardReq:
         'card_templet_asset_id': 'str',
         'card_text_config': 'BusinessCardTextConfig',
         'card_image_config': 'BusinessCardImageConfig',
+        'introduction_type': 'str',
         'introduction_text': 'str',
         'voice_asset_id': 'str',
+        'introduction_audio_asset_id': 'str',
         'video_asset_name': 'str',
-        'gender': 'str'
+        'gender': 'str',
+        'review_config': 'ReviewConfig'
     }
 
     attribute_map = {
@@ -32,13 +35,16 @@ class CreateDigitalHumanBusinessCardReq:
         'card_templet_asset_id': 'card_templet_asset_id',
         'card_text_config': 'card_text_config',
         'card_image_config': 'card_image_config',
+        'introduction_type': 'introduction_type',
         'introduction_text': 'introduction_text',
         'voice_asset_id': 'voice_asset_id',
+        'introduction_audio_asset_id': 'introduction_audio_asset_id',
         'video_asset_name': 'video_asset_name',
-        'gender': 'gender'
+        'gender': 'gender',
+        'review_config': 'review_config'
     }
 
-    def __init__(self, business_card_type=None, card_templet_asset_id=None, card_text_config=None, card_image_config=None, introduction_text=None, voice_asset_id=None, video_asset_name=None, gender=None):
+    def __init__(self, business_card_type=None, card_templet_asset_id=None, card_text_config=None, card_image_config=None, introduction_type=None, introduction_text=None, voice_asset_id=None, introduction_audio_asset_id=None, video_asset_name=None, gender=None, review_config=None):
         """CreateDigitalHumanBusinessCardReq
 
         The model defined in huaweicloud sdk
@@ -51,14 +57,20 @@ class CreateDigitalHumanBusinessCardReq:
         :type card_text_config: :class:`huaweicloudsdkmetastudio.v1.BusinessCardTextConfig`
         :param card_image_config: 
         :type card_image_config: :class:`huaweicloudsdkmetastudio.v1.BusinessCardImageConfig`
+        :param introduction_type: 自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音。文本驱动需要填写introduction_text和voice_asset_id参数。 * AUDIO: 语音驱动，需要在资产库中先上传语音资产。语音驱动需要填写introduction_audio_asset_id参数。
+        :type introduction_type: str
         :param introduction_text: 自我介绍文本，用于驱动数字人口型。
         :type introduction_text: str
         :param voice_asset_id: 音色资产ID。
         :type voice_asset_id: str
+        :param introduction_audio_asset_id: 自我介绍语音资产ID，用于驱动数字人口型。 &gt; * 介绍语音需要作为asset_type&#x3D;AUDIO资产先上传至资产库。
+        :type introduction_audio_asset_id: str
         :param video_asset_name: 输出名片视频资产名称。默认取card_name的值
         :type video_asset_name: str
         :param gender: 性别。 * MALE：男性 * FEMALE：女性
         :type gender: str
+        :param review_config: 
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         """
         
         
@@ -67,22 +79,33 @@ class CreateDigitalHumanBusinessCardReq:
         self._card_templet_asset_id = None
         self._card_text_config = None
         self._card_image_config = None
+        self._introduction_type = None
         self._introduction_text = None
         self._voice_asset_id = None
+        self._introduction_audio_asset_id = None
         self._video_asset_name = None
         self._gender = None
+        self._review_config = None
         self.discriminator = None
 
         self.business_card_type = business_card_type
         self.card_templet_asset_id = card_templet_asset_id
         self.card_text_config = card_text_config
         self.card_image_config = card_image_config
-        self.introduction_text = introduction_text
-        self.voice_asset_id = voice_asset_id
+        if introduction_type is not None:
+            self.introduction_type = introduction_type
+        if introduction_text is not None:
+            self.introduction_text = introduction_text
+        if voice_asset_id is not None:
+            self.voice_asset_id = voice_asset_id
+        if introduction_audio_asset_id is not None:
+            self.introduction_audio_asset_id = introduction_audio_asset_id
         if video_asset_name is not None:
             self.video_asset_name = video_asset_name
         if gender is not None:
             self.gender = gender
+        if review_config is not None:
+            self.review_config = review_config
 
     @property
     def business_card_type(self):
@@ -165,6 +188,28 @@ class CreateDigitalHumanBusinessCardReq:
         self._card_image_config = card_image_config
 
     @property
+    def introduction_type(self):
+        """Gets the introduction_type of this CreateDigitalHumanBusinessCardReq.
+
+        自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音。文本驱动需要填写introduction_text和voice_asset_id参数。 * AUDIO: 语音驱动，需要在资产库中先上传语音资产。语音驱动需要填写introduction_audio_asset_id参数。
+
+        :return: The introduction_type of this CreateDigitalHumanBusinessCardReq.
+        :rtype: str
+        """
+        return self._introduction_type
+
+    @introduction_type.setter
+    def introduction_type(self, introduction_type):
+        """Sets the introduction_type of this CreateDigitalHumanBusinessCardReq.
+
+        自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音。文本驱动需要填写introduction_text和voice_asset_id参数。 * AUDIO: 语音驱动，需要在资产库中先上传语音资产。语音驱动需要填写introduction_audio_asset_id参数。
+
+        :param introduction_type: The introduction_type of this CreateDigitalHumanBusinessCardReq.
+        :type introduction_type: str
+        """
+        self._introduction_type = introduction_type
+
+    @property
     def introduction_text(self):
         """Gets the introduction_text of this CreateDigitalHumanBusinessCardReq.
 
@@ -209,6 +254,28 @@ class CreateDigitalHumanBusinessCardReq:
         self._voice_asset_id = voice_asset_id
 
     @property
+    def introduction_audio_asset_id(self):
+        """Gets the introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
+
+        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。
+
+        :return: The introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
+        :rtype: str
+        """
+        return self._introduction_audio_asset_id
+
+    @introduction_audio_asset_id.setter
+    def introduction_audio_asset_id(self, introduction_audio_asset_id):
+        """Sets the introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
+
+        自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。
+
+        :param introduction_audio_asset_id: The introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
+        :type introduction_audio_asset_id: str
+        """
+        self._introduction_audio_asset_id = introduction_audio_asset_id
+
+    @property
     def video_asset_name(self):
         """Gets the video_asset_name of this CreateDigitalHumanBusinessCardReq.
 
@@ -251,6 +318,24 @@ class CreateDigitalHumanBusinessCardReq:
         :type gender: str
         """
         self._gender = gender
+
+    @property
+    def review_config(self):
+        """Gets the review_config of this CreateDigitalHumanBusinessCardReq.
+
+        :return: The review_config of this CreateDigitalHumanBusinessCardReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        return self._review_config
+
+    @review_config.setter
+    def review_config(self, review_config):
+        """Sets the review_config of this CreateDigitalHumanBusinessCardReq.
+
+        :param review_config: The review_config of this CreateDigitalHumanBusinessCardReq.
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        self._review_config = review_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

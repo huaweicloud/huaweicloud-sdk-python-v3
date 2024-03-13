@@ -21,7 +21,9 @@ class UpdatePoolReq:
         'name': 'str',
         'description': 'str',
         'admin_state_up': 'bool',
-        'session_persistence': 'SessionPersistence'
+        'session_persistence': 'SessionPersistence',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class UpdatePoolReq:
         'name': 'name',
         'description': 'description',
         'admin_state_up': 'admin_state_up',
-        'session_persistence': 'session_persistence'
+        'session_persistence': 'session_persistence',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, lb_algorithm=None, name=None, description=None, admin_state_up=None, session_persistence=None):
+    def __init__(self, lb_algorithm=None, name=None, description=None, admin_state_up=None, session_persistence=None, protection_status=None, protection_reason=None):
         """UpdatePoolReq
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class UpdatePoolReq:
         :type admin_state_up: bool
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -56,6 +64,8 @@ class UpdatePoolReq:
         self._description = None
         self._admin_state_up = None
         self._session_persistence = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         if lb_algorithm is not None:
@@ -68,6 +78,10 @@ class UpdatePoolReq:
             self.admin_state_up = admin_state_up
         if session_persistence is not None:
             self.session_persistence = session_persistence
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def lb_algorithm(self):
@@ -174,6 +188,50 @@ class UpdatePoolReq:
         :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
         self._session_persistence = session_persistence
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this UpdatePoolReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this UpdatePoolReq.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this UpdatePoolReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this UpdatePoolReq.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this UpdatePoolReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this UpdatePoolReq.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this UpdatePoolReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this UpdatePoolReq.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

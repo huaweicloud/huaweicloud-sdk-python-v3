@@ -21,7 +21,8 @@ class ListAimTemplateReportsRequestBody:
         'begin_time': 'str',
         'end_time': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'factory_type': 'list[str]'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListAimTemplateReportsRequestBody:
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'factory_type': 'factory_type'
     }
 
-    def __init__(self, tpl_ids=None, begin_time=None, end_time=None, offset=None, limit=None):
+    def __init__(self, tpl_ids=None, begin_time=None, end_time=None, offset=None, limit=None, factory_type=None):
         """ListAimTemplateReportsRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListAimTemplateReportsRequestBody:
         :type offset: int
         :param limit: 每页显示的条目数量。 
         :type limit: int
+        :param factory_type: 厂商类型。不填时默认全厂商。列举值：\&quot;huawei\&quot;, \&quot;vivo\&quot;, \&quot;oppo\&quot;, \&quot;xiaomi\&quot;, \&quot;meizu\&quot;, \&quot;samsung\&quot;。 
+        :type factory_type: list[str]
         """
         
         
@@ -56,6 +60,7 @@ class ListAimTemplateReportsRequestBody:
         self._end_time = None
         self._offset = None
         self._limit = None
+        self._factory_type = None
         self.discriminator = None
 
         self.tpl_ids = tpl_ids
@@ -65,6 +70,8 @@ class ListAimTemplateReportsRequestBody:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if factory_type is not None:
+            self.factory_type = factory_type
 
     @property
     def tpl_ids(self):
@@ -175,6 +182,28 @@ class ListAimTemplateReportsRequestBody:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def factory_type(self):
+        """Gets the factory_type of this ListAimTemplateReportsRequestBody.
+
+        厂商类型。不填时默认全厂商。列举值：\"huawei\", \"vivo\", \"oppo\", \"xiaomi\", \"meizu\", \"samsung\"。 
+
+        :return: The factory_type of this ListAimTemplateReportsRequestBody.
+        :rtype: list[str]
+        """
+        return self._factory_type
+
+    @factory_type.setter
+    def factory_type(self, factory_type):
+        """Sets the factory_type of this ListAimTemplateReportsRequestBody.
+
+        厂商类型。不填时默认全厂商。列举值：\"huawei\", \"vivo\", \"oppo\", \"xiaomi\", \"meizu\", \"samsung\"。 
+
+        :param factory_type: The factory_type of this ListAimTemplateReportsRequestBody.
+        :type factory_type: list[str]
+        """
+        self._factory_type = factory_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

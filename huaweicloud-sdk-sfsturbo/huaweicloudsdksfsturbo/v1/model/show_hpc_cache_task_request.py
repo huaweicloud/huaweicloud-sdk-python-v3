@@ -33,7 +33,7 @@ class ShowHpcCacheTaskRequest:
 
         :param share_id: 文件系统ID
         :type share_id: str
-        :param task_id: 任务id
+        :param task_id: 任务ID
         :type task_id: str
         """
         
@@ -72,7 +72,7 @@ class ShowHpcCacheTaskRequest:
     def task_id(self):
         """Gets the task_id of this ShowHpcCacheTaskRequest.
 
-        任务id
+        任务ID
 
         :return: The task_id of this ShowHpcCacheTaskRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowHpcCacheTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ShowHpcCacheTaskRequest.
 
-        任务id
+        任务ID
 
         :param task_id: The task_id of this ShowHpcCacheTaskRequest.
         :type task_id: str

@@ -31,7 +31,7 @@ class ScaleConfigurationDataTrigger:
 
         The model defined in huaweicloud sdk
 
-        :param type: 指标类型，支持cpu、memory、cron。
+        :param type: 指标类型。
         :type type: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcae.v1.ScalingTriggerMeta`
@@ -52,7 +52,7 @@ class ScaleConfigurationDataTrigger:
     def type(self):
         """Gets the type of this ScaleConfigurationDataTrigger.
 
-        指标类型，支持cpu、memory、cron。
+        指标类型。
 
         :return: The type of this ScaleConfigurationDataTrigger.
         :rtype: str
@@ -63,7 +63,7 @@ class ScaleConfigurationDataTrigger:
     def type(self, type):
         """Sets the type of this ScaleConfigurationDataTrigger.
 
-        指标类型，支持cpu、memory、cron。
+        指标类型。
 
         :param type: The type of this ScaleConfigurationDataTrigger.
         :type type: str

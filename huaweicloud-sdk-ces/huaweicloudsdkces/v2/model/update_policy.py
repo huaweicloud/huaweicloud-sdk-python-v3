@@ -61,7 +61,7 @@ class UpdatePolicy:
         :type unit: str
         :param type: 告警策略类型，默认为空
         :type type: str
-        :param count: 次数
+        :param count: 告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
         :type count: int
         :param suppress_duration: 告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
         :type suppress_duration: int
@@ -256,7 +256,7 @@ class UpdatePolicy:
     def count(self):
         """Gets the count of this UpdatePolicy.
 
-        次数
+        告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
 
         :return: The count of this UpdatePolicy.
         :rtype: int
@@ -267,7 +267,7 @@ class UpdatePolicy:
     def count(self, count):
         """Sets the count of this UpdatePolicy.
 
-        次数
+        告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
 
         :param count: The count of this UpdatePolicy.
         :type count: int

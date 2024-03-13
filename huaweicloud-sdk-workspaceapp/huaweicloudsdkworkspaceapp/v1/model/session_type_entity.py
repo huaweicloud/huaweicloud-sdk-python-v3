@@ -35,13 +35,13 @@ class SessionTypeEntity:
 
         The model defined in huaweicloud sdk
 
-        :param resource_spec_code: 资源规格编码
+        :param resource_spec_code: 资源规格编码。
         :type resource_spec_code: str
-        :param session_type: 会话类型
+        :param session_type: 会话类型。
         :type session_type: str
-        :param resource_type: 资源类型字段
+        :param resource_type: 资源类型字段。
         :type resource_type: str
-        :param cloud_service_type: 资源所属云服务类型编码
+        :param cloud_service_type: 资源所属云服务类型编码。
         :type cloud_service_type: str
         """
         
@@ -66,7 +66,7 @@ class SessionTypeEntity:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this SessionTypeEntity.
 
-        资源规格编码
+        资源规格编码。
 
         :return: The resource_spec_code of this SessionTypeEntity.
         :rtype: str
@@ -77,7 +77,7 @@ class SessionTypeEntity:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this SessionTypeEntity.
 
-        资源规格编码
+        资源规格编码。
 
         :param resource_spec_code: The resource_spec_code of this SessionTypeEntity.
         :type resource_spec_code: str
@@ -88,7 +88,7 @@ class SessionTypeEntity:
     def session_type(self):
         """Gets the session_type of this SessionTypeEntity.
 
-        会话类型
+        会话类型。
 
         :return: The session_type of this SessionTypeEntity.
         :rtype: str
@@ -99,7 +99,7 @@ class SessionTypeEntity:
     def session_type(self, session_type):
         """Sets the session_type of this SessionTypeEntity.
 
-        会话类型
+        会话类型。
 
         :param session_type: The session_type of this SessionTypeEntity.
         :type session_type: str
@@ -110,7 +110,7 @@ class SessionTypeEntity:
     def resource_type(self):
         """Gets the resource_type of this SessionTypeEntity.
 
-        资源类型字段
+        资源类型字段。
 
         :return: The resource_type of this SessionTypeEntity.
         :rtype: str
@@ -121,7 +121,7 @@ class SessionTypeEntity:
     def resource_type(self, resource_type):
         """Sets the resource_type of this SessionTypeEntity.
 
-        资源类型字段
+        资源类型字段。
 
         :param resource_type: The resource_type of this SessionTypeEntity.
         :type resource_type: str
@@ -132,7 +132,7 @@ class SessionTypeEntity:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this SessionTypeEntity.
 
-        资源所属云服务类型编码
+        资源所属云服务类型编码。
 
         :return: The cloud_service_type of this SessionTypeEntity.
         :rtype: str
@@ -143,7 +143,7 @@ class SessionTypeEntity:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this SessionTypeEntity.
 
-        资源所属云服务类型编码
+        资源所属云服务类型编码。
 
         :param cloud_service_type: The cloud_service_type of this SessionTypeEntity.
         :type cloud_service_type: str

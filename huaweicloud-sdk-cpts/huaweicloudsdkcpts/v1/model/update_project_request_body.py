@@ -39,17 +39,17 @@ class UpdateProjectRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 工程id
         :type id: int
-        :param name: name
+        :param name: 工程名称
         :type name: str
-        :param description: description
+        :param description: 工程描述
         :type description: str
-        :param variables_no_file: variables_no_file
+        :param variables_no_file: 导入工程时，缺失的存在于变量文件中的变量
         :type variables_no_file: list[str]
-        :param source: source
+        :param source: 来源（0-PerfTest；2-CloudTest）
         :type source: int
-        :param external_params: external_params
+        :param external_params: 扩展参数
         :type external_params: object
         """
         
@@ -78,7 +78,7 @@ class UpdateProjectRequestBody:
     def id(self):
         """Gets the id of this UpdateProjectRequestBody.
 
-        id
+        工程id
 
         :return: The id of this UpdateProjectRequestBody.
         :rtype: int
@@ -89,7 +89,7 @@ class UpdateProjectRequestBody:
     def id(self, id):
         """Sets the id of this UpdateProjectRequestBody.
 
-        id
+        工程id
 
         :param id: The id of this UpdateProjectRequestBody.
         :type id: int
@@ -100,7 +100,7 @@ class UpdateProjectRequestBody:
     def name(self):
         """Gets the name of this UpdateProjectRequestBody.
 
-        name
+        工程名称
 
         :return: The name of this UpdateProjectRequestBody.
         :rtype: str
@@ -111,7 +111,7 @@ class UpdateProjectRequestBody:
     def name(self, name):
         """Sets the name of this UpdateProjectRequestBody.
 
-        name
+        工程名称
 
         :param name: The name of this UpdateProjectRequestBody.
         :type name: str
@@ -122,7 +122,7 @@ class UpdateProjectRequestBody:
     def description(self):
         """Gets the description of this UpdateProjectRequestBody.
 
-        description
+        工程描述
 
         :return: The description of this UpdateProjectRequestBody.
         :rtype: str
@@ -133,7 +133,7 @@ class UpdateProjectRequestBody:
     def description(self, description):
         """Sets the description of this UpdateProjectRequestBody.
 
-        description
+        工程描述
 
         :param description: The description of this UpdateProjectRequestBody.
         :type description: str
@@ -144,7 +144,7 @@ class UpdateProjectRequestBody:
     def variables_no_file(self):
         """Gets the variables_no_file of this UpdateProjectRequestBody.
 
-        variables_no_file
+        导入工程时，缺失的存在于变量文件中的变量
 
         :return: The variables_no_file of this UpdateProjectRequestBody.
         :rtype: list[str]
@@ -155,7 +155,7 @@ class UpdateProjectRequestBody:
     def variables_no_file(self, variables_no_file):
         """Sets the variables_no_file of this UpdateProjectRequestBody.
 
-        variables_no_file
+        导入工程时，缺失的存在于变量文件中的变量
 
         :param variables_no_file: The variables_no_file of this UpdateProjectRequestBody.
         :type variables_no_file: list[str]
@@ -166,7 +166,7 @@ class UpdateProjectRequestBody:
     def source(self):
         """Gets the source of this UpdateProjectRequestBody.
 
-        source
+        来源（0-PerfTest；2-CloudTest）
 
         :return: The source of this UpdateProjectRequestBody.
         :rtype: int
@@ -177,7 +177,7 @@ class UpdateProjectRequestBody:
     def source(self, source):
         """Sets the source of this UpdateProjectRequestBody.
 
-        source
+        来源（0-PerfTest；2-CloudTest）
 
         :param source: The source of this UpdateProjectRequestBody.
         :type source: int
@@ -188,7 +188,7 @@ class UpdateProjectRequestBody:
     def external_params(self):
         """Gets the external_params of this UpdateProjectRequestBody.
 
-        external_params
+        扩展参数
 
         :return: The external_params of this UpdateProjectRequestBody.
         :rtype: object
@@ -199,7 +199,7 @@ class UpdateProjectRequestBody:
     def external_params(self, external_params):
         """Sets the external_params of this UpdateProjectRequestBody.
 
-        external_params
+        扩展参数
 
         :param external_params: The external_params of this UpdateProjectRequestBody.
         :type external_params: object

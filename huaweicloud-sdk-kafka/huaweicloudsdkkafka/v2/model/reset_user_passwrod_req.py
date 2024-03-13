@@ -29,7 +29,7 @@ class ResetUserPasswrodReq:
 
         The model defined in huaweicloud sdk
 
-        :param new_password: 用户新密码。
+        :param new_password: 用户新密码。  重置用户密码时，为必选参数；  不能与名称或倒序的名称相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
         :type new_password: str
         """
         
@@ -45,7 +45,7 @@ class ResetUserPasswrodReq:
     def new_password(self):
         """Gets the new_password of this ResetUserPasswrodReq.
 
-        用户新密码。
+        用户新密码。  重置用户密码时，为必选参数；  不能与名称或倒序的名称相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :return: The new_password of this ResetUserPasswrodReq.
         :rtype: str
@@ -56,7 +56,7 @@ class ResetUserPasswrodReq:
     def new_password(self, new_password):
         """Sets the new_password of this ResetUserPasswrodReq.
 
-        用户新密码。
+        用户新密码。  重置用户密码时，为必选参数；  不能与名称或倒序的名称相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
         :param new_password: The new_password of this ResetUserPasswrodReq.
         :type new_password: str

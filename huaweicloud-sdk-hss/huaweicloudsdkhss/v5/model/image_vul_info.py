@@ -22,6 +22,7 @@ class ImageVulInfo:
         'description': 'str',
         'position': 'str',
         'app_name': 'str',
+        'app_path': 'str',
         'version': 'str',
         'solution': 'str',
         'url': 'str'
@@ -33,12 +34,13 @@ class ImageVulInfo:
         'description': 'description',
         'position': 'position',
         'app_name': 'app_name',
+        'app_path': 'app_path',
         'version': 'version',
         'solution': 'solution',
         'url': 'url'
     }
 
-    def __init__(self, vul_id=None, repair_necessity=None, description=None, position=None, app_name=None, version=None, solution=None, url=None):
+    def __init__(self, vul_id=None, repair_necessity=None, description=None, position=None, app_name=None, app_path=None, version=None, solution=None, url=None):
         """ImageVulInfo
 
         The model defined in huaweicloud sdk
@@ -53,7 +55,9 @@ class ImageVulInfo:
         :type position: str
         :param app_name: 漏洞的软件名称
         :type app_name: str
-        :param version: 漏洞版本
+        :param app_path: 应用软件的路径（只有应用漏洞有该字段）
+        :type app_path: str
+        :param version: 软件版本
         :type version: str
         :param solution: 解决方案
         :type solution: str
@@ -68,6 +72,7 @@ class ImageVulInfo:
         self._description = None
         self._position = None
         self._app_name = None
+        self._app_path = None
         self._version = None
         self._solution = None
         self._url = None
@@ -83,6 +88,8 @@ class ImageVulInfo:
             self.position = position
         if app_name is not None:
             self.app_name = app_name
+        if app_path is not None:
+            self.app_path = app_path
         if version is not None:
             self.version = version
         if solution is not None:
@@ -201,10 +208,32 @@ class ImageVulInfo:
         self._app_name = app_name
 
     @property
+    def app_path(self):
+        """Gets the app_path of this ImageVulInfo.
+
+        应用软件的路径（只有应用漏洞有该字段）
+
+        :return: The app_path of this ImageVulInfo.
+        :rtype: str
+        """
+        return self._app_path
+
+    @app_path.setter
+    def app_path(self, app_path):
+        """Sets the app_path of this ImageVulInfo.
+
+        应用软件的路径（只有应用漏洞有该字段）
+
+        :param app_path: The app_path of this ImageVulInfo.
+        :type app_path: str
+        """
+        self._app_path = app_path
+
+    @property
     def version(self):
         """Gets the version of this ImageVulInfo.
 
-        漏洞版本
+        软件版本
 
         :return: The version of this ImageVulInfo.
         :rtype: str
@@ -215,7 +244,7 @@ class ImageVulInfo:
     def version(self, version):
         """Sets the version of this ImageVulInfo.
 
-        漏洞版本
+        软件版本
 
         :param version: The version of this ImageVulInfo.
         :type version: str

@@ -25,7 +25,9 @@ class Create2DDigitalHumanVideoReq:
         'video_config': 'VideoConfig',
         'shoot_scripts': 'list[ShootScriptItem]',
         'output_asset_config': 'OutputAssetConfig',
-        'background_music_config': 'BackgroundMusicConfig'
+        'background_music_config': 'BackgroundMusicConfig',
+        'review_config': 'ReviewConfig',
+        'callback_config': 'CallBackConfig'
     }
 
     attribute_map = {
@@ -37,21 +39,23 @@ class Create2DDigitalHumanVideoReq:
         'video_config': 'video_config',
         'shoot_scripts': 'shoot_scripts',
         'output_asset_config': 'output_asset_config',
-        'background_music_config': 'background_music_config'
+        'background_music_config': 'background_music_config',
+        'review_config': 'review_config',
+        'callback_config': 'callback_config'
     }
 
-    def __init__(self, script_id=None, video_making_type=None, model_asset_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None):
+    def __init__(self, script_id=None, video_making_type=None, model_asset_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None):
         """Create2DDigitalHumanVideoReq
 
         The model defined in huaweicloud sdk
 
         :param script_id: 剧本ID。 &gt; * 如果填写了script_id，model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts可以不填，以脚本中的配置为准。 &gt; * 如果填写了script_id，并且同时也填写了model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts则以本接口中的配置为准。
         :type script_id: str
-        :param video_making_type: 视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
+        :param video_making_type: 视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
         :type video_making_type: str
         :param model_asset_id: 分身数字人模型资产ID。
         :type model_asset_id: str
-        :param human_image: 人物照片，需要Base64编码。照片分辨率不超过1080P。
+        :param human_image: 人物照片，需要Base64编码。照片分辨率不超过1080P。 &gt; * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
         :type human_image: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -63,6 +67,10 @@ class Create2DDigitalHumanVideoReq:
         :type output_asset_config: :class:`huaweicloudsdkmetastudio.v1.OutputAssetConfig`
         :param background_music_config: 
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
+        :param review_config: 
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        :param callback_config: 
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
         """
         
         
@@ -76,6 +84,8 @@ class Create2DDigitalHumanVideoReq:
         self._shoot_scripts = None
         self._output_asset_config = None
         self._background_music_config = None
+        self._review_config = None
+        self._callback_config = None
         self.discriminator = None
 
         if script_id is not None:
@@ -96,6 +106,10 @@ class Create2DDigitalHumanVideoReq:
             self.output_asset_config = output_asset_config
         if background_music_config is not None:
             self.background_music_config = background_music_config
+        if review_config is not None:
+            self.review_config = review_config
+        if callback_config is not None:
+            self.callback_config = callback_config
 
     @property
     def script_id(self):
@@ -123,7 +137,7 @@ class Create2DDigitalHumanVideoReq:
     def video_making_type(self):
         """Gets the video_making_type of this Create2DDigitalHumanVideoReq.
 
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
+        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :return: The video_making_type of this Create2DDigitalHumanVideoReq.
         :rtype: str
@@ -134,7 +148,7 @@ class Create2DDigitalHumanVideoReq:
     def video_making_type(self, video_making_type):
         """Sets the video_making_type of this Create2DDigitalHumanVideoReq.
 
-        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分数数字人模型生成视频 * PICTURE： 通过单张照片生成视频
+        视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :param video_making_type: The video_making_type of this Create2DDigitalHumanVideoReq.
         :type video_making_type: str
@@ -167,7 +181,7 @@ class Create2DDigitalHumanVideoReq:
     def human_image(self):
         """Gets the human_image of this Create2DDigitalHumanVideoReq.
 
-        人物照片，需要Base64编码。照片分辨率不超过1080P。
+        人物照片，需要Base64编码。照片分辨率不超过1080P。 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :return: The human_image of this Create2DDigitalHumanVideoReq.
         :rtype: str
@@ -178,7 +192,7 @@ class Create2DDigitalHumanVideoReq:
     def human_image(self, human_image):
         """Sets the human_image of this Create2DDigitalHumanVideoReq.
 
-        人物照片，需要Base64编码。照片分辨率不超过1080P。
+        人物照片，需要Base64编码。照片分辨率不超过1080P。 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
         :param human_image: The human_image of this Create2DDigitalHumanVideoReq.
         :type human_image: str
@@ -278,6 +292,42 @@ class Create2DDigitalHumanVideoReq:
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
         """
         self._background_music_config = background_music_config
+
+    @property
+    def review_config(self):
+        """Gets the review_config of this Create2DDigitalHumanVideoReq.
+
+        :return: The review_config of this Create2DDigitalHumanVideoReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        return self._review_config
+
+    @review_config.setter
+    def review_config(self, review_config):
+        """Sets the review_config of this Create2DDigitalHumanVideoReq.
+
+        :param review_config: The review_config of this Create2DDigitalHumanVideoReq.
+        :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
+        """
+        self._review_config = review_config
+
+    @property
+    def callback_config(self):
+        """Gets the callback_config of this Create2DDigitalHumanVideoReq.
+
+        :return: The callback_config of this Create2DDigitalHumanVideoReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        """
+        return self._callback_config
+
+    @callback_config.setter
+    def callback_config(self, callback_config):
+        """Sets the callback_config of this Create2DDigitalHumanVideoReq.
+
+        :param callback_config: The callback_config of this Create2DDigitalHumanVideoReq.
+        :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        """
+        self._callback_config = callback_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

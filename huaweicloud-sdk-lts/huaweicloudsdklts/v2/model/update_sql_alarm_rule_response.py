@@ -18,30 +18,34 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'index_id': 'str',
-        'language': 'str',
-        'project_id': 'str',
         'sql_alarm_rule_name': 'str',
+        'alarm_rule_alias': 'str',
+        'is_css_sql': 'bool',
+        'index_id': 'str',
+        'project_id': 'str',
         'sql_alarm_rule_id': 'str',
         'sql_alarm_rule_description': 'str',
         'sql_requests': 'list[SqlRequest]',
-        'frequency': 'Frequency',
+        'frequency': 'FrequencyRespBody',
         'condition_expression': 'str',
         'sql_alarm_level': 'str',
         'sql_alarm_send': 'bool',
         'domain_id': 'str',
         'create_time': 'int',
         'update_time': 'int',
-        'topics': 'list[Topics]'
+        'topics': 'list[Topics]',
+        'language': 'str',
+        'id': 'str',
+        'notification_frequency': 'int',
+        'alarm_action_rule_name': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'index_id': 'indexId',
-        'language': 'language',
-        'project_id': 'projectId',
         'sql_alarm_rule_name': 'sql_alarm_rule_name',
+        'alarm_rule_alias': 'alarm_rule_alias',
+        'is_css_sql': 'is_css_sql',
+        'index_id': 'indexId',
+        'project_id': 'projectId',
         'sql_alarm_rule_id': 'sql_alarm_rule_id',
         'sql_alarm_rule_description': 'sql_alarm_rule_description',
         'sql_requests': 'sql_requests',
@@ -52,24 +56,28 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'domain_id': 'domain_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'topics': 'topics'
+        'topics': 'topics',
+        'language': 'language',
+        'id': 'id',
+        'notification_frequency': 'notification_frequency',
+        'alarm_action_rule_name': 'alarm_action_rule_name'
     }
 
-    def __init__(self, id=None, index_id=None, language=None, project_id=None, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None):
+    def __init__(self, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, index_id=None, project_id=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, language=None, id=None, notification_frequency=None, alarm_action_rule_name=None):
         """UpdateSqlAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 测试
-        :type id: str
-        :param index_id: 测试
-        :type index_id: str
-        :param language: 测试
-        :type language: str
-        :param project_id: 测试
-        :type project_id: str
         :param sql_alarm_rule_name: SQL告警名称
         :type sql_alarm_rule_name: str
+        :param alarm_rule_alias: 规则名称
+        :type alarm_rule_alias: str
+        :param is_css_sql: 是否管道符sql查询
+        :type is_css_sql: bool
+        :param index_id: 索引id
+        :type index_id: str
+        :param project_id: 项目id
+        :type project_id: str
         :param sql_alarm_rule_id: SQL告警规则id
         :type sql_alarm_rule_id: str
         :param sql_alarm_rule_description: SQL告警信息描述
@@ -77,7 +85,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :param sql_requests: SQL详细信息
         :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
         :param frequency: 
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         :param condition_expression: 条件表达式
         :type condition_expression: str
         :param sql_alarm_level: 告警级别
@@ -86,21 +94,29 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type sql_alarm_send: bool
         :param domain_id: domainId
         :type domain_id: str
-        :param create_time: 创建时间(毫秒时间戳)
+        :param create_time: 创建时间（毫秒时间戳）
         :type create_time: int
-        :param update_time: 更新时间(毫秒时间戳)
+        :param update_time: 更新时间（毫秒时间戳）
         :type update_time: int
         :param topics: 主题
         :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
+        :param language: 邮件附加信息语言
+        :type language: str
+        :param id: 规则ID。
+        :type id: str
+        :param notification_frequency: 通知频率,单位(分钟)
+        :type notification_frequency: int
+        :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+        :type alarm_action_rule_name: str
         """
         
         super(UpdateSqlAlarmRuleResponse, self).__init__()
 
-        self._id = None
-        self._index_id = None
-        self._language = None
-        self._project_id = None
         self._sql_alarm_rule_name = None
+        self._alarm_rule_alias = None
+        self._is_css_sql = None
+        self._index_id = None
+        self._project_id = None
         self._sql_alarm_rule_id = None
         self._sql_alarm_rule_description = None
         self._sql_requests = None
@@ -112,18 +128,22 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         self._create_time = None
         self._update_time = None
         self._topics = None
+        self._language = None
+        self._id = None
+        self._notification_frequency = None
+        self._alarm_action_rule_name = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if index_id is not None:
-            self.index_id = index_id
-        if language is not None:
-            self.language = language
-        if project_id is not None:
-            self.project_id = project_id
         if sql_alarm_rule_name is not None:
             self.sql_alarm_rule_name = sql_alarm_rule_name
+        if alarm_rule_alias is not None:
+            self.alarm_rule_alias = alarm_rule_alias
+        if is_css_sql is not None:
+            self.is_css_sql = is_css_sql
+        if index_id is not None:
+            self.index_id = index_id
+        if project_id is not None:
+            self.project_id = project_id
         if sql_alarm_rule_id is not None:
             self.sql_alarm_rule_id = sql_alarm_rule_id
         if sql_alarm_rule_description is not None:
@@ -146,94 +166,14 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
             self.update_time = update_time
         if topics is not None:
             self.topics = topics
-
-    @property
-    def id(self):
-        """Gets the id of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :return: The id of this UpdateSqlAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :param id: The id of this UpdateSqlAlarmRuleResponse.
-        :type id: str
-        """
-        self._id = id
-
-    @property
-    def index_id(self):
-        """Gets the index_id of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :return: The index_id of this UpdateSqlAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._index_id
-
-    @index_id.setter
-    def index_id(self, index_id):
-        """Sets the index_id of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :param index_id: The index_id of this UpdateSqlAlarmRuleResponse.
-        :type index_id: str
-        """
-        self._index_id = index_id
-
-    @property
-    def language(self):
-        """Gets the language of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :return: The language of this UpdateSqlAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._language
-
-    @language.setter
-    def language(self, language):
-        """Sets the language of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :param language: The language of this UpdateSqlAlarmRuleResponse.
-        :type language: str
-        """
-        self._language = language
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :return: The project_id of this UpdateSqlAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :param project_id: The project_id of this UpdateSqlAlarmRuleResponse.
-        :type project_id: str
-        """
-        self._project_id = project_id
+        if language is not None:
+            self.language = language
+        if id is not None:
+            self.id = id
+        if notification_frequency is not None:
+            self.notification_frequency = notification_frequency
+        if alarm_action_rule_name is not None:
+            self.alarm_action_rule_name = alarm_action_rule_name
 
     @property
     def sql_alarm_rule_name(self):
@@ -256,6 +196,94 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type sql_alarm_rule_name: str
         """
         self._sql_alarm_rule_name = sql_alarm_rule_name
+
+    @property
+    def alarm_rule_alias(self):
+        """Gets the alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+
+        规则名称
+
+        :return: The alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._alarm_rule_alias
+
+    @alarm_rule_alias.setter
+    def alarm_rule_alias(self, alarm_rule_alias):
+        """Sets the alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+
+        规则名称
+
+        :param alarm_rule_alias: The alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+        :type alarm_rule_alias: str
+        """
+        self._alarm_rule_alias = alarm_rule_alias
+
+    @property
+    def is_css_sql(self):
+        """Gets the is_css_sql of this UpdateSqlAlarmRuleResponse.
+
+        是否管道符sql查询
+
+        :return: The is_css_sql of this UpdateSqlAlarmRuleResponse.
+        :rtype: bool
+        """
+        return self._is_css_sql
+
+    @is_css_sql.setter
+    def is_css_sql(self, is_css_sql):
+        """Sets the is_css_sql of this UpdateSqlAlarmRuleResponse.
+
+        是否管道符sql查询
+
+        :param is_css_sql: The is_css_sql of this UpdateSqlAlarmRuleResponse.
+        :type is_css_sql: bool
+        """
+        self._is_css_sql = is_css_sql
+
+    @property
+    def index_id(self):
+        """Gets the index_id of this UpdateSqlAlarmRuleResponse.
+
+        索引id
+
+        :return: The index_id of this UpdateSqlAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._index_id
+
+    @index_id.setter
+    def index_id(self, index_id):
+        """Sets the index_id of this UpdateSqlAlarmRuleResponse.
+
+        索引id
+
+        :param index_id: The index_id of this UpdateSqlAlarmRuleResponse.
+        :type index_id: str
+        """
+        self._index_id = index_id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this UpdateSqlAlarmRuleResponse.
+
+        项目id
+
+        :return: The project_id of this UpdateSqlAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this UpdateSqlAlarmRuleResponse.
+
+        项目id
+
+        :param project_id: The project_id of this UpdateSqlAlarmRuleResponse.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def sql_alarm_rule_id(self):
@@ -328,7 +356,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         """Gets the frequency of this UpdateSqlAlarmRuleResponse.
 
         :return: The frequency of this UpdateSqlAlarmRuleResponse.
-        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
+        :rtype: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         """
         return self._frequency
 
@@ -337,7 +365,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         """Sets the frequency of this UpdateSqlAlarmRuleResponse.
 
         :param frequency: The frequency of this UpdateSqlAlarmRuleResponse.
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         """
         self._frequency = frequency
 
@@ -433,7 +461,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this UpdateSqlAlarmRuleResponse.
 
-        创建时间(毫秒时间戳)
+        创建时间（毫秒时间戳）
 
         :return: The create_time of this UpdateSqlAlarmRuleResponse.
         :rtype: int
@@ -444,7 +472,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this UpdateSqlAlarmRuleResponse.
 
-        创建时间(毫秒时间戳)
+        创建时间（毫秒时间戳）
 
         :param create_time: The create_time of this UpdateSqlAlarmRuleResponse.
         :type create_time: int
@@ -455,7 +483,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this UpdateSqlAlarmRuleResponse.
 
-        更新时间(毫秒时间戳)
+        更新时间（毫秒时间戳）
 
         :return: The update_time of this UpdateSqlAlarmRuleResponse.
         :rtype: int
@@ -466,7 +494,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this UpdateSqlAlarmRuleResponse.
 
-        更新时间(毫秒时间戳)
+        更新时间（毫秒时间戳）
 
         :param update_time: The update_time of this UpdateSqlAlarmRuleResponse.
         :type update_time: int
@@ -494,6 +522,94 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         self._topics = topics
+
+    @property
+    def language(self):
+        """Gets the language of this UpdateSqlAlarmRuleResponse.
+
+        邮件附加信息语言
+
+        :return: The language of this UpdateSqlAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this UpdateSqlAlarmRuleResponse.
+
+        邮件附加信息语言
+
+        :param language: The language of this UpdateSqlAlarmRuleResponse.
+        :type language: str
+        """
+        self._language = language
+
+    @property
+    def id(self):
+        """Gets the id of this UpdateSqlAlarmRuleResponse.
+
+        规则ID。
+
+        :return: The id of this UpdateSqlAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this UpdateSqlAlarmRuleResponse.
+
+        规则ID。
+
+        :param id: The id of this UpdateSqlAlarmRuleResponse.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def notification_frequency(self):
+        """Gets the notification_frequency of this UpdateSqlAlarmRuleResponse.
+
+        通知频率,单位(分钟)
+
+        :return: The notification_frequency of this UpdateSqlAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._notification_frequency
+
+    @notification_frequency.setter
+    def notification_frequency(self, notification_frequency):
+        """Sets the notification_frequency of this UpdateSqlAlarmRuleResponse.
+
+        通知频率,单位(分钟)
+
+        :param notification_frequency: The notification_frequency of this UpdateSqlAlarmRuleResponse.
+        :type notification_frequency: int
+        """
+        self._notification_frequency = notification_frequency
+
+    @property
+    def alarm_action_rule_name(self):
+        """Gets the alarm_action_rule_name of this UpdateSqlAlarmRuleResponse.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :return: The alarm_action_rule_name of this UpdateSqlAlarmRuleResponse.
+        :rtype: str
+        """
+        return self._alarm_action_rule_name
+
+    @alarm_action_rule_name.setter
+    def alarm_action_rule_name(self, alarm_action_rule_name):
+        """Sets the alarm_action_rule_name of this UpdateSqlAlarmRuleResponse.
+
+        告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
+
+        :param alarm_action_rule_name: The alarm_action_rule_name of this UpdateSqlAlarmRuleResponse.
+        :type alarm_action_rule_name: str
+        """
+        self._alarm_action_rule_name = alarm_action_rule_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

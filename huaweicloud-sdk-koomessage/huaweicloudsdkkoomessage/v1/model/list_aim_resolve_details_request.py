@@ -67,7 +67,7 @@ class ListAimResolveDetailsRequest:
         :type aim_url: str
         :param resolved_status: 解析状态。 - success：解析成功  - fail：解析失败  - unresolved：未解析
         :type resolved_status: str
-        :param begin_time: 短链创建开始时间。格式为：2019-10-12T07:20:50Z。  &gt; 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近二十四小时数据。 
+        :param begin_time: 短链创建开始时间。格式为：2019-10-12T07:20:50Z。  &gt; 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近二十四小时数据。 &gt; &gt; 仅支持查询最近1年内创建的短链。 
         :type begin_time: str
         :param end_time: 短链创建结束时间。格式为：2019-10-12T07:20:50Z。  &gt; 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。缺省：查询最近二十四小时数据。 
         :type end_time: str
@@ -296,7 +296,7 @@ class ListAimResolveDetailsRequest:
     def begin_time(self):
         """Gets the begin_time of this ListAimResolveDetailsRequest.
 
-        短链创建开始时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近二十四小时数据。 
+        短链创建开始时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近二十四小时数据。 > > 仅支持查询最近1年内创建的短链。 
 
         :return: The begin_time of this ListAimResolveDetailsRequest.
         :rtype: str
@@ -307,7 +307,7 @@ class ListAimResolveDetailsRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListAimResolveDetailsRequest.
 
-        短链创建开始时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近二十四小时数据。 
+        短链创建开始时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近二十四小时数据。 > > 仅支持查询最近1年内创建的短链。 
 
         :param begin_time: The begin_time of this ListAimResolveDetailsRequest.
         :type begin_time: str

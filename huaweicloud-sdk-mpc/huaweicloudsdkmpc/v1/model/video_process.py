@@ -19,6 +19,7 @@ class VideoProcess:
     openapi_types = {
         'hls_init_count': 'int',
         'hls_init_interval': 'int',
+        'hls_storage_type': 'str',
         'rotate': 'int',
         'adaptation': 'str',
         'upsample': 'int'
@@ -27,12 +28,13 @@ class VideoProcess:
     attribute_map = {
         'hls_init_count': 'hls_init_count',
         'hls_init_interval': 'hls_init_interval',
+        'hls_storage_type': 'hls_storage_type',
         'rotate': 'rotate',
         'adaptation': 'adaptation',
         'upsample': 'upsample'
     }
 
-    def __init__(self, hls_init_count=None, hls_init_interval=None, rotate=None, adaptation=None, upsample=None):
+    def __init__(self, hls_init_count=None, hls_init_interval=None, hls_storage_type=None, rotate=None, adaptation=None, upsample=None):
         """VideoProcess
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class VideoProcess:
         :type hls_init_count: int
         :param hls_init_interval: 表示前面hls_init_count个HLS分片的时长,hls_init_count不为0时，该字段才起作用。 
         :type hls_init_interval: int
+        :param hls_storage_type: hls的音视频流存储方式。  - composite：存储在同一个文件中。 - separate：存储在不同的文件中 
+        :type hls_storage_type: str
         :param rotate: 视频顺时针旋转角度。  - 0：表示不旋转 - 1：表示顺时针旋转90度 - 2：表示顺时针旋转180度 - 3：表示顺时针旋转270度 
         :type rotate: int
         :param adaptation: 长短边自适应控制字段： - SHORT：表示短边自适应 - LONG：表示长边自适应 - NONE：表示不自适应 
@@ -53,6 +57,7 @@ class VideoProcess:
 
         self._hls_init_count = None
         self._hls_init_interval = None
+        self._hls_storage_type = None
         self._rotate = None
         self._adaptation = None
         self._upsample = None
@@ -62,6 +67,8 @@ class VideoProcess:
             self.hls_init_count = hls_init_count
         if hls_init_interval is not None:
             self.hls_init_interval = hls_init_interval
+        if hls_storage_type is not None:
+            self.hls_storage_type = hls_storage_type
         if rotate is not None:
             self.rotate = rotate
         if adaptation is not None:
@@ -112,6 +119,28 @@ class VideoProcess:
         :type hls_init_interval: int
         """
         self._hls_init_interval = hls_init_interval
+
+    @property
+    def hls_storage_type(self):
+        """Gets the hls_storage_type of this VideoProcess.
+
+        hls的音视频流存储方式。  - composite：存储在同一个文件中。 - separate：存储在不同的文件中 
+
+        :return: The hls_storage_type of this VideoProcess.
+        :rtype: str
+        """
+        return self._hls_storage_type
+
+    @hls_storage_type.setter
+    def hls_storage_type(self, hls_storage_type):
+        """Sets the hls_storage_type of this VideoProcess.
+
+        hls的音视频流存储方式。  - composite：存储在同一个文件中。 - separate：存储在不同的文件中 
+
+        :param hls_storage_type: The hls_storage_type of this VideoProcess.
+        :type hls_storage_type: str
+        """
+        self._hls_storage_type = hls_storage_type
 
     @property
     def rotate(self):

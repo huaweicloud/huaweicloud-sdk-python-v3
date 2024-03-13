@@ -26,7 +26,7 @@ class V2CreateCluster:
         'db_port': 'int',
         'dss_pool_id': 'str',
         'availability_zones': 'list[str]',
-        'tags': 'Tags',
+        'tags': 'list[Tags]',
         'vpc_id': 'str',
         'subnet_id': 'str',
         'security_group_id': 'str',
@@ -85,8 +85,8 @@ class V2CreateCluster:
         :type dss_pool_id: str
         :param availability_zones: 可用区列表。集群可用区选择详情请参见地区和终端节点地区和终端节点。
         :type availability_zones: list[str]
-        :param tags: 
-        :type tags: :class:`huaweicloudsdkdws.v2.Tags`
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkdws.v2.Tags`]
         :param vpc_id: 指定虚拟私有云ID，用于集群网络配置。
         :type vpc_id: str
         :param subnet_id: 指定子网ID，用于集群网络配置。
@@ -365,8 +365,10 @@ class V2CreateCluster:
     def tags(self):
         """Gets the tags of this V2CreateCluster.
 
+        标签列表
+
         :return: The tags of this V2CreateCluster.
-        :rtype: :class:`huaweicloudsdkdws.v2.Tags`
+        :rtype: list[:class:`huaweicloudsdkdws.v2.Tags`]
         """
         return self._tags
 
@@ -374,8 +376,10 @@ class V2CreateCluster:
     def tags(self, tags):
         """Sets the tags of this V2CreateCluster.
 
+        标签列表
+
         :param tags: The tags of this V2CreateCluster.
-        :type tags: :class:`huaweicloudsdkdws.v2.Tags`
+        :type tags: list[:class:`huaweicloudsdkdws.v2.Tags`]
         """
         self._tags = tags
 

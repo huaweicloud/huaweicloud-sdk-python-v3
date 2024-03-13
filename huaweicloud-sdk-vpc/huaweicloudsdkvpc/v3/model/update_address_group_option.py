@@ -20,17 +20,19 @@ class UpdateAddressGroupOption:
         'name': 'str',
         'description': 'str',
         'ip_set': 'list[str]',
-        'max_capacity': 'int'
+        'max_capacity': 'int',
+        'ip_extra_set': 'list[IpExtraSetOption]'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'ip_set': 'ip_set',
-        'max_capacity': 'max_capacity'
+        'max_capacity': 'max_capacity',
+        'ip_extra_set': 'ip_extra_set'
     }
 
-    def __init__(self, name=None, description=None, ip_set=None, max_capacity=None):
+    def __init__(self, name=None, description=None, ip_set=None, max_capacity=None, ip_extra_set=None):
         """UpdateAddressGroupOption
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class UpdateAddressGroupOption:
         :type ip_set: list[str]
         :param max_capacity: 功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20
         :type max_capacity: int
+        :param ip_extra_set: 功能说明：IP地址组包含的IP列表及其备注信息 约束：ip数量限制默认20, 与ip_set参数只能二选一
+        :type ip_extra_set: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetOption`]
         """
         
         
@@ -51,6 +55,7 @@ class UpdateAddressGroupOption:
         self._description = None
         self._ip_set = None
         self._max_capacity = None
+        self._ip_extra_set = None
         self.discriminator = None
 
         if name is not None:
@@ -61,6 +66,8 @@ class UpdateAddressGroupOption:
             self.ip_set = ip_set
         if max_capacity is not None:
             self.max_capacity = max_capacity
+        if ip_extra_set is not None:
+            self.ip_extra_set = ip_extra_set
 
     @property
     def name(self):
@@ -149,6 +156,28 @@ class UpdateAddressGroupOption:
         :type max_capacity: int
         """
         self._max_capacity = max_capacity
+
+    @property
+    def ip_extra_set(self):
+        """Gets the ip_extra_set of this UpdateAddressGroupOption.
+
+        功能说明：IP地址组包含的IP列表及其备注信息 约束：ip数量限制默认20, 与ip_set参数只能二选一
+
+        :return: The ip_extra_set of this UpdateAddressGroupOption.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetOption`]
+        """
+        return self._ip_extra_set
+
+    @ip_extra_set.setter
+    def ip_extra_set(self, ip_extra_set):
+        """Sets the ip_extra_set of this UpdateAddressGroupOption.
+
+        功能说明：IP地址组包含的IP列表及其备注信息 约束：ip数量限制默认20, 与ip_set参数只能二选一
+
+        :param ip_extra_set: The ip_extra_set of this UpdateAddressGroupOption.
+        :type ip_extra_set: list[:class:`huaweicloudsdkvpc.v3.IpExtraSetOption`]
+        """
+        self._ip_extra_set = ip_extra_set
 
     def to_dict(self):
         """Returns the model properties as a dict"""

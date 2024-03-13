@@ -43,7 +43,7 @@ class PromConfigModel:
         :type remote_read_url: str
         :param prom_http_api_endpoint: Prometheus实例调用url。
         :type prom_http_api_endpoint: str
-        :param dashboard_id: Prometheus实例关联dashboard的dashboard id。
+        :param dashboard_id: Prometheus实例关联dashboard的dashboard id（目前未使用）。
         :type dashboard_id: str
         :param region_id: Prometheus实例所属的region。
         :type region_id: str
@@ -139,7 +139,7 @@ class PromConfigModel:
     def dashboard_id(self):
         """Gets the dashboard_id of this PromConfigModel.
 
-        Prometheus实例关联dashboard的dashboard id。
+        Prometheus实例关联dashboard的dashboard id（目前未使用）。
 
         :return: The dashboard_id of this PromConfigModel.
         :rtype: str
@@ -150,7 +150,7 @@ class PromConfigModel:
     def dashboard_id(self, dashboard_id):
         """Sets the dashboard_id of this PromConfigModel.
 
-        Prometheus实例关联dashboard的dashboard id。
+        Prometheus实例关联dashboard的dashboard id（目前未使用）。
 
         :param dashboard_id: The dashboard_id of this PromConfigModel.
         :type dashboard_id: str

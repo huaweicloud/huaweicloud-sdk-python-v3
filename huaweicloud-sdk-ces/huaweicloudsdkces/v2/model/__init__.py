@@ -20,8 +20,6 @@ from huaweicloudsdkces.v2.model.alarm_template_policies import AlarmTemplatePoli
 from huaweicloudsdkces.v2.model.alarm_templates import AlarmTemplates
 from huaweicloudsdkces.v2.model.alarm_type import AlarmType
 from huaweicloudsdkces.v2.model.base_widget_info import BaseWidgetInfo
-from huaweicloudsdkces.v2.model.base_widget_info_location import BaseWidgetInfoLocation
-from huaweicloudsdkces.v2.model.base_widget_info_properties import BaseWidgetInfoProperties
 from huaweicloudsdkces.v2.model.batch_create_resources_request import BatchCreateResourcesRequest
 from huaweicloudsdkces.v2.model.batch_create_resources_response import BatchCreateResourcesResponse
 from huaweicloudsdkces.v2.model.batch_delete_alarm_rules_request import BatchDeleteAlarmRulesRequest
@@ -217,6 +215,8 @@ from huaweicloudsdkces.v2.model.update_policy import UpdatePolicy
 from huaweicloudsdkces.v2.model.update_resource_group_request import UpdateResourceGroupRequest
 from huaweicloudsdkces.v2.model.update_resource_group_response import UpdateResourceGroupResponse
 from huaweicloudsdkces.v2.model.update_widget_info import UpdateWidgetInfo
+from huaweicloudsdkces.v2.model.update_widget_info_location import UpdateWidgetInfoLocation
+from huaweicloudsdkces.v2.model.update_widget_info_properties import UpdateWidgetInfoProperties
 from huaweicloudsdkces.v2.model.value import Value
 from huaweicloudsdkces.v2.model.widget_display_mode import WidgetDisplayMode
 from huaweicloudsdkces.v2.model.widget_id_item import WidgetIdItem

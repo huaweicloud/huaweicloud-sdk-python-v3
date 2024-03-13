@@ -31,6 +31,7 @@ class ShowEcnInfoResponse(SdkResponse):
         'ieg_asn': 'int',
         'vni': 'int',
         'enterprise_router_ids': 'list[str]',
+        'vpc_ids': 'list[str]',
         'bind_ieg_count': 'int',
         'enterprise_project_id': 'str',
         'status': 'str',
@@ -56,6 +57,7 @@ class ShowEcnInfoResponse(SdkResponse):
         'ieg_asn': 'ieg_asn',
         'vni': 'vni',
         'enterprise_router_ids': 'enterprise_router_ids',
+        'vpc_ids': 'vpc_ids',
         'bind_ieg_count': 'bind_ieg_count',
         'enterprise_project_id': 'enterprise_project_id',
         'status': 'status',
@@ -67,7 +69,7 @@ class ShowEcnInfoResponse(SdkResponse):
         'product_id': 'product_id'
     }
 
-    def __init__(self, id=None, project_id=None, domain_id=None, name=None, description=None, bandwidth_size=None, type=None, area_id=None, region_id=None, ecn_asn=None, ieg_asn=None, vni=None, enterprise_router_ids=None, bind_ieg_count=None, enterprise_project_id=None, status=None, frozen_effect=None, hub_enable=None, created_at=None, updated_at=None, order_id=None, product_id=None):
+    def __init__(self, id=None, project_id=None, domain_id=None, name=None, description=None, bandwidth_size=None, type=None, area_id=None, region_id=None, ecn_asn=None, ieg_asn=None, vni=None, enterprise_router_ids=None, vpc_ids=None, bind_ieg_count=None, enterprise_project_id=None, status=None, frozen_effect=None, hub_enable=None, created_at=None, updated_at=None, order_id=None, product_id=None):
         """ShowEcnInfoResponse
 
         The model defined in huaweicloud sdk
@@ -98,6 +100,8 @@ class ShowEcnInfoResponse(SdkResponse):
         :type vni: int
         :param enterprise_router_ids: 企业路由器列表
         :type enterprise_router_ids: list[str]
+        :param vpc_ids: 虚拟私有云列表
+        :type vpc_ids: list[str]
         :param bind_ieg_count: 绑定智能企业网关数量
         :type bind_ieg_count: int
         :param enterprise_project_id: 企业项目ID
@@ -133,6 +137,7 @@ class ShowEcnInfoResponse(SdkResponse):
         self._ieg_asn = None
         self._vni = None
         self._enterprise_router_ids = None
+        self._vpc_ids = None
         self._bind_ieg_count = None
         self._enterprise_project_id = None
         self._status = None
@@ -170,6 +175,8 @@ class ShowEcnInfoResponse(SdkResponse):
             self.vni = vni
         if enterprise_router_ids is not None:
             self.enterprise_router_ids = enterprise_router_ids
+        if vpc_ids is not None:
+            self.vpc_ids = vpc_ids
         if bind_ieg_count is not None:
             self.bind_ieg_count = bind_ieg_count
         if enterprise_project_id is not None:
@@ -474,6 +481,28 @@ class ShowEcnInfoResponse(SdkResponse):
         :type enterprise_router_ids: list[str]
         """
         self._enterprise_router_ids = enterprise_router_ids
+
+    @property
+    def vpc_ids(self):
+        """Gets the vpc_ids of this ShowEcnInfoResponse.
+
+        虚拟私有云列表
+
+        :return: The vpc_ids of this ShowEcnInfoResponse.
+        :rtype: list[str]
+        """
+        return self._vpc_ids
+
+    @vpc_ids.setter
+    def vpc_ids(self, vpc_ids):
+        """Sets the vpc_ids of this ShowEcnInfoResponse.
+
+        虚拟私有云列表
+
+        :param vpc_ids: The vpc_ids of this ShowEcnInfoResponse.
+        :type vpc_ids: list[str]
+        """
+        self._vpc_ids = vpc_ids
 
     @property
     def bind_ieg_count(self):

@@ -22,7 +22,8 @@ class IpPool:
         'pool_id': 'str',
         'ip_version': 'str',
         'operator': 'Operator',
-        'display_name': 'str'
+        'display_name': 'str',
+        'allow_share_bandwidth_types': 'list[str]'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class IpPool:
         'pool_id': 'pool_id',
         'ip_version': 'ip_version',
         'operator': 'operator',
-        'display_name': 'display_name'
+        'display_name': 'display_name',
+        'allow_share_bandwidth_types': 'allow_share_bandwidth_types'
     }
 
-    def __init__(self, id=None, site_id=None, pool_id=None, ip_version=None, operator=None, display_name=None):
+    def __init__(self, id=None, site_id=None, pool_id=None, ip_version=None, operator=None, display_name=None, allow_share_bandwidth_types=None):
         """IpPool
 
         The model defined in huaweicloud sdk
@@ -45,12 +47,14 @@ class IpPool:
         :type site_id: str
         :param pool_id: 线路标识。
         :type pool_id: str
-        :param ip_version: IPv4[或IPv6](tag:hide)线路。  取值范围： - 4：IPv4线路 [- 6：IPv6线路](tag:hide)
+        :param ip_version: IPv4或IPv6线路。  取值范围： - 4：IPv4线路 - 6：IPv6线路
         :type ip_version: str
         :param operator: 
         :type operator: :class:`huaweicloudsdkiec.v1.Operator`
         :param display_name: 线路的显示名称。
         :type display_name: str
+        :param allow_share_bandwidth_types: 功能说明：表示此线路可以使用的带宽类型列表，如果列表为空，则表示该线路不能使用任何带宽  约束：线路下的ip只能加入到带宽类型在allow_share_bandwidth_types中带宽 
+        :type allow_share_bandwidth_types: list[str]
         """
         
         
@@ -61,6 +65,7 @@ class IpPool:
         self._ip_version = None
         self._operator = None
         self._display_name = None
+        self._allow_share_bandwidth_types = None
         self.discriminator = None
 
         if id is not None:
@@ -75,6 +80,8 @@ class IpPool:
             self.operator = operator
         if display_name is not None:
             self.display_name = display_name
+        if allow_share_bandwidth_types is not None:
+            self.allow_share_bandwidth_types = allow_share_bandwidth_types
 
     @property
     def id(self):
@@ -146,7 +153,7 @@ class IpPool:
     def ip_version(self):
         """Gets the ip_version of this IpPool.
 
-        IPv4[或IPv6](tag:hide)线路。  取值范围： - 4：IPv4线路 [- 6：IPv6线路](tag:hide)
+        IPv4或IPv6线路。  取值范围： - 4：IPv4线路 - 6：IPv6线路
 
         :return: The ip_version of this IpPool.
         :rtype: str
@@ -157,7 +164,7 @@ class IpPool:
     def ip_version(self, ip_version):
         """Sets the ip_version of this IpPool.
 
-        IPv4[或IPv6](tag:hide)线路。  取值范围： - 4：IPv4线路 [- 6：IPv6线路](tag:hide)
+        IPv4或IPv6线路。  取值范围： - 4：IPv4线路 - 6：IPv6线路
 
         :param ip_version: The ip_version of this IpPool.
         :type ip_version: str
@@ -203,6 +210,28 @@ class IpPool:
         :type display_name: str
         """
         self._display_name = display_name
+
+    @property
+    def allow_share_bandwidth_types(self):
+        """Gets the allow_share_bandwidth_types of this IpPool.
+
+        功能说明：表示此线路可以使用的带宽类型列表，如果列表为空，则表示该线路不能使用任何带宽  约束：线路下的ip只能加入到带宽类型在allow_share_bandwidth_types中带宽 
+
+        :return: The allow_share_bandwidth_types of this IpPool.
+        :rtype: list[str]
+        """
+        return self._allow_share_bandwidth_types
+
+    @allow_share_bandwidth_types.setter
+    def allow_share_bandwidth_types(self, allow_share_bandwidth_types):
+        """Sets the allow_share_bandwidth_types of this IpPool.
+
+        功能说明：表示此线路可以使用的带宽类型列表，如果列表为空，则表示该线路不能使用任何带宽  约束：线路下的ip只能加入到带宽类型在allow_share_bandwidth_types中带宽 
+
+        :param allow_share_bandwidth_types: The allow_share_bandwidth_types of this IpPool.
+        :type allow_share_bandwidth_types: list[str]
+        """
+        self._allow_share_bandwidth_types = allow_share_bandwidth_types
 
     def to_dict(self):
         """Returns the model properties as a dict"""

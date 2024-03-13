@@ -22,7 +22,11 @@ class ListFunctionStatisticsResponseBody:
         'fail_count': 'list[SlaReportsValue]',
         'max_duration': 'list[SlaReportsValue]',
         'min_duration': 'list[SlaReportsValue]',
-        'reject_count': 'list[SlaReportsValue]'
+        'reject_count': 'list[SlaReportsValue]',
+        'function_error_count': 'list[SlaReportsValue]',
+        'system_error_count': 'list[SlaReportsValue]',
+        'reserved_instance_num': 'list[SlaReportsValue]',
+        'concurrency_num': 'list[SlaReportsValue]'
     }
 
     attribute_map = {
@@ -31,10 +35,14 @@ class ListFunctionStatisticsResponseBody:
         'fail_count': 'fail_count',
         'max_duration': 'max_duration',
         'min_duration': 'min_duration',
-        'reject_count': 'reject_count'
+        'reject_count': 'reject_count',
+        'function_error_count': 'function_error_count',
+        'system_error_count': 'system_error_count',
+        'reserved_instance_num': 'reserved_instance_num',
+        'concurrency_num': 'concurrency_num'
     }
 
-    def __init__(self, count=None, duration=None, fail_count=None, max_duration=None, min_duration=None, reject_count=None):
+    def __init__(self, count=None, duration=None, fail_count=None, max_duration=None, min_duration=None, reject_count=None, function_error_count=None, system_error_count=None, reserved_instance_num=None, concurrency_num=None):
         """ListFunctionStatisticsResponseBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +59,14 @@ class ListFunctionStatisticsResponseBody:
         :type min_duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         :param reject_count: 被拒绝次数
         :type reject_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param function_error_count: 函数错误次数
+        :type function_error_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param system_error_count: 系统错误次数
+        :type system_error_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param reserved_instance_num: 预留实例指标
+        :type reserved_instance_num: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param concurrency_num: 弹性实例指标
+        :type concurrency_num: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         
         
@@ -61,6 +77,10 @@ class ListFunctionStatisticsResponseBody:
         self._max_duration = None
         self._min_duration = None
         self._reject_count = None
+        self._function_error_count = None
+        self._system_error_count = None
+        self._reserved_instance_num = None
+        self._concurrency_num = None
         self.discriminator = None
 
         if count is not None:
@@ -75,6 +95,14 @@ class ListFunctionStatisticsResponseBody:
             self.min_duration = min_duration
         if reject_count is not None:
             self.reject_count = reject_count
+        if function_error_count is not None:
+            self.function_error_count = function_error_count
+        if system_error_count is not None:
+            self.system_error_count = system_error_count
+        if reserved_instance_num is not None:
+            self.reserved_instance_num = reserved_instance_num
+        if concurrency_num is not None:
+            self.concurrency_num = concurrency_num
 
     @property
     def count(self):
@@ -207,6 +235,94 @@ class ListFunctionStatisticsResponseBody:
         :type reject_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._reject_count = reject_count
+
+    @property
+    def function_error_count(self):
+        """Gets the function_error_count of this ListFunctionStatisticsResponseBody.
+
+        函数错误次数
+
+        :return: The function_error_count of this ListFunctionStatisticsResponseBody.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
+        return self._function_error_count
+
+    @function_error_count.setter
+    def function_error_count(self, function_error_count):
+        """Sets the function_error_count of this ListFunctionStatisticsResponseBody.
+
+        函数错误次数
+
+        :param function_error_count: The function_error_count of this ListFunctionStatisticsResponseBody.
+        :type function_error_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
+        self._function_error_count = function_error_count
+
+    @property
+    def system_error_count(self):
+        """Gets the system_error_count of this ListFunctionStatisticsResponseBody.
+
+        系统错误次数
+
+        :return: The system_error_count of this ListFunctionStatisticsResponseBody.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
+        return self._system_error_count
+
+    @system_error_count.setter
+    def system_error_count(self, system_error_count):
+        """Sets the system_error_count of this ListFunctionStatisticsResponseBody.
+
+        系统错误次数
+
+        :param system_error_count: The system_error_count of this ListFunctionStatisticsResponseBody.
+        :type system_error_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
+        self._system_error_count = system_error_count
+
+    @property
+    def reserved_instance_num(self):
+        """Gets the reserved_instance_num of this ListFunctionStatisticsResponseBody.
+
+        预留实例指标
+
+        :return: The reserved_instance_num of this ListFunctionStatisticsResponseBody.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
+        return self._reserved_instance_num
+
+    @reserved_instance_num.setter
+    def reserved_instance_num(self, reserved_instance_num):
+        """Sets the reserved_instance_num of this ListFunctionStatisticsResponseBody.
+
+        预留实例指标
+
+        :param reserved_instance_num: The reserved_instance_num of this ListFunctionStatisticsResponseBody.
+        :type reserved_instance_num: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
+        self._reserved_instance_num = reserved_instance_num
+
+    @property
+    def concurrency_num(self):
+        """Gets the concurrency_num of this ListFunctionStatisticsResponseBody.
+
+        弹性实例指标
+
+        :return: The concurrency_num of this ListFunctionStatisticsResponseBody.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
+        return self._concurrency_num
+
+    @concurrency_num.setter
+    def concurrency_num(self, concurrency_num):
+        """Sets the concurrency_num of this ListFunctionStatisticsResponseBody.
+
+        弹性实例指标
+
+        :param concurrency_num: The concurrency_num of this ListFunctionStatisticsResponseBody.
+        :type concurrency_num: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
+        self._concurrency_num = concurrency_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

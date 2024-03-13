@@ -20,6 +20,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'display_name': 'str',
         'policy_type': 'str',
         'description': 'str',
         'policy_rule_type': 'str',
@@ -33,6 +34,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'display_name': 'display_name',
         'policy_type': 'policy_type',
         'description': 'description',
         'policy_rule_type': 'policy_rule_type',
@@ -43,7 +45,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         'parameters': 'parameters'
     }
 
-    def __init__(self, id=None, name=None, policy_type=None, description=None, policy_rule_type=None, policy_rule=None, trigger_type=None, keywords=None, default_resource_types=None, parameters=None):
+    def __init__(self, id=None, name=None, display_name=None, policy_type=None, description=None, policy_rule_type=None, policy_rule=None, trigger_type=None, keywords=None, default_resource_types=None, parameters=None):
         """ShowBuiltInPolicyDefinitionResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         :type id: str
         :param name: 策略名字
         :type name: str
+        :param display_name: 策略展示名
+        :type display_name: str
         :param policy_type: 策略类型
         :type policy_type: str
         :param description: 策略描述
@@ -74,6 +78,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
         self._id = None
         self._name = None
+        self._display_name = None
         self._policy_type = None
         self._description = None
         self._policy_rule_type = None
@@ -88,6 +93,8 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
             self.id = id
         if name is not None:
             self.name = name
+        if display_name is not None:
+            self.display_name = display_name
         if policy_type is not None:
             self.policy_type = policy_type
         if description is not None:
@@ -148,6 +155,28 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         :type name: str
         """
         self._name = name
+
+    @property
+    def display_name(self):
+        """Gets the display_name of this ShowBuiltInPolicyDefinitionResponse.
+
+        策略展示名
+
+        :return: The display_name of this ShowBuiltInPolicyDefinitionResponse.
+        :rtype: str
+        """
+        return self._display_name
+
+    @display_name.setter
+    def display_name(self, display_name):
+        """Sets the display_name of this ShowBuiltInPolicyDefinitionResponse.
+
+        策略展示名
+
+        :param display_name: The display_name of this ShowBuiltInPolicyDefinitionResponse.
+        :type display_name: str
+        """
+        self._display_name = display_name
 
     @property
     def policy_type(self):

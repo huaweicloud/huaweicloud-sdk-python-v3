@@ -36,13 +36,13 @@ class ShowProcessResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: code
+        :param code: 响应码
         :type code: str
-        :param message: message
+        :param message: 响应消息
         :type message: str
         :param json: 
         :type json: :class:`huaweicloudsdkcpts.v1.UploadProcessJson`
-        :param extend: extend
+        :param extend: 扩展信息
         :type extend: str
         """
         
@@ -67,7 +67,7 @@ class ShowProcessResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowProcessResponse.
 
-        code
+        响应码
 
         :return: The code of this ShowProcessResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowProcessResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowProcessResponse.
 
-        code
+        响应码
 
         :param code: The code of this ShowProcessResponse.
         :type code: str
@@ -89,7 +89,7 @@ class ShowProcessResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowProcessResponse.
 
-        message
+        响应消息
 
         :return: The message of this ShowProcessResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ShowProcessResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowProcessResponse.
 
-        message
+        响应消息
 
         :param message: The message of this ShowProcessResponse.
         :type message: str
@@ -129,7 +129,7 @@ class ShowProcessResponse(SdkResponse):
     def extend(self):
         """Gets the extend of this ShowProcessResponse.
 
-        extend
+        扩展信息
 
         :return: The extend of this ShowProcessResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ShowProcessResponse(SdkResponse):
     def extend(self, extend):
         """Sets the extend of this ShowProcessResponse.
 
-        extend
+        扩展信息
 
         :param extend: The extend of this ShowProcessResponse.
         :type extend: str

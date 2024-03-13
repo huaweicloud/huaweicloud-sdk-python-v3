@@ -231,73 +231,6 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
-    def create_open_source_strategy_async(self, request):
-        """创建租户级开源治理策略
-
-        创建租户级开源治理策略
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateOpenSourceStrategy
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.CreateOpenSourceStrategyRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreateOpenSourceStrategyResponse`
-        """
-        http_info = self._create_open_source_strategy_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_open_source_strategy_async_invoker(self, request):
-        http_info = self._create_open_source_strategy_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_open_source_strategy_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{domain_id}/tenant/open-source/rule-sets/create",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateOpenSourceStrategyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_pipeline_by_template_async(self, request):
         """基于模板快速创建流水线及流水线内任务
 
@@ -699,9 +632,9 @@ class CodeArtsPipelineAsyncClient(Client):
         return http_info
 
     def create_strategy_async(self, request):
-        """创建规则集
+        """创建策略
 
-        创建规则集
+        创建策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -805,73 +738,6 @@ class CodeArtsPipelineAsyncClient(Client):
         query_params = []
         if 'plugin_name' in local_var_params:
             query_params.append(('plugin_name', local_var_params['plugin_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_open_source_strategy_async(self, request):
-        """删除租户级开源治理策略
-
-        删除租户级开源治理策略
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteOpenSourceStrategy
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.DeleteOpenSourceStrategyRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.DeleteOpenSourceStrategyResponse`
-        """
-        http_info = self._delete_open_source_strategy_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_open_source_strategy_async_invoker(self, request):
-        http_info = self._delete_open_source_strategy_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_open_source_strategy_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2/{domain_id}/tenant/open-source/rule-sets/{rule_set_id}/delete",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteOpenSourceStrategyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
-        if 'rule_set_id' in local_var_params:
-            path_params['rule_set_id'] = local_var_params['rule_set_id']
-
-        query_params = []
 
         header_params = {}
 
@@ -1170,9 +1036,9 @@ class CodeArtsPipelineAsyncClient(Client):
         return http_info
 
     def delete_strategy_async(self, request):
-        """删除规则集
+        """删除策略
 
-        删除规则集
+        删除策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1429,79 +1295,6 @@ class CodeArtsPipelineAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_open_source_strategy_async(self, request):
-        """查询租户级开源治理策略列表
-
-        查询租户级开源治理策略列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListOpenSourceStrategy
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ListOpenSourceStrategyRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListOpenSourceStrategyResponse`
-        """
-        http_info = self._list_open_source_strategy_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_open_source_strategy_async_invoker(self, request):
-        http_info = self._list_open_source_strategy_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_open_source_strategy_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{domain_id}/tenant/open-source/rule-sets/query",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListOpenSourceStrategyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
-
-        query_params = []
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'creator_name' in local_var_params:
-            query_params.append(('creator_name', local_var_params['creator_name']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
 
         auth_settings = []
 
@@ -1867,85 +1660,10 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
-    def list_project_open_source_strategy_async(self, request):
-        """查询项目级开源治理策略列表
-
-        查询项目级开源治理策略列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListProjectOpenSourceStrategy
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ListProjectOpenSourceStrategyRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListProjectOpenSourceStrategyResponse`
-        """
-        http_info = self._list_project_open_source_strategy_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_project_open_source_strategy_async_invoker(self, request):
-        http_info = self._list_project_open_source_strategy_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_project_open_source_strategy_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/open-source/rule-sets/query",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListProjectOpenSourceStrategyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'creator_name' in local_var_params:
-            query_params.append(('creator_name', local_var_params['creator_name']))
-        if 'include_tenant_rule_set' in local_var_params:
-            query_params.append(('include_tenant_rule_set', local_var_params['include_tenant_rule_set']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def list_project_strategy_async(self, request):
         """获取规则模板实例列表
 
-        获取规则集列表
+        获取策略列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2233,9 +1951,9 @@ class CodeArtsPipelineAsyncClient(Client):
         return http_info
 
     def list_strategy_async(self, request):
-        """获取规则集列表
+        """获取策略列表
 
-        获取规则集列表
+        获取策略列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2788,31 +2506,31 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
-    def show_open_source_strategy_async(self, request):
-        """查询租户级开源治理策略详情
+    def show_pipeline_detail_async(self, request):
+        """查询流水线详情
 
-        查询租户级开源治理策略详情
+        查询流水线详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowOpenSourceStrategy
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowOpenSourceStrategyRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowOpenSourceStrategyResponse`
+        :param request: Request instance for ShowPipelineDetail
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowPipelineDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowPipelineDetailResponse`
         """
-        http_info = self._show_open_source_strategy_http_info(request)
+        http_info = self._show_pipeline_detail_http_info(request)
         return self._call_api(**http_info)
 
-    def show_open_source_strategy_async_invoker(self, request):
-        http_info = self._show_open_source_strategy_http_info(request)
+    def show_pipeline_detail_async_invoker(self, request):
+        http_info = self._show_pipeline_detail_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_open_source_strategy_http_info(self, request):
+    def _show_pipeline_detail_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v2/{domain_id}/tenant/open-source/rule-sets/{rule_set_id}/detail",
+            "resource_path": "/v5/{project_id}/api/pipelines/{pipeline_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowOpenSourceStrategyResponse"
+            "response_type": "ShowPipelineDetailResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2822,10 +2540,10 @@ class CodeArtsPipelineAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
-        if 'rule_set_id' in local_var_params:
-            path_params['rule_set_id'] = local_var_params['rule_set_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
 
         query_params = []
 
@@ -3257,73 +2975,6 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
-    def show_project_open_source_strategy_async(self, request):
-        """查询项目级开源治理策略详情
-
-        查询项目级开源治理策略详情
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowProjectOpenSourceStrategy
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowProjectOpenSourceStrategyRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowProjectOpenSourceStrategyResponse`
-        """
-        http_info = self._show_project_open_source_strategy_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_project_open_source_strategy_async_invoker(self, request):
-        http_info = self._show_project_open_source_strategy_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_project_open_source_strategy_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/open-source/rule-sets/{rule_set_id}/detail",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowProjectOpenSourceStrategyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'rule_set_id' in local_var_params:
-            path_params['rule_set_id'] = local_var_params['rule_set_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_project_strategy_async(self, request):
         """show_project_strategy
 
@@ -3528,9 +3179,9 @@ class CodeArtsPipelineAsyncClient(Client):
         return http_info
 
     def show_strategy_async(self, request):
-        """获取规则集详情
+        """获取策略详情
 
-        获取规则集详情
+        获取策略详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3799,79 +3450,10 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
-    def switch_open_source_strategy_async(self, request):
-        """修改租户级开源治理策略启用状态
-
-        修改租户级开源治理策略启用状态
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SwitchOpenSourceStrategy
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.SwitchOpenSourceStrategyRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.SwitchOpenSourceStrategyResponse`
-        """
-        http_info = self._switch_open_source_strategy_http_info(request)
-        return self._call_api(**http_info)
-
-    def switch_open_source_strategy_async_invoker(self, request):
-        http_info = self._switch_open_source_strategy_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _switch_open_source_strategy_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2/{domain_id}/tenant/open-source/rule-sets/{rule_set_id}/switch",
-            "request_type": request.__class__.__name__,
-            "response_type": "SwitchOpenSourceStrategyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
-        if 'rule_set_id' in local_var_params:
-            path_params['rule_set_id'] = local_var_params['rule_set_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def switch_strategy_async(self, request):
-        """开关规则集
+        """开关策略
 
-        修改规则集状态
+        修改策略状态
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3973,75 +3555,6 @@ class CodeArtsPipelineAsyncClient(Client):
         path_params = {}
         if 'domain_id' in local_var_params:
             path_params['domain_id'] = local_var_params['domain_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_open_source_strategy_async(self, request):
-        """修改租户级开源治理策略
-
-        修改租户级开源治理策略
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateOpenSourceStrategy
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.UpdateOpenSourceStrategyRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UpdateOpenSourceStrategyResponse`
-        """
-        http_info = self._update_open_source_strategy_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_open_source_strategy_async_invoker(self, request):
-        http_info = self._update_open_source_strategy_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_open_source_strategy_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2/{domain_id}/tenant/open-source/rule-sets/{rule_set_id}/update",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateOpenSourceStrategyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
-        if 'rule_set_id' in local_var_params:
-            path_params['rule_set_id'] = local_var_params['rule_set_id']
 
         query_params = []
 
@@ -4344,9 +3857,9 @@ class CodeArtsPipelineAsyncClient(Client):
         return http_info
 
     def update_strategy_async(self, request):
-        """修改规则集
+        """修改策略
 
-        修改规则集
+        修改策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5522,6 +5035,75 @@ class CodeArtsPipelineAsyncClient(Client):
 
         return http_info
 
+    def show_pipeline_artifacts_async(self, request):
+        """查询流水线上的构建产物
+
+        查询流水线上的构建产物
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPipelineArtifacts
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowPipelineArtifactsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowPipelineArtifactsResponse`
+        """
+        http_info = self._show_pipeline_artifacts_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pipeline_artifacts_async_invoker(self, request):
+        http_info = self._show_pipeline_artifacts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_pipeline_artifacts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/artifacts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPipelineArtifactsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_pipeline_log_async(self, request):
         """查询流水线日志
 
@@ -5706,6 +5288,77 @@ class CodeArtsPipelineAsyncClient(Client):
             path_params['template_id'] = local_var_params['template_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_step_outputs_async(self, request):
+        """获取流水线步骤执行输出
+
+        获取流水线步骤执行输出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStepOutputs
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowStepOutputsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowStepOutputsResponse`
+        """
+        http_info = self._show_step_outputs_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_step_outputs_async_invoker(self, request):
+        http_info = self._show_step_outputs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_step_outputs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/steps/outputs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStepOutputsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+        if 'step_run_ids' in local_var_params:
+            query_params.append(('step_run_ids', local_var_params['step_run_ids']))
 
         header_params = {}
 

@@ -20,17 +20,19 @@ class CreateVersionAliasRequestBody:
         'name': 'str',
         'version': 'str',
         'description': 'str',
-        'additional_version_weights': 'dict(str, int)'
+        'additional_version_weights': 'dict(str, int)',
+        'additional_version_strategy': 'dict(str, VersionStrategy)'
     }
 
     attribute_map = {
         'name': 'name',
         'version': 'version',
         'description': 'description',
-        'additional_version_weights': 'additional_version_weights'
+        'additional_version_weights': 'additional_version_weights',
+        'additional_version_strategy': 'additional_version_strategy'
     }
 
-    def __init__(self, name=None, version=None, description=None, additional_version_weights=None):
+    def __init__(self, name=None, version=None, description=None, additional_version_weights=None, additional_version_strategy=None):
         """CreateVersionAliasRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,8 +43,10 @@ class CreateVersionAliasRequestBody:
         :type version: str
         :param description: 别名描述信息。
         :type description: str
-        :param additional_version_weights: 灰度版本信息
+        :param additional_version_weights: 百分比灰度配置信息
         :type additional_version_weights: dict(str, int)
+        :param additional_version_strategy: 指定规则灰度策略信息
+        :type additional_version_strategy: dict(str, VersionStrategy)
         """
         
         
@@ -51,6 +55,7 @@ class CreateVersionAliasRequestBody:
         self._version = None
         self._description = None
         self._additional_version_weights = None
+        self._additional_version_strategy = None
         self.discriminator = None
 
         self.name = name
@@ -59,6 +64,8 @@ class CreateVersionAliasRequestBody:
             self.description = description
         if additional_version_weights is not None:
             self.additional_version_weights = additional_version_weights
+        if additional_version_strategy is not None:
+            self.additional_version_strategy = additional_version_strategy
 
     @property
     def name(self):
@@ -130,7 +137,7 @@ class CreateVersionAliasRequestBody:
     def additional_version_weights(self):
         """Gets the additional_version_weights of this CreateVersionAliasRequestBody.
 
-        灰度版本信息
+        百分比灰度配置信息
 
         :return: The additional_version_weights of this CreateVersionAliasRequestBody.
         :rtype: dict(str, int)
@@ -141,12 +148,34 @@ class CreateVersionAliasRequestBody:
     def additional_version_weights(self, additional_version_weights):
         """Sets the additional_version_weights of this CreateVersionAliasRequestBody.
 
-        灰度版本信息
+        百分比灰度配置信息
 
         :param additional_version_weights: The additional_version_weights of this CreateVersionAliasRequestBody.
         :type additional_version_weights: dict(str, int)
         """
         self._additional_version_weights = additional_version_weights
+
+    @property
+    def additional_version_strategy(self):
+        """Gets the additional_version_strategy of this CreateVersionAliasRequestBody.
+
+        指定规则灰度策略信息
+
+        :return: The additional_version_strategy of this CreateVersionAliasRequestBody.
+        :rtype: dict(str, VersionStrategy)
+        """
+        return self._additional_version_strategy
+
+    @additional_version_strategy.setter
+    def additional_version_strategy(self, additional_version_strategy):
+        """Sets the additional_version_strategy of this CreateVersionAliasRequestBody.
+
+        指定规则灰度策略信息
+
+        :param additional_version_strategy: The additional_version_strategy of this CreateVersionAliasRequestBody.
+        :type additional_version_strategy: dict(str, VersionStrategy)
+        """
+        self._additional_version_strategy = additional_version_strategy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

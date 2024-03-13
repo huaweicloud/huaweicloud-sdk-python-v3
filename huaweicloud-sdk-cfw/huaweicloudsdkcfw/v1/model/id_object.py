@@ -17,29 +17,36 @@ class IdObject:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str'
+        'id': 'str',
+        'name': 'str'
     }
 
     attribute_map = {
-        'id': 'id'
+        'id': 'id',
+        'name': 'name'
     }
 
-    def __init__(self, id=None):
+    def __init__(self, id=None, name=None):
         """IdObject
 
         The model defined in huaweicloud sdk
 
         :param id: id值
         :type id: str
+        :param name: 名称
+        :type name: str
         """
         
         
 
         self._id = None
+        self._name = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if name is not None:
+            self.name = name
 
     @property
     def id(self):
@@ -62,6 +69,28 @@ class IdObject:
         :type id: str
         """
         self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this IdObject.
+
+        名称
+
+        :return: The name of this IdObject.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this IdObject.
+
+        名称
+
+        :param name: The name of this IdObject.
+        :type name: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

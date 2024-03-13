@@ -35,7 +35,7 @@ class DownloadTaskLogRequest:
 
         :param record_id: 记录ID,36位数字、小写字母、&#39;-&#39;组组合。
         :type record_id: str
-        :param task_name: 记录ID,36位数字、小写字母、&#39;-&#39;组组合。
+        :param task_name: 步骤名称
         :type task_name: str
         :param log_level: 日志等级 值为INFO | DEBUG。
         :type log_level: str
@@ -79,7 +79,7 @@ class DownloadTaskLogRequest:
     def task_name(self):
         """Gets the task_name of this DownloadTaskLogRequest.
 
-        记录ID,36位数字、小写字母、'-'组组合。
+        步骤名称
 
         :return: The task_name of this DownloadTaskLogRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DownloadTaskLogRequest:
     def task_name(self, task_name):
         """Sets the task_name of this DownloadTaskLogRequest.
 
-        记录ID,36位数字、小写字母、'-'组组合。
+        步骤名称
 
         :param task_name: The task_name of this DownloadTaskLogRequest.
         :type task_name: str

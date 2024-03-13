@@ -20,6 +20,7 @@ class UserForCreation:
         'name': 'str',
         'password': 'str',
         'comment': 'str',
+        'is_privilege': 'bool',
         'hosts': 'list[str]',
         'databases': 'list[DatabaseWithPrivilegeObject]'
     }
@@ -28,11 +29,12 @@ class UserForCreation:
         'name': 'name',
         'password': 'password',
         'comment': 'comment',
+        'is_privilege': 'is_privilege',
         'hosts': 'hosts',
         'databases': 'databases'
     }
 
-    def __init__(self, name=None, password=None, comment=None, hosts=None, databases=None):
+    def __init__(self, name=None, password=None, comment=None, is_privilege=None, hosts=None, databases=None):
         """UserForCreation
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class UserForCreation:
         :type password: str
         :param comment: 数据库用户备注。 取值范围：长度1~512个字符。目前仅支持MySQL 8.0.25及以上版本。
         :type comment: str
+        :param is_privilege: 是否创建高权限用户。 • 若为true，则不用传hosts、databases参数。
+        :type is_privilege: bool
         :param hosts: 授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
         :type hosts: list[str]
         :param databases: 授权用户数据库权限
@@ -54,6 +58,7 @@ class UserForCreation:
         self._name = None
         self._password = None
         self._comment = None
+        self._is_privilege = None
         self._hosts = None
         self._databases = None
         self.discriminator = None
@@ -62,6 +67,8 @@ class UserForCreation:
         self.password = password
         if comment is not None:
             self.comment = comment
+        if is_privilege is not None:
+            self.is_privilege = is_privilege
         if hosts is not None:
             self.hosts = hosts
         if databases is not None:
@@ -132,6 +139,28 @@ class UserForCreation:
         :type comment: str
         """
         self._comment = comment
+
+    @property
+    def is_privilege(self):
+        """Gets the is_privilege of this UserForCreation.
+
+        是否创建高权限用户。 • 若为true，则不用传hosts、databases参数。
+
+        :return: The is_privilege of this UserForCreation.
+        :rtype: bool
+        """
+        return self._is_privilege
+
+    @is_privilege.setter
+    def is_privilege(self, is_privilege):
+        """Sets the is_privilege of this UserForCreation.
+
+        是否创建高权限用户。 • 若为true，则不用传hosts、databases参数。
+
+        :param is_privilege: The is_privilege of this UserForCreation.
+        :type is_privilege: bool
+        """
+        self._is_privilege = is_privilege
 
     @property
     def hosts(self):

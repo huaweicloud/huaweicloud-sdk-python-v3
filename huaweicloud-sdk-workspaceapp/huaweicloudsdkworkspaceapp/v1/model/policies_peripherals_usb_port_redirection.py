@@ -31,7 +31,7 @@ class PoliciesPeripheralsUsbPortRedirection:
 
         The model defined in huaweicloud sdk
 
-        :param usb_enable: 是否开启USB端口重定向。 - false：表示关闭。 - true：表示开启。
+        :param usb_enable: 是否开启USB端口重定向。取值为： - false：表示关闭。 - true：表示开启。
         :type usb_enable: bool
         :param options: 
         :type options: :class:`huaweicloudsdkworkspaceapp.v1.UsbPortRedirectionOptions`
@@ -52,7 +52,7 @@ class PoliciesPeripheralsUsbPortRedirection:
     def usb_enable(self):
         """Gets the usb_enable of this PoliciesPeripheralsUsbPortRedirection.
 
-        是否开启USB端口重定向。 - false：表示关闭。 - true：表示开启。
+        是否开启USB端口重定向。取值为： - false：表示关闭。 - true：表示开启。
 
         :return: The usb_enable of this PoliciesPeripheralsUsbPortRedirection.
         :rtype: bool
@@ -63,7 +63,7 @@ class PoliciesPeripheralsUsbPortRedirection:
     def usb_enable(self, usb_enable):
         """Sets the usb_enable of this PoliciesPeripheralsUsbPortRedirection.
 
-        是否开启USB端口重定向。 - false：表示关闭。 - true：表示开启。
+        是否开启USB端口重定向。取值为： - false：表示关闭。 - true：表示开启。
 
         :param usb_enable: The usb_enable of this PoliciesPeripheralsUsbPortRedirection.
         :type usb_enable: bool

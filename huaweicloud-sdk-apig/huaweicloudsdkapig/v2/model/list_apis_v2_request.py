@@ -30,7 +30,8 @@ class ListApisV2Request:
         'env_id': 'str',
         'type': 'int',
         'precise_search': 'str',
-        'vpc_channel_name': 'str'
+        'vpc_channel_name': 'str',
+        'return_data_mode': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ListApisV2Request:
         'env_id': 'env_id',
         'type': 'type',
         'precise_search': 'precise_search',
-        'vpc_channel_name': 'vpc_channel_name'
+        'vpc_channel_name': 'vpc_channel_name',
+        'return_data_mode': 'return_data_mode'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None, vpc_channel_name=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None, vpc_channel_name=None, return_data_mode=None):
         """ListApisV2Request
 
         The model defined in huaweicloud sdk
@@ -81,8 +83,10 @@ class ListApisV2Request:
         :type type: int
         :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name、req_uri
         :type precise_search: str
-        :param vpc_channel_name: 负载通道名称。
+        :param vpc_channel_name: 负载通道名称
         :type vpc_channel_name: str
+        :param return_data_mode: 指定API详情中需要包含的额外返回结果，多个参数之间使用“,”隔开，当brief和其他include参数共同使用时，brief不生效。 目前仅支持brief，include_group，include_group_backend。 brief：默认值，不包含额外信息。 include_group：返回结果中包含api_group_info。 include_group_backend：返回结果中包含backend_api。
+        :type return_data_mode: str
         """
         
         
@@ -101,6 +105,7 @@ class ListApisV2Request:
         self._type = None
         self._precise_search = None
         self._vpc_channel_name = None
+        self._return_data_mode = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -130,6 +135,8 @@ class ListApisV2Request:
             self.precise_search = precise_search
         if vpc_channel_name is not None:
             self.vpc_channel_name = vpc_channel_name
+        if return_data_mode is not None:
+            self.return_data_mode = return_data_mode
 
     @property
     def instance_id(self):
@@ -421,7 +428,7 @@ class ListApisV2Request:
     def vpc_channel_name(self):
         """Gets the vpc_channel_name of this ListApisV2Request.
 
-        负载通道名称。
+        负载通道名称
 
         :return: The vpc_channel_name of this ListApisV2Request.
         :rtype: str
@@ -432,12 +439,34 @@ class ListApisV2Request:
     def vpc_channel_name(self, vpc_channel_name):
         """Sets the vpc_channel_name of this ListApisV2Request.
 
-        负载通道名称。
+        负载通道名称
 
         :param vpc_channel_name: The vpc_channel_name of this ListApisV2Request.
         :type vpc_channel_name: str
         """
         self._vpc_channel_name = vpc_channel_name
+
+    @property
+    def return_data_mode(self):
+        """Gets the return_data_mode of this ListApisV2Request.
+
+        指定API详情中需要包含的额外返回结果，多个参数之间使用“,”隔开，当brief和其他include参数共同使用时，brief不生效。 目前仅支持brief，include_group，include_group_backend。 brief：默认值，不包含额外信息。 include_group：返回结果中包含api_group_info。 include_group_backend：返回结果中包含backend_api。
+
+        :return: The return_data_mode of this ListApisV2Request.
+        :rtype: str
+        """
+        return self._return_data_mode
+
+    @return_data_mode.setter
+    def return_data_mode(self, return_data_mode):
+        """Sets the return_data_mode of this ListApisV2Request.
+
+        指定API详情中需要包含的额外返回结果，多个参数之间使用“,”隔开，当brief和其他include参数共同使用时，brief不生效。 目前仅支持brief，include_group，include_group_backend。 brief：默认值，不包含额外信息。 include_group：返回结果中包含api_group_info。 include_group_backend：返回结果中包含backend_api。
+
+        :param return_data_mode: The return_data_mode of this ListApisV2Request.
+        :type return_data_mode: str
+        """
+        self._return_data_mode = return_data_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

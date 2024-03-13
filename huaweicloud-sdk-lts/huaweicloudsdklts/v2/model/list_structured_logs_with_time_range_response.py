@@ -18,51 +18,47 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'list[object]'
+        'body': 'object'
     }
 
     attribute_map = {
-        'result': 'result'
+        'body': 'body'
     }
 
-    def __init__(self, result=None):
+    def __init__(self, body=None):
         """ListStructuredLogsWithTimeRangeResponse
 
         The model defined in huaweicloud sdk
 
-        :param result: 查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
-        :type result: list[object]
+        :param body: 
+        :type body: object
         """
         
         super(ListStructuredLogsWithTimeRangeResponse, self).__init__()
 
-        self._result = None
+        self._body = None
         self.discriminator = None
 
-        if result is not None:
-            self.result = result
+        if body is not None:
+            self.body = body
 
     @property
-    def result(self):
-        """Gets the result of this ListStructuredLogsWithTimeRangeResponse.
+    def body(self):
+        """Gets the body of this ListStructuredLogsWithTimeRangeResponse.
 
-        查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
-
-        :return: The result of this ListStructuredLogsWithTimeRangeResponse.
-        :rtype: list[object]
+        :return: The body of this ListStructuredLogsWithTimeRangeResponse.
+        :rtype: object
         """
-        return self._result
+        return self._body
 
-    @result.setter
-    def result(self, result):
-        """Sets the result of this ListStructuredLogsWithTimeRangeResponse.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ListStructuredLogsWithTimeRangeResponse.
 
-        查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
-
-        :param result: The result of this ListStructuredLogsWithTimeRangeResponse.
-        :type result: list[object]
+        :param body: The body of this ListStructuredLogsWithTimeRangeResponse.
+        :type body: object
         """
-        self._result = result
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

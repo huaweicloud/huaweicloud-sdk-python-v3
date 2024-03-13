@@ -20,7 +20,7 @@ class CreateFunctionTriggerRequestBody:
         'trigger_type_code': 'str',
         'trigger_status': 'str',
         'event_type_code': 'str',
-        'event_data': 'object'
+        'event_data': 'TriggerEventDataRequestBody'
     }
 
     attribute_map = {
@@ -41,8 +41,8 @@ class CreateFunctionTriggerRequestBody:
         :type trigger_status: str
         :param event_type_code: 消息代码。
         :type event_type_code: str
-        :param event_data: 事件结构体。
-        :type event_data: object
+        :param event_data: 
+        :type event_data: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataRequestBody`
         """
         
         
@@ -130,10 +130,8 @@ class CreateFunctionTriggerRequestBody:
     def event_data(self):
         """Gets the event_data of this CreateFunctionTriggerRequestBody.
 
-        事件结构体。
-
         :return: The event_data of this CreateFunctionTriggerRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataRequestBody`
         """
         return self._event_data
 
@@ -141,10 +139,8 @@ class CreateFunctionTriggerRequestBody:
     def event_data(self, event_data):
         """Sets the event_data of this CreateFunctionTriggerRequestBody.
 
-        事件结构体。
-
         :param event_data: The event_data of this CreateFunctionTriggerRequestBody.
-        :type event_data: object
+        :type event_data: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataRequestBody`
         """
         self._event_data = event_data
 

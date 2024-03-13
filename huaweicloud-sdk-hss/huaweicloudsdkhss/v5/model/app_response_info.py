@@ -24,7 +24,9 @@ class AppResponseInfo:
         'app_name': 'str',
         'version': 'str',
         'update_time': 'int',
-        'recent_scan_time': 'int'
+        'recent_scan_time': 'int',
+        'container_id': 'str',
+        'container_name': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class AppResponseInfo:
         'app_name': 'app_name',
         'version': 'version',
         'update_time': 'update_time',
-        'recent_scan_time': 'recent_scan_time'
+        'recent_scan_time': 'recent_scan_time',
+        'container_id': 'container_id',
+        'container_name': 'container_name'
     }
 
-    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, app_name=None, version=None, update_time=None, recent_scan_time=None):
+    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, app_name=None, version=None, update_time=None, recent_scan_time=None, container_id=None, container_name=None):
         """AppResponseInfo
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class AppResponseInfo:
         :type update_time: int
         :param recent_scan_time: 最近扫描时间
         :type recent_scan_time: int
+        :param container_id: 容器id
+        :type container_id: str
+        :param container_name: 容器名称
+        :type container_name: str
         """
         
         
@@ -71,6 +79,8 @@ class AppResponseInfo:
         self._version = None
         self._update_time = None
         self._recent_scan_time = None
+        self._container_id = None
+        self._container_name = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -89,6 +99,10 @@ class AppResponseInfo:
             self.update_time = update_time
         if recent_scan_time is not None:
             self.recent_scan_time = recent_scan_time
+        if container_id is not None:
+            self.container_id = container_id
+        if container_name is not None:
+            self.container_name = container_name
 
     @property
     def agent_id(self):
@@ -265,6 +279,50 @@ class AppResponseInfo:
         :type recent_scan_time: int
         """
         self._recent_scan_time = recent_scan_time
+
+    @property
+    def container_id(self):
+        """Gets the container_id of this AppResponseInfo.
+
+        容器id
+
+        :return: The container_id of this AppResponseInfo.
+        :rtype: str
+        """
+        return self._container_id
+
+    @container_id.setter
+    def container_id(self, container_id):
+        """Sets the container_id of this AppResponseInfo.
+
+        容器id
+
+        :param container_id: The container_id of this AppResponseInfo.
+        :type container_id: str
+        """
+        self._container_id = container_id
+
+    @property
+    def container_name(self):
+        """Gets the container_name of this AppResponseInfo.
+
+        容器名称
+
+        :return: The container_name of this AppResponseInfo.
+        :rtype: str
+        """
+        return self._container_name
+
+    @container_name.setter
+    def container_name(self, container_name):
+        """Sets the container_name of this AppResponseInfo.
+
+        容器名称
+
+        :param container_name: The container_name of this AppResponseInfo.
+        :type container_name: str
+        """
+        self._container_name = container_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

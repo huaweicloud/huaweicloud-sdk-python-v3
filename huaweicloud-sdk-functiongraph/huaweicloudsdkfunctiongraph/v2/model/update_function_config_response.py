@@ -136,9 +136,9 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
-        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
         :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
         :type handler: str
@@ -148,7 +148,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type gpu_memory: int
         :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
         :type cpu: int
-        :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        :param code_type: 函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
         :type code_type: str
         :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
         :type code_url: str
@@ -166,15 +166,15 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type version: str
         :param image_name: 函数版本的内部标识。
         :type image_name: str
-        :param xrole: 函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :param xrole: 函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
         :type xrole: str
-        :param app_xrole: 函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :param app_xrole: 函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
         :type app_xrole: str
         :param description: 函数描述。
         :type description: str
         :param last_modified: 函数最后一次更新时间。
         :type last_modified: datetime
-        :param ephemeral_storage: 临时存储大小。
+        :param ephemeral_storage: 临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
         :type ephemeral_storage: int
         :param func_vpc: 
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -184,9 +184,9 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         :param dependencies: 函数依赖代码包列表。
         :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
-        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
         :type initializer_handler: str
-        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
         :type initializer_timeout: int
         :param pre_stop_handler: 函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
         :type pre_stop_handler: str
@@ -200,7 +200,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type log_group_id: str
         :param log_stream_id: 自定义日志查询流id
         :type log_stream_id: str
-        :param type: v2表示为公测版本,v1为原来版本。
+        :param type: v2表示为正式版本,v1为废弃版本。
         :type type: str
         :param enable_dynamic_memory: 是否启动动态内存配置
         :type enable_dynamic_memory: bool
@@ -537,7 +537,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this UpdateFunctionConfigResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this UpdateFunctionConfigResponse.
         :rtype: str
@@ -548,7 +548,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this UpdateFunctionConfigResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this UpdateFunctionConfigResponse.
         :type runtime: str
@@ -559,7 +559,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def timeout(self):
         """Gets the timeout of this UpdateFunctionConfigResponse.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :return: The timeout of this UpdateFunctionConfigResponse.
         :rtype: int
@@ -570,7 +570,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def timeout(self, timeout):
         """Sets the timeout of this UpdateFunctionConfigResponse.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
         :param timeout: The timeout of this UpdateFunctionConfigResponse.
         :type timeout: int
@@ -669,7 +669,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def code_type(self):
         """Gets the code_type of this UpdateFunctionConfigResponse.
 
-        函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
         :return: The code_type of this UpdateFunctionConfigResponse.
         :rtype: str
@@ -680,7 +680,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def code_type(self, code_type):
         """Sets the code_type of this UpdateFunctionConfigResponse.
 
-        函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
         :param code_type: The code_type of this UpdateFunctionConfigResponse.
         :type code_type: str
@@ -867,7 +867,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def xrole(self):
         """Gets the xrole of this UpdateFunctionConfigResponse.
 
-        函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
         :return: The xrole of this UpdateFunctionConfigResponse.
         :rtype: str
@@ -878,7 +878,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def xrole(self, xrole):
         """Sets the xrole of this UpdateFunctionConfigResponse.
 
-        函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
         :param xrole: The xrole of this UpdateFunctionConfigResponse.
         :type xrole: str
@@ -889,7 +889,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def app_xrole(self):
         """Gets the app_xrole of this UpdateFunctionConfigResponse.
 
-        函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
         :return: The app_xrole of this UpdateFunctionConfigResponse.
         :rtype: str
@@ -900,7 +900,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def app_xrole(self, app_xrole):
         """Sets the app_xrole of this UpdateFunctionConfigResponse.
 
-        函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
         :param app_xrole: The app_xrole of this UpdateFunctionConfigResponse.
         :type app_xrole: str
@@ -955,7 +955,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def ephemeral_storage(self):
         """Gets the ephemeral_storage of this UpdateFunctionConfigResponse.
 
-        临时存储大小。
+        临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
         :return: The ephemeral_storage of this UpdateFunctionConfigResponse.
         :rtype: int
@@ -966,7 +966,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def ephemeral_storage(self, ephemeral_storage):
         """Sets the ephemeral_storage of this UpdateFunctionConfigResponse.
 
-        临时存储大小。
+        临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
         :param ephemeral_storage: The ephemeral_storage of this UpdateFunctionConfigResponse.
         :type ephemeral_storage: int
@@ -1053,7 +1053,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def initializer_handler(self):
         """Gets the initializer_handler of this UpdateFunctionConfigResponse.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :return: The initializer_handler of this UpdateFunctionConfigResponse.
         :rtype: str
@@ -1064,7 +1064,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def initializer_handler(self, initializer_handler):
         """Sets the initializer_handler of this UpdateFunctionConfigResponse.
 
-        函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :param initializer_handler: The initializer_handler of this UpdateFunctionConfigResponse.
         :type initializer_handler: str
@@ -1075,7 +1075,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def initializer_timeout(self):
         """Gets the initializer_timeout of this UpdateFunctionConfigResponse.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :return: The initializer_timeout of this UpdateFunctionConfigResponse.
         :rtype: int
@@ -1086,7 +1086,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def initializer_timeout(self, initializer_timeout):
         """Sets the initializer_timeout of this UpdateFunctionConfigResponse.
 
-        初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
         :param initializer_timeout: The initializer_timeout of this UpdateFunctionConfigResponse.
         :type initializer_timeout: int
@@ -1229,7 +1229,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def type(self):
         """Gets the type of this UpdateFunctionConfigResponse.
 
-        v2表示为公测版本,v1为原来版本。
+        v2表示为正式版本,v1为废弃版本。
 
         :return: The type of this UpdateFunctionConfigResponse.
         :rtype: str
@@ -1240,7 +1240,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this UpdateFunctionConfigResponse.
 
-        v2表示为公测版本,v1为原来版本。
+        v2表示为正式版本,v1为废弃版本。
 
         :param type: The type of this UpdateFunctionConfigResponse.
         :type type: str

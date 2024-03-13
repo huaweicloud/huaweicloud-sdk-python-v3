@@ -20,6 +20,7 @@ from huaweicloudsdkmrs.v1.model.cluster_scaling_params import ClusterScalingPara
 from huaweicloudsdkmrs.v1.model.cluster_scaling_req import ClusterScalingReq
 from huaweicloudsdkmrs.v1.model.component_amb import ComponentAmb
 from huaweicloudsdkmrs.v1.model.component_amb_v11 import ComponentAmbV11
+from huaweicloudsdkmrs.v1.model.component_external_datasource import ComponentExternalDatasource
 from huaweicloudsdkmrs.v1.model.create_and_execute_job_request import CreateAndExecuteJobRequest
 from huaweicloudsdkmrs.v1.model.create_and_execute_job_response import CreateAndExecuteJobResponse
 from huaweicloudsdkmrs.v1.model.create_cluster_req_v11 import CreateClusterReqV11
@@ -36,6 +37,7 @@ from huaweicloudsdkmrs.v1.model.delete_cluster_tag_request import DeleteClusterT
 from huaweicloudsdkmrs.v1.model.delete_cluster_tag_response import DeleteClusterTagResponse
 from huaweicloudsdkmrs.v1.model.delete_job_execution_request import DeleteJobExecutionRequest
 from huaweicloudsdkmrs.v1.model.delete_job_execution_response import DeleteJobExecutionResponse
+from huaweicloudsdkmrs.v1.model.flavor_lists import FlavorLists
 from huaweicloudsdkmrs.v1.model.host_model import HostModel
 from huaweicloudsdkmrs.v1.model.job_exe_result import JobExeResult
 from huaweicloudsdkmrs.v1.model.list_all_tags_request import ListAllTagsRequest
@@ -55,15 +57,20 @@ from huaweicloudsdkmrs.v1.model.list_hosts_response import ListHostsResponse
 from huaweicloudsdkmrs.v1.model.list_resource_req import ListResourceReq
 from huaweicloudsdkmrs.v1.model.mrs_resource import MRSResource
 from huaweicloudsdkmrs.v1.model.match import Match
+from huaweicloudsdkmrs.v1.model.node_constraint import NodeConstraint
+from huaweicloudsdkmrs.v1.model.node_constraints import NodeConstraints
 from huaweicloudsdkmrs.v1.model.node_group_v10 import NodeGroupV10
 from huaweicloudsdkmrs.v1.model.node_group_v11 import NodeGroupV11
 from huaweicloudsdkmrs.v1.model.resources_plan import ResourcesPlan
+from huaweicloudsdkmrs.v1.model.role_deploy_meta import RoleDeployMeta
 from huaweicloudsdkmrs.v1.model.rule import Rule
 from huaweicloudsdkmrs.v1.model.scale_script import ScaleScript
 from huaweicloudsdkmrs.v1.model.show_cluster_details_request import ShowClusterDetailsRequest
 from huaweicloudsdkmrs.v1.model.show_cluster_details_response import ShowClusterDetailsResponse
 from huaweicloudsdkmrs.v1.model.show_job_exes_request import ShowJobExesRequest
 from huaweicloudsdkmrs.v1.model.show_job_exes_response import ShowJobExesResponse
+from huaweicloudsdkmrs.v1.model.show_mrs_version_metadata_request import ShowMrsVersionMetadataRequest
+from huaweicloudsdkmrs.v1.model.show_mrs_version_metadata_response import ShowMrsVersionMetadataResponse
 from huaweicloudsdkmrs.v1.model.submit_job_req_v11 import SubmitJobReqV11
 from huaweicloudsdkmrs.v1.model.tag import Tag
 from huaweicloudsdkmrs.v1.model.tag_plain import TagPlain
@@ -73,3 +80,5 @@ from huaweicloudsdkmrs.v1.model.task_node_info import TaskNodeInfo
 from huaweicloudsdkmrs.v1.model.trigger import Trigger
 from huaweicloudsdkmrs.v1.model.update_cluster_scaling_request import UpdateClusterScalingRequest
 from huaweicloudsdkmrs.v1.model.update_cluster_scaling_response import UpdateClusterScalingResponse
+from huaweicloudsdkmrs.v1.model.version_component import VersionComponent
+from huaweicloudsdkmrs.v1.model.version_constraint import VersionConstraint

@@ -17,6 +17,7 @@ class ListEventRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'enterprise_project_id': 'str',
         'recent': 'str',
         '_from': 'int',
@@ -28,6 +29,7 @@ class ListEventRequest:
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'enterprise_project_id': 'enterprise_project_id',
         'recent': 'recent',
         '_from': 'from',
@@ -38,11 +40,13 @@ class ListEventRequest:
         'pagesize': 'pagesize'
     }
 
-    def __init__(self, enterprise_project_id=None, recent=None, _from=None, to=None, attacks=None, hosts=None, page=None, pagesize=None):
+    def __init__(self, x_language=None, enterprise_project_id=None, recent=None, _from=None, to=None, attacks=None, hosts=None, page=None, pagesize=None):
         """ListEventRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_language: 语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+        :type x_language: str
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param recent: 查询日志的时间范围（不能和from、to同时使用，同时使用以recent为准），且recent参数与from、to必须使用其中一个。当同时使用recent参数与from、to时，以recent参数为准
@@ -63,6 +67,7 @@ class ListEventRequest:
         
         
 
+        self._x_language = None
         self._enterprise_project_id = None
         self._recent = None
         self.__from = None
@@ -73,6 +78,8 @@ class ListEventRequest:
         self._pagesize = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if recent is not None:
@@ -89,6 +96,28 @@ class ListEventRequest:
             self.page = page
         if pagesize is not None:
             self.pagesize = pagesize
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ListEventRequest.
+
+        语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+
+        :return: The x_language of this ListEventRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ListEventRequest.
+
+        语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+
+        :param x_language: The x_language of this ListEventRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     @property
     def enterprise_project_id(self):

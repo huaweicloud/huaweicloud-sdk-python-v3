@@ -45,7 +45,7 @@ class Event2alarmRuleBodyTriggerPolicies:
         :type id: int
         :param name: 事件名称
         :type name: str
-        :param trigger_type: 触发类型
+        :param trigger_type: 触发类型。accumulative: 累计触发，immediately: 立即触发
         :type trigger_type: str
         :param period: 触发周期
         :type period: int
@@ -131,7 +131,7 @@ class Event2alarmRuleBodyTriggerPolicies:
     def trigger_type(self):
         """Gets the trigger_type of this Event2alarmRuleBodyTriggerPolicies.
 
-        触发类型
+        触发类型。accumulative: 累计触发，immediately: 立即触发
 
         :return: The trigger_type of this Event2alarmRuleBodyTriggerPolicies.
         :rtype: str
@@ -142,7 +142,7 @@ class Event2alarmRuleBodyTriggerPolicies:
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this Event2alarmRuleBodyTriggerPolicies.
 
-        触发类型
+        触发类型。accumulative: 累计触发，immediately: 立即触发
 
         :param trigger_type: The trigger_type of this Event2alarmRuleBodyTriggerPolicies.
         :type trigger_type: str

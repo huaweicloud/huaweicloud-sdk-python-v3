@@ -20,22 +20,26 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
     openapi_types = {
         'basic_info': 'DrugJobDto',
         'receptor': 'PocketMolDesignReceptorDto',
-        'ligands': 'list[DrugFile]',
+        'ligands': 'list[PocketFragment]',
+        'num_trials': 'int',
         'model_list': 'list[BasicDrugModel]',
         'molecular_weight': 'list[int]',
-        'optimization_mode': 'OptimizationMode'
+        'optimization_mode': 'OptimizationMode',
+        'cluster_result': 'ClusterJobRsp'
     }
 
     attribute_map = {
         'basic_info': 'basic_info',
         'receptor': 'receptor',
         'ligands': 'ligands',
+        'num_trials': 'num_trials',
         'model_list': 'model_list',
         'molecular_weight': 'molecular_weight',
-        'optimization_mode': 'optimization_mode'
+        'optimization_mode': 'optimization_mode',
+        'cluster_result': 'cluster_result'
     }
 
-    def __init__(self, basic_info=None, receptor=None, ligands=None, model_list=None, molecular_weight=None, optimization_mode=None):
+    def __init__(self, basic_info=None, receptor=None, ligands=None, num_trials=None, model_list=None, molecular_weight=None, optimization_mode=None, cluster_result=None):
         """ShowPocketMolDesignJobResponse
 
         The model defined in huaweicloud sdk
@@ -45,13 +49,17 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
         :param receptor: 
         :type receptor: :class:`huaweicloudsdkeihealth.v1.PocketMolDesignReceptorDto`
         :param ligands: 配体文件列表
-        :type ligands: list[:class:`huaweicloudsdkeihealth.v1.DrugFile`]
+        :type ligands: list[:class:`huaweicloudsdkeihealth.v1.PocketFragment`]
+        :param num_trials: 生成分子数量
+        :type num_trials: int
         :param model_list: 模型列表
         :type model_list: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
         :param molecular_weight: 分子量范围
         :type molecular_weight: list[int]
         :param optimization_mode: 
         :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
+        :param cluster_result: 
+        :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
         """
         
         super(ShowPocketMolDesignJobResponse, self).__init__()
@@ -59,9 +67,11 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
         self._basic_info = None
         self._receptor = None
         self._ligands = None
+        self._num_trials = None
         self._model_list = None
         self._molecular_weight = None
         self._optimization_mode = None
+        self._cluster_result = None
         self.discriminator = None
 
         if basic_info is not None:
@@ -70,12 +80,16 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
             self.receptor = receptor
         if ligands is not None:
             self.ligands = ligands
+        if num_trials is not None:
+            self.num_trials = num_trials
         if model_list is not None:
             self.model_list = model_list
         if molecular_weight is not None:
             self.molecular_weight = molecular_weight
         if optimization_mode is not None:
             self.optimization_mode = optimization_mode
+        if cluster_result is not None:
+            self.cluster_result = cluster_result
 
     @property
     def basic_info(self):
@@ -120,7 +134,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
         配体文件列表
 
         :return: The ligands of this ShowPocketMolDesignJobResponse.
-        :rtype: list[:class:`huaweicloudsdkeihealth.v1.DrugFile`]
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.PocketFragment`]
         """
         return self._ligands
 
@@ -131,9 +145,31 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
         配体文件列表
 
         :param ligands: The ligands of this ShowPocketMolDesignJobResponse.
-        :type ligands: list[:class:`huaweicloudsdkeihealth.v1.DrugFile`]
+        :type ligands: list[:class:`huaweicloudsdkeihealth.v1.PocketFragment`]
         """
         self._ligands = ligands
+
+    @property
+    def num_trials(self):
+        """Gets the num_trials of this ShowPocketMolDesignJobResponse.
+
+        生成分子数量
+
+        :return: The num_trials of this ShowPocketMolDesignJobResponse.
+        :rtype: int
+        """
+        return self._num_trials
+
+    @num_trials.setter
+    def num_trials(self, num_trials):
+        """Sets the num_trials of this ShowPocketMolDesignJobResponse.
+
+        生成分子数量
+
+        :param num_trials: The num_trials of this ShowPocketMolDesignJobResponse.
+        :type num_trials: int
+        """
+        self._num_trials = num_trials
 
     @property
     def model_list(self):
@@ -196,6 +232,24 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
         :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
         """
         self._optimization_mode = optimization_mode
+
+    @property
+    def cluster_result(self):
+        """Gets the cluster_result of this ShowPocketMolDesignJobResponse.
+
+        :return: The cluster_result of this ShowPocketMolDesignJobResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        """
+        return self._cluster_result
+
+    @cluster_result.setter
+    def cluster_result(self, cluster_result):
+        """Sets the cluster_result of this ShowPocketMolDesignJobResponse.
+
+        :param cluster_result: The cluster_result of this ShowPocketMolDesignJobResponse.
+        :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        """
+        self._cluster_result = cluster_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

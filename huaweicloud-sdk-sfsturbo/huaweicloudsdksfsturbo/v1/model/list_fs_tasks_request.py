@@ -41,7 +41,7 @@ class ListFsTasksRequest:
         :type feature: str
         :param marker: marker，取值为task_id
         :type marker: str
-        :param limit: limit, 取值为正整数
+        :param limit: limit, 取值为正整数. 默认为20，最大值为100
         :type limit: int
         """
         
@@ -130,7 +130,7 @@ class ListFsTasksRequest:
     def limit(self):
         """Gets the limit of this ListFsTasksRequest.
 
-        limit, 取值为正整数
+        limit, 取值为正整数. 默认为20，最大值为100
 
         :return: The limit of this ListFsTasksRequest.
         :rtype: int
@@ -141,7 +141,7 @@ class ListFsTasksRequest:
     def limit(self, limit):
         """Sets the limit of this ListFsTasksRequest.
 
-        limit, 取值为正整数
+        limit, 取值为正整数. 默认为20，最大值为100
 
         :param limit: The limit of this ListFsTasksRequest.
         :type limit: int

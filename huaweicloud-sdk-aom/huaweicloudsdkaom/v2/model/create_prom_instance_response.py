@@ -18,7 +18,7 @@ class CreatePromInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'prometheus': 'list[PromInstanceEpsModel]'
+        'prometheus': 'list[PromInstanceEpsCreateModel]'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class CreatePromInstanceResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param prometheus: Prometheus实例名称列表。
-        :type prometheus: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`]
+        :type prometheus: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsCreateModel`]
         """
         
         super(CreatePromInstanceResponse, self).__init__()
@@ -49,7 +49,7 @@ class CreatePromInstanceResponse(SdkResponse):
         Prometheus实例名称列表。
 
         :return: The prometheus of this CreatePromInstanceResponse.
-        :rtype: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsCreateModel`]
         """
         return self._prometheus
 
@@ -60,7 +60,7 @@ class CreatePromInstanceResponse(SdkResponse):
         Prometheus实例名称列表。
 
         :param prometheus: The prometheus of this CreatePromInstanceResponse.
-        :type prometheus: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsModel`]
+        :type prometheus: list[:class:`huaweicloudsdkaom.v2.PromInstanceEpsCreateModel`]
         """
         self._prometheus = prometheus
 

@@ -23,7 +23,8 @@ class AccessConfigurationPort:
         'default_certificate': 'str',
         'certificate': 'str',
         'policy': 'str',
-        'path': 'list[AccessConfigurationHttpPath]'
+        'paths': 'list[AccessConfigurationHttpPath]',
+        'elb_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class AccessConfigurationPort:
         'default_certificate': 'default_certificate',
         'certificate': 'certificate',
         'policy': 'policy',
-        'path': 'path'
+        'paths': 'paths',
+        'elb_id': 'elb_id'
     }
 
-    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, path=None):
+    def __init__(self, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, paths=None, elb_id=None):
         """AccessConfigurationPort
 
         The model defined in huaweicloud sdk
@@ -45,7 +47,7 @@ class AccessConfigurationPort:
         :type target_port: str
         :param port: 访问端口。
         :type port: str
-        :param protocol: 协议。
+        :param protocol: 协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
         :type protocol: str
         :param default_certificate: 默认证书，访问方式配置为转发策略且协议为HTTPS时配置，未配置域名证书对时使用默认证书。
         :type default_certificate: str
@@ -53,8 +55,10 @@ class AccessConfigurationPort:
         :type certificate: str
         :param policy: 安全策略。
         :type policy: str
-        :param path: 
-        :type path: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
+        :param paths: 
+        :type paths: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
+        :param elb_id: 用户选择的elb的ID。
+        :type elb_id: str
         """
         
         
@@ -65,7 +69,8 @@ class AccessConfigurationPort:
         self._default_certificate = None
         self._certificate = None
         self._policy = None
-        self._path = None
+        self._paths = None
+        self._elb_id = None
         self.discriminator = None
 
         if target_port is not None:
@@ -80,8 +85,10 @@ class AccessConfigurationPort:
             self.certificate = certificate
         if policy is not None:
             self.policy = policy
-        if path is not None:
-            self.path = path
+        if paths is not None:
+            self.paths = paths
+        if elb_id is not None:
+            self.elb_id = elb_id
 
     @property
     def target_port(self):
@@ -131,7 +138,7 @@ class AccessConfigurationPort:
     def protocol(self):
         """Gets the protocol of this AccessConfigurationPort.
 
-        协议。
+        协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
 
         :return: The protocol of this AccessConfigurationPort.
         :rtype: str
@@ -142,7 +149,7 @@ class AccessConfigurationPort:
     def protocol(self, protocol):
         """Sets the protocol of this AccessConfigurationPort.
 
-        协议。
+        协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
 
         :param protocol: The protocol of this AccessConfigurationPort.
         :type protocol: str
@@ -216,22 +223,44 @@ class AccessConfigurationPort:
         self._policy = policy
 
     @property
-    def path(self):
-        """Gets the path of this AccessConfigurationPort.
+    def paths(self):
+        """Gets the paths of this AccessConfigurationPort.
 
-        :return: The path of this AccessConfigurationPort.
+        :return: The paths of this AccessConfigurationPort.
         :rtype: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
         """
-        return self._path
+        return self._paths
 
-    @path.setter
-    def path(self, path):
-        """Sets the path of this AccessConfigurationPort.
+    @paths.setter
+    def paths(self, paths):
+        """Sets the paths of this AccessConfigurationPort.
 
-        :param path: The path of this AccessConfigurationPort.
-        :type path: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
+        :param paths: The paths of this AccessConfigurationPort.
+        :type paths: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
         """
-        self._path = path
+        self._paths = paths
+
+    @property
+    def elb_id(self):
+        """Gets the elb_id of this AccessConfigurationPort.
+
+        用户选择的elb的ID。
+
+        :return: The elb_id of this AccessConfigurationPort.
+        :rtype: str
+        """
+        return self._elb_id
+
+    @elb_id.setter
+    def elb_id(self, elb_id):
+        """Sets the elb_id of this AccessConfigurationPort.
+
+        用户选择的elb的ID。
+
+        :param elb_id: The elb_id of this AccessConfigurationPort.
+        :type elb_id: str
+        """
+        self._elb_id = elb_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

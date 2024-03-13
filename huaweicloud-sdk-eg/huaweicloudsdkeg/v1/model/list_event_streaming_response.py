@@ -18,54 +18,116 @@ class ListEventStreamingResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[EventStreamingDetail]',
+        'total': 'int',
+        'size': 'int',
+        'items': 'list[EventStreamingDetail]',
         'x_request_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body',
+        'total': 'total',
+        'size': 'size',
+        'items': 'items',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, body=None, x_request_id=None):
+    def __init__(self, total=None, size=None, items=None, x_request_id=None):
         """ListEventStreamingResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: list[:class:`huaweicloudsdkeg.v1.EventStreamingDetail`]
+        :param total: 总数
+        :type total: int
+        :param size: 本页数量
+        :type size: int
+        :param items: 对象列表
+        :type items: list[:class:`huaweicloudsdkeg.v1.EventStreamingDetail`]
         :param x_request_id: 
         :type x_request_id: str
         """
         
         super(ListEventStreamingResponse, self).__init__()
 
-        self._body = None
+        self._total = None
+        self._size = None
+        self._items = None
         self._x_request_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if total is not None:
+            self.total = total
+        if size is not None:
+            self.size = size
+        if items is not None:
+            self.items = items
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
     @property
-    def body(self):
-        """Gets the body of this ListEventStreamingResponse.
+    def total(self):
+        """Gets the total of this ListEventStreamingResponse.
 
-        :return: The body of this ListEventStreamingResponse.
+        总数
+
+        :return: The total of this ListEventStreamingResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListEventStreamingResponse.
+
+        总数
+
+        :param total: The total of this ListEventStreamingResponse.
+        :type total: int
+        """
+        self._total = total
+
+    @property
+    def size(self):
+        """Gets the size of this ListEventStreamingResponse.
+
+        本页数量
+
+        :return: The size of this ListEventStreamingResponse.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this ListEventStreamingResponse.
+
+        本页数量
+
+        :param size: The size of this ListEventStreamingResponse.
+        :type size: int
+        """
+        self._size = size
+
+    @property
+    def items(self):
+        """Gets the items of this ListEventStreamingResponse.
+
+        对象列表
+
+        :return: The items of this ListEventStreamingResponse.
         :rtype: list[:class:`huaweicloudsdkeg.v1.EventStreamingDetail`]
         """
-        return self._body
+        return self._items
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListEventStreamingResponse.
+    @items.setter
+    def items(self, items):
+        """Sets the items of this ListEventStreamingResponse.
 
-        :param body: The body of this ListEventStreamingResponse.
-        :type body: list[:class:`huaweicloudsdkeg.v1.EventStreamingDetail`]
+        对象列表
+
+        :param items: The items of this ListEventStreamingResponse.
+        :type items: list[:class:`huaweicloudsdkeg.v1.EventStreamingDetail`]
         """
-        self._body = body
+        self._items = items
 
     @property
     def x_request_id(self):

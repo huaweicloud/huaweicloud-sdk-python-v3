@@ -37,7 +37,9 @@ class ShareInfo:
         'status': 'str',
         'sub_status': 'str',
         'subnet_id': 'str',
-        'vpc_id': 'str'
+        'vpc_id': 'str',
+        'enterprise_project_id': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -61,10 +63,12 @@ class ShareInfo:
         'status': 'status',
         'sub_status': 'sub_status',
         'subnet_id': 'subnet_id',
-        'vpc_id': 'vpc_id'
+        'vpc_id': 'vpc_id',
+        'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, action_progress=None, version=None, avail_capacity=None, availability_zone=None, az_name=None, created_at=None, crypt_key_id=None, expand_type=None, export_location=None, id=None, name=None, pay_model=None, region=None, security_group_id=None, share_proto=None, share_type=None, size=None, status=None, sub_status=None, subnet_id=None, vpc_id=None):
+    def __init__(self, action_progress=None, version=None, avail_capacity=None, availability_zone=None, az_name=None, created_at=None, crypt_key_id=None, expand_type=None, export_location=None, id=None, name=None, pay_model=None, region=None, security_group_id=None, share_proto=None, share_type=None, size=None, status=None, sub_status=None, subnet_id=None, vpc_id=None, enterprise_project_id=None, tags=None):
         """ShareInfo
 
         The model defined in huaweicloud sdk
@@ -111,6 +115,10 @@ class ShareInfo:
         :type subnet_id: str
         :param vpc_id: 用户指定的VPC ID。
         :type vpc_id: str
+        :param enterprise_project_id: SFS Turbo文件系统绑定的企业项目ID。
+        :type enterprise_project_id: str
+        :param tags: tag标签的列表。
+        :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         
         
@@ -136,6 +144,8 @@ class ShareInfo:
         self._sub_status = None
         self._subnet_id = None
         self._vpc_id = None
+        self._enterprise_project_id = None
+        self._tags = None
         self.discriminator = None
 
         if action_progress is not None:
@@ -180,6 +190,10 @@ class ShareInfo:
             self.subnet_id = subnet_id
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def action_progress(self):
@@ -638,6 +652,50 @@ class ShareInfo:
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShareInfo.
+
+        SFS Turbo文件系统绑定的企业项目ID。
+
+        :return: The enterprise_project_id of this ShareInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShareInfo.
+
+        SFS Turbo文件系统绑定的企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ShareInfo.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this ShareInfo.
+
+        tag标签的列表。
+
+        :return: The tags of this ShareInfo.
+        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ShareInfo.
+
+        tag标签的列表。
+
+        :param tags: The tags of this ShareInfo.
+        :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

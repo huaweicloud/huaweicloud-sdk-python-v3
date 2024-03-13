@@ -25,7 +25,9 @@ class CreatePoolReq:
         'name': 'str',
         'description': 'str',
         'admin_state_up': 'bool',
-        'session_persistence': 'SessionPersistence'
+        'session_persistence': 'SessionPersistence',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class CreatePoolReq:
         'name': 'name',
         'description': 'description',
         'admin_state_up': 'admin_state_up',
-        'session_persistence': 'session_persistence'
+        'session_persistence': 'session_persistence',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, protocol=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, tenant_id=None, name=None, description=None, admin_state_up=None, session_persistence=None):
+    def __init__(self, protocol=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, tenant_id=None, name=None, description=None, admin_state_up=None, session_persistence=None, protection_status=None, protection_reason=None):
         """CreatePoolReq
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class CreatePoolReq:
         :type admin_state_up: bool
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -76,6 +84,8 @@ class CreatePoolReq:
         self._description = None
         self._admin_state_up = None
         self._session_persistence = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         self.protocol = protocol
@@ -94,6 +104,10 @@ class CreatePoolReq:
             self.admin_state_up = admin_state_up
         if session_persistence is not None:
             self.session_persistence = session_persistence
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def protocol(self):
@@ -288,6 +302,50 @@ class CreatePoolReq:
         :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
         self._session_persistence = session_persistence
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this CreatePoolReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this CreatePoolReq.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this CreatePoolReq.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this CreatePoolReq.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this CreatePoolReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this CreatePoolReq.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this CreatePoolReq.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this CreatePoolReq.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

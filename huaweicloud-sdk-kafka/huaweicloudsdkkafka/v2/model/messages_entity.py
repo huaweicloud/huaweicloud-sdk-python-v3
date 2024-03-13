@@ -59,7 +59,7 @@ class MessagesEntity:
         :type value: str
         :param size: 消息大小。
         :type size: int
-        :param timestamp: topic名称。
+        :param timestamp: 生产消息的时间。 格式为Unix时间戳。单位为毫秒。
         :type timestamp: int
         :param huge_message: 大数据标识。
         :type huge_message: bool
@@ -225,7 +225,7 @@ class MessagesEntity:
     def timestamp(self):
         """Gets the timestamp of this MessagesEntity.
 
-        topic名称。
+        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
         :return: The timestamp of this MessagesEntity.
         :rtype: int
@@ -236,7 +236,7 @@ class MessagesEntity:
     def timestamp(self, timestamp):
         """Sets the timestamp of this MessagesEntity.
 
-        topic名称。
+        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
         :param timestamp: The timestamp of this MessagesEntity.
         :type timestamp: int

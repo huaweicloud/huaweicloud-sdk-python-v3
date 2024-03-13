@@ -22,7 +22,8 @@ class ShowDockingJobResponse(SdkResponse):
         'receptors': 'list[DockingReceptorDto]',
         'ligands': 'list[LigandDto]',
         'job_result': 'JobResult',
-        'part_failed_reason': 'list[FailedReasonRecord]'
+        'part_failed_reason': 'list[FailedReasonRecord]',
+        'cluster_result': 'ClusterJobRsp'
     }
 
     attribute_map = {
@@ -30,10 +31,11 @@ class ShowDockingJobResponse(SdkResponse):
         'receptors': 'receptors',
         'ligands': 'ligands',
         'job_result': 'job_result',
-        'part_failed_reason': 'part_failed_reason'
+        'part_failed_reason': 'part_failed_reason',
+        'cluster_result': 'cluster_result'
     }
 
-    def __init__(self, basic_info=None, receptors=None, ligands=None, job_result=None, part_failed_reason=None):
+    def __init__(self, basic_info=None, receptors=None, ligands=None, job_result=None, part_failed_reason=None, cluster_result=None):
         """ShowDockingJobResponse
 
         The model defined in huaweicloud sdk
@@ -48,6 +50,8 @@ class ShowDockingJobResponse(SdkResponse):
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`
         :param part_failed_reason: 部分失败原因和数量
         :type part_failed_reason: list[:class:`huaweicloudsdkeihealth.v1.FailedReasonRecord`]
+        :param cluster_result: 
+        :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
         """
         
         super(ShowDockingJobResponse, self).__init__()
@@ -57,6 +61,7 @@ class ShowDockingJobResponse(SdkResponse):
         self._ligands = None
         self._job_result = None
         self._part_failed_reason = None
+        self._cluster_result = None
         self.discriminator = None
 
         if basic_info is not None:
@@ -69,6 +74,8 @@ class ShowDockingJobResponse(SdkResponse):
             self.job_result = job_result
         if part_failed_reason is not None:
             self.part_failed_reason = part_failed_reason
+        if cluster_result is not None:
+            self.cluster_result = cluster_result
 
     @property
     def basic_info(self):
@@ -171,6 +178,24 @@ class ShowDockingJobResponse(SdkResponse):
         :type part_failed_reason: list[:class:`huaweicloudsdkeihealth.v1.FailedReasonRecord`]
         """
         self._part_failed_reason = part_failed_reason
+
+    @property
+    def cluster_result(self):
+        """Gets the cluster_result of this ShowDockingJobResponse.
+
+        :return: The cluster_result of this ShowDockingJobResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        """
+        return self._cluster_result
+
+    @cluster_result.setter
+    def cluster_result(self, cluster_result):
+        """Sets the cluster_result of this ShowDockingJobResponse.
+
+        :param cluster_result: The cluster_result of this ShowDockingJobResponse.
+        :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
+        """
+        self._cluster_result = cluster_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

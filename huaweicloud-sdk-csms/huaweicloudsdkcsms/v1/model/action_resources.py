@@ -20,17 +20,19 @@ class ActionResources:
         'resource_id': 'str',
         'resource_detail': 'Secret',
         'resource_name': 'str',
-        'tags': 'list[TagItem]'
+        'tags': 'list[TagItem]',
+        'sys_tags': 'list[SysTag]'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
         'resource_detail': 'resource_detail',
         'resource_name': 'resource_name',
-        'tags': 'tags'
+        'tags': 'tags',
+        'sys_tags': 'sys_tags'
     }
 
-    def __init__(self, resource_id=None, resource_detail=None, resource_name=None, tags=None):
+    def __init__(self, resource_id=None, resource_detail=None, resource_name=None, tags=None, sys_tags=None):
         """ActionResources
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ActionResources:
         :type resource_name: str
         :param tags: 标签列表，没有标签，数组默认为空。
         :type tags: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        :param sys_tags: 系统标签列表，没有标签，数组默认为空
+        :type sys_tags: list[:class:`huaweicloudsdkcsms.v1.SysTag`]
         """
         
         
@@ -51,6 +55,7 @@ class ActionResources:
         self._resource_detail = None
         self._resource_name = None
         self._tags = None
+        self._sys_tags = None
         self.discriminator = None
 
         if resource_id is not None:
@@ -61,6 +66,8 @@ class ActionResources:
             self.resource_name = resource_name
         if tags is not None:
             self.tags = tags
+        if sys_tags is not None:
+            self.sys_tags = sys_tags
 
     @property
     def resource_id(self):
@@ -145,6 +152,28 @@ class ActionResources:
         :type tags: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
         """
         self._tags = tags
+
+    @property
+    def sys_tags(self):
+        """Gets the sys_tags of this ActionResources.
+
+        系统标签列表，没有标签，数组默认为空
+
+        :return: The sys_tags of this ActionResources.
+        :rtype: list[:class:`huaweicloudsdkcsms.v1.SysTag`]
+        """
+        return self._sys_tags
+
+    @sys_tags.setter
+    def sys_tags(self, sys_tags):
+        """Sets the sys_tags of this ActionResources.
+
+        系统标签列表，没有标签，数组默认为空
+
+        :param sys_tags: The sys_tags of this ActionResources.
+        :type sys_tags: list[:class:`huaweicloudsdkcsms.v1.SysTag`]
+        """
+        self._sys_tags = sys_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

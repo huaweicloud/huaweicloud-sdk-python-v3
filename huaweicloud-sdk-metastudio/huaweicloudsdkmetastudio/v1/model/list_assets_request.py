@@ -34,7 +34,10 @@ class ListAssetsRequest:
         'sex': 'str',
         'language': 'str',
         'system_property': 'str',
-        'action_editable': 'bool'
+        'action_editable': 'bool',
+        'is_movable': 'bool',
+        'voice_provider': 'str',
+        'role': 'str'
     }
 
     attribute_map = {
@@ -55,15 +58,18 @@ class ListAssetsRequest:
         'sex': 'sex',
         'language': 'language',
         'system_property': 'system_property',
-        'action_editable': 'action_editable'
+        'action_editable': 'action_editable',
+        'is_movable': 'is_movable',
+        'voice_provider': 'voice_provider',
+        'role': 'role'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None):
         """ListAssetsRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
         :type x_app_user_id: str
         :param limit: 每页显示的条目数量。
         :type limit: int
@@ -77,7 +83,7 @@ class ListAssetsRequest:
         :type start_time: str
         :param end_time: 结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
         :type end_time: str
-        :param asset_type: 资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        :param asset_type: 资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
         :type asset_type: str
         :param sort_key: 排序字段，目前只支持create_time。
         :type sort_key: str
@@ -95,10 +101,16 @@ class ListAssetsRequest:
         :type sex: str
         :param language: 语言。多选使用英文逗号分隔。
         :type language: str
-        :param system_property: 系统属性。  key和value间用\&quot;:\&quot;分隔，多个key之间用\&quot;,\&quot;分隔。  如system_property&#x3D;BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏） * CREATED_BY_PLATFORM：是否平台生成，可取值Yes
+        :param system_property: 系统属性。  key和value间用\&quot;:\&quot;分隔，多个key之间用\&quot;,\&quot;分隔。  如system_property&#x3D;BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes * TO_BE_TRANSLATED_VIDEO: 视频翻译的源视频。可取值Yes  3D数字人资产属性： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
         :type system_property: str
         :param action_editable: 动作是否可编辑。仅在分身数字人模型查询时有效。
         :type action_editable: bool
+        :param is_movable: 分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+        :type is_movable: bool
+        :param voice_provider: 可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+        :type voice_provider: str
+        :param role: 角色。 SHARER：共享方，SHAREE：被共享方
+        :type role: str
         """
         
         
@@ -121,6 +133,9 @@ class ListAssetsRequest:
         self._language = None
         self._system_property = None
         self._action_editable = None
+        self._is_movable = None
+        self._voice_provider = None
+        self._role = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -159,12 +174,18 @@ class ListAssetsRequest:
             self.system_property = system_property
         if action_editable is not None:
             self.action_editable = action_editable
+        if is_movable is not None:
+            self.is_movable = is_movable
+        if voice_provider is not None:
+            self.voice_provider = voice_provider
+        if role is not None:
+            self.role = role
 
     @property
     def x_app_user_id(self):
         """Gets the x_app_user_id of this ListAssetsRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。 > * 不允许输入中文。
 
         :return: The x_app_user_id of this ListAssetsRequest.
         :rtype: str
@@ -175,7 +196,7 @@ class ListAssetsRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this ListAssetsRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。 > * 不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this ListAssetsRequest.
         :type x_app_user_id: str
@@ -318,7 +339,7 @@ class ListAssetsRequest:
     def asset_type(self):
         """Gets the asset_type of this ListAssetsRequest.
 
-        资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
 
         :return: The asset_type of this ListAssetsRequest.
         :rtype: str
@@ -329,7 +350,7 @@ class ListAssetsRequest:
     def asset_type(self, asset_type):
         """Sets the asset_type of this ListAssetsRequest.
 
-        资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐
+        资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
 
         :param asset_type: The asset_type of this ListAssetsRequest.
         :type asset_type: str
@@ -516,7 +537,7 @@ class ListAssetsRequest:
     def system_property(self):
         """Gets the system_property of this ListAssetsRequest.
 
-        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏） * CREATED_BY_PLATFORM：是否平台生成，可取值Yes
+        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes * TO_BE_TRANSLATED_VIDEO: 视频翻译的源视频。可取值Yes  3D数字人资产属性： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
 
         :return: The system_property of this ListAssetsRequest.
         :rtype: str
@@ -527,7 +548,7 @@ class ListAssetsRequest:
     def system_property(self, system_property):
         """Sets the system_property of this ListAssetsRequest.
 
-        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏） * CREATED_BY_PLATFORM：是否平台生成，可取值Yes
+        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes * TO_BE_TRANSLATED_VIDEO: 视频翻译的源视频。可取值Yes  3D数字人资产属性： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
 
         :param system_property: The system_property of this ListAssetsRequest.
         :type system_property: str
@@ -555,6 +576,72 @@ class ListAssetsRequest:
         :type action_editable: bool
         """
         self._action_editable = action_editable
+
+    @property
+    def is_movable(self):
+        """Gets the is_movable of this ListAssetsRequest.
+
+        分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+
+        :return: The is_movable of this ListAssetsRequest.
+        :rtype: bool
+        """
+        return self._is_movable
+
+    @is_movable.setter
+    def is_movable(self, is_movable):
+        """Sets the is_movable of this ListAssetsRequest.
+
+        分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+
+        :param is_movable: The is_movable of this ListAssetsRequest.
+        :type is_movable: bool
+        """
+        self._is_movable = is_movable
+
+    @property
+    def voice_provider(self):
+        """Gets the voice_provider of this ListAssetsRequest.
+
+        可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+
+        :return: The voice_provider of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._voice_provider
+
+    @voice_provider.setter
+    def voice_provider(self, voice_provider):
+        """Sets the voice_provider of this ListAssetsRequest.
+
+        可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+
+        :param voice_provider: The voice_provider of this ListAssetsRequest.
+        :type voice_provider: str
+        """
+        self._voice_provider = voice_provider
+
+    @property
+    def role(self):
+        """Gets the role of this ListAssetsRequest.
+
+        角色。 SHARER：共享方，SHAREE：被共享方
+
+        :return: The role of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        """Sets the role of this ListAssetsRequest.
+
+        角色。 SHARER：共享方，SHAREE：被共享方
+
+        :param role: The role of this ListAssetsRequest.
+        :type role: str
+        """
+        self._role = role
 
     def to_dict(self):
         """Returns the model properties as a dict"""

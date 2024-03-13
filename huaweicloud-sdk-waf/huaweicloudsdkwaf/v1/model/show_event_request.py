@@ -17,20 +17,24 @@ class ShowEventRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'enterprise_project_id': 'str',
         'eventid': 'str'
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'enterprise_project_id': 'enterprise_project_id',
         'eventid': 'eventid'
     }
 
-    def __init__(self, enterprise_project_id=None, eventid=None):
+    def __init__(self, x_language=None, enterprise_project_id=None, eventid=None):
         """ShowEventRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_language: 语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+        :type x_language: str
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param eventid: 防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
@@ -39,13 +43,38 @@ class ShowEventRequest:
         
         
 
+        self._x_language = None
         self._enterprise_project_id = None
         self._eventid = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.eventid = eventid
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ShowEventRequest.
+
+        语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+
+        :return: The x_language of this ShowEventRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ShowEventRequest.
+
+        语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+
+        :param x_language: The x_language of this ShowEventRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     @property
     def enterprise_project_id(self):

@@ -49,7 +49,7 @@ class ApiPolicyMockCreate:
         :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
         :param conditions: 策略条件列表
         :type conditions: list[:class:`huaweicloudsdkapig.v2.ApiConditionBase`]
-        :param authorizer_id: 后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
+        :param authorizer_id: 后端自定义认证对象的ID
         :type authorizer_id: str
         """
         
@@ -187,7 +187,7 @@ class ApiPolicyMockCreate:
     def authorizer_id(self):
         """Gets the authorizer_id of this ApiPolicyMockCreate.
 
-        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
+        后端自定义认证对象的ID
 
         :return: The authorizer_id of this ApiPolicyMockCreate.
         :rtype: str
@@ -198,7 +198,7 @@ class ApiPolicyMockCreate:
     def authorizer_id(self, authorizer_id):
         """Sets the authorizer_id of this ApiPolicyMockCreate.
 
-        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
+        后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiPolicyMockCreate.
         :type authorizer_id: str

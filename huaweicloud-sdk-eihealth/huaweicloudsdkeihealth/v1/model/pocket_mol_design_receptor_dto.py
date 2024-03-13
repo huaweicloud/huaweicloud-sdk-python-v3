@@ -19,18 +19,22 @@ class PocketMolDesignReceptorDto:
     openapi_types = {
         'file': 'ReceptorDrugFile',
         'bounding_box': 'BoundingBoxDto',
+        'remove_ion': 'bool',
         'remove_water': 'bool',
-        'remove_ion': 'bool'
+        'remove_ligand': 'bool',
+        'add_hydrogen': 'bool'
     }
 
     attribute_map = {
         'file': 'file',
         'bounding_box': 'bounding_box',
+        'remove_ion': 'remove_ion',
         'remove_water': 'remove_water',
-        'remove_ion': 'remove_ion'
+        'remove_ligand': 'remove_ligand',
+        'add_hydrogen': 'add_hydrogen'
     }
 
-    def __init__(self, file=None, bounding_box=None, remove_water=None, remove_ion=None):
+    def __init__(self, file=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
         """PocketMolDesignReceptorDto
 
         The model defined in huaweicloud sdk
@@ -39,27 +43,37 @@ class PocketMolDesignReceptorDto:
         :type file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
         :param bounding_box: 
         :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
-        :param remove_water: 去水
-        :type remove_water: bool
-        :param remove_ion: 去离子
+        :param remove_ion: 去除受体中的离子
         :type remove_ion: bool
+        :param remove_water: 去除受体中的水分子
+        :type remove_water: bool
+        :param remove_ligand: 去除受体中的配体分子
+        :type remove_ligand: bool
+        :param add_hydrogen: 增加氢原子
+        :type add_hydrogen: bool
         """
         
         
 
         self._file = None
         self._bounding_box = None
-        self._remove_water = None
         self._remove_ion = None
+        self._remove_water = None
+        self._remove_ligand = None
+        self._add_hydrogen = None
         self.discriminator = None
 
         self.file = file
         if bounding_box is not None:
             self.bounding_box = bounding_box
-        if remove_water is not None:
-            self.remove_water = remove_water
         if remove_ion is not None:
             self.remove_ion = remove_ion
+        if remove_water is not None:
+            self.remove_water = remove_water
+        if remove_ligand is not None:
+            self.remove_ligand = remove_ligand
+        if add_hydrogen is not None:
+            self.add_hydrogen = add_hydrogen
 
     @property
     def file(self):
@@ -98,32 +112,10 @@ class PocketMolDesignReceptorDto:
         self._bounding_box = bounding_box
 
     @property
-    def remove_water(self):
-        """Gets the remove_water of this PocketMolDesignReceptorDto.
-
-        去水
-
-        :return: The remove_water of this PocketMolDesignReceptorDto.
-        :rtype: bool
-        """
-        return self._remove_water
-
-    @remove_water.setter
-    def remove_water(self, remove_water):
-        """Sets the remove_water of this PocketMolDesignReceptorDto.
-
-        去水
-
-        :param remove_water: The remove_water of this PocketMolDesignReceptorDto.
-        :type remove_water: bool
-        """
-        self._remove_water = remove_water
-
-    @property
     def remove_ion(self):
         """Gets the remove_ion of this PocketMolDesignReceptorDto.
 
-        去离子
+        去除受体中的离子
 
         :return: The remove_ion of this PocketMolDesignReceptorDto.
         :rtype: bool
@@ -134,12 +126,78 @@ class PocketMolDesignReceptorDto:
     def remove_ion(self, remove_ion):
         """Sets the remove_ion of this PocketMolDesignReceptorDto.
 
-        去离子
+        去除受体中的离子
 
         :param remove_ion: The remove_ion of this PocketMolDesignReceptorDto.
         :type remove_ion: bool
         """
         self._remove_ion = remove_ion
+
+    @property
+    def remove_water(self):
+        """Gets the remove_water of this PocketMolDesignReceptorDto.
+
+        去除受体中的水分子
+
+        :return: The remove_water of this PocketMolDesignReceptorDto.
+        :rtype: bool
+        """
+        return self._remove_water
+
+    @remove_water.setter
+    def remove_water(self, remove_water):
+        """Sets the remove_water of this PocketMolDesignReceptorDto.
+
+        去除受体中的水分子
+
+        :param remove_water: The remove_water of this PocketMolDesignReceptorDto.
+        :type remove_water: bool
+        """
+        self._remove_water = remove_water
+
+    @property
+    def remove_ligand(self):
+        """Gets the remove_ligand of this PocketMolDesignReceptorDto.
+
+        去除受体中的配体分子
+
+        :return: The remove_ligand of this PocketMolDesignReceptorDto.
+        :rtype: bool
+        """
+        return self._remove_ligand
+
+    @remove_ligand.setter
+    def remove_ligand(self, remove_ligand):
+        """Sets the remove_ligand of this PocketMolDesignReceptorDto.
+
+        去除受体中的配体分子
+
+        :param remove_ligand: The remove_ligand of this PocketMolDesignReceptorDto.
+        :type remove_ligand: bool
+        """
+        self._remove_ligand = remove_ligand
+
+    @property
+    def add_hydrogen(self):
+        """Gets the add_hydrogen of this PocketMolDesignReceptorDto.
+
+        增加氢原子
+
+        :return: The add_hydrogen of this PocketMolDesignReceptorDto.
+        :rtype: bool
+        """
+        return self._add_hydrogen
+
+    @add_hydrogen.setter
+    def add_hydrogen(self, add_hydrogen):
+        """Sets the add_hydrogen of this PocketMolDesignReceptorDto.
+
+        增加氢原子
+
+        :param add_hydrogen: The add_hydrogen of this PocketMolDesignReceptorDto.
+        :type add_hydrogen: bool
+        """
+        self._add_hydrogen = add_hydrogen
 
     def to_dict(self):
         """Returns the model properties as a dict"""

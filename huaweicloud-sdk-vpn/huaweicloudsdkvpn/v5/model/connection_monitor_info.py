@@ -47,7 +47,7 @@ class ConnectionMonitorInfo:
         :type status: str
         :param vpn_connection_id: VPN连接监控对应的VPN连接ID
         :type vpn_connection_id: str
-        :param type: 网关连通性，取值范围：gateway
+        :param type: 监控类型，取值范围：gateway
         :type type: str
         :param source_ip: VPN连接监控的源地址
         :type source_ip: str
@@ -149,7 +149,7 @@ class ConnectionMonitorInfo:
     def type(self):
         """Gets the type of this ConnectionMonitorInfo.
 
-        网关连通性，取值范围：gateway
+        监控类型，取值范围：gateway
 
         :return: The type of this ConnectionMonitorInfo.
         :rtype: str
@@ -160,7 +160,7 @@ class ConnectionMonitorInfo:
     def type(self, type):
         """Sets the type of this ConnectionMonitorInfo.
 
-        网关连通性，取值范围：gateway
+        监控类型，取值范围：gateway
 
         :param type: The type of this ConnectionMonitorInfo.
         :type type: str

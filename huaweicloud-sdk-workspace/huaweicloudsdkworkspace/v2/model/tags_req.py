@@ -37,7 +37,7 @@ class TagsReq:
         :type action: str
         :param tags: 标签对象
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
-        :param sys_tags: 标签对象
+        :param sys_tags: 标签对象（已废弃）
         :type sys_tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
         
@@ -103,7 +103,7 @@ class TagsReq:
     def sys_tags(self):
         """Gets the sys_tags of this TagsReq.
 
-        标签对象
+        标签对象（已废弃）
 
         :return: The sys_tags of this TagsReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
@@ -114,7 +114,7 @@ class TagsReq:
     def sys_tags(self, sys_tags):
         """Sets the sys_tags of this TagsReq.
 
-        标签对象
+        标签对象（已废弃）
 
         :param sys_tags: The sys_tags of this TagsReq.
         :type sys_tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]

@@ -47,7 +47,7 @@ class Volume:
         :type resource_name: str
         :param resource_type: 资源类型，当前只支持“obs”和“sfs”。
         :type resource_type: str
-        :param resource_sub_type: 存储资源子类型，包括：并行文件系统、存储桶、SFS3.0容量型。
+        :param resource_sub_type: 存储资源子类型。
         :type resource_sub_type: str
         :param time: 创建时间。
         :type time: str
@@ -168,7 +168,7 @@ class Volume:
     def resource_sub_type(self):
         """Gets the resource_sub_type of this Volume.
 
-        存储资源子类型，包括：并行文件系统、存储桶、SFS3.0容量型。
+        存储资源子类型。
 
         :return: The resource_sub_type of this Volume.
         :rtype: str
@@ -179,7 +179,7 @@ class Volume:
     def resource_sub_type(self, resource_sub_type):
         """Sets the resource_sub_type of this Volume.
 
-        存储资源子类型，包括：并行文件系统、存储桶、SFS3.0容量型。
+        存储资源子类型。
 
         :param resource_sub_type: The resource_sub_type of this Volume.
         :type resource_sub_type: str

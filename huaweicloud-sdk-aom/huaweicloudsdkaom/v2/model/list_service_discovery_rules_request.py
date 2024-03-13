@@ -29,7 +29,7 @@ class ListServiceDiscoveryRulesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 具体的服务发现规则ID,可以精确匹配到一条服务发现规则。不传时返回project下所有服务发现规则的列表。
+        :param id: 具体的服务发现规则ID，可以精确匹配到一条服务发现规则。不传时返回project下所有服务发现规则的列表。
         :type id: str
         """
         
@@ -45,7 +45,7 @@ class ListServiceDiscoveryRulesRequest:
     def id(self):
         """Gets the id of this ListServiceDiscoveryRulesRequest.
 
-        具体的服务发现规则ID,可以精确匹配到一条服务发现规则。不传时返回project下所有服务发现规则的列表。
+        具体的服务发现规则ID，可以精确匹配到一条服务发现规则。不传时返回project下所有服务发现规则的列表。
 
         :return: The id of this ListServiceDiscoveryRulesRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListServiceDiscoveryRulesRequest:
     def id(self, id):
         """Sets the id of this ListServiceDiscoveryRulesRequest.
 
-        具体的服务发现规则ID,可以精确匹配到一条服务发现规则。不传时返回project下所有服务发现规则的列表。
+        具体的服务发现规则ID，可以精确匹配到一条服务发现规则。不传时返回project下所有服务发现规则的列表。
 
         :param id: The id of this ListServiceDiscoveryRulesRequest.
         :type id: str

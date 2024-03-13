@@ -18,15 +18,19 @@ class UpdateSubnetResponseObject:
 
     openapi_types = {
         'id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'ipv6_enable': 'bool',
+        'neutron_subnet_id_v6': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'status': 'status'
+        'status': 'status',
+        'ipv6_enable': 'ipv6_enable',
+        'neutron_subnet_id_v6': 'neutron_subnet_id_v6'
     }
 
-    def __init__(self, id=None, status=None):
+    def __init__(self, id=None, status=None, ipv6_enable=None, neutron_subnet_id_v6=None):
         """UpdateSubnetResponseObject
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class UpdateSubnetResponseObject:
         :type id: str
         :param status: 子网的状态  取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
         :type status: str
+        :param ipv6_enable: 是否开启IPv6
+        :type ipv6_enable: bool
+        :param neutron_subnet_id_v6: 对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数。 
+        :type neutron_subnet_id_v6: str
         """
         
         
 
         self._id = None
         self._status = None
+        self._ipv6_enable = None
+        self._neutron_subnet_id_v6 = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if status is not None:
             self.status = status
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if neutron_subnet_id_v6 is not None:
+            self.neutron_subnet_id_v6 = neutron_subnet_id_v6
 
     @property
     def id(self):
@@ -91,6 +105,50 @@ class UpdateSubnetResponseObject:
         :type status: str
         """
         self._status = status
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this UpdateSubnetResponseObject.
+
+        是否开启IPv6
+
+        :return: The ipv6_enable of this UpdateSubnetResponseObject.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this UpdateSubnetResponseObject.
+
+        是否开启IPv6
+
+        :param ipv6_enable: The ipv6_enable of this UpdateSubnetResponseObject.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def neutron_subnet_id_v6(self):
+        """Gets the neutron_subnet_id_v6 of this UpdateSubnetResponseObject.
+
+        对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数。 
+
+        :return: The neutron_subnet_id_v6 of this UpdateSubnetResponseObject.
+        :rtype: str
+        """
+        return self._neutron_subnet_id_v6
+
+    @neutron_subnet_id_v6.setter
+    def neutron_subnet_id_v6(self, neutron_subnet_id_v6):
+        """Sets the neutron_subnet_id_v6 of this UpdateSubnetResponseObject.
+
+        对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数。 
+
+        :param neutron_subnet_id_v6: The neutron_subnet_id_v6 of this UpdateSubnetResponseObject.
+        :type neutron_subnet_id_v6: str
+        """
+        self._neutron_subnet_id_v6 = neutron_subnet_id_v6
 
     def to_dict(self):
         """Returns the model properties as a dict"""

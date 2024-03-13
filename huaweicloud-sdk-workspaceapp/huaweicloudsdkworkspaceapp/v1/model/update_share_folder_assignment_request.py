@@ -31,7 +31,7 @@ class UpdateShareFolderAssignmentRequest:
 
         The model defined in huaweicloud sdk
 
-        :param storage_id: WKS存储ID
+        :param storage_id: WKS存储ID。
         :type storage_id: str
         :param body: Body of the UpdateShareFolderAssignmentRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.AssignShareFolderReq`
@@ -51,7 +51,7 @@ class UpdateShareFolderAssignmentRequest:
     def storage_id(self):
         """Gets the storage_id of this UpdateShareFolderAssignmentRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :return: The storage_id of this UpdateShareFolderAssignmentRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateShareFolderAssignmentRequest:
     def storage_id(self, storage_id):
         """Sets the storage_id of this UpdateShareFolderAssignmentRequest.
 
-        WKS存储ID
+        WKS存储ID。
 
         :param storage_id: The storage_id of this UpdateShareFolderAssignmentRequest.
         :type storage_id: str

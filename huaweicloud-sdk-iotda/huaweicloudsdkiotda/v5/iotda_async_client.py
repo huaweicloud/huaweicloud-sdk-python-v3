@@ -5628,7 +5628,12 @@ class IoTDAAsyncClient(Client):
     def add_tunnel_async(self, request):
         """创建设备隧道
 
-        创建设备隧道接口
+        用户可以通过该接口创建隧道（WebSocket协议），应用服务器和设备可以通过该隧道进行数据传输。
+        
+        - 该API接口在基础版不支持。
+        - 该API调用后平台会向对应的MQTT/MQTTS设备下发隧道地址及密钥，同时给应用服务器也返回隧道地址及密钥，设备可以通过该地址及密钥创建WebSocket协议连接。
+        - 一个设备无法创建多个隧道。
+        - 具体应用可见“设备远程登录”功能，请参见[[设备远程登录](https://support.huaweicloud.com/usermanual-iothub/iot_01_00301.html)](tag:hws)[[设备远程登录](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_00301.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5695,7 +5700,9 @@ class IoTDAAsyncClient(Client):
     def close_device_tunnel_async(self, request):
         """关闭设备隧道
 
-        关闭设备隧道接口
+        应用服务器可通过该接口关闭某个设备隧道。关闭后可以再次连接。
+        - 该API接口在基础版不支持。
+        - 具体应用可见“设备远程登录”功能，请参见[[设备远程登录](https://support.huaweicloud.com/usermanual-iothub/iot_01_00301.html)](tag:hws)[[设备远程登录](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_00301.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5762,7 +5769,9 @@ class IoTDAAsyncClient(Client):
     def delete_device_tunnel_async(self, request):
         """删除设备隧道
 
-        删除设备隧道接口
+        用户可通过该接口删除某个设备隧道。删除后该通道不存在，无法再次连接。
+        - 该API接口在基础版不支持。
+        - 具体应用可见“设备远程登录”功能，请参见[[设备远程登录](https://support.huaweicloud.com/usermanual-iothub/iot_01_00301.html)](tag:hws)[[设备远程登录](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_00301.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5830,6 +5839,8 @@ class IoTDAAsyncClient(Client):
         """查询设备所有隧道
 
         用户可通过该接口查询某项目下的所有设备隧道，以实现对设备管理。应用服务器可通过此接口向平台查询设备隧道建立的情况。
+        - 该API接口在基础版不支持。
+        - 具体应用可见“设备远程登录”功能，请参见[[设备远程登录](https://support.huaweicloud.com/usermanual-iothub/iot_01_00301.html)](tag:hws)[[设备远程登录](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_00301.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5897,6 +5908,8 @@ class IoTDAAsyncClient(Client):
         """查询设备隧道
 
         用户可通过该接口查询某项目中的某个设备隧道，查看该设备隧道的信息与连接情况。应用服务器可调用此接口向平台查询设备隧道建立情况。
+        - 该API接口在基础版不支持。
+        - 具体应用可见“设备远程登录”功能，请参见[[设备远程登录](https://support.huaweicloud.com/usermanual-iothub/iot_01_00301.html)](tag:hws)[[设备远程登录](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_00301.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

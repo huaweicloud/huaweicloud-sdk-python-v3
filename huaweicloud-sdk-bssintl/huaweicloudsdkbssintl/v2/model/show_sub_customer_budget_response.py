@@ -21,17 +21,19 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         'budget_amount': 'float',
         'used_amount': 'float',
         'measure_id': 'int',
-        'currency': 'str'
+        'currency': 'str',
+        'budget_type': 'str'
     }
 
     attribute_map = {
         'budget_amount': 'budget_amount',
         'used_amount': 'used_amount',
         'measure_id': 'measure_id',
-        'currency': 'currency'
+        'currency': 'currency',
+        'budget_type': 'budget_type'
     }
 
-    def __init__(self, budget_amount=None, used_amount=None, measure_id=None, currency=None):
+    def __init__(self, budget_amount=None, used_amount=None, measure_id=None, currency=None, budget_type=None):
         """ShowSubCustomerBudgetResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +46,8 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         :type measure_id: int
         :param currency: 币种。 USD：美金
         :type currency: str
+        :param budget_type: |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
+        :type budget_type: str
         """
         
         super(ShowSubCustomerBudgetResponse, self).__init__()
@@ -52,6 +56,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         self._used_amount = None
         self._measure_id = None
         self._currency = None
+        self._budget_type = None
         self.discriminator = None
 
         if budget_amount is not None:
@@ -62,6 +67,8 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
             self.measure_id = measure_id
         if currency is not None:
             self.currency = currency
+        if budget_type is not None:
+            self.budget_type = budget_type
 
     @property
     def budget_amount(self):
@@ -150,6 +157,28 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         :type currency: str
         """
         self._currency = currency
+
+    @property
+    def budget_type(self):
+        """Gets the budget_type of this ShowSubCustomerBudgetResponse.
+
+        |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
+
+        :return: The budget_type of this ShowSubCustomerBudgetResponse.
+        :rtype: str
+        """
+        return self._budget_type
+
+    @budget_type.setter
+    def budget_type(self, budget_type):
+        """Sets the budget_type of this ShowSubCustomerBudgetResponse.
+
+        |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
+
+        :param budget_type: The budget_type of this ShowSubCustomerBudgetResponse.
+        :type budget_type: str
+        """
+        self._budget_type = budget_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

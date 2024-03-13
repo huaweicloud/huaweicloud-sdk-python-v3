@@ -341,10 +341,12 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CreateSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CreateSessionResponse`
         """
+        warnings.warn("Method 'create_session' of CbsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_session_http_info(request)
         return self._call_api(**http_info)
 
     def create_session_invoker(self, request):
+        warnings.warn("Method 'create_session_invoker' of CbsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_session_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -406,10 +408,12 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.DeleteSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.DeleteSessionResponse`
         """
+        warnings.warn("Method 'delete_session' of CbsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_session_http_info(request)
         return self._call_api(**http_info)
 
     def delete_session_invoker(self, request):
+        warnings.warn("Method 'delete_session_invoker' of CbsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_session_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1347,10 +1351,12 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteSessionResponse`
         """
+        warnings.warn("Method 'execute_session' of CbsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._execute_session_http_info(request)
         return self._call_api(**http_info)
 
     def execute_session_invoker(self, request):
+        warnings.warn("Method 'execute_session_invoker' of CbsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._execute_session_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1964,10 +1970,12 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.PostRequestsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.PostRequestsResponse`
         """
+        warnings.warn("Method 'post_requests' of CbsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._post_requests_http_info(request)
         return self._call_api(**http_info)
 
     def post_requests_invoker(self, request):
+        warnings.warn("Method 'post_requests_invoker' of CbsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._post_requests_http_info(request)
         return SyncInvoker(self, http_info)
 
