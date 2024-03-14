@@ -108,6 +108,7 @@ from huaweicloudsdkdrs.v5.model.execute_job_action_request import ExecuteJobActi
 from huaweicloudsdkdrs.v5.model.execute_job_action_response import ExecuteJobActionResponse
 from huaweicloudsdkdrs.v5.model.export_operation_info_request import ExportOperationInfoRequest
 from huaweicloudsdkdrs.v5.model.export_operation_info_response import ExportOperationInfoResponse
+from huaweicloudsdkdrs.v5.model.failed_to_bind_eip_child_info import FailedToBindEipChildInfo
 from huaweicloudsdkdrs.v5.model.flow_compare_data import FlowCompareData
 from huaweicloudsdkdrs.v5.model.health_compare_job import HealthCompareJob
 from huaweicloudsdkdrs.v5.model.import_batch_create_jobs_request import ImportBatchCreateJobsRequest
@@ -169,6 +170,7 @@ from huaweicloudsdkdrs.v5.model.precheck_result import PrecheckResult
 from huaweicloudsdkdrs.v5.model.product_info import ProductInfo
 from huaweicloudsdkdrs.v5.model.progress_complete_info import ProgressCompleteInfo
 from huaweicloudsdkdrs.v5.model.project_tag import ProjectTag
+from huaweicloudsdkdrs.v5.model.public_ip_config import PublicIpConfig
 from huaweicloudsdkdrs.v5.model.query_column_info import QueryColumnInfo
 from huaweicloudsdkdrs.v5.model.query_column_req import QueryColumnReq
 from huaweicloudsdkdrs.v5.model.query_db_position_req import QueryDbPositionReq

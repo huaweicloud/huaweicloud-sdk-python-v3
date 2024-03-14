@@ -35,7 +35,7 @@ class ShowSmartChatJobRequest:
 
         :param x_app_user_id: 开发者应用作为资产权属的可选字段。
         :type x_app_user_id: str
-        :param room_id: 直播间ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
+        :param room_id: 智能交互对话ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
         :type room_id: str
         :param job_id: 任务ID。
         :type job_id: str
@@ -79,7 +79,7 @@ class ShowSmartChatJobRequest:
     def room_id(self):
         """Gets the room_id of this ShowSmartChatJobRequest.
 
-        直播间ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
+        智能交互对话ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
 
         :return: The room_id of this ShowSmartChatJobRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowSmartChatJobRequest:
     def room_id(self, room_id):
         """Sets the room_id of this ShowSmartChatJobRequest.
 
-        直播间ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
+        智能交互对话ID，获取方法请参考[[创建智能交互对话直播间](https://support.huaweicloud.com/api-metastudio/CreateSmartChatRoom.html)](tag:hc,hk)[“创建智能交互对话直播间”](tag:cmcc)。
 
         :param room_id: The room_id of this ShowSmartChatJobRequest.
         :type room_id: str

@@ -35,7 +35,7 @@ class IdentityCenterStoreClient(Client):
     def list_users(self, request):
         """列出用户
 
-        查询指定IdentityStore下的IdentityCenter用户列表
+        查询指定身份源下的IAM身份中心用户列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

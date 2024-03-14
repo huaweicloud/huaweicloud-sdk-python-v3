@@ -23,7 +23,8 @@ class StartSmartLiveReq:
         'stream_keys': 'list[str]',
         'interaction_callback_url': 'str',
         'live_event_callback_config': 'LiveEventCallBackConfig',
-        'view_mode': 'str'
+        'view_mode': 'str',
+        'co_streamer_config': 'CoStreamerConfig'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class StartSmartLiveReq:
         'stream_keys': 'stream_keys',
         'interaction_callback_url': 'interaction_callback_url',
         'live_event_callback_config': 'live_event_callback_config',
-        'view_mode': 'view_mode'
+        'view_mode': 'view_mode',
+        'co_streamer_config': 'co_streamer_config'
     }
 
-    def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None, view_mode=None):
+    def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None, view_mode=None, co_streamer_config=None):
         """StartSmartLiveReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class StartSmartLiveReq:
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
         :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
         :type view_mode: str
+        :param co_streamer_config: 
+        :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
         """
         
         
@@ -66,6 +70,7 @@ class StartSmartLiveReq:
         self._interaction_callback_url = None
         self._live_event_callback_config = None
         self._view_mode = None
+        self._co_streamer_config = None
         self.discriminator = None
 
         if video_config is not None:
@@ -82,6 +87,8 @@ class StartSmartLiveReq:
             self.live_event_callback_config = live_event_callback_config
         if view_mode is not None:
             self.view_mode = view_mode
+        if co_streamer_config is not None:
+            self.co_streamer_config = co_streamer_config
 
     @property
     def video_config(self):
@@ -224,6 +231,24 @@ class StartSmartLiveReq:
         :type view_mode: str
         """
         self._view_mode = view_mode
+
+    @property
+    def co_streamer_config(self):
+        """Gets the co_streamer_config of this StartSmartLiveReq.
+
+        :return: The co_streamer_config of this StartSmartLiveReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        """
+        return self._co_streamer_config
+
+    @co_streamer_config.setter
+    def co_streamer_config(self, co_streamer_config):
+        """Sets the co_streamer_config of this StartSmartLiveReq.
+
+        :param co_streamer_config: The co_streamer_config of this StartSmartLiveReq.
+        :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        """
+        self._co_streamer_config = co_streamer_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

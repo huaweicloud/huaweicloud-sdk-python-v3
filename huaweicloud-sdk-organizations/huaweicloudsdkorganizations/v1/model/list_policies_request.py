@@ -35,7 +35,7 @@ class ListPoliciesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param attached_entity_id: 根、组织单元或帐号的唯一标识符（ID）。
+        :param attached_entity_id: 根、组织单元或账号的唯一标识符（ID）。
         :type attached_entity_id: str
         :param limit: 页面中最大结果数量。
         :type limit: int
@@ -66,7 +66,7 @@ class ListPoliciesRequest:
     def attached_entity_id(self):
         """Gets the attached_entity_id of this ListPoliciesRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        根、组织单元或账号的唯一标识符（ID）。
 
         :return: The attached_entity_id of this ListPoliciesRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListPoliciesRequest:
     def attached_entity_id(self, attached_entity_id):
         """Sets the attached_entity_id of this ListPoliciesRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        根、组织单元或账号的唯一标识符（ID）。
 
         :param attached_entity_id: The attached_entity_id of this ListPoliciesRequest.
         :type attached_entity_id: str

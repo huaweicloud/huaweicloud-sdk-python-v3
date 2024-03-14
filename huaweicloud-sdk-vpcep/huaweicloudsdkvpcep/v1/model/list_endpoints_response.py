@@ -18,7 +18,7 @@ class ListEndpointsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'endpoints': 'list[EndpointResp]',
+        'endpoints': 'list[EndpointResponseBody]',
         'total_count': 'int'
     }
 
@@ -33,7 +33,7 @@ class ListEndpointsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param endpoints: 终端节点列表。
-        :type endpoints: list[:class:`huaweicloudsdkvpcep.v1.EndpointResp`]
+        :type endpoints: list[:class:`huaweicloudsdkvpcep.v1.EndpointResponseBody`]
         :param total_count: 满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
         :type total_count: int
         """
@@ -56,7 +56,7 @@ class ListEndpointsResponse(SdkResponse):
         终端节点列表。
 
         :return: The endpoints of this ListEndpointsResponse.
-        :rtype: list[:class:`huaweicloudsdkvpcep.v1.EndpointResp`]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.EndpointResponseBody`]
         """
         return self._endpoints
 
@@ -67,7 +67,7 @@ class ListEndpointsResponse(SdkResponse):
         终端节点列表。
 
         :param endpoints: The endpoints of this ListEndpointsResponse.
-        :type endpoints: list[:class:`huaweicloudsdkvpcep.v1.EndpointResp`]
+        :type endpoints: list[:class:`huaweicloudsdkvpcep.v1.EndpointResponseBody`]
         """
         self._endpoints = endpoints
 

@@ -18,29 +18,36 @@ class UpdateHttpsInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'https': 'HttpInfoResponseBody'
+        'https': 'HttpInfoResponseBody',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'https': 'https'
+        'https': 'https',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, https=None):
+    def __init__(self, https=None, x_request_id=None):
         """UpdateHttpsInfoResponse
 
         The model defined in huaweicloud sdk
 
         :param https: 
         :type https: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(UpdateHttpsInfoResponse, self).__init__()
 
         self._https = None
+        self._x_request_id = None
         self.discriminator = None
 
         if https is not None:
             self.https = https
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def https(self):
@@ -59,6 +66,24 @@ class UpdateHttpsInfoResponse(SdkResponse):
         :type https: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`
         """
         self._https = https
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateHttpsInfoResponse.
+
+        :return: The x_request_id of this UpdateHttpsInfoResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateHttpsInfoResponse.
+
+        :param x_request_id: The x_request_id of this UpdateHttpsInfoResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

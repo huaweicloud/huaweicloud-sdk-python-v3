@@ -17,28 +17,35 @@ class ShowPermissionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'permission_id': 'str'
+        'permission_id': 'str',
+        'permission_version': 'int'
     }
 
     attribute_map = {
-        'permission_id': 'permission_id'
+        'permission_id': 'permission_id',
+        'permission_version': 'permission_version'
     }
 
-    def __init__(self, permission_id=None):
+    def __init__(self, permission_id=None, permission_version=None):
         """ShowPermissionRequest
 
         The model defined in huaweicloud sdk
 
         :param permission_id: 共享资源权限的ID。
         :type permission_id: str
+        :param permission_version: 资源权限版本。
+        :type permission_version: int
         """
         
         
 
         self._permission_id = None
+        self._permission_version = None
         self.discriminator = None
 
         self.permission_id = permission_id
+        if permission_version is not None:
+            self.permission_version = permission_version
 
     @property
     def permission_id(self):
@@ -61,6 +68,28 @@ class ShowPermissionRequest:
         :type permission_id: str
         """
         self._permission_id = permission_id
+
+    @property
+    def permission_version(self):
+        """Gets the permission_version of this ShowPermissionRequest.
+
+        资源权限版本。
+
+        :return: The permission_version of this ShowPermissionRequest.
+        :rtype: int
+        """
+        return self._permission_version
+
+    @permission_version.setter
+    def permission_version(self, permission_version):
+        """Sets the permission_version of this ShowPermissionRequest.
+
+        资源权限版本。
+
+        :param permission_version: The permission_version of this ShowPermissionRequest.
+        :type permission_version: int
+        """
+        self._permission_version = permission_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

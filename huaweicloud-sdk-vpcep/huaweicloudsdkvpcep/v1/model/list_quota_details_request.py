@@ -29,7 +29,7 @@ class ListQuotaDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param type: 资源类型。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        :param type: 资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
         :type type: str
         """
         
@@ -45,7 +45,7 @@ class ListQuotaDetailsRequest:
     def type(self):
         """Gets the type of this ListQuotaDetailsRequest.
 
-        资源类型。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
         :return: The type of this ListQuotaDetailsRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListQuotaDetailsRequest:
     def type(self, type):
         """Sets the type of this ListQuotaDetailsRequest.
 
-        资源类型。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
         :param type: The type of this ListQuotaDetailsRequest.
         :type type: str

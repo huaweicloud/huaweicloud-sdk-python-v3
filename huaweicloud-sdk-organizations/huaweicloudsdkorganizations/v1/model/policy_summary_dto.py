@@ -39,7 +39,7 @@ class PolicySummaryDto:
 
         The model defined in huaweicloud sdk
 
-        :param is_builtin: 一个布尔值，指示指定的策略是否为系统策略。如果为true，即为系统策略，则可以将策略附加到根、组织单元或帐号，但不能编辑它。
+        :param is_builtin: 一个布尔值，指示指定的策略是否为系统策略。如果为true，即为系统策略，则可以将策略附加到根、组织单元或账号，但不能编辑它。
         :type is_builtin: bool
         :param description: 策略说明。
         :type description: str
@@ -74,7 +74,7 @@ class PolicySummaryDto:
     def is_builtin(self):
         """Gets the is_builtin of this PolicySummaryDto.
 
-        一个布尔值，指示指定的策略是否为系统策略。如果为true，即为系统策略，则可以将策略附加到根、组织单元或帐号，但不能编辑它。
+        一个布尔值，指示指定的策略是否为系统策略。如果为true，即为系统策略，则可以将策略附加到根、组织单元或账号，但不能编辑它。
 
         :return: The is_builtin of this PolicySummaryDto.
         :rtype: bool
@@ -85,7 +85,7 @@ class PolicySummaryDto:
     def is_builtin(self, is_builtin):
         """Sets the is_builtin of this PolicySummaryDto.
 
-        一个布尔值，指示指定的策略是否为系统策略。如果为true，即为系统策略，则可以将策略附加到根、组织单元或帐号，但不能编辑它。
+        一个布尔值，指示指定的策略是否为系统策略。如果为true，即为系统策略，则可以将策略附加到根、组织单元或账号，但不能编辑它。
 
         :param is_builtin: The is_builtin of this PolicySummaryDto.
         :type is_builtin: bool

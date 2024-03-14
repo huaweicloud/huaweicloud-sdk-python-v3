@@ -32,10 +32,12 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'review_config': 'ReviewConfig',
         'shared_config': 'SharedConfig',
         'view_mode': 'str',
+        'co_streamer_config': 'CoStreamerConfig',
         'room_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'cover_url': 'str',
+        'thumbnail': 'str',
         'room_state': 'str',
         'error_info': 'ErrorResponse',
         'x_request_id': 'str'
@@ -56,16 +58,18 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         'review_config': 'review_config',
         'shared_config': 'shared_config',
         'view_mode': 'view_mode',
+        'co_streamer_config': 'co_streamer_config',
         'room_id': 'room_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'cover_url': 'cover_url',
+        'thumbnail': 'thumbnail',
         'room_state': 'room_state',
         'error_info': 'error_info',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None, view_mode=None, room_id=None, create_time=None, update_time=None, cover_url=None, room_state=None, error_info=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, room_id=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, error_info=None, x_request_id=None):
         """ShowSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
@@ -98,6 +102,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
         :type view_mode: str
+        :param co_streamer_config: 
+        :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
         :param room_id: 直播间ID
         :type room_id: str
         :param create_time: 直播间创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -106,6 +112,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type update_time: str
         :param cover_url: 直播间封面图URL
         :type cover_url: str
+        :param thumbnail: 直播间封面图新URL
+        :type thumbnail: str
         :param room_state: 直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
         :type room_state: str
         :param error_info: 
@@ -130,10 +138,12 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         self._review_config = None
         self._shared_config = None
         self._view_mode = None
+        self._co_streamer_config = None
         self._room_id = None
         self._create_time = None
         self._update_time = None
         self._cover_url = None
+        self._thumbnail = None
         self._room_state = None
         self._error_info = None
         self._x_request_id = None
@@ -166,6 +176,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
             self.shared_config = shared_config
         if view_mode is not None:
             self.view_mode = view_mode
+        if co_streamer_config is not None:
+            self.co_streamer_config = co_streamer_config
         if room_id is not None:
             self.room_id = room_id
         if create_time is not None:
@@ -174,6 +186,8 @@ class ShowSmartLiveRoomResponse(SdkResponse):
             self.update_time = update_time
         if cover_url is not None:
             self.cover_url = cover_url
+        if thumbnail is not None:
+            self.thumbnail = thumbnail
         if room_state is not None:
             self.room_state = room_state
         if error_info is not None:
@@ -470,6 +484,24 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         self._view_mode = view_mode
 
     @property
+    def co_streamer_config(self):
+        """Gets the co_streamer_config of this ShowSmartLiveRoomResponse.
+
+        :return: The co_streamer_config of this ShowSmartLiveRoomResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        """
+        return self._co_streamer_config
+
+    @co_streamer_config.setter
+    def co_streamer_config(self, co_streamer_config):
+        """Sets the co_streamer_config of this ShowSmartLiveRoomResponse.
+
+        :param co_streamer_config: The co_streamer_config of this ShowSmartLiveRoomResponse.
+        :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        """
+        self._co_streamer_config = co_streamer_config
+
+    @property
     def room_id(self):
         """Gets the room_id of this ShowSmartLiveRoomResponse.
 
@@ -556,6 +588,28 @@ class ShowSmartLiveRoomResponse(SdkResponse):
         :type cover_url: str
         """
         self._cover_url = cover_url
+
+    @property
+    def thumbnail(self):
+        """Gets the thumbnail of this ShowSmartLiveRoomResponse.
+
+        直播间封面图新URL
+
+        :return: The thumbnail of this ShowSmartLiveRoomResponse.
+        :rtype: str
+        """
+        return self._thumbnail
+
+    @thumbnail.setter
+    def thumbnail(self, thumbnail):
+        """Sets the thumbnail of this ShowSmartLiveRoomResponse.
+
+        直播间封面图新URL
+
+        :param thumbnail: The thumbnail of this ShowSmartLiveRoomResponse.
+        :type thumbnail: str
+        """
+        self._thumbnail = thumbnail
 
     @property
     def room_state(self):

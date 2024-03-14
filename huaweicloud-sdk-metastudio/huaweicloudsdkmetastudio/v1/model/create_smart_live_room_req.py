@@ -30,7 +30,8 @@ class CreateSmartLiveRoomReq:
         'live_event_callback_config': 'LiveEventCallBackConfig',
         'review_config': 'ReviewConfig',
         'shared_config': 'SharedConfig',
-        'view_mode': 'str'
+        'view_mode': 'str',
+        'co_streamer_config': 'CoStreamerConfig'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class CreateSmartLiveRoomReq:
         'live_event_callback_config': 'live_event_callback_config',
         'review_config': 'review_config',
         'shared_config': 'shared_config',
-        'view_mode': 'view_mode'
+        'view_mode': 'view_mode',
+        'co_streamer_config': 'co_streamer_config'
     }
 
-    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None, view_mode=None):
+    def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None):
         """CreateSmartLiveRoomReq
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class CreateSmartLiveRoomReq:
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
         :type view_mode: str
+        :param co_streamer_config: 
+        :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
         """
         
         
@@ -101,6 +105,7 @@ class CreateSmartLiveRoomReq:
         self._review_config = None
         self._shared_config = None
         self._view_mode = None
+        self._co_streamer_config = None
         self.discriminator = None
 
         self.room_name = room_name
@@ -130,6 +135,8 @@ class CreateSmartLiveRoomReq:
             self.shared_config = shared_config
         if view_mode is not None:
             self.view_mode = view_mode
+        if co_streamer_config is not None:
+            self.co_streamer_config = co_streamer_config
 
     @property
     def room_name(self):
@@ -418,6 +425,24 @@ class CreateSmartLiveRoomReq:
         :type view_mode: str
         """
         self._view_mode = view_mode
+
+    @property
+    def co_streamer_config(self):
+        """Gets the co_streamer_config of this CreateSmartLiveRoomReq.
+
+        :return: The co_streamer_config of this CreateSmartLiveRoomReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        """
+        return self._co_streamer_config
+
+    @co_streamer_config.setter
+    def co_streamer_config(self, co_streamer_config):
+        """Sets the co_streamer_config of this CreateSmartLiveRoomReq.
+
+        :param co_streamer_config: The co_streamer_config of this CreateSmartLiveRoomReq.
+        :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        """
+        self._co_streamer_config = co_streamer_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

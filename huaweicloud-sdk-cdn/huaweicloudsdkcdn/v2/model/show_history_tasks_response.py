@@ -19,15 +19,17 @@ class ShowHistoryTasksResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'tasks': 'list[TasksObject]'
+        'tasks': 'list[TasksObject]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'total': 'total',
-        'tasks': 'tasks'
+        'tasks': 'tasks',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, total=None, tasks=None):
+    def __init__(self, total=None, tasks=None, x_request_id=None):
         """ShowHistoryTasksResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ShowHistoryTasksResponse(SdkResponse):
         :type total: int
         :param tasks: 日志列表数据
         :type tasks: list[:class:`huaweicloudsdkcdn.v2.TasksObject`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowHistoryTasksResponse, self).__init__()
 
         self._total = None
         self._tasks = None
+        self._x_request_id = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
         if tasks is not None:
             self.tasks = tasks
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def total(self):
@@ -92,6 +99,24 @@ class ShowHistoryTasksResponse(SdkResponse):
         :type tasks: list[:class:`huaweicloudsdkcdn.v2.TasksObject`]
         """
         self._tasks = tasks
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowHistoryTasksResponse.
+
+        :return: The x_request_id of this ShowHistoryTasksResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowHistoryTasksResponse.
+
+        :param x_request_id: The x_request_id of this ShowHistoryTasksResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

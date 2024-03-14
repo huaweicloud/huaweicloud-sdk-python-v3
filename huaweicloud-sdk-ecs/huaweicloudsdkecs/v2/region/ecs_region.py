@@ -56,6 +56,8 @@ class EcsRegion:
                         "https://ecs.cn-east-5.myhuaweicloud.com")
     EU_WEST_0 = Region("eu-west-0",
                         "https://ecs.eu-west-0.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://ecs.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -83,6 +85,7 @@ class EcsRegion:
         "eu-west-101": EU_WEST_101,
         "cn-east-5": CN_EAST_5,
         "eu-west-0": EU_WEST_0,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

@@ -33,7 +33,7 @@ class DelegatedAdministratorReqBody:
 
         :param service_principal: 服务主体名称。
         :type service_principal: str
-        :param account_id: 帐号的唯一标识符（ID）。
+        :param account_id: 账号的唯一标识符（ID）。
         :type account_id: str
         """
         
@@ -72,7 +72,7 @@ class DelegatedAdministratorReqBody:
     def account_id(self):
         """Gets the account_id of this DelegatedAdministratorReqBody.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :return: The account_id of this DelegatedAdministratorReqBody.
         :rtype: str
@@ -83,7 +83,7 @@ class DelegatedAdministratorReqBody:
     def account_id(self, account_id):
         """Sets the account_id of this DelegatedAdministratorReqBody.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :param account_id: The account_id of this DelegatedAdministratorReqBody.
         :type account_id: str

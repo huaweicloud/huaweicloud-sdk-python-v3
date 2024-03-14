@@ -42,7 +42,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
         :type policy_content: str
         :param policy_type: 策略类型的名称，tag_policy标签策略。
         :type policy_type: str
-        :param entity_id: 根、组织单元或帐号的唯一标识符（ID）。
+        :param entity_id: 根、组织单元或账号的唯一标识符（ID）。
         :type entity_id: str
         """
         
@@ -133,7 +133,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
     def entity_id(self):
         """Gets the entity_id of this ShowEffectivePoliciesResponse.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        根、组织单元或账号的唯一标识符（ID）。
 
         :return: The entity_id of this ShowEffectivePoliciesResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
     def entity_id(self, entity_id):
         """Sets the entity_id of this ShowEffectivePoliciesResponse.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        根、组织单元或账号的唯一标识符（ID）。
 
         :param entity_id: The entity_id of this ShowEffectivePoliciesResponse.
         :type entity_id: str

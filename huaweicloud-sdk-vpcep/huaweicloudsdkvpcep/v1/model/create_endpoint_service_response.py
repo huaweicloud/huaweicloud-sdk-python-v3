@@ -27,8 +27,8 @@ class CreateEndpointServiceResponse(SdkResponse):
         'approval_enabled': 'bool',
         'status': 'str',
         'service_type': 'str',
-        'created_at': 'str',
-        'updated_at': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
         'project_id': 'str',
         'ports': 'list[PortList]',
         'tcp_proxy': 'str',
@@ -64,37 +64,37 @@ class CreateEndpointServiceResponse(SdkResponse):
 
         :param id: 终端节点服务的ID，唯一标识。
         :type id: str
-        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
+        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为：  - LB类型：负载均衡器内网IP对应的端口ID。  - VM类型：弹性云服务器IP地址对应的网卡ID。  - VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
         :type port_id: str
         :param service_name: 终端节点服务的名称。
         :type service_name: str
-        :param server_type: 资源类型。 ● VM：云服务器。 ● VIP：虚拟IP。 ● LB：增强负载均衡型。
+        :param server_type: 资源类型。  - VM：云服务器。  - VIP：虚拟IP。  - LB：增强负载均衡型。
         :type server_type: str
         :param vpc_id: 终端节点服务对应后端资源所在的VPC的ID。
         :type vpc_id: str
         :param pool_id: 终端节点服务对应的集群id
         :type pool_id: str
-        :param approval_enabled: 是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
+        :param approval_enabled: 是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
         :type approval_enabled: bool
-        :param status: 终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败
+        :param status: 终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败
         :type status: str
-        :param service_type: 终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        :param service_type: 终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
         :type service_type: str
         :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
-        :type created_at: str
+        :type created_at: datetime
         :param updated_at: 终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
-        :type updated_at: str
+        :type updated_at: datetime
         :param project_id: 项目ID
         :type project_id: str
         :param ports: 服务开放的端口映射列表 同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
-        :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
         :type tcp_proxy: str
         :param tags: 资源标签列表
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
-        :param enable_policy: 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        :param enable_policy: 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
         :type enable_policy: bool
         """
         
@@ -180,7 +180,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def port_id(self):
         """Gets the port_id of this CreateEndpointServiceResponse.
 
-        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为：  - LB类型：负载均衡器内网IP对应的端口ID。  - VM类型：弹性云服务器IP地址对应的网卡ID。  - VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
         :return: The port_id of this CreateEndpointServiceResponse.
         :rtype: str
@@ -191,7 +191,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def port_id(self, port_id):
         """Sets the port_id of this CreateEndpointServiceResponse.
 
-        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为：  - LB类型：负载均衡器内网IP对应的端口ID。  - VM类型：弹性云服务器IP地址对应的网卡ID。  - VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
         :param port_id: The port_id of this CreateEndpointServiceResponse.
         :type port_id: str
@@ -224,7 +224,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def server_type(self):
         """Gets the server_type of this CreateEndpointServiceResponse.
 
-        资源类型。 ● VM：云服务器。 ● VIP：虚拟IP。 ● LB：增强负载均衡型。
+        资源类型。  - VM：云服务器。  - VIP：虚拟IP。  - LB：增强负载均衡型。
 
         :return: The server_type of this CreateEndpointServiceResponse.
         :rtype: str
@@ -235,7 +235,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def server_type(self, server_type):
         """Sets the server_type of this CreateEndpointServiceResponse.
 
-        资源类型。 ● VM：云服务器。 ● VIP：虚拟IP。 ● LB：增强负载均衡型。
+        资源类型。  - VM：云服务器。  - VIP：虚拟IP。  - LB：增强负载均衡型。
 
         :param server_type: The server_type of this CreateEndpointServiceResponse.
         :type server_type: str
@@ -290,7 +290,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def approval_enabled(self):
         """Gets the approval_enabled of this CreateEndpointServiceResponse.
 
-        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
+        是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
 
         :return: The approval_enabled of this CreateEndpointServiceResponse.
         :rtype: bool
@@ -301,7 +301,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def approval_enabled(self, approval_enabled):
         """Sets the approval_enabled of this CreateEndpointServiceResponse.
 
-        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
+        是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
 
         :param approval_enabled: The approval_enabled of this CreateEndpointServiceResponse.
         :type approval_enabled: bool
@@ -312,7 +312,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateEndpointServiceResponse.
 
-        终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败
+        终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败
 
         :return: The status of this CreateEndpointServiceResponse.
         :rtype: str
@@ -323,7 +323,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this CreateEndpointServiceResponse.
 
-        终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败
+        终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败
 
         :param status: The status of this CreateEndpointServiceResponse.
         :type status: str
@@ -334,7 +334,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def service_type(self):
         """Gets the service_type of this CreateEndpointServiceResponse.
 
-        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :return: The service_type of this CreateEndpointServiceResponse.
         :rtype: str
@@ -345,7 +345,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def service_type(self, service_type):
         """Sets the service_type of this CreateEndpointServiceResponse.
 
-        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :param service_type: The service_type of this CreateEndpointServiceResponse.
         :type service_type: str
@@ -359,7 +359,7 @@ class CreateEndpointServiceResponse(SdkResponse):
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The created_at of this CreateEndpointServiceResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -370,7 +370,7 @@ class CreateEndpointServiceResponse(SdkResponse):
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param created_at: The created_at of this CreateEndpointServiceResponse.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -381,7 +381,7 @@ class CreateEndpointServiceResponse(SdkResponse):
         终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The updated_at of this CreateEndpointServiceResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._updated_at
 
@@ -392,7 +392,7 @@ class CreateEndpointServiceResponse(SdkResponse):
         终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this CreateEndpointServiceResponse.
-        :type updated_at: str
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -444,7 +444,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def tcp_proxy(self):
         """Gets the tcp_proxy of this CreateEndpointServiceResponse.
 
-        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :return: The tcp_proxy of this CreateEndpointServiceResponse.
         :rtype: str
@@ -455,7 +455,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this CreateEndpointServiceResponse.
 
-        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。  - proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this CreateEndpointServiceResponse.
         :type tcp_proxy: str
@@ -510,7 +510,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def enable_policy(self):
         """Gets the enable_policy of this CreateEndpointServiceResponse.
 
-        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :return: The enable_policy of this CreateEndpointServiceResponse.
         :rtype: bool
@@ -521,7 +521,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def enable_policy(self, enable_policy):
         """Sets the enable_policy of this CreateEndpointServiceResponse.
 
-        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :param enable_policy: The enable_policy of this CreateEndpointServiceResponse.
         :type enable_policy: bool

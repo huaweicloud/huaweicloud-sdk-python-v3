@@ -49,9 +49,9 @@ class CreateSmartChatRoomReq:
 
         The model defined in huaweicloud sdk
 
-        :param room_name: 直播间名称
+        :param room_name: 对话名称
         :type room_name: str
-        :param room_description: 直播间描述。
+        :param room_description: 对话描述。
         :type room_description: str
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -59,7 +59,7 @@ class CreateSmartChatRoomReq:
         :type model_asset_id: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
-        :param robot_id: 机器人ID。
+        :param robot_id: 机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
         :type robot_id: str
         :param concurrency: 并发路数。
         :type concurrency: int
@@ -113,7 +113,7 @@ class CreateSmartChatRoomReq:
     def room_name(self):
         """Gets the room_name of this CreateSmartChatRoomReq.
 
-        直播间名称
+        对话名称
 
         :return: The room_name of this CreateSmartChatRoomReq.
         :rtype: str
@@ -124,7 +124,7 @@ class CreateSmartChatRoomReq:
     def room_name(self, room_name):
         """Sets the room_name of this CreateSmartChatRoomReq.
 
-        直播间名称
+        对话名称
 
         :param room_name: The room_name of this CreateSmartChatRoomReq.
         :type room_name: str
@@ -135,7 +135,7 @@ class CreateSmartChatRoomReq:
     def room_description(self):
         """Gets the room_description of this CreateSmartChatRoomReq.
 
-        直播间描述。
+        对话描述。
 
         :return: The room_description of this CreateSmartChatRoomReq.
         :rtype: str
@@ -146,7 +146,7 @@ class CreateSmartChatRoomReq:
     def room_description(self, room_description):
         """Sets the room_description of this CreateSmartChatRoomReq.
 
-        直播间描述。
+        对话描述。
 
         :param room_description: The room_description of this CreateSmartChatRoomReq.
         :type room_description: str
@@ -215,7 +215,7 @@ class CreateSmartChatRoomReq:
     def robot_id(self):
         """Gets the robot_id of this CreateSmartChatRoomReq.
 
-        机器人ID。
+        机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
 
         :return: The robot_id of this CreateSmartChatRoomReq.
         :rtype: str
@@ -226,7 +226,7 @@ class CreateSmartChatRoomReq:
     def robot_id(self, robot_id):
         """Sets the robot_id of this CreateSmartChatRoomReq.
 
-        机器人ID。
+        机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
 
         :param robot_id: The robot_id of this CreateSmartChatRoomReq.
         :type robot_id: str

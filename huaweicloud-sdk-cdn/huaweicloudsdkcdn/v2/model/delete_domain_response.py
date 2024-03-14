@@ -18,29 +18,36 @@ class DeleteDomainResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'domain': 'DomainsWithPort'
+        'domain': 'DomainsWithPort',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'domain': 'domain'
+        'domain': 'domain',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, domain=None):
+    def __init__(self, domain=None, x_request_id=None):
         """DeleteDomainResponse
 
         The model defined in huaweicloud sdk
 
         :param domain: 
         :type domain: :class:`huaweicloudsdkcdn.v2.DomainsWithPort`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DeleteDomainResponse, self).__init__()
 
         self._domain = None
+        self._x_request_id = None
         self.discriminator = None
 
         if domain is not None:
             self.domain = domain
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def domain(self):
@@ -59,6 +66,24 @@ class DeleteDomainResponse(SdkResponse):
         :type domain: :class:`huaweicloudsdkcdn.v2.DomainsWithPort`
         """
         self._domain = domain
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this DeleteDomainResponse.
+
+        :return: The x_request_id of this DeleteDomainResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DeleteDomainResponse.
+
+        :param x_request_id: The x_request_id of this DeleteDomainResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,9 +35,9 @@ class InviteAccountReqBody:
 
         :param target: 
         :type target: :class:`huaweicloudsdkorganizations.v1.TargetDto`
-        :param notes: 给收件帐号所有者的邮件中的附加信息。
+        :param notes: 给收件账号所有者的邮件中的附加信息。
         :type notes: str
-        :param tags: 要绑定到新创建的帐号的标签列表。
+        :param tags: 要绑定到新创建的账号的标签列表。
         :type tags: list[:class:`huaweicloudsdkorganizations.v1.TagDto`]
         """
         
@@ -75,7 +75,7 @@ class InviteAccountReqBody:
     def notes(self):
         """Gets the notes of this InviteAccountReqBody.
 
-        给收件帐号所有者的邮件中的附加信息。
+        给收件账号所有者的邮件中的附加信息。
 
         :return: The notes of this InviteAccountReqBody.
         :rtype: str
@@ -86,7 +86,7 @@ class InviteAccountReqBody:
     def notes(self, notes):
         """Sets the notes of this InviteAccountReqBody.
 
-        给收件帐号所有者的邮件中的附加信息。
+        给收件账号所有者的邮件中的附加信息。
 
         :param notes: The notes of this InviteAccountReqBody.
         :type notes: str
@@ -97,7 +97,7 @@ class InviteAccountReqBody:
     def tags(self):
         """Gets the tags of this InviteAccountReqBody.
 
-        要绑定到新创建的帐号的标签列表。
+        要绑定到新创建的账号的标签列表。
 
         :return: The tags of this InviteAccountReqBody.
         :rtype: list[:class:`huaweicloudsdkorganizations.v1.TagDto`]
@@ -108,7 +108,7 @@ class InviteAccountReqBody:
     def tags(self, tags):
         """Sets the tags of this InviteAccountReqBody.
 
-        要绑定到新创建的帐号的标签列表。
+        要绑定到新创建的账号的标签列表。
 
         :param tags: The tags of this InviteAccountReqBody.
         :type tags: list[:class:`huaweicloudsdkorganizations.v1.TagDto`]

@@ -32,7 +32,7 @@ class ListHandshakesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param handshakes: 邀请（握手）对象的列表，其中包含与指定帐号关联的每个邀请（握手）的详细信息。
+        :param handshakes: 邀请（握手）对象的列表，其中包含与指定账号关联的每个邀请（握手）的详细信息。
         :type handshakes: list[:class:`huaweicloudsdkorganizations.v1.HandshakeDto`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListHandshakesResponse(SdkResponse):
     def handshakes(self):
         """Gets the handshakes of this ListHandshakesResponse.
 
-        邀请（握手）对象的列表，其中包含与指定帐号关联的每个邀请（握手）的详细信息。
+        邀请（握手）对象的列表，其中包含与指定账号关联的每个邀请（握手）的详细信息。
 
         :return: The handshakes of this ListHandshakesResponse.
         :rtype: list[:class:`huaweicloudsdkorganizations.v1.HandshakeDto`]
@@ -64,7 +64,7 @@ class ListHandshakesResponse(SdkResponse):
     def handshakes(self, handshakes):
         """Sets the handshakes of this ListHandshakesResponse.
 
-        邀请（握手）对象的列表，其中包含与指定帐号关联的每个邀请（握手）的详细信息。
+        邀请（握手）对象的列表，其中包含与指定账号关联的每个邀请（握手）的详细信息。
 
         :param handshakes: The handshakes of this ListHandshakesResponse.
         :type handshakes: list[:class:`huaweicloudsdkorganizations.v1.HandshakeDto`]

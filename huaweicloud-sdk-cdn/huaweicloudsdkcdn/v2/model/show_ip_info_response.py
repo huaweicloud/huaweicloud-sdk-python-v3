@@ -18,29 +18,36 @@ class ShowIpInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cdn_ips': 'list[CdnIps]'
+        'cdn_ips': 'list[CdnIps]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'cdn_ips': 'cdn_ips'
+        'cdn_ips': 'cdn_ips',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, cdn_ips=None):
+    def __init__(self, cdn_ips=None, x_request_id=None):
         """ShowIpInfoResponse
 
         The model defined in huaweicloud sdk
 
         :param cdn_ips: IP归属信息列表。
         :type cdn_ips: list[:class:`huaweicloudsdkcdn.v2.CdnIps`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowIpInfoResponse, self).__init__()
 
         self._cdn_ips = None
+        self._x_request_id = None
         self.discriminator = None
 
         if cdn_ips is not None:
             self.cdn_ips = cdn_ips
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def cdn_ips(self):
@@ -63,6 +70,24 @@ class ShowIpInfoResponse(SdkResponse):
         :type cdn_ips: list[:class:`huaweicloudsdkcdn.v2.CdnIps`]
         """
         self._cdn_ips = cdn_ips
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowIpInfoResponse.
+
+        :return: The x_request_id of this ShowIpInfoResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowIpInfoResponse.
+
+        :param x_request_id: The x_request_id of this ShowIpInfoResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

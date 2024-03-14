@@ -8,9 +8,12 @@ class IdentityCenterRegion:
 
     CN_NORTH_4 = Region("cn-north-4",
                         "https://identitycenter.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://identitycenter.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "cn-south-1": CN_SOUTH_1,
     }
 
     @classmethod

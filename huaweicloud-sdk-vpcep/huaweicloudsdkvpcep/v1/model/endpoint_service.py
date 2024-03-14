@@ -21,7 +21,7 @@ class EndpointService:
         'owner': 'str',
         'service_name': 'str',
         'service_type': 'str',
-        'created_at': 'str',
+        'created_at': 'datetime',
         'is_charge': 'bool',
         'enable_policy': 'bool'
     }
@@ -47,13 +47,13 @@ class EndpointService:
         :type owner: str
         :param service_name: 公共终端节点服务的名称。
         :type service_name: str
-        :param service_type: 终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        :param service_type: 终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
         :type service_type: str
         :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYYMM-DDTHH:MM:SSZ
-        :type created_at: str
-        :param is_charge: 连接该终端节点服务的终端节点是否计费。 ● true：计费 ● false：不计费
+        :type created_at: datetime
+        :param is_charge: 连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
         :type is_charge: bool
-        :param enable_policy: 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        :param enable_policy: 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
         :type enable_policy: bool
         """
         
@@ -153,7 +153,7 @@ class EndpointService:
     def service_type(self):
         """Gets the service_type of this EndpointService.
 
-        终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :return: The service_type of this EndpointService.
         :rtype: str
@@ -164,7 +164,7 @@ class EndpointService:
     def service_type(self, service_type):
         """Sets the service_type of this EndpointService.
 
-        终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :param service_type: The service_type of this EndpointService.
         :type service_type: str
@@ -178,7 +178,7 @@ class EndpointService:
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYYMM-DDTHH:MM:SSZ
 
         :return: The created_at of this EndpointService.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -189,7 +189,7 @@ class EndpointService:
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYYMM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this EndpointService.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -197,7 +197,7 @@ class EndpointService:
     def is_charge(self):
         """Gets the is_charge of this EndpointService.
 
-        连接该终端节点服务的终端节点是否计费。 ● true：计费 ● false：不计费
+        连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
 
         :return: The is_charge of this EndpointService.
         :rtype: bool
@@ -208,7 +208,7 @@ class EndpointService:
     def is_charge(self, is_charge):
         """Sets the is_charge of this EndpointService.
 
-        连接该终端节点服务的终端节点是否计费。 ● true：计费 ● false：不计费
+        连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
 
         :param is_charge: The is_charge of this EndpointService.
         :type is_charge: bool
@@ -219,7 +219,7 @@ class EndpointService:
     def enable_policy(self):
         """Gets the enable_policy of this EndpointService.
 
-        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :return: The enable_policy of this EndpointService.
         :rtype: bool
@@ -230,7 +230,7 @@ class EndpointService:
     def enable_policy(self, enable_policy):
         """Sets the enable_policy of this EndpointService.
 
-        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :param enable_policy: The enable_policy of this EndpointService.
         :type enable_policy: bool

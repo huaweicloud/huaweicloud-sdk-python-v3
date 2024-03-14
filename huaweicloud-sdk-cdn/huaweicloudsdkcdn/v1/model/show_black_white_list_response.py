@@ -19,15 +19,17 @@ class ShowBlackWhiteListResponse(SdkResponse):
 
     openapi_types = {
         'type': 'int',
-        'ip_list': 'list[str]'
+        'ip_list': 'list[str]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'type': 'type',
-        'ip_list': 'ip_list'
+        'ip_list': 'ip_list',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, type=None, ip_list=None):
+    def __init__(self, type=None, ip_list=None, x_request_id=None):
         """ShowBlackWhiteListResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ShowBlackWhiteListResponse(SdkResponse):
         :type type: int
         :param ip_list: IP黑白名单列表。
         :type ip_list: list[str]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowBlackWhiteListResponse, self).__init__()
 
         self._type = None
         self._ip_list = None
+        self._x_request_id = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
         if ip_list is not None:
             self.ip_list = ip_list
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def type(self):
@@ -92,6 +99,24 @@ class ShowBlackWhiteListResponse(SdkResponse):
         :type ip_list: list[str]
         """
         self._ip_list = ip_list
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowBlackWhiteListResponse.
+
+        :return: The x_request_id of this ShowBlackWhiteListResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowBlackWhiteListResponse.
+
+        :param x_request_id: The x_request_id of this ShowBlackWhiteListResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

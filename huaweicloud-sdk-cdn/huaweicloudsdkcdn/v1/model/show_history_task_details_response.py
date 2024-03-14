@@ -27,7 +27,8 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         'succeed': 'int',
         'failed': 'int',
         'total': 'int',
-        'file_type': 'str'
+        'file_type': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         'succeed': 'succeed',
         'failed': 'failed',
         'total': 'total',
-        'file_type': 'file_type'
+        'file_type': 'file_type',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, id=None, task_type=None, status=None, urls=None, create_time=None, processing=None, succeed=None, failed=None, total=None, file_type=None):
+    def __init__(self, id=None, task_type=None, status=None, urls=None, create_time=None, processing=None, succeed=None, failed=None, total=None, file_type=None, x_request_id=None):
         """ShowHistoryTaskDetailsResponse
 
         The model defined in huaweicloud sdk
@@ -68,6 +70,8 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         :type total: int
         :param file_type: 文件类型，file：文件；directory：目录，默认是文件file,
         :type file_type: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowHistoryTaskDetailsResponse, self).__init__()
@@ -82,6 +86,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         self._failed = None
         self._total = None
         self._file_type = None
+        self._x_request_id = None
         self.discriminator = None
 
         if id is not None:
@@ -104,6 +109,8 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
             self.total = total
         if file_type is not None:
             self.file_type = file_type
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def id(self):
@@ -324,6 +331,24 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         :type file_type: str
         """
         self._file_type = file_type
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowHistoryTaskDetailsResponse.
+
+        :return: The x_request_id of this ShowHistoryTaskDetailsResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowHistoryTaskDetailsResponse.
+
+        :param x_request_id: The x_request_id of this ShowHistoryTaskDetailsResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

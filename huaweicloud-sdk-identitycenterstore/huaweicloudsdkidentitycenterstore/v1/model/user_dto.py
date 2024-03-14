@@ -20,6 +20,7 @@ class UserDto:
         'addresses': 'list[AddressDto]',
         'display_name': 'str',
         'emails': 'list[EmailDto]',
+        'external_id': 'str',
         'external_ids': 'list[ExternalIdDto]',
         'identity_store_id': 'str',
         'locale': 'str',
@@ -37,13 +38,15 @@ class UserDto:
         'created_by': 'str',
         'updated_at': 'int',
         'updated_by': 'str',
-        'enabled': 'bool'
+        'enabled': 'bool',
+        'enterprise': 'EnterpriseDto'
     }
 
     attribute_map = {
         'addresses': 'addresses',
         'display_name': 'display_name',
         'emails': 'emails',
+        'external_id': 'external_id',
         'external_ids': 'external_ids',
         'identity_store_id': 'identity_store_id',
         'locale': 'locale',
@@ -61,10 +64,11 @@ class UserDto:
         'created_by': 'created_by',
         'updated_at': 'updated_at',
         'updated_by': 'updated_by',
-        'enabled': 'enabled'
+        'enabled': 'enabled',
+        'enterprise': 'enterprise'
     }
 
-    def __init__(self, addresses=None, display_name=None, emails=None, external_ids=None, identity_store_id=None, locale=None, name=None, nickname=None, phone_numbers=None, preferred_language=None, profile_url=None, timezone=None, title=None, user_id=None, user_name=None, user_type=None, created_at=None, created_by=None, updated_at=None, updated_by=None, enabled=None):
+    def __init__(self, addresses=None, display_name=None, emails=None, external_id=None, external_ids=None, identity_store_id=None, locale=None, name=None, nickname=None, phone_numbers=None, preferred_language=None, profile_url=None, timezone=None, title=None, user_id=None, user_name=None, user_type=None, created_at=None, created_by=None, updated_at=None, updated_by=None, enabled=None, enterprise=None):
         """UserDto
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,8 @@ class UserDto:
         :type display_name: str
         :param emails: 用户的电子邮箱信息列表
         :type emails: list[:class:`huaweicloudsdkidentitycenterstore.v1.EmailDto`]
+        :param external_id: 外部身份源分配给此资源的标识符
+        :type external_id: str
         :param external_ids: 用户的外部标识符信息列表
         :type external_ids: list[:class:`huaweicloudsdkidentitycenterstore.v1.ExternalIdDto`]
         :param identity_store_id: 身份源的全局唯一标识符（ID）
@@ -95,7 +101,7 @@ class UserDto:
         :type timezone: str
         :param title: 用户头衔
         :type title: str
-        :param user_id: 身份源中IdentityCenter用户的全局唯一标识符（ID）
+        :param user_id: 身份源中IAM身份中心用户的全局唯一标识符（ID）
         :type user_id: str
         :param user_name: 用户名，用于标识用户的唯一字符串
         :type user_name: str
@@ -111,6 +117,8 @@ class UserDto:
         :type updated_by: str
         :param enabled: 一个布尔值，表示用户是否启用
         :type enabled: bool
+        :param enterprise: 
+        :type enterprise: :class:`huaweicloudsdkidentitycenterstore.v1.EnterpriseDto`
         """
         
         
@@ -118,6 +126,7 @@ class UserDto:
         self._addresses = None
         self._display_name = None
         self._emails = None
+        self._external_id = None
         self._external_ids = None
         self._identity_store_id = None
         self._locale = None
@@ -136,12 +145,15 @@ class UserDto:
         self._updated_at = None
         self._updated_by = None
         self._enabled = None
+        self._enterprise = None
         self.discriminator = None
 
         if addresses is not None:
             self.addresses = addresses
         self.display_name = display_name
         self.emails = emails
+        if external_id is not None:
+            self.external_id = external_id
         if external_ids is not None:
             self.external_ids = external_ids
         self.identity_store_id = identity_store_id
@@ -169,6 +181,8 @@ class UserDto:
         self.updated_at = updated_at
         self.updated_by = updated_by
         self.enabled = enabled
+        if enterprise is not None:
+            self.enterprise = enterprise
 
     @property
     def addresses(self):
@@ -235,6 +249,28 @@ class UserDto:
         :type emails: list[:class:`huaweicloudsdkidentitycenterstore.v1.EmailDto`]
         """
         self._emails = emails
+
+    @property
+    def external_id(self):
+        """Gets the external_id of this UserDto.
+
+        外部身份源分配给此资源的标识符
+
+        :return: The external_id of this UserDto.
+        :rtype: str
+        """
+        return self._external_id
+
+    @external_id.setter
+    def external_id(self, external_id):
+        """Sets the external_id of this UserDto.
+
+        外部身份源分配给此资源的标识符
+
+        :param external_id: The external_id of this UserDto.
+        :type external_id: str
+        """
+        self._external_id = external_id
 
     @property
     def external_ids(self):
@@ -456,7 +492,7 @@ class UserDto:
     def user_id(self):
         """Gets the user_id of this UserDto.
 
-        身份源中IdentityCenter用户的全局唯一标识符（ID）
+        身份源中IAM身份中心用户的全局唯一标识符（ID）
 
         :return: The user_id of this UserDto.
         :rtype: str
@@ -467,7 +503,7 @@ class UserDto:
     def user_id(self, user_id):
         """Sets the user_id of this UserDto.
 
-        身份源中IdentityCenter用户的全局唯一标识符（ID）
+        身份源中IAM身份中心用户的全局唯一标识符（ID）
 
         :param user_id: The user_id of this UserDto.
         :type user_id: str
@@ -627,6 +663,24 @@ class UserDto:
         :type enabled: bool
         """
         self._enabled = enabled
+
+    @property
+    def enterprise(self):
+        """Gets the enterprise of this UserDto.
+
+        :return: The enterprise of this UserDto.
+        :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.EnterpriseDto`
+        """
+        return self._enterprise
+
+    @enterprise.setter
+    def enterprise(self, enterprise):
+        """Sets the enterprise of this UserDto.
+
+        :param enterprise: The enterprise of this UserDto.
+        :type enterprise: :class:`huaweicloudsdkidentitycenterstore.v1.EnterpriseDto`
+        """
+        self._enterprise = enterprise
 
     def to_dict(self):
         """Returns the model properties as a dict"""

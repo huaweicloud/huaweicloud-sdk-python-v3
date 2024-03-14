@@ -48,8 +48,7 @@ class VersionModelVersionMasterModifierDTO:
         self._version = None
         self.discriminator = None
 
-        if master_id is not None:
-            self.master_id = master_id
+        self.master_id = master_id
         if modifier is not None:
             self.modifier = modifier
         if version is not None:

@@ -15,42 +15,74 @@ class ListInstancesRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'limit': 'int',
         'marker': 'str'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, limit=None, marker=None):
+    def __init__(self, x_security_token=None, limit=None, marker=None):
         """ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
+        :param limit: 每个请求返回的最大结果数
         :type limit: int
-        :param marker: 
+        :param marker: 分页标记
         :type marker: str
         """
         
         
 
+        self._x_security_token = None
         self._limit = None
         self._marker = None
         self.discriminator = None
 
+        if x_security_token is not None:
+            self.x_security_token = x_security_token
         if limit is not None:
             self.limit = limit
         if marker is not None:
             self.marker = marker
 
     @property
+    def x_security_token(self):
+        """Gets the x_security_token of this ListInstancesRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        """Sets the x_security_token of this ListInstancesRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ListInstancesRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
+
+    @property
     def limit(self):
         """Gets the limit of this ListInstancesRequest.
+
+        每个请求返回的最大结果数
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -61,6 +93,8 @@ class ListInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstancesRequest.
 
+        每个请求返回的最大结果数
+
         :param limit: The limit of this ListInstancesRequest.
         :type limit: int
         """
@@ -70,6 +104,8 @@ class ListInstancesRequest:
     def marker(self):
         """Gets the marker of this ListInstancesRequest.
 
+        分页标记
+
         :return: The marker of this ListInstancesRequest.
         :rtype: str
         """
@@ -78,6 +114,8 @@ class ListInstancesRequest:
     @marker.setter
     def marker(self, marker):
         """Sets the marker of this ListInstancesRequest.
+
+        分页标记
 
         :param marker: The marker of this ListInstancesRequest.
         :type marker: str

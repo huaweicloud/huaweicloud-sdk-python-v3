@@ -39,7 +39,7 @@ class JobNodeVpcInfo:
         :type vpc_id: str
         :param subnet_id: 任务实例所在子网ID。
         :type subnet_id: str
-        :param custom_node_ip: 指定创建任务实例IP地址，多个IP端口之间请用“,”英文逗号分隔，目前仅支持设置IPv4地址，获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP 。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询私有IP列表，选择“device_owner”为空的私有IP。 示例： \&quot;192.168.0.10,192.168.0.11\&quot;
+        :param custom_node_ip: 指定创建任务实例IP地址，多个IP端口之间请用“,”英文逗号分隔，目前仅支持设置IPv4地址，获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP 。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询私有IP列表，选择“device_owner”为空的私有IP。
         :type custom_node_ip: str
         :param security_group_id: 任务实例所在的安全组ID。
         :type security_group_id: str
@@ -108,7 +108,7 @@ class JobNodeVpcInfo:
     def custom_node_ip(self):
         """Gets the custom_node_ip of this JobNodeVpcInfo.
 
-        指定创建任务实例IP地址，多个IP端口之间请用“,”英文逗号分隔，目前仅支持设置IPv4地址，获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP 。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询私有IP列表，选择“device_owner”为空的私有IP。 示例： \"192.168.0.10,192.168.0.11\"
+        指定创建任务实例IP地址，多个IP端口之间请用“,”英文逗号分隔，目前仅支持设置IPv4地址，获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP 。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询私有IP列表，选择“device_owner”为空的私有IP。
 
         :return: The custom_node_ip of this JobNodeVpcInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class JobNodeVpcInfo:
     def custom_node_ip(self, custom_node_ip):
         """Sets the custom_node_ip of this JobNodeVpcInfo.
 
-        指定创建任务实例IP地址，多个IP端口之间请用“,”英文逗号分隔，目前仅支持设置IPv4地址，获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP 。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询私有IP列表，选择“device_owner”为空的私有IP。 示例： \"192.168.0.10,192.168.0.11\"
+        指定创建任务实例IP地址，多个IP端口之间请用“,”英文逗号分隔，目前仅支持设置IPv4地址，获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP 。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询私有IP列表，选择“device_owner”为空的私有IP。
 
         :param custom_node_ip: The custom_node_ip of this JobNodeVpcInfo.
         :type custom_node_ip: str

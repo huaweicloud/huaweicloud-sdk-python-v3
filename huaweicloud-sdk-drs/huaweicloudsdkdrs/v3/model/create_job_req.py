@@ -39,7 +39,8 @@ class CreateJobReq:
         'master_az': 'str',
         'slave_az': 'str',
         'charging_mode': 'str',
-        'period_order': 'PeriodOrderInfo'
+        'period_order': 'PeriodOrderInfo',
+        'public_ip_list': 'list[PublicIpConfig]'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class CreateJobReq:
         'master_az': 'master_az',
         'slave_az': 'slave_az',
         'charging_mode': 'charging_mode',
-        'period_order': 'period_order'
+        'period_order': 'period_order',
+        'public_ip_list': 'public_ip_list'
     }
 
-    def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None, master_az=None, slave_az=None, charging_mode=None, period_order=None):
+    def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None, master_az=None, slave_az=None, charging_mode=None, period_order=None, public_ip_list=None):
         """CreateJobReq
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class CreateJobReq:
         :type charging_mode: str
         :param period_order: 
         :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
+        :param public_ip_list: 指定公网IP的信息
+        :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
         """
         
         
@@ -146,6 +150,7 @@ class CreateJobReq:
         self._slave_az = None
         self._charging_mode = None
         self._period_order = None
+        self._public_ip_list = None
         self.discriminator = None
 
         if bind_eip is not None:
@@ -184,6 +189,8 @@ class CreateJobReq:
             self.charging_mode = charging_mode
         if period_order is not None:
             self.period_order = period_order
+        if public_ip_list is not None:
+            self.public_ip_list = public_ip_list
 
     @property
     def bind_eip(self):
@@ -678,6 +685,28 @@ class CreateJobReq:
         :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
         """
         self._period_order = period_order
+
+    @property
+    def public_ip_list(self):
+        """Gets the public_ip_list of this CreateJobReq.
+
+        指定公网IP的信息
+
+        :return: The public_ip_list of this CreateJobReq.
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
+        """
+        return self._public_ip_list
+
+    @public_ip_list.setter
+    def public_ip_list(self, public_ip_list):
+        """Sets the public_ip_list of this CreateJobReq.
+
+        指定公网IP的信息
+
+        :param public_ip_list: The public_ip_list of this CreateJobReq.
+        :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
+        """
+        self._public_ip_list = public_ip_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

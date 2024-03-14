@@ -18,29 +18,36 @@ class UpdateFollow302SwitchResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'follow_status': 'Follow302StatusBody'
+        'follow_status': 'Follow302StatusBody',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'follow_status': 'follow_status'
+        'follow_status': 'follow_status',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, follow_status=None):
+    def __init__(self, follow_status=None, x_request_id=None):
         """UpdateFollow302SwitchResponse
 
         The model defined in huaweicloud sdk
 
         :param follow_status: 
         :type follow_status: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(UpdateFollow302SwitchResponse, self).__init__()
 
         self._follow_status = None
+        self._x_request_id = None
         self.discriminator = None
 
         if follow_status is not None:
             self.follow_status = follow_status
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def follow_status(self):
@@ -59,6 +66,24 @@ class UpdateFollow302SwitchResponse(SdkResponse):
         :type follow_status: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`
         """
         self._follow_status = follow_status
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateFollow302SwitchResponse.
+
+        :return: The x_request_id of this UpdateFollow302SwitchResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateFollow302SwitchResponse.
+
+        :param x_request_id: The x_request_id of this UpdateFollow302SwitchResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

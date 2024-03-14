@@ -49,11 +49,11 @@ class ListServiceConnectionsRequest:
         :type id: str
         :param marker_id: 终端节点的报文标识。
         :type marker_id: str
-        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败
+        :param status: 终端节点的连接状态。  - pendingAcceptance：待接受  - accepted：已接受  - rejected：已拒绝  - failed：失败
         :type status: str
-        :param sort_key: 查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
+        :param sort_key: 查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
         :type sort_key: str
-        :param sort_dir: 查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :param sort_dir: 查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
         :type sort_dir: str
         :param limit: 查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
         :type limit: int
@@ -159,7 +159,7 @@ class ListServiceConnectionsRequest:
     def status(self):
         """Gets the status of this ListServiceConnectionsRequest.
 
-        终端节点的连接状态。 ● pendingAcceptance：待接受 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败
+        终端节点的连接状态。  - pendingAcceptance：待接受  - accepted：已接受  - rejected：已拒绝  - failed：失败
 
         :return: The status of this ListServiceConnectionsRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListServiceConnectionsRequest:
     def status(self, status):
         """Sets the status of this ListServiceConnectionsRequest.
 
-        终端节点的连接状态。 ● pendingAcceptance：待接受 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败
+        终端节点的连接状态。  - pendingAcceptance：待接受  - accepted：已接受  - rejected：已拒绝  - failed：失败
 
         :param status: The status of this ListServiceConnectionsRequest.
         :type status: str
@@ -181,7 +181,7 @@ class ListServiceConnectionsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListServiceConnectionsRequest.
 
-        查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
+        查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
 
         :return: The sort_key of this ListServiceConnectionsRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListServiceConnectionsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListServiceConnectionsRequest.
 
-        查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
+        查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListServiceConnectionsRequest.
         :type sort_key: str
@@ -203,7 +203,7 @@ class ListServiceConnectionsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListServiceConnectionsRequest.
 
-        查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
         :return: The sort_dir of this ListServiceConnectionsRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class ListServiceConnectionsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListServiceConnectionsRequest.
 
-        查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListServiceConnectionsRequest.
         :type sort_dir: str

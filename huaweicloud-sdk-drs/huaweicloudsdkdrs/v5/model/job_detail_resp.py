@@ -43,7 +43,10 @@ class JobDetailResp:
         'support_import_file_resp': 'SupportImportFileResult',
         'instance_features': 'dict(str, str)',
         'task_version': 'str',
-        'connection_management': 'ConnectionManagement'
+        'connection_management': 'ConnectionManagement',
+        'public_ip_list': 'list[PublicIpConfig]',
+        'bind_public_ip_state': 'str',
+        'children': 'list[FailedToBindEipChildInfo]'
     }
 
     attribute_map = {
@@ -73,10 +76,13 @@ class JobDetailResp:
         'support_import_file_resp': 'support_import_file_resp',
         'instance_features': 'instance_features',
         'task_version': 'task_version',
-        'connection_management': 'connection_management'
+        'connection_management': 'connection_management',
+        'public_ip_list': 'public_ip_list',
+        'bind_public_ip_state': 'bind_public_ip_state',
+        'children': 'children'
     }
 
-    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None):
+    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None):
         """JobDetailResp
 
         The model defined in huaweicloud sdk
@@ -135,6 +141,12 @@ class JobDetailResp:
         :type task_version: str
         :param connection_management: 
         :type connection_management: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
+        :param public_ip_list: 指定公网IP的信息
+        :type public_ip_list: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
+        :param bind_public_ip_state: 是否成功绑定公网IP
+        :type bind_public_ip_state: str
+        :param children: 多任务时，存在子任务绑定失败时，返回子任务的信息
+        :type children: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
         """
         
         
@@ -166,6 +178,9 @@ class JobDetailResp:
         self._instance_features = None
         self._task_version = None
         self._connection_management = None
+        self._public_ip_list = None
+        self._bind_public_ip_state = None
+        self._children = None
         self.discriminator = None
 
         if id is not None:
@@ -222,6 +237,12 @@ class JobDetailResp:
             self.task_version = task_version
         if connection_management is not None:
             self.connection_management = connection_management
+        if public_ip_list is not None:
+            self.public_ip_list = public_ip_list
+        if bind_public_ip_state is not None:
+            self.bind_public_ip_state = bind_public_ip_state
+        if children is not None:
+            self.children = children
 
     @property
     def id(self):
@@ -756,6 +777,72 @@ class JobDetailResp:
         :type connection_management: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
         """
         self._connection_management = connection_management
+
+    @property
+    def public_ip_list(self):
+        """Gets the public_ip_list of this JobDetailResp.
+
+        指定公网IP的信息
+
+        :return: The public_ip_list of this JobDetailResp.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
+        """
+        return self._public_ip_list
+
+    @public_ip_list.setter
+    def public_ip_list(self, public_ip_list):
+        """Sets the public_ip_list of this JobDetailResp.
+
+        指定公网IP的信息
+
+        :param public_ip_list: The public_ip_list of this JobDetailResp.
+        :type public_ip_list: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
+        """
+        self._public_ip_list = public_ip_list
+
+    @property
+    def bind_public_ip_state(self):
+        """Gets the bind_public_ip_state of this JobDetailResp.
+
+        是否成功绑定公网IP
+
+        :return: The bind_public_ip_state of this JobDetailResp.
+        :rtype: str
+        """
+        return self._bind_public_ip_state
+
+    @bind_public_ip_state.setter
+    def bind_public_ip_state(self, bind_public_ip_state):
+        """Sets the bind_public_ip_state of this JobDetailResp.
+
+        是否成功绑定公网IP
+
+        :param bind_public_ip_state: The bind_public_ip_state of this JobDetailResp.
+        :type bind_public_ip_state: str
+        """
+        self._bind_public_ip_state = bind_public_ip_state
+
+    @property
+    def children(self):
+        """Gets the children of this JobDetailResp.
+
+        多任务时，存在子任务绑定失败时，返回子任务的信息
+
+        :return: The children of this JobDetailResp.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
+        """
+        return self._children
+
+    @children.setter
+    def children(self, children):
+        """Sets the children of this JobDetailResp.
+
+        多任务时，存在子任务绑定失败时，返回子任务的信息
+
+        :param children: The children of this JobDetailResp.
+        :type children: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
+        """
+        self._children = children
 
     def to_dict(self):
         """Returns the model properties as a dict"""

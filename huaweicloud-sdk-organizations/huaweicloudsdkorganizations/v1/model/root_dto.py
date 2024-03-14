@@ -43,7 +43,7 @@ class RootDto:
         :type urn: str
         :param name: 根的名称。
         :type name: str
-        :param policy_types: 策略类型在当前根已启用，则该类型策略可以绑定到根或其组织单元或帐号。
+        :param policy_types: 策略类型在当前根已启用，则该类型策略可以绑定到根或其组织单元或账号。
         :type policy_types: list[:class:`huaweicloudsdkorganizations.v1.PolicyTypeSummaryDto`]
         :param created_at: 根的创建时间。
         :type created_at: datetime
@@ -134,7 +134,7 @@ class RootDto:
     def policy_types(self):
         """Gets the policy_types of this RootDto.
 
-        策略类型在当前根已启用，则该类型策略可以绑定到根或其组织单元或帐号。
+        策略类型在当前根已启用，则该类型策略可以绑定到根或其组织单元或账号。
 
         :return: The policy_types of this RootDto.
         :rtype: list[:class:`huaweicloudsdkorganizations.v1.PolicyTypeSummaryDto`]
@@ -145,7 +145,7 @@ class RootDto:
     def policy_types(self, policy_types):
         """Sets the policy_types of this RootDto.
 
-        策略类型在当前根已启用，则该类型策略可以绑定到根或其组织单元或帐号。
+        策略类型在当前根已启用，则该类型策略可以绑定到根或其组织单元或账号。
 
         :param policy_types: The policy_types of this RootDto.
         :type policy_types: list[:class:`huaweicloudsdkorganizations.v1.PolicyTypeSummaryDto`]

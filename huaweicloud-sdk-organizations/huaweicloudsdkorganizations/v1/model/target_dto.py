@@ -33,7 +33,7 @@ class TargetDto:
 
         :param type: 目标类型，account：账户，email：邮箱。
         :type type: str
-        :param entity: 如果指定 &#39;type:account&#39;，则必须提供帐号ID作为实体。如果指定&#39;type:email&#39;，则必须指定与帐号关联的电子邮件地址。
+        :param entity: 如果指定 \&quot;type:account\&quot;，则必须提供账号ID作为实体。如果指定\&quot;type:email\&quot;，则必须指定与账号关联的电子邮件地址。
         :type entity: str
         """
         
@@ -72,7 +72,7 @@ class TargetDto:
     def entity(self):
         """Gets the entity of this TargetDto.
 
-        如果指定 'type:account'，则必须提供帐号ID作为实体。如果指定'type:email'，则必须指定与帐号关联的电子邮件地址。
+        如果指定 \"type:account\"，则必须提供账号ID作为实体。如果指定\"type:email\"，则必须指定与账号关联的电子邮件地址。
 
         :return: The entity of this TargetDto.
         :rtype: str
@@ -83,7 +83,7 @@ class TargetDto:
     def entity(self, entity):
         """Sets the entity of this TargetDto.
 
-        如果指定 'type:account'，则必须提供帐号ID作为实体。如果指定'type:email'，则必须指定与帐号关联的电子邮件地址。
+        如果指定 \"type:account\"，则必须提供账号ID作为实体。如果指定\"type:email\"，则必须指定与账号关联的电子邮件地址。
 
         :param entity: The entity of this TargetDto.
         :type entity: str

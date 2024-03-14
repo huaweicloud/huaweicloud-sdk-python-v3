@@ -24,7 +24,8 @@ class ActionParams:
         'start_time': 'str',
         'compare_task_param': 'CompareTaskParams',
         'is_sync_re_edit': 'bool',
-        'force_delete': 'bool'
+        'force_delete': 'bool',
+        'public_ip_config': 'PublicIpConfig'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ActionParams:
         'start_time': 'start_time',
         'compare_task_param': 'compare_task_param',
         'is_sync_re_edit': 'is_sync_re_edit',
-        'force_delete': 'force_delete'
+        'force_delete': 'force_delete',
+        'public_ip_config': 'public_ip_config'
     }
 
-    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, force_delete=None):
+    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, force_delete=None, public_ip_config=None):
         """ActionParams
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ActionParams:
         :type is_sync_re_edit: bool
         :param force_delete: 强制结束时取值为true。
         :type force_delete: bool
+        :param public_ip_config: 
+        :type public_ip_config: :class:`huaweicloudsdkdrs.v5.PublicIpConfig`
         """
         
         
@@ -71,6 +75,7 @@ class ActionParams:
         self._compare_task_param = None
         self._is_sync_re_edit = None
         self._force_delete = None
+        self._public_ip_config = None
         self.discriminator = None
 
         if endpoints is not None:
@@ -89,6 +94,8 @@ class ActionParams:
             self.is_sync_re_edit = is_sync_re_edit
         if force_delete is not None:
             self.force_delete = force_delete
+        if public_ip_config is not None:
+            self.public_ip_config = public_ip_config
 
     @property
     def endpoints(self):
@@ -257,6 +264,24 @@ class ActionParams:
         :type force_delete: bool
         """
         self._force_delete = force_delete
+
+    @property
+    def public_ip_config(self):
+        """Gets the public_ip_config of this ActionParams.
+
+        :return: The public_ip_config of this ActionParams.
+        :rtype: :class:`huaweicloudsdkdrs.v5.PublicIpConfig`
+        """
+        return self._public_ip_config
+
+    @public_ip_config.setter
+    def public_ip_config(self, public_ip_config):
+        """Sets the public_ip_config of this ActionParams.
+
+        :param public_ip_config: The public_ip_config of this ActionParams.
+        :type public_ip_config: :class:`huaweicloudsdkdrs.v5.PublicIpConfig`
+        """
+        self._public_ip_config = public_ip_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

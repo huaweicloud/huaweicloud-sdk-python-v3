@@ -24,6 +24,7 @@ class TrainingJobInfo:
         'sex': 'str',
         'language': 'str',
         'state': 'JobState',
+        'reject_times': 'int',
         'asset_id': 'str',
         'job_failed_code': 'str',
         'job_failed_reason': 'str',
@@ -42,6 +43,7 @@ class TrainingJobInfo:
         'sex': 'sex',
         'language': 'language',
         'state': 'state',
+        'reject_times': 'reject_times',
         'asset_id': 'asset_id',
         'job_failed_code': 'job_failed_code',
         'job_failed_reason': 'job_failed_reason',
@@ -52,7 +54,7 @@ class TrainingJobInfo:
         'tag': 'tag'
     }
 
-    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None):
+    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None):
         """TrainingJobInfo
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class TrainingJobInfo:
         :type language: str
         :param state: 
         :type state: :class:`huaweicloudsdkmetastudio.v1.JobState`
+        :param reject_times: 本次任务中该状态出现的次数
+        :type reject_times: int
         :param asset_id: 当任务状态为成功时呈现,音色模型在资产库中的id。
         :type asset_id: str
         :param job_failed_code: 当任务失败时呈现,失败错误码。
@@ -98,6 +102,7 @@ class TrainingJobInfo:
         self._sex = None
         self._language = None
         self._state = None
+        self._reject_times = None
         self._asset_id = None
         self._job_failed_code = None
         self._job_failed_reason = None
@@ -122,6 +127,8 @@ class TrainingJobInfo:
             self.language = language
         if state is not None:
             self.state = state
+        if reject_times is not None:
+            self.reject_times = reject_times
         if asset_id is not None:
             self.asset_id = asset_id
         if job_failed_code is not None:
@@ -284,6 +291,28 @@ class TrainingJobInfo:
         :type state: :class:`huaweicloudsdkmetastudio.v1.JobState`
         """
         self._state = state
+
+    @property
+    def reject_times(self):
+        """Gets the reject_times of this TrainingJobInfo.
+
+        本次任务中该状态出现的次数
+
+        :return: The reject_times of this TrainingJobInfo.
+        :rtype: int
+        """
+        return self._reject_times
+
+    @reject_times.setter
+    def reject_times(self, reject_times):
+        """Sets the reject_times of this TrainingJobInfo.
+
+        本次任务中该状态出现的次数
+
+        :param reject_times: The reject_times of this TrainingJobInfo.
+        :type reject_times: int
+        """
+        self._reject_times = reject_times
 
     @property
     def asset_id(self):

@@ -32,6 +32,414 @@ class MetaStudioClient(Client):
 
         return client_builder
 
+    def create_active_code(self, request):
+        """创建激活码
+
+        该接口用于创建激活码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateActiveCode
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateActiveCodeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateActiveCodeResponse`
+        """
+        http_info = self._create_active_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_active_code_invoker(self, request):
+        http_info = self._create_active_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_active_code_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/active-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateActiveCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_active_code(self, request):
+        """删除激活码
+
+        该接口用于删除激活码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteActiveCode
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteActiveCodeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteActiveCodeResponse`
+        """
+        http_info = self._delete_active_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_active_code_invoker(self, request):
+        http_info = self._delete_active_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_active_code_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/active-code/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteActiveCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_active_code(self, request):
+        """查询激活码列表
+
+        该接口用于查询激活码列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListActiveCode
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListActiveCodeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListActiveCodeResponse`
+        """
+        http_info = self._list_active_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_active_code_invoker(self, request):
+        http_info = self._list_active_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_active_code_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/active-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListActiveCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_active_code(self, request):
+        """重置激活码
+
+        该接口用于重置激活码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetActiveCode
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ResetActiveCodeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ResetActiveCodeResponse`
+        """
+        http_info = self._reset_active_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_active_code_invoker(self, request):
+        http_info = self._reset_active_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_active_code_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/active-code/{active_code_id}/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetActiveCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'active_code_id' in local_var_params:
+            path_params['active_code_id'] = local_var_params['active_code_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_active_code(self, request):
+        """查询激活码详情
+
+        该接口用于查询激活码详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowActiveCode
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowActiveCodeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowActiveCodeResponse`
+        """
+        http_info = self._show_active_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_active_code_invoker(self, request):
+        http_info = self._show_active_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_active_code_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/active-code/{active_code_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowActiveCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'active_code_id' in local_var_params:
+            path_params['active_code_id'] = local_var_params['active_code_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_active_code(self, request):
+        """修改激活码
+
+        该接口用于修改激活码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateActiveCode
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateActiveCodeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateActiveCodeResponse`
+        """
+        http_info = self._update_active_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_active_code_invoker(self, request):
+        http_info = self._update_active_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_active_code_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/active-code/{active_code_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateActiveCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'active_code_id' in local_var_params:
+            path_params['active_code_id'] = local_var_params['active_code_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_dialog_url(self, request):
         """创建对话链接
 
@@ -285,6 +693,73 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_assetby_replication_info(self, request):
+        """复制资产
+
+        该接口用于在Region B复制Region A的指定资产。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAssetbyReplicationInfo
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateAssetbyReplicationInfoRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateAssetbyReplicationInfoResponse`
+        """
+        http_info = self._create_assetby_replication_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_assetby_replication_info_invoker(self, request):
+        http_info = self._create_assetby_replication_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_assetby_replication_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-assets-by-replication-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetbyReplicationInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -588,6 +1063,8 @@ class MetaStudioClient(Client):
             query_params.append(('role', local_var_params['role']))
 
         header_params = {}
+        if 'x_real_ip' in local_var_params:
+            header_params['X-REAL-IP'] = local_var_params['x_real_ip']
         if 'x_app_user_id' in local_var_params:
             header_params['X-App-UserId'] = local_var_params['x_app_user_id']
 
@@ -707,6 +1184,73 @@ class MetaStudioClient(Client):
             "resource_path": "/v1/{project_id}/digital-assets/{asset_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_asset_replication_info(self, request):
+        """查询资产复制信息
+
+        当需要将资产从A Region复制到B Region时，先要在A Region调用该接口用于查询资产复制信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAssetReplicationInfo
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAssetReplicationInfoRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAssetReplicationInfoResponse`
+        """
+        http_info = self._show_asset_replication_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asset_replication_info_invoker(self, request):
+        http_info = self._show_asset_replication_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_replication_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-assets/{asset_id}/replication-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetReplicationInfoResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1373,7 +1917,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -1576,7 +2120,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -1643,7 +2187,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -1848,7 +2392,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -1915,7 +2459,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2001,6 +2545,7 @@ class MetaStudioClient(Client):
         """创建一次性鉴权码
 
         该接口用于创建一次性鉴权码，有效期5分钟，鉴权码只能使用一次，每次使用后需要重新获取。
+        &gt; 接口只能通过第三方后台调用，不能在浏览器前台直接调用，否则会有跨域问题。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2690,9 +3235,9 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_smart_chat_room(self, request):
-        """创建智能交互对话直播间
+        """创建智能交互对话
 
-        该接口用于创建智能交互对话直播间。
+        该接口用于创建智能交互对话。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2757,9 +3302,9 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_smart_chat_room(self, request):
-        """删除智能交互对话直播间
+        """删除智能交互对话
 
-        该接口用于删除智能交互对话直播间。
+        该接口用于删除智能交互对话。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2824,9 +3369,9 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_smart_chat_rooms(self, request):
-        """查询智能交互对话直播间列表
+        """查询智能交互对话列表
 
-        该接口用于智能交互对话直播间列表。
+        该接口用于智能交互对话列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2901,9 +3446,9 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_smart_chat_room(self, request):
-        """查询智能交互对话直播间详情
+        """查询智能交互对话详情
 
-        该接口用于查询智能交互对话直播间详情。
+        该接口用于查询智能交互对话详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2968,9 +3513,9 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_smart_chat_room(self, request):
-        """更新智能交互对话直播间信息
+        """更新智能交互对话信息
 
-        该接口用于智能交互对话直播间信息。
+        该接口用于智能交互对话信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4853,7 +5398,7 @@ class MetaStudioClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -4925,7 +5470,7 @@ class MetaStudioClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -4997,7 +5542,7 @@ class MetaStudioClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -5474,7 +6019,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -5611,7 +6156,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -5835,7 +6380,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -6111,7 +6656,7 @@ class MetaStudioClient(Client):
         response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 

@@ -21,7 +21,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         'id': 'str',
         'service_name': 'str',
         'service_type': 'str',
-        'created_at': 'str',
+        'created_at': 'datetime',
         'is_charge': 'bool',
         'public_border_group': 'str',
         'enable_policy': 'bool'
@@ -46,15 +46,15 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         :type id: str
         :param service_name: 终端节点服务的名称。
         :type service_name: str
-        :param service_type: 终端节点服务类型。仅支持将用户私有服务创建为interface类型的终端节点服务。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        :param service_type: 终端节点服务类型。仅支持将用户私有服务创建为interface类型的终端节点服务。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
         :type service_type: str
         :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
-        :type created_at: str
-        :param is_charge: 连接该终端节点服务的终端节点是否计费。 ● true：计费 ● false：不计费
+        :type created_at: datetime
+        :param is_charge: 连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
         :type is_charge: bool
         :param public_border_group: 终端节点对应Pool的Public Border Group信息
         :type public_border_group: str
-        :param enable_policy: 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        :param enable_policy: 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
         :type enable_policy: bool
         """
         
@@ -132,7 +132,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     def service_type(self):
         """Gets the service_type of this ListServiceDescribeDetailsResponse.
 
-        终端节点服务类型。仅支持将用户私有服务创建为interface类型的终端节点服务。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。仅支持将用户私有服务创建为interface类型的终端节点服务。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :return: The service_type of this ListServiceDescribeDetailsResponse.
         :rtype: str
@@ -143,7 +143,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     def service_type(self, service_type):
         """Sets the service_type of this ListServiceDescribeDetailsResponse.
 
-        终端节点服务类型。仅支持将用户私有服务创建为interface类型的终端节点服务。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。仅支持将用户私有服务创建为interface类型的终端节点服务。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :param service_type: The service_type of this ListServiceDescribeDetailsResponse.
         :type service_type: str
@@ -157,7 +157,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The created_at of this ListServiceDescribeDetailsResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -168,7 +168,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param created_at: The created_at of this ListServiceDescribeDetailsResponse.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -176,7 +176,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     def is_charge(self):
         """Gets the is_charge of this ListServiceDescribeDetailsResponse.
 
-        连接该终端节点服务的终端节点是否计费。 ● true：计费 ● false：不计费
+        连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
 
         :return: The is_charge of this ListServiceDescribeDetailsResponse.
         :rtype: bool
@@ -187,7 +187,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     def is_charge(self, is_charge):
         """Sets the is_charge of this ListServiceDescribeDetailsResponse.
 
-        连接该终端节点服务的终端节点是否计费。 ● true：计费 ● false：不计费
+        连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
 
         :param is_charge: The is_charge of this ListServiceDescribeDetailsResponse.
         :type is_charge: bool
@@ -220,7 +220,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     def enable_policy(self):
         """Gets the enable_policy of this ListServiceDescribeDetailsResponse.
 
-        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :return: The enable_policy of this ListServiceDescribeDetailsResponse.
         :rtype: bool
@@ -231,7 +231,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     def enable_policy(self, enable_policy):
         """Sets the enable_policy of this ListServiceDescribeDetailsResponse.
 
-        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false 是否开启终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
         :param enable_policy: The enable_policy of this ListServiceDescribeDetailsResponse.
         :type enable_policy: bool

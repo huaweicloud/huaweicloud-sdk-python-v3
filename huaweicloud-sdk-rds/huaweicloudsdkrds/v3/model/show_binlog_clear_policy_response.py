@@ -18,29 +18,36 @@ class ShowBinlogClearPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'binlog_retention_hours': 'int'
+        'binlog_retention_hours': 'int',
+        'binlog_clear_type': 'str'
     }
 
     attribute_map = {
-        'binlog_retention_hours': 'binlog_retention_hours'
+        'binlog_retention_hours': 'binlog_retention_hours',
+        'binlog_clear_type': 'binlog_clear_type'
     }
 
-    def __init__(self, binlog_retention_hours=None):
+    def __init__(self, binlog_retention_hours=None, binlog_clear_type=None):
         """ShowBinlogClearPolicyResponse
 
         The model defined in huaweicloud sdk
 
         :param binlog_retention_hours: binlog保留时长
         :type binlog_retention_hours: int
+        :param binlog_clear_type: 二进制日志保留策略,取值：time、fast - time:表示按时长保留二进制文件 - fast:表示快速清理,不保留二进制文件
+        :type binlog_clear_type: str
         """
         
         super(ShowBinlogClearPolicyResponse, self).__init__()
 
         self._binlog_retention_hours = None
+        self._binlog_clear_type = None
         self.discriminator = None
 
         if binlog_retention_hours is not None:
             self.binlog_retention_hours = binlog_retention_hours
+        if binlog_clear_type is not None:
+            self.binlog_clear_type = binlog_clear_type
 
     @property
     def binlog_retention_hours(self):
@@ -63,6 +70,28 @@ class ShowBinlogClearPolicyResponse(SdkResponse):
         :type binlog_retention_hours: int
         """
         self._binlog_retention_hours = binlog_retention_hours
+
+    @property
+    def binlog_clear_type(self):
+        """Gets the binlog_clear_type of this ShowBinlogClearPolicyResponse.
+
+        二进制日志保留策略,取值：time、fast - time:表示按时长保留二进制文件 - fast:表示快速清理,不保留二进制文件
+
+        :return: The binlog_clear_type of this ShowBinlogClearPolicyResponse.
+        :rtype: str
+        """
+        return self._binlog_clear_type
+
+    @binlog_clear_type.setter
+    def binlog_clear_type(self, binlog_clear_type):
+        """Sets the binlog_clear_type of this ShowBinlogClearPolicyResponse.
+
+        二进制日志保留策略,取值：time、fast - time:表示按时长保留二进制文件 - fast:表示快速清理,不保留二进制文件
+
+        :param binlog_clear_type: The binlog_clear_type of this ShowBinlogClearPolicyResponse.
+        :type binlog_clear_type: str
+        """
+        self._binlog_clear_type = binlog_clear_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

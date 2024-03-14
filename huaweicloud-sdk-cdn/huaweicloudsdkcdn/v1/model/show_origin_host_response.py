@@ -18,29 +18,36 @@ class ShowOriginHostResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'origin_host': 'DomainOriginHost'
+        'origin_host': 'DomainOriginHost',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'origin_host': 'origin_host'
+        'origin_host': 'origin_host',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, origin_host=None):
+    def __init__(self, origin_host=None, x_request_id=None):
         """ShowOriginHostResponse
 
         The model defined in huaweicloud sdk
 
         :param origin_host: 
         :type origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowOriginHostResponse, self).__init__()
 
         self._origin_host = None
+        self._x_request_id = None
         self.discriminator = None
 
         if origin_host is not None:
             self.origin_host = origin_host
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def origin_host(self):
@@ -59,6 +66,24 @@ class ShowOriginHostResponse(SdkResponse):
         :type origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
         self._origin_host = origin_host
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowOriginHostResponse.
+
+        :return: The x_request_id of this ShowOriginHostResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowOriginHostResponse.
+
+        :param x_request_id: The x_request_id of this ShowOriginHostResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

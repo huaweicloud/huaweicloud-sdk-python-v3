@@ -33,7 +33,8 @@ class SyncPolicyReq:
         'export_snapshot': 'bool',
         'slot_name': 'str',
         'file_and_position': 'str',
-        'gtid_set': 'str'
+        'gtid_set': 'str',
+        'ddl_topic': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class SyncPolicyReq:
         'export_snapshot': 'export_snapshot',
         'slot_name': 'slot_name',
         'file_and_position': 'file_and_position',
-        'gtid_set': 'gtid_set'
+        'gtid_set': 'gtid_set',
+        'ddl_topic': 'ddl_topic'
     }
 
-    def __init__(self, job_id=None, conflict_policy=None, filter_ddl_policy=None, ddl_trans=None, index_trans=None, topic_policy=None, topic=None, partition_policy=None, kafka_data_format=None, topic_name_format=None, partitions_num=None, replication_factor=None, is_fill_materialized_view=None, export_snapshot=None, slot_name=None, file_and_position=None, gtid_set=None):
+    def __init__(self, job_id=None, conflict_policy=None, filter_ddl_policy=None, ddl_trans=None, index_trans=None, topic_policy=None, topic=None, partition_policy=None, kafka_data_format=None, topic_name_format=None, partitions_num=None, replication_factor=None, is_fill_materialized_view=None, export_snapshot=None, slot_name=None, file_and_position=None, gtid_set=None, ddl_topic=None):
         """SyncPolicyReq
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class SyncPolicyReq:
         :type file_and_position: str
         :param gtid_set: - MySQL为源的任务需要，通过show master status命令获取源库位点，根据提示填写Executed_Gtid_Set（如果源库为MySQL 5.5版本，则不支持使用同步任务）。  - 不能包含&lt; &gt; &amp; \&quot; \\&#39; / \\\\\\\\ 特殊字符和中文。且不能超过2048个字符
         :type gtid_set: str
+        :param ddl_topic: 存储DDL的topic。Kafka为目标且ddl_trans为true时必填，取值：目标库已存在的topic名称，确保topic已存在。
+        :type ddl_topic: str
         """
         
         
@@ -116,6 +120,7 @@ class SyncPolicyReq:
         self._slot_name = None
         self._file_and_position = None
         self._gtid_set = None
+        self._ddl_topic = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -151,6 +156,8 @@ class SyncPolicyReq:
             self.file_and_position = file_and_position
         if gtid_set is not None:
             self.gtid_set = gtid_set
+        if ddl_topic is not None:
+            self.ddl_topic = ddl_topic
 
     @property
     def job_id(self):
@@ -525,6 +532,28 @@ class SyncPolicyReq:
         :type gtid_set: str
         """
         self._gtid_set = gtid_set
+
+    @property
+    def ddl_topic(self):
+        """Gets the ddl_topic of this SyncPolicyReq.
+
+        存储DDL的topic。Kafka为目标且ddl_trans为true时必填，取值：目标库已存在的topic名称，确保topic已存在。
+
+        :return: The ddl_topic of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._ddl_topic
+
+    @ddl_topic.setter
+    def ddl_topic(self, ddl_topic):
+        """Sets the ddl_topic of this SyncPolicyReq.
+
+        存储DDL的topic。Kafka为目标且ddl_trans为true时必填，取值：目标库已存在的topic名称，确保topic已存在。
+
+        :param ddl_topic: The ddl_topic of this SyncPolicyReq.
+        :type ddl_topic: str
+        """
+        self._ddl_topic = ddl_topic
 
     def to_dict(self):
         """Returns the model properties as a dict"""

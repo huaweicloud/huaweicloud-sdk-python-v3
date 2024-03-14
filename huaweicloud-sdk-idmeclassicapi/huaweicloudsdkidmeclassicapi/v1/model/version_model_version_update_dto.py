@@ -48,12 +48,10 @@ class VersionModelVersionUpdateDTO:
         self._version = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        self.id = id
         if iteration is not None:
             self.iteration = iteration
-        if version is not None:
-            self.version = version
+        self.version = version
 
     @property
     def id(self):

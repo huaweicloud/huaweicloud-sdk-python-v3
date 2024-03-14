@@ -19,26 +19,30 @@ class InstanceMetadataEntryDto:
     openapi_types = {
         'identity_store_id': 'str',
         'instance_id': 'str',
-        'alias': 'str'
+        'alias': 'str',
+        'instance_urn': 'str'
     }
 
     attribute_map = {
         'identity_store_id': 'identity_store_id',
         'instance_id': 'instance_id',
-        'alias': 'alias'
+        'alias': 'alias',
+        'instance_urn': 'instance_urn'
     }
 
-    def __init__(self, identity_store_id=None, instance_id=None, alias=None):
+    def __init__(self, identity_store_id=None, instance_id=None, alias=None, instance_urn=None):
         """InstanceMetadataEntryDto
 
         The model defined in huaweicloud sdk
 
-        :param identity_store_id: 关联到IAM身份中心的identity store的唯一标识
+        :param identity_store_id: 关联到IAM身份中心实例的身份源的全局唯一标识符（ID）
         :type identity_store_id: str
-        :param instance_id: IAM身份中心实例唯一标识.
+        :param instance_id: IAM身份中心实例的全局唯一标识符（ID）
         :type instance_id: str
-        :param alias: 用户自定义的identity_store_id别名
+        :param alias: 用户为身份源标识符定义的别名
         :type alias: str
+        :param instance_urn: 实例的统一资源名称（URN）
+        :type instance_urn: str
         """
         
         
@@ -46,18 +50,21 @@ class InstanceMetadataEntryDto:
         self._identity_store_id = None
         self._instance_id = None
         self._alias = None
+        self._instance_urn = None
         self.discriminator = None
 
         self.identity_store_id = identity_store_id
         self.instance_id = instance_id
         if alias is not None:
             self.alias = alias
+        if instance_urn is not None:
+            self.instance_urn = instance_urn
 
     @property
     def identity_store_id(self):
         """Gets the identity_store_id of this InstanceMetadataEntryDto.
 
-        关联到IAM身份中心的identity store的唯一标识
+        关联到IAM身份中心实例的身份源的全局唯一标识符（ID）
 
         :return: The identity_store_id of this InstanceMetadataEntryDto.
         :rtype: str
@@ -68,7 +75,7 @@ class InstanceMetadataEntryDto:
     def identity_store_id(self, identity_store_id):
         """Sets the identity_store_id of this InstanceMetadataEntryDto.
 
-        关联到IAM身份中心的identity store的唯一标识
+        关联到IAM身份中心实例的身份源的全局唯一标识符（ID）
 
         :param identity_store_id: The identity_store_id of this InstanceMetadataEntryDto.
         :type identity_store_id: str
@@ -79,7 +86,7 @@ class InstanceMetadataEntryDto:
     def instance_id(self):
         """Gets the instance_id of this InstanceMetadataEntryDto.
 
-        IAM身份中心实例唯一标识.
+        IAM身份中心实例的全局唯一标识符（ID）
 
         :return: The instance_id of this InstanceMetadataEntryDto.
         :rtype: str
@@ -90,7 +97,7 @@ class InstanceMetadataEntryDto:
     def instance_id(self, instance_id):
         """Sets the instance_id of this InstanceMetadataEntryDto.
 
-        IAM身份中心实例唯一标识.
+        IAM身份中心实例的全局唯一标识符（ID）
 
         :param instance_id: The instance_id of this InstanceMetadataEntryDto.
         :type instance_id: str
@@ -101,7 +108,7 @@ class InstanceMetadataEntryDto:
     def alias(self):
         """Gets the alias of this InstanceMetadataEntryDto.
 
-        用户自定义的identity_store_id别名
+        用户为身份源标识符定义的别名
 
         :return: The alias of this InstanceMetadataEntryDto.
         :rtype: str
@@ -112,12 +119,34 @@ class InstanceMetadataEntryDto:
     def alias(self, alias):
         """Sets the alias of this InstanceMetadataEntryDto.
 
-        用户自定义的identity_store_id别名
+        用户为身份源标识符定义的别名
 
         :param alias: The alias of this InstanceMetadataEntryDto.
         :type alias: str
         """
         self._alias = alias
+
+    @property
+    def instance_urn(self):
+        """Gets the instance_urn of this InstanceMetadataEntryDto.
+
+        实例的统一资源名称（URN）
+
+        :return: The instance_urn of this InstanceMetadataEntryDto.
+        :rtype: str
+        """
+        return self._instance_urn
+
+    @instance_urn.setter
+    def instance_urn(self, instance_urn):
+        """Sets the instance_urn of this InstanceMetadataEntryDto.
+
+        实例的统一资源名称（URN）
+
+        :param instance_urn: The instance_urn of this InstanceMetadataEntryDto.
+        :type instance_urn: str
+        """
+        self._instance_urn = instance_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

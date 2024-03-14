@@ -33,9 +33,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return client_builder
 
     def batch_checkin_async(self, request):
-        """XDM_批量检入VersionModel
+        """批量检入M-V模型数据实例
 
-        根据主对象ID批量检入版本对象，小版本升版。
+        根据主对象ID批量检入M-V模型数据实例。已检入的数据实例会生成一个新的迭代版本，并将数据存储至系统中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -102,9 +102,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_checkout_async(self, request):
-        """XDM_批量检出VersionModel
+        """批量检出M-V模型数据实例
 
-        根据主对象ID批量检出版本对象。
+        根据主对象ID批量检出M-V模型数据实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -171,9 +171,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_checkout_and_update_async(self, request):
-        """XDM_批量检出并更新VersionModel
+        """批量检出并更新M-V模型
 
-        根据主对象ID批量检出对象并根据传入字段批量更新版本对象。
+        根据主对象ID批量检出并更新M-V模型数据实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -240,9 +240,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_checkout_undo_async(self, request):
-        """XDM_批量撤销检出VersionModel
+        """批量撤销检出M-V模型数据实例
 
-        根据主对象ID批量撤销检出版本对象。
+        通过此接口批量撤销指定M-V模型实例的检出，将实例数据批量还原至检出前的内容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -309,9 +309,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_checkout_undo_by_admin_async(self, request):
-        """XDM_管理员批量撤销检出VersionModel
+        """管理员批量撤销检出M-V模型数据实例
 
-        管理员根据主对象ID批量撤销检出版本对象。
+        管理员通过此接口批量撤销指定M-V模型实例的检出，将实例数据批量还原至检出前的内容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -447,9 +447,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_delete_branch_async(self, request):
-        """XDM_批量删除VersionModel最新分支版本下所有小版本
+        """批量删除最新大版本下的所有小版本
 
-        根据主对象ID&amp;业务版本列表，批量删除最新分支版本下的所有小版本。
+        根据主对象ID和父模型ID，批量软删除最新大版本下的所有小版本。请您谨慎使用删除操作，删除后该数据将无法恢复。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -516,9 +516,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_delete_logical_branch_async(self, request):
-        """XDM_批量软删除VersionModel最新分支版本下所有小版本
+        """批量软删除最新大版本下的所有小版本
 
-        批量软删除最新分支版本下的所有小版本。
+        根据主对象ID，批量软删除最新大版本下的所有小版本。通过此接口进行删除操作时，系统会将当前删除的实例数据转存至XDM应用的XDMLogicDeleteData内置模型中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -727,9 +727,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_execute_revise_async(self, request):
-        """XDM_批量修订VersionModel。
+        """批量修订M-V模型数据实例
 
-        根据主对象ID批量修订对象。
+        通过此接口批量修订指定M-V模型实例。修订后，实例的“version.修订版本”会更新为新的修订版本。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -865,9 +865,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_update_and_checkin_async(self, request):
-        """XDM_批量更新并检入VersionModel
+        """批量更新并检入M-V模型数据实例
 
-        根据传入字段批量更新版本对象并根据主对象ID批量检入对象。
+        通过此接口批量更新指定M-V模型实例，并检入这些实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -934,9 +934,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_update_and_revise_async(self, request):
-        """XDM_批量修订且更新VersionModel。
+        """批量修订并更新M-V模型数据实例
 
-        根据主对象ID批量修订对象并根据传入字段更新主对象+版本对象。
+        根据主对象ID批量修订并更新M-V模型数据实例，即修订后实例的“version.修订版本”更新为新的修订版本，并同时更新该实例的信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1003,9 +1003,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_update_by_admin_async(self, request):
-        """XDM_管理员批量更新VersionModel指定属性
+        """管理员批量更新M-V模型数据实例
 
-        以管理员身份批量更新指定版本实例上的基础信息。
+        管理员通过此接口批量更新指定M-V模型的指定实例数据。如果某个实例的唯一编码不存在，则不做任何更新操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1141,9 +1141,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_update_version_async(self, request):
-        """XDM_批量升版最新版本对象VersionModel的版本号
+        """批量升级M-V模型实例的版本号
 
-        根据ID批量升版最新版本对象数据的版本号。
+        根据M-V模型实体的唯一编码，批量将该实体下实例的版本号更新至最新版本。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1210,9 +1210,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def checkin_async(self, request):
-        """XDM_检入VersionModel
+        """检入M-V模型数据实例
 
-        根据主对象ID检入版本对象，按照设置的规则生成新的业务版本。
+        根据主对象ID检入M-V模型数据实例。已检入的数据实例会生成一个新的迭代版本，并将数据存储至系统中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1279,9 +1279,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def checkout_async(self, request):
-        """XDM_检出VersionModel
+        """检出M-V模型数据实例
 
-        根据主对象ID检出版本对象，复制生成一条新的版本记录且状态为已检出。
+        根据主对象ID检出M-V模型数据实例，检出后会生成一个新的数据实例，该实例会完全复制原实例现有的信息，且状态修改为已检出。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1348,9 +1348,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def checkout_and_update_async(self, request):
-        """XDM_检出并更新VersionModel
+        """检出并更新M-V模型
 
-        根据主对象ID检出对象并根据传入字段更新版本对象。
+        根据主对象ID检出并更新M-V模型数据实例，即检出后生成一个新的数据实例的同时，更新该新实例的信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1417,9 +1417,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def checkout_undo_async(self, request):
-        """XDM_撤销检出VersionModel
+        """撤销检出M-V模型数据实例
 
-        根据主对象ID撤销检出版本对象，删除新的版本记录且状态为已检入。
+        通过此接口撤销指定M-V模型实例的检出，将实例数据还原至检出前的内容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1486,9 +1486,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def checkout_undo_by_admin_async(self, request):
-        """XDM_管理员撤销检出VersionModel
+        """管理员撤销检出M-V模型数据实例
 
-        管理员根据主对象ID撤销检出版本对象。
+        管理员通过此接口撤销指定M-V模型实例的检出，将实例数据还原至检出前的内容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1555,9 +1555,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def compare_business_version_async(self, request):
-        """XDM_VersionModel业务版本对比
+        """对比M-V模型实例
 
-        根据主对象id，输入版本号（大版本+小版本）进行版本属性与关系对比。（建议使用新的接口instance-attrs-comparison和\\ instance-relation-comparison比较属性和关系）。
+        通过此接口可以对比某个M-V模型数据实例的不同版本的属性和关系。建议使用数据建模引擎（xDM Foundation，简称xDM-F）新增的差异对比功能，即使用instance-attrs-comparison和instance-relation-comparison接口，更多内容可在应用运行态的“数据服务管理 &gt; 全量数据服务 &gt; 系统管理API &gt; 属性对比API”中查看。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1762,9 +1762,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def delete_branch_async(self, request):
-        """XDM_删除VersionModel最新分支版本下所有小版本
+        """删除最新大版本下的所有小版本
 
-        根据masterid&amp;version删除最新大版本下的所有小版本。
+        根据父模型ID和版本对象，删除最新大版本下的所有小版本。请您谨慎使用删除操作，删除后该数据将无法恢复。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1902,9 +1902,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def delete_latest_version_async(self, request):
-        """XDM_删除VersionModel最新分支的最新版本
+        """删除版本对象下最新分支的最新版本实例数据
 
-        根据主对象ID入参，删除最新分支的最新版本。
+        根据主对象ID，删除版本对象下最新分支的最新版本实例数据。请您谨慎使用删除操作，删除后该数据将无法恢复。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1971,9 +1971,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def delete_logical_branch_async(self, request):
-        """XDM_软删除VersionModel最新分支版本下所有小版本
+        """软删除M-V模型实例下最新分支的所有小版本数据
 
-        软删除最新分支版本下的所有小版本。
+        根据父模型ID和版本对象，软删除M-V模型实例下最新分支的所有小版本数据。通过此接口进行删除操作时，系统会将当前删除的实例数据转存至XDM应用的XDMLogicDeleteData内置模型中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2040,9 +2040,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def delete_logical_latest_version_async(self, request):
-        """XDM_软删除VersionModel最新分支的最新版本
+        """软删除版本对象下最新分支的最新版本实例数据
 
-        根据主对象ID入参，软删最新分支的最新版本。
+        根据主对象ID，软删除版本对象下最新分支的最新版本实例数据。通过此接口进行删除操作时，系统会将当前删除的实例数据转存至XDM应用的XDMLogicDeleteData内置模型中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2180,9 +2180,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def execute_revise_async(self, request):
-        """XDM_修订VersionModel
+        """修订M-V模型数据实例
 
-        根据主对象ID修订对象，按照设置的规则生成新的业务版本。
+        通过此接口修订指定M-V模型实例。修订后，该实例的“version.修订版本”会更新为新的修订版本。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2249,9 +2249,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def list_all_versions_async(self, request):
-        """XDM_获取VersionModel版本列表
+        """获取指定M-V模型实例的版本列表
 
-        根据主对象ID，获取全量版本以及对应版本对象list属性。
+        根据主对象ID，获取对应M-V模型实例的所有版本信息（包含对应版本下的属性信息）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2425,7 +2425,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_select_using_post_async(self, request):
         """查询实例的指定属性
 
-        根据查询条件及指定属性分页返回（不支持扩展属性作为选定属性列)。
+        根据查询条件及指定属性分页返回（不支持扩展属性作为选定属性列）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3246,9 +3246,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def show_version_by_master_async(self, request):
-        """XDM_获取VersionModel对应版本信息
+        """获取指定版本的M-V模型实例数据
 
-        根据Masterid和版本号和小版本号，返回对应版本属性，小版本号为空则返回最新小版本属性。
+        根据主对象ID、迭代版本和版本号，查询M-V模型实例的详细版本信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3315,9 +3315,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def update_and_checkin_async(self, request):
-        """XDM_更新并检入VersionModel
+        """更新并检入M-V模型数据实例
 
-        根据传入字段更新版本对象并根据主对象ID检入对象。
+        通过此接口更新指定M-V模型实例，并检入该实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3384,9 +3384,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def update_and_revise_async(self, request):
-        """XDM_修订且更新VersionModel。
+        """修订并更新M-V模型数据实例
 
-        根据主对象ID修订对象并根据传入字段更新主对象+版本对象。
+        根据主对象ID修订并更新M-V模型数据实例，即修订后实例的“version.修订版本”更新为新的修订版本，并同时更新该实例的信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3453,9 +3453,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def update_by_admin_async(self, request):
-        """XDM_管理员更新对象VersionModel指定属性
+        """管理员更新M-V模型数据实例
 
-        以管理员身份更新指定版本实例上的基础信息。
+        管理员通过此接口更新指定M-V模型的指定实例数据。如果实例的唯一编码不存在，则不做任何更新操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

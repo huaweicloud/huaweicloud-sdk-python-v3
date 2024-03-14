@@ -24,6 +24,7 @@ class SmartChatRoomBaseInfo:
         'cover_url': 'str',
         'model_infos': 'ModelInfo',
         'voice_config': 'VoiceConfig',
+        'concurrency': 'int',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -36,29 +37,32 @@ class SmartChatRoomBaseInfo:
         'cover_url': 'cover_url',
         'model_infos': 'model_infos',
         'voice_config': 'voice_config',
+        'concurrency': 'concurrency',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, room_id=None, room_name=None, room_description=None, robot_id=None, cover_url=None, model_infos=None, voice_config=None, create_time=None, update_time=None):
+    def __init__(self, room_id=None, room_name=None, room_description=None, robot_id=None, cover_url=None, model_infos=None, voice_config=None, concurrency=None, create_time=None, update_time=None):
         """SmartChatRoomBaseInfo
 
         The model defined in huaweicloud sdk
 
-        :param room_id: 智能交互对话直播间ID
+        :param room_id: 智能交互对话ID
         :type room_id: str
-        :param room_name: 智能交互对话直播间名称
+        :param room_name: 智能交互对话名称
         :type room_name: str
-        :param room_description: 智能交互对话直播间描述。
+        :param room_description: 智能交互对话描述。
         :type room_description: str
         :param robot_id: 机器人ID。
         :type robot_id: str
-        :param cover_url: 直播间封面图URL
+        :param cover_url: 对话封面图URL
         :type cover_url: str
         :param model_infos: 
         :type model_infos: :class:`huaweicloudsdkmetastudio.v1.ModelInfo`
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
+        :param concurrency: 并发路数。
+        :type concurrency: int
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -74,6 +78,7 @@ class SmartChatRoomBaseInfo:
         self._cover_url = None
         self._model_infos = None
         self._voice_config = None
+        self._concurrency = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -92,6 +97,8 @@ class SmartChatRoomBaseInfo:
             self.model_infos = model_infos
         if voice_config is not None:
             self.voice_config = voice_config
+        if concurrency is not None:
+            self.concurrency = concurrency
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -101,7 +108,7 @@ class SmartChatRoomBaseInfo:
     def room_id(self):
         """Gets the room_id of this SmartChatRoomBaseInfo.
 
-        智能交互对话直播间ID
+        智能交互对话ID
 
         :return: The room_id of this SmartChatRoomBaseInfo.
         :rtype: str
@@ -112,7 +119,7 @@ class SmartChatRoomBaseInfo:
     def room_id(self, room_id):
         """Sets the room_id of this SmartChatRoomBaseInfo.
 
-        智能交互对话直播间ID
+        智能交互对话ID
 
         :param room_id: The room_id of this SmartChatRoomBaseInfo.
         :type room_id: str
@@ -123,7 +130,7 @@ class SmartChatRoomBaseInfo:
     def room_name(self):
         """Gets the room_name of this SmartChatRoomBaseInfo.
 
-        智能交互对话直播间名称
+        智能交互对话名称
 
         :return: The room_name of this SmartChatRoomBaseInfo.
         :rtype: str
@@ -134,7 +141,7 @@ class SmartChatRoomBaseInfo:
     def room_name(self, room_name):
         """Sets the room_name of this SmartChatRoomBaseInfo.
 
-        智能交互对话直播间名称
+        智能交互对话名称
 
         :param room_name: The room_name of this SmartChatRoomBaseInfo.
         :type room_name: str
@@ -145,7 +152,7 @@ class SmartChatRoomBaseInfo:
     def room_description(self):
         """Gets the room_description of this SmartChatRoomBaseInfo.
 
-        智能交互对话直播间描述。
+        智能交互对话描述。
 
         :return: The room_description of this SmartChatRoomBaseInfo.
         :rtype: str
@@ -156,7 +163,7 @@ class SmartChatRoomBaseInfo:
     def room_description(self, room_description):
         """Sets the room_description of this SmartChatRoomBaseInfo.
 
-        智能交互对话直播间描述。
+        智能交互对话描述。
 
         :param room_description: The room_description of this SmartChatRoomBaseInfo.
         :type room_description: str
@@ -189,7 +196,7 @@ class SmartChatRoomBaseInfo:
     def cover_url(self):
         """Gets the cover_url of this SmartChatRoomBaseInfo.
 
-        直播间封面图URL
+        对话封面图URL
 
         :return: The cover_url of this SmartChatRoomBaseInfo.
         :rtype: str
@@ -200,7 +207,7 @@ class SmartChatRoomBaseInfo:
     def cover_url(self, cover_url):
         """Sets the cover_url of this SmartChatRoomBaseInfo.
 
-        直播间封面图URL
+        对话封面图URL
 
         :param cover_url: The cover_url of this SmartChatRoomBaseInfo.
         :type cover_url: str
@@ -242,6 +249,28 @@ class SmartChatRoomBaseInfo:
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
         """
         self._voice_config = voice_config
+
+    @property
+    def concurrency(self):
+        """Gets the concurrency of this SmartChatRoomBaseInfo.
+
+        并发路数。
+
+        :return: The concurrency of this SmartChatRoomBaseInfo.
+        :rtype: int
+        """
+        return self._concurrency
+
+    @concurrency.setter
+    def concurrency(self, concurrency):
+        """Sets the concurrency of this SmartChatRoomBaseInfo.
+
+        并发路数。
+
+        :param concurrency: The concurrency of this SmartChatRoomBaseInfo.
+        :type concurrency: int
+        """
+        self._concurrency = concurrency
 
     @property
     def create_time(self):

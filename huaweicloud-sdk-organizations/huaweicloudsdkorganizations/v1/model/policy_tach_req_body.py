@@ -29,7 +29,7 @@ class PolicyTachReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param entity_id: 根、组织单元或帐号的唯一标识符（ID）。
+        :param entity_id: 根、组织单元或账号的唯一标识符（ID）。
         :type entity_id: str
         """
         
@@ -44,7 +44,7 @@ class PolicyTachReqBody:
     def entity_id(self):
         """Gets the entity_id of this PolicyTachReqBody.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        根、组织单元或账号的唯一标识符（ID）。
 
         :return: The entity_id of this PolicyTachReqBody.
         :rtype: str
@@ -55,7 +55,7 @@ class PolicyTachReqBody:
     def entity_id(self, entity_id):
         """Sets the entity_id of this PolicyTachReqBody.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        根、组织单元或账号的唯一标识符（ID）。
 
         :param entity_id: The entity_id of this PolicyTachReqBody.
         :type entity_id: str

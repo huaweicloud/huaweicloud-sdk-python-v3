@@ -18,29 +18,36 @@ class ShowTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[TagMap]'
+        'tags': 'list[TagMap]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'tags': 'tags'
+        'tags': 'tags',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, tags=None):
+    def __init__(self, tags=None, x_request_id=None):
         """ShowTagsResponse
 
         The model defined in huaweicloud sdk
 
         :param tags: 标签列表
         :type tags: list[:class:`huaweicloudsdkcdn.v2.TagMap`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowTagsResponse, self).__init__()
 
         self._tags = None
+        self._x_request_id = None
         self.discriminator = None
 
         if tags is not None:
             self.tags = tags
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def tags(self):
@@ -63,6 +70,24 @@ class ShowTagsResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkcdn.v2.TagMap`]
         """
         self._tags = tags
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowTagsResponse.
+
+        :return: The x_request_id of this ShowTagsResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowTagsResponse.
+
+        :param x_request_id: The x_request_id of this ShowTagsResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,7 +35,7 @@ class PhoneNumberDto:
 
         The model defined in huaweicloud sdk
 
-        :param primary: 一个布尔值，表示这是否是用户的主电话号码
+        :param primary: 一个布尔值，表示这是否为用户的主电话号码
         :type primary: bool
         :param type: 表示电话号码类型的字符串
         :type type: str
@@ -61,7 +61,7 @@ class PhoneNumberDto:
     def primary(self):
         """Gets the primary of this PhoneNumberDto.
 
-        一个布尔值，表示这是否是用户的主电话号码
+        一个布尔值，表示这是否为用户的主电话号码
 
         :return: The primary of this PhoneNumberDto.
         :rtype: bool
@@ -72,7 +72,7 @@ class PhoneNumberDto:
     def primary(self, primary):
         """Sets the primary of this PhoneNumberDto.
 
-        一个布尔值，表示这是否是用户的主电话号码
+        一个布尔值，表示这是否为用户的主电话号码
 
         :param primary: The primary of this PhoneNumberDto.
         :type primary: bool

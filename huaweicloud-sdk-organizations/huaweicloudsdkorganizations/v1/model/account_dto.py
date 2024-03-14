@@ -20,6 +20,7 @@ class AccountDto:
         'id': 'str',
         'urn': 'str',
         'join_method': 'str',
+        'status': 'str',
         'joined_at': 'datetime',
         'name': 'str'
     }
@@ -28,24 +29,27 @@ class AccountDto:
         'id': 'id',
         'urn': 'urn',
         'join_method': 'join_method',
+        'status': 'status',
         'joined_at': 'joined_at',
         'name': 'name'
     }
 
-    def __init__(self, id=None, urn=None, join_method=None, joined_at=None, name=None):
+    def __init__(self, id=None, urn=None, join_method=None, status=None, joined_at=None, name=None):
         """AccountDto
 
         The model defined in huaweicloud sdk
 
-        :param id: 帐号的唯一标识符（ID）。
+        :param id: 账号的唯一标识符（ID）。
         :type id: str
-        :param urn: 帐号的统一资源名称。
+        :param urn: 账号的统一资源名称。
         :type urn: str
-        :param join_method: 帐号加入组织的方式,invited：邀请加入，created：创建加入。
+        :param join_method: 账号加入组织的方式,invited：邀请加入，created：创建加入。
         :type join_method: str
-        :param joined_at: 帐号加入组织的日期。
+        :param status: 账号当前的状态,ACTIVE 有效| SUSPENDED 静默| PENDING_CLOSURE 关闭中
+        :type status: str
+        :param joined_at: 账号加入组织的日期。
         :type joined_at: datetime
-        :param name: 帐号名称。
+        :param name: 账号名称
         :type name: str
         """
         
@@ -54,6 +58,7 @@ class AccountDto:
         self._id = None
         self._urn = None
         self._join_method = None
+        self._status = None
         self._joined_at = None
         self._name = None
         self.discriminator = None
@@ -61,6 +66,7 @@ class AccountDto:
         self.id = id
         self.urn = urn
         self.join_method = join_method
+        self.status = status
         self.joined_at = joined_at
         self.name = name
 
@@ -68,7 +74,7 @@ class AccountDto:
     def id(self):
         """Gets the id of this AccountDto.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :return: The id of this AccountDto.
         :rtype: str
@@ -79,7 +85,7 @@ class AccountDto:
     def id(self, id):
         """Sets the id of this AccountDto.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :param id: The id of this AccountDto.
         :type id: str
@@ -90,7 +96,7 @@ class AccountDto:
     def urn(self):
         """Gets the urn of this AccountDto.
 
-        帐号的统一资源名称。
+        账号的统一资源名称。
 
         :return: The urn of this AccountDto.
         :rtype: str
@@ -101,7 +107,7 @@ class AccountDto:
     def urn(self, urn):
         """Sets the urn of this AccountDto.
 
-        帐号的统一资源名称。
+        账号的统一资源名称。
 
         :param urn: The urn of this AccountDto.
         :type urn: str
@@ -112,7 +118,7 @@ class AccountDto:
     def join_method(self):
         """Gets the join_method of this AccountDto.
 
-        帐号加入组织的方式,invited：邀请加入，created：创建加入。
+        账号加入组织的方式,invited：邀请加入，created：创建加入。
 
         :return: The join_method of this AccountDto.
         :rtype: str
@@ -123,7 +129,7 @@ class AccountDto:
     def join_method(self, join_method):
         """Sets the join_method of this AccountDto.
 
-        帐号加入组织的方式,invited：邀请加入，created：创建加入。
+        账号加入组织的方式,invited：邀请加入，created：创建加入。
 
         :param join_method: The join_method of this AccountDto.
         :type join_method: str
@@ -131,10 +137,32 @@ class AccountDto:
         self._join_method = join_method
 
     @property
+    def status(self):
+        """Gets the status of this AccountDto.
+
+        账号当前的状态,ACTIVE 有效| SUSPENDED 静默| PENDING_CLOSURE 关闭中
+
+        :return: The status of this AccountDto.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this AccountDto.
+
+        账号当前的状态,ACTIVE 有效| SUSPENDED 静默| PENDING_CLOSURE 关闭中
+
+        :param status: The status of this AccountDto.
+        :type status: str
+        """
+        self._status = status
+
+    @property
     def joined_at(self):
         """Gets the joined_at of this AccountDto.
 
-        帐号加入组织的日期。
+        账号加入组织的日期。
 
         :return: The joined_at of this AccountDto.
         :rtype: datetime
@@ -145,7 +173,7 @@ class AccountDto:
     def joined_at(self, joined_at):
         """Sets the joined_at of this AccountDto.
 
-        帐号加入组织的日期。
+        账号加入组织的日期。
 
         :param joined_at: The joined_at of this AccountDto.
         :type joined_at: datetime
@@ -156,7 +184,7 @@ class AccountDto:
     def name(self):
         """Gets the name of this AccountDto.
 
-        帐号名称。
+        账号名称
 
         :return: The name of this AccountDto.
         :rtype: str
@@ -167,7 +195,7 @@ class AccountDto:
     def name(self, name):
         """Sets the name of this AccountDto.
 
-        帐号名称。
+        账号名称
 
         :param name: The name of this AccountDto.
         :type name: str

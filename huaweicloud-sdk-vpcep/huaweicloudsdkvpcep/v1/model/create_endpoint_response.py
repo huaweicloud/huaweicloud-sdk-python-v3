@@ -27,11 +27,10 @@ class CreateEndpointResponse(SdkResponse):
         'marker_id': 'int',
         'endpoint_service_id': 'str',
         'enable_dns': 'bool',
-        'dns_names': 'list[str]',
         'subnet_id': 'str',
         'vpc_id': 'str',
-        'created_at': 'str',
-        'updated_at': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
         'project_id': 'str',
         'tags': 'list[TagList]',
         'whitelist': 'list[str]',
@@ -39,7 +38,7 @@ class CreateEndpointResponse(SdkResponse):
         'routetables': 'list[str]',
         'specification_name': 'str',
         'description': 'str',
-        'policy_statement': 'list[str]',
+        'policy_statement': 'list[PolicyStatement]',
         'enable_status': 'str',
         'endpoint_pool_id': 'str',
         'public_border_group': 'str'
@@ -55,7 +54,6 @@ class CreateEndpointResponse(SdkResponse):
         'marker_id': 'marker_id',
         'endpoint_service_id': 'endpoint_service_id',
         'enable_dns': 'enable_dns',
-        'dns_names': 'dns_names',
         'subnet_id': 'subnet_id',
         'vpc_id': 'vpc_id',
         'created_at': 'created_at',
@@ -73,20 +71,20 @@ class CreateEndpointResponse(SdkResponse):
         'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None, specification_name=None, description=None, policy_statement=None, enable_status=None, endpoint_pool_id=None, public_border_group=None):
+    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None, specification_name=None, description=None, policy_statement=None, enable_status=None, endpoint_pool_id=None, public_border_group=None):
         """CreateEndpointResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 终端节点的ID，唯一标识。
         :type id: str
-        :param service_type: 终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        :param service_type: 终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
         :type service_type: str
-        :param status: 终端节点的状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
+        :param status: 终端节点的状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
         :type status: str
         :param ip: 终端节点ip
         :type ip: str
-        :param active_status: 帐号状态。 ● frozen：冻结 ● active：解冻
+        :param active_status: 帐号状态。  - frozen：冻结  - active：解冻
         :type active_status: list[str]
         :param endpoint_service_name: 终端节点服务的名称。
         :type endpoint_service_name: str
@@ -94,25 +92,23 @@ class CreateEndpointResponse(SdkResponse):
         :type marker_id: int
         :param endpoint_service_id: 终端节点服务的ID。
         :type endpoint_service_id: str
-        :param enable_dns: 是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
         :type enable_dns: bool
-        :param dns_names: 访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
-        :type dns_names: list[str]
         :param subnet_id: vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
         :type subnet_id: str
         :param vpc_id: 终端节点所在的VPC的ID。
         :type vpc_id: str
         :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
-        :type created_at: str
+        :type created_at: datetime
         :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
-        :type updated_at: str
+        :type updated_at: datetime
         :param project_id: 项目ID，获取方法请参见获取项目ID。
         :type project_id: str
         :param tags: 标签列表，没有标签默认为空数组。
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param whitelist: 控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type whitelist: list[str]
-        :param enable_whitelist: 是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
+        :param enable_whitelist: 是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type enable_whitelist: bool
         :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
         :type routetables: list[str]
@@ -121,8 +117,8 @@ class CreateEndpointResponse(SdkResponse):
         :param description: 描述
         :type description: str
         :param policy_statement: 只涉及开启双端固定的网关型终端节点，响应体展示此字段
-        :type policy_statement: list[str]
-        :param enable_status: 终端节点是否已停用，取值【enable/disable】
+        :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        :param enable_status: 终端节点是否可用。  - enable：启用  - disable：不启用
         :type enable_status: str
         :param endpoint_pool_id: 待废弃，实例相关联的集群ID
         :type endpoint_pool_id: str
@@ -141,7 +137,6 @@ class CreateEndpointResponse(SdkResponse):
         self._marker_id = None
         self._endpoint_service_id = None
         self._enable_dns = None
-        self._dns_names = None
         self._subnet_id = None
         self._vpc_id = None
         self._created_at = None
@@ -177,8 +172,6 @@ class CreateEndpointResponse(SdkResponse):
             self.endpoint_service_id = endpoint_service_id
         if enable_dns is not None:
             self.enable_dns = enable_dns
-        if dns_names is not None:
-            self.dns_names = dns_names
         if subnet_id is not None:
             self.subnet_id = subnet_id
         if vpc_id is not None:
@@ -236,7 +229,7 @@ class CreateEndpointResponse(SdkResponse):
     def service_type(self):
         """Gets the service_type of this CreateEndpointResponse.
 
-        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :return: The service_type of this CreateEndpointResponse.
         :rtype: str
@@ -247,7 +240,7 @@ class CreateEndpointResponse(SdkResponse):
     def service_type(self, service_type):
         """Sets the service_type of this CreateEndpointResponse.
 
-        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :param service_type: The service_type of this CreateEndpointResponse.
         :type service_type: str
@@ -258,7 +251,7 @@ class CreateEndpointResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateEndpointResponse.
 
-        终端节点的状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
+        终端节点的状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
         :return: The status of this CreateEndpointResponse.
         :rtype: str
@@ -269,7 +262,7 @@ class CreateEndpointResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this CreateEndpointResponse.
 
-        终端节点的状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
+        终端节点的状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
         :param status: The status of this CreateEndpointResponse.
         :type status: str
@@ -302,7 +295,7 @@ class CreateEndpointResponse(SdkResponse):
     def active_status(self):
         """Gets the active_status of this CreateEndpointResponse.
 
-        帐号状态。 ● frozen：冻结 ● active：解冻
+        帐号状态。  - frozen：冻结  - active：解冻
 
         :return: The active_status of this CreateEndpointResponse.
         :rtype: list[str]
@@ -313,7 +306,7 @@ class CreateEndpointResponse(SdkResponse):
     def active_status(self, active_status):
         """Sets the active_status of this CreateEndpointResponse.
 
-        帐号状态。 ● frozen：冻结 ● active：解冻
+        帐号状态。  - frozen：冻结  - active：解冻
 
         :param active_status: The active_status of this CreateEndpointResponse.
         :type active_status: list[str]
@@ -390,7 +383,7 @@ class CreateEndpointResponse(SdkResponse):
     def enable_dns(self):
         """Gets the enable_dns of this CreateEndpointResponse.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this CreateEndpointResponse.
         :rtype: bool
@@ -401,34 +394,12 @@ class CreateEndpointResponse(SdkResponse):
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this CreateEndpointResponse.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this CreateEndpointResponse.
         :type enable_dns: bool
         """
         self._enable_dns = enable_dns
-
-    @property
-    def dns_names(self):
-        """Gets the dns_names of this CreateEndpointResponse.
-
-        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
-
-        :return: The dns_names of this CreateEndpointResponse.
-        :rtype: list[str]
-        """
-        return self._dns_names
-
-    @dns_names.setter
-    def dns_names(self, dns_names):
-        """Sets the dns_names of this CreateEndpointResponse.
-
-        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
-
-        :param dns_names: The dns_names of this CreateEndpointResponse.
-        :type dns_names: list[str]
-        """
-        self._dns_names = dns_names
 
     @property
     def subnet_id(self):
@@ -481,7 +452,7 @@ class CreateEndpointResponse(SdkResponse):
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this CreateEndpointResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -492,7 +463,7 @@ class CreateEndpointResponse(SdkResponse):
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this CreateEndpointResponse.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -503,7 +474,7 @@ class CreateEndpointResponse(SdkResponse):
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this CreateEndpointResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._updated_at
 
@@ -514,7 +485,7 @@ class CreateEndpointResponse(SdkResponse):
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this CreateEndpointResponse.
-        :type updated_at: str
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -588,7 +559,7 @@ class CreateEndpointResponse(SdkResponse):
     def enable_whitelist(self):
         """Gets the enable_whitelist of this CreateEndpointResponse.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
+        是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :return: The enable_whitelist of this CreateEndpointResponse.
         :rtype: bool
@@ -599,7 +570,7 @@ class CreateEndpointResponse(SdkResponse):
     def enable_whitelist(self, enable_whitelist):
         """Sets the enable_whitelist of this CreateEndpointResponse.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
+        是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :param enable_whitelist: The enable_whitelist of this CreateEndpointResponse.
         :type enable_whitelist: bool
@@ -679,7 +650,7 @@ class CreateEndpointResponse(SdkResponse):
         只涉及开启双端固定的网关型终端节点，响应体展示此字段
 
         :return: The policy_statement of this CreateEndpointResponse.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         """
         return self._policy_statement
 
@@ -690,7 +661,7 @@ class CreateEndpointResponse(SdkResponse):
         只涉及开启双端固定的网关型终端节点，响应体展示此字段
 
         :param policy_statement: The policy_statement of this CreateEndpointResponse.
-        :type policy_statement: list[str]
+        :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
         """
         self._policy_statement = policy_statement
 
@@ -698,7 +669,7 @@ class CreateEndpointResponse(SdkResponse):
     def enable_status(self):
         """Gets the enable_status of this CreateEndpointResponse.
 
-        终端节点是否已停用，取值【enable/disable】
+        终端节点是否可用。  - enable：启用  - disable：不启用
 
         :return: The enable_status of this CreateEndpointResponse.
         :rtype: str
@@ -709,7 +680,7 @@ class CreateEndpointResponse(SdkResponse):
     def enable_status(self, enable_status):
         """Sets the enable_status of this CreateEndpointResponse.
 
-        终端节点是否已停用，取值【enable/disable】
+        终端节点是否可用。  - enable：启用  - disable：不启用
 
         :param enable_status: The enable_status of this CreateEndpointResponse.
         :type enable_status: str

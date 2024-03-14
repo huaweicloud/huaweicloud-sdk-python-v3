@@ -32,7 +32,7 @@ class CreateSmartChatRoomResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param room_id: 智能交互对话直播间ID
+        :param room_id: 智能交互对话ID
         :type room_id: str
         :param x_request_id: 
         :type x_request_id: str
@@ -53,7 +53,7 @@ class CreateSmartChatRoomResponse(SdkResponse):
     def room_id(self):
         """Gets the room_id of this CreateSmartChatRoomResponse.
 
-        智能交互对话直播间ID
+        智能交互对话ID
 
         :return: The room_id of this CreateSmartChatRoomResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class CreateSmartChatRoomResponse(SdkResponse):
     def room_id(self, room_id):
         """Sets the room_id of this CreateSmartChatRoomResponse.
 
-        智能交互对话直播间ID
+        智能交互对话ID
 
         :param room_id: The room_id of this CreateSmartChatRoomResponse.
         :type room_id: str

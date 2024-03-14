@@ -22,7 +22,8 @@ class TriggerProcess:
         'layer_config': 'SmartLayerConfig',
         'reply_texts': 'list[str]',
         'reply_audios': 'list[ReplyAudioInfo]',
-        'reply_order': 'str'
+        'reply_order': 'str',
+        'reply_role': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class TriggerProcess:
         'layer_config': 'layer_config',
         'reply_texts': 'reply_texts',
         'reply_audios': 'reply_audios',
-        'reply_order': 'reply_order'
+        'reply_order': 'reply_order',
+        'reply_role': 'reply_role'
     }
 
-    def __init__(self, time_window=None, reply_mode=None, layer_config=None, reply_texts=None, reply_audios=None, reply_order=None):
+    def __init__(self, time_window=None, reply_mode=None, layer_config=None, reply_texts=None, reply_audios=None, reply_order=None, reply_role=None):
         """TriggerProcess
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class TriggerProcess:
         :type reply_audios: list[:class:`huaweicloudsdkmetastudio.v1.ReplyAudioInfo`]
         :param reply_order: 回复次序 - RANDOM：随机 - ORDER：顺序循环
         :type reply_order: str
+        :param reply_role: 回复角色。默认为主播 * STREAMER：主播 * CO_STREAMER：助播
+        :type reply_role: str
         """
         
         
@@ -61,6 +65,7 @@ class TriggerProcess:
         self._reply_texts = None
         self._reply_audios = None
         self._reply_order = None
+        self._reply_role = None
         self.discriminator = None
 
         if time_window is not None:
@@ -75,6 +80,8 @@ class TriggerProcess:
             self.reply_audios = reply_audios
         if reply_order is not None:
             self.reply_order = reply_order
+        if reply_role is not None:
+            self.reply_role = reply_role
 
     @property
     def time_window(self):
@@ -203,6 +210,28 @@ class TriggerProcess:
         :type reply_order: str
         """
         self._reply_order = reply_order
+
+    @property
+    def reply_role(self):
+        """Gets the reply_role of this TriggerProcess.
+
+        回复角色。默认为主播 * STREAMER：主播 * CO_STREAMER：助播
+
+        :return: The reply_role of this TriggerProcess.
+        :rtype: str
+        """
+        return self._reply_role
+
+    @reply_role.setter
+    def reply_role(self, reply_role):
+        """Sets the reply_role of this TriggerProcess.
+
+        回复角色。默认为主播 * STREAMER：主播 * CO_STREAMER：助播
+
+        :param reply_role: The reply_role of this TriggerProcess.
+        :type reply_role: str
+        """
+        self._reply_role = reply_role
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,29 +18,36 @@ class UpdateReferResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'referer': 'RefererRsp'
+        'referer': 'RefererRsp',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'referer': 'referer'
+        'referer': 'referer',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, referer=None):
+    def __init__(self, referer=None, x_request_id=None):
         """UpdateReferResponse
 
         The model defined in huaweicloud sdk
 
         :param referer: 
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererRsp`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(UpdateReferResponse, self).__init__()
 
         self._referer = None
+        self._x_request_id = None
         self.discriminator = None
 
         if referer is not None:
             self.referer = referer
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def referer(self):
@@ -59,6 +66,24 @@ class UpdateReferResponse(SdkResponse):
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererRsp`
         """
         self._referer = referer
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateReferResponse.
+
+        :return: The x_request_id of this UpdateReferResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateReferResponse.
+
+        :param x_request_id: The x_request_id of this UpdateReferResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

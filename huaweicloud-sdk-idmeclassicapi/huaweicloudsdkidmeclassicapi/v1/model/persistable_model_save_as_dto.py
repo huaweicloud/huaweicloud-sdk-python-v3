@@ -69,7 +69,7 @@ class PersistableModelSaveAsDTO:
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
         :param source_entity_number: 源模型编号。
         :type source_entity_number: str
-        :param source_instance_id: 源实例的唯一标识(单实例为ID，版本实例为versionId)。
+        :param source_instance_id: 源实例的唯一标识（单实例为ID，版本实例为versionId）。
         :type source_instance_id: str
         :param need_set_null_attrs: 置空字段数组。
         :type need_set_null_attrs: list[str]
@@ -300,7 +300,7 @@ class PersistableModelSaveAsDTO:
     def source_instance_id(self):
         """Gets the source_instance_id of this PersistableModelSaveAsDTO.
 
-        源实例的唯一标识(单实例为ID，版本实例为versionId)。
+        源实例的唯一标识（单实例为ID，版本实例为versionId）。
 
         :return: The source_instance_id of this PersistableModelSaveAsDTO.
         :rtype: str
@@ -311,7 +311,7 @@ class PersistableModelSaveAsDTO:
     def source_instance_id(self, source_instance_id):
         """Sets the source_instance_id of this PersistableModelSaveAsDTO.
 
-        源实例的唯一标识(单实例为ID，版本实例为versionId)。
+        源实例的唯一标识（单实例为ID，版本实例为versionId）。
 
         :param source_instance_id: The source_instance_id of this PersistableModelSaveAsDTO.
         :type source_instance_id: str

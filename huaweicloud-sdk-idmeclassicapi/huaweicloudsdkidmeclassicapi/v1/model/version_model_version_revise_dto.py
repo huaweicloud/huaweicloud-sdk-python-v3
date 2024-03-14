@@ -47,9 +47,9 @@ class VersionModelVersionReviseDTO:
         :type master_id: str
         :param modifier: 更新者。
         :type modifier: str
-        :param work_copy_type: 关系COPY类型。 - BOTH:以其为源或目标的均需要复制。 - CUSTOM:自定义复制。 - NONE:不复制。 - SOURCE:仅复制以此为源的。 - TARGET:仅复制以此为目标的。
+        :param work_copy_type: 关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
         :type work_copy_type: str
-        :param working_copy: 是否已检出。
+        :param working_copy: 是否已检出。 - true：已检出。 - false：未检出。
         :type working_copy: bool
         """
         
@@ -167,7 +167,7 @@ class VersionModelVersionReviseDTO:
     def work_copy_type(self):
         """Gets the work_copy_type of this VersionModelVersionReviseDTO.
 
-        关系COPY类型。 - BOTH:以其为源或目标的均需要复制。 - CUSTOM:自定义复制。 - NONE:不复制。 - SOURCE:仅复制以此为源的。 - TARGET:仅复制以此为目标的。
+        关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
 
         :return: The work_copy_type of this VersionModelVersionReviseDTO.
         :rtype: str
@@ -178,7 +178,7 @@ class VersionModelVersionReviseDTO:
     def work_copy_type(self, work_copy_type):
         """Sets the work_copy_type of this VersionModelVersionReviseDTO.
 
-        关系COPY类型。 - BOTH:以其为源或目标的均需要复制。 - CUSTOM:自定义复制。 - NONE:不复制。 - SOURCE:仅复制以此为源的。 - TARGET:仅复制以此为目标的。
+        关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
 
         :param work_copy_type: The work_copy_type of this VersionModelVersionReviseDTO.
         :type work_copy_type: str
@@ -189,7 +189,7 @@ class VersionModelVersionReviseDTO:
     def working_copy(self):
         """Gets the working_copy of this VersionModelVersionReviseDTO.
 
-        是否已检出。
+        是否已检出。 - true：已检出。 - false：未检出。
 
         :return: The working_copy of this VersionModelVersionReviseDTO.
         :rtype: bool
@@ -200,7 +200,7 @@ class VersionModelVersionReviseDTO:
     def working_copy(self, working_copy):
         """Sets the working_copy of this VersionModelVersionReviseDTO.
 
-        是否已检出。
+        是否已检出。 - true：已检出。 - false：未检出。
 
         :param working_copy: The working_copy of this VersionModelVersionReviseDTO.
         :type working_copy: bool

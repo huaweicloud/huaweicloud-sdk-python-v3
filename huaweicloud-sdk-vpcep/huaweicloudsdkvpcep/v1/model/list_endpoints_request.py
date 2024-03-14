@@ -53,9 +53,9 @@ class ListEndpointsRequest:
         :type limit: int
         :param offset: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
         :type offset: int
-        :param sort_key: 查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
+        :param sort_key: 查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
         :type sort_key: str
-        :param sort_dir: 查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :param sort_dir: 查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
         :type sort_dir: str
         :param public_border_group: 筛选结果中匹配边缘属性的EPS
         :type public_border_group: str
@@ -204,7 +204,7 @@ class ListEndpointsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListEndpointsRequest.
 
-        查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
+        查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
 
         :return: The sort_key of this ListEndpointsRequest.
         :rtype: str
@@ -215,7 +215,7 @@ class ListEndpointsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListEndpointsRequest.
 
-        查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
+        查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListEndpointsRequest.
         :type sort_key: str
@@ -226,7 +226,7 @@ class ListEndpointsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListEndpointsRequest.
 
-        查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
         :return: The sort_dir of this ListEndpointsRequest.
         :rtype: str
@@ -237,7 +237,7 @@ class ListEndpointsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListEndpointsRequest.
 
-        查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListEndpointsRequest.
         :type sort_dir: str

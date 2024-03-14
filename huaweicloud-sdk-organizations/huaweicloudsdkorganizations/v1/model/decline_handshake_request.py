@@ -29,7 +29,7 @@ class DeclineHandshakeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param handshake_id: 邀请的唯一标识符（ID）。帐号在发起邀请时创建ID。
+        :param handshake_id: 邀请的唯一标识符（ID）。账号在发起邀请时创建ID。
         :type handshake_id: str
         """
         
@@ -44,7 +44,7 @@ class DeclineHandshakeRequest:
     def handshake_id(self):
         """Gets the handshake_id of this DeclineHandshakeRequest.
 
-        邀请的唯一标识符（ID）。帐号在发起邀请时创建ID。
+        邀请的唯一标识符（ID）。账号在发起邀请时创建ID。
 
         :return: The handshake_id of this DeclineHandshakeRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeclineHandshakeRequest:
     def handshake_id(self, handshake_id):
         """Sets the handshake_id of this DeclineHandshakeRequest.
 
-        邀请的唯一标识符（ID）。帐号在发起邀请时创建ID。
+        邀请的唯一标识符（ID）。账号在发起邀请时创建ID。
 
         :param handshake_id: The handshake_id of this DeclineHandshakeRequest.
         :type handshake_id: str

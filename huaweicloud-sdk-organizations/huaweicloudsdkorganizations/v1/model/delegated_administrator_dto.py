@@ -39,17 +39,17 @@ class DelegatedAdministratorDto:
 
         The model defined in huaweicloud sdk
 
-        :param delegation_enabled_at: 将帐号设置为委托管理员的日期。
+        :param delegation_enabled_at: 将账号设置为委托管理员的日期。
         :type delegation_enabled_at: datetime
-        :param account_id: 帐号的唯一标识符（ID）。
+        :param account_id: 账号的唯一标识符（ID）。
         :type account_id: str
-        :param account_urn: 帐号的统一资源名称。
+        :param account_urn: 账号的统一资源名称。
         :type account_urn: str
-        :param join_method: 帐号加入组织的方式,invited：邀请加入，created：创建加入。
+        :param join_method: 账号加入组织的方式,invited：邀请加入，created：创建加入。
         :type join_method: str
-        :param joined_at: 帐号成为组织一部分的日期。
+        :param joined_at: 账号成为组织一部分的日期。
         :type joined_at: datetime
-        :param account_name: 帐号名称。
+        :param account_name: 账号名称
         :type account_name: str
         """
         
@@ -74,7 +74,7 @@ class DelegatedAdministratorDto:
     def delegation_enabled_at(self):
         """Gets the delegation_enabled_at of this DelegatedAdministratorDto.
 
-        将帐号设置为委托管理员的日期。
+        将账号设置为委托管理员的日期。
 
         :return: The delegation_enabled_at of this DelegatedAdministratorDto.
         :rtype: datetime
@@ -85,7 +85,7 @@ class DelegatedAdministratorDto:
     def delegation_enabled_at(self, delegation_enabled_at):
         """Sets the delegation_enabled_at of this DelegatedAdministratorDto.
 
-        将帐号设置为委托管理员的日期。
+        将账号设置为委托管理员的日期。
 
         :param delegation_enabled_at: The delegation_enabled_at of this DelegatedAdministratorDto.
         :type delegation_enabled_at: datetime
@@ -96,7 +96,7 @@ class DelegatedAdministratorDto:
     def account_id(self):
         """Gets the account_id of this DelegatedAdministratorDto.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :return: The account_id of this DelegatedAdministratorDto.
         :rtype: str
@@ -107,7 +107,7 @@ class DelegatedAdministratorDto:
     def account_id(self, account_id):
         """Sets the account_id of this DelegatedAdministratorDto.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :param account_id: The account_id of this DelegatedAdministratorDto.
         :type account_id: str
@@ -118,7 +118,7 @@ class DelegatedAdministratorDto:
     def account_urn(self):
         """Gets the account_urn of this DelegatedAdministratorDto.
 
-        帐号的统一资源名称。
+        账号的统一资源名称。
 
         :return: The account_urn of this DelegatedAdministratorDto.
         :rtype: str
@@ -129,7 +129,7 @@ class DelegatedAdministratorDto:
     def account_urn(self, account_urn):
         """Sets the account_urn of this DelegatedAdministratorDto.
 
-        帐号的统一资源名称。
+        账号的统一资源名称。
 
         :param account_urn: The account_urn of this DelegatedAdministratorDto.
         :type account_urn: str
@@ -140,7 +140,7 @@ class DelegatedAdministratorDto:
     def join_method(self):
         """Gets the join_method of this DelegatedAdministratorDto.
 
-        帐号加入组织的方式,invited：邀请加入，created：创建加入。
+        账号加入组织的方式,invited：邀请加入，created：创建加入。
 
         :return: The join_method of this DelegatedAdministratorDto.
         :rtype: str
@@ -151,7 +151,7 @@ class DelegatedAdministratorDto:
     def join_method(self, join_method):
         """Sets the join_method of this DelegatedAdministratorDto.
 
-        帐号加入组织的方式,invited：邀请加入，created：创建加入。
+        账号加入组织的方式,invited：邀请加入，created：创建加入。
 
         :param join_method: The join_method of this DelegatedAdministratorDto.
         :type join_method: str
@@ -162,7 +162,7 @@ class DelegatedAdministratorDto:
     def joined_at(self):
         """Gets the joined_at of this DelegatedAdministratorDto.
 
-        帐号成为组织一部分的日期。
+        账号成为组织一部分的日期。
 
         :return: The joined_at of this DelegatedAdministratorDto.
         :rtype: datetime
@@ -173,7 +173,7 @@ class DelegatedAdministratorDto:
     def joined_at(self, joined_at):
         """Sets the joined_at of this DelegatedAdministratorDto.
 
-        帐号成为组织一部分的日期。
+        账号成为组织一部分的日期。
 
         :param joined_at: The joined_at of this DelegatedAdministratorDto.
         :type joined_at: datetime
@@ -184,7 +184,7 @@ class DelegatedAdministratorDto:
     def account_name(self):
         """Gets the account_name of this DelegatedAdministratorDto.
 
-        帐号名称。
+        账号名称
 
         :return: The account_name of this DelegatedAdministratorDto.
         :rtype: str
@@ -195,7 +195,7 @@ class DelegatedAdministratorDto:
     def account_name(self, account_name):
         """Sets the account_name of this DelegatedAdministratorDto.
 
-        帐号名称。
+        账号名称
 
         :param account_name: The account_name of this DelegatedAdministratorDto.
         :type account_name: str

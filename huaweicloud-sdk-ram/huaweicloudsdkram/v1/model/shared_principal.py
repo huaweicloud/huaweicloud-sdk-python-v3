@@ -37,7 +37,7 @@ class SharedPrincipal:
 
         :param resource_share_id: 资源使用者绑定的资源共享实例的ID。
         :type resource_share_id: str
-        :param id: 资源使用者的帐号ID或URN。
+        :param id: 资源使用者的账号ID或URN。
         :type id: str
         :param created_at: 资源使用者与资源共享实例关联的时间。
         :type created_at: datetime
@@ -88,7 +88,7 @@ class SharedPrincipal:
     def id(self):
         """Gets the id of this SharedPrincipal.
 
-        资源使用者的帐号ID或URN。
+        资源使用者的账号ID或URN。
 
         :return: The id of this SharedPrincipal.
         :rtype: str
@@ -99,7 +99,7 @@ class SharedPrincipal:
     def id(self, id):
         """Sets the id of this SharedPrincipal.
 
-        资源使用者的帐号ID或URN。
+        资源使用者的账号ID或URN。
 
         :param id: The id of this SharedPrincipal.
         :type id: str

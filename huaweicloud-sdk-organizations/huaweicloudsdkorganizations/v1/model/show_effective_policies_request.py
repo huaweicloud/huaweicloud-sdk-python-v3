@@ -31,7 +31,7 @@ class ShowEffectivePoliciesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param entity_id: 帐号的唯一标识符（ID）。当前还不支持指定根、组织单元。
+        :param entity_id: 账号的唯一标识符（ID）。当前还不支持指定根、组织单元。
         :type entity_id: str
         :param policy_type: 策略类型的名称，tag_policy标签策略。
         :type policy_type: str
@@ -50,7 +50,7 @@ class ShowEffectivePoliciesRequest:
     def entity_id(self):
         """Gets the entity_id of this ShowEffectivePoliciesRequest.
 
-        帐号的唯一标识符（ID）。当前还不支持指定根、组织单元。
+        账号的唯一标识符（ID）。当前还不支持指定根、组织单元。
 
         :return: The entity_id of this ShowEffectivePoliciesRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowEffectivePoliciesRequest:
     def entity_id(self, entity_id):
         """Sets the entity_id of this ShowEffectivePoliciesRequest.
 
-        帐号的唯一标识符（ID）。当前还不支持指定根、组织单元。
+        账号的唯一标识符（ID）。当前还不支持指定根、组织单元。
 
         :param entity_id: The entity_id of this ShowEffectivePoliciesRequest.
         :type entity_id: str

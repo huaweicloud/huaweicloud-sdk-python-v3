@@ -39,15 +39,15 @@ class SubtitleConfig:
 
         The model defined in huaweicloud sdk
 
-        :param dx: 字幕左上角像素点坐标。  &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        :param dx: 字幕框左下角像素点坐标。  &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
         :type dx: int
-        :param dy: 字幕左上角像素点坐标。  &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        :param dy: 字幕框左下角像素点坐标。  &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
         :type dy: int
         :param font_name: 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体
         :type font_name: str
         :param font_size: 字体大小。  取值范围：[4, 120]
         :type font_size: int
-        :param h: 字幕框高度
+        :param h: 字幕框高度 &gt; * 字幕框宽度固定为屏幕宽度的80% &gt; * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
         :type h: int
         :param w: 字幕框宽度
         :type w: int
@@ -80,7 +80,7 @@ class SubtitleConfig:
     def dx(self):
         """Gets the dx of this SubtitleConfig.
 
-        字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        字幕框左下角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :return: The dx of this SubtitleConfig.
         :rtype: int
@@ -91,7 +91,7 @@ class SubtitleConfig:
     def dx(self, dx):
         """Sets the dx of this SubtitleConfig.
 
-        字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        字幕框左下角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :param dx: The dx of this SubtitleConfig.
         :type dx: int
@@ -102,7 +102,7 @@ class SubtitleConfig:
     def dy(self):
         """Gets the dy of this SubtitleConfig.
 
-        字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        字幕框左下角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :return: The dy of this SubtitleConfig.
         :rtype: int
@@ -113,7 +113,7 @@ class SubtitleConfig:
     def dy(self, dy):
         """Sets the dy of this SubtitleConfig.
 
-        字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
+        字幕框左下角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :param dy: The dy of this SubtitleConfig.
         :type dy: int
@@ -168,7 +168,7 @@ class SubtitleConfig:
     def h(self):
         """Gets the h of this SubtitleConfig.
 
-        字幕框高度
+        字幕框高度 > * 字幕框宽度固定为屏幕宽度的80% > * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
         :return: The h of this SubtitleConfig.
         :rtype: int
@@ -179,7 +179,7 @@ class SubtitleConfig:
     def h(self, h):
         """Sets the h of this SubtitleConfig.
 
-        字幕框高度
+        字幕框高度 > * 字幕框宽度固定为屏幕宽度的80% > * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
         :param h: The h of this SubtitleConfig.
         :type h: int

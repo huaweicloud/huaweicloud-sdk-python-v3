@@ -63,8 +63,7 @@ class AnimatedGraphicsOutputParam:
         self._frame_rate = None
         self.discriminator = None
 
-        if format is not None:
-            self.format = format
+        self.format = format
         self.width = width
         self.height = height
         self.start = start

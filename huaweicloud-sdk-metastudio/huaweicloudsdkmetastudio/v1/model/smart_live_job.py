@@ -32,7 +32,9 @@ class SmartLiveJob:
         'live_event_callback_config': 'LiveEventCallBackConfig',
         'stream_duration': 'float',
         'block_reason': 'str',
-        'cover_url': 'str'
+        'cover_url': 'str',
+        'co_streamer_config': 'CoStreamerConfig',
+        'live_job_log': 'LiveJobLog'
     }
 
     attribute_map = {
@@ -51,10 +53,12 @@ class SmartLiveJob:
         'live_event_callback_config': 'live_event_callback_config',
         'stream_duration': 'stream_duration',
         'block_reason': 'block_reason',
-        'cover_url': 'cover_url'
+        'cover_url': 'cover_url',
+        'co_streamer_config': 'co_streamer_config',
+        'live_job_log': 'live_job_log'
     }
 
-    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, stream_duration=None, block_reason=None, cover_url=None):
+    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None):
         """SmartLiveJob
 
         The model defined in huaweicloud sdk
@@ -91,6 +95,10 @@ class SmartLiveJob:
         :type block_reason: str
         :param cover_url: 直播间封面图UR
         :type cover_url: str
+        :param co_streamer_config: 
+        :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        :param live_job_log: 
+        :type live_job_log: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
         """
         
         
@@ -111,6 +119,8 @@ class SmartLiveJob:
         self._stream_duration = None
         self._block_reason = None
         self._cover_url = None
+        self._co_streamer_config = None
+        self._live_job_log = None
         self.discriminator = None
 
         if job_id is not None:
@@ -145,6 +155,10 @@ class SmartLiveJob:
             self.block_reason = block_reason
         if cover_url is not None:
             self.cover_url = cover_url
+        if co_streamer_config is not None:
+            self.co_streamer_config = co_streamer_config
+        if live_job_log is not None:
+            self.live_job_log = live_job_log
 
     @property
     def job_id(self):
@@ -485,6 +499,42 @@ class SmartLiveJob:
         :type cover_url: str
         """
         self._cover_url = cover_url
+
+    @property
+    def co_streamer_config(self):
+        """Gets the co_streamer_config of this SmartLiveJob.
+
+        :return: The co_streamer_config of this SmartLiveJob.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        """
+        return self._co_streamer_config
+
+    @co_streamer_config.setter
+    def co_streamer_config(self, co_streamer_config):
+        """Sets the co_streamer_config of this SmartLiveJob.
+
+        :param co_streamer_config: The co_streamer_config of this SmartLiveJob.
+        :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
+        """
+        self._co_streamer_config = co_streamer_config
+
+    @property
+    def live_job_log(self):
+        """Gets the live_job_log of this SmartLiveJob.
+
+        :return: The live_job_log of this SmartLiveJob.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
+        """
+        return self._live_job_log
+
+    @live_job_log.setter
+    def live_job_log(self, live_job_log):
+        """Sets the live_job_log of this SmartLiveJob.
+
+        :param live_job_log: The live_job_log of this SmartLiveJob.
+        :type live_job_log: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
+        """
+        self._live_job_log = live_job_log
 
     def to_dict(self):
         """Returns the model properties as a dict"""

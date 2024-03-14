@@ -18,7 +18,7 @@ class BatchAddEndpointServicePermissionsRequest:
 
     openapi_types = {
         'vpc_endpoint_service_id': 'str',
-        'body': 'BatchAddPermissionRequest'
+        'body': 'BatchAddEndpointServicePermissionsRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchAddEndpointServicePermissionsRequest:
         :param vpc_endpoint_service_id: 终端节点服务的ID。
         :type vpc_endpoint_service_id: str
         :param body: Body of the BatchAddEndpointServicePermissionsRequest
-        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddPermissionRequest`
+        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class BatchAddEndpointServicePermissionsRequest:
         """Gets the body of this BatchAddEndpointServicePermissionsRequest.
 
         :return: The body of this BatchAddEndpointServicePermissionsRequest.
-        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddPermissionRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class BatchAddEndpointServicePermissionsRequest:
         """Sets the body of this BatchAddEndpointServicePermissionsRequest.
 
         :param body: The body of this BatchAddEndpointServicePermissionsRequest.
-        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddPermissionRequest`
+        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsRequestBody`
         """
         self._body = body
 

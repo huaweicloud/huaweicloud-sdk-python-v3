@@ -6,6 +6,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class DliRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("DLI")
 
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://dli.my-kualalumpur-1.myhuaweicloud.com")
     CN_NORTH_2 = Region("cn-north-2",
                         "https://dli.cn-north-2.myhuaweicloud.com")
     CN_NORTH_4 = Region("cn-north-4",
@@ -54,6 +56,7 @@ class DliRegion:
                         "https://dli.me-east-1.myhuaweicloud.com")
 
     static_fields = {
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "cn-north-2": CN_NORTH_2,
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,

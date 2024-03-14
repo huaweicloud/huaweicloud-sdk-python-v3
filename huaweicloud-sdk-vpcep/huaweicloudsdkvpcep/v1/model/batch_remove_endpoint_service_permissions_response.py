@@ -30,7 +30,7 @@ class BatchRemoveEndpointServicePermissionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param permissions: 
+        :param permissions: 终端节点服务白名单
         :type permissions: list[:class:`huaweicloudsdkvpcep.v1.EpsPermission`]
         """
         
@@ -46,6 +46,8 @@ class BatchRemoveEndpointServicePermissionsResponse(SdkResponse):
     def permissions(self):
         """Gets the permissions of this BatchRemoveEndpointServicePermissionsResponse.
 
+        终端节点服务白名单
+
         :return: The permissions of this BatchRemoveEndpointServicePermissionsResponse.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.EpsPermission`]
         """
@@ -54,6 +56,8 @@ class BatchRemoveEndpointServicePermissionsResponse(SdkResponse):
     @permissions.setter
     def permissions(self, permissions):
         """Sets the permissions of this BatchRemoveEndpointServicePermissionsResponse.
+
+        终端节点服务白名单
 
         :param permissions: The permissions of this BatchRemoveEndpointServicePermissionsResponse.
         :type permissions: list[:class:`huaweicloudsdkvpcep.v1.EpsPermission`]

@@ -18,29 +18,36 @@ class CreatePreheatingTasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'preheating_task': 'str'
+        'preheating_task': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'preheating_task': 'preheating_task'
+        'preheating_task': 'preheating_task',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, preheating_task=None):
+    def __init__(self, preheating_task=None, x_request_id=None):
         """CreatePreheatingTasksResponse
 
         The model defined in huaweicloud sdk
 
         :param preheating_task: 任务ID。
         :type preheating_task: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreatePreheatingTasksResponse, self).__init__()
 
         self._preheating_task = None
+        self._x_request_id = None
         self.discriminator = None
 
         if preheating_task is not None:
             self.preheating_task = preheating_task
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def preheating_task(self):
@@ -63,6 +70,24 @@ class CreatePreheatingTasksResponse(SdkResponse):
         :type preheating_task: str
         """
         self._preheating_task = preheating_task
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CreatePreheatingTasksResponse.
+
+        :return: The x_request_id of this CreatePreheatingTasksResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreatePreheatingTasksResponse.
+
+        :param x_request_id: The x_request_id of this CreatePreheatingTasksResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

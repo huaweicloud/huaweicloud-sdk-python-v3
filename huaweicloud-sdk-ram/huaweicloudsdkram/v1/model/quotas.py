@@ -37,7 +37,7 @@ class Quotas:
 
         The model defined in huaweicloud sdk
 
-        :param type: 配额类型。resource_share帐号创建资源共享的数量，resource_association资源共享关联的资源数量，principal_association资源共享关联的身份数量，permission_association资源共享关联的权限数量，tag_association资源共享关联的标签数量。
+        :param type: 配额类型。resource_share账号创建资源共享的数量，resource_association资源共享关联的资源数量，principal_association资源共享关联的身份数量，permission_association资源共享关联的权限数量，tag_association资源共享关联的标签数量。
         :type type: str
         :param quota: 总配额数量。
         :type quota: int
@@ -68,7 +68,7 @@ class Quotas:
     def type(self):
         """Gets the type of this Quotas.
 
-        配额类型。resource_share帐号创建资源共享的数量，resource_association资源共享关联的资源数量，principal_association资源共享关联的身份数量，permission_association资源共享关联的权限数量，tag_association资源共享关联的标签数量。
+        配额类型。resource_share账号创建资源共享的数量，resource_association资源共享关联的资源数量，principal_association资源共享关联的身份数量，permission_association资源共享关联的权限数量，tag_association资源共享关联的标签数量。
 
         :return: The type of this Quotas.
         :rtype: str
@@ -79,7 +79,7 @@ class Quotas:
     def type(self, type):
         """Sets the type of this Quotas.
 
-        配额类型。resource_share帐号创建资源共享的数量，resource_association资源共享关联的资源数量，principal_association资源共享关联的身份数量，permission_association资源共享关联的权限数量，tag_association资源共享关联的标签数量。
+        配额类型。resource_share账号创建资源共享的数量，resource_association资源共享关联的资源数量，principal_association资源共享关联的身份数量，permission_association资源共享关联的权限数量，tag_association资源共享关联的标签数量。
 
         :param type: The type of this Quotas.
         :type type: str

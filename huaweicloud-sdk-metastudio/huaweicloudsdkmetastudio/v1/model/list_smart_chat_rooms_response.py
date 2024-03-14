@@ -19,24 +19,28 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
+        'count_concurrency': 'int',
         'smart_chat_rooms': 'list[SmartChatRoomBaseInfo]',
         'x_request_id': 'str'
     }
 
     attribute_map = {
         'count': 'count',
+        'count_concurrency': 'count_concurrency',
         'smart_chat_rooms': 'smart_chat_rooms',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, count=None, smart_chat_rooms=None, x_request_id=None):
+    def __init__(self, count=None, count_concurrency=None, smart_chat_rooms=None, x_request_id=None):
         """ListSmartChatRoomsResponse
 
         The model defined in huaweicloud sdk
 
-        :param count: 智能交互对话直播间总数。
+        :param count: 智能交互对话总数。
         :type count: int
-        :param smart_chat_rooms: 智能交互对话直播间列表。
+        :param count_concurrency: 智能交互对话总并发路数。
+        :type count_concurrency: int
+        :param smart_chat_rooms: 智能交互对话列表。
         :type smart_chat_rooms: list[:class:`huaweicloudsdkmetastudio.v1.SmartChatRoomBaseInfo`]
         :param x_request_id: 
         :type x_request_id: str
@@ -45,12 +49,15 @@ class ListSmartChatRoomsResponse(SdkResponse):
         super(ListSmartChatRoomsResponse, self).__init__()
 
         self._count = None
+        self._count_concurrency = None
         self._smart_chat_rooms = None
         self._x_request_id = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
+        if count_concurrency is not None:
+            self.count_concurrency = count_concurrency
         if smart_chat_rooms is not None:
             self.smart_chat_rooms = smart_chat_rooms
         if x_request_id is not None:
@@ -60,7 +67,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListSmartChatRoomsResponse.
 
-        智能交互对话直播间总数。
+        智能交互对话总数。
 
         :return: The count of this ListSmartChatRoomsResponse.
         :rtype: int
@@ -71,7 +78,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListSmartChatRoomsResponse.
 
-        智能交互对话直播间总数。
+        智能交互对话总数。
 
         :param count: The count of this ListSmartChatRoomsResponse.
         :type count: int
@@ -79,10 +86,32 @@ class ListSmartChatRoomsResponse(SdkResponse):
         self._count = count
 
     @property
+    def count_concurrency(self):
+        """Gets the count_concurrency of this ListSmartChatRoomsResponse.
+
+        智能交互对话总并发路数。
+
+        :return: The count_concurrency of this ListSmartChatRoomsResponse.
+        :rtype: int
+        """
+        return self._count_concurrency
+
+    @count_concurrency.setter
+    def count_concurrency(self, count_concurrency):
+        """Sets the count_concurrency of this ListSmartChatRoomsResponse.
+
+        智能交互对话总并发路数。
+
+        :param count_concurrency: The count_concurrency of this ListSmartChatRoomsResponse.
+        :type count_concurrency: int
+        """
+        self._count_concurrency = count_concurrency
+
+    @property
     def smart_chat_rooms(self):
         """Gets the smart_chat_rooms of this ListSmartChatRoomsResponse.
 
-        智能交互对话直播间列表。
+        智能交互对话列表。
 
         :return: The smart_chat_rooms of this ListSmartChatRoomsResponse.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SmartChatRoomBaseInfo`]
@@ -93,7 +122,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
     def smart_chat_rooms(self, smart_chat_rooms):
         """Sets the smart_chat_rooms of this ListSmartChatRoomsResponse.
 
-        智能交互对话直播间列表。
+        智能交互对话列表。
 
         :param smart_chat_rooms: The smart_chat_rooms of this ListSmartChatRoomsResponse.
         :type smart_chat_rooms: list[:class:`huaweicloudsdkmetastudio.v1.SmartChatRoomBaseInfo`]

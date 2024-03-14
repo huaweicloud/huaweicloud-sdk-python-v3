@@ -69,9 +69,9 @@ class ListAllVersionsRequest:
         :type identifier: str
         :param model_name: 数据模型的英文名称。
         :type model_name: str
-        :param cur_page_path: 当前页
+        :param cur_page_path: 当前页数（路径参数）。
         :type cur_page_path: int
-        :param page_size_path: 每页大小
+        :param page_size_path: 当前页数（路径参数）。
         :type page_size_path: int
         :param body: Body of the ListAllVersionsRequest
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOVersionModelVersionMasterDTO`
@@ -316,7 +316,7 @@ class ListAllVersionsRequest:
     def cur_page_path(self):
         """Gets the cur_page_path of this ListAllVersionsRequest.
 
-        当前页
+        当前页数（路径参数）。
 
         :return: The cur_page_path of this ListAllVersionsRequest.
         :rtype: int
@@ -327,7 +327,7 @@ class ListAllVersionsRequest:
     def cur_page_path(self, cur_page_path):
         """Sets the cur_page_path of this ListAllVersionsRequest.
 
-        当前页
+        当前页数（路径参数）。
 
         :param cur_page_path: The cur_page_path of this ListAllVersionsRequest.
         :type cur_page_path: int
@@ -338,7 +338,7 @@ class ListAllVersionsRequest:
     def page_size_path(self):
         """Gets the page_size_path of this ListAllVersionsRequest.
 
-        每页大小
+        当前页数（路径参数）。
 
         :return: The page_size_path of this ListAllVersionsRequest.
         :rtype: int
@@ -349,7 +349,7 @@ class ListAllVersionsRequest:
     def page_size_path(self, page_size_path):
         """Sets the page_size_path of this ListAllVersionsRequest.
 
-        每页大小
+        当前页数（路径参数）。
 
         :param page_size_path: The page_size_path of this ListAllVersionsRequest.
         :type page_size_path: int

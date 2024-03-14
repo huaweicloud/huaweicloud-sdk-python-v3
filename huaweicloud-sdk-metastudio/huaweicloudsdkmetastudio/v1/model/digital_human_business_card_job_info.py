@@ -47,7 +47,7 @@ class DigitalHumanBusinessCardJobInfo:
 
         :param job_id: 任务ID。
         :type job_id: str
-        :param state: 任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消
+        :param state: 任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * BLOCK: 冻结
         :type state: str
         :param start_time: 数字人名片制作开始时间。
         :type start_time: str
@@ -121,7 +121,7 @@ class DigitalHumanBusinessCardJobInfo:
     def state(self):
         """Gets the state of this DigitalHumanBusinessCardJobInfo.
 
-        任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消
+        任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * BLOCK: 冻结
 
         :return: The state of this DigitalHumanBusinessCardJobInfo.
         :rtype: str
@@ -132,7 +132,7 @@ class DigitalHumanBusinessCardJobInfo:
     def state(self, state):
         """Sets the state of this DigitalHumanBusinessCardJobInfo.
 
-        任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消
+        任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * BLOCK: 冻结
 
         :param state: The state of this DigitalHumanBusinessCardJobInfo.
         :type state: str

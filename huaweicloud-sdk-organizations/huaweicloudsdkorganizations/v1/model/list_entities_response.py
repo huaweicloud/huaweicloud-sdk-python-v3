@@ -32,7 +32,7 @@ class ListEntitiesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param entities: 组织中的根、组织单元和帐号的列表。
+        :param entities: 组织中的根、组织单元和账号的列表。
         :type entities: list[:class:`huaweicloudsdkorganizations.v1.EntityDto`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListEntitiesResponse(SdkResponse):
     def entities(self):
         """Gets the entities of this ListEntitiesResponse.
 
-        组织中的根、组织单元和帐号的列表。
+        组织中的根、组织单元和账号的列表。
 
         :return: The entities of this ListEntitiesResponse.
         :rtype: list[:class:`huaweicloudsdkorganizations.v1.EntityDto`]
@@ -64,7 +64,7 @@ class ListEntitiesResponse(SdkResponse):
     def entities(self, entities):
         """Sets the entities of this ListEntitiesResponse.
 
-        组织中的根、组织单元和帐号的列表。
+        组织中的根、组织单元和账号的列表。
 
         :param entities: The entities of this ListEntitiesResponse.
         :type entities: list[:class:`huaweicloudsdkorganizations.v1.EntityDto`]

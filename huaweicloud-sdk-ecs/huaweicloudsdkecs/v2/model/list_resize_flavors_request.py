@@ -49,7 +49,7 @@ class ListResizeFlavorsRequest:
         :type marker: str
         :param sort_dir: 升序/降序排序，默认值为：asc。  取值范围：  - asc：表示升序。 - desc：表示降序
         :type sort_dir: str
-        :param sort_key: 排序字段。  key的取值范围：  - flavorid：表示规格ID。 - sort_key的默认值为“flavorid”。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
+        :param sort_key: 排序字段。默认值为“flavorid”。  key的取值范围：  - flavorid：表示规格ID。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
         :type sort_key: str
         :param source_flavor_id: 进行规格切换的云服务器源规格ID。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
         :type source_flavor_id: str
@@ -175,7 +175,7 @@ class ListResizeFlavorsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListResizeFlavorsRequest.
 
-        排序字段。  key的取值范围：  - flavorid：表示规格ID。 - sort_key的默认值为“flavorid”。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
+        排序字段。默认值为“flavorid”。  key的取值范围：  - flavorid：表示规格ID。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
 
         :return: The sort_key of this ListResizeFlavorsRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListResizeFlavorsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListResizeFlavorsRequest.
 
-        排序字段。  key的取值范围：  - flavorid：表示规格ID。 - sort_key的默认值为“flavorid”。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
+        排序字段。默认值为“flavorid”。  key的取值范围：  - flavorid：表示规格ID。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
 
         :param sort_key: The sort_key of this ListResizeFlavorsRequest.
         :type sort_key: str

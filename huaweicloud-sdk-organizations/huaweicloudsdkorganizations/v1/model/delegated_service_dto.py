@@ -33,7 +33,7 @@ class DelegatedServiceDto:
 
         :param service_principal: 服务主体的名称。
         :type service_principal: str
-        :param delegation_enabled_at: 帐号成为此服务的委托管理员的日期。
+        :param delegation_enabled_at: 账号成为此服务的委托管理员的日期。
         :type delegation_enabled_at: datetime
         """
         
@@ -72,7 +72,7 @@ class DelegatedServiceDto:
     def delegation_enabled_at(self):
         """Gets the delegation_enabled_at of this DelegatedServiceDto.
 
-        帐号成为此服务的委托管理员的日期。
+        账号成为此服务的委托管理员的日期。
 
         :return: The delegation_enabled_at of this DelegatedServiceDto.
         :rtype: datetime
@@ -83,7 +83,7 @@ class DelegatedServiceDto:
     def delegation_enabled_at(self, delegation_enabled_at):
         """Sets the delegation_enabled_at of this DelegatedServiceDto.
 
-        帐号成为此服务的委托管理员的日期。
+        账号成为此服务的委托管理员的日期。
 
         :param delegation_enabled_at: The delegation_enabled_at of this DelegatedServiceDto.
         :type delegation_enabled_at: datetime

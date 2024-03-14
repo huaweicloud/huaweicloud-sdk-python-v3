@@ -63,6 +63,7 @@ from huaweicloudsdkdws.v2.model.cluster_disaster_recovery import ClusterDisaster
 from huaweicloudsdkdws.v2.model.cluster_elb_info import ClusterElbInfo
 from huaweicloudsdkdws.v2.model.cluster_flavor_resp import ClusterFlavorResp
 from huaweicloudsdkdws.v2.model.cluster_info import ClusterInfo
+from huaweicloudsdkdws.v2.model.cluster_metric import ClusterMetric
 from huaweicloudsdkdws.v2.model.cluster_node_info import ClusterNodeInfo
 from huaweicloudsdkdws.v2.model.cluster_recovery_progress import ClusterRecoveryProgress
 from huaweicloudsdkdws.v2.model.cluster_ring import ClusterRing
@@ -270,6 +271,10 @@ from huaweicloudsdkdws.v2.model.list_logical_clusters_request import ListLogical
 from huaweicloudsdkdws.v2.model.list_logical_clusters_response import ListLogicalClustersResponse
 from huaweicloudsdkdws.v2.model.list_lts_logs_request import ListLtsLogsRequest
 from huaweicloudsdkdws.v2.model.list_lts_logs_response import ListLtsLogsResponse
+from huaweicloudsdkdws.v2.model.list_metrics_data_request import ListMetricsDataRequest
+from huaweicloudsdkdws.v2.model.list_metrics_data_response import ListMetricsDataResponse
+from huaweicloudsdkdws.v2.model.list_metrics_request import ListMetricsRequest
+from huaweicloudsdkdws.v2.model.list_metrics_response import ListMetricsResponse
 from huaweicloudsdkdws.v2.model.list_monitor_indicator_data_request import ListMonitorIndicatorDataRequest
 from huaweicloudsdkdws.v2.model.list_monitor_indicator_data_response import ListMonitorIndicatorDataResponse
 from huaweicloudsdkdws.v2.model.list_monitor_indicators_request import ListMonitorIndicatorsRequest
@@ -420,6 +425,7 @@ from huaweicloudsdkdws.v2.model.show_workload_queue_request import ShowWorkloadQ
 from huaweicloudsdkdws.v2.model.show_workload_queue_response import ShowWorkloadQueueResponse
 from huaweicloudsdkdws.v2.model.shrink_cluster_request import ShrinkClusterRequest
 from huaweicloudsdkdws.v2.model.shrink_cluster_response import ShrinkClusterResponse
+from huaweicloudsdkdws.v2.model.simple_field_dto import SimpleFieldDto
 from huaweicloudsdkdws.v2.model.snapshot import Snapshot
 from huaweicloudsdkdws.v2.model.snapshot_detail import SnapshotDetail
 from huaweicloudsdkdws.v2.model.snapshot_region import SnapshotRegion

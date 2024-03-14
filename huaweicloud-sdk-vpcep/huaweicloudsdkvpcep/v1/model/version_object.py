@@ -19,7 +19,7 @@ class VersionObject:
     openapi_types = {
         'status': 'str',
         'id': 'str',
-        'updated': 'str',
+        'updated': 'datetime',
         'version': 'str',
         'min_version': 'str',
         'links': 'list[Link]'
@@ -39,12 +39,12 @@ class VersionObject:
 
         The model defined in huaweicloud sdk
 
-        :param status: 版本状态。 ● CURRENT：表示该版本为主推版本。 ● SUPPORT：表示为老版本，但是现在还在继续支持。 ● DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        :param status: 版本状态。   - CURRENT：表示该版本为主推版本。   - SUPPORT：表示为老版本，但是现在还在继续支持。   -DEPRECATED：表示为废弃版本，存在后续删除的可能。
         :type status: str
-        :param id: 版本ID。
+        :param id: 版本ID。 - v1：当前主推版本
         :type id: str
         :param updated: 版本发布时间。采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
-        :type updated: str
+        :type updated: datetime
         :param version: 支持的版本号。
         :type version: str
         :param min_version: 支持的微版本号。若该版本API不支持微版本，则为空。
@@ -80,7 +80,7 @@ class VersionObject:
     def status(self):
         """Gets the status of this VersionObject.
 
-        版本状态。 ● CURRENT：表示该版本为主推版本。 ● SUPPORT：表示为老版本，但是现在还在继续支持。 ● DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        版本状态。   - CURRENT：表示该版本为主推版本。   - SUPPORT：表示为老版本，但是现在还在继续支持。   -DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :return: The status of this VersionObject.
         :rtype: str
@@ -91,7 +91,7 @@ class VersionObject:
     def status(self, status):
         """Sets the status of this VersionObject.
 
-        版本状态。 ● CURRENT：表示该版本为主推版本。 ● SUPPORT：表示为老版本，但是现在还在继续支持。 ● DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        版本状态。   - CURRENT：表示该版本为主推版本。   - SUPPORT：表示为老版本，但是现在还在继续支持。   -DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this VersionObject.
         :type status: str
@@ -102,7 +102,7 @@ class VersionObject:
     def id(self):
         """Gets the id of this VersionObject.
 
-        版本ID。
+        版本ID。 - v1：当前主推版本
 
         :return: The id of this VersionObject.
         :rtype: str
@@ -113,7 +113,7 @@ class VersionObject:
     def id(self, id):
         """Sets the id of this VersionObject.
 
-        版本ID。
+        版本ID。 - v1：当前主推版本
 
         :param id: The id of this VersionObject.
         :type id: str
@@ -127,7 +127,7 @@ class VersionObject:
         版本发布时间。采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The updated of this VersionObject.
-        :rtype: str
+        :rtype: datetime
         """
         return self._updated
 
@@ -138,7 +138,7 @@ class VersionObject:
         版本发布时间。采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param updated: The updated of this VersionObject.
-        :type updated: str
+        :type updated: datetime
         """
         self._updated = updated
 

@@ -41,9 +41,9 @@ class OrganizationDto:
         :type id: str
         :param urn: 组织的统一资源名称。
         :type urn: str
-        :param management_account_id: 组织管理帐号的唯一标识符（ID）。
+        :param management_account_id: 组织管理账号的唯一标识符（ID）。
         :type management_account_id: str
-        :param management_account_name: 组织的管理帐号的名称。
+        :param management_account_name: 组织的管理账号的名称。
         :type management_account_name: str
         :param created_at: 组织的创建时间。
         :type created_at: datetime
@@ -112,7 +112,7 @@ class OrganizationDto:
     def management_account_id(self):
         """Gets the management_account_id of this OrganizationDto.
 
-        组织管理帐号的唯一标识符（ID）。
+        组织管理账号的唯一标识符（ID）。
 
         :return: The management_account_id of this OrganizationDto.
         :rtype: str
@@ -123,7 +123,7 @@ class OrganizationDto:
     def management_account_id(self, management_account_id):
         """Sets the management_account_id of this OrganizationDto.
 
-        组织管理帐号的唯一标识符（ID）。
+        组织管理账号的唯一标识符（ID）。
 
         :param management_account_id: The management_account_id of this OrganizationDto.
         :type management_account_id: str
@@ -134,7 +134,7 @@ class OrganizationDto:
     def management_account_name(self):
         """Gets the management_account_name of this OrganizationDto.
 
-        组织的管理帐号的名称。
+        组织的管理账号的名称。
 
         :return: The management_account_name of this OrganizationDto.
         :rtype: str
@@ -145,7 +145,7 @@ class OrganizationDto:
     def management_account_name(self, management_account_name):
         """Sets the management_account_name of this OrganizationDto.
 
-        组织的管理帐号的名称。
+        组织的管理账号的名称。
 
         :param management_account_name: The management_account_name of this OrganizationDto.
         :type management_account_name: str

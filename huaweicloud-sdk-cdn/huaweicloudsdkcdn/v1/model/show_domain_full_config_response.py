@@ -18,29 +18,36 @@ class ShowDomainFullConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'configs': 'ConfigsGetBody'
+        'configs': 'ConfigsGetBody',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'configs': 'configs'
+        'configs': 'configs',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, configs=None):
+    def __init__(self, configs=None, x_request_id=None):
         """ShowDomainFullConfigResponse
 
         The model defined in huaweicloud sdk
 
         :param configs: 
         :type configs: :class:`huaweicloudsdkcdn.v1.ConfigsGetBody`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowDomainFullConfigResponse, self).__init__()
 
         self._configs = None
+        self._x_request_id = None
         self.discriminator = None
 
         if configs is not None:
             self.configs = configs
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def configs(self):
@@ -59,6 +66,24 @@ class ShowDomainFullConfigResponse(SdkResponse):
         :type configs: :class:`huaweicloudsdkcdn.v1.ConfigsGetBody`
         """
         self._configs = configs
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowDomainFullConfigResponse.
+
+        :return: The x_request_id of this ShowDomainFullConfigResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowDomainFullConfigResponse.
+
+        :param x_request_id: The x_request_id of this ShowDomainFullConfigResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

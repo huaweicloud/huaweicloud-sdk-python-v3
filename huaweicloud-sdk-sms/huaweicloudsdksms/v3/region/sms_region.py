@@ -11,7 +11,7 @@ class SmsRegion:
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://sms.ap-southeast-3.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
-                        "https://sms.my-kualalumpur-1.alphaedge.tmone.com.my")
+                        "https://sms.my-kualalumpur-1.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
                         "https://sms.eu-west-101.myhuaweicloud.eu")
 

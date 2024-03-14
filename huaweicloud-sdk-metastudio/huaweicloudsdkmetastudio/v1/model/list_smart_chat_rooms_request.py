@@ -47,7 +47,7 @@ class ListSmartChatRoomsRequest:
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: int
-        :param room_name: 按智能交互对话直播间名称模糊查询。
+        :param room_name: 按智能交互对话名称模糊查询。
         :type room_name: str
         :param model_name: 按形象名称模糊查询。
         :type model_name: str
@@ -153,7 +153,7 @@ class ListSmartChatRoomsRequest:
     def room_name(self):
         """Gets the room_name of this ListSmartChatRoomsRequest.
 
-        按智能交互对话直播间名称模糊查询。
+        按智能交互对话名称模糊查询。
 
         :return: The room_name of this ListSmartChatRoomsRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListSmartChatRoomsRequest:
     def room_name(self, room_name):
         """Sets the room_name of this ListSmartChatRoomsRequest.
 
-        按智能交互对话直播间名称模糊查询。
+        按智能交互对话名称模糊查询。
 
         :param room_name: The room_name of this ListSmartChatRoomsRequest.
         :type room_name: str

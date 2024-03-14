@@ -17,8 +17,8 @@ class AccessConfigurationPort:
     sensitive_list = []
 
     openapi_types = {
-        'target_port': 'str',
-        'port': 'str',
+        'target_port': 'int',
+        'port': 'int',
         'protocol': 'str',
         'default_certificate': 'str',
         'certificate': 'str',
@@ -44,9 +44,9 @@ class AccessConfigurationPort:
         The model defined in huaweicloud sdk
 
         :param target_port: 监听端口。
-        :type target_port: str
+        :type target_port: int
         :param port: 访问端口。
-        :type port: str
+        :type port: int
         :param protocol: 协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
         :type protocol: str
         :param default_certificate: 默认证书，访问方式配置为转发策略且协议为HTTPS时配置，未配置域名证书对时使用默认证书。
@@ -97,7 +97,7 @@ class AccessConfigurationPort:
         监听端口。
 
         :return: The target_port of this AccessConfigurationPort.
-        :rtype: str
+        :rtype: int
         """
         return self._target_port
 
@@ -108,7 +108,7 @@ class AccessConfigurationPort:
         监听端口。
 
         :param target_port: The target_port of this AccessConfigurationPort.
-        :type target_port: str
+        :type target_port: int
         """
         self._target_port = target_port
 
@@ -119,7 +119,7 @@ class AccessConfigurationPort:
         访问端口。
 
         :return: The port of this AccessConfigurationPort.
-        :rtype: str
+        :rtype: int
         """
         return self._port
 
@@ -130,7 +130,7 @@ class AccessConfigurationPort:
         访问端口。
 
         :param port: The port of this AccessConfigurationPort.
-        :type port: str
+        :type port: int
         """
         self._port = port
 

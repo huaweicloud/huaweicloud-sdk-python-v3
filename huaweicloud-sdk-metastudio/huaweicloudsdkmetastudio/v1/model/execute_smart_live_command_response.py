@@ -18,23 +18,27 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'command_id': 'str',
         'command': 'str',
         'result': 'str',
         'x_request_id': 'str'
     }
 
     attribute_map = {
+        'command_id': 'command_id',
         'command': 'command',
         'result': 'result',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, command=None, result=None, x_request_id=None):
+    def __init__(self, command_id=None, command=None, result=None, x_request_id=None):
         """ExecuteSmartLiveCommandResponse
 
         The model defined in huaweicloud sdk
 
-        :param command: 命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构
+        :param command_id: 控制命令ID
+        :type command_id: str
+        :param command: 命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
         :type command: str
         :param result: 命令执行结果
         :type result: str
@@ -44,11 +48,14 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
         
         super(ExecuteSmartLiveCommandResponse, self).__init__()
 
+        self._command_id = None
         self._command = None
         self._result = None
         self._x_request_id = None
         self.discriminator = None
 
+        if command_id is not None:
+            self.command_id = command_id
         if command is not None:
             self.command = command
         if result is not None:
@@ -57,10 +64,32 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
             self.x_request_id = x_request_id
 
     @property
+    def command_id(self):
+        """Gets the command_id of this ExecuteSmartLiveCommandResponse.
+
+        控制命令ID
+
+        :return: The command_id of this ExecuteSmartLiveCommandResponse.
+        :rtype: str
+        """
+        return self._command_id
+
+    @command_id.setter
+    def command_id(self, command_id):
+        """Sets the command_id of this ExecuteSmartLiveCommandResponse.
+
+        控制命令ID
+
+        :param command_id: The command_id of this ExecuteSmartLiveCommandResponse.
+        :type command_id: str
+        """
+        self._command_id = command_id
+
+    @property
     def command(self):
         """Gets the command of this ExecuteSmartLiveCommandResponse.
 
-        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构
+        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
 
         :return: The command of this ExecuteSmartLiveCommandResponse.
         :rtype: str
@@ -71,7 +100,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
     def command(self, command):
         """Sets the command of this ExecuteSmartLiveCommandResponse.
 
-        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构
+        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
 
         :param command: The command of this ExecuteSmartLiveCommandResponse.
         :type command: str

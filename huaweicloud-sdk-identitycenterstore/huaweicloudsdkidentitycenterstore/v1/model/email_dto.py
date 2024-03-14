@@ -21,26 +21,30 @@ class EmailDto:
     openapi_types = {
         'primary': 'bool',
         'type': 'str',
-        'value': 'str'
+        'value': 'str',
+        'verification_status': 'str'
     }
 
     attribute_map = {
         'primary': 'primary',
         'type': 'type',
-        'value': 'value'
+        'value': 'value',
+        'verification_status': 'verification_status'
     }
 
-    def __init__(self, primary=None, type=None, value=None):
+    def __init__(self, primary=None, type=None, value=None, verification_status=None):
         """EmailDto
 
         The model defined in huaweicloud sdk
 
-        :param primary: 一个布尔值，表示这是否是用户的主电子邮箱
+        :param primary: 一个布尔值，表示这是否为用户的主电子邮箱
         :type primary: bool
         :param type: 表示电子邮箱类型的字符串
         :type type: str
         :param value: 包含电子邮箱地址的字符串
         :type value: str
+        :param verification_status: 电子邮箱地址的验证状态
+        :type verification_status: str
         """
         
         
@@ -48,17 +52,20 @@ class EmailDto:
         self._primary = None
         self._type = None
         self._value = None
+        self._verification_status = None
         self.discriminator = None
 
         self.primary = primary
         self.type = type
         self.value = value
+        if verification_status is not None:
+            self.verification_status = verification_status
 
     @property
     def primary(self):
         """Gets the primary of this EmailDto.
 
-        一个布尔值，表示这是否是用户的主电子邮箱
+        一个布尔值，表示这是否为用户的主电子邮箱
 
         :return: The primary of this EmailDto.
         :rtype: bool
@@ -69,7 +76,7 @@ class EmailDto:
     def primary(self, primary):
         """Sets the primary of this EmailDto.
 
-        一个布尔值，表示这是否是用户的主电子邮箱
+        一个布尔值，表示这是否为用户的主电子邮箱
 
         :param primary: The primary of this EmailDto.
         :type primary: bool
@@ -119,6 +126,28 @@ class EmailDto:
         :type value: str
         """
         self._value = value
+
+    @property
+    def verification_status(self):
+        """Gets the verification_status of this EmailDto.
+
+        电子邮箱地址的验证状态
+
+        :return: The verification_status of this EmailDto.
+        :rtype: str
+        """
+        return self._verification_status
+
+    @verification_status.setter
+    def verification_status(self, verification_status):
+        """Sets the verification_status of this EmailDto.
+
+        电子邮箱地址的验证状态
+
+        :param verification_status: The verification_status of this EmailDto.
+        :type verification_status: str
+        """
+        self._verification_status = verification_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

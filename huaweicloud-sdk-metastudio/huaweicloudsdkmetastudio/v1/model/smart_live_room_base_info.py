@@ -22,10 +22,12 @@ class SmartLiveRoomBaseInfo:
         'room_name': 'str',
         'room_type': 'str',
         'room_state': 'str',
+        'view_mode': 'str',
         'error_info': 'ErrorResponse',
         'shared_config': 'SharedConfig',
         'room_description': 'str',
         'cover_url': 'str',
+        'thumbnail': 'str',
         'model_infos': 'list[ModelInfo]',
         'create_time': 'str',
         'update_time': 'str',
@@ -40,10 +42,12 @@ class SmartLiveRoomBaseInfo:
         'room_name': 'room_name',
         'room_type': 'room_type',
         'room_state': 'room_state',
+        'view_mode': 'view_mode',
         'error_info': 'error_info',
         'shared_config': 'shared_config',
         'room_description': 'room_description',
         'cover_url': 'cover_url',
+        'thumbnail': 'thumbnail',
         'model_infos': 'model_infos',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -52,7 +56,7 @@ class SmartLiveRoomBaseInfo:
         'last_job_status': 'last_job_status'
     }
 
-    def __init__(self, room_id=None, project_id=None, room_name=None, room_type=None, room_state=None, error_info=None, shared_config=None, room_description=None, cover_url=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None):
+    def __init__(self, room_id=None, project_id=None, room_name=None, room_type=None, room_state=None, view_mode=None, error_info=None, shared_config=None, room_description=None, cover_url=None, thumbnail=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None):
         """SmartLiveRoomBaseInfo
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,8 @@ class SmartLiveRoomBaseInfo:
         :type room_type: str
         :param room_state: 直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
         :type room_state: str
+        :param view_mode: 横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :type view_mode: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         :param shared_config: 
@@ -75,6 +81,8 @@ class SmartLiveRoomBaseInfo:
         :type room_description: str
         :param cover_url: 直播间封面图URL
         :type cover_url: str
+        :param thumbnail: 直播间封面图URL
+        :type thumbnail: str
         :param model_infos: 数字人模型信息
         :type model_infos: list[:class:`huaweicloudsdkmetastudio.v1.ModelInfo`]
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -96,10 +104,12 @@ class SmartLiveRoomBaseInfo:
         self._room_name = None
         self._room_type = None
         self._room_state = None
+        self._view_mode = None
         self._error_info = None
         self._shared_config = None
         self._room_description = None
         self._cover_url = None
+        self._thumbnail = None
         self._model_infos = None
         self._create_time = None
         self._update_time = None
@@ -118,6 +128,8 @@ class SmartLiveRoomBaseInfo:
             self.room_type = room_type
         if room_state is not None:
             self.room_state = room_state
+        if view_mode is not None:
+            self.view_mode = view_mode
         if error_info is not None:
             self.error_info = error_info
         if shared_config is not None:
@@ -126,6 +138,8 @@ class SmartLiveRoomBaseInfo:
             self.room_description = room_description
         if cover_url is not None:
             self.cover_url = cover_url
+        if thumbnail is not None:
+            self.thumbnail = thumbnail
         if model_infos is not None:
             self.model_infos = model_infos
         if create_time is not None:
@@ -250,6 +264,28 @@ class SmartLiveRoomBaseInfo:
         self._room_state = room_state
 
     @property
+    def view_mode(self):
+        """Gets the view_mode of this SmartLiveRoomBaseInfo.
+
+        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :return: The view_mode of this SmartLiveRoomBaseInfo.
+        :rtype: str
+        """
+        return self._view_mode
+
+    @view_mode.setter
+    def view_mode(self, view_mode):
+        """Sets the view_mode of this SmartLiveRoomBaseInfo.
+
+        横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :param view_mode: The view_mode of this SmartLiveRoomBaseInfo.
+        :type view_mode: str
+        """
+        self._view_mode = view_mode
+
+    @property
     def error_info(self):
         """Gets the error_info of this SmartLiveRoomBaseInfo.
 
@@ -328,6 +364,28 @@ class SmartLiveRoomBaseInfo:
         :type cover_url: str
         """
         self._cover_url = cover_url
+
+    @property
+    def thumbnail(self):
+        """Gets the thumbnail of this SmartLiveRoomBaseInfo.
+
+        直播间封面图URL
+
+        :return: The thumbnail of this SmartLiveRoomBaseInfo.
+        :rtype: str
+        """
+        return self._thumbnail
+
+    @thumbnail.setter
+    def thumbnail(self, thumbnail):
+        """Sets the thumbnail of this SmartLiveRoomBaseInfo.
+
+        直播间封面图URL
+
+        :param thumbnail: The thumbnail of this SmartLiveRoomBaseInfo.
+        :type thumbnail: str
+        """
+        self._thumbnail = thumbnail
 
     @property
     def model_infos(self):

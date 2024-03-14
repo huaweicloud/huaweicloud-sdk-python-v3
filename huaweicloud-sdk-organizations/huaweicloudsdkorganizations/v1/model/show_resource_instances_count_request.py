@@ -31,7 +31,7 @@ class ShowResourceInstancesCountRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        :param resource_type: 资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
         :type resource_type: str
         :param body: Body of the ShowResourceInstancesCountRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.ResourceInstanceReqBody`
@@ -51,7 +51,7 @@ class ShowResourceInstancesCountRequest:
     def resource_type(self):
         """Gets the resource_type of this ShowResourceInstancesCountRequest.
 
-        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
 
         :return: The resource_type of this ShowResourceInstancesCountRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowResourceInstancesCountRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ShowResourceInstancesCountRequest.
 
-        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
 
         :param resource_type: The resource_type of this ShowResourceInstancesCountRequest.
         :type resource_type: str

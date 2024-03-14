@@ -5914,6 +5914,158 @@ class DwsClient(Client):
 
         return http_info
 
+    def list_metrics(self, request):
+        """查询集群使用指标列表
+
+        查询集群使用指标列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMetrics
+        :type request: :class:`huaweicloudsdkdws.v2.ListMetricsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListMetricsResponse`
+        """
+        http_info = self._list_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_metrics_invoker(self, request):
+        http_info = self._list_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/dms/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_metrics_data(self, request):
+        """获取指定指标相关采集数据
+
+        获取指定指标相关采集数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMetricsData
+        :type request: :class:`huaweicloudsdkdws.v2.ListMetricsDataRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListMetricsDataResponse`
+        """
+        http_info = self._list_metrics_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_metrics_data_invoker(self, request):
+        http_info = self._list_metrics_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_metrics_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/dms/metrics/{metric_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricsDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'metric_name' in local_var_params:
+            path_params['metric_name'] = local_var_params['metric_name']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_monitor_indicator_data(self, request):
         """openApi查询历史监控数据
 

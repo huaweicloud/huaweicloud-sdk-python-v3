@@ -19,15 +19,17 @@ class ListDomainsResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'domains': 'list[Domains]'
+        'domains': 'list[Domains]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'total': 'total',
-        'domains': 'domains'
+        'domains': 'domains',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, total=None, domains=None):
+    def __init__(self, total=None, domains=None, x_request_id=None):
         """ListDomainsResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListDomainsResponse(SdkResponse):
         :type total: int
         :param domains: 域名信息。
         :type domains: list[:class:`huaweicloudsdkcdn.v2.Domains`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ListDomainsResponse, self).__init__()
 
         self._total = None
         self._domains = None
+        self._x_request_id = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
         if domains is not None:
             self.domains = domains
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def total(self):
@@ -92,6 +99,24 @@ class ListDomainsResponse(SdkResponse):
         :type domains: list[:class:`huaweicloudsdkcdn.v2.Domains`]
         """
         self._domains = domains
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ListDomainsResponse.
+
+        :return: The x_request_id of this ListDomainsResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ListDomainsResponse.
+
+        :param x_request_id: The x_request_id of this ListDomainsResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -25,13 +25,10 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         'endpoint_service_name': 'str',
         'marker_id': 'int',
         'endpoint_service_id': 'str',
-        'enable_dns': 'bool',
-        'dns_names': 'list[str]',
         'ip': 'str',
         'vpc_id': 'str',
-        'subnet_id': 'str',
-        'created_at': 'str',
-        'updated_at': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
         'project_id': 'str',
         'tags': 'list[TagList]',
         'error': 'list[QueryError]',
@@ -52,11 +49,8 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         'endpoint_service_name': 'endpoint_service_name',
         'marker_id': 'marker_id',
         'endpoint_service_id': 'endpoint_service_id',
-        'enable_dns': 'enable_dns',
-        'dns_names': 'dns_names',
         'ip': 'ip',
         'vpc_id': 'vpc_id',
-        'subnet_id': 'subnet_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
@@ -71,18 +65,18 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, endpoint_pool_id=None, public_border_group=None):
+    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, ip=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, endpoint_pool_id=None, public_border_group=None):
         """DeleteEndpointPolicyResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 终端节点的ID，唯一标识。
         :type id: str
-        :param service_type: 终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        :param service_type: 终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
         :type service_type: str
-        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● failed：失败
+        :param status: 终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
         :type status: str
-        :param active_status: 帐号状态。 ● frozen：冻结 ● active：解冻
+        :param active_status: 帐号状态。  - frozen：冻结  - active：解冻
         :type active_status: list[str]
         :param endpoint_service_name: 终端节点服务的名称。
         :type endpoint_service_name: str
@@ -90,20 +84,14 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         :type marker_id: int
         :param endpoint_service_id: 终端节点服务的ID。
         :type endpoint_service_id: str
-        :param enable_dns: 是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
-        :type enable_dns: bool
-        :param dns_names: 访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
-        :type dns_names: list[str]
         :param ip: 访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： 当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
         :type ip: str
         :param vpc_id: 终端节点所在的VPC的ID。
         :type vpc_id: str
-        :param subnet_id: vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
-        :type subnet_id: str
         :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
-        :type created_at: str
+        :type created_at: datetime
         :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
-        :type updated_at: str
+        :type updated_at: datetime
         :param project_id: 项目ID，获取方法请参见获取项目ID。
         :type project_id: str
         :param tags: 标签列表，没有标签默认为空数组。
@@ -112,7 +100,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
         :param whitelist: 控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type whitelist: list[str]
-        :param enable_whitelist: 是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
+        :param enable_whitelist: 是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type enable_whitelist: bool
         :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
         :type routetables: list[str]
@@ -135,11 +123,8 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         self._endpoint_service_name = None
         self._marker_id = None
         self._endpoint_service_id = None
-        self._enable_dns = None
-        self._dns_names = None
         self._ip = None
         self._vpc_id = None
-        self._subnet_id = None
         self._created_at = None
         self._updated_at = None
         self._project_id = None
@@ -168,16 +153,10 @@ class DeleteEndpointPolicyResponse(SdkResponse):
             self.marker_id = marker_id
         if endpoint_service_id is not None:
             self.endpoint_service_id = endpoint_service_id
-        if enable_dns is not None:
-            self.enable_dns = enable_dns
-        if dns_names is not None:
-            self.dns_names = dns_names
         if ip is not None:
             self.ip = ip
         if vpc_id is not None:
             self.vpc_id = vpc_id
-        if subnet_id is not None:
-            self.subnet_id = subnet_id
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -229,7 +208,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def service_type(self):
         """Gets the service_type of this DeleteEndpointPolicyResponse.
 
-        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :return: The service_type of this DeleteEndpointPolicyResponse.
         :rtype: str
@@ -240,7 +219,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def service_type(self, service_type):
         """Sets the service_type of this DeleteEndpointPolicyResponse.
 
-        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
+        终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :param service_type: The service_type of this DeleteEndpointPolicyResponse.
         :type service_type: str
@@ -251,7 +230,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def status(self):
         """Gets the status of this DeleteEndpointPolicyResponse.
 
-        终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● failed：失败
+        终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
         :return: The status of this DeleteEndpointPolicyResponse.
         :rtype: str
@@ -262,7 +241,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this DeleteEndpointPolicyResponse.
 
-        终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● failed：失败
+        终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
         :param status: The status of this DeleteEndpointPolicyResponse.
         :type status: str
@@ -273,7 +252,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def active_status(self):
         """Gets the active_status of this DeleteEndpointPolicyResponse.
 
-        帐号状态。 ● frozen：冻结 ● active：解冻
+        帐号状态。  - frozen：冻结  - active：解冻
 
         :return: The active_status of this DeleteEndpointPolicyResponse.
         :rtype: list[str]
@@ -284,7 +263,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def active_status(self, active_status):
         """Sets the active_status of this DeleteEndpointPolicyResponse.
 
-        帐号状态。 ● frozen：冻结 ● active：解冻
+        帐号状态。  - frozen：冻结  - active：解冻
 
         :param active_status: The active_status of this DeleteEndpointPolicyResponse.
         :type active_status: list[str]
@@ -358,50 +337,6 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         self._endpoint_service_id = endpoint_service_id
 
     @property
-    def enable_dns(self):
-        """Gets the enable_dns of this DeleteEndpointPolicyResponse.
-
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
-
-        :return: The enable_dns of this DeleteEndpointPolicyResponse.
-        :rtype: bool
-        """
-        return self._enable_dns
-
-    @enable_dns.setter
-    def enable_dns(self, enable_dns):
-        """Sets the enable_dns of this DeleteEndpointPolicyResponse.
-
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
-
-        :param enable_dns: The enable_dns of this DeleteEndpointPolicyResponse.
-        :type enable_dns: bool
-        """
-        self._enable_dns = enable_dns
-
-    @property
-    def dns_names(self):
-        """Gets the dns_names of this DeleteEndpointPolicyResponse.
-
-        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
-
-        :return: The dns_names of this DeleteEndpointPolicyResponse.
-        :rtype: list[str]
-        """
-        return self._dns_names
-
-    @dns_names.setter
-    def dns_names(self, dns_names):
-        """Sets the dns_names of this DeleteEndpointPolicyResponse.
-
-        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
-
-        :param dns_names: The dns_names of this DeleteEndpointPolicyResponse.
-        :type dns_names: list[str]
-        """
-        self._dns_names = dns_names
-
-    @property
     def ip(self):
         """Gets the ip of this DeleteEndpointPolicyResponse.
 
@@ -446,35 +381,13 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         self._vpc_id = vpc_id
 
     @property
-    def subnet_id(self):
-        """Gets the subnet_id of this DeleteEndpointPolicyResponse.
-
-        vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
-
-        :return: The subnet_id of this DeleteEndpointPolicyResponse.
-        :rtype: str
-        """
-        return self._subnet_id
-
-    @subnet_id.setter
-    def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this DeleteEndpointPolicyResponse.
-
-        vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
-
-        :param subnet_id: The subnet_id of this DeleteEndpointPolicyResponse.
-        :type subnet_id: str
-        """
-        self._subnet_id = subnet_id
-
-    @property
     def created_at(self):
         """Gets the created_at of this DeleteEndpointPolicyResponse.
 
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this DeleteEndpointPolicyResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -485,7 +398,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this DeleteEndpointPolicyResponse.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -496,7 +409,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this DeleteEndpointPolicyResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._updated_at
 
@@ -507,7 +420,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this DeleteEndpointPolicyResponse.
-        :type updated_at: str
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -603,7 +516,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def enable_whitelist(self):
         """Gets the enable_whitelist of this DeleteEndpointPolicyResponse.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
+        是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :return: The enable_whitelist of this DeleteEndpointPolicyResponse.
         :rtype: bool
@@ -614,7 +527,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def enable_whitelist(self, enable_whitelist):
         """Sets the enable_whitelist of this DeleteEndpointPolicyResponse.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
+        是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :param enable_whitelist: The enable_whitelist of this DeleteEndpointPolicyResponse.
         :type enable_whitelist: bool

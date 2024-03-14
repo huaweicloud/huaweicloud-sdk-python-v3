@@ -1,3 +1,646 @@
+# 3.1.86 2024-03-14
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListComponentConfigurations**
+    - 响应参数变更
+      - `* items.data.spec.items.ports.target_port: string -> int32`
+      - `* items.data.spec.items.ports.port: string -> int32`
+  - **CreateComponentConfiguration**
+    - 请求参数变更
+      - `* items.data.spec.items.ports.target_port: string -> int32`
+      - `* items.data.spec.items.ports.port: string -> int32`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `+ nodes.type: enum value [OneclickCDC]`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ nodes.type: enum value [OneclickCDC]`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ nodes.type: enum value [OneclickCDC]`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `+ dependJobs.nodes.type: enum value [OneclickCDC]`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 支持接口`ListAvailableNodeTypes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchSetPolicy**
+    - 请求参数变更
+      - `+ jobs.ddl_topic`
+  - **BatchCreateJobs**
+    - 请求参数变更
+      - `+ jobs.public_ip_list`
+  - **ShowJobList**
+    - 响应参数变更
+      - `+ jobs.children.job_direction: enum value [non-dbs]`
+      - `- jobs.children.job_direction: enum value [no-dbs]`
+  - **BatchListJobDetails**
+    - 响应参数变更
+      - `+ results.public_ip_list`
+      - `+ results.bind_public_ip_state`
+      - `+ results.children`
+  - **ShowUpdateObjectSavingStatus**
+    - 响应参数变更
+      - `+ job_id`
+  - **CollectDbObjectsAsync**
+    - 响应参数变更
+      - `+ job_id`
+  - **ShowDataProcessingRulesResult**
+    - 响应参数变更
+      - `+ job_id`
+  - **CollectDbObjectsInfo**
+    - 响应参数变更
+      - `+ job_id`
+  - **CollectPositionAsync**
+    - 响应参数变更
+      - `+ job_id`
+  - **CollectColumns**
+    - 响应参数变更
+      - `+ job_id`
+  - **CreateJob**
+    - 请求参数变更
+      - `+ job.public_ip_list`
+  - **BatchCreateJobsAsync**
+    - 请求参数变更
+      - `+ jobs.public_ip_list`
+  - **UpdateDataProgress**
+    - 响应参数变更
+      - `+ job_id`
+  - **CheckDataFilter**
+    - 响应参数变更
+      - `+ job_id`
+  - **ListAsyncJobDetail**
+    - 响应参数变更
+      - `+ jobs.public_ip_list`
+      - `+ jobs.bind_public_ip_state`
+      - `+ jobs.children`
+  - **ShowJobDetail**
+    - 响应参数变更
+      - `+ job.public_ip_list`
+      - `+ job.bind_public_ip_state`
+      - `+ job.children`
+  - **ExecuteJobAction**
+    - 请求参数变更
+      - `+ job.action_name: enum value [bind_eip,unbind_eip]`
+      - `+ job.action_params.public_ip_config`
+  - **BatchExecuteJobActions**
+    - 请求参数变更
+      - `+ jobs.action_name: enum value [bind_eip,unbind_eip]`
+      - `+ jobs.action_params.public_ip_config`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持接口`ListMetrics`、`ListMetricsData`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IdentityCenter
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `AttachCustomerManagedPolicyToPermissionSet`
+    - `DetachCustomerManagedPolicyReferenceFromPermissionSet`
+    - `ListCustomerManagedPolicyReferencesInPermissionSet`
+    - `ListProfileAssociations`
+    - `AttachManagedPolicyToPermissionSet`
+    - `DeleteAccountAssignment`
+    - `DescribeAccountAssignmentCreationStatus`
+    - `DescribePermissionSetProvisioningStatus`
+    - `DetachManagedPolicyFromPermissionSet`
+    - `ListAccountAssignmentCreationStatus`
+    - `ListAccountAssignmentDeletionStatus`
+    - `ListAccountAssignments`
+    - `ListAccountsForProvisionedPermissionSet`
+    - `ListManagedPoliciesInPermissionSet`
+    - `ListPermissionSetProvisioningStatus`
+    - `ListPermissionSets`
+    - `CreatePermissionSet`
+    - `ListPermissionSetsProvisionedToAccount`
+    - `CreateAccountAssignment`
+    - `DescribeAccountAssignmentDeletionStatus`
+    - `DescribePermissionSet`
+    - `UpdatePermissionSet`
+    - `DeletePermissionSet`
+  - **ListInstances**
+    - 请求参数变更
+      - `+ X-Security-Token`
+    - 响应参数变更
+      - `+ instances.instance_urn`
+
+### HuaweiCloud SDK IdentityCenterStore
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListUsers**
+    - 响应参数变更
+      - `+ users.external_id`
+      - `+ users.enterprise`
+      - `+ users.emails.verification_status`
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowAssetReplicationInfo`
+    - `CreateAssetbyReplicationInfo`
+    - `ListActiveCode`
+    - `CreateActiveCode`
+    - `ShowActiveCode`
+    - `UpdateActiveCode`
+    - `ResetActiveCode`
+    - `DeleteActiveCode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFile**
+    - 响应参数变更
+      - `+ file_id`
+      - `+ upload_url`
+  - **ShowJobUploadingAddress**
+    - 响应参数变更
+      - `+ package_url`
+      - `+ authorization_letter_uploading_url`
+      - `+ segment_url`
+  - **ShowJobAuditResult**
+    - 响应参数变更
+      - `+ system_audit_result`
+      - `+ admin_audit_result`
+  - **ShowTrainingSegmentInfo**
+    - 响应参数变更
+      - `+ confirmed_index`
+  - **ConfirmTrainingSegment**
+    - 响应参数变更
+      - `+ unmatched_index_hit`
+      - `+ confirm_result`
+  - **Create2dModelTrainingJob**
+    - 响应参数变更
+      - `+ cover_upload_url`
+      - `+ job_id`
+      - `+ grant_file_upload_url`
+      - `+ training_video_upload_url`
+      - `+ id_card_image2_upload_url`
+      - `+ id_card_image1_upload_url`
+  - **List2dModelTrainingJob**
+    - 响应参数变更
+      - `+ jobs`
+      - `+ count`
+  - **Execute2dModelTrainingCommandByUser**
+    - 响应参数变更
+      - `+ commond_result`
+      - `+ attachment_upload_url`
+      - `+ multipart_data`
+  - **ExecuteSmartLiveCommand**
+    - 请求参数变更
+      - `+ command: enum value [REWRITE_INTERACTION_RULES,GET_LIVE_JOB_CONFIG_INFO]`
+    - 响应参数变更
+      - `+ command_id`
+      - `+ command: enum value [REWRITE_INTERACTION_RULES,GET_LIVE_JOB_CONFIG_INFO]`
+  - **CreateTrainingBasicJob**
+    - 响应参数变更
+      - `+ job_id`
+      - `+ segment_uploading_url`
+      - `+ authorization_letter_uploading_url`
+      - `+ training_data_uploading_url`
+  - **CreateTrainingMiddleJob**
+    - 响应参数变更
+      - `+ job_id`
+      - `+ segment_uploading_url`
+      - `+ authorization_letter_uploading_url`
+      - `+ training_data_uploading_url`
+  - **CreateTrainingAdvanceJob**
+    - 响应参数变更
+      - `+ job_id`
+      - `+ segment_uploading_url`
+      - `+ authorization_letter_uploading_url`
+      - `+ training_data_uploading_url`
+  - **ShowVoiceTrainingJob**
+    - 响应参数变更
+      - `+ job_type`
+      - `+ create_time`
+      - `+ sex`
+      - `+ create_type`
+      - `+ voice_name`
+      - `+ language`
+      - `+ voice_authorization_url`
+      - `+ asset_id`
+      - `+ lastupdate_time`
+      - `+ job_failed_code`
+      - `+ reject_times`
+      - `+ app_user_id`
+      - `+ job_id`
+      - `+ state`
+      - `+ tag`
+      - `+ job_failed_reason`
+      - `+ state: enum value [USER_RESULT_REVIEW,USER_REVIEW_REJECT]`
+  - **Update2dModelTrainingJob**
+    - 响应参数变更
+      - `+ cover_upload_url`
+      - `+ job_id`
+      - `+ grant_file_upload_url`
+      - `+ training_video_upload_url`
+      - `+ id_card_image2_upload_url`
+      - `+ id_card_image1_upload_url`
+  - **Show2dModelTrainingJob**
+    - 响应参数变更
+      - `+ model_version`
+      - `+ inference_data_process_action_mark_info`
+      - `+ model_resolution`
+      - `+ inference_data_process_video_mark_info`
+      - `+ asset_id`
+      - `+ training_video_download_url`
+      - `+ mask_file_download_url`
+      - `+ grant_file_download_url`
+      - `+ project_id`
+      - `+ operation_logs`
+      - `+ contact`
+      - `+ matting_type`
+      - `+ verify_video_download_url`
+      - `+ state`
+      - `+ cover_download_url`
+      - `+ create_time`
+      - `+ is_background_replacement`
+      - `+ comment_logs`
+      - `+ markable_video_download_url`
+      - `+ tags`
+      - `+ last_update_time`
+      - `+ batch_name`
+      - `+ id_card_image1_download_url`
+      - `+ id_card_image2_download_url`
+      - `+ job_id`
+      - `+ is_mask_file_uploaded`
+      - `+ name`
+  - **ListDigitalHumanVideo**
+    - 响应参数变更
+      - `+ jobs.state: enum value [BLOCK]`
+  - **CreateDigitalHumanBusinessCard**
+    - 响应参数变更
+      - `+ job_id`
+  - **ListDigitalHumanBusinessCard**
+    - 响应参数变更
+      - `+ jobs.state: enum value [BLOCK]`
+  - **UpdateDigitalHumanBusinessCard**
+    - 响应参数变更
+      - `+ job_id`
+  - **ShowDigitalHumanBusinessCard**
+    - 响应参数变更
+      - `+ job_info.state: enum value [BLOCK]`
+  - **ListSmartChatRooms**
+    - 响应参数变更
+      - `+ count_concurrency`
+      - `+ smart_chat_rooms.concurrency`
+  - **ShowSmartLive**
+    - 响应参数变更
+      - `+ co_streamer_config`
+      - `+ live_job_log`
+  - **CreatePictureModelingJob**
+    - 响应参数变更
+      - `+ model_asset_id`
+      - `+ job_id`
+  - **ListVoiceTrainingJob**
+    - 响应参数变更
+      - `+ jobs`
+      - `+ count`
+      - `+ reject_times`
+      - `+ jobs.reject_times`
+      - `+ jobs.state: enum value [USER_RESULT_REVIEW,USER_REVIEW_REJECT]`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `+ co_streamer_config`
+  - **ListSmartLive**
+    - 响应参数变更
+      - `+ co_streamer_config`
+      - `+ live_job_log`
+      - `+ smart_live_jobs.co_streamer_config`
+      - `+ smart_live_jobs.live_job_log`
+  - **ListSmartLiveJobs**
+    - 响应参数变更
+      - `+ co_streamer_config`
+      - `+ live_job_log`
+      - `+ smart_live_jobs.co_streamer_config`
+      - `+ smart_live_jobs.live_job_log`
+  - **CreateVideoMotionCaptureJob**
+    - 响应参数变更
+      - `+ rtc_room_info`
+      - `+ job_id`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ state: enum value [BLOCK]`
+  - **ShowPhotoDigitalHumanVideo**
+    - 响应参数变更
+      - `+ state: enum value [BLOCK]`
+  - **ListSmartLiveRooms**
+    - 响应参数变更
+      - `+ smart_live_rooms.view_mode`
+      - `+ smart_live_rooms.thumbnail`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ co_streamer_config`
+      - `+ scene_scripts.script_id`
+      - `+ interaction_rules.trigger.reply_role`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ thumbnail`
+      - `+ co_streamer_config`
+      - `+ scene_scripts.script_id`
+      - `+ interaction_rules.trigger.reply_role`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ co_streamer_config`
+      - `+ scene_scripts.script_id`
+      - `+ interaction_rules.trigger.reply_role`
+    - 响应参数变更
+      - `+ thumbnail`
+      - `+ co_streamer_config`
+      - `+ scene_scripts.script_id`
+      - `+ interaction_rules.trigger.reply_role`
+  - **UpdateInteractionRuleGroup**
+    - 请求参数变更
+      - `+ interaction_rules.trigger.reply_role`
+    - 响应参数变更
+      - `+ interaction_rules.trigger.reply_role`
+  - **ListAssets**
+    - 请求参数变更
+      - `+ X-REAL-IP`
+  - **CreateInteractionRuleGroup**
+    - 请求参数变更
+      - `+ interaction_rules.trigger.reply_role`
+  - **ListInteractionRuleGroups**
+    - 响应参数变更
+      - `+ interaction_rule_groups.interaction_rules.trigger.reply_role`
+
+### HuaweiCloud SDK Organizations
+
+- _新增特性_
+  - 支持接口`ListCloseAccountStatuses`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAccounts**
+    - 响应参数变更
+      - `+ accounts.status`
+  - **ShowAccount**
+    - 响应参数变更
+      - `+ account.status`
+
+### HuaweiCloud SDK RAM
+
+- _新增特性_
+  - 支持接口`ListPermissionVersions`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPermissions**
+    - 请求参数变更
+      - `+ permission_type`
+    - 响应参数变更
+      - `+ permissions.permission_urn`
+      - `+ permissions.permission_type`
+      - `+ permissions.default_version`
+      - `+ permissions.version`
+      - `+ permissions.status`
+  - **ShowPermission**
+    - 请求参数变更
+      - `+ permission_version`
+    - 响应参数变更
+      - `+ permission.permission_urn`
+      - `+ permission.permission_type`
+      - `+ permission.default_version`
+      - `+ permission.version`
+      - `+ permission.status`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowBinlogClearPolicy**
+    - 响应参数变更
+      - `+ binlog_clear_type`
+
+### HuaweiCloud SDK VPCEP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AddOrRemoveServicePermissions**
+    - 响应参数变更
+      - `- permission_type: enum value [domainId,orgPath]`
+  - **ListServiceDescribeDetails**
+    - 响应参数变更
+      - `- service_type: enum value [interface]`
+      - `* created_at: string -> date-time`
+  - **ListServiceDetails**
+    - 响应参数变更
+      - `- server_type: enum value [VM,VIP,LB]`
+      - `- status: enum value [creating,available,failed]`
+      - `- service_type: enum value [gataway,interface]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `- tcp_proxy: enum value [close,toa_open,proxy_open,open,proxy_vni]`
+  - **UpdateEndpointService**
+    - 响应参数变更
+      - `- server_type: enum value [VM,VIP,LB]`
+      - `- status: enum value [creating,available,failed]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `- tcp_proxy: enum value [close,toa_open,proxy_open,open,proxy_vni]`
+  - **ListServicePermissionsDetails**
+    - 响应参数变更
+      - `- permissions.permission_type: enum value [domainId,orgPath]`
+      - `* permissions.created_at: string -> date-time`
+  - **ListServicePublicDetails**
+    - 响应参数变更
+      - `- endpoint_services.service_type: enum value [interface,gateway]`
+      - `* endpoint_services.created_at: string -> date-time`
+  - **ListEndpointInfoDetails**
+    - 响应参数变更
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `- enable_status: enum value [enable,disable]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `* policy_statement: list<string> -> list<PolicyStatement>`
+  - **UpdateEndpointWhite**
+    - 响应参数变更
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+  - **BatchAddOrRemoveResourceInstance**
+    - 请求参数变更
+      - `+ resource_type: enum value [endpoint_service,endpoint]`
+      - `+ action: enum value [create,delete]`
+      - `* body: object<BatchAddOrRemoveResourceInstanceBody> -> object<BatchAddOrRemoveResourceInstanceRequestBody>`
+  - **ListQueryProjectResourceTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [endpoint_service,endpoint]`
+  - **BatchAddEndpointServicePermissions**
+    - 请求参数变更
+      - `* body: object<BatchAddPermissionRequest> -> object<BatchAddEndpointServicePermissionsRequestBody>`
+    - 响应参数变更
+      - `* permissions.created_at: string -> date-time`
+  - **BatchRemoveEndpointServicePermissions**
+    - 请求参数变更
+      - `* body: object<BatchRemovePermissionRequest> -> object<BatchRemoveEndpointServicePermissionsRequestBody>`
+    - 响应参数变更
+      - `* permissions.created_at: string -> date-time`
+  - **UpdateEndpointServicePermissionDesc**
+    - 请求参数变更
+      - `* body: object<UpdatePermissionDescRequest> -> object<UpdateEndpointServicePermissionDescRequestBody>`
+    - 响应参数变更
+      - `* permissions.created_at: string -> date-time`
+  - **UpdateEndpointPolicy**
+    - 请求参数变更
+      - `+ policy_statement.Effect: enum value [Allow,Refuse]`
+    - 响应参数变更
+      - `- enable_dns`
+      - `- dns_names`
+      - `- subnet_id`
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `+ policy_statement.Effect: enum value [Allow,Refuse]`
+  - **DeleteEndpointPolicy**
+    - 响应参数变更
+      - `- enable_dns`
+      - `- dns_names`
+      - `- subnet_id`
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `+ policy_statement.Effect: enum value [Allow,Refuse]`
+  - **CreateEndpointService**
+    - 请求参数变更
+      - `+ service_type: enum value [gateway,interface]`
+    - 响应参数变更
+      - `- server_type: enum value [VM,VIP,LB]`
+      - `- status: enum value [creating,available,failed]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `- tcp_proxy: enum value [close,toa_open,proxy_open,open,proxy_vni]`
+  - **ListEndpointService**
+    - 响应参数变更
+      - `- endpoint_services.status: enum value [creating,available,failed]`
+      - `- endpoint_services.service_type: enum value [VM,VIP,LB]`
+      - `* endpoint_services.created_at: string -> date-time`
+      - `* endpoint_services.updated_at: string -> date-time`
+      - `- endpoint_services.tcp_proxy: enum value [close,toa_open,proxy_open,open,proxy_vni]`
+  - **ListServiceConnections**
+    - 请求参数变更
+      - `+ status: enum value [pendingAcceptance,accepted,rejected,failed]`
+    - 响应参数变更
+      - `* connections.created_at: string -> date-time`
+      - `* connections.updated_at: string -> date-time`
+      - `- connections.status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+  - **AcceptOrRejectEndpoint**
+    - 响应参数变更
+      - `* connections.created_at: string -> date-time`
+      - `* connections.updated_at: string -> date-time`
+      - `- connections.status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+  - **CreateEndpoint**
+    - 响应参数变更
+      - `- dns_names`
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `* policy_statement: list<string> -> list<PolicyStatement>`
+  - **ListEndpoints**
+    - 请求参数变更
+      - `+ sort_key: enum value [create_at,update_at]`
+      - `+ sort_dir: enum value [desc,asc]`
+    - 响应参数变更
+      - `- endpoint_pool_id`
+      - `- endpoint_service_id`
+      - `- vpc_id`
+      - `- created_at`
+      - `- description`
+      - `- error`
+      - `- updated_at`
+      - `- enable_whitelist`
+      - `- project_id`
+      - `- marker_id`
+      - `- id`
+      - `- public_border_group`
+      - `- policy_statement`
+      - `- routetables`
+      - `- endpoint_service_name`
+      - `- ip`
+      - `- whitelist`
+      - `- tags`
+      - `- enable_dns`
+      - `- service_type`
+      - `- active_status`
+      - `- dns_names`
+      - `- subnet_id`
+      - `- status`
+      - `- endpoints.service_type: enum value [interface,gateway]`
+      - `- endpoints.status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* endpoints.created_at: string -> date-time`
+      - `* endpoints.updated_at: string -> date-time`
+      - `+ endpoints.policy_statement.Effect: enum value [Allow,Refuse]`
+      - `* endpoints: list<EndpointResp> -> list<EndpointResponseBody>`
+  - **ListQuotaDetails**
+    - 响应参数变更
+      - `- quotas.resources.type: enum value [endpoint_service,endpoint]`
+      - `* quotas: object<ResourcesResp> -> object<ResourcesResponseBody>`
+  - **ListVersionDetails**
+    - 响应参数变更
+      - `- versions.status: enum value [CURRENT,SUPPORT,DEPRECATED]`
+      - `- versions.id: enum value [v1]`
+      - `* versions.updated: string -> date-time`
+  - **ListSpecifiedVersionDetails**
+    - 响应参数变更
+      - `- version.status: enum value [CURRENT,SUPPORT,DEPRECATED]`
+      - `- version.id: enum value [v1]`
+      - `* version.updated: string -> date-time`
+  - **ListResourceInstances**
+    - 请求参数变更
+      - `+ resource_type: enum value [endpoint_service,endpoint]`
+      - `+ action: enum value [filter,count]`
+  - **UpdateEndpointConnectionsDesc**
+    - 请求参数变更
+      - `* body: object<UpdateEpConnections> -> object<UpdateEndpointConnectionsDescRequestBody>`
+    - 响应参数变更
+      - `* connections.created_at: string -> date-time`
+      - `* connections.updated_at: string -> date-time`
+      - `- connections.status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+
 # 3.1.85 2024-03-07
 
 ### HuaweiCloud SDK BMS

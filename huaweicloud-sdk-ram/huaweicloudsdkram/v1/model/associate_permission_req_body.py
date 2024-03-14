@@ -17,57 +17,35 @@ class AssociatePermissionReqBody:
     sensitive_list = []
 
     openapi_types = {
-        'permission_id': 'str',
-        'replace': 'bool'
+        'replace': 'bool',
+        'permission_id': 'str'
     }
 
     attribute_map = {
-        'permission_id': 'permission_id',
-        'replace': 'replace'
+        'replace': 'replace',
+        'permission_id': 'permission_id'
     }
 
-    def __init__(self, permission_id=None, replace=None):
+    def __init__(self, replace=None, permission_id=None):
         """AssociatePermissionReqBody
 
         The model defined in huaweicloud sdk
 
-        :param permission_id: 共享资源权限的ID。
-        :type permission_id: str
         :param replace: 指定特定的权限替换或绑定到与资源共享实例关联的现有资源类型。设置为\&quot;true\&quot;可将相同的资源类型的权限替换为当前权限。设置为\&quot;false\&quot;将权限绑定到当前资源类型。默认值为\&quot;false\&quot;。资源共享实例中的每个资源类型只能绑定一个权限。如果资源共享实例中已具有指定资源类型的权限，并且将\&quot;replace\&quot;设置为\&quot;false\&quot;，则操作返回错误。这有助于防止意外覆盖权限。
         :type replace: bool
-        """
-        
-        
-
-        self._permission_id = None
-        self._replace = None
-        self.discriminator = None
-
-        self.permission_id = permission_id
-        if replace is not None:
-            self.replace = replace
-
-    @property
-    def permission_id(self):
-        """Gets the permission_id of this AssociatePermissionReqBody.
-
-        共享资源权限的ID。
-
-        :return: The permission_id of this AssociatePermissionReqBody.
-        :rtype: str
-        """
-        return self._permission_id
-
-    @permission_id.setter
-    def permission_id(self, permission_id):
-        """Sets the permission_id of this AssociatePermissionReqBody.
-
-        共享资源权限的ID。
-
-        :param permission_id: The permission_id of this AssociatePermissionReqBody.
+        :param permission_id: 共享资源权限的ID。
         :type permission_id: str
         """
-        self._permission_id = permission_id
+        
+        
+
+        self._replace = None
+        self._permission_id = None
+        self.discriminator = None
+
+        if replace is not None:
+            self.replace = replace
+        self.permission_id = permission_id
 
     @property
     def replace(self):
@@ -90,6 +68,28 @@ class AssociatePermissionReqBody:
         :type replace: bool
         """
         self._replace = replace
+
+    @property
+    def permission_id(self):
+        """Gets the permission_id of this AssociatePermissionReqBody.
+
+        共享资源权限的ID。
+
+        :return: The permission_id of this AssociatePermissionReqBody.
+        :rtype: str
+        """
+        return self._permission_id
+
+    @permission_id.setter
+    def permission_id(self, permission_id):
+        """Sets the permission_id of this AssociatePermissionReqBody.
+
+        共享资源权限的ID。
+
+        :param permission_id: The permission_id of this AssociatePermissionReqBody.
+        :type permission_id: str
+        """
+        self._permission_id = permission_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,6 +17,7 @@ class ListAssetsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_real_ip': 'str',
         'x_app_user_id': 'str',
         'limit': 'int',
         'offset': 'int',
@@ -41,6 +42,7 @@ class ListAssetsRequest:
     }
 
     attribute_map = {
+        'x_real_ip': 'X-REAL-IP',
         'x_app_user_id': 'X-App-UserId',
         'limit': 'limit',
         'offset': 'offset',
@@ -64,11 +66,13 @@ class ListAssetsRequest:
         'role': 'role'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None):
+    def __init__(self, x_real_ip=None, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None):
         """ListAssetsRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_real_ip: 客户端IP
+        :type x_real_ip: str
         :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
         :type x_app_user_id: str
         :param limit: 每页显示的条目数量。
@@ -115,6 +119,7 @@ class ListAssetsRequest:
         
         
 
+        self._x_real_ip = None
         self._x_app_user_id = None
         self._limit = None
         self._offset = None
@@ -138,6 +143,8 @@ class ListAssetsRequest:
         self._role = None
         self.discriminator = None
 
+        if x_real_ip is not None:
+            self.x_real_ip = x_real_ip
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
         if limit is not None:
@@ -180,6 +187,28 @@ class ListAssetsRequest:
             self.voice_provider = voice_provider
         if role is not None:
             self.role = role
+
+    @property
+    def x_real_ip(self):
+        """Gets the x_real_ip of this ListAssetsRequest.
+
+        客户端IP
+
+        :return: The x_real_ip of this ListAssetsRequest.
+        :rtype: str
+        """
+        return self._x_real_ip
+
+    @x_real_ip.setter
+    def x_real_ip(self, x_real_ip):
+        """Sets the x_real_ip of this ListAssetsRequest.
+
+        客户端IP
+
+        :param x_real_ip: The x_real_ip of this ListAssetsRequest.
+        :type x_real_ip: str
+        """
+        self._x_real_ip = x_real_ip
 
     @property
     def x_app_user_id(self):

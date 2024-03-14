@@ -31,7 +31,7 @@ class TagResourceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 根、组织单元、帐号或策略的唯一标识符（ID）。
+        :param resource_id: 根、组织单元、账号或策略的唯一标识符（ID）。
         :type resource_id: str
         :param body: Body of the TagResourceRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.TagResourceReqBody`
@@ -51,7 +51,7 @@ class TagResourceRequest:
     def resource_id(self):
         """Gets the resource_id of this TagResourceRequest.
 
-        根、组织单元、帐号或策略的唯一标识符（ID）。
+        根、组织单元、账号或策略的唯一标识符（ID）。
 
         :return: The resource_id of this TagResourceRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class TagResourceRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this TagResourceRequest.
 
-        根、组织单元、帐号或策略的唯一标识符（ID）。
+        根、组织单元、账号或策略的唯一标识符（ID）。
 
         :param resource_id: The resource_id of this TagResourceRequest.
         :type resource_id: str

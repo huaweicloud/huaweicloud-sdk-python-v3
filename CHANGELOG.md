@@ -1,3 +1,646 @@
+# 3.1.86 2024-03-14
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListComponentConfigurations**
+    - changes of response param
+      - `* items.data.spec.items.ports.target_port: string -> int32`
+      - `* items.data.spec.items.ports.port: string -> int32`
+  - **CreateComponentConfiguration**
+    - changes of request param
+      - `* items.data.spec.items.ports.target_port: string -> int32`
+      - `* items.data.spec.items.ports.port: string -> int32`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `+ nodes.type: enum value [OneclickCDC]`
+  - **ShowJob**
+    - changes of response param
+      - `+ nodes.type: enum value [OneclickCDC]`
+  - **UpdateJob**
+    - changes of request param
+      - `+ nodes.type: enum value [OneclickCDC]`
+  - **CreateSupplementdata**
+    - changes of request param
+      - `+ dependJobs.nodes.type: enum value [OneclickCDC]`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the API `ListAvailableNodeTypes`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchSetPolicy**
+    - changes of request param
+      - `+ jobs.ddl_topic`
+  - **BatchCreateJobs**
+    - changes of request param
+      - `+ jobs.public_ip_list`
+  - **ShowJobList**
+    - changes of response param
+      - `+ jobs.children.job_direction: enum value [non-dbs]`
+      - `- jobs.children.job_direction: enum value [no-dbs]`
+  - **BatchListJobDetails**
+    - changes of response param
+      - `+ results.public_ip_list`
+      - `+ results.bind_public_ip_state`
+      - `+ results.children`
+  - **ShowUpdateObjectSavingStatus**
+    - changes of response param
+      - `+ job_id`
+  - **CollectDbObjectsAsync**
+    - changes of response param
+      - `+ job_id`
+  - **ShowDataProcessingRulesResult**
+    - changes of response param
+      - `+ job_id`
+  - **CollectDbObjectsInfo**
+    - changes of response param
+      - `+ job_id`
+  - **CollectPositionAsync**
+    - changes of response param
+      - `+ job_id`
+  - **CollectColumns**
+    - changes of response param
+      - `+ job_id`
+  - **CreateJob**
+    - changes of request param
+      - `+ job.public_ip_list`
+  - **BatchCreateJobsAsync**
+    - changes of request param
+      - `+ jobs.public_ip_list`
+  - **UpdateDataProgress**
+    - changes of response param
+      - `+ job_id`
+  - **CheckDataFilter**
+    - changes of response param
+      - `+ job_id`
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.public_ip_list`
+      - `+ jobs.bind_public_ip_state`
+      - `+ jobs.children`
+  - **ShowJobDetail**
+    - changes of response param
+      - `+ job.public_ip_list`
+      - `+ job.bind_public_ip_state`
+      - `+ job.children`
+  - **ExecuteJobAction**
+    - changes of request param
+      - `+ job.action_name: enum value [bind_eip,unbind_eip]`
+      - `+ job.action_params.public_ip_config`
+  - **BatchExecuteJobActions**
+    - changes of request param
+      - `+ jobs.action_name: enum value [bind_eip,unbind_eip]`
+      - `+ jobs.action_params.public_ip_config`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the APIs `ListMetrics`, `ListMetricsData`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IdentityCenter
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `AttachCustomerManagedPolicyToPermissionSet`
+    - `DetachCustomerManagedPolicyReferenceFromPermissionSet`
+    - `ListCustomerManagedPolicyReferencesInPermissionSet`
+    - `ListProfileAssociations`
+    - `AttachManagedPolicyToPermissionSet`
+    - `DeleteAccountAssignment`
+    - `DescribeAccountAssignmentCreationStatus`
+    - `DescribePermissionSetProvisioningStatus`
+    - `DetachManagedPolicyFromPermissionSet`
+    - `ListAccountAssignmentCreationStatus`
+    - `ListAccountAssignmentDeletionStatus`
+    - `ListAccountAssignments`
+    - `ListAccountsForProvisionedPermissionSet`
+    - `ListManagedPoliciesInPermissionSet`
+    - `ListPermissionSetProvisioningStatus`
+    - `ListPermissionSets`
+    - `CreatePermissionSet`
+    - `ListPermissionSetsProvisionedToAccount`
+    - `CreateAccountAssignment`
+    - `DescribeAccountAssignmentDeletionStatus`
+    - `DescribePermissionSet`
+    - `UpdatePermissionSet`
+    - `DeletePermissionSet`
+  - **ListInstances**
+    - changes of request param
+      - `+ X-Security-Token`
+    - changes of response param
+      - `+ instances.instance_urn`
+
+### HuaweiCloud SDK IdentityCenterStore
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListUsers**
+    - changes of response param
+      - `+ users.external_id`
+      - `+ users.enterprise`
+      - `+ users.emails.verification_status`
+
+### HuaweiCloud SDK MetaStudio
+
+- _Features_
+  - Support the following APIs:
+    - `ShowAssetReplicationInfo`
+    - `CreateAssetbyReplicationInfo`
+    - `ListActiveCode`
+    - `CreateActiveCode`
+    - `ShowActiveCode`
+    - `UpdateActiveCode`
+    - `ResetActiveCode`
+    - `DeleteActiveCode`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFile**
+    - changes of response param
+      - `+ file_id`
+      - `+ upload_url`
+  - **ShowJobUploadingAddress**
+    - changes of response param
+      - `+ package_url`
+      - `+ authorization_letter_uploading_url`
+      - `+ segment_url`
+  - **ShowJobAuditResult**
+    - changes of response param
+      - `+ system_audit_result`
+      - `+ admin_audit_result`
+  - **ShowTrainingSegmentInfo**
+    - changes of response param
+      - `+ confirmed_index`
+  - **ConfirmTrainingSegment**
+    - changes of response param
+      - `+ unmatched_index_hit`
+      - `+ confirm_result`
+  - **Create2dModelTrainingJob**
+    - changes of response param
+      - `+ cover_upload_url`
+      - `+ job_id`
+      - `+ grant_file_upload_url`
+      - `+ training_video_upload_url`
+      - `+ id_card_image2_upload_url`
+      - `+ id_card_image1_upload_url`
+  - **List2dModelTrainingJob**
+    - changes of response param
+      - `+ jobs`
+      - `+ count`
+  - **Execute2dModelTrainingCommandByUser**
+    - changes of response param
+      - `+ commond_result`
+      - `+ attachment_upload_url`
+      - `+ multipart_data`
+  - **ExecuteSmartLiveCommand**
+    - changes of request param
+      - `+ command: enum value [REWRITE_INTERACTION_RULES,GET_LIVE_JOB_CONFIG_INFO]`
+    - changes of response param
+      - `+ command_id`
+      - `+ command: enum value [REWRITE_INTERACTION_RULES,GET_LIVE_JOB_CONFIG_INFO]`
+  - **CreateTrainingBasicJob**
+    - changes of response param
+      - `+ job_id`
+      - `+ segment_uploading_url`
+      - `+ authorization_letter_uploading_url`
+      - `+ training_data_uploading_url`
+  - **CreateTrainingMiddleJob**
+    - changes of response param
+      - `+ job_id`
+      - `+ segment_uploading_url`
+      - `+ authorization_letter_uploading_url`
+      - `+ training_data_uploading_url`
+  - **CreateTrainingAdvanceJob**
+    - changes of response param
+      - `+ job_id`
+      - `+ segment_uploading_url`
+      - `+ authorization_letter_uploading_url`
+      - `+ training_data_uploading_url`
+  - **ShowVoiceTrainingJob**
+    - changes of response param
+      - `+ job_type`
+      - `+ create_time`
+      - `+ sex`
+      - `+ create_type`
+      - `+ voice_name`
+      - `+ language`
+      - `+ voice_authorization_url`
+      - `+ asset_id`
+      - `+ lastupdate_time`
+      - `+ job_failed_code`
+      - `+ reject_times`
+      - `+ app_user_id`
+      - `+ job_id`
+      - `+ state`
+      - `+ tag`
+      - `+ job_failed_reason`
+      - `+ state: enum value [USER_RESULT_REVIEW,USER_REVIEW_REJECT]`
+  - **Update2dModelTrainingJob**
+    - changes of response param
+      - `+ cover_upload_url`
+      - `+ job_id`
+      - `+ grant_file_upload_url`
+      - `+ training_video_upload_url`
+      - `+ id_card_image2_upload_url`
+      - `+ id_card_image1_upload_url`
+  - **Show2dModelTrainingJob**
+    - changes of response param
+      - `+ model_version`
+      - `+ inference_data_process_action_mark_info`
+      - `+ model_resolution`
+      - `+ inference_data_process_video_mark_info`
+      - `+ asset_id`
+      - `+ training_video_download_url`
+      - `+ mask_file_download_url`
+      - `+ grant_file_download_url`
+      - `+ project_id`
+      - `+ operation_logs`
+      - `+ contact`
+      - `+ matting_type`
+      - `+ verify_video_download_url`
+      - `+ state`
+      - `+ cover_download_url`
+      - `+ create_time`
+      - `+ is_background_replacement`
+      - `+ comment_logs`
+      - `+ markable_video_download_url`
+      - `+ tags`
+      - `+ last_update_time`
+      - `+ batch_name`
+      - `+ id_card_image1_download_url`
+      - `+ id_card_image2_download_url`
+      - `+ job_id`
+      - `+ is_mask_file_uploaded`
+      - `+ name`
+  - **ListDigitalHumanVideo**
+    - changes of response param
+      - `+ jobs.state: enum value [BLOCK]`
+  - **CreateDigitalHumanBusinessCard**
+    - changes of response param
+      - `+ job_id`
+  - **ListDigitalHumanBusinessCard**
+    - changes of response param
+      - `+ jobs.state: enum value [BLOCK]`
+  - **UpdateDigitalHumanBusinessCard**
+    - changes of response param
+      - `+ job_id`
+  - **ShowDigitalHumanBusinessCard**
+    - changes of response param
+      - `+ job_info.state: enum value [BLOCK]`
+  - **ListSmartChatRooms**
+    - changes of response param
+      - `+ count_concurrency`
+      - `+ smart_chat_rooms.concurrency`
+  - **ShowSmartLive**
+    - changes of response param
+      - `+ co_streamer_config`
+      - `+ live_job_log`
+  - **CreatePictureModelingJob**
+    - changes of response param
+      - `+ model_asset_id`
+      - `+ job_id`
+  - **ListVoiceTrainingJob**
+    - changes of response param
+      - `+ jobs`
+      - `+ count`
+      - `+ reject_times`
+      - `+ jobs.reject_times`
+      - `+ jobs.state: enum value [USER_RESULT_REVIEW,USER_REVIEW_REJECT]`
+  - **StartSmartLive**
+    - changes of request param
+      - `+ co_streamer_config`
+  - **ListSmartLive**
+    - changes of response param
+      - `+ co_streamer_config`
+      - `+ live_job_log`
+      - `+ smart_live_jobs.co_streamer_config`
+      - `+ smart_live_jobs.live_job_log`
+  - **ListSmartLiveJobs**
+    - changes of response param
+      - `+ co_streamer_config`
+      - `+ live_job_log`
+      - `+ smart_live_jobs.co_streamer_config`
+      - `+ smart_live_jobs.live_job_log`
+  - **CreateVideoMotionCaptureJob**
+    - changes of response param
+      - `+ rtc_room_info`
+      - `+ job_id`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ state: enum value [BLOCK]`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `+ state: enum value [BLOCK]`
+  - **ListSmartLiveRooms**
+    - changes of response param
+      - `+ smart_live_rooms.view_mode`
+      - `+ smart_live_rooms.thumbnail`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ co_streamer_config`
+      - `+ scene_scripts.script_id`
+      - `+ interaction_rules.trigger.reply_role`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ thumbnail`
+      - `+ co_streamer_config`
+      - `+ scene_scripts.script_id`
+      - `+ interaction_rules.trigger.reply_role`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ co_streamer_config`
+      - `+ scene_scripts.script_id`
+      - `+ interaction_rules.trigger.reply_role`
+    - changes of response param
+      - `+ thumbnail`
+      - `+ co_streamer_config`
+      - `+ scene_scripts.script_id`
+      - `+ interaction_rules.trigger.reply_role`
+  - **UpdateInteractionRuleGroup**
+    - changes of request param
+      - `+ interaction_rules.trigger.reply_role`
+    - changes of response param
+      - `+ interaction_rules.trigger.reply_role`
+  - **ListAssets**
+    - changes of request param
+      - `+ X-REAL-IP`
+  - **CreateInteractionRuleGroup**
+    - changes of request param
+      - `+ interaction_rules.trigger.reply_role`
+  - **ListInteractionRuleGroups**
+    - changes of response param
+      - `+ interaction_rule_groups.interaction_rules.trigger.reply_role`
+
+### HuaweiCloud SDK Organizations
+
+- _Features_
+  - Support the API `ListCloseAccountStatuses`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAccounts**
+    - changes of response param
+      - `+ accounts.status`
+  - **ShowAccount**
+    - changes of response param
+      - `+ account.status`
+
+### HuaweiCloud SDK RAM
+
+- _Features_
+  - Support the API `ListPermissionVersions`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPermissions**
+    - changes of request param
+      - `+ permission_type`
+    - changes of response param
+      - `+ permissions.permission_urn`
+      - `+ permissions.permission_type`
+      - `+ permissions.default_version`
+      - `+ permissions.version`
+      - `+ permissions.status`
+  - **ShowPermission**
+    - changes of request param
+      - `+ permission_version`
+    - changes of response param
+      - `+ permission.permission_urn`
+      - `+ permission.permission_type`
+      - `+ permission.default_version`
+      - `+ permission.version`
+      - `+ permission.status`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowBinlogClearPolicy**
+    - changes of response param
+      - `+ binlog_clear_type`
+
+### HuaweiCloud SDK VPCEP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AddOrRemoveServicePermissions**
+    - changes of response param
+      - `- permission_type: enum value [domainId,orgPath]`
+  - **ListServiceDescribeDetails**
+    - changes of response param
+      - `- service_type: enum value [interface]`
+      - `* created_at: string -> date-time`
+  - **ListServiceDetails**
+    - changes of response param
+      - `- server_type: enum value [VM,VIP,LB]`
+      - `- status: enum value [creating,available,failed]`
+      - `- service_type: enum value [gataway,interface]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `- tcp_proxy: enum value [close,toa_open,proxy_open,open,proxy_vni]`
+  - **UpdateEndpointService**
+    - changes of response param
+      - `- server_type: enum value [VM,VIP,LB]`
+      - `- status: enum value [creating,available,failed]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `- tcp_proxy: enum value [close,toa_open,proxy_open,open,proxy_vni]`
+  - **ListServicePermissionsDetails**
+    - changes of response param
+      - `- permissions.permission_type: enum value [domainId,orgPath]`
+      - `* permissions.created_at: string -> date-time`
+  - **ListServicePublicDetails**
+    - changes of response param
+      - `- endpoint_services.service_type: enum value [interface,gateway]`
+      - `* endpoint_services.created_at: string -> date-time`
+  - **ListEndpointInfoDetails**
+    - changes of response param
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `- enable_status: enum value [enable,disable]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `* policy_statement: list<string> -> list<PolicyStatement>`
+  - **UpdateEndpointWhite**
+    - changes of response param
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+  - **BatchAddOrRemoveResourceInstance**
+    - changes of request param
+      - `+ resource_type: enum value [endpoint_service,endpoint]`
+      - `+ action: enum value [create,delete]`
+      - `* body: object<BatchAddOrRemoveResourceInstanceBody> -> object<BatchAddOrRemoveResourceInstanceRequestBody>`
+  - **ListQueryProjectResourceTags**
+    - changes of request param
+      - `+ resource_type: enum value [endpoint_service,endpoint]`
+  - **BatchAddEndpointServicePermissions**
+    - changes of request param
+      - `* body: object<BatchAddPermissionRequest> -> object<BatchAddEndpointServicePermissionsRequestBody>`
+    - changes of response param
+      - `* permissions.created_at: string -> date-time`
+  - **BatchRemoveEndpointServicePermissions**
+    - changes of request param
+      - `* body: object<BatchRemovePermissionRequest> -> object<BatchRemoveEndpointServicePermissionsRequestBody>`
+    - changes of response param
+      - `* permissions.created_at: string -> date-time`
+  - **UpdateEndpointServicePermissionDesc**
+    - changes of request param
+      - `* body: object<UpdatePermissionDescRequest> -> object<UpdateEndpointServicePermissionDescRequestBody>`
+    - changes of response param
+      - `* permissions.created_at: string -> date-time`
+  - **UpdateEndpointPolicy**
+    - changes of request param
+      - `+ policy_statement.Effect: enum value [Allow,Refuse]`
+    - changes of response param
+      - `- enable_dns`
+      - `- dns_names`
+      - `- subnet_id`
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `+ policy_statement.Effect: enum value [Allow,Refuse]`
+  - **DeleteEndpointPolicy**
+    - changes of response param
+      - `- enable_dns`
+      - `- dns_names`
+      - `- subnet_id`
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `+ policy_statement.Effect: enum value [Allow,Refuse]`
+  - **CreateEndpointService**
+    - changes of request param
+      - `+ service_type: enum value [gateway,interface]`
+    - changes of response param
+      - `- server_type: enum value [VM,VIP,LB]`
+      - `- status: enum value [creating,available,failed]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `- tcp_proxy: enum value [close,toa_open,proxy_open,open,proxy_vni]`
+  - **ListEndpointService**
+    - changes of response param
+      - `- endpoint_services.status: enum value [creating,available,failed]`
+      - `- endpoint_services.service_type: enum value [VM,VIP,LB]`
+      - `* endpoint_services.created_at: string -> date-time`
+      - `* endpoint_services.updated_at: string -> date-time`
+      - `- endpoint_services.tcp_proxy: enum value [close,toa_open,proxy_open,open,proxy_vni]`
+  - **ListServiceConnections**
+    - changes of request param
+      - `+ status: enum value [pendingAcceptance,accepted,rejected,failed]`
+    - changes of response param
+      - `* connections.created_at: string -> date-time`
+      - `* connections.updated_at: string -> date-time`
+      - `- connections.status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+  - **AcceptOrRejectEndpoint**
+    - changes of response param
+      - `* connections.created_at: string -> date-time`
+      - `* connections.updated_at: string -> date-time`
+      - `- connections.status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+  - **CreateEndpoint**
+    - changes of response param
+      - `- dns_names`
+      - `- service_type: enum value [interface,gateway]`
+      - `- status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* created_at: string -> date-time`
+      - `* updated_at: string -> date-time`
+      - `* policy_statement: list<string> -> list<PolicyStatement>`
+  - **ListEndpoints**
+    - changes of request param
+      - `+ sort_key: enum value [create_at,update_at]`
+      - `+ sort_dir: enum value [desc,asc]`
+    - changes of response param
+      - `- endpoint_pool_id`
+      - `- endpoint_service_id`
+      - `- vpc_id`
+      - `- created_at`
+      - `- description`
+      - `- error`
+      - `- updated_at`
+      - `- enable_whitelist`
+      - `- project_id`
+      - `- marker_id`
+      - `- id`
+      - `- public_border_group`
+      - `- policy_statement`
+      - `- routetables`
+      - `- endpoint_service_name`
+      - `- ip`
+      - `- whitelist`
+      - `- tags`
+      - `- enable_dns`
+      - `- service_type`
+      - `- active_status`
+      - `- dns_names`
+      - `- subnet_id`
+      - `- status`
+      - `- endpoints.service_type: enum value [interface,gateway]`
+      - `- endpoints.status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+      - `* endpoints.created_at: string -> date-time`
+      - `* endpoints.updated_at: string -> date-time`
+      - `+ endpoints.policy_statement.Effect: enum value [Allow,Refuse]`
+      - `* endpoints: list<EndpointResp> -> list<EndpointResponseBody>`
+  - **ListQuotaDetails**
+    - changes of response param
+      - `- quotas.resources.type: enum value [endpoint_service,endpoint]`
+      - `* quotas: object<ResourcesResp> -> object<ResourcesResponseBody>`
+  - **ListVersionDetails**
+    - changes of response param
+      - `- versions.status: enum value [CURRENT,SUPPORT,DEPRECATED]`
+      - `- versions.id: enum value [v1]`
+      - `* versions.updated: string -> date-time`
+  - **ListSpecifiedVersionDetails**
+    - changes of response param
+      - `- version.status: enum value [CURRENT,SUPPORT,DEPRECATED]`
+      - `- version.id: enum value [v1]`
+      - `* version.updated: string -> date-time`
+  - **ListResourceInstances**
+    - changes of request param
+      - `+ resource_type: enum value [endpoint_service,endpoint]`
+      - `+ action: enum value [filter,count]`
+  - **UpdateEndpointConnectionsDesc**
+    - changes of request param
+      - `* body: object<UpdateEpConnections> -> object<UpdateEndpointConnectionsDescRequestBody>`
+    - changes of response param
+      - `* connections.created_at: string -> date-time`
+      - `* connections.updated_at: string -> date-time`
+      - `- connections.status: enum value [pendingAcceptance,creating,accepted,rejected,failed,deleting]`
+
 # 3.1.85 2024-03-07
 
 ### HuaweiCloud SDK BMS

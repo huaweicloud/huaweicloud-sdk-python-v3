@@ -18,29 +18,36 @@ class CreateRefreshTasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'refresh_task': 'str'
+        'refresh_task': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'refresh_task': 'refresh_task'
+        'refresh_task': 'refresh_task',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, refresh_task=None):
+    def __init__(self, refresh_task=None, x_request_id=None):
         """CreateRefreshTasksResponse
 
         The model defined in huaweicloud sdk
 
         :param refresh_task: 任务ID。
         :type refresh_task: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreateRefreshTasksResponse, self).__init__()
 
         self._refresh_task = None
+        self._x_request_id = None
         self.discriminator = None
 
         if refresh_task is not None:
             self.refresh_task = refresh_task
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def refresh_task(self):
@@ -63,6 +70,24 @@ class CreateRefreshTasksResponse(SdkResponse):
         :type refresh_task: str
         """
         self._refresh_task = refresh_task
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CreateRefreshTasksResponse.
+
+        :return: The x_request_id of this CreateRefreshTasksResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreateRefreshTasksResponse.
+
+        :param x_request_id: The x_request_id of this CreateRefreshTasksResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -72,8 +72,7 @@ class VersionModelMaster:
             self.create_time = create_time
         if creator is not None:
             self.creator = creator
-        if id is not None:
-            self.id = id
+        self.id = id
         if last_update_time is not None:
             self.last_update_time = last_update_time
         if modifier is not None:

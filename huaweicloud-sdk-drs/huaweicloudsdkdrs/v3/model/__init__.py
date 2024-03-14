@@ -118,6 +118,7 @@ from huaweicloudsdkdrs.v3.model.delete_job_req import DeleteJobReq
 from huaweicloudsdkdrs.v3.model.delete_job_resp import DeleteJobResp
 from huaweicloudsdkdrs.v3.model.endpoint import Endpoint
 from huaweicloudsdkdrs.v3.model.endpoint_vo import EndpointVO
+from huaweicloudsdkdrs.v3.model.failed_to_bind_eip_child_info import FailedToBindEipChildInfo
 from huaweicloudsdkdrs.v3.model.get_data_transformation_resp import GetDataTransformationResp
 from huaweicloudsdkdrs.v3.model.import_smn_resp import ImportSmnResp
 from huaweicloudsdkdrs.v3.model.inst_info import InstInfo
@@ -130,6 +131,8 @@ from huaweicloudsdkdrs.v3.model.line_compare_detail import LineCompareDetail
 from huaweicloudsdkdrs.v3.model.line_compare_result import LineCompareResult
 from huaweicloudsdkdrs.v3.model.line_compare_result_details import LineCompareResultDetails
 from huaweicloudsdkdrs.v3.model.line_compare_result_overview import LineCompareResultOverview
+from huaweicloudsdkdrs.v3.model.list_available_node_types_request import ListAvailableNodeTypesRequest
+from huaweicloudsdkdrs.v3.model.list_available_node_types_response import ListAvailableNodeTypesResponse
 from huaweicloudsdkdrs.v3.model.list_available_zone_request import ListAvailableZoneRequest
 from huaweicloudsdkdrs.v3.model.list_available_zone_response import ListAvailableZoneResponse
 from huaweicloudsdkdrs.v3.model.list_compare_result_request import ListCompareResultRequest
@@ -157,6 +160,7 @@ from huaweicloudsdkdrs.v3.model.pre_check_info import PreCheckInfo
 from huaweicloudsdkdrs.v3.model.precheck_fail_sub_job_vo import PrecheckFailSubJobVO
 from huaweicloudsdkdrs.v3.model.precheck_result import PrecheckResult
 from huaweicloudsdkdrs.v3.model.progress_info import ProgressInfo
+from huaweicloudsdkdrs.v3.model.public_ip_config import PublicIpConfig
 from huaweicloudsdkdrs.v3.model.query_available_node_type_req import QueryAvailableNodeTypeReq
 from huaweicloudsdkdrs.v3.model.query_compare_result_req import QueryCompareResultReq
 from huaweicloudsdkdrs.v3.model.query_data_guard_monitor_and_chart_resp import QueryDataGuardMonitorAndChartResp
@@ -174,6 +178,7 @@ from huaweicloudsdkdrs.v3.model.query_rpo_and_rto_resp import QueryRpoAndRtoResp
 from huaweicloudsdkdrs.v3.model.query_smn_info_resp import QuerySmnInfoResp
 from huaweicloudsdkdrs.v3.model.query_struct_detail_resp import QueryStructDetailResp
 from huaweicloudsdkdrs.v3.model.query_struct_process_resp import QueryStructProcessResp
+from huaweicloudsdkdrs.v3.model.query_support_node_type_bean import QuerySupportNodeTypeBean
 from huaweicloudsdkdrs.v3.model.query_user_detail_resp import QueryUserDetailResp
 from huaweicloudsdkdrs.v3.model.query_user_resp import QueryUserResp
 from huaweicloudsdkdrs.v3.model.quota_resource import QuotaResource

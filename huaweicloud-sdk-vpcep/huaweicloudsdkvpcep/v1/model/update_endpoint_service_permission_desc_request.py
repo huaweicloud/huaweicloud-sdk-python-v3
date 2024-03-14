@@ -19,7 +19,7 @@ class UpdateEndpointServicePermissionDescRequest:
     openapi_types = {
         'vpc_endpoint_service_id': 'str',
         'permission_id': 'str',
-        'body': 'UpdatePermissionDescRequest'
+        'body': 'UpdateEndpointServicePermissionDescRequestBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateEndpointServicePermissionDescRequest:
         :param permission_id: 白名单的ID。
         :type permission_id: str
         :param body: Body of the UpdateEndpointServicePermissionDescRequest
-        :type body: :class:`huaweicloudsdkvpcep.v1.UpdatePermissionDescRequest`
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescRequestBody`
         """
         
         
@@ -102,7 +102,7 @@ class UpdateEndpointServicePermissionDescRequest:
         """Gets the body of this UpdateEndpointServicePermissionDescRequest.
 
         :return: The body of this UpdateEndpointServicePermissionDescRequest.
-        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdatePermissionDescRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescRequestBody`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class UpdateEndpointServicePermissionDescRequest:
         """Sets the body of this UpdateEndpointServicePermissionDescRequest.
 
         :param body: The body of this UpdateEndpointServicePermissionDescRequest.
-        :type body: :class:`huaweicloudsdkvpcep.v1.UpdatePermissionDescRequest`
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescRequestBody`
         """
         self._body = body
 

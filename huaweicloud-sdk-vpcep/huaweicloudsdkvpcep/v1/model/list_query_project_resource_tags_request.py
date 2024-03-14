@@ -29,7 +29,7 @@ class ListQueryProjectResourceTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型，值为：endpoint_service或endpoint。
+        :param resource_type: 资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
         :type resource_type: str
         """
         
@@ -44,7 +44,7 @@ class ListQueryProjectResourceTagsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListQueryProjectResourceTagsRequest.
 
-        资源类型，值为：endpoint_service或endpoint。
+        资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
         :return: The resource_type of this ListQueryProjectResourceTagsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListQueryProjectResourceTagsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListQueryProjectResourceTagsRequest.
 
-        资源类型，值为：endpoint_service或endpoint。
+        资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
         :param resource_type: The resource_type of this ListQueryProjectResourceTagsRequest.
         :type resource_type: str

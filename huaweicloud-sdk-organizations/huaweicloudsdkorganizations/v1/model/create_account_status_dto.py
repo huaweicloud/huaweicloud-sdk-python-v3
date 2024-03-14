@@ -41,17 +41,17 @@ class CreateAccountStatusDto:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 如果帐号创建成功，则为新帐号的唯一标识符（ID）。
+        :param account_id: 如果账号创建成功，则为新账号的唯一标识符（ID）。
         :type account_id: str
-        :param account_name: 帐号名称。
+        :param account_name: 账号名称
         :type account_name: str
-        :param completed_at: 创建帐号和完成请求的日期和时间。
+        :param completed_at: 创建账号和完成请求的日期和时间。
         :type completed_at: datetime
-        :param created_at: 请求创建帐号的日期和时间。
+        :param created_at: 请求创建账号的日期和时间。
         :type created_at: datetime
-        :param id: 请求的唯一标识符（ID）。您可以从创建帐号的初始CreateAccount请求的响应中获得此值。
+        :param id: 请求的唯一标识符（ID）。您可以从创建账号的初始CreateAccount请求的响应中获得此值。
         :type id: str
-        :param state: 创建帐号的异步请求的状态，in_progress：处理中，succeeded：成功，failed：失败。
+        :param state: 创建账号的异步请求的状态，in_progress：处理中，succeeded：成功，failed：失败。
         :type state: str
         :param failure_reason: 如果请求失败，则说明失败原因。
         :type failure_reason: str
@@ -81,7 +81,7 @@ class CreateAccountStatusDto:
     def account_id(self):
         """Gets the account_id of this CreateAccountStatusDto.
 
-        如果帐号创建成功，则为新帐号的唯一标识符（ID）。
+        如果账号创建成功，则为新账号的唯一标识符（ID）。
 
         :return: The account_id of this CreateAccountStatusDto.
         :rtype: str
@@ -92,7 +92,7 @@ class CreateAccountStatusDto:
     def account_id(self, account_id):
         """Sets the account_id of this CreateAccountStatusDto.
 
-        如果帐号创建成功，则为新帐号的唯一标识符（ID）。
+        如果账号创建成功，则为新账号的唯一标识符（ID）。
 
         :param account_id: The account_id of this CreateAccountStatusDto.
         :type account_id: str
@@ -103,7 +103,7 @@ class CreateAccountStatusDto:
     def account_name(self):
         """Gets the account_name of this CreateAccountStatusDto.
 
-        帐号名称。
+        账号名称
 
         :return: The account_name of this CreateAccountStatusDto.
         :rtype: str
@@ -114,7 +114,7 @@ class CreateAccountStatusDto:
     def account_name(self, account_name):
         """Sets the account_name of this CreateAccountStatusDto.
 
-        帐号名称。
+        账号名称
 
         :param account_name: The account_name of this CreateAccountStatusDto.
         :type account_name: str
@@ -125,7 +125,7 @@ class CreateAccountStatusDto:
     def completed_at(self):
         """Gets the completed_at of this CreateAccountStatusDto.
 
-        创建帐号和完成请求的日期和时间。
+        创建账号和完成请求的日期和时间。
 
         :return: The completed_at of this CreateAccountStatusDto.
         :rtype: datetime
@@ -136,7 +136,7 @@ class CreateAccountStatusDto:
     def completed_at(self, completed_at):
         """Sets the completed_at of this CreateAccountStatusDto.
 
-        创建帐号和完成请求的日期和时间。
+        创建账号和完成请求的日期和时间。
 
         :param completed_at: The completed_at of this CreateAccountStatusDto.
         :type completed_at: datetime
@@ -147,7 +147,7 @@ class CreateAccountStatusDto:
     def created_at(self):
         """Gets the created_at of this CreateAccountStatusDto.
 
-        请求创建帐号的日期和时间。
+        请求创建账号的日期和时间。
 
         :return: The created_at of this CreateAccountStatusDto.
         :rtype: datetime
@@ -158,7 +158,7 @@ class CreateAccountStatusDto:
     def created_at(self, created_at):
         """Sets the created_at of this CreateAccountStatusDto.
 
-        请求创建帐号的日期和时间。
+        请求创建账号的日期和时间。
 
         :param created_at: The created_at of this CreateAccountStatusDto.
         :type created_at: datetime
@@ -169,7 +169,7 @@ class CreateAccountStatusDto:
     def id(self):
         """Gets the id of this CreateAccountStatusDto.
 
-        请求的唯一标识符（ID）。您可以从创建帐号的初始CreateAccount请求的响应中获得此值。
+        请求的唯一标识符（ID）。您可以从创建账号的初始CreateAccount请求的响应中获得此值。
 
         :return: The id of this CreateAccountStatusDto.
         :rtype: str
@@ -180,7 +180,7 @@ class CreateAccountStatusDto:
     def id(self, id):
         """Sets the id of this CreateAccountStatusDto.
 
-        请求的唯一标识符（ID）。您可以从创建帐号的初始CreateAccount请求的响应中获得此值。
+        请求的唯一标识符（ID）。您可以从创建账号的初始CreateAccount请求的响应中获得此值。
 
         :param id: The id of this CreateAccountStatusDto.
         :type id: str
@@ -191,7 +191,7 @@ class CreateAccountStatusDto:
     def state(self):
         """Gets the state of this CreateAccountStatusDto.
 
-        创建帐号的异步请求的状态，in_progress：处理中，succeeded：成功，failed：失败。
+        创建账号的异步请求的状态，in_progress：处理中，succeeded：成功，failed：失败。
 
         :return: The state of this CreateAccountStatusDto.
         :rtype: str
@@ -202,7 +202,7 @@ class CreateAccountStatusDto:
     def state(self, state):
         """Sets the state of this CreateAccountStatusDto.
 
-        创建帐号的异步请求的状态，in_progress：处理中，succeeded：成功，failed：失败。
+        创建账号的异步请求的状态，in_progress：处理中，succeeded：成功，failed：失败。
 
         :param state: The state of this CreateAccountStatusDto.
         :type state: str

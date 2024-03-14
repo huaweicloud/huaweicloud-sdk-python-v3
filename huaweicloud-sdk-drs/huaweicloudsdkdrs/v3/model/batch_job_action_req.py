@@ -33,9 +33,9 @@ class BatchJobActionReq:
 
         The model defined in huaweicloud sdk
 
-        :param action: 执行操作
+        :param action: 需要执行的特定操作。
         :type action: str
-        :param job_id: 任务ID（集群模式 取父任务的任务id）
+        :param job_id: 任务ID（集群模式 取父任务的任务ID）。
         :type job_id: str
         :param _property: 操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/zh-cn_topic_0295171516.html)
         :type _property: str
@@ -56,7 +56,7 @@ class BatchJobActionReq:
     def action(self):
         """Gets the action of this BatchJobActionReq.
 
-        执行操作
+        需要执行的特定操作。
 
         :return: The action of this BatchJobActionReq.
         :rtype: str
@@ -67,7 +67,7 @@ class BatchJobActionReq:
     def action(self, action):
         """Sets the action of this BatchJobActionReq.
 
-        执行操作
+        需要执行的特定操作。
 
         :param action: The action of this BatchJobActionReq.
         :type action: str
@@ -78,7 +78,7 @@ class BatchJobActionReq:
     def job_id(self):
         """Gets the job_id of this BatchJobActionReq.
 
-        任务ID（集群模式 取父任务的任务id）
+        任务ID（集群模式 取父任务的任务ID）。
 
         :return: The job_id of this BatchJobActionReq.
         :rtype: str
@@ -89,7 +89,7 @@ class BatchJobActionReq:
     def job_id(self, job_id):
         """Sets the job_id of this BatchJobActionReq.
 
-        任务ID（集群模式 取父任务的任务id）
+        任务ID（集群模式 取父任务的任务ID）。
 
         :param job_id: The job_id of this BatchJobActionReq.
         :type job_id: str

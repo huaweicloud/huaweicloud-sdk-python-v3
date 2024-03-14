@@ -19,15 +19,17 @@ class CollectColumnsResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'job_id': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'status': 'status'
+        'status': 'status',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, id=None, status=None):
+    def __init__(self, id=None, status=None, job_id=None):
         """CollectColumnsResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class CollectColumnsResponse(SdkResponse):
         :type id: str
         :param status: 查询状态
         :type status: str
+        :param job_id: 任务ID
+        :type job_id: str
         """
         
         super(CollectColumnsResponse, self).__init__()
 
         self._id = None
         self._status = None
+        self._job_id = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if status is not None:
             self.status = status
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def id(self):
@@ -92,6 +99,28 @@ class CollectColumnsResponse(SdkResponse):
         :type status: str
         """
         self._status = status
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this CollectColumnsResponse.
+
+        任务ID
+
+        :return: The job_id of this CollectColumnsResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CollectColumnsResponse.
+
+        任务ID
+
+        :param job_id: The job_id of this CollectColumnsResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

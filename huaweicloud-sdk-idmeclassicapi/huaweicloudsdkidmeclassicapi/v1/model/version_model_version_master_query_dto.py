@@ -37,7 +37,7 @@ class VersionModelVersionMasterQueryDTO:
 
         :param decrypt: 是否加密。 - true：加密。 - false：不加密。
         :type decrypt: bool
-        :param iteration: 迭代版本。
+        :param iteration: 迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。
         :type iteration: int
         :param master_id: 主对象ID。
         :type master_id: str
@@ -57,10 +57,8 @@ class VersionModelVersionMasterQueryDTO:
             self.decrypt = decrypt
         if iteration is not None:
             self.iteration = iteration
-        if master_id is not None:
-            self.master_id = master_id
-        if version is not None:
-            self.version = version
+        self.master_id = master_id
+        self.version = version
 
     @property
     def decrypt(self):
@@ -88,7 +86,7 @@ class VersionModelVersionMasterQueryDTO:
     def iteration(self):
         """Gets the iteration of this VersionModelVersionMasterQueryDTO.
 
-        迭代版本。
+        迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。
 
         :return: The iteration of this VersionModelVersionMasterQueryDTO.
         :rtype: int
@@ -99,7 +97,7 @@ class VersionModelVersionMasterQueryDTO:
     def iteration(self, iteration):
         """Sets the iteration of this VersionModelVersionMasterQueryDTO.
 
-        迭代版本。
+        迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。
 
         :param iteration: The iteration of this VersionModelVersionMasterQueryDTO.
         :type iteration: int

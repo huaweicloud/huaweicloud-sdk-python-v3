@@ -240,7 +240,7 @@ class RamClient(Client):
     def list_quota(self, request):
         """查询资源共享的配额
 
-        查询当前帐号的资源共享配额信息。
+        查询当前账号的资源共享配额信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -556,6 +556,75 @@ class RamClient(Client):
 
         return http_info
 
+    def list_permission_versions(self, request):
+        """获取权限的所有版本
+
+        获取权限的所有版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPermissionVersions
+        :type request: :class:`huaweicloudsdkram.v1.ListPermissionVersionsRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.ListPermissionVersionsResponse`
+        """
+        http_info = self._list_permission_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_permission_versions_invoker(self, request):
+        http_info = self._list_permission_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_permission_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/permissions/{permission_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermissionVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'permission_id' in local_var_params:
+            path_params['permission_id'] = local_var_params['permission_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_permissions(self, request):
         """检索共享资源权限列表
 
@@ -598,6 +667,8 @@ class RamClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'resource_type' in local_var_params:
             query_params.append(('resource_type', local_var_params['resource_type']))
+        if 'permission_type' in local_var_params:
+            query_params.append(('permission_type', local_var_params['permission_type']))
 
         header_params = {}
 
@@ -628,7 +699,7 @@ class RamClient(Client):
     def show_permission(self, request):
         """检索资源共享权限内容
 
-        检索指定资源类型的共享资源权限内容。
+        检索指定资源类型的共享资源指定版本的权限内容，如果不指定权限版本，则返回默认版本的权限内容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -663,6 +734,8 @@ class RamClient(Client):
             path_params['permission_id'] = local_var_params['permission_id']
 
         query_params = []
+        if 'permission_version' in local_var_params:
+            query_params.append(('permission_version', local_var_params['permission_version']))
 
         header_params = {}
 
@@ -888,7 +961,7 @@ class RamClient(Client):
     def delete_resource_share(self, request):
         """删除资源共享实例
 
-        删除指定的资源共享实例。此操作不会删除实体资源，仅停止向其他帐号共享资源。
+        删除指定的资源共享实例。此操作不会删除实体资源，仅停止向其他账号共享资源。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1284,7 +1357,7 @@ class RamClient(Client):
     def accept_resource_share_invitation(self, request):
         """接受共享邀请
 
-        接受来自其他帐号的资源共享邀请。
+        接受来自其他账号的资源共享邀请。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1349,7 +1422,7 @@ class RamClient(Client):
     def reject_resource_share_invitation(self, request):
         """拒绝共享邀请
 
-        拒绝来自其他帐号的资源共享邀请。
+        拒绝来自其他账号的资源共享邀请。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

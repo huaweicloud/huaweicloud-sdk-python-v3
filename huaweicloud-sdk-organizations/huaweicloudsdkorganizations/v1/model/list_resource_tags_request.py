@@ -29,7 +29,7 @@ class ListResourceTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        :param resource_type: 资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
         :type resource_type: str
         """
         
@@ -44,7 +44,7 @@ class ListResourceTagsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListResourceTagsRequest.
 
-        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
 
         :return: The resource_type of this ListResourceTagsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListResourceTagsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListResourceTagsRequest.
 
-        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
 
         :param resource_type: The resource_type of this ListResourceTagsRequest.
         :type resource_type: str

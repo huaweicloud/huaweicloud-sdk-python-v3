@@ -18,7 +18,7 @@ class UpdateEndpointServiceNameRequest:
 
     openapi_types = {
         'vpc_endpoint_service_id': 'str',
-        'body': 'UpdateEndpointServiceNameMode'
+        'body': 'UpdateEndpointServiceNameRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateEndpointServiceNameRequest:
         :param vpc_endpoint_service_id: 终端节点服务ID
         :type vpc_endpoint_service_id: str
         :param body: Body of the UpdateEndpointServiceNameRequest
-        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameMode`
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdateEndpointServiceNameRequest:
         """Gets the body of this UpdateEndpointServiceNameRequest.
 
         :return: The body of this UpdateEndpointServiceNameRequest.
-        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameMode`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateEndpointServiceNameRequest:
         """Sets the body of this UpdateEndpointServiceNameRequest.
 
         :param body: The body of this UpdateEndpointServiceNameRequest.
-        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameMode`
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameRequestBody`
         """
         self._body = body
 

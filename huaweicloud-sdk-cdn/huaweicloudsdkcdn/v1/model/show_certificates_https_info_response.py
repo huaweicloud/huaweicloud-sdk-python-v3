@@ -19,15 +19,17 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'https': 'list[HttpsDetail]'
+        'https': 'list[HttpsDetail]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'total': 'total',
-        'https': 'https'
+        'https': 'https',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, total=None, https=None):
+    def __init__(self, total=None, https=None, x_request_id=None):
         """ShowCertificatesHttpsInfoResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
         :type total: int
         :param https: https配置。
         :type https: list[:class:`huaweicloudsdkcdn.v1.HttpsDetail`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowCertificatesHttpsInfoResponse, self).__init__()
 
         self._total = None
         self._https = None
+        self._x_request_id = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
         if https is not None:
             self.https = https
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def total(self):
@@ -92,6 +99,24 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
         :type https: list[:class:`huaweicloudsdkcdn.v1.HttpsDetail`]
         """
         self._https = https
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowCertificatesHttpsInfoResponse.
+
+        :return: The x_request_id of this ShowCertificatesHttpsInfoResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowCertificatesHttpsInfoResponse.
+
+        :param x_request_id: The x_request_id of this ShowCertificatesHttpsInfoResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

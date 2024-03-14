@@ -33,9 +33,9 @@ class OrganizationsAsyncClient(Client):
         return client_builder
 
     def invite_account_async(self, request):
-        """邀请帐号加入组织
+        """邀请账号加入组织
 
-        向另一个帐号发送邀请，受邀帐号将以成员帐号加入您的组织。此操作只能由组织的管理帐号调用。
+        向另一个账号发送邀请，受邀账号将以成员账号加入您的组织。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -98,9 +98,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def list_accounts_async(self, request):
-        """列出组织中的帐号
+        """列出组织中的账号
 
-        列出组织中的帐号。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。如果指定父级组织单元，则将获得作为父级直系子级的所有帐号的列表。
+        列出组织中的账号。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。如果指定父级组织单元，则将获得作为父级直系子级的所有账号的列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -166,10 +166,76 @@ class OrganizationsAsyncClient(Client):
 
         return http_info
 
-    def list_create_account_statuses_async(self, request):
-        """列出创建帐号的状态
+    def list_close_account_statuses_async(self, request):
+        """列出关闭账号的状态
 
-        列出组织中指定状态的帐号创建请求。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出组织中指定状态的账号关闭请求。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCloseAccountStatuses
+        :type request: :class:`huaweicloudsdkorganizations.v1.ListCloseAccountStatusesRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ListCloseAccountStatusesResponse`
+        """
+        http_info = self._list_close_account_statuses_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_close_account_statuses_async_invoker(self, request):
+        http_info = self._list_close_account_statuses_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_close_account_statuses_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/close-account-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloseAccountStatusesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'states' in local_var_params:
+            query_params.append(('states', local_var_params['states']))
+            collection_formats['states'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_create_account_statuses_async(self, request):
+        """列出创建账号的状态
+
+        列出组织中指定状态的账号创建请求。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -237,9 +303,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def move_account_async(self, request):
-        """移动帐号
+        """移动账号
 
-        将帐号从其当前源位置（根或组织单元）移动到指定的目标位置（根或组织单元）。
+        将账号从其当前源位置（根或组织单元）移动到指定的目标位置（根或组织单元）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -304,9 +370,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def remove_account_async(self, request):
-        """移除指定的帐号
+        """移除指定的账号
 
-        从组织中移除指定的帐号。移除的帐号将成为一个独立帐号，该帐号不是任何组织的成员。此操作只能由组织的管理帐号调用。只有当帐号配置了作为独立帐号运行所需的信息时，您才能从组织中移除帐号。注意，要移除的帐号不能是组织启用的任何服务的委托管理员帐号。
+        从组织中移除指定的账号。移除的账号将成为一个独立账号，该账号不是任何组织的成员。此操作只能由组织的管理账号调用。只有当账号配置了作为独立账号运行所需的信息时，您才能从组织中移除账号。注意，要移除的账号不能是组织启用的任何服务的委托管理员账号。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -369,9 +435,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def show_account_async(self, request):
-        """查询帐号信息
+        """查询账号信息
 
-        查询有关指定帐号的信息。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        查询有关指定账号的信息。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -434,9 +500,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def show_create_account_status_async(self, request):
-        """查询有关创建帐号状态的信息
+        """查询有关创建账号状态的信息
 
-        检索创建帐号的异步请求的当前状态。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        检索创建账号的异步请求的当前状态。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -501,7 +567,7 @@ class OrganizationsAsyncClient(Client):
     def deregister_delegated_administrator_async(self, request):
         """注销服务的委托管理员
 
-        删除指定成员帐号作为指定服务的委托管理员。此操作只能由组织的管理帐号调用。
+        删除指定成员账号作为指定服务的委托管理员。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -564,9 +630,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def list_delegated_administrators_async(self, request):
-        """列出此组织中指定为委托管理员的帐号
+        """列出此组织中指定为委托管理员的账号
 
-        列出在此组织中指定为委派管理员的帐号。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出在此组织中指定为委派管理员的账号。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -633,9 +699,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def list_delegated_services_async(self, request):
-        """列出指定帐号是其委托管理员的服务
+        """列出指定账号是其委托管理员的服务
 
-        列出指定帐号是其委托管理员的服务。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出指定账号是其委托管理员的服务。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -704,7 +770,7 @@ class OrganizationsAsyncClient(Client):
     def register_delegated_administrator_async(self, request):
         """注册作为服务委托管理员
 
-        指定成员帐号能够管理指定服务的组织功能。此接口授予委托管理员对组织服务数据的只读访问权限。委托管理员帐号中的IAM用户仍需要IAM权限才能访问和管理服务。此操作只能由组织的管理帐号调用。
+        指定成员账号能够管理指定服务的组织功能。此接口授予委托管理员对组织服务数据的只读访问权限。委托管理员账号中的IAM用户仍需要IAM权限才能访问和管理服务。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -834,7 +900,7 @@ class OrganizationsAsyncClient(Client):
     def cancel_handshake_async(self, request):
         """取消邀请
 
-        取消邀请，此时邀请状态将设置为已取消。此接口只能由发起邀请的帐号调用。取消邀请后，此邀请信息将继续保留并出现在相关API的返回结果中，保留期限为30天。
+        取消邀请，此时邀请状态将设置为已取消。此接口只能由发起邀请的账号调用。取消邀请后，此邀请信息将继续保留并出现在相关API的返回结果中，保留期限为30天。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -899,7 +965,7 @@ class OrganizationsAsyncClient(Client):
     def decline_handshake_async(self, request):
         """拒绝邀请
 
-        拒绝邀请请求。受邀帐号拒绝邀请，此时当前邀请状态将设置为拒绝，邀请停止。此接口只能由受邀帐号调用。邀请发起者无法再次激活被拒绝的邀请，但可以重新发送新的邀请。
+        拒绝邀请请求。受邀账号拒绝邀请，此时当前邀请状态将设置为拒绝，邀请停止。此接口只能由受邀账号调用。邀请发起者无法再次激活被拒绝的邀请，但可以重新发送新的邀请。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -964,7 +1030,7 @@ class OrganizationsAsyncClient(Client):
     def list_handshakes_async(self, request):
         """列出发送的邀请
 
-        列出所属组织发送的邀请。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出所属组织发送的邀请。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1031,7 +1097,7 @@ class OrganizationsAsyncClient(Client):
     def list_received_handshakes_async(self, request):
         """列出收到的邀请
 
-        列出帐号收到的所有邀请。此操作可以由任何帐号调用。
+        列出账号收到的所有邀请。此操作可以由任何账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1098,7 +1164,7 @@ class OrganizationsAsyncClient(Client):
     def show_handshake_async(self, request):
         """查询邀请相关信息
 
-        查询组织中已有帐号邀请的相关信息。此接口可以由组织中的任何帐号调用。
+        查询组织中已有账号邀请的相关信息。此接口可以由组织中的任何账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1161,9 +1227,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def list_entities_async(self, request):
-        """列出组织中的根、组织单元和帐号
+        """列出组织中的根、组织单元和账号
 
-        列出组织中包含的所有根、组织单元和帐号。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。您可以通过指定父ID和子ID参数来过滤实体。
+        列出组织中包含的所有根、组织单元和账号。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。您可以通过指定父ID和子ID参数来过滤实体。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1234,7 +1300,7 @@ class OrganizationsAsyncClient(Client):
     def list_quotas_async(self, request):
         """列出租户的组织配额
 
-        列出租户的组织配额。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出租户的组织配额。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1423,7 +1489,7 @@ class OrganizationsAsyncClient(Client):
     def show_effective_policies_async(self, request):
         """查询有效的策略
 
-        查询指定策略类型和帐户的有效策略信息。当前此接口不支持查询服务控制策略（service_control_policy）。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        查询指定策略类型和账户的有效策略信息。当前此接口不支持查询服务控制策略（service_control_policy）。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1490,7 +1556,7 @@ class OrganizationsAsyncClient(Client):
     def create_organization_async(self, request):
         """创建组织
 
-        创建组织。调用此接口的帐号将自动成为新组织的管理帐号，调用此接口的帐号凭证必须是新组织管理帐号的帐号凭证。
+        创建组织。调用此接口的账号将自动成为新组织的管理账号，调用此接口的账号凭证必须是新组织管理账号的账号凭证。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1553,7 +1619,7 @@ class OrganizationsAsyncClient(Client):
     def delete_organization_async(self, request):
         """删除组织
 
-        删除组织。您必须使用管理帐号才能删除组织，并且先移除组织中的所有帐号、组织单元和策略。
+        删除组织。您必须使用管理账号才能删除组织，并且先移除组织中的所有账号、组织单元和策略。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1616,7 +1682,7 @@ class OrganizationsAsyncClient(Client):
     def leave_organization_async(self, request):
         """离开当前组织
 
-        此操作只能由组织的成员帐号调用。只有当组织帐号配置了作为独立帐号运行所需的信息时，您才能作为成员账户离开组织。要离开的帐号不能是组织启用的任何服务的委托管理员帐号。
+        此操作只能由组织的成员账号调用。只有当组织账号配置了作为独立账号运行所需的信息时，您才能作为成员账户离开组织。要离开的账号不能是组织启用的任何服务的委托管理员账号。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1679,7 +1745,7 @@ class OrganizationsAsyncClient(Client):
     def list_roots_async(self, request):
         """列出组织的根
 
-        列出当前组织的根。此接口只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出当前组织的根。此接口只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1746,7 +1812,7 @@ class OrganizationsAsyncClient(Client):
     def show_organization_async(self, request):
         """查询所属组织信息
 
-        查询帐号所属组织的信息。此操作可以由组织中的任何帐号调用。
+        查询账号所属组织的信息。此操作可以由组织中的任何账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1809,7 +1875,7 @@ class OrganizationsAsyncClient(Client):
     def create_organizational_unit_async(self, request):
         """创建组织单元
 
-        在根或父组织单元中创建组织单元。组织单元是帐号的容器，使您能够对帐号进行分组管理，并根据业务要求应用策略。此操作只能由组织的管理帐号调用。
+        在根或父组织单元中创建组织单元。组织单元是账号的容器，使您能够对账号进行分组管理，并根据业务要求应用策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1874,7 +1940,7 @@ class OrganizationsAsyncClient(Client):
     def delete_organizational_unit_async(self, request):
         """删除组织单元
 
-        从根或其他组织单元中删除组织单元。前提是您必须先移除该组织单元中的所有成员帐号或将成员帐号移动至其他组织单元，必须删除该组织单元中的所有子组织单元。此操作只能由组织的管理帐号调用。
+        从根或其他组织单元中删除组织单元。前提是您必须先移除该组织单元中的所有成员账号或将成员账号移动至其他组织单元，必须删除该组织单元中的所有子组织单元。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1939,7 +2005,7 @@ class OrganizationsAsyncClient(Client):
     def list_organizational_units_async(self, request):
         """列出组织单元
 
-        列出组织中的所有组织单元。如果指定父级组织单元，则将获得父级直系子级的组织单元列表。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出组织中的所有组织单元。如果指定父级组织单元，则将获得父级直系子级的组织单元列表。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2008,7 +2074,7 @@ class OrganizationsAsyncClient(Client):
     def show_organizational_unit_async(self, request):
         """查询有关组织单元的信息
 
-        查询有关组织单元的信息。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        查询有关组织单元的信息。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2073,7 +2139,7 @@ class OrganizationsAsyncClient(Client):
     def update_organizational_unit_async(self, request):
         """更改组织单元名称
 
-        重命名指定的组织单元。重命名后组织单元ID不变，下属子组织单元和下属帐号不变，组织单元绑定的策略不变。此操作只能由组织的管理帐号调用。
+        重命名指定的组织单元。重命名后组织单元ID不变，下属子组织单元和下属账号不变，组织单元绑定的策略不变。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2140,7 +2206,7 @@ class OrganizationsAsyncClient(Client):
     def attach_policy_async(self, request):
         """将策略跟实体绑定
 
-        绑定策略到根、组织单元或个人账户。此操作只能由组织的管理帐号调用。
+        绑定策略到根、组织单元或个人账户。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2207,7 +2273,7 @@ class OrganizationsAsyncClient(Client):
     def create_policy_async(self, request):
         """创建策略
 
-        创建指定类型的策略。此操作只能由组织的管理帐号调用。
+        创建指定类型的策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2274,7 +2340,7 @@ class OrganizationsAsyncClient(Client):
     def delete_policy_async(self, request):
         """删除策略
 
-        从组织中删除指定的策略。在执行此操作之前，必须首先将策略跟所有组织单元、根和帐号解绑。此操作只能由组织的管理帐号调用。
+        从组织中删除指定的策略。在执行此操作之前，必须首先将策略跟所有组织单元、根和账号解绑。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2339,7 +2405,7 @@ class OrganizationsAsyncClient(Client):
     def detach_policy_async(self, request):
         """将策略跟实体解绑
 
-        从根、组织单元或帐号解绑策略。此操作只能由组织的管理帐号调用。
+        从根、组织单元或账号解绑策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2406,7 +2472,7 @@ class OrganizationsAsyncClient(Client):
     def disable_policy_type_async(self, request):
         """禁用根中的策略类型
 
-        禁用根中的策略类型。只有在根中启用了特定类型的策略，才能将该类型的策略绑定到根中的实体。执行此操作后，您不能再将指定类型的策略绑定到该根或该根中的任何组织单元或帐号。这是在后台执行的异步请求。您可以使用ListRoots查看指定根的策略类型的状态。此操作只能由组织的管理帐号调用。
+        禁用根中的策略类型。只有在根中启用了特定类型的策略，才能将该类型的策略绑定到根中的实体。执行此操作后，您不能再将指定类型的策略绑定到该根或该根中的任何组织单元或账号。这是在后台执行的异步请求。您可以使用ListRoots查看指定根的策略类型的状态。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2471,7 +2537,7 @@ class OrganizationsAsyncClient(Client):
     def enable_policy_type_async(self, request):
         """在根中启用策略类型
 
-        在根中启用策略类型。在根中启用策略类型后，您可以将该类型的策略绑定到根、或该根中的任何组织单元和帐号。这是在后台执行的异步请求。您可以使用ListRoots查看指定根的策略类型的状态。此操作只能由组织的管理帐号调用。
+        在根中启用策略类型。在根中启用策略类型后，您可以将该类型的策略绑定到根、或该根中的任何组织单元和账号。这是在后台执行的异步请求。您可以使用ListRoots查看指定根的策略类型的状态。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2536,7 +2602,7 @@ class OrganizationsAsyncClient(Client):
     def list_entities_for_policy_async(self, request):
         """列出跟指定策略绑定的所有实体
 
-        列出跟指定策略绑定的所有根、组织单元和帐号。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出跟指定策略绑定的所有根、组织单元和账号。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2605,7 +2671,7 @@ class OrganizationsAsyncClient(Client):
     def list_policies_async(self, request):
         """列出策略
 
-        列出组织中的所有策略。如果指定了资源ID，例如组织单元ID或帐号ID，则将获得该资源已绑定的策略列表。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出组织中的所有策略。如果指定了资源ID，例如组织单元ID或账号ID，则将获得该资源已绑定的策略列表。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2676,7 +2742,7 @@ class OrganizationsAsyncClient(Client):
     def show_policy_async(self, request):
         """查询策略相关信息
 
-        检索策略的相关信息。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        检索策略的相关信息。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2743,7 +2809,7 @@ class OrganizationsAsyncClient(Client):
     def update_policy_async(self, request):
         """更新策略
 
-        更新策略，可以更新策略的名称、描述或内容。如果不提供任何参数，则策略将保持不变。您不能更改策略的类型。此操作只能由组织的管理帐号调用。
+        更新策略，可以更新策略的名称、描述或内容。如果不提供任何参数，则策略将保持不变。您不能更改策略的类型。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2812,7 +2878,7 @@ class OrganizationsAsyncClient(Client):
     def create_tag_resource_async(self, request):
         """为指定资源添加标签
 
-        向指定的资源添加一个或多个标签。目前，您可以将标签附加到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号调用
+        向指定的资源添加一个或多个标签。目前，您可以将标签附加到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2881,7 +2947,7 @@ class OrganizationsAsyncClient(Client):
     def delete_tag_resource_async(self, request):
         """从指定资源中删除指定主键标签
 
-        从指定资源中删除具有指定主键的任何标签。您可以将标签绑定到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号调用
+        从指定资源中删除具有指定主键的任何标签。您可以将标签绑定到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2950,7 +3016,7 @@ class OrganizationsAsyncClient(Client):
     def list_resource_instances_async(self, request):
         """根据资源类型及标签信息查询实例列表
 
-        根据资源类型及标签信息查询实例列表
+        根据资源类型及标签信息查询实例列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3019,9 +3085,9 @@ class OrganizationsAsyncClient(Client):
         return http_info
 
     def list_resource_tags_async(self, request):
-        """查询项目标签
+        """查询资源标签
 
-        查询项目标签
+        查询资源标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3086,7 +3152,7 @@ class OrganizationsAsyncClient(Client):
     def list_tag_resources_async(self, request):
         """列出绑定到指定资源的标签
 
-        列出绑定到指定资源的标签。您可以将标签附加到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用
+        列出绑定到指定资源的标签。您可以将标签附加到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3157,7 +3223,7 @@ class OrganizationsAsyncClient(Client):
     def list_tags_for_resource_async(self, request):
         """列出绑定到指定资源的标签
 
-        列出绑定到指定资源的标签。您可以将标签附加到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        列出绑定到指定资源的标签。您可以将标签附加到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3226,7 +3292,7 @@ class OrganizationsAsyncClient(Client):
     def show_resource_instances_count_async(self, request):
         """根据资源类型及标签信息查询实例数量
 
-        根据资源类型及标签信息查询实例数量
+        根据资源类型及标签信息查询实例数量。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3293,7 +3359,7 @@ class OrganizationsAsyncClient(Client):
     def tag_resource_async(self, request):
         """为指定资源添加标签
 
-        向指定的资源添加一个或多个标签。目前，您可以将标签附加到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号调用。
+        向指定的资源添加一个或多个标签。目前，您可以将标签附加到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3360,7 +3426,7 @@ class OrganizationsAsyncClient(Client):
     def untag_resource_async(self, request):
         """从指定资源中删除指定主键标签
 
-        从指定资源中删除具有指定主键的任何标签。您可以将标签绑定到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号调用。
+        从指定资源中删除具有指定主键的任何标签。您可以将标签绑定到组织中的账号、组织单元、根和策略。此操作只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3427,7 +3493,7 @@ class OrganizationsAsyncClient(Client):
     def disable_trusted_service_async(self, request):
         """禁用受信任服务
 
-        禁用服务（由service_principal指定的服务）与组织的集成。禁用可信服务后，指定服务将不可以在组织中的新帐号中创建服务关联委托。这意味着该服务无法代表您对组织中的任何新帐号执行操作。在服务完成从组织中的清理之前，服务仍可以在旧帐号中执行操作。此接口只能由组织的管理帐号调用。
+        禁用服务（由service_principal指定的服务）与组织的集成。禁用可信服务后，指定服务将不可以在组织中的新账号中创建服务关联委托。这意味着该服务无法代表您对组织中的任何新账号执行操作。在服务完成从组织中的清理之前，服务仍可以在旧账号中执行操作。此接口只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3492,7 +3558,7 @@ class OrganizationsAsyncClient(Client):
     def enable_trusted_service_async(self, request):
         """启用可信服务
 
-        启用服务（由service_principal指定的服务）与组织的集成。启用可信服务后，允许指定的可信服务对组织中的所有帐号创建服务关联委托。这允许可信服务代表您在组织及其帐号中执行操作。此接口只能由组织的管理帐号调用。
+        启用服务（由service_principal指定的服务）与组织的集成。启用可信服务后，允许指定的可信服务对组织中的所有账号创建服务关联委托。这允许可信服务代表您在组织及其账号中执行操作。此接口只能由组织的管理账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3557,7 +3623,7 @@ class OrganizationsAsyncClient(Client):
     def list_trusted_services_async(self, request):
         """列出组织的可信服务列表
 
-        返回启用与组织集成的可信服务列表。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        返回启用与组织集成的可信服务列表。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

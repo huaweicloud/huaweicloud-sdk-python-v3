@@ -31,7 +31,7 @@ class PageInfoDto:
 
         The model defined in huaweicloud sdk
 
-        :param next_marker: 下一部分。您应该重复此操作，直到next_marker响应元素返回为null。 如果存在，则表示可用的输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
+        :param next_marker: 如果存在，则表示可用的输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null
         :type next_marker: str
         :param current_count: 本页返回条目数量
         :type current_count: int
@@ -51,7 +51,7 @@ class PageInfoDto:
     def next_marker(self):
         """Gets the next_marker of this PageInfoDto.
 
-        下一部分。您应该重复此操作，直到next_marker响应元素返回为null。 如果存在，则表示可用的输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
+        如果存在，则表示可用的输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null
 
         :return: The next_marker of this PageInfoDto.
         :rtype: str
@@ -62,7 +62,7 @@ class PageInfoDto:
     def next_marker(self, next_marker):
         """Sets the next_marker of this PageInfoDto.
 
-        下一部分。您应该重复此操作，直到next_marker响应元素返回为null。 如果存在，则表示可用的输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
+        如果存在，则表示可用的输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null
 
         :param next_marker: The next_marker of this PageInfoDto.
         :type next_marker: str

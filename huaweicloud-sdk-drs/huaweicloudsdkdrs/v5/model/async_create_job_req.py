@@ -28,7 +28,8 @@ class AsyncCreateJobReq:
         'db_param': 'DbParamInfo',
         'tuning_params': 'TuningParamInfo',
         'period_order': 'PeriodOrderInfo',
-        'node_info': 'JobNodeInfo'
+        'node_info': 'JobNodeInfo',
+        'public_ip_list': 'list[PublicIpConfig]'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class AsyncCreateJobReq:
         'db_param': 'db_param',
         'tuning_params': 'tuning_params',
         'period_order': 'period_order',
-        'node_info': 'node_info'
+        'node_info': 'node_info',
+        'public_ip_list': 'public_ip_list'
     }
 
-    def __init__(self, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_object=None, db_param=None, tuning_params=None, period_order=None, node_info=None):
+    def __init__(self, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_object=None, db_param=None, tuning_params=None, period_order=None, node_info=None, public_ip_list=None):
         """AsyncCreateJobReq
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class AsyncCreateJobReq:
         :type period_order: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
         :param node_info: 
         :type node_info: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
+        :param public_ip_list: 指定公网IP的信息
+        :type public_ip_list: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
         """
         
         
@@ -91,6 +95,7 @@ class AsyncCreateJobReq:
         self._tuning_params = None
         self._period_order = None
         self._node_info = None
+        self._public_ip_list = None
         self.discriminator = None
 
         self.base_info = base_info
@@ -111,6 +116,8 @@ class AsyncCreateJobReq:
         if period_order is not None:
             self.period_order = period_order
         self.node_info = node_info
+        if public_ip_list is not None:
+            self.public_ip_list = public_ip_list
 
     @property
     def base_info(self):
@@ -339,6 +346,28 @@ class AsyncCreateJobReq:
         :type node_info: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
         """
         self._node_info = node_info
+
+    @property
+    def public_ip_list(self):
+        """Gets the public_ip_list of this AsyncCreateJobReq.
+
+        指定公网IP的信息
+
+        :return: The public_ip_list of this AsyncCreateJobReq.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
+        """
+        return self._public_ip_list
+
+    @public_ip_list.setter
+    def public_ip_list(self, public_ip_list):
+        """Sets the public_ip_list of this AsyncCreateJobReq.
+
+        指定公网IP的信息
+
+        :param public_ip_list: The public_ip_list of this AsyncCreateJobReq.
+        :type public_ip_list: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
+        """
+        self._public_ip_list = public_ip_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

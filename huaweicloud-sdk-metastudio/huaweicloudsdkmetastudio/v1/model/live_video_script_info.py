@@ -17,6 +17,7 @@ class LiveVideoScriptInfo:
     sensitive_list = []
 
     openapi_types = {
+        'script_id': 'str',
         'script_name': 'str',
         'script_description': 'str',
         'dh_id': 'str',
@@ -28,6 +29,7 @@ class LiveVideoScriptInfo:
     }
 
     attribute_map = {
+        'script_id': 'script_id',
         'script_name': 'script_name',
         'script_description': 'script_description',
         'dh_id': 'dh_id',
@@ -38,11 +40,13 @@ class LiveVideoScriptInfo:
         'shoot_scripts': 'shoot_scripts'
     }
 
-    def __init__(self, script_name=None, script_description=None, dh_id=None, model_asset_id=None, voice_config=None, background_config=None, layer_config=None, shoot_scripts=None):
+    def __init__(self, script_id=None, script_name=None, script_description=None, dh_id=None, model_asset_id=None, voice_config=None, background_config=None, layer_config=None, shoot_scripts=None):
         """LiveVideoScriptInfo
 
         The model defined in huaweicloud sdk
 
+        :param script_id: 剧本ID。
+        :type script_id: str
         :param script_name: 剧本名称
         :type script_name: str
         :param script_description: 剧本描述。
@@ -63,6 +67,7 @@ class LiveVideoScriptInfo:
         
         
 
+        self._script_id = None
         self._script_name = None
         self._script_description = None
         self._dh_id = None
@@ -73,6 +78,8 @@ class LiveVideoScriptInfo:
         self._shoot_scripts = None
         self.discriminator = None
 
+        if script_id is not None:
+            self.script_id = script_id
         self.script_name = script_name
         if script_description is not None:
             self.script_description = script_description
@@ -87,6 +94,28 @@ class LiveVideoScriptInfo:
         if layer_config is not None:
             self.layer_config = layer_config
         self.shoot_scripts = shoot_scripts
+
+    @property
+    def script_id(self):
+        """Gets the script_id of this LiveVideoScriptInfo.
+
+        剧本ID。
+
+        :return: The script_id of this LiveVideoScriptInfo.
+        :rtype: str
+        """
+        return self._script_id
+
+    @script_id.setter
+    def script_id(self, script_id):
+        """Sets the script_id of this LiveVideoScriptInfo.
+
+        剧本ID。
+
+        :param script_id: The script_id of this LiveVideoScriptInfo.
+        :type script_id: str
+        """
+        self._script_id = script_id
 
     @property
     def script_name(self):

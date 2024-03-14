@@ -18,29 +18,36 @@ class UpdateRangeSwitchResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'origin_range': 'OriginRangeBody'
+        'origin_range': 'OriginRangeBody',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'origin_range': 'origin_range'
+        'origin_range': 'origin_range',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, origin_range=None):
+    def __init__(self, origin_range=None, x_request_id=None):
         """UpdateRangeSwitchResponse
 
         The model defined in huaweicloud sdk
 
         :param origin_range: 
         :type origin_range: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(UpdateRangeSwitchResponse, self).__init__()
 
         self._origin_range = None
+        self._x_request_id = None
         self.discriminator = None
 
         if origin_range is not None:
             self.origin_range = origin_range
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def origin_range(self):
@@ -59,6 +66,24 @@ class UpdateRangeSwitchResponse(SdkResponse):
         :type origin_range: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`
         """
         self._origin_range = origin_range
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateRangeSwitchResponse.
+
+        :return: The x_request_id of this UpdateRangeSwitchResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateRangeSwitchResponse.
+
+        :param x_request_id: The x_request_id of this UpdateRangeSwitchResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

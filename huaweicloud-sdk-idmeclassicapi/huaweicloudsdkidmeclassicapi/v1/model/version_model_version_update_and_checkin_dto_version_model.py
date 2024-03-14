@@ -48,8 +48,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
         self._modifier = None
         self.discriminator = None
 
-        if data is not None:
-            self.data = data
+        self.data = data
         self.master_id = master_id
         if modifier is not None:
             self.modifier = modifier

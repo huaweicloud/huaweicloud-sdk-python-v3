@@ -33,9 +33,9 @@ class DeleteTagResourceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        :param resource_type: 资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
         :type resource_type: str
-        :param resource_id: 根、组织单元、帐号或策略的唯一标识符（ID）。
+        :param resource_id: 根、组织单元、账号或策略的唯一标识符（ID）。
         :type resource_id: str
         :param body: Body of the DeleteTagResourceRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.TagResourceReqBody`
@@ -57,7 +57,7 @@ class DeleteTagResourceRequest:
     def resource_type(self):
         """Gets the resource_type of this DeleteTagResourceRequest.
 
-        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
 
         :return: The resource_type of this DeleteTagResourceRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteTagResourceRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this DeleteTagResourceRequest.
 
-        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts 帐号信息 organizations:roots根
+        资源类型 organizations:policies服务策略 organizations:ous组织OU organizations:accounts账号信息 organizations:roots根
 
         :param resource_type: The resource_type of this DeleteTagResourceRequest.
         :type resource_type: str
@@ -79,7 +79,7 @@ class DeleteTagResourceRequest:
     def resource_id(self):
         """Gets the resource_id of this DeleteTagResourceRequest.
 
-        根、组织单元、帐号或策略的唯一标识符（ID）。
+        根、组织单元、账号或策略的唯一标识符（ID）。
 
         :return: The resource_id of this DeleteTagResourceRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteTagResourceRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this DeleteTagResourceRequest.
 
-        根、组织单元、帐号或策略的唯一标识符（ID）。
+        根、组织单元、账号或策略的唯一标识符（ID）。
 
         :param resource_id: The resource_id of this DeleteTagResourceRequest.
         :type resource_id: str

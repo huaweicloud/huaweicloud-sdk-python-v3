@@ -24,7 +24,8 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
         'domain_name': 'str',
         'verify_domain_name': 'str',
         'file_verify_filename': 'str',
-        'verify_content': 'str'
+        'verify_content': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
         'domain_name': 'domain_name',
         'verify_domain_name': 'verify_domain_name',
         'file_verify_filename': 'file_verify_filename',
-        'verify_content': 'verify_content'
+        'verify_content': 'verify_content',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, dns_verify_type=None, dns_verify_name=None, file_verify_url=None, domain_name=None, verify_domain_name=None, file_verify_filename=None, verify_content=None):
+    def __init__(self, dns_verify_type=None, dns_verify_name=None, file_verify_url=None, domain_name=None, verify_domain_name=None, file_verify_filename=None, verify_content=None, x_request_id=None):
         """ShowVerifyDomainOwnerInfoResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
         :type file_verify_filename: str
         :param verify_content: 探测内容，DNS值或者文件内容，时间加uuid
         :type verify_content: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowVerifyDomainOwnerInfoResponse, self).__init__()
@@ -67,6 +71,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
         self._verify_domain_name = None
         self._file_verify_filename = None
         self._verify_content = None
+        self._x_request_id = None
         self.discriminator = None
 
         if dns_verify_type is not None:
@@ -83,6 +88,8 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
             self.file_verify_filename = file_verify_filename
         if verify_content is not None:
             self.verify_content = verify_content
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def dns_verify_type(self):
@@ -237,6 +244,24 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
         :type verify_content: str
         """
         self._verify_content = verify_content
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowVerifyDomainOwnerInfoResponse.
+
+        :return: The x_request_id of this ShowVerifyDomainOwnerInfoResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowVerifyDomainOwnerInfoResponse.
+
+        :param x_request_id: The x_request_id of this ShowVerifyDomainOwnerInfoResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

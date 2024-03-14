@@ -19,16 +19,18 @@ class ListPermissionsRequest:
     openapi_types = {
         'limit': 'int',
         'marker': 'str',
-        'resource_type': 'str'
+        'resource_type': 'str',
+        'permission_type': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
         'marker': 'marker',
-        'resource_type': 'resource_type'
+        'resource_type': 'resource_type',
+        'permission_type': 'permission_type'
     }
 
-    def __init__(self, limit=None, marker=None, resource_type=None):
+    def __init__(self, limit=None, marker=None, resource_type=None, permission_type=None):
         """ListPermissionsRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ListPermissionsRequest:
         :type marker: str
         :param resource_type: 资源类型的名称。
         :type resource_type: str
+        :param permission_type: 权限类型。RAM_MANAGED表示RAM托管的权限，CUSTOMER_MANAGED表示租户创建的自定义的权限，ALL表示所有的权限。
+        :type permission_type: str
         """
         
         
@@ -46,6 +50,7 @@ class ListPermissionsRequest:
         self._limit = None
         self._marker = None
         self._resource_type = None
+        self._permission_type = None
         self.discriminator = None
 
         if limit is not None:
@@ -54,6 +59,8 @@ class ListPermissionsRequest:
             self.marker = marker
         if resource_type is not None:
             self.resource_type = resource_type
+        if permission_type is not None:
+            self.permission_type = permission_type
 
     @property
     def limit(self):
@@ -120,6 +127,28 @@ class ListPermissionsRequest:
         :type resource_type: str
         """
         self._resource_type = resource_type
+
+    @property
+    def permission_type(self):
+        """Gets the permission_type of this ListPermissionsRequest.
+
+        权限类型。RAM_MANAGED表示RAM托管的权限，CUSTOMER_MANAGED表示租户创建的自定义的权限，ALL表示所有的权限。
+
+        :return: The permission_type of this ListPermissionsRequest.
+        :rtype: str
+        """
+        return self._permission_type
+
+    @permission_type.setter
+    def permission_type(self, permission_type):
+        """Sets the permission_type of this ListPermissionsRequest.
+
+        权限类型。RAM_MANAGED表示RAM托管的权限，CUSTOMER_MANAGED表示租户创建的自定义的权限，ALL表示所有的权限。
+
+        :param permission_type: The permission_type of this ListPermissionsRequest.
+        :type permission_type: str
+        """
+        self._permission_type = permission_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

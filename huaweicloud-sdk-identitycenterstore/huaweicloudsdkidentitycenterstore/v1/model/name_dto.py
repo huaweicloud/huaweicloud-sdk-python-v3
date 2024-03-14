@@ -47,7 +47,7 @@ class NameDto:
 
         :param family_name: 用户的姓氏
         :type family_name: str
-        :param formatted: 包含要显示的名称的格式化版本的字符串display.
+        :param formatted: 包含要显示的名称的格式化版本的字符串
         :type formatted: str
         :param given_name: 用户的名字
         :type given_name: str
@@ -106,7 +106,7 @@ class NameDto:
     def formatted(self):
         """Gets the formatted of this NameDto.
 
-        包含要显示的名称的格式化版本的字符串display.
+        包含要显示的名称的格式化版本的字符串
 
         :return: The formatted of this NameDto.
         :rtype: str
@@ -117,7 +117,7 @@ class NameDto:
     def formatted(self, formatted):
         """Sets the formatted of this NameDto.
 
-        包含要显示的名称的格式化版本的字符串display.
+        包含要显示的名称的格式化版本的字符串
 
         :param formatted: The formatted of this NameDto.
         :type formatted: str

@@ -31,7 +31,7 @@ class MoveAccountRequest:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 帐号的唯一标识符（ID）。
+        :param account_id: 账号的唯一标识符（ID）。
         :type account_id: str
         :param body: Body of the MoveAccountRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.MoveAccountReqBody`
@@ -51,7 +51,7 @@ class MoveAccountRequest:
     def account_id(self):
         """Gets the account_id of this MoveAccountRequest.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :return: The account_id of this MoveAccountRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class MoveAccountRequest:
     def account_id(self, account_id):
         """Sets the account_id of this MoveAccountRequest.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :param account_id: The account_id of this MoveAccountRequest.
         :type account_id: str

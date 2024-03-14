@@ -47,13 +47,13 @@ class CreateEndpointRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param subnet_id: 说明： 创建Interface类型Client必选。 需要指定vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。 详细内容请参考《虚拟私有云API参考》中的“查询子网”，详见响应消息中的“id”字段。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。 说明 ● VPC的子网网段不能与198.19.128.0/17重叠 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
+        :param subnet_id: 创建Interface类型Client必选。 需要指定vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。 详细内容请参考《虚拟私有云API参考》中的“查询子网”，详见响应消息中的“id”字段。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。 说明:  - VPC的子网网段不能与198.19.128.0/17重叠  - VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
         :type subnet_id: str
         :param endpoint_service_id: 终端节点服务的ID。 可以通过查询终端节点服务概 要获取要连接的终端节点服务 ID。
         :type endpoint_service_id: str
         :param vpc_id: 终端节点所在的VPC的ID。 详细内容请参考《虚拟私有云API参考》中的“查询VPC”， 详见响应消息中的“id”字段。
         :type vpc_id: str
-        :param enable_dns: 是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        :param enable_dns: 是否创建域名。  - true：创建域名  - false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
         :type enable_dns: bool
         :param tags: 标签列表，没有标签默认为空数组。
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
@@ -106,7 +106,7 @@ class CreateEndpointRequestBody:
     def subnet_id(self):
         """Gets the subnet_id of this CreateEndpointRequestBody.
 
-        说明： 创建Interface类型Client必选。 需要指定vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。 详细内容请参考《虚拟私有云API参考》中的“查询子网”，详见响应消息中的“id”字段。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。 说明 ● VPC的子网网段不能与198.19.128.0/17重叠 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
+        创建Interface类型Client必选。 需要指定vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。 详细内容请参考《虚拟私有云API参考》中的“查询子网”，详见响应消息中的“id”字段。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。 说明:  - VPC的子网网段不能与198.19.128.0/17重叠  - VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
 
         :return: The subnet_id of this CreateEndpointRequestBody.
         :rtype: str
@@ -117,7 +117,7 @@ class CreateEndpointRequestBody:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this CreateEndpointRequestBody.
 
-        说明： 创建Interface类型Client必选。 需要指定vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。 详细内容请参考《虚拟私有云API参考》中的“查询子网”，详见响应消息中的“id”字段。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。 说明 ● VPC的子网网段不能与198.19.128.0/17重叠 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
+        创建Interface类型Client必选。 需要指定vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。 详细内容请参考《虚拟私有云API参考》中的“查询子网”，详见响应消息中的“id”字段。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。 说明:  - VPC的子网网段不能与198.19.128.0/17重叠  - VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
 
         :param subnet_id: The subnet_id of this CreateEndpointRequestBody.
         :type subnet_id: str
@@ -172,7 +172,7 @@ class CreateEndpointRequestBody:
     def enable_dns(self):
         """Gets the enable_dns of this CreateEndpointRequestBody.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this CreateEndpointRequestBody.
         :rtype: bool
@@ -183,7 +183,7 @@ class CreateEndpointRequestBody:
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this CreateEndpointRequestBody.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
+        是否创建域名。  - true：创建域名  - false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this CreateEndpointRequestBody.
         :type enable_dns: bool

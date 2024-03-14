@@ -31,7 +31,7 @@ class ListResourceInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型，值为：endpoint_service或endpoint。
+        :param resource_type: 资源类型，值为：endpoint_service或endpoint。 - endpoint_service：云服务器，适用于作为服务器使用。 - endpoint：虚拟IP，适用于作为虚IP场景使用
         :type resource_type: str
         :param body: Body of the ListResourceInstancesRequest
         :type body: :class:`huaweicloudsdkvpcep.v1.QueryResourceInstanceTagsBody`
@@ -51,7 +51,7 @@ class ListResourceInstancesRequest:
     def resource_type(self):
         """Gets the resource_type of this ListResourceInstancesRequest.
 
-        资源类型，值为：endpoint_service或endpoint。
+        资源类型，值为：endpoint_service或endpoint。 - endpoint_service：云服务器，适用于作为服务器使用。 - endpoint：虚拟IP，适用于作为虚IP场景使用
 
         :return: The resource_type of this ListResourceInstancesRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ListResourceInstancesRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListResourceInstancesRequest.
 
-        资源类型，值为：endpoint_service或endpoint。
+        资源类型，值为：endpoint_service或endpoint。 - endpoint_service：云服务器，适用于作为服务器使用。 - endpoint：虚拟IP，适用于作为虚IP场景使用
 
         :param resource_type: The resource_type of this ListResourceInstancesRequest.
         :type resource_type: str

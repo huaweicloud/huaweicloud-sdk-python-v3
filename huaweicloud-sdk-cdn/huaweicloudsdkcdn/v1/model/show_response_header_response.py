@@ -18,29 +18,36 @@ class ShowResponseHeaderResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'headers': 'HeaderMap'
+        'headers': 'HeaderMap',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'headers': 'headers'
+        'headers': 'headers',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, headers=None):
+    def __init__(self, headers=None, x_request_id=None):
         """ShowResponseHeaderResponse
 
         The model defined in huaweicloud sdk
 
         :param headers: 
         :type headers: :class:`huaweicloudsdkcdn.v1.HeaderMap`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowResponseHeaderResponse, self).__init__()
 
         self._headers = None
+        self._x_request_id = None
         self.discriminator = None
 
         if headers is not None:
             self.headers = headers
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def headers(self):
@@ -59,6 +66,24 @@ class ShowResponseHeaderResponse(SdkResponse):
         :type headers: :class:`huaweicloudsdkcdn.v1.HeaderMap`
         """
         self._headers = headers
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowResponseHeaderResponse.
+
+        :return: The x_request_id of this ShowResponseHeaderResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowResponseHeaderResponse.
+
+        :param x_request_id: The x_request_id of this ShowResponseHeaderResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

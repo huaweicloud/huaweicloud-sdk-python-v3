@@ -32,7 +32,7 @@ class ListAccountsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param accounts: 组织中的帐号列表。
+        :param accounts: 组织中的账号列表。
         :type accounts: list[:class:`huaweicloudsdkorganizations.v1.AccountDto`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListAccountsResponse(SdkResponse):
     def accounts(self):
         """Gets the accounts of this ListAccountsResponse.
 
-        组织中的帐号列表。
+        组织中的账号列表。
 
         :return: The accounts of this ListAccountsResponse.
         :rtype: list[:class:`huaweicloudsdkorganizations.v1.AccountDto`]
@@ -64,7 +64,7 @@ class ListAccountsResponse(SdkResponse):
     def accounts(self, accounts):
         """Sets the accounts of this ListAccountsResponse.
 
-        组织中的帐号列表。
+        组织中的账号列表。
 
         :param accounts: The accounts of this ListAccountsResponse.
         :type accounts: list[:class:`huaweicloudsdkorganizations.v1.AccountDto`]

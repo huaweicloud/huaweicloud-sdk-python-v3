@@ -60,9 +60,9 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param room_name: 直播间名称
+        :param room_name: 对话名称
         :type room_name: str
-        :param room_description: 直播间描述。
+        :param room_description: 对话描述。
         :type room_description: str
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -70,7 +70,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type model_asset_id: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
-        :param robot_id: 机器人ID。
+        :param robot_id: 机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
         :type robot_id: str
         :param concurrency: 并发路数。
         :type concurrency: int
@@ -82,13 +82,13 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param chat_subtitle_config: 
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
-        :param room_id: 直播间ID
+        :param room_id: 对话ID。
         :type room_id: str
-        :param create_time: 智能交互对话直播间创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param create_time: 智能交互对话创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
-        :param update_time: 智能交互对话直播间更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :param update_time: 智能交互对话更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type update_time: str
-        :param cover_url: 直播间封面图URL
+        :param cover_url: 对话封面图URL
         :type cover_url: str
         :param x_request_id: 
         :type x_request_id: str
@@ -149,7 +149,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def room_name(self):
         """Gets the room_name of this UpdateSmartChatRoomResponse.
 
-        直播间名称
+        对话名称
 
         :return: The room_name of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -160,7 +160,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def room_name(self, room_name):
         """Sets the room_name of this UpdateSmartChatRoomResponse.
 
-        直播间名称
+        对话名称
 
         :param room_name: The room_name of this UpdateSmartChatRoomResponse.
         :type room_name: str
@@ -171,7 +171,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def room_description(self):
         """Gets the room_description of this UpdateSmartChatRoomResponse.
 
-        直播间描述。
+        对话描述。
 
         :return: The room_description of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -182,7 +182,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def room_description(self, room_description):
         """Sets the room_description of this UpdateSmartChatRoomResponse.
 
-        直播间描述。
+        对话描述。
 
         :param room_description: The room_description of this UpdateSmartChatRoomResponse.
         :type room_description: str
@@ -251,7 +251,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def robot_id(self):
         """Gets the robot_id of this UpdateSmartChatRoomResponse.
 
-        机器人ID。
+        机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
 
         :return: The robot_id of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -262,7 +262,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def robot_id(self, robot_id):
         """Sets the robot_id of this UpdateSmartChatRoomResponse.
 
-        机器人ID。
+        机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
 
         :param robot_id: The robot_id of this UpdateSmartChatRoomResponse.
         :type robot_id: str
@@ -371,7 +371,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def room_id(self):
         """Gets the room_id of this UpdateSmartChatRoomResponse.
 
-        直播间ID
+        对话ID。
 
         :return: The room_id of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -382,7 +382,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def room_id(self, room_id):
         """Sets the room_id of this UpdateSmartChatRoomResponse.
 
-        直播间ID
+        对话ID。
 
         :param room_id: The room_id of this UpdateSmartChatRoomResponse.
         :type room_id: str
@@ -393,7 +393,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this UpdateSmartChatRoomResponse.
 
-        智能交互对话直播间创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        智能交互对话创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
         :return: The create_time of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -404,7 +404,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this UpdateSmartChatRoomResponse.
 
-        智能交互对话直播间创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        智能交互对话创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
         :param create_time: The create_time of this UpdateSmartChatRoomResponse.
         :type create_time: str
@@ -415,7 +415,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this UpdateSmartChatRoomResponse.
 
-        智能交互对话直播间更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        智能交互对话更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
         :return: The update_time of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -426,7 +426,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this UpdateSmartChatRoomResponse.
 
-        智能交互对话直播间更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+        智能交互对话更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
         :param update_time: The update_time of this UpdateSmartChatRoomResponse.
         :type update_time: str
@@ -437,7 +437,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def cover_url(self):
         """Gets the cover_url of this UpdateSmartChatRoomResponse.
 
-        直播间封面图URL
+        对话封面图URL
 
         :return: The cover_url of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -448,7 +448,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def cover_url(self, cover_url):
         """Sets the cover_url of this UpdateSmartChatRoomResponse.
 
-        直播间封面图URL
+        对话封面图URL
 
         :param cover_url: The cover_url of this UpdateSmartChatRoomResponse.
         :type cover_url: str

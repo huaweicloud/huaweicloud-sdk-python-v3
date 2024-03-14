@@ -210,6 +210,7 @@ class Client(object):
     _APPLICATION_JSON = "application/json"
     _APPLICATION_XML = "application/xml"
     _APPLICATION_OCTET_STREAM = "application/octet-stream"
+    _APPLICATION_X_WWW_FORM_URLENCODED = "application/x-www-form-urlencoded"
     _MULTIPART_FORM_DATA = "multipart/form-data"
     _XML_NAME = "xml_name"
     _AUTHORIZATION = "Authorization"
@@ -378,7 +379,15 @@ class Client(object):
         return not isinstance(body, _BASE_ITER_TYPES)
 
     @classmethod
-    def _parse_formdata_body(cls, body):
+    def _parse_form_urlencoded_body(cls, body):
+        if not body:
+            body = {}
+        body = http_utils.sanitize_for_serialization(body)
+        # handle bool: True -> 'true'
+        return {k: str(v).lower() if isinstance(v, bool) else v for k, v in body.items()}
+
+    @classmethod
+    def _parse_form_data_body(cls, body):
         if not body:
             body = {}
         body = http_utils.sanitize_for_serialization(body)
@@ -389,12 +398,11 @@ class Client(object):
             if isinstance(value, FormFile):
                 files.append((key, value))
             else:
-                fields[key] = str(value)
+                fields[key] = str(value).lower() if isinstance(value, bool) else str(value)
         for file_tuple in files:
             fields[file_tuple[0]] = file_tuple[1].convert_to_file_tuple()
 
-        multipart = MultipartEncoder(fields=fields)
-        return multipart
+        return MultipartEncoder(fields=fields)
 
     @classmethod
     def _parse_stream_body(cls, body, callback, content_length):
@@ -487,8 +495,10 @@ class Client(object):
             content_type = header_params.setdefault(self._CONTENT_TYPE, self._APPLICATION_JSON)
 
         if content_type == self._MULTIPART_FORM_DATA:
-            body = self._parse_formdata_body(request_body)
+            body = self._parse_form_data_body(request_body)
             header_params[self._CONTENT_TYPE] = body.content_type
+        elif content_type == self._APPLICATION_X_WWW_FORM_URLENCODED:
+            body = self._parse_form_urlencoded_body(request_body)
         elif content_type == self._APPLICATION_XML:
             body = self._parse_xml_body(request_body)
         elif content_type == self._APPLICATION_OCTET_STREAM:

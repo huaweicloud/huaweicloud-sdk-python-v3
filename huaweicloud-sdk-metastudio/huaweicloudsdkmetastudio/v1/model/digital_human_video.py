@@ -49,7 +49,7 @@ class DigitalHumanVideo:
 
         :param job_id: 任务ID。
         :type job_id: str
-        :param state: 任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        :param state: 任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
         :type state: str
         :param job_type: 任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
         :type job_type: str
@@ -128,7 +128,7 @@ class DigitalHumanVideo:
     def state(self):
         """Gets the state of this DigitalHumanVideo.
 
-        任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
 
         :return: The state of this DigitalHumanVideo.
         :rtype: str
@@ -139,7 +139,7 @@ class DigitalHumanVideo:
     def state(self, state):
         """Sets the state of this DigitalHumanVideo.
 
-        任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
 
         :param state: The state of this DigitalHumanVideo.
         :type state: str

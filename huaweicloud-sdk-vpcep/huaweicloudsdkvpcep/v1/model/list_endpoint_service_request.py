@@ -47,11 +47,11 @@ class ListEndpointServiceRequest:
         :type endpoint_service_name: str
         :param id: 终端节点服务的ID，唯一标识。
         :type id: str
-        :param status: 终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败 ● deleting：删除中
+        :param status: 终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
         :type status: str
-        :param sort_key: 查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
+        :param sort_key: 查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
         :type sort_key: str
-        :param sort_dir: 查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :param sort_dir: 查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
         :type sort_dir: str
         :param limit: 查询返回的终端节点服务数量限制，即每页返回的终端节点服务的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
         :type limit: int
@@ -138,7 +138,7 @@ class ListEndpointServiceRequest:
     def status(self):
         """Gets the status of this ListEndpointServiceRequest.
 
-        终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败 ● deleting：删除中
+        终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
 
         :return: The status of this ListEndpointServiceRequest.
         :rtype: str
@@ -149,7 +149,7 @@ class ListEndpointServiceRequest:
     def status(self, status):
         """Sets the status of this ListEndpointServiceRequest.
 
-        终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败 ● deleting：删除中
+        终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
 
         :param status: The status of this ListEndpointServiceRequest.
         :type status: str
@@ -160,7 +160,7 @@ class ListEndpointServiceRequest:
     def sort_key(self):
         """Gets the sort_key of this ListEndpointServiceRequest.
 
-        查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
+        查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
         :return: The sort_key of this ListEndpointServiceRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class ListEndpointServiceRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListEndpointServiceRequest.
 
-        查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
+        查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListEndpointServiceRequest.
         :type sort_key: str
@@ -182,7 +182,7 @@ class ListEndpointServiceRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListEndpointServiceRequest.
 
-        查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
         :return: The sort_dir of this ListEndpointServiceRequest.
         :rtype: str
@@ -193,7 +193,7 @@ class ListEndpointServiceRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListEndpointServiceRequest.
 
-        查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListEndpointServiceRequest.
         :type sort_dir: str

@@ -33,7 +33,7 @@ class Quotas:
 
         The model defined in huaweicloud sdk
 
-        :param type: 资源类型。支持根据资源类型过滤查询指定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        :param type: 资源类型。支持根据资源类型过滤查询指定类型的配额。  - endpoint_service：终端节点服务  - endpoint：终端节点
         :type type: str
         :param used: 已创建的资源个数。 取值范围：0~quota数。
         :type used: int
@@ -59,7 +59,7 @@ class Quotas:
     def type(self):
         """Gets the type of this Quotas.
 
-        资源类型。支持根据资源类型过滤查询指定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        资源类型。支持根据资源类型过滤查询指定类型的配额。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
         :return: The type of this Quotas.
         :rtype: str
@@ -70,7 +70,7 @@ class Quotas:
     def type(self, type):
         """Sets the type of this Quotas.
 
-        资源类型。支持根据资源类型过滤查询指定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        资源类型。支持根据资源类型过滤查询指定类型的配额。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
         :param type: The type of this Quotas.
         :type type: str

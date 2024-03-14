@@ -18,29 +18,36 @@ class UpdateCacheRulesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cache_config': 'CacheConfig'
+        'cache_config': 'CacheConfig',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'cache_config': 'cache_config'
+        'cache_config': 'cache_config',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, cache_config=None):
+    def __init__(self, cache_config=None, x_request_id=None):
         """UpdateCacheRulesResponse
 
         The model defined in huaweicloud sdk
 
         :param cache_config: 
         :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfig`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(UpdateCacheRulesResponse, self).__init__()
 
         self._cache_config = None
+        self._x_request_id = None
         self.discriminator = None
 
         if cache_config is not None:
             self.cache_config = cache_config
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def cache_config(self):
@@ -59,6 +66,24 @@ class UpdateCacheRulesResponse(SdkResponse):
         :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfig`
         """
         self._cache_config = cache_config
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateCacheRulesResponse.
+
+        :return: The x_request_id of this UpdateCacheRulesResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateCacheRulesResponse.
+
+        :param x_request_id: The x_request_id of this UpdateCacheRulesResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

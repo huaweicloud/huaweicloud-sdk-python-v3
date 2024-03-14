@@ -23,7 +23,12 @@ class Permission:
         'content': 'str',
         'is_resource_type_default': 'bool',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'permission_urn': 'str',
+        'permission_type': 'str',
+        'default_version': 'bool',
+        'version': 'int',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -33,10 +38,15 @@ class Permission:
         'content': 'content',
         'is_resource_type_default': 'is_resource_type_default',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'permission_urn': 'permission_urn',
+        'permission_type': 'permission_type',
+        'default_version': 'default_version',
+        'version': 'version',
+        'status': 'status'
     }
 
-    def __init__(self, id=None, name=None, resource_type=None, content=None, is_resource_type_default=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, resource_type=None, content=None, is_resource_type_default=None, created_at=None, updated_at=None, permission_urn=None, permission_type=None, default_version=None, version=None, status=None):
         """Permission
 
         The model defined in huaweicloud sdk
@@ -55,6 +65,16 @@ class Permission:
         :type created_at: datetime
         :param updated_at: 最后一次更新权限的时间。
         :type updated_at: datetime
+        :param permission_urn: 权限URN。
+        :type permission_urn: str
+        :param permission_type: 权限类型。
+        :type permission_type: str
+        :param default_version: 此权限是否为默认版本。
+        :type default_version: bool
+        :param version: 权限版本。
+        :type version: int
+        :param status: 权限的状态
+        :type status: str
         """
         
         
@@ -66,6 +86,11 @@ class Permission:
         self._is_resource_type_default = None
         self._created_at = None
         self._updated_at = None
+        self._permission_urn = None
+        self._permission_type = None
+        self._default_version = None
+        self._version = None
+        self._status = None
         self.discriminator = None
 
         self.id = id
@@ -75,6 +100,16 @@ class Permission:
         self.is_resource_type_default = is_resource_type_default
         self.created_at = created_at
         self.updated_at = updated_at
+        if permission_urn is not None:
+            self.permission_urn = permission_urn
+        if permission_type is not None:
+            self.permission_type = permission_type
+        if default_version is not None:
+            self.default_version = default_version
+        if version is not None:
+            self.version = version
+        if status is not None:
+            self.status = status
 
     @property
     def id(self):
@@ -229,6 +264,116 @@ class Permission:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def permission_urn(self):
+        """Gets the permission_urn of this Permission.
+
+        权限URN。
+
+        :return: The permission_urn of this Permission.
+        :rtype: str
+        """
+        return self._permission_urn
+
+    @permission_urn.setter
+    def permission_urn(self, permission_urn):
+        """Sets the permission_urn of this Permission.
+
+        权限URN。
+
+        :param permission_urn: The permission_urn of this Permission.
+        :type permission_urn: str
+        """
+        self._permission_urn = permission_urn
+
+    @property
+    def permission_type(self):
+        """Gets the permission_type of this Permission.
+
+        权限类型。
+
+        :return: The permission_type of this Permission.
+        :rtype: str
+        """
+        return self._permission_type
+
+    @permission_type.setter
+    def permission_type(self, permission_type):
+        """Sets the permission_type of this Permission.
+
+        权限类型。
+
+        :param permission_type: The permission_type of this Permission.
+        :type permission_type: str
+        """
+        self._permission_type = permission_type
+
+    @property
+    def default_version(self):
+        """Gets the default_version of this Permission.
+
+        此权限是否为默认版本。
+
+        :return: The default_version of this Permission.
+        :rtype: bool
+        """
+        return self._default_version
+
+    @default_version.setter
+    def default_version(self, default_version):
+        """Sets the default_version of this Permission.
+
+        此权限是否为默认版本。
+
+        :param default_version: The default_version of this Permission.
+        :type default_version: bool
+        """
+        self._default_version = default_version
+
+    @property
+    def version(self):
+        """Gets the version of this Permission.
+
+        权限版本。
+
+        :return: The version of this Permission.
+        :rtype: int
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this Permission.
+
+        权限版本。
+
+        :param version: The version of this Permission.
+        :type version: int
+        """
+        self._version = version
+
+    @property
+    def status(self):
+        """Gets the status of this Permission.
+
+        权限的状态
+
+        :return: The status of this Permission.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this Permission.
+
+        权限的状态
+
+        :param status: The status of this Permission.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

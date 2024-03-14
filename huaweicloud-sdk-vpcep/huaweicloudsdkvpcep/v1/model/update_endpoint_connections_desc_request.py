@@ -18,7 +18,7 @@ class UpdateEndpointConnectionsDescRequest:
 
     openapi_types = {
         'vpc_endpoint_service_id': 'str',
-        'body': 'UpdateEpConnections'
+        'body': 'UpdateEndpointConnectionsDescRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateEndpointConnectionsDescRequest:
         :param vpc_endpoint_service_id: 终端节点服务ID
         :type vpc_endpoint_service_id: str
         :param body: Body of the UpdateEndpointConnectionsDescRequest
-        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEpConnections`
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdateEndpointConnectionsDescRequest:
         """Gets the body of this UpdateEndpointConnectionsDescRequest.
 
         :return: The body of this UpdateEndpointConnectionsDescRequest.
-        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEpConnections`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateEndpointConnectionsDescRequest:
         """Sets the body of this UpdateEndpointConnectionsDescRequest.
 
         :param body: The body of this UpdateEndpointConnectionsDescRequest.
-        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEpConnections`
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescRequestBody`
         """
         self._body = body
 

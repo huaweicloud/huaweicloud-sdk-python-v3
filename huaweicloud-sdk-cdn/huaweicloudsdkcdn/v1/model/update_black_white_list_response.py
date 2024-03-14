@@ -20,16 +20,18 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'result': 'str',
-        'data': 'object'
+        'data': 'object',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'code': 'code',
         'result': 'result',
-        'data': 'data'
+        'data': 'data',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, code=None, result=None, data=None):
+    def __init__(self, code=None, result=None, data=None, x_request_id=None):
         """UpdateBlackWhiteListResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class UpdateBlackWhiteListResponse(SdkResponse):
         :type result: str
         :param data: 响应体返回内容。
         :type data: object
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(UpdateBlackWhiteListResponse, self).__init__()
@@ -47,6 +51,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
         self._code = None
         self._result = None
         self._data = None
+        self._x_request_id = None
         self.discriminator = None
 
         if code is not None:
@@ -55,6 +60,8 @@ class UpdateBlackWhiteListResponse(SdkResponse):
             self.result = result
         if data is not None:
             self.data = data
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def code(self):
@@ -121,6 +128,24 @@ class UpdateBlackWhiteListResponse(SdkResponse):
         :type data: object
         """
         self._data = data
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateBlackWhiteListResponse.
+
+        :return: The x_request_id of this UpdateBlackWhiteListResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateBlackWhiteListResponse.
+
+        :param x_request_id: The x_request_id of this UpdateBlackWhiteListResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

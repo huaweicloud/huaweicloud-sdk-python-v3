@@ -31,9 +31,9 @@ class UpdateEndpointWhiteRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param whitelist: 更新或删除用于控制访问终端节点的白名单。此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
+        :param whitelist: 更新或删除用于控制访问终端节点的白名单。此参数可以添加IPv4或CIDR：  - 当取值不为空时，表示将白名单更新为取值所示内容。  - 当取值为空时，表示删除所有白名单。 默认为空列表。
         :type whitelist: list[str]
-        :param enable_whitelist: 是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 默认值为false。
+        :param enable_whitelist: 是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 默认值为false。
         :type enable_whitelist: bool
         """
         
@@ -52,7 +52,7 @@ class UpdateEndpointWhiteRequestBody:
     def whitelist(self):
         """Gets the whitelist of this UpdateEndpointWhiteRequestBody.
 
-        更新或删除用于控制访问终端节点的白名单。此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
+        更新或删除用于控制访问终端节点的白名单。此参数可以添加IPv4或CIDR：  - 当取值不为空时，表示将白名单更新为取值所示内容。  - 当取值为空时，表示删除所有白名单。 默认为空列表。
 
         :return: The whitelist of this UpdateEndpointWhiteRequestBody.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class UpdateEndpointWhiteRequestBody:
     def whitelist(self, whitelist):
         """Sets the whitelist of this UpdateEndpointWhiteRequestBody.
 
-        更新或删除用于控制访问终端节点的白名单。此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
+        更新或删除用于控制访问终端节点的白名单。此参数可以添加IPv4或CIDR：  - 当取值不为空时，表示将白名单更新为取值所示内容。  - 当取值为空时，表示删除所有白名单。 默认为空列表。
 
         :param whitelist: The whitelist of this UpdateEndpointWhiteRequestBody.
         :type whitelist: list[str]
@@ -74,7 +74,7 @@ class UpdateEndpointWhiteRequestBody:
     def enable_whitelist(self):
         """Gets the enable_whitelist of this UpdateEndpointWhiteRequestBody.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 默认值为false。
+        是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 默认值为false。
 
         :return: The enable_whitelist of this UpdateEndpointWhiteRequestBody.
         :rtype: bool
@@ -85,7 +85,7 @@ class UpdateEndpointWhiteRequestBody:
     def enable_whitelist(self, enable_whitelist):
         """Sets the enable_whitelist of this UpdateEndpointWhiteRequestBody.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 默认值为false。
+        是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 默认值为false。
 
         :param enable_whitelist: The enable_whitelist of this UpdateEndpointWhiteRequestBody.
         :type enable_whitelist: bool

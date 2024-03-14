@@ -1850,6 +1850,81 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def list_available_node_types_async(self, request):
+        """查询可用的Node规格
+
+        查询可用的Node规格
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAvailableNodeTypes
+        :type request: :class:`huaweicloudsdkdrs.v3.ListAvailableNodeTypesRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.ListAvailableNodeTypesResponse`
+        """
+        http_info = self._list_available_node_types_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_available_node_types_async_invoker(self, request):
+        http_info = self._list_available_node_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_node_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/node-type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableNodeTypesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine_type' in local_var_params:
+            query_params.append(('engine_type', local_var_params['engine_type']))
+        if 'db_use_type' in local_var_params:
+            query_params.append(('db_use_type', local_var_params['db_use_type']))
+        if 'job_direction' in local_var_params:
+            query_params.append(('job_direction', local_var_params['job_direction']))
+        if 'is_use_sellout_info' in local_var_params:
+            query_params.append(('is_use_sellout_info', local_var_params['is_use_sellout_info']))
+        if 'is_multi_write' in local_var_params:
+            query_params.append(('is_multi_write', local_var_params['is_multi_write']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_available_zone_async(self, request):
         """查询规格未售罄的可用区
 

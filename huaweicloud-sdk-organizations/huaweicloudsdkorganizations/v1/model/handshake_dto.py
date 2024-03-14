@@ -47,7 +47,7 @@ class HandshakeDto:
 
         The model defined in huaweicloud sdk
 
-        :param id: 邀请（握手）的唯一标识符（ID）。源帐号在发起邀请（握手）时创建ID。
+        :param id: 邀请（握手）的唯一标识符（ID）。源账号在发起邀请（握手）时创建ID。
         :type id: str
         :param urn: 邀请（握手）的统一资源名称。
         :type urn: str
@@ -55,13 +55,13 @@ class HandshakeDto:
         :type updated_at: datetime
         :param created_at: 提出邀请（握手）请求的日期和时间。
         :type created_at: datetime
-        :param management_account_id: 组织管理帐号的唯一标识符（ID）。
+        :param management_account_id: 组织管理账号的唯一标识符（ID）。
         :type management_account_id: str
-        :param management_account_name: 组织管理帐号的名称。
+        :param management_account_name: 组织管理账号的名称。
         :type management_account_name: str
         :param organization_id: 组织的唯一标识符（ID）。
         :type organization_id: str
-        :param notes: 给收件帐号所有者的邮件中的附加信息。
+        :param notes: 给收件账号所有者的邮件中的附加信息。
         :type notes: str
         :param target: 
         :type target: :class:`huaweicloudsdkorganizations.v1.TargetDto`
@@ -98,7 +98,7 @@ class HandshakeDto:
     def id(self):
         """Gets the id of this HandshakeDto.
 
-        邀请（握手）的唯一标识符（ID）。源帐号在发起邀请（握手）时创建ID。
+        邀请（握手）的唯一标识符（ID）。源账号在发起邀请（握手）时创建ID。
 
         :return: The id of this HandshakeDto.
         :rtype: str
@@ -109,7 +109,7 @@ class HandshakeDto:
     def id(self, id):
         """Sets the id of this HandshakeDto.
 
-        邀请（握手）的唯一标识符（ID）。源帐号在发起邀请（握手）时创建ID。
+        邀请（握手）的唯一标识符（ID）。源账号在发起邀请（握手）时创建ID。
 
         :param id: The id of this HandshakeDto.
         :type id: str
@@ -186,7 +186,7 @@ class HandshakeDto:
     def management_account_id(self):
         """Gets the management_account_id of this HandshakeDto.
 
-        组织管理帐号的唯一标识符（ID）。
+        组织管理账号的唯一标识符（ID）。
 
         :return: The management_account_id of this HandshakeDto.
         :rtype: str
@@ -197,7 +197,7 @@ class HandshakeDto:
     def management_account_id(self, management_account_id):
         """Sets the management_account_id of this HandshakeDto.
 
-        组织管理帐号的唯一标识符（ID）。
+        组织管理账号的唯一标识符（ID）。
 
         :param management_account_id: The management_account_id of this HandshakeDto.
         :type management_account_id: str
@@ -208,7 +208,7 @@ class HandshakeDto:
     def management_account_name(self):
         """Gets the management_account_name of this HandshakeDto.
 
-        组织管理帐号的名称。
+        组织管理账号的名称。
 
         :return: The management_account_name of this HandshakeDto.
         :rtype: str
@@ -219,7 +219,7 @@ class HandshakeDto:
     def management_account_name(self, management_account_name):
         """Sets the management_account_name of this HandshakeDto.
 
-        组织管理帐号的名称。
+        组织管理账号的名称。
 
         :param management_account_name: The management_account_name of this HandshakeDto.
         :type management_account_name: str
@@ -252,7 +252,7 @@ class HandshakeDto:
     def notes(self):
         """Gets the notes of this HandshakeDto.
 
-        给收件帐号所有者的邮件中的附加信息。
+        给收件账号所有者的邮件中的附加信息。
 
         :return: The notes of this HandshakeDto.
         :rtype: str
@@ -263,7 +263,7 @@ class HandshakeDto:
     def notes(self, notes):
         """Sets the notes of this HandshakeDto.
 
-        给收件帐号所有者的邮件中的附加信息。
+        给收件账号所有者的邮件中的附加信息。
 
         :param notes: The notes of this HandshakeDto.
         :type notes: str

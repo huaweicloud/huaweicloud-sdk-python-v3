@@ -19,7 +19,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     openapi_types = {
         'resource_type': 'str',
         'resource_id': 'str',
-        'body': 'BatchAddOrRemoveResourceInstanceBody'
+        'body': 'BatchAddOrRemoveResourceInstanceRequestBody'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型，值为：endpoint_service或endpoint。
+        :param resource_type: 资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
         :type resource_type: str
-        :param resource_id: 资源ID，Endpoint ServiceID或Endpoint ID。
+        :param resource_id: 资源ID，Endpoint Service ID或Endpoint ID。
         :type resource_id: str
         :param body: Body of the BatchAddOrRemoveResourceInstanceRequest
-        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceBody`
+        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceRequestBody`
         """
         
         
@@ -57,7 +57,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def resource_type(self):
         """Gets the resource_type of this BatchAddOrRemoveResourceInstanceRequest.
 
-        资源类型，值为：endpoint_service或endpoint。
+        资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
         :return: The resource_type of this BatchAddOrRemoveResourceInstanceRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this BatchAddOrRemoveResourceInstanceRequest.
 
-        资源类型，值为：endpoint_service或endpoint。
+        资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
         :param resource_type: The resource_type of this BatchAddOrRemoveResourceInstanceRequest.
         :type resource_type: str
@@ -79,7 +79,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def resource_id(self):
         """Gets the resource_id of this BatchAddOrRemoveResourceInstanceRequest.
 
-        资源ID，Endpoint ServiceID或Endpoint ID。
+        资源ID，Endpoint Service ID或Endpoint ID。
 
         :return: The resource_id of this BatchAddOrRemoveResourceInstanceRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this BatchAddOrRemoveResourceInstanceRequest.
 
-        资源ID，Endpoint ServiceID或Endpoint ID。
+        资源ID，Endpoint Service ID或Endpoint ID。
 
         :param resource_id: The resource_id of this BatchAddOrRemoveResourceInstanceRequest.
         :type resource_id: str
@@ -102,7 +102,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
         """Gets the body of this BatchAddOrRemoveResourceInstanceRequest.
 
         :return: The body of this BatchAddOrRemoveResourceInstanceRequest.
-        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceBody`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceRequestBody`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
         """Sets the body of this BatchAddOrRemoveResourceInstanceRequest.
 
         :param body: The body of this BatchAddOrRemoveResourceInstanceRequest.
-        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceBody`
+        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceRequestBody`
         """
         self._body = body
 

@@ -33,7 +33,7 @@ class ListTagsForResourceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 根、组织单元、帐号或策略的唯一标识符（ID）。
+        :param resource_id: 根、组织单元、账号或策略的唯一标识符（ID）。
         :type resource_id: str
         :param limit: 页面中最大结果数量。
         :type limit: int
@@ -58,7 +58,7 @@ class ListTagsForResourceRequest:
     def resource_id(self):
         """Gets the resource_id of this ListTagsForResourceRequest.
 
-        根、组织单元、帐号或策略的唯一标识符（ID）。
+        根、组织单元、账号或策略的唯一标识符（ID）。
 
         :return: The resource_id of this ListTagsForResourceRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListTagsForResourceRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListTagsForResourceRequest.
 
-        根、组织单元、帐号或策略的唯一标识符（ID）。
+        根、组织单元、账号或策略的唯一标识符（ID）。
 
         :param resource_id: The resource_id of this ListTagsForResourceRequest.
         :type resource_id: str

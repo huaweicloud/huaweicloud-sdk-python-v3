@@ -31,9 +31,9 @@ class MoveAccountReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param source_parent_id: 要移出帐号的根或组织单元的唯一标识符（ID）。
+        :param source_parent_id: 要移出账号的根或组织单元的唯一标识符（ID）。
         :type source_parent_id: str
-        :param destination_parent_id: 要移入帐号的根或组织单元的唯一标识符（ID）。
+        :param destination_parent_id: 要移入账号的根或组织单元的唯一标识符（ID）。
         :type destination_parent_id: str
         """
         
@@ -50,7 +50,7 @@ class MoveAccountReqBody:
     def source_parent_id(self):
         """Gets the source_parent_id of this MoveAccountReqBody.
 
-        要移出帐号的根或组织单元的唯一标识符（ID）。
+        要移出账号的根或组织单元的唯一标识符（ID）。
 
         :return: The source_parent_id of this MoveAccountReqBody.
         :rtype: str
@@ -61,7 +61,7 @@ class MoveAccountReqBody:
     def source_parent_id(self, source_parent_id):
         """Sets the source_parent_id of this MoveAccountReqBody.
 
-        要移出帐号的根或组织单元的唯一标识符（ID）。
+        要移出账号的根或组织单元的唯一标识符（ID）。
 
         :param source_parent_id: The source_parent_id of this MoveAccountReqBody.
         :type source_parent_id: str
@@ -72,7 +72,7 @@ class MoveAccountReqBody:
     def destination_parent_id(self):
         """Gets the destination_parent_id of this MoveAccountReqBody.
 
-        要移入帐号的根或组织单元的唯一标识符（ID）。
+        要移入账号的根或组织单元的唯一标识符（ID）。
 
         :return: The destination_parent_id of this MoveAccountReqBody.
         :rtype: str
@@ -83,7 +83,7 @@ class MoveAccountReqBody:
     def destination_parent_id(self, destination_parent_id):
         """Sets the destination_parent_id of this MoveAccountReqBody.
 
-        要移入帐号的根或组织单元的唯一标识符（ID）。
+        要移入账号的根或组织单元的唯一标识符（ID）。
 
         :param destination_parent_id: The destination_parent_id of this MoveAccountReqBody.
         :type destination_parent_id: str

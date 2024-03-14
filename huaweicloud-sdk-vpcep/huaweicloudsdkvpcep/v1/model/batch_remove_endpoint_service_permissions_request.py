@@ -18,7 +18,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
 
     openapi_types = {
         'vpc_endpoint_service_id': 'str',
-        'body': 'BatchRemovePermissionRequest'
+        'body': 'BatchRemoveEndpointServicePermissionsRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
         :param vpc_endpoint_service_id: 终端节点服务的ID。
         :type vpc_endpoint_service_id: str
         :param body: Body of the BatchRemoveEndpointServicePermissionsRequest
-        :type body: :class:`huaweicloudsdkvpcep.v1.BatchRemovePermissionRequest`
+        :type body: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
         """Gets the body of this BatchRemoveEndpointServicePermissionsRequest.
 
         :return: The body of this BatchRemoveEndpointServicePermissionsRequest.
-        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchRemovePermissionRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
         """Sets the body of this BatchRemoveEndpointServicePermissionsRequest.
 
         :param body: The body of this BatchRemoveEndpointServicePermissionsRequest.
-        :type body: :class:`huaweicloudsdkvpcep.v1.BatchRemovePermissionRequest`
+        :type body: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsRequestBody`
         """
         self._body = body
 

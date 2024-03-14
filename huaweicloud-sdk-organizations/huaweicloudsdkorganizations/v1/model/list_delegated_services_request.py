@@ -33,7 +33,7 @@ class ListDelegatedServicesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 帐号的唯一标识符（ID）。
+        :param account_id: 账号的唯一标识符（ID）。
         :type account_id: str
         :param limit: 页面中最大结果数量。
         :type limit: int
@@ -58,7 +58,7 @@ class ListDelegatedServicesRequest:
     def account_id(self):
         """Gets the account_id of this ListDelegatedServicesRequest.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :return: The account_id of this ListDelegatedServicesRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListDelegatedServicesRequest:
     def account_id(self, account_id):
         """Sets the account_id of this ListDelegatedServicesRequest.
 
-        帐号的唯一标识符（ID）。
+        账号的唯一标识符（ID）。
 
         :param account_id: The account_id of this ListDelegatedServicesRequest.
         :type account_id: str

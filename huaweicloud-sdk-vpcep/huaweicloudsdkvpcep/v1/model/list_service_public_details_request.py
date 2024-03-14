@@ -47,9 +47,9 @@ class ListServicePublicDetailsRequest:
         :type endpoint_service_name: str
         :param id: 公共终端节点服务的ID，唯一标识。
         :type id: str
-        :param sort_key: 查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
+        :param sort_key: 查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
         :type sort_key: str
-        :param sort_dir: 查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :param sort_dir: 查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
         :type sort_dir: str
         """
         
@@ -168,7 +168,7 @@ class ListServicePublicDetailsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListServicePublicDetailsRequest.
 
-        查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
+        查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
         :return: The sort_key of this ListServicePublicDetailsRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class ListServicePublicDetailsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListServicePublicDetailsRequest.
 
-        查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
+        查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListServicePublicDetailsRequest.
         :type sort_key: str
@@ -190,7 +190,7 @@ class ListServicePublicDetailsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListServicePublicDetailsRequest.
 
-        查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
         :return: The sort_dir of this ListServicePublicDetailsRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class ListServicePublicDetailsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListServicePublicDetailsRequest.
 
-        查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListServicePublicDetailsRequest.
         :type sort_dir: str

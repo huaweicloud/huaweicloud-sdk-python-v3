@@ -32,7 +32,7 @@ class ListDelegatedServicesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param delegated_services: 帐号是其委托管理员的服务。
+        :param delegated_services: 账号是其委托管理员的服务。
         :type delegated_services: list[:class:`huaweicloudsdkorganizations.v1.DelegatedServiceDto`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListDelegatedServicesResponse(SdkResponse):
     def delegated_services(self):
         """Gets the delegated_services of this ListDelegatedServicesResponse.
 
-        帐号是其委托管理员的服务。
+        账号是其委托管理员的服务。
 
         :return: The delegated_services of this ListDelegatedServicesResponse.
         :rtype: list[:class:`huaweicloudsdkorganizations.v1.DelegatedServiceDto`]
@@ -64,7 +64,7 @@ class ListDelegatedServicesResponse(SdkResponse):
     def delegated_services(self, delegated_services):
         """Sets the delegated_services of this ListDelegatedServicesResponse.
 
-        帐号是其委托管理员的服务。
+        账号是其委托管理员的服务。
 
         :param delegated_services: The delegated_services of this ListDelegatedServicesResponse.
         :type delegated_services: list[:class:`huaweicloudsdkorganizations.v1.DelegatedServiceDto`]

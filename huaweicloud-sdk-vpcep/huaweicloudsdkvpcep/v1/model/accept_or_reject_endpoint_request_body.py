@@ -31,7 +31,7 @@ class AcceptOrRejectEndpointRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: 允许或拒绝连接。 ● receive：允许连接。 ● reject：拒绝连接。
+        :param action: 允许或拒绝连接。  - receive：允许连接。  - reject：拒绝连接。
         :type action: str
         :param endpoints: 终端节点ID列表。 每次请求目前支持单条endpoint的接受或拒绝。
         :type endpoints: list[str]
@@ -50,7 +50,7 @@ class AcceptOrRejectEndpointRequestBody:
     def action(self):
         """Gets the action of this AcceptOrRejectEndpointRequestBody.
 
-        允许或拒绝连接。 ● receive：允许连接。 ● reject：拒绝连接。
+        允许或拒绝连接。  - receive：允许连接。  - reject：拒绝连接。
 
         :return: The action of this AcceptOrRejectEndpointRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class AcceptOrRejectEndpointRequestBody:
     def action(self, action):
         """Sets the action of this AcceptOrRejectEndpointRequestBody.
 
-        允许或拒绝连接。 ● receive：允许连接。 ● reject：拒绝连接。
+        允许或拒绝连接。  - receive：允许连接。  - reject：拒绝连接。
 
         :param action: The action of this AcceptOrRejectEndpointRequestBody.
         :type action: str

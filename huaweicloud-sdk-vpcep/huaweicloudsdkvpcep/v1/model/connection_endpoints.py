@@ -19,8 +19,8 @@ class ConnectionEndpoints:
     openapi_types = {
         'id': 'str',
         'marker_id': 'int',
-        'created_at': 'str',
-        'updated_at': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
         'domain_id': 'str',
         'error': 'list[QueryError]',
         'status': 'str',
@@ -48,14 +48,14 @@ class ConnectionEndpoints:
         :param marker_id: 终端节点的报文标识。
         :type marker_id: int
         :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
-        :type created_at: str
+        :type created_at: datetime
         :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
-        :type updated_at: str
+        :type updated_at: datetime
         :param domain_id: 用户的Domain ID。
         :type domain_id: str
         :param error: 错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
         :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
-        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
+        :param status: 终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
         :type status: str
         :param description: 终端节点连接描述。
         :type description: str
@@ -141,7 +141,7 @@ class ConnectionEndpoints:
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The created_at of this ConnectionEndpoints.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -152,7 +152,7 @@ class ConnectionEndpoints:
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param created_at: The created_at of this ConnectionEndpoints.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -163,7 +163,7 @@ class ConnectionEndpoints:
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The updated_at of this ConnectionEndpoints.
-        :rtype: str
+        :rtype: datetime
         """
         return self._updated_at
 
@@ -174,7 +174,7 @@ class ConnectionEndpoints:
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this ConnectionEndpoints.
-        :type updated_at: str
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -226,7 +226,7 @@ class ConnectionEndpoints:
     def status(self):
         """Gets the status of this ConnectionEndpoints.
 
-        终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
+        终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
         :return: The status of this ConnectionEndpoints.
         :rtype: str
@@ -237,7 +237,7 @@ class ConnectionEndpoints:
     def status(self, status):
         """Sets the status of this ConnectionEndpoints.
 
-        终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
+        终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
         :param status: The status of this ConnectionEndpoints.
         :type status: str

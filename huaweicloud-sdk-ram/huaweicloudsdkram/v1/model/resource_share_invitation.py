@@ -43,7 +43,7 @@ class ResourceShareInvitation:
 
         The model defined in huaweicloud sdk
 
-        :param receiver_account_id: 接收资源共享邀请的帐号ID。
+        :param receiver_account_id: 接收资源共享邀请的账号ID。
         :type receiver_account_id: str
         :param resource_share_id: 资源共享实例的ID。
         :type resource_share_id: str
@@ -51,7 +51,7 @@ class ResourceShareInvitation:
         :type resource_share_name: str
         :param resource_share_invitation_id: 资源共享邀请的ID。
         :type resource_share_invitation_id: str
-        :param sender_account_id: 发送资源共享邀请的帐号ID。
+        :param sender_account_id: 发送资源共享邀请的账号ID。
         :type sender_account_id: str
         :param status: 资源共享邀请的当前状态。
         :type status: str
@@ -94,7 +94,7 @@ class ResourceShareInvitation:
     def receiver_account_id(self):
         """Gets the receiver_account_id of this ResourceShareInvitation.
 
-        接收资源共享邀请的帐号ID。
+        接收资源共享邀请的账号ID。
 
         :return: The receiver_account_id of this ResourceShareInvitation.
         :rtype: str
@@ -105,7 +105,7 @@ class ResourceShareInvitation:
     def receiver_account_id(self, receiver_account_id):
         """Sets the receiver_account_id of this ResourceShareInvitation.
 
-        接收资源共享邀请的帐号ID。
+        接收资源共享邀请的账号ID。
 
         :param receiver_account_id: The receiver_account_id of this ResourceShareInvitation.
         :type receiver_account_id: str
@@ -182,7 +182,7 @@ class ResourceShareInvitation:
     def sender_account_id(self):
         """Gets the sender_account_id of this ResourceShareInvitation.
 
-        发送资源共享邀请的帐号ID。
+        发送资源共享邀请的账号ID。
 
         :return: The sender_account_id of this ResourceShareInvitation.
         :rtype: str
@@ -193,7 +193,7 @@ class ResourceShareInvitation:
     def sender_account_id(self, sender_account_id):
         """Sets the sender_account_id of this ResourceShareInvitation.
 
-        发送资源共享邀请的帐号ID。
+        发送资源共享邀请的账号ID。
 
         :param sender_account_id: The sender_account_id of this ResourceShareInvitation.
         :type sender_account_id: str
