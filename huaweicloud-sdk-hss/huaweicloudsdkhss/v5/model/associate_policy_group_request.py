@@ -33,9 +33,9 @@ class AssociatePolicyGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param body: Body of the AssociatePolicyGroupRequest
         :type body: :class:`huaweicloudsdkhss.v5.AssociatePolicyGroupRequestInfo`
@@ -58,7 +58,7 @@ class AssociatePolicyGroupRequest:
     def region(self):
         """Gets the region of this AssociatePolicyGroupRequest.
 
-        region id
+        Region ID
 
         :return: The region of this AssociatePolicyGroupRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class AssociatePolicyGroupRequest:
     def region(self, region):
         """Sets the region of this AssociatePolicyGroupRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this AssociatePolicyGroupRequest.
         :type region: str
@@ -80,7 +80,7 @@ class AssociatePolicyGroupRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this AssociatePolicyGroupRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this AssociatePolicyGroupRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class AssociatePolicyGroupRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this AssociatePolicyGroupRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this AssociatePolicyGroupRequest.
         :type enterprise_project_id: str

@@ -18,7 +18,7 @@ class HealthCheckConfigurationHttpGet:
 
     openapi_types = {
         'path': 'str',
-        'port': 'str',
+        'port': 'int',
         'scheme': 'str'
     }
 
@@ -36,7 +36,7 @@ class HealthCheckConfigurationHttpGet:
         :param path: URL路径。
         :type path: str
         :param port: 端口。
-        :type port: str
+        :type port: int
         :param scheme: 协议。
         :type scheme: str
         """
@@ -84,7 +84,7 @@ class HealthCheckConfigurationHttpGet:
         端口。
 
         :return: The port of this HealthCheckConfigurationHttpGet.
-        :rtype: str
+        :rtype: int
         """
         return self._port
 
@@ -95,7 +95,7 @@ class HealthCheckConfigurationHttpGet:
         端口。
 
         :param port: The port of this HealthCheckConfigurationHttpGet.
-        :type port: str
+        :type port: int
         """
         self._port = port
 

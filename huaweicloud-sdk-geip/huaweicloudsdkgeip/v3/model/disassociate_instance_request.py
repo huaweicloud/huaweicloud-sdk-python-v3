@@ -33,7 +33,7 @@ class DisassociateInstanceRequest:
 
         :param is_reserve_gcb: 解绑实例后是否保留GCB，false表示解绑实例后会同时删除GCB
         :type is_reserve_gcb: bool
-        :param global_eip_id: global_eip_id
+        :param global_eip_id: 
         :type global_eip_id: str
         """
         
@@ -72,8 +72,6 @@ class DisassociateInstanceRequest:
     def global_eip_id(self):
         """Gets the global_eip_id of this DisassociateInstanceRequest.
 
-        global_eip_id
-
         :return: The global_eip_id of this DisassociateInstanceRequest.
         :rtype: str
         """
@@ -82,8 +80,6 @@ class DisassociateInstanceRequest:
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
         """Sets the global_eip_id of this DisassociateInstanceRequest.
-
-        global_eip_id
 
         :param global_eip_id: The global_eip_id of this DisassociateInstanceRequest.
         :type global_eip_id: str

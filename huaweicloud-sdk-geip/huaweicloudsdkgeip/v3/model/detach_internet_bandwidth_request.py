@@ -31,9 +31,9 @@ class DetachInternetBandwidthRequest:
 
         The model defined in huaweicloud sdk
 
-        :param global_eip_id: global_eip_id
+        :param global_eip_id: 
         :type global_eip_id: str
-        :param force_unbind: 是否强制解绑
+        :param force_unbind: 
         :type force_unbind: bool
         """
         
@@ -51,8 +51,6 @@ class DetachInternetBandwidthRequest:
     def global_eip_id(self):
         """Gets the global_eip_id of this DetachInternetBandwidthRequest.
 
-        global_eip_id
-
         :return: The global_eip_id of this DetachInternetBandwidthRequest.
         :rtype: str
         """
@@ -61,8 +59,6 @@ class DetachInternetBandwidthRequest:
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
         """Sets the global_eip_id of this DetachInternetBandwidthRequest.
-
-        global_eip_id
 
         :param global_eip_id: The global_eip_id of this DetachInternetBandwidthRequest.
         :type global_eip_id: str
@@ -73,8 +69,6 @@ class DetachInternetBandwidthRequest:
     def force_unbind(self):
         """Gets the force_unbind of this DetachInternetBandwidthRequest.
 
-        是否强制解绑
-
         :return: The force_unbind of this DetachInternetBandwidthRequest.
         :rtype: bool
         """
@@ -83,8 +77,6 @@ class DetachInternetBandwidthRequest:
     @force_unbind.setter
     def force_unbind(self, force_unbind):
         """Sets the force_unbind of this DetachInternetBandwidthRequest.
-
-        是否强制解绑
 
         :param force_unbind: The force_unbind of this DetachInternetBandwidthRequest.
         :type force_unbind: bool

@@ -31,9 +31,9 @@ class UpdateGlobalEipRequestBodyGlobalEip:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源名称
+        :param name: - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
-        :param description: 用户自定义的资源描述
+        :param description: - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
         :type description: str
         """
         
@@ -52,7 +52,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
     def name(self):
         """Gets the name of this UpdateGlobalEipRequestBodyGlobalEip.
 
-        资源名称
+        - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this UpdateGlobalEipRequestBodyGlobalEip.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
     def name(self, name):
         """Sets the name of this UpdateGlobalEipRequestBodyGlobalEip.
 
-        资源名称
+        - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this UpdateGlobalEipRequestBodyGlobalEip.
         :type name: str
@@ -74,7 +74,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
     def description(self):
         """Gets the description of this UpdateGlobalEipRequestBodyGlobalEip.
 
-        用户自定义的资源描述
+        - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
         :return: The description of this UpdateGlobalEipRequestBodyGlobalEip.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
     def description(self, description):
         """Sets the description of this UpdateGlobalEipRequestBodyGlobalEip.
 
-        用户自定义的资源描述
+        - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
         :param description: The description of this UpdateGlobalEipRequestBodyGlobalEip.
         :type description: str

@@ -31,7 +31,7 @@ class ProcessStatisticResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param path: 进程名称
+        :param path: 进程的可执行文件路径
         :type path: str
         :param num: 进程数量
         :type num: int
@@ -52,7 +52,7 @@ class ProcessStatisticResponseInfo:
     def path(self):
         """Gets the path of this ProcessStatisticResponseInfo.
 
-        进程名称
+        进程的可执行文件路径
 
         :return: The path of this ProcessStatisticResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class ProcessStatisticResponseInfo:
     def path(self, path):
         """Sets the path of this ProcessStatisticResponseInfo.
 
-        进程名称
+        进程的可执行文件路径
 
         :param path: The path of this ProcessStatisticResponseInfo.
         :type path: str

@@ -35,7 +35,7 @@ class WeakPwdAccountInfoResponseInfo:
 
         :param user_name: 弱口令账号名称
         :type user_name: str
-        :param service_type: 账号类型
+        :param service_type: 账号类型，包含如下:   - system   - mysql   - redis
         :type service_type: str
         :param duration: 弱口令使用时长，单位天
         :type duration: int
@@ -81,7 +81,7 @@ class WeakPwdAccountInfoResponseInfo:
     def service_type(self):
         """Gets the service_type of this WeakPwdAccountInfoResponseInfo.
 
-        账号类型
+        账号类型，包含如下:   - system   - mysql   - redis
 
         :return: The service_type of this WeakPwdAccountInfoResponseInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class WeakPwdAccountInfoResponseInfo:
     def service_type(self, service_type):
         """Sets the service_type of this WeakPwdAccountInfoResponseInfo.
 
-        账号类型
+        账号类型，包含如下:   - system   - mysql   - redis
 
         :param service_type: The service_type of this WeakPwdAccountInfoResponseInfo.
         :type service_type: str

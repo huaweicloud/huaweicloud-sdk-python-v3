@@ -31,7 +31,7 @@ class UpdateInternetBandwidthRequest:
 
         The model defined in huaweicloud sdk
 
-        :param internet_bandwidth_id: 全域公网带宽的ID
+        :param internet_bandwidth_id: 
         :type internet_bandwidth_id: str
         :param body: Body of the UpdateInternetBandwidthRequest
         :type body: :class:`huaweicloudsdkgeip.v3.UpdateInternetBandwidthRequestBody`
@@ -51,8 +51,6 @@ class UpdateInternetBandwidthRequest:
     def internet_bandwidth_id(self):
         """Gets the internet_bandwidth_id of this UpdateInternetBandwidthRequest.
 
-        全域公网带宽的ID
-
         :return: The internet_bandwidth_id of this UpdateInternetBandwidthRequest.
         :rtype: str
         """
@@ -61,8 +59,6 @@ class UpdateInternetBandwidthRequest:
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
         """Sets the internet_bandwidth_id of this UpdateInternetBandwidthRequest.
-
-        全域公网带宽的ID
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this UpdateInternetBandwidthRequest.
         :type internet_bandwidth_id: str

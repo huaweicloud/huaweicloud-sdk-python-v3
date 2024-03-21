@@ -57,15 +57,15 @@ class ListAppsRequest:
         :type app_name: str
         :param host_ip: 主机ip
         :type host_ip: str
-        :param version: 版本号
+        :param version: 软件版本号
         :type version: str
         :param install_dir: 安装目录
         :type install_dir: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
         :type category: str
@@ -202,7 +202,7 @@ class ListAppsRequest:
     def version(self):
         """Gets the version of this ListAppsRequest.
 
-        版本号
+        软件版本号
 
         :return: The version of this ListAppsRequest.
         :rtype: str
@@ -213,7 +213,7 @@ class ListAppsRequest:
     def version(self, version):
         """Sets the version of this ListAppsRequest.
 
-        版本号
+        软件版本号
 
         :param version: The version of this ListAppsRequest.
         :type version: str
@@ -246,7 +246,7 @@ class ListAppsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAppsRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListAppsRequest.
         :rtype: str
@@ -257,7 +257,7 @@ class ListAppsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAppsRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListAppsRequest.
         :type enterprise_project_id: str
@@ -268,7 +268,7 @@ class ListAppsRequest:
     def limit(self):
         """Gets the limit of this ListAppsRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListAppsRequest.
         :rtype: int
@@ -279,7 +279,7 @@ class ListAppsRequest:
     def limit(self, limit):
         """Sets the limit of this ListAppsRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListAppsRequest.
         :type limit: int
@@ -290,7 +290,7 @@ class ListAppsRequest:
     def offset(self):
         """Gets the offset of this ListAppsRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListAppsRequest.
         :rtype: int
@@ -301,7 +301,7 @@ class ListAppsRequest:
     def offset(self, offset):
         """Sets the offset of this ListAppsRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListAppsRequest.
         :type offset: int

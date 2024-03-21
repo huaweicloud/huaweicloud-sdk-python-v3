@@ -38,13 +38,13 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param description: 描述
+        :param description: 当前检查项（检测规则）的描述
         :type description: str
-        :param reference: 根据
+        :param reference: 当前检查项（检测规则）的制定依据
         :type reference: str
-        :param audit: 审计描述
+        :param audit: 当前检查项（检测规则）的审计描述
         :type audit: str
-        :param remediation: 修改建议
+        :param remediation: 当前检查项（检测规则）的修改建议
         :type remediation: str
         :param check_info_list: 检测用例信息
         :type check_info_list: list[:class:`huaweicloudsdkhss.v5.CheckRuleCheckCaseResponseInfo`]
@@ -74,7 +74,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def description(self):
         """Gets the description of this ShowCheckRuleDetailResponse.
 
-        描述
+        当前检查项（检测规则）的描述
 
         :return: The description of this ShowCheckRuleDetailResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this ShowCheckRuleDetailResponse.
 
-        描述
+        当前检查项（检测规则）的描述
 
         :param description: The description of this ShowCheckRuleDetailResponse.
         :type description: str
@@ -96,7 +96,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def reference(self):
         """Gets the reference of this ShowCheckRuleDetailResponse.
 
-        根据
+        当前检查项（检测规则）的制定依据
 
         :return: The reference of this ShowCheckRuleDetailResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def reference(self, reference):
         """Sets the reference of this ShowCheckRuleDetailResponse.
 
-        根据
+        当前检查项（检测规则）的制定依据
 
         :param reference: The reference of this ShowCheckRuleDetailResponse.
         :type reference: str
@@ -118,7 +118,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def audit(self):
         """Gets the audit of this ShowCheckRuleDetailResponse.
 
-        审计描述
+        当前检查项（检测规则）的审计描述
 
         :return: The audit of this ShowCheckRuleDetailResponse.
         :rtype: str
@@ -129,7 +129,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def audit(self, audit):
         """Sets the audit of this ShowCheckRuleDetailResponse.
 
-        审计描述
+        当前检查项（检测规则）的审计描述
 
         :param audit: The audit of this ShowCheckRuleDetailResponse.
         :type audit: str
@@ -140,7 +140,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def remediation(self):
         """Gets the remediation of this ShowCheckRuleDetailResponse.
 
-        修改建议
+        当前检查项（检测规则）的修改建议
 
         :return: The remediation of this ShowCheckRuleDetailResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def remediation(self, remediation):
         """Sets the remediation of this ShowCheckRuleDetailResponse.
 
-        修改建议
+        当前检查项（检测规则）的修改建议
 
         :param remediation: The remediation of this ShowCheckRuleDetailResponse.
         :type remediation: str

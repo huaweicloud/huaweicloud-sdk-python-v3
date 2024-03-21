@@ -32,7 +32,7 @@ class ListPortsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: 开放端口总数
         :type total_num: int
         :param data_list: 端口信息列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.PortResponseInfo`]
@@ -53,7 +53,7 @@ class ListPortsResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListPortsResponse.
 
-        总数
+        开放端口总数
 
         :return: The total_num of this ListPortsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListPortsResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListPortsResponse.
 
-        总数
+        开放端口总数
 
         :param total_num: The total_num of this ListPortsResponse.
         :type total_num: int

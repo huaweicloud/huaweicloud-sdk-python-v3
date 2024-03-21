@@ -111,7 +111,7 @@ class ListHostStatusRequest:
         :type group_id: str
         :param group_name: 服务器组名称
         :type group_name: str
-        :param region: region id
+        :param region: Region ID
         :type region: str
         :param has_intrusion: 存在告警事件
         :type has_intrusion: bool
@@ -542,7 +542,7 @@ class ListHostStatusRequest:
     def region(self):
         """Gets the region of this ListHostStatusRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ListHostStatusRequest.
         :rtype: str
@@ -553,7 +553,7 @@ class ListHostStatusRequest:
     def region(self, region):
         """Sets the region of this ListHostStatusRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ListHostStatusRequest.
         :type region: str

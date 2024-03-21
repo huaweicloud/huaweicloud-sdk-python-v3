@@ -33,7 +33,7 @@ class ShowJobsRequest:
 
         :param job_id: job_id
         :type job_id: str
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         """
         
@@ -73,8 +73,6 @@ class ShowJobsRequest:
     def fields(self):
         """Gets the fields of this ShowJobsRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ShowJobsRequest.
         :rtype: list[str]
         """
@@ -83,8 +81,6 @@ class ShowJobsRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ShowJobsRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ShowJobsRequest.
         :type fields: list[str]

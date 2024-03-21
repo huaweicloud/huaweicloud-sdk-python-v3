@@ -43,9 +43,9 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源名称
+        :param name: - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
-        :param description: 用户自定义的资源描述
+        :param description: - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
         :type description: str
         :param geip_pool_name: 全域弹性公网IP池子名称
         :type geip_pool_name: str
@@ -57,7 +57,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
         :type internet_bandwidth: :class:`huaweicloudsdkgeip.v3.CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth`
         :param tags: 全域弹性公网IP段标签
         :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
-        :param enterprise_project_id: 资源的企业项目id
+        :param enterprise_project_id: - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
         :type enterprise_project_id: str
         """
         
@@ -91,7 +91,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
     def name(self):
         """Gets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
-        资源名称
+        - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
         :rtype: str
@@ -102,7 +102,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
     def name(self, name):
         """Sets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
-        资源名称
+        - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
         :type name: str
@@ -113,7 +113,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
     def description(self):
         """Gets the description of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
-        用户自定义的资源描述
+        - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
         :return: The description of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
         :rtype: str
@@ -124,7 +124,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
     def description(self, description):
         """Sets the description of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
-        用户自定义的资源描述
+        - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
         :param description: The description of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
         :type description: str
@@ -241,7 +241,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
-        资源的企业项目id
+        - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :return: The enterprise_project_id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
         :rtype: str
@@ -252,7 +252,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
-        资源的企业项目id
+        - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
         :type enterprise_project_id: str

@@ -19,7 +19,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'items': 'list[list[object]]',
+        'items': 'list[ElasticResourcePoolScaleRecord]',
         'x_auth_token': 'str'
     }
 
@@ -37,7 +37,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
         :param count: 返回数组长度
         :type count: int
         :param items: 数组中返回的数据
-        :type items: list[list[object]]
+        :type items: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolScaleRecord`]
         :param x_auth_token: 
         :type x_auth_token: str
         """
@@ -85,7 +85,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
         数组中返回的数据
 
         :return: The items of this ListElasticResourcePoolScaleRecordsResponse.
-        :rtype: list[list[object]]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolScaleRecord`]
         """
         return self._items
 
@@ -96,7 +96,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
         数组中返回的数据
 
         :param items: The items of this ListElasticResourcePoolScaleRecordsResponse.
-        :type items: list[list[object]]
+        :type items: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolScaleRecord`]
         """
         self._items = items
 

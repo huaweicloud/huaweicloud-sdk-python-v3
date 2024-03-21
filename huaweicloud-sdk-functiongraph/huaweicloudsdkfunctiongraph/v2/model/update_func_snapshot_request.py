@@ -17,56 +17,34 @@ class UpdateFuncSnapshotRequest:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str',
-        'function_urn': 'str'
+        'function_urn': 'str',
+        'action': 'str'
     }
 
     attribute_map = {
-        'action': 'action',
-        'function_urn': 'function_urn'
+        'function_urn': 'function_urn',
+        'action': 'action'
     }
 
-    def __init__(self, action=None, function_urn=None):
+    def __init__(self, function_urn=None, action=None):
         """UpdateFuncSnapshotRequest
 
         The model defined in huaweicloud sdk
 
-        :param action: 禁用/启用
-        :type action: str
         :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
-        """
-        
-        
-
-        self._action = None
-        self._function_urn = None
-        self.discriminator = None
-
-        self.action = action
-        self.function_urn = function_urn
-
-    @property
-    def action(self):
-        """Gets the action of this UpdateFuncSnapshotRequest.
-
-        禁用/启用
-
-        :return: The action of this UpdateFuncSnapshotRequest.
-        :rtype: str
-        """
-        return self._action
-
-    @action.setter
-    def action(self, action):
-        """Sets the action of this UpdateFuncSnapshotRequest.
-
-        禁用/启用
-
-        :param action: The action of this UpdateFuncSnapshotRequest.
+        :param action: 禁用/启用
         :type action: str
         """
-        self._action = action
+        
+        
+
+        self._function_urn = None
+        self._action = None
+        self.discriminator = None
+
+        self.function_urn = function_urn
+        self.action = action
 
     @property
     def function_urn(self):
@@ -89,6 +67,28 @@ class UpdateFuncSnapshotRequest:
         :type function_urn: str
         """
         self._function_urn = function_urn
+
+    @property
+    def action(self):
+        """Gets the action of this UpdateFuncSnapshotRequest.
+
+        禁用/启用
+
+        :return: The action of this UpdateFuncSnapshotRequest.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this UpdateFuncSnapshotRequest.
+
+        禁用/启用
+
+        :param action: The action of this UpdateFuncSnapshotRequest.
+        :type action: str
+        """
+        self._action = action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

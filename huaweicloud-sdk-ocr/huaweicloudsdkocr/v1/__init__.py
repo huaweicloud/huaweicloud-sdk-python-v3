@@ -58,6 +58,9 @@ from huaweicloudsdkocr.v1.model.health_code_result import HealthCodeResult
 from huaweicloudsdkocr.v1.model.health_code_words_block_list import HealthCodeWordsBlockList
 from huaweicloudsdkocr.v1.model.hk_id_card_request_body import HkIdCardRequestBody
 from huaweicloudsdkocr.v1.model.hk_id_card_result import HkIdCardResult
+from huaweicloudsdkocr.v1.model.household_register_content import HouseholdRegisterContent
+from huaweicloudsdkocr.v1.model.household_register_request_body import HouseholdRegisterRequestBody
+from huaweicloudsdkocr.v1.model.household_register_result import HouseholdRegisterResult
 from huaweicloudsdkocr.v1.model.id_card_request_body import IdCardRequestBody
 from huaweicloudsdkocr.v1.model.id_card_result import IdCardResult
 from huaweicloudsdkocr.v1.model.id_document_item import IdDocumentItem
@@ -145,6 +148,8 @@ from huaweicloudsdkocr.v1.model.recognize_health_code_request import RecognizeHe
 from huaweicloudsdkocr.v1.model.recognize_health_code_response import RecognizeHealthCodeResponse
 from huaweicloudsdkocr.v1.model.recognize_hk_id_card_request import RecognizeHkIdCardRequest
 from huaweicloudsdkocr.v1.model.recognize_hk_id_card_response import RecognizeHkIdCardResponse
+from huaweicloudsdkocr.v1.model.recognize_household_register_request import RecognizeHouseholdRegisterRequest
+from huaweicloudsdkocr.v1.model.recognize_household_register_response import RecognizeHouseholdRegisterResponse
 from huaweicloudsdkocr.v1.model.recognize_id_card_request import RecognizeIdCardRequest
 from huaweicloudsdkocr.v1.model.recognize_id_card_response import RecognizeIdCardResponse
 from huaweicloudsdkocr.v1.model.recognize_id_document_request import RecognizeIdDocumentRequest
@@ -211,6 +216,7 @@ from huaweicloudsdkocr.v1.model.seal_list import SealList
 from huaweicloudsdkocr.v1.model.seal_request_body import SealRequestBody
 from huaweicloudsdkocr.v1.model.seal_result import SealResult
 from huaweicloudsdkocr.v1.model.seal_words_block_list import SealWordsBlockList
+from huaweicloudsdkocr.v1.model.smart_document_recognizer_form_result import SmartDocumentRecognizerFormResult
 from huaweicloudsdkocr.v1.model.smart_document_recognizer_kv_block import SmartDocumentRecognizerKVBlock
 from huaweicloudsdkocr.v1.model.smart_document_recognizer_kv_words_block import SmartDocumentRecognizerKVWordsBlock
 from huaweicloudsdkocr.v1.model.smart_document_recognizer_kv_result import SmartDocumentRecognizerKvResult

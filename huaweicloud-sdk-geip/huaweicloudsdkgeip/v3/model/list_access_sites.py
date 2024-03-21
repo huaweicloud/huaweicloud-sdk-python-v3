@@ -43,9 +43,9 @@ class ListAccessSites:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 接入点的ID
         :type id: str
-        :param name: 资源名称
+        :param name: - 功能说明：接入点名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
         :param proxy_region: pop站点托管的region(id)
         :type proxy_region: str
@@ -94,7 +94,7 @@ class ListAccessSites:
     def id(self):
         """Gets the id of this ListAccessSites.
 
-        ID
+        接入点的ID
 
         :return: The id of this ListAccessSites.
         :rtype: str
@@ -105,7 +105,7 @@ class ListAccessSites:
     def id(self, id):
         """Sets the id of this ListAccessSites.
 
-        ID
+        接入点的ID
 
         :param id: The id of this ListAccessSites.
         :type id: str
@@ -116,7 +116,7 @@ class ListAccessSites:
     def name(self):
         """Gets the name of this ListAccessSites.
 
-        资源名称
+        - 功能说明：接入点名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this ListAccessSites.
         :rtype: str
@@ -127,7 +127,7 @@ class ListAccessSites:
     def name(self, name):
         """Sets the name of this ListAccessSites.
 
-        资源名称
+        - 功能说明：接入点名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this ListAccessSites.
         :type name: str

@@ -37,7 +37,7 @@ class CloseProtectionInfoRequestInfo:
         :type host_id_list: list[str]
         :param agent_id_list: 需要关闭勒索防护的agentID列表
         :type agent_id_list: list[str]
-        :param close_protection_type: 关闭防护类型，包含如下：   - close_all : 关闭所有防护   - close_anti : 关闭勒索防护   - close_backup : 关闭备份功能
+        :param close_protection_type: 关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。
         :type close_protection_type: str
         """
         
@@ -100,7 +100,7 @@ class CloseProtectionInfoRequestInfo:
     def close_protection_type(self):
         """Gets the close_protection_type of this CloseProtectionInfoRequestInfo.
 
-        关闭防护类型，包含如下：   - close_all : 关闭所有防护   - close_anti : 关闭勒索防护   - close_backup : 关闭备份功能
+        关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。
 
         :return: The close_protection_type of this CloseProtectionInfoRequestInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class CloseProtectionInfoRequestInfo:
     def close_protection_type(self, close_protection_type):
         """Sets the close_protection_type of this CloseProtectionInfoRequestInfo.
 
-        关闭防护类型，包含如下：   - close_all : 关闭所有防护   - close_anti : 关闭勒索防护   - close_backup : 关闭备份功能
+        关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。
 
         :param close_protection_type: The close_protection_type of this CloseProtectionInfoRequestInfo.
         :type close_protection_type: str

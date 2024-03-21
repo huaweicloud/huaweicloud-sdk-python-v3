@@ -17,6 +17,7 @@ class ListSecurityEventsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'category': 'str',
         'region': 'str',
         'enterprise_project_id': 'str',
         'last_days': 'int',
@@ -30,7 +31,6 @@ class ListSecurityEventsRequest:
         'event_types': 'list[int]',
         'handle_status': 'str',
         'severity': 'str',
-        'category': 'str',
         'begin_time': 'str',
         'end_time': 'str',
         'event_class_ids': 'list[str]',
@@ -43,6 +43,7 @@ class ListSecurityEventsRequest:
     }
 
     attribute_map = {
+        'category': 'category',
         'region': 'region',
         'enterprise_project_id': 'enterprise_project_id',
         'last_days': 'last_days',
@@ -56,7 +57,6 @@ class ListSecurityEventsRequest:
         'event_types': 'event_types',
         'handle_status': 'handle_status',
         'severity': 'severity',
-        'category': 'category',
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'event_class_ids': 'event_class_ids',
@@ -68,20 +68,22 @@ class ListSecurityEventsRequest:
         'event_name': 'event_name'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, last_days=None, host_name=None, host_id=None, private_ip=None, public_ip=None, container_name=None, offset=None, limit=None, event_types=None, handle_status=None, severity=None, category=None, begin_time=None, end_time=None, event_class_ids=None, severity_list=None, attack_tag=None, asset_value=None, tag_list=None, att_ck=None, event_name=None):
+    def __init__(self, category=None, region=None, enterprise_project_id=None, last_days=None, host_name=None, host_id=None, private_ip=None, public_ip=None, container_name=None, offset=None, limit=None, event_types=None, handle_status=None, severity=None, begin_time=None, end_time=None, event_class_ids=None, severity_list=None, attack_tag=None, asset_value=None, tag_list=None, att_ck=None, event_name=None):
         """ListSecurityEventsRequest
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param category: 事件类别，包含如下:   - host : 主机安全事件   - container : 容器安全事件
+        :type category: str
+        :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param last_days: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥
         :type last_days: int
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -89,7 +91,7 @@ class ListSecurityEventsRequest:
         :type public_ip: str
         :param container_name: 容器实例名称
         :type container_name: str
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
@@ -99,8 +101,6 @@ class ListSecurityEventsRequest:
         :type handle_status: str
         :param severity: 威胁等级，包含如下:   - Security ：安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
         :type severity: str
-        :param category: 事件类别，包含如下:   - host : 主机安全事件   - container : 容器安全事件
-        :type category: str
         :param begin_time: 自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
         :type begin_time: str
         :param end_time: 自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
@@ -123,6 +123,7 @@ class ListSecurityEventsRequest:
         
         
 
+        self._category = None
         self._region = None
         self._enterprise_project_id = None
         self._last_days = None
@@ -136,7 +137,6 @@ class ListSecurityEventsRequest:
         self._event_types = None
         self._handle_status = None
         self._severity = None
-        self._category = None
         self._begin_time = None
         self._end_time = None
         self._event_class_ids = None
@@ -148,6 +148,7 @@ class ListSecurityEventsRequest:
         self._event_name = None
         self.discriminator = None
 
+        self.category = category
         self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
@@ -173,7 +174,6 @@ class ListSecurityEventsRequest:
             self.handle_status = handle_status
         if severity is not None:
             self.severity = severity
-        self.category = category
         if begin_time is not None:
             self.begin_time = begin_time
         if end_time is not None:
@@ -194,10 +194,32 @@ class ListSecurityEventsRequest:
             self.event_name = event_name
 
     @property
+    def category(self):
+        """Gets the category of this ListSecurityEventsRequest.
+
+        事件类别，包含如下:   - host : 主机安全事件   - container : 容器安全事件
+
+        :return: The category of this ListSecurityEventsRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        """Sets the category of this ListSecurityEventsRequest.
+
+        事件类别，包含如下:   - host : 主机安全事件   - container : 容器安全事件
+
+        :param category: The category of this ListSecurityEventsRequest.
+        :type category: str
+        """
+        self._category = category
+
+    @property
     def region(self):
         """Gets the region of this ListSecurityEventsRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ListSecurityEventsRequest.
         :rtype: str
@@ -208,7 +230,7 @@ class ListSecurityEventsRequest:
     def region(self, region):
         """Sets the region of this ListSecurityEventsRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ListSecurityEventsRequest.
         :type region: str
@@ -219,7 +241,7 @@ class ListSecurityEventsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListSecurityEventsRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListSecurityEventsRequest.
         :rtype: str
@@ -230,7 +252,7 @@ class ListSecurityEventsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListSecurityEventsRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListSecurityEventsRequest.
         :type enterprise_project_id: str
@@ -285,7 +307,7 @@ class ListSecurityEventsRequest:
     def host_id(self):
         """Gets the host_id of this ListSecurityEventsRequest.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this ListSecurityEventsRequest.
         :rtype: str
@@ -296,7 +318,7 @@ class ListSecurityEventsRequest:
     def host_id(self, host_id):
         """Sets the host_id of this ListSecurityEventsRequest.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this ListSecurityEventsRequest.
         :type host_id: str
@@ -373,7 +395,7 @@ class ListSecurityEventsRequest:
     def offset(self):
         """Gets the offset of this ListSecurityEventsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字
 
         :return: The offset of this ListSecurityEventsRequest.
         :rtype: int
@@ -384,7 +406,7 @@ class ListSecurityEventsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSecurityEventsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字
 
         :param offset: The offset of this ListSecurityEventsRequest.
         :type offset: int
@@ -478,28 +500,6 @@ class ListSecurityEventsRequest:
         :type severity: str
         """
         self._severity = severity
-
-    @property
-    def category(self):
-        """Gets the category of this ListSecurityEventsRequest.
-
-        事件类别，包含如下:   - host : 主机安全事件   - container : 容器安全事件
-
-        :return: The category of this ListSecurityEventsRequest.
-        :rtype: str
-        """
-        return self._category
-
-    @category.setter
-    def category(self, category):
-        """Sets the category of this ListSecurityEventsRequest.
-
-        事件类别，包含如下:   - host : 主机安全事件   - container : 容器安全事件
-
-        :param category: The category of this ListSecurityEventsRequest.
-        :type category: str
-        """
-        self._category = category
 
     @property
     def begin_time(self):

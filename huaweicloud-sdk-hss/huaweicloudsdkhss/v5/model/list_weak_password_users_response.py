@@ -32,7 +32,7 @@ class ListWeakPasswordUsersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: 弱口令总数
         :type total_num: int
         :param data_list: 弱口令列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WeakPwdListInfoResponseInfo`]
@@ -53,7 +53,7 @@ class ListWeakPasswordUsersResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListWeakPasswordUsersResponse.
 
-        总数
+        弱口令总数
 
         :return: The total_num of this ListWeakPasswordUsersResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListWeakPasswordUsersResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListWeakPasswordUsersResponse.
 
-        总数
+        弱口令总数
 
         :param total_num: The total_num of this ListWeakPasswordUsersResponse.
         :type total_num: int

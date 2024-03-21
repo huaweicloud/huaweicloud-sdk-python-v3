@@ -31,9 +31,9 @@ class GeipTags:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        :param key: - 功能说明：标签名称 - 约束：   - 创建的预定义标签如果与已有的预定义标签完全相同，则会覆盖已有的预定义标签；若只有“键”相同，“值”不同，则为新创建的预定义标签。   - 键的长度最大36字符，由英文字母、数字、下划线、中划线、中文字符组成。   - 单个资源最多可以添加20个标签。
         :type key: str
-        :param values: tag的value列表
+        :param values: - 功能说明：标签值列表 - 约束：   - 值的长度最大43字符，由英文字母、数字、下划线、点、中划线、中文字符组成。
         :type values: list[str]
         """
         
@@ -50,7 +50,7 @@ class GeipTags:
     def key(self):
         """Gets the key of this GeipTags.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        - 功能说明：标签名称 - 约束：   - 创建的预定义标签如果与已有的预定义标签完全相同，则会覆盖已有的预定义标签；若只有“键”相同，“值”不同，则为新创建的预定义标签。   - 键的长度最大36字符，由英文字母、数字、下划线、中划线、中文字符组成。   - 单个资源最多可以添加20个标签。
 
         :return: The key of this GeipTags.
         :rtype: str
@@ -61,7 +61,7 @@ class GeipTags:
     def key(self, key):
         """Sets the key of this GeipTags.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        - 功能说明：标签名称 - 约束：   - 创建的预定义标签如果与已有的预定义标签完全相同，则会覆盖已有的预定义标签；若只有“键”相同，“值”不同，则为新创建的预定义标签。   - 键的长度最大36字符，由英文字母、数字、下划线、中划线、中文字符组成。   - 单个资源最多可以添加20个标签。
 
         :param key: The key of this GeipTags.
         :type key: str
@@ -72,7 +72,7 @@ class GeipTags:
     def values(self):
         """Gets the values of this GeipTags.
 
-        tag的value列表
+        - 功能说明：标签值列表 - 约束：   - 值的长度最大43字符，由英文字母、数字、下划线、点、中划线、中文字符组成。
 
         :return: The values of this GeipTags.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class GeipTags:
     def values(self, values):
         """Sets the values of this GeipTags.
 
-        tag的value列表
+        - 功能说明：标签值列表 - 约束：   - 值的长度最大43字符，由英文字母、数字、下划线、点、中划线、中文字符组成。
 
         :param values: The values of this GeipTags.
         :type values: list[str]

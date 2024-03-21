@@ -213,7 +213,7 @@ class GeipClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["x-request-id", ]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -280,7 +280,7 @@ class GeipClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["x-request-id", ]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2132,7 +2132,7 @@ class GeipClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["x-request-id", ]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2264,7 +2264,7 @@ class GeipClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["x-request-id", ]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2331,7 +2331,7 @@ class GeipClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["x-request-id", ]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2398,7 +2398,7 @@ class GeipClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["x-request-id", ]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

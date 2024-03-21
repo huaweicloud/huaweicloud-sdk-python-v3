@@ -35,7 +35,7 @@ class SetWtpProtectionStatusInfoRequest:
 
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param body: Body of the SetWtpProtectionStatusInfoRequest
         :type body: :class:`huaweicloudsdkhss.v5.SetWtpProtectionStatusRequestInfo`
@@ -80,7 +80,7 @@ class SetWtpProtectionStatusInfoRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this SetWtpProtectionStatusInfoRequest.
 
-        企业项目
+        企业项目ID
 
         :return: The enterprise_project_id of this SetWtpProtectionStatusInfoRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class SetWtpProtectionStatusInfoRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this SetWtpProtectionStatusInfoRequest.
 
-        企业项目
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this SetWtpProtectionStatusInfoRequest.
         :type enterprise_project_id: str

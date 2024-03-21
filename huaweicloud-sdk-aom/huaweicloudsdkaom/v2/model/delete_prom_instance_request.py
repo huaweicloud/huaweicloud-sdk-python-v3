@@ -17,28 +17,35 @@ class DeletePromInstanceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'prom_id': 'str'
+        'prom_id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
-        'prom_id': 'prom_id'
+        'prom_id': 'prom_id',
+        'enterprise_project_id': 'Enterprise-Project-Id'
     }
 
-    def __init__(self, prom_id=None):
+    def __init__(self, prom_id=None, enterprise_project_id=None):
         """DeletePromInstanceRequest
 
         The model defined in huaweicloud sdk
 
         :param prom_id: Prometheus实例id。
         :type prom_id: str
+        :param enterprise_project_id: 企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+        :type enterprise_project_id: str
         """
         
         
 
         self._prom_id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.prom_id = prom_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def prom_id(self):
@@ -61,6 +68,28 @@ class DeletePromInstanceRequest:
         :type prom_id: str
         """
         self._prom_id = prom_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this DeletePromInstanceRequest.
+
+        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+
+        :return: The enterprise_project_id of this DeletePromInstanceRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this DeletePromInstanceRequest.
+
+        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+
+        :param enterprise_project_id: The enterprise_project_id of this DeletePromInstanceRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

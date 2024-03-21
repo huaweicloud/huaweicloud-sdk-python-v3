@@ -37,7 +37,7 @@ class PortStatisticResponseInfo:
 
         :param port: 端口号
         :type port: int
-        :param type: 类型
+        :param type: 端口类型
         :type type: str
         :param num: 端口数量
         :type num: int
@@ -88,7 +88,7 @@ class PortStatisticResponseInfo:
     def type(self):
         """Gets the type of this PortStatisticResponseInfo.
 
-        类型
+        端口类型
 
         :return: The type of this PortStatisticResponseInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class PortStatisticResponseInfo:
     def type(self, type):
         """Sets the type of this PortStatisticResponseInfo.
 
-        类型
+        端口类型
 
         :param type: The type of this PortStatisticResponseInfo.
         :type type: str

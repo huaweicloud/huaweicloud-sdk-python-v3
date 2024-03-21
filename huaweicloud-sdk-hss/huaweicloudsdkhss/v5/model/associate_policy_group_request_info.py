@@ -37,7 +37,7 @@ class AssociatePolicyGroupRequestInfo:
         :type target_policy_group_id: str
         :param operate_all: 是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
         :type operate_all: bool
-        :param host_id_list: 服务器ID列表
+        :param host_id_list: 需要部署策略组的主机ID列表
         :type host_id_list: list[str]
         """
         
@@ -102,7 +102,7 @@ class AssociatePolicyGroupRequestInfo:
     def host_id_list(self):
         """Gets the host_id_list of this AssociatePolicyGroupRequestInfo.
 
-        服务器ID列表
+        需要部署策略组的主机ID列表
 
         :return: The host_id_list of this AssociatePolicyGroupRequestInfo.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class AssociatePolicyGroupRequestInfo:
     def host_id_list(self, host_id_list):
         """Sets the host_id_list of this AssociatePolicyGroupRequestInfo.
 
-        服务器ID列表
+        需要部署策略组的主机ID列表
 
         :param host_id_list: The host_id_list of this AssociatePolicyGroupRequestInfo.
         :type host_id_list: list[str]

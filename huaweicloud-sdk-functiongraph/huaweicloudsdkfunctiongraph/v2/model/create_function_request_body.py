@@ -31,10 +31,12 @@ class CreateFunctionRequestBody:
         'code_filename': 'str',
         'custom_image': 'CustomImage',
         'user_data': 'str',
+        'encrypted_user_data': 'str',
         'xrole': 'str',
         'app_xrole': 'str',
         'description': 'str',
         'func_code': 'FuncCode',
+        'mount_config': 'MountConfig',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
         'pre_stop_handler': 'str',
@@ -42,7 +44,9 @@ class CreateFunctionRequestBody:
         'enterprise_project_id': 'str',
         'type': 'str',
         'log_config': 'FuncLogConfig',
-        'network_controller': 'NetworkControlConfig'
+        'network_controller': 'NetworkControlConfig',
+        'is_stateful_function': 'bool',
+        'enable_dynamic_memory': 'bool'
     }
 
     attribute_map = {
@@ -60,10 +64,12 @@ class CreateFunctionRequestBody:
         'code_filename': 'code_filename',
         'custom_image': 'custom_image',
         'user_data': 'user_data',
+        'encrypted_user_data': 'encrypted_user_data',
         'xrole': 'xrole',
         'app_xrole': 'app_xrole',
         'description': 'description',
         'func_code': 'func_code',
+        'mount_config': 'mount_config',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
         'pre_stop_handler': 'pre_stop_handler',
@@ -71,10 +77,12 @@ class CreateFunctionRequestBody:
         'enterprise_project_id': 'enterprise_project_id',
         'type': 'type',
         'log_config': 'log_config',
-        'network_controller': 'network_controller'
+        'network_controller': 'network_controller',
+        'is_stateful_function': 'is_stateful_function',
+        'enable_dynamic_memory': 'enable_dynamic_memory'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None):
         """CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -107,6 +115,8 @@ class CreateFunctionRequestBody:
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         :param user_data: 用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host&#x3D;{host_ip}，最多定义20个，总长度不超过4KB。
         :type user_data: str
+        :param encrypted_user_data: 用户自定义的name/value信息，用于需要加密的配置。举例：如配置加密密码，可以设置自定义参数：password&#x3D;{1234}，最多定义20个，总长度不超过4KB。
+        :type encrypted_user_data: str
         :param xrole: 函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
         :type xrole: str
         :param app_xrole: 函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
@@ -115,6 +125,8 @@ class CreateFunctionRequestBody:
         :type description: str
         :param func_code: 
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
+        :param mount_config: 
+        :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
         :type initializer_handler: str
         :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
@@ -131,6 +143,10 @@ class CreateFunctionRequestBody:
         :type log_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
         :param network_controller: 
         :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        :type is_stateful_function: bool
+        :param enable_dynamic_memory: 是否启动动态内存配置
+        :type enable_dynamic_memory: bool
         """
         
         
@@ -149,10 +165,12 @@ class CreateFunctionRequestBody:
         self._code_filename = None
         self._custom_image = None
         self._user_data = None
+        self._encrypted_user_data = None
         self._xrole = None
         self._app_xrole = None
         self._description = None
         self._func_code = None
+        self._mount_config = None
         self._initializer_handler = None
         self._initializer_timeout = None
         self._pre_stop_handler = None
@@ -161,6 +179,8 @@ class CreateFunctionRequestBody:
         self._type = None
         self._log_config = None
         self._network_controller = None
+        self._is_stateful_function = None
+        self._enable_dynamic_memory = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -184,6 +204,8 @@ class CreateFunctionRequestBody:
             self.custom_image = custom_image
         if user_data is not None:
             self.user_data = user_data
+        if encrypted_user_data is not None:
+            self.encrypted_user_data = encrypted_user_data
         if xrole is not None:
             self.xrole = xrole
         if app_xrole is not None:
@@ -192,6 +214,8 @@ class CreateFunctionRequestBody:
             self.description = description
         if func_code is not None:
             self.func_code = func_code
+        if mount_config is not None:
+            self.mount_config = mount_config
         if initializer_handler is not None:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
@@ -208,6 +232,10 @@ class CreateFunctionRequestBody:
             self.log_config = log_config
         if network_controller is not None:
             self.network_controller = network_controller
+        if is_stateful_function is not None:
+            self.is_stateful_function = is_stateful_function
+        if enable_dynamic_memory is not None:
+            self.enable_dynamic_memory = enable_dynamic_memory
 
     @property
     def func_name(self):
@@ -510,6 +538,28 @@ class CreateFunctionRequestBody:
         self._user_data = user_data
 
     @property
+    def encrypted_user_data(self):
+        """Gets the encrypted_user_data of this CreateFunctionRequestBody.
+
+        用户自定义的name/value信息，用于需要加密的配置。举例：如配置加密密码，可以设置自定义参数：password={1234}，最多定义20个，总长度不超过4KB。
+
+        :return: The encrypted_user_data of this CreateFunctionRequestBody.
+        :rtype: str
+        """
+        return self._encrypted_user_data
+
+    @encrypted_user_data.setter
+    def encrypted_user_data(self, encrypted_user_data):
+        """Sets the encrypted_user_data of this CreateFunctionRequestBody.
+
+        用户自定义的name/value信息，用于需要加密的配置。举例：如配置加密密码，可以设置自定义参数：password={1234}，最多定义20个，总长度不超过4KB。
+
+        :param encrypted_user_data: The encrypted_user_data of this CreateFunctionRequestBody.
+        :type encrypted_user_data: str
+        """
+        self._encrypted_user_data = encrypted_user_data
+
+    @property
     def xrole(self):
         """Gets the xrole of this CreateFunctionRequestBody.
 
@@ -592,6 +642,24 @@ class CreateFunctionRequestBody:
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         """
         self._func_code = func_code
+
+    @property
+    def mount_config(self):
+        """Gets the mount_config of this CreateFunctionRequestBody.
+
+        :return: The mount_config of this CreateFunctionRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
+        """
+        return self._mount_config
+
+    @mount_config.setter
+    def mount_config(self, mount_config):
+        """Sets the mount_config of this CreateFunctionRequestBody.
+
+        :param mount_config: The mount_config of this CreateFunctionRequestBody.
+        :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
+        """
+        self._mount_config = mount_config
 
     @property
     def initializer_handler(self):
@@ -760,6 +828,50 @@ class CreateFunctionRequestBody:
         :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
         """
         self._network_controller = network_controller
+
+    @property
+    def is_stateful_function(self):
+        """Gets the is_stateful_function of this CreateFunctionRequestBody.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :return: The is_stateful_function of this CreateFunctionRequestBody.
+        :rtype: bool
+        """
+        return self._is_stateful_function
+
+    @is_stateful_function.setter
+    def is_stateful_function(self, is_stateful_function):
+        """Sets the is_stateful_function of this CreateFunctionRequestBody.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :param is_stateful_function: The is_stateful_function of this CreateFunctionRequestBody.
+        :type is_stateful_function: bool
+        """
+        self._is_stateful_function = is_stateful_function
+
+    @property
+    def enable_dynamic_memory(self):
+        """Gets the enable_dynamic_memory of this CreateFunctionRequestBody.
+
+        是否启动动态内存配置
+
+        :return: The enable_dynamic_memory of this CreateFunctionRequestBody.
+        :rtype: bool
+        """
+        return self._enable_dynamic_memory
+
+    @enable_dynamic_memory.setter
+    def enable_dynamic_memory(self, enable_dynamic_memory):
+        """Sets the enable_dynamic_memory of this CreateFunctionRequestBody.
+
+        是否启动动态内存配置
+
+        :param enable_dynamic_memory: The enable_dynamic_memory of this CreateFunctionRequestBody.
+        :type enable_dynamic_memory: bool
+        """
+        self._enable_dynamic_memory = enable_dynamic_memory
 
     def to_dict(self):
         """Returns the model properties as a dict"""

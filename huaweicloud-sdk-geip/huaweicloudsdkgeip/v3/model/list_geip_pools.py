@@ -51,9 +51,9 @@ class ListGeipPools:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域弹性公网IP池的ID
         :type id: str
-        :param name: 资源名称
+        :param name: - 功能说明：全域弹性公网IP池名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
         :param en_name: 英文名称
         :type en_name: str
@@ -61,9 +61,9 @@ class ListGeipPools:
         :type cn_name: str
         :param status: 状态
         :type status: str
-        :param isp: 线路
+        :param isp: 全域弹性公网IP所属线路
         :type isp: str
-        :param ip_version: IPv4或IPv6
+        :param ip_version: - 功能说明：全域弹性公网IP池的版本 - 取值范围：4、6
         :type ip_version: int
         :param access_site: 接入点信息
         :type access_site: str
@@ -73,7 +73,7 @@ class ListGeipPools:
         :type created_at: datetime
         :param updated_at: 更新时间
         :type updated_at: datetime
-        :param allowed_bandwidth_types: 
+        :param allowed_bandwidth_types: 地址池支持的全域公网带宽类型资源
         :type allowed_bandwidth_types: list[:class:`huaweicloudsdkgeip.v3.AllowedBandwidthTypes`]
         """
         
@@ -122,7 +122,7 @@ class ListGeipPools:
     def id(self):
         """Gets the id of this ListGeipPools.
 
-        ID
+        全域弹性公网IP池的ID
 
         :return: The id of this ListGeipPools.
         :rtype: str
@@ -133,7 +133,7 @@ class ListGeipPools:
     def id(self, id):
         """Sets the id of this ListGeipPools.
 
-        ID
+        全域弹性公网IP池的ID
 
         :param id: The id of this ListGeipPools.
         :type id: str
@@ -144,7 +144,7 @@ class ListGeipPools:
     def name(self):
         """Gets the name of this ListGeipPools.
 
-        资源名称
+        - 功能说明：全域弹性公网IP池名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this ListGeipPools.
         :rtype: str
@@ -155,7 +155,7 @@ class ListGeipPools:
     def name(self, name):
         """Sets the name of this ListGeipPools.
 
-        资源名称
+        - 功能说明：全域弹性公网IP池名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this ListGeipPools.
         :type name: str
@@ -232,7 +232,7 @@ class ListGeipPools:
     def isp(self):
         """Gets the isp of this ListGeipPools.
 
-        线路
+        全域弹性公网IP所属线路
 
         :return: The isp of this ListGeipPools.
         :rtype: str
@@ -243,7 +243,7 @@ class ListGeipPools:
     def isp(self, isp):
         """Sets the isp of this ListGeipPools.
 
-        线路
+        全域弹性公网IP所属线路
 
         :param isp: The isp of this ListGeipPools.
         :type isp: str
@@ -254,7 +254,7 @@ class ListGeipPools:
     def ip_version(self):
         """Gets the ip_version of this ListGeipPools.
 
-        IPv4或IPv6
+        - 功能说明：全域弹性公网IP池的版本 - 取值范围：4、6
 
         :return: The ip_version of this ListGeipPools.
         :rtype: int
@@ -265,7 +265,7 @@ class ListGeipPools:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListGeipPools.
 
-        IPv4或IPv6
+        - 功能说明：全域弹性公网IP池的版本 - 取值范围：4、6
 
         :param ip_version: The ip_version of this ListGeipPools.
         :type ip_version: int
@@ -364,6 +364,8 @@ class ListGeipPools:
     def allowed_bandwidth_types(self):
         """Gets the allowed_bandwidth_types of this ListGeipPools.
 
+        地址池支持的全域公网带宽类型资源
+
         :return: The allowed_bandwidth_types of this ListGeipPools.
         :rtype: list[:class:`huaweicloudsdkgeip.v3.AllowedBandwidthTypes`]
         """
@@ -372,6 +374,8 @@ class ListGeipPools:
     @allowed_bandwidth_types.setter
     def allowed_bandwidth_types(self, allowed_bandwidth_types):
         """Sets the allowed_bandwidth_types of this ListGeipPools.
+
+        地址池支持的全域公网带宽类型资源
 
         :param allowed_bandwidth_types: The allowed_bandwidth_types of this ListGeipPools.
         :type allowed_bandwidth_types: list[:class:`huaweicloudsdkgeip.v3.AllowedBandwidthTypes`]

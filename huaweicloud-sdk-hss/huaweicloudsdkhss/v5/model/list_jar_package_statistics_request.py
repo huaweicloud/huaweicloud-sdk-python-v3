@@ -37,15 +37,15 @@ class ListJarPackageStatisticsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 租户企业项目ID
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param file_name: jar包名称
         :type file_name: str
         :param category: 类别，包含如下:   - host : 主机   - container : 容器
         :type category: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         """
         
@@ -73,7 +73,7 @@ class ListJarPackageStatisticsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListJarPackageStatisticsRequest.
 
-        租户企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListJarPackageStatisticsRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ListJarPackageStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListJarPackageStatisticsRequest.
 
-        租户企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListJarPackageStatisticsRequest.
         :type enterprise_project_id: str
@@ -139,7 +139,7 @@ class ListJarPackageStatisticsRequest:
     def limit(self):
         """Gets the limit of this ListJarPackageStatisticsRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListJarPackageStatisticsRequest.
         :rtype: int
@@ -150,7 +150,7 @@ class ListJarPackageStatisticsRequest:
     def limit(self, limit):
         """Sets the limit of this ListJarPackageStatisticsRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListJarPackageStatisticsRequest.
         :type limit: int
@@ -161,7 +161,7 @@ class ListJarPackageStatisticsRequest:
     def offset(self):
         """Gets the offset of this ListJarPackageStatisticsRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListJarPackageStatisticsRequest.
         :rtype: int
@@ -172,7 +172,7 @@ class ListJarPackageStatisticsRequest:
     def offset(self, offset):
         """Sets the offset of this ListJarPackageStatisticsRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListJarPackageStatisticsRequest.
         :type offset: int

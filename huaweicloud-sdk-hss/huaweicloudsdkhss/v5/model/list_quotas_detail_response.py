@@ -64,7 +64,7 @@ class ListQuotasDetailResponse(SdkResponse):
         :type freeze_num: int
         :param quota_statistics_list: 配额统计列表
         :type quota_statistics_list: list[:class:`huaweicloudsdkhss.v5.QuotaStatisticsResponseInfo`]
-        :param total_num: 总数
+        :param total_num: 配额总数
         :type total_num: int
         :param data_list: 配额列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.QuotaResourcesResponseInfo`]
@@ -285,7 +285,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListQuotasDetailResponse.
 
-        总数
+        配额总数
 
         :return: The total_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -296,7 +296,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListQuotasDetailResponse.
 
-        总数
+        配额总数
 
         :param total_num: The total_num of this ListQuotasDetailResponse.
         :type total_num: int

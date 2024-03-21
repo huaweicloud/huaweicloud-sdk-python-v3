@@ -33,7 +33,7 @@ class ListFunctionAsyncInvokeConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
         :param marker: 上一次查询到的最后的记录位置。
         :type marker: str
@@ -58,7 +58,7 @@ class ListFunctionAsyncInvokeConfigRequest:
     def function_urn(self):
         """Gets the function_urn of this ListFunctionAsyncInvokeConfigRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this ListFunctionAsyncInvokeConfigRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListFunctionAsyncInvokeConfigRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this ListFunctionAsyncInvokeConfigRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this ListFunctionAsyncInvokeConfigRequest.
         :type function_urn: str

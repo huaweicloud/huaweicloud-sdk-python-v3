@@ -45,11 +45,11 @@ class ShowPlaybookMonitorsRequest:
         :type workspace_id: str
         :param playbook_id: 剧本ID
         :type playbook_id: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
         :type start_time: str
         :param version_query_type: 统计剧本版本类型（ALL:全部，VALID:有效的，DELETED:已删除）
         :type version_query_type: str
-        :param end_time: 结束时间
+        :param end_time: 结束时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
         :type end_time: str
         """
         
@@ -140,7 +140,7 @@ class ShowPlaybookMonitorsRequest:
     def start_time(self):
         """Gets the start_time of this ShowPlaybookMonitorsRequest.
 
-        开始时间
+        开始时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
 
         :return: The start_time of this ShowPlaybookMonitorsRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ShowPlaybookMonitorsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowPlaybookMonitorsRequest.
 
-        开始时间
+        开始时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
 
         :param start_time: The start_time of this ShowPlaybookMonitorsRequest.
         :type start_time: str
@@ -184,7 +184,7 @@ class ShowPlaybookMonitorsRequest:
     def end_time(self):
         """Gets the end_time of this ShowPlaybookMonitorsRequest.
 
-        结束时间
+        结束时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
 
         :return: The end_time of this ShowPlaybookMonitorsRequest.
         :rtype: str
@@ -195,7 +195,7 @@ class ShowPlaybookMonitorsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowPlaybookMonitorsRequest.
 
-        结束时间
+        结束时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
 
         :param end_time: The end_time of this ShowPlaybookMonitorsRequest.
         :type end_time: str

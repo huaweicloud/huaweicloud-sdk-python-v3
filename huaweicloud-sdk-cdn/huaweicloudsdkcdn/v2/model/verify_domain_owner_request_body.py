@@ -29,7 +29,7 @@ class VerifyDomainOwnerRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param verify_type: 校验类型： - dns：DNS解析校验； - file：文件校验； - all：dns、file均校验，默认为all。
+        :param verify_type: 校验类型： - dns：DNS解析校验； - file：文件校验； - all：DNS与文件都会进行探测，默认为all。
         :type verify_type: str
         """
         
@@ -45,7 +45,7 @@ class VerifyDomainOwnerRequestBody:
     def verify_type(self):
         """Gets the verify_type of this VerifyDomainOwnerRequestBody.
 
-        校验类型： - dns：DNS解析校验； - file：文件校验； - all：dns、file均校验，默认为all。
+        校验类型： - dns：DNS解析校验； - file：文件校验； - all：DNS与文件都会进行探测，默认为all。
 
         :return: The verify_type of this VerifyDomainOwnerRequestBody.
         :rtype: str
@@ -56,7 +56,7 @@ class VerifyDomainOwnerRequestBody:
     def verify_type(self, verify_type):
         """Sets the verify_type of this VerifyDomainOwnerRequestBody.
 
-        校验类型： - dns：DNS解析校验； - file：文件校验； - all：dns、file均校验，默认为all。
+        校验类型： - dns：DNS解析校验； - file：文件校验； - all：DNS与文件都会进行探测，默认为all。
 
         :param verify_type: The verify_type of this VerifyDomainOwnerRequestBody.
         :type verify_type: str

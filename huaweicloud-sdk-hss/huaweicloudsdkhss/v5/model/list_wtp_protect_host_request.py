@@ -53,11 +53,11 @@ class ListWtpProtectHostRequest:
 
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_id: 云服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param public_ip: 弹性公网IP
         :type public_ip: str
@@ -73,7 +73,7 @@ class ListWtpProtectHostRequest:
         :type agent_status: str
         :param limit: 默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0
         :type offset: int
         """
         
@@ -143,7 +143,7 @@ class ListWtpProtectHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListWtpProtectHostRequest.
 
-        企业项目
+        企业项目ID
 
         :return: The enterprise_project_id of this ListWtpProtectHostRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListWtpProtectHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListWtpProtectHostRequest.
 
-        企业项目
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListWtpProtectHostRequest.
         :type enterprise_project_id: str
@@ -187,7 +187,7 @@ class ListWtpProtectHostRequest:
     def host_id(self):
         """Gets the host_id of this ListWtpProtectHostRequest.
 
-        云服务器ID
+        主机ID
 
         :return: The host_id of this ListWtpProtectHostRequest.
         :rtype: str
@@ -198,7 +198,7 @@ class ListWtpProtectHostRequest:
     def host_id(self, host_id):
         """Sets the host_id of this ListWtpProtectHostRequest.
 
-        云服务器ID
+        主机ID
 
         :param host_id: The host_id of this ListWtpProtectHostRequest.
         :type host_id: str
@@ -363,7 +363,7 @@ class ListWtpProtectHostRequest:
     def offset(self):
         """Gets the offset of this ListWtpProtectHostRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0
 
         :return: The offset of this ListWtpProtectHostRequest.
         :rtype: int
@@ -374,7 +374,7 @@ class ListWtpProtectHostRequest:
     def offset(self, offset):
         """Sets the offset of this ListWtpProtectHostRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0
 
         :param offset: The offset of this ListWtpProtectHostRequest.
         :type offset: int

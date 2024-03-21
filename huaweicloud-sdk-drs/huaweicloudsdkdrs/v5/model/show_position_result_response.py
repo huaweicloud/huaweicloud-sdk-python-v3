@@ -19,15 +19,17 @@ class ShowPositionResultResponse(SdkResponse):
 
     openapi_types = {
         'job_id': 'str',
-        'position': 'str'
+        'position': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
-        'position': 'position'
+        'position': 'position',
+        'status': 'status'
     }
 
-    def __init__(self, job_id=None, position=None):
+    def __init__(self, job_id=None, position=None, status=None):
         """ShowPositionResultResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ShowPositionResultResponse(SdkResponse):
         :type job_id: str
         :param position: 位点信息
         :type position: str
+        :param status: 查询状态。
+        :type status: str
         """
         
         super(ShowPositionResultResponse, self).__init__()
 
         self._job_id = None
         self._position = None
+        self._status = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
         if position is not None:
             self.position = position
+        if status is not None:
+            self.status = status
 
     @property
     def job_id(self):
@@ -92,6 +99,28 @@ class ShowPositionResultResponse(SdkResponse):
         :type position: str
         """
         self._position = position
+
+    @property
+    def status(self):
+        """Gets the status of this ShowPositionResultResponse.
+
+        查询状态。
+
+        :return: The status of this ShowPositionResultResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ShowPositionResultResponse.
+
+        查询状态。
+
+        :param status: The status of this ShowPositionResultResponse.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

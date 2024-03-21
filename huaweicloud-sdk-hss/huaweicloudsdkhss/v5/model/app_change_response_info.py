@@ -45,7 +45,7 @@ class AppChangeResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: agent_id
+        :param agent_id: Agent ID
         :type agent_id: str
         :param variation_type: the type of change   - add ：新建   - delete ：删除   - modify ：修改
         :type variation_type: str
@@ -53,15 +53,15 @@ class AppChangeResponseInfo:
         :type host_id: str
         :param app_name: 软件名称
         :type app_name: str
-        :param host_name: 弹性服务器名称
+        :param host_name: 服务器名称
         :type host_name: str
         :param host_ip: 服务器ip
         :type host_ip: str
         :param version: 版本号
         :type version: str
-        :param update_time: 更新时间
+        :param update_time: 软件更新时间
         :type update_time: int
-        :param recent_scan_time: 变更时间
+        :param recent_scan_time: 最近扫描时间
         :type recent_scan_time: int
         """
         
@@ -101,7 +101,7 @@ class AppChangeResponseInfo:
     def agent_id(self):
         """Gets the agent_id of this AppChangeResponseInfo.
 
-        agent_id
+        Agent ID
 
         :return: The agent_id of this AppChangeResponseInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class AppChangeResponseInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this AppChangeResponseInfo.
 
-        agent_id
+        Agent ID
 
         :param agent_id: The agent_id of this AppChangeResponseInfo.
         :type agent_id: str
@@ -189,7 +189,7 @@ class AppChangeResponseInfo:
     def host_name(self):
         """Gets the host_name of this AppChangeResponseInfo.
 
-        弹性服务器名称
+        服务器名称
 
         :return: The host_name of this AppChangeResponseInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class AppChangeResponseInfo:
     def host_name(self, host_name):
         """Sets the host_name of this AppChangeResponseInfo.
 
-        弹性服务器名称
+        服务器名称
 
         :param host_name: The host_name of this AppChangeResponseInfo.
         :type host_name: str
@@ -255,7 +255,7 @@ class AppChangeResponseInfo:
     def update_time(self):
         """Gets the update_time of this AppChangeResponseInfo.
 
-        更新时间
+        软件更新时间
 
         :return: The update_time of this AppChangeResponseInfo.
         :rtype: int
@@ -266,7 +266,7 @@ class AppChangeResponseInfo:
     def update_time(self, update_time):
         """Sets the update_time of this AppChangeResponseInfo.
 
-        更新时间
+        软件更新时间
 
         :param update_time: The update_time of this AppChangeResponseInfo.
         :type update_time: int
@@ -277,7 +277,7 @@ class AppChangeResponseInfo:
     def recent_scan_time(self):
         """Gets the recent_scan_time of this AppChangeResponseInfo.
 
-        变更时间
+        最近扫描时间
 
         :return: The recent_scan_time of this AppChangeResponseInfo.
         :rtype: int
@@ -288,7 +288,7 @@ class AppChangeResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         """Sets the recent_scan_time of this AppChangeResponseInfo.
 
-        变更时间
+        最近扫描时间
 
         :param recent_scan_time: The recent_scan_time of this AppChangeResponseInfo.
         :type recent_scan_time: int

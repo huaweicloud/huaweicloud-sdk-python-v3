@@ -17,8 +17,8 @@ class BatchCreateV2RequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[BatchCreateV2RequestBodyTags]',
-        'sys_tags': 'list[BatchCreateV2RequestBodySysTags]'
+        'tags': 'list[CreateGlobalEipRequestBodyGlobalEipTags]',
+        'sys_tags': 'list[CreateGlobalEipRequestBodyGlobalEipTags]'
     }
 
     attribute_map = {
@@ -32,9 +32,9 @@ class BatchCreateV2RequestBody:
         The model defined in huaweicloud sdk
 
         :param tags: 全域弹性公网IP标签
-        :type tags: list[:class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBodyTags`]
+        :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         :param sys_tags: 系统标签
-        :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBodySysTags`]
+        :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         
         
@@ -54,7 +54,7 @@ class BatchCreateV2RequestBody:
         全域弹性公网IP标签
 
         :return: The tags of this BatchCreateV2RequestBody.
-        :rtype: list[:class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBodyTags`]
+        :rtype: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         return self._tags
 
@@ -65,7 +65,7 @@ class BatchCreateV2RequestBody:
         全域弹性公网IP标签
 
         :param tags: The tags of this BatchCreateV2RequestBody.
-        :type tags: list[:class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBodyTags`]
+        :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         self._tags = tags
 
@@ -76,7 +76,7 @@ class BatchCreateV2RequestBody:
         系统标签
 
         :return: The sys_tags of this BatchCreateV2RequestBody.
-        :rtype: list[:class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBodySysTags`]
+        :rtype: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         return self._sys_tags
 
@@ -87,7 +87,7 @@ class BatchCreateV2RequestBody:
         系统标签
 
         :param sys_tags: The sys_tags of this BatchCreateV2RequestBody.
-        :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBodySysTags`]
+        :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         self._sys_tags = sys_tags
 

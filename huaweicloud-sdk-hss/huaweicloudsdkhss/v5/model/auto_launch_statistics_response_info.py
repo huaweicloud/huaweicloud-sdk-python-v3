@@ -35,9 +35,9 @@ class AutoLaunchStatisticsResponseInfo:
 
         :param name: 自启动项名称
         :type name: str
-        :param type: 自启动项类型
+        :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
         :type type: str
-        :param num: 数量
+        :param num: 当前自启动项的主机数量
         :type num: int
         """
         
@@ -81,7 +81,7 @@ class AutoLaunchStatisticsResponseInfo:
     def type(self):
         """Gets the type of this AutoLaunchStatisticsResponseInfo.
 
-        自启动项类型
+        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
         :return: The type of this AutoLaunchStatisticsResponseInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class AutoLaunchStatisticsResponseInfo:
     def type(self, type):
         """Sets the type of this AutoLaunchStatisticsResponseInfo.
 
-        自启动项类型
+        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
         :param type: The type of this AutoLaunchStatisticsResponseInfo.
         :type type: str
@@ -103,7 +103,7 @@ class AutoLaunchStatisticsResponseInfo:
     def num(self):
         """Gets the num of this AutoLaunchStatisticsResponseInfo.
 
-        数量
+        当前自启动项的主机数量
 
         :return: The num of this AutoLaunchStatisticsResponseInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class AutoLaunchStatisticsResponseInfo:
     def num(self, num):
         """Sets the num of this AutoLaunchStatisticsResponseInfo.
 
-        数量
+        当前自启动项的主机数量
 
         :param num: The num of this AutoLaunchStatisticsResponseInfo.
         :type num: int

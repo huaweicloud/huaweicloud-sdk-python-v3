@@ -17,7 +17,7 @@ class HealthCheckConfigurationTcpSocket:
     sensitive_list = []
 
     openapi_types = {
-        'port': 'str'
+        'port': 'int'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class HealthCheckConfigurationTcpSocket:
         The model defined in huaweicloud sdk
 
         :param port: 端口。
-        :type port: str
+        :type port: int
         """
         
         
@@ -48,7 +48,7 @@ class HealthCheckConfigurationTcpSocket:
         端口。
 
         :return: The port of this HealthCheckConfigurationTcpSocket.
-        :rtype: str
+        :rtype: int
         """
         return self._port
 
@@ -59,7 +59,7 @@ class HealthCheckConfigurationTcpSocket:
         端口。
 
         :param port: The port of this HealthCheckConfigurationTcpSocket.
-        :type port: str
+        :type port: int
         """
         self._port = port
 

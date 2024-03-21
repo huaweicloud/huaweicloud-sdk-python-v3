@@ -29,7 +29,7 @@ class UpdateEventRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param content: 测试事件content,为json字符串
+        :param content: 测试事件content，为json字符串的base64编码
         :type content: str
         """
         
@@ -44,7 +44,7 @@ class UpdateEventRequestBody:
     def content(self):
         """Gets the content of this UpdateEventRequestBody.
 
-        测试事件content,为json字符串
+        测试事件content，为json字符串的base64编码
 
         :return: The content of this UpdateEventRequestBody.
         :rtype: str
@@ -55,7 +55,7 @@ class UpdateEventRequestBody:
     def content(self, content):
         """Sets the content of this UpdateEventRequestBody.
 
-        测试事件content,为json字符串
+        测试事件content，为json字符串的base64编码
 
         :param content: The content of this UpdateEventRequestBody.
         :type content: str

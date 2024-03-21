@@ -49,11 +49,11 @@ class AutoLaunchChangeResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: agent_id
+        :param agent_id: Agent ID
         :type agent_id: str
         :param variation_type: the type of change   - add ：新建   - delete ：删除   - modify ：修改
         :type variation_type: str
-        :param type: 自启动项类型
+        :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
         :type type: int
         :param host_id: host_id
         :type host_id: str
@@ -61,15 +61,15 @@ class AutoLaunchChangeResponseInfo:
         :type host_name: str
         :param host_ip: 主机IP
         :type host_ip: str
-        :param path: 路径
+        :param path: 自启动项的路径
         :type path: str
-        :param hash: 文件hash
+        :param hash: 采用sha256算法生成的文件hash值
         :type hash: str
         :param run_user: 运行用户
         :type run_user: str
         :param name: 自启动项名称
         :type name: str
-        :param recent_scan_time: 最近更新时间
+        :param recent_scan_time: 最近更新时间，13位时间戳
         :type recent_scan_time: int
         """
         
@@ -115,7 +115,7 @@ class AutoLaunchChangeResponseInfo:
     def agent_id(self):
         """Gets the agent_id of this AutoLaunchChangeResponseInfo.
 
-        agent_id
+        Agent ID
 
         :return: The agent_id of this AutoLaunchChangeResponseInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class AutoLaunchChangeResponseInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this AutoLaunchChangeResponseInfo.
 
-        agent_id
+        Agent ID
 
         :param agent_id: The agent_id of this AutoLaunchChangeResponseInfo.
         :type agent_id: str
@@ -159,7 +159,7 @@ class AutoLaunchChangeResponseInfo:
     def type(self):
         """Gets the type of this AutoLaunchChangeResponseInfo.
 
-        自启动项类型
+        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
         :return: The type of this AutoLaunchChangeResponseInfo.
         :rtype: int
@@ -170,7 +170,7 @@ class AutoLaunchChangeResponseInfo:
     def type(self, type):
         """Sets the type of this AutoLaunchChangeResponseInfo.
 
-        自启动项类型
+        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
         :param type: The type of this AutoLaunchChangeResponseInfo.
         :type type: int
@@ -247,7 +247,7 @@ class AutoLaunchChangeResponseInfo:
     def path(self):
         """Gets the path of this AutoLaunchChangeResponseInfo.
 
-        路径
+        自启动项的路径
 
         :return: The path of this AutoLaunchChangeResponseInfo.
         :rtype: str
@@ -258,7 +258,7 @@ class AutoLaunchChangeResponseInfo:
     def path(self, path):
         """Sets the path of this AutoLaunchChangeResponseInfo.
 
-        路径
+        自启动项的路径
 
         :param path: The path of this AutoLaunchChangeResponseInfo.
         :type path: str
@@ -269,7 +269,7 @@ class AutoLaunchChangeResponseInfo:
     def hash(self):
         """Gets the hash of this AutoLaunchChangeResponseInfo.
 
-        文件hash
+        采用sha256算法生成的文件hash值
 
         :return: The hash of this AutoLaunchChangeResponseInfo.
         :rtype: str
@@ -280,7 +280,7 @@ class AutoLaunchChangeResponseInfo:
     def hash(self, hash):
         """Sets the hash of this AutoLaunchChangeResponseInfo.
 
-        文件hash
+        采用sha256算法生成的文件hash值
 
         :param hash: The hash of this AutoLaunchChangeResponseInfo.
         :type hash: str
@@ -335,7 +335,7 @@ class AutoLaunchChangeResponseInfo:
     def recent_scan_time(self):
         """Gets the recent_scan_time of this AutoLaunchChangeResponseInfo.
 
-        最近更新时间
+        最近更新时间，13位时间戳
 
         :return: The recent_scan_time of this AutoLaunchChangeResponseInfo.
         :rtype: int
@@ -346,7 +346,7 @@ class AutoLaunchChangeResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         """Sets the recent_scan_time of this AutoLaunchChangeResponseInfo.
 
-        最近更新时间
+        最近更新时间，13位时间戳
 
         :param recent_scan_time: The recent_scan_time of this AutoLaunchChangeResponseInfo.
         :type recent_scan_time: int

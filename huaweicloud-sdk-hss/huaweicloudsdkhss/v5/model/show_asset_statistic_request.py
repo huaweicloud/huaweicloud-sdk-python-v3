@@ -33,9 +33,9 @@ class ShowAssetStatisticRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param host_id: host id
+        :param host_id: Host ID
         :type host_id: str
         :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
         :type category: str
@@ -59,7 +59,7 @@ class ShowAssetStatisticRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowAssetStatisticRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ShowAssetStatisticRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ShowAssetStatisticRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowAssetStatisticRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ShowAssetStatisticRequest.
         :type enterprise_project_id: str
@@ -81,7 +81,7 @@ class ShowAssetStatisticRequest:
     def host_id(self):
         """Gets the host_id of this ShowAssetStatisticRequest.
 
-        host id
+        Host ID
 
         :return: The host_id of this ShowAssetStatisticRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class ShowAssetStatisticRequest:
     def host_id(self, host_id):
         """Sets the host_id of this ShowAssetStatisticRequest.
 
-        host id
+        Host ID
 
         :param host_id: The host_id of this ShowAssetStatisticRequest.
         :type host_id: str

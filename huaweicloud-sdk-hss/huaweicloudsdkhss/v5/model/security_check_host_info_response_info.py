@@ -41,7 +41,7 @@ class SecurityCheckHostInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -49,7 +49,7 @@ class SecurityCheckHostInfoResponseInfo:
         :type host_public_ip: str
         :param host_private_ip: 服务器私网IP
         :type host_private_ip: str
-        :param scan_time: 扫描时间
+        :param scan_time: 扫描时间(ms)
         :type scan_time: int
         :param failed_num: 风险项数量
         :type failed_num: int
@@ -87,7 +87,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_id(self):
         """Gets the host_id of this SecurityCheckHostInfoResponseInfo.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this SecurityCheckHostInfoResponseInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this SecurityCheckHostInfoResponseInfo.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this SecurityCheckHostInfoResponseInfo.
         :type host_id: str
@@ -175,7 +175,7 @@ class SecurityCheckHostInfoResponseInfo:
     def scan_time(self):
         """Gets the scan_time of this SecurityCheckHostInfoResponseInfo.
 
-        扫描时间
+        扫描时间(ms)
 
         :return: The scan_time of this SecurityCheckHostInfoResponseInfo.
         :rtype: int
@@ -186,7 +186,7 @@ class SecurityCheckHostInfoResponseInfo:
     def scan_time(self, scan_time):
         """Sets the scan_time of this SecurityCheckHostInfoResponseInfo.
 
-        扫描时间
+        扫描时间(ms)
 
         :param scan_time: The scan_time of this SecurityCheckHostInfoResponseInfo.
         :type scan_time: int

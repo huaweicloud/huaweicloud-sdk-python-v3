@@ -31,9 +31,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        :param key: - 功能说明：标签名称 - 约束：   - 创建的预定义标签如果与已有的预定义标签完全相同，则会覆盖已有的预定义标签；若只有“键”相同，“值”不同，则为新创建的预定义标签。   - 键的长度最大36字符，由英文字母、数字、下划线、中划线、中文字符组成。   - 单个资源最多可以添加20个标签。
         :type key: str
-        :param value: 标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
+        :param value: - 功能说明：标签值 - 约束：   - 值的长度最大43字符，由英文字母、数字、下划线、点、中划线、中文字符组成。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class Tag:
     def key(self):
         """Gets the key of this Tag.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        - 功能说明：标签名称 - 约束：   - 创建的预定义标签如果与已有的预定义标签完全相同，则会覆盖已有的预定义标签；若只有“键”相同，“值”不同，则为新创建的预定义标签。   - 键的长度最大36字符，由英文字母、数字、下划线、中划线、中文字符组成。   - 单个资源最多可以添加20个标签。
 
         :return: The key of this Tag.
         :rtype: str
@@ -63,7 +63,7 @@ class Tag:
     def key(self, key):
         """Sets the key of this Tag.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        - 功能说明：标签名称 - 约束：   - 创建的预定义标签如果与已有的预定义标签完全相同，则会覆盖已有的预定义标签；若只有“键”相同，“值”不同，则为新创建的预定义标签。   - 键的长度最大36字符，由英文字母、数字、下划线、中划线、中文字符组成。   - 单个资源最多可以添加20个标签。
 
         :param key: The key of this Tag.
         :type key: str
@@ -74,7 +74,7 @@ class Tag:
     def value(self):
         """Gets the value of this Tag.
 
-        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
+        - 功能说明：标签值 - 约束：   - 值的长度最大43字符，由英文字母、数字、下划线、点、中划线、中文字符组成。
 
         :return: The value of this Tag.
         :rtype: str
@@ -85,7 +85,7 @@ class Tag:
     def value(self, value):
         """Sets the value of this Tag.
 
-        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
+        - 功能说明：标签值 - 约束：   - 值的长度最大43字符，由英文字母、数字、下划线、点、中划线、中文字符组成。
 
         :param value: The value of this Tag.
         :type value: str

@@ -59,13 +59,13 @@ class ListUserChangeHistoriesRequest:
         :type host_name: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
-        :param change_type: 变更类型:   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
+        :param change_type: 账号变更类型:   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
         :type change_type: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param start_time: 变更开始时间，13位时间戳
         :type start_time: int
@@ -225,7 +225,7 @@ class ListUserChangeHistoriesRequest:
     def change_type(self):
         """Gets the change_type of this ListUserChangeHistoriesRequest.
 
-        变更类型:   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
+        账号变更类型:   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
 
         :return: The change_type of this ListUserChangeHistoriesRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class ListUserChangeHistoriesRequest:
     def change_type(self, change_type):
         """Sets the change_type of this ListUserChangeHistoriesRequest.
 
-        变更类型:   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
+        账号变更类型:   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
 
         :param change_type: The change_type of this ListUserChangeHistoriesRequest.
         :type change_type: str
@@ -247,7 +247,7 @@ class ListUserChangeHistoriesRequest:
     def limit(self):
         """Gets the limit of this ListUserChangeHistoriesRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListUserChangeHistoriesRequest.
         :rtype: int
@@ -258,7 +258,7 @@ class ListUserChangeHistoriesRequest:
     def limit(self, limit):
         """Sets the limit of this ListUserChangeHistoriesRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListUserChangeHistoriesRequest.
         :type limit: int
@@ -269,7 +269,7 @@ class ListUserChangeHistoriesRequest:
     def offset(self):
         """Gets the offset of this ListUserChangeHistoriesRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListUserChangeHistoriesRequest.
         :rtype: int
@@ -280,7 +280,7 @@ class ListUserChangeHistoriesRequest:
     def offset(self, offset):
         """Sets the offset of this ListUserChangeHistoriesRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListUserChangeHistoriesRequest.
         :type offset: int
@@ -291,7 +291,7 @@ class ListUserChangeHistoriesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListUserChangeHistoriesRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListUserChangeHistoriesRequest.
         :rtype: str
@@ -302,7 +302,7 @@ class ListUserChangeHistoriesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListUserChangeHistoriesRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListUserChangeHistoriesRequest.
         :type enterprise_project_id: str

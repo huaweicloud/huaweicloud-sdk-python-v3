@@ -91,7 +91,7 @@ class EventResourceResponseInfo:
         :type cloud_id: str
         :param vm_name: 虚拟机名称
         :type vm_name: str
-        :param vm_uuid: 虚拟机UUID
+        :param vm_uuid: 虚拟机UUID，即主机ID
         :type vm_uuid: str
         :param container_id: 容器ID
         :type container_id: str
@@ -367,7 +367,7 @@ class EventResourceResponseInfo:
     def vm_uuid(self):
         """Gets the vm_uuid of this EventResourceResponseInfo.
 
-        虚拟机UUID
+        虚拟机UUID，即主机ID
 
         :return: The vm_uuid of this EventResourceResponseInfo.
         :rtype: str
@@ -378,7 +378,7 @@ class EventResourceResponseInfo:
     def vm_uuid(self, vm_uuid):
         """Sets the vm_uuid of this EventResourceResponseInfo.
 
-        虚拟机UUID
+        虚拟机UUID，即主机ID
 
         :param vm_uuid: The vm_uuid of this EventResourceResponseInfo.
         :type vm_uuid: str

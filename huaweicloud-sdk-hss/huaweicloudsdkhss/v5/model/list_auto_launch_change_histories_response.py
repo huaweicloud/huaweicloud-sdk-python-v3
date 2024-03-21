@@ -32,7 +32,7 @@ class ListAutoLaunchChangeHistoriesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: 自启动项变动总数
         :type total_num: int
         :param data_list: 软件历史变动记录列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AutoLaunchChangeResponseInfo`]
@@ -53,7 +53,7 @@ class ListAutoLaunchChangeHistoriesResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListAutoLaunchChangeHistoriesResponse.
 
-        总数
+        自启动项变动总数
 
         :return: The total_num of this ListAutoLaunchChangeHistoriesResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAutoLaunchChangeHistoriesResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListAutoLaunchChangeHistoriesResponse.
 
-        总数
+        自启动项变动总数
 
         :param total_num: The total_num of this ListAutoLaunchChangeHistoriesResponse.
         :type total_num: int

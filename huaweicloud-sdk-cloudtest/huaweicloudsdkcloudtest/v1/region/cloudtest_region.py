@@ -12,8 +12,6 @@ class CloudtestRegion:
                         "https://cloudtest-ext.cn-north-4.myhuaweicloud.com")
     CN_SOUTH_1 = Region("cn-south-1",
                         "https://cloudtest-ext.cn-south-1.myhuaweicloud.com")
-    CN_SOUTH_2 = Region("cn-south-2",
-                        "https://cloudtest-ext.cn-south-2.myhuaweicloud.com")
     CN_EAST_2 = Region("cn-east-2",
                         "https://cloudtest-ext.cn-east-2.myhuaweicloud.cn")
     CN_EAST_3 = Region("cn-east-3",
@@ -29,7 +27,6 @@ class CloudtestRegion:
         "cn-north-1": CN_NORTH_1,
         "cn-north-4": CN_NORTH_4,
         "cn-south-1": CN_SOUTH_1,
-        "cn-south-2": CN_SOUTH_2,
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
         "la-north-2": LA_NORTH_2,

@@ -22,7 +22,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
         'charge_mode': 'str',
         'size': 'int',
         'name': 'str',
-        'tags': 'list[AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags]',
+        'tags': 'list[CreateGlobalEipRequestBodyGlobalEipTags]',
         'type': 'str'
     }
 
@@ -49,10 +49,10 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
         :type charge_mode: str
         :param size: 全域公网带宽大小（出云方向）
         :type size: int
-        :param name: 资源名称
+        :param name: - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
         :param tags: 全域弹性公网IP段标签
-        :type tags: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         :param type: 全域公网带宽类型
         :type type: str
         """
@@ -175,7 +175,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
     def name(self):
         """Gets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
-        资源名称
+        - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
         :rtype: str
@@ -186,7 +186,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
     def name(self, name):
         """Sets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
-        资源名称
+        - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
         :type name: str
@@ -200,7 +200,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
         全域弹性公网IP段标签
 
         :return: The tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
-        :rtype: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :rtype: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         return self._tags
 
@@ -211,7 +211,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
         全域弹性公网IP段标签
 
         :param tags: The tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
-        :type tags: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         self._tags = tags
 

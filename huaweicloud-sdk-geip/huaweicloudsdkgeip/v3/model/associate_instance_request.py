@@ -35,7 +35,7 @@ class AssociateInstanceRequest:
 
         :param binding_instance_service: 绑定接口可以加，标识请求是从哪个服务调过来的
         :type binding_instance_service: str
-        :param global_eip_id: global_eip_id
+        :param global_eip_id: 
         :type global_eip_id: str
         :param body: Body of the AssociateInstanceRequest
         :type body: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBody`
@@ -80,8 +80,6 @@ class AssociateInstanceRequest:
     def global_eip_id(self):
         """Gets the global_eip_id of this AssociateInstanceRequest.
 
-        global_eip_id
-
         :return: The global_eip_id of this AssociateInstanceRequest.
         :rtype: str
         """
@@ -90,8 +88,6 @@ class AssociateInstanceRequest:
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
         """Sets the global_eip_id of this AssociateInstanceRequest.
-
-        global_eip_id
 
         :param global_eip_id: The global_eip_id of this AssociateInstanceRequest.
         :type global_eip_id: str

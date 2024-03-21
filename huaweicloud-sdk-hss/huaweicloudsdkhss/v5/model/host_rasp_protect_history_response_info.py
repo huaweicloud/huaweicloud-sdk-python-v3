@@ -45,15 +45,15 @@ class HostRaspProtectHistoryResponseInfo:
         :type host_ip: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param alarm_time: 告警时间
+        :param alarm_time: 动态网页防篡改的告警时间(ms)
         :type alarm_time: int
         :param threat_type: 威胁类型
         :type threat_type: str
         :param alarm_level: 告警级别
         :type alarm_level: int
-        :param source_ip: 源IP
+        :param source_ip: 攻击主机的源IP
         :type source_ip: str
-        :param attacked_url: 攻击URL
+        :param attacked_url: 攻击请求的URL
         :type attacked_url: str
         """
         
@@ -131,7 +131,7 @@ class HostRaspProtectHistoryResponseInfo:
     def alarm_time(self):
         """Gets the alarm_time of this HostRaspProtectHistoryResponseInfo.
 
-        告警时间
+        动态网页防篡改的告警时间(ms)
 
         :return: The alarm_time of this HostRaspProtectHistoryResponseInfo.
         :rtype: int
@@ -142,7 +142,7 @@ class HostRaspProtectHistoryResponseInfo:
     def alarm_time(self, alarm_time):
         """Sets the alarm_time of this HostRaspProtectHistoryResponseInfo.
 
-        告警时间
+        动态网页防篡改的告警时间(ms)
 
         :param alarm_time: The alarm_time of this HostRaspProtectHistoryResponseInfo.
         :type alarm_time: int
@@ -197,7 +197,7 @@ class HostRaspProtectHistoryResponseInfo:
     def source_ip(self):
         """Gets the source_ip of this HostRaspProtectHistoryResponseInfo.
 
-        源IP
+        攻击主机的源IP
 
         :return: The source_ip of this HostRaspProtectHistoryResponseInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class HostRaspProtectHistoryResponseInfo:
     def source_ip(self, source_ip):
         """Sets the source_ip of this HostRaspProtectHistoryResponseInfo.
 
-        源IP
+        攻击主机的源IP
 
         :param source_ip: The source_ip of this HostRaspProtectHistoryResponseInfo.
         :type source_ip: str
@@ -219,7 +219,7 @@ class HostRaspProtectHistoryResponseInfo:
     def attacked_url(self):
         """Gets the attacked_url of this HostRaspProtectHistoryResponseInfo.
 
-        攻击URL
+        攻击请求的URL
 
         :return: The attacked_url of this HostRaspProtectHistoryResponseInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class HostRaspProtectHistoryResponseInfo:
     def attacked_url(self, attacked_url):
         """Sets the attacked_url of this HostRaspProtectHistoryResponseInfo.
 
-        攻击URL
+        攻击请求的URL
 
         :param attacked_url: The attacked_url of this HostRaspProtectHistoryResponseInfo.
         :type attacked_url: str

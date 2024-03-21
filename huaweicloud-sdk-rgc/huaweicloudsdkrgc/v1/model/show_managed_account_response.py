@@ -32,6 +32,7 @@ class ShowManagedAccountResponse(SdkResponse):
         'blueprint_product_id': 'str',
         'blueprint_product_version': 'str',
         'blueprint_status': 'str',
+        'is_blueprint_has_multi_account_resource': 'bool',
         'regions': 'list[RegionManagedList]',
         'created_at': 'datetime',
         'updated_at': 'datetime'
@@ -52,12 +53,13 @@ class ShowManagedAccountResponse(SdkResponse):
         'blueprint_product_id': 'blueprint_product_id',
         'blueprint_product_version': 'blueprint_product_version',
         'blueprint_status': 'blueprint_status',
+        'is_blueprint_has_multi_account_resource': 'is_blueprint_has_multi_account_resource',
         'regions': 'regions',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, landing_zone_version=None, manage_account_id=None, account_id=None, account_name=None, account_type=None, owner=None, state=None, message=None, parent_organization_unit_id=None, parent_organization_unit_name=None, identity_store_user_name=None, blueprint_product_id=None, blueprint_product_version=None, blueprint_status=None, regions=None, created_at=None, updated_at=None):
+    def __init__(self, landing_zone_version=None, manage_account_id=None, account_id=None, account_name=None, account_type=None, owner=None, state=None, message=None, parent_organization_unit_id=None, parent_organization_unit_name=None, identity_store_user_name=None, blueprint_product_id=None, blueprint_product_version=None, blueprint_status=None, is_blueprint_has_multi_account_resource=None, regions=None, created_at=None, updated_at=None):
         """ShowManagedAccountResponse
 
         The model defined in huaweicloud sdk
@@ -90,6 +92,8 @@ class ShowManagedAccountResponse(SdkResponse):
         :type blueprint_product_version: str
         :param blueprint_status: 模板部署状态，包括失败, 完成, 进行中。
         :type blueprint_status: str
+        :param is_blueprint_has_multi_account_resource: 模板是否包含多账号资源。
+        :type is_blueprint_has_multi_account_resource: bool
         :param regions: 区域信息。
         :type regions: list[:class:`huaweicloudsdkrgc.v1.RegionManagedList`]
         :param created_at: 组织里某个注册OU下的纳管账号被创建的时间。
@@ -114,6 +118,7 @@ class ShowManagedAccountResponse(SdkResponse):
         self._blueprint_product_id = None
         self._blueprint_product_version = None
         self._blueprint_status = None
+        self._is_blueprint_has_multi_account_resource = None
         self._regions = None
         self._created_at = None
         self._updated_at = None
@@ -147,6 +152,8 @@ class ShowManagedAccountResponse(SdkResponse):
             self.blueprint_product_version = blueprint_product_version
         if blueprint_status is not None:
             self.blueprint_status = blueprint_status
+        if is_blueprint_has_multi_account_resource is not None:
+            self.is_blueprint_has_multi_account_resource = is_blueprint_has_multi_account_resource
         if regions is not None:
             self.regions = regions
         if created_at is not None:
@@ -461,6 +468,28 @@ class ShowManagedAccountResponse(SdkResponse):
         :type blueprint_status: str
         """
         self._blueprint_status = blueprint_status
+
+    @property
+    def is_blueprint_has_multi_account_resource(self):
+        """Gets the is_blueprint_has_multi_account_resource of this ShowManagedAccountResponse.
+
+        模板是否包含多账号资源。
+
+        :return: The is_blueprint_has_multi_account_resource of this ShowManagedAccountResponse.
+        :rtype: bool
+        """
+        return self._is_blueprint_has_multi_account_resource
+
+    @is_blueprint_has_multi_account_resource.setter
+    def is_blueprint_has_multi_account_resource(self, is_blueprint_has_multi_account_resource):
+        """Sets the is_blueprint_has_multi_account_resource of this ShowManagedAccountResponse.
+
+        模板是否包含多账号资源。
+
+        :param is_blueprint_has_multi_account_resource: The is_blueprint_has_multi_account_resource of this ShowManagedAccountResponse.
+        :type is_blueprint_has_multi_account_resource: bool
+        """
+        self._is_blueprint_has_multi_account_resource = is_blueprint_has_multi_account_resource
 
     @property
     def regions(self):

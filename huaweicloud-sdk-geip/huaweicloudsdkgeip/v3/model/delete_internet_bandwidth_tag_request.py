@@ -31,9 +31,9 @@ class DeleteInternetBandwidthTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 全域公网带宽的id
+        :param resource_id: 
         :type resource_id: str
-        :param tag_key: 待删除标签的key
+        :param tag_key: 
         :type tag_key: str
         """
         
@@ -50,8 +50,6 @@ class DeleteInternetBandwidthTagRequest:
     def resource_id(self):
         """Gets the resource_id of this DeleteInternetBandwidthTagRequest.
 
-        全域公网带宽的id
-
         :return: The resource_id of this DeleteInternetBandwidthTagRequest.
         :rtype: str
         """
@@ -60,8 +58,6 @@ class DeleteInternetBandwidthTagRequest:
     @resource_id.setter
     def resource_id(self, resource_id):
         """Sets the resource_id of this DeleteInternetBandwidthTagRequest.
-
-        全域公网带宽的id
 
         :param resource_id: The resource_id of this DeleteInternetBandwidthTagRequest.
         :type resource_id: str
@@ -72,8 +68,6 @@ class DeleteInternetBandwidthTagRequest:
     def tag_key(self):
         """Gets the tag_key of this DeleteInternetBandwidthTagRequest.
 
-        待删除标签的key
-
         :return: The tag_key of this DeleteInternetBandwidthTagRequest.
         :rtype: str
         """
@@ -82,8 +76,6 @@ class DeleteInternetBandwidthTagRequest:
     @tag_key.setter
     def tag_key(self, tag_key):
         """Sets the tag_key of this DeleteInternetBandwidthTagRequest.
-
-        待删除标签的key
 
         :param tag_key: The tag_key of this DeleteInternetBandwidthTagRequest.
         :type tag_key: str

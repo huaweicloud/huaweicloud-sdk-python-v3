@@ -47,11 +47,11 @@ class ProtectionInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param operating_system: 操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        :param operating_system: 需要开启防护的主机的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
         :type operating_system: str
         :param ransom_protection_status: 勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
         :type ransom_protection_status: str
-        :param protection_policy_id: 防护策略ID,若选择已有策略防护,则该字段必选
+        :param protection_policy_id: 勒索防护策略ID,若选择已有策略防护,则该字段必选
         :type protection_policy_id: str
         :param create_protection_policy: 
         :type create_protection_policy: :class:`huaweicloudsdkhss.v5.ProtectionProxyInfoRequestInfo`
@@ -103,7 +103,7 @@ class ProtectionInfoRequestInfo:
     def operating_system(self):
         """Gets the operating_system of this ProtectionInfoRequestInfo.
 
-        操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        需要开启防护的主机的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :return: The operating_system of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class ProtectionInfoRequestInfo:
     def operating_system(self, operating_system):
         """Sets the operating_system of this ProtectionInfoRequestInfo.
 
-        操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        需要开启防护的主机的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :param operating_system: The operating_system of this ProtectionInfoRequestInfo.
         :type operating_system: str
@@ -147,7 +147,7 @@ class ProtectionInfoRequestInfo:
     def protection_policy_id(self):
         """Gets the protection_policy_id of this ProtectionInfoRequestInfo.
 
-        防护策略ID,若选择已有策略防护,则该字段必选
+        勒索防护策略ID,若选择已有策略防护,则该字段必选
 
         :return: The protection_policy_id of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -158,7 +158,7 @@ class ProtectionInfoRequestInfo:
     def protection_policy_id(self, protection_policy_id):
         """Sets the protection_policy_id of this ProtectionInfoRequestInfo.
 
-        防护策略ID,若选择已有策略防护,则该字段必选
+        勒索防护策略ID,若选择已有策略防护,则该字段必选
 
         :param protection_policy_id: The protection_policy_id of this ProtectionInfoRequestInfo.
         :type protection_policy_id: str

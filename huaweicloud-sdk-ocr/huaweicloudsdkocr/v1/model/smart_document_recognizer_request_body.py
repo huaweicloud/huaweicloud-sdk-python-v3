@@ -22,7 +22,9 @@ class SmartDocumentRecognizerRequestBody:
         'kv': 'bool',
         'table': 'bool',
         'layout': 'bool',
-        'return_excel': 'bool'
+        'return_excel': 'bool',
+        'form': 'bool',
+        'kv_map': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class SmartDocumentRecognizerRequestBody:
         'kv': 'kv',
         'table': 'table',
         'layout': 'layout',
-        'return_excel': 'return_excel'
+        'return_excel': 'return_excel',
+        'form': 'form',
+        'kv_map': 'kv_map'
     }
 
-    def __init__(self, data=None, url=None, kv=None, table=None, layout=None, return_excel=None):
+    def __init__(self, data=None, url=None, kv=None, table=None, layout=None, return_excel=None, form=None, kv_map=None):
         """SmartDocumentRecognizerRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class SmartDocumentRecognizerRequestBody:
         :type layout: bool
         :param return_excel: 仅当table为True时有效。是否返回表格转换Microsoft Excel的Base64编码字段。 
         :type return_excel: bool
+        :param form: 是否进行有线表单识别。有线表单指关键信息以有线单元格形式进行呈现，例如户口本、机动车发票等。若是，结果会以\&quot;form_result\&quot;这一关键字返回。 
+        :type form: bool
+        :param kv_map: 需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\&quot;名称\&quot;：\&quot;小明\&quot;}的键值对，若传入{\&quot;名称\&quot;：\&quot;姓名\&quot;}的kv_map，则返回结果为{“姓名”：“小明”}。  &gt; 参数传入示例： - \&quot;kv_map\&quot;:\&quot;{\\\&quot;名称\\\&quot;:\\\&quot;姓名\\\&quot;}\&quot; 
+        :type kv_map: str
         """
         
         
@@ -61,6 +69,8 @@ class SmartDocumentRecognizerRequestBody:
         self._table = None
         self._layout = None
         self._return_excel = None
+        self._form = None
+        self._kv_map = None
         self.discriminator = None
 
         if data is not None:
@@ -75,6 +85,10 @@ class SmartDocumentRecognizerRequestBody:
             self.layout = layout
         if return_excel is not None:
             self.return_excel = return_excel
+        if form is not None:
+            self.form = form
+        if kv_map is not None:
+            self.kv_map = kv_map
 
     @property
     def data(self):
@@ -207,6 +221,50 @@ class SmartDocumentRecognizerRequestBody:
         :type return_excel: bool
         """
         self._return_excel = return_excel
+
+    @property
+    def form(self):
+        """Gets the form of this SmartDocumentRecognizerRequestBody.
+
+        是否进行有线表单识别。有线表单指关键信息以有线单元格形式进行呈现，例如户口本、机动车发票等。若是，结果会以\"form_result\"这一关键字返回。 
+
+        :return: The form of this SmartDocumentRecognizerRequestBody.
+        :rtype: bool
+        """
+        return self._form
+
+    @form.setter
+    def form(self, form):
+        """Sets the form of this SmartDocumentRecognizerRequestBody.
+
+        是否进行有线表单识别。有线表单指关键信息以有线单元格形式进行呈现，例如户口本、机动车发票等。若是，结果会以\"form_result\"这一关键字返回。 
+
+        :param form: The form of this SmartDocumentRecognizerRequestBody.
+        :type form: bool
+        """
+        self._form = form
+
+    @property
+    def kv_map(self):
+        """Gets the kv_map of this SmartDocumentRecognizerRequestBody.
+
+        需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\"名称\"：\"小明\"}的键值对，若传入{\"名称\"：\"姓名\"}的kv_map，则返回结果为{“姓名”：“小明”}。  > 参数传入示例： - \"kv_map\":\"{\\\"名称\\\":\\\"姓名\\\"}\" 
+
+        :return: The kv_map of this SmartDocumentRecognizerRequestBody.
+        :rtype: str
+        """
+        return self._kv_map
+
+    @kv_map.setter
+    def kv_map(self, kv_map):
+        """Sets the kv_map of this SmartDocumentRecognizerRequestBody.
+
+        需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\"名称\"：\"小明\"}的键值对，若传入{\"名称\"：\"姓名\"}的kv_map，则返回结果为{“姓名”：“小明”}。  > 参数传入示例： - \"kv_map\":\"{\\\"名称\\\":\\\"姓名\\\"}\" 
+
+        :param kv_map: The kv_map of this SmartDocumentRecognizerRequestBody.
+        :type kv_map: str
+        """
+        self._kv_map = kv_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

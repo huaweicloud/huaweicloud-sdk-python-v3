@@ -22,7 +22,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
         'charge_mode': 'str',
         'size': 'int',
         'name': 'str',
-        'tags': 'list[AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags]',
+        'tags': 'list[CreateGlobalEipRequestBodyGlobalEipTags]',
         'type': 'str'
     }
 
@@ -41,7 +41,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域公网带宽的ID
         :type id: str
         :param ingress_size: 全域公网带宽大小（入云方向）
         :type ingress_size: int
@@ -49,10 +49,10 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
         :type charge_mode: str
         :param size: 全域公网带宽大小（出云方向）
         :type size: int
-        :param name: 资源名称
+        :param name: - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
         :param tags: 全域弹性公网IP标签
-        :type tags: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         :param type: 全域公网带宽类型
         :type type: str
         """
@@ -87,7 +87,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
     def id(self):
         """Gets the id of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
-        ID
+        全域公网带宽的ID
 
         :return: The id of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
     def id(self, id):
         """Sets the id of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
-        ID
+        全域公网带宽的ID
 
         :param id: The id of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
         :type id: str
@@ -175,7 +175,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
     def name(self):
         """Gets the name of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
-        资源名称
+        - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
     def name(self, name):
         """Sets the name of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
-        资源名称
+        - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
         :type name: str
@@ -200,7 +200,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
         全域弹性公网IP标签
 
         :return: The tags of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
-        :rtype: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :rtype: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         return self._tags
 
@@ -211,7 +211,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
         全域弹性公网IP标签
 
         :param tags: The tags of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
-        :type tags: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         self._tags = tags
 

@@ -2250,6 +2250,73 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def list_catalogs_async(self, request):
+        """获取项目下所有catalog信息
+
+        该API获取指定项目下所有catalog信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCatalogs
+        :type request: :class:`huaweicloudsdkdli.v1.ListCatalogsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListCatalogsResponse`
+        """
+        http_info = self._list_catalogs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_catalogs_async_invoker(self, request):
+        http_info = self._list_catalogs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_catalogs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCatalogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_database_users_async(self, request):
         """查看数据库的使用者
 
@@ -3427,6 +3494,71 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def run_catalog_action_async(self, request):
+        """绑定/解绑catalog映射信息
+
+        该API创建DLI绑定/解绑到lakeformation等服务的元数据目录（CATALOG）相关信息，包含DLI侧CATALOG名称、外部CATALOG名称和类型，类型为预留字段，当前只支持lakeformation
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RunCatalogAction
+        :type request: :class:`huaweicloudsdkdli.v1.RunCatalogActionRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.RunCatalogActionResponse`
+        """
+        http_info = self._run_catalog_action_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_catalog_action_async_invoker(self, request):
+        http_info = self._run_catalog_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_catalog_action_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/catalogs/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCatalogActionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def run_queue_action_async(self, request):
         """重启/扩容/缩容队列
 
@@ -3473,6 +3605,71 @@ class DliAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_catalog_async(self, request):
+        """描述catalog信息
+
+        该API用于描述DLI catalog详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCatalog
+        :type request: :class:`huaweicloudsdkdli.v1.ShowCatalogRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowCatalogResponse`
+        """
+        http_info = self._show_catalog_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_catalog_async_invoker(self, request):
+        http_info = self._show_catalog_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_catalog_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/catalogs/{catalog_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCatalogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'catalog_name' in local_var_params:
+            path_params['catalog_name'] = local_var_params['catalog_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

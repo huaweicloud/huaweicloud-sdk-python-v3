@@ -99,61 +99,61 @@ class ListGlobalEipsRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param internet_bandwidth_id: 根据全域公网带宽的ID过滤
+        :param internet_bandwidth_id: 
         :type internet_bandwidth_id: list[str]
-        :param name: 根据名称过滤
+        :param name: 
         :type name: list[str]
-        :param name_like: 根据名称模糊匹配
+        :param name_like: 
         :type name_like: str
-        :param access_site: 根据接入点过滤
+        :param access_site: 
         :type access_site: list[str]
-        :param geip_pool_name: 根据全域弹性公网IP池名称过滤
+        :param geip_pool_name: 
         :type geip_pool_name: list[str]
-        :param isp: 根据运营商线路过滤
+        :param isp: 
         :type isp: list[str]
-        :param ip_version: 根据IP版本过滤
+        :param ip_version: 
         :type ip_version: list[int]
-        :param ip_address: 根据ip地址过滤
+        :param ip_address: 
         :type ip_address: list[str]
-        :param ipv6_address: 根据ipv6地址过滤
+        :param ipv6_address: 
         :type ipv6_address: list[str]
-        :param freezen: 根据是否冻结过滤
+        :param freezen: 
         :type freezen: list[bool]
-        :param polluted: 根据是否污染过滤
+        :param polluted: 
         :type polluted: list[bool]
-        :param internet_bandwidth_is_null: 根据是否绑定全域公网带宽过滤
+        :param internet_bandwidth_is_null: 
         :type internet_bandwidth_is_null: list[bool]
-        :param gcb_bandwidth_is_null: 根据是否绑定骨干带宽过滤
+        :param gcb_bandwidth_is_null: 
         :type gcb_bandwidth_is_null: list[bool]
-        :param status: 根据资源状态过滤
+        :param status: 
         :type status: list[str]
-        :param associate_instance_info_region: 根据绑定实例所属的局点过滤
+        :param associate_instance_info_region: 
         :type associate_instance_info_region: list[str]
-        :param associate_instance_info_instance_type: 根据绑定实例的类型过滤
+        :param associate_instance_info_instance_type: 
         :type associate_instance_info_instance_type: list[str]
-        :param associate_instance_info_public_border_group: 根据绑定实例所属的边缘信息过滤
+        :param associate_instance_info_public_border_group: 
         :type associate_instance_info_public_border_group: list[str]
-        :param associate_instance_info_instance_site: 根据绑定实例所在的站点过滤
+        :param associate_instance_info_instance_site: 
         :type associate_instance_info_instance_site: list[str]
-        :param associate_instance_info_instance_id: 根据绑定实例的ID过滤
+        :param associate_instance_info_instance_id: 
         :type associate_instance_info_instance_id: list[str]
-        :param associate_instance_info_project_id: 根据绑定实例所属的项目ID过滤
+        :param associate_instance_info_project_id: 
         :type associate_instance_info_project_id: list[str]
-        :param associate_instance_info_service_id: 根据绑定实例所属的服务ID过滤
+        :param associate_instance_info_service_id: 
         :type associate_instance_info_service_id: list[str]
-        :param associate_instance_info_service_type: 根据绑定实例的服务类型过滤
+        :param associate_instance_info_service_type: 
         :type associate_instance_info_service_type: list[str]
-        :param enterprise_project_id: 根据企业项目ID过滤
+        :param enterprise_project_id: 
         :type enterprise_project_id: list[str]
-        :param tags: 根据标签过滤
+        :param tags: 
         :type tags: list[str]
         """
         
@@ -350,8 +350,6 @@ class ListGlobalEipsRequest:
     def fields(self):
         """Gets the fields of this ListGlobalEipsRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -360,8 +358,6 @@ class ListGlobalEipsRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListGlobalEipsRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListGlobalEipsRequest.
         :type fields: list[str]
@@ -416,8 +412,6 @@ class ListGlobalEipsRequest:
     def id(self):
         """Gets the id of this ListGlobalEipsRequest.
 
-        根据ID过滤
-
         :return: The id of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -426,8 +420,6 @@ class ListGlobalEipsRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this ListGlobalEipsRequest.
-
-        根据ID过滤
 
         :param id: The id of this ListGlobalEipsRequest.
         :type id: list[str]
@@ -438,8 +430,6 @@ class ListGlobalEipsRequest:
     def internet_bandwidth_id(self):
         """Gets the internet_bandwidth_id of this ListGlobalEipsRequest.
 
-        根据全域公网带宽的ID过滤
-
         :return: The internet_bandwidth_id of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -448,8 +438,6 @@ class ListGlobalEipsRequest:
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
         """Sets the internet_bandwidth_id of this ListGlobalEipsRequest.
-
-        根据全域公网带宽的ID过滤
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this ListGlobalEipsRequest.
         :type internet_bandwidth_id: list[str]
@@ -460,8 +448,6 @@ class ListGlobalEipsRequest:
     def name(self):
         """Gets the name of this ListGlobalEipsRequest.
 
-        根据名称过滤
-
         :return: The name of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -470,8 +456,6 @@ class ListGlobalEipsRequest:
     @name.setter
     def name(self, name):
         """Sets the name of this ListGlobalEipsRequest.
-
-        根据名称过滤
 
         :param name: The name of this ListGlobalEipsRequest.
         :type name: list[str]
@@ -482,8 +466,6 @@ class ListGlobalEipsRequest:
     def name_like(self):
         """Gets the name_like of this ListGlobalEipsRequest.
 
-        根据名称模糊匹配
-
         :return: The name_like of this ListGlobalEipsRequest.
         :rtype: str
         """
@@ -492,8 +474,6 @@ class ListGlobalEipsRequest:
     @name_like.setter
     def name_like(self, name_like):
         """Sets the name_like of this ListGlobalEipsRequest.
-
-        根据名称模糊匹配
 
         :param name_like: The name_like of this ListGlobalEipsRequest.
         :type name_like: str
@@ -504,8 +484,6 @@ class ListGlobalEipsRequest:
     def access_site(self):
         """Gets the access_site of this ListGlobalEipsRequest.
 
-        根据接入点过滤
-
         :return: The access_site of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -514,8 +492,6 @@ class ListGlobalEipsRequest:
     @access_site.setter
     def access_site(self, access_site):
         """Sets the access_site of this ListGlobalEipsRequest.
-
-        根据接入点过滤
 
         :param access_site: The access_site of this ListGlobalEipsRequest.
         :type access_site: list[str]
@@ -526,8 +502,6 @@ class ListGlobalEipsRequest:
     def geip_pool_name(self):
         """Gets the geip_pool_name of this ListGlobalEipsRequest.
 
-        根据全域弹性公网IP池名称过滤
-
         :return: The geip_pool_name of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -536,8 +510,6 @@ class ListGlobalEipsRequest:
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
         """Sets the geip_pool_name of this ListGlobalEipsRequest.
-
-        根据全域弹性公网IP池名称过滤
 
         :param geip_pool_name: The geip_pool_name of this ListGlobalEipsRequest.
         :type geip_pool_name: list[str]
@@ -548,8 +520,6 @@ class ListGlobalEipsRequest:
     def isp(self):
         """Gets the isp of this ListGlobalEipsRequest.
 
-        根据运营商线路过滤
-
         :return: The isp of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -558,8 +528,6 @@ class ListGlobalEipsRequest:
     @isp.setter
     def isp(self, isp):
         """Sets the isp of this ListGlobalEipsRequest.
-
-        根据运营商线路过滤
 
         :param isp: The isp of this ListGlobalEipsRequest.
         :type isp: list[str]
@@ -570,8 +538,6 @@ class ListGlobalEipsRequest:
     def ip_version(self):
         """Gets the ip_version of this ListGlobalEipsRequest.
 
-        根据IP版本过滤
-
         :return: The ip_version of this ListGlobalEipsRequest.
         :rtype: list[int]
         """
@@ -580,8 +546,6 @@ class ListGlobalEipsRequest:
     @ip_version.setter
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListGlobalEipsRequest.
-
-        根据IP版本过滤
 
         :param ip_version: The ip_version of this ListGlobalEipsRequest.
         :type ip_version: list[int]
@@ -592,8 +556,6 @@ class ListGlobalEipsRequest:
     def ip_address(self):
         """Gets the ip_address of this ListGlobalEipsRequest.
 
-        根据ip地址过滤
-
         :return: The ip_address of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -602,8 +564,6 @@ class ListGlobalEipsRequest:
     @ip_address.setter
     def ip_address(self, ip_address):
         """Sets the ip_address of this ListGlobalEipsRequest.
-
-        根据ip地址过滤
 
         :param ip_address: The ip_address of this ListGlobalEipsRequest.
         :type ip_address: list[str]
@@ -614,8 +574,6 @@ class ListGlobalEipsRequest:
     def ipv6_address(self):
         """Gets the ipv6_address of this ListGlobalEipsRequest.
 
-        根据ipv6地址过滤
-
         :return: The ipv6_address of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -624,8 +582,6 @@ class ListGlobalEipsRequest:
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
         """Sets the ipv6_address of this ListGlobalEipsRequest.
-
-        根据ipv6地址过滤
 
         :param ipv6_address: The ipv6_address of this ListGlobalEipsRequest.
         :type ipv6_address: list[str]
@@ -636,8 +592,6 @@ class ListGlobalEipsRequest:
     def freezen(self):
         """Gets the freezen of this ListGlobalEipsRequest.
 
-        根据是否冻结过滤
-
         :return: The freezen of this ListGlobalEipsRequest.
         :rtype: list[bool]
         """
@@ -646,8 +600,6 @@ class ListGlobalEipsRequest:
     @freezen.setter
     def freezen(self, freezen):
         """Sets the freezen of this ListGlobalEipsRequest.
-
-        根据是否冻结过滤
 
         :param freezen: The freezen of this ListGlobalEipsRequest.
         :type freezen: list[bool]
@@ -658,8 +610,6 @@ class ListGlobalEipsRequest:
     def polluted(self):
         """Gets the polluted of this ListGlobalEipsRequest.
 
-        根据是否污染过滤
-
         :return: The polluted of this ListGlobalEipsRequest.
         :rtype: list[bool]
         """
@@ -668,8 +618,6 @@ class ListGlobalEipsRequest:
     @polluted.setter
     def polluted(self, polluted):
         """Sets the polluted of this ListGlobalEipsRequest.
-
-        根据是否污染过滤
 
         :param polluted: The polluted of this ListGlobalEipsRequest.
         :type polluted: list[bool]
@@ -680,8 +628,6 @@ class ListGlobalEipsRequest:
     def internet_bandwidth_is_null(self):
         """Gets the internet_bandwidth_is_null of this ListGlobalEipsRequest.
 
-        根据是否绑定全域公网带宽过滤
-
         :return: The internet_bandwidth_is_null of this ListGlobalEipsRequest.
         :rtype: list[bool]
         """
@@ -690,8 +636,6 @@ class ListGlobalEipsRequest:
     @internet_bandwidth_is_null.setter
     def internet_bandwidth_is_null(self, internet_bandwidth_is_null):
         """Sets the internet_bandwidth_is_null of this ListGlobalEipsRequest.
-
-        根据是否绑定全域公网带宽过滤
 
         :param internet_bandwidth_is_null: The internet_bandwidth_is_null of this ListGlobalEipsRequest.
         :type internet_bandwidth_is_null: list[bool]
@@ -702,8 +646,6 @@ class ListGlobalEipsRequest:
     def gcb_bandwidth_is_null(self):
         """Gets the gcb_bandwidth_is_null of this ListGlobalEipsRequest.
 
-        根据是否绑定骨干带宽过滤
-
         :return: The gcb_bandwidth_is_null of this ListGlobalEipsRequest.
         :rtype: list[bool]
         """
@@ -712,8 +654,6 @@ class ListGlobalEipsRequest:
     @gcb_bandwidth_is_null.setter
     def gcb_bandwidth_is_null(self, gcb_bandwidth_is_null):
         """Sets the gcb_bandwidth_is_null of this ListGlobalEipsRequest.
-
-        根据是否绑定骨干带宽过滤
 
         :param gcb_bandwidth_is_null: The gcb_bandwidth_is_null of this ListGlobalEipsRequest.
         :type gcb_bandwidth_is_null: list[bool]
@@ -724,8 +664,6 @@ class ListGlobalEipsRequest:
     def status(self):
         """Gets the status of this ListGlobalEipsRequest.
 
-        根据资源状态过滤
-
         :return: The status of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -734,8 +672,6 @@ class ListGlobalEipsRequest:
     @status.setter
     def status(self, status):
         """Sets the status of this ListGlobalEipsRequest.
-
-        根据资源状态过滤
 
         :param status: The status of this ListGlobalEipsRequest.
         :type status: list[str]
@@ -746,8 +682,6 @@ class ListGlobalEipsRequest:
     def associate_instance_info_region(self):
         """Gets the associate_instance_info_region of this ListGlobalEipsRequest.
 
-        根据绑定实例所属的局点过滤
-
         :return: The associate_instance_info_region of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -756,8 +690,6 @@ class ListGlobalEipsRequest:
     @associate_instance_info_region.setter
     def associate_instance_info_region(self, associate_instance_info_region):
         """Sets the associate_instance_info_region of this ListGlobalEipsRequest.
-
-        根据绑定实例所属的局点过滤
 
         :param associate_instance_info_region: The associate_instance_info_region of this ListGlobalEipsRequest.
         :type associate_instance_info_region: list[str]
@@ -768,8 +700,6 @@ class ListGlobalEipsRequest:
     def associate_instance_info_instance_type(self):
         """Gets the associate_instance_info_instance_type of this ListGlobalEipsRequest.
 
-        根据绑定实例的类型过滤
-
         :return: The associate_instance_info_instance_type of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -778,8 +708,6 @@ class ListGlobalEipsRequest:
     @associate_instance_info_instance_type.setter
     def associate_instance_info_instance_type(self, associate_instance_info_instance_type):
         """Sets the associate_instance_info_instance_type of this ListGlobalEipsRequest.
-
-        根据绑定实例的类型过滤
 
         :param associate_instance_info_instance_type: The associate_instance_info_instance_type of this ListGlobalEipsRequest.
         :type associate_instance_info_instance_type: list[str]
@@ -790,8 +718,6 @@ class ListGlobalEipsRequest:
     def associate_instance_info_public_border_group(self):
         """Gets the associate_instance_info_public_border_group of this ListGlobalEipsRequest.
 
-        根据绑定实例所属的边缘信息过滤
-
         :return: The associate_instance_info_public_border_group of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -800,8 +726,6 @@ class ListGlobalEipsRequest:
     @associate_instance_info_public_border_group.setter
     def associate_instance_info_public_border_group(self, associate_instance_info_public_border_group):
         """Sets the associate_instance_info_public_border_group of this ListGlobalEipsRequest.
-
-        根据绑定实例所属的边缘信息过滤
 
         :param associate_instance_info_public_border_group: The associate_instance_info_public_border_group of this ListGlobalEipsRequest.
         :type associate_instance_info_public_border_group: list[str]
@@ -812,8 +736,6 @@ class ListGlobalEipsRequest:
     def associate_instance_info_instance_site(self):
         """Gets the associate_instance_info_instance_site of this ListGlobalEipsRequest.
 
-        根据绑定实例所在的站点过滤
-
         :return: The associate_instance_info_instance_site of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -822,8 +744,6 @@ class ListGlobalEipsRequest:
     @associate_instance_info_instance_site.setter
     def associate_instance_info_instance_site(self, associate_instance_info_instance_site):
         """Sets the associate_instance_info_instance_site of this ListGlobalEipsRequest.
-
-        根据绑定实例所在的站点过滤
 
         :param associate_instance_info_instance_site: The associate_instance_info_instance_site of this ListGlobalEipsRequest.
         :type associate_instance_info_instance_site: list[str]
@@ -834,8 +754,6 @@ class ListGlobalEipsRequest:
     def associate_instance_info_instance_id(self):
         """Gets the associate_instance_info_instance_id of this ListGlobalEipsRequest.
 
-        根据绑定实例的ID过滤
-
         :return: The associate_instance_info_instance_id of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -844,8 +762,6 @@ class ListGlobalEipsRequest:
     @associate_instance_info_instance_id.setter
     def associate_instance_info_instance_id(self, associate_instance_info_instance_id):
         """Sets the associate_instance_info_instance_id of this ListGlobalEipsRequest.
-
-        根据绑定实例的ID过滤
 
         :param associate_instance_info_instance_id: The associate_instance_info_instance_id of this ListGlobalEipsRequest.
         :type associate_instance_info_instance_id: list[str]
@@ -856,8 +772,6 @@ class ListGlobalEipsRequest:
     def associate_instance_info_project_id(self):
         """Gets the associate_instance_info_project_id of this ListGlobalEipsRequest.
 
-        根据绑定实例所属的项目ID过滤
-
         :return: The associate_instance_info_project_id of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -866,8 +780,6 @@ class ListGlobalEipsRequest:
     @associate_instance_info_project_id.setter
     def associate_instance_info_project_id(self, associate_instance_info_project_id):
         """Sets the associate_instance_info_project_id of this ListGlobalEipsRequest.
-
-        根据绑定实例所属的项目ID过滤
 
         :param associate_instance_info_project_id: The associate_instance_info_project_id of this ListGlobalEipsRequest.
         :type associate_instance_info_project_id: list[str]
@@ -878,8 +790,6 @@ class ListGlobalEipsRequest:
     def associate_instance_info_service_id(self):
         """Gets the associate_instance_info_service_id of this ListGlobalEipsRequest.
 
-        根据绑定实例所属的服务ID过滤
-
         :return: The associate_instance_info_service_id of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -888,8 +798,6 @@ class ListGlobalEipsRequest:
     @associate_instance_info_service_id.setter
     def associate_instance_info_service_id(self, associate_instance_info_service_id):
         """Sets the associate_instance_info_service_id of this ListGlobalEipsRequest.
-
-        根据绑定实例所属的服务ID过滤
 
         :param associate_instance_info_service_id: The associate_instance_info_service_id of this ListGlobalEipsRequest.
         :type associate_instance_info_service_id: list[str]
@@ -900,8 +808,6 @@ class ListGlobalEipsRequest:
     def associate_instance_info_service_type(self):
         """Gets the associate_instance_info_service_type of this ListGlobalEipsRequest.
 
-        根据绑定实例的服务类型过滤
-
         :return: The associate_instance_info_service_type of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -910,8 +816,6 @@ class ListGlobalEipsRequest:
     @associate_instance_info_service_type.setter
     def associate_instance_info_service_type(self, associate_instance_info_service_type):
         """Sets the associate_instance_info_service_type of this ListGlobalEipsRequest.
-
-        根据绑定实例的服务类型过滤
 
         :param associate_instance_info_service_type: The associate_instance_info_service_type of this ListGlobalEipsRequest.
         :type associate_instance_info_service_type: list[str]
@@ -922,8 +826,6 @@ class ListGlobalEipsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListGlobalEipsRequest.
 
-        根据企业项目ID过滤
-
         :return: The enterprise_project_id of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -932,8 +834,6 @@ class ListGlobalEipsRequest:
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListGlobalEipsRequest.
-
-        根据企业项目ID过滤
 
         :param enterprise_project_id: The enterprise_project_id of this ListGlobalEipsRequest.
         :type enterprise_project_id: list[str]
@@ -944,8 +844,6 @@ class ListGlobalEipsRequest:
     def tags(self):
         """Gets the tags of this ListGlobalEipsRequest.
 
-        根据标签过滤
-
         :return: The tags of this ListGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -954,8 +852,6 @@ class ListGlobalEipsRequest:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ListGlobalEipsRequest.
-
-        根据标签过滤
 
         :param tags: The tags of this ListGlobalEipsRequest.
         :type tags: list[str]

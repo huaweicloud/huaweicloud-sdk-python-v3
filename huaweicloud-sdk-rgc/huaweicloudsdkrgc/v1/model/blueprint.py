@@ -18,15 +18,19 @@ class Blueprint:
 
     openapi_types = {
         'blueprint_product_id': 'str',
-        'blueprint_product_version': 'str'
+        'blueprint_product_version': 'str',
+        'variables': 'str',
+        'is_blueprint_has_multi_account_resource': 'bool'
     }
 
     attribute_map = {
         'blueprint_product_id': 'blueprint_product_id',
-        'blueprint_product_version': 'blueprint_product_version'
+        'blueprint_product_version': 'blueprint_product_version',
+        'variables': 'variables',
+        'is_blueprint_has_multi_account_resource': 'is_blueprint_has_multi_account_resource'
     }
 
-    def __init__(self, blueprint_product_id=None, blueprint_product_version=None):
+    def __init__(self, blueprint_product_id=None, blueprint_product_version=None, variables=None, is_blueprint_has_multi_account_resource=None):
         """Blueprint
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class Blueprint:
         :type blueprint_product_id: str
         :param blueprint_product_version: 模板版本。
         :type blueprint_product_version: str
+        :param variables: 模板部署参数。
+        :type variables: str
+        :param is_blueprint_has_multi_account_resource: 模板是否包含多账号资源。
+        :type is_blueprint_has_multi_account_resource: bool
         """
         
         
 
         self._blueprint_product_id = None
         self._blueprint_product_version = None
+        self._variables = None
+        self._is_blueprint_has_multi_account_resource = None
         self.discriminator = None
 
         if blueprint_product_id is not None:
             self.blueprint_product_id = blueprint_product_id
         if blueprint_product_version is not None:
             self.blueprint_product_version = blueprint_product_version
+        if variables is not None:
+            self.variables = variables
+        if is_blueprint_has_multi_account_resource is not None:
+            self.is_blueprint_has_multi_account_resource = is_blueprint_has_multi_account_resource
 
     @property
     def blueprint_product_id(self):
@@ -91,6 +105,50 @@ class Blueprint:
         :type blueprint_product_version: str
         """
         self._blueprint_product_version = blueprint_product_version
+
+    @property
+    def variables(self):
+        """Gets the variables of this Blueprint.
+
+        模板部署参数。
+
+        :return: The variables of this Blueprint.
+        :rtype: str
+        """
+        return self._variables
+
+    @variables.setter
+    def variables(self, variables):
+        """Sets the variables of this Blueprint.
+
+        模板部署参数。
+
+        :param variables: The variables of this Blueprint.
+        :type variables: str
+        """
+        self._variables = variables
+
+    @property
+    def is_blueprint_has_multi_account_resource(self):
+        """Gets the is_blueprint_has_multi_account_resource of this Blueprint.
+
+        模板是否包含多账号资源。
+
+        :return: The is_blueprint_has_multi_account_resource of this Blueprint.
+        :rtype: bool
+        """
+        return self._is_blueprint_has_multi_account_resource
+
+    @is_blueprint_has_multi_account_resource.setter
+    def is_blueprint_has_multi_account_resource(self, is_blueprint_has_multi_account_resource):
+        """Sets the is_blueprint_has_multi_account_resource of this Blueprint.
+
+        模板是否包含多账号资源。
+
+        :param is_blueprint_has_multi_account_resource: The is_blueprint_has_multi_account_resource of this Blueprint.
+        :type is_blueprint_has_multi_account_resource: bool
+        """
+        self._is_blueprint_has_multi_account_resource = is_blueprint_has_multi_account_resource
 
     def to_dict(self):
         """Returns the model properties as a dict"""

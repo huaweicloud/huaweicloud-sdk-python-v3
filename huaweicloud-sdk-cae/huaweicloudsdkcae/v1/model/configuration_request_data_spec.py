@@ -27,7 +27,6 @@ class ConfigurationRequestDataSpec:
         'service_center_addr': 'str',
         'cse_id': 'str',
         'envs': 'dict(str, str)',
-        'ip': 'str',
         'items': 'list[AccessConfigurationDataItems]',
         'scale_strategy': 'str',
         'max_replica_count': 'int',
@@ -43,7 +42,7 @@ class ConfigurationRequestDataSpec:
         'log_paths': 'list[str]',
         'instrumentation': 'str',
         'path': 'str',
-        'port': 'str',
+        'port': 'int',
         'metrics': 'list[str]'
     }
 
@@ -58,7 +57,6 @@ class ConfigurationRequestDataSpec:
         'service_center_addr': 'service_center_addr',
         'cse_id': 'cse_id',
         'envs': 'envs',
-        'ip': 'ip',
         'items': 'items',
         'scale_strategy': 'scale_strategy',
         'max_replica_count': 'max_replica_count',
@@ -78,7 +76,7 @@ class ConfigurationRequestDataSpec:
         'metrics': 'metrics'
     }
 
-    def __init__(self, rds_id=None, rds_db_name=None, rds_address=None, rds_username=None, rds_password=None, rds_port=None, config_center_addr=None, service_center_addr=None, cse_id=None, envs=None, ip=None, items=None, scale_strategy=None, max_replica_count=None, min_replica_count=None, advanced=None, triggers=None, volumes=None, liveness_probe=None, startup_probe=None, readiness_probe=None, post_start=None, pre_stop=None, log_paths=None, instrumentation=None, path=None, port=None, metrics=None):
+    def __init__(self, rds_id=None, rds_db_name=None, rds_address=None, rds_username=None, rds_password=None, rds_port=None, config_center_addr=None, service_center_addr=None, cse_id=None, envs=None, items=None, scale_strategy=None, max_replica_count=None, min_replica_count=None, advanced=None, triggers=None, volumes=None, liveness_probe=None, startup_probe=None, readiness_probe=None, post_start=None, pre_stop=None, log_paths=None, instrumentation=None, path=None, port=None, metrics=None):
         """ConfigurationRequestDataSpec
 
         The model defined in huaweicloud sdk
@@ -103,8 +101,6 @@ class ConfigurationRequestDataSpec:
         :type cse_id: str
         :param envs: 环境变量配置。 常用环境变量如下： - TZ: 时区设置，东八区可设置为Asia/Shanghai。 - LANG: 语言字符集设置，中文UTF8可设置为zh_CN.UTF-8。
         :type envs: dict(str, str)
-        :param ip: 弹性公网IP，响应体参数，未配置域名时返回此参数。
-        :type ip: str
         :param items: 访问方式配置列表。  ConfigurationItem.type为\&quot;access\&quot;时，配置此参数。 
         :type items: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationDataItems`]
         :param scale_strategy: 伸缩策略配置策略类型。  ConfigurationItem.type为\&quot;scaling\&quot;时，配置此参数。 
@@ -136,7 +132,7 @@ class ConfigurationRequestDataSpec:
         :param path: 自定义监控指标配置采集路径。  ConfigurationItem.type为\&quot;customMetric\&quot;时，配置此参数。 
         :type path: str
         :param port: 自定义监控指标配置采集端口。  ConfigurationItem.type为\&quot;customMetric\&quot;时，配置此参数。 
-        :type port: str
+        :type port: int
         :param metrics: 自定义监控指标配置指标名称。  ConfigurationItem.type为\&quot;customMetric\&quot;时，配置此参数。 
         :type metrics: list[str]
         """
@@ -153,7 +149,6 @@ class ConfigurationRequestDataSpec:
         self._service_center_addr = None
         self._cse_id = None
         self._envs = None
-        self._ip = None
         self._items = None
         self._scale_strategy = None
         self._max_replica_count = None
@@ -193,8 +188,6 @@ class ConfigurationRequestDataSpec:
             self.cse_id = cse_id
         if envs is not None:
             self.envs = envs
-        if ip is not None:
-            self.ip = ip
         if items is not None:
             self.items = items
         if scale_strategy is not None:
@@ -449,28 +442,6 @@ class ConfigurationRequestDataSpec:
         :type envs: dict(str, str)
         """
         self._envs = envs
-
-    @property
-    def ip(self):
-        """Gets the ip of this ConfigurationRequestDataSpec.
-
-        弹性公网IP，响应体参数，未配置域名时返回此参数。
-
-        :return: The ip of this ConfigurationRequestDataSpec.
-        :rtype: str
-        """
-        return self._ip
-
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this ConfigurationRequestDataSpec.
-
-        弹性公网IP，响应体参数，未配置域名时返回此参数。
-
-        :param ip: The ip of this ConfigurationRequestDataSpec.
-        :type ip: str
-        """
-        self._ip = ip
 
     @property
     def items(self):
@@ -785,7 +756,7 @@ class ConfigurationRequestDataSpec:
         自定义监控指标配置采集端口。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
         :return: The port of this ConfigurationRequestDataSpec.
-        :rtype: str
+        :rtype: int
         """
         return self._port
 
@@ -796,7 +767,7 @@ class ConfigurationRequestDataSpec:
         自定义监控指标配置采集端口。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
         :param port: The port of this ConfigurationRequestDataSpec.
-        :type port: str
+        :type port: int
         """
         self._port = port
 

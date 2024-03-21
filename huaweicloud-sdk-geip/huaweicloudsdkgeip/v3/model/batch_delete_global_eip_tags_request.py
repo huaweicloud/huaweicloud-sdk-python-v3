@@ -31,7 +31,7 @@ class BatchDeleteGlobalEipTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 全域弹性公网IP的id
+        :param resource_id: 
         :type resource_id: str
         :param body: Body of the BatchDeleteGlobalEipTagsRequest
         :type body: :class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBody`
@@ -51,8 +51,6 @@ class BatchDeleteGlobalEipTagsRequest:
     def resource_id(self):
         """Gets the resource_id of this BatchDeleteGlobalEipTagsRequest.
 
-        全域弹性公网IP的id
-
         :return: The resource_id of this BatchDeleteGlobalEipTagsRequest.
         :rtype: str
         """
@@ -61,8 +59,6 @@ class BatchDeleteGlobalEipTagsRequest:
     @resource_id.setter
     def resource_id(self, resource_id):
         """Sets the resource_id of this BatchDeleteGlobalEipTagsRequest.
-
-        全域弹性公网IP的id
 
         :param resource_id: The resource_id of this BatchDeleteGlobalEipTagsRequest.
         :type resource_id: str

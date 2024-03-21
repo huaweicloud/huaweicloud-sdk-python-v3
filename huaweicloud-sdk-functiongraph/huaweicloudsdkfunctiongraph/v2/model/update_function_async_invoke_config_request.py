@@ -31,7 +31,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
         :param body: Body of the UpdateFunctionAsyncInvokeConfigRequest
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequestBody`
@@ -51,7 +51,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
     def function_urn(self):
         """Gets the function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
         :type function_urn: str

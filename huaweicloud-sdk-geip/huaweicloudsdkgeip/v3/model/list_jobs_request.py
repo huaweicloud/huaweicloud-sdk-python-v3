@@ -55,17 +55,17 @@ class ListJobsRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param action: 根据action过滤
+        :param action: 
         :type action: list[str]
-        :param status: 根据job状态过滤
+        :param status: 
         :type status: list[str]
         """
         
@@ -196,8 +196,6 @@ class ListJobsRequest:
     def fields(self):
         """Gets the fields of this ListJobsRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListJobsRequest.
         :rtype: list[str]
         """
@@ -206,8 +204,6 @@ class ListJobsRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListJobsRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListJobsRequest.
         :type fields: list[str]
@@ -262,8 +258,6 @@ class ListJobsRequest:
     def id(self):
         """Gets the id of this ListJobsRequest.
 
-        根据ID过滤
-
         :return: The id of this ListJobsRequest.
         :rtype: list[str]
         """
@@ -272,8 +266,6 @@ class ListJobsRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this ListJobsRequest.
-
-        根据ID过滤
 
         :param id: The id of this ListJobsRequest.
         :type id: list[str]
@@ -284,8 +276,6 @@ class ListJobsRequest:
     def action(self):
         """Gets the action of this ListJobsRequest.
 
-        根据action过滤
-
         :return: The action of this ListJobsRequest.
         :rtype: list[str]
         """
@@ -294,8 +284,6 @@ class ListJobsRequest:
     @action.setter
     def action(self, action):
         """Sets the action of this ListJobsRequest.
-
-        根据action过滤
 
         :param action: The action of this ListJobsRequest.
         :type action: list[str]
@@ -306,8 +294,6 @@ class ListJobsRequest:
     def status(self):
         """Gets the status of this ListJobsRequest.
 
-        根据job状态过滤
-
         :return: The status of this ListJobsRequest.
         :rtype: list[str]
         """
@@ -316,8 +302,6 @@ class ListJobsRequest:
     @status.setter
     def status(self, status):
         """Sets the status of this ListJobsRequest.
-
-        根据job状态过滤
 
         :param status: The status of this ListJobsRequest.
         :type status: list[str]

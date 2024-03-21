@@ -49,19 +49,19 @@ class ListHostRaspProtectHistoryInfoRequest:
 
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
-        :param host_id: Host Id
+        :param host_id: Host Id，为空时查所有主机
         :type host_id: str
-        :param start_time: 起始时间
+        :param start_time: 起始时间(ms)
         :type start_time: int
-        :param end_time: 终止时间
+        :param end_time: 终止时间(ms)
         :type end_time: int
         :param limit: limit
         :type limit: int
         :param offset: offset
         :type offset: int
-        :param alarm_level: 告警级别
+        :param alarm_level: 告警级别 - 1 : 低危 - 2 : 中危 - 3 : 高危 - 4 : 严重
         :type alarm_level: int
         :param severity: 威胁等级   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
         :type severity: str
@@ -86,7 +86,8 @@ class ListHostRaspProtectHistoryInfoRequest:
         self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        self.host_id = host_id
+        if host_id is not None:
+            self.host_id = host_id
         self.start_time = start_time
         self.end_time = end_time
         self.limit = limit
@@ -124,7 +125,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
 
-        企业项目
+        企业项目ID
 
         :return: The enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
         :rtype: str
@@ -135,7 +136,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
 
-        企业项目
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
         :type enterprise_project_id: str
@@ -146,7 +147,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def host_id(self):
         """Gets the host_id of this ListHostRaspProtectHistoryInfoRequest.
 
-        Host Id
+        Host Id，为空时查所有主机
 
         :return: The host_id of this ListHostRaspProtectHistoryInfoRequest.
         :rtype: str
@@ -157,7 +158,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def host_id(self, host_id):
         """Sets the host_id of this ListHostRaspProtectHistoryInfoRequest.
 
-        Host Id
+        Host Id，为空时查所有主机
 
         :param host_id: The host_id of this ListHostRaspProtectHistoryInfoRequest.
         :type host_id: str
@@ -168,7 +169,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def start_time(self):
         """Gets the start_time of this ListHostRaspProtectHistoryInfoRequest.
 
-        起始时间
+        起始时间(ms)
 
         :return: The start_time of this ListHostRaspProtectHistoryInfoRequest.
         :rtype: int
@@ -179,7 +180,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListHostRaspProtectHistoryInfoRequest.
 
-        起始时间
+        起始时间(ms)
 
         :param start_time: The start_time of this ListHostRaspProtectHistoryInfoRequest.
         :type start_time: int
@@ -190,7 +191,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def end_time(self):
         """Gets the end_time of this ListHostRaspProtectHistoryInfoRequest.
 
-        终止时间
+        终止时间(ms)
 
         :return: The end_time of this ListHostRaspProtectHistoryInfoRequest.
         :rtype: int
@@ -201,7 +202,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListHostRaspProtectHistoryInfoRequest.
 
-        终止时间
+        终止时间(ms)
 
         :param end_time: The end_time of this ListHostRaspProtectHistoryInfoRequest.
         :type end_time: int
@@ -256,7 +257,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def alarm_level(self):
         """Gets the alarm_level of this ListHostRaspProtectHistoryInfoRequest.
 
-        告警级别
+        告警级别 - 1 : 低危 - 2 : 中危 - 3 : 高危 - 4 : 严重
 
         :return: The alarm_level of this ListHostRaspProtectHistoryInfoRequest.
         :rtype: int
@@ -267,7 +268,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def alarm_level(self, alarm_level):
         """Sets the alarm_level of this ListHostRaspProtectHistoryInfoRequest.
 
-        告警级别
+        告警级别 - 1 : 低危 - 2 : 中危 - 3 : 高危 - 4 : 严重
 
         :param alarm_level: The alarm_level of this ListHostRaspProtectHistoryInfoRequest.
         :type alarm_level: int

@@ -3313,8 +3313,10 @@ class NatAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'floating_ip_address' in local_var_params:
             query_params.append(('floating_ip_address', local_var_params['floating_ip_address']))
+            collection_formats['floating_ip_address'] = 'csv'
         if 'floating_ip_id' in local_var_params:
             query_params.append(('floating_ip_id', local_var_params['floating_ip_id']))
+            collection_formats['floating_ip_id'] = 'csv'
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'description' in local_var_params:

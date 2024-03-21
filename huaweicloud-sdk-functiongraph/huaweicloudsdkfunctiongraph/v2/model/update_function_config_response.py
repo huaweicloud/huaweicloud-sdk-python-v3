@@ -204,7 +204,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type type: str
         :param enable_dynamic_memory: 是否启动动态内存配置
         :type enable_dynamic_memory: bool
-        :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        :param is_stateful_function: 是否支持有状态，v2版本支持
         :type is_stateful_function: bool
         :param domain_names: 函数配置的需要支持域名解析的内网域名。
         :type domain_names: str
@@ -1273,7 +1273,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def is_stateful_function(self):
         """Gets the is_stateful_function of this UpdateFunctionConfigResponse.
 
-        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        是否支持有状态，v2版本支持
 
         :return: The is_stateful_function of this UpdateFunctionConfigResponse.
         :rtype: bool
@@ -1284,7 +1284,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def is_stateful_function(self, is_stateful_function):
         """Sets the is_stateful_function of this UpdateFunctionConfigResponse.
 
-        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        是否支持有状态，v2版本支持
 
         :param is_stateful_function: The is_stateful_function of this UpdateFunctionConfigResponse.
         :type is_stateful_function: bool

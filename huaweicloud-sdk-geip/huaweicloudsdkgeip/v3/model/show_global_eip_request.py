@@ -31,9 +31,9 @@ class ShowGlobalEipRequest:
 
         The model defined in huaweicloud sdk
 
-        :param global_eip_id: global_eip_id
+        :param global_eip_id: 
         :type global_eip_id: str
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         """
         
@@ -51,8 +51,6 @@ class ShowGlobalEipRequest:
     def global_eip_id(self):
         """Gets the global_eip_id of this ShowGlobalEipRequest.
 
-        global_eip_id
-
         :return: The global_eip_id of this ShowGlobalEipRequest.
         :rtype: str
         """
@@ -61,8 +59,6 @@ class ShowGlobalEipRequest:
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
         """Sets the global_eip_id of this ShowGlobalEipRequest.
-
-        global_eip_id
 
         :param global_eip_id: The global_eip_id of this ShowGlobalEipRequest.
         :type global_eip_id: str
@@ -73,8 +69,6 @@ class ShowGlobalEipRequest:
     def fields(self):
         """Gets the fields of this ShowGlobalEipRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ShowGlobalEipRequest.
         :rtype: list[str]
         """
@@ -83,8 +77,6 @@ class ShowGlobalEipRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ShowGlobalEipRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ShowGlobalEipRequest.
         :type fields: list[str]

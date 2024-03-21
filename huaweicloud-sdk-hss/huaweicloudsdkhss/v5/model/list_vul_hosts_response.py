@@ -32,9 +32,9 @@ class ListVulHostsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 受影响的云服务器台数
+        :param total_num: 受影响的云服务器总数
         :type total_num: int
-        :param data_list: 受影响的云服务器台数信息
+        :param data_list: 受影响的云服务器列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulHostInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListVulHostsResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListVulHostsResponse.
 
-        受影响的云服务器台数
+        受影响的云服务器总数
 
         :return: The total_num of this ListVulHostsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListVulHostsResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListVulHostsResponse.
 
-        受影响的云服务器台数
+        受影响的云服务器总数
 
         :param total_num: The total_num of this ListVulHostsResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListVulHostsResponse(SdkResponse):
     def data_list(self):
         """Gets the data_list of this ListVulHostsResponse.
 
-        受影响的云服务器台数信息
+        受影响的云服务器列表
 
         :return: The data_list of this ListVulHostsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.VulHostInfo`]
@@ -86,7 +86,7 @@ class ListVulHostsResponse(SdkResponse):
     def data_list(self, data_list):
         """Sets the data_list of this ListVulHostsResponse.
 
-        受影响的云服务器台数信息
+        受影响的云服务器列表
 
         :param data_list: The data_list of this ListVulHostsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulHostInfo`]

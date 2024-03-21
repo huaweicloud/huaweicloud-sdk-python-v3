@@ -37,9 +37,9 @@ class ChangeEventRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param container_name: 容器实例名称
         :type container_name: str
@@ -72,7 +72,7 @@ class ChangeEventRequest:
     def region(self):
         """Gets the region of this ChangeEventRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ChangeEventRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ChangeEventRequest:
     def region(self, region):
         """Sets the region of this ChangeEventRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ChangeEventRequest.
         :type region: str
@@ -94,7 +94,7 @@ class ChangeEventRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ChangeEventRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ChangeEventRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ChangeEventRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ChangeEventRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ChangeEventRequest.
         :type enterprise_project_id: str

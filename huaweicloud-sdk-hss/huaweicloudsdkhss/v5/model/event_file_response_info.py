@@ -81,7 +81,7 @@ class EventFileResponseInfo:
         :type file_atime: int
         :param file_ctime: 文件最后一次状态改变时间
         :type file_ctime: int
-        :param file_hash: 文件hash
+        :param file_hash: 文件hash,当前为sha256
         :type file_hash: str
         :param file_md5: 文件md5
         :type file_md5: str
@@ -317,7 +317,7 @@ class EventFileResponseInfo:
     def file_hash(self):
         """Gets the file_hash of this EventFileResponseInfo.
 
-        文件hash
+        文件hash,当前为sha256
 
         :return: The file_hash of this EventFileResponseInfo.
         :rtype: str
@@ -328,7 +328,7 @@ class EventFileResponseInfo:
     def file_hash(self, file_hash):
         """Sets the file_hash of this EventFileResponseInfo.
 
-        文件hash
+        文件hash,当前为sha256
 
         :param file_hash: The file_hash of this EventFileResponseInfo.
         :type file_hash: str

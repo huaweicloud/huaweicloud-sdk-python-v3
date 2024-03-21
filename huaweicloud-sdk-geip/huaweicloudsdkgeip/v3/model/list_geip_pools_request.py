@@ -63,25 +63,25 @@ class ListGeipPoolsRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param code: 根据名称过滤
+        :param code: 
         :type code: list[str]
-        :param access_site: 根据接入点过滤
+        :param access_site: 
         :type access_site: list[str]
-        :param isp: 根据运营商线路过滤
+        :param isp: 
         :type isp: list[str]
-        :param ip_version: 根据IP版本过滤
+        :param ip_version: 
         :type ip_version: list[str]
-        :param status: 根据池子状态过滤
+        :param status: 
         :type status: list[str]
-        :param type: 根据池子里存的内容过滤。取值：GEIP-用于分配全域弹性公网IP单地址；GEIP_SEGMENT-用于分配全域弹性公网IP段
+        :param type: 
         :type type: list[str]
         """
         
@@ -224,8 +224,6 @@ class ListGeipPoolsRequest:
     def fields(self):
         """Gets the fields of this ListGeipPoolsRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListGeipPoolsRequest.
         :rtype: list[str]
         """
@@ -234,8 +232,6 @@ class ListGeipPoolsRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListGeipPoolsRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListGeipPoolsRequest.
         :type fields: list[str]
@@ -290,8 +286,6 @@ class ListGeipPoolsRequest:
     def id(self):
         """Gets the id of this ListGeipPoolsRequest.
 
-        根据ID过滤
-
         :return: The id of this ListGeipPoolsRequest.
         :rtype: list[str]
         """
@@ -300,8 +294,6 @@ class ListGeipPoolsRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this ListGeipPoolsRequest.
-
-        根据ID过滤
 
         :param id: The id of this ListGeipPoolsRequest.
         :type id: list[str]
@@ -312,8 +304,6 @@ class ListGeipPoolsRequest:
     def code(self):
         """Gets the code of this ListGeipPoolsRequest.
 
-        根据名称过滤
-
         :return: The code of this ListGeipPoolsRequest.
         :rtype: list[str]
         """
@@ -322,8 +312,6 @@ class ListGeipPoolsRequest:
     @code.setter
     def code(self, code):
         """Sets the code of this ListGeipPoolsRequest.
-
-        根据名称过滤
 
         :param code: The code of this ListGeipPoolsRequest.
         :type code: list[str]
@@ -334,8 +322,6 @@ class ListGeipPoolsRequest:
     def access_site(self):
         """Gets the access_site of this ListGeipPoolsRequest.
 
-        根据接入点过滤
-
         :return: The access_site of this ListGeipPoolsRequest.
         :rtype: list[str]
         """
@@ -344,8 +330,6 @@ class ListGeipPoolsRequest:
     @access_site.setter
     def access_site(self, access_site):
         """Sets the access_site of this ListGeipPoolsRequest.
-
-        根据接入点过滤
 
         :param access_site: The access_site of this ListGeipPoolsRequest.
         :type access_site: list[str]
@@ -356,8 +340,6 @@ class ListGeipPoolsRequest:
     def isp(self):
         """Gets the isp of this ListGeipPoolsRequest.
 
-        根据运营商线路过滤
-
         :return: The isp of this ListGeipPoolsRequest.
         :rtype: list[str]
         """
@@ -366,8 +348,6 @@ class ListGeipPoolsRequest:
     @isp.setter
     def isp(self, isp):
         """Sets the isp of this ListGeipPoolsRequest.
-
-        根据运营商线路过滤
 
         :param isp: The isp of this ListGeipPoolsRequest.
         :type isp: list[str]
@@ -378,8 +358,6 @@ class ListGeipPoolsRequest:
     def ip_version(self):
         """Gets the ip_version of this ListGeipPoolsRequest.
 
-        根据IP版本过滤
-
         :return: The ip_version of this ListGeipPoolsRequest.
         :rtype: list[str]
         """
@@ -388,8 +366,6 @@ class ListGeipPoolsRequest:
     @ip_version.setter
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListGeipPoolsRequest.
-
-        根据IP版本过滤
 
         :param ip_version: The ip_version of this ListGeipPoolsRequest.
         :type ip_version: list[str]
@@ -400,8 +376,6 @@ class ListGeipPoolsRequest:
     def status(self):
         """Gets the status of this ListGeipPoolsRequest.
 
-        根据池子状态过滤
-
         :return: The status of this ListGeipPoolsRequest.
         :rtype: list[str]
         """
@@ -410,8 +384,6 @@ class ListGeipPoolsRequest:
     @status.setter
     def status(self, status):
         """Sets the status of this ListGeipPoolsRequest.
-
-        根据池子状态过滤
 
         :param status: The status of this ListGeipPoolsRequest.
         :type status: list[str]
@@ -422,8 +394,6 @@ class ListGeipPoolsRequest:
     def type(self):
         """Gets the type of this ListGeipPoolsRequest.
 
-        根据池子里存的内容过滤。取值：GEIP-用于分配全域弹性公网IP单地址；GEIP_SEGMENT-用于分配全域弹性公网IP段
-
         :return: The type of this ListGeipPoolsRequest.
         :rtype: list[str]
         """
@@ -432,8 +402,6 @@ class ListGeipPoolsRequest:
     @type.setter
     def type(self, type):
         """Sets the type of this ListGeipPoolsRequest.
-
-        根据池子里存的内容过滤。取值：GEIP-用于分配全域弹性公网IP单地址；GEIP_SEGMENT-用于分配全域弹性公网IP段
 
         :param type: The type of this ListGeipPoolsRequest.
         :type type: list[str]

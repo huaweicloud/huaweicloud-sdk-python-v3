@@ -22,7 +22,7 @@ class BatchCreateInternetBandwidthTagsResponse(SdkResponse):
     }
 
     attribute_map = {
-        'x_request_id': 'x-request-id'
+        'x_request_id': 'X-Request-Id'
     }
 
     def __init__(self, x_request_id=None):

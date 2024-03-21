@@ -47,9 +47,9 @@ class ListGeipResourceQuotasRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
-        :param type: 根据类型过滤
+        :param type: 
         :type type: list[str]
         """
         
@@ -168,8 +168,6 @@ class ListGeipResourceQuotasRequest:
     def fields(self):
         """Gets the fields of this ListGeipResourceQuotasRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListGeipResourceQuotasRequest.
         :rtype: list[str]
         """
@@ -178,8 +176,6 @@ class ListGeipResourceQuotasRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListGeipResourceQuotasRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListGeipResourceQuotasRequest.
         :type fields: list[str]
@@ -190,8 +186,6 @@ class ListGeipResourceQuotasRequest:
     def type(self):
         """Gets the type of this ListGeipResourceQuotasRequest.
 
-        根据类型过滤
-
         :return: The type of this ListGeipResourceQuotasRequest.
         :rtype: list[str]
         """
@@ -200,8 +194,6 @@ class ListGeipResourceQuotasRequest:
     @type.setter
     def type(self, type):
         """Sets the type of this ListGeipResourceQuotasRequest.
-
-        根据类型过滤
 
         :param type: The type of this ListGeipResourceQuotasRequest.
         :type type: list[str]

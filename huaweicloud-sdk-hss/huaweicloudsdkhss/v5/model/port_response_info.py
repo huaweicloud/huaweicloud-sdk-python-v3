@@ -49,17 +49,17 @@ class PortResponseInfo:
         :type host_id: str
         :param laddr: 监听ip
         :type laddr: str
-        :param status: port status, normal, danger or unknow   - \&quot;normal\&quot; : 正常   - \&quot;danger\&quot; : 危险   - \&quot;unknow\&quot; : 未知
+        :param status: port status, normal, danger or unknow   - \&quot;normal\&quot; : 正常   - \&quot;danger\&quot; : 危险   - \&quot;unknown\&quot; : 未知
         :type status: str
         :param port: 端口号
         :type port: int
-        :param type: 类型
+        :param type: 端口类型：目前包括TCP，UDP两种
         :type type: str
         :param pid: 进程ID
         :type pid: int
-        :param path: 程序文件
+        :param path: 进程可执行文件路径
         :type path: str
-        :param agent_id: agent id
+        :param agent_id: Agent ID
         :type agent_id: str
         :param container_id: 容器id
         :type container_id: str
@@ -145,7 +145,7 @@ class PortResponseInfo:
     def status(self):
         """Gets the status of this PortResponseInfo.
 
-        port status, normal, danger or unknow   - \"normal\" : 正常   - \"danger\" : 危险   - \"unknow\" : 未知
+        port status, normal, danger or unknow   - \"normal\" : 正常   - \"danger\" : 危险   - \"unknown\" : 未知
 
         :return: The status of this PortResponseInfo.
         :rtype: str
@@ -156,7 +156,7 @@ class PortResponseInfo:
     def status(self, status):
         """Sets the status of this PortResponseInfo.
 
-        port status, normal, danger or unknow   - \"normal\" : 正常   - \"danger\" : 危险   - \"unknow\" : 未知
+        port status, normal, danger or unknow   - \"normal\" : 正常   - \"danger\" : 危险   - \"unknown\" : 未知
 
         :param status: The status of this PortResponseInfo.
         :type status: str
@@ -189,7 +189,7 @@ class PortResponseInfo:
     def type(self):
         """Gets the type of this PortResponseInfo.
 
-        类型
+        端口类型：目前包括TCP，UDP两种
 
         :return: The type of this PortResponseInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class PortResponseInfo:
     def type(self, type):
         """Sets the type of this PortResponseInfo.
 
-        类型
+        端口类型：目前包括TCP，UDP两种
 
         :param type: The type of this PortResponseInfo.
         :type type: str
@@ -233,7 +233,7 @@ class PortResponseInfo:
     def path(self):
         """Gets the path of this PortResponseInfo.
 
-        程序文件
+        进程可执行文件路径
 
         :return: The path of this PortResponseInfo.
         :rtype: str
@@ -244,7 +244,7 @@ class PortResponseInfo:
     def path(self, path):
         """Sets the path of this PortResponseInfo.
 
-        程序文件
+        进程可执行文件路径
 
         :param path: The path of this PortResponseInfo.
         :type path: str
@@ -255,7 +255,7 @@ class PortResponseInfo:
     def agent_id(self):
         """Gets the agent_id of this PortResponseInfo.
 
-        agent id
+        Agent ID
 
         :return: The agent_id of this PortResponseInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class PortResponseInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this PortResponseInfo.
 
-        agent id
+        Agent ID
 
         :param agent_id: The agent_id of this PortResponseInfo.
         :type agent_id: str

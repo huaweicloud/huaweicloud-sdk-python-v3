@@ -73,7 +73,7 @@ class EventUserResponseInfo:
         :type user_home_dir: str
         :param login_ip: 用户登录ip
         :type login_ip: str
-        :param service_type: 登录的服务类型
+        :param service_type: 服务类型，包含如下:   - system   - mysql   - redis
         :type service_type: str
         :param service_port: 登录服务端口
         :type service_port: int
@@ -289,7 +289,7 @@ class EventUserResponseInfo:
     def service_type(self):
         """Gets the service_type of this EventUserResponseInfo.
 
-        登录的服务类型
+        服务类型，包含如下:   - system   - mysql   - redis
 
         :return: The service_type of this EventUserResponseInfo.
         :rtype: str
@@ -300,7 +300,7 @@ class EventUserResponseInfo:
     def service_type(self, service_type):
         """Sets the service_type of this EventUserResponseInfo.
 
-        登录的服务类型
+        服务类型，包含如下:   - system   - mysql   - redis
 
         :param service_type: The service_type of this EventUserResponseInfo.
         :type service_type: str

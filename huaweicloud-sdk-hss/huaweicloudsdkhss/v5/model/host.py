@@ -153,11 +153,11 @@ class Host:
         :type policy_group_name: str
         :param asset: 资产风险
         :type asset: int
-        :param vulnerability: 漏洞风险
+        :param vulnerability: 漏洞风险总数，包含Linux软件漏洞、Windows系统漏洞、Web-CMS漏洞、应用漏洞
         :type vulnerability: int
-        :param baseline: 基线风险
+        :param baseline: 基线风险总数，包含配置风险、弱口令
         :type baseline: int
-        :param intrusion: 入侵风险
+        :param intrusion: 入侵风险总数
         :type intrusion: int
         :param asset_value: 资产重要性，包含如下4种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
@@ -854,7 +854,7 @@ class Host:
     def vulnerability(self):
         """Gets the vulnerability of this Host.
 
-        漏洞风险
+        漏洞风险总数，包含Linux软件漏洞、Windows系统漏洞、Web-CMS漏洞、应用漏洞
 
         :return: The vulnerability of this Host.
         :rtype: int
@@ -865,7 +865,7 @@ class Host:
     def vulnerability(self, vulnerability):
         """Sets the vulnerability of this Host.
 
-        漏洞风险
+        漏洞风险总数，包含Linux软件漏洞、Windows系统漏洞、Web-CMS漏洞、应用漏洞
 
         :param vulnerability: The vulnerability of this Host.
         :type vulnerability: int
@@ -876,7 +876,7 @@ class Host:
     def baseline(self):
         """Gets the baseline of this Host.
 
-        基线风险
+        基线风险总数，包含配置风险、弱口令
 
         :return: The baseline of this Host.
         :rtype: int
@@ -887,7 +887,7 @@ class Host:
     def baseline(self, baseline):
         """Sets the baseline of this Host.
 
-        基线风险
+        基线风险总数，包含配置风险、弱口令
 
         :param baseline: The baseline of this Host.
         :type baseline: int
@@ -898,7 +898,7 @@ class Host:
     def intrusion(self):
         """Gets the intrusion of this Host.
 
-        入侵风险
+        入侵风险总数
 
         :return: The intrusion of this Host.
         :rtype: int
@@ -909,7 +909,7 @@ class Host:
     def intrusion(self, intrusion):
         """Sets the intrusion of this Host.
 
-        入侵风险
+        入侵风险总数
 
         :param intrusion: The intrusion of this Host.
         :type intrusion: int

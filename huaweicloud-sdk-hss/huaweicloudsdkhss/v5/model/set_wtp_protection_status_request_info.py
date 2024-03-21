@@ -37,7 +37,7 @@ class SetWtpProtectionStatusRequestInfo:
 
         :param status: 开启关闭状态
         :type status: bool
-        :param host_id_list: HostId list
+        :param host_id_list: 主机ID数组，不能为空
         :type host_id_list: list[str]
         :param resource_id: 资源ID
         :type resource_id: str
@@ -53,10 +53,8 @@ class SetWtpProtectionStatusRequestInfo:
         self._charging_mode = None
         self.discriminator = None
 
-        if status is not None:
-            self.status = status
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
+        self.status = status
+        self.host_id_list = host_id_list
         if resource_id is not None:
             self.resource_id = resource_id
         if charging_mode is not None:
@@ -88,7 +86,7 @@ class SetWtpProtectionStatusRequestInfo:
     def host_id_list(self):
         """Gets the host_id_list of this SetWtpProtectionStatusRequestInfo.
 
-        HostId list
+        主机ID数组，不能为空
 
         :return: The host_id_list of this SetWtpProtectionStatusRequestInfo.
         :rtype: list[str]
@@ -99,7 +97,7 @@ class SetWtpProtectionStatusRequestInfo:
     def host_id_list(self, host_id_list):
         """Sets the host_id_list of this SetWtpProtectionStatusRequestInfo.
 
-        HostId list
+        主机ID数组，不能为空
 
         :param host_id_list: The host_id_list of this SetWtpProtectionStatusRequestInfo.
         :type host_id_list: list[str]

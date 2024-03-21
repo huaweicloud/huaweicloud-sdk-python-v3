@@ -1,3 +1,611 @@
+# 3.1.87 2024-03-21
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeletePromInstance**
+    - 请求参数变更
+      - `+ Enterprise-Project-Id`
+  - **ListPromInstance**
+    - 请求参数变更
+      - `+ Enterprise-Project-Id`
+      - `+ prom_type: enum value [default]`
+      - `+ prom_type: enum value [DEFAULT]`
+    - 响应参数变更
+      - `+ prometheus.prom_type: enum value [default]`
+      - `- prometheus.prom_type: enum value [DEFAULT]`
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListComponentConfigurations**
+    - 响应参数变更
+      - `* items.data.spec.port: string -> int32`
+      - `* items.data.spec.livenessProbe.httpGet.port: string -> int32`
+      - `* items.data.spec.livenessProbe.tcpSocket.port: string -> int32`
+      - `+ items.data.spec.items.uid`
+      - `+ items.data.spec.items.metadata`
+      - `+ items.data.spec.items.elb_id`
+      - `+ items.data.spec.items.public_ip`
+      - `+ items.data.spec.items.private_ip`
+      - `* items.data.spec.items.domain_names: string -> list<string>`
+      - `- items.data.spec.items.ports.elb_id`
+  - **CreateComponentConfiguration**
+    - 请求参数变更
+      - `- items.data.spec.ip`
+      - `* items.data.spec.port: string -> int32`
+      - `* items.data.spec.livenessProbe.httpGet.port: string -> int32`
+      - `* items.data.spec.livenessProbe.tcpSocket.port: string -> int32`
+      - `+ items.data.spec.items.uid`
+      - `+ items.data.spec.items.metadata`
+      - `+ items.data.spec.items.elb_id`
+      - `+ items.data.spec.items.public_ip`
+      - `+ items.data.spec.items.private_ip`
+      - `* items.data.spec.items.domain_names: string -> list<string>`
+      - `- items.data.spec.items.ports.elb_id`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持接口`ShowNodePoolConfigurationDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVerifyDomainOwnerInfo**
+    - 响应参数变更
+      - `+ file_verify_domains`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateApp**
+    - 请求参数变更
+      - `+ group_id`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowBusinessAssetsTree`
+    - `RenewDataProfile`
+    - `ListSecurityDatasourceConfigurations`
+    - `ListSecurityDatasourceUrls`
+    - `ListSecurityDatasourceActions`
+    - `ListSecurityRoleActions`
+    - `ListSecuritySecrecyLevels`
+    - `CreateSecuritySecrecyLevel`
+    - `ShowSecuritySecrecyLevel`
+    - `UpdateSecuritySecrecyLevel`
+    - `DeleteSecuritySecrecyLevel`
+    - `BatchDeleteSecuritySecrecyLevels`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 支持接口`ListCatalogs`、`RunCatalogAction`、`ShowCatalog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunAuthorizationAction**
+    - 请求参数变更
+      - `+ grant_project_id`
+      - `- projectId`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPositionResult**
+    - 响应参数变更
+      - `+ status`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFunction**
+    - 请求参数变更
+      - `+ encrypted_user_data`
+      - `+ mount_config`
+      - `+ is_stateful_function`
+      - `+ enable_dynamic_memory`
+  - **UpdateVersionAlias**
+    - 请求参数变更
+      - `+ additional_version_strategy`
+  - **DeleteFunctionTrigger**
+    - 请求参数变更
+      - `+ trigger_type_code: enum value [IOTDA]`
+  - **ShowFunctionTrigger**
+    - 请求参数变更
+      - `+ trigger_type_code: enum value [IOTDA]`
+  - **UpdateTrigger**
+    - 请求参数变更
+      - `+ trigger_type_code: enum value [IOTDA]`
+
+### HuaweiCloud SDK GEIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSupportMasks**
+    - 响应参数变更
+      - `+ support_masks.ip_version: enum value [4,6]`
+  - **ListGlobalEips**
+    - 响应参数变更
+      - `+ global_eips.ip_version: enum value [4,6]`
+  - **DetachInternetBandwidth**
+    - 响应参数变更
+      - `+ global_eip.ip_version: enum value [4,6]`
+  - **BatchCreateGlobalEip**
+    - 响应参数变更
+      - `+ global_eip.ip_version: enum value [4,6]`
+  - **ShowGlobalEip**
+    - 响应参数变更
+      - `+ global_eip.ip_version: enum value [4,6]`
+  - **AttachInternetBandwidth**
+    - 响应参数变更
+      - `+ global_eip.ip_version: enum value [4,6]`
+  - **ListGlobalEipSegments**
+    - 响应参数变更
+      - `+ global_eip_segments.ip_version: enum value [4,6]`
+  - **ShowGlobalEipSegment**
+    - 响应参数变更
+      - `+ global_eip_segment.ip_version: enum value [4,6]`
+  - **ListGeipPools**
+    - 响应参数变更
+      - `+ geip_pools.ip_version: enum value [4,6]`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 支持接口`CreateQuotasOrder`、`ShowProductdataOfferingInfos`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteResourceInstanceTag**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowAssetStatistic**
+    - 请求参数变更
+      - `- x-auth-token`
+    - 响应参数变更
+      - `- environment_num`
+      - `- core_conf_file_num`
+  - **StopProtection**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowRiskConfigDetail**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **RunImageSynchronize**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **AssociatePolicyGroup**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowVulScanPolicy**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ChangeVulScanPolicy**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **CreateVulnerabilityScanTask**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowVulStatics**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListJarPackageStatistics**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListJarPackageHostInfo**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListUserStatistics**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListPortStatistics**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListProcessStatistics**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListAppStatistics**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListAutoLaunchStatistics**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListUsers**
+    - 请求参数变更
+      - `- x-auth-token`
+    - 响应参数变更
+      - `- data_list.expire_time`
+  - **ListPorts**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListApps**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListAutoLaunchs**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListUserChangeHistories**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListAppChangeHistories**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListAutoLaunchChangeHistories**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListProcessesHost**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListPortHost**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListProtectionServer**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListPasswordComplexity**
+    - 请求参数变更
+      - `- x-auth-token`
+    - 响应参数变更
+      - `+ data_list.private_ip`
+      - `+ data_list.public_ip`
+  - **ListRiskConfigs**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListRiskConfigHosts**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowCheckRuleDetail**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListContainerNodes**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListHostStatus**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **SwitchHostsProtectStatus**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **BatchScanSwrImage**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListImageVulnerabilities**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListVulnerabilityCve**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListImageRiskConfigs**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListImageRiskConfigRules**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowImageCheckRuleDetail**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **BatchCreateTags**
+    - 请求参数变更
+      - `- x-auth-token`
+      - `- sys_tags`
+  - **ListVulHosts**
+    - 请求参数变更
+      - `+ repair_priority`
+      - `- x-auth-token`
+    - 响应参数变更
+      - `+ data_list.version`
+      - `+ data_list.disabled_operate_types`
+      - `+ data_list.repair_priority`
+  - **ChangeVulStatus**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListHostVuls**
+    - 请求参数变更
+      - `+ repair_priority`
+      - `- x-auth-token`
+    - 响应参数变更
+      - `+ data_list.disabled_operate_types`
+      - `+ data_list.repair_priority`
+  - **ListVulScanTask**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListVulScanTaskHost**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListWtpProtectHost**
+    - 响应参数变更
+      - `+ data_list.ipv6`
+  - **ListHostProtectHistoryInfo**
+    - 请求参数变更
+      - `* host_id: required -> optional`
+  - **ListHostRaspProtectHistoryInfo**
+    - 请求参数变更
+      - `* host_id: required -> optional`
+  - **UpdateProtectionPolicy**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListProtectionPolicy**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowBackupPolicyInfo**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **UpdateBackupPolicyInfo**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListWeakPasswordUsers**
+    - 请求参数变更
+      - `- x-auth-token`
+    - 响应参数变更
+      - `+ data_list.private_ip`
+      - `+ data_list.public_ip`
+  - **ListRiskConfigCheckRules**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ChangeCheckRuleAction**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowResourceQuotas**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListQuotasDetail**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListBlockedIp**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ChangeBlockedIp**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListIsolatedFile**
+    - 请求参数变更
+      - `+ file_path`
+      - `+ private_ip`
+      - `+ public_ip`
+      - `+ file_hash`
+      - `+ asset_value`
+      - `- x-auth-token`
+      - `- last_days`
+      - `- isolation_status`
+    - 响应参数变更
+      - `+ data_list.os_type`
+      - `+ data_list.private_ip`
+      - `+ data_list.public_ip`
+      - `+ data_list.asset_value`
+      - `+ data_list.agent_version`
+      - `+ data_list.isolate_source`
+      - `+ data_list.event_name`
+      - `+ data_list.agent_event_info`
+      - `+ data_list.antivirus_result_info`
+  - **ChangeIsolatedFile**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListAlarmWhiteList**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **DeleteHostsGroup**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **AddHostsGroup**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ChangeHostsGroup**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListHostGroups**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListSwrImageRepository**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListPolicyGroup**
+    - 请求参数变更
+      - `+ container_mode`
+      - `- x-auth-token`
+  - **ListVulnerabilities**
+    - 请求参数变更
+      - `- x-auth-token`
+    - 响应参数变更
+      - `+ data_list.repair_priority_list`
+  - **StartProtection**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListSecurityEvents**
+    - 请求参数变更
+      - `- x-auth-token`
+    - 响应参数变更
+      - `+ data_list.process_info_list.ancestor_process_path`
+      - `+ data_list.process_info_list.ancestor_process_pid`
+      - `+ data_list.process_info_list.ancestor_process_cmdline`
+  - **ChangeEvent**
+    - 请求参数变更
+      - `- x-auth-token`
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _新增特性_
+  - 支持以下接口：
+    - `DeleteByConditionMultiView`
+    - `CreateMultiView`
+    - `UpdateView`
+    - `BatchCreateView`
+    - `CreateView`
+    - `ListHistoryData`
+    - `CollectHistoryData`
+    - `UpdateState`
+    - `SwitchLifecycleTemplate`
+    - `ShowTag`
+    - `RemoveTag`
+    - `AddTag`
+    - `GenerateBusinessCode`
+    - `EnableDataInstance`
+    - `DisableDataInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK LakeFormation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTableMeta**
+    - 响应参数变更
+      - `+ table_metas.columns`
+      - `+ table_metas.partition_keys`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListOttChannelInfo`
+    - `CreateOttChannelInfo`
+    - `DeleteOttChannelInfo`
+    - `ModifyOttChannelInfoEndPoints`
+    - `ModifyOttChannelInfoInput`
+    - `ModifyOttChannelInfoRecordSettings`
+    - `ModifyOttChannelInfoGeneral`
+    - `ModifyOttChannelInfoStats`
+    - `ModifyOttChannelInfoEncoderSettings`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK NAT
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListNatGatewaySnatRules**
+    - 请求参数变更
+      - `* floating_ip_address: string -> list<string>`
+      - `* floating_ip_id: string -> list<string>`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizeHouseholdRegister`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeSmartDocumentRecognizer**
+    - 请求参数变更
+      - `+ form`
+      - `+ kv_map`
+    - 响应参数变更
+      - `+ result.form_result`
+      - `+ result.layout_result.layout_block_list.table_id`
+      - `+ result.layout_result.layout_block_list.form_id`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAutoEnlargePolicy**
+    - 响应参数变更
+      - `+ step_percent`
+  - **SetAutoEnlargePolicy**
+    - 请求参数变更
+      - `+ step_percent`
+
+### HuaweiCloud SDK RGC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListOperation`
+    - `ShowTemplateDeployParams`
+    - `CreateTemplate`
+    - `DeleteTemplate`
+    - `ListPredefinedTemplates`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowManagedCoreAccount**
+    - 请求参数变更
+      - `+ account_type: enum value [LOGGING,SECURITY,PRIMARY]`
+  - **EnrollAccount**
+    - 请求参数变更
+      - `+ blueprint.variables`
+      - `+ blueprint.is_blueprint_has_multi_account_resource`
+  - **UpdateManagedAccount**
+    - 请求参数变更
+      - `+ blueprint.variables`
+      - `+ blueprint.is_blueprint_has_multi_account_resource`
+  - **ShowManagedAccount**
+    - 响应参数变更
+      - `+ is_blueprint_has_multi_account_resource`
+  - **ListManagedAccountsForParent**
+    - 响应参数变更
+      - `+ is_blueprint_has_multi_account_resource`
+      - `+ managed_accounts.is_blueprint_has_multi_account_resource`
+  - **CreateAccount**
+    - 请求参数变更
+      - `+ blueprint.variables`
+      - `+ blueprint.is_blueprint_has_multi_account_resource`
+  - **ListManagedAccounts**
+    - 响应参数变更
+      - `+ is_blueprint_has_multi_account_resource`
+      - `+ managed_accounts.is_blueprint_has_multi_account_resource`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ anti_affinity`
+
 # 3.1.86 2024-03-14
 
 ### HuaweiCloud SDK CAE

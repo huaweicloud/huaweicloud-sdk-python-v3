@@ -31,7 +31,7 @@ class AttachInternetBandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param global_eip_segment_id: 
+        :param global_eip_segment_id: 全域弹性公网IP段的ID
         :type global_eip_segment_id: str
         :param internet_bandwidth_id: 全域公网带宽的ID
         :type internet_bandwidth_id: str
@@ -50,6 +50,8 @@ class AttachInternetBandwidth:
     def global_eip_segment_id(self):
         """Gets the global_eip_segment_id of this AttachInternetBandwidth.
 
+        全域弹性公网IP段的ID
+
         :return: The global_eip_segment_id of this AttachInternetBandwidth.
         :rtype: str
         """
@@ -58,6 +60,8 @@ class AttachInternetBandwidth:
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
         """Sets the global_eip_segment_id of this AttachInternetBandwidth.
+
+        全域弹性公网IP段的ID
 
         :param global_eip_segment_id: The global_eip_segment_id of this AttachInternetBandwidth.
         :type global_eip_segment_id: str

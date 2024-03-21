@@ -29,9 +29,7 @@ class ShowAssetStatisticResponse(SdkResponse):
         'kernel_module_num': 'int',
         'web_service_num': 'int',
         'web_app_num': 'int',
-        'database_num': 'int',
-        'core_conf_file_num': 'int',
-        'environment_num': 'int'
+        'database_num': 'int'
     }
 
     attribute_map = {
@@ -46,17 +44,15 @@ class ShowAssetStatisticResponse(SdkResponse):
         'kernel_module_num': 'kernel_module_num',
         'web_service_num': 'web_service_num',
         'web_app_num': 'web_app_num',
-        'database_num': 'database_num',
-        'core_conf_file_num': 'core_conf_file_num',
-        'environment_num': 'environment_num'
+        'database_num': 'database_num'
     }
 
-    def __init__(self, account_num=None, port_num=None, process_num=None, app_num=None, auto_launch_num=None, web_framework_num=None, web_site_num=None, jar_package_num=None, kernel_module_num=None, web_service_num=None, web_app_num=None, database_num=None, core_conf_file_num=None, environment_num=None):
+    def __init__(self, account_num=None, port_num=None, process_num=None, app_num=None, auto_launch_num=None, web_framework_num=None, web_site_num=None, jar_package_num=None, kernel_module_num=None, web_service_num=None, web_app_num=None, database_num=None):
         """ShowAssetStatisticResponse
 
         The model defined in huaweicloud sdk
 
-        :param account_num: 账号数量
+        :param account_num: 主机账号数量
         :type account_num: int
         :param port_num: 开放端口数量
         :type port_num: int
@@ -64,7 +60,7 @@ class ShowAssetStatisticResponse(SdkResponse):
         :type process_num: int
         :param app_num: 软件数量
         :type app_num: int
-        :param auto_launch_num: 自启动数量
+        :param auto_launch_num: 自启动进程数量
         :type auto_launch_num: int
         :param web_framework_num: web框架数量
         :type web_framework_num: int
@@ -80,10 +76,6 @@ class ShowAssetStatisticResponse(SdkResponse):
         :type web_app_num: int
         :param database_num: 数据库数量
         :type database_num: int
-        :param core_conf_file_num: 关键配置文件数量
-        :type core_conf_file_num: int
-        :param environment_num: 环境变量数量
-        :type environment_num: int
         """
         
         super(ShowAssetStatisticResponse, self).__init__()
@@ -100,8 +92,6 @@ class ShowAssetStatisticResponse(SdkResponse):
         self._web_service_num = None
         self._web_app_num = None
         self._database_num = None
-        self._core_conf_file_num = None
-        self._environment_num = None
         self.discriminator = None
 
         if account_num is not None:
@@ -128,16 +118,12 @@ class ShowAssetStatisticResponse(SdkResponse):
             self.web_app_num = web_app_num
         if database_num is not None:
             self.database_num = database_num
-        if core_conf_file_num is not None:
-            self.core_conf_file_num = core_conf_file_num
-        if environment_num is not None:
-            self.environment_num = environment_num
 
     @property
     def account_num(self):
         """Gets the account_num of this ShowAssetStatisticResponse.
 
-        账号数量
+        主机账号数量
 
         :return: The account_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -148,7 +134,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def account_num(self, account_num):
         """Sets the account_num of this ShowAssetStatisticResponse.
 
-        账号数量
+        主机账号数量
 
         :param account_num: The account_num of this ShowAssetStatisticResponse.
         :type account_num: int
@@ -225,7 +211,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def auto_launch_num(self):
         """Gets the auto_launch_num of this ShowAssetStatisticResponse.
 
-        自启动数量
+        自启动进程数量
 
         :return: The auto_launch_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -236,7 +222,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def auto_launch_num(self, auto_launch_num):
         """Sets the auto_launch_num of this ShowAssetStatisticResponse.
 
-        自启动数量
+        自启动进程数量
 
         :param auto_launch_num: The auto_launch_num of this ShowAssetStatisticResponse.
         :type auto_launch_num: int
@@ -396,50 +382,6 @@ class ShowAssetStatisticResponse(SdkResponse):
         :type database_num: int
         """
         self._database_num = database_num
-
-    @property
-    def core_conf_file_num(self):
-        """Gets the core_conf_file_num of this ShowAssetStatisticResponse.
-
-        关键配置文件数量
-
-        :return: The core_conf_file_num of this ShowAssetStatisticResponse.
-        :rtype: int
-        """
-        return self._core_conf_file_num
-
-    @core_conf_file_num.setter
-    def core_conf_file_num(self, core_conf_file_num):
-        """Sets the core_conf_file_num of this ShowAssetStatisticResponse.
-
-        关键配置文件数量
-
-        :param core_conf_file_num: The core_conf_file_num of this ShowAssetStatisticResponse.
-        :type core_conf_file_num: int
-        """
-        self._core_conf_file_num = core_conf_file_num
-
-    @property
-    def environment_num(self):
-        """Gets the environment_num of this ShowAssetStatisticResponse.
-
-        环境变量数量
-
-        :return: The environment_num of this ShowAssetStatisticResponse.
-        :rtype: int
-        """
-        return self._environment_num
-
-    @environment_num.setter
-    def environment_num(self, environment_num):
-        """Sets the environment_num of this ShowAssetStatisticResponse.
-
-        环境变量数量
-
-        :param environment_num: The environment_num of this ShowAssetStatisticResponse.
-        :type environment_num: int
-        """
-        self._environment_num = environment_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

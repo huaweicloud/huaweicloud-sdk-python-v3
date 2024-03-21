@@ -49,7 +49,7 @@ class ListQuotasDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param region: Region ID
         :type region: str
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
@@ -63,13 +63,13 @@ class ListQuotasDetailRequest:
         :type used_status: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param resource_id: 资源ID
+        :param resource_id: HSS配额的资源ID
         :type resource_id: str
         :param charging_mode: 收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
         :type charging_mode: str
         :param limit: 每页数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字
         :type offset: int
         """
         
@@ -115,7 +115,7 @@ class ListQuotasDetailRequest:
     def region(self):
         """Gets the region of this ListQuotasDetailRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ListQuotasDetailRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListQuotasDetailRequest:
     def region(self, region):
         """Sets the region of this ListQuotasDetailRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ListQuotasDetailRequest.
         :type region: str
@@ -269,7 +269,7 @@ class ListQuotasDetailRequest:
     def resource_id(self):
         """Gets the resource_id of this ListQuotasDetailRequest.
 
-        资源ID
+        HSS配额的资源ID
 
         :return: The resource_id of this ListQuotasDetailRequest.
         :rtype: str
@@ -280,7 +280,7 @@ class ListQuotasDetailRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListQuotasDetailRequest.
 
-        资源ID
+        HSS配额的资源ID
 
         :param resource_id: The resource_id of this ListQuotasDetailRequest.
         :type resource_id: str
@@ -335,7 +335,7 @@ class ListQuotasDetailRequest:
     def offset(self):
         """Gets the offset of this ListQuotasDetailRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字
 
         :return: The offset of this ListQuotasDetailRequest.
         :rtype: int
@@ -346,7 +346,7 @@ class ListQuotasDetailRequest:
     def offset(self, offset):
         """Sets the offset of this ListQuotasDetailRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字
 
         :param offset: The offset of this ListQuotasDetailRequest.
         :type offset: int

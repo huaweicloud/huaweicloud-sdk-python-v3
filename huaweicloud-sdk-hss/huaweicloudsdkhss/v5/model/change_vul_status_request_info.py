@@ -80,7 +80,8 @@ class ChangeVulStatusRequestInfo:
             self.select_type = select_type
         if type is not None:
             self.type = type
-        self.data_list = data_list
+        if data_list is not None:
+            self.data_list = data_list
         if host_data_list is not None:
             self.host_data_list = host_data_list
         if backup_info_id is not None:

@@ -51,13 +51,13 @@ class ListHostProtectHistoryInfoRequest:
 
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
-        :param host_id: Host Id
+        :param host_id: Host Id，为空时查所有主机
         :type host_id: str
-        :param start_time: 起始时间
+        :param start_time: 起始时间(ms)
         :type start_time: int
-        :param end_time: 终止时间
+        :param end_time: 终止时间(ms)
         :type end_time: int
         :param limit: limit
         :type limit: int
@@ -91,7 +91,8 @@ class ListHostProtectHistoryInfoRequest:
         self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        self.host_id = host_id
+        if host_id is not None:
+            self.host_id = host_id
         self.start_time = start_time
         self.end_time = end_time
         self.limit = limit
@@ -131,7 +132,7 @@ class ListHostProtectHistoryInfoRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListHostProtectHistoryInfoRequest.
 
-        企业项目
+        企业项目ID
 
         :return: The enterprise_project_id of this ListHostProtectHistoryInfoRequest.
         :rtype: str
@@ -142,7 +143,7 @@ class ListHostProtectHistoryInfoRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListHostProtectHistoryInfoRequest.
 
-        企业项目
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostProtectHistoryInfoRequest.
         :type enterprise_project_id: str
@@ -153,7 +154,7 @@ class ListHostProtectHistoryInfoRequest:
     def host_id(self):
         """Gets the host_id of this ListHostProtectHistoryInfoRequest.
 
-        Host Id
+        Host Id，为空时查所有主机
 
         :return: The host_id of this ListHostProtectHistoryInfoRequest.
         :rtype: str
@@ -164,7 +165,7 @@ class ListHostProtectHistoryInfoRequest:
     def host_id(self, host_id):
         """Sets the host_id of this ListHostProtectHistoryInfoRequest.
 
-        Host Id
+        Host Id，为空时查所有主机
 
         :param host_id: The host_id of this ListHostProtectHistoryInfoRequest.
         :type host_id: str
@@ -175,7 +176,7 @@ class ListHostProtectHistoryInfoRequest:
     def start_time(self):
         """Gets the start_time of this ListHostProtectHistoryInfoRequest.
 
-        起始时间
+        起始时间(ms)
 
         :return: The start_time of this ListHostProtectHistoryInfoRequest.
         :rtype: int
@@ -186,7 +187,7 @@ class ListHostProtectHistoryInfoRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListHostProtectHistoryInfoRequest.
 
-        起始时间
+        起始时间(ms)
 
         :param start_time: The start_time of this ListHostProtectHistoryInfoRequest.
         :type start_time: int
@@ -197,7 +198,7 @@ class ListHostProtectHistoryInfoRequest:
     def end_time(self):
         """Gets the end_time of this ListHostProtectHistoryInfoRequest.
 
-        终止时间
+        终止时间(ms)
 
         :return: The end_time of this ListHostProtectHistoryInfoRequest.
         :rtype: int
@@ -208,7 +209,7 @@ class ListHostProtectHistoryInfoRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListHostProtectHistoryInfoRequest.
 
-        终止时间
+        终止时间(ms)
 
         :param end_time: The end_time of this ListHostProtectHistoryInfoRequest.
         :type end_time: int

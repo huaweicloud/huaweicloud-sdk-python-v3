@@ -17,36 +17,28 @@ class BatchCreateTagsRequestInfo:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[ResourceTagInfo]',
-        'sys_tags': 'list[ResourceTagInfo]'
+        'tags': 'list[ResourceTagInfo]'
     }
 
     attribute_map = {
-        'tags': 'tags',
-        'sys_tags': 'sys_tags'
+        'tags': 'tags'
     }
 
-    def __init__(self, tags=None, sys_tags=None):
+    def __init__(self, tags=None):
         """BatchCreateTagsRequestInfo
 
         The model defined in huaweicloud sdk
 
         :param tags: 标签对象列表
         :type tags: list[:class:`huaweicloudsdkhss.v5.ResourceTagInfo`]
-        :param sys_tags: 标签对象列表
-        :type sys_tags: list[:class:`huaweicloudsdkhss.v5.ResourceTagInfo`]
         """
         
         
 
         self._tags = None
-        self._sys_tags = None
         self.discriminator = None
 
-        if tags is not None:
-            self.tags = tags
-        if sys_tags is not None:
-            self.sys_tags = sys_tags
+        self.tags = tags
 
     @property
     def tags(self):
@@ -69,28 +61,6 @@ class BatchCreateTagsRequestInfo:
         :type tags: list[:class:`huaweicloudsdkhss.v5.ResourceTagInfo`]
         """
         self._tags = tags
-
-    @property
-    def sys_tags(self):
-        """Gets the sys_tags of this BatchCreateTagsRequestInfo.
-
-        标签对象列表
-
-        :return: The sys_tags of this BatchCreateTagsRequestInfo.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.ResourceTagInfo`]
-        """
-        return self._sys_tags
-
-    @sys_tags.setter
-    def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this BatchCreateTagsRequestInfo.
-
-        标签对象列表
-
-        :param sys_tags: The sys_tags of this BatchCreateTagsRequestInfo.
-        :type sys_tags: list[:class:`huaweicloudsdkhss.v5.ResourceTagInfo`]
-        """
-        self._sys_tags = sys_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -59,7 +59,7 @@ class QuotaResourcesResponseInfo:
         :type quota_status: str
         :param used_status: 使用状态   - idle : 空闲   - used : 使用中
         :type used_status: str
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -210,7 +210,7 @@ class QuotaResourcesResponseInfo:
     def host_id(self):
         """Gets the host_id of this QuotaResourcesResponseInfo.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -221,7 +221,7 @@ class QuotaResourcesResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this QuotaResourcesResponseInfo.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this QuotaResourcesResponseInfo.
         :type host_id: str

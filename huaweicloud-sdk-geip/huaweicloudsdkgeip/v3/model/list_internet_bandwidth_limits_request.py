@@ -37,15 +37,15 @@ class ListInternetBandwidthLimitsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param charge_mode: 根据计费模式过滤
+        :param charge_mode: 
         :type charge_mode: list[str]
-        :param type: 根据全域公网带宽类型过滤
+        :param type: 
         :type type: str
         """
         
@@ -73,8 +73,6 @@ class ListInternetBandwidthLimitsRequest:
     def fields(self):
         """Gets the fields of this ListInternetBandwidthLimitsRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListInternetBandwidthLimitsRequest.
         :rtype: list[str]
         """
@@ -83,8 +81,6 @@ class ListInternetBandwidthLimitsRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListInternetBandwidthLimitsRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListInternetBandwidthLimitsRequest.
         :type fields: list[str]
@@ -139,8 +135,6 @@ class ListInternetBandwidthLimitsRequest:
     def charge_mode(self):
         """Gets the charge_mode of this ListInternetBandwidthLimitsRequest.
 
-        根据计费模式过滤
-
         :return: The charge_mode of this ListInternetBandwidthLimitsRequest.
         :rtype: list[str]
         """
@@ -149,8 +143,6 @@ class ListInternetBandwidthLimitsRequest:
     @charge_mode.setter
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this ListInternetBandwidthLimitsRequest.
-
-        根据计费模式过滤
 
         :param charge_mode: The charge_mode of this ListInternetBandwidthLimitsRequest.
         :type charge_mode: list[str]
@@ -161,8 +153,6 @@ class ListInternetBandwidthLimitsRequest:
     def type(self):
         """Gets the type of this ListInternetBandwidthLimitsRequest.
 
-        根据全域公网带宽类型过滤
-
         :return: The type of this ListInternetBandwidthLimitsRequest.
         :rtype: str
         """
@@ -171,8 +161,6 @@ class ListInternetBandwidthLimitsRequest:
     @type.setter
     def type(self, type):
         """Sets the type of this ListInternetBandwidthLimitsRequest.
-
-        根据全域公网带宽类型过滤
 
         :param type: The type of this ListInternetBandwidthLimitsRequest.
         :type type: str

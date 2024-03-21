@@ -51,7 +51,7 @@ class ListImageRiskConfigsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param region: Region ID
         :type region: str
         :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
@@ -120,7 +120,7 @@ class ListImageRiskConfigsRequest:
     def region(self):
         """Gets the region of this ListImageRiskConfigsRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class ListImageRiskConfigsRequest:
     def region(self, region):
         """Sets the region of this ListImageRiskConfigsRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ListImageRiskConfigsRequest.
         :type region: str

@@ -63,25 +63,25 @@ class ListSupportRegionsRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param instance_type: 根据实例类型过滤
+        :param instance_type: 
         :type instance_type: list[str]
-        :param public_border_group: 根据边缘信息过滤，中心站点or边缘站点
+        :param public_border_group: 
         :type public_border_group: list[str]
-        :param access_site: 根据接入点过滤
+        :param access_site: 
         :type access_site: list[str]
-        :param region_id: 根据region_id过滤
+        :param region_id: 
         :type region_id: list[str]
-        :param remote_endpoint: query by remote_endpoint
+        :param remote_endpoint: 
         :type remote_endpoint: list[str]
-        :param status: 根据资源状态过滤
+        :param status: 
         :type status: list[str]
         """
         
@@ -224,8 +224,6 @@ class ListSupportRegionsRequest:
     def fields(self):
         """Gets the fields of this ListSupportRegionsRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListSupportRegionsRequest.
         :rtype: list[str]
         """
@@ -234,8 +232,6 @@ class ListSupportRegionsRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListSupportRegionsRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListSupportRegionsRequest.
         :type fields: list[str]
@@ -290,8 +286,6 @@ class ListSupportRegionsRequest:
     def id(self):
         """Gets the id of this ListSupportRegionsRequest.
 
-        根据ID过滤
-
         :return: The id of this ListSupportRegionsRequest.
         :rtype: list[str]
         """
@@ -300,8 +294,6 @@ class ListSupportRegionsRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this ListSupportRegionsRequest.
-
-        根据ID过滤
 
         :param id: The id of this ListSupportRegionsRequest.
         :type id: list[str]
@@ -312,8 +304,6 @@ class ListSupportRegionsRequest:
     def instance_type(self):
         """Gets the instance_type of this ListSupportRegionsRequest.
 
-        根据实例类型过滤
-
         :return: The instance_type of this ListSupportRegionsRequest.
         :rtype: list[str]
         """
@@ -322,8 +312,6 @@ class ListSupportRegionsRequest:
     @instance_type.setter
     def instance_type(self, instance_type):
         """Sets the instance_type of this ListSupportRegionsRequest.
-
-        根据实例类型过滤
 
         :param instance_type: The instance_type of this ListSupportRegionsRequest.
         :type instance_type: list[str]
@@ -334,8 +322,6 @@ class ListSupportRegionsRequest:
     def public_border_group(self):
         """Gets the public_border_group of this ListSupportRegionsRequest.
 
-        根据边缘信息过滤，中心站点or边缘站点
-
         :return: The public_border_group of this ListSupportRegionsRequest.
         :rtype: list[str]
         """
@@ -344,8 +330,6 @@ class ListSupportRegionsRequest:
     @public_border_group.setter
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this ListSupportRegionsRequest.
-
-        根据边缘信息过滤，中心站点or边缘站点
 
         :param public_border_group: The public_border_group of this ListSupportRegionsRequest.
         :type public_border_group: list[str]
@@ -356,8 +340,6 @@ class ListSupportRegionsRequest:
     def access_site(self):
         """Gets the access_site of this ListSupportRegionsRequest.
 
-        根据接入点过滤
-
         :return: The access_site of this ListSupportRegionsRequest.
         :rtype: list[str]
         """
@@ -366,8 +348,6 @@ class ListSupportRegionsRequest:
     @access_site.setter
     def access_site(self, access_site):
         """Sets the access_site of this ListSupportRegionsRequest.
-
-        根据接入点过滤
 
         :param access_site: The access_site of this ListSupportRegionsRequest.
         :type access_site: list[str]
@@ -378,8 +358,6 @@ class ListSupportRegionsRequest:
     def region_id(self):
         """Gets the region_id of this ListSupportRegionsRequest.
 
-        根据region_id过滤
-
         :return: The region_id of this ListSupportRegionsRequest.
         :rtype: list[str]
         """
@@ -388,8 +366,6 @@ class ListSupportRegionsRequest:
     @region_id.setter
     def region_id(self, region_id):
         """Sets the region_id of this ListSupportRegionsRequest.
-
-        根据region_id过滤
 
         :param region_id: The region_id of this ListSupportRegionsRequest.
         :type region_id: list[str]
@@ -400,8 +376,6 @@ class ListSupportRegionsRequest:
     def remote_endpoint(self):
         """Gets the remote_endpoint of this ListSupportRegionsRequest.
 
-        query by remote_endpoint
-
         :return: The remote_endpoint of this ListSupportRegionsRequest.
         :rtype: list[str]
         """
@@ -410,8 +384,6 @@ class ListSupportRegionsRequest:
     @remote_endpoint.setter
     def remote_endpoint(self, remote_endpoint):
         """Sets the remote_endpoint of this ListSupportRegionsRequest.
-
-        query by remote_endpoint
 
         :param remote_endpoint: The remote_endpoint of this ListSupportRegionsRequest.
         :type remote_endpoint: list[str]
@@ -422,8 +394,6 @@ class ListSupportRegionsRequest:
     def status(self):
         """Gets the status of this ListSupportRegionsRequest.
 
-        根据资源状态过滤
-
         :return: The status of this ListSupportRegionsRequest.
         :rtype: list[str]
         """
@@ -432,8 +402,6 @@ class ListSupportRegionsRequest:
     @status.setter
     def status(self, status):
         """Sets the status of this ListSupportRegionsRequest.
-
-        根据资源状态过滤
 
         :param status: The status of this ListSupportRegionsRequest.
         :type status: list[str]

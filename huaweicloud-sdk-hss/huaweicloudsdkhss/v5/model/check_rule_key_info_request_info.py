@@ -35,9 +35,9 @@ class CheckRuleKeyInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param check_name: 基线名称
+        :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
-        :param check_rule_id: 检查项ID
+        :param check_rule_id: 检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
         :type check_rule_id: str
         :param standard: 基线标准, 类别包含如下：   - cn_standard#等保合规标准   - hw_standard#云安全实践标准
         :type standard: str
@@ -66,7 +66,7 @@ class CheckRuleKeyInfoRequestInfo:
     def check_name(self):
         """Gets the check_name of this CheckRuleKeyInfoRequestInfo.
 
-        基线名称
+        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
         :return: The check_name of this CheckRuleKeyInfoRequestInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class CheckRuleKeyInfoRequestInfo:
     def check_name(self, check_name):
         """Sets the check_name of this CheckRuleKeyInfoRequestInfo.
 
-        基线名称
+        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
         :param check_name: The check_name of this CheckRuleKeyInfoRequestInfo.
         :type check_name: str
@@ -88,7 +88,7 @@ class CheckRuleKeyInfoRequestInfo:
     def check_rule_id(self):
         """Gets the check_rule_id of this CheckRuleKeyInfoRequestInfo.
 
-        检查项ID
+        检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
 
         :return: The check_rule_id of this CheckRuleKeyInfoRequestInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class CheckRuleKeyInfoRequestInfo:
     def check_rule_id(self, check_rule_id):
         """Sets the check_rule_id of this CheckRuleKeyInfoRequestInfo.
 
-        检查项ID
+        检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
 
         :param check_rule_id: The check_rule_id of this CheckRuleKeyInfoRequestInfo.
         :type check_rule_id: str

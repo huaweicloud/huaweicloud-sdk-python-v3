@@ -31,9 +31,9 @@ class CreateGlobalEip:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域弹性公网IP的ID
         :type id: str
-        :param name: 资源名称
+        :param name: - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
         """
         
@@ -50,7 +50,7 @@ class CreateGlobalEip:
     def id(self):
         """Gets the id of this CreateGlobalEip.
 
-        ID
+        全域弹性公网IP的ID
 
         :return: The id of this CreateGlobalEip.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateGlobalEip:
     def id(self, id):
         """Sets the id of this CreateGlobalEip.
 
-        ID
+        全域弹性公网IP的ID
 
         :param id: The id of this CreateGlobalEip.
         :type id: str
@@ -72,7 +72,7 @@ class CreateGlobalEip:
     def name(self):
         """Gets the name of this CreateGlobalEip.
 
-        资源名称
+        - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this CreateGlobalEip.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateGlobalEip:
     def name(self, name):
         """Sets the name of this CreateGlobalEip.
 
-        资源名称
+        - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this CreateGlobalEip.
         :type name: str

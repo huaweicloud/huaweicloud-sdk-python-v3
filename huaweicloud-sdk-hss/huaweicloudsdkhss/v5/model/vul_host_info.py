@@ -22,6 +22,7 @@ class VulHostInfo:
         'host_name': 'str',
         'host_ip': 'str',
         'agent_id': 'str',
+        'version': 'str',
         'cve_num': 'int',
         'cve_id_list': 'list[str]',
         'status': 'str',
@@ -37,7 +38,9 @@ class VulHostInfo:
         'is_affect_business': 'bool',
         'first_scan_time': 'int',
         'scan_time': 'int',
-        'support_restore': 'bool'
+        'support_restore': 'bool',
+        'disabled_operate_types': 'list[VulHostInfoDisabledOperateTypes]',
+        'repair_priority': 'str'
     }
 
     attribute_map = {
@@ -46,6 +49,7 @@ class VulHostInfo:
         'host_name': 'host_name',
         'host_ip': 'host_ip',
         'agent_id': 'agent_id',
+        'version': 'version',
         'cve_num': 'cve_num',
         'cve_id_list': 'cve_id_list',
         'status': 'status',
@@ -61,31 +65,35 @@ class VulHostInfo:
         'is_affect_business': 'is_affect_business',
         'first_scan_time': 'first_scan_time',
         'scan_time': 'scan_time',
-        'support_restore': 'support_restore'
+        'support_restore': 'support_restore',
+        'disabled_operate_types': 'disabled_operate_types',
+        'repair_priority': 'repair_priority'
     }
 
-    def __init__(self, host_id=None, severity_level=None, host_name=None, host_ip=None, agent_id=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None, app_path=None, region_name=None, public_ip=None, private_ip=None, group_id=None, group_name=None, os_type=None, asset_value=None, is_affect_business=None, first_scan_time=None, scan_time=None, support_restore=None):
+    def __init__(self, host_id=None, severity_level=None, host_name=None, host_ip=None, agent_id=None, version=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None, app_path=None, region_name=None, public_ip=None, private_ip=None, group_id=None, group_name=None, os_type=None, asset_value=None, is_affect_business=None, first_scan_time=None, scan_time=None, support_restore=None, disabled_operate_types=None, repair_priority=None):
         """VulHostInfo
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机id
+        :param host_id: 受漏洞影响的服务器id
         :type host_id: str
         :param severity_level: 危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
         :type severity_level: str
-        :param host_name: 受影响资产名称
+        :param host_name: 受影响主机名称
         :type host_name: str
-        :param host_ip: 受影响资产ip
+        :param host_ip: 受影响主机ip
         :type host_ip: str
-        :param agent_id: 主机对应的agent id
+        :param agent_id: 主机对应的Agent ID
         :type agent_id: str
-        :param cve_num: 漏洞cve数
+        :param version: 主机绑定的配额版本
+        :type version: str
+        :param cve_num: 漏洞cve总数
         :type cve_num: int
-        :param cve_id_list: cve列表
+        :param cve_id_list: 漏洞对应的cve id列表
         :type cve_id_list: list[str]
         :param status: 漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
         :type status: str
-        :param repair_cmd: 修复命令行
+        :param repair_cmd: 修复漏洞需要执行的命令行（只有Linux漏洞有该字段）
         :type repair_cmd: str
         :param app_path: 应用软件的路径（只有应用漏洞有该字段）
         :type app_path: str
@@ -107,10 +115,14 @@ class VulHostInfo:
         :type is_affect_business: bool
         :param first_scan_time: 首次扫描时间
         :type first_scan_time: int
-        :param scan_time: 扫描时间
+        :param scan_time: 扫描时间，时间戳单位：毫秒
         :type scan_time: int
         :param support_restore: 是否可以回滚到修复漏洞时创建的备份
         :type support_restore: bool
+        :param disabled_operate_types: 漏洞在当前主机上不可进行的操作类型列表
+        :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        :param repair_priority: 修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
+        :type repair_priority: str
         """
         
         
@@ -120,6 +132,7 @@ class VulHostInfo:
         self._host_name = None
         self._host_ip = None
         self._agent_id = None
+        self._version = None
         self._cve_num = None
         self._cve_id_list = None
         self._status = None
@@ -136,6 +149,8 @@ class VulHostInfo:
         self._first_scan_time = None
         self._scan_time = None
         self._support_restore = None
+        self._disabled_operate_types = None
+        self._repair_priority = None
         self.discriminator = None
 
         if host_id is not None:
@@ -148,6 +163,8 @@ class VulHostInfo:
             self.host_ip = host_ip
         if agent_id is not None:
             self.agent_id = agent_id
+        if version is not None:
+            self.version = version
         if cve_num is not None:
             self.cve_num = cve_num
         if cve_id_list is not None:
@@ -180,12 +197,16 @@ class VulHostInfo:
             self.scan_time = scan_time
         if support_restore is not None:
             self.support_restore = support_restore
+        if disabled_operate_types is not None:
+            self.disabled_operate_types = disabled_operate_types
+        if repair_priority is not None:
+            self.repair_priority = repair_priority
 
     @property
     def host_id(self):
         """Gets the host_id of this VulHostInfo.
 
-        主机id
+        受漏洞影响的服务器id
 
         :return: The host_id of this VulHostInfo.
         :rtype: str
@@ -196,7 +217,7 @@ class VulHostInfo:
     def host_id(self, host_id):
         """Sets the host_id of this VulHostInfo.
 
-        主机id
+        受漏洞影响的服务器id
 
         :param host_id: The host_id of this VulHostInfo.
         :type host_id: str
@@ -229,7 +250,7 @@ class VulHostInfo:
     def host_name(self):
         """Gets the host_name of this VulHostInfo.
 
-        受影响资产名称
+        受影响主机名称
 
         :return: The host_name of this VulHostInfo.
         :rtype: str
@@ -240,7 +261,7 @@ class VulHostInfo:
     def host_name(self, host_name):
         """Sets the host_name of this VulHostInfo.
 
-        受影响资产名称
+        受影响主机名称
 
         :param host_name: The host_name of this VulHostInfo.
         :type host_name: str
@@ -251,7 +272,7 @@ class VulHostInfo:
     def host_ip(self):
         """Gets the host_ip of this VulHostInfo.
 
-        受影响资产ip
+        受影响主机ip
 
         :return: The host_ip of this VulHostInfo.
         :rtype: str
@@ -262,7 +283,7 @@ class VulHostInfo:
     def host_ip(self, host_ip):
         """Sets the host_ip of this VulHostInfo.
 
-        受影响资产ip
+        受影响主机ip
 
         :param host_ip: The host_ip of this VulHostInfo.
         :type host_ip: str
@@ -273,7 +294,7 @@ class VulHostInfo:
     def agent_id(self):
         """Gets the agent_id of this VulHostInfo.
 
-        主机对应的agent id
+        主机对应的Agent ID
 
         :return: The agent_id of this VulHostInfo.
         :rtype: str
@@ -284,7 +305,7 @@ class VulHostInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this VulHostInfo.
 
-        主机对应的agent id
+        主机对应的Agent ID
 
         :param agent_id: The agent_id of this VulHostInfo.
         :type agent_id: str
@@ -292,10 +313,32 @@ class VulHostInfo:
         self._agent_id = agent_id
 
     @property
+    def version(self):
+        """Gets the version of this VulHostInfo.
+
+        主机绑定的配额版本
+
+        :return: The version of this VulHostInfo.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this VulHostInfo.
+
+        主机绑定的配额版本
+
+        :param version: The version of this VulHostInfo.
+        :type version: str
+        """
+        self._version = version
+
+    @property
     def cve_num(self):
         """Gets the cve_num of this VulHostInfo.
 
-        漏洞cve数
+        漏洞cve总数
 
         :return: The cve_num of this VulHostInfo.
         :rtype: int
@@ -306,7 +349,7 @@ class VulHostInfo:
     def cve_num(self, cve_num):
         """Sets the cve_num of this VulHostInfo.
 
-        漏洞cve数
+        漏洞cve总数
 
         :param cve_num: The cve_num of this VulHostInfo.
         :type cve_num: int
@@ -317,7 +360,7 @@ class VulHostInfo:
     def cve_id_list(self):
         """Gets the cve_id_list of this VulHostInfo.
 
-        cve列表
+        漏洞对应的cve id列表
 
         :return: The cve_id_list of this VulHostInfo.
         :rtype: list[str]
@@ -328,7 +371,7 @@ class VulHostInfo:
     def cve_id_list(self, cve_id_list):
         """Sets the cve_id_list of this VulHostInfo.
 
-        cve列表
+        漏洞对应的cve id列表
 
         :param cve_id_list: The cve_id_list of this VulHostInfo.
         :type cve_id_list: list[str]
@@ -361,7 +404,7 @@ class VulHostInfo:
     def repair_cmd(self):
         """Gets the repair_cmd of this VulHostInfo.
 
-        修复命令行
+        修复漏洞需要执行的命令行（只有Linux漏洞有该字段）
 
         :return: The repair_cmd of this VulHostInfo.
         :rtype: str
@@ -372,7 +415,7 @@ class VulHostInfo:
     def repair_cmd(self, repair_cmd):
         """Sets the repair_cmd of this VulHostInfo.
 
-        修复命令行
+        修复漏洞需要执行的命令行（只有Linux漏洞有该字段）
 
         :param repair_cmd: The repair_cmd of this VulHostInfo.
         :type repair_cmd: str
@@ -603,7 +646,7 @@ class VulHostInfo:
     def scan_time(self):
         """Gets the scan_time of this VulHostInfo.
 
-        扫描时间
+        扫描时间，时间戳单位：毫秒
 
         :return: The scan_time of this VulHostInfo.
         :rtype: int
@@ -614,7 +657,7 @@ class VulHostInfo:
     def scan_time(self, scan_time):
         """Sets the scan_time of this VulHostInfo.
 
-        扫描时间
+        扫描时间，时间戳单位：毫秒
 
         :param scan_time: The scan_time of this VulHostInfo.
         :type scan_time: int
@@ -642,6 +685,50 @@ class VulHostInfo:
         :type support_restore: bool
         """
         self._support_restore = support_restore
+
+    @property
+    def disabled_operate_types(self):
+        """Gets the disabled_operate_types of this VulHostInfo.
+
+        漏洞在当前主机上不可进行的操作类型列表
+
+        :return: The disabled_operate_types of this VulHostInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        """
+        return self._disabled_operate_types
+
+    @disabled_operate_types.setter
+    def disabled_operate_types(self, disabled_operate_types):
+        """Sets the disabled_operate_types of this VulHostInfo.
+
+        漏洞在当前主机上不可进行的操作类型列表
+
+        :param disabled_operate_types: The disabled_operate_types of this VulHostInfo.
+        :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        """
+        self._disabled_operate_types = disabled_operate_types
+
+    @property
+    def repair_priority(self):
+        """Gets the repair_priority of this VulHostInfo.
+
+        修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
+
+        :return: The repair_priority of this VulHostInfo.
+        :rtype: str
+        """
+        return self._repair_priority
+
+    @repair_priority.setter
+    def repair_priority(self, repair_priority):
+        """Sets the repair_priority of this VulHostInfo.
+
+        修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
+
+        :param repair_priority: The repair_priority of this VulHostInfo.
+        :type repair_priority: str
+        """
+        self._repair_priority = repair_priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

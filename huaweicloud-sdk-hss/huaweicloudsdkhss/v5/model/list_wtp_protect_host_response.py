@@ -34,7 +34,7 @@ class ListWtpProtectHostResponse(SdkResponse):
 
         :param data_list: data list
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostResponseInfo`]
-        :param total_num: total number
+        :param total_num: total number of WTP protected servers
         :type total_num: int
         """
         
@@ -75,7 +75,7 @@ class ListWtpProtectHostResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListWtpProtectHostResponse.
 
-        total number
+        total number of WTP protected servers
 
         :return: The total_num of this ListWtpProtectHostResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListWtpProtectHostResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListWtpProtectHostResponse.
 
-        total number
+        total number of WTP protected servers
 
         :param total_num: The total_num of this ListWtpProtectHostResponse.
         :type total_num: int

@@ -33,9 +33,9 @@ class ListGlobalEipFilterTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页条数
+        :param limit: 
         :type limit: list[int]
-        :param offset: 分页起始点
+        :param offset: 
         :type offset: list[int]
         :param body: Body of the ListGlobalEipFilterTagsRequest
         :type body: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`
@@ -59,8 +59,6 @@ class ListGlobalEipFilterTagsRequest:
     def limit(self):
         """Gets the limit of this ListGlobalEipFilterTagsRequest.
 
-        每页条数
-
         :return: The limit of this ListGlobalEipFilterTagsRequest.
         :rtype: list[int]
         """
@@ -69,8 +67,6 @@ class ListGlobalEipFilterTagsRequest:
     @limit.setter
     def limit(self, limit):
         """Sets the limit of this ListGlobalEipFilterTagsRequest.
-
-        每页条数
 
         :param limit: The limit of this ListGlobalEipFilterTagsRequest.
         :type limit: list[int]
@@ -81,8 +77,6 @@ class ListGlobalEipFilterTagsRequest:
     def offset(self):
         """Gets the offset of this ListGlobalEipFilterTagsRequest.
 
-        分页起始点
-
         :return: The offset of this ListGlobalEipFilterTagsRequest.
         :rtype: list[int]
         """
@@ -91,8 +85,6 @@ class ListGlobalEipFilterTagsRequest:
     @offset.setter
     def offset(self, offset):
         """Sets the offset of this ListGlobalEipFilterTagsRequest.
-
-        分页起始点
 
         :param offset: The offset of this ListGlobalEipFilterTagsRequest.
         :type offset: list[int]

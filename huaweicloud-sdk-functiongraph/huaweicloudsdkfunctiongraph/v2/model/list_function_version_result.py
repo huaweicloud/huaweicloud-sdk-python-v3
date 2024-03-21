@@ -183,7 +183,7 @@ class ListFunctionVersionResult:
         :type enable_dynamic_memory: bool
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
         :type enterprise_project_id: str
-        :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        :param is_stateful_function: 是否支持有状态，v2版本支持
         :type is_stateful_function: bool
         :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息
         :type enable_auth_in_header: bool
@@ -1114,7 +1114,7 @@ class ListFunctionVersionResult:
     def is_stateful_function(self):
         """Gets the is_stateful_function of this ListFunctionVersionResult.
 
-        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        是否支持有状态，v2版本支持
 
         :return: The is_stateful_function of this ListFunctionVersionResult.
         :rtype: bool
@@ -1125,7 +1125,7 @@ class ListFunctionVersionResult:
     def is_stateful_function(self, is_stateful_function):
         """Sets the is_stateful_function of this ListFunctionVersionResult.
 
-        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        是否支持有状态，v2版本支持
 
         :param is_stateful_function: The is_stateful_function of this ListFunctionVersionResult.
         :type is_stateful_function: bool

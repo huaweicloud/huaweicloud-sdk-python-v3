@@ -9,10 +9,13 @@ from huaweicloudsdkhss.v5.model.add_hosts_group_request import AddHostsGroupRequ
 from huaweicloudsdkhss.v5.model.add_hosts_group_request_info import AddHostsGroupRequestInfo
 from huaweicloudsdkhss.v5.model.add_hosts_group_response import AddHostsGroupResponse
 from huaweicloudsdkhss.v5.model.agent_id import AgentId
+from huaweicloudsdkhss.v5.model.agent_version import AgentVersion
 from huaweicloudsdkhss.v5.model.alarm_white_list_response_info import AlarmWhiteListResponseInfo
+from huaweicloudsdkhss.v5.model.antivirus_result_detail_info import AntivirusResultDetailInfo
 from huaweicloudsdkhss.v5.model.app_change_response_info import AppChangeResponseInfo
 from huaweicloudsdkhss.v5.model.app_response_info import AppResponseInfo
 from huaweicloudsdkhss.v5.model.app_statistic_response_info import AppStatisticResponseInfo
+from huaweicloudsdkhss.v5.model.asset_value import AssetValue
 from huaweicloudsdkhss.v5.model.associate_images import AssociateImages
 from huaweicloudsdkhss.v5.model.associate_policy_group_request import AssociatePolicyGroupRequest
 from huaweicloudsdkhss.v5.model.associate_policy_group_request_info import AssociatePolicyGroupRequestInfo
@@ -69,6 +72,9 @@ from huaweicloudsdkhss.v5.model.check_rule_risk_info_response_info import CheckR
 from huaweicloudsdkhss.v5.model.close_protection_info_request_info import CloseProtectionInfoRequestInfo
 from huaweicloudsdkhss.v5.model.container_name import ContainerName
 from huaweicloudsdkhss.v5.model.container_node_info import ContainerNodeInfo
+from huaweicloudsdkhss.v5.model.create_quotas_order_request import CreateQuotasOrderRequest
+from huaweicloudsdkhss.v5.model.create_quotas_order_request_info import CreateQuotasOrderRequestInfo
+from huaweicloudsdkhss.v5.model.create_quotas_order_response import CreateQuotasOrderResponse
 from huaweicloudsdkhss.v5.model.create_vulnerability_scan_task_request import CreateVulnerabilityScanTaskRequest
 from huaweicloudsdkhss.v5.model.create_vulnerability_scan_task_response import CreateVulnerabilityScanTaskResponse
 from huaweicloudsdkhss.v5.model.default_group import DefaultGroup
@@ -92,8 +98,12 @@ from huaweicloudsdkhss.v5.model.event_type import EventType
 from huaweicloudsdkhss.v5.model.event_user_response_info import EventUserResponseInfo
 from huaweicloudsdkhss.v5.model.event_white_rule_list_request_info import EventWhiteRuleListRequestInfo
 from huaweicloudsdkhss.v5.model.file_attr import FileAttr
+from huaweicloudsdkhss.v5.model.file_ctime import FileCtime
 from huaweicloudsdkhss.v5.model.file_hash import FileHash
+from huaweicloudsdkhss.v5.model.file_mtime import FileMtime
+from huaweicloudsdkhss.v5.model.file_owner import FileOwner
 from huaweicloudsdkhss.v5.model.file_path import FilePath
+from huaweicloudsdkhss.v5.model.file_size import FileSize
 from huaweicloudsdkhss.v5.model.group_id import GroupId
 from huaweicloudsdkhss.v5.model.group_name import GroupName
 from huaweicloudsdkhss.v5.model.handle_method import HandleMethod
@@ -119,6 +129,8 @@ from huaweicloudsdkhss.v5.model.image_risk_configs_info_response_info import Ima
 from huaweicloudsdkhss.v5.model.image_vul_cve_info import ImageVulCveInfo
 from huaweicloudsdkhss.v5.model.image_vul_info import ImageVulInfo
 from huaweicloudsdkhss.v5.model.is_parent import IsParent
+from huaweicloudsdkhss.v5.model.isolate_event_response_info import IsolateEventResponseInfo
+from huaweicloudsdkhss.v5.model.isolate_source import IsolateSource
 from huaweicloudsdkhss.v5.model.isolated_file_request_info import IsolatedFileRequestInfo
 from huaweicloudsdkhss.v5.model.isolated_file_response_info import IsolatedFileResponseInfo
 from huaweicloudsdkhss.v5.model.isolation_status import IsolationStatus
@@ -217,6 +229,7 @@ from huaweicloudsdkhss.v5.model.list_wtp_protect_host_response import ListWtpPro
 from huaweicloudsdkhss.v5.model.login_ip import LoginIp
 from huaweicloudsdkhss.v5.model.login_type import LoginType
 from huaweicloudsdkhss.v5.model.login_user_name import LoginUserName
+from huaweicloudsdkhss.v5.model.malware_name import MalwareName
 from huaweicloudsdkhss.v5.model.manual_vul_scan_request_info import ManualVulScanRequestInfo
 from huaweicloudsdkhss.v5.model.occur_time import OccurTime
 from huaweicloudsdkhss.v5.model.operate_event_request_info import OperateEventRequestInfo
@@ -244,9 +257,12 @@ from huaweicloudsdkhss.v5.model.public_ip import PublicIp
 from huaweicloudsdkhss.v5.model.pwd_policy_info_response_info import PwdPolicyInfoResponseInfo
 from huaweicloudsdkhss.v5.model.quota_resources_response_info import QuotaResourcesResponseInfo
 from huaweicloudsdkhss.v5.model.quota_statistics_response_info import QuotaStatisticsResponseInfo
+from huaweicloudsdkhss.v5.model.repair_priority_list_info import RepairPriorityListInfo
 from huaweicloudsdkhss.v5.model.resource_info import ResourceInfo
+from huaweicloudsdkhss.v5.model.resource_product_data_object_info import ResourceProductDataObjectInfo
 from huaweicloudsdkhss.v5.model.resource_quotas_info import ResourceQuotasInfo
 from huaweicloudsdkhss.v5.model.resource_tag_info import ResourceTagInfo
+from huaweicloudsdkhss.v5.model.result_id import ResultId
 from huaweicloudsdkhss.v5.model.risk_host_num import RiskHostNum
 from huaweicloudsdkhss.v5.model.run_image_synchronize_request import RunImageSynchronizeRequest
 from huaweicloudsdkhss.v5.model.run_image_synchronize_request_info import RunImageSynchronizeRequestInfo
@@ -268,6 +284,9 @@ from huaweicloudsdkhss.v5.model.show_check_rule_detail_request import ShowCheckR
 from huaweicloudsdkhss.v5.model.show_check_rule_detail_response import ShowCheckRuleDetailResponse
 from huaweicloudsdkhss.v5.model.show_image_check_rule_detail_request import ShowImageCheckRuleDetailRequest
 from huaweicloudsdkhss.v5.model.show_image_check_rule_detail_response import ShowImageCheckRuleDetailResponse
+from huaweicloudsdkhss.v5.model.show_period_response_info import ShowPeriodResponseInfo
+from huaweicloudsdkhss.v5.model.show_productdata_offering_infos_request import ShowProductdataOfferingInfosRequest
+from huaweicloudsdkhss.v5.model.show_productdata_offering_infos_response import ShowProductdataOfferingInfosResponse
 from huaweicloudsdkhss.v5.model.show_resource_quotas_request import ShowResourceQuotasRequest
 from huaweicloudsdkhss.v5.model.show_resource_quotas_response import ShowResourceQuotasResponse
 from huaweicloudsdkhss.v5.model.show_risk_config_detail_request import ShowRiskConfigDetailRequest
@@ -302,6 +321,7 @@ from huaweicloudsdkhss.v5.model.user_change_history_response_info import UserCha
 from huaweicloudsdkhss.v5.model.user_response_info import UserResponseInfo
 from huaweicloudsdkhss.v5.model.user_statistic_info_response_info import UserStatisticInfoResponseInfo
 from huaweicloudsdkhss.v5.model.vul_host_info import VulHostInfo
+from huaweicloudsdkhss.v5.model.vul_host_info_disabled_operate_types import VulHostInfoDisabledOperateTypes
 from huaweicloudsdkhss.v5.model.vul_info import VulInfo
 from huaweicloudsdkhss.v5.model.vul_info_cve_list import VulInfoCveList
 from huaweicloudsdkhss.v5.model.vul_operate_info import VulOperateInfo

@@ -31,7 +31,7 @@ class ListFunctionStatisticsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param func_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :param func_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type func_urn: str
         :param period: 获取最近多少分钟内函数执行的指标。
         :type period: str
@@ -50,7 +50,7 @@ class ListFunctionStatisticsRequest:
     def func_urn(self):
         """Gets the func_urn of this ListFunctionStatisticsRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The func_urn of this ListFunctionStatisticsRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ListFunctionStatisticsRequest:
     def func_urn(self, func_urn):
         """Sets the func_urn of this ListFunctionStatisticsRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param func_urn: The func_urn of this ListFunctionStatisticsRequest.
         :type func_urn: str

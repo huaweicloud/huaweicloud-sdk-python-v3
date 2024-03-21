@@ -714,6 +714,73 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_security_secrecy_levels_async(self, request):
+        """批量删除密级
+
+        批量删除密级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteSecuritySecrecyLevels
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecuritySecrecyLevelsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteSecuritySecrecyLevelsResponse`
+        """
+        http_info = self._batch_delete_security_secrecy_levels_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_security_secrecy_levels_async_invoker(self, request):
+        http_info = self._batch_delete_security_secrecy_levels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_security_secrecy_levels_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dls/data-classification/secrecy-level/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSecuritySecrecyLevelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_templates_async(self, request):
         """批量删除规则模板
 
@@ -2925,6 +2992,73 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def create_security_secrecy_level_async(self, request):
+        """创建密级
+
+        创建密级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSecuritySecrecyLevel
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecuritySecrecyLevelRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecuritySecrecyLevelResponse`
+        """
+        http_info = self._create_security_secrecy_level_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_secrecy_level_async_invoker(self, request):
+        http_info = self._create_security_secrecy_level_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_security_secrecy_level_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/data-classification/secrecy-level",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecuritySecrecyLevelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_service_catalog_async(self, request):
         """创建服务目录
 
@@ -4375,6 +4509,73 @@ class DataArtsStudioAsyncClient(Client):
         path_params = {}
         if 'permission_set_id' in local_var_params:
             path_params['permission_set_id'] = local_var_params['permission_set_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_security_secrecy_level_async(self, request):
+        """删除指定的id的密级
+
+        删除指定的id的密级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSecuritySecrecyLevel
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecuritySecrecyLevelRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecuritySecrecyLevelResponse`
+        """
+        http_info = self._delete_security_secrecy_level_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_security_secrecy_level_async_invoker(self, request):
+        http_info = self._delete_security_secrecy_level_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_security_secrecy_level_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/security/data-classification/secrecy-level/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecuritySecrecyLevelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 
@@ -9427,6 +9628,223 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def list_security_datasource_actions_async(self, request):
+        """查询数据操作信息
+
+        查询数据操作信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecurityDatasourceActions
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDatasourceActionsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDatasourceActionsResponse`
+        """
+        http_info = self._list_security_datasource_actions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_datasource_actions_async_invoker(self, request):
+        http_info = self._list_security_datasource_actions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_datasource_actions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission-sets/datasource/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityDatasourceActionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'parent_permission_set_id' in local_var_params:
+            query_params.append(('parent_permission_set_id', local_var_params['parent_permission_set_id']))
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'datasource_type' in local_var_params:
+            query_params.append(('datasource_type', local_var_params['datasource_type']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'schema_name' in local_var_params:
+            query_params.append(('schema_name', local_var_params['schema_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'column_name' in local_var_params:
+            query_params.append(('column_name', local_var_params['column_name']))
+        if 'url' in local_var_params:
+            query_params.append(('url', local_var_params['url']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_datasource_configurations_async(self, request):
+        """查询数据源可配置权限
+
+        查询数据源可配置权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecurityDatasourceConfigurations
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDatasourceConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDatasourceConfigurationsResponse`
+        """
+        http_info = self._list_security_datasource_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_datasource_configurations_async_invoker(self, request):
+        http_info = self._list_security_datasource_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_datasource_configurations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission-sets/datasource/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityDatasourceConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_datasource_urls_async(self, request):
+        """查询url信息
+
+        查询url信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecurityDatasourceUrls
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDatasourceUrlsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDatasourceUrlsResponse`
+        """
+        http_info = self._list_security_datasource_urls_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_datasource_urls_async_invoker(self, request):
+        http_info = self._list_security_datasource_urls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_datasource_urls_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission-sets/datasource/urls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityDatasourceUrlsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'datasource_type' in local_var_params:
+            query_params.append(('datasource_type', local_var_params['datasource_type']))
+        if 'parent_permission_set_id' in local_var_params:
+            query_params.append(('parent_permission_set_id', local_var_params['parent_permission_set_id']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_permission_set_members_async(self, request):
         """查询权限集成员列表
 
@@ -9659,6 +10077,146 @@ class DataArtsStudioAsyncClient(Client):
             query_params.append(('order_by', local_var_params['order_by']))
         if 'order_by_asc' in local_var_params:
             query_params.append(('order_by_asc', local_var_params['order_by_asc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_role_actions_async(self, request):
+        """查询角色对一组库、表的权限交集
+
+        查询角色对一组库、表的权限交集
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecurityRoleActions
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityRoleActionsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityRoleActionsResponse`
+        """
+        http_info = self._list_security_role_actions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_role_actions_async_invoker(self, request):
+        http_info = self._list_security_role_actions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_role_actions_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-sets/datasource/role/batch-actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityRoleActionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_secrecy_levels_async(self, request):
+        """获取密级
+
+        获取密级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecuritySecrecyLevels
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecuritySecrecyLevelsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecuritySecrecyLevelsResponse`
+        """
+        http_info = self._list_security_secrecy_levels_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_secrecy_levels_async_invoker(self, request):
+        http_info = self._list_security_secrecy_levels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_secrecy_levels_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/data-classification/secrecy-level",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecuritySecrecyLevelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'desc' in local_var_params:
+            query_params.append(('desc', local_var_params['desc']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -10443,6 +11001,73 @@ class DataArtsStudioAsyncClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def renew_data_profile_async(self, request):
+        """指定字段采集概要
+
+        指定字段采集概要信息接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RenewDataProfile
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.RenewDataProfileRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RenewDataProfileResponse`
+        """
+        http_info = self._renew_data_profile_http_info(request)
+        return self._call_api(**http_info)
+
+    def renew_data_profile_async_invoker(self, request):
+        http_info = self._renew_data_profile_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _renew_data_profile_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/asset/profile/columns",
+            "request_type": request.__class__.__name__,
+            "response_type": "RenewDataProfileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -12743,6 +13368,73 @@ class DataArtsStudioAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_business_assets_tree_async(self, request):
+        """查询业务资产目录树
+
+        逐级查询业务资产目录树,包含数据规范同步过来的业务对象和逻辑实体。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBusinessAssetsTree
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowBusinessAssetsTreeRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowBusinessAssetsTreeResponse`
+        """
+        http_info = self._show_business_assets_tree_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_business_assets_tree_async_invoker(self, request):
+        http_info = self._show_business_assets_tree_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_business_assets_tree_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/business-assets/tree/subnode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBusinessAssetsTreeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'guid' in local_var_params:
+            query_params.append(('guid', local_var_params['guid']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -15285,6 +15977,73 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def show_security_secrecy_level_async(self, request):
+        """根据指定的id查询密级
+
+        根据指定的id查询密级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSecuritySecrecyLevel
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecuritySecrecyLevelRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecuritySecrecyLevelResponse`
+        """
+        http_info = self._show_security_secrecy_level_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_secrecy_level_async_invoker(self, request):
+        http_info = self._show_security_secrecy_level_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_security_secrecy_level_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/data-classification/secrecy-level/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecuritySecrecyLevelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_standard_by_id_async(self, request):
         """查看数据标准详情
 
@@ -16887,6 +17646,75 @@ class DataArtsStudioAsyncClient(Client):
             "resource_path": "/v1/{project_id}/security/data-classification/rule/switch-status/{id}",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateSecurityRuleEnableStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_secrecy_level_async(self, request):
+        """根据指定的id修改密级
+
+        根据指定的id修改密级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSecuritySecrecyLevel
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecuritySecrecyLevelRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecuritySecrecyLevelResponse`
+        """
+        http_info = self._update_security_secrecy_level_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_secrecy_level_async_invoker(self, request):
+        http_info = self._update_security_secrecy_level_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_security_secrecy_level_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/data-classification/secrecy-level/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecuritySecrecyLevelResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

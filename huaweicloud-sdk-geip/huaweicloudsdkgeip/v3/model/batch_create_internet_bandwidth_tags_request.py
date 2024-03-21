@@ -31,7 +31,7 @@ class BatchCreateInternetBandwidthTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 全域公网带宽的id
+        :param resource_id: 
         :type resource_id: str
         :param body: Body of the BatchCreateInternetBandwidthTagsRequest
         :type body: :class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBody`
@@ -51,8 +51,6 @@ class BatchCreateInternetBandwidthTagsRequest:
     def resource_id(self):
         """Gets the resource_id of this BatchCreateInternetBandwidthTagsRequest.
 
-        全域公网带宽的id
-
         :return: The resource_id of this BatchCreateInternetBandwidthTagsRequest.
         :rtype: str
         """
@@ -61,8 +59,6 @@ class BatchCreateInternetBandwidthTagsRequest:
     @resource_id.setter
     def resource_id(self, resource_id):
         """Sets the resource_id of this BatchCreateInternetBandwidthTagsRequest.
-
-        全域公网带宽的id
 
         :param resource_id: The resource_id of this BatchCreateInternetBandwidthTagsRequest.
         :type resource_id: str

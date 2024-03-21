@@ -28,7 +28,8 @@ class CreateInstanceRequestBody:
         'subnet_id': 'str',
         'security_group': 'list[str]',
         'count': 'int',
-        'res_tenant': 'bool'
+        'res_tenant': 'bool',
+        'anti_affinity': 'bool'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateInstanceRequestBody:
         'subnet_id': 'subnet_id',
         'security_group': 'security_group',
         'count': 'count',
-        'res_tenant': 'res_tenant'
+        'res_tenant': 'res_tenant',
+        'anti_affinity': 'anti_affinity'
     }
 
-    def __init__(self, chargemode=None, region=None, available_zone=None, arch=None, instancename=None, specification=None, cpu_flavor=None, vpc_id=None, subnet_id=None, security_group=None, count=None, res_tenant=None):
+    def __init__(self, chargemode=None, region=None, available_zone=None, arch=None, instancename=None, specification=None, cpu_flavor=None, vpc_id=None, subnet_id=None, security_group=None, count=None, res_tenant=None, anti_affinity=None):
         """CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -61,9 +63,9 @@ class CreateInstanceRequestBody:
         :type arch: str
         :param instancename: 独享引擎名称前缀
         :type instancename: str
-        :param specification: 独享引擎版本规格   - 企业版：waf.instance.enterprise   - 专业版：waf.instance.professional
+        :param specification: 独享引擎版本规格   - waf.instance.enterprise：企业版，对应控制台WI-100规格   - waf.instance.professional：专业版，对应控制台WI-500规格
         :type specification: str
-        :param cpu_flavor: 独享引擎ECS规格，实例规格企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格（通过调用ECS的ListFlavors接口获取应8U16G的ecs和2U4G的ecs对应规格id）
+        :param cpu_flavor: 独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通资源租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格。
         :type cpu_flavor: str
         :param vpc_id: 独享引擎所在VPC的ID（通过调用虚拟私有云ListVpcs接口获取所有的VPC列表查询VPC的ID，如果需要关联企业项目，则调用虚拟私有云的接口也需要关联企业项目ID）
         :type vpc_id: str
@@ -75,6 +77,8 @@ class CreateInstanceRequestBody:
         :type count: int
         :param res_tenant: 是否为资源租户类，默认值为false。   - true: 资源租户类   - false: 普通租户类
         :type res_tenant: bool
+        :param anti_affinity: 是否开启反亲和。仅资源租户独享实例支持该特性。
+        :type anti_affinity: bool
         """
         
         
@@ -91,6 +95,7 @@ class CreateInstanceRequestBody:
         self._security_group = None
         self._count = None
         self._res_tenant = None
+        self._anti_affinity = None
         self.discriminator = None
 
         if chargemode is not None:
@@ -100,13 +105,16 @@ class CreateInstanceRequestBody:
         self.arch = arch
         self.instancename = instancename
         self.specification = specification
-        self.cpu_flavor = cpu_flavor
+        if cpu_flavor is not None:
+            self.cpu_flavor = cpu_flavor
         self.vpc_id = vpc_id
         self.subnet_id = subnet_id
         self.security_group = security_group
         self.count = count
         if res_tenant is not None:
             self.res_tenant = res_tenant
+        if anti_affinity is not None:
+            self.anti_affinity = anti_affinity
 
     @property
     def chargemode(self):
@@ -222,7 +230,7 @@ class CreateInstanceRequestBody:
     def specification(self):
         """Gets the specification of this CreateInstanceRequestBody.
 
-        独享引擎版本规格   - 企业版：waf.instance.enterprise   - 专业版：waf.instance.professional
+        独享引擎版本规格   - waf.instance.enterprise：企业版，对应控制台WI-100规格   - waf.instance.professional：专业版，对应控制台WI-500规格
 
         :return: The specification of this CreateInstanceRequestBody.
         :rtype: str
@@ -233,7 +241,7 @@ class CreateInstanceRequestBody:
     def specification(self, specification):
         """Sets the specification of this CreateInstanceRequestBody.
 
-        独享引擎版本规格   - 企业版：waf.instance.enterprise   - 专业版：waf.instance.professional
+        独享引擎版本规格   - waf.instance.enterprise：企业版，对应控制台WI-100规格   - waf.instance.professional：专业版，对应控制台WI-500规格
 
         :param specification: The specification of this CreateInstanceRequestBody.
         :type specification: str
@@ -244,7 +252,7 @@ class CreateInstanceRequestBody:
     def cpu_flavor(self):
         """Gets the cpu_flavor of this CreateInstanceRequestBody.
 
-        独享引擎ECS规格，实例规格企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格（通过调用ECS的ListFlavors接口获取应8U16G的ecs和2U4G的ecs对应规格id）
+        独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通资源租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格。
 
         :return: The cpu_flavor of this CreateInstanceRequestBody.
         :rtype: str
@@ -255,7 +263,7 @@ class CreateInstanceRequestBody:
     def cpu_flavor(self, cpu_flavor):
         """Sets the cpu_flavor of this CreateInstanceRequestBody.
 
-        独享引擎ECS规格，实例规格企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格（通过调用ECS的ListFlavors接口获取应8U16G的ecs和2U4G的ecs对应规格id）
+        独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通资源租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格。
 
         :param cpu_flavor: The cpu_flavor of this CreateInstanceRequestBody.
         :type cpu_flavor: str
@@ -371,6 +379,28 @@ class CreateInstanceRequestBody:
         :type res_tenant: bool
         """
         self._res_tenant = res_tenant
+
+    @property
+    def anti_affinity(self):
+        """Gets the anti_affinity of this CreateInstanceRequestBody.
+
+        是否开启反亲和。仅资源租户独享实例支持该特性。
+
+        :return: The anti_affinity of this CreateInstanceRequestBody.
+        :rtype: bool
+        """
+        return self._anti_affinity
+
+    @anti_affinity.setter
+    def anti_affinity(self, anti_affinity):
+        """Sets the anti_affinity of this CreateInstanceRequestBody.
+
+        是否开启反亲和。仅资源租户独享实例支持该特性。
+
+        :param anti_affinity: The anti_affinity of this CreateInstanceRequestBody.
+        :type anti_affinity: bool
+        """
+        self._anti_affinity = anti_affinity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

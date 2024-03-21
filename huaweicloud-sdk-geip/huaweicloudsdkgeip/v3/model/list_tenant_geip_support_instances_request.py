@@ -31,9 +31,9 @@ class ListTenantGeipSupportInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param access_site: 接入点信息
+        :param access_site: 
         :type access_site: str
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         """
         
@@ -51,8 +51,6 @@ class ListTenantGeipSupportInstancesRequest:
     def access_site(self):
         """Gets the access_site of this ListTenantGeipSupportInstancesRequest.
 
-        接入点信息
-
         :return: The access_site of this ListTenantGeipSupportInstancesRequest.
         :rtype: str
         """
@@ -61,8 +59,6 @@ class ListTenantGeipSupportInstancesRequest:
     @access_site.setter
     def access_site(self, access_site):
         """Sets the access_site of this ListTenantGeipSupportInstancesRequest.
-
-        接入点信息
 
         :param access_site: The access_site of this ListTenantGeipSupportInstancesRequest.
         :type access_site: str
@@ -73,8 +69,6 @@ class ListTenantGeipSupportInstancesRequest:
     def fields(self):
         """Gets the fields of this ListTenantGeipSupportInstancesRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListTenantGeipSupportInstancesRequest.
         :rtype: list[str]
         """
@@ -83,8 +77,6 @@ class ListTenantGeipSupportInstancesRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListTenantGeipSupportInstancesRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListTenantGeipSupportInstancesRequest.
         :type fields: list[str]

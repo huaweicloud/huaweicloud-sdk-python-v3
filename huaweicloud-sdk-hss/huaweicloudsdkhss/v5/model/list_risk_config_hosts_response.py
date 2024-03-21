@@ -32,7 +32,7 @@ class ListRiskConfigHostsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 数据总量
+        :param total_num: 受配置检测影响的服务器数据总量
         :type total_num: int
         :param data_list: 数据列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.SecurityCheckHostInfoResponseInfo`]
@@ -53,7 +53,7 @@ class ListRiskConfigHostsResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListRiskConfigHostsResponse.
 
-        数据总量
+        受配置检测影响的服务器数据总量
 
         :return: The total_num of this ListRiskConfigHostsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListRiskConfigHostsResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListRiskConfigHostsResponse.
 
-        数据总量
+        受配置检测影响的服务器数据总量
 
         :param total_num: The total_num of this ListRiskConfigHostsResponse.
         :type total_num: int

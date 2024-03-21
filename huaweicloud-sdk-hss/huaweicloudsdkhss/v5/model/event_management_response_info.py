@@ -121,13 +121,13 @@ class EventManagementResponseInfo:
         :type event_name: str
         :param severity: 威胁等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
         :type severity: str
-        :param container_name: 容器实例名称
+        :param container_name: 容器实例名称，只有容器类型的告警有
         :type container_name: str
-        :param image_name: 镜像名称
+        :param image_name: 镜像名称，只有容器类型的告警有
         :type image_name: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -149,13 +149,13 @@ class EventManagementResponseInfo:
         :type attack_tag: str
         :param occur_time: 发生时间，毫秒
         :type occur_time: int
-        :param handle_time: 处理时间，毫秒
+        :param handle_time: 处理时间，毫秒，已处理的告警才有
         :type handle_time: int
         :param handle_status: 处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
         :type handle_status: str
-        :param handle_method: 处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀
+        :param handle_method: 处理方式，已处理的告警才有，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀
         :type handle_method: str
-        :param handler: 备注信息
+        :param handler: 备注信息，已处理的告警才有
         :type handler: str
         :param operate_accept_list: 支持的处理操作
         :type operate_accept_list: list[str]
@@ -442,7 +442,7 @@ class EventManagementResponseInfo:
     def container_name(self):
         """Gets the container_name of this EventManagementResponseInfo.
 
-        容器实例名称
+        容器实例名称，只有容器类型的告警有
 
         :return: The container_name of this EventManagementResponseInfo.
         :rtype: str
@@ -453,7 +453,7 @@ class EventManagementResponseInfo:
     def container_name(self, container_name):
         """Sets the container_name of this EventManagementResponseInfo.
 
-        容器实例名称
+        容器实例名称，只有容器类型的告警有
 
         :param container_name: The container_name of this EventManagementResponseInfo.
         :type container_name: str
@@ -464,7 +464,7 @@ class EventManagementResponseInfo:
     def image_name(self):
         """Gets the image_name of this EventManagementResponseInfo.
 
-        镜像名称
+        镜像名称，只有容器类型的告警有
 
         :return: The image_name of this EventManagementResponseInfo.
         :rtype: str
@@ -475,7 +475,7 @@ class EventManagementResponseInfo:
     def image_name(self, image_name):
         """Sets the image_name of this EventManagementResponseInfo.
 
-        镜像名称
+        镜像名称，只有容器类型的告警有
 
         :param image_name: The image_name of this EventManagementResponseInfo.
         :type image_name: str
@@ -508,7 +508,7 @@ class EventManagementResponseInfo:
     def host_id(self):
         """Gets the host_id of this EventManagementResponseInfo.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this EventManagementResponseInfo.
         :rtype: str
@@ -519,7 +519,7 @@ class EventManagementResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this EventManagementResponseInfo.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this EventManagementResponseInfo.
         :type host_id: str
@@ -750,7 +750,7 @@ class EventManagementResponseInfo:
     def handle_time(self):
         """Gets the handle_time of this EventManagementResponseInfo.
 
-        处理时间，毫秒
+        处理时间，毫秒，已处理的告警才有
 
         :return: The handle_time of this EventManagementResponseInfo.
         :rtype: int
@@ -761,7 +761,7 @@ class EventManagementResponseInfo:
     def handle_time(self, handle_time):
         """Sets the handle_time of this EventManagementResponseInfo.
 
-        处理时间，毫秒
+        处理时间，毫秒，已处理的告警才有
 
         :param handle_time: The handle_time of this EventManagementResponseInfo.
         :type handle_time: int
@@ -794,7 +794,7 @@ class EventManagementResponseInfo:
     def handle_method(self):
         """Gets the handle_method of this EventManagementResponseInfo.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀
+        处理方式，已处理的告警才有，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀
 
         :return: The handle_method of this EventManagementResponseInfo.
         :rtype: str
@@ -805,7 +805,7 @@ class EventManagementResponseInfo:
     def handle_method(self, handle_method):
         """Sets the handle_method of this EventManagementResponseInfo.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀
+        处理方式，已处理的告警才有，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀
 
         :param handle_method: The handle_method of this EventManagementResponseInfo.
         :type handle_method: str
@@ -816,7 +816,7 @@ class EventManagementResponseInfo:
     def handler(self):
         """Gets the handler of this EventManagementResponseInfo.
 
-        备注信息
+        备注信息，已处理的告警才有
 
         :return: The handler of this EventManagementResponseInfo.
         :rtype: str
@@ -827,7 +827,7 @@ class EventManagementResponseInfo:
     def handler(self, handler):
         """Sets the handler of this EventManagementResponseInfo.
 
-        备注信息
+        备注信息，已处理的告警才有
 
         :param handler: The handler of this EventManagementResponseInfo.
         :type handler: str

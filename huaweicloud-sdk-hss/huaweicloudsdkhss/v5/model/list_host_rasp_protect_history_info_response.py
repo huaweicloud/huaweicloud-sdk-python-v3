@@ -32,7 +32,7 @@ class ListHostRaspProtectHistoryInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: total number
+        :param total_num: total number of dynamic WTPs
         :type total_num: int
         :param data_list: data list
         :type data_list: list[:class:`huaweicloudsdkhss.v5.HostRaspProtectHistoryResponseInfo`]
@@ -53,7 +53,7 @@ class ListHostRaspProtectHistoryInfoResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListHostRaspProtectHistoryInfoResponse.
 
-        total number
+        total number of dynamic WTPs
 
         :return: The total_num of this ListHostRaspProtectHistoryInfoResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListHostRaspProtectHistoryInfoResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListHostRaspProtectHistoryInfoResponse.
 
-        total number
+        total number of dynamic WTPs
 
         :param total_num: The total_num of this ListHostRaspProtectHistoryInfoResponse.
         :type total_num: int

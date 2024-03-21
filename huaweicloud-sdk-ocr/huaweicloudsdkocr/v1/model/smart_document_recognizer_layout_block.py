@@ -20,17 +20,21 @@ class SmartDocumentRecognizerLayoutBlock:
         'location': 'list[list[int]]',
         'type': 'str',
         'text': 'str',
-        'words_ids': 'list[int]'
+        'words_ids': 'list[int]',
+        'table_id': 'int',
+        'form_id': 'int'
     }
 
     attribute_map = {
         'location': 'location',
         'type': 'type',
         'text': 'text',
-        'words_ids': 'words_ids'
+        'words_ids': 'words_ids',
+        'table_id': 'table_id',
+        'form_id': 'form_id'
     }
 
-    def __init__(self, location=None, type=None, text=None, words_ids=None):
+    def __init__(self, location=None, type=None, text=None, words_ids=None, table_id=None, form_id=None):
         """SmartDocumentRecognizerLayoutBlock
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class SmartDocumentRecognizerLayoutBlock:
         :type text: str
         :param words_ids: 文字识别结果索引列表，表示ocr_result的words_block_list中哪些文本框位于该文档区域内。 
         :type words_ids: list[int]
+        :param table_id: 仅当type为\&quot;table\&quot;且入参table为True时返回该字段，表示当前逻辑表格区域对应table_result中哪一项识别结果。 
+        :type table_id: int
+        :param form_id: 仅当type为\&quot;form\&quot;且入参form为True时返回该字段，表示当前有线表单区域对应form_result中哪一项识别结果。 
+        :type form_id: int
         """
         
         
@@ -51,6 +59,8 @@ class SmartDocumentRecognizerLayoutBlock:
         self._type = None
         self._text = None
         self._words_ids = None
+        self._table_id = None
+        self._form_id = None
         self.discriminator = None
 
         if location is not None:
@@ -61,6 +71,10 @@ class SmartDocumentRecognizerLayoutBlock:
             self.text = text
         if words_ids is not None:
             self.words_ids = words_ids
+        if table_id is not None:
+            self.table_id = table_id
+        if form_id is not None:
+            self.form_id = form_id
 
     @property
     def location(self):
@@ -149,6 +163,50 @@ class SmartDocumentRecognizerLayoutBlock:
         :type words_ids: list[int]
         """
         self._words_ids = words_ids
+
+    @property
+    def table_id(self):
+        """Gets the table_id of this SmartDocumentRecognizerLayoutBlock.
+
+        仅当type为\"table\"且入参table为True时返回该字段，表示当前逻辑表格区域对应table_result中哪一项识别结果。 
+
+        :return: The table_id of this SmartDocumentRecognizerLayoutBlock.
+        :rtype: int
+        """
+        return self._table_id
+
+    @table_id.setter
+    def table_id(self, table_id):
+        """Sets the table_id of this SmartDocumentRecognizerLayoutBlock.
+
+        仅当type为\"table\"且入参table为True时返回该字段，表示当前逻辑表格区域对应table_result中哪一项识别结果。 
+
+        :param table_id: The table_id of this SmartDocumentRecognizerLayoutBlock.
+        :type table_id: int
+        """
+        self._table_id = table_id
+
+    @property
+    def form_id(self):
+        """Gets the form_id of this SmartDocumentRecognizerLayoutBlock.
+
+        仅当type为\"form\"且入参form为True时返回该字段，表示当前有线表单区域对应form_result中哪一项识别结果。 
+
+        :return: The form_id of this SmartDocumentRecognizerLayoutBlock.
+        :rtype: int
+        """
+        return self._form_id
+
+    @form_id.setter
+    def form_id(self, form_id):
+        """Sets the form_id of this SmartDocumentRecognizerLayoutBlock.
+
+        仅当type为\"form\"且入参form为True时返回该字段，表示当前有线表单区域对应form_result中哪一项识别结果。 
+
+        :param form_id: The form_id of this SmartDocumentRecognizerLayoutBlock.
+        :type form_id: int
+        """
+        self._form_id = form_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

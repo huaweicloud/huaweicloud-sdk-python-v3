@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags:
+class ListSecurityDatasourceConfigurationsResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,70 +18,51 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str',
-        'value': 'str'
+        'configurations': 'list[PermissionConfiguration]'
     }
 
     attribute_map = {
-        'key': 'key',
-        'value': 'value'
+        'configurations': 'configurations'
     }
 
-    def __init__(self, key=None, value=None):
-        """AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags
+    def __init__(self, configurations=None):
+        """ListSecurityDatasourceConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
-        :param key: 
-        :type key: str
-        :param value: 
-        :type value: str
+        :param configurations: 数据源操作权限列表
+        :type configurations: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionConfiguration`]
         """
         
-        
+        super(ListSecurityDatasourceConfigurationsResponse, self).__init__()
 
-        self._key = None
-        self._value = None
+        self._configurations = None
         self.discriminator = None
 
-        self.key = key
-        self.value = value
+        if configurations is not None:
+            self.configurations = configurations
 
     @property
-    def key(self):
-        """Gets the key of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags.
+    def configurations(self):
+        """Gets the configurations of this ListSecurityDatasourceConfigurationsResponse.
 
-        :return: The key of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags.
-        :rtype: str
+        数据源操作权限列表
+
+        :return: The configurations of this ListSecurityDatasourceConfigurationsResponse.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionConfiguration`]
         """
-        return self._key
+        return self._configurations
 
-    @key.setter
-    def key(self, key):
-        """Sets the key of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags.
+    @configurations.setter
+    def configurations(self, configurations):
+        """Sets the configurations of this ListSecurityDatasourceConfigurationsResponse.
 
-        :param key: The key of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags.
-        :type key: str
+        数据源操作权限列表
+
+        :param configurations: The configurations of this ListSecurityDatasourceConfigurationsResponse.
+        :type configurations: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionConfiguration`]
         """
-        self._key = key
-
-    @property
-    def value(self):
-        """Gets the value of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags.
-
-        :return: The value of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags.
-        :rtype: str
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags.
-
-        :param value: The value of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags.
-        :type value: str
-        """
-        self._value = value
+        self._configurations = configurations
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -124,7 +106,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags):
+        if not isinstance(other, ListSecurityDatasourceConfigurationsResponse):
             return False
 
         return self.__dict__ == other.__dict__

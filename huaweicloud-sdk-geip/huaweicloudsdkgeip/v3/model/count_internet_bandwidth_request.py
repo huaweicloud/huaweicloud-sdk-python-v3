@@ -43,21 +43,21 @@ class CountInternetBandwidthRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param size: 根据全域公网带宽大小过滤
+        :param size: 
         :type size: list[int]
-        :param name: 根据名称过滤
+        :param name: 
         :type name: list[str]
-        :param name_like: 根据名称模糊匹配
+        :param name_like: 
         :type name_like: str
-        :param access_site: 根据接入点过滤
+        :param access_site: 
         :type access_site: list[str]
-        :param status: 根据资源状态过滤
+        :param status: 
         :type status: list[str]
-        :param enterprise_project_id: 根据企业项目ID过滤
+        :param enterprise_project_id: 
         :type enterprise_project_id: list[str]
-        :param tags: 根据标签过滤
+        :param tags: 
         :type tags: list[str]
         """
         
@@ -94,8 +94,6 @@ class CountInternetBandwidthRequest:
     def id(self):
         """Gets the id of this CountInternetBandwidthRequest.
 
-        根据ID过滤
-
         :return: The id of this CountInternetBandwidthRequest.
         :rtype: list[str]
         """
@@ -104,8 +102,6 @@ class CountInternetBandwidthRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this CountInternetBandwidthRequest.
-
-        根据ID过滤
 
         :param id: The id of this CountInternetBandwidthRequest.
         :type id: list[str]
@@ -116,8 +112,6 @@ class CountInternetBandwidthRequest:
     def size(self):
         """Gets the size of this CountInternetBandwidthRequest.
 
-        根据全域公网带宽大小过滤
-
         :return: The size of this CountInternetBandwidthRequest.
         :rtype: list[int]
         """
@@ -126,8 +120,6 @@ class CountInternetBandwidthRequest:
     @size.setter
     def size(self, size):
         """Sets the size of this CountInternetBandwidthRequest.
-
-        根据全域公网带宽大小过滤
 
         :param size: The size of this CountInternetBandwidthRequest.
         :type size: list[int]
@@ -138,8 +130,6 @@ class CountInternetBandwidthRequest:
     def name(self):
         """Gets the name of this CountInternetBandwidthRequest.
 
-        根据名称过滤
-
         :return: The name of this CountInternetBandwidthRequest.
         :rtype: list[str]
         """
@@ -148,8 +138,6 @@ class CountInternetBandwidthRequest:
     @name.setter
     def name(self, name):
         """Sets the name of this CountInternetBandwidthRequest.
-
-        根据名称过滤
 
         :param name: The name of this CountInternetBandwidthRequest.
         :type name: list[str]
@@ -160,8 +148,6 @@ class CountInternetBandwidthRequest:
     def name_like(self):
         """Gets the name_like of this CountInternetBandwidthRequest.
 
-        根据名称模糊匹配
-
         :return: The name_like of this CountInternetBandwidthRequest.
         :rtype: str
         """
@@ -170,8 +156,6 @@ class CountInternetBandwidthRequest:
     @name_like.setter
     def name_like(self, name_like):
         """Sets the name_like of this CountInternetBandwidthRequest.
-
-        根据名称模糊匹配
 
         :param name_like: The name_like of this CountInternetBandwidthRequest.
         :type name_like: str
@@ -182,8 +166,6 @@ class CountInternetBandwidthRequest:
     def access_site(self):
         """Gets the access_site of this CountInternetBandwidthRequest.
 
-        根据接入点过滤
-
         :return: The access_site of this CountInternetBandwidthRequest.
         :rtype: list[str]
         """
@@ -192,8 +174,6 @@ class CountInternetBandwidthRequest:
     @access_site.setter
     def access_site(self, access_site):
         """Sets the access_site of this CountInternetBandwidthRequest.
-
-        根据接入点过滤
 
         :param access_site: The access_site of this CountInternetBandwidthRequest.
         :type access_site: list[str]
@@ -204,8 +184,6 @@ class CountInternetBandwidthRequest:
     def status(self):
         """Gets the status of this CountInternetBandwidthRequest.
 
-        根据资源状态过滤
-
         :return: The status of this CountInternetBandwidthRequest.
         :rtype: list[str]
         """
@@ -214,8 +192,6 @@ class CountInternetBandwidthRequest:
     @status.setter
     def status(self, status):
         """Sets the status of this CountInternetBandwidthRequest.
-
-        根据资源状态过滤
 
         :param status: The status of this CountInternetBandwidthRequest.
         :type status: list[str]
@@ -226,8 +202,6 @@ class CountInternetBandwidthRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CountInternetBandwidthRequest.
 
-        根据企业项目ID过滤
-
         :return: The enterprise_project_id of this CountInternetBandwidthRequest.
         :rtype: list[str]
         """
@@ -236,8 +210,6 @@ class CountInternetBandwidthRequest:
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CountInternetBandwidthRequest.
-
-        根据企业项目ID过滤
 
         :param enterprise_project_id: The enterprise_project_id of this CountInternetBandwidthRequest.
         :type enterprise_project_id: list[str]
@@ -248,8 +220,6 @@ class CountInternetBandwidthRequest:
     def tags(self):
         """Gets the tags of this CountInternetBandwidthRequest.
 
-        根据标签过滤
-
         :return: The tags of this CountInternetBandwidthRequest.
         :rtype: list[str]
         """
@@ -258,8 +228,6 @@ class CountInternetBandwidthRequest:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this CountInternetBandwidthRequest.
-
-        根据标签过滤
 
         :param tags: The tags of this CountInternetBandwidthRequest.
         :type tags: list[str]

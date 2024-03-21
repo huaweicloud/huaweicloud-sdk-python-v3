@@ -47,7 +47,7 @@ class AppResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: agent_id
+        :param agent_id: HSS的Agent ID
         :type agent_id: str
         :param host_id: 主机id
         :type host_id: str
@@ -59,9 +59,9 @@ class AppResponseInfo:
         :type app_name: str
         :param version: 版本号
         :type version: str
-        :param update_time: 更新时间
+        :param update_time: 更新时间，最近一次更新的时间，用毫秒表示
         :type update_time: int
-        :param recent_scan_time: 最近扫描时间
+        :param recent_scan_time: 最近扫描时间，用毫秒表示
         :type recent_scan_time: int
         :param container_id: 容器id
         :type container_id: str
@@ -108,7 +108,7 @@ class AppResponseInfo:
     def agent_id(self):
         """Gets the agent_id of this AppResponseInfo.
 
-        agent_id
+        HSS的Agent ID
 
         :return: The agent_id of this AppResponseInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class AppResponseInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this AppResponseInfo.
 
-        agent_id
+        HSS的Agent ID
 
         :param agent_id: The agent_id of this AppResponseInfo.
         :type agent_id: str
@@ -240,7 +240,7 @@ class AppResponseInfo:
     def update_time(self):
         """Gets the update_time of this AppResponseInfo.
 
-        更新时间
+        更新时间，最近一次更新的时间，用毫秒表示
 
         :return: The update_time of this AppResponseInfo.
         :rtype: int
@@ -251,7 +251,7 @@ class AppResponseInfo:
     def update_time(self, update_time):
         """Sets the update_time of this AppResponseInfo.
 
-        更新时间
+        更新时间，最近一次更新的时间，用毫秒表示
 
         :param update_time: The update_time of this AppResponseInfo.
         :type update_time: int
@@ -262,7 +262,7 @@ class AppResponseInfo:
     def recent_scan_time(self):
         """Gets the recent_scan_time of this AppResponseInfo.
 
-        最近扫描时间
+        最近扫描时间，用毫秒表示
 
         :return: The recent_scan_time of this AppResponseInfo.
         :rtype: int
@@ -273,7 +273,7 @@ class AppResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         """Sets the recent_scan_time of this AppResponseInfo.
 
-        最近扫描时间
+        最近扫描时间，用毫秒表示
 
         :param recent_scan_time: The recent_scan_time of this AppResponseInfo.
         :type recent_scan_time: int

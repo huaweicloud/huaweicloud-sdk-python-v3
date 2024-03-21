@@ -3953,6 +3953,73 @@ class CceAsyncClient(Client):
 
         return http_info
 
+    def show_node_pool_configuration_details_async(self, request):
+        """查询指定节点池支持配置的参数列表
+
+        该API用于查询CCE服务下指定节点池支持配置的参数列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNodePoolConfigurationDetails
+        :type request: :class:`huaweicloudsdkcce.v3.ShowNodePoolConfigurationDetailsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowNodePoolConfigurationDetailsResponse`
+        """
+        http_info = self._show_node_pool_configuration_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_node_pool_configuration_details_async_invoker(self, request):
+        http_info = self._show_node_pool_configuration_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_node_pool_configuration_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools/{nodepool_id}/configuration/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodePoolConfigurationDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'nodepool_id' in local_var_params:
+            path_params['nodepool_id'] = local_var_params['nodepool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_node_pool_configurations_async(self, request):
         """查询指定节点池支持配置的参数内容
 

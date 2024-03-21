@@ -45,7 +45,7 @@ class ListSupportRegions:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 域弹性公网IP支持绑定的Region限制的ID
         :type id: str
         :param instance_type: 支持绑定的实例类型
         :type instance_type: str
@@ -53,7 +53,7 @@ class ListSupportRegions:
         :type access_site: str
         :param region_id: region_id
         :type region_id: str
-        :param public_border_group: 中心站点or边缘站点
+        :param public_border_group: - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
         :type public_border_group: str
         :param remote_endpoint: remote_endpoint
         :type remote_endpoint: str
@@ -101,7 +101,7 @@ class ListSupportRegions:
     def id(self):
         """Gets the id of this ListSupportRegions.
 
-        ID
+        域弹性公网IP支持绑定的Region限制的ID
 
         :return: The id of this ListSupportRegions.
         :rtype: str
@@ -112,7 +112,7 @@ class ListSupportRegions:
     def id(self, id):
         """Sets the id of this ListSupportRegions.
 
-        ID
+        域弹性公网IP支持绑定的Region限制的ID
 
         :param id: The id of this ListSupportRegions.
         :type id: str
@@ -189,7 +189,7 @@ class ListSupportRegions:
     def public_border_group(self):
         """Gets the public_border_group of this ListSupportRegions.
 
-        中心站点or边缘站点
+        - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
         :return: The public_border_group of this ListSupportRegions.
         :rtype: str
@@ -200,7 +200,7 @@ class ListSupportRegions:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this ListSupportRegions.
 
-        中心站点or边缘站点
+        - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
         :param public_border_group: The public_border_group of this ListSupportRegions.
         :type public_border_group: str

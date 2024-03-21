@@ -53,17 +53,17 @@ class CheckRuleRiskInfoResponseInfo:
 
         :param severity: 风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
         :type severity: str
-        :param check_name: 基线名称
+        :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
-        :param check_type: 基线类型
+        :param check_type: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
         :type check_type: str
-        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
         :type standard: str
-        :param check_rule_name: 检查项
+        :param check_rule_name: 检查项（检查规则）名称
         :type check_rule_name: str
         :param check_rule_id: 检查项ID
         :type check_rule_id: str
-        :param host_num: 影响服务器数量
+        :param host_num: 受影响的服务器的数量，进行了当前基线检测的服务器数量
         :type host_num: int
         :param scan_result: 检测结果，包含如下：   - pass   - failed
         :type scan_result: str
@@ -73,7 +73,7 @@ class CheckRuleRiskInfoResponseInfo:
         :type enable_fix: int
         :param enable_click: 该检查项的修复&amp;忽略&amp;验证按钮是否可点击,true:按钮可点击,false:按钮不可点击
         :type enable_click: bool
-        :param rule_params: 支持传递参数修复的检查项可传递参数的范围
+        :param rule_params: 支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
         :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
         """
         
@@ -144,7 +144,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_name(self):
         """Gets the check_name of this CheckRuleRiskInfoResponseInfo.
 
-        基线名称
+        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
         :return: The check_name of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_name(self, check_name):
         """Sets the check_name of this CheckRuleRiskInfoResponseInfo.
 
-        基线名称
+        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
         :param check_name: The check_name of this CheckRuleRiskInfoResponseInfo.
         :type check_name: str
@@ -166,7 +166,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_type(self):
         """Gets the check_type of this CheckRuleRiskInfoResponseInfo.
 
-        基线类型
+        配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
 
         :return: The check_type of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -177,7 +177,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_type(self, check_type):
         """Sets the check_type of this CheckRuleRiskInfoResponseInfo.
 
-        基线类型
+        配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
 
         :param check_type: The check_type of this CheckRuleRiskInfoResponseInfo.
         :type check_type: str
@@ -188,7 +188,7 @@ class CheckRuleRiskInfoResponseInfo:
     def standard(self):
         """Gets the standard of this CheckRuleRiskInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
         :return: The standard of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -199,7 +199,7 @@ class CheckRuleRiskInfoResponseInfo:
     def standard(self, standard):
         """Sets the standard of this CheckRuleRiskInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
+        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
         :param standard: The standard of this CheckRuleRiskInfoResponseInfo.
         :type standard: str
@@ -210,7 +210,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_rule_name(self):
         """Gets the check_rule_name of this CheckRuleRiskInfoResponseInfo.
 
-        检查项
+        检查项（检查规则）名称
 
         :return: The check_rule_name of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -221,7 +221,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_rule_name(self, check_rule_name):
         """Sets the check_rule_name of this CheckRuleRiskInfoResponseInfo.
 
-        检查项
+        检查项（检查规则）名称
 
         :param check_rule_name: The check_rule_name of this CheckRuleRiskInfoResponseInfo.
         :type check_rule_name: str
@@ -254,7 +254,7 @@ class CheckRuleRiskInfoResponseInfo:
     def host_num(self):
         """Gets the host_num of this CheckRuleRiskInfoResponseInfo.
 
-        影响服务器数量
+        受影响的服务器的数量，进行了当前基线检测的服务器数量
 
         :return: The host_num of this CheckRuleRiskInfoResponseInfo.
         :rtype: int
@@ -265,7 +265,7 @@ class CheckRuleRiskInfoResponseInfo:
     def host_num(self, host_num):
         """Sets the host_num of this CheckRuleRiskInfoResponseInfo.
 
-        影响服务器数量
+        受影响的服务器的数量，进行了当前基线检测的服务器数量
 
         :param host_num: The host_num of this CheckRuleRiskInfoResponseInfo.
         :type host_num: int
@@ -364,7 +364,7 @@ class CheckRuleRiskInfoResponseInfo:
     def rule_params(self):
         """Gets the rule_params of this CheckRuleRiskInfoResponseInfo.
 
-        支持传递参数修复的检查项可传递参数的范围
+        支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
 
         :return: The rule_params of this CheckRuleRiskInfoResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
@@ -375,7 +375,7 @@ class CheckRuleRiskInfoResponseInfo:
     def rule_params(self, rule_params):
         """Sets the rule_params of this CheckRuleRiskInfoResponseInfo.
 
-        支持传递参数修复的检查项可传递参数的范围
+        支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
 
         :param rule_params: The rule_params of this CheckRuleRiskInfoResponseInfo.
         :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]

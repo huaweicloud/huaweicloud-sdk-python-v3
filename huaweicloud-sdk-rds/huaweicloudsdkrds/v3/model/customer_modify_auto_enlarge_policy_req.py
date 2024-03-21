@@ -19,16 +19,18 @@ class CustomerModifyAutoEnlargePolicyReq:
     openapi_types = {
         'switch_option': 'bool',
         'limit_size': 'int',
-        'trigger_threshold': 'int'
+        'trigger_threshold': 'int',
+        'step_percent': 'int'
     }
 
     attribute_map = {
         'switch_option': 'switch_option',
         'limit_size': 'limit_size',
-        'trigger_threshold': 'trigger_threshold'
+        'trigger_threshold': 'trigger_threshold',
+        'step_percent': 'step_percent'
     }
 
-    def __init__(self, switch_option=None, limit_size=None, trigger_threshold=None):
+    def __init__(self, switch_option=None, limit_size=None, trigger_threshold=None, step_percent=None):
         """CustomerModifyAutoEnlargePolicyReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class CustomerModifyAutoEnlargePolicyReq:
         :type limit_size: int
         :param trigger_threshold: 可用存储空间百分比，小于等于此值或者10GB时触发扩容，switch_option为true时必填
         :type trigger_threshold: int
+        :param step_percent: 每次自动扩容的百分比步长，取值范围5~50，开启自定义步长功能时必填
+        :type step_percent: int
         """
         
         
@@ -46,6 +50,7 @@ class CustomerModifyAutoEnlargePolicyReq:
         self._switch_option = None
         self._limit_size = None
         self._trigger_threshold = None
+        self._step_percent = None
         self.discriminator = None
 
         self.switch_option = switch_option
@@ -53,6 +58,8 @@ class CustomerModifyAutoEnlargePolicyReq:
             self.limit_size = limit_size
         if trigger_threshold is not None:
             self.trigger_threshold = trigger_threshold
+        if step_percent is not None:
+            self.step_percent = step_percent
 
     @property
     def switch_option(self):
@@ -119,6 +126,28 @@ class CustomerModifyAutoEnlargePolicyReq:
         :type trigger_threshold: int
         """
         self._trigger_threshold = trigger_threshold
+
+    @property
+    def step_percent(self):
+        """Gets the step_percent of this CustomerModifyAutoEnlargePolicyReq.
+
+        每次自动扩容的百分比步长，取值范围5~50，开启自定义步长功能时必填
+
+        :return: The step_percent of this CustomerModifyAutoEnlargePolicyReq.
+        :rtype: int
+        """
+        return self._step_percent
+
+    @step_percent.setter
+    def step_percent(self, step_percent):
+        """Sets the step_percent of this CustomerModifyAutoEnlargePolicyReq.
+
+        每次自动扩容的百分比步长，取值范围5~50，开启自定义步长功能时必填
+
+        :param step_percent: The step_percent of this CustomerModifyAutoEnlargePolicyReq.
+        :type step_percent: int
+        """
+        self._step_percent = step_percent
 
     def to_dict(self):
         """Returns the model properties as a dict"""

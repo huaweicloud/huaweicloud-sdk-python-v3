@@ -39,13 +39,13 @@ class ListAutoLaunchStatisticsRequest:
 
         :param name: 自启动项名称
         :type name: str
-        :param type: 自启动项类型
+        :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
         :type type: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         """
         
@@ -95,7 +95,7 @@ class ListAutoLaunchStatisticsRequest:
     def type(self):
         """Gets the type of this ListAutoLaunchStatisticsRequest.
 
-        自启动项类型
+        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
         :return: The type of this ListAutoLaunchStatisticsRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class ListAutoLaunchStatisticsRequest:
     def type(self, type):
         """Sets the type of this ListAutoLaunchStatisticsRequest.
 
-        自启动项类型
+        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
         :param type: The type of this ListAutoLaunchStatisticsRequest.
         :type type: str
@@ -117,7 +117,7 @@ class ListAutoLaunchStatisticsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAutoLaunchStatisticsRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListAutoLaunchStatisticsRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class ListAutoLaunchStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAutoLaunchStatisticsRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListAutoLaunchStatisticsRequest.
         :type enterprise_project_id: str
@@ -139,7 +139,7 @@ class ListAutoLaunchStatisticsRequest:
     def limit(self):
         """Gets the limit of this ListAutoLaunchStatisticsRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListAutoLaunchStatisticsRequest.
         :rtype: int
@@ -150,7 +150,7 @@ class ListAutoLaunchStatisticsRequest:
     def limit(self, limit):
         """Sets the limit of this ListAutoLaunchStatisticsRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListAutoLaunchStatisticsRequest.
         :type limit: int
@@ -161,7 +161,7 @@ class ListAutoLaunchStatisticsRequest:
     def offset(self):
         """Gets the offset of this ListAutoLaunchStatisticsRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListAutoLaunchStatisticsRequest.
         :rtype: int
@@ -172,7 +172,7 @@ class ListAutoLaunchStatisticsRequest:
     def offset(self, offset):
         """Sets the offset of this ListAutoLaunchStatisticsRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListAutoLaunchStatisticsRequest.
         :type offset: int

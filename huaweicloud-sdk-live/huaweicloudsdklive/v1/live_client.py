@@ -3637,6 +3637,639 @@ class LiveClient(Client):
 
         return http_info
 
+    def create_ott_channel_info(self, request):
+        """新建OTT频道
+
+        创建频道接口，支持创建OTT频道。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateOttChannelInfo
+        :type request: :class:`huaweicloudsdklive.v1.CreateOttChannelInfoRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreateOttChannelInfoResponse`
+        """
+        http_info = self._create_ott_channel_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ott_channel_info_invoker(self, request):
+        http_info = self._create_ott_channel_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ott_channel_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ott/channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOttChannelInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ott_channel_info(self, request):
+        """删除频道信息
+
+        删除频道信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteOttChannelInfo
+        :type request: :class:`huaweicloudsdklive.v1.DeleteOttChannelInfoRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteOttChannelInfoResponse`
+        """
+        http_info = self._delete_ott_channel_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ott_channel_info_invoker(self, request):
+        http_info = self._delete_ott_channel_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ott_channel_info_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/ott/channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOttChannelInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ott_channel_info(self, request):
+        """查询频道信息
+
+        查询频道信息，支持批量查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOttChannelInfo
+        :type request: :class:`huaweicloudsdklive.v1.ListOttChannelInfoRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListOttChannelInfoResponse`
+        """
+        http_info = self._list_ott_channel_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ott_channel_info_invoker(self, request):
+        http_info = self._list_ott_channel_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ott_channel_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ott/channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOttChannelInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_ott_channel_info_encoder_settings(self, request):
+        """修改频道转码模板信息
+
+        修改频道转码模板信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyOttChannelInfoEncoderSettings
+        :type request: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoEncoderSettingsRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoEncoderSettingsResponse`
+        """
+        http_info = self._modify_ott_channel_info_encoder_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_ott_channel_info_encoder_settings_invoker(self, request):
+        http_info = self._modify_ott_channel_info_encoder_settings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_ott_channel_info_encoder_settings_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ott/channels/encorder-settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyOttChannelInfoEncoderSettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_ott_channel_info_end_points(self, request):
+        """修改频道打包信息
+
+        修改频道打包信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyOttChannelInfoEndPoints
+        :type request: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoEndPointsRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoEndPointsResponse`
+        """
+        http_info = self._modify_ott_channel_info_end_points_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_ott_channel_info_end_points_invoker(self, request):
+        http_info = self._modify_ott_channel_info_end_points_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_ott_channel_info_end_points_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ott/channels/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyOttChannelInfoEndPointsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_ott_channel_info_general(self, request):
+        """修改频道通用信息
+
+        修改频道通用信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyOttChannelInfoGeneral
+        :type request: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoGeneralRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoGeneralResponse`
+        """
+        http_info = self._modify_ott_channel_info_general_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_ott_channel_info_general_invoker(self, request):
+        http_info = self._modify_ott_channel_info_general_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_ott_channel_info_general_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ott/channels/general",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyOttChannelInfoGeneralResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_ott_channel_info_input(self, request):
+        """修改频道入流信息
+
+        修改频道入流信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyOttChannelInfoInput
+        :type request: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoInputRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoInputResponse`
+        """
+        http_info = self._modify_ott_channel_info_input_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_ott_channel_info_input_invoker(self, request):
+        http_info = self._modify_ott_channel_info_input_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_ott_channel_info_input_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ott/channels/input",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyOttChannelInfoInputResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_ott_channel_info_record_settings(self, request):
+        """修改频道录制信息
+
+        修改频道录制信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyOttChannelInfoRecordSettings
+        :type request: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoRecordSettingsRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoRecordSettingsResponse`
+        """
+        http_info = self._modify_ott_channel_info_record_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_ott_channel_info_record_settings_invoker(self, request):
+        http_info = self._modify_ott_channel_info_record_settings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_ott_channel_info_record_settings_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ott/channels/record-settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyOttChannelInfoRecordSettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_ott_channel_info_stats(self, request):
+        """修改频道状态
+
+        修改频道状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyOttChannelInfoStats
+        :type request: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoStatsRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelInfoStatsResponse`
+        """
+        http_info = self._modify_ott_channel_info_stats_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_ott_channel_info_stats_invoker(self, request):
+        http_info = self._modify_ott_channel_info_stats_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_ott_channel_info_stats_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ott/channels/state",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyOttChannelInfoStatsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def _call_api(self, **kwargs):
         try:
             return self.do_http_request(**kwargs)

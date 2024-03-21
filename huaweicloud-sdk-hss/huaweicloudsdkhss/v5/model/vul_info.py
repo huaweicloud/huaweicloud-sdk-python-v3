@@ -37,7 +37,8 @@ class VulInfo:
         'repair_success_num': 'int',
         'fixed_num': 'int',
         'ignored_num': 'int',
-        'verify_num': 'int'
+        'verify_num': 'int',
+        'repair_priority_list': 'list[RepairPriorityListInfo]'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class VulInfo:
         'repair_success_num': 'repair_success_num',
         'fixed_num': 'fixed_num',
         'ignored_num': 'ignored_num',
-        'verify_num': 'verify_num'
+        'verify_num': 'verify_num',
+        'repair_priority_list': 'repair_priority_list'
     }
 
-    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, severity_level=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None, cve_list=None, patch_url=None, repair_priority=None, hosts_num=None, repair_success_num=None, fixed_num=None, ignored_num=None, verify_num=None):
+    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, severity_level=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None, cve_list=None, patch_url=None, repair_priority=None, hosts_num=None, repair_success_num=None, fixed_num=None, ignored_num=None, verify_num=None, repair_priority_list=None):
         """VulInfo
 
         The model defined in huaweicloud sdk
@@ -75,17 +77,17 @@ class VulInfo:
         :type vul_id: str
         :param label_list: 漏洞标签
         :type label_list: list[str]
-        :param repair_necessity: 修复必要性
+        :param repair_necessity: 修复必要性   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
         :type repair_necessity: str
-        :param severity_level: 漏洞级别
+        :param severity_level: 漏洞级别   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
         :type severity_level: str
         :param host_num: 受影响服务器台数
         :type host_num: int
-        :param unhandle_host_num: 未处理服务器台数
+        :param unhandle_host_num: 未处理主机台数，除已忽略和已修复的主机数量
         :type unhandle_host_num: int
-        :param scan_time: 最近扫描时间
+        :param scan_time: 最近扫描时间，时间戳单位：毫秒
         :type scan_time: int
-        :param solution_detail: 解决方案
+        :param solution_detail: 修复漏洞的指导意见
         :type solution_detail: str
         :param url: URL链接
         :type url: str
@@ -93,7 +95,7 @@ class VulInfo:
         :type description: str
         :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
         :type type: str
-        :param host_id_list: 主机列表
+        :param host_id_list: 可处置该漏洞的主机列表
         :type host_id_list: list[str]
         :param cve_list: CVE列表
         :type cve_list: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
@@ -111,6 +113,8 @@ class VulInfo:
         :type ignored_num: int
         :param verify_num: 验证数量
         :type verify_num: int
+        :param repair_priority_list: 修复优先级，每个修复优先级对应的主机数量
+        :type repair_priority_list: list[:class:`huaweicloudsdkhss.v5.RepairPriorityListInfo`]
         """
         
         
@@ -136,6 +140,7 @@ class VulInfo:
         self._fixed_num = None
         self._ignored_num = None
         self._verify_num = None
+        self._repair_priority_list = None
         self.discriminator = None
 
         if vul_name is not None:
@@ -180,6 +185,8 @@ class VulInfo:
             self.ignored_num = ignored_num
         if verify_num is not None:
             self.verify_num = verify_num
+        if repair_priority_list is not None:
+            self.repair_priority_list = repair_priority_list
 
     @property
     def vul_name(self):
@@ -251,7 +258,7 @@ class VulInfo:
     def repair_necessity(self):
         """Gets the repair_necessity of this VulInfo.
 
-        修复必要性
+        修复必要性   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
         :return: The repair_necessity of this VulInfo.
         :rtype: str
@@ -262,7 +269,7 @@ class VulInfo:
     def repair_necessity(self, repair_necessity):
         """Sets the repair_necessity of this VulInfo.
 
-        修复必要性
+        修复必要性   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
         :param repair_necessity: The repair_necessity of this VulInfo.
         :type repair_necessity: str
@@ -273,7 +280,7 @@ class VulInfo:
     def severity_level(self):
         """Gets the severity_level of this VulInfo.
 
-        漏洞级别
+        漏洞级别   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
         :return: The severity_level of this VulInfo.
         :rtype: str
@@ -284,7 +291,7 @@ class VulInfo:
     def severity_level(self, severity_level):
         """Sets the severity_level of this VulInfo.
 
-        漏洞级别
+        漏洞级别   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
         :param severity_level: The severity_level of this VulInfo.
         :type severity_level: str
@@ -317,7 +324,7 @@ class VulInfo:
     def unhandle_host_num(self):
         """Gets the unhandle_host_num of this VulInfo.
 
-        未处理服务器台数
+        未处理主机台数，除已忽略和已修复的主机数量
 
         :return: The unhandle_host_num of this VulInfo.
         :rtype: int
@@ -328,7 +335,7 @@ class VulInfo:
     def unhandle_host_num(self, unhandle_host_num):
         """Sets the unhandle_host_num of this VulInfo.
 
-        未处理服务器台数
+        未处理主机台数，除已忽略和已修复的主机数量
 
         :param unhandle_host_num: The unhandle_host_num of this VulInfo.
         :type unhandle_host_num: int
@@ -339,7 +346,7 @@ class VulInfo:
     def scan_time(self):
         """Gets the scan_time of this VulInfo.
 
-        最近扫描时间
+        最近扫描时间，时间戳单位：毫秒
 
         :return: The scan_time of this VulInfo.
         :rtype: int
@@ -350,7 +357,7 @@ class VulInfo:
     def scan_time(self, scan_time):
         """Sets the scan_time of this VulInfo.
 
-        最近扫描时间
+        最近扫描时间，时间戳单位：毫秒
 
         :param scan_time: The scan_time of this VulInfo.
         :type scan_time: int
@@ -361,7 +368,7 @@ class VulInfo:
     def solution_detail(self):
         """Gets the solution_detail of this VulInfo.
 
-        解决方案
+        修复漏洞的指导意见
 
         :return: The solution_detail of this VulInfo.
         :rtype: str
@@ -372,7 +379,7 @@ class VulInfo:
     def solution_detail(self, solution_detail):
         """Sets the solution_detail of this VulInfo.
 
-        解决方案
+        修复漏洞的指导意见
 
         :param solution_detail: The solution_detail of this VulInfo.
         :type solution_detail: str
@@ -449,7 +456,7 @@ class VulInfo:
     def host_id_list(self):
         """Gets the host_id_list of this VulInfo.
 
-        主机列表
+        可处置该漏洞的主机列表
 
         :return: The host_id_list of this VulInfo.
         :rtype: list[str]
@@ -460,7 +467,7 @@ class VulInfo:
     def host_id_list(self, host_id_list):
         """Sets the host_id_list of this VulInfo.
 
-        主机列表
+        可处置该漏洞的主机列表
 
         :param host_id_list: The host_id_list of this VulInfo.
         :type host_id_list: list[str]
@@ -638,6 +645,28 @@ class VulInfo:
         :type verify_num: int
         """
         self._verify_num = verify_num
+
+    @property
+    def repair_priority_list(self):
+        """Gets the repair_priority_list of this VulInfo.
+
+        修复优先级，每个修复优先级对应的主机数量
+
+        :return: The repair_priority_list of this VulInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.RepairPriorityListInfo`]
+        """
+        return self._repair_priority_list
+
+    @repair_priority_list.setter
+    def repair_priority_list(self, repair_priority_list):
+        """Sets the repair_priority_list of this VulInfo.
+
+        修复优先级，每个修复优先级对应的主机数量
+
+        :param repair_priority_list: The repair_priority_list of this VulInfo.
+        :type repair_priority_list: list[:class:`huaweicloudsdkhss.v5.RepairPriorityListInfo`]
+        """
+        self._repair_priority_list = repair_priority_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,7 +33,7 @@ class DeleteTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型
+        :param resource_type: 资源类型，此处请填写functions
         :type resource_type: str
         :param resource_id: 资源ID
         :type resource_id: str
@@ -57,7 +57,7 @@ class DeleteTagsRequest:
     def resource_type(self):
         """Gets the resource_type of this DeleteTagsRequest.
 
-        资源类型
+        资源类型，此处请填写functions
 
         :return: The resource_type of this DeleteTagsRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteTagsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this DeleteTagsRequest.
 
-        资源类型
+        资源类型，此处请填写functions
 
         :param resource_type: The resource_type of this DeleteTagsRequest.
         :type resource_type: str

@@ -49,7 +49,7 @@ class InstanceInfo:
         :type region: str
         :param quark_vpc_endpoint: quark后端地址
         :type quark_vpc_endpoint: str
-        :param project_id: 项目ID
+        :param project_id: 项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
         :type project_id: str
         :param instance_type: 支持绑定的实例类型
         :type instance_type: str
@@ -59,7 +59,7 @@ class InstanceInfo:
         :type service_type: str
         :param service_id: 服务id
         :type service_id: str
-        :param public_border_group: 中心站点or边缘站点
+        :param public_border_group: - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
         :type public_border_group: str
         :param instance_site: 绑定实例所在的站点
         :type instance_site: str
@@ -145,7 +145,7 @@ class InstanceInfo:
     def project_id(self):
         """Gets the project_id of this InstanceInfo.
 
-        项目ID
+        项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
 
         :return: The project_id of this InstanceInfo.
         :rtype: str
@@ -156,7 +156,7 @@ class InstanceInfo:
     def project_id(self, project_id):
         """Sets the project_id of this InstanceInfo.
 
-        项目ID
+        项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
 
         :param project_id: The project_id of this InstanceInfo.
         :type project_id: str
@@ -255,7 +255,7 @@ class InstanceInfo:
     def public_border_group(self):
         """Gets the public_border_group of this InstanceInfo.
 
-        中心站点or边缘站点
+        - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
         :return: The public_border_group of this InstanceInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class InstanceInfo:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this InstanceInfo.
 
-        中心站点or边缘站点
+        - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
         :param public_border_group: The public_border_group of this InstanceInfo.
         :type public_border_group: str

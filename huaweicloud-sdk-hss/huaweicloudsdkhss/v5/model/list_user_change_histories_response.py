@@ -32,7 +32,7 @@ class ListUserChangeHistoriesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: 账号变动总数
         :type total_num: int
         :param data_list: 账号历史变动记录列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.UserChangeHistoryResponseInfo`]
@@ -53,7 +53,7 @@ class ListUserChangeHistoriesResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListUserChangeHistoriesResponse.
 
-        总数
+        账号变动总数
 
         :return: The total_num of this ListUserChangeHistoriesResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListUserChangeHistoriesResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListUserChangeHistoriesResponse.
 
-        总数
+        账号变动总数
 
         :param total_num: The total_num of this ListUserChangeHistoriesResponse.
         :type total_num: int

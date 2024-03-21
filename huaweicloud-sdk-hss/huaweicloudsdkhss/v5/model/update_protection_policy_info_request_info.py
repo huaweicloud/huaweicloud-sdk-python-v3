@@ -59,13 +59,13 @@ class UpdateProtectionPolicyInfoRequestInfo:
         :type bait_protection_status: str
         :param protection_directory: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
         :type protection_directory: str
-        :param protection_type: 防护文件类型
+        :param protection_type: 防护文件类型，例如：docx，txt，avi
         :type protection_type: str
         :param exclude_directory: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
         :type exclude_directory: str
-        :param agent_id_list: 关联server
+        :param agent_id_list: 开启了此勒索防护策略的agent的id列表
         :type agent_id_list: list[str]
-        :param operating_system: 操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        :param operating_system: 支持该策略的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
         :type operating_system: str
         :param runtime_detection_status: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
         :type runtime_detection_status: str
@@ -91,7 +91,8 @@ class UpdateProtectionPolicyInfoRequestInfo:
         self.policy_id = policy_id
         self.policy_name = policy_name
         self.protection_mode = protection_mode
-        self.bait_protection_status = bait_protection_status
+        if bait_protection_status is not None:
+            self.bait_protection_status = bait_protection_status
         self.protection_directory = protection_directory
         self.protection_type = protection_type
         if exclude_directory is not None:
@@ -218,7 +219,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_type(self):
         """Gets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护文件类型
+        防护文件类型，例如：docx，txt，avi
 
         :return: The protection_type of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -229,7 +230,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_type(self, protection_type):
         """Sets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护文件类型
+        防护文件类型，例如：docx，txt，avi
 
         :param protection_type: The protection_type of this UpdateProtectionPolicyInfoRequestInfo.
         :type protection_type: str
@@ -262,7 +263,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def agent_id_list(self):
         """Gets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
 
-        关联server
+        开启了此勒索防护策略的agent的id列表
 
         :return: The agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: list[str]
@@ -273,7 +274,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def agent_id_list(self, agent_id_list):
         """Sets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
 
-        关联server
+        开启了此勒索防护策略的agent的id列表
 
         :param agent_id_list: The agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
         :type agent_id_list: list[str]
@@ -284,7 +285,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def operating_system(self):
         """Gets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
 
-        操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        支持该策略的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :return: The operating_system of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -295,7 +296,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def operating_system(self, operating_system):
         """Sets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
 
-        操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        支持该策略的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :param operating_system: The operating_system of this UpdateProtectionPolicyInfoRequestInfo.
         :type operating_system: str

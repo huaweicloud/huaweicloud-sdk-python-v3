@@ -61,15 +61,15 @@ class ListAppChangeHistoriesRequest:
         :type app_name: str
         :param variation_type: 变更类型:   - add ：新建   - delete ：删除   - modify ：修改
         :type variation_type: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param sort_key: 排序的key值
+        :param sort_key: 排序的key值，目前只支持按照recent_scan_time排序
         :type sort_key: str
-        :param sort_dir: 升序还是降序，默认升序，asc
+        :param sort_dir: 排序方式，默认为降序:   - asc ：升序   - desc ：降序
         :type sort_dir: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         :param start_time: 变更开始时间，13位时间戳
         :type start_time: int
@@ -232,7 +232,7 @@ class ListAppChangeHistoriesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAppChangeHistoriesRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListAppChangeHistoriesRequest.
         :rtype: str
@@ -243,7 +243,7 @@ class ListAppChangeHistoriesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAppChangeHistoriesRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListAppChangeHistoriesRequest.
         :type enterprise_project_id: str
@@ -254,7 +254,7 @@ class ListAppChangeHistoriesRequest:
     def sort_key(self):
         """Gets the sort_key of this ListAppChangeHistoriesRequest.
 
-        排序的key值
+        排序的key值，目前只支持按照recent_scan_time排序
 
         :return: The sort_key of this ListAppChangeHistoriesRequest.
         :rtype: str
@@ -265,7 +265,7 @@ class ListAppChangeHistoriesRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListAppChangeHistoriesRequest.
 
-        排序的key值
+        排序的key值，目前只支持按照recent_scan_time排序
 
         :param sort_key: The sort_key of this ListAppChangeHistoriesRequest.
         :type sort_key: str
@@ -276,7 +276,7 @@ class ListAppChangeHistoriesRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListAppChangeHistoriesRequest.
 
-        升序还是降序，默认升序，asc
+        排序方式，默认为降序:   - asc ：升序   - desc ：降序
 
         :return: The sort_dir of this ListAppChangeHistoriesRequest.
         :rtype: str
@@ -287,7 +287,7 @@ class ListAppChangeHistoriesRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListAppChangeHistoriesRequest.
 
-        升序还是降序，默认升序，asc
+        排序方式，默认为降序:   - asc ：升序   - desc ：降序
 
         :param sort_dir: The sort_dir of this ListAppChangeHistoriesRequest.
         :type sort_dir: str
@@ -298,7 +298,7 @@ class ListAppChangeHistoriesRequest:
     def limit(self):
         """Gets the limit of this ListAppChangeHistoriesRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListAppChangeHistoriesRequest.
         :rtype: int
@@ -309,7 +309,7 @@ class ListAppChangeHistoriesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAppChangeHistoriesRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListAppChangeHistoriesRequest.
         :type limit: int
@@ -320,7 +320,7 @@ class ListAppChangeHistoriesRequest:
     def offset(self):
         """Gets the offset of this ListAppChangeHistoriesRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListAppChangeHistoriesRequest.
         :rtype: int
@@ -331,7 +331,7 @@ class ListAppChangeHistoriesRequest:
     def offset(self, offset):
         """Sets the offset of this ListAppChangeHistoriesRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListAppChangeHistoriesRequest.
         :type offset: int

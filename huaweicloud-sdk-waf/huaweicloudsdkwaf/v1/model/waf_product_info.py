@@ -33,7 +33,7 @@ class WafProductInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_spec_code: waf规格   - detection: 入门   -  professional：标准   - enterprise：专业   - ultimate：铂金版
+        :param resource_spec_code: waf规格   -  professional：标准   - enterprise：专业   - ultimate：铂金版
         :type resource_spec_code: str
         :param period_type: 订购周期类型 month: 月；year: 年
         :type period_type: str
@@ -59,7 +59,7 @@ class WafProductInfo:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this WafProductInfo.
 
-        waf规格   - detection: 入门   -  professional：标准   - enterprise：专业   - ultimate：铂金版
+        waf规格   -  professional：标准   - enterprise：专业   - ultimate：铂金版
 
         :return: The resource_spec_code of this WafProductInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class WafProductInfo:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this WafProductInfo.
 
-        waf规格   - detection: 入门   -  professional：标准   - enterprise：专业   - ultimate：铂金版
+        waf规格   -  professional：标准   - enterprise：专业   - ultimate：铂金版
 
         :param resource_spec_code: The resource_spec_code of this WafProductInfo.
         :type resource_spec_code: str

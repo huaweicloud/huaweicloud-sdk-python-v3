@@ -95,57 +95,57 @@ class ListGlobalEipSegmentsRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param id: 根据资源ID过滤
+        :param id: 
         :type id: list[str]
-        :param internet_bandwidth_id: 根据全域公网带宽的ID过滤
+        :param internet_bandwidth_id: 
         :type internet_bandwidth_id: list[str]
-        :param name: 根据名称过滤
+        :param name: 
         :type name: list[str]
-        :param name_like: 根据名称模糊匹配
+        :param name_like: 
         :type name_like: str
-        :param access_site: 根据接入点过滤
+        :param access_site: 
         :type access_site: list[str]
-        :param geip_pool_name: 根据全域弹性公网IP池名称过滤
+        :param geip_pool_name: 
         :type geip_pool_name: list[str]
-        :param isp: 根据运营商线路过滤
+        :param isp: 
         :type isp: list[str]
-        :param ip_version: 根据可分配的IP版本过滤
+        :param ip_version: 
         :type ip_version: list[int]
-        :param cidr: 根据分配的CIDR过滤
+        :param cidr: 
         :type cidr: list[str]
-        :param cidr_v6: 根据分配的IPv6 CIDR过滤
+        :param cidr_v6: 
         :type cidr_v6: list[str]
-        :param freezen: 根据是否冻结过滤
+        :param freezen: 
         :type freezen: list[bool]
-        :param internet_bandwidth_is_null: 根据是否绑定全域公网带宽过滤
+        :param internet_bandwidth_is_null: 
         :type internet_bandwidth_is_null: list[bool]
-        :param status: 根据状态过滤
+        :param status: 
         :type status: list[str]
-        :param associate_instance_region: 根据绑定实例所属的局点过滤
+        :param associate_instance_region: 
         :type associate_instance_region: list[str]
-        :param associate_instance_instance_type: 根据绑定实例的类型过滤
+        :param associate_instance_instance_type: 
         :type associate_instance_instance_type: list[str]
-        :param associate_instance_public_border_group: 根据绑定实例所属的边缘信息过滤
+        :param associate_instance_public_border_group: 
         :type associate_instance_public_border_group: list[str]
-        :param associate_instance_instance_site: 根据绑定实例所在的站点过滤
+        :param associate_instance_instance_site: 
         :type associate_instance_instance_site: list[str]
-        :param associate_instance_instance_id: 根据绑定实例的ID过滤
+        :param associate_instance_instance_id: 
         :type associate_instance_instance_id: list[str]
-        :param associate_instance_project_id: 根据绑定实例所属的项目ID过滤
+        :param associate_instance_project_id: 
         :type associate_instance_project_id: list[str]
-        :param associate_instance_service_id: 根据绑定实例所属的服务ID过滤
+        :param associate_instance_service_id: 
         :type associate_instance_service_id: list[str]
-        :param associate_instance_service_type: 根据绑定实例的服务类型过滤
+        :param associate_instance_service_type: 
         :type associate_instance_service_type: list[str]
-        :param enterprise_project_id: 根据企业项目ID过滤
+        :param enterprise_project_id: 
         :type enterprise_project_id: list[str]
-        :param tags: 根据标签过滤
+        :param tags: 
         :type tags: list[str]
         """
         
@@ -336,8 +336,6 @@ class ListGlobalEipSegmentsRequest:
     def fields(self):
         """Gets the fields of this ListGlobalEipSegmentsRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -346,8 +344,6 @@ class ListGlobalEipSegmentsRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListGlobalEipSegmentsRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListGlobalEipSegmentsRequest.
         :type fields: list[str]
@@ -402,8 +398,6 @@ class ListGlobalEipSegmentsRequest:
     def id(self):
         """Gets the id of this ListGlobalEipSegmentsRequest.
 
-        根据资源ID过滤
-
         :return: The id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -412,8 +406,6 @@ class ListGlobalEipSegmentsRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this ListGlobalEipSegmentsRequest.
-
-        根据资源ID过滤
 
         :param id: The id of this ListGlobalEipSegmentsRequest.
         :type id: list[str]
@@ -424,8 +416,6 @@ class ListGlobalEipSegmentsRequest:
     def internet_bandwidth_id(self):
         """Gets the internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
 
-        根据全域公网带宽的ID过滤
-
         :return: The internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -434,8 +424,6 @@ class ListGlobalEipSegmentsRequest:
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
         """Sets the internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
-
-        根据全域公网带宽的ID过滤
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
         :type internet_bandwidth_id: list[str]
@@ -446,8 +434,6 @@ class ListGlobalEipSegmentsRequest:
     def name(self):
         """Gets the name of this ListGlobalEipSegmentsRequest.
 
-        根据名称过滤
-
         :return: The name of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -456,8 +442,6 @@ class ListGlobalEipSegmentsRequest:
     @name.setter
     def name(self, name):
         """Sets the name of this ListGlobalEipSegmentsRequest.
-
-        根据名称过滤
 
         :param name: The name of this ListGlobalEipSegmentsRequest.
         :type name: list[str]
@@ -468,8 +452,6 @@ class ListGlobalEipSegmentsRequest:
     def name_like(self):
         """Gets the name_like of this ListGlobalEipSegmentsRequest.
 
-        根据名称模糊匹配
-
         :return: The name_like of this ListGlobalEipSegmentsRequest.
         :rtype: str
         """
@@ -478,8 +460,6 @@ class ListGlobalEipSegmentsRequest:
     @name_like.setter
     def name_like(self, name_like):
         """Sets the name_like of this ListGlobalEipSegmentsRequest.
-
-        根据名称模糊匹配
 
         :param name_like: The name_like of this ListGlobalEipSegmentsRequest.
         :type name_like: str
@@ -490,8 +470,6 @@ class ListGlobalEipSegmentsRequest:
     def access_site(self):
         """Gets the access_site of this ListGlobalEipSegmentsRequest.
 
-        根据接入点过滤
-
         :return: The access_site of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -500,8 +478,6 @@ class ListGlobalEipSegmentsRequest:
     @access_site.setter
     def access_site(self, access_site):
         """Sets the access_site of this ListGlobalEipSegmentsRequest.
-
-        根据接入点过滤
 
         :param access_site: The access_site of this ListGlobalEipSegmentsRequest.
         :type access_site: list[str]
@@ -512,8 +488,6 @@ class ListGlobalEipSegmentsRequest:
     def geip_pool_name(self):
         """Gets the geip_pool_name of this ListGlobalEipSegmentsRequest.
 
-        根据全域弹性公网IP池名称过滤
-
         :return: The geip_pool_name of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -522,8 +496,6 @@ class ListGlobalEipSegmentsRequest:
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
         """Sets the geip_pool_name of this ListGlobalEipSegmentsRequest.
-
-        根据全域弹性公网IP池名称过滤
 
         :param geip_pool_name: The geip_pool_name of this ListGlobalEipSegmentsRequest.
         :type geip_pool_name: list[str]
@@ -534,8 +506,6 @@ class ListGlobalEipSegmentsRequest:
     def isp(self):
         """Gets the isp of this ListGlobalEipSegmentsRequest.
 
-        根据运营商线路过滤
-
         :return: The isp of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -544,8 +514,6 @@ class ListGlobalEipSegmentsRequest:
     @isp.setter
     def isp(self, isp):
         """Sets the isp of this ListGlobalEipSegmentsRequest.
-
-        根据运营商线路过滤
 
         :param isp: The isp of this ListGlobalEipSegmentsRequest.
         :type isp: list[str]
@@ -556,8 +524,6 @@ class ListGlobalEipSegmentsRequest:
     def ip_version(self):
         """Gets the ip_version of this ListGlobalEipSegmentsRequest.
 
-        根据可分配的IP版本过滤
-
         :return: The ip_version of this ListGlobalEipSegmentsRequest.
         :rtype: list[int]
         """
@@ -566,8 +532,6 @@ class ListGlobalEipSegmentsRequest:
     @ip_version.setter
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListGlobalEipSegmentsRequest.
-
-        根据可分配的IP版本过滤
 
         :param ip_version: The ip_version of this ListGlobalEipSegmentsRequest.
         :type ip_version: list[int]
@@ -578,8 +542,6 @@ class ListGlobalEipSegmentsRequest:
     def cidr(self):
         """Gets the cidr of this ListGlobalEipSegmentsRequest.
 
-        根据分配的CIDR过滤
-
         :return: The cidr of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -588,8 +550,6 @@ class ListGlobalEipSegmentsRequest:
     @cidr.setter
     def cidr(self, cidr):
         """Sets the cidr of this ListGlobalEipSegmentsRequest.
-
-        根据分配的CIDR过滤
 
         :param cidr: The cidr of this ListGlobalEipSegmentsRequest.
         :type cidr: list[str]
@@ -600,8 +560,6 @@ class ListGlobalEipSegmentsRequest:
     def cidr_v6(self):
         """Gets the cidr_v6 of this ListGlobalEipSegmentsRequest.
 
-        根据分配的IPv6 CIDR过滤
-
         :return: The cidr_v6 of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -610,8 +568,6 @@ class ListGlobalEipSegmentsRequest:
     @cidr_v6.setter
     def cidr_v6(self, cidr_v6):
         """Sets the cidr_v6 of this ListGlobalEipSegmentsRequest.
-
-        根据分配的IPv6 CIDR过滤
 
         :param cidr_v6: The cidr_v6 of this ListGlobalEipSegmentsRequest.
         :type cidr_v6: list[str]
@@ -622,8 +578,6 @@ class ListGlobalEipSegmentsRequest:
     def freezen(self):
         """Gets the freezen of this ListGlobalEipSegmentsRequest.
 
-        根据是否冻结过滤
-
         :return: The freezen of this ListGlobalEipSegmentsRequest.
         :rtype: list[bool]
         """
@@ -632,8 +586,6 @@ class ListGlobalEipSegmentsRequest:
     @freezen.setter
     def freezen(self, freezen):
         """Sets the freezen of this ListGlobalEipSegmentsRequest.
-
-        根据是否冻结过滤
 
         :param freezen: The freezen of this ListGlobalEipSegmentsRequest.
         :type freezen: list[bool]
@@ -644,8 +596,6 @@ class ListGlobalEipSegmentsRequest:
     def internet_bandwidth_is_null(self):
         """Gets the internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
 
-        根据是否绑定全域公网带宽过滤
-
         :return: The internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
         :rtype: list[bool]
         """
@@ -654,8 +604,6 @@ class ListGlobalEipSegmentsRequest:
     @internet_bandwidth_is_null.setter
     def internet_bandwidth_is_null(self, internet_bandwidth_is_null):
         """Sets the internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
-
-        根据是否绑定全域公网带宽过滤
 
         :param internet_bandwidth_is_null: The internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
         :type internet_bandwidth_is_null: list[bool]
@@ -666,8 +614,6 @@ class ListGlobalEipSegmentsRequest:
     def status(self):
         """Gets the status of this ListGlobalEipSegmentsRequest.
 
-        根据状态过滤
-
         :return: The status of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -676,8 +622,6 @@ class ListGlobalEipSegmentsRequest:
     @status.setter
     def status(self, status):
         """Sets the status of this ListGlobalEipSegmentsRequest.
-
-        根据状态过滤
 
         :param status: The status of this ListGlobalEipSegmentsRequest.
         :type status: list[str]
@@ -688,8 +632,6 @@ class ListGlobalEipSegmentsRequest:
     def associate_instance_region(self):
         """Gets the associate_instance_region of this ListGlobalEipSegmentsRequest.
 
-        根据绑定实例所属的局点过滤
-
         :return: The associate_instance_region of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -698,8 +640,6 @@ class ListGlobalEipSegmentsRequest:
     @associate_instance_region.setter
     def associate_instance_region(self, associate_instance_region):
         """Sets the associate_instance_region of this ListGlobalEipSegmentsRequest.
-
-        根据绑定实例所属的局点过滤
 
         :param associate_instance_region: The associate_instance_region of this ListGlobalEipSegmentsRequest.
         :type associate_instance_region: list[str]
@@ -710,8 +650,6 @@ class ListGlobalEipSegmentsRequest:
     def associate_instance_instance_type(self):
         """Gets the associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
 
-        根据绑定实例的类型过滤
-
         :return: The associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -720,8 +658,6 @@ class ListGlobalEipSegmentsRequest:
     @associate_instance_instance_type.setter
     def associate_instance_instance_type(self, associate_instance_instance_type):
         """Sets the associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
-
-        根据绑定实例的类型过滤
 
         :param associate_instance_instance_type: The associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
         :type associate_instance_instance_type: list[str]
@@ -732,8 +668,6 @@ class ListGlobalEipSegmentsRequest:
     def associate_instance_public_border_group(self):
         """Gets the associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
 
-        根据绑定实例所属的边缘信息过滤
-
         :return: The associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -742,8 +676,6 @@ class ListGlobalEipSegmentsRequest:
     @associate_instance_public_border_group.setter
     def associate_instance_public_border_group(self, associate_instance_public_border_group):
         """Sets the associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
-
-        根据绑定实例所属的边缘信息过滤
 
         :param associate_instance_public_border_group: The associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
         :type associate_instance_public_border_group: list[str]
@@ -754,8 +686,6 @@ class ListGlobalEipSegmentsRequest:
     def associate_instance_instance_site(self):
         """Gets the associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
 
-        根据绑定实例所在的站点过滤
-
         :return: The associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -764,8 +694,6 @@ class ListGlobalEipSegmentsRequest:
     @associate_instance_instance_site.setter
     def associate_instance_instance_site(self, associate_instance_instance_site):
         """Sets the associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
-
-        根据绑定实例所在的站点过滤
 
         :param associate_instance_instance_site: The associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
         :type associate_instance_instance_site: list[str]
@@ -776,8 +704,6 @@ class ListGlobalEipSegmentsRequest:
     def associate_instance_instance_id(self):
         """Gets the associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
 
-        根据绑定实例的ID过滤
-
         :return: The associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -786,8 +712,6 @@ class ListGlobalEipSegmentsRequest:
     @associate_instance_instance_id.setter
     def associate_instance_instance_id(self, associate_instance_instance_id):
         """Sets the associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
-
-        根据绑定实例的ID过滤
 
         :param associate_instance_instance_id: The associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
         :type associate_instance_instance_id: list[str]
@@ -798,8 +722,6 @@ class ListGlobalEipSegmentsRequest:
     def associate_instance_project_id(self):
         """Gets the associate_instance_project_id of this ListGlobalEipSegmentsRequest.
 
-        根据绑定实例所属的项目ID过滤
-
         :return: The associate_instance_project_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -808,8 +730,6 @@ class ListGlobalEipSegmentsRequest:
     @associate_instance_project_id.setter
     def associate_instance_project_id(self, associate_instance_project_id):
         """Sets the associate_instance_project_id of this ListGlobalEipSegmentsRequest.
-
-        根据绑定实例所属的项目ID过滤
 
         :param associate_instance_project_id: The associate_instance_project_id of this ListGlobalEipSegmentsRequest.
         :type associate_instance_project_id: list[str]
@@ -820,8 +740,6 @@ class ListGlobalEipSegmentsRequest:
     def associate_instance_service_id(self):
         """Gets the associate_instance_service_id of this ListGlobalEipSegmentsRequest.
 
-        根据绑定实例所属的服务ID过滤
-
         :return: The associate_instance_service_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -830,8 +748,6 @@ class ListGlobalEipSegmentsRequest:
     @associate_instance_service_id.setter
     def associate_instance_service_id(self, associate_instance_service_id):
         """Sets the associate_instance_service_id of this ListGlobalEipSegmentsRequest.
-
-        根据绑定实例所属的服务ID过滤
 
         :param associate_instance_service_id: The associate_instance_service_id of this ListGlobalEipSegmentsRequest.
         :type associate_instance_service_id: list[str]
@@ -842,8 +758,6 @@ class ListGlobalEipSegmentsRequest:
     def associate_instance_service_type(self):
         """Gets the associate_instance_service_type of this ListGlobalEipSegmentsRequest.
 
-        根据绑定实例的服务类型过滤
-
         :return: The associate_instance_service_type of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -852,8 +766,6 @@ class ListGlobalEipSegmentsRequest:
     @associate_instance_service_type.setter
     def associate_instance_service_type(self, associate_instance_service_type):
         """Sets the associate_instance_service_type of this ListGlobalEipSegmentsRequest.
-
-        根据绑定实例的服务类型过滤
 
         :param associate_instance_service_type: The associate_instance_service_type of this ListGlobalEipSegmentsRequest.
         :type associate_instance_service_type: list[str]
@@ -864,8 +776,6 @@ class ListGlobalEipSegmentsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListGlobalEipSegmentsRequest.
 
-        根据企业项目ID过滤
-
         :return: The enterprise_project_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -874,8 +784,6 @@ class ListGlobalEipSegmentsRequest:
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListGlobalEipSegmentsRequest.
-
-        根据企业项目ID过滤
 
         :param enterprise_project_id: The enterprise_project_id of this ListGlobalEipSegmentsRequest.
         :type enterprise_project_id: list[str]
@@ -886,8 +794,6 @@ class ListGlobalEipSegmentsRequest:
     def tags(self):
         """Gets the tags of this ListGlobalEipSegmentsRequest.
 
-        根据标签过滤
-
         :return: The tags of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
         """
@@ -896,8 +802,6 @@ class ListGlobalEipSegmentsRequest:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ListGlobalEipSegmentsRequest.
-
-        根据标签过滤
 
         :param tags: The tags of this ListGlobalEipSegmentsRequest.
         :type tags: list[str]

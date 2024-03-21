@@ -20,6 +20,7 @@ class CreateAppRequestBody:
         'project_id': 'str',
         'name': 'str',
         'description': 'str',
+        'group_id': 'str',
         'is_draft': 'bool',
         'create_type': 'str',
         'slave_cluster_id': 'str',
@@ -31,6 +32,7 @@ class CreateAppRequestBody:
         'project_id': 'project_id',
         'name': 'name',
         'description': 'description',
+        'group_id': 'group_id',
         'is_draft': 'is_draft',
         'create_type': 'create_type',
         'slave_cluster_id': 'slave_cluster_id',
@@ -38,7 +40,7 @@ class CreateAppRequestBody:
         'arrange_infos': 'arrange_infos'
     }
 
-    def __init__(self, project_id=None, name=None, description=None, is_draft=None, create_type=None, slave_cluster_id=None, trigger=None, arrange_infos=None):
+    def __init__(self, project_id=None, name=None, description=None, group_id=None, is_draft=None, create_type=None, slave_cluster_id=None, trigger=None, arrange_infos=None):
         """CreateAppRequestBody
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class CreateAppRequestBody:
         :type name: str
         :param description: 描述
         :type description: str
+        :param group_id: 分组id
+        :type group_id: str
         :param is_draft: 是否为草稿
         :type is_draft: bool
         :param create_type: 创建类型，创建类型只有一个&#39;template&#39;，即根据模板创建
@@ -66,6 +70,7 @@ class CreateAppRequestBody:
         self._project_id = None
         self._name = None
         self._description = None
+        self._group_id = None
         self._is_draft = None
         self._create_type = None
         self._slave_cluster_id = None
@@ -77,6 +82,8 @@ class CreateAppRequestBody:
         self.name = name
         if description is not None:
             self.description = description
+        if group_id is not None:
+            self.group_id = group_id
         self.is_draft = is_draft
         self.create_type = create_type
         if slave_cluster_id is not None:
@@ -151,6 +158,28 @@ class CreateAppRequestBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this CreateAppRequestBody.
+
+        分组id
+
+        :return: The group_id of this CreateAppRequestBody.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this CreateAppRequestBody.
+
+        分组id
+
+        :param group_id: The group_id of this CreateAppRequestBody.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def is_draft(self):

@@ -57,19 +57,19 @@ class ListAccessSitesRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param code: 根据名称过滤
+        :param code: 
         :type code: list[str]
-        :param proxy_region: 根据proxy_region过滤
+        :param proxy_region: 
         :type proxy_region: list[str]
-        :param iec_az_code: 根据iec_az_code过滤
+        :param iec_az_code: 
         :type iec_az_code: list[str]
         """
         
@@ -203,8 +203,6 @@ class ListAccessSitesRequest:
     def fields(self):
         """Gets the fields of this ListAccessSitesRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListAccessSitesRequest.
         :rtype: list[str]
         """
@@ -213,8 +211,6 @@ class ListAccessSitesRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListAccessSitesRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListAccessSitesRequest.
         :type fields: list[str]
@@ -269,8 +265,6 @@ class ListAccessSitesRequest:
     def id(self):
         """Gets the id of this ListAccessSitesRequest.
 
-        根据ID过滤
-
         :return: The id of this ListAccessSitesRequest.
         :rtype: list[str]
         """
@@ -279,8 +273,6 @@ class ListAccessSitesRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this ListAccessSitesRequest.
-
-        根据ID过滤
 
         :param id: The id of this ListAccessSitesRequest.
         :type id: list[str]
@@ -291,8 +283,6 @@ class ListAccessSitesRequest:
     def code(self):
         """Gets the code of this ListAccessSitesRequest.
 
-        根据名称过滤
-
         :return: The code of this ListAccessSitesRequest.
         :rtype: list[str]
         """
@@ -301,8 +291,6 @@ class ListAccessSitesRequest:
     @code.setter
     def code(self, code):
         """Sets the code of this ListAccessSitesRequest.
-
-        根据名称过滤
 
         :param code: The code of this ListAccessSitesRequest.
         :type code: list[str]
@@ -313,8 +301,6 @@ class ListAccessSitesRequest:
     def proxy_region(self):
         """Gets the proxy_region of this ListAccessSitesRequest.
 
-        根据proxy_region过滤
-
         :return: The proxy_region of this ListAccessSitesRequest.
         :rtype: list[str]
         """
@@ -323,8 +309,6 @@ class ListAccessSitesRequest:
     @proxy_region.setter
     def proxy_region(self, proxy_region):
         """Sets the proxy_region of this ListAccessSitesRequest.
-
-        根据proxy_region过滤
 
         :param proxy_region: The proxy_region of this ListAccessSitesRequest.
         :type proxy_region: list[str]
@@ -335,8 +319,6 @@ class ListAccessSitesRequest:
     def iec_az_code(self):
         """Gets the iec_az_code of this ListAccessSitesRequest.
 
-        根据iec_az_code过滤
-
         :return: The iec_az_code of this ListAccessSitesRequest.
         :rtype: list[str]
         """
@@ -345,8 +327,6 @@ class ListAccessSitesRequest:
     @iec_az_code.setter
     def iec_az_code(self, iec_az_code):
         """Sets the iec_az_code of this ListAccessSitesRequest.
-
-        根据iec_az_code过滤
 
         :param iec_az_code: The iec_az_code of this ListAccessSitesRequest.
         :type iec_az_code: list[str]

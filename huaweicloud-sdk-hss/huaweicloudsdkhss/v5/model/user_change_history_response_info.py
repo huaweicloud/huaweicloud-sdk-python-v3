@@ -57,13 +57,13 @@ class UserChangeHistoryResponseInfo:
         :type agent_id: str
         :param change_type: 变更类型   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
         :type change_type: str
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
-        :param login_permission: 是否有登陆权限
+        :param login_permission: 是否有登录权限
         :type login_permission: bool
         :param root_permission: 是否有root权限
         :type root_permission: bool
@@ -77,7 +77,7 @@ class UserChangeHistoryResponseInfo:
         :type user_name: str
         :param expire_time: 到期时间，采用时间戳，默认毫秒，
         :type expire_time: int
-        :param recent_scan_time: 变更时间
+        :param recent_scan_time: 账号增加、修改、删除等操作的变更时间
         :type recent_scan_time: int
         """
         
@@ -173,7 +173,7 @@ class UserChangeHistoryResponseInfo:
     def host_id(self):
         """Gets the host_id of this UserChangeHistoryResponseInfo.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this UserChangeHistoryResponseInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class UserChangeHistoryResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this UserChangeHistoryResponseInfo.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this UserChangeHistoryResponseInfo.
         :type host_id: str
@@ -239,7 +239,7 @@ class UserChangeHistoryResponseInfo:
     def login_permission(self):
         """Gets the login_permission of this UserChangeHistoryResponseInfo.
 
-        是否有登陆权限
+        是否有登录权限
 
         :return: The login_permission of this UserChangeHistoryResponseInfo.
         :rtype: bool
@@ -250,7 +250,7 @@ class UserChangeHistoryResponseInfo:
     def login_permission(self, login_permission):
         """Sets the login_permission of this UserChangeHistoryResponseInfo.
 
-        是否有登陆权限
+        是否有登录权限
 
         :param login_permission: The login_permission of this UserChangeHistoryResponseInfo.
         :type login_permission: bool
@@ -393,7 +393,7 @@ class UserChangeHistoryResponseInfo:
     def recent_scan_time(self):
         """Gets the recent_scan_time of this UserChangeHistoryResponseInfo.
 
-        变更时间
+        账号增加、修改、删除等操作的变更时间
 
         :return: The recent_scan_time of this UserChangeHistoryResponseInfo.
         :rtype: int
@@ -404,7 +404,7 @@ class UserChangeHistoryResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         """Sets the recent_scan_time of this UserChangeHistoryResponseInfo.
 
-        变更时间
+        账号增加、修改、删除等操作的变更时间
 
         :param recent_scan_time: The recent_scan_time of this UserChangeHistoryResponseInfo.
         :type recent_scan_time: int

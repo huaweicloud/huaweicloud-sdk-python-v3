@@ -51,25 +51,25 @@ class ListUsersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param user_name: 账号名称
         :type user_name: str
-        :param host_name: 服务器名称
+        :param host_name: 主机名称
         :type host_name: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
-        :param login_permission: 是否允许登陆
+        :param login_permission: 是否允许登录
         :type login_permission: bool
         :param root_permission: 是否有root权限
         :type root_permission: bool
-        :param user_group: 用户组
+        :param user_group: 主机用户组
         :type user_group: str
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
         :type category: str
@@ -122,7 +122,7 @@ class ListUsersRequest:
     def host_id(self):
         """Gets the host_id of this ListUsersRequest.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this ListUsersRequest.
         :rtype: str
@@ -133,7 +133,7 @@ class ListUsersRequest:
     def host_id(self, host_id):
         """Sets the host_id of this ListUsersRequest.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this ListUsersRequest.
         :type host_id: str
@@ -166,7 +166,7 @@ class ListUsersRequest:
     def host_name(self):
         """Gets the host_name of this ListUsersRequest.
 
-        服务器名称
+        主机名称
 
         :return: The host_name of this ListUsersRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class ListUsersRequest:
     def host_name(self, host_name):
         """Sets the host_name of this ListUsersRequest.
 
-        服务器名称
+        主机名称
 
         :param host_name: The host_name of this ListUsersRequest.
         :type host_name: str
@@ -210,7 +210,7 @@ class ListUsersRequest:
     def login_permission(self):
         """Gets the login_permission of this ListUsersRequest.
 
-        是否允许登陆
+        是否允许登录
 
         :return: The login_permission of this ListUsersRequest.
         :rtype: bool
@@ -221,7 +221,7 @@ class ListUsersRequest:
     def login_permission(self, login_permission):
         """Sets the login_permission of this ListUsersRequest.
 
-        是否允许登陆
+        是否允许登录
 
         :param login_permission: The login_permission of this ListUsersRequest.
         :type login_permission: bool
@@ -254,7 +254,7 @@ class ListUsersRequest:
     def user_group(self):
         """Gets the user_group of this ListUsersRequest.
 
-        用户组
+        主机用户组
 
         :return: The user_group of this ListUsersRequest.
         :rtype: str
@@ -265,7 +265,7 @@ class ListUsersRequest:
     def user_group(self, user_group):
         """Sets the user_group of this ListUsersRequest.
 
-        用户组
+        主机用户组
 
         :param user_group: The user_group of this ListUsersRequest.
         :type user_group: str
@@ -298,7 +298,7 @@ class ListUsersRequest:
     def limit(self):
         """Gets the limit of this ListUsersRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListUsersRequest.
         :rtype: int
@@ -309,7 +309,7 @@ class ListUsersRequest:
     def limit(self, limit):
         """Sets the limit of this ListUsersRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListUsersRequest.
         :type limit: int
@@ -320,7 +320,7 @@ class ListUsersRequest:
     def offset(self):
         """Gets the offset of this ListUsersRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListUsersRequest.
         :rtype: int
@@ -331,7 +331,7 @@ class ListUsersRequest:
     def offset(self, offset):
         """Sets the offset of this ListUsersRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListUsersRequest.
         :type offset: int

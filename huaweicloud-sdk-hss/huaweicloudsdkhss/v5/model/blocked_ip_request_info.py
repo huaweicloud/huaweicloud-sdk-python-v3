@@ -33,7 +33,7 @@ class BlockedIpRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param src_ip: 攻击源IP
         :type src_ip: str
@@ -56,7 +56,7 @@ class BlockedIpRequestInfo:
     def host_id(self):
         """Gets the host_id of this BlockedIpRequestInfo.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this BlockedIpRequestInfo.
         :rtype: str
@@ -67,7 +67,7 @@ class BlockedIpRequestInfo:
     def host_id(self, host_id):
         """Sets the host_id of this BlockedIpRequestInfo.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this BlockedIpRequestInfo.
         :type host_id: str

@@ -29,7 +29,8 @@ class ListVulHostsRequest:
         'group_name': 'str',
         'handle_status': 'str',
         'severity_level': 'str',
-        'is_affect_business': 'bool'
+        'is_affect_business': 'bool',
+        'repair_priority': 'str'
     }
 
     attribute_map = {
@@ -45,29 +46,30 @@ class ListVulHostsRequest:
         'group_name': 'group_name',
         'handle_status': 'handle_status',
         'severity_level': 'severity_level',
-        'is_affect_business': 'is_affect_business'
+        'is_affect_business': 'is_affect_business',
+        'repair_priority': 'repair_priority'
     }
 
-    def __init__(self, enterprise_project_id=None, vul_id=None, type=None, host_name=None, host_ip=None, status=None, limit=None, offset=None, asset_value=None, group_name=None, handle_status=None, severity_level=None, is_affect_business=None):
+    def __init__(self, enterprise_project_id=None, vul_id=None, type=None, host_name=None, host_ip=None, status=None, limit=None, offset=None, asset_value=None, group_name=None, handle_status=None, severity_level=None, is_affect_business=None, repair_priority=None):
         """ListVulHostsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param vul_id: 漏洞ID
         :type vul_id: str
         :param type: 漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
         :type type: str
-        :param host_name: 受影响资产名称
+        :param host_name: 受影响主机名称
         :type host_name: str
-        :param host_ip: 受影响资产ip
+        :param host_ip: 受影响主机ip
         :type host_ip: str
         :param status: 漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
         :type status: str
         :param limit: 每页条数
         :type limit: int
-        :param offset: 偏移
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         :param asset_value: 资产重要性 important:重要 common：一般 test：测试
         :type asset_value: str
@@ -79,6 +81,8 @@ class ListVulHostsRequest:
         :type severity_level: str
         :param is_affect_business: 是否影响业务
         :type is_affect_business: bool
+        :param repair_priority: 修复优先级,包含如下 - Critical 紧急  - High 高 - Medium 中 - Low 低
+        :type repair_priority: str
         """
         
         
@@ -96,6 +100,7 @@ class ListVulHostsRequest:
         self._handle_status = None
         self._severity_level = None
         self._is_affect_business = None
+        self._repair_priority = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -122,12 +127,14 @@ class ListVulHostsRequest:
             self.severity_level = severity_level
         if is_affect_business is not None:
             self.is_affect_business = is_affect_business
+        if repair_priority is not None:
+            self.repair_priority = repair_priority
 
     @property
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListVulHostsRequest.
 
-        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListVulHostsRequest.
         :rtype: str
@@ -138,7 +145,7 @@ class ListVulHostsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListVulHostsRequest.
 
-        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulHostsRequest.
         :type enterprise_project_id: str
@@ -193,7 +200,7 @@ class ListVulHostsRequest:
     def host_name(self):
         """Gets the host_name of this ListVulHostsRequest.
 
-        受影响资产名称
+        受影响主机名称
 
         :return: The host_name of this ListVulHostsRequest.
         :rtype: str
@@ -204,7 +211,7 @@ class ListVulHostsRequest:
     def host_name(self, host_name):
         """Sets the host_name of this ListVulHostsRequest.
 
-        受影响资产名称
+        受影响主机名称
 
         :param host_name: The host_name of this ListVulHostsRequest.
         :type host_name: str
@@ -215,7 +222,7 @@ class ListVulHostsRequest:
     def host_ip(self):
         """Gets the host_ip of this ListVulHostsRequest.
 
-        受影响资产ip
+        受影响主机ip
 
         :return: The host_ip of this ListVulHostsRequest.
         :rtype: str
@@ -226,7 +233,7 @@ class ListVulHostsRequest:
     def host_ip(self, host_ip):
         """Sets the host_ip of this ListVulHostsRequest.
 
-        受影响资产ip
+        受影响主机ip
 
         :param host_ip: The host_ip of this ListVulHostsRequest.
         :type host_ip: str
@@ -281,7 +288,7 @@ class ListVulHostsRequest:
     def offset(self):
         """Gets the offset of this ListVulHostsRequest.
 
-        偏移
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListVulHostsRequest.
         :rtype: int
@@ -292,7 +299,7 @@ class ListVulHostsRequest:
     def offset(self, offset):
         """Sets the offset of this ListVulHostsRequest.
 
-        偏移
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListVulHostsRequest.
         :type offset: int
@@ -408,6 +415,28 @@ class ListVulHostsRequest:
         :type is_affect_business: bool
         """
         self._is_affect_business = is_affect_business
+
+    @property
+    def repair_priority(self):
+        """Gets the repair_priority of this ListVulHostsRequest.
+
+        修复优先级,包含如下 - Critical 紧急  - High 高 - Medium 中 - Low 低
+
+        :return: The repair_priority of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._repair_priority
+
+    @repair_priority.setter
+    def repair_priority(self, repair_priority):
+        """Sets the repair_priority of this ListVulHostsRequest.
+
+        修复优先级,包含如下 - Critical 紧急  - High 高 - Medium 中 - Low 低
+
+        :param repair_priority: The repair_priority of this ListVulHostsRequest.
+        :type repair_priority: str
+        """
+        self._repair_priority = repair_priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

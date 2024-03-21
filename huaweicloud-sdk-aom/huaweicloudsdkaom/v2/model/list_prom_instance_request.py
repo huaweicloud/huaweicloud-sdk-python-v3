@@ -20,17 +20,19 @@ class ListPromInstanceRequest:
         'prom_id': 'str',
         'prom_type': 'str',
         'cce_cluster_enable': 'str',
-        'prom_status': 'str'
+        'prom_status': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'prom_id': 'prom_id',
         'prom_type': 'prom_type',
         'cce_cluster_enable': 'cce_cluster_enable',
-        'prom_status': 'prom_status'
+        'prom_status': 'prom_status',
+        'enterprise_project_id': 'Enterprise-Project-Id'
     }
 
-    def __init__(self, prom_id=None, prom_type=None, cce_cluster_enable=None, prom_status=None):
+    def __init__(self, prom_id=None, prom_type=None, cce_cluster_enable=None, prom_status=None, enterprise_project_id=None):
         """ListPromInstanceRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListPromInstanceRequest:
         :type cce_cluster_enable: str
         :param prom_status: Prometheus实例状态。
         :type prom_status: str
+        :param enterprise_project_id: 企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+        :type enterprise_project_id: str
         """
         
         
@@ -51,6 +55,7 @@ class ListPromInstanceRequest:
         self._prom_type = None
         self._cce_cluster_enable = None
         self._prom_status = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if prom_id is not None:
@@ -61,6 +66,8 @@ class ListPromInstanceRequest:
             self.cce_cluster_enable = cce_cluster_enable
         if prom_status is not None:
             self.prom_status = prom_status
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def prom_id(self):
@@ -149,6 +156,28 @@ class ListPromInstanceRequest:
         :type prom_status: str
         """
         self._prom_status = prom_status
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListPromInstanceRequest.
+
+        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+
+        :return: The enterprise_project_id of this ListPromInstanceRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListPromInstanceRequest.
+
+        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListPromInstanceRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

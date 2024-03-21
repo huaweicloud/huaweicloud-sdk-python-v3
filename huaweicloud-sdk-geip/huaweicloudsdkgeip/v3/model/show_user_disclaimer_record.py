@@ -33,7 +33,7 @@ class ShowUserDisclaimerRecord:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 租户ID
+        :param domain_id: - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
         :type domain_id: str
         :param created_at: 创建时间
         :type created_at: datetime
@@ -59,7 +59,7 @@ class ShowUserDisclaimerRecord:
     def domain_id(self):
         """Gets the domain_id of this ShowUserDisclaimerRecord.
 
-        租户ID
+        - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
         :return: The domain_id of this ShowUserDisclaimerRecord.
         :rtype: str
@@ -70,7 +70,7 @@ class ShowUserDisclaimerRecord:
     def domain_id(self, domain_id):
         """Sets the domain_id of this ShowUserDisclaimerRecord.
 
-        租户ID
+        - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
         :param domain_id: The domain_id of this ShowUserDisclaimerRecord.
         :type domain_id: str

@@ -43,7 +43,7 @@ class ListJarPackageHostInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 租户企业项目ID
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param file_name: 文件名称
         :type file_name: str
@@ -53,9 +53,9 @@ class ListJarPackageHostInfoRequest:
         :type host_name: str
         :param host_ip: 服务器IP
         :type host_ip: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         :param part_match: 是否模糊匹配，默认false表示精确匹配
         :type part_match: bool
@@ -93,7 +93,7 @@ class ListJarPackageHostInfoRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListJarPackageHostInfoRequest.
 
-        租户企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListJarPackageHostInfoRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListJarPackageHostInfoRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListJarPackageHostInfoRequest.
 
-        租户企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListJarPackageHostInfoRequest.
         :type enterprise_project_id: str
@@ -203,7 +203,7 @@ class ListJarPackageHostInfoRequest:
     def limit(self):
         """Gets the limit of this ListJarPackageHostInfoRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListJarPackageHostInfoRequest.
         :rtype: int
@@ -214,7 +214,7 @@ class ListJarPackageHostInfoRequest:
     def limit(self, limit):
         """Sets the limit of this ListJarPackageHostInfoRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListJarPackageHostInfoRequest.
         :type limit: int
@@ -225,7 +225,7 @@ class ListJarPackageHostInfoRequest:
     def offset(self):
         """Gets the offset of this ListJarPackageHostInfoRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListJarPackageHostInfoRequest.
         :rtype: int
@@ -236,7 +236,7 @@ class ListJarPackageHostInfoRequest:
     def offset(self, offset):
         """Sets the offset of this ListJarPackageHostInfoRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListJarPackageHostInfoRequest.
         :type offset: int

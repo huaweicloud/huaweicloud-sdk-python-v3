@@ -18,7 +18,7 @@ class BatchDeleteV2RequestBody:
 
     openapi_types = {
         'tags': 'list[BatchDeleteV2RequestBodyTags]',
-        'sys_tags': 'list[BatchDeleteV2RequestBodySysTags]'
+        'sys_tags': 'list[BatchDeleteV2RequestBodyTags]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchDeleteV2RequestBody:
         :param tags: 全域弹性公网IP标签
         :type tags: list[:class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBodyTags`]
         :param sys_tags: 系统标签
-        :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBodySysTags`]
+        :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBodyTags`]
         """
         
         
@@ -76,7 +76,7 @@ class BatchDeleteV2RequestBody:
         系统标签
 
         :return: The sys_tags of this BatchDeleteV2RequestBody.
-        :rtype: list[:class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBodySysTags`]
+        :rtype: list[:class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBodyTags`]
         """
         return self._sys_tags
 
@@ -87,7 +87,7 @@ class BatchDeleteV2RequestBody:
         系统标签
 
         :param sys_tags: The sys_tags of this BatchDeleteV2RequestBody.
-        :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBodySysTags`]
+        :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBodyTags`]
         """
         self._sys_tags = sys_tags
 

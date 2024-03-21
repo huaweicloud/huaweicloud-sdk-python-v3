@@ -31,9 +31,9 @@ class UserStatisticInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 账号名称
+        :param user_name: 账号名称，参考windows文件命名规则，支持字母、数字、下划线，特殊字符!@.-等
         :type user_name: str
-        :param num: 账号数量
+        :param num: 当前账号的主机数量
         :type num: int
         """
         
@@ -52,7 +52,7 @@ class UserStatisticInfoResponseInfo:
     def user_name(self):
         """Gets the user_name of this UserStatisticInfoResponseInfo.
 
-        账号名称
+        账号名称，参考windows文件命名规则，支持字母、数字、下划线，特殊字符!@.-等
 
         :return: The user_name of this UserStatisticInfoResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class UserStatisticInfoResponseInfo:
     def user_name(self, user_name):
         """Sets the user_name of this UserStatisticInfoResponseInfo.
 
-        账号名称
+        账号名称，参考windows文件命名规则，支持字母、数字、下划线，特殊字符!@.-等
 
         :param user_name: The user_name of this UserStatisticInfoResponseInfo.
         :type user_name: str
@@ -74,7 +74,7 @@ class UserStatisticInfoResponseInfo:
     def num(self):
         """Gets the num of this UserStatisticInfoResponseInfo.
 
-        账号数量
+        当前账号的主机数量
 
         :return: The num of this UserStatisticInfoResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class UserStatisticInfoResponseInfo:
     def num(self, num):
         """Sets the num of this UserStatisticInfoResponseInfo.
 
-        账号数量
+        当前账号的主机数量
 
         :param num: The num of this UserStatisticInfoResponseInfo.
         :type num: int

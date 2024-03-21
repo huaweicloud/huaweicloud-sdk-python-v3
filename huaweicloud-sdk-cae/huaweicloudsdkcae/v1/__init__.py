@@ -8,6 +8,7 @@ from huaweicloudsdkcae.v1.cae_async_client import CaeAsyncClient
 from huaweicloudsdkcae.v1.model.access import Access
 from huaweicloudsdkcae.v1.model.access_configuration_data_items import AccessConfigurationDataItems
 from huaweicloudsdkcae.v1.model.access_configuration_http_path import AccessConfigurationHttpPath
+from huaweicloudsdkcae.v1.model.access_configuration_metadata import AccessConfigurationMetadata
 from huaweicloudsdkcae.v1.model.access_configuration_port import AccessConfigurationPort
 from huaweicloudsdkcae.v1.model.access_control import AccessControl
 from huaweicloudsdkcae.v1.model.action_kind_obj import ActionKindObj

@@ -43,9 +43,9 @@ class ListRiskConfigHostsRequest:
 
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param check_name: 基线名称
+        :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
-        :param standard: 标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        :param standard: 标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
         :type standard: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -53,7 +53,7 @@ class ListRiskConfigHostsRequest:
         :type host_ip: str
         :param limit: 每页数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
         :type offset: int
         """
         
@@ -107,7 +107,7 @@ class ListRiskConfigHostsRequest:
     def check_name(self):
         """Gets the check_name of this ListRiskConfigHostsRequest.
 
-        基线名称
+        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
         :return: The check_name of this ListRiskConfigHostsRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListRiskConfigHostsRequest:
     def check_name(self, check_name):
         """Sets the check_name of this ListRiskConfigHostsRequest.
 
-        基线名称
+        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
         :param check_name: The check_name of this ListRiskConfigHostsRequest.
         :type check_name: str
@@ -129,7 +129,7 @@ class ListRiskConfigHostsRequest:
     def standard(self):
         """Gets the standard of this ListRiskConfigHostsRequest.
 
-        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
         :return: The standard of this ListRiskConfigHostsRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListRiskConfigHostsRequest:
     def standard(self, standard):
         """Sets the standard of this ListRiskConfigHostsRequest.
 
-        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
         :param standard: The standard of this ListRiskConfigHostsRequest.
         :type standard: str
@@ -217,7 +217,7 @@ class ListRiskConfigHostsRequest:
     def offset(self):
         """Gets the offset of this ListRiskConfigHostsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
 
         :return: The offset of this ListRiskConfigHostsRequest.
         :rtype: int
@@ -228,7 +228,7 @@ class ListRiskConfigHostsRequest:
     def offset(self, offset):
         """Sets the offset of this ListRiskConfigHostsRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
 
         :param offset: The offset of this ListRiskConfigHostsRequest.
         :type offset: int

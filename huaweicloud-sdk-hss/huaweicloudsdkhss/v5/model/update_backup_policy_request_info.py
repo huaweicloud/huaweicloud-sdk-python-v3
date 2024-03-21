@@ -37,7 +37,7 @@ class UpdateBackupPolicyRequestInfo:
 
         :param enabled: 策略是否启用，缺省值：true
         :type enabled: bool
-        :param policy_id: 策略ID
+        :param policy_id: 备份策略ID
         :type policy_id: str
         :param operation_definition: 
         :type operation_definition: :class:`huaweicloudsdkhss.v5.OperationDefinitionRequestInfo`
@@ -87,7 +87,7 @@ class UpdateBackupPolicyRequestInfo:
     def policy_id(self):
         """Gets the policy_id of this UpdateBackupPolicyRequestInfo.
 
-        策略ID
+        备份策略ID
 
         :return: The policy_id of this UpdateBackupPolicyRequestInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class UpdateBackupPolicyRequestInfo:
     def policy_id(self, policy_id):
         """Sets the policy_id of this UpdateBackupPolicyRequestInfo.
 
-        策略ID
+        备份策略ID
 
         :param policy_id: The policy_id of this UpdateBackupPolicyRequestInfo.
         :type policy_id: str

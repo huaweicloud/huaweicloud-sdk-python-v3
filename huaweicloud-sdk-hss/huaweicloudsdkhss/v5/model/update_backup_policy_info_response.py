@@ -18,80 +18,20 @@ class UpdateBackupPolicyInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'int',
-        'error_description': 'str'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_description': 'error_description'
     }
 
-    def __init__(self, error_code=None, error_description=None):
+    def __init__(self):
         """UpdateBackupPolicyInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误编码,成功返回0
-        :type error_code: int
-        :param error_description: 错误描述，成功返回success
-        :type error_description: str
         """
         
         super(UpdateBackupPolicyInfoResponse, self).__init__()
-
-        self._error_code = None
-        self._error_description = None
         self.discriminator = None
-
-        if error_code is not None:
-            self.error_code = error_code
-        if error_description is not None:
-            self.error_description = error_description
-
-    @property
-    def error_code(self):
-        """Gets the error_code of this UpdateBackupPolicyInfoResponse.
-
-        错误编码,成功返回0
-
-        :return: The error_code of this UpdateBackupPolicyInfoResponse.
-        :rtype: int
-        """
-        return self._error_code
-
-    @error_code.setter
-    def error_code(self, error_code):
-        """Sets the error_code of this UpdateBackupPolicyInfoResponse.
-
-        错误编码,成功返回0
-
-        :param error_code: The error_code of this UpdateBackupPolicyInfoResponse.
-        :type error_code: int
-        """
-        self._error_code = error_code
-
-    @property
-    def error_description(self):
-        """Gets the error_description of this UpdateBackupPolicyInfoResponse.
-
-        错误描述，成功返回success
-
-        :return: The error_description of this UpdateBackupPolicyInfoResponse.
-        :rtype: str
-        """
-        return self._error_description
-
-    @error_description.setter
-    def error_description(self, error_description):
-        """Sets the error_description of this UpdateBackupPolicyInfoResponse.
-
-        错误描述，成功返回success
-
-        :param error_description: The error_description of this UpdateBackupPolicyInfoResponse.
-        :type error_description: str
-        """
-        self._error_description = error_description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

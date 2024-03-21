@@ -29,7 +29,7 @@ class DeleteInternetBandwidthRequest:
 
         The model defined in huaweicloud sdk
 
-        :param internet_bandwidth_id: 全域公网带宽的ID
+        :param internet_bandwidth_id: 
         :type internet_bandwidth_id: str
         """
         
@@ -44,8 +44,6 @@ class DeleteInternetBandwidthRequest:
     def internet_bandwidth_id(self):
         """Gets the internet_bandwidth_id of this DeleteInternetBandwidthRequest.
 
-        全域公网带宽的ID
-
         :return: The internet_bandwidth_id of this DeleteInternetBandwidthRequest.
         :rtype: str
         """
@@ -54,8 +52,6 @@ class DeleteInternetBandwidthRequest:
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
         """Sets the internet_bandwidth_id of this DeleteInternetBandwidthRequest.
-
-        全域公网带宽的ID
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this DeleteInternetBandwidthRequest.
         :type internet_bandwidth_id: str

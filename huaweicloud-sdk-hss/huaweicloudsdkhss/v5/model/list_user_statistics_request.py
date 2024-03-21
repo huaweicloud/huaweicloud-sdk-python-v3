@@ -39,11 +39,11 @@ class ListUserStatisticsRequest:
 
         :param user_name: 账号名称，参考windows文件命名规则，支持字母、数字、下划线、中文，特殊字符!@.-等，不包括中文标点符号
         :type user_name: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
         :type category: str
@@ -95,7 +95,7 @@ class ListUserStatisticsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListUserStatisticsRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListUserStatisticsRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class ListUserStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListUserStatisticsRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListUserStatisticsRequest.
         :type enterprise_project_id: str
@@ -117,7 +117,7 @@ class ListUserStatisticsRequest:
     def limit(self):
         """Gets the limit of this ListUserStatisticsRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListUserStatisticsRequest.
         :rtype: int
@@ -128,7 +128,7 @@ class ListUserStatisticsRequest:
     def limit(self, limit):
         """Sets the limit of this ListUserStatisticsRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListUserStatisticsRequest.
         :type limit: int
@@ -139,7 +139,7 @@ class ListUserStatisticsRequest:
     def offset(self):
         """Gets the offset of this ListUserStatisticsRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListUserStatisticsRequest.
         :rtype: int
@@ -150,7 +150,7 @@ class ListUserStatisticsRequest:
     def offset(self, offset):
         """Sets the offset of this ListUserStatisticsRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListUserStatisticsRequest.
         :type offset: int

@@ -43,7 +43,7 @@ class ShowJob:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: Job的ID
         :type id: str
         :param action: 处理规则
         :type action: str
@@ -94,7 +94,7 @@ class ShowJob:
     def id(self):
         """Gets the id of this ShowJob.
 
-        ID
+        Job的ID
 
         :return: The id of this ShowJob.
         :rtype: str
@@ -105,7 +105,7 @@ class ShowJob:
     def id(self, id):
         """Sets the id of this ShowJob.
 
-        ID
+        Job的ID
 
         :param id: The id of this ShowJob.
         :type id: str

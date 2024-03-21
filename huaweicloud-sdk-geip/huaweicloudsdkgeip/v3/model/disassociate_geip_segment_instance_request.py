@@ -29,7 +29,7 @@ class DisassociateGeipSegmentInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param global_eip_segment_id: global_eip_segment_id
+        :param global_eip_segment_id: 
         :type global_eip_segment_id: str
         """
         
@@ -44,8 +44,6 @@ class DisassociateGeipSegmentInstanceRequest:
     def global_eip_segment_id(self):
         """Gets the global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
 
-        global_eip_segment_id
-
         :return: The global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
         :rtype: str
         """
@@ -54,8 +52,6 @@ class DisassociateGeipSegmentInstanceRequest:
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
         """Sets the global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
-
-        global_eip_segment_id
 
         :param global_eip_segment_id: The global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
         :type global_eip_segment_id: str

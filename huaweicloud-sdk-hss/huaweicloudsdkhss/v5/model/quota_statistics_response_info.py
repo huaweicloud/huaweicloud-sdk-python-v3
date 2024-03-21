@@ -33,7 +33,7 @@ class QuotaStatisticsResponseInfo:
 
         :param version: 资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
         :type version: str
-        :param total_num: 总数
+        :param total_num: 配额总数
         :type total_num: int
         """
         
@@ -74,7 +74,7 @@ class QuotaStatisticsResponseInfo:
     def total_num(self):
         """Gets the total_num of this QuotaStatisticsResponseInfo.
 
-        总数
+        配额总数
 
         :return: The total_num of this QuotaStatisticsResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class QuotaStatisticsResponseInfo:
     def total_num(self, total_num):
         """Sets the total_num of this QuotaStatisticsResponseInfo.
 
-        总数
+        配额总数
 
         :param total_num: The total_num of this QuotaStatisticsResponseInfo.
         :type total_num: int

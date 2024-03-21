@@ -31,9 +31,9 @@ class UpdateGlobalEip:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域弹性公网IP的ID
         :type id: str
-        :param name: 资源名称
+        :param name: - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
         """
         
@@ -52,7 +52,7 @@ class UpdateGlobalEip:
     def id(self):
         """Gets the id of this UpdateGlobalEip.
 
-        ID
+        全域弹性公网IP的ID
 
         :return: The id of this UpdateGlobalEip.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateGlobalEip:
     def id(self, id):
         """Sets the id of this UpdateGlobalEip.
 
-        ID
+        全域弹性公网IP的ID
 
         :param id: The id of this UpdateGlobalEip.
         :type id: str
@@ -74,7 +74,7 @@ class UpdateGlobalEip:
     def name(self):
         """Gets the name of this UpdateGlobalEip.
 
-        资源名称
+        - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this UpdateGlobalEip.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateGlobalEip:
     def name(self, name):
         """Sets the name of this UpdateGlobalEip.
 
-        资源名称
+        - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this UpdateGlobalEip.
         :type name: str

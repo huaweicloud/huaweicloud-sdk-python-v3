@@ -47,7 +47,7 @@ class AutoLauchResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: agent_id
+        :param agent_id: Agent ID
         :type agent_id: str
         :param host_id: 主机id
         :type host_id: str
@@ -57,11 +57,11 @@ class AutoLauchResponseInfo:
         :type host_ip: str
         :param name: 自启动项名称
         :type name: str
-        :param type: 自启动项类型
+        :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
         :type type: int
-        :param path: 路径
+        :param path: 自启动项的路径
         :type path: str
-        :param hash: 文件hash
+        :param hash: 采用sha256算法生成的文件hash值
         :type hash: str
         :param run_user: 运行用户
         :type run_user: str
@@ -108,7 +108,7 @@ class AutoLauchResponseInfo:
     def agent_id(self):
         """Gets the agent_id of this AutoLauchResponseInfo.
 
-        agent_id
+        Agent ID
 
         :return: The agent_id of this AutoLauchResponseInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class AutoLauchResponseInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this AutoLauchResponseInfo.
 
-        agent_id
+        Agent ID
 
         :param agent_id: The agent_id of this AutoLauchResponseInfo.
         :type agent_id: str
@@ -218,7 +218,7 @@ class AutoLauchResponseInfo:
     def type(self):
         """Gets the type of this AutoLauchResponseInfo.
 
-        自启动项类型
+        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
         :return: The type of this AutoLauchResponseInfo.
         :rtype: int
@@ -229,7 +229,7 @@ class AutoLauchResponseInfo:
     def type(self, type):
         """Sets the type of this AutoLauchResponseInfo.
 
-        自启动项类型
+        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
         :param type: The type of this AutoLauchResponseInfo.
         :type type: int
@@ -240,7 +240,7 @@ class AutoLauchResponseInfo:
     def path(self):
         """Gets the path of this AutoLauchResponseInfo.
 
-        路径
+        自启动项的路径
 
         :return: The path of this AutoLauchResponseInfo.
         :rtype: str
@@ -251,7 +251,7 @@ class AutoLauchResponseInfo:
     def path(self, path):
         """Sets the path of this AutoLauchResponseInfo.
 
-        路径
+        自启动项的路径
 
         :param path: The path of this AutoLauchResponseInfo.
         :type path: str
@@ -262,7 +262,7 @@ class AutoLauchResponseInfo:
     def hash(self):
         """Gets the hash of this AutoLauchResponseInfo.
 
-        文件hash
+        采用sha256算法生成的文件hash值
 
         :return: The hash of this AutoLauchResponseInfo.
         :rtype: str
@@ -273,7 +273,7 @@ class AutoLauchResponseInfo:
     def hash(self, hash):
         """Sets the hash of this AutoLauchResponseInfo.
 
-        文件hash
+        采用sha256算法生成的文件hash值
 
         :param hash: The hash of this AutoLauchResponseInfo.
         :type hash: str

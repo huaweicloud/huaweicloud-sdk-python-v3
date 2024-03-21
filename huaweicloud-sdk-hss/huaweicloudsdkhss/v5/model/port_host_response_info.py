@@ -61,7 +61,7 @@ class PortHostResponseInfo:
         :type host_name: str
         :param laddr: 监听ip
         :type laddr: str
-        :param path: 程序文件路径
+        :param path: 进程可执行文件路径
         :type path: str
         :param pid: pid
         :type pid: int
@@ -69,11 +69,11 @@ class PortHostResponseInfo:
         :type port: int
         :param status: 状态
         :type status: str
-        :param type: 类型
+        :param type: 端口类型：目前包括TCP，UDP两种
         :type type: str
         :param container_name: 容器名称
         :type container_name: str
-        :param agent_id: agent id
+        :param agent_id: Agent ID
         :type agent_id: str
         """
         
@@ -232,7 +232,7 @@ class PortHostResponseInfo:
     def path(self):
         """Gets the path of this PortHostResponseInfo.
 
-        程序文件路径
+        进程可执行文件路径
 
         :return: The path of this PortHostResponseInfo.
         :rtype: str
@@ -243,7 +243,7 @@ class PortHostResponseInfo:
     def path(self, path):
         """Sets the path of this PortHostResponseInfo.
 
-        程序文件路径
+        进程可执行文件路径
 
         :param path: The path of this PortHostResponseInfo.
         :type path: str
@@ -320,7 +320,7 @@ class PortHostResponseInfo:
     def type(self):
         """Gets the type of this PortHostResponseInfo.
 
-        类型
+        端口类型：目前包括TCP，UDP两种
 
         :return: The type of this PortHostResponseInfo.
         :rtype: str
@@ -331,7 +331,7 @@ class PortHostResponseInfo:
     def type(self, type):
         """Sets the type of this PortHostResponseInfo.
 
-        类型
+        端口类型：目前包括TCP，UDP两种
 
         :param type: The type of this PortHostResponseInfo.
         :type type: str
@@ -364,7 +364,7 @@ class PortHostResponseInfo:
     def agent_id(self):
         """Gets the agent_id of this PortHostResponseInfo.
 
-        agent id
+        Agent ID
 
         :return: The agent_id of this PortHostResponseInfo.
         :rtype: str
@@ -375,7 +375,7 @@ class PortHostResponseInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this PortHostResponseInfo.
 
-        agent id
+        Agent ID
 
         :param agent_id: The agent_id of this PortHostResponseInfo.
         :type agent_id: str

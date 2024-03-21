@@ -47,7 +47,7 @@ class ProcessesHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param hash: 文件hash
+        :param hash: path对应的sha256值
         :type hash: str
         :param host_ip: 主机ip
         :type host_ip: str
@@ -57,7 +57,7 @@ class ProcessesHostResponseInfo:
         :type launch_params: str
         :param launch_time: 启动时间
         :type launch_time: int
-        :param process_path: 进程路径
+        :param process_path: 进程可执行文件路径
         :type process_path: str
         :param process_pid: 进程pid
         :type process_pid: int
@@ -108,7 +108,7 @@ class ProcessesHostResponseInfo:
     def hash(self):
         """Gets the hash of this ProcessesHostResponseInfo.
 
-        文件hash
+        path对应的sha256值
 
         :return: The hash of this ProcessesHostResponseInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class ProcessesHostResponseInfo:
     def hash(self, hash):
         """Sets the hash of this ProcessesHostResponseInfo.
 
-        文件hash
+        path对应的sha256值
 
         :param hash: The hash of this ProcessesHostResponseInfo.
         :type hash: str
@@ -218,7 +218,7 @@ class ProcessesHostResponseInfo:
     def process_path(self):
         """Gets the process_path of this ProcessesHostResponseInfo.
 
-        进程路径
+        进程可执行文件路径
 
         :return: The process_path of this ProcessesHostResponseInfo.
         :rtype: str
@@ -229,7 +229,7 @@ class ProcessesHostResponseInfo:
     def process_path(self, process_path):
         """Sets the process_path of this ProcessesHostResponseInfo.
 
-        进程路径
+        进程可执行文件路径
 
         :param process_path: The process_path of this ProcessesHostResponseInfo.
         :type process_path: str

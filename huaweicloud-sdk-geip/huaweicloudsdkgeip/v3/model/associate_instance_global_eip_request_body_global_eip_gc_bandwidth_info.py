@@ -27,7 +27,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
         'size': 'int',
         'local_area': 'str',
         'remote_area': 'str',
-        'tags': 'list[AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags]'
+        'tags': 'list[CreateGlobalEipRequestBodyGlobalEipTags]'
     }
 
     attribute_map = {
@@ -49,28 +49,28 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 骨干带宽的ID
         :type id: str
-        :param name: 资源名称
+        :param name: - 功能说明：骨干带宽的名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
-        :param description: 
+        :param description: 骨干带宽描述信息
         :type description: str
-        :param type: 
+        :param type: 骨干带宽类型
         :type type: str
-        :param enterprise_project_id: 资源的企业项目id
+        :param enterprise_project_id: - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
         :type enterprise_project_id: str
         :param charge_mode: 计费模式
         :type charge_mode: str
-        :param bandwidth: 
+        :param bandwidth: 域间带宽值
         :type bandwidth: int
-        :param size: 大小
+        :param size: 域间带宽大小
         :type size: int
         :param local_area: 骨干带宽的两端之一：A点
         :type local_area: str
         :param remote_area: 骨干带宽的两端之一：B点
         :type remote_area: str
         :param tags: 全域弹性公网IP标签
-        :type tags: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         
         
@@ -115,7 +115,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def id(self):
         """Gets the id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
-        ID
+        骨干带宽的ID
 
         :return: The id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def id(self, id):
         """Sets the id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
-        ID
+        骨干带宽的ID
 
         :param id: The id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :type id: str
@@ -137,7 +137,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def name(self):
         """Gets the name of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
-        资源名称
+        - 功能说明：骨干带宽的名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def name(self, name):
         """Sets the name of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
-        资源名称
+        - 功能说明：骨干带宽的名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :type name: str
@@ -159,6 +159,8 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def description(self):
         """Gets the description of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
+        骨干带宽描述信息
+
         :return: The description of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :rtype: str
         """
@@ -167,6 +169,8 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     @description.setter
     def description(self, description):
         """Sets the description of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+
+        骨干带宽描述信息
 
         :param description: The description of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :type description: str
@@ -177,6 +181,8 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def type(self):
         """Gets the type of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
+        骨干带宽类型
+
         :return: The type of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :rtype: str
         """
@@ -185,6 +191,8 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     @type.setter
     def type(self, type):
         """Sets the type of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+
+        骨干带宽类型
 
         :param type: The type of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :type type: str
@@ -195,7 +203,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
-        资源的企业项目id
+        - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :return: The enterprise_project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :rtype: str
@@ -206,7 +214,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
-        资源的企业项目id
+        - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :type enterprise_project_id: str
@@ -239,6 +247,8 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def bandwidth(self):
         """Gets the bandwidth of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
+        域间带宽值
+
         :return: The bandwidth of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :rtype: int
         """
@@ -247,6 +257,8 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+
+        域间带宽值
 
         :param bandwidth: The bandwidth of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :type bandwidth: int
@@ -257,7 +269,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def size(self):
         """Gets the size of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
-        大小
+        域间带宽大小
 
         :return: The size of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :rtype: int
@@ -268,7 +280,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     def size(self, size):
         """Sets the size of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
-        大小
+        域间带宽大小
 
         :param size: The size of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
         :type size: int
@@ -326,7 +338,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
         全域弹性公网IP标签
 
         :return: The tags of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
-        :rtype: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :rtype: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         return self._tags
 
@@ -337,7 +349,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
         全域弹性公网IP标签
 
         :param tags: The tags of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
-        :type tags: list[:class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfoTags`]
+        :type tags: list[:class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEipTags`]
         """
         self._tags = tags
 

@@ -29,7 +29,7 @@ class UpdateElasticResourcePoolQueueScalingPolicyInfo:
 
         The model defined in huaweicloud sdk
 
-        :param queue_scaling_policies: 该队列在该弹性资源池下的扩缩容策略信息。单条策略信息包含时间段、优先级和CU范围。每个队列至少要配置一条时间段为[00:00, 24:00]的默认扩缩容策略。
+        :param queue_scaling_policies: 该队列在该弹性资源池下的扩缩容策略信息。单条策略信息包含时间段、优先级和CU范围。 每个队列至少要配置一条时间段为[00:00, 24:00]的默认扩缩容策略。
         :type queue_scaling_policies: list[:class:`huaweicloudsdkdli.v1.QueueScalingPolicyInfo`]
         """
         
@@ -44,7 +44,7 @@ class UpdateElasticResourcePoolQueueScalingPolicyInfo:
     def queue_scaling_policies(self):
         """Gets the queue_scaling_policies of this UpdateElasticResourcePoolQueueScalingPolicyInfo.
 
-        该队列在该弹性资源池下的扩缩容策略信息。单条策略信息包含时间段、优先级和CU范围。每个队列至少要配置一条时间段为[00:00, 24:00]的默认扩缩容策略。
+        该队列在该弹性资源池下的扩缩容策略信息。单条策略信息包含时间段、优先级和CU范围。 每个队列至少要配置一条时间段为[00:00, 24:00]的默认扩缩容策略。
 
         :return: The queue_scaling_policies of this UpdateElasticResourcePoolQueueScalingPolicyInfo.
         :rtype: list[:class:`huaweicloudsdkdli.v1.QueueScalingPolicyInfo`]
@@ -55,7 +55,7 @@ class UpdateElasticResourcePoolQueueScalingPolicyInfo:
     def queue_scaling_policies(self, queue_scaling_policies):
         """Sets the queue_scaling_policies of this UpdateElasticResourcePoolQueueScalingPolicyInfo.
 
-        该队列在该弹性资源池下的扩缩容策略信息。单条策略信息包含时间段、优先级和CU范围。每个队列至少要配置一条时间段为[00:00, 24:00]的默认扩缩容策略。
+        该队列在该弹性资源池下的扩缩容策略信息。单条策略信息包含时间段、优先级和CU范围。 每个队列至少要配置一条时间段为[00:00, 24:00]的默认扩缩容策略。
 
         :param queue_scaling_policies: The queue_scaling_policies of this UpdateElasticResourcePoolQueueScalingPolicyInfo.
         :type queue_scaling_policies: list[:class:`huaweicloudsdkdli.v1.QueueScalingPolicyInfo`]

@@ -32,7 +32,7 @@ class VerifyDomainOwnerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 验证是否通过，true:通过，false:不通过
+        :param result: 验证是否通过，true：通过，false：不通过。
         :type result: bool
         :param x_request_id: 
         :type x_request_id: str
@@ -53,7 +53,7 @@ class VerifyDomainOwnerResponse(SdkResponse):
     def result(self):
         """Gets the result of this VerifyDomainOwnerResponse.
 
-        验证是否通过，true:通过，false:不通过
+        验证是否通过，true：通过，false：不通过。
 
         :return: The result of this VerifyDomainOwnerResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class VerifyDomainOwnerResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this VerifyDomainOwnerResponse.
 
-        验证是否通过，true:通过，false:不通过
+        验证是否通过，true：通过，false：不通过。
 
         :param result: The result of this VerifyDomainOwnerResponse.
         :type result: bool

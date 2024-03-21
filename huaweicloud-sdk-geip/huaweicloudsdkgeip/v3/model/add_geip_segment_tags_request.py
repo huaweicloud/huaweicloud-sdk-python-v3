@@ -31,7 +31,7 @@ class AddGeipSegmentTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 全域弹性公网IP的id
+        :param resource_id: 
         :type resource_id: str
         :param body: Body of the AddGeipSegmentTagsRequest
         :type body: :class:`huaweicloudsdkgeip.v3.CreateV2TagRequestBody`
@@ -51,8 +51,6 @@ class AddGeipSegmentTagsRequest:
     def resource_id(self):
         """Gets the resource_id of this AddGeipSegmentTagsRequest.
 
-        全域弹性公网IP的id
-
         :return: The resource_id of this AddGeipSegmentTagsRequest.
         :rtype: str
         """
@@ -61,8 +59,6 @@ class AddGeipSegmentTagsRequest:
     @resource_id.setter
     def resource_id(self, resource_id):
         """Sets the resource_id of this AddGeipSegmentTagsRequest.
-
-        全域弹性公网IP的id
 
         :param resource_id: The resource_id of this AddGeipSegmentTagsRequest.
         :type resource_id: str

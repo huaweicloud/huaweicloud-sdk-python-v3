@@ -41,7 +41,7 @@ class GenerateReportInfo:
         :type name: str
         :param workpiece_type: 工件类型(用例：case,测试套：suite)
         :type workpiece_type: str
-        :param analysis_dim_row: 分析维度
+        :param analysis_dim_row: 分析维度。该参数选择横坐标（X轴）维度，不传会返回空列表。
         :type analysis_dim_row: str
         :param compare_dim_column: 对比维度
         :type compare_dim_column: str
@@ -117,7 +117,7 @@ class GenerateReportInfo:
     def analysis_dim_row(self):
         """Gets the analysis_dim_row of this GenerateReportInfo.
 
-        分析维度
+        分析维度。该参数选择横坐标（X轴）维度，不传会返回空列表。
 
         :return: The analysis_dim_row of this GenerateReportInfo.
         :rtype: str
@@ -128,7 +128,7 @@ class GenerateReportInfo:
     def analysis_dim_row(self, analysis_dim_row):
         """Sets the analysis_dim_row of this GenerateReportInfo.
 
-        分析维度
+        分析维度。该参数选择横坐标（X轴）维度，不传会返回空列表。
 
         :param analysis_dim_row: The analysis_dim_row of this GenerateReportInfo.
         :type analysis_dim_row: str

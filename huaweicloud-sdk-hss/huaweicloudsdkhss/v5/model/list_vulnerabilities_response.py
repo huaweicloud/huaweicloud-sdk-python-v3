@@ -32,7 +32,7 @@ class ListVulnerabilitiesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: 漏洞总数
         :type total_num: int
         :param data_list: 软件漏洞列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulInfo`]
@@ -53,7 +53,7 @@ class ListVulnerabilitiesResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListVulnerabilitiesResponse.
 
-        总数
+        漏洞总数
 
         :return: The total_num of this ListVulnerabilitiesResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListVulnerabilitiesResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListVulnerabilitiesResponse.
 
-        总数
+        漏洞总数
 
         :param total_num: The total_num of this ListVulnerabilitiesResponse.
         :type total_num: int

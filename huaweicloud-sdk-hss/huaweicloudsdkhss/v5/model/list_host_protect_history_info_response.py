@@ -40,7 +40,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
         :type host_name: str
         :param protect_status: 防护状态   - close : 未开启   - opened : 防护中
         :type protect_status: str
-        :param total_num: total number
+        :param total_num: total number of static WTPs
         :type total_num: int
         :param data_list: data list
         :type data_list: list[:class:`huaweicloudsdkhss.v5.HostProtectHistoryResponseInfo`]
@@ -111,7 +111,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListHostProtectHistoryInfoResponse.
 
-        total number
+        total number of static WTPs
 
         :return: The total_num of this ListHostProtectHistoryInfoResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListHostProtectHistoryInfoResponse.
 
-        total number
+        total number of static WTPs
 
         :param total_num: The total_num of this ListHostProtectHistoryInfoResponse.
         :type total_num: int

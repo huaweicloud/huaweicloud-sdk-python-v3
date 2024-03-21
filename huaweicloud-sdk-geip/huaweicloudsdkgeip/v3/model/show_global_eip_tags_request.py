@@ -29,7 +29,7 @@ class ShowGlobalEipTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 全域弹性公网IP的id
+        :param resource_id: 
         :type resource_id: str
         """
         
@@ -44,8 +44,6 @@ class ShowGlobalEipTagsRequest:
     def resource_id(self):
         """Gets the resource_id of this ShowGlobalEipTagsRequest.
 
-        全域弹性公网IP的id
-
         :return: The resource_id of this ShowGlobalEipTagsRequest.
         :rtype: str
         """
@@ -54,8 +52,6 @@ class ShowGlobalEipTagsRequest:
     @resource_id.setter
     def resource_id(self, resource_id):
         """Sets the resource_id of this ShowGlobalEipTagsRequest.
-
-        全域弹性公网IP的id
 
         :param resource_id: The resource_id of this ShowGlobalEipTagsRequest.
         :type resource_id: str

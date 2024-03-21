@@ -31,7 +31,7 @@ class InternetBandwidthInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域公网带宽的ID
         :type id: str
         :param size: 全域公网带宽大小（出云方向）
         :type size: int
@@ -52,7 +52,7 @@ class InternetBandwidthInfo:
     def id(self):
         """Gets the id of this InternetBandwidthInfo.
 
-        ID
+        全域公网带宽的ID
 
         :return: The id of this InternetBandwidthInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class InternetBandwidthInfo:
     def id(self, id):
         """Sets the id of this InternetBandwidthInfo.
 
-        ID
+        全域公网带宽的ID
 
         :param id: The id of this InternetBandwidthInfo.
         :type id: str

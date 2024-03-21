@@ -5575,10 +5575,10 @@ class FunctionGraphAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'action' in local_var_params:
-            path_params['action'] = local_var_params['action']
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
+        if 'action' in local_var_params:
+            path_params['action'] = local_var_params['action']
 
         query_params = []
 

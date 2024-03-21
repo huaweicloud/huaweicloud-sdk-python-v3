@@ -43,7 +43,7 @@ class HostProtectHistoryResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param occr_time: 检测时间
+        :param occr_time: 静态网页防篡改的检测时间(ms)
         :type occr_time: int
         :param file_path: 被篡改文件路径
         :type file_path: str
@@ -94,7 +94,7 @@ class HostProtectHistoryResponseInfo:
     def occr_time(self):
         """Gets the occr_time of this HostProtectHistoryResponseInfo.
 
-        检测时间
+        静态网页防篡改的检测时间(ms)
 
         :return: The occr_time of this HostProtectHistoryResponseInfo.
         :rtype: int
@@ -105,7 +105,7 @@ class HostProtectHistoryResponseInfo:
     def occr_time(self, occr_time):
         """Sets the occr_time of this HostProtectHistoryResponseInfo.
 
-        检测时间
+        静态网页防篡改的检测时间(ms)
 
         :param occr_time: The occr_time of this HostProtectHistoryResponseInfo.
         :type occr_time: int

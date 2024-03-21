@@ -1872,6 +1872,73 @@ class RgcAsyncClient(Client):
 
         return http_info
 
+    def list_operation_async(self, request):
+        """查询已注册OU和纳管帐号操作过程信息列表
+
+        查询在RGC服务里已注册OU和纳管帐号操作的过程信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOperation
+        :type request: :class:`huaweicloudsdkrgc.v1.ListOperationRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.ListOperationResponse`
+        """
+        http_info = self._list_operation_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_operation_async_invoker(self, request):
+        http_info = self._list_operation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_operation_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/managed-organization",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOperationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'account_id' in local_var_params:
+            query_params.append(('account_id', local_var_params['account_id']))
+        if 'organization_unit_id' in local_var_params:
+            query_params.append(('organization_unit_id', local_var_params['organization_unit_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def re_register_organizational_unit_async(self, request):
         """重新注册OU
 
@@ -2373,6 +2440,266 @@ class RgcAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_template_async(self, request):
+        """创建模板。
+
+        创建RFS模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTemplate
+        :type request: :class:`huaweicloudsdkrgc.v1.CreateTemplateRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.CreateTemplateResponse`
+        """
+        http_info = self._create_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_template_async_invoker(self, request):
+        http_info = self._create_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/rgc/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_template_async(self, request):
+        """删除模板。
+
+        删除RFS模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTemplate
+        :type request: :class:`huaweicloudsdkrgc.v1.DeleteTemplateRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.DeleteTemplateResponse`
+        """
+        http_info = self._delete_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_template_async_invoker(self, request):
+        http_info = self._delete_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/rgc/templates/{template_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_name' in local_var_params:
+            path_params['template_name'] = local_var_params['template_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_predefined_templates_async(self, request):
+        """查询预置模板列表
+
+        查询预置模板列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPredefinedTemplates
+        :type request: :class:`huaweicloudsdkrgc.v1.ListPredefinedTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.ListPredefinedTemplatesResponse`
+        """
+        http_info = self._list_predefined_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_predefined_templates_async_invoker(self, request):
+        http_info = self._list_predefined_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_predefined_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/rgc/predefined-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPredefinedTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_template_deploy_params_async(self, request):
+        """查询模板的部署参数。
+
+        查询模板的部署参数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTemplateDeployParams
+        :type request: :class:`huaweicloudsdkrgc.v1.ShowTemplateDeployParamsRequest`
+        :rtype: :class:`huaweicloudsdkrgc.v1.ShowTemplateDeployParamsResponse`
+        """
+        http_info = self._show_template_deploy_params_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_template_deploy_params_async_invoker(self, request):
+        http_info = self._show_template_deploy_params_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_template_deploy_params_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/rgc/templates/{template_name}/deploy-params",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateDeployParamsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_name' in local_var_params:
+            path_params['template_name'] = local_var_params['template_name']
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

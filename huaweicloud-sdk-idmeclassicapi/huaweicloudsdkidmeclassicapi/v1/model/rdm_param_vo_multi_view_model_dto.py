@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BatchDeleteV2RequestBodySysTags:
+class RDMParamVOMultiViewModelDTO:
 
     """
     Attributes:
@@ -17,79 +17,76 @@ class BatchDeleteV2RequestBodySysTags:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str',
-        'value': 'str'
+        'application_id': 'str',
+        'params': 'MultiViewModelCreateDTO'
     }
 
     attribute_map = {
-        'key': 'key',
-        'value': 'value'
+        'application_id': 'applicationId',
+        'params': 'params'
     }
 
-    def __init__(self, key=None, value=None):
-        """BatchDeleteV2RequestBodySysTags
+    def __init__(self, application_id=None, params=None):
+        """RDMParamVOMultiViewModelDTO
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
-        :type key: str
-        :param value: 标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
-        :type value: str
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param params: 
+        :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelCreateDTO`
         """
         
         
 
-        self._key = None
-        self._value = None
+        self._application_id = None
+        self._params = None
         self.discriminator = None
 
-        self.key = key
-        if value is not None:
-            self.value = value
+        if application_id is not None:
+            self.application_id = application_id
+        if params is not None:
+            self.params = params
 
     @property
-    def key(self):
-        """Gets the key of this BatchDeleteV2RequestBodySysTags.
+    def application_id(self):
+        """Gets the application_id of this RDMParamVOMultiViewModelDTO.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        应用ID。
 
-        :return: The key of this BatchDeleteV2RequestBodySysTags.
+        :return: The application_id of this RDMParamVOMultiViewModelDTO.
         :rtype: str
         """
-        return self._key
+        return self._application_id
 
-    @key.setter
-    def key(self, key):
-        """Sets the key of this BatchDeleteV2RequestBodySysTags.
+    @application_id.setter
+    def application_id(self, application_id):
+        """Sets the application_id of this RDMParamVOMultiViewModelDTO.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        应用ID。
 
-        :param key: The key of this BatchDeleteV2RequestBodySysTags.
-        :type key: str
+        :param application_id: The application_id of this RDMParamVOMultiViewModelDTO.
+        :type application_id: str
         """
-        self._key = key
+        self._application_id = application_id
 
     @property
-    def value(self):
-        """Gets the value of this BatchDeleteV2RequestBodySysTags.
+    def params(self):
+        """Gets the params of this RDMParamVOMultiViewModelDTO.
 
-        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
-
-        :return: The value of this BatchDeleteV2RequestBodySysTags.
-        :rtype: str
+        :return: The params of this RDMParamVOMultiViewModelDTO.
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelCreateDTO`
         """
-        return self._value
+        return self._params
 
-    @value.setter
-    def value(self, value):
-        """Sets the value of this BatchDeleteV2RequestBodySysTags.
+    @params.setter
+    def params(self, params):
+        """Sets the params of this RDMParamVOMultiViewModelDTO.
 
-        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
-
-        :param value: The value of this BatchDeleteV2RequestBodySysTags.
-        :type value: str
+        :param params: The params of this RDMParamVOMultiViewModelDTO.
+        :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelCreateDTO`
         """
-        self._value = value
+        self._params = params
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -133,7 +130,7 @@ class BatchDeleteV2RequestBodySysTags:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchDeleteV2RequestBodySysTags):
+        if not isinstance(other, RDMParamVOMultiViewModelDTO):
             return False
 
         return self.__dict__ == other.__dict__

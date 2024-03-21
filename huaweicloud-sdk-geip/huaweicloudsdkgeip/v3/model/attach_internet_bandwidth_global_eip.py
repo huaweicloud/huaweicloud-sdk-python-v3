@@ -73,21 +73,21 @@ class AttachInternetBandwidthGlobalEip:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域弹性公网IP的ID
         :type id: str
-        :param name: 资源名称
+        :param name: - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
-        :param domain_id: 租户ID
+        :param domain_id: - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
         :type domain_id: str
-        :param description: 用户自定义的资源描述
+        :param description: - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
         :type description: str
         :param access_site: 接入点信息
         :type access_site: str
         :param geip_pool_name: 全域弹性公网IP池子名称
         :type geip_pool_name: str
-        :param isp: 线路
+        :param isp: 全域弹性公网IP所属线路
         :type isp: str
-        :param ip_version: IPv4或IPv6
+        :param ip_version: - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
         :type ip_version: int
         :param ip_address: IPv4地址
         :type ip_address: str
@@ -117,7 +117,7 @@ class AttachInternetBandwidthGlobalEip:
         :type tags: list[:class:`huaweicloudsdkgeip.v3.Tag`]
         :param sys_tags: 系统标签
         :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.Tag`]
-        :param enterprise_project_id: 资源的企业项目id
+        :param enterprise_project_id: - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
         :type enterprise_project_id: str
         """
         
@@ -199,7 +199,7 @@ class AttachInternetBandwidthGlobalEip:
     def id(self):
         """Gets the id of this AttachInternetBandwidthGlobalEip.
 
-        ID
+        全域弹性公网IP的ID
 
         :return: The id of this AttachInternetBandwidthGlobalEip.
         :rtype: str
@@ -210,7 +210,7 @@ class AttachInternetBandwidthGlobalEip:
     def id(self, id):
         """Sets the id of this AttachInternetBandwidthGlobalEip.
 
-        ID
+        全域弹性公网IP的ID
 
         :param id: The id of this AttachInternetBandwidthGlobalEip.
         :type id: str
@@ -221,7 +221,7 @@ class AttachInternetBandwidthGlobalEip:
     def name(self):
         """Gets the name of this AttachInternetBandwidthGlobalEip.
 
-        资源名称
+        - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this AttachInternetBandwidthGlobalEip.
         :rtype: str
@@ -232,7 +232,7 @@ class AttachInternetBandwidthGlobalEip:
     def name(self, name):
         """Sets the name of this AttachInternetBandwidthGlobalEip.
 
-        资源名称
+        - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this AttachInternetBandwidthGlobalEip.
         :type name: str
@@ -243,7 +243,7 @@ class AttachInternetBandwidthGlobalEip:
     def domain_id(self):
         """Gets the domain_id of this AttachInternetBandwidthGlobalEip.
 
-        租户ID
+        - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
         :return: The domain_id of this AttachInternetBandwidthGlobalEip.
         :rtype: str
@@ -254,7 +254,7 @@ class AttachInternetBandwidthGlobalEip:
     def domain_id(self, domain_id):
         """Sets the domain_id of this AttachInternetBandwidthGlobalEip.
 
-        租户ID
+        - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
         :param domain_id: The domain_id of this AttachInternetBandwidthGlobalEip.
         :type domain_id: str
@@ -265,7 +265,7 @@ class AttachInternetBandwidthGlobalEip:
     def description(self):
         """Gets the description of this AttachInternetBandwidthGlobalEip.
 
-        用户自定义的资源描述
+        - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
         :return: The description of this AttachInternetBandwidthGlobalEip.
         :rtype: str
@@ -276,7 +276,7 @@ class AttachInternetBandwidthGlobalEip:
     def description(self, description):
         """Sets the description of this AttachInternetBandwidthGlobalEip.
 
-        用户自定义的资源描述
+        - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
         :param description: The description of this AttachInternetBandwidthGlobalEip.
         :type description: str
@@ -331,7 +331,7 @@ class AttachInternetBandwidthGlobalEip:
     def isp(self):
         """Gets the isp of this AttachInternetBandwidthGlobalEip.
 
-        线路
+        全域弹性公网IP所属线路
 
         :return: The isp of this AttachInternetBandwidthGlobalEip.
         :rtype: str
@@ -342,7 +342,7 @@ class AttachInternetBandwidthGlobalEip:
     def isp(self, isp):
         """Sets the isp of this AttachInternetBandwidthGlobalEip.
 
-        线路
+        全域弹性公网IP所属线路
 
         :param isp: The isp of this AttachInternetBandwidthGlobalEip.
         :type isp: str
@@ -353,7 +353,7 @@ class AttachInternetBandwidthGlobalEip:
     def ip_version(self):
         """Gets the ip_version of this AttachInternetBandwidthGlobalEip.
 
-        IPv4或IPv6
+        - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
 
         :return: The ip_version of this AttachInternetBandwidthGlobalEip.
         :rtype: int
@@ -364,7 +364,7 @@ class AttachInternetBandwidthGlobalEip:
     def ip_version(self, ip_version):
         """Sets the ip_version of this AttachInternetBandwidthGlobalEip.
 
-        IPv4或IPv6
+        - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
 
         :param ip_version: The ip_version of this AttachInternetBandwidthGlobalEip.
         :type ip_version: int
@@ -671,7 +671,7 @@ class AttachInternetBandwidthGlobalEip:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this AttachInternetBandwidthGlobalEip.
 
-        资源的企业项目id
+        - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :return: The enterprise_project_id of this AttachInternetBandwidthGlobalEip.
         :rtype: str
@@ -682,7 +682,7 @@ class AttachInternetBandwidthGlobalEip:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this AttachInternetBandwidthGlobalEip.
 
-        资源的企业项目id
+        - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this AttachInternetBandwidthGlobalEip.
         :type enterprise_project_id: str

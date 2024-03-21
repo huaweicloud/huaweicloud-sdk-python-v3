@@ -20,6 +20,8 @@ class WeakPwdListInfoResponseInfo:
         'host_id': 'str',
         'host_name': 'str',
         'host_ip': 'str',
+        'private_ip': 'str',
+        'public_ip': 'str',
         'weak_pwd_accounts': 'list[WeakPwdAccountInfoResponseInfo]'
     }
 
@@ -27,20 +29,26 @@ class WeakPwdListInfoResponseInfo:
         'host_id': 'host_id',
         'host_name': 'host_name',
         'host_ip': 'host_ip',
+        'private_ip': 'private_ip',
+        'public_ip': 'public_ip',
         'weak_pwd_accounts': 'weak_pwd_accounts'
     }
 
-    def __init__(self, host_id=None, host_name=None, host_ip=None, weak_pwd_accounts=None):
+    def __init__(self, host_id=None, host_name=None, host_ip=None, private_ip=None, public_ip=None, weak_pwd_accounts=None):
         """WeakPwdListInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_ip: 服务器IP
+        :param host_ip: 服务器IP（私有IP），为兼容用户使用，不删除此字段
         :type host_ip: str
+        :param private_ip: 服务器私有IP
+        :type private_ip: str
+        :param public_ip: 服务器公网IP
+        :type public_ip: str
         :param weak_pwd_accounts: 弱口令账号列表
         :type weak_pwd_accounts: list[:class:`huaweicloudsdkhss.v5.WeakPwdAccountInfoResponseInfo`]
         """
@@ -50,6 +58,8 @@ class WeakPwdListInfoResponseInfo:
         self._host_id = None
         self._host_name = None
         self._host_ip = None
+        self._private_ip = None
+        self._public_ip = None
         self._weak_pwd_accounts = None
         self.discriminator = None
 
@@ -59,6 +69,10 @@ class WeakPwdListInfoResponseInfo:
             self.host_name = host_name
         if host_ip is not None:
             self.host_ip = host_ip
+        if private_ip is not None:
+            self.private_ip = private_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
         if weak_pwd_accounts is not None:
             self.weak_pwd_accounts = weak_pwd_accounts
 
@@ -66,7 +80,7 @@ class WeakPwdListInfoResponseInfo:
     def host_id(self):
         """Gets the host_id of this WeakPwdListInfoResponseInfo.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this WeakPwdListInfoResponseInfo.
         :rtype: str
@@ -77,7 +91,7 @@ class WeakPwdListInfoResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this WeakPwdListInfoResponseInfo.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this WeakPwdListInfoResponseInfo.
         :type host_id: str
@@ -110,7 +124,7 @@ class WeakPwdListInfoResponseInfo:
     def host_ip(self):
         """Gets the host_ip of this WeakPwdListInfoResponseInfo.
 
-        服务器IP
+        服务器IP（私有IP），为兼容用户使用，不删除此字段
 
         :return: The host_ip of this WeakPwdListInfoResponseInfo.
         :rtype: str
@@ -121,12 +135,56 @@ class WeakPwdListInfoResponseInfo:
     def host_ip(self, host_ip):
         """Sets the host_ip of this WeakPwdListInfoResponseInfo.
 
-        服务器IP
+        服务器IP（私有IP），为兼容用户使用，不删除此字段
 
         :param host_ip: The host_ip of this WeakPwdListInfoResponseInfo.
         :type host_ip: str
         """
         self._host_ip = host_ip
+
+    @property
+    def private_ip(self):
+        """Gets the private_ip of this WeakPwdListInfoResponseInfo.
+
+        服务器私有IP
+
+        :return: The private_ip of this WeakPwdListInfoResponseInfo.
+        :rtype: str
+        """
+        return self._private_ip
+
+    @private_ip.setter
+    def private_ip(self, private_ip):
+        """Sets the private_ip of this WeakPwdListInfoResponseInfo.
+
+        服务器私有IP
+
+        :param private_ip: The private_ip of this WeakPwdListInfoResponseInfo.
+        :type private_ip: str
+        """
+        self._private_ip = private_ip
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this WeakPwdListInfoResponseInfo.
+
+        服务器公网IP
+
+        :return: The public_ip of this WeakPwdListInfoResponseInfo.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this WeakPwdListInfoResponseInfo.
+
+        服务器公网IP
+
+        :param public_ip: The public_ip of this WeakPwdListInfoResponseInfo.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
 
     @property
     def weak_pwd_accounts(self):

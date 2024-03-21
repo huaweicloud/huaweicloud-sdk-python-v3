@@ -31,9 +31,9 @@ class ListControlViolationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 账户ID，用于过滤不合规资源。
+        :param account_id: 账户ID。
         :type account_id: str
-        :param organization_unit_id: 注册OU ID，用于过滤不合规资源。
+        :param organization_unit_id: 注册OU ID。
         :type organization_unit_id: str
         """
         
@@ -52,7 +52,7 @@ class ListControlViolationsRequest:
     def account_id(self):
         """Gets the account_id of this ListControlViolationsRequest.
 
-        账户ID，用于过滤不合规资源。
+        账户ID。
 
         :return: The account_id of this ListControlViolationsRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListControlViolationsRequest:
     def account_id(self, account_id):
         """Sets the account_id of this ListControlViolationsRequest.
 
-        账户ID，用于过滤不合规资源。
+        账户ID。
 
         :param account_id: The account_id of this ListControlViolationsRequest.
         :type account_id: str
@@ -74,7 +74,7 @@ class ListControlViolationsRequest:
     def organization_unit_id(self):
         """Gets the organization_unit_id of this ListControlViolationsRequest.
 
-        注册OU ID，用于过滤不合规资源。
+        注册OU ID。
 
         :return: The organization_unit_id of this ListControlViolationsRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListControlViolationsRequest:
     def organization_unit_id(self, organization_unit_id):
         """Sets the organization_unit_id of this ListControlViolationsRequest.
 
-        注册OU ID，用于过滤不合规资源。
+        注册OU ID。
 
         :param organization_unit_id: The organization_unit_id of this ListControlViolationsRequest.
         :type organization_unit_id: str

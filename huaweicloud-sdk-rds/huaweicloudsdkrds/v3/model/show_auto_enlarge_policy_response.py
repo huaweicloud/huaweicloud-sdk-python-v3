@@ -20,16 +20,18 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
     openapi_types = {
         'switch_option': 'bool',
         'limit_size': 'int',
-        'trigger_threshold': 'int'
+        'trigger_threshold': 'int',
+        'step_percent': 'int'
     }
 
     attribute_map = {
         'switch_option': 'switch_option',
         'limit_size': 'limit_size',
-        'trigger_threshold': 'trigger_threshold'
+        'trigger_threshold': 'trigger_threshold',
+        'step_percent': 'step_percent'
     }
 
-    def __init__(self, switch_option=None, limit_size=None, trigger_threshold=None):
+    def __init__(self, switch_option=None, limit_size=None, trigger_threshold=None, step_percent=None):
         """ShowAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
         :type limit_size: int
         :param trigger_threshold: 可用空间百分比，小于等于此值或者10GB时触发扩容
         :type trigger_threshold: int
+        :param step_percent: 每次自动扩容的百分比步长，开启自定义步长功能时返回。
+        :type step_percent: int
         """
         
         super(ShowAutoEnlargePolicyResponse, self).__init__()
@@ -47,6 +51,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
         self._switch_option = None
         self._limit_size = None
         self._trigger_threshold = None
+        self._step_percent = None
         self.discriminator = None
 
         if switch_option is not None:
@@ -55,6 +60,8 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
             self.limit_size = limit_size
         if trigger_threshold is not None:
             self.trigger_threshold = trigger_threshold
+        if step_percent is not None:
+            self.step_percent = step_percent
 
     @property
     def switch_option(self):
@@ -121,6 +128,28 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
         :type trigger_threshold: int
         """
         self._trigger_threshold = trigger_threshold
+
+    @property
+    def step_percent(self):
+        """Gets the step_percent of this ShowAutoEnlargePolicyResponse.
+
+        每次自动扩容的百分比步长，开启自定义步长功能时返回。
+
+        :return: The step_percent of this ShowAutoEnlargePolicyResponse.
+        :rtype: int
+        """
+        return self._step_percent
+
+    @step_percent.setter
+    def step_percent(self, step_percent):
+        """Sets the step_percent of this ShowAutoEnlargePolicyResponse.
+
+        每次自动扩容的百分比步长，开启自定义步长功能时返回。
+
+        :param step_percent: The step_percent of this ShowAutoEnlargePolicyResponse.
+        :type step_percent: int
+        """
+        self._step_percent = step_percent
 
     def to_dict(self):
         """Returns the model properties as a dict"""

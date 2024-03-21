@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BatchCreateV2RequestBodyTags:
+class LiveRequestArgs:
 
     """
     Attributes:
@@ -17,78 +17,80 @@ class BatchCreateV2RequestBodyTags:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str',
-        'value': 'str'
+        'delay': 'str',
+        'unit': 'str'
     }
 
     attribute_map = {
-        'key': 'key',
-        'value': 'value'
+        'delay': 'delay',
+        'unit': 'unit'
     }
 
-    def __init__(self, key=None, value=None):
-        """BatchCreateV2RequestBodyTags
+    def __init__(self, delay=None, unit=None):
+        """LiveRequestArgs
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
-        :type key: str
-        :param value: 标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
-        :type value: str
+        :param delay: 时延字段
+        :type delay: str
+        :param unit: 单位
+        :type unit: str
         """
         
         
 
-        self._key = None
-        self._value = None
+        self._delay = None
+        self._unit = None
         self.discriminator = None
 
-        self.key = key
-        self.value = value
+        if delay is not None:
+            self.delay = delay
+        if unit is not None:
+            self.unit = unit
 
     @property
-    def key(self):
-        """Gets the key of this BatchCreateV2RequestBodyTags.
+    def delay(self):
+        """Gets the delay of this LiveRequestArgs.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        时延字段
 
-        :return: The key of this BatchCreateV2RequestBodyTags.
+        :return: The delay of this LiveRequestArgs.
         :rtype: str
         """
-        return self._key
+        return self._delay
 
-    @key.setter
-    def key(self, key):
-        """Sets the key of this BatchCreateV2RequestBodyTags.
+    @delay.setter
+    def delay(self, delay):
+        """Sets the delay of this LiveRequestArgs.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        时延字段
 
-        :param key: The key of this BatchCreateV2RequestBodyTags.
-        :type key: str
+        :param delay: The delay of this LiveRequestArgs.
+        :type delay: str
         """
-        self._key = key
+        self._delay = delay
 
     @property
-    def value(self):
-        """Gets the value of this BatchCreateV2RequestBodyTags.
+    def unit(self):
+        """Gets the unit of this LiveRequestArgs.
 
-        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
+        单位
 
-        :return: The value of this BatchCreateV2RequestBodyTags.
+        :return: The unit of this LiveRequestArgs.
         :rtype: str
         """
-        return self._value
+        return self._unit
 
-    @value.setter
-    def value(self, value):
-        """Sets the value of this BatchCreateV2RequestBodyTags.
+    @unit.setter
+    def unit(self, unit):
+        """Sets the unit of this LiveRequestArgs.
 
-        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
+        单位
 
-        :param value: The value of this BatchCreateV2RequestBodyTags.
-        :type value: str
+        :param unit: The unit of this LiveRequestArgs.
+        :type unit: str
         """
-        self._value = value
+        self._unit = unit
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +134,7 @@ class BatchCreateV2RequestBodyTags:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchCreateV2RequestBodyTags):
+        if not isinstance(other, LiveRequestArgs):
             return False
 
         return self.__dict__ == other.__dict__

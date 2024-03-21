@@ -55,17 +55,17 @@ class ListSupportMasksRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param ip_version: 根据IP版本过滤
+        :param ip_version: 
         :type ip_version: list[int]
-        :param mask: 根据掩码过滤
+        :param mask: 
         :type mask: list[int]
         """
         
@@ -196,8 +196,6 @@ class ListSupportMasksRequest:
     def fields(self):
         """Gets the fields of this ListSupportMasksRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListSupportMasksRequest.
         :rtype: list[str]
         """
@@ -206,8 +204,6 @@ class ListSupportMasksRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListSupportMasksRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListSupportMasksRequest.
         :type fields: list[str]
@@ -262,8 +258,6 @@ class ListSupportMasksRequest:
     def id(self):
         """Gets the id of this ListSupportMasksRequest.
 
-        根据ID过滤
-
         :return: The id of this ListSupportMasksRequest.
         :rtype: list[str]
         """
@@ -272,8 +266,6 @@ class ListSupportMasksRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this ListSupportMasksRequest.
-
-        根据ID过滤
 
         :param id: The id of this ListSupportMasksRequest.
         :type id: list[str]
@@ -284,8 +276,6 @@ class ListSupportMasksRequest:
     def ip_version(self):
         """Gets the ip_version of this ListSupportMasksRequest.
 
-        根据IP版本过滤
-
         :return: The ip_version of this ListSupportMasksRequest.
         :rtype: list[int]
         """
@@ -294,8 +284,6 @@ class ListSupportMasksRequest:
     @ip_version.setter
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListSupportMasksRequest.
-
-        根据IP版本过滤
 
         :param ip_version: The ip_version of this ListSupportMasksRequest.
         :type ip_version: list[int]
@@ -306,8 +294,6 @@ class ListSupportMasksRequest:
     def mask(self):
         """Gets the mask of this ListSupportMasksRequest.
 
-        根据掩码过滤
-
         :return: The mask of this ListSupportMasksRequest.
         :rtype: list[int]
         """
@@ -316,8 +302,6 @@ class ListSupportMasksRequest:
     @mask.setter
     def mask(self, mask):
         """Sets the mask of this ListSupportMasksRequest.
-
-        根据掩码过滤
 
         :param mask: The mask of this ListSupportMasksRequest.
         :type mask: list[int]

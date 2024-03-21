@@ -47,7 +47,7 @@ class PolicyGroupResponseInfo:
         :type group_name: str
         :param group_id: 策略组ID
         :type group_id: str
-        :param description: 描述信息
+        :param description: 策略组的描述信息
         :type description: str
         :param deletable: 是否允许删除该策略组
         :type deletable: bool
@@ -138,7 +138,7 @@ class PolicyGroupResponseInfo:
     def description(self):
         """Gets the description of this PolicyGroupResponseInfo.
 
-        描述信息
+        策略组的描述信息
 
         :return: The description of this PolicyGroupResponseInfo.
         :rtype: str
@@ -149,7 +149,7 @@ class PolicyGroupResponseInfo:
     def description(self, description):
         """Sets the description of this PolicyGroupResponseInfo.
 
-        描述信息
+        策略组的描述信息
 
         :param description: The description of this PolicyGroupResponseInfo.
         :type description: str

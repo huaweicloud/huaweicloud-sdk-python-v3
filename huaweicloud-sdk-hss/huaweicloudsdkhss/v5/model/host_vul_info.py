@@ -38,7 +38,9 @@ class HostVulInfo:
         'app_version': 'str',
         'app_path': 'str',
         'version': 'str',
-        'support_restore': 'bool'
+        'support_restore': 'bool',
+        'disabled_operate_types': 'list[VulHostInfoDisabledOperateTypes]',
+        'repair_priority': 'str'
     }
 
     attribute_map = {
@@ -63,10 +65,12 @@ class HostVulInfo:
         'app_version': 'app_version',
         'app_path': 'app_path',
         'version': 'version',
-        'support_restore': 'support_restore'
+        'support_restore': 'support_restore',
+        'disabled_operate_types': 'disabled_operate_types',
+        'repair_priority': 'repair_priority'
     }
 
-    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, scan_time=None, type=None, app_list=None, severity_level=None, solution_detail=None, url=None, description=None, repair_cmd=None, status=None, repair_success_num=None, cve_list=None, is_affect_business=None, first_scan_time=None, app_name=None, app_version=None, app_path=None, version=None, support_restore=None):
+    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, scan_time=None, type=None, app_list=None, severity_level=None, solution_detail=None, url=None, description=None, repair_cmd=None, status=None, repair_success_num=None, cve_list=None, is_affect_business=None, first_scan_time=None, app_name=None, app_version=None, app_path=None, version=None, support_restore=None, disabled_operate_types=None, repair_priority=None):
         """HostVulInfo
 
         The model defined in huaweicloud sdk
@@ -115,6 +119,10 @@ class HostVulInfo:
         :type version: str
         :param support_restore: 是否可以回滚到修复漏洞时创建的备份
         :type support_restore: bool
+        :param disabled_operate_types: 该漏洞不可进行的操作类型列表
+        :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        :param repair_priority: 修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+        :type repair_priority: str
         """
         
         
@@ -141,6 +149,8 @@ class HostVulInfo:
         self._app_path = None
         self._version = None
         self._support_restore = None
+        self._disabled_operate_types = None
+        self._repair_priority = None
         self.discriminator = None
 
         if vul_name is not None:
@@ -187,6 +197,10 @@ class HostVulInfo:
             self.version = version
         if support_restore is not None:
             self.support_restore = support_restore
+        if disabled_operate_types is not None:
+            self.disabled_operate_types = disabled_operate_types
+        if repair_priority is not None:
+            self.repair_priority = repair_priority
 
     @property
     def vul_name(self):
@@ -671,6 +685,50 @@ class HostVulInfo:
         :type support_restore: bool
         """
         self._support_restore = support_restore
+
+    @property
+    def disabled_operate_types(self):
+        """Gets the disabled_operate_types of this HostVulInfo.
+
+        该漏洞不可进行的操作类型列表
+
+        :return: The disabled_operate_types of this HostVulInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        """
+        return self._disabled_operate_types
+
+    @disabled_operate_types.setter
+    def disabled_operate_types(self, disabled_operate_types):
+        """Sets the disabled_operate_types of this HostVulInfo.
+
+        该漏洞不可进行的操作类型列表
+
+        :param disabled_operate_types: The disabled_operate_types of this HostVulInfo.
+        :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        """
+        self._disabled_operate_types = disabled_operate_types
+
+    @property
+    def repair_priority(self):
+        """Gets the repair_priority of this HostVulInfo.
+
+        修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+
+        :return: The repair_priority of this HostVulInfo.
+        :rtype: str
+        """
+        return self._repair_priority
+
+    @repair_priority.setter
+    def repair_priority(self, repair_priority):
+        """Sets the repair_priority of this HostVulInfo.
+
+        修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+
+        :param repair_priority: The repair_priority of this HostVulInfo.
+        :type repair_priority: str
+        """
+        self._repair_priority = repair_priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

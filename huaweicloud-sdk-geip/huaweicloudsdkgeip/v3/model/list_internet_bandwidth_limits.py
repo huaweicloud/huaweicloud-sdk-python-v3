@@ -39,7 +39,7 @@ class ListInternetBandwidthLimits:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域公网带宽限制的ID
         :type id: str
         :param charge_mode: 全域公网带宽的计费模式
         :type charge_mode: str
@@ -80,7 +80,7 @@ class ListInternetBandwidthLimits:
     def id(self):
         """Gets the id of this ListInternetBandwidthLimits.
 
-        ID
+        全域公网带宽限制的ID
 
         :return: The id of this ListInternetBandwidthLimits.
         :rtype: str
@@ -91,7 +91,7 @@ class ListInternetBandwidthLimits:
     def id(self, id):
         """Sets the id of this ListInternetBandwidthLimits.
 
-        ID
+        全域公网带宽限制的ID
 
         :param id: The id of this ListInternetBandwidthLimits.
         :type id: str

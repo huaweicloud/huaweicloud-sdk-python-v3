@@ -24,7 +24,8 @@ class ListHostVulsRequest:
         'limit': 'int',
         'offset': 'int',
         'handle_status': 'str',
-        'status': 'str'
+        'status': 'str',
+        'repair_priority': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListHostVulsRequest:
         'limit': 'limit',
         'offset': 'offset',
         'handle_status': 'handle_status',
-        'status': 'status'
+        'status': 'status',
+        'repair_priority': 'repair_priority'
     }
 
-    def __init__(self, enterprise_project_id=None, host_id=None, type=None, vul_name=None, limit=None, offset=None, handle_status=None, status=None):
+    def __init__(self, enterprise_project_id=None, host_id=None, type=None, vul_name=None, limit=None, offset=None, handle_status=None, status=None, repair_priority=None):
         """ListHostVulsRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListHostVulsRequest:
         :type handle_status: str
         :param status: 漏洞状态，包含如下：   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
         :type status: str
+        :param repair_priority: 修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+        :type repair_priority: str
         """
         
         
@@ -71,6 +75,7 @@ class ListHostVulsRequest:
         self._offset = None
         self._handle_status = None
         self._status = None
+        self._repair_priority = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -88,6 +93,8 @@ class ListHostVulsRequest:
             self.handle_status = handle_status
         if status is not None:
             self.status = status
+        if repair_priority is not None:
+            self.repair_priority = repair_priority
 
     @property
     def enterprise_project_id(self):
@@ -264,6 +271,28 @@ class ListHostVulsRequest:
         :type status: str
         """
         self._status = status
+
+    @property
+    def repair_priority(self):
+        """Gets the repair_priority of this ListHostVulsRequest.
+
+        修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+
+        :return: The repair_priority of this ListHostVulsRequest.
+        :rtype: str
+        """
+        return self._repair_priority
+
+    @repair_priority.setter
+    def repair_priority(self, repair_priority):
+        """Sets the repair_priority of this ListHostVulsRequest.
+
+        修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+
+        :param repair_priority: The repair_priority of this ListHostVulsRequest.
+        :type repair_priority: str
+        """
+        self._repair_priority = repair_priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

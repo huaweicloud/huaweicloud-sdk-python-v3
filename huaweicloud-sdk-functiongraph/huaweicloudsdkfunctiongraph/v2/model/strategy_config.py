@@ -33,7 +33,7 @@ class StrategyConfig:
 
         :param concurrency: 单函数最大实例数，v1取值0和-1，v2取值-1到1000 -1代表该函数实例数无限制 0代表该函数被禁用
         :type concurrency: int
-        :param concurrent_num: 单实例最大并发数，v2版本才支持，取值-1到1000
+        :param concurrent_num: 单实例并发数，v2版本才支持，取值1到1000
         :type concurrent_num: int
         """
         
@@ -72,7 +72,7 @@ class StrategyConfig:
     def concurrent_num(self):
         """Gets the concurrent_num of this StrategyConfig.
 
-        单实例最大并发数，v2版本才支持，取值-1到1000
+        单实例并发数，v2版本才支持，取值1到1000
 
         :return: The concurrent_num of this StrategyConfig.
         :rtype: int
@@ -83,7 +83,7 @@ class StrategyConfig:
     def concurrent_num(self, concurrent_num):
         """Sets the concurrent_num of this StrategyConfig.
 
-        单实例最大并发数，v2版本才支持，取值-1到1000
+        单实例并发数，v2版本才支持，取值1到1000
 
         :param concurrent_num: The concurrent_num of this StrategyConfig.
         :type concurrent_num: int

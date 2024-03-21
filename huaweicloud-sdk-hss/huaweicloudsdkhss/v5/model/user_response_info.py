@@ -27,7 +27,6 @@ class UserResponseInfo:
         'user_group_name': 'str',
         'user_home_dir': 'str',
         'shell': 'str',
-        'expire_time': 'int',
         'recent_scan_time': 'int',
         'container_id': 'str',
         'container_name': 'str'
@@ -44,20 +43,19 @@ class UserResponseInfo:
         'user_group_name': 'user_group_name',
         'user_home_dir': 'user_home_dir',
         'shell': 'shell',
-        'expire_time': 'expire_time',
         'recent_scan_time': 'recent_scan_time',
         'container_id': 'container_id',
         'container_name': 'container_name'
     }
 
-    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, user_name=None, login_permission=None, root_permission=None, user_group_name=None, user_home_dir=None, shell=None, expire_time=None, recent_scan_time=None, container_id=None, container_name=None):
+    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, user_name=None, login_permission=None, root_permission=None, user_group_name=None, user_home_dir=None, shell=None, recent_scan_time=None, container_id=None, container_name=None):
         """UserResponseInfo
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: agent_id
+        :param agent_id: Agent ID
         :type agent_id: str
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -65,7 +63,7 @@ class UserResponseInfo:
         :type host_ip: str
         :param user_name: 用户名
         :type user_name: str
-        :param login_permission: 是否有登陆权限
+        :param login_permission: 是否有登录权限
         :type login_permission: bool
         :param root_permission: 是否有root权限
         :type root_permission: bool
@@ -75,8 +73,6 @@ class UserResponseInfo:
         :type user_home_dir: str
         :param shell: 用户启动shell
         :type shell: str
-        :param expire_time: 到期时间，采用时间戳，默认毫秒，
-        :type expire_time: int
         :param recent_scan_time: 最近扫描时间
         :type recent_scan_time: int
         :param container_id: 容器id
@@ -97,7 +93,6 @@ class UserResponseInfo:
         self._user_group_name = None
         self._user_home_dir = None
         self._shell = None
-        self._expire_time = None
         self._recent_scan_time = None
         self._container_id = None
         self._container_name = None
@@ -123,8 +118,6 @@ class UserResponseInfo:
             self.user_home_dir = user_home_dir
         if shell is not None:
             self.shell = shell
-        if expire_time is not None:
-            self.expire_time = expire_time
         if recent_scan_time is not None:
             self.recent_scan_time = recent_scan_time
         if container_id is not None:
@@ -136,7 +129,7 @@ class UserResponseInfo:
     def agent_id(self):
         """Gets the agent_id of this UserResponseInfo.
 
-        agent_id
+        Agent ID
 
         :return: The agent_id of this UserResponseInfo.
         :rtype: str
@@ -147,7 +140,7 @@ class UserResponseInfo:
     def agent_id(self, agent_id):
         """Sets the agent_id of this UserResponseInfo.
 
-        agent_id
+        Agent ID
 
         :param agent_id: The agent_id of this UserResponseInfo.
         :type agent_id: str
@@ -158,7 +151,7 @@ class UserResponseInfo:
     def host_id(self):
         """Gets the host_id of this UserResponseInfo.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this UserResponseInfo.
         :rtype: str
@@ -169,7 +162,7 @@ class UserResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this UserResponseInfo.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this UserResponseInfo.
         :type host_id: str
@@ -246,7 +239,7 @@ class UserResponseInfo:
     def login_permission(self):
         """Gets the login_permission of this UserResponseInfo.
 
-        是否有登陆权限
+        是否有登录权限
 
         :return: The login_permission of this UserResponseInfo.
         :rtype: bool
@@ -257,7 +250,7 @@ class UserResponseInfo:
     def login_permission(self, login_permission):
         """Sets the login_permission of this UserResponseInfo.
 
-        是否有登陆权限
+        是否有登录权限
 
         :param login_permission: The login_permission of this UserResponseInfo.
         :type login_permission: bool
@@ -351,28 +344,6 @@ class UserResponseInfo:
         :type shell: str
         """
         self._shell = shell
-
-    @property
-    def expire_time(self):
-        """Gets the expire_time of this UserResponseInfo.
-
-        到期时间，采用时间戳，默认毫秒，
-
-        :return: The expire_time of this UserResponseInfo.
-        :rtype: int
-        """
-        return self._expire_time
-
-    @expire_time.setter
-    def expire_time(self, expire_time):
-        """Sets the expire_time of this UserResponseInfo.
-
-        到期时间，采用时间戳，默认毫秒，
-
-        :param expire_time: The expire_time of this UserResponseInfo.
-        :type expire_time: int
-        """
-        self._expire_time = expire_time
 
     @property
     def recent_scan_time(self):

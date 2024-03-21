@@ -41,7 +41,7 @@ class ListProtectionPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param region: Region ID
         :type region: str
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
@@ -53,7 +53,7 @@ class ListProtectionPolicyRequest:
         :type policy_name: str
         :param protect_policy_id: 防护策略id
         :type protect_policy_id: str
-        :param operating_system: 策略支持的操作系统
+        :param operating_system: 策略支持的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
         :type operating_system: str
         """
         
@@ -86,7 +86,7 @@ class ListProtectionPolicyRequest:
     def region(self):
         """Gets the region of this ListProtectionPolicyRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ListProtectionPolicyRequest.
         :rtype: str
@@ -97,7 +97,7 @@ class ListProtectionPolicyRequest:
     def region(self, region):
         """Sets the region of this ListProtectionPolicyRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ListProtectionPolicyRequest.
         :type region: str
@@ -218,7 +218,7 @@ class ListProtectionPolicyRequest:
     def operating_system(self):
         """Gets the operating_system of this ListProtectionPolicyRequest.
 
-        策略支持的操作系统
+        策略支持的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :return: The operating_system of this ListProtectionPolicyRequest.
         :rtype: str
@@ -229,7 +229,7 @@ class ListProtectionPolicyRequest:
     def operating_system(self, operating_system):
         """Sets the operating_system of this ListProtectionPolicyRequest.
 
-        策略支持的操作系统
+        策略支持的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :param operating_system: The operating_system of this ListProtectionPolicyRequest.
         :type operating_system: str

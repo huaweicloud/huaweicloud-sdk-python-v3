@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BatchCreateV2RequestBodySysTags:
+class BusinessCodeVo:
 
     """
     Attributes:
@@ -17,78 +17,51 @@ class BatchCreateV2RequestBodySysTags:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str',
-        'value': 'str'
+        'code': 'str'
     }
 
     attribute_map = {
-        'key': 'key',
-        'value': 'value'
+        'code': 'code'
     }
 
-    def __init__(self, key=None, value=None):
-        """BatchCreateV2RequestBodySysTags
+    def __init__(self, code=None):
+        """BusinessCodeVo
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
-        :type key: str
-        :param value: 标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
-        :type value: str
+        :param code: 策略集编码。
+        :type code: str
         """
         
         
 
-        self._key = None
-        self._value = None
+        self._code = None
         self.discriminator = None
 
-        self.key = key
-        self.value = value
+        if code is not None:
+            self.code = code
 
     @property
-    def key(self):
-        """Gets the key of this BatchCreateV2RequestBodySysTags.
+    def code(self):
+        """Gets the code of this BusinessCodeVo.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        策略集编码。
 
-        :return: The key of this BatchCreateV2RequestBodySysTags.
+        :return: The code of this BusinessCodeVo.
         :rtype: str
         """
-        return self._key
+        return self._code
 
-    @key.setter
-    def key(self, key):
-        """Sets the key of this BatchCreateV2RequestBodySysTags.
+    @code.setter
+    def code(self, code):
+        """Sets the code of this BusinessCodeVo.
 
-        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        策略集编码。
 
-        :param key: The key of this BatchCreateV2RequestBodySysTags.
-        :type key: str
+        :param code: The code of this BusinessCodeVo.
+        :type code: str
         """
-        self._key = key
-
-    @property
-    def value(self):
-        """Gets the value of this BatchCreateV2RequestBodySysTags.
-
-        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
-
-        :return: The value of this BatchCreateV2RequestBodySysTags.
-        :rtype: str
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this BatchCreateV2RequestBodySysTags.
-
-        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
-
-        :param value: The value of this BatchCreateV2RequestBodySysTags.
-        :type value: str
-        """
-        self._value = value
+        self._code = code
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +105,7 @@ class BatchCreateV2RequestBodySysTags:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchCreateV2RequestBodySysTags):
+        if not isinstance(other, BusinessCodeVo):
             return False
 
         return self.__dict__ == other.__dict__

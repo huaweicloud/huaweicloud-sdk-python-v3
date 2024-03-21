@@ -32,6 +32,75 @@ class IDMEClassicAPIClient(Client):
 
         return client_builder
 
+    def add_tag(self, request):
+        """添加标签
+
+        给模型实例数据添加标签数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddTag
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.AddTagRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.AddTagResponse`
+        """
+        http_info = self._add_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_tag_invoker(self, request):
+        http_info = self._add_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/addTag",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_checkin(self, request):
         """批量检入M-V模型数据实例
 
@@ -402,6 +471,75 @@ class IDMEClassicAPIClient(Client):
             "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/batchCreate",
             "request_type": request.__class__.__name__,
             "response_type": "BatchCreateUsingPostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_view(self, request):
+        """批量创建视图
+
+        通过模型版本对象ID和视图对象ID批量创建模型多视图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateView
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchCreateViewRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchCreateViewResponse`
+        """
+        http_info = self._batch_create_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_view_invoker(self, request):
+        http_info = self._batch_create_view_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_view_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/batchCreateView",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateViewResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1554,6 +1692,75 @@ class IDMEClassicAPIClient(Client):
 
         return http_info
 
+    def collect_history_data(self, request):
+        """统计模型历史数据
+
+        根据开始时间&amp;结束时间统计这段时间内各操作类型（创建、更新、软删除、硬删除）的数据量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CollectHistoryData
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.CollectHistoryDataRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CollectHistoryDataResponse`
+        """
+        http_info = self._collect_history_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_history_data_invoker(self, request):
+        http_info = self._collect_history_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_history_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/statisticsHistoryData",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectHistoryDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def compare_business_version(self, request):
         """对比M-V模型实例
 
@@ -1692,6 +1899,73 @@ class IDMEClassicAPIClient(Client):
 
         return http_info
 
+    def create_multi_view(self, request):
+        """创建视图对象
+
+        通过接口创建多视图MV对象实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateMultiView
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.CreateMultiViewRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CreateMultiViewResponse`
+        """
+        http_info = self._create_multi_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_multi_view_invoker(self, request):
+        http_info = self._create_multi_view_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_multi_view_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/MultiViewModel/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMultiViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_using_post(self, request):
         """创建实例
 
@@ -1717,6 +1991,75 @@ class IDMEClassicAPIClient(Client):
             "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/create",
             "request_type": request.__class__.__name__,
             "response_type": "CreateUsingPostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_view(self, request):
+        """创建视图
+
+        通过模型版本对象ID和视图对象ID创建模型多视图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateView
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.CreateViewRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CreateViewResponse`
+        """
+        http_info = self._create_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_view_invoker(self, request):
+        http_info = self._create_view_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_view_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/createView",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateViewResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1799,6 +2142,73 @@ class IDMEClassicAPIClient(Client):
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_by_condition_multi_view(self, request):
+        """条件删除模型
+
+        条件删除多视图对象。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteByConditionMultiView
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.DeleteByConditionMultiViewRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.DeleteByConditionMultiViewResponse`
+        """
+        http_info = self._delete_by_condition_multi_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_by_condition_multi_view_invoker(self, request):
+        http_info = self._delete_by_condition_multi_view_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_by_condition_multi_view_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/MultiViewModel/deleteByCondition",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteByConditionMultiViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
 
         query_params = []
 
@@ -2179,6 +2589,144 @@ class IDMEClassicAPIClient(Client):
 
         return http_info
 
+    def disable_data_instance(self, request):
+        """失效模型数据实例
+
+        根据对象ID失效对应实例数据，返回失效成功数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisableDataInstance
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.DisableDataInstanceRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.DisableDataInstanceResponse`
+        """
+        http_info = self._disable_data_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def disable_data_instance_invoker(self, request):
+        http_info = self._disable_data_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_data_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableDataInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_data_instance(self, request):
+        """生效模型数据实例
+
+        根据对象ID生效对应实例数据，返回生效成功数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for EnableDataInstance
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.EnableDataInstanceRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.EnableDataInstanceResponse`
+        """
+        http_info = self._enable_data_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_data_instance_invoker(self, request):
+        http_info = self._enable_data_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_data_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableDataInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def execute_revise(self, request):
         """修订M-V模型数据实例
 
@@ -2227,6 +2775,73 @@ class IDMEClassicAPIClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def generate_business_code(self, request):
+        """新增模型业务编码
+
+        调用接口生成模型业务编码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GenerateBusinessCode
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.GenerateBusinessCodeRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.GenerateBusinessCodeResponse`
+        """
+        http_info = self._generate_business_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def generate_business_code_invoker(self, request):
+        http_info = self._generate_business_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _generate_business_code_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/generateBusinessCode",
+            "request_type": request.__class__.__name__,
+            "response_type": "GenerateBusinessCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2306,6 +2921,91 @@ class IDMEClassicAPIClient(Client):
             query_params.append(('totalPages', local_var_params['total_pages']))
         if 'total_rows' in local_var_params:
             query_params.append(('totalRows', local_var_params['total_rows']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_history_data(self, request):
+        """分页查询模型历史版本信息
+
+        根据对象入参分页查询满足条件的系统版本详细信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHistoryData
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListHistoryDataRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListHistoryDataResponse`
+        """
+        http_info = self._list_history_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_history_data_invoker(self, request):
+        http_info = self._list_history_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_history_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/queryHistoryData/{pageSizePath}/{curPagePath}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHistoryDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
+
+        query_params = []
+        if 'cur_page' in local_var_params:
+            query_params.append(('curPage', local_var_params['cur_page']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+        if 'total_rows' in local_var_params:
+            query_params.append(('totalRows', local_var_params['total_rows']))
+        if 'total_pages' in local_var_params:
+            query_params.append(('totalPages', local_var_params['total_pages']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -2567,6 +3267,75 @@ class IDMEClassicAPIClient(Client):
             query_params.append(('totalPages', local_var_params['total_pages']))
         if 'total_rows' in local_var_params:
             query_params.append(('totalRows', local_var_params['total_rows']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_tag(self, request):
+        """删除标签
+
+        删除模型实例数据绑定的标签数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RemoveTag
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.RemoveTagRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RemoveTagResponse`
+        """
+        http_info = self._remove_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_tag_invoker(self, request):
+        http_info = self._remove_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/removeTag",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
 
         header_params = {}
 
@@ -3245,6 +4014,75 @@ class IDMEClassicAPIClient(Client):
 
         return http_info
 
+    def show_tag(self, request):
+        """查询实例标签详细信息
+
+        根据对象ID获取数据实例标签信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTag
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ShowTagRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ShowTagResponse`
+        """
+        http_info = self._show_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tag_invoker(self, request):
+        http_info = self._show_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/queryTag",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_version_by_master(self, request):
         """获取指定版本的M-V模型实例数据
 
@@ -3270,6 +4108,75 @@ class IDMEClassicAPIClient(Client):
             "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/getVersionByMaster",
             "request_type": request.__class__.__name__,
             "response_type": "ShowVersionByMasterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_lifecycle_template(self, request):
+        """切换模型生命周期模板或状态
+
+        根据对象ID重新分配生命周期模板&amp;状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchLifecycleTemplate
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.SwitchLifecycleTemplateRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.SwitchLifecycleTemplateResponse`
+        """
+        http_info = self._switch_lifecycle_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_lifecycle_template_invoker(self, request):
+        http_info = self._switch_lifecycle_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_lifecycle_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/switchLifecycleTemplate",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchLifecycleTemplateResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3590,6 +4497,75 @@ class IDMEClassicAPIClient(Client):
 
         return http_info
 
+    def update_state(self, request):
+        """设置模型生命周期状态
+
+        根据对象实例ID设置指定生命周期状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateState
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateStateRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateStateResponse`
+        """
+        http_info = self._update_state_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_state_invoker(self, request):
+        http_info = self._update_state_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_state_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/updateState",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_using_post(self, request):
         """更新实例
 
@@ -3615,6 +4591,75 @@ class IDMEClassicAPIClient(Client):
             "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/update",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateUsingPostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_view(self, request):
+        """批量创建视图
+
+        通过模型版本对象ID和视图对象ID批量创建模型多视图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateView
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateViewRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateViewResponse`
+        """
+        http_info = self._update_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_view_invoker(self, request):
+        http_info = self._update_view_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_view_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/updateView",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateViewResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

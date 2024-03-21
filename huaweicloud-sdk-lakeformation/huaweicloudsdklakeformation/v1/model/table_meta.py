@@ -21,7 +21,9 @@ class TableMeta:
         'database_name': 'str',
         'table_name': 'str',
         'table_type': 'str',
-        'comments': 'str'
+        'comments': 'str',
+        'columns': 'list[Column]',
+        'partition_keys': 'list[Column]'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class TableMeta:
         'database_name': 'database_name',
         'table_name': 'table_name',
         'table_type': 'table_type',
-        'comments': 'comments'
+        'comments': 'comments',
+        'columns': 'columns',
+        'partition_keys': 'partition_keys'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, table_name=None, table_type=None, comments=None):
+    def __init__(self, catalog_name=None, database_name=None, table_name=None, table_type=None, comments=None, columns=None, partition_keys=None):
         """TableMeta
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class TableMeta:
         :type table_type: str
         :param comments: 表描述信息
         :type comments: str
+        :param columns: 分区列以外的所有字段。
+        :type columns: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        :param partition_keys: 分区列的信息。
+        :type partition_keys: list[:class:`huaweicloudsdklakeformation.v1.Column`]
         """
         
         
@@ -56,6 +64,8 @@ class TableMeta:
         self._table_name = None
         self._table_type = None
         self._comments = None
+        self._columns = None
+        self._partition_keys = None
         self.discriminator = None
 
         self.catalog_name = catalog_name
@@ -63,6 +73,10 @@ class TableMeta:
         self.table_name = table_name
         self.table_type = table_type
         self.comments = comments
+        if columns is not None:
+            self.columns = columns
+        if partition_keys is not None:
+            self.partition_keys = partition_keys
 
     @property
     def catalog_name(self):
@@ -173,6 +187,50 @@ class TableMeta:
         :type comments: str
         """
         self._comments = comments
+
+    @property
+    def columns(self):
+        """Gets the columns of this TableMeta.
+
+        分区列以外的所有字段。
+
+        :return: The columns of this TableMeta.
+        :rtype: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        """
+        return self._columns
+
+    @columns.setter
+    def columns(self, columns):
+        """Sets the columns of this TableMeta.
+
+        分区列以外的所有字段。
+
+        :param columns: The columns of this TableMeta.
+        :type columns: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        """
+        self._columns = columns
+
+    @property
+    def partition_keys(self):
+        """Gets the partition_keys of this TableMeta.
+
+        分区列的信息。
+
+        :return: The partition_keys of this TableMeta.
+        :rtype: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        """
+        return self._partition_keys
+
+    @partition_keys.setter
+    def partition_keys(self, partition_keys):
+        """Sets the partition_keys of this TableMeta.
+
+        分区列的信息。
+
+        :param partition_keys: The partition_keys of this TableMeta.
+        :type partition_keys: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        """
+        self._partition_keys = partition_keys
 
     def to_dict(self):
         """Returns the model properties as a dict"""

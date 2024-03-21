@@ -20,8 +20,8 @@ class ListNatGatewaySnatRulesRequest:
         'admin_state_up': 'bool',
         'cidr': 'str',
         'limit': 'int',
-        'floating_ip_address': 'str',
-        'floating_ip_id': 'str',
+        'floating_ip_address': 'list[str]',
+        'floating_ip_id': 'list[str]',
         'id': 'str',
         'description': 'str',
         'created_at': 'str',
@@ -59,10 +59,10 @@ class ListNatGatewaySnatRulesRequest:
         :type cidr: str
         :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
         :type limit: int
-        :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
-        :type floating_ip_address: str
-        :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
-        :type floating_ip_id: str
+        :param floating_ip_address: 功能说明：弹性公网IP。
+        :type floating_ip_address: list[str]
+        :param floating_ip_id: 功能说明：弹性公网IP的id。
+        :type floating_ip_id: list[str]
         :param id: SNAT规则的ID。
         :type id: str
         :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
@@ -195,10 +195,10 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_address(self):
         """Gets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
+        功能说明：弹性公网IP。
 
         :return: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._floating_ip_address
 
@@ -206,10 +206,10 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_address(self, floating_ip_address):
         """Sets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
+        功能说明：弹性公网IP。
 
         :param floating_ip_address: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
-        :type floating_ip_address: str
+        :type floating_ip_address: list[str]
         """
         self._floating_ip_address = floating_ip_address
 
@@ -217,10 +217,10 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_id(self):
         """Gets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
+        功能说明：弹性公网IP的id。
 
         :return: The floating_ip_id of this ListNatGatewaySnatRulesRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._floating_ip_id
 
@@ -228,10 +228,10 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_id(self, floating_ip_id):
         """Sets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
+        功能说明：弹性公网IP的id。
 
         :param floating_ip_id: The floating_ip_id of this ListNatGatewaySnatRulesRequest.
-        :type floating_ip_id: str
+        :type floating_ip_id: list[str]
         """
         self._floating_ip_id = floating_ip_id
 

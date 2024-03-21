@@ -53,7 +53,7 @@ class ConfigurationResponseDataSpec:
         'access_value': 'str',
         'business': 'str',
         'path': 'str',
-        'port': 'str',
+        'port': 'int',
         'metrics': 'list[str]'
     }
 
@@ -176,7 +176,7 @@ class ConfigurationResponseDataSpec:
         :param path: 自定义监控指标配置采集路径。  Configuration.type为\&quot;customMetric\&quot;时，返回此参数。 
         :type path: str
         :param port: 自定义监控指标配置采集端口。  Configuration.type为\&quot;customMetric\&quot;时，返回此参数。 
-        :type port: str
+        :type port: int
         :param metrics: 自定义监控指标配置指标名称。  Configuration.type为\&quot;customMetric\&quot;时，返回此参数。 
         :type metrics: list[str]
         """
@@ -1075,7 +1075,7 @@ class ConfigurationResponseDataSpec:
         自定义监控指标配置采集端口。  Configuration.type为\"customMetric\"时，返回此参数。 
 
         :return: The port of this ConfigurationResponseDataSpec.
-        :rtype: str
+        :rtype: int
         """
         return self._port
 
@@ -1086,7 +1086,7 @@ class ConfigurationResponseDataSpec:
         自定义监控指标配置采集端口。  Configuration.type为\"customMetric\"时，返回此参数。 
 
         :param port: The port of this ConfigurationResponseDataSpec.
-        :type port: str
+        :type port: int
         """
         self._port = port
 

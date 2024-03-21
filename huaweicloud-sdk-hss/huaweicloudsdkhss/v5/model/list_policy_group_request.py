@@ -21,7 +21,8 @@ class ListPolicyGroupRequest:
         'enterprise_project_id': 'str',
         'group_name': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'container_mode': 'bool'
     }
 
     attribute_map = {
@@ -29,17 +30,18 @@ class ListPolicyGroupRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'group_name': 'group_name',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'container_mode': 'container_mode'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, group_name=None, offset=None, limit=None):
+    def __init__(self, region=None, enterprise_project_id=None, group_name=None, offset=None, limit=None, container_mode=None):
         """ListPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param group_name: 策略组名
         :type group_name: str
@@ -47,6 +49,8 @@ class ListPolicyGroupRequest:
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
+        :param container_mode: 是否查询容器版策略
+        :type container_mode: bool
         """
         
         
@@ -56,6 +60,7 @@ class ListPolicyGroupRequest:
         self._group_name = None
         self._offset = None
         self._limit = None
+        self._container_mode = None
         self.discriminator = None
 
         self.region = region
@@ -67,12 +72,14 @@ class ListPolicyGroupRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if container_mode is not None:
+            self.container_mode = container_mode
 
     @property
     def region(self):
         """Gets the region of this ListPolicyGroupRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ListPolicyGroupRequest.
         :rtype: str
@@ -83,7 +90,7 @@ class ListPolicyGroupRequest:
     def region(self, region):
         """Sets the region of this ListPolicyGroupRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ListPolicyGroupRequest.
         :type region: str
@@ -94,7 +101,7 @@ class ListPolicyGroupRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPolicyGroupRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListPolicyGroupRequest.
         :rtype: str
@@ -105,7 +112,7 @@ class ListPolicyGroupRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPolicyGroupRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListPolicyGroupRequest.
         :type enterprise_project_id: str
@@ -177,6 +184,28 @@ class ListPolicyGroupRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def container_mode(self):
+        """Gets the container_mode of this ListPolicyGroupRequest.
+
+        是否查询容器版策略
+
+        :return: The container_mode of this ListPolicyGroupRequest.
+        :rtype: bool
+        """
+        return self._container_mode
+
+    @container_mode.setter
+    def container_mode(self, container_mode):
+        """Sets the container_mode of this ListPolicyGroupRequest.
+
+        是否查询容器版策略
+
+        :param container_mode: The container_mode of this ListPolicyGroupRequest.
+        :type container_mode: bool
+        """
+        self._container_mode = container_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

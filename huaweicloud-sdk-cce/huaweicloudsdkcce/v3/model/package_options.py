@@ -41,7 +41,7 @@ class PackageOptions:
 
         :param name: 参数名称
         :type name: str
-        :param default: 参数默认值，不指定时按默认值生效
+        :param default: 参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
         :type default: str
         :param valid_at: 参数生效方式  - static：节点创建时生效，后续不可修改 - immediately：节点运行中时可以修改，修改后生效 
         :type valid_at: str
@@ -96,7 +96,7 @@ class PackageOptions:
     def default(self):
         """Gets the default of this PackageOptions.
 
-        参数默认值，不指定时按默认值生效
+        参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
 
         :return: The default of this PackageOptions.
         :rtype: str
@@ -107,7 +107,7 @@ class PackageOptions:
     def default(self, default):
         """Sets the default of this PackageOptions.
 
-        参数默认值，不指定时按默认值生效
+        参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
 
         :param default: The default of this PackageOptions.
         :type default: str

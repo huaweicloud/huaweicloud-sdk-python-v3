@@ -45,7 +45,7 @@ class AlarmWhiteListResponseInfo:
 
         :param enterprise_project_name: 企业项目名称
         :type enterprise_project_name: str
-        :param hash: SHA256
+        :param hash: 事件白名单SHA256
         :type hash: str
         :param description: 描述信息
         :type description: str
@@ -57,7 +57,7 @@ class AlarmWhiteListResponseInfo:
         :type field_value: str
         :param judge_type: 通配符，包含如下: - \&quot;equal\&quot; # 相等 - \&quot;contain\&quot; # 包含
         :type judge_type: str
-        :param update_time: 更新时间，毫秒
+        :param update_time: 事件白名单更新时间，毫秒
         :type update_time: int
         """
         
@@ -116,7 +116,7 @@ class AlarmWhiteListResponseInfo:
     def hash(self):
         """Gets the hash of this AlarmWhiteListResponseInfo.
 
-        SHA256
+        事件白名单SHA256
 
         :return: The hash of this AlarmWhiteListResponseInfo.
         :rtype: str
@@ -127,7 +127,7 @@ class AlarmWhiteListResponseInfo:
     def hash(self, hash):
         """Sets the hash of this AlarmWhiteListResponseInfo.
 
-        SHA256
+        事件白名单SHA256
 
         :param hash: The hash of this AlarmWhiteListResponseInfo.
         :type hash: str
@@ -248,7 +248,7 @@ class AlarmWhiteListResponseInfo:
     def update_time(self):
         """Gets the update_time of this AlarmWhiteListResponseInfo.
 
-        更新时间，毫秒
+        事件白名单更新时间，毫秒
 
         :return: The update_time of this AlarmWhiteListResponseInfo.
         :rtype: int
@@ -259,7 +259,7 @@ class AlarmWhiteListResponseInfo:
     def update_time(self, update_time):
         """Sets the update_time of this AlarmWhiteListResponseInfo.
 
-        更新时间，毫秒
+        事件白名单更新时间，毫秒
 
         :param update_time: The update_time of this AlarmWhiteListResponseInfo.
         :type update_time: int

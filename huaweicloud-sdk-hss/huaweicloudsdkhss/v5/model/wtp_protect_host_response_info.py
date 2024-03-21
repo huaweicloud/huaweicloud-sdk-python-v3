@@ -21,6 +21,7 @@ class WtpProtectHostResponseInfo:
         'host_id': 'str',
         'public_ip': 'str',
         'private_ip': 'str',
+        'ipv6': 'str',
         'group_name': 'str',
         'os_bit': 'str',
         'os_type': 'str',
@@ -38,6 +39,7 @@ class WtpProtectHostResponseInfo:
         'host_id': 'host_id',
         'public_ip': 'public_ip',
         'private_ip': 'private_ip',
+        'ipv6': 'ipv6',
         'group_name': 'group_name',
         'os_bit': 'os_bit',
         'os_type': 'os_type',
@@ -50,19 +52,21 @@ class WtpProtectHostResponseInfo:
         'agent_status': 'agent_status'
     }
 
-    def __init__(self, host_name=None, host_id=None, public_ip=None, private_ip=None, group_name=None, os_bit=None, os_type=None, protect_status=None, rasp_protect_status=None, anti_tampering_times=None, detect_tampering_times=None, last_detect_time=None, scheduled_shutdown_status=None, agent_status=None):
+    def __init__(self, host_name=None, host_id=None, public_ip=None, private_ip=None, ipv6=None, group_name=None, os_bit=None, os_type=None, protect_status=None, rasp_protect_status=None, anti_tampering_times=None, detect_tampering_times=None, last_detect_time=None, scheduled_shutdown_status=None, agent_status=None):
         """WtpProtectHostResponseInfo
 
         The model defined in huaweicloud sdk
 
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_id: 云服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param public_ip: 弹性公网IP
         :type public_ip: str
         :param private_ip: 私有IP
         :type private_ip: str
+        :param ipv6: 私有IPv6地址
+        :type ipv6: str
         :param group_name: 服务器组名称
         :type group_name: str
         :param os_bit: 操作系统位数
@@ -77,7 +81,7 @@ class WtpProtectHostResponseInfo:
         :type anti_tampering_times: int
         :param detect_tampering_times: 已发现篡改攻击
         :type detect_tampering_times: int
-        :param last_detect_time: 最近检测时间
+        :param last_detect_time: 最近检测时间(ms)
         :type last_detect_time: int
         :param scheduled_shutdown_status: 定时关闭防护开关状态   - opened : 开启   - closed : 未开启
         :type scheduled_shutdown_status: str
@@ -91,6 +95,7 @@ class WtpProtectHostResponseInfo:
         self._host_id = None
         self._public_ip = None
         self._private_ip = None
+        self._ipv6 = None
         self._group_name = None
         self._os_bit = None
         self._os_type = None
@@ -111,6 +116,8 @@ class WtpProtectHostResponseInfo:
             self.public_ip = public_ip
         if private_ip is not None:
             self.private_ip = private_ip
+        if ipv6 is not None:
+            self.ipv6 = ipv6
         if group_name is not None:
             self.group_name = group_name
         if os_bit is not None:
@@ -158,7 +165,7 @@ class WtpProtectHostResponseInfo:
     def host_id(self):
         """Gets the host_id of this WtpProtectHostResponseInfo.
 
-        云服务器ID
+        主机ID
 
         :return: The host_id of this WtpProtectHostResponseInfo.
         :rtype: str
@@ -169,7 +176,7 @@ class WtpProtectHostResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this WtpProtectHostResponseInfo.
 
-        云服务器ID
+        主机ID
 
         :param host_id: The host_id of this WtpProtectHostResponseInfo.
         :type host_id: str
@@ -219,6 +226,28 @@ class WtpProtectHostResponseInfo:
         :type private_ip: str
         """
         self._private_ip = private_ip
+
+    @property
+    def ipv6(self):
+        """Gets the ipv6 of this WtpProtectHostResponseInfo.
+
+        私有IPv6地址
+
+        :return: The ipv6 of this WtpProtectHostResponseInfo.
+        :rtype: str
+        """
+        return self._ipv6
+
+    @ipv6.setter
+    def ipv6(self, ipv6):
+        """Sets the ipv6 of this WtpProtectHostResponseInfo.
+
+        私有IPv6地址
+
+        :param ipv6: The ipv6 of this WtpProtectHostResponseInfo.
+        :type ipv6: str
+        """
+        self._ipv6 = ipv6
 
     @property
     def group_name(self):
@@ -378,7 +407,7 @@ class WtpProtectHostResponseInfo:
     def last_detect_time(self):
         """Gets the last_detect_time of this WtpProtectHostResponseInfo.
 
-        最近检测时间
+        最近检测时间(ms)
 
         :return: The last_detect_time of this WtpProtectHostResponseInfo.
         :rtype: int
@@ -389,7 +418,7 @@ class WtpProtectHostResponseInfo:
     def last_detect_time(self, last_detect_time):
         """Sets the last_detect_time of this WtpProtectHostResponseInfo.
 
-        最近检测时间
+        最近检测时间(ms)
 
         :param last_detect_time: The last_detect_time of this WtpProtectHostResponseInfo.
         :type last_detect_time: int

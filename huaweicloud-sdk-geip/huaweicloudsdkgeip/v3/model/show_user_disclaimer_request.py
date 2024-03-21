@@ -29,7 +29,7 @@ class ShowUserDisclaimerRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         """
         
@@ -45,8 +45,6 @@ class ShowUserDisclaimerRequest:
     def fields(self):
         """Gets the fields of this ShowUserDisclaimerRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ShowUserDisclaimerRequest.
         :rtype: list[str]
         """
@@ -55,8 +53,6 @@ class ShowUserDisclaimerRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ShowUserDisclaimerRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ShowUserDisclaimerRequest.
         :type fields: list[str]

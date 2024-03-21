@@ -73,51 +73,51 @@ class CountGlobalEipsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param internet_bandwidth_id: 根据全域公网带宽的ID过滤
+        :param internet_bandwidth_id: 
         :type internet_bandwidth_id: list[str]
-        :param name: 根据名称过滤
+        :param name: 
         :type name: list[str]
-        :param name_like: 根据名称模糊匹配
+        :param name_like: 
         :type name_like: str
-        :param access_site: 根据接入点过滤
+        :param access_site: 
         :type access_site: list[str]
-        :param geip_pool_name: 根据全域弹性公网IP池名称过滤
+        :param geip_pool_name: 
         :type geip_pool_name: list[str]
-        :param isp: 根据运营商线路过滤
+        :param isp: 
         :type isp: list[str]
-        :param ip_version: 根据IP版本过滤
+        :param ip_version: 
         :type ip_version: list[int]
-        :param ip_address: 根据ip地址过滤
+        :param ip_address: 
         :type ip_address: list[str]
-        :param ipv6_address: 根据ipv6地址过滤
+        :param ipv6_address: 
         :type ipv6_address: list[str]
-        :param freezen: 根据是否冻结过滤
+        :param freezen: 
         :type freezen: list[bool]
-        :param polluted: 根据是否污染过滤
+        :param polluted: 
         :type polluted: list[bool]
-        :param internet_bandwidth_is_null: 根据是否绑定全域公网带宽过滤
+        :param internet_bandwidth_is_null: 
         :type internet_bandwidth_is_null: list[bool]
-        :param gcb_bandwidth_is_null: 根据是否绑定骨干带宽过滤
+        :param gcb_bandwidth_is_null: 
         :type gcb_bandwidth_is_null: list[bool]
-        :param status: 根据资源状态过滤
+        :param status: 
         :type status: list[str]
-        :param associate_instance_info_region: 根据绑定实例所属的局点过滤
+        :param associate_instance_info_region: 
         :type associate_instance_info_region: list[str]
-        :param associate_instance_info_public_border_group: 根据绑定实例所属的边缘信息过滤
+        :param associate_instance_info_public_border_group: 
         :type associate_instance_info_public_border_group: list[str]
-        :param associate_instance_info_instance_site: 根据绑定实例所在的站点过滤
+        :param associate_instance_info_instance_site: 
         :type associate_instance_info_instance_site: list[str]
-        :param associate_instance_info_instance_type: 根据绑定实例的类型过滤
+        :param associate_instance_info_instance_type: 
         :type associate_instance_info_instance_type: list[str]
-        :param associate_instance_info_instance_id: 根据绑定实例的ID过滤
+        :param associate_instance_info_instance_id: 
         :type associate_instance_info_instance_id: list[str]
-        :param associate_instance_info_project_id: query by associate_instance_info.project_id
+        :param associate_instance_info_project_id: 
         :type associate_instance_info_project_id: list[str]
-        :param enterprise_project_id: 根据企业项目ID过滤
+        :param enterprise_project_id: 
         :type enterprise_project_id: list[str]
-        :param tags: 根据标签过滤
+        :param tags: 
         :type tags: list[str]
         """
         
@@ -199,8 +199,6 @@ class CountGlobalEipsRequest:
     def id(self):
         """Gets the id of this CountGlobalEipsRequest.
 
-        根据ID过滤
-
         :return: The id of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -209,8 +207,6 @@ class CountGlobalEipsRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this CountGlobalEipsRequest.
-
-        根据ID过滤
 
         :param id: The id of this CountGlobalEipsRequest.
         :type id: list[str]
@@ -221,8 +217,6 @@ class CountGlobalEipsRequest:
     def internet_bandwidth_id(self):
         """Gets the internet_bandwidth_id of this CountGlobalEipsRequest.
 
-        根据全域公网带宽的ID过滤
-
         :return: The internet_bandwidth_id of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -231,8 +225,6 @@ class CountGlobalEipsRequest:
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
         """Sets the internet_bandwidth_id of this CountGlobalEipsRequest.
-
-        根据全域公网带宽的ID过滤
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this CountGlobalEipsRequest.
         :type internet_bandwidth_id: list[str]
@@ -243,8 +235,6 @@ class CountGlobalEipsRequest:
     def name(self):
         """Gets the name of this CountGlobalEipsRequest.
 
-        根据名称过滤
-
         :return: The name of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -253,8 +243,6 @@ class CountGlobalEipsRequest:
     @name.setter
     def name(self, name):
         """Sets the name of this CountGlobalEipsRequest.
-
-        根据名称过滤
 
         :param name: The name of this CountGlobalEipsRequest.
         :type name: list[str]
@@ -265,8 +253,6 @@ class CountGlobalEipsRequest:
     def name_like(self):
         """Gets the name_like of this CountGlobalEipsRequest.
 
-        根据名称模糊匹配
-
         :return: The name_like of this CountGlobalEipsRequest.
         :rtype: str
         """
@@ -275,8 +261,6 @@ class CountGlobalEipsRequest:
     @name_like.setter
     def name_like(self, name_like):
         """Sets the name_like of this CountGlobalEipsRequest.
-
-        根据名称模糊匹配
 
         :param name_like: The name_like of this CountGlobalEipsRequest.
         :type name_like: str
@@ -287,8 +271,6 @@ class CountGlobalEipsRequest:
     def access_site(self):
         """Gets the access_site of this CountGlobalEipsRequest.
 
-        根据接入点过滤
-
         :return: The access_site of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -297,8 +279,6 @@ class CountGlobalEipsRequest:
     @access_site.setter
     def access_site(self, access_site):
         """Sets the access_site of this CountGlobalEipsRequest.
-
-        根据接入点过滤
 
         :param access_site: The access_site of this CountGlobalEipsRequest.
         :type access_site: list[str]
@@ -309,8 +289,6 @@ class CountGlobalEipsRequest:
     def geip_pool_name(self):
         """Gets the geip_pool_name of this CountGlobalEipsRequest.
 
-        根据全域弹性公网IP池名称过滤
-
         :return: The geip_pool_name of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -319,8 +297,6 @@ class CountGlobalEipsRequest:
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
         """Sets the geip_pool_name of this CountGlobalEipsRequest.
-
-        根据全域弹性公网IP池名称过滤
 
         :param geip_pool_name: The geip_pool_name of this CountGlobalEipsRequest.
         :type geip_pool_name: list[str]
@@ -331,8 +307,6 @@ class CountGlobalEipsRequest:
     def isp(self):
         """Gets the isp of this CountGlobalEipsRequest.
 
-        根据运营商线路过滤
-
         :return: The isp of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -341,8 +315,6 @@ class CountGlobalEipsRequest:
     @isp.setter
     def isp(self, isp):
         """Sets the isp of this CountGlobalEipsRequest.
-
-        根据运营商线路过滤
 
         :param isp: The isp of this CountGlobalEipsRequest.
         :type isp: list[str]
@@ -353,8 +325,6 @@ class CountGlobalEipsRequest:
     def ip_version(self):
         """Gets the ip_version of this CountGlobalEipsRequest.
 
-        根据IP版本过滤
-
         :return: The ip_version of this CountGlobalEipsRequest.
         :rtype: list[int]
         """
@@ -363,8 +333,6 @@ class CountGlobalEipsRequest:
     @ip_version.setter
     def ip_version(self, ip_version):
         """Sets the ip_version of this CountGlobalEipsRequest.
-
-        根据IP版本过滤
 
         :param ip_version: The ip_version of this CountGlobalEipsRequest.
         :type ip_version: list[int]
@@ -375,8 +343,6 @@ class CountGlobalEipsRequest:
     def ip_address(self):
         """Gets the ip_address of this CountGlobalEipsRequest.
 
-        根据ip地址过滤
-
         :return: The ip_address of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -385,8 +351,6 @@ class CountGlobalEipsRequest:
     @ip_address.setter
     def ip_address(self, ip_address):
         """Sets the ip_address of this CountGlobalEipsRequest.
-
-        根据ip地址过滤
 
         :param ip_address: The ip_address of this CountGlobalEipsRequest.
         :type ip_address: list[str]
@@ -397,8 +361,6 @@ class CountGlobalEipsRequest:
     def ipv6_address(self):
         """Gets the ipv6_address of this CountGlobalEipsRequest.
 
-        根据ipv6地址过滤
-
         :return: The ipv6_address of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -407,8 +369,6 @@ class CountGlobalEipsRequest:
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
         """Sets the ipv6_address of this CountGlobalEipsRequest.
-
-        根据ipv6地址过滤
 
         :param ipv6_address: The ipv6_address of this CountGlobalEipsRequest.
         :type ipv6_address: list[str]
@@ -419,8 +379,6 @@ class CountGlobalEipsRequest:
     def freezen(self):
         """Gets the freezen of this CountGlobalEipsRequest.
 
-        根据是否冻结过滤
-
         :return: The freezen of this CountGlobalEipsRequest.
         :rtype: list[bool]
         """
@@ -429,8 +387,6 @@ class CountGlobalEipsRequest:
     @freezen.setter
     def freezen(self, freezen):
         """Sets the freezen of this CountGlobalEipsRequest.
-
-        根据是否冻结过滤
 
         :param freezen: The freezen of this CountGlobalEipsRequest.
         :type freezen: list[bool]
@@ -441,8 +397,6 @@ class CountGlobalEipsRequest:
     def polluted(self):
         """Gets the polluted of this CountGlobalEipsRequest.
 
-        根据是否污染过滤
-
         :return: The polluted of this CountGlobalEipsRequest.
         :rtype: list[bool]
         """
@@ -451,8 +405,6 @@ class CountGlobalEipsRequest:
     @polluted.setter
     def polluted(self, polluted):
         """Sets the polluted of this CountGlobalEipsRequest.
-
-        根据是否污染过滤
 
         :param polluted: The polluted of this CountGlobalEipsRequest.
         :type polluted: list[bool]
@@ -463,8 +415,6 @@ class CountGlobalEipsRequest:
     def internet_bandwidth_is_null(self):
         """Gets the internet_bandwidth_is_null of this CountGlobalEipsRequest.
 
-        根据是否绑定全域公网带宽过滤
-
         :return: The internet_bandwidth_is_null of this CountGlobalEipsRequest.
         :rtype: list[bool]
         """
@@ -473,8 +423,6 @@ class CountGlobalEipsRequest:
     @internet_bandwidth_is_null.setter
     def internet_bandwidth_is_null(self, internet_bandwidth_is_null):
         """Sets the internet_bandwidth_is_null of this CountGlobalEipsRequest.
-
-        根据是否绑定全域公网带宽过滤
 
         :param internet_bandwidth_is_null: The internet_bandwidth_is_null of this CountGlobalEipsRequest.
         :type internet_bandwidth_is_null: list[bool]
@@ -485,8 +433,6 @@ class CountGlobalEipsRequest:
     def gcb_bandwidth_is_null(self):
         """Gets the gcb_bandwidth_is_null of this CountGlobalEipsRequest.
 
-        根据是否绑定骨干带宽过滤
-
         :return: The gcb_bandwidth_is_null of this CountGlobalEipsRequest.
         :rtype: list[bool]
         """
@@ -495,8 +441,6 @@ class CountGlobalEipsRequest:
     @gcb_bandwidth_is_null.setter
     def gcb_bandwidth_is_null(self, gcb_bandwidth_is_null):
         """Sets the gcb_bandwidth_is_null of this CountGlobalEipsRequest.
-
-        根据是否绑定骨干带宽过滤
 
         :param gcb_bandwidth_is_null: The gcb_bandwidth_is_null of this CountGlobalEipsRequest.
         :type gcb_bandwidth_is_null: list[bool]
@@ -507,8 +451,6 @@ class CountGlobalEipsRequest:
     def status(self):
         """Gets the status of this CountGlobalEipsRequest.
 
-        根据资源状态过滤
-
         :return: The status of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -517,8 +459,6 @@ class CountGlobalEipsRequest:
     @status.setter
     def status(self, status):
         """Sets the status of this CountGlobalEipsRequest.
-
-        根据资源状态过滤
 
         :param status: The status of this CountGlobalEipsRequest.
         :type status: list[str]
@@ -529,8 +469,6 @@ class CountGlobalEipsRequest:
     def associate_instance_info_region(self):
         """Gets the associate_instance_info_region of this CountGlobalEipsRequest.
 
-        根据绑定实例所属的局点过滤
-
         :return: The associate_instance_info_region of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -539,8 +477,6 @@ class CountGlobalEipsRequest:
     @associate_instance_info_region.setter
     def associate_instance_info_region(self, associate_instance_info_region):
         """Sets the associate_instance_info_region of this CountGlobalEipsRequest.
-
-        根据绑定实例所属的局点过滤
 
         :param associate_instance_info_region: The associate_instance_info_region of this CountGlobalEipsRequest.
         :type associate_instance_info_region: list[str]
@@ -551,8 +487,6 @@ class CountGlobalEipsRequest:
     def associate_instance_info_public_border_group(self):
         """Gets the associate_instance_info_public_border_group of this CountGlobalEipsRequest.
 
-        根据绑定实例所属的边缘信息过滤
-
         :return: The associate_instance_info_public_border_group of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -561,8 +495,6 @@ class CountGlobalEipsRequest:
     @associate_instance_info_public_border_group.setter
     def associate_instance_info_public_border_group(self, associate_instance_info_public_border_group):
         """Sets the associate_instance_info_public_border_group of this CountGlobalEipsRequest.
-
-        根据绑定实例所属的边缘信息过滤
 
         :param associate_instance_info_public_border_group: The associate_instance_info_public_border_group of this CountGlobalEipsRequest.
         :type associate_instance_info_public_border_group: list[str]
@@ -573,8 +505,6 @@ class CountGlobalEipsRequest:
     def associate_instance_info_instance_site(self):
         """Gets the associate_instance_info_instance_site of this CountGlobalEipsRequest.
 
-        根据绑定实例所在的站点过滤
-
         :return: The associate_instance_info_instance_site of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -583,8 +513,6 @@ class CountGlobalEipsRequest:
     @associate_instance_info_instance_site.setter
     def associate_instance_info_instance_site(self, associate_instance_info_instance_site):
         """Sets the associate_instance_info_instance_site of this CountGlobalEipsRequest.
-
-        根据绑定实例所在的站点过滤
 
         :param associate_instance_info_instance_site: The associate_instance_info_instance_site of this CountGlobalEipsRequest.
         :type associate_instance_info_instance_site: list[str]
@@ -595,8 +523,6 @@ class CountGlobalEipsRequest:
     def associate_instance_info_instance_type(self):
         """Gets the associate_instance_info_instance_type of this CountGlobalEipsRequest.
 
-        根据绑定实例的类型过滤
-
         :return: The associate_instance_info_instance_type of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -605,8 +531,6 @@ class CountGlobalEipsRequest:
     @associate_instance_info_instance_type.setter
     def associate_instance_info_instance_type(self, associate_instance_info_instance_type):
         """Sets the associate_instance_info_instance_type of this CountGlobalEipsRequest.
-
-        根据绑定实例的类型过滤
 
         :param associate_instance_info_instance_type: The associate_instance_info_instance_type of this CountGlobalEipsRequest.
         :type associate_instance_info_instance_type: list[str]
@@ -617,8 +541,6 @@ class CountGlobalEipsRequest:
     def associate_instance_info_instance_id(self):
         """Gets the associate_instance_info_instance_id of this CountGlobalEipsRequest.
 
-        根据绑定实例的ID过滤
-
         :return: The associate_instance_info_instance_id of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -627,8 +549,6 @@ class CountGlobalEipsRequest:
     @associate_instance_info_instance_id.setter
     def associate_instance_info_instance_id(self, associate_instance_info_instance_id):
         """Sets the associate_instance_info_instance_id of this CountGlobalEipsRequest.
-
-        根据绑定实例的ID过滤
 
         :param associate_instance_info_instance_id: The associate_instance_info_instance_id of this CountGlobalEipsRequest.
         :type associate_instance_info_instance_id: list[str]
@@ -639,8 +559,6 @@ class CountGlobalEipsRequest:
     def associate_instance_info_project_id(self):
         """Gets the associate_instance_info_project_id of this CountGlobalEipsRequest.
 
-        query by associate_instance_info.project_id
-
         :return: The associate_instance_info_project_id of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -649,8 +567,6 @@ class CountGlobalEipsRequest:
     @associate_instance_info_project_id.setter
     def associate_instance_info_project_id(self, associate_instance_info_project_id):
         """Sets the associate_instance_info_project_id of this CountGlobalEipsRequest.
-
-        query by associate_instance_info.project_id
 
         :param associate_instance_info_project_id: The associate_instance_info_project_id of this CountGlobalEipsRequest.
         :type associate_instance_info_project_id: list[str]
@@ -661,8 +577,6 @@ class CountGlobalEipsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CountGlobalEipsRequest.
 
-        根据企业项目ID过滤
-
         :return: The enterprise_project_id of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -671,8 +585,6 @@ class CountGlobalEipsRequest:
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CountGlobalEipsRequest.
-
-        根据企业项目ID过滤
 
         :param enterprise_project_id: The enterprise_project_id of this CountGlobalEipsRequest.
         :type enterprise_project_id: list[str]
@@ -683,8 +595,6 @@ class CountGlobalEipsRequest:
     def tags(self):
         """Gets the tags of this CountGlobalEipsRequest.
 
-        根据标签过滤
-
         :return: The tags of this CountGlobalEipsRequest.
         :rtype: list[str]
         """
@@ -693,8 +603,6 @@ class CountGlobalEipsRequest:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this CountGlobalEipsRequest.
-
-        根据标签过滤
 
         :param tags: The tags of this CountGlobalEipsRequest.
         :type tags: list[str]

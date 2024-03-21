@@ -102,9 +102,9 @@ class HssAsyncClient(Client):
         return http_info
 
     def associate_policy_group_async(self, request):
-        """部署策略
+        """部署策略组
 
-        部署策略
+        部署策略组
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -766,6 +766,75 @@ class HssAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_quotas_order_async(self, request):
+        """HSS服务创建订单订购配额
+
+        HSS服务创建订单订购配额，只支持包周期计费模式
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateQuotasOrder
+        :type request: :class:`huaweicloudsdkhss.v5.CreateQuotasOrderRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.CreateQuotasOrderResponse`
+        """
+        http_info = self._create_quotas_order_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_quotas_order_async_invoker(self, request):
+        http_info = self._create_quotas_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_quotas_order_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/quotas/orders",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQuotasOrderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
 
         form_params = {}
 
@@ -2131,6 +2200,8 @@ class HssAsyncClient(Client):
             query_params.append(('handle_status', local_var_params['handle_status']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'repair_priority' in local_var_params:
+            query_params.append(('repair_priority', local_var_params['repair_priority']))
 
         header_params = {}
 
@@ -2465,12 +2536,18 @@ class HssAsyncClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'last_days' in local_var_params:
-            query_params.append(('last_days', local_var_params['last_days']))
+        if 'file_path' in local_var_params:
+            query_params.append(('file_path', local_var_params['file_path']))
         if 'host_name' in local_var_params:
             query_params.append(('host_name', local_var_params['host_name']))
-        if 'isolation_status' in local_var_params:
-            query_params.append(('isolation_status', local_var_params['isolation_status']))
+        if 'private_ip' in local_var_params:
+            query_params.append(('private_ip', local_var_params['private_ip']))
+        if 'public_ip' in local_var_params:
+            query_params.append(('public_ip', local_var_params['public_ip']))
+        if 'file_hash' in local_var_params:
+            query_params.append(('file_hash', local_var_params['file_hash']))
+        if 'asset_value' in local_var_params:
+            query_params.append(('asset_value', local_var_params['asset_value']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2775,6 +2852,8 @@ class HssAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'container_mode' in local_var_params:
+            query_params.append(('container_mode', local_var_params['container_mode']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -3196,9 +3275,9 @@ class HssAsyncClient(Client):
         return http_info
 
     def list_protection_policy_async(self, request):
-        """查询防护策略列表
+        """查询勒索病毒的防护策略列表
 
-        查询防护策略列表
+        查询勒索病毒的防护策略列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3711,6 +3790,8 @@ class HssAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'last_days' in local_var_params:
@@ -3736,8 +3817,6 @@ class HssAsyncClient(Client):
             query_params.append(('handle_status', local_var_params['handle_status']))
         if 'severity' in local_var_params:
             query_params.append(('severity', local_var_params['severity']))
-        if 'category' in local_var_params:
-            query_params.append(('category', local_var_params['category']))
         if 'begin_time' in local_var_params:
             query_params.append(('begin_time', local_var_params['begin_time']))
         if 'end_time' in local_var_params:
@@ -4198,6 +4277,8 @@ class HssAsyncClient(Client):
             query_params.append(('severity_level', local_var_params['severity_level']))
         if 'is_affect_business' in local_var_params:
             query_params.append(('is_affect_business', local_var_params['is_affect_business']))
+        if 'repair_priority' in local_var_params:
+            query_params.append(('repair_priority', local_var_params['repair_priority']))
 
         header_params = {}
 
@@ -5204,6 +5285,75 @@ class HssAsyncClient(Client):
 
         return http_info
 
+    def show_productdata_offering_infos_async(self, request):
+        """查询产商品信息
+
+        查询产商品信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProductdataOfferingInfos
+        :type request: :class:`huaweicloudsdkhss.v5.ShowProductdataOfferingInfosRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ShowProductdataOfferingInfosResponse`
+        """
+        http_info = self._show_productdata_offering_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_productdata_offering_infos_async_invoker(self, request):
+        http_info = self._show_productdata_offering_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_productdata_offering_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/product/productdata/offering-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProductdataOfferingInfosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'site_code' in local_var_params:
+            query_params.append(('site_code', local_var_params['site_code']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_resource_quotas_async(self, request):
         """查询配额信息
 
@@ -5757,9 +5907,9 @@ class HssAsyncClient(Client):
         return http_info
 
     def update_protection_policy_async(self, request):
-        """修改防护策略
+        """修改勒索防护策略
 
-        修改防护策略
+        修改勒索防护策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 

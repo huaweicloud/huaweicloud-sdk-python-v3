@@ -35,7 +35,7 @@ class IsolatedFileRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: 主机ID
         :type host_id: str
         :param file_hash: 文件哈希
         :type file_hash: str
@@ -66,7 +66,7 @@ class IsolatedFileRequestInfo:
     def host_id(self):
         """Gets the host_id of this IsolatedFileRequestInfo.
 
-        服务器ID
+        主机ID
 
         :return: The host_id of this IsolatedFileRequestInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class IsolatedFileRequestInfo:
     def host_id(self, host_id):
         """Sets the host_id of this IsolatedFileRequestInfo.
 
-        服务器ID
+        主机ID
 
         :param host_id: The host_id of this IsolatedFileRequestInfo.
         :type host_id: str

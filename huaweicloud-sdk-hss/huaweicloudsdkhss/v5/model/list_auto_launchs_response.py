@@ -32,7 +32,7 @@ class ListAutoLaunchsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: 自启动项总数
         :type total_num: int
         :param data_list: 自启动项列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AutoLauchResponseInfo`]
@@ -53,7 +53,7 @@ class ListAutoLaunchsResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListAutoLaunchsResponse.
 
-        总数
+        自启动项总数
 
         :return: The total_num of this ListAutoLaunchsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAutoLaunchsResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListAutoLaunchsResponse.
 
-        总数
+        自启动项总数
 
         :param total_num: The total_num of this ListAutoLaunchsResponse.
         :type total_num: int

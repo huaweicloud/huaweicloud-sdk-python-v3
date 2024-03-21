@@ -41,19 +41,19 @@ class ListProcessesHostRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param host_name: 主机名称
         :type host_name: str
         :param host_ip: 主机ip
         :type host_ip: str
-        :param path: 进程路径
+        :param path: 进程可执行文件路径
         :type path: str
         :param category: 类型，默认为host，包含如下： - host：主机 - container：容器
         :type category: str
-        :param limit: 默认10
+        :param limit: 每页显示数量，默认10
         :type limit: int
-        :param offset: 默认是0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         """
         
@@ -87,7 +87,7 @@ class ListProcessesHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListProcessesHostRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListProcessesHostRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListProcessesHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListProcessesHostRequest.
 
-        企业项目
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListProcessesHostRequest.
         :type enterprise_project_id: str
@@ -153,7 +153,7 @@ class ListProcessesHostRequest:
     def path(self):
         """Gets the path of this ListProcessesHostRequest.
 
-        进程路径
+        进程可执行文件路径
 
         :return: The path of this ListProcessesHostRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListProcessesHostRequest:
     def path(self, path):
         """Sets the path of this ListProcessesHostRequest.
 
-        进程路径
+        进程可执行文件路径
 
         :param path: The path of this ListProcessesHostRequest.
         :type path: str
@@ -197,7 +197,7 @@ class ListProcessesHostRequest:
     def limit(self):
         """Gets the limit of this ListProcessesHostRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :return: The limit of this ListProcessesHostRequest.
         :rtype: int
@@ -208,7 +208,7 @@ class ListProcessesHostRequest:
     def limit(self, limit):
         """Sets the limit of this ListProcessesHostRequest.
 
-        默认10
+        每页显示数量，默认10
 
         :param limit: The limit of this ListProcessesHostRequest.
         :type limit: int
@@ -219,7 +219,7 @@ class ListProcessesHostRequest:
     def offset(self):
         """Gets the offset of this ListProcessesHostRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListProcessesHostRequest.
         :rtype: int
@@ -230,7 +230,7 @@ class ListProcessesHostRequest:
     def offset(self, offset):
         """Sets the offset of this ListProcessesHostRequest.
 
-        默认是0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListProcessesHostRequest.
         :type offset: int

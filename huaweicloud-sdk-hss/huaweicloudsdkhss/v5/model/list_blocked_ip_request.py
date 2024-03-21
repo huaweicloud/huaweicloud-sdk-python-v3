@@ -43,9 +43,9 @@ class ListBlockedIpRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param last_days: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥
         :type last_days: int
@@ -55,7 +55,7 @@ class ListBlockedIpRequest:
         :type src_ip: str
         :param intercept_status: 拦截状态，包含如下:   - intercepted : 已拦截   - canceled : 已解除拦截   - cancelling : 待解除拦截
         :type intercept_status: str
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
@@ -93,7 +93,7 @@ class ListBlockedIpRequest:
     def region(self):
         """Gets the region of this ListBlockedIpRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ListBlockedIpRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListBlockedIpRequest:
     def region(self, region):
         """Sets the region of this ListBlockedIpRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ListBlockedIpRequest.
         :type region: str
@@ -115,7 +115,7 @@ class ListBlockedIpRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListBlockedIpRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListBlockedIpRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListBlockedIpRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListBlockedIpRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListBlockedIpRequest.
         :type enterprise_project_id: str
@@ -225,7 +225,7 @@ class ListBlockedIpRequest:
     def offset(self):
         """Gets the offset of this ListBlockedIpRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字
 
         :return: The offset of this ListBlockedIpRequest.
         :rtype: int
@@ -236,7 +236,7 @@ class ListBlockedIpRequest:
     def offset(self, offset):
         """Sets the offset of this ListBlockedIpRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字
 
         :param offset: The offset of this ListBlockedIpRequest.
         :type offset: int

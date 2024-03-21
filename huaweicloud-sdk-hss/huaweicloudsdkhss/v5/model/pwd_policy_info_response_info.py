@@ -20,6 +20,8 @@ class PwdPolicyInfoResponseInfo:
         'host_id': 'str',
         'host_name': 'str',
         'host_ip': 'str',
+        'private_ip': 'str',
+        'public_ip': 'str',
         'min_length': 'bool',
         'uppercase_letter': 'bool',
         'lowercase_letter': 'bool',
@@ -32,6 +34,8 @@ class PwdPolicyInfoResponseInfo:
         'host_id': 'host_id',
         'host_name': 'host_name',
         'host_ip': 'host_ip',
+        'private_ip': 'private_ip',
+        'public_ip': 'public_ip',
         'min_length': 'min_length',
         'uppercase_letter': 'uppercase_letter',
         'lowercase_letter': 'lowercase_letter',
@@ -40,26 +44,30 @@ class PwdPolicyInfoResponseInfo:
         'suggestion': 'suggestion'
     }
 
-    def __init__(self, host_id=None, host_name=None, host_ip=None, min_length=None, uppercase_letter=None, lowercase_letter=None, number=None, special_character=None, suggestion=None):
+    def __init__(self, host_id=None, host_name=None, host_ip=None, private_ip=None, public_ip=None, min_length=None, uppercase_letter=None, lowercase_letter=None, number=None, special_character=None, suggestion=None):
         """PwdPolicyInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器id(鼠标在“服务器名称”放置后上浮显示)
+        :param host_id: 主机id(鼠标在“服务器名称”放置后上浮显示)
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_ip: 服务器IP
+        :param host_ip: 服务器IP（私有IP），为兼容用户使用，不删除此字段
         :type host_ip: str
-        :param min_length: 口令最小长度
+        :param private_ip: 服务器私有IP
+        :type private_ip: str
+        :param public_ip: 服务器公网IP
+        :type public_ip: str
+        :param min_length: 口令最小长度的设置是否符合要求，符合为true，不符合为false
         :type min_length: bool
-        :param uppercase_letter: 大写字母
+        :param uppercase_letter: 大写字母的设置是否符合要求，符合为true，不符合为false
         :type uppercase_letter: bool
-        :param lowercase_letter: 小写字母
+        :param lowercase_letter: 小写字母的设置是否符合要求，符合为true，不符合为false
         :type lowercase_letter: bool
-        :param number: 数字
+        :param number: 数字的设置是否符合要求，符合为true，不符合为false
         :type number: bool
-        :param special_character: 特殊字符
+        :param special_character: 特殊字符的设置是否符合要求，符合为true，不符合为false
         :type special_character: bool
         :param suggestion: 修改建议
         :type suggestion: str
@@ -70,6 +78,8 @@ class PwdPolicyInfoResponseInfo:
         self._host_id = None
         self._host_name = None
         self._host_ip = None
+        self._private_ip = None
+        self._public_ip = None
         self._min_length = None
         self._uppercase_letter = None
         self._lowercase_letter = None
@@ -84,6 +94,10 @@ class PwdPolicyInfoResponseInfo:
             self.host_name = host_name
         if host_ip is not None:
             self.host_ip = host_ip
+        if private_ip is not None:
+            self.private_ip = private_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
         if min_length is not None:
             self.min_length = min_length
         if uppercase_letter is not None:
@@ -101,7 +115,7 @@ class PwdPolicyInfoResponseInfo:
     def host_id(self):
         """Gets the host_id of this PwdPolicyInfoResponseInfo.
 
-        服务器id(鼠标在“服务器名称”放置后上浮显示)
+        主机id(鼠标在“服务器名称”放置后上浮显示)
 
         :return: The host_id of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -112,7 +126,7 @@ class PwdPolicyInfoResponseInfo:
     def host_id(self, host_id):
         """Sets the host_id of this PwdPolicyInfoResponseInfo.
 
-        服务器id(鼠标在“服务器名称”放置后上浮显示)
+        主机id(鼠标在“服务器名称”放置后上浮显示)
 
         :param host_id: The host_id of this PwdPolicyInfoResponseInfo.
         :type host_id: str
@@ -145,7 +159,7 @@ class PwdPolicyInfoResponseInfo:
     def host_ip(self):
         """Gets the host_ip of this PwdPolicyInfoResponseInfo.
 
-        服务器IP
+        服务器IP（私有IP），为兼容用户使用，不删除此字段
 
         :return: The host_ip of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -156,7 +170,7 @@ class PwdPolicyInfoResponseInfo:
     def host_ip(self, host_ip):
         """Sets the host_ip of this PwdPolicyInfoResponseInfo.
 
-        服务器IP
+        服务器IP（私有IP），为兼容用户使用，不删除此字段
 
         :param host_ip: The host_ip of this PwdPolicyInfoResponseInfo.
         :type host_ip: str
@@ -164,10 +178,54 @@ class PwdPolicyInfoResponseInfo:
         self._host_ip = host_ip
 
     @property
+    def private_ip(self):
+        """Gets the private_ip of this PwdPolicyInfoResponseInfo.
+
+        服务器私有IP
+
+        :return: The private_ip of this PwdPolicyInfoResponseInfo.
+        :rtype: str
+        """
+        return self._private_ip
+
+    @private_ip.setter
+    def private_ip(self, private_ip):
+        """Sets the private_ip of this PwdPolicyInfoResponseInfo.
+
+        服务器私有IP
+
+        :param private_ip: The private_ip of this PwdPolicyInfoResponseInfo.
+        :type private_ip: str
+        """
+        self._private_ip = private_ip
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this PwdPolicyInfoResponseInfo.
+
+        服务器公网IP
+
+        :return: The public_ip of this PwdPolicyInfoResponseInfo.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this PwdPolicyInfoResponseInfo.
+
+        服务器公网IP
+
+        :param public_ip: The public_ip of this PwdPolicyInfoResponseInfo.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
+
+    @property
     def min_length(self):
         """Gets the min_length of this PwdPolicyInfoResponseInfo.
 
-        口令最小长度
+        口令最小长度的设置是否符合要求，符合为true，不符合为false
 
         :return: The min_length of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -178,7 +236,7 @@ class PwdPolicyInfoResponseInfo:
     def min_length(self, min_length):
         """Sets the min_length of this PwdPolicyInfoResponseInfo.
 
-        口令最小长度
+        口令最小长度的设置是否符合要求，符合为true，不符合为false
 
         :param min_length: The min_length of this PwdPolicyInfoResponseInfo.
         :type min_length: bool
@@ -189,7 +247,7 @@ class PwdPolicyInfoResponseInfo:
     def uppercase_letter(self):
         """Gets the uppercase_letter of this PwdPolicyInfoResponseInfo.
 
-        大写字母
+        大写字母的设置是否符合要求，符合为true，不符合为false
 
         :return: The uppercase_letter of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -200,7 +258,7 @@ class PwdPolicyInfoResponseInfo:
     def uppercase_letter(self, uppercase_letter):
         """Sets the uppercase_letter of this PwdPolicyInfoResponseInfo.
 
-        大写字母
+        大写字母的设置是否符合要求，符合为true，不符合为false
 
         :param uppercase_letter: The uppercase_letter of this PwdPolicyInfoResponseInfo.
         :type uppercase_letter: bool
@@ -211,7 +269,7 @@ class PwdPolicyInfoResponseInfo:
     def lowercase_letter(self):
         """Gets the lowercase_letter of this PwdPolicyInfoResponseInfo.
 
-        小写字母
+        小写字母的设置是否符合要求，符合为true，不符合为false
 
         :return: The lowercase_letter of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -222,7 +280,7 @@ class PwdPolicyInfoResponseInfo:
     def lowercase_letter(self, lowercase_letter):
         """Sets the lowercase_letter of this PwdPolicyInfoResponseInfo.
 
-        小写字母
+        小写字母的设置是否符合要求，符合为true，不符合为false
 
         :param lowercase_letter: The lowercase_letter of this PwdPolicyInfoResponseInfo.
         :type lowercase_letter: bool
@@ -233,7 +291,7 @@ class PwdPolicyInfoResponseInfo:
     def number(self):
         """Gets the number of this PwdPolicyInfoResponseInfo.
 
-        数字
+        数字的设置是否符合要求，符合为true，不符合为false
 
         :return: The number of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -244,7 +302,7 @@ class PwdPolicyInfoResponseInfo:
     def number(self, number):
         """Sets the number of this PwdPolicyInfoResponseInfo.
 
-        数字
+        数字的设置是否符合要求，符合为true，不符合为false
 
         :param number: The number of this PwdPolicyInfoResponseInfo.
         :type number: bool
@@ -255,7 +313,7 @@ class PwdPolicyInfoResponseInfo:
     def special_character(self):
         """Gets the special_character of this PwdPolicyInfoResponseInfo.
 
-        特殊字符
+        特殊字符的设置是否符合要求，符合为true，不符合为false
 
         :return: The special_character of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -266,7 +324,7 @@ class PwdPolicyInfoResponseInfo:
     def special_character(self, special_character):
         """Sets the special_character of this PwdPolicyInfoResponseInfo.
 
-        特殊字符
+        特殊字符的设置是否符合要求，符合为true，不符合为false
 
         :param special_character: The special_character of this PwdPolicyInfoResponseInfo.
         :type special_character: bool

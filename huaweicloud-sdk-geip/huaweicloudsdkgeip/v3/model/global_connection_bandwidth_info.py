@@ -39,15 +39,15 @@ class GlobalConnectionBandwidthInfo:
 
         The model defined in huaweicloud sdk
 
-        :param gcb_id: 骨干带宽id
+        :param gcb_id: 骨干带宽的ID
         :type gcb_id: str
-        :param size: 骨干带宽大小
+        :param size: 骨干带宽的大小
         :type size: int
         :param gcb_type: 骨干带宽类型（城域、区域和大区）
         :type gcb_type: str
-        :param admin_state: 骨干带宽状态，取值：NORMAL 正常、FREEZED 冻结
+        :param admin_state: - 功能说明：骨干带宽状态 - 取值范围：NORMAL 正常、FREEZED 冻结
         :type admin_state: str
-        :param sla_level: 网络服务等级。Pt - 铂金，Au - 金牌，Ag - 银牌，Cu - 铜牌
+        :param sla_level: - 功能说明：网络服务等级 - 取值范围：Pt - 铂金，Au - 金牌，Ag - 银牌，Cu - 铜牌
         :type sla_level: str
         :param dscp: 线路质量金银铜对应的DSCP值
         :type dscp: int
@@ -80,7 +80,7 @@ class GlobalConnectionBandwidthInfo:
     def gcb_id(self):
         """Gets the gcb_id of this GlobalConnectionBandwidthInfo.
 
-        骨干带宽id
+        骨干带宽的ID
 
         :return: The gcb_id of this GlobalConnectionBandwidthInfo.
         :rtype: str
@@ -91,7 +91,7 @@ class GlobalConnectionBandwidthInfo:
     def gcb_id(self, gcb_id):
         """Sets the gcb_id of this GlobalConnectionBandwidthInfo.
 
-        骨干带宽id
+        骨干带宽的ID
 
         :param gcb_id: The gcb_id of this GlobalConnectionBandwidthInfo.
         :type gcb_id: str
@@ -102,7 +102,7 @@ class GlobalConnectionBandwidthInfo:
     def size(self):
         """Gets the size of this GlobalConnectionBandwidthInfo.
 
-        骨干带宽大小
+        骨干带宽的大小
 
         :return: The size of this GlobalConnectionBandwidthInfo.
         :rtype: int
@@ -113,7 +113,7 @@ class GlobalConnectionBandwidthInfo:
     def size(self, size):
         """Sets the size of this GlobalConnectionBandwidthInfo.
 
-        骨干带宽大小
+        骨干带宽的大小
 
         :param size: The size of this GlobalConnectionBandwidthInfo.
         :type size: int
@@ -146,7 +146,7 @@ class GlobalConnectionBandwidthInfo:
     def admin_state(self):
         """Gets the admin_state of this GlobalConnectionBandwidthInfo.
 
-        骨干带宽状态，取值：NORMAL 正常、FREEZED 冻结
+        - 功能说明：骨干带宽状态 - 取值范围：NORMAL 正常、FREEZED 冻结
 
         :return: The admin_state of this GlobalConnectionBandwidthInfo.
         :rtype: str
@@ -157,7 +157,7 @@ class GlobalConnectionBandwidthInfo:
     def admin_state(self, admin_state):
         """Sets the admin_state of this GlobalConnectionBandwidthInfo.
 
-        骨干带宽状态，取值：NORMAL 正常、FREEZED 冻结
+        - 功能说明：骨干带宽状态 - 取值范围：NORMAL 正常、FREEZED 冻结
 
         :param admin_state: The admin_state of this GlobalConnectionBandwidthInfo.
         :type admin_state: str
@@ -168,7 +168,7 @@ class GlobalConnectionBandwidthInfo:
     def sla_level(self):
         """Gets the sla_level of this GlobalConnectionBandwidthInfo.
 
-        网络服务等级。Pt - 铂金，Au - 金牌，Ag - 银牌，Cu - 铜牌
+        - 功能说明：网络服务等级 - 取值范围：Pt - 铂金，Au - 金牌，Ag - 银牌，Cu - 铜牌
 
         :return: The sla_level of this GlobalConnectionBandwidthInfo.
         :rtype: str
@@ -179,7 +179,7 @@ class GlobalConnectionBandwidthInfo:
     def sla_level(self, sla_level):
         """Sets the sla_level of this GlobalConnectionBandwidthInfo.
 
-        网络服务等级。Pt - 铂金，Au - 金牌，Ag - 银牌，Cu - 铜牌
+        - 功能说明：网络服务等级 - 取值范围：Pt - 铂金，Au - 金牌，Ag - 银牌，Cu - 铜牌
 
         :param sla_level: The sla_level of this GlobalConnectionBandwidthInfo.
         :type sla_level: str

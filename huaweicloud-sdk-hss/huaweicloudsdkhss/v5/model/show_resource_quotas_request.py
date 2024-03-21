@@ -35,7 +35,7 @@ class ShowResourceQuotasRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
+        :param region: Region ID
         :type region: str
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
@@ -66,7 +66,7 @@ class ShowResourceQuotasRequest:
     def region(self):
         """Gets the region of this ShowResourceQuotasRequest.
 
-        region id
+        Region ID
 
         :return: The region of this ShowResourceQuotasRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ShowResourceQuotasRequest:
     def region(self, region):
         """Sets the region of this ShowResourceQuotasRequest.
 
-        region id
+        Region ID
 
         :param region: The region of this ShowResourceQuotasRequest.
         :type region: str

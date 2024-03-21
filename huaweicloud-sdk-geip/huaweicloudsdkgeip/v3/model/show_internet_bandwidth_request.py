@@ -31,9 +31,9 @@ class ShowInternetBandwidthRequest:
 
         The model defined in huaweicloud sdk
 
-        :param internet_bandwidth_id: 全域公网带宽的ID
+        :param internet_bandwidth_id: 
         :type internet_bandwidth_id: str
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
         """
         
@@ -51,8 +51,6 @@ class ShowInternetBandwidthRequest:
     def internet_bandwidth_id(self):
         """Gets the internet_bandwidth_id of this ShowInternetBandwidthRequest.
 
-        全域公网带宽的ID
-
         :return: The internet_bandwidth_id of this ShowInternetBandwidthRequest.
         :rtype: str
         """
@@ -61,8 +59,6 @@ class ShowInternetBandwidthRequest:
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
         """Sets the internet_bandwidth_id of this ShowInternetBandwidthRequest.
-
-        全域公网带宽的ID
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this ShowInternetBandwidthRequest.
         :type internet_bandwidth_id: str
@@ -73,8 +69,6 @@ class ShowInternetBandwidthRequest:
     def fields(self):
         """Gets the fields of this ShowInternetBandwidthRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ShowInternetBandwidthRequest.
         :rtype: list[str]
         """
@@ -83,8 +77,6 @@ class ShowInternetBandwidthRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ShowInternetBandwidthRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ShowInternetBandwidthRequest.
         :type fields: list[str]

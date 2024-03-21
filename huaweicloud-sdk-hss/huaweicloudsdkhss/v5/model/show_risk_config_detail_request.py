@@ -41,15 +41,15 @@ class ShowRiskConfigDetailRequest:
 
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param check_name: 基线名称
+        :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
-        :param standard: 标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        :param standard: 标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
         :type standard: str
         :param host_id: 主机ID，不赋值时，查租户所有主机
         :type host_id: str
         :param limit: 每页数量
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
         :type offset: int
         """
         
@@ -100,7 +100,7 @@ class ShowRiskConfigDetailRequest:
     def check_name(self):
         """Gets the check_name of this ShowRiskConfigDetailRequest.
 
-        基线名称
+        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
         :return: The check_name of this ShowRiskConfigDetailRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowRiskConfigDetailRequest:
     def check_name(self, check_name):
         """Sets the check_name of this ShowRiskConfigDetailRequest.
 
-        基线名称
+        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
         :param check_name: The check_name of this ShowRiskConfigDetailRequest.
         :type check_name: str
@@ -122,7 +122,7 @@ class ShowRiskConfigDetailRequest:
     def standard(self):
         """Gets the standard of this ShowRiskConfigDetailRequest.
 
-        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
         :return: The standard of this ShowRiskConfigDetailRequest.
         :rtype: str
@@ -133,7 +133,7 @@ class ShowRiskConfigDetailRequest:
     def standard(self, standard):
         """Sets the standard of this ShowRiskConfigDetailRequest.
 
-        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
+        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
         :param standard: The standard of this ShowRiskConfigDetailRequest.
         :type standard: str
@@ -188,7 +188,7 @@ class ShowRiskConfigDetailRequest:
     def offset(self):
         """Gets the offset of this ShowRiskConfigDetailRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
 
         :return: The offset of this ShowRiskConfigDetailRequest.
         :rtype: int
@@ -199,7 +199,7 @@ class ShowRiskConfigDetailRequest:
     def offset(self, offset):
         """Sets the offset of this ShowRiskConfigDetailRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。
 
         :param offset: The offset of this ShowRiskConfigDetailRequest.
         :type offset: int

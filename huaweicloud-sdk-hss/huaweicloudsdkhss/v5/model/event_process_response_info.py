@@ -28,6 +28,9 @@ class EventProcessResponseInfo:
         'process_gid': 'int',
         'process_egid': 'int',
         'process_euid': 'int',
+        'ancestor_process_path': 'str',
+        'ancestor_process_pid': 'int',
+        'ancestor_process_cmdline': 'str',
         'parent_process_name': 'str',
         'parent_process_path': 'str',
         'parent_process_pid': 'int',
@@ -67,6 +70,9 @@ class EventProcessResponseInfo:
         'process_gid': 'process_gid',
         'process_egid': 'process_egid',
         'process_euid': 'process_euid',
+        'ancestor_process_path': 'ancestor_process_path',
+        'ancestor_process_pid': 'ancestor_process_pid',
+        'ancestor_process_cmdline': 'ancestor_process_cmdline',
         'parent_process_name': 'parent_process_name',
         'parent_process_path': 'parent_process_path',
         'parent_process_pid': 'parent_process_pid',
@@ -94,7 +100,7 @@ class EventProcessResponseInfo:
         'process_hash': 'process_hash'
     }
 
-    def __init__(self, process_name=None, process_path=None, process_pid=None, process_uid=None, process_username=None, process_cmdline=None, process_filename=None, process_start_time=None, process_gid=None, process_egid=None, process_euid=None, parent_process_name=None, parent_process_path=None, parent_process_pid=None, parent_process_uid=None, parent_process_cmdline=None, parent_process_filename=None, parent_process_start_time=None, parent_process_gid=None, parent_process_egid=None, parent_process_euid=None, child_process_name=None, child_process_path=None, child_process_pid=None, child_process_uid=None, child_process_cmdline=None, child_process_filename=None, child_process_start_time=None, child_process_gid=None, child_process_egid=None, child_process_euid=None, virt_cmd=None, virt_process_name=None, escape_mode=None, escape_cmd=None, process_hash=None):
+    def __init__(self, process_name=None, process_path=None, process_pid=None, process_uid=None, process_username=None, process_cmdline=None, process_filename=None, process_start_time=None, process_gid=None, process_egid=None, process_euid=None, ancestor_process_path=None, ancestor_process_pid=None, ancestor_process_cmdline=None, parent_process_name=None, parent_process_path=None, parent_process_pid=None, parent_process_uid=None, parent_process_cmdline=None, parent_process_filename=None, parent_process_start_time=None, parent_process_gid=None, parent_process_egid=None, parent_process_euid=None, child_process_name=None, child_process_path=None, child_process_pid=None, child_process_uid=None, child_process_cmdline=None, child_process_filename=None, child_process_start_time=None, child_process_gid=None, child_process_egid=None, child_process_euid=None, virt_cmd=None, virt_process_name=None, escape_mode=None, escape_cmd=None, process_hash=None):
         """EventProcessResponseInfo
 
         The model defined in huaweicloud sdk
@@ -121,6 +127,12 @@ class EventProcessResponseInfo:
         :type process_egid: int
         :param process_euid: 进程有效用户ID
         :type process_euid: int
+        :param ancestor_process_path: 祖父进程文件路径
+        :type ancestor_process_path: str
+        :param ancestor_process_pid: 祖父进程id
+        :type ancestor_process_pid: int
+        :param ancestor_process_cmdline: 祖父进程文件命令行
+        :type ancestor_process_cmdline: str
         :param parent_process_name: 父进程名称
         :type parent_process_name: str
         :param parent_process_path: 父进程文件路径
@@ -186,6 +198,9 @@ class EventProcessResponseInfo:
         self._process_gid = None
         self._process_egid = None
         self._process_euid = None
+        self._ancestor_process_path = None
+        self._ancestor_process_pid = None
+        self._ancestor_process_cmdline = None
         self._parent_process_name = None
         self._parent_process_path = None
         self._parent_process_pid = None
@@ -235,6 +250,12 @@ class EventProcessResponseInfo:
             self.process_egid = process_egid
         if process_euid is not None:
             self.process_euid = process_euid
+        if ancestor_process_path is not None:
+            self.ancestor_process_path = ancestor_process_path
+        if ancestor_process_pid is not None:
+            self.ancestor_process_pid = ancestor_process_pid
+        if ancestor_process_cmdline is not None:
+            self.ancestor_process_cmdline = ancestor_process_cmdline
         if parent_process_name is not None:
             self.parent_process_name = parent_process_name
         if parent_process_path is not None:
@@ -527,6 +548,72 @@ class EventProcessResponseInfo:
         :type process_euid: int
         """
         self._process_euid = process_euid
+
+    @property
+    def ancestor_process_path(self):
+        """Gets the ancestor_process_path of this EventProcessResponseInfo.
+
+        祖父进程文件路径
+
+        :return: The ancestor_process_path of this EventProcessResponseInfo.
+        :rtype: str
+        """
+        return self._ancestor_process_path
+
+    @ancestor_process_path.setter
+    def ancestor_process_path(self, ancestor_process_path):
+        """Sets the ancestor_process_path of this EventProcessResponseInfo.
+
+        祖父进程文件路径
+
+        :param ancestor_process_path: The ancestor_process_path of this EventProcessResponseInfo.
+        :type ancestor_process_path: str
+        """
+        self._ancestor_process_path = ancestor_process_path
+
+    @property
+    def ancestor_process_pid(self):
+        """Gets the ancestor_process_pid of this EventProcessResponseInfo.
+
+        祖父进程id
+
+        :return: The ancestor_process_pid of this EventProcessResponseInfo.
+        :rtype: int
+        """
+        return self._ancestor_process_pid
+
+    @ancestor_process_pid.setter
+    def ancestor_process_pid(self, ancestor_process_pid):
+        """Sets the ancestor_process_pid of this EventProcessResponseInfo.
+
+        祖父进程id
+
+        :param ancestor_process_pid: The ancestor_process_pid of this EventProcessResponseInfo.
+        :type ancestor_process_pid: int
+        """
+        self._ancestor_process_pid = ancestor_process_pid
+
+    @property
+    def ancestor_process_cmdline(self):
+        """Gets the ancestor_process_cmdline of this EventProcessResponseInfo.
+
+        祖父进程文件命令行
+
+        :return: The ancestor_process_cmdline of this EventProcessResponseInfo.
+        :rtype: str
+        """
+        return self._ancestor_process_cmdline
+
+    @ancestor_process_cmdline.setter
+    def ancestor_process_cmdline(self, ancestor_process_cmdline):
+        """Sets the ancestor_process_cmdline of this EventProcessResponseInfo.
+
+        祖父进程文件命令行
+
+        :param ancestor_process_cmdline: The ancestor_process_cmdline of this EventProcessResponseInfo.
+        :type ancestor_process_cmdline: str
+        """
+        self._ancestor_process_cmdline = ancestor_process_cmdline
 
     @property
     def parent_process_name(self):

@@ -32,7 +32,7 @@ class ListProtectionPolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: 策略总数
         :type total_num: int
         :param data_list: 查询防护策略列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ProtectionPolicyInfo`]
@@ -53,7 +53,7 @@ class ListProtectionPolicyResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListProtectionPolicyResponse.
 
-        总数
+        策略总数
 
         :return: The total_num of this ListProtectionPolicyResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListProtectionPolicyResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListProtectionPolicyResponse.
 
-        总数
+        策略总数
 
         :param total_num: The total_num of this ListProtectionPolicyResponse.
         :type total_num: int

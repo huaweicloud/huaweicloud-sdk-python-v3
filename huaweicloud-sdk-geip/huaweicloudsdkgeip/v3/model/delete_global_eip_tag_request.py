@@ -31,9 +31,9 @@ class DeleteGlobalEipTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 全域弹性公网IP的id
+        :param resource_id: 
         :type resource_id: str
-        :param tag_key: 待删除标签的key
+        :param tag_key: 
         :type tag_key: str
         """
         
@@ -50,8 +50,6 @@ class DeleteGlobalEipTagRequest:
     def resource_id(self):
         """Gets the resource_id of this DeleteGlobalEipTagRequest.
 
-        全域弹性公网IP的id
-
         :return: The resource_id of this DeleteGlobalEipTagRequest.
         :rtype: str
         """
@@ -60,8 +58,6 @@ class DeleteGlobalEipTagRequest:
     @resource_id.setter
     def resource_id(self, resource_id):
         """Sets the resource_id of this DeleteGlobalEipTagRequest.
-
-        全域弹性公网IP的id
 
         :param resource_id: The resource_id of this DeleteGlobalEipTagRequest.
         :type resource_id: str
@@ -72,8 +68,6 @@ class DeleteGlobalEipTagRequest:
     def tag_key(self):
         """Gets the tag_key of this DeleteGlobalEipTagRequest.
 
-        待删除标签的key
-
         :return: The tag_key of this DeleteGlobalEipTagRequest.
         :rtype: str
         """
@@ -82,8 +76,6 @@ class DeleteGlobalEipTagRequest:
     @tag_key.setter
     def tag_key(self, tag_key):
         """Sets the tag_key of this DeleteGlobalEipTagRequest.
-
-        待删除标签的key
 
         :param tag_key: The tag_key of this DeleteGlobalEipTagRequest.
         :type tag_key: str

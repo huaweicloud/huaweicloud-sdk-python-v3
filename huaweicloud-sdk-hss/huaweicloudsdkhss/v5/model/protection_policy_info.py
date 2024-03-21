@@ -67,17 +67,17 @@ class ProtectionPolicyInfo:
         :type deploy_mode: str
         :param protection_directory: 防护目录
         :type protection_directory: str
-        :param protection_type: 防护文件类型
+        :param protection_type: 防护文件类型，例如：docx，txt，avi
         :type protection_type: str
         :param exclude_directory: 排除目录，选填
         :type exclude_directory: str
         :param runtime_detection_status: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
         :type runtime_detection_status: str
-        :param runtime_detection_directory: 运行时检测目录，所有目录是/,现在为保留字段
+        :param runtime_detection_directory: 运行时检测目录，现在为保留字段
         :type runtime_detection_directory: str
         :param count_associated_server: 关联server个数
         :type count_associated_server: int
-        :param operating_system: 操作系统类型
+        :param operating_system: 操作系统类型。 - Linux - Windows
         :type operating_system: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
@@ -268,7 +268,7 @@ class ProtectionPolicyInfo:
     def protection_type(self):
         """Gets the protection_type of this ProtectionPolicyInfo.
 
-        防护文件类型
+        防护文件类型，例如：docx，txt，avi
 
         :return: The protection_type of this ProtectionPolicyInfo.
         :rtype: str
@@ -279,7 +279,7 @@ class ProtectionPolicyInfo:
     def protection_type(self, protection_type):
         """Sets the protection_type of this ProtectionPolicyInfo.
 
-        防护文件类型
+        防护文件类型，例如：docx，txt，avi
 
         :param protection_type: The protection_type of this ProtectionPolicyInfo.
         :type protection_type: str
@@ -334,7 +334,7 @@ class ProtectionPolicyInfo:
     def runtime_detection_directory(self):
         """Gets the runtime_detection_directory of this ProtectionPolicyInfo.
 
-        运行时检测目录，所有目录是/,现在为保留字段
+        运行时检测目录，现在为保留字段
 
         :return: The runtime_detection_directory of this ProtectionPolicyInfo.
         :rtype: str
@@ -345,7 +345,7 @@ class ProtectionPolicyInfo:
     def runtime_detection_directory(self, runtime_detection_directory):
         """Sets the runtime_detection_directory of this ProtectionPolicyInfo.
 
-        运行时检测目录，所有目录是/,现在为保留字段
+        运行时检测目录，现在为保留字段
 
         :param runtime_detection_directory: The runtime_detection_directory of this ProtectionPolicyInfo.
         :type runtime_detection_directory: str
@@ -378,7 +378,7 @@ class ProtectionPolicyInfo:
     def operating_system(self):
         """Gets the operating_system of this ProtectionPolicyInfo.
 
-        操作系统类型
+        操作系统类型。 - Linux - Windows
 
         :return: The operating_system of this ProtectionPolicyInfo.
         :rtype: str
@@ -389,7 +389,7 @@ class ProtectionPolicyInfo:
     def operating_system(self, operating_system):
         """Sets the operating_system of this ProtectionPolicyInfo.
 
-        操作系统类型
+        操作系统类型。 - Linux - Windows
 
         :param operating_system: The operating_system of this ProtectionPolicyInfo.
         :type operating_system: str

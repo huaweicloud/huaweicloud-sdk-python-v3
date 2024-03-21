@@ -69,31 +69,31 @@ class ListInternetBandwidthsRequest:
         :type marker: str
         :param page_reverse: 翻页方向
         :type page_reverse: bool
-        :param fields: 只显示指定的字段
+        :param fields: 
         :type fields: list[str]
-        :param ext_fields: 在默认显示字段的基础上追加指定字段
+        :param ext_fields: 
         :type ext_fields: list[str]
         :param sort_key: 按照sort_key指定的字段排序
         :type sort_key: list[str]
         :param sort_dir: 排序的方向，倒序或者正序
         :type sort_dir: list[str]
-        :param id: 根据ID过滤
+        :param id: 
         :type id: list[str]
-        :param size: 根据全域公网带宽大小过滤
+        :param size: 
         :type size: list[int]
-        :param name: 根据名称过滤
+        :param name: 
         :type name: list[str]
-        :param name_like: 根据名称模糊匹配
+        :param name_like: 
         :type name_like: str
-        :param access_site: 根据接入点过滤
+        :param access_site: 
         :type access_site: list[str]
-        :param status: 根据资源状态过滤
+        :param status: 
         :type status: list[str]
-        :param enterprise_project_id: 根据企业项目ID过滤
+        :param enterprise_project_id: 
         :type enterprise_project_id: list[str]
-        :param tags: 根据标签过滤
+        :param tags: 
         :type tags: list[str]
-        :param type: 根据全域公网带宽类型过滤
+        :param type: 
         :type type: list[str]
         """
         
@@ -245,8 +245,6 @@ class ListInternetBandwidthsRequest:
     def fields(self):
         """Gets the fields of this ListInternetBandwidthsRequest.
 
-        只显示指定的字段
-
         :return: The fields of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -255,8 +253,6 @@ class ListInternetBandwidthsRequest:
     @fields.setter
     def fields(self, fields):
         """Sets the fields of this ListInternetBandwidthsRequest.
-
-        只显示指定的字段
 
         :param fields: The fields of this ListInternetBandwidthsRequest.
         :type fields: list[str]
@@ -267,8 +263,6 @@ class ListInternetBandwidthsRequest:
     def ext_fields(self):
         """Gets the ext_fields of this ListInternetBandwidthsRequest.
 
-        在默认显示字段的基础上追加指定字段
-
         :return: The ext_fields of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -277,8 +271,6 @@ class ListInternetBandwidthsRequest:
     @ext_fields.setter
     def ext_fields(self, ext_fields):
         """Sets the ext_fields of this ListInternetBandwidthsRequest.
-
-        在默认显示字段的基础上追加指定字段
 
         :param ext_fields: The ext_fields of this ListInternetBandwidthsRequest.
         :type ext_fields: list[str]
@@ -333,8 +325,6 @@ class ListInternetBandwidthsRequest:
     def id(self):
         """Gets the id of this ListInternetBandwidthsRequest.
 
-        根据ID过滤
-
         :return: The id of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -343,8 +333,6 @@ class ListInternetBandwidthsRequest:
     @id.setter
     def id(self, id):
         """Sets the id of this ListInternetBandwidthsRequest.
-
-        根据ID过滤
 
         :param id: The id of this ListInternetBandwidthsRequest.
         :type id: list[str]
@@ -355,8 +343,6 @@ class ListInternetBandwidthsRequest:
     def size(self):
         """Gets the size of this ListInternetBandwidthsRequest.
 
-        根据全域公网带宽大小过滤
-
         :return: The size of this ListInternetBandwidthsRequest.
         :rtype: list[int]
         """
@@ -365,8 +351,6 @@ class ListInternetBandwidthsRequest:
     @size.setter
     def size(self, size):
         """Sets the size of this ListInternetBandwidthsRequest.
-
-        根据全域公网带宽大小过滤
 
         :param size: The size of this ListInternetBandwidthsRequest.
         :type size: list[int]
@@ -377,8 +361,6 @@ class ListInternetBandwidthsRequest:
     def name(self):
         """Gets the name of this ListInternetBandwidthsRequest.
 
-        根据名称过滤
-
         :return: The name of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -387,8 +369,6 @@ class ListInternetBandwidthsRequest:
     @name.setter
     def name(self, name):
         """Sets the name of this ListInternetBandwidthsRequest.
-
-        根据名称过滤
 
         :param name: The name of this ListInternetBandwidthsRequest.
         :type name: list[str]
@@ -399,8 +379,6 @@ class ListInternetBandwidthsRequest:
     def name_like(self):
         """Gets the name_like of this ListInternetBandwidthsRequest.
 
-        根据名称模糊匹配
-
         :return: The name_like of this ListInternetBandwidthsRequest.
         :rtype: str
         """
@@ -409,8 +387,6 @@ class ListInternetBandwidthsRequest:
     @name_like.setter
     def name_like(self, name_like):
         """Sets the name_like of this ListInternetBandwidthsRequest.
-
-        根据名称模糊匹配
 
         :param name_like: The name_like of this ListInternetBandwidthsRequest.
         :type name_like: str
@@ -421,8 +397,6 @@ class ListInternetBandwidthsRequest:
     def access_site(self):
         """Gets the access_site of this ListInternetBandwidthsRequest.
 
-        根据接入点过滤
-
         :return: The access_site of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -431,8 +405,6 @@ class ListInternetBandwidthsRequest:
     @access_site.setter
     def access_site(self, access_site):
         """Sets the access_site of this ListInternetBandwidthsRequest.
-
-        根据接入点过滤
 
         :param access_site: The access_site of this ListInternetBandwidthsRequest.
         :type access_site: list[str]
@@ -443,8 +415,6 @@ class ListInternetBandwidthsRequest:
     def status(self):
         """Gets the status of this ListInternetBandwidthsRequest.
 
-        根据资源状态过滤
-
         :return: The status of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -453,8 +423,6 @@ class ListInternetBandwidthsRequest:
     @status.setter
     def status(self, status):
         """Sets the status of this ListInternetBandwidthsRequest.
-
-        根据资源状态过滤
 
         :param status: The status of this ListInternetBandwidthsRequest.
         :type status: list[str]
@@ -465,8 +433,6 @@ class ListInternetBandwidthsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListInternetBandwidthsRequest.
 
-        根据企业项目ID过滤
-
         :return: The enterprise_project_id of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -475,8 +441,6 @@ class ListInternetBandwidthsRequest:
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListInternetBandwidthsRequest.
-
-        根据企业项目ID过滤
 
         :param enterprise_project_id: The enterprise_project_id of this ListInternetBandwidthsRequest.
         :type enterprise_project_id: list[str]
@@ -487,8 +451,6 @@ class ListInternetBandwidthsRequest:
     def tags(self):
         """Gets the tags of this ListInternetBandwidthsRequest.
 
-        根据标签过滤
-
         :return: The tags of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -497,8 +459,6 @@ class ListInternetBandwidthsRequest:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ListInternetBandwidthsRequest.
-
-        根据标签过滤
 
         :param tags: The tags of this ListInternetBandwidthsRequest.
         :type tags: list[str]
@@ -509,8 +469,6 @@ class ListInternetBandwidthsRequest:
     def type(self):
         """Gets the type of this ListInternetBandwidthsRequest.
 
-        根据全域公网带宽类型过滤
-
         :return: The type of this ListInternetBandwidthsRequest.
         :rtype: list[str]
         """
@@ -519,8 +477,6 @@ class ListInternetBandwidthsRequest:
     @type.setter
     def type(self, type):
         """Sets the type of this ListInternetBandwidthsRequest.
-
-        根据全域公网带宽类型过滤
 
         :param type: The type of this ListInternetBandwidthsRequest.
         :type type: list[str]

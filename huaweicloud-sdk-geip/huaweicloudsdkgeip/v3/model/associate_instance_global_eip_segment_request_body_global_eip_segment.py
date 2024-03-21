@@ -45,7 +45,7 @@ class AssociateInstanceGlobalEipSegmentRequestBodyGlobalEipSegment:
         :type instance_type: str
         :param instance_id: 实例ID
         :type instance_id: str
-        :param project_id: 项目ID
+        :param project_id: 项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
         :type project_id: str
         :param service_id: 服务id
         :type service_id: str
@@ -142,7 +142,7 @@ class AssociateInstanceGlobalEipSegmentRequestBodyGlobalEipSegment:
     def project_id(self):
         """Gets the project_id of this AssociateInstanceGlobalEipSegmentRequestBodyGlobalEipSegment.
 
-        项目ID
+        项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
 
         :return: The project_id of this AssociateInstanceGlobalEipSegmentRequestBodyGlobalEipSegment.
         :rtype: str
@@ -153,7 +153,7 @@ class AssociateInstanceGlobalEipSegmentRequestBodyGlobalEipSegment:
     def project_id(self, project_id):
         """Sets the project_id of this AssociateInstanceGlobalEipSegmentRequestBodyGlobalEipSegment.
 
-        项目ID
+        项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
 
         :param project_id: The project_id of this AssociateInstanceGlobalEipSegmentRequestBodyGlobalEipSegment.
         :type project_id: str

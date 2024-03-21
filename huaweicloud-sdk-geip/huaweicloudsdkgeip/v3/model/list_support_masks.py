@@ -37,9 +37,9 @@ class ListSupportMasks:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域弹性公网IP段支持的掩码的ID
         :type id: str
-        :param ip_version: IPv4或IPv6
+        :param ip_version: - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
         :type ip_version: int
         :param mask: 掩码长度
         :type mask: int
@@ -73,7 +73,7 @@ class ListSupportMasks:
     def id(self):
         """Gets the id of this ListSupportMasks.
 
-        ID
+        全域弹性公网IP段支持的掩码的ID
 
         :return: The id of this ListSupportMasks.
         :rtype: str
@@ -84,7 +84,7 @@ class ListSupportMasks:
     def id(self, id):
         """Sets the id of this ListSupportMasks.
 
-        ID
+        全域弹性公网IP段支持的掩码的ID
 
         :param id: The id of this ListSupportMasks.
         :type id: str
@@ -95,7 +95,7 @@ class ListSupportMasks:
     def ip_version(self):
         """Gets the ip_version of this ListSupportMasks.
 
-        IPv4或IPv6
+        - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
 
         :return: The ip_version of this ListSupportMasks.
         :rtype: int
@@ -106,7 +106,7 @@ class ListSupportMasks:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListSupportMasks.
 
-        IPv4或IPv6
+        - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
 
         :param ip_version: The ip_version of this ListSupportMasks.
         :type ip_version: int

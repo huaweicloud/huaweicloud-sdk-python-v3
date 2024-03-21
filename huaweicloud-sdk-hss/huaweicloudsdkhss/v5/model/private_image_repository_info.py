@@ -95,9 +95,9 @@ class PrivateImageRepositoryInfo:
         :type scan_failed_desc: str
         :param image_size: 镜像大小
         :type image_size: int
-        :param latest_update_time: 镜像版本最后更新时间
+        :param latest_update_time: 镜像版本最后更新时间，时间单位 毫秒（ms）
         :type latest_update_time: int
-        :param latest_scan_time: 最近扫描时间
+        :param latest_scan_time: 最近扫描时间，时间单位 毫秒（ms）
         :type latest_scan_time: int
         :param vul_num: 漏洞个数
         :type vul_num: int
@@ -111,11 +111,11 @@ class PrivateImageRepositoryInfo:
         :type shared_status: str
         :param scannable: 是否可扫描
         :type scannable: bool
-        :param instance_name: 企业实例名称
+        :param instance_name: 企业版镜像实例名称
         :type instance_name: str
-        :param instance_id: 企业实例ID
+        :param instance_id: 企业版镜像实例ID
         :type instance_id: str
-        :param instance_url: 企业镜像URL
+        :param instance_url: 企业版镜像实例URL
         :type instance_url: str
         :param association_images: 多架构关联镜像信息
         :type association_images: list[:class:`huaweicloudsdkhss.v5.AssociateImages`]
@@ -441,7 +441,7 @@ class PrivateImageRepositoryInfo:
     def latest_update_time(self):
         """Gets the latest_update_time of this PrivateImageRepositoryInfo.
 
-        镜像版本最后更新时间
+        镜像版本最后更新时间，时间单位 毫秒（ms）
 
         :return: The latest_update_time of this PrivateImageRepositoryInfo.
         :rtype: int
@@ -452,7 +452,7 @@ class PrivateImageRepositoryInfo:
     def latest_update_time(self, latest_update_time):
         """Sets the latest_update_time of this PrivateImageRepositoryInfo.
 
-        镜像版本最后更新时间
+        镜像版本最后更新时间，时间单位 毫秒（ms）
 
         :param latest_update_time: The latest_update_time of this PrivateImageRepositoryInfo.
         :type latest_update_time: int
@@ -463,7 +463,7 @@ class PrivateImageRepositoryInfo:
     def latest_scan_time(self):
         """Gets the latest_scan_time of this PrivateImageRepositoryInfo.
 
-        最近扫描时间
+        最近扫描时间，时间单位 毫秒（ms）
 
         :return: The latest_scan_time of this PrivateImageRepositoryInfo.
         :rtype: int
@@ -474,7 +474,7 @@ class PrivateImageRepositoryInfo:
     def latest_scan_time(self, latest_scan_time):
         """Sets the latest_scan_time of this PrivateImageRepositoryInfo.
 
-        最近扫描时间
+        最近扫描时间，时间单位 毫秒（ms）
 
         :param latest_scan_time: The latest_scan_time of this PrivateImageRepositoryInfo.
         :type latest_scan_time: int
@@ -617,7 +617,7 @@ class PrivateImageRepositoryInfo:
     def instance_name(self):
         """Gets the instance_name of this PrivateImageRepositoryInfo.
 
-        企业实例名称
+        企业版镜像实例名称
 
         :return: The instance_name of this PrivateImageRepositoryInfo.
         :rtype: str
@@ -628,7 +628,7 @@ class PrivateImageRepositoryInfo:
     def instance_name(self, instance_name):
         """Sets the instance_name of this PrivateImageRepositoryInfo.
 
-        企业实例名称
+        企业版镜像实例名称
 
         :param instance_name: The instance_name of this PrivateImageRepositoryInfo.
         :type instance_name: str
@@ -639,7 +639,7 @@ class PrivateImageRepositoryInfo:
     def instance_id(self):
         """Gets the instance_id of this PrivateImageRepositoryInfo.
 
-        企业实例ID
+        企业版镜像实例ID
 
         :return: The instance_id of this PrivateImageRepositoryInfo.
         :rtype: str
@@ -650,7 +650,7 @@ class PrivateImageRepositoryInfo:
     def instance_id(self, instance_id):
         """Sets the instance_id of this PrivateImageRepositoryInfo.
 
-        企业实例ID
+        企业版镜像实例ID
 
         :param instance_id: The instance_id of this PrivateImageRepositoryInfo.
         :type instance_id: str
@@ -661,7 +661,7 @@ class PrivateImageRepositoryInfo:
     def instance_url(self):
         """Gets the instance_url of this PrivateImageRepositoryInfo.
 
-        企业镜像URL
+        企业版镜像实例URL
 
         :return: The instance_url of this PrivateImageRepositoryInfo.
         :rtype: str
@@ -672,7 +672,7 @@ class PrivateImageRepositoryInfo:
     def instance_url(self, instance_url):
         """Sets the instance_url of this PrivateImageRepositoryInfo.
 
-        企业镜像URL
+        企业版镜像实例URL
 
         :param instance_url: The instance_url of this PrivateImageRepositoryInfo.
         :type instance_url: str

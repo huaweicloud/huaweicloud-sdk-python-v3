@@ -63,11 +63,11 @@ class BatchCreateInternetBandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 全域公网带宽的ID
         :type id: str
-        :param name: 资源名称
+        :param name: - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
-        :param isp: 线路
+        :param isp: 全域弹性公网IP所属线路
         :type isp: str
         :param ingress_size: 全域公网带宽大小（入云方向）
         :type ingress_size: int
@@ -75,11 +75,11 @@ class BatchCreateInternetBandwidth:
         :type access_site: str
         :param size: 全域公网带宽大小（出云方向）
         :type size: int
-        :param description: 用户自定义的资源描述
+        :param description: - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
         :type description: str
         :param charge_mode: 计费模式
         :type charge_mode: str
-        :param domain_id: 租户ID
+        :param domain_id: - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
         :type domain_id: str
         :param status: 状态
         :type status: str
@@ -93,7 +93,7 @@ class BatchCreateInternetBandwidth:
         :type tags: list[:class:`huaweicloudsdkgeip.v3.Tag`]
         :param sys_tags: 系统标签
         :type sys_tags: list[:class:`huaweicloudsdkgeip.v3.Tag`]
-        :param enterprise_project_id: 资源的企业项目id
+        :param enterprise_project_id: - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
         :type enterprise_project_id: str
         :param type: 全域公网带宽类型
         :type type: str
@@ -161,7 +161,7 @@ class BatchCreateInternetBandwidth:
     def id(self):
         """Gets the id of this BatchCreateInternetBandwidth.
 
-        ID
+        全域公网带宽的ID
 
         :return: The id of this BatchCreateInternetBandwidth.
         :rtype: str
@@ -172,7 +172,7 @@ class BatchCreateInternetBandwidth:
     def id(self, id):
         """Sets the id of this BatchCreateInternetBandwidth.
 
-        ID
+        全域公网带宽的ID
 
         :param id: The id of this BatchCreateInternetBandwidth.
         :type id: str
@@ -183,7 +183,7 @@ class BatchCreateInternetBandwidth:
     def name(self):
         """Gets the name of this BatchCreateInternetBandwidth.
 
-        资源名称
+        - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :return: The name of this BatchCreateInternetBandwidth.
         :rtype: str
@@ -194,7 +194,7 @@ class BatchCreateInternetBandwidth:
     def name(self, name):
         """Sets the name of this BatchCreateInternetBandwidth.
 
-        资源名称
+        - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this BatchCreateInternetBandwidth.
         :type name: str
@@ -205,7 +205,7 @@ class BatchCreateInternetBandwidth:
     def isp(self):
         """Gets the isp of this BatchCreateInternetBandwidth.
 
-        线路
+        全域弹性公网IP所属线路
 
         :return: The isp of this BatchCreateInternetBandwidth.
         :rtype: str
@@ -216,7 +216,7 @@ class BatchCreateInternetBandwidth:
     def isp(self, isp):
         """Sets the isp of this BatchCreateInternetBandwidth.
 
-        线路
+        全域弹性公网IP所属线路
 
         :param isp: The isp of this BatchCreateInternetBandwidth.
         :type isp: str
@@ -293,7 +293,7 @@ class BatchCreateInternetBandwidth:
     def description(self):
         """Gets the description of this BatchCreateInternetBandwidth.
 
-        用户自定义的资源描述
+        - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
         :return: The description of this BatchCreateInternetBandwidth.
         :rtype: str
@@ -304,7 +304,7 @@ class BatchCreateInternetBandwidth:
     def description(self, description):
         """Sets the description of this BatchCreateInternetBandwidth.
 
-        用户自定义的资源描述
+        - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
         :param description: The description of this BatchCreateInternetBandwidth.
         :type description: str
@@ -337,7 +337,7 @@ class BatchCreateInternetBandwidth:
     def domain_id(self):
         """Gets the domain_id of this BatchCreateInternetBandwidth.
 
-        租户ID
+        - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
         :return: The domain_id of this BatchCreateInternetBandwidth.
         :rtype: str
@@ -348,7 +348,7 @@ class BatchCreateInternetBandwidth:
     def domain_id(self, domain_id):
         """Sets the domain_id of this BatchCreateInternetBandwidth.
 
-        租户ID
+        - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
         :param domain_id: The domain_id of this BatchCreateInternetBandwidth.
         :type domain_id: str
@@ -491,7 +491,7 @@ class BatchCreateInternetBandwidth:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this BatchCreateInternetBandwidth.
 
-        资源的企业项目id
+        - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :return: The enterprise_project_id of this BatchCreateInternetBandwidth.
         :rtype: str
@@ -502,7 +502,7 @@ class BatchCreateInternetBandwidth:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this BatchCreateInternetBandwidth.
 
-        资源的企业项目id
+        - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this BatchCreateInternetBandwidth.
         :type enterprise_project_id: str

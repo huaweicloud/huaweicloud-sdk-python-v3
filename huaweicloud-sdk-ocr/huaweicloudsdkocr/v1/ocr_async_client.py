@@ -1185,6 +1185,73 @@ class OcrAsyncClient(Client):
 
         return http_info
 
+    def recognize_household_register_async(self, request):
+        """户口本识别
+
+        识别户口本中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RecognizeHouseholdRegister
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeHouseholdRegisterRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHouseholdRegisterResponse`
+        """
+        http_info = self._recognize_household_register_http_info(request)
+        return self._call_api(**http_info)
+
+    def recognize_household_register_async_invoker(self, request):
+        http_info = self._recognize_household_register_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_household_register_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/household-register",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeHouseholdRegisterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def recognize_id_card_async(self, request):
         """身份证识别
 
