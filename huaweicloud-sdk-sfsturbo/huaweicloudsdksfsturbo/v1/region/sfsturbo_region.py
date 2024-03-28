@@ -50,6 +50,8 @@ class SFSTurboRegion:
                         "https://sfs-turbo.me-east-1.myhuaweicloud.com")
     CN_EAST_5 = Region("cn-east-5",
                         "https://sfs-turbo.cn-east-5.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://sfs-turbo.cn-south-4.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -74,6 +76,7 @@ class SFSTurboRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "me-east-1": ME_EAST_1,
         "cn-east-5": CN_EAST_5,
+        "cn-south-4": CN_SOUTH_4,
     }
 
     @classmethod

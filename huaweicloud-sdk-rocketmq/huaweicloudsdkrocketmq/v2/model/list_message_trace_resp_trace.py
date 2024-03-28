@@ -31,7 +31,7 @@ class ListMessageTraceRespTrace:
         'keys': 'str',
         'store_host': 'str',
         'client_host': 'str',
-        'retry_times': 'str',
+        'retry_times': 'int',
         'body_length': 'float',
         'msg_type': 'str',
         'transaction_state': 'str',
@@ -96,7 +96,7 @@ class ListMessageTraceRespTrace:
         :param client_host: 产生消息的主机IP。
         :type client_host: str
         :param retry_times: 重试次数。
-        :type retry_times: str
+        :type retry_times: int
         :param body_length: 消息体长度。
         :type body_length: float
         :param msg_type: 消息类型。
@@ -489,7 +489,7 @@ class ListMessageTraceRespTrace:
         重试次数。
 
         :return: The retry_times of this ListMessageTraceRespTrace.
-        :rtype: str
+        :rtype: int
         """
         return self._retry_times
 
@@ -500,7 +500,7 @@ class ListMessageTraceRespTrace:
         重试次数。
 
         :param retry_times: The retry_times of this ListMessageTraceRespTrace.
-        :type retry_times: str
+        :type retry_times: int
         """
         self._retry_times = retry_times
 

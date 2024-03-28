@@ -19,16 +19,18 @@ class ObsLocation:
     openapi_types = {
         'region_name': 'str',
         'bucket_name': 'str',
-        'object_key': 'str'
+        'object_key': 'str',
+        'sign': 'str'
     }
 
     attribute_map = {
         'region_name': 'region_name',
         'bucket_name': 'bucket_name',
-        'object_key': 'object_key'
+        'object_key': 'object_key',
+        'sign': 'sign'
     }
 
-    def __init__(self, region_name=None, bucket_name=None, object_key=None):
+    def __init__(self, region_name=None, bucket_name=None, object_key=None, sign=None):
         """ObsLocation
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ObsLocation:
         :type bucket_name: str
         :param object_key: **参数说明**：OBS对象名称(包含文件夹路径)。 **取值范围**：长度不超过1024。
         :type object_key: str
+        :param sign: **参数说明**：SHA256算法计算出的升级包签名值。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该签名给设备。 **取值范围**：长度为64，只允许大小写字母a到f、数字的组合。
+        :type sign: str
         """
         
         
@@ -46,11 +50,14 @@ class ObsLocation:
         self._region_name = None
         self._bucket_name = None
         self._object_key = None
+        self._sign = None
         self.discriminator = None
 
         self.region_name = region_name
         self.bucket_name = bucket_name
         self.object_key = object_key
+        if sign is not None:
+            self.sign = sign
 
     @property
     def region_name(self):
@@ -117,6 +124,28 @@ class ObsLocation:
         :type object_key: str
         """
         self._object_key = object_key
+
+    @property
+    def sign(self):
+        """Gets the sign of this ObsLocation.
+
+        **参数说明**：SHA256算法计算出的升级包签名值。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该签名给设备。 **取值范围**：长度为64，只允许大小写字母a到f、数字的组合。
+
+        :return: The sign of this ObsLocation.
+        :rtype: str
+        """
+        return self._sign
+
+    @sign.setter
+    def sign(self, sign):
+        """Sets the sign of this ObsLocation.
+
+        **参数说明**：SHA256算法计算出的升级包签名值。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该签名给设备。 **取值范围**：长度为64，只允许大小写字母a到f、数字的组合。
+
+        :param sign: The sign of this ObsLocation.
+        :type sign: str
+        """
+        self._sign = sign
 
     def to_dict(self):
         """Returns the model properties as a dict"""

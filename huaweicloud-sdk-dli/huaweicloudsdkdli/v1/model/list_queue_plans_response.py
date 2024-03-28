@@ -20,7 +20,7 @@ class ListQueuePlansResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'plans': 'list[QueuePlanEntity]'
+        'plans': 'list[QueuePlan]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListQueuePlansResponse(SdkResponse):
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         :param plans: 定时扩缩容信息
-        :type plans: list[:class:`huaweicloudsdkdli.v1.QueuePlanEntity`]
+        :type plans: list[:class:`huaweicloudsdkdli.v1.QueuePlan`]
         """
         
         super(ListQueuePlansResponse, self).__init__()
@@ -107,7 +107,7 @@ class ListQueuePlansResponse(SdkResponse):
         定时扩缩容信息
 
         :return: The plans of this ListQueuePlansResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.QueuePlanEntity`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.QueuePlan`]
         """
         return self._plans
 
@@ -118,7 +118,7 @@ class ListQueuePlansResponse(SdkResponse):
         定时扩缩容信息
 
         :param plans: The plans of this ListQueuePlansResponse.
-        :type plans: list[:class:`huaweicloudsdkdli.v1.QueuePlanEntity`]
+        :type plans: list[:class:`huaweicloudsdkdli.v1.QueuePlan`]
         """
         self._plans = plans
 

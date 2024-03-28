@@ -18,7 +18,7 @@ class CreateTableRequest:
 
     openapi_types = {
         'database_name': 'str',
-        'body': 'CreateTableReq'
+        'body': 'CreateTableRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateTableRequest:
         :param database_name: 新增表所在的数据库名称。
         :type database_name: str
         :param body: Body of the CreateTableRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateTableReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateTableRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class CreateTableRequest:
         """Gets the body of this CreateTableRequest.
 
         :return: The body of this CreateTableRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateTableReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateTableRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateTableRequest:
         """Sets the body of this CreateTableRequest.
 
         :param body: The body of this CreateTableRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateTableReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateTableRequestBody`
         """
         self._body = body
 

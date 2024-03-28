@@ -22,6 +22,7 @@ class TrackerResponseBody:
         'kms_id': 'str',
         'is_support_validate': 'bool',
         'is_organization_tracker': 'bool',
+        'agency_name': 'str',
         'management_event_selector': 'ManagementEventSelector',
         'lts': 'Lts',
         'tracker_type': 'str',
@@ -43,6 +44,7 @@ class TrackerResponseBody:
         'kms_id': 'kms_id',
         'is_support_validate': 'is_support_validate',
         'is_organization_tracker': 'is_organization_tracker',
+        'agency_name': 'agency_name',
         'management_event_selector': 'management_event_selector',
         'lts': 'lts',
         'tracker_type': 'tracker_type',
@@ -58,7 +60,7 @@ class TrackerResponseBody:
         'data_bucket': 'data_bucket'
     }
 
-    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, is_organization_tracker=None, management_event_selector=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, group_id=None, stream_id=None, obs_info=None, data_bucket=None):
+    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, is_organization_tracker=None, agency_name=None, management_event_selector=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, group_id=None, stream_id=None, obs_info=None, data_bucket=None):
         """TrackerResponseBody
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class TrackerResponseBody:
         :type is_support_validate: bool
         :param is_organization_tracker: 是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
         :type is_organization_tracker: bool
+        :param agency_name: 云服务委托名称。
+        :type agency_name: str
         :param management_event_selector: 
         :type management_event_selector: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
         :param lts: 
@@ -108,6 +112,7 @@ class TrackerResponseBody:
         self._kms_id = None
         self._is_support_validate = None
         self._is_organization_tracker = None
+        self._agency_name = None
         self._management_event_selector = None
         self._lts = None
         self._tracker_type = None
@@ -133,6 +138,8 @@ class TrackerResponseBody:
             self.is_support_validate = is_support_validate
         if is_organization_tracker is not None:
             self.is_organization_tracker = is_organization_tracker
+        if agency_name is not None:
+            self.agency_name = agency_name
         if management_event_selector is not None:
             self.management_event_selector = management_event_selector
         if lts is not None:
@@ -269,6 +276,28 @@ class TrackerResponseBody:
         :type is_organization_tracker: bool
         """
         self._is_organization_tracker = is_organization_tracker
+
+    @property
+    def agency_name(self):
+        """Gets the agency_name of this TrackerResponseBody.
+
+        云服务委托名称。
+
+        :return: The agency_name of this TrackerResponseBody.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        """Sets the agency_name of this TrackerResponseBody.
+
+        云服务委托名称。
+
+        :param agency_name: The agency_name of this TrackerResponseBody.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     @property
     def management_event_selector(self):

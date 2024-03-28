@@ -19,6 +19,7 @@ class UpdateTrackerRequestBody:
     openapi_types = {
         'tracker_type': 'str',
         'tracker_name': 'str',
+        'agency_name': 'str',
         'status': 'str',
         'is_organization_tracker': 'bool',
         'management_event_selector': 'ManagementEventSelector',
@@ -33,6 +34,7 @@ class UpdateTrackerRequestBody:
     attribute_map = {
         'tracker_type': 'tracker_type',
         'tracker_name': 'tracker_name',
+        'agency_name': 'agency_name',
         'status': 'status',
         'is_organization_tracker': 'is_organization_tracker',
         'management_event_selector': 'management_event_selector',
@@ -44,7 +46,7 @@ class UpdateTrackerRequestBody:
         'data_bucket': 'data_bucket'
     }
 
-    def __init__(self, tracker_type=None, tracker_name=None, status=None, is_organization_tracker=None, management_event_selector=None, is_lts_enabled=None, obs_info=None, is_support_trace_files_encryption=None, kms_id=None, is_support_validate=None, data_bucket=None):
+    def __init__(self, tracker_type=None, tracker_name=None, agency_name=None, status=None, is_organization_tracker=None, management_event_selector=None, is_lts_enabled=None, obs_info=None, is_support_trace_files_encryption=None, kms_id=None, is_support_validate=None, data_bucket=None):
         """UpdateTrackerRequestBody
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class UpdateTrackerRequestBody:
         :type tracker_type: str
         :param tracker_name: 标识追踪器名称。 当\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时该参数为默认值\&quot;system\&quot;。 当\&quot;tracker_type\&quot;参数值为\&quot;data\&quot;时该参数需要指定追踪器名称\&quot;。
         :type tracker_name: str
+        :param agency_name: 云服务委托名称。 参数值为\&quot;cts_admin_trust\&quot;时，更新追踪器会自动创建一个云服务委托：cts_admin_trust。
+        :type agency_name: str
         :param status: 标识追踪器状态，该接口中可修改的状态包括正常（enabled）和停止（disabled）。如果选择修改状态为停止，则修改成功后追踪器停止记录事件。
         :type status: str
         :param is_organization_tracker: 是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
@@ -77,6 +81,7 @@ class UpdateTrackerRequestBody:
 
         self._tracker_type = None
         self._tracker_name = None
+        self._agency_name = None
         self._status = None
         self._is_organization_tracker = None
         self._management_event_selector = None
@@ -90,6 +95,8 @@ class UpdateTrackerRequestBody:
 
         self.tracker_type = tracker_type
         self.tracker_name = tracker_name
+        if agency_name is not None:
+            self.agency_name = agency_name
         if status is not None:
             self.status = status
         if is_organization_tracker is not None:
@@ -152,6 +159,28 @@ class UpdateTrackerRequestBody:
         :type tracker_name: str
         """
         self._tracker_name = tracker_name
+
+    @property
+    def agency_name(self):
+        """Gets the agency_name of this UpdateTrackerRequestBody.
+
+        云服务委托名称。 参数值为\"cts_admin_trust\"时，更新追踪器会自动创建一个云服务委托：cts_admin_trust。
+
+        :return: The agency_name of this UpdateTrackerRequestBody.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        """Sets the agency_name of this UpdateTrackerRequestBody.
+
+        云服务委托名称。 参数值为\"cts_admin_trust\"时，更新追踪器会自动创建一个云服务委托：cts_admin_trust。
+
+        :param agency_name: The agency_name of this UpdateTrackerRequestBody.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     @property
     def status(self):

@@ -17,7 +17,7 @@ class ShowFlinkMetricRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ShowJobMonitorInfoReq'
+        'body': 'ShowFlinkMetricRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class ShowFlinkMetricRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the ShowFlinkMetricRequest
-        :type body: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoReq`
+        :type body: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class ShowFlinkMetricRequest:
         """Gets the body of this ShowFlinkMetricRequest.
 
         :return: The body of this ShowFlinkMetricRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class ShowFlinkMetricRequest:
         """Sets the body of this ShowFlinkMetricRequest.
 
         :param body: The body of this ShowFlinkMetricRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoReq`
+        :type body: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequestBody`
         """
         self._body = body
 

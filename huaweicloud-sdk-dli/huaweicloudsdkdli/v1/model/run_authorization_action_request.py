@@ -17,7 +17,7 @@ class RunAuthorizationActionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'AuthorizeResourceRequestBody'
+        'body': 'RunAuthorizationActionRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class RunAuthorizationActionRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the RunAuthorizationActionRequest
-        :type body: :class:`huaweicloudsdkdli.v1.AuthorizeResourceRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.RunAuthorizationActionRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class RunAuthorizationActionRequest:
         """Gets the body of this RunAuthorizationActionRequest.
 
         :return: The body of this RunAuthorizationActionRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.AuthorizeResourceRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.RunAuthorizationActionRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class RunAuthorizationActionRequest:
         """Sets the body of this RunAuthorizationActionRequest.
 
         :param body: The body of this RunAuthorizationActionRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.AuthorizeResourceRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.RunAuthorizationActionRequestBody`
         """
         self._body = body
 

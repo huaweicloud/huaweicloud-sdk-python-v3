@@ -641,6 +641,75 @@ class IoTDAClient(Client):
 
         return http_info
 
+    def update_application(self, request):
+        """更新资源空间
+
+        应用服务器可以调用此接口更新资源空间的名称
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateApplication
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateApplicationRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateApplicationResponse`
+        """
+        http_info = self._update_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_application_invoker(self, request):
+        http_info = self._update_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_application_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_async_command(self, request):
         """下发异步设备命令
 

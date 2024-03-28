@@ -20,6 +20,8 @@ class CreateBatchTask:
         'app_id': 'str',
         'task_name': 'str',
         'task_type': 'str',
+        'task_mode': 'str',
+        'task_ext_info': 'object',
         'targets': 'list[str]',
         'targets_filter': 'dict(str, object)',
         'document': 'object',
@@ -31,6 +33,8 @@ class CreateBatchTask:
         'app_id': 'app_id',
         'task_name': 'task_name',
         'task_type': 'task_type',
+        'task_mode': 'task_mode',
+        'task_ext_info': 'task_ext_info',
         'targets': 'targets',
         'targets_filter': 'targets_filter',
         'document': 'document',
@@ -38,7 +42,7 @@ class CreateBatchTask:
         'document_source': 'document_source'
     }
 
-    def __init__(self, app_id=None, task_name=None, task_type=None, targets=None, targets_filter=None, document=None, task_policy=None, document_source=None):
+    def __init__(self, app_id=None, task_name=None, task_type=None, task_mode=None, task_ext_info=None, targets=None, targets_filter=None, document=None, task_policy=None, document_source=None):
         """CreateBatchTask
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class CreateBatchTask:
         :type task_name: str
         :param task_type: **参数说明**：批量任务类型。 **取值范围**： - softwareUpgrade: 软件升级任务 - firmwareUpgrade: 固件升级任务 - createDevices: 批量创建设备任务 - deleteDevices: 批量删除设备任务 - freezeDevices: 批量冻结设备任务 - unfreezeDevices: 批量解冻设备任务 - createCommands: 批量创建同步命令任务 - createAsyncCommands: 批量创建异步命令任务 - createMessages: 批量创建消息任务 - updateDeviceShadows：批量配置设备影子任务 - updateDevices：批量更新设备任务
         :type task_type: str
+        :param task_mode: **参数说明**：批量任务的模式，当前只支持网关模式，当task_type为firmwareUpgrade，softwareUpgrade支持该参数。软固件升级的场景下，若升级的设备为某个网关的子设备，则平台下发获取版本信息通知和平台下发升级通知将携带task_id（软固件升级批量任务的任务ID）和sub_device_count（批量任务中网关设备包含的升级子设备数量）字段。 **取值范围**：GATEWAY: 网关模式。
+        :type task_mode: str
+        :param task_ext_info: **参数说明**：批量任务额外扩展信息，当task_type为firmwareUpgrade，softwareUpgrade支持该参数。软固件升级的场景下，平台下发获取版本信息通知和平台下发升级通知将携带该字段。 **取值范围**：最长不超过512个字符。
+        :type task_ext_info: object
         :param targets: **参数说明**：执行批量任务的目标，此处填写device_id列表，且最多支持3万个device_id。当task_type为firmwareUpgrade，softwareUpgrade，deleteDevices，freezeDevices，unfreezeDevices，createCommands，createAsyncCommands，createMessages，updateDeviceShadows，支持该参数。同时使用targets、targets_filter、document_source参数时，只有一个参数会生效，且平台优先使用targets，其次是targets_filter，最后是document_source。 **取值范围**：device_id列表。device_id支持长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type targets: list[str]
         :param targets_filter: **参数说明**：任务目标筛选参数。Json格式，里面是一个个键值对，（K,V）格式标识筛选targets需要的参数，目前支持的K有group_ids（V填写group_id数组，eg:[\&quot;e495cf17-ff79-4294-8f64-4d367919d665\&quot;]，任务则会筛选出来符合该群组条件的设备作为目标）。当task_type为firmwareUpgrade，softwareUpgrade，deleteDevices，freezeDevices，unfreezeDevices，createCommands，createAsyncCommands，createMessages，updateDeviceShadows，支持该参数。同时使用targets、targets_filter、document_source参数时，只有一个参数会生效，且平台优先使用targets，其次是targets_filter，最后是document_source。
@@ -66,6 +74,8 @@ class CreateBatchTask:
         self._app_id = None
         self._task_name = None
         self._task_type = None
+        self._task_mode = None
+        self._task_ext_info = None
         self._targets = None
         self._targets_filter = None
         self._document = None
@@ -77,6 +87,10 @@ class CreateBatchTask:
             self.app_id = app_id
         self.task_name = task_name
         self.task_type = task_type
+        if task_mode is not None:
+            self.task_mode = task_mode
+        if task_ext_info is not None:
+            self.task_ext_info = task_ext_info
         if targets is not None:
             self.targets = targets
         if targets_filter is not None:
@@ -153,6 +167,50 @@ class CreateBatchTask:
         :type task_type: str
         """
         self._task_type = task_type
+
+    @property
+    def task_mode(self):
+        """Gets the task_mode of this CreateBatchTask.
+
+        **参数说明**：批量任务的模式，当前只支持网关模式，当task_type为firmwareUpgrade，softwareUpgrade支持该参数。软固件升级的场景下，若升级的设备为某个网关的子设备，则平台下发获取版本信息通知和平台下发升级通知将携带task_id（软固件升级批量任务的任务ID）和sub_device_count（批量任务中网关设备包含的升级子设备数量）字段。 **取值范围**：GATEWAY: 网关模式。
+
+        :return: The task_mode of this CreateBatchTask.
+        :rtype: str
+        """
+        return self._task_mode
+
+    @task_mode.setter
+    def task_mode(self, task_mode):
+        """Sets the task_mode of this CreateBatchTask.
+
+        **参数说明**：批量任务的模式，当前只支持网关模式，当task_type为firmwareUpgrade，softwareUpgrade支持该参数。软固件升级的场景下，若升级的设备为某个网关的子设备，则平台下发获取版本信息通知和平台下发升级通知将携带task_id（软固件升级批量任务的任务ID）和sub_device_count（批量任务中网关设备包含的升级子设备数量）字段。 **取值范围**：GATEWAY: 网关模式。
+
+        :param task_mode: The task_mode of this CreateBatchTask.
+        :type task_mode: str
+        """
+        self._task_mode = task_mode
+
+    @property
+    def task_ext_info(self):
+        """Gets the task_ext_info of this CreateBatchTask.
+
+        **参数说明**：批量任务额外扩展信息，当task_type为firmwareUpgrade，softwareUpgrade支持该参数。软固件升级的场景下，平台下发获取版本信息通知和平台下发升级通知将携带该字段。 **取值范围**：最长不超过512个字符。
+
+        :return: The task_ext_info of this CreateBatchTask.
+        :rtype: object
+        """
+        return self._task_ext_info
+
+    @task_ext_info.setter
+    def task_ext_info(self, task_ext_info):
+        """Sets the task_ext_info of this CreateBatchTask.
+
+        **参数说明**：批量任务额外扩展信息，当task_type为firmwareUpgrade，softwareUpgrade支持该参数。软固件升级的场景下，平台下发获取版本信息通知和平台下发升级通知将携带该字段。 **取值范围**：最长不超过512个字符。
+
+        :param task_ext_info: The task_ext_info of this CreateBatchTask.
+        :type task_ext_info: object
+        """
+        self._task_ext_info = task_ext_info
 
     @property
     def targets(self):

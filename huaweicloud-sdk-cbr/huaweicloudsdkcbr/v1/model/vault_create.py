@@ -30,7 +30,8 @@ class VaultCreate:
         'threshold': 'int',
         'smn_notify': 'bool',
         'backup_name_prefix': 'str',
-        'demand_billing': 'bool'
+        'demand_billing': 'bool',
+        'sys_lock_source_service': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class VaultCreate:
         'threshold': 'threshold',
         'smn_notify': 'smn_notify',
         'backup_name_prefix': 'backup_name_prefix',
-        'demand_billing': 'demand_billing'
+        'demand_billing': 'demand_billing',
+        'sys_lock_source_service': 'sys_lock_source_service'
     }
 
-    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, threshold=None, smn_notify=None, backup_name_prefix=None, demand_billing=None):
+    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, threshold=None, smn_notify=None, backup_name_prefix=None, demand_billing=None, sys_lock_source_service=None):
         """VaultCreate
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class VaultCreate:
         :type backup_name_prefix: str
         :param demand_billing: 存储库使用是否允许超出容量，只有创建包周期存储库时才允许该值为 true
         :type demand_billing: bool
+        :param sys_lock_source_service: 用于标识SMB服务，您可以设置为SMB或者空
+        :type sys_lock_source_service: str
         """
         
         
@@ -101,6 +105,7 @@ class VaultCreate:
         self._smn_notify = None
         self._backup_name_prefix = None
         self._demand_billing = None
+        self._sys_lock_source_service = None
         self.discriminator = None
 
         if backup_policy_id is not None:
@@ -128,6 +133,8 @@ class VaultCreate:
             self.backup_name_prefix = backup_name_prefix
         if demand_billing is not None:
             self.demand_billing = demand_billing
+        if sys_lock_source_service is not None:
+            self.sys_lock_source_service = sys_lock_source_service
 
     @property
     def backup_policy_id(self):
@@ -428,6 +435,28 @@ class VaultCreate:
         :type demand_billing: bool
         """
         self._demand_billing = demand_billing
+
+    @property
+    def sys_lock_source_service(self):
+        """Gets the sys_lock_source_service of this VaultCreate.
+
+        用于标识SMB服务，您可以设置为SMB或者空
+
+        :return: The sys_lock_source_service of this VaultCreate.
+        :rtype: str
+        """
+        return self._sys_lock_source_service
+
+    @sys_lock_source_service.setter
+    def sys_lock_source_service(self, sys_lock_source_service):
+        """Sets the sys_lock_source_service of this VaultCreate.
+
+        用于标识SMB服务，您可以设置为SMB或者空
+
+        :param sys_lock_source_service: The sys_lock_source_service of this VaultCreate.
+        :type sys_lock_source_service: str
+        """
+        self._sys_lock_source_service = sys_lock_source_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

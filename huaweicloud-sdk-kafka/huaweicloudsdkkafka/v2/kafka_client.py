@@ -100,9 +100,9 @@ class KafkaClient(Client):
         return http_info
 
     def batch_delete_group(self, request):
-        """Kafka实例批量删除Group
+        """Kafka实例批量删除消费组
 
-        该接口用于向Kafka实例批量删除Group。
+        该接口用于向Kafka实例批量删除消费组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -300,6 +300,73 @@ class KafkaClient(Client):
 
         return http_info
 
+    def batch_delete_message_diagnosis_reports(self, request):
+        """批量删除消息积压诊断报告
+
+        批量删除消息积压诊断报告
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteMessageDiagnosisReports
+        :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteMessageDiagnosisReportsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteMessageDiagnosisReportsResponse`
+        """
+        http_info = self._batch_delete_message_diagnosis_reports_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_message_diagnosis_reports_invoker(self, request):
+        http_info = self._batch_delete_message_diagnosis_reports_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_message_diagnosis_reports_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/message-diagnosis-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteMessageDiagnosisReportsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_restart_or_delete_instances(self, request):
         """批量重启或删除实例
 
@@ -439,7 +506,7 @@ class KafkaClient(Client):
 
         创建实例。
         
-        该接口支持创建按需和包周期两种计费方式的实例。
+        [该接口支持创建按需和包周期两种计费方式的实例。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -771,6 +838,73 @@ class KafkaClient(Client):
 
         return http_info
 
+    def create_message_diagnosis_task(self, request):
+        """创建消息积压诊断任务
+
+        创建消息积压诊断任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateMessageDiagnosisTask
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateMessageDiagnosisTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateMessageDiagnosisTaskResponse`
+        """
+        http_info = self._create_message_diagnosis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_message_diagnosis_task_invoker(self, request):
+        http_info = self._create_message_diagnosis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_message_diagnosis_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/message-diagnosis-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMessageDiagnosisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_post_paid_instance(self, request):
         """创建实例
 
@@ -839,7 +973,7 @@ class KafkaClient(Client):
     def create_reassignment_task(self, request):
         """Kafka实例开始分区重平衡任务
 
-        该接口用于向Kafka实例提交分区重平衡任务，若成功则返回重平衡任务的job id。
+        该接口用于向Kafka实例提交分区重平衡任务或计算重平衡预估时间。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1495,6 +1629,75 @@ class KafkaClient(Client):
             query_params.append(('exact_match_name', local_var_params['exact_match_name']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_message_diagnosis_reports(self, request):
+        """查询消息积压诊断报告列表
+
+        查询消息积压诊断报告列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMessageDiagnosisReports
+        :type request: :class:`huaweicloudsdkkafka.v2.ListMessageDiagnosisReportsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListMessageDiagnosisReportsResponse`
+        """
+        http_info = self._list_message_diagnosis_reports_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_message_diagnosis_reports_invoker(self, request):
+        http_info = self._list_message_diagnosis_reports_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_message_diagnosis_reports_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/message-diagnosis-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessageDiagnosisReportsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2683,6 +2886,75 @@ class KafkaClient(Client):
 
         return http_info
 
+    def show_diagnosis_pre_check(self, request):
+        """消息积压诊断预检查
+
+        消息积压诊断预检查
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDiagnosisPreCheck
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowDiagnosisPreCheckRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowDiagnosisPreCheckResponse`
+        """
+        http_info = self._show_diagnosis_pre_check_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_diagnosis_pre_check_invoker(self, request):
+        http_info = self._show_diagnosis_pre_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_diagnosis_pre_check_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/diagnosis-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiagnosisPreCheckResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'group' in local_var_params:
+            query_params.append(('group', local_var_params['group']))
+        if 'topic' in local_var_params:
+            query_params.append(('topic', local_var_params['topic']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_engine_instance_extend_product_info(self, request):
         """查询实例的扩容规格列表
 
@@ -3540,6 +3812,73 @@ class KafkaClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_message_diagnosis_report(self, request):
+        """查询诊断报告详情
+
+        查询诊断报告详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMessageDiagnosisReport
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowMessageDiagnosisReportRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowMessageDiagnosisReportResponse`
+        """
+        http_info = self._show_message_diagnosis_report_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_message_diagnosis_report_invoker(self, request):
+        http_info = self._show_message_diagnosis_report_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_message_diagnosis_report_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/message-diagnosis/{report_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMessageDiagnosisReportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'report_id' in local_var_params:
+            path_params['report_id'] = local_var_params['report_id']
 
         query_params = []
 
@@ -4719,8 +5058,6 @@ class KafkaClient(Client):
         form_params = {}
 
         body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

@@ -17,7 +17,7 @@ class RegisterAuthorizedQueueRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'GrantQueuePermissionReq'
+        'body': 'RegisterAuthorizedQueueRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class RegisterAuthorizedQueueRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the RegisterAuthorizedQueueRequest
-        :type body: :class:`huaweicloudsdkdli.v1.GrantQueuePermissionReq`
+        :type body: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class RegisterAuthorizedQueueRequest:
         """Gets the body of this RegisterAuthorizedQueueRequest.
 
         :return: The body of this RegisterAuthorizedQueueRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.GrantQueuePermissionReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class RegisterAuthorizedQueueRequest:
         """Sets the body of this RegisterAuthorizedQueueRequest.
 
         :param body: The body of this RegisterAuthorizedQueueRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.GrantQueuePermissionReq`
+        :type body: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequestBody`
         """
         self._body = body
 

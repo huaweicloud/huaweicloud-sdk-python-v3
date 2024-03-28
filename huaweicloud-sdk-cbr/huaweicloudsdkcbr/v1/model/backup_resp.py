@@ -39,7 +39,8 @@ class BackupResp:
         'replication_records': 'list[ReplicationRecordGet]',
         'enterprise_project_id': 'str',
         'provider_id': 'str',
-        'children': 'list[BackupResp]'
+        'children': 'list[BackupResp]',
+        'incremental': 'bool'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class BackupResp:
         'replication_records': 'replication_records',
         'enterprise_project_id': 'enterprise_project_id',
         'provider_id': 'provider_id',
-        'children': 'children'
+        'children': 'children',
+        'incremental': 'incremental'
     }
 
-    def __init__(self, checkpoint_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, provider_id=None, children=None):
+    def __init__(self, checkpoint_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, provider_id=None, children=None, incremental=None):
         """BackupResp
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class BackupResp:
         :type provider_id: str
         :param children: 子副本列表
         :type children: list[:class:`huaweicloudsdkcbr.v1.BackupResp`]
+        :param incremental: 是否是增备
+        :type incremental: bool
         """
         
         
@@ -146,6 +150,7 @@ class BackupResp:
         self._enterprise_project_id = None
         self._provider_id = None
         self._children = None
+        self._incremental = None
         self.discriminator = None
 
         self.checkpoint_id = checkpoint_id
@@ -174,6 +179,8 @@ class BackupResp:
         self.provider_id = provider_id
         if children is not None:
             self.children = children
+        if incremental is not None:
+            self.incremental = incremental
 
     @property
     def checkpoint_id(self):
@@ -676,6 +683,28 @@ class BackupResp:
         :type children: list[:class:`huaweicloudsdkcbr.v1.BackupResp`]
         """
         self._children = children
+
+    @property
+    def incremental(self):
+        """Gets the incremental of this BackupResp.
+
+        是否是增备
+
+        :return: The incremental of this BackupResp.
+        :rtype: bool
+        """
+        return self._incremental
+
+    @incremental.setter
+    def incremental(self, incremental):
+        """Sets the incremental of this BackupResp.
+
+        是否是增备
+
+        :param incremental: The incremental of this BackupResp.
+        :type incremental: bool
+        """
+        self._incremental = incremental
 
     def to_dict(self):
         """Returns the model properties as a dict"""

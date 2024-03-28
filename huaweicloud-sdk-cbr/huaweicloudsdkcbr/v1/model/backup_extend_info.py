@@ -19,7 +19,6 @@ class BackupExtendInfo:
     openapi_types = {
         'auto_trigger': 'bool',
         'bootable': 'bool',
-        'incremental': 'bool',
         'snapshot_id': 'str',
         'support_lld': 'bool',
         'supported_restore_mode': 'str',
@@ -33,7 +32,6 @@ class BackupExtendInfo:
     attribute_map = {
         'auto_trigger': 'auto_trigger',
         'bootable': 'bootable',
-        'incremental': 'incremental',
         'snapshot_id': 'snapshot_id',
         'support_lld': 'support_lld',
         'supported_restore_mode': 'supported_restore_mode',
@@ -44,7 +42,7 @@ class BackupExtendInfo:
         'is_multi_az': 'is_multi_az'
     }
 
-    def __init__(self, auto_trigger=None, bootable=None, incremental=None, snapshot_id=None, support_lld=None, supported_restore_mode=None, os_images_data=None, contain_system_disk=None, encrypted=None, system_disk=None, is_multi_az=None):
+    def __init__(self, auto_trigger=None, bootable=None, snapshot_id=None, support_lld=None, supported_restore_mode=None, os_images_data=None, contain_system_disk=None, encrypted=None, system_disk=None, is_multi_az=None):
         """BackupExtendInfo
 
         The model defined in huaweicloud sdk
@@ -53,8 +51,6 @@ class BackupExtendInfo:
         :type auto_trigger: bool
         :param bootable: 是否系统盘备份
         :type bootable: bool
-        :param incremental: 是否是增备
-        :type incremental: bool
         :param snapshot_id: 卷备份副本的快照id
         :type snapshot_id: str
         :param support_lld: 是否支持lazyloading快速恢复
@@ -77,7 +73,6 @@ class BackupExtendInfo:
 
         self._auto_trigger = None
         self._bootable = None
-        self._incremental = None
         self._snapshot_id = None
         self._support_lld = None
         self._supported_restore_mode = None
@@ -92,8 +87,6 @@ class BackupExtendInfo:
             self.auto_trigger = auto_trigger
         if bootable is not None:
             self.bootable = bootable
-        if incremental is not None:
-            self.incremental = incremental
         if snapshot_id is not None:
             self.snapshot_id = snapshot_id
         if support_lld is not None:
@@ -154,28 +147,6 @@ class BackupExtendInfo:
         :type bootable: bool
         """
         self._bootable = bootable
-
-    @property
-    def incremental(self):
-        """Gets the incremental of this BackupExtendInfo.
-
-        是否是增备
-
-        :return: The incremental of this BackupExtendInfo.
-        :rtype: bool
-        """
-        return self._incremental
-
-    @incremental.setter
-    def incremental(self, incremental):
-        """Sets the incremental of this BackupExtendInfo.
-
-        是否是增备
-
-        :param incremental: The incremental of this BackupExtendInfo.
-        :type incremental: bool
-        """
-        self._incremental = incremental
 
     @property
     def snapshot_id(self):

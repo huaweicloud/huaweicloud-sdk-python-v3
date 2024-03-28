@@ -22,7 +22,8 @@ class ApiPolicyFunctionBase:
         'network_type': 'str',
         'version': 'str',
         'alias_urn': 'str',
-        'timeout': 'int'
+        'timeout': 'int',
+        'req_protocol': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ApiPolicyFunctionBase:
         'network_type': 'network_type',
         'version': 'version',
         'alias_urn': 'alias_urn',
-        'timeout': 'timeout'
+        'timeout': 'timeout',
+        'req_protocol': 'req_protocol'
     }
 
-    def __init__(self, function_urn=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None):
+    def __init__(self, function_urn=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, req_protocol=None):
         """ApiPolicyFunctionBase
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ApiPolicyFunctionBase:
         :type alias_urn: str
         :param timeout: API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
+        :param req_protocol: 函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+        :type req_protocol: str
         """
         
         
@@ -61,6 +65,7 @@ class ApiPolicyFunctionBase:
         self._version = None
         self._alias_urn = None
         self._timeout = None
+        self._req_protocol = None
         self.discriminator = None
 
         self.function_urn = function_urn
@@ -72,6 +77,8 @@ class ApiPolicyFunctionBase:
             self.alias_urn = alias_urn
         if timeout is not None:
             self.timeout = timeout
+        if req_protocol is not None:
+            self.req_protocol = req_protocol
 
     @property
     def function_urn(self):
@@ -204,6 +211,28 @@ class ApiPolicyFunctionBase:
         :type timeout: int
         """
         self._timeout = timeout
+
+    @property
+    def req_protocol(self):
+        """Gets the req_protocol of this ApiPolicyFunctionBase.
+
+        函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+
+        :return: The req_protocol of this ApiPolicyFunctionBase.
+        :rtype: str
+        """
+        return self._req_protocol
+
+    @req_protocol.setter
+    def req_protocol(self, req_protocol):
+        """Sets the req_protocol of this ApiPolicyFunctionBase.
+
+        函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+
+        :param req_protocol: The req_protocol of this ApiPolicyFunctionBase.
+        :type req_protocol: str
+        """
+        self._req_protocol = req_protocol
 
     def to_dict(self):
         """Returns the model properties as a dict"""

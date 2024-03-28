@@ -18,7 +18,7 @@ class RunQueueActionRequest:
 
     openapi_types = {
         'queue_name': 'str',
-        'body': 'RunQueueActionReq'
+        'body': 'RunQueueActionRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class RunQueueActionRequest:
         :param queue_name: 
         :type queue_name: str
         :param body: Body of the RunQueueActionRequest
-        :type body: :class:`huaweicloudsdkdli.v1.RunQueueActionReq`
+        :type body: :class:`huaweicloudsdkdli.v1.RunQueueActionRequestBody`
         """
         
         
@@ -70,7 +70,7 @@ class RunQueueActionRequest:
         """Gets the body of this RunQueueActionRequest.
 
         :return: The body of this RunQueueActionRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.RunQueueActionReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.RunQueueActionRequestBody`
         """
         return self._body
 
@@ -79,7 +79,7 @@ class RunQueueActionRequest:
         """Sets the body of this RunQueueActionRequest.
 
         :param body: The body of this RunQueueActionRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.RunQueueActionReq`
+        :type body: :class:`huaweicloudsdkdli.v1.RunQueueActionRequestBody`
         """
         self._body = body
 

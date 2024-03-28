@@ -701,6 +701,71 @@ class CbrClient(Client):
 
         return http_info
 
+    def create_organization_policy(self, request):
+        """创建组织策略
+
+        创建组织策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateOrganizationPolicy
+        :type request: :class:`huaweicloudsdkcbr.v1.CreateOrganizationPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.CreateOrganizationPolicyResponse`
+        """
+        http_info = self._create_organization_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_organization_policy_invoker(self, request):
+        http_info = self._create_organization_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_organization_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/organization-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrganizationPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_policy(self, request):
         """创建策略
 
@@ -1067,6 +1132,71 @@ class CbrClient(Client):
             path_params['backup_id'] = local_var_params['backup_id']
         if 'member_id' in local_var_params:
             path_params['member_id'] = local_var_params['member_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_organization_policy(self, request):
+        """删除组织策略
+
+        删除组织策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteOrganizationPolicy
+        :type request: :class:`huaweicloudsdkcbr.v1.DeleteOrganizationPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.DeleteOrganizationPolicyResponse`
+        """
+        http_info = self._delete_organization_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_organization_policy_invoker(self, request):
+        http_info = self._delete_organization_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_organization_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/organization-policies/{organization_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOrganizationPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_policy_id' in local_var_params:
+            path_params['organization_policy_id'] = local_var_params['organization_policy_id']
 
         query_params = []
 
@@ -1875,6 +2005,136 @@ class CbrClient(Client):
             query_params.append(('vault_name', local_var_params['vault_name']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_organization_policies(self, request):
+        """查询组织策略列表
+
+        查询组织策略列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOrganizationPolicies
+        :type request: :class:`huaweicloudsdkcbr.v1.ListOrganizationPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ListOrganizationPoliciesResponse`
+        """
+        http_info = self._list_organization_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_organization_policies_invoker(self, request):
+        http_info = self._list_organization_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_organization_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/organization-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrganizationPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'operation_type' in local_var_params:
+            query_params.append(('operation_type', local_var_params['operation_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_organization_policy_detail(self, request):
+        """查询组织策略部署状态列表
+
+        查询组织策略每个账号下策略部署状态列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOrganizationPolicyDetail
+        :type request: :class:`huaweicloudsdkcbr.v1.ListOrganizationPolicyDetailRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ListOrganizationPolicyDetailResponse`
+        """
+        http_info = self._list_organization_policy_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_organization_policy_detail_invoker(self, request):
+        http_info = self._list_organization_policy_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_organization_policy_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/organization-policies/{organization_policy_id}/policy-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrganizationPolicyDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_policy_id' in local_var_params:
+            path_params['organization_policy_id'] = local_var_params['organization_policy_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -3265,6 +3525,71 @@ class CbrClient(Client):
 
         return http_info
 
+    def show_organization_policy(self, request):
+        """查询指定组织策略
+
+        查询指定组织策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowOrganizationPolicy
+        :type request: :class:`huaweicloudsdkcbr.v1.ShowOrganizationPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ShowOrganizationPolicyResponse`
+        """
+        http_info = self._show_organization_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_organization_policy_invoker(self, request):
+        http_info = self._show_organization_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_organization_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/organization-policies/{organization_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrganizationPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_policy_id' in local_var_params:
+            path_params['organization_policy_id'] = local_var_params['organization_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_policy(self, request):
         """查询单个策略
 
@@ -4159,6 +4484,73 @@ class CbrClient(Client):
         path_params = {}
         if 'order_id' in local_var_params:
             path_params['order_id'] = local_var_params['order_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_organization_policy(self, request):
+        """更新组织策略
+
+        更新组织策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateOrganizationPolicy
+        :type request: :class:`huaweicloudsdkcbr.v1.UpdateOrganizationPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.UpdateOrganizationPolicyResponse`
+        """
+        http_info = self._update_organization_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_organization_policy_invoker(self, request):
+        http_info = self._update_organization_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_organization_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/organization-policies/{organization_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOrganizationPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_policy_id' in local_var_params:
+            path_params['organization_policy_id'] = local_var_params['organization_policy_id']
 
         query_params = []
 

@@ -1,3 +1,808 @@
+# 3.1.88 2024-03-28
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateSlDomainSettingV2`
+    - `ExportApiDefinitionsAsync`
+    - `ImportApiDefinitionsAsync`
+    - `ShowAsyncTaskResult`
+    - `ListInstanceFeatures`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteGatewayResponseTypeV2**
+    - 请求参数变更
+      - `+ response_type: enum value [ORCHESTRATION_PARAMETER_NOT_FOUND,ORCHESTRATION_FAILURE]`
+  - **ShowDetailsOfGatewayResponseTypeV2**
+    - 请求参数变更
+      - `+ response_type: enum value [ORCHESTRATION_PARAMETER_NOT_FOUND,ORCHESTRATION_FAILURE]`
+  - **UpdateGatewayResponseTypeV2**
+    - 请求参数变更
+      - `+ response_type: enum value [ORCHESTRATION_PARAMETER_NOT_FOUND,ORCHESTRATION_FAILURE]`
+      - `+ headers`
+  - **ShowDetailsOfApiGroupV2**
+    - 响应参数变更
+      - `+ sl_domain_access_enabled`
+  - **UpdateApiGroupV2**
+    - 响应参数变更
+      - `+ sl_domain_access_enabled`
+  - **ShowDetailsOfInstanceV2**
+    - 响应参数变更
+      - `+ public_ipv6_ips`
+      - `+ unreliable_ips`
+      - `+ node_ipv6_ips`
+      - `+ enable_fullstack_ipv6`
+      - `+ publicips.ipv6_address`
+  - **UpdateInstanceV2**
+    - 响应参数变更
+      - `+ public_ipv6_ips`
+      - `+ unreliable_ips`
+      - `+ node_ipv6_ips`
+      - `+ enable_fullstack_ipv6`
+      - `+ publicips.ipv6_address`
+  - **CreateApiGroupV2**
+    - 响应参数变更
+      - `+ sl_domain_access_enabled`
+  - **ListApiGroupsV2**
+    - 响应参数变更
+      - `+ sl_domain_access_enabled`
+      - `+ groups.sl_domain_access_enabled`
+  - **ShowDetailsOfApiV2**
+    - 响应参数变更
+      - `+ func_info.req_protocol`
+      - `+ api_group_info.sl_domain_access_enabled`
+      - `+ policy_functions.req_protocol`
+  - **UpdateApiV2**
+    - 请求参数变更
+      - `+ func_info.req_protocol`
+      - `+ policy_functions.req_protocol`
+    - 响应参数变更
+      - `+ func_info.req_protocol`
+      - `+ api_group_info.sl_domain_access_enabled`
+      - `+ policy_functions.req_protocol`
+  - **ListApiVersionDetailV2**
+    - 响应参数变更
+      - `+ func_info.req_protocol`
+      - `+ api_group_info.sl_domain_access_enabled`
+      - `+ policy_functions.req_protocol`
+  - **CreateApiV2**
+    - 请求参数变更
+      - `+ func_info.req_protocol`
+      - `+ policy_functions.req_protocol`
+    - 响应参数变更
+      - `+ func_info.req_protocol`
+      - `+ api_group_info.sl_domain_access_enabled`
+      - `+ policy_functions.req_protocol`
+  - **ListApisV2**
+    - 响应参数变更
+      - `+ apis.api_group_info.sl_domain_access_enabled`
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListOrganizationPolicies`
+    - `CreateOrganizationPolicy`
+    - `ShowOrganizationPolicy`
+    - `UpdateOrganizationPolicy`
+    - `DeleteOrganizationPolicy`
+    - `ListOrganizationPolicyDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowBackup**
+    - 响应参数变更
+      - `+ backup.incremental`
+      - `- backup.extend_info.incremental`
+  - **UpdateBackup**
+    - 响应参数变更
+      - `+ backup.incremental`
+      - `- backup.extend_info.incremental`
+  - **ListBackups**
+    - 响应参数变更
+      - `+ backups.incremental`
+      - `- backups.extend_info.incremental`
+  - **ListVault**
+    - 响应参数变更
+      - `- sys_lock_source_service`
+  - **CreateVault**
+    - 请求参数变更
+      - `+ vault.sys_lock_source_service`
+  - **ListExternalVault**
+    - 响应参数变更
+      - `- sys_lock_source_service`
+
+### HuaweiCloud SDK CBS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CollectReplyRates**
+    - 响应参数变更
+      - `* intervals: object<ReplyRatesIntervals> -> list<ReplyRatesIntervals>`
+  - **ExecuteGetVideoInfoById**
+    - 响应参数变更
+      - `* tts_config.speed: int32 -> float`
+  - **ExecuteUpdateVideoInfoById**
+    - 请求参数变更
+      - `* tts_config.speed: int32 -> float`
+    - 响应参数变更
+      - `* tts_config.speed: int32 -> float`
+
+### HuaweiCloud SDK CC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListCentralNetworksByTags`
+    - `ListCentralNetworkErRouteTableAttachments`
+    - `CreateCentralNetworkErRouteTableAttachment`
+    - `ShowCentralNetworkErRouteTableAttachment`
+    - `UpdateCentralNetworkErRouteTableAttachment`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListGlobalConnectionBandwidthConfigs**
+    - 响应参数变更
+      - `+ configs.ratio_95peak_plus`
+      - `+ configs.enable_area_bandwidth`
+      - `+ configs.enable_change_95`
+      - `+ configs.enable_spec_code`
+      - `+ configs.size_range.type`
+      - `- configs.size_range.charge_mode`
+  - **ListGlobalConnectionBandwidths**
+    - 响应参数变更
+      - `+ globalconnection_bandwidths.local_area`
+      - `+ globalconnection_bandwidths.remote_area`
+      - `+ globalconnection_bandwidths.admin_state`
+  - **CreateGlobalConnectionBandwidth**
+    - 响应参数变更
+      - `+ globalconnection_bandwidth.local_area`
+      - `+ globalconnection_bandwidth.remote_area`
+      - `+ globalconnection_bandwidth.admin_state`
+  - **ShowGlobalConnectionBandwidth**
+    - 响应参数变更
+      - `+ globalconnection_bandwidth.local_area`
+      - `+ globalconnection_bandwidth.remote_area`
+      - `+ globalconnection_bandwidth.admin_state`
+  - **UpdateGlobalConnectionBandwidth**
+    - 响应参数变更
+      - `+ globalconnection_bandwidth.local_area`
+      - `+ globalconnection_bandwidth.remote_area`
+      - `+ globalconnection_bandwidth.admin_state`
+  - **ListSupportBindingConnectionBandwidths**
+    - 响应参数变更
+      - `+ globalconnection_bandwidths.local_area`
+      - `+ globalconnection_bandwidths.remote_area`
+      - `+ globalconnection_bandwidths.admin_state`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNodePoolConfigurationDetails**
+    - 响应参数变更
+      - `- kubelet`
+  - **ShowClusterConfigurationDetails**
+    - 响应参数变更
+      - `- kube-apiserver`
+  - **ShowCluster**
+    - 响应参数变更
+      - `- spec.enableAutopilot`
+  - **UpdateCluster**
+    - 响应参数变更
+      - `- spec.enableAutopilot`
+  - **DeleteCluster**
+    - 请求参数变更
+      - `+ lts_reclaim_policy`
+    - 响应参数变更
+      - `- spec.enableAutopilot`
+  - **CreateCluster**
+    - 请求参数变更
+      - `- spec.enableAutopilot`
+    - 响应参数变更
+      - `- spec.enableAutopilot`
+  - **ListClusters**
+    - 响应参数变更
+      - `- items.spec.enableAutopilot`
+
+### HuaweiCloud SDK CFW
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlowLogs**
+    - 响应参数变更
+      - `* data.records.bytes: int32 -> double`
+
+### HuaweiCloud SDK CTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateTracker**
+    - 请求参数变更
+      - `+ agency_name`
+  - **CreateTracker**
+    - 请求参数变更
+      - `+ agency_name`
+    - 响应参数变更
+      - `+ agency_name`
+  - **ListTrackers**
+    - 响应参数变更
+      - `+ trackers.agency_name`
+  - **UpdateNotification**
+    - 请求参数变更
+      - `+ agency_name`
+    - 响应参数变更
+      - `+ agency_name`
+  - **CreateNotification**
+    - 请求参数变更
+      - `+ agency_name`
+    - 响应参数变更
+      - `+ agency_name`
+  - **ListNotifications**
+    - 响应参数变更
+      - `+ notifications.agency_name`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSqlJobs**
+    - 请求参数变更
+      - `+ job-type: enum value [ALL]`
+  - **ShowSqlJobDetail**
+    - 响应参数变更
+      - `+ owner`
+      - `+ database_name`
+      - `+ compress`
+      - `+ escape_char`
+      - `+ is_success`
+      - `+ message`
+      - `+ table_name`
+      - `+ export_mode`
+      - `+ data_path`
+      - `+ tags`
+      - `+ duration`
+      - `+ with_column_header`
+      - `+ quote_char`
+      - `+ timestamp_format`
+      - `+ start_time`
+      - `+ job_id`
+      - `+ delimiter`
+      - `+ data_type`
+      - `+ date_format`
+  - **ShowSqlJobProgress**
+    - 响应参数变更
+      - `+ sub_jobs`
+      - `+ job_id`
+      - `+ progress`
+      - `+ is_success`
+      - `+ message`
+      - `+ status`
+      - `+ sub_job_id`
+  - **ListAuthorizationPrivileges**
+    - 响应参数变更
+      - `+ privileges`
+      - `+ object_type`
+      - `+ object_name`
+      - `+ count`
+      - `+ is_success`
+      - `+ message`
+  - **ListPartitions**
+    - 响应参数变更
+      - `+ partitions`
+      - `+ is_success`
+      - `+ message`
+  - **ShowEnhancedConnectionPrivilege**
+    - 响应参数变更
+      - `+ privileges`
+      - `+ connection_id`
+      - `+ is_success`
+      - `+ message`
+  - **ShowFlinkJob**
+    - 响应参数变更
+      - `+ job_detail`
+      - `+ is_success`
+      - `+ message`
+  - **DeleteFlinkJob**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **ListFlinkJobs**
+    - 响应参数变更
+      - `+ job_list`
+      - `+ is_success`
+      - `+ message`
+  - **ShowFlinkJobExecutionGraph**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+      - `+ execute_graph`
+  - **ShowDliAgency**
+    - 响应参数变更
+      - `+ current_roles`
+      - `+ is_success`
+      - `+ message`
+      - `+ version`
+  - **CreateDliAgency**
+    - 请求参数变更
+      - `* body: object<CreateAgencyRequest> -> object<CreateDliAgencyRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **UpdateJobResourceOwner**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **ShowQueue**
+    - 响应参数变更
+      - `+ owner`
+      - `+ chargingMode`
+      - `+ create_time`
+      - `+ cu_scale_in_limit`
+      - `+ resource_type`
+      - `+ cu_spec`
+      - `+ description`
+      - `+ cuCount`
+      - `+ elastic_resource_pool_name`
+      - `+ is_success`
+      - `+ message`
+      - `+ enterprise_project_id`
+      - `+ queueName`
+      - `+ resource_mode`
+      - `+ cu_scale_out_limit`
+      - `+ queueType`
+      - `+ resource_id`
+      - `+ queue_id`
+  - **RunQueueAction**
+    - 响应参数变更
+      - `+ queue_name`
+      - `+ result`
+      - `+ job_id`
+      - `+ is_success`
+      - `+ message`
+  - **ListQueuePlans**
+    - 响应参数变更
+      - `+ plans`
+      - `+ is_success`
+      - `+ message`
+  - **CreateQueuePlan**
+    - 请求参数变更
+      - `* body: object<SetQueuePlanReq> -> object<QueuePlanRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **BatchDeleteQueuePlans**
+    - 请求参数变更
+      - `* body: object<QueuePlanIds> -> object<BatchDeleteQueuePlansRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **DeleteQueuePlan**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **UpdateQueuePlan**
+    - 请求参数变更
+      - `* body: object<SetQueuePlanReq> -> object<QueuePlanRequestBody>`
+    - 响应参数变更
+      - `+ queue_name`
+      - `+ is_success`
+      - `+ message`
+      - `+ plan_id`
+  - **CreateGlobalVariable**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **UpdateGlobalVariable**
+    - 请求参数变更
+      - `* body: object<UpdateGlobalValueReq> -> object<UpdateGlobalVariableRequestBody>`
+  - **DeleteFlinkSqlJobTemplate**
+    - 响应参数变更
+      - `+ template`
+      - `+ is_success`
+      - `+ message`
+  - **UpdateFlinkSqlJobTemplate**
+    - 请求参数变更
+      - `* body: object<UpdateFlinkTemplateRequestBody> -> object<UpdateFlinkSqlJobTemplateRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **RegisterBucket**
+    - 请求参数变更
+      - `* body: object<ObsBuckets> -> object<RegisterBucketRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **UpdateFlinkSqlJob**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+      - `+ job`
+  - **UpdateFlinkJarJob**
+    - 请求参数变更
+      - `* body: object<UpdateFlinkJarRequestBody> -> object<UpdateFlinkJarJobRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+      - `+ job`
+  - **BatchDeleteFlinkJobs**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **ShowFlinkMetric**
+    - 响应参数变更
+      - `+ metrics`
+      - `+ is_success`
+      - `+ message`
+  - **ExportFlinkJobs**
+    - 请求参数变更
+      - `* body: object<ExportFlinkJobRequestBody> -> object<ExportFlinkJobsRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+      - `+ zip_file`
+  - **ImportFlinkJobs**
+    - 响应参数变更
+      - `+ job_mapping`
+      - `+ is_success`
+      - `+ message`
+  - **CreateFlinkSqlJobGraph**
+    - 请求参数变更
+      - `+ flink_version: enum value [1.1,1.12]`
+      - `+ graph_type: enum value [simple_graph,job_graph]`
+      - `* body: object<GenStreamGraphReq> -> object<CreateFlinkSqlJobGraphRequestBody>`
+    - 响应参数变更
+      - `+ stream_graph`
+      - `+ error_code`
+      - `+ is_success`
+      - `+ message`
+  - **CreateIefMessageChannel**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **ListQueueProperties**
+    - 响应参数变更
+      - `* properties: list<object> -> list<Property>`
+  - **UploadJobResources**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<UploadPackageGroupReq> -> object<UploadJobResourcesRequestBody>`
+  - **ListSparkJobs**
+    - 响应参数变更
+      - `+ total`
+      - `+ sessions`
+      - `+ create_time`
+      - `+ from`
+  - **CreateSparkJob**
+    - 请求参数变更
+      - `* body: object<BatchJobInfo> -> object<CreateSparkJobRequestBody>`
+  - **CreateSqlJob**
+    - 请求参数变更
+      - `+ engine_type`
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+  - **CreateDatabase**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+  - **CreateTable**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateTableReq> -> object<CreateTableRequestBody>`
+  - **CreateQueue**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateQueueReq> -> object<CreateQueueRequestBody>`
+  - **CreateEnhancedConnection**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateEnhancedConnectionsReq> -> object<CreateEnhancedConnectionRequestBody>`
+  - **ListElasticResourcePools**
+    - 响应参数变更
+      - `* elastic_resource_pools: list<ElasticResourcePoolsResponse> -> list<ElasticResourcePool>`
+  - **CreateElasticResourcePool**
+    - 请求参数变更
+      - `* tags: list<TmsTag> -> list<Tag>`
+  - **UpdateElasticResourcePoolQueue**
+    - 请求参数变更
+      - `* queue_scaling_policies: list<QueueScalingPolicyInfo> -> list<QueueScalingPolicy>`
+      - `* body: object<UpdateElasticResourcePoolQueueScalingPolicyInfo> -> object<UpdateElasticResourcePoolQueueRequestBody>`
+  - **ListFlinkSqlJobTemplates**
+    - 响应参数变更
+      - `+ template_list`
+      - `+ is_success`
+      - `+ message`
+  - **CreateFlinkSqlJobTemplate**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateFlinkTemplateRequestBody> -> object<CreateFlinkSqlJobTemplateRequestBody>`
+    - 响应参数变更
+      - `+ template`
+      - `+ is_success`
+      - `+ message`
+  - **CreateFlinkSqlJob**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+      - `+ job`
+  - **CreateFlinkJarJob**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateFlinkJarRequestBody> -> object<CreateFlinkJarJobRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+      - `+ job`
+  - **UpdateFlinkJobStatusReport**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **RunIefJobActionCallBack**
+    - 请求参数变更
+      - `* state: object<state> -> object<State>`
+      - `* body: object<IefFlinkJobMessagesReq> -> object<RunIefJobActionCallBackRequestBody>`
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **CreateIefSystemEvents**
+    - 响应参数变更
+      - `+ is_success`
+      - `+ message`
+  - **CreateDatasourceConnection**
+    - 请求参数变更
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateDatasourceConnectionReq> -> object<CreateDatasourceConnectionRequestBody>`
+  - **ListElasticResourcePoolQueues**
+    - 响应参数变更
+      - `* queues.queue_scaling_policies: list<QueueScalingPoliciesResponse> -> list<QueueScalingPolicy>`
+      - `* queues: list<QueueInfo> -> list<ElasticResourcePoolQueue>`
+  - **ShowSparkJobTemplate**
+    - 响应参数变更
+      - `* body: object<BatchJobInfo> -> object<SparkJobTemplateDetail>`
+  - **ListSparkJobTemplates**
+    - 响应参数变更
+      - `* body: object<BatchJobInfo> -> object<SparkJobTemplateDetail>`
+      - `* templates: list<JobTemplateInfo> -> list<SparkJobTemplate>`
+
+### HuaweiCloud SDK DSC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ListRelationDb`
+    - `ListRelationTable`
+    - `ListRelationColumn`
+    - `ListRelationBuckets`
+    - `ListRelationFile`
+
+### HuaweiCloud SDK GA
+
+- _新增特性_
+  - 支持接口`ListResourcesByTag`、`CountResourcesByTag`、`ListTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAccelerator**
+    - 请求参数变更
+      - `+ accelerator.ip_sets.ip_type: enum value [IPV6]`
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunImageMediaTagging**
+    - 请求参数变更
+      - `- use_default_tags`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持接口`UpdateApplication`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateBatchTask**
+    - 请求参数变更
+      - `+ task_mode`
+      - `+ task_ext_info`
+    - 响应参数变更
+      - `+ task_ext_info`
+      - `+ task_mode`
+  - **ListBatchTasks**
+    - 响应参数变更
+      - `+ task_ext_info`
+      - `+ task_mode`
+      - `+ batchtasks.task_mode`
+      - `+ batchtasks.task_ext_info`
+  - **ShowBatchTask**
+    - 响应参数变更
+      - `+ task_ext_info`
+      - `+ task_mode`
+      - `+ batchtask.task_mode`
+      - `+ batchtask.task_ext_info`
+  - **CreateOtaPackage**
+    - 请求参数变更
+      - `+ file_location.obs_location.sign`
+    - 响应参数变更
+      - `+ file_location.obs_location.sign`
+  - **ShowOtaPackage**
+    - 响应参数变更
+      - `+ file_location.obs_location.sign`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowDiagnosisPreCheck`
+    - `ListMessageDiagnosisReports`
+    - `CreateMessageDiagnosisTask`
+    - `BatchDeleteMessageDiagnosisReports`
+    - `ShowMessageDiagnosisReport`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstanceByEngine**
+    - 请求参数变更
+      - `+ ipv6_enable`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ broker_ssl_enable`
+      - `+ new_auth_cert`
+      - `+ available_zone_names`
+  - **ShowConnectorTask**
+    - 响应参数变更
+      - `+ source_task.rename_topic_enabled`
+      - `- source_task.rename_topic_enable`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `- ipv6_enable`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ broker_ssl_enable`
+      - `+ new_auth_cert`
+      - `+ available_zone_names`
+      - `+ instances.broker_ssl_enable`
+      - `+ instances.available_zone_names`
+      - `+ instances.new_auth_cert`
+  - **CreateConnectorTask**
+    - 请求参数变更
+      - `+ source_task.rename_topic_enabled`
+      - `- source_task.rename_topic_enable`
+    - 响应参数变更
+      - `+ source_task.rename_topic_enabled`
+      - `- source_task.rename_topic_enable`
+  - **ListConnectorTasks**
+    - 响应参数变更
+      - `+ tasks.source_task.rename_topic_enabled`
+      - `- tasks.source_task.rename_topic_enable`
+  - **CreateReassignmentTask**
+    - 请求参数变更
+      - `+ time_estimate`
+    - 响应参数变更
+      - `+ reassignment_time`
+
+### HuaweiCloud SDK NLP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunTextTranslation**
+    - 响应参数变更
+      - `+ from`
+      - `+ to`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeMvsInvoice**
+    - 响应参数变更
+      - `+ result.reverse_issue`
+  - **RecognizeThailandLicensePlate**
+    - 响应参数变更
+      - `+ result.province`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`BatchStopInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListMessageTrace**
+    - 响应参数变更
+      - `* trace.retry_times: string -> int32`
+  - **CreateInstanceByEngine**
+    - 请求参数变更
+      - `+ engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[5.x](tag:hcs)]`
+      - `- engine_version: enum value [4.8.0]`
+      - `+ product_id: enum value [[c6.4u8g.cluster.small](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.2u8g.single.x86](tag:hcs),[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.4u16g.cluster.x86](tag:hcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.8u32g.cluster.x86](tag:hcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.16u64g.cluster.x86](tag:hcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.32u128g.cluster.x86](tag:hcs),[c6.2u8g.single.arm](tag:hcs),[c6.4u16g.cluster.arm](tag:hcs),[c6.8u32g.cluster.arm](tag:hcs),[c6.16u64g.cluster.arm](tag:hcs),[c6.32u128g.cluster.arm](tag:hcs)]`
+      - `- product_id: enum value [c6.4u8g.cluster.small,c6.4u8g.cluster,c6.8u16g.cluster,c6.12u24g.cluster,c6.16u32g.cluster]`
+  - **CreateConsumerGroupOrBatchDeleteConsumerGroup**
+    - 请求参数变更
+      - `- createdAt`
+      - `- permissions`
+  - **ListInstanceConsumerGroups**
+    - 响应参数变更
+      - `* groups.createdAt: string -> int64`
+  - **BatchUpdateConsumerGroup**
+    - 请求参数变更
+      - `- groups.createdAt`
+      - `- groups.permissions`
+      - `* groups: list<ConsumerGroup> -> list<CreateOrUpdateConsumerGroup>`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `+ engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[5.x](tag:hcs)]`
+      - `- engine_version: enum value [4.8.0]`
+      - `+ product_id: enum value [[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.4u16g.cluster.x86](tag:hcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.8u32g.cluster.x86](tag:hcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.16u64g.cluster.x86](tag:hcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.32u128g.cluster.x86](tag:hcs),[c6.4u16g.cluster.arm](tag:hcs),[c6.8u32g.cluster.arm](tag:hcs),[c6.16u64g.cluster.arm](tag:hcs),[c6.32u128g.cluster.arm](tag:hcs)]`
+      - `- product_id: enum value [c6.4u8g.cluster,c6.8u16g.cluster,c6.12u24g.cluster,c6.16u32g.cluster]`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PublishHttpDetect**
+    - 请求参数变更
+      - `+ protocol: enum value [https]`
+      - `- protocol: enum value [https;]`
+  - **UpdateTaskStatus**
+    - 请求参数变更
+      - `+ operation: enum value [network_check]`
+  - **UpdateCopyState**
+    - 请求参数变更
+      - `+ copystate: enum value [FINISHED]`
+  - **UpdateNetworkCheckInfo**
+    - 请求参数变更
+      - `+ domain_connectivity`
+      - `+ destination_connectivity`
+  - **ListTasks**
+    - 响应参数变更
+      - `+ tasks.network_check_info.domain_connectivity`
+      - `+ tasks.network_check_info.destination_connectivity`
+  - **ShowTask**
+    - 响应参数变更
+      - `+ network_check_info.domain_connectivity`
+      - `+ network_check_info.destination_connectivity`
+
 # 3.1.87 2024-03-21
 
 ### HuaweiCloud SDK AOM

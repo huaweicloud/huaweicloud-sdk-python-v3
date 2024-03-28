@@ -32,9 +32,9 @@ class DeleteQueuePropertyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_success: 是否更新成功
+        :param is_success: 执行请求是否成功。“true”表示请求执行成功。
         :type is_success: bool
-        :param message: 接口相关说明
+        :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         """
         
@@ -53,7 +53,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
     def is_success(self):
         """Gets the is_success of this DeleteQueuePropertyResponse.
 
-        是否更新成功
+        执行请求是否成功。“true”表示请求执行成功。
 
         :return: The is_success of this DeleteQueuePropertyResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
     def is_success(self, is_success):
         """Sets the is_success of this DeleteQueuePropertyResponse.
 
-        是否更新成功
+        执行请求是否成功。“true”表示请求执行成功。
 
         :param is_success: The is_success of this DeleteQueuePropertyResponse.
         :type is_success: bool
@@ -75,7 +75,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
     def message(self):
         """Gets the message of this DeleteQueuePropertyResponse.
 
-        接口相关说明
+        系统提示信息，执行成功时，信息可能为空。
 
         :return: The message of this DeleteQueuePropertyResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this DeleteQueuePropertyResponse.
 
-        接口相关说明
+        系统提示信息，执行成功时，信息可能为空。
 
         :param message: The message of this DeleteQueuePropertyResponse.
         :type message: str

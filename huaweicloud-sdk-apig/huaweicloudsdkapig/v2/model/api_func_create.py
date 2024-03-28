@@ -24,7 +24,8 @@ class ApiFuncCreate:
         'version': 'str',
         'alias_urn': 'str',
         'timeout': 'int',
-        'authorizer_id': 'str'
+        'authorizer_id': 'str',
+        'req_protocol': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ApiFuncCreate:
         'version': 'version',
         'alias_urn': 'alias_urn',
         'timeout': 'timeout',
-        'authorizer_id': 'authorizer_id'
+        'authorizer_id': 'authorizer_id',
+        'req_protocol': 'req_protocol'
     }
 
-    def __init__(self, function_urn=None, remark=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, authorizer_id=None):
+    def __init__(self, function_urn=None, remark=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, authorizer_id=None, req_protocol=None):
         """ApiFuncCreate
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ApiFuncCreate:
         :type timeout: int
         :param authorizer_id: 后端自定义认证ID
         :type authorizer_id: str
+        :param req_protocol: 函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+        :type req_protocol: str
         """
         
         
@@ -71,6 +75,7 @@ class ApiFuncCreate:
         self._alias_urn = None
         self._timeout = None
         self._authorizer_id = None
+        self._req_protocol = None
         self.discriminator = None
 
         self.function_urn = function_urn
@@ -85,6 +90,8 @@ class ApiFuncCreate:
         self.timeout = timeout
         if authorizer_id is not None:
             self.authorizer_id = authorizer_id
+        if req_protocol is not None:
+            self.req_protocol = req_protocol
 
     @property
     def function_urn(self):
@@ -261,6 +268,28 @@ class ApiFuncCreate:
         :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
+
+    @property
+    def req_protocol(self):
+        """Gets the req_protocol of this ApiFuncCreate.
+
+        函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+
+        :return: The req_protocol of this ApiFuncCreate.
+        :rtype: str
+        """
+        return self._req_protocol
+
+    @req_protocol.setter
+    def req_protocol(self, req_protocol):
+        """Sets the req_protocol of this ApiFuncCreate.
+
+        函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+
+        :param req_protocol: The req_protocol of this ApiFuncCreate.
+        :type req_protocol: str
+        """
+        self._req_protocol = req_protocol
 
     def to_dict(self):
         """Returns the model properties as a dict"""

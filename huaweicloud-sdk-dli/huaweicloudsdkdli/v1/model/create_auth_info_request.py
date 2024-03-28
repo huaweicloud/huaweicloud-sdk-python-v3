@@ -17,7 +17,7 @@ class CreateAuthInfoRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateAuthInfoReq'
+        'body': 'CreateAuthInfoRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateAuthInfoRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateAuthInfoRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateAuthInfoReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateAuthInfoRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateAuthInfoRequest:
         """Gets the body of this CreateAuthInfoRequest.
 
         :return: The body of this CreateAuthInfoRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateAuthInfoReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateAuthInfoRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateAuthInfoRequest:
         """Sets the body of this CreateAuthInfoRequest.
 
         :param body: The body of this CreateAuthInfoRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateAuthInfoReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateAuthInfoRequestBody`
         """
         self._body = body
 

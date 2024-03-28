@@ -19,16 +19,18 @@ class ResponseInfoResp:
     openapi_types = {
         'status': 'int',
         'body': 'str',
+        'headers': 'list[ResponseInfoHeader]',
         'default': 'bool'
     }
 
     attribute_map = {
         'status': 'status',
         'body': 'body',
+        'headers': 'headers',
         'default': 'default'
     }
 
-    def __init__(self, status=None, body=None, default=None):
+    def __init__(self, status=None, body=None, headers=None, default=None):
         """ResponseInfoResp
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ResponseInfoResp:
         :type status: int
         :param body: 响应的Body模板
         :type body: str
+        :param headers: 自定义的响应头
+        :type headers: list[:class:`huaweicloudsdkapig.v2.ResponseInfoHeader`]
         :param default: 是否为默认响应
         :type default: bool
         """
@@ -45,6 +49,7 @@ class ResponseInfoResp:
 
         self._status = None
         self._body = None
+        self._headers = None
         self._default = None
         self.discriminator = None
 
@@ -52,6 +57,8 @@ class ResponseInfoResp:
             self.status = status
         if body is not None:
             self.body = body
+        if headers is not None:
+            self.headers = headers
         if default is not None:
             self.default = default
 
@@ -98,6 +105,28 @@ class ResponseInfoResp:
         :type body: str
         """
         self._body = body
+
+    @property
+    def headers(self):
+        """Gets the headers of this ResponseInfoResp.
+
+        自定义的响应头
+
+        :return: The headers of this ResponseInfoResp.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ResponseInfoHeader`]
+        """
+        return self._headers
+
+    @headers.setter
+    def headers(self, headers):
+        """Sets the headers of this ResponseInfoResp.
+
+        自定义的响应头
+
+        :param headers: The headers of this ResponseInfoResp.
+        :type headers: list[:class:`huaweicloudsdkapig.v2.ResponseInfoHeader`]
+        """
+        self._headers = headers
 
     @property
     def default(self):

@@ -24,7 +24,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
         'job_type': 'str',
         'row_count': 'int',
         'input_size': 'int',
-        'schema': 'list[object]',
+        'schema': 'list[dict(str, str)]',
         'rows': 'list[list[object]]'
     }
 
@@ -57,7 +57,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
         :param input_size: 作业执行过程中扫描的数据量。
         :type input_size: int
         :param schema: 作业结果列名称和类型。
-        :type schema: list[object]
+        :type schema: list[dict(str, str)]
         :param rows: 作业结果集。
         :type rows: list[list[object]]
         """
@@ -230,7 +230,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
         作业结果列名称和类型。
 
         :return: The schema of this PreviewSqlJobResultResponse.
-        :rtype: list[object]
+        :rtype: list[dict(str, str)]
         """
         return self._schema
 
@@ -241,7 +241,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
         作业结果列名称和类型。
 
         :param schema: The schema of this PreviewSqlJobResultResponse.
-        :type schema: list[object]
+        :type schema: list[dict(str, str)]
         """
         self._schema = schema
 

@@ -19,7 +19,7 @@ class UpdateElasticResourcePoolQueueRequest:
     openapi_types = {
         'elastic_resource_pool_name': 'str',
         'queue_name': 'str',
-        'body': 'UpdateElasticResourcePoolQueueScalingPolicyInfo'
+        'body': 'UpdateElasticResourcePoolQueueRequestBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateElasticResourcePoolQueueRequest:
         :param queue_name: 队列名称
         :type queue_name: str
         :param body: Body of the UpdateElasticResourcePoolQueueRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueScalingPolicyInfo`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueRequestBody`
         """
         
         
@@ -102,7 +102,7 @@ class UpdateElasticResourcePoolQueueRequest:
         """Gets the body of this UpdateElasticResourcePoolQueueRequest.
 
         :return: The body of this UpdateElasticResourcePoolQueueRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueScalingPolicyInfo`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueRequestBody`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class UpdateElasticResourcePoolQueueRequest:
         """Sets the body of this UpdateElasticResourcePoolQueueRequest.
 
         :param body: The body of this UpdateElasticResourcePoolQueueRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueScalingPolicyInfo`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueRequestBody`
         """
         self._body = body
 

@@ -3542,6 +3542,156 @@ class ApigAsyncClient(Client):
 
         return http_info
 
+    def export_api_definitions_async_async(self, request):
+        """异步导出API
+
+        导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportApiDefinitionsAsync
+        :type request: :class:`huaweicloudsdkapig.v2.ExportApiDefinitionsAsyncRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ExportApiDefinitionsAsyncResponse`
+        """
+        http_info = self._export_api_definitions_async_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_api_definitions_async_async_invoker(self, request):
+        http_info = self._export_api_definitions_async_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_api_definitions_async_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/openapi/async-export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportApiDefinitionsAsyncResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'oas_version' in local_var_params:
+            query_params.append(('oas_version', local_var_params['oas_version']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_api_definitions_async_async(self, request):
+        """异步导入API
+
+        导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportApiDefinitionsAsync
+        :type request: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsAsyncRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsAsyncResponse`
+        """
+        http_info = self._import_api_definitions_async_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_api_definitions_async_async_invoker(self, request):
+        http_info = self._import_api_definitions_async_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_api_definitions_async_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/openapi/async-import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportApiDefinitionsAsyncResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'is_create_group' in local_var_params:
+            form_params['is_create_group'] = local_var_params['is_create_group']
+        if 'group_id' in local_var_params:
+            form_params['group_id'] = local_var_params['group_id']
+        if 'extend_mode' in local_var_params:
+            form_params['extend_mode'] = local_var_params['extend_mode']
+        if 'simple_mode' in local_var_params:
+            form_params['simple_mode'] = local_var_params['simple_mode']
+        if 'mock_mode' in local_var_params:
+            form_params['mock_mode'] = local_var_params['mock_mode']
+        if 'api_mode' in local_var_params:
+            form_params['api_mode'] = local_var_params['api_mode']
+        if 'file_name' in local_var_params:
+            form_params['file_name'] = local_var_params['file_name']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def import_microservice_async(self, request):
         """导入微服务
 
@@ -5137,6 +5287,75 @@ class ApigAsyncClient(Client):
 
         return http_info
 
+    def list_instance_features_async(self, request):
+        """查询实例支持的特性列表
+
+        查询实例支持的特性列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceFeatures
+        :type request: :class:`huaweicloudsdkapig.v2.ListInstanceFeaturesRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListInstanceFeaturesResponse`
+        """
+        http_info = self._list_instance_features_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_features_async_invoker(self, request):
+        http_info = self._list_instance_features_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_features_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/instance-features",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceFeaturesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instance_tags_async(self, request):
         """查询单个实例标签
 
@@ -6621,6 +6840,73 @@ class ApigAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'app_quota_id' in local_var_params:
             path_params['app_quota_id'] = local_var_params['app_quota_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_async_task_result_async(self, request):
+        """获取异步任务结果
+
+        获取异步任务结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAsyncTaskResult
+        :type request: :class:`huaweicloudsdkapig.v2.ShowAsyncTaskResultRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ShowAsyncTaskResultResponse`
+        """
+        http_info = self._show_async_task_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_async_task_result_async_invoker(self, request):
+        http_info = self._show_async_task_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_async_task_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/async-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAsyncTaskResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
 
         query_params = []
 
@@ -8535,6 +8821,75 @@ class ApigAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'sign_id' in local_var_params:
             path_params['sign_id'] = local_var_params['sign_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sl_domain_setting_v2_async(self, request):
+        """设置调试域名是否可以访问
+
+        禁用或启用API分组绑定的调试域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSlDomainSettingV2
+        :type request: :class:`huaweicloudsdkapig.v2.UpdateSlDomainSettingV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.UpdateSlDomainSettingV2Response`
+        """
+        http_info = self._update_sl_domain_setting_v2_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sl_domain_setting_v2_async_invoker(self, request):
+        http_info = self._update_sl_domain_setting_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sl_domain_setting_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/sl-domain-access-settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSlDomainSettingV2Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
 
         query_params = []
 

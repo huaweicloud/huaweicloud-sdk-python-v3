@@ -21,7 +21,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
         'type': 'str',
         'id': 'str',
         'name': 'str',
-        'body': 'BatchJobInfo',
+        'body': 'SparkJobTemplateDetail',
         'group': 'str',
         'description': 'str',
         'language': 'str',
@@ -51,7 +51,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
         :param name: 模板名字
         :type name: str
         :param body: 
-        :type body: :class:`huaweicloudsdkdli.v1.BatchJobInfo`
+        :type body: :class:`huaweicloudsdkdli.v1.SparkJobTemplateDetail`
         :param group: 组名
         :type group: str
         :param description: 模板描述
@@ -162,7 +162,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
         """Gets the body of this ShowSparkJobTemplateResponse.
 
         :return: The body of this ShowSparkJobTemplateResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.BatchJobInfo`
+        :rtype: :class:`huaweicloudsdkdli.v1.SparkJobTemplateDetail`
         """
         return self._body
 
@@ -171,7 +171,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
         """Sets the body of this ShowSparkJobTemplateResponse.
 
         :param body: The body of this ShowSparkJobTemplateResponse.
-        :type body: :class:`huaweicloudsdkdli.v1.BatchJobInfo`
+        :type body: :class:`huaweicloudsdkdli.v1.SparkJobTemplateDetail`
         """
         self._body = body
 

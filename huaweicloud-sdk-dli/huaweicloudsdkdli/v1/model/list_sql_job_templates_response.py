@@ -21,7 +21,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'sql_count': 'int',
-        'sqls': 'list[SqlsResp]'
+        'sqls': 'list[SqlJobTemplate]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
         :param sql_count: SQL模板总数。
         :type sql_count: int
         :param sqls: 
-        :type sqls: list[:class:`huaweicloudsdkdli.v1.SqlsResp`]
+        :type sqls: list[:class:`huaweicloudsdkdli.v1.SqlJobTemplate`]
         """
         
         super(ListSqlJobTemplatesResponse, self).__init__()
@@ -134,7 +134,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
         """Gets the sqls of this ListSqlJobTemplatesResponse.
 
         :return: The sqls of this ListSqlJobTemplatesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.SqlsResp`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.SqlJobTemplate`]
         """
         return self._sqls
 
@@ -143,7 +143,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
         """Sets the sqls of this ListSqlJobTemplatesResponse.
 
         :param sqls: The sqls of this ListSqlJobTemplatesResponse.
-        :type sqls: list[:class:`huaweicloudsdkdli.v1.SqlsResp`]
+        :type sqls: list[:class:`huaweicloudsdkdli.v1.SqlJobTemplate`]
         """
         self._sqls = sqls
 

@@ -18,7 +18,7 @@ class CreateEnhancedConnectionRoutesRequest:
 
     openapi_types = {
         'connection_id': 'str',
-        'body': 'CreateRouteRequestBody'
+        'body': 'CreateEnhancedConnectionRoutesRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateEnhancedConnectionRoutesRequest:
         :param connection_id: 连接ID，用于标识跨源连接的UUID。
         :type connection_id: str
         :param body: Body of the CreateEnhancedConnectionRoutesRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateRouteRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class CreateEnhancedConnectionRoutesRequest:
         """Gets the body of this CreateEnhancedConnectionRoutesRequest.
 
         :return: The body of this CreateEnhancedConnectionRoutesRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateRouteRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateEnhancedConnectionRoutesRequest:
         """Sets the body of this CreateEnhancedConnectionRoutesRequest.
 
         :param body: The body of this CreateEnhancedConnectionRoutesRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateRouteRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequestBody`
         """
         self._body = body
 

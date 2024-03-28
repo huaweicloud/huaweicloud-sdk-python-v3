@@ -18,7 +18,7 @@ class ExportSqlJobResultRequest:
 
     openapi_types = {
         'job_id': 'str',
-        'body': 'ExportSqlResultRequestBody'
+        'body': 'ExportSqlJobResultRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ExportSqlJobResultRequest:
         :param job_id: 作业ID
         :type job_id: str
         :param body: Body of the ExportSqlJobResultRequest
-        :type body: :class:`huaweicloudsdkdli.v1.ExportSqlResultRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class ExportSqlJobResultRequest:
         """Gets the body of this ExportSqlJobResultRequest.
 
         :return: The body of this ExportSqlJobResultRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.ExportSqlResultRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class ExportSqlJobResultRequest:
         """Sets the body of this ExportSqlJobResultRequest.
 
         :param body: The body of this ExportSqlJobResultRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.ExportSqlResultRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequestBody`
         """
         self._body = body
 

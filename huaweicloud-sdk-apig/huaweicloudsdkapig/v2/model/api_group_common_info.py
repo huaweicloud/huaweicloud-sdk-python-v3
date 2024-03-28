@@ -24,7 +24,8 @@ class ApiGroupCommonInfo:
         'register_time': 'datetime',
         'update_time': 'datetime',
         'on_sell_status': 'int',
-        'url_domains': 'list[UrlDomain]'
+        'url_domains': 'list[UrlDomain]',
+        'sl_domain_access_enabled': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ApiGroupCommonInfo:
         'register_time': 'register_time',
         'update_time': 'update_time',
         'on_sell_status': 'on_sell_status',
-        'url_domains': 'url_domains'
+        'url_domains': 'url_domains',
+        'sl_domain_access_enabled': 'sl_domain_access_enabled'
     }
 
-    def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None):
+    def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None, sl_domain_access_enabled=None):
         """ApiGroupCommonInfo
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ApiGroupCommonInfo:
         :type on_sell_status: int
         :param url_domains: 分组上绑定的独立域名列表
         :type url_domains: list[:class:`huaweicloudsdkapig.v2.UrlDomain`]
+        :param sl_domain_access_enabled: 调试域名是否可以访问，true表示可以访问，false表示禁止访问
+        :type sl_domain_access_enabled: bool
         """
         
         
@@ -71,6 +75,7 @@ class ApiGroupCommonInfo:
         self._update_time = None
         self._on_sell_status = None
         self._url_domains = None
+        self._sl_domain_access_enabled = None
         self.discriminator = None
 
         self.id = id
@@ -82,6 +87,8 @@ class ApiGroupCommonInfo:
         self.on_sell_status = on_sell_status
         if url_domains is not None:
             self.url_domains = url_domains
+        if sl_domain_access_enabled is not None:
+            self.sl_domain_access_enabled = sl_domain_access_enabled
 
     @property
     def id(self):
@@ -258,6 +265,28 @@ class ApiGroupCommonInfo:
         :type url_domains: list[:class:`huaweicloudsdkapig.v2.UrlDomain`]
         """
         self._url_domains = url_domains
+
+    @property
+    def sl_domain_access_enabled(self):
+        """Gets the sl_domain_access_enabled of this ApiGroupCommonInfo.
+
+        调试域名是否可以访问，true表示可以访问，false表示禁止访问
+
+        :return: The sl_domain_access_enabled of this ApiGroupCommonInfo.
+        :rtype: bool
+        """
+        return self._sl_domain_access_enabled
+
+    @sl_domain_access_enabled.setter
+    def sl_domain_access_enabled(self, sl_domain_access_enabled):
+        """Sets the sl_domain_access_enabled of this ApiGroupCommonInfo.
+
+        调试域名是否可以访问，true表示可以访问，false表示禁止访问
+
+        :param sl_domain_access_enabled: The sl_domain_access_enabled of this ApiGroupCommonInfo.
+        :type sl_domain_access_enabled: bool
+        """
+        self._sl_domain_access_enabled = sl_domain_access_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

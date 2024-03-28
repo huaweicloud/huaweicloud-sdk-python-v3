@@ -93,14 +93,11 @@ class ScriptInfo:
         self._approvers = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if type is not None:
-            self.type = type
+        self.name = name
+        self.type = type
         if directory is not None:
             self.directory = directory
-        if content is not None:
-            self.content = content
+        self.content = content
         if connection_name is not None:
             self.connection_name = connection_name
         if database is not None:

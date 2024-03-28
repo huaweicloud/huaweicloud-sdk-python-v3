@@ -17,7 +17,7 @@ class CreateIefMessageChannelRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateIefMessageChannelReq'
+        'body': 'CreateIefMessageChannelRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateIefMessageChannelRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateIefMessageChannelRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateIefMessageChannelRequest:
         """Gets the body of this CreateIefMessageChannelRequest.
 
         :return: The body of this CreateIefMessageChannelRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateIefMessageChannelRequest:
         """Sets the body of this CreateIefMessageChannelRequest.
 
         :param body: The body of this CreateIefMessageChannelRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequestBody`
         """
         self._body = body
 

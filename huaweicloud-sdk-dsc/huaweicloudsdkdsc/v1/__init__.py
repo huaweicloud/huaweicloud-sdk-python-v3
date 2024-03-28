@@ -63,16 +63,6 @@ from huaweicloudsdkdsc.v1.model.list_buckets_request import ListBucketsRequest
 from huaweicloudsdkdsc.v1.model.list_buckets_response import ListBucketsResponse
 from huaweicloudsdkdsc.v1.model.list_db_mask_task_request import ListDbMaskTaskRequest
 from huaweicloudsdkdsc.v1.model.list_db_mask_task_response import ListDbMaskTaskResponse
-from huaweicloudsdkdsc.v1.model.list_relation_buckets_request import ListRelationBucketsRequest
-from huaweicloudsdkdsc.v1.model.list_relation_buckets_response import ListRelationBucketsResponse
-from huaweicloudsdkdsc.v1.model.list_relation_column_request import ListRelationColumnRequest
-from huaweicloudsdkdsc.v1.model.list_relation_column_response import ListRelationColumnResponse
-from huaweicloudsdkdsc.v1.model.list_relation_db_request import ListRelationDbRequest
-from huaweicloudsdkdsc.v1.model.list_relation_db_response import ListRelationDbResponse
-from huaweicloudsdkdsc.v1.model.list_relation_file_request import ListRelationFileRequest
-from huaweicloudsdkdsc.v1.model.list_relation_file_response import ListRelationFileResponse
-from huaweicloudsdkdsc.v1.model.list_relation_table_request import ListRelationTableRequest
-from huaweicloudsdkdsc.v1.model.list_relation_table_response import ListRelationTableResponse
 from huaweicloudsdkdsc.v1.model.list_rule_groups_request import ListRuleGroupsRequest
 from huaweicloudsdkdsc.v1.model.list_rule_groups_response import ListRuleGroupsResponse
 from huaweicloudsdkdsc.v1.model.mask_strategies import MaskStrategies
@@ -84,7 +74,6 @@ from huaweicloudsdkdsc.v1.model.period_order_request import PeriodOrderRequest
 from huaweicloudsdkdsc.v1.model.product_info import ProductInfo
 from huaweicloudsdkdsc.v1.model.product_info_bean import ProductInfoBean
 from huaweicloudsdkdsc.v1.model.product_order_info import ProductOrderInfo
-from huaweicloudsdkdsc.v1.model.relation_simple_info import RelationSimpleInfo
 from huaweicloudsdkdsc.v1.model.response_group import ResponseGroup
 from huaweicloudsdkdsc.v1.model.response_rule import ResponseRule
 from huaweicloudsdkdsc.v1.model.rule_change_request import RuleChangeRequest

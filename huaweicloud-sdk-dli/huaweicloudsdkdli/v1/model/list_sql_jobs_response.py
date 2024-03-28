@@ -21,7 +21,7 @@ class ListSqlJobsResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'job_count': 'int',
-        'jobs': 'list[ListJobsJobs]'
+        'jobs': 'list[SqlJob]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListSqlJobsResponse(SdkResponse):
         :param job_count: 作业总个数。
         :type job_count: int
         :param jobs: 作业信息。
-        :type jobs: list[:class:`huaweicloudsdkdli.v1.ListJobsJobs`]
+        :type jobs: list[:class:`huaweicloudsdkdli.v1.SqlJob`]
         """
         
         super(ListSqlJobsResponse, self).__init__()
@@ -136,7 +136,7 @@ class ListSqlJobsResponse(SdkResponse):
         作业信息。
 
         :return: The jobs of this ListSqlJobsResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ListJobsJobs`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.SqlJob`]
         """
         return self._jobs
 
@@ -147,7 +147,7 @@ class ListSqlJobsResponse(SdkResponse):
         作业信息。
 
         :param jobs: The jobs of this ListSqlJobsResponse.
-        :type jobs: list[:class:`huaweicloudsdkdli.v1.ListJobsJobs`]
+        :type jobs: list[:class:`huaweicloudsdkdli.v1.SqlJob`]
         """
         self._jobs = jobs
 

@@ -20,7 +20,7 @@ class ListEnhancedConnectionsResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'connections': 'list[ListEnhancedConnectionsDetail]',
+        'connections': 'list[EnhancedConnection]',
         'count': 'int'
     }
 
@@ -41,7 +41,7 @@ class ListEnhancedConnectionsResponse(SdkResponse):
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         :param connections: 跨源连接信息列表。
-        :type connections: list[:class:`huaweicloudsdkdli.v1.ListEnhancedConnectionsDetail`]
+        :type connections: list[:class:`huaweicloudsdkdli.v1.EnhancedConnection`]
         :param count: 返回的跨源连接个数。
         :type count: int
         """
@@ -114,7 +114,7 @@ class ListEnhancedConnectionsResponse(SdkResponse):
         跨源连接信息列表。
 
         :return: The connections of this ListEnhancedConnectionsResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ListEnhancedConnectionsDetail`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnection`]
         """
         return self._connections
 
@@ -125,7 +125,7 @@ class ListEnhancedConnectionsResponse(SdkResponse):
         跨源连接信息列表。
 
         :param connections: The connections of this ListEnhancedConnectionsResponse.
-        :type connections: list[:class:`huaweicloudsdkdli.v1.ListEnhancedConnectionsDetail`]
+        :type connections: list[:class:`huaweicloudsdkdli.v1.EnhancedConnection`]
         """
         self._connections = connections
 

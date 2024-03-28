@@ -251,6 +251,9 @@ from huaweicloudsdkiotda.v5.model.unfreeze_device_response import UnfreezeDevice
 from huaweicloudsdkiotda.v5.model.untag_device_request import UntagDeviceRequest
 from huaweicloudsdkiotda.v5.model.untag_device_response import UntagDeviceResponse
 from huaweicloudsdkiotda.v5.model.update_action_req import UpdateActionReq
+from huaweicloudsdkiotda.v5.model.update_application_dto import UpdateApplicationDTO
+from huaweicloudsdkiotda.v5.model.update_application_request import UpdateApplicationRequest
+from huaweicloudsdkiotda.v5.model.update_application_response import UpdateApplicationResponse
 from huaweicloudsdkiotda.v5.model.update_desired import UpdateDesired
 from huaweicloudsdkiotda.v5.model.update_desireds import UpdateDesireds
 from huaweicloudsdkiotda.v5.model.update_device import UpdateDevice

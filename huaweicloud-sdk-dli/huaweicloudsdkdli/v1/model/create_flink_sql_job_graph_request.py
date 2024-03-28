@@ -18,7 +18,7 @@ class CreateFlinkSqlJobGraphRequest:
 
     openapi_types = {
         'job_id': 'str',
-        'body': 'GenStreamGraphReq'
+        'body': 'CreateFlinkSqlJobGraphRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateFlinkSqlJobGraphRequest:
         :param job_id: 
         :type job_id: str
         :param body: Body of the CreateFlinkSqlJobGraphRequest
-        :type body: :class:`huaweicloudsdkdli.v1.GenStreamGraphReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobGraphRequestBody`
         """
         
         
@@ -70,7 +70,7 @@ class CreateFlinkSqlJobGraphRequest:
         """Gets the body of this CreateFlinkSqlJobGraphRequest.
 
         :return: The body of this CreateFlinkSqlJobGraphRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.GenStreamGraphReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobGraphRequestBody`
         """
         return self._body
 
@@ -79,7 +79,7 @@ class CreateFlinkSqlJobGraphRequest:
         """Sets the body of this CreateFlinkSqlJobGraphRequest.
 
         :param body: The body of this CreateFlinkSqlJobGraphRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.GenStreamGraphReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobGraphRequestBody`
         """
         self._body = body
 

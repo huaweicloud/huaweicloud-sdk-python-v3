@@ -20,7 +20,7 @@ class ImportFlinkJobsResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'job_mapping': 'list[JobMapInfo]'
+        'job_mapping': 'list[JobMap]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ImportFlinkJobsResponse(SdkResponse):
         :param message: 消息内容。
         :type message: str
         :param job_mapping: 作业导入结果。
-        :type job_mapping: list[:class:`huaweicloudsdkdli.v1.JobMapInfo`]
+        :type job_mapping: list[:class:`huaweicloudsdkdli.v1.JobMap`]
         """
         
         super(ImportFlinkJobsResponse, self).__init__()
@@ -107,7 +107,7 @@ class ImportFlinkJobsResponse(SdkResponse):
         作业导入结果。
 
         :return: The job_mapping of this ImportFlinkJobsResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobMapInfo`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.JobMap`]
         """
         return self._job_mapping
 
@@ -118,7 +118,7 @@ class ImportFlinkJobsResponse(SdkResponse):
         作业导入结果。
 
         :param job_mapping: The job_mapping of this ImportFlinkJobsResponse.
-        :type job_mapping: list[:class:`huaweicloudsdkdli.v1.JobMapInfo`]
+        :type job_mapping: list[:class:`huaweicloudsdkdli.v1.JobMap`]
         """
         self._job_mapping = job_mapping
 

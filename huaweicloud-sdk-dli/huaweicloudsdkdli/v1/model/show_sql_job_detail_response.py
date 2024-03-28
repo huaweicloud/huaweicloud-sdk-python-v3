@@ -36,7 +36,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
         'date_format': 'str',
         'timestamp_format': 'str',
         'compress': 'str',
-        'tags': 'list[TmsTagEntity]'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
@@ -100,10 +100,10 @@ class ShowSqlJobDetailResponse(SdkResponse):
         :type date_format: str
         :param timestamp_format: 导入作业时，指定表的时间格式
         :type timestamp_format: str
-        :param compress:   导出作业时，用户指定的压缩方式。
+        :param compress: 导出作业时，用户指定的压缩方式。
         :type compress: str
         :param tags: 作业标签
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         
         super(ShowSqlJobDetailResponse, self).__init__()
@@ -546,7 +546,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
     def compress(self):
         """Gets the compress of this ShowSqlJobDetailResponse.
 
-          导出作业时，用户指定的压缩方式。
+        导出作业时，用户指定的压缩方式。
 
         :return: The compress of this ShowSqlJobDetailResponse.
         :rtype: str
@@ -557,7 +557,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
     def compress(self, compress):
         """Sets the compress of this ShowSqlJobDetailResponse.
 
-          导出作业时，用户指定的压缩方式。
+        导出作业时，用户指定的压缩方式。
 
         :param compress: The compress of this ShowSqlJobDetailResponse.
         :type compress: str
@@ -571,7 +571,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
         作业标签
 
         :return: The tags of this ShowSqlJobDetailResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         return self._tags
 
@@ -582,7 +582,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
         作业标签
 
         :param tags: The tags of this ShowSqlJobDetailResponse.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
 

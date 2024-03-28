@@ -20,7 +20,7 @@ class ShowFlinkMetricResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'metrics': 'ShowJobMonitorInfoRespPayload'
+        'metrics': 'FlinkMetric'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ShowFlinkMetricResponse(SdkResponse):
         :param message: 消息内容。
         :type message: str
         :param metrics: 
-        :type metrics: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoRespPayload`
+        :type metrics: :class:`huaweicloudsdkdli.v1.FlinkMetric`
         """
         
         super(ShowFlinkMetricResponse, self).__init__()
@@ -105,7 +105,7 @@ class ShowFlinkMetricResponse(SdkResponse):
         """Gets the metrics of this ShowFlinkMetricResponse.
 
         :return: The metrics of this ShowFlinkMetricResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoRespPayload`
+        :rtype: :class:`huaweicloudsdkdli.v1.FlinkMetric`
         """
         return self._metrics
 
@@ -114,7 +114,7 @@ class ShowFlinkMetricResponse(SdkResponse):
         """Sets the metrics of this ShowFlinkMetricResponse.
 
         :param metrics: The metrics of this ShowFlinkMetricResponse.
-        :type metrics: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoRespPayload`
+        :type metrics: :class:`huaweicloudsdkdli.v1.FlinkMetric`
         """
         self._metrics = metrics
 

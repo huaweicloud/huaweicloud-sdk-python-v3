@@ -18,15 +18,17 @@ class ResponseInfo:
 
     openapi_types = {
         'status': 'int',
-        'body': 'str'
+        'body': 'str',
+        'headers': 'list[ResponseInfoHeader]'
     }
 
     attribute_map = {
         'status': 'status',
-        'body': 'body'
+        'body': 'body',
+        'headers': 'headers'
     }
 
-    def __init__(self, status=None, body=None):
+    def __init__(self, status=None, body=None, headers=None):
         """ResponseInfo
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ResponseInfo:
         :type status: int
         :param body: 响应的Body模板
         :type body: str
+        :param headers: 自定义的响应头
+        :type headers: list[:class:`huaweicloudsdkapig.v2.ResponseInfoHeader`]
         """
         
         
 
         self._status = None
         self._body = None
+        self._headers = None
         self.discriminator = None
 
         if status is not None:
             self.status = status
         if body is not None:
             self.body = body
+        if headers is not None:
+            self.headers = headers
 
     @property
     def status(self):
@@ -91,6 +98,28 @@ class ResponseInfo:
         :type body: str
         """
         self._body = body
+
+    @property
+    def headers(self):
+        """Gets the headers of this ResponseInfo.
+
+        自定义的响应头
+
+        :return: The headers of this ResponseInfo.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ResponseInfoHeader`]
+        """
+        return self._headers
+
+    @headers.setter
+    def headers(self, headers):
+        """Sets the headers of this ResponseInfo.
+
+        自定义的响应头
+
+        :param headers: The headers of this ResponseInfo.
+        :type headers: list[:class:`huaweicloudsdkapig.v2.ResponseInfoHeader`]
+        """
+        self._headers = headers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

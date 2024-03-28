@@ -18,7 +18,7 @@ class CreateQueuePropertyRequest:
 
     openapi_types = {
         'queue_name': 'str',
-        'body': 'InsertQueuePropertyRequestBody'
+        'body': 'CreateQueuePropertyRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateQueuePropertyRequest:
         :param queue_name: 队列名称
         :type queue_name: str
         :param body: Body of the CreateQueuePropertyRequest
-        :type body: :class:`huaweicloudsdkdli.v1.InsertQueuePropertyRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class CreateQueuePropertyRequest:
         """Gets the body of this CreateQueuePropertyRequest.
 
         :return: The body of this CreateQueuePropertyRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.InsertQueuePropertyRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateQueuePropertyRequest:
         """Sets the body of this CreateQueuePropertyRequest.
 
         :param body: The body of this CreateQueuePropertyRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.InsertQueuePropertyRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequestBody`
         """
         self._body = body
 

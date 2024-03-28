@@ -17,7 +17,7 @@ class CreateSparkJobTemplateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateJobTemplatesRequestBody'
+        'body': 'CreateSparkJobTemplateRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateSparkJobTemplateRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateSparkJobTemplateRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateJobTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateSparkJobTemplateRequest:
         """Gets the body of this CreateSparkJobTemplateRequest.
 
         :return: The body of this CreateSparkJobTemplateRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateJobTemplatesRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateSparkJobTemplateRequest:
         """Sets the body of this CreateSparkJobTemplateRequest.
 
         :param body: The body of this CreateSparkJobTemplateRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateJobTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateRequestBody`
         """
         self._body = body
 

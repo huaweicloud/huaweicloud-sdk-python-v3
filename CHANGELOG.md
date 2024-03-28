@@ -1,3 +1,808 @@
+# 3.1.88 2024-03-28
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - Support the following APIs:
+    - `UpdateSlDomainSettingV2`
+    - `ExportApiDefinitionsAsync`
+    - `ImportApiDefinitionsAsync`
+    - `ShowAsyncTaskResult`
+    - `ListInstanceFeatures`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [ORCHESTRATION_PARAMETER_NOT_FOUND,ORCHESTRATION_FAILURE]`
+  - **ShowDetailsOfGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [ORCHESTRATION_PARAMETER_NOT_FOUND,ORCHESTRATION_FAILURE]`
+  - **UpdateGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [ORCHESTRATION_PARAMETER_NOT_FOUND,ORCHESTRATION_FAILURE]`
+      - `+ headers`
+  - **ShowDetailsOfApiGroupV2**
+    - changes of response param
+      - `+ sl_domain_access_enabled`
+  - **UpdateApiGroupV2**
+    - changes of response param
+      - `+ sl_domain_access_enabled`
+  - **ShowDetailsOfInstanceV2**
+    - changes of response param
+      - `+ public_ipv6_ips`
+      - `+ unreliable_ips`
+      - `+ node_ipv6_ips`
+      - `+ enable_fullstack_ipv6`
+      - `+ publicips.ipv6_address`
+  - **UpdateInstanceV2**
+    - changes of response param
+      - `+ public_ipv6_ips`
+      - `+ unreliable_ips`
+      - `+ node_ipv6_ips`
+      - `+ enable_fullstack_ipv6`
+      - `+ publicips.ipv6_address`
+  - **CreateApiGroupV2**
+    - changes of response param
+      - `+ sl_domain_access_enabled`
+  - **ListApiGroupsV2**
+    - changes of response param
+      - `+ sl_domain_access_enabled`
+      - `+ groups.sl_domain_access_enabled`
+  - **ShowDetailsOfApiV2**
+    - changes of response param
+      - `+ func_info.req_protocol`
+      - `+ api_group_info.sl_domain_access_enabled`
+      - `+ policy_functions.req_protocol`
+  - **UpdateApiV2**
+    - changes of request param
+      - `+ func_info.req_protocol`
+      - `+ policy_functions.req_protocol`
+    - changes of response param
+      - `+ func_info.req_protocol`
+      - `+ api_group_info.sl_domain_access_enabled`
+      - `+ policy_functions.req_protocol`
+  - **ListApiVersionDetailV2**
+    - changes of response param
+      - `+ func_info.req_protocol`
+      - `+ api_group_info.sl_domain_access_enabled`
+      - `+ policy_functions.req_protocol`
+  - **CreateApiV2**
+    - changes of request param
+      - `+ func_info.req_protocol`
+      - `+ policy_functions.req_protocol`
+    - changes of response param
+      - `+ func_info.req_protocol`
+      - `+ api_group_info.sl_domain_access_enabled`
+      - `+ policy_functions.req_protocol`
+  - **ListApisV2**
+    - changes of response param
+      - `+ apis.api_group_info.sl_domain_access_enabled`
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - Support the following APIs:
+    - `ListOrganizationPolicies`
+    - `CreateOrganizationPolicy`
+    - `ShowOrganizationPolicy`
+    - `UpdateOrganizationPolicy`
+    - `DeleteOrganizationPolicy`
+    - `ListOrganizationPolicyDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowBackup**
+    - changes of response param
+      - `+ backup.incremental`
+      - `- backup.extend_info.incremental`
+  - **UpdateBackup**
+    - changes of response param
+      - `+ backup.incremental`
+      - `- backup.extend_info.incremental`
+  - **ListBackups**
+    - changes of response param
+      - `+ backups.incremental`
+      - `- backups.extend_info.incremental`
+  - **ListVault**
+    - changes of response param
+      - `- sys_lock_source_service`
+  - **CreateVault**
+    - changes of request param
+      - `+ vault.sys_lock_source_service`
+  - **ListExternalVault**
+    - changes of response param
+      - `- sys_lock_source_service`
+
+### HuaweiCloud SDK CBS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CollectReplyRates**
+    - changes of response param
+      - `* intervals: object<ReplyRatesIntervals> -> list<ReplyRatesIntervals>`
+  - **ExecuteGetVideoInfoById**
+    - changes of response param
+      - `* tts_config.speed: int32 -> float`
+  - **ExecuteUpdateVideoInfoById**
+    - changes of request param
+      - `* tts_config.speed: int32 -> float`
+    - changes of response param
+      - `* tts_config.speed: int32 -> float`
+
+### HuaweiCloud SDK CC
+
+- _Features_
+  - Support the following APIs:
+    - `ListCentralNetworksByTags`
+    - `ListCentralNetworkErRouteTableAttachments`
+    - `CreateCentralNetworkErRouteTableAttachment`
+    - `ShowCentralNetworkErRouteTableAttachment`
+    - `UpdateCentralNetworkErRouteTableAttachment`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListGlobalConnectionBandwidthConfigs**
+    - changes of response param
+      - `+ configs.ratio_95peak_plus`
+      - `+ configs.enable_area_bandwidth`
+      - `+ configs.enable_change_95`
+      - `+ configs.enable_spec_code`
+      - `+ configs.size_range.type`
+      - `- configs.size_range.charge_mode`
+  - **ListGlobalConnectionBandwidths**
+    - changes of response param
+      - `+ globalconnection_bandwidths.local_area`
+      - `+ globalconnection_bandwidths.remote_area`
+      - `+ globalconnection_bandwidths.admin_state`
+  - **CreateGlobalConnectionBandwidth**
+    - changes of response param
+      - `+ globalconnection_bandwidth.local_area`
+      - `+ globalconnection_bandwidth.remote_area`
+      - `+ globalconnection_bandwidth.admin_state`
+  - **ShowGlobalConnectionBandwidth**
+    - changes of response param
+      - `+ globalconnection_bandwidth.local_area`
+      - `+ globalconnection_bandwidth.remote_area`
+      - `+ globalconnection_bandwidth.admin_state`
+  - **UpdateGlobalConnectionBandwidth**
+    - changes of response param
+      - `+ globalconnection_bandwidth.local_area`
+      - `+ globalconnection_bandwidth.remote_area`
+      - `+ globalconnection_bandwidth.admin_state`
+  - **ListSupportBindingConnectionBandwidths**
+    - changes of response param
+      - `+ globalconnection_bandwidths.local_area`
+      - `+ globalconnection_bandwidths.remote_area`
+      - `+ globalconnection_bandwidths.admin_state`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNodePoolConfigurationDetails**
+    - changes of response param
+      - `- kubelet`
+  - **ShowClusterConfigurationDetails**
+    - changes of response param
+      - `- kube-apiserver`
+  - **ShowCluster**
+    - changes of response param
+      - `- spec.enableAutopilot`
+  - **UpdateCluster**
+    - changes of response param
+      - `- spec.enableAutopilot`
+  - **DeleteCluster**
+    - changes of request param
+      - `+ lts_reclaim_policy`
+    - changes of response param
+      - `- spec.enableAutopilot`
+  - **CreateCluster**
+    - changes of request param
+      - `- spec.enableAutopilot`
+    - changes of response param
+      - `- spec.enableAutopilot`
+  - **ListClusters**
+    - changes of response param
+      - `- items.spec.enableAutopilot`
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlowLogs**
+    - changes of response param
+      - `* data.records.bytes: int32 -> double`
+
+### HuaweiCloud SDK CTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateTracker**
+    - changes of request param
+      - `+ agency_name`
+  - **CreateTracker**
+    - changes of request param
+      - `+ agency_name`
+    - changes of response param
+      - `+ agency_name`
+  - **ListTrackers**
+    - changes of response param
+      - `+ trackers.agency_name`
+  - **UpdateNotification**
+    - changes of request param
+      - `+ agency_name`
+    - changes of response param
+      - `+ agency_name`
+  - **CreateNotification**
+    - changes of request param
+      - `+ agency_name`
+    - changes of response param
+      - `+ agency_name`
+  - **ListNotifications**
+    - changes of response param
+      - `+ notifications.agency_name`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSqlJobs**
+    - changes of request param
+      - `+ job-type: enum value [ALL]`
+  - **ShowSqlJobDetail**
+    - changes of response param
+      - `+ owner`
+      - `+ database_name`
+      - `+ compress`
+      - `+ escape_char`
+      - `+ is_success`
+      - `+ message`
+      - `+ table_name`
+      - `+ export_mode`
+      - `+ data_path`
+      - `+ tags`
+      - `+ duration`
+      - `+ with_column_header`
+      - `+ quote_char`
+      - `+ timestamp_format`
+      - `+ start_time`
+      - `+ job_id`
+      - `+ delimiter`
+      - `+ data_type`
+      - `+ date_format`
+  - **ShowSqlJobProgress**
+    - changes of response param
+      - `+ sub_jobs`
+      - `+ job_id`
+      - `+ progress`
+      - `+ is_success`
+      - `+ message`
+      - `+ status`
+      - `+ sub_job_id`
+  - **ListAuthorizationPrivileges**
+    - changes of response param
+      - `+ privileges`
+      - `+ object_type`
+      - `+ object_name`
+      - `+ count`
+      - `+ is_success`
+      - `+ message`
+  - **ListPartitions**
+    - changes of response param
+      - `+ partitions`
+      - `+ is_success`
+      - `+ message`
+  - **ShowEnhancedConnectionPrivilege**
+    - changes of response param
+      - `+ privileges`
+      - `+ connection_id`
+      - `+ is_success`
+      - `+ message`
+  - **ShowFlinkJob**
+    - changes of response param
+      - `+ job_detail`
+      - `+ is_success`
+      - `+ message`
+  - **DeleteFlinkJob**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **ListFlinkJobs**
+    - changes of response param
+      - `+ job_list`
+      - `+ is_success`
+      - `+ message`
+  - **ShowFlinkJobExecutionGraph**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+      - `+ execute_graph`
+  - **ShowDliAgency**
+    - changes of response param
+      - `+ current_roles`
+      - `+ is_success`
+      - `+ message`
+      - `+ version`
+  - **CreateDliAgency**
+    - changes of request param
+      - `* body: object<CreateAgencyRequest> -> object<CreateDliAgencyRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **UpdateJobResourceOwner**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **ShowQueue**
+    - changes of response param
+      - `+ owner`
+      - `+ chargingMode`
+      - `+ create_time`
+      - `+ cu_scale_in_limit`
+      - `+ resource_type`
+      - `+ cu_spec`
+      - `+ description`
+      - `+ cuCount`
+      - `+ elastic_resource_pool_name`
+      - `+ is_success`
+      - `+ message`
+      - `+ enterprise_project_id`
+      - `+ queueName`
+      - `+ resource_mode`
+      - `+ cu_scale_out_limit`
+      - `+ queueType`
+      - `+ resource_id`
+      - `+ queue_id`
+  - **RunQueueAction**
+    - changes of response param
+      - `+ queue_name`
+      - `+ result`
+      - `+ job_id`
+      - `+ is_success`
+      - `+ message`
+  - **ListQueuePlans**
+    - changes of response param
+      - `+ plans`
+      - `+ is_success`
+      - `+ message`
+  - **CreateQueuePlan**
+    - changes of request param
+      - `* body: object<SetQueuePlanReq> -> object<QueuePlanRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **BatchDeleteQueuePlans**
+    - changes of request param
+      - `* body: object<QueuePlanIds> -> object<BatchDeleteQueuePlansRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **DeleteQueuePlan**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **UpdateQueuePlan**
+    - changes of request param
+      - `* body: object<SetQueuePlanReq> -> object<QueuePlanRequestBody>`
+    - changes of response param
+      - `+ queue_name`
+      - `+ is_success`
+      - `+ message`
+      - `+ plan_id`
+  - **CreateGlobalVariable**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **UpdateGlobalVariable**
+    - changes of request param
+      - `* body: object<UpdateGlobalValueReq> -> object<UpdateGlobalVariableRequestBody>`
+  - **DeleteFlinkSqlJobTemplate**
+    - changes of response param
+      - `+ template`
+      - `+ is_success`
+      - `+ message`
+  - **UpdateFlinkSqlJobTemplate**
+    - changes of request param
+      - `* body: object<UpdateFlinkTemplateRequestBody> -> object<UpdateFlinkSqlJobTemplateRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **RegisterBucket**
+    - changes of request param
+      - `* body: object<ObsBuckets> -> object<RegisterBucketRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **UpdateFlinkSqlJob**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+      - `+ job`
+  - **UpdateFlinkJarJob**
+    - changes of request param
+      - `* body: object<UpdateFlinkJarRequestBody> -> object<UpdateFlinkJarJobRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+      - `+ job`
+  - **BatchDeleteFlinkJobs**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **ShowFlinkMetric**
+    - changes of response param
+      - `+ metrics`
+      - `+ is_success`
+      - `+ message`
+  - **ExportFlinkJobs**
+    - changes of request param
+      - `* body: object<ExportFlinkJobRequestBody> -> object<ExportFlinkJobsRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+      - `+ zip_file`
+  - **ImportFlinkJobs**
+    - changes of response param
+      - `+ job_mapping`
+      - `+ is_success`
+      - `+ message`
+  - **CreateFlinkSqlJobGraph**
+    - changes of request param
+      - `+ flink_version: enum value [1.1,1.12]`
+      - `+ graph_type: enum value [simple_graph,job_graph]`
+      - `* body: object<GenStreamGraphReq> -> object<CreateFlinkSqlJobGraphRequestBody>`
+    - changes of response param
+      - `+ stream_graph`
+      - `+ error_code`
+      - `+ is_success`
+      - `+ message`
+  - **CreateIefMessageChannel**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **ListQueueProperties**
+    - changes of response param
+      - `* properties: list<object> -> list<Property>`
+  - **UploadJobResources**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<UploadPackageGroupReq> -> object<UploadJobResourcesRequestBody>`
+  - **ListSparkJobs**
+    - changes of response param
+      - `+ total`
+      - `+ sessions`
+      - `+ create_time`
+      - `+ from`
+  - **CreateSparkJob**
+    - changes of request param
+      - `* body: object<BatchJobInfo> -> object<CreateSparkJobRequestBody>`
+  - **CreateSqlJob**
+    - changes of request param
+      - `+ engine_type`
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+  - **CreateDatabase**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+  - **CreateTable**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateTableReq> -> object<CreateTableRequestBody>`
+  - **CreateQueue**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateQueueReq> -> object<CreateQueueRequestBody>`
+  - **CreateEnhancedConnection**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateEnhancedConnectionsReq> -> object<CreateEnhancedConnectionRequestBody>`
+  - **ListElasticResourcePools**
+    - changes of response param
+      - `* elastic_resource_pools: list<ElasticResourcePoolsResponse> -> list<ElasticResourcePool>`
+  - **CreateElasticResourcePool**
+    - changes of request param
+      - `* tags: list<TmsTag> -> list<Tag>`
+  - **UpdateElasticResourcePoolQueue**
+    - changes of request param
+      - `* queue_scaling_policies: list<QueueScalingPolicyInfo> -> list<QueueScalingPolicy>`
+      - `* body: object<UpdateElasticResourcePoolQueueScalingPolicyInfo> -> object<UpdateElasticResourcePoolQueueRequestBody>`
+  - **ListFlinkSqlJobTemplates**
+    - changes of response param
+      - `+ template_list`
+      - `+ is_success`
+      - `+ message`
+  - **CreateFlinkSqlJobTemplate**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateFlinkTemplateRequestBody> -> object<CreateFlinkSqlJobTemplateRequestBody>`
+    - changes of response param
+      - `+ template`
+      - `+ is_success`
+      - `+ message`
+  - **CreateFlinkSqlJob**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+      - `+ job`
+  - **CreateFlinkJarJob**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateFlinkJarRequestBody> -> object<CreateFlinkJarJobRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+      - `+ job`
+  - **UpdateFlinkJobStatusReport**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **RunIefJobActionCallBack**
+    - changes of request param
+      - `* state: object<state> -> object<State>`
+      - `* body: object<IefFlinkJobMessagesReq> -> object<RunIefJobActionCallBackRequestBody>`
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **CreateIefSystemEvents**
+    - changes of response param
+      - `+ is_success`
+      - `+ message`
+  - **CreateDatasourceConnection**
+    - changes of request param
+      - `* tags: list<TmsTagEntity> -> list<Tag>`
+      - `* body: object<CreateDatasourceConnectionReq> -> object<CreateDatasourceConnectionRequestBody>`
+  - **ListElasticResourcePoolQueues**
+    - changes of response param
+      - `* queues.queue_scaling_policies: list<QueueScalingPoliciesResponse> -> list<QueueScalingPolicy>`
+      - `* queues: list<QueueInfo> -> list<ElasticResourcePoolQueue>`
+  - **ShowSparkJobTemplate**
+    - changes of response param
+      - `* body: object<BatchJobInfo> -> object<SparkJobTemplateDetail>`
+  - **ListSparkJobTemplates**
+    - changes of response param
+      - `* body: object<BatchJobInfo> -> object<SparkJobTemplateDetail>`
+      - `* templates: list<JobTemplateInfo> -> list<SparkJobTemplate>`
+
+### HuaweiCloud SDK DSC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ListRelationDb`
+    - `ListRelationTable`
+    - `ListRelationColumn`
+    - `ListRelationBuckets`
+    - `ListRelationFile`
+
+### HuaweiCloud SDK GA
+
+- _Features_
+  - Support the APIs `ListResourcesByTag`, `CountResourcesByTag`, `ListTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAccelerator**
+    - changes of request param
+      - `+ accelerator.ip_sets.ip_type: enum value [IPV6]`
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunImageMediaTagging**
+    - changes of request param
+      - `- use_default_tags`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the API `UpdateApplication`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateBatchTask**
+    - changes of request param
+      - `+ task_mode`
+      - `+ task_ext_info`
+    - changes of response param
+      - `+ task_ext_info`
+      - `+ task_mode`
+  - **ListBatchTasks**
+    - changes of response param
+      - `+ task_ext_info`
+      - `+ task_mode`
+      - `+ batchtasks.task_mode`
+      - `+ batchtasks.task_ext_info`
+  - **ShowBatchTask**
+    - changes of response param
+      - `+ task_ext_info`
+      - `+ task_mode`
+      - `+ batchtask.task_mode`
+      - `+ batchtask.task_ext_info`
+  - **CreateOtaPackage**
+    - changes of request param
+      - `+ file_location.obs_location.sign`
+    - changes of response param
+      - `+ file_location.obs_location.sign`
+  - **ShowOtaPackage**
+    - changes of response param
+      - `+ file_location.obs_location.sign`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the following APIs:
+    - `ShowDiagnosisPreCheck`
+    - `ListMessageDiagnosisReports`
+    - `CreateMessageDiagnosisTask`
+    - `BatchDeleteMessageDiagnosisReports`
+    - `ShowMessageDiagnosisReport`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `+ ipv6_enable`
+  - **ShowInstance**
+    - changes of response param
+      - `+ broker_ssl_enable`
+      - `+ new_auth_cert`
+      - `+ available_zone_names`
+  - **ShowConnectorTask**
+    - changes of response param
+      - `+ source_task.rename_topic_enabled`
+      - `- source_task.rename_topic_enable`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `- ipv6_enable`
+  - **ListInstances**
+    - changes of response param
+      - `+ broker_ssl_enable`
+      - `+ new_auth_cert`
+      - `+ available_zone_names`
+      - `+ instances.broker_ssl_enable`
+      - `+ instances.available_zone_names`
+      - `+ instances.new_auth_cert`
+  - **CreateConnectorTask**
+    - changes of request param
+      - `+ source_task.rename_topic_enabled`
+      - `- source_task.rename_topic_enable`
+    - changes of response param
+      - `+ source_task.rename_topic_enabled`
+      - `- source_task.rename_topic_enable`
+  - **ListConnectorTasks**
+    - changes of response param
+      - `+ tasks.source_task.rename_topic_enabled`
+      - `- tasks.source_task.rename_topic_enable`
+  - **CreateReassignmentTask**
+    - changes of request param
+      - `+ time_estimate`
+    - changes of response param
+      - `+ reassignment_time`
+
+### HuaweiCloud SDK NLP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunTextTranslation**
+    - changes of response param
+      - `+ from`
+      - `+ to`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeMvsInvoice**
+    - changes of response param
+      - `+ result.reverse_issue`
+  - **RecognizeThailandLicensePlate**
+    - changes of response param
+      - `+ result.province`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the API `BatchStopInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListMessageTrace**
+    - changes of response param
+      - `* trace.retry_times: string -> int32`
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `+ engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[5.x](tag:hcs)]`
+      - `- engine_version: enum value [4.8.0]`
+      - `+ product_id: enum value [[c6.4u8g.cluster.small](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.2u8g.single.x86](tag:hcs),[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.4u16g.cluster.x86](tag:hcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.8u32g.cluster.x86](tag:hcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.16u64g.cluster.x86](tag:hcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.32u128g.cluster.x86](tag:hcs),[c6.2u8g.single.arm](tag:hcs),[c6.4u16g.cluster.arm](tag:hcs),[c6.8u32g.cluster.arm](tag:hcs),[c6.16u64g.cluster.arm](tag:hcs),[c6.32u128g.cluster.arm](tag:hcs)]`
+      - `- product_id: enum value [c6.4u8g.cluster.small,c6.4u8g.cluster,c6.8u16g.cluster,c6.12u24g.cluster,c6.16u32g.cluster]`
+  - **CreateConsumerGroupOrBatchDeleteConsumerGroup**
+    - changes of request param
+      - `- createdAt`
+      - `- permissions`
+  - **ListInstanceConsumerGroups**
+    - changes of response param
+      - `* groups.createdAt: string -> int64`
+  - **BatchUpdateConsumerGroup**
+    - changes of request param
+      - `- groups.createdAt`
+      - `- groups.permissions`
+      - `* groups: list<ConsumerGroup> -> list<CreateOrUpdateConsumerGroup>`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `+ engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[5.x](tag:hcs)]`
+      - `- engine_version: enum value [4.8.0]`
+      - `+ product_id: enum value [[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.4u16g.cluster.x86](tag:hcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.8u32g.cluster.x86](tag:hcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.16u64g.cluster.x86](tag:hcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)[c6.32u128g.cluster.x86](tag:hcs),[c6.4u16g.cluster.arm](tag:hcs),[c6.8u32g.cluster.arm](tag:hcs),[c6.16u64g.cluster.arm](tag:hcs),[c6.32u128g.cluster.arm](tag:hcs)]`
+      - `- product_id: enum value [c6.4u8g.cluster,c6.8u16g.cluster,c6.12u24g.cluster,c6.16u32g.cluster]`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **PublishHttpDetect**
+    - changes of request param
+      - `+ protocol: enum value [https]`
+      - `- protocol: enum value [https;]`
+  - **UpdateTaskStatus**
+    - changes of request param
+      - `+ operation: enum value [network_check]`
+  - **UpdateCopyState**
+    - changes of request param
+      - `+ copystate: enum value [FINISHED]`
+  - **UpdateNetworkCheckInfo**
+    - changes of request param
+      - `+ domain_connectivity`
+      - `+ destination_connectivity`
+  - **ListTasks**
+    - changes of response param
+      - `+ tasks.network_check_info.domain_connectivity`
+      - `+ tasks.network_check_info.destination_connectivity`
+  - **ShowTask**
+    - changes of response param
+      - `+ network_check_info.domain_connectivity`
+      - `+ network_check_info.destination_connectivity`
+
 # 3.1.87 2024-03-21
 
 ### HuaweiCloud SDK AOM

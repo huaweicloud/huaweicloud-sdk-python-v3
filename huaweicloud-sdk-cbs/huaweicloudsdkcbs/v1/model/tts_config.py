@@ -18,7 +18,7 @@ class TtsConfig:
 
     openapi_types = {
         '_property': 'str',
-        'speed': 'int',
+        'speed': 'float',
         'volume': 'int',
         'delay': 'float',
         'pitch': 'str',
@@ -46,7 +46,7 @@ class TtsConfig:
         :param _property: 用于设置音色
         :type _property: str
         :param speed: 用户设置音速
-        :type speed: int
+        :type speed: float
         :param volume: 用于设置音量
         :type volume: int
         :param delay: 段首停顿时间。 范围：0~60； 单位：秒 默认：0
@@ -115,7 +115,7 @@ class TtsConfig:
         用户设置音速
 
         :return: The speed of this TtsConfig.
-        :rtype: int
+        :rtype: float
         """
         return self._speed
 
@@ -126,7 +126,7 @@ class TtsConfig:
         用户设置音速
 
         :param speed: The speed of this TtsConfig.
-        :type speed: int
+        :type speed: float
         """
         self._speed = speed
 

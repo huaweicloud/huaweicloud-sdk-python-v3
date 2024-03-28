@@ -18,7 +18,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
 
     openapi_types = {
         'connection_id': 'str',
-        'body': 'DisassociateConnectionQueueReq'
+        'body': 'DisassociateQueueFromEnhancedConnectionRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
         :param connection_id: 连接ID，用于标识跨源连接的UUID。
         :type connection_id: str
         :param body: Body of the DisassociateQueueFromEnhancedConnectionRequest
-        :type body: :class:`huaweicloudsdkdli.v1.DisassociateConnectionQueueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.DisassociateQueueFromEnhancedConnectionRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
         """Gets the body of this DisassociateQueueFromEnhancedConnectionRequest.
 
         :return: The body of this DisassociateQueueFromEnhancedConnectionRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.DisassociateConnectionQueueReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.DisassociateQueueFromEnhancedConnectionRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
         """Sets the body of this DisassociateQueueFromEnhancedConnectionRequest.
 
         :param body: The body of this DisassociateQueueFromEnhancedConnectionRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.DisassociateConnectionQueueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.DisassociateQueueFromEnhancedConnectionRequestBody`
         """
         self._body = body
 

@@ -18,7 +18,7 @@ class ShowQuotaResponseBodyQuotas:
 
     openapi_types = {
         'project_id': 'str',
-        'resources': 'list[ShowQuotaPropertiesBody]'
+        'resources': 'list[QuotaInfo]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ShowQuotaResponseBodyQuotas:
         :param project_id: 
         :type project_id: str
         :param resources: 
-        :type resources: list[:class:`huaweicloudsdkdli.v1.ShowQuotaPropertiesBody`]
+        :type resources: list[:class:`huaweicloudsdkdli.v1.QuotaInfo`]
         """
         
         
@@ -71,7 +71,7 @@ class ShowQuotaResponseBodyQuotas:
         """Gets the resources of this ShowQuotaResponseBodyQuotas.
 
         :return: The resources of this ShowQuotaResponseBodyQuotas.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ShowQuotaPropertiesBody`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.QuotaInfo`]
         """
         return self._resources
 
@@ -80,7 +80,7 @@ class ShowQuotaResponseBodyQuotas:
         """Sets the resources of this ShowQuotaResponseBodyQuotas.
 
         :param resources: The resources of this ShowQuotaResponseBodyQuotas.
-        :type resources: list[:class:`huaweicloudsdkdli.v1.ShowQuotaPropertiesBody`]
+        :type resources: list[:class:`huaweicloudsdkdli.v1.QuotaInfo`]
         """
         self._resources = resources
 

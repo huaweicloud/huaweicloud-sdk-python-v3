@@ -18,7 +18,7 @@ class UpdateQueueCidrRequest:
 
     openapi_types = {
         'queue_name': 'str',
-        'body': 'UpdateQueueCidrReq'
+        'body': 'UpdateQueueCidrRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateQueueCidrRequest:
         :param queue_name: 指定删除的队列名称。
         :type queue_name: str
         :param body: Body of the UpdateQueueCidrRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdateQueueCidrRequest:
         """Gets the body of this UpdateQueueCidrRequest.
 
         :return: The body of this UpdateQueueCidrRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateQueueCidrRequest:
         """Sets the body of this UpdateQueueCidrRequest.
 
         :param body: The body of this UpdateQueueCidrRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequestBody`
         """
         self._body = body
 

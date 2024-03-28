@@ -19,18 +19,18 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
     openapi_types = {
         'resource_id': 'str',
         'resource_type': 'str',
-        'region_id': 'str',
-        'project_id': 'str'
+        'project_id': 'str',
+        'region_id': 'str'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
-        'region_id': 'region_id',
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'region_id': 'region_id'
     }
 
-    def __init__(self, resource_id=None, resource_type=None, region_id=None, project_id=None):
+    def __init__(self, resource_id=None, resource_type=None, project_id=None, region_id=None):
         """AssociateGlobalConnectionBandwidthInstanceRequestInfo
 
         The model defined in huaweicloud sdk
@@ -39,28 +39,25 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
         :type resource_id: str
         :param resource_type: 功能说明：实例类型。
         :type resource_type: str
-        :param region_id: 功能说明：实例所在region，不填默认\&quot;global\&quot;。
-        :type region_id: str
         :param project_id: 功能说明：实例所在region对应的projectId。
         :type project_id: str
+        :param region_id: 功能说明：实例所在region，不填默认\&quot;global\&quot;。
+        :type region_id: str
         """
         
         
 
         self._resource_id = None
         self._resource_type = None
-        self._region_id = None
         self._project_id = None
+        self._region_id = None
         self.discriminator = None
 
-        if resource_id is not None:
-            self.resource_id = resource_id
-        if resource_type is not None:
-            self.resource_type = resource_type
+        self.resource_id = resource_id
+        self.resource_type = resource_type
+        self.project_id = project_id
         if region_id is not None:
             self.region_id = region_id
-        if project_id is not None:
-            self.project_id = project_id
 
     @property
     def resource_id(self):
@@ -107,28 +104,6 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
         self._resource_type = resource_type
 
     @property
-    def region_id(self):
-        """Gets the region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
-
-        功能说明：实例所在region，不填默认\"global\"。
-
-        :return: The region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
-        :rtype: str
-        """
-        return self._region_id
-
-    @region_id.setter
-    def region_id(self, region_id):
-        """Sets the region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
-
-        功能说明：实例所在region，不填默认\"global\"。
-
-        :param region_id: The region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
-        :type region_id: str
-        """
-        self._region_id = region_id
-
-    @property
     def project_id(self):
         """Gets the project_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
@@ -149,6 +124,28 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def region_id(self):
+        """Gets the region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+
+        功能说明：实例所在region，不填默认\"global\"。
+
+        :return: The region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        """Sets the region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+
+        功能说明：实例所在region，不填默认\"global\"。
+
+        :param region_id: The region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        :type region_id: str
+        """
+        self._region_id = region_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

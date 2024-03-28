@@ -45,7 +45,7 @@ class VpcRegion:
     TR_WEST_1 = Region("tr-west-1",
                         "https://vpc.tr-west-1.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
-                        "https://vpc.eu-west-101.myhuaweicloud.eu")
+                        "https://vpc.eu-west-101.myhuaweicloud.com")
     ME_EAST_1 = Region("me-east-1",
                         "https://vpc.me-east-1.myhuaweicloud.com")
     AE_AD_1 = Region("ae-ad-1",

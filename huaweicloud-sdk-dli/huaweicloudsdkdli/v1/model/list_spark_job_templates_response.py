@@ -21,7 +21,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'count': 'int',
-        'templates': 'list[JobTemplateInfo]'
+        'templates': 'list[SparkJobTemplate]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
         :param count: 返回的模板个数
         :type count: int
         :param templates: 模板信息列表。
-        :type templates: list[:class:`huaweicloudsdkdli.v1.JobTemplateInfo`]
+        :type templates: list[:class:`huaweicloudsdkdli.v1.SparkJobTemplate`]
         """
         
         super(ListSparkJobTemplatesResponse, self).__init__()
@@ -136,7 +136,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
         模板信息列表。
 
         :return: The templates of this ListSparkJobTemplatesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobTemplateInfo`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.SparkJobTemplate`]
         """
         return self._templates
 
@@ -147,7 +147,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
         模板信息列表。
 
         :param templates: The templates of this ListSparkJobTemplatesResponse.
-        :type templates: list[:class:`huaweicloudsdkdli.v1.JobTemplateInfo`]
+        :type templates: list[:class:`huaweicloudsdkdli.v1.SparkJobTemplate`]
         """
         self._templates = templates
 

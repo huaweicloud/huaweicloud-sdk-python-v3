@@ -17,7 +17,7 @@ class CreateQueueRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateQueueReq'
+        'body': 'CreateQueueRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateQueueRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateQueueRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateQueueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateQueueRequest:
         """Gets the body of this CreateQueueRequest.
 
         :return: The body of this CreateQueueRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateQueueReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateQueueRequest:
         """Sets the body of this CreateQueueRequest.
 
         :param body: The body of this CreateQueueRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateQueueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBody`
         """
         self._body = body
 

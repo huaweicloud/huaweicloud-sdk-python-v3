@@ -18,7 +18,7 @@ class PackageOptions:
 
     openapi_types = {
         'name': 'str',
-        'default': 'str',
+        'default': 'object',
         'valid_at': 'str',
         'empty': 'bool',
         'schema': 'str',
@@ -42,7 +42,7 @@ class PackageOptions:
         :param name: 参数名称
         :type name: str
         :param default: 参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
-        :type default: str
+        :type default: object
         :param valid_at: 参数生效方式  - static：节点创建时生效，后续不可修改 - immediately：节点运行中时可以修改，修改后生效 
         :type valid_at: str
         :param empty: 配置项是否可以为空  - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值 
@@ -99,7 +99,7 @@ class PackageOptions:
         参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
 
         :return: The default of this PackageOptions.
-        :rtype: str
+        :rtype: object
         """
         return self._default
 
@@ -110,7 +110,7 @@ class PackageOptions:
         参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
 
         :param default: The default of this PackageOptions.
-        :type default: str
+        :type default: object
         """
         self._default = default
 

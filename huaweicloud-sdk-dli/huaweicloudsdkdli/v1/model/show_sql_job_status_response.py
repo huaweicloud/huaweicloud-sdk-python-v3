@@ -39,7 +39,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'job_mode': 'str',
-        'tags': 'list[TmsTagEntity]'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
@@ -115,7 +115,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         :param job_mode: 作业执行方式
         :type job_mode: str
         :param tags: 作业标签
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         
         super(ShowSqlJobStatusResponse, self).__init__()
@@ -658,7 +658,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         作业标签
 
         :return: The tags of this ShowSqlJobStatusResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         return self._tags
 
@@ -669,7 +669,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         作业标签
 
         :param tags: The tags of this ShowSqlJobStatusResponse.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
 

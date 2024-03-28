@@ -17,6 +17,8 @@ class NetworkCheckInfoRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'domain_connectivity': 'bool',
+        'destination_connectivity': 'bool',
         'network_delay': 'float',
         'network_jitter': 'float',
         'migration_speed': 'float',
@@ -27,6 +29,8 @@ class NetworkCheckInfoRequestBody:
     }
 
     attribute_map = {
+        'domain_connectivity': 'domain_connectivity',
+        'destination_connectivity': 'destination_connectivity',
         'network_delay': 'network_delay',
         'network_jitter': 'network_jitter',
         'migration_speed': 'migration_speed',
@@ -36,11 +40,15 @@ class NetworkCheckInfoRequestBody:
         'evaluation_result': 'evaluation_result'
     }
 
-    def __init__(self, network_delay=None, network_jitter=None, migration_speed=None, loss_percentage=None, cpu_usage=None, mem_usage=None, evaluation_result=None):
+    def __init__(self, domain_connectivity=None, destination_connectivity=None, network_delay=None, network_jitter=None, migration_speed=None, loss_percentage=None, cpu_usage=None, mem_usage=None, evaluation_result=None):
         """NetworkCheckInfoRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param domain_connectivity: 域名连通性
+        :type domain_connectivity: bool
+        :param destination_connectivity: 目的端连通性
+        :type destination_connectivity: bool
         :param network_delay: 网络时延
         :type network_delay: float
         :param network_jitter: 网络抖动
@@ -59,6 +67,8 @@ class NetworkCheckInfoRequestBody:
         
         
 
+        self._domain_connectivity = None
+        self._destination_connectivity = None
         self._network_delay = None
         self._network_jitter = None
         self._migration_speed = None
@@ -68,6 +78,10 @@ class NetworkCheckInfoRequestBody:
         self._evaluation_result = None
         self.discriminator = None
 
+        if domain_connectivity is not None:
+            self.domain_connectivity = domain_connectivity
+        if destination_connectivity is not None:
+            self.destination_connectivity = destination_connectivity
         self.network_delay = network_delay
         self.network_jitter = network_jitter
         self.migration_speed = migration_speed
@@ -75,6 +89,50 @@ class NetworkCheckInfoRequestBody:
         self.cpu_usage = cpu_usage
         self.mem_usage = mem_usage
         self.evaluation_result = evaluation_result
+
+    @property
+    def domain_connectivity(self):
+        """Gets the domain_connectivity of this NetworkCheckInfoRequestBody.
+
+        域名连通性
+
+        :return: The domain_connectivity of this NetworkCheckInfoRequestBody.
+        :rtype: bool
+        """
+        return self._domain_connectivity
+
+    @domain_connectivity.setter
+    def domain_connectivity(self, domain_connectivity):
+        """Sets the domain_connectivity of this NetworkCheckInfoRequestBody.
+
+        域名连通性
+
+        :param domain_connectivity: The domain_connectivity of this NetworkCheckInfoRequestBody.
+        :type domain_connectivity: bool
+        """
+        self._domain_connectivity = domain_connectivity
+
+    @property
+    def destination_connectivity(self):
+        """Gets the destination_connectivity of this NetworkCheckInfoRequestBody.
+
+        目的端连通性
+
+        :return: The destination_connectivity of this NetworkCheckInfoRequestBody.
+        :rtype: bool
+        """
+        return self._destination_connectivity
+
+    @destination_connectivity.setter
+    def destination_connectivity(self, destination_connectivity):
+        """Sets the destination_connectivity of this NetworkCheckInfoRequestBody.
+
+        目的端连通性
+
+        :param destination_connectivity: The destination_connectivity of this NetworkCheckInfoRequestBody.
+        :type destination_connectivity: bool
+        """
+        self._destination_connectivity = destination_connectivity
 
     @property
     def network_delay(self):

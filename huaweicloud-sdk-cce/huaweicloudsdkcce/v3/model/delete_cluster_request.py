@@ -25,6 +25,7 @@ class DeleteClusterRequest:
         'delete_obs': 'str',
         'delete_sfs': 'str',
         'delete_sfs30': 'str',
+        'lts_reclaim_policy': 'str',
         'tobedeleted': 'str',
         'ondemand_node_policy': 'str',
         'periodic_node_policy': 'str'
@@ -39,12 +40,13 @@ class DeleteClusterRequest:
         'delete_obs': 'delete_obs',
         'delete_sfs': 'delete_sfs',
         'delete_sfs30': 'delete_sfs30',
+        'lts_reclaim_policy': 'lts_reclaim_policy',
         'tobedeleted': 'tobedeleted',
         'ondemand_node_policy': 'ondemand_node_policy',
         'periodic_node_policy': 'periodic_node_policy'
     }
 
-    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, delete_sfs30=None, tobedeleted=None, ondemand_node_policy=None, periodic_node_policy=None):
+    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, delete_sfs30=None, lts_reclaim_policy=None, tobedeleted=None, ondemand_node_policy=None, periodic_node_policy=None):
         """DeleteClusterRequest
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class DeleteClusterRequest:
         :type delete_sfs: str
         :param delete_sfs30: 是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
         :type delete_sfs30: str
+        :param lts_reclaim_policy: 是否删除LTS LogStream（日志流）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        :type lts_reclaim_policy: str
         :param tobedeleted: 是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。  需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。  使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。  允许重复执行，覆盖预置的删除参数。  枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
         :type tobedeleted: str
         :param ondemand_node_policy: 集群下所有按需节点处理策略， 枚举取值： - delete (删除服务器) - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
@@ -83,6 +87,7 @@ class DeleteClusterRequest:
         self._delete_obs = None
         self._delete_sfs = None
         self._delete_sfs30 = None
+        self._lts_reclaim_policy = None
         self._tobedeleted = None
         self._ondemand_node_policy = None
         self._periodic_node_policy = None
@@ -103,6 +108,8 @@ class DeleteClusterRequest:
             self.delete_sfs = delete_sfs
         if delete_sfs30 is not None:
             self.delete_sfs30 = delete_sfs30
+        if lts_reclaim_policy is not None:
+            self.lts_reclaim_policy = lts_reclaim_policy
         if tobedeleted is not None:
             self.tobedeleted = tobedeleted
         if ondemand_node_policy is not None:
@@ -285,6 +292,28 @@ class DeleteClusterRequest:
         :type delete_sfs30: str
         """
         self._delete_sfs30 = delete_sfs30
+
+    @property
+    def lts_reclaim_policy(self):
+        """Gets the lts_reclaim_policy of this DeleteClusterRequest.
+
+        是否删除LTS LogStream（日志流）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+
+        :return: The lts_reclaim_policy of this DeleteClusterRequest.
+        :rtype: str
+        """
+        return self._lts_reclaim_policy
+
+    @lts_reclaim_policy.setter
+    def lts_reclaim_policy(self, lts_reclaim_policy):
+        """Sets the lts_reclaim_policy of this DeleteClusterRequest.
+
+        是否删除LTS LogStream（日志流）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+
+        :param lts_reclaim_policy: The lts_reclaim_policy of this DeleteClusterRequest.
+        :type lts_reclaim_policy: str
+        """
+        self._lts_reclaim_policy = lts_reclaim_policy
 
     @property
     def tobedeleted(self):

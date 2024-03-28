@@ -21,7 +21,7 @@ class CollectReplyRatesResponse(SdkResponse):
         'interval': 'str',
         'time_zone': 'str',
         'total': 'ReplyRatesTotal',
-        'intervals': 'ReplyRatesIntervals',
+        'intervals': 'list[ReplyRatesIntervals]',
         'startutc': 'int',
         'endutc': 'int'
     }
@@ -46,8 +46,8 @@ class CollectReplyRatesResponse(SdkResponse):
         :type time_zone: str
         :param total: 
         :type total: :class:`huaweicloudsdkcbs.v1.ReplyRatesTotal`
-        :param intervals: 
-        :type intervals: :class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`
+        :param intervals: 会话间隔统计数据。
+        :type intervals: list[:class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`]
         :param startutc: 统计开始的utc时间。
         :type startutc: int
         :param endutc: 统计结束的utc时间。
@@ -143,8 +143,10 @@ class CollectReplyRatesResponse(SdkResponse):
     def intervals(self):
         """Gets the intervals of this CollectReplyRatesResponse.
 
+        会话间隔统计数据。
+
         :return: The intervals of this CollectReplyRatesResponse.
-        :rtype: :class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`]
         """
         return self._intervals
 
@@ -152,8 +154,10 @@ class CollectReplyRatesResponse(SdkResponse):
     def intervals(self, intervals):
         """Sets the intervals of this CollectReplyRatesResponse.
 
+        会话间隔统计数据。
+
         :param intervals: The intervals of this CollectReplyRatesResponse.
-        :type intervals: :class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`
+        :type intervals: list[:class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`]
         """
         self._intervals = intervals
 

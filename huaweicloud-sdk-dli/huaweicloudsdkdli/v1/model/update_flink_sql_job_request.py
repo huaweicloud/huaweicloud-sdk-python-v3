@@ -18,7 +18,7 @@ class UpdateFlinkSqlJobRequest:
 
     openapi_types = {
         'job_id': 'int',
-        'body': 'UpdateFlinkSqlRequestBody'
+        'body': 'UpdateFlinkSqlJobRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateFlinkSqlJobRequest:
         :param job_id: 作业ID。
         :type job_id: int
         :param body: Body of the UpdateFlinkSqlJobRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlJobRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdateFlinkSqlJobRequest:
         """Gets the body of this UpdateFlinkSqlJobRequest.
 
         :return: The body of this UpdateFlinkSqlJobRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlJobRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateFlinkSqlJobRequest:
         """Sets the body of this UpdateFlinkSqlJobRequest.
 
         :param body: The body of this UpdateFlinkSqlJobRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlJobRequestBody`
         """
         self._body = body
 

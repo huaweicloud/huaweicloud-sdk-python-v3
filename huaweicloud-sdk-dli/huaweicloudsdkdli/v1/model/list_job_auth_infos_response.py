@@ -21,7 +21,7 @@ class ListJobAuthInfosResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'count': 'int',
-        'auth_infos': 'list[AuthInfos]'
+        'auth_infos': 'list[AuthInfo]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListJobAuthInfosResponse(SdkResponse):
         :param count: 认证信息个数
         :type count: int
         :param auth_infos: 认证信息列表
-        :type auth_infos: list[:class:`huaweicloudsdkdli.v1.AuthInfos`]
+        :type auth_infos: list[:class:`huaweicloudsdkdli.v1.AuthInfo`]
         """
         
         super(ListJobAuthInfosResponse, self).__init__()
@@ -136,7 +136,7 @@ class ListJobAuthInfosResponse(SdkResponse):
         认证信息列表
 
         :return: The auth_infos of this ListJobAuthInfosResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.AuthInfos`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.AuthInfo`]
         """
         return self._auth_infos
 
@@ -147,7 +147,7 @@ class ListJobAuthInfosResponse(SdkResponse):
         认证信息列表
 
         :param auth_infos: The auth_infos of this ListJobAuthInfosResponse.
-        :type auth_infos: list[:class:`huaweicloudsdkdli.v1.AuthInfos`]
+        :type auth_infos: list[:class:`huaweicloudsdkdli.v1.AuthInfo`]
         """
         self._auth_infos = auth_infos
 

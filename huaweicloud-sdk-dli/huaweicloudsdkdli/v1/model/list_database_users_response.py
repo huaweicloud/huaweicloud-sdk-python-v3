@@ -21,7 +21,7 @@ class ListDatabaseUsersResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'database_name': 'str',
-        'privileges': 'list[ShowDatabaseUsersPrivilege]'
+        'privileges': 'list[DatabaseUserPrivilege]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListDatabaseUsersResponse(SdkResponse):
         :param database_name: 被查询的数据库名称。
         :type database_name: str
         :param privileges: 权限信息。
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.ShowDatabaseUsersPrivilege`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.DatabaseUserPrivilege`]
         """
         
         super(ListDatabaseUsersResponse, self).__init__()
@@ -136,7 +136,7 @@ class ListDatabaseUsersResponse(SdkResponse):
         权限信息。
 
         :return: The privileges of this ListDatabaseUsersResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ShowDatabaseUsersPrivilege`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.DatabaseUserPrivilege`]
         """
         return self._privileges
 
@@ -147,7 +147,7 @@ class ListDatabaseUsersResponse(SdkResponse):
         权限信息。
 
         :param privileges: The privileges of this ListDatabaseUsersResponse.
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.ShowDatabaseUsersPrivilege`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.DatabaseUserPrivilege`]
         """
         self._privileges = privileges
 

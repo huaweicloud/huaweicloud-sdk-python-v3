@@ -18,7 +18,7 @@ class UpdateSparkJobTemplateRequest:
 
     openapi_types = {
         'template_id': 'str',
-        'body': 'UpdateJobTemplatesRequestBody'
+        'body': 'UpdateSparkJobTemplateRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateSparkJobTemplateRequest:
         :param template_id: 
         :type template_id: str
         :param body: Body of the UpdateSparkJobTemplateRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateJobTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateRequestBody`
         """
         
         
@@ -70,7 +70,7 @@ class UpdateSparkJobTemplateRequest:
         """Gets the body of this UpdateSparkJobTemplateRequest.
 
         :return: The body of this UpdateSparkJobTemplateRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateJobTemplatesRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateRequestBody`
         """
         return self._body
 
@@ -79,7 +79,7 @@ class UpdateSparkJobTemplateRequest:
         """Sets the body of this UpdateSparkJobTemplateRequest.
 
         :param body: The body of this UpdateSparkJobTemplateRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateJobTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateRequestBody`
         """
         self._body = body
 

@@ -18,15 +18,19 @@ class SiteGroupReferenceInfo:
 
     openapi_types = {
         'id': 'str',
-        'description': 'str'
+        'description': 'str',
+        'name_en': 'str',
+        'name_cn': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'description': 'description'
+        'description': 'description',
+        'name_en': 'name_en',
+        'name_cn': 'name_cn'
     }
 
-    def __init__(self, id=None, description=None):
+    def __init__(self, id=None, description=None, name_en=None, name_cn=None):
         """SiteGroupReferenceInfo
 
         The model defined in huaweicloud sdk
@@ -35,17 +39,27 @@ class SiteGroupReferenceInfo:
         :type id: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
+        :param name_en: 功能说明：站点分组自定义的英文名字。 取值范围：1-255个字符。
+        :type name_en: str
+        :param name_cn: 功能说明：站点分组自定义的中文名字。 取值范围：1-64个字符。
+        :type name_cn: str
         """
         
         
 
         self._id = None
         self._description = None
+        self._name_en = None
+        self._name_cn = None
         self.discriminator = None
 
         self.id = id
         if description is not None:
             self.description = description
+        if name_en is not None:
+            self.name_en = name_en
+        if name_cn is not None:
+            self.name_cn = name_cn
 
     @property
     def id(self):
@@ -90,6 +104,50 @@ class SiteGroupReferenceInfo:
         :type description: str
         """
         self._description = description
+
+    @property
+    def name_en(self):
+        """Gets the name_en of this SiteGroupReferenceInfo.
+
+        功能说明：站点分组自定义的英文名字。 取值范围：1-255个字符。
+
+        :return: The name_en of this SiteGroupReferenceInfo.
+        :rtype: str
+        """
+        return self._name_en
+
+    @name_en.setter
+    def name_en(self, name_en):
+        """Sets the name_en of this SiteGroupReferenceInfo.
+
+        功能说明：站点分组自定义的英文名字。 取值范围：1-255个字符。
+
+        :param name_en: The name_en of this SiteGroupReferenceInfo.
+        :type name_en: str
+        """
+        self._name_en = name_en
+
+    @property
+    def name_cn(self):
+        """Gets the name_cn of this SiteGroupReferenceInfo.
+
+        功能说明：站点分组自定义的中文名字。 取值范围：1-64个字符。
+
+        :return: The name_cn of this SiteGroupReferenceInfo.
+        :rtype: str
+        """
+        return self._name_cn
+
+    @name_cn.setter
+    def name_cn(self, name_cn):
+        """Sets the name_cn of this SiteGroupReferenceInfo.
+
+        功能说明：站点分组自定义的中文名字。 取值范围：1-64个字符。
+
+        :param name_cn: The name_cn of this SiteGroupReferenceInfo.
+        :type name_cn: str
+        """
+        self._name_cn = name_cn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

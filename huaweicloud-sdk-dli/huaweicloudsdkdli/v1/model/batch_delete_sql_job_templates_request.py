@@ -17,7 +17,7 @@ class BatchDeleteSqlJobTemplatesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'DeleteSqlTemplatesRequestBody'
+        'body': 'BatchDeleteSqlJobTemplatesRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class BatchDeleteSqlJobTemplatesRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the BatchDeleteSqlJobTemplatesRequest
-        :type body: :class:`huaweicloudsdkdli.v1.DeleteSqlTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class BatchDeleteSqlJobTemplatesRequest:
         """Gets the body of this BatchDeleteSqlJobTemplatesRequest.
 
         :return: The body of this BatchDeleteSqlJobTemplatesRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteSqlTemplatesRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class BatchDeleteSqlJobTemplatesRequest:
         """Sets the body of this BatchDeleteSqlJobTemplatesRequest.
 
         :param body: The body of this BatchDeleteSqlJobTemplatesRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.DeleteSqlTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesRequestBody`
         """
         self._body = body
 

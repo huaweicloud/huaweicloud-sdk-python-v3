@@ -51,7 +51,7 @@ class ImsRegion:
     AE_AD_1 = Region("ae-ad-1",
                         "https://ims.ae-ad-1.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
-                        "https://ims.eu-west-101.myhuaweicloud.eu")
+                        "https://ims.eu-west-101.myhuaweicloud.com")
     CN_EAST_5 = Region("cn-east-5",
                         "https://ims.cn-east-5.myhuaweicloud.com")
     EU_WEST_0 = Region("eu-west-0",

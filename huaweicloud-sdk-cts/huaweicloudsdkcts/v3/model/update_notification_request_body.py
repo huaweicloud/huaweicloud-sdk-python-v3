@@ -19,6 +19,7 @@ class UpdateNotificationRequestBody:
     openapi_types = {
         'notification_name': 'str',
         'operation_type': 'str',
+        'agency_name': 'str',
         'operations': 'list[Operations]',
         'notify_user_list': 'list[NotificationUsers]',
         'status': 'str',
@@ -30,6 +31,7 @@ class UpdateNotificationRequestBody:
     attribute_map = {
         'notification_name': 'notification_name',
         'operation_type': 'operation_type',
+        'agency_name': 'agency_name',
         'operations': 'operations',
         'notify_user_list': 'notify_user_list',
         'status': 'status',
@@ -38,7 +40,7 @@ class UpdateNotificationRequestBody:
         'filter': 'filter'
     }
 
-    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, filter=None):
+    def __init__(self, notification_name=None, operation_type=None, agency_name=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, filter=None):
         """UpdateNotificationRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class UpdateNotificationRequestBody:
         :type notification_name: str
         :param operation_type: 标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
         :type operation_type: str
+        :param agency_name: 云服务委托名称。 参数值为\&quot;cts_admin_trust\&quot;时，修改追踪器会自动创建一个云服务委托：cts_admin_trust。
+        :type agency_name: str
         :param operations: 操作事件列表。
         :type operations: list[:class:`huaweicloudsdkcts.v3.Operations`]
         :param notify_user_list: 通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
@@ -65,6 +69,7 @@ class UpdateNotificationRequestBody:
 
         self._notification_name = None
         self._operation_type = None
+        self._agency_name = None
         self._operations = None
         self._notify_user_list = None
         self._status = None
@@ -75,6 +80,8 @@ class UpdateNotificationRequestBody:
 
         self.notification_name = notification_name
         self.operation_type = operation_type
+        if agency_name is not None:
+            self.agency_name = agency_name
         if operations is not None:
             self.operations = operations
         if notify_user_list is not None:
@@ -129,6 +136,28 @@ class UpdateNotificationRequestBody:
         :type operation_type: str
         """
         self._operation_type = operation_type
+
+    @property
+    def agency_name(self):
+        """Gets the agency_name of this UpdateNotificationRequestBody.
+
+        云服务委托名称。 参数值为\"cts_admin_trust\"时，修改追踪器会自动创建一个云服务委托：cts_admin_trust。
+
+        :return: The agency_name of this UpdateNotificationRequestBody.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        """Sets the agency_name of this UpdateNotificationRequestBody.
+
+        云服务委托名称。 参数值为\"cts_admin_trust\"时，修改追踪器会自动创建一个云服务委托：cts_admin_trust。
+
+        :param agency_name: The agency_name of this UpdateNotificationRequestBody.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     @property
     def operations(self):

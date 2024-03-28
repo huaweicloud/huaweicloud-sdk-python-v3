@@ -41,11 +41,11 @@ class ResizeEngineInstanceReq:
 
         The model defined in huaweicloud sdk
 
-        :param oper_type: 变更类型。  取值范围：   - storage：存储空间扩容，代理数量不变。    - horizontal：代理数量扩容，每个broker的存储空间不变。    - vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。
+        :param oper_type: 变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
         :type oper_type: str
-        :param new_storage_space: 扩容后的存储空间。  当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 &#x3D; 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。
+        :param new_storage_space: 扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 &#x3D; 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)  [实例存储空间 &#x3D; 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs)
         :type new_storage_space: int
-        :param new_broker_num: 当oper_type参数为horizontal时，该参数有效。  取值范围：最多支持30个broker。
+        :param new_broker_num: 当oper_type参数为horizontal时，该参数有效。  [取值范围：最多支持30个broker。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)
         :type new_broker_num: int
         :param new_product_id: 垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
         :type new_product_id: str
@@ -86,7 +86,7 @@ class ResizeEngineInstanceReq:
     def oper_type(self):
         """Gets the oper_type of this ResizeEngineInstanceReq.
 
-        变更类型。  取值范围：   - storage：存储空间扩容，代理数量不变。    - horizontal：代理数量扩容，每个broker的存储空间不变。    - vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。
+        变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
 
         :return: The oper_type of this ResizeEngineInstanceReq.
         :rtype: str
@@ -97,7 +97,7 @@ class ResizeEngineInstanceReq:
     def oper_type(self, oper_type):
         """Sets the oper_type of this ResizeEngineInstanceReq.
 
-        变更类型。  取值范围：   - storage：存储空间扩容，代理数量不变。    - horizontal：代理数量扩容，每个broker的存储空间不变。    - vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。
+        变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
 
         :param oper_type: The oper_type of this ResizeEngineInstanceReq.
         :type oper_type: str
@@ -108,7 +108,7 @@ class ResizeEngineInstanceReq:
     def new_storage_space(self):
         """Gets the new_storage_space of this ResizeEngineInstanceReq.
 
-        扩容后的存储空间。  当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。
+        扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs)
 
         :return: The new_storage_space of this ResizeEngineInstanceReq.
         :rtype: int
@@ -119,7 +119,7 @@ class ResizeEngineInstanceReq:
     def new_storage_space(self, new_storage_space):
         """Sets the new_storage_space of this ResizeEngineInstanceReq.
 
-        扩容后的存储空间。  当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。
+        扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs)
 
         :param new_storage_space: The new_storage_space of this ResizeEngineInstanceReq.
         :type new_storage_space: int
@@ -130,7 +130,7 @@ class ResizeEngineInstanceReq:
     def new_broker_num(self):
         """Gets the new_broker_num of this ResizeEngineInstanceReq.
 
-        当oper_type参数为horizontal时，该参数有效。  取值范围：最多支持30个broker。
+        当oper_type参数为horizontal时，该参数有效。  [取值范围：最多支持30个broker。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)
 
         :return: The new_broker_num of this ResizeEngineInstanceReq.
         :rtype: int
@@ -141,7 +141,7 @@ class ResizeEngineInstanceReq:
     def new_broker_num(self, new_broker_num):
         """Sets the new_broker_num of this ResizeEngineInstanceReq.
 
-        当oper_type参数为horizontal时，该参数有效。  取值范围：最多支持30个broker。
+        当oper_type参数为horizontal时，该参数有效。  [取值范围：最多支持30个broker。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)
 
         :param new_broker_num: The new_broker_num of this ResizeEngineInstanceReq.
         :type new_broker_num: int

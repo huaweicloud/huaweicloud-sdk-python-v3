@@ -23,12 +23,12 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         'id': 'str',
         'name': 'str',
         'status': 'str',
-        'available_queue_info': 'list[EnhancedConnectionResourceInfo]',
-        'elastic_resource_pools': 'list[EnhancedConnectionResourceInfo]',
+        'available_queue_info': 'list[EnhancedConnectionResource]',
+        'elastic_resource_pools': 'list[EnhancedConnectionResource]',
         'dest_vpc_id': 'str',
         'dest_network_id': 'str',
         'create_time': 'int',
-        'hosts': 'list[EnhancedConnectionsHost]'
+        'hosts': 'list[EnhancedConnectionHost]'
     }
 
     attribute_map = {
@@ -61,9 +61,9 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         :param status: 连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
         :type status: str
         :param available_queue_info: 各个队列创建对等连接的信息。
-        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResource`]
         :param elastic_resource_pools: 各个弹性资源池创建对等连接的信息。
-        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResource`]
         :param dest_vpc_id: 对应服务的虚拟私有云标识。
         :type dest_vpc_id: str
         :param dest_network_id: 对应服务的子网网络标识。
@@ -71,7 +71,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         :param create_time: 创建连接的时间。为UTC的时间戳。
         :type create_time: int
         :param hosts: 用户自定义主机信息。
-        :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionsHost`]
+        :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionHost`]
         """
         
         super(ShowEnhancedConnectionResponse, self).__init__()
@@ -229,7 +229,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         各个队列创建对等连接的信息。
 
         :return: The available_queue_info of this ShowEnhancedConnectionResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResource`]
         """
         return self._available_queue_info
 
@@ -240,7 +240,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         各个队列创建对等连接的信息。
 
         :param available_queue_info: The available_queue_info of this ShowEnhancedConnectionResponse.
-        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResource`]
         """
         self._available_queue_info = available_queue_info
 
@@ -251,7 +251,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         各个弹性资源池创建对等连接的信息。
 
         :return: The elastic_resource_pools of this ShowEnhancedConnectionResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResource`]
         """
         return self._elastic_resource_pools
 
@@ -262,7 +262,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         各个弹性资源池创建对等连接的信息。
 
         :param elastic_resource_pools: The elastic_resource_pools of this ShowEnhancedConnectionResponse.
-        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResource`]
         """
         self._elastic_resource_pools = elastic_resource_pools
 
@@ -339,7 +339,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         用户自定义主机信息。
 
         :return: The hosts of this ShowEnhancedConnectionResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionsHost`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionHost`]
         """
         return self._hosts
 
@@ -350,7 +350,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         用户自定义主机信息。
 
         :param hosts: The hosts of this ShowEnhancedConnectionResponse.
-        :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionsHost`]
+        :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionHost`]
         """
         self._hosts = hosts
 

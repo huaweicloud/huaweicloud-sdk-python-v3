@@ -21,11 +21,15 @@ class ListGlobalConnectionBandwidthConfigs:
         'charge_mode': 'list[str]',
         'services': 'list[str]',
         'gcb_type': 'list[str]',
+        'ratio_95peak_plus': 'int',
         'ratio_95peak_guar': 'int',
         'crossborder': 'bool',
         'quotas': 'list[GlobalConnectionBandwidthQuotas]',
         'sla_level': 'list[str]',
-        'bind_limit': 'int'
+        'bind_limit': 'int',
+        'enable_area_bandwidth': 'bool',
+        'enable_change_95': 'bool',
+        'enable_spec_code': 'bool'
     }
 
     attribute_map = {
@@ -33,14 +37,18 @@ class ListGlobalConnectionBandwidthConfigs:
         'charge_mode': 'charge_mode',
         'services': 'services',
         'gcb_type': 'gcb_type',
+        'ratio_95peak_plus': 'ratio_95peak_plus',
         'ratio_95peak_guar': 'ratio_95peak_guar',
         'crossborder': 'crossborder',
         'quotas': 'quotas',
         'sla_level': 'sla_level',
-        'bind_limit': 'bind_limit'
+        'bind_limit': 'bind_limit',
+        'enable_area_bandwidth': 'enable_area_bandwidth',
+        'enable_change_95': 'enable_change_95',
+        'enable_spec_code': 'enable_spec_code'
     }
 
-    def __init__(self, size_range=None, charge_mode=None, services=None, gcb_type=None, ratio_95peak_guar=None, crossborder=None, quotas=None, sla_level=None, bind_limit=None):
+    def __init__(self, size_range=None, charge_mode=None, services=None, gcb_type=None, ratio_95peak_plus=None, ratio_95peak_guar=None, crossborder=None, quotas=None, sla_level=None, bind_limit=None, enable_area_bandwidth=None, enable_change_95=None, enable_spec_code=None):
         """ListGlobalConnectionBandwidthConfigs
 
         The model defined in huaweicloud sdk
@@ -53,6 +61,8 @@ class ListGlobalConnectionBandwidthConfigs:
         :type services: list[str]
         :param gcb_type: 支持的带宽类型。
         :type gcb_type: list[str]
+        :param ratio_95peak_plus: 按增强型95计费保底消费百分比。
+        :type ratio_95peak_plus: int
         :param ratio_95peak_guar: 按传统型95计费保底消费百分比。
         :type ratio_95peak_guar: int
         :param crossborder: 是否已经完成跨境审批。
@@ -63,6 +73,12 @@ class ListGlobalConnectionBandwidthConfigs:
         :type sla_level: list[str]
         :param bind_limit: 共享带宽允许绑定实例数量上限。
         :type bind_limit: int
+        :param enable_area_bandwidth: 是否启用传统的大区带宽。
+        :type enable_area_bandwidth: bool
+        :param enable_change_95: 是否支持95转按需。
+        :type enable_change_95: bool
+        :param enable_spec_code: 是否支持多SKU产品功能。
+        :type enable_spec_code: bool
         """
         
         
@@ -71,23 +87,35 @@ class ListGlobalConnectionBandwidthConfigs:
         self._charge_mode = None
         self._services = None
         self._gcb_type = None
+        self._ratio_95peak_plus = None
         self._ratio_95peak_guar = None
         self._crossborder = None
         self._quotas = None
         self._sla_level = None
         self._bind_limit = None
+        self._enable_area_bandwidth = None
+        self._enable_change_95 = None
+        self._enable_spec_code = None
         self.discriminator = None
 
         self.size_range = size_range
         self.charge_mode = charge_mode
         self.services = services
         self.gcb_type = gcb_type
+        if ratio_95peak_plus is not None:
+            self.ratio_95peak_plus = ratio_95peak_plus
         if ratio_95peak_guar is not None:
             self.ratio_95peak_guar = ratio_95peak_guar
         self.crossborder = crossborder
         self.quotas = quotas
         self.sla_level = sla_level
         self.bind_limit = bind_limit
+        if enable_area_bandwidth is not None:
+            self.enable_area_bandwidth = enable_area_bandwidth
+        if enable_change_95 is not None:
+            self.enable_change_95 = enable_change_95
+        if enable_spec_code is not None:
+            self.enable_spec_code = enable_spec_code
 
     @property
     def size_range(self):
@@ -176,6 +204,28 @@ class ListGlobalConnectionBandwidthConfigs:
         :type gcb_type: list[str]
         """
         self._gcb_type = gcb_type
+
+    @property
+    def ratio_95peak_plus(self):
+        """Gets the ratio_95peak_plus of this ListGlobalConnectionBandwidthConfigs.
+
+        按增强型95计费保底消费百分比。
+
+        :return: The ratio_95peak_plus of this ListGlobalConnectionBandwidthConfigs.
+        :rtype: int
+        """
+        return self._ratio_95peak_plus
+
+    @ratio_95peak_plus.setter
+    def ratio_95peak_plus(self, ratio_95peak_plus):
+        """Sets the ratio_95peak_plus of this ListGlobalConnectionBandwidthConfigs.
+
+        按增强型95计费保底消费百分比。
+
+        :param ratio_95peak_plus: The ratio_95peak_plus of this ListGlobalConnectionBandwidthConfigs.
+        :type ratio_95peak_plus: int
+        """
+        self._ratio_95peak_plus = ratio_95peak_plus
 
     @property
     def ratio_95peak_guar(self):
@@ -286,6 +336,72 @@ class ListGlobalConnectionBandwidthConfigs:
         :type bind_limit: int
         """
         self._bind_limit = bind_limit
+
+    @property
+    def enable_area_bandwidth(self):
+        """Gets the enable_area_bandwidth of this ListGlobalConnectionBandwidthConfigs.
+
+        是否启用传统的大区带宽。
+
+        :return: The enable_area_bandwidth of this ListGlobalConnectionBandwidthConfigs.
+        :rtype: bool
+        """
+        return self._enable_area_bandwidth
+
+    @enable_area_bandwidth.setter
+    def enable_area_bandwidth(self, enable_area_bandwidth):
+        """Sets the enable_area_bandwidth of this ListGlobalConnectionBandwidthConfigs.
+
+        是否启用传统的大区带宽。
+
+        :param enable_area_bandwidth: The enable_area_bandwidth of this ListGlobalConnectionBandwidthConfigs.
+        :type enable_area_bandwidth: bool
+        """
+        self._enable_area_bandwidth = enable_area_bandwidth
+
+    @property
+    def enable_change_95(self):
+        """Gets the enable_change_95 of this ListGlobalConnectionBandwidthConfigs.
+
+        是否支持95转按需。
+
+        :return: The enable_change_95 of this ListGlobalConnectionBandwidthConfigs.
+        :rtype: bool
+        """
+        return self._enable_change_95
+
+    @enable_change_95.setter
+    def enable_change_95(self, enable_change_95):
+        """Sets the enable_change_95 of this ListGlobalConnectionBandwidthConfigs.
+
+        是否支持95转按需。
+
+        :param enable_change_95: The enable_change_95 of this ListGlobalConnectionBandwidthConfigs.
+        :type enable_change_95: bool
+        """
+        self._enable_change_95 = enable_change_95
+
+    @property
+    def enable_spec_code(self):
+        """Gets the enable_spec_code of this ListGlobalConnectionBandwidthConfigs.
+
+        是否支持多SKU产品功能。
+
+        :return: The enable_spec_code of this ListGlobalConnectionBandwidthConfigs.
+        :rtype: bool
+        """
+        return self._enable_spec_code
+
+    @enable_spec_code.setter
+    def enable_spec_code(self, enable_spec_code):
+        """Sets the enable_spec_code of this ListGlobalConnectionBandwidthConfigs.
+
+        是否支持多SKU产品功能。
+
+        :param enable_spec_code: The enable_spec_code of this ListGlobalConnectionBandwidthConfigs.
+        :type enable_spec_code: bool
+        """
+        self._enable_spec_code = enable_spec_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

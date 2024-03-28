@@ -66,6 +66,8 @@ from huaweicloudsdkcbr.v1.model.copy_checkpoint_request import CopyCheckpointReq
 from huaweicloudsdkcbr.v1.model.copy_checkpoint_response import CopyCheckpointResponse
 from huaweicloudsdkcbr.v1.model.create_checkpoint_request import CreateCheckpointRequest
 from huaweicloudsdkcbr.v1.model.create_checkpoint_response import CreateCheckpointResponse
+from huaweicloudsdkcbr.v1.model.create_organization_policy_request import CreateOrganizationPolicyRequest
+from huaweicloudsdkcbr.v1.model.create_organization_policy_response import CreateOrganizationPolicyResponse
 from huaweicloudsdkcbr.v1.model.create_policy_request import CreatePolicyRequest
 from huaweicloudsdkcbr.v1.model.create_policy_response import CreatePolicyResponse
 from huaweicloudsdkcbr.v1.model.create_post_paid_vault_request import CreatePostPaidVaultRequest
@@ -78,6 +80,8 @@ from huaweicloudsdkcbr.v1.model.delete_backup_request import DeleteBackupRequest
 from huaweicloudsdkcbr.v1.model.delete_backup_response import DeleteBackupResponse
 from huaweicloudsdkcbr.v1.model.delete_member_request import DeleteMemberRequest
 from huaweicloudsdkcbr.v1.model.delete_member_response import DeleteMemberResponse
+from huaweicloudsdkcbr.v1.model.delete_organization_policy_request import DeleteOrganizationPolicyRequest
+from huaweicloudsdkcbr.v1.model.delete_organization_policy_response import DeleteOrganizationPolicyResponse
 from huaweicloudsdkcbr.v1.model.delete_policy_request import DeletePolicyRequest
 from huaweicloudsdkcbr.v1.model.delete_policy_response import DeletePolicyResponse
 from huaweicloudsdkcbr.v1.model.delete_vault_request import DeleteVaultRequest
@@ -105,6 +109,10 @@ from huaweicloudsdkcbr.v1.model.list_external_vault_request import ListExternalV
 from huaweicloudsdkcbr.v1.model.list_external_vault_response import ListExternalVaultResponse
 from huaweicloudsdkcbr.v1.model.list_op_logs_request import ListOpLogsRequest
 from huaweicloudsdkcbr.v1.model.list_op_logs_response import ListOpLogsResponse
+from huaweicloudsdkcbr.v1.model.list_organization_policies_request import ListOrganizationPoliciesRequest
+from huaweicloudsdkcbr.v1.model.list_organization_policies_response import ListOrganizationPoliciesResponse
+from huaweicloudsdkcbr.v1.model.list_organization_policy_detail_request import ListOrganizationPolicyDetailRequest
+from huaweicloudsdkcbr.v1.model.list_organization_policy_detail_response import ListOrganizationPolicyDetailResponse
 from huaweicloudsdkcbr.v1.model.list_policies_request import ListPoliciesRequest
 from huaweicloudsdkcbr.v1.model.list_policies_response import ListPoliciesResponse
 from huaweicloudsdkcbr.v1.model.list_projects_request import ListProjectsRequest
@@ -130,6 +138,12 @@ from huaweicloudsdkcbr.v1.model.op_extend_info_sync import OpExtendInfoSync
 from huaweicloudsdkcbr.v1.model.op_extend_info_vault_delete import OpExtendInfoVaultDelete
 from huaweicloudsdkcbr.v1.model.op_extra_info import OpExtraInfo
 from huaweicloudsdkcbr.v1.model.operation_log import OperationLog
+from huaweicloudsdkcbr.v1.model.organization_policy import OrganizationPolicy
+from huaweicloudsdkcbr.v1.model.organization_policy_create import OrganizationPolicyCreate
+from huaweicloudsdkcbr.v1.model.organization_policy_create_req import OrganizationPolicyCreateReq
+from huaweicloudsdkcbr.v1.model.organization_policy_status import OrganizationPolicyStatus
+from huaweicloudsdkcbr.v1.model.organization_policy_update import OrganizationPolicyUpdate
+from huaweicloudsdkcbr.v1.model.organization_policy_update_req import OrganizationPolicyUpdateReq
 from huaweicloudsdkcbr.v1.model.path import Path
 from huaweicloudsdkcbr.v1.model.policy import Policy
 from huaweicloudsdkcbr.v1.model.policy_associate_vault import PolicyAssociateVault
@@ -186,6 +200,8 @@ from huaweicloudsdkcbr.v1.model.show_migrate_status_request import ShowMigrateSt
 from huaweicloudsdkcbr.v1.model.show_migrate_status_response import ShowMigrateStatusResponse
 from huaweicloudsdkcbr.v1.model.show_op_log_request import ShowOpLogRequest
 from huaweicloudsdkcbr.v1.model.show_op_log_response import ShowOpLogResponse
+from huaweicloudsdkcbr.v1.model.show_organization_policy_request import ShowOrganizationPolicyRequest
+from huaweicloudsdkcbr.v1.model.show_organization_policy_response import ShowOrganizationPolicyResponse
 from huaweicloudsdkcbr.v1.model.show_policy_request import ShowPolicyRequest
 from huaweicloudsdkcbr.v1.model.show_policy_response import ShowPolicyResponse
 from huaweicloudsdkcbr.v1.model.show_protectable_request import ShowProtectableRequest
@@ -225,6 +241,8 @@ from huaweicloudsdkcbr.v1.model.update_member_status_request import UpdateMember
 from huaweicloudsdkcbr.v1.model.update_member_status_response import UpdateMemberStatusResponse
 from huaweicloudsdkcbr.v1.model.update_order_request import UpdateOrderRequest
 from huaweicloudsdkcbr.v1.model.update_order_response import UpdateOrderResponse
+from huaweicloudsdkcbr.v1.model.update_organization_policy_request import UpdateOrganizationPolicyRequest
+from huaweicloudsdkcbr.v1.model.update_organization_policy_response import UpdateOrganizationPolicyResponse
 from huaweicloudsdkcbr.v1.model.update_policy_request import UpdatePolicyRequest
 from huaweicloudsdkcbr.v1.model.update_policy_response import UpdatePolicyResponse
 from huaweicloudsdkcbr.v1.model.update_vault_request import UpdateVaultRequest

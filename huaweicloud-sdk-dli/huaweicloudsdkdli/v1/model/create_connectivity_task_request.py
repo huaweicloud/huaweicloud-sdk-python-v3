@@ -18,7 +18,7 @@ class CreateConnectivityTaskRequest:
 
     openapi_types = {
         'queue_name': 'str',
-        'body': 'VerityConnectivityReq'
+        'body': 'CreateConnectivityTaskRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateConnectivityTaskRequest:
         :param queue_name: 队列名称
         :type queue_name: str
         :param body: Body of the CreateConnectivityTaskRequest
-        :type body: :class:`huaweicloudsdkdli.v1.VerityConnectivityReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateConnectivityTaskRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class CreateConnectivityTaskRequest:
         """Gets the body of this CreateConnectivityTaskRequest.
 
         :return: The body of this CreateConnectivityTaskRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.VerityConnectivityReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateConnectivityTaskRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateConnectivityTaskRequest:
         """Sets the body of this CreateConnectivityTaskRequest.
 
         :param body: The body of this CreateConnectivityTaskRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.VerityConnectivityReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateConnectivityTaskRequestBody`
         """
         self._body = body
 

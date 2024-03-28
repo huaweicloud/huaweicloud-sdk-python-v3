@@ -18,7 +18,7 @@ class UpdateEnhancedConnectionRequest:
 
     openapi_types = {
         'connection_id': 'str',
-        'body': 'UpdateHostMassageReq'
+        'body': 'UpdateEnhancedConnectionRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateEnhancedConnectionRequest:
         :param connection_id: 连接ID，用于标识跨源连接的UUID。
         :type connection_id: str
         :param body: Body of the UpdateEnhancedConnectionRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateHostMassageReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateEnhancedConnectionRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdateEnhancedConnectionRequest:
         """Gets the body of this UpdateEnhancedConnectionRequest.
 
         :return: The body of this UpdateEnhancedConnectionRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateHostMassageReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateEnhancedConnectionRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateEnhancedConnectionRequest:
         """Sets the body of this UpdateEnhancedConnectionRequest.
 
         :param body: The body of this UpdateEnhancedConnectionRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateHostMassageReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateEnhancedConnectionRequestBody`
         """
         self._body = body
 

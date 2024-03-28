@@ -37,20 +37,7 @@ class FlinkJobConfig:
         'dependency_files': 'list[str]',
         'executor_number': 'int',
         'executor_cu_number': 'int',
-        'resume_checkpoint': 'bool',
-        'runtime_config': 'str',
-        'graph_editor_enabled': 'bool',
-        'graph_editor_data': 'str',
-        'resume_max_num': 'int',
-        'checkpoint_path': 'str',
-        'config_url': 'str',
-        'tm_cus': 'int',
-        'tm_slot_num': 'int',
-        'image': 'str',
-        'feature': 'str',
-        'flink_version': 'str',
-        'operator_config': 'str',
-        'static_estimator_config': 'str'
+        'resume_checkpoint': 'bool'
     }
 
     attribute_map = {
@@ -74,23 +61,10 @@ class FlinkJobConfig:
         'dependency_files': 'dependency_files',
         'executor_number': 'executor_number',
         'executor_cu_number': 'executor_cu_number',
-        'resume_checkpoint': 'resume_checkpoint',
-        'runtime_config': 'runtime_config',
-        'graph_editor_enabled': 'graph_editor_enabled',
-        'graph_editor_data': 'graph_editor_data',
-        'resume_max_num': 'resume_max_num',
-        'checkpoint_path': 'checkpoint_path',
-        'config_url': 'config_url',
-        'tm_cus': 'tm_cus',
-        'tm_slot_num': 'tm_slot_num',
-        'image': 'image',
-        'feature': 'feature',
-        'flink_version': 'flink_version',
-        'operator_config': 'operator_config',
-        'static_estimator_config': 'static_estimator_config'
+        'resume_checkpoint': 'resume_checkpoint'
     }
 
-    def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, resume_checkpoint=None, runtime_config=None, graph_editor_enabled=None, graph_editor_data=None, resume_max_num=None, checkpoint_path=None, config_url=None, tm_cus=None, tm_slot_num=None, image=None, feature=None, flink_version=None, operator_config=None, static_estimator_config=None):
+    def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, resume_checkpoint=None):
         """FlinkJobConfig
 
         The model defined in huaweicloud sdk
@@ -115,7 +89,7 @@ class FlinkJobConfig:
         :type manager_cu_number: int
         :param cu_number: 用户为作业选择的CU数量, “show_detail”。默认为2。
         :type cu_number: int
-        :param parallel_number: 用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。 
+        :param parallel_number: 用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。
         :type parallel_number: int
         :param restart_when_exception: 是否开启异常重启功能。
         :type restart_when_exception: bool
@@ -137,32 +111,6 @@ class FlinkJobConfig:
         :type executor_cu_number: int
         :param resume_checkpoint: 异常自动重启时，是否从最新checkpoint恢复，默认false
         :type resume_checkpoint: bool
-        :param runtime_config: Flink作业运行时自定义优化参数。
-        :type runtime_config: str
-        :param graph_editor_enabled: 流图编辑开关。默认为“false。
-        :type graph_editor_enabled: bool
-        :param graph_editor_data: 流图编辑数据。默认为null。
-        :type graph_editor_data: str
-        :param resume_max_num: 异常重试最大次数。-1代表无限。
-        :type resume_max_num: int
-        :param checkpoint_path: 检查点保存路径。
-        :type checkpoint_path: str
-        :param config_url: 用户上传的config包OBS路径。
-        :type config_url: str
-        :param tm_cus: 单TM所占CU数。
-        :type tm_cus: int
-        :param tm_slot_num: 单TM Slot数。
-        :type tm_slot_num: int
-        :param image: 自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。
-        :type image: str
-        :param feature: 自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
-        :type feature: str
-        :param flink_version: Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
-        :type flink_version: str
-        :param operator_config: 各算子并行度参数，以json的形式展示各算子id和并行度。
-        :type operator_config: str
-        :param static_estimator_config: 静态流图资源预估参数，以json的形式展示。
-        :type static_estimator_config: str
         """
         
         
@@ -188,19 +136,6 @@ class FlinkJobConfig:
         self._executor_number = None
         self._executor_cu_number = None
         self._resume_checkpoint = None
-        self._runtime_config = None
-        self._graph_editor_enabled = None
-        self._graph_editor_data = None
-        self._resume_max_num = None
-        self._checkpoint_path = None
-        self._config_url = None
-        self._tm_cus = None
-        self._tm_slot_num = None
-        self._image = None
-        self._feature = None
-        self._flink_version = None
-        self._operator_config = None
-        self._static_estimator_config = None
         self.discriminator = None
 
         if checkpoint_enabled is not None:
@@ -245,32 +180,6 @@ class FlinkJobConfig:
             self.executor_cu_number = executor_cu_number
         if resume_checkpoint is not None:
             self.resume_checkpoint = resume_checkpoint
-        if runtime_config is not None:
-            self.runtime_config = runtime_config
-        if graph_editor_enabled is not None:
-            self.graph_editor_enabled = graph_editor_enabled
-        if graph_editor_data is not None:
-            self.graph_editor_data = graph_editor_data
-        if resume_max_num is not None:
-            self.resume_max_num = resume_max_num
-        if checkpoint_path is not None:
-            self.checkpoint_path = checkpoint_path
-        if config_url is not None:
-            self.config_url = config_url
-        if tm_cus is not None:
-            self.tm_cus = tm_cus
-        if tm_slot_num is not None:
-            self.tm_slot_num = tm_slot_num
-        if image is not None:
-            self.image = image
-        if feature is not None:
-            self.feature = feature
-        if flink_version is not None:
-            self.flink_version = flink_version
-        if operator_config is not None:
-            self.operator_config = operator_config
-        if static_estimator_config is not None:
-            self.static_estimator_config = static_estimator_config
 
     @property
     def checkpoint_enabled(self):
@@ -496,7 +405,7 @@ class FlinkJobConfig:
     def parallel_number(self):
         """Gets the parallel_number of this FlinkJobConfig.
 
-        用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。 
+        用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。
 
         :return: The parallel_number of this FlinkJobConfig.
         :rtype: int
@@ -507,7 +416,7 @@ class FlinkJobConfig:
     def parallel_number(self, parallel_number):
         """Sets the parallel_number of this FlinkJobConfig.
 
-        用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。 
+        用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。
 
         :param parallel_number: The parallel_number of this FlinkJobConfig.
         :type parallel_number: int
@@ -733,292 +642,6 @@ class FlinkJobConfig:
         :type resume_checkpoint: bool
         """
         self._resume_checkpoint = resume_checkpoint
-
-    @property
-    def runtime_config(self):
-        """Gets the runtime_config of this FlinkJobConfig.
-
-        Flink作业运行时自定义优化参数。
-
-        :return: The runtime_config of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._runtime_config
-
-    @runtime_config.setter
-    def runtime_config(self, runtime_config):
-        """Sets the runtime_config of this FlinkJobConfig.
-
-        Flink作业运行时自定义优化参数。
-
-        :param runtime_config: The runtime_config of this FlinkJobConfig.
-        :type runtime_config: str
-        """
-        self._runtime_config = runtime_config
-
-    @property
-    def graph_editor_enabled(self):
-        """Gets the graph_editor_enabled of this FlinkJobConfig.
-
-        流图编辑开关。默认为“false。
-
-        :return: The graph_editor_enabled of this FlinkJobConfig.
-        :rtype: bool
-        """
-        return self._graph_editor_enabled
-
-    @graph_editor_enabled.setter
-    def graph_editor_enabled(self, graph_editor_enabled):
-        """Sets the graph_editor_enabled of this FlinkJobConfig.
-
-        流图编辑开关。默认为“false。
-
-        :param graph_editor_enabled: The graph_editor_enabled of this FlinkJobConfig.
-        :type graph_editor_enabled: bool
-        """
-        self._graph_editor_enabled = graph_editor_enabled
-
-    @property
-    def graph_editor_data(self):
-        """Gets the graph_editor_data of this FlinkJobConfig.
-
-        流图编辑数据。默认为null。
-
-        :return: The graph_editor_data of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._graph_editor_data
-
-    @graph_editor_data.setter
-    def graph_editor_data(self, graph_editor_data):
-        """Sets the graph_editor_data of this FlinkJobConfig.
-
-        流图编辑数据。默认为null。
-
-        :param graph_editor_data: The graph_editor_data of this FlinkJobConfig.
-        :type graph_editor_data: str
-        """
-        self._graph_editor_data = graph_editor_data
-
-    @property
-    def resume_max_num(self):
-        """Gets the resume_max_num of this FlinkJobConfig.
-
-        异常重试最大次数。-1代表无限。
-
-        :return: The resume_max_num of this FlinkJobConfig.
-        :rtype: int
-        """
-        return self._resume_max_num
-
-    @resume_max_num.setter
-    def resume_max_num(self, resume_max_num):
-        """Sets the resume_max_num of this FlinkJobConfig.
-
-        异常重试最大次数。-1代表无限。
-
-        :param resume_max_num: The resume_max_num of this FlinkJobConfig.
-        :type resume_max_num: int
-        """
-        self._resume_max_num = resume_max_num
-
-    @property
-    def checkpoint_path(self):
-        """Gets the checkpoint_path of this FlinkJobConfig.
-
-        检查点保存路径。
-
-        :return: The checkpoint_path of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._checkpoint_path
-
-    @checkpoint_path.setter
-    def checkpoint_path(self, checkpoint_path):
-        """Sets the checkpoint_path of this FlinkJobConfig.
-
-        检查点保存路径。
-
-        :param checkpoint_path: The checkpoint_path of this FlinkJobConfig.
-        :type checkpoint_path: str
-        """
-        self._checkpoint_path = checkpoint_path
-
-    @property
-    def config_url(self):
-        """Gets the config_url of this FlinkJobConfig.
-
-        用户上传的config包OBS路径。
-
-        :return: The config_url of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._config_url
-
-    @config_url.setter
-    def config_url(self, config_url):
-        """Sets the config_url of this FlinkJobConfig.
-
-        用户上传的config包OBS路径。
-
-        :param config_url: The config_url of this FlinkJobConfig.
-        :type config_url: str
-        """
-        self._config_url = config_url
-
-    @property
-    def tm_cus(self):
-        """Gets the tm_cus of this FlinkJobConfig.
-
-        单TM所占CU数。
-
-        :return: The tm_cus of this FlinkJobConfig.
-        :rtype: int
-        """
-        return self._tm_cus
-
-    @tm_cus.setter
-    def tm_cus(self, tm_cus):
-        """Sets the tm_cus of this FlinkJobConfig.
-
-        单TM所占CU数。
-
-        :param tm_cus: The tm_cus of this FlinkJobConfig.
-        :type tm_cus: int
-        """
-        self._tm_cus = tm_cus
-
-    @property
-    def tm_slot_num(self):
-        """Gets the tm_slot_num of this FlinkJobConfig.
-
-        单TM Slot数。
-
-        :return: The tm_slot_num of this FlinkJobConfig.
-        :rtype: int
-        """
-        return self._tm_slot_num
-
-    @tm_slot_num.setter
-    def tm_slot_num(self, tm_slot_num):
-        """Sets the tm_slot_num of this FlinkJobConfig.
-
-        单TM Slot数。
-
-        :param tm_slot_num: The tm_slot_num of this FlinkJobConfig.
-        :type tm_slot_num: int
-        """
-        self._tm_slot_num = tm_slot_num
-
-    @property
-    def image(self):
-        """Gets the image of this FlinkJobConfig.
-
-        自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。
-
-        :return: The image of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._image
-
-    @image.setter
-    def image(self, image):
-        """Sets the image of this FlinkJobConfig.
-
-        自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。
-
-        :param image: The image of this FlinkJobConfig.
-        :type image: str
-        """
-        self._image = image
-
-    @property
-    def feature(self):
-        """Gets the feature of this FlinkJobConfig.
-
-        自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
-
-        :return: The feature of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._feature
-
-    @feature.setter
-    def feature(self, feature):
-        """Sets the feature of this FlinkJobConfig.
-
-        自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
-
-        :param feature: The feature of this FlinkJobConfig.
-        :type feature: str
-        """
-        self._feature = feature
-
-    @property
-    def flink_version(self):
-        """Gets the flink_version of this FlinkJobConfig.
-
-        Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
-
-        :return: The flink_version of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._flink_version
-
-    @flink_version.setter
-    def flink_version(self, flink_version):
-        """Sets the flink_version of this FlinkJobConfig.
-
-        Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
-
-        :param flink_version: The flink_version of this FlinkJobConfig.
-        :type flink_version: str
-        """
-        self._flink_version = flink_version
-
-    @property
-    def operator_config(self):
-        """Gets the operator_config of this FlinkJobConfig.
-
-        各算子并行度参数，以json的形式展示各算子id和并行度。
-
-        :return: The operator_config of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._operator_config
-
-    @operator_config.setter
-    def operator_config(self, operator_config):
-        """Sets the operator_config of this FlinkJobConfig.
-
-        各算子并行度参数，以json的形式展示各算子id和并行度。
-
-        :param operator_config: The operator_config of this FlinkJobConfig.
-        :type operator_config: str
-        """
-        self._operator_config = operator_config
-
-    @property
-    def static_estimator_config(self):
-        """Gets the static_estimator_config of this FlinkJobConfig.
-
-        静态流图资源预估参数，以json的形式展示。
-
-        :return: The static_estimator_config of this FlinkJobConfig.
-        :rtype: str
-        """
-        return self._static_estimator_config
-
-    @static_estimator_config.setter
-    def static_estimator_config(self, static_estimator_config):
-        """Sets the static_estimator_config of this FlinkJobConfig.
-
-        静态流图资源预估参数，以json的形式展示。
-
-        :param static_estimator_config: The static_estimator_config of this FlinkJobConfig.
-        :type static_estimator_config: str
-        """
-        self._static_estimator_config = static_estimator_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

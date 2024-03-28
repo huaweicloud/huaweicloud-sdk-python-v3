@@ -20,17 +20,19 @@ class PartitionReassignRequest:
         'reassignments': 'list[PartitionReassignEntity]',
         'throttle': 'int',
         'is_schedule': 'bool',
-        'execute_at': 'int'
+        'execute_at': 'int',
+        'time_estimate': 'bool'
     }
 
     attribute_map = {
         'reassignments': 'reassignments',
         'throttle': 'throttle',
         'is_schedule': 'is_schedule',
-        'execute_at': 'execute_at'
+        'execute_at': 'execute_at',
+        'time_estimate': 'time_estimate'
     }
 
-    def __init__(self, reassignments=None, throttle=None, is_schedule=None, execute_at=None):
+    def __init__(self, reassignments=None, throttle=None, is_schedule=None, execute_at=None, time_estimate=None):
         """PartitionReassignRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class PartitionReassignRequest:
         :type is_schedule: bool
         :param execute_at: 定时时间，格式为Unix时间戳，单位为毫秒
         :type execute_at: int
+        :param time_estimate: 设为true表示执行时间预估任务，false为执行重平衡任务。
+        :type time_estimate: bool
         """
         
         
@@ -51,6 +55,7 @@ class PartitionReassignRequest:
         self._throttle = None
         self._is_schedule = None
         self._execute_at = None
+        self._time_estimate = None
         self.discriminator = None
 
         self.reassignments = reassignments
@@ -60,6 +65,8 @@ class PartitionReassignRequest:
             self.is_schedule = is_schedule
         if execute_at is not None:
             self.execute_at = execute_at
+        if time_estimate is not None:
+            self.time_estimate = time_estimate
 
     @property
     def reassignments(self):
@@ -148,6 +155,28 @@ class PartitionReassignRequest:
         :type execute_at: int
         """
         self._execute_at = execute_at
+
+    @property
+    def time_estimate(self):
+        """Gets the time_estimate of this PartitionReassignRequest.
+
+        设为true表示执行时间预估任务，false为执行重平衡任务。
+
+        :return: The time_estimate of this PartitionReassignRequest.
+        :rtype: bool
+        """
+        return self._time_estimate
+
+    @time_estimate.setter
+    def time_estimate(self, time_estimate):
+        """Sets the time_estimate of this PartitionReassignRequest.
+
+        设为true表示执行时间预估任务，false为执行重平衡任务。
+
+        :param time_estimate: The time_estimate of this PartitionReassignRequest.
+        :type time_estimate: bool
+        """
+        self._time_estimate = time_estimate
 
     def to_dict(self):
         """Returns the model properties as a dict"""

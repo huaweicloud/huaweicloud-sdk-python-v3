@@ -19,6 +19,7 @@ class CreateTrackerRequestBody:
     openapi_types = {
         'tracker_type': 'str',
         'tracker_name': 'str',
+        'agency_name': 'str',
         'is_organization_tracker': 'bool',
         'management_event_selector': 'ManagementEventSelector',
         'is_lts_enabled': 'bool',
@@ -32,6 +33,7 @@ class CreateTrackerRequestBody:
     attribute_map = {
         'tracker_type': 'tracker_type',
         'tracker_name': 'tracker_name',
+        'agency_name': 'agency_name',
         'is_organization_tracker': 'is_organization_tracker',
         'management_event_selector': 'management_event_selector',
         'is_lts_enabled': 'is_lts_enabled',
@@ -42,7 +44,7 @@ class CreateTrackerRequestBody:
         'data_bucket': 'data_bucket'
     }
 
-    def __init__(self, tracker_type=None, tracker_name=None, is_organization_tracker=None, management_event_selector=None, is_lts_enabled=None, obs_info=None, is_support_trace_files_encryption=None, kms_id=None, is_support_validate=None, data_bucket=None):
+    def __init__(self, tracker_type=None, tracker_name=None, agency_name=None, is_organization_tracker=None, management_event_selector=None, is_lts_enabled=None, obs_info=None, is_support_trace_files_encryption=None, kms_id=None, is_support_validate=None, data_bucket=None):
         """CreateTrackerRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateTrackerRequestBody:
         :type tracker_type: str
         :param tracker_name: 标识追踪器名称。 当\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时该参数为默认值\&quot;system\&quot;。 当\&quot;tracker_type\&quot;参数值为\&quot;data\&quot;时该参数需要指定追踪器名称\&quot;。
         :type tracker_name: str
+        :param agency_name: 云服务委托名称。 参数值为\&quot;cts_admin_trust\&quot;时，创建追踪器会自动创建一个云服务委托：cts_admin_trust。
+        :type agency_name: str
         :param is_organization_tracker: 是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
         :type is_organization_tracker: bool
         :param management_event_selector: 
@@ -73,6 +77,7 @@ class CreateTrackerRequestBody:
 
         self._tracker_type = None
         self._tracker_name = None
+        self._agency_name = None
         self._is_organization_tracker = None
         self._management_event_selector = None
         self._is_lts_enabled = None
@@ -85,6 +90,8 @@ class CreateTrackerRequestBody:
 
         self.tracker_type = tracker_type
         self.tracker_name = tracker_name
+        if agency_name is not None:
+            self.agency_name = agency_name
         if is_organization_tracker is not None:
             self.is_organization_tracker = is_organization_tracker
         if management_event_selector is not None:
@@ -145,6 +152,28 @@ class CreateTrackerRequestBody:
         :type tracker_name: str
         """
         self._tracker_name = tracker_name
+
+    @property
+    def agency_name(self):
+        """Gets the agency_name of this CreateTrackerRequestBody.
+
+        云服务委托名称。 参数值为\"cts_admin_trust\"时，创建追踪器会自动创建一个云服务委托：cts_admin_trust。
+
+        :return: The agency_name of this CreateTrackerRequestBody.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        """Sets the agency_name of this CreateTrackerRequestBody.
+
+        云服务委托名称。 参数值为\"cts_admin_trust\"时，创建追踪器会自动创建一个云服务委托：cts_admin_trust。
+
+        :param agency_name: The agency_name of this CreateTrackerRequestBody.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     @property
     def is_organization_tracker(self):

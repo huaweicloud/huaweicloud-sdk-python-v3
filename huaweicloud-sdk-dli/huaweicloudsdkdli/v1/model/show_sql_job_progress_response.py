@@ -24,7 +24,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
         'status': 'str',
         'sub_job_id': 'int',
         'progress': 'float',
-        'sub_jobs': 'list[SubJobDatas]'
+        'sub_jobs': 'list[SubJob]'
     }
 
     attribute_map = {
@@ -55,7 +55,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
         :param progress: 正在运行的子作业的进度或者整个作业进度，该值只能粗略的估算子作业进度，不表示作业的详细进度。有两方面的含义： （1）如果整个作业刚开始运行或者在提交中，则进度展示为0；如果作业运行结束，则进度展示为1。此时progress表示整个作业的运行进度，因为没有子作业在运行，sub_job_id不展示。 （2）如果有子作业在运行中，则展示该子作业的运行进度，progress的计算方法为：子作业已经完成的task数除以子作业总的task数。此时progress表示子作业的运行进度，sub_job_id展示。
         :type progress: float
         :param sub_jobs: 正在运行作业的子作业的详细信息，一个作业可能包含多个子作业。
-        :type sub_jobs: list[:class:`huaweicloudsdkdli.v1.SubJobDatas`]
+        :type sub_jobs: list[:class:`huaweicloudsdkdli.v1.SubJob`]
         """
         
         super(ShowSqlJobProgressResponse, self).__init__()
@@ -223,7 +223,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
         正在运行作业的子作业的详细信息，一个作业可能包含多个子作业。
 
         :return: The sub_jobs of this ShowSqlJobProgressResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.SubJobDatas`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.SubJob`]
         """
         return self._sub_jobs
 
@@ -234,7 +234,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
         正在运行作业的子作业的详细信息，一个作业可能包含多个子作业。
 
         :param sub_jobs: The sub_jobs of this ShowSqlJobProgressResponse.
-        :type sub_jobs: list[:class:`huaweicloudsdkdli.v1.SubJobDatas`]
+        :type sub_jobs: list[:class:`huaweicloudsdkdli.v1.SubJob`]
         """
         self._sub_jobs = sub_jobs
 

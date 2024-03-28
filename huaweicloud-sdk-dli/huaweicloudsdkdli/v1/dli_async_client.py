@@ -166,282 +166,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def batch_delete_queue_plans_async(self, request):
-        """批量删除队列定时扩缩容计划
-
-        该API用于批量删除队列定时扩缩容计划。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchDeleteQueuePlans
-        :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansResponse`
-        """
-        warnings.warn("Method 'batch_delete_queue_plans_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._batch_delete_queue_plans_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_delete_queue_plans_async_invoker(self, request):
-        warnings.warn("Method 'batch_delete_queue_plans_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._batch_delete_queue_plans_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_delete_queue_plans_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/batch-delete",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchDeleteQueuePlansResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def change_authorization_async(self, request):
-        """数据赋权（用户）
-
-        该API用于将数据库或数据表的数据权限赋给指定的其他用户。
-        说明：
-        被赋权用户所在用户组的所属区域需具有Tenant Guest权限。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ChangeAuthorization
-        :type request: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationResponse`
-        """
-        warnings.warn("Method 'change_authorization_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._change_authorization_http_info(request)
-        return self._call_api(**http_info)
-
-    def change_authorization_async_invoker(self, request):
-        warnings.warn("Method 'change_authorization_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._change_authorization_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _change_authorization_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1.0/{project_id}/user-authorization",
-            "request_type": request.__class__.__name__,
-            "response_type": "ChangeAuthorizationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def change_queue_plan_async(self, request):
-        """修改队列定时扩缩容计划
-
-        该API用于修改指定ID的队列定时扩缩容计划。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ChangeQueuePlan
-        :type request: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanResponse`
-        """
-        warnings.warn("Method 'change_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._change_queue_plan_http_info(request)
-        return self._call_api(**http_info)
-
-    def change_queue_plan_async_invoker(self, request):
-        warnings.warn("Method 'change_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._change_queue_plan_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _change_queue_plan_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/{plan_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ChangeQueuePlanResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'plan_id' in local_var_params:
-            path_params['plan_id'] = local_var_params['plan_id']
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_auth_info_async(self, request):
-        """创建跨源认证
-
-        该API用于创建跨源认证。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateAuthInfo
-        :type request: :class:`huaweicloudsdkdli.v1.CreateAuthInfoRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateAuthInfoResponse`
-        """
-        warnings.warn("Method 'create_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_auth_info_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_auth_info_async_invoker(self, request):
-        warnings.warn("Method 'create_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_auth_info_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_auth_info_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateAuthInfoResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_connectivity_task_async(self, request):
         """创建地址连通性请求
 
@@ -478,143 +202,6 @@ class DliAsyncClient(Client):
         path_params = {}
         if 'queue_name' in local_var_params:
             path_params['queue_name'] = local_var_params['queue_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_datasource_connection_async(self, request):
-        """创建经典型跨源连接
-
-        该API用于创建与其他服务的经典型跨源连接。
-        说明：
-        如果需要了解Console界面的使用方法，可参考经典型跨源连接。
-        系统default队列不支持创建跨源连接。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateDatasourceConnection
-        :type request: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionResponse`
-        """
-        warnings.warn("Method 'create_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_datasource_connection_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_datasource_connection_async_invoker(self, request):
-        warnings.warn("Method 'create_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_datasource_connection_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_datasource_connection_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.0/{project_id}/datasource-connection",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateDatasourceConnectionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_dli_agency_async(self, request):
-        """创建DLI委托
-
-        创建DLI委托
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateDliAgency
-        :type request: :class:`huaweicloudsdkdli.v1.CreateDliAgencyRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateDliAgencyResponse`
-        """
-        warnings.warn("Method 'create_dli_agency_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_dli_agency_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_dli_agency_async_invoker(self, request):
-        warnings.warn("Method 'create_dli_agency_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_dli_agency_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_dli_agency_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{project_id}/agency",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateDliAgencyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
 
         query_params = []
 
@@ -745,75 +332,6 @@ class DliAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_enhanced_connection_routes_async(self, request):
-        """创建路由
-
-        该API用于创建跨源需要的路由。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateEnhancedConnectionRoutes
-        :type request: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesResponse`
-        """
-        warnings.warn("Method 'create_enhanced_connection_routes_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_enhanced_connection_routes_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_enhanced_connection_routes_async_invoker(self, request):
-        warnings.warn("Method 'create_enhanced_connection_routes_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_enhanced_connection_routes_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_enhanced_connection_routes_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/routes",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateEnhancedConnectionRoutesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'connection_id' in local_var_params:
-            path_params['connection_id'] = local_var_params['connection_id']
 
         query_params = []
 
@@ -1040,75 +558,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def create_queue_plan_async(self, request):
-        """创建队列定时扩缩容计划
-
-        创建队列定时扩缩容计划接口，对指定的队列创建定时规格变更计划。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateQueuePlan
-        :type request: :class:`huaweicloudsdkdli.v1.CreateQueuePlanRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePlanResponse`
-        """
-        warnings.warn("Method 'create_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_queue_plan_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_queue_plan_async_invoker(self, request):
-        warnings.warn("Method 'create_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_queue_plan_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_queue_plan_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateQueuePlanResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_queue_property_async(self, request):
         """新增队列属性
 
@@ -1243,142 +692,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def delete_auth_info_async(self, request):
-        """删除跨源认证
-
-        该API用于删除跨源认证信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteAuthInfo
-        :type request: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoResponse`
-        """
-        warnings.warn("Method 'delete_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_auth_info_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_auth_info_async_invoker(self, request):
-        warnings.warn("Method 'delete_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_auth_info_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_auth_info_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2.0/{project_id}/datasource/auth-infos/{auth_info_name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteAuthInfoResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'auth_info_name' in local_var_params:
-            path_params['auth_info_name'] = local_var_params['auth_info_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_datasource_connection_async(self, request):
-        """删除经典型跨源连接
-
-        该API用于删除已创建的经典型跨源连接。
-        说明：
-        创建中的连接，无法删除。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteDatasourceConnection
-        :type request: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionResponse`
-        """
-        warnings.warn("Method 'delete_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_datasource_connection_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_datasource_connection_async_invoker(self, request):
-        warnings.warn("Method 'delete_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_datasource_connection_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_datasource_connection_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2.0/{project_id}/datasource-connection/{connection_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteDatasourceConnectionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'connection_id' in local_var_params:
-            path_params['connection_id'] = local_var_params['connection_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def delete_elastic_resource_pool_async(self, request):
         """删除弹性资源池
 
@@ -1480,75 +793,6 @@ class DliAsyncClient(Client):
         path_params = {}
         if 'connection_id' in local_var_params:
             path_params['connection_id'] = local_var_params['connection_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_enhanced_connection_routes_async(self, request):
-        """删除路由
-
-        该API用于删除跨源需要的路由。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteEnhancedConnectionRoutes
-        :type request: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesResponse`
-        """
-        warnings.warn("Method 'delete_enhanced_connection_routes_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_enhanced_connection_routes_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_enhanced_connection_routes_async_invoker(self, request):
-        warnings.warn("Method 'delete_enhanced_connection_routes_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_enhanced_connection_routes_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_enhanced_connection_routes_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/routes/{name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteEnhancedConnectionRoutesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'connection_id' in local_var_params:
-            path_params['connection_id'] = local_var_params['connection_id']
-        if 'name' in local_var_params:
-            path_params['name'] = local_var_params['name']
 
         query_params = []
 
@@ -1775,75 +1019,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def delete_queue_plan_async(self, request):
-        """单个删除队列定时扩缩容计划
-
-        该API用于删除指定ID的队列定时扩缩容计划。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteQueuePlan
-        :type request: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanResponse`
-        """
-        warnings.warn("Method 'delete_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_queue_plan_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_queue_plan_async_invoker(self, request):
-        warnings.warn("Method 'delete_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_queue_plan_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_queue_plan_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/{plan_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteQueuePlanResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'plan_id' in local_var_params:
-            path_params['plan_id'] = local_var_params['plan_id']
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def delete_queue_property_async(self, request):
         """删除队列的属性
 
@@ -1890,75 +1065,6 @@ class DliAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_resource_async(self, request):
-        """删除组内资源包
-
-        该API用于删除某个project某个分组下的资源包
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteResource
-        :type request: :class:`huaweicloudsdkdli.v1.DeleteResourceRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteResourceResponse`
-        """
-        warnings.warn("Method 'delete_resource_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_resource_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_resource_async_invoker(self, request):
-        warnings.warn("Method 'delete_resource_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_resource_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_resource_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2.0/{project_id}/resources/{resource_name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteResourceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_name' in local_var_params:
-            path_params['resource_name'] = local_var_params['resource_name']
-
-        query_params = []
-        if 'group' in local_var_params:
-            query_params.append(('group', local_var_params['group']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2114,77 +1220,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def list_auth_info_async(self, request):
-        """获取跨源认证列表
-
-        该API用于查询跨源认证信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListAuthInfo
-        :type request: :class:`huaweicloudsdkdli.v1.ListAuthInfoRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListAuthInfoResponse`
-        """
-        warnings.warn("Method 'list_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_auth_info_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_auth_info_async_invoker(self, request):
-        warnings.warn("Method 'list_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_auth_info_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_auth_info_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListAuthInfoResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'auth_info_name' in local_var_params:
-            query_params.append(('auth_info_name', local_var_params['auth_info_name']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def list_authorization_privileges_async(self, request):
         """查看赋权对象的用者权限信息
 
@@ -2290,140 +1325,6 @@ class DliAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_database_users_async(self, request):
-        """查看数据库的使用者
-
-        该API用于查询可以使用的指定队列的所有用户名称。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDatabaseUsers
-        :type request: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersResponse`
-        """
-        warnings.warn("Method 'list_database_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_database_users_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_database_users_async_invoker(self, request):
-        warnings.warn("Method 'list_database_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_database_users_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_database_users_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/users",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDatabaseUsersResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_datasource_connections_async(self, request):
-        """查询经典型跨源连接列表
-
-        该API用于查询该用户已创建的经典型跨源连接列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDatasourceConnections
-        :type request: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsResponse`
-        """
-        warnings.warn("Method 'list_datasource_connections_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_datasource_connections_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_datasource_connections_async_invoker(self, request):
-        warnings.warn("Method 'list_datasource_connections_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_datasource_connections_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_datasource_connections_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.0/{project_id}/datasource-connection",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDatasourceConnectionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -2879,73 +1780,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def list_queue_plans_async(self, request):
-        """查看队列定时扩缩容计划
-
-        查看队列定时扩缩容计划接口，列出指定队列定时规格变更计划。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListQueuePlans
-        :type request: :class:`huaweicloudsdkdli.v1.ListQueuePlansRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListQueuePlansResponse`
-        """
-        warnings.warn("Method 'list_queue_plans_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_queue_plans_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_queue_plans_async_invoker(self, request):
-        warnings.warn("Method 'list_queue_plans_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_queue_plans_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_queue_plans_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListQueuePlansResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def list_queue_properties_async(self, request):
         """获取队列属性
 
@@ -2988,73 +1822,6 @@ class DliAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_queue_users_async(self, request):
-        """查看队列的使用者
-
-        该API用于查询可以使用的指定队列的所有用户名称。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListQueueUsers
-        :type request: :class:`huaweicloudsdkdli.v1.ListQueueUsersRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListQueueUsersResponse`
-        """
-        warnings.warn("Method 'list_queue_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_queue_users_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_queue_users_async_invoker(self, request):
-        warnings.warn("Method 'list_queue_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_queue_users_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_queue_users_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/queues/{queue_name}/users",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListQueueUsersResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
-
-        query_params = []
 
         header_params = {}
 
@@ -3153,282 +1920,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def list_resources_async(self, request):
-        """查看分组资源列表
-
-        该API用于查看某个project下的所有资源，其中包含Group。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListResources
-        :type request: :class:`huaweicloudsdkdli.v1.ListResourcesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListResourcesResponse`
-        """
-        warnings.warn("Method 'list_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_resources_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_resources_async_invoker(self, request):
-        warnings.warn("Method 'list_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_resources_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_resources_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.0/{project_id}/resources",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListResourcesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'kind' in local_var_params:
-            query_params.append(('kind', local_var_params['kind']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_table_privileges_async(self, request):
-        """查看表的用户权限
-
-        该API用于查询指定用户在表上的权限。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListTablePrivileges
-        :type request: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesResponse`
-        """
-        warnings.warn("Method 'list_table_privileges_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_table_privileges_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_table_privileges_async_invoker(self, request):
-        warnings.warn("Method 'list_table_privileges_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_table_privileges_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_table_privileges_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/users/{user_name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListTablePrivilegesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-        if 'table_name' in local_var_params:
-            path_params['table_name'] = local_var_params['table_name']
-        if 'user_name' in local_var_params:
-            path_params['user_name'] = local_var_params['user_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_table_users_async(self, request):
-        """查看表的使用者
-
-        该API用于查看有权访问指定表或表的列的所有用户。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListTableUsers
-        :type request: :class:`huaweicloudsdkdli.v1.ListTableUsersRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListTableUsersResponse`
-        """
-        warnings.warn("Method 'list_table_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_table_users_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_table_users_async_invoker(self, request):
-        warnings.warn("Method 'list_table_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_table_users_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_table_users_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/users",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListTableUsersResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-        if 'table_name' in local_var_params:
-            path_params['table_name'] = local_var_params['table_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def register_authorized_queue_async(self, request):
-        """队列赋权
-
-        该API用于与其他用户共享指定的队列，可以给用户赋使用指定的队列的权限或者收回使用权限。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for RegisterAuthorizedQueue
-        :type request: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueResponse`
-        """
-        warnings.warn("Method 'register_authorized_queue_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._register_authorized_queue_http_info(request)
-        return self._call_api(**http_info)
-
-    def register_authorized_queue_async_invoker(self, request):
-        warnings.warn("Method 'register_authorized_queue_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._register_authorized_queue_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _register_authorized_queue_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1.0/{project_id}/queues/user-authorization",
-            "request_type": request.__class__.__name__,
-            "response_type": "RegisterAuthorizedQueueResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def run_authorization_action_async(self, request):
         """数据赋权（用户、项目）
 
@@ -3497,7 +1988,8 @@ class DliAsyncClient(Client):
     def run_catalog_action_async(self, request):
         """绑定/解绑catalog映射信息
 
-        该API创建DLI绑定/解绑到lakeformation等服务的元数据目录（CATALOG）相关信息，包含DLI侧CATALOG名称、外部CATALOG名称和类型，类型为预留字段，当前只支持lakeformation
+        该API创建DLI绑定/解绑到lakeformation等服务的元数据目录（CATALOG）相关信息。
+        包含DLI侧CATALOG名称、外部CATALOG名称和类型，类型为预留字段，当前只支持lakeformation。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3729,138 +2221,6 @@ class DliAsyncClient(Client):
             path_params['queue_name'] = local_var_params['queue_name']
         if 'task_id' in local_var_params:
             path_params['task_id'] = local_var_params['task_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_datasource_connection_async(self, request):
-        """查询经典型跨源连接
-
-        该API用于查询该用户指定的已创建的经典型跨源连接。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowDatasourceConnection
-        :type request: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResponse`
-        """
-        warnings.warn("Method 'show_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_datasource_connection_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_datasource_connection_async_invoker(self, request):
-        warnings.warn("Method 'show_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_datasource_connection_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_datasource_connection_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.0/{project_id}/datasource-connection/{connection_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowDatasourceConnectionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'connection_id' in local_var_params:
-            path_params['connection_id'] = local_var_params['connection_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_dli_agency_async(self, request):
-        """获取dli委托信息
-
-        获取dli委托信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowDliAgency
-        :type request: :class:`huaweicloudsdkdli.v1.ShowDliAgencyRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowDliAgencyResponse`
-        """
-        warnings.warn("Method 'show_dli_agency_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_dli_agency_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_dli_agency_async_invoker(self, request):
-        warnings.warn("Method 'show_dli_agency_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_dli_agency_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_dli_agency_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/agency",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowDliAgencyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
 
         query_params = []
 
@@ -4127,142 +2487,6 @@ class DliAsyncClient(Client):
         form_params = {}
 
         body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_resource_info_async(self, request):
-        """查看组内资源包
-
-        该API用于查看某个project某个分组下的具体资源信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowResourceInfo
-        :type request: :class:`huaweicloudsdkdli.v1.ShowResourceInfoRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowResourceInfoResponse`
-        """
-        warnings.warn("Method 'show_resource_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_resource_info_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_resource_info_async_invoker(self, request):
-        warnings.warn("Method 'show_resource_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_resource_info_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_resource_info_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.0/{project_id}/resources/{resource_name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowResourceInfoResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_name' in local_var_params:
-            path_params['resource_name'] = local_var_params['resource_name']
-
-        query_params = []
-        if 'group' in local_var_params:
-            query_params.append(('group', local_var_params['group']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_auth_info_async(self, request):
-        """更新跨源认证
-
-        该API用于更新跨源认证信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateAuthInfo
-        :type request: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoResponse`
-        """
-        warnings.warn("Method 'update_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_auth_info_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_auth_info_async_invoker(self, request):
-        warnings.warn("Method 'update_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_auth_info_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_auth_info_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateAuthInfoResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -4554,73 +2778,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def update_group_or_resource_owner_async(self, request):
-        """修改组或者资源包拥有者
-
-        用于修改程序包的owner。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateGroupOrResourceOwner
-        :type request: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerResponse`
-        """
-        warnings.warn("Method 'update_group_or_resource_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_group_or_resource_owner_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_group_or_resource_owner_async_invoker(self, request):
-        warnings.warn("Method 'update_group_or_resource_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_group_or_resource_owner_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_group_or_resource_owner_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2.0/{project_id}/resources/owner",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateGroupOrResourceOwnerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def update_job_auth_info_async(self, request):
         """更新跨源认证
 
@@ -4655,77 +2812,6 @@ class DliAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_queue_cidr_async(self, request):
-        """修改队列网段
-
-        该功能用于修改包年包月队列网段。
-        说明：
-        如果待修改网段的队列中有正在提交或正在运行的作业，或者改队列已经绑定了增强型跨源，将不支持修改网段操作。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateQueueCidr
-        :type request: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrResponse`
-        """
-        warnings.warn("Method 'update_queue_cidr_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_queue_cidr_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_queue_cidr_async_invoker(self, request):
-        warnings.warn("Method 'update_queue_cidr_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_queue_cidr_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_queue_cidr_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1.0/{project_id}/queues/{queue_name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateQueueCidrResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
 
         query_params = []
 
@@ -4797,285 +2883,6 @@ class DliAsyncClient(Client):
         query_params = []
 
         header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def upload_files_async(self, request):
-        """上传file类型分组资源
-
-        该API用于在project下上传file类型模块。
-        说明： 上传同名file模块时，新模块将会覆盖旧模块。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UploadFiles
-        :type request: :class:`huaweicloudsdkdli.v1.UploadFilesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UploadFilesResponse`
-        """
-        warnings.warn("Method 'upload_files_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._upload_files_http_info(request)
-        return self._call_api(**http_info)
-
-    def upload_files_async_invoker(self, request):
-        warnings.warn("Method 'upload_files_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._upload_files_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _upload_files_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.0/{project_id}/resources/files",
-            "request_type": request.__class__.__name__,
-            "response_type": "UploadFilesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'user_id' in local_var_params:
-            header_params['USER-ID'] = local_var_params['user_id']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def upload_jars_async(self, request):
-        """上传jar类型分组资源
-
-        该API用于在project下上传jar类型分组资源。
-        说明：上传同名资源模块时，新模块将会覆盖旧模块。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UploadJars
-        :type request: :class:`huaweicloudsdkdli.v1.UploadJarsRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UploadJarsResponse`
-        """
-        warnings.warn("Method 'upload_jars_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._upload_jars_http_info(request)
-        return self._call_api(**http_info)
-
-    def upload_jars_async_invoker(self, request):
-        warnings.warn("Method 'upload_jars_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._upload_jars_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _upload_jars_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.0/{project_id}/resources/jars",
-            "request_type": request.__class__.__name__,
-            "response_type": "UploadJarsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'user_id' in local_var_params:
-            header_params['USER-ID'] = local_var_params['user_id']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def upload_python_files_async(self, request):
-        """上传pyfile类型分组资源
-
-        该API用于在project下的上传pyfile类型模块。
-        说明： 上传同名pyfile类型模块时，新模块将会覆盖旧模块。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UploadPythonFiles
-        :type request: :class:`huaweicloudsdkdli.v1.UploadPythonFilesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UploadPythonFilesResponse`
-        """
-        warnings.warn("Method 'upload_python_files_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._upload_python_files_http_info(request)
-        return self._call_api(**http_info)
-
-    def upload_python_files_async_invoker(self, request):
-        warnings.warn("Method 'upload_python_files_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._upload_python_files_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _upload_python_files_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.0/{project_id}/resources/pyfiles",
-            "request_type": request.__class__.__name__,
-            "response_type": "UploadPythonFilesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'user_id' in local_var_params:
-            header_params['USER-ID'] = local_var_params['user_id']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def upload_resources_async(self, request):
-        """上传分组资源
-
-        该API用于上传分组资源到某个project下。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UploadResources
-        :type request: :class:`huaweicloudsdkdli.v1.UploadResourcesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UploadResourcesResponse`
-        """
-        warnings.warn("Method 'upload_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._upload_resources_http_info(request)
-        return self._call_api(**http_info)
-
-    def upload_resources_async_invoker(self, request):
-        warnings.warn("Method 'upload_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._upload_resources_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _upload_resources_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.0/{project_id}/resources",
-            "request_type": request.__class__.__name__,
-            "response_type": "UploadResourcesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'user_id' in local_var_params:
-            header_params['USER-ID'] = local_var_params['user_id']
 
         form_params = {}
 
@@ -5233,33 +3040,31 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def change_flink_job_status_report_async(self, request):
-        """边缘Flink作业状态信息上报
+    def batch_stop_flink_jobs_async(self, request):
+        """批量停止Flink作业
 
-        该API用于处理边缘Flink作业状态上报信息
+        批量停止正在运行的Flink作业。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ChangeFlinkJobStatusReport
-        :type request: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportResponse`
+        :param request: Request instance for BatchStopFlinkJobs
+        :type request: :class:`huaweicloudsdkdli.v1.BatchStopFlinkJobsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.BatchStopFlinkJobsResponse`
         """
-        warnings.warn("Method 'change_flink_job_status_report_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._change_flink_job_status_report_http_info(request)
+        http_info = self._batch_stop_flink_jobs_http_info(request)
         return self._call_api(**http_info)
 
-    def change_flink_job_status_report_async_invoker(self, request):
-        warnings.warn("Method 'change_flink_job_status_report_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._change_flink_job_status_report_http_info(request)
+    def batch_stop_flink_jobs_async_invoker(self, request):
+        http_info = self._batch_stop_flink_jobs_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _change_flink_job_status_report_http_info(self, request):
+    def _batch_stop_flink_jobs_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/edgesrv/job-report",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/stop",
             "request_type": request.__class__.__name__,
-            "response_type": "ChangeFlinkJobStatusReportResponse"
+            "response_type": "BatchStopFlinkJobsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5522,140 +3327,6 @@ class DliAsyncClient(Client):
             "resource_path": "/v1.0/{project_id}/streaming/job-templates",
             "request_type": request.__class__.__name__,
             "response_type": "CreateFlinkSqlJobTemplateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_ief_message_channel_async(self, request):
-        """创建IEF消息通道
-
-        该API用于创建IEF消息通道
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateIefMessageChannel
-        :type request: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelResponse`
-        """
-        warnings.warn("Method 'create_ief_message_channel_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_ief_message_channel_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_ief_message_channel_async_invoker(self, request):
-        warnings.warn("Method 'create_ief_message_channel_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_ief_message_channel_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_ief_message_channel_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/edgesrv/message-channel",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateIefMessageChannelResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_ief_system_events_async(self, request):
-        """IEF系统事件上报
-
-        该API用于处理IEF系统事件上报
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateIefSystemEvents
-        :type request: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsResponse`
-        """
-        warnings.warn("Method 'create_ief_system_events_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_ief_system_events_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_ief_system_events_async_invoker(self, request):
-        warnings.warn("Method 'create_ief_system_events_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_ief_system_events_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_ief_system_events_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/edgesrv/system-events",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateIefSystemEventsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6116,140 +3787,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def register_bucket_async(self, request):
-        """OBS授权给DLI服务
-
-        用户主动授权OBS桶的操作权限给DLI服务, 用于保存用户作业的checkpoint、作业的运行日志等。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for RegisterBucket
-        :type request: :class:`huaweicloudsdkdli.v1.RegisterBucketRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.RegisterBucketResponse`
-        """
-        warnings.warn("Method 'register_bucket_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._register_bucket_http_info(request)
-        return self._call_api(**http_info)
-
-    def register_bucket_async_invoker(self, request):
-        warnings.warn("Method 'register_bucket_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._register_bucket_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _register_bucket_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/dli/obs-authorize",
-            "request_type": request.__class__.__name__,
-            "response_type": "RegisterBucketResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def run_ief_job_action_call_back_async(self, request):
-        """边缘Flink作业Action状态回调
-
-        该API用于处理IEF Flink作业action回调信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for RunIefJobActionCallBack
-        :type request: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackResponse`
-        """
-        warnings.warn("Method 'run_ief_job_action_call_back_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._run_ief_job_action_call_back_http_info(request)
-        return self._call_api(**http_info)
-
-    def run_ief_job_action_call_back_async_invoker(self, request):
-        warnings.warn("Method 'run_ief_job_action_call_back_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._run_ief_job_action_call_back_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _run_ief_job_action_call_back_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/edgesrv/messages",
-            "request_type": request.__class__.__name__,
-            "response_type": "RunIefJobActionCallBackResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_flink_job_async(self, request):
         """查询Flink作业详情
 
@@ -6359,138 +3896,6 @@ class DliAsyncClient(Client):
         form_params = {}
 
         body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_flink_metric_async(self, request):
-        """查询Flink作业监控信息
-
-        查询Flink作业监控信息, 支持同时查询多个Flink作业的监控信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowFlinkMetric
-        :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricResponse`
-        """
-        warnings.warn("Method 'show_flink_metric_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_flink_metric_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_flink_metric_async_invoker(self, request):
-        warnings.warn("Method 'show_flink_metric_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_flink_metric_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_flink_metric_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/streaming/jobs/metrics",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowFlinkMetricResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def stop_flink_jobs_async(self, request):
-        """批量停止Flink作业
-
-        批量停止正在运行的Flink作业。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for StopFlinkJobs
-        :type request: :class:`huaweicloudsdkdli.v1.StopFlinkJobsRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.StopFlinkJobsResponse`
-        """
-        http_info = self._stop_flink_jobs_http_info(request)
-        return self._call_api(**http_info)
-
-    def stop_flink_jobs_async_invoker(self, request):
-        http_info = self._stop_flink_jobs_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _stop_flink_jobs_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/streaming/jobs/stop",
-            "request_type": request.__class__.__name__,
-            "response_type": "StopFlinkJobsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -6908,73 +4313,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def create_database_async(self, request):
-        """创建数据库
-
-        该API用于新增数据库。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateDatabase
-        :type request: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateDatabaseResponse`
-        """
-        warnings.warn("Method 'create_database_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_database_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_database_async_invoker(self, request):
-        warnings.warn("Method 'create_database_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_database_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_database_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/databases",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateDatabaseResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_sql_job_async(self, request):
         """提交SQL作业
 
@@ -7107,217 +4445,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def create_table_async(self, request):
-        """创建表
-
-        该API用于创建新的表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateTable
-        :type request: :class:`huaweicloudsdkdli.v1.CreateTableRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateTableResponse`
-        """
-        warnings.warn("Method 'create_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_table_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_table_async_invoker(self, request):
-        warnings.warn("Method 'create_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._create_table_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_table_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateTableResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_database_async(self, request):
-        """删除数据库
-
-        该API用于删除空数据库，若待删除的数据库中存在表，则需先删除其中的所有表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteDatabase
-        :type request: :class:`huaweicloudsdkdli.v1.DeleteDatabaseRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatabaseResponse`
-        """
-        warnings.warn("Method 'delete_database_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_database_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_database_async_invoker(self, request):
-        warnings.warn("Method 'delete_database_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_database_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_database_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteDatabaseResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-
-        query_params = []
-        if '_async' in local_var_params:
-            query_params.append(('async', local_var_params['_async']))
-        if 'cascade' in local_var_params:
-            query_params.append(('cascade', local_var_params['cascade']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_table_async(self, request):
-        """删除表
-
-        该API用于删除指定的表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteTable
-        :type request: :class:`huaweicloudsdkdli.v1.DeleteTableRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteTableResponse`
-        """
-        warnings.warn("Method 'delete_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_table_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_table_async_invoker(self, request):
-        warnings.warn("Method 'delete_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._delete_table_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_table_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteTableResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-        if 'table_name' in local_var_params:
-            path_params['table_name'] = local_var_params['table_name']
-
-        query_params = []
-        if '_async' in local_var_params:
-            query_params.append(('async', local_var_params['_async']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def export_sql_job_result_async(self, request):
         """导出查询结果
 
@@ -7330,12 +4457,10 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultResponse`
         """
-        warnings.warn("Method 'export_sql_job_result_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._export_sql_job_result_http_info(request)
         return self._call_api(**http_info)
 
     def export_sql_job_result_async_invoker(self, request):
-        warnings.warn("Method 'export_sql_job_result_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._export_sql_job_result_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7366,294 +4491,6 @@ class DliAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def export_table_async(self, request):
-        """导出查询结果
-
-        该API用于将SQL语句的查询结果导出到OBS对象存储中，只支持导出“QUERY”类型作业的查询结果。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ExportTable
-        :type request: :class:`huaweicloudsdkdli.v1.ExportTableRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ExportTableResponse`
-        """
-        warnings.warn("Method 'export_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._export_table_http_info(request)
-        return self._call_api(**http_info)
-
-    def export_table_async_invoker(self, request):
-        warnings.warn("Method 'export_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._export_table_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _export_table_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/jobs/export-table",
-            "request_type": request.__class__.__name__,
-            "response_type": "ExportTableResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def import_table_async(self, request):
-        """导入数据
-
-        该API用于将数据从文件导入DLI或OBS表，目前仅支持将OBS上的数据导入DLI或OBS中。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ImportTable
-        :type request: :class:`huaweicloudsdkdli.v1.ImportTableRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ImportTableResponse`
-        """
-        warnings.warn("Method 'import_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._import_table_http_info(request)
-        return self._call_api(**http_info)
-
-    def import_table_async_invoker(self, request):
-        warnings.warn("Method 'import_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._import_table_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _import_table_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1.0/{project_id}/jobs/import-table",
-            "request_type": request.__class__.__name__,
-            "response_type": "ImportTableResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_all_tables_async(self, request):
-        """查询所有表
-
-        该API用于查询指定数据库下符合过滤条件的或所有的表信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListAllTables
-        :type request: :class:`huaweicloudsdkdli.v1.ListAllTablesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListAllTablesResponse`
-        """
-        warnings.warn("Method 'list_all_tables_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_all_tables_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_all_tables_async_invoker(self, request):
-        warnings.warn("Method 'list_all_tables_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_all_tables_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_all_tables_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListAllTablesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-
-        query_params = []
-        if 'current_page' in local_var_params:
-            query_params.append(('current-page', local_var_params['current_page']))
-        if 'keyword' in local_var_params:
-            query_params.append(('keyword', local_var_params['keyword']))
-        if 'page_size' in local_var_params:
-            query_params.append(('page-size', local_var_params['page_size']))
-        if 'table_type' in local_var_params:
-            query_params.append(('table-type', local_var_params['table_type']))
-        if 'with_detail' in local_var_params:
-            query_params.append(('with-detail', local_var_params['with_detail']))
-        if 'with_priv' in local_var_params:
-            query_params.append(('with-priv', local_var_params['with_priv']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_databases_async(self, request):
-        """查询所有数据库
-
-        该API用于查询出所有的数据库信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDatabases
-        :type request: :class:`huaweicloudsdkdli.v1.ListDatabasesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListDatabasesResponse`
-        """
-        warnings.warn("Method 'list_databases_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_databases_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_databases_async_invoker(self, request):
-        warnings.warn("Method 'list_databases_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_databases_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_databases_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/databases",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDatabasesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'keyword' in local_var_params:
-            query_params.append(('keyword', local_var_params['keyword']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'with_priv' in local_var_params:
-            query_params.append(('with-priv', local_var_params['with_priv']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -7899,147 +4736,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def show_describe_table_async(self, request):
-        """描述表信息
-
-        该API用于描述指定表的元数据信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowDescribeTable
-        :type request: :class:`huaweicloudsdkdli.v1.ShowDescribeTableRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowDescribeTableResponse`
-        """
-        warnings.warn("Method 'show_describe_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_describe_table_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_describe_table_async_invoker(self, request):
-        warnings.warn("Method 'show_describe_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_describe_table_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_describe_table_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowDescribeTableResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-        if 'table_name' in local_var_params:
-            path_params['table_name'] = local_var_params['table_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_partitions_async(self, request):
-        """获取分区信息列表
-
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowPartitions
-        :type request: :class:`huaweicloudsdkdli.v1.ShowPartitionsRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowPartitionsResponse`
-        """
-        warnings.warn("Method 'show_partitions_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_partitions_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_partitions_async_invoker(self, request):
-        warnings.warn("Method 'show_partitions_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_partitions_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_partitions_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/partitions",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowPartitionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-        if 'table_name' in local_var_params:
-            path_params['table_name'] = local_var_params['table_name']
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_sql_job_detail_async(self, request):
         """查询作业详细信息
 
@@ -8235,211 +4931,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def show_sql_sample_templates_async(self, request):
-        """查询所有SQL样例模板
-
-        该API用于查询所有SQL样例模板。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowSqlSampleTemplates
-        :type request: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesResponse`
-        """
-        warnings.warn("Method 'show_sql_sample_templates_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_sql_sample_templates_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_sql_sample_templates_async_invoker(self, request):
-        warnings.warn("Method 'show_sql_sample_templates_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_sql_sample_templates_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_sql_sample_templates_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/sqls/sample",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowSqlSampleTemplatesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_table_content_async(self, request):
-        """预览表内容
-
-        该API用于用于预览表中前10行的内容。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowTableContent
-        :type request: :class:`huaweicloudsdkdli.v1.ShowTableContentRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowTableContentResponse`
-        """
-        warnings.warn("Method 'show_table_content_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_table_content_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_table_content_async_invoker(self, request):
-        warnings.warn("Method 'show_table_content_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_table_content_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_table_content_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/preview",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowTableContentResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-        if 'table_name' in local_var_params:
-            path_params['table_name'] = local_var_params['table_name']
-
-        query_params = []
-        if 'mode' in local_var_params:
-            query_params.append(('mode', local_var_params['mode']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_database_owner_async(self, request):
-        """修改数据库用户
-
-        用于修改数据库的owner。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateDatabaseOwner
-        :type request: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerResponse`
-        """
-        warnings.warn("Method 'update_database_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_database_owner_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_database_owner_async_invoker(self, request):
-        warnings.warn("Method 'update_database_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_database_owner_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_database_owner_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/owner",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateDatabaseOwnerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def update_sql_job_template_async(self, request):
         """更新SQL模板
 
@@ -8476,77 +4967,6 @@ class DliAsyncClient(Client):
         path_params = {}
         if 'sql_id' in local_var_params:
             path_params['sql_id'] = local_var_params['sql_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_table_owner_async(self, request):
-        """修改表用户
-
-        用于修改表的owner。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateTableOwner
-        :type request: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerResponse`
-        """
-        warnings.warn("Method 'update_table_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_table_owner_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_table_owner_async_invoker(self, request):
-        warnings.warn("Method 'update_table_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._update_table_owner_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_table_owner_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/owner",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateTableOwnerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-        if 'table_name' in local_var_params:
-            path_params['table_name'] = local_var_params['table_name']
 
         query_params = []
 
@@ -8929,81 +5349,6 @@ class DliAsyncClient(Client):
 
         return http_info
 
-    def show_batch_log_async(self, request):
-        """查询批处理作业日志
-
-        该API用于查询批处理作业的后台日志。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowBatchLog
-        :type request: :class:`huaweicloudsdkdli.v1.ShowBatchLogRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowBatchLogResponse`
-        """
-        warnings.warn("Method 'show_batch_log_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_batch_log_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_batch_log_async_invoker(self, request):
-        warnings.warn("Method 'show_batch_log_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_batch_log_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_batch_log_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.0/{project_id}/batches/{batch_id}/log",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowBatchLogResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'batch_id' in local_var_params:
-            path_params['batch_id'] = local_var_params['batch_id']
-
-        query_params = []
-        if '_from' in local_var_params:
-            query_params.append(('from', local_var_params['_from']))
-        if 'index' in local_var_params:
-            query_params.append(('index', local_var_params['index']))
-        if 'size' in local_var_params:
-            query_params.append(('size', local_var_params['size']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_spark_job_async(self, request):
         """查询批处理作业详情
 
@@ -9245,6 +5590,3660 @@ class DliAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_queue_plans_async(self, request):
+        """批量删除队列定时扩缩容计划
+
+        该API用于批量删除队列定时扩缩容计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteQueuePlans
+        :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansResponse`
+        """
+        warnings.warn("Method 'batch_delete_queue_plans_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._batch_delete_queue_plans_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_queue_plans_async_invoker(self, request):
+        warnings.warn("Method 'batch_delete_queue_plans_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._batch_delete_queue_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_queue_plans_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteQueuePlansResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_auth_info_async(self, request):
+        """创建跨源认证
+
+        该API用于创建跨源认证。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAuthInfo
+        :type request: :class:`huaweicloudsdkdli.v1.CreateAuthInfoRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateAuthInfoResponse`
+        """
+        warnings.warn("Method 'create_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_auth_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_auth_info_async_invoker(self, request):
+        warnings.warn("Method 'create_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_auth_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_datasource_connection_async(self, request):
+        """创建经典型跨源连接
+
+        该API用于创建与其他服务的经典型跨源连接。
+        说明：
+        如果需要了解Console界面的使用方法，可参考经典型跨源连接。
+        系统default队列不支持创建跨源连接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDatasourceConnection
+        :type request: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionResponse`
+        """
+        warnings.warn("Method 'create_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_datasource_connection_async_invoker(self, request):
+        warnings.warn("Method 'create_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_datasource_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_datasource_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatasourceConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_dli_agency_async(self, request):
+        """创建DLI委托
+
+        创建DLI委托
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDliAgency
+        :type request: :class:`huaweicloudsdkdli.v1.CreateDliAgencyRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateDliAgencyResponse`
+        """
+        warnings.warn("Method 'create_dli_agency_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_dli_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dli_agency_async_invoker(self, request):
+        warnings.warn("Method 'create_dli_agency_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_dli_agency_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dli_agency_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDliAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_enhanced_connection_routes_async(self, request):
+        """创建路由
+
+        该API用于创建跨源需要的路由。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEnhancedConnectionRoutes
+        :type request: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesResponse`
+        """
+        warnings.warn("Method 'create_enhanced_connection_routes_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_enhanced_connection_routes_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_enhanced_connection_routes_async_invoker(self, request):
+        warnings.warn("Method 'create_enhanced_connection_routes_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_enhanced_connection_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_enhanced_connection_routes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnhancedConnectionRoutesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_queue_plan_async(self, request):
+        """创建队列定时扩缩容计划
+
+        创建队列定时扩缩容计划接口，对指定的队列创建定时规格变更计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateQueuePlan
+        :type request: :class:`huaweicloudsdkdli.v1.CreateQueuePlanRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePlanResponse`
+        """
+        warnings.warn("Method 'create_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_queue_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_queue_plan_async_invoker(self, request):
+        warnings.warn("Method 'create_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_queue_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_queue_plan_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQueuePlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_auth_info_async(self, request):
+        """删除跨源认证
+
+        该API用于删除跨源认证信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAuthInfo
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoResponse`
+        """
+        warnings.warn("Method 'delete_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_auth_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_auth_info_async_invoker(self, request):
+        warnings.warn("Method 'delete_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_auth_info_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/datasource/auth-infos/{auth_info_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAuthInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'auth_info_name' in local_var_params:
+            path_params['auth_info_name'] = local_var_params['auth_info_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_datasource_connection_async(self, request):
+        """删除经典型跨源连接
+
+        该API用于删除已创建的经典型跨源连接。
+        说明：
+        创建中的连接，无法删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDatasourceConnection
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionResponse`
+        """
+        warnings.warn("Method 'delete_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_datasource_connection_async_invoker(self, request):
+        warnings.warn("Method 'delete_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_datasource_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_datasource_connection_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/datasource-connection/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatasourceConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_enhanced_connection_routes_async(self, request):
+        """删除路由
+
+        该API用于删除跨源需要的路由。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEnhancedConnectionRoutes
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesResponse`
+        """
+        warnings.warn("Method 'delete_enhanced_connection_routes_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_enhanced_connection_routes_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_enhanced_connection_routes_async_invoker(self, request):
+        warnings.warn("Method 'delete_enhanced_connection_routes_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_enhanced_connection_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_enhanced_connection_routes_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/routes/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnhancedConnectionRoutesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_job_resource_async(self, request):
+        """删除组内资源包
+
+        该API用于删除某个project某个分组下的资源包
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteJobResource
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteJobResourceRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteJobResourceResponse`
+        """
+        warnings.warn("Method 'delete_job_resource_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_job_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_job_resource_async_invoker(self, request):
+        warnings.warn("Method 'delete_job_resource_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_job_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_job_resource_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/resources/{resource_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_name' in local_var_params:
+            path_params['resource_name'] = local_var_params['resource_name']
+
+        query_params = []
+        if 'group' in local_var_params:
+            query_params.append(('group', local_var_params['group']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_queue_plan_async(self, request):
+        """单个删除队列定时扩缩容计划
+
+        该API用于删除指定ID的队列定时扩缩容计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteQueuePlan
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanResponse`
+        """
+        warnings.warn("Method 'delete_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_queue_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_queue_plan_async_invoker(self, request):
+        warnings.warn("Method 'delete_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_queue_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_queue_plan_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteQueuePlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_auth_info_async(self, request):
+        """获取跨源认证列表
+
+        该API用于查询跨源认证信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAuthInfo
+        :type request: :class:`huaweicloudsdkdli.v1.ListAuthInfoRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListAuthInfoResponse`
+        """
+        warnings.warn("Method 'list_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_auth_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_auth_info_async_invoker(self, request):
+        warnings.warn("Method 'list_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_auth_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuthInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'auth_info_name' in local_var_params:
+            query_params.append(('auth_info_name', local_var_params['auth_info_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_database_users_async(self, request):
+        """查看数据库的使用者
+
+        该API用于查询可以使用的指定队列的所有用户名称。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDatabaseUsers
+        :type request: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersResponse`
+        """
+        warnings.warn("Method 'list_database_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_database_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_database_users_async_invoker(self, request):
+        warnings.warn("Method 'list_database_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_database_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_database_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_datasource_connections_async(self, request):
+        """查询经典型跨源连接列表
+
+        该API用于查询该用户已创建的经典型跨源连接列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDatasourceConnections
+        :type request: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsResponse`
+        """
+        warnings.warn("Method 'list_datasource_connections_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_datasource_connections_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_datasource_connections_async_invoker(self, request):
+        warnings.warn("Method 'list_datasource_connections_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_datasource_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_datasource_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatasourceConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_job_resources_async(self, request):
+        """查看分组资源列表
+
+        该API用于查看某个project下的所有资源，其中包含Group。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJobResources
+        :type request: :class:`huaweicloudsdkdli.v1.ListJobResourcesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListJobResourcesResponse`
+        """
+        warnings.warn("Method 'list_job_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_job_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_job_resources_async_invoker(self, request):
+        warnings.warn("Method 'list_job_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_job_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_job_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'kind' in local_var_params:
+            query_params.append(('kind', local_var_params['kind']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_queue_plans_async(self, request):
+        """查看队列定时扩缩容计划
+
+        查看队列定时扩缩容计划接口，列出指定队列定时规格变更计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueuePlans
+        :type request: :class:`huaweicloudsdkdli.v1.ListQueuePlansRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListQueuePlansResponse`
+        """
+        warnings.warn("Method 'list_queue_plans_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_queue_plans_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_queue_plans_async_invoker(self, request):
+        warnings.warn("Method 'list_queue_plans_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_queue_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_queue_plans_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueuePlansResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_queue_users_async(self, request):
+        """查看队列的使用者
+
+        该API用于查询可以使用的指定队列的所有用户名称。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueueUsers
+        :type request: :class:`huaweicloudsdkdli.v1.ListQueueUsersRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListQueueUsersResponse`
+        """
+        warnings.warn("Method 'list_queue_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_queue_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_queue_users_async_invoker(self, request):
+        warnings.warn("Method 'list_queue_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_queue_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_queue_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueueUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_table_privileges_async(self, request):
+        """查看表的用户权限
+
+        该API用于查询指定用户在表上的权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTablePrivileges
+        :type request: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesResponse`
+        """
+        warnings.warn("Method 'list_table_privileges_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_table_privileges_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_table_privileges_async_invoker(self, request):
+        warnings.warn("Method 'list_table_privileges_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_table_privileges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_table_privileges_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/users/{user_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTablePrivilegesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_table_users_async(self, request):
+        """查看表的使用者
+
+        该API用于查看有权访问指定表或表的列的所有用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTableUsers
+        :type request: :class:`huaweicloudsdkdli.v1.ListTableUsersRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListTableUsersResponse`
+        """
+        warnings.warn("Method 'list_table_users_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_table_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_table_users_async_invoker(self, request):
+        warnings.warn("Method 'list_table_users_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_table_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_table_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def register_authorized_queue_async(self, request):
+        """队列赋权
+
+        该API用于与其他用户共享指定的队列，可以给用户赋使用指定的队列的权限或者收回使用权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RegisterAuthorizedQueue
+        :type request: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueResponse`
+        """
+        warnings.warn("Method 'register_authorized_queue_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._register_authorized_queue_http_info(request)
+        return self._call_api(**http_info)
+
+    def register_authorized_queue_async_invoker(self, request):
+        warnings.warn("Method 'register_authorized_queue_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._register_authorized_queue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_authorized_queue_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/queues/user-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterAuthorizedQueueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def run_data_authorization_action_async(self, request):
+        """数据赋权（用户）
+
+        该API用于将数据库或数据表的数据权限赋给指定的其他用户。
+        说明：
+        被赋权用户所在用户组的所属区域需具有Tenant Guest权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RunDataAuthorizationAction
+        :type request: :class:`huaweicloudsdkdli.v1.RunDataAuthorizationActionRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.RunDataAuthorizationActionResponse`
+        """
+        warnings.warn("Method 'run_data_authorization_action_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._run_data_authorization_action_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_data_authorization_action_async_invoker(self, request):
+        warnings.warn("Method 'run_data_authorization_action_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._run_data_authorization_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_data_authorization_action_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/user-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunDataAuthorizationActionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_datasource_connection_async(self, request):
+        """查询经典型跨源连接
+
+        该API用于查询该用户指定的已创建的经典型跨源连接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDatasourceConnection
+        :type request: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResponse`
+        """
+        warnings.warn("Method 'show_datasource_connection_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_datasource_connection_async_invoker(self, request):
+        warnings.warn("Method 'show_datasource_connection_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_datasource_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_datasource_connection_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource-connection/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatasourceConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_dli_agency_async(self, request):
+        """获取dli委托信息
+
+        获取dli委托信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDliAgency
+        :type request: :class:`huaweicloudsdkdli.v1.ShowDliAgencyRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowDliAgencyResponse`
+        """
+        warnings.warn("Method 'show_dli_agency_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_dli_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dli_agency_async_invoker(self, request):
+        warnings.warn("Method 'show_dli_agency_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_dli_agency_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dli_agency_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDliAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_job_resource_async(self, request):
+        """查看组内资源包
+
+        该API用于查看某个project某个分组下的具体资源信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowJobResource
+        :type request: :class:`huaweicloudsdkdli.v1.ShowJobResourceRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowJobResourceResponse`
+        """
+        warnings.warn("Method 'show_job_resource_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_job_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_resource_async_invoker(self, request):
+        warnings.warn("Method 'show_job_resource_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_job_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/resources/{resource_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_name' in local_var_params:
+            path_params['resource_name'] = local_var_params['resource_name']
+
+        query_params = []
+        if 'group' in local_var_params:
+            query_params.append(('group', local_var_params['group']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_auth_info_async(self, request):
+        """更新跨源认证
+
+        该API用于更新跨源认证信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAuthInfo
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoResponse`
+        """
+        warnings.warn("Method 'update_auth_info_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_auth_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_auth_info_async_invoker(self, request):
+        warnings.warn("Method 'update_auth_info_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_auth_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAuthInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_job_resource_owner_async(self, request):
+        """修改组或者资源包拥有者
+
+        用于修改程序包的owner。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateJobResourceOwner
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateJobResourceOwnerRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateJobResourceOwnerResponse`
+        """
+        warnings.warn("Method 'update_job_resource_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_job_resource_owner_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_job_resource_owner_async_invoker(self, request):
+        warnings.warn("Method 'update_job_resource_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_job_resource_owner_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_job_resource_owner_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/{project_id}/resources/owner",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobResourceOwnerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_queue_cidr_async(self, request):
+        """修改队列网段
+
+        该功能用于修改包年包月队列网段。
+        说明：
+        如果待修改网段的队列中有正在提交或正在运行的作业，或者改队列已经绑定了增强型跨源，将不支持修改网段操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateQueueCidr
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrResponse`
+        """
+        warnings.warn("Method 'update_queue_cidr_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_queue_cidr_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_queue_cidr_async_invoker(self, request):
+        warnings.warn("Method 'update_queue_cidr_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_queue_cidr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_queue_cidr_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateQueueCidrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_queue_plan_async(self, request):
+        """修改队列定时扩缩容计划
+
+        该API用于修改指定ID的队列定时扩缩容计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateQueuePlan
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateQueuePlanRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueuePlanResponse`
+        """
+        warnings.warn("Method 'update_queue_plan_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_queue_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_queue_plan_async_invoker(self, request):
+        warnings.warn("Method 'update_queue_plan_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_queue_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_queue_plan_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateQueuePlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_file_job_resources_async(self, request):
+        """上传file类型分组资源
+
+        该API用于在project下上传file类型模块。
+        说明： 上传同名file模块时，新模块将会覆盖旧模块。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadFileJobResources
+        :type request: :class:`huaweicloudsdkdli.v1.UploadFileJobResourcesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UploadFileJobResourcesResponse`
+        """
+        warnings.warn("Method 'upload_file_job_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._upload_file_job_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_file_job_resources_async_invoker(self, request):
+        warnings.warn("Method 'upload_file_job_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._upload_file_job_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_file_job_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/resources/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadFileJobResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'user_id' in local_var_params:
+            header_params['USER-ID'] = local_var_params['user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_jar_job_resources_async(self, request):
+        """上传jar类型分组资源
+
+        该API用于在project下上传jar类型分组资源。
+        说明：上传同名资源模块时，新模块将会覆盖旧模块。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadJarJobResources
+        :type request: :class:`huaweicloudsdkdli.v1.UploadJarJobResourcesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UploadJarJobResourcesResponse`
+        """
+        warnings.warn("Method 'upload_jar_job_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._upload_jar_job_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_jar_job_resources_async_invoker(self, request):
+        warnings.warn("Method 'upload_jar_job_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._upload_jar_job_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_jar_job_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/resources/jars",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadJarJobResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'user_id' in local_var_params:
+            header_params['USER-ID'] = local_var_params['user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_job_resources_async(self, request):
+        """上传分组资源
+
+        该API用于上传分组资源到某个project下。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadJobResources
+        :type request: :class:`huaweicloudsdkdli.v1.UploadJobResourcesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UploadJobResourcesResponse`
+        """
+        warnings.warn("Method 'upload_job_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._upload_job_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_job_resources_async_invoker(self, request):
+        warnings.warn("Method 'upload_job_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._upload_job_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_job_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadJobResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'user_id' in local_var_params:
+            header_params['USER-ID'] = local_var_params['user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_python_file_job_resources_async(self, request):
+        """上传pyfile类型分组资源
+
+        该API用于在project下的上传pyfile类型模块。
+        说明： 上传同名pyfile类型模块时，新模块将会覆盖旧模块。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadPythonFileJobResources
+        :type request: :class:`huaweicloudsdkdli.v1.UploadPythonFileJobResourcesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UploadPythonFileJobResourcesResponse`
+        """
+        warnings.warn("Method 'upload_python_file_job_resources_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._upload_python_file_job_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_python_file_job_resources_async_invoker(self, request):
+        warnings.warn("Method 'upload_python_file_job_resources_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._upload_python_file_job_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_python_file_job_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/resources/pyfiles",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadPythonFileJobResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'user_id' in local_var_params:
+            header_params['USER-ID'] = local_var_params['user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ief_message_channel_async(self, request):
+        """创建IEF消息通道
+
+        该API用于创建IEF消息通道
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateIefMessageChannel
+        :type request: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelResponse`
+        """
+        warnings.warn("Method 'create_ief_message_channel_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_ief_message_channel_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ief_message_channel_async_invoker(self, request):
+        warnings.warn("Method 'create_ief_message_channel_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_ief_message_channel_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ief_message_channel_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/edgesrv/message-channel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIefMessageChannelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ief_system_events_async(self, request):
+        """IEF系统事件上报
+
+        该API用于处理IEF系统事件上报
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateIefSystemEvents
+        :type request: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsResponse`
+        """
+        warnings.warn("Method 'create_ief_system_events_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_ief_system_events_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ief_system_events_async_invoker(self, request):
+        warnings.warn("Method 'create_ief_system_events_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_ief_system_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ief_system_events_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/edgesrv/system-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIefSystemEventsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def register_bucket_async(self, request):
+        """OBS授权给DLI服务
+
+        用户主动授权OBS桶的操作权限给DLI服务, 用于保存用户作业的checkpoint、作业的运行日志等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RegisterBucket
+        :type request: :class:`huaweicloudsdkdli.v1.RegisterBucketRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.RegisterBucketResponse`
+        """
+        warnings.warn("Method 'register_bucket_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._register_bucket_http_info(request)
+        return self._call_api(**http_info)
+
+    def register_bucket_async_invoker(self, request):
+        warnings.warn("Method 'register_bucket_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._register_bucket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_bucket_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/dli/obs-authorize",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterBucketResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def run_ief_job_action_call_back_async(self, request):
+        """边缘Flink作业Action状态回调
+
+        该API用于处理IEF Flink作业action回调信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RunIefJobActionCallBack
+        :type request: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackResponse`
+        """
+        warnings.warn("Method 'run_ief_job_action_call_back_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._run_ief_job_action_call_back_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_ief_job_action_call_back_async_invoker(self, request):
+        warnings.warn("Method 'run_ief_job_action_call_back_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._run_ief_job_action_call_back_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_ief_job_action_call_back_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/edgesrv/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunIefJobActionCallBackResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_flink_metric_async(self, request):
+        """查询Flink作业监控信息
+
+        查询Flink作业监控信息, 支持同时查询多个Flink作业的监控信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFlinkMetric
+        :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricResponse`
+        """
+        warnings.warn("Method 'show_flink_metric_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_flink_metric_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flink_metric_async_invoker(self, request):
+        warnings.warn("Method 'show_flink_metric_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_flink_metric_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flink_metric_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlinkMetricResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_flink_job_status_report_async(self, request):
+        """边缘Flink作业状态信息上报
+
+        该API用于处理边缘Flink作业状态上报信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateFlinkJobStatusReport
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkJobStatusReportRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkJobStatusReportResponse`
+        """
+        warnings.warn("Method 'update_flink_job_status_report_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_flink_job_status_report_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_flink_job_status_report_async_invoker(self, request):
+        warnings.warn("Method 'update_flink_job_status_report_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_flink_job_status_report_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_flink_job_status_report_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/edgesrv/job-report",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlinkJobStatusReportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_database_async(self, request):
+        """创建数据库
+
+        该API用于新增数据库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDatabase
+        :type request: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateDatabaseResponse`
+        """
+        warnings.warn("Method 'create_database_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_database_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_database_async_invoker(self, request):
+        warnings.warn("Method 'create_database_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_database_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_table_async(self, request):
+        """创建表
+
+        该API用于创建新的表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTable
+        :type request: :class:`huaweicloudsdkdli.v1.CreateTableRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateTableResponse`
+        """
+        warnings.warn("Method 'create_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_table_async_invoker(self, request):
+        warnings.warn("Method 'create_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._create_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_database_async(self, request):
+        """删除数据库
+
+        该API用于删除空数据库，若待删除的数据库中存在表，则需先删除其中的所有表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDatabase
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatabaseResponse`
+        """
+        warnings.warn("Method 'delete_database_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_database_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_database_async_invoker(self, request):
+        warnings.warn("Method 'delete_database_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_database_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+        if '_async' in local_var_params:
+            query_params.append(('async', local_var_params['_async']))
+        if 'cascade' in local_var_params:
+            query_params.append(('cascade', local_var_params['cascade']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_table_async(self, request):
+        """删除表
+
+        该API用于删除指定的表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTable
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteTableRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteTableResponse`
+        """
+        warnings.warn("Method 'delete_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_table_async_invoker(self, request):
+        warnings.warn("Method 'delete_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._delete_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_table_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+
+        query_params = []
+        if '_async' in local_var_params:
+            query_params.append(('async', local_var_params['_async']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_table_async(self, request):
+        """导出表数据
+
+        该API用于将SQL语句的查询结果导出到OBS对象存储中，只支持导出“QUERY”类型作业的查询结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportTable
+        :type request: :class:`huaweicloudsdkdli.v1.ExportTableRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ExportTableResponse`
+        """
+        warnings.warn("Method 'export_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._export_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_table_async_invoker(self, request):
+        warnings.warn("Method 'export_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._export_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/jobs/export-table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_table_async(self, request):
+        """导入数据
+
+        该API用于将数据从文件导入DLI或OBS表，目前仅支持将OBS上的数据导入DLI或OBS中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportTable
+        :type request: :class:`huaweicloudsdkdli.v1.ImportTableRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ImportTableResponse`
+        """
+        warnings.warn("Method 'import_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._import_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_table_async_invoker(self, request):
+        warnings.warn("Method 'import_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._import_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/jobs/import-table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_databases_async(self, request):
+        """查询所有数据库
+
+        该API用于查询出所有的数据库信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDatabases
+        :type request: :class:`huaweicloudsdkdli.v1.ListDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListDatabasesResponse`
+        """
+        warnings.warn("Method 'list_databases_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_databases_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_databases_async_invoker(self, request):
+        warnings.warn("Method 'list_databases_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_databases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_databases_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'with_priv' in local_var_params:
+            query_params.append(('with-priv', local_var_params['with_priv']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_partitions_async(self, request):
+        """获取分区信息列表
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPartitions
+        :type request: :class:`huaweicloudsdkdli.v1.ListPartitionsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListPartitionsResponse`
+        """
+        warnings.warn("Method 'list_partitions_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_partitions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_partitions_async_invoker(self, request):
+        warnings.warn("Method 'list_partitions_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_partitions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_partitions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/partitions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartitionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sql_sample_templates_async(self, request):
+        """查询所有SQL样例模板
+
+        该API用于查询所有SQL样例模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSqlSampleTemplates
+        :type request: :class:`huaweicloudsdkdli.v1.ListSqlSampleTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListSqlSampleTemplatesResponse`
+        """
+        warnings.warn("Method 'list_sql_sample_templates_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_sql_sample_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_sample_templates_async_invoker(self, request):
+        warnings.warn("Method 'list_sql_sample_templates_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_sql_sample_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sql_sample_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/sqls/sample",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlSampleTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tables_async(self, request):
+        """查询所有表
+
+        该API用于查询指定数据库下符合过滤条件的或所有的表信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTables
+        :type request: :class:`huaweicloudsdkdli.v1.ListTablesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListTablesResponse`
+        """
+        warnings.warn("Method 'list_tables_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_tables_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tables_async_invoker(self, request):
+        warnings.warn("Method 'list_tables_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._list_tables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tables_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTablesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+        if 'current_page' in local_var_params:
+            query_params.append(('current-page', local_var_params['current_page']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page-size', local_var_params['page_size']))
+        if 'table_type' in local_var_params:
+            query_params.append(('table-type', local_var_params['table_type']))
+        if 'with_detail' in local_var_params:
+            query_params.append(('with-detail', local_var_params['with_detail']))
+        if 'with_priv' in local_var_params:
+            query_params.append(('with-priv', local_var_params['with_priv']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def preview_table_async(self, request):
+        """预览表内容
+
+        该API用于用于预览表中前10行的内容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PreviewTable
+        :type request: :class:`huaweicloudsdkdli.v1.PreviewTableRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.PreviewTableResponse`
+        """
+        warnings.warn("Method 'preview_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._preview_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def preview_table_async_invoker(self, request):
+        warnings.warn("Method 'preview_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._preview_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _preview_table_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/preview",
+            "request_type": request.__class__.__name__,
+            "response_type": "PreviewTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+
+        query_params = []
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_table_async(self, request):
+        """描述表信息
+
+        该API用于描述指定表的元数据信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTable
+        :type request: :class:`huaweicloudsdkdli.v1.ShowTableRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowTableResponse`
+        """
+        warnings.warn("Method 'show_table_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_table_async_invoker(self, request):
+        warnings.warn("Method 'show_table_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_table_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_database_owner_async(self, request):
+        """修改数据库用户
+
+        用于修改数据库的owner。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDatabaseOwner
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerResponse`
+        """
+        warnings.warn("Method 'update_database_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_database_owner_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_database_owner_async_invoker(self, request):
+        warnings.warn("Method 'update_database_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_database_owner_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_database_owner_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/owner",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatabaseOwnerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_table_owner_async(self, request):
+        """修改表用户
+
+        用于修改表的owner。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTableOwner
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerResponse`
+        """
+        warnings.warn("Method 'update_table_owner_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_table_owner_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_table_owner_async_invoker(self, request):
+        warnings.warn("Method 'update_table_owner_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._update_table_owner_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_table_owner_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/owner",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTableOwnerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_spark_job_log_async(self, request):
+        """查询批处理作业日志
+
+        该API用于查询批处理作业的后台日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSparkJobLog
+        :type request: :class:`huaweicloudsdkdli.v1.ShowSparkJobLogRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowSparkJobLogResponse`
+        """
+        warnings.warn("Method 'show_spark_job_log_async' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_spark_job_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_spark_job_log_async_invoker(self, request):
+        warnings.warn("Method 'show_spark_job_log_async_invoker' of DliAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_spark_job_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_spark_job_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/batches/{batch_id}/log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSparkJobLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'batch_id' in local_var_params:
+            path_params['batch_id'] = local_var_params['batch_id']
+
+        query_params = []
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'index' in local_var_params:
+            query_params.append(('index', local_var_params['index']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

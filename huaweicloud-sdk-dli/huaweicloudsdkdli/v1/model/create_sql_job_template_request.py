@@ -17,7 +17,7 @@ class CreateSqlJobTemplateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateSqlTemplatesRequestBody'
+        'body': 'CreateSqlJobTemplateRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateSqlJobTemplateRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateSqlJobTemplateRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateSqlTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateSqlJobTemplateRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateSqlJobTemplateRequest:
         """Gets the body of this CreateSqlJobTemplateRequest.
 
         :return: The body of this CreateSqlJobTemplateRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlTemplatesRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlJobTemplateRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateSqlJobTemplateRequest:
         """Sets the body of this CreateSqlJobTemplateRequest.
 
         :param body: The body of this CreateSqlJobTemplateRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateSqlTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateSqlJobTemplateRequestBody`
         """
         self._body = body
 

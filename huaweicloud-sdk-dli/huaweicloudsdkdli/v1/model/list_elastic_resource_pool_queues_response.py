@@ -20,7 +20,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'queues': 'list[QueueInfo]',
+        'queues': 'list[ElasticResourcePoolQueue]',
         'count': 'int'
     }
 
@@ -41,7 +41,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
         :param message: 请求消息
         :type message: str
         :param queues: 该弹性资源池下所有queue信息及队列扩缩容策略信息。
-        :type queues: list[:class:`huaweicloudsdkdli.v1.QueueInfo`]
+        :type queues: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolQueue`]
         :param count: 该资源池下关联的队列数量
         :type count: int
         """
@@ -114,7 +114,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
         该弹性资源池下所有queue信息及队列扩缩容策略信息。
 
         :return: The queues of this ListElasticResourcePoolQueuesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.QueueInfo`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolQueue`]
         """
         return self._queues
 
@@ -125,7 +125,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
         该弹性资源池下所有queue信息及队列扩缩容策略信息。
 
         :param queues: The queues of this ListElasticResourcePoolQueuesResponse.
-        :type queues: list[:class:`huaweicloudsdkdli.v1.QueueInfo`]
+        :type queues: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolQueue`]
         """
         self._queues = queues
 

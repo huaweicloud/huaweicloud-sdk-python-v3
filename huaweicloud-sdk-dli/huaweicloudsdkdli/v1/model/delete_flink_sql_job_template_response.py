@@ -20,7 +20,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'template': 'DeleteTemplateRespTemplate'
+        'template': 'FlinkSqlJobTemplateId'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
         :param message: 消息内容。
         :type message: str
         :param template: 
-        :type template: :class:`huaweicloudsdkdli.v1.DeleteTemplateRespTemplate`
+        :type template: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateId`
         """
         
         super(DeleteFlinkSqlJobTemplateResponse, self).__init__()
@@ -105,7 +105,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
         """Gets the template of this DeleteFlinkSqlJobTemplateResponse.
 
         :return: The template of this DeleteFlinkSqlJobTemplateResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteTemplateRespTemplate`
+        :rtype: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateId`
         """
         return self._template
 
@@ -114,7 +114,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
         """Sets the template of this DeleteFlinkSqlJobTemplateResponse.
 
         :param template: The template of this DeleteFlinkSqlJobTemplateResponse.
-        :type template: :class:`huaweicloudsdkdli.v1.DeleteTemplateRespTemplate`
+        :type template: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateId`
         """
         self._template = template
 

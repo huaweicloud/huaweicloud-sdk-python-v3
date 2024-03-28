@@ -73,7 +73,7 @@ class CreateGlobalConnectionBandwidth:
         :type local_area: str
         :param remote_area: 功能说明：远端接入点，配合local_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
         :type remote_area: str
-        :param spec_code_id: 功能说明：线路规格编码UUID。
+        :param spec_code_id: UUID of a line specification code.
         :type spec_code_id: str
         """
         
@@ -93,22 +93,17 @@ class CreateGlobalConnectionBandwidth:
         self._spec_code_id = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if bordercross is not None:
-            self.bordercross = bordercross
-        if type is not None:
-            self.type = type
+        self.bordercross = bordercross
+        self.type = type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
-        if charge_mode is not None:
-            self.charge_mode = charge_mode
-        if size is not None:
-            self.size = size
+        self.charge_mode = charge_mode
+        self.size = size
         if sla_level is not None:
             self.sla_level = sla_level
         if local_area is not None:
@@ -364,7 +359,7 @@ class CreateGlobalConnectionBandwidth:
     def spec_code_id(self):
         """Gets the spec_code_id of this CreateGlobalConnectionBandwidth.
 
-        功能说明：线路规格编码UUID。
+        UUID of a line specification code.
 
         :return: The spec_code_id of this CreateGlobalConnectionBandwidth.
         :rtype: str
@@ -375,7 +370,7 @@ class CreateGlobalConnectionBandwidth:
     def spec_code_id(self, spec_code_id):
         """Sets the spec_code_id of this CreateGlobalConnectionBandwidth.
 
-        功能说明：线路规格编码UUID。
+        UUID of a line specification code.
 
         :param spec_code_id: The spec_code_id of this CreateGlobalConnectionBandwidth.
         :type spec_code_id: str

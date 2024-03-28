@@ -21,7 +21,7 @@ class ListTablePrivilegesResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'user_name': 'str',
-        'privileges': 'list[TableUserPermissionsRespPrivilege]'
+        'privileges': 'list[TablePrivilege]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListTablePrivilegesResponse(SdkResponse):
         :param user_name: 被查询的用户名称。
         :type user_name: str
         :param privileges: 权限信息。
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.TableUserPermissionsRespPrivilege`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.TablePrivilege`]
         """
         
         super(ListTablePrivilegesResponse, self).__init__()
@@ -136,7 +136,7 @@ class ListTablePrivilegesResponse(SdkResponse):
         权限信息。
 
         :return: The privileges of this ListTablePrivilegesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.TableUserPermissionsRespPrivilege`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TablePrivilege`]
         """
         return self._privileges
 
@@ -147,7 +147,7 @@ class ListTablePrivilegesResponse(SdkResponse):
         权限信息。
 
         :param privileges: The privileges of this ListTablePrivilegesResponse.
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.TableUserPermissionsRespPrivilege`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.TablePrivilege`]
         """
         self._privileges = privileges
 

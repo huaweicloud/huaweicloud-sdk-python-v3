@@ -20,7 +20,7 @@ class ListCatalogsResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'total_count': 'int',
-        'catalogs': 'list[CatalogEntity]'
+        'catalogs': 'list[Catalog]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListCatalogsResponse(SdkResponse):
         :param total_count: catalog总数量
         :type total_count: int
         :param catalogs: 项目下所有catalog信息
-        :type catalogs: list[:class:`huaweicloudsdkdli.v1.CatalogEntity`]
+        :type catalogs: list[:class:`huaweicloudsdkdli.v1.Catalog`]
         """
         
         super(ListCatalogsResponse, self).__init__()
@@ -107,7 +107,7 @@ class ListCatalogsResponse(SdkResponse):
         项目下所有catalog信息
 
         :return: The catalogs of this ListCatalogsResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.CatalogEntity`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Catalog`]
         """
         return self._catalogs
 
@@ -118,7 +118,7 @@ class ListCatalogsResponse(SdkResponse):
         项目下所有catalog信息
 
         :param catalogs: The catalogs of this ListCatalogsResponse.
-        :type catalogs: list[:class:`huaweicloudsdkdli.v1.CatalogEntity`]
+        :type catalogs: list[:class:`huaweicloudsdkdli.v1.Catalog`]
         """
         self._catalogs = catalogs
 

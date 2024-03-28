@@ -66,6 +66,7 @@ class MvsInvoiceResult:
         'used_vehicle_market_address': 'str',
         'used_vehicle_market_bank_account': 'str',
         'used_vehicle_market_phone': 'str',
+        'reverse_issue': 'bool',
         'remark': 'str',
         'drawer_name': 'str',
         'type': 'str',
@@ -123,6 +124,7 @@ class MvsInvoiceResult:
         'used_vehicle_market_address': 'used_vehicle_market_address',
         'used_vehicle_market_bank_account': 'used_vehicle_market_bank_account',
         'used_vehicle_market_phone': 'used_vehicle_market_phone',
+        'reverse_issue': 'reverse_issue',
         'remark': 'remark',
         'drawer_name': 'drawer_name',
         'type': 'type',
@@ -130,7 +132,7 @@ class MvsInvoiceResult:
         'confidence': 'confidence'
     }
 
-    def __init__(self, code=None, number=None, machine_printed_code=None, machine_printed_number=None, issue_date=None, machine_number=None, buyer_name=None, buyer_organization_number=None, buyer_id=None, buyer_address=None, buyer_phone=None, seller_name=None, seller_phone=None, seller_id=None, seller_account=None, seller_address=None, licence_plate_number=None, registration_number=None, dept_motor_vehicles=None, seller_bank=None, vehicle_type=None, brand_model=None, manufacturing_location=None, quality_certificate=None, import_certificate=None, inspection_number=None, engine_number=None, vehicle_identification_number=None, tonnage=None, seating_capacity=None, tax_authority=None, tax_authority_code=None, tax_payment_receipt=None, tax_rate=None, tax=None, tax_exclusive_price=None, total=None, total_chinese=None, fiscal_code=None, auction_org_name=None, auction_org_address=None, auction_org_id=None, auction_org_bank_account=None, auction_org_phone=None, used_vehicle_market_name=None, used_vehicle_market_id=None, used_vehicle_market_address=None, used_vehicle_market_bank_account=None, used_vehicle_market_phone=None, remark=None, drawer_name=None, type=None, text_location=None, confidence=None):
+    def __init__(self, code=None, number=None, machine_printed_code=None, machine_printed_number=None, issue_date=None, machine_number=None, buyer_name=None, buyer_organization_number=None, buyer_id=None, buyer_address=None, buyer_phone=None, seller_name=None, seller_phone=None, seller_id=None, seller_account=None, seller_address=None, licence_plate_number=None, registration_number=None, dept_motor_vehicles=None, seller_bank=None, vehicle_type=None, brand_model=None, manufacturing_location=None, quality_certificate=None, import_certificate=None, inspection_number=None, engine_number=None, vehicle_identification_number=None, tonnage=None, seating_capacity=None, tax_authority=None, tax_authority_code=None, tax_payment_receipt=None, tax_rate=None, tax=None, tax_exclusive_price=None, total=None, total_chinese=None, fiscal_code=None, auction_org_name=None, auction_org_address=None, auction_org_id=None, auction_org_bank_account=None, auction_org_phone=None, used_vehicle_market_name=None, used_vehicle_market_id=None, used_vehicle_market_address=None, used_vehicle_market_bank_account=None, used_vehicle_market_phone=None, reverse_issue=None, remark=None, drawer_name=None, type=None, text_location=None, confidence=None):
         """MvsInvoiceResult
 
         The model defined in huaweicloud sdk
@@ -233,6 +235,8 @@ class MvsInvoiceResult:
         :type used_vehicle_market_bank_account: str
         :param used_vehicle_market_phone: 二手车市场电话。 当请求参数\&quot;type\&quot;设置为\&quot;auto\&quot;或\&quot;used\&quot;时才返回。 
         :type used_vehicle_market_phone: str
+        :param reverse_issue: 二手车反向开具标识，True表示是反向开具发票，False表示不是反向开具发票。 当请求参数\&quot;type\&quot;设置为\&quot;auto\&quot;或\&quot;used\&quot;时才返回。 
+        :type reverse_issue: bool
         :param remark: 备注 
         :type remark: str
         :param drawer_name: 开票人 
@@ -296,6 +300,7 @@ class MvsInvoiceResult:
         self._used_vehicle_market_address = None
         self._used_vehicle_market_bank_account = None
         self._used_vehicle_market_phone = None
+        self._reverse_issue = None
         self._remark = None
         self._drawer_name = None
         self._type = None
@@ -401,6 +406,8 @@ class MvsInvoiceResult:
             self.used_vehicle_market_bank_account = used_vehicle_market_bank_account
         if used_vehicle_market_phone is not None:
             self.used_vehicle_market_phone = used_vehicle_market_phone
+        if reverse_issue is not None:
+            self.reverse_issue = reverse_issue
         if remark is not None:
             self.remark = remark
         if drawer_name is not None:
@@ -1489,6 +1496,28 @@ class MvsInvoiceResult:
         :type used_vehicle_market_phone: str
         """
         self._used_vehicle_market_phone = used_vehicle_market_phone
+
+    @property
+    def reverse_issue(self):
+        """Gets the reverse_issue of this MvsInvoiceResult.
+
+        二手车反向开具标识，True表示是反向开具发票，False表示不是反向开具发票。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
+
+        :return: The reverse_issue of this MvsInvoiceResult.
+        :rtype: bool
+        """
+        return self._reverse_issue
+
+    @reverse_issue.setter
+    def reverse_issue(self, reverse_issue):
+        """Sets the reverse_issue of this MvsInvoiceResult.
+
+        二手车反向开具标识，True表示是反向开具发票，False表示不是反向开具发票。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
+
+        :param reverse_issue: The reverse_issue of this MvsInvoiceResult.
+        :type reverse_issue: bool
+        """
+        self._reverse_issue = reverse_issue
 
     @property
     def remark(self):

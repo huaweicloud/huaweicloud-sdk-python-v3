@@ -19,16 +19,18 @@ class ThailandLicensePlateItem:
     openapi_types = {
         'plate_number': 'str',
         'plate_location': 'list[list[int]]',
-        'confidence': 'float'
+        'confidence': 'float',
+        'province': 'str'
     }
 
     attribute_map = {
         'plate_number': 'plate_number',
         'plate_location': 'plate_location',
-        'confidence': 'confidence'
+        'confidence': 'confidence',
+        'province': 'province'
     }
 
-    def __init__(self, plate_number=None, plate_location=None, confidence=None):
+    def __init__(self, plate_number=None, plate_location=None, confidence=None, province=None):
         """ThailandLicensePlateItem
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ThailandLicensePlateItem:
         :type plate_location: list[list[int]]
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。 
         :type confidence: float
+        :param province: 车牌所属府 
+        :type province: str
         """
         
         
@@ -46,6 +50,7 @@ class ThailandLicensePlateItem:
         self._plate_number = None
         self._plate_location = None
         self._confidence = None
+        self._province = None
         self.discriminator = None
 
         if plate_number is not None:
@@ -54,6 +59,8 @@ class ThailandLicensePlateItem:
             self.plate_location = plate_location
         if confidence is not None:
             self.confidence = confidence
+        if province is not None:
+            self.province = province
 
     @property
     def plate_number(self):
@@ -120,6 +127,28 @@ class ThailandLicensePlateItem:
         :type confidence: float
         """
         self._confidence = confidence
+
+    @property
+    def province(self):
+        """Gets the province of this ThailandLicensePlateItem.
+
+        车牌所属府 
+
+        :return: The province of this ThailandLicensePlateItem.
+        :rtype: str
+        """
+        return self._province
+
+    @province.setter
+    def province(self, province):
+        """Sets the province of this ThailandLicensePlateItem.
+
+        车牌所属府 
+
+        :param province: The province of this ThailandLicensePlateItem.
+        :type province: str
+        """
+        self._province = province
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,91 +18,77 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     openapi_types = {
         'groups': 'list[str]',
-        'enabled': 'bool',
-        'broadcast': 'bool',
-        'brokers': 'list[str]',
         'name': 'str',
-        'group_desc': 'str',
+        'brokers': 'list[str]',
+        'broadcast': 'bool',
         'retry_max_time': 'int',
-        'created_at': 'str',
-        'permissions': 'list[str]',
-        'consume_orderly': 'bool'
+        'enabled': 'bool',
+        'consume_orderly': 'bool',
+        'group_desc': 'str'
     }
 
     attribute_map = {
         'groups': 'groups',
-        'enabled': 'enabled',
-        'broadcast': 'broadcast',
-        'brokers': 'brokers',
         'name': 'name',
-        'group_desc': 'group_desc',
+        'brokers': 'brokers',
+        'broadcast': 'broadcast',
         'retry_max_time': 'retry_max_time',
-        'created_at': 'createdAt',
-        'permissions': 'permissions',
-        'consume_orderly': 'consume_orderly'
+        'enabled': 'enabled',
+        'consume_orderly': 'consume_orderly',
+        'group_desc': 'group_desc'
     }
 
-    def __init__(self, groups=None, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, created_at=None, permissions=None, consume_orderly=None):
+    def __init__(self, groups=None, name=None, brokers=None, broadcast=None, retry_max_time=None, enabled=None, consume_orderly=None, group_desc=None):
         """CreateConsumerGroupOrBatchDeleteConsumerGroupReq
 
         The model defined in huaweicloud sdk
 
         :param groups: 待删除的消费组列表。
         :type groups: list[str]
-        :param enabled: 是否可以消费。
-        :type enabled: bool
-        :param broadcast: 是否广播。
-        :type broadcast: bool
-        :param brokers: 关联的代理列表。
-        :type brokers: list[str]
         :param name: 消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
         :type name: str
-        :param group_desc: 消费组描述，长度0~200个字符。
-        :type group_desc: str
+        :param brokers: 关联的代理列表。
+        :type brokers: list[str]
+        :param broadcast: 是否广播。
+        :type broadcast: bool
         :param retry_max_time: 最大重试次数，取值范围为1~16。
         :type retry_max_time: int
-        :param created_at: 创建时间戳。
-        :type created_at: str
-        :param permissions: 权限集。
-        :type permissions: list[str]
+        :param enabled: 是否可以消费。
+        :type enabled: bool
         :param consume_orderly: 是否按序消费。
         :type consume_orderly: bool
+        :param group_desc: 消费组描述，长度0~200个字符。
+        :type group_desc: str
         """
         
         
 
         self._groups = None
-        self._enabled = None
-        self._broadcast = None
-        self._brokers = None
         self._name = None
-        self._group_desc = None
+        self._brokers = None
+        self._broadcast = None
         self._retry_max_time = None
-        self._created_at = None
-        self._permissions = None
+        self._enabled = None
         self._consume_orderly = None
+        self._group_desc = None
         self.discriminator = None
 
         if groups is not None:
             self.groups = groups
-        if enabled is not None:
-            self.enabled = enabled
-        if broadcast is not None:
-            self.broadcast = broadcast
-        if brokers is not None:
-            self.brokers = brokers
         if name is not None:
             self.name = name
-        if group_desc is not None:
-            self.group_desc = group_desc
+        if brokers is not None:
+            self.brokers = brokers
+        if broadcast is not None:
+            self.broadcast = broadcast
         if retry_max_time is not None:
             self.retry_max_time = retry_max_time
-        if created_at is not None:
-            self.created_at = created_at
-        if permissions is not None:
-            self.permissions = permissions
+        if enabled is not None:
+            self.enabled = enabled
         if consume_orderly is not None:
             self.consume_orderly = consume_orderly
+        if group_desc is not None:
+            self.group_desc = group_desc
 
     @property
     def groups(self):
@@ -127,48 +113,26 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         self._groups = groups
 
     @property
-    def enabled(self):
-        """Gets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    def name(self):
+        """Gets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否可以消费。
+        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
-        :return: The enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: bool
+        :return: The name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :rtype: str
         """
-        return self._enabled
+        return self._name
 
-    @enabled.setter
-    def enabled(self, enabled):
-        """Sets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否可以消费。
+        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
-        :param enabled: The enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type enabled: bool
+        :param name: The name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type name: str
         """
-        self._enabled = enabled
-
-    @property
-    def broadcast(self):
-        """Gets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-
-        是否广播。
-
-        :return: The broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: bool
-        """
-        return self._broadcast
-
-    @broadcast.setter
-    def broadcast(self, broadcast):
-        """Sets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-
-        是否广播。
-
-        :param broadcast: The broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type broadcast: bool
-        """
-        self._broadcast = broadcast
+        self._name = name
 
     @property
     def brokers(self):
@@ -193,48 +157,26 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         self._brokers = brokers
 
     @property
-    def name(self):
-        """Gets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    def broadcast(self):
+        """Gets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        是否广播。
 
-        :return: The name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: str
+        :return: The broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :rtype: bool
         """
-        return self._name
+        return self._broadcast
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    @broadcast.setter
+    def broadcast(self, broadcast):
+        """Sets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        是否广播。
 
-        :param name: The name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type name: str
+        :param broadcast: The broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type broadcast: bool
         """
-        self._name = name
-
-    @property
-    def group_desc(self):
-        """Gets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-
-        消费组描述，长度0~200个字符。
-
-        :return: The group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: str
-        """
-        return self._group_desc
-
-    @group_desc.setter
-    def group_desc(self, group_desc):
-        """Sets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-
-        消费组描述，长度0~200个字符。
-
-        :param group_desc: The group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type group_desc: str
-        """
-        self._group_desc = group_desc
+        self._broadcast = broadcast
 
     @property
     def retry_max_time(self):
@@ -259,48 +201,26 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         self._retry_max_time = retry_max_time
 
     @property
-    def created_at(self):
-        """Gets the created_at of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    def enabled(self):
+        """Gets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        创建时间戳。
+        是否可以消费。
 
-        :return: The created_at of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: str
+        :return: The enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :rtype: bool
         """
-        return self._created_at
+        return self._enabled
 
-    @created_at.setter
-    def created_at(self, created_at):
-        """Sets the created_at of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        创建时间戳。
+        是否可以消费。
 
-        :param created_at: The created_at of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type created_at: str
+        :param enabled: The enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type enabled: bool
         """
-        self._created_at = created_at
-
-    @property
-    def permissions(self):
-        """Gets the permissions of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-
-        权限集。
-
-        :return: The permissions of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: list[str]
-        """
-        return self._permissions
-
-    @permissions.setter
-    def permissions(self, permissions):
-        """Sets the permissions of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-
-        权限集。
-
-        :param permissions: The permissions of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type permissions: list[str]
-        """
-        self._permissions = permissions
+        self._enabled = enabled
 
     @property
     def consume_orderly(self):
@@ -323,6 +243,28 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         :type consume_orderly: bool
         """
         self._consume_orderly = consume_orderly
+
+    @property
+    def group_desc(self):
+        """Gets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+
+        消费组描述，长度0~200个字符。
+
+        :return: The group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :rtype: str
+        """
+        return self._group_desc
+
+    @group_desc.setter
+    def group_desc(self, group_desc):
+        """Sets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+
+        消费组描述，长度0~200个字符。
+
+        :param group_desc: The group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type group_desc: str
+        """
+        self._group_desc = group_desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

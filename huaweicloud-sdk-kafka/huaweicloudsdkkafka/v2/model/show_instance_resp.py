@@ -45,6 +45,7 @@ class ShowInstanceResp:
         'enable_publicip': 'bool',
         'management_connect_address': 'str',
         'ssl_enable': 'bool',
+        'broker_ssl_enable': 'bool',
         'kafka_security_protocol': 'str',
         'sasl_enabled_mechanisms': 'list[str]',
         'ssl_two_way_enable': 'bool',
@@ -60,6 +61,7 @@ class ShowInstanceResp:
         'security_group_name': 'str',
         'subnet_id': 'str',
         'available_zones': 'list[str]',
+        'available_zone_names': 'list[str]',
         'total_storage_space': 'int',
         'public_connect_address': 'str',
         'storage_resource_id': 'str',
@@ -72,6 +74,7 @@ class ShowInstanceResp:
         'kafka_manager_enable': 'bool',
         'kafka_manager_user': 'str',
         'enable_log_collection': 'bool',
+        'new_auth_cert': 'bool',
         'cross_vpc_info': 'str',
         'ipv6_enable': 'bool',
         'ipv6_connect_addresses': 'list[str]',
@@ -129,6 +132,7 @@ class ShowInstanceResp:
         'enable_publicip': 'enable_publicip',
         'management_connect_address': 'management_connect_address',
         'ssl_enable': 'ssl_enable',
+        'broker_ssl_enable': 'broker_ssl_enable',
         'kafka_security_protocol': 'kafka_security_protocol',
         'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
         'ssl_two_way_enable': 'ssl_two_way_enable',
@@ -144,6 +148,7 @@ class ShowInstanceResp:
         'security_group_name': 'security_group_name',
         'subnet_id': 'subnet_id',
         'available_zones': 'available_zones',
+        'available_zone_names': 'available_zone_names',
         'total_storage_space': 'total_storage_space',
         'public_connect_address': 'public_connect_address',
         'storage_resource_id': 'storage_resource_id',
@@ -156,6 +161,7 @@ class ShowInstanceResp:
         'kafka_manager_enable': 'kafka_manager_enable',
         'kafka_manager_user': 'kafka_manager_user',
         'enable_log_collection': 'enable_log_collection',
+        'new_auth_cert': 'new_auth_cert',
         'cross_vpc_info': 'cross_vpc_info',
         'ipv6_enable': 'ipv6_enable',
         'ipv6_connect_addresses': 'ipv6_connect_addresses',
@@ -184,7 +190,7 @@ class ShowInstanceResp:
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, broker_ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, new_auth_cert=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -213,7 +219,7 @@ class ShowInstanceResp:
         :type status: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param resource_spec_code: 资源规格标识。   - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
+        :param resource_spec_code: 资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
         :type resource_spec_code: str
         :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs)
         :type charging_mode: int
@@ -245,6 +251,8 @@ class ShowInstanceResp:
         :type management_connect_address: str
         :param ssl_enable: 是否开启安全认证。 - true：开启 - false：未开启
         :type ssl_enable: bool
+        :param broker_ssl_enable: 是否开启broker间副本加密传输。 - true：开启 - false：未开启
+        :type broker_ssl_enable: bool
         :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
         :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
@@ -275,6 +283,8 @@ class ShowInstanceResp:
         :type subnet_id: str
         :param available_zones: 实例节点所在的可用区，返回“可用区ID”。
         :type available_zones: list[str]
+        :param available_zone_names: 实例节点所在的可用区名称，返回“可用区名称”。
+        :type available_zone_names: list[str]
         :param total_storage_space: 总共消息存储空间，单位：GB。
         :type total_storage_space: int
         :param public_connect_address: 实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
@@ -299,6 +309,8 @@ class ShowInstanceResp:
         :type kafka_manager_user: str
         :param enable_log_collection: 是否开启消息收集功能。
         :type enable_log_collection: bool
+        :param new_auth_cert: 是否开启新证书。
+        :type new_auth_cert: bool
         :param cross_vpc_info: 跨VPC访问信息。
         :type cross_vpc_info: str
         :param ipv6_enable: 是否开启ipv6。
@@ -383,6 +395,7 @@ class ShowInstanceResp:
         self._enable_publicip = None
         self._management_connect_address = None
         self._ssl_enable = None
+        self._broker_ssl_enable = None
         self._kafka_security_protocol = None
         self._sasl_enabled_mechanisms = None
         self._ssl_two_way_enable = None
@@ -398,6 +411,7 @@ class ShowInstanceResp:
         self._security_group_name = None
         self._subnet_id = None
         self._available_zones = None
+        self._available_zone_names = None
         self._total_storage_space = None
         self._public_connect_address = None
         self._storage_resource_id = None
@@ -410,6 +424,7 @@ class ShowInstanceResp:
         self._kafka_manager_enable = None
         self._kafka_manager_user = None
         self._enable_log_collection = None
+        self._new_auth_cert = None
         self._cross_vpc_info = None
         self._ipv6_enable = None
         self._ipv6_connect_addresses = None
@@ -494,6 +509,8 @@ class ShowInstanceResp:
             self.management_connect_address = management_connect_address
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
+        if broker_ssl_enable is not None:
+            self.broker_ssl_enable = broker_ssl_enable
         if kafka_security_protocol is not None:
             self.kafka_security_protocol = kafka_security_protocol
         if sasl_enabled_mechanisms is not None:
@@ -524,6 +541,8 @@ class ShowInstanceResp:
             self.subnet_id = subnet_id
         if available_zones is not None:
             self.available_zones = available_zones
+        if available_zone_names is not None:
+            self.available_zone_names = available_zone_names
         if total_storage_space is not None:
             self.total_storage_space = total_storage_space
         if public_connect_address is not None:
@@ -548,6 +567,8 @@ class ShowInstanceResp:
             self.kafka_manager_user = kafka_manager_user
         if enable_log_collection is not None:
             self.enable_log_collection = enable_log_collection
+        if new_auth_cert is not None:
+            self.new_auth_cert = new_auth_cert
         if cross_vpc_info is not None:
             self.cross_vpc_info = cross_vpc_info
         if ipv6_enable is not None:
@@ -869,7 +890,7 @@ class ShowInstanceResp:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this ShowInstanceResp.
 
-        资源规格标识。   - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
+        资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
 
         :return: The resource_spec_code of this ShowInstanceResp.
         :rtype: str
@@ -880,7 +901,7 @@ class ShowInstanceResp:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this ShowInstanceResp.
 
-        资源规格标识。   - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
+        资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
 
         :param resource_spec_code: The resource_spec_code of this ShowInstanceResp.
         :type resource_spec_code: str
@@ -1218,6 +1239,28 @@ class ShowInstanceResp:
         self._ssl_enable = ssl_enable
 
     @property
+    def broker_ssl_enable(self):
+        """Gets the broker_ssl_enable of this ShowInstanceResp.
+
+        是否开启broker间副本加密传输。 - true：开启 - false：未开启
+
+        :return: The broker_ssl_enable of this ShowInstanceResp.
+        :rtype: bool
+        """
+        return self._broker_ssl_enable
+
+    @broker_ssl_enable.setter
+    def broker_ssl_enable(self, broker_ssl_enable):
+        """Sets the broker_ssl_enable of this ShowInstanceResp.
+
+        是否开启broker间副本加密传输。 - true：开启 - false：未开启
+
+        :param broker_ssl_enable: The broker_ssl_enable of this ShowInstanceResp.
+        :type broker_ssl_enable: bool
+        """
+        self._broker_ssl_enable = broker_ssl_enable
+
+    @property
     def kafka_security_protocol(self):
         """Gets the kafka_security_protocol of this ShowInstanceResp.
 
@@ -1548,6 +1591,28 @@ class ShowInstanceResp:
         self._available_zones = available_zones
 
     @property
+    def available_zone_names(self):
+        """Gets the available_zone_names of this ShowInstanceResp.
+
+        实例节点所在的可用区名称，返回“可用区名称”。
+
+        :return: The available_zone_names of this ShowInstanceResp.
+        :rtype: list[str]
+        """
+        return self._available_zone_names
+
+    @available_zone_names.setter
+    def available_zone_names(self, available_zone_names):
+        """Sets the available_zone_names of this ShowInstanceResp.
+
+        实例节点所在的可用区名称，返回“可用区名称”。
+
+        :param available_zone_names: The available_zone_names of this ShowInstanceResp.
+        :type available_zone_names: list[str]
+        """
+        self._available_zone_names = available_zone_names
+
+    @property
     def total_storage_space(self):
         """Gets the total_storage_space of this ShowInstanceResp.
 
@@ -1810,6 +1875,28 @@ class ShowInstanceResp:
         :type enable_log_collection: bool
         """
         self._enable_log_collection = enable_log_collection
+
+    @property
+    def new_auth_cert(self):
+        """Gets the new_auth_cert of this ShowInstanceResp.
+
+        是否开启新证书。
+
+        :return: The new_auth_cert of this ShowInstanceResp.
+        :rtype: bool
+        """
+        return self._new_auth_cert
+
+    @new_auth_cert.setter
+    def new_auth_cert(self, new_auth_cert):
+        """Sets the new_auth_cert of this ShowInstanceResp.
+
+        是否开启新证书。
+
+        :param new_auth_cert: The new_auth_cert of this ShowInstanceResp.
+        :type new_auth_cert: bool
+        """
+        self._new_auth_cert = new_auth_cert
 
     @property
     def cross_vpc_info(self):

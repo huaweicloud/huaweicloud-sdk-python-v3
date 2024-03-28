@@ -17,7 +17,7 @@ class BatchUpdateConsumerGroupReq:
     sensitive_list = []
 
     openapi_types = {
-        'groups': 'list[ConsumerGroup]'
+        'groups': 'list[CreateOrUpdateConsumerGroup]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class BatchUpdateConsumerGroupReq:
         The model defined in huaweicloud sdk
 
         :param groups: 消费组列表。
-        :type groups: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
+        :type groups: list[:class:`huaweicloudsdkrocketmq.v2.CreateOrUpdateConsumerGroup`]
         """
         
         
@@ -48,7 +48,7 @@ class BatchUpdateConsumerGroupReq:
         消费组列表。
 
         :return: The groups of this BatchUpdateConsumerGroupReq.
-        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
+        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.CreateOrUpdateConsumerGroup`]
         """
         return self._groups
 
@@ -59,7 +59,7 @@ class BatchUpdateConsumerGroupReq:
         消费组列表。
 
         :param groups: The groups of this BatchUpdateConsumerGroupReq.
-        :type groups: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
+        :type groups: list[:class:`huaweicloudsdkrocketmq.v2.CreateOrUpdateConsumerGroup`]
         """
         self._groups = groups
 

@@ -17,7 +17,7 @@ class RegisterBucketRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ObsBuckets'
+        'body': 'RegisterBucketRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class RegisterBucketRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the RegisterBucketRequest
-        :type body: :class:`huaweicloudsdkdli.v1.ObsBuckets`
+        :type body: :class:`huaweicloudsdkdli.v1.RegisterBucketRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class RegisterBucketRequest:
         """Gets the body of this RegisterBucketRequest.
 
         :return: The body of this RegisterBucketRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.ObsBuckets`
+        :rtype: :class:`huaweicloudsdkdli.v1.RegisterBucketRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class RegisterBucketRequest:
         """Sets the body of this RegisterBucketRequest.
 
         :param body: The body of this RegisterBucketRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.ObsBuckets`
+        :type body: :class:`huaweicloudsdkdli.v1.RegisterBucketRequestBody`
         """
         self._body = body
 

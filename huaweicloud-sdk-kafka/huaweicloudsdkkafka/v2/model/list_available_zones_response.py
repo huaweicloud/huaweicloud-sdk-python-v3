@@ -19,7 +19,7 @@ class ListAvailableZonesResponse(SdkResponse):
 
     openapi_types = {
         'region_id': 'str',
-        'available_zones': 'list[ListAvailableZonesRespAvailableZones]'
+        'available_zones': 'list[AvailableZonesResp]'
     }
 
     attribute_map = {
@@ -35,7 +35,7 @@ class ListAvailableZonesResponse(SdkResponse):
         :param region_id: 区域ID。
         :type region_id: str
         :param available_zones: 可用区数组。
-        :type available_zones: list[:class:`huaweicloudsdkkafka.v2.ListAvailableZonesRespAvailableZones`]
+        :type available_zones: list[:class:`huaweicloudsdkkafka.v2.AvailableZonesResp`]
         """
         
         super(ListAvailableZonesResponse, self).__init__()
@@ -78,7 +78,7 @@ class ListAvailableZonesResponse(SdkResponse):
         可用区数组。
 
         :return: The available_zones of this ListAvailableZonesResponse.
-        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListAvailableZonesRespAvailableZones`]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.AvailableZonesResp`]
         """
         return self._available_zones
 
@@ -89,7 +89,7 @@ class ListAvailableZonesResponse(SdkResponse):
         可用区数组。
 
         :param available_zones: The available_zones of this ListAvailableZonesResponse.
-        :type available_zones: list[:class:`huaweicloudsdkkafka.v2.ListAvailableZonesRespAvailableZones`]
+        :type available_zones: list[:class:`huaweicloudsdkkafka.v2.AvailableZonesResp`]
         """
         self._available_zones = available_zones
 

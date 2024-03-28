@@ -17,8 +17,8 @@ class LineStatus:
     sensitive_list = []
 
     openapi_types = {
-        'start_point': 'TaskType',
-        'end_point': 'TaskType',
+        'start_point': 'Point',
+        'end_point': 'Point',
         'critical': 'str'
     }
 
@@ -34,9 +34,9 @@ class LineStatus:
         The model defined in huaweicloud sdk
 
         :param start_point: 
-        :type start_point: :class:`huaweicloudsdkcce.v3.TaskType`
+        :type start_point: :class:`huaweicloudsdkcce.v3.Point`
         :param end_point: 
-        :type end_point: :class:`huaweicloudsdkcce.v3.TaskType`
+        :type end_point: :class:`huaweicloudsdkcce.v3.Point`
         :param critical: 表示是否为关键线路（关键线路未执行无法取消升级流程）
         :type critical: str
         """
@@ -60,7 +60,7 @@ class LineStatus:
         """Gets the start_point of this LineStatus.
 
         :return: The start_point of this LineStatus.
-        :rtype: :class:`huaweicloudsdkcce.v3.TaskType`
+        :rtype: :class:`huaweicloudsdkcce.v3.Point`
         """
         return self._start_point
 
@@ -69,7 +69,7 @@ class LineStatus:
         """Sets the start_point of this LineStatus.
 
         :param start_point: The start_point of this LineStatus.
-        :type start_point: :class:`huaweicloudsdkcce.v3.TaskType`
+        :type start_point: :class:`huaweicloudsdkcce.v3.Point`
         """
         self._start_point = start_point
 
@@ -78,7 +78,7 @@ class LineStatus:
         """Gets the end_point of this LineStatus.
 
         :return: The end_point of this LineStatus.
-        :rtype: :class:`huaweicloudsdkcce.v3.TaskType`
+        :rtype: :class:`huaweicloudsdkcce.v3.Point`
         """
         return self._end_point
 
@@ -87,7 +87,7 @@ class LineStatus:
         """Sets the end_point of this LineStatus.
 
         :param end_point: The end_point of this LineStatus.
-        :type end_point: :class:`huaweicloudsdkcce.v3.TaskType`
+        :type end_point: :class:`huaweicloudsdkcce.v3.Point`
         """
         self._end_point = end_point
 

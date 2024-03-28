@@ -16,6 +16,8 @@ from huaweicloudsdkga.v1.model.associate_listener_request_body import AssociateL
 from huaweicloudsdkga.v1.model.associate_listener_response import AssociateListenerResponse
 from huaweicloudsdkga.v1.model.client_affinity import ClientAffinity
 from huaweicloudsdkga.v1.model.config_status import ConfigStatus
+from huaweicloudsdkga.v1.model.count_resources_by_tag_request import CountResourcesByTagRequest
+from huaweicloudsdkga.v1.model.count_resources_by_tag_response import CountResourcesByTagResponse
 from huaweicloudsdkga.v1.model.create_accelerator_option import CreateAcceleratorOption
 from huaweicloudsdkga.v1.model.create_accelerator_option_ip_sets import CreateAcceleratorOptionIpSets
 from huaweicloudsdkga.v1.model.create_accelerator_request import CreateAcceleratorRequest
@@ -87,10 +89,16 @@ from huaweicloudsdkga.v1.model.list_listeners_request import ListListenersReques
 from huaweicloudsdkga.v1.model.list_listeners_response import ListListenersResponse
 from huaweicloudsdkga.v1.model.list_regions_request import ListRegionsRequest
 from huaweicloudsdkga.v1.model.list_regions_response import ListRegionsResponse
+from huaweicloudsdkga.v1.model.list_resources_by_tag_request import ListResourcesByTagRequest
+from huaweicloudsdkga.v1.model.list_resources_by_tag_request_body import ListResourcesByTagRequestBody
+from huaweicloudsdkga.v1.model.list_resources_by_tag_response import ListResourcesByTagResponse
+from huaweicloudsdkga.v1.model.list_tags_request import ListTagsRequest
+from huaweicloudsdkga.v1.model.list_tags_response import ListTagsResponse
 from huaweicloudsdkga.v1.model.listener_access_control_policy import ListenerAccessControlPolicy
 from huaweicloudsdkga.v1.model.listener_access_control_type import ListenerAccessControlType
 from huaweicloudsdkga.v1.model.listener_detail import ListenerDetail
 from huaweicloudsdkga.v1.model.listener_protocol import ListenerProtocol
+from huaweicloudsdkga.v1.model.match import Match
 from huaweicloudsdkga.v1.model.page_info import PageInfo
 from huaweicloudsdkga.v1.model.port_range import PortRange
 from huaweicloudsdkga.v1.model.region import Region
@@ -98,6 +106,7 @@ from huaweicloudsdkga.v1.model.remove_ip_group_ip_request import RemoveIpGroupIp
 from huaweicloudsdkga.v1.model.remove_ip_group_ip_request_body import RemoveIpGroupIpRequestBody
 from huaweicloudsdkga.v1.model.remove_ip_group_ip_response import RemoveIpGroupIpResponse
 from huaweicloudsdkga.v1.model.resource_tag import ResourceTag
+from huaweicloudsdkga.v1.model.resource_tags import ResourceTags
 from huaweicloudsdkga.v1.model.resource_type import ResourceType
 from huaweicloudsdkga.v1.model.show_accelerator_request import ShowAcceleratorRequest
 from huaweicloudsdkga.v1.model.show_accelerator_response import ShowAcceleratorResponse
@@ -113,6 +122,8 @@ from huaweicloudsdkga.v1.model.show_listener_request import ShowListenerRequest
 from huaweicloudsdkga.v1.model.show_listener_response import ShowListenerResponse
 from huaweicloudsdkga.v1.model.show_resource_tags_request import ShowResourceTagsRequest
 from huaweicloudsdkga.v1.model.show_resource_tags_response import ShowResourceTagsResponse
+from huaweicloudsdkga.v1.model.tag import Tag
+from huaweicloudsdkga.v1.model.total_count import TotalCount
 from huaweicloudsdkga.v1.model.update_accelerator_option import UpdateAcceleratorOption
 from huaweicloudsdkga.v1.model.update_accelerator_request import UpdateAcceleratorRequest
 from huaweicloudsdkga.v1.model.update_accelerator_request_body import UpdateAcceleratorRequestBody

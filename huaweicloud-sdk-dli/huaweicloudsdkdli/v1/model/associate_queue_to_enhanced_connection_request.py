@@ -18,7 +18,7 @@ class AssociateQueueToEnhancedConnectionRequest:
 
     openapi_types = {
         'connection_id': 'str',
-        'body': 'AssociateConnectionQueueReq'
+        'body': 'AssociateQueueToEnhancedConnectionRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class AssociateQueueToEnhancedConnectionRequest:
         :param connection_id: 连接ID，用于标识跨源连接的UUID。
         :type connection_id: str
         :param body: Body of the AssociateQueueToEnhancedConnectionRequest
-        :type body: :class:`huaweicloudsdkdli.v1.AssociateConnectionQueueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.AssociateQueueToEnhancedConnectionRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class AssociateQueueToEnhancedConnectionRequest:
         """Gets the body of this AssociateQueueToEnhancedConnectionRequest.
 
         :return: The body of this AssociateQueueToEnhancedConnectionRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.AssociateConnectionQueueReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.AssociateQueueToEnhancedConnectionRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class AssociateQueueToEnhancedConnectionRequest:
         """Sets the body of this AssociateQueueToEnhancedConnectionRequest.
 
         :param body: The body of this AssociateQueueToEnhancedConnectionRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.AssociateConnectionQueueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.AssociateQueueToEnhancedConnectionRequestBody`
         """
         self._body = body
 

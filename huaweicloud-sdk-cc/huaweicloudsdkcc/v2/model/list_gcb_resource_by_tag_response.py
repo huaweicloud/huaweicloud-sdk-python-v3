@@ -19,15 +19,17 @@ class ListGcbResourceByTagResponse(SdkResponse):
 
     openapi_types = {
         'resources': 'list[TmsResource]',
-        'total_count': 'int'
+        'total_count': 'int',
+        'request_id': 'str'
     }
 
     attribute_map = {
         'resources': 'resources',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, resources=None, total_count=None):
+    def __init__(self, resources=None, total_count=None, request_id=None):
         """ListGcbResourceByTagResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListGcbResourceByTagResponse(SdkResponse):
         :type resources: list[:class:`huaweicloudsdkcc.v2.TmsResource`]
         :param total_count: 总记录数。
         :type total_count: int
+        :param request_id: 请求ID。
+        :type request_id: str
         """
         
         super(ListGcbResourceByTagResponse, self).__init__()
 
         self._resources = None
         self._total_count = None
+        self._request_id = None
         self.discriminator = None
 
         if resources is not None:
             self.resources = resources
         if total_count is not None:
             self.total_count = total_count
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def resources(self):
@@ -92,6 +99,28 @@ class ListGcbResourceByTagResponse(SdkResponse):
         :type total_count: int
         """
         self._total_count = total_count
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ListGcbResourceByTagResponse.
+
+        请求ID。
+
+        :return: The request_id of this ListGcbResourceByTagResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListGcbResourceByTagResponse.
+
+        请求ID。
+
+        :param request_id: The request_id of this ListGcbResourceByTagResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

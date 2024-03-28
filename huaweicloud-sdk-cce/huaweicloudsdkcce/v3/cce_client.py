@@ -1452,6 +1452,8 @@ class CceClient(Client):
             query_params.append(('delete_sfs', local_var_params['delete_sfs']))
         if 'delete_sfs30' in local_var_params:
             query_params.append(('delete_sfs30', local_var_params['delete_sfs30']))
+        if 'lts_reclaim_policy' in local_var_params:
+            query_params.append(('lts_reclaim_policy', local_var_params['lts_reclaim_policy']))
         if 'tobedeleted' in local_var_params:
             query_params.append(('tobedeleted', local_var_params['tobedeleted']))
         if 'ondemand_node_policy' in local_var_params:

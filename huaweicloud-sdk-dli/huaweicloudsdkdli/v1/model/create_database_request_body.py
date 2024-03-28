@@ -20,7 +20,7 @@ class CreateDatabaseRequestBody:
         'database_name': 'str',
         'description': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'list[TmsTagEntity]'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class CreateDatabaseRequestBody:
         :param enterprise_project_id: 企业项目ID，“0”表示default，即默认的企业项目。关于如何设置企业项目请参考《企业管理用户指南》。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
         :type enterprise_project_id: str
         :param tags: 标签
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         
         
@@ -134,7 +134,7 @@ class CreateDatabaseRequestBody:
         标签
 
         :return: The tags of this CreateDatabaseRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         return self._tags
 
@@ -145,7 +145,7 @@ class CreateDatabaseRequestBody:
         标签
 
         :param tags: The tags of this CreateDatabaseRequestBody.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
 

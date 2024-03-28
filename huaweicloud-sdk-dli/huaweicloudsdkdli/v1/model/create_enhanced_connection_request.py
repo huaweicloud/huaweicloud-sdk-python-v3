@@ -17,7 +17,7 @@ class CreateEnhancedConnectionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateEnhancedConnectionsReq'
+        'body': 'CreateEnhancedConnectionRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateEnhancedConnectionRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateEnhancedConnectionRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionsReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateEnhancedConnectionRequest:
         """Gets the body of this CreateEnhancedConnectionRequest.
 
         :return: The body of this CreateEnhancedConnectionRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionsReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateEnhancedConnectionRequest:
         """Sets the body of this CreateEnhancedConnectionRequest.
 
         :param body: The body of this CreateEnhancedConnectionRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionsReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRequestBody`
         """
         self._body = body
 

@@ -21,7 +21,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'connection_id': 'str',
-        'privileges': 'list[ProjectPrivilege]'
+        'privileges': 'list[EnhancedConnectionPrivilege]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
         :param connection_id: 增强型跨源连接ID，用于标识跨源连接的UUID。
         :type connection_id: str
         :param privileges: 跨源连接各个授权项目的信息。
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.ProjectPrivilege`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionPrivilege`]
         """
         
         super(ShowEnhancedConnectionPrivilegeResponse, self).__init__()
@@ -136,7 +136,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
         跨源连接各个授权项目的信息。
 
         :return: The privileges of this ShowEnhancedConnectionPrivilegeResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ProjectPrivilege`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionPrivilege`]
         """
         return self._privileges
 
@@ -147,7 +147,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
         跨源连接各个授权项目的信息。
 
         :param privileges: The privileges of this ShowEnhancedConnectionPrivilegeResponse.
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.ProjectPrivilege`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionPrivilege`]
         """
         self._privileges = privileges
 

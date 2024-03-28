@@ -26,7 +26,7 @@ class Table:
         'table_name': 'str',
         'table_size': 'int',
         'table_type': 'str',
-        'partition_columns': 'str',
+        'partition_columns': 'list[str]',
         'page_size': 'int',
         'current_page': 'int'
     }
@@ -70,7 +70,7 @@ class Table:
         :param table_type: 表类型： OBS表为EXTERNAL DLI表为MANAGED View为VIEW
         :type table_type: str
         :param partition_columns: 分区字段。只有OBS分区表有该参数，其他表没有该参数。
-        :type partition_columns: str
+        :type partition_columns: list[str]
         :param page_size: 分页大小，最小为1，最大为100。
         :type page_size: int
         :param current_page: 当前页码，最小为1。
@@ -316,7 +316,7 @@ class Table:
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
         :return: The partition_columns of this Table.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._partition_columns
 
@@ -327,7 +327,7 @@ class Table:
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
         :param partition_columns: The partition_columns of this Table.
-        :type partition_columns: str
+        :type partition_columns: list[str]
         """
         self._partition_columns = partition_columns
 

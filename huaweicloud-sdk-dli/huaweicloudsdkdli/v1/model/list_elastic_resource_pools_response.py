@@ -21,7 +21,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'count': 'int',
-        'elastic_resource_pools': 'list[ElasticResourcePoolsResponse]'
+        'elastic_resource_pools': 'list[ElasticResourcePool]'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         :param count: 数量
         :type count: int
         :param elastic_resource_pools: 弹性资源池列表
-        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolsResponse`]
+        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePool`]
         """
         
         super(ListElasticResourcePoolsResponse, self).__init__()
@@ -136,7 +136,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         弹性资源池列表
 
         :return: The elastic_resource_pools of this ListElasticResourcePoolsResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolsResponse`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePool`]
         """
         return self._elastic_resource_pools
 
@@ -147,7 +147,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         弹性资源池列表
 
         :param elastic_resource_pools: The elastic_resource_pools of this ListElasticResourcePoolsResponse.
-        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolsResponse`]
+        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePool`]
         """
         self._elastic_resource_pools = elastic_resource_pools
 

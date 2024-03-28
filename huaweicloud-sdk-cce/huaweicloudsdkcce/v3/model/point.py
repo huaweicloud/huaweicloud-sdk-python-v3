@@ -17,20 +17,47 @@ class Point:
     sensitive_list = []
 
     openapi_types = {
+        'task_type': 'TaskType'
     }
 
     attribute_map = {
+        'task_type': 'taskType'
     }
 
-    def __init__(self):
+    def __init__(self, task_type=None):
         """Point
 
         The model defined in huaweicloud sdk
 
+        :param task_type: 
+        :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`
         """
         
         
+
+        self._task_type = None
         self.discriminator = None
+
+        if task_type is not None:
+            self.task_type = task_type
+
+    @property
+    def task_type(self):
+        """Gets the task_type of this Point.
+
+        :return: The task_type of this Point.
+        :rtype: :class:`huaweicloudsdkcce.v3.TaskType`
+        """
+        return self._task_type
+
+    @task_type.setter
+    def task_type(self, task_type):
+        """Sets the task_type of this Point.
+
+        :param task_type: The task_type of this Point.
+        :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`
+        """
+        self._task_type = task_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

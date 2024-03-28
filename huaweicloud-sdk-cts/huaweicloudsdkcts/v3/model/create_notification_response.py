@@ -22,6 +22,7 @@ class CreateNotificationResponse(SdkResponse):
         'operation_type': 'str',
         'operations': 'list[Operations]',
         'notify_user_list': 'list[NotificationUsers]',
+        'agency_name': 'str',
         'status': 'str',
         'topic_id': 'str',
         'notification_id': 'str',
@@ -36,6 +37,7 @@ class CreateNotificationResponse(SdkResponse):
         'operation_type': 'operation_type',
         'operations': 'operations',
         'notify_user_list': 'notify_user_list',
+        'agency_name': 'agency_name',
         'status': 'status',
         'topic_id': 'topic_id',
         'notification_id': 'notification_id',
@@ -45,7 +47,7 @@ class CreateNotificationResponse(SdkResponse):
         'filter': 'filter'
     }
 
-    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, notification_type=None, project_id=None, create_time=None, filter=None):
+    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, agency_name=None, status=None, topic_id=None, notification_id=None, notification_type=None, project_id=None, create_time=None, filter=None):
         """CreateNotificationResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class CreateNotificationResponse(SdkResponse):
         :type operations: list[:class:`huaweicloudsdkcts.v3.Operations`]
         :param notify_user_list: 通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
         :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
+        :param agency_name: 云服务委托名称。
+        :type agency_name: str
         :param status: 通知状态，启用和停用。
         :type status: str
         :param topic_id: 消息通知服务(SMN)主题的唯一的资源标识，可通过查询主题列表获取该标识。
@@ -80,6 +84,7 @@ class CreateNotificationResponse(SdkResponse):
         self._operation_type = None
         self._operations = None
         self._notify_user_list = None
+        self._agency_name = None
         self._status = None
         self._topic_id = None
         self._notification_id = None
@@ -97,6 +102,8 @@ class CreateNotificationResponse(SdkResponse):
             self.operations = operations
         if notify_user_list is not None:
             self.notify_user_list = notify_user_list
+        if agency_name is not None:
+            self.agency_name = agency_name
         if status is not None:
             self.status = status
         if topic_id is not None:
@@ -199,6 +206,28 @@ class CreateNotificationResponse(SdkResponse):
         :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
         """
         self._notify_user_list = notify_user_list
+
+    @property
+    def agency_name(self):
+        """Gets the agency_name of this CreateNotificationResponse.
+
+        云服务委托名称。
+
+        :return: The agency_name of this CreateNotificationResponse.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        """Sets the agency_name of this CreateNotificationResponse.
+
+        云服务委托名称。
+
+        :param agency_name: The agency_name of this CreateNotificationResponse.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     @property
     def status(self):

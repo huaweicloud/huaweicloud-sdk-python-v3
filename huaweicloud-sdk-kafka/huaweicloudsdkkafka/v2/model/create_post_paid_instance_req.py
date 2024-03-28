@@ -43,7 +43,6 @@ class CreatePostPaidInstanceReq:
         'kafka_security_protocol': 'str',
         'sasl_enabled_mechanisms': 'list[str]',
         'retention_policy': 'str',
-        'ipv6_enable': 'bool',
         'disk_encrypted_enable': 'bool',
         'disk_encrypted_key': 'str',
         'connector_enable': 'bool',
@@ -80,7 +79,6 @@ class CreatePostPaidInstanceReq:
         'kafka_security_protocol': 'kafka_security_protocol',
         'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
         'retention_policy': 'retention_policy',
-        'ipv6_enable': 'ipv6_enable',
         'disk_encrypted_enable': 'disk_encrypted_enable',
         'disk_encrypted_key': 'disk_encrypted_key',
         'connector_enable': 'connector_enable',
@@ -90,14 +88,14 @@ class CreatePostPaidInstanceReq:
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, ipv6_enable=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
         """CreatePostPaidInstanceReq
 
         The model defined in huaweicloud sdk
 
         :param name: 实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type name: str
-        :param description: 实例的描述信息。  长度不超过1024的字符串。  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
+        :param description: 实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs)  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
         :type description: str
         :param engine: 消息引擎。取值填写为：kafka。
         :type engine: str
@@ -147,8 +145,6 @@ class CreatePostPaidInstanceReq:
         :type sasl_enabled_mechanisms: list[str]
         :param retention_policy: 磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
         :type retention_policy: str
-        :param ipv6_enable: 是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
-        :type ipv6_enable: bool
         :param disk_encrypted_enable: 是否开启磁盘加密。
         :type disk_encrypted_enable: bool
         :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空
@@ -193,7 +189,6 @@ class CreatePostPaidInstanceReq:
         self._kafka_security_protocol = None
         self._sasl_enabled_mechanisms = None
         self._retention_policy = None
-        self._ipv6_enable = None
         self._disk_encrypted_enable = None
         self._disk_encrypted_key = None
         self._connector_enable = None
@@ -246,8 +241,6 @@ class CreatePostPaidInstanceReq:
             self.sasl_enabled_mechanisms = sasl_enabled_mechanisms
         if retention_policy is not None:
             self.retention_policy = retention_policy
-        if ipv6_enable is not None:
-            self.ipv6_enable = ipv6_enable
         if disk_encrypted_enable is not None:
             self.disk_encrypted_enable = disk_encrypted_enable
         if disk_encrypted_key is not None:
@@ -288,7 +281,7 @@ class CreatePostPaidInstanceReq:
     def description(self):
         """Gets the description of this CreatePostPaidInstanceReq.
 
-        实例的描述信息。  长度不超过1024的字符串。  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
+        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
         :return: The description of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -299,7 +292,7 @@ class CreatePostPaidInstanceReq:
     def description(self, description):
         """Sets the description of this CreatePostPaidInstanceReq.
 
-        实例的描述信息。  长度不超过1024的字符串。  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
+        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
         :param description: The description of this CreatePostPaidInstanceReq.
         :type description: str
@@ -833,28 +826,6 @@ class CreatePostPaidInstanceReq:
         :type retention_policy: str
         """
         self._retention_policy = retention_policy
-
-    @property
-    def ipv6_enable(self):
-        """Gets the ipv6_enable of this CreatePostPaidInstanceReq.
-
-        是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
-
-        :return: The ipv6_enable of this CreatePostPaidInstanceReq.
-        :rtype: bool
-        """
-        return self._ipv6_enable
-
-    @ipv6_enable.setter
-    def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this CreatePostPaidInstanceReq.
-
-        是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
-
-        :param ipv6_enable: The ipv6_enable of this CreatePostPaidInstanceReq.
-        :type ipv6_enable: bool
-        """
-        self._ipv6_enable = ipv6_enable
 
     @property
     def disk_encrypted_enable(self):

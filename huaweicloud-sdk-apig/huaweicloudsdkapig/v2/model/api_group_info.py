@@ -25,6 +25,7 @@ class ApiGroupInfo:
         'update_time': 'datetime',
         'on_sell_status': 'int',
         'url_domains': 'list[UrlDomain]',
+        'sl_domain_access_enabled': 'bool',
         'sl_domains': 'list[str]',
         'remark': 'str',
         'call_limits': 'int',
@@ -45,6 +46,7 @@ class ApiGroupInfo:
         'update_time': 'update_time',
         'on_sell_status': 'on_sell_status',
         'url_domains': 'url_domains',
+        'sl_domain_access_enabled': 'sl_domain_access_enabled',
         'sl_domains': 'sl_domains',
         'remark': 'remark',
         'call_limits': 'call_limits',
@@ -56,7 +58,7 @@ class ApiGroupInfo:
         'roma_app_name': 'roma_app_name'
     }
 
-    def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None, sl_domains=None, remark=None, call_limits=None, time_interval=None, time_unit=None, is_default=None, version=None, roma_app_id=None, roma_app_name=None):
+    def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None, sl_domain_access_enabled=None, sl_domains=None, remark=None, call_limits=None, time_interval=None, time_unit=None, is_default=None, version=None, roma_app_id=None, roma_app_name=None):
         """ApiGroupInfo
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class ApiGroupInfo:
         :type on_sell_status: int
         :param url_domains: 分组上绑定的独立域名列表
         :type url_domains: list[:class:`huaweicloudsdkapig.v2.UrlDomain`]
+        :param sl_domain_access_enabled: 调试域名是否可以访问，true表示可以访问，false表示禁止访问
+        :type sl_domain_access_enabled: bool
         :param sl_domains: 系统默认分配的子域名列表
         :type sl_domains: list[str]
         :param remark: 描述
@@ -107,6 +111,7 @@ class ApiGroupInfo:
         self._update_time = None
         self._on_sell_status = None
         self._url_domains = None
+        self._sl_domain_access_enabled = None
         self._sl_domains = None
         self._remark = None
         self._call_limits = None
@@ -127,6 +132,8 @@ class ApiGroupInfo:
         self.on_sell_status = on_sell_status
         if url_domains is not None:
             self.url_domains = url_domains
+        if sl_domain_access_enabled is not None:
+            self.sl_domain_access_enabled = sl_domain_access_enabled
         if sl_domains is not None:
             self.sl_domains = sl_domains
         if remark is not None:
@@ -321,6 +328,28 @@ class ApiGroupInfo:
         :type url_domains: list[:class:`huaweicloudsdkapig.v2.UrlDomain`]
         """
         self._url_domains = url_domains
+
+    @property
+    def sl_domain_access_enabled(self):
+        """Gets the sl_domain_access_enabled of this ApiGroupInfo.
+
+        调试域名是否可以访问，true表示可以访问，false表示禁止访问
+
+        :return: The sl_domain_access_enabled of this ApiGroupInfo.
+        :rtype: bool
+        """
+        return self._sl_domain_access_enabled
+
+    @sl_domain_access_enabled.setter
+    def sl_domain_access_enabled(self, sl_domain_access_enabled):
+        """Sets the sl_domain_access_enabled of this ApiGroupInfo.
+
+        调试域名是否可以访问，true表示可以访问，false表示禁止访问
+
+        :param sl_domain_access_enabled: The sl_domain_access_enabled of this ApiGroupInfo.
+        :type sl_domain_access_enabled: bool
+        """
+        self._sl_domain_access_enabled = sl_domain_access_enabled
 
     @property
     def sl_domains(self):

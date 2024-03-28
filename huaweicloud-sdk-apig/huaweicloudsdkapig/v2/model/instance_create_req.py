@@ -97,7 +97,7 @@ class InstanceCreateReq:
         :type bandwidth_charging_mode: str
         :param ipv6_enable: 公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6
         :type ipv6_enable: bool
-        :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+        :param loadbalancer_provider: 实例使用的负载均衡器类型 - 该字段废弃，由Region支持的负载均衡模式决定使用elb还是lvs，详情参考产品介绍下的约束与限制。 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
         :type loadbalancer_provider: str
         :param tags: 标签列表。  一个实例默认最多支持创建20个标签
         :type tags: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
@@ -508,7 +508,7 @@ class InstanceCreateReq:
     def loadbalancer_provider(self):
         """Gets the loadbalancer_provider of this InstanceCreateReq.
 
-        实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+        实例使用的负载均衡器类型 - 该字段废弃，由Region支持的负载均衡模式决定使用elb还是lvs，详情参考产品介绍下的约束与限制。 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
 
         :return: The loadbalancer_provider of this InstanceCreateReq.
         :rtype: str
@@ -519,7 +519,7 @@ class InstanceCreateReq:
     def loadbalancer_provider(self, loadbalancer_provider):
         """Sets the loadbalancer_provider of this InstanceCreateReq.
 
-        实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+        实例使用的负载均衡器类型 - 该字段废弃，由Region支持的负载均衡模式决定使用elb还是lvs，详情参考产品介绍下的约束与限制。 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
 
         :param loadbalancer_provider: The loadbalancer_provider of this InstanceCreateReq.
         :type loadbalancer_provider: str

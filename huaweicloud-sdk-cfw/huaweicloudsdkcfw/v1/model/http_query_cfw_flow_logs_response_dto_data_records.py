@@ -17,7 +17,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     sensitive_list = []
 
     openapi_types = {
-        'bytes': 'int',
+        'bytes': 'float',
         'direction': 'str',
         'packets': 'int',
         'start_time': 'int',
@@ -54,7 +54,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         The model defined in huaweicloud sdk
 
         :param bytes: 字节
-        :type bytes: int
+        :type bytes: float
         :param direction: 方向，有内到外和外到内两种
         :type direction: str
         :param packets: 包
@@ -132,7 +132,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         字节
 
         :return: The bytes of this HttpQueryCfwFlowLogsResponseDTODataRecords.
-        :rtype: int
+        :rtype: float
         """
         return self._bytes
 
@@ -143,7 +143,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         字节
 
         :param bytes: The bytes of this HttpQueryCfwFlowLogsResponseDTODataRecords.
-        :type bytes: int
+        :type bytes: float
         """
         self._bytes = bytes
 

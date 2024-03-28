@@ -34,7 +34,7 @@ class DeleteEnhancedConnectionResponse(SdkResponse):
 
         :param is_success: 执行请求是否成功。“true”表示请求执行成功。
         :type is_success: bool
-        :param message: 系统提示信息，执行成功时，返回“Deleted”。
+        :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         """
         
@@ -75,7 +75,7 @@ class DeleteEnhancedConnectionResponse(SdkResponse):
     def message(self):
         """Gets the message of this DeleteEnhancedConnectionResponse.
 
-        系统提示信息，执行成功时，返回“Deleted”。
+        系统提示信息，执行成功时，信息可能为空。
 
         :return: The message of this DeleteEnhancedConnectionResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class DeleteEnhancedConnectionResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this DeleteEnhancedConnectionResponse.
 
-        系统提示信息，执行成功时，返回“Deleted”。
+        系统提示信息，执行成功时，信息可能为空。
 
         :param message: The message of this DeleteEnhancedConnectionResponse.
         :type message: str

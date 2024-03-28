@@ -35,7 +35,7 @@ class SmartConnectTaskRespSourceConfig:
         'sync_consumer_offsets_enabled': 'bool',
         'replication_factor': 'int',
         'task_num': 'int',
-        'rename_topic_enable': 'bool',
+        'rename_topic_enabled': 'bool',
         'provenance_header_enabled': 'bool',
         'consumer_strategy': 'str',
         'compression_type': 'str',
@@ -61,14 +61,14 @@ class SmartConnectTaskRespSourceConfig:
         'sync_consumer_offsets_enabled': 'sync_consumer_offsets_enabled',
         'replication_factor': 'replication_factor',
         'task_num': 'task_num',
-        'rename_topic_enable': 'rename_topic_enable',
+        'rename_topic_enabled': 'rename_topic_enabled',
         'provenance_header_enabled': 'provenance_header_enabled',
         'consumer_strategy': 'consumer_strategy',
         'compression_type': 'compression_type',
         'topics_mapping': 'topics_mapping'
     }
 
-    def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, sync_mode=None, full_sync_wait_ms=None, full_sync_max_retry=None, ratelimit=None, current_cluster_name=None, cluster_name=None, user_name=None, sasl_mechanism=None, instance_id=None, bootstrap_servers=None, security_protocol=None, direction=None, sync_consumer_offsets_enabled=None, replication_factor=None, task_num=None, rename_topic_enable=None, provenance_header_enabled=None, consumer_strategy=None, compression_type=None, topics_mapping=None):
+    def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, sync_mode=None, full_sync_wait_ms=None, full_sync_max_retry=None, ratelimit=None, current_cluster_name=None, cluster_name=None, user_name=None, sasl_mechanism=None, instance_id=None, bootstrap_servers=None, security_protocol=None, direction=None, sync_consumer_offsets_enabled=None, replication_factor=None, task_num=None, rename_topic_enabled=None, provenance_header_enabled=None, consumer_strategy=None, compression_type=None, topics_mapping=None):
         """SmartConnectTaskRespSourceConfig
 
         The model defined in huaweicloud sdk
@@ -109,8 +109,8 @@ class SmartConnectTaskRespSourceConfig:
         :type replication_factor: int
         :param task_num: 任务数。（仅源端类型为Kafka时会显示）
         :type task_num: int
-        :param rename_topic_enable: 是否重命名Topic。（仅源端类型为Kafka时会显示）
-        :type rename_topic_enable: bool
+        :param rename_topic_enabled: 是否重命名Topic。（仅源端类型为Kafka时会显示）
+        :type rename_topic_enabled: bool
         :param provenance_header_enabled: 是否添加来源header。（仅源端类型为Kafka时会显示）
         :type provenance_header_enabled: bool
         :param consumer_strategy: 启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时会显示）
@@ -141,7 +141,7 @@ class SmartConnectTaskRespSourceConfig:
         self._sync_consumer_offsets_enabled = None
         self._replication_factor = None
         self._task_num = None
-        self._rename_topic_enable = None
+        self._rename_topic_enabled = None
         self._provenance_header_enabled = None
         self._consumer_strategy = None
         self._compression_type = None
@@ -184,8 +184,8 @@ class SmartConnectTaskRespSourceConfig:
             self.replication_factor = replication_factor
         if task_num is not None:
             self.task_num = task_num
-        if rename_topic_enable is not None:
-            self.rename_topic_enable = rename_topic_enable
+        if rename_topic_enabled is not None:
+            self.rename_topic_enabled = rename_topic_enabled
         if provenance_header_enabled is not None:
             self.provenance_header_enabled = provenance_header_enabled
         if consumer_strategy is not None:
@@ -592,26 +592,26 @@ class SmartConnectTaskRespSourceConfig:
         self._task_num = task_num
 
     @property
-    def rename_topic_enable(self):
-        """Gets the rename_topic_enable of this SmartConnectTaskRespSourceConfig.
+    def rename_topic_enabled(self):
+        """Gets the rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
 
         是否重命名Topic。（仅源端类型为Kafka时会显示）
 
-        :return: The rename_topic_enable of this SmartConnectTaskRespSourceConfig.
+        :return: The rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
         :rtype: bool
         """
-        return self._rename_topic_enable
+        return self._rename_topic_enabled
 
-    @rename_topic_enable.setter
-    def rename_topic_enable(self, rename_topic_enable):
-        """Sets the rename_topic_enable of this SmartConnectTaskRespSourceConfig.
+    @rename_topic_enabled.setter
+    def rename_topic_enabled(self, rename_topic_enabled):
+        """Sets the rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
 
         是否重命名Topic。（仅源端类型为Kafka时会显示）
 
-        :param rename_topic_enable: The rename_topic_enable of this SmartConnectTaskRespSourceConfig.
-        :type rename_topic_enable: bool
+        :param rename_topic_enabled: The rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
+        :type rename_topic_enabled: bool
         """
-        self._rename_topic_enable = rename_topic_enable
+        self._rename_topic_enabled = rename_topic_enabled
 
     @property
     def provenance_header_enabled(self):

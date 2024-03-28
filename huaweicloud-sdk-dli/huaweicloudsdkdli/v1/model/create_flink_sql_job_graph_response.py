@@ -67,8 +67,6 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
     def is_success(self):
         """Gets the is_success of this CreateFlinkSqlJobGraphResponse.
 
-        
-
         :return: The is_success of this CreateFlinkSqlJobGraphResponse.
         :rtype: bool
         """
@@ -77,8 +75,6 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
     @is_success.setter
     def is_success(self, is_success):
         """Sets the is_success of this CreateFlinkSqlJobGraphResponse.
-
-        
 
         :param is_success: The is_success of this CreateFlinkSqlJobGraphResponse.
         :type is_success: bool
@@ -89,8 +85,6 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
     def message(self):
         """Gets the message of this CreateFlinkSqlJobGraphResponse.
 
-        
-
         :return: The message of this CreateFlinkSqlJobGraphResponse.
         :rtype: str
         """
@@ -99,8 +93,6 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
     @message.setter
     def message(self, message):
         """Sets the message of this CreateFlinkSqlJobGraphResponse.
-
-        
 
         :param message: The message of this CreateFlinkSqlJobGraphResponse.
         :type message: str
@@ -111,8 +103,6 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
     def error_code(self):
         """Gets the error_code of this CreateFlinkSqlJobGraphResponse.
 
-        
-
         :return: The error_code of this CreateFlinkSqlJobGraphResponse.
         :rtype: str
         """
@@ -121,8 +111,6 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
     @error_code.setter
     def error_code(self, error_code):
         """Sets the error_code of this CreateFlinkSqlJobGraphResponse.
-
-        
 
         :param error_code: The error_code of this CreateFlinkSqlJobGraphResponse.
         :type error_code: str

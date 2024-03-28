@@ -29,6 +29,7 @@ class CreateTrackerResponse(SdkResponse):
         'domain_id': 'str',
         'project_id': 'str',
         'tracker_name': 'str',
+        'agency_name': 'str',
         'status': 'str',
         'detail': 'str',
         'is_support_trace_files_encryption': 'bool',
@@ -48,6 +49,7 @@ class CreateTrackerResponse(SdkResponse):
         'domain_id': 'domain_id',
         'project_id': 'project_id',
         'tracker_name': 'tracker_name',
+        'agency_name': 'agency_name',
         'status': 'status',
         'detail': 'detail',
         'is_support_trace_files_encryption': 'is_support_trace_files_encryption',
@@ -55,7 +57,7 @@ class CreateTrackerResponse(SdkResponse):
         'data_bucket': 'data_bucket'
     }
 
-    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, is_organization_tracker=None, management_event_selector=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, obs_info=None, data_bucket=None):
+    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, is_organization_tracker=None, management_event_selector=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, agency_name=None, status=None, detail=None, is_support_trace_files_encryption=None, obs_info=None, data_bucket=None):
         """CreateTrackerResponse
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class CreateTrackerResponse(SdkResponse):
         :type project_id: str
         :param tracker_name: 标识追踪器名称，当前版本默认为“system”。
         :type tracker_name: str
+        :param agency_name: 云服务委托名称。
+        :type agency_name: str
         :param status: 标识追踪器状态，包括正常（enabled），停止（disabled）和异常（error）三种状态，状态为异常时需通过明细（detail）字段说明错误来源。
         :type status: str
         :param detail: 该参数仅在追踪器状态异常时返回，用于标识追踪器异常的原因，包括桶策略异常（bucketPolicyError），桶不存在（noBucket）和欠费或冻结（arrears）三种原因。
@@ -107,6 +111,7 @@ class CreateTrackerResponse(SdkResponse):
         self._domain_id = None
         self._project_id = None
         self._tracker_name = None
+        self._agency_name = None
         self._status = None
         self._detail = None
         self._is_support_trace_files_encryption = None
@@ -136,6 +141,8 @@ class CreateTrackerResponse(SdkResponse):
             self.project_id = project_id
         if tracker_name is not None:
             self.tracker_name = tracker_name
+        if agency_name is not None:
+            self.agency_name = agency_name
         if status is not None:
             self.status = status
         if detail is not None:
@@ -380,6 +387,28 @@ class CreateTrackerResponse(SdkResponse):
         :type tracker_name: str
         """
         self._tracker_name = tracker_name
+
+    @property
+    def agency_name(self):
+        """Gets the agency_name of this CreateTrackerResponse.
+
+        云服务委托名称。
+
+        :return: The agency_name of this CreateTrackerResponse.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        """Sets the agency_name of this CreateTrackerResponse.
+
+        云服务委托名称。
+
+        :param agency_name: The agency_name of this CreateTrackerResponse.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     @property
     def status(self):

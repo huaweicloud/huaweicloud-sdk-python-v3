@@ -18,7 +18,7 @@ class UpdateGlobalVariableRequest:
 
     openapi_types = {
         'var_name': 'str',
-        'body': 'UpdateGlobalValueReq'
+        'body': 'UpdateGlobalVariableRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateGlobalVariableRequest:
         :param var_name: 全局变量名，名称只能包含数字、英文字母和下划线，但不能是纯数字，不能以下划线开头，且不能超过128字符
         :type var_name: str
         :param body: Body of the UpdateGlobalVariableRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateGlobalVariableRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdateGlobalVariableRequest:
         """Gets the body of this UpdateGlobalVariableRequest.
 
         :return: The body of this UpdateGlobalVariableRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateGlobalVariableRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateGlobalVariableRequest:
         """Sets the body of this UpdateGlobalVariableRequest.
 
         :param body: The body of this UpdateGlobalVariableRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateGlobalVariableRequestBody`
         """
         self._body = body
 

@@ -49,7 +49,8 @@ class EniNetwork:
         self.discriminator = None
 
         self.eni_subnet_id = eni_subnet_id
-        self.eni_subnet_cidr = eni_subnet_cidr
+        if eni_subnet_cidr is not None:
+            self.eni_subnet_cidr = eni_subnet_cidr
         self.subnets = subnets
 
     @property

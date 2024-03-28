@@ -32,7 +32,7 @@ class UpdateQueueCidrResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_success: 请求执行是否成功。“true”表示请求执行成功。
+        :param is_success: 执行请求是否成功。“true”表示请求执行成功。
         :type is_success: bool
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
@@ -53,7 +53,7 @@ class UpdateQueueCidrResponse(SdkResponse):
     def is_success(self):
         """Gets the is_success of this UpdateQueueCidrResponse.
 
-        请求执行是否成功。“true”表示请求执行成功。
+        执行请求是否成功。“true”表示请求执行成功。
 
         :return: The is_success of this UpdateQueueCidrResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class UpdateQueueCidrResponse(SdkResponse):
     def is_success(self, is_success):
         """Sets the is_success of this UpdateQueueCidrResponse.
 
-        请求执行是否成功。“true”表示请求执行成功。
+        执行请求是否成功。“true”表示请求执行成功。
 
         :param is_success: The is_success of this UpdateQueueCidrResponse.
         :type is_success: bool

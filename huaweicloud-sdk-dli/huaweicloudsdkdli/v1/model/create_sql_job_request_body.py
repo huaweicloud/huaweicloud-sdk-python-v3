@@ -18,27 +18,31 @@ class CreateSqlJobRequestBody:
 
     openapi_types = {
         'sql': 'str',
+        'engine_type': 'str',
         'currentdb': 'str',
         'queue_name': 'str',
         'conf': 'list[str]',
-        'tags': 'list[TmsTagEntity]'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
         'sql': 'sql',
+        'engine_type': 'engine_type',
         'currentdb': 'currentdb',
         'queue_name': 'queue_name',
         'conf': 'conf',
         'tags': 'tags'
     }
 
-    def __init__(self, sql=None, currentdb=None, queue_name=None, conf=None, tags=None):
+    def __init__(self, sql=None, engine_type=None, currentdb=None, queue_name=None, conf=None, tags=None):
         """CreateSqlJobRequestBody
 
         The model defined in huaweicloud sdk
 
         :param sql: 待执行的SQL语句。
         :type sql: str
+        :param engine_type: 待提交作业的队列引擎名称，名称只能包含英文字母。
+        :type engine_type: str
         :param currentdb: SQL语句执行所在的数据库。当创建新数据库时，不需要提供此参数。
         :type currentdb: str
         :param queue_name: 待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
@@ -46,12 +50,13 @@ class CreateSqlJobRequestBody:
         :param conf: 用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考表3。
         :type conf: list[str]
         :param tags: 作业标签
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         
         
 
         self._sql = None
+        self._engine_type = None
         self._currentdb = None
         self._queue_name = None
         self._conf = None
@@ -59,6 +64,8 @@ class CreateSqlJobRequestBody:
         self.discriminator = None
 
         self.sql = sql
+        if engine_type is not None:
+            self.engine_type = engine_type
         if currentdb is not None:
             self.currentdb = currentdb
         if queue_name is not None:
@@ -89,6 +96,28 @@ class CreateSqlJobRequestBody:
         :type sql: str
         """
         self._sql = sql
+
+    @property
+    def engine_type(self):
+        """Gets the engine_type of this CreateSqlJobRequestBody.
+
+        待提交作业的队列引擎名称，名称只能包含英文字母。
+
+        :return: The engine_type of this CreateSqlJobRequestBody.
+        :rtype: str
+        """
+        return self._engine_type
+
+    @engine_type.setter
+    def engine_type(self, engine_type):
+        """Sets the engine_type of this CreateSqlJobRequestBody.
+
+        待提交作业的队列引擎名称，名称只能包含英文字母。
+
+        :param engine_type: The engine_type of this CreateSqlJobRequestBody.
+        :type engine_type: str
+        """
+        self._engine_type = engine_type
 
     @property
     def currentdb(self):
@@ -163,7 +192,7 @@ class CreateSqlJobRequestBody:
         作业标签
 
         :return: The tags of this CreateSqlJobRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         return self._tags
 
@@ -174,7 +203,7 @@ class CreateSqlJobRequestBody:
         作业标签
 
         :param tags: The tags of this CreateSqlJobRequestBody.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
 

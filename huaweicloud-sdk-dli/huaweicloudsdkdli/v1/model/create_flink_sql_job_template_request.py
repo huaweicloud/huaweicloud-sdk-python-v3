@@ -17,7 +17,7 @@ class CreateFlinkSqlJobTemplateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateFlinkTemplateRequestBody'
+        'body': 'CreateFlinkSqlJobTemplateRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateFlinkSqlJobTemplateRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateFlinkSqlJobTemplateRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobTemplateRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateFlinkSqlJobTemplateRequest:
         """Gets the body of this CreateFlinkSqlJobTemplateRequest.
 
         :return: The body of this CreateFlinkSqlJobTemplateRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobTemplateRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateFlinkSqlJobTemplateRequest:
         """Sets the body of this CreateFlinkSqlJobTemplateRequest.
 
         :param body: The body of this CreateFlinkSqlJobTemplateRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobTemplateRequestBody`
         """
         self._body = body
 

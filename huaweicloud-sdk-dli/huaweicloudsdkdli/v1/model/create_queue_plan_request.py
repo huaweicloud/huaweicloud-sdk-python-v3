@@ -18,7 +18,7 @@ class CreateQueuePlanRequest:
 
     openapi_types = {
         'queue_name': 'str',
-        'body': 'SetQueuePlanReq'
+        'body': 'QueuePlanRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateQueuePlanRequest:
         :param queue_name: 需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
         :type queue_name: str
         :param body: Body of the CreateQueuePlanRequest
-        :type body: :class:`huaweicloudsdkdli.v1.SetQueuePlanReq`
+        :type body: :class:`huaweicloudsdkdli.v1.QueuePlanRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class CreateQueuePlanRequest:
         """Gets the body of this CreateQueuePlanRequest.
 
         :return: The body of this CreateQueuePlanRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.SetQueuePlanReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.QueuePlanRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateQueuePlanRequest:
         """Sets the body of this CreateQueuePlanRequest.
 
         :param body: The body of this CreateQueuePlanRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.SetQueuePlanReq`
+        :type body: :class:`huaweicloudsdkdli.v1.QueuePlanRequestBody`
         """
         self._body = body
 

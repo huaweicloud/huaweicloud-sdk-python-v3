@@ -17,24 +17,24 @@ class GlobalConnectionBandwidthSizeRange:
     sensitive_list = []
 
     openapi_types = {
-        'charge_mode': 'str',
+        'type': 'str',
         'min': 'int',
         'max': 'int'
     }
 
     attribute_map = {
-        'charge_mode': 'charge_mode',
+        'type': 'type',
         'min': 'min',
         'max': 'max'
     }
 
-    def __init__(self, charge_mode=None, min=None, max=None):
+    def __init__(self, type=None, min=None, max=None):
         """GlobalConnectionBandwidthSizeRange
 
         The model defined in huaweicloud sdk
 
-        :param charge_mode: 描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
-        :type charge_mode: str
+        :param type: 描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
+        :type type: str
         :param min: 全域互联带宽最小值，单位Mbit/s。
         :type min: int
         :param max: 全域互联带宽最大值，单位Mbit/s。
@@ -43,39 +43,39 @@ class GlobalConnectionBandwidthSizeRange:
         
         
 
-        self._charge_mode = None
+        self._type = None
         self._min = None
         self._max = None
         self.discriminator = None
 
-        if charge_mode is not None:
-            self.charge_mode = charge_mode
+        if type is not None:
+            self.type = type
         if min is not None:
             self.min = min
         if max is not None:
             self.max = max
 
     @property
-    def charge_mode(self):
-        """Gets the charge_mode of this GlobalConnectionBandwidthSizeRange.
+    def type(self):
+        """Gets the type of this GlobalConnectionBandwidthSizeRange.
 
         描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
 
-        :return: The charge_mode of this GlobalConnectionBandwidthSizeRange.
+        :return: The type of this GlobalConnectionBandwidthSizeRange.
         :rtype: str
         """
-        return self._charge_mode
+        return self._type
 
-    @charge_mode.setter
-    def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this GlobalConnectionBandwidthSizeRange.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this GlobalConnectionBandwidthSizeRange.
 
         描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费
 
-        :param charge_mode: The charge_mode of this GlobalConnectionBandwidthSizeRange.
-        :type charge_mode: str
+        :param type: The type of this GlobalConnectionBandwidthSizeRange.
+        :type type: str
         """
-        self._charge_mode = charge_mode
+        self._type = type
 
     @property
     def min(self):

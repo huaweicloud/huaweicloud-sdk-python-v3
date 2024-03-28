@@ -23,7 +23,7 @@ class ConsumerGroup:
         'name': 'str',
         'group_desc': 'str',
         'retry_max_time': 'int',
-        'created_at': 'str',
+        'created_at': 'int',
         'permissions': 'list[str]',
         'consume_orderly': 'bool'
     }
@@ -58,7 +58,7 @@ class ConsumerGroup:
         :param retry_max_time: 最大重试次数，取值范围为1~16。
         :type retry_max_time: int
         :param created_at: 创建时间戳。
-        :type created_at: str
+        :type created_at: int
         :param permissions: 权限集。
         :type permissions: list[str]
         :param consume_orderly: 是否按序消费。
@@ -236,7 +236,7 @@ class ConsumerGroup:
         创建时间戳。
 
         :return: The created_at of this ConsumerGroup.
-        :rtype: str
+        :rtype: int
         """
         return self._created_at
 
@@ -247,7 +247,7 @@ class ConsumerGroup:
         创建时间戳。
 
         :param created_at: The created_at of this ConsumerGroup.
-        :type created_at: str
+        :type created_at: int
         """
         self._created_at = created_at
 

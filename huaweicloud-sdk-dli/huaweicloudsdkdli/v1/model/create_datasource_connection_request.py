@@ -17,7 +17,7 @@ class CreateDatasourceConnectionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateDatasourceConnectionReq'
+        'body': 'CreateDatasourceConnectionRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateDatasourceConnectionRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateDatasourceConnectionRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateDatasourceConnectionRequest:
         """Gets the body of this CreateDatasourceConnectionRequest.
 
         :return: The body of this CreateDatasourceConnectionRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateDatasourceConnectionRequest:
         """Sets the body of this CreateDatasourceConnectionRequest.
 
         :param body: The body of this CreateDatasourceConnectionRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequestBody`
         """
         self._body = body
 

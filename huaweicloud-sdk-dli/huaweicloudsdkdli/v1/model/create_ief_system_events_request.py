@@ -17,7 +17,7 @@ class CreateIefSystemEventsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'IefSystemEventsReq'
+        'body': 'CreateIefSystemEventsRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateIefSystemEventsRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateIefSystemEventsRequest
-        :type body: :class:`huaweicloudsdkdli.v1.IefSystemEventsReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateIefSystemEventsRequest:
         """Gets the body of this CreateIefSystemEventsRequest.
 
         :return: The body of this CreateIefSystemEventsRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.IefSystemEventsReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateIefSystemEventsRequest:
         """Sets the body of this CreateIefSystemEventsRequest.
 
         :param body: The body of this CreateIefSystemEventsRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.IefSystemEventsReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequestBody`
         """
         self._body = body
 

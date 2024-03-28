@@ -21,7 +21,7 @@ class ListQueueUsersResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'queue_name': 'str',
-        'privileges': 'list[PrivilegesInfo]'
+        'privileges': 'list[QueueUserPrivilege]'
     }
 
     attribute_map = {
@@ -42,8 +42,8 @@ class ListQueueUsersResponse(SdkResponse):
         :type message: str
         :param queue_name: 队列名称。
         :type queue_name: str
-        :param privileges: 有权限使用该队列的用户及其对应的权限数组。 
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.PrivilegesInfo`]
+        :param privileges: 有权限使用该队列的用户及其对应的权限数组。
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.QueueUserPrivilege`]
         """
         
         super(ListQueueUsersResponse, self).__init__()
@@ -133,10 +133,10 @@ class ListQueueUsersResponse(SdkResponse):
     def privileges(self):
         """Gets the privileges of this ListQueueUsersResponse.
 
-        有权限使用该队列的用户及其对应的权限数组。 
+        有权限使用该队列的用户及其对应的权限数组。
 
         :return: The privileges of this ListQueueUsersResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.PrivilegesInfo`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.QueueUserPrivilege`]
         """
         return self._privileges
 
@@ -144,10 +144,10 @@ class ListQueueUsersResponse(SdkResponse):
     def privileges(self, privileges):
         """Sets the privileges of this ListQueueUsersResponse.
 
-        有权限使用该队列的用户及其对应的权限数组。 
+        有权限使用该队列的用户及其对应的权限数组。
 
         :param privileges: The privileges of this ListQueueUsersResponse.
-        :type privileges: list[:class:`huaweicloudsdkdli.v1.PrivilegesInfo`]
+        :type privileges: list[:class:`huaweicloudsdkdli.v1.QueueUserPrivilege`]
         """
         self._privileges = privileges
 

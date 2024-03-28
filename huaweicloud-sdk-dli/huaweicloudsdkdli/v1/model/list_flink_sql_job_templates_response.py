@@ -20,7 +20,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'template_list': 'FlinkTemplateList'
+        'template_list': 'FlinkSqlJobTemplateList'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
         :param message: 消息内容。
         :type message: str
         :param template_list: 
-        :type template_list: :class:`huaweicloudsdkdli.v1.FlinkTemplateList`
+        :type template_list: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateList`
         """
         
         super(ListFlinkSqlJobTemplatesResponse, self).__init__()
@@ -105,7 +105,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
         """Gets the template_list of this ListFlinkSqlJobTemplatesResponse.
 
         :return: The template_list of this ListFlinkSqlJobTemplatesResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.FlinkTemplateList`
+        :rtype: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateList`
         """
         return self._template_list
 
@@ -114,7 +114,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
         """Sets the template_list of this ListFlinkSqlJobTemplatesResponse.
 
         :param template_list: The template_list of this ListFlinkSqlJobTemplatesResponse.
-        :type template_list: :class:`huaweicloudsdkdli.v1.FlinkTemplateList`
+        :type template_list: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateList`
         """
         self._template_list = template_list
 

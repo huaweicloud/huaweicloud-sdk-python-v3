@@ -23,6 +23,7 @@ class ApiPolicyFunctionCreate:
         'version': 'str',
         'alias_urn': 'str',
         'timeout': 'int',
+        'req_protocol': 'str',
         'effect_mode': 'str',
         'name': 'str',
         'backend_params': 'list[BackendParamBase]',
@@ -37,6 +38,7 @@ class ApiPolicyFunctionCreate:
         'version': 'version',
         'alias_urn': 'alias_urn',
         'timeout': 'timeout',
+        'req_protocol': 'req_protocol',
         'effect_mode': 'effect_mode',
         'name': 'name',
         'backend_params': 'backend_params',
@@ -44,7 +46,7 @@ class ApiPolicyFunctionCreate:
         'authorizer_id': 'authorizer_id'
     }
 
-    def __init__(self, function_urn=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
+    def __init__(self, function_urn=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, req_protocol=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
         """ApiPolicyFunctionCreate
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ApiPolicyFunctionCreate:
         :type alias_urn: str
         :param timeout: API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
+        :param req_protocol: 函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+        :type req_protocol: str
         :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
         :type effect_mode: str
         :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
@@ -81,6 +85,7 @@ class ApiPolicyFunctionCreate:
         self._version = None
         self._alias_urn = None
         self._timeout = None
+        self._req_protocol = None
         self._effect_mode = None
         self._name = None
         self._backend_params = None
@@ -97,6 +102,8 @@ class ApiPolicyFunctionCreate:
             self.alias_urn = alias_urn
         if timeout is not None:
             self.timeout = timeout
+        if req_protocol is not None:
+            self.req_protocol = req_protocol
         self.effect_mode = effect_mode
         self.name = name
         if backend_params is not None:
@@ -236,6 +243,28 @@ class ApiPolicyFunctionCreate:
         :type timeout: int
         """
         self._timeout = timeout
+
+    @property
+    def req_protocol(self):
+        """Gets the req_protocol of this ApiPolicyFunctionCreate.
+
+        函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+
+        :return: The req_protocol of this ApiPolicyFunctionCreate.
+        :rtype: str
+        """
+        return self._req_protocol
+
+    @req_protocol.setter
+    def req_protocol(self, req_protocol):
+        """Sets the req_protocol of this ApiPolicyFunctionCreate.
+
+        函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
+
+        :param req_protocol: The req_protocol of this ApiPolicyFunctionCreate.
+        :type req_protocol: str
+        """
+        self._req_protocol = req_protocol
 
     @property
     def effect_mode(self):

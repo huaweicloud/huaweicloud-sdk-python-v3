@@ -17,7 +17,7 @@ class CreateGlobalVariableRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateGlobalValueReq'
+        'body': 'CreateGlobalVariableRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateGlobalVariableRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateGlobalVariableRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateGlobalValueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateGlobalVariableRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class CreateGlobalVariableRequest:
         """Gets the body of this CreateGlobalVariableRequest.
 
         :return: The body of this CreateGlobalVariableRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateGlobalValueReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateGlobalVariableRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateGlobalVariableRequest:
         """Sets the body of this CreateGlobalVariableRequest.
 
         :param body: The body of this CreateGlobalVariableRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateGlobalValueReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateGlobalVariableRequestBody`
         """
         self._body = body
 

@@ -17,7 +17,7 @@ class RunIefJobActionCallBackRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'IefFlinkJobMessagesReq'
+        'body': 'RunIefJobActionCallBackRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class RunIefJobActionCallBackRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the RunIefJobActionCallBackRequest
-        :type body: :class:`huaweicloudsdkdli.v1.IefFlinkJobMessagesReq`
+        :type body: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class RunIefJobActionCallBackRequest:
         """Gets the body of this RunIefJobActionCallBackRequest.
 
         :return: The body of this RunIefJobActionCallBackRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.IefFlinkJobMessagesReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class RunIefJobActionCallBackRequest:
         """Sets the body of this RunIefJobActionCallBackRequest.
 
         :param body: The body of this RunIefJobActionCallBackRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.IefFlinkJobMessagesReq`
+        :type body: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequestBody`
         """
         self._body = body
 

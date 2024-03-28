@@ -16,8 +16,14 @@ class LakeFormationRegion:
                         "https://lakeformation.cn-south-1.myhuaweicloud.com")
     CN_NORTH_11 = Region("cn-north-11",
                         "https://lakeformation.cn-north-11.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://lakeformation.cn-southwest-2.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://lakeformation.ap-southeast-4.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://lakeformation.la-north-2.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://lakeformation.af-south-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -25,7 +31,10 @@ class LakeFormationRegion:
         "cn-east-3": CN_EAST_3,
         "cn-south-1": CN_SOUTH_1,
         "cn-north-11": CN_NORTH_11,
+        "cn-southwest-2": CN_SOUTHWEST_2,
+        "ap-southeast-4": AP_SOUTHEAST_4,
         "la-north-2": LA_NORTH_2,
+        "af-south-1": AF_SOUTH_1,
     }
 
     @classmethod

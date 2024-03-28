@@ -30,7 +30,7 @@ class FlinkJobDetail:
         'project_id': 'str',
         'sql_body': 'str',
         'run_mode': 'str',
-        'job_config': 'FlinkJobConfig',
+        'job_config': 'FlinkJobConfigDetail',
         'main_class': 'str',
         'entrypoint_args': 'str',
         'execution_graph': 'str',
@@ -92,7 +92,7 @@ class FlinkJobDetail:
         :param run_mode: 作业运行模式： shared_cluster：共享。 exclusive_cluster：独享。 edge_node：边缘节点。
         :type run_mode: str
         :param job_config: 
-        :type job_config: :class:`huaweicloudsdkdli.v1.FlinkJobConfig`
+        :type job_config: :class:`huaweicloudsdkdli.v1.FlinkJobConfigDetail`
         :param main_class: jar包主类。
         :type main_class: str
         :param entrypoint_args: jar包作业运行参数，多个参数之间空格分隔。
@@ -456,7 +456,7 @@ class FlinkJobDetail:
         """Gets the job_config of this FlinkJobDetail.
 
         :return: The job_config of this FlinkJobDetail.
-        :rtype: :class:`huaweicloudsdkdli.v1.FlinkJobConfig`
+        :rtype: :class:`huaweicloudsdkdli.v1.FlinkJobConfigDetail`
         """
         return self._job_config
 
@@ -465,7 +465,7 @@ class FlinkJobDetail:
         """Sets the job_config of this FlinkJobDetail.
 
         :param job_config: The job_config of this FlinkJobDetail.
-        :type job_config: :class:`huaweicloudsdkdli.v1.FlinkJobConfig`
+        :type job_config: :class:`huaweicloudsdkdli.v1.FlinkJobConfigDetail`
         """
         self._job_config = job_config
 

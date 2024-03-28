@@ -40,7 +40,7 @@ class CreateFlinkSqlJobRequestBody:
         'manager_cu_number': 'int',
         'tm_cus': 'int',
         'tm_slot_num': 'int',
-        'tags': 'list[TmsTagEntity]',
+        'tags': 'list[Tag]',
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
         'runtime_config': 'str',
@@ -115,7 +115,7 @@ class CreateFlinkSqlJobRequestBody:
         :type restart_when_exception: bool
         :param idle_state_retention: 空闲状态过期周期，单位为秒，默认值为3600。
         :type idle_state_retention: int
-        :param job_type: 作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。 
+        :param job_type: 作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。
         :type job_type: str
         :param edge_group_ids: 边缘计算组ID列表。
         :type edge_group_ids: list[str]
@@ -130,7 +130,7 @@ class CreateFlinkSqlJobRequestBody:
         :param tm_slot_num: 每个taskmanager的slot数，默认值为“(parallel_number*tm_cus)/(cu_number-manager_cu_number)”
         :type tm_slot_num: int
         :param tags: 标签
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         :param resume_checkpoint: 异常重启是否从checkpoint恢复。
         :type resume_checkpoint: bool
         :param resume_max_num: 异常重试最大次数，单位：次/小时。取值范围：-1或大于0。默认值为“-1”，表示无限次数。
@@ -585,7 +585,7 @@ class CreateFlinkSqlJobRequestBody:
     def job_type(self):
         """Gets the job_type of this CreateFlinkSqlJobRequestBody.
 
-        作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。 
+        作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。
 
         :return: The job_type of this CreateFlinkSqlJobRequestBody.
         :rtype: str
@@ -596,7 +596,7 @@ class CreateFlinkSqlJobRequestBody:
     def job_type(self, job_type):
         """Sets the job_type of this CreateFlinkSqlJobRequestBody.
 
-        作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。 
+        作业类型：flink_sql_job和flink_sql_edge_job。 run_mode为edge_node时，作业类型须为flink_sql_edge_job。 run_mode为shared_cluster跟exclusive_cluster时，作业类型须为flink_sql_job。 默认值：flink_sql_job。
 
         :param job_type: The job_type of this CreateFlinkSqlJobRequestBody.
         :type job_type: str
@@ -742,7 +742,7 @@ class CreateFlinkSqlJobRequestBody:
         标签
 
         :return: The tags of this CreateFlinkSqlJobRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         return self._tags
 
@@ -753,7 +753,7 @@ class CreateFlinkSqlJobRequestBody:
         标签
 
         :param tags: The tags of this CreateFlinkSqlJobRequestBody.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
 

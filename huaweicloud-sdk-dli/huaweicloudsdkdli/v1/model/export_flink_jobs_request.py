@@ -17,7 +17,7 @@ class ExportFlinkJobsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ExportFlinkJobRequestBody'
+        'body': 'ExportFlinkJobsRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class ExportFlinkJobsRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the ExportFlinkJobsRequest
-        :type body: :class:`huaweicloudsdkdli.v1.ExportFlinkJobRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.ExportFlinkJobsRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class ExportFlinkJobsRequest:
         """Gets the body of this ExportFlinkJobsRequest.
 
         :return: The body of this ExportFlinkJobsRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.ExportFlinkJobRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.ExportFlinkJobsRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class ExportFlinkJobsRequest:
         """Sets the body of this ExportFlinkJobsRequest.
 
         :param body: The body of this ExportFlinkJobsRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.ExportFlinkJobRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.ExportFlinkJobsRequestBody`
         """
         self._body = body
 

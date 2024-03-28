@@ -24,7 +24,7 @@ class CreateElasticResourcePoolRequestBody:
         'charging_mode': 'int',
         'min_cu': 'int',
         'enterprise_project_id': 'str',
-        'tags': 'list[TmsTag]'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
@@ -58,7 +58,7 @@ class CreateElasticResourcePoolRequestBody:
         :param enterprise_project_id: 企业ID，不填默认为“0”
         :type enterprise_project_id: str
         :param tags: 标签
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTag`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         
         
@@ -248,7 +248,7 @@ class CreateElasticResourcePoolRequestBody:
         标签
 
         :return: The tags of this CreateElasticResourcePoolRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTag`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         return self._tags
 
@@ -259,7 +259,7 @@ class CreateElasticResourcePoolRequestBody:
         标签
 
         :param tags: The tags of this CreateElasticResourcePoolRequestBody.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTag`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
 

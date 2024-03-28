@@ -20,7 +20,7 @@ class ListQueuePropertiesResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'properties': 'list[ListQueuePropertyRespProperties]'
+        'properties': 'list[ModelProperty]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListQueuePropertiesResponse(SdkResponse):
         :param message: 
         :type message: str
         :param properties: 
-        :type properties: list[:class:`huaweicloudsdkdli.v1.ListQueuePropertyRespProperties`]
+        :type properties: list[:class:`huaweicloudsdkdli.v1.ModelProperty`]
         """
         
         super(ListQueuePropertiesResponse, self).__init__()
@@ -97,7 +97,7 @@ class ListQueuePropertiesResponse(SdkResponse):
         """Gets the properties of this ListQueuePropertiesResponse.
 
         :return: The properties of this ListQueuePropertiesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ListQueuePropertyRespProperties`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.ModelProperty`]
         """
         return self._properties
 
@@ -106,7 +106,7 @@ class ListQueuePropertiesResponse(SdkResponse):
         """Sets the properties of this ListQueuePropertiesResponse.
 
         :param properties: The properties of this ListQueuePropertiesResponse.
-        :type properties: list[:class:`huaweicloudsdkdli.v1.ListQueuePropertyRespProperties`]
+        :type properties: list[:class:`huaweicloudsdkdli.v1.ModelProperty`]
         """
         self._properties = properties
 

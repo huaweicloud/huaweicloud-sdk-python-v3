@@ -29,7 +29,7 @@ class ManagerDto:
 
         The model defined in huaweicloud sdk
 
-        :param value: 
+        :param value: 经理
         :type value: str
         """
         
@@ -45,6 +45,8 @@ class ManagerDto:
     def value(self):
         """Gets the value of this ManagerDto.
 
+        经理
+
         :return: The value of this ManagerDto.
         :rtype: str
         """
@@ -53,6 +55,8 @@ class ManagerDto:
     @value.setter
     def value(self, value):
         """Sets the value of this ManagerDto.
+
+        经理
 
         :param value: The value of this ManagerDto.
         :type value: str

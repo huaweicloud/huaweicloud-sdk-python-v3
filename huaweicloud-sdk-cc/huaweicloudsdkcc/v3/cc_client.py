@@ -1784,6 +1784,75 @@ class CcClient(Client):
 
         return http_info
 
+    def list_central_networks_by_tags(self, request):
+        """通过标签过滤中心网络实例
+
+        通过标签过滤中心网络实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCentralNetworksByTags
+        :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworksByTagsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworksByTagsResponse`
+        """
+        http_info = self._list_central_networks_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_central_networks_by_tags_invoker(self, request):
+        http_info = self._list_central_networks_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_central_networks_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworksByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_central_network(self, request):
         """查询中心网络详情
 
@@ -2050,6 +2119,73 @@ class CcClient(Client):
 
         return http_info
 
+    def create_central_network_er_route_table_attachment(self, request):
+        """创建中心网络ER路由表附件
+
+        创建中心网络的路由表附件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCentralNetworkErRouteTableAttachment
+        :type request: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkErRouteTableAttachmentRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkErRouteTableAttachmentResponse`
+        """
+        http_info = self._create_central_network_er_route_table_attachment_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_central_network_er_route_table_attachment_invoker(self, request):
+        http_info = self._create_central_network_er_route_table_attachment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_central_network_er_route_table_attachment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/er-route-table-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCentralNetworkErRouteTableAttachmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'central_network_id' in local_var_params:
+            path_params['central_network_id'] = local_var_params['central_network_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_central_network_gdgw_attachment(self, request):
         """创建中心网络GDGW附件
 
@@ -2272,6 +2408,92 @@ class CcClient(Client):
 
         return http_info
 
+    def list_central_network_er_route_table_attachments(self, request):
+        """查询中心网络ER路由表附件列表
+
+        查询中心网络ER路由表附件列表。
+        分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCentralNetworkErRouteTableAttachments
+        :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkErRouteTableAttachmentsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkErRouteTableAttachmentsResponse`
+        """
+        http_info = self._list_central_network_er_route_table_attachments_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_central_network_er_route_table_attachments_invoker(self, request):
+        http_info = self._list_central_network_er_route_table_attachments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_central_network_er_route_table_attachments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/er-route-table-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkErRouteTableAttachmentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'central_network_id' in local_var_params:
+            path_params['central_network_id'] = local_var_params['central_network_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+            collection_formats['state'] = 'csv'
+        if 'attachment_instance_id' in local_var_params:
+            query_params.append(('attachment_instance_id', local_var_params['attachment_instance_id']))
+            collection_formats['attachment_instance_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_central_network_gdgw_attachments(self, request):
         """查询中心网络GDGW附件列表
 
@@ -2358,6 +2580,73 @@ class CcClient(Client):
 
         return http_info
 
+    def show_central_network_er_route_table_attachment(self, request):
+        """查询中心网络ER路由表附件详情
+
+        查询中心网络ER路由表附件详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCentralNetworkErRouteTableAttachment
+        :type request: :class:`huaweicloudsdkcc.v3.ShowCentralNetworkErRouteTableAttachmentRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowCentralNetworkErRouteTableAttachmentResponse`
+        """
+        http_info = self._show_central_network_er_route_table_attachment_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_central_network_er_route_table_attachment_invoker(self, request):
+        http_info = self._show_central_network_er_route_table_attachment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_central_network_er_route_table_attachment_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/er-route-table-attachments/{er_route_table_attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCentralNetworkErRouteTableAttachmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'central_network_id' in local_var_params:
+            path_params['central_network_id'] = local_var_params['central_network_id']
+        if 'er_route_table_attachment_id' in local_var_params:
+            path_params['er_route_table_attachment_id'] = local_var_params['er_route_table_attachment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_central_network_gdgw_attachment(self, request):
         """查询中心网络GDGW附件详情
 
@@ -2404,6 +2693,75 @@ class CcClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_central_network_er_route_table_attachment(self, request):
+        """更新中心网络ER路由表附件
+
+        更新中心网络ER路由表附件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateCentralNetworkErRouteTableAttachment
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkErRouteTableAttachmentRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkErRouteTableAttachmentResponse`
+        """
+        http_info = self._update_central_network_er_route_table_attachment_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_central_network_er_route_table_attachment_invoker(self, request):
+        http_info = self._update_central_network_er_route_table_attachment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_central_network_er_route_table_attachment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/er-route-table-attachments/{er_route_table_attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCentralNetworkErRouteTableAttachmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'central_network_id' in local_var_params:
+            path_params['central_network_id'] = local_var_params['central_network_id']
+        if 'er_route_table_attachment_id' in local_var_params:
+            path_params['er_route_table_attachment_id'] = local_var_params['er_route_table_attachment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

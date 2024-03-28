@@ -20,7 +20,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'job': 'CreateJobRespJob'
+        'job': 'FlinkJob'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
         :param message: 消息内容
         :type message: str
         :param job: 
-        :type job: :class:`huaweicloudsdkdli.v1.CreateJobRespJob`
+        :type job: :class:`huaweicloudsdkdli.v1.FlinkJob`
         """
         
         super(CreateFlinkSqlJobResponse, self).__init__()
@@ -105,7 +105,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
         """Gets the job of this CreateFlinkSqlJobResponse.
 
         :return: The job of this CreateFlinkSqlJobResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateJobRespJob`
+        :rtype: :class:`huaweicloudsdkdli.v1.FlinkJob`
         """
         return self._job
 
@@ -114,7 +114,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
         """Sets the job of this CreateFlinkSqlJobResponse.
 
         :param job: The job of this CreateFlinkSqlJobResponse.
-        :type job: :class:`huaweicloudsdkdli.v1.CreateJobRespJob`
+        :type job: :class:`huaweicloudsdkdli.v1.FlinkJob`
         """
         self._job = job
 

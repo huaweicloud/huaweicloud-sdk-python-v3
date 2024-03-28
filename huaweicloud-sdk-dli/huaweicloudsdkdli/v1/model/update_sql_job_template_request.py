@@ -18,7 +18,7 @@ class UpdateSqlJobTemplateRequest:
 
     openapi_types = {
         'sql_id': 'str',
-        'body': 'UpdateSqlTemplatesRequestBody'
+        'body': 'UpdateSqlJobTemplateRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateSqlJobTemplateRequest:
         :param sql_id: 
         :type sql_id: str
         :param body: Body of the UpdateSqlJobTemplateRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateSqlTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateRequestBody`
         """
         
         
@@ -70,7 +70,7 @@ class UpdateSqlJobTemplateRequest:
         """Gets the body of this UpdateSqlJobTemplateRequest.
 
         :return: The body of this UpdateSqlJobTemplateRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateSqlTemplatesRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateRequestBody`
         """
         return self._body
 
@@ -79,7 +79,7 @@ class UpdateSqlJobTemplateRequest:
         """Sets the body of this UpdateSqlJobTemplateRequest.
 
         :param body: The body of this UpdateSqlJobTemplateRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateSqlTemplatesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateRequestBody`
         """
         self._body = body
 

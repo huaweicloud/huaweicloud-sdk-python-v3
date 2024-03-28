@@ -20,7 +20,7 @@ class ListGlobalVariablesResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'global_vars': 'list[ListGlobalValue]',
+        'global_vars': 'list[GlobalVariable]',
         'count': 'int'
     }
 
@@ -41,7 +41,7 @@ class ListGlobalVariablesResponse(SdkResponse):
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         :param global_vars: 全局变量
-        :type global_vars: list[:class:`huaweicloudsdkdli.v1.ListGlobalValue`]
+        :type global_vars: list[:class:`huaweicloudsdkdli.v1.GlobalVariable`]
         :param count: 全局变量总数
         :type count: int
         """
@@ -114,7 +114,7 @@ class ListGlobalVariablesResponse(SdkResponse):
         全局变量
 
         :return: The global_vars of this ListGlobalVariablesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ListGlobalValue`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.GlobalVariable`]
         """
         return self._global_vars
 
@@ -125,7 +125,7 @@ class ListGlobalVariablesResponse(SdkResponse):
         全局变量
 
         :param global_vars: The global_vars of this ListGlobalVariablesResponse.
-        :type global_vars: list[:class:`huaweicloudsdkdli.v1.ListGlobalValue`]
+        :type global_vars: list[:class:`huaweicloudsdkdli.v1.GlobalVariable`]
         """
         self._global_vars = global_vars
 

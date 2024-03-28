@@ -20,6 +20,8 @@ class RunTextTranslationResponse(SdkResponse):
     openapi_types = {
         'src_text': 'str',
         'translated_text': 'str',
+        '_from': 'str',
+        'to': 'str',
         'error_code': 'str',
         'error_msg': 'str'
     }
@@ -27,11 +29,13 @@ class RunTextTranslationResponse(SdkResponse):
     attribute_map = {
         'src_text': 'src_text',
         'translated_text': 'translated_text',
+        '_from': 'from',
+        'to': 'to',
         'error_code': 'error_code',
         'error_msg': 'error_msg'
     }
 
-    def __init__(self, src_text=None, translated_text=None, error_code=None, error_msg=None):
+    def __init__(self, src_text=None, translated_text=None, _from=None, to=None, error_code=None, error_msg=None):
         """RunTextTranslationResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +44,10 @@ class RunTextTranslationResponse(SdkResponse):
         :type src_text: str
         :param translated_text: 翻译译文，编码格式为UTF-8。调用失败时无此字段。
         :type translated_text: str
+        :param _from: 调用成功时表示源语种（源语种输入为auto时，显示语种识别结果），编码格式为UTF-8。调用失败时无此字段。
+        :type _from: str
+        :param to: 调用成功时表示目标语种，编码格式为UTF-8。调用失败时无此字段。
+        :type to: str
         :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
         :type error_code: str
         :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
@@ -50,6 +58,8 @@ class RunTextTranslationResponse(SdkResponse):
 
         self._src_text = None
         self._translated_text = None
+        self.__from = None
+        self._to = None
         self._error_code = None
         self._error_msg = None
         self.discriminator = None
@@ -58,6 +68,10 @@ class RunTextTranslationResponse(SdkResponse):
             self.src_text = src_text
         if translated_text is not None:
             self.translated_text = translated_text
+        if _from is not None:
+            self._from = _from
+        if to is not None:
+            self.to = to
         if error_code is not None:
             self.error_code = error_code
         if error_msg is not None:
@@ -106,6 +120,50 @@ class RunTextTranslationResponse(SdkResponse):
         :type translated_text: str
         """
         self._translated_text = translated_text
+
+    @property
+    def _from(self):
+        """Gets the _from of this RunTextTranslationResponse.
+
+        调用成功时表示源语种（源语种输入为auto时，显示语种识别结果），编码格式为UTF-8。调用失败时无此字段。
+
+        :return: The _from of this RunTextTranslationResponse.
+        :rtype: str
+        """
+        return self.__from
+
+    @_from.setter
+    def _from(self, _from):
+        """Sets the _from of this RunTextTranslationResponse.
+
+        调用成功时表示源语种（源语种输入为auto时，显示语种识别结果），编码格式为UTF-8。调用失败时无此字段。
+
+        :param _from: The _from of this RunTextTranslationResponse.
+        :type _from: str
+        """
+        self.__from = _from
+
+    @property
+    def to(self):
+        """Gets the to of this RunTextTranslationResponse.
+
+        调用成功时表示目标语种，编码格式为UTF-8。调用失败时无此字段。
+
+        :return: The to of this RunTextTranslationResponse.
+        :rtype: str
+        """
+        return self._to
+
+    @to.setter
+    def to(self, to):
+        """Sets the to of this RunTextTranslationResponse.
+
+        调用成功时表示目标语种，编码格式为UTF-8。调用失败时无此字段。
+
+        :param to: The to of this RunTextTranslationResponse.
+        :type to: str
+        """
+        self._to = to
 
     @property
     def error_code(self):
