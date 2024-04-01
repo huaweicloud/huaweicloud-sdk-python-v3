@@ -53,7 +53,7 @@ class ListSessionsRequest:
         :type type: str
         :param namespace: 命名空间。取空值表示查询所有命名空间。也可根据当前业务进行指定。
         :type namespace: str
-        :param cost_time: 运行时间，单位为 ms。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
+        :param cost_time: 运行时间，单位为 us。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
         :type cost_time: int
         """
         
@@ -218,7 +218,7 @@ class ListSessionsRequest:
     def cost_time(self):
         """Gets the cost_time of this ListSessionsRequest.
 
-        运行时间，单位为 ms。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
+        运行时间，单位为 us。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
 
         :return: The cost_time of this ListSessionsRequest.
         :rtype: int
@@ -229,7 +229,7 @@ class ListSessionsRequest:
     def cost_time(self, cost_time):
         """Sets the cost_time of this ListSessionsRequest.
 
-        运行时间，单位为 ms。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
+        运行时间，单位为 us。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
 
         :param cost_time: The cost_time of this ListSessionsRequest.
         :type cost_time: int

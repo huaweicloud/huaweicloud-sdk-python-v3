@@ -21,7 +21,9 @@ class ShowPlanListRequest:
         'offset': 'int',
         'limit': 'int',
         'name': 'str',
-        'current_stage': 'str'
+        'current_stage': 'str',
+        'branch_uri': 'str',
+        'query_all_version': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ShowPlanListRequest:
         'offset': 'offset',
         'limit': 'limit',
         'name': 'name',
-        'current_stage': 'current_stage'
+        'current_stage': 'current_stage',
+        'branch_uri': 'branch_uri',
+        'query_all_version': 'query_all_version'
     }
 
-    def __init__(self, project_id=None, offset=None, limit=None, name=None, current_stage=None):
+    def __init__(self, project_id=None, offset=None, limit=None, name=None, current_stage=None, branch_uri=None, query_all_version=None):
         """ShowPlanListRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ShowPlanListRequest:
         :type name: str
         :param current_stage: 测试计划所处阶段（create,design,execute,report）
         :type current_stage: str
+        :param branch_uri: 分支Uri，默认master
+        :type branch_uri: str
+        :param query_all_version: 是否查询所有版本下测试计划，默认为false。若值为true, 查询所有版本下测试计划; 若为false, 查询branch_uri指定分支下的测试计划, branch_uri为空时默认为master
+        :type query_all_version: bool
         """
         
         
@@ -56,6 +64,8 @@ class ShowPlanListRequest:
         self._limit = None
         self._name = None
         self._current_stage = None
+        self._branch_uri = None
+        self._query_all_version = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -65,6 +75,10 @@ class ShowPlanListRequest:
             self.name = name
         if current_stage is not None:
             self.current_stage = current_stage
+        if branch_uri is not None:
+            self.branch_uri = branch_uri
+        if query_all_version is not None:
+            self.query_all_version = query_all_version
 
     @property
     def project_id(self):
@@ -175,6 +189,50 @@ class ShowPlanListRequest:
         :type current_stage: str
         """
         self._current_stage = current_stage
+
+    @property
+    def branch_uri(self):
+        """Gets the branch_uri of this ShowPlanListRequest.
+
+        分支Uri，默认master
+
+        :return: The branch_uri of this ShowPlanListRequest.
+        :rtype: str
+        """
+        return self._branch_uri
+
+    @branch_uri.setter
+    def branch_uri(self, branch_uri):
+        """Sets the branch_uri of this ShowPlanListRequest.
+
+        分支Uri，默认master
+
+        :param branch_uri: The branch_uri of this ShowPlanListRequest.
+        :type branch_uri: str
+        """
+        self._branch_uri = branch_uri
+
+    @property
+    def query_all_version(self):
+        """Gets the query_all_version of this ShowPlanListRequest.
+
+        是否查询所有版本下测试计划，默认为false。若值为true, 查询所有版本下测试计划; 若为false, 查询branch_uri指定分支下的测试计划, branch_uri为空时默认为master
+
+        :return: The query_all_version of this ShowPlanListRequest.
+        :rtype: bool
+        """
+        return self._query_all_version
+
+    @query_all_version.setter
+    def query_all_version(self, query_all_version):
+        """Sets the query_all_version of this ShowPlanListRequest.
+
+        是否查询所有版本下测试计划，默认为false。若值为true, 查询所有版本下测试计划; 若为false, 查询branch_uri指定分支下的测试计划, branch_uri为空时默认为master
+
+        :param query_all_version: The query_all_version of this ShowPlanListRequest.
+        :type query_all_version: bool
+        """
+        self._query_all_version = query_all_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -969,6 +969,10 @@ class CloudtestAsyncClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'current_stage' in local_var_params:
             query_params.append(('current_stage', local_var_params['current_stage']))
+        if 'branch_uri' in local_var_params:
+            query_params.append(('branch_uri', local_var_params['branch_uri']))
+        if 'query_all_version' in local_var_params:
+            query_params.append(('query_all_version', local_var_params['query_all_version']))
 
         header_params = {}
 

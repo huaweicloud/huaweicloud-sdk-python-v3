@@ -55,7 +55,7 @@ class QuerySessionResponse:
         :type operation: str
         :param type: 操作类型。
         :type type: str
-        :param cost_time: 运行时间，单位为 ms。
+        :param cost_time: 运行时间，单位为 us。
         :type cost_time: str
         :param plan_summary: 执行计划描述。
         :type plan_summary: str
@@ -186,7 +186,7 @@ class QuerySessionResponse:
     def cost_time(self):
         """Gets the cost_time of this QuerySessionResponse.
 
-        运行时间，单位为 ms。
+        运行时间，单位为 us。
 
         :return: The cost_time of this QuerySessionResponse.
         :rtype: str
@@ -197,7 +197,7 @@ class QuerySessionResponse:
     def cost_time(self, cost_time):
         """Sets the cost_time of this QuerySessionResponse.
 
-        运行时间，单位为 ms。
+        运行时间，单位为 us。
 
         :param cost_time: The cost_time of this QuerySessionResponse.
         :type cost_time: str

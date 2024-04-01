@@ -177,6 +177,8 @@ from huaweicloudsdkecs.v2.model.nova_list_server_security_groups_request import 
 from huaweicloudsdkecs.v2.model.nova_list_server_security_groups_response import NovaListServerSecurityGroupsResponse
 from huaweicloudsdkecs.v2.model.nova_list_servers_details_request import NovaListServersDetailsRequest
 from huaweicloudsdkecs.v2.model.nova_list_servers_details_response import NovaListServersDetailsResponse
+from huaweicloudsdkecs.v2.model.nova_list_versions_request import NovaListVersionsRequest
+from huaweicloudsdkecs.v2.model.nova_list_versions_response import NovaListVersionsResponse
 from huaweicloudsdkecs.v2.model.nova_network import NovaNetwork
 from huaweicloudsdkecs.v2.model.nova_remove_security_group_option import NovaRemoveSecurityGroupOption
 from huaweicloudsdkecs.v2.model.nova_security_group import NovaSecurityGroup
@@ -200,7 +202,12 @@ from huaweicloudsdkecs.v2.model.nova_show_server_interface_request import NovaSh
 from huaweicloudsdkecs.v2.model.nova_show_server_interface_response import NovaShowServerInterfaceResponse
 from huaweicloudsdkecs.v2.model.nova_show_server_request import NovaShowServerRequest
 from huaweicloudsdkecs.v2.model.nova_show_server_response import NovaShowServerResponse
+from huaweicloudsdkecs.v2.model.nova_show_version_request import NovaShowVersionRequest
+from huaweicloudsdkecs.v2.model.nova_show_version_response import NovaShowVersionResponse
 from huaweicloudsdkecs.v2.model.nova_simple_keypair import NovaSimpleKeypair
+from huaweicloudsdkecs.v2.model.nova_version import NovaVersion
+from huaweicloudsdkecs.v2.model.nova_version_detail import NovaVersionDetail
+from huaweicloudsdkecs.v2.model.nova_version_media_type import NovaVersionMediaType
 from huaweicloudsdkecs.v2.model.page_link import PageLink
 from huaweicloudsdkecs.v2.model.post_paid_server import PostPaidServer
 from huaweicloudsdkecs.v2.model.post_paid_server_data_volume import PostPaidServerDataVolume

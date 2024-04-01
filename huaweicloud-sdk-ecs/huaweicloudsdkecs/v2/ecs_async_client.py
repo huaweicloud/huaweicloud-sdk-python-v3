@@ -4848,6 +4848,143 @@ class EcsAsyncClient(Client):
 
         return http_info
 
+    def nova_list_versions_async(self, request):
+        """查询API版本信息列表
+
+        返回Nova当前所有可用的版本。
+        
+        为了支持功能不断扩展，Nova API支持版本号区分。Nova中有两种形式的版本号：
+        
+        - \&quot;主版本号\&quot;: 具有独立的url。
+        - \&quot;微版本号\&quot;: 通过Http请求头X-OpenStack-Nova-API-Version来使用，从2.27版本后更改为OpenStack-API-Version。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NovaListVersions
+        :type request: :class:`huaweicloudsdkecs.v2.NovaListVersionsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaListVersionsResponse`
+        """
+        http_info = self._nova_list_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def nova_list_versions_async_invoker(self, request):
+        http_info = self._nova_list_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _nova_list_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaListVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def nova_show_version_async(self, request):
+        """查询指定API版本信息
+
+        返回指定版本的信息。
+        为了支持功能不断扩展，Nova API支持版本号区分。Nova中有两种形式的版本号：
+        
+        - \&quot;主版本号\&quot;: 具有独立的url。
+        - \&quot;微版本号\&quot;: 通过Http请求头X-OpenStack-Nova-API-Version来使用，从2.27版本后更改为OpenStack-API-Version。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NovaShowVersion
+        :type request: :class:`huaweicloudsdkecs.v2.NovaShowVersionRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaShowVersionResponse`
+        """
+        http_info = self._nova_show_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def nova_show_version_async_invoker(self, request):
+        http_info = self._nova_show_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _nova_show_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{api_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaShowVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'api_version' in local_var_params:
+            path_params['api_version'] = local_var_params['api_version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_job_async(self, request):
         """查询任务的执行状态
 

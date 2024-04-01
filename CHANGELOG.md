@@ -1,3 +1,51 @@
+# 3.1.89 2024-04-01
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBareMetalServers**
+    - changes of response param
+      - `- servers.image.name`
+      - `- servers.image.__os_type`
+      - `- servers.image.links`
+  - **ListBareMetalServerDetails**
+    - changes of response param
+      - `- server.image.name`
+      - `- server.image.__os_type`
+      - `- server.image.links`
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPlanList**
+    - changes of request param
+      - `+ branch_uri`
+      - `+ query_all_version`
+
+### HuaweiCloud SDK KPS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateKeypair**
+    - changes of request param
+      - `+ keypair.key_protection.encryption.kms_key_id`
+  - **ImportPrivateKey**
+    - changes of request param
+      - `+ keypair.key_protection.encryption.kms_key_id`
+    - changes of response param
+      - `+ keypair.key_protection.encryption.kms_key_id`
+
 # 3.1.88 2024-03-28
 
 ### HuaweiCloud SDK APIG

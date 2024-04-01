@@ -17,50 +17,29 @@ class ImageInfo:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str',
-        'os_type': 'str',
-        'links': 'list[Links]'
+        'id': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name',
-        'os_type': '__os_type',
-        'links': 'links'
+        'id': 'id'
     }
 
-    def __init__(self, id=None, name=None, os_type=None, links=None):
+    def __init__(self, id=None):
         """ImageInfo
 
         The model defined in huaweicloud sdk
 
         :param id: 镜像ID，格式为UUID。
         :type id: str
-        :param name: 镜像的名称
-        :type name: str
-        :param os_type: 镜像的类型。取值为：Linux（包括SUSE/RedHat/CentOS/Oracle Linux/EulerOS/Ubuntu操作系统）Windows（Windows操作系统）Other（ESXi操作系统）
-        :type os_type: str
-        :param links: 镜像相关快捷链接地址。
-        :type links: list[:class:`huaweicloudsdkbms.v1.Links`]
         """
         
         
 
         self._id = None
-        self._name = None
-        self._os_type = None
-        self._links = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        if name is not None:
-            self.name = name
-        if os_type is not None:
-            self.os_type = os_type
-        if links is not None:
-            self.links = links
 
     @property
     def id(self):
@@ -83,72 +62,6 @@ class ImageInfo:
         :type id: str
         """
         self._id = id
-
-    @property
-    def name(self):
-        """Gets the name of this ImageInfo.
-
-        镜像的名称
-
-        :return: The name of this ImageInfo.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ImageInfo.
-
-        镜像的名称
-
-        :param name: The name of this ImageInfo.
-        :type name: str
-        """
-        self._name = name
-
-    @property
-    def os_type(self):
-        """Gets the os_type of this ImageInfo.
-
-        镜像的类型。取值为：Linux（包括SUSE/RedHat/CentOS/Oracle Linux/EulerOS/Ubuntu操作系统）Windows（Windows操作系统）Other（ESXi操作系统）
-
-        :return: The os_type of this ImageInfo.
-        :rtype: str
-        """
-        return self._os_type
-
-    @os_type.setter
-    def os_type(self, os_type):
-        """Sets the os_type of this ImageInfo.
-
-        镜像的类型。取值为：Linux（包括SUSE/RedHat/CentOS/Oracle Linux/EulerOS/Ubuntu操作系统）Windows（Windows操作系统）Other（ESXi操作系统）
-
-        :param os_type: The os_type of this ImageInfo.
-        :type os_type: str
-        """
-        self._os_type = os_type
-
-    @property
-    def links(self):
-        """Gets the links of this ImageInfo.
-
-        镜像相关快捷链接地址。
-
-        :return: The links of this ImageInfo.
-        :rtype: list[:class:`huaweicloudsdkbms.v1.Links`]
-        """
-        return self._links
-
-    @links.setter
-    def links(self, links):
-        """Sets the links of this ImageInfo.
-
-        镜像相关快捷链接地址。
-
-        :param links: The links of this ImageInfo.
-        :type links: list[:class:`huaweicloudsdkbms.v1.Links`]
-        """
-        self._links = links
 
     def to_dict(self):
         """Returns the model properties as a dict"""

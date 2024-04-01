@@ -1,3 +1,51 @@
+# 3.1.89 2024-04-01
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBareMetalServers**
+    - 响应参数变更
+      - `- servers.image.name`
+      - `- servers.image.__os_type`
+      - `- servers.image.links`
+  - **ListBareMetalServerDetails**
+    - 响应参数变更
+      - `- server.image.name`
+      - `- server.image.__os_type`
+      - `- server.image.links`
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPlanList**
+    - 请求参数变更
+      - `+ branch_uri`
+      - `+ query_all_version`
+
+### HuaweiCloud SDK KPS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateKeypair**
+    - 请求参数变更
+      - `+ keypair.key_protection.encryption.kms_key_id`
+  - **ImportPrivateKey**
+    - 请求参数变更
+      - `+ keypair.key_protection.encryption.kms_key_id`
+    - 响应参数变更
+      - `+ keypair.key_protection.encryption.kms_key_id`
+
 # 3.1.88 2024-03-28
 
 ### HuaweiCloud SDK APIG

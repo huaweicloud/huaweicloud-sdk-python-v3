@@ -52,6 +52,8 @@ class DdsRegion:
                         "https://dds.ap-southeast-4.myhuaweicloud.com")
     EU_WEST_0 = Region("eu-west-0",
                         "https://dds.eu-west-0.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://dd.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -77,6 +79,7 @@ class DdsRegion:
         "tr-west-1": TR_WEST_1,
         "ap-southeast-4": AP_SOUTHEAST_4,
         "eu-west-0": EU_WEST_0,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

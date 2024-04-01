@@ -36,6 +36,8 @@ class DscRegion:
                         "https://sdg.la-north-2.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
                         "https://sdg.tr-west-1.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://sdg.eu-west-101.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -53,6 +55,7 @@ class DscRegion:
         "af-south-1": AF_SOUTH_1,
         "la-north-2": LA_NORTH_2,
         "tr-west-1": TR_WEST_1,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod
