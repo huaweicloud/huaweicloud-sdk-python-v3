@@ -53,7 +53,7 @@ class AddressSetListResponseDTODataRecords:
         :type address_type: int
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
-        :param address_set_type: 地址组类型，0表示自定义地址组，1表示预定义地址组
+        :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
         :type address_set_type: int
         """
         
@@ -219,7 +219,7 @@ class AddressSetListResponseDTODataRecords:
     def address_set_type(self):
         """Gets the address_set_type of this AddressSetListResponseDTODataRecords.
 
-        地址组类型，0表示自定义地址组，1表示预定义地址组
+        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
         :return: The address_set_type of this AddressSetListResponseDTODataRecords.
         :rtype: int
@@ -230,7 +230,7 @@ class AddressSetListResponseDTODataRecords:
     def address_set_type(self, address_set_type):
         """Sets the address_set_type of this AddressSetListResponseDTODataRecords.
 
-        地址组类型，0表示自定义地址组，1表示预定义地址组
+        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
         :param address_set_type: The address_set_type of this AddressSetListResponseDTODataRecords.
         :type address_set_type: int

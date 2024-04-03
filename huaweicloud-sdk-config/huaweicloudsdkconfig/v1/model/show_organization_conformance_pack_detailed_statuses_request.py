@@ -19,6 +19,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
     openapi_types = {
         'organization_id': 'str',
         'conformance_pack_name': 'str',
+        'organization_conformance_pack_id': 'str',
         'state': 'str',
         'limit': 'int',
         'marker': 'str'
@@ -27,12 +28,13 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
     attribute_map = {
         'organization_id': 'organization_id',
         'conformance_pack_name': 'conformance_pack_name',
+        'organization_conformance_pack_id': 'organization_conformance_pack_id',
         'state': 'state',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, organization_id=None, conformance_pack_name=None, state=None, limit=None, marker=None):
+    def __init__(self, organization_id=None, conformance_pack_name=None, organization_conformance_pack_id=None, state=None, limit=None, marker=None):
         """ShowOrganizationConformancePackDetailedStatusesRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
         :type organization_id: str
         :param conformance_pack_name: 合规规则包名称。
         :type conformance_pack_name: str
+        :param organization_conformance_pack_id: 组织合规规则包ID。
+        :type organization_conformance_pack_id: str
         :param state: 部署状态，区分大小写
         :type state: str
         :param limit: 最大的返回数量
@@ -53,6 +57,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
         self._organization_id = None
         self._conformance_pack_name = None
+        self._organization_conformance_pack_id = None
         self._state = None
         self._limit = None
         self._marker = None
@@ -60,6 +65,8 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
         self.organization_id = organization_id
         self.conformance_pack_name = conformance_pack_name
+        if organization_conformance_pack_id is not None:
+            self.organization_conformance_pack_id = organization_conformance_pack_id
         if state is not None:
             self.state = state
         if limit is not None:
@@ -110,6 +117,28 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
         :type conformance_pack_name: str
         """
         self._conformance_pack_name = conformance_pack_name
+
+    @property
+    def organization_conformance_pack_id(self):
+        """Gets the organization_conformance_pack_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
+
+        组织合规规则包ID。
+
+        :return: The organization_conformance_pack_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        :rtype: str
+        """
+        return self._organization_conformance_pack_id
+
+    @organization_conformance_pack_id.setter
+    def organization_conformance_pack_id(self, organization_conformance_pack_id):
+        """Sets the organization_conformance_pack_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
+
+        组织合规规则包ID。
+
+        :param organization_conformance_pack_id: The organization_conformance_pack_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        :type organization_conformance_pack_id: str
+        """
+        self._organization_conformance_pack_id = organization_conformance_pack_id
 
     @property
     def state(self):

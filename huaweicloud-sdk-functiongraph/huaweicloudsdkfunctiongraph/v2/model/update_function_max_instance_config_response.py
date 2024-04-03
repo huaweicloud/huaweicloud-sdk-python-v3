@@ -55,9 +55,12 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
         'log_group_id': 'str',
         'log_stream_id': 'str',
         'type': 'str',
+        'enable_cloud_debug': 'str',
         'enable_dynamic_memory': 'bool',
         'is_stateful_function': 'bool',
-        'domain_names': 'str'
+        'domain_names': 'str',
+        'is_return_stream': 'bool',
+        'enable_auth_in_header': 'bool'
     }
 
     attribute_map = {
@@ -98,12 +101,15 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
         'log_group_id': 'log_group_id',
         'log_stream_id': 'log_stream_id',
         'type': 'type',
+        'enable_cloud_debug': 'enable_cloud_debug',
         'enable_dynamic_memory': 'enable_dynamic_memory',
         'is_stateful_function': 'is_stateful_function',
-        'domain_names': 'domain_names'
+        'domain_names': 'domain_names',
+        'is_return_stream': 'is_return_stream',
+        'enable_auth_in_header': 'enable_auth_in_header'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None, is_return_stream=None, enable_auth_in_header=None):
         """UpdateFunctionMaxInstanceConfigResponse
 
         The model defined in huaweicloud sdk
@@ -120,7 +126,7 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        :param runtime: FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
         :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
@@ -182,12 +188,18 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
         :type log_stream_id: str
         :param type: v2表示为正式版本,v1为废弃版本。
         :type type: str
+        :param enable_cloud_debug: 适配CloudDebug场景，是否开启云调试（已废弃）
+        :type enable_cloud_debug: str
         :param enable_dynamic_memory: 是否启动动态内存配置
         :type enable_dynamic_memory: bool
         :param is_stateful_function: 是否支持有状态，v2版本支持
         :type is_stateful_function: bool
         :param domain_names: 函数配置的需要支持域名解析的内网域名。
         :type domain_names: str
+        :param is_return_stream: 是否返回流式数据（已废弃）
+        :type is_return_stream: bool
+        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息，只支持自定义镜像函数
+        :type enable_auth_in_header: bool
         """
         
         super(UpdateFunctionMaxInstanceConfigResponse, self).__init__()
@@ -229,9 +241,12 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
         self._log_group_id = None
         self._log_stream_id = None
         self._type = None
+        self._enable_cloud_debug = None
         self._enable_dynamic_memory = None
         self._is_stateful_function = None
         self._domain_names = None
+        self._is_return_stream = None
+        self._enable_auth_in_header = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -308,12 +323,18 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
             self.log_stream_id = log_stream_id
         if type is not None:
             self.type = type
+        if enable_cloud_debug is not None:
+            self.enable_cloud_debug = enable_cloud_debug
         if enable_dynamic_memory is not None:
             self.enable_dynamic_memory = enable_dynamic_memory
         if is_stateful_function is not None:
             self.is_stateful_function = is_stateful_function
         if domain_names is not None:
             self.domain_names = domain_names
+        if is_return_stream is not None:
+            self.is_return_stream = is_return_stream
+        if enable_auth_in_header is not None:
+            self.enable_auth_in_header = enable_auth_in_header
 
     @property
     def func_urn(self):
@@ -451,7 +472,7 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this UpdateFunctionMaxInstanceConfigResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this UpdateFunctionMaxInstanceConfigResponse.
         :rtype: str
@@ -462,7 +483,7 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this UpdateFunctionMaxInstanceConfigResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this UpdateFunctionMaxInstanceConfigResponse.
         :type runtime: str
@@ -1118,6 +1139,28 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
         self._type = type
 
     @property
+    def enable_cloud_debug(self):
+        """Gets the enable_cloud_debug of this UpdateFunctionMaxInstanceConfigResponse.
+
+        适配CloudDebug场景，是否开启云调试（已废弃）
+
+        :return: The enable_cloud_debug of this UpdateFunctionMaxInstanceConfigResponse.
+        :rtype: str
+        """
+        return self._enable_cloud_debug
+
+    @enable_cloud_debug.setter
+    def enable_cloud_debug(self, enable_cloud_debug):
+        """Sets the enable_cloud_debug of this UpdateFunctionMaxInstanceConfigResponse.
+
+        适配CloudDebug场景，是否开启云调试（已废弃）
+
+        :param enable_cloud_debug: The enable_cloud_debug of this UpdateFunctionMaxInstanceConfigResponse.
+        :type enable_cloud_debug: str
+        """
+        self._enable_cloud_debug = enable_cloud_debug
+
+    @property
     def enable_dynamic_memory(self):
         """Gets the enable_dynamic_memory of this UpdateFunctionMaxInstanceConfigResponse.
 
@@ -1182,6 +1225,50 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
         :type domain_names: str
         """
         self._domain_names = domain_names
+
+    @property
+    def is_return_stream(self):
+        """Gets the is_return_stream of this UpdateFunctionMaxInstanceConfigResponse.
+
+        是否返回流式数据（已废弃）
+
+        :return: The is_return_stream of this UpdateFunctionMaxInstanceConfigResponse.
+        :rtype: bool
+        """
+        return self._is_return_stream
+
+    @is_return_stream.setter
+    def is_return_stream(self, is_return_stream):
+        """Sets the is_return_stream of this UpdateFunctionMaxInstanceConfigResponse.
+
+        是否返回流式数据（已废弃）
+
+        :param is_return_stream: The is_return_stream of this UpdateFunctionMaxInstanceConfigResponse.
+        :type is_return_stream: bool
+        """
+        self._is_return_stream = is_return_stream
+
+    @property
+    def enable_auth_in_header(self):
+        """Gets the enable_auth_in_header of this UpdateFunctionMaxInstanceConfigResponse.
+
+        是否允许在请求头中添加鉴权信息，只支持自定义镜像函数
+
+        :return: The enable_auth_in_header of this UpdateFunctionMaxInstanceConfigResponse.
+        :rtype: bool
+        """
+        return self._enable_auth_in_header
+
+    @enable_auth_in_header.setter
+    def enable_auth_in_header(self, enable_auth_in_header):
+        """Sets the enable_auth_in_header of this UpdateFunctionMaxInstanceConfigResponse.
+
+        是否允许在请求头中添加鉴权信息，只支持自定义镜像函数
+
+        :param enable_auth_in_header: The enable_auth_in_header of this UpdateFunctionMaxInstanceConfigResponse.
+        :type enable_auth_in_header: bool
+        """
+        self._enable_auth_in_header = enable_auth_in_header
 
     def to_dict(self):
         """Returns the model properties as a dict"""

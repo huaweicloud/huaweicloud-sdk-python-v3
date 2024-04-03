@@ -71,6 +71,9 @@ from huaweicloudsdkkms.v2.model.encrypt_datakey_request import EncryptDatakeyReq
 from huaweicloudsdkkms.v2.model.encrypt_datakey_request_body import EncryptDatakeyRequestBody
 from huaweicloudsdkkms.v2.model.encrypt_datakey_response import EncryptDatakeyResponse
 from huaweicloudsdkkms.v2.model.gen_random_request_body import GenRandomRequestBody
+from huaweicloudsdkkms.v2.model.generate_mac_request import GenerateMacRequest
+from huaweicloudsdkkms.v2.model.generate_mac_request_body import GenerateMacRequestBody
+from huaweicloudsdkkms.v2.model.generate_mac_response import GenerateMacResponse
 from huaweicloudsdkkms.v2.model.get_parameters_for_import_request_body import GetParametersForImportRequestBody
 from huaweicloudsdkkms.v2.model.grants import Grants
 from huaweicloudsdkkms.v2.model.import_key_material_request import ImportKeyMaterialRequest
@@ -139,5 +142,8 @@ from huaweicloudsdkkms.v2.model.update_key_rotation_interval_request_body import
 from huaweicloudsdkkms.v2.model.update_key_rotation_interval_response import UpdateKeyRotationIntervalResponse
 from huaweicloudsdkkms.v2.model.validate_signature_request import ValidateSignatureRequest
 from huaweicloudsdkkms.v2.model.validate_signature_response import ValidateSignatureResponse
+from huaweicloudsdkkms.v2.model.verify_mac_request import VerifyMacRequest
+from huaweicloudsdkkms.v2.model.verify_mac_request_body import VerifyMacRequestBody
+from huaweicloudsdkkms.v2.model.verify_mac_response import VerifyMacResponse
 from huaweicloudsdkkms.v2.model.verify_request_body import VerifyRequestBody
 

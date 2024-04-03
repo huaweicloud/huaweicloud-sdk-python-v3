@@ -20,10 +20,10 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     openapi_types = {
         'total': 'float',
         'groups': 'list[ConsumerGroup]',
-        'max': 'float',
-        'remaining': 'float',
-        'next_offset': 'float',
-        'previous_offset': 'float'
+        'max': 'int',
+        'remaining': 'int',
+        'next_offset': 'int',
+        'previous_offset': 'int'
     }
 
     attribute_map = {
@@ -45,13 +45,13 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         :param groups: 消费组列表。
         :type groups: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
         :param max: 最大可创建消费组数量。
-        :type max: float
+        :type max: int
         :param remaining: 剩余可创建消费组数量。
-        :type remaining: float
+        :type remaining: int
         :param next_offset: 下个分页的offset。
-        :type next_offset: float
+        :type next_offset: int
         :param previous_offset: 上个分页的offset。
-        :type previous_offset: float
+        :type previous_offset: int
         """
         
         super(ListInstanceConsumerGroupsResponse, self).__init__()
@@ -128,7 +128,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         最大可创建消费组数量。
 
         :return: The max of this ListInstanceConsumerGroupsResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._max
 
@@ -139,7 +139,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         最大可创建消费组数量。
 
         :param max: The max of this ListInstanceConsumerGroupsResponse.
-        :type max: float
+        :type max: int
         """
         self._max = max
 
@@ -150,7 +150,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         剩余可创建消费组数量。
 
         :return: The remaining of this ListInstanceConsumerGroupsResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._remaining
 
@@ -161,7 +161,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         剩余可创建消费组数量。
 
         :param remaining: The remaining of this ListInstanceConsumerGroupsResponse.
-        :type remaining: float
+        :type remaining: int
         """
         self._remaining = remaining
 
@@ -172,7 +172,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         下个分页的offset。
 
         :return: The next_offset of this ListInstanceConsumerGroupsResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._next_offset
 
@@ -183,7 +183,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         下个分页的offset。
 
         :param next_offset: The next_offset of this ListInstanceConsumerGroupsResponse.
-        :type next_offset: float
+        :type next_offset: int
         """
         self._next_offset = next_offset
 
@@ -194,7 +194,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         上个分页的offset。
 
         :return: The previous_offset of this ListInstanceConsumerGroupsResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._previous_offset
 
@@ -205,7 +205,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
         上个分页的offset。
 
         :param previous_offset: The previous_offset of this ListInstanceConsumerGroupsResponse.
-        :type previous_offset: float
+        :type previous_offset: int
         """
         self._previous_offset = previous_offset
 

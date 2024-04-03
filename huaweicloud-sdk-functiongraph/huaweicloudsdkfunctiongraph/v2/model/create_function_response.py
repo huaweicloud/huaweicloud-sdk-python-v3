@@ -65,7 +65,6 @@ class CreateFunctionResponse(SdkResponse):
         'enable_cloud_debug': 'str',
         'enable_dynamic_memory': 'bool',
         'is_stateful_function': 'bool',
-        'enable_auth_in_header': 'bool',
         'custom_image': 'CustomImage',
         'is_bridge_function': 'bool',
         'apig_route_enable': 'bool',
@@ -75,7 +74,9 @@ class CreateFunctionResponse(SdkResponse):
         'allow_ephemeral_storage': 'bool',
         'ephemeral_storage': 'int',
         'network_controller': 'NetworkControlConfig',
-        'resource_id': 'str'
+        'resource_id': 'str',
+        'is_return_stream': 'bool',
+        'enable_auth_in_header': 'bool'
     }
 
     attribute_map = {
@@ -126,7 +127,6 @@ class CreateFunctionResponse(SdkResponse):
         'enable_cloud_debug': 'enable_cloud_debug',
         'enable_dynamic_memory': 'enable_dynamic_memory',
         'is_stateful_function': 'is_stateful_function',
-        'enable_auth_in_header': 'enable_auth_in_header',
         'custom_image': 'custom_image',
         'is_bridge_function': 'is_bridge_function',
         'apig_route_enable': 'apig_route_enable',
@@ -136,10 +136,12 @@ class CreateFunctionResponse(SdkResponse):
         'allow_ephemeral_storage': 'allow_ephemeral_storage',
         'ephemeral_storage': 'ephemeral_storage',
         'network_controller': 'network_controller',
-        'resource_id': 'resource_id'
+        'resource_id': 'resource_id',
+        'is_return_stream': 'is_return_stream',
+        'enable_auth_in_header': 'enable_auth_in_header'
     }
 
-    def __init__(self, func_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, domain_names=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, reserved_instance_count=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None, is_bridge_function=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, ephemeral_storage=None, network_controller=None, resource_id=None):
+    def __init__(self, func_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, domain_names=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, reserved_instance_count=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, custom_image=None, is_bridge_function=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, ephemeral_storage=None, network_controller=None, resource_id=None, is_return_stream=None, enable_auth_in_header=None):
         """CreateFunctionResponse
 
         The model defined in huaweicloud sdk
@@ -158,7 +160,7 @@ class CreateFunctionResponse(SdkResponse):
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        :param runtime: FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
         :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
@@ -232,14 +234,12 @@ class CreateFunctionResponse(SdkResponse):
         :type log_stream_id: str
         :param type: v2表示为正式版本,v1为废弃版本。
         :type type: str
-        :param enable_cloud_debug: 是否启用cloud debug功能
+        :param enable_cloud_debug: 适配CloudDebug场景，是否开启云调试（已废弃）
         :type enable_cloud_debug: str
         :param enable_dynamic_memory: 是否启动动态内存配置
         :type enable_dynamic_memory: bool
         :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
         :type is_stateful_function: bool
-        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息
-        :type enable_auth_in_header: bool
         :param custom_image: 
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         :param is_bridge_function: 是否为bridge函数
@@ -260,6 +260,10 @@ class CreateFunctionResponse(SdkResponse):
         :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
         :param resource_id: 资源id。
         :type resource_id: str
+        :param is_return_stream: 是否返回流式数据（已废弃）
+        :type is_return_stream: bool
+        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息，只支持自定义镜像函数（创建函数时不支持修改）
+        :type enable_auth_in_header: bool
         """
         
         super(CreateFunctionResponse, self).__init__()
@@ -311,7 +315,6 @@ class CreateFunctionResponse(SdkResponse):
         self._enable_cloud_debug = None
         self._enable_dynamic_memory = None
         self._is_stateful_function = None
-        self._enable_auth_in_header = None
         self._custom_image = None
         self._is_bridge_function = None
         self._apig_route_enable = None
@@ -322,6 +325,8 @@ class CreateFunctionResponse(SdkResponse):
         self._ephemeral_storage = None
         self._network_controller = None
         self._resource_id = None
+        self._is_return_stream = None
+        self._enable_auth_in_header = None
         self.discriminator = None
 
         if func_id is not None:
@@ -418,8 +423,6 @@ class CreateFunctionResponse(SdkResponse):
             self.enable_dynamic_memory = enable_dynamic_memory
         if is_stateful_function is not None:
             self.is_stateful_function = is_stateful_function
-        if enable_auth_in_header is not None:
-            self.enable_auth_in_header = enable_auth_in_header
         if custom_image is not None:
             self.custom_image = custom_image
         if is_bridge_function is not None:
@@ -440,6 +443,10 @@ class CreateFunctionResponse(SdkResponse):
             self.network_controller = network_controller
         if resource_id is not None:
             self.resource_id = resource_id
+        if is_return_stream is not None:
+            self.is_return_stream = is_return_stream
+        if enable_auth_in_header is not None:
+            self.enable_auth_in_header = enable_auth_in_header
 
     @property
     def func_id(self):
@@ -599,7 +606,7 @@ class CreateFunctionResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this CreateFunctionResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this CreateFunctionResponse.
         :rtype: str
@@ -610,7 +617,7 @@ class CreateFunctionResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this CreateFunctionResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this CreateFunctionResponse.
         :type runtime: str
@@ -1401,7 +1408,7 @@ class CreateFunctionResponse(SdkResponse):
     def enable_cloud_debug(self):
         """Gets the enable_cloud_debug of this CreateFunctionResponse.
 
-        是否启用cloud debug功能
+        适配CloudDebug场景，是否开启云调试（已废弃）
 
         :return: The enable_cloud_debug of this CreateFunctionResponse.
         :rtype: str
@@ -1412,7 +1419,7 @@ class CreateFunctionResponse(SdkResponse):
     def enable_cloud_debug(self, enable_cloud_debug):
         """Sets the enable_cloud_debug of this CreateFunctionResponse.
 
-        是否启用cloud debug功能
+        适配CloudDebug场景，是否开启云调试（已废弃）
 
         :param enable_cloud_debug: The enable_cloud_debug of this CreateFunctionResponse.
         :type enable_cloud_debug: str
@@ -1462,28 +1469,6 @@ class CreateFunctionResponse(SdkResponse):
         :type is_stateful_function: bool
         """
         self._is_stateful_function = is_stateful_function
-
-    @property
-    def enable_auth_in_header(self):
-        """Gets the enable_auth_in_header of this CreateFunctionResponse.
-
-        是否允许在请求头中添加鉴权信息
-
-        :return: The enable_auth_in_header of this CreateFunctionResponse.
-        :rtype: bool
-        """
-        return self._enable_auth_in_header
-
-    @enable_auth_in_header.setter
-    def enable_auth_in_header(self, enable_auth_in_header):
-        """Sets the enable_auth_in_header of this CreateFunctionResponse.
-
-        是否允许在请求头中添加鉴权信息
-
-        :param enable_auth_in_header: The enable_auth_in_header of this CreateFunctionResponse.
-        :type enable_auth_in_header: bool
-        """
-        self._enable_auth_in_header = enable_auth_in_header
 
     @property
     def custom_image(self):
@@ -1696,6 +1681,50 @@ class CreateFunctionResponse(SdkResponse):
         :type resource_id: str
         """
         self._resource_id = resource_id
+
+    @property
+    def is_return_stream(self):
+        """Gets the is_return_stream of this CreateFunctionResponse.
+
+        是否返回流式数据（已废弃）
+
+        :return: The is_return_stream of this CreateFunctionResponse.
+        :rtype: bool
+        """
+        return self._is_return_stream
+
+    @is_return_stream.setter
+    def is_return_stream(self, is_return_stream):
+        """Sets the is_return_stream of this CreateFunctionResponse.
+
+        是否返回流式数据（已废弃）
+
+        :param is_return_stream: The is_return_stream of this CreateFunctionResponse.
+        :type is_return_stream: bool
+        """
+        self._is_return_stream = is_return_stream
+
+    @property
+    def enable_auth_in_header(self):
+        """Gets the enable_auth_in_header of this CreateFunctionResponse.
+
+        是否允许在请求头中添加鉴权信息，只支持自定义镜像函数（创建函数时不支持修改）
+
+        :return: The enable_auth_in_header of this CreateFunctionResponse.
+        :rtype: bool
+        """
+        return self._enable_auth_in_header
+
+    @enable_auth_in_header.setter
+    def enable_auth_in_header(self, enable_auth_in_header):
+        """Sets the enable_auth_in_header of this CreateFunctionResponse.
+
+        是否允许在请求头中添加鉴权信息，只支持自定义镜像函数（创建函数时不支持修改）
+
+        :param enable_auth_in_header: The enable_auth_in_header of this CreateFunctionResponse.
+        :type enable_auth_in_header: bool
+        """
+        self._enable_auth_in_header = enable_auth_in_header
 
     def to_dict(self):
         """Returns the model properties as a dict"""

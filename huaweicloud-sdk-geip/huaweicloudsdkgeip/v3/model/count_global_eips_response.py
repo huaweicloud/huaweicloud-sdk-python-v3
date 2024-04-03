@@ -19,29 +19,25 @@ class CountGlobalEipsResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'global_eips': 'list[CountGlobalEips]',
-        'page_info': 'ListGlobalEipsResponseBodyPageInfo',
+        'global_eip': 'CountGlobalEips',
         'x_request_id': 'str'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'global_eips': 'global_eips',
-        'page_info': 'page_info',
+        'global_eip': 'global_eip',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, request_id=None, global_eips=None, page_info=None, x_request_id=None):
+    def __init__(self, request_id=None, global_eip=None, x_request_id=None):
         """CountGlobalEipsResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 本次请求的编号
         :type request_id: str
-        :param global_eips: 全域弹性公网IP列表
-        :type global_eips: list[:class:`huaweicloudsdkgeip.v3.CountGlobalEips`]
-        :param page_info: 
-        :type page_info: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
+        :param global_eip: 
+        :type global_eip: :class:`huaweicloudsdkgeip.v3.CountGlobalEips`
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -49,17 +45,14 @@ class CountGlobalEipsResponse(SdkResponse):
         super(CountGlobalEipsResponse, self).__init__()
 
         self._request_id = None
-        self._global_eips = None
-        self._page_info = None
+        self._global_eip = None
         self._x_request_id = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
-        if global_eips is not None:
-            self.global_eips = global_eips
-        if page_info is not None:
-            self.page_info = page_info
+        if global_eip is not None:
+            self.global_eip = global_eip
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -86,44 +79,22 @@ class CountGlobalEipsResponse(SdkResponse):
         self._request_id = request_id
 
     @property
-    def global_eips(self):
-        """Gets the global_eips of this CountGlobalEipsResponse.
+    def global_eip(self):
+        """Gets the global_eip of this CountGlobalEipsResponse.
 
-        全域弹性公网IP列表
-
-        :return: The global_eips of this CountGlobalEipsResponse.
-        :rtype: list[:class:`huaweicloudsdkgeip.v3.CountGlobalEips`]
+        :return: The global_eip of this CountGlobalEipsResponse.
+        :rtype: :class:`huaweicloudsdkgeip.v3.CountGlobalEips`
         """
-        return self._global_eips
+        return self._global_eip
 
-    @global_eips.setter
-    def global_eips(self, global_eips):
-        """Sets the global_eips of this CountGlobalEipsResponse.
+    @global_eip.setter
+    def global_eip(self, global_eip):
+        """Sets the global_eip of this CountGlobalEipsResponse.
 
-        全域弹性公网IP列表
-
-        :param global_eips: The global_eips of this CountGlobalEipsResponse.
-        :type global_eips: list[:class:`huaweicloudsdkgeip.v3.CountGlobalEips`]
+        :param global_eip: The global_eip of this CountGlobalEipsResponse.
+        :type global_eip: :class:`huaweicloudsdkgeip.v3.CountGlobalEips`
         """
-        self._global_eips = global_eips
-
-    @property
-    def page_info(self):
-        """Gets the page_info of this CountGlobalEipsResponse.
-
-        :return: The page_info of this CountGlobalEipsResponse.
-        :rtype: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
-        """
-        return self._page_info
-
-    @page_info.setter
-    def page_info(self, page_info):
-        """Sets the page_info of this CountGlobalEipsResponse.
-
-        :param page_info: The page_info of this CountGlobalEipsResponse.
-        :type page_info: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
-        """
-        self._page_info = page_info
+        self._global_eip = global_eip
 
     @property
     def x_request_id(self):

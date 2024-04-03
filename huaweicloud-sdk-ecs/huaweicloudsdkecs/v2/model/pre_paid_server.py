@@ -39,7 +39,8 @@ class PrePaidServer:
         'osscheduler_hints': 'PrePaidServerSchedulerHints',
         'tags': 'list[str]',
         'server_tags': 'list[PrePaidServerTag]',
-        'description': 'str'
+        'description': 'str',
+        'cpu_options': 'CpuOptions'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class PrePaidServer:
         'osscheduler_hints': 'os:scheduler_hints',
         'tags': 'tags',
         'server_tags': 'server_tags',
-        'description': 'description'
+        'description': 'description',
+        'cpu_options': 'cpu_options'
     }
 
-    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, batch_create_in_multi_az=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None):
+    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, batch_create_in_multi_az=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None, cpu_options=None):
         """PrePaidServer
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class PrePaidServer:
         :type server_tags: list[:class:`huaweicloudsdkecs.v2.PrePaidServerTag`]
         :param description: 云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“&lt;” 和 “&gt;”。
         :type description: str
+        :param cpu_options: 
+        :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
         
         
@@ -146,6 +150,7 @@ class PrePaidServer:
         self._tags = None
         self._server_tags = None
         self._description = None
+        self._cpu_options = None
         self.discriminator = None
 
         if auto_terminate_time is not None:
@@ -188,6 +193,8 @@ class PrePaidServer:
             self.server_tags = server_tags
         if description is not None:
             self.description = description
+        if cpu_options is not None:
+            self.cpu_options = cpu_options
 
     @property
     def auto_terminate_time(self):
@@ -678,6 +685,24 @@ class PrePaidServer:
         :type description: str
         """
         self._description = description
+
+    @property
+    def cpu_options(self):
+        """Gets the cpu_options of this PrePaidServer.
+
+        :return: The cpu_options of this PrePaidServer.
+        :rtype: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        """
+        return self._cpu_options
+
+    @cpu_options.setter
+    def cpu_options(self, cpu_options):
+        """Sets the cpu_options of this PrePaidServer.
+
+        :param cpu_options: The cpu_options of this PrePaidServer.
+        :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        """
+        self._cpu_options = cpu_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

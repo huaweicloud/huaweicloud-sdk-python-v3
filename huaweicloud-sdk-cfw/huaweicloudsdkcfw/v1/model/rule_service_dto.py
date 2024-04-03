@@ -19,28 +19,34 @@ class RuleServiceDto:
     openapi_types = {
         'type': 'int',
         'protocol': 'int',
+        'protocols': 'list[int]',
         'source_port': 'str',
         'dest_port': 'str',
         'service_set_id': 'str',
         'service_set_name': 'str',
         'custom_service': 'list[ServiceItem]',
+        'predefined_group': 'list[str]',
         'service_group': 'list[str]',
-        'service_group_names': 'list[AddressGroupVO]'
+        'service_group_names': 'list[AddressGroupVO]',
+        'service_set_type': 'int'
     }
 
     attribute_map = {
         'type': 'type',
         'protocol': 'protocol',
+        'protocols': 'protocols',
         'source_port': 'source_port',
         'dest_port': 'dest_port',
         'service_set_id': 'service_set_id',
         'service_set_name': 'service_set_name',
         'custom_service': 'custom_service',
+        'predefined_group': 'predefined_group',
         'service_group': 'service_group',
-        'service_group_names': 'service_group_names'
+        'service_group_names': 'service_group_names',
+        'service_set_type': 'service_set_type'
     }
 
-    def __init__(self, type=None, protocol=None, source_port=None, dest_port=None, service_set_id=None, service_set_name=None, custom_service=None, service_group=None, service_group_names=None):
+    def __init__(self, type=None, protocol=None, protocols=None, source_port=None, dest_port=None, service_set_id=None, service_set_name=None, custom_service=None, predefined_group=None, service_group=None, service_group_names=None, service_set_type=None):
         """RuleServiceDto
 
         The model defined in huaweicloud sdk
@@ -49,6 +55,8 @@ class RuleServiceDto:
         :type type: int
         :param protocol: 协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
         :type protocol: int
+        :param protocols: 协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        :type protocols: list[int]
         :param source_port: 源端口
         :type source_port: str
         :param dest_port: 目的端口
@@ -59,28 +67,37 @@ class RuleServiceDto:
         :type service_set_name: str
         :param custom_service: 自定义服务
         :type custom_service: list[:class:`huaweicloudsdkcfw.v1.ServiceItem`]
+        :param predefined_group: 预定义服务组列表
+        :type predefined_group: list[str]
         :param service_group: 服务组列表
         :type service_group: list[str]
         :param service_group_names: 服务组名称列表
         :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
+        :param service_set_type: 服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+        :type service_set_type: int
         """
         
         
 
         self._type = None
         self._protocol = None
+        self._protocols = None
         self._source_port = None
         self._dest_port = None
         self._service_set_id = None
         self._service_set_name = None
         self._custom_service = None
+        self._predefined_group = None
         self._service_group = None
         self._service_group_names = None
+        self._service_set_type = None
         self.discriminator = None
 
         self.type = type
         if protocol is not None:
             self.protocol = protocol
+        if protocols is not None:
+            self.protocols = protocols
         if source_port is not None:
             self.source_port = source_port
         if dest_port is not None:
@@ -91,10 +108,14 @@ class RuleServiceDto:
             self.service_set_name = service_set_name
         if custom_service is not None:
             self.custom_service = custom_service
+        if predefined_group is not None:
+            self.predefined_group = predefined_group
         if service_group is not None:
             self.service_group = service_group
         if service_group_names is not None:
             self.service_group_names = service_group_names
+        if service_set_type is not None:
+            self.service_set_type = service_set_type
 
     @property
     def type(self):
@@ -139,6 +160,28 @@ class RuleServiceDto:
         :type protocol: int
         """
         self._protocol = protocol
+
+    @property
+    def protocols(self):
+        """Gets the protocols of this RuleServiceDto.
+
+        协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+
+        :return: The protocols of this RuleServiceDto.
+        :rtype: list[int]
+        """
+        return self._protocols
+
+    @protocols.setter
+    def protocols(self, protocols):
+        """Sets the protocols of this RuleServiceDto.
+
+        协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+
+        :param protocols: The protocols of this RuleServiceDto.
+        :type protocols: list[int]
+        """
+        self._protocols = protocols
 
     @property
     def source_port(self):
@@ -251,6 +294,28 @@ class RuleServiceDto:
         self._custom_service = custom_service
 
     @property
+    def predefined_group(self):
+        """Gets the predefined_group of this RuleServiceDto.
+
+        预定义服务组列表
+
+        :return: The predefined_group of this RuleServiceDto.
+        :rtype: list[str]
+        """
+        return self._predefined_group
+
+    @predefined_group.setter
+    def predefined_group(self, predefined_group):
+        """Sets the predefined_group of this RuleServiceDto.
+
+        预定义服务组列表
+
+        :param predefined_group: The predefined_group of this RuleServiceDto.
+        :type predefined_group: list[str]
+        """
+        self._predefined_group = predefined_group
+
+    @property
     def service_group(self):
         """Gets the service_group of this RuleServiceDto.
 
@@ -293,6 +358,28 @@ class RuleServiceDto:
         :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
         """
         self._service_group_names = service_group_names
+
+    @property
+    def service_set_type(self):
+        """Gets the service_set_type of this RuleServiceDto.
+
+        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+
+        :return: The service_set_type of this RuleServiceDto.
+        :rtype: int
+        """
+        return self._service_set_type
+
+    @service_set_type.setter
+    def service_set_type(self, service_set_type):
+        """Sets the service_set_type of this RuleServiceDto.
+
+        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+
+        :param service_set_type: The service_set_type of this RuleServiceDto.
+        :type service_set_type: int
+        """
+        self._service_set_type = service_set_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

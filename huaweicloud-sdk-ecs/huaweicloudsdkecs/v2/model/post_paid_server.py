@@ -39,7 +39,8 @@ class PostPaidServer:
         'tags': 'list[str]',
         'user_data': 'str',
         'vpcid': 'str',
-        'description': 'str'
+        'description': 'str',
+        'cpu_options': 'CpuOptions'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class PostPaidServer:
         'tags': 'tags',
         'user_data': 'user_data',
         'vpcid': 'vpcid',
-        'description': 'description'
+        'description': 'description',
+        'cpu_options': 'cpu_options'
     }
 
-    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, batch_create_in_multi_az=None, count=None, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=None, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None):
+    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, batch_create_in_multi_az=None, count=None, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=None, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None, cpu_options=None):
         """PostPaidServer
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class PostPaidServer:
         :type vpcid: str
         :param description: 云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“&lt;” 和 “&gt;”。
         :type description: str
+        :param cpu_options: 
+        :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
         
         
@@ -146,6 +150,7 @@ class PostPaidServer:
         self._user_data = None
         self._vpcid = None
         self._description = None
+        self._cpu_options = None
         self.discriminator = None
 
         if auto_terminate_time is not None:
@@ -188,6 +193,8 @@ class PostPaidServer:
         self.vpcid = vpcid
         if description is not None:
             self.description = description
+        if cpu_options is not None:
+            self.cpu_options = cpu_options
 
     @property
     def auto_terminate_time(self):
@@ -678,6 +685,24 @@ class PostPaidServer:
         :type description: str
         """
         self._description = description
+
+    @property
+    def cpu_options(self):
+        """Gets the cpu_options of this PostPaidServer.
+
+        :return: The cpu_options of this PostPaidServer.
+        :rtype: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        """
+        return self._cpu_options
+
+    @cpu_options.setter
+    def cpu_options(self, cpu_options):
+        """Sets the cpu_options of this PostPaidServer.
+
+        :param cpu_options: The cpu_options of this PostPaidServer.
+        :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        """
+        self._cpu_options = cpu_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

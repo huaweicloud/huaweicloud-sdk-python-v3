@@ -22,10 +22,10 @@ class GeipBindingsInternalResp:
         'public_border_group': 'str',
         'created_at': 'str',
         'updated_at': 'str',
-        'binding_instance_type': 'str',
-        'binding_instance_id': 'str',
-        'gcbandwidth': 'object',
-        'vnic': 'object',
+        'instance_type': 'str',
+        'instance_id': 'str',
+        'gcbandwidth': 'BackboneBandwidthResp',
+        'vnic': 'InstanceVnicResp',
         'vn_list': 'list[InstancevirtualListResp]'
     }
 
@@ -35,14 +35,14 @@ class GeipBindingsInternalResp:
         'public_border_group': 'public_border_group',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
-        'binding_instance_type': 'binding_instance_type',
-        'binding_instance_id': 'binding_instance_id',
+        'instance_type': 'instance_type',
+        'instance_id': 'instance_id',
         'gcbandwidth': 'gcbandwidth',
         'vnic': 'vnic',
         'vn_list': 'vn_list'
     }
 
-    def __init__(self, geip_id=None, geip_ip_address=None, public_border_group=None, created_at=None, updated_at=None, binding_instance_type=None, binding_instance_id=None, gcbandwidth=None, vnic=None, vn_list=None):
+    def __init__(self, geip_id=None, geip_ip_address=None, public_border_group=None, created_at=None, updated_at=None, instance_type=None, instance_id=None, gcbandwidth=None, vnic=None, vn_list=None):
         """GeipBindingsInternalResp
 
         The model defined in huaweicloud sdk
@@ -57,14 +57,14 @@ class GeipBindingsInternalResp:
         :type created_at: str
         :param updated_at: 更新时间
         :type updated_at: str
-        :param binding_instance_type: 绑定实例的类型
-        :type binding_instance_type: str
-        :param binding_instance_id: 绑定实例的id
-        :type binding_instance_id: str
-        :param gcbandwidth: 骨干带宽对象
-        :type gcbandwidth: object
-        :param vnic: 实例port的信息
-        :type vnic: object
+        :param instance_type: 绑定实例的类型
+        :type instance_type: str
+        :param instance_id: 绑定实例的id
+        :type instance_id: str
+        :param gcbandwidth: 
+        :type gcbandwidth: :class:`huaweicloudsdkeip.v3.BackboneBandwidthResp`
+        :param vnic: 
+        :type vnic: :class:`huaweicloudsdkeip.v3.InstanceVnicResp`
         :param vn_list: GEIP实例的vn信息
         :type vn_list: list[:class:`huaweicloudsdkeip.v3.InstancevirtualListResp`]
         """
@@ -76,8 +76,8 @@ class GeipBindingsInternalResp:
         self._public_border_group = None
         self._created_at = None
         self._updated_at = None
-        self._binding_instance_type = None
-        self._binding_instance_id = None
+        self._instance_type = None
+        self._instance_id = None
         self._gcbandwidth = None
         self._vnic = None
         self._vn_list = None
@@ -93,10 +93,10 @@ class GeipBindingsInternalResp:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
-        if binding_instance_type is not None:
-            self.binding_instance_type = binding_instance_type
-        if binding_instance_id is not None:
-            self.binding_instance_id = binding_instance_id
+        if instance_type is not None:
+            self.instance_type = instance_type
+        if instance_id is not None:
+            self.instance_id = instance_id
         if gcbandwidth is not None:
             self.gcbandwidth = gcbandwidth
         if vnic is not None:
@@ -215,57 +215,55 @@ class GeipBindingsInternalResp:
         self._updated_at = updated_at
 
     @property
-    def binding_instance_type(self):
-        """Gets the binding_instance_type of this GeipBindingsInternalResp.
+    def instance_type(self):
+        """Gets the instance_type of this GeipBindingsInternalResp.
 
         绑定实例的类型
 
-        :return: The binding_instance_type of this GeipBindingsInternalResp.
+        :return: The instance_type of this GeipBindingsInternalResp.
         :rtype: str
         """
-        return self._binding_instance_type
+        return self._instance_type
 
-    @binding_instance_type.setter
-    def binding_instance_type(self, binding_instance_type):
-        """Sets the binding_instance_type of this GeipBindingsInternalResp.
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this GeipBindingsInternalResp.
 
         绑定实例的类型
 
-        :param binding_instance_type: The binding_instance_type of this GeipBindingsInternalResp.
-        :type binding_instance_type: str
+        :param instance_type: The instance_type of this GeipBindingsInternalResp.
+        :type instance_type: str
         """
-        self._binding_instance_type = binding_instance_type
+        self._instance_type = instance_type
 
     @property
-    def binding_instance_id(self):
-        """Gets the binding_instance_id of this GeipBindingsInternalResp.
+    def instance_id(self):
+        """Gets the instance_id of this GeipBindingsInternalResp.
 
         绑定实例的id
 
-        :return: The binding_instance_id of this GeipBindingsInternalResp.
+        :return: The instance_id of this GeipBindingsInternalResp.
         :rtype: str
         """
-        return self._binding_instance_id
+        return self._instance_id
 
-    @binding_instance_id.setter
-    def binding_instance_id(self, binding_instance_id):
-        """Sets the binding_instance_id of this GeipBindingsInternalResp.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this GeipBindingsInternalResp.
 
         绑定实例的id
 
-        :param binding_instance_id: The binding_instance_id of this GeipBindingsInternalResp.
-        :type binding_instance_id: str
+        :param instance_id: The instance_id of this GeipBindingsInternalResp.
+        :type instance_id: str
         """
-        self._binding_instance_id = binding_instance_id
+        self._instance_id = instance_id
 
     @property
     def gcbandwidth(self):
         """Gets the gcbandwidth of this GeipBindingsInternalResp.
 
-        骨干带宽对象
-
         :return: The gcbandwidth of this GeipBindingsInternalResp.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkeip.v3.BackboneBandwidthResp`
         """
         return self._gcbandwidth
 
@@ -273,10 +271,8 @@ class GeipBindingsInternalResp:
     def gcbandwidth(self, gcbandwidth):
         """Sets the gcbandwidth of this GeipBindingsInternalResp.
 
-        骨干带宽对象
-
         :param gcbandwidth: The gcbandwidth of this GeipBindingsInternalResp.
-        :type gcbandwidth: object
+        :type gcbandwidth: :class:`huaweicloudsdkeip.v3.BackboneBandwidthResp`
         """
         self._gcbandwidth = gcbandwidth
 
@@ -284,10 +280,8 @@ class GeipBindingsInternalResp:
     def vnic(self):
         """Gets the vnic of this GeipBindingsInternalResp.
 
-        实例port的信息
-
         :return: The vnic of this GeipBindingsInternalResp.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkeip.v3.InstanceVnicResp`
         """
         return self._vnic
 
@@ -295,10 +289,8 @@ class GeipBindingsInternalResp:
     def vnic(self, vnic):
         """Sets the vnic of this GeipBindingsInternalResp.
 
-        实例port的信息
-
         :param vnic: The vnic of this GeipBindingsInternalResp.
-        :type vnic: object
+        :type vnic: :class:`huaweicloudsdkeip.v3.InstanceVnicResp`
         """
         self._vnic = vnic
 

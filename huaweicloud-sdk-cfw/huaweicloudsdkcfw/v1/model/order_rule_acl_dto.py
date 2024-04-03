@@ -18,15 +18,17 @@ class OrderRuleAclDto:
 
     openapi_types = {
         'dest_rule_id': 'str',
-        'top': 'int'
+        'top': 'int',
+        'bottom': 'int'
     }
 
     attribute_map = {
         'dest_rule_id': 'dest_rule_id',
-        'top': 'top'
+        'top': 'top',
+        'bottom': 'bottom'
     }
 
-    def __init__(self, dest_rule_id=None, top=None):
+    def __init__(self, dest_rule_id=None, top=None, bottom=None):
         """OrderRuleAclDto
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class OrderRuleAclDto:
         :type dest_rule_id: str
         :param top: 是否置顶，0代表非置顶，1代表置顶
         :type top: int
+        :param bottom: 是否置底，0代表非置底，1代表置底
+        :type bottom: int
         """
         
         
 
         self._dest_rule_id = None
         self._top = None
+        self._bottom = None
         self.discriminator = None
 
         if dest_rule_id is not None:
             self.dest_rule_id = dest_rule_id
         if top is not None:
             self.top = top
+        if bottom is not None:
+            self.bottom = bottom
 
     @property
     def dest_rule_id(self):
@@ -91,6 +98,28 @@ class OrderRuleAclDto:
         :type top: int
         """
         self._top = top
+
+    @property
+    def bottom(self):
+        """Gets the bottom of this OrderRuleAclDto.
+
+        是否置底，0代表非置底，1代表置底
+
+        :return: The bottom of this OrderRuleAclDto.
+        :rtype: int
+        """
+        return self._bottom
+
+    @bottom.setter
+    def bottom(self, bottom):
+        """Sets the bottom of this OrderRuleAclDto.
+
+        是否置底，0代表非置底，1代表置底
+
+        :param bottom: The bottom of this OrderRuleAclDto.
+        :type bottom: int
+        """
+        self._bottom = bottom
 
     def to_dict(self):
         """Returns the model properties as a dict"""

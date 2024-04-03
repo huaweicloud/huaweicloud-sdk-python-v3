@@ -19,16 +19,18 @@ class ListServiceSetDetailRequest:
     openapi_types = {
         'set_id': 'str',
         'enterprise_project_id': 'str',
-        'fw_instance_id': 'str'
+        'fw_instance_id': 'str',
+        'query_service_set_type': 'int'
     }
 
     attribute_map = {
         'set_id': 'set_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'fw_instance_id': 'fw_instance_id'
+        'fw_instance_id': 'fw_instance_id',
+        'query_service_set_type': 'query_service_set_type'
     }
 
-    def __init__(self, set_id=None, enterprise_project_id=None, fw_instance_id=None):
+    def __init__(self, set_id=None, enterprise_project_id=None, fw_instance_id=None, query_service_set_type=None):
         """ListServiceSetDetailRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ListServiceSetDetailRequest:
         :type enterprise_project_id: str
         :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
         :type fw_instance_id: str
+        :param query_service_set_type: 查询服务组类型，0表示自定义服务组，1表示预定义服务组
+        :type query_service_set_type: int
         """
         
         
@@ -46,6 +50,7 @@ class ListServiceSetDetailRequest:
         self._set_id = None
         self._enterprise_project_id = None
         self._fw_instance_id = None
+        self._query_service_set_type = None
         self.discriminator = None
 
         self.set_id = set_id
@@ -53,6 +58,8 @@ class ListServiceSetDetailRequest:
             self.enterprise_project_id = enterprise_project_id
         if fw_instance_id is not None:
             self.fw_instance_id = fw_instance_id
+        if query_service_set_type is not None:
+            self.query_service_set_type = query_service_set_type
 
     @property
     def set_id(self):
@@ -119,6 +126,28 @@ class ListServiceSetDetailRequest:
         :type fw_instance_id: str
         """
         self._fw_instance_id = fw_instance_id
+
+    @property
+    def query_service_set_type(self):
+        """Gets the query_service_set_type of this ListServiceSetDetailRequest.
+
+        查询服务组类型，0表示自定义服务组，1表示预定义服务组
+
+        :return: The query_service_set_type of this ListServiceSetDetailRequest.
+        :rtype: int
+        """
+        return self._query_service_set_type
+
+    @query_service_set_type.setter
+    def query_service_set_type(self, query_service_set_type):
+        """Sets the query_service_set_type of this ListServiceSetDetailRequest.
+
+        查询服务组类型，0表示自定义服务组，1表示预定义服务组
+
+        :param query_service_set_type: The query_service_set_type of this ListServiceSetDetailRequest.
+        :type query_service_set_type: int
+        """
+        self._query_service_set_type = query_service_set_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

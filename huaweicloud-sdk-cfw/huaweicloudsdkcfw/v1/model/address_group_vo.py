@@ -18,15 +18,19 @@ class AddressGroupVO:
 
     openapi_types = {
         'set_id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'protocols': 'list[int]',
+        'service_set_type': 'int'
     }
 
     attribute_map = {
         'set_id': 'set_id',
-        'name': 'name'
+        'name': 'name',
+        'protocols': 'protocols',
+        'service_set_type': 'service_set_type'
     }
 
-    def __init__(self, set_id=None, name=None):
+    def __init__(self, set_id=None, name=None, protocols=None, service_set_type=None):
         """AddressGroupVO
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class AddressGroupVO:
         :type set_id: str
         :param name: 地址组名称
         :type name: str
+        :param protocols: 协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        :type protocols: list[int]
+        :param service_set_type: 服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+        :type service_set_type: int
         """
         
         
 
         self._set_id = None
         self._name = None
+        self._protocols = None
+        self._service_set_type = None
         self.discriminator = None
 
         if set_id is not None:
             self.set_id = set_id
         if name is not None:
             self.name = name
+        if protocols is not None:
+            self.protocols = protocols
+        if service_set_type is not None:
+            self.service_set_type = service_set_type
 
     @property
     def set_id(self):
@@ -91,6 +105,50 @@ class AddressGroupVO:
         :type name: str
         """
         self._name = name
+
+    @property
+    def protocols(self):
+        """Gets the protocols of this AddressGroupVO.
+
+        协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+
+        :return: The protocols of this AddressGroupVO.
+        :rtype: list[int]
+        """
+        return self._protocols
+
+    @protocols.setter
+    def protocols(self, protocols):
+        """Sets the protocols of this AddressGroupVO.
+
+        协议列表，协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+
+        :param protocols: The protocols of this AddressGroupVO.
+        :type protocols: list[int]
+        """
+        self._protocols = protocols
+
+    @property
+    def service_set_type(self):
+        """Gets the service_set_type of this AddressGroupVO.
+
+        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+
+        :return: The service_set_type of this AddressGroupVO.
+        :rtype: int
+        """
+        return self._service_set_type
+
+    @service_set_type.setter
+    def service_set_type(self, service_set_type):
+        """Sets the service_set_type of this AddressGroupVO.
+
+        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+
+        :param service_set_type: The service_set_type of this AddressGroupVO.
+        :type service_set_type: int
+        """
+        self._service_set_type = service_set_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

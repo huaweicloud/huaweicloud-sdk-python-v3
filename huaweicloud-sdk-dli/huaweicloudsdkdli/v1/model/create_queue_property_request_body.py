@@ -17,7 +17,7 @@ class CreateQueuePropertyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'properties': 'CreateQueuePropertyRequestBodyProperties'
+        'properties': 'CommonQueueProperty'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateQueuePropertyRequestBody:
         The model defined in huaweicloud sdk
 
         :param properties: 
-        :type properties: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequestBodyProperties`
+        :type properties: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
         """
         
         
@@ -46,7 +46,7 @@ class CreateQueuePropertyRequestBody:
         """Gets the properties of this CreateQueuePropertyRequestBody.
 
         :return: The properties of this CreateQueuePropertyRequestBody.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequestBodyProperties`
+        :rtype: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
         """
         return self._properties
 
@@ -55,7 +55,7 @@ class CreateQueuePropertyRequestBody:
         """Sets the properties of this CreateQueuePropertyRequestBody.
 
         :param properties: The properties of this CreateQueuePropertyRequestBody.
-        :type properties: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequestBodyProperties`
+        :type properties: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
         """
         self._properties = properties
 

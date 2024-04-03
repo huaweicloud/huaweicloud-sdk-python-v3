@@ -1230,6 +1230,71 @@ class WorkspaceAsyncClient(Client):
 
         return http_info
 
+    def cancel_remote_assistance_async(self, request):
+        """取消远程协助
+
+        取消远程协助。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelRemoteAssistance
+        :type request: :class:`huaweicloudsdkworkspace.v2.CancelRemoteAssistanceRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CancelRemoteAssistanceResponse`
+        """
+        http_info = self._cancel_remote_assistance_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_remote_assistance_async_invoker(self, request):
+        http_info = self._cancel_remote_assistance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_remote_assistance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/remote-assistance",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelRemoteAssistanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_desktop_network_async(self, request):
         """切换桌面网络
 
@@ -1341,6 +1406,71 @@ class WorkspaceAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_remote_assistance_async(self, request):
+        """创建远程协助
+
+        创建远程协助。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRemoteAssistance
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateRemoteAssistanceRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateRemoteAssistanceResponse`
+        """
+        http_info = self._create_remote_assistance_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_remote_assistance_async_invoker(self, request):
+        http_info = self._create_remote_assistance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_remote_assistance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/remote-assistance",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRemoteAssistanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1837,6 +1967,71 @@ class WorkspaceAsyncClient(Client):
             "resource_path": "/v2/{project_id}/desktops/{desktop_id}/networks",
             "request_type": request.__class__.__name__,
             "response_type": "ShowDesktopNetworkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_desktop_remote_assistance_info_async(self, request):
+        """根据桌面id查询远程协助信息
+
+        根据桌面id查询远程协助信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDesktopRemoteAssistanceInfo
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowDesktopRemoteAssistanceInfoRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowDesktopRemoteAssistanceInfoResponse`
+        """
+        http_info = self._show_desktop_remote_assistance_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_desktop_remote_assistance_info_async_invoker(self, request):
+        http_info = self._show_desktop_remote_assistance_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_desktop_remote_assistance_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/remote-assistance",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDesktopRemoteAssistanceInfoResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

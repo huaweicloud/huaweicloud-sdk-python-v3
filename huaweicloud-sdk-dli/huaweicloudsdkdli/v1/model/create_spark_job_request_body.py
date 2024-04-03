@@ -26,8 +26,8 @@ class CreateSparkJobRequestBody:
         'py_files': 'list[str]',
         'files': 'list[str]',
         'modules': 'list[str]',
-        'resources': 'list[SparkJobResource]',
-        'groups': 'list[SparkJobGroup]',
+        'resources': 'list[JobResource]',
+        'groups': 'list[JobResourcesGroup]',
         'conf': 'dict(str, object)',
         'name': 'str',
         'driver_memory': 'str',
@@ -98,9 +98,9 @@ class CreateSparkJobRequestBody:
         :param modules: 依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下： CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
         :type modules: list[str]
         :param resources: JSON对象列表，填写用户已上传到队列的类型为JSON的资源包名和类型。
-        :type resources: list[:class:`huaweicloudsdkdli.v1.SparkJobResource`]
+        :type resources: list[:class:`huaweicloudsdkdli.v1.JobResource`]
         :param groups: JSON对象列表，填写用户组类型资源，格式详见请求示例。resources中的name未进行type校验，只要此分组中存在这个名字的包即可。
-        :type groups: list[:class:`huaweicloudsdkdli.v1.SparkJobGroup`]
+        :type groups: list[:class:`huaweicloudsdkdli.v1.JobResourcesGroup`]
         :param conf: batch配置项。
         :type conf: dict(str, object)
         :param name: 创建时用户指定的批处理名称，不能超过128个字符。
@@ -419,7 +419,7 @@ class CreateSparkJobRequestBody:
         JSON对象列表，填写用户已上传到队列的类型为JSON的资源包名和类型。
 
         :return: The resources of this CreateSparkJobRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.SparkJobResource`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.JobResource`]
         """
         return self._resources
 
@@ -430,7 +430,7 @@ class CreateSparkJobRequestBody:
         JSON对象列表，填写用户已上传到队列的类型为JSON的资源包名和类型。
 
         :param resources: The resources of this CreateSparkJobRequestBody.
-        :type resources: list[:class:`huaweicloudsdkdli.v1.SparkJobResource`]
+        :type resources: list[:class:`huaweicloudsdkdli.v1.JobResource`]
         """
         self._resources = resources
 
@@ -441,7 +441,7 @@ class CreateSparkJobRequestBody:
         JSON对象列表，填写用户组类型资源，格式详见请求示例。resources中的name未进行type校验，只要此分组中存在这个名字的包即可。
 
         :return: The groups of this CreateSparkJobRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.SparkJobGroup`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.JobResourcesGroup`]
         """
         return self._groups
 
@@ -452,7 +452,7 @@ class CreateSparkJobRequestBody:
         JSON对象列表，填写用户组类型资源，格式详见请求示例。resources中的name未进行type校验，只要此分组中存在这个名字的包即可。
 
         :param groups: The groups of this CreateSparkJobRequestBody.
-        :type groups: list[:class:`huaweicloudsdkdli.v1.SparkJobGroup`]
+        :type groups: list[:class:`huaweicloudsdkdli.v1.JobResourcesGroup`]
         """
         self._groups = groups
 

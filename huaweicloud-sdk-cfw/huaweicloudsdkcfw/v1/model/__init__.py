@@ -195,10 +195,12 @@ from huaweicloudsdkcfw.v1.model.query_fire_wall_instance_dto import QueryFireWal
 from huaweicloudsdkcfw.v1.model.rule_acl_list_response_dto_data import RuleAclListResponseDTOData
 from huaweicloudsdkcfw.v1.model.rule_acl_list_response_dto_data_records import RuleAclListResponseDTODataRecords
 from huaweicloudsdkcfw.v1.model.rule_address_dto import RuleAddressDto
+from huaweicloudsdkcfw.v1.model.rule_address_dto_for_request import RuleAddressDtoForRequest
 from huaweicloudsdkcfw.v1.model.rule_hit_count_object import RuleHitCountObject
 from huaweicloudsdkcfw.v1.model.rule_hit_count_records import RuleHitCountRecords
 from huaweicloudsdkcfw.v1.model.rule_id import RuleId
 from huaweicloudsdkcfw.v1.model.rule_id_list import RuleIdList
+from huaweicloudsdkcfw.v1.model.rule_profile_dto import RuleProfileDto
 from huaweicloudsdkcfw.v1.model.rule_service_dto import RuleServiceDto
 from huaweicloudsdkcfw.v1.model.service_item import ServiceItem
 from huaweicloudsdkcfw.v1.model.service_item_ids import ServiceItemIds
@@ -237,6 +239,7 @@ from huaweicloudsdkcfw.v1.model.update_security_polcies_action_dto import Update
 from huaweicloudsdkcfw.v1.model.update_service_set_request import UpdateServiceSetRequest
 from huaweicloudsdkcfw.v1.model.update_service_set_response import UpdateServiceSetResponse
 from huaweicloudsdkcfw.v1.model.update_service_set_using_put_request_body import UpdateServiceSetUsingPUTRequestBody
+from huaweicloudsdkcfw.v1.model.use_rule_vo import UseRuleVO
 from huaweicloudsdkcfw.v1.model.vpc_protects_vo import VPCProtectsVo
 from huaweicloudsdkcfw.v1.model.vpc_attachment_detail import VpcAttachmentDetail
 from huaweicloudsdkcfw.v1.model.vpc_detail import VpcDetail

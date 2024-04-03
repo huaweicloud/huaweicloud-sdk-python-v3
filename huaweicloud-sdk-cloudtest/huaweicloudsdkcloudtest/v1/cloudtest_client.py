@@ -641,6 +641,73 @@ class CloudtestClient(Client):
 
         return http_info
 
+    def list_testcases_by_project_issues_relation(self, request):
+        """查询项目下关联了需求的用例列表
+
+        查询项目下关联了需求的用例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTestcasesByProjectIssuesRelation
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTestcasesByProjectIssuesRelationRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTestcasesByProjectIssuesRelationResponse`
+        """
+        http_info = self._list_testcases_by_project_issues_relation_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_testcases_by_project_issues_relation_invoker(self, request):
+        http_info = self._list_testcases_by_project_issues_relation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_testcases_by_project_issues_relation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/issues/testcases/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTestcasesByProjectIssuesRelationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def run_test_case(self, request):
         """批量执行测试用例
 
@@ -973,6 +1040,8 @@ class CloudtestClient(Client):
             query_params.append(('branch_uri', local_var_params['branch_uri']))
         if 'query_all_version' in local_var_params:
             query_params.append(('query_all_version', local_var_params['query_all_version']))
+        if 'fix_version_ids' in local_var_params:
+            query_params.append(('fix_version_ids', local_var_params['fix_version_ids']))
 
         header_params = {}
 

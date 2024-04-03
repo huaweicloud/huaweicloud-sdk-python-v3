@@ -18,50 +18,72 @@ class ListJobResourcesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total': 'int',
         'resources': 'list[PackageResource]',
         'modules': 'list[PackageResourceMoudle]',
-        'groups': 'list[object]',
-        'total': 'int'
+        'groups': 'list[PackageResourceGroup]'
     }
 
     attribute_map = {
+        'total': 'total',
         'resources': 'resources',
         'modules': 'modules',
-        'groups': 'groups',
-        'total': 'total'
+        'groups': 'groups'
     }
 
-    def __init__(self, resources=None, modules=None, groups=None, total=None):
+    def __init__(self, total=None, resources=None, modules=None, groups=None):
         """ListJobResourcesResponse
 
         The model defined in huaweicloud sdk
 
+        :param total: 资源包返回总数
+        :type total: int
         :param resources: 已上传的用户资源名列表。
         :type resources: list[:class:`huaweicloudsdkdli.v1.PackageResource`]
         :param modules: 系统内置资源模块列表
         :type modules: list[:class:`huaweicloudsdkdli.v1.PackageResourceMoudle`]
         :param groups: 已上传的用户分组资源。
-        :type groups: list[object]
-        :param total: 资源包返回总数
-        :type total: int
+        :type groups: list[:class:`huaweicloudsdkdli.v1.PackageResourceGroup`]
         """
         
         super(ListJobResourcesResponse, self).__init__()
 
+        self._total = None
         self._resources = None
         self._modules = None
         self._groups = None
-        self._total = None
         self.discriminator = None
 
+        if total is not None:
+            self.total = total
         if resources is not None:
             self.resources = resources
         if modules is not None:
             self.modules = modules
         if groups is not None:
             self.groups = groups
-        if total is not None:
-            self.total = total
+
+    @property
+    def total(self):
+        """Gets the total of this ListJobResourcesResponse.
+
+        资源包返回总数
+
+        :return: The total of this ListJobResourcesResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListJobResourcesResponse.
+
+        资源包返回总数
+
+        :param total: The total of this ListJobResourcesResponse.
+        :type total: int
+        """
+        self._total = total
 
     @property
     def resources(self):
@@ -114,7 +136,7 @@ class ListJobResourcesResponse(SdkResponse):
         已上传的用户分组资源。
 
         :return: The groups of this ListJobResourcesResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.PackageResourceGroup`]
         """
         return self._groups
 
@@ -125,31 +147,9 @@ class ListJobResourcesResponse(SdkResponse):
         已上传的用户分组资源。
 
         :param groups: The groups of this ListJobResourcesResponse.
-        :type groups: list[object]
+        :type groups: list[:class:`huaweicloudsdkdli.v1.PackageResourceGroup`]
         """
         self._groups = groups
-
-    @property
-    def total(self):
-        """Gets the total of this ListJobResourcesResponse.
-
-        资源包返回总数
-
-        :return: The total of this ListJobResourcesResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListJobResourcesResponse.
-
-        资源包返回总数
-
-        :param total: The total of this ListJobResourcesResponse.
-        :type total: int
-        """
-        self._total = total
 
     def to_dict(self):
         """Returns the model properties as a dict"""

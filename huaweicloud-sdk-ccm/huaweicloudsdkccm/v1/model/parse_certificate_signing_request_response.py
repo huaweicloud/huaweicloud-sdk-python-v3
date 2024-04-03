@@ -19,7 +19,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     openapi_types = {
         'key_algorithm': 'str',
-        'key_algorithm_length': 'str',
+        'key_algorithm_length': 'int',
         'signature_algorithm': 'str',
         'public_key': 'str',
         'distinguished_name': 'DistinguishedName'
@@ -41,7 +41,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
         :param key_algorithm: 密钥算法。
         :type key_algorithm: str
         :param key_algorithm_length: 密钥算法长度，单位为bit。
-        :type key_algorithm_length: str
+        :type key_algorithm_length: int
         :param signature_algorithm: 签名算法，带具体的签名与哈希算法，如\&quot;SHA256withRSA\&quot;。
         :type signature_algorithm: str
         :param public_key: 公钥内容。 &gt; 其中，换行符已被“\\r\\n”替代；
@@ -99,7 +99,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
         密钥算法长度，单位为bit。
 
         :return: The key_algorithm_length of this ParseCertificateSigningRequestResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._key_algorithm_length
 
@@ -110,7 +110,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
         密钥算法长度，单位为bit。
 
         :param key_algorithm_length: The key_algorithm_length of this ParseCertificateSigningRequestResponse.
-        :type key_algorithm_length: str
+        :type key_algorithm_length: int
         """
         self._key_algorithm_length = key_algorithm_length
 

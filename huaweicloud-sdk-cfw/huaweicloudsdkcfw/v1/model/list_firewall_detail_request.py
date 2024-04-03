@@ -21,7 +21,8 @@ class ListFirewallDetailRequest:
         'limit': 'int',
         'service_type': 'int',
         'enterprise_project_id': 'str',
-        'fw_instance_id': 'str'
+        'fw_instance_id': 'str',
+        'name': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListFirewallDetailRequest:
         'limit': 'limit',
         'service_type': 'service_type',
         'enterprise_project_id': 'enterprise_project_id',
-        'fw_instance_id': 'fw_instance_id'
+        'fw_instance_id': 'fw_instance_id',
+        'name': 'name'
     }
 
-    def __init__(self, offset=None, limit=None, service_type=None, enterprise_project_id=None, fw_instance_id=None):
+    def __init__(self, offset=None, limit=None, service_type=None, enterprise_project_id=None, fw_instance_id=None, name=None):
         """ListFirewallDetailRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListFirewallDetailRequest:
         :type enterprise_project_id: str
         :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
         :type fw_instance_id: str
+        :param name: 防火墙名称
+        :type name: str
         """
         
         
@@ -56,6 +60,7 @@ class ListFirewallDetailRequest:
         self._service_type = None
         self._enterprise_project_id = None
         self._fw_instance_id = None
+        self._name = None
         self.discriminator = None
 
         self.offset = offset
@@ -65,6 +70,8 @@ class ListFirewallDetailRequest:
             self.enterprise_project_id = enterprise_project_id
         if fw_instance_id is not None:
             self.fw_instance_id = fw_instance_id
+        if name is not None:
+            self.name = name
 
     @property
     def offset(self):
@@ -175,6 +182,28 @@ class ListFirewallDetailRequest:
         :type fw_instance_id: str
         """
         self._fw_instance_id = fw_instance_id
+
+    @property
+    def name(self):
+        """Gets the name of this ListFirewallDetailRequest.
+
+        防火墙名称
+
+        :return: The name of this ListFirewallDetailRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListFirewallDetailRequest.
+
+        防火墙名称
+
+        :param name: The name of this ListFirewallDetailRequest.
+        :type name: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

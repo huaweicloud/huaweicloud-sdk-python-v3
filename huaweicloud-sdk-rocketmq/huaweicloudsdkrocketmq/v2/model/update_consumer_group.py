@@ -21,8 +21,7 @@ class UpdateConsumerGroup:
         'broadcast': 'bool',
         'brokers': 'list[str]',
         'name': 'str',
-        'retry_max_time': 'int',
-        'from_beginning': 'bool'
+        'retry_max_time': 'int'
     }
 
     attribute_map = {
@@ -30,11 +29,10 @@ class UpdateConsumerGroup:
         'broadcast': 'broadcast',
         'brokers': 'brokers',
         'name': 'name',
-        'retry_max_time': 'retry_max_time',
-        'from_beginning': 'from_beginning'
+        'retry_max_time': 'retry_max_time'
     }
 
-    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None, from_beginning=None):
+    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None):
         """UpdateConsumerGroup
 
         The model defined in huaweicloud sdk
@@ -49,8 +47,6 @@ class UpdateConsumerGroup:
         :type name: str
         :param retry_max_time: 最大重试次数，取值范围为1~16。
         :type retry_max_time: int
-        :param from_beginning: 是否重头消费。
-        :type from_beginning: bool
         """
         
         
@@ -60,7 +56,6 @@ class UpdateConsumerGroup:
         self._brokers = None
         self._name = None
         self._retry_max_time = None
-        self._from_beginning = None
         self.discriminator = None
 
         self.enabled = enabled
@@ -70,8 +65,6 @@ class UpdateConsumerGroup:
         if name is not None:
             self.name = name
         self.retry_max_time = retry_max_time
-        if from_beginning is not None:
-            self.from_beginning = from_beginning
 
     @property
     def enabled(self):
@@ -182,28 +175,6 @@ class UpdateConsumerGroup:
         :type retry_max_time: int
         """
         self._retry_max_time = retry_max_time
-
-    @property
-    def from_beginning(self):
-        """Gets the from_beginning of this UpdateConsumerGroup.
-
-        是否重头消费。
-
-        :return: The from_beginning of this UpdateConsumerGroup.
-        :rtype: bool
-        """
-        return self._from_beginning
-
-    @from_beginning.setter
-    def from_beginning(self, from_beginning):
-        """Sets the from_beginning of this UpdateConsumerGroup.
-
-        是否重头消费。
-
-        :param from_beginning: The from_beginning of this UpdateConsumerGroup.
-        :type from_beginning: bool
-        """
-        self._from_beginning = from_beginning
 
     def to_dict(self):
         """Returns the model properties as a dict"""

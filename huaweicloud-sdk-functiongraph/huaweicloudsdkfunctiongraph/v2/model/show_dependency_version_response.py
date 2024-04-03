@@ -30,7 +30,8 @@ class ShowDependencyVersionResponse(SdkResponse):
         'version': 'int',
         'last_modified': 'int',
         'dep_id': 'str',
-        'download_link': 'str'
+        'download_link': 'str',
+        'is_shared': 'bool'
     }
 
     attribute_map = {
@@ -46,10 +47,11 @@ class ShowDependencyVersionResponse(SdkResponse):
         'version': 'version',
         'last_modified': 'last_modified',
         'dep_id': 'dep_id',
-        'download_link': 'download_link'
+        'download_link': 'download_link',
+        'is_shared': 'is_shared'
     }
 
-    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, last_modified=None, dep_id=None, download_link=None):
+    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, last_modified=None, dep_id=None, download_link=None, is_shared=None):
         """ShowDependencyVersionResponse
 
         The model defined in huaweicloud sdk
@@ -60,7 +62,7 @@ class ShowDependencyVersionResponse(SdkResponse):
         :type owner: str
         :param link: 依赖包在obs的存储地址。
         :type link: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        :param runtime: FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
         :param etag: 依赖包唯一标志（MD5校验值）。
         :type etag: str
@@ -80,6 +82,8 @@ class ShowDependencyVersionResponse(SdkResponse):
         :type dep_id: str
         :param download_link: 依赖包文件临时下载链接
         :type download_link: str
+        :param is_shared: 是否共享（已废弃）
+        :type is_shared: bool
         """
         
         super(ShowDependencyVersionResponse, self).__init__()
@@ -97,6 +101,7 @@ class ShowDependencyVersionResponse(SdkResponse):
         self._last_modified = None
         self._dep_id = None
         self._download_link = None
+        self._is_shared = None
         self.discriminator = None
 
         if id is not None:
@@ -125,6 +130,8 @@ class ShowDependencyVersionResponse(SdkResponse):
             self.dep_id = dep_id
         if download_link is not None:
             self.download_link = download_link
+        if is_shared is not None:
+            self.is_shared = is_shared
 
     @property
     def id(self):
@@ -196,7 +203,7 @@ class ShowDependencyVersionResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this ShowDependencyVersionResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this ShowDependencyVersionResponse.
         :rtype: str
@@ -207,7 +214,7 @@ class ShowDependencyVersionResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this ShowDependencyVersionResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this ShowDependencyVersionResponse.
         :type runtime: str
@@ -411,6 +418,28 @@ class ShowDependencyVersionResponse(SdkResponse):
         :type download_link: str
         """
         self._download_link = download_link
+
+    @property
+    def is_shared(self):
+        """Gets the is_shared of this ShowDependencyVersionResponse.
+
+        是否共享（已废弃）
+
+        :return: The is_shared of this ShowDependencyVersionResponse.
+        :rtype: bool
+        """
+        return self._is_shared
+
+    @is_shared.setter
+    def is_shared(self, is_shared):
+        """Sets the is_shared of this ShowDependencyVersionResponse.
+
+        是否共享（已废弃）
+
+        :param is_shared: The is_shared of this ShowDependencyVersionResponse.
+        :type is_shared: bool
+        """
+        self._is_shared = is_shared
 
     def to_dict(self):
         """Returns the model properties as a dict"""

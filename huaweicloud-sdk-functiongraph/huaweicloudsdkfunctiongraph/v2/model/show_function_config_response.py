@@ -73,7 +73,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         'enable_class_isolation': 'bool',
         'gpu_type': 'str',
         'allow_ephemeral_storage': 'bool',
-        'network_controller': 'NetworkControlConfig'
+        'network_controller': 'NetworkControlConfig',
+        'is_return_stream': 'bool'
     }
 
     attribute_map = {
@@ -132,10 +133,11 @@ class ShowFunctionConfigResponse(SdkResponse):
         'enable_class_isolation': 'enable_class_isolation',
         'gpu_type': 'gpu_type',
         'allow_ephemeral_storage': 'allow_ephemeral_storage',
-        'network_controller': 'network_controller'
+        'network_controller': 'network_controller',
+        'is_return_stream': 'is_return_stream'
     }
 
-    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, is_bridge_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, network_controller=None):
+    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, is_bridge_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, network_controller=None, is_return_stream=None):
         """ShowFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -156,7 +158,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        :param runtime: FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
         :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
@@ -226,7 +228,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type log_stream_id: str
         :param type: v2表示为正式版本,v1为废弃版本。
         :type type: str
-        :param enable_cloud_debug: 是否启用cloud debug功能
+        :param enable_cloud_debug: 适配CloudDebug场景，是否开启云调试（已废弃）
         :type enable_cloud_debug: str
         :param enable_dynamic_memory: 是否允许动态内存配置
         :type enable_dynamic_memory: bool
@@ -234,7 +236,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type is_stateful_function: bool
         :param is_bridge_function: 是否为bridge函数
         :type is_bridge_function: bool
-        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息
+        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息，只支持自定义镜像函数
         :type enable_auth_in_header: bool
         :param custom_image: 
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
@@ -252,6 +254,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type allow_ephemeral_storage: bool
         :param network_controller: 
         :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        :param is_return_stream: 是否返回流式数据（已废弃）
+        :type is_return_stream: bool
         """
         
         super(ShowFunctionConfigResponse, self).__init__()
@@ -312,6 +316,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._gpu_type = None
         self._allow_ephemeral_storage = None
         self._network_controller = None
+        self._is_return_stream = None
         self.discriminator = None
 
         if func_id is not None:
@@ -426,6 +431,8 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.allow_ephemeral_storage = allow_ephemeral_storage
         if network_controller is not None:
             self.network_controller = network_controller
+        if is_return_stream is not None:
+            self.is_return_stream = is_return_stream
 
     @property
     def func_id(self):
@@ -607,7 +614,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this ShowFunctionConfigResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this ShowFunctionConfigResponse.
         :rtype: str
@@ -618,7 +625,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this ShowFunctionConfigResponse.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this ShowFunctionConfigResponse.
         :type runtime: str
@@ -1365,7 +1372,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def enable_cloud_debug(self):
         """Gets the enable_cloud_debug of this ShowFunctionConfigResponse.
 
-        是否启用cloud debug功能
+        适配CloudDebug场景，是否开启云调试（已废弃）
 
         :return: The enable_cloud_debug of this ShowFunctionConfigResponse.
         :rtype: str
@@ -1376,7 +1383,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def enable_cloud_debug(self, enable_cloud_debug):
         """Sets the enable_cloud_debug of this ShowFunctionConfigResponse.
 
-        是否启用cloud debug功能
+        适配CloudDebug场景，是否开启云调试（已废弃）
 
         :param enable_cloud_debug: The enable_cloud_debug of this ShowFunctionConfigResponse.
         :type enable_cloud_debug: str
@@ -1453,7 +1460,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def enable_auth_in_header(self):
         """Gets the enable_auth_in_header of this ShowFunctionConfigResponse.
 
-        是否允许在请求头中添加鉴权信息
+        是否允许在请求头中添加鉴权信息，只支持自定义镜像函数
 
         :return: The enable_auth_in_header of this ShowFunctionConfigResponse.
         :rtype: bool
@@ -1464,7 +1471,7 @@ class ShowFunctionConfigResponse(SdkResponse):
     def enable_auth_in_header(self, enable_auth_in_header):
         """Sets the enable_auth_in_header of this ShowFunctionConfigResponse.
 
-        是否允许在请求头中添加鉴权信息
+        是否允许在请求头中添加鉴权信息，只支持自定义镜像函数
 
         :param enable_auth_in_header: The enable_auth_in_header of this ShowFunctionConfigResponse.
         :type enable_auth_in_header: bool
@@ -1638,6 +1645,28 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
         """
         self._network_controller = network_controller
+
+    @property
+    def is_return_stream(self):
+        """Gets the is_return_stream of this ShowFunctionConfigResponse.
+
+        是否返回流式数据（已废弃）
+
+        :return: The is_return_stream of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._is_return_stream
+
+    @is_return_stream.setter
+    def is_return_stream(self, is_return_stream):
+        """Sets the is_return_stream of this ShowFunctionConfigResponse.
+
+        是否返回流式数据（已废弃）
+
+        :param is_return_stream: The is_return_stream of this ShowFunctionConfigResponse.
+        :type is_return_stream: bool
+        """
+        self._is_return_stream = is_return_stream
 
     def to_dict(self):
         """Returns the model properties as a dict"""

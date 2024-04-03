@@ -17,78 +17,251 @@ class Partition:
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'int',
-        'partition_infos': 'list[PartitionInfo]'
+        'partition_name': 'str',
+        'create_time': 'int',
+        'last_access_time': 'int',
+        'locations': 'list[str]',
+        'last_ddl_time': 'int',
+        'num_rows': 'int',
+        'num_files': 'int',
+        'total_size': 'int'
     }
 
     attribute_map = {
-        'total_count': 'total_count',
-        'partition_infos': 'partition_infos'
+        'partition_name': 'partition_name',
+        'create_time': 'create_time',
+        'last_access_time': 'last_access_time',
+        'locations': 'locations',
+        'last_ddl_time': 'last_ddl_time',
+        'num_rows': 'num_rows',
+        'num_files': 'num_files',
+        'total_size': 'total_size'
     }
 
-    def __init__(self, total_count=None, partition_infos=None):
+    def __init__(self, partition_name=None, create_time=None, last_access_time=None, locations=None, last_ddl_time=None, num_rows=None, num_files=None, total_size=None):
         """Partition
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 总个数
-        :type total_count: int
-        :param partition_infos: 分区信息列表
-        :type partition_infos: list[:class:`huaweicloudsdkdli.v1.PartitionInfo`]
+        :param partition_name: 分区名
+        :type partition_name: str
+        :param create_time: 创建时间
+        :type create_time: int
+        :param last_access_time: 最后改动时间
+        :type last_access_time: int
+        :param locations: 路径，外表显示，内表不显示
+        :type locations: list[str]
+        :param last_ddl_time: 最后一个ddl语句执行时间，时间戳单位：秒
+        :type last_ddl_time: int
+        :param num_rows: 该分区数据总行数
+        :type num_rows: int
+        :param num_files: 分区文件数
+        :type num_files: int
+        :param total_size: 该分区总的数据大小（单位：字节）
+        :type total_size: int
         """
         
         
 
-        self._total_count = None
-        self._partition_infos = None
+        self._partition_name = None
+        self._create_time = None
+        self._last_access_time = None
+        self._locations = None
+        self._last_ddl_time = None
+        self._num_rows = None
+        self._num_files = None
+        self._total_size = None
         self.discriminator = None
 
-        self.total_count = total_count
-        self.partition_infos = partition_infos
+        self.partition_name = partition_name
+        self.create_time = create_time
+        self.last_access_time = last_access_time
+        if locations is not None:
+            self.locations = locations
+        if last_ddl_time is not None:
+            self.last_ddl_time = last_ddl_time
+        if num_rows is not None:
+            self.num_rows = num_rows
+        if num_files is not None:
+            self.num_files = num_files
+        if total_size is not None:
+            self.total_size = total_size
 
     @property
-    def total_count(self):
-        """Gets the total_count of this Partition.
+    def partition_name(self):
+        """Gets the partition_name of this Partition.
 
-        总个数
+        分区名
 
-        :return: The total_count of this Partition.
+        :return: The partition_name of this Partition.
+        :rtype: str
+        """
+        return self._partition_name
+
+    @partition_name.setter
+    def partition_name(self, partition_name):
+        """Sets the partition_name of this Partition.
+
+        分区名
+
+        :param partition_name: The partition_name of this Partition.
+        :type partition_name: str
+        """
+        self._partition_name = partition_name
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this Partition.
+
+        创建时间
+
+        :return: The create_time of this Partition.
         :rtype: int
         """
-        return self._total_count
+        return self._create_time
 
-    @total_count.setter
-    def total_count(self, total_count):
-        """Sets the total_count of this Partition.
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this Partition.
 
-        总个数
+        创建时间
 
-        :param total_count: The total_count of this Partition.
-        :type total_count: int
+        :param create_time: The create_time of this Partition.
+        :type create_time: int
         """
-        self._total_count = total_count
+        self._create_time = create_time
 
     @property
-    def partition_infos(self):
-        """Gets the partition_infos of this Partition.
+    def last_access_time(self):
+        """Gets the last_access_time of this Partition.
 
-        分区信息列表
+        最后改动时间
 
-        :return: The partition_infos of this Partition.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.PartitionInfo`]
+        :return: The last_access_time of this Partition.
+        :rtype: int
         """
-        return self._partition_infos
+        return self._last_access_time
 
-    @partition_infos.setter
-    def partition_infos(self, partition_infos):
-        """Sets the partition_infos of this Partition.
+    @last_access_time.setter
+    def last_access_time(self, last_access_time):
+        """Sets the last_access_time of this Partition.
 
-        分区信息列表
+        最后改动时间
 
-        :param partition_infos: The partition_infos of this Partition.
-        :type partition_infos: list[:class:`huaweicloudsdkdli.v1.PartitionInfo`]
+        :param last_access_time: The last_access_time of this Partition.
+        :type last_access_time: int
         """
-        self._partition_infos = partition_infos
+        self._last_access_time = last_access_time
+
+    @property
+    def locations(self):
+        """Gets the locations of this Partition.
+
+        路径，外表显示，内表不显示
+
+        :return: The locations of this Partition.
+        :rtype: list[str]
+        """
+        return self._locations
+
+    @locations.setter
+    def locations(self, locations):
+        """Sets the locations of this Partition.
+
+        路径，外表显示，内表不显示
+
+        :param locations: The locations of this Partition.
+        :type locations: list[str]
+        """
+        self._locations = locations
+
+    @property
+    def last_ddl_time(self):
+        """Gets the last_ddl_time of this Partition.
+
+        最后一个ddl语句执行时间，时间戳单位：秒
+
+        :return: The last_ddl_time of this Partition.
+        :rtype: int
+        """
+        return self._last_ddl_time
+
+    @last_ddl_time.setter
+    def last_ddl_time(self, last_ddl_time):
+        """Sets the last_ddl_time of this Partition.
+
+        最后一个ddl语句执行时间，时间戳单位：秒
+
+        :param last_ddl_time: The last_ddl_time of this Partition.
+        :type last_ddl_time: int
+        """
+        self._last_ddl_time = last_ddl_time
+
+    @property
+    def num_rows(self):
+        """Gets the num_rows of this Partition.
+
+        该分区数据总行数
+
+        :return: The num_rows of this Partition.
+        :rtype: int
+        """
+        return self._num_rows
+
+    @num_rows.setter
+    def num_rows(self, num_rows):
+        """Sets the num_rows of this Partition.
+
+        该分区数据总行数
+
+        :param num_rows: The num_rows of this Partition.
+        :type num_rows: int
+        """
+        self._num_rows = num_rows
+
+    @property
+    def num_files(self):
+        """Gets the num_files of this Partition.
+
+        分区文件数
+
+        :return: The num_files of this Partition.
+        :rtype: int
+        """
+        return self._num_files
+
+    @num_files.setter
+    def num_files(self, num_files):
+        """Sets the num_files of this Partition.
+
+        分区文件数
+
+        :param num_files: The num_files of this Partition.
+        :type num_files: int
+        """
+        self._num_files = num_files
+
+    @property
+    def total_size(self):
+        """Gets the total_size of this Partition.
+
+        该分区总的数据大小（单位：字节）
+
+        :return: The total_size of this Partition.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        """Sets the total_size of this Partition.
+
+        该分区总的数据大小（单位：字节）
+
+        :param total_size: The total_size of this Partition.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

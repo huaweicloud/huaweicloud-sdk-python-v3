@@ -20,16 +20,18 @@ class ListStatisticsResponse(SdkResponse):
     openapi_types = {
         'count': 'list[MonthUsed]',
         'gbs': 'list[MonthUsed]',
+        'gpu_gbs': 'list[MonthUsed]',
         'statistics': 'ListFunctionStatisticsResponseBody'
     }
 
     attribute_map = {
         'count': 'count',
         'gbs': 'gbs',
+        'gpu_gbs': 'gpu_gbs',
         'statistics': 'statistics'
     }
 
-    def __init__(self, count=None, gbs=None, statistics=None):
+    def __init__(self, count=None, gbs=None, gpu_gbs=None, statistics=None):
         """ListStatisticsResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ListStatisticsResponse(SdkResponse):
         :type count: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
         :param gbs: 月度资源用量
         :type gbs: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
+        :param gpu_gbs: 月度gpu资源用量
+        :type gpu_gbs: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
         :param statistics: 
         :type statistics: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsResponseBody`
         """
@@ -46,6 +50,7 @@ class ListStatisticsResponse(SdkResponse):
 
         self._count = None
         self._gbs = None
+        self._gpu_gbs = None
         self._statistics = None
         self.discriminator = None
 
@@ -53,6 +58,8 @@ class ListStatisticsResponse(SdkResponse):
             self.count = count
         if gbs is not None:
             self.gbs = gbs
+        if gpu_gbs is not None:
+            self.gpu_gbs = gpu_gbs
         if statistics is not None:
             self.statistics = statistics
 
@@ -99,6 +106,28 @@ class ListStatisticsResponse(SdkResponse):
         :type gbs: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
         """
         self._gbs = gbs
+
+    @property
+    def gpu_gbs(self):
+        """Gets the gpu_gbs of this ListStatisticsResponse.
+
+        月度gpu资源用量
+
+        :return: The gpu_gbs of this ListStatisticsResponse.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
+        """
+        return self._gpu_gbs
+
+    @gpu_gbs.setter
+    def gpu_gbs(self, gpu_gbs):
+        """Sets the gpu_gbs of this ListStatisticsResponse.
+
+        月度gpu资源用量
+
+        :param gpu_gbs: The gpu_gbs of this ListStatisticsResponse.
+        :type gpu_gbs: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
+        """
+        self._gpu_gbs = gpu_gbs
 
     @property
     def statistics(self):

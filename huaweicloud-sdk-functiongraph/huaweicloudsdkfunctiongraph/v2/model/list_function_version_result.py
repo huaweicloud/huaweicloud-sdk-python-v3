@@ -51,7 +51,6 @@ class ListFunctionVersionResult:
         'long_time': 'bool',
         'function_async_config': 'FunctionAsyncConfig',
         'type': 'str',
-        'enable_cloud_debug': 'str',
         'enable_dynamic_memory': 'bool',
         'enterprise_project_id': 'str',
         'is_stateful_function': 'bool',
@@ -95,7 +94,6 @@ class ListFunctionVersionResult:
         'long_time': 'long_time',
         'function_async_config': 'function_async_config',
         'type': 'type',
-        'enable_cloud_debug': 'enable_cloud_debug',
         'enable_dynamic_memory': 'enable_dynamic_memory',
         'enterprise_project_id': 'enterprise_project_id',
         'is_stateful_function': 'is_stateful_function',
@@ -104,7 +102,7 @@ class ListFunctionVersionResult:
         'reserved_instance_idle_mode': 'reserved_instance_idle_mode'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, last_modified=None, func_vpc_id=None, concurrency=None, concurrent_num=None, strategy_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, long_time=None, function_async_config=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, enterprise_project_id=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, last_modified=None, func_vpc_id=None, concurrency=None, concurrent_num=None, strategy_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, long_time=None, function_async_config=None, type=None, enable_dynamic_memory=None, enterprise_project_id=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None):
         """ListFunctionVersionResult
 
         The model defined in huaweicloud sdk
@@ -121,7 +119,7 @@ class ListFunctionVersionResult:
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        :param runtime: FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
         :type runtime: str
         :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
         :type timeout: int
@@ -177,8 +175,6 @@ class ListFunctionVersionResult:
         :type function_async_config: :class:`huaweicloudsdkfunctiongraph.v2.FunctionAsyncConfig`
         :param type: 函数版本
         :type type: str
-        :param enable_cloud_debug: 是否启用cloud debug功能
-        :type enable_cloud_debug: str
         :param enable_dynamic_memory: 是否启用动态内存功能
         :type enable_dynamic_memory: bool
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
@@ -229,7 +225,6 @@ class ListFunctionVersionResult:
         self._long_time = None
         self._function_async_config = None
         self._type = None
-        self._enable_cloud_debug = None
         self._enable_dynamic_memory = None
         self._enterprise_project_id = None
         self._is_stateful_function = None
@@ -289,8 +284,6 @@ class ListFunctionVersionResult:
             self.function_async_config = function_async_config
         if type is not None:
             self.type = type
-        if enable_cloud_debug is not None:
-            self.enable_cloud_debug = enable_cloud_debug
         if enable_dynamic_memory is not None:
             self.enable_dynamic_memory = enable_dynamic_memory
         if enterprise_project_id is not None:
@@ -440,7 +433,7 @@ class ListFunctionVersionResult:
     def runtime(self):
         """Gets the runtime of this ListFunctionVersionResult.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :return: The runtime of this ListFunctionVersionResult.
         :rtype: str
@@ -451,7 +444,7 @@ class ListFunctionVersionResult:
     def runtime(self, runtime):
         """Sets the runtime of this ListFunctionVersionResult.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
+        FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
         :param runtime: The runtime of this ListFunctionVersionResult.
         :type runtime: str
@@ -1043,28 +1036,6 @@ class ListFunctionVersionResult:
         :type type: str
         """
         self._type = type
-
-    @property
-    def enable_cloud_debug(self):
-        """Gets the enable_cloud_debug of this ListFunctionVersionResult.
-
-        是否启用cloud debug功能
-
-        :return: The enable_cloud_debug of this ListFunctionVersionResult.
-        :rtype: str
-        """
-        return self._enable_cloud_debug
-
-    @enable_cloud_debug.setter
-    def enable_cloud_debug(self, enable_cloud_debug):
-        """Sets the enable_cloud_debug of this ListFunctionVersionResult.
-
-        是否启用cloud debug功能
-
-        :param enable_cloud_debug: The enable_cloud_debug of this ListFunctionVersionResult.
-        :type enable_cloud_debug: str
-        """
-        self._enable_cloud_debug = enable_cloud_debug
 
     @property
     def enable_dynamic_memory(self):

@@ -2027,6 +2027,8 @@ class ConfigClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+        if 'organization_conformance_pack_id' in local_var_params:
+            query_params.append(('organization_conformance_pack_id', local_var_params['organization_conformance_pack_id']))
         if 'conformance_pack_name' in local_var_params:
             query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
 
@@ -2098,6 +2100,8 @@ class ConfigClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+        if 'organization_conformance_pack_id' in local_var_params:
+            query_params.append(('organization_conformance_pack_id', local_var_params['organization_conformance_pack_id']))
         if 'conformance_pack_name' in local_var_params:
             query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
 
@@ -2366,6 +2370,8 @@ class ConfigClient(Client):
         query_params = []
         if 'conformance_pack_name' in local_var_params:
             query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
+        if 'organization_conformance_pack_id' in local_var_params:
+            query_params.append(('organization_conformance_pack_id', local_var_params['organization_conformance_pack_id']))
         if 'state' in local_var_params:
             query_params.append(('state', local_var_params['state']))
         if 'limit' in local_var_params:
@@ -2475,9 +2481,9 @@ class ConfigClient(Client):
         return http_info
 
     def create_organization_policy_assignment(self, request):
-        """创建或更新组织合规规则
+        """创建组织合规规则
 
-        创建或更新组织合规规则，如果规则名称已存在，则为更新操作。
+        创建组织合规规则，如果规则名称已存在，则为更新操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2971,6 +2977,8 @@ class ConfigClient(Client):
             path_params['organization_id'] = local_var_params['organization_id']
 
         query_params = []
+        if 'organization_policy_assignment_id' in local_var_params:
+            query_params.append(('organization_policy_assignment_id', local_var_params['organization_policy_assignment_id']))
         if 'organization_policy_assignment_name' in local_var_params:
             query_params.append(('organization_policy_assignment_name', local_var_params['organization_policy_assignment_name']))
         if 'limit' in local_var_params:
@@ -3596,6 +3604,8 @@ class ConfigClient(Client):
         query_params = []
         if 'organization_policy_assignment_name' in local_var_params:
             query_params.append(('organization_policy_assignment_name', local_var_params['organization_policy_assignment_name']))
+        if 'organization_policy_assignment_id' in local_var_params:
+            query_params.append(('organization_policy_assignment_id', local_var_params['organization_policy_assignment_id']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
         if 'limit' in local_var_params:
@@ -3755,6 +3765,75 @@ class ConfigClient(Client):
             ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_organization_policy_assignment(self, request):
+        """更新组织合规规则
+
+        更新组织合规规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateOrganizationPolicyAssignment
+        :type request: :class:`huaweicloudsdkconfig.v1.UpdateOrganizationPolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.UpdateOrganizationPolicyAssignmentResponse`
+        """
+        http_info = self._update_organization_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_organization_policy_assignment_invoker(self, request):
+        http_info = self._update_organization_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_organization_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/organizations/{organization_id}/policy-assignments/{organization_policy_assignment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOrganizationPolicyAssignmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+        if 'organization_policy_assignment_id' in local_var_params:
+            path_params['organization_policy_assignment_id'] = local_var_params['organization_policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

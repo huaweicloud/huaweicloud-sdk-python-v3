@@ -20,7 +20,7 @@ class ShowFlinkJobResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'job_detail': 'FlinkJobDetail'
+        'job_detail': 'FlinkJob'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ShowFlinkJobResponse(SdkResponse):
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         :param job_detail: 
-        :type job_detail: :class:`huaweicloudsdkdli.v1.FlinkJobDetail`
+        :type job_detail: :class:`huaweicloudsdkdli.v1.FlinkJob`
         """
         
         super(ShowFlinkJobResponse, self).__init__()
@@ -105,7 +105,7 @@ class ShowFlinkJobResponse(SdkResponse):
         """Gets the job_detail of this ShowFlinkJobResponse.
 
         :return: The job_detail of this ShowFlinkJobResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.FlinkJobDetail`
+        :rtype: :class:`huaweicloudsdkdli.v1.FlinkJob`
         """
         return self._job_detail
 
@@ -114,7 +114,7 @@ class ShowFlinkJobResponse(SdkResponse):
         """Sets the job_detail of this ShowFlinkJobResponse.
 
         :param job_detail: The job_detail of this ShowFlinkJobResponse.
-        :type job_detail: :class:`huaweicloudsdkdli.v1.FlinkJobDetail`
+        :type job_detail: :class:`huaweicloudsdkdli.v1.FlinkJob`
         """
         self._job_detail = job_detail
 

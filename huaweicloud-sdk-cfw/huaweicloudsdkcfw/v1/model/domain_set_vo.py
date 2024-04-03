@@ -23,7 +23,8 @@ class DomainSetVo:
         'ref_count': 'int',
         'domain_set_type': 'int',
         'config_status': 'int',
-        'message': 'str'
+        'message': 'str',
+        'rules': 'list[UseRuleVO]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class DomainSetVo:
         'ref_count': 'ref_count',
         'domain_set_type': 'domain_set_type',
         'config_status': 'config_status',
-        'message': 'message'
+        'message': 'message',
+        'rules': 'rules'
     }
 
-    def __init__(self, set_id=None, name=None, description=None, ref_count=None, domain_set_type=None, config_status=None, message=None):
+    def __init__(self, set_id=None, name=None, description=None, ref_count=None, domain_set_type=None, config_status=None, message=None, rules=None):
         """DomainSetVo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class DomainSetVo:
         :type config_status: int
         :param message: 异常信息
         :type message: str
+        :param rules: 使用规则id列表
+        :type rules: list[:class:`huaweicloudsdkcfw.v1.UseRuleVO`]
         """
         
         
@@ -66,6 +70,7 @@ class DomainSetVo:
         self._domain_set_type = None
         self._config_status = None
         self._message = None
+        self._rules = None
         self.discriminator = None
 
         if set_id is not None:
@@ -82,6 +87,8 @@ class DomainSetVo:
             self.config_status = config_status
         if message is not None:
             self.message = message
+        if rules is not None:
+            self.rules = rules
 
     @property
     def set_id(self):
@@ -236,6 +243,28 @@ class DomainSetVo:
         :type message: str
         """
         self._message = message
+
+    @property
+    def rules(self):
+        """Gets the rules of this DomainSetVo.
+
+        使用规则id列表
+
+        :return: The rules of this DomainSetVo.
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.UseRuleVO`]
+        """
+        return self._rules
+
+    @rules.setter
+    def rules(self, rules):
+        """Sets the rules of this DomainSetVo.
+
+        使用规则id列表
+
+        :param rules: The rules of this DomainSetVo.
+        :type rules: list[:class:`huaweicloudsdkcfw.v1.UseRuleVO`]
+        """
+        self._rules = rules
 
     def to_dict(self):
         """Returns the model properties as a dict"""

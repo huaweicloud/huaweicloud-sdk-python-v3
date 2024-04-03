@@ -22,7 +22,8 @@ class ChangeServerOsWithoutCloudInitOption:
         'userid': 'str',
         'imageid': 'str',
         'mode': 'str',
-        'metadata': 'ChangeSeversOsMetadataWithoutCloudInitOption'
+        'metadata': 'ChangeSeversOsMetadataWithoutCloudInitOption',
+        'is_auto_pay': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ChangeServerOsWithoutCloudInitOption:
         'userid': 'userid',
         'imageid': 'imageid',
         'mode': 'mode',
-        'metadata': 'metadata'
+        'metadata': 'metadata',
+        'is_auto_pay': 'isAutoPay'
     }
 
-    def __init__(self, adminpass=None, keyname=None, userid=None, imageid=None, mode=None, metadata=None):
+    def __init__(self, adminpass=None, keyname=None, userid=None, imageid=None, mode=None, metadata=None, is_auto_pay=None):
         """ChangeServerOsWithoutCloudInitOption
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ChangeServerOsWithoutCloudInitOption:
         :type mode: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkecs.v2.ChangeSeversOsMetadataWithoutCloudInitOption`
+        :param is_auto_pay: 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。
+        :type is_auto_pay: str
         """
         
         
@@ -61,6 +65,7 @@ class ChangeServerOsWithoutCloudInitOption:
         self._imageid = None
         self._mode = None
         self._metadata = None
+        self._is_auto_pay = None
         self.discriminator = None
 
         if adminpass is not None:
@@ -74,6 +79,8 @@ class ChangeServerOsWithoutCloudInitOption:
             self.mode = mode
         if metadata is not None:
             self.metadata = metadata
+        if is_auto_pay is not None:
+            self.is_auto_pay = is_auto_pay
 
     @property
     def adminpass(self):
@@ -202,6 +209,28 @@ class ChangeServerOsWithoutCloudInitOption:
         :type metadata: :class:`huaweicloudsdkecs.v2.ChangeSeversOsMetadataWithoutCloudInitOption`
         """
         self._metadata = metadata
+
+    @property
+    def is_auto_pay(self):
+        """Gets the is_auto_pay of this ChangeServerOsWithoutCloudInitOption.
+
+        下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。
+
+        :return: The is_auto_pay of this ChangeServerOsWithoutCloudInitOption.
+        :rtype: str
+        """
+        return self._is_auto_pay
+
+    @is_auto_pay.setter
+    def is_auto_pay(self, is_auto_pay):
+        """Sets the is_auto_pay of this ChangeServerOsWithoutCloudInitOption.
+
+        下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。
+
+        :param is_auto_pay: The is_auto_pay of this ChangeServerOsWithoutCloudInitOption.
+        :type is_auto_pay: str
+        """
+        self._is_auto_pay = is_auto_pay
 
     def to_dict(self):
         """Returns the model properties as a dict"""

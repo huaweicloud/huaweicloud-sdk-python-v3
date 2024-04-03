@@ -26,7 +26,11 @@ class Flavor:
         'session_create': 'int',
         'total_rule_count': 'int',
         'used_rule_count': 'int',
-        'vpc_bandwith': 'int'
+        'vpc_bandwith': 'int',
+        'default_bandwidth': 'int',
+        'default_eip_count': 'int',
+        'default_log_storage': 'int',
+        'default_vpc_count': 'int'
     }
 
     attribute_map = {
@@ -39,10 +43,14 @@ class Flavor:
         'session_create': 'session_create',
         'total_rule_count': 'total_rule_count',
         'used_rule_count': 'used_rule_count',
-        'vpc_bandwith': 'vpc_bandwith'
+        'vpc_bandwith': 'vpc_bandwith',
+        'default_bandwidth': 'default_bandwidth',
+        'default_eip_count': 'default_eip_count',
+        'default_log_storage': 'default_log_storage',
+        'default_vpc_count': 'default_vpc_count'
     }
 
-    def __init__(self, version=None, eip_count=None, vpc_count=None, bandwidth=None, log_storage=None, session_concurrent=None, session_create=None, total_rule_count=None, used_rule_count=None, vpc_bandwith=None):
+    def __init__(self, version=None, eip_count=None, vpc_count=None, bandwidth=None, log_storage=None, session_concurrent=None, session_create=None, total_rule_count=None, used_rule_count=None, vpc_bandwith=None, default_bandwidth=None, default_eip_count=None, default_log_storage=None, default_vpc_count=None):
         """Flavor
 
         The model defined in huaweicloud sdk
@@ -67,6 +75,14 @@ class Flavor:
         :type used_rule_count: int
         :param vpc_bandwith: vpc间带宽
         :type vpc_bandwith: int
+        :param default_bandwidth: 默认防火墙带宽
+        :type default_bandwidth: int
+        :param default_eip_count: 默认eip数
+        :type default_eip_count: int
+        :param default_log_storage: 默认日志存储
+        :type default_log_storage: int
+        :param default_vpc_count: 默认vpc数
+        :type default_vpc_count: int
         """
         
         
@@ -81,6 +97,10 @@ class Flavor:
         self._total_rule_count = None
         self._used_rule_count = None
         self._vpc_bandwith = None
+        self._default_bandwidth = None
+        self._default_eip_count = None
+        self._default_log_storage = None
+        self._default_vpc_count = None
         self.discriminator = None
 
         if version is not None:
@@ -103,6 +123,14 @@ class Flavor:
             self.used_rule_count = used_rule_count
         if vpc_bandwith is not None:
             self.vpc_bandwith = vpc_bandwith
+        if default_bandwidth is not None:
+            self.default_bandwidth = default_bandwidth
+        if default_eip_count is not None:
+            self.default_eip_count = default_eip_count
+        if default_log_storage is not None:
+            self.default_log_storage = default_log_storage
+        if default_vpc_count is not None:
+            self.default_vpc_count = default_vpc_count
 
     @property
     def version(self):
@@ -323,6 +351,94 @@ class Flavor:
         :type vpc_bandwith: int
         """
         self._vpc_bandwith = vpc_bandwith
+
+    @property
+    def default_bandwidth(self):
+        """Gets the default_bandwidth of this Flavor.
+
+        默认防火墙带宽
+
+        :return: The default_bandwidth of this Flavor.
+        :rtype: int
+        """
+        return self._default_bandwidth
+
+    @default_bandwidth.setter
+    def default_bandwidth(self, default_bandwidth):
+        """Sets the default_bandwidth of this Flavor.
+
+        默认防火墙带宽
+
+        :param default_bandwidth: The default_bandwidth of this Flavor.
+        :type default_bandwidth: int
+        """
+        self._default_bandwidth = default_bandwidth
+
+    @property
+    def default_eip_count(self):
+        """Gets the default_eip_count of this Flavor.
+
+        默认eip数
+
+        :return: The default_eip_count of this Flavor.
+        :rtype: int
+        """
+        return self._default_eip_count
+
+    @default_eip_count.setter
+    def default_eip_count(self, default_eip_count):
+        """Sets the default_eip_count of this Flavor.
+
+        默认eip数
+
+        :param default_eip_count: The default_eip_count of this Flavor.
+        :type default_eip_count: int
+        """
+        self._default_eip_count = default_eip_count
+
+    @property
+    def default_log_storage(self):
+        """Gets the default_log_storage of this Flavor.
+
+        默认日志存储
+
+        :return: The default_log_storage of this Flavor.
+        :rtype: int
+        """
+        return self._default_log_storage
+
+    @default_log_storage.setter
+    def default_log_storage(self, default_log_storage):
+        """Sets the default_log_storage of this Flavor.
+
+        默认日志存储
+
+        :param default_log_storage: The default_log_storage of this Flavor.
+        :type default_log_storage: int
+        """
+        self._default_log_storage = default_log_storage
+
+    @property
+    def default_vpc_count(self):
+        """Gets the default_vpc_count of this Flavor.
+
+        默认vpc数
+
+        :return: The default_vpc_count of this Flavor.
+        :rtype: int
+        """
+        return self._default_vpc_count
+
+    @default_vpc_count.setter
+    def default_vpc_count(self, default_vpc_count):
+        """Sets the default_vpc_count of this Flavor.
+
+        默认vpc数
+
+        :param default_vpc_count: The default_vpc_count of this Flavor.
+        :type default_vpc_count: int
+        """
+        self._default_vpc_count = default_vpc_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

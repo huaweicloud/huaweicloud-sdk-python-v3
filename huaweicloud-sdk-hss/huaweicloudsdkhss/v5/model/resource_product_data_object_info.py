@@ -17,7 +17,7 @@ class ResourceProductDataObjectInfo:
     sensitive_list = []
 
     openapi_types = {
-        'charging_mode': 'object',
+        'charging_mode': 'str',
         'is_auto_renew': 'bool',
         'version_info': 'dict(str, list[ShowPeriodResponseInfo])'
     }
@@ -34,7 +34,7 @@ class ResourceProductDataObjectInfo:
         The model defined in huaweicloud sdk
 
         :param charging_mode: 计费模式   - packet_cycle : 包周期   - on_demand : 按需
-        :type charging_mode: object
+        :type charging_mode: str
         :param is_auto_renew: 是否自动续费
         :type is_auto_renew: bool
         :param version_info: 版本信息,key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
@@ -62,7 +62,7 @@ class ResourceProductDataObjectInfo:
         计费模式   - packet_cycle : 包周期   - on_demand : 按需
 
         :return: The charging_mode of this ResourceProductDataObjectInfo.
-        :rtype: object
+        :rtype: str
         """
         return self._charging_mode
 
@@ -73,7 +73,7 @@ class ResourceProductDataObjectInfo:
         计费模式   - packet_cycle : 包周期   - on_demand : 按需
 
         :param charging_mode: The charging_mode of this ResourceProductDataObjectInfo.
-        :type charging_mode: object
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 

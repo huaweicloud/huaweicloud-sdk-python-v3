@@ -54,6 +54,8 @@ class ElbRegion:
                         "https://elb.me-east-1.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://elb.my-kualalumpur-1.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://elb.ru-moscow-1.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -80,6 +82,7 @@ class ElbRegion:
         "eu-west-0": EU_WEST_0,
         "me-east-1": ME_EAST_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

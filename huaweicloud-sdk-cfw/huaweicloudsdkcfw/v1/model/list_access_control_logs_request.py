@@ -35,7 +35,9 @@ class ListAccessControlLogsRequest:
         'enterprise_project_id': 'str',
         'dst_host': 'str',
         'rule_name': 'str',
-        'action': 'str'
+        'action': 'str',
+        'src_region_name': 'str',
+        'dst_region_name': 'str'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class ListAccessControlLogsRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'dst_host': 'dst_host',
         'rule_name': 'rule_name',
-        'action': 'action'
+        'action': 'action',
+        'src_region_name': 'src_region_name',
+        'dst_region_name': 'dst_region_name'
     }
 
-    def __init__(self, fw_instance_id=None, rule_id=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, log_type=None, enterprise_project_id=None, dst_host=None, rule_name=None, action=None):
+    def __init__(self, fw_instance_id=None, rule_id=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, log_type=None, enterprise_project_id=None, dst_host=None, rule_name=None, action=None, src_region_name=None, dst_region_name=None):
         """ListAccessControlLogsRequest
 
         The model defined in huaweicloud sdk
@@ -103,6 +107,10 @@ class ListAccessControlLogsRequest:
         :type rule_name: str
         :param action: 动作0：permit,1：deny
         :type action: str
+        :param src_region_name: 源region名称
+        :type src_region_name: str
+        :param dst_region_name: 目的region名称
+        :type dst_region_name: str
         """
         
         
@@ -126,6 +134,8 @@ class ListAccessControlLogsRequest:
         self._dst_host = None
         self._rule_name = None
         self._action = None
+        self._src_region_name = None
+        self._dst_region_name = None
         self.discriminator = None
 
         self.fw_instance_id = fw_instance_id
@@ -162,6 +172,10 @@ class ListAccessControlLogsRequest:
             self.rule_name = rule_name
         if action is not None:
             self.action = action
+        if src_region_name is not None:
+            self.src_region_name = src_region_name
+        if dst_region_name is not None:
+            self.dst_region_name = dst_region_name
 
     @property
     def fw_instance_id(self):
@@ -580,6 +594,50 @@ class ListAccessControlLogsRequest:
         :type action: str
         """
         self._action = action
+
+    @property
+    def src_region_name(self):
+        """Gets the src_region_name of this ListAccessControlLogsRequest.
+
+        源region名称
+
+        :return: The src_region_name of this ListAccessControlLogsRequest.
+        :rtype: str
+        """
+        return self._src_region_name
+
+    @src_region_name.setter
+    def src_region_name(self, src_region_name):
+        """Sets the src_region_name of this ListAccessControlLogsRequest.
+
+        源region名称
+
+        :param src_region_name: The src_region_name of this ListAccessControlLogsRequest.
+        :type src_region_name: str
+        """
+        self._src_region_name = src_region_name
+
+    @property
+    def dst_region_name(self):
+        """Gets the dst_region_name of this ListAccessControlLogsRequest.
+
+        目的region名称
+
+        :return: The dst_region_name of this ListAccessControlLogsRequest.
+        :rtype: str
+        """
+        return self._dst_region_name
+
+    @dst_region_name.setter
+    def dst_region_name(self, dst_region_name):
+        """Sets the dst_region_name of this ListAccessControlLogsRequest.
+
+        目的region名称
+
+        :param dst_region_name: The dst_region_name of this ListAccessControlLogsRequest.
+        :type dst_region_name: str
+        """
+        self._dst_region_name = dst_region_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

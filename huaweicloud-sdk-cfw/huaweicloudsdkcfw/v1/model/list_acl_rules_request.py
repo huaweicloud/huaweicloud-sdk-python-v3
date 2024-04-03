@@ -33,7 +33,8 @@ class ListAclRulesRequest:
         'tags_id': 'str',
         'source': 'str',
         'destination': 'str',
-        'service': 'str'
+        'service': 'str',
+        'application': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class ListAclRulesRequest:
         'tags_id': 'tags_id',
         'source': 'source',
         'destination': 'destination',
-        'service': 'service'
+        'service': 'service',
+        'application': 'application'
     }
 
-    def __init__(self, object_id=None, type=None, protocol=None, ip=None, name=None, direction=None, status=None, action_type=None, address_type=None, limit=None, offset=None, enterprise_project_id=None, fw_instance_id=None, tags_id=None, source=None, destination=None, service=None):
+    def __init__(self, object_id=None, type=None, protocol=None, ip=None, name=None, direction=None, status=None, action_type=None, address_type=None, limit=None, offset=None, enterprise_project_id=None, fw_instance_id=None, tags_id=None, source=None, destination=None, service=None, application=None):
         """ListAclRulesRequest
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class ListAclRulesRequest:
         :type destination: str
         :param service: 服务端口
         :type service: str
+        :param application: 应用
+        :type application: str
         """
         
         
@@ -116,6 +120,7 @@ class ListAclRulesRequest:
         self._source = None
         self._destination = None
         self._service = None
+        self._application = None
         self.discriminator = None
 
         self.object_id = object_id
@@ -149,6 +154,8 @@ class ListAclRulesRequest:
             self.destination = destination
         if service is not None:
             self.service = service
+        if application is not None:
+            self.application = application
 
     @property
     def object_id(self):
@@ -523,6 +530,28 @@ class ListAclRulesRequest:
         :type service: str
         """
         self._service = service
+
+    @property
+    def application(self):
+        """Gets the application of this ListAclRulesRequest.
+
+        应用
+
+        :return: The application of this ListAclRulesRequest.
+        :rtype: str
+        """
+        return self._application
+
+    @application.setter
+    def application(self, application):
+        """Sets the application of this ListAclRulesRequest.
+
+        应用
+
+        :param application: The application of this ListAclRulesRequest.
+        :type application: str
+        """
+        self._application = application
 
     def to_dict(self):
         """Returns the model properties as a dict"""

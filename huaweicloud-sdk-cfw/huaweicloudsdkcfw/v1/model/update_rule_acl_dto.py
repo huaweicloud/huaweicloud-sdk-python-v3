@@ -23,12 +23,15 @@ class UpdateRuleAclDto:
         'direction': 'int',
         'action_type': 'int',
         'status': 'int',
+        'applications': 'list[str]',
+        'applications_json_string': 'str',
         'description': 'str',
         'long_connect_time_hour': 'int',
         'long_connect_time_minute': 'int',
         'long_connect_time_second': 'int',
         'long_connect_time': 'int',
         'long_connect_enable': 'int',
+        'profile': 'RuleProfileDto',
         'source': 'RuleAddressDto',
         'destination': 'RuleAddressDto',
         'service': 'RuleServiceDto',
@@ -43,12 +46,15 @@ class UpdateRuleAclDto:
         'direction': 'direction',
         'action_type': 'action_type',
         'status': 'status',
+        'applications': 'applications',
+        'applications_json_string': 'applicationsJsonString',
         'description': 'description',
         'long_connect_time_hour': 'long_connect_time_hour',
         'long_connect_time_minute': 'long_connect_time_minute',
         'long_connect_time_second': 'long_connect_time_second',
         'long_connect_time': 'long_connect_time',
         'long_connect_enable': 'long_connect_enable',
+        'profile': 'profile',
         'source': 'source',
         'destination': 'destination',
         'service': 'service',
@@ -56,7 +62,7 @@ class UpdateRuleAclDto:
         'tag': 'tag'
     }
 
-    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, tag=None):
+    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, applications=None, applications_json_string=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, profile=None, source=None, destination=None, service=None, type=None, tag=None):
         """UpdateRuleAclDto
 
         The model defined in huaweicloud sdk
@@ -73,6 +79,10 @@ class UpdateRuleAclDto:
         :type action_type: int
         :param status: 规则下发状态 0：禁用,1：启用
         :type status: int
+        :param applications: 应用列表
+        :type applications: list[str]
+        :param applications_json_string: 应用列表转化为字符串
+        :type applications_json_string: str
         :param description: 描述
         :type description: str
         :param long_connect_time_hour: 长连接时长小时
@@ -85,6 +95,8 @@ class UpdateRuleAclDto:
         :type long_connect_time: int
         :param long_connect_enable: 是否支持长连接，0表示不支持，1表示支持
         :type long_connect_enable: int
+        :param profile: 
+        :type profile: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
         :param source: 
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
         :param destination: 
@@ -105,12 +117,15 @@ class UpdateRuleAclDto:
         self._direction = None
         self._action_type = None
         self._status = None
+        self._applications = None
+        self._applications_json_string = None
         self._description = None
         self._long_connect_time_hour = None
         self._long_connect_time_minute = None
         self._long_connect_time_second = None
         self._long_connect_time = None
         self._long_connect_enable = None
+        self._profile = None
         self._source = None
         self._destination = None
         self._service = None
@@ -130,6 +145,10 @@ class UpdateRuleAclDto:
             self.action_type = action_type
         if status is not None:
             self.status = status
+        if applications is not None:
+            self.applications = applications
+        if applications_json_string is not None:
+            self.applications_json_string = applications_json_string
         if description is not None:
             self.description = description
         if long_connect_time_hour is not None:
@@ -142,6 +161,8 @@ class UpdateRuleAclDto:
             self.long_connect_time = long_connect_time
         if long_connect_enable is not None:
             self.long_connect_enable = long_connect_enable
+        if profile is not None:
+            self.profile = profile
         if source is not None:
             self.source = source
         if destination is not None:
@@ -282,6 +303,50 @@ class UpdateRuleAclDto:
         self._status = status
 
     @property
+    def applications(self):
+        """Gets the applications of this UpdateRuleAclDto.
+
+        应用列表
+
+        :return: The applications of this UpdateRuleAclDto.
+        :rtype: list[str]
+        """
+        return self._applications
+
+    @applications.setter
+    def applications(self, applications):
+        """Sets the applications of this UpdateRuleAclDto.
+
+        应用列表
+
+        :param applications: The applications of this UpdateRuleAclDto.
+        :type applications: list[str]
+        """
+        self._applications = applications
+
+    @property
+    def applications_json_string(self):
+        """Gets the applications_json_string of this UpdateRuleAclDto.
+
+        应用列表转化为字符串
+
+        :return: The applications_json_string of this UpdateRuleAclDto.
+        :rtype: str
+        """
+        return self._applications_json_string
+
+    @applications_json_string.setter
+    def applications_json_string(self, applications_json_string):
+        """Sets the applications_json_string of this UpdateRuleAclDto.
+
+        应用列表转化为字符串
+
+        :param applications_json_string: The applications_json_string of this UpdateRuleAclDto.
+        :type applications_json_string: str
+        """
+        self._applications_json_string = applications_json_string
+
+    @property
     def description(self):
         """Gets the description of this UpdateRuleAclDto.
 
@@ -412,6 +477,24 @@ class UpdateRuleAclDto:
         :type long_connect_enable: int
         """
         self._long_connect_enable = long_connect_enable
+
+    @property
+    def profile(self):
+        """Gets the profile of this UpdateRuleAclDto.
+
+        :return: The profile of this UpdateRuleAclDto.
+        :rtype: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
+        """
+        return self._profile
+
+    @profile.setter
+    def profile(self, profile):
+        """Sets the profile of this UpdateRuleAclDto.
+
+        :param profile: The profile of this UpdateRuleAclDto.
+        :type profile: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
+        """
+        self._profile = profile
 
     @property
     def source(self):

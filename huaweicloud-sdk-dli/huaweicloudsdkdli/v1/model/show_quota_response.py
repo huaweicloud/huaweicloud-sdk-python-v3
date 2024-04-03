@@ -18,36 +18,65 @@ class ShowQuotaResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'quotas': 'ShowQuotaResponseBodyQuotas'
+        'is_success': 'bool',
+        'quotas': 'QuotaList'
     }
 
     attribute_map = {
-        'quotas': 'Quotas'
+        'is_success': 'is_success',
+        'quotas': 'quotas'
     }
 
-    def __init__(self, quotas=None):
+    def __init__(self, is_success=None, quotas=None):
         """ShowQuotaResponse
 
         The model defined in huaweicloud sdk
 
+        :param is_success: 是否成功
+        :type is_success: bool
         :param quotas: 
-        :type quotas: :class:`huaweicloudsdkdli.v1.ShowQuotaResponseBodyQuotas`
+        :type quotas: :class:`huaweicloudsdkdli.v1.QuotaList`
         """
         
         super(ShowQuotaResponse, self).__init__()
 
+        self._is_success = None
         self._quotas = None
         self.discriminator = None
 
+        if is_success is not None:
+            self.is_success = is_success
         if quotas is not None:
             self.quotas = quotas
+
+    @property
+    def is_success(self):
+        """Gets the is_success of this ShowQuotaResponse.
+
+        是否成功
+
+        :return: The is_success of this ShowQuotaResponse.
+        :rtype: bool
+        """
+        return self._is_success
+
+    @is_success.setter
+    def is_success(self, is_success):
+        """Sets the is_success of this ShowQuotaResponse.
+
+        是否成功
+
+        :param is_success: The is_success of this ShowQuotaResponse.
+        :type is_success: bool
+        """
+        self._is_success = is_success
 
     @property
     def quotas(self):
         """Gets the quotas of this ShowQuotaResponse.
 
         :return: The quotas of this ShowQuotaResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowQuotaResponseBodyQuotas`
+        :rtype: :class:`huaweicloudsdkdli.v1.QuotaList`
         """
         return self._quotas
 
@@ -56,7 +85,7 @@ class ShowQuotaResponse(SdkResponse):
         """Sets the quotas of this ShowQuotaResponse.
 
         :param quotas: The quotas of this ShowQuotaResponse.
-        :type quotas: :class:`huaweicloudsdkdli.v1.ShowQuotaResponseBodyQuotas`
+        :type quotas: :class:`huaweicloudsdkdli.v1.QuotaList`
         """
         self._quotas = quotas
 

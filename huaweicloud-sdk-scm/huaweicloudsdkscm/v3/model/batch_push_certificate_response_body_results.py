@@ -37,7 +37,7 @@ class BatchPushCertificateResponseBodyResults:
         :type project_name: str
         :param cert_id: 目标证书ID。
         :type cert_id: str
-        :param message: 推送结果
+        :param message: 推送结果。
         :type message: str
         """
         
@@ -103,7 +103,7 @@ class BatchPushCertificateResponseBodyResults:
     def message(self):
         """Gets the message of this BatchPushCertificateResponseBodyResults.
 
-        推送结果
+        推送结果。
 
         :return: The message of this BatchPushCertificateResponseBodyResults.
         :rtype: str
@@ -114,7 +114,7 @@ class BatchPushCertificateResponseBodyResults:
     def message(self, message):
         """Sets the message of this BatchPushCertificateResponseBodyResults.
 
-        推送结果
+        推送结果。
 
         :param message: The message of this BatchPushCertificateResponseBodyResults.
         :type message: str

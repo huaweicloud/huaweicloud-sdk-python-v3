@@ -19,25 +19,25 @@ class BatchCreateGlobalEipResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'global_eip': 'BatchCreateGlobalEip',
+        'global_eips': 'list[BatchCreateGlobalEipJob]',
         'x_request_id': 'str'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'global_eip': 'global_eip',
+        'global_eips': 'global_eips',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, request_id=None, global_eip=None, x_request_id=None):
+    def __init__(self, request_id=None, global_eips=None, x_request_id=None):
         """BatchCreateGlobalEipResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 本次请求的编号
         :type request_id: str
-        :param global_eip: 
-        :type global_eip: :class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEip`
+        :param global_eips: 响应对象
+        :type global_eips: list[:class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEipJob`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -45,14 +45,14 @@ class BatchCreateGlobalEipResponse(SdkResponse):
         super(BatchCreateGlobalEipResponse, self).__init__()
 
         self._request_id = None
-        self._global_eip = None
+        self._global_eips = None
         self._x_request_id = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
-        if global_eip is not None:
-            self.global_eip = global_eip
+        if global_eips is not None:
+            self.global_eips = global_eips
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -79,22 +79,26 @@ class BatchCreateGlobalEipResponse(SdkResponse):
         self._request_id = request_id
 
     @property
-    def global_eip(self):
-        """Gets the global_eip of this BatchCreateGlobalEipResponse.
+    def global_eips(self):
+        """Gets the global_eips of this BatchCreateGlobalEipResponse.
 
-        :return: The global_eip of this BatchCreateGlobalEipResponse.
-        :rtype: :class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEip`
+        响应对象
+
+        :return: The global_eips of this BatchCreateGlobalEipResponse.
+        :rtype: list[:class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEipJob`]
         """
-        return self._global_eip
+        return self._global_eips
 
-    @global_eip.setter
-    def global_eip(self, global_eip):
-        """Sets the global_eip of this BatchCreateGlobalEipResponse.
+    @global_eips.setter
+    def global_eips(self, global_eips):
+        """Sets the global_eips of this BatchCreateGlobalEipResponse.
 
-        :param global_eip: The global_eip of this BatchCreateGlobalEipResponse.
-        :type global_eip: :class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEip`
+        响应对象
+
+        :param global_eips: The global_eips of this BatchCreateGlobalEipResponse.
+        :type global_eips: list[:class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEipJob`]
         """
-        self._global_eip = global_eip
+        self._global_eips = global_eips
 
     @property
     def x_request_id(self):

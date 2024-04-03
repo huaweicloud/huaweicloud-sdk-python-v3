@@ -1,3 +1,517 @@
+# 3.1.90 2024-04-03
+
+### HuaweiCloud SDK CCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ParseCertificateSigningRequest**
+    - changes of response param
+      - `* key_algorithm_length: string -> int32`
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlowLogs**
+    - changes of request param
+      - `+ src_region_name`
+      - `+ dst_region_name`
+    - changes of response param
+      - `+ data.records.dst_region_id`
+      - `+ data.records.dst_region_name`
+      - `+ data.records.src_region_id`
+      - `+ data.records.src_region_name`
+  - **ListAccessControlLogs**
+    - changes of request param
+      - `+ src_region_name`
+      - `+ dst_region_name`
+  - **ListAddressSets**
+    - changes of request param
+      - `+ address_set_type`
+  - **ListAttackLogs**
+    - changes of request param
+      - `+ attack_rule_id`
+      - `+ src_region_name`
+      - `+ dst_region_name`
+  - **UpdateAclRuleOrder**
+    - changes of request param
+      - `+ bottom`
+  - **ListServiceSetDetail**
+    - changes of request param
+      - `+ query_service_set_type`
+  - **AddAclRule**
+    - changes of request param
+      - `+ rules.applications`
+      - `+ rules.applicationsJsonString`
+      - `+ rules.profile`
+      - `+ rules.sequence.bottom`
+      - `+ rules.source.address_set_type`
+      - `+ rules.source.predefined_group`
+      - `- rules.source.address_group`
+      - `- rules.source.address_group_names`
+      - `* rules.source: object<RuleAddressDto> -> object<RuleAddressDtoForRequest>`
+      - `+ rules.service.protocols`
+      - `+ rules.service.predefined_group`
+      - `+ rules.service.service_set_type`
+      - `+ rules.service.service_group_names.protocols`
+      - `+ rules.service.service_group_names.service_set_type`
+  - **UpdateAclRule**
+    - changes of request param
+      - `+ applications`
+      - `+ applicationsJsonString`
+      - `+ profile`
+      - `+ sequence.bottom`
+      - `+ source.address_set_type`
+      - `+ source.predefined_group`
+      - `+ source.address_group_names.protocols`
+      - `+ source.address_group_names.service_set_type`
+      - `+ service.protocols`
+      - `+ service.predefined_group`
+      - `+ service.service_set_type`
+  - **ListAclRules**
+    - changes of request param
+      - `+ application`
+    - changes of response param
+      - `+ data.records.sequence.bottom`
+      - `+ data.records.source.address_set_type`
+      - `+ data.records.source.predefined_group`
+      - `+ data.records.source.address_group_names.protocols`
+      - `+ data.records.source.address_group_names.service_set_type`
+      - `+ data.records.service.protocols`
+      - `+ data.records.service.predefined_group`
+      - `+ data.records.service.service_set_type`
+  - **ListServiceItems**
+    - changes of request param
+      - `+ query_service_set_type`
+  - **ListAddressItems**
+    - changes of request param
+      - `+ query_address_set_type`
+  - **ListServiceSets**
+    - changes of request param
+      - `+ query_service_set_type`
+  - **ListDomainSets**
+    - changes of response param
+      - `+ data.records.rules`
+  - **ListFirewallDetail**
+    - changes of request param
+      - `+ name`
+    - changes of response param
+      - `+ data.records.tags`
+      - `+ data.records.flavor.default_bandwidth`
+      - `+ data.records.flavor.default_eip_count`
+      - `+ data.records.flavor.default_log_storage`
+      - `+ data.records.flavor.default_vpc_count`
+  - **ListFirewallList**
+    - changes of response param
+      - `+ data.records.tags`
+      - `+ data.records.flavor.default_bandwidth`
+      - `+ data.records.flavor.default_eip_count`
+      - `+ data.records.flavor.default_log_storage`
+      - `+ data.records.flavor.default_vpc_count`
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - Support the API `ListTestcasesByProjectIssuesRelation`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPlanList**
+    - changes of request param
+      - `+ fix_version_ids`
+
+### HuaweiCloud SDK Config
+
+- _Features_
+  - Support the API `UpdateOrganizationPolicyAssignment`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowOrganizationPolicyAssignmentDetailedStatus**
+    - changes of request param
+      - `+ organization_policy_assignment_id`
+  - **ListOrganizationConformancePackStatuses**
+    - changes of request param
+      - `+ organization_conformance_pack_id`
+  - **ShowOrganizationConformancePackDetailedStatuses**
+    - changes of request param
+      - `+ organization_conformance_pack_id`
+  - **ListOrganizationPolicyAssignments**
+    - changes of request param
+      - `+ organization_policy_assignment_id`
+  - **ListOrganizationConformancePacks**
+    - changes of request param
+      - `+ organization_conformance_pack_id`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowQuota**
+    - changes of response param
+      - `+ quotas`
+      - `+ is_success`
+      - `- Quotas`
+  - **ListJobResources**
+    - changes of response param
+      - `+ groups.group_name`
+      - `+ groups.status`
+      - `+ groups.resources`
+      - `+ groups.details`
+      - `+ groups.create_time`
+      - `+ groups.update_time`
+      - `+ groups.owner`
+      - `+ groups.is_async`
+      - `* groups: list<object> -> list<PackageResourceGroup>`
+  - **CreateSqlJob**
+    - changes of request param
+      - `+ engine_type: enum value [trino,spark]`
+  - **CreateQueueProperty**
+    - changes of request param
+      - `* properties: object -> object<CommonQueueProperty>`
+  - **ShowFlinkJob**
+    - changes of response param
+      - `+ job_detail.user_name`
+      - `+ job_detail.duration`
+      - `+ job_detail.root_id`
+      - `+ job_detail.graph_editor_enabled`
+      - `+ job_detail.has_savepoint`
+      - `+ job_detail.edge_group_ids`
+      - `+ job_detail.restart_times`
+      - `+ job_detail.job_config.real_cu_number`
+      - `* job_detail.job_config: object<FlinkJobConfigDetail> -> object<FlinkJobConfig>`
+      - `* job_detail: object<FlinkJobDetail> -> object<FlinkJob>`
+  - **ListFlinkJobs**
+    - changes of response param
+      - `* is_success: boolean -> string`
+      - `+ job_list.jobs.queue_name`
+      - `+ job_list.jobs.edge_group_ids`
+      - `+ job_list.jobs.restart_times`
+      - `+ job_list.jobs.savepoint_path`
+      - `+ job_list.jobs.job_config.runtime_config`
+      - `+ job_list.jobs.job_config.graph_editor_enabled`
+      - `+ job_list.jobs.job_config.graph_editor_data`
+      - `+ job_list.jobs.job_config.resume_max_num`
+      - `+ job_list.jobs.job_config.checkpoint_path`
+      - `+ job_list.jobs.job_config.config_url`
+      - `+ job_list.jobs.job_config.tm_cus`
+      - `+ job_list.jobs.job_config.tm_slot_num`
+      - `+ job_list.jobs.job_config.image`
+      - `+ job_list.jobs.job_config.feature`
+      - `+ job_list.jobs.job_config.flink_version`
+      - `+ job_list.jobs.job_config.operator_config`
+      - `+ job_list.jobs.job_config.static_estimator_config`
+      - `+ job_list.jobs.job_config.real_cu_number`
+      - `* job_list.jobs: list<FlinkJobInfo> -> list<FlinkJob>`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ShowServerAutoRecovery`, `RegisterServerAutoRecovery`
+  - **ResizePostPaidServer**
+    - changes of request param
+      - `+ resize.cpu_options`
+  - **ShowServer**
+    - changes of response param
+      - `+ server.cpu_options.hw:cpu_threads: enum value [1,2]`
+  - **ListServersDetails**
+    - changes of response param
+      - `+ servers.cpu_options.hw:cpu_threads: enum value [1,2]`
+  - **ChangeServerOsWithCloudInit**
+    - changes of request param
+      - `+ os-change.isAutoPay`
+  - **ChangeServerOsWithoutCloudInit**
+    - changes of request param
+      - `+ os-change.isAutoPay`
+  - **ResizeServer**
+    - changes of request param
+      - `+ resize.cpu_options`
+  - **CreateServers**
+    - changes of request param
+      - `+ server.cpu_options`
+  - **CreatePostPaidServers**
+    - changes of request param
+      - `+ server.cpu_options`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTenantVpcIgws**
+    - changes of request param
+      - `+ offset`
+      - `+ marker`
+  - **ListProjectGeipBindings**
+    - changes of request param
+      - `+ offset`
+      - `+ marker`
+    - changes of response param
+      - `+ geip_bindings.instance_type`
+      - `+ geip_bindings.instance_id`
+      - `- geip_bindings.binding_instance_type`
+      - `- geip_bindings.binding_instance_id`
+      - `+ geip_bindings.gcbandwidth.id`
+      - `+ geip_bindings.gcbandwidth.admin_status`
+      - `+ geip_bindings.gcbandwidth.size`
+      - `+ geip_bindings.gcbandwidth.short_id`
+      - `+ geip_bindings.gcbandwidth.sla_level`
+      - `+ geip_bindings.gcbandwidth.dscp`
+      - `* geip_bindings.gcbandwidth: object -> object<BackboneBandwidthResp>`
+      - `+ geip_bindings.vnic.private_ip_address`
+      - `+ geip_bindings.vnic.device_id`
+      - `+ geip_bindings.vnic.device_owner`
+      - `+ geip_bindings.vnic.vpc_id`
+      - `+ geip_bindings.vnic.port_id`
+      - `+ geip_bindings.vnic.mac`
+      - `+ geip_bindings.vnic.vtep`
+      - `+ geip_bindings.vnic.vni`
+      - `+ geip_bindings.vnic.instance_id`
+      - `+ geip_bindings.vnic.instance_type`
+      - `+ geip_bindings.vnic.port_profile`
+      - `* geip_bindings.vnic: object -> object<InstanceVnicResp>`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDependencyVersion**
+    - changes of request param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+    - changes of response param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ShowDependencyVersion**
+    - changes of response param
+      - `+ is_shared`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListDependencies**
+    - changes of response param
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListDependencyVersion**
+    - changes of response param
+      - `+ dependencies.is_shared`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ShowFunctionCode**
+    - changes of response param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **UpdateFunctionCode**
+    - changes of response param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ImportFunction**
+    - changes of response param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListFunctions**
+    - changes of response param
+      - `+ functions.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **CreateFunction**
+    - changes of request param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0,Custom Image]`
+    - changes of response param
+      - `+ is_return_stream`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `+ is_return_stream`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **UpdateFunctionConfig**
+    - changes of request param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0,Custom Image]`
+    - changes of response param
+      - `+ enable_cloud_debug`
+      - `+ is_return_stream`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **UpdateFunctionMaxInstanceConfig**
+    - changes of response param
+      - `+ is_return_stream`
+      - `+ enable_cloud_debug`
+      - `+ enable_auth_in_header`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListBridgeFunctions**
+    - changes of response param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListStatistics**
+    - changes of response param
+      - `+ gpu_gbs`
+  - **CreateFunctionVersion**
+    - changes of response param
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListFunctionVersions**
+    - changes of response param
+      - `- versions.enable_cloud_debug`
+      - `+ versions.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+
+### HuaweiCloud SDK GEIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CountGlobalEips**
+    - changes of response param
+      - `+ global_eip`
+      - `- global_eips`
+      - `- page_info`
+  - **BatchCreateGlobalEip**
+    - changes of response param
+      - `+ global_eips`
+      - `- global_eip`
+  - **CountGlobalEipSegment**
+    - changes of response param
+      - `+ global_eip_segment`
+      - `- global_eip_segments`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowProductdataOfferingInfos**
+    - changes of response param
+      - `* charging_mode: object -> string`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowConnectorTask**
+    - changes of response param
+      - `+ topics_regex`
+  - **CreateConnectorTask**
+    - changes of response param
+      - `+ topics_regex`
+  - **ListConnectorTasks**
+    - changes of response param
+      - `+ topics_regex`
+      - `+ tasks.topics_regex`
+
+### HuaweiCloud SDK KMS
+
+- _Features_
+  - Support the APIs `GenerateMac`, `VerifyMac`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK PanguLargeModels
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExecuteTextCompletion**
+    - changes of request param
+      - `+ frequency_penalty`
+  - **ExecuteChatCompletion**
+    - changes of request param
+      - `+ frequency_penalty`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the APIs `ShowReplayDelayStatus`, `SwitchLogReplay`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateConsumerGroup**
+    - changes of request param
+      - `- from_beginning`
+  - **ListMessageTrace**
+    - changes of response param
+      - `+ trace.trace_type: enum value [SubBefore,SubAfter]`
+      - `- trace.trace_type: enum value [Sub]`
+  - **ListInstanceConsumerGroups**
+    - changes of response param
+      - `* max: number -> int32`
+      - `* remaining: number -> int32`
+      - `* next_offset: number -> int32`
+      - `* previous_offset: number -> int32`
+
+### HuaweiCloud SDK SCM
+
+- _Features_
+  - Support the APIs `SubscribeCertificate`, `ApplyCertificate`, `UnsubscribeCertificate`, `ListDeployedResources`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSubNetworkInterfaces**
+    - changes of response param
+      - `+ sub_network_interfaces.security_enabled`
+  - **CreateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interface.security_enabled`
+  - **BatchCreateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interfaces.security_enabled`
+  - **ShowSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interface.security_enabled`
+  - **UpdateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interface.security_enabled`
+  - **MigrateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interfaces.security_enabled`
+
+### HuaweiCloud SDK Workspace
+
+- _Features_
+  - Support the APIs `ShowDesktopRemoteAssistanceInfo`, `CreateRemoteAssistance`, `CancelRemoteAssistance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.89 2024-04-01
 
 ### HuaweiCloud SDK BMS

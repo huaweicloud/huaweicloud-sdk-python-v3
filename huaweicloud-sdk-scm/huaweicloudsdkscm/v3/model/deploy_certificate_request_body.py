@@ -33,9 +33,9 @@ class DeployCertificateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param project_name: 部署的资源所在的项目名称，若在主项目下，则该值为region id，CDN支持区域固定为：Global。
+        :param project_name: 部署的资源所在的项目名称，若在主项目下，则该值为region id。
         :type project_name: str
-        :param service_name: 证书部署到资源的目标服务，当前仅支持：CDN、WAF、ELB。
+        :param service_name: 证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
         :type service_name: str
         :param resources: 所要部署的资源列表。
         :type resources: list[:class:`huaweicloudsdkscm.v3.DeployedResource`]
@@ -57,7 +57,7 @@ class DeployCertificateRequestBody:
     def project_name(self):
         """Gets the project_name of this DeployCertificateRequestBody.
 
-        部署的资源所在的项目名称，若在主项目下，则该值为region id，CDN支持区域固定为：Global。
+        部署的资源所在的项目名称，若在主项目下，则该值为region id。
 
         :return: The project_name of this DeployCertificateRequestBody.
         :rtype: str
@@ -68,7 +68,7 @@ class DeployCertificateRequestBody:
     def project_name(self, project_name):
         """Sets the project_name of this DeployCertificateRequestBody.
 
-        部署的资源所在的项目名称，若在主项目下，则该值为region id，CDN支持区域固定为：Global。
+        部署的资源所在的项目名称，若在主项目下，则该值为region id。
 
         :param project_name: The project_name of this DeployCertificateRequestBody.
         :type project_name: str
@@ -79,7 +79,7 @@ class DeployCertificateRequestBody:
     def service_name(self):
         """Gets the service_name of this DeployCertificateRequestBody.
 
-        证书部署到资源的目标服务，当前仅支持：CDN、WAF、ELB。
+        证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 
         :return: The service_name of this DeployCertificateRequestBody.
         :rtype: str
@@ -90,7 +90,7 @@ class DeployCertificateRequestBody:
     def service_name(self, service_name):
         """Sets the service_name of this DeployCertificateRequestBody.
 
-        证书部署到资源的目标服务，当前仅支持：CDN、WAF、ELB。
+        证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 
         :param service_name: The service_name of this DeployCertificateRequestBody.
         :type service_name: str

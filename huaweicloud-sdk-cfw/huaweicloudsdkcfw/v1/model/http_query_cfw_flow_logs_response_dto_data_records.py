@@ -29,7 +29,11 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         'app': 'str',
         'dst_port': 'int',
         'protocol': 'str',
-        'dst_host': 'str'
+        'dst_host': 'str',
+        'dst_region_id': 'str',
+        'dst_region_name': 'str',
+        'src_region_id': 'str',
+        'src_region_name': 'str'
     }
 
     attribute_map = {
@@ -45,10 +49,14 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         'app': 'app',
         'dst_port': 'dst_port',
         'protocol': 'protocol',
-        'dst_host': 'dst_host'
+        'dst_host': 'dst_host',
+        'dst_region_id': 'dst_region_id',
+        'dst_region_name': 'dst_region_name',
+        'src_region_id': 'src_region_id',
+        'src_region_name': 'src_region_name'
     }
 
-    def __init__(self, bytes=None, direction=None, packets=None, start_time=None, end_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, app=None, dst_port=None, protocol=None, dst_host=None):
+    def __init__(self, bytes=None, direction=None, packets=None, start_time=None, end_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, app=None, dst_port=None, protocol=None, dst_host=None, dst_region_id=None, dst_region_name=None, src_region_id=None, src_region_name=None):
         """HttpQueryCfwFlowLogsResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -79,6 +87,14 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type protocol: str
         :param dst_host: 目标主机
         :type dst_host: str
+        :param dst_region_id: 目的地域id
+        :type dst_region_id: str
+        :param dst_region_name: 目的地域名称
+        :type dst_region_name: str
+        :param src_region_id: 源地域id
+        :type src_region_id: str
+        :param src_region_name: 源地域名称
+        :type src_region_name: str
         """
         
         
@@ -96,6 +112,10 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         self._dst_port = None
         self._protocol = None
         self._dst_host = None
+        self._dst_region_id = None
+        self._dst_region_name = None
+        self._src_region_id = None
+        self._src_region_name = None
         self.discriminator = None
 
         if bytes is not None:
@@ -124,6 +144,14 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
             self.protocol = protocol
         if dst_host is not None:
             self.dst_host = dst_host
+        if dst_region_id is not None:
+            self.dst_region_id = dst_region_id
+        if dst_region_name is not None:
+            self.dst_region_name = dst_region_name
+        if src_region_id is not None:
+            self.src_region_id = src_region_id
+        if src_region_name is not None:
+            self.src_region_name = src_region_name
 
     @property
     def bytes(self):
@@ -410,6 +438,94 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type dst_host: str
         """
         self._dst_host = dst_host
+
+    @property
+    def dst_region_id(self):
+        """Gets the dst_region_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的地域id
+
+        :return: The dst_region_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_region_id
+
+    @dst_region_id.setter
+    def dst_region_id(self, dst_region_id):
+        """Sets the dst_region_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的地域id
+
+        :param dst_region_id: The dst_region_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type dst_region_id: str
+        """
+        self._dst_region_id = dst_region_id
+
+    @property
+    def dst_region_name(self):
+        """Gets the dst_region_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的地域名称
+
+        :return: The dst_region_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_region_name
+
+    @dst_region_name.setter
+    def dst_region_name(self, dst_region_name):
+        """Sets the dst_region_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目的地域名称
+
+        :param dst_region_name: The dst_region_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type dst_region_name: str
+        """
+        self._dst_region_name = dst_region_name
+
+    @property
+    def src_region_id(self):
+        """Gets the src_region_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源地域id
+
+        :return: The src_region_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_region_id
+
+    @src_region_id.setter
+    def src_region_id(self, src_region_id):
+        """Sets the src_region_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源地域id
+
+        :param src_region_id: The src_region_id of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type src_region_id: str
+        """
+        self._src_region_id = src_region_id
+
+    @property
+    def src_region_name(self):
+        """Gets the src_region_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源地域名称
+
+        :return: The src_region_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_region_name
+
+    @src_region_name.setter
+    def src_region_name(self, src_region_name):
+        """Sets the src_region_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        源地域名称
+
+        :param src_region_name: The src_region_name of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type src_region_name: str
+        """
+        self._src_region_name = src_region_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

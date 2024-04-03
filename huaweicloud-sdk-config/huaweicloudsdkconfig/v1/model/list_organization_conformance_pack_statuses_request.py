@@ -20,6 +20,7 @@ class ListOrganizationConformancePackStatusesRequest:
         'organization_id': 'str',
         'limit': 'int',
         'marker': 'str',
+        'organization_conformance_pack_id': 'str',
         'conformance_pack_name': 'str'
     }
 
@@ -27,10 +28,11 @@ class ListOrganizationConformancePackStatusesRequest:
         'organization_id': 'organization_id',
         'limit': 'limit',
         'marker': 'marker',
+        'organization_conformance_pack_id': 'organization_conformance_pack_id',
         'conformance_pack_name': 'conformance_pack_name'
     }
 
-    def __init__(self, organization_id=None, limit=None, marker=None, conformance_pack_name=None):
+    def __init__(self, organization_id=None, limit=None, marker=None, organization_conformance_pack_id=None, conformance_pack_name=None):
         """ListOrganizationConformancePackStatusesRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ListOrganizationConformancePackStatusesRequest:
         :type limit: int
         :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
         :type marker: str
+        :param organization_conformance_pack_id: 组织合规规则包ID。
+        :type organization_conformance_pack_id: str
         :param conformance_pack_name: 合规规则包名称。
         :type conformance_pack_name: str
         """
@@ -50,6 +54,7 @@ class ListOrganizationConformancePackStatusesRequest:
         self._organization_id = None
         self._limit = None
         self._marker = None
+        self._organization_conformance_pack_id = None
         self._conformance_pack_name = None
         self.discriminator = None
 
@@ -58,6 +63,8 @@ class ListOrganizationConformancePackStatusesRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+        if organization_conformance_pack_id is not None:
+            self.organization_conformance_pack_id = organization_conformance_pack_id
         if conformance_pack_name is not None:
             self.conformance_pack_name = conformance_pack_name
 
@@ -126,6 +133,28 @@ class ListOrganizationConformancePackStatusesRequest:
         :type marker: str
         """
         self._marker = marker
+
+    @property
+    def organization_conformance_pack_id(self):
+        """Gets the organization_conformance_pack_id of this ListOrganizationConformancePackStatusesRequest.
+
+        组织合规规则包ID。
+
+        :return: The organization_conformance_pack_id of this ListOrganizationConformancePackStatusesRequest.
+        :rtype: str
+        """
+        return self._organization_conformance_pack_id
+
+    @organization_conformance_pack_id.setter
+    def organization_conformance_pack_id(self, organization_conformance_pack_id):
+        """Sets the organization_conformance_pack_id of this ListOrganizationConformancePackStatusesRequest.
+
+        组织合规规则包ID。
+
+        :param organization_conformance_pack_id: The organization_conformance_pack_id of this ListOrganizationConformancePackStatusesRequest.
+        :type organization_conformance_pack_id: str
+        """
+        self._organization_conformance_pack_id = organization_conformance_pack_id
 
     @property
     def conformance_pack_name(self):

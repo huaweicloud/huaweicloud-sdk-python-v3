@@ -31,7 +31,7 @@ class BatchPushCertificateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param target_projects: 推送到的目标服务所在的区域，CDN支持区域固定为：Global。
+        :param target_projects: 推送到的目标服务所在的区域，CDN、ELB、WAF。
         :type target_projects: list[str]
         :param target_service: 证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
         :type target_service: str
@@ -50,7 +50,7 @@ class BatchPushCertificateRequestBody:
     def target_projects(self):
         """Gets the target_projects of this BatchPushCertificateRequestBody.
 
-        推送到的目标服务所在的区域，CDN支持区域固定为：Global。
+        推送到的目标服务所在的区域，CDN、ELB、WAF。
 
         :return: The target_projects of this BatchPushCertificateRequestBody.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class BatchPushCertificateRequestBody:
     def target_projects(self, target_projects):
         """Sets the target_projects of this BatchPushCertificateRequestBody.
 
-        推送到的目标服务所在的区域，CDN支持区域固定为：Global。
+        推送到的目标服务所在的区域，CDN、ELB、WAF。
 
         :param target_projects: The target_projects of this BatchPushCertificateRequestBody.
         :type target_projects: list[str]

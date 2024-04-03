@@ -20,7 +20,7 @@ class ListPartitionsResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'partitions': 'Partition'
+        'partitions': 'PartitionList'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListPartitionsResponse(SdkResponse):
         :param message: 信息
         :type message: str
         :param partitions: 
-        :type partitions: :class:`huaweicloudsdkdli.v1.Partition`
+        :type partitions: :class:`huaweicloudsdkdli.v1.PartitionList`
         """
         
         super(ListPartitionsResponse, self).__init__()
@@ -105,7 +105,7 @@ class ListPartitionsResponse(SdkResponse):
         """Gets the partitions of this ListPartitionsResponse.
 
         :return: The partitions of this ListPartitionsResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.Partition`
+        :rtype: :class:`huaweicloudsdkdli.v1.PartitionList`
         """
         return self._partitions
 
@@ -114,7 +114,7 @@ class ListPartitionsResponse(SdkResponse):
         """Sets the partitions of this ListPartitionsResponse.
 
         :param partitions: The partitions of this ListPartitionsResponse.
-        :type partitions: :class:`huaweicloudsdkdli.v1.Partition`
+        :type partitions: :class:`huaweicloudsdkdli.v1.PartitionList`
         """
         self._partitions = partitions
 

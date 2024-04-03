@@ -35,7 +35,8 @@ class GetFirewallInstanceResponseRecord:
         'fw_instance_name': 'str',
         'enterprise_project_id': 'str',
         'resource_id': 'str',
-        'support_url_filtering': 'bool'
+        'support_url_filtering': 'bool',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class GetFirewallInstanceResponseRecord:
         'fw_instance_name': 'fw_instance_name',
         'enterprise_project_id': 'enterprise_project_id',
         'resource_id': 'resource_id',
-        'support_url_filtering': 'support_url_filtering'
+        'support_url_filtering': 'support_url_filtering',
+        'tags': 'tags'
     }
 
-    def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, is_available_obs=None, is_support_threat_tags=None, support_ipv6=None, feature_toggle=None, resources=None, fw_instance_name=None, enterprise_project_id=None, resource_id=None, support_url_filtering=None):
+    def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, is_available_obs=None, is_support_threat_tags=None, support_ipv6=None, feature_toggle=None, resources=None, fw_instance_name=None, enterprise_project_id=None, resource_id=None, support_url_filtering=None, tags=None):
         """GetFirewallInstanceResponseRecord
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class GetFirewallInstanceResponseRecord:
         :type resource_id: str
         :param support_url_filtering: 是否支持url过滤，true表示是，false表示不是
         :type support_url_filtering: bool
+        :param tags: 标签列表
+        :type tags: str
         """
         
         
@@ -126,6 +130,7 @@ class GetFirewallInstanceResponseRecord:
         self._enterprise_project_id = None
         self._resource_id = None
         self._support_url_filtering = None
+        self._tags = None
         self.discriminator = None
 
         if fw_instance_id is not None:
@@ -166,6 +171,8 @@ class GetFirewallInstanceResponseRecord:
             self.resource_id = resource_id
         if support_url_filtering is not None:
             self.support_url_filtering = support_url_filtering
+        if tags is not None:
+            self.tags = tags
 
     @property
     def fw_instance_id(self):
@@ -580,6 +587,28 @@ class GetFirewallInstanceResponseRecord:
         :type support_url_filtering: bool
         """
         self._support_url_filtering = support_url_filtering
+
+    @property
+    def tags(self):
+        """Gets the tags of this GetFirewallInstanceResponseRecord.
+
+        标签列表
+
+        :return: The tags of this GetFirewallInstanceResponseRecord.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this GetFirewallInstanceResponseRecord.
+
+        标签列表
+
+        :param tags: The tags of this GetFirewallInstanceResponseRecord.
+        :type tags: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

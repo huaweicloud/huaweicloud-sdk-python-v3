@@ -19,6 +19,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
     openapi_types = {
         'organization_id': 'str',
         'organization_policy_assignment_name': 'str',
+        'organization_policy_assignment_id': 'str',
         'status': 'str',
         'limit': 'int',
         'marker': 'str'
@@ -27,12 +28,13 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
     attribute_map = {
         'organization_id': 'organization_id',
         'organization_policy_assignment_name': 'organization_policy_assignment_name',
+        'organization_policy_assignment_id': 'organization_policy_assignment_id',
         'status': 'status',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, organization_id=None, organization_policy_assignment_name=None, status=None, limit=None, marker=None):
+    def __init__(self, organization_id=None, organization_policy_assignment_name=None, organization_policy_assignment_id=None, status=None, limit=None, marker=None):
         """ShowOrganizationPolicyAssignmentDetailedStatusRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
         :type organization_id: str
         :param organization_policy_assignment_name: 组织合规规则名称。
         :type organization_policy_assignment_name: str
+        :param organization_policy_assignment_id: 组织合规规则ID
+        :type organization_policy_assignment_id: str
         :param status: 成员帐号规则部署状态，区分大小写。
         :type status: str
         :param limit: 最大的返回数量
@@ -53,6 +57,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
         self._organization_id = None
         self._organization_policy_assignment_name = None
+        self._organization_policy_assignment_id = None
         self._status = None
         self._limit = None
         self._marker = None
@@ -60,6 +65,8 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
         self.organization_id = organization_id
         self.organization_policy_assignment_name = organization_policy_assignment_name
+        if organization_policy_assignment_id is not None:
+            self.organization_policy_assignment_id = organization_policy_assignment_id
         if status is not None:
             self.status = status
         if limit is not None:
@@ -110,6 +117,28 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
         :type organization_policy_assignment_name: str
         """
         self._organization_policy_assignment_name = organization_policy_assignment_name
+
+    @property
+    def organization_policy_assignment_id(self):
+        """Gets the organization_policy_assignment_id of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+
+        组织合规规则ID
+
+        :return: The organization_policy_assignment_id of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        :rtype: str
+        """
+        return self._organization_policy_assignment_id
+
+    @organization_policy_assignment_id.setter
+    def organization_policy_assignment_id(self, organization_policy_assignment_id):
+        """Sets the organization_policy_assignment_id of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+
+        组织合规规则ID
+
+        :param organization_policy_assignment_id: The organization_policy_assignment_id of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        :type organization_policy_assignment_id: str
+        """
+        self._organization_policy_assignment_id = organization_policy_assignment_id
 
     @property
     def status(self):

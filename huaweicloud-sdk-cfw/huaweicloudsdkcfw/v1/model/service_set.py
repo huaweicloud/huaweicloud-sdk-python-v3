@@ -49,7 +49,7 @@ class ServiceSet:
         :type name: str
         :param description: 描述
         :type description: str
-        :param service_set_type: 服务组类型，0表示自定义服务组，1表示预定义服务组
+        :param service_set_type: 服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
         :type service_set_type: int
         :param ref_count: 引用次数
         :type ref_count: int
@@ -160,7 +160,7 @@ class ServiceSet:
     def service_set_type(self):
         """Gets the service_set_type of this ServiceSet.
 
-        服务组类型，0表示自定义服务组，1表示预定义服务组
+        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 
         :return: The service_set_type of this ServiceSet.
         :rtype: int
@@ -171,7 +171,7 @@ class ServiceSet:
     def service_set_type(self, service_set_type):
         """Sets the service_set_type of this ServiceSet.
 
-        服务组类型，0表示自定义服务组，1表示预定义服务组
+        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 
         :param service_set_type: The service_set_type of this ServiceSet.
         :type service_set_type: int

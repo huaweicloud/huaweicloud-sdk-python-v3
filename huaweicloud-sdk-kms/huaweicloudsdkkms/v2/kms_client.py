@@ -1749,6 +1749,71 @@ class KmsClient(Client):
 
         return http_info
 
+    def generate_mac(self, request):
+        """生成消息验证码
+
+        功能介绍：生成消息验证码
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GenerateMac
+        :type request: :class:`huaweicloudsdkkms.v2.GenerateMacRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.GenerateMacResponse`
+        """
+        http_info = self._generate_mac_http_info(request)
+        return self._call_api(**http_info)
+
+    def generate_mac_invoker(self, request):
+        http_info = self._generate_mac_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _generate_mac_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/generate-mac",
+            "request_type": request.__class__.__name__,
+            "response_type": "GenerateMacResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def import_key_material(self, request):
         """导入密钥材料
 
@@ -2948,6 +3013,71 @@ class KmsClient(Client):
             "resource_path": "/v1.0/{project_id}/kms/verify",
             "request_type": request.__class__.__name__,
             "response_type": "ValidateSignatureResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def verify_mac(self, request):
+        """校验消息验证码
+
+        功能介绍：校验消息验证码
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for VerifyMac
+        :type request: :class:`huaweicloudsdkkms.v2.VerifyMacRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.VerifyMacResponse`
+        """
+        http_info = self._verify_mac_http_info(request)
+        return self._call_api(**http_info)
+
+    def verify_mac_invoker(self, request):
+        http_info = self._verify_mac_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _verify_mac_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/verify-mac",
+            "request_type": request.__class__.__name__,
+            "response_type": "VerifyMacResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

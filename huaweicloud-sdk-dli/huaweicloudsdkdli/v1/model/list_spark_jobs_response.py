@@ -20,7 +20,7 @@ class ListSparkJobsResponse(SdkResponse):
     openapi_types = {
         '_from': 'int',
         'total': 'int',
-        'sessions': 'list[SparkJobSession]',
+        'sessions': 'list[SparkJob]',
         'create_time': 'int'
     }
 
@@ -41,7 +41,7 @@ class ListSparkJobsResponse(SdkResponse):
         :param total: 返回批处理作业的总数。
         :type total: int
         :param sessions: 批处理作业信息。
-        :type sessions: list[:class:`huaweicloudsdkdli.v1.SparkJobSession`]
+        :type sessions: list[:class:`huaweicloudsdkdli.v1.SparkJob`]
         :param create_time: 批处理作业的创建时间。
         :type create_time: int
         """
@@ -114,7 +114,7 @@ class ListSparkJobsResponse(SdkResponse):
         批处理作业信息。
 
         :return: The sessions of this ListSparkJobsResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.SparkJobSession`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.SparkJob`]
         """
         return self._sessions
 
@@ -125,7 +125,7 @@ class ListSparkJobsResponse(SdkResponse):
         批处理作业信息。
 
         :param sessions: The sessions of this ListSparkJobsResponse.
-        :type sessions: list[:class:`huaweicloudsdkdli.v1.SparkJobSession`]
+        :type sessions: list[:class:`huaweicloudsdkdli.v1.SparkJob`]
         """
         self._sessions = sessions
 

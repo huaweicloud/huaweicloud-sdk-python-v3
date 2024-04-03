@@ -29,7 +29,7 @@ class CountGeipSegments:
 
         The model defined in huaweicloud sdk
 
-        :param count: Geip Segment Count
+        :param count: 全域弹性公网IP段个数
         :type count: int
         """
         
@@ -44,7 +44,7 @@ class CountGeipSegments:
     def count(self):
         """Gets the count of this CountGeipSegments.
 
-        Geip Segment Count
+        全域弹性公网IP段个数
 
         :return: The count of this CountGeipSegments.
         :rtype: int
@@ -55,7 +55,7 @@ class CountGeipSegments:
     def count(self, count):
         """Sets the count of this CountGeipSegments.
 
-        Geip Segment Count
+        全域弹性公网IP段个数
 
         :param count: The count of this CountGeipSegments.
         :type count: int

@@ -30,7 +30,8 @@ class SubNetworkInterface:
         'security_groups': 'list[str]',
         'tags': 'list[str]',
         'project_id': 'str',
-        'created_at': 'datetime'
+        'created_at': 'datetime',
+        'security_enabled': 'bool'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class SubNetworkInterface:
         'security_groups': 'security_groups',
         'tags': 'tags',
         'project_id': 'project_id',
-        'created_at': 'created_at'
+        'created_at': 'created_at',
+        'security_enabled': 'security_enabled'
     }
 
-    def __init__(self, id=None, virsubnet_id=None, private_ip_address=None, ipv6_ip_address=None, mac_address=None, parent_device_id=None, parent_id=None, description=None, vpc_id=None, vlan_id=None, security_groups=None, tags=None, project_id=None, created_at=None):
+    def __init__(self, id=None, virsubnet_id=None, private_ip_address=None, ipv6_ip_address=None, mac_address=None, parent_device_id=None, parent_id=None, description=None, vpc_id=None, vlan_id=None, security_groups=None, tags=None, project_id=None, created_at=None, security_enabled=None):
         """SubNetworkInterface
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class SubNetworkInterface:
         :type project_id: str
         :param created_at: 功能说明：辅助弹性网卡的创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
         :type created_at: datetime
+        :param security_enabled: 功能说明：辅助弹性网卡安全使能标记，如果不使能则安全组不生效。 取值范围：true（使能），false（不使能）
+        :type security_enabled: bool
         """
         
         
@@ -101,6 +105,7 @@ class SubNetworkInterface:
         self._tags = None
         self._project_id = None
         self._created_at = None
+        self._security_enabled = None
         self.discriminator = None
 
         self.id = id
@@ -117,6 +122,7 @@ class SubNetworkInterface:
         self.tags = tags
         self.project_id = project_id
         self.created_at = created_at
+        self.security_enabled = security_enabled
 
     @property
     def id(self):
@@ -425,6 +431,28 @@ class SubNetworkInterface:
         :type created_at: datetime
         """
         self._created_at = created_at
+
+    @property
+    def security_enabled(self):
+        """Gets the security_enabled of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡安全使能标记，如果不使能则安全组不生效。 取值范围：true（使能），false（不使能）
+
+        :return: The security_enabled of this SubNetworkInterface.
+        :rtype: bool
+        """
+        return self._security_enabled
+
+    @security_enabled.setter
+    def security_enabled(self, security_enabled):
+        """Sets the security_enabled of this SubNetworkInterface.
+
+        功能说明：辅助弹性网卡安全使能标记，如果不使能则安全组不生效。 取值范围：true（使能），false（不使能）
+
+        :param security_enabled: The security_enabled of this SubNetworkInterface.
+        :type security_enabled: bool
+        """
+        self._security_enabled = security_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

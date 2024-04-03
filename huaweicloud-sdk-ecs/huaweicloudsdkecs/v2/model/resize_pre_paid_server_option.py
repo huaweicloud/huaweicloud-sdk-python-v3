@@ -20,17 +20,19 @@ class ResizePrePaidServerOption:
         'flavor_ref': 'str',
         'dedicated_host_id': 'str',
         'extendparam': 'ResizeServerExtendParam',
-        'mode': 'str'
+        'mode': 'str',
+        'cpu_options': 'CpuOptions'
     }
 
     attribute_map = {
         'flavor_ref': 'flavorRef',
         'dedicated_host_id': 'dedicated_host_id',
         'extendparam': 'extendparam',
-        'mode': 'mode'
+        'mode': 'mode',
+        'cpu_options': 'cpu_options'
     }
 
-    def __init__(self, flavor_ref=None, dedicated_host_id=None, extendparam=None, mode=None):
+    def __init__(self, flavor_ref=None, dedicated_host_id=None, extendparam=None, mode=None, cpu_options=None):
         """ResizePrePaidServerOption
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ResizePrePaidServerOption:
         :type extendparam: :class:`huaweicloudsdkecs.v2.ResizeServerExtendParam`
         :param mode: 取值为withStopServer ，支持开机状态下变更规格。  mode取值为withStopServer时，对开机状态的云服务器执行变更规格操作，系统自动对云服务器先执行关机，再变更规格，变更成功后再执行开机。
         :type mode: str
+        :param cpu_options: 
+        :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
         
         
@@ -51,6 +55,7 @@ class ResizePrePaidServerOption:
         self._dedicated_host_id = None
         self._extendparam = None
         self._mode = None
+        self._cpu_options = None
         self.discriminator = None
 
         self.flavor_ref = flavor_ref
@@ -60,6 +65,8 @@ class ResizePrePaidServerOption:
             self.extendparam = extendparam
         if mode is not None:
             self.mode = mode
+        if cpu_options is not None:
+            self.cpu_options = cpu_options
 
     @property
     def flavor_ref(self):
@@ -144,6 +151,24 @@ class ResizePrePaidServerOption:
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def cpu_options(self):
+        """Gets the cpu_options of this ResizePrePaidServerOption.
+
+        :return: The cpu_options of this ResizePrePaidServerOption.
+        :rtype: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        """
+        return self._cpu_options
+
+    @cpu_options.setter
+    def cpu_options(self, cpu_options):
+        """Sets the cpu_options of this ResizePrePaidServerOption.
+
+        :param cpu_options: The cpu_options of this ResizePrePaidServerOption.
+        :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        """
+        self._cpu_options = cpu_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

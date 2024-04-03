@@ -29,7 +29,7 @@ class DetachInternetBandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param global_eip_segment_id: 全局IP段id
+        :param global_eip_segment_id: 全域弹性公网IP段ID
         :type global_eip_segment_id: str
         """
         
@@ -44,7 +44,7 @@ class DetachInternetBandwidth:
     def global_eip_segment_id(self):
         """Gets the global_eip_segment_id of this DetachInternetBandwidth.
 
-        全局IP段id
+        全域弹性公网IP段ID
 
         :return: The global_eip_segment_id of this DetachInternetBandwidth.
         :rtype: str
@@ -55,7 +55,7 @@ class DetachInternetBandwidth:
     def global_eip_segment_id(self, global_eip_segment_id):
         """Sets the global_eip_segment_id of this DetachInternetBandwidth.
 
-        全局IP段id
+        全域弹性公网IP段ID
 
         :param global_eip_segment_id: The global_eip_segment_id of this DetachInternetBandwidth.
         :type global_eip_segment_id: str

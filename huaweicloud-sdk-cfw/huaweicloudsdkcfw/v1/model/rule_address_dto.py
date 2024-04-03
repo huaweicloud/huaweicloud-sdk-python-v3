@@ -29,7 +29,9 @@ class RuleAddressDto:
         'domain_set_name': 'str',
         'ip_address': 'list[str]',
         'address_group': 'list[str]',
-        'address_group_names': 'list[AddressGroupVO]'
+        'address_group_names': 'list[AddressGroupVO]',
+        'address_set_type': 'int',
+        'predefined_group': 'list[str]'
     }
 
     attribute_map = {
@@ -45,15 +47,17 @@ class RuleAddressDto:
         'domain_set_name': 'domain_set_name',
         'ip_address': 'ip_address',
         'address_group': 'address_group',
-        'address_group_names': 'address_group_names'
+        'address_group_names': 'address_group_names',
+        'address_set_type': 'address_set_type',
+        'predefined_group': 'predefined_group'
     }
 
-    def __init__(self, type=None, address_type=None, address=None, address_set_id=None, address_set_name=None, domain_address_name=None, region_list_json=None, region_list=None, domain_set_id=None, domain_set_name=None, ip_address=None, address_group=None, address_group_names=None):
+    def __init__(self, type=None, address_type=None, address=None, address_set_id=None, address_set_name=None, domain_address_name=None, region_list_json=None, region_list=None, domain_set_id=None, domain_set_name=None, ip_address=None, address_group=None, address_group_names=None, address_set_type=None, predefined_group=None):
         """RuleAddressDto
 
         The model defined in huaweicloud sdk
 
-        :param type: 源类型0手工输入,1关联IP地址组,2域名
+        :param type: 源类型0手工输入,1关联IP地址组,2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-URL过滤。
         :type type: int
         :param address_type: 源类型0 ipv4,1 ipv6
         :type address_type: int
@@ -79,6 +83,10 @@ class RuleAddressDto:
         :type address_group: list[str]
         :param address_group_names: 地址组名称列表
         :type address_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
+        :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+        :type address_set_type: int
+        :param predefined_group: 预定义地址组列表
+        :type predefined_group: list[str]
         """
         
         
@@ -96,6 +104,8 @@ class RuleAddressDto:
         self._ip_address = None
         self._address_group = None
         self._address_group_names = None
+        self._address_set_type = None
+        self._predefined_group = None
         self.discriminator = None
 
         self.type = type
@@ -123,12 +133,16 @@ class RuleAddressDto:
             self.address_group = address_group
         if address_group_names is not None:
             self.address_group_names = address_group_names
+        if address_set_type is not None:
+            self.address_set_type = address_set_type
+        if predefined_group is not None:
+            self.predefined_group = predefined_group
 
     @property
     def type(self):
         """Gets the type of this RuleAddressDto.
 
-        源类型0手工输入,1关联IP地址组,2域名
+        源类型0手工输入,1关联IP地址组,2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-URL过滤。
 
         :return: The type of this RuleAddressDto.
         :rtype: int
@@ -139,7 +153,7 @@ class RuleAddressDto:
     def type(self, type):
         """Sets the type of this RuleAddressDto.
 
-        源类型0手工输入,1关联IP地址组,2域名
+        源类型0手工输入,1关联IP地址组,2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-URL过滤。
 
         :param type: The type of this RuleAddressDto.
         :type type: int
@@ -409,6 +423,50 @@ class RuleAddressDto:
         :type address_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
         """
         self._address_group_names = address_group_names
+
+    @property
+    def address_set_type(self):
+        """Gets the address_set_type of this RuleAddressDto.
+
+        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+
+        :return: The address_set_type of this RuleAddressDto.
+        :rtype: int
+        """
+        return self._address_set_type
+
+    @address_set_type.setter
+    def address_set_type(self, address_set_type):
+        """Sets the address_set_type of this RuleAddressDto.
+
+        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+
+        :param address_set_type: The address_set_type of this RuleAddressDto.
+        :type address_set_type: int
+        """
+        self._address_set_type = address_set_type
+
+    @property
+    def predefined_group(self):
+        """Gets the predefined_group of this RuleAddressDto.
+
+        预定义地址组列表
+
+        :return: The predefined_group of this RuleAddressDto.
+        :rtype: list[str]
+        """
+        return self._predefined_group
+
+    @predefined_group.setter
+    def predefined_group(self, predefined_group):
+        """Sets the predefined_group of this RuleAddressDto.
+
+        预定义地址组列表
+
+        :param predefined_group: The predefined_group of this RuleAddressDto.
+        :type predefined_group: list[str]
+        """
+        self._predefined_group = predefined_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

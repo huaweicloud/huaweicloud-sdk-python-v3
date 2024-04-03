@@ -22,6 +22,8 @@ class AddRuleAclDtoRules:
         'address_type': 'int',
         'action_type': 'int',
         'status': 'int',
+        'applications': 'list[str]',
+        'applications_json_string': 'str',
         'long_connect_time': 'int',
         'long_connect_time_hour': 'int',
         'long_connect_time_minute': 'int',
@@ -29,8 +31,9 @@ class AddRuleAclDtoRules:
         'long_connect_enable': 'int',
         'description': 'str',
         'direction': 'int',
-        'source': 'RuleAddressDto',
-        'destination': 'RuleAddressDto',
+        'profile': 'RuleProfileDto',
+        'source': 'RuleAddressDtoForRequest',
+        'destination': 'RuleAddressDtoForRequest',
         'service': 'RuleServiceDto',
         'tag': 'TagsVO'
     }
@@ -41,6 +44,8 @@ class AddRuleAclDtoRules:
         'address_type': 'address_type',
         'action_type': 'action_type',
         'status': 'status',
+        'applications': 'applications',
+        'applications_json_string': 'applicationsJsonString',
         'long_connect_time': 'long_connect_time',
         'long_connect_time_hour': 'long_connect_time_hour',
         'long_connect_time_minute': 'long_connect_time_minute',
@@ -48,13 +53,14 @@ class AddRuleAclDtoRules:
         'long_connect_enable': 'long_connect_enable',
         'description': 'description',
         'direction': 'direction',
+        'profile': 'profile',
         'source': 'source',
         'destination': 'destination',
         'service': 'service',
         'tag': 'tag'
     }
 
-    def __init__(self, name=None, sequence=None, address_type=None, action_type=None, status=None, long_connect_time=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_enable=None, description=None, direction=None, source=None, destination=None, service=None, tag=None):
+    def __init__(self, name=None, sequence=None, address_type=None, action_type=None, status=None, applications=None, applications_json_string=None, long_connect_time=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_enable=None, description=None, direction=None, profile=None, source=None, destination=None, service=None, tag=None):
         """AddRuleAclDtoRules
 
         The model defined in huaweicloud sdk
@@ -69,6 +75,10 @@ class AddRuleAclDtoRules:
         :type action_type: int
         :param status: 规则下发状态 0：禁用,1：启用
         :type status: int
+        :param applications: 应用列表
+        :type applications: list[str]
+        :param applications_json_string: 应用列表转化json字符串
+        :type applications_json_string: str
         :param long_connect_time: 长连接时长
         :type long_connect_time: int
         :param long_connect_time_hour: 长连接时长小时
@@ -83,10 +93,12 @@ class AddRuleAclDtoRules:
         :type description: str
         :param direction: 方向：0表示外到内，1表示内到外【说明：规则type&#x3D;0：互联网规则 | 2：nat规则时方向值必填】
         :type direction: int
+        :param profile: 
+        :type profile: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
         :param source: 
-        :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
         :param destination: 
-        :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
         :param service: 
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
         :param tag: 
@@ -100,6 +112,8 @@ class AddRuleAclDtoRules:
         self._address_type = None
         self._action_type = None
         self._status = None
+        self._applications = None
+        self._applications_json_string = None
         self._long_connect_time = None
         self._long_connect_time_hour = None
         self._long_connect_time_minute = None
@@ -107,6 +121,7 @@ class AddRuleAclDtoRules:
         self._long_connect_enable = None
         self._description = None
         self._direction = None
+        self._profile = None
         self._source = None
         self._destination = None
         self._service = None
@@ -118,6 +133,10 @@ class AddRuleAclDtoRules:
         self.address_type = address_type
         self.action_type = action_type
         self.status = status
+        if applications is not None:
+            self.applications = applications
+        if applications_json_string is not None:
+            self.applications_json_string = applications_json_string
         if long_connect_time is not None:
             self.long_connect_time = long_connect_time
         if long_connect_time_hour is not None:
@@ -131,6 +150,8 @@ class AddRuleAclDtoRules:
             self.description = description
         if direction is not None:
             self.direction = direction
+        if profile is not None:
+            self.profile = profile
         self.source = source
         self.destination = destination
         self.service = service
@@ -242,6 +263,50 @@ class AddRuleAclDtoRules:
         :type status: int
         """
         self._status = status
+
+    @property
+    def applications(self):
+        """Gets the applications of this AddRuleAclDtoRules.
+
+        应用列表
+
+        :return: The applications of this AddRuleAclDtoRules.
+        :rtype: list[str]
+        """
+        return self._applications
+
+    @applications.setter
+    def applications(self, applications):
+        """Sets the applications of this AddRuleAclDtoRules.
+
+        应用列表
+
+        :param applications: The applications of this AddRuleAclDtoRules.
+        :type applications: list[str]
+        """
+        self._applications = applications
+
+    @property
+    def applications_json_string(self):
+        """Gets the applications_json_string of this AddRuleAclDtoRules.
+
+        应用列表转化json字符串
+
+        :return: The applications_json_string of this AddRuleAclDtoRules.
+        :rtype: str
+        """
+        return self._applications_json_string
+
+    @applications_json_string.setter
+    def applications_json_string(self, applications_json_string):
+        """Sets the applications_json_string of this AddRuleAclDtoRules.
+
+        应用列表转化json字符串
+
+        :param applications_json_string: The applications_json_string of this AddRuleAclDtoRules.
+        :type applications_json_string: str
+        """
+        self._applications_json_string = applications_json_string
 
     @property
     def long_connect_time(self):
@@ -398,11 +463,29 @@ class AddRuleAclDtoRules:
         self._direction = direction
 
     @property
+    def profile(self):
+        """Gets the profile of this AddRuleAclDtoRules.
+
+        :return: The profile of this AddRuleAclDtoRules.
+        :rtype: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
+        """
+        return self._profile
+
+    @profile.setter
+    def profile(self, profile):
+        """Sets the profile of this AddRuleAclDtoRules.
+
+        :param profile: The profile of this AddRuleAclDtoRules.
+        :type profile: :class:`huaweicloudsdkcfw.v1.RuleProfileDto`
+        """
+        self._profile = profile
+
+    @property
     def source(self):
         """Gets the source of this AddRuleAclDtoRules.
 
         :return: The source of this AddRuleAclDtoRules.
-        :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
         """
         return self._source
 
@@ -411,7 +494,7 @@ class AddRuleAclDtoRules:
         """Sets the source of this AddRuleAclDtoRules.
 
         :param source: The source of this AddRuleAclDtoRules.
-        :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
         """
         self._source = source
 
@@ -420,7 +503,7 @@ class AddRuleAclDtoRules:
         """Gets the destination of this AddRuleAclDtoRules.
 
         :return: The destination of this AddRuleAclDtoRules.
-        :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
         """
         return self._destination
 
@@ -429,7 +512,7 @@ class AddRuleAclDtoRules:
         """Sets the destination of this AddRuleAclDtoRules.
 
         :param destination: The destination of this AddRuleAclDtoRules.
-        :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
+        :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
         """
         self._destination = destination
 

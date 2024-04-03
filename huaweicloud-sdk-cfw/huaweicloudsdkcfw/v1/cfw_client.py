@@ -1553,6 +1553,10 @@ class CfwClient(Client):
             query_params.append(('rule_name', local_var_params['rule_name']))
         if 'action' in local_var_params:
             query_params.append(('action', local_var_params['action']))
+        if 'src_region_name' in local_var_params:
+            query_params.append(('src_region_name', local_var_params['src_region_name']))
+        if 'dst_region_name' in local_var_params:
+            query_params.append(('dst_region_name', local_var_params['dst_region_name']))
 
         header_params = {}
 
@@ -1630,6 +1634,8 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'query_address_set_type' in local_var_params:
+            query_params.append(('query_address_set_type', local_var_params['query_address_set_type']))
 
         header_params = {}
 
@@ -1782,6 +1788,8 @@ class CfwClient(Client):
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
         if 'query_address_set_type' in local_var_params:
             query_params.append(('query_address_set_type', local_var_params['query_address_set_type']))
+        if 'address_set_type' in local_var_params:
+            query_params.append(('address_set_type', local_var_params['address_set_type']))
 
         header_params = {}
 
@@ -1889,6 +1897,12 @@ class CfwClient(Client):
             query_params.append(('dst_host', local_var_params['dst_host']))
         if 'log_type' in local_var_params:
             query_params.append(('log_type', local_var_params['log_type']))
+        if 'attack_rule_id' in local_var_params:
+            query_params.append(('attack_rule_id', local_var_params['attack_rule_id']))
+        if 'src_region_name' in local_var_params:
+            query_params.append(('src_region_name', local_var_params['src_region_name']))
+        if 'dst_region_name' in local_var_params:
+            query_params.append(('dst_region_name', local_var_params['dst_region_name']))
 
         header_params = {}
 
@@ -2416,6 +2430,8 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
 
         header_params = {}
 
@@ -2580,6 +2596,10 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'dst_host' in local_var_params:
             query_params.append(('dst_host', local_var_params['dst_host']))
+        if 'src_region_name' in local_var_params:
+            query_params.append(('src_region_name', local_var_params['src_region_name']))
+        if 'dst_region_name' in local_var_params:
+            query_params.append(('dst_region_name', local_var_params['dst_region_name']))
 
         header_params = {}
 
@@ -2856,6 +2876,8 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'query_service_set_type' in local_var_params:
+            query_params.append(('query_service_set_type', local_var_params['query_service_set_type']))
 
         header_params = {}
 
@@ -2925,6 +2947,8 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'query_service_set_type' in local_var_params:
+            query_params.append(('query_service_set_type', local_var_params['query_service_set_type']))
 
         header_params = {}
 
@@ -3000,6 +3024,8 @@ class CfwClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'fw_instance_id' in local_var_params:
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'query_service_set_type' in local_var_params:
+            query_params.append(('query_service_set_type', local_var_params['query_service_set_type']))
 
         header_params = {}
 
@@ -3931,6 +3957,8 @@ class CfwClient(Client):
             query_params.append(('destination', local_var_params['destination']))
         if 'service' in local_var_params:
             query_params.append(('service', local_var_params['service']))
+        if 'application' in local_var_params:
+            query_params.append(('application', local_var_params['application']))
 
         header_params = {}
 

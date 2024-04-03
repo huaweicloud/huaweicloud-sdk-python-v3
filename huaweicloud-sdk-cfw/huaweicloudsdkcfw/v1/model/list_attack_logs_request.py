@@ -38,7 +38,10 @@ class ListAttackLogsRequest:
         'source': 'str',
         'enterprise_project_id': 'str',
         'dst_host': 'str',
-        'log_type': 'str'
+        'log_type': 'str',
+        'attack_rule_id': 'str',
+        'src_region_name': 'str',
+        'dst_region_name': 'str'
     }
 
     attribute_map = {
@@ -63,10 +66,13 @@ class ListAttackLogsRequest:
         'source': 'source',
         'enterprise_project_id': 'enterprise_project_id',
         'dst_host': 'dst_host',
-        'log_type': 'log_type'
+        'log_type': 'log_type',
+        'attack_rule_id': 'attack_rule_id',
+        'src_region_name': 'src_region_name',
+        'dst_region_name': 'dst_region_name'
     }
 
-    def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, source=None, enterprise_project_id=None, dst_host=None, log_type=None):
+    def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, source=None, enterprise_project_id=None, dst_host=None, log_type=None, attack_rule_id=None, src_region_name=None, dst_region_name=None):
         """ListAttackLogsRequest
 
         The model defined in huaweicloud sdk
@@ -113,8 +119,14 @@ class ListAttackLogsRequest:
         :type enterprise_project_id: str
         :param dst_host: 目标主机
         :type dst_host: str
-        :param log_type: log_type
+        :param log_type: 日志类型
         :type log_type: str
+        :param attack_rule_id: 入侵事件id
+        :type attack_rule_id: str
+        :param src_region_name: 源region名称
+        :type src_region_name: str
+        :param dst_region_name: 目的region名称
+        :type dst_region_name: str
         """
         
         
@@ -141,6 +153,9 @@ class ListAttackLogsRequest:
         self._enterprise_project_id = None
         self._dst_host = None
         self._log_type = None
+        self._attack_rule_id = None
+        self._src_region_name = None
+        self._dst_region_name = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -183,6 +198,12 @@ class ListAttackLogsRequest:
             self.dst_host = dst_host
         if log_type is not None:
             self.log_type = log_type
+        if attack_rule_id is not None:
+            self.attack_rule_id = attack_rule_id
+        if src_region_name is not None:
+            self.src_region_name = src_region_name
+        if dst_region_name is not None:
+            self.dst_region_name = dst_region_name
 
     @property
     def start_time(self):
@@ -650,7 +671,7 @@ class ListAttackLogsRequest:
     def log_type(self):
         """Gets the log_type of this ListAttackLogsRequest.
 
-        log_type
+        日志类型
 
         :return: The log_type of this ListAttackLogsRequest.
         :rtype: str
@@ -661,12 +682,78 @@ class ListAttackLogsRequest:
     def log_type(self, log_type):
         """Sets the log_type of this ListAttackLogsRequest.
 
-        log_type
+        日志类型
 
         :param log_type: The log_type of this ListAttackLogsRequest.
         :type log_type: str
         """
         self._log_type = log_type
+
+    @property
+    def attack_rule_id(self):
+        """Gets the attack_rule_id of this ListAttackLogsRequest.
+
+        入侵事件id
+
+        :return: The attack_rule_id of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._attack_rule_id
+
+    @attack_rule_id.setter
+    def attack_rule_id(self, attack_rule_id):
+        """Sets the attack_rule_id of this ListAttackLogsRequest.
+
+        入侵事件id
+
+        :param attack_rule_id: The attack_rule_id of this ListAttackLogsRequest.
+        :type attack_rule_id: str
+        """
+        self._attack_rule_id = attack_rule_id
+
+    @property
+    def src_region_name(self):
+        """Gets the src_region_name of this ListAttackLogsRequest.
+
+        源region名称
+
+        :return: The src_region_name of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._src_region_name
+
+    @src_region_name.setter
+    def src_region_name(self, src_region_name):
+        """Sets the src_region_name of this ListAttackLogsRequest.
+
+        源region名称
+
+        :param src_region_name: The src_region_name of this ListAttackLogsRequest.
+        :type src_region_name: str
+        """
+        self._src_region_name = src_region_name
+
+    @property
+    def dst_region_name(self):
+        """Gets the dst_region_name of this ListAttackLogsRequest.
+
+        目的region名称
+
+        :return: The dst_region_name of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._dst_region_name
+
+    @dst_region_name.setter
+    def dst_region_name(self, dst_region_name):
+        """Sets the dst_region_name of this ListAttackLogsRequest.
+
+        目的region名称
+
+        :param dst_region_name: The dst_region_name of this ListAttackLogsRequest.
+        :type dst_region_name: str
+        """
+        self._dst_region_name = dst_region_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

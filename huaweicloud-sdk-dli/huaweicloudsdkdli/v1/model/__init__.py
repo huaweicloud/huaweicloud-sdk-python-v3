@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkdli.v1.model.advanced_queue_property import AdvancedQueueProperty
 from huaweicloudsdkdli.v1.model.associate_queue_to_elastic_resource_pool_request import AssociateQueueToElasticResourcePoolRequest
 from huaweicloudsdkdli.v1.model.associate_queue_to_elastic_resource_pool_request_body import AssociateQueueToElasticResourcePoolRequestBody
 from huaweicloudsdkdli.v1.model.associate_queue_to_elastic_resource_pool_response import AssociateQueueToElasticResourcePoolResponse
@@ -36,6 +37,7 @@ from huaweicloudsdkdli.v1.model.check_sql_request import CheckSqlRequest
 from huaweicloudsdkdli.v1.model.check_sql_request_body import CheckSqlRequestBody
 from huaweicloudsdkdli.v1.model.check_sql_response import CheckSqlResponse
 from huaweicloudsdkdli.v1.model.column import Column
+from huaweicloudsdkdli.v1.model.common_queue_property import CommonQueueProperty
 from huaweicloudsdkdli.v1.model.create_auth_info_request import CreateAuthInfoRequest
 from huaweicloudsdkdli.v1.model.create_auth_info_request_body import CreateAuthInfoRequestBody
 from huaweicloudsdkdli.v1.model.create_auth_info_response import CreateAuthInfoResponse
@@ -88,7 +90,6 @@ from huaweicloudsdkdli.v1.model.create_queue_plan_request import CreateQueuePlan
 from huaweicloudsdkdli.v1.model.create_queue_plan_response import CreateQueuePlanResponse
 from huaweicloudsdkdli.v1.model.create_queue_property_request import CreateQueuePropertyRequest
 from huaweicloudsdkdli.v1.model.create_queue_property_request_body import CreateQueuePropertyRequestBody
-from huaweicloudsdkdli.v1.model.create_queue_property_request_body_properties import CreateQueuePropertyRequestBodyProperties
 from huaweicloudsdkdli.v1.model.create_queue_property_response import CreateQueuePropertyResponse
 from huaweicloudsdkdli.v1.model.create_queue_request import CreateQueueRequest
 from huaweicloudsdkdli.v1.model.create_queue_request_body import CreateQueueRequestBody
@@ -139,8 +140,8 @@ from huaweicloudsdkdli.v1.model.delete_job_resource_request import DeleteJobReso
 from huaweicloudsdkdli.v1.model.delete_job_resource_response import DeleteJobResourceResponse
 from huaweicloudsdkdli.v1.model.delete_queue_plan_request import DeleteQueuePlanRequest
 from huaweicloudsdkdli.v1.model.delete_queue_plan_response import DeleteQueuePlanResponse
-from huaweicloudsdkdli.v1.model.delete_queue_properties_request_body import DeleteQueuePropertiesRequestBody
 from huaweicloudsdkdli.v1.model.delete_queue_property_request import DeleteQueuePropertyRequest
+from huaweicloudsdkdli.v1.model.delete_queue_property_request_body import DeleteQueuePropertyRequestBody
 from huaweicloudsdkdli.v1.model.delete_queue_property_response import DeleteQueuePropertyResponse
 from huaweicloudsdkdli.v1.model.delete_queue_request import DeleteQueueRequest
 from huaweicloudsdkdli.v1.model.delete_queue_response import DeleteQueueResponse
@@ -169,12 +170,10 @@ from huaweicloudsdkdli.v1.model.export_table_request_body import ExportTableRequ
 from huaweicloudsdkdli.v1.model.export_table_response import ExportTableResponse
 from huaweicloudsdkdli.v1.model.flink_job import FlinkJob
 from huaweicloudsdkdli.v1.model.flink_job_config import FlinkJobConfig
-from huaweicloudsdkdli.v1.model.flink_job_config_detail import FlinkJobConfigDetail
-from huaweicloudsdkdli.v1.model.flink_job_detail import FlinkJobDetail
 from huaweicloudsdkdli.v1.model.flink_job_execution_graph import FlinkJobExecutionGraph
-from huaweicloudsdkdli.v1.model.flink_job_info import FlinkJobInfo
 from huaweicloudsdkdli.v1.model.flink_job_list import FlinkJobList
 from huaweicloudsdkdli.v1.model.flink_job_metric_info import FlinkJobMetricInfo
+from huaweicloudsdkdli.v1.model.flink_job_status import FlinkJobStatus
 from huaweicloudsdkdli.v1.model.flink_job_update_time import FlinkJobUpdateTime
 from huaweicloudsdkdli.v1.model.flink_metric import FlinkMetric
 from huaweicloudsdkdli.v1.model.flink_metric_list import FlinkMetricList
@@ -192,6 +191,8 @@ from huaweicloudsdkdli.v1.model.import_table_request_body import ImportTableRequ
 from huaweicloudsdkdli.v1.model.import_table_response import ImportTableResponse
 from huaweicloudsdkdli.v1.model.job import Job
 from huaweicloudsdkdli.v1.model.job_map import JobMap
+from huaweicloudsdkdli.v1.model.job_resource import JobResource
+from huaweicloudsdkdli.v1.model.job_resources_group import JobResourcesGroup
 from huaweicloudsdkdli.v1.model.list_auth_info_request import ListAuthInfoRequest
 from huaweicloudsdkdli.v1.model.list_auth_info_response import ListAuthInfoResponse
 from huaweicloudsdkdli.v1.model.list_authorization_privileges_request import ListAuthorizationPrivilegesRequest
@@ -249,11 +250,11 @@ from huaweicloudsdkdli.v1.model.list_table_users_response import ListTableUsersR
 from huaweicloudsdkdli.v1.model.list_tables_request import ListTablesRequest
 from huaweicloudsdkdli.v1.model.list_tables_response import ListTablesResponse
 from huaweicloudsdkdli.v1.model.metric import Metric
-from huaweicloudsdkdli.v1.model.model_property import ModelProperty
 from huaweicloudsdkdli.v1.model.package_resource import PackageResource
+from huaweicloudsdkdli.v1.model.package_resource_group import PackageResourceGroup
 from huaweicloudsdkdli.v1.model.package_resource_moudle import PackageResourceMoudle
 from huaweicloudsdkdli.v1.model.partition import Partition
-from huaweicloudsdkdli.v1.model.partition_info import PartitionInfo
+from huaweicloudsdkdli.v1.model.partition_list import PartitionList
 from huaweicloudsdkdli.v1.model.preview_sql_job_result_request import PreviewSqlJobResultRequest
 from huaweicloudsdkdli.v1.model.preview_sql_job_result_response import PreviewSqlJobResultResponse
 from huaweicloudsdkdli.v1.model.preview_table_request import PreviewTableRequest
@@ -262,9 +263,11 @@ from huaweicloudsdkdli.v1.model.privilege import Privilege
 from huaweicloudsdkdli.v1.model.queue import Queue
 from huaweicloudsdkdli.v1.model.queue_plan import QueuePlan
 from huaweicloudsdkdli.v1.model.queue_plan_request_body import QueuePlanRequestBody
+from huaweicloudsdkdli.v1.model.queue_property import QueueProperty
 from huaweicloudsdkdli.v1.model.queue_scaling_policy import QueueScalingPolicy
 from huaweicloudsdkdli.v1.model.queue_user_privilege import QueueUserPrivilege
 from huaweicloudsdkdli.v1.model.quota_info import QuotaInfo
+from huaweicloudsdkdli.v1.model.quota_list import QuotaList
 from huaweicloudsdkdli.v1.model.register_authorized_queue_request import RegisterAuthorizedQueueRequest
 from huaweicloudsdkdli.v1.model.register_authorized_queue_request_body import RegisterAuthorizedQueueRequestBody
 from huaweicloudsdkdli.v1.model.register_authorized_queue_response import RegisterAuthorizedQueueResponse
@@ -311,7 +314,6 @@ from huaweicloudsdkdli.v1.model.show_queue_request import ShowQueueRequest
 from huaweicloudsdkdli.v1.model.show_queue_response import ShowQueueResponse
 from huaweicloudsdkdli.v1.model.show_quota_request import ShowQuotaRequest
 from huaweicloudsdkdli.v1.model.show_quota_response import ShowQuotaResponse
-from huaweicloudsdkdli.v1.model.show_quota_response_body_quotas import ShowQuotaResponseBodyQuotas
 from huaweicloudsdkdli.v1.model.show_spark_job_log_request import ShowSparkJobLogRequest
 from huaweicloudsdkdli.v1.model.show_spark_job_log_response import ShowSparkJobLogResponse
 from huaweicloudsdkdli.v1.model.show_spark_job_request import ShowSparkJobRequest
@@ -328,9 +330,7 @@ from huaweicloudsdkdli.v1.model.show_sql_job_status_request import ShowSqlJobSta
 from huaweicloudsdkdli.v1.model.show_sql_job_status_response import ShowSqlJobStatusResponse
 from huaweicloudsdkdli.v1.model.show_table_request import ShowTableRequest
 from huaweicloudsdkdli.v1.model.show_table_response import ShowTableResponse
-from huaweicloudsdkdli.v1.model.spark_job_group import SparkJobGroup
-from huaweicloudsdkdli.v1.model.spark_job_resource import SparkJobResource
-from huaweicloudsdkdli.v1.model.spark_job_session import SparkJobSession
+from huaweicloudsdkdli.v1.model.spark_job import SparkJob
 from huaweicloudsdkdli.v1.model.spark_job_template import SparkJobTemplate
 from huaweicloudsdkdli.v1.model.spark_job_template_detail import SparkJobTemplateDetail
 from huaweicloudsdkdli.v1.model.sql_job import SqlJob
@@ -386,7 +386,6 @@ from huaweicloudsdkdli.v1.model.update_queue_plan_request import UpdateQueuePlan
 from huaweicloudsdkdli.v1.model.update_queue_plan_response import UpdateQueuePlanResponse
 from huaweicloudsdkdli.v1.model.update_queue_property_request import UpdateQueuePropertyRequest
 from huaweicloudsdkdli.v1.model.update_queue_property_request_body import UpdateQueuePropertyRequestBody
-from huaweicloudsdkdli.v1.model.update_queue_property_request_body_properties import UpdateQueuePropertyRequestBodyProperties
 from huaweicloudsdkdli.v1.model.update_queue_property_response import UpdateQueuePropertyResponse
 from huaweicloudsdkdli.v1.model.update_spark_job_template_request import UpdateSparkJobTemplateRequest
 from huaweicloudsdkdli.v1.model.update_spark_job_template_request_body import UpdateSparkJobTemplateRequestBody

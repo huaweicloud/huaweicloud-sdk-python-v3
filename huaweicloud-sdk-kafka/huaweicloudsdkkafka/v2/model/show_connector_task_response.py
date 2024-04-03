@@ -20,6 +20,7 @@ class ShowConnectorTaskResponse(SdkResponse):
     openapi_types = {
         'task_name': 'str',
         'topics': 'str',
+        'topics_regex': 'str',
         'source_type': 'str',
         'source_task': 'SmartConnectTaskRespSourceConfig',
         'sink_type': 'str',
@@ -32,6 +33,7 @@ class ShowConnectorTaskResponse(SdkResponse):
     attribute_map = {
         'task_name': 'task_name',
         'topics': 'topics',
+        'topics_regex': 'topics_regex',
         'source_type': 'source_type',
         'source_task': 'source_task',
         'sink_type': 'sink_type',
@@ -41,7 +43,7 @@ class ShowConnectorTaskResponse(SdkResponse):
         'create_time': 'create_time'
     }
 
-    def __init__(self, task_name=None, topics=None, source_type=None, source_task=None, sink_type=None, sink_task=None, id=None, status=None, create_time=None):
+    def __init__(self, task_name=None, topics=None, topics_regex=None, source_type=None, source_task=None, sink_type=None, sink_task=None, id=None, status=None, create_time=None):
         """ShowConnectorTaskResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ShowConnectorTaskResponse(SdkResponse):
         :type task_name: str
         :param topics: SmartConnect任务配置的Topic。
         :type topics: str
+        :param topics_regex: SmartConnect任务配置的Topic正则表达式。
+        :type topics_regex: str
         :param source_type: SmartConnect任务的源端类型。
         :type source_type: str
         :param source_task: 
@@ -70,6 +74,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
         self._task_name = None
         self._topics = None
+        self._topics_regex = None
         self._source_type = None
         self._source_task = None
         self._sink_type = None
@@ -83,6 +88,8 @@ class ShowConnectorTaskResponse(SdkResponse):
             self.task_name = task_name
         if topics is not None:
             self.topics = topics
+        if topics_regex is not None:
+            self.topics_regex = topics_regex
         if source_type is not None:
             self.source_type = source_type
         if source_task is not None:
@@ -141,6 +148,28 @@ class ShowConnectorTaskResponse(SdkResponse):
         :type topics: str
         """
         self._topics = topics
+
+    @property
+    def topics_regex(self):
+        """Gets the topics_regex of this ShowConnectorTaskResponse.
+
+        SmartConnect任务配置的Topic正则表达式。
+
+        :return: The topics_regex of this ShowConnectorTaskResponse.
+        :rtype: str
+        """
+        return self._topics_regex
+
+    @topics_regex.setter
+    def topics_regex(self, topics_regex):
+        """Sets the topics_regex of this ShowConnectorTaskResponse.
+
+        SmartConnect任务配置的Topic正则表达式。
+
+        :param topics_regex: The topics_regex of this ShowConnectorTaskResponse.
+        :type topics_regex: str
+        """
+        self._topics_regex = topics_regex
 
     @property
     def source_type(self):

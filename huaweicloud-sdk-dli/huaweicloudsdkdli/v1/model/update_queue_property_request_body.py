@@ -17,7 +17,7 @@ class UpdateQueuePropertyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'properties': 'UpdateQueuePropertyRequestBodyProperties'
+        'properties': 'AdvancedQueueProperty'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class UpdateQueuePropertyRequestBody:
         The model defined in huaweicloud sdk
 
         :param properties: 
-        :type properties: :class:`huaweicloudsdkdli.v1.UpdateQueuePropertyRequestBodyProperties`
+        :type properties: :class:`huaweicloudsdkdli.v1.AdvancedQueueProperty`
         """
         
         
@@ -46,7 +46,7 @@ class UpdateQueuePropertyRequestBody:
         """Gets the properties of this UpdateQueuePropertyRequestBody.
 
         :return: The properties of this UpdateQueuePropertyRequestBody.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueuePropertyRequestBodyProperties`
+        :rtype: :class:`huaweicloudsdkdli.v1.AdvancedQueueProperty`
         """
         return self._properties
 
@@ -55,7 +55,7 @@ class UpdateQueuePropertyRequestBody:
         """Sets the properties of this UpdateQueuePropertyRequestBody.
 
         :param properties: The properties of this UpdateQueuePropertyRequestBody.
-        :type properties: :class:`huaweicloudsdkdli.v1.UpdateQueuePropertyRequestBodyProperties`
+        :type properties: :class:`huaweicloudsdkdli.v1.AdvancedQueueProperty`
         """
         self._properties = properties
 

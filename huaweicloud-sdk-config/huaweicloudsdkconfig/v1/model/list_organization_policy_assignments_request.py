@@ -18,6 +18,7 @@ class ListOrganizationPolicyAssignmentsRequest:
 
     openapi_types = {
         'organization_id': 'str',
+        'organization_policy_assignment_id': 'str',
         'organization_policy_assignment_name': 'str',
         'limit': 'int',
         'marker': 'str'
@@ -25,18 +26,21 @@ class ListOrganizationPolicyAssignmentsRequest:
 
     attribute_map = {
         'organization_id': 'organization_id',
+        'organization_policy_assignment_id': 'organization_policy_assignment_id',
         'organization_policy_assignment_name': 'organization_policy_assignment_name',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, organization_id=None, organization_policy_assignment_name=None, limit=None, marker=None):
+    def __init__(self, organization_id=None, organization_policy_assignment_id=None, organization_policy_assignment_name=None, limit=None, marker=None):
         """ListOrganizationPolicyAssignmentsRequest
 
         The model defined in huaweicloud sdk
 
         :param organization_id: 组织ID。
         :type organization_id: str
+        :param organization_policy_assignment_id: 组织合规规则ID
+        :type organization_policy_assignment_id: str
         :param organization_policy_assignment_name: 组织合规规则名称。
         :type organization_policy_assignment_name: str
         :param limit: 最大的返回数量
@@ -48,12 +52,15 @@ class ListOrganizationPolicyAssignmentsRequest:
         
 
         self._organization_id = None
+        self._organization_policy_assignment_id = None
         self._organization_policy_assignment_name = None
         self._limit = None
         self._marker = None
         self.discriminator = None
 
         self.organization_id = organization_id
+        if organization_policy_assignment_id is not None:
+            self.organization_policy_assignment_id = organization_policy_assignment_id
         if organization_policy_assignment_name is not None:
             self.organization_policy_assignment_name = organization_policy_assignment_name
         if limit is not None:
@@ -82,6 +89,28 @@ class ListOrganizationPolicyAssignmentsRequest:
         :type organization_id: str
         """
         self._organization_id = organization_id
+
+    @property
+    def organization_policy_assignment_id(self):
+        """Gets the organization_policy_assignment_id of this ListOrganizationPolicyAssignmentsRequest.
+
+        组织合规规则ID
+
+        :return: The organization_policy_assignment_id of this ListOrganizationPolicyAssignmentsRequest.
+        :rtype: str
+        """
+        return self._organization_policy_assignment_id
+
+    @organization_policy_assignment_id.setter
+    def organization_policy_assignment_id(self, organization_policy_assignment_id):
+        """Sets the organization_policy_assignment_id of this ListOrganizationPolicyAssignmentsRequest.
+
+        组织合规规则ID
+
+        :param organization_policy_assignment_id: The organization_policy_assignment_id of this ListOrganizationPolicyAssignmentsRequest.
+        :type organization_policy_assignment_id: str
+        """
+        self._organization_policy_assignment_id = organization_policy_assignment_id
 
     @property
     def organization_policy_assignment_name(self):

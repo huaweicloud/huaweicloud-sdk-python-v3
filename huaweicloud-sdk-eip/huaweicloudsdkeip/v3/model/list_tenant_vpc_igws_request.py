@@ -23,7 +23,9 @@ class ListTenantVpcIgwsRequest:
         'name': 'str',
         'sort_key': 'str',
         'sort_dir': 'str',
-        'limit': 'int'
+        'limit': 'int',
+        'offset': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class ListTenantVpcIgwsRequest:
         'name': 'name',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
-        'limit': 'limit'
+        'limit': 'limit',
+        'offset': 'offset',
+        'marker': 'marker'
     }
 
-    def __init__(self, fields=None, id=None, vpc_id=None, name=None, sort_key=None, sort_dir=None, limit=None):
+    def __init__(self, fields=None, id=None, vpc_id=None, name=None, sort_key=None, sort_dir=None, limit=None, offset=None, marker=None):
         """ListTenantVpcIgwsRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class ListTenantVpcIgwsRequest:
         :type sort_dir: str
         :param limit: 每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
         :type limit: int
+        :param offset: 分页起始点
+        :type offset: int
+        :param marker: 分页起始点
+        :type marker: str
         """
         
         
@@ -66,6 +74,8 @@ class ListTenantVpcIgwsRequest:
         self._sort_key = None
         self._sort_dir = None
         self._limit = None
+        self._offset = None
+        self._marker = None
         self.discriminator = None
 
         if fields is not None:
@@ -82,6 +92,10 @@ class ListTenantVpcIgwsRequest:
             self.sort_dir = sort_dir
         if limit is not None:
             self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if marker is not None:
+            self.marker = marker
 
     @property
     def fields(self):
@@ -236,6 +250,50 @@ class ListTenantVpcIgwsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListTenantVpcIgwsRequest.
+
+        分页起始点
+
+        :return: The offset of this ListTenantVpcIgwsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListTenantVpcIgwsRequest.
+
+        分页起始点
+
+        :param offset: The offset of this ListTenantVpcIgwsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListTenantVpcIgwsRequest.
+
+        分页起始点
+
+        :return: The marker of this ListTenantVpcIgwsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListTenantVpcIgwsRequest.
+
+        分页起始点
+
+        :param marker: The marker of this ListTenantVpcIgwsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

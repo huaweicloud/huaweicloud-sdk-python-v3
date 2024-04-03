@@ -759,6 +759,10 @@ class EipClient(Client):
             query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -1869,6 +1873,10 @@ class EipClient(Client):
             query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

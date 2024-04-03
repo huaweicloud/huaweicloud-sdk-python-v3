@@ -19,25 +19,25 @@ class CountGlobalEipSegmentResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'global_eip_segments': 'CountGeipSegments',
+        'global_eip_segment': 'CountGeipSegments',
         'x_request_id': 'str'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'global_eip_segments': 'global_eip_segments',
+        'global_eip_segment': 'global_eip_segment',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, request_id=None, global_eip_segments=None, x_request_id=None):
+    def __init__(self, request_id=None, global_eip_segment=None, x_request_id=None):
         """CountGlobalEipSegmentResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 本次请求的编号
         :type request_id: str
-        :param global_eip_segments: 
-        :type global_eip_segments: CountGeipSegments
+        :param global_eip_segment: 
+        :type global_eip_segment: CountGeipSegments
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -45,14 +45,14 @@ class CountGlobalEipSegmentResponse(SdkResponse):
         super(CountGlobalEipSegmentResponse, self).__init__()
 
         self._request_id = None
-        self._global_eip_segments = None
+        self._global_eip_segment = None
         self._x_request_id = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
-        if global_eip_segments is not None:
-            self.global_eip_segments = global_eip_segments
+        if global_eip_segment is not None:
+            self.global_eip_segment = global_eip_segment
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -79,22 +79,22 @@ class CountGlobalEipSegmentResponse(SdkResponse):
         self._request_id = request_id
 
     @property
-    def global_eip_segments(self):
-        """Gets the global_eip_segments of this CountGlobalEipSegmentResponse.
+    def global_eip_segment(self):
+        """Gets the global_eip_segment of this CountGlobalEipSegmentResponse.
 
-        :return: The global_eip_segments of this CountGlobalEipSegmentResponse.
+        :return: The global_eip_segment of this CountGlobalEipSegmentResponse.
         :rtype: CountGeipSegments
         """
-        return self._global_eip_segments
+        return self._global_eip_segment
 
-    @global_eip_segments.setter
-    def global_eip_segments(self, global_eip_segments):
-        """Sets the global_eip_segments of this CountGlobalEipSegmentResponse.
+    @global_eip_segment.setter
+    def global_eip_segment(self, global_eip_segment):
+        """Sets the global_eip_segment of this CountGlobalEipSegmentResponse.
 
-        :param global_eip_segments: The global_eip_segments of this CountGlobalEipSegmentResponse.
-        :type global_eip_segments: CountGeipSegments
+        :param global_eip_segment: The global_eip_segment of this CountGlobalEipSegmentResponse.
+        :type global_eip_segment: CountGeipSegments
         """
-        self._global_eip_segments = global_eip_segments
+        self._global_eip_segment = global_eip_segment
 
     @property
     def x_request_id(self):

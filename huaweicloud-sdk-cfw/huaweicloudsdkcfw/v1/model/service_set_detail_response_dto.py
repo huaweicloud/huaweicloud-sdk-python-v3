@@ -41,7 +41,7 @@ class ServiceSetDetailResponseDto:
         :type name: str
         :param description: 服务组描述信息
         :type description: str
-        :param service_set_type: 服务组类型，0表示自定义服务组，1表示预定义服务组
+        :param service_set_type: 服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
         :type service_set_type: int
         """
         
@@ -131,7 +131,7 @@ class ServiceSetDetailResponseDto:
     def service_set_type(self):
         """Gets the service_set_type of this ServiceSetDetailResponseDto.
 
-        服务组类型，0表示自定义服务组，1表示预定义服务组
+        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 
         :return: The service_set_type of this ServiceSetDetailResponseDto.
         :rtype: int
@@ -142,7 +142,7 @@ class ServiceSetDetailResponseDto:
     def service_set_type(self, service_set_type):
         """Sets the service_set_type of this ServiceSetDetailResponseDto.
 
-        服务组类型，0表示自定义服务组，1表示预定义服务组
+        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 
         :param service_set_type: The service_set_type of this ServiceSetDetailResponseDto.
         :type service_set_type: int

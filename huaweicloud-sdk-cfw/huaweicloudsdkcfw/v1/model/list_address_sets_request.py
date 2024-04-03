@@ -25,7 +25,8 @@ class ListAddressSetsRequest:
         'address_type': 'int',
         'enterprise_project_id': 'str',
         'fw_instance_id': 'str',
-        'query_address_set_type': 'int'
+        'query_address_set_type': 'int',
+        'address_set_type': 'int'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ListAddressSetsRequest:
         'address_type': 'address_type',
         'enterprise_project_id': 'enterprise_project_id',
         'fw_instance_id': 'fw_instance_id',
-        'query_address_set_type': 'query_address_set_type'
+        'query_address_set_type': 'query_address_set_type',
+        'address_set_type': 'address_set_type'
     }
 
-    def __init__(self, object_id=None, key_word=None, limit=None, offset=None, address=None, address_type=None, enterprise_project_id=None, fw_instance_id=None, query_address_set_type=None):
+    def __init__(self, object_id=None, key_word=None, limit=None, offset=None, address=None, address_type=None, enterprise_project_id=None, fw_instance_id=None, query_address_set_type=None, address_set_type=None):
         """ListAddressSetsRequest
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ListAddressSetsRequest:
         :type fw_instance_id: str
         :param query_address_set_type: 查询地址组类型，0表示自定义地址组，1表示预定义地址组
         :type query_address_set_type: int
+        :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+        :type address_set_type: int
         """
         
         
@@ -76,6 +80,7 @@ class ListAddressSetsRequest:
         self._enterprise_project_id = None
         self._fw_instance_id = None
         self._query_address_set_type = None
+        self._address_set_type = None
         self.discriminator = None
 
         self.object_id = object_id
@@ -93,6 +98,8 @@ class ListAddressSetsRequest:
             self.fw_instance_id = fw_instance_id
         if query_address_set_type is not None:
             self.query_address_set_type = query_address_set_type
+        if address_set_type is not None:
+            self.address_set_type = address_set_type
 
     @property
     def object_id(self):
@@ -291,6 +298,28 @@ class ListAddressSetsRequest:
         :type query_address_set_type: int
         """
         self._query_address_set_type = query_address_set_type
+
+    @property
+    def address_set_type(self):
+        """Gets the address_set_type of this ListAddressSetsRequest.
+
+        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+
+        :return: The address_set_type of this ListAddressSetsRequest.
+        :rtype: int
+        """
+        return self._address_set_type
+
+    @address_set_type.setter
+    def address_set_type(self, address_set_type):
+        """Sets the address_set_type of this ListAddressSetsRequest.
+
+        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+
+        :param address_set_type: The address_set_type of this ListAddressSetsRequest.
+        :type address_set_type: int
+        """
+        self._address_set_type = address_set_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

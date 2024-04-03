@@ -15,6 +15,7 @@ from huaweicloudsdkeip.v3.model.attach_share_bandwidth_request import AttachShar
 from huaweicloudsdkeip.v3.model.attach_share_bandwidth_response import AttachShareBandwidthResponse
 from huaweicloudsdkeip.v3.model.attach_sharebw_dict import AttachSharebwDict
 from huaweicloudsdkeip.v3.model.attach_sharebw_req import AttachSharebwReq
+from huaweicloudsdkeip.v3.model.backbone_bandwidth_resp import BackboneBandwidthResp
 from huaweicloudsdkeip.v3.model.band_width_rules import BandWidthRules
 from huaweicloudsdkeip.v3.model.bandwidth_info_resp import BandwidthInfoResp
 from huaweicloudsdkeip.v3.model.bandwidth_resp import BandwidthResp
@@ -52,6 +53,7 @@ from huaweicloudsdkeip.v3.model.enable_nat64_request import EnableNat64Request
 from huaweicloudsdkeip.v3.model.enable_nat64_response import EnableNat64Response
 from huaweicloudsdkeip.v3.model.ext_limit_pojo import ExtLimitPojo
 from huaweicloudsdkeip.v3.model.geip_bindings_internal_resp import GeipBindingsInternalResp
+from huaweicloudsdkeip.v3.model.instance_vnic_resp import InstanceVnicResp
 from huaweicloudsdkeip.v3.model.instancevirtual_list_resp import InstancevirtualListResp
 from huaweicloudsdkeip.v3.model.list_bandwidth_request import ListBandwidthRequest
 from huaweicloudsdkeip.v3.model.list_bandwidth_response import ListBandwidthResponse

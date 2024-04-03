@@ -1,3 +1,517 @@
+# 3.1.90 2024-04-03
+
+### HuaweiCloud SDK CCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ParseCertificateSigningRequest**
+    - 响应参数变更
+      - `* key_algorithm_length: string -> int32`
+
+### HuaweiCloud SDK CFW
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlowLogs**
+    - 请求参数变更
+      - `+ src_region_name`
+      - `+ dst_region_name`
+    - 响应参数变更
+      - `+ data.records.dst_region_id`
+      - `+ data.records.dst_region_name`
+      - `+ data.records.src_region_id`
+      - `+ data.records.src_region_name`
+  - **ListAccessControlLogs**
+    - 请求参数变更
+      - `+ src_region_name`
+      - `+ dst_region_name`
+  - **ListAddressSets**
+    - 请求参数变更
+      - `+ address_set_type`
+  - **ListAttackLogs**
+    - 请求参数变更
+      - `+ attack_rule_id`
+      - `+ src_region_name`
+      - `+ dst_region_name`
+  - **UpdateAclRuleOrder**
+    - 请求参数变更
+      - `+ bottom`
+  - **ListServiceSetDetail**
+    - 请求参数变更
+      - `+ query_service_set_type`
+  - **AddAclRule**
+    - 请求参数变更
+      - `+ rules.applications`
+      - `+ rules.applicationsJsonString`
+      - `+ rules.profile`
+      - `+ rules.sequence.bottom`
+      - `+ rules.source.address_set_type`
+      - `+ rules.source.predefined_group`
+      - `- rules.source.address_group`
+      - `- rules.source.address_group_names`
+      - `* rules.source: object<RuleAddressDto> -> object<RuleAddressDtoForRequest>`
+      - `+ rules.service.protocols`
+      - `+ rules.service.predefined_group`
+      - `+ rules.service.service_set_type`
+      - `+ rules.service.service_group_names.protocols`
+      - `+ rules.service.service_group_names.service_set_type`
+  - **UpdateAclRule**
+    - 请求参数变更
+      - `+ applications`
+      - `+ applicationsJsonString`
+      - `+ profile`
+      - `+ sequence.bottom`
+      - `+ source.address_set_type`
+      - `+ source.predefined_group`
+      - `+ source.address_group_names.protocols`
+      - `+ source.address_group_names.service_set_type`
+      - `+ service.protocols`
+      - `+ service.predefined_group`
+      - `+ service.service_set_type`
+  - **ListAclRules**
+    - 请求参数变更
+      - `+ application`
+    - 响应参数变更
+      - `+ data.records.sequence.bottom`
+      - `+ data.records.source.address_set_type`
+      - `+ data.records.source.predefined_group`
+      - `+ data.records.source.address_group_names.protocols`
+      - `+ data.records.source.address_group_names.service_set_type`
+      - `+ data.records.service.protocols`
+      - `+ data.records.service.predefined_group`
+      - `+ data.records.service.service_set_type`
+  - **ListServiceItems**
+    - 请求参数变更
+      - `+ query_service_set_type`
+  - **ListAddressItems**
+    - 请求参数变更
+      - `+ query_address_set_type`
+  - **ListServiceSets**
+    - 请求参数变更
+      - `+ query_service_set_type`
+  - **ListDomainSets**
+    - 响应参数变更
+      - `+ data.records.rules`
+  - **ListFirewallDetail**
+    - 请求参数变更
+      - `+ name`
+    - 响应参数变更
+      - `+ data.records.tags`
+      - `+ data.records.flavor.default_bandwidth`
+      - `+ data.records.flavor.default_eip_count`
+      - `+ data.records.flavor.default_log_storage`
+      - `+ data.records.flavor.default_vpc_count`
+  - **ListFirewallList**
+    - 响应参数变更
+      - `+ data.records.tags`
+      - `+ data.records.flavor.default_bandwidth`
+      - `+ data.records.flavor.default_eip_count`
+      - `+ data.records.flavor.default_log_storage`
+      - `+ data.records.flavor.default_vpc_count`
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+  - 支持接口`ListTestcasesByProjectIssuesRelation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPlanList**
+    - 请求参数变更
+      - `+ fix_version_ids`
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 支持接口`UpdateOrganizationPolicyAssignment`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowOrganizationPolicyAssignmentDetailedStatus**
+    - 请求参数变更
+      - `+ organization_policy_assignment_id`
+  - **ListOrganizationConformancePackStatuses**
+    - 请求参数变更
+      - `+ organization_conformance_pack_id`
+  - **ShowOrganizationConformancePackDetailedStatuses**
+    - 请求参数变更
+      - `+ organization_conformance_pack_id`
+  - **ListOrganizationPolicyAssignments**
+    - 请求参数变更
+      - `+ organization_policy_assignment_id`
+  - **ListOrganizationConformancePacks**
+    - 请求参数变更
+      - `+ organization_conformance_pack_id`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowQuota**
+    - 响应参数变更
+      - `+ quotas`
+      - `+ is_success`
+      - `- Quotas`
+  - **ListJobResources**
+    - 响应参数变更
+      - `+ groups.group_name`
+      - `+ groups.status`
+      - `+ groups.resources`
+      - `+ groups.details`
+      - `+ groups.create_time`
+      - `+ groups.update_time`
+      - `+ groups.owner`
+      - `+ groups.is_async`
+      - `* groups: list<object> -> list<PackageResourceGroup>`
+  - **CreateSqlJob**
+    - 请求参数变更
+      - `+ engine_type: enum value [trino,spark]`
+  - **CreateQueueProperty**
+    - 请求参数变更
+      - `* properties: object -> object<CommonQueueProperty>`
+  - **ShowFlinkJob**
+    - 响应参数变更
+      - `+ job_detail.user_name`
+      - `+ job_detail.duration`
+      - `+ job_detail.root_id`
+      - `+ job_detail.graph_editor_enabled`
+      - `+ job_detail.has_savepoint`
+      - `+ job_detail.edge_group_ids`
+      - `+ job_detail.restart_times`
+      - `+ job_detail.job_config.real_cu_number`
+      - `* job_detail.job_config: object<FlinkJobConfigDetail> -> object<FlinkJobConfig>`
+      - `* job_detail: object<FlinkJobDetail> -> object<FlinkJob>`
+  - **ListFlinkJobs**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+      - `+ job_list.jobs.queue_name`
+      - `+ job_list.jobs.edge_group_ids`
+      - `+ job_list.jobs.restart_times`
+      - `+ job_list.jobs.savepoint_path`
+      - `+ job_list.jobs.job_config.runtime_config`
+      - `+ job_list.jobs.job_config.graph_editor_enabled`
+      - `+ job_list.jobs.job_config.graph_editor_data`
+      - `+ job_list.jobs.job_config.resume_max_num`
+      - `+ job_list.jobs.job_config.checkpoint_path`
+      - `+ job_list.jobs.job_config.config_url`
+      - `+ job_list.jobs.job_config.tm_cus`
+      - `+ job_list.jobs.job_config.tm_slot_num`
+      - `+ job_list.jobs.job_config.image`
+      - `+ job_list.jobs.job_config.feature`
+      - `+ job_list.jobs.job_config.flink_version`
+      - `+ job_list.jobs.job_config.operator_config`
+      - `+ job_list.jobs.job_config.static_estimator_config`
+      - `+ job_list.jobs.job_config.real_cu_number`
+      - `* job_list.jobs: list<FlinkJobInfo> -> list<FlinkJob>`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowServerAutoRecovery`、`RegisterServerAutoRecovery`
+  - **ResizePostPaidServer**
+    - 请求参数变更
+      - `+ resize.cpu_options`
+  - **ShowServer**
+    - 响应参数变更
+      - `+ server.cpu_options.hw:cpu_threads: enum value [1,2]`
+  - **ListServersDetails**
+    - 响应参数变更
+      - `+ servers.cpu_options.hw:cpu_threads: enum value [1,2]`
+  - **ChangeServerOsWithCloudInit**
+    - 请求参数变更
+      - `+ os-change.isAutoPay`
+  - **ChangeServerOsWithoutCloudInit**
+    - 请求参数变更
+      - `+ os-change.isAutoPay`
+  - **ResizeServer**
+    - 请求参数变更
+      - `+ resize.cpu_options`
+  - **CreateServers**
+    - 请求参数变更
+      - `+ server.cpu_options`
+  - **CreatePostPaidServers**
+    - 请求参数变更
+      - `+ server.cpu_options`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTenantVpcIgws**
+    - 请求参数变更
+      - `+ offset`
+      - `+ marker`
+  - **ListProjectGeipBindings**
+    - 请求参数变更
+      - `+ offset`
+      - `+ marker`
+    - 响应参数变更
+      - `+ geip_bindings.instance_type`
+      - `+ geip_bindings.instance_id`
+      - `- geip_bindings.binding_instance_type`
+      - `- geip_bindings.binding_instance_id`
+      - `+ geip_bindings.gcbandwidth.id`
+      - `+ geip_bindings.gcbandwidth.admin_status`
+      - `+ geip_bindings.gcbandwidth.size`
+      - `+ geip_bindings.gcbandwidth.short_id`
+      - `+ geip_bindings.gcbandwidth.sla_level`
+      - `+ geip_bindings.gcbandwidth.dscp`
+      - `* geip_bindings.gcbandwidth: object -> object<BackboneBandwidthResp>`
+      - `+ geip_bindings.vnic.private_ip_address`
+      - `+ geip_bindings.vnic.device_id`
+      - `+ geip_bindings.vnic.device_owner`
+      - `+ geip_bindings.vnic.vpc_id`
+      - `+ geip_bindings.vnic.port_id`
+      - `+ geip_bindings.vnic.mac`
+      - `+ geip_bindings.vnic.vtep`
+      - `+ geip_bindings.vnic.vni`
+      - `+ geip_bindings.vnic.instance_id`
+      - `+ geip_bindings.vnic.instance_type`
+      - `+ geip_bindings.vnic.port_profile`
+      - `* geip_bindings.vnic: object -> object<InstanceVnicResp>`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDependencyVersion**
+    - 请求参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+    - 响应参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ShowDependencyVersion**
+    - 响应参数变更
+      - `+ is_shared`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListDependencies**
+    - 响应参数变更
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListDependencyVersion**
+    - 响应参数变更
+      - `+ dependencies.is_shared`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ShowFunctionCode**
+    - 响应参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **UpdateFunctionCode**
+    - 响应参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ImportFunction**
+    - 响应参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListFunctions**
+    - 响应参数变更
+      - `+ functions.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **CreateFunction**
+    - 请求参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0,Custom Image]`
+    - 响应参数变更
+      - `+ is_return_stream`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ShowFunctionConfig**
+    - 响应参数变更
+      - `+ is_return_stream`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **UpdateFunctionConfig**
+    - 请求参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0,Custom Image]`
+    - 响应参数变更
+      - `+ enable_cloud_debug`
+      - `+ is_return_stream`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **UpdateFunctionMaxInstanceConfig**
+    - 响应参数变更
+      - `+ is_return_stream`
+      - `+ enable_cloud_debug`
+      - `+ enable_auth_in_header`
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListBridgeFunctions**
+    - 响应参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListStatistics**
+    - 响应参数变更
+      - `+ gpu_gbs`
+  - **CreateFunctionVersion**
+    - 响应参数变更
+      - `+ runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+      - `+ dependencies.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+  - **ListFunctionVersions**
+    - 响应参数变更
+      - `- versions.enable_cloud_debug`
+      - `+ versions.runtime: enum value [Java17,Python3.10,Node.js16.17,Node.js18.15,C#(.NET Core 6.0),Cangjie1.0]`
+
+### HuaweiCloud SDK GEIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CountGlobalEips**
+    - 响应参数变更
+      - `+ global_eip`
+      - `- global_eips`
+      - `- page_info`
+  - **BatchCreateGlobalEip**
+    - 响应参数变更
+      - `+ global_eips`
+      - `- global_eip`
+  - **CountGlobalEipSegment**
+    - 响应参数变更
+      - `+ global_eip_segment`
+      - `- global_eip_segments`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowProductdataOfferingInfos**
+    - 响应参数变更
+      - `* charging_mode: object -> string`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowConnectorTask**
+    - 响应参数变更
+      - `+ topics_regex`
+  - **CreateConnectorTask**
+    - 响应参数变更
+      - `+ topics_regex`
+  - **ListConnectorTasks**
+    - 响应参数变更
+      - `+ topics_regex`
+      - `+ tasks.topics_regex`
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 支持接口`GenerateMac`、`VerifyMac`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK PanguLargeModels
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExecuteTextCompletion**
+    - 请求参数变更
+      - `+ frequency_penalty`
+  - **ExecuteChatCompletion**
+    - 请求参数变更
+      - `+ frequency_penalty`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ShowReplayDelayStatus`、`SwitchLogReplay`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateConsumerGroup**
+    - 请求参数变更
+      - `- from_beginning`
+  - **ListMessageTrace**
+    - 响应参数变更
+      - `+ trace.trace_type: enum value [SubBefore,SubAfter]`
+      - `- trace.trace_type: enum value [Sub]`
+  - **ListInstanceConsumerGroups**
+    - 响应参数变更
+      - `* max: number -> int32`
+      - `* remaining: number -> int32`
+      - `* next_offset: number -> int32`
+      - `* previous_offset: number -> int32`
+
+### HuaweiCloud SDK SCM
+
+- _新增特性_
+  - 支持接口`SubscribeCertificate`、`ApplyCertificate`、`UnsubscribeCertificate`、`ListDeployedResources`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSubNetworkInterfaces**
+    - 响应参数变更
+      - `+ sub_network_interfaces.security_enabled`
+  - **CreateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interface.security_enabled`
+  - **BatchCreateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interfaces.security_enabled`
+  - **ShowSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interface.security_enabled`
+  - **UpdateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interface.security_enabled`
+  - **MigrateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interfaces.security_enabled`
+
+### HuaweiCloud SDK Workspace
+
+- _新增特性_
+  - 支持接口`ShowDesktopRemoteAssistanceInfo`、`CreateRemoteAssistance`、`CancelRemoteAssistance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.89 2024-04-01
 
 ### HuaweiCloud SDK BMS

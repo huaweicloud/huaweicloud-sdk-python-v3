@@ -35,7 +35,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param action: 批量删除topic时使用，不配置则为创建接口。
+        :param action: 批量删除topic时使用，不配置则为创建接口。删除操作：delete。
         :type action: str
         :param body: Body of the CreateTopicOrBatchDeleteTopicRequest
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreateTopicOrBatchDeleteTopicReq`
@@ -80,7 +80,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
     def action(self):
         """Gets the action of this CreateTopicOrBatchDeleteTopicRequest.
 
-        批量删除topic时使用，不配置则为创建接口。
+        批量删除topic时使用，不配置则为创建接口。删除操作：delete。
 
         :return: The action of this CreateTopicOrBatchDeleteTopicRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
     def action(self, action):
         """Sets the action of this CreateTopicOrBatchDeleteTopicRequest.
 
-        批量删除topic时使用，不配置则为创建接口。
+        批量删除topic时使用，不配置则为创建接口。删除操作：delete。
 
         :param action: The action of this CreateTopicOrBatchDeleteTopicRequest.
         :type action: str

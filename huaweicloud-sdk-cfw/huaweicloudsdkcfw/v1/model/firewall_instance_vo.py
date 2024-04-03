@@ -27,7 +27,8 @@ class FirewallInstanceVO:
         'service_type': 'int',
         'engine_type': 'int',
         'flavor': 'Flavor',
-        'status': 'int'
+        'status': 'int',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class FirewallInstanceVO:
         'service_type': 'service_type',
         'engine_type': 'engine_type',
         'flavor': 'flavor',
-        'status': 'status'
+        'status': 'status',
+        'tags': 'tags'
     }
 
-    def __init__(self, fw_instance_id=None, resource_id=None, name=None, fw_instance_name=None, enterprise_project_id=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, status=None):
+    def __init__(self, fw_instance_id=None, resource_id=None, name=None, fw_instance_name=None, enterprise_project_id=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, status=None, tags=None):
         """FirewallInstanceVO
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class FirewallInstanceVO:
         :type flavor: :class:`huaweicloudsdkcfw.v1.Flavor`
         :param status: 防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
         :type status: int
+        :param tags: 标签列表
+        :type tags: str
         """
         
         
@@ -86,6 +90,7 @@ class FirewallInstanceVO:
         self._engine_type = None
         self._flavor = None
         self._status = None
+        self._tags = None
         self.discriminator = None
 
         if fw_instance_id is not None:
@@ -110,6 +115,8 @@ class FirewallInstanceVO:
             self.flavor = flavor
         if status is not None:
             self.status = status
+        if tags is not None:
+            self.tags = tags
 
     @property
     def fw_instance_id(self):
@@ -348,6 +355,28 @@ class FirewallInstanceVO:
         :type status: int
         """
         self._status = status
+
+    @property
+    def tags(self):
+        """Gets the tags of this FirewallInstanceVO.
+
+        标签列表
+
+        :return: The tags of this FirewallInstanceVO.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this FirewallInstanceVO.
+
+        标签列表
+
+        :param tags: The tags of this FirewallInstanceVO.
+        :type tags: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

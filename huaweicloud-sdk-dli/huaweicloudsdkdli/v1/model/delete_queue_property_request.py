@@ -18,7 +18,7 @@ class DeleteQueuePropertyRequest:
 
     openapi_types = {
         'queue_name': 'str',
-        'body': 'DeleteQueuePropertiesRequestBody'
+        'body': 'DeleteQueuePropertyRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class DeleteQueuePropertyRequest:
         :param queue_name: 队列名称
         :type queue_name: str
         :param body: Body of the DeleteQueuePropertyRequest
-        :type body: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertiesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class DeleteQueuePropertyRequest:
         """Gets the body of this DeleteQueuePropertyRequest.
 
         :return: The body of this DeleteQueuePropertyRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertiesRequestBody`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class DeleteQueuePropertyRequest:
         """Sets the body of this DeleteQueuePropertyRequest.
 
         :param body: The body of this DeleteQueuePropertyRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertiesRequestBody`
+        :type body: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyRequestBody`
         """
         self._body = body
 

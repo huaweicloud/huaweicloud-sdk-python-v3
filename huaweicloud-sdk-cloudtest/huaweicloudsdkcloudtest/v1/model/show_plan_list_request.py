@@ -23,7 +23,8 @@ class ShowPlanListRequest:
         'name': 'str',
         'current_stage': 'str',
         'branch_uri': 'str',
-        'query_all_version': 'bool'
+        'query_all_version': 'bool',
+        'fix_version_ids': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ShowPlanListRequest:
         'name': 'name',
         'current_stage': 'current_stage',
         'branch_uri': 'branch_uri',
-        'query_all_version': 'query_all_version'
+        'query_all_version': 'query_all_version',
+        'fix_version_ids': 'fix_version_ids'
     }
 
-    def __init__(self, project_id=None, offset=None, limit=None, name=None, current_stage=None, branch_uri=None, query_all_version=None):
+    def __init__(self, project_id=None, offset=None, limit=None, name=None, current_stage=None, branch_uri=None, query_all_version=None, fix_version_ids=None):
         """ShowPlanListRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ShowPlanListRequest:
         :type branch_uri: str
         :param query_all_version: 是否查询所有版本下测试计划，默认为false。若值为true, 查询所有版本下测试计划; 若为false, 查询branch_uri指定分支下的测试计划, branch_uri为空时默认为master
         :type query_all_version: bool
+        :param fix_version_ids: 测试计划关联的迭代。迭代id以逗号间隔
+        :type fix_version_ids: str
         """
         
         
@@ -66,6 +70,7 @@ class ShowPlanListRequest:
         self._current_stage = None
         self._branch_uri = None
         self._query_all_version = None
+        self._fix_version_ids = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -79,6 +84,8 @@ class ShowPlanListRequest:
             self.branch_uri = branch_uri
         if query_all_version is not None:
             self.query_all_version = query_all_version
+        if fix_version_ids is not None:
+            self.fix_version_ids = fix_version_ids
 
     @property
     def project_id(self):
@@ -233,6 +240,28 @@ class ShowPlanListRequest:
         :type query_all_version: bool
         """
         self._query_all_version = query_all_version
+
+    @property
+    def fix_version_ids(self):
+        """Gets the fix_version_ids of this ShowPlanListRequest.
+
+        测试计划关联的迭代。迭代id以逗号间隔
+
+        :return: The fix_version_ids of this ShowPlanListRequest.
+        :rtype: str
+        """
+        return self._fix_version_ids
+
+    @fix_version_ids.setter
+    def fix_version_ids(self, fix_version_ids):
+        """Sets the fix_version_ids of this ShowPlanListRequest.
+
+        测试计划关联的迭代。迭代id以逗号间隔
+
+        :param fix_version_ids: The fix_version_ids of this ShowPlanListRequest.
+        :type fix_version_ids: str
+        """
+        self._fix_version_ids = fix_version_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

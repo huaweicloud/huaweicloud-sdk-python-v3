@@ -18,7 +18,7 @@ class FlinkJobList:
 
     openapi_types = {
         'total_count': 'int',
-        'jobs': 'list[FlinkJobInfo]'
+        'jobs': 'list[FlinkJob]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class FlinkJobList:
         :param total_count: 作业查询结果条数。
         :type total_count: int
         :param jobs: 作业信息
-        :type jobs: list[:class:`huaweicloudsdkdli.v1.FlinkJobInfo`]
+        :type jobs: list[:class:`huaweicloudsdkdli.v1.FlinkJob`]
         """
         
         
@@ -77,7 +77,7 @@ class FlinkJobList:
         作业信息
 
         :return: The jobs of this FlinkJobList.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.FlinkJobInfo`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.FlinkJob`]
         """
         return self._jobs
 
@@ -88,7 +88,7 @@ class FlinkJobList:
         作业信息
 
         :param jobs: The jobs of this FlinkJobList.
-        :type jobs: list[:class:`huaweicloudsdkdli.v1.FlinkJobInfo`]
+        :type jobs: list[:class:`huaweicloudsdkdli.v1.FlinkJob`]
         """
         self._jobs = jobs
 
