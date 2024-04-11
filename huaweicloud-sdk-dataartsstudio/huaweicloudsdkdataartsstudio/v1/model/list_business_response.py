@@ -30,7 +30,7 @@ class ListBusinessResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息
+        :param data: 返回的数据信息。
         :type data: object
         """
         
@@ -46,7 +46,7 @@ class ListBusinessResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListBusinessResponse.
 
-        返回的数据信息
+        返回的数据信息。
 
         :return: The data of this ListBusinessResponse.
         :rtype: object
@@ -57,7 +57,7 @@ class ListBusinessResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListBusinessResponse.
 
-        返回的数据信息
+        返回的数据信息。
 
         :param data: The data of this ListBusinessResponse.
         :type data: object

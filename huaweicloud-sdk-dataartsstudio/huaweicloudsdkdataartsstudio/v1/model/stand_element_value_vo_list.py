@@ -25,6 +25,7 @@ class StandElementValueVOList:
         'status': 'BizStatusEnum',
         'approval_info': 'ApprovalVO',
         'new_biz': 'BizVersionManageVO',
+        'from_public': 'bool',
         'create_by': 'str',
         'update_by': 'str',
         'create_time': 'datetime',
@@ -40,26 +41,27 @@ class StandElementValueVOList:
         'status': 'status',
         'approval_info': 'approval_info',
         'new_biz': 'new_biz',
+        'from_public': 'from_public',
         'create_by': 'create_by',
         'update_by': 'update_by',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, values=None, id=None, directory_id=None, directory_path=None, row_id=None, status=None, approval_info=None, new_biz=None, create_by=None, update_by=None, create_time=None, update_time=None):
+    def __init__(self, values=None, id=None, directory_id=None, directory_path=None, row_id=None, status=None, approval_info=None, new_biz=None, from_public=None, create_by=None, update_by=None, create_time=None, update_time=None):
         """StandElementValueVOList
 
         The model defined in huaweicloud sdk
 
-        :param values: 属性信息
+        :param values: 属性信息。
         :type values: list[:class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVO`]
         :param id: ID
         :type id: int
-        :param directory_id: 标准所属目录
+        :param directory_id: 标准所属目录。
         :type directory_id: int
-        :param directory_path: 目录树
+        :param directory_path: 目录树。
         :type directory_path: str
-        :param row_id: 标准行的id
+        :param row_id: 标准行的ID。
         :type row_id: int
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -67,13 +69,15 @@ class StandElementValueVOList:
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
-        :param create_by: 创建人
+        :param from_public: 是否来自公共层。
+        :type from_public: bool
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         """
         
@@ -87,6 +91,7 @@ class StandElementValueVOList:
         self._status = None
         self._approval_info = None
         self._new_biz = None
+        self._from_public = None
         self._create_by = None
         self._update_by = None
         self._create_time = None
@@ -107,6 +112,8 @@ class StandElementValueVOList:
             self.approval_info = approval_info
         if new_biz is not None:
             self.new_biz = new_biz
+        if from_public is not None:
+            self.from_public = from_public
         if create_by is not None:
             self.create_by = create_by
         if update_by is not None:
@@ -120,7 +127,7 @@ class StandElementValueVOList:
     def values(self):
         """Gets the values of this StandElementValueVOList.
 
-        属性信息
+        属性信息。
 
         :return: The values of this StandElementValueVOList.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVO`]
@@ -131,7 +138,7 @@ class StandElementValueVOList:
     def values(self, values):
         """Sets the values of this StandElementValueVOList.
 
-        属性信息
+        属性信息。
 
         :param values: The values of this StandElementValueVOList.
         :type values: list[:class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVO`]
@@ -164,7 +171,7 @@ class StandElementValueVOList:
     def directory_id(self):
         """Gets the directory_id of this StandElementValueVOList.
 
-        标准所属目录
+        标准所属目录。
 
         :return: The directory_id of this StandElementValueVOList.
         :rtype: int
@@ -175,7 +182,7 @@ class StandElementValueVOList:
     def directory_id(self, directory_id):
         """Sets the directory_id of this StandElementValueVOList.
 
-        标准所属目录
+        标准所属目录。
 
         :param directory_id: The directory_id of this StandElementValueVOList.
         :type directory_id: int
@@ -186,7 +193,7 @@ class StandElementValueVOList:
     def directory_path(self):
         """Gets the directory_path of this StandElementValueVOList.
 
-        目录树
+        目录树。
 
         :return: The directory_path of this StandElementValueVOList.
         :rtype: str
@@ -197,7 +204,7 @@ class StandElementValueVOList:
     def directory_path(self, directory_path):
         """Sets the directory_path of this StandElementValueVOList.
 
-        目录树
+        目录树。
 
         :param directory_path: The directory_path of this StandElementValueVOList.
         :type directory_path: str
@@ -208,7 +215,7 @@ class StandElementValueVOList:
     def row_id(self):
         """Gets the row_id of this StandElementValueVOList.
 
-        标准行的id
+        标准行的ID。
 
         :return: The row_id of this StandElementValueVOList.
         :rtype: int
@@ -219,7 +226,7 @@ class StandElementValueVOList:
     def row_id(self, row_id):
         """Sets the row_id of this StandElementValueVOList.
 
-        标准行的id
+        标准行的ID。
 
         :param row_id: The row_id of this StandElementValueVOList.
         :type row_id: int
@@ -281,10 +288,32 @@ class StandElementValueVOList:
         self._new_biz = new_biz
 
     @property
+    def from_public(self):
+        """Gets the from_public of this StandElementValueVOList.
+
+        是否来自公共层。
+
+        :return: The from_public of this StandElementValueVOList.
+        :rtype: bool
+        """
+        return self._from_public
+
+    @from_public.setter
+    def from_public(self, from_public):
+        """Sets the from_public of this StandElementValueVOList.
+
+        是否来自公共层。
+
+        :param from_public: The from_public of this StandElementValueVOList.
+        :type from_public: bool
+        """
+        self._from_public = from_public
+
+    @property
     def create_by(self):
         """Gets the create_by of this StandElementValueVOList.
 
-        创建人
+        创建人。
 
         :return: The create_by of this StandElementValueVOList.
         :rtype: str
@@ -295,7 +324,7 @@ class StandElementValueVOList:
     def create_by(self, create_by):
         """Sets the create_by of this StandElementValueVOList.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this StandElementValueVOList.
         :type create_by: str
@@ -306,7 +335,7 @@ class StandElementValueVOList:
     def update_by(self):
         """Gets the update_by of this StandElementValueVOList.
 
-        更新人
+        更新人。
 
         :return: The update_by of this StandElementValueVOList.
         :rtype: str
@@ -317,7 +346,7 @@ class StandElementValueVOList:
     def update_by(self, update_by):
         """Sets the update_by of this StandElementValueVOList.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this StandElementValueVOList.
         :type update_by: str
@@ -328,7 +357,7 @@ class StandElementValueVOList:
     def create_time(self):
         """Gets the create_time of this StandElementValueVOList.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this StandElementValueVOList.
         :rtype: datetime
@@ -339,7 +368,7 @@ class StandElementValueVOList:
     def create_time(self, create_time):
         """Sets the create_time of this StandElementValueVOList.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this StandElementValueVOList.
         :type create_time: datetime
@@ -350,7 +379,7 @@ class StandElementValueVOList:
     def update_time(self):
         """Gets the update_time of this StandElementValueVOList.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this StandElementValueVOList.
         :rtype: datetime
@@ -361,7 +390,7 @@ class StandElementValueVOList:
     def update_time(self, update_time):
         """Sets the update_time of this StandElementValueVOList.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this StandElementValueVOList.
         :type update_time: datetime

@@ -3,7 +3,9 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkdrs.v3.model.add_data_transformation_req import AddDataTransformationReq
 from huaweicloudsdkdrs.v3.model.alarm_notify_info import AlarmNotifyInfo
+from huaweicloudsdkdrs.v3.model.api_http_null_resp import ApiHttpNullResp
 from huaweicloudsdkdrs.v3.model.az_info_resp import AzInfoResp
 from huaweicloudsdkdrs.v3.model.batch_change_data_request import BatchChangeDataRequest
 from huaweicloudsdkdrs.v3.model.batch_change_data_response import BatchChangeDataResponse
@@ -86,6 +88,7 @@ from huaweicloudsdkdrs.v3.model.batch_validate_connections_response import Batch
 from huaweicloudsdkdrs.v3.model.check_data_transformation_req import CheckDataTransformationReq
 from huaweicloudsdkdrs.v3.model.check_job_resp import CheckJobResp
 from huaweicloudsdkdrs.v3.model.children_job_info import ChildrenJobInfo
+from huaweicloudsdkdrs.v3.model.compare_job_info import CompareJobInfo
 from huaweicloudsdkdrs.v3.model.compare_object_info import CompareObjectInfo
 from huaweicloudsdkdrs.v3.model.compare_object_info_with_token import CompareObjectInfoWithToken
 from huaweicloudsdkdrs.v3.model.compare_table_info_with_token import CompareTableInfoWithToken
@@ -102,10 +105,16 @@ from huaweicloudsdkdrs.v3.model.create_compare_task_req import CreateCompareTask
 from huaweicloudsdkdrs.v3.model.create_compare_task_request import CreateCompareTaskRequest
 from huaweicloudsdkdrs.v3.model.create_compare_task_response import CreateCompareTaskResponse
 from huaweicloudsdkdrs.v3.model.create_compare_task_result import CreateCompareTaskResult
+from huaweicloudsdkdrs.v3.model.create_data_compare_database_object import CreateDataCompareDatabaseObject
+from huaweicloudsdkdrs.v3.model.create_data_compare_transformation_info import CreateDataCompareTransformationInfo
 from huaweicloudsdkdrs.v3.model.create_data_level_compare_req import CreateDataLevelCompareReq
+from huaweicloudsdkdrs.v3.model.create_data_level_table_compare_job_req import CreateDataLevelTableCompareJobReq
+from huaweicloudsdkdrs.v3.model.create_data_level_table_compare_job_request import CreateDataLevelTableCompareJobRequest
+from huaweicloudsdkdrs.v3.model.create_data_level_table_compare_job_response import CreateDataLevelTableCompareJobResponse
 from huaweicloudsdkdrs.v3.model.create_job_req import CreateJobReq
 from huaweicloudsdkdrs.v3.model.create_job_resp import CreateJobResp
 from huaweicloudsdkdrs.v3.model.customized_dns import CustomizedDns
+from huaweicloudsdkdrs.v3.model.data_compare_overview_info import DataCompareOverviewInfo
 from huaweicloudsdkdrs.v3.model.data_transformation_info import DataTransformationInfo
 from huaweicloudsdkdrs.v3.model.data_transformation_object_vo import DataTransformationObjectVO
 from huaweicloudsdkdrs.v3.model.data_transformation_resp import DataTransformationResp
@@ -114,6 +123,8 @@ from huaweicloudsdkdrs.v3.model.database_object_info import DatabaseObjectInfo
 from huaweicloudsdkdrs.v3.model.database_object_resp import DatabaseObjectResp
 from huaweicloudsdkdrs.v3.model.database_object_vo import DatabaseObjectVO
 from huaweicloudsdkdrs.v3.model.default_root_db import DefaultRootDb
+from huaweicloudsdkdrs.v3.model.delete_compare_job_request import DeleteCompareJobRequest
+from huaweicloudsdkdrs.v3.model.delete_compare_job_response import DeleteCompareJobResponse
 from huaweicloudsdkdrs.v3.model.delete_job_req import DeleteJobReq
 from huaweicloudsdkdrs.v3.model.delete_job_resp import DeleteJobResp
 from huaweicloudsdkdrs.v3.model.endpoint import Endpoint
@@ -137,6 +148,16 @@ from huaweicloudsdkdrs.v3.model.list_available_zone_request import ListAvailable
 from huaweicloudsdkdrs.v3.model.list_available_zone_response import ListAvailableZoneResponse
 from huaweicloudsdkdrs.v3.model.list_compare_result_request import ListCompareResultRequest
 from huaweicloudsdkdrs.v3.model.list_compare_result_response import ListCompareResultResponse
+from huaweicloudsdkdrs.v3.model.list_content_compare_detail_request import ListContentCompareDetailRequest
+from huaweicloudsdkdrs.v3.model.list_content_compare_detail_response import ListContentCompareDetailResponse
+from huaweicloudsdkdrs.v3.model.list_content_compare_overview_request import ListContentCompareOverviewRequest
+from huaweicloudsdkdrs.v3.model.list_content_compare_overview_response import ListContentCompareOverviewResponse
+from huaweicloudsdkdrs.v3.model.list_data_compare_detail_request import ListDataCompareDetailRequest
+from huaweicloudsdkdrs.v3.model.list_data_compare_detail_response import ListDataCompareDetailResponse
+from huaweicloudsdkdrs.v3.model.list_data_compare_overview_request import ListDataCompareOverviewRequest
+from huaweicloudsdkdrs.v3.model.list_data_compare_overview_response import ListDataCompareOverviewResponse
+from huaweicloudsdkdrs.v3.model.list_data_level_table_compare_jobs_request import ListDataLevelTableCompareJobsRequest
+from huaweicloudsdkdrs.v3.model.list_data_level_table_compare_jobs_response import ListDataLevelTableCompareJobsResponse
 from huaweicloudsdkdrs.v3.model.list_users_request import ListUsersRequest
 from huaweicloudsdkdrs.v3.model.list_users_response import ListUsersResponse
 from huaweicloudsdkdrs.v3.model.modify_db_pwd_resp import ModifyDbPwdResp
@@ -145,6 +166,8 @@ from huaweicloudsdkdrs.v3.model.modify_job_resp import ModifyJobResp
 from huaweicloudsdkdrs.v3.model.modify_pwd_end_point import ModifyPwdEndPoint
 from huaweicloudsdkdrs.v3.model.modify_target_params_req import ModifyTargetParamsReq
 from huaweicloudsdkdrs.v3.model.modify_tuning_params_req import ModifyTuningParamsReq
+from huaweicloudsdkdrs.v3.model.node_content_compare_detail_result import NodeContentCompareDetailResult
+from huaweicloudsdkdrs.v3.model.node_content_compare_overview_result import NodeContentCompareOverviewResult
 from huaweicloudsdkdrs.v3.model.object_compare_result import ObjectCompareResult
 from huaweicloudsdkdrs.v3.model.object_compare_result_details import ObjectCompareResultDetails
 from huaweicloudsdkdrs.v3.model.object_compare_result_overview import ObjectCompareResultOverview
@@ -197,6 +220,8 @@ from huaweicloudsdkdrs.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkdrs.v3.model.speed_limit_info import SpeedLimitInfo
 from huaweicloudsdkdrs.v3.model.start_info import StartInfo
 from huaweicloudsdkdrs.v3.model.start_job_resp import StartJobResp
+from huaweicloudsdkdrs.v3.model.start_promptly_data_level_table_compare_job_request import StartPromptlyDataLevelTableCompareJobRequest
+from huaweicloudsdkdrs.v3.model.start_promptly_data_level_table_compare_job_response import StartPromptlyDataLevelTableCompareJobResponse
 from huaweicloudsdkdrs.v3.model.struct_detail_vo import StructDetailVO
 from huaweicloudsdkdrs.v3.model.struct_process_resp import StructProcessResp
 from huaweicloudsdkdrs.v3.model.struct_process_vo import StructProcessVO
@@ -204,6 +229,7 @@ from huaweicloudsdkdrs.v3.model.subscription_info import SubscriptionInfo
 from huaweicloudsdkdrs.v3.model.switchover_resp import SwitchoverResp
 from huaweicloudsdkdrs.v3.model.sync_policy_req import SyncPolicyReq
 from huaweicloudsdkdrs.v3.model.sync_policy_resp import SyncPolicyResp
+from huaweicloudsdkdrs.v3.model.table_line_compare_result_info import TableLineCompareResultInfo
 from huaweicloudsdkdrs.v3.model.tag import Tag
 from huaweicloudsdkdrs.v3.model.test_end_point import TestEndPoint
 from huaweicloudsdkdrs.v3.model.transformation_info import TransformationInfo

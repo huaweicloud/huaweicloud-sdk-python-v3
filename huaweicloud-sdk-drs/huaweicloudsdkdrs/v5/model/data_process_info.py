@@ -25,7 +25,8 @@ class DataProcessInfo:
         'db_object_column_info': 'DbObjectColumnInfo',
         'db_or_table_rename_rule': 'DbOrTableRenameRule',
         'db_object': 'DbObject',
-        'is_synchronized': 'bool'
+        'is_synchronized': 'bool',
+        'source': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class DataProcessInfo:
         'db_object_column_info': 'db_object_column_info',
         'db_or_table_rename_rule': 'db_or_table_rename_rule',
         'db_object': 'db_object',
-        'is_synchronized': 'is_synchronized'
+        'is_synchronized': 'is_synchronized',
+        'source': 'source'
     }
 
-    def __init__(self, filter_conditions=None, is_batch_process=None, add_columns=None, ddl_operation=None, dml_operation=None, db_object_column_info=None, db_or_table_rename_rule=None, db_object=None, is_synchronized=None):
+    def __init__(self, filter_conditions=None, is_batch_process=None, add_columns=None, ddl_operation=None, dml_operation=None, db_object_column_info=None, db_or_table_rename_rule=None, db_object=None, is_synchronized=None, source=None):
         """DataProcessInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class DataProcessInfo:
         :type db_object: :class:`huaweicloudsdkdrs.v5.DbObject`
         :param is_synchronized: 表示该规则是否已同步至目标库
         :type is_synchronized: bool
+        :param source: 对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
+        :type source: str
         """
         
         
@@ -76,6 +80,7 @@ class DataProcessInfo:
         self._db_or_table_rename_rule = None
         self._db_object = None
         self._is_synchronized = None
+        self._source = None
         self.discriminator = None
 
         if filter_conditions is not None:
@@ -96,6 +101,8 @@ class DataProcessInfo:
             self.db_object = db_object
         if is_synchronized is not None:
             self.is_synchronized = is_synchronized
+        if source is not None:
+            self.source = source
 
     @property
     def filter_conditions(self):
@@ -282,6 +289,28 @@ class DataProcessInfo:
         :type is_synchronized: bool
         """
         self._is_synchronized = is_synchronized
+
+    @property
+    def source(self):
+        """Gets the source of this DataProcessInfo.
+
+        对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
+
+        :return: The source of this DataProcessInfo.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        """Sets the source of this DataProcessInfo.
+
+        对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
+
+        :param source: The source of this DataProcessInfo.
+        :type source: str
+        """
+        self._source = source
 
     def to_dict(self):
         """Returns the model properties as a dict"""

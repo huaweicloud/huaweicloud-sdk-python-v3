@@ -43,21 +43,21 @@ class BizVersionManageVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID信息
+        :param id: ID信息。
         :type id: int
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param biz_id: 业务id
+        :param biz_id: 业务ID。
         :type biz_id: int
-        :param biz_info: 业务对象信息
+        :param biz_info: 业务对象信息。
         :type biz_info: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param biz_version: 业务版本
+        :param biz_version: 业务版本。
         :type biz_version: int
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         """
         
@@ -94,7 +94,7 @@ class BizVersionManageVO:
     def id(self):
         """Gets the id of this BizVersionManageVO.
 
-        ID信息
+        ID信息。
 
         :return: The id of this BizVersionManageVO.
         :rtype: int
@@ -105,7 +105,7 @@ class BizVersionManageVO:
     def id(self, id):
         """Sets the id of this BizVersionManageVO.
 
-        ID信息
+        ID信息。
 
         :param id: The id of this BizVersionManageVO.
         :type id: int
@@ -134,7 +134,7 @@ class BizVersionManageVO:
     def biz_id(self):
         """Gets the biz_id of this BizVersionManageVO.
 
-        业务id
+        业务ID。
 
         :return: The biz_id of this BizVersionManageVO.
         :rtype: int
@@ -145,7 +145,7 @@ class BizVersionManageVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this BizVersionManageVO.
 
-        业务id
+        业务ID。
 
         :param biz_id: The biz_id of this BizVersionManageVO.
         :type biz_id: int
@@ -156,7 +156,7 @@ class BizVersionManageVO:
     def biz_info(self):
         """Gets the biz_info of this BizVersionManageVO.
 
-        业务对象信息
+        业务对象信息。
 
         :return: The biz_info of this BizVersionManageVO.
         :rtype: str
@@ -167,7 +167,7 @@ class BizVersionManageVO:
     def biz_info(self, biz_info):
         """Sets the biz_info of this BizVersionManageVO.
 
-        业务对象信息
+        业务对象信息。
 
         :param biz_info: The biz_info of this BizVersionManageVO.
         :type biz_info: str
@@ -196,7 +196,7 @@ class BizVersionManageVO:
     def biz_version(self):
         """Gets the biz_version of this BizVersionManageVO.
 
-        业务版本
+        业务版本。
 
         :return: The biz_version of this BizVersionManageVO.
         :rtype: int
@@ -207,7 +207,7 @@ class BizVersionManageVO:
     def biz_version(self, biz_version):
         """Sets the biz_version of this BizVersionManageVO.
 
-        业务版本
+        业务版本。
 
         :param biz_version: The biz_version of this BizVersionManageVO.
         :type biz_version: int
@@ -218,7 +218,7 @@ class BizVersionManageVO:
     def create_time(self):
         """Gets the create_time of this BizVersionManageVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this BizVersionManageVO.
         :rtype: datetime
@@ -229,7 +229,7 @@ class BizVersionManageVO:
     def create_time(self, create_time):
         """Sets the create_time of this BizVersionManageVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this BizVersionManageVO.
         :type create_time: datetime
@@ -240,7 +240,7 @@ class BizVersionManageVO:
     def update_time(self):
         """Gets the update_time of this BizVersionManageVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this BizVersionManageVO.
         :rtype: datetime
@@ -251,7 +251,7 @@ class BizVersionManageVO:
     def update_time(self, update_time):
         """Sets the update_time of this BizVersionManageVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this BizVersionManageVO.
         :type update_time: datetime

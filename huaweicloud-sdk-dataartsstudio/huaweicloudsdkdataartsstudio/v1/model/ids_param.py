@@ -17,7 +17,7 @@ class IdsParam:
     sensitive_list = []
 
     openapi_types = {
-        'ids': 'list[int]',
+        'ids': 'list[str]',
         'del_types': 'str'
     }
 
@@ -31,9 +31,9 @@ class IdsParam:
 
         The model defined in huaweicloud sdk
 
-        :param ids: ID列表
-        :type ids: list[int]
-        :param del_types: 删除物理表
+        :param ids: ID列表。
+        :type ids: list[str]
+        :param del_types: 删除物理表。PHYSICAL_TABLE(关系建模)。
         :type del_types: str
         """
         
@@ -51,10 +51,10 @@ class IdsParam:
     def ids(self):
         """Gets the ids of this IdsParam.
 
-        ID列表
+        ID列表。
 
         :return: The ids of this IdsParam.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._ids
 
@@ -62,10 +62,10 @@ class IdsParam:
     def ids(self, ids):
         """Sets the ids of this IdsParam.
 
-        ID列表
+        ID列表。
 
         :param ids: The ids of this IdsParam.
-        :type ids: list[int]
+        :type ids: list[str]
         """
         self._ids = ids
 
@@ -73,7 +73,7 @@ class IdsParam:
     def del_types(self):
         """Gets the del_types of this IdsParam.
 
-        删除物理表
+        删除物理表。PHYSICAL_TABLE(关系建模)。
 
         :return: The del_types of this IdsParam.
         :rtype: str
@@ -84,7 +84,7 @@ class IdsParam:
     def del_types(self, del_types):
         """Sets the del_types of this IdsParam.
 
-        删除物理表
+        删除物理表。PHYSICAL_TABLE(关系建模)。
 
         :param del_types: The del_types of this IdsParam.
         :type del_types: str

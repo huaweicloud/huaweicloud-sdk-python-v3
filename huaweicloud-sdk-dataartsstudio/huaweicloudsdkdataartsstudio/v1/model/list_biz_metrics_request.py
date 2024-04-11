@@ -18,6 +18,7 @@ class ListBizMetricsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'name': 'str',
         'create_by': 'str',
         'owner': 'str',
@@ -33,6 +34,7 @@ class ListBizMetricsRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'name': 'name',
         'create_by': 'create_by',
         'owner': 'owner',
@@ -46,40 +48,43 @@ class ListBizMetricsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, name=None, create_by=None, owner=None, status=None, sync_status=None, sync_key=None, biz_catalog_id=None, begin_time=None, end_time=None, limit=None, offset=None):
+    def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, owner=None, status=None, sync_status=None, sync_key=None, biz_catalog_id=None, begin_time=None, end_time=None, limit=None, offset=None):
         """ListBizMetricsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param name: 按名称或编码模糊查询
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param name: 按名称或编码模糊查询。
         :type name: str
-        :param create_by: 按创建者查询
+        :param create_by: 按创建者查询。
         :type create_by: str
-        :param owner: 按负责人查询
+        :param owner: 按负责人查询。
         :type owner: str
-        :param status: 业务状态
+        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
         :type status: str
-        :param sync_status: 
+        :param sync_status: 同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
         :type sync_status: str
-        :param sync_key: 
+        :param sync_key: 同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
         :type sync_key: list[str]
-        :param biz_catalog_id: 所属的业务分层的id
+        :param biz_catalog_id: 所属的业务分层的ID。
         :type biz_catalog_id: str
-        :param begin_time: 时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
-        :param end_time: 时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
-        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._name = None
         self._create_by = None
         self._owner = None
@@ -94,6 +99,8 @@ class ListBizMetricsRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if name is not None:
             self.name = name
         if create_by is not None:
@@ -121,7 +128,7 @@ class ListBizMetricsRequest:
     def workspace(self):
         """Gets the workspace of this ListBizMetricsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListBizMetricsRequest.
         :rtype: str
@@ -132,7 +139,7 @@ class ListBizMetricsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListBizMetricsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListBizMetricsRequest.
         :type workspace: str
@@ -140,10 +147,32 @@ class ListBizMetricsRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListBizMetricsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListBizMetricsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListBizMetricsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListBizMetricsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def name(self):
         """Gets the name of this ListBizMetricsRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :return: The name of this ListBizMetricsRequest.
         :rtype: str
@@ -154,7 +183,7 @@ class ListBizMetricsRequest:
     def name(self, name):
         """Sets the name of this ListBizMetricsRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :param name: The name of this ListBizMetricsRequest.
         :type name: str
@@ -165,7 +194,7 @@ class ListBizMetricsRequest:
     def create_by(self):
         """Gets the create_by of this ListBizMetricsRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :return: The create_by of this ListBizMetricsRequest.
         :rtype: str
@@ -176,7 +205,7 @@ class ListBizMetricsRequest:
     def create_by(self, create_by):
         """Sets the create_by of this ListBizMetricsRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :param create_by: The create_by of this ListBizMetricsRequest.
         :type create_by: str
@@ -187,7 +216,7 @@ class ListBizMetricsRequest:
     def owner(self):
         """Gets the owner of this ListBizMetricsRequest.
 
-        按负责人查询
+        按负责人查询。
 
         :return: The owner of this ListBizMetricsRequest.
         :rtype: str
@@ -198,7 +227,7 @@ class ListBizMetricsRequest:
     def owner(self, owner):
         """Sets the owner of this ListBizMetricsRequest.
 
-        按负责人查询
+        按负责人查询。
 
         :param owner: The owner of this ListBizMetricsRequest.
         :type owner: str
@@ -209,7 +238,7 @@ class ListBizMetricsRequest:
     def status(self):
         """Gets the status of this ListBizMetricsRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :return: The status of this ListBizMetricsRequest.
         :rtype: str
@@ -220,7 +249,7 @@ class ListBizMetricsRequest:
     def status(self, status):
         """Sets the status of this ListBizMetricsRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :param status: The status of this ListBizMetricsRequest.
         :type status: str
@@ -231,6 +260,8 @@ class ListBizMetricsRequest:
     def sync_status(self):
         """Gets the sync_status of this ListBizMetricsRequest.
 
+        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+
         :return: The sync_status of this ListBizMetricsRequest.
         :rtype: str
         """
@@ -239,6 +270,8 @@ class ListBizMetricsRequest:
     @sync_status.setter
     def sync_status(self, sync_status):
         """Sets the sync_status of this ListBizMetricsRequest.
+
+        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
 
         :param sync_status: The sync_status of this ListBizMetricsRequest.
         :type sync_status: str
@@ -249,6 +282,8 @@ class ListBizMetricsRequest:
     def sync_key(self):
         """Gets the sync_key of this ListBizMetricsRequest.
 
+        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+
         :return: The sync_key of this ListBizMetricsRequest.
         :rtype: list[str]
         """
@@ -257,6 +292,8 @@ class ListBizMetricsRequest:
     @sync_key.setter
     def sync_key(self, sync_key):
         """Sets the sync_key of this ListBizMetricsRequest.
+
+        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
 
         :param sync_key: The sync_key of this ListBizMetricsRequest.
         :type sync_key: list[str]
@@ -267,7 +304,7 @@ class ListBizMetricsRequest:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this ListBizMetricsRequest.
 
-        所属的业务分层的id
+        所属的业务分层的ID。
 
         :return: The biz_catalog_id of this ListBizMetricsRequest.
         :rtype: str
@@ -278,7 +315,7 @@ class ListBizMetricsRequest:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this ListBizMetricsRequest.
 
-        所属的业务分层的id
+        所属的业务分层的ID。
 
         :param biz_catalog_id: The biz_catalog_id of this ListBizMetricsRequest.
         :type biz_catalog_id: str
@@ -289,7 +326,7 @@ class ListBizMetricsRequest:
     def begin_time(self):
         """Gets the begin_time of this ListBizMetricsRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The begin_time of this ListBizMetricsRequest.
         :rtype: str
@@ -300,7 +337,7 @@ class ListBizMetricsRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListBizMetricsRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param begin_time: The begin_time of this ListBizMetricsRequest.
         :type begin_time: str
@@ -311,7 +348,7 @@ class ListBizMetricsRequest:
     def end_time(self):
         """Gets the end_time of this ListBizMetricsRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The end_time of this ListBizMetricsRequest.
         :rtype: str
@@ -322,7 +359,7 @@ class ListBizMetricsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListBizMetricsRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param end_time: The end_time of this ListBizMetricsRequest.
         :type end_time: str
@@ -333,7 +370,7 @@ class ListBizMetricsRequest:
     def limit(self):
         """Gets the limit of this ListBizMetricsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListBizMetricsRequest.
         :rtype: int
@@ -344,7 +381,7 @@ class ListBizMetricsRequest:
     def limit(self, limit):
         """Sets the limit of this ListBizMetricsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListBizMetricsRequest.
         :type limit: int
@@ -355,7 +392,7 @@ class ListBizMetricsRequest:
     def offset(self):
         """Gets the offset of this ListBizMetricsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :return: The offset of this ListBizMetricsRequest.
         :rtype: int
@@ -366,7 +403,7 @@ class ListBizMetricsRequest:
     def offset(self, offset):
         """Sets the offset of this ListBizMetricsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :param offset: The offset of this ListBizMetricsRequest.
         :type offset: int

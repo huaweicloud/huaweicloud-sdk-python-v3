@@ -18,21 +18,25 @@ class ChangeSubjectsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'body': 'CatalogLevelVOList'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'body': 'body'
     }
 
-    def __init__(self, workspace=None, body=None):
+    def __init__(self, workspace=None, x_project_id=None, body=None):
         """ChangeSubjectsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
         :param body: Body of the ChangeSubjectsRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVOList`
         """
@@ -40,10 +44,13 @@ class ChangeSubjectsRequest:
         
 
         self._workspace = None
+        self._x_project_id = None
         self._body = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if body is not None:
             self.body = body
 
@@ -51,7 +58,7 @@ class ChangeSubjectsRequest:
     def workspace(self):
         """Gets the workspace of this ChangeSubjectsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ChangeSubjectsRequest.
         :rtype: str
@@ -62,12 +69,34 @@ class ChangeSubjectsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ChangeSubjectsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ChangeSubjectsRequest.
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ChangeSubjectsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ChangeSubjectsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ChangeSubjectsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ChangeSubjectsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
 
     @property
     def body(self):

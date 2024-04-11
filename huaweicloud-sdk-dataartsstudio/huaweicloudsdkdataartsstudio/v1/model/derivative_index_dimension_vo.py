@@ -61,37 +61,37 @@ class DerivativeIndexDimensionVO:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 维度分组id
+        :param group_id: 维度分组ID。
         :type group_id: str
-        :param role: 维度角色
+        :param role: 维度角色。
         :type role: str
-        :param dimension_id: 维度id
+        :param dimension_id: 维度ID。
         :type dimension_id: int
-        :param hierarchies_id: 维度层级id
+        :param hierarchies_id: 维度层级ID。
         :type hierarchies_id: int
-        :param ordinal: 序号
+        :param ordinal: 序号。
         :type ordinal: int
-        :param group_name: 维度分组名称
+        :param group_name: 维度分组名称。
         :type group_name: str
-        :param group_code: 维度分组编码
+        :param group_code: 维度分组编码。
         :type group_code: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param hierarchies: 层级属性
+        :param hierarchies: 层级属性。
         :type hierarchies: list[:class:`huaweicloudsdkdataartsstudio.v1.DimensionHierarchiesVO`]
-        :param l1: 主题域分组中文名
+        :param l1: 主题域分组中文名，只读，创建和更新时无需填写。
         :type l1: str
-        :param l2: 主题域中文名
+        :param l2: 主题域中文名，只读，创建和更新时无需填写。
         :type l2: str
-        :param l3: 业务对象中文名
+        :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param l1_id: 主题域分组id
+        :param l1_id: 主题域分组ID。
         :type l1_id: int
-        :param l2_id: 
+        :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象id
+        :param l3_id: 业务对象ID。
         :type l3_id: int
-        :param dw_type: 数据连接类型
+        :param dw_type: 数据连接类型。
         :type dw_type: str
         :param id: id
         :type id: int
@@ -155,7 +155,7 @@ class DerivativeIndexDimensionVO:
     def group_id(self):
         """Gets the group_id of this DerivativeIndexDimensionVO.
 
-        维度分组id
+        维度分组ID。
 
         :return: The group_id of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -166,7 +166,7 @@ class DerivativeIndexDimensionVO:
     def group_id(self, group_id):
         """Sets the group_id of this DerivativeIndexDimensionVO.
 
-        维度分组id
+        维度分组ID。
 
         :param group_id: The group_id of this DerivativeIndexDimensionVO.
         :type group_id: str
@@ -177,7 +177,7 @@ class DerivativeIndexDimensionVO:
     def role(self):
         """Gets the role of this DerivativeIndexDimensionVO.
 
-        维度角色
+        维度角色。
 
         :return: The role of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -188,7 +188,7 @@ class DerivativeIndexDimensionVO:
     def role(self, role):
         """Sets the role of this DerivativeIndexDimensionVO.
 
-        维度角色
+        维度角色。
 
         :param role: The role of this DerivativeIndexDimensionVO.
         :type role: str
@@ -199,7 +199,7 @@ class DerivativeIndexDimensionVO:
     def dimension_id(self):
         """Gets the dimension_id of this DerivativeIndexDimensionVO.
 
-        维度id
+        维度ID。
 
         :return: The dimension_id of this DerivativeIndexDimensionVO.
         :rtype: int
@@ -210,7 +210,7 @@ class DerivativeIndexDimensionVO:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this DerivativeIndexDimensionVO.
 
-        维度id
+        维度ID。
 
         :param dimension_id: The dimension_id of this DerivativeIndexDimensionVO.
         :type dimension_id: int
@@ -221,7 +221,7 @@ class DerivativeIndexDimensionVO:
     def hierarchies_id(self):
         """Gets the hierarchies_id of this DerivativeIndexDimensionVO.
 
-        维度层级id
+        维度层级ID。
 
         :return: The hierarchies_id of this DerivativeIndexDimensionVO.
         :rtype: int
@@ -232,7 +232,7 @@ class DerivativeIndexDimensionVO:
     def hierarchies_id(self, hierarchies_id):
         """Sets the hierarchies_id of this DerivativeIndexDimensionVO.
 
-        维度层级id
+        维度层级ID。
 
         :param hierarchies_id: The hierarchies_id of this DerivativeIndexDimensionVO.
         :type hierarchies_id: int
@@ -243,7 +243,7 @@ class DerivativeIndexDimensionVO:
     def ordinal(self):
         """Gets the ordinal of this DerivativeIndexDimensionVO.
 
-        序号
+        序号。
 
         :return: The ordinal of this DerivativeIndexDimensionVO.
         :rtype: int
@@ -254,7 +254,7 @@ class DerivativeIndexDimensionVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this DerivativeIndexDimensionVO.
 
-        序号
+        序号。
 
         :param ordinal: The ordinal of this DerivativeIndexDimensionVO.
         :type ordinal: int
@@ -265,7 +265,7 @@ class DerivativeIndexDimensionVO:
     def group_name(self):
         """Gets the group_name of this DerivativeIndexDimensionVO.
 
-        维度分组名称
+        维度分组名称。
 
         :return: The group_name of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -276,7 +276,7 @@ class DerivativeIndexDimensionVO:
     def group_name(self, group_name):
         """Sets the group_name of this DerivativeIndexDimensionVO.
 
-        维度分组名称
+        维度分组名称。
 
         :param group_name: The group_name of this DerivativeIndexDimensionVO.
         :type group_name: str
@@ -287,7 +287,7 @@ class DerivativeIndexDimensionVO:
     def group_code(self):
         """Gets the group_code of this DerivativeIndexDimensionVO.
 
-        维度分组编码
+        维度分组编码。
 
         :return: The group_code of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -298,7 +298,7 @@ class DerivativeIndexDimensionVO:
     def group_code(self, group_code):
         """Sets the group_code of this DerivativeIndexDimensionVO.
 
-        维度分组编码
+        维度分组编码。
 
         :param group_code: The group_code of this DerivativeIndexDimensionVO.
         :type group_code: str
@@ -327,7 +327,7 @@ class DerivativeIndexDimensionVO:
     def hierarchies(self):
         """Gets the hierarchies of this DerivativeIndexDimensionVO.
 
-        层级属性
+        层级属性。
 
         :return: The hierarchies of this DerivativeIndexDimensionVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.DimensionHierarchiesVO`]
@@ -338,7 +338,7 @@ class DerivativeIndexDimensionVO:
     def hierarchies(self, hierarchies):
         """Sets the hierarchies of this DerivativeIndexDimensionVO.
 
-        层级属性
+        层级属性。
 
         :param hierarchies: The hierarchies of this DerivativeIndexDimensionVO.
         :type hierarchies: list[:class:`huaweicloudsdkdataartsstudio.v1.DimensionHierarchiesVO`]
@@ -349,7 +349,7 @@ class DerivativeIndexDimensionVO:
     def l1(self):
         """Gets the l1 of this DerivativeIndexDimensionVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :return: The l1 of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -360,7 +360,7 @@ class DerivativeIndexDimensionVO:
     def l1(self, l1):
         """Sets the l1 of this DerivativeIndexDimensionVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :param l1: The l1 of this DerivativeIndexDimensionVO.
         :type l1: str
@@ -371,7 +371,7 @@ class DerivativeIndexDimensionVO:
     def l2(self):
         """Gets the l2 of this DerivativeIndexDimensionVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :return: The l2 of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -382,7 +382,7 @@ class DerivativeIndexDimensionVO:
     def l2(self, l2):
         """Sets the l2 of this DerivativeIndexDimensionVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :param l2: The l2 of this DerivativeIndexDimensionVO.
         :type l2: str
@@ -393,7 +393,7 @@ class DerivativeIndexDimensionVO:
     def l3(self):
         """Gets the l3 of this DerivativeIndexDimensionVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :return: The l3 of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -404,7 +404,7 @@ class DerivativeIndexDimensionVO:
     def l3(self, l3):
         """Sets the l3 of this DerivativeIndexDimensionVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :param l3: The l3 of this DerivativeIndexDimensionVO.
         :type l3: str
@@ -415,7 +415,7 @@ class DerivativeIndexDimensionVO:
     def l1_id(self):
         """Gets the l1_id of this DerivativeIndexDimensionVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :return: The l1_id of this DerivativeIndexDimensionVO.
         :rtype: int
@@ -426,7 +426,7 @@ class DerivativeIndexDimensionVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this DerivativeIndexDimensionVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :param l1_id: The l1_id of this DerivativeIndexDimensionVO.
         :type l1_id: int
@@ -437,6 +437,8 @@ class DerivativeIndexDimensionVO:
     def l2_id(self):
         """Gets the l2_id of this DerivativeIndexDimensionVO.
 
+        主题域ID，只读，创建和更新时无需填写。
+
         :return: The l2_id of this DerivativeIndexDimensionVO.
         :rtype: str
         """
@@ -445,6 +447,8 @@ class DerivativeIndexDimensionVO:
     @l2_id.setter
     def l2_id(self, l2_id):
         """Sets the l2_id of this DerivativeIndexDimensionVO.
+
+        主题域ID，只读，创建和更新时无需填写。
 
         :param l2_id: The l2_id of this DerivativeIndexDimensionVO.
         :type l2_id: str
@@ -455,7 +459,7 @@ class DerivativeIndexDimensionVO:
     def l3_id(self):
         """Gets the l3_id of this DerivativeIndexDimensionVO.
 
-        业务对象id
+        业务对象ID。
 
         :return: The l3_id of this DerivativeIndexDimensionVO.
         :rtype: int
@@ -466,7 +470,7 @@ class DerivativeIndexDimensionVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this DerivativeIndexDimensionVO.
 
-        业务对象id
+        业务对象ID。
 
         :param l3_id: The l3_id of this DerivativeIndexDimensionVO.
         :type l3_id: int
@@ -477,7 +481,7 @@ class DerivativeIndexDimensionVO:
     def dw_type(self):
         """Gets the dw_type of this DerivativeIndexDimensionVO.
 
-        数据连接类型
+        数据连接类型。
 
         :return: The dw_type of this DerivativeIndexDimensionVO.
         :rtype: str
@@ -488,7 +492,7 @@ class DerivativeIndexDimensionVO:
     def dw_type(self, dw_type):
         """Sets the dw_type of this DerivativeIndexDimensionVO.
 
-        数据连接类型
+        数据连接类型。
 
         :param dw_type: The dw_type of this DerivativeIndexDimensionVO.
         :type dw_type: str

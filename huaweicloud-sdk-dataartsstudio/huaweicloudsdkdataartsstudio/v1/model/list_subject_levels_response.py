@@ -30,7 +30,7 @@ class ListSubjectLevelsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param levels: 主题层级信息
+        :param levels: 主题层级信息。
         :type levels: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]
         """
         
@@ -46,7 +46,7 @@ class ListSubjectLevelsResponse(SdkResponse):
     def levels(self):
         """Gets the levels of this ListSubjectLevelsResponse.
 
-        主题层级信息
+        主题层级信息。
 
         :return: The levels of this ListSubjectLevelsResponse.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]
@@ -57,7 +57,7 @@ class ListSubjectLevelsResponse(SdkResponse):
     def levels(self, levels):
         """Sets the levels of this ListSubjectLevelsResponse.
 
-        主题层级信息
+        主题层级信息。
 
         :param levels: The levels of this ListSubjectLevelsResponse.
         :type levels: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]

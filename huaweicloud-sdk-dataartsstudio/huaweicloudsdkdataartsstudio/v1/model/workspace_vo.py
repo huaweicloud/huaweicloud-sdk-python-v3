@@ -57,35 +57,35 @@ class WorkspaceVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编号
+        :param id: 编号。
         :type id: int
-        :param name: 工作区名字
+        :param name: 工作区名字。
         :type name: str
-        :param description: 
+        :param description: 描述。
         :type description: str
-        :param is_physical: 是否为物理表
+        :param is_physical: 是否为物理表。
         :type is_physical: bool
-        :param frequent: 是否为常用
+        :param frequent: 是否为常用。
         :type frequent: bool
-        :param top: 分层治理
+        :param top: 分层治理。
         :type top: bool
         :param level: 
         :type level: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
-        :param dw_type: 数据连接类型
+        :param dw_type: 数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
         :type dw_type: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param type: 工作区类型枚举
+        :param type: 工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
         :type type: str
-        :param biz_catalog_ids: 关联的业务分层的id列表 {\&quot;l1Ids\&quot;:[],\&quot;l2Ids\&quot;:[],\&quot;l3Ids\&quot;:[]}
+        :param biz_catalog_ids: 关联的业务分层的ID列表 {\&quot;l1Ids\&quot;:[],\&quot;l2Ids\&quot;:[],\&quot;l3Ids\&quot;:[]}。
         :type biz_catalog_ids: str
-        :param databases: 数据库名称数组
+        :param databases: 数据库名称数组。
         :type databases: list[str]
         """
         
@@ -141,7 +141,7 @@ class WorkspaceVO:
     def id(self):
         """Gets the id of this WorkspaceVO.
 
-        编号
+        编号。
 
         :return: The id of this WorkspaceVO.
         :rtype: int
@@ -152,7 +152,7 @@ class WorkspaceVO:
     def id(self, id):
         """Sets the id of this WorkspaceVO.
 
-        编号
+        编号。
 
         :param id: The id of this WorkspaceVO.
         :type id: int
@@ -163,7 +163,7 @@ class WorkspaceVO:
     def name(self):
         """Gets the name of this WorkspaceVO.
 
-        工作区名字
+        工作区名字。
 
         :return: The name of this WorkspaceVO.
         :rtype: str
@@ -174,7 +174,7 @@ class WorkspaceVO:
     def name(self, name):
         """Sets the name of this WorkspaceVO.
 
-        工作区名字
+        工作区名字。
 
         :param name: The name of this WorkspaceVO.
         :type name: str
@@ -185,6 +185,8 @@ class WorkspaceVO:
     def description(self):
         """Gets the description of this WorkspaceVO.
 
+        描述。
+
         :return: The description of this WorkspaceVO.
         :rtype: str
         """
@@ -193,6 +195,8 @@ class WorkspaceVO:
     @description.setter
     def description(self, description):
         """Sets the description of this WorkspaceVO.
+
+        描述。
 
         :param description: The description of this WorkspaceVO.
         :type description: str
@@ -203,7 +207,7 @@ class WorkspaceVO:
     def is_physical(self):
         """Gets the is_physical of this WorkspaceVO.
 
-        是否为物理表
+        是否为物理表。
 
         :return: The is_physical of this WorkspaceVO.
         :rtype: bool
@@ -214,7 +218,7 @@ class WorkspaceVO:
     def is_physical(self, is_physical):
         """Sets the is_physical of this WorkspaceVO.
 
-        是否为物理表
+        是否为物理表。
 
         :param is_physical: The is_physical of this WorkspaceVO.
         :type is_physical: bool
@@ -225,7 +229,7 @@ class WorkspaceVO:
     def frequent(self):
         """Gets the frequent of this WorkspaceVO.
 
-        是否为常用
+        是否为常用。
 
         :return: The frequent of this WorkspaceVO.
         :rtype: bool
@@ -236,7 +240,7 @@ class WorkspaceVO:
     def frequent(self, frequent):
         """Sets the frequent of this WorkspaceVO.
 
-        是否为常用
+        是否为常用。
 
         :param frequent: The frequent of this WorkspaceVO.
         :type frequent: bool
@@ -247,7 +251,7 @@ class WorkspaceVO:
     def top(self):
         """Gets the top of this WorkspaceVO.
 
-        分层治理
+        分层治理。
 
         :return: The top of this WorkspaceVO.
         :rtype: bool
@@ -258,7 +262,7 @@ class WorkspaceVO:
     def top(self, top):
         """Sets the top of this WorkspaceVO.
 
-        分层治理
+        分层治理。
 
         :param top: The top of this WorkspaceVO.
         :type top: bool
@@ -287,7 +291,7 @@ class WorkspaceVO:
     def dw_type(self):
         """Gets the dw_type of this WorkspaceVO.
 
-        数据连接类型
+        数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
         :return: The dw_type of this WorkspaceVO.
         :rtype: str
@@ -298,7 +302,7 @@ class WorkspaceVO:
     def dw_type(self, dw_type):
         """Sets the dw_type of this WorkspaceVO.
 
-        数据连接类型
+        数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
         :param dw_type: The dw_type of this WorkspaceVO.
         :type dw_type: str
@@ -309,7 +313,7 @@ class WorkspaceVO:
     def create_time(self):
         """Gets the create_time of this WorkspaceVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this WorkspaceVO.
         :rtype: datetime
@@ -320,7 +324,7 @@ class WorkspaceVO:
     def create_time(self, create_time):
         """Sets the create_time of this WorkspaceVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this WorkspaceVO.
         :type create_time: datetime
@@ -331,7 +335,7 @@ class WorkspaceVO:
     def update_time(self):
         """Gets the update_time of this WorkspaceVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this WorkspaceVO.
         :rtype: datetime
@@ -342,7 +346,7 @@ class WorkspaceVO:
     def update_time(self, update_time):
         """Sets the update_time of this WorkspaceVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this WorkspaceVO.
         :type update_time: datetime
@@ -353,7 +357,7 @@ class WorkspaceVO:
     def create_by(self):
         """Gets the create_by of this WorkspaceVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this WorkspaceVO.
         :rtype: str
@@ -364,7 +368,7 @@ class WorkspaceVO:
     def create_by(self, create_by):
         """Sets the create_by of this WorkspaceVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this WorkspaceVO.
         :type create_by: str
@@ -375,7 +379,7 @@ class WorkspaceVO:
     def update_by(self):
         """Gets the update_by of this WorkspaceVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this WorkspaceVO.
         :rtype: str
@@ -386,7 +390,7 @@ class WorkspaceVO:
     def update_by(self, update_by):
         """Sets the update_by of this WorkspaceVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this WorkspaceVO.
         :type update_by: str
@@ -397,7 +401,7 @@ class WorkspaceVO:
     def type(self):
         """Gets the type of this WorkspaceVO.
 
-        工作区类型枚举
+        工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
 
         :return: The type of this WorkspaceVO.
         :rtype: str
@@ -408,7 +412,7 @@ class WorkspaceVO:
     def type(self, type):
         """Sets the type of this WorkspaceVO.
 
-        工作区类型枚举
+        工作区类型枚举。THIRD_NF(关系建模)、DIMENSION(维度建模)。
 
         :param type: The type of this WorkspaceVO.
         :type type: str
@@ -419,7 +423,7 @@ class WorkspaceVO:
     def biz_catalog_ids(self):
         """Gets the biz_catalog_ids of this WorkspaceVO.
 
-        关联的业务分层的id列表 {\"l1Ids\":[],\"l2Ids\":[],\"l3Ids\":[]}
+        关联的业务分层的ID列表 {\"l1Ids\":[],\"l2Ids\":[],\"l3Ids\":[]}。
 
         :return: The biz_catalog_ids of this WorkspaceVO.
         :rtype: str
@@ -430,7 +434,7 @@ class WorkspaceVO:
     def biz_catalog_ids(self, biz_catalog_ids):
         """Sets the biz_catalog_ids of this WorkspaceVO.
 
-        关联的业务分层的id列表 {\"l1Ids\":[],\"l2Ids\":[],\"l3Ids\":[]}
+        关联的业务分层的ID列表 {\"l1Ids\":[],\"l2Ids\":[],\"l3Ids\":[]}。
 
         :param biz_catalog_ids: The biz_catalog_ids of this WorkspaceVO.
         :type biz_catalog_ids: str
@@ -441,7 +445,7 @@ class WorkspaceVO:
     def databases(self):
         """Gets the databases of this WorkspaceVO.
 
-        数据库名称数组
+        数据库名称数组。
 
         :return: The databases of this WorkspaceVO.
         :rtype: list[str]
@@ -452,7 +456,7 @@ class WorkspaceVO:
     def databases(self, databases):
         """Sets the databases of this WorkspaceVO.
 
-        数据库名称数组
+        数据库名称数组。
 
         :param databases: The databases of this WorkspaceVO.
         :type databases: list[str]

@@ -47,25 +47,25 @@ class SubjectParamsVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码。更新时必填，创建时可以为空
+        :param id: 编码。更新时必填，创建时可以为空。
         :type id: int
-        :param name_ch: 中文名称
+        :param name_ch: 中文名称。
         :type name_ch: str
-        :param name_en: 英文名称
+        :param name_en: 英文名称。
         :type name_en: str
-        :param description: 描述信息, 业务对象必填
+        :param description: 描述信息，业务对象必填。
         :type description: str
-        :param alias: 别名
+        :param alias: 别名。
         :type alias: str
-        :param data_owner: 数据owner部门
+        :param data_owner: 数据owner部门。
         :type data_owner: str
-        :param data_owner_list: 数据owner人员
+        :param data_owner_list: 数据owner人员。
         :type data_owner_list: str
-        :param level: 层级
+        :param level: 层级。
         :type level: int
-        :param parent_id: 上层主题id，首层则为空
+        :param parent_id: 上层主题ID，首层则为空。
         :type parent_id: int
-        :param self_defined_fields: 属性自定义项
+        :param self_defined_fields: 属性自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         
@@ -104,7 +104,7 @@ class SubjectParamsVO:
     def id(self):
         """Gets the id of this SubjectParamsVO.
 
-        编码。更新时必填，创建时可以为空
+        编码。更新时必填，创建时可以为空。
 
         :return: The id of this SubjectParamsVO.
         :rtype: int
@@ -115,7 +115,7 @@ class SubjectParamsVO:
     def id(self, id):
         """Sets the id of this SubjectParamsVO.
 
-        编码。更新时必填，创建时可以为空
+        编码。更新时必填，创建时可以为空。
 
         :param id: The id of this SubjectParamsVO.
         :type id: int
@@ -126,7 +126,7 @@ class SubjectParamsVO:
     def name_ch(self):
         """Gets the name_ch of this SubjectParamsVO.
 
-        中文名称
+        中文名称。
 
         :return: The name_ch of this SubjectParamsVO.
         :rtype: str
@@ -137,7 +137,7 @@ class SubjectParamsVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this SubjectParamsVO.
 
-        中文名称
+        中文名称。
 
         :param name_ch: The name_ch of this SubjectParamsVO.
         :type name_ch: str
@@ -148,7 +148,7 @@ class SubjectParamsVO:
     def name_en(self):
         """Gets the name_en of this SubjectParamsVO.
 
-        英文名称
+        英文名称。
 
         :return: The name_en of this SubjectParamsVO.
         :rtype: str
@@ -159,7 +159,7 @@ class SubjectParamsVO:
     def name_en(self, name_en):
         """Sets the name_en of this SubjectParamsVO.
 
-        英文名称
+        英文名称。
 
         :param name_en: The name_en of this SubjectParamsVO.
         :type name_en: str
@@ -170,7 +170,7 @@ class SubjectParamsVO:
     def description(self):
         """Gets the description of this SubjectParamsVO.
 
-        描述信息, 业务对象必填
+        描述信息，业务对象必填。
 
         :return: The description of this SubjectParamsVO.
         :rtype: str
@@ -181,7 +181,7 @@ class SubjectParamsVO:
     def description(self, description):
         """Sets the description of this SubjectParamsVO.
 
-        描述信息, 业务对象必填
+        描述信息，业务对象必填。
 
         :param description: The description of this SubjectParamsVO.
         :type description: str
@@ -192,7 +192,7 @@ class SubjectParamsVO:
     def alias(self):
         """Gets the alias of this SubjectParamsVO.
 
-        别名
+        别名。
 
         :return: The alias of this SubjectParamsVO.
         :rtype: str
@@ -203,7 +203,7 @@ class SubjectParamsVO:
     def alias(self, alias):
         """Sets the alias of this SubjectParamsVO.
 
-        别名
+        别名。
 
         :param alias: The alias of this SubjectParamsVO.
         :type alias: str
@@ -214,7 +214,7 @@ class SubjectParamsVO:
     def data_owner(self):
         """Gets the data_owner of this SubjectParamsVO.
 
-        数据owner部门
+        数据owner部门。
 
         :return: The data_owner of this SubjectParamsVO.
         :rtype: str
@@ -225,7 +225,7 @@ class SubjectParamsVO:
     def data_owner(self, data_owner):
         """Sets the data_owner of this SubjectParamsVO.
 
-        数据owner部门
+        数据owner部门。
 
         :param data_owner: The data_owner of this SubjectParamsVO.
         :type data_owner: str
@@ -236,7 +236,7 @@ class SubjectParamsVO:
     def data_owner_list(self):
         """Gets the data_owner_list of this SubjectParamsVO.
 
-        数据owner人员
+        数据owner人员。
 
         :return: The data_owner_list of this SubjectParamsVO.
         :rtype: str
@@ -247,7 +247,7 @@ class SubjectParamsVO:
     def data_owner_list(self, data_owner_list):
         """Sets the data_owner_list of this SubjectParamsVO.
 
-        数据owner人员
+        数据owner人员。
 
         :param data_owner_list: The data_owner_list of this SubjectParamsVO.
         :type data_owner_list: str
@@ -258,7 +258,7 @@ class SubjectParamsVO:
     def level(self):
         """Gets the level of this SubjectParamsVO.
 
-        层级
+        层级。
 
         :return: The level of this SubjectParamsVO.
         :rtype: int
@@ -269,7 +269,7 @@ class SubjectParamsVO:
     def level(self, level):
         """Sets the level of this SubjectParamsVO.
 
-        层级
+        层级。
 
         :param level: The level of this SubjectParamsVO.
         :type level: int
@@ -280,7 +280,7 @@ class SubjectParamsVO:
     def parent_id(self):
         """Gets the parent_id of this SubjectParamsVO.
 
-        上层主题id，首层则为空
+        上层主题ID，首层则为空。
 
         :return: The parent_id of this SubjectParamsVO.
         :rtype: int
@@ -291,7 +291,7 @@ class SubjectParamsVO:
     def parent_id(self, parent_id):
         """Sets the parent_id of this SubjectParamsVO.
 
-        上层主题id，首层则为空
+        上层主题ID，首层则为空。
 
         :param parent_id: The parent_id of this SubjectParamsVO.
         :type parent_id: int
@@ -302,7 +302,7 @@ class SubjectParamsVO:
     def self_defined_fields(self):
         """Gets the self_defined_fields of this SubjectParamsVO.
 
-        属性自定义项
+        属性自定义项。
 
         :return: The self_defined_fields of this SubjectParamsVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
@@ -313,7 +313,7 @@ class SubjectParamsVO:
     def self_defined_fields(self, self_defined_fields):
         """Sets the self_defined_fields of this SubjectParamsVO.
 
-        属性自定义项
+        属性自定义项。
 
         :param self_defined_fields: The self_defined_fields of this SubjectParamsVO.
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]

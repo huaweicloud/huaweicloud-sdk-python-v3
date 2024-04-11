@@ -81,45 +81,45 @@ class CompoundMetricVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码。
         :type id: int
-        :param name_en: 字段名
+        :param name_en: 字段名。
         :type name_en: str
-        :param name_ch: 业务属性
+        :param name_ch: 业务属性。
         :type name_ch: str
-        :param description: 
+        :param description: 描述
         :type description: str
-        :param dimension_group: 颗粒度id
+        :param dimension_group: 颗粒度ID。
         :type dimension_group: str
-        :param group_name: 颗粒度名称
+        :param group_name: 颗粒度名称。
         :type group_name: str
-        :param group_code: 颗粒度编码
+        :param group_code: 颗粒度编码。
         :type group_code: str
-        :param metric_ids: 指标信息
+        :param metric_ids: 指标信息。
         :type metric_ids: list[int]
-        :param metric_names: 指标名称信息
+        :param metric_names: 指标名称信息。
         :type metric_names: list[str]
-        :param cal_fn_ids: 引用函数id
+        :param cal_fn_ids: 引用函数ID。
         :type cal_fn_ids: list[int]
-        :param cal_exp: 计算表达式, ${index_id} + ${index_id}
+        :param cal_exp: 计算表达式，形如${index_id} + ${compound#index_id}，其中index_id代表引用的衍生指标ID，compound#index_id代表引用的复合指标ID。
         :type cal_exp: str
-        :param l1_id: 主题域分组id
+        :param l1_id: 主题域分组ID。
         :type l1_id: int
-        :param l2_id: 
+        :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象id
+        :param l3_id: 业务对象ID。
         :type l3_id: int
-        :param data_type: 字段类型
+        :param data_type: 字段类型。
         :type data_type: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -127,13 +127,13 @@ class CompoundMetricVO:
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
         :param monitor: 
         :type monitor: :class:`huaweicloudsdkdataartsstudio.v1.MetricMonitorVO`
-        :param l1: 主题域分组中文名
+        :param l1: 主题域分组中文名，只读，创建和更新时无需填写。
         :type l1: str
-        :param l2: 主题域中文名
+        :param l2: 主题域中文名，只读，创建和更新时无需填写。
         :type l2: str
-        :param l3: 业务对象中文名
+        :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param summary_table_id: 汇总表id
+        :param summary_table_id: 汇总表ID。
         :type summary_table_id: int
         """
         
@@ -222,7 +222,7 @@ class CompoundMetricVO:
     def id(self):
         """Gets the id of this CompoundMetricVO.
 
-        编码
+        编码。
 
         :return: The id of this CompoundMetricVO.
         :rtype: int
@@ -233,7 +233,7 @@ class CompoundMetricVO:
     def id(self, id):
         """Sets the id of this CompoundMetricVO.
 
-        编码
+        编码。
 
         :param id: The id of this CompoundMetricVO.
         :type id: int
@@ -244,7 +244,7 @@ class CompoundMetricVO:
     def name_en(self):
         """Gets the name_en of this CompoundMetricVO.
 
-        字段名
+        字段名。
 
         :return: The name_en of this CompoundMetricVO.
         :rtype: str
@@ -255,7 +255,7 @@ class CompoundMetricVO:
     def name_en(self, name_en):
         """Sets the name_en of this CompoundMetricVO.
 
-        字段名
+        字段名。
 
         :param name_en: The name_en of this CompoundMetricVO.
         :type name_en: str
@@ -266,7 +266,7 @@ class CompoundMetricVO:
     def name_ch(self):
         """Gets the name_ch of this CompoundMetricVO.
 
-        业务属性
+        业务属性。
 
         :return: The name_ch of this CompoundMetricVO.
         :rtype: str
@@ -277,7 +277,7 @@ class CompoundMetricVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this CompoundMetricVO.
 
-        业务属性
+        业务属性。
 
         :param name_ch: The name_ch of this CompoundMetricVO.
         :type name_ch: str
@@ -288,6 +288,8 @@ class CompoundMetricVO:
     def description(self):
         """Gets the description of this CompoundMetricVO.
 
+        描述
+
         :return: The description of this CompoundMetricVO.
         :rtype: str
         """
@@ -296,6 +298,8 @@ class CompoundMetricVO:
     @description.setter
     def description(self, description):
         """Sets the description of this CompoundMetricVO.
+
+        描述
 
         :param description: The description of this CompoundMetricVO.
         :type description: str
@@ -306,7 +310,7 @@ class CompoundMetricVO:
     def dimension_group(self):
         """Gets the dimension_group of this CompoundMetricVO.
 
-        颗粒度id
+        颗粒度ID。
 
         :return: The dimension_group of this CompoundMetricVO.
         :rtype: str
@@ -317,7 +321,7 @@ class CompoundMetricVO:
     def dimension_group(self, dimension_group):
         """Sets the dimension_group of this CompoundMetricVO.
 
-        颗粒度id
+        颗粒度ID。
 
         :param dimension_group: The dimension_group of this CompoundMetricVO.
         :type dimension_group: str
@@ -328,7 +332,7 @@ class CompoundMetricVO:
     def group_name(self):
         """Gets the group_name of this CompoundMetricVO.
 
-        颗粒度名称
+        颗粒度名称。
 
         :return: The group_name of this CompoundMetricVO.
         :rtype: str
@@ -339,7 +343,7 @@ class CompoundMetricVO:
     def group_name(self, group_name):
         """Sets the group_name of this CompoundMetricVO.
 
-        颗粒度名称
+        颗粒度名称。
 
         :param group_name: The group_name of this CompoundMetricVO.
         :type group_name: str
@@ -350,7 +354,7 @@ class CompoundMetricVO:
     def group_code(self):
         """Gets the group_code of this CompoundMetricVO.
 
-        颗粒度编码
+        颗粒度编码。
 
         :return: The group_code of this CompoundMetricVO.
         :rtype: str
@@ -361,7 +365,7 @@ class CompoundMetricVO:
     def group_code(self, group_code):
         """Sets the group_code of this CompoundMetricVO.
 
-        颗粒度编码
+        颗粒度编码。
 
         :param group_code: The group_code of this CompoundMetricVO.
         :type group_code: str
@@ -372,7 +376,7 @@ class CompoundMetricVO:
     def metric_ids(self):
         """Gets the metric_ids of this CompoundMetricVO.
 
-        指标信息
+        指标信息。
 
         :return: The metric_ids of this CompoundMetricVO.
         :rtype: list[int]
@@ -383,7 +387,7 @@ class CompoundMetricVO:
     def metric_ids(self, metric_ids):
         """Sets the metric_ids of this CompoundMetricVO.
 
-        指标信息
+        指标信息。
 
         :param metric_ids: The metric_ids of this CompoundMetricVO.
         :type metric_ids: list[int]
@@ -394,7 +398,7 @@ class CompoundMetricVO:
     def metric_names(self):
         """Gets the metric_names of this CompoundMetricVO.
 
-        指标名称信息
+        指标名称信息。
 
         :return: The metric_names of this CompoundMetricVO.
         :rtype: list[str]
@@ -405,7 +409,7 @@ class CompoundMetricVO:
     def metric_names(self, metric_names):
         """Sets the metric_names of this CompoundMetricVO.
 
-        指标名称信息
+        指标名称信息。
 
         :param metric_names: The metric_names of this CompoundMetricVO.
         :type metric_names: list[str]
@@ -416,7 +420,7 @@ class CompoundMetricVO:
     def cal_fn_ids(self):
         """Gets the cal_fn_ids of this CompoundMetricVO.
 
-        引用函数id
+        引用函数ID。
 
         :return: The cal_fn_ids of this CompoundMetricVO.
         :rtype: list[int]
@@ -427,7 +431,7 @@ class CompoundMetricVO:
     def cal_fn_ids(self, cal_fn_ids):
         """Sets the cal_fn_ids of this CompoundMetricVO.
 
-        引用函数id
+        引用函数ID。
 
         :param cal_fn_ids: The cal_fn_ids of this CompoundMetricVO.
         :type cal_fn_ids: list[int]
@@ -438,7 +442,7 @@ class CompoundMetricVO:
     def cal_exp(self):
         """Gets the cal_exp of this CompoundMetricVO.
 
-        计算表达式, ${index_id} + ${index_id}
+        计算表达式，形如${index_id} + ${compound#index_id}，其中index_id代表引用的衍生指标ID，compound#index_id代表引用的复合指标ID。
 
         :return: The cal_exp of this CompoundMetricVO.
         :rtype: str
@@ -449,7 +453,7 @@ class CompoundMetricVO:
     def cal_exp(self, cal_exp):
         """Sets the cal_exp of this CompoundMetricVO.
 
-        计算表达式, ${index_id} + ${index_id}
+        计算表达式，形如${index_id} + ${compound#index_id}，其中index_id代表引用的衍生指标ID，compound#index_id代表引用的复合指标ID。
 
         :param cal_exp: The cal_exp of this CompoundMetricVO.
         :type cal_exp: str
@@ -460,7 +464,7 @@ class CompoundMetricVO:
     def l1_id(self):
         """Gets the l1_id of this CompoundMetricVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :return: The l1_id of this CompoundMetricVO.
         :rtype: int
@@ -471,7 +475,7 @@ class CompoundMetricVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this CompoundMetricVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :param l1_id: The l1_id of this CompoundMetricVO.
         :type l1_id: int
@@ -482,6 +486,8 @@ class CompoundMetricVO:
     def l2_id(self):
         """Gets the l2_id of this CompoundMetricVO.
 
+        主题域ID，只读，创建和更新时无需填写。
+
         :return: The l2_id of this CompoundMetricVO.
         :rtype: str
         """
@@ -490,6 +496,8 @@ class CompoundMetricVO:
     @l2_id.setter
     def l2_id(self, l2_id):
         """Sets the l2_id of this CompoundMetricVO.
+
+        主题域ID，只读，创建和更新时无需填写。
 
         :param l2_id: The l2_id of this CompoundMetricVO.
         :type l2_id: str
@@ -500,7 +508,7 @@ class CompoundMetricVO:
     def l3_id(self):
         """Gets the l3_id of this CompoundMetricVO.
 
-        业务对象id
+        业务对象ID。
 
         :return: The l3_id of this CompoundMetricVO.
         :rtype: int
@@ -511,7 +519,7 @@ class CompoundMetricVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this CompoundMetricVO.
 
-        业务对象id
+        业务对象ID。
 
         :param l3_id: The l3_id of this CompoundMetricVO.
         :type l3_id: int
@@ -522,7 +530,7 @@ class CompoundMetricVO:
     def data_type(self):
         """Gets the data_type of this CompoundMetricVO.
 
-        字段类型
+        字段类型。
 
         :return: The data_type of this CompoundMetricVO.
         :rtype: str
@@ -533,7 +541,7 @@ class CompoundMetricVO:
     def data_type(self, data_type):
         """Sets the data_type of this CompoundMetricVO.
 
-        字段类型
+        字段类型。
 
         :param data_type: The data_type of this CompoundMetricVO.
         :type data_type: str
@@ -544,7 +552,7 @@ class CompoundMetricVO:
     def create_by(self):
         """Gets the create_by of this CompoundMetricVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this CompoundMetricVO.
         :rtype: str
@@ -555,7 +563,7 @@ class CompoundMetricVO:
     def create_by(self, create_by):
         """Sets the create_by of this CompoundMetricVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this CompoundMetricVO.
         :type create_by: str
@@ -566,7 +574,7 @@ class CompoundMetricVO:
     def update_by(self):
         """Gets the update_by of this CompoundMetricVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this CompoundMetricVO.
         :rtype: str
@@ -577,7 +585,7 @@ class CompoundMetricVO:
     def update_by(self, update_by):
         """Sets the update_by of this CompoundMetricVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this CompoundMetricVO.
         :type update_by: str
@@ -606,7 +614,7 @@ class CompoundMetricVO:
     def create_time(self):
         """Gets the create_time of this CompoundMetricVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this CompoundMetricVO.
         :rtype: datetime
@@ -617,7 +625,7 @@ class CompoundMetricVO:
     def create_time(self, create_time):
         """Sets the create_time of this CompoundMetricVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this CompoundMetricVO.
         :type create_time: datetime
@@ -628,7 +636,7 @@ class CompoundMetricVO:
     def update_time(self):
         """Gets the update_time of this CompoundMetricVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this CompoundMetricVO.
         :rtype: datetime
@@ -639,7 +647,7 @@ class CompoundMetricVO:
     def update_time(self, update_time):
         """Sets the update_time of this CompoundMetricVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this CompoundMetricVO.
         :type update_time: datetime
@@ -704,7 +712,7 @@ class CompoundMetricVO:
     def l1(self):
         """Gets the l1 of this CompoundMetricVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :return: The l1 of this CompoundMetricVO.
         :rtype: str
@@ -715,7 +723,7 @@ class CompoundMetricVO:
     def l1(self, l1):
         """Sets the l1 of this CompoundMetricVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :param l1: The l1 of this CompoundMetricVO.
         :type l1: str
@@ -726,7 +734,7 @@ class CompoundMetricVO:
     def l2(self):
         """Gets the l2 of this CompoundMetricVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :return: The l2 of this CompoundMetricVO.
         :rtype: str
@@ -737,7 +745,7 @@ class CompoundMetricVO:
     def l2(self, l2):
         """Sets the l2 of this CompoundMetricVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :param l2: The l2 of this CompoundMetricVO.
         :type l2: str
@@ -748,7 +756,7 @@ class CompoundMetricVO:
     def l3(self):
         """Gets the l3 of this CompoundMetricVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :return: The l3 of this CompoundMetricVO.
         :rtype: str
@@ -759,7 +767,7 @@ class CompoundMetricVO:
     def l3(self, l3):
         """Sets the l3 of this CompoundMetricVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :param l3: The l3 of this CompoundMetricVO.
         :type l3: str
@@ -770,7 +778,7 @@ class CompoundMetricVO:
     def summary_table_id(self):
         """Gets the summary_table_id of this CompoundMetricVO.
 
-        汇总表id
+        汇总表ID。
 
         :return: The summary_table_id of this CompoundMetricVO.
         :rtype: int
@@ -781,7 +789,7 @@ class CompoundMetricVO:
     def summary_table_id(self, summary_table_id):
         """Sets the summary_table_id of this CompoundMetricVO.
 
-        汇总表id
+        汇总表ID。
 
         :param summary_table_id: The summary_table_id of this CompoundMetricVO.
         :type summary_table_id: int

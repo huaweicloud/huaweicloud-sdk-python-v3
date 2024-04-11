@@ -18,39 +18,46 @@ class ShowWorkspaceDetailByIdRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'model_id': 'str'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'model_id': 'model_id'
     }
 
-    def __init__(self, workspace=None, model_id=None):
+    def __init__(self, workspace=None, x_project_id=None, model_id=None):
         """ShowWorkspaceDetailByIdRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param model_id: 依据workspace id查工作区
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param model_id: 所属关系建模的模型ID。
         :type model_id: str
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._model_id = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.model_id = model_id
 
     @property
     def workspace(self):
         """Gets the workspace of this ShowWorkspaceDetailByIdRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ShowWorkspaceDetailByIdRequest.
         :rtype: str
@@ -61,7 +68,7 @@ class ShowWorkspaceDetailByIdRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowWorkspaceDetailByIdRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ShowWorkspaceDetailByIdRequest.
         :type workspace: str
@@ -69,10 +76,32 @@ class ShowWorkspaceDetailByIdRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ShowWorkspaceDetailByIdRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ShowWorkspaceDetailByIdRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ShowWorkspaceDetailByIdRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ShowWorkspaceDetailByIdRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def model_id(self):
         """Gets the model_id of this ShowWorkspaceDetailByIdRequest.
 
-        依据workspace id查工作区
+        所属关系建模的模型ID。
 
         :return: The model_id of this ShowWorkspaceDetailByIdRequest.
         :rtype: str
@@ -83,7 +112,7 @@ class ShowWorkspaceDetailByIdRequest:
     def model_id(self, model_id):
         """Sets the model_id of this ShowWorkspaceDetailByIdRequest.
 
-        依据workspace id查工作区
+        所属关系建模的模型ID。
 
         :param model_id: The model_id of this ShowWorkspaceDetailByIdRequest.
         :type model_id: str

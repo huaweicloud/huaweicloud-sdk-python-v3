@@ -851,6 +851,349 @@ class IoTDAAsyncClient(Client):
 
         return http_info
 
+    def create_routing_backlog_policy_async(self, request):
+        """新建数据流转积压策略
+
+        应用服务器可调用此接口在物联网平台创建数据流转积压策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRoutingBacklogPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateRoutingBacklogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateRoutingBacklogPolicyResponse`
+        """
+        http_info = self._create_routing_backlog_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_routing_backlog_policy_async_invoker(self, request):
+        http_info = self._create_routing_backlog_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_routing_backlog_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/backlog-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRoutingBacklogPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_routing_backlog_policy_async(self, request):
+        """删除数据流转积压策略
+
+        应用服务器可调用此接口在物联网平台删除指定数据流转积压策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRoutingBacklogPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteRoutingBacklogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteRoutingBacklogPolicyResponse`
+        """
+        http_info = self._delete_routing_backlog_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_routing_backlog_policy_async_invoker(self, request):
+        http_info = self._delete_routing_backlog_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_routing_backlog_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/backlog-policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRoutingBacklogPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_routing_backlog_policy_async(self, request):
+        """查询数据流转积压策略列表
+
+        应用服务器可调用此接口查询在物联网平台设置的数据流转积压策略列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRoutingBacklogPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.ListRoutingBacklogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListRoutingBacklogPolicyResponse`
+        """
+        http_info = self._list_routing_backlog_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_routing_backlog_policy_async_invoker(self, request):
+        http_info = self._list_routing_backlog_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_routing_backlog_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/backlog-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRoutingBacklogPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'policy_name' in local_var_params:
+            query_params.append(('policy_name', local_var_params['policy_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_routing_backlog_policy_async(self, request):
+        """查询数据流转积压策略
+
+        应用服务器可调用此接口在物联网平台查询指定数据流转积压策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRoutingBacklogPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowRoutingBacklogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowRoutingBacklogPolicyResponse`
+        """
+        http_info = self._show_routing_backlog_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_routing_backlog_policy_async_invoker(self, request):
+        http_info = self._show_routing_backlog_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_routing_backlog_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/backlog-policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRoutingBacklogPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_routing_backlog_policy_async(self, request):
+        """修改数据流转积压策略
+
+        应用服务器可调用此接口在物联网平台修改指定数据流转积压策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRoutingBacklogPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateRoutingBacklogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRoutingBacklogPolicyResponse`
+        """
+        http_info = self._update_routing_backlog_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_routing_backlog_policy_async_invoker(self, request):
+        http_info = self._update_routing_backlog_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_routing_backlog_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/backlog-policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRoutingBacklogPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_batch_task_async(self, request):
         """创建批量任务
 
@@ -3376,6 +3719,353 @@ class IoTDAAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_routing_flow_control_policy_async(self, request):
+        """新建数据流转流控策略
+
+        应用服务器可调用此接口在物联网平台创建数据流转流控策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRoutingFlowControlPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateRoutingFlowControlPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateRoutingFlowControlPolicyResponse`
+        """
+        http_info = self._create_routing_flow_control_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_routing_flow_control_policy_async_invoker(self, request):
+        http_info = self._create_routing_flow_control_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_routing_flow_control_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/flowcontrol-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRoutingFlowControlPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_routing_flow_control_policy_async(self, request):
+        """删除数据流转流控策略
+
+        应用服务器可调用此接口在物联网平台删除指定数据流转流控策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRoutingFlowControlPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteRoutingFlowControlPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteRoutingFlowControlPolicyResponse`
+        """
+        http_info = self._delete_routing_flow_control_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_routing_flow_control_policy_async_invoker(self, request):
+        http_info = self._delete_routing_flow_control_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_routing_flow_control_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/flowcontrol-policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRoutingFlowControlPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_routing_flow_control_policy_async(self, request):
+        """查询数据流转流控策略列表
+
+        应用服务器可调用此接口查询在物联网平台设置的数据流转流控策略列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRoutingFlowControlPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.ListRoutingFlowControlPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListRoutingFlowControlPolicyResponse`
+        """
+        http_info = self._list_routing_flow_control_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_routing_flow_control_policy_async_invoker(self, request):
+        http_info = self._list_routing_flow_control_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_routing_flow_control_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/flowcontrol-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRoutingFlowControlPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'scope' in local_var_params:
+            query_params.append(('scope', local_var_params['scope']))
+        if 'scope_value' in local_var_params:
+            query_params.append(('scope_value', local_var_params['scope_value']))
+        if 'policy_name' in local_var_params:
+            query_params.append(('policy_name', local_var_params['policy_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_routing_flow_control_policy_async(self, request):
+        """查询数据流转流控策略
+
+        应用服务器可调用此接口在物联网平台查询指定数据流转流控策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRoutingFlowControlPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowRoutingFlowControlPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowRoutingFlowControlPolicyResponse`
+        """
+        http_info = self._show_routing_flow_control_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_routing_flow_control_policy_async_invoker(self, request):
+        http_info = self._show_routing_flow_control_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_routing_flow_control_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/flowcontrol-policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRoutingFlowControlPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_routing_flow_control_policy_async(self, request):
+        """修改数据流转流控策略
+
+        应用服务器可调用此接口在物联网平台修改指定数据流转流控策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRoutingFlowControlPolicy
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateRoutingFlowControlPolicyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRoutingFlowControlPolicyResponse`
+        """
+        http_info = self._update_routing_flow_control_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_routing_flow_control_policy_async_invoker(self, request):
+        http_info = self._update_routing_flow_control_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_routing_flow_control_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/routing-rule/flowcontrol-policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRoutingFlowControlPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

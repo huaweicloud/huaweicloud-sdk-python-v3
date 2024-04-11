@@ -18,24 +18,28 @@ class ConfirmApprovalsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'action_id': 'str',
         'body': 'ApprovalInfoParam'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'action_id': 'action-id',
         'body': 'body'
     }
 
-    def __init__(self, workspace=None, action_id=None, body=None):
+    def __init__(self, workspace=None, x_project_id=None, action_id=None, body=None):
         """ConfirmApprovalsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param action_id: 处理审批单结果类型
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param action_id: 处理审批单结果类型。reject(审批驳回)、resolve(审批通过)。
         :type action_id: str
         :param body: Body of the ConfirmApprovalsRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalInfoParam`
@@ -44,11 +48,14 @@ class ConfirmApprovalsRequest:
         
 
         self._workspace = None
+        self._x_project_id = None
         self._action_id = None
         self._body = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.action_id = action_id
         if body is not None:
             self.body = body
@@ -57,7 +64,7 @@ class ConfirmApprovalsRequest:
     def workspace(self):
         """Gets the workspace of this ConfirmApprovalsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ConfirmApprovalsRequest.
         :rtype: str
@@ -68,7 +75,7 @@ class ConfirmApprovalsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ConfirmApprovalsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ConfirmApprovalsRequest.
         :type workspace: str
@@ -76,10 +83,32 @@ class ConfirmApprovalsRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ConfirmApprovalsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ConfirmApprovalsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ConfirmApprovalsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ConfirmApprovalsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def action_id(self):
         """Gets the action_id of this ConfirmApprovalsRequest.
 
-        处理审批单结果类型
+        处理审批单结果类型。reject(审批驳回)、resolve(审批通过)。
 
         :return: The action_id of this ConfirmApprovalsRequest.
         :rtype: str
@@ -90,7 +119,7 @@ class ConfirmApprovalsRequest:
     def action_id(self, action_id):
         """Sets the action_id of this ConfirmApprovalsRequest.
 
-        处理审批单结果类型
+        处理审批单结果类型。reject(审批驳回)、resolve(审批通过)。
 
         :param action_id: The action_id of this ConfirmApprovalsRequest.
         :type action_id: str

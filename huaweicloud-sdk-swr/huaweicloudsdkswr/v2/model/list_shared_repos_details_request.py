@@ -77,8 +77,7 @@ class ListSharedReposDetailsRequest:
             self.namespace = namespace
         if name is not None:
             self.name = name
-        if center is not None:
-            self.center = center
+        self.center = center
         if limit is not None:
             self.limit = limit
         if offset is not None:

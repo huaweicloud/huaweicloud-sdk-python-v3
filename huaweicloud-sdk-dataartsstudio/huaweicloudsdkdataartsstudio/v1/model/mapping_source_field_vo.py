@@ -39,17 +39,17 @@ class MappingSourceFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param target_field_id: 目标字段ID,当前表的某个字段
+        :param target_field_id: 目标字段ID，当前表的某个字段。
         :type target_field_id: int
-        :param target_field_name: 目标字段编码
+        :param target_field_name: 目标字段编码。
         :type target_field_name: str
-        :param field_ids: 来源字段id,多个id以逗号分隔
+        :param field_ids: 来源字段ID，多个ID以逗号分隔。
         :type field_ids: str
-        :param transform_expression: 转换表达式
+        :param transform_expression: 转换表达式。
         :type transform_expression: str
-        :param field_names: 来源字段名称列表
+        :param field_names: 来源字段名称列表。
         :type field_names: list[str]
-        :param changed: 字段是否发生变化
+        :param changed: 字段是否发生变化。
         :type changed: bool
         """
         
@@ -79,7 +79,7 @@ class MappingSourceFieldVO:
     def target_field_id(self):
         """Gets the target_field_id of this MappingSourceFieldVO.
 
-        目标字段ID,当前表的某个字段
+        目标字段ID，当前表的某个字段。
 
         :return: The target_field_id of this MappingSourceFieldVO.
         :rtype: int
@@ -90,7 +90,7 @@ class MappingSourceFieldVO:
     def target_field_id(self, target_field_id):
         """Sets the target_field_id of this MappingSourceFieldVO.
 
-        目标字段ID,当前表的某个字段
+        目标字段ID，当前表的某个字段。
 
         :param target_field_id: The target_field_id of this MappingSourceFieldVO.
         :type target_field_id: int
@@ -101,7 +101,7 @@ class MappingSourceFieldVO:
     def target_field_name(self):
         """Gets the target_field_name of this MappingSourceFieldVO.
 
-        目标字段编码
+        目标字段编码。
 
         :return: The target_field_name of this MappingSourceFieldVO.
         :rtype: str
@@ -112,7 +112,7 @@ class MappingSourceFieldVO:
     def target_field_name(self, target_field_name):
         """Sets the target_field_name of this MappingSourceFieldVO.
 
-        目标字段编码
+        目标字段编码。
 
         :param target_field_name: The target_field_name of this MappingSourceFieldVO.
         :type target_field_name: str
@@ -123,7 +123,7 @@ class MappingSourceFieldVO:
     def field_ids(self):
         """Gets the field_ids of this MappingSourceFieldVO.
 
-        来源字段id,多个id以逗号分隔
+        来源字段ID，多个ID以逗号分隔。
 
         :return: The field_ids of this MappingSourceFieldVO.
         :rtype: str
@@ -134,7 +134,7 @@ class MappingSourceFieldVO:
     def field_ids(self, field_ids):
         """Sets the field_ids of this MappingSourceFieldVO.
 
-        来源字段id,多个id以逗号分隔
+        来源字段ID，多个ID以逗号分隔。
 
         :param field_ids: The field_ids of this MappingSourceFieldVO.
         :type field_ids: str
@@ -145,7 +145,7 @@ class MappingSourceFieldVO:
     def transform_expression(self):
         """Gets the transform_expression of this MappingSourceFieldVO.
 
-        转换表达式
+        转换表达式。
 
         :return: The transform_expression of this MappingSourceFieldVO.
         :rtype: str
@@ -156,7 +156,7 @@ class MappingSourceFieldVO:
     def transform_expression(self, transform_expression):
         """Sets the transform_expression of this MappingSourceFieldVO.
 
-        转换表达式
+        转换表达式。
 
         :param transform_expression: The transform_expression of this MappingSourceFieldVO.
         :type transform_expression: str
@@ -167,7 +167,7 @@ class MappingSourceFieldVO:
     def field_names(self):
         """Gets the field_names of this MappingSourceFieldVO.
 
-        来源字段名称列表
+        来源字段名称列表。
 
         :return: The field_names of this MappingSourceFieldVO.
         :rtype: list[str]
@@ -178,7 +178,7 @@ class MappingSourceFieldVO:
     def field_names(self, field_names):
         """Sets the field_names of this MappingSourceFieldVO.
 
-        来源字段名称列表
+        来源字段名称列表。
 
         :param field_names: The field_names of this MappingSourceFieldVO.
         :type field_names: list[str]
@@ -189,7 +189,7 @@ class MappingSourceFieldVO:
     def changed(self):
         """Gets the changed of this MappingSourceFieldVO.
 
-        字段是否发生变化
+        字段是否发生变化。
 
         :return: The changed of this MappingSourceFieldVO.
         :rtype: bool
@@ -200,7 +200,7 @@ class MappingSourceFieldVO:
     def changed(self, changed):
         """Sets the changed of this MappingSourceFieldVO.
 
-        字段是否发生变化
+        字段是否发生变化。
 
         :param changed: The changed of this MappingSourceFieldVO.
         :type changed: bool

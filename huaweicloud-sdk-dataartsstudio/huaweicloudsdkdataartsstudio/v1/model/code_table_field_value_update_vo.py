@@ -33,11 +33,11 @@ class CodeTableFieldValueUpdateVO:
 
         The model defined in huaweicloud sdk
 
-        :param to_add: 新增码表属性、属性值列表
+        :param to_add: 新增码表属性、属性值列表。
         :type to_add: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
-        :param to_modify: 编辑码表属性值列表
+        :param to_modify: 编辑码表属性值列表。
         :type to_modify: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
-        :param to_remove: 删除码表属性id列表
+        :param to_remove: 删除码表属性ID列表。
         :type to_remove: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
         """
         
@@ -59,7 +59,7 @@ class CodeTableFieldValueUpdateVO:
     def to_add(self):
         """Gets the to_add of this CodeTableFieldValueUpdateVO.
 
-        新增码表属性、属性值列表
+        新增码表属性、属性值列表。
 
         :return: The to_add of this CodeTableFieldValueUpdateVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
@@ -70,7 +70,7 @@ class CodeTableFieldValueUpdateVO:
     def to_add(self, to_add):
         """Sets the to_add of this CodeTableFieldValueUpdateVO.
 
-        新增码表属性、属性值列表
+        新增码表属性、属性值列表。
 
         :param to_add: The to_add of this CodeTableFieldValueUpdateVO.
         :type to_add: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
@@ -81,7 +81,7 @@ class CodeTableFieldValueUpdateVO:
     def to_modify(self):
         """Gets the to_modify of this CodeTableFieldValueUpdateVO.
 
-        编辑码表属性值列表
+        编辑码表属性值列表。
 
         :return: The to_modify of this CodeTableFieldValueUpdateVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
@@ -92,7 +92,7 @@ class CodeTableFieldValueUpdateVO:
     def to_modify(self, to_modify):
         """Sets the to_modify of this CodeTableFieldValueUpdateVO.
 
-        编辑码表属性值列表
+        编辑码表属性值列表。
 
         :param to_modify: The to_modify of this CodeTableFieldValueUpdateVO.
         :type to_modify: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
@@ -103,7 +103,7 @@ class CodeTableFieldValueUpdateVO:
     def to_remove(self):
         """Gets the to_remove of this CodeTableFieldValueUpdateVO.
 
-        删除码表属性id列表
+        删除码表属性ID列表。
 
         :return: The to_remove of this CodeTableFieldValueUpdateVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
@@ -114,7 +114,7 @@ class CodeTableFieldValueUpdateVO:
     def to_remove(self, to_remove):
         """Sets the to_remove of this CodeTableFieldValueUpdateVO.
 
-        删除码表属性id列表
+        删除码表属性ID列表。
 
         :param to_remove: The to_remove of this CodeTableFieldValueUpdateVO.
         :type to_remove: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]

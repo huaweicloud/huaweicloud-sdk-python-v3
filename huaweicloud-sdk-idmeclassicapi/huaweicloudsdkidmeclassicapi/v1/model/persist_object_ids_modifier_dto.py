@@ -31,7 +31,7 @@ class PersistObjectIdsModifierDTO:
 
         The model defined in huaweicloud sdk
 
-        :param ids: ID列表。
+        :param ids: 数据实例ID列表。
         :type ids: list[str]
         :param modifier: 修改人。
         :type modifier: str
@@ -51,7 +51,7 @@ class PersistObjectIdsModifierDTO:
     def ids(self):
         """Gets the ids of this PersistObjectIdsModifierDTO.
 
-        ID列表。
+        数据实例ID列表。
 
         :return: The ids of this PersistObjectIdsModifierDTO.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class PersistObjectIdsModifierDTO:
     def ids(self, ids):
         """Sets the ids of this PersistObjectIdsModifierDTO.
 
-        ID列表。
+        数据实例ID列表。
 
         :param ids: The ids of this PersistObjectIdsModifierDTO.
         :type ids: list[str]

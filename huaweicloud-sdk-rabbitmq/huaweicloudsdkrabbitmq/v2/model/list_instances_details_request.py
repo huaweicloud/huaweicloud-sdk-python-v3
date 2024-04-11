@@ -45,7 +45,7 @@ class ListInstancesDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 引擎类型：rabbitmq，参数缺失查询所有实例。
+        :param engine: 引擎类型：rabbitmq。
         :type engine: str
         :param name: 实例名称。
         :type name: str
@@ -78,8 +78,7 @@ class ListInstancesDetailsRequest:
         self._limit = None
         self.discriminator = None
 
-        if engine is not None:
-            self.engine = engine
+        self.engine = engine
         if name is not None:
             self.name = name
         if instance_id is not None:
@@ -101,7 +100,7 @@ class ListInstancesDetailsRequest:
     def engine(self):
         """Gets the engine of this ListInstancesDetailsRequest.
 
-        引擎类型：rabbitmq，参数缺失查询所有实例。
+        引擎类型：rabbitmq。
 
         :return: The engine of this ListInstancesDetailsRequest.
         :rtype: str
@@ -112,7 +111,7 @@ class ListInstancesDetailsRequest:
     def engine(self, engine):
         """Sets the engine of this ListInstancesDetailsRequest.
 
-        引擎类型：rabbitmq，参数缺失查询所有实例。
+        引擎类型：rabbitmq。
 
         :param engine: The engine of this ListInstancesDetailsRequest.
         :type engine: str

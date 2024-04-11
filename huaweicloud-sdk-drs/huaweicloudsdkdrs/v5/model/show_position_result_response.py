@@ -38,7 +38,7 @@ class ShowPositionResultResponse(SdkResponse):
         :type job_id: str
         :param position: 位点信息
         :type position: str
-        :param status: 查询状态。
+        :param status: 查询状态
         :type status: str
         """
         
@@ -104,7 +104,7 @@ class ShowPositionResultResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowPositionResultResponse.
 
-        查询状态。
+        查询状态
 
         :return: The status of this ShowPositionResultResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class ShowPositionResultResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowPositionResultResponse.
 
-        查询状态。
+        查询状态
 
         :param status: The status of this ShowPositionResultResponse.
         :type status: str

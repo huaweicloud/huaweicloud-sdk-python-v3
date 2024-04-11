@@ -78,8 +78,7 @@ class ListInstancesRequest:
         self._limit = None
         self.discriminator = None
 
-        if engine is not None:
-            self.engine = engine
+        self.engine = engine
         if name is not None:
             self.name = name
         if instance_id is not None:

@@ -18,39 +18,46 @@ class ImportResultRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'uuid': 'str'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'uuid': 'uuid'
     }
 
-    def __init__(self, workspace=None, uuid=None):
+    def __init__(self, workspace=None, x_project_id=None, uuid=None):
         """ImportResultRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param uuid: 需要查询的某次导入的处理结果
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param uuid: 需要查询的某次导入的处理结果。
         :type uuid: str
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._uuid = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.uuid = uuid
 
     @property
     def workspace(self):
         """Gets the workspace of this ImportResultRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ImportResultRequest.
         :rtype: str
@@ -61,7 +68,7 @@ class ImportResultRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ImportResultRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ImportResultRequest.
         :type workspace: str
@@ -69,10 +76,32 @@ class ImportResultRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ImportResultRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ImportResultRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ImportResultRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ImportResultRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def uuid(self):
         """Gets the uuid of this ImportResultRequest.
 
-        需要查询的某次导入的处理结果
+        需要查询的某次导入的处理结果。
 
         :return: The uuid of this ImportResultRequest.
         :rtype: str
@@ -83,7 +112,7 @@ class ImportResultRequest:
     def uuid(self, uuid):
         """Sets the uuid of this ImportResultRequest.
 
-        需要查询的某次导入的处理结果
+        需要查询的某次导入的处理结果。
 
         :param uuid: The uuid of this ImportResultRequest.
         :type uuid: str

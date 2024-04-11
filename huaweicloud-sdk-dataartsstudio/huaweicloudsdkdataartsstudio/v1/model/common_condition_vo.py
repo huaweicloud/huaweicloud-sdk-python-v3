@@ -41,17 +41,17 @@ class CommonConditionVO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param field_ids: 字段id信息， 格式：table_id.field_id
+        :param field_ids: 字段id信息，格式：table_id.field_id。
         :type field_ids: list[str]
-        :param field_names: 字段名称信息， 格式：表名称.字段名称
+        :param field_names: 字段名称信息，格式：表名称.字段名称。
         :type field_names: list[str]
-        :param cal_exp: 计算表达式
+        :param cal_exp: 计算表达式，形如&#39;${table_id.column_id} &gt; 1&#39;，其中table_id表示引用字段所属表ID，column_id表示引用字段ID。
         :type cal_exp: str
-        :param cal_fn_ids: 计算表达式id
+        :param cal_fn_ids: 引用函数ID。
         :type cal_fn_ids: list[int]
-        :param front_configs: 前端表达式配置，用于前端数据恢复
+        :param front_configs: 前端表达式配置，用于前端数据恢复。
         :type front_configs: str
         :param id: id
         :type id: int
@@ -83,7 +83,7 @@ class CommonConditionVO:
     def name(self):
         """Gets the name of this CommonConditionVO.
 
-        名称
+        名称。
 
         :return: The name of this CommonConditionVO.
         :rtype: str
@@ -94,7 +94,7 @@ class CommonConditionVO:
     def name(self, name):
         """Sets the name of this CommonConditionVO.
 
-        名称
+        名称。
 
         :param name: The name of this CommonConditionVO.
         :type name: str
@@ -105,7 +105,7 @@ class CommonConditionVO:
     def field_ids(self):
         """Gets the field_ids of this CommonConditionVO.
 
-        字段id信息， 格式：table_id.field_id
+        字段id信息，格式：table_id.field_id。
 
         :return: The field_ids of this CommonConditionVO.
         :rtype: list[str]
@@ -116,7 +116,7 @@ class CommonConditionVO:
     def field_ids(self, field_ids):
         """Sets the field_ids of this CommonConditionVO.
 
-        字段id信息， 格式：table_id.field_id
+        字段id信息，格式：table_id.field_id。
 
         :param field_ids: The field_ids of this CommonConditionVO.
         :type field_ids: list[str]
@@ -127,7 +127,7 @@ class CommonConditionVO:
     def field_names(self):
         """Gets the field_names of this CommonConditionVO.
 
-        字段名称信息， 格式：表名称.字段名称
+        字段名称信息，格式：表名称.字段名称。
 
         :return: The field_names of this CommonConditionVO.
         :rtype: list[str]
@@ -138,7 +138,7 @@ class CommonConditionVO:
     def field_names(self, field_names):
         """Sets the field_names of this CommonConditionVO.
 
-        字段名称信息， 格式：表名称.字段名称
+        字段名称信息，格式：表名称.字段名称。
 
         :param field_names: The field_names of this CommonConditionVO.
         :type field_names: list[str]
@@ -149,7 +149,7 @@ class CommonConditionVO:
     def cal_exp(self):
         """Gets the cal_exp of this CommonConditionVO.
 
-        计算表达式
+        计算表达式，形如'${table_id.column_id} > 1'，其中table_id表示引用字段所属表ID，column_id表示引用字段ID。
 
         :return: The cal_exp of this CommonConditionVO.
         :rtype: str
@@ -160,7 +160,7 @@ class CommonConditionVO:
     def cal_exp(self, cal_exp):
         """Sets the cal_exp of this CommonConditionVO.
 
-        计算表达式
+        计算表达式，形如'${table_id.column_id} > 1'，其中table_id表示引用字段所属表ID，column_id表示引用字段ID。
 
         :param cal_exp: The cal_exp of this CommonConditionVO.
         :type cal_exp: str
@@ -171,7 +171,7 @@ class CommonConditionVO:
     def cal_fn_ids(self):
         """Gets the cal_fn_ids of this CommonConditionVO.
 
-        计算表达式id
+        引用函数ID。
 
         :return: The cal_fn_ids of this CommonConditionVO.
         :rtype: list[int]
@@ -182,7 +182,7 @@ class CommonConditionVO:
     def cal_fn_ids(self, cal_fn_ids):
         """Sets the cal_fn_ids of this CommonConditionVO.
 
-        计算表达式id
+        引用函数ID。
 
         :param cal_fn_ids: The cal_fn_ids of this CommonConditionVO.
         :type cal_fn_ids: list[int]
@@ -193,7 +193,7 @@ class CommonConditionVO:
     def front_configs(self):
         """Gets the front_configs of this CommonConditionVO.
 
-        前端表达式配置，用于前端数据恢复
+        前端表达式配置，用于前端数据恢复。
 
         :return: The front_configs of this CommonConditionVO.
         :rtype: str
@@ -204,7 +204,7 @@ class CommonConditionVO:
     def front_configs(self, front_configs):
         """Sets the front_configs of this CommonConditionVO.
 
-        前端表达式配置，用于前端数据恢复
+        前端表达式配置，用于前端数据恢复。
 
         :param front_configs: The front_configs of this CommonConditionVO.
         :type front_configs: str

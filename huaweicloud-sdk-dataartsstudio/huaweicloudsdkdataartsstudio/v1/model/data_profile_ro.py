@@ -31,7 +31,7 @@ class DataProfileRO:
         'job_id': 'str',
         'cancel': 'bool',
         'auto_stop': 'bool',
-        'obsconfig': 'object'
+        'obsconfig': 'OBSCommonConfig'
     }
 
     attribute_map = {
@@ -85,8 +85,8 @@ class DataProfileRO:
         :type cancel: bool
         :param auto_stop: 是否自动停止
         :type auto_stop: bool
-        :param obsconfig: obs配置，概要采集不涉及
-        :type obsconfig: object
+        :param obsconfig: 
+        :type obsconfig: :class:`huaweicloudsdkdataartsstudio.v1.OBSCommonConfig`
         """
         
         
@@ -451,10 +451,8 @@ class DataProfileRO:
     def obsconfig(self):
         """Gets the obsconfig of this DataProfileRO.
 
-        obs配置，概要采集不涉及
-
         :return: The obsconfig of this DataProfileRO.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OBSCommonConfig`
         """
         return self._obsconfig
 
@@ -462,10 +460,8 @@ class DataProfileRO:
     def obsconfig(self, obsconfig):
         """Sets the obsconfig of this DataProfileRO.
 
-        obs配置，概要采集不涉及
-
         :param obsconfig: The obsconfig of this DataProfileRO.
-        :type obsconfig: object
+        :type obsconfig: :class:`huaweicloudsdkdataartsstudio.v1.OBSCommonConfig`
         """
         self._obsconfig = obsconfig
 

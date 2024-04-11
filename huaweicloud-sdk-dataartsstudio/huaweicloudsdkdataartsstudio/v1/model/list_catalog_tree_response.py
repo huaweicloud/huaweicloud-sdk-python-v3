@@ -60,37 +60,37 @@ class ListCatalogTreeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param name: 流程名称
+        :param name: 流程名称。
         :type name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
-        :param guid: 对应资产中id
+        :param guid: 对应资产中ID。
         :type guid: str
-        :param owner: 责任人
+        :param owner: 责任人。
         :type owner: str
-        :param parent_id: 父目录id，没有则为根目录
+        :param parent_id: 父目录ID，没有则为根目录。
         :type parent_id: int
-        :param prev_id: 上个节点ID,没有则为首节点
+        :param prev_id: 上个节点ID，没有则为首节点。
         :type prev_id: int
-        :param next_id: 下个节点ID,没有则为尾节点
+        :param next_id: 下个节点ID，没有则为尾节点。
         :type next_id: int
-        :param id: 创建时传空，更新时必填
+        :param id: 创建时传空，更新时必填。
         :type id: int
-        :param qualified_id: 认证ID，自动生成
+        :param qualified_id: 认证ID，自动生成。
         :type qualified_id: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param bizmetric_num: 拥有业务指标数量，前端不传
+        :param bizmetric_num: 拥有业务指标数量，前端不传。
         :type bizmetric_num: int
-        :param children_num: 拥有子流程的数量，不包括子流程的子流程
+        :param children_num: 拥有子流程的数量，不包括子流程的子流程。
         :type children_num: int
-        :param children: 下层子目录
+        :param children: 下层子目录。
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.BizCatalogVO`]
         """
         
@@ -151,7 +151,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def name(self):
         """Gets the name of this ListCatalogTreeResponse.
 
-        流程名称
+        流程名称。
 
         :return: The name of this ListCatalogTreeResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ListCatalogTreeResponse.
 
-        流程名称
+        流程名称。
 
         :param name: The name of this ListCatalogTreeResponse.
         :type name: str
@@ -173,7 +173,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def description(self):
         """Gets the description of this ListCatalogTreeResponse.
 
-        描述
+        描述。
 
         :return: The description of this ListCatalogTreeResponse.
         :rtype: str
@@ -184,7 +184,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this ListCatalogTreeResponse.
 
-        描述
+        描述。
 
         :param description: The description of this ListCatalogTreeResponse.
         :type description: str
@@ -195,7 +195,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def guid(self):
         """Gets the guid of this ListCatalogTreeResponse.
 
-        对应资产中id
+        对应资产中ID。
 
         :return: The guid of this ListCatalogTreeResponse.
         :rtype: str
@@ -206,7 +206,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def guid(self, guid):
         """Sets the guid of this ListCatalogTreeResponse.
 
-        对应资产中id
+        对应资产中ID。
 
         :param guid: The guid of this ListCatalogTreeResponse.
         :type guid: str
@@ -217,7 +217,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def owner(self):
         """Gets the owner of this ListCatalogTreeResponse.
 
-        责任人
+        责任人。
 
         :return: The owner of this ListCatalogTreeResponse.
         :rtype: str
@@ -228,7 +228,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def owner(self, owner):
         """Sets the owner of this ListCatalogTreeResponse.
 
-        责任人
+        责任人。
 
         :param owner: The owner of this ListCatalogTreeResponse.
         :type owner: str
@@ -239,7 +239,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def parent_id(self):
         """Gets the parent_id of this ListCatalogTreeResponse.
 
-        父目录id，没有则为根目录
+        父目录ID，没有则为根目录。
 
         :return: The parent_id of this ListCatalogTreeResponse.
         :rtype: int
@@ -250,7 +250,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def parent_id(self, parent_id):
         """Sets the parent_id of this ListCatalogTreeResponse.
 
-        父目录id，没有则为根目录
+        父目录ID，没有则为根目录。
 
         :param parent_id: The parent_id of this ListCatalogTreeResponse.
         :type parent_id: int
@@ -261,7 +261,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def prev_id(self):
         """Gets the prev_id of this ListCatalogTreeResponse.
 
-        上个节点ID,没有则为首节点
+        上个节点ID，没有则为首节点。
 
         :return: The prev_id of this ListCatalogTreeResponse.
         :rtype: int
@@ -272,7 +272,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def prev_id(self, prev_id):
         """Sets the prev_id of this ListCatalogTreeResponse.
 
-        上个节点ID,没有则为首节点
+        上个节点ID，没有则为首节点。
 
         :param prev_id: The prev_id of this ListCatalogTreeResponse.
         :type prev_id: int
@@ -283,7 +283,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def next_id(self):
         """Gets the next_id of this ListCatalogTreeResponse.
 
-        下个节点ID,没有则为尾节点
+        下个节点ID，没有则为尾节点。
 
         :return: The next_id of this ListCatalogTreeResponse.
         :rtype: int
@@ -294,7 +294,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def next_id(self, next_id):
         """Sets the next_id of this ListCatalogTreeResponse.
 
-        下个节点ID,没有则为尾节点
+        下个节点ID，没有则为尾节点。
 
         :param next_id: The next_id of this ListCatalogTreeResponse.
         :type next_id: int
@@ -305,7 +305,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def id(self):
         """Gets the id of this ListCatalogTreeResponse.
 
-        创建时传空，更新时必填
+        创建时传空，更新时必填。
 
         :return: The id of this ListCatalogTreeResponse.
         :rtype: int
@@ -316,7 +316,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ListCatalogTreeResponse.
 
-        创建时传空，更新时必填
+        创建时传空，更新时必填。
 
         :param id: The id of this ListCatalogTreeResponse.
         :type id: int
@@ -327,7 +327,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def qualified_id(self):
         """Gets the qualified_id of this ListCatalogTreeResponse.
 
-        认证ID，自动生成
+        认证ID，自动生成。
 
         :return: The qualified_id of this ListCatalogTreeResponse.
         :rtype: str
@@ -338,7 +338,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def qualified_id(self, qualified_id):
         """Sets the qualified_id of this ListCatalogTreeResponse.
 
-        认证ID，自动生成
+        认证ID，自动生成。
 
         :param qualified_id: The qualified_id of this ListCatalogTreeResponse.
         :type qualified_id: str
@@ -349,7 +349,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def create_by(self):
         """Gets the create_by of this ListCatalogTreeResponse.
 
-        创建人
+        创建人。
 
         :return: The create_by of this ListCatalogTreeResponse.
         :rtype: str
@@ -360,7 +360,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def create_by(self, create_by):
         """Sets the create_by of this ListCatalogTreeResponse.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this ListCatalogTreeResponse.
         :type create_by: str
@@ -371,7 +371,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def update_by(self):
         """Gets the update_by of this ListCatalogTreeResponse.
 
-        更新人
+        更新人。
 
         :return: The update_by of this ListCatalogTreeResponse.
         :rtype: str
@@ -382,7 +382,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def update_by(self, update_by):
         """Sets the update_by of this ListCatalogTreeResponse.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this ListCatalogTreeResponse.
         :type update_by: str
@@ -393,7 +393,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this ListCatalogTreeResponse.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this ListCatalogTreeResponse.
         :rtype: datetime
@@ -404,7 +404,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this ListCatalogTreeResponse.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this ListCatalogTreeResponse.
         :type create_time: datetime
@@ -415,7 +415,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this ListCatalogTreeResponse.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this ListCatalogTreeResponse.
         :rtype: datetime
@@ -426,7 +426,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this ListCatalogTreeResponse.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this ListCatalogTreeResponse.
         :type update_time: datetime
@@ -437,7 +437,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def bizmetric_num(self):
         """Gets the bizmetric_num of this ListCatalogTreeResponse.
 
-        拥有业务指标数量，前端不传
+        拥有业务指标数量，前端不传。
 
         :return: The bizmetric_num of this ListCatalogTreeResponse.
         :rtype: int
@@ -448,7 +448,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def bizmetric_num(self, bizmetric_num):
         """Sets the bizmetric_num of this ListCatalogTreeResponse.
 
-        拥有业务指标数量，前端不传
+        拥有业务指标数量，前端不传。
 
         :param bizmetric_num: The bizmetric_num of this ListCatalogTreeResponse.
         :type bizmetric_num: int
@@ -459,7 +459,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def children_num(self):
         """Gets the children_num of this ListCatalogTreeResponse.
 
-        拥有子流程的数量，不包括子流程的子流程
+        拥有子流程的数量，不包括子流程的子流程。
 
         :return: The children_num of this ListCatalogTreeResponse.
         :rtype: int
@@ -470,7 +470,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def children_num(self, children_num):
         """Sets the children_num of this ListCatalogTreeResponse.
 
-        拥有子流程的数量，不包括子流程的子流程
+        拥有子流程的数量，不包括子流程的子流程。
 
         :param children_num: The children_num of this ListCatalogTreeResponse.
         :type children_num: int
@@ -481,7 +481,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def children(self):
         """Gets the children of this ListCatalogTreeResponse.
 
-        下层子目录
+        下层子目录。
 
         :return: The children of this ListCatalogTreeResponse.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.BizCatalogVO`]
@@ -492,7 +492,7 @@ class ListCatalogTreeResponse(SdkResponse):
     def children(self, children):
         """Sets the children of this ListCatalogTreeResponse.
 
-        下层子目录
+        下层子目录。
 
         :param children: The children of this ListCatalogTreeResponse.
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.BizCatalogVO`]

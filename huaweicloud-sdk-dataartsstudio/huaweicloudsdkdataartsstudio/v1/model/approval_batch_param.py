@@ -39,17 +39,17 @@ class ApprovalBatchParam:
 
         The model defined in huaweicloud sdk
 
-        :param biz_infos: 业务信息列表.
+        :param biz_infos: 业务信息列表。
         :type biz_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.BizInfoVO`]
-        :param approver_user_id: 审批人user id
+        :param approver_user_id: 审批人ID。
         :type approver_user_id: str
-        :param approver_user_name: 审批人user name
+        :param approver_user_name: 审批人姓名。
         :type approver_user_name: str
-        :param email: 审批人邮箱
+        :param email: 审批人邮箱。
         :type email: str
-        :param fast_approval: 快速审批, 非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供
+        :param fast_approval: 快速审批，非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供。
         :type fast_approval: bool
-        :param schedule_time: 作业调度时间
+        :param schedule_time: 作业调度时间。
         :type schedule_time: str
         """
         
@@ -77,7 +77,7 @@ class ApprovalBatchParam:
     def biz_infos(self):
         """Gets the biz_infos of this ApprovalBatchParam.
 
-        业务信息列表.
+        业务信息列表。
 
         :return: The biz_infos of this ApprovalBatchParam.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.BizInfoVO`]
@@ -88,7 +88,7 @@ class ApprovalBatchParam:
     def biz_infos(self, biz_infos):
         """Sets the biz_infos of this ApprovalBatchParam.
 
-        业务信息列表.
+        业务信息列表。
 
         :param biz_infos: The biz_infos of this ApprovalBatchParam.
         :type biz_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.BizInfoVO`]
@@ -99,7 +99,7 @@ class ApprovalBatchParam:
     def approver_user_id(self):
         """Gets the approver_user_id of this ApprovalBatchParam.
 
-        审批人user id
+        审批人ID。
 
         :return: The approver_user_id of this ApprovalBatchParam.
         :rtype: str
@@ -110,7 +110,7 @@ class ApprovalBatchParam:
     def approver_user_id(self, approver_user_id):
         """Sets the approver_user_id of this ApprovalBatchParam.
 
-        审批人user id
+        审批人ID。
 
         :param approver_user_id: The approver_user_id of this ApprovalBatchParam.
         :type approver_user_id: str
@@ -121,7 +121,7 @@ class ApprovalBatchParam:
     def approver_user_name(self):
         """Gets the approver_user_name of this ApprovalBatchParam.
 
-        审批人user name
+        审批人姓名。
 
         :return: The approver_user_name of this ApprovalBatchParam.
         :rtype: str
@@ -132,7 +132,7 @@ class ApprovalBatchParam:
     def approver_user_name(self, approver_user_name):
         """Sets the approver_user_name of this ApprovalBatchParam.
 
-        审批人user name
+        审批人姓名。
 
         :param approver_user_name: The approver_user_name of this ApprovalBatchParam.
         :type approver_user_name: str
@@ -143,7 +143,7 @@ class ApprovalBatchParam:
     def email(self):
         """Gets the email of this ApprovalBatchParam.
 
-        审批人邮箱
+        审批人邮箱。
 
         :return: The email of this ApprovalBatchParam.
         :rtype: str
@@ -154,7 +154,7 @@ class ApprovalBatchParam:
     def email(self, email):
         """Sets the email of this ApprovalBatchParam.
 
-        审批人邮箱
+        审批人邮箱。
 
         :param email: The email of this ApprovalBatchParam.
         :type email: str
@@ -165,7 +165,7 @@ class ApprovalBatchParam:
     def fast_approval(self):
         """Gets the fast_approval of this ApprovalBatchParam.
 
-        快速审批, 非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供
+        快速审批，非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供。
 
         :return: The fast_approval of this ApprovalBatchParam.
         :rtype: bool
@@ -176,7 +176,7 @@ class ApprovalBatchParam:
     def fast_approval(self, fast_approval):
         """Sets the fast_approval of this ApprovalBatchParam.
 
-        快速审批, 非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供
+        快速审批，非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供。
 
         :param fast_approval: The fast_approval of this ApprovalBatchParam.
         :type fast_approval: bool
@@ -187,7 +187,7 @@ class ApprovalBatchParam:
     def schedule_time(self):
         """Gets the schedule_time of this ApprovalBatchParam.
 
-        作业调度时间
+        作业调度时间。
 
         :return: The schedule_time of this ApprovalBatchParam.
         :rtype: str
@@ -198,7 +198,7 @@ class ApprovalBatchParam:
     def schedule_time(self, schedule_time):
         """Sets the schedule_time of this ApprovalBatchParam.
 
-        作业调度时间
+        作业调度时间。
 
         :param schedule_time: The schedule_time of this ApprovalBatchParam.
         :type schedule_time: str

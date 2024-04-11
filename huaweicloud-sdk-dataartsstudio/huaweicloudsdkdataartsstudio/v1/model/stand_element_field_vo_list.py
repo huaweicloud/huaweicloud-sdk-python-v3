@@ -29,7 +29,7 @@ class StandElementFieldVOList:
 
         The model defined in huaweicloud sdk
 
-        :param fields: 属性信息
+        :param fields: 属性信息。
         :type fields: list[:class:`huaweicloudsdkdataartsstudio.v1.StandElementFieldVO`]
         """
         
@@ -45,7 +45,7 @@ class StandElementFieldVOList:
     def fields(self):
         """Gets the fields of this StandElementFieldVOList.
 
-        属性信息
+        属性信息。
 
         :return: The fields of this StandElementFieldVOList.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.StandElementFieldVO`]
@@ -56,7 +56,7 @@ class StandElementFieldVOList:
     def fields(self, fields):
         """Sets the fields of this StandElementFieldVOList.
 
-        属性信息
+        属性信息。
 
         :param fields: The fields of this StandElementFieldVOList.
         :type fields: list[:class:`huaweicloudsdkdataartsstudio.v1.StandElementFieldVO`]

@@ -63,41 +63,41 @@ class TableMappingDetailVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码。
         :type id: int
-        :param mapping_id: 名称
+        :param mapping_id: 名称。
         :type mapping_id: str
-        :param target_attr_id: 目的字段id
+        :param target_attr_id: 目的字段ID。
         :type target_attr_id: int
-        :param target_attr_name: 目的字段排序
+        :param target_attr_name: 目的字段排序。
         :type target_attr_name: str
-        :param src_table_ids: 源表id, 通过,join
+        :param src_table_ids: 源表ID。
         :type src_table_ids: str
-        :param src_table_names: 源表名称数组
+        :param src_table_names: 源表名称数组。
         :type src_table_names: list[str]
-        :param src_table_db_names: 源表db名称数组
+        :param src_table_db_names: 源表db名称数组。
         :type src_table_db_names: list[str]
-        :param src_table_model_ids: 源表模型id数组
+        :param src_table_model_ids: 源表在关系建模中的模型ID数组。
         :type src_table_model_ids: list[int]
-        :param src_table_id_list: 源表id数组
+        :param src_table_id_list: 源表ID数组。
         :type src_table_id_list: list[int]
-        :param src_attr_ids: 源表字段id, 通过,join
+        :param src_attr_ids: 源表字段ID。
         :type src_attr_ids: str
-        :param src_attr_names: 源表字段名称数组
+        :param src_attr_names: 源表字段名称数组。
         :type src_attr_names: list[str]
-        :param src_attr_id_list: 源表字段id数组
+        :param src_attr_id_list: 源表字段ID数组。
         :type src_attr_id_list: list[int]
-        :param remark: 备注
+        :param remark: 备注。
         :type remark: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param target_attr: 目标属性
+        :param target_attr: 目标属性。
         :type target_attr: object
         """
         
@@ -163,7 +163,7 @@ class TableMappingDetailVO:
     def id(self):
         """Gets the id of this TableMappingDetailVO.
 
-        编码
+        编码。
 
         :return: The id of this TableMappingDetailVO.
         :rtype: int
@@ -174,7 +174,7 @@ class TableMappingDetailVO:
     def id(self, id):
         """Sets the id of this TableMappingDetailVO.
 
-        编码
+        编码。
 
         :param id: The id of this TableMappingDetailVO.
         :type id: int
@@ -185,7 +185,7 @@ class TableMappingDetailVO:
     def mapping_id(self):
         """Gets the mapping_id of this TableMappingDetailVO.
 
-        名称
+        名称。
 
         :return: The mapping_id of this TableMappingDetailVO.
         :rtype: str
@@ -196,7 +196,7 @@ class TableMappingDetailVO:
     def mapping_id(self, mapping_id):
         """Sets the mapping_id of this TableMappingDetailVO.
 
-        名称
+        名称。
 
         :param mapping_id: The mapping_id of this TableMappingDetailVO.
         :type mapping_id: str
@@ -207,7 +207,7 @@ class TableMappingDetailVO:
     def target_attr_id(self):
         """Gets the target_attr_id of this TableMappingDetailVO.
 
-        目的字段id
+        目的字段ID。
 
         :return: The target_attr_id of this TableMappingDetailVO.
         :rtype: int
@@ -218,7 +218,7 @@ class TableMappingDetailVO:
     def target_attr_id(self, target_attr_id):
         """Sets the target_attr_id of this TableMappingDetailVO.
 
-        目的字段id
+        目的字段ID。
 
         :param target_attr_id: The target_attr_id of this TableMappingDetailVO.
         :type target_attr_id: int
@@ -229,7 +229,7 @@ class TableMappingDetailVO:
     def target_attr_name(self):
         """Gets the target_attr_name of this TableMappingDetailVO.
 
-        目的字段排序
+        目的字段排序。
 
         :return: The target_attr_name of this TableMappingDetailVO.
         :rtype: str
@@ -240,7 +240,7 @@ class TableMappingDetailVO:
     def target_attr_name(self, target_attr_name):
         """Sets the target_attr_name of this TableMappingDetailVO.
 
-        目的字段排序
+        目的字段排序。
 
         :param target_attr_name: The target_attr_name of this TableMappingDetailVO.
         :type target_attr_name: str
@@ -251,7 +251,7 @@ class TableMappingDetailVO:
     def src_table_ids(self):
         """Gets the src_table_ids of this TableMappingDetailVO.
 
-        源表id, 通过,join
+        源表ID。
 
         :return: The src_table_ids of this TableMappingDetailVO.
         :rtype: str
@@ -262,7 +262,7 @@ class TableMappingDetailVO:
     def src_table_ids(self, src_table_ids):
         """Sets the src_table_ids of this TableMappingDetailVO.
 
-        源表id, 通过,join
+        源表ID。
 
         :param src_table_ids: The src_table_ids of this TableMappingDetailVO.
         :type src_table_ids: str
@@ -273,7 +273,7 @@ class TableMappingDetailVO:
     def src_table_names(self):
         """Gets the src_table_names of this TableMappingDetailVO.
 
-        源表名称数组
+        源表名称数组。
 
         :return: The src_table_names of this TableMappingDetailVO.
         :rtype: list[str]
@@ -284,7 +284,7 @@ class TableMappingDetailVO:
     def src_table_names(self, src_table_names):
         """Sets the src_table_names of this TableMappingDetailVO.
 
-        源表名称数组
+        源表名称数组。
 
         :param src_table_names: The src_table_names of this TableMappingDetailVO.
         :type src_table_names: list[str]
@@ -295,7 +295,7 @@ class TableMappingDetailVO:
     def src_table_db_names(self):
         """Gets the src_table_db_names of this TableMappingDetailVO.
 
-        源表db名称数组
+        源表db名称数组。
 
         :return: The src_table_db_names of this TableMappingDetailVO.
         :rtype: list[str]
@@ -306,7 +306,7 @@ class TableMappingDetailVO:
     def src_table_db_names(self, src_table_db_names):
         """Sets the src_table_db_names of this TableMappingDetailVO.
 
-        源表db名称数组
+        源表db名称数组。
 
         :param src_table_db_names: The src_table_db_names of this TableMappingDetailVO.
         :type src_table_db_names: list[str]
@@ -317,7 +317,7 @@ class TableMappingDetailVO:
     def src_table_model_ids(self):
         """Gets the src_table_model_ids of this TableMappingDetailVO.
 
-        源表模型id数组
+        源表在关系建模中的模型ID数组。
 
         :return: The src_table_model_ids of this TableMappingDetailVO.
         :rtype: list[int]
@@ -328,7 +328,7 @@ class TableMappingDetailVO:
     def src_table_model_ids(self, src_table_model_ids):
         """Sets the src_table_model_ids of this TableMappingDetailVO.
 
-        源表模型id数组
+        源表在关系建模中的模型ID数组。
 
         :param src_table_model_ids: The src_table_model_ids of this TableMappingDetailVO.
         :type src_table_model_ids: list[int]
@@ -339,7 +339,7 @@ class TableMappingDetailVO:
     def src_table_id_list(self):
         """Gets the src_table_id_list of this TableMappingDetailVO.
 
-        源表id数组
+        源表ID数组。
 
         :return: The src_table_id_list of this TableMappingDetailVO.
         :rtype: list[int]
@@ -350,7 +350,7 @@ class TableMappingDetailVO:
     def src_table_id_list(self, src_table_id_list):
         """Sets the src_table_id_list of this TableMappingDetailVO.
 
-        源表id数组
+        源表ID数组。
 
         :param src_table_id_list: The src_table_id_list of this TableMappingDetailVO.
         :type src_table_id_list: list[int]
@@ -361,7 +361,7 @@ class TableMappingDetailVO:
     def src_attr_ids(self):
         """Gets the src_attr_ids of this TableMappingDetailVO.
 
-        源表字段id, 通过,join
+        源表字段ID。
 
         :return: The src_attr_ids of this TableMappingDetailVO.
         :rtype: str
@@ -372,7 +372,7 @@ class TableMappingDetailVO:
     def src_attr_ids(self, src_attr_ids):
         """Sets the src_attr_ids of this TableMappingDetailVO.
 
-        源表字段id, 通过,join
+        源表字段ID。
 
         :param src_attr_ids: The src_attr_ids of this TableMappingDetailVO.
         :type src_attr_ids: str
@@ -383,7 +383,7 @@ class TableMappingDetailVO:
     def src_attr_names(self):
         """Gets the src_attr_names of this TableMappingDetailVO.
 
-        源表字段名称数组
+        源表字段名称数组。
 
         :return: The src_attr_names of this TableMappingDetailVO.
         :rtype: list[str]
@@ -394,7 +394,7 @@ class TableMappingDetailVO:
     def src_attr_names(self, src_attr_names):
         """Sets the src_attr_names of this TableMappingDetailVO.
 
-        源表字段名称数组
+        源表字段名称数组。
 
         :param src_attr_names: The src_attr_names of this TableMappingDetailVO.
         :type src_attr_names: list[str]
@@ -405,7 +405,7 @@ class TableMappingDetailVO:
     def src_attr_id_list(self):
         """Gets the src_attr_id_list of this TableMappingDetailVO.
 
-        源表字段id数组
+        源表字段ID数组。
 
         :return: The src_attr_id_list of this TableMappingDetailVO.
         :rtype: list[int]
@@ -416,7 +416,7 @@ class TableMappingDetailVO:
     def src_attr_id_list(self, src_attr_id_list):
         """Sets the src_attr_id_list of this TableMappingDetailVO.
 
-        源表字段id数组
+        源表字段ID数组。
 
         :param src_attr_id_list: The src_attr_id_list of this TableMappingDetailVO.
         :type src_attr_id_list: list[int]
@@ -427,7 +427,7 @@ class TableMappingDetailVO:
     def remark(self):
         """Gets the remark of this TableMappingDetailVO.
 
-        备注
+        备注。
 
         :return: The remark of this TableMappingDetailVO.
         :rtype: str
@@ -438,7 +438,7 @@ class TableMappingDetailVO:
     def remark(self, remark):
         """Sets the remark of this TableMappingDetailVO.
 
-        备注
+        备注。
 
         :param remark: The remark of this TableMappingDetailVO.
         :type remark: str
@@ -449,7 +449,7 @@ class TableMappingDetailVO:
     def create_time(self):
         """Gets the create_time of this TableMappingDetailVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this TableMappingDetailVO.
         :rtype: datetime
@@ -460,7 +460,7 @@ class TableMappingDetailVO:
     def create_time(self, create_time):
         """Sets the create_time of this TableMappingDetailVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this TableMappingDetailVO.
         :type create_time: datetime
@@ -471,7 +471,7 @@ class TableMappingDetailVO:
     def update_time(self):
         """Gets the update_time of this TableMappingDetailVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this TableMappingDetailVO.
         :rtype: datetime
@@ -482,7 +482,7 @@ class TableMappingDetailVO:
     def update_time(self, update_time):
         """Sets the update_time of this TableMappingDetailVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this TableMappingDetailVO.
         :type update_time: datetime
@@ -493,7 +493,7 @@ class TableMappingDetailVO:
     def create_by(self):
         """Gets the create_by of this TableMappingDetailVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this TableMappingDetailVO.
         :rtype: str
@@ -504,7 +504,7 @@ class TableMappingDetailVO:
     def create_by(self, create_by):
         """Sets the create_by of this TableMappingDetailVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this TableMappingDetailVO.
         :type create_by: str
@@ -515,7 +515,7 @@ class TableMappingDetailVO:
     def update_by(self):
         """Gets the update_by of this TableMappingDetailVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this TableMappingDetailVO.
         :rtype: str
@@ -526,7 +526,7 @@ class TableMappingDetailVO:
     def update_by(self, update_by):
         """Sets the update_by of this TableMappingDetailVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this TableMappingDetailVO.
         :type update_by: str
@@ -537,7 +537,7 @@ class TableMappingDetailVO:
     def target_attr(self):
         """Gets the target_attr of this TableMappingDetailVO.
 
-        目标属性
+        目标属性。
 
         :return: The target_attr of this TableMappingDetailVO.
         :rtype: object
@@ -548,7 +548,7 @@ class TableMappingDetailVO:
     def target_attr(self, target_attr):
         """Sets the target_attr of this TableMappingDetailVO.
 
-        目标属性
+        目标属性。
 
         :param target_attr: The target_attr of this TableMappingDetailVO.
         :type target_attr: object

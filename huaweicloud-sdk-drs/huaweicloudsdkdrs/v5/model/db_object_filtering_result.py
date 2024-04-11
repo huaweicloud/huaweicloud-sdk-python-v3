@@ -21,7 +21,12 @@ class DbObjectFilteringResult:
         'schema_name': 'str',
         'table_name': 'str',
         'is_success': 'bool',
-        'message': 'str'
+        'message': 'str',
+        'source': 'str',
+        'target_result': 'str',
+        'source_result': 'str',
+        'target_message': 'str',
+        'source_message': 'str'
     }
 
     attribute_map = {
@@ -29,10 +34,15 @@ class DbObjectFilteringResult:
         'schema_name': 'schema_name',
         'table_name': 'table_name',
         'is_success': 'is_success',
-        'message': 'message'
+        'message': 'message',
+        'source': 'source',
+        'target_result': 'target_result',
+        'source_result': 'source_result',
+        'target_message': 'target_message',
+        'source_message': 'source_message'
     }
 
-    def __init__(self, db_name=None, schema_name=None, table_name=None, is_success=None, message=None):
+    def __init__(self, db_name=None, schema_name=None, table_name=None, is_success=None, message=None, source=None, target_result=None, source_result=None, target_message=None, source_message=None):
         """DbObjectFilteringResult
 
         The model defined in huaweicloud sdk
@@ -47,6 +57,16 @@ class DbObjectFilteringResult:
         :type is_success: bool
         :param message: 当数据过滤校验结果是false，返回校验失败的原因。
         :type message: str
+        :param source: 对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
+        :type source: str
+        :param target_result: 校验目标库比对条件过滤的结果
+        :type target_result: str
+        :param source_result: 校验源库比对条件过滤的结果
+        :type source_result: str
+        :param target_message: 校验目标库比对条件过滤的失败原因
+        :type target_message: str
+        :param source_message: 校验源库比对条件过滤的失败原因
+        :type source_message: str
         """
         
         
@@ -56,6 +76,11 @@ class DbObjectFilteringResult:
         self._table_name = None
         self._is_success = None
         self._message = None
+        self._source = None
+        self._target_result = None
+        self._source_result = None
+        self._target_message = None
+        self._source_message = None
         self.discriminator = None
 
         if db_name is not None:
@@ -68,6 +93,16 @@ class DbObjectFilteringResult:
             self.is_success = is_success
         if message is not None:
             self.message = message
+        if source is not None:
+            self.source = source
+        if target_result is not None:
+            self.target_result = target_result
+        if source_result is not None:
+            self.source_result = source_result
+        if target_message is not None:
+            self.target_message = target_message
+        if source_message is not None:
+            self.source_message = source_message
 
     @property
     def db_name(self):
@@ -178,6 +213,116 @@ class DbObjectFilteringResult:
         :type message: str
         """
         self._message = message
+
+    @property
+    def source(self):
+        """Gets the source of this DbObjectFilteringResult.
+
+        对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
+
+        :return: The source of this DbObjectFilteringResult.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        """Sets the source of this DbObjectFilteringResult.
+
+        对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
+
+        :param source: The source of this DbObjectFilteringResult.
+        :type source: str
+        """
+        self._source = source
+
+    @property
+    def target_result(self):
+        """Gets the target_result of this DbObjectFilteringResult.
+
+        校验目标库比对条件过滤的结果
+
+        :return: The target_result of this DbObjectFilteringResult.
+        :rtype: str
+        """
+        return self._target_result
+
+    @target_result.setter
+    def target_result(self, target_result):
+        """Sets the target_result of this DbObjectFilteringResult.
+
+        校验目标库比对条件过滤的结果
+
+        :param target_result: The target_result of this DbObjectFilteringResult.
+        :type target_result: str
+        """
+        self._target_result = target_result
+
+    @property
+    def source_result(self):
+        """Gets the source_result of this DbObjectFilteringResult.
+
+        校验源库比对条件过滤的结果
+
+        :return: The source_result of this DbObjectFilteringResult.
+        :rtype: str
+        """
+        return self._source_result
+
+    @source_result.setter
+    def source_result(self, source_result):
+        """Sets the source_result of this DbObjectFilteringResult.
+
+        校验源库比对条件过滤的结果
+
+        :param source_result: The source_result of this DbObjectFilteringResult.
+        :type source_result: str
+        """
+        self._source_result = source_result
+
+    @property
+    def target_message(self):
+        """Gets the target_message of this DbObjectFilteringResult.
+
+        校验目标库比对条件过滤的失败原因
+
+        :return: The target_message of this DbObjectFilteringResult.
+        :rtype: str
+        """
+        return self._target_message
+
+    @target_message.setter
+    def target_message(self, target_message):
+        """Sets the target_message of this DbObjectFilteringResult.
+
+        校验目标库比对条件过滤的失败原因
+
+        :param target_message: The target_message of this DbObjectFilteringResult.
+        :type target_message: str
+        """
+        self._target_message = target_message
+
+    @property
+    def source_message(self):
+        """Gets the source_message of this DbObjectFilteringResult.
+
+        校验源库比对条件过滤的失败原因
+
+        :return: The source_message of this DbObjectFilteringResult.
+        :rtype: str
+        """
+        return self._source_message
+
+    @source_message.setter
+    def source_message(self, source_message):
+        """Sets the source_message of this DbObjectFilteringResult.
+
+        校验源库比对条件过滤的失败原因
+
+        :param source_message: The source_message of this DbObjectFilteringResult.
+        :type source_message: str
+        """
+        self._source_message = source_message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,9 +17,9 @@ class TableModelVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'model_id': 'int',
-        'parent_table_id': 'int',
+        'id': 'str',
+        'model_id': 'str',
+        'parent_table_id': 'str',
         'parent_table_name': 'str',
         'parent_table_code': 'str',
         'model': 'WorkspaceVO',
@@ -41,14 +41,14 @@ class TableModelVO:
         'logic_tb_guid': 'str',
         'description': 'str',
         'status': 'BizStatusEnum',
-        'logic_tb_id': 'int',
-        'biz_catalog_id': 'int',
+        'logic_tb_id': 'str',
+        'biz_catalog_id': 'str',
         'catalog_path': 'str',
         'create_by': 'str',
         'update_by': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
-        'tags': 'list[TagVO]',
+        'tags': 'list[TagRecordVO]',
         'approval_info': 'ApprovalVO',
         'new_biz': 'BizVersionManageVO',
         'attributes': 'list[TableModelAttributeVO]',
@@ -59,9 +59,9 @@ class TableModelVO:
         'l1': 'str',
         'l2': 'str',
         'l3': 'str',
-        'l1_id': 'int',
+        'l1_id': 'str',
         'l2_id': 'str',
-        'l3_id': 'int',
+        'l3_id': 'str',
         'partition_conf': 'str',
         'dlf_task_id': 'str',
         'use_recently_partition': 'bool',
@@ -71,7 +71,7 @@ class TableModelVO:
         'dirty_out_prefix': 'str',
         'dirty_out_suffix': 'str',
         'quality_owner': 'str',
-        'quality_id': 'int',
+        'quality_id': 'str',
         'distribute': 'str',
         'distribute_column': 'str',
         'is_partition': 'bool',
@@ -159,121 +159,121 @@ class TableModelVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
-        :type id: int
-        :param model_id: 模型id
-        :type model_id: int
-        :param parent_table_id: 父表id
-        :type parent_table_id: int
-        :param parent_table_name: 父表名称
+        :param id: 编码。
+        :type id: str
+        :param model_id: 所属关系建模的模型ID。
+        :type model_id: str
+        :param parent_table_id: 父表ID。
+        :type parent_table_id: str
+        :param parent_table_name: 父表名称。
         :type parent_table_name: str
-        :param parent_table_code: 父表编码
+        :param parent_table_code: 父表编码。
         :type parent_table_code: str
         :param model: 
         :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
-        :param data_format: 数据格式
+        :param data_format: 数据格式。
         :type data_format: str
-        :param obs_bucket: obs桶
+        :param obs_bucket: obs桶。
         :type obs_bucket: str
-        :param obs_location: obs路径
+        :param obs_location: obs路径。
         :type obs_location: str
-        :param configs: 其他配置
+        :param configs: 其他配置。
         :type configs: str
-        :param table_type: 表类型
+        :param table_type: 表类型。
         :type table_type: str
-        :param owner: 
+        :param owner: 负责人。
         :type owner: str
-        :param tb_name: 表名
+        :param tb_name: 表名。
         :type tb_name: str
-        :param dw_id: 数据连接id
+        :param dw_id: 数据连接ID。
         :type dw_id: str
-        :param db_name: 数据库名
+        :param db_name: 数据库名。
         :type db_name: str
-        :param queue_name: dli数据连接执行sql所需的队列，数据连接类型为DLI时必须
+        :param queue_name: dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
         :type queue_name: str
-        :param schema: DWS类型需要
+        :param schema: DWS类型需要。
         :type schema: str
-        :param extend_info: 扩展信息
+        :param extend_info: 扩展信息。
         :type extend_info: str
-        :param tb_guid: 表物化后的guid
+        :param tb_guid: 表物化后的guid。
         :type tb_guid: str
-        :param tb_id: 数据表id
+        :param tb_id: 数据表ID。
         :type tb_id: str
-        :param logic_tb_name: 逻辑实体名
+        :param logic_tb_name: 逻辑实体名。
         :type logic_tb_name: str
-        :param logic_tb_guid: 逻辑实体的guid
+        :param logic_tb_guid: 逻辑实体的guid。
         :type logic_tb_guid: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param logic_tb_id: 逻辑实体的id
-        :type logic_tb_id: int
-        :param biz_catalog_id: 归属的业务分类的id
-        :type biz_catalog_id: int
-        :param catalog_path: 归属的业务分类的路径 {\&quot;l1Id\&quot;:\&quot;\&quot;,\&quot;l2Id\&quot;:\&quot;\&quot;,\&quot;l3Id\&quot;:\&quot;\&quot;}
+        :param logic_tb_id: 逻辑实体的ID。
+        :type logic_tb_id: str
+        :param biz_catalog_id: 归属的业务分类的id。
+        :type biz_catalog_id: str
+        :param catalog_path: 归属的业务分类的路径 {\&quot;l1Id\&quot;:\&quot;\&quot;,\&quot;l2Id\&quot;:\&quot;\&quot;,\&quot;l3Id\&quot;:\&quot;\&quot;}。
         :type catalog_path: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param tags: 表标签
-        :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
+        :param tags: 表标签。
+        :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagRecordVO`]
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
-        :param attributes: 表属性信息
+        :param attributes: 表属性信息。
         :type attributes: list[:class:`huaweicloudsdkdataartsstudio.v1.TableModelAttributeVO`]
-        :param mappings: 表映射信息
+        :param mappings: 表映射信息。
         :type mappings: list[:class:`huaweicloudsdkdataartsstudio.v1.TableMappingVO`]
-        :param relations: 关系
+        :param relations: 关系。
         :type relations: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationVO`]
-        :param dw_type: 数据连接类型
+        :param dw_type: 数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
         :type dw_type: str
-        :param dw_name: 数据连接名称
+        :param dw_name: 数据连接名称，只读，创建和更新时无需填写。
         :type dw_name: str
-        :param l1: 主题域分组中文名
+        :param l1: 主题域分组中文名，只读，创建和更新时无需填写。
         :type l1: str
-        :param l2: 主题域中文名
+        :param l2: 主题域中文名，只读，创建和更新时无需填写。
         :type l2: str
-        :param l3: 业务对象中文名
+        :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param l1_id: 主题域分组id
-        :type l1_id: int
-        :param l2_id: 
+        :param l1_id: 主题域分组ID。
+        :type l1_id: str
+        :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象id
-        :type l3_id: int
-        :param partition_conf: 分区表达式
+        :param l3_id: 业务对象ID。
+        :type l3_id: str
+        :param partition_conf: 分区表达式。
         :type partition_conf: str
-        :param dlf_task_id: DLF 作业 ID
+        :param dlf_task_id: DLF作业ID。
         :type dlf_task_id: str
-        :param use_recently_partition: 是否使用最新分区
+        :param use_recently_partition: 是否使用最新分区。
         :type use_recently_partition: bool
-        :param reversed: 是否是逆向的
+        :param reversed: 是否是逆向的。
         :type reversed: bool
-        :param dirty_out_switch: 异常数据输出开关
+        :param dirty_out_switch: 异常数据输出开关。
         :type dirty_out_switch: bool
-        :param dirty_out_database: 异常数据输出库
+        :param dirty_out_database: 异常数据输出库。
         :type dirty_out_database: str
-        :param dirty_out_prefix: 异常表前缀
+        :param dirty_out_prefix: 异常表前缀。
         :type dirty_out_prefix: str
-        :param dirty_out_suffix: 异常表后缀
+        :param dirty_out_suffix: 异常表后缀。
         :type dirty_out_suffix: str
-        :param quality_owner: 质量责任人
+        :param quality_owner: 质量责任人。
         :type quality_owner: str
-        :param quality_id: 质量id
-        :type quality_id: int
-        :param distribute: DISTRIBUTE BY [HASH(column)|REPLICATION]
+        :param quality_id: 质量ID。
+        :type quality_id: str
+        :param distribute: DISTRIBUTE BY [HASH(column)|REPLICATION]。HASH(对指定的列进行Hash，通过映射，把数据分布到指定DN)、REPLICATION(表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据)。
         :type distribute: str
-        :param distribute_column: DISTRIBUTE BY HASH column
+        :param distribute_column: DISTRIBUTE BY HASH column.
         :type distribute_column: str
-        :param is_partition: 是否分区表
+        :param is_partition: 是否分区表。
         :type is_partition: bool
         :param physical_table: 
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -287,9 +287,9 @@ class TableModelVO:
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param summary_status: 
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param alias: 别名
+        :param alias: 别名。
         :type alias: str
-        :param self_defined_fields: 自定义项
+        :param self_defined_fields: 自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         
@@ -494,10 +494,10 @@ class TableModelVO:
     def id(self):
         """Gets the id of this TableModelVO.
 
-        编码
+        编码。
 
         :return: The id of this TableModelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -505,10 +505,10 @@ class TableModelVO:
     def id(self, id):
         """Sets the id of this TableModelVO.
 
-        编码
+        编码。
 
         :param id: The id of this TableModelVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -516,10 +516,10 @@ class TableModelVO:
     def model_id(self):
         """Gets the model_id of this TableModelVO.
 
-        模型id
+        所属关系建模的模型ID。
 
         :return: The model_id of this TableModelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._model_id
 
@@ -527,10 +527,10 @@ class TableModelVO:
     def model_id(self, model_id):
         """Sets the model_id of this TableModelVO.
 
-        模型id
+        所属关系建模的模型ID。
 
         :param model_id: The model_id of this TableModelVO.
-        :type model_id: int
+        :type model_id: str
         """
         self._model_id = model_id
 
@@ -538,10 +538,10 @@ class TableModelVO:
     def parent_table_id(self):
         """Gets the parent_table_id of this TableModelVO.
 
-        父表id
+        父表ID。
 
         :return: The parent_table_id of this TableModelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._parent_table_id
 
@@ -549,10 +549,10 @@ class TableModelVO:
     def parent_table_id(self, parent_table_id):
         """Sets the parent_table_id of this TableModelVO.
 
-        父表id
+        父表ID。
 
         :param parent_table_id: The parent_table_id of this TableModelVO.
-        :type parent_table_id: int
+        :type parent_table_id: str
         """
         self._parent_table_id = parent_table_id
 
@@ -560,7 +560,7 @@ class TableModelVO:
     def parent_table_name(self):
         """Gets the parent_table_name of this TableModelVO.
 
-        父表名称
+        父表名称。
 
         :return: The parent_table_name of this TableModelVO.
         :rtype: str
@@ -571,7 +571,7 @@ class TableModelVO:
     def parent_table_name(self, parent_table_name):
         """Sets the parent_table_name of this TableModelVO.
 
-        父表名称
+        父表名称。
 
         :param parent_table_name: The parent_table_name of this TableModelVO.
         :type parent_table_name: str
@@ -582,7 +582,7 @@ class TableModelVO:
     def parent_table_code(self):
         """Gets the parent_table_code of this TableModelVO.
 
-        父表编码
+        父表编码。
 
         :return: The parent_table_code of this TableModelVO.
         :rtype: str
@@ -593,7 +593,7 @@ class TableModelVO:
     def parent_table_code(self, parent_table_code):
         """Sets the parent_table_code of this TableModelVO.
 
-        父表编码
+        父表编码。
 
         :param parent_table_code: The parent_table_code of this TableModelVO.
         :type parent_table_code: str
@@ -622,7 +622,7 @@ class TableModelVO:
     def data_format(self):
         """Gets the data_format of this TableModelVO.
 
-        数据格式
+        数据格式。
 
         :return: The data_format of this TableModelVO.
         :rtype: str
@@ -633,7 +633,7 @@ class TableModelVO:
     def data_format(self, data_format):
         """Sets the data_format of this TableModelVO.
 
-        数据格式
+        数据格式。
 
         :param data_format: The data_format of this TableModelVO.
         :type data_format: str
@@ -644,7 +644,7 @@ class TableModelVO:
     def obs_bucket(self):
         """Gets the obs_bucket of this TableModelVO.
 
-        obs桶
+        obs桶。
 
         :return: The obs_bucket of this TableModelVO.
         :rtype: str
@@ -655,7 +655,7 @@ class TableModelVO:
     def obs_bucket(self, obs_bucket):
         """Sets the obs_bucket of this TableModelVO.
 
-        obs桶
+        obs桶。
 
         :param obs_bucket: The obs_bucket of this TableModelVO.
         :type obs_bucket: str
@@ -666,7 +666,7 @@ class TableModelVO:
     def obs_location(self):
         """Gets the obs_location of this TableModelVO.
 
-        obs路径
+        obs路径。
 
         :return: The obs_location of this TableModelVO.
         :rtype: str
@@ -677,7 +677,7 @@ class TableModelVO:
     def obs_location(self, obs_location):
         """Sets the obs_location of this TableModelVO.
 
-        obs路径
+        obs路径。
 
         :param obs_location: The obs_location of this TableModelVO.
         :type obs_location: str
@@ -688,7 +688,7 @@ class TableModelVO:
     def configs(self):
         """Gets the configs of this TableModelVO.
 
-        其他配置
+        其他配置。
 
         :return: The configs of this TableModelVO.
         :rtype: str
@@ -699,7 +699,7 @@ class TableModelVO:
     def configs(self, configs):
         """Sets the configs of this TableModelVO.
 
-        其他配置
+        其他配置。
 
         :param configs: The configs of this TableModelVO.
         :type configs: str
@@ -710,7 +710,7 @@ class TableModelVO:
     def table_type(self):
         """Gets the table_type of this TableModelVO.
 
-        表类型
+        表类型。
 
         :return: The table_type of this TableModelVO.
         :rtype: str
@@ -721,7 +721,7 @@ class TableModelVO:
     def table_type(self, table_type):
         """Sets the table_type of this TableModelVO.
 
-        表类型
+        表类型。
 
         :param table_type: The table_type of this TableModelVO.
         :type table_type: str
@@ -732,6 +732,8 @@ class TableModelVO:
     def owner(self):
         """Gets the owner of this TableModelVO.
 
+        负责人。
+
         :return: The owner of this TableModelVO.
         :rtype: str
         """
@@ -740,6 +742,8 @@ class TableModelVO:
     @owner.setter
     def owner(self, owner):
         """Sets the owner of this TableModelVO.
+
+        负责人。
 
         :param owner: The owner of this TableModelVO.
         :type owner: str
@@ -750,7 +754,7 @@ class TableModelVO:
     def tb_name(self):
         """Gets the tb_name of this TableModelVO.
 
-        表名
+        表名。
 
         :return: The tb_name of this TableModelVO.
         :rtype: str
@@ -761,7 +765,7 @@ class TableModelVO:
     def tb_name(self, tb_name):
         """Sets the tb_name of this TableModelVO.
 
-        表名
+        表名。
 
         :param tb_name: The tb_name of this TableModelVO.
         :type tb_name: str
@@ -772,7 +776,7 @@ class TableModelVO:
     def dw_id(self):
         """Gets the dw_id of this TableModelVO.
 
-        数据连接id
+        数据连接ID。
 
         :return: The dw_id of this TableModelVO.
         :rtype: str
@@ -783,7 +787,7 @@ class TableModelVO:
     def dw_id(self, dw_id):
         """Sets the dw_id of this TableModelVO.
 
-        数据连接id
+        数据连接ID。
 
         :param dw_id: The dw_id of this TableModelVO.
         :type dw_id: str
@@ -794,7 +798,7 @@ class TableModelVO:
     def db_name(self):
         """Gets the db_name of this TableModelVO.
 
-        数据库名
+        数据库名。
 
         :return: The db_name of this TableModelVO.
         :rtype: str
@@ -805,7 +809,7 @@ class TableModelVO:
     def db_name(self, db_name):
         """Sets the db_name of this TableModelVO.
 
-        数据库名
+        数据库名。
 
         :param db_name: The db_name of this TableModelVO.
         :type db_name: str
@@ -816,7 +820,7 @@ class TableModelVO:
     def queue_name(self):
         """Gets the queue_name of this TableModelVO.
 
-        dli数据连接执行sql所需的队列，数据连接类型为DLI时必须
+        dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
         :return: The queue_name of this TableModelVO.
         :rtype: str
@@ -827,7 +831,7 @@ class TableModelVO:
     def queue_name(self, queue_name):
         """Sets the queue_name of this TableModelVO.
 
-        dli数据连接执行sql所需的队列，数据连接类型为DLI时必须
+        dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
         :param queue_name: The queue_name of this TableModelVO.
         :type queue_name: str
@@ -838,7 +842,7 @@ class TableModelVO:
     def schema(self):
         """Gets the schema of this TableModelVO.
 
-        DWS类型需要
+        DWS类型需要。
 
         :return: The schema of this TableModelVO.
         :rtype: str
@@ -849,7 +853,7 @@ class TableModelVO:
     def schema(self, schema):
         """Sets the schema of this TableModelVO.
 
-        DWS类型需要
+        DWS类型需要。
 
         :param schema: The schema of this TableModelVO.
         :type schema: str
@@ -860,7 +864,7 @@ class TableModelVO:
     def extend_info(self):
         """Gets the extend_info of this TableModelVO.
 
-        扩展信息
+        扩展信息。
 
         :return: The extend_info of this TableModelVO.
         :rtype: str
@@ -871,7 +875,7 @@ class TableModelVO:
     def extend_info(self, extend_info):
         """Sets the extend_info of this TableModelVO.
 
-        扩展信息
+        扩展信息。
 
         :param extend_info: The extend_info of this TableModelVO.
         :type extend_info: str
@@ -882,7 +886,7 @@ class TableModelVO:
     def tb_guid(self):
         """Gets the tb_guid of this TableModelVO.
 
-        表物化后的guid
+        表物化后的guid。
 
         :return: The tb_guid of this TableModelVO.
         :rtype: str
@@ -893,7 +897,7 @@ class TableModelVO:
     def tb_guid(self, tb_guid):
         """Sets the tb_guid of this TableModelVO.
 
-        表物化后的guid
+        表物化后的guid。
 
         :param tb_guid: The tb_guid of this TableModelVO.
         :type tb_guid: str
@@ -904,7 +908,7 @@ class TableModelVO:
     def tb_id(self):
         """Gets the tb_id of this TableModelVO.
 
-        数据表id
+        数据表ID。
 
         :return: The tb_id of this TableModelVO.
         :rtype: str
@@ -915,7 +919,7 @@ class TableModelVO:
     def tb_id(self, tb_id):
         """Sets the tb_id of this TableModelVO.
 
-        数据表id
+        数据表ID。
 
         :param tb_id: The tb_id of this TableModelVO.
         :type tb_id: str
@@ -926,7 +930,7 @@ class TableModelVO:
     def logic_tb_name(self):
         """Gets the logic_tb_name of this TableModelVO.
 
-        逻辑实体名
+        逻辑实体名。
 
         :return: The logic_tb_name of this TableModelVO.
         :rtype: str
@@ -937,7 +941,7 @@ class TableModelVO:
     def logic_tb_name(self, logic_tb_name):
         """Sets the logic_tb_name of this TableModelVO.
 
-        逻辑实体名
+        逻辑实体名。
 
         :param logic_tb_name: The logic_tb_name of this TableModelVO.
         :type logic_tb_name: str
@@ -948,7 +952,7 @@ class TableModelVO:
     def logic_tb_guid(self):
         """Gets the logic_tb_guid of this TableModelVO.
 
-        逻辑实体的guid
+        逻辑实体的guid。
 
         :return: The logic_tb_guid of this TableModelVO.
         :rtype: str
@@ -959,7 +963,7 @@ class TableModelVO:
     def logic_tb_guid(self, logic_tb_guid):
         """Sets the logic_tb_guid of this TableModelVO.
 
-        逻辑实体的guid
+        逻辑实体的guid。
 
         :param logic_tb_guid: The logic_tb_guid of this TableModelVO.
         :type logic_tb_guid: str
@@ -970,7 +974,7 @@ class TableModelVO:
     def description(self):
         """Gets the description of this TableModelVO.
 
-        描述
+        描述。
 
         :return: The description of this TableModelVO.
         :rtype: str
@@ -981,7 +985,7 @@ class TableModelVO:
     def description(self, description):
         """Sets the description of this TableModelVO.
 
-        描述
+        描述。
 
         :param description: The description of this TableModelVO.
         :type description: str
@@ -1010,10 +1014,10 @@ class TableModelVO:
     def logic_tb_id(self):
         """Gets the logic_tb_id of this TableModelVO.
 
-        逻辑实体的id
+        逻辑实体的ID。
 
         :return: The logic_tb_id of this TableModelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._logic_tb_id
 
@@ -1021,10 +1025,10 @@ class TableModelVO:
     def logic_tb_id(self, logic_tb_id):
         """Sets the logic_tb_id of this TableModelVO.
 
-        逻辑实体的id
+        逻辑实体的ID。
 
         :param logic_tb_id: The logic_tb_id of this TableModelVO.
-        :type logic_tb_id: int
+        :type logic_tb_id: str
         """
         self._logic_tb_id = logic_tb_id
 
@@ -1032,10 +1036,10 @@ class TableModelVO:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this TableModelVO.
 
-        归属的业务分类的id
+        归属的业务分类的id。
 
         :return: The biz_catalog_id of this TableModelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._biz_catalog_id
 
@@ -1043,10 +1047,10 @@ class TableModelVO:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this TableModelVO.
 
-        归属的业务分类的id
+        归属的业务分类的id。
 
         :param biz_catalog_id: The biz_catalog_id of this TableModelVO.
-        :type biz_catalog_id: int
+        :type biz_catalog_id: str
         """
         self._biz_catalog_id = biz_catalog_id
 
@@ -1054,7 +1058,7 @@ class TableModelVO:
     def catalog_path(self):
         """Gets the catalog_path of this TableModelVO.
 
-        归属的业务分类的路径 {\"l1Id\":\"\",\"l2Id\":\"\",\"l3Id\":\"\"}
+        归属的业务分类的路径 {\"l1Id\":\"\",\"l2Id\":\"\",\"l3Id\":\"\"}。
 
         :return: The catalog_path of this TableModelVO.
         :rtype: str
@@ -1065,7 +1069,7 @@ class TableModelVO:
     def catalog_path(self, catalog_path):
         """Sets the catalog_path of this TableModelVO.
 
-        归属的业务分类的路径 {\"l1Id\":\"\",\"l2Id\":\"\",\"l3Id\":\"\"}
+        归属的业务分类的路径 {\"l1Id\":\"\",\"l2Id\":\"\",\"l3Id\":\"\"}。
 
         :param catalog_path: The catalog_path of this TableModelVO.
         :type catalog_path: str
@@ -1076,7 +1080,7 @@ class TableModelVO:
     def create_by(self):
         """Gets the create_by of this TableModelVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this TableModelVO.
         :rtype: str
@@ -1087,7 +1091,7 @@ class TableModelVO:
     def create_by(self, create_by):
         """Sets the create_by of this TableModelVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this TableModelVO.
         :type create_by: str
@@ -1098,7 +1102,7 @@ class TableModelVO:
     def update_by(self):
         """Gets the update_by of this TableModelVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this TableModelVO.
         :rtype: str
@@ -1109,7 +1113,7 @@ class TableModelVO:
     def update_by(self, update_by):
         """Sets the update_by of this TableModelVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this TableModelVO.
         :type update_by: str
@@ -1120,7 +1124,7 @@ class TableModelVO:
     def create_time(self):
         """Gets the create_time of this TableModelVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this TableModelVO.
         :rtype: datetime
@@ -1131,7 +1135,7 @@ class TableModelVO:
     def create_time(self, create_time):
         """Sets the create_time of this TableModelVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this TableModelVO.
         :type create_time: datetime
@@ -1142,7 +1146,7 @@ class TableModelVO:
     def update_time(self):
         """Gets the update_time of this TableModelVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this TableModelVO.
         :rtype: datetime
@@ -1153,7 +1157,7 @@ class TableModelVO:
     def update_time(self, update_time):
         """Sets the update_time of this TableModelVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this TableModelVO.
         :type update_time: datetime
@@ -1164,10 +1168,10 @@ class TableModelVO:
     def tags(self):
         """Gets the tags of this TableModelVO.
 
-        表标签
+        表标签。
 
         :return: The tags of this TableModelVO.
-        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.TagRecordVO`]
         """
         return self._tags
 
@@ -1175,10 +1179,10 @@ class TableModelVO:
     def tags(self, tags):
         """Sets the tags of this TableModelVO.
 
-        表标签
+        表标签。
 
         :param tags: The tags of this TableModelVO.
-        :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
+        :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagRecordVO`]
         """
         self._tags = tags
 
@@ -1222,7 +1226,7 @@ class TableModelVO:
     def attributes(self):
         """Gets the attributes of this TableModelVO.
 
-        表属性信息
+        表属性信息。
 
         :return: The attributes of this TableModelVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.TableModelAttributeVO`]
@@ -1233,7 +1237,7 @@ class TableModelVO:
     def attributes(self, attributes):
         """Sets the attributes of this TableModelVO.
 
-        表属性信息
+        表属性信息。
 
         :param attributes: The attributes of this TableModelVO.
         :type attributes: list[:class:`huaweicloudsdkdataartsstudio.v1.TableModelAttributeVO`]
@@ -1244,7 +1248,7 @@ class TableModelVO:
     def mappings(self):
         """Gets the mappings of this TableModelVO.
 
-        表映射信息
+        表映射信息。
 
         :return: The mappings of this TableModelVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.TableMappingVO`]
@@ -1255,7 +1259,7 @@ class TableModelVO:
     def mappings(self, mappings):
         """Sets the mappings of this TableModelVO.
 
-        表映射信息
+        表映射信息。
 
         :param mappings: The mappings of this TableModelVO.
         :type mappings: list[:class:`huaweicloudsdkdataartsstudio.v1.TableMappingVO`]
@@ -1266,7 +1270,7 @@ class TableModelVO:
     def relations(self):
         """Gets the relations of this TableModelVO.
 
-        关系
+        关系。
 
         :return: The relations of this TableModelVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationVO`]
@@ -1277,7 +1281,7 @@ class TableModelVO:
     def relations(self, relations):
         """Sets the relations of this TableModelVO.
 
-        关系
+        关系。
 
         :param relations: The relations of this TableModelVO.
         :type relations: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationVO`]
@@ -1288,7 +1292,7 @@ class TableModelVO:
     def dw_type(self):
         """Gets the dw_type of this TableModelVO.
 
-        数据连接类型
+        数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
         :return: The dw_type of this TableModelVO.
         :rtype: str
@@ -1299,7 +1303,7 @@ class TableModelVO:
     def dw_type(self, dw_type):
         """Sets the dw_type of this TableModelVO.
 
-        数据连接类型
+        数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
         :param dw_type: The dw_type of this TableModelVO.
         :type dw_type: str
@@ -1310,7 +1314,7 @@ class TableModelVO:
     def dw_name(self):
         """Gets the dw_name of this TableModelVO.
 
-        数据连接名称
+        数据连接名称，只读，创建和更新时无需填写。
 
         :return: The dw_name of this TableModelVO.
         :rtype: str
@@ -1321,7 +1325,7 @@ class TableModelVO:
     def dw_name(self, dw_name):
         """Sets the dw_name of this TableModelVO.
 
-        数据连接名称
+        数据连接名称，只读，创建和更新时无需填写。
 
         :param dw_name: The dw_name of this TableModelVO.
         :type dw_name: str
@@ -1332,7 +1336,7 @@ class TableModelVO:
     def l1(self):
         """Gets the l1 of this TableModelVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :return: The l1 of this TableModelVO.
         :rtype: str
@@ -1343,7 +1347,7 @@ class TableModelVO:
     def l1(self, l1):
         """Sets the l1 of this TableModelVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :param l1: The l1 of this TableModelVO.
         :type l1: str
@@ -1354,7 +1358,7 @@ class TableModelVO:
     def l2(self):
         """Gets the l2 of this TableModelVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :return: The l2 of this TableModelVO.
         :rtype: str
@@ -1365,7 +1369,7 @@ class TableModelVO:
     def l2(self, l2):
         """Sets the l2 of this TableModelVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :param l2: The l2 of this TableModelVO.
         :type l2: str
@@ -1376,7 +1380,7 @@ class TableModelVO:
     def l3(self):
         """Gets the l3 of this TableModelVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :return: The l3 of this TableModelVO.
         :rtype: str
@@ -1387,7 +1391,7 @@ class TableModelVO:
     def l3(self, l3):
         """Sets the l3 of this TableModelVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :param l3: The l3 of this TableModelVO.
         :type l3: str
@@ -1398,10 +1402,10 @@ class TableModelVO:
     def l1_id(self):
         """Gets the l1_id of this TableModelVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :return: The l1_id of this TableModelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l1_id
 
@@ -1409,16 +1413,18 @@ class TableModelVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this TableModelVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :param l1_id: The l1_id of this TableModelVO.
-        :type l1_id: int
+        :type l1_id: str
         """
         self._l1_id = l1_id
 
     @property
     def l2_id(self):
         """Gets the l2_id of this TableModelVO.
+
+        主题域ID，只读，创建和更新时无需填写。
 
         :return: The l2_id of this TableModelVO.
         :rtype: str
@@ -1429,6 +1435,8 @@ class TableModelVO:
     def l2_id(self, l2_id):
         """Sets the l2_id of this TableModelVO.
 
+        主题域ID，只读，创建和更新时无需填写。
+
         :param l2_id: The l2_id of this TableModelVO.
         :type l2_id: str
         """
@@ -1438,10 +1446,10 @@ class TableModelVO:
     def l3_id(self):
         """Gets the l3_id of this TableModelVO.
 
-        业务对象id
+        业务对象ID。
 
         :return: The l3_id of this TableModelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l3_id
 
@@ -1449,10 +1457,10 @@ class TableModelVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this TableModelVO.
 
-        业务对象id
+        业务对象ID。
 
         :param l3_id: The l3_id of this TableModelVO.
-        :type l3_id: int
+        :type l3_id: str
         """
         self._l3_id = l3_id
 
@@ -1460,7 +1468,7 @@ class TableModelVO:
     def partition_conf(self):
         """Gets the partition_conf of this TableModelVO.
 
-        分区表达式
+        分区表达式。
 
         :return: The partition_conf of this TableModelVO.
         :rtype: str
@@ -1471,7 +1479,7 @@ class TableModelVO:
     def partition_conf(self, partition_conf):
         """Sets the partition_conf of this TableModelVO.
 
-        分区表达式
+        分区表达式。
 
         :param partition_conf: The partition_conf of this TableModelVO.
         :type partition_conf: str
@@ -1482,7 +1490,7 @@ class TableModelVO:
     def dlf_task_id(self):
         """Gets the dlf_task_id of this TableModelVO.
 
-        DLF 作业 ID
+        DLF作业ID。
 
         :return: The dlf_task_id of this TableModelVO.
         :rtype: str
@@ -1493,7 +1501,7 @@ class TableModelVO:
     def dlf_task_id(self, dlf_task_id):
         """Sets the dlf_task_id of this TableModelVO.
 
-        DLF 作业 ID
+        DLF作业ID。
 
         :param dlf_task_id: The dlf_task_id of this TableModelVO.
         :type dlf_task_id: str
@@ -1504,7 +1512,7 @@ class TableModelVO:
     def use_recently_partition(self):
         """Gets the use_recently_partition of this TableModelVO.
 
-        是否使用最新分区
+        是否使用最新分区。
 
         :return: The use_recently_partition of this TableModelVO.
         :rtype: bool
@@ -1515,7 +1523,7 @@ class TableModelVO:
     def use_recently_partition(self, use_recently_partition):
         """Sets the use_recently_partition of this TableModelVO.
 
-        是否使用最新分区
+        是否使用最新分区。
 
         :param use_recently_partition: The use_recently_partition of this TableModelVO.
         :type use_recently_partition: bool
@@ -1526,7 +1534,7 @@ class TableModelVO:
     def reversed(self):
         """Gets the reversed of this TableModelVO.
 
-        是否是逆向的
+        是否是逆向的。
 
         :return: The reversed of this TableModelVO.
         :rtype: bool
@@ -1537,7 +1545,7 @@ class TableModelVO:
     def reversed(self, reversed):
         """Sets the reversed of this TableModelVO.
 
-        是否是逆向的
+        是否是逆向的。
 
         :param reversed: The reversed of this TableModelVO.
         :type reversed: bool
@@ -1548,7 +1556,7 @@ class TableModelVO:
     def dirty_out_switch(self):
         """Gets the dirty_out_switch of this TableModelVO.
 
-        异常数据输出开关
+        异常数据输出开关。
 
         :return: The dirty_out_switch of this TableModelVO.
         :rtype: bool
@@ -1559,7 +1567,7 @@ class TableModelVO:
     def dirty_out_switch(self, dirty_out_switch):
         """Sets the dirty_out_switch of this TableModelVO.
 
-        异常数据输出开关
+        异常数据输出开关。
 
         :param dirty_out_switch: The dirty_out_switch of this TableModelVO.
         :type dirty_out_switch: bool
@@ -1570,7 +1578,7 @@ class TableModelVO:
     def dirty_out_database(self):
         """Gets the dirty_out_database of this TableModelVO.
 
-        异常数据输出库
+        异常数据输出库。
 
         :return: The dirty_out_database of this TableModelVO.
         :rtype: str
@@ -1581,7 +1589,7 @@ class TableModelVO:
     def dirty_out_database(self, dirty_out_database):
         """Sets the dirty_out_database of this TableModelVO.
 
-        异常数据输出库
+        异常数据输出库。
 
         :param dirty_out_database: The dirty_out_database of this TableModelVO.
         :type dirty_out_database: str
@@ -1592,7 +1600,7 @@ class TableModelVO:
     def dirty_out_prefix(self):
         """Gets the dirty_out_prefix of this TableModelVO.
 
-        异常表前缀
+        异常表前缀。
 
         :return: The dirty_out_prefix of this TableModelVO.
         :rtype: str
@@ -1603,7 +1611,7 @@ class TableModelVO:
     def dirty_out_prefix(self, dirty_out_prefix):
         """Sets the dirty_out_prefix of this TableModelVO.
 
-        异常表前缀
+        异常表前缀。
 
         :param dirty_out_prefix: The dirty_out_prefix of this TableModelVO.
         :type dirty_out_prefix: str
@@ -1614,7 +1622,7 @@ class TableModelVO:
     def dirty_out_suffix(self):
         """Gets the dirty_out_suffix of this TableModelVO.
 
-        异常表后缀
+        异常表后缀。
 
         :return: The dirty_out_suffix of this TableModelVO.
         :rtype: str
@@ -1625,7 +1633,7 @@ class TableModelVO:
     def dirty_out_suffix(self, dirty_out_suffix):
         """Sets the dirty_out_suffix of this TableModelVO.
 
-        异常表后缀
+        异常表后缀。
 
         :param dirty_out_suffix: The dirty_out_suffix of this TableModelVO.
         :type dirty_out_suffix: str
@@ -1636,7 +1644,7 @@ class TableModelVO:
     def quality_owner(self):
         """Gets the quality_owner of this TableModelVO.
 
-        质量责任人
+        质量责任人。
 
         :return: The quality_owner of this TableModelVO.
         :rtype: str
@@ -1647,7 +1655,7 @@ class TableModelVO:
     def quality_owner(self, quality_owner):
         """Sets the quality_owner of this TableModelVO.
 
-        质量责任人
+        质量责任人。
 
         :param quality_owner: The quality_owner of this TableModelVO.
         :type quality_owner: str
@@ -1658,10 +1666,10 @@ class TableModelVO:
     def quality_id(self):
         """Gets the quality_id of this TableModelVO.
 
-        质量id
+        质量ID。
 
         :return: The quality_id of this TableModelVO.
-        :rtype: int
+        :rtype: str
         """
         return self._quality_id
 
@@ -1669,10 +1677,10 @@ class TableModelVO:
     def quality_id(self, quality_id):
         """Sets the quality_id of this TableModelVO.
 
-        质量id
+        质量ID。
 
         :param quality_id: The quality_id of this TableModelVO.
-        :type quality_id: int
+        :type quality_id: str
         """
         self._quality_id = quality_id
 
@@ -1680,7 +1688,7 @@ class TableModelVO:
     def distribute(self):
         """Gets the distribute of this TableModelVO.
 
-        DISTRIBUTE BY [HASH(column)|REPLICATION]
+        DISTRIBUTE BY [HASH(column)|REPLICATION]。HASH(对指定的列进行Hash，通过映射，把数据分布到指定DN)、REPLICATION(表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据)。
 
         :return: The distribute of this TableModelVO.
         :rtype: str
@@ -1691,7 +1699,7 @@ class TableModelVO:
     def distribute(self, distribute):
         """Sets the distribute of this TableModelVO.
 
-        DISTRIBUTE BY [HASH(column)|REPLICATION]
+        DISTRIBUTE BY [HASH(column)|REPLICATION]。HASH(对指定的列进行Hash，通过映射，把数据分布到指定DN)、REPLICATION(表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据)。
 
         :param distribute: The distribute of this TableModelVO.
         :type distribute: str
@@ -1702,7 +1710,7 @@ class TableModelVO:
     def distribute_column(self):
         """Gets the distribute_column of this TableModelVO.
 
-        DISTRIBUTE BY HASH column
+        DISTRIBUTE BY HASH column.
 
         :return: The distribute_column of this TableModelVO.
         :rtype: str
@@ -1713,7 +1721,7 @@ class TableModelVO:
     def distribute_column(self, distribute_column):
         """Sets the distribute_column of this TableModelVO.
 
-        DISTRIBUTE BY HASH column
+        DISTRIBUTE BY HASH column.
 
         :param distribute_column: The distribute_column of this TableModelVO.
         :type distribute_column: str
@@ -1724,7 +1732,7 @@ class TableModelVO:
     def is_partition(self):
         """Gets the is_partition of this TableModelVO.
 
-        是否分区表
+        是否分区表。
 
         :return: The is_partition of this TableModelVO.
         :rtype: bool
@@ -1735,7 +1743,7 @@ class TableModelVO:
     def is_partition(self, is_partition):
         """Sets the is_partition of this TableModelVO.
 
-        是否分区表
+        是否分区表。
 
         :param is_partition: The is_partition of this TableModelVO.
         :type is_partition: bool
@@ -1854,7 +1862,7 @@ class TableModelVO:
     def alias(self):
         """Gets the alias of this TableModelVO.
 
-        别名
+        别名。
 
         :return: The alias of this TableModelVO.
         :rtype: str
@@ -1865,7 +1873,7 @@ class TableModelVO:
     def alias(self, alias):
         """Sets the alias of this TableModelVO.
 
-        别名
+        别名。
 
         :param alias: The alias of this TableModelVO.
         :type alias: str
@@ -1876,7 +1884,7 @@ class TableModelVO:
     def self_defined_fields(self):
         """Gets the self_defined_fields of this TableModelVO.
 
-        自定义项
+        自定义项。
 
         :return: The self_defined_fields of this TableModelVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
@@ -1887,7 +1895,7 @@ class TableModelVO:
     def self_defined_fields(self, self_defined_fields):
         """Sets the self_defined_fields of this TableModelVO.
 
-        自定义项
+        自定义项。
 
         :param self_defined_fields: The self_defined_fields of this TableModelVO.
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]

@@ -31,9 +31,9 @@ class CompoundMetricVOSearchResultDataValue:
 
         The model defined in huaweicloud sdk
 
-        :param records: CompoundMetricVO数组
+        :param records: CompoundMetricVO数组。
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVO`]
-        :param total: 总数
+        :param total: 总数。
         :type total: int
         """
         
@@ -52,7 +52,7 @@ class CompoundMetricVOSearchResultDataValue:
     def records(self):
         """Gets the records of this CompoundMetricVOSearchResultDataValue.
 
-        CompoundMetricVO数组
+        CompoundMetricVO数组。
 
         :return: The records of this CompoundMetricVOSearchResultDataValue.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVO`]
@@ -63,7 +63,7 @@ class CompoundMetricVOSearchResultDataValue:
     def records(self, records):
         """Sets the records of this CompoundMetricVOSearchResultDataValue.
 
-        CompoundMetricVO数组
+        CompoundMetricVO数组。
 
         :param records: The records of this CompoundMetricVOSearchResultDataValue.
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVO`]
@@ -74,7 +74,7 @@ class CompoundMetricVOSearchResultDataValue:
     def total(self):
         """Gets the total of this CompoundMetricVOSearchResultDataValue.
 
-        总数
+        总数。
 
         :return: The total of this CompoundMetricVOSearchResultDataValue.
         :rtype: int
@@ -85,7 +85,7 @@ class CompoundMetricVOSearchResultDataValue:
     def total(self, total):
         """Sets the total of this CompoundMetricVOSearchResultDataValue.
 
-        总数
+        总数。
 
         :param total: The total of this CompoundMetricVOSearchResultDataValue.
         :type total: int

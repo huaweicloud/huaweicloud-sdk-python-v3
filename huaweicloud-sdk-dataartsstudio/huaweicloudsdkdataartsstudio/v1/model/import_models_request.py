@@ -18,6 +18,7 @@ class ImportModelsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'action_id': 'str',
         'model_id': 'str',
         'directory_id': 'str',
@@ -27,6 +28,7 @@ class ImportModelsRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'action_id': 'action-id',
         'model_id': 'model_id',
         'directory_id': 'directory_id',
@@ -34,20 +36,22 @@ class ImportModelsRequest:
         'body': 'body'
     }
 
-    def __init__(self, workspace=None, action_id=None, model_id=None, directory_id=None, skip_exist=None, body=None):
+    def __init__(self, workspace=None, x_project_id=None, action_id=None, model_id=None, directory_id=None, skip_exist=None, body=None):
         """ImportModelsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param action_id: 需要执行的动作，根据导入的对象不同而选择不同的导入动作
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param action_id: 需要执行的动作，根据导入的对象不同而选择不同的导入动作。import_relation(导入关系模型：逻辑实体/物理表)、import_dimension( 导入维度表、事实表)、import_codetable(导入码表)、import_datastandard(导入数据标准)、import_bizmetric(导入业务指标)、import_bizcatalog(导入流程架构)、import_atomic(导入原子指标)、import_derivative(导入衍生指标)、import_compound(导入复合指标)、import_aggregation(导入汇总表)。
         :type action_id: str
-        :param model_id: 模型id，在导入模型（import_relation）时必填
+        :param model_id: 关系建模的模型ID，在导入模型（import_relation）时必填。
         :type model_id: str
-        :param directory_id: 导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填
+        :param directory_id: 导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填。
         :type directory_id: str
-        :param skip_exist: 是否需要覆盖更新已有的实体
+        :param skip_exist: 是否需要覆盖更新已有的实体。
         :type skip_exist: bool
         :param body: Body of the ImportModelsRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ImportModelsRequestBody`
@@ -56,6 +60,7 @@ class ImportModelsRequest:
         
 
         self._workspace = None
+        self._x_project_id = None
         self._action_id = None
         self._model_id = None
         self._directory_id = None
@@ -64,6 +69,8 @@ class ImportModelsRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.action_id = action_id
         if model_id is not None:
             self.model_id = model_id
@@ -78,7 +85,7 @@ class ImportModelsRequest:
     def workspace(self):
         """Gets the workspace of this ImportModelsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ImportModelsRequest.
         :rtype: str
@@ -89,7 +96,7 @@ class ImportModelsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ImportModelsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ImportModelsRequest.
         :type workspace: str
@@ -97,10 +104,32 @@ class ImportModelsRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ImportModelsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ImportModelsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ImportModelsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ImportModelsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def action_id(self):
         """Gets the action_id of this ImportModelsRequest.
 
-        需要执行的动作，根据导入的对象不同而选择不同的导入动作
+        需要执行的动作，根据导入的对象不同而选择不同的导入动作。import_relation(导入关系模型：逻辑实体/物理表)、import_dimension( 导入维度表、事实表)、import_codetable(导入码表)、import_datastandard(导入数据标准)、import_bizmetric(导入业务指标)、import_bizcatalog(导入流程架构)、import_atomic(导入原子指标)、import_derivative(导入衍生指标)、import_compound(导入复合指标)、import_aggregation(导入汇总表)。
 
         :return: The action_id of this ImportModelsRequest.
         :rtype: str
@@ -111,7 +140,7 @@ class ImportModelsRequest:
     def action_id(self, action_id):
         """Sets the action_id of this ImportModelsRequest.
 
-        需要执行的动作，根据导入的对象不同而选择不同的导入动作
+        需要执行的动作，根据导入的对象不同而选择不同的导入动作。import_relation(导入关系模型：逻辑实体/物理表)、import_dimension( 导入维度表、事实表)、import_codetable(导入码表)、import_datastandard(导入数据标准)、import_bizmetric(导入业务指标)、import_bizcatalog(导入流程架构)、import_atomic(导入原子指标)、import_derivative(导入衍生指标)、import_compound(导入复合指标)、import_aggregation(导入汇总表)。
 
         :param action_id: The action_id of this ImportModelsRequest.
         :type action_id: str
@@ -122,7 +151,7 @@ class ImportModelsRequest:
     def model_id(self):
         """Gets the model_id of this ImportModelsRequest.
 
-        模型id，在导入模型（import_relation）时必填
+        关系建模的模型ID，在导入模型（import_relation）时必填。
 
         :return: The model_id of this ImportModelsRequest.
         :rtype: str
@@ -133,7 +162,7 @@ class ImportModelsRequest:
     def model_id(self, model_id):
         """Sets the model_id of this ImportModelsRequest.
 
-        模型id，在导入模型（import_relation）时必填
+        关系建模的模型ID，在导入模型（import_relation）时必填。
 
         :param model_id: The model_id of this ImportModelsRequest.
         :type model_id: str
@@ -144,7 +173,7 @@ class ImportModelsRequest:
     def directory_id(self):
         """Gets the directory_id of this ImportModelsRequest.
 
-        导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填
+        导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填。
 
         :return: The directory_id of this ImportModelsRequest.
         :rtype: str
@@ -155,7 +184,7 @@ class ImportModelsRequest:
     def directory_id(self, directory_id):
         """Sets the directory_id of this ImportModelsRequest.
 
-        导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填
+        导入的目录id，在导入码表（import_datastandard）和数据标准（import_datastandard）时生效，选填。
 
         :param directory_id: The directory_id of this ImportModelsRequest.
         :type directory_id: str
@@ -166,7 +195,7 @@ class ImportModelsRequest:
     def skip_exist(self):
         """Gets the skip_exist of this ImportModelsRequest.
 
-        是否需要覆盖更新已有的实体
+        是否需要覆盖更新已有的实体。
 
         :return: The skip_exist of this ImportModelsRequest.
         :rtype: bool
@@ -177,7 +206,7 @@ class ImportModelsRequest:
     def skip_exist(self, skip_exist):
         """Sets the skip_exist of this ImportModelsRequest.
 
-        是否需要覆盖更新已有的实体
+        是否需要覆盖更新已有的实体。
 
         :param skip_exist: The skip_exist of this ImportModelsRequest.
         :type skip_exist: bool

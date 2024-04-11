@@ -22,9 +22,14 @@ class Phone:
         'phone_id': 'str',
         'phone_model_name': 'str',
         'image_id': 'str',
+        'image_version': 'str',
         'vnc_enable': 'str',
         'status': 'int',
         'type': 'int',
+        'imei': 'str',
+        'traffic_type': 'str',
+        'volume_mode': 'int',
+        'availability_zone': 'str',
         'metadata': 'PhoneMetadata',
         'create_time': 'str',
         'update_time': 'str'
@@ -36,15 +41,20 @@ class Phone:
         'phone_id': 'phone_id',
         'phone_model_name': 'phone_model_name',
         'image_id': 'image_id',
+        'image_version': 'image_version',
         'vnc_enable': 'vnc_enable',
         'status': 'status',
         'type': 'type',
+        'imei': 'imei',
+        'traffic_type': 'traffic_type',
+        'volume_mode': 'volume_mode',
+        'availability_zone': 'availability_zone',
         'metadata': 'metadata',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, phone_name=None, server_id=None, phone_id=None, phone_model_name=None, image_id=None, vnc_enable=None, status=None, type=None, metadata=None, create_time=None, update_time=None):
+    def __init__(self, phone_name=None, server_id=None, phone_id=None, phone_model_name=None, image_id=None, image_version=None, vnc_enable=None, status=None, type=None, imei=None, traffic_type=None, volume_mode=None, availability_zone=None, metadata=None, create_time=None, update_time=None):
         """Phone
 
         The model defined in huaweicloud sdk
@@ -59,12 +69,22 @@ class Phone:
         :type phone_model_name: str
         :param image_id: 云手机镜像ID，不超过32个字节。
         :type image_id: str
+        :param image_version: 镜像版本。
+        :type image_version: str
         :param vnc_enable: 云手机是否开启VNC服务。 - true：开启 - false：不开启
         :type vnc_enable: str
         :param status: 云手机状态。 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
         :type status: int
         :param type: 云手机类型。 - 0：普通云手机 - 1：试玩云手机
         :type type: int
+        :param imei: imei码。
+        :type imei: str
+        :param traffic_type: 手机路由类型。 - direct：默认路由 - routing：路由到编码容器
+        :type traffic_type: str
+        :param volume_mode: 手机物理磁盘是否独立。 - 0：不独立 - 1：独立
+        :type volume_mode: int
+        :param availability_zone: 云手机服务器所在的可用区。
+        :type availability_zone: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcph.v1.PhoneMetadata`
         :param create_time: 创建时间， 时间格式为UTC。
@@ -80,9 +100,14 @@ class Phone:
         self._phone_id = None
         self._phone_model_name = None
         self._image_id = None
+        self._image_version = None
         self._vnc_enable = None
         self._status = None
         self._type = None
+        self._imei = None
+        self._traffic_type = None
+        self._volume_mode = None
+        self._availability_zone = None
         self._metadata = None
         self._create_time = None
         self._update_time = None
@@ -98,12 +123,22 @@ class Phone:
             self.phone_model_name = phone_model_name
         if image_id is not None:
             self.image_id = image_id
+        if image_version is not None:
+            self.image_version = image_version
         if vnc_enable is not None:
             self.vnc_enable = vnc_enable
         if status is not None:
             self.status = status
         if type is not None:
             self.type = type
+        if imei is not None:
+            self.imei = imei
+        if traffic_type is not None:
+            self.traffic_type = traffic_type
+        if volume_mode is not None:
+            self.volume_mode = volume_mode
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         if metadata is not None:
             self.metadata = metadata
         if create_time is not None:
@@ -222,6 +257,28 @@ class Phone:
         self._image_id = image_id
 
     @property
+    def image_version(self):
+        """Gets the image_version of this Phone.
+
+        镜像版本。
+
+        :return: The image_version of this Phone.
+        :rtype: str
+        """
+        return self._image_version
+
+    @image_version.setter
+    def image_version(self, image_version):
+        """Sets the image_version of this Phone.
+
+        镜像版本。
+
+        :param image_version: The image_version of this Phone.
+        :type image_version: str
+        """
+        self._image_version = image_version
+
+    @property
     def vnc_enable(self):
         """Gets the vnc_enable of this Phone.
 
@@ -286,6 +343,94 @@ class Phone:
         :type type: int
         """
         self._type = type
+
+    @property
+    def imei(self):
+        """Gets the imei of this Phone.
+
+        imei码。
+
+        :return: The imei of this Phone.
+        :rtype: str
+        """
+        return self._imei
+
+    @imei.setter
+    def imei(self, imei):
+        """Sets the imei of this Phone.
+
+        imei码。
+
+        :param imei: The imei of this Phone.
+        :type imei: str
+        """
+        self._imei = imei
+
+    @property
+    def traffic_type(self):
+        """Gets the traffic_type of this Phone.
+
+        手机路由类型。 - direct：默认路由 - routing：路由到编码容器
+
+        :return: The traffic_type of this Phone.
+        :rtype: str
+        """
+        return self._traffic_type
+
+    @traffic_type.setter
+    def traffic_type(self, traffic_type):
+        """Sets the traffic_type of this Phone.
+
+        手机路由类型。 - direct：默认路由 - routing：路由到编码容器
+
+        :param traffic_type: The traffic_type of this Phone.
+        :type traffic_type: str
+        """
+        self._traffic_type = traffic_type
+
+    @property
+    def volume_mode(self):
+        """Gets the volume_mode of this Phone.
+
+        手机物理磁盘是否独立。 - 0：不独立 - 1：独立
+
+        :return: The volume_mode of this Phone.
+        :rtype: int
+        """
+        return self._volume_mode
+
+    @volume_mode.setter
+    def volume_mode(self, volume_mode):
+        """Sets the volume_mode of this Phone.
+
+        手机物理磁盘是否独立。 - 0：不独立 - 1：独立
+
+        :param volume_mode: The volume_mode of this Phone.
+        :type volume_mode: int
+        """
+        self._volume_mode = volume_mode
+
+    @property
+    def availability_zone(self):
+        """Gets the availability_zone of this Phone.
+
+        云手机服务器所在的可用区。
+
+        :return: The availability_zone of this Phone.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        """Sets the availability_zone of this Phone.
+
+        云手机服务器所在的可用区。
+
+        :param availability_zone: The availability_zone of this Phone.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def metadata(self):

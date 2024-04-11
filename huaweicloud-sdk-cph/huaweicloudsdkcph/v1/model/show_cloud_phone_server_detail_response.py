@@ -36,6 +36,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         'addresses': 'list[Address]',
         'band_widths': 'list[Bandwidth]',
         'volumes': 'list[Volume]',
+        'share_volume_info': 'ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo',
         'network_version': 'str',
         'enterprise_project_id': 'str',
         'security_groups': 'list[str]',
@@ -62,6 +63,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         'addresses': 'addresses',
         'band_widths': 'band_widths',
         'volumes': 'volumes',
+        'share_volume_info': 'share_volume_info',
         'network_version': 'network_version',
         'enterprise_project_id': 'enterprise_project_id',
         'security_groups': 'security_groups',
@@ -69,7 +71,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         'update_time': 'update_time'
     }
 
-    def __init__(self, request_id=None, server_name=None, availability_zone=None, server_id=None, server_model_name=None, phone_model_name=None, keypair_name=None, status=None, vpc_id=None, cidr=None, vpc_cidr=None, subnet_id=None, subnet_cidr=None, resource_project_id=None, metadata=None, addresses=None, band_widths=None, volumes=None, network_version=None, enterprise_project_id=None, security_groups=None, create_time=None, update_time=None):
+    def __init__(self, request_id=None, server_name=None, availability_zone=None, server_id=None, server_model_name=None, phone_model_name=None, keypair_name=None, status=None, vpc_id=None, cidr=None, vpc_cidr=None, subnet_id=None, subnet_cidr=None, resource_project_id=None, metadata=None, addresses=None, band_widths=None, volumes=None, share_volume_info=None, network_version=None, enterprise_project_id=None, security_groups=None, create_time=None, update_time=None):
         """ShowCloudPhoneServerDetailResponse
 
         The model defined in huaweicloud sdk
@@ -110,6 +112,8 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         :type band_widths: list[:class:`huaweicloudsdkcph.v1.Bandwidth`]
         :param volumes: 云手机服务器卷信息的结构体数组。
         :type volumes: list[:class:`huaweicloudsdkcph.v1.Volume`]
+        :param share_volume_info: 
+        :type share_volume_info: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo`
         :param network_version: 是否为自定义网络的云手机服务器标识。\&quot;v1\&quot;，非自定义网络的云手机服务器。\&quot;v2\&quot;，自定义网络的云手机服务器。支持按照网络版本字段进行筛选。
         :type network_version: str
         :param enterprise_project_id: 云手机服务器所属企业项目ID。
@@ -142,6 +146,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         self._addresses = None
         self._band_widths = None
         self._volumes = None
+        self._share_volume_info = None
         self._network_version = None
         self._enterprise_project_id = None
         self._security_groups = None
@@ -185,6 +190,8 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
             self.band_widths = band_widths
         if volumes is not None:
             self.volumes = volumes
+        if share_volume_info is not None:
+            self.share_volume_info = share_volume_info
         if network_version is not None:
             self.network_version = network_version
         if enterprise_project_id is not None:
@@ -587,6 +594,24 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         :type volumes: list[:class:`huaweicloudsdkcph.v1.Volume`]
         """
         self._volumes = volumes
+
+    @property
+    def share_volume_info(self):
+        """Gets the share_volume_info of this ShowCloudPhoneServerDetailResponse.
+
+        :return: The share_volume_info of this ShowCloudPhoneServerDetailResponse.
+        :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo`
+        """
+        return self._share_volume_info
+
+    @share_volume_info.setter
+    def share_volume_info(self, share_volume_info):
+        """Sets the share_volume_info of this ShowCloudPhoneServerDetailResponse.
+
+        :param share_volume_info: The share_volume_info of this ShowCloudPhoneServerDetailResponse.
+        :type share_volume_info: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo`
+        """
+        self._share_volume_info = share_volume_info
 
     @property
     def network_version(self):

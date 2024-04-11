@@ -19,6 +19,7 @@ class ListPostgresqlDatabasesRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
+        'db': 'str',
         'page': 'int',
         'limit': 'int'
     }
@@ -26,11 +27,12 @@ class ListPostgresqlDatabasesRequest:
     attribute_map = {
         'x_language': 'X-Language',
         'instance_id': 'instance_id',
+        'db': 'db',
         'page': 'page',
         'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, instance_id=None, page=None, limit=None):
+    def __init__(self, x_language=None, instance_id=None, db=None, page=None, limit=None):
         """ListPostgresqlDatabasesRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ListPostgresqlDatabasesRequest:
         :type x_language: str
         :param instance_id: 实例ID。
         :type instance_id: str
+        :param db: 数据库名称；忽略大小写模糊查询。
+        :type db: str
         :param page: 分页页码，从1开始。
         :type page: int
         :param limit: 每页数据条数。取值范围[1, 100]。
@@ -49,6 +53,7 @@ class ListPostgresqlDatabasesRequest:
 
         self._x_language = None
         self._instance_id = None
+        self._db = None
         self._page = None
         self._limit = None
         self.discriminator = None
@@ -56,6 +61,8 @@ class ListPostgresqlDatabasesRequest:
         if x_language is not None:
             self.x_language = x_language
         self.instance_id = instance_id
+        if db is not None:
+            self.db = db
         self.page = page
         self.limit = limit
 
@@ -102,6 +109,28 @@ class ListPostgresqlDatabasesRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def db(self):
+        """Gets the db of this ListPostgresqlDatabasesRequest.
+
+        数据库名称；忽略大小写模糊查询。
+
+        :return: The db of this ListPostgresqlDatabasesRequest.
+        :rtype: str
+        """
+        return self._db
+
+    @db.setter
+    def db(self, db):
+        """Sets the db of this ListPostgresqlDatabasesRequest.
+
+        数据库名称；忽略大小写模糊查询。
+
+        :param db: The db of this ListPostgresqlDatabasesRequest.
+        :type db: str
+        """
+        self._db = db
 
     @property
     def page(self):

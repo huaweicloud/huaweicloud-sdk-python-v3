@@ -101,75 +101,75 @@ class BizMetricVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码，更新时必填，创建是为空。
         :type id: int
-        :param name: 指标名称, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/
+        :param name: 指标名称。
         :type name: str
-        :param code: 指标编码
+        :param code: 指标编码。
         :type code: str
-        :param name_alias: 指标名称, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/
+        :param name_alias: 指标别名。
         :type name_alias: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param biz_catalog_id: 归属的流程架构的id
+        :param biz_catalog_id: 归属的流程架构的ID。
         :type biz_catalog_id: int
-        :param biz_catalog_path: 归属的流程架构路径
+        :param biz_catalog_path: 归属的流程架构路径。
         :type biz_catalog_path: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param data_origin: 数据来源
+        :param data_origin: 数据来源。
         :type data_origin: str
-        :param unit: 计量单位
+        :param unit: 计量单位。
         :type unit: str
-        :param time_filters: 统计周期(时间限定)
+        :param time_filters: 统计周期(时间限定)。
         :type time_filters: str
-        :param dimensions: 统计维度
+        :param dimensions: 统计维度。
         :type dimensions: str
-        :param general_filters: 统计口径/修饰词（通用限定）
+        :param general_filters: 统计口径和修饰词。
         :type general_filters: str
-        :param interval_type: 刷新频率
+        :param interval_type: 刷新频率。MINUTE(每分钟)、HOUR(每小时)、DAY(每天)、WEEK(每周)、MONTH(每月)、YEAR(每年)、REAL_TIME(实时)、HALF_HOUR(每半小时)、QUART(每15分钟)、DOUBLE_WEEK(每两周)、HALF_YEAR(每半年)、HALF_DAY(每半天)。
         :type interval_type: str
-        :param apply_scenario: 应用场景
+        :param apply_scenario: 应用场景。
         :type apply_scenario: str
-        :param technical_metric: 关联技术指标
+        :param technical_metric: 关联技术指标。
         :type technical_metric: int
-        :param technical_metric_name: 关联技术指标名称
+        :param technical_metric_name: 关联技术指标名称。
         :type technical_metric_name: str
         :param technical_metric_type: 
         :type technical_metric_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param measure: 度量对象
+        :param measure: 度量对象。
         :type measure: str
-        :param owner: 负责人，指标解释人
+        :param owner: 指标责任人。
         :type owner: str
-        :param owner_department: 指标管理部门, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/, 空格
+        :param owner_department: 指标管理部门。
         :type owner_department: str
-        :param destination: 设置目的
+        :param destination: 设置目的。
         :type destination: str
-        :param guid: 资产同步后的guid
+        :param guid: 资产同步后的guid。
         :type guid: str
-        :param definition: 指标定义
+        :param definition: 指标定义。
         :type definition: str
-        :param expression: 计算公式
+        :param expression: 计算公式。
         :type expression: str
-        :param remark: 备注
+        :param remark: 备注。
         :type remark: str
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param l1: 主题域分组中文名
+        :param l1: 主题域分组中文名，只读，创建和更新时无需填写。
         :type l1: str
-        :param l2: 主题域中文名
+        :param l2: 主题域中文名，只读，创建和更新时无需填写。
         :type l2: str
-        :param l3: 业务对象中文名
+        :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
         :param biz_metric: 
         :type biz_metric: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -288,7 +288,7 @@ class BizMetricVO:
     def id(self):
         """Gets the id of this BizMetricVO.
 
-        编码
+        编码，更新时必填，创建是为空。
 
         :return: The id of this BizMetricVO.
         :rtype: int
@@ -299,7 +299,7 @@ class BizMetricVO:
     def id(self, id):
         """Sets the id of this BizMetricVO.
 
-        编码
+        编码，更新时必填，创建是为空。
 
         :param id: The id of this BizMetricVO.
         :type id: int
@@ -310,7 +310,7 @@ class BizMetricVO:
     def name(self):
         """Gets the name of this BizMetricVO.
 
-        指标名称, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/
+        指标名称。
 
         :return: The name of this BizMetricVO.
         :rtype: str
@@ -321,7 +321,7 @@ class BizMetricVO:
     def name(self, name):
         """Sets the name of this BizMetricVO.
 
-        指标名称, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/
+        指标名称。
 
         :param name: The name of this BizMetricVO.
         :type name: str
@@ -332,7 +332,7 @@ class BizMetricVO:
     def code(self):
         """Gets the code of this BizMetricVO.
 
-        指标编码
+        指标编码。
 
         :return: The code of this BizMetricVO.
         :rtype: str
@@ -343,7 +343,7 @@ class BizMetricVO:
     def code(self, code):
         """Sets the code of this BizMetricVO.
 
-        指标编码
+        指标编码。
 
         :param code: The code of this BizMetricVO.
         :type code: str
@@ -354,7 +354,7 @@ class BizMetricVO:
     def name_alias(self):
         """Gets the name_alias of this BizMetricVO.
 
-        指标名称, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/
+        指标别名。
 
         :return: The name_alias of this BizMetricVO.
         :rtype: str
@@ -365,7 +365,7 @@ class BizMetricVO:
     def name_alias(self, name_alias):
         """Sets the name_alias of this BizMetricVO.
 
-        指标名称, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/
+        指标别名。
 
         :param name_alias: The name_alias of this BizMetricVO.
         :type name_alias: str
@@ -412,7 +412,7 @@ class BizMetricVO:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this BizMetricVO.
 
-        归属的流程架构的id
+        归属的流程架构的ID。
 
         :return: The biz_catalog_id of this BizMetricVO.
         :rtype: int
@@ -423,7 +423,7 @@ class BizMetricVO:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this BizMetricVO.
 
-        归属的流程架构的id
+        归属的流程架构的ID。
 
         :param biz_catalog_id: The biz_catalog_id of this BizMetricVO.
         :type biz_catalog_id: int
@@ -434,7 +434,7 @@ class BizMetricVO:
     def biz_catalog_path(self):
         """Gets the biz_catalog_path of this BizMetricVO.
 
-        归属的流程架构路径
+        归属的流程架构路径。
 
         :return: The biz_catalog_path of this BizMetricVO.
         :rtype: str
@@ -445,7 +445,7 @@ class BizMetricVO:
     def biz_catalog_path(self, biz_catalog_path):
         """Sets the biz_catalog_path of this BizMetricVO.
 
-        归属的流程架构路径
+        归属的流程架构路径。
 
         :param biz_catalog_path: The biz_catalog_path of this BizMetricVO.
         :type biz_catalog_path: str
@@ -456,7 +456,7 @@ class BizMetricVO:
     def create_by(self):
         """Gets the create_by of this BizMetricVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this BizMetricVO.
         :rtype: str
@@ -467,7 +467,7 @@ class BizMetricVO:
     def create_by(self, create_by):
         """Sets the create_by of this BizMetricVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this BizMetricVO.
         :type create_by: str
@@ -478,7 +478,7 @@ class BizMetricVO:
     def update_by(self):
         """Gets the update_by of this BizMetricVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this BizMetricVO.
         :rtype: str
@@ -489,7 +489,7 @@ class BizMetricVO:
     def update_by(self, update_by):
         """Sets the update_by of this BizMetricVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this BizMetricVO.
         :type update_by: str
@@ -500,7 +500,7 @@ class BizMetricVO:
     def data_origin(self):
         """Gets the data_origin of this BizMetricVO.
 
-        数据来源
+        数据来源。
 
         :return: The data_origin of this BizMetricVO.
         :rtype: str
@@ -511,7 +511,7 @@ class BizMetricVO:
     def data_origin(self, data_origin):
         """Sets the data_origin of this BizMetricVO.
 
-        数据来源
+        数据来源。
 
         :param data_origin: The data_origin of this BizMetricVO.
         :type data_origin: str
@@ -522,7 +522,7 @@ class BizMetricVO:
     def unit(self):
         """Gets the unit of this BizMetricVO.
 
-        计量单位
+        计量单位。
 
         :return: The unit of this BizMetricVO.
         :rtype: str
@@ -533,7 +533,7 @@ class BizMetricVO:
     def unit(self, unit):
         """Sets the unit of this BizMetricVO.
 
-        计量单位
+        计量单位。
 
         :param unit: The unit of this BizMetricVO.
         :type unit: str
@@ -544,7 +544,7 @@ class BizMetricVO:
     def time_filters(self):
         """Gets the time_filters of this BizMetricVO.
 
-        统计周期(时间限定)
+        统计周期(时间限定)。
 
         :return: The time_filters of this BizMetricVO.
         :rtype: str
@@ -555,7 +555,7 @@ class BizMetricVO:
     def time_filters(self, time_filters):
         """Sets the time_filters of this BizMetricVO.
 
-        统计周期(时间限定)
+        统计周期(时间限定)。
 
         :param time_filters: The time_filters of this BizMetricVO.
         :type time_filters: str
@@ -566,7 +566,7 @@ class BizMetricVO:
     def dimensions(self):
         """Gets the dimensions of this BizMetricVO.
 
-        统计维度
+        统计维度。
 
         :return: The dimensions of this BizMetricVO.
         :rtype: str
@@ -577,7 +577,7 @@ class BizMetricVO:
     def dimensions(self, dimensions):
         """Sets the dimensions of this BizMetricVO.
 
-        统计维度
+        统计维度。
 
         :param dimensions: The dimensions of this BizMetricVO.
         :type dimensions: str
@@ -588,7 +588,7 @@ class BizMetricVO:
     def general_filters(self):
         """Gets the general_filters of this BizMetricVO.
 
-        统计口径/修饰词（通用限定）
+        统计口径和修饰词。
 
         :return: The general_filters of this BizMetricVO.
         :rtype: str
@@ -599,7 +599,7 @@ class BizMetricVO:
     def general_filters(self, general_filters):
         """Sets the general_filters of this BizMetricVO.
 
-        统计口径/修饰词（通用限定）
+        统计口径和修饰词。
 
         :param general_filters: The general_filters of this BizMetricVO.
         :type general_filters: str
@@ -610,7 +610,7 @@ class BizMetricVO:
     def interval_type(self):
         """Gets the interval_type of this BizMetricVO.
 
-        刷新频率
+        刷新频率。MINUTE(每分钟)、HOUR(每小时)、DAY(每天)、WEEK(每周)、MONTH(每月)、YEAR(每年)、REAL_TIME(实时)、HALF_HOUR(每半小时)、QUART(每15分钟)、DOUBLE_WEEK(每两周)、HALF_YEAR(每半年)、HALF_DAY(每半天)。
 
         :return: The interval_type of this BizMetricVO.
         :rtype: str
@@ -621,7 +621,7 @@ class BizMetricVO:
     def interval_type(self, interval_type):
         """Sets the interval_type of this BizMetricVO.
 
-        刷新频率
+        刷新频率。MINUTE(每分钟)、HOUR(每小时)、DAY(每天)、WEEK(每周)、MONTH(每月)、YEAR(每年)、REAL_TIME(实时)、HALF_HOUR(每半小时)、QUART(每15分钟)、DOUBLE_WEEK(每两周)、HALF_YEAR(每半年)、HALF_DAY(每半天)。
 
         :param interval_type: The interval_type of this BizMetricVO.
         :type interval_type: str
@@ -632,7 +632,7 @@ class BizMetricVO:
     def apply_scenario(self):
         """Gets the apply_scenario of this BizMetricVO.
 
-        应用场景
+        应用场景。
 
         :return: The apply_scenario of this BizMetricVO.
         :rtype: str
@@ -643,7 +643,7 @@ class BizMetricVO:
     def apply_scenario(self, apply_scenario):
         """Sets the apply_scenario of this BizMetricVO.
 
-        应用场景
+        应用场景。
 
         :param apply_scenario: The apply_scenario of this BizMetricVO.
         :type apply_scenario: str
@@ -654,7 +654,7 @@ class BizMetricVO:
     def technical_metric(self):
         """Gets the technical_metric of this BizMetricVO.
 
-        关联技术指标
+        关联技术指标。
 
         :return: The technical_metric of this BizMetricVO.
         :rtype: int
@@ -665,7 +665,7 @@ class BizMetricVO:
     def technical_metric(self, technical_metric):
         """Sets the technical_metric of this BizMetricVO.
 
-        关联技术指标
+        关联技术指标。
 
         :param technical_metric: The technical_metric of this BizMetricVO.
         :type technical_metric: int
@@ -676,7 +676,7 @@ class BizMetricVO:
     def technical_metric_name(self):
         """Gets the technical_metric_name of this BizMetricVO.
 
-        关联技术指标名称
+        关联技术指标名称。
 
         :return: The technical_metric_name of this BizMetricVO.
         :rtype: str
@@ -687,7 +687,7 @@ class BizMetricVO:
     def technical_metric_name(self, technical_metric_name):
         """Sets the technical_metric_name of this BizMetricVO.
 
-        关联技术指标名称
+        关联技术指标名称。
 
         :param technical_metric_name: The technical_metric_name of this BizMetricVO.
         :type technical_metric_name: str
@@ -716,7 +716,7 @@ class BizMetricVO:
     def measure(self):
         """Gets the measure of this BizMetricVO.
 
-        度量对象
+        度量对象。
 
         :return: The measure of this BizMetricVO.
         :rtype: str
@@ -727,7 +727,7 @@ class BizMetricVO:
     def measure(self, measure):
         """Sets the measure of this BizMetricVO.
 
-        度量对象
+        度量对象。
 
         :param measure: The measure of this BizMetricVO.
         :type measure: str
@@ -738,7 +738,7 @@ class BizMetricVO:
     def owner(self):
         """Gets the owner of this BizMetricVO.
 
-        负责人，指标解释人
+        指标责任人。
 
         :return: The owner of this BizMetricVO.
         :rtype: str
@@ -749,7 +749,7 @@ class BizMetricVO:
     def owner(self, owner):
         """Sets the owner of this BizMetricVO.
 
-        负责人，指标解释人
+        指标责任人。
 
         :param owner: The owner of this BizMetricVO.
         :type owner: str
@@ -760,7 +760,7 @@ class BizMetricVO:
     def owner_department(self):
         """Gets the owner_department of this BizMetricVO.
 
-        指标管理部门, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/, 空格
+        指标管理部门。
 
         :return: The owner_department of this BizMetricVO.
         :rtype: str
@@ -771,7 +771,7 @@ class BizMetricVO:
     def owner_department(self, owner_department):
         """Sets the owner_department of this BizMetricVO.
 
-        指标管理部门, 支持中英文, 数字, 下划线, 中划线, 中英文括号()（）/, 空格
+        指标管理部门。
 
         :param owner_department: The owner_department of this BizMetricVO.
         :type owner_department: str
@@ -782,7 +782,7 @@ class BizMetricVO:
     def destination(self):
         """Gets the destination of this BizMetricVO.
 
-        设置目的
+        设置目的。
 
         :return: The destination of this BizMetricVO.
         :rtype: str
@@ -793,7 +793,7 @@ class BizMetricVO:
     def destination(self, destination):
         """Sets the destination of this BizMetricVO.
 
-        设置目的
+        设置目的。
 
         :param destination: The destination of this BizMetricVO.
         :type destination: str
@@ -804,7 +804,7 @@ class BizMetricVO:
     def guid(self):
         """Gets the guid of this BizMetricVO.
 
-        资产同步后的guid
+        资产同步后的guid。
 
         :return: The guid of this BizMetricVO.
         :rtype: str
@@ -815,7 +815,7 @@ class BizMetricVO:
     def guid(self, guid):
         """Sets the guid of this BizMetricVO.
 
-        资产同步后的guid
+        资产同步后的guid。
 
         :param guid: The guid of this BizMetricVO.
         :type guid: str
@@ -826,7 +826,7 @@ class BizMetricVO:
     def definition(self):
         """Gets the definition of this BizMetricVO.
 
-        指标定义
+        指标定义。
 
         :return: The definition of this BizMetricVO.
         :rtype: str
@@ -837,7 +837,7 @@ class BizMetricVO:
     def definition(self, definition):
         """Sets the definition of this BizMetricVO.
 
-        指标定义
+        指标定义。
 
         :param definition: The definition of this BizMetricVO.
         :type definition: str
@@ -848,7 +848,7 @@ class BizMetricVO:
     def expression(self):
         """Gets the expression of this BizMetricVO.
 
-        计算公式
+        计算公式。
 
         :return: The expression of this BizMetricVO.
         :rtype: str
@@ -859,7 +859,7 @@ class BizMetricVO:
     def expression(self, expression):
         """Sets the expression of this BizMetricVO.
 
-        计算公式
+        计算公式。
 
         :param expression: The expression of this BizMetricVO.
         :type expression: str
@@ -870,7 +870,7 @@ class BizMetricVO:
     def remark(self):
         """Gets the remark of this BizMetricVO.
 
-        备注
+        备注。
 
         :return: The remark of this BizMetricVO.
         :rtype: str
@@ -881,7 +881,7 @@ class BizMetricVO:
     def remark(self, remark):
         """Sets the remark of this BizMetricVO.
 
-        备注
+        备注。
 
         :param remark: The remark of this BizMetricVO.
         :type remark: str
@@ -928,7 +928,7 @@ class BizMetricVO:
     def create_time(self):
         """Gets the create_time of this BizMetricVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this BizMetricVO.
         :rtype: datetime
@@ -939,7 +939,7 @@ class BizMetricVO:
     def create_time(self, create_time):
         """Sets the create_time of this BizMetricVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this BizMetricVO.
         :type create_time: datetime
@@ -950,7 +950,7 @@ class BizMetricVO:
     def update_time(self):
         """Gets the update_time of this BizMetricVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this BizMetricVO.
         :rtype: datetime
@@ -961,7 +961,7 @@ class BizMetricVO:
     def update_time(self, update_time):
         """Sets the update_time of this BizMetricVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this BizMetricVO.
         :type update_time: datetime
@@ -972,7 +972,7 @@ class BizMetricVO:
     def l1(self):
         """Gets the l1 of this BizMetricVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :return: The l1 of this BizMetricVO.
         :rtype: str
@@ -983,7 +983,7 @@ class BizMetricVO:
     def l1(self, l1):
         """Sets the l1 of this BizMetricVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :param l1: The l1 of this BizMetricVO.
         :type l1: str
@@ -994,7 +994,7 @@ class BizMetricVO:
     def l2(self):
         """Gets the l2 of this BizMetricVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :return: The l2 of this BizMetricVO.
         :rtype: str
@@ -1005,7 +1005,7 @@ class BizMetricVO:
     def l2(self, l2):
         """Sets the l2 of this BizMetricVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :param l2: The l2 of this BizMetricVO.
         :type l2: str
@@ -1016,7 +1016,7 @@ class BizMetricVO:
     def l3(self):
         """Gets the l3 of this BizMetricVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :return: The l3 of this BizMetricVO.
         :rtype: str
@@ -1027,7 +1027,7 @@ class BizMetricVO:
     def l3(self, l3):
         """Sets the l3 of this BizMetricVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :param l3: The l3 of this BizMetricVO.
         :type l3: str

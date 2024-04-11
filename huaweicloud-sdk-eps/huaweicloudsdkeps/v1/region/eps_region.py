@@ -7,7 +7,8 @@ class EpsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("EPS")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://eps.myhuaweicloud.com")
+                        "https://eps.myhuaweicloud.com",
+                        "https://eps.myhuaweicloud.cn")
     EU_WEST_101 = Region("eu-west-101",
                         "https://eps.eu-west-101.myhuaweicloud.eu")
 

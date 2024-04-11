@@ -2502,6 +2502,77 @@ class DrsClient(Client):
 
         return http_info
 
+    def lists_agency_permissions(self, request):
+        """查询委托的权限列表
+
+        根据源库类型，目标库类型，是否自建，获取委托所需要的权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListsAgencyPermissions
+        :type request: :class:`huaweicloudsdkdrs.v5.ListsAgencyPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ListsAgencyPermissionsResponse`
+        """
+        http_info = self._lists_agency_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def lists_agency_permissions_invoker(self, request):
+        http_info = self._lists_agency_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _lists_agency_permissions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/agency/permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListsAgencyPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'source_type' in local_var_params:
+            query_params.append(('source_type', local_var_params['source_type']))
+        if 'target_type' in local_var_params:
+            query_params.append(('target_type', local_var_params['target_type']))
+        if 'is_non_dbs' in local_var_params:
+            query_params.append(('is_non_dbs', local_var_params['is_non_dbs']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_actions(self, request):
         """获取指定任务操作信息
 
@@ -3964,6 +4035,89 @@ class DrsClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_replay_results(self, request):
+        """查询录制回放结果
+
+        获取录制回放结果数据，包括：回放基于时间维度统计信息，异常SQL及统计结果、慢SQL及统计结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowReplayResults
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowReplayResultsRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowReplayResultsResponse`
+        """
+        http_info = self._show_replay_results_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_replay_results_invoker(self, request):
+        http_info = self._show_replay_results_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_replay_results_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/replay-results",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReplayResultsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'target_name' in local_var_params:
+            query_params.append(('target_name', local_var_params['target_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:

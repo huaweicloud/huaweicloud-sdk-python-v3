@@ -31,9 +31,9 @@ class AtomicIndexVOSearchResultDataValue:
 
         The model defined in huaweicloud sdk
 
-        :param records: AtomicIndexVO数组
+        :param records: AtomicIndexVO数组。
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVO`]
-        :param total: 总数
+        :param total: 总数。
         :type total: int
         """
         
@@ -52,7 +52,7 @@ class AtomicIndexVOSearchResultDataValue:
     def records(self):
         """Gets the records of this AtomicIndexVOSearchResultDataValue.
 
-        AtomicIndexVO数组
+        AtomicIndexVO数组。
 
         :return: The records of this AtomicIndexVOSearchResultDataValue.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVO`]
@@ -63,7 +63,7 @@ class AtomicIndexVOSearchResultDataValue:
     def records(self, records):
         """Sets the records of this AtomicIndexVOSearchResultDataValue.
 
-        AtomicIndexVO数组
+        AtomicIndexVO数组。
 
         :param records: The records of this AtomicIndexVOSearchResultDataValue.
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVO`]
@@ -74,7 +74,7 @@ class AtomicIndexVOSearchResultDataValue:
     def total(self):
         """Gets the total of this AtomicIndexVOSearchResultDataValue.
 
-        总数
+        总数。
 
         :return: The total of this AtomicIndexVOSearchResultDataValue.
         :rtype: int
@@ -85,7 +85,7 @@ class AtomicIndexVOSearchResultDataValue:
     def total(self, total):
         """Sets the total of this AtomicIndexVOSearchResultDataValue.
 
-        总数
+        总数。
 
         :param total: The total of this AtomicIndexVOSearchResultDataValue.
         :type total: int

@@ -41,19 +41,19 @@ class DimensionHierarchiesVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码。
         :type id: int
-        :param name: 层级名称
+        :param name: 层级名称。
         :type name: str
-        :param attrs: 
+        :param attrs: 层级包含的属性。
         :type attrs: list[:class:`huaweicloudsdkdataartsstudio.v1.HierarchiesAttrVO`]
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
         """
         
@@ -87,7 +87,7 @@ class DimensionHierarchiesVO:
     def id(self):
         """Gets the id of this DimensionHierarchiesVO.
 
-        编码
+        编码。
 
         :return: The id of this DimensionHierarchiesVO.
         :rtype: int
@@ -98,7 +98,7 @@ class DimensionHierarchiesVO:
     def id(self, id):
         """Sets the id of this DimensionHierarchiesVO.
 
-        编码
+        编码。
 
         :param id: The id of this DimensionHierarchiesVO.
         :type id: int
@@ -109,7 +109,7 @@ class DimensionHierarchiesVO:
     def name(self):
         """Gets the name of this DimensionHierarchiesVO.
 
-        层级名称
+        层级名称。
 
         :return: The name of this DimensionHierarchiesVO.
         :rtype: str
@@ -120,7 +120,7 @@ class DimensionHierarchiesVO:
     def name(self, name):
         """Sets the name of this DimensionHierarchiesVO.
 
-        层级名称
+        层级名称。
 
         :param name: The name of this DimensionHierarchiesVO.
         :type name: str
@@ -131,6 +131,8 @@ class DimensionHierarchiesVO:
     def attrs(self):
         """Gets the attrs of this DimensionHierarchiesVO.
 
+        层级包含的属性。
+
         :return: The attrs of this DimensionHierarchiesVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.HierarchiesAttrVO`]
         """
@@ -139,6 +141,8 @@ class DimensionHierarchiesVO:
     @attrs.setter
     def attrs(self, attrs):
         """Sets the attrs of this DimensionHierarchiesVO.
+
+        层级包含的属性。
 
         :param attrs: The attrs of this DimensionHierarchiesVO.
         :type attrs: list[:class:`huaweicloudsdkdataartsstudio.v1.HierarchiesAttrVO`]
@@ -149,7 +153,7 @@ class DimensionHierarchiesVO:
     def create_time(self):
         """Gets the create_time of this DimensionHierarchiesVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this DimensionHierarchiesVO.
         :rtype: datetime
@@ -160,7 +164,7 @@ class DimensionHierarchiesVO:
     def create_time(self, create_time):
         """Sets the create_time of this DimensionHierarchiesVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this DimensionHierarchiesVO.
         :type create_time: datetime
@@ -171,7 +175,7 @@ class DimensionHierarchiesVO:
     def update_time(self):
         """Gets the update_time of this DimensionHierarchiesVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this DimensionHierarchiesVO.
         :rtype: datetime
@@ -182,7 +186,7 @@ class DimensionHierarchiesVO:
     def update_time(self, update_time):
         """Sets the update_time of this DimensionHierarchiesVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this DimensionHierarchiesVO.
         :type update_time: datetime
@@ -193,7 +197,7 @@ class DimensionHierarchiesVO:
     def create_by(self):
         """Gets the create_by of this DimensionHierarchiesVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this DimensionHierarchiesVO.
         :rtype: str
@@ -204,7 +208,7 @@ class DimensionHierarchiesVO:
     def create_by(self, create_by):
         """Sets the create_by of this DimensionHierarchiesVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this DimensionHierarchiesVO.
         :type create_by: str
@@ -215,7 +219,7 @@ class DimensionHierarchiesVO:
     def update_by(self):
         """Gets the update_by of this DimensionHierarchiesVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this DimensionHierarchiesVO.
         :rtype: str
@@ -226,7 +230,7 @@ class DimensionHierarchiesVO:
     def update_by(self, update_by):
         """Sets the update_by of this DimensionHierarchiesVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this DimensionHierarchiesVO.
         :type update_by: str

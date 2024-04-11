@@ -39,17 +39,17 @@ class MappingSourceTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param table1_id: 表id
+        :param table1_id: 表1ID。
         :type table1_id: int
-        :param table2_id: 表id
+        :param table2_id: 表2ID。
         :type table2_id: int
-        :param table1_name: 表1名称
+        :param table1_name: 表1名称。
         :type table1_name: str
-        :param table2_name: 表2名称
+        :param table2_name: 表2名称。
         :type table2_name: str
-        :param join_type: 关联类型，左外连接，右外连接，内连接，全连接
+        :param join_type: 关联类型。LEFT(左外连接)、RIGHT(右外连接)、INNER(内连接)、FULL(全连接)。
         :type join_type: str
-        :param join_fields: on条件
+        :param join_fields: on条件。
         :type join_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingJoinFieldVO`]
         """
         
@@ -76,7 +76,7 @@ class MappingSourceTableVO:
     def table1_id(self):
         """Gets the table1_id of this MappingSourceTableVO.
 
-        表id
+        表1ID。
 
         :return: The table1_id of this MappingSourceTableVO.
         :rtype: int
@@ -87,7 +87,7 @@ class MappingSourceTableVO:
     def table1_id(self, table1_id):
         """Sets the table1_id of this MappingSourceTableVO.
 
-        表id
+        表1ID。
 
         :param table1_id: The table1_id of this MappingSourceTableVO.
         :type table1_id: int
@@ -98,7 +98,7 @@ class MappingSourceTableVO:
     def table2_id(self):
         """Gets the table2_id of this MappingSourceTableVO.
 
-        表id
+        表2ID。
 
         :return: The table2_id of this MappingSourceTableVO.
         :rtype: int
@@ -109,7 +109,7 @@ class MappingSourceTableVO:
     def table2_id(self, table2_id):
         """Sets the table2_id of this MappingSourceTableVO.
 
-        表id
+        表2ID。
 
         :param table2_id: The table2_id of this MappingSourceTableVO.
         :type table2_id: int
@@ -120,7 +120,7 @@ class MappingSourceTableVO:
     def table1_name(self):
         """Gets the table1_name of this MappingSourceTableVO.
 
-        表1名称
+        表1名称。
 
         :return: The table1_name of this MappingSourceTableVO.
         :rtype: str
@@ -131,7 +131,7 @@ class MappingSourceTableVO:
     def table1_name(self, table1_name):
         """Sets the table1_name of this MappingSourceTableVO.
 
-        表1名称
+        表1名称。
 
         :param table1_name: The table1_name of this MappingSourceTableVO.
         :type table1_name: str
@@ -142,7 +142,7 @@ class MappingSourceTableVO:
     def table2_name(self):
         """Gets the table2_name of this MappingSourceTableVO.
 
-        表2名称
+        表2名称。
 
         :return: The table2_name of this MappingSourceTableVO.
         :rtype: str
@@ -153,7 +153,7 @@ class MappingSourceTableVO:
     def table2_name(self, table2_name):
         """Sets the table2_name of this MappingSourceTableVO.
 
-        表2名称
+        表2名称。
 
         :param table2_name: The table2_name of this MappingSourceTableVO.
         :type table2_name: str
@@ -164,7 +164,7 @@ class MappingSourceTableVO:
     def join_type(self):
         """Gets the join_type of this MappingSourceTableVO.
 
-        关联类型，左外连接，右外连接，内连接，全连接
+        关联类型。LEFT(左外连接)、RIGHT(右外连接)、INNER(内连接)、FULL(全连接)。
 
         :return: The join_type of this MappingSourceTableVO.
         :rtype: str
@@ -175,7 +175,7 @@ class MappingSourceTableVO:
     def join_type(self, join_type):
         """Sets the join_type of this MappingSourceTableVO.
 
-        关联类型，左外连接，右外连接，内连接，全连接
+        关联类型。LEFT(左外连接)、RIGHT(右外连接)、INNER(内连接)、FULL(全连接)。
 
         :param join_type: The join_type of this MappingSourceTableVO.
         :type join_type: str
@@ -186,7 +186,7 @@ class MappingSourceTableVO:
     def join_fields(self):
         """Gets the join_fields of this MappingSourceTableVO.
 
-        on条件
+        on条件。
 
         :return: The join_fields of this MappingSourceTableVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingJoinFieldVO`]
@@ -197,7 +197,7 @@ class MappingSourceTableVO:
     def join_fields(self, join_fields):
         """Sets the join_fields of this MappingSourceTableVO.
 
-        on条件
+        on条件。
 
         :param join_fields: The join_fields of this MappingSourceTableVO.
         :type join_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingJoinFieldVO`]

@@ -18,6 +18,7 @@ class ListTableModelsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'name': 'str',
         'create_by': 'str',
         'approver': 'str',
@@ -34,6 +35,7 @@ class ListTableModelsRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'name': 'name',
         'create_by': 'create_by',
         'approver': 'approver',
@@ -48,42 +50,45 @@ class ListTableModelsRequest:
         'biz_catalog_id': 'biz_catalog_id'
     }
 
-    def __init__(self, workspace=None, name=None, create_by=None, approver=None, status=None, sync_status=None, sync_key=None, begin_time=None, end_time=None, limit=None, offset=None, model_id=None, biz_catalog_id=None):
+    def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, approver=None, status=None, sync_status=None, sync_key=None, begin_time=None, end_time=None, limit=None, offset=None, model_id=None, biz_catalog_id=None):
         """ListTableModelsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param name: 按名称或编码模糊查询
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param name: 按名称或编码模糊查询。
         :type name: str
-        :param create_by: 按创建者查询
+        :param create_by: 按创建者查询。
         :type create_by: str
-        :param approver: 按审核人查询
+        :param approver: 按审核人查询。
         :type approver: str
-        :param status: 业务状态
+        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
         :type status: str
-        :param sync_status: 
+        :param sync_status: 同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
         :type sync_status: str
-        :param sync_key: 
+        :param sync_key: 同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
         :type sync_key: list[str]
-        :param begin_time: 时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
-        :param end_time: 时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
-        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
-        :param model_id: 所属的模型的id
+        :param model_id: 所属关系建模的模型ID。
         :type model_id: str
-        :param biz_catalog_id: 所属的业务分层的id
+        :param biz_catalog_id: 所属的业务分层的ID。
         :type biz_catalog_id: str
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._name = None
         self._create_by = None
         self._approver = None
@@ -99,6 +104,8 @@ class ListTableModelsRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if name is not None:
             self.name = name
         if create_by is not None:
@@ -127,7 +134,7 @@ class ListTableModelsRequest:
     def workspace(self):
         """Gets the workspace of this ListTableModelsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListTableModelsRequest.
         :rtype: str
@@ -138,7 +145,7 @@ class ListTableModelsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListTableModelsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListTableModelsRequest.
         :type workspace: str
@@ -146,10 +153,32 @@ class ListTableModelsRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListTableModelsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListTableModelsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListTableModelsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListTableModelsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def name(self):
         """Gets the name of this ListTableModelsRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :return: The name of this ListTableModelsRequest.
         :rtype: str
@@ -160,7 +189,7 @@ class ListTableModelsRequest:
     def name(self, name):
         """Sets the name of this ListTableModelsRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :param name: The name of this ListTableModelsRequest.
         :type name: str
@@ -171,7 +200,7 @@ class ListTableModelsRequest:
     def create_by(self):
         """Gets the create_by of this ListTableModelsRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :return: The create_by of this ListTableModelsRequest.
         :rtype: str
@@ -182,7 +211,7 @@ class ListTableModelsRequest:
     def create_by(self, create_by):
         """Sets the create_by of this ListTableModelsRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :param create_by: The create_by of this ListTableModelsRequest.
         :type create_by: str
@@ -193,7 +222,7 @@ class ListTableModelsRequest:
     def approver(self):
         """Gets the approver of this ListTableModelsRequest.
 
-        按审核人查询
+        按审核人查询。
 
         :return: The approver of this ListTableModelsRequest.
         :rtype: str
@@ -204,7 +233,7 @@ class ListTableModelsRequest:
     def approver(self, approver):
         """Sets the approver of this ListTableModelsRequest.
 
-        按审核人查询
+        按审核人查询。
 
         :param approver: The approver of this ListTableModelsRequest.
         :type approver: str
@@ -215,7 +244,7 @@ class ListTableModelsRequest:
     def status(self):
         """Gets the status of this ListTableModelsRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :return: The status of this ListTableModelsRequest.
         :rtype: str
@@ -226,7 +255,7 @@ class ListTableModelsRequest:
     def status(self, status):
         """Sets the status of this ListTableModelsRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :param status: The status of this ListTableModelsRequest.
         :type status: str
@@ -237,6 +266,8 @@ class ListTableModelsRequest:
     def sync_status(self):
         """Gets the sync_status of this ListTableModelsRequest.
 
+        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+
         :return: The sync_status of this ListTableModelsRequest.
         :rtype: str
         """
@@ -245,6 +276,8 @@ class ListTableModelsRequest:
     @sync_status.setter
     def sync_status(self, sync_status):
         """Sets the sync_status of this ListTableModelsRequest.
+
+        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
 
         :param sync_status: The sync_status of this ListTableModelsRequest.
         :type sync_status: str
@@ -255,6 +288,8 @@ class ListTableModelsRequest:
     def sync_key(self):
         """Gets the sync_key of this ListTableModelsRequest.
 
+        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+
         :return: The sync_key of this ListTableModelsRequest.
         :rtype: list[str]
         """
@@ -263,6 +298,8 @@ class ListTableModelsRequest:
     @sync_key.setter
     def sync_key(self, sync_key):
         """Sets the sync_key of this ListTableModelsRequest.
+
+        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
 
         :param sync_key: The sync_key of this ListTableModelsRequest.
         :type sync_key: list[str]
@@ -273,7 +310,7 @@ class ListTableModelsRequest:
     def begin_time(self):
         """Gets the begin_time of this ListTableModelsRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The begin_time of this ListTableModelsRequest.
         :rtype: str
@@ -284,7 +321,7 @@ class ListTableModelsRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListTableModelsRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param begin_time: The begin_time of this ListTableModelsRequest.
         :type begin_time: str
@@ -295,7 +332,7 @@ class ListTableModelsRequest:
     def end_time(self):
         """Gets the end_time of this ListTableModelsRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The end_time of this ListTableModelsRequest.
         :rtype: str
@@ -306,7 +343,7 @@ class ListTableModelsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListTableModelsRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param end_time: The end_time of this ListTableModelsRequest.
         :type end_time: str
@@ -317,7 +354,7 @@ class ListTableModelsRequest:
     def limit(self):
         """Gets the limit of this ListTableModelsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListTableModelsRequest.
         :rtype: int
@@ -328,7 +365,7 @@ class ListTableModelsRequest:
     def limit(self, limit):
         """Sets the limit of this ListTableModelsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListTableModelsRequest.
         :type limit: int
@@ -339,7 +376,7 @@ class ListTableModelsRequest:
     def offset(self):
         """Gets the offset of this ListTableModelsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :return: The offset of this ListTableModelsRequest.
         :rtype: int
@@ -350,7 +387,7 @@ class ListTableModelsRequest:
     def offset(self, offset):
         """Sets the offset of this ListTableModelsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :param offset: The offset of this ListTableModelsRequest.
         :type offset: int
@@ -361,7 +398,7 @@ class ListTableModelsRequest:
     def model_id(self):
         """Gets the model_id of this ListTableModelsRequest.
 
-        所属的模型的id
+        所属关系建模的模型ID。
 
         :return: The model_id of this ListTableModelsRequest.
         :rtype: str
@@ -372,7 +409,7 @@ class ListTableModelsRequest:
     def model_id(self, model_id):
         """Sets the model_id of this ListTableModelsRequest.
 
-        所属的模型的id
+        所属关系建模的模型ID。
 
         :param model_id: The model_id of this ListTableModelsRequest.
         :type model_id: str
@@ -383,7 +420,7 @@ class ListTableModelsRequest:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this ListTableModelsRequest.
 
-        所属的业务分层的id
+        所属的业务分层的ID。
 
         :return: The biz_catalog_id of this ListTableModelsRequest.
         :rtype: str
@@ -394,7 +431,7 @@ class ListTableModelsRequest:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this ListTableModelsRequest.
 
-        所属的业务分层的id
+        所属的业务分层的ID。
 
         :param biz_catalog_id: The biz_catalog_id of this ListTableModelsRequest.
         :type biz_catalog_id: str

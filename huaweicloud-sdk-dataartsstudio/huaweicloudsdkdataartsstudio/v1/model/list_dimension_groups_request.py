@@ -18,6 +18,7 @@ class ListDimensionGroupsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'table_id': 'int',
         'biz_type': 'str',
         'limit': 'int',
@@ -26,32 +27,36 @@ class ListDimensionGroupsRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'table_id': 'table_id',
         'biz_type': 'biz_type',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, table_id=None, biz_type=None, limit=None, offset=None):
+    def __init__(self, workspace=None, x_project_id=None, table_id=None, biz_type=None, limit=None, offset=None):
         """ListDimensionGroupsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param table_id: 关联表id
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param table_id: 关联表的ID。
         :type table_id: int
-        :param biz_type: 按业务类型查询
+        :param biz_type: 按业务类型查询。
         :type biz_type: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
-        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._table_id = None
         self._biz_type = None
         self._limit = None
@@ -59,6 +64,8 @@ class ListDimensionGroupsRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if table_id is not None:
             self.table_id = table_id
         if biz_type is not None:
@@ -72,7 +79,7 @@ class ListDimensionGroupsRequest:
     def workspace(self):
         """Gets the workspace of this ListDimensionGroupsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListDimensionGroupsRequest.
         :rtype: str
@@ -83,7 +90,7 @@ class ListDimensionGroupsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListDimensionGroupsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListDimensionGroupsRequest.
         :type workspace: str
@@ -91,10 +98,32 @@ class ListDimensionGroupsRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListDimensionGroupsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListDimensionGroupsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListDimensionGroupsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListDimensionGroupsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def table_id(self):
         """Gets the table_id of this ListDimensionGroupsRequest.
 
-        关联表id
+        关联表的ID。
 
         :return: The table_id of this ListDimensionGroupsRequest.
         :rtype: int
@@ -105,7 +134,7 @@ class ListDimensionGroupsRequest:
     def table_id(self, table_id):
         """Sets the table_id of this ListDimensionGroupsRequest.
 
-        关联表id
+        关联表的ID。
 
         :param table_id: The table_id of this ListDimensionGroupsRequest.
         :type table_id: int
@@ -116,7 +145,7 @@ class ListDimensionGroupsRequest:
     def biz_type(self):
         """Gets the biz_type of this ListDimensionGroupsRequest.
 
-        按业务类型查询
+        按业务类型查询。
 
         :return: The biz_type of this ListDimensionGroupsRequest.
         :rtype: str
@@ -127,7 +156,7 @@ class ListDimensionGroupsRequest:
     def biz_type(self, biz_type):
         """Sets the biz_type of this ListDimensionGroupsRequest.
 
-        按业务类型查询
+        按业务类型查询。
 
         :param biz_type: The biz_type of this ListDimensionGroupsRequest.
         :type biz_type: str
@@ -138,7 +167,7 @@ class ListDimensionGroupsRequest:
     def limit(self):
         """Gets the limit of this ListDimensionGroupsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListDimensionGroupsRequest.
         :rtype: int
@@ -149,7 +178,7 @@ class ListDimensionGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListDimensionGroupsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListDimensionGroupsRequest.
         :type limit: int
@@ -160,7 +189,7 @@ class ListDimensionGroupsRequest:
     def offset(self):
         """Gets the offset of this ListDimensionGroupsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :return: The offset of this ListDimensionGroupsRequest.
         :rtype: int
@@ -171,7 +200,7 @@ class ListDimensionGroupsRequest:
     def offset(self, offset):
         """Sets the offset of this ListDimensionGroupsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :param offset: The offset of this ListDimensionGroupsRequest.
         :type offset: int

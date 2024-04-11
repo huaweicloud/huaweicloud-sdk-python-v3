@@ -53,14 +53,12 @@ class DefaultTopicRequest:
         self._topic_urn = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        self.id = id
         if project_id is not None:
             self.project_id = project_id
         if status is not None:
             self.status = status
-        if topic_urn is not None:
-            self.topic_urn = topic_urn
+        self.topic_urn = topic_urn
 
     @property
     def id(self):

@@ -37,7 +37,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
         :type id: str
         :param lifecycle_state: 
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        :param modifier: 更新人
+        :param modifier: 修改人。
         :type modifier: str
         """
         
@@ -97,7 +97,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def modifier(self):
         """Gets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        更新人
+        修改人。
 
         :return: The modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: str
@@ -108,7 +108,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def modifier(self, modifier):
         """Sets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        更新人
+        修改人。
 
         :param modifier: The modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :type modifier: str

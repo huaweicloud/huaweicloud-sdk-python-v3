@@ -59,9 +59,9 @@ class HistoryDataModelHistoryViewDTO:
         :type modifier: str
         :param last_update_time: 修改时间。
         :type last_update_time: str
-        :param rdm_version: 系统版本，用于存储MONGO。
+        :param rdm_version: 系统版本。
         :type rdm_version: int
-        :param rdm_operation_type: 操作类型，用于存储MONGO。
+        :param rdm_operation_type: 操作类型。 - CREATE：创建操作。 - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。
         :type rdm_operation_type: str
         :param rdm_extension_type: 扩展类型。
         :type rdm_extension_type: str
@@ -225,7 +225,7 @@ class HistoryDataModelHistoryViewDTO:
     def rdm_version(self):
         """Gets the rdm_version of this HistoryDataModelHistoryViewDTO.
 
-        系统版本，用于存储MONGO。
+        系统版本。
 
         :return: The rdm_version of this HistoryDataModelHistoryViewDTO.
         :rtype: int
@@ -236,7 +236,7 @@ class HistoryDataModelHistoryViewDTO:
     def rdm_version(self, rdm_version):
         """Sets the rdm_version of this HistoryDataModelHistoryViewDTO.
 
-        系统版本，用于存储MONGO。
+        系统版本。
 
         :param rdm_version: The rdm_version of this HistoryDataModelHistoryViewDTO.
         :type rdm_version: int
@@ -247,7 +247,7 @@ class HistoryDataModelHistoryViewDTO:
     def rdm_operation_type(self):
         """Gets the rdm_operation_type of this HistoryDataModelHistoryViewDTO.
 
-        操作类型，用于存储MONGO。
+        操作类型。 - CREATE：创建操作。 - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。
 
         :return: The rdm_operation_type of this HistoryDataModelHistoryViewDTO.
         :rtype: str
@@ -258,7 +258,7 @@ class HistoryDataModelHistoryViewDTO:
     def rdm_operation_type(self, rdm_operation_type):
         """Sets the rdm_operation_type of this HistoryDataModelHistoryViewDTO.
 
-        操作类型，用于存储MONGO。
+        操作类型。 - CREATE：创建操作。 - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。
 
         :param rdm_operation_type: The rdm_operation_type of this HistoryDataModelHistoryViewDTO.
         :type rdm_operation_type: str

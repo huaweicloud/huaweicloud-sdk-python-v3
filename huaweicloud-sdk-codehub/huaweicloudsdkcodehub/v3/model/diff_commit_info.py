@@ -24,7 +24,7 @@ class DiffCommitInfo:
         'new_file': 'bool',
         'renamed_file': 'bool',
         'deleted_file': 'bool',
-        'diff': 'bool'
+        'diff': 'str'
     }
 
     attribute_map = {
@@ -58,7 +58,7 @@ class DiffCommitInfo:
         :param deleted_file: 此次变更是否删除文件
         :type deleted_file: bool
         :param diff: 差异信息
-        :type diff: bool
+        :type diff: str
         """
         
         
@@ -251,7 +251,7 @@ class DiffCommitInfo:
         差异信息
 
         :return: The diff of this DiffCommitInfo.
-        :rtype: bool
+        :rtype: str
         """
         return self._diff
 
@@ -262,7 +262,7 @@ class DiffCommitInfo:
         差异信息
 
         :param diff: The diff of this DiffCommitInfo.
-        :type diff: bool
+        :type diff: str
         """
         self._diff = diff
 

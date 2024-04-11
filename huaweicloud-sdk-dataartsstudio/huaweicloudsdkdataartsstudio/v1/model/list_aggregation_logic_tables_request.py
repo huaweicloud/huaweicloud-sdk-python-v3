@@ -18,6 +18,7 @@ class ListAggregationLogicTablesRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'name': 'str',
         'create_by': 'str',
         'approver': 'str',
@@ -36,6 +37,7 @@ class ListAggregationLogicTablesRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'name': 'name',
         'create_by': 'create_by',
         'approver': 'approver',
@@ -52,38 +54,40 @@ class ListAggregationLogicTablesRequest:
         'auto_generate': 'auto_generate'
     }
 
-    def __init__(self, workspace=None, name=None, create_by=None, approver=None, owner=None, status=None, sync_status=None, sync_key=None, l3_id=None, begin_time=None, end_time=None, limit=None, offset=None, biz_catalog_id=None, auto_generate=None):
+    def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, approver=None, owner=None, status=None, sync_status=None, sync_key=None, l3_id=None, begin_time=None, end_time=None, limit=None, offset=None, biz_catalog_id=None, auto_generate=None):
         """ListAggregationLogicTablesRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param name: 按名称或编码模糊查询
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param name: 按名称或编码模糊查询。
         :type name: str
-        :param create_by: 按创建者查询
+        :param create_by: 按创建者查询。
         :type create_by: str
-        :param approver: 按审核人查询
+        :param approver: 按审核人查询。
         :type approver: str
-        :param owner: 按负责人查询
+        :param owner: 按负责人查询。
         :type owner: str
-        :param status: 业务状态
+        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
         :type status: str
-        :param sync_status: 
+        :param sync_status: 同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
         :type sync_status: str
-        :param sync_key: 
+        :param sync_key: 同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
         :type sync_key: list[str]
-        :param l3_id: 业务对象l3 id
+        :param l3_id: 业务对象l3的ID。
         :type l3_id: int
-        :param begin_time: 时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
-        :param end_time: 时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
-        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
-        :param biz_catalog_id: 所属的业务分层的id
+        :param biz_catalog_id: 所属的业务分层的ID。
         :type biz_catalog_id: str
         :param auto_generate: 是否自动生成
         :type auto_generate: bool
@@ -92,6 +96,7 @@ class ListAggregationLogicTablesRequest:
         
 
         self._workspace = None
+        self._x_project_id = None
         self._name = None
         self._create_by = None
         self._approver = None
@@ -109,6 +114,8 @@ class ListAggregationLogicTablesRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if name is not None:
             self.name = name
         if create_by is not None:
@@ -142,7 +149,7 @@ class ListAggregationLogicTablesRequest:
     def workspace(self):
         """Gets the workspace of this ListAggregationLogicTablesRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -153,7 +160,7 @@ class ListAggregationLogicTablesRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListAggregationLogicTablesRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListAggregationLogicTablesRequest.
         :type workspace: str
@@ -161,10 +168,32 @@ class ListAggregationLogicTablesRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListAggregationLogicTablesRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListAggregationLogicTablesRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListAggregationLogicTablesRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListAggregationLogicTablesRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def name(self):
         """Gets the name of this ListAggregationLogicTablesRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :return: The name of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -175,7 +204,7 @@ class ListAggregationLogicTablesRequest:
     def name(self, name):
         """Sets the name of this ListAggregationLogicTablesRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :param name: The name of this ListAggregationLogicTablesRequest.
         :type name: str
@@ -186,7 +215,7 @@ class ListAggregationLogicTablesRequest:
     def create_by(self):
         """Gets the create_by of this ListAggregationLogicTablesRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :return: The create_by of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -197,7 +226,7 @@ class ListAggregationLogicTablesRequest:
     def create_by(self, create_by):
         """Sets the create_by of this ListAggregationLogicTablesRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :param create_by: The create_by of this ListAggregationLogicTablesRequest.
         :type create_by: str
@@ -208,7 +237,7 @@ class ListAggregationLogicTablesRequest:
     def approver(self):
         """Gets the approver of this ListAggregationLogicTablesRequest.
 
-        按审核人查询
+        按审核人查询。
 
         :return: The approver of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -219,7 +248,7 @@ class ListAggregationLogicTablesRequest:
     def approver(self, approver):
         """Sets the approver of this ListAggregationLogicTablesRequest.
 
-        按审核人查询
+        按审核人查询。
 
         :param approver: The approver of this ListAggregationLogicTablesRequest.
         :type approver: str
@@ -230,7 +259,7 @@ class ListAggregationLogicTablesRequest:
     def owner(self):
         """Gets the owner of this ListAggregationLogicTablesRequest.
 
-        按负责人查询
+        按负责人查询。
 
         :return: The owner of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -241,7 +270,7 @@ class ListAggregationLogicTablesRequest:
     def owner(self, owner):
         """Sets the owner of this ListAggregationLogicTablesRequest.
 
-        按负责人查询
+        按负责人查询。
 
         :param owner: The owner of this ListAggregationLogicTablesRequest.
         :type owner: str
@@ -252,7 +281,7 @@ class ListAggregationLogicTablesRequest:
     def status(self):
         """Gets the status of this ListAggregationLogicTablesRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :return: The status of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -263,7 +292,7 @@ class ListAggregationLogicTablesRequest:
     def status(self, status):
         """Sets the status of this ListAggregationLogicTablesRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :param status: The status of this ListAggregationLogicTablesRequest.
         :type status: str
@@ -274,6 +303,8 @@ class ListAggregationLogicTablesRequest:
     def sync_status(self):
         """Gets the sync_status of this ListAggregationLogicTablesRequest.
 
+        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
+
         :return: The sync_status of this ListAggregationLogicTablesRequest.
         :rtype: str
         """
@@ -282,6 +313,8 @@ class ListAggregationLogicTablesRequest:
     @sync_status.setter
     def sync_status(self, sync_status):
         """Sets the sync_status of this ListAggregationLogicTablesRequest.
+
+        同步状态枚举。RUNNING(同步中)、NO_NEED(未同步)、SUMMARY_SUCCESS(整体成功)、SUMMARY_FAILED(整体失败)。
 
         :param sync_status: The sync_status of this ListAggregationLogicTablesRequest.
         :type sync_status: str
@@ -292,6 +325,8 @@ class ListAggregationLogicTablesRequest:
     def sync_key(self):
         """Gets the sync_key of this ListAggregationLogicTablesRequest.
 
+        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
+
         :return: The sync_key of this ListAggregationLogicTablesRequest.
         :rtype: list[str]
         """
@@ -300,6 +335,8 @@ class ListAggregationLogicTablesRequest:
     @sync_key.setter
     def sync_key(self, sync_key):
         """Sets the sync_key of this ListAggregationLogicTablesRequest.
+
+        同步任务类型枚举。BUSINESS_ASSET(同步业务资产)、DATA_QUALITY(创建质量作业)、TECHNICAL_ASSET(同步技术资产)、META_DATA_LINK(资产关联)、PHYSICAL_TABLE(创建表（生产环境）)、DEV_PHYSICAL_TABLE(创建表（开发环境）)、DLF_TASK(创建数据开发作业)、MATERIALIZATION(数值落库（码表）)、PUBLISH_TO_DLM(发布数据服务API)、SUMMARY_STATUS(整体状态)。
 
         :param sync_key: The sync_key of this ListAggregationLogicTablesRequest.
         :type sync_key: list[str]
@@ -310,7 +347,7 @@ class ListAggregationLogicTablesRequest:
     def l3_id(self):
         """Gets the l3_id of this ListAggregationLogicTablesRequest.
 
-        业务对象l3 id
+        业务对象l3的ID。
 
         :return: The l3_id of this ListAggregationLogicTablesRequest.
         :rtype: int
@@ -321,7 +358,7 @@ class ListAggregationLogicTablesRequest:
     def l3_id(self, l3_id):
         """Sets the l3_id of this ListAggregationLogicTablesRequest.
 
-        业务对象l3 id
+        业务对象l3的ID。
 
         :param l3_id: The l3_id of this ListAggregationLogicTablesRequest.
         :type l3_id: int
@@ -332,7 +369,7 @@ class ListAggregationLogicTablesRequest:
     def begin_time(self):
         """Gets the begin_time of this ListAggregationLogicTablesRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The begin_time of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -343,7 +380,7 @@ class ListAggregationLogicTablesRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListAggregationLogicTablesRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param begin_time: The begin_time of this ListAggregationLogicTablesRequest.
         :type begin_time: str
@@ -354,7 +391,7 @@ class ListAggregationLogicTablesRequest:
     def end_time(self):
         """Gets the end_time of this ListAggregationLogicTablesRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The end_time of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -365,7 +402,7 @@ class ListAggregationLogicTablesRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListAggregationLogicTablesRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param end_time: The end_time of this ListAggregationLogicTablesRequest.
         :type end_time: str
@@ -376,7 +413,7 @@ class ListAggregationLogicTablesRequest:
     def limit(self):
         """Gets the limit of this ListAggregationLogicTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListAggregationLogicTablesRequest.
         :rtype: int
@@ -387,7 +424,7 @@ class ListAggregationLogicTablesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAggregationLogicTablesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListAggregationLogicTablesRequest.
         :type limit: int
@@ -398,7 +435,7 @@ class ListAggregationLogicTablesRequest:
     def offset(self):
         """Gets the offset of this ListAggregationLogicTablesRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :return: The offset of this ListAggregationLogicTablesRequest.
         :rtype: int
@@ -409,7 +446,7 @@ class ListAggregationLogicTablesRequest:
     def offset(self, offset):
         """Sets the offset of this ListAggregationLogicTablesRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :param offset: The offset of this ListAggregationLogicTablesRequest.
         :type offset: int
@@ -420,7 +457,7 @@ class ListAggregationLogicTablesRequest:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this ListAggregationLogicTablesRequest.
 
-        所属的业务分层的id
+        所属的业务分层的ID。
 
         :return: The biz_catalog_id of this ListAggregationLogicTablesRequest.
         :rtype: str
@@ -431,7 +468,7 @@ class ListAggregationLogicTablesRequest:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this ListAggregationLogicTablesRequest.
 
-        所属的业务分层的id
+        所属的业务分层的ID。
 
         :param biz_catalog_id: The biz_catalog_id of this ListAggregationLogicTablesRequest.
         :type biz_catalog_id: str

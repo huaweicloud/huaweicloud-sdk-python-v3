@@ -18,15 +18,17 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
 
     openapi_types = {
         'ids': 'list[str]',
-        'eip': 'CreateNet2CloudPhoneServerRequestBodyPublicIpEip'
+        'eip': 'CreateNet2CloudPhoneServerRequestBodyPublicIpEip',
+        'count': 'int'
     }
 
     attribute_map = {
         'ids': 'ids',
-        'eip': 'eip'
+        'eip': 'eip',
+        'count': 'count'
     }
 
-    def __init__(self, ids=None, eip=None):
+    def __init__(self, ids=None, eip=None, count=None):
         """CreateNet2CloudPhoneServerRequestBodyPublicIp
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
         :type ids: list[str]
         :param eip: 
         :type eip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIpEip`
+        :param count: Eip数量。默认为1，不需要Eip可设置为0，取值范围为0到手机IP数。
+        :type count: int
         """
         
         
 
         self._ids = None
         self._eip = None
+        self._count = None
         self.discriminator = None
 
         if ids is not None:
             self.ids = ids
         if eip is not None:
             self.eip = eip
+        if count is not None:
+            self.count = count
 
     @property
     def ids(self):
@@ -87,6 +94,28 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
         :type eip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIpEip`
         """
         self._eip = eip
+
+    @property
+    def count(self):
+        """Gets the count of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
+
+        Eip数量。默认为1，不需要Eip可设置为0，取值范围为0到手机IP数。
+
+        :return: The count of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
+
+        Eip数量。默认为1，不需要Eip可设置为0，取值范围为0到手机IP数。
+
+        :param count: The count of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -53,31 +53,31 @@ class DirectoryVO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
-        :param type: 目录类型
+        :param type: 目录类型。STANDARD_ELEMENT(数据标准)、CODE(码表)。
         :type type: str
-        :param id: ID
+        :param id: ID，创建时可不传，更新时必填。
         :type id: int
-        :param parent_id: 父目录ID,根节点没有此ID
+        :param parent_id: 父目录ID，首层传null。
         :type parent_id: int
-        :param prev_id: 上个节点ID,首节点没有
+        :param prev_id: 上个节点ID，首节点传null。
         :type prev_id: int
-        :param root_id: 根节点ID,根节点此ID为自身ID
+        :param root_id: 根节点ID，根节点此ID为自身ID。
         :type root_id: int
-        :param qualified_name: 所属目录
+        :param qualified_name: 所属目录。
         :type qualified_name: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param children: 子目录
+        :param children: 子目录。
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`]
         """
         
@@ -125,7 +125,7 @@ class DirectoryVO:
     def name(self):
         """Gets the name of this DirectoryVO.
 
-        名称
+        名称。
 
         :return: The name of this DirectoryVO.
         :rtype: str
@@ -136,7 +136,7 @@ class DirectoryVO:
     def name(self, name):
         """Sets the name of this DirectoryVO.
 
-        名称
+        名称。
 
         :param name: The name of this DirectoryVO.
         :type name: str
@@ -147,7 +147,7 @@ class DirectoryVO:
     def description(self):
         """Gets the description of this DirectoryVO.
 
-        描述
+        描述。
 
         :return: The description of this DirectoryVO.
         :rtype: str
@@ -158,7 +158,7 @@ class DirectoryVO:
     def description(self, description):
         """Sets the description of this DirectoryVO.
 
-        描述
+        描述。
 
         :param description: The description of this DirectoryVO.
         :type description: str
@@ -169,7 +169,7 @@ class DirectoryVO:
     def type(self):
         """Gets the type of this DirectoryVO.
 
-        目录类型
+        目录类型。STANDARD_ELEMENT(数据标准)、CODE(码表)。
 
         :return: The type of this DirectoryVO.
         :rtype: str
@@ -180,7 +180,7 @@ class DirectoryVO:
     def type(self, type):
         """Sets the type of this DirectoryVO.
 
-        目录类型
+        目录类型。STANDARD_ELEMENT(数据标准)、CODE(码表)。
 
         :param type: The type of this DirectoryVO.
         :type type: str
@@ -191,7 +191,7 @@ class DirectoryVO:
     def id(self):
         """Gets the id of this DirectoryVO.
 
-        ID
+        ID，创建时可不传，更新时必填。
 
         :return: The id of this DirectoryVO.
         :rtype: int
@@ -202,7 +202,7 @@ class DirectoryVO:
     def id(self, id):
         """Sets the id of this DirectoryVO.
 
-        ID
+        ID，创建时可不传，更新时必填。
 
         :param id: The id of this DirectoryVO.
         :type id: int
@@ -213,7 +213,7 @@ class DirectoryVO:
     def parent_id(self):
         """Gets the parent_id of this DirectoryVO.
 
-        父目录ID,根节点没有此ID
+        父目录ID，首层传null。
 
         :return: The parent_id of this DirectoryVO.
         :rtype: int
@@ -224,7 +224,7 @@ class DirectoryVO:
     def parent_id(self, parent_id):
         """Sets the parent_id of this DirectoryVO.
 
-        父目录ID,根节点没有此ID
+        父目录ID，首层传null。
 
         :param parent_id: The parent_id of this DirectoryVO.
         :type parent_id: int
@@ -235,7 +235,7 @@ class DirectoryVO:
     def prev_id(self):
         """Gets the prev_id of this DirectoryVO.
 
-        上个节点ID,首节点没有
+        上个节点ID，首节点传null。
 
         :return: The prev_id of this DirectoryVO.
         :rtype: int
@@ -246,7 +246,7 @@ class DirectoryVO:
     def prev_id(self, prev_id):
         """Sets the prev_id of this DirectoryVO.
 
-        上个节点ID,首节点没有
+        上个节点ID，首节点传null。
 
         :param prev_id: The prev_id of this DirectoryVO.
         :type prev_id: int
@@ -257,7 +257,7 @@ class DirectoryVO:
     def root_id(self):
         """Gets the root_id of this DirectoryVO.
 
-        根节点ID,根节点此ID为自身ID
+        根节点ID，根节点此ID为自身ID。
 
         :return: The root_id of this DirectoryVO.
         :rtype: int
@@ -268,7 +268,7 @@ class DirectoryVO:
     def root_id(self, root_id):
         """Sets the root_id of this DirectoryVO.
 
-        根节点ID,根节点此ID为自身ID
+        根节点ID，根节点此ID为自身ID。
 
         :param root_id: The root_id of this DirectoryVO.
         :type root_id: int
@@ -279,7 +279,7 @@ class DirectoryVO:
     def qualified_name(self):
         """Gets the qualified_name of this DirectoryVO.
 
-        所属目录
+        所属目录。
 
         :return: The qualified_name of this DirectoryVO.
         :rtype: str
@@ -290,7 +290,7 @@ class DirectoryVO:
     def qualified_name(self, qualified_name):
         """Sets the qualified_name of this DirectoryVO.
 
-        所属目录
+        所属目录。
 
         :param qualified_name: The qualified_name of this DirectoryVO.
         :type qualified_name: str
@@ -301,7 +301,7 @@ class DirectoryVO:
     def create_time(self):
         """Gets the create_time of this DirectoryVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this DirectoryVO.
         :rtype: datetime
@@ -312,7 +312,7 @@ class DirectoryVO:
     def create_time(self, create_time):
         """Sets the create_time of this DirectoryVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this DirectoryVO.
         :type create_time: datetime
@@ -323,7 +323,7 @@ class DirectoryVO:
     def update_time(self):
         """Gets the update_time of this DirectoryVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this DirectoryVO.
         :rtype: datetime
@@ -334,7 +334,7 @@ class DirectoryVO:
     def update_time(self, update_time):
         """Sets the update_time of this DirectoryVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this DirectoryVO.
         :type update_time: datetime
@@ -345,7 +345,7 @@ class DirectoryVO:
     def create_by(self):
         """Gets the create_by of this DirectoryVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this DirectoryVO.
         :rtype: str
@@ -356,7 +356,7 @@ class DirectoryVO:
     def create_by(self, create_by):
         """Sets the create_by of this DirectoryVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this DirectoryVO.
         :type create_by: str
@@ -367,7 +367,7 @@ class DirectoryVO:
     def update_by(self):
         """Gets the update_by of this DirectoryVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this DirectoryVO.
         :rtype: str
@@ -378,7 +378,7 @@ class DirectoryVO:
     def update_by(self, update_by):
         """Sets the update_by of this DirectoryVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this DirectoryVO.
         :type update_by: str
@@ -389,7 +389,7 @@ class DirectoryVO:
     def children(self):
         """Gets the children of this DirectoryVO.
 
-        子目录
+        子目录。
 
         :return: The children of this DirectoryVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`]
@@ -400,7 +400,7 @@ class DirectoryVO:
     def children(self, children):
         """Sets the children of this DirectoryVO.
 
-        子目录
+        子目录。
 
         :param children: The children of this DirectoryVO.
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`]

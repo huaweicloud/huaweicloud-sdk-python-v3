@@ -29,7 +29,7 @@ class BusinessCodeVo:
 
         The model defined in huaweicloud sdk
 
-        :param code: 策略集编码。
+        :param code: 业务编码。
         :type code: str
         """
         
@@ -45,7 +45,7 @@ class BusinessCodeVo:
     def code(self):
         """Gets the code of this BusinessCodeVo.
 
-        策略集编码。
+        业务编码。
 
         :return: The code of this BusinessCodeVo.
         :rtype: str
@@ -56,7 +56,7 @@ class BusinessCodeVo:
     def code(self, code):
         """Sets the code of this BusinessCodeVo.
 
-        策略集编码。
+        业务编码。
 
         :param code: The code of this BusinessCodeVo.
         :type code: str

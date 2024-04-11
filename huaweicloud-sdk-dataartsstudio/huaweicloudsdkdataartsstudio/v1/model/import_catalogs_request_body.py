@@ -29,7 +29,7 @@ class ImportCatalogsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param file: 导入主题用的excel文件，大小必须小于4MB，且行数小于3000行
+        :param file: 导入主题用的excel文件，大小必须小于4MB，且行数小于3000行。
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -44,7 +44,7 @@ class ImportCatalogsRequestBody:
     def file(self):
         """Gets the file of this ImportCatalogsRequestBody.
 
-        导入主题用的excel文件，大小必须小于4MB，且行数小于3000行
+        导入主题用的excel文件，大小必须小于4MB，且行数小于3000行。
 
         :return: The file of this ImportCatalogsRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -55,7 +55,7 @@ class ImportCatalogsRequestBody:
     def file(self, file):
         """Sets the file of this ImportCatalogsRequestBody.
 
-        导入主题用的excel文件，大小必须小于4MB，且行数小于3000行
+        导入主题用的excel文件，大小必须小于4MB，且行数小于3000行。
 
         :param file: The file of this ImportCatalogsRequestBody.
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`

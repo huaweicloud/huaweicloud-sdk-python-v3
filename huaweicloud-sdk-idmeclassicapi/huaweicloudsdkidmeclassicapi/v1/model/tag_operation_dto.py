@@ -31,7 +31,7 @@ class TagOperationDTO:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 模型对象ID。
+        :param object_id: 数据实例ID。
         :type object_id: str
         :param tag_id: 标签ID。
         :type tag_id: str
@@ -50,7 +50,7 @@ class TagOperationDTO:
     def object_id(self):
         """Gets the object_id of this TagOperationDTO.
 
-        模型对象ID。
+        数据实例ID。
 
         :return: The object_id of this TagOperationDTO.
         :rtype: str
@@ -61,7 +61,7 @@ class TagOperationDTO:
     def object_id(self, object_id):
         """Sets the object_id of this TagOperationDTO.
 
-        模型对象ID。
+        数据实例ID。
 
         :param object_id: The object_id of this TagOperationDTO.
         :type object_id: str

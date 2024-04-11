@@ -33,7 +33,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识。
+        :param id: 数据实例ID。
         :type id: str
         :param lifecycle_template: 
         :type lifecycle_template: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -56,7 +56,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
     def id(self):
         """Gets the id of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
-        唯一标识。
+        数据实例ID。
 
         :return: The id of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
     def id(self, id):
         """Sets the id of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
-        唯一标识。
+        数据实例ID。
 
         :param id: The id of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
         :type id: str

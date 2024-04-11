@@ -18,37 +18,44 @@ class ShowCompoundMetricByIdRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'id': 'str',
         'latest': 'bool'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'id': 'id',
         'latest': 'latest'
     }
 
-    def __init__(self, workspace=None, id=None, latest=None):
+    def __init__(self, workspace=None, x_project_id=None, id=None, latest=None):
         """ShowCompoundMetricByIdRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param id: 实体id
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param id: 实体ID
         :type id: str
-        :param latest: 是否查询最新的
+        :param latest: 是否查询最新的。
         :type latest: bool
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._id = None
         self._latest = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.id = id
         if latest is not None:
             self.latest = latest
@@ -57,7 +64,7 @@ class ShowCompoundMetricByIdRequest:
     def workspace(self):
         """Gets the workspace of this ShowCompoundMetricByIdRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ShowCompoundMetricByIdRequest.
         :rtype: str
@@ -68,7 +75,7 @@ class ShowCompoundMetricByIdRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowCompoundMetricByIdRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ShowCompoundMetricByIdRequest.
         :type workspace: str
@@ -76,10 +83,32 @@ class ShowCompoundMetricByIdRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ShowCompoundMetricByIdRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ShowCompoundMetricByIdRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ShowCompoundMetricByIdRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ShowCompoundMetricByIdRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def id(self):
         """Gets the id of this ShowCompoundMetricByIdRequest.
 
-        实体id
+        实体ID
 
         :return: The id of this ShowCompoundMetricByIdRequest.
         :rtype: str
@@ -90,7 +119,7 @@ class ShowCompoundMetricByIdRequest:
     def id(self, id):
         """Sets the id of this ShowCompoundMetricByIdRequest.
 
-        实体id
+        实体ID
 
         :param id: The id of this ShowCompoundMetricByIdRequest.
         :type id: str
@@ -101,7 +130,7 @@ class ShowCompoundMetricByIdRequest:
     def latest(self):
         """Gets the latest of this ShowCompoundMetricByIdRequest.
 
-        是否查询最新的
+        是否查询最新的。
 
         :return: The latest of this ShowCompoundMetricByIdRequest.
         :rtype: bool
@@ -112,7 +141,7 @@ class ShowCompoundMetricByIdRequest:
     def latest(self, latest):
         """Sets the latest of this ShowCompoundMetricByIdRequest.
 
-        是否查询最新的
+        是否查询最新的。
 
         :param latest: The latest of this ShowCompoundMetricByIdRequest.
         :type latest: bool

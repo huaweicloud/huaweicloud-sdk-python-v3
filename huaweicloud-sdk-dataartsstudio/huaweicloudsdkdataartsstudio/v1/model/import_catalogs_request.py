@@ -18,6 +18,7 @@ class ImportCatalogsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'action_id': 'str',
         'skip_exist': 'bool',
         'body': 'ImportCatalogsRequestBody'
@@ -25,21 +26,24 @@ class ImportCatalogsRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'action_id': 'action-id',
         'skip_exist': 'skip-exist',
         'body': 'body'
     }
 
-    def __init__(self, workspace=None, action_id=None, skip_exist=None, body=None):
+    def __init__(self, workspace=None, x_project_id=None, action_id=None, skip_exist=None, body=None):
         """ImportCatalogsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param action_id: 需要执行的动作
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param action_id: 需要执行的动作。start-import(开始导入)。
         :type action_id: str
-        :param skip_exist: 是否需要覆盖更新已有的主题
+        :param skip_exist: 是否需要覆盖更新已有的主题。
         :type skip_exist: bool
         :param body: Body of the ImportCatalogsRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ImportCatalogsRequestBody`
@@ -48,12 +52,15 @@ class ImportCatalogsRequest:
         
 
         self._workspace = None
+        self._x_project_id = None
         self._action_id = None
         self._skip_exist = None
         self._body = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.action_id = action_id
         if skip_exist is not None:
             self.skip_exist = skip_exist
@@ -64,7 +71,7 @@ class ImportCatalogsRequest:
     def workspace(self):
         """Gets the workspace of this ImportCatalogsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ImportCatalogsRequest.
         :rtype: str
@@ -75,7 +82,7 @@ class ImportCatalogsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ImportCatalogsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ImportCatalogsRequest.
         :type workspace: str
@@ -83,10 +90,32 @@ class ImportCatalogsRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ImportCatalogsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ImportCatalogsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ImportCatalogsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ImportCatalogsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def action_id(self):
         """Gets the action_id of this ImportCatalogsRequest.
 
-        需要执行的动作
+        需要执行的动作。start-import(开始导入)。
 
         :return: The action_id of this ImportCatalogsRequest.
         :rtype: str
@@ -97,7 +126,7 @@ class ImportCatalogsRequest:
     def action_id(self, action_id):
         """Sets the action_id of this ImportCatalogsRequest.
 
-        需要执行的动作
+        需要执行的动作。start-import(开始导入)。
 
         :param action_id: The action_id of this ImportCatalogsRequest.
         :type action_id: str
@@ -108,7 +137,7 @@ class ImportCatalogsRequest:
     def skip_exist(self):
         """Gets the skip_exist of this ImportCatalogsRequest.
 
-        是否需要覆盖更新已有的主题
+        是否需要覆盖更新已有的主题。
 
         :return: The skip_exist of this ImportCatalogsRequest.
         :rtype: bool
@@ -119,7 +148,7 @@ class ImportCatalogsRequest:
     def skip_exist(self, skip_exist):
         """Sets the skip_exist of this ImportCatalogsRequest.
 
-        是否需要覆盖更新已有的主题
+        是否需要覆盖更新已有的主题。
 
         :param skip_exist: The skip_exist of this ImportCatalogsRequest.
         :type skip_exist: bool

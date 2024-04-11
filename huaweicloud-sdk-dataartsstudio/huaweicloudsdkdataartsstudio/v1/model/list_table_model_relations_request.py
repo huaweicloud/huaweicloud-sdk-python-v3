@@ -18,6 +18,7 @@ class ListTableModelRelationsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'model_id': 'str',
         'table_ids': 'str',
         'biz_type': 'str',
@@ -27,6 +28,7 @@ class ListTableModelRelationsRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'model_id': 'model_id',
         'table_ids': 'table_ids',
         'biz_type': 'biz_type',
@@ -34,28 +36,31 @@ class ListTableModelRelationsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, model_id=None, table_ids=None, biz_type=None, limit=None, offset=None):
+    def __init__(self, workspace=None, x_project_id=None, model_id=None, table_ids=None, biz_type=None, limit=None, offset=None):
         """ListTableModelRelationsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param model_id: 依据workspace id查工作区
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param model_id: 所属关系建模的模型ID。
         :type model_id: str
         :param table_ids: 表模型ids
         :type table_ids: str
-        :param biz_type: 表类型
+        :param biz_type: 表类型。TABLE_MODEL(关系建模：逻辑实体/物理表)、FACT_LOGIC_TABLE(事实表)。
         :type biz_type: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
-        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._model_id = None
         self._table_ids = None
         self._biz_type = None
@@ -64,6 +69,8 @@ class ListTableModelRelationsRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.model_id = model_id
         if table_ids is not None:
             self.table_ids = table_ids
@@ -78,7 +85,7 @@ class ListTableModelRelationsRequest:
     def workspace(self):
         """Gets the workspace of this ListTableModelRelationsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListTableModelRelationsRequest.
         :rtype: str
@@ -89,7 +96,7 @@ class ListTableModelRelationsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListTableModelRelationsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListTableModelRelationsRequest.
         :type workspace: str
@@ -97,10 +104,32 @@ class ListTableModelRelationsRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListTableModelRelationsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListTableModelRelationsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListTableModelRelationsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListTableModelRelationsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def model_id(self):
         """Gets the model_id of this ListTableModelRelationsRequest.
 
-        依据workspace id查工作区
+        所属关系建模的模型ID。
 
         :return: The model_id of this ListTableModelRelationsRequest.
         :rtype: str
@@ -111,7 +140,7 @@ class ListTableModelRelationsRequest:
     def model_id(self, model_id):
         """Sets the model_id of this ListTableModelRelationsRequest.
 
-        依据workspace id查工作区
+        所属关系建模的模型ID。
 
         :param model_id: The model_id of this ListTableModelRelationsRequest.
         :type model_id: str
@@ -144,7 +173,7 @@ class ListTableModelRelationsRequest:
     def biz_type(self):
         """Gets the biz_type of this ListTableModelRelationsRequest.
 
-        表类型
+        表类型。TABLE_MODEL(关系建模：逻辑实体/物理表)、FACT_LOGIC_TABLE(事实表)。
 
         :return: The biz_type of this ListTableModelRelationsRequest.
         :rtype: str
@@ -155,7 +184,7 @@ class ListTableModelRelationsRequest:
     def biz_type(self, biz_type):
         """Sets the biz_type of this ListTableModelRelationsRequest.
 
-        表类型
+        表类型。TABLE_MODEL(关系建模：逻辑实体/物理表)、FACT_LOGIC_TABLE(事实表)。
 
         :param biz_type: The biz_type of this ListTableModelRelationsRequest.
         :type biz_type: str
@@ -166,7 +195,7 @@ class ListTableModelRelationsRequest:
     def limit(self):
         """Gets the limit of this ListTableModelRelationsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListTableModelRelationsRequest.
         :rtype: int
@@ -177,7 +206,7 @@ class ListTableModelRelationsRequest:
     def limit(self, limit):
         """Sets the limit of this ListTableModelRelationsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListTableModelRelationsRequest.
         :type limit: int
@@ -188,7 +217,7 @@ class ListTableModelRelationsRequest:
     def offset(self):
         """Gets the offset of this ListTableModelRelationsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :return: The offset of this ListTableModelRelationsRequest.
         :rtype: int
@@ -199,7 +228,7 @@ class ListTableModelRelationsRequest:
     def offset(self, offset):
         """Sets the offset of this ListTableModelRelationsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :param offset: The offset of this ListTableModelRelationsRequest.
         :type offset: int

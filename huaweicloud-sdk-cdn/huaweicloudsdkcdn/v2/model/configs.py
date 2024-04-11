@@ -48,7 +48,10 @@ class Configs:
         'ip_frequency_limit': 'IpFrequencyLimit',
         'hsts': 'Hsts',
         'quic': 'Quic',
-        'error_code_redirect_rules': 'list[ErrorCodeRedirectRules]'
+        'error_code_redirect_rules': 'list[ErrorCodeRedirectRules]',
+        'sni': 'Sni',
+        'request_url_rewrite': 'list[RequestUrlRewrite]',
+        'browser_cache_rules': 'list[BrowserCacheRules]'
     }
 
     attribute_map = {
@@ -83,10 +86,13 @@ class Configs:
         'ip_frequency_limit': 'ip_frequency_limit',
         'hsts': 'hsts',
         'quic': 'quic',
-        'error_code_redirect_rules': 'error_code_redirect_rules'
+        'error_code_redirect_rules': 'error_code_redirect_rules',
+        'sni': 'sni',
+        'request_url_rewrite': 'request_url_rewrite',
+        'browser_cache_rules': 'browser_cache_rules'
     }
 
-    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None):
         """Configs
 
         The model defined in huaweicloud sdk
@@ -155,6 +161,12 @@ class Configs:
         :type quic: :class:`huaweicloudsdkcdn.v2.Quic`
         :param error_code_redirect_rules: 自定义错误页面。
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeRedirectRules`]
+        :param sni: 
+        :type sni: :class:`huaweicloudsdkcdn.v2.Sni`
+        :param request_url_rewrite: 访问URL重写。
+        :type request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.RequestUrlRewrite`]
+        :param browser_cache_rules: 浏览器缓存过期时间。
+        :type browser_cache_rules: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
         """
         
         
@@ -191,6 +203,9 @@ class Configs:
         self._hsts = None
         self._quic = None
         self._error_code_redirect_rules = None
+        self._sni = None
+        self._request_url_rewrite = None
+        self._browser_cache_rules = None
         self.discriminator = None
 
         if business_type is not None:
@@ -257,6 +272,12 @@ class Configs:
             self.quic = quic
         if error_code_redirect_rules is not None:
             self.error_code_redirect_rules = error_code_redirect_rules
+        if sni is not None:
+            self.sni = sni
+        if request_url_rewrite is not None:
+            self.request_url_rewrite = request_url_rewrite
+        if browser_cache_rules is not None:
+            self.browser_cache_rules = browser_cache_rules
 
     @property
     def business_type(self):
@@ -905,6 +926,68 @@ class Configs:
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeRedirectRules`]
         """
         self._error_code_redirect_rules = error_code_redirect_rules
+
+    @property
+    def sni(self):
+        """Gets the sni of this Configs.
+
+        :return: The sni of this Configs.
+        :rtype: :class:`huaweicloudsdkcdn.v2.Sni`
+        """
+        return self._sni
+
+    @sni.setter
+    def sni(self, sni):
+        """Sets the sni of this Configs.
+
+        :param sni: The sni of this Configs.
+        :type sni: :class:`huaweicloudsdkcdn.v2.Sni`
+        """
+        self._sni = sni
+
+    @property
+    def request_url_rewrite(self):
+        """Gets the request_url_rewrite of this Configs.
+
+        访问URL重写。
+
+        :return: The request_url_rewrite of this Configs.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.RequestUrlRewrite`]
+        """
+        return self._request_url_rewrite
+
+    @request_url_rewrite.setter
+    def request_url_rewrite(self, request_url_rewrite):
+        """Sets the request_url_rewrite of this Configs.
+
+        访问URL重写。
+
+        :param request_url_rewrite: The request_url_rewrite of this Configs.
+        :type request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.RequestUrlRewrite`]
+        """
+        self._request_url_rewrite = request_url_rewrite
+
+    @property
+    def browser_cache_rules(self):
+        """Gets the browser_cache_rules of this Configs.
+
+        浏览器缓存过期时间。
+
+        :return: The browser_cache_rules of this Configs.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
+        """
+        return self._browser_cache_rules
+
+    @browser_cache_rules.setter
+    def browser_cache_rules(self, browser_cache_rules):
+        """Sets the browser_cache_rules of this Configs.
+
+        浏览器缓存过期时间。
+
+        :param browser_cache_rules: The browser_cache_rules of this Configs.
+        :type browser_cache_rules: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
+        """
+        self._browser_cache_rules = browser_cache_rules
 
     def to_dict(self):
         """Returns the model properties as a dict"""

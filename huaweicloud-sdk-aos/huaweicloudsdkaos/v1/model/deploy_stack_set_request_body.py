@@ -23,7 +23,8 @@ class DeployStackSetRequestBody:
         'template_uri': 'str',
         'vars_uri': 'str',
         'vars_body': 'str',
-        'var_overrides': 'VarOverridesPrimitiveTypeHolderVarOverrides'
+        'var_overrides': 'VarOverridesPrimitiveTypeHolderVarOverrides',
+        'operation_preferences': 'OperationPreferences'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class DeployStackSetRequestBody:
         'template_uri': 'template_uri',
         'vars_uri': 'vars_uri',
         'vars_body': 'vars_body',
-        'var_overrides': 'var_overrides'
+        'var_overrides': 'var_overrides',
+        'operation_preferences': 'operation_preferences'
     }
 
-    def __init__(self, stack_set_id=None, deployment_targets=None, template_body=None, template_uri=None, vars_uri=None, vars_body=None, var_overrides=None):
+    def __init__(self, stack_set_id=None, deployment_targets=None, template_body=None, template_uri=None, vars_uri=None, vars_body=None, var_overrides=None, operation_preferences=None):
         """DeployStackSetRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class DeployStackSetRequestBody:
         :type vars_body: str
         :param var_overrides: 
         :type var_overrides: :class:`huaweicloudsdkaos.v1.VarOverridesPrimitiveTypeHolderVarOverrides`
+        :param operation_preferences: 
+        :type operation_preferences: :class:`huaweicloudsdkaos.v1.OperationPreferences`
         """
         
         
@@ -66,6 +70,7 @@ class DeployStackSetRequestBody:
         self._vars_uri = None
         self._vars_body = None
         self._var_overrides = None
+        self._operation_preferences = None
         self.discriminator = None
 
         if stack_set_id is not None:
@@ -81,6 +86,8 @@ class DeployStackSetRequestBody:
             self.vars_body = vars_body
         if var_overrides is not None:
             self.var_overrides = var_overrides
+        if operation_preferences is not None:
+            self.operation_preferences = operation_preferences
 
     @property
     def stack_set_id(self):
@@ -227,6 +234,24 @@ class DeployStackSetRequestBody:
         :type var_overrides: :class:`huaweicloudsdkaos.v1.VarOverridesPrimitiveTypeHolderVarOverrides`
         """
         self._var_overrides = var_overrides
+
+    @property
+    def operation_preferences(self):
+        """Gets the operation_preferences of this DeployStackSetRequestBody.
+
+        :return: The operation_preferences of this DeployStackSetRequestBody.
+        :rtype: :class:`huaweicloudsdkaos.v1.OperationPreferences`
+        """
+        return self._operation_preferences
+
+    @operation_preferences.setter
+    def operation_preferences(self, operation_preferences):
+        """Sets the operation_preferences of this DeployStackSetRequestBody.
+
+        :param operation_preferences: The operation_preferences of this DeployStackSetRequestBody.
+        :type operation_preferences: :class:`huaweicloudsdkaos.v1.OperationPreferences`
+        """
+        self._operation_preferences = operation_preferences
 
     def to_dict(self):
         """Returns the model properties as a dict"""

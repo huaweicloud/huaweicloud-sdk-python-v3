@@ -1,3 +1,747 @@
+# 3.1.91 2024-04-11
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowStackSetMetadata**
+    - 响应参数变更
+      - `+ managed_operation`
+  - **UpdateStackSet**
+    - 请求参数变更
+      - `+ managed_operation`
+  - **CreateStackSet**
+    - 请求参数变更
+      - `+ managed_operation`
+  - **CreateStackInstance**
+    - 请求参数变更
+      - `+ operation_preferences`
+  - **DeleteStackInstanceDeprecated**
+    - 请求参数变更
+      - `+ operation_preferences`
+  - **UpdateStackInstances**
+    - 请求参数变更
+      - `+ operation_preferences`
+  - **DeleteStackInstance**
+    - 请求参数变更
+      - `+ operation_preferences`
+  - **DeployStackSet**
+    - 请求参数变更
+      - `+ operation_preferences`
+  - **ShowStackSetOperationMetadata**
+    - 响应参数变更
+      - `+ operation_preferences`
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateGatewayResponseTypeV2**
+    - 请求参数变更
+      - `* headers.value: object -> string`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持接口`ShowQuota`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.sni`
+      - `+ configs.request_url_rewrite`
+      - `+ configs.browser_cache_rules`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.sni`
+      - `+ configs.request_url_rewrite`
+      - `+ configs.browser_cache_rules`
+
+### HuaweiCloud SDK CodeHub
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDiffCommit**
+    - 响应参数变更
+      - `* result.diff: boolean -> string`
+
+### HuaweiCloud SDK CPH
+
+- _新增特性_
+  - 支持接口`ChangeCloudPhoneServer`、`DeleteCloudPhoneServer`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PushShareApps**
+    - 响应参数变更
+      - `- jobs`
+      - `- request_id`
+  - **DeleteShareApps**
+    - 响应参数变更
+      - `- jobs`
+      - `- request_id`
+  - **PushShareFiles**
+    - 响应参数变更
+      - `- jobs`
+      - `- request_id`
+  - **ListCloudPhoneModels**
+    - 响应参数变更
+      - `+ phone_models.phone_model_version`
+      - `+ phone_models.dpi`
+      - `+ phone_models.fps`
+      - `+ phone_models.volume_mode`
+  - **ListCloudPhones**
+    - 响应参数变更
+      - `+ phones.image_version`
+      - `+ phones.imei`
+      - `+ phones.traffic_type`
+      - `+ phones.volume_mode`
+      - `+ phones.availability_zone`
+  - **ShowCloudPhoneDetail**
+    - 响应参数变更
+      - `+ availability_zone`
+      - `+ phone_data_volume`
+      - `+ traffic_type`
+      - `+ image_version`
+      - `+ volume_mode`
+      - `+ imei`
+  - **ShowCloudPhoneServerDetail**
+    - 响应参数变更
+      - `+ share_volume_info`
+  - **CreateNet2CloudPhoneServer**
+    - 请求参数变更
+      - `+ phone_count_per_ip`
+      - `+ phone_data_volume`
+      - `+ server_share_data_volume`
+      - `+ public_ip.count`
+  - **ListCloudPhoneServers**
+    - 请求参数变更
+      - `+ phone_model_name`
+      - `+ create_since`
+      - `+ create_until`
+      - `+ status`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `SearchFieldsForRelation`
+    - `ExportDesignModels`
+    - `ExportDesignResult`
+    - `ExportDesignModelTableDdl`
+    - `AddDesignEntityTags`
+    - `RemoveDesignEntityTags`
+    - `UpdateDesignTableQuality`
+    - `RemoveDesignQualityInfos`
+    - `DeleteDesignLatestApproval`
+    - `SearchDesignLatestApprovalDiff`
+    - `UpdateDesignAggregationLogicTable`
+    - `CreateDesignAggregationLogicTable`
+    - `DeleteDesignAggregationLogicTable`
+    - `UpdateDesignAtomicIndex`
+    - `CreateDesignAtomicIndex`
+    - `DeleteDesignAtomicIndex`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResetLinkAttributeAndStandard**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListCatalogTree**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **SearchCatalogs**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ChangeCatalog**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CreateCatalog**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteCatalog**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **ShowBizCatalogDetail**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowStandardTemplate**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **UpdateStandardTemplate**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CreateStandardTemplate**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteStandardTemplate**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **SearchApprovals**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **RollbackApproval**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ConfirmApprovals**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListApprovers**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CreateApprover**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteApprover**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListBusiness**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CountOverviews**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CountTableModels**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CountAllModels**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CountStandards**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListDirectories**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **UpdateDirectory**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `- type: enum value [TAG]`
+  - **CreateDirectory**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `- type: enum value [TAG]`
+  - **DeleteDirectory**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowBizMetricById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListBizMetricDimensions**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListBizMetricOwners**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListMetricRelations**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **SearchVersions**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListDimensions**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowDimensionById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListDimensionGroups**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CheckDimensionStatus**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListDimensionLogicTables**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowDimensionLogicTableById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListFactLogicTables**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowFactLogicTableById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CheckFactLogicTableStatus**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListAggregationLogicTables**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `+ data.value`
+  - **ShowAggregationLogicTableById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `+ data.value`
+  - **ListCondition**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowConditionById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListRelations**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowRelationById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListTableModelRelations**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowTableModelById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ShowWorkspaceDetailById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ImportResult**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **SearchDwByType**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListAllTables**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ImportCatalogs**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ImportModels**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **RenewDataProfile**
+    - 请求参数变更
+      - `+ obsconfig.column_map`
+      - `+ obsconfig.path`
+      - `+ obsconfig.delimiter`
+      - `+ obsconfig.quote`
+      - `+ obsconfig.escape`
+      - `+ obsconfig.header`
+      - `+ obsconfig.data_type`
+      - `+ obsconfig.date_format`
+      - `+ obsconfig.timestamp_format`
+      - `+ obsconfig.null_value`
+      - `+ obsconfig.comment`
+      - `+ obsconfig.parse_mode`
+      - `+ obsconfig.join_table`
+      - `* obsconfig: object -> object<OBSCommonConfig>`
+  - **InitializeStandardTemplate**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListSubjectLevels**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ChangeSubjects**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListWorkspaces**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteWorkspaces**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **UpdateWorkspace**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CreateWorkspace**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **SearchCustomizedFields**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `+ type: enum value [METRIC]`
+  - **ModifyCustomizedFields**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **SearchSubjectNew**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteSubjectNew**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **UpdateSubjectNew**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CreateSubjectNew**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **ListAllStandards**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `+ data.value`
+  - **DeleteStandard**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **CreateStandard**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `+ from_public`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ShowStandardById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **UpdateStandard**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `+ from_public`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **SearchCodeTables**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteCodeTable**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **CreateCodeTable**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ShowCodeTableById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **UpdateCodeTable**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **SearchCodeTableValues**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **UpdateCodeTableValues**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **BatchPublish**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `+ biz_infos.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **BatchOffline**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `+ biz_infos.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ListBizMetrics**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteBizMetric**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **UpdateBizMetric**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `+ biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+  - **CreateBizMetric**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `+ biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+  - **SearchSubject**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteSubject**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **UpdateSubject**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **CreateSubject**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **SearchAtomicIndexes**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `* data.value.records.id: integer -> string`
+      - `* data.value.records.l3_id: integer -> string`
+      - `* data.value.records.table_id: integer -> string`
+      - `+ data.value.records.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* data.value.records.approval_info.id: integer -> string`
+      - `* data.value.records.approval_info.biz_id: integer -> string`
+  - **ShowAtomicIndexById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `* data.value.id: integer -> string`
+      - `* data.value.l3_id: integer -> string`
+      - `* data.value.table_id: integer -> string`
+      - `+ data.value.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* data.value.approval_info.id: integer -> string`
+      - `* data.value.approval_info.biz_id: integer -> string`
+  - **ListCompoundMetrics**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `* data.value.records.approval_info.id: integer -> string`
+      - `* data.value.records.approval_info.biz_id: integer -> string`
+      - `+ data.value.records.approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ShowCompoundMetricById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `* data.value.approval_info.id: integer -> string`
+      - `* data.value.approval_info.biz_id: integer -> string`
+      - `+ data.value.approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ListTableModels**
+    - 请求参数变更
+      - `+ X-Project-Id`
+  - **DeleteTableModel**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **UpdateTableModel**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* attributes.id: integer -> string`
+  - **CreateTableModel**
+    - 请求参数变更
+      - `+ X-Project-Id`
+      - `* id: integer -> string`
+      - `* model_id: integer -> string`
+      - `* parent_table_id: integer -> string`
+      - `* logic_tb_id: integer -> string`
+      - `* biz_catalog_id: integer -> string`
+      - `* l1_id: integer -> string`
+      - `* l3_id: integer -> string`
+      - `* quality_id: integer -> string`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* attributes.id: integer -> string`
+  - **ListDerivativeIndexes**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `* data.value.records.atomic_index.id: integer -> string`
+      - `* data.value.records.atomic_index.l3_id: integer -> string`
+      - `* data.value.records.atomic_index.table_id: integer -> string`
+      - `* data.value.records.approval_info.id: integer -> string`
+      - `* data.value.records.approval_info.biz_id: integer -> string`
+      - `+ data.value.records.dimension_groups.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ShowDerivativeIndexById**
+    - 请求参数变更
+      - `+ X-Project-Id`
+    - 响应参数变更
+      - `* data.value.atomic_index.id: integer -> string`
+      - `* data.value.atomic_index.l3_id: integer -> string`
+      - `* data.value.atomic_index.table_id: integer -> string`
+      - `* data.value.approval_info.id: integer -> string`
+      - `* data.value.approval_info.biz_id: integer -> string`
+      - `+ data.value.dimension_groups.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListDataLevelTableCompareJobs`
+    - `CreateDataLevelTableCompareJob`
+    - `DeleteCompareJob`
+    - `StartPromptlyDataLevelTableCompareJob`
+    - `ListDataCompareOverview`
+    - `ListDataCompareDetail`
+    - `ListContentCompareOverview`
+    - `ListContentCompareDetail`
+    - `ListsAgencyPermissions`
+    - `ShowReplayResults`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDataFilteringResult**
+    - 响应参数变更
+      - `+ db_object_filtering_result.source`
+      - `+ db_object_filtering_result.target_result`
+      - `+ db_object_filtering_result.source_result`
+      - `+ db_object_filtering_result.target_message`
+      - `+ db_object_filtering_result.source_message`
+  - **ShowDataProgress**
+    - 响应参数变更
+      - `+ data_process_info.source`
+  - **UpdateDataProgress**
+    - 请求参数变更
+      - `+ data_process_info.source`
+  - **CheckDataFilter**
+    - 请求参数变更
+      - `+ data_process_info.source`
+  - **ExecuteJobAction**
+    - 请求参数变更
+      - `+ job.action_params.compare_task_param.data_process_info`
+  - **BatchExecuteJobActions**
+    - 请求参数变更
+      - `+ jobs.action_params.compare_task_param.data_process_info`
+
+### HuaweiCloud SDK DSC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowTopics**
+    - 响应参数变更
+      - `+ id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowInstancesStatistics`
+    - `ShowSlowLogDownload`
+    - `CreateSlowLogDownload`
+    - `UpgradeInstanceVersion`
+    - `SearchAutoEnlargePolicy`
+    - `ListCnInfosBeforeReduce`
+    - `StartInstance`
+    - `ShowUpgradeCandidateVersions`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _新增特性_
+  - 支持以下接口：
+    - `Refresh`
+    - `ShowGetRoot`
+    - `ListGetAllParentList`
+    - `ShowGetParent`
+    - `ListGetChildList`
+    - `BatchRemoveChildNode`
+    - `BatchAddChildNode`
+    - `DeleteTarget`
+    - `ListQueryTarget`
+    - `ListQueryRelationship`
+    - `ListBatchQueryRelatedObjects`
+    - `ListQueryRelatedObjects`
+    - `CompareVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListHistoryData**
+    - 响应参数变更
+      - `- data.rdmOperationType: enum value [CREATE,UPDATE,LOGICALDELETE,DELETE,CASCADE]`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListRoutingBacklogPolicy`
+    - `CreateRoutingBacklogPolicy`
+    - `ShowRoutingBacklogPolicy`
+    - `UpdateRoutingBacklogPolicy`
+    - `DeleteRoutingBacklogPolicy`
+    - `ListRoutingFlowControlPolicy`
+    - `CreateRoutingFlowControlPolicy`
+    - `ShowRoutingFlowControlPolicy`
+    - `UpdateRoutingFlowControlPolicy`
+    - `DeleteRoutingFlowControlPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 请求参数变更
+      - `* engine: optional -> required`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持接口`BatchListAssociatedIssues`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstancesDetails**
+    - 请求参数变更
+      - `* engine: optional -> required`
+      - `+ engine: enum value [rabbitmq]`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowReplayDelayStatus`、`SwitchLogReplay`
+  - **StartResizeFlavorAction**
+    - 请求参数变更
+      - `+ resize_flavor.is_delay`
+  - **ListPostgresqlDatabases**
+    - 请求参数变更
+      - `+ db`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 请求参数变更
+      - `* engine: optional -> required`
+      - `+ engine: enum value [rocketmq]`
+      - `+ engine: enum value [reliability]`
+
+### HuaweiCloud SDK SWR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSharedReposDetails**
+    - 请求参数变更
+      - `* center: optional -> required`
+
 # 3.1.90 2024-04-03
 
 ### HuaweiCloud SDK CCM

@@ -29,7 +29,7 @@ class CatalogLevelVOList:
 
         The model defined in huaweicloud sdk
 
-        :param levels: 主题层级信息
+        :param levels: 主题层级信息。
         :type levels: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]
         """
         
@@ -45,7 +45,7 @@ class CatalogLevelVOList:
     def levels(self):
         """Gets the levels of this CatalogLevelVOList.
 
-        主题层级信息
+        主题层级信息。
 
         :return: The levels of this CatalogLevelVOList.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]
@@ -56,7 +56,7 @@ class CatalogLevelVOList:
     def levels(self, levels):
         """Sets the levels of this CatalogLevelVOList.
 
-        主题层级信息
+        主题层级信息。
 
         :param levels: The levels of this CatalogLevelVOList.
         :type levels: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVO`]

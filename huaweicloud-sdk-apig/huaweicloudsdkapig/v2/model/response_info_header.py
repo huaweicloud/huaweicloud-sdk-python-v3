@@ -18,7 +18,7 @@ class ResponseInfoHeader:
 
     openapi_types = {
         'key': 'str',
-        'value': 'object'
+        'value': 'str'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ResponseInfoHeader:
         :param key: 分组自定义响应的响应头的key，支持英文字母、数字和中划线，长度为1到128位
         :type key: str
         :param value: 分组自定义响应的响应头的value，为长度为1到1024位的字符串
-        :type value: object
+        :type value: str
         """
         
         
@@ -77,7 +77,7 @@ class ResponseInfoHeader:
         分组自定义响应的响应头的value，为长度为1到1024位的字符串
 
         :return: The value of this ResponseInfoHeader.
-        :rtype: object
+        :rtype: str
         """
         return self._value
 
@@ -88,7 +88,7 @@ class ResponseInfoHeader:
         分组自定义响应的响应头的value，为长度为1到1024位的字符串
 
         :param value: The value of this ResponseInfoHeader.
-        :type value: object
+        :type value: str
         """
         self._value = value
 

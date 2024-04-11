@@ -17,7 +17,7 @@ class AtomicIndexVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'name_en': 'str',
         'name_ch': 'str',
         'description': 'str',
@@ -26,8 +26,8 @@ class AtomicIndexVO:
         'cal_fn_ids': 'list[int]',
         'l1_id': 'int',
         'l2_id': 'str',
-        'l3_id': 'int',
-        'table_id': 'int',
+        'l3_id': 'str',
+        'table_id': 'str',
         'tb_name': 'str',
         'dw_type': 'str',
         'field_ids': 'list[int]',
@@ -75,49 +75,49 @@ class AtomicIndexVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
-        :type id: int
-        :param name_en: 字段名
+        :param id: 编码。
+        :type id: str
+        :param name_en: 字段名。
         :type name_en: str
-        :param name_ch: 业务属性
+        :param name_ch: 业务属性。
         :type name_ch: str
-        :param description: 
+        :param description: 描述。
         :type description: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param cal_exp: 计算表达式
+        :param cal_exp: 计算表达式，形如&#39;sum(${fact_column_id})&#39;，其中fact_column_id表示引用事实表中的字段ID
         :type cal_exp: str
-        :param cal_fn_ids: 计算表达式id
+        :param cal_fn_ids: 引用函数ID。
         :type cal_fn_ids: list[int]
-        :param l1_id: 主题域分组id
+        :param l1_id: 主题域分组ID。
         :type l1_id: int
-        :param l2_id: 
+        :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象guid
-        :type l3_id: int
-        :param table_id: 表id
-        :type table_id: int
-        :param tb_name: 表名称
+        :param l3_id: 业务对象guid。
+        :type l3_id: str
+        :param table_id: 表ID。
+        :type table_id: str
+        :param tb_name: 表名称。
         :type tb_name: str
-        :param dw_type: 数据连接类型
+        :param dw_type: 数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
         :type dw_type: str
-        :param field_ids: 字段id信息
+        :param field_ids: 字段ID信息。
         :type field_ids: list[int]
-        :param field_names: 字段名称信息
+        :param field_names: 字段名称信息。
         :type field_names: list[str]
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param l1: 主题域分组中文名
+        :param l1: 主题域分组中文名，只读，创建和更新时无需填写。
         :type l1: str
-        :param l2: 主题域中文名
+        :param l2: 主题域中文名，只读，创建和更新时无需填写。
         :type l2: str
-        :param l3: 业务对象中文名
+        :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -200,10 +200,10 @@ class AtomicIndexVO:
     def id(self):
         """Gets the id of this AtomicIndexVO.
 
-        编码
+        编码。
 
         :return: The id of this AtomicIndexVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -211,10 +211,10 @@ class AtomicIndexVO:
     def id(self, id):
         """Sets the id of this AtomicIndexVO.
 
-        编码
+        编码。
 
         :param id: The id of this AtomicIndexVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -222,7 +222,7 @@ class AtomicIndexVO:
     def name_en(self):
         """Gets the name_en of this AtomicIndexVO.
 
-        字段名
+        字段名。
 
         :return: The name_en of this AtomicIndexVO.
         :rtype: str
@@ -233,7 +233,7 @@ class AtomicIndexVO:
     def name_en(self, name_en):
         """Sets the name_en of this AtomicIndexVO.
 
-        字段名
+        字段名。
 
         :param name_en: The name_en of this AtomicIndexVO.
         :type name_en: str
@@ -244,7 +244,7 @@ class AtomicIndexVO:
     def name_ch(self):
         """Gets the name_ch of this AtomicIndexVO.
 
-        业务属性
+        业务属性。
 
         :return: The name_ch of this AtomicIndexVO.
         :rtype: str
@@ -255,7 +255,7 @@ class AtomicIndexVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this AtomicIndexVO.
 
-        业务属性
+        业务属性。
 
         :param name_ch: The name_ch of this AtomicIndexVO.
         :type name_ch: str
@@ -266,6 +266,8 @@ class AtomicIndexVO:
     def description(self):
         """Gets the description of this AtomicIndexVO.
 
+        描述。
+
         :return: The description of this AtomicIndexVO.
         :rtype: str
         """
@@ -274,6 +276,8 @@ class AtomicIndexVO:
     @description.setter
     def description(self, description):
         """Sets the description of this AtomicIndexVO.
+
+        描述。
 
         :param description: The description of this AtomicIndexVO.
         :type description: str
@@ -284,7 +288,7 @@ class AtomicIndexVO:
     def create_by(self):
         """Gets the create_by of this AtomicIndexVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this AtomicIndexVO.
         :rtype: str
@@ -295,7 +299,7 @@ class AtomicIndexVO:
     def create_by(self, create_by):
         """Sets the create_by of this AtomicIndexVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this AtomicIndexVO.
         :type create_by: str
@@ -306,7 +310,7 @@ class AtomicIndexVO:
     def cal_exp(self):
         """Gets the cal_exp of this AtomicIndexVO.
 
-        计算表达式
+        计算表达式，形如'sum(${fact_column_id})'，其中fact_column_id表示引用事实表中的字段ID
 
         :return: The cal_exp of this AtomicIndexVO.
         :rtype: str
@@ -317,7 +321,7 @@ class AtomicIndexVO:
     def cal_exp(self, cal_exp):
         """Sets the cal_exp of this AtomicIndexVO.
 
-        计算表达式
+        计算表达式，形如'sum(${fact_column_id})'，其中fact_column_id表示引用事实表中的字段ID
 
         :param cal_exp: The cal_exp of this AtomicIndexVO.
         :type cal_exp: str
@@ -328,7 +332,7 @@ class AtomicIndexVO:
     def cal_fn_ids(self):
         """Gets the cal_fn_ids of this AtomicIndexVO.
 
-        计算表达式id
+        引用函数ID。
 
         :return: The cal_fn_ids of this AtomicIndexVO.
         :rtype: list[int]
@@ -339,7 +343,7 @@ class AtomicIndexVO:
     def cal_fn_ids(self, cal_fn_ids):
         """Sets the cal_fn_ids of this AtomicIndexVO.
 
-        计算表达式id
+        引用函数ID。
 
         :param cal_fn_ids: The cal_fn_ids of this AtomicIndexVO.
         :type cal_fn_ids: list[int]
@@ -350,7 +354,7 @@ class AtomicIndexVO:
     def l1_id(self):
         """Gets the l1_id of this AtomicIndexVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :return: The l1_id of this AtomicIndexVO.
         :rtype: int
@@ -361,7 +365,7 @@ class AtomicIndexVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this AtomicIndexVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :param l1_id: The l1_id of this AtomicIndexVO.
         :type l1_id: int
@@ -372,6 +376,8 @@ class AtomicIndexVO:
     def l2_id(self):
         """Gets the l2_id of this AtomicIndexVO.
 
+        主题域ID，只读，创建和更新时无需填写。
+
         :return: The l2_id of this AtomicIndexVO.
         :rtype: str
         """
@@ -380,6 +386,8 @@ class AtomicIndexVO:
     @l2_id.setter
     def l2_id(self, l2_id):
         """Sets the l2_id of this AtomicIndexVO.
+
+        主题域ID，只读，创建和更新时无需填写。
 
         :param l2_id: The l2_id of this AtomicIndexVO.
         :type l2_id: str
@@ -390,10 +398,10 @@ class AtomicIndexVO:
     def l3_id(self):
         """Gets the l3_id of this AtomicIndexVO.
 
-        业务对象guid
+        业务对象guid。
 
         :return: The l3_id of this AtomicIndexVO.
-        :rtype: int
+        :rtype: str
         """
         return self._l3_id
 
@@ -401,10 +409,10 @@ class AtomicIndexVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this AtomicIndexVO.
 
-        业务对象guid
+        业务对象guid。
 
         :param l3_id: The l3_id of this AtomicIndexVO.
-        :type l3_id: int
+        :type l3_id: str
         """
         self._l3_id = l3_id
 
@@ -412,10 +420,10 @@ class AtomicIndexVO:
     def table_id(self):
         """Gets the table_id of this AtomicIndexVO.
 
-        表id
+        表ID。
 
         :return: The table_id of this AtomicIndexVO.
-        :rtype: int
+        :rtype: str
         """
         return self._table_id
 
@@ -423,10 +431,10 @@ class AtomicIndexVO:
     def table_id(self, table_id):
         """Sets the table_id of this AtomicIndexVO.
 
-        表id
+        表ID。
 
         :param table_id: The table_id of this AtomicIndexVO.
-        :type table_id: int
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -434,7 +442,7 @@ class AtomicIndexVO:
     def tb_name(self):
         """Gets the tb_name of this AtomicIndexVO.
 
-        表名称
+        表名称。
 
         :return: The tb_name of this AtomicIndexVO.
         :rtype: str
@@ -445,7 +453,7 @@ class AtomicIndexVO:
     def tb_name(self, tb_name):
         """Sets the tb_name of this AtomicIndexVO.
 
-        表名称
+        表名称。
 
         :param tb_name: The tb_name of this AtomicIndexVO.
         :type tb_name: str
@@ -456,7 +464,7 @@ class AtomicIndexVO:
     def dw_type(self):
         """Gets the dw_type of this AtomicIndexVO.
 
-        数据连接类型
+        数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
         :return: The dw_type of this AtomicIndexVO.
         :rtype: str
@@ -467,7 +475,7 @@ class AtomicIndexVO:
     def dw_type(self, dw_type):
         """Sets the dw_type of this AtomicIndexVO.
 
-        数据连接类型
+        数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
         :param dw_type: The dw_type of this AtomicIndexVO.
         :type dw_type: str
@@ -478,7 +486,7 @@ class AtomicIndexVO:
     def field_ids(self):
         """Gets the field_ids of this AtomicIndexVO.
 
-        字段id信息
+        字段ID信息。
 
         :return: The field_ids of this AtomicIndexVO.
         :rtype: list[int]
@@ -489,7 +497,7 @@ class AtomicIndexVO:
     def field_ids(self, field_ids):
         """Sets the field_ids of this AtomicIndexVO.
 
-        字段id信息
+        字段ID信息。
 
         :param field_ids: The field_ids of this AtomicIndexVO.
         :type field_ids: list[int]
@@ -500,7 +508,7 @@ class AtomicIndexVO:
     def field_names(self):
         """Gets the field_names of this AtomicIndexVO.
 
-        字段名称信息
+        字段名称信息。
 
         :return: The field_names of this AtomicIndexVO.
         :rtype: list[str]
@@ -511,7 +519,7 @@ class AtomicIndexVO:
     def field_names(self, field_names):
         """Sets the field_names of this AtomicIndexVO.
 
-        字段名称信息
+        字段名称信息。
 
         :param field_names: The field_names of this AtomicIndexVO.
         :type field_names: list[str]
@@ -558,7 +566,7 @@ class AtomicIndexVO:
     def create_time(self):
         """Gets the create_time of this AtomicIndexVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this AtomicIndexVO.
         :rtype: datetime
@@ -569,7 +577,7 @@ class AtomicIndexVO:
     def create_time(self, create_time):
         """Sets the create_time of this AtomicIndexVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this AtomicIndexVO.
         :type create_time: datetime
@@ -580,7 +588,7 @@ class AtomicIndexVO:
     def update_time(self):
         """Gets the update_time of this AtomicIndexVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this AtomicIndexVO.
         :rtype: datetime
@@ -591,7 +599,7 @@ class AtomicIndexVO:
     def update_time(self, update_time):
         """Sets the update_time of this AtomicIndexVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this AtomicIndexVO.
         :type update_time: datetime
@@ -602,7 +610,7 @@ class AtomicIndexVO:
     def l1(self):
         """Gets the l1 of this AtomicIndexVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :return: The l1 of this AtomicIndexVO.
         :rtype: str
@@ -613,7 +621,7 @@ class AtomicIndexVO:
     def l1(self, l1):
         """Sets the l1 of this AtomicIndexVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :param l1: The l1 of this AtomicIndexVO.
         :type l1: str
@@ -624,7 +632,7 @@ class AtomicIndexVO:
     def l2(self):
         """Gets the l2 of this AtomicIndexVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :return: The l2 of this AtomicIndexVO.
         :rtype: str
@@ -635,7 +643,7 @@ class AtomicIndexVO:
     def l2(self, l2):
         """Sets the l2 of this AtomicIndexVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :param l2: The l2 of this AtomicIndexVO.
         :type l2: str
@@ -646,7 +654,7 @@ class AtomicIndexVO:
     def l3(self):
         """Gets the l3 of this AtomicIndexVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :return: The l3 of this AtomicIndexVO.
         :rtype: str
@@ -657,7 +665,7 @@ class AtomicIndexVO:
     def l3(self, l3):
         """Sets the l3 of this AtomicIndexVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :param l3: The l3 of this AtomicIndexVO.
         :type l3: str

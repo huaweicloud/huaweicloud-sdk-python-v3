@@ -39,17 +39,17 @@ class ApproverParam:
 
         The model defined in huaweicloud sdk
 
-        :param approver_name: 审批人姓名
+        :param approver_name: 审批人姓名。
         :type approver_name: str
-        :param user_id: 审批人user_id
+        :param user_id: 审批人ID。
         :type user_id: str
-        :param email: 
+        :param email: 邮箱地址。
         :type email: str
-        :param phone_number: 电话号码
+        :param phone_number: 电话号码。
         :type phone_number: str
-        :param email_notify: 邮件通知
+        :param email_notify: 邮件通知。
         :type email_notify: bool
-        :param sms_notify: 短信通知
+        :param sms_notify: 短信通知。
         :type sms_notify: bool
         """
         
@@ -78,7 +78,7 @@ class ApproverParam:
     def approver_name(self):
         """Gets the approver_name of this ApproverParam.
 
-        审批人姓名
+        审批人姓名。
 
         :return: The approver_name of this ApproverParam.
         :rtype: str
@@ -89,7 +89,7 @@ class ApproverParam:
     def approver_name(self, approver_name):
         """Sets the approver_name of this ApproverParam.
 
-        审批人姓名
+        审批人姓名。
 
         :param approver_name: The approver_name of this ApproverParam.
         :type approver_name: str
@@ -100,7 +100,7 @@ class ApproverParam:
     def user_id(self):
         """Gets the user_id of this ApproverParam.
 
-        审批人user_id
+        审批人ID。
 
         :return: The user_id of this ApproverParam.
         :rtype: str
@@ -111,7 +111,7 @@ class ApproverParam:
     def user_id(self, user_id):
         """Sets the user_id of this ApproverParam.
 
-        审批人user_id
+        审批人ID。
 
         :param user_id: The user_id of this ApproverParam.
         :type user_id: str
@@ -122,6 +122,8 @@ class ApproverParam:
     def email(self):
         """Gets the email of this ApproverParam.
 
+        邮箱地址。
+
         :return: The email of this ApproverParam.
         :rtype: str
         """
@@ -130,6 +132,8 @@ class ApproverParam:
     @email.setter
     def email(self, email):
         """Sets the email of this ApproverParam.
+
+        邮箱地址。
 
         :param email: The email of this ApproverParam.
         :type email: str
@@ -140,7 +144,7 @@ class ApproverParam:
     def phone_number(self):
         """Gets the phone_number of this ApproverParam.
 
-        电话号码
+        电话号码。
 
         :return: The phone_number of this ApproverParam.
         :rtype: str
@@ -151,7 +155,7 @@ class ApproverParam:
     def phone_number(self, phone_number):
         """Sets the phone_number of this ApproverParam.
 
-        电话号码
+        电话号码。
 
         :param phone_number: The phone_number of this ApproverParam.
         :type phone_number: str
@@ -162,7 +166,7 @@ class ApproverParam:
     def email_notify(self):
         """Gets the email_notify of this ApproverParam.
 
-        邮件通知
+        邮件通知。
 
         :return: The email_notify of this ApproverParam.
         :rtype: bool
@@ -173,7 +177,7 @@ class ApproverParam:
     def email_notify(self, email_notify):
         """Sets the email_notify of this ApproverParam.
 
-        邮件通知
+        邮件通知。
 
         :param email_notify: The email_notify of this ApproverParam.
         :type email_notify: bool
@@ -184,7 +188,7 @@ class ApproverParam:
     def sms_notify(self):
         """Gets the sms_notify of this ApproverParam.
 
-        短信通知
+        短信通知。
 
         :return: The sms_notify of this ApproverParam.
         :rtype: bool
@@ -195,7 +199,7 @@ class ApproverParam:
     def sms_notify(self, sms_notify):
         """Sets the sms_notify of this ApproverParam.
 
-        短信通知
+        短信通知。
 
         :param sms_notify: The sms_notify of this ApproverParam.
         :type sms_notify: bool

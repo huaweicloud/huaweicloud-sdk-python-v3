@@ -30,7 +30,7 @@ class SearchDwByTypeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息
+        :param data: 返回的数据信息。
         :type data: object
         """
         
@@ -46,7 +46,7 @@ class SearchDwByTypeResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchDwByTypeResponse.
 
-        返回的数据信息
+        返回的数据信息。
 
         :return: The data of this SearchDwByTypeResponse.
         :rtype: object
@@ -57,7 +57,7 @@ class SearchDwByTypeResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchDwByTypeResponse.
 
-        返回的数据信息
+        返回的数据信息。
 
         :param data: The data of this SearchDwByTypeResponse.
         :type data: object

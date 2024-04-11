@@ -41,17 +41,17 @@ class MetricMonitorVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码。
         :type id: int
-        :param other_metric_ids: 其他指标id
+        :param other_metric_ids: 其他指标ID。
         :type other_metric_ids: list[int]
-        :param other_metric_names: 其他指标名称
+        :param other_metric_names: 其他指标名称。
         :type other_metric_names: list[str]
-        :param expression: 告警表达式
+        :param expression: 告警表达式。
         :type expression: str
-        :param metric_id: 挂载指标id
+        :param metric_id: 挂载指ID。
         :type metric_id: int
-        :param front_configs: 前端表达式配置，用于前端数据恢复
+        :param front_configs: 前端表达式配置，用于前端数据恢复。
         :type front_configs: str
         :param metric_type: 
         :type metric_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -87,7 +87,7 @@ class MetricMonitorVO:
     def id(self):
         """Gets the id of this MetricMonitorVO.
 
-        编码
+        编码。
 
         :return: The id of this MetricMonitorVO.
         :rtype: int
@@ -98,7 +98,7 @@ class MetricMonitorVO:
     def id(self, id):
         """Sets the id of this MetricMonitorVO.
 
-        编码
+        编码。
 
         :param id: The id of this MetricMonitorVO.
         :type id: int
@@ -109,7 +109,7 @@ class MetricMonitorVO:
     def other_metric_ids(self):
         """Gets the other_metric_ids of this MetricMonitorVO.
 
-        其他指标id
+        其他指标ID。
 
         :return: The other_metric_ids of this MetricMonitorVO.
         :rtype: list[int]
@@ -120,7 +120,7 @@ class MetricMonitorVO:
     def other_metric_ids(self, other_metric_ids):
         """Sets the other_metric_ids of this MetricMonitorVO.
 
-        其他指标id
+        其他指标ID。
 
         :param other_metric_ids: The other_metric_ids of this MetricMonitorVO.
         :type other_metric_ids: list[int]
@@ -131,7 +131,7 @@ class MetricMonitorVO:
     def other_metric_names(self):
         """Gets the other_metric_names of this MetricMonitorVO.
 
-        其他指标名称
+        其他指标名称。
 
         :return: The other_metric_names of this MetricMonitorVO.
         :rtype: list[str]
@@ -142,7 +142,7 @@ class MetricMonitorVO:
     def other_metric_names(self, other_metric_names):
         """Sets the other_metric_names of this MetricMonitorVO.
 
-        其他指标名称
+        其他指标名称。
 
         :param other_metric_names: The other_metric_names of this MetricMonitorVO.
         :type other_metric_names: list[str]
@@ -153,7 +153,7 @@ class MetricMonitorVO:
     def expression(self):
         """Gets the expression of this MetricMonitorVO.
 
-        告警表达式
+        告警表达式。
 
         :return: The expression of this MetricMonitorVO.
         :rtype: str
@@ -164,7 +164,7 @@ class MetricMonitorVO:
     def expression(self, expression):
         """Sets the expression of this MetricMonitorVO.
 
-        告警表达式
+        告警表达式。
 
         :param expression: The expression of this MetricMonitorVO.
         :type expression: str
@@ -175,7 +175,7 @@ class MetricMonitorVO:
     def metric_id(self):
         """Gets the metric_id of this MetricMonitorVO.
 
-        挂载指标id
+        挂载指ID。
 
         :return: The metric_id of this MetricMonitorVO.
         :rtype: int
@@ -186,7 +186,7 @@ class MetricMonitorVO:
     def metric_id(self, metric_id):
         """Sets the metric_id of this MetricMonitorVO.
 
-        挂载指标id
+        挂载指ID。
 
         :param metric_id: The metric_id of this MetricMonitorVO.
         :type metric_id: int
@@ -197,7 +197,7 @@ class MetricMonitorVO:
     def front_configs(self):
         """Gets the front_configs of this MetricMonitorVO.
 
-        前端表达式配置，用于前端数据恢复
+        前端表达式配置，用于前端数据恢复。
 
         :return: The front_configs of this MetricMonitorVO.
         :rtype: str
@@ -208,7 +208,7 @@ class MetricMonitorVO:
     def front_configs(self, front_configs):
         """Sets the front_configs of this MetricMonitorVO.
 
-        前端表达式配置，用于前端数据恢复
+        前端表达式配置，用于前端数据恢复。
 
         :param front_configs: The front_configs of this MetricMonitorVO.
         :type front_configs: str

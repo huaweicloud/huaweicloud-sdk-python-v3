@@ -18,7 +18,7 @@ class ListAggregationLogicTablesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'AggregationLogicTableVOSearchResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListAggregationLogicTablesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVOSearchResultData`
         """
         
         super(ListAggregationLogicTablesResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListAggregationLogicTablesResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListAggregationLogicTablesResponse.
 
-        返回的数据信息
-
         :return: The data of this ListAggregationLogicTablesResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVOSearchResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ListAggregationLogicTablesResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListAggregationLogicTablesResponse.
 
-        返回的数据信息
-
         :param data: The data of this ListAggregationLogicTablesResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVOSearchResultData`
         """
         self._data = data
 

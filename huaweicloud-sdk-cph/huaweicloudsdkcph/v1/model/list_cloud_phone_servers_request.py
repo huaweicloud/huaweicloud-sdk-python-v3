@@ -21,7 +21,11 @@ class ListCloudPhoneServersRequest:
         'limit': 'int',
         'server_name': 'str',
         'server_id': 'str',
-        'network_version': 'str'
+        'network_version': 'str',
+        'phone_model_name': 'str',
+        'create_since': 'int',
+        'create_until': 'int',
+        'status': 'int'
     }
 
     attribute_map = {
@@ -29,10 +33,14 @@ class ListCloudPhoneServersRequest:
         'limit': 'limit',
         'server_name': 'server_name',
         'server_id': 'server_id',
-        'network_version': 'network_version'
+        'network_version': 'network_version',
+        'phone_model_name': 'phone_model_name',
+        'create_since': 'create_since',
+        'create_until': 'create_until',
+        'status': 'status'
     }
 
-    def __init__(self, offset=None, limit=None, server_name=None, server_id=None, network_version=None):
+    def __init__(self, offset=None, limit=None, server_name=None, server_id=None, network_version=None, phone_model_name=None, create_since=None, create_until=None, status=None):
         """ListCloudPhoneServersRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +55,14 @@ class ListCloudPhoneServersRequest:
         :type server_id: str
         :param network_version: 云手机服务器是否为自定义网络标识。 - v1：系统定义网络的云手机服务器 - v2：自定义网络的云手机服务器
         :type network_version: str
+        :param phone_model_name: 手机规格名称。
+        :type phone_model_name: str
+        :param create_since: 查询的起始时间戳。
+        :type create_since: int
+        :param create_until: 查询的结束时间戳。
+        :type create_until: int
+        :param status: 服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
+        :type status: int
         """
         
         
@@ -56,6 +72,10 @@ class ListCloudPhoneServersRequest:
         self._server_name = None
         self._server_id = None
         self._network_version = None
+        self._phone_model_name = None
+        self._create_since = None
+        self._create_until = None
+        self._status = None
         self.discriminator = None
 
         if offset is not None:
@@ -68,6 +88,14 @@ class ListCloudPhoneServersRequest:
             self.server_id = server_id
         if network_version is not None:
             self.network_version = network_version
+        if phone_model_name is not None:
+            self.phone_model_name = phone_model_name
+        if create_since is not None:
+            self.create_since = create_since
+        if create_until is not None:
+            self.create_until = create_until
+        if status is not None:
+            self.status = status
 
     @property
     def offset(self):
@@ -178,6 +206,94 @@ class ListCloudPhoneServersRequest:
         :type network_version: str
         """
         self._network_version = network_version
+
+    @property
+    def phone_model_name(self):
+        """Gets the phone_model_name of this ListCloudPhoneServersRequest.
+
+        手机规格名称。
+
+        :return: The phone_model_name of this ListCloudPhoneServersRequest.
+        :rtype: str
+        """
+        return self._phone_model_name
+
+    @phone_model_name.setter
+    def phone_model_name(self, phone_model_name):
+        """Sets the phone_model_name of this ListCloudPhoneServersRequest.
+
+        手机规格名称。
+
+        :param phone_model_name: The phone_model_name of this ListCloudPhoneServersRequest.
+        :type phone_model_name: str
+        """
+        self._phone_model_name = phone_model_name
+
+    @property
+    def create_since(self):
+        """Gets the create_since of this ListCloudPhoneServersRequest.
+
+        查询的起始时间戳。
+
+        :return: The create_since of this ListCloudPhoneServersRequest.
+        :rtype: int
+        """
+        return self._create_since
+
+    @create_since.setter
+    def create_since(self, create_since):
+        """Sets the create_since of this ListCloudPhoneServersRequest.
+
+        查询的起始时间戳。
+
+        :param create_since: The create_since of this ListCloudPhoneServersRequest.
+        :type create_since: int
+        """
+        self._create_since = create_since
+
+    @property
+    def create_until(self):
+        """Gets the create_until of this ListCloudPhoneServersRequest.
+
+        查询的结束时间戳。
+
+        :return: The create_until of this ListCloudPhoneServersRequest.
+        :rtype: int
+        """
+        return self._create_until
+
+    @create_until.setter
+    def create_until(self, create_until):
+        """Sets the create_until of this ListCloudPhoneServersRequest.
+
+        查询的结束时间戳。
+
+        :param create_until: The create_until of this ListCloudPhoneServersRequest.
+        :type create_until: int
+        """
+        self._create_until = create_until
+
+    @property
+    def status(self):
+        """Gets the status of this ListCloudPhoneServersRequest.
+
+        服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
+
+        :return: The status of this ListCloudPhoneServersRequest.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListCloudPhoneServersRequest.
+
+        服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
+
+        :param status: The status of this ListCloudPhoneServersRequest.
+        :type status: int
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

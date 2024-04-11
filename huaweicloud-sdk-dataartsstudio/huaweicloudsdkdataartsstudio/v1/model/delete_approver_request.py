@@ -18,21 +18,25 @@ class DeleteApproverRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'approver_ids': 'str'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'approver_ids': 'approver_ids'
     }
 
-    def __init__(self, workspace=None, approver_ids=None):
+    def __init__(self, workspace=None, x_project_id=None, approver_ids=None):
         """DeleteApproverRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
         :param approver_ids: 审批人id
         :type approver_ids: str
         """
@@ -40,17 +44,20 @@ class DeleteApproverRequest:
         
 
         self._workspace = None
+        self._x_project_id = None
         self._approver_ids = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.approver_ids = approver_ids
 
     @property
     def workspace(self):
         """Gets the workspace of this DeleteApproverRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this DeleteApproverRequest.
         :rtype: str
@@ -61,12 +68,34 @@ class DeleteApproverRequest:
     def workspace(self, workspace):
         """Sets the workspace of this DeleteApproverRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this DeleteApproverRequest.
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def x_project_id(self):
+        """Gets the x_project_id of this DeleteApproverRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this DeleteApproverRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this DeleteApproverRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this DeleteApproverRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
 
     @property
     def approver_ids(self):

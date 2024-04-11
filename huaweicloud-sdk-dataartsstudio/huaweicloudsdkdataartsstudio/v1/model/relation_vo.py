@@ -57,35 +57,35 @@ class RelationVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码。
         :type id: int
-        :param source_table_id: 源表id
+        :param source_table_id: 源表ID。
         :type source_table_id: int
-        :param target_table_id: 目标表id
+        :param target_table_id: 目标表ID。
         :type target_table_id: int
-        :param name: 关系名称
+        :param name: 关系名称。
         :type name: str
-        :param source_table_name: 源表名称
+        :param source_table_name: 源表名称。
         :type source_table_name: str
-        :param target_table_name: 目的表名称
+        :param target_table_name: 目的表名称。
         :type target_table_name: str
-        :param role: 角色
+        :param role: 角色。
         :type role: str
-        :param tenant_id: 租户id
+        :param tenant_id: 租户ID。
         :type tenant_id: str
         :param source_type: 
         :type source_type: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
         :param target_type: 
         :type target_type: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param mappings: 表属性信息
+        :param mappings: 表属性信息。
         :type mappings: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationMappingVO`]
         """
         
@@ -142,7 +142,7 @@ class RelationVO:
     def id(self):
         """Gets the id of this RelationVO.
 
-        编码
+        编码。
 
         :return: The id of this RelationVO.
         :rtype: int
@@ -153,7 +153,7 @@ class RelationVO:
     def id(self, id):
         """Sets the id of this RelationVO.
 
-        编码
+        编码。
 
         :param id: The id of this RelationVO.
         :type id: int
@@ -164,7 +164,7 @@ class RelationVO:
     def source_table_id(self):
         """Gets the source_table_id of this RelationVO.
 
-        源表id
+        源表ID。
 
         :return: The source_table_id of this RelationVO.
         :rtype: int
@@ -175,7 +175,7 @@ class RelationVO:
     def source_table_id(self, source_table_id):
         """Sets the source_table_id of this RelationVO.
 
-        源表id
+        源表ID。
 
         :param source_table_id: The source_table_id of this RelationVO.
         :type source_table_id: int
@@ -186,7 +186,7 @@ class RelationVO:
     def target_table_id(self):
         """Gets the target_table_id of this RelationVO.
 
-        目标表id
+        目标表ID。
 
         :return: The target_table_id of this RelationVO.
         :rtype: int
@@ -197,7 +197,7 @@ class RelationVO:
     def target_table_id(self, target_table_id):
         """Sets the target_table_id of this RelationVO.
 
-        目标表id
+        目标表ID。
 
         :param target_table_id: The target_table_id of this RelationVO.
         :type target_table_id: int
@@ -208,7 +208,7 @@ class RelationVO:
     def name(self):
         """Gets the name of this RelationVO.
 
-        关系名称
+        关系名称。
 
         :return: The name of this RelationVO.
         :rtype: str
@@ -219,7 +219,7 @@ class RelationVO:
     def name(self, name):
         """Sets the name of this RelationVO.
 
-        关系名称
+        关系名称。
 
         :param name: The name of this RelationVO.
         :type name: str
@@ -230,7 +230,7 @@ class RelationVO:
     def source_table_name(self):
         """Gets the source_table_name of this RelationVO.
 
-        源表名称
+        源表名称。
 
         :return: The source_table_name of this RelationVO.
         :rtype: str
@@ -241,7 +241,7 @@ class RelationVO:
     def source_table_name(self, source_table_name):
         """Sets the source_table_name of this RelationVO.
 
-        源表名称
+        源表名称。
 
         :param source_table_name: The source_table_name of this RelationVO.
         :type source_table_name: str
@@ -252,7 +252,7 @@ class RelationVO:
     def target_table_name(self):
         """Gets the target_table_name of this RelationVO.
 
-        目的表名称
+        目的表名称。
 
         :return: The target_table_name of this RelationVO.
         :rtype: str
@@ -263,7 +263,7 @@ class RelationVO:
     def target_table_name(self, target_table_name):
         """Sets the target_table_name of this RelationVO.
 
-        目的表名称
+        目的表名称。
 
         :param target_table_name: The target_table_name of this RelationVO.
         :type target_table_name: str
@@ -274,7 +274,7 @@ class RelationVO:
     def role(self):
         """Gets the role of this RelationVO.
 
-        角色
+        角色。
 
         :return: The role of this RelationVO.
         :rtype: str
@@ -285,7 +285,7 @@ class RelationVO:
     def role(self, role):
         """Sets the role of this RelationVO.
 
-        角色
+        角色。
 
         :param role: The role of this RelationVO.
         :type role: str
@@ -296,7 +296,7 @@ class RelationVO:
     def tenant_id(self):
         """Gets the tenant_id of this RelationVO.
 
-        租户id
+        租户ID。
 
         :return: The tenant_id of this RelationVO.
         :rtype: str
@@ -307,7 +307,7 @@ class RelationVO:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this RelationVO.
 
-        租户id
+        租户ID。
 
         :param tenant_id: The tenant_id of this RelationVO.
         :type tenant_id: str
@@ -354,7 +354,7 @@ class RelationVO:
     def create_by(self):
         """Gets the create_by of this RelationVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this RelationVO.
         :rtype: str
@@ -365,7 +365,7 @@ class RelationVO:
     def create_by(self, create_by):
         """Sets the create_by of this RelationVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this RelationVO.
         :type create_by: str
@@ -376,7 +376,7 @@ class RelationVO:
     def update_by(self):
         """Gets the update_by of this RelationVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this RelationVO.
         :rtype: str
@@ -387,7 +387,7 @@ class RelationVO:
     def update_by(self, update_by):
         """Sets the update_by of this RelationVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this RelationVO.
         :type update_by: str
@@ -398,7 +398,7 @@ class RelationVO:
     def create_time(self):
         """Gets the create_time of this RelationVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this RelationVO.
         :rtype: datetime
@@ -409,7 +409,7 @@ class RelationVO:
     def create_time(self, create_time):
         """Sets the create_time of this RelationVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this RelationVO.
         :type create_time: datetime
@@ -420,7 +420,7 @@ class RelationVO:
     def update_time(self):
         """Gets the update_time of this RelationVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this RelationVO.
         :rtype: datetime
@@ -431,7 +431,7 @@ class RelationVO:
     def update_time(self, update_time):
         """Sets the update_time of this RelationVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this RelationVO.
         :type update_time: datetime
@@ -442,7 +442,7 @@ class RelationVO:
     def mappings(self):
         """Gets the mappings of this RelationVO.
 
-        表属性信息
+        表属性信息。
 
         :return: The mappings of this RelationVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationMappingVO`]
@@ -453,7 +453,7 @@ class RelationVO:
     def mappings(self, mappings):
         """Sets the mappings of this RelationVO.
 
-        表属性信息
+        表属性信息。
 
         :param mappings: The mappings of this RelationVO.
         :type mappings: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationMappingVO`]

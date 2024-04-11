@@ -32,6 +32,80 @@ class DataArtsStudioAsyncClient(Client):
 
         return client_builder
 
+    def add_design_entity_tags_async(self, request):
+        """添加标签
+
+        根据资产（表或属性）的ID给资产打上标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddDesignEntityTags
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.AddDesignEntityTagsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AddDesignEntityTagsResponse`
+        """
+        http_info = self._add_design_entity_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_design_entity_tags_async_invoker(self, request):
+        http_info = self._add_design_entity_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_design_entity_tags_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/{entity_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDesignEntityTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'entity_id' in local_var_params:
+            path_params['entity_id'] = local_var_params['entity_id']
+
+        query_params = []
+        if 'attr_id' in local_var_params:
+            query_params.append(('attr_id', local_var_params['attr_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_tag_to_asset_async(self, request):
         """标签关联到资产
 
@@ -851,7 +925,7 @@ class DataArtsStudioAsyncClient(Client):
     def batch_offline_async(self, request):
         """批量下线
 
-        批量下线
+        批量下线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -888,6 +962,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -918,7 +994,7 @@ class DataArtsStudioAsyncClient(Client):
     def batch_publish_async(self, request):
         """批量发布
 
-        批量发布
+        批量发布。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -955,6 +1031,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1117,7 +1195,7 @@ class DataArtsStudioAsyncClient(Client):
     def change_catalog_async(self, request):
         """修改流程架构
 
-        修改流程架构
+        修改流程架构。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1154,6 +1232,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1249,7 +1329,7 @@ class DataArtsStudioAsyncClient(Client):
     def change_subjects_async(self, request):
         """修改或删除主题层级
 
-        修改或删除主题层级
+        修改或删除主题层级。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1286,6 +1366,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1316,7 +1398,7 @@ class DataArtsStudioAsyncClient(Client):
     def check_dimension_status_async(self, request):
         """查看逆向维度表任务
 
-        查看逆向维度表任务
+        查看逆向维度表任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1353,6 +1435,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1381,7 +1465,7 @@ class DataArtsStudioAsyncClient(Client):
     def check_fact_logic_table_status_async(self, request):
         """查看逆向事实表任务
 
-        查看逆向事实表任务
+        查看逆向事实表任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1418,6 +1502,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1446,7 +1532,7 @@ class DataArtsStudioAsyncClient(Client):
     def confirm_approvals_async(self, request):
         """审批单处理
 
-        审批驳回/通过，单个或多个 action-id&#x3D;reject/resolve
+        审批驳回/通过，单个或多个action-id&#x3D;reject/resolve。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1485,6 +1571,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1584,7 +1672,7 @@ class DataArtsStudioAsyncClient(Client):
     def count_all_models_async(self, request):
         """关系建模统计信息
 
-        关系建模统计信息
+        关系建模统计信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1621,6 +1709,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1649,7 +1739,7 @@ class DataArtsStudioAsyncClient(Client):
     def count_overviews_async(self, request):
         """总览统计信息
 
-        总览统计信息
+        总览统计信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1686,6 +1776,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1714,7 +1806,7 @@ class DataArtsStudioAsyncClient(Client):
     def count_standards_async(self, request):
         """标准覆盖率统计信息
 
-        标准覆盖率统计信息
+        标准覆盖率统计信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1755,6 +1847,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1783,7 +1877,7 @@ class DataArtsStudioAsyncClient(Client):
     def count_table_models_async(self, request):
         """模型统计信息
 
-        模型统计信息
+        模型统计信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1822,6 +1916,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1919,7 +2015,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_approver_async(self, request):
         """创建审批人
 
-        创建审批人
+        创建审批人。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1956,6 +2052,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -1986,7 +2084,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_biz_metric_async(self, request):
         """创建业务指标
 
-        创建业务指标
+        创建业务指标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2023,6 +2121,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -2053,7 +2153,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_catalog_async(self, request):
         """创建流程架构
 
-        创建流程架构
+        创建流程架构。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2090,6 +2190,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -2120,7 +2222,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_code_table_async(self, request):
         """创建码表
 
-        创建码表
+        创建码表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2157,6 +2259,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -2251,10 +2355,148 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def create_design_aggregation_logic_table_async(self, request):
+        """新建汇总表
+
+        新建汇总表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDesignAggregationLogicTable
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignAggregationLogicTableRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignAggregationLogicTableResponse`
+        """
+        http_info = self._create_design_aggregation_logic_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_design_aggregation_logic_table_async_invoker(self, request):
+        http_info = self._create_design_aggregation_logic_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_design_aggregation_logic_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/aggregation-logic-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesignAggregationLogicTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_design_atomic_index_async(self, request):
+        """新建原子指标
+
+        新建单个原子指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDesignAtomicIndex
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignAtomicIndexRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDesignAtomicIndexResponse`
+        """
+        http_info = self._create_design_atomic_index_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_design_atomic_index_async_invoker(self, request):
+        http_info = self._create_design_atomic_index_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_design_atomic_index_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/atomic-indexs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesignAtomicIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_directory_async(self, request):
         """创建目录
 
-        创建目录
+        创建目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2291,6 +2533,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -3131,7 +3375,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_standard_async(self, request):
         """创建数据标准
 
-        创建数据标准
+        创建数据标准。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3168,6 +3412,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -3198,7 +3444,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_standard_template_async(self, request):
         """创建数据标准模板
 
-        创建数据标准模板
+        创建数据标准模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3235,6 +3481,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -3265,7 +3513,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_subject_async(self, request):
         """创建主题
 
-        创建主题
+        创建主题。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3302,6 +3550,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -3332,7 +3582,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_subject_new_async(self, request):
         """创建主题(新)
 
-        创建主题(新)
+        创建主题(新)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3369,6 +3619,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -3397,9 +3649,9 @@ class DataArtsStudioAsyncClient(Client):
         return http_info
 
     def create_table_model_async(self, request):
-        """创建模型实体
+        """创建表模型
 
-        创建一个模型实体，包括逻辑实体或物理数据表。
+        在关系建模中创建一个表模型，包括逻辑实体和物理表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3436,6 +3688,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -3600,7 +3854,7 @@ class DataArtsStudioAsyncClient(Client):
     def create_workspace_async(self, request):
         """新建模型工作区
 
-        新建模型工作区
+        新建模型工作区。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3637,6 +3891,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -3803,7 +4059,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_approver_async(self, request):
         """删除审批人
 
-        删除审批人
+        删除审批人。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3842,6 +4098,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -3937,7 +4195,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_biz_metric_async(self, request):
         """删除业务指标
 
-        删除业务指标
+        删除业务指标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3974,6 +4232,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4004,7 +4264,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_catalog_async(self, request):
         """删除流程架构
 
-        删除流程架构
+        删除流程架构。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4041,6 +4301,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4140,7 +4402,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_code_table_async(self, request):
         """删除码表
 
-        删除码表
+        删除码表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4177,6 +4439,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4271,10 +4535,219 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def delete_design_aggregation_logic_table_async(self, request):
+        """删除汇总表
+
+        批量删除汇总表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDesignAggregationLogicTable
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignAggregationLogicTableRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignAggregationLogicTableResponse`
+        """
+        http_info = self._delete_design_aggregation_logic_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_design_aggregation_logic_table_async_invoker(self, request):
+        http_info = self._delete_design_aggregation_logic_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_design_aggregation_logic_table_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/aggregation-logic-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesignAggregationLogicTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_design_atomic_index_async(self, request):
+        """删除原子指标
+
+        批量删除原子指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDesignAtomicIndex
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignAtomicIndexRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignAtomicIndexResponse`
+        """
+        http_info = self._delete_design_atomic_index_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_design_atomic_index_async_invoker(self, request):
+        http_info = self._delete_design_atomic_index_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_design_atomic_index_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/atomic-indexs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesignAtomicIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_design_latest_approval_async(self, request):
+        """删除实体下展
+
+        当已发布的实体被编辑时，其会生成下展，该接口用于删除实体的下展信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDesignLatestApproval
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignLatestApprovalRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDesignLatestApprovalResponse`
+        """
+        http_info = self._delete_design_latest_approval_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_design_latest_approval_async_invoker(self, request):
+        http_info = self._delete_design_latest_approval_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_design_latest_approval_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/approvals/business/{biz_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesignLatestApprovalResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'biz_id' in local_var_params:
+            path_params['biz_id'] = local_var_params['biz_id']
+
+        query_params = []
+        if 'biz_type' in local_var_params:
+            query_params.append(('biz_type', local_var_params['biz_type']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_directory_async(self, request):
         """删除目录
 
-        删除目录
+        删除目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4314,6 +4787,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4679,7 +5154,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_standard_async(self, request):
         """删除数据标准
 
-        删除数据标准
+        删除数据标准。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4716,6 +5191,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4746,7 +5223,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_standard_template_async(self, request):
         """删除数据标准模板
 
-        删除数据标准模板
+        删除数据标准模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4785,6 +5262,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4813,7 +5292,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_subject_async(self, request):
         """删除主题
 
-        删除主题
+        删除主题。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4850,6 +5329,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4880,7 +5361,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_subject_new_async(self, request):
         """删除主题(新)
 
-        删除主题(新)
+        删除主题(新)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4917,6 +5398,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4945,9 +5428,9 @@ class DataArtsStudioAsyncClient(Client):
         return http_info
 
     def delete_table_model_async(self, request):
-        """删除模型实体
+        """删除表模型
 
-        删除一个模型实体，包括逻辑实体或物理数据表。
+        在关系建模中删除一个表模型及其属性，包括逻辑实体和物理表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4984,6 +5467,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -5081,7 +5566,7 @@ class DataArtsStudioAsyncClient(Client):
     def delete_workspaces_async(self, request):
         """删除模型工作区
 
-        删除模型工作区
+        删除模型工作区。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5121,6 +5606,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -5349,10 +5836,222 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def export_design_model_table_ddl_async(self, request):
+        """导出模型中表的DDL语句
+
+        根据模型ID导出指定表的DDL语句。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportDesignModelTableDdl
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelTableDdlRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelTableDdlResponse`
+        """
+        http_info = self._export_design_model_table_ddl_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_design_model_table_ddl_async_invoker(self, request):
+        http_info = self._export_design_model_table_ddl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_design_model_table_ddl_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/workspaces/{model_id}/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDesignModelTableDdlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_id' in local_var_params:
+            path_params['model_id'] = local_var_params['model_id']
+
+        query_params = []
+        if 'tb_names' in local_var_params:
+            query_params.append(('tb_names', local_var_params['tb_names']))
+            collection_formats['tb_names'] = 'multi'
+        if 'with_db' in local_var_params:
+            query_params.append(('with_db', local_var_params['with_db']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_design_models_async(self, request):
+        """导出业务数据
+
+        根据请求参数，导出业务数据，可以导出：码表、数据标准、原子指标、衍生指标、复合指标、汇总表、业务指标、主题、流程、逻辑模型、物理模型、维度、事实表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportDesignModels
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelsResponse`
+        """
+        http_info = self._export_design_models_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_design_models_async_invoker(self, request):
+        http_info = self._export_design_models_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_design_models_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/export-model",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDesignModelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_design_result_async(self, request):
+        """获取excel导出结果
+
+        根据请求导出接口（/export-model）时返回的uuid，获取excel导出结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportDesignResult
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignResultRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignResultResponse`
+        """
+        http_info = self._export_design_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_design_result_async_invoker(self, request):
+        http_info = self._export_design_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_design_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/export-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDesignResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'uuid' in local_var_params:
+            query_params.append(('uuid', local_var_params['uuid']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def import_catalogs_async(self, request):
         """导入主题
 
-        用于导入主题
+        用于导入主题。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5393,6 +6092,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
         if 'file' in local_var_params:
@@ -5492,7 +6193,7 @@ class DataArtsStudioAsyncClient(Client):
     def import_models_async(self, request):
         """导入模型，关系建模，维度建模，码表，业务指标以及流程架构
 
-        导入模型，关系建模，维度建模，码表，业务指标以及流程架构
+        导入模型，关系建模，维度建模，码表，业务指标以及流程架构。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5537,6 +6238,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
         if 'file' in local_var_params:
@@ -5569,7 +6272,7 @@ class DataArtsStudioAsyncClient(Client):
     def import_result_async(self, request):
         """查询导入结果
 
-        查询导入excel的处理结果
+        查询导入excel的处理结果。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5608,6 +6311,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -5636,7 +6341,7 @@ class DataArtsStudioAsyncClient(Client):
     def initialize_standard_template_async(self, request):
         """初始化数据标准模板
 
-        初始化模板
+        初始化数据标准模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5675,6 +6380,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -5705,7 +6412,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_aggregation_logic_tables_async(self, request):
         """查找汇总表
 
-        通过中英文名称、创建者、审核人、状态、修改时间分页查找汇总表信息
+        通过中英文名称、创建者、审核人、状态、修改时间分页查找汇总表信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5771,6 +6478,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -5870,9 +6579,9 @@ class DataArtsStudioAsyncClient(Client):
         return http_info
 
     def list_all_standards_async(self, request):
-        """获取数据标准
+        """获取数据标准集合
 
-        获取数据标准
+        根据查询条件分页获取数据标准集合，按修改时间降序排序。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5919,6 +6628,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -5947,7 +6658,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_all_tables_async(self, request):
         """查询多种类型的表信息
 
-        从信息架构中查询多种类型的表信息，包括逻辑实体、物理表、维度表、事实表、汇总表
+        从信息架构中查询多种类型的表信息，包括逻辑实体、物理表、维度表、事实表、汇总表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6006,11 +6717,13 @@ class DataArtsStudioAsyncClient(Client):
             collection_formats['biz_catalog_id_list'] = 'csv'
         if 'biz_type_list' in local_var_params:
             query_params.append(('biz_type_list', local_var_params['biz_type_list']))
-            collection_formats['biz_type_list'] = 'multi'
+            collection_formats['biz_type_list'] = 'csv'
 
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -6495,7 +7208,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_approvers_async(self, request):
         """查询审批人列表
 
-        查询审批人列表
+        查询审批人列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6538,6 +7251,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -6718,7 +7433,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_biz_metric_dimensions_async(self, request):
         """查看指标维度信息
 
-        查看指标维度信息
+        查看指标维度信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6759,6 +7474,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -6787,7 +7504,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_biz_metric_owners_async(self, request):
         """查看指标指标责任人信息
 
-        查看指标指标责任人信息
+        查看指标指标责任人信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6828,6 +7545,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -6856,7 +7575,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_biz_metrics_async(self, request):
         """查询业务指标信息
 
-        通过名称、创建者、修改时间分页查找业务指标信息
+        通过名称、创建者、修改时间分页查找业务指标信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6916,6 +7635,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -6944,7 +7665,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_business_async(self, request):
         """获取主题树信息
 
-        获取数据资产主题树信息l1，l2，l3
+        获取数据资产主题树信息l1，l2，l3。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6985,6 +7706,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -7086,7 +7809,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_catalog_tree_async(self, request):
         """获取所有流程架构目录树
 
-        获取所有目录树
+        获取所有目录树。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7123,6 +7846,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -7295,7 +8020,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_compound_metrics_async(self, request):
         """查找复合指标
 
-        通过中英文名称、创建者、审核人、状态、修改时间、l3Id分页查找复合指标信息
+        通过中英文名称、创建者、审核人、状态、修改时间、l3Id分页查找复合指标信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7354,6 +8079,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -7382,7 +8109,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_condition_async(self, request):
         """查找业务限定
 
-        通过中英文名称、描述、创建者、审核人、限定分组id、修改时间状态分页查找限定信息
+        通过中英文名称、描述、创建者、审核人、限定分组id、修改时间状态分页查找限定信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7435,6 +8162,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -7830,7 +8559,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_derivative_indexes_async(self, request):
         """查找衍生指标
 
-        通过中英文名称、创建者、审核人、状态、修改时间、l3Id分页查找衍生指标信息
+        通过中英文名称、创建者、审核人、状态、修改时间、l3Id分页查找衍生指标信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7895,6 +8624,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -7923,7 +8654,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_dimension_groups_async(self, request):
         """查看维度颗粒度
 
-        查询维度颗粒度, 依据tableId查询涉及所有维度，不传tableId查询所有维度组颗粒度
+        查询维度颗粒度，依据tableId查询涉及所有维度，不传tableId查询所有维度组颗粒度。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7968,6 +8699,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -7996,7 +8729,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_dimension_logic_tables_async(self, request):
         """查找维度表
 
-        通过中英文名称、创建者、审核人、状态、修改时间分页查找维度表信息
+        通过中英文名称、创建者、审核人、状态、修改时间分页查找维度表信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8064,6 +8797,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -8092,7 +8827,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_dimensions_async(self, request):
         """查找维度
 
-        通过中英文名称、描述、创建者、审核人、状态、l3Id、派生指标idList、修改时间分页查找维度信息
+        通过中英文名称、描述、创建者、审核人、状态、l3Id、衍生指标idList、修改时间分页查找维度信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8156,6 +8891,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -8184,7 +8921,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_directories_async(self, request):
         """获取所有目录
 
-        获取所有目录
+        获取所有目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8227,6 +8964,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -8255,7 +8994,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_fact_logic_tables_async(self, request):
         """查找事实表
 
-        通过中英文名称、创建者、审核人、状态、修改时间分页查找事实表信息
+        通过中英文名称、创建者、审核人、状态、修改时间分页查找事实表信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8319,6 +9058,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -9004,7 +9745,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_metric_relations_async(self, request):
         """获取指标关联信息
 
-        获取当前指标图谱
+        获取当前指标图谱。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9045,6 +9786,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -9319,7 +10062,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_relations_async(self, request):
         """关系
 
-        通过名称、等分页查找关系信息
+        通过名称、等分页查找关系信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9368,6 +10111,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -10249,7 +10994,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_subject_levels_async(self, request):
         """获取主题层级
 
-        获取主题层级
+        获取主题层级。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10290,6 +11035,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -10318,7 +11065,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_table_model_relations_async(self, request):
         """查询模型下所有关系
 
-        查询模型下所有关系
+        查询模型下所有关系。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10365,6 +11112,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -10391,9 +11140,9 @@ class DataArtsStudioAsyncClient(Client):
         return http_info
 
     def list_table_models_async(self, request):
-        """查找模型实体列表
+        """查找表模型列表
 
-        通过中英文名称、创建者、审核人、状态、修改时间分页查找模型实体信息，包含逻辑实体、表或属性。
+        通过中英文名称、创建者、审核人、状态、修改时间分页查找关系建模中的表模型信息，包括逻辑实体、物理表和其属性。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10455,6 +11204,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -10550,7 +11301,7 @@ class DataArtsStudioAsyncClient(Client):
     def list_workspaces_async(self, request):
         """获取模型
 
-        获取模型
+        获取模型。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10595,6 +11346,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -10832,7 +11585,7 @@ class DataArtsStudioAsyncClient(Client):
     def modify_customized_fields_async(self, request):
         """修改自定义项
 
-        修改自定义项
+        修改自定义项。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10869,6 +11622,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11028,6 +11783,150 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def remove_design_entity_tags_async(self, request):
+        """删除标签
+
+        根据资产（表或属性）的ID删除资产标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveDesignEntityTags
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.RemoveDesignEntityTagsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RemoveDesignEntityTagsResponse`
+        """
+        http_info = self._remove_design_entity_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_design_entity_tags_async_invoker(self, request):
+        http_info = self._remove_design_entity_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_design_entity_tags_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/{entity_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveDesignEntityTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'entity_id' in local_var_params:
+            path_params['entity_id'] = local_var_params['entity_id']
+
+        query_params = []
+        if 'attr_id' in local_var_params:
+            query_params.append(('attr_id', local_var_params['attr_id']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_design_quality_infos_async(self, request):
+        """清空质量规则
+
+        清空表的质量规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveDesignQualityInfos
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.RemoveDesignQualityInfosRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RemoveDesignQualityInfosResponse`
+        """
+        http_info = self._remove_design_quality_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_design_quality_infos_async_invoker(self, request):
+        http_info = self._remove_design_quality_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_design_quality_infos_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/{table_id}/qualities",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveDesignQualityInfosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+        if 'table_type' in local_var_params:
+            query_params.append(('table_type', local_var_params['table_type']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def renew_data_profile_async(self, request):
         """指定字段采集概要
 
@@ -11098,7 +11997,7 @@ class DataArtsStudioAsyncClient(Client):
     def reset_link_attribute_and_standard_async(self, request):
         """关联属性与数据标准
 
-        关联属性与数据标准
+        关联属性与数据标准。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11135,6 +12034,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11165,7 +12066,7 @@ class DataArtsStudioAsyncClient(Client):
     def rollback_approval_async(self, request):
         """撤回审批单
 
-        撤回审批单
+        撤回审批单。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11204,6 +12105,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11232,7 +12135,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_approvals_async(self, request):
         """获取审批单
 
-        获取审批单
+        获取审批单。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11293,6 +12196,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11321,7 +12226,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_atomic_indexes_async(self, request):
         """查找原子指标
 
-        通过中英文名称、创建者、审核人、状态、修改时间分页查找原子指标信息
+        通过中英文名称、创建者、审核人、状态、修改时间分页查找原子指标信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11378,6 +12283,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11552,7 +12459,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_catalogs_async(self, request):
         """查询流程架构列表
 
-        查询流程架构列表
+        查询流程架构列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11603,6 +12510,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11631,7 +12540,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_code_table_values_async(self, request):
         """查看码表字段值
 
-        查看码表字段值
+        查看码表字段值。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11674,6 +12583,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11702,7 +12613,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_code_tables_async(self, request):
         """查询码表列表
 
-        查询码表列表
+        查询码表列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11757,6 +12668,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11785,7 +12698,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_customized_fields_async(self, request):
         """查询自定义项
 
-        查询自定义项
+        查询自定义项。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11828,6 +12741,79 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def search_design_latest_approval_diff_async(self, request):
+        """获取下展信息与已发布实体的差异
+
+        当已发布的实体被编辑时，其会生成下展，该接口用于获取下展信息与已发布实体的差异。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchDesignLatestApprovalDiff
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchDesignLatestApprovalDiffRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchDesignLatestApprovalDiffResponse`
+        """
+        http_info = self._search_design_latest_approval_diff_http_info(request)
+        return self._call_api(**http_info)
+
+    def search_design_latest_approval_diff_async_invoker(self, request):
+        http_info = self._search_design_latest_approval_diff_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_design_latest_approval_diff_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/approvals/business/{biz_id}/diff",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchDesignLatestApprovalDiffResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'biz_id' in local_var_params:
+            path_params['biz_id'] = local_var_params['biz_id']
+
+        query_params = []
+        if 'biz_type' in local_var_params:
+            query_params.append(('biz_type', local_var_params['biz_type']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -11856,7 +12842,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_dw_by_type_async(self, request):
         """获取数据连接信息
 
-        获取指定类型下的数据连接信息
+        获取指定类型下的数据连接信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11901,6 +12887,77 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def search_fields_for_relation_async(self, request):
+        """查询目的表和字段(待下线)
+
+        查询目的表和字段(待下线)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchFieldsForRelation
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchFieldsForRelationRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchFieldsForRelationResponse`
+        """
+        http_info = self._search_fields_for_relation_http_info(request)
+        return self._call_api(**http_info)
+
+    def search_fields_for_relation_async_invoker(self, request):
+        http_info = self._search_fields_for_relation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_fields_for_relation_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/{model_id}/table-model/relation/fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchFieldsForRelationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_id' in local_var_params:
+            path_params['model_id'] = local_var_params['model_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -12002,7 +13059,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_subject_async(self, request):
         """查找主题列表
 
-        通过名称、创建者、责任人、状态、修改时间分页查找主题
+        通过名称、创建者、责任人、状态、修改时间分页查找主题。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12057,6 +13114,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -12085,7 +13144,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_subject_new_async(self, request):
         """查找主题列表(新)
 
-        查找主题(新)
+        查找主题(新)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12140,6 +13199,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -12168,7 +13229,7 @@ class DataArtsStudioAsyncClient(Client):
     def search_versions_async(self, request):
         """查找版本信息
 
-        通过名称、创建者、修改时间查找版本信息
+        通过名称、创建者、修改时间查找版本信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12221,6 +13282,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -12321,7 +13384,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_aggregation_logic_table_by_id_async(self, request):
         """查看汇总表详情
 
-        通过id查看汇总表的详情信息
+        通过ID查看汇总表的详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12362,6 +13425,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -13059,7 +14124,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_atomic_index_by_id_async(self, request):
         """查看原子指标详情
 
-        通过id获取指标详情信息
+        通过ID获取指标详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13100,6 +14165,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -13128,7 +14195,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_biz_catalog_detail_async(self, request):
         """查找流程架构详情
 
-        查找流程架构详情
+        查找流程架构详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13167,6 +14234,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -13195,7 +14264,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_biz_metric_by_id_async(self, request):
         """查看指标详情
 
-        通过id查看指标的详情信息
+        通过ID查看指标的详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13236,6 +14305,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -13536,7 +14607,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_code_table_by_id_async(self, request):
         """查看码表详情
 
-        通过id查看码表的详情信息
+        通过ID查看码表的详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13575,6 +14646,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -13603,7 +14676,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_compound_metric_by_id_async(self, request):
         """查看复合指标详情
 
-        通过id获取复合指标详情信息
+        通过ID获取复合指标详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13644,6 +14717,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -13672,7 +14747,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_condition_by_id_async(self, request):
         """查看限定详情
 
-        通过id查看限定详情信息
+        通过ID查看限定详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13713,6 +14788,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -14166,7 +15243,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_derivative_index_by_id_async(self, request):
         """查看衍生指标详情
 
-        通过id获取衍生详情信息
+        通过ID获取衍生详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14207,6 +15284,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -14235,7 +15314,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_dimension_by_id_async(self, request):
         """查看维度详情
 
-        通过id查看维度详情信息
+        通过ID查看维度详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14276,6 +15355,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -14304,7 +15385,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_dimension_logic_table_by_id_async(self, request):
         """查看维度表详情
 
-        通过id查看维度表的详情信息
+        通过ID查看维度表的详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14345,6 +15426,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -14507,7 +15590,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_fact_logic_table_by_id_async(self, request):
         """查看事实表详情
 
-        通过id查看事实表的详情信息
+        通过ID查看事实表的详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14548,6 +15631,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -15710,7 +16795,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_relation_by_id_async(self, request):
         """查看关系详情
 
-        通过id获取关系详情信息
+        通过ID获取关系详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15751,6 +16836,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -16047,7 +17134,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_standard_by_id_async(self, request):
         """查看数据标准详情
 
-        通过id获取数据标准详情信息
+        通过ID获取数据标准详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16086,6 +17173,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -16114,7 +17203,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_standard_template_async(self, request):
         """查询数据标准模板
 
-        查询数据标准模板
+        查询数据标准模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16155,6 +17244,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -16183,7 +17274,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_table_model_by_id_async(self, request):
         """查看表模型详情
 
-        通过id获取模型表详情信息
+        通过ID获取模型表详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16224,6 +17315,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -16725,7 +17818,7 @@ class DataArtsStudioAsyncClient(Client):
     def show_workspace_detail_by_id_async(self, request):
         """查询模型详情
 
-        查询物理模型或逻辑模型的工作区空间详情
+        查询物理模型或逻辑模型的工作区空间详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16764,6 +17857,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -16930,7 +18025,7 @@ class DataArtsStudioAsyncClient(Client):
     def update_biz_metric_async(self, request):
         """更新业务指标
 
-        更新业务指标
+        更新业务指标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16967,6 +18062,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -17068,7 +18165,7 @@ class DataArtsStudioAsyncClient(Client):
     def update_code_table_async(self, request):
         """修改码表
 
-        修改码表
+        修改码表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17107,6 +18204,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -17137,7 +18236,7 @@ class DataArtsStudioAsyncClient(Client):
     def update_code_table_values_async(self, request):
         """编辑码表字段值
 
-        编辑码表字段值
+        编辑码表字段值。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17176,6 +18275,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -17272,10 +18373,219 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def update_design_aggregation_logic_table_async(self, request):
+        """更新汇总表
+
+        更新汇总表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDesignAggregationLogicTable
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignAggregationLogicTableRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignAggregationLogicTableResponse`
+        """
+        http_info = self._update_design_aggregation_logic_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_design_aggregation_logic_table_async_invoker(self, request):
+        http_info = self._update_design_aggregation_logic_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_design_aggregation_logic_table_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/aggregation-logic-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDesignAggregationLogicTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_design_atomic_index_async(self, request):
+        """更新原子指标
+
+        更新单个原子指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDesignAtomicIndex
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignAtomicIndexRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignAtomicIndexResponse`
+        """
+        http_info = self._update_design_atomic_index_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_design_atomic_index_async_invoker(self, request):
+        http_info = self._update_design_atomic_index_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_design_atomic_index_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/atomic-indexs",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDesignAtomicIndexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_design_table_quality_async(self, request):
+        """更新表的异常数据输出配置
+
+        更新表的异常数据输出配置，包括是否生成异常数据、设置异常数据数据库或Schema、设置异常表表前缀/表后缀。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDesignTableQuality
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignTableQualityRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignTableQualityResponse`
+        """
+        http_info = self._update_design_table_quality_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_design_table_quality_async_invoker(self, request):
+        http_info = self._update_design_table_quality_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_design_table_quality_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/{table_id}/qualities",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDesignTableQualityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_directory_async(self, request):
         """修改目录
 
-        修改目录
+        修改目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17312,6 +18622,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -17762,7 +19074,7 @@ class DataArtsStudioAsyncClient(Client):
     def update_standard_async(self, request):
         """修改数据标准
 
-        修改数据标准
+        修改数据标准。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17801,6 +19113,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -17831,7 +19145,7 @@ class DataArtsStudioAsyncClient(Client):
     def update_standard_template_async(self, request):
         """修改数据标准模板
 
-        修改数据标准模板
+        修改数据标准模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17868,6 +19182,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -17898,7 +19214,7 @@ class DataArtsStudioAsyncClient(Client):
     def update_subject_async(self, request):
         """修改主题
 
-        修改主题
+        修改主题。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17935,6 +19251,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -17965,7 +19283,7 @@ class DataArtsStudioAsyncClient(Client):
     def update_subject_new_async(self, request):
         """修改主题(新)
 
-        修改主题(新)
+        修改主题(新)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18002,6 +19320,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -18030,9 +19350,9 @@ class DataArtsStudioAsyncClient(Client):
         return http_info
 
     def update_table_model_async(self, request):
-        """更新模型实体
+        """更新表模型
 
-        更新一个模型实体，包括逻辑实体或物理数据表。
+        在关系建模中更新一个表模型及其属性，包括逻辑实体和物理表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18069,6 +19389,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -18306,7 +19628,7 @@ class DataArtsStudioAsyncClient(Client):
     def update_workspace_async(self, request):
         """更新模型工作区
 
-        更新模型工作区
+        更新模型工作区。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18343,6 +19665,8 @@ class DataArtsStudioAsyncClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 

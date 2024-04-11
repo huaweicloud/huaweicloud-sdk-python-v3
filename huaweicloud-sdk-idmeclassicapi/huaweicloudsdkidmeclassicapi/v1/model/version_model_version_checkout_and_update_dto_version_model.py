@@ -45,7 +45,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
         :type custom_link_set: list[str]
         :param data: 
         :type data: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
-        :param master_id: 小版本ID。
+        :param master_id: 主对象ID。
         :type master_id: str
         :param modifier: 更新者。
         :type modifier: str
@@ -140,7 +140,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
     def master_id(self):
         """Gets the master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
-        小版本ID。
+        主对象ID。
 
         :return: The master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
         :rtype: str
@@ -151,7 +151,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
     def master_id(self, master_id):
         """Sets the master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
-        小版本ID。
+        主对象ID。
 
         :param master_id: The master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
         :type master_id: str

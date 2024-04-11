@@ -71,49 +71,49 @@ class CatalogAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param path: 路径
+        :param path: 路径。
         :type path: str
-        :param qualified_name: 名称
+        :param qualified_name: 名称。
         :type qualified_name: str
-        :param level: 主题所属层级
+        :param level: 主题所属层级。
         :type level: str
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param name_eng: 英文名称
+        :param name_eng: 英文名称。
         :type name_eng: str
-        :param alias: 别名
+        :param alias: 别名。
         :type alias: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
-        :param data_owner: 数据主体
+        :param data_owner: 数据主体。
         :type data_owner: str
-        :param owner: 责任人
+        :param owner: 责任人。
         :type owner: str
-        :param data_owner_list: 数据主体列表
+        :param data_owner_list: 数据主体列表。
         :type data_owner_list: list[str]
-        :param create_time: 创建时间，时间戳
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_time: 更新时间，时间戳
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
         :param parent: 
         :type parent: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVOParent`
-        :param parent_id: 父节点ID
+        :param parent_id: 父节点ID。
         :type parent_id: str
-        :param l1: 是否为L1层
+        :param l1: 是否为L1层。
         :type l1: bool
-        :param l2: 是否为L2层
+        :param l2: 是否为L2层。
         :type l2: bool
-        :param l3: 是否为L3层
+        :param l3: 是否为L3层。
         :type l3: bool
-        :param ordinal: 顺序编号
+        :param ordinal: 顺序编号。
         :type ordinal: int
-        :param tenant_id: 租户ID
+        :param tenant_id: 租户ID。
         :type tenant_id: str
-        :param self_defined_fields: 自定义项
+        :param self_defined_fields: 自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         
@@ -184,7 +184,7 @@ class CatalogAttributeVO:
     def path(self):
         """Gets the path of this CatalogAttributeVO.
 
-        路径
+        路径。
 
         :return: The path of this CatalogAttributeVO.
         :rtype: str
@@ -195,7 +195,7 @@ class CatalogAttributeVO:
     def path(self, path):
         """Sets the path of this CatalogAttributeVO.
 
-        路径
+        路径。
 
         :param path: The path of this CatalogAttributeVO.
         :type path: str
@@ -206,7 +206,7 @@ class CatalogAttributeVO:
     def qualified_name(self):
         """Gets the qualified_name of this CatalogAttributeVO.
 
-        名称
+        名称。
 
         :return: The qualified_name of this CatalogAttributeVO.
         :rtype: str
@@ -217,7 +217,7 @@ class CatalogAttributeVO:
     def qualified_name(self, qualified_name):
         """Sets the qualified_name of this CatalogAttributeVO.
 
-        名称
+        名称。
 
         :param qualified_name: The qualified_name of this CatalogAttributeVO.
         :type qualified_name: str
@@ -228,7 +228,7 @@ class CatalogAttributeVO:
     def level(self):
         """Gets the level of this CatalogAttributeVO.
 
-        主题所属层级
+        主题所属层级。
 
         :return: The level of this CatalogAttributeVO.
         :rtype: str
@@ -239,7 +239,7 @@ class CatalogAttributeVO:
     def level(self, level):
         """Sets the level of this CatalogAttributeVO.
 
-        主题所属层级
+        主题所属层级。
 
         :param level: The level of this CatalogAttributeVO.
         :type level: str
@@ -250,7 +250,7 @@ class CatalogAttributeVO:
     def name(self):
         """Gets the name of this CatalogAttributeVO.
 
-        名称
+        名称。
 
         :return: The name of this CatalogAttributeVO.
         :rtype: str
@@ -261,7 +261,7 @@ class CatalogAttributeVO:
     def name(self, name):
         """Sets the name of this CatalogAttributeVO.
 
-        名称
+        名称。
 
         :param name: The name of this CatalogAttributeVO.
         :type name: str
@@ -272,7 +272,7 @@ class CatalogAttributeVO:
     def name_eng(self):
         """Gets the name_eng of this CatalogAttributeVO.
 
-        英文名称
+        英文名称。
 
         :return: The name_eng of this CatalogAttributeVO.
         :rtype: str
@@ -283,7 +283,7 @@ class CatalogAttributeVO:
     def name_eng(self, name_eng):
         """Sets the name_eng of this CatalogAttributeVO.
 
-        英文名称
+        英文名称。
 
         :param name_eng: The name_eng of this CatalogAttributeVO.
         :type name_eng: str
@@ -294,7 +294,7 @@ class CatalogAttributeVO:
     def alias(self):
         """Gets the alias of this CatalogAttributeVO.
 
-        别名
+        别名。
 
         :return: The alias of this CatalogAttributeVO.
         :rtype: str
@@ -305,7 +305,7 @@ class CatalogAttributeVO:
     def alias(self, alias):
         """Sets the alias of this CatalogAttributeVO.
 
-        别名
+        别名。
 
         :param alias: The alias of this CatalogAttributeVO.
         :type alias: str
@@ -316,7 +316,7 @@ class CatalogAttributeVO:
     def description(self):
         """Gets the description of this CatalogAttributeVO.
 
-        描述
+        描述。
 
         :return: The description of this CatalogAttributeVO.
         :rtype: str
@@ -327,7 +327,7 @@ class CatalogAttributeVO:
     def description(self, description):
         """Sets the description of this CatalogAttributeVO.
 
-        描述
+        描述。
 
         :param description: The description of this CatalogAttributeVO.
         :type description: str
@@ -338,7 +338,7 @@ class CatalogAttributeVO:
     def data_owner(self):
         """Gets the data_owner of this CatalogAttributeVO.
 
-        数据主体
+        数据主体。
 
         :return: The data_owner of this CatalogAttributeVO.
         :rtype: str
@@ -349,7 +349,7 @@ class CatalogAttributeVO:
     def data_owner(self, data_owner):
         """Sets the data_owner of this CatalogAttributeVO.
 
-        数据主体
+        数据主体。
 
         :param data_owner: The data_owner of this CatalogAttributeVO.
         :type data_owner: str
@@ -360,7 +360,7 @@ class CatalogAttributeVO:
     def owner(self):
         """Gets the owner of this CatalogAttributeVO.
 
-        责任人
+        责任人。
 
         :return: The owner of this CatalogAttributeVO.
         :rtype: str
@@ -371,7 +371,7 @@ class CatalogAttributeVO:
     def owner(self, owner):
         """Sets the owner of this CatalogAttributeVO.
 
-        责任人
+        责任人。
 
         :param owner: The owner of this CatalogAttributeVO.
         :type owner: str
@@ -382,7 +382,7 @@ class CatalogAttributeVO:
     def data_owner_list(self):
         """Gets the data_owner_list of this CatalogAttributeVO.
 
-        数据主体列表
+        数据主体列表。
 
         :return: The data_owner_list of this CatalogAttributeVO.
         :rtype: list[str]
@@ -393,7 +393,7 @@ class CatalogAttributeVO:
     def data_owner_list(self, data_owner_list):
         """Sets the data_owner_list of this CatalogAttributeVO.
 
-        数据主体列表
+        数据主体列表。
 
         :param data_owner_list: The data_owner_list of this CatalogAttributeVO.
         :type data_owner_list: list[str]
@@ -404,7 +404,7 @@ class CatalogAttributeVO:
     def create_time(self):
         """Gets the create_time of this CatalogAttributeVO.
 
-        创建时间，时间戳
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this CatalogAttributeVO.
         :rtype: str
@@ -415,7 +415,7 @@ class CatalogAttributeVO:
     def create_time(self, create_time):
         """Sets the create_time of this CatalogAttributeVO.
 
-        创建时间，时间戳
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this CatalogAttributeVO.
         :type create_time: str
@@ -426,7 +426,7 @@ class CatalogAttributeVO:
     def create_by(self):
         """Gets the create_by of this CatalogAttributeVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this CatalogAttributeVO.
         :rtype: str
@@ -437,7 +437,7 @@ class CatalogAttributeVO:
     def create_by(self, create_by):
         """Sets the create_by of this CatalogAttributeVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this CatalogAttributeVO.
         :type create_by: str
@@ -448,7 +448,7 @@ class CatalogAttributeVO:
     def update_time(self):
         """Gets the update_time of this CatalogAttributeVO.
 
-        更新时间，时间戳
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this CatalogAttributeVO.
         :rtype: str
@@ -459,7 +459,7 @@ class CatalogAttributeVO:
     def update_time(self, update_time):
         """Sets the update_time of this CatalogAttributeVO.
 
-        更新时间，时间戳
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this CatalogAttributeVO.
         :type update_time: str
@@ -470,7 +470,7 @@ class CatalogAttributeVO:
     def update_by(self):
         """Gets the update_by of this CatalogAttributeVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this CatalogAttributeVO.
         :rtype: str
@@ -481,7 +481,7 @@ class CatalogAttributeVO:
     def update_by(self, update_by):
         """Sets the update_by of this CatalogAttributeVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this CatalogAttributeVO.
         :type update_by: str
@@ -510,7 +510,7 @@ class CatalogAttributeVO:
     def parent_id(self):
         """Gets the parent_id of this CatalogAttributeVO.
 
-        父节点ID
+        父节点ID。
 
         :return: The parent_id of this CatalogAttributeVO.
         :rtype: str
@@ -521,7 +521,7 @@ class CatalogAttributeVO:
     def parent_id(self, parent_id):
         """Sets the parent_id of this CatalogAttributeVO.
 
-        父节点ID
+        父节点ID。
 
         :param parent_id: The parent_id of this CatalogAttributeVO.
         :type parent_id: str
@@ -532,7 +532,7 @@ class CatalogAttributeVO:
     def l1(self):
         """Gets the l1 of this CatalogAttributeVO.
 
-        是否为L1层
+        是否为L1层。
 
         :return: The l1 of this CatalogAttributeVO.
         :rtype: bool
@@ -543,7 +543,7 @@ class CatalogAttributeVO:
     def l1(self, l1):
         """Sets the l1 of this CatalogAttributeVO.
 
-        是否为L1层
+        是否为L1层。
 
         :param l1: The l1 of this CatalogAttributeVO.
         :type l1: bool
@@ -554,7 +554,7 @@ class CatalogAttributeVO:
     def l2(self):
         """Gets the l2 of this CatalogAttributeVO.
 
-        是否为L2层
+        是否为L2层。
 
         :return: The l2 of this CatalogAttributeVO.
         :rtype: bool
@@ -565,7 +565,7 @@ class CatalogAttributeVO:
     def l2(self, l2):
         """Sets the l2 of this CatalogAttributeVO.
 
-        是否为L2层
+        是否为L2层。
 
         :param l2: The l2 of this CatalogAttributeVO.
         :type l2: bool
@@ -576,7 +576,7 @@ class CatalogAttributeVO:
     def l3(self):
         """Gets the l3 of this CatalogAttributeVO.
 
-        是否为L3层
+        是否为L3层。
 
         :return: The l3 of this CatalogAttributeVO.
         :rtype: bool
@@ -587,7 +587,7 @@ class CatalogAttributeVO:
     def l3(self, l3):
         """Sets the l3 of this CatalogAttributeVO.
 
-        是否为L3层
+        是否为L3层。
 
         :param l3: The l3 of this CatalogAttributeVO.
         :type l3: bool
@@ -598,7 +598,7 @@ class CatalogAttributeVO:
     def ordinal(self):
         """Gets the ordinal of this CatalogAttributeVO.
 
-        顺序编号
+        顺序编号。
 
         :return: The ordinal of this CatalogAttributeVO.
         :rtype: int
@@ -609,7 +609,7 @@ class CatalogAttributeVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this CatalogAttributeVO.
 
-        顺序编号
+        顺序编号。
 
         :param ordinal: The ordinal of this CatalogAttributeVO.
         :type ordinal: int
@@ -620,7 +620,7 @@ class CatalogAttributeVO:
     def tenant_id(self):
         """Gets the tenant_id of this CatalogAttributeVO.
 
-        租户ID
+        租户ID。
 
         :return: The tenant_id of this CatalogAttributeVO.
         :rtype: str
@@ -631,7 +631,7 @@ class CatalogAttributeVO:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this CatalogAttributeVO.
 
-        租户ID
+        租户ID。
 
         :param tenant_id: The tenant_id of this CatalogAttributeVO.
         :type tenant_id: str
@@ -642,7 +642,7 @@ class CatalogAttributeVO:
     def self_defined_fields(self):
         """Gets the self_defined_fields of this CatalogAttributeVO.
 
-        自定义项
+        自定义项。
 
         :return: The self_defined_fields of this CatalogAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
@@ -653,7 +653,7 @@ class CatalogAttributeVO:
     def self_defined_fields(self, self_defined_fields):
         """Sets the self_defined_fields of this CatalogAttributeVO.
 
-        自定义项
+        自定义项。
 
         :param self_defined_fields: The self_defined_fields of this CatalogAttributeVO.
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]

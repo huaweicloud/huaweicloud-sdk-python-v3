@@ -18,6 +18,7 @@ class SearchDwByTypeRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'force_refresh': 'bool',
         'dw_type': 'str',
         'limit': 'int',
@@ -26,22 +27,25 @@ class SearchDwByTypeRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'force_refresh': 'force_refresh',
         'dw_type': 'dw_type',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, force_refresh=None, dw_type=None, limit=None, offset=None):
+    def __init__(self, workspace=None, x_project_id=None, force_refresh=None, dw_type=None, limit=None, offset=None):
         """SearchDwByTypeRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param force_refresh: 是否查询最新的
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param force_refresh: 是否查询最新的。
         :type force_refresh: bool
-        :param dw_type: 数据连接类型
+        :param dw_type: 数据连接类型。
         :type dw_type: str
         :param limit: limit
         :type limit: int
@@ -52,6 +56,7 @@ class SearchDwByTypeRequest:
         
 
         self._workspace = None
+        self._x_project_id = None
         self._force_refresh = None
         self._dw_type = None
         self._limit = None
@@ -59,6 +64,8 @@ class SearchDwByTypeRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if force_refresh is not None:
             self.force_refresh = force_refresh
         self.dw_type = dw_type
@@ -71,7 +78,7 @@ class SearchDwByTypeRequest:
     def workspace(self):
         """Gets the workspace of this SearchDwByTypeRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this SearchDwByTypeRequest.
         :rtype: str
@@ -82,7 +89,7 @@ class SearchDwByTypeRequest:
     def workspace(self, workspace):
         """Sets the workspace of this SearchDwByTypeRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this SearchDwByTypeRequest.
         :type workspace: str
@@ -90,10 +97,32 @@ class SearchDwByTypeRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this SearchDwByTypeRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this SearchDwByTypeRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this SearchDwByTypeRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this SearchDwByTypeRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def force_refresh(self):
         """Gets the force_refresh of this SearchDwByTypeRequest.
 
-        是否查询最新的
+        是否查询最新的。
 
         :return: The force_refresh of this SearchDwByTypeRequest.
         :rtype: bool
@@ -104,7 +133,7 @@ class SearchDwByTypeRequest:
     def force_refresh(self, force_refresh):
         """Sets the force_refresh of this SearchDwByTypeRequest.
 
-        是否查询最新的
+        是否查询最新的。
 
         :param force_refresh: The force_refresh of this SearchDwByTypeRequest.
         :type force_refresh: bool
@@ -115,7 +144,7 @@ class SearchDwByTypeRequest:
     def dw_type(self):
         """Gets the dw_type of this SearchDwByTypeRequest.
 
-        数据连接类型
+        数据连接类型。
 
         :return: The dw_type of this SearchDwByTypeRequest.
         :rtype: str
@@ -126,7 +155,7 @@ class SearchDwByTypeRequest:
     def dw_type(self, dw_type):
         """Sets the dw_type of this SearchDwByTypeRequest.
 
-        数据连接类型
+        数据连接类型。
 
         :param dw_type: The dw_type of this SearchDwByTypeRequest.
         :type dw_type: str

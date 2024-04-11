@@ -35,13 +35,13 @@ class SelfDefinedFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param fd_name_ch: 自定义项中文名
+        :param fd_name_ch: 自定义项中文名。
         :type fd_name_ch: str
-        :param fd_name_en: 自定义项英文名
+        :param fd_name_en: 自定义项英文名。
         :type fd_name_en: str
-        :param not_null: 是否必填
+        :param not_null: 是否必填。
         :type not_null: bool
-        :param fd_value: 属性值
+        :param fd_value: 属性值。
         :type fd_value: str
         """
         
@@ -66,7 +66,7 @@ class SelfDefinedFieldVO:
     def fd_name_ch(self):
         """Gets the fd_name_ch of this SelfDefinedFieldVO.
 
-        自定义项中文名
+        自定义项中文名。
 
         :return: The fd_name_ch of this SelfDefinedFieldVO.
         :rtype: str
@@ -77,7 +77,7 @@ class SelfDefinedFieldVO:
     def fd_name_ch(self, fd_name_ch):
         """Sets the fd_name_ch of this SelfDefinedFieldVO.
 
-        自定义项中文名
+        自定义项中文名。
 
         :param fd_name_ch: The fd_name_ch of this SelfDefinedFieldVO.
         :type fd_name_ch: str
@@ -88,7 +88,7 @@ class SelfDefinedFieldVO:
     def fd_name_en(self):
         """Gets the fd_name_en of this SelfDefinedFieldVO.
 
-        自定义项英文名
+        自定义项英文名。
 
         :return: The fd_name_en of this SelfDefinedFieldVO.
         :rtype: str
@@ -99,7 +99,7 @@ class SelfDefinedFieldVO:
     def fd_name_en(self, fd_name_en):
         """Sets the fd_name_en of this SelfDefinedFieldVO.
 
-        自定义项英文名
+        自定义项英文名。
 
         :param fd_name_en: The fd_name_en of this SelfDefinedFieldVO.
         :type fd_name_en: str
@@ -110,7 +110,7 @@ class SelfDefinedFieldVO:
     def not_null(self):
         """Gets the not_null of this SelfDefinedFieldVO.
 
-        是否必填
+        是否必填。
 
         :return: The not_null of this SelfDefinedFieldVO.
         :rtype: bool
@@ -121,7 +121,7 @@ class SelfDefinedFieldVO:
     def not_null(self, not_null):
         """Sets the not_null of this SelfDefinedFieldVO.
 
-        是否必填
+        是否必填。
 
         :param not_null: The not_null of this SelfDefinedFieldVO.
         :type not_null: bool
@@ -132,7 +132,7 @@ class SelfDefinedFieldVO:
     def fd_value(self):
         """Gets the fd_value of this SelfDefinedFieldVO.
 
-        属性值
+        属性值。
 
         :return: The fd_value of this SelfDefinedFieldVO.
         :rtype: str
@@ -143,7 +143,7 @@ class SelfDefinedFieldVO:
     def fd_value(self, fd_value):
         """Sets the fd_value of this SelfDefinedFieldVO.
 
-        属性值
+        属性值。
 
         :param fd_value: The fd_value of this SelfDefinedFieldVO.
         :type fd_value: str

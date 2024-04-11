@@ -15,6 +15,8 @@ from huaweicloudsdkcdn.v2.model.batch_copy_error_rsp_error import BatchCopyError
 from huaweicloudsdkcdn.v2.model.batch_copy_result_vo import BatchCopyResultVo
 from huaweicloudsdkcdn.v2.model.batch_delete_tags_request import BatchDeleteTagsRequest
 from huaweicloudsdkcdn.v2.model.batch_delete_tags_response import BatchDeleteTagsResponse
+from huaweicloudsdkcdn.v2.model.browser_cache_rules import BrowserCacheRules
+from huaweicloudsdkcdn.v2.model.browser_cache_rules_condition import BrowserCacheRulesCondition
 from huaweicloudsdkcdn.v2.model.cache_rules import CacheRules
 from huaweicloudsdkcdn.v2.model.cache_url_parameter_filter import CacheUrlParameterFilter
 from huaweicloudsdkcdn.v2.model.cache_url_parameter_filter_get_body import CacheUrlParameterFilterGetBody
@@ -81,11 +83,13 @@ from huaweicloudsdkcdn.v2.model.origin_request_url_rewrite import OriginRequestU
 from huaweicloudsdkcdn.v2.model.preheating_task_request import PreheatingTaskRequest
 from huaweicloudsdkcdn.v2.model.preheating_task_request_body import PreheatingTaskRequestBody
 from huaweicloudsdkcdn.v2.model.quic import Quic
+from huaweicloudsdkcdn.v2.model.quotas import Quotas
 from huaweicloudsdkcdn.v2.model.referer_config import RefererConfig
 from huaweicloudsdkcdn.v2.model.refresh_task_request import RefreshTaskRequest
 from huaweicloudsdkcdn.v2.model.refresh_task_request_body import RefreshTaskRequestBody
-from huaweicloudsdkcdn.v2.model.remote_auth_rule_vo import RemoteAuthRuleVo
+from huaweicloudsdkcdn.v2.model.remote_auth_rule import RemoteAuthRule
 from huaweicloudsdkcdn.v2.model.request_limit_rules import RequestLimitRules
+from huaweicloudsdkcdn.v2.model.request_url_rewrite import RequestUrlRewrite
 from huaweicloudsdkcdn.v2.model.set_charge_modes_body import SetChargeModesBody
 from huaweicloudsdkcdn.v2.model.set_charge_modes_request import SetChargeModesRequest
 from huaweicloudsdkcdn.v2.model.set_charge_modes_response import SetChargeModesResponse
@@ -111,6 +115,8 @@ from huaweicloudsdkcdn.v2.model.show_ip_info_request import ShowIpInfoRequest
 from huaweicloudsdkcdn.v2.model.show_ip_info_response import ShowIpInfoResponse
 from huaweicloudsdkcdn.v2.model.show_logs_request import ShowLogsRequest
 from huaweicloudsdkcdn.v2.model.show_logs_response import ShowLogsResponse
+from huaweicloudsdkcdn.v2.model.show_quota_request import ShowQuotaRequest
+from huaweicloudsdkcdn.v2.model.show_quota_response import ShowQuotaResponse
 from huaweicloudsdkcdn.v2.model.show_tags_request import ShowTagsRequest
 from huaweicloudsdkcdn.v2.model.show_tags_response import ShowTagsResponse
 from huaweicloudsdkcdn.v2.model.show_top_domain_names_request import ShowTopDomainNamesRequest
@@ -121,6 +127,7 @@ from huaweicloudsdkcdn.v2.model.show_url_task_info_request import ShowUrlTaskInf
 from huaweicloudsdkcdn.v2.model.show_url_task_info_response import ShowUrlTaskInfoResponse
 from huaweicloudsdkcdn.v2.model.show_verify_domain_owner_info_request import ShowVerifyDomainOwnerInfoRequest
 from huaweicloudsdkcdn.v2.model.show_verify_domain_owner_info_response import ShowVerifyDomainOwnerInfoResponse
+from huaweicloudsdkcdn.v2.model.sni import Sni
 from huaweicloudsdkcdn.v2.model.source_with_port import SourceWithPort
 from huaweicloudsdkcdn.v2.model.sources import Sources
 from huaweicloudsdkcdn.v2.model.sources_config import SourcesConfig
@@ -142,6 +149,7 @@ from huaweicloudsdkcdn.v2.model.update_private_bucket_access_response import Upd
 from huaweicloudsdkcdn.v2.model.url_auth import UrlAuth
 from huaweicloudsdkcdn.v2.model.url_auth_get_body import UrlAuthGetBody
 from huaweicloudsdkcdn.v2.model.url_object import UrlObject
+from huaweicloudsdkcdn.v2.model.url_rewrite_condition import UrlRewriteCondition
 from huaweicloudsdkcdn.v2.model.urls import Urls
 from huaweicloudsdkcdn.v2.model.user_agent_filter import UserAgentFilter
 from huaweicloudsdkcdn.v2.model.verify_domain_owner_request import VerifyDomainOwnerRequest

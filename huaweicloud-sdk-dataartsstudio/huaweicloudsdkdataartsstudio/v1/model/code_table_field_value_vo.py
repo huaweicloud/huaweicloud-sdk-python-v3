@@ -39,13 +39,13 @@ class CodeTableFieldValueVO:
 
         :param id: ID
         :type id: int
-        :param fd_id: 所属码表属性id
+        :param fd_id: 所属码表属性ID。
         :type fd_id: int
-        :param fd_value: 码表属性值
+        :param fd_value: 码表属性值。
         :type fd_value: str
-        :param ordinal: 序号
+        :param ordinal: 序号。
         :type ordinal: int
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         """
         
@@ -95,7 +95,7 @@ class CodeTableFieldValueVO:
     def fd_id(self):
         """Gets the fd_id of this CodeTableFieldValueVO.
 
-        所属码表属性id
+        所属码表属性ID。
 
         :return: The fd_id of this CodeTableFieldValueVO.
         :rtype: int
@@ -106,7 +106,7 @@ class CodeTableFieldValueVO:
     def fd_id(self, fd_id):
         """Sets the fd_id of this CodeTableFieldValueVO.
 
-        所属码表属性id
+        所属码表属性ID。
 
         :param fd_id: The fd_id of this CodeTableFieldValueVO.
         :type fd_id: int
@@ -117,7 +117,7 @@ class CodeTableFieldValueVO:
     def fd_value(self):
         """Gets the fd_value of this CodeTableFieldValueVO.
 
-        码表属性值
+        码表属性值。
 
         :return: The fd_value of this CodeTableFieldValueVO.
         :rtype: str
@@ -128,7 +128,7 @@ class CodeTableFieldValueVO:
     def fd_value(self, fd_value):
         """Sets the fd_value of this CodeTableFieldValueVO.
 
-        码表属性值
+        码表属性值。
 
         :param fd_value: The fd_value of this CodeTableFieldValueVO.
         :type fd_value: str
@@ -139,7 +139,7 @@ class CodeTableFieldValueVO:
     def ordinal(self):
         """Gets the ordinal of this CodeTableFieldValueVO.
 
-        序号
+        序号。
 
         :return: The ordinal of this CodeTableFieldValueVO.
         :rtype: int
@@ -150,7 +150,7 @@ class CodeTableFieldValueVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this CodeTableFieldValueVO.
 
-        序号
+        序号。
 
         :param ordinal: The ordinal of this CodeTableFieldValueVO.
         :type ordinal: int
@@ -161,7 +161,7 @@ class CodeTableFieldValueVO:
     def description(self):
         """Gets the description of this CodeTableFieldValueVO.
 
-        描述
+        描述。
 
         :return: The description of this CodeTableFieldValueVO.
         :rtype: str
@@ -172,7 +172,7 @@ class CodeTableFieldValueVO:
     def description(self, description):
         """Sets the description of this CodeTableFieldValueVO.
 
-        描述
+        描述。
 
         :param description: The description of this CodeTableFieldValueVO.
         :type description: str

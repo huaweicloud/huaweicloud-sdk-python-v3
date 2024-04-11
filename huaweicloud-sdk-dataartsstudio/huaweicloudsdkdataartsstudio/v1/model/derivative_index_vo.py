@@ -81,55 +81,55 @@ class DerivativeIndexVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码。
         :type id: int
-        :param name_en: 字段名
+        :param name_en: 字段名。
         :type name_en: str
-        :param name_ch: 中文名
+        :param name_ch: 中文名。
         :type name_ch: str
-        :param description: 
+        :param description: 描述。
         :type description: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param data_type: 字段类型
+        :param data_type: 字段类型。
         :type data_type: str
-        :param l1_id: 主题域分组id
+        :param l1_id: 主题域分组ID。
         :type l1_id: int
-        :param l2_id: 
+        :param l2_id: 主题域ID，只读，创建和更新时无需填写。
         :type l2_id: str
-        :param l3_id: 业务对象guid
+        :param l3_id: 业务对象guid。
         :type l3_id: int
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param atomic_index_id: 原子指标id
+        :param atomic_index_id: 原子指标ID。
         :type atomic_index_id: int
-        :param time_condition_id: 时间限定id
+        :param time_condition_id: 时间限定ID。
         :type time_condition_id: int
-        :param time_field_id: 时间限定关联字段id
+        :param time_field_id: 时间限定关联字段ID。
         :type time_field_id: int
-        :param time_field_name: 时间限定关联字段名称
+        :param time_field_name: 时间限定关联字段名称。
         :type time_field_name: str
-        :param common_conditions: 通用限定信息
+        :param common_conditions: 通用限定信息。
         :type common_conditions: list[:class:`huaweicloudsdkdataartsstudio.v1.CommonConditionVO`]
-        :param dimension_groups: 维度组(颗粒度)
+        :param dimension_groups: 维度组(颗粒度)。
         :type dimension_groups: list[:class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexDimensionVO`]
         :param monitor: 
         :type monitor: :class:`huaweicloudsdkdataartsstudio.v1.MetricMonitorVO`
         :param atomic_index: 
         :type atomic_index: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVO`
-        :param time_condition_name: 时间限定名称
+        :param time_condition_name: 时间限定名称。
         :type time_condition_name: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param l1: 主题域分组中文名
+        :param l1: 主题域分组中文名，只读，创建和更新时无需填写。
         :type l1: str
-        :param l2: 主题域中文名
+        :param l2: 主题域中文名，只读，创建和更新时无需填写。
         :type l2: str
-        :param l3: 业务对象中文名
+        :param l3: 业务对象中文名，只读，创建和更新时无需填写。
         :type l3: str
-        :param summary_table_id: 汇总表id
+        :param summary_table_id: 汇总表ID。
         :type summary_table_id: int
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -223,7 +223,7 @@ class DerivativeIndexVO:
     def id(self):
         """Gets the id of this DerivativeIndexVO.
 
-        编码
+        编码。
 
         :return: The id of this DerivativeIndexVO.
         :rtype: int
@@ -234,7 +234,7 @@ class DerivativeIndexVO:
     def id(self, id):
         """Sets the id of this DerivativeIndexVO.
 
-        编码
+        编码。
 
         :param id: The id of this DerivativeIndexVO.
         :type id: int
@@ -245,7 +245,7 @@ class DerivativeIndexVO:
     def name_en(self):
         """Gets the name_en of this DerivativeIndexVO.
 
-        字段名
+        字段名。
 
         :return: The name_en of this DerivativeIndexVO.
         :rtype: str
@@ -256,7 +256,7 @@ class DerivativeIndexVO:
     def name_en(self, name_en):
         """Sets the name_en of this DerivativeIndexVO.
 
-        字段名
+        字段名。
 
         :param name_en: The name_en of this DerivativeIndexVO.
         :type name_en: str
@@ -267,7 +267,7 @@ class DerivativeIndexVO:
     def name_ch(self):
         """Gets the name_ch of this DerivativeIndexVO.
 
-        中文名
+        中文名。
 
         :return: The name_ch of this DerivativeIndexVO.
         :rtype: str
@@ -278,7 +278,7 @@ class DerivativeIndexVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this DerivativeIndexVO.
 
-        中文名
+        中文名。
 
         :param name_ch: The name_ch of this DerivativeIndexVO.
         :type name_ch: str
@@ -289,6 +289,8 @@ class DerivativeIndexVO:
     def description(self):
         """Gets the description of this DerivativeIndexVO.
 
+        描述。
+
         :return: The description of this DerivativeIndexVO.
         :rtype: str
         """
@@ -297,6 +299,8 @@ class DerivativeIndexVO:
     @description.setter
     def description(self, description):
         """Sets the description of this DerivativeIndexVO.
+
+        描述。
 
         :param description: The description of this DerivativeIndexVO.
         :type description: str
@@ -307,7 +311,7 @@ class DerivativeIndexVO:
     def create_by(self):
         """Gets the create_by of this DerivativeIndexVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this DerivativeIndexVO.
         :rtype: str
@@ -318,7 +322,7 @@ class DerivativeIndexVO:
     def create_by(self, create_by):
         """Sets the create_by of this DerivativeIndexVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this DerivativeIndexVO.
         :type create_by: str
@@ -329,7 +333,7 @@ class DerivativeIndexVO:
     def data_type(self):
         """Gets the data_type of this DerivativeIndexVO.
 
-        字段类型
+        字段类型。
 
         :return: The data_type of this DerivativeIndexVO.
         :rtype: str
@@ -340,7 +344,7 @@ class DerivativeIndexVO:
     def data_type(self, data_type):
         """Sets the data_type of this DerivativeIndexVO.
 
-        字段类型
+        字段类型。
 
         :param data_type: The data_type of this DerivativeIndexVO.
         :type data_type: str
@@ -351,7 +355,7 @@ class DerivativeIndexVO:
     def l1_id(self):
         """Gets the l1_id of this DerivativeIndexVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :return: The l1_id of this DerivativeIndexVO.
         :rtype: int
@@ -362,7 +366,7 @@ class DerivativeIndexVO:
     def l1_id(self, l1_id):
         """Sets the l1_id of this DerivativeIndexVO.
 
-        主题域分组id
+        主题域分组ID。
 
         :param l1_id: The l1_id of this DerivativeIndexVO.
         :type l1_id: int
@@ -373,6 +377,8 @@ class DerivativeIndexVO:
     def l2_id(self):
         """Gets the l2_id of this DerivativeIndexVO.
 
+        主题域ID，只读，创建和更新时无需填写。
+
         :return: The l2_id of this DerivativeIndexVO.
         :rtype: str
         """
@@ -381,6 +387,8 @@ class DerivativeIndexVO:
     @l2_id.setter
     def l2_id(self, l2_id):
         """Sets the l2_id of this DerivativeIndexVO.
+
+        主题域ID，只读，创建和更新时无需填写。
 
         :param l2_id: The l2_id of this DerivativeIndexVO.
         :type l2_id: str
@@ -391,7 +399,7 @@ class DerivativeIndexVO:
     def l3_id(self):
         """Gets the l3_id of this DerivativeIndexVO.
 
-        业务对象guid
+        业务对象guid。
 
         :return: The l3_id of this DerivativeIndexVO.
         :rtype: int
@@ -402,7 +410,7 @@ class DerivativeIndexVO:
     def l3_id(self, l3_id):
         """Sets the l3_id of this DerivativeIndexVO.
 
-        业务对象guid
+        业务对象guid。
 
         :param l3_id: The l3_id of this DerivativeIndexVO.
         :type l3_id: int
@@ -431,7 +439,7 @@ class DerivativeIndexVO:
     def atomic_index_id(self):
         """Gets the atomic_index_id of this DerivativeIndexVO.
 
-        原子指标id
+        原子指标ID。
 
         :return: The atomic_index_id of this DerivativeIndexVO.
         :rtype: int
@@ -442,7 +450,7 @@ class DerivativeIndexVO:
     def atomic_index_id(self, atomic_index_id):
         """Sets the atomic_index_id of this DerivativeIndexVO.
 
-        原子指标id
+        原子指标ID。
 
         :param atomic_index_id: The atomic_index_id of this DerivativeIndexVO.
         :type atomic_index_id: int
@@ -453,7 +461,7 @@ class DerivativeIndexVO:
     def time_condition_id(self):
         """Gets the time_condition_id of this DerivativeIndexVO.
 
-        时间限定id
+        时间限定ID。
 
         :return: The time_condition_id of this DerivativeIndexVO.
         :rtype: int
@@ -464,7 +472,7 @@ class DerivativeIndexVO:
     def time_condition_id(self, time_condition_id):
         """Sets the time_condition_id of this DerivativeIndexVO.
 
-        时间限定id
+        时间限定ID。
 
         :param time_condition_id: The time_condition_id of this DerivativeIndexVO.
         :type time_condition_id: int
@@ -475,7 +483,7 @@ class DerivativeIndexVO:
     def time_field_id(self):
         """Gets the time_field_id of this DerivativeIndexVO.
 
-        时间限定关联字段id
+        时间限定关联字段ID。
 
         :return: The time_field_id of this DerivativeIndexVO.
         :rtype: int
@@ -486,7 +494,7 @@ class DerivativeIndexVO:
     def time_field_id(self, time_field_id):
         """Sets the time_field_id of this DerivativeIndexVO.
 
-        时间限定关联字段id
+        时间限定关联字段ID。
 
         :param time_field_id: The time_field_id of this DerivativeIndexVO.
         :type time_field_id: int
@@ -497,7 +505,7 @@ class DerivativeIndexVO:
     def time_field_name(self):
         """Gets the time_field_name of this DerivativeIndexVO.
 
-        时间限定关联字段名称
+        时间限定关联字段名称。
 
         :return: The time_field_name of this DerivativeIndexVO.
         :rtype: str
@@ -508,7 +516,7 @@ class DerivativeIndexVO:
     def time_field_name(self, time_field_name):
         """Sets the time_field_name of this DerivativeIndexVO.
 
-        时间限定关联字段名称
+        时间限定关联字段名称。
 
         :param time_field_name: The time_field_name of this DerivativeIndexVO.
         :type time_field_name: str
@@ -519,7 +527,7 @@ class DerivativeIndexVO:
     def common_conditions(self):
         """Gets the common_conditions of this DerivativeIndexVO.
 
-        通用限定信息
+        通用限定信息。
 
         :return: The common_conditions of this DerivativeIndexVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CommonConditionVO`]
@@ -530,7 +538,7 @@ class DerivativeIndexVO:
     def common_conditions(self, common_conditions):
         """Sets the common_conditions of this DerivativeIndexVO.
 
-        通用限定信息
+        通用限定信息。
 
         :param common_conditions: The common_conditions of this DerivativeIndexVO.
         :type common_conditions: list[:class:`huaweicloudsdkdataartsstudio.v1.CommonConditionVO`]
@@ -541,7 +549,7 @@ class DerivativeIndexVO:
     def dimension_groups(self):
         """Gets the dimension_groups of this DerivativeIndexVO.
 
-        维度组(颗粒度)
+        维度组(颗粒度)。
 
         :return: The dimension_groups of this DerivativeIndexVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexDimensionVO`]
@@ -552,7 +560,7 @@ class DerivativeIndexVO:
     def dimension_groups(self, dimension_groups):
         """Sets the dimension_groups of this DerivativeIndexVO.
 
-        维度组(颗粒度)
+        维度组(颗粒度)。
 
         :param dimension_groups: The dimension_groups of this DerivativeIndexVO.
         :type dimension_groups: list[:class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexDimensionVO`]
@@ -599,7 +607,7 @@ class DerivativeIndexVO:
     def time_condition_name(self):
         """Gets the time_condition_name of this DerivativeIndexVO.
 
-        时间限定名称
+        时间限定名称。
 
         :return: The time_condition_name of this DerivativeIndexVO.
         :rtype: str
@@ -610,7 +618,7 @@ class DerivativeIndexVO:
     def time_condition_name(self, time_condition_name):
         """Sets the time_condition_name of this DerivativeIndexVO.
 
-        时间限定名称
+        时间限定名称。
 
         :param time_condition_name: The time_condition_name of this DerivativeIndexVO.
         :type time_condition_name: str
@@ -621,7 +629,7 @@ class DerivativeIndexVO:
     def create_time(self):
         """Gets the create_time of this DerivativeIndexVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this DerivativeIndexVO.
         :rtype: datetime
@@ -632,7 +640,7 @@ class DerivativeIndexVO:
     def create_time(self, create_time):
         """Sets the create_time of this DerivativeIndexVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this DerivativeIndexVO.
         :type create_time: datetime
@@ -643,7 +651,7 @@ class DerivativeIndexVO:
     def update_time(self):
         """Gets the update_time of this DerivativeIndexVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this DerivativeIndexVO.
         :rtype: datetime
@@ -654,7 +662,7 @@ class DerivativeIndexVO:
     def update_time(self, update_time):
         """Sets the update_time of this DerivativeIndexVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this DerivativeIndexVO.
         :type update_time: datetime
@@ -665,7 +673,7 @@ class DerivativeIndexVO:
     def l1(self):
         """Gets the l1 of this DerivativeIndexVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :return: The l1 of this DerivativeIndexVO.
         :rtype: str
@@ -676,7 +684,7 @@ class DerivativeIndexVO:
     def l1(self, l1):
         """Sets the l1 of this DerivativeIndexVO.
 
-        主题域分组中文名
+        主题域分组中文名，只读，创建和更新时无需填写。
 
         :param l1: The l1 of this DerivativeIndexVO.
         :type l1: str
@@ -687,7 +695,7 @@ class DerivativeIndexVO:
     def l2(self):
         """Gets the l2 of this DerivativeIndexVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :return: The l2 of this DerivativeIndexVO.
         :rtype: str
@@ -698,7 +706,7 @@ class DerivativeIndexVO:
     def l2(self, l2):
         """Sets the l2 of this DerivativeIndexVO.
 
-        主题域中文名
+        主题域中文名，只读，创建和更新时无需填写。
 
         :param l2: The l2 of this DerivativeIndexVO.
         :type l2: str
@@ -709,7 +717,7 @@ class DerivativeIndexVO:
     def l3(self):
         """Gets the l3 of this DerivativeIndexVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :return: The l3 of this DerivativeIndexVO.
         :rtype: str
@@ -720,7 +728,7 @@ class DerivativeIndexVO:
     def l3(self, l3):
         """Sets the l3 of this DerivativeIndexVO.
 
-        业务对象中文名
+        业务对象中文名，只读，创建和更新时无需填写。
 
         :param l3: The l3 of this DerivativeIndexVO.
         :type l3: str
@@ -731,7 +739,7 @@ class DerivativeIndexVO:
     def summary_table_id(self):
         """Gets the summary_table_id of this DerivativeIndexVO.
 
-        汇总表id
+        汇总表ID。
 
         :return: The summary_table_id of this DerivativeIndexVO.
         :rtype: int
@@ -742,7 +750,7 @@ class DerivativeIndexVO:
     def summary_table_id(self, summary_table_id):
         """Sets the summary_table_id of this DerivativeIndexVO.
 
-        汇总表id
+        汇总表ID。
 
         :param summary_table_id: The summary_table_id of this DerivativeIndexVO.
         :type summary_table_id: int

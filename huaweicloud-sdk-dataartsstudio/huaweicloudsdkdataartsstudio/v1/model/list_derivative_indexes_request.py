@@ -18,6 +18,7 @@ class ListDerivativeIndexesRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'name': 'str',
         'create_by': 'str',
         'approver': 'str',
@@ -36,6 +37,7 @@ class ListDerivativeIndexesRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'name': 'name',
         'create_by': 'create_by',
         'approver': 'approver',
@@ -52,46 +54,49 @@ class ListDerivativeIndexesRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, name=None, create_by=None, approver=None, status=None, dimension_id=None, dimension_group=None, atomic_index_id=None, all_metrics=None, dw_type=None, l3_id=None, begin_time=None, end_time=None, limit=None, offset=None):
+    def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, approver=None, status=None, dimension_id=None, dimension_group=None, atomic_index_id=None, all_metrics=None, dw_type=None, l3_id=None, begin_time=None, end_time=None, limit=None, offset=None):
         """ListDerivativeIndexesRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param name: 按名称或编码模糊查询
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param name: 按名称或编码模糊查询。
         :type name: str
-        :param create_by: 按创建者查询
+        :param create_by: 按创建者查询。
         :type create_by: str
-        :param approver: 按审核人查询
+        :param approver: 按审核人查询。
         :type approver: str
-        :param status: 业务状态
+        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
         :type status: str
-        :param dimension_id: 依据维度id查维度属性
+        :param dimension_id: 依据维度ID查维度属性。
         :type dimension_id: int
-        :param dimension_group: 依据维度颗粒度查维度属性
+        :param dimension_group: 依据维度颗粒度查维度属性。
         :type dimension_group: str
-        :param atomic_index_id: 依据原子指标id查维度属性
+        :param atomic_index_id: 依据原子指标ID查维度属性。
         :type atomic_index_id: int
         :param all_metrics: 是否查询复合指标
         :type all_metrics: bool
         :param dw_type: 数据连接类型
         :type dw_type: str
-        :param l3_id: 业务对象l3 id
+        :param l3_id: 业务对象l3的ID。
         :type l3_id: int
-        :param begin_time: 时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
-        :param end_time: 时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
-        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._name = None
         self._create_by = None
         self._approver = None
@@ -109,6 +114,8 @@ class ListDerivativeIndexesRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if name is not None:
             self.name = name
         if create_by is not None:
@@ -142,7 +149,7 @@ class ListDerivativeIndexesRequest:
     def workspace(self):
         """Gets the workspace of this ListDerivativeIndexesRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -153,7 +160,7 @@ class ListDerivativeIndexesRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListDerivativeIndexesRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListDerivativeIndexesRequest.
         :type workspace: str
@@ -161,10 +168,32 @@ class ListDerivativeIndexesRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListDerivativeIndexesRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListDerivativeIndexesRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListDerivativeIndexesRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListDerivativeIndexesRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def name(self):
         """Gets the name of this ListDerivativeIndexesRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :return: The name of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -175,7 +204,7 @@ class ListDerivativeIndexesRequest:
     def name(self, name):
         """Sets the name of this ListDerivativeIndexesRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :param name: The name of this ListDerivativeIndexesRequest.
         :type name: str
@@ -186,7 +215,7 @@ class ListDerivativeIndexesRequest:
     def create_by(self):
         """Gets the create_by of this ListDerivativeIndexesRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :return: The create_by of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -197,7 +226,7 @@ class ListDerivativeIndexesRequest:
     def create_by(self, create_by):
         """Sets the create_by of this ListDerivativeIndexesRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :param create_by: The create_by of this ListDerivativeIndexesRequest.
         :type create_by: str
@@ -208,7 +237,7 @@ class ListDerivativeIndexesRequest:
     def approver(self):
         """Gets the approver of this ListDerivativeIndexesRequest.
 
-        按审核人查询
+        按审核人查询。
 
         :return: The approver of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -219,7 +248,7 @@ class ListDerivativeIndexesRequest:
     def approver(self, approver):
         """Sets the approver of this ListDerivativeIndexesRequest.
 
-        按审核人查询
+        按审核人查询。
 
         :param approver: The approver of this ListDerivativeIndexesRequest.
         :type approver: str
@@ -230,7 +259,7 @@ class ListDerivativeIndexesRequest:
     def status(self):
         """Gets the status of this ListDerivativeIndexesRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :return: The status of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -241,7 +270,7 @@ class ListDerivativeIndexesRequest:
     def status(self, status):
         """Sets the status of this ListDerivativeIndexesRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :param status: The status of this ListDerivativeIndexesRequest.
         :type status: str
@@ -252,7 +281,7 @@ class ListDerivativeIndexesRequest:
     def dimension_id(self):
         """Gets the dimension_id of this ListDerivativeIndexesRequest.
 
-        依据维度id查维度属性
+        依据维度ID查维度属性。
 
         :return: The dimension_id of this ListDerivativeIndexesRequest.
         :rtype: int
@@ -263,7 +292,7 @@ class ListDerivativeIndexesRequest:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this ListDerivativeIndexesRequest.
 
-        依据维度id查维度属性
+        依据维度ID查维度属性。
 
         :param dimension_id: The dimension_id of this ListDerivativeIndexesRequest.
         :type dimension_id: int
@@ -274,7 +303,7 @@ class ListDerivativeIndexesRequest:
     def dimension_group(self):
         """Gets the dimension_group of this ListDerivativeIndexesRequest.
 
-        依据维度颗粒度查维度属性
+        依据维度颗粒度查维度属性。
 
         :return: The dimension_group of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -285,7 +314,7 @@ class ListDerivativeIndexesRequest:
     def dimension_group(self, dimension_group):
         """Sets the dimension_group of this ListDerivativeIndexesRequest.
 
-        依据维度颗粒度查维度属性
+        依据维度颗粒度查维度属性。
 
         :param dimension_group: The dimension_group of this ListDerivativeIndexesRequest.
         :type dimension_group: str
@@ -296,7 +325,7 @@ class ListDerivativeIndexesRequest:
     def atomic_index_id(self):
         """Gets the atomic_index_id of this ListDerivativeIndexesRequest.
 
-        依据原子指标id查维度属性
+        依据原子指标ID查维度属性。
 
         :return: The atomic_index_id of this ListDerivativeIndexesRequest.
         :rtype: int
@@ -307,7 +336,7 @@ class ListDerivativeIndexesRequest:
     def atomic_index_id(self, atomic_index_id):
         """Sets the atomic_index_id of this ListDerivativeIndexesRequest.
 
-        依据原子指标id查维度属性
+        依据原子指标ID查维度属性。
 
         :param atomic_index_id: The atomic_index_id of this ListDerivativeIndexesRequest.
         :type atomic_index_id: int
@@ -362,7 +391,7 @@ class ListDerivativeIndexesRequest:
     def l3_id(self):
         """Gets the l3_id of this ListDerivativeIndexesRequest.
 
-        业务对象l3 id
+        业务对象l3的ID。
 
         :return: The l3_id of this ListDerivativeIndexesRequest.
         :rtype: int
@@ -373,7 +402,7 @@ class ListDerivativeIndexesRequest:
     def l3_id(self, l3_id):
         """Sets the l3_id of this ListDerivativeIndexesRequest.
 
-        业务对象l3 id
+        业务对象l3的ID。
 
         :param l3_id: The l3_id of this ListDerivativeIndexesRequest.
         :type l3_id: int
@@ -384,7 +413,7 @@ class ListDerivativeIndexesRequest:
     def begin_time(self):
         """Gets the begin_time of this ListDerivativeIndexesRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The begin_time of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -395,7 +424,7 @@ class ListDerivativeIndexesRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListDerivativeIndexesRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param begin_time: The begin_time of this ListDerivativeIndexesRequest.
         :type begin_time: str
@@ -406,7 +435,7 @@ class ListDerivativeIndexesRequest:
     def end_time(self):
         """Gets the end_time of this ListDerivativeIndexesRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The end_time of this ListDerivativeIndexesRequest.
         :rtype: str
@@ -417,7 +446,7 @@ class ListDerivativeIndexesRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListDerivativeIndexesRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param end_time: The end_time of this ListDerivativeIndexesRequest.
         :type end_time: str
@@ -428,7 +457,7 @@ class ListDerivativeIndexesRequest:
     def limit(self):
         """Gets the limit of this ListDerivativeIndexesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListDerivativeIndexesRequest.
         :rtype: int
@@ -439,7 +468,7 @@ class ListDerivativeIndexesRequest:
     def limit(self, limit):
         """Sets the limit of this ListDerivativeIndexesRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListDerivativeIndexesRequest.
         :type limit: int
@@ -450,7 +479,7 @@ class ListDerivativeIndexesRequest:
     def offset(self):
         """Gets the offset of this ListDerivativeIndexesRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :return: The offset of this ListDerivativeIndexesRequest.
         :rtype: int
@@ -461,7 +490,7 @@ class ListDerivativeIndexesRequest:
     def offset(self, offset):
         """Sets the offset of this ListDerivativeIndexesRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :param offset: The offset of this ListDerivativeIndexesRequest.
         :type offset: int

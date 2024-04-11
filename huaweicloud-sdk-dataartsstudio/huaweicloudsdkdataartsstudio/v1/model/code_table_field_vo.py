@@ -51,29 +51,29 @@ class CodeTableFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 码表字段ID。
         :type id: int
-        :param code_table_id: 所属码表id
+        :param code_table_id: 所属码表ID。
         :type code_table_id: int
-        :param ordinal: 序号
+        :param ordinal: 序号。
         :type ordinal: int
-        :param name_en: 字段名，英文
+        :param name_en: 字段名，英文。
         :type name_en: str
-        :param name_ch: 字段名，中文
+        :param name_ch: 字段名，中文。
         :type name_ch: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
-        :param data_type: 字段类型
+        :param data_type: 字段类型。
         :type data_type: str
         :param domain_type: 
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
-        :param data_type_extend: 数据类型扩展字段
+        :param data_type_extend: 数据类型扩展字段。
         :type data_type_extend: str
-        :param is_unique_key: 是否唯一
+        :param is_unique_key: 是否唯一。
         :type is_unique_key: bool
-        :param code_table_field_values: 码表属性值
+        :param code_table_field_values: 码表属性值。
         :type code_table_field_values: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldValueVO`]
-        :param count_field_values: 码表属性值总数
+        :param count_field_values: 码表属性值总数。
         :type count_field_values: int
         """
         
@@ -118,7 +118,7 @@ class CodeTableFieldVO:
     def id(self):
         """Gets the id of this CodeTableFieldVO.
 
-        ID
+        码表字段ID。
 
         :return: The id of this CodeTableFieldVO.
         :rtype: int
@@ -129,7 +129,7 @@ class CodeTableFieldVO:
     def id(self, id):
         """Sets the id of this CodeTableFieldVO.
 
-        ID
+        码表字段ID。
 
         :param id: The id of this CodeTableFieldVO.
         :type id: int
@@ -140,7 +140,7 @@ class CodeTableFieldVO:
     def code_table_id(self):
         """Gets the code_table_id of this CodeTableFieldVO.
 
-        所属码表id
+        所属码表ID。
 
         :return: The code_table_id of this CodeTableFieldVO.
         :rtype: int
@@ -151,7 +151,7 @@ class CodeTableFieldVO:
     def code_table_id(self, code_table_id):
         """Sets the code_table_id of this CodeTableFieldVO.
 
-        所属码表id
+        所属码表ID。
 
         :param code_table_id: The code_table_id of this CodeTableFieldVO.
         :type code_table_id: int
@@ -162,7 +162,7 @@ class CodeTableFieldVO:
     def ordinal(self):
         """Gets the ordinal of this CodeTableFieldVO.
 
-        序号
+        序号。
 
         :return: The ordinal of this CodeTableFieldVO.
         :rtype: int
@@ -173,7 +173,7 @@ class CodeTableFieldVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this CodeTableFieldVO.
 
-        序号
+        序号。
 
         :param ordinal: The ordinal of this CodeTableFieldVO.
         :type ordinal: int
@@ -184,7 +184,7 @@ class CodeTableFieldVO:
     def name_en(self):
         """Gets the name_en of this CodeTableFieldVO.
 
-        字段名，英文
+        字段名，英文。
 
         :return: The name_en of this CodeTableFieldVO.
         :rtype: str
@@ -195,7 +195,7 @@ class CodeTableFieldVO:
     def name_en(self, name_en):
         """Sets the name_en of this CodeTableFieldVO.
 
-        字段名，英文
+        字段名，英文。
 
         :param name_en: The name_en of this CodeTableFieldVO.
         :type name_en: str
@@ -206,7 +206,7 @@ class CodeTableFieldVO:
     def name_ch(self):
         """Gets the name_ch of this CodeTableFieldVO.
 
-        字段名，中文
+        字段名，中文。
 
         :return: The name_ch of this CodeTableFieldVO.
         :rtype: str
@@ -217,7 +217,7 @@ class CodeTableFieldVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this CodeTableFieldVO.
 
-        字段名，中文
+        字段名，中文。
 
         :param name_ch: The name_ch of this CodeTableFieldVO.
         :type name_ch: str
@@ -228,7 +228,7 @@ class CodeTableFieldVO:
     def description(self):
         """Gets the description of this CodeTableFieldVO.
 
-        描述
+        描述。
 
         :return: The description of this CodeTableFieldVO.
         :rtype: str
@@ -239,7 +239,7 @@ class CodeTableFieldVO:
     def description(self, description):
         """Sets the description of this CodeTableFieldVO.
 
-        描述
+        描述。
 
         :param description: The description of this CodeTableFieldVO.
         :type description: str
@@ -250,7 +250,7 @@ class CodeTableFieldVO:
     def data_type(self):
         """Gets the data_type of this CodeTableFieldVO.
 
-        字段类型
+        字段类型。
 
         :return: The data_type of this CodeTableFieldVO.
         :rtype: str
@@ -261,7 +261,7 @@ class CodeTableFieldVO:
     def data_type(self, data_type):
         """Sets the data_type of this CodeTableFieldVO.
 
-        字段类型
+        字段类型。
 
         :param data_type: The data_type of this CodeTableFieldVO.
         :type data_type: str
@@ -290,7 +290,7 @@ class CodeTableFieldVO:
     def data_type_extend(self):
         """Gets the data_type_extend of this CodeTableFieldVO.
 
-        数据类型扩展字段
+        数据类型扩展字段。
 
         :return: The data_type_extend of this CodeTableFieldVO.
         :rtype: str
@@ -301,7 +301,7 @@ class CodeTableFieldVO:
     def data_type_extend(self, data_type_extend):
         """Sets the data_type_extend of this CodeTableFieldVO.
 
-        数据类型扩展字段
+        数据类型扩展字段。
 
         :param data_type_extend: The data_type_extend of this CodeTableFieldVO.
         :type data_type_extend: str
@@ -312,7 +312,7 @@ class CodeTableFieldVO:
     def is_unique_key(self):
         """Gets the is_unique_key of this CodeTableFieldVO.
 
-        是否唯一
+        是否唯一。
 
         :return: The is_unique_key of this CodeTableFieldVO.
         :rtype: bool
@@ -323,7 +323,7 @@ class CodeTableFieldVO:
     def is_unique_key(self, is_unique_key):
         """Sets the is_unique_key of this CodeTableFieldVO.
 
-        是否唯一
+        是否唯一。
 
         :param is_unique_key: The is_unique_key of this CodeTableFieldVO.
         :type is_unique_key: bool
@@ -334,7 +334,7 @@ class CodeTableFieldVO:
     def code_table_field_values(self):
         """Gets the code_table_field_values of this CodeTableFieldVO.
 
-        码表属性值
+        码表属性值。
 
         :return: The code_table_field_values of this CodeTableFieldVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldValueVO`]
@@ -345,7 +345,7 @@ class CodeTableFieldVO:
     def code_table_field_values(self, code_table_field_values):
         """Sets the code_table_field_values of this CodeTableFieldVO.
 
-        码表属性值
+        码表属性值。
 
         :param code_table_field_values: The code_table_field_values of this CodeTableFieldVO.
         :type code_table_field_values: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldValueVO`]
@@ -356,7 +356,7 @@ class CodeTableFieldVO:
     def count_field_values(self):
         """Gets the count_field_values of this CodeTableFieldVO.
 
-        码表属性值总数
+        码表属性值总数。
 
         :return: The count_field_values of this CodeTableFieldVO.
         :rtype: int
@@ -367,7 +367,7 @@ class CodeTableFieldVO:
     def count_field_values(self, count_field_values):
         """Sets the count_field_values of this CodeTableFieldVO.
 
-        码表属性值总数
+        码表属性值总数。
 
         :param count_field_values: The count_field_values of this CodeTableFieldVO.
         :type count_field_values: int

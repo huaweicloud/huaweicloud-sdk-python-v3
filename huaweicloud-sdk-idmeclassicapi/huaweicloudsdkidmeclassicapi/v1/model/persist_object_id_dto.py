@@ -29,7 +29,7 @@ class PersistObjectIdDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识。
+        :param id: 数据实例ID。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class PersistObjectIdDTO:
     def id(self):
         """Gets the id of this PersistObjectIdDTO.
 
-        唯一标识。
+        数据实例ID。
 
         :return: The id of this PersistObjectIdDTO.
         :rtype: str
@@ -55,7 +55,7 @@ class PersistObjectIdDTO:
     def id(self, id):
         """Sets the id of this PersistObjectIdDTO.
 
-        唯一标识。
+        数据实例ID。
 
         :param id: The id of this PersistObjectIdDTO.
         :type id: str

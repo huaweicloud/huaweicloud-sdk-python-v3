@@ -53,7 +53,7 @@ class ServerModel:
         :type extend_spec: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpec`
         :param product_type: 产品类型。 - 0：云手机 - 1：云手游
         :type product_type: int
-        :param free_size: 服务器磁盘的免费配额。
+        :param free_size: 服务器磁盘的免费配额，单位G。
         :type free_size: int
         """
         
@@ -215,7 +215,7 @@ class ServerModel:
     def free_size(self):
         """Gets the free_size of this ServerModel.
 
-        服务器磁盘的免费配额。
+        服务器磁盘的免费配额，单位G。
 
         :return: The free_size of this ServerModel.
         :rtype: int
@@ -226,7 +226,7 @@ class ServerModel:
     def free_size(self, free_size):
         """Sets the free_size of this ServerModel.
 
-        服务器磁盘的免费配额。
+        服务器磁盘的免费配额，单位G。
 
         :param free_size: The free_size of this ServerModel.
         :type free_size: int

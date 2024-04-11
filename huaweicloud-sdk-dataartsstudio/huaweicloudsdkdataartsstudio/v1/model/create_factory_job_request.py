@@ -31,7 +31,7 @@ class CreateFactoryJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
         :param body: Body of the CreateFactoryJobRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.JobInfoRequest`
@@ -51,7 +51,7 @@ class CreateFactoryJobRequest:
     def workspace(self):
         """Gets the workspace of this CreateFactoryJobRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this CreateFactoryJobRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateFactoryJobRequest:
     def workspace(self, workspace):
         """Sets the workspace of this CreateFactoryJobRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this CreateFactoryJobRequest.
         :type workspace: str

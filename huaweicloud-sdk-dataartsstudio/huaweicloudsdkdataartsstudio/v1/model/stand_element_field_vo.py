@@ -51,29 +51,29 @@ class StandElementFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param fd_name: 属性名称
+        :param fd_name: 属性名称。
         :type fd_name: str
-        :param description: 属性描述
+        :param description: 属性描述。
         :type description: str
-        :param id: ID
+        :param id: 数据标准ID。
         :type id: int
-        :param actived: 是否显示，系统默认项必然显示不允许修改
+        :param actived: 是否显示，系统默认项必然显示不允许修改。
         :type actived: bool
-        :param required: 是否必填
+        :param required: 是否必填。
         :type required: bool
-        :param searchable: 是否可搜索
+        :param searchable: 是否可搜索。
         :type searchable: bool
-        :param displayed_name: 前端展示名
+        :param displayed_name: 前端展示名。
         :type displayed_name: str
-        :param displayed_name_en: 前端展示名英文
+        :param displayed_name_en: 前端展示名英文。
         :type displayed_name_en: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
         """
         
@@ -120,7 +120,7 @@ class StandElementFieldVO:
     def fd_name(self):
         """Gets the fd_name of this StandElementFieldVO.
 
-        属性名称
+        属性名称。
 
         :return: The fd_name of this StandElementFieldVO.
         :rtype: str
@@ -131,7 +131,7 @@ class StandElementFieldVO:
     def fd_name(self, fd_name):
         """Sets the fd_name of this StandElementFieldVO.
 
-        属性名称
+        属性名称。
 
         :param fd_name: The fd_name of this StandElementFieldVO.
         :type fd_name: str
@@ -142,7 +142,7 @@ class StandElementFieldVO:
     def description(self):
         """Gets the description of this StandElementFieldVO.
 
-        属性描述
+        属性描述。
 
         :return: The description of this StandElementFieldVO.
         :rtype: str
@@ -153,7 +153,7 @@ class StandElementFieldVO:
     def description(self, description):
         """Sets the description of this StandElementFieldVO.
 
-        属性描述
+        属性描述。
 
         :param description: The description of this StandElementFieldVO.
         :type description: str
@@ -164,7 +164,7 @@ class StandElementFieldVO:
     def id(self):
         """Gets the id of this StandElementFieldVO.
 
-        ID
+        数据标准ID。
 
         :return: The id of this StandElementFieldVO.
         :rtype: int
@@ -175,7 +175,7 @@ class StandElementFieldVO:
     def id(self, id):
         """Sets the id of this StandElementFieldVO.
 
-        ID
+        数据标准ID。
 
         :param id: The id of this StandElementFieldVO.
         :type id: int
@@ -186,7 +186,7 @@ class StandElementFieldVO:
     def actived(self):
         """Gets the actived of this StandElementFieldVO.
 
-        是否显示，系统默认项必然显示不允许修改
+        是否显示，系统默认项必然显示不允许修改。
 
         :return: The actived of this StandElementFieldVO.
         :rtype: bool
@@ -197,7 +197,7 @@ class StandElementFieldVO:
     def actived(self, actived):
         """Sets the actived of this StandElementFieldVO.
 
-        是否显示，系统默认项必然显示不允许修改
+        是否显示，系统默认项必然显示不允许修改。
 
         :param actived: The actived of this StandElementFieldVO.
         :type actived: bool
@@ -208,7 +208,7 @@ class StandElementFieldVO:
     def required(self):
         """Gets the required of this StandElementFieldVO.
 
-        是否必填
+        是否必填。
 
         :return: The required of this StandElementFieldVO.
         :rtype: bool
@@ -219,7 +219,7 @@ class StandElementFieldVO:
     def required(self, required):
         """Sets the required of this StandElementFieldVO.
 
-        是否必填
+        是否必填。
 
         :param required: The required of this StandElementFieldVO.
         :type required: bool
@@ -230,7 +230,7 @@ class StandElementFieldVO:
     def searchable(self):
         """Gets the searchable of this StandElementFieldVO.
 
-        是否可搜索
+        是否可搜索。
 
         :return: The searchable of this StandElementFieldVO.
         :rtype: bool
@@ -241,7 +241,7 @@ class StandElementFieldVO:
     def searchable(self, searchable):
         """Sets the searchable of this StandElementFieldVO.
 
-        是否可搜索
+        是否可搜索。
 
         :param searchable: The searchable of this StandElementFieldVO.
         :type searchable: bool
@@ -252,7 +252,7 @@ class StandElementFieldVO:
     def displayed_name(self):
         """Gets the displayed_name of this StandElementFieldVO.
 
-        前端展示名
+        前端展示名。
 
         :return: The displayed_name of this StandElementFieldVO.
         :rtype: str
@@ -263,7 +263,7 @@ class StandElementFieldVO:
     def displayed_name(self, displayed_name):
         """Sets the displayed_name of this StandElementFieldVO.
 
-        前端展示名
+        前端展示名。
 
         :param displayed_name: The displayed_name of this StandElementFieldVO.
         :type displayed_name: str
@@ -274,7 +274,7 @@ class StandElementFieldVO:
     def displayed_name_en(self):
         """Gets the displayed_name_en of this StandElementFieldVO.
 
-        前端展示名英文
+        前端展示名英文。
 
         :return: The displayed_name_en of this StandElementFieldVO.
         :rtype: str
@@ -285,7 +285,7 @@ class StandElementFieldVO:
     def displayed_name_en(self, displayed_name_en):
         """Sets the displayed_name_en of this StandElementFieldVO.
 
-        前端展示名英文
+        前端展示名英文。
 
         :param displayed_name_en: The displayed_name_en of this StandElementFieldVO.
         :type displayed_name_en: str
@@ -296,7 +296,7 @@ class StandElementFieldVO:
     def create_time(self):
         """Gets the create_time of this StandElementFieldVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this StandElementFieldVO.
         :rtype: datetime
@@ -307,7 +307,7 @@ class StandElementFieldVO:
     def create_time(self, create_time):
         """Sets the create_time of this StandElementFieldVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this StandElementFieldVO.
         :type create_time: datetime
@@ -318,7 +318,7 @@ class StandElementFieldVO:
     def update_time(self):
         """Gets the update_time of this StandElementFieldVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this StandElementFieldVO.
         :rtype: datetime
@@ -329,7 +329,7 @@ class StandElementFieldVO:
     def update_time(self, update_time):
         """Sets the update_time of this StandElementFieldVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this StandElementFieldVO.
         :type update_time: datetime
@@ -340,7 +340,7 @@ class StandElementFieldVO:
     def create_by(self):
         """Gets the create_by of this StandElementFieldVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this StandElementFieldVO.
         :rtype: str
@@ -351,7 +351,7 @@ class StandElementFieldVO:
     def create_by(self, create_by):
         """Sets the create_by of this StandElementFieldVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this StandElementFieldVO.
         :type create_by: str
@@ -362,7 +362,7 @@ class StandElementFieldVO:
     def update_by(self):
         """Gets the update_by of this StandElementFieldVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this StandElementFieldVO.
         :rtype: str
@@ -373,7 +373,7 @@ class StandElementFieldVO:
     def update_by(self, update_by):
         """Sets the update_by of this StandElementFieldVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this StandElementFieldVO.
         :type update_by: str

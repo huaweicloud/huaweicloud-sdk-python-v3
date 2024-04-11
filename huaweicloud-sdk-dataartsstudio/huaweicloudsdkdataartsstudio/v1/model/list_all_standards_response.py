@@ -18,7 +18,7 @@ class ListAllStandardsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'StandardSearchResultData'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListAllStandardsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 返回的数据信息
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.StandardSearchResultData`
         """
         
         super(ListAllStandardsResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListAllStandardsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListAllStandardsResponse.
 
-        返回的数据信息
-
         :return: The data of this ListAllStandardsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StandardSearchResultData`
         """
         return self._data
 
@@ -57,10 +55,8 @@ class ListAllStandardsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListAllStandardsResponse.
 
-        返回的数据信息
-
         :param data: The data of this ListAllStandardsResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkdataartsstudio.v1.StandardSearchResultData`
         """
         self._data = data
 

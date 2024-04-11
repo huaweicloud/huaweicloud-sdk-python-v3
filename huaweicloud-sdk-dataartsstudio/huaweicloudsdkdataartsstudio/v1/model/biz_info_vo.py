@@ -31,7 +31,7 @@ class BizInfoVO:
 
         The model defined in huaweicloud sdk
 
-        :param biz_id: 业务ID
+        :param biz_id: 业务ID。
         :type biz_id: int
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -50,7 +50,7 @@ class BizInfoVO:
     def biz_id(self):
         """Gets the biz_id of this BizInfoVO.
 
-        业务ID
+        业务ID。
 
         :return: The biz_id of this BizInfoVO.
         :rtype: int
@@ -61,7 +61,7 @@ class BizInfoVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this BizInfoVO.
 
-        业务ID
+        业务ID。
 
         :param biz_id: The biz_id of this BizInfoVO.
         :type biz_id: int

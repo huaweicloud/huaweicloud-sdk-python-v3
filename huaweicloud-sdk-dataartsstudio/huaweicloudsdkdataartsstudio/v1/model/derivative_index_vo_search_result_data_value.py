@@ -31,9 +31,9 @@ class DerivativeIndexVOSearchResultDataValue:
 
         The model defined in huaweicloud sdk
 
-        :param records: DerivativeIndexVO数组
+        :param records: DerivativeIndexVO数组。
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVO`]
-        :param total: 总数
+        :param total: 总数。
         :type total: int
         """
         
@@ -52,7 +52,7 @@ class DerivativeIndexVOSearchResultDataValue:
     def records(self):
         """Gets the records of this DerivativeIndexVOSearchResultDataValue.
 
-        DerivativeIndexVO数组
+        DerivativeIndexVO数组。
 
         :return: The records of this DerivativeIndexVOSearchResultDataValue.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVO`]
@@ -63,7 +63,7 @@ class DerivativeIndexVOSearchResultDataValue:
     def records(self, records):
         """Sets the records of this DerivativeIndexVOSearchResultDataValue.
 
-        DerivativeIndexVO数组
+        DerivativeIndexVO数组。
 
         :param records: The records of this DerivativeIndexVOSearchResultDataValue.
         :type records: list[:class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVO`]
@@ -74,7 +74,7 @@ class DerivativeIndexVOSearchResultDataValue:
     def total(self):
         """Gets the total of this DerivativeIndexVOSearchResultDataValue.
 
-        总数
+        总数。
 
         :return: The total of this DerivativeIndexVOSearchResultDataValue.
         :rtype: int
@@ -85,7 +85,7 @@ class DerivativeIndexVOSearchResultDataValue:
     def total(self, total):
         """Sets the total of this DerivativeIndexVOSearchResultDataValue.
 
-        总数
+        总数。
 
         :param total: The total of this DerivativeIndexVOSearchResultDataValue.
         :type total: int

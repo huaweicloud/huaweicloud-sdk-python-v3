@@ -57,7 +57,7 @@ class ListDomainsRequest:
         :type page_size: int
         :param page_number: 查询的页码，即：从哪一页开始查询，取值范围1-65535，默认值为1。
         :type page_number: int
-        :param show_tags: 展示标签标识 true：不展示 false：展示。
+        :param show_tags: 展示标签标识 true：展示 false：不展示。
         :type show_tags: bool
         :param exact_match: 精准匹配 true：开启 false：关闭。
         :type exact_match: bool
@@ -233,7 +233,7 @@ class ListDomainsRequest:
     def show_tags(self):
         """Gets the show_tags of this ListDomainsRequest.
 
-        展示标签标识 true：不展示 false：展示。
+        展示标签标识 true：展示 false：不展示。
 
         :return: The show_tags of this ListDomainsRequest.
         :rtype: bool
@@ -244,7 +244,7 @@ class ListDomainsRequest:
     def show_tags(self, show_tags):
         """Sets the show_tags of this ListDomainsRequest.
 
-        展示标签标识 true：不展示 false：展示。
+        展示标签标识 true：展示 false：不展示。
 
         :param show_tags: The show_tags of this ListDomainsRequest.
         :type show_tags: bool

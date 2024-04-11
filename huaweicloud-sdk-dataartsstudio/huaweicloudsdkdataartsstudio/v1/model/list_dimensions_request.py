@@ -18,6 +18,7 @@ class ListDimensionsRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'name': 'str',
         'create_by': 'str',
         'approver': 'str',
@@ -35,6 +36,7 @@ class ListDimensionsRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'name': 'name',
         'create_by': 'create_by',
         'approver': 'approver',
@@ -50,44 +52,47 @@ class ListDimensionsRequest:
         'biz_catalog_id': 'biz_catalog_id'
     }
 
-    def __init__(self, workspace=None, name=None, create_by=None, approver=None, status=None, l2_id=None, derivative_ids=None, begin_time=None, end_time=None, fact_logic_id=None, dimension_type=None, limit=None, offset=None, biz_catalog_id=None):
+    def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, approver=None, status=None, l2_id=None, derivative_ids=None, begin_time=None, end_time=None, fact_logic_id=None, dimension_type=None, limit=None, offset=None, biz_catalog_id=None):
         """ListDimensionsRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param name: 按名称或编码模糊查询
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param name: 按名称或编码模糊查询。
         :type name: str
-        :param create_by: 按创建者查询
+        :param create_by: 按创建者查询。
         :type create_by: str
-        :param approver: 按审核人查询
+        :param approver: 按审核人查询。
         :type approver: str
-        :param status: 业务状态
+        :param status: 业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
         :type status: str
-        :param l2_id: 主题域l2 id
+        :param l2_id: 主题域l2的ID。
         :type l2_id: int
-        :param derivative_ids: 依据复合指标id列表查维度
+        :param derivative_ids: 依据复合指标ID列表查维度。
         :type derivative_ids: list[int]
-        :param begin_time: 时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        :param begin_time: 时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type begin_time: str
-        :param end_time: 时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        :param end_time: 时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type end_time: str
-        :param fact_logic_id: 事实表id
+        :param fact_logic_id: 事实表ID。
         :type fact_logic_id: int
-        :param dimension_type: 维度类型
+        :param dimension_type: 维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
         :type dimension_type: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
-        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
-        :param biz_catalog_id: 所属的业务分层的id
+        :param biz_catalog_id: 所属的业务分层的ID。
         :type biz_catalog_id: str
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._name = None
         self._create_by = None
         self._approver = None
@@ -104,6 +109,8 @@ class ListDimensionsRequest:
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if name is not None:
             self.name = name
         if create_by is not None:
@@ -135,7 +142,7 @@ class ListDimensionsRequest:
     def workspace(self):
         """Gets the workspace of this ListDimensionsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListDimensionsRequest.
         :rtype: str
@@ -146,7 +153,7 @@ class ListDimensionsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListDimensionsRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListDimensionsRequest.
         :type workspace: str
@@ -154,10 +161,32 @@ class ListDimensionsRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListDimensionsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListDimensionsRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListDimensionsRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListDimensionsRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def name(self):
         """Gets the name of this ListDimensionsRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :return: The name of this ListDimensionsRequest.
         :rtype: str
@@ -168,7 +197,7 @@ class ListDimensionsRequest:
     def name(self, name):
         """Sets the name of this ListDimensionsRequest.
 
-        按名称或编码模糊查询
+        按名称或编码模糊查询。
 
         :param name: The name of this ListDimensionsRequest.
         :type name: str
@@ -179,7 +208,7 @@ class ListDimensionsRequest:
     def create_by(self):
         """Gets the create_by of this ListDimensionsRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :return: The create_by of this ListDimensionsRequest.
         :rtype: str
@@ -190,7 +219,7 @@ class ListDimensionsRequest:
     def create_by(self, create_by):
         """Sets the create_by of this ListDimensionsRequest.
 
-        按创建者查询
+        按创建者查询。
 
         :param create_by: The create_by of this ListDimensionsRequest.
         :type create_by: str
@@ -201,7 +230,7 @@ class ListDimensionsRequest:
     def approver(self):
         """Gets the approver of this ListDimensionsRequest.
 
-        按审核人查询
+        按审核人查询。
 
         :return: The approver of this ListDimensionsRequest.
         :rtype: str
@@ -212,7 +241,7 @@ class ListDimensionsRequest:
     def approver(self, approver):
         """Sets the approver of this ListDimensionsRequest.
 
-        按审核人查询
+        按审核人查询。
 
         :param approver: The approver of this ListDimensionsRequest.
         :type approver: str
@@ -223,7 +252,7 @@ class ListDimensionsRequest:
     def status(self):
         """Gets the status of this ListDimensionsRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :return: The status of this ListDimensionsRequest.
         :rtype: str
@@ -234,7 +263,7 @@ class ListDimensionsRequest:
     def status(self, status):
         """Sets the status of this ListDimensionsRequest.
 
-        业务状态
+        业务状态。DRAFT(草稿)、PUBLISH_DEVELOPING(发布待审批)、PUBLISHED(已发布)、OFFLINE_DEVELOPING(下线待审批)、OFFLINE(已下线)、REJECT(已驳回)。
 
         :param status: The status of this ListDimensionsRequest.
         :type status: str
@@ -245,7 +274,7 @@ class ListDimensionsRequest:
     def l2_id(self):
         """Gets the l2_id of this ListDimensionsRequest.
 
-        主题域l2 id
+        主题域l2的ID。
 
         :return: The l2_id of this ListDimensionsRequest.
         :rtype: int
@@ -256,7 +285,7 @@ class ListDimensionsRequest:
     def l2_id(self, l2_id):
         """Sets the l2_id of this ListDimensionsRequest.
 
-        主题域l2 id
+        主题域l2的ID。
 
         :param l2_id: The l2_id of this ListDimensionsRequest.
         :type l2_id: int
@@ -267,7 +296,7 @@ class ListDimensionsRequest:
     def derivative_ids(self):
         """Gets the derivative_ids of this ListDimensionsRequest.
 
-        依据复合指标id列表查维度
+        依据复合指标ID列表查维度。
 
         :return: The derivative_ids of this ListDimensionsRequest.
         :rtype: list[int]
@@ -278,7 +307,7 @@ class ListDimensionsRequest:
     def derivative_ids(self, derivative_ids):
         """Sets the derivative_ids of this ListDimensionsRequest.
 
-        依据复合指标id列表查维度
+        依据复合指标ID列表查维度。
 
         :param derivative_ids: The derivative_ids of this ListDimensionsRequest.
         :type derivative_ids: list[int]
@@ -289,7 +318,7 @@ class ListDimensionsRequest:
     def begin_time(self):
         """Gets the begin_time of this ListDimensionsRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The begin_time of this ListDimensionsRequest.
         :rtype: str
@@ -300,7 +329,7 @@ class ListDimensionsRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListDimensionsRequest.
 
-        时间过滤左边界,与end_time一起使用,只支持时间范围过滤,单边过滤无效
+        时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param begin_time: The begin_time of this ListDimensionsRequest.
         :type begin_time: str
@@ -311,7 +340,7 @@ class ListDimensionsRequest:
     def end_time(self):
         """Gets the end_time of this ListDimensionsRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The end_time of this ListDimensionsRequest.
         :rtype: str
@@ -322,7 +351,7 @@ class ListDimensionsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListDimensionsRequest.
 
-        时间过滤右边界,与begin_time一起使用只支持时间范围过滤,单边过滤无效
+        时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param end_time: The end_time of this ListDimensionsRequest.
         :type end_time: str
@@ -333,7 +362,7 @@ class ListDimensionsRequest:
     def fact_logic_id(self):
         """Gets the fact_logic_id of this ListDimensionsRequest.
 
-        事实表id
+        事实表ID。
 
         :return: The fact_logic_id of this ListDimensionsRequest.
         :rtype: int
@@ -344,7 +373,7 @@ class ListDimensionsRequest:
     def fact_logic_id(self, fact_logic_id):
         """Sets the fact_logic_id of this ListDimensionsRequest.
 
-        事实表id
+        事实表ID。
 
         :param fact_logic_id: The fact_logic_id of this ListDimensionsRequest.
         :type fact_logic_id: int
@@ -355,7 +384,7 @@ class ListDimensionsRequest:
     def dimension_type(self):
         """Gets the dimension_type of this ListDimensionsRequest.
 
-        维度类型
+        维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
 
         :return: The dimension_type of this ListDimensionsRequest.
         :rtype: str
@@ -366,7 +395,7 @@ class ListDimensionsRequest:
     def dimension_type(self, dimension_type):
         """Sets the dimension_type of this ListDimensionsRequest.
 
-        维度类型
+        维度类型。COMMON(普通维度)、LOOKUP(码表维度)、HIERARCHIES(层级维度)。
 
         :param dimension_type: The dimension_type of this ListDimensionsRequest.
         :type dimension_type: str
@@ -377,7 +406,7 @@ class ListDimensionsRequest:
     def limit(self):
         """Gets the limit of this ListDimensionsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListDimensionsRequest.
         :rtype: int
@@ -388,7 +417,7 @@ class ListDimensionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListDimensionsRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListDimensionsRequest.
         :type limit: int
@@ -399,7 +428,7 @@ class ListDimensionsRequest:
     def offset(self):
         """Gets the offset of this ListDimensionsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :return: The offset of this ListDimensionsRequest.
         :rtype: int
@@ -410,7 +439,7 @@ class ListDimensionsRequest:
     def offset(self, offset):
         """Sets the offset of this ListDimensionsRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :param offset: The offset of this ListDimensionsRequest.
         :type offset: int
@@ -421,7 +450,7 @@ class ListDimensionsRequest:
     def biz_catalog_id(self):
         """Gets the biz_catalog_id of this ListDimensionsRequest.
 
-        所属的业务分层的id
+        所属的业务分层的ID。
 
         :return: The biz_catalog_id of this ListDimensionsRequest.
         :rtype: str
@@ -432,7 +461,7 @@ class ListDimensionsRequest:
     def biz_catalog_id(self, biz_catalog_id):
         """Sets the biz_catalog_id of this ListDimensionsRequest.
 
-        所属的业务分层的id
+        所属的业务分层的ID。
 
         :param biz_catalog_id: The biz_catalog_id of this ListDimensionsRequest.
         :type biz_catalog_id: str

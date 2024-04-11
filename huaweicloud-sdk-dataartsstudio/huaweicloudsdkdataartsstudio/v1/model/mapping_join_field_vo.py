@@ -35,13 +35,13 @@ class MappingJoinFieldVO:
 
         The model defined in huaweicloud sdk
 
-        :param field1_id: 属性id
+        :param field1_id: 属性1ID。
         :type field1_id: int
-        :param field2_id: 属性id
+        :param field2_id: 属性2ID。
         :type field2_id: int
-        :param field1_name: 名称
+        :param field1_name: 属性1名称。
         :type field1_name: str
-        :param field2_name: 名称
+        :param field2_name: 属性2名称。
         :type field2_name: str
         """
         
@@ -62,7 +62,7 @@ class MappingJoinFieldVO:
     def field1_id(self):
         """Gets the field1_id of this MappingJoinFieldVO.
 
-        属性id
+        属性1ID。
 
         :return: The field1_id of this MappingJoinFieldVO.
         :rtype: int
@@ -73,7 +73,7 @@ class MappingJoinFieldVO:
     def field1_id(self, field1_id):
         """Sets the field1_id of this MappingJoinFieldVO.
 
-        属性id
+        属性1ID。
 
         :param field1_id: The field1_id of this MappingJoinFieldVO.
         :type field1_id: int
@@ -84,7 +84,7 @@ class MappingJoinFieldVO:
     def field2_id(self):
         """Gets the field2_id of this MappingJoinFieldVO.
 
-        属性id
+        属性2ID。
 
         :return: The field2_id of this MappingJoinFieldVO.
         :rtype: int
@@ -95,7 +95,7 @@ class MappingJoinFieldVO:
     def field2_id(self, field2_id):
         """Sets the field2_id of this MappingJoinFieldVO.
 
-        属性id
+        属性2ID。
 
         :param field2_id: The field2_id of this MappingJoinFieldVO.
         :type field2_id: int
@@ -106,7 +106,7 @@ class MappingJoinFieldVO:
     def field1_name(self):
         """Gets the field1_name of this MappingJoinFieldVO.
 
-        名称
+        属性1名称。
 
         :return: The field1_name of this MappingJoinFieldVO.
         :rtype: str
@@ -117,7 +117,7 @@ class MappingJoinFieldVO:
     def field1_name(self, field1_name):
         """Sets the field1_name of this MappingJoinFieldVO.
 
-        名称
+        属性1名称。
 
         :param field1_name: The field1_name of this MappingJoinFieldVO.
         :type field1_name: str
@@ -128,7 +128,7 @@ class MappingJoinFieldVO:
     def field2_name(self):
         """Gets the field2_name of this MappingJoinFieldVO.
 
-        名称
+        属性2名称。
 
         :return: The field2_name of this MappingJoinFieldVO.
         :rtype: str
@@ -139,7 +139,7 @@ class MappingJoinFieldVO:
     def field2_name(self, field2_name):
         """Sets the field2_name of this MappingJoinFieldVO.
 
-        名称
+        属性2名称。
 
         :param field2_name: The field2_name of this MappingJoinFieldVO.
         :type field2_name: str

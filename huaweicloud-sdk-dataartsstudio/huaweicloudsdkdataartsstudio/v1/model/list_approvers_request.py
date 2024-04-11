@@ -18,6 +18,7 @@ class ListApproversRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'approver_name': 'str',
         'limit': 'int',
         'offset': 'int'
@@ -25,35 +26,41 @@ class ListApproversRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'approver_name': 'approver_name',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, approver_name=None, limit=None, offset=None):
+    def __init__(self, workspace=None, x_project_id=None, approver_name=None, limit=None, offset=None):
         """ListApproversRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
         :param approver_name: 审核人名字
         :type approver_name: str
-        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        :param limit: 查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
         :type limit: int
-        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        :param offset: 查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
         :type offset: int
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._approver_name = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         if approver_name is not None:
             self.approver_name = approver_name
         if limit is not None:
@@ -65,7 +72,7 @@ class ListApproversRequest:
     def workspace(self):
         """Gets the workspace of this ListApproversRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListApproversRequest.
         :rtype: str
@@ -76,12 +83,34 @@ class ListApproversRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListApproversRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListApproversRequest.
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListApproversRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListApproversRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListApproversRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListApproversRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
 
     @property
     def approver_name(self):
@@ -109,7 +138,7 @@ class ListApproversRequest:
     def limit(self):
         """Gets the limit of this ListApproversRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :return: The limit of this ListApproversRequest.
         :rtype: int
@@ -120,7 +149,7 @@ class ListApproversRequest:
     def limit(self, limit):
         """Sets the limit of this ListApproversRequest.
 
-        查询条数，即查询Y条数据。默认值50，取值范围[1,100]
+        查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
         :param limit: The limit of this ListApproversRequest.
         :type limit: int
@@ -131,7 +160,7 @@ class ListApproversRequest:
     def offset(self):
         """Gets the offset of this ListApproversRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :return: The offset of this ListApproversRequest.
         :rtype: int
@@ -142,7 +171,7 @@ class ListApproversRequest:
     def offset(self, offset):
         """Sets the offset of this ListApproversRequest.
 
-        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整。默认值0
+        查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
         :param offset: The offset of this ListApproversRequest.
         :type offset: int

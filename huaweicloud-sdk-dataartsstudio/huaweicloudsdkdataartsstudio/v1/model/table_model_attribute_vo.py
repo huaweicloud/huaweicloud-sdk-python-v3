@@ -17,7 +17,7 @@ class TableModelAttributeVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'name_en': 'str',
         'name_ch': 'str',
         'description': 'str',
@@ -77,55 +77,55 @@ class TableModelAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
-        :type id: int
-        :param name_en: 字段名
+        :param id: 编码。
+        :type id: str
+        :param name_en: 字段名。
         :type name_en: str
-        :param name_ch: 业务属性
+        :param name_ch: 业务属性。
         :type name_ch: str
-        :param description: 
+        :param description: 描述。
         :type description: str
-        :param obs_location: obs路径，子路径
+        :param obs_location: obs路径，子路径。
         :type obs_location: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param data_type: 字段类型
+        :param data_type: 字段类型。
         :type data_type: str
         :param domain_type: 
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
-        :param data_type_extend: 数据类型扩展字段
+        :param data_type_extend: 数据类型扩展字段。
         :type data_type_extend: str
-        :param is_primary_key: 是否主键
+        :param is_primary_key: 是否主键。
         :type is_primary_key: bool
-        :param is_partition_key: 是否分区键
+        :param is_partition_key: 是否分区键。
         :type is_partition_key: bool
-        :param is_foreign_key: 是否外键
+        :param is_foreign_key: 是否外键。
         :type is_foreign_key: bool
-        :param extend_field: 是否继承的属性
+        :param extend_field: 是否继承的属性。
         :type extend_field: bool
-        :param not_null: 是否不为空
+        :param not_null: 是否不为空。
         :type not_null: bool
-        :param ordinal: 序号
+        :param ordinal: 序号。
         :type ordinal: int
-        :param table_model_id: 所属表模型id
+        :param table_model_id: 所属关系建模的模型ID。
         :type table_model_id: int
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param tags: 表标签
+        :param tags: 表标签。
         :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
-        :param stand_row_id: 关联的数据标准的id
+        :param stand_row_id: 关联的数据标准的ID。
         :type stand_row_id: int
-        :param stand_row_name: 
+        :param stand_row_name: 关联的数据标准名称。
         :type stand_row_name: str
-        :param quality_infos: 质量信息
+        :param quality_infos: 质量信息。
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
-        :param alias: 别名
+        :param alias: 别名。
         :type alias: str
-        :param self_defined_fields: 自定义项
+        :param self_defined_fields: 自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         
@@ -209,10 +209,10 @@ class TableModelAttributeVO:
     def id(self):
         """Gets the id of this TableModelAttributeVO.
 
-        编码
+        编码。
 
         :return: The id of this TableModelAttributeVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -220,10 +220,10 @@ class TableModelAttributeVO:
     def id(self, id):
         """Sets the id of this TableModelAttributeVO.
 
-        编码
+        编码。
 
         :param id: The id of this TableModelAttributeVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -231,7 +231,7 @@ class TableModelAttributeVO:
     def name_en(self):
         """Gets the name_en of this TableModelAttributeVO.
 
-        字段名
+        字段名。
 
         :return: The name_en of this TableModelAttributeVO.
         :rtype: str
@@ -242,7 +242,7 @@ class TableModelAttributeVO:
     def name_en(self, name_en):
         """Sets the name_en of this TableModelAttributeVO.
 
-        字段名
+        字段名。
 
         :param name_en: The name_en of this TableModelAttributeVO.
         :type name_en: str
@@ -253,7 +253,7 @@ class TableModelAttributeVO:
     def name_ch(self):
         """Gets the name_ch of this TableModelAttributeVO.
 
-        业务属性
+        业务属性。
 
         :return: The name_ch of this TableModelAttributeVO.
         :rtype: str
@@ -264,7 +264,7 @@ class TableModelAttributeVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this TableModelAttributeVO.
 
-        业务属性
+        业务属性。
 
         :param name_ch: The name_ch of this TableModelAttributeVO.
         :type name_ch: str
@@ -275,6 +275,8 @@ class TableModelAttributeVO:
     def description(self):
         """Gets the description of this TableModelAttributeVO.
 
+        描述。
+
         :return: The description of this TableModelAttributeVO.
         :rtype: str
         """
@@ -283,6 +285,8 @@ class TableModelAttributeVO:
     @description.setter
     def description(self, description):
         """Sets the description of this TableModelAttributeVO.
+
+        描述。
 
         :param description: The description of this TableModelAttributeVO.
         :type description: str
@@ -293,7 +297,7 @@ class TableModelAttributeVO:
     def obs_location(self):
         """Gets the obs_location of this TableModelAttributeVO.
 
-        obs路径，子路径
+        obs路径，子路径。
 
         :return: The obs_location of this TableModelAttributeVO.
         :rtype: str
@@ -304,7 +308,7 @@ class TableModelAttributeVO:
     def obs_location(self, obs_location):
         """Sets the obs_location of this TableModelAttributeVO.
 
-        obs路径，子路径
+        obs路径，子路径。
 
         :param obs_location: The obs_location of this TableModelAttributeVO.
         :type obs_location: str
@@ -315,7 +319,7 @@ class TableModelAttributeVO:
     def create_by(self):
         """Gets the create_by of this TableModelAttributeVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this TableModelAttributeVO.
         :rtype: str
@@ -326,7 +330,7 @@ class TableModelAttributeVO:
     def create_by(self, create_by):
         """Sets the create_by of this TableModelAttributeVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this TableModelAttributeVO.
         :type create_by: str
@@ -337,7 +341,7 @@ class TableModelAttributeVO:
     def update_by(self):
         """Gets the update_by of this TableModelAttributeVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this TableModelAttributeVO.
         :rtype: str
@@ -348,7 +352,7 @@ class TableModelAttributeVO:
     def update_by(self, update_by):
         """Sets the update_by of this TableModelAttributeVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this TableModelAttributeVO.
         :type update_by: str
@@ -359,7 +363,7 @@ class TableModelAttributeVO:
     def data_type(self):
         """Gets the data_type of this TableModelAttributeVO.
 
-        字段类型
+        字段类型。
 
         :return: The data_type of this TableModelAttributeVO.
         :rtype: str
@@ -370,7 +374,7 @@ class TableModelAttributeVO:
     def data_type(self, data_type):
         """Sets the data_type of this TableModelAttributeVO.
 
-        字段类型
+        字段类型。
 
         :param data_type: The data_type of this TableModelAttributeVO.
         :type data_type: str
@@ -399,7 +403,7 @@ class TableModelAttributeVO:
     def data_type_extend(self):
         """Gets the data_type_extend of this TableModelAttributeVO.
 
-        数据类型扩展字段
+        数据类型扩展字段。
 
         :return: The data_type_extend of this TableModelAttributeVO.
         :rtype: str
@@ -410,7 +414,7 @@ class TableModelAttributeVO:
     def data_type_extend(self, data_type_extend):
         """Sets the data_type_extend of this TableModelAttributeVO.
 
-        数据类型扩展字段
+        数据类型扩展字段。
 
         :param data_type_extend: The data_type_extend of this TableModelAttributeVO.
         :type data_type_extend: str
@@ -421,7 +425,7 @@ class TableModelAttributeVO:
     def is_primary_key(self):
         """Gets the is_primary_key of this TableModelAttributeVO.
 
-        是否主键
+        是否主键。
 
         :return: The is_primary_key of this TableModelAttributeVO.
         :rtype: bool
@@ -432,7 +436,7 @@ class TableModelAttributeVO:
     def is_primary_key(self, is_primary_key):
         """Sets the is_primary_key of this TableModelAttributeVO.
 
-        是否主键
+        是否主键。
 
         :param is_primary_key: The is_primary_key of this TableModelAttributeVO.
         :type is_primary_key: bool
@@ -443,7 +447,7 @@ class TableModelAttributeVO:
     def is_partition_key(self):
         """Gets the is_partition_key of this TableModelAttributeVO.
 
-        是否分区键
+        是否分区键。
 
         :return: The is_partition_key of this TableModelAttributeVO.
         :rtype: bool
@@ -454,7 +458,7 @@ class TableModelAttributeVO:
     def is_partition_key(self, is_partition_key):
         """Sets the is_partition_key of this TableModelAttributeVO.
 
-        是否分区键
+        是否分区键。
 
         :param is_partition_key: The is_partition_key of this TableModelAttributeVO.
         :type is_partition_key: bool
@@ -465,7 +469,7 @@ class TableModelAttributeVO:
     def is_foreign_key(self):
         """Gets the is_foreign_key of this TableModelAttributeVO.
 
-        是否外键
+        是否外键。
 
         :return: The is_foreign_key of this TableModelAttributeVO.
         :rtype: bool
@@ -476,7 +480,7 @@ class TableModelAttributeVO:
     def is_foreign_key(self, is_foreign_key):
         """Sets the is_foreign_key of this TableModelAttributeVO.
 
-        是否外键
+        是否外键。
 
         :param is_foreign_key: The is_foreign_key of this TableModelAttributeVO.
         :type is_foreign_key: bool
@@ -487,7 +491,7 @@ class TableModelAttributeVO:
     def extend_field(self):
         """Gets the extend_field of this TableModelAttributeVO.
 
-        是否继承的属性
+        是否继承的属性。
 
         :return: The extend_field of this TableModelAttributeVO.
         :rtype: bool
@@ -498,7 +502,7 @@ class TableModelAttributeVO:
     def extend_field(self, extend_field):
         """Sets the extend_field of this TableModelAttributeVO.
 
-        是否继承的属性
+        是否继承的属性。
 
         :param extend_field: The extend_field of this TableModelAttributeVO.
         :type extend_field: bool
@@ -509,7 +513,7 @@ class TableModelAttributeVO:
     def not_null(self):
         """Gets the not_null of this TableModelAttributeVO.
 
-        是否不为空
+        是否不为空。
 
         :return: The not_null of this TableModelAttributeVO.
         :rtype: bool
@@ -520,7 +524,7 @@ class TableModelAttributeVO:
     def not_null(self, not_null):
         """Sets the not_null of this TableModelAttributeVO.
 
-        是否不为空
+        是否不为空。
 
         :param not_null: The not_null of this TableModelAttributeVO.
         :type not_null: bool
@@ -531,7 +535,7 @@ class TableModelAttributeVO:
     def ordinal(self):
         """Gets the ordinal of this TableModelAttributeVO.
 
-        序号
+        序号。
 
         :return: The ordinal of this TableModelAttributeVO.
         :rtype: int
@@ -542,7 +546,7 @@ class TableModelAttributeVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this TableModelAttributeVO.
 
-        序号
+        序号。
 
         :param ordinal: The ordinal of this TableModelAttributeVO.
         :type ordinal: int
@@ -553,7 +557,7 @@ class TableModelAttributeVO:
     def table_model_id(self):
         """Gets the table_model_id of this TableModelAttributeVO.
 
-        所属表模型id
+        所属关系建模的模型ID。
 
         :return: The table_model_id of this TableModelAttributeVO.
         :rtype: int
@@ -564,7 +568,7 @@ class TableModelAttributeVO:
     def table_model_id(self, table_model_id):
         """Sets the table_model_id of this TableModelAttributeVO.
 
-        所属表模型id
+        所属关系建模的模型ID。
 
         :param table_model_id: The table_model_id of this TableModelAttributeVO.
         :type table_model_id: int
@@ -575,7 +579,7 @@ class TableModelAttributeVO:
     def create_time(self):
         """Gets the create_time of this TableModelAttributeVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this TableModelAttributeVO.
         :rtype: datetime
@@ -586,7 +590,7 @@ class TableModelAttributeVO:
     def create_time(self, create_time):
         """Sets the create_time of this TableModelAttributeVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this TableModelAttributeVO.
         :type create_time: datetime
@@ -597,7 +601,7 @@ class TableModelAttributeVO:
     def update_time(self):
         """Gets the update_time of this TableModelAttributeVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this TableModelAttributeVO.
         :rtype: datetime
@@ -608,7 +612,7 @@ class TableModelAttributeVO:
     def update_time(self, update_time):
         """Sets the update_time of this TableModelAttributeVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this TableModelAttributeVO.
         :type update_time: datetime
@@ -619,7 +623,7 @@ class TableModelAttributeVO:
     def tags(self):
         """Gets the tags of this TableModelAttributeVO.
 
-        表标签
+        表标签。
 
         :return: The tags of this TableModelAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
@@ -630,7 +634,7 @@ class TableModelAttributeVO:
     def tags(self, tags):
         """Sets the tags of this TableModelAttributeVO.
 
-        表标签
+        表标签。
 
         :param tags: The tags of this TableModelAttributeVO.
         :type tags: list[:class:`huaweicloudsdkdataartsstudio.v1.TagVO`]
@@ -641,7 +645,7 @@ class TableModelAttributeVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this TableModelAttributeVO.
 
-        关联的数据标准的id
+        关联的数据标准的ID。
 
         :return: The stand_row_id of this TableModelAttributeVO.
         :rtype: int
@@ -652,7 +656,7 @@ class TableModelAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this TableModelAttributeVO.
 
-        关联的数据标准的id
+        关联的数据标准的ID。
 
         :param stand_row_id: The stand_row_id of this TableModelAttributeVO.
         :type stand_row_id: int
@@ -663,6 +667,8 @@ class TableModelAttributeVO:
     def stand_row_name(self):
         """Gets the stand_row_name of this TableModelAttributeVO.
 
+        关联的数据标准名称。
+
         :return: The stand_row_name of this TableModelAttributeVO.
         :rtype: str
         """
@@ -671,6 +677,8 @@ class TableModelAttributeVO:
     @stand_row_name.setter
     def stand_row_name(self, stand_row_name):
         """Sets the stand_row_name of this TableModelAttributeVO.
+
+        关联的数据标准名称。
 
         :param stand_row_name: The stand_row_name of this TableModelAttributeVO.
         :type stand_row_name: str
@@ -681,7 +689,7 @@ class TableModelAttributeVO:
     def quality_infos(self):
         """Gets the quality_infos of this TableModelAttributeVO.
 
-        质量信息
+        质量信息。
 
         :return: The quality_infos of this TableModelAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
@@ -692,7 +700,7 @@ class TableModelAttributeVO:
     def quality_infos(self, quality_infos):
         """Sets the quality_infos of this TableModelAttributeVO.
 
-        质量信息
+        质量信息。
 
         :param quality_infos: The quality_infos of this TableModelAttributeVO.
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
@@ -703,7 +711,7 @@ class TableModelAttributeVO:
     def alias(self):
         """Gets the alias of this TableModelAttributeVO.
 
-        别名
+        别名。
 
         :return: The alias of this TableModelAttributeVO.
         :rtype: str
@@ -714,7 +722,7 @@ class TableModelAttributeVO:
     def alias(self, alias):
         """Sets the alias of this TableModelAttributeVO.
 
-        别名
+        别名。
 
         :param alias: The alias of this TableModelAttributeVO.
         :type alias: str
@@ -725,7 +733,7 @@ class TableModelAttributeVO:
     def self_defined_fields(self):
         """Gets the self_defined_fields of this TableModelAttributeVO.
 
-        自定义项
+        自定义项。
 
         :return: The self_defined_fields of this TableModelAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
@@ -736,7 +744,7 @@ class TableModelAttributeVO:
     def self_defined_fields(self, self_defined_fields):
         """Sets the self_defined_fields of this TableModelAttributeVO.
 
-        自定义项
+        自定义项。
 
         :param self_defined_fields: The self_defined_fields of this TableModelAttributeVO.
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]

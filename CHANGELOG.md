@@ -1,3 +1,747 @@
+# 3.1.91 2024-04-11
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowStackSetMetadata**
+    - changes of response param
+      - `+ managed_operation`
+  - **UpdateStackSet**
+    - changes of request param
+      - `+ managed_operation`
+  - **CreateStackSet**
+    - changes of request param
+      - `+ managed_operation`
+  - **CreateStackInstance**
+    - changes of request param
+      - `+ operation_preferences`
+  - **DeleteStackInstanceDeprecated**
+    - changes of request param
+      - `+ operation_preferences`
+  - **UpdateStackInstances**
+    - changes of request param
+      - `+ operation_preferences`
+  - **DeleteStackInstance**
+    - changes of request param
+      - `+ operation_preferences`
+  - **DeployStackSet**
+    - changes of request param
+      - `+ operation_preferences`
+  - **ShowStackSetOperationMetadata**
+    - changes of response param
+      - `+ operation_preferences`
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateGatewayResponseTypeV2**
+    - changes of request param
+      - `* headers.value: object -> string`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the API `ShowQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.sni`
+      - `+ configs.request_url_rewrite`
+      - `+ configs.browser_cache_rules`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.sni`
+      - `+ configs.request_url_rewrite`
+      - `+ configs.browser_cache_rules`
+
+### HuaweiCloud SDK CodeHub
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDiffCommit**
+    - changes of response param
+      - `* result.diff: boolean -> string`
+
+### HuaweiCloud SDK CPH
+
+- _Features_
+  - Support the APIs `ChangeCloudPhoneServer`, `DeleteCloudPhoneServer`
+- _Bug Fix_
+  - None
+- _Change_
+  - **PushShareApps**
+    - changes of response param
+      - `- jobs`
+      - `- request_id`
+  - **DeleteShareApps**
+    - changes of response param
+      - `- jobs`
+      - `- request_id`
+  - **PushShareFiles**
+    - changes of response param
+      - `- jobs`
+      - `- request_id`
+  - **ListCloudPhoneModels**
+    - changes of response param
+      - `+ phone_models.phone_model_version`
+      - `+ phone_models.dpi`
+      - `+ phone_models.fps`
+      - `+ phone_models.volume_mode`
+  - **ListCloudPhones**
+    - changes of response param
+      - `+ phones.image_version`
+      - `+ phones.imei`
+      - `+ phones.traffic_type`
+      - `+ phones.volume_mode`
+      - `+ phones.availability_zone`
+  - **ShowCloudPhoneDetail**
+    - changes of response param
+      - `+ availability_zone`
+      - `+ phone_data_volume`
+      - `+ traffic_type`
+      - `+ image_version`
+      - `+ volume_mode`
+      - `+ imei`
+  - **ShowCloudPhoneServerDetail**
+    - changes of response param
+      - `+ share_volume_info`
+  - **CreateNet2CloudPhoneServer**
+    - changes of request param
+      - `+ phone_count_per_ip`
+      - `+ phone_data_volume`
+      - `+ server_share_data_volume`
+      - `+ public_ip.count`
+  - **ListCloudPhoneServers**
+    - changes of request param
+      - `+ phone_model_name`
+      - `+ create_since`
+      - `+ create_until`
+      - `+ status`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the following APIs:
+    - `SearchFieldsForRelation`
+    - `ExportDesignModels`
+    - `ExportDesignResult`
+    - `ExportDesignModelTableDdl`
+    - `AddDesignEntityTags`
+    - `RemoveDesignEntityTags`
+    - `UpdateDesignTableQuality`
+    - `RemoveDesignQualityInfos`
+    - `DeleteDesignLatestApproval`
+    - `SearchDesignLatestApprovalDiff`
+    - `UpdateDesignAggregationLogicTable`
+    - `CreateDesignAggregationLogicTable`
+    - `DeleteDesignAggregationLogicTable`
+    - `UpdateDesignAtomicIndex`
+    - `CreateDesignAtomicIndex`
+    - `DeleteDesignAtomicIndex`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResetLinkAttributeAndStandard**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListCatalogTree**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **SearchCatalogs**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ChangeCatalog**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CreateCatalog**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteCatalog**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **ShowBizCatalogDetail**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowStandardTemplate**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **UpdateStandardTemplate**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CreateStandardTemplate**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteStandardTemplate**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **SearchApprovals**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **RollbackApproval**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ConfirmApprovals**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListApprovers**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CreateApprover**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteApprover**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListBusiness**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CountOverviews**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CountTableModels**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CountAllModels**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CountStandards**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListDirectories**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **UpdateDirectory**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `- type: enum value [TAG]`
+  - **CreateDirectory**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `- type: enum value [TAG]`
+  - **DeleteDirectory**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowBizMetricById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListBizMetricDimensions**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListBizMetricOwners**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListMetricRelations**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **SearchVersions**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `+ data.value`
+  - **ListDimensions**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowDimensionById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListDimensionGroups**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CheckDimensionStatus**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListDimensionLogicTables**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowDimensionLogicTableById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListFactLogicTables**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowFactLogicTableById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CheckFactLogicTableStatus**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListAggregationLogicTables**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `+ data.value`
+  - **ShowAggregationLogicTableById**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `+ data.value`
+  - **ListCondition**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowConditionById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListRelations**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowRelationById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListTableModelRelations**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowTableModelById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ShowWorkspaceDetailById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ImportResult**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **SearchDwByType**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListAllTables**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ImportCatalogs**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ImportModels**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **RenewDataProfile**
+    - changes of request param
+      - `+ obsconfig.column_map`
+      - `+ obsconfig.path`
+      - `+ obsconfig.delimiter`
+      - `+ obsconfig.quote`
+      - `+ obsconfig.escape`
+      - `+ obsconfig.header`
+      - `+ obsconfig.data_type`
+      - `+ obsconfig.date_format`
+      - `+ obsconfig.timestamp_format`
+      - `+ obsconfig.null_value`
+      - `+ obsconfig.comment`
+      - `+ obsconfig.parse_mode`
+      - `+ obsconfig.join_table`
+      - `* obsconfig: object -> object<OBSCommonConfig>`
+  - **InitializeStandardTemplate**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListSubjectLevels**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ChangeSubjects**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListWorkspaces**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteWorkspaces**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **UpdateWorkspace**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CreateWorkspace**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **SearchCustomizedFields**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `+ type: enum value [METRIC]`
+  - **ModifyCustomizedFields**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **SearchSubjectNew**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteSubjectNew**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **UpdateSubjectNew**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CreateSubjectNew**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **ListAllStandards**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `+ data.value`
+  - **DeleteStandard**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **CreateStandard**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `+ from_public`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ShowStandardById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **UpdateStandard**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `+ from_public`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **SearchCodeTables**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteCodeTable**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **CreateCodeTable**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ShowCodeTableById**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **UpdateCodeTable**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **SearchCodeTableValues**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **UpdateCodeTableValues**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **BatchPublish**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `+ biz_infos.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **BatchOffline**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `+ biz_infos.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ListBizMetrics**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteBizMetric**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **UpdateBizMetric**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `+ biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+  - **CreateBizMetric**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `+ biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+  - **SearchSubject**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteSubject**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **UpdateSubject**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **CreateSubject**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **SearchAtomicIndexes**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `* data.value.records.id: integer -> string`
+      - `* data.value.records.l3_id: integer -> string`
+      - `* data.value.records.table_id: integer -> string`
+      - `+ data.value.records.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* data.value.records.approval_info.id: integer -> string`
+      - `* data.value.records.approval_info.biz_id: integer -> string`
+  - **ShowAtomicIndexById**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `* data.value.id: integer -> string`
+      - `* data.value.l3_id: integer -> string`
+      - `* data.value.table_id: integer -> string`
+      - `+ data.value.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* data.value.approval_info.id: integer -> string`
+      - `* data.value.approval_info.biz_id: integer -> string`
+  - **ListCompoundMetrics**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `* data.value.records.approval_info.id: integer -> string`
+      - `* data.value.records.approval_info.biz_id: integer -> string`
+      - `+ data.value.records.approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ShowCompoundMetricById**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `* data.value.approval_info.id: integer -> string`
+      - `* data.value.approval_info.biz_id: integer -> string`
+      - `+ data.value.approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ListTableModels**
+    - changes of request param
+      - `+ X-Project-Id`
+  - **DeleteTableModel**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* ids: list<integer> -> list<string>`
+  - **UpdateTableModel**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* attributes.id: integer -> string`
+  - **CreateTableModel**
+    - changes of request param
+      - `+ X-Project-Id`
+      - `* id: integer -> string`
+      - `* model_id: integer -> string`
+      - `* parent_table_id: integer -> string`
+      - `* logic_tb_id: integer -> string`
+      - `* biz_catalog_id: integer -> string`
+      - `* l1_id: integer -> string`
+      - `* l3_id: integer -> string`
+      - `* quality_id: integer -> string`
+      - `* approval_info.id: integer -> string`
+      - `* approval_info.biz_id: integer -> string`
+      - `+ approval_info.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+      - `* attributes.id: integer -> string`
+  - **ListDerivativeIndexes**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `* data.value.records.atomic_index.id: integer -> string`
+      - `* data.value.records.atomic_index.l3_id: integer -> string`
+      - `* data.value.records.atomic_index.table_id: integer -> string`
+      - `* data.value.records.approval_info.id: integer -> string`
+      - `* data.value.records.approval_info.biz_id: integer -> string`
+      - `+ data.value.records.dimension_groups.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+  - **ShowDerivativeIndexById**
+    - changes of request param
+      - `+ X-Project-Id`
+    - changes of response param
+      - `* data.value.atomic_index.id: integer -> string`
+      - `* data.value.atomic_index.l3_id: integer -> string`
+      - `* data.value.atomic_index.table_id: integer -> string`
+      - `* data.value.approval_info.id: integer -> string`
+      - `* data.value.approval_info.biz_id: integer -> string`
+      - `+ data.value.dimension_groups.biz_type: enum value [ATOMIC_METRIC,BIZ_CATALOG,COMPOSITE_METRIC,DERIVED_METRIC,DIRECTORY,FUNCTION,MODEL,SECRECY_LEVEL,STANDARD_ELEMENT_TEMPLATE,SUBJECT,SUMMARY_INDEX,TABLE_TYPE]`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the following APIs:
+    - `ListDataLevelTableCompareJobs`
+    - `CreateDataLevelTableCompareJob`
+    - `DeleteCompareJob`
+    - `StartPromptlyDataLevelTableCompareJob`
+    - `ListDataCompareOverview`
+    - `ListDataCompareDetail`
+    - `ListContentCompareOverview`
+    - `ListContentCompareDetail`
+    - `ListsAgencyPermissions`
+    - `ShowReplayResults`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDataFilteringResult**
+    - changes of response param
+      - `+ db_object_filtering_result.source`
+      - `+ db_object_filtering_result.target_result`
+      - `+ db_object_filtering_result.source_result`
+      - `+ db_object_filtering_result.target_message`
+      - `+ db_object_filtering_result.source_message`
+  - **ShowDataProgress**
+    - changes of response param
+      - `+ data_process_info.source`
+  - **UpdateDataProgress**
+    - changes of request param
+      - `+ data_process_info.source`
+  - **CheckDataFilter**
+    - changes of request param
+      - `+ data_process_info.source`
+  - **ExecuteJobAction**
+    - changes of request param
+      - `+ job.action_params.compare_task_param.data_process_info`
+  - **BatchExecuteJobActions**
+    - changes of request param
+      - `+ jobs.action_params.compare_task_param.data_process_info`
+
+### HuaweiCloud SDK DSC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowTopics**
+    - changes of response param
+      - `+ id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the following APIs:
+    - `ShowInstancesStatistics`
+    - `ShowSlowLogDownload`
+    - `CreateSlowLogDownload`
+    - `UpgradeInstanceVersion`
+    - `SearchAutoEnlargePolicy`
+    - `ListCnInfosBeforeReduce`
+    - `StartInstance`
+    - `ShowUpgradeCandidateVersions`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _Features_
+  - Support the following APIs:
+    - `Refresh`
+    - `ShowGetRoot`
+    - `ListGetAllParentList`
+    - `ShowGetParent`
+    - `ListGetChildList`
+    - `BatchRemoveChildNode`
+    - `BatchAddChildNode`
+    - `DeleteTarget`
+    - `ListQueryTarget`
+    - `ListQueryRelationship`
+    - `ListBatchQueryRelatedObjects`
+    - `ListQueryRelatedObjects`
+    - `CompareVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListHistoryData**
+    - changes of response param
+      - `- data.rdmOperationType: enum value [CREATE,UPDATE,LOGICALDELETE,DELETE,CASCADE]`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the following APIs:
+    - `ListRoutingBacklogPolicy`
+    - `CreateRoutingBacklogPolicy`
+    - `ShowRoutingBacklogPolicy`
+    - `UpdateRoutingBacklogPolicy`
+    - `DeleteRoutingBacklogPolicy`
+    - `ListRoutingFlowControlPolicy`
+    - `CreateRoutingFlowControlPolicy`
+    - `ShowRoutingFlowControlPolicy`
+    - `UpdateRoutingFlowControlPolicy`
+    - `DeleteRoutingFlowControlPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of request param
+      - `* engine: optional -> required`
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - Support the API `BatchListAssociatedIssues`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstancesDetails**
+    - changes of request param
+      - `* engine: optional -> required`
+      - `+ engine: enum value [rabbitmq]`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ShowReplayDelayStatus`, `SwitchLogReplay`
+  - **StartResizeFlavorAction**
+    - changes of request param
+      - `+ resize_flavor.is_delay`
+  - **ListPostgresqlDatabases**
+    - changes of request param
+      - `+ db`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of request param
+      - `* engine: optional -> required`
+      - `+ engine: enum value [rocketmq]`
+      - `+ engine: enum value [reliability]`
+
+### HuaweiCloud SDK SWR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSharedReposDetails**
+    - changes of request param
+      - `* center: optional -> required`
+
 # 3.1.90 2024-04-03
 
 ### HuaweiCloud SDK CCM

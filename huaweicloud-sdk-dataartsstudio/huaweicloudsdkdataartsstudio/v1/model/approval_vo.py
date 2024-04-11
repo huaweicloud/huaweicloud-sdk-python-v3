@@ -17,11 +17,11 @@ class ApprovalVO:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'tenant_id': 'str',
         'name_ch': 'str',
         'name_en': 'str',
-        'biz_id': 'int',
+        'biz_id': 'str',
         'biz_type': 'BizTypeEnum',
         'biz_info': 'str',
         'biz_info_obj': 'object',
@@ -71,23 +71,23 @@ class ApprovalVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
-        :type id: int
-        :param tenant_id: tenant id
+        :param id: 审批单ID。
+        :type id: str
+        :param tenant_id: 项目ID。
         :type tenant_id: str
-        :param name_ch: 业务中文名
+        :param name_ch: 业务中文名。
         :type name_ch: str
-        :param name_en: 业务英文名
+        :param name_en: 业务英文名。
         :type name_en: str
-        :param biz_id: 业务ID
-        :type biz_id: int
+        :param biz_id: 业务ID。
+        :type biz_id: str
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param biz_info: 业务详情
+        :param biz_info: 业务详情。
         :type biz_info: str
-        :param biz_info_obj: 业务详情
+        :param biz_info_obj: 业务详情。
         :type biz_info_obj: object
-        :param biz_version: 业务版本
+        :param biz_version: 业务版本。
         :type biz_version: int
         :param biz_status: 
         :type biz_status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -95,25 +95,25 @@ class ApprovalVO:
         :type approval_status: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalStatusEnum`
         :param approval_type: 
         :type approval_type: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalTypeEnum`
-        :param submit_time: 提交时间
+        :param submit_time: 提交时间。
         :type submit_time: datetime
-        :param create_by: 创建者
+        :param create_by: 创建者。
         :type create_by: str
-        :param l1: 主题域分组
+        :param l1: 主题域分组。
         :type l1: str
-        :param l2: 主题域
+        :param l2: 主题域。
         :type l2: str
-        :param l3: 业务对象
+        :param l3: 业务对象。
         :type l3: str
-        :param approval_time: 审核时间
+        :param approval_time: 审核时间。
         :type approval_time: datetime
-        :param approver: 审核人
+        :param approver: 审核人。
         :type approver: str
-        :param email: 审核人邮箱
+        :param email: 审核人邮箱。
         :type email: str
-        :param msg: 审核信息
+        :param msg: 审核信息。
         :type msg: str
-        :param directory_path: 目录树
+        :param directory_path: 目录树。
         :type directory_path: str
         """
         
@@ -192,10 +192,10 @@ class ApprovalVO:
     def id(self):
         """Gets the id of this ApprovalVO.
 
-        ID
+        审批单ID。
 
         :return: The id of this ApprovalVO.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -203,10 +203,10 @@ class ApprovalVO:
     def id(self, id):
         """Sets the id of this ApprovalVO.
 
-        ID
+        审批单ID。
 
         :param id: The id of this ApprovalVO.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -214,7 +214,7 @@ class ApprovalVO:
     def tenant_id(self):
         """Gets the tenant_id of this ApprovalVO.
 
-        tenant id
+        项目ID。
 
         :return: The tenant_id of this ApprovalVO.
         :rtype: str
@@ -225,7 +225,7 @@ class ApprovalVO:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this ApprovalVO.
 
-        tenant id
+        项目ID。
 
         :param tenant_id: The tenant_id of this ApprovalVO.
         :type tenant_id: str
@@ -236,7 +236,7 @@ class ApprovalVO:
     def name_ch(self):
         """Gets the name_ch of this ApprovalVO.
 
-        业务中文名
+        业务中文名。
 
         :return: The name_ch of this ApprovalVO.
         :rtype: str
@@ -247,7 +247,7 @@ class ApprovalVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this ApprovalVO.
 
-        业务中文名
+        业务中文名。
 
         :param name_ch: The name_ch of this ApprovalVO.
         :type name_ch: str
@@ -258,7 +258,7 @@ class ApprovalVO:
     def name_en(self):
         """Gets the name_en of this ApprovalVO.
 
-        业务英文名
+        业务英文名。
 
         :return: The name_en of this ApprovalVO.
         :rtype: str
@@ -269,7 +269,7 @@ class ApprovalVO:
     def name_en(self, name_en):
         """Sets the name_en of this ApprovalVO.
 
-        业务英文名
+        业务英文名。
 
         :param name_en: The name_en of this ApprovalVO.
         :type name_en: str
@@ -280,10 +280,10 @@ class ApprovalVO:
     def biz_id(self):
         """Gets the biz_id of this ApprovalVO.
 
-        业务ID
+        业务ID。
 
         :return: The biz_id of this ApprovalVO.
-        :rtype: int
+        :rtype: str
         """
         return self._biz_id
 
@@ -291,10 +291,10 @@ class ApprovalVO:
     def biz_id(self, biz_id):
         """Sets the biz_id of this ApprovalVO.
 
-        业务ID
+        业务ID。
 
         :param biz_id: The biz_id of this ApprovalVO.
-        :type biz_id: int
+        :type biz_id: str
         """
         self._biz_id = biz_id
 
@@ -320,7 +320,7 @@ class ApprovalVO:
     def biz_info(self):
         """Gets the biz_info of this ApprovalVO.
 
-        业务详情
+        业务详情。
 
         :return: The biz_info of this ApprovalVO.
         :rtype: str
@@ -331,7 +331,7 @@ class ApprovalVO:
     def biz_info(self, biz_info):
         """Sets the biz_info of this ApprovalVO.
 
-        业务详情
+        业务详情。
 
         :param biz_info: The biz_info of this ApprovalVO.
         :type biz_info: str
@@ -342,7 +342,7 @@ class ApprovalVO:
     def biz_info_obj(self):
         """Gets the biz_info_obj of this ApprovalVO.
 
-        业务详情
+        业务详情。
 
         :return: The biz_info_obj of this ApprovalVO.
         :rtype: object
@@ -353,7 +353,7 @@ class ApprovalVO:
     def biz_info_obj(self, biz_info_obj):
         """Sets the biz_info_obj of this ApprovalVO.
 
-        业务详情
+        业务详情。
 
         :param biz_info_obj: The biz_info_obj of this ApprovalVO.
         :type biz_info_obj: object
@@ -364,7 +364,7 @@ class ApprovalVO:
     def biz_version(self):
         """Gets the biz_version of this ApprovalVO.
 
-        业务版本
+        业务版本。
 
         :return: The biz_version of this ApprovalVO.
         :rtype: int
@@ -375,7 +375,7 @@ class ApprovalVO:
     def biz_version(self, biz_version):
         """Sets the biz_version of this ApprovalVO.
 
-        业务版本
+        业务版本。
 
         :param biz_version: The biz_version of this ApprovalVO.
         :type biz_version: int
@@ -440,7 +440,7 @@ class ApprovalVO:
     def submit_time(self):
         """Gets the submit_time of this ApprovalVO.
 
-        提交时间
+        提交时间。
 
         :return: The submit_time of this ApprovalVO.
         :rtype: datetime
@@ -451,7 +451,7 @@ class ApprovalVO:
     def submit_time(self, submit_time):
         """Sets the submit_time of this ApprovalVO.
 
-        提交时间
+        提交时间。
 
         :param submit_time: The submit_time of this ApprovalVO.
         :type submit_time: datetime
@@ -462,7 +462,7 @@ class ApprovalVO:
     def create_by(self):
         """Gets the create_by of this ApprovalVO.
 
-        创建者
+        创建者。
 
         :return: The create_by of this ApprovalVO.
         :rtype: str
@@ -473,7 +473,7 @@ class ApprovalVO:
     def create_by(self, create_by):
         """Sets the create_by of this ApprovalVO.
 
-        创建者
+        创建者。
 
         :param create_by: The create_by of this ApprovalVO.
         :type create_by: str
@@ -484,7 +484,7 @@ class ApprovalVO:
     def l1(self):
         """Gets the l1 of this ApprovalVO.
 
-        主题域分组
+        主题域分组。
 
         :return: The l1 of this ApprovalVO.
         :rtype: str
@@ -495,7 +495,7 @@ class ApprovalVO:
     def l1(self, l1):
         """Sets the l1 of this ApprovalVO.
 
-        主题域分组
+        主题域分组。
 
         :param l1: The l1 of this ApprovalVO.
         :type l1: str
@@ -506,7 +506,7 @@ class ApprovalVO:
     def l2(self):
         """Gets the l2 of this ApprovalVO.
 
-        主题域
+        主题域。
 
         :return: The l2 of this ApprovalVO.
         :rtype: str
@@ -517,7 +517,7 @@ class ApprovalVO:
     def l2(self, l2):
         """Sets the l2 of this ApprovalVO.
 
-        主题域
+        主题域。
 
         :param l2: The l2 of this ApprovalVO.
         :type l2: str
@@ -528,7 +528,7 @@ class ApprovalVO:
     def l3(self):
         """Gets the l3 of this ApprovalVO.
 
-        业务对象
+        业务对象。
 
         :return: The l3 of this ApprovalVO.
         :rtype: str
@@ -539,7 +539,7 @@ class ApprovalVO:
     def l3(self, l3):
         """Sets the l3 of this ApprovalVO.
 
-        业务对象
+        业务对象。
 
         :param l3: The l3 of this ApprovalVO.
         :type l3: str
@@ -550,7 +550,7 @@ class ApprovalVO:
     def approval_time(self):
         """Gets the approval_time of this ApprovalVO.
 
-        审核时间
+        审核时间。
 
         :return: The approval_time of this ApprovalVO.
         :rtype: datetime
@@ -561,7 +561,7 @@ class ApprovalVO:
     def approval_time(self, approval_time):
         """Sets the approval_time of this ApprovalVO.
 
-        审核时间
+        审核时间。
 
         :param approval_time: The approval_time of this ApprovalVO.
         :type approval_time: datetime
@@ -572,7 +572,7 @@ class ApprovalVO:
     def approver(self):
         """Gets the approver of this ApprovalVO.
 
-        审核人
+        审核人。
 
         :return: The approver of this ApprovalVO.
         :rtype: str
@@ -583,7 +583,7 @@ class ApprovalVO:
     def approver(self, approver):
         """Sets the approver of this ApprovalVO.
 
-        审核人
+        审核人。
 
         :param approver: The approver of this ApprovalVO.
         :type approver: str
@@ -594,7 +594,7 @@ class ApprovalVO:
     def email(self):
         """Gets the email of this ApprovalVO.
 
-        审核人邮箱
+        审核人邮箱。
 
         :return: The email of this ApprovalVO.
         :rtype: str
@@ -605,7 +605,7 @@ class ApprovalVO:
     def email(self, email):
         """Sets the email of this ApprovalVO.
 
-        审核人邮箱
+        审核人邮箱。
 
         :param email: The email of this ApprovalVO.
         :type email: str
@@ -616,7 +616,7 @@ class ApprovalVO:
     def msg(self):
         """Gets the msg of this ApprovalVO.
 
-        审核信息
+        审核信息。
 
         :return: The msg of this ApprovalVO.
         :rtype: str
@@ -627,7 +627,7 @@ class ApprovalVO:
     def msg(self, msg):
         """Sets the msg of this ApprovalVO.
 
-        审核信息
+        审核信息。
 
         :param msg: The msg of this ApprovalVO.
         :type msg: str
@@ -638,7 +638,7 @@ class ApprovalVO:
     def directory_path(self):
         """Gets the directory_path of this ApprovalVO.
 
-        目录树
+        目录树。
 
         :return: The directory_path of this ApprovalVO.
         :rtype: str
@@ -649,7 +649,7 @@ class ApprovalVO:
     def directory_path(self, directory_path):
         """Sets the directory_path of this ApprovalVO.
 
-        目录树
+        目录树。
 
         :param directory_path: The directory_path of this ApprovalVO.
         :type directory_path: str

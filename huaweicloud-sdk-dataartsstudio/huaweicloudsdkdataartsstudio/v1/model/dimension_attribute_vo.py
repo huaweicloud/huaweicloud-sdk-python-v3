@@ -73,51 +73,51 @@ class DimensionAttributeVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码。
         :type id: int
-        :param dimension_id: 维度id
+        :param dimension_id: 维度ID。
         :type dimension_id: int
-        :param code_table_field_id: 码表属性id
+        :param code_table_field_id: 码表属性ID。
         :type code_table_field_id: int
-        :param name_en: 字段名
+        :param name_en: 字段名。
         :type name_en: str
-        :param name_ch: 业务属性
+        :param name_ch: 业务属性。
         :type name_ch: str
-        :param description: 
+        :param description: 描述。
         :type description: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param data_type: 字段类型
+        :param data_type: 字段类型。
         :type data_type: str
         :param domain_type: 
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
-        :param data_type_extend: 数据类型扩展字段
+        :param data_type_extend: 数据类型扩展字段。
         :type data_type_extend: str
-        :param is_primary_key: 是否主键
+        :param is_primary_key: 是否主键。
         :type is_primary_key: bool
-        :param is_biz_primary: 是否业务主键
+        :param is_biz_primary: 是否业务主键。
         :type is_biz_primary: bool
-        :param is_partition_key: 是否分区
+        :param is_partition_key: 是否分区。
         :type is_partition_key: bool
-        :param ordinal: 序号
+        :param ordinal: 序号。
         :type ordinal: int
-        :param not_null: 是否不为空
+        :param not_null: 是否不为空。
         :type not_null: bool
-        :param stand_row_id: 关联的数据标准的id
+        :param stand_row_id: 关联的数据标准的ID。
         :type stand_row_id: int
-        :param stand_row_name: 
+        :param stand_row_name: 关联的数据标准名称。
         :type stand_row_name: str
-        :param quality_infos: 质量信息
+        :param quality_infos: 质量信息。
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param alias: 别名
         :type alias: str
-        :param self_defined_fields: 自定义项
+        :param self_defined_fields: 自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         
@@ -194,7 +194,7 @@ class DimensionAttributeVO:
     def id(self):
         """Gets the id of this DimensionAttributeVO.
 
-        编码
+        编码。
 
         :return: The id of this DimensionAttributeVO.
         :rtype: int
@@ -205,7 +205,7 @@ class DimensionAttributeVO:
     def id(self, id):
         """Sets the id of this DimensionAttributeVO.
 
-        编码
+        编码。
 
         :param id: The id of this DimensionAttributeVO.
         :type id: int
@@ -216,7 +216,7 @@ class DimensionAttributeVO:
     def dimension_id(self):
         """Gets the dimension_id of this DimensionAttributeVO.
 
-        维度id
+        维度ID。
 
         :return: The dimension_id of this DimensionAttributeVO.
         :rtype: int
@@ -227,7 +227,7 @@ class DimensionAttributeVO:
     def dimension_id(self, dimension_id):
         """Sets the dimension_id of this DimensionAttributeVO.
 
-        维度id
+        维度ID。
 
         :param dimension_id: The dimension_id of this DimensionAttributeVO.
         :type dimension_id: int
@@ -238,7 +238,7 @@ class DimensionAttributeVO:
     def code_table_field_id(self):
         """Gets the code_table_field_id of this DimensionAttributeVO.
 
-        码表属性id
+        码表属性ID。
 
         :return: The code_table_field_id of this DimensionAttributeVO.
         :rtype: int
@@ -249,7 +249,7 @@ class DimensionAttributeVO:
     def code_table_field_id(self, code_table_field_id):
         """Sets the code_table_field_id of this DimensionAttributeVO.
 
-        码表属性id
+        码表属性ID。
 
         :param code_table_field_id: The code_table_field_id of this DimensionAttributeVO.
         :type code_table_field_id: int
@@ -260,7 +260,7 @@ class DimensionAttributeVO:
     def name_en(self):
         """Gets the name_en of this DimensionAttributeVO.
 
-        字段名
+        字段名。
 
         :return: The name_en of this DimensionAttributeVO.
         :rtype: str
@@ -271,7 +271,7 @@ class DimensionAttributeVO:
     def name_en(self, name_en):
         """Sets the name_en of this DimensionAttributeVO.
 
-        字段名
+        字段名。
 
         :param name_en: The name_en of this DimensionAttributeVO.
         :type name_en: str
@@ -282,7 +282,7 @@ class DimensionAttributeVO:
     def name_ch(self):
         """Gets the name_ch of this DimensionAttributeVO.
 
-        业务属性
+        业务属性。
 
         :return: The name_ch of this DimensionAttributeVO.
         :rtype: str
@@ -293,7 +293,7 @@ class DimensionAttributeVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this DimensionAttributeVO.
 
-        业务属性
+        业务属性。
 
         :param name_ch: The name_ch of this DimensionAttributeVO.
         :type name_ch: str
@@ -304,6 +304,8 @@ class DimensionAttributeVO:
     def description(self):
         """Gets the description of this DimensionAttributeVO.
 
+        描述。
+
         :return: The description of this DimensionAttributeVO.
         :rtype: str
         """
@@ -312,6 +314,8 @@ class DimensionAttributeVO:
     @description.setter
     def description(self, description):
         """Sets the description of this DimensionAttributeVO.
+
+        描述。
 
         :param description: The description of this DimensionAttributeVO.
         :type description: str
@@ -322,7 +326,7 @@ class DimensionAttributeVO:
     def create_by(self):
         """Gets the create_by of this DimensionAttributeVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this DimensionAttributeVO.
         :rtype: str
@@ -333,7 +337,7 @@ class DimensionAttributeVO:
     def create_by(self, create_by):
         """Sets the create_by of this DimensionAttributeVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this DimensionAttributeVO.
         :type create_by: str
@@ -344,7 +348,7 @@ class DimensionAttributeVO:
     def data_type(self):
         """Gets the data_type of this DimensionAttributeVO.
 
-        字段类型
+        字段类型。
 
         :return: The data_type of this DimensionAttributeVO.
         :rtype: str
@@ -355,7 +359,7 @@ class DimensionAttributeVO:
     def data_type(self, data_type):
         """Sets the data_type of this DimensionAttributeVO.
 
-        字段类型
+        字段类型。
 
         :param data_type: The data_type of this DimensionAttributeVO.
         :type data_type: str
@@ -384,7 +388,7 @@ class DimensionAttributeVO:
     def data_type_extend(self):
         """Gets the data_type_extend of this DimensionAttributeVO.
 
-        数据类型扩展字段
+        数据类型扩展字段。
 
         :return: The data_type_extend of this DimensionAttributeVO.
         :rtype: str
@@ -395,7 +399,7 @@ class DimensionAttributeVO:
     def data_type_extend(self, data_type_extend):
         """Sets the data_type_extend of this DimensionAttributeVO.
 
-        数据类型扩展字段
+        数据类型扩展字段。
 
         :param data_type_extend: The data_type_extend of this DimensionAttributeVO.
         :type data_type_extend: str
@@ -406,7 +410,7 @@ class DimensionAttributeVO:
     def is_primary_key(self):
         """Gets the is_primary_key of this DimensionAttributeVO.
 
-        是否主键
+        是否主键。
 
         :return: The is_primary_key of this DimensionAttributeVO.
         :rtype: bool
@@ -417,7 +421,7 @@ class DimensionAttributeVO:
     def is_primary_key(self, is_primary_key):
         """Sets the is_primary_key of this DimensionAttributeVO.
 
-        是否主键
+        是否主键。
 
         :param is_primary_key: The is_primary_key of this DimensionAttributeVO.
         :type is_primary_key: bool
@@ -428,7 +432,7 @@ class DimensionAttributeVO:
     def is_biz_primary(self):
         """Gets the is_biz_primary of this DimensionAttributeVO.
 
-        是否业务主键
+        是否业务主键。
 
         :return: The is_biz_primary of this DimensionAttributeVO.
         :rtype: bool
@@ -439,7 +443,7 @@ class DimensionAttributeVO:
     def is_biz_primary(self, is_biz_primary):
         """Sets the is_biz_primary of this DimensionAttributeVO.
 
-        是否业务主键
+        是否业务主键。
 
         :param is_biz_primary: The is_biz_primary of this DimensionAttributeVO.
         :type is_biz_primary: bool
@@ -450,7 +454,7 @@ class DimensionAttributeVO:
     def is_partition_key(self):
         """Gets the is_partition_key of this DimensionAttributeVO.
 
-        是否分区
+        是否分区。
 
         :return: The is_partition_key of this DimensionAttributeVO.
         :rtype: bool
@@ -461,7 +465,7 @@ class DimensionAttributeVO:
     def is_partition_key(self, is_partition_key):
         """Sets the is_partition_key of this DimensionAttributeVO.
 
-        是否分区
+        是否分区。
 
         :param is_partition_key: The is_partition_key of this DimensionAttributeVO.
         :type is_partition_key: bool
@@ -472,7 +476,7 @@ class DimensionAttributeVO:
     def ordinal(self):
         """Gets the ordinal of this DimensionAttributeVO.
 
-        序号
+        序号。
 
         :return: The ordinal of this DimensionAttributeVO.
         :rtype: int
@@ -483,7 +487,7 @@ class DimensionAttributeVO:
     def ordinal(self, ordinal):
         """Sets the ordinal of this DimensionAttributeVO.
 
-        序号
+        序号。
 
         :param ordinal: The ordinal of this DimensionAttributeVO.
         :type ordinal: int
@@ -494,7 +498,7 @@ class DimensionAttributeVO:
     def not_null(self):
         """Gets the not_null of this DimensionAttributeVO.
 
-        是否不为空
+        是否不为空。
 
         :return: The not_null of this DimensionAttributeVO.
         :rtype: bool
@@ -505,7 +509,7 @@ class DimensionAttributeVO:
     def not_null(self, not_null):
         """Sets the not_null of this DimensionAttributeVO.
 
-        是否不为空
+        是否不为空。
 
         :param not_null: The not_null of this DimensionAttributeVO.
         :type not_null: bool
@@ -516,7 +520,7 @@ class DimensionAttributeVO:
     def stand_row_id(self):
         """Gets the stand_row_id of this DimensionAttributeVO.
 
-        关联的数据标准的id
+        关联的数据标准的ID。
 
         :return: The stand_row_id of this DimensionAttributeVO.
         :rtype: int
@@ -527,7 +531,7 @@ class DimensionAttributeVO:
     def stand_row_id(self, stand_row_id):
         """Sets the stand_row_id of this DimensionAttributeVO.
 
-        关联的数据标准的id
+        关联的数据标准的ID。
 
         :param stand_row_id: The stand_row_id of this DimensionAttributeVO.
         :type stand_row_id: int
@@ -538,6 +542,8 @@ class DimensionAttributeVO:
     def stand_row_name(self):
         """Gets the stand_row_name of this DimensionAttributeVO.
 
+        关联的数据标准名称。
+
         :return: The stand_row_name of this DimensionAttributeVO.
         :rtype: str
         """
@@ -546,6 +552,8 @@ class DimensionAttributeVO:
     @stand_row_name.setter
     def stand_row_name(self, stand_row_name):
         """Sets the stand_row_name of this DimensionAttributeVO.
+
+        关联的数据标准名称。
 
         :param stand_row_name: The stand_row_name of this DimensionAttributeVO.
         :type stand_row_name: str
@@ -556,7 +564,7 @@ class DimensionAttributeVO:
     def quality_infos(self):
         """Gets the quality_infos of this DimensionAttributeVO.
 
-        质量信息
+        质量信息。
 
         :return: The quality_infos of this DimensionAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
@@ -567,7 +575,7 @@ class DimensionAttributeVO:
     def quality_infos(self, quality_infos):
         """Sets the quality_infos of this DimensionAttributeVO.
 
-        质量信息
+        质量信息。
 
         :param quality_infos: The quality_infos of this DimensionAttributeVO.
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
@@ -596,7 +604,7 @@ class DimensionAttributeVO:
     def create_time(self):
         """Gets the create_time of this DimensionAttributeVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this DimensionAttributeVO.
         :rtype: datetime
@@ -607,7 +615,7 @@ class DimensionAttributeVO:
     def create_time(self, create_time):
         """Sets the create_time of this DimensionAttributeVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this DimensionAttributeVO.
         :type create_time: datetime
@@ -618,7 +626,7 @@ class DimensionAttributeVO:
     def update_time(self):
         """Gets the update_time of this DimensionAttributeVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this DimensionAttributeVO.
         :rtype: datetime
@@ -629,7 +637,7 @@ class DimensionAttributeVO:
     def update_time(self, update_time):
         """Sets the update_time of this DimensionAttributeVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this DimensionAttributeVO.
         :type update_time: datetime
@@ -662,7 +670,7 @@ class DimensionAttributeVO:
     def self_defined_fields(self):
         """Gets the self_defined_fields of this DimensionAttributeVO.
 
-        自定义项
+        自定义项。
 
         :return: The self_defined_fields of this DimensionAttributeVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
@@ -673,7 +681,7 @@ class DimensionAttributeVO:
     def self_defined_fields(self, self_defined_fields):
         """Sets the self_defined_fields of this DimensionAttributeVO.
 
-        自定义项
+        自定义项。
 
         :param self_defined_fields: The self_defined_fields of this DimensionAttributeVO.
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]

@@ -21,7 +21,8 @@ class CompareTaskParams:
         'type': 'str',
         'start_time': 'str',
         'option': 'dict(str, str)',
-        'db_object': 'dict(str, DatabaseObject)'
+        'db_object': 'dict(str, DatabaseObject)',
+        'data_process_info': 'list[DataProcessInfo]'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class CompareTaskParams:
         'type': 'type',
         'start_time': 'start_time',
         'option': 'option',
-        'db_object': 'db_object'
+        'db_object': 'db_object',
+        'data_process_info': 'data_process_info'
     }
 
-    def __init__(self, compare_task_id=None, type=None, start_time=None, option=None, db_object=None):
+    def __init__(self, compare_task_id=None, type=None, start_time=None, option=None, db_object=None, data_process_info=None):
         """CompareTaskParams
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CompareTaskParams:
         :type option: dict(str, str)
         :param db_object: 对比选择对象。
         :type db_object: dict(str, DatabaseObject)
+        :param data_process_info: 更新数据加工规则请求体
+        :type data_process_info: list[:class:`huaweicloudsdkdrs.v5.DataProcessInfo`]
         """
         
         
@@ -56,6 +60,7 @@ class CompareTaskParams:
         self._start_time = None
         self._option = None
         self._db_object = None
+        self._data_process_info = None
         self.discriminator = None
 
         if compare_task_id is not None:
@@ -68,6 +73,8 @@ class CompareTaskParams:
             self.option = option
         if db_object is not None:
             self.db_object = db_object
+        if data_process_info is not None:
+            self.data_process_info = data_process_info
 
     @property
     def compare_task_id(self):
@@ -178,6 +185,28 @@ class CompareTaskParams:
         :type db_object: dict(str, DatabaseObject)
         """
         self._db_object = db_object
+
+    @property
+    def data_process_info(self):
+        """Gets the data_process_info of this CompareTaskParams.
+
+        更新数据加工规则请求体
+
+        :return: The data_process_info of this CompareTaskParams.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.DataProcessInfo`]
+        """
+        return self._data_process_info
+
+    @data_process_info.setter
+    def data_process_info(self, data_process_info):
+        """Sets the data_process_info of this CompareTaskParams.
+
+        更新数据加工规则请求体
+
+        :param data_process_info: The data_process_info of this CompareTaskParams.
+        :type data_process_info: list[:class:`huaweicloudsdkdrs.v5.DataProcessInfo`]
+        """
+        self._data_process_info = data_process_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

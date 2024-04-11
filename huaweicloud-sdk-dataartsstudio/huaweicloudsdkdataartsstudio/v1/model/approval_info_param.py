@@ -31,9 +31,9 @@ class ApprovalInfoParam:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 审批单id列表
+        :param ids: 审批单ID列表。
         :type ids: list[int]
-        :param msg: 审批单信息
+        :param msg: 审批单信息。
         :type msg: str
         """
         
@@ -50,7 +50,7 @@ class ApprovalInfoParam:
     def ids(self):
         """Gets the ids of this ApprovalInfoParam.
 
-        审批单id列表
+        审批单ID列表。
 
         :return: The ids of this ApprovalInfoParam.
         :rtype: list[int]
@@ -61,7 +61,7 @@ class ApprovalInfoParam:
     def ids(self, ids):
         """Sets the ids of this ApprovalInfoParam.
 
-        审批单id列表
+        审批单ID列表。
 
         :param ids: The ids of this ApprovalInfoParam.
         :type ids: list[int]
@@ -72,7 +72,7 @@ class ApprovalInfoParam:
     def msg(self):
         """Gets the msg of this ApprovalInfoParam.
 
-        审批单信息
+        审批单信息。
 
         :return: The msg of this ApprovalInfoParam.
         :rtype: str
@@ -83,7 +83,7 @@ class ApprovalInfoParam:
     def msg(self, msg):
         """Sets the msg of this ApprovalInfoParam.
 
-        审批单信息
+        审批单信息。
 
         :param msg: The msg of this ApprovalInfoParam.
         :type msg: str

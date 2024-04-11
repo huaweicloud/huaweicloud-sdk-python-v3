@@ -28,7 +28,11 @@ class PhoneModel:
         'spec_code': 'str',
         'phone_capacity': 'int',
         'image_label': 'str',
-        'product_type': 'int'
+        'product_type': 'int',
+        'phone_model_version': 'int',
+        'dpi': 'int',
+        'fps': 'str',
+        'volume_mode': 'int'
     }
 
     attribute_map = {
@@ -43,10 +47,14 @@ class PhoneModel:
         'spec_code': 'spec_code',
         'phone_capacity': 'phone_capacity',
         'image_label': 'image_label',
-        'product_type': 'product_type'
+        'product_type': 'product_type',
+        'phone_model_version': 'phone_model_version',
+        'dpi': 'dpi',
+        'fps': 'fps',
+        'volume_mode': 'volume_mode'
     }
 
-    def __init__(self, server_model_name=None, phone_model_name=None, status=None, cpu=None, memory=None, disk=None, resolution=None, extend_spec=None, spec_code=None, phone_capacity=None, image_label=None, product_type=None):
+    def __init__(self, server_model_name=None, phone_model_name=None, status=None, cpu=None, memory=None, disk=None, resolution=None, extend_spec=None, spec_code=None, phone_capacity=None, image_label=None, product_type=None, phone_model_version=None, dpi=None, fps=None, volume_mode=None):
         """PhoneModel
 
         The model defined in huaweicloud sdk
@@ -71,10 +79,18 @@ class PhoneModel:
         :type spec_code: str
         :param phone_capacity: 当前云手机规格包含的云手机个数。
         :type phone_capacity: int
-        :param image_label: 镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_game
+        :param image_label: 镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_phone_1620 - cloud_game - cloud_game_1620
         :type image_label: str
         :param product_type: 产品类型。 - 0：云手机 - 1：云手游
         :type product_type: int
+        :param phone_model_version: 规格版本： - 0：规格1.0 - 1：规格2.0
+        :type phone_model_version: int
+        :param dpi: 每英寸点数。
+        :type dpi: int
+        :param fps: 渲染帧率。
+        :type fps: str
+        :param volume_mode: 手机物理磁盘是否独立。 - 0：不独立 - 1：独立
+        :type volume_mode: int
         """
         
         
@@ -91,6 +107,10 @@ class PhoneModel:
         self._phone_capacity = None
         self._image_label = None
         self._product_type = None
+        self._phone_model_version = None
+        self._dpi = None
+        self._fps = None
+        self._volume_mode = None
         self.discriminator = None
 
         if server_model_name is not None:
@@ -117,6 +137,14 @@ class PhoneModel:
             self.image_label = image_label
         if product_type is not None:
             self.product_type = product_type
+        if phone_model_version is not None:
+            self.phone_model_version = phone_model_version
+        if dpi is not None:
+            self.dpi = dpi
+        if fps is not None:
+            self.fps = fps
+        if volume_mode is not None:
+            self.volume_mode = volume_mode
 
     @property
     def server_model_name(self):
@@ -342,7 +370,7 @@ class PhoneModel:
     def image_label(self):
         """Gets the image_label of this PhoneModel.
 
-        镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_game
+        镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_phone_1620 - cloud_game - cloud_game_1620
 
         :return: The image_label of this PhoneModel.
         :rtype: str
@@ -353,7 +381,7 @@ class PhoneModel:
     def image_label(self, image_label):
         """Sets the image_label of this PhoneModel.
 
-        镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_game
+        镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_phone_1620 - cloud_game - cloud_game_1620
 
         :param image_label: The image_label of this PhoneModel.
         :type image_label: str
@@ -381,6 +409,94 @@ class PhoneModel:
         :type product_type: int
         """
         self._product_type = product_type
+
+    @property
+    def phone_model_version(self):
+        """Gets the phone_model_version of this PhoneModel.
+
+        规格版本： - 0：规格1.0 - 1：规格2.0
+
+        :return: The phone_model_version of this PhoneModel.
+        :rtype: int
+        """
+        return self._phone_model_version
+
+    @phone_model_version.setter
+    def phone_model_version(self, phone_model_version):
+        """Sets the phone_model_version of this PhoneModel.
+
+        规格版本： - 0：规格1.0 - 1：规格2.0
+
+        :param phone_model_version: The phone_model_version of this PhoneModel.
+        :type phone_model_version: int
+        """
+        self._phone_model_version = phone_model_version
+
+    @property
+    def dpi(self):
+        """Gets the dpi of this PhoneModel.
+
+        每英寸点数。
+
+        :return: The dpi of this PhoneModel.
+        :rtype: int
+        """
+        return self._dpi
+
+    @dpi.setter
+    def dpi(self, dpi):
+        """Sets the dpi of this PhoneModel.
+
+        每英寸点数。
+
+        :param dpi: The dpi of this PhoneModel.
+        :type dpi: int
+        """
+        self._dpi = dpi
+
+    @property
+    def fps(self):
+        """Gets the fps of this PhoneModel.
+
+        渲染帧率。
+
+        :return: The fps of this PhoneModel.
+        :rtype: str
+        """
+        return self._fps
+
+    @fps.setter
+    def fps(self, fps):
+        """Sets the fps of this PhoneModel.
+
+        渲染帧率。
+
+        :param fps: The fps of this PhoneModel.
+        :type fps: str
+        """
+        self._fps = fps
+
+    @property
+    def volume_mode(self):
+        """Gets the volume_mode of this PhoneModel.
+
+        手机物理磁盘是否独立。 - 0：不独立 - 1：独立
+
+        :return: The volume_mode of this PhoneModel.
+        :rtype: int
+        """
+        return self._volume_mode
+
+    @volume_mode.setter
+    def volume_mode(self, volume_mode):
+        """Sets the volume_mode of this PhoneModel.
+
+        手机物理磁盘是否独立。 - 0：不独立 - 1：独立
+
+        :param volume_mode: The volume_mode of this PhoneModel.
+        :type volume_mode: int
+        """
+        self._volume_mode = volume_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

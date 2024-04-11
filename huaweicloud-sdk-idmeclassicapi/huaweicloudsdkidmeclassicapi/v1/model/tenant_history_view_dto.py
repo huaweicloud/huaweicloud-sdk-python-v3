@@ -91,7 +91,7 @@ class TenantHistoryViewDTO:
         :type rdm_delete_flag: int
         :param rdm_extension_type: 扩展类型。
         :type rdm_extension_type: str
-        :param rdm_operation_type: 操作类型，用于存储MONGO。 - CASCADE：级联。 - CREATE：级联。 - DELETE：创建。 - LOGICALDELETE：软删除。 - UPDATE：更新。
+        :param rdm_operation_type: 操作类型。 - CREATE：创建操作。  - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。
         :type rdm_operation_type: str
         :param rdm_version: 系统版本。
         :type rdm_version: int
@@ -470,7 +470,7 @@ class TenantHistoryViewDTO:
     def rdm_operation_type(self):
         """Gets the rdm_operation_type of this TenantHistoryViewDTO.
 
-        操作类型，用于存储MONGO。 - CASCADE：级联。 - CREATE：级联。 - DELETE：创建。 - LOGICALDELETE：软删除。 - UPDATE：更新。
+        操作类型。 - CREATE：创建操作。  - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。
 
         :return: The rdm_operation_type of this TenantHistoryViewDTO.
         :rtype: str
@@ -481,7 +481,7 @@ class TenantHistoryViewDTO:
     def rdm_operation_type(self, rdm_operation_type):
         """Sets the rdm_operation_type of this TenantHistoryViewDTO.
 
-        操作类型，用于存储MONGO。 - CASCADE：级联。 - CREATE：级联。 - DELETE：创建。 - LOGICALDELETE：软删除。 - UPDATE：更新。
+        操作类型。 - CREATE：创建操作。  - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。
 
         :param rdm_operation_type: The rdm_operation_type of this TenantHistoryViewDTO.
         :type rdm_operation_type: str

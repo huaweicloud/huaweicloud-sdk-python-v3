@@ -18,7 +18,7 @@ class CommonRemoteAuth:
 
     openapi_types = {
         'remote_authentication': 'str',
-        'remote_auth_rules': 'RemoteAuthRuleVo'
+        'remote_auth_rules': 'RemoteAuthRule'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CommonRemoteAuth:
         :param remote_authentication: 是否开启远程鉴权(on：开启，off：关闭)。
         :type remote_authentication: str
         :param remote_auth_rules: 
-        :type remote_auth_rules: :class:`huaweicloudsdkcdn.v2.RemoteAuthRuleVo`
+        :type remote_auth_rules: :class:`huaweicloudsdkcdn.v2.RemoteAuthRule`
         """
         
         
@@ -73,7 +73,7 @@ class CommonRemoteAuth:
         """Gets the remote_auth_rules of this CommonRemoteAuth.
 
         :return: The remote_auth_rules of this CommonRemoteAuth.
-        :rtype: :class:`huaweicloudsdkcdn.v2.RemoteAuthRuleVo`
+        :rtype: :class:`huaweicloudsdkcdn.v2.RemoteAuthRule`
         """
         return self._remote_auth_rules
 
@@ -82,7 +82,7 @@ class CommonRemoteAuth:
         """Sets the remote_auth_rules of this CommonRemoteAuth.
 
         :param remote_auth_rules: The remote_auth_rules of this CommonRemoteAuth.
-        :type remote_auth_rules: :class:`huaweicloudsdkcdn.v2.RemoteAuthRuleVo`
+        :type remote_auth_rules: :class:`huaweicloudsdkcdn.v2.RemoteAuthRule`
         """
         self._remote_auth_rules = remote_auth_rules
 

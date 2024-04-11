@@ -39,11 +39,11 @@ class MultiViewModelVersionViewCreateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param modifier: 更新人。
+        :param modifier: 修改人。
         :type modifier: str
         :param version_id: 版本对象ID。
         :type version_id: str
-        :param work_copy_type: 关系COPY类型,默认值为全复制（BOTH），如果需要传默认值，请不要传该字段或者传BOTH，如果传null会报错。
+        :param work_copy_type: 关系的复制类型。 BOTH：复制当前M-V模型作为源端与目标端的关系。 CUSTOM：自定义复制当前M-V模型的关系。 NONE：不复制当前M-V模型的关系。 SOURCE：仅复制当前M-V模型作为源端的关系。 TARGET：仅复制当前M-V模型作为目标端的关系。
         :type work_copy_type: str
         :param custom_link_set: 关系实体名称集合，与workCopyType的值CUSTOM配合使用。
         :type custom_link_set: list[str]
@@ -78,7 +78,7 @@ class MultiViewModelVersionViewCreateDTO:
     def modifier(self):
         """Gets the modifier of this MultiViewModelVersionViewCreateDTO.
 
-        更新人。
+        修改人。
 
         :return: The modifier of this MultiViewModelVersionViewCreateDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class MultiViewModelVersionViewCreateDTO:
     def modifier(self, modifier):
         """Sets the modifier of this MultiViewModelVersionViewCreateDTO.
 
-        更新人。
+        修改人。
 
         :param modifier: The modifier of this MultiViewModelVersionViewCreateDTO.
         :type modifier: str
@@ -122,7 +122,7 @@ class MultiViewModelVersionViewCreateDTO:
     def work_copy_type(self):
         """Gets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
 
-        关系COPY类型,默认值为全复制（BOTH），如果需要传默认值，请不要传该字段或者传BOTH，如果传null会报错。
+        关系的复制类型。 BOTH：复制当前M-V模型作为源端与目标端的关系。 CUSTOM：自定义复制当前M-V模型的关系。 NONE：不复制当前M-V模型的关系。 SOURCE：仅复制当前M-V模型作为源端的关系。 TARGET：仅复制当前M-V模型作为目标端的关系。
 
         :return: The work_copy_type of this MultiViewModelVersionViewCreateDTO.
         :rtype: str
@@ -133,7 +133,7 @@ class MultiViewModelVersionViewCreateDTO:
     def work_copy_type(self, work_copy_type):
         """Sets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
 
-        关系COPY类型,默认值为全复制（BOTH），如果需要传默认值，请不要传该字段或者传BOTH，如果传null会报错。
+        关系的复制类型。 BOTH：复制当前M-V模型作为源端与目标端的关系。 CUSTOM：自定义复制当前M-V模型的关系。 NONE：不复制当前M-V模型的关系。 SOURCE：仅复制当前M-V模型作为源端的关系。 TARGET：仅复制当前M-V模型作为目标端的关系。
 
         :param work_copy_type: The work_copy_type of this MultiViewModelVersionViewCreateDTO.
         :type work_copy_type: str

@@ -18,15 +18,17 @@ class ResizeFlavorObject:
 
     openapi_types = {
         'spec_code': 'str',
-        'is_auto_pay': 'bool'
+        'is_auto_pay': 'bool',
+        'is_delay': 'bool'
     }
 
     attribute_map = {
         'spec_code': 'spec_code',
-        'is_auto_pay': 'is_auto_pay'
+        'is_auto_pay': 'is_auto_pay',
+        'is_delay': 'is_delay'
     }
 
-    def __init__(self, spec_code=None, is_auto_pay=None):
+    def __init__(self, spec_code=None, is_auto_pay=None, is_delay=None):
         """ResizeFlavorObject
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class ResizeFlavorObject:
         :type spec_code: str
         :param is_auto_pay: 变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
         :type is_auto_pay: bool
+        :param is_delay: 是否定时变更。 - true，为定时在运维时间窗做变更。 - false，为立即变更，默认该方式。
+        :type is_delay: bool
         """
         
         
 
         self._spec_code = None
         self._is_auto_pay = None
+        self._is_delay = None
         self.discriminator = None
 
         self.spec_code = spec_code
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
+        if is_delay is not None:
+            self.is_delay = is_delay
 
     @property
     def spec_code(self):
@@ -90,6 +97,28 @@ class ResizeFlavorObject:
         :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
+
+    @property
+    def is_delay(self):
+        """Gets the is_delay of this ResizeFlavorObject.
+
+        是否定时变更。 - true，为定时在运维时间窗做变更。 - false，为立即变更，默认该方式。
+
+        :return: The is_delay of this ResizeFlavorObject.
+        :rtype: bool
+        """
+        return self._is_delay
+
+    @is_delay.setter
+    def is_delay(self, is_delay):
+        """Sets the is_delay of this ResizeFlavorObject.
+
+        是否定时变更。 - true，为定时在运维时间窗做变更。 - false，为立即变更，默认该方式。
+
+        :param is_delay: The is_delay of this ResizeFlavorObject.
+        :type is_delay: bool
+        """
+        self._is_delay = is_delay
 
     def to_dict(self):
         """Returns the model properties as a dict"""

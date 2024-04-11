@@ -59,37 +59,37 @@ class QualityInfoVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码ID。
         :type id: int
-        :param table_id: 表id
+        :param table_id: 表ID。
         :type table_id: int
-        :param attr_id: 属性id
+        :param attr_id: 属性ID。
         :type attr_id: int
         :param biz_type: 
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param data_quality_id: 质量id
+        :param data_quality_id: 质量ID。
         :type data_quality_id: int
-        :param show_control: 是否要显示  正则表达式
+        :param show_control: 是否要显示正则表达式。
         :type show_control: int
-        :param data_quality_name: 质量名称
+        :param data_quality_name: 质量名称。
         :type data_quality_name: str
-        :param alert_conf: 告警配置
+        :param alert_conf: 告警配置。
         :type alert_conf: str
-        :param expression: 正则相关校验规则中正则配置
+        :param expression: 正则相关校验规则中正则配置。
         :type expression: str
-        :param extend_info: 扩展信息
+        :param extend_info: 扩展信息。
         :type extend_info: str
-        :param from_standard: 是否来源于数据标准质量配置
+        :param from_standard: 是否来源于数据标准质量配置。
         :type from_standard: bool
-        :param result_description: 结果说明
+        :param result_description: 结果说明。
         :type result_description: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         """
         
@@ -149,7 +149,7 @@ class QualityInfoVO:
     def id(self):
         """Gets the id of this QualityInfoVO.
 
-        编码
+        编码ID。
 
         :return: The id of this QualityInfoVO.
         :rtype: int
@@ -160,7 +160,7 @@ class QualityInfoVO:
     def id(self, id):
         """Sets the id of this QualityInfoVO.
 
-        编码
+        编码ID。
 
         :param id: The id of this QualityInfoVO.
         :type id: int
@@ -171,7 +171,7 @@ class QualityInfoVO:
     def table_id(self):
         """Gets the table_id of this QualityInfoVO.
 
-        表id
+        表ID。
 
         :return: The table_id of this QualityInfoVO.
         :rtype: int
@@ -182,7 +182,7 @@ class QualityInfoVO:
     def table_id(self, table_id):
         """Sets the table_id of this QualityInfoVO.
 
-        表id
+        表ID。
 
         :param table_id: The table_id of this QualityInfoVO.
         :type table_id: int
@@ -193,7 +193,7 @@ class QualityInfoVO:
     def attr_id(self):
         """Gets the attr_id of this QualityInfoVO.
 
-        属性id
+        属性ID。
 
         :return: The attr_id of this QualityInfoVO.
         :rtype: int
@@ -204,7 +204,7 @@ class QualityInfoVO:
     def attr_id(self, attr_id):
         """Sets the attr_id of this QualityInfoVO.
 
-        属性id
+        属性ID。
 
         :param attr_id: The attr_id of this QualityInfoVO.
         :type attr_id: int
@@ -233,7 +233,7 @@ class QualityInfoVO:
     def data_quality_id(self):
         """Gets the data_quality_id of this QualityInfoVO.
 
-        质量id
+        质量ID。
 
         :return: The data_quality_id of this QualityInfoVO.
         :rtype: int
@@ -244,7 +244,7 @@ class QualityInfoVO:
     def data_quality_id(self, data_quality_id):
         """Sets the data_quality_id of this QualityInfoVO.
 
-        质量id
+        质量ID。
 
         :param data_quality_id: The data_quality_id of this QualityInfoVO.
         :type data_quality_id: int
@@ -255,7 +255,7 @@ class QualityInfoVO:
     def show_control(self):
         """Gets the show_control of this QualityInfoVO.
 
-        是否要显示  正则表达式
+        是否要显示正则表达式。
 
         :return: The show_control of this QualityInfoVO.
         :rtype: int
@@ -266,7 +266,7 @@ class QualityInfoVO:
     def show_control(self, show_control):
         """Sets the show_control of this QualityInfoVO.
 
-        是否要显示  正则表达式
+        是否要显示正则表达式。
 
         :param show_control: The show_control of this QualityInfoVO.
         :type show_control: int
@@ -277,7 +277,7 @@ class QualityInfoVO:
     def data_quality_name(self):
         """Gets the data_quality_name of this QualityInfoVO.
 
-        质量名称
+        质量名称。
 
         :return: The data_quality_name of this QualityInfoVO.
         :rtype: str
@@ -288,7 +288,7 @@ class QualityInfoVO:
     def data_quality_name(self, data_quality_name):
         """Sets the data_quality_name of this QualityInfoVO.
 
-        质量名称
+        质量名称。
 
         :param data_quality_name: The data_quality_name of this QualityInfoVO.
         :type data_quality_name: str
@@ -299,7 +299,7 @@ class QualityInfoVO:
     def alert_conf(self):
         """Gets the alert_conf of this QualityInfoVO.
 
-        告警配置
+        告警配置。
 
         :return: The alert_conf of this QualityInfoVO.
         :rtype: str
@@ -310,7 +310,7 @@ class QualityInfoVO:
     def alert_conf(self, alert_conf):
         """Sets the alert_conf of this QualityInfoVO.
 
-        告警配置
+        告警配置。
 
         :param alert_conf: The alert_conf of this QualityInfoVO.
         :type alert_conf: str
@@ -321,7 +321,7 @@ class QualityInfoVO:
     def expression(self):
         """Gets the expression of this QualityInfoVO.
 
-        正则相关校验规则中正则配置
+        正则相关校验规则中正则配置。
 
         :return: The expression of this QualityInfoVO.
         :rtype: str
@@ -332,7 +332,7 @@ class QualityInfoVO:
     def expression(self, expression):
         """Sets the expression of this QualityInfoVO.
 
-        正则相关校验规则中正则配置
+        正则相关校验规则中正则配置。
 
         :param expression: The expression of this QualityInfoVO.
         :type expression: str
@@ -343,7 +343,7 @@ class QualityInfoVO:
     def extend_info(self):
         """Gets the extend_info of this QualityInfoVO.
 
-        扩展信息
+        扩展信息。
 
         :return: The extend_info of this QualityInfoVO.
         :rtype: str
@@ -354,7 +354,7 @@ class QualityInfoVO:
     def extend_info(self, extend_info):
         """Sets the extend_info of this QualityInfoVO.
 
-        扩展信息
+        扩展信息。
 
         :param extend_info: The extend_info of this QualityInfoVO.
         :type extend_info: str
@@ -365,7 +365,7 @@ class QualityInfoVO:
     def from_standard(self):
         """Gets the from_standard of this QualityInfoVO.
 
-        是否来源于数据标准质量配置
+        是否来源于数据标准质量配置。
 
         :return: The from_standard of this QualityInfoVO.
         :rtype: bool
@@ -376,7 +376,7 @@ class QualityInfoVO:
     def from_standard(self, from_standard):
         """Sets the from_standard of this QualityInfoVO.
 
-        是否来源于数据标准质量配置
+        是否来源于数据标准质量配置。
 
         :param from_standard: The from_standard of this QualityInfoVO.
         :type from_standard: bool
@@ -387,7 +387,7 @@ class QualityInfoVO:
     def result_description(self):
         """Gets the result_description of this QualityInfoVO.
 
-        结果说明
+        结果说明。
 
         :return: The result_description of this QualityInfoVO.
         :rtype: str
@@ -398,7 +398,7 @@ class QualityInfoVO:
     def result_description(self, result_description):
         """Sets the result_description of this QualityInfoVO.
 
-        结果说明
+        结果说明。
 
         :param result_description: The result_description of this QualityInfoVO.
         :type result_description: str
@@ -409,7 +409,7 @@ class QualityInfoVO:
     def create_by(self):
         """Gets the create_by of this QualityInfoVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this QualityInfoVO.
         :rtype: str
@@ -420,7 +420,7 @@ class QualityInfoVO:
     def create_by(self, create_by):
         """Sets the create_by of this QualityInfoVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this QualityInfoVO.
         :type create_by: str
@@ -431,7 +431,7 @@ class QualityInfoVO:
     def update_by(self):
         """Gets the update_by of this QualityInfoVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this QualityInfoVO.
         :rtype: str
@@ -442,7 +442,7 @@ class QualityInfoVO:
     def update_by(self, update_by):
         """Sets the update_by of this QualityInfoVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this QualityInfoVO.
         :type update_by: str
@@ -453,7 +453,7 @@ class QualityInfoVO:
     def create_time(self):
         """Gets the create_time of this QualityInfoVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this QualityInfoVO.
         :rtype: datetime
@@ -464,7 +464,7 @@ class QualityInfoVO:
     def create_time(self, create_time):
         """Sets the create_time of this QualityInfoVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this QualityInfoVO.
         :type create_time: datetime
@@ -475,7 +475,7 @@ class QualityInfoVO:
     def update_time(self):
         """Gets the update_time of this QualityInfoVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this QualityInfoVO.
         :rtype: datetime
@@ -486,7 +486,7 @@ class QualityInfoVO:
     def update_time(self, update_time):
         """Sets the update_time of this QualityInfoVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this QualityInfoVO.
         :type update_time: datetime

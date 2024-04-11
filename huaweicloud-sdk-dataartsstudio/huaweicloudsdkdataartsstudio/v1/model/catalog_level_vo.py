@@ -35,13 +35,13 @@ class CatalogLevelVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编号
+        :param id: 编号。
         :type id: int
-        :param level: 层级
+        :param level: 层级。
         :type level: int
-        :param name_ch: 中文名称
+        :param name_ch: 中文名称。
         :type name_ch: str
-        :param name_en: 英文名称
+        :param name_en: 英文名称。
         :type name_en: str
         """
         
@@ -66,7 +66,7 @@ class CatalogLevelVO:
     def id(self):
         """Gets the id of this CatalogLevelVO.
 
-        编号
+        编号。
 
         :return: The id of this CatalogLevelVO.
         :rtype: int
@@ -77,7 +77,7 @@ class CatalogLevelVO:
     def id(self, id):
         """Sets the id of this CatalogLevelVO.
 
-        编号
+        编号。
 
         :param id: The id of this CatalogLevelVO.
         :type id: int
@@ -88,7 +88,7 @@ class CatalogLevelVO:
     def level(self):
         """Gets the level of this CatalogLevelVO.
 
-        层级
+        层级。
 
         :return: The level of this CatalogLevelVO.
         :rtype: int
@@ -99,7 +99,7 @@ class CatalogLevelVO:
     def level(self, level):
         """Sets the level of this CatalogLevelVO.
 
-        层级
+        层级。
 
         :param level: The level of this CatalogLevelVO.
         :type level: int
@@ -110,7 +110,7 @@ class CatalogLevelVO:
     def name_ch(self):
         """Gets the name_ch of this CatalogLevelVO.
 
-        中文名称
+        中文名称。
 
         :return: The name_ch of this CatalogLevelVO.
         :rtype: str
@@ -121,7 +121,7 @@ class CatalogLevelVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this CatalogLevelVO.
 
-        中文名称
+        中文名称。
 
         :param name_ch: The name_ch of this CatalogLevelVO.
         :type name_ch: str
@@ -132,7 +132,7 @@ class CatalogLevelVO:
     def name_en(self):
         """Gets the name_en of this CatalogLevelVO.
 
-        英文名称
+        英文名称。
 
         :return: The name_en of this CatalogLevelVO.
         :rtype: str
@@ -143,7 +143,7 @@ class CatalogLevelVO:
     def name_en(self, name_en):
         """Sets the name_en of this CatalogLevelVO.
 
-        英文名称
+        英文名称。
 
         :param name_en: The name_en of this CatalogLevelVO.
         :type name_en: str

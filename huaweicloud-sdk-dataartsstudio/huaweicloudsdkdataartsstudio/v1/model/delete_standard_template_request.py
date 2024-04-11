@@ -18,39 +18,46 @@ class DeleteStandardTemplateRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'ids': 'str'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'ids': 'ids'
     }
 
-    def __init__(self, workspace=None, ids=None):
+    def __init__(self, workspace=None, x_project_id=None, ids=None):
         """DeleteStandardTemplateRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param ids: 实体id
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param ids: 实体ID。
         :type ids: str
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self._ids = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.ids = ids
 
     @property
     def workspace(self):
         """Gets the workspace of this DeleteStandardTemplateRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this DeleteStandardTemplateRequest.
         :rtype: str
@@ -61,7 +68,7 @@ class DeleteStandardTemplateRequest:
     def workspace(self, workspace):
         """Sets the workspace of this DeleteStandardTemplateRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this DeleteStandardTemplateRequest.
         :type workspace: str
@@ -69,10 +76,32 @@ class DeleteStandardTemplateRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this DeleteStandardTemplateRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this DeleteStandardTemplateRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this DeleteStandardTemplateRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this DeleteStandardTemplateRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def ids(self):
         """Gets the ids of this DeleteStandardTemplateRequest.
 
-        实体id
+        实体ID。
 
         :return: The ids of this DeleteStandardTemplateRequest.
         :rtype: str
@@ -83,7 +112,7 @@ class DeleteStandardTemplateRequest:
     def ids(self, ids):
         """Sets the ids of this DeleteStandardTemplateRequest.
 
-        实体id
+        实体ID。
 
         :param ids: The ids of this DeleteStandardTemplateRequest.
         :type ids: str

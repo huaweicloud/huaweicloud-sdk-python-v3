@@ -33,9 +33,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return client_builder
 
     def add_tag_async(self, request):
-        """添加标签
+        """绑定标签
 
-        给模型实例数据添加标签数据。
+        调用该接口为指定模型的数据实例绑定标签。在调用该接口前请确保数据模型具有“标签管理”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -57,6 +57,75 @@ class IDMEClassicAPIAsyncClient(Client):
             "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/addTag",
             "request_type": request.__class__.__name__,
             "response_type": "AddTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_add_child_node_async(self, request):
+        """批量添加实例的子节点
+
+        调用该接口批量为指定数据实例添加子节点。在调用该接口前请确保数据模型具有“树形结构”功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchAddChildNode
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchAddChildNodeRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchAddChildNodeResponse`
+        """
+        http_info = self._batch_add_child_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_add_child_node_async_invoker(self, request):
+        http_info = self._batch_add_child_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_add_child_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/batchAddChildNode",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddChildNodeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -516,9 +585,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def batch_create_view_async(self, request):
-        """批量创建视图
+        """批量创建多维视图
 
-        通过模型版本对象ID和视图对象ID批量创建模型多视图。
+        调用该接口批量创建指定M-V模型实体的多维视图。在调用该接口前请确保数据模型具有“多维视图&amp;多维分支”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -889,6 +958,75 @@ class IDMEClassicAPIAsyncClient(Client):
             "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/batchRevise",
             "request_type": request.__class__.__name__,
             "response_type": "BatchExecuteReviseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_remove_child_node_async(self, request):
+        """批量移除实例的子节点
+
+        调用该接口批量移除指定数据实例的所有子节点。在调用该接口前请确保数据模型具有“树形结构”功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchRemoveChildNode
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.BatchRemoveChildNodeRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchRemoveChildNodeResponse`
+        """
+        http_info = self._batch_remove_child_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_remove_child_node_async_invoker(self, request):
+        http_info = self._batch_remove_child_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_remove_child_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/batchRemoveChildNode",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRemoveChildNodeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1693,9 +1831,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def collect_history_data_async(self, request):
-        """统计模型历史数据
+        """获取模型的统计信息
 
-        根据开始时间&amp;结束时间统计这段时间内各操作类型（创建、更新、软删除、硬删除）的数据量。
+        输入指定模型的统计时间区间（开始时间和结束时间），即可获取该模型的统计数据，包含创建实例、删除实例、软删除实例和更新实例的数据。在调用该接口前请确保数据模型具有“系统版本”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1786,6 +1924,75 @@ class IDMEClassicAPIAsyncClient(Client):
             "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/compareBusinessVersion",
             "request_type": request.__class__.__name__,
             "response_type": "CompareBusinessVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def compare_version_async(self, request):
+        """对比数据实例
+
+        通过此接口可以对比某个模型数据实例的不同版本的属性和关系。建议使用数据建模引擎（xDM Foundation，简称xDM-F）新增的差异对比功能，即使用instance-attrs-comparison和instance-relation-comparison接口，更多内容可在应用运行态的“数据服务管理 &gt; 全量数据服务 &gt; 系统管理API &gt; 属性对比API”中查看。在调用该接口前请确保数据模型具有“系统版本”功能。。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CompareVersion
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.CompareVersionRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CompareVersionResponse`
+        """
+        http_info = self._compare_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def compare_version_async_invoker(self, request):
+        http_info = self._compare_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _compare_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/compareVersion",
+            "request_type": request.__class__.__name__,
+            "response_type": "CompareVersionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2036,9 +2243,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def create_view_async(self, request):
-        """创建视图
+        """创建多维视图
 
-        通过模型版本对象ID和视图对象ID创建模型多视图。
+        调用该接口创建指定M-V模型实体的多维视图。在调用该接口前请确保数据模型具有“多维视图&amp;多维分支”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2518,6 +2725,75 @@ class IDMEClassicAPIAsyncClient(Client):
 
         return http_info
 
+    def delete_target_async(self, request):
+        """通过目标模型删除关系实体的数据实例
+
+        调用该接口输入源模型的数据实例ID和目标模型的英文名称，删除对应关系实体的数据实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTarget
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.DeleteTargetRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.DeleteTargetResponse`
+        """
+        http_info = self._delete_target_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_target_async_invoker(self, request):
+        http_info = self._delete_target_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_target_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/deleteTarget",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTargetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_using_post_async(self, request):
         """删除实例
 
@@ -2592,7 +2868,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def disable_data_instance_async(self, request):
         """失效模型数据实例
 
-        根据对象ID失效对应实例数据，返回失效成功数量。
+        调用该接口失效指定模型的数据实例，同时返回失效成功的实例数量。在调用该接口前请确保数据模型具有“失效管理”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2661,7 +2937,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def enable_data_instance_async(self, request):
         """生效模型数据实例
 
-        根据对象ID生效对应实例数据，返回生效成功数量。
+        调用该接口生效指定模型的数据实例，同时返回生效成功的实例数量。在调用该接口前请确保数据模型具有“失效管理”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2799,7 +3075,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def generate_business_code_async(self, request):
         """新增模型业务编码
 
-        调用接口生成模型业务编码。
+        调用该接口为指定模型的数据实例生成业务编码。在调用该接口前请确保数据模型具有“业务编码生成器”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2950,10 +3226,253 @@ class IDMEClassicAPIAsyncClient(Client):
 
         return http_info
 
+    def list_batch_query_related_objects_async(self, request):
+        """批量查询关系实体关联模型的信息
+
+        调用该接口批量查询指定关系实体所关联的源/目标模型的所有实例信息，包含具体的属性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBatchQueryRelatedObjects
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListBatchQueryRelatedObjectsRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListBatchQueryRelatedObjectsResponse`
+        """
+        http_info = self._list_batch_query_related_objects_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_batch_query_related_objects_async_invoker(self, request):
+        http_info = self._list_batch_query_related_objects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_batch_query_related_objects_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/batchQueryRelatedObjects/{pageSizePath}/{curPagePath}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBatchQueryRelatedObjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
+
+        query_params = []
+        if 'cur_page' in local_var_params:
+            query_params.append(('curPage', local_var_params['cur_page']))
+        if 'end_index' in local_var_params:
+            query_params.append(('endIndex', local_var_params['end_index']))
+        if 'max_page_size' in local_var_params:
+            query_params.append(('maxPageSize', local_var_params['max_page_size']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+        if 'start_index' in local_var_params:
+            query_params.append(('startIndex', local_var_params['start_index']))
+        if 'total_pages' in local_var_params:
+            query_params.append(('totalPages', local_var_params['total_pages']))
+        if 'total_rows' in local_var_params:
+            query_params.append(('totalRows', local_var_params['total_rows']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_get_all_parent_list_async(self, request):
+        """获取所有父节点
+
+        调用该接口获取指定数据实例的所有父节点，同时返回其列表属性。在调用该接口前请确保数据模型具有“树形结构”功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGetAllParentList
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListGetAllParentListRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListGetAllParentListResponse`
+        """
+        http_info = self._list_get_all_parent_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_get_all_parent_list_async_invoker(self, request):
+        http_info = self._list_get_all_parent_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_get_all_parent_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/getAllParentList",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGetAllParentListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_get_child_list_async(self, request):
+        """获取子节点
+
+        调用该接口获取指定数据实例的子节点，同时返回其列表属性。在调用该接口前请确保数据模型具有“树形结构”功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGetChildList
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListGetChildListRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListGetChildListResponse`
+        """
+        http_info = self._list_get_child_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_get_child_list_async_invoker(self, request):
+        http_info = self._list_get_child_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_get_child_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/getChildList/{pageSizePath}/{curPagePath}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGetChildListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
+
+        query_params = []
+        if 'cur_page' in local_var_params:
+            query_params.append(('curPage', local_var_params['cur_page']))
+        if 'end_index' in local_var_params:
+            query_params.append(('endIndex', local_var_params['end_index']))
+        if 'max_page_size' in local_var_params:
+            query_params.append(('maxPageSize', local_var_params['max_page_size']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+        if 'start_index' in local_var_params:
+            query_params.append(('startIndex', local_var_params['start_index']))
+        if 'total_pages' in local_var_params:
+            query_params.append(('totalPages', local_var_params['total_pages']))
+        if 'total_rows' in local_var_params:
+            query_params.append(('totalRows', local_var_params['total_rows']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_history_data_async(self, request):
         """分页查询模型历史版本信息
 
-        根据对象入参分页查询满足条件的系统版本详细信息
+        调用该接口输入指定模型的统计时间区间（开始时间和结束时间）后，会以数据实例的最后修改时间作为查询条件，分页查询该实例的历史版本信息。在调用该接口前请确保数据模型具有“系统版本”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3006,6 +3525,269 @@ class IDMEClassicAPIAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_query_related_objects_async(self, request):
+        """查询关系实体关联模型的信息
+
+        调用该接口查询指定关系实体所关联的源/目标模型的所有实例信息，包含具体的属性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueryRelatedObjects
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryRelatedObjectsRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryRelatedObjectsResponse`
+        """
+        http_info = self._list_query_related_objects_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_query_related_objects_async_invoker(self, request):
+        http_info = self._list_query_related_objects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_query_related_objects_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/queryRelatedObjects/{pageSizePath}/{curPagePath}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueryRelatedObjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
+
+        query_params = []
+        if 'cur_page' in local_var_params:
+            query_params.append(('curPage', local_var_params['cur_page']))
+        if 'end_index' in local_var_params:
+            query_params.append(('endIndex', local_var_params['end_index']))
+        if 'max_page_size' in local_var_params:
+            query_params.append(('maxPageSize', local_var_params['max_page_size']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+        if 'start_index' in local_var_params:
+            query_params.append(('startIndex', local_var_params['start_index']))
+        if 'total_pages' in local_var_params:
+            query_params.append(('totalPages', local_var_params['total_pages']))
+        if 'total_rows' in local_var_params:
+            query_params.append(('totalRows', local_var_params['total_rows']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_query_relationship_async(self, request):
+        """查询关系实体的数据实例
+
+        调用该接口输入数据实例的ID和对应的关系角色（源/目标模型），查询并返回对应关系实体的数据实例。
+        如果对应的关系实体存在“参考对象”类型属性，且参考的数据模型为抽象模型，返回信息仅返回对应模型的英文名称和ID。如果参考的数据模型为实体模型，返回空。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueryRelationship
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryRelationshipRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryRelationshipResponse`
+        """
+        http_info = self._list_query_relationship_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_query_relationship_async_invoker(self, request):
+        http_info = self._list_query_relationship_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_query_relationship_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/queryRelationship/{pageSizePath}/{curPagePath}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueryRelationshipResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
+
+        query_params = []
+        if 'cur_page' in local_var_params:
+            query_params.append(('curPage', local_var_params['cur_page']))
+        if 'end_index' in local_var_params:
+            query_params.append(('endIndex', local_var_params['end_index']))
+        if 'max_page_size' in local_var_params:
+            query_params.append(('maxPageSize', local_var_params['max_page_size']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+        if 'start_index' in local_var_params:
+            query_params.append(('startIndex', local_var_params['start_index']))
+        if 'total_pages' in local_var_params:
+            query_params.append(('totalPages', local_var_params['total_pages']))
+        if 'total_rows' in local_var_params:
+            query_params.append(('totalRows', local_var_params['total_rows']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_query_target_async(self, request):
+        """通过源模型实例ID查询关联的目标模型实例
+
+        调用该接口输入源模型的数据实例ID，查询并返回与该实例关联的目标模型数据实例的信息，实例信息包含对应数据实例的“列表属性”。
+        如果目标模型存在“参考对象”类型的属性，且参考的数据模型为抽象模型，返回信息仅返回对应模型的英文名称和ID。如果参考的数据模型为实体模型，返回空。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueryTarget
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryTargetRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ListQueryTargetResponse`
+        """
+        http_info = self._list_query_target_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_query_target_async_invoker(self, request):
+        http_info = self._list_query_target_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_query_target_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/queryTarget/{pageSizePath}/{curPagePath}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueryTargetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
+
+        query_params = []
+        if 'cur_page' in local_var_params:
+            query_params.append(('curPage', local_var_params['cur_page']))
+        if 'end_index' in local_var_params:
+            query_params.append(('endIndex', local_var_params['end_index']))
+        if 'max_page_size' in local_var_params:
+            query_params.append(('maxPageSize', local_var_params['max_page_size']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+        if 'start_index' in local_var_params:
+            query_params.append(('startIndex', local_var_params['start_index']))
+        if 'total_pages' in local_var_params:
+            query_params.append(('totalPages', local_var_params['total_pages']))
+        if 'total_rows' in local_var_params:
+            query_params.append(('totalRows', local_var_params['total_rows']))
 
         header_params = {}
 
@@ -3296,10 +4078,80 @@ class IDMEClassicAPIAsyncClient(Client):
 
         return http_info
 
-    def remove_tag_async(self, request):
-        """删除标签
+    def refresh_async(self, request):
+        """刷新树形节点
 
-        删除模型实例数据绑定的标签数据。
+        调用该接口刷新指定数据实例对应的节点全路径。在调用该接口前请确保数据模型具有“树形结构”功能。
+        调用该接口时，如果未指定数据实例或指定的数据实例为父节点，则刷新整颗树的所有节点全路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for Refresh
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.RefreshRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RefreshResponse`
+        """
+        http_info = self._refresh_http_info(request)
+        return self._call_api(**http_info)
+
+    def refresh_async_invoker(self, request):
+        http_info = self._refresh_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _refresh_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/refresh",
+            "request_type": request.__class__.__name__,
+            "response_type": "RefreshResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_tag_async(self, request):
+        """解绑标签
+
+        调用该接口为指定数据模型的数据实例解绑标签。在调用该接口前请确保数据模型具有“标签管理”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3734,6 +4586,144 @@ class IDMEClassicAPIAsyncClient(Client):
 
         return http_info
 
+    def show_get_parent_async(self, request):
+        """获取父节点
+
+        调用该接口获取指定数据实例的父节点，同时返回其列表属性。在调用该接口前请确保数据模型具有“树形结构”功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGetParent
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ShowGetParentRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ShowGetParentResponse`
+        """
+        http_info = self._show_get_parent_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_get_parent_async_invoker(self, request):
+        http_info = self._show_get_parent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_get_parent_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/getParent",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGetParentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_get_root_async(self, request):
+        """获取根节点
+
+        调用该接口获取指定数据实例的根节点。在调用该接口前请确保数据模型具有“树形结构”功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGetRoot
+        :type request: :class:`huaweicloudsdkidmeclassicapi.v1.ShowGetRootRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ShowGetRootResponse`
+        """
+        http_info = self._show_get_root_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_get_root_async_invoker(self, request):
+        http_info = self._show_get_root_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_get_root_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/rdm_{identifier}_app/publicservices/api/{modelName}/getRoot",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGetRootResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'identifier' in local_var_params:
+            path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_get_using_post_async(self, request):
         """查询实例
 
@@ -4015,9 +5005,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def show_tag_async(self, request):
-        """查询实例标签详细信息
+        """查询指定数据实例的标签详情
 
-        根据对象ID获取数据实例标签信息。
+        调用该接口查询指定模型的数据实例对应标签信息。在调用该接口前请确保数据模型具有“标签管理”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4153,9 +5143,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def switch_lifecycle_template_async(self, request):
-        """切换模型生命周期模板或状态
+        """切换生命周期模板
 
-        根据对象ID重新分配生命周期模板&amp;状态。
+        调用该接口切换指定模型的数据实例绑定的生命周期模板。切换生命周期模板时，需为数据实例指定生命周期的状态。在调用该接口前请确保数据模型具有“生命周期管理”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4498,9 +5488,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def update_state_async(self, request):
-        """设置模型生命周期状态
+        """设置生命周期的状态
 
-        根据对象实例ID设置指定生命周期状态。
+        调用该接口修改或切换数据实例绑定的生命周期状态。在调用该接口前请确保数据模型具有“生命周期管理”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4636,9 +5626,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def update_view_async(self, request):
-        """批量创建视图
+        """更新多维视图
 
-        通过模型版本对象ID和视图对象ID批量创建模型多视图。
+        调用该接口更新指定M-V模型实体的多维视图。在调用该接口前请确保数据模型具有“多维视图&amp;多维分支”功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

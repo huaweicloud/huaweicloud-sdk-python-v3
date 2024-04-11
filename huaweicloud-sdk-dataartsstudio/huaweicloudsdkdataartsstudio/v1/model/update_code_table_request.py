@@ -18,24 +18,28 @@ class UpdateCodeTableRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'x_project_id': 'str',
         'id': 'str',
         'body': 'CodeTableVO'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id',
         'id': 'id',
         'body': 'body'
     }
 
-    def __init__(self, workspace=None, id=None, body=None):
+    def __init__(self, workspace=None, x_project_id=None, id=None, body=None):
         """UpdateCodeTableRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param id: 实体id
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
+        :param id: 实体ID
         :type id: str
         :param body: Body of the UpdateCodeTableRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CodeTableVO`
@@ -44,11 +48,14 @@ class UpdateCodeTableRequest:
         
 
         self._workspace = None
+        self._x_project_id = None
         self._id = None
         self._body = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
         self.id = id
         if body is not None:
             self.body = body
@@ -57,7 +64,7 @@ class UpdateCodeTableRequest:
     def workspace(self):
         """Gets the workspace of this UpdateCodeTableRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this UpdateCodeTableRequest.
         :rtype: str
@@ -68,7 +75,7 @@ class UpdateCodeTableRequest:
     def workspace(self, workspace):
         """Sets the workspace of this UpdateCodeTableRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this UpdateCodeTableRequest.
         :type workspace: str
@@ -76,10 +83,32 @@ class UpdateCodeTableRequest:
         self._workspace = workspace
 
     @property
+    def x_project_id(self):
+        """Gets the x_project_id of this UpdateCodeTableRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this UpdateCodeTableRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this UpdateCodeTableRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this UpdateCodeTableRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
+
+    @property
     def id(self):
         """Gets the id of this UpdateCodeTableRequest.
 
-        实体id
+        实体ID
 
         :return: The id of this UpdateCodeTableRequest.
         :rtype: str
@@ -90,7 +119,7 @@ class UpdateCodeTableRequest:
     def id(self, id):
         """Sets the id of this UpdateCodeTableRequest.
 
-        实体id
+        实体ID
 
         :param id: The id of this UpdateCodeTableRequest.
         :type id: str

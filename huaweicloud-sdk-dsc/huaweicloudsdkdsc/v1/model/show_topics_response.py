@@ -18,22 +18,26 @@ class ShowTopicsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'default_topic_urn': 'str',
         'topic_count': 'int',
         'topics': 'list[TopicBean]'
     }
 
     attribute_map = {
+        'id': 'id',
         'default_topic_urn': 'default_topic_urn',
         'topic_count': 'topic_count',
         'topics': 'topics'
     }
 
-    def __init__(self, default_topic_urn=None, topic_count=None, topics=None):
+    def __init__(self, id=None, default_topic_urn=None, topic_count=None, topics=None):
         """ShowTopicsResponse
 
         The model defined in huaweicloud sdk
 
+        :param id: DSC告警主题ID（非消息通知服务主题ID）
+        :type id: str
         :param default_topic_urn: 默认消息通知主题的唯一资源标识符
         :type default_topic_urn: str
         :param topic_count: 已确认的消息通知主题数量
@@ -44,17 +48,42 @@ class ShowTopicsResponse(SdkResponse):
         
         super(ShowTopicsResponse, self).__init__()
 
+        self._id = None
         self._default_topic_urn = None
         self._topic_count = None
         self._topics = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if default_topic_urn is not None:
             self.default_topic_urn = default_topic_urn
         if topic_count is not None:
             self.topic_count = topic_count
         if topics is not None:
             self.topics = topics
+
+    @property
+    def id(self):
+        """Gets the id of this ShowTopicsResponse.
+
+        DSC告警主题ID（非消息通知服务主题ID）
+
+        :return: The id of this ShowTopicsResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowTopicsResponse.
+
+        DSC告警主题ID（非消息通知服务主题ID）
+
+        :param id: The id of this ShowTopicsResponse.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def default_topic_urn(self):

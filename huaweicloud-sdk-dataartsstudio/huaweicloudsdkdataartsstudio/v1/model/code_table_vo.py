@@ -55,33 +55,33 @@ class CodeTableVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: 码表ID。
         :type id: int
-        :param name_en: 表名称，英文名
+        :param name_en: 表名称，英文名。
         :type name_en: str
-        :param name_ch: 表名称，中文名
+        :param name_ch: 表名称，中文名。
         :type name_ch: str
-        :param tb_version: 表版本
+        :param tb_version: 表版本。
         :type tb_version: int
-        :param directory_id: 目录ID
+        :param directory_id: 目录ID。
         :type directory_id: int
-        :param directory_path: 目录树
+        :param directory_path: 目录树。
         :type directory_path: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
-        :param code_table_fields: 码表属性信息
+        :param code_table_fields: 码表属性信息。
         :type code_table_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
         """
         
@@ -132,7 +132,7 @@ class CodeTableVO:
     def id(self):
         """Gets the id of this CodeTableVO.
 
-        ID
+        码表ID。
 
         :return: The id of this CodeTableVO.
         :rtype: int
@@ -143,7 +143,7 @@ class CodeTableVO:
     def id(self, id):
         """Sets the id of this CodeTableVO.
 
-        ID
+        码表ID。
 
         :param id: The id of this CodeTableVO.
         :type id: int
@@ -154,7 +154,7 @@ class CodeTableVO:
     def name_en(self):
         """Gets the name_en of this CodeTableVO.
 
-        表名称，英文名
+        表名称，英文名。
 
         :return: The name_en of this CodeTableVO.
         :rtype: str
@@ -165,7 +165,7 @@ class CodeTableVO:
     def name_en(self, name_en):
         """Sets the name_en of this CodeTableVO.
 
-        表名称，英文名
+        表名称，英文名。
 
         :param name_en: The name_en of this CodeTableVO.
         :type name_en: str
@@ -176,7 +176,7 @@ class CodeTableVO:
     def name_ch(self):
         """Gets the name_ch of this CodeTableVO.
 
-        表名称，中文名
+        表名称，中文名。
 
         :return: The name_ch of this CodeTableVO.
         :rtype: str
@@ -187,7 +187,7 @@ class CodeTableVO:
     def name_ch(self, name_ch):
         """Sets the name_ch of this CodeTableVO.
 
-        表名称，中文名
+        表名称，中文名。
 
         :param name_ch: The name_ch of this CodeTableVO.
         :type name_ch: str
@@ -198,7 +198,7 @@ class CodeTableVO:
     def tb_version(self):
         """Gets the tb_version of this CodeTableVO.
 
-        表版本
+        表版本。
 
         :return: The tb_version of this CodeTableVO.
         :rtype: int
@@ -209,7 +209,7 @@ class CodeTableVO:
     def tb_version(self, tb_version):
         """Sets the tb_version of this CodeTableVO.
 
-        表版本
+        表版本。
 
         :param tb_version: The tb_version of this CodeTableVO.
         :type tb_version: int
@@ -220,7 +220,7 @@ class CodeTableVO:
     def directory_id(self):
         """Gets the directory_id of this CodeTableVO.
 
-        目录ID
+        目录ID。
 
         :return: The directory_id of this CodeTableVO.
         :rtype: int
@@ -231,7 +231,7 @@ class CodeTableVO:
     def directory_id(self, directory_id):
         """Sets the directory_id of this CodeTableVO.
 
-        目录ID
+        目录ID。
 
         :param directory_id: The directory_id of this CodeTableVO.
         :type directory_id: int
@@ -242,7 +242,7 @@ class CodeTableVO:
     def directory_path(self):
         """Gets the directory_path of this CodeTableVO.
 
-        目录树
+        目录树。
 
         :return: The directory_path of this CodeTableVO.
         :rtype: str
@@ -253,7 +253,7 @@ class CodeTableVO:
     def directory_path(self, directory_path):
         """Sets the directory_path of this CodeTableVO.
 
-        目录树
+        目录树。
 
         :param directory_path: The directory_path of this CodeTableVO.
         :type directory_path: str
@@ -264,7 +264,7 @@ class CodeTableVO:
     def description(self):
         """Gets the description of this CodeTableVO.
 
-        描述
+        描述。
 
         :return: The description of this CodeTableVO.
         :rtype: str
@@ -275,7 +275,7 @@ class CodeTableVO:
     def description(self, description):
         """Sets the description of this CodeTableVO.
 
-        描述
+        描述。
 
         :param description: The description of this CodeTableVO.
         :type description: str
@@ -286,7 +286,7 @@ class CodeTableVO:
     def create_by(self):
         """Gets the create_by of this CodeTableVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this CodeTableVO.
         :rtype: str
@@ -297,7 +297,7 @@ class CodeTableVO:
     def create_by(self, create_by):
         """Sets the create_by of this CodeTableVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this CodeTableVO.
         :type create_by: str
@@ -326,7 +326,7 @@ class CodeTableVO:
     def create_time(self):
         """Gets the create_time of this CodeTableVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this CodeTableVO.
         :rtype: datetime
@@ -337,7 +337,7 @@ class CodeTableVO:
     def create_time(self, create_time):
         """Sets the create_time of this CodeTableVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this CodeTableVO.
         :type create_time: datetime
@@ -348,7 +348,7 @@ class CodeTableVO:
     def update_time(self):
         """Gets the update_time of this CodeTableVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this CodeTableVO.
         :rtype: datetime
@@ -359,7 +359,7 @@ class CodeTableVO:
     def update_time(self, update_time):
         """Sets the update_time of this CodeTableVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this CodeTableVO.
         :type update_time: datetime
@@ -406,7 +406,7 @@ class CodeTableVO:
     def code_table_fields(self):
         """Gets the code_table_fields of this CodeTableVO.
 
-        码表属性信息
+        码表属性信息。
 
         :return: The code_table_fields of this CodeTableVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]
@@ -417,7 +417,7 @@ class CodeTableVO:
     def code_table_fields(self, code_table_fields):
         """Sets the code_table_fields of this CodeTableVO.
 
-        码表属性信息
+        码表属性信息。
 
         :param code_table_fields: The code_table_fields of this CodeTableVO.
         :type code_table_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.CodeTableFieldVO`]

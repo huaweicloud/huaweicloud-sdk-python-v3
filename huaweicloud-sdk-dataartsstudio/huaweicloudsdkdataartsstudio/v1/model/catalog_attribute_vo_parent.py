@@ -29,7 +29,7 @@ class CatalogAttributeVOParent:
 
         The model defined in huaweicloud sdk
 
-        :param id: 父节点ID
+        :param id: 父节点ID。
         :type id: str
         """
         
@@ -45,7 +45,7 @@ class CatalogAttributeVOParent:
     def id(self):
         """Gets the id of this CatalogAttributeVOParent.
 
-        父节点ID
+        父节点ID。
 
         :return: The id of this CatalogAttributeVOParent.
         :rtype: str
@@ -56,7 +56,7 @@ class CatalogAttributeVOParent:
     def id(self, id):
         """Sets the id of this CatalogAttributeVOParent.
 
-        父节点ID
+        父节点ID。
 
         :param id: The id of this CatalogAttributeVOParent.
         :type id: str

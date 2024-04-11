@@ -57,35 +57,35 @@ class TableMappingVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 编码
+        :param id: 编码。
         :type id: int
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param description: 
+        :param description: 描述。
         :type description: str
-        :param target_table_id: 目的表id
+        :param target_table_id: 目的表ID。
         :type target_table_id: int
-        :param src_model_id: 来源表所属模型id
+        :param src_model_id: 来源表在关系建模中的模型ID。
         :type src_model_id: int
-        :param src_model_name: 来源模型名称
+        :param src_model_name: 来源模型名称。
         :type src_model_name: str
-        :param view_text: 采集的视图来源，dws视图逆向使用
+        :param view_text: 采集的视图来源，dws视图逆向使用。
         :type view_text: str
-        :param target_table_name: 目的表名称
+        :param target_table_name: 目的表名称。
         :type target_table_name: str
-        :param details: 详情
+        :param details: 详情。
         :type details: list[:class:`huaweicloudsdkdataartsstudio.v1.TableMappingDetailVO`]
-        :param source_tables: 映射的表信息
+        :param source_tables: 映射的表信息。
         :type source_tables: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingSourceTableVO`]
-        :param source_fields: 映射的字段信息
+        :param source_fields: 映射的字段信息。
         :type source_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingSourceFieldVO`]
-        :param create_time: 创建时间
+        :param create_time: 创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
-        :param create_by: 创建人
+        :param create_by: 创建人。
         :type create_by: str
-        :param update_by: 更新人
+        :param update_by: 更新人。
         :type update_by: str
         """
         
@@ -142,7 +142,7 @@ class TableMappingVO:
     def id(self):
         """Gets the id of this TableMappingVO.
 
-        编码
+        编码。
 
         :return: The id of this TableMappingVO.
         :rtype: int
@@ -153,7 +153,7 @@ class TableMappingVO:
     def id(self, id):
         """Sets the id of this TableMappingVO.
 
-        编码
+        编码。
 
         :param id: The id of this TableMappingVO.
         :type id: int
@@ -164,7 +164,7 @@ class TableMappingVO:
     def name(self):
         """Gets the name of this TableMappingVO.
 
-        名称
+        名称。
 
         :return: The name of this TableMappingVO.
         :rtype: str
@@ -175,7 +175,7 @@ class TableMappingVO:
     def name(self, name):
         """Sets the name of this TableMappingVO.
 
-        名称
+        名称。
 
         :param name: The name of this TableMappingVO.
         :type name: str
@@ -186,6 +186,8 @@ class TableMappingVO:
     def description(self):
         """Gets the description of this TableMappingVO.
 
+        描述。
+
         :return: The description of this TableMappingVO.
         :rtype: str
         """
@@ -194,6 +196,8 @@ class TableMappingVO:
     @description.setter
     def description(self, description):
         """Sets the description of this TableMappingVO.
+
+        描述。
 
         :param description: The description of this TableMappingVO.
         :type description: str
@@ -204,7 +208,7 @@ class TableMappingVO:
     def target_table_id(self):
         """Gets the target_table_id of this TableMappingVO.
 
-        目的表id
+        目的表ID。
 
         :return: The target_table_id of this TableMappingVO.
         :rtype: int
@@ -215,7 +219,7 @@ class TableMappingVO:
     def target_table_id(self, target_table_id):
         """Sets the target_table_id of this TableMappingVO.
 
-        目的表id
+        目的表ID。
 
         :param target_table_id: The target_table_id of this TableMappingVO.
         :type target_table_id: int
@@ -226,7 +230,7 @@ class TableMappingVO:
     def src_model_id(self):
         """Gets the src_model_id of this TableMappingVO.
 
-        来源表所属模型id
+        来源表在关系建模中的模型ID。
 
         :return: The src_model_id of this TableMappingVO.
         :rtype: int
@@ -237,7 +241,7 @@ class TableMappingVO:
     def src_model_id(self, src_model_id):
         """Sets the src_model_id of this TableMappingVO.
 
-        来源表所属模型id
+        来源表在关系建模中的模型ID。
 
         :param src_model_id: The src_model_id of this TableMappingVO.
         :type src_model_id: int
@@ -248,7 +252,7 @@ class TableMappingVO:
     def src_model_name(self):
         """Gets the src_model_name of this TableMappingVO.
 
-        来源模型名称
+        来源模型名称。
 
         :return: The src_model_name of this TableMappingVO.
         :rtype: str
@@ -259,7 +263,7 @@ class TableMappingVO:
     def src_model_name(self, src_model_name):
         """Sets the src_model_name of this TableMappingVO.
 
-        来源模型名称
+        来源模型名称。
 
         :param src_model_name: The src_model_name of this TableMappingVO.
         :type src_model_name: str
@@ -270,7 +274,7 @@ class TableMappingVO:
     def view_text(self):
         """Gets the view_text of this TableMappingVO.
 
-        采集的视图来源，dws视图逆向使用
+        采集的视图来源，dws视图逆向使用。
 
         :return: The view_text of this TableMappingVO.
         :rtype: str
@@ -281,7 +285,7 @@ class TableMappingVO:
     def view_text(self, view_text):
         """Sets the view_text of this TableMappingVO.
 
-        采集的视图来源，dws视图逆向使用
+        采集的视图来源，dws视图逆向使用。
 
         :param view_text: The view_text of this TableMappingVO.
         :type view_text: str
@@ -292,7 +296,7 @@ class TableMappingVO:
     def target_table_name(self):
         """Gets the target_table_name of this TableMappingVO.
 
-        目的表名称
+        目的表名称。
 
         :return: The target_table_name of this TableMappingVO.
         :rtype: str
@@ -303,7 +307,7 @@ class TableMappingVO:
     def target_table_name(self, target_table_name):
         """Sets the target_table_name of this TableMappingVO.
 
-        目的表名称
+        目的表名称。
 
         :param target_table_name: The target_table_name of this TableMappingVO.
         :type target_table_name: str
@@ -314,7 +318,7 @@ class TableMappingVO:
     def details(self):
         """Gets the details of this TableMappingVO.
 
-        详情
+        详情。
 
         :return: The details of this TableMappingVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.TableMappingDetailVO`]
@@ -325,7 +329,7 @@ class TableMappingVO:
     def details(self, details):
         """Sets the details of this TableMappingVO.
 
-        详情
+        详情。
 
         :param details: The details of this TableMappingVO.
         :type details: list[:class:`huaweicloudsdkdataartsstudio.v1.TableMappingDetailVO`]
@@ -336,7 +340,7 @@ class TableMappingVO:
     def source_tables(self):
         """Gets the source_tables of this TableMappingVO.
 
-        映射的表信息
+        映射的表信息。
 
         :return: The source_tables of this TableMappingVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingSourceTableVO`]
@@ -347,7 +351,7 @@ class TableMappingVO:
     def source_tables(self, source_tables):
         """Sets the source_tables of this TableMappingVO.
 
-        映射的表信息
+        映射的表信息。
 
         :param source_tables: The source_tables of this TableMappingVO.
         :type source_tables: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingSourceTableVO`]
@@ -358,7 +362,7 @@ class TableMappingVO:
     def source_fields(self):
         """Gets the source_fields of this TableMappingVO.
 
-        映射的字段信息
+        映射的字段信息。
 
         :return: The source_fields of this TableMappingVO.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingSourceFieldVO`]
@@ -369,7 +373,7 @@ class TableMappingVO:
     def source_fields(self, source_fields):
         """Sets the source_fields of this TableMappingVO.
 
-        映射的字段信息
+        映射的字段信息。
 
         :param source_fields: The source_fields of this TableMappingVO.
         :type source_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.MappingSourceFieldVO`]
@@ -380,7 +384,7 @@ class TableMappingVO:
     def create_time(self):
         """Gets the create_time of this TableMappingVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The create_time of this TableMappingVO.
         :rtype: datetime
@@ -391,7 +395,7 @@ class TableMappingVO:
     def create_time(self, create_time):
         """Sets the create_time of this TableMappingVO.
 
-        创建时间
+        创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param create_time: The create_time of this TableMappingVO.
         :type create_time: datetime
@@ -402,7 +406,7 @@ class TableMappingVO:
     def update_time(self):
         """Gets the update_time of this TableMappingVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :return: The update_time of this TableMappingVO.
         :rtype: datetime
@@ -413,7 +417,7 @@ class TableMappingVO:
     def update_time(self, update_time):
         """Sets the update_time of this TableMappingVO.
 
-        更新时间
+        更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
         :param update_time: The update_time of this TableMappingVO.
         :type update_time: datetime
@@ -424,7 +428,7 @@ class TableMappingVO:
     def create_by(self):
         """Gets the create_by of this TableMappingVO.
 
-        创建人
+        创建人。
 
         :return: The create_by of this TableMappingVO.
         :rtype: str
@@ -435,7 +439,7 @@ class TableMappingVO:
     def create_by(self, create_by):
         """Sets the create_by of this TableMappingVO.
 
-        创建人
+        创建人。
 
         :param create_by: The create_by of this TableMappingVO.
         :type create_by: str
@@ -446,7 +450,7 @@ class TableMappingVO:
     def update_by(self):
         """Gets the update_by of this TableMappingVO.
 
-        更新人
+        更新人。
 
         :return: The update_by of this TableMappingVO.
         :rtype: str
@@ -457,7 +461,7 @@ class TableMappingVO:
     def update_by(self, update_by):
         """Sets the update_by of this TableMappingVO.
 
-        更新人
+        更新人。
 
         :param update_by: The update_by of this TableMappingVO.
         :type update_by: str

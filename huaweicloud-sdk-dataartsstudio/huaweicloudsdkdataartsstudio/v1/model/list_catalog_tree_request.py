@@ -17,34 +17,41 @@ class ListCatalogTreeRequest:
     sensitive_list = []
 
     openapi_types = {
-        'workspace': 'str'
+        'workspace': 'str',
+        'x_project_id': 'str'
     }
 
     attribute_map = {
-        'workspace': 'workspace'
+        'workspace': 'workspace',
+        'x_project_id': 'X-Project-Id'
     }
 
-    def __init__(self, workspace=None):
+    def __init__(self, workspace=None, x_project_id=None):
         """ListCatalogTreeRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: DataArts Studio工作空间ID
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
+        :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+        :type x_project_id: str
         """
         
         
 
         self._workspace = None
+        self._x_project_id = None
         self.discriminator = None
 
         self.workspace = workspace
+        if x_project_id is not None:
+            self.x_project_id = x_project_id
 
     @property
     def workspace(self):
         """Gets the workspace of this ListCatalogTreeRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListCatalogTreeRequest.
         :rtype: str
@@ -55,12 +62,34 @@ class ListCatalogTreeRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListCatalogTreeRequest.
 
-        DataArts Studio工作空间ID
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListCatalogTreeRequest.
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def x_project_id(self):
+        """Gets the x_project_id of this ListCatalogTreeRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :return: The x_project_id of this ListCatalogTreeRequest.
+        :rtype: str
+        """
+        return self._x_project_id
+
+    @x_project_id.setter
+    def x_project_id(self, x_project_id):
+        """Sets the x_project_id of this ListCatalogTreeRequest.
+
+        项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
+
+        :param x_project_id: The x_project_id of this ListCatalogTreeRequest.
+        :type x_project_id: str
+        """
+        self._x_project_id = x_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

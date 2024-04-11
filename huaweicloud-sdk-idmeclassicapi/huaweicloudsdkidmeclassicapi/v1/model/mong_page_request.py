@@ -45,9 +45,9 @@ class MongPageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param end_last_modified_time: 查询条件：最后修改时间，结束时间范围。
+        :param end_last_modified_time: 结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
         :type end_last_modified_time: str
-        :param id: 唯一标识。
+        :param id: 数据实例ID。
         :type id: str
         :param rdm_version: 版本号。
         :type rdm_version: int
@@ -55,7 +55,7 @@ class MongPageRequest:
         :type source_id: str
         :param source_rdm_version: 关系实体源端系统版本。
         :type source_rdm_version: int
-        :param start_last_modified_time: 查询条件：最后修改时间,开始时间范围。
+        :param start_last_modified_time: 开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
         :type start_last_modified_time: str
         :param target_id: 关系实体目标端ID。
         :type target_id: str
@@ -100,7 +100,7 @@ class MongPageRequest:
     def end_last_modified_time(self):
         """Gets the end_last_modified_time of this MongPageRequest.
 
-        查询条件：最后修改时间，结束时间范围。
+        结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
 
         :return: The end_last_modified_time of this MongPageRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class MongPageRequest:
     def end_last_modified_time(self, end_last_modified_time):
         """Sets the end_last_modified_time of this MongPageRequest.
 
-        查询条件：最后修改时间，结束时间范围。
+        结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
 
         :param end_last_modified_time: The end_last_modified_time of this MongPageRequest.
         :type end_last_modified_time: str
@@ -122,7 +122,7 @@ class MongPageRequest:
     def id(self):
         """Gets the id of this MongPageRequest.
 
-        唯一标识。
+        数据实例ID。
 
         :return: The id of this MongPageRequest.
         :rtype: str
@@ -133,7 +133,7 @@ class MongPageRequest:
     def id(self, id):
         """Sets the id of this MongPageRequest.
 
-        唯一标识。
+        数据实例ID。
 
         :param id: The id of this MongPageRequest.
         :type id: str
@@ -210,7 +210,7 @@ class MongPageRequest:
     def start_last_modified_time(self):
         """Gets the start_last_modified_time of this MongPageRequest.
 
-        查询条件：最后修改时间,开始时间范围。
+        开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
 
         :return: The start_last_modified_time of this MongPageRequest.
         :rtype: str
@@ -221,7 +221,7 @@ class MongPageRequest:
     def start_last_modified_time(self, start_last_modified_time):
         """Sets the start_last_modified_time of this MongPageRequest.
 
-        查询条件：最后修改时间,开始时间范围。
+        开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。
 
         :param start_last_modified_time: The start_last_modified_time of this MongPageRequest.
         :type start_last_modified_time: str
