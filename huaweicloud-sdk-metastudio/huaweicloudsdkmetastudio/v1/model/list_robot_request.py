@@ -19,26 +19,30 @@ class ListRobotRequest:
     openapi_types = {
         'x_app_user_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'room_id': 'str'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'room_id': 'room_id'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, room_id=None):
         """ListRobotRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: int
+        :param room_id: 智能交互对话房间ID。
+        :type room_id: str
         """
         
         
@@ -46,6 +50,7 @@ class ListRobotRequest:
         self._x_app_user_id = None
         self._offset = None
         self._limit = None
+        self._room_id = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -54,12 +59,14 @@ class ListRobotRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if room_id is not None:
+            self.room_id = room_id
 
     @property
     def x_app_user_id(self):
         """Gets the x_app_user_id of this ListRobotRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。不允许输入中文。
 
         :return: The x_app_user_id of this ListRobotRequest.
         :rtype: str
@@ -70,7 +77,7 @@ class ListRobotRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this ListRobotRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this ListRobotRequest.
         :type x_app_user_id: str
@@ -120,6 +127,28 @@ class ListRobotRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def room_id(self):
+        """Gets the room_id of this ListRobotRequest.
+
+        智能交互对话房间ID。
+
+        :return: The room_id of this ListRobotRequest.
+        :rtype: str
+        """
+        return self._room_id
+
+    @room_id.setter
+    def room_id(self, room_id):
+        """Sets the room_id of this ListRobotRequest.
+
+        智能交互对话房间ID。
+
+        :param room_id: The room_id of this ListRobotRequest.
+        :type room_id: str
+        """
+        self._room_id = room_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

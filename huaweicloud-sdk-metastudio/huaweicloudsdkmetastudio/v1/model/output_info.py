@@ -20,17 +20,19 @@ class OutputInfo:
         'face_addr': 'str',
         'body_addr': 'str',
         'audio_addr': 'str',
-        'session_id': 'int'
+        'session_id': 'int',
+        'output_data_version': 'str'
     }
 
     attribute_map = {
         'face_addr': 'face_addr',
         'body_addr': 'body_addr',
         'audio_addr': 'audio_addr',
-        'session_id': 'session_id'
+        'session_id': 'session_id',
+        'output_data_version': 'output_data_version'
     }
 
-    def __init__(self, face_addr=None, body_addr=None, audio_addr=None, session_id=None):
+    def __init__(self, face_addr=None, body_addr=None, audio_addr=None, session_id=None, output_data_version=None):
         """OutputInfo
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class OutputInfo:
         :type audio_addr: str
         :param session_id: 会话ID。
         :type session_id: int
+        :param output_data_version: 输出数据的格式版本，如请求中无此参数，则输出数据格式为1.0，可选值有： 1.0: 对应的输出为：         动作数据：75个骨骼旋转值         表情数据：52ARkit表情及参数 2.0: 对应的输出为：         动作数据：55个骨骼旋转值+骨骼3D坐标         表情数据：178个控制器的数据
+        :type output_data_version: str
         """
         
         
@@ -51,6 +55,7 @@ class OutputInfo:
         self._body_addr = None
         self._audio_addr = None
         self._session_id = None
+        self._output_data_version = None
         self.discriminator = None
 
         if face_addr is not None:
@@ -61,6 +66,8 @@ class OutputInfo:
             self.audio_addr = audio_addr
         if session_id is not None:
             self.session_id = session_id
+        if output_data_version is not None:
+            self.output_data_version = output_data_version
 
     @property
     def face_addr(self):
@@ -149,6 +156,28 @@ class OutputInfo:
         :type session_id: int
         """
         self._session_id = session_id
+
+    @property
+    def output_data_version(self):
+        """Gets the output_data_version of this OutputInfo.
+
+        输出数据的格式版本，如请求中无此参数，则输出数据格式为1.0，可选值有： 1.0: 对应的输出为：         动作数据：75个骨骼旋转值         表情数据：52ARkit表情及参数 2.0: 对应的输出为：         动作数据：55个骨骼旋转值+骨骼3D坐标         表情数据：178个控制器的数据
+
+        :return: The output_data_version of this OutputInfo.
+        :rtype: str
+        """
+        return self._output_data_version
+
+    @output_data_version.setter
+    def output_data_version(self, output_data_version):
+        """Sets the output_data_version of this OutputInfo.
+
+        输出数据的格式版本，如请求中无此参数，则输出数据格式为1.0，可选值有： 1.0: 对应的输出为：         动作数据：75个骨骼旋转值         表情数据：52ARkit表情及参数 2.0: 对应的输出为：         动作数据：55个骨骼旋转值+骨骼3D坐标         表情数据：178个控制器的数据
+
+        :param output_data_version: The output_data_version of this OutputInfo.
+        :type output_data_version: str
+        """
+        self._output_data_version = output_data_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

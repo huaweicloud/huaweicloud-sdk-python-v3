@@ -19,7 +19,7 @@ class CreateRobotReq:
     openapi_types = {
         'name': 'str',
         'app_type': 'int',
-        'concurrency': 'int',
+        'room_id': 'str',
         'language': 'LanguageEnum',
         'huawei_ei_cbs': 'HuaweiEiCbs',
         'iflytek_aiui_config': 'IflytekAiuiConfig',
@@ -30,7 +30,7 @@ class CreateRobotReq:
     attribute_map = {
         'name': 'name',
         'app_type': 'app_type',
-        'concurrency': 'concurrency',
+        'room_id': 'room_id',
         'language': 'language',
         'huawei_ei_cbs': 'huawei_ei_cbs',
         'iflytek_aiui_config': 'iflytek_aiui_config',
@@ -38,7 +38,7 @@ class CreateRobotReq:
         'third_party_model_config': 'third_party_model_config'
     }
 
-    def __init__(self, name=None, app_type=None, concurrency=None, language=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None):
+    def __init__(self, name=None, app_type=None, room_id=None, language=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None):
         """CreateRobotReq
 
         The model defined in huaweicloud sdk
@@ -47,8 +47,8 @@ class CreateRobotReq:
         :type name: str
         :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
         :type app_type: int
-        :param concurrency: 对话的并发数
-        :type concurrency: int
+        :param room_id: 智能交互对话房间ID。
+        :type room_id: str
         :param language: 
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param huawei_ei_cbs: 
@@ -65,7 +65,7 @@ class CreateRobotReq:
 
         self._name = None
         self._app_type = None
-        self._concurrency = None
+        self._room_id = None
         self._language = None
         self._huawei_ei_cbs = None
         self._iflytek_aiui_config = None
@@ -75,7 +75,8 @@ class CreateRobotReq:
 
         self.name = name
         self.app_type = app_type
-        self.concurrency = concurrency
+        if room_id is not None:
+            self.room_id = room_id
         if language is not None:
             self.language = language
         if huawei_ei_cbs is not None:
@@ -132,26 +133,26 @@ class CreateRobotReq:
         self._app_type = app_type
 
     @property
-    def concurrency(self):
-        """Gets the concurrency of this CreateRobotReq.
+    def room_id(self):
+        """Gets the room_id of this CreateRobotReq.
 
-        对话的并发数
+        智能交互对话房间ID。
 
-        :return: The concurrency of this CreateRobotReq.
-        :rtype: int
+        :return: The room_id of this CreateRobotReq.
+        :rtype: str
         """
-        return self._concurrency
+        return self._room_id
 
-    @concurrency.setter
-    def concurrency(self, concurrency):
-        """Sets the concurrency of this CreateRobotReq.
+    @room_id.setter
+    def room_id(self, room_id):
+        """Sets the room_id of this CreateRobotReq.
 
-        对话的并发数
+        智能交互对话房间ID。
 
-        :param concurrency: The concurrency of this CreateRobotReq.
-        :type concurrency: int
+        :param room_id: The room_id of this CreateRobotReq.
+        :type room_id: str
         """
-        self._concurrency = concurrency
+        self._room_id = room_id
 
     @property
     def language(self):

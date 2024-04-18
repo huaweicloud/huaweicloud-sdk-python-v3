@@ -31,7 +31,7 @@ class Create2dModelTrainingJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
+        :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param body: Body of the Create2dModelTrainingJobRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.Create2dModelTrainingJobReq`
@@ -52,7 +52,7 @@ class Create2dModelTrainingJobRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this Create2dModelTrainingJobRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :return: The x_app_user_id of this Create2dModelTrainingJobRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class Create2dModelTrainingJobRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this Create2dModelTrainingJobRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this Create2dModelTrainingJobRequest.
         :type x_app_user_id: str

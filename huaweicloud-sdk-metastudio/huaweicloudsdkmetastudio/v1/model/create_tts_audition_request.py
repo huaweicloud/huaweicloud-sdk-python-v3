@@ -35,7 +35,7 @@ class CreateTtsAuditionRequest:
 
         :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
         :type x_request_id: str
-        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param body: Body of the CreateTtsAuditionRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateTtsAuditionRequestBody`
@@ -81,7 +81,7 @@ class CreateTtsAuditionRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this CreateTtsAuditionRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。不允许输入中文。
 
         :return: The x_app_user_id of this CreateTtsAuditionRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class CreateTtsAuditionRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this CreateTtsAuditionRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this CreateTtsAuditionRequest.
         :type x_app_user_id: str

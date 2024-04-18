@@ -56,6 +56,7 @@ from huaweicloudsdkcse.v1.model.engine_quota_v2_quotas import EngineQuotaV2Quota
 from huaweicloudsdkcse.v1.model.engine_rbac_pwd import EngineRbacPwd
 from huaweicloudsdkcse.v1.model.engine_reference import EngineReference
 from huaweicloudsdkcse.v1.model.engine_simple_info import EngineSimpleInfo
+from huaweicloudsdkcse.v1.model.engine_spec import EngineSpec
 from huaweicloudsdkcse.v1.model.engine_update_req import EngineUpdateReq
 from huaweicloudsdkcse.v1.model.entrypoint_item import EntrypointItem
 from huaweicloudsdkcse.v1.model.flavor_brief import FlavorBrief

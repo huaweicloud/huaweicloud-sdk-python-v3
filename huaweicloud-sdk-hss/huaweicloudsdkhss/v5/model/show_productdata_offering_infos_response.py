@@ -30,7 +30,7 @@ class ShowProductdataOfferingInfosResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 商品数据列表
         :type body: list[:class:`huaweicloudsdkhss.v5.ResourceProductDataObjectInfo`]
         """
         
@@ -46,7 +46,7 @@ class ShowProductdataOfferingInfosResponse(SdkResponse):
     def body(self):
         """Gets the body of this ShowProductdataOfferingInfosResponse.
 
-        
+        商品数据列表
 
         :return: The body of this ShowProductdataOfferingInfosResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ResourceProductDataObjectInfo`]
@@ -57,7 +57,7 @@ class ShowProductdataOfferingInfosResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ShowProductdataOfferingInfosResponse.
 
-        
+        商品数据列表
 
         :param body: The body of this ShowProductdataOfferingInfosResponse.
         :type body: list[:class:`huaweicloudsdkhss.v5.ResourceProductDataObjectInfo`]

@@ -17,28 +17,35 @@ class DeleteTagRequest:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str'
+        'key': 'str',
+        'value': 'str'
     }
 
     attribute_map = {
-        'key': 'key'
+        'key': 'key',
+        'value': 'value'
     }
 
-    def __init__(self, key=None):
+    def __init__(self, key=None, value=None):
         """DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
         :param key:   键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
         :type key: str
+        :param value:   值。 最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :type value: str
         """
         
         
 
         self._key = None
+        self._value = None
         self.discriminator = None
 
         self.key = key
+        if value is not None:
+            self.value = value
 
     @property
     def key(self):
@@ -61,6 +68,28 @@ class DeleteTagRequest:
         :type key: str
         """
         self._key = key
+
+    @property
+    def value(self):
+        """Gets the value of this DeleteTagRequest.
+
+          值。 最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+
+        :return: The value of this DeleteTagRequest.
+        :rtype: str
+        """
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        """Sets the value of this DeleteTagRequest.
+
+          值。 最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+
+        :param value: The value of this DeleteTagRequest.
+        :type value: str
+        """
+        self._value = value
 
     def to_dict(self):
         """Returns the model properties as a dict"""

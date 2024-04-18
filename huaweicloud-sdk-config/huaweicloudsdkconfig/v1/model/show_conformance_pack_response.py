@@ -25,6 +25,9 @@ class ShowConformancePackResponse(SdkResponse):
         'deployment_id': 'str',
         'created_at': 'str',
         'updated_at': 'str',
+        'template_key': 'str',
+        'template_uri': 'str',
+        'agency_name': 'str',
         'status': 'str',
         'error_message': 'str',
         'vars_structure': 'list[VarsStructure]',
@@ -39,13 +42,16 @@ class ShowConformancePackResponse(SdkResponse):
         'deployment_id': 'deployment_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
+        'template_key': 'template_key',
+        'template_uri': 'template_uri',
+        'agency_name': 'agency_name',
         'status': 'status',
         'error_message': 'error_message',
         'vars_structure': 'vars_structure',
         'created_by': 'created_by'
     }
 
-    def __init__(self, id=None, name=None, stack_id=None, stack_name=None, deployment_id=None, created_at=None, updated_at=None, status=None, error_message=None, vars_structure=None, created_by=None):
+    def __init__(self, id=None, name=None, stack_id=None, stack_name=None, deployment_id=None, created_at=None, updated_at=None, template_key=None, template_uri=None, agency_name=None, status=None, error_message=None, vars_structure=None, created_by=None):
         """ShowConformancePackResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +70,12 @@ class ShowConformancePackResponse(SdkResponse):
         :type created_at: str
         :param updated_at: 合规规则包更新时间。
         :type updated_at: str
+        :param template_key: 预定义合规规则包模板名称。
+        :type template_key: str
+        :param template_uri: 合规规则包模板OBS地址
+        :type template_uri: str
+        :param agency_name: 委托名称
+        :type agency_name: str
         :param status: 合规规则包部署状态。
         :type status: str
         :param error_message: 部署或删除合规规则包错误时的错误信息
@@ -83,6 +95,9 @@ class ShowConformancePackResponse(SdkResponse):
         self._deployment_id = None
         self._created_at = None
         self._updated_at = None
+        self._template_key = None
+        self._template_uri = None
+        self._agency_name = None
         self._status = None
         self._error_message = None
         self._vars_structure = None
@@ -103,6 +118,12 @@ class ShowConformancePackResponse(SdkResponse):
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if template_key is not None:
+            self.template_key = template_key
+        if template_uri is not None:
+            self.template_uri = template_uri
+        if agency_name is not None:
+            self.agency_name = agency_name
         if status is not None:
             self.status = status
         if error_message is not None:
@@ -265,6 +286,72 @@ class ShowConformancePackResponse(SdkResponse):
         :type updated_at: str
         """
         self._updated_at = updated_at
+
+    @property
+    def template_key(self):
+        """Gets the template_key of this ShowConformancePackResponse.
+
+        预定义合规规则包模板名称。
+
+        :return: The template_key of this ShowConformancePackResponse.
+        :rtype: str
+        """
+        return self._template_key
+
+    @template_key.setter
+    def template_key(self, template_key):
+        """Sets the template_key of this ShowConformancePackResponse.
+
+        预定义合规规则包模板名称。
+
+        :param template_key: The template_key of this ShowConformancePackResponse.
+        :type template_key: str
+        """
+        self._template_key = template_key
+
+    @property
+    def template_uri(self):
+        """Gets the template_uri of this ShowConformancePackResponse.
+
+        合规规则包模板OBS地址
+
+        :return: The template_uri of this ShowConformancePackResponse.
+        :rtype: str
+        """
+        return self._template_uri
+
+    @template_uri.setter
+    def template_uri(self, template_uri):
+        """Sets the template_uri of this ShowConformancePackResponse.
+
+        合规规则包模板OBS地址
+
+        :param template_uri: The template_uri of this ShowConformancePackResponse.
+        :type template_uri: str
+        """
+        self._template_uri = template_uri
+
+    @property
+    def agency_name(self):
+        """Gets the agency_name of this ShowConformancePackResponse.
+
+        委托名称
+
+        :return: The agency_name of this ShowConformancePackResponse.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        """Sets the agency_name of this ShowConformancePackResponse.
+
+        委托名称
+
+        :param agency_name: The agency_name of this ShowConformancePackResponse.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     @property
     def status(self):

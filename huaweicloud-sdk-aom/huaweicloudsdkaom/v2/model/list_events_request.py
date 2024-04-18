@@ -18,21 +18,25 @@ class ListEventsRequest:
 
     openapi_types = {
         'type': 'str',
+        'enterprise_project_id': 'str',
         'body': 'EventQueryParam2'
     }
 
     attribute_map = {
         'type': 'type',
+        'enterprise_project_id': 'Enterprise-Project-Id',
         'body': 'body'
     }
 
-    def __init__(self, type=None, body=None):
+    def __init__(self, type=None, enterprise_project_id=None, body=None):
         """ListEventsRequest
 
         The model defined in huaweicloud sdk
 
         :param type: 查询类型。type&#x3D;active_alert代表查询活动告警，type&#x3D;history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
         :type type: str
+        :param enterprise_project_id: 企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+        :type enterprise_project_id: str
         :param body: Body of the ListEventsRequest
         :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam2`
         """
@@ -40,11 +44,14 @@ class ListEventsRequest:
         
 
         self._type = None
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
 
@@ -69,6 +76,28 @@ class ListEventsRequest:
         :type type: str
         """
         self._type = type
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListEventsRequest.
+
+        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+
+        :return: The enterprise_project_id of this ListEventsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListEventsRequest.
+
+        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListEventsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def body(self):

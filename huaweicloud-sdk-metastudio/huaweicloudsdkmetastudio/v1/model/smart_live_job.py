@@ -93,7 +93,7 @@ class SmartLiveJob:
         :type stream_duration: float
         :param block_reason: 封禁信息
         :type block_reason: str
-        :param cover_url: 直播间封面图UR
+        :param cover_url: 直播间封面图URL
         :type cover_url: str
         :param co_streamer_config: 
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -482,7 +482,7 @@ class SmartLiveJob:
     def cover_url(self):
         """Gets the cover_url of this SmartLiveJob.
 
-        直播间封面图UR
+        直播间封面图URL
 
         :return: The cover_url of this SmartLiveJob.
         :rtype: str
@@ -493,7 +493,7 @@ class SmartLiveJob:
     def cover_url(self, cover_url):
         """Sets the cover_url of this SmartLiveJob.
 
-        直播间封面图UR
+        直播间封面图URL
 
         :param cover_url: The cover_url of this SmartLiveJob.
         :type cover_url: str

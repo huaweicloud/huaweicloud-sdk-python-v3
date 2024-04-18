@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class InstancesStatisticsResponseBodyInstancesStatistics:
+class ShowErrorLogSwitchStatusRequest:
 
     """
     Attributes:
@@ -17,78 +17,79 @@ class InstancesStatisticsResponseBodyInstancesStatistics:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str',
-        'count': 'int'
+        'x_language': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
-        'status': 'status',
-        'count': 'count'
+        'x_language': 'X-Language',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, status=None, count=None):
-        """InstancesStatisticsResponseBodyInstancesStatistics
+    def __init__(self, x_language=None, instance_id=None):
+        """ShowErrorLogSwitchStatusRequest
 
         The model defined in huaweicloud sdk
 
-        :param status: 实例状态
-        :type status: str
-        :param count: 实例数量
-        :type count: int
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
         """
         
         
 
-        self._status = None
-        self._count = None
+        self._x_language = None
+        self._instance_id = None
         self.discriminator = None
 
-        self.status = status
-        self.count = count
+        if x_language is not None:
+            self.x_language = x_language
+        self.instance_id = instance_id
 
     @property
-    def status(self):
-        """Gets the status of this InstancesStatisticsResponseBodyInstancesStatistics.
+    def x_language(self):
+        """Gets the x_language of this ShowErrorLogSwitchStatusRequest.
 
-        实例状态
+        语言
 
-        :return: The status of this InstancesStatisticsResponseBodyInstancesStatistics.
+        :return: The x_language of this ShowErrorLogSwitchStatusRequest.
         :rtype: str
         """
-        return self._status
+        return self._x_language
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this InstancesStatisticsResponseBodyInstancesStatistics.
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ShowErrorLogSwitchStatusRequest.
 
-        实例状态
+        语言
 
-        :param status: The status of this InstancesStatisticsResponseBodyInstancesStatistics.
-        :type status: str
+        :param x_language: The x_language of this ShowErrorLogSwitchStatusRequest.
+        :type x_language: str
         """
-        self._status = status
+        self._x_language = x_language
 
     @property
-    def count(self):
-        """Gets the count of this InstancesStatisticsResponseBodyInstancesStatistics.
+    def instance_id(self):
+        """Gets the instance_id of this ShowErrorLogSwitchStatusRequest.
 
-        实例数量
+        实例ID。
 
-        :return: The count of this InstancesStatisticsResponseBodyInstancesStatistics.
-        :rtype: int
+        :return: The instance_id of this ShowErrorLogSwitchStatusRequest.
+        :rtype: str
         """
-        return self._count
+        return self._instance_id
 
-    @count.setter
-    def count(self, count):
-        """Sets the count of this InstancesStatisticsResponseBodyInstancesStatistics.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ShowErrorLogSwitchStatusRequest.
 
-        实例数量
+        实例ID。
 
-        :param count: The count of this InstancesStatisticsResponseBodyInstancesStatistics.
-        :type count: int
+        :param instance_id: The instance_id of this ShowErrorLogSwitchStatusRequest.
+        :type instance_id: str
         """
-        self._count = count
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +133,7 @@ class InstancesStatisticsResponseBodyInstancesStatistics:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InstancesStatisticsResponseBodyInstancesStatistics):
+        if not isinstance(other, ShowErrorLogSwitchStatusRequest):
             return False
 
         return self.__dict__ == other.__dict__

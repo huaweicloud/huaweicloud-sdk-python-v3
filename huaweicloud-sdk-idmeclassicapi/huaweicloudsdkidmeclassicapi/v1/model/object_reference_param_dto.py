@@ -33,7 +33,7 @@ class ObjectReferenceParamDTO:
 
         :param clazz: 类名。
         :type clazz: str
-        :param id: 唯一标识。
+        :param id: 数据实例ID。
         :type id: str
         """
         
@@ -73,7 +73,7 @@ class ObjectReferenceParamDTO:
     def id(self):
         """Gets the id of this ObjectReferenceParamDTO.
 
-        唯一标识。
+        数据实例ID。
 
         :return: The id of this ObjectReferenceParamDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class ObjectReferenceParamDTO:
     def id(self, id):
         """Sets the id of this ObjectReferenceParamDTO.
 
-        唯一标识。
+        数据实例ID。
 
         :param id: The id of this ObjectReferenceParamDTO.
         :type id: str

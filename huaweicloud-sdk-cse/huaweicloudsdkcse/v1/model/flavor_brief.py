@@ -18,15 +18,17 @@ class FlavorBrief:
 
     openapi_types = {
         'flavor': 'str',
-        'description': 'str'
+        'description': 'str',
+        'spec': 'EngineSpec'
     }
 
     attribute_map = {
         'flavor': 'flavor',
-        'description': 'description'
+        'description': 'description',
+        'spec': 'spec'
     }
 
-    def __init__(self, flavor=None, description=None):
+    def __init__(self, flavor=None, description=None, spec=None):
         """FlavorBrief
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class FlavorBrief:
         :type flavor: str
         :param description: 微服务引擎专享版规格描述
         :type description: str
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcse.v1.EngineSpec`
         """
         
         
 
         self._flavor = None
         self._description = None
+        self._spec = None
         self.discriminator = None
 
         if flavor is not None:
             self.flavor = flavor
         if description is not None:
             self.description = description
+        if spec is not None:
+            self.spec = spec
 
     @property
     def flavor(self):
@@ -91,6 +98,24 @@ class FlavorBrief:
         :type description: str
         """
         self._description = description
+
+    @property
+    def spec(self):
+        """Gets the spec of this FlavorBrief.
+
+        :return: The spec of this FlavorBrief.
+        :rtype: :class:`huaweicloudsdkcse.v1.EngineSpec`
+        """
+        return self._spec
+
+    @spec.setter
+    def spec(self, spec):
+        """Sets the spec of this FlavorBrief.
+
+        :param spec: The spec of this FlavorBrief.
+        :type spec: :class:`huaweicloudsdkcse.v1.EngineSpec`
+        """
+        self._spec = spec
 
     def to_dict(self):
         """Returns the model properties as a dict"""

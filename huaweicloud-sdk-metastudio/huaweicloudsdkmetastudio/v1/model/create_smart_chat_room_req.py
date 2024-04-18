@@ -97,7 +97,8 @@ class CreateSmartChatRoomReq:
             self.model_asset_id = model_asset_id
         if voice_config is not None:
             self.voice_config = voice_config
-        self.robot_id = robot_id
+        if robot_id is not None:
+            self.robot_id = robot_id
         if concurrency is not None:
             self.concurrency = concurrency
         if background_config is not None:

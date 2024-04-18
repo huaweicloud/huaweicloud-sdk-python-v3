@@ -30,7 +30,7 @@ class CheckTextLanguageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 语言检测状态
+        :param result: 语言检测状态。 * MATCHED: 匹配 * UNMATCHED: 不匹配
         :type result: str
         """
         
@@ -46,7 +46,7 @@ class CheckTextLanguageResponse(SdkResponse):
     def result(self):
         """Gets the result of this CheckTextLanguageResponse.
 
-        语言检测状态
+        语言检测状态。 * MATCHED: 匹配 * UNMATCHED: 不匹配
 
         :return: The result of this CheckTextLanguageResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CheckTextLanguageResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this CheckTextLanguageResponse.
 
-        语言检测状态
+        语言检测状态。 * MATCHED: 匹配 * UNMATCHED: 不匹配
 
         :param result: The result of this CheckTextLanguageResponse.
         :type result: str

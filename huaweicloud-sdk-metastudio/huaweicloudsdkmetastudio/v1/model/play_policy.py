@@ -20,17 +20,19 @@ class PlayPolicy:
         'repeat_count': 'int',
         'auto_play_script': 'bool',
         'play_mode': 'str',
-        'random_play_mode': 'str'
+        'random_play_mode': 'str',
+        'need_independent_capture_client': 'bool'
     }
 
     attribute_map = {
         'repeat_count': 'repeat_count',
         'auto_play_script': 'auto_play_script',
         'play_mode': 'play_mode',
-        'random_play_mode': 'random_play_mode'
+        'random_play_mode': 'random_play_mode',
+        'need_independent_capture_client': 'need_independent_capture_client'
     }
 
-    def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None, random_play_mode=None):
+    def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None, random_play_mode=None, need_independent_capture_client=None):
         """PlayPolicy
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class PlayPolicy:
         :type play_mode: str
         :param random_play_mode: 随机播报模式。 * NONE: 不启动随机播报。 * SCENE: 按场景随机播报。场景内段落按顺序播报。 * SCRIPT_ITEM：按段落随机播报。场景按顺序播报。 * SCENE_AND_SCRIPT_ITEM： 场景和段落都随机播报。
         :type random_play_mode: str
+        :param need_independent_capture_client: 是否需要独立采集端
+        :type need_independent_capture_client: bool
         """
         
         
@@ -51,6 +55,7 @@ class PlayPolicy:
         self._auto_play_script = None
         self._play_mode = None
         self._random_play_mode = None
+        self._need_independent_capture_client = None
         self.discriminator = None
 
         if repeat_count is not None:
@@ -61,6 +66,8 @@ class PlayPolicy:
             self.play_mode = play_mode
         if random_play_mode is not None:
             self.random_play_mode = random_play_mode
+        if need_independent_capture_client is not None:
+            self.need_independent_capture_client = need_independent_capture_client
 
     @property
     def repeat_count(self):
@@ -149,6 +156,28 @@ class PlayPolicy:
         :type random_play_mode: str
         """
         self._random_play_mode = random_play_mode
+
+    @property
+    def need_independent_capture_client(self):
+        """Gets the need_independent_capture_client of this PlayPolicy.
+
+        是否需要独立采集端
+
+        :return: The need_independent_capture_client of this PlayPolicy.
+        :rtype: bool
+        """
+        return self._need_independent_capture_client
+
+    @need_independent_capture_client.setter
+    def need_independent_capture_client(self, need_independent_capture_client):
+        """Sets the need_independent_capture_client of this PlayPolicy.
+
+        是否需要独立采集端
+
+        :param need_independent_capture_client: The need_independent_capture_client of this PlayPolicy.
+        :type need_independent_capture_client: bool
+        """
+        self._need_independent_capture_client = need_independent_capture_client
 
     def to_dict(self):
         """Returns the model properties as a dict"""

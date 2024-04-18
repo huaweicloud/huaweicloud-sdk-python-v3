@@ -31,7 +31,7 @@ class ExternalVoiceAssetMeta:
 
         The model defined in huaweicloud sdk
 
-        :param provider: 第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: EI TTS * MOBVOI: 出门问问 TTSS
+        :param provider: 第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
         :type provider: str
         :param mobvoi_voice_meta: 
         :type mobvoi_voice_meta: :class:`huaweicloudsdkmetastudio.v1.MobvoiVoiceAssetMeta`
@@ -51,7 +51,7 @@ class ExternalVoiceAssetMeta:
     def provider(self):
         """Gets the provider of this ExternalVoiceAssetMeta.
 
-        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: EI TTS * MOBVOI: 出门问问 TTSS
+        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
 
         :return: The provider of this ExternalVoiceAssetMeta.
         :rtype: str
@@ -62,7 +62,7 @@ class ExternalVoiceAssetMeta:
     def provider(self, provider):
         """Sets the provider of this ExternalVoiceAssetMeta.
 
-        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI: EI TTS * MOBVOI: 出门问问 TTSS
+        第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
 
         :param provider: The provider of this ExternalVoiceAssetMeta.
         :type provider: str

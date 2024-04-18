@@ -31,9 +31,9 @@ class CreateTrainingJobRspSegmentUploadingUrl:
 
         The model defined in huaweicloud sdk
 
-        :param audio_uploading_url: 音频上传的地址。 &gt; * 通过该obs地址上传时需设置content-type为audio/wav
+        :param audio_uploading_url: 音频上传的地址。  通过该obs地址上传时，需设置content-type为audio/wav
         :type audio_uploading_url: list[str]
-        :param txt_uploading_url: 文本上传的地址。 &gt; * 通过该obs地址上传时需设置content-type为text/plain
+        :param txt_uploading_url: 文本上传的地址。  通过该obs地址上传时需设置content-type为text/plain
         :type txt_uploading_url: list[str]
         """
         
@@ -52,7 +52,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
     def audio_uploading_url(self):
         """Gets the audio_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
 
-        音频上传的地址。 > * 通过该obs地址上传时需设置content-type为audio/wav
+        音频上传的地址。  通过该obs地址上传时，需设置content-type为audio/wav
 
         :return: The audio_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
     def audio_uploading_url(self, audio_uploading_url):
         """Sets the audio_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
 
-        音频上传的地址。 > * 通过该obs地址上传时需设置content-type为audio/wav
+        音频上传的地址。  通过该obs地址上传时，需设置content-type为audio/wav
 
         :param audio_uploading_url: The audio_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
         :type audio_uploading_url: list[str]
@@ -74,7 +74,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
     def txt_uploading_url(self):
         """Gets the txt_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
 
-        文本上传的地址。 > * 通过该obs地址上传时需设置content-type为text/plain
+        文本上传的地址。  通过该obs地址上传时需设置content-type为text/plain
 
         :return: The txt_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
     def txt_uploading_url(self, txt_uploading_url):
         """Sets the txt_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
 
-        文本上传的地址。 > * 通过该obs地址上传时需设置content-type为text/plain
+        文本上传的地址。  通过该obs地址上传时需设置content-type为text/plain
 
         :param txt_uploading_url: The txt_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
         :type txt_uploading_url: list[str]

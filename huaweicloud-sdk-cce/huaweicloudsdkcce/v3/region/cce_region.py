@@ -58,6 +58,8 @@ class CceRegion:
                         "https://cce.my-kualalumpur-1.myhuaweicloud.com")
     EU_WEST_0 = Region("eu-west-0",
                         "https://cce.eu-west-0.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://cce.ru-moscow-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -86,6 +88,7 @@ class CceRegion:
         "cn-north-11": CN_NORTH_11,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "eu-west-0": EU_WEST_0,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

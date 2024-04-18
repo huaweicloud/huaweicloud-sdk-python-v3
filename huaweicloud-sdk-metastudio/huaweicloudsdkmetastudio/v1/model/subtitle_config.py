@@ -47,9 +47,9 @@ class SubtitleConfig:
         :type font_name: str
         :param font_size: 字体大小。  取值范围：[4, 120]
         :type font_size: int
-        :param h: 字幕框高度 &gt; * 字幕框宽度固定为屏幕宽度的80% &gt; * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        :param h: 字幕框高度 &gt; * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
         :type h: int
-        :param w: 字幕框宽度
+        :param w: 字幕框宽度 &gt; * 字幕框宽度固定为屏幕宽度的80% &gt; * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
         :type w: int
         """
         
@@ -168,7 +168,7 @@ class SubtitleConfig:
     def h(self):
         """Gets the h of this SubtitleConfig.
 
-        字幕框高度 > * 字幕框宽度固定为屏幕宽度的80% > * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        字幕框高度 > * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
         :return: The h of this SubtitleConfig.
         :rtype: int
@@ -179,7 +179,7 @@ class SubtitleConfig:
     def h(self, h):
         """Sets the h of this SubtitleConfig.
 
-        字幕框高度 > * 字幕框宽度固定为屏幕宽度的80% > * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
+        字幕框高度 > * 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
         :param h: The h of this SubtitleConfig.
         :type h: int
@@ -190,7 +190,7 @@ class SubtitleConfig:
     def w(self):
         """Gets the w of this SubtitleConfig.
 
-        字幕框宽度
+        字幕框宽度 > * 字幕框宽度固定为屏幕宽度的80% > * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
         :return: The w of this SubtitleConfig.
         :rtype: int
@@ -201,7 +201,7 @@ class SubtitleConfig:
     def w(self, w):
         """Sets the w of this SubtitleConfig.
 
-        字幕框宽度
+        字幕框宽度 > * 字幕框宽度固定为屏幕宽度的80% > * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
         :param w: The w of this SubtitleConfig.
         :type w: int

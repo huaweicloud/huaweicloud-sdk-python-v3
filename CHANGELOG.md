@@ -1,3 +1,454 @@
+# 3.1.92 2024-04-18
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEvents**
+    - changes of request param
+      - `+ Enterprise-Project-Id`
+  - **CountEvents**
+    - changes of response param
+      - `+ summary`
+  - **UpdateAlarmRule**
+    - changes of request param
+      - `+ period: enum value [3600000]`
+      - `- period: enum value [36000000]`
+  - **AddAlarmRule**
+    - changes of request param
+      - `+ period: enum value [3600000]`
+      - `- period: enum value [36000000]`
+
+### HuaweiCloud SDK Config
+
+- _Features_
+  - Support the APIs `UpdateConformancePack`, `UpdateOrganizationConformancePack`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowOrganizationPolicyAssignmentDetailedStatus**
+    - changes of request param
+      - `* organization_policy_assignment_name: required -> optional`
+  - **ShowConformancePack**
+    - changes of response param
+      - `+ template_key`
+      - `+ agency_name`
+      - `+ template_uri`
+      - `+ status: enum value [UPDATE_SUCCESSFUL,UPDATE_IN_PROGRESS,UPDATE_FAILED]`
+  - **ShowOrganizationConformancePack**
+    - changes of response param
+      - `+ template_key`
+      - `+ template_uri`
+  - **ShowOrganizationConformancePackDetailedStatuses**
+    - changes of request param
+      - `* conformance_pack_name: required -> optional`
+      - `+ state: enum value [UPDATE_SUCCESSFUL,UPDATE_IN_PROGRESS,UPDATE_FAILED]`
+  - **ShowTrackerConfig**
+    - changes of response param
+      - `+ retention_period_in_days`
+  - **CreateTrackerConfig**
+    - changes of request param
+      - `+ retention_period_in_days`
+  - **CreateConformancePack**
+    - changes of response param
+      - `+ template_key`
+      - `+ agency_name`
+      - `+ template_uri`
+      - `+ status: enum value [UPDATE_SUCCESSFUL,UPDATE_IN_PROGRESS,UPDATE_FAILED]`
+  - **ListConformancePacks**
+    - changes of response param
+      - `+ template_key`
+      - `+ agency_name`
+      - `+ template_uri`
+      - `+ value.template_key`
+      - `+ value.template_uri`
+      - `+ value.agency_name`
+      - `+ value.status: enum value [UPDATE_SUCCESSFUL,UPDATE_IN_PROGRESS,UPDATE_FAILED]`
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlavors**
+    - changes of response param
+      - `+ data.spec`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListMigrationTask**
+    - changes of response param
+      - `+ migration_tasks.description`
+      - `+ migration_tasks.source_instance_status`
+      - `+ migration_tasks.target_instance_status`
+      - `+ migration_tasks.source_instance_subnet_id`
+      - `+ migration_tasks.target_instance_subnet_id`
+      - `+ migration_tasks.source_instance_spec_code`
+      - `+ migration_tasks.target_instance_spec_code`
+      - `+ migration_tasks.error_message`
+      - `+ migration_tasks.released_at`
+      - `+ migration_tasks.version`
+      - `+ migration_tasks.resume_mode`
+      - `+ migration_tasks.supported_features`
+  - **ShowMigrationTask**
+    - changes of response param
+      - `+ task_status`
+      - `+ tenant_security_group_id`
+      - `+ tenant_vpc_id`
+      - `+ released_at`
+      - `+ version`
+      - `+ resume_mode`
+      - `+ supported_features`
+      - `+ bandwidth_limit_mb`
+      - `+ tenant_subnet_id`
+  - **StopMigrationTask**
+    - changes of response param
+      - `+ task_status`
+      - `+ tenant_security_group_id`
+      - `+ tenant_vpc_id`
+      - `+ released_at`
+      - `+ version`
+      - `+ resume_mode`
+      - `+ supported_features`
+      - `+ bandwidth_limit_mb`
+      - `+ tenant_subnet_id`
+  - **ListBackgroundTask**
+    - changes of response param
+      - `+ tasks.details.old_resource_spec_code`
+      - `+ tasks.details.new_resource_spec_code`
+      - `+ tasks.details.old_replica_num`
+      - `+ tasks.details.new_replica_num`
+      - `+ tasks.details.old_cache_type`
+      - `+ tasks.details.new_cache_type`
+      - `+ tasks.details.replica_ip`
+      - `+ tasks.details.replica_az`
+      - `+ tasks.details.group_name`
+      - `+ tasks.details.old_port`
+      - `+ tasks.details.new_port`
+      - `+ tasks.details.is_only_adjust_charging`
+      - `+ tasks.details.account_name`
+      - `+ tasks.details.source_ip`
+      - `+ tasks.details.target_ip`
+      - `+ tasks.details.node_name`
+      - `+ tasks.details.rename_commands`
+      - `+ tasks.details.updated_config_length`
+  - **ListCenterTask**
+    - changes of response param
+      - `+ tasks.details.old_resource_spec_code`
+      - `+ tasks.details.new_resource_spec_code`
+      - `+ tasks.details.old_replica_num`
+      - `+ tasks.details.new_replica_num`
+      - `+ tasks.details.old_cache_type`
+      - `+ tasks.details.new_cache_type`
+      - `+ tasks.details.replica_ip`
+      - `+ tasks.details.replica_az`
+      - `+ tasks.details.group_name`
+      - `+ tasks.details.old_port`
+      - `+ tasks.details.new_port`
+      - `+ tasks.details.is_only_adjust_charging`
+      - `+ tasks.details.account_name`
+      - `+ tasks.details.source_ip`
+      - `+ tasks.details.target_ip`
+      - `+ tasks.details.node_name`
+      - `+ tasks.details.rename_commands`
+      - `+ tasks.details.updated_config_length`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the APIs `ListTopIoTraffics`, `ShowErrorLogSwitchStatus`, `ListInstanceErrorLogs`, `DeleteInstanceTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ShowInstancesStatistics`
+  - **UpgradeInstanceVersion**
+    - changes of request param
+      - `+ upgrade_action`
+      - `- upgrde_action`
+      - `- is_parallel_upgrade`
+  - **ShowBackupPolicy**
+    - changes of response param
+      - `* backup_policy.differential_period: string -> int32`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSecurityEvents**
+    - changes of response param
+      - `+ data_list.process_info_list.process_file_hash`
+      - `+ data_list.process_info_list.parent_process_file_hash`
+      - `+ data_list.process_info_list.block`
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchCreateView**
+    - changes of request param
+      - `- params.workCopyType: enum value [BOTH,SOURCE,TARGET,NONE,CUSTOM]`
+  - **CreateView**
+    - changes of request param
+      - `- params.workCopyType: enum value [BOTH,SOURCE,TARGET,NONE,CUSTOM]`
+
+### HuaweiCloud SDK MetaStudio
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **Create2dModelTrainingJob**
+    - changes of request param
+      - `+ model_version`
+  - **List2dModelTrainingJob**
+    - changes of request param
+      - `+ query_project_id`
+      - `+ model_resolution`
+    - changes of response param
+      - `+ jobs.model_resolution`
+      - `+ jobs.app_user_id`
+      - `+ jobs.model_version: enum value [V3.2]`
+  - **ShowRobot**
+    - changes of response param
+      - `+ room_id`
+      - `- concurrency`
+  - **UpdateRobot**
+    - changes of request param
+      - `+ room_id`
+      - `- concurrency`
+  - **ExecuteSmartLiveCommand**
+    - changes of request param
+      - `+ command: enum value [REFRESH_OUTPUT_URL]`
+    - changes of response param
+      - `+ command: enum value [REFRESH_OUTPUT_URL]`
+  - **Update2dModelTrainingJob**
+    - changes of request param
+      - `* body: object<Create2dModelTrainingJobReq> -> object<Update2dModelTrainingJobReq>`
+  - **Show2dModelTrainingJob**
+    - changes of response param
+      - `+ inference_data_process_eye_correction_mark_info`
+      - `+ worker_type`
+      - `+ app_user_id`
+      - `+ model_version: enum value [V3.2]`
+      - `+ operation_logs.log_type: enum value [SYSTEM_COMPILE_FAILED,SYSTEM_COMPILE_SUCCESS]`
+  - **CreateRobot**
+    - changes of request param
+      - `+ room_id`
+      - `- concurrency`
+  - **ListRobot**
+    - changes of request param
+      - `+ room_id`
+    - changes of response param
+      - `+ room_id`
+      - `- concurrency`
+      - `+ data.room_id`
+      - `- data.concurrency`
+  - **CreateSmartChatRoom**
+    - changes of request param
+      - `+ background_config.background_color_config`
+      - `- background_config.background_title`
+      - `- background_config.human_position_2d`
+      - `- background_config.human_size_2d`
+      - `- background_config.background_cover_url`
+      - `+ background_config.background_type: enum value [COLOR]`
+  - **ShowSmartChatRoom**
+    - changes of response param
+      - `+ background_config.background_color_config`
+      - `- background_config.background_title`
+      - `- background_config.human_position_2d`
+      - `- background_config.human_size_2d`
+      - `- background_config.background_cover_url`
+      - `+ background_config.background_type: enum value [COLOR]`
+  - **UpdateSmartChatRoom**
+    - changes of request param
+      - `+ background_config.background_color_config`
+      - `- background_config.background_title`
+      - `- background_config.human_position_2d`
+      - `- background_config.human_size_2d`
+      - `- background_config.background_cover_url`
+      - `+ background_config.background_type: enum value [COLOR]`
+    - changes of response param
+      - `+ background_config.background_color_config`
+      - `- background_config.background_title`
+      - `- background_config.human_position_2d`
+      - `- background_config.human_size_2d`
+      - `- background_config.background_cover_url`
+      - `+ background_config.background_type: enum value [COLOR]`
+  - **ShowSmartLive**
+    - changes of response param
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+  - **ShowVideoMotionCaptureJob**
+    - changes of response param
+      - `+ output_info.output_data_version`
+  - **StartSmartLive**
+    - changes of request param
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+    - changes of response param
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+  - **ListSmartLive**
+    - changes of response param
+      - `+ smart_live_jobs.live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+  - **ListSmartLiveJobs**
+    - changes of response param
+      - `+ smart_live_jobs.live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+  - **CreateVideoMotionCaptureJob**
+    - changes of request param
+      - `+ output_info.output_data_version`
+  - **ListVideoMotionCaptureJobs**
+    - changes of response param
+      - `+ video_motion_capture_jobs.output_info.output_data_version`
+  - **ShowAsset**
+    - changes of response param
+      - `+ asset_extra_meta.image_meta`
+      - `+ asset_extra_meta.video_meta`
+      - `+ asset_extra_meta.audio_meta`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.image_meta`
+      - `+ asset_extra_meta.video_meta`
+      - `+ asset_extra_meta.audio_meta`
+    - changes of response param
+      - `+ asset_extra_meta.image_meta`
+      - `+ asset_extra_meta.video_meta`
+      - `+ asset_extra_meta.audio_meta`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+      - `+ scene_scripts.background_config.background_color_config`
+      - `- scene_scripts.background_config.background_title`
+      - `- scene_scripts.background_config.human_position_2d`
+      - `- scene_scripts.background_config.human_size_2d`
+      - `- scene_scripts.background_config.background_cover_url`
+      - `+ scene_scripts.background_config.background_type: enum value [COLOR]`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+      - `+ scene_scripts.background_config.background_color_config`
+      - `- scene_scripts.background_config.background_title`
+      - `- scene_scripts.background_config.human_position_2d`
+      - `- scene_scripts.background_config.human_size_2d`
+      - `- scene_scripts.background_config.background_cover_url`
+      - `+ scene_scripts.background_config.background_type: enum value [COLOR]`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+      - `+ scene_scripts.background_config.background_color_config`
+      - `- scene_scripts.background_config.background_title`
+      - `- scene_scripts.background_config.human_position_2d`
+      - `- scene_scripts.background_config.human_size_2d`
+      - `- scene_scripts.background_config.background_cover_url`
+      - `+ scene_scripts.background_config.background_type: enum value [COLOR]`
+    - changes of response param
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+      - `+ scene_scripts.background_config.background_color_config`
+      - `- scene_scripts.background_config.background_title`
+      - `- scene_scripts.background_config.human_position_2d`
+      - `- scene_scripts.background_config.human_size_2d`
+      - `- scene_scripts.background_config.background_cover_url`
+      - `+ scene_scripts.background_config.background_type: enum value [COLOR]`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ is_need_generate_cover`
+      - `+ asset_extra_meta.image_meta`
+      - `+ asset_extra_meta.video_meta`
+      - `+ asset_extra_meta.audio_meta`
+  - **ListAssets**
+    - changes of request param
+      - `- X-REAL-IP`
+    - changes of response param
+      - `+ assets.asset_extra_meta.image_meta`
+      - `+ assets.asset_extra_meta.video_meta`
+      - `+ assets.asset_extra_meta.audio_meta`
+
+### HuaweiCloud SDK TMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteResourceTag**
+    - changes of request param
+      - `+ tags.value`
+
 # 3.1.91 2024-04-11
 
 ### HuaweiCloud SDK AOS

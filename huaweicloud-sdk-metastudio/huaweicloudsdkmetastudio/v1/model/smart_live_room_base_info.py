@@ -93,7 +93,7 @@ class SmartLiveRoomBaseInfo:
         :type last_job_start_time: str
         :param last_job_end_time: 结束直播时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type last_job_end_time: str
-        :param last_job_status: 当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消
+        :param last_job_status: 当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消 - BLOCKED：任务被冻结
         :type last_job_status: str
         """
         
@@ -501,7 +501,7 @@ class SmartLiveRoomBaseInfo:
     def last_job_status(self):
         """Gets the last_job_status of this SmartLiveRoomBaseInfo.
 
-        当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消
+        当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消 - BLOCKED：任务被冻结
 
         :return: The last_job_status of this SmartLiveRoomBaseInfo.
         :rtype: str
@@ -512,7 +512,7 @@ class SmartLiveRoomBaseInfo:
     def last_job_status(self, last_job_status):
         """Sets the last_job_status of this SmartLiveRoomBaseInfo.
 
-        当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消
+        当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消 - BLOCKED：任务被冻结
 
         :param last_job_status: The last_job_status of this SmartLiveRoomBaseInfo.
         :type last_job_status: str

@@ -19,16 +19,18 @@ class TrackerConfigBody:
     openapi_types = {
         'channel': 'ChannelConfigBody',
         'selector': 'SelectorConfigBody',
+        'retention_period_in_days': 'int',
         'agency_name': 'str'
     }
 
     attribute_map = {
         'channel': 'channel',
         'selector': 'selector',
+        'retention_period_in_days': 'retention_period_in_days',
         'agency_name': 'agency_name'
     }
 
-    def __init__(self, channel=None, selector=None, agency_name=None):
+    def __init__(self, channel=None, selector=None, retention_period_in_days=None, agency_name=None):
         """TrackerConfigBody
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class TrackerConfigBody:
         :type channel: :class:`huaweicloudsdkconfig.v1.ChannelConfigBody`
         :param selector: 
         :type selector: :class:`huaweicloudsdkconfig.v1.SelectorConfigBody`
+        :param retention_period_in_days: 存储历史信息的天数
+        :type retention_period_in_days: int
         :param agency_name: IAM委托名称
         :type agency_name: str
         """
@@ -45,11 +49,14 @@ class TrackerConfigBody:
 
         self._channel = None
         self._selector = None
+        self._retention_period_in_days = None
         self._agency_name = None
         self.discriminator = None
 
         self.channel = channel
         self.selector = selector
+        if retention_period_in_days is not None:
+            self.retention_period_in_days = retention_period_in_days
         self.agency_name = agency_name
 
     @property
@@ -87,6 +94,28 @@ class TrackerConfigBody:
         :type selector: :class:`huaweicloudsdkconfig.v1.SelectorConfigBody`
         """
         self._selector = selector
+
+    @property
+    def retention_period_in_days(self):
+        """Gets the retention_period_in_days of this TrackerConfigBody.
+
+        存储历史信息的天数
+
+        :return: The retention_period_in_days of this TrackerConfigBody.
+        :rtype: int
+        """
+        return self._retention_period_in_days
+
+    @retention_period_in_days.setter
+    def retention_period_in_days(self, retention_period_in_days):
+        """Sets the retention_period_in_days of this TrackerConfigBody.
+
+        存储历史信息的天数
+
+        :param retention_period_in_days: The retention_period_in_days of this TrackerConfigBody.
+        :type retention_period_in_days: int
+        """
+        self._retention_period_in_days = retention_period_in_days
 
     @property
     def agency_name(self):

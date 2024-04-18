@@ -38,7 +38,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
         :param job_id: 任务id。
         :type job_id: str
-        :param training_data_uploading_url: 上传的训练数据地址,用户需要将训练数据打成zip包后上传到该url,create_type为pakcage时设置。 &gt; * 通过该obs地址上传时需设置content-type为application/zip
+        :param training_data_uploading_url: 上传训练数据的地址。训练数据需打包成zip文件后，上传至该url。  create_type取值为package时设置。 &gt; 通过该obs地址上传时，需设置content-type为application/zip。
         :type training_data_uploading_url: str
         :param segment_uploading_url: 
         :type segment_uploading_url: :class:`huaweicloudsdkmetastudio.v1.CreateTrainingJobRspSegmentUploadingUrl`
@@ -89,7 +89,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
     def training_data_uploading_url(self):
         """Gets the training_data_uploading_url of this CreateTrainingMiddleJobResponse.
 
-        上传的训练数据地址,用户需要将训练数据打成zip包后上传到该url,create_type为pakcage时设置。 > * 通过该obs地址上传时需设置content-type为application/zip
+        上传训练数据的地址。训练数据需打包成zip文件后，上传至该url。  create_type取值为package时设置。 > 通过该obs地址上传时，需设置content-type为application/zip。
 
         :return: The training_data_uploading_url of this CreateTrainingMiddleJobResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
     def training_data_uploading_url(self, training_data_uploading_url):
         """Sets the training_data_uploading_url of this CreateTrainingMiddleJobResponse.
 
-        上传的训练数据地址,用户需要将训练数据打成zip包后上传到该url,create_type为pakcage时设置。 > * 通过该obs地址上传时需设置content-type为application/zip
+        上传训练数据的地址。训练数据需打包成zip文件后，上传至该url。  create_type取值为package时设置。 > 通过该obs地址上传时，需设置content-type为application/zip。
 
         :param training_data_uploading_url: The training_data_uploading_url of this CreateTrainingMiddleJobResponse.
         :type training_data_uploading_url: str

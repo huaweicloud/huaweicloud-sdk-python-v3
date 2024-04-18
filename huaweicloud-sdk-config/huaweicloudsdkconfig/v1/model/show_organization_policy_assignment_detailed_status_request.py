@@ -64,7 +64,8 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
         self.discriminator = None
 
         self.organization_id = organization_id
-        self.organization_policy_assignment_name = organization_policy_assignment_name
+        if organization_policy_assignment_name is not None:
+            self.organization_policy_assignment_name = organization_policy_assignment_name
         if organization_policy_assignment_id is not None:
             self.organization_policy_assignment_id = organization_policy_assignment_id
         if status is not None:

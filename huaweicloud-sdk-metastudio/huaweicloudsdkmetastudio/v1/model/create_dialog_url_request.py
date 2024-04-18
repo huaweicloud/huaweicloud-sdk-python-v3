@@ -31,7 +31,7 @@ class CreateDialogUrlRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param body: Body of the CreateDialogUrlRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateDialogUrlReq`
@@ -52,7 +52,7 @@ class CreateDialogUrlRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this CreateDialogUrlRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。不允许输入中文。
 
         :return: The x_app_user_id of this CreateDialogUrlRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class CreateDialogUrlRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this CreateDialogUrlRequest.
 
-        开发者应用作为资产权属的可选字段。
+        第三方用户ID。不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this CreateDialogUrlRequest.
         :type x_app_user_id: str

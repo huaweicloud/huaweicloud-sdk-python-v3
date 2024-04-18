@@ -37,11 +37,11 @@ class LiveEventCallBackConfig:
 
         :param live_event_type_callback_url: 直播事件回调地址。https地址，需自带鉴权串。
         :type live_event_type_callback_url: str
-        :param auth_type: 认证类型。 * NONE。URL中自带认证。 * MSS_A。HMACSHA256签名模式，在URL中追加参数:hwSecret,hwTime。取值方式：hwSecret&#x3D;hmac_sha256(Key, URI（live_event_callback_url）+ hwTime)&amp;hwTime&#x3D;hex(timestamp)
+        :param auth_type: 认证类型。 * NONE。URL中自带认证。 * MSS_A。HMACSHA256签名模式，在URL中追加参数:hwSecret,hwTime。取值方式：hwSecret&#x3D;hmac_sha256(Key, URI（live_event_callback_url）+ hwTime)&amp;hwTime&#x3D;hex(timestamp) * RTMP_STREAM_STATE_CHANGE。 RTMP链接发生变化回调事件 * MEITUAN_DEFAULT。仅用于美团平台调用回调使用。
         :type auth_type: str
         :param key: 密钥Key
         :type key: str
-        :param callback_event_type: 回调的直播事件类型列表
+        :param callback_event_type: 回调的直播事件类型列表。  当前仅支持取值：   SHOOT_SCRIPT_SWITCH，剧本段落切换事件。    RTMP_STREAM_STATE_CHANGE， RTMP链接发生变化回调事件。 回调事件结构体定义： * event_type: 事件类型。 * message: 事件描述。 SHOOT_SCRIPT_SWITCH事件回调定义如下： &#x60;&#x60;&#x60;json {   \&quot;event_type\&quot;:  \&quot;SHOOT_SCRIPT_SWITCH\&quot;,   \&quot;message\&quot;:\&quot;{\\\&quot;room_id\\\&quot;:\\\&quot;26f065244f754b3aa853b649a21aaf66\\\&quot;,\\\&quot;job_id\\\&quot;:\\\&quot;e87104f76d7546ce8a46ac6b04c49c3c\\\&quot;,\\\&quot;scene_script_name\\\&quot;:\\\&quot;商品1\\\&quot;,\\\&quot;shoot_script_sequence_no\\\&quot;:\\\&quot;2\\\&quot;,\\\&quot;shoot_script_title\\\&quot;:\\\&quot;段落2\\\&quot;}\&quot; } &#x60;&#x60;&#x60; RTMP_STREAM_STATE_CHANGE回调定义如下： &#x60;&#x60;&#x60;json {   \&quot;event_type\&quot;:  \&quot;RTMP_STREAM_STATE_CHANGE\&quot;,   \&quot;message\&quot;:\&quot;{\\\&quot;room_id\\\&quot;:\\\&quot;26f065244f754b3aa853b649a21aaf66\\\&quot;,\\\&quot;job_id\\\&quot;:\\\&quot;e87104f76d7546ce8a46ac6b04c49c3c\\\&quot;,\\\&quot;output_url\\\&quot;:\\\&quot;rtmp://xxx/xx/xx\\\&quot;,\\\&quot;stream_key\\\&quot;:\\\&quot;xxxxx\\\&quot;,\\\&quot;state\\\&quot;:\\\&quot;CONNECTED\\\&quot;}\&quot; } &#x60;&#x60;&#x60; 其中state取值： CONNECTING 链路连接中, CONNECTED 链路已连接，DISCONNECTED 链路已断开，RECONNECTING 链路重连中, END 联络不再重连，链路已结束
         :type callback_event_type: list[str]
         """
         
@@ -88,7 +88,7 @@ class LiveEventCallBackConfig:
     def auth_type(self):
         """Gets the auth_type of this LiveEventCallBackConfig.
 
-        认证类型。 * NONE。URL中自带认证。 * MSS_A。HMACSHA256签名模式，在URL中追加参数:hwSecret,hwTime。取值方式：hwSecret=hmac_sha256(Key, URI（live_event_callback_url）+ hwTime)&hwTime=hex(timestamp)
+        认证类型。 * NONE。URL中自带认证。 * MSS_A。HMACSHA256签名模式，在URL中追加参数:hwSecret,hwTime。取值方式：hwSecret=hmac_sha256(Key, URI（live_event_callback_url）+ hwTime)&hwTime=hex(timestamp) * RTMP_STREAM_STATE_CHANGE。 RTMP链接发生变化回调事件 * MEITUAN_DEFAULT。仅用于美团平台调用回调使用。
 
         :return: The auth_type of this LiveEventCallBackConfig.
         :rtype: str
@@ -99,7 +99,7 @@ class LiveEventCallBackConfig:
     def auth_type(self, auth_type):
         """Sets the auth_type of this LiveEventCallBackConfig.
 
-        认证类型。 * NONE。URL中自带认证。 * MSS_A。HMACSHA256签名模式，在URL中追加参数:hwSecret,hwTime。取值方式：hwSecret=hmac_sha256(Key, URI（live_event_callback_url）+ hwTime)&hwTime=hex(timestamp)
+        认证类型。 * NONE。URL中自带认证。 * MSS_A。HMACSHA256签名模式，在URL中追加参数:hwSecret,hwTime。取值方式：hwSecret=hmac_sha256(Key, URI（live_event_callback_url）+ hwTime)&hwTime=hex(timestamp) * RTMP_STREAM_STATE_CHANGE。 RTMP链接发生变化回调事件 * MEITUAN_DEFAULT。仅用于美团平台调用回调使用。
 
         :param auth_type: The auth_type of this LiveEventCallBackConfig.
         :type auth_type: str
@@ -132,7 +132,7 @@ class LiveEventCallBackConfig:
     def callback_event_type(self):
         """Gets the callback_event_type of this LiveEventCallBackConfig.
 
-        回调的直播事件类型列表
+        回调的直播事件类型列表。  当前仅支持取值：   SHOOT_SCRIPT_SWITCH，剧本段落切换事件。    RTMP_STREAM_STATE_CHANGE， RTMP链接发生变化回调事件。 回调事件结构体定义： * event_type: 事件类型。 * message: 事件描述。 SHOOT_SCRIPT_SWITCH事件回调定义如下： ```json {   \"event_type\":  \"SHOOT_SCRIPT_SWITCH\",   \"message\":\"{\\\"room_id\\\":\\\"26f065244f754b3aa853b649a21aaf66\\\",\\\"job_id\\\":\\\"e87104f76d7546ce8a46ac6b04c49c3c\\\",\\\"scene_script_name\\\":\\\"商品1\\\",\\\"shoot_script_sequence_no\\\":\\\"2\\\",\\\"shoot_script_title\\\":\\\"段落2\\\"}\" } ``` RTMP_STREAM_STATE_CHANGE回调定义如下： ```json {   \"event_type\":  \"RTMP_STREAM_STATE_CHANGE\",   \"message\":\"{\\\"room_id\\\":\\\"26f065244f754b3aa853b649a21aaf66\\\",\\\"job_id\\\":\\\"e87104f76d7546ce8a46ac6b04c49c3c\\\",\\\"output_url\\\":\\\"rtmp://xxx/xx/xx\\\",\\\"stream_key\\\":\\\"xxxxx\\\",\\\"state\\\":\\\"CONNECTED\\\"}\" } ``` 其中state取值： CONNECTING 链路连接中, CONNECTED 链路已连接，DISCONNECTED 链路已断开，RECONNECTING 链路重连中, END 联络不再重连，链路已结束
 
         :return: The callback_event_type of this LiveEventCallBackConfig.
         :rtype: list[str]
@@ -143,7 +143,7 @@ class LiveEventCallBackConfig:
     def callback_event_type(self, callback_event_type):
         """Sets the callback_event_type of this LiveEventCallBackConfig.
 
-        回调的直播事件类型列表
+        回调的直播事件类型列表。  当前仅支持取值：   SHOOT_SCRIPT_SWITCH，剧本段落切换事件。    RTMP_STREAM_STATE_CHANGE， RTMP链接发生变化回调事件。 回调事件结构体定义： * event_type: 事件类型。 * message: 事件描述。 SHOOT_SCRIPT_SWITCH事件回调定义如下： ```json {   \"event_type\":  \"SHOOT_SCRIPT_SWITCH\",   \"message\":\"{\\\"room_id\\\":\\\"26f065244f754b3aa853b649a21aaf66\\\",\\\"job_id\\\":\\\"e87104f76d7546ce8a46ac6b04c49c3c\\\",\\\"scene_script_name\\\":\\\"商品1\\\",\\\"shoot_script_sequence_no\\\":\\\"2\\\",\\\"shoot_script_title\\\":\\\"段落2\\\"}\" } ``` RTMP_STREAM_STATE_CHANGE回调定义如下： ```json {   \"event_type\":  \"RTMP_STREAM_STATE_CHANGE\",   \"message\":\"{\\\"room_id\\\":\\\"26f065244f754b3aa853b649a21aaf66\\\",\\\"job_id\\\":\\\"e87104f76d7546ce8a46ac6b04c49c3c\\\",\\\"output_url\\\":\\\"rtmp://xxx/xx/xx\\\",\\\"stream_key\\\":\\\"xxxxx\\\",\\\"state\\\":\\\"CONNECTED\\\"}\" } ``` 其中state取值： CONNECTING 链路连接中, CONNECTED 链路已连接，DISCONNECTED 链路已断开，RECONNECTING 链路重连中, END 联络不再重连，链路已结束
 
         :param callback_event_type: The callback_event_type of this LiveEventCallBackConfig.
         :type callback_event_type: list[str]

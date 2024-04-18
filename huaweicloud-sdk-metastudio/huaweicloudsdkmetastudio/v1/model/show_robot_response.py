@@ -20,9 +20,9 @@ class ShowRobotResponse(SdkResponse):
     openapi_types = {
         'robot_id': 'str',
         'name': 'str',
+        'room_id': 'str',
         'app_id': 'str',
         'app_type': 'int',
-        'concurrency': 'int',
         'language': 'LanguageEnum',
         'create_time': 'str',
         'update_time': 'str',
@@ -37,9 +37,9 @@ class ShowRobotResponse(SdkResponse):
     attribute_map = {
         'robot_id': 'robot_id',
         'name': 'name',
+        'room_id': 'room_id',
         'app_id': 'app_id',
         'app_type': 'app_type',
-        'concurrency': 'concurrency',
         'language': 'language',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -51,7 +51,7 @@ class ShowRobotResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, robot_id=None, name=None, app_id=None, app_type=None, concurrency=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, x_request_id=None):
+    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, x_request_id=None):
         """ShowRobotResponse
 
         The model defined in huaweicloud sdk
@@ -60,12 +60,12 @@ class ShowRobotResponse(SdkResponse):
         :type robot_id: str
         :param name: 应用名称。
         :type name: str
+        :param room_id: 智能交互对话房间ID。
+        :type room_id: str
         :param app_id: 第三方应用ID。
         :type app_id: str
         :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
         :type app_type: int
-        :param concurrency: 对话的并发数
-        :type concurrency: int
         :param language: 
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -90,9 +90,9 @@ class ShowRobotResponse(SdkResponse):
 
         self._robot_id = None
         self._name = None
+        self._room_id = None
         self._app_id = None
         self._app_type = None
-        self._concurrency = None
         self._language = None
         self._create_time = None
         self._update_time = None
@@ -108,12 +108,12 @@ class ShowRobotResponse(SdkResponse):
             self.robot_id = robot_id
         if name is not None:
             self.name = name
+        if room_id is not None:
+            self.room_id = room_id
         if app_id is not None:
             self.app_id = app_id
         if app_type is not None:
             self.app_type = app_type
-        if concurrency is not None:
-            self.concurrency = concurrency
         if language is not None:
             self.language = language
         if create_time is not None:
@@ -178,6 +178,28 @@ class ShowRobotResponse(SdkResponse):
         self._name = name
 
     @property
+    def room_id(self):
+        """Gets the room_id of this ShowRobotResponse.
+
+        智能交互对话房间ID。
+
+        :return: The room_id of this ShowRobotResponse.
+        :rtype: str
+        """
+        return self._room_id
+
+    @room_id.setter
+    def room_id(self, room_id):
+        """Sets the room_id of this ShowRobotResponse.
+
+        智能交互对话房间ID。
+
+        :param room_id: The room_id of this ShowRobotResponse.
+        :type room_id: str
+        """
+        self._room_id = room_id
+
+    @property
     def app_id(self):
         """Gets the app_id of this ShowRobotResponse.
 
@@ -220,28 +242,6 @@ class ShowRobotResponse(SdkResponse):
         :type app_type: int
         """
         self._app_type = app_type
-
-    @property
-    def concurrency(self):
-        """Gets the concurrency of this ShowRobotResponse.
-
-        对话的并发数
-
-        :return: The concurrency of this ShowRobotResponse.
-        :rtype: int
-        """
-        return self._concurrency
-
-    @concurrency.setter
-    def concurrency(self, concurrency):
-        """Sets the concurrency of this ShowRobotResponse.
-
-        对话的并发数
-
-        :param concurrency: The concurrency of this ShowRobotResponse.
-        :type concurrency: int
-        """
-        self._concurrency = concurrency
 
     @property
     def language(self):

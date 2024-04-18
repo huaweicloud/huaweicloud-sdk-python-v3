@@ -29,7 +29,9 @@ class TrainingJobBasicInfo:
         'batch_name': 'str',
         'tags': 'list[str]',
         'model_version': 'str',
-        'matting_type': 'str'
+        'matting_type': 'str',
+        'model_resolution': 'str',
+        'app_user_id': 'str'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class TrainingJobBasicInfo:
         'batch_name': 'batch_name',
         'tags': 'tags',
         'model_version': 'model_version',
-        'matting_type': 'matting_type'
+        'matting_type': 'matting_type',
+        'model_resolution': 'model_resolution',
+        'app_user_id': 'app_user_id'
     }
 
-    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None):
+    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None):
         """TrainingJobBasicInfo
 
         The model defined in huaweicloud sdk
@@ -57,7 +61,7 @@ class TrainingJobBasicInfo:
         :type job_id: str
         :param name: 分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
         :type name: str
-        :param state: 任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS: 完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回 * JOB_PENDING：挂起 * JOB_FINISH：结束，最终状态，不可再做改变
+        :param state: 任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
         :type state: str
         :param asset_id: 模型资产ID。
         :type asset_id: str
@@ -75,10 +79,14 @@ class TrainingJobBasicInfo:
         :type batch_name: str
         :param tags: 分身数字人训练任务标签。
         :type tags: list[str]
-        :param model_version: 分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型
+        :param model_version: 分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型
         :type model_version: str
         :param matting_type: 抠图类型。默认是AI。 * AI：AI抠图 * MANUAL：人工抠图
         :type matting_type: str
+        :param model_resolution: 分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+        :type model_resolution: str
+        :param app_user_id: 自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
+        :type app_user_id: str
         """
         
         
@@ -96,6 +104,8 @@ class TrainingJobBasicInfo:
         self._tags = None
         self._model_version = None
         self._matting_type = None
+        self._model_resolution = None
+        self._app_user_id = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -121,6 +131,10 @@ class TrainingJobBasicInfo:
             self.model_version = model_version
         if matting_type is not None:
             self.matting_type = matting_type
+        if model_resolution is not None:
+            self.model_resolution = model_resolution
+        if app_user_id is not None:
+            self.app_user_id = app_user_id
 
     @property
     def job_id(self):
@@ -170,7 +184,7 @@ class TrainingJobBasicInfo:
     def state(self):
         """Gets the state of this TrainingJobBasicInfo.
 
-        任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS: 完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回 * JOB_PENDING：挂起 * JOB_FINISH：结束，最终状态，不可再做改变
+        任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
 
         :return: The state of this TrainingJobBasicInfo.
         :rtype: str
@@ -181,7 +195,7 @@ class TrainingJobBasicInfo:
     def state(self, state):
         """Sets the state of this TrainingJobBasicInfo.
 
-        任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS: 完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回 * JOB_PENDING：挂起 * JOB_FINISH：结束，最终状态，不可再做改变
+        任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
 
         :param state: The state of this TrainingJobBasicInfo.
         :type state: str
@@ -368,7 +382,7 @@ class TrainingJobBasicInfo:
     def model_version(self):
         """Gets the model_version of this TrainingJobBasicInfo.
 
-        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型
+        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型
 
         :return: The model_version of this TrainingJobBasicInfo.
         :rtype: str
@@ -379,7 +393,7 @@ class TrainingJobBasicInfo:
     def model_version(self, model_version):
         """Sets the model_version of this TrainingJobBasicInfo.
 
-        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型
+        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型
 
         :param model_version: The model_version of this TrainingJobBasicInfo.
         :type model_version: str
@@ -407,6 +421,50 @@ class TrainingJobBasicInfo:
         :type matting_type: str
         """
         self._matting_type = matting_type
+
+    @property
+    def model_resolution(self):
+        """Gets the model_resolution of this TrainingJobBasicInfo.
+
+        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+
+        :return: The model_resolution of this TrainingJobBasicInfo.
+        :rtype: str
+        """
+        return self._model_resolution
+
+    @model_resolution.setter
+    def model_resolution(self, model_resolution):
+        """Sets the model_resolution of this TrainingJobBasicInfo.
+
+        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+
+        :param model_resolution: The model_resolution of this TrainingJobBasicInfo.
+        :type model_resolution: str
+        """
+        self._model_resolution = model_resolution
+
+    @property
+    def app_user_id(self):
+        """Gets the app_user_id of this TrainingJobBasicInfo.
+
+        自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
+
+        :return: The app_user_id of this TrainingJobBasicInfo.
+        :rtype: str
+        """
+        return self._app_user_id
+
+    @app_user_id.setter
+    def app_user_id(self, app_user_id):
+        """Sets the app_user_id of this TrainingJobBasicInfo.
+
+        自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
+
+        :param app_user_id: The app_user_id of this TrainingJobBasicInfo.
+        :type app_user_id: str
+        """
+        self._app_user_id = app_user_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

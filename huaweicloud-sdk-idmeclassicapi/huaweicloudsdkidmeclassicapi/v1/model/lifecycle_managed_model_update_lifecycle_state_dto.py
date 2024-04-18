@@ -33,7 +33,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识。
+        :param id: 数据实例ID。
         :type id: str
         :param lifecycle_state: 
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -57,7 +57,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def id(self):
         """Gets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        唯一标识。
+        数据实例ID。
 
         :return: The id of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: str
@@ -68,7 +68,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def id(self, id):
         """Sets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        唯一标识。
+        数据实例ID。
 
         :param id: The id of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :type id: str

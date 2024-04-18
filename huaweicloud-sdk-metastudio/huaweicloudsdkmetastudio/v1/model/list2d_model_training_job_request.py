@@ -20,45 +20,47 @@ class List2dModelTrainingJobRequest:
         'x_app_user_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'state': 'str',
         'sort_key': 'str',
         'sort_dir': 'str',
         'create_until': 'str',
         'create_since': 'str',
+        'state': 'str',
+        'query_project_id': 'str',
         'batch_name': 'str',
         'tag': 'str',
         'job_id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'model_resolution': 'str'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
         'offset': 'offset',
         'limit': 'limit',
-        'state': 'state',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
         'create_until': 'create_until',
         'create_since': 'create_since',
+        'state': 'state',
+        'query_project_id': 'query_project_id',
         'batch_name': 'batch_name',
         'tag': 'tag',
         'job_id': 'job_id',
-        'name': 'name'
+        'name': 'name',
+        'model_resolution': 'model_resolution'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, batch_name=None, tag=None, job_id=None, name=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, state=None, query_project_id=None, batch_name=None, tag=None, job_id=None, name=None, model_resolution=None):
         """List2dModelTrainingJobRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
+        :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: int
-        :param state: 任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state&#x3D;CREATING,PUBLISHED
-        :type state: str
         :param sort_key: 排序字段，目前只支持create_time。
         :type sort_key: str
         :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
@@ -67,6 +69,10 @@ class List2dModelTrainingJobRequest:
         :type create_until: str
         :param create_since: 过滤创建时间&gt;&#x3D;输入时间的记录。
         :type create_since: str
+        :param state: 任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state&#x3D;CREATING,PUBLISHED
+        :type state: str
+        :param query_project_id: 查询租户id。
+        :type query_project_id: str
         :param batch_name: 任务批次名称。
         :type batch_name: str
         :param tag: 任务标签。
@@ -75,6 +81,8 @@ class List2dModelTrainingJobRequest:
         :type job_id: str
         :param name: 分身数字人模型名称
         :type name: str
+        :param model_resolution: 模型分辨率
+        :type model_resolution: str
         """
         
         
@@ -82,15 +90,17 @@ class List2dModelTrainingJobRequest:
         self._x_app_user_id = None
         self._offset = None
         self._limit = None
-        self._state = None
         self._sort_key = None
         self._sort_dir = None
         self._create_until = None
         self._create_since = None
+        self._state = None
+        self._query_project_id = None
         self._batch_name = None
         self._tag = None
         self._job_id = None
         self._name = None
+        self._model_resolution = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -99,8 +109,6 @@ class List2dModelTrainingJobRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        if state is not None:
-            self.state = state
         if sort_key is not None:
             self.sort_key = sort_key
         if sort_dir is not None:
@@ -109,6 +117,10 @@ class List2dModelTrainingJobRequest:
             self.create_until = create_until
         if create_since is not None:
             self.create_since = create_since
+        if state is not None:
+            self.state = state
+        if query_project_id is not None:
+            self.query_project_id = query_project_id
         if batch_name is not None:
             self.batch_name = batch_name
         if tag is not None:
@@ -117,12 +129,14 @@ class List2dModelTrainingJobRequest:
             self.job_id = job_id
         if name is not None:
             self.name = name
+        if model_resolution is not None:
+            self.model_resolution = model_resolution
 
     @property
     def x_app_user_id(self):
         """Gets the x_app_user_id of this List2dModelTrainingJobRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :return: The x_app_user_id of this List2dModelTrainingJobRequest.
         :rtype: str
@@ -133,7 +147,7 @@ class List2dModelTrainingJobRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this List2dModelTrainingJobRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this List2dModelTrainingJobRequest.
         :type x_app_user_id: str
@@ -183,28 +197,6 @@ class List2dModelTrainingJobRequest:
         :type limit: int
         """
         self._limit = limit
-
-    @property
-    def state(self):
-        """Gets the state of this List2dModelTrainingJobRequest.
-
-        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
-
-        :return: The state of this List2dModelTrainingJobRequest.
-        :rtype: str
-        """
-        return self._state
-
-    @state.setter
-    def state(self, state):
-        """Sets the state of this List2dModelTrainingJobRequest.
-
-        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
-
-        :param state: The state of this List2dModelTrainingJobRequest.
-        :type state: str
-        """
-        self._state = state
 
     @property
     def sort_key(self):
@@ -295,6 +287,50 @@ class List2dModelTrainingJobRequest:
         self._create_since = create_since
 
     @property
+    def state(self):
+        """Gets the state of this List2dModelTrainingJobRequest.
+
+        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
+
+        :return: The state of this List2dModelTrainingJobRequest.
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this List2dModelTrainingJobRequest.
+
+        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
+
+        :param state: The state of this List2dModelTrainingJobRequest.
+        :type state: str
+        """
+        self._state = state
+
+    @property
+    def query_project_id(self):
+        """Gets the query_project_id of this List2dModelTrainingJobRequest.
+
+        查询租户id。
+
+        :return: The query_project_id of this List2dModelTrainingJobRequest.
+        :rtype: str
+        """
+        return self._query_project_id
+
+    @query_project_id.setter
+    def query_project_id(self, query_project_id):
+        """Sets the query_project_id of this List2dModelTrainingJobRequest.
+
+        查询租户id。
+
+        :param query_project_id: The query_project_id of this List2dModelTrainingJobRequest.
+        :type query_project_id: str
+        """
+        self._query_project_id = query_project_id
+
+    @property
     def batch_name(self):
         """Gets the batch_name of this List2dModelTrainingJobRequest.
 
@@ -381,6 +417,28 @@ class List2dModelTrainingJobRequest:
         :type name: str
         """
         self._name = name
+
+    @property
+    def model_resolution(self):
+        """Gets the model_resolution of this List2dModelTrainingJobRequest.
+
+        模型分辨率
+
+        :return: The model_resolution of this List2dModelTrainingJobRequest.
+        :rtype: str
+        """
+        return self._model_resolution
+
+    @model_resolution.setter
+    def model_resolution(self, model_resolution):
+        """Sets the model_resolution of this List2dModelTrainingJobRequest.
+
+        模型分辨率
+
+        :param model_resolution: The model_resolution of this List2dModelTrainingJobRequest.
+        :type model_resolution: str
+        """
+        self._model_resolution = model_resolution
 
     def to_dict(self):
         """Returns the model properties as a dict"""

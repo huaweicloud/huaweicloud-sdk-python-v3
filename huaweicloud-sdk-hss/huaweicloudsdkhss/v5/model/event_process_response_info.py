@@ -55,7 +55,10 @@ class EventProcessResponseInfo:
         'virt_process_name': 'str',
         'escape_mode': 'str',
         'escape_cmd': 'str',
-        'process_hash': 'str'
+        'process_hash': 'str',
+        'process_file_hash': 'str',
+        'parent_process_file_hash': 'str',
+        'block': 'int'
     }
 
     attribute_map = {
@@ -97,10 +100,13 @@ class EventProcessResponseInfo:
         'virt_process_name': 'virt_process_name',
         'escape_mode': 'escape_mode',
         'escape_cmd': 'escape_cmd',
-        'process_hash': 'process_hash'
+        'process_hash': 'process_hash',
+        'process_file_hash': 'process_file_hash',
+        'parent_process_file_hash': 'parent_process_file_hash',
+        'block': 'block'
     }
 
-    def __init__(self, process_name=None, process_path=None, process_pid=None, process_uid=None, process_username=None, process_cmdline=None, process_filename=None, process_start_time=None, process_gid=None, process_egid=None, process_euid=None, ancestor_process_path=None, ancestor_process_pid=None, ancestor_process_cmdline=None, parent_process_name=None, parent_process_path=None, parent_process_pid=None, parent_process_uid=None, parent_process_cmdline=None, parent_process_filename=None, parent_process_start_time=None, parent_process_gid=None, parent_process_egid=None, parent_process_euid=None, child_process_name=None, child_process_path=None, child_process_pid=None, child_process_uid=None, child_process_cmdline=None, child_process_filename=None, child_process_start_time=None, child_process_gid=None, child_process_egid=None, child_process_euid=None, virt_cmd=None, virt_process_name=None, escape_mode=None, escape_cmd=None, process_hash=None):
+    def __init__(self, process_name=None, process_path=None, process_pid=None, process_uid=None, process_username=None, process_cmdline=None, process_filename=None, process_start_time=None, process_gid=None, process_egid=None, process_euid=None, ancestor_process_path=None, ancestor_process_pid=None, ancestor_process_cmdline=None, parent_process_name=None, parent_process_path=None, parent_process_pid=None, parent_process_uid=None, parent_process_cmdline=None, parent_process_filename=None, parent_process_start_time=None, parent_process_gid=None, parent_process_egid=None, parent_process_euid=None, child_process_name=None, child_process_path=None, child_process_pid=None, child_process_uid=None, child_process_cmdline=None, child_process_filename=None, child_process_start_time=None, child_process_gid=None, child_process_egid=None, child_process_euid=None, virt_cmd=None, virt_process_name=None, escape_mode=None, escape_cmd=None, process_hash=None, process_file_hash=None, parent_process_file_hash=None, block=None):
         """EventProcessResponseInfo
 
         The model defined in huaweicloud sdk
@@ -183,6 +189,12 @@ class EventProcessResponseInfo:
         :type escape_cmd: str
         :param process_hash: 进程启动文件hash
         :type process_hash: str
+        :param process_file_hash: 进程文件hash
+        :type process_file_hash: str
+        :param parent_process_file_hash: 父进程文件hash
+        :type parent_process_file_hash: str
+        :param block: 是否阻断成功，1阻断成功 0阻断失败
+        :type block: int
         """
         
         
@@ -226,6 +238,9 @@ class EventProcessResponseInfo:
         self._escape_mode = None
         self._escape_cmd = None
         self._process_hash = None
+        self._process_file_hash = None
+        self._parent_process_file_hash = None
+        self._block = None
         self.discriminator = None
 
         if process_name is not None:
@@ -306,6 +321,12 @@ class EventProcessResponseInfo:
             self.escape_cmd = escape_cmd
         if process_hash is not None:
             self.process_hash = process_hash
+        if process_file_hash is not None:
+            self.process_file_hash = process_file_hash
+        if parent_process_file_hash is not None:
+            self.parent_process_file_hash = parent_process_file_hash
+        if block is not None:
+            self.block = block
 
     @property
     def process_name(self):
@@ -1164,6 +1185,72 @@ class EventProcessResponseInfo:
         :type process_hash: str
         """
         self._process_hash = process_hash
+
+    @property
+    def process_file_hash(self):
+        """Gets the process_file_hash of this EventProcessResponseInfo.
+
+        进程文件hash
+
+        :return: The process_file_hash of this EventProcessResponseInfo.
+        :rtype: str
+        """
+        return self._process_file_hash
+
+    @process_file_hash.setter
+    def process_file_hash(self, process_file_hash):
+        """Sets the process_file_hash of this EventProcessResponseInfo.
+
+        进程文件hash
+
+        :param process_file_hash: The process_file_hash of this EventProcessResponseInfo.
+        :type process_file_hash: str
+        """
+        self._process_file_hash = process_file_hash
+
+    @property
+    def parent_process_file_hash(self):
+        """Gets the parent_process_file_hash of this EventProcessResponseInfo.
+
+        父进程文件hash
+
+        :return: The parent_process_file_hash of this EventProcessResponseInfo.
+        :rtype: str
+        """
+        return self._parent_process_file_hash
+
+    @parent_process_file_hash.setter
+    def parent_process_file_hash(self, parent_process_file_hash):
+        """Sets the parent_process_file_hash of this EventProcessResponseInfo.
+
+        父进程文件hash
+
+        :param parent_process_file_hash: The parent_process_file_hash of this EventProcessResponseInfo.
+        :type parent_process_file_hash: str
+        """
+        self._parent_process_file_hash = parent_process_file_hash
+
+    @property
+    def block(self):
+        """Gets the block of this EventProcessResponseInfo.
+
+        是否阻断成功，1阻断成功 0阻断失败
+
+        :return: The block of this EventProcessResponseInfo.
+        :rtype: int
+        """
+        return self._block
+
+    @block.setter
+    def block(self, block):
+        """Sets the block of this EventProcessResponseInfo.
+
+        是否阻断成功，1阻断成功 0阻断失败
+
+        :param block: The block of this EventProcessResponseInfo.
+        :type block: int
+        """
+        self._block = block
 
     def to_dict(self):
         """Returns the model properties as a dict"""

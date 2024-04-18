@@ -38,7 +38,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
         :param command_id: 控制命令ID
         :type command_id: str
-        :param command: 命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
+        :param command: 命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REFRESH_OUTPUT_URL: 更新当前任务的rtmp推流信息。params结构定义： RefreshOutputUrlConfig - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
         :type command: str
         :param result: 命令执行结果
         :type result: str
@@ -89,7 +89,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
     def command(self):
         """Gets the command of this ExecuteSmartLiveCommandResponse.
 
-        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
+        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REFRESH_OUTPUT_URL: 更新当前任务的rtmp推流信息。params结构定义： RefreshOutputUrlConfig - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
 
         :return: The command of this ExecuteSmartLiveCommandResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
     def command(self, command):
         """Sets the command of this ExecuteSmartLiveCommandResponse.
 
-        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
+        命令名称。 - INSERT_PLAY_SCRIPT: 插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。params结构定义：scene_scripts - INSERT_PLAY_AUDIO: 插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo - GET_CURRENT_PLAYING_SCRIPTS: 查询本轮剧本列表。响应为LivePlayingScriptList结构 - REFRESH_OUTPUT_URL: 更新当前任务的rtmp推流信息。params结构定义： RefreshOutputUrlConfig - REWRITE_INTERACTION_RULES: 动态修改互动规则。params结构定义：interaction_rules - GET_LIVE_JOB_CONFIG_INFO: 获取任务中的房间信息。params结构定义：SmartLiveRoomInfo
 
         :param command: The command of this ExecuteSmartLiveCommandResponse.
         :type command: str

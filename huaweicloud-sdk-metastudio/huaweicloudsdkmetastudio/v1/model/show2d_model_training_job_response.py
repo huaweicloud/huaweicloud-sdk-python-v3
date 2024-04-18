@@ -31,6 +31,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'tags': 'list[str]',
         'model_version': 'str',
         'matting_type': 'str',
+        'model_resolution': 'str',
+        'app_user_id': 'str',
         'training_video_download_url': 'str',
         'id_card_image1_download_url': 'str',
         'id_card_image2_download_url': 'str',
@@ -43,8 +45,9 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'markable_video_download_url': 'str',
         'inference_data_process_video_mark_info': 'InferenceVideoMarkInfo',
         'inference_data_process_action_mark_info': 'InferenceActionMarkInfo',
+        'inference_data_process_eye_correction_mark_info': 'InferenceEyeCorrectionMarkInfo',
         'is_background_replacement': 'bool',
-        'model_resolution': 'str',
+        'worker_type': 'list[str]',
         'x_request_id': 'str'
     }
 
@@ -62,6 +65,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'tags': 'tags',
         'model_version': 'model_version',
         'matting_type': 'matting_type',
+        'model_resolution': 'model_resolution',
+        'app_user_id': 'app_user_id',
         'training_video_download_url': 'training_video_download_url',
         'id_card_image1_download_url': 'id_card_image1_download_url',
         'id_card_image2_download_url': 'id_card_image2_download_url',
@@ -74,12 +79,13 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         'markable_video_download_url': 'markable_video_download_url',
         'inference_data_process_video_mark_info': 'inference_data_process_video_mark_info',
         'inference_data_process_action_mark_info': 'inference_data_process_action_mark_info',
+        'inference_data_process_eye_correction_mark_info': 'inference_data_process_eye_correction_mark_info',
         'is_background_replacement': 'is_background_replacement',
-        'model_resolution': 'model_resolution',
+        'worker_type': 'worker_type',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, operation_logs=None, comment_logs=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, is_background_replacement=None, model_resolution=None, x_request_id=None):
+    def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, operation_logs=None, comment_logs=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, inference_data_process_eye_correction_mark_info=None, is_background_replacement=None, worker_type=None, x_request_id=None):
         """Show2dModelTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -88,7 +94,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type job_id: str
         :param name: 分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
         :type name: str
-        :param state: 任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS: 完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回 * JOB_PENDING：挂起 * JOB_FINISH：结束，最终状态，不可再做改变
+        :param state: 任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
         :type state: str
         :param asset_id: 模型资产ID。
         :type asset_id: str
@@ -106,10 +112,14 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type batch_name: str
         :param tags: 分身数字人训练任务标签。
         :type tags: list[str]
-        :param model_version: 分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型
+        :param model_version: 分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型
         :type model_version: str
         :param matting_type: 抠图类型。默认是AI。 * AI：AI抠图 * MANUAL：人工抠图
         :type matting_type: str
+        :param model_resolution: 分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+        :type model_resolution: str
+        :param app_user_id: 自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
+        :type app_user_id: str
         :param training_video_download_url: 分身数字人训练视频下载URL。24小时内有效。
         :type training_video_download_url: str
         :param id_card_image1_download_url: 身份证正面照片下载URL。24小时内有效。
@@ -134,10 +144,12 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type inference_data_process_video_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceVideoMarkInfo`
         :param inference_data_process_action_mark_info: 
         :type inference_data_process_action_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
+        :param inference_data_process_eye_correction_mark_info: 
+        :type inference_data_process_eye_correction_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceEyeCorrectionMarkInfo`
         :param is_background_replacement: 分身数字人是否需要背景替换。需要背景替换的分身数字人训练视频需要绿幕拍摄。
         :type is_background_replacement: bool
-        :param model_resolution: 分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
-        :type model_resolution: str
+        :param worker_type: 转编译任务机型
+        :type worker_type: list[str]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -157,6 +169,8 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._tags = None
         self._model_version = None
         self._matting_type = None
+        self._model_resolution = None
+        self._app_user_id = None
         self._training_video_download_url = None
         self._id_card_image1_download_url = None
         self._id_card_image2_download_url = None
@@ -169,8 +183,9 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._markable_video_download_url = None
         self._inference_data_process_video_mark_info = None
         self._inference_data_process_action_mark_info = None
+        self._inference_data_process_eye_correction_mark_info = None
         self._is_background_replacement = None
-        self._model_resolution = None
+        self._worker_type = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -197,6 +212,10 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.model_version = model_version
         if matting_type is not None:
             self.matting_type = matting_type
+        if model_resolution is not None:
+            self.model_resolution = model_resolution
+        if app_user_id is not None:
+            self.app_user_id = app_user_id
         if training_video_download_url is not None:
             self.training_video_download_url = training_video_download_url
         if id_card_image1_download_url is not None:
@@ -221,10 +240,12 @@ class Show2dModelTrainingJobResponse(SdkResponse):
             self.inference_data_process_video_mark_info = inference_data_process_video_mark_info
         if inference_data_process_action_mark_info is not None:
             self.inference_data_process_action_mark_info = inference_data_process_action_mark_info
+        if inference_data_process_eye_correction_mark_info is not None:
+            self.inference_data_process_eye_correction_mark_info = inference_data_process_eye_correction_mark_info
         if is_background_replacement is not None:
             self.is_background_replacement = is_background_replacement
-        if model_resolution is not None:
-            self.model_resolution = model_resolution
+        if worker_type is not None:
+            self.worker_type = worker_type
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -276,7 +297,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def state(self):
         """Gets the state of this Show2dModelTrainingJobResponse.
 
-        任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS: 完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回 * JOB_PENDING：挂起 * JOB_FINISH：结束，最终状态，不可再做改变
+        任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
 
         :return: The state of this Show2dModelTrainingJobResponse.
         :rtype: str
@@ -287,7 +308,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this Show2dModelTrainingJobResponse.
 
-        任务的状态。 * WAIT_FILE_UPLOAD: 待上传文件 * AUTO_VERIFYING: 自动审核中 * AUTO_VERIFY_FAILED: 自动审核失败 * MANUAL_VERIFYING: 人工审核中 * MANUAL_VERIFY_FAILED: 人工审核失败 * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中 * TRAINING: 训练中 * TRAIN_FAILED: 训练失败 * TRAIN_SUCCESS: 训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS: 完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回 * JOB_PENDING：挂起 * JOB_FINISH：结束，最终状态，不可再做改变
+        任务的状态。 * WAIT_FILE_UPLOAD：待上传文件 * AUTO_VERIFYING：自动审核中 * AUTO_VERIFY_FAILED：自动审核失败 * MANUAL_VERIFYING：人工审核中 * MANUAL_VERIFY_FAILED：人工审核失败 * MANUAL_VERIFY_SUCCESS：审核通过，等待预处理资源 * TRAINING_DATA_PREPROCESSING：训练数据预处理中 * TRAINING_DATA_PREPROCESS_FAILED：训练数据预处理失败 * TRAINING_DATA_PREPROCESS_SUCCESS：训练数据预处理完成，等待训练资源中 * TRAINING：训练中 * TRAIN_FAILED：训练失败 * TRAIN_SUCCESS：训练完成，等待预处理资源 * INFERENCE_DATA_PREPROCESSING：推理数据预处理中 * INFERENCE_DATA_PREPROCESS_FAILED：推理数据预处理失败 * WAIT_MASK_UPLOAD：等待遮罩上传 * WAIT_MAIN_FILE_UPLOAD：等待主文件上传 * JOB_SUCCESS：训练任务完成 * WAIT_USER_CONFIRM：等待用户确认训练效果 * JOB_REJECT：驳回任务 * JOB_PENDING：挂起任务 * JOB_FINISH：任务结束，是最终状态，不支持修改此状态。
 
         :param state: The state of this Show2dModelTrainingJobResponse.
         :type state: str
@@ -474,7 +495,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def model_version(self):
         """Gets the model_version of this Show2dModelTrainingJobResponse.
 
-        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型
+        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型
 
         :return: The model_version of this Show2dModelTrainingJobResponse.
         :rtype: str
@@ -485,7 +506,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     def model_version(self, model_version):
         """Sets the model_version of this Show2dModelTrainingJobResponse.
 
-        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型
+        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型
 
         :param model_version: The model_version of this Show2dModelTrainingJobResponse.
         :type model_version: str
@@ -513,6 +534,50 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         :type matting_type: str
         """
         self._matting_type = matting_type
+
+    @property
+    def model_resolution(self):
+        """Gets the model_resolution of this Show2dModelTrainingJobResponse.
+
+        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+
+        :return: The model_resolution of this Show2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._model_resolution
+
+    @model_resolution.setter
+    def model_resolution(self, model_resolution):
+        """Sets the model_resolution of this Show2dModelTrainingJobResponse.
+
+        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+
+        :param model_resolution: The model_resolution of this Show2dModelTrainingJobResponse.
+        :type model_resolution: str
+        """
+        self._model_resolution = model_resolution
+
+    @property
+    def app_user_id(self):
+        """Gets the app_user_id of this Show2dModelTrainingJobResponse.
+
+        自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
+
+        :return: The app_user_id of this Show2dModelTrainingJobResponse.
+        :rtype: str
+        """
+        return self._app_user_id
+
+    @app_user_id.setter
+    def app_user_id(self, app_user_id):
+        """Sets the app_user_id of this Show2dModelTrainingJobResponse.
+
+        自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
+
+        :param app_user_id: The app_user_id of this Show2dModelTrainingJobResponse.
+        :type app_user_id: str
+        """
+        self._app_user_id = app_user_id
 
     @property
     def training_video_download_url(self):
@@ -771,6 +836,24 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._inference_data_process_action_mark_info = inference_data_process_action_mark_info
 
     @property
+    def inference_data_process_eye_correction_mark_info(self):
+        """Gets the inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
+
+        :return: The inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.InferenceEyeCorrectionMarkInfo`
+        """
+        return self._inference_data_process_eye_correction_mark_info
+
+    @inference_data_process_eye_correction_mark_info.setter
+    def inference_data_process_eye_correction_mark_info(self, inference_data_process_eye_correction_mark_info):
+        """Sets the inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
+
+        :param inference_data_process_eye_correction_mark_info: The inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
+        :type inference_data_process_eye_correction_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceEyeCorrectionMarkInfo`
+        """
+        self._inference_data_process_eye_correction_mark_info = inference_data_process_eye_correction_mark_info
+
+    @property
     def is_background_replacement(self):
         """Gets the is_background_replacement of this Show2dModelTrainingJobResponse.
 
@@ -793,26 +876,26 @@ class Show2dModelTrainingJobResponse(SdkResponse):
         self._is_background_replacement = is_background_replacement
 
     @property
-    def model_resolution(self):
-        """Gets the model_resolution of this Show2dModelTrainingJobResponse.
+    def worker_type(self):
+        """Gets the worker_type of this Show2dModelTrainingJobResponse.
 
-        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+        转编译任务机型
 
-        :return: The model_resolution of this Show2dModelTrainingJobResponse.
-        :rtype: str
+        :return: The worker_type of this Show2dModelTrainingJobResponse.
+        :rtype: list[str]
         """
-        return self._model_resolution
+        return self._worker_type
 
-    @model_resolution.setter
-    def model_resolution(self, model_resolution):
-        """Sets the model_resolution of this Show2dModelTrainingJobResponse.
+    @worker_type.setter
+    def worker_type(self, worker_type):
+        """Sets the worker_type of this Show2dModelTrainingJobResponse.
 
-        分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
+        转编译任务机型
 
-        :param model_resolution: The model_resolution of this Show2dModelTrainingJobResponse.
-        :type model_resolution: str
+        :param worker_type: The worker_type of this Show2dModelTrainingJobResponse.
+        :type worker_type: list[str]
         """
-        self._model_resolution = model_resolution
+        self._worker_type = worker_type
 
     @property
     def x_request_id(self):

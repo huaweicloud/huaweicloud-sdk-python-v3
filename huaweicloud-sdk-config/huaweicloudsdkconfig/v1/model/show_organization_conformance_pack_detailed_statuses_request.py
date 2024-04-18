@@ -64,7 +64,8 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
         self.discriminator = None
 
         self.organization_id = organization_id
-        self.conformance_pack_name = conformance_pack_name
+        if conformance_pack_name is not None:
+            self.conformance_pack_name = conformance_pack_name
         if organization_conformance_pack_id is not None:
             self.organization_conformance_pack_id = organization_conformance_pack_id
         if state is not None:

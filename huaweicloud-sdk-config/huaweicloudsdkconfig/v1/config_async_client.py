@@ -2405,6 +2405,142 @@ class ConfigAsyncClient(Client):
 
         return http_info
 
+    def update_conformance_pack_async(self, request):
+        """更新合规规则包
+
+        更新用户的合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateConformancePack
+        :type request: :class:`huaweicloudsdkconfig.v1.UpdateConformancePackRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.UpdateConformancePackResponse`
+        """
+        http_info = self._update_conformance_pack_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_conformance_pack_async_invoker(self, request):
+        http_info = self._update_conformance_pack_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_conformance_pack_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/conformance-packs/{conformance_pack_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConformancePackResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conformance_pack_id' in local_var_params:
+            path_params['conformance_pack_id'] = local_var_params['conformance_pack_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_organization_conformance_pack_async(self, request):
+        """更新组织合规规则包
+
+        更新用户的组织合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOrganizationConformancePack
+        :type request: :class:`huaweicloudsdkconfig.v1.UpdateOrganizationConformancePackRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.UpdateOrganizationConformancePackResponse`
+        """
+        http_info = self._update_organization_conformance_pack_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_organization_conformance_pack_async_invoker(self, request):
+        http_info = self._update_organization_conformance_pack_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_organization_conformance_pack_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/organizations/{organization_id}/conformance-packs/{conformance_pack_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOrganizationConformancePackResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+        if 'conformance_pack_id' in local_var_params:
+            path_params['conformance_pack_id'] = local_var_params['conformance_pack_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_resource_history_async(self, request):
         """查询资源历史
 

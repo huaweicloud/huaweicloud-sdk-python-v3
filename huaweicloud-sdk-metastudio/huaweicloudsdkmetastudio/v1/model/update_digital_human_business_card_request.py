@@ -35,7 +35,7 @@ class UpdateDigitalHumanBusinessCardRequest:
 
         :param job_id: 任务ID。
         :type job_id: str
-        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
+        :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param body: Body of the UpdateDigitalHumanBusinessCardRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalHumanBusinessCardReq`
@@ -80,7 +80,7 @@ class UpdateDigitalHumanBusinessCardRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this UpdateDigitalHumanBusinessCardRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :return: The x_app_user_id of this UpdateDigitalHumanBusinessCardRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateDigitalHumanBusinessCardRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this UpdateDigitalHumanBusinessCardRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this UpdateDigitalHumanBusinessCardRequest.
         :type x_app_user_id: str

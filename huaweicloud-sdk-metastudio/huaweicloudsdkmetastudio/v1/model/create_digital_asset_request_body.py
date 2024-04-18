@@ -25,7 +25,8 @@ class CreateDigitalAssetRequestBody:
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
-        'shared_config': 'SharedConfig'
+        'shared_config': 'SharedConfig',
+        'is_need_generate_cover': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateDigitalAssetRequestBody:
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
-        'shared_config': 'shared_config'
+        'shared_config': 'shared_config',
+        'is_need_generate_cover': 'is_need_generate_cover'
     }
 
-    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None):
+    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_owner=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, is_need_generate_cover=None):
         """CreateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CreateDigitalAssetRequestBody:
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         :param shared_config: 
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
+        :param is_need_generate_cover: 是否需要生成封面。
+        :type is_need_generate_cover: bool
         """
         
         
@@ -76,6 +80,7 @@ class CreateDigitalAssetRequestBody:
         self._asset_extra_meta = None
         self._system_properties = None
         self._shared_config = None
+        self._is_need_generate_cover = None
         self.discriminator = None
 
         self.asset_name = asset_name
@@ -94,6 +99,8 @@ class CreateDigitalAssetRequestBody:
             self.system_properties = system_properties
         if shared_config is not None:
             self.shared_config = shared_config
+        if is_need_generate_cover is not None:
+            self.is_need_generate_cover = is_need_generate_cover
 
     @property
     def asset_name(self):
@@ -280,6 +287,28 @@ class CreateDigitalAssetRequestBody:
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
         """
         self._shared_config = shared_config
+
+    @property
+    def is_need_generate_cover(self):
+        """Gets the is_need_generate_cover of this CreateDigitalAssetRequestBody.
+
+        是否需要生成封面。
+
+        :return: The is_need_generate_cover of this CreateDigitalAssetRequestBody.
+        :rtype: bool
+        """
+        return self._is_need_generate_cover
+
+    @is_need_generate_cover.setter
+    def is_need_generate_cover(self, is_need_generate_cover):
+        """Sets the is_need_generate_cover of this CreateDigitalAssetRequestBody.
+
+        是否需要生成封面。
+
+        :param is_need_generate_cover: The is_need_generate_cover of this CreateDigitalAssetRequestBody.
+        :type is_need_generate_cover: bool
+        """
+        self._is_need_generate_cover = is_need_generate_cover
 
     def to_dict(self):
         """Returns the model properties as a dict"""

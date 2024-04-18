@@ -43,7 +43,7 @@ class MultiViewModelVersionViewCreateDTO:
         :type modifier: str
         :param version_id: 版本对象ID。
         :type version_id: str
-        :param work_copy_type: 关系的复制类型。 BOTH：复制当前M-V模型作为源端与目标端的关系。 CUSTOM：自定义复制当前M-V模型的关系。 NONE：不复制当前M-V模型的关系。 SOURCE：仅复制当前M-V模型作为源端的关系。 TARGET：仅复制当前M-V模型作为目标端的关系。
+        :param work_copy_type: 关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
         :type work_copy_type: str
         :param custom_link_set: 关系实体名称集合，与workCopyType的值CUSTOM配合使用。
         :type custom_link_set: list[str]
@@ -122,7 +122,7 @@ class MultiViewModelVersionViewCreateDTO:
     def work_copy_type(self):
         """Gets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
 
-        关系的复制类型。 BOTH：复制当前M-V模型作为源端与目标端的关系。 CUSTOM：自定义复制当前M-V模型的关系。 NONE：不复制当前M-V模型的关系。 SOURCE：仅复制当前M-V模型作为源端的关系。 TARGET：仅复制当前M-V模型作为目标端的关系。
+        关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
 
         :return: The work_copy_type of this MultiViewModelVersionViewCreateDTO.
         :rtype: str
@@ -133,7 +133,7 @@ class MultiViewModelVersionViewCreateDTO:
     def work_copy_type(self, work_copy_type):
         """Sets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
 
-        关系的复制类型。 BOTH：复制当前M-V模型作为源端与目标端的关系。 CUSTOM：自定义复制当前M-V模型的关系。 NONE：不复制当前M-V模型的关系。 SOURCE：仅复制当前M-V模型作为源端的关系。 TARGET：仅复制当前M-V模型作为目标端的关系。
+        关系的复制类型。 - BOTH：复制当前M-V模型作为源端与目标端的关系。 - CUSTOM：自定义复制当前M-V模型的关系。 - NONE：不复制当前M-V模型的关系。 - SOURCE：仅复制当前M-V模型作为源端的关系。 - TARGET：仅复制当前M-V模型作为目标端的关系。
 
         :param work_copy_type: The work_copy_type of this MultiViewModelVersionViewCreateDTO.
         :type work_copy_type: str

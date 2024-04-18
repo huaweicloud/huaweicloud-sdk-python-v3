@@ -85,7 +85,7 @@ class ListSwrImageRepositoryRequest:
         :type limit: int
         :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
-        :param scan_status: 扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - download_failed : 下载失败   - image_oversized : 镜像超大
+        :param scan_status: 扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
         :type scan_status: str
         :param instance_name: 企业镜像实例名称
         :type instance_name: str
@@ -374,7 +374,7 @@ class ListSwrImageRepositoryRequest:
     def scan_status(self):
         """Gets the scan_status of this ListSwrImageRepositoryRequest.
 
-        扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - download_failed : 下载失败   - image_oversized : 镜像超大
+        扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
 
         :return: The scan_status of this ListSwrImageRepositoryRequest.
         :rtype: str
@@ -385,7 +385,7 @@ class ListSwrImageRepositoryRequest:
     def scan_status(self, scan_status):
         """Sets the scan_status of this ListSwrImageRepositoryRequest.
 
-        扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - download_failed : 下载失败   - image_oversized : 镜像超大
+        扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
 
         :param scan_status: The scan_status of this ListSwrImageRepositoryRequest.
         :type scan_status: str

@@ -17,7 +17,6 @@ class ListAssetsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_real_ip': 'str',
         'x_app_user_id': 'str',
         'limit': 'int',
         'offset': 'int',
@@ -42,7 +41,6 @@ class ListAssetsRequest:
     }
 
     attribute_map = {
-        'x_real_ip': 'X-REAL-IP',
         'x_app_user_id': 'X-App-UserId',
         'limit': 'limit',
         'offset': 'offset',
@@ -66,14 +64,12 @@ class ListAssetsRequest:
         'role': 'role'
     }
 
-    def __init__(self, x_real_ip=None, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None, action_editable=None, is_movable=None, voice_provider=None, role=None):
         """ListAssetsRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_real_ip: 客户端IP
-        :type x_real_ip: str
-        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
+        :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param limit: 每页显示的条目数量。
         :type limit: int
@@ -109,9 +105,9 @@ class ListAssetsRequest:
         :type system_property: str
         :param action_editable: 动作是否可编辑。仅在分身数字人模型查询时有效。
         :type action_editable: bool
-        :param is_movable: 分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+        :param is_movable: 分身数字人是否支持走动。仅在分身数字人模型查询时有效。
         :type is_movable: bool
-        :param voice_provider: 可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+        :param voice_provider: 取值：HUAWEI_METASTUDIO、MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
         :type voice_provider: str
         :param role: 角色。 SHARER：共享方，SHAREE：被共享方
         :type role: str
@@ -119,7 +115,6 @@ class ListAssetsRequest:
         
         
 
-        self._x_real_ip = None
         self._x_app_user_id = None
         self._limit = None
         self._offset = None
@@ -143,8 +138,6 @@ class ListAssetsRequest:
         self._role = None
         self.discriminator = None
 
-        if x_real_ip is not None:
-            self.x_real_ip = x_real_ip
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
         if limit is not None:
@@ -189,32 +182,10 @@ class ListAssetsRequest:
             self.role = role
 
     @property
-    def x_real_ip(self):
-        """Gets the x_real_ip of this ListAssetsRequest.
-
-        客户端IP
-
-        :return: The x_real_ip of this ListAssetsRequest.
-        :rtype: str
-        """
-        return self._x_real_ip
-
-    @x_real_ip.setter
-    def x_real_ip(self, x_real_ip):
-        """Sets the x_real_ip of this ListAssetsRequest.
-
-        客户端IP
-
-        :param x_real_ip: The x_real_ip of this ListAssetsRequest.
-        :type x_real_ip: str
-        """
-        self._x_real_ip = x_real_ip
-
-    @property
     def x_app_user_id(self):
         """Gets the x_app_user_id of this ListAssetsRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :return: The x_app_user_id of this ListAssetsRequest.
         :rtype: str
@@ -225,7 +196,7 @@ class ListAssetsRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this ListAssetsRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this ListAssetsRequest.
         :type x_app_user_id: str
@@ -610,7 +581,7 @@ class ListAssetsRequest:
     def is_movable(self):
         """Gets the is_movable of this ListAssetsRequest.
 
-        分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+        分身数字人是否支持走动。仅在分身数字人模型查询时有效。
 
         :return: The is_movable of this ListAssetsRequest.
         :rtype: bool
@@ -621,7 +592,7 @@ class ListAssetsRequest:
     def is_movable(self, is_movable):
         """Sets the is_movable of this ListAssetsRequest.
 
-        分身数字人是否资产走动。仅在分身数字人模型查询时有效。
+        分身数字人是否支持走动。仅在分身数字人模型查询时有效。
 
         :param is_movable: The is_movable of this ListAssetsRequest.
         :type is_movable: bool
@@ -632,7 +603,7 @@ class ListAssetsRequest:
     def voice_provider(self):
         """Gets the voice_provider of this ListAssetsRequest.
 
-        可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+        取值：HUAWEI_METASTUDIO、MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
 
         :return: The voice_provider of this ListAssetsRequest.
         :rtype: str
@@ -643,7 +614,7 @@ class ListAssetsRequest:
     def voice_provider(self, voice_provider):
         """Sets the voice_provider of this ListAssetsRequest.
 
-        可取值HUAWEI_METASTUDIO, MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
+        取值：HUAWEI_METASTUDIO、MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
 
         :param voice_provider: The voice_provider of this ListAssetsRequest.
         :type voice_provider: str

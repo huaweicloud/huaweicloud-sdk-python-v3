@@ -33,7 +33,7 @@ class ProxyTransactionSplitRequest:
 
         :param transaction_split: 开启/关闭事务拆分，取值范围是[ON/OFF]
         :type transaction_split: str
-        :param proxy_id_list: 实例的proxy列表
+        :param proxy_id_list: 实例的数据库代理列表，仅支持单proxy使用。
         :type proxy_id_list: list[str]
         """
         
@@ -72,7 +72,7 @@ class ProxyTransactionSplitRequest:
     def proxy_id_list(self):
         """Gets the proxy_id_list of this ProxyTransactionSplitRequest.
 
-        实例的proxy列表
+        实例的数据库代理列表，仅支持单proxy使用。
 
         :return: The proxy_id_list of this ProxyTransactionSplitRequest.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class ProxyTransactionSplitRequest:
     def proxy_id_list(self, proxy_id_list):
         """Sets the proxy_id_list of this ProxyTransactionSplitRequest.
 
-        实例的proxy列表
+        实例的数据库代理列表，仅支持单proxy使用。
 
         :param proxy_id_list: The proxy_id_list of this ProxyTransactionSplitRequest.
         :type proxy_id_list: list[str]

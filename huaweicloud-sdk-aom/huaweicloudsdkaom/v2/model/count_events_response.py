@@ -20,16 +20,18 @@ class CountEventsResponse(SdkResponse):
     openapi_types = {
         'step': 'int',
         'timestamps': 'list[int]',
-        'series': 'list[EventSeries]'
+        'series': 'list[EventSeries]',
+        'summary': 'dict(str, int)'
     }
 
     attribute_map = {
         'step': 'step',
         'timestamps': 'timestamps',
-        'series': 'series'
+        'series': 'series',
+        'summary': 'summary'
     }
 
-    def __init__(self, step=None, timestamps=None, series=None):
+    def __init__(self, step=None, timestamps=None, series=None, summary=None):
         """CountEventsResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class CountEventsResponse(SdkResponse):
         :type timestamps: list[int]
         :param series: 事件或者告警不同级别相同时间序列对应的统计结果。
         :type series: list[:class:`huaweicloudsdkaom.v2.EventSeries`]
+        :param summary: 各类告警信息的数量汇总
+        :type summary: dict(str, int)
         """
         
         super(CountEventsResponse, self).__init__()
@@ -47,6 +51,7 @@ class CountEventsResponse(SdkResponse):
         self._step = None
         self._timestamps = None
         self._series = None
+        self._summary = None
         self.discriminator = None
 
         if step is not None:
@@ -55,6 +60,8 @@ class CountEventsResponse(SdkResponse):
             self.timestamps = timestamps
         if series is not None:
             self.series = series
+        if summary is not None:
+            self.summary = summary
 
     @property
     def step(self):
@@ -121,6 +128,28 @@ class CountEventsResponse(SdkResponse):
         :type series: list[:class:`huaweicloudsdkaom.v2.EventSeries`]
         """
         self._series = series
+
+    @property
+    def summary(self):
+        """Gets the summary of this CountEventsResponse.
+
+        各类告警信息的数量汇总
+
+        :return: The summary of this CountEventsResponse.
+        :rtype: dict(str, int)
+        """
+        return self._summary
+
+    @summary.setter
+    def summary(self, summary):
+        """Sets the summary of this CountEventsResponse.
+
+        各类告警信息的数量汇总
+
+        :param summary: The summary of this CountEventsResponse.
+        :type summary: dict(str, int)
+        """
+        self._summary = summary
 
     def to_dict(self):
         """Returns the model properties as a dict"""

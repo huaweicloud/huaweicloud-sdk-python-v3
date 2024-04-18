@@ -36,7 +36,7 @@ class CreateFileResponse(SdkResponse):
 
         :param file_id: 文件ID。
         :type file_id: str
-        :param upload_url: 文件上传地址，有效期为24小时。 &gt; * 调用OBS的[\&quot;PUT上传\&quot;](https://support.huaweicloud.com/api-obs/obs_04_0080.html)接口上传文件。 &gt; * 调用上述接口时，Content-MD5头必须填写，填写的值跟file_md5中的值相同。
+        :param upload_url: 文件上传地址，有效期为24小时。 &gt; * [调用OBS的[“PUT上传”](https://support.huaweicloud.com/api-obs/obs_04_0080.html)接口上传文件。](tag:hc) &gt; * [调用OBS的[“PUT上传”](https://support.huaweicloud.com/intl/zh-cn/api-obs/obs_04_0080.html)接口上传文件。](tag:hk) &gt; * [调用OBS的“PUT上传”接口上传文件。](tag:cmcc) &gt; * 调用上述接口时，Content-MD5头必须填写，填写的值跟file_md5中的值相同。
         :type upload_url: str
         :param x_request_id: 
         :type x_request_id: str
@@ -82,7 +82,7 @@ class CreateFileResponse(SdkResponse):
     def upload_url(self):
         """Gets the upload_url of this CreateFileResponse.
 
-        文件上传地址，有效期为24小时。 > * 调用OBS的[\"PUT上传\"](https://support.huaweicloud.com/api-obs/obs_04_0080.html)接口上传文件。 > * 调用上述接口时，Content-MD5头必须填写，填写的值跟file_md5中的值相同。
+        文件上传地址，有效期为24小时。 > * [调用OBS的[“PUT上传”](https://support.huaweicloud.com/api-obs/obs_04_0080.html)接口上传文件。](tag:hc) > * [调用OBS的[“PUT上传”](https://support.huaweicloud.com/intl/zh-cn/api-obs/obs_04_0080.html)接口上传文件。](tag:hk) > * [调用OBS的“PUT上传”接口上传文件。](tag:cmcc) > * 调用上述接口时，Content-MD5头必须填写，填写的值跟file_md5中的值相同。
 
         :return: The upload_url of this CreateFileResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateFileResponse(SdkResponse):
     def upload_url(self, upload_url):
         """Sets the upload_url of this CreateFileResponse.
 
-        文件上传地址，有效期为24小时。 > * 调用OBS的[\"PUT上传\"](https://support.huaweicloud.com/api-obs/obs_04_0080.html)接口上传文件。 > * 调用上述接口时，Content-MD5头必须填写，填写的值跟file_md5中的值相同。
+        文件上传地址，有效期为24小时。 > * [调用OBS的[“PUT上传”](https://support.huaweicloud.com/api-obs/obs_04_0080.html)接口上传文件。](tag:hc) > * [调用OBS的[“PUT上传”](https://support.huaweicloud.com/intl/zh-cn/api-obs/obs_04_0080.html)接口上传文件。](tag:hk) > * [调用OBS的“PUT上传”接口上传文件。](tag:cmcc) > * 调用上述接口时，Content-MD5头必须填写，填写的值跟file_md5中的值相同。
 
         :param upload_url: The upload_url of this CreateFileResponse.
         :type upload_url: str

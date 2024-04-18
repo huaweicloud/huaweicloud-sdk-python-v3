@@ -26,7 +26,9 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
         'excluded_accounts': 'list[str]',
         'vars_structure': 'list[VarsStructure]',
         'created_at': 'str',
-        'updated_at': 'str'
+        'updated_at': 'str',
+        'template_key': 'str',
+        'template_uri': 'str'
     }
 
     attribute_map = {
@@ -38,10 +40,12 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
         'excluded_accounts': 'excluded_accounts',
         'vars_structure': 'vars_structure',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'template_key': 'template_key',
+        'template_uri': 'template_uri'
     }
 
-    def __init__(self, org_conformance_pack_id=None, org_conformance_pack_name=None, owner_id=None, organization_id=None, org_conformance_pack_urn=None, excluded_accounts=None, vars_structure=None, created_at=None, updated_at=None):
+    def __init__(self, org_conformance_pack_id=None, org_conformance_pack_name=None, owner_id=None, organization_id=None, org_conformance_pack_urn=None, excluded_accounts=None, vars_structure=None, created_at=None, updated_at=None, template_key=None, template_uri=None):
         """ShowOrganizationConformancePackResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +68,10 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
         :type created_at: str
         :param updated_at: 组织合规规则包更新时间。
         :type updated_at: str
+        :param template_key: 预定义合规规则包模板名称。
+        :type template_key: str
+        :param template_uri: 合规规则包模板OBS地址
+        :type template_uri: str
         """
         
         super(ShowOrganizationConformancePackResponse, self).__init__()
@@ -77,6 +85,8 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
         self._vars_structure = None
         self._created_at = None
         self._updated_at = None
+        self._template_key = None
+        self._template_uri = None
         self.discriminator = None
 
         if org_conformance_pack_id is not None:
@@ -97,6 +107,10 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if template_key is not None:
+            self.template_key = template_key
+        if template_uri is not None:
+            self.template_uri = template_uri
 
     @property
     def org_conformance_pack_id(self):
@@ -295,6 +309,50 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
         :type updated_at: str
         """
         self._updated_at = updated_at
+
+    @property
+    def template_key(self):
+        """Gets the template_key of this ShowOrganizationConformancePackResponse.
+
+        预定义合规规则包模板名称。
+
+        :return: The template_key of this ShowOrganizationConformancePackResponse.
+        :rtype: str
+        """
+        return self._template_key
+
+    @template_key.setter
+    def template_key(self, template_key):
+        """Sets the template_key of this ShowOrganizationConformancePackResponse.
+
+        预定义合规规则包模板名称。
+
+        :param template_key: The template_key of this ShowOrganizationConformancePackResponse.
+        :type template_key: str
+        """
+        self._template_key = template_key
+
+    @property
+    def template_uri(self):
+        """Gets the template_uri of this ShowOrganizationConformancePackResponse.
+
+        合规规则包模板OBS地址
+
+        :return: The template_uri of this ShowOrganizationConformancePackResponse.
+        :rtype: str
+        """
+        return self._template_uri
+
+    @template_uri.setter
+    def template_uri(self, template_uri):
+        """Sets the template_uri of this ShowOrganizationConformancePackResponse.
+
+        合规规则包模板OBS地址
+
+        :param template_uri: The template_uri of this ShowOrganizationConformancePackResponse.
+        :type template_uri: str
+        """
+        self._template_uri = template_uri
 
     def to_dict(self):
         """Returns the model properties as a dict"""

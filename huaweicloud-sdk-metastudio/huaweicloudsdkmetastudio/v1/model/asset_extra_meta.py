@@ -23,7 +23,10 @@ class AssetExtraMeta:
         'animation_meta': 'AnimationAssetMeta',
         'scene_meta': 'SceneAssetMeta',
         'material_meta': 'MaterialAssetMeta',
-        'human_model_2d_meta': 'HumanModel2DAssetMeta'
+        'human_model_2d_meta': 'HumanModel2DAssetMeta',
+        'image_meta': 'ImageAssetMeta',
+        'video_meta': 'VideoAssetMeta',
+        'audio_meta': 'AudioAssetMeta'
     }
 
     attribute_map = {
@@ -33,10 +36,13 @@ class AssetExtraMeta:
         'animation_meta': 'animation_meta',
         'scene_meta': 'scene_meta',
         'material_meta': 'material_meta',
-        'human_model_2d_meta': 'human_model_2d_meta'
+        'human_model_2d_meta': 'human_model_2d_meta',
+        'image_meta': 'image_meta',
+        'video_meta': 'video_meta',
+        'audio_meta': 'audio_meta'
     }
 
-    def __init__(self, human_model_meta=None, voice_model_meta=None, ppt_meta=None, animation_meta=None, scene_meta=None, material_meta=None, human_model_2d_meta=None):
+    def __init__(self, human_model_meta=None, voice_model_meta=None, ppt_meta=None, animation_meta=None, scene_meta=None, material_meta=None, human_model_2d_meta=None, image_meta=None, video_meta=None, audio_meta=None):
         """AssetExtraMeta
 
         The model defined in huaweicloud sdk
@@ -55,6 +61,12 @@ class AssetExtraMeta:
         :type material_meta: :class:`huaweicloudsdkmetastudio.v1.MaterialAssetMeta`
         :param human_model_2d_meta: 
         :type human_model_2d_meta: :class:`huaweicloudsdkmetastudio.v1.HumanModel2DAssetMeta`
+        :param image_meta: 
+        :type image_meta: :class:`huaweicloudsdkmetastudio.v1.ImageAssetMeta`
+        :param video_meta: 
+        :type video_meta: :class:`huaweicloudsdkmetastudio.v1.VideoAssetMeta`
+        :param audio_meta: 
+        :type audio_meta: :class:`huaweicloudsdkmetastudio.v1.AudioAssetMeta`
         """
         
         
@@ -66,6 +78,9 @@ class AssetExtraMeta:
         self._scene_meta = None
         self._material_meta = None
         self._human_model_2d_meta = None
+        self._image_meta = None
+        self._video_meta = None
+        self._audio_meta = None
         self.discriminator = None
 
         if human_model_meta is not None:
@@ -82,6 +97,12 @@ class AssetExtraMeta:
             self.material_meta = material_meta
         if human_model_2d_meta is not None:
             self.human_model_2d_meta = human_model_2d_meta
+        if image_meta is not None:
+            self.image_meta = image_meta
+        if video_meta is not None:
+            self.video_meta = video_meta
+        if audio_meta is not None:
+            self.audio_meta = audio_meta
 
     @property
     def human_model_meta(self):
@@ -208,6 +229,60 @@ class AssetExtraMeta:
         :type human_model_2d_meta: :class:`huaweicloudsdkmetastudio.v1.HumanModel2DAssetMeta`
         """
         self._human_model_2d_meta = human_model_2d_meta
+
+    @property
+    def image_meta(self):
+        """Gets the image_meta of this AssetExtraMeta.
+
+        :return: The image_meta of this AssetExtraMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ImageAssetMeta`
+        """
+        return self._image_meta
+
+    @image_meta.setter
+    def image_meta(self, image_meta):
+        """Sets the image_meta of this AssetExtraMeta.
+
+        :param image_meta: The image_meta of this AssetExtraMeta.
+        :type image_meta: :class:`huaweicloudsdkmetastudio.v1.ImageAssetMeta`
+        """
+        self._image_meta = image_meta
+
+    @property
+    def video_meta(self):
+        """Gets the video_meta of this AssetExtraMeta.
+
+        :return: The video_meta of this AssetExtraMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoAssetMeta`
+        """
+        return self._video_meta
+
+    @video_meta.setter
+    def video_meta(self, video_meta):
+        """Sets the video_meta of this AssetExtraMeta.
+
+        :param video_meta: The video_meta of this AssetExtraMeta.
+        :type video_meta: :class:`huaweicloudsdkmetastudio.v1.VideoAssetMeta`
+        """
+        self._video_meta = video_meta
+
+    @property
+    def audio_meta(self):
+        """Gets the audio_meta of this AssetExtraMeta.
+
+        :return: The audio_meta of this AssetExtraMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AudioAssetMeta`
+        """
+        return self._audio_meta
+
+    @audio_meta.setter
+    def audio_meta(self, audio_meta):
+        """Sets the audio_meta of this AssetExtraMeta.
+
+        :param audio_meta: The audio_meta of this AssetExtraMeta.
+        :type audio_meta: :class:`huaweicloudsdkmetastudio.v1.AudioAssetMeta`
+        """
+        self._audio_meta = audio_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""

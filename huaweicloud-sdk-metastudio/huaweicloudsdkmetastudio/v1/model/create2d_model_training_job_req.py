@@ -23,7 +23,8 @@ class Create2dModelTrainingJobReq:
         'video_multipart_count': 'int',
         'is_background_replacement': 'bool',
         'batch_name': 'str',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'model_version': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class Create2dModelTrainingJobReq:
         'video_multipart_count': 'video_multipart_count',
         'is_background_replacement': 'is_background_replacement',
         'batch_name': 'batch_name',
-        'tags': 'tags'
+        'tags': 'tags',
+        'model_version': 'model_version'
     }
 
-    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None):
+    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, model_version=None):
         """Create2dModelTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class Create2dModelTrainingJobReq:
         :type batch_name: str
         :param tags: 分身数字人训练任务标签。
         :type tags: list[str]
+        :param model_version: 分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型 &gt; * V2版本已废弃不用
+        :type model_version: str
         """
         
         
@@ -66,6 +70,7 @@ class Create2dModelTrainingJobReq:
         self._is_background_replacement = None
         self._batch_name = None
         self._tags = None
+        self._model_version = None
         self.discriminator = None
 
         self.name = name
@@ -81,6 +86,8 @@ class Create2dModelTrainingJobReq:
             self.batch_name = batch_name
         if tags is not None:
             self.tags = tags
+        if model_version is not None:
+            self.model_version = model_version
 
     @property
     def name(self):
@@ -235,6 +242,28 @@ class Create2dModelTrainingJobReq:
         :type tags: list[str]
         """
         self._tags = tags
+
+    @property
+    def model_version(self):
+        """Gets the model_version of this Create2dModelTrainingJobReq.
+
+        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型 > * V2版本已废弃不用
+
+        :return: The model_version of this Create2dModelTrainingJobReq.
+        :rtype: str
+        """
+        return self._model_version
+
+    @model_version.setter
+    def model_version(self, model_version):
+        """Sets the model_version of this Create2dModelTrainingJobReq.
+
+        分身数字人模型版本。默认是V3版本模型。 * V2: V2版本模型 * V3：V3版本模型 * V3.2：V3.2版本模型 > * V2版本已废弃不用
+
+        :param model_version: The model_version of this Create2dModelTrainingJobReq.
+        :type model_version: str
+        """
+        self._model_version = model_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

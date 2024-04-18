@@ -33,7 +33,7 @@ class Execute2dModelTrainingCommandByUserReq:
 
         The model defined in huaweicloud sdk
 
-        :param command: 命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取已上传分片信息 * CONFIRM_MULTIPART_UPLOADED：确认视频所有分片文件已上传  &gt; * CONFIRM_ACCEPT/CONFIRM_REJECT/CONFIRM_ANSWER/CONFIRM_PENDING/CONFIRM_ACTIVE命令仅NA白名单用户可用。
+        :param command: 命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取已上传分片信息 * CONFIRM_MULTIPART_UPLOADED：确认视频所有分片文件已上传 &gt; * CONFIRM_ACCEPT/CONFIRM_REJECT/CONFIRM_ANSWER/CONFIRM_PENDING/CONFIRM_ACTIVE命令仅NA白名单用户可用。
         :type command: str
         :param command_message: 命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO: 上传视频
         :type command_message: str
@@ -58,7 +58,7 @@ class Execute2dModelTrainingCommandByUserReq:
     def command(self):
         """Gets the command of this Execute2dModelTrainingCommandByUserReq.
 
-        命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取已上传分片信息 * CONFIRM_MULTIPART_UPLOADED：确认视频所有分片文件已上传  > * CONFIRM_ACCEPT/CONFIRM_REJECT/CONFIRM_ANSWER/CONFIRM_PENDING/CONFIRM_ACTIVE命令仅NA白名单用户可用。
+        命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取已上传分片信息 * CONFIRM_MULTIPART_UPLOADED：确认视频所有分片文件已上传 > * CONFIRM_ACCEPT/CONFIRM_REJECT/CONFIRM_ANSWER/CONFIRM_PENDING/CONFIRM_ACTIVE命令仅NA白名单用户可用。
 
         :return: The command of this Execute2dModelTrainingCommandByUserReq.
         :rtype: str
@@ -69,7 +69,7 @@ class Execute2dModelTrainingCommandByUserReq:
     def command(self, command):
         """Sets the command of this Execute2dModelTrainingCommandByUserReq.
 
-        命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取已上传分片信息 * CONFIRM_MULTIPART_UPLOADED：确认视频所有分片文件已上传  > * CONFIRM_ACCEPT/CONFIRM_REJECT/CONFIRM_ANSWER/CONFIRM_PENDING/CONFIRM_ACTIVE命令仅NA白名单用户可用。
+        命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取已上传分片信息 * CONFIRM_MULTIPART_UPLOADED：确认视频所有分片文件已上传 > * CONFIRM_ACCEPT/CONFIRM_REJECT/CONFIRM_ANSWER/CONFIRM_PENDING/CONFIRM_ACTIVE命令仅NA白名单用户可用。
 
         :param command: The command of this Execute2dModelTrainingCommandByUserReq.
         :type command: str

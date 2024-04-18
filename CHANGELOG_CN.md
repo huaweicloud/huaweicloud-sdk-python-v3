@@ -1,3 +1,454 @@
+# 3.1.92 2024-04-18
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEvents**
+    - 请求参数变更
+      - `+ Enterprise-Project-Id`
+  - **CountEvents**
+    - 响应参数变更
+      - `+ summary`
+  - **UpdateAlarmRule**
+    - 请求参数变更
+      - `+ period: enum value [3600000]`
+      - `- period: enum value [36000000]`
+  - **AddAlarmRule**
+    - 请求参数变更
+      - `+ period: enum value [3600000]`
+      - `- period: enum value [36000000]`
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 支持接口`UpdateConformancePack`、`UpdateOrganizationConformancePack`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowOrganizationPolicyAssignmentDetailedStatus**
+    - 请求参数变更
+      - `* organization_policy_assignment_name: required -> optional`
+  - **ShowConformancePack**
+    - 响应参数变更
+      - `+ template_key`
+      - `+ agency_name`
+      - `+ template_uri`
+      - `+ status: enum value [UPDATE_SUCCESSFUL,UPDATE_IN_PROGRESS,UPDATE_FAILED]`
+  - **ShowOrganizationConformancePack**
+    - 响应参数变更
+      - `+ template_key`
+      - `+ template_uri`
+  - **ShowOrganizationConformancePackDetailedStatuses**
+    - 请求参数变更
+      - `* conformance_pack_name: required -> optional`
+      - `+ state: enum value [UPDATE_SUCCESSFUL,UPDATE_IN_PROGRESS,UPDATE_FAILED]`
+  - **ShowTrackerConfig**
+    - 响应参数变更
+      - `+ retention_period_in_days`
+  - **CreateTrackerConfig**
+    - 请求参数变更
+      - `+ retention_period_in_days`
+  - **CreateConformancePack**
+    - 响应参数变更
+      - `+ template_key`
+      - `+ agency_name`
+      - `+ template_uri`
+      - `+ status: enum value [UPDATE_SUCCESSFUL,UPDATE_IN_PROGRESS,UPDATE_FAILED]`
+  - **ListConformancePacks**
+    - 响应参数变更
+      - `+ template_key`
+      - `+ agency_name`
+      - `+ template_uri`
+      - `+ value.template_key`
+      - `+ value.template_uri`
+      - `+ value.agency_name`
+      - `+ value.status: enum value [UPDATE_SUCCESSFUL,UPDATE_IN_PROGRESS,UPDATE_FAILED]`
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlavors**
+    - 响应参数变更
+      - `+ data.spec`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListMigrationTask**
+    - 响应参数变更
+      - `+ migration_tasks.description`
+      - `+ migration_tasks.source_instance_status`
+      - `+ migration_tasks.target_instance_status`
+      - `+ migration_tasks.source_instance_subnet_id`
+      - `+ migration_tasks.target_instance_subnet_id`
+      - `+ migration_tasks.source_instance_spec_code`
+      - `+ migration_tasks.target_instance_spec_code`
+      - `+ migration_tasks.error_message`
+      - `+ migration_tasks.released_at`
+      - `+ migration_tasks.version`
+      - `+ migration_tasks.resume_mode`
+      - `+ migration_tasks.supported_features`
+  - **ShowMigrationTask**
+    - 响应参数变更
+      - `+ task_status`
+      - `+ tenant_security_group_id`
+      - `+ tenant_vpc_id`
+      - `+ released_at`
+      - `+ version`
+      - `+ resume_mode`
+      - `+ supported_features`
+      - `+ bandwidth_limit_mb`
+      - `+ tenant_subnet_id`
+  - **StopMigrationTask**
+    - 响应参数变更
+      - `+ task_status`
+      - `+ tenant_security_group_id`
+      - `+ tenant_vpc_id`
+      - `+ released_at`
+      - `+ version`
+      - `+ resume_mode`
+      - `+ supported_features`
+      - `+ bandwidth_limit_mb`
+      - `+ tenant_subnet_id`
+  - **ListBackgroundTask**
+    - 响应参数变更
+      - `+ tasks.details.old_resource_spec_code`
+      - `+ tasks.details.new_resource_spec_code`
+      - `+ tasks.details.old_replica_num`
+      - `+ tasks.details.new_replica_num`
+      - `+ tasks.details.old_cache_type`
+      - `+ tasks.details.new_cache_type`
+      - `+ tasks.details.replica_ip`
+      - `+ tasks.details.replica_az`
+      - `+ tasks.details.group_name`
+      - `+ tasks.details.old_port`
+      - `+ tasks.details.new_port`
+      - `+ tasks.details.is_only_adjust_charging`
+      - `+ tasks.details.account_name`
+      - `+ tasks.details.source_ip`
+      - `+ tasks.details.target_ip`
+      - `+ tasks.details.node_name`
+      - `+ tasks.details.rename_commands`
+      - `+ tasks.details.updated_config_length`
+  - **ListCenterTask**
+    - 响应参数变更
+      - `+ tasks.details.old_resource_spec_code`
+      - `+ tasks.details.new_resource_spec_code`
+      - `+ tasks.details.old_replica_num`
+      - `+ tasks.details.new_replica_num`
+      - `+ tasks.details.old_cache_type`
+      - `+ tasks.details.new_cache_type`
+      - `+ tasks.details.replica_ip`
+      - `+ tasks.details.replica_az`
+      - `+ tasks.details.group_name`
+      - `+ tasks.details.old_port`
+      - `+ tasks.details.new_port`
+      - `+ tasks.details.is_only_adjust_charging`
+      - `+ tasks.details.account_name`
+      - `+ tasks.details.source_ip`
+      - `+ tasks.details.target_ip`
+      - `+ tasks.details.node_name`
+      - `+ tasks.details.rename_commands`
+      - `+ tasks.details.updated_config_length`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持接口`ListTopIoTraffics`、`ShowErrorLogSwitchStatus`、`ListInstanceErrorLogs`、`DeleteInstanceTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowInstancesStatistics`
+  - **UpgradeInstanceVersion**
+    - 请求参数变更
+      - `+ upgrade_action`
+      - `- upgrde_action`
+      - `- is_parallel_upgrade`
+  - **ShowBackupPolicy**
+    - 响应参数变更
+      - `* backup_policy.differential_period: string -> int32`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSecurityEvents**
+    - 响应参数变更
+      - `+ data_list.process_info_list.process_file_hash`
+      - `+ data_list.process_info_list.parent_process_file_hash`
+      - `+ data_list.process_info_list.block`
+
+### HuaweiCloud SDK iDMEClassicAPI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchCreateView**
+    - 请求参数变更
+      - `- params.workCopyType: enum value [BOTH,SOURCE,TARGET,NONE,CUSTOM]`
+  - **CreateView**
+    - 请求参数变更
+      - `- params.workCopyType: enum value [BOTH,SOURCE,TARGET,NONE,CUSTOM]`
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **Create2dModelTrainingJob**
+    - 请求参数变更
+      - `+ model_version`
+  - **List2dModelTrainingJob**
+    - 请求参数变更
+      - `+ query_project_id`
+      - `+ model_resolution`
+    - 响应参数变更
+      - `+ jobs.model_resolution`
+      - `+ jobs.app_user_id`
+      - `+ jobs.model_version: enum value [V3.2]`
+  - **ShowRobot**
+    - 响应参数变更
+      - `+ room_id`
+      - `- concurrency`
+  - **UpdateRobot**
+    - 请求参数变更
+      - `+ room_id`
+      - `- concurrency`
+  - **ExecuteSmartLiveCommand**
+    - 请求参数变更
+      - `+ command: enum value [REFRESH_OUTPUT_URL]`
+    - 响应参数变更
+      - `+ command: enum value [REFRESH_OUTPUT_URL]`
+  - **Update2dModelTrainingJob**
+    - 请求参数变更
+      - `* body: object<Create2dModelTrainingJobReq> -> object<Update2dModelTrainingJobReq>`
+  - **Show2dModelTrainingJob**
+    - 响应参数变更
+      - `+ inference_data_process_eye_correction_mark_info`
+      - `+ worker_type`
+      - `+ app_user_id`
+      - `+ model_version: enum value [V3.2]`
+      - `+ operation_logs.log_type: enum value [SYSTEM_COMPILE_FAILED,SYSTEM_COMPILE_SUCCESS]`
+  - **CreateRobot**
+    - 请求参数变更
+      - `+ room_id`
+      - `- concurrency`
+  - **ListRobot**
+    - 请求参数变更
+      - `+ room_id`
+    - 响应参数变更
+      - `+ room_id`
+      - `- concurrency`
+      - `+ data.room_id`
+      - `- data.concurrency`
+  - **CreateSmartChatRoom**
+    - 请求参数变更
+      - `+ background_config.background_color_config`
+      - `- background_config.background_title`
+      - `- background_config.human_position_2d`
+      - `- background_config.human_size_2d`
+      - `- background_config.background_cover_url`
+      - `+ background_config.background_type: enum value [COLOR]`
+  - **ShowSmartChatRoom**
+    - 响应参数变更
+      - `+ background_config.background_color_config`
+      - `- background_config.background_title`
+      - `- background_config.human_position_2d`
+      - `- background_config.human_size_2d`
+      - `- background_config.background_cover_url`
+      - `+ background_config.background_type: enum value [COLOR]`
+  - **UpdateSmartChatRoom**
+    - 请求参数变更
+      - `+ background_config.background_color_config`
+      - `- background_config.background_title`
+      - `- background_config.human_position_2d`
+      - `- background_config.human_size_2d`
+      - `- background_config.background_cover_url`
+      - `+ background_config.background_type: enum value [COLOR]`
+    - 响应参数变更
+      - `+ background_config.background_color_config`
+      - `- background_config.background_title`
+      - `- background_config.human_position_2d`
+      - `- background_config.human_size_2d`
+      - `- background_config.background_cover_url`
+      - `+ background_config.background_type: enum value [COLOR]`
+  - **ShowSmartLive**
+    - 响应参数变更
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+  - **ShowVideoMotionCaptureJob**
+    - 响应参数变更
+      - `+ output_info.output_data_version`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+    - 响应参数变更
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+  - **ListSmartLive**
+    - 响应参数变更
+      - `+ smart_live_jobs.live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+  - **ListSmartLiveJobs**
+    - 响应参数变更
+      - `+ smart_live_jobs.live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+  - **CreateVideoMotionCaptureJob**
+    - 请求参数变更
+      - `+ output_info.output_data_version`
+  - **ListVideoMotionCaptureJobs**
+    - 响应参数变更
+      - `+ video_motion_capture_jobs.output_info.output_data_version`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ asset_extra_meta.image_meta`
+      - `+ asset_extra_meta.video_meta`
+      - `+ asset_extra_meta.audio_meta`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_extra_meta.image_meta`
+      - `+ asset_extra_meta.video_meta`
+      - `+ asset_extra_meta.audio_meta`
+    - 响应参数变更
+      - `+ asset_extra_meta.image_meta`
+      - `+ asset_extra_meta.video_meta`
+      - `+ asset_extra_meta.audio_meta`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **CreatePhotoDigitalHumanVideo**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **ShowPhotoDigitalHumanVideo**
+    - 响应参数变更
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+      - `+ scene_scripts.background_config.background_color_config`
+      - `- scene_scripts.background_config.background_title`
+      - `- scene_scripts.background_config.human_position_2d`
+      - `- scene_scripts.background_config.human_size_2d`
+      - `- scene_scripts.background_config.background_cover_url`
+      - `+ scene_scripts.background_config.background_type: enum value [COLOR]`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+      - `+ scene_scripts.background_config.background_color_config`
+      - `- scene_scripts.background_config.background_title`
+      - `- scene_scripts.background_config.human_position_2d`
+      - `- scene_scripts.background_config.human_size_2d`
+      - `- scene_scripts.background_config.background_cover_url`
+      - `+ scene_scripts.background_config.background_type: enum value [COLOR]`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+      - `+ scene_scripts.background_config.background_color_config`
+      - `- scene_scripts.background_config.background_title`
+      - `- scene_scripts.background_config.human_position_2d`
+      - `- scene_scripts.background_config.human_size_2d`
+      - `- scene_scripts.background_config.background_cover_url`
+      - `+ scene_scripts.background_config.background_type: enum value [COLOR]`
+    - 响应参数变更
+      - `+ play_policy.need_independent_capture_client`
+      - `+ live_event_callback_config.auth_type: enum value [RTMP_STREAM_STATE_CHANGE,MEITUAN_DEFAULT]`
+      - `+ scene_scripts.background_config.background_color_config`
+      - `- scene_scripts.background_config.background_title`
+      - `- scene_scripts.background_config.human_position_2d`
+      - `- scene_scripts.background_config.human_size_2d`
+      - `- scene_scripts.background_config.background_cover_url`
+      - `+ scene_scripts.background_config.background_type: enum value [COLOR]`
+  - **CreateVideoScripts**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **UpdateVideoScript**
+    - 请求参数变更
+      - `+ shoot_scripts.shoot_script.background_config.background_color_config`
+      - `- shoot_scripts.shoot_script.background_config.background_title`
+      - `- shoot_scripts.shoot_script.background_config.human_position_2d`
+      - `- shoot_scripts.shoot_script.background_config.human_size_2d`
+      - `- shoot_scripts.shoot_script.background_config.background_cover_url`
+      - `+ shoot_scripts.shoot_script.background_config.background_type: enum value [COLOR]`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ is_need_generate_cover`
+      - `+ asset_extra_meta.image_meta`
+      - `+ asset_extra_meta.video_meta`
+      - `+ asset_extra_meta.audio_meta`
+  - **ListAssets**
+    - 请求参数变更
+      - `- X-REAL-IP`
+    - 响应参数变更
+      - `+ assets.asset_extra_meta.image_meta`
+      - `+ assets.asset_extra_meta.video_meta`
+      - `+ assets.asset_extra_meta.audio_meta`
+
+### HuaweiCloud SDK TMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteResourceTag**
+    - 请求参数变更
+      - `+ tags.value`
+
 # 3.1.91 2024-04-11
 
 ### HuaweiCloud SDK AOS

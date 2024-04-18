@@ -785,9 +785,9 @@ class MetaStudioAsyncClient(Client):
         """创建资产
 
         该接口用于在资产库中添加上传新的媒体资产。可上传的资产类型包括：分身数字人模型、背景图片、素材图片、素材视频、PPT等。
-        * &gt; 资产类型是IMAGE时，通过system_properties来区分背景图片（BACKGROUND_IMG）、素材图片（MATERIAL_IMG）。
-        * &gt; 资产类型是VIDEO时，通过system_properties来区分素材视频（MATERIAL_VIDEO）、名片视频（BUSSINESS_CARD_VIDEO）。
-        * &gt; MetaStudio平台生成的视频，system_properties带CREATED_BY_PLATFORM。
+        &gt; - 资产类型是IMAGE时，通过system_properties来区分背景图片（BACKGROUND_IMG）、素材图片（MATERIAL_IMG）。
+        &gt; - 资产类型是VIDEO时，通过system_properties来区分素材视频（MATERIAL_VIDEO）、名片视频（BUSSINESS_CARD_VIDEO）。
+        &gt; - MetaStudio平台生成的视频，system_properties带CREATED_BY_PLATFORM。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1063,8 +1063,6 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('role', local_var_params['role']))
 
         header_params = {}
-        if 'x_real_ip' in local_var_params:
-            header_params['X-REAL-IP'] = local_var_params['x_real_ip']
         if 'x_app_user_id' in local_var_params:
             header_params['X-App-UserId'] = local_var_params['x_app_user_id']
 
@@ -3069,6 +3067,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'room_id' in local_var_params:
+            query_params.append(('room_id', local_var_params['room_id']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -3653,9 +3653,9 @@ class MetaStudioAsyncClient(Client):
         return http_info
 
     def list_smart_live_async(self, request):
-        """查询数字人智能直播任务列表
+        """查询某个智能直播间下直播任务列表
 
-        该接口用于查询数字人智能直播任务列表。
+        该接口用于查询某个智能直播间的直播任务列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3734,9 +3734,9 @@ class MetaStudioAsyncClient(Client):
         return http_info
 
     def list_smart_live_jobs_async(self, request):
-        """查询数字人智能直播任务列表
+        """查询租户所有数字人直播任务列表
 
-        该接口用于查询数字人智能直播任务列表。
+        该接口用于查询租户所有数字人智能直播任务列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5345,11 +5345,11 @@ class MetaStudioAsyncClient(Client):
     def create_training_advance_job_async(self, request):
         """创建高级版语音训练任务
 
-        用户创建语音训练基础版任务,该接口会返回一个obs上传地址，用于上传语音文件。
-        仅支持zip包方式上传语音文件：
-        * 语音文件打包成zip上传：上传的训练数据为一个zip格式压缩文件,其中包含一段wav格式的长音频文件。
+        用户创建语音训练高级版任务，该接口会返回一个obs上传地址，用于上传语音文件。
         
-        &gt; * 文件上传后，调用“提交语音训练任务”接口，启动审核和训练。
+        语音文件为一段WAV格式的长音频文件，仅支持将语音文件打包成zip压缩格式上传。
+        
+        文件上传后，调用“提交语音训练任务”接口，启动审核和训练。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5416,12 +5416,13 @@ class MetaStudioAsyncClient(Client):
     def create_training_basic_job_async(self, request):
         """创建基础版语音训练任务
 
-        用户创建语音训练基础版任务,该接口会返回一个obs上传地址，用于上传语音文件。
+        用户创建语音训练基础版任务，该接口会返回一个obs上传地址，用于上传语音文件。
+        
         支持2种方式上传语音文件：
         * 语音文件和文本文件打包成zip上传：语音文件已经切分成20个wav文件，每个语音文件对应一个txt文本文件，所有文件打包成zip文件。语音文件命名规则：0.wav~19.wav；文本文件命名规则：0.txt~19.txt。
         * 语音文件和文本文件逐句上传：每次上传一句语料的语音文件和文本文件，再调用“确认在线录音结果”接口确认语音和文本内容是否一致。确认成功后再上传和确认下一句。
         
-        &gt; * 文件上传后，调用“提交语音训练任务”接口，启动审核和训练。
+        文件上传后，调用“提交语音训练任务”接口，启动审核和训练。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5488,12 +5489,13 @@ class MetaStudioAsyncClient(Client):
     def create_training_middle_job_async(self, request):
         """创建进阶版语音训练任务
 
-        用户创建语音训练基础版任务,该接口会返回一个obs上传地址，用于上传语音文件。
+        用户创建语音训练进阶版任务，该接口会返回一个obs上传地址，用于上传语音文件。
+        
         支持2种方式上传语音文件：
         * 语音文件和文本文件打包成zip上传：语音文件已经切分成100个wav文件，每个语音文件对应一个txt文本文件，所有文件打包成zip文件。语音文件命名规则：0.wav~99.wav；文本文件命名规则：0.txt~99.txt。
         * 语音文件和文本文件逐句上传：每次上传一句语料的语音文件和文本文件，再调用“确认在线录音结果”接口确认语音和文本内容是否一致。确认成功后再上传和确认下一句。
         
-        &gt; * 文件上传后，调用“提交语音训练任务”接口，启动审核和训练。
+        文件上传后，调用“提交语音训练任务”接口，启动审核和训练。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6211,8 +6213,6 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-        if 'state' in local_var_params:
-            query_params.append(('state', local_var_params['state']))
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
@@ -6221,6 +6221,10 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('create_until', local_var_params['create_until']))
         if 'create_since' in local_var_params:
             query_params.append(('create_since', local_var_params['create_since']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'query_project_id' in local_var_params:
+            query_params.append(('query_project_id', local_var_params['query_project_id']))
         if 'batch_name' in local_var_params:
             query_params.append(('batch_name', local_var_params['batch_name']))
         if 'tag' in local_var_params:
@@ -6229,6 +6233,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('job_id', local_var_params['job_id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+        if 'model_resolution' in local_var_params:
+            query_params.append(('model_resolution', local_var_params['model_resolution']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:

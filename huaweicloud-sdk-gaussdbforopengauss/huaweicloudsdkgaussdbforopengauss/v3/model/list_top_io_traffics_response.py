@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class HumanSize2D:
+class ListTopIoTrafficsResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,80 +18,51 @@ class HumanSize2D:
     sensitive_list = []
 
     openapi_types = {
-        'width': 'int',
-        'height': 'int'
+        'top_io_infos': 'list[TopIoInfo]'
     }
 
     attribute_map = {
-        'width': 'width',
-        'height': 'height'
+        'top_io_infos': 'top_io_infos'
     }
 
-    def __init__(self, width=None, height=None):
-        """HumanSize2D
+    def __init__(self, top_io_infos=None):
+        """ListTopIoTrafficsResponse
 
         The model defined in huaweicloud sdk
 
-        :param width: 分身数字人宽度像素值。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
-        :type width: int
-        :param height: 分身数字人高度像素值。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
-        :type height: int
+        :param top_io_infos: Top IO列表
+        :type top_io_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TopIoInfo`]
         """
         
-        
+        super(ListTopIoTrafficsResponse, self).__init__()
 
-        self._width = None
-        self._height = None
+        self._top_io_infos = None
         self.discriminator = None
 
-        if width is not None:
-            self.width = width
-        if height is not None:
-            self.height = height
+        if top_io_infos is not None:
+            self.top_io_infos = top_io_infos
 
     @property
-    def width(self):
-        """Gets the width of this HumanSize2D.
+    def top_io_infos(self):
+        """Gets the top_io_infos of this ListTopIoTrafficsResponse.
 
-        分身数字人宽度像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
+        Top IO列表
 
-        :return: The width of this HumanSize2D.
-        :rtype: int
+        :return: The top_io_infos of this ListTopIoTrafficsResponse.
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TopIoInfo`]
         """
-        return self._width
+        return self._top_io_infos
 
-    @width.setter
-    def width(self, width):
-        """Sets the width of this HumanSize2D.
+    @top_io_infos.setter
+    def top_io_infos(self, top_io_infos):
+        """Sets the top_io_infos of this ListTopIoTrafficsResponse.
 
-        分身数字人宽度像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
+        Top IO列表
 
-        :param width: The width of this HumanSize2D.
-        :type width: int
+        :param top_io_infos: The top_io_infos of this ListTopIoTrafficsResponse.
+        :type top_io_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TopIoInfo`]
         """
-        self._width = width
-
-    @property
-    def height(self):
-        """Gets the height of this HumanSize2D.
-
-        分身数字人高度像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
-
-        :return: The height of this HumanSize2D.
-        :rtype: int
-        """
-        return self._height
-
-    @height.setter
-    def height(self, height):
-        """Sets the height of this HumanSize2D.
-
-        分身数字人高度像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
-
-        :param height: The height of this HumanSize2D.
-        :type height: int
-        """
-        self._height = height
+        self._top_io_infos = top_io_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +106,7 @@ class HumanSize2D:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, HumanSize2D):
+        if not isinstance(other, ListTopIoTrafficsResponse):
             return False
 
         return self.__dict__ == other.__dict__

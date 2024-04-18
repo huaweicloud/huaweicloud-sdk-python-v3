@@ -19,7 +19,7 @@ class Update2dModelTrainingJobRequest:
     openapi_types = {
         'job_id': 'str',
         'x_app_user_id': 'str',
-        'body': 'Create2dModelTrainingJobReq'
+        'body': 'Update2dModelTrainingJobReq'
     }
 
     attribute_map = {
@@ -35,10 +35,10 @@ class Update2dModelTrainingJobRequest:
 
         :param job_id: 任务ID。
         :type job_id: str
-        :param x_app_user_id: 第三方用户ID。 &gt; * 不允许输入中文。
+        :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
         :param body: Body of the Update2dModelTrainingJobRequest
-        :type body: :class:`huaweicloudsdkmetastudio.v1.Create2dModelTrainingJobReq`
+        :type body: :class:`huaweicloudsdkmetastudio.v1.Update2dModelTrainingJobReq`
         """
         
         
@@ -80,7 +80,7 @@ class Update2dModelTrainingJobRequest:
     def x_app_user_id(self):
         """Gets the x_app_user_id of this Update2dModelTrainingJobRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :return: The x_app_user_id of this Update2dModelTrainingJobRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class Update2dModelTrainingJobRequest:
     def x_app_user_id(self, x_app_user_id):
         """Sets the x_app_user_id of this Update2dModelTrainingJobRequest.
 
-        第三方用户ID。 > * 不允许输入中文。
+        第三方用户ID。不允许输入中文。
 
         :param x_app_user_id: The x_app_user_id of this Update2dModelTrainingJobRequest.
         :type x_app_user_id: str
@@ -103,7 +103,7 @@ class Update2dModelTrainingJobRequest:
         """Gets the body of this Update2dModelTrainingJobRequest.
 
         :return: The body of this Update2dModelTrainingJobRequest.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.Create2dModelTrainingJobReq`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.Update2dModelTrainingJobReq`
         """
         return self._body
 
@@ -112,7 +112,7 @@ class Update2dModelTrainingJobRequest:
         """Sets the body of this Update2dModelTrainingJobRequest.
 
         :param body: The body of this Update2dModelTrainingJobRequest.
-        :type body: :class:`huaweicloudsdkmetastudio.v1.Create2dModelTrainingJobReq`
+        :type body: :class:`huaweicloudsdkmetastudio.v1.Update2dModelTrainingJobReq`
         """
         self._body = body
 

@@ -21,7 +21,7 @@ class ShowBackupPolicy:
         'start_time': 'str',
         'period': 'str',
         'differential_priod': 'str',
-        'differential_period': 'str',
+        'differential_period': 'int',
         'rate_limit': 'int',
         'prefetch_block': 'int',
         'filesplit_size': 'int',
@@ -56,7 +56,7 @@ class ShowBackupPolicy:
         :param differential_priod: 差量备份周期配置。自动差量备份将每隔周期分钟执行(废弃)。
         :type differential_priod: str
         :param differential_period: 差量备份周期配置。自动差量备份将每隔周期分钟执行。
-        :type differential_period: str
+        :type differential_period: int
         :param rate_limit: 备份时备份数据上传OBS的速度，单位为MB/s。范围为0~1024MB/s，默认75MB/s，0MB/s表示不限速。
         :type rate_limit: int
         :param prefetch_block: 控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数，可设置范围为1~8192，默认64。
@@ -195,7 +195,7 @@ class ShowBackupPolicy:
         差量备份周期配置。自动差量备份将每隔周期分钟执行。
 
         :return: The differential_period of this ShowBackupPolicy.
-        :rtype: str
+        :rtype: int
         """
         return self._differential_period
 
@@ -206,7 +206,7 @@ class ShowBackupPolicy:
         差量备份周期配置。自动差量备份将每隔周期分钟执行。
 
         :param differential_period: The differential_period of this ShowBackupPolicy.
-        :type differential_period: str
+        :type differential_period: int
         """
         self._differential_period = differential_period
 

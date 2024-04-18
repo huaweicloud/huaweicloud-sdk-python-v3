@@ -30,7 +30,16 @@ class StopMigrationTaskResponse(SdkResponse):
         'source_instance': 'SourceInstanceBody',
         'target_instance': 'TargetInstanceBody',
         'created_at': 'str',
-        'updated_at': 'str'
+        'updated_at': 'str',
+        'released_at': 'str',
+        'version': 'str',
+        'resume_mode': 'str',
+        'supported_features': 'list[str]',
+        'tenant_vpc_id': 'str',
+        'tenant_subnet_id': 'str',
+        'tenant_security_group_id': 'str',
+        'bandwidth_limit_mb': 'str',
+        'task_status': 'str'
     }
 
     attribute_map = {
@@ -46,10 +55,19 @@ class StopMigrationTaskResponse(SdkResponse):
         'source_instance': 'source_instance',
         'target_instance': 'target_instance',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'released_at': 'released_at',
+        'version': 'version',
+        'resume_mode': 'resume_mode',
+        'supported_features': 'supported_features',
+        'tenant_vpc_id': 'tenant_vpc_id',
+        'tenant_subnet_id': 'tenant_subnet_id',
+        'tenant_security_group_id': 'tenant_security_group_id',
+        'bandwidth_limit_mb': 'bandwidth_limit_mb',
+        'task_status': 'task_status'
     }
 
-    def __init__(self, task_id=None, task_name=None, description=None, status=None, migration_type=None, migration_method=None, ecs_tenant_private_ip=None, backup_files=None, network_type=None, source_instance=None, target_instance=None, created_at=None, updated_at=None):
+    def __init__(self, task_id=None, task_name=None, description=None, status=None, migration_type=None, migration_method=None, ecs_tenant_private_ip=None, backup_files=None, network_type=None, source_instance=None, target_instance=None, created_at=None, updated_at=None, released_at=None, version=None, resume_mode=None, supported_features=None, tenant_vpc_id=None, tenant_subnet_id=None, tenant_security_group_id=None, bandwidth_limit_mb=None, task_status=None):
         """StopMigrationTaskResponse
 
         The model defined in huaweicloud sdk
@@ -80,6 +98,24 @@ class StopMigrationTaskResponse(SdkResponse):
         :type created_at: str
         :param updated_at: 迁移任务完成时间。
         :type updated_at: str
+        :param released_at: 迁移机释放时间。
+        :type released_at: str
+        :param version: 版本。
+        :type version: str
+        :param resume_mode: 操作模式，分为auto和manual。
+        :type resume_mode: str
+        :param supported_features: 支持的特性。
+        :type supported_features: list[str]
+        :param tenant_vpc_id: 租户VPC ID。
+        :type tenant_vpc_id: str
+        :param tenant_subnet_id: 租户子网ID。
+        :type tenant_subnet_id: str
+        :param tenant_security_group_id: 租户安全组ID。
+        :type tenant_security_group_id: str
+        :param bandwidth_limit_mb: 带宽限制速度。
+        :type bandwidth_limit_mb: str
+        :param task_status: 任务状态。
+        :type task_status: str
         """
         
         super(StopMigrationTaskResponse, self).__init__()
@@ -97,6 +133,15 @@ class StopMigrationTaskResponse(SdkResponse):
         self._target_instance = None
         self._created_at = None
         self._updated_at = None
+        self._released_at = None
+        self._version = None
+        self._resume_mode = None
+        self._supported_features = None
+        self._tenant_vpc_id = None
+        self._tenant_subnet_id = None
+        self._tenant_security_group_id = None
+        self._bandwidth_limit_mb = None
+        self._task_status = None
         self.discriminator = None
 
         if task_id is not None:
@@ -125,6 +170,24 @@ class StopMigrationTaskResponse(SdkResponse):
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if released_at is not None:
+            self.released_at = released_at
+        if version is not None:
+            self.version = version
+        if resume_mode is not None:
+            self.resume_mode = resume_mode
+        if supported_features is not None:
+            self.supported_features = supported_features
+        if tenant_vpc_id is not None:
+            self.tenant_vpc_id = tenant_vpc_id
+        if tenant_subnet_id is not None:
+            self.tenant_subnet_id = tenant_subnet_id
+        if tenant_security_group_id is not None:
+            self.tenant_security_group_id = tenant_security_group_id
+        if bandwidth_limit_mb is not None:
+            self.bandwidth_limit_mb = bandwidth_limit_mb
+        if task_status is not None:
+            self.task_status = task_status
 
     @property
     def task_id(self):
@@ -399,6 +462,204 @@ class StopMigrationTaskResponse(SdkResponse):
         :type updated_at: str
         """
         self._updated_at = updated_at
+
+    @property
+    def released_at(self):
+        """Gets the released_at of this StopMigrationTaskResponse.
+
+        迁移机释放时间。
+
+        :return: The released_at of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._released_at
+
+    @released_at.setter
+    def released_at(self, released_at):
+        """Sets the released_at of this StopMigrationTaskResponse.
+
+        迁移机释放时间。
+
+        :param released_at: The released_at of this StopMigrationTaskResponse.
+        :type released_at: str
+        """
+        self._released_at = released_at
+
+    @property
+    def version(self):
+        """Gets the version of this StopMigrationTaskResponse.
+
+        版本。
+
+        :return: The version of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this StopMigrationTaskResponse.
+
+        版本。
+
+        :param version: The version of this StopMigrationTaskResponse.
+        :type version: str
+        """
+        self._version = version
+
+    @property
+    def resume_mode(self):
+        """Gets the resume_mode of this StopMigrationTaskResponse.
+
+        操作模式，分为auto和manual。
+
+        :return: The resume_mode of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._resume_mode
+
+    @resume_mode.setter
+    def resume_mode(self, resume_mode):
+        """Sets the resume_mode of this StopMigrationTaskResponse.
+
+        操作模式，分为auto和manual。
+
+        :param resume_mode: The resume_mode of this StopMigrationTaskResponse.
+        :type resume_mode: str
+        """
+        self._resume_mode = resume_mode
+
+    @property
+    def supported_features(self):
+        """Gets the supported_features of this StopMigrationTaskResponse.
+
+        支持的特性。
+
+        :return: The supported_features of this StopMigrationTaskResponse.
+        :rtype: list[str]
+        """
+        return self._supported_features
+
+    @supported_features.setter
+    def supported_features(self, supported_features):
+        """Sets the supported_features of this StopMigrationTaskResponse.
+
+        支持的特性。
+
+        :param supported_features: The supported_features of this StopMigrationTaskResponse.
+        :type supported_features: list[str]
+        """
+        self._supported_features = supported_features
+
+    @property
+    def tenant_vpc_id(self):
+        """Gets the tenant_vpc_id of this StopMigrationTaskResponse.
+
+        租户VPC ID。
+
+        :return: The tenant_vpc_id of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._tenant_vpc_id
+
+    @tenant_vpc_id.setter
+    def tenant_vpc_id(self, tenant_vpc_id):
+        """Sets the tenant_vpc_id of this StopMigrationTaskResponse.
+
+        租户VPC ID。
+
+        :param tenant_vpc_id: The tenant_vpc_id of this StopMigrationTaskResponse.
+        :type tenant_vpc_id: str
+        """
+        self._tenant_vpc_id = tenant_vpc_id
+
+    @property
+    def tenant_subnet_id(self):
+        """Gets the tenant_subnet_id of this StopMigrationTaskResponse.
+
+        租户子网ID。
+
+        :return: The tenant_subnet_id of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._tenant_subnet_id
+
+    @tenant_subnet_id.setter
+    def tenant_subnet_id(self, tenant_subnet_id):
+        """Sets the tenant_subnet_id of this StopMigrationTaskResponse.
+
+        租户子网ID。
+
+        :param tenant_subnet_id: The tenant_subnet_id of this StopMigrationTaskResponse.
+        :type tenant_subnet_id: str
+        """
+        self._tenant_subnet_id = tenant_subnet_id
+
+    @property
+    def tenant_security_group_id(self):
+        """Gets the tenant_security_group_id of this StopMigrationTaskResponse.
+
+        租户安全组ID。
+
+        :return: The tenant_security_group_id of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._tenant_security_group_id
+
+    @tenant_security_group_id.setter
+    def tenant_security_group_id(self, tenant_security_group_id):
+        """Sets the tenant_security_group_id of this StopMigrationTaskResponse.
+
+        租户安全组ID。
+
+        :param tenant_security_group_id: The tenant_security_group_id of this StopMigrationTaskResponse.
+        :type tenant_security_group_id: str
+        """
+        self._tenant_security_group_id = tenant_security_group_id
+
+    @property
+    def bandwidth_limit_mb(self):
+        """Gets the bandwidth_limit_mb of this StopMigrationTaskResponse.
+
+        带宽限制速度。
+
+        :return: The bandwidth_limit_mb of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._bandwidth_limit_mb
+
+    @bandwidth_limit_mb.setter
+    def bandwidth_limit_mb(self, bandwidth_limit_mb):
+        """Sets the bandwidth_limit_mb of this StopMigrationTaskResponse.
+
+        带宽限制速度。
+
+        :param bandwidth_limit_mb: The bandwidth_limit_mb of this StopMigrationTaskResponse.
+        :type bandwidth_limit_mb: str
+        """
+        self._bandwidth_limit_mb = bandwidth_limit_mb
+
+    @property
+    def task_status(self):
+        """Gets the task_status of this StopMigrationTaskResponse.
+
+        任务状态。
+
+        :return: The task_status of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._task_status
+
+    @task_status.setter
+    def task_status(self, task_status):
+        """Sets the task_status of this StopMigrationTaskResponse.
+
+        任务状态。
+
+        :param task_status: The task_status of this StopMigrationTaskResponse.
+        :type task_status: str
+        """
+        self._task_status = task_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

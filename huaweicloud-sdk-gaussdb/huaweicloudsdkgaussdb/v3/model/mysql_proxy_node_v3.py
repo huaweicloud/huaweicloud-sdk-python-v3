@@ -49,7 +49,7 @@ class MysqlProxyNodeV3:
         :type name: str
         :param weight: 节点读写分离读权重。
         :type weight: int
-        :param availability_zone: 可用区信息。
+        :param availability_zone: 主实例所有节点的可用区信息。
         :type availability_zone: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyAvailable`]
         """
         
@@ -190,7 +190,7 @@ class MysqlProxyNodeV3:
     def availability_zone(self):
         """Gets the availability_zone of this MysqlProxyNodeV3.
 
-        可用区信息。
+        主实例所有节点的可用区信息。
 
         :return: The availability_zone of this MysqlProxyNodeV3.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyAvailable`]
@@ -201,7 +201,7 @@ class MysqlProxyNodeV3:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this MysqlProxyNodeV3.
 
-        可用区信息。
+        主实例所有节点的可用区信息。
 
         :param availability_zone: The availability_zone of this MysqlProxyNodeV3.
         :type availability_zone: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyAvailable`]

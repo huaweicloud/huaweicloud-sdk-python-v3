@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowInstancesStatisticsRequest:
+class ListInstanceErrorLogsResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,51 +18,80 @@ class ShowInstancesStatisticsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str'
+        'total': 'int',
+        'log_files': 'list[InstanceLogFile]'
     }
 
     attribute_map = {
-        'x_language': 'X-Language'
+        'total': 'total',
+        'log_files': 'log_files'
     }
 
-    def __init__(self, x_language=None):
-        """ShowInstancesStatisticsRequest
+    def __init__(self, total=None, log_files=None):
+        """ListInstanceErrorLogsResponse
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。
-        :type x_language: str
+        :param total: 总条数
+        :type total: int
+        :param log_files: 日志文件列表
+        :type log_files: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.InstanceLogFile`]
         """
         
-        
+        super(ListInstanceErrorLogsResponse, self).__init__()
 
-        self._x_language = None
+        self._total = None
+        self._log_files = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
+        if total is not None:
+            self.total = total
+        if log_files is not None:
+            self.log_files = log_files
 
     @property
-    def x_language(self):
-        """Gets the x_language of this ShowInstancesStatisticsRequest.
+    def total(self):
+        """Gets the total of this ListInstanceErrorLogsResponse.
 
-        语言。
+        总条数
 
-        :return: The x_language of this ShowInstancesStatisticsRequest.
-        :rtype: str
+        :return: The total of this ListInstanceErrorLogsResponse.
+        :rtype: int
         """
-        return self._x_language
+        return self._total
 
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ShowInstancesStatisticsRequest.
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListInstanceErrorLogsResponse.
 
-        语言。
+        总条数
 
-        :param x_language: The x_language of this ShowInstancesStatisticsRequest.
-        :type x_language: str
+        :param total: The total of this ListInstanceErrorLogsResponse.
+        :type total: int
         """
-        self._x_language = x_language
+        self._total = total
+
+    @property
+    def log_files(self):
+        """Gets the log_files of this ListInstanceErrorLogsResponse.
+
+        日志文件列表
+
+        :return: The log_files of this ListInstanceErrorLogsResponse.
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.InstanceLogFile`]
+        """
+        return self._log_files
+
+    @log_files.setter
+    def log_files(self, log_files):
+        """Sets the log_files of this ListInstanceErrorLogsResponse.
+
+        日志文件列表
+
+        :param log_files: The log_files of this ListInstanceErrorLogsResponse.
+        :type log_files: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.InstanceLogFile`]
+        """
+        self._log_files = log_files
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -105,7 +135,7 @@ class ShowInstancesStatisticsRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowInstancesStatisticsRequest):
+        if not isinstance(other, ListInstanceErrorLogsResponse):
             return False
 
         return self.__dict__ == other.__dict__
