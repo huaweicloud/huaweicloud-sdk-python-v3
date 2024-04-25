@@ -37,13 +37,13 @@ class ExecuteApiToInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param api_id: api编号
+        :param api_id: api编号。
         :type api_id: str
-        :param instance_id: 集群编号
+        :param instance_id: 集群编号。
         :type instance_id: str
         :param body: Body of the ExecuteApiToInstanceRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApiActionDTO`
@@ -70,7 +70,7 @@ class ExecuteApiToInstanceRequest:
     def workspace(self):
         """Gets the workspace of this ExecuteApiToInstanceRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ExecuteApiToInstanceRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ExecuteApiToInstanceRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ExecuteApiToInstanceRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ExecuteApiToInstanceRequest.
         :type workspace: str
@@ -92,7 +92,7 @@ class ExecuteApiToInstanceRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ExecuteApiToInstanceRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ExecuteApiToInstanceRequest.
         :rtype: str
@@ -103,7 +103,7 @@ class ExecuteApiToInstanceRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ExecuteApiToInstanceRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ExecuteApiToInstanceRequest.
         :type dlm_type: str
@@ -114,7 +114,7 @@ class ExecuteApiToInstanceRequest:
     def api_id(self):
         """Gets the api_id of this ExecuteApiToInstanceRequest.
 
-        api编号
+        api编号。
 
         :return: The api_id of this ExecuteApiToInstanceRequest.
         :rtype: str
@@ -125,7 +125,7 @@ class ExecuteApiToInstanceRequest:
     def api_id(self, api_id):
         """Sets the api_id of this ExecuteApiToInstanceRequest.
 
-        api编号
+        api编号。
 
         :param api_id: The api_id of this ExecuteApiToInstanceRequest.
         :type api_id: str
@@ -136,7 +136,7 @@ class ExecuteApiToInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this ExecuteApiToInstanceRequest.
 
-        集群编号
+        集群编号。
 
         :return: The instance_id of this ExecuteApiToInstanceRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class ExecuteApiToInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ExecuteApiToInstanceRequest.
 
-        集群编号
+        集群编号。
 
         :param instance_id: The instance_id of this ExecuteApiToInstanceRequest.
         :type instance_id: str

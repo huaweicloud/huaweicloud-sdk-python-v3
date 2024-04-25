@@ -39,17 +39,17 @@ class ListAppsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param limit: limit
+        :param limit: limit。
         :type limit: int
-        :param offset: offset
+        :param offset: offset。
         :type offset: int
-        :param name: 应用名称
+        :param name: 应用名称。
         :type name: str
-        :param app_type: 应用类型
+        :param app_type: 应用类型。
         :type app_type: str
         """
         
@@ -79,7 +79,7 @@ class ListAppsRequest:
     def workspace(self):
         """Gets the workspace of this ListAppsRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListAppsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ListAppsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListAppsRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListAppsRequest.
         :type workspace: str
@@ -101,7 +101,7 @@ class ListAppsRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ListAppsRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ListAppsRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListAppsRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ListAppsRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ListAppsRequest.
         :type dlm_type: str
@@ -123,7 +123,7 @@ class ListAppsRequest:
     def limit(self):
         """Gets the limit of this ListAppsRequest.
 
-        limit
+        limit。
 
         :return: The limit of this ListAppsRequest.
         :rtype: int
@@ -134,7 +134,7 @@ class ListAppsRequest:
     def limit(self, limit):
         """Sets the limit of this ListAppsRequest.
 
-        limit
+        limit。
 
         :param limit: The limit of this ListAppsRequest.
         :type limit: int
@@ -145,7 +145,7 @@ class ListAppsRequest:
     def offset(self):
         """Gets the offset of this ListAppsRequest.
 
-        offset
+        offset。
 
         :return: The offset of this ListAppsRequest.
         :rtype: int
@@ -156,7 +156,7 @@ class ListAppsRequest:
     def offset(self, offset):
         """Sets the offset of this ListAppsRequest.
 
-        offset
+        offset。
 
         :param offset: The offset of this ListAppsRequest.
         :type offset: int
@@ -167,7 +167,7 @@ class ListAppsRequest:
     def name(self):
         """Gets the name of this ListAppsRequest.
 
-        应用名称
+        应用名称。
 
         :return: The name of this ListAppsRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListAppsRequest:
     def name(self, name):
         """Sets the name of this ListAppsRequest.
 
-        应用名称
+        应用名称。
 
         :param name: The name of this ListAppsRequest.
         :type name: str
@@ -189,7 +189,7 @@ class ListAppsRequest:
     def app_type(self):
         """Gets the app_type of this ListAppsRequest.
 
-        应用类型
+        应用类型。
 
         :return: The app_type of this ListAppsRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListAppsRequest:
     def app_type(self, app_type):
         """Sets the app_type of this ListAppsRequest.
 
-        应用类型
+        应用类型。
 
         :param app_type: The app_type of this ListAppsRequest.
         :type app_type: str

@@ -40,7 +40,8 @@ class ListInstancesResult:
         'time_zone': 'str',
         'actions': 'list[str]',
         'lb_ip_address': 'str',
-        'lb_port': 'str'
+        'lb_port': 'str',
+        'availability_zone': 'str'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class ListInstancesResult:
         'time_zone': 'time_zone',
         'actions': 'actions',
         'lb_ip_address': 'lb_ip_address',
-        'lb_port': 'lb_port'
+        'lb_port': 'lb_port',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None):
+    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None):
         """ListInstancesResult
 
         The model defined in huaweicloud sdk
@@ -123,6 +125,8 @@ class ListInstancesResult:
         :type lb_ip_address: str
         :param lb_port: 负载均衡端口，只有存在负载均衡ip，才会返回该参数。
         :type lb_port: str
+        :param availability_zone: 实例可用区。
+        :type availability_zone: str
         """
         
         
@@ -151,6 +155,7 @@ class ListInstancesResult:
         self._actions = None
         self._lb_ip_address = None
         self._lb_port = None
+        self._availability_zone = None
         self.discriminator = None
 
         self.id = id
@@ -180,6 +185,8 @@ class ListInstancesResult:
             self.lb_ip_address = lb_ip_address
         if lb_port is not None:
             self.lb_port = lb_port
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def id(self):
@@ -700,6 +707,28 @@ class ListInstancesResult:
         :type lb_port: str
         """
         self._lb_port = lb_port
+
+    @property
+    def availability_zone(self):
+        """Gets the availability_zone of this ListInstancesResult.
+
+        实例可用区。
+
+        :return: The availability_zone of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        """Sets the availability_zone of this ListInstancesResult.
+
+        实例可用区。
+
+        :param availability_zone: The availability_zone of this ListInstancesResult.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

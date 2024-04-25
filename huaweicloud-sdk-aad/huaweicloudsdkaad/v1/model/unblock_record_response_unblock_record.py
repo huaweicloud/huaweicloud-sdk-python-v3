@@ -19,7 +19,7 @@ class UnblockRecordResponseUnblockRecord:
     openapi_types = {
         'ip': 'str',
         'executor': 'str',
-        'block_id': 'str',
+        'block_id': 'int',
         'blocking_time': 'int',
         'unblocking_time': 'int',
         'unblock_type': 'str',
@@ -48,7 +48,7 @@ class UnblockRecordResponseUnblockRecord:
         :param executor: 执行者
         :type executor: str
         :param block_id: 封堵id
-        :type block_id: str
+        :type block_id: int
         :param blocking_time: 封堵时间
         :type blocking_time: int
         :param unblocking_time: 解封时间
@@ -141,7 +141,7 @@ class UnblockRecordResponseUnblockRecord:
         封堵id
 
         :return: The block_id of this UnblockRecordResponseUnblockRecord.
-        :rtype: str
+        :rtype: int
         """
         return self._block_id
 
@@ -152,7 +152,7 @@ class UnblockRecordResponseUnblockRecord:
         封堵id
 
         :param block_id: The block_id of this UnblockRecordResponseUnblockRecord.
-        :type block_id: str
+        :type block_id: int
         """
         self._block_id = block_id
 

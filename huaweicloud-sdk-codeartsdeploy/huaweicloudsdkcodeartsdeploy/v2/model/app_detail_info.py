@@ -21,6 +21,7 @@ class AppDetailInfo:
         'name': 'str',
         'region': 'str',
         'description': 'str',
+        'is_disable': 'bool',
         'create_type': 'str',
         'project_id': 'str',
         'project_name': 'str',
@@ -33,6 +34,7 @@ class AppDetailInfo:
         'can_copy': 'bool',
         'can_manage': 'bool',
         'can_create_env': 'bool',
+        'can_disable': 'bool',
         'owner_tenant_id': 'str',
         'create_user_id': 'str',
         'create_tenant_id': 'str',
@@ -47,6 +49,7 @@ class AppDetailInfo:
         'name': 'name',
         'region': 'region',
         'description': 'description',
+        'is_disable': 'is_disable',
         'create_type': 'create_type',
         'project_id': 'project_id',
         'project_name': 'project_name',
@@ -59,6 +62,7 @@ class AppDetailInfo:
         'can_copy': 'can_copy',
         'can_manage': 'can_manage',
         'can_create_env': 'can_create_env',
+        'can_disable': 'can_disable',
         'owner_tenant_id': 'owner_tenant_id',
         'create_user_id': 'create_user_id',
         'create_tenant_id': 'create_tenant_id',
@@ -68,7 +72,7 @@ class AppDetailInfo:
         'arrange_infos': 'arrange_infos'
     }
 
-    def __init__(self, id=None, name=None, region=None, description=None, create_type=None, project_id=None, project_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, owner_tenant_id=None, create_user_id=None, create_tenant_id=None, create_time=None, update_time=None, permission_level=None, arrange_infos=None):
+    def __init__(self, id=None, name=None, region=None, description=None, is_disable=None, create_type=None, project_id=None, project_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, can_disable=None, owner_tenant_id=None, create_user_id=None, create_tenant_id=None, create_time=None, update_time=None, permission_level=None, arrange_infos=None):
         """AppDetailInfo
 
         The model defined in huaweicloud sdk
@@ -81,6 +85,8 @@ class AppDetailInfo:
         :type region: str
         :param description: 描述
         :type description: str
+        :param is_disable: 当前应用是否被禁用
+        :type is_disable: bool
         :param create_type: 创建方式
         :type create_type: str
         :param project_id: 项目ID
@@ -105,6 +111,8 @@ class AppDetailInfo:
         :type can_manage: bool
         :param can_create_env: 是否有创建环境的权限
         :type can_create_env: bool
+        :param can_disable: 是否有禁用应用的权限
+        :type can_disable: bool
         :param owner_tenant_id: 应用所属人租户ID
         :type owner_tenant_id: str
         :param create_user_id: 应用创建者用户名
@@ -127,6 +135,7 @@ class AppDetailInfo:
         self._name = None
         self._region = None
         self._description = None
+        self._is_disable = None
         self._create_type = None
         self._project_id = None
         self._project_name = None
@@ -139,6 +148,7 @@ class AppDetailInfo:
         self._can_copy = None
         self._can_manage = None
         self._can_create_env = None
+        self._can_disable = None
         self._owner_tenant_id = None
         self._create_user_id = None
         self._create_tenant_id = None
@@ -156,6 +166,8 @@ class AppDetailInfo:
             self.region = region
         if description is not None:
             self.description = description
+        if is_disable is not None:
+            self.is_disable = is_disable
         if create_type is not None:
             self.create_type = create_type
         if project_id is not None:
@@ -180,6 +192,8 @@ class AppDetailInfo:
             self.can_manage = can_manage
         if can_create_env is not None:
             self.can_create_env = can_create_env
+        if can_disable is not None:
+            self.can_disable = can_disable
         if owner_tenant_id is not None:
             self.owner_tenant_id = owner_tenant_id
         if create_user_id is not None:
@@ -282,6 +296,28 @@ class AppDetailInfo:
         :type description: str
         """
         self._description = description
+
+    @property
+    def is_disable(self):
+        """Gets the is_disable of this AppDetailInfo.
+
+        当前应用是否被禁用
+
+        :return: The is_disable of this AppDetailInfo.
+        :rtype: bool
+        """
+        return self._is_disable
+
+    @is_disable.setter
+    def is_disable(self, is_disable):
+        """Sets the is_disable of this AppDetailInfo.
+
+        当前应用是否被禁用
+
+        :param is_disable: The is_disable of this AppDetailInfo.
+        :type is_disable: bool
+        """
+        self._is_disable = is_disable
 
     @property
     def create_type(self):
@@ -546,6 +582,28 @@ class AppDetailInfo:
         :type can_create_env: bool
         """
         self._can_create_env = can_create_env
+
+    @property
+    def can_disable(self):
+        """Gets the can_disable of this AppDetailInfo.
+
+        是否有禁用应用的权限
+
+        :return: The can_disable of this AppDetailInfo.
+        :rtype: bool
+        """
+        return self._can_disable
+
+    @can_disable.setter
+    def can_disable(self, can_disable):
+        """Sets the can_disable of this AppDetailInfo.
+
+        是否有禁用应用的权限
+
+        :param can_disable: The can_disable of this AppDetailInfo.
+        :type can_disable: bool
+        """
+        self._can_disable = can_disable
 
     @property
     def owner_tenant_id(self):

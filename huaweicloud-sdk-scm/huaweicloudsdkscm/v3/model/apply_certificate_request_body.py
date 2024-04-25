@@ -81,7 +81,7 @@ class ApplyCertificateRequestBody:
         :type company_city: str
         :param country: OV和EV型证书必填,国家编码，需符合正则\&quot;**[A-Za-z]{2}**\&quot;。
         :type country: str
-        :param applicant_name: 申请人的姓名。字符长度为0~63位。
+        :param applicant_name: 申请人的姓名。请输入中文、英文字符，下划线，中划线，英文逗号，英文句点，且长度为4到100字节。
         :type applicant_name: str
         :param applicant_phone: 申请人的电话号码。示例：13212345678
         :type applicant_phone: str
@@ -341,7 +341,7 @@ class ApplyCertificateRequestBody:
     def applicant_name(self):
         """Gets the applicant_name of this ApplyCertificateRequestBody.
 
-        申请人的姓名。字符长度为0~63位。
+        申请人的姓名。请输入中文、英文字符，下划线，中划线，英文逗号，英文句点，且长度为4到100字节。
 
         :return: The applicant_name of this ApplyCertificateRequestBody.
         :rtype: str
@@ -352,7 +352,7 @@ class ApplyCertificateRequestBody:
     def applicant_name(self, applicant_name):
         """Sets the applicant_name of this ApplyCertificateRequestBody.
 
-        申请人的姓名。字符长度为0~63位。
+        申请人的姓名。请输入中文、英文字符，下划线，中划线，英文逗号，英文句点，且长度为4到100字节。
 
         :param applicant_name: The applicant_name of this ApplyCertificateRequestBody.
         :type applicant_name: str

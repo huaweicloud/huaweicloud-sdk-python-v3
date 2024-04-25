@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class PublishApiRequest:
+class ExportDataServiceExcelTemplateRequest:
 
     """
     Attributes:
@@ -18,103 +18,78 @@ class PublishApiRequest:
 
     openapi_types = {
         'workspace': 'str',
-        'dlm_type': 'str',
-        'body': 'OpenApiParaForPublish'
+        'dlm_type': 'str'
     }
 
     attribute_map = {
         'workspace': 'workspace',
-        'dlm_type': 'Dlm-Type',
-        'body': 'body'
+        'dlm_type': 'Dlm-Type'
     }
 
-    def __init__(self, workspace=None, dlm_type=None, body=None):
-        """PublishApiRequest
+    def __init__(self, workspace=None, dlm_type=None):
+        """ExportDataServiceExcelTemplateRequest
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param body: Body of the PublishApiRequest
-        :type body: :class:`huaweicloudsdkdataartsstudio.v1.OpenApiParaForPublish`
         """
         
         
 
         self._workspace = None
         self._dlm_type = None
-        self._body = None
         self.discriminator = None
 
         self.workspace = workspace
         if dlm_type is not None:
             self.dlm_type = dlm_type
-        if body is not None:
-            self.body = body
 
     @property
     def workspace(self):
-        """Gets the workspace of this PublishApiRequest.
+        """Gets the workspace of this ExportDataServiceExcelTemplateRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
-        :return: The workspace of this PublishApiRequest.
+        :return: The workspace of this ExportDataServiceExcelTemplateRequest.
         :rtype: str
         """
         return self._workspace
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this PublishApiRequest.
+        """Sets the workspace of this ExportDataServiceExcelTemplateRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
-        :param workspace: The workspace of this PublishApiRequest.
+        :param workspace: The workspace of this ExportDataServiceExcelTemplateRequest.
         :type workspace: str
         """
         self._workspace = workspace
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this PublishApiRequest.
+        """Gets the dlm_type of this ExportDataServiceExcelTemplateRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
-        :return: The dlm_type of this PublishApiRequest.
+        :return: The dlm_type of this ExportDataServiceExcelTemplateRequest.
         :rtype: str
         """
         return self._dlm_type
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this PublishApiRequest.
+        """Sets the dlm_type of this ExportDataServiceExcelTemplateRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
-        :param dlm_type: The dlm_type of this PublishApiRequest.
+        :param dlm_type: The dlm_type of this ExportDataServiceExcelTemplateRequest.
         :type dlm_type: str
         """
         self._dlm_type = dlm_type
-
-    @property
-    def body(self):
-        """Gets the body of this PublishApiRequest.
-
-        :return: The body of this PublishApiRequest.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OpenApiParaForPublish`
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this PublishApiRequest.
-
-        :param body: The body of this PublishApiRequest.
-        :type body: :class:`huaweicloudsdkdataartsstudio.v1.OpenApiParaForPublish`
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -158,7 +133,7 @@ class PublishApiRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublishApiRequest):
+        if not isinstance(other, ExportDataServiceExcelTemplateRequest):
             return False
 
         return self.__dict__ == other.__dict__

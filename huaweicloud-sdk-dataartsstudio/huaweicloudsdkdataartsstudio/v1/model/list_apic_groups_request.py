@@ -39,17 +39,17 @@ class ListApicGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param apig_instance_id: 网关实例编号
+        :param apig_instance_id: 网关实例编号，共享版为固定值：APIG。
         :type apig_instance_id: str
-        :param apig_type: 网关类型
+        :param apig_type: 网关类型。
         :type apig_type: str
-        :param limit: limit
+        :param limit: limit。
         :type limit: int
-        :param offset: offset
+        :param offset: offset。
         :type offset: int
         """
         
@@ -77,7 +77,7 @@ class ListApicGroupsRequest:
     def workspace(self):
         """Gets the workspace of this ListApicGroupsRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListApicGroupsRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ListApicGroupsRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListApicGroupsRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListApicGroupsRequest.
         :type workspace: str
@@ -99,7 +99,7 @@ class ListApicGroupsRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ListApicGroupsRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ListApicGroupsRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ListApicGroupsRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ListApicGroupsRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ListApicGroupsRequest.
         :type dlm_type: str
@@ -121,7 +121,7 @@ class ListApicGroupsRequest:
     def apig_instance_id(self):
         """Gets the apig_instance_id of this ListApicGroupsRequest.
 
-        网关实例编号
+        网关实例编号，共享版为固定值：APIG。
 
         :return: The apig_instance_id of this ListApicGroupsRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListApicGroupsRequest:
     def apig_instance_id(self, apig_instance_id):
         """Sets the apig_instance_id of this ListApicGroupsRequest.
 
-        网关实例编号
+        网关实例编号，共享版为固定值：APIG。
 
         :param apig_instance_id: The apig_instance_id of this ListApicGroupsRequest.
         :type apig_instance_id: str
@@ -143,7 +143,7 @@ class ListApicGroupsRequest:
     def apig_type(self):
         """Gets the apig_type of this ListApicGroupsRequest.
 
-        网关类型
+        网关类型。
 
         :return: The apig_type of this ListApicGroupsRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListApicGroupsRequest:
     def apig_type(self, apig_type):
         """Sets the apig_type of this ListApicGroupsRequest.
 
-        网关类型
+        网关类型。
 
         :param apig_type: The apig_type of this ListApicGroupsRequest.
         :type apig_type: str
@@ -165,7 +165,7 @@ class ListApicGroupsRequest:
     def limit(self):
         """Gets the limit of this ListApicGroupsRequest.
 
-        limit
+        limit。
 
         :return: The limit of this ListApicGroupsRequest.
         :rtype: int
@@ -176,7 +176,7 @@ class ListApicGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListApicGroupsRequest.
 
-        limit
+        limit。
 
         :param limit: The limit of this ListApicGroupsRequest.
         :type limit: int
@@ -187,7 +187,7 @@ class ListApicGroupsRequest:
     def offset(self):
         """Gets the offset of this ListApicGroupsRequest.
 
-        offset
+        offset。
 
         :return: The offset of this ListApicGroupsRequest.
         :rtype: int
@@ -198,7 +198,7 @@ class ListApicGroupsRequest:
     def offset(self, offset):
         """Sets the offset of this ListApicGroupsRequest.
 
-        offset
+        offset。
 
         :param offset: The offset of this ListApicGroupsRequest.
         :type offset: int

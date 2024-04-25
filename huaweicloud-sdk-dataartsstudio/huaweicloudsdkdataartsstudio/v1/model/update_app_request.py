@@ -35,11 +35,11 @@ class UpdateAppRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param app_id: 应用编号
+        :param app_id: 应用编号。
         :type app_id: str
         :param body: Body of the UpdateAppRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.AppUpdateDTO`
@@ -64,7 +64,7 @@ class UpdateAppRequest:
     def workspace(self):
         """Gets the workspace of this UpdateAppRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this UpdateAppRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class UpdateAppRequest:
     def workspace(self, workspace):
         """Sets the workspace of this UpdateAppRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this UpdateAppRequest.
         :type workspace: str
@@ -86,7 +86,7 @@ class UpdateAppRequest:
     def dlm_type(self):
         """Gets the dlm_type of this UpdateAppRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this UpdateAppRequest.
         :rtype: str
@@ -97,7 +97,7 @@ class UpdateAppRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this UpdateAppRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this UpdateAppRequest.
         :type dlm_type: str
@@ -108,7 +108,7 @@ class UpdateAppRequest:
     def app_id(self):
         """Gets the app_id of this UpdateAppRequest.
 
-        应用编号
+        应用编号。
 
         :return: The app_id of this UpdateAppRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class UpdateAppRequest:
     def app_id(self, app_id):
         """Sets the app_id of this UpdateAppRequest.
 
-        应用编号
+        应用编号。
 
         :param app_id: The app_id of this UpdateAppRequest.
         :type app_id: str

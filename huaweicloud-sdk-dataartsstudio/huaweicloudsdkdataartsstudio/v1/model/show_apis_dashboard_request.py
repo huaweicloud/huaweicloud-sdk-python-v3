@@ -43,21 +43,21 @@ class ShowApisDashboardRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param instance_id: 集群编号
+        :param instance_id: 集群编号。
         :type instance_id: str
-        :param start_time: 开始时间（13位时间戳）
+        :param start_time: 开始时间（13位时间戳）。
         :type start_time: int
-        :param end_time: 结束时间（13位时间戳）
+        :param end_time: 结束时间（13位时间戳）。
         :type end_time: int
-        :param time_unit: 时间单位
+        :param time_unit: 时间单位。
         :type time_unit: str
-        :param limit: limit
+        :param limit: limit。
         :type limit: int
-        :param offset: offset
+        :param offset: offset。
         :type offset: int
         """
         
@@ -90,7 +90,7 @@ class ShowApisDashboardRequest:
     def workspace(self):
         """Gets the workspace of this ShowApisDashboardRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ShowApisDashboardRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class ShowApisDashboardRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowApisDashboardRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ShowApisDashboardRequest.
         :type workspace: str
@@ -112,7 +112,7 @@ class ShowApisDashboardRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ShowApisDashboardRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ShowApisDashboardRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class ShowApisDashboardRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ShowApisDashboardRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ShowApisDashboardRequest.
         :type dlm_type: str
@@ -134,7 +134,7 @@ class ShowApisDashboardRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowApisDashboardRequest.
 
-        集群编号
+        集群编号。
 
         :return: The instance_id of this ShowApisDashboardRequest.
         :rtype: str
@@ -145,7 +145,7 @@ class ShowApisDashboardRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowApisDashboardRequest.
 
-        集群编号
+        集群编号。
 
         :param instance_id: The instance_id of this ShowApisDashboardRequest.
         :type instance_id: str
@@ -156,7 +156,7 @@ class ShowApisDashboardRequest:
     def start_time(self):
         """Gets the start_time of this ShowApisDashboardRequest.
 
-        开始时间（13位时间戳）
+        开始时间（13位时间戳）。
 
         :return: The start_time of this ShowApisDashboardRequest.
         :rtype: int
@@ -167,7 +167,7 @@ class ShowApisDashboardRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowApisDashboardRequest.
 
-        开始时间（13位时间戳）
+        开始时间（13位时间戳）。
 
         :param start_time: The start_time of this ShowApisDashboardRequest.
         :type start_time: int
@@ -178,7 +178,7 @@ class ShowApisDashboardRequest:
     def end_time(self):
         """Gets the end_time of this ShowApisDashboardRequest.
 
-        结束时间（13位时间戳）
+        结束时间（13位时间戳）。
 
         :return: The end_time of this ShowApisDashboardRequest.
         :rtype: int
@@ -189,7 +189,7 @@ class ShowApisDashboardRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowApisDashboardRequest.
 
-        结束时间（13位时间戳）
+        结束时间（13位时间戳）。
 
         :param end_time: The end_time of this ShowApisDashboardRequest.
         :type end_time: int
@@ -200,7 +200,7 @@ class ShowApisDashboardRequest:
     def time_unit(self):
         """Gets the time_unit of this ShowApisDashboardRequest.
 
-        时间单位
+        时间单位。
 
         :return: The time_unit of this ShowApisDashboardRequest.
         :rtype: str
@@ -211,7 +211,7 @@ class ShowApisDashboardRequest:
     def time_unit(self, time_unit):
         """Sets the time_unit of this ShowApisDashboardRequest.
 
-        时间单位
+        时间单位。
 
         :param time_unit: The time_unit of this ShowApisDashboardRequest.
         :type time_unit: str
@@ -222,7 +222,7 @@ class ShowApisDashboardRequest:
     def limit(self):
         """Gets the limit of this ShowApisDashboardRequest.
 
-        limit
+        limit。
 
         :return: The limit of this ShowApisDashboardRequest.
         :rtype: int
@@ -233,7 +233,7 @@ class ShowApisDashboardRequest:
     def limit(self, limit):
         """Sets the limit of this ShowApisDashboardRequest.
 
-        limit
+        limit。
 
         :param limit: The limit of this ShowApisDashboardRequest.
         :type limit: int
@@ -244,7 +244,7 @@ class ShowApisDashboardRequest:
     def offset(self):
         """Gets the offset of this ShowApisDashboardRequest.
 
-        offset
+        offset。
 
         :return: The offset of this ShowApisDashboardRequest.
         :rtype: int
@@ -255,7 +255,7 @@ class ShowApisDashboardRequest:
     def offset(self, offset):
         """Sets the offset of this ShowApisDashboardRequest.
 
-        offset
+        offset。
 
         :param offset: The offset of this ShowApisDashboardRequest.
         :type offset: int

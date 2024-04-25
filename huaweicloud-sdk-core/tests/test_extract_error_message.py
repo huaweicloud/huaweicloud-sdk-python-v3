@@ -107,5 +107,20 @@ def test_extract_error_message5():
         assert "97e2***11df" == e.request_id
 
 
+def test_extract_error_message6():
+    error_message = '{"error_code": "XXX.0001", ' \
+                    '"error_msg": "Some errors occurred.", ' \
+                    '"encoded_authorization_message": null}'
+    response = MockResponse(error_message)
+    try:
+        EXCEPTION_HANDLER.handle_exception(None, response)
+        assert False
+    except ServiceResponseException as e:
+        assert e.encoded_auth_msg is None
+        assert "XXX.0001" == e.error_code
+        assert "Some errors occurred." == e.error_msg
+        assert "97e2***11df" == e.request_id
+
+
 if __name__ == '__main__':
     pytest.main()

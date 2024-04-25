@@ -20,17 +20,19 @@ class AudioStreamCreateRequest:
         'data': 'AudioStreamCreateRequestData',
         'event_type': 'str',
         'categories': 'list[str]',
-        'param_callback': 'str'
+        'param_callback': 'str',
+        'seed': 'str'
     }
 
     attribute_map = {
         'data': 'data',
         'event_type': 'event_type',
         'categories': 'categories',
-        'param_callback': 'callback'
+        'param_callback': 'callback',
+        'seed': 'seed'
     }
 
-    def __init__(self, data=None, event_type=None, categories=None, param_callback=None):
+    def __init__(self, data=None, event_type=None, categories=None, param_callback=None, seed=None):
         """AudioStreamCreateRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class AudioStreamCreateRequest:
         :type categories: list[str]
         :param param_callback: 回调http接口，服务将根据该字段回调通知用户审核结果，流未结束时，回调审核违规内容，流结束时，审核片段违规或不违规都将回调客户端。 回调内容如下： &#x60;&#x60;&#x60; {     \&quot;job_id\&quot;:\&quot;xxxxxx\&quot;,     \&quot;status\&quot;:\&quot;running\&quot;, //running - 审核中，succeeded - 审核完成，failed - 审核失败     \&quot;request_id\&quot;:\&quot;2419446b1fe14203f64e4018d12db3dd\&quot;,     \&quot;create_time\&quot;:\&quot;2022-07-30T08:57:11.011Z\&quot;,     \&quot;update_time\&quot;:\&quot;2022-07-30T08:57:14.014Z\&quot;,     \&quot;result\&quot;:{         \&quot;suggestion\&quot;:\&quot;block\&quot;,         \&quot;details\&quot;:[             {                 \&quot;suggestion\&quot;:\&quot;block\&quot;,                 \&quot;label\&quot;:\&quot;politics\&quot;,                 \&quot;audio_text\&quot;:\&quot;xxxx\&quot;,                 \&quot;start_time\&quot;:\&quot;2022-07-30T08:57:11.011Z\&quot;, // 当前音频片段开始的绝对时间                 \&quot;end_time\&quot;:\&quot;2022-07-30T08:57:21.011Z\&quot;,     // 当前音频片段结束的绝对时间                 \&quot;segments\&quot;:[                     {                         \&quot;segment\&quot;:\&quot;xxx\&quot;                     },                     {                         \&quot;segment\&quot;:\&quot;xxx\&quot;                     },                     {                         \&quot;segment\&quot;:\&quot;xxx\&quot;                     }                 ]             }         ],         \&quot;request_params\&quot;:{             \&quot;event_type\&quot;:\&quot;default\&quot;,             \&quot;data\&quot;:{                 \&quot;url\&quot;:\&quot;rtmp://xxxx\&quot;             },             \&quot;callback\&quot;:\&quot;http://xxx\&quot;,             \&quot;categories\&quot;:[                 \&quot;porn\&quot;,                 \&quot;ad\&quot;             ]         }     } }
         :type param_callback: str
+        :param seed: 用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
+        :type seed: str
         """
         
         
@@ -51,12 +55,15 @@ class AudioStreamCreateRequest:
         self._event_type = None
         self._categories = None
         self._param_callback = None
+        self._seed = None
         self.discriminator = None
 
         self.data = data
         self.event_type = event_type
         self.categories = categories
         self.param_callback = param_callback
+        if seed is not None:
+            self.seed = seed
 
     @property
     def data(self):
@@ -141,6 +148,28 @@ class AudioStreamCreateRequest:
         :type param_callback: str
         """
         self._param_callback = param_callback
+
+    @property
+    def seed(self):
+        """Gets the seed of this AudioStreamCreateRequest.
+
+        用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
+
+        :return: The seed of this AudioStreamCreateRequest.
+        :rtype: str
+        """
+        return self._seed
+
+    @seed.setter
+    def seed(self, seed):
+        """Sets the seed of this AudioStreamCreateRequest.
+
+        用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
+
+        :param seed: The seed of this AudioStreamCreateRequest.
+        :type seed: str
+        """
+        self._seed = seed
 
     def to_dict(self):
         """Returns the model properties as a dict"""

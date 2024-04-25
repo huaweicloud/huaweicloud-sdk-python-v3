@@ -37,15 +37,15 @@ class ListApiCatalogListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param catalog_id: 目录编号
+        :param catalog_id: 目录编号。
         :type catalog_id: str
-        :param offset: 查询起始坐标, 即跳过前X条数据
+        :param offset: 查询起始坐标, 即跳过前X条数据。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据
+        :param limit: 查询条数, 即查询Y条数据。
         :type limit: int
         """
         
@@ -71,7 +71,7 @@ class ListApiCatalogListRequest:
     def workspace(self):
         """Gets the workspace of this ListApiCatalogListRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListApiCatalogListRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListApiCatalogListRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListApiCatalogListRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListApiCatalogListRequest.
         :type workspace: str
@@ -93,7 +93,7 @@ class ListApiCatalogListRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ListApiCatalogListRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ListApiCatalogListRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListApiCatalogListRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ListApiCatalogListRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ListApiCatalogListRequest.
         :type dlm_type: str
@@ -115,7 +115,7 @@ class ListApiCatalogListRequest:
     def catalog_id(self):
         """Gets the catalog_id of this ListApiCatalogListRequest.
 
-        目录编号
+        目录编号。
 
         :return: The catalog_id of this ListApiCatalogListRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListApiCatalogListRequest:
     def catalog_id(self, catalog_id):
         """Sets the catalog_id of this ListApiCatalogListRequest.
 
-        目录编号
+        目录编号。
 
         :param catalog_id: The catalog_id of this ListApiCatalogListRequest.
         :type catalog_id: str
@@ -137,7 +137,7 @@ class ListApiCatalogListRequest:
     def offset(self):
         """Gets the offset of this ListApiCatalogListRequest.
 
-        查询起始坐标, 即跳过前X条数据
+        查询起始坐标, 即跳过前X条数据。
 
         :return: The offset of this ListApiCatalogListRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ListApiCatalogListRequest:
     def offset(self, offset):
         """Sets the offset of this ListApiCatalogListRequest.
 
-        查询起始坐标, 即跳过前X条数据
+        查询起始坐标, 即跳过前X条数据。
 
         :param offset: The offset of this ListApiCatalogListRequest.
         :type offset: int
@@ -159,7 +159,7 @@ class ListApiCatalogListRequest:
     def limit(self):
         """Gets the limit of this ListApiCatalogListRequest.
 
-        查询条数, 即查询Y条数据
+        查询条数, 即查询Y条数据。
 
         :return: The limit of this ListApiCatalogListRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class ListApiCatalogListRequest:
     def limit(self, limit):
         """Sets the limit of this ListApiCatalogListRequest.
 
-        查询条数, 即查询Y条数据
+        查询条数, 即查询Y条数据。
 
         :param limit: The limit of this ListApiCatalogListRequest.
         :type limit: int

@@ -33,11 +33,11 @@ class ShowMessageDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param message_id: 消息信息id
+        :param message_id: 消息信息id。
         :type message_id: str
         """
         
@@ -57,7 +57,7 @@ class ShowMessageDetailRequest:
     def workspace(self):
         """Gets the workspace of this ShowMessageDetailRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ShowMessageDetailRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ShowMessageDetailRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowMessageDetailRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ShowMessageDetailRequest.
         :type workspace: str
@@ -79,7 +79,7 @@ class ShowMessageDetailRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ShowMessageDetailRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ShowMessageDetailRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowMessageDetailRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ShowMessageDetailRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ShowMessageDetailRequest.
         :type dlm_type: str
@@ -101,7 +101,7 @@ class ShowMessageDetailRequest:
     def message_id(self):
         """Gets the message_id of this ShowMessageDetailRequest.
 
-        消息信息id
+        消息信息id。
 
         :return: The message_id of this ShowMessageDetailRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ShowMessageDetailRequest:
     def message_id(self, message_id):
         """Sets the message_id of this ShowMessageDetailRequest.
 
-        消息信息id
+        消息信息id。
 
         :param message_id: The message_id of this ShowMessageDetailRequest.
         :type message_id: str

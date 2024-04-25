@@ -27,7 +27,8 @@ class FirewallInsertRuleItemOption:
         'source_port': 'str',
         'destination_port': 'str',
         'source_address_group_id': 'str',
-        'destination_address_group_id': 'str'
+        'destination_address_group_id': 'str',
+        'enabled': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class FirewallInsertRuleItemOption:
         'source_port': 'source_port',
         'destination_port': 'destination_port',
         'source_address_group_id': 'source_address_group_id',
-        'destination_address_group_id': 'destination_address_group_id'
+        'destination_address_group_id': 'destination_address_group_id',
+        'enabled': 'enabled'
     }
 
-    def __init__(self, name=None, description=None, action=None, protocol=None, ip_version=None, source_ip_address=None, destination_ip_address=None, source_port=None, destination_port=None, source_address_group_id=None, destination_address_group_id=None):
+    def __init__(self, name=None, description=None, action=None, protocol=None, ip_version=None, source_ip_address=None, destination_ip_address=None, source_port=None, destination_port=None, source_address_group_id=None, destination_address_group_id=None, enabled=None):
         """FirewallInsertRuleItemOption
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class FirewallInsertRuleItemOption:
         :type source_address_group_id: str
         :param destination_address_group_id: 功能说明：ACL规则的目的地址组ID 约束：destination_ip_address和destination_address_group_id不能同时设置
         :type destination_address_group_id: str
+        :param enabled: 功能说明：是否启用ACL规则。 取值范围：true，表示启用；false，表示停用。 默认值：true。
+        :type enabled: bool
         """
         
         
@@ -86,6 +90,7 @@ class FirewallInsertRuleItemOption:
         self._destination_port = None
         self._source_address_group_id = None
         self._destination_address_group_id = None
+        self._enabled = None
         self.discriminator = None
 
         if name is not None:
@@ -107,6 +112,8 @@ class FirewallInsertRuleItemOption:
             self.source_address_group_id = source_address_group_id
         if destination_address_group_id is not None:
             self.destination_address_group_id = destination_address_group_id
+        if enabled is not None:
+            self.enabled = enabled
 
     @property
     def name(self):
@@ -349,6 +356,28 @@ class FirewallInsertRuleItemOption:
         :type destination_address_group_id: str
         """
         self._destination_address_group_id = destination_address_group_id
+
+    @property
+    def enabled(self):
+        """Gets the enabled of this FirewallInsertRuleItemOption.
+
+        功能说明：是否启用ACL规则。 取值范围：true，表示启用；false，表示停用。 默认值：true。
+
+        :return: The enabled of this FirewallInsertRuleItemOption.
+        :rtype: bool
+        """
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this FirewallInsertRuleItemOption.
+
+        功能说明：是否启用ACL规则。 取值范围：true，表示启用；false，表示停用。 默认值：true。
+
+        :param enabled: The enabled of this FirewallInsertRuleItemOption.
+        :type enabled: bool
+        """
+        self._enabled = enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

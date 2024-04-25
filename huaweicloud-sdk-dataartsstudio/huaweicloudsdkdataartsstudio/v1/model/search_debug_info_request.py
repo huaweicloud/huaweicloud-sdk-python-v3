@@ -37,15 +37,15 @@ class SearchDebugInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param api_id: api编号
+        :param api_id: api编号。
         :type api_id: str
-        :param limit: limit
+        :param limit: limit。
         :type limit: int
-        :param offset: offset
+        :param offset: offset。
         :type offset: int
         """
         
@@ -71,7 +71,7 @@ class SearchDebugInfoRequest:
     def workspace(self):
         """Gets the workspace of this SearchDebugInfoRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this SearchDebugInfoRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class SearchDebugInfoRequest:
     def workspace(self, workspace):
         """Sets the workspace of this SearchDebugInfoRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this SearchDebugInfoRequest.
         :type workspace: str
@@ -93,7 +93,7 @@ class SearchDebugInfoRequest:
     def dlm_type(self):
         """Gets the dlm_type of this SearchDebugInfoRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this SearchDebugInfoRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class SearchDebugInfoRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this SearchDebugInfoRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this SearchDebugInfoRequest.
         :type dlm_type: str
@@ -115,7 +115,7 @@ class SearchDebugInfoRequest:
     def api_id(self):
         """Gets the api_id of this SearchDebugInfoRequest.
 
-        api编号
+        api编号。
 
         :return: The api_id of this SearchDebugInfoRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class SearchDebugInfoRequest:
     def api_id(self, api_id):
         """Sets the api_id of this SearchDebugInfoRequest.
 
-        api编号
+        api编号。
 
         :param api_id: The api_id of this SearchDebugInfoRequest.
         :type api_id: str
@@ -137,7 +137,7 @@ class SearchDebugInfoRequest:
     def limit(self):
         """Gets the limit of this SearchDebugInfoRequest.
 
-        limit
+        limit。
 
         :return: The limit of this SearchDebugInfoRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class SearchDebugInfoRequest:
     def limit(self, limit):
         """Sets the limit of this SearchDebugInfoRequest.
 
-        limit
+        limit。
 
         :param limit: The limit of this SearchDebugInfoRequest.
         :type limit: int
@@ -159,7 +159,7 @@ class SearchDebugInfoRequest:
     def offset(self):
         """Gets the offset of this SearchDebugInfoRequest.
 
-        offset
+        offset。
 
         :return: The offset of this SearchDebugInfoRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class SearchDebugInfoRequest:
     def offset(self, offset):
         """Sets the offset of this SearchDebugInfoRequest.
 
-        offset
+        offset。
 
         :param offset: The offset of this SearchDebugInfoRequest.
         :type offset: int

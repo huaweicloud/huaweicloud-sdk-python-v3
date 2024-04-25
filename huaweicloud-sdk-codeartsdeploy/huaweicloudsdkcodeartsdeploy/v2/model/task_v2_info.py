@@ -44,9 +44,11 @@ class TaskV2Info:
         'can_copy': 'bool',
         'can_manage': 'bool',
         'can_create_env': 'bool',
+        'can_disable': 'bool',
         'app_component_list': 'list[AppComponentDao]',
         'release_id': 'int',
-        'app_id': 'str'
+        'app_id': 'str',
+        'is_disable': 'bool'
     }
 
     attribute_map = {
@@ -77,12 +79,14 @@ class TaskV2Info:
         'can_copy': 'can_copy',
         'can_manage': 'can_manage',
         'can_create_env': 'can_create_env',
+        'can_disable': 'can_disable',
         'app_component_list': 'app_component_list',
         'release_id': 'release_id',
-        'app_id': 'app_id'
+        'app_id': 'app_id',
+        'is_disable': 'is_disable'
     }
 
-    def __init__(self, id=None, name=None, state=None, description=None, owner=None, steps=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, role_id=None, is_defaut_permission=None, template_id=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, app_component_list=None, release_id=None, app_id=None):
+    def __init__(self, id=None, name=None, state=None, description=None, owner=None, steps=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, role_id=None, is_defaut_permission=None, template_id=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, can_disable=None, app_component_list=None, release_id=None, app_id=None, is_disable=None):
         """TaskV2Info
 
         The model defined in huaweicloud sdk
@@ -141,12 +145,16 @@ class TaskV2Info:
         :type can_manage: bool
         :param can_create_env: 是否有创建环境的权限
         :type can_create_env: bool
+        :param can_disable: 是否有禁用应用的权限
+        :type can_disable: bool
         :param app_component_list: 应用组件列表
         :type app_component_list: list[:class:`huaweicloudsdkcodeartsdeploy.v2.AppComponentDao`]
         :param release_id: 部署记录序列号
         :type release_id: int
         :param app_id: 部署任务所属应用id
         :type app_id: str
+        :param is_disable: 当前应用是否被禁用
+        :type is_disable: bool
         """
         
         
@@ -178,9 +186,11 @@ class TaskV2Info:
         self._can_copy = None
         self._can_manage = None
         self._can_create_env = None
+        self._can_disable = None
         self._app_component_list = None
         self._release_id = None
         self._app_id = None
+        self._is_disable = None
         self.discriminator = None
 
         if id is not None:
@@ -237,12 +247,16 @@ class TaskV2Info:
             self.can_manage = can_manage
         if can_create_env is not None:
             self.can_create_env = can_create_env
+        if can_disable is not None:
+            self.can_disable = can_disable
         if app_component_list is not None:
             self.app_component_list = app_component_list
         if release_id is not None:
             self.release_id = release_id
         if app_id is not None:
             self.app_id = app_id
+        if is_disable is not None:
+            self.is_disable = is_disable
 
     @property
     def id(self):
@@ -839,6 +853,28 @@ class TaskV2Info:
         self._can_create_env = can_create_env
 
     @property
+    def can_disable(self):
+        """Gets the can_disable of this TaskV2Info.
+
+        是否有禁用应用的权限
+
+        :return: The can_disable of this TaskV2Info.
+        :rtype: bool
+        """
+        return self._can_disable
+
+    @can_disable.setter
+    def can_disable(self, can_disable):
+        """Sets the can_disable of this TaskV2Info.
+
+        是否有禁用应用的权限
+
+        :param can_disable: The can_disable of this TaskV2Info.
+        :type can_disable: bool
+        """
+        self._can_disable = can_disable
+
+    @property
     def app_component_list(self):
         """Gets the app_component_list of this TaskV2Info.
 
@@ -903,6 +939,28 @@ class TaskV2Info:
         :type app_id: str
         """
         self._app_id = app_id
+
+    @property
+    def is_disable(self):
+        """Gets the is_disable of this TaskV2Info.
+
+        当前应用是否被禁用
+
+        :return: The is_disable of this TaskV2Info.
+        :rtype: bool
+        """
+        return self._is_disable
+
+    @is_disable.setter
+    def is_disable(self, is_disable):
+        """Sets the is_disable of this TaskV2Info.
+
+        当前应用是否被禁用
+
+        :param is_disable: The is_disable of this TaskV2Info.
+        :type is_disable: bool
+        """
+        self._is_disable = is_disable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

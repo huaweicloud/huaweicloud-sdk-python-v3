@@ -20,7 +20,7 @@ class ListMetricsDataResponse(SdkResponse):
     openapi_types = {
         'code': 'int',
         'msg': 'str',
-        'data': 'list[dict(str, str)]',
+        'data': 'list[dict(str, object)]',
         'count': 'int'
     }
 
@@ -41,7 +41,7 @@ class ListMetricsDataResponse(SdkResponse):
         :param msg: 响应信息
         :type msg: str
         :param data: 指标采集数据列表。
-        :type data: list[dict(str, str)]
+        :type data: list[dict(str, object)]
         :param count: 总列表大小。
         :type count: int
         """
@@ -114,7 +114,7 @@ class ListMetricsDataResponse(SdkResponse):
         指标采集数据列表。
 
         :return: The data of this ListMetricsDataResponse.
-        :rtype: list[dict(str, str)]
+        :rtype: list[dict(str, object)]
         """
         return self._data
 
@@ -125,7 +125,7 @@ class ListMetricsDataResponse(SdkResponse):
         指标采集数据列表。
 
         :param data: The data of this ListMetricsDataResponse.
-        :type data: list[dict(str, str)]
+        :type data: list[dict(str, object)]
         """
         self._data = data
 

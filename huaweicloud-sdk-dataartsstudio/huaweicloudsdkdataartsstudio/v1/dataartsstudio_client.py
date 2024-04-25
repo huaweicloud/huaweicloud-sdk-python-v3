@@ -383,7 +383,7 @@ class DataArtsStudioClient(Client):
     def batch_approve_apply(self, request):
         """审核申请
 
-        审核申请
+        审核申请。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -810,7 +810,7 @@ class DataArtsStudioClient(Client):
     def _batch_delete_security_secrecy_levels_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/dls/data-classification/secrecy-level/batch-delete",
+            "resource_path": "/v1/{project_id}/security/data-classification/secrecy-level/batch-delete",
             "request_type": request.__class__.__name__,
             "response_type": "BatchDeleteSecuritySecrecyLevelsResponse"
             }
@@ -1098,6 +1098,73 @@ class DataArtsStudioClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_update_security_dlf_data_ware_houses(self, request):
+        """批量更新数据开发连接细粒度认证状态
+
+        批量更新数据开发连接细粒度认证状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateSecurityDlfDataWareHouses
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchUpdateSecurityDlfDataWareHousesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchUpdateSecurityDlfDataWareHousesResponse`
+        """
+        http_info = self._batch_update_security_dlf_data_ware_houses_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_security_dlf_data_ware_houses_invoker(self, request):
+        http_info = self._batch_update_security_dlf_data_ware_houses_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_security_dlf_data_ware_houses_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/fgac/dlf/datawarehouses",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateSecurityDlfDataWareHousesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1603,7 +1670,7 @@ class DataArtsStudioClient(Client):
     def confirm_message(self, request):
         """处理消息
 
-        处理消息
+        对收到的通知消息进行确认，可以在指定的时间范围内选择何时进行处理。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1946,7 +2013,8 @@ class DataArtsStudioClient(Client):
     def create_app(self, request):
         """创建应用
 
-        创建应用
+        创建应用。  
+        支持创建APP， IAM应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3306,7 +3374,7 @@ class DataArtsStudioClient(Client):
     def create_service_catalog(self, request):
         """创建服务目录
 
-        创建服务目录
+        创建服务目录。 根目录编号为0。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3987,10 +4055,77 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def debug_security_dlf_data_ware_houses(self, request):
+        """测试数据开发连接细粒度连通性
+
+        测试数据开发连接细粒度连通性
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DebugSecurityDlfDataWareHouses
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DebugSecurityDlfDataWareHousesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DebugSecurityDlfDataWareHousesResponse`
+        """
+        http_info = self._debug_security_dlf_data_ware_houses_http_info(request)
+        return self._call_api(**http_info)
+
+    def debug_security_dlf_data_ware_houses_invoker(self, request):
+        http_info = self._debug_security_dlf_data_ware_houses_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _debug_security_dlf_data_ware_houses_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/fgac/dlf/datawarehouses/{dw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DebugSecurityDlfDataWareHousesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dw_id' in local_var_params:
+            path_params['dw_id'] = local_var_params['dw_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_app(self, request):
         """删除应用
 
-        删除应用
+        删除应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5085,7 +5220,8 @@ class DataArtsStudioClient(Client):
     def delete_service_catalog(self, request):
         """批量删除目录
 
-        批量删除目录
+        批量删除服务目录。  
+        删除目录的同时会删除其下的所有子目录，不支持删除带有API的目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6508,7 +6644,7 @@ class DataArtsStudioClient(Client):
     def list_all_catalog_list(self, request):
         """获取当前目录下的所有类型列表
 
-        获取当前目录下的所有类型列表
+        获取当前目录下所有类型列表（包括api和目录，均以目录的数据格式形式展示）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6752,7 +6888,7 @@ class DataArtsStudioClient(Client):
     def list_api_catalog_list(self, request):
         """获取当前目录下的api列表
 
-        获取当前目录下的api列表
+        获取当前目录下的api列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6825,7 +6961,7 @@ class DataArtsStudioClient(Client):
     def list_api_top_n(self, request):
         """查询指定api 应用调用topN
 
-        查询指定api 应用调用topN
+        查询指定api 应用调用topN。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6906,7 +7042,7 @@ class DataArtsStudioClient(Client):
     def list_apic_groups(self, request):
         """获取网关分组
 
-        获取网关分组
+        获取网关分组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6979,9 +7115,9 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apic_instances(self, request):
-        """获取网关实例
+        """获取网关实例(专享版)
 
-        获取网关实例
+        获取网关实例(专享版)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7054,7 +7190,7 @@ class DataArtsStudioClient(Client):
     def list_apis_top(self, request):
         """查询api 服务调用topN
 
-        查询api 服务调用topN
+        查询api 服务调用topN。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7133,7 +7269,7 @@ class DataArtsStudioClient(Client):
     def list_apply(self, request):
         """查询申请列表
 
-        查询申请列表
+        查询申请列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7281,7 +7417,7 @@ class DataArtsStudioClient(Client):
     def list_apps(self, request):
         """查询应用列表
 
-        查询应用列表
+        查询应用列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7356,7 +7492,7 @@ class DataArtsStudioClient(Client):
     def list_apps_top(self, request):
         """查询app 服务使用topN
 
-        查询app 服务使用topN
+        查询app 服务使用topN。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7736,7 +7872,7 @@ class DataArtsStudioClient(Client):
     def list_catalog_list(self, request):
         """获取当前目录下的目录列表（全量）
 
-        获取当前目录下的目录列表（全量）
+        获取当前目录下的目录列表（全量数据，不分页，推荐仅用于生成目录树等无法分页的场景）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9672,7 +9808,7 @@ class DataArtsStudioClient(Client):
     def list_message(self, request):
         """查询消息列表
 
-        查询消息列表
+        查询审核中心的通知消息列表。与申请不同，通知类消息，无法驳回，仅能在指定的时间范围内作出处理。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10590,6 +10726,71 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_security_dlf_data_ware_houses(self, request):
+        """查询数据开发细粒度连接列表（全量）
+
+        查询数据开发细粒度连接列表（全量）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityDlfDataWareHouses
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDlfDataWareHousesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityDlfDataWareHousesResponse`
+        """
+        http_info = self._list_security_dlf_data_ware_houses_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_dlf_data_ware_houses_invoker(self, request):
+        http_info = self._list_security_dlf_data_ware_houses_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_dlf_data_ware_houses_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/fgac/dlf/datawarehouses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityDlfDataWareHousesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_permission_set_members(self, request):
         """查询权限集成员列表
 
@@ -10962,6 +11163,81 @@ class DataArtsStudioClient(Client):
             query_params.append(('order_by', local_var_params['order_by']))
         if 'desc' in local_var_params:
             query_params.append(('desc', local_var_params['desc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_sensitive_data_overviews(self, request):
+        """查询敏感数据发现概览结果(以分类和密级为单位)
+
+        查询敏感数据发现概览结果(以分类和密级为单位)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecuritySensitiveDataOverviews
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecuritySensitiveDataOverviewsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecuritySensitiveDataOverviewsResponse`
+        """
+        http_info = self._list_security_sensitive_data_overviews_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_sensitive_data_overviews_invoker(self, request):
+        http_info = self._list_security_sensitive_data_overviews_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_sensitive_data_overviews_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/sensitive-data/result/overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecuritySensitiveDataOverviewsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'datasource' in local_var_params:
+            query_params.append(('datasource', local_var_params['datasource']))
+        if 'cluster_name' in local_var_params:
+            query_params.append(('cluster_name', local_var_params['cluster_name']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'schema_name' in local_var_params:
+            query_params.append(('schema_name', local_var_params['schema_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -11445,7 +11721,7 @@ class DataArtsStudioClient(Client):
     def migrate_api(self, request):
         """批量移动api至新目录
 
-        批量移动api至新目录
+        批量移动api至新目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11514,7 +11790,8 @@ class DataArtsStudioClient(Client):
     def migrate_catalog(self, request):
         """移动当前目录至新目录
 
-        移动当前目录至新目录
+        移动当前目录至新目录。  
+        移动目录的的同时会移动其下的所有子目录与api。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12313,7 +12590,7 @@ class DataArtsStudioClient(Client):
     def search_authorize_app(self, request):
         """查询API已授权的APP
 
-        查询API已授权的APP
+        查询API已授权的APP。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12386,7 +12663,7 @@ class DataArtsStudioClient(Client):
     def search_bind_api(self, request):
         """查询APP已拥有授权的API
 
-        查询APP已拥有授权的API
+        查询APP已拥有授权的API。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12986,7 +13263,7 @@ class DataArtsStudioClient(Client):
     def search_id_by_path(self, request):
         """通过路径获取id
 
-        通过路径获取id
+        通过路径获取id。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13455,7 +13732,7 @@ class DataArtsStudioClient(Client):
     def show_api_dashboard(self, request):
         """查询指定api 仪表板数据详情
 
-        查询指定api 仪表板数据详情
+        查询指定api 仪表板数据详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13532,7 +13809,7 @@ class DataArtsStudioClient(Client):
     def show_apis_dashboard(self, request):
         """查询api 仪表板数据详情
 
-        查询api 仪表板数据详情
+        查询api 仪表板数据详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13611,7 +13888,7 @@ class DataArtsStudioClient(Client):
     def show_apis_detail(self, request):
         """查询api 统计数据详情
 
-        查询api 统计数据详情
+        查询api 统计数据详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13688,7 +13965,7 @@ class DataArtsStudioClient(Client):
     def show_apis_overview(self, request):
         """查询统计用户相关的总览开发指标
 
-        查询统计用户相关的总览开发指标
+        查询统计用户相关的总览开发指标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13761,7 +14038,7 @@ class DataArtsStudioClient(Client):
     def show_app_info(self, request):
         """查询应用详情
 
-        查询应用详情
+        查询应用详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13830,7 +14107,8 @@ class DataArtsStudioClient(Client):
     def show_apply_detail(self, request):
         """获取申请详情
 
-        获取申请详情
+        获取申请详情。  
+        此功能仅用作信息详情展示，不用做业务处理，因此不展示编号等后台参数。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13899,7 +14177,7 @@ class DataArtsStudioClient(Client):
     def show_apps_dashboard(self, request):
         """查询app 仪表板数据详情
 
-        查询app 仪表板数据详情
+        查询app 仪表板数据详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13976,7 +14254,7 @@ class DataArtsStudioClient(Client):
     def show_apps_detail(self, request):
         """查询app 统计数据详情
 
-        查询app 统计数据详情
+        查询app 统计数据详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14051,7 +14329,7 @@ class DataArtsStudioClient(Client):
     def show_apps_overview(self, request):
         """查询统计用户相关的总览调用指标
 
-        查询统计用户相关的总览调用指标
+        查询统计用户相关的总览调用指标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14538,7 +14816,7 @@ class DataArtsStudioClient(Client):
     def show_catalog_detail(self, request):
         """查询服务目录
 
-        查询服务目录
+        查询服务目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16314,7 +16592,7 @@ class DataArtsStudioClient(Client):
     def show_message_detail(self, request):
         """获取消息详情
 
-        获取消息详情
+        获取消息详情。此功能仅用作信息详情展示，不用做业务处理，因此不展示编号等后台参数。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16582,7 +16860,7 @@ class DataArtsStudioClient(Client):
     def show_path_by_id(self, request):
         """通过id获取路径
 
-        通过id获取路径
+        通过id获取路径。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16655,7 +16933,8 @@ class DataArtsStudioClient(Client):
     def show_path_object_by_id(self, request):
         """通过id获取路径对象
 
-        通过id获取路径对象
+        通过目录id获取路径对象。  
+        通过目录id获取从根目录至当前目录链路上每一层的路径信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17954,7 +18233,7 @@ class DataArtsStudioClient(Client):
     def update_app(self, request):
         """更新应用
 
-        更新应用
+        更新应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18094,7 +18373,7 @@ class DataArtsStudioClient(Client):
     def update_catalog(self, request):
         """更新服务目录
 
-        更新服务目录
+        更新服务目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -19697,7 +19976,15 @@ class DataArtsStudioClient(Client):
     def authorize_action_api_to_instance(self, request):
         """API授权操作(授权/取消授权/申请/续约)
 
-        API授权操作(授权/取消授权/申请/续约)
+        - API主动授权：  API审核人可发起，API主动授权成功后，在有效期内，APP即可访问该API。API授权包含授权和续约两部分功能。
+            * 授权：授权会给予APP在有效期内访问API的权利。
+            * 续约：续约会更新授权有效期，仅支持延长有效期，不能减少。
+        - API解除授权：  API审核人可发起，解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。API解除已授权的APP关系，需要为APP预留至少2天的准备时间。
+        - APP解除授权：  APP所有者可发起，解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。APP解除自己的授权关系，无需预留准备时间。
+        - APP申请授权：  APP所有者可发起，APP申请API后，待API的审核人完成审核，APP即可访问该API。授权会给予APP在有效期内访问API的权利，需要API审核。
+        - APP申请续约：  APP所有者可发起，续约会更新授权有效期，仅支持延长有效期，不能减少，需要API审核。
+        &gt; * 申请自己的API推荐采用API主动授权/续约，无需审核。
+        &gt; * 自己的应用推荐采用APP解除授权，无需预留准备时间。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -19764,9 +20051,12 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def authorize_api_to_instance(self, request):
-        """批量授权API
+        """批量授权API(专享版)
 
-        批量授权API
+        APP创建成功后，还不能访问API，如果想要访问某个API，需要将该API授权给APP。API主动授权成功后，在有效期内，APP即可访问该API。  
+        API授权包含授权和续约两部分功能。  
+        - 授权：授权会给予APP在有效期内访问API的权利。
+        - 续约：续约会更新授权有效期，仅支持延长有效期，不能减少。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -19839,7 +20129,7 @@ class DataArtsStudioClient(Client):
     def create_api(self, request):
         """创建API
 
-        创建API
+        创建API。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -19908,7 +20198,7 @@ class DataArtsStudioClient(Client):
     def debug_api(self, request):
         """调试API
 
-        调试API
+        调试API。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -19981,7 +20271,7 @@ class DataArtsStudioClient(Client):
     def delete_api(self, request):
         """批量删除API
 
-        批量删除API
+        批量删除API。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20050,7 +20340,12 @@ class DataArtsStudioClient(Client):
     def execute_api_to_instance(self, request):
         """API操作(下线/停用/恢复)
 
-        API操作(下线/停用/恢复)
+        - 下线API。将已发布的API下线。下线后，所有授权关系都会被解除，API将无法再被调用。
+        - 停用API。将已发布的API临时下线。下线后，授权关系会保留，停用期间API将无法再被调用。
+        - 恢复API。将已停用的API恢复使用。恢复后， API重新提供调用。
+        &gt; * 恢复请求的发起者若非审核人，需要API的审核人完成申请的审核。
+        &gt; * 下线/停用请求的发起者，必须为API的审核人。
+        &gt; * 下线/停用功能需要为已授权的应用预留充分的准备时间，需至少提前2天发起请求。若需要立即执行下线/停用，需要发起请求后，无有效的授权应用或是有效的授权应用均处理完消息（立即执行，或定期后完成执行）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20120,10 +20415,286 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def export_data_service_excel(self, request):
+        """导出包含API信息的excel文件
+
+        导出包含API信息的excel文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportDataServiceExcel
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ExportDataServiceExcelRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExportDataServiceExcelResponse`
+        """
+        http_info = self._export_data_service_excel_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_data_service_excel_invoker(self, request):
+        http_info = self._export_data_service_excel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_data_service_excel_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/export/excel",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDataServiceExcelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_data_service_excel_template(self, request):
+        """下载excel模板
+
+        下载excel模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportDataServiceExcelTemplate
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ExportDataServiceExcelTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExportDataServiceExcelTemplateResponse`
+        """
+        http_info = self._export_data_service_excel_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_data_service_excel_template_invoker(self, request):
+        http_info = self._export_data_service_excel_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_data_service_excel_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/export/excel-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDataServiceExcelTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_data_service_zip(self, request):
+        """全量导出包含API的excel压缩文件
+
+        全量导出包含API的excel压缩文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportDataServiceZip
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ExportDataServiceZipRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExportDataServiceZipResponse`
+        """
+        http_info = self._export_data_service_zip_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_data_service_zip_invoker(self, request):
+        http_info = self._export_data_service_zip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_data_service_zip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/export/zip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDataServiceZipResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_data_service_excel(self, request):
+        """导入包含API信息的excel文件
+
+        导入包含API信息的excel文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ImportDataServiceExcel
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ImportDataServiceExcelRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportDataServiceExcelResponse`
+        """
+        http_info = self._import_data_service_excel_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_data_service_excel_invoker(self, request):
+        http_info = self._import_data_service_excel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_data_service_excel_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/import/excel",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportDataServiceExcelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_apis(self, request):
         """查询API列表
 
-        查询API列表
+        查询API列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20160,6 +20731,25 @@ class DataArtsStudioClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'create_user' in local_var_params:
+            query_params.append(('create_user', local_var_params['create_user']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'csv'
+        if 'api_type' in local_var_params:
+            query_params.append(('api_type', local_var_params['api_type']))
+        if 'publish_status' in local_var_params:
+            query_params.append(('publish_status', local_var_params['publish_status']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -20194,9 +20784,9 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_instance_list(self, request):
-        """查看API不同操作对应的实例信息
+        """查看API不同操作对应的实例信息(专享版)
 
-        查看API不同操作对应的实例信息
+        查看API不同操作对应的实例信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20276,79 +20866,13 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
-    def publish_api(self, request):
-        """发布/下线/停用/恢复API
-
-        发布/下线/停用/恢复API
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for PublishApi
-        :type request: :class:`huaweicloudsdkdataartsstudio.v1.PublishApiRequest`
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublishApiResponse`
-        """
-        http_info = self._publish_api_http_info(request)
-        return self._call_api(**http_info)
-
-    def publish_api_invoker(self, request):
-        http_info = self._publish_api_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _publish_api_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/service/apis/publish",
-            "request_type": request.__class__.__name__,
-            "response_type": "PublishApiResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'workspace' in local_var_params:
-            header_params['workspace'] = local_var_params['workspace']
-        if 'dlm_type' in local_var_params:
-            header_params['Dlm-Type'] = local_var_params['dlm_type']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def publish_api_to_instance(self, request):
         """发布API
 
-        发布API
+        发布API。API只有发布后，才能够被调用。API发布时，可以将API发送至指定网关。
+        - 共享版，必须发送至API网关共享版。
+        - 专享版，可以依据自身需要，选择将API发送至API网关专享版、ROMA-APIC、或不发布网关。
+        &gt; 发布请求的发起者若非审核人，需要API的审核人完成申请的审核。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20419,9 +20943,9 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_debug_info(self, request):
-        """查看API调试信息
+        """查看API调试信息(专享版)
 
-        查看API调试信息
+        查看API在不同集群上的调试信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20492,9 +21016,10 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_publish_info(self, request):
-        """查看API发布信息
+        """查看API发布信息(专享版)
 
-        查看API发布信息
+        查看API在不同集群上的发布信息。  
+        API在集群上进行过操作后会存在发布信息，例如调试、注册类发布等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20567,7 +21092,7 @@ class DataArtsStudioClient(Client):
     def show_api(self, request):
         """查询API信息
 
-        查询API信息
+        查询API信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20636,7 +21161,7 @@ class DataArtsStudioClient(Client):
     def update_api(self, request):
         """更新API
 
-        更新API
+        更新API。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

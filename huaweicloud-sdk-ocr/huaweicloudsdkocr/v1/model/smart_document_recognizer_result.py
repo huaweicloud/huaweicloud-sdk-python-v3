@@ -21,7 +21,8 @@ class SmartDocumentRecognizerResult:
         'kv_result': 'SmartDocumentRecognizerKvResult',
         'table_result': 'SmartDocumentRecognizerTableResult',
         'layout_result': 'SmartDocumentRecognizerLayoutResult',
-        'form_result': 'SmartDocumentRecognizerFormResult'
+        'form_result': 'SmartDocumentRecognizerFormResult',
+        'formula_result': 'SmartDocumentRecognizerFormulaResult'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class SmartDocumentRecognizerResult:
         'kv_result': 'kv_result',
         'table_result': 'table_result',
         'layout_result': 'layout_result',
-        'form_result': 'form_result'
+        'form_result': 'form_result',
+        'formula_result': 'formula_result'
     }
 
-    def __init__(self, ocr_result=None, kv_result=None, table_result=None, layout_result=None, form_result=None):
+    def __init__(self, ocr_result=None, kv_result=None, table_result=None, layout_result=None, form_result=None, formula_result=None):
         """SmartDocumentRecognizerResult
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class SmartDocumentRecognizerResult:
         :type layout_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerLayoutResult`
         :param form_result: 
         :type form_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormResult`
+        :param formula_result: 
+        :type formula_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormulaResult`
         """
         
         
@@ -56,6 +60,7 @@ class SmartDocumentRecognizerResult:
         self._table_result = None
         self._layout_result = None
         self._form_result = None
+        self._formula_result = None
         self.discriminator = None
 
         self.ocr_result = ocr_result
@@ -67,6 +72,8 @@ class SmartDocumentRecognizerResult:
             self.layout_result = layout_result
         if form_result is not None:
             self.form_result = form_result
+        if formula_result is not None:
+            self.formula_result = formula_result
 
     @property
     def ocr_result(self):
@@ -157,6 +164,24 @@ class SmartDocumentRecognizerResult:
         :type form_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormResult`
         """
         self._form_result = form_result
+
+    @property
+    def formula_result(self):
+        """Gets the formula_result of this SmartDocumentRecognizerResult.
+
+        :return: The formula_result of this SmartDocumentRecognizerResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormulaResult`
+        """
+        return self._formula_result
+
+    @formula_result.setter
+    def formula_result(self, formula_result):
+        """Sets the formula_result of this SmartDocumentRecognizerResult.
+
+        :param formula_result: The formula_result of this SmartDocumentRecognizerResult.
+        :type formula_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormulaResult`
+        """
+        self._formula_result = formula_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

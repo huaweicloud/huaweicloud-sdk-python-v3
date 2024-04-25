@@ -24,6 +24,7 @@ class SmartDocumentRecognizerRequestBody:
         'layout': 'bool',
         'return_excel': 'bool',
         'form': 'bool',
+        'formula': 'bool',
         'kv_map': 'str'
     }
 
@@ -35,10 +36,11 @@ class SmartDocumentRecognizerRequestBody:
         'layout': 'layout',
         'return_excel': 'return_excel',
         'form': 'form',
+        'formula': 'formula',
         'kv_map': 'kv_map'
     }
 
-    def __init__(self, data=None, url=None, kv=None, table=None, layout=None, return_excel=None, form=None, kv_map=None):
+    def __init__(self, data=None, url=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None):
         """SmartDocumentRecognizerRequestBody
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class SmartDocumentRecognizerRequestBody:
         :type return_excel: bool
         :param form: 是否进行有线表单识别。有线表单指关键信息以有线单元格形式进行呈现，例如户口本、机动车发票等。若是，结果会以\&quot;form_result\&quot;这一关键字返回。 
         :type form: bool
+        :param formula: 是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。 当前仅支持文档（例如论文）中的公式识别，不支持公式切片图像。 
+        :type formula: bool
         :param kv_map: 需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\&quot;名称\&quot;：\&quot;小明\&quot;}的键值对，若传入{\&quot;名称\&quot;：\&quot;姓名\&quot;}的kv_map，则返回结果为{“姓名”：“小明”}。  &gt; 参数传入示例： - \&quot;kv_map\&quot;:\&quot;{\\\&quot;名称\\\&quot;:\\\&quot;姓名\\\&quot;}\&quot; 
         :type kv_map: str
         """
@@ -70,6 +74,7 @@ class SmartDocumentRecognizerRequestBody:
         self._layout = None
         self._return_excel = None
         self._form = None
+        self._formula = None
         self._kv_map = None
         self.discriminator = None
 
@@ -87,6 +92,8 @@ class SmartDocumentRecognizerRequestBody:
             self.return_excel = return_excel
         if form is not None:
             self.form = form
+        if formula is not None:
+            self.formula = formula
         if kv_map is not None:
             self.kv_map = kv_map
 
@@ -243,6 +250,28 @@ class SmartDocumentRecognizerRequestBody:
         :type form: bool
         """
         self._form = form
+
+    @property
+    def formula(self):
+        """Gets the formula of this SmartDocumentRecognizerRequestBody.
+
+        是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。 当前仅支持文档（例如论文）中的公式识别，不支持公式切片图像。 
+
+        :return: The formula of this SmartDocumentRecognizerRequestBody.
+        :rtype: bool
+        """
+        return self._formula
+
+    @formula.setter
+    def formula(self, formula):
+        """Sets the formula of this SmartDocumentRecognizerRequestBody.
+
+        是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。 当前仅支持文档（例如论文）中的公式识别，不支持公式切片图像。 
+
+        :param formula: The formula of this SmartDocumentRecognizerRequestBody.
+        :type formula: bool
+        """
+        self._formula = formula
 
     @property
     def kv_map(self):

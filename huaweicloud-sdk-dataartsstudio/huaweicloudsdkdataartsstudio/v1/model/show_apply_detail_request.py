@@ -33,11 +33,11 @@ class ShowApplyDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param apply_id: 审核信息id
+        :param apply_id: 审核信息id。
         :type apply_id: str
         """
         
@@ -57,7 +57,7 @@ class ShowApplyDetailRequest:
     def workspace(self):
         """Gets the workspace of this ShowApplyDetailRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ShowApplyDetailRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ShowApplyDetailRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowApplyDetailRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ShowApplyDetailRequest.
         :type workspace: str
@@ -79,7 +79,7 @@ class ShowApplyDetailRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ShowApplyDetailRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ShowApplyDetailRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowApplyDetailRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ShowApplyDetailRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ShowApplyDetailRequest.
         :type dlm_type: str
@@ -101,7 +101,7 @@ class ShowApplyDetailRequest:
     def apply_id(self):
         """Gets the apply_id of this ShowApplyDetailRequest.
 
-        审核信息id
+        审核信息id。
 
         :return: The apply_id of this ShowApplyDetailRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ShowApplyDetailRequest:
     def apply_id(self, apply_id):
         """Sets the apply_id of this ShowApplyDetailRequest.
 
-        审核信息id
+        审核信息id。
 
         :param apply_id: The apply_id of this ShowApplyDetailRequest.
         :type apply_id: str

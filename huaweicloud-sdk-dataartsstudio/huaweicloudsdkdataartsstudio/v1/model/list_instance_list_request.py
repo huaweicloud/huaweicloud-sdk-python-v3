@@ -47,25 +47,25 @@ class ListInstanceListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param api_id: api编号
+        :param api_id: api编号。
         :type api_id: str
-        :param action: api操作
+        :param action: api操作。
         :type action: str
-        :param show_all: 全部展示(包括不可执行当前操作的实例)
+        :param show_all: 全部展示(包括不可执行当前操作的实例)。
         :type show_all: bool
-        :param check_status: 校验api状态
+        :param check_status: 校验api状态。
         :type check_status: bool
-        :param check_debug: 校验api调试状态
+        :param check_debug: 校验api调试状态。
         :type check_debug: bool
-        :param app_id: app编号(用于判断授权操作app可选的实例)
+        :param app_id: app编号(用于判断授权操作app可选的实例)。
         :type app_id: str
-        :param limit: limit
+        :param limit: limit。
         :type limit: int
-        :param offset: offset
+        :param offset: offset。
         :type offset: int
         """
         
@@ -105,7 +105,7 @@ class ListInstanceListRequest:
     def workspace(self):
         """Gets the workspace of this ListInstanceListRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListInstanceListRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class ListInstanceListRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListInstanceListRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListInstanceListRequest.
         :type workspace: str
@@ -127,7 +127,7 @@ class ListInstanceListRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ListInstanceListRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ListInstanceListRequest.
         :rtype: str
@@ -138,7 +138,7 @@ class ListInstanceListRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ListInstanceListRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ListInstanceListRequest.
         :type dlm_type: str
@@ -149,7 +149,7 @@ class ListInstanceListRequest:
     def api_id(self):
         """Gets the api_id of this ListInstanceListRequest.
 
-        api编号
+        api编号。
 
         :return: The api_id of this ListInstanceListRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class ListInstanceListRequest:
     def api_id(self, api_id):
         """Sets the api_id of this ListInstanceListRequest.
 
-        api编号
+        api编号。
 
         :param api_id: The api_id of this ListInstanceListRequest.
         :type api_id: str
@@ -171,7 +171,7 @@ class ListInstanceListRequest:
     def action(self):
         """Gets the action of this ListInstanceListRequest.
 
-        api操作
+        api操作。
 
         :return: The action of this ListInstanceListRequest.
         :rtype: str
@@ -182,7 +182,7 @@ class ListInstanceListRequest:
     def action(self, action):
         """Sets the action of this ListInstanceListRequest.
 
-        api操作
+        api操作。
 
         :param action: The action of this ListInstanceListRequest.
         :type action: str
@@ -193,7 +193,7 @@ class ListInstanceListRequest:
     def show_all(self):
         """Gets the show_all of this ListInstanceListRequest.
 
-        全部展示(包括不可执行当前操作的实例)
+        全部展示(包括不可执行当前操作的实例)。
 
         :return: The show_all of this ListInstanceListRequest.
         :rtype: bool
@@ -204,7 +204,7 @@ class ListInstanceListRequest:
     def show_all(self, show_all):
         """Sets the show_all of this ListInstanceListRequest.
 
-        全部展示(包括不可执行当前操作的实例)
+        全部展示(包括不可执行当前操作的实例)。
 
         :param show_all: The show_all of this ListInstanceListRequest.
         :type show_all: bool
@@ -215,7 +215,7 @@ class ListInstanceListRequest:
     def check_status(self):
         """Gets the check_status of this ListInstanceListRequest.
 
-        校验api状态
+        校验api状态。
 
         :return: The check_status of this ListInstanceListRequest.
         :rtype: bool
@@ -226,7 +226,7 @@ class ListInstanceListRequest:
     def check_status(self, check_status):
         """Sets the check_status of this ListInstanceListRequest.
 
-        校验api状态
+        校验api状态。
 
         :param check_status: The check_status of this ListInstanceListRequest.
         :type check_status: bool
@@ -237,7 +237,7 @@ class ListInstanceListRequest:
     def check_debug(self):
         """Gets the check_debug of this ListInstanceListRequest.
 
-        校验api调试状态
+        校验api调试状态。
 
         :return: The check_debug of this ListInstanceListRequest.
         :rtype: bool
@@ -248,7 +248,7 @@ class ListInstanceListRequest:
     def check_debug(self, check_debug):
         """Sets the check_debug of this ListInstanceListRequest.
 
-        校验api调试状态
+        校验api调试状态。
 
         :param check_debug: The check_debug of this ListInstanceListRequest.
         :type check_debug: bool
@@ -259,7 +259,7 @@ class ListInstanceListRequest:
     def app_id(self):
         """Gets the app_id of this ListInstanceListRequest.
 
-        app编号(用于判断授权操作app可选的实例)
+        app编号(用于判断授权操作app可选的实例)。
 
         :return: The app_id of this ListInstanceListRequest.
         :rtype: str
@@ -270,7 +270,7 @@ class ListInstanceListRequest:
     def app_id(self, app_id):
         """Sets the app_id of this ListInstanceListRequest.
 
-        app编号(用于判断授权操作app可选的实例)
+        app编号(用于判断授权操作app可选的实例)。
 
         :param app_id: The app_id of this ListInstanceListRequest.
         :type app_id: str
@@ -281,7 +281,7 @@ class ListInstanceListRequest:
     def limit(self):
         """Gets the limit of this ListInstanceListRequest.
 
-        limit
+        limit。
 
         :return: The limit of this ListInstanceListRequest.
         :rtype: int
@@ -292,7 +292,7 @@ class ListInstanceListRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstanceListRequest.
 
-        limit
+        limit。
 
         :param limit: The limit of this ListInstanceListRequest.
         :type limit: int
@@ -303,7 +303,7 @@ class ListInstanceListRequest:
     def offset(self):
         """Gets the offset of this ListInstanceListRequest.
 
-        offset
+        offset。
 
         :return: The offset of this ListInstanceListRequest.
         :rtype: int
@@ -314,7 +314,7 @@ class ListInstanceListRequest:
     def offset(self, offset):
         """Sets the offset of this ListInstanceListRequest.
 
-        offset
+        offset。
 
         :param offset: The offset of this ListInstanceListRequest.
         :type offset: int

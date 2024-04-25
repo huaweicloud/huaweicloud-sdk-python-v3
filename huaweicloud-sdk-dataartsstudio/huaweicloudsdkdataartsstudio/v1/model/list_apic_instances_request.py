@@ -37,15 +37,15 @@ class ListApicInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param apig_type: 网关类型
+        :param apig_type: 网关类型。
         :type apig_type: str
-        :param limit: limit
+        :param limit: limit。
         :type limit: int
-        :param offset: offset
+        :param offset: offset。
         :type offset: int
         """
         
@@ -71,7 +71,7 @@ class ListApicInstancesRequest:
     def workspace(self):
         """Gets the workspace of this ListApicInstancesRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListApicInstancesRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListApicInstancesRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListApicInstancesRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListApicInstancesRequest.
         :type workspace: str
@@ -93,7 +93,7 @@ class ListApicInstancesRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ListApicInstancesRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ListApicInstancesRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListApicInstancesRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ListApicInstancesRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ListApicInstancesRequest.
         :type dlm_type: str
@@ -115,7 +115,7 @@ class ListApicInstancesRequest:
     def apig_type(self):
         """Gets the apig_type of this ListApicInstancesRequest.
 
-        网关类型
+        网关类型。
 
         :return: The apig_type of this ListApicInstancesRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListApicInstancesRequest:
     def apig_type(self, apig_type):
         """Sets the apig_type of this ListApicInstancesRequest.
 
-        网关类型
+        网关类型。
 
         :param apig_type: The apig_type of this ListApicInstancesRequest.
         :type apig_type: str
@@ -137,7 +137,7 @@ class ListApicInstancesRequest:
     def limit(self):
         """Gets the limit of this ListApicInstancesRequest.
 
-        limit
+        limit。
 
         :return: The limit of this ListApicInstancesRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ListApicInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListApicInstancesRequest.
 
-        limit
+        limit。
 
         :param limit: The limit of this ListApicInstancesRequest.
         :type limit: int
@@ -159,7 +159,7 @@ class ListApicInstancesRequest:
     def offset(self):
         """Gets the offset of this ListApicInstancesRequest.
 
-        offset
+        offset。
 
         :return: The offset of this ListApicInstancesRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class ListApicInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListApicInstancesRequest.
 
-        offset
+        offset。
 
         :param offset: The offset of this ListApicInstancesRequest.
         :type offset: int

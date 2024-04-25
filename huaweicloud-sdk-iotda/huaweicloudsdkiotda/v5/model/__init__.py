@@ -17,6 +17,7 @@ from huaweicloudsdkiotda.v5.model.add_device import AddDevice
 from huaweicloudsdkiotda.v5.model.add_device_group_dto import AddDeviceGroupDTO
 from huaweicloudsdkiotda.v5.model.add_device_group_request import AddDeviceGroupRequest
 from huaweicloudsdkiotda.v5.model.add_device_group_response import AddDeviceGroupResponse
+from huaweicloudsdkiotda.v5.model.add_device_proxy import AddDeviceProxy
 from huaweicloudsdkiotda.v5.model.add_device_request import AddDeviceRequest
 from huaweicloudsdkiotda.v5.model.add_device_response import AddDeviceResponse
 from huaweicloudsdkiotda.v5.model.add_flow_control_policy import AddFlowControlPolicy
@@ -65,6 +66,8 @@ from huaweicloudsdkiotda.v5.model.create_batch_task_response import CreateBatchT
 from huaweicloudsdkiotda.v5.model.create_certificate_dto import CreateCertificateDTO
 from huaweicloudsdkiotda.v5.model.create_command_request import CreateCommandRequest
 from huaweicloudsdkiotda.v5.model.create_command_response import CreateCommandResponse
+from huaweicloudsdkiotda.v5.model.create_device_proxy_request import CreateDeviceProxyRequest
+from huaweicloudsdkiotda.v5.model.create_device_proxy_response import CreateDeviceProxyResponse
 from huaweicloudsdkiotda.v5.model.create_message_request import CreateMessageRequest
 from huaweicloudsdkiotda.v5.model.create_message_response import CreateMessageResponse
 from huaweicloudsdkiotda.v5.model.create_or_delete_device_in_group_request import CreateOrDeleteDeviceInGroupRequest
@@ -95,6 +98,8 @@ from huaweicloudsdkiotda.v5.model.delete_certificate_request import DeleteCertif
 from huaweicloudsdkiotda.v5.model.delete_certificate_response import DeleteCertificateResponse
 from huaweicloudsdkiotda.v5.model.delete_device_group_request import DeleteDeviceGroupRequest
 from huaweicloudsdkiotda.v5.model.delete_device_group_response import DeleteDeviceGroupResponse
+from huaweicloudsdkiotda.v5.model.delete_device_proxy_request import DeleteDeviceProxyRequest
+from huaweicloudsdkiotda.v5.model.delete_device_proxy_response import DeleteDeviceProxyResponse
 from huaweicloudsdkiotda.v5.model.delete_device_request import DeleteDeviceRequest
 from huaweicloudsdkiotda.v5.model.delete_device_response import DeleteDeviceResponse
 from huaweicloudsdkiotda.v5.model.delete_device_tunnel_request import DeleteDeviceTunnelRequest
@@ -129,6 +134,8 @@ from huaweicloudsdkiotda.v5.model.device_side import DeviceSide
 from huaweicloudsdkiotda.v5.model.dis_forwarding import DisForwarding
 from huaweicloudsdkiotda.v5.model.dms_kafka_forwarding import DmsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.dms_rocket_mq_forwarding import DmsRocketMQForwarding
+from huaweicloudsdkiotda.v5.model.effective_time_range import EffectiveTimeRange
+from huaweicloudsdkiotda.v5.model.effective_time_range_response_dto import EffectiveTimeRangeResponseDTO
 from huaweicloudsdkiotda.v5.model.error_info import ErrorInfo
 from huaweicloudsdkiotda.v5.model.error_info_dto import ErrorInfoDTO
 from huaweicloudsdkiotda.v5.model.file_location import FileLocation
@@ -149,6 +156,8 @@ from huaweicloudsdkiotda.v5.model.list_device_groups_request import ListDeviceGr
 from huaweicloudsdkiotda.v5.model.list_device_groups_response import ListDeviceGroupsResponse
 from huaweicloudsdkiotda.v5.model.list_device_messages_request import ListDeviceMessagesRequest
 from huaweicloudsdkiotda.v5.model.list_device_messages_response import ListDeviceMessagesResponse
+from huaweicloudsdkiotda.v5.model.list_device_proxies_request import ListDeviceProxiesRequest
+from huaweicloudsdkiotda.v5.model.list_device_proxies_response import ListDeviceProxiesResponse
 from huaweicloudsdkiotda.v5.model.list_device_tunnels_request import ListDeviceTunnelsRequest
 from huaweicloudsdkiotda.v5.model.list_device_tunnels_response import ListDeviceTunnelsResponse
 from huaweicloudsdkiotda.v5.model.list_devices_request import ListDevicesRequest
@@ -183,6 +192,7 @@ from huaweicloudsdkiotda.v5.model.page_info import PageInfo
 from huaweicloudsdkiotda.v5.model.product_summary import ProductSummary
 from huaweicloudsdkiotda.v5.model.properties_dto import PropertiesDTO
 from huaweicloudsdkiotda.v5.model.property_filter import PropertyFilter
+from huaweicloudsdkiotda.v5.model.query_device_proxy_simplify import QueryDeviceProxySimplify
 from huaweicloudsdkiotda.v5.model.query_device_simplify import QueryDeviceSimplify
 from huaweicloudsdkiotda.v5.model.query_queue_base import QueryQueueBase
 from huaweicloudsdkiotda.v5.model.query_resource_by_tags_dto import QueryResourceByTagsDTO
@@ -227,6 +237,8 @@ from huaweicloudsdkiotda.v5.model.show_device_group_request import ShowDeviceGro
 from huaweicloudsdkiotda.v5.model.show_device_group_response import ShowDeviceGroupResponse
 from huaweicloudsdkiotda.v5.model.show_device_message_request import ShowDeviceMessageRequest
 from huaweicloudsdkiotda.v5.model.show_device_message_response import ShowDeviceMessageResponse
+from huaweicloudsdkiotda.v5.model.show_device_proxy_request import ShowDeviceProxyRequest
+from huaweicloudsdkiotda.v5.model.show_device_proxy_response import ShowDeviceProxyResponse
 from huaweicloudsdkiotda.v5.model.show_device_request import ShowDeviceRequest
 from huaweicloudsdkiotda.v5.model.show_device_response import ShowDeviceResponse
 from huaweicloudsdkiotda.v5.model.show_device_shadow_request import ShowDeviceShadowRequest
@@ -281,6 +293,9 @@ from huaweicloudsdkiotda.v5.model.update_device import UpdateDevice
 from huaweicloudsdkiotda.v5.model.update_device_group_dto import UpdateDeviceGroupDTO
 from huaweicloudsdkiotda.v5.model.update_device_group_request import UpdateDeviceGroupRequest
 from huaweicloudsdkiotda.v5.model.update_device_group_response import UpdateDeviceGroupResponse
+from huaweicloudsdkiotda.v5.model.update_device_proxy import UpdateDeviceProxy
+from huaweicloudsdkiotda.v5.model.update_device_proxy_request import UpdateDeviceProxyRequest
+from huaweicloudsdkiotda.v5.model.update_device_proxy_response import UpdateDeviceProxyResponse
 from huaweicloudsdkiotda.v5.model.update_device_request import UpdateDeviceRequest
 from huaweicloudsdkiotda.v5.model.update_device_response import UpdateDeviceResponse
 from huaweicloudsdkiotda.v5.model.update_device_shadow_desired_data_request import UpdateDeviceShadowDesiredDataRequest

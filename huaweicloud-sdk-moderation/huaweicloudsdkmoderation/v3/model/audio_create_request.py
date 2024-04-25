@@ -21,7 +21,8 @@ class AudioCreateRequest:
         'biz_type': 'str',
         'event_type': 'str',
         'categories': 'list[str]',
-        'param_callback': 'str'
+        'param_callback': 'str',
+        'seed': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class AudioCreateRequest:
         'biz_type': 'biz_type',
         'event_type': 'event_type',
         'categories': 'categories',
-        'param_callback': 'callback'
+        'param_callback': 'callback',
+        'seed': 'seed'
     }
 
-    def __init__(self, data=None, biz_type=None, event_type=None, categories=None, param_callback=None):
+    def __init__(self, data=None, biz_type=None, event_type=None, categories=None, param_callback=None, seed=None):
         """AudioCreateRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class AudioCreateRequest:
         :type categories: list[str]
         :param param_callback: 回调http接口：当该字段非空时，服务将根据该字段回调通知用户审核结果。
         :type param_callback: str
+        :param seed: 用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
+        :type seed: str
         """
         
         
@@ -56,6 +60,7 @@ class AudioCreateRequest:
         self._event_type = None
         self._categories = None
         self._param_callback = None
+        self._seed = None
         self.discriminator = None
 
         self.data = data
@@ -67,6 +72,8 @@ class AudioCreateRequest:
             self.categories = categories
         if param_callback is not None:
             self.param_callback = param_callback
+        if seed is not None:
+            self.seed = seed
 
     @property
     def data(self):
@@ -173,6 +180,28 @@ class AudioCreateRequest:
         :type param_callback: str
         """
         self._param_callback = param_callback
+
+    @property
+    def seed(self):
+        """Gets the seed of this AudioCreateRequest.
+
+        用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
+
+        :return: The seed of this AudioCreateRequest.
+        :rtype: str
+        """
+        return self._seed
+
+    @seed.setter
+    def seed(self, seed):
+        """Sets the seed of this AudioCreateRequest.
+
+        用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
+
+        :param seed: The seed of this AudioCreateRequest.
+        :type seed: str
+        """
+        self._seed = seed
 
     def to_dict(self):
         """Returns the model properties as a dict"""

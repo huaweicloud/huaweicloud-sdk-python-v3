@@ -33,11 +33,11 @@ class ShowAppInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param app_id: 应用编号
+        :param app_id: 应用编号。
         :type app_id: str
         """
         
@@ -57,7 +57,7 @@ class ShowAppInfoRequest:
     def workspace(self):
         """Gets the workspace of this ShowAppInfoRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ShowAppInfoRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ShowAppInfoRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowAppInfoRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ShowAppInfoRequest.
         :type workspace: str
@@ -79,7 +79,7 @@ class ShowAppInfoRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ShowAppInfoRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ShowAppInfoRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowAppInfoRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ShowAppInfoRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ShowAppInfoRequest.
         :type dlm_type: str
@@ -101,7 +101,7 @@ class ShowAppInfoRequest:
     def app_id(self):
         """Gets the app_id of this ShowAppInfoRequest.
 
-        应用编号
+        应用编号。
 
         :return: The app_id of this ShowAppInfoRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ShowAppInfoRequest:
     def app_id(self, app_id):
         """Sets the app_id of this ShowAppInfoRequest.
 
-        应用编号
+        应用编号。
 
         :param app_id: The app_id of this ShowAppInfoRequest.
         :type app_id: str

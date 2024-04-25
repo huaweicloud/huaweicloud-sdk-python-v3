@@ -19,16 +19,26 @@ class TargetInstanceBody:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'password': 'str'
+        'password': 'str',
+        'ip': 'str',
+        'port': 'str',
+        'addrs': 'str',
+        'proxy_multi_db': 'bool',
+        'db': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'password': 'password'
+        'password': 'password',
+        'ip': 'ip',
+        'port': 'port',
+        'addrs': 'addrs',
+        'proxy_multi_db': 'proxy_multi_db',
+        'db': 'db'
     }
 
-    def __init__(self, id=None, name=None, password=None):
+    def __init__(self, id=None, name=None, password=None, ip=None, port=None, addrs=None, proxy_multi_db=None, db=None):
         """TargetInstanceBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +49,16 @@ class TargetInstanceBody:
         :type name: str
         :param password: Redis密码，如果设置了密码，则必须填写。
         :type password: str
+        :param ip: Redis IP地址。
+        :type ip: str
+        :param port: Redis端口。
+        :type port: str
+        :param addrs: Redis实例地址。
+        :type addrs: str
+        :param proxy_multi_db: proxy实例是否开启了多DB。
+        :type proxy_multi_db: bool
+        :param db: Redis数据库。
+        :type db: str
         """
         
         
@@ -46,6 +66,11 @@ class TargetInstanceBody:
         self._id = None
         self._name = None
         self._password = None
+        self._ip = None
+        self._port = None
+        self._addrs = None
+        self._proxy_multi_db = None
+        self._db = None
         self.discriminator = None
 
         self.id = id
@@ -53,6 +78,16 @@ class TargetInstanceBody:
             self.name = name
         if password is not None:
             self.password = password
+        if ip is not None:
+            self.ip = ip
+        if port is not None:
+            self.port = port
+        if addrs is not None:
+            self.addrs = addrs
+        if proxy_multi_db is not None:
+            self.proxy_multi_db = proxy_multi_db
+        if db is not None:
+            self.db = db
 
     @property
     def id(self):
@@ -119,6 +154,116 @@ class TargetInstanceBody:
         :type password: str
         """
         self._password = password
+
+    @property
+    def ip(self):
+        """Gets the ip of this TargetInstanceBody.
+
+        Redis IP地址。
+
+        :return: The ip of this TargetInstanceBody.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this TargetInstanceBody.
+
+        Redis IP地址。
+
+        :param ip: The ip of this TargetInstanceBody.
+        :type ip: str
+        """
+        self._ip = ip
+
+    @property
+    def port(self):
+        """Gets the port of this TargetInstanceBody.
+
+        Redis端口。
+
+        :return: The port of this TargetInstanceBody.
+        :rtype: str
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this TargetInstanceBody.
+
+        Redis端口。
+
+        :param port: The port of this TargetInstanceBody.
+        :type port: str
+        """
+        self._port = port
+
+    @property
+    def addrs(self):
+        """Gets the addrs of this TargetInstanceBody.
+
+        Redis实例地址。
+
+        :return: The addrs of this TargetInstanceBody.
+        :rtype: str
+        """
+        return self._addrs
+
+    @addrs.setter
+    def addrs(self, addrs):
+        """Sets the addrs of this TargetInstanceBody.
+
+        Redis实例地址。
+
+        :param addrs: The addrs of this TargetInstanceBody.
+        :type addrs: str
+        """
+        self._addrs = addrs
+
+    @property
+    def proxy_multi_db(self):
+        """Gets the proxy_multi_db of this TargetInstanceBody.
+
+        proxy实例是否开启了多DB。
+
+        :return: The proxy_multi_db of this TargetInstanceBody.
+        :rtype: bool
+        """
+        return self._proxy_multi_db
+
+    @proxy_multi_db.setter
+    def proxy_multi_db(self, proxy_multi_db):
+        """Sets the proxy_multi_db of this TargetInstanceBody.
+
+        proxy实例是否开启了多DB。
+
+        :param proxy_multi_db: The proxy_multi_db of this TargetInstanceBody.
+        :type proxy_multi_db: bool
+        """
+        self._proxy_multi_db = proxy_multi_db
+
+    @property
+    def db(self):
+        """Gets the db of this TargetInstanceBody.
+
+        Redis数据库。
+
+        :return: The db of this TargetInstanceBody.
+        :rtype: str
+        """
+        return self._db
+
+    @db.setter
+    def db(self, db):
+        """Sets the db of this TargetInstanceBody.
+
+        Redis数据库。
+
+        :param db: The db of this TargetInstanceBody.
+        :type db: str
+        """
+        self._db = db
 
     def to_dict(self):
         """Returns the model properties as a dict"""

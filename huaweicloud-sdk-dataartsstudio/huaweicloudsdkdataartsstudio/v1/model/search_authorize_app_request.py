@@ -37,15 +37,15 @@ class SearchAuthorizeAppRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param api_id: api编号
+        :param api_id: api编号。
         :type api_id: str
         :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据
+        :param limit: 查询条数, 即查询Y条数据。
         :type limit: int
         """
         
@@ -71,7 +71,7 @@ class SearchAuthorizeAppRequest:
     def workspace(self):
         """Gets the workspace of this SearchAuthorizeAppRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this SearchAuthorizeAppRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class SearchAuthorizeAppRequest:
     def workspace(self, workspace):
         """Sets the workspace of this SearchAuthorizeAppRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this SearchAuthorizeAppRequest.
         :type workspace: str
@@ -93,7 +93,7 @@ class SearchAuthorizeAppRequest:
     def dlm_type(self):
         """Gets the dlm_type of this SearchAuthorizeAppRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this SearchAuthorizeAppRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class SearchAuthorizeAppRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this SearchAuthorizeAppRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this SearchAuthorizeAppRequest.
         :type dlm_type: str
@@ -115,7 +115,7 @@ class SearchAuthorizeAppRequest:
     def api_id(self):
         """Gets the api_id of this SearchAuthorizeAppRequest.
 
-        api编号
+        api编号。
 
         :return: The api_id of this SearchAuthorizeAppRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class SearchAuthorizeAppRequest:
     def api_id(self, api_id):
         """Sets the api_id of this SearchAuthorizeAppRequest.
 
-        api编号
+        api编号。
 
         :param api_id: The api_id of this SearchAuthorizeAppRequest.
         :type api_id: str
@@ -159,7 +159,7 @@ class SearchAuthorizeAppRequest:
     def limit(self):
         """Gets the limit of this SearchAuthorizeAppRequest.
 
-        查询条数, 即查询Y条数据
+        查询条数, 即查询Y条数据。
 
         :return: The limit of this SearchAuthorizeAppRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class SearchAuthorizeAppRequest:
     def limit(self, limit):
         """Sets the limit of this SearchAuthorizeAppRequest.
 
-        查询条数, 即查询Y条数据
+        查询条数, 即查询Y条数据。
 
         :param limit: The limit of this SearchAuthorizeAppRequest.
         :type limit: int

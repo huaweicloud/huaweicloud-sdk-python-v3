@@ -1,3 +1,278 @@
+# 3.1.93 2024-04-25
+
+### HuaweiCloud SDK AAD
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowUnblockRecord**
+    - 响应参数变更
+      - `* unblock_record.block_id: string -> int64`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDeployTaskDetail**
+    - 响应参数变更
+      - `+ is_disable`
+      - `+ can_disable`
+  - **ListDeployTasks**
+    - 响应参数变更
+      - `+ is_disable`
+      - `+ can_disable`
+      - `+ result.can_disable`
+      - `+ result.is_disable`
+  - **ListAllApp**
+    - 响应参数变更
+      - `+ result.is_disable`
+      - `+ result.can_disable`
+  - **ShowAppDetailById**
+    - 响应参数变更
+      - `+ result.is_disable`
+      - `+ result.can_disable`
+      - `+ result.arrange_infos.can_disable`
+      - `+ result.arrange_infos.is_disable`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `ImportDataServiceExcel`
+    - `ExportDataServiceExcel`
+    - `ExportDataServiceZip`
+    - `ExportDataServiceExcelTemplate`
+    - `ListSecurityDlfDataWareHouses`
+    - `BatchUpdateSecurityDlfDataWareHouses`
+    - `DebugSecurityDlfDataWareHouses`
+    - `ListSecuritySensitiveDataOverviews`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`PublishApi`
+  - **DeleteApi**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListApicGroups**
+    - 请求参数变更
+      - `+ apig_type: enum value [APIG]`
+  - **ListApis**
+    - 请求参数变更
+      - `+ name`
+      - `+ description`
+      - `+ create_user`
+      - `+ start_time`
+      - `+ end_time`
+      - `+ tags`
+      - `+ api_type`
+      - `+ publish_status`
+      - `+ table_name`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateMigrationTask**
+    - 请求参数变更
+      - `+ source_instance.task_status`
+      - `+ source_instance.id`
+      - `+ source_instance.ip`
+      - `+ source_instance.port`
+      - `+ source_instance.name`
+      - `+ source_instance.proxy_multi_db`
+      - `+ source_instance.db`
+      - `+ target_instance.ip`
+      - `+ target_instance.port`
+      - `+ target_instance.addrs`
+      - `+ target_instance.proxy_multi_db`
+      - `+ target_instance.db`
+  - **ShowMigrationTask**
+    - 响应参数变更
+      - `+ source_instance.task_status`
+      - `+ source_instance.id`
+      - `+ source_instance.ip`
+      - `+ source_instance.port`
+      - `+ source_instance.name`
+      - `+ source_instance.proxy_multi_db`
+      - `+ source_instance.db`
+      - `+ target_instance.ip`
+      - `+ target_instance.port`
+      - `+ target_instance.addrs`
+      - `+ target_instance.proxy_multi_db`
+      - `+ target_instance.db`
+  - **StopMigrationTask**
+    - 响应参数变更
+      - `+ source_instance.task_status`
+      - `+ source_instance.id`
+      - `+ source_instance.ip`
+      - `+ source_instance.port`
+      - `+ source_instance.name`
+      - `+ source_instance.proxy_multi_db`
+      - `+ source_instance.db`
+      - `+ target_instance.ip`
+      - `+ target_instance.port`
+      - `+ target_instance.addrs`
+      - `+ target_instance.proxy_multi_db`
+      - `+ target_instance.db`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTables**
+    - 响应参数变更
+      - `* tables.create_time: int32 -> int64`
+      - `* tables.last_access_time: int32 -> int64`
+      - `* tables.table_size: int32 -> int64`
+  - **CreateFlinkSqlJob**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **UpdateFlinkSqlJob**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **CreateFlinkJarJob**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **UpdateFlinkJarJob**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **ShowFlinkJob**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListMetricsData**
+    - 响应参数变更
+      - `* data: list<map<string, string>> -> list<map<string, object>>`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.availability_zone`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListDeviceProxies`
+    - `CreateDeviceProxy`
+    - `ShowDeviceProxy`
+    - `UpdateDeviceProxy`
+    - `DeleteDeviceProxy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunCreateVideoModerationJob**
+    - 请求参数变更
+      - `+ seed`
+  - **RunCreateAudioStreamModerationJob**
+    - 请求参数变更
+      - `+ seed`
+  - **RunCreateDocumentModerationJob**
+    - 请求参数变更
+      - `+ seed`
+  - **RunCreateVideoStreamModerationJob**
+    - 请求参数变更
+      - `+ seed`
+  - **RunCreateAudioModerationJob**
+    - 请求参数变更
+      - `+ seed`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizeBankReceipt`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeBusinessLicense**
+    - 响应参数变更
+      - `+ result.organization_form`
+  - **RecognizeSmartDocumentRecognizer**
+    - 请求参数变更
+      - `+ formula`
+    - 响应参数变更
+      - `+ result.formula_result`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFirewall**
+    - 响应参数变更
+      - `+ firewall.ingress_rules.enabled`
+  - **ShowFirewall**
+    - 响应参数变更
+      - `+ firewall.ingress_rules.enabled`
+  - **UpdateFirewall**
+    - 响应参数变更
+      - `+ firewall.ingress_rules.enabled`
+  - **UpdateFirewallRules**
+    - 请求参数变更
+      - `+ firewall.ingress_rules.enabled`
+    - 响应参数变更
+      - `+ firewall.ingress_rules.enabled`
+  - **AddFirewallRules**
+    - 请求参数变更
+      - `+ firewall.ingress_rules.enabled`
+    - 响应参数变更
+      - `+ firewall.ingress_rules.enabled`
+  - **RemoveFirewallRules**
+    - 响应参数变更
+      - `+ firewall.ingress_rules.enabled`
+  - **AssociateSubnetFirewall**
+    - 响应参数变更
+      - `+ firewall.ingress_rules.enabled`
+  - **DisassociateSubnetFirewall**
+    - 响应参数变更
+      - `+ firewall.ingress_rules.enabled`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdatePolicyRuleStatus**
+    - 请求参数变更
+      - `+ ruletype: enum value [cc]`
+
 # 3.1.92 2024-04-18
 
 ### HuaweiCloud SDK AOM

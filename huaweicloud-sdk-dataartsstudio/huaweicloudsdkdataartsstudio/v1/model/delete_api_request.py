@@ -33,9 +33,9 @@ class DeleteApiRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
         :param body: API删除ID列表
         :type body: list[str]
@@ -48,8 +48,7 @@ class DeleteApiRequest:
         self._body = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         if dlm_type is not None:
             self.dlm_type = dlm_type
         if body is not None:
@@ -59,7 +58,7 @@ class DeleteApiRequest:
     def workspace(self):
         """Gets the workspace of this DeleteApiRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this DeleteApiRequest.
         :rtype: str
@@ -70,7 +69,7 @@ class DeleteApiRequest:
     def workspace(self, workspace):
         """Sets the workspace of this DeleteApiRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this DeleteApiRequest.
         :type workspace: str
@@ -81,7 +80,7 @@ class DeleteApiRequest:
     def dlm_type(self):
         """Gets the dlm_type of this DeleteApiRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this DeleteApiRequest.
         :rtype: str
@@ -92,7 +91,7 @@ class DeleteApiRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this DeleteApiRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this DeleteApiRequest.
         :type dlm_type: str

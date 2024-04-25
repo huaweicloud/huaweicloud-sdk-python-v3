@@ -53,7 +53,7 @@ class PurchaseCertificateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param cert_brand: 证书类型，取值如下： - DV_SSL_CERT - DV_SSL_CERT_BASIC - EV_SSL_CERT - EV_SSL_CERT_PRO - OV_SSL_CERT - OV_SSL_CERT_PRO
+        :param cert_brand: 证书品牌，取值如下： - GEOTRUST - GLOBALSIGN - SYMANTEC - CFCA - TRUSTASIA - VTRUS
         :type cert_brand: str
         :param cert_type: 证书类型，取值如下： - DV_SSL_CERT - DV_SSL_CERT_BASIC - EV_SSL_CERT - EV_SSL_CERT_PRO - OV_SSL_CERT - OV_SSL_CERT_PRO
         :type cert_type: str
@@ -122,7 +122,7 @@ class PurchaseCertificateRequestBody:
     def cert_brand(self):
         """Gets the cert_brand of this PurchaseCertificateRequestBody.
 
-        证书类型，取值如下： - DV_SSL_CERT - DV_SSL_CERT_BASIC - EV_SSL_CERT - EV_SSL_CERT_PRO - OV_SSL_CERT - OV_SSL_CERT_PRO
+        证书品牌，取值如下： - GEOTRUST - GLOBALSIGN - SYMANTEC - CFCA - TRUSTASIA - VTRUS
 
         :return: The cert_brand of this PurchaseCertificateRequestBody.
         :rtype: str
@@ -133,7 +133,7 @@ class PurchaseCertificateRequestBody:
     def cert_brand(self, cert_brand):
         """Sets the cert_brand of this PurchaseCertificateRequestBody.
 
-        证书类型，取值如下： - DV_SSL_CERT - DV_SSL_CERT_BASIC - EV_SSL_CERT - EV_SSL_CERT_PRO - OV_SSL_CERT - OV_SSL_CERT_PRO
+        证书品牌，取值如下： - GEOTRUST - GLOBALSIGN - SYMANTEC - CFCA - TRUSTASIA - VTRUS
 
         :param cert_brand: The cert_brand of this PurchaseCertificateRequestBody.
         :type cert_brand: str

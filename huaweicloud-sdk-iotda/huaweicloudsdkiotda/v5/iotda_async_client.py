@@ -3576,6 +3576,353 @@ class IoTDAAsyncClient(Client):
 
         return http_info
 
+    def create_device_proxy_async(self, request):
+        """创建设备代理
+
+        应用服务器可调用此接口在物联网平台创建一个动态设备代理规则，用于子设备自主选择网关设备上线和上报消息，即代理组下的任意网关下的子设备均可以通过代理组里其他设备上线([[网关更新子设备状态](https://support.huaweicloud.com/api-iothub/iot_06_v5_3022.html)](tag:hws) [[网关更新子设备状态](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_3022.html)](tag:hws_hk))然后进行数据上报([[网关批量设备属性上报](https://support.huaweicloud.com/api-iothub/iot_06_v5_3006.html)](tag:hws) [[网关更新子设备状态](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_3006.html)](tag:hws_hk))。
+        - 单实例最多可以配置10个设备代理
+        - 单账号调用该接口的 TPS 限制最大为1/S(每秒1次请求数)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDeviceProxy
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateDeviceProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateDeviceProxyResponse`
+        """
+        http_info = self._create_device_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_device_proxy_async_invoker(self, request):
+        http_info = self._create_device_proxy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_device_proxy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/device-proxies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeviceProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_device_proxy_async(self, request):
+        """删除设备代理
+
+        应用服务器可调用此接口在物联网平台上删除指定设备代理。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDeviceProxy
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteDeviceProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDeviceProxyResponse`
+        """
+        http_info = self._delete_device_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_device_proxy_async_invoker(self, request):
+        http_info = self._delete_device_proxy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_device_proxy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/device-proxies/{proxy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_device_proxies_async(self, request):
+        """查询设备代理列表
+
+        应用服务器可调用此接口查询物联网平台中的设备代理列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDeviceProxies
+        :type request: :class:`huaweicloudsdkiotda.v5.ListDeviceProxiesRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListDeviceProxiesResponse`
+        """
+        http_info = self._list_device_proxies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_device_proxies_async_invoker(self, request):
+        http_info = self._list_device_proxies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_device_proxies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/device-proxies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDeviceProxiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'proxy_name' in local_var_params:
+            query_params.append(('proxy_name', local_var_params['proxy_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_device_proxy_async(self, request):
+        """查询设备代理详情
+
+        应用服务器可调用此接口查询物联网平台中指定设备代理的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDeviceProxy
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceProxyResponse`
+        """
+        http_info = self._show_device_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_device_proxy_async_invoker(self, request):
+        http_info = self._show_device_proxy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_device_proxy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/device-proxies/{proxy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_device_proxy_async(self, request):
+        """修改设备代理
+
+        应用服务器可调用此接口修改物联网平台中指定设备代理的基本信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDeviceProxy
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateDeviceProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceProxyResponse`
+        """
+        http_info = self._update_device_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_device_proxy_async_invoker(self, request):
+        http_info = self._update_device_proxy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_device_proxy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/device-proxies/{proxy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_device_shadow_async(self, request):
         """查询设备影子数据
 

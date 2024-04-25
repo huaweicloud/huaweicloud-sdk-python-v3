@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class PublishApiResponse(SdkResponse):
+class ListSecurityDlfDataWareHousesRequest:
 
     """
     Attributes:
@@ -18,20 +17,50 @@ class PublishApiResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str'
     }
 
     attribute_map = {
+        'workspace': 'workspace'
     }
 
-    def __init__(self):
-        """PublishApiResponse
+    def __init__(self, workspace=None):
+        """ListSecurityDlfDataWareHousesRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: DataArts Studio工作空间ID
+        :type workspace: str
         """
         
-        super(PublishApiResponse, self).__init__()
+        
+
+        self._workspace = None
         self.discriminator = None
+
+        self.workspace = workspace
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this ListSecurityDlfDataWareHousesRequest.
+
+        DataArts Studio工作空间ID
+
+        :return: The workspace of this ListSecurityDlfDataWareHousesRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this ListSecurityDlfDataWareHousesRequest.
+
+        DataArts Studio工作空间ID
+
+        :param workspace: The workspace of this ListSecurityDlfDataWareHousesRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +104,7 @@ class PublishApiResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublishApiResponse):
+        if not isinstance(other, ListSecurityDlfDataWareHousesRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -37,15 +37,15 @@ class SearchBindApiRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param app_id: app编号
+        :param app_id: app编号。
         :type app_id: str
-        :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整
+        :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据
+        :param limit: 查询条数, 即查询Y条数据。
         :type limit: int
         """
         
@@ -71,7 +71,7 @@ class SearchBindApiRequest:
     def workspace(self):
         """Gets the workspace of this SearchBindApiRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this SearchBindApiRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class SearchBindApiRequest:
     def workspace(self, workspace):
         """Sets the workspace of this SearchBindApiRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this SearchBindApiRequest.
         :type workspace: str
@@ -93,7 +93,7 @@ class SearchBindApiRequest:
     def dlm_type(self):
         """Gets the dlm_type of this SearchBindApiRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this SearchBindApiRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class SearchBindApiRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this SearchBindApiRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this SearchBindApiRequest.
         :type dlm_type: str
@@ -115,7 +115,7 @@ class SearchBindApiRequest:
     def app_id(self):
         """Gets the app_id of this SearchBindApiRequest.
 
-        app编号
+        app编号。
 
         :return: The app_id of this SearchBindApiRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class SearchBindApiRequest:
     def app_id(self, app_id):
         """Sets the app_id of this SearchBindApiRequest.
 
-        app编号
+        app编号。
 
         :param app_id: The app_id of this SearchBindApiRequest.
         :type app_id: str
@@ -137,7 +137,7 @@ class SearchBindApiRequest:
     def offset(self):
         """Gets the offset of this SearchBindApiRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整
+        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :return: The offset of this SearchBindApiRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class SearchBindApiRequest:
     def offset(self, offset):
         """Sets the offset of this SearchBindApiRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整
+        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :param offset: The offset of this SearchBindApiRequest.
         :type offset: int
@@ -159,7 +159,7 @@ class SearchBindApiRequest:
     def limit(self):
         """Gets the limit of this SearchBindApiRequest.
 
-        查询条数, 即查询Y条数据
+        查询条数, 即查询Y条数据。
 
         :return: The limit of this SearchBindApiRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class SearchBindApiRequest:
     def limit(self, limit):
         """Sets the limit of this SearchBindApiRequest.
 
-        查询条数, 即查询Y条数据
+        查询条数, 即查询Y条数据。
 
         :param limit: The limit of this SearchBindApiRequest.
         :type limit: int

@@ -41,7 +41,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
         :param location: 文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type location: list[list[int]]
-        :param type: 文档区域类别，包含text、table、figure等类别。        
+        :param type: 文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory共15个类别。     
         :type type: str
         :param text: 文档区域文字内容。对于表格与图像，不返回其中的文字内容。 
         :type text: str
@@ -102,7 +102,7 @@ class SmartDocumentRecognizerLayoutBlock:
     def type(self):
         """Gets the type of this SmartDocumentRecognizerLayoutBlock.
 
-        文档区域类别，包含text、table、figure等类别。        
+        文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory共15个类别。     
 
         :return: The type of this SmartDocumentRecognizerLayoutBlock.
         :rtype: str
@@ -113,7 +113,7 @@ class SmartDocumentRecognizerLayoutBlock:
     def type(self, type):
         """Sets the type of this SmartDocumentRecognizerLayoutBlock.
 
-        文档区域类别，包含text、table、figure等类别。        
+        文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory共15个类别。     
 
         :param type: The type of this SmartDocumentRecognizerLayoutBlock.
         :type type: str

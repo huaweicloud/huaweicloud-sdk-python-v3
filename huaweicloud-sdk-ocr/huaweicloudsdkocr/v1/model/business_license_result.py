@@ -23,6 +23,7 @@ class BusinessLicenseResult:
         'address': 'str',
         'legal_representative': 'str',
         'registered_capital': 'str',
+        'organization_form': 'str',
         'found_date': 'str',
         'business_term': 'str',
         'business_scope': 'str',
@@ -37,6 +38,7 @@ class BusinessLicenseResult:
         'address': 'address',
         'legal_representative': 'legal_representative',
         'registered_capital': 'registered_capital',
+        'organization_form': 'organization_form',
         'found_date': 'found_date',
         'business_term': 'business_term',
         'business_scope': 'business_scope',
@@ -44,24 +46,26 @@ class BusinessLicenseResult:
         'confidence': 'confidence'
     }
 
-    def __init__(self, registration_number=None, name=None, type=None, address=None, legal_representative=None, registered_capital=None, found_date=None, business_term=None, business_scope=None, issue_date=None, confidence=None):
+    def __init__(self, registration_number=None, name=None, type=None, address=None, legal_representative=None, registered_capital=None, organization_form=None, found_date=None, business_term=None, business_scope=None, issue_date=None, confidence=None):
         """BusinessLicenseResult
 
         The model defined in huaweicloud sdk
 
-        :param registration_number:   - 老版本营业执照对应注册号。  - 新三证合一版本营业执照对应社会保障号。 
+        :param registration_number: - 老版本营业执照对应注册号。 - 新三证合一版本营业执照对应社会保障号。 
         :type registration_number: str
         :param name: 企业名称。 
         :type name: str
-        :param type: 公司/企业类型/主体类型。 
+        :param type: 公司/企业类型/主体类型/类型。 
         :type type: str
-        :param address: 住所/营业场所/企业住所。 
+        :param address: 住所/营业场所/企业住所/主要经营场所/经营场所。 
         :type address: str
-        :param legal_representative: 法定代表人/负责人。 
+        :param legal_representative: 法定代表人/负责人/执行事务合伙人/投资人/经营者。 
         :type legal_representative: str
-        :param registered_capital: 注册资本。 
+        :param registered_capital: 注册资本/出资额。 
         :type registered_capital: str
-        :param found_date: 成立日期。 
+        :param organization_form: 组成形式。 
+        :type organization_form: str
+        :param found_date: 成立日期/注册日期。 
         :type found_date: str
         :param business_term: 营业期限。 
         :type business_term: str
@@ -81,6 +85,7 @@ class BusinessLicenseResult:
         self._address = None
         self._legal_representative = None
         self._registered_capital = None
+        self._organization_form = None
         self._found_date = None
         self._business_term = None
         self._business_scope = None
@@ -100,6 +105,8 @@ class BusinessLicenseResult:
             self.legal_representative = legal_representative
         if registered_capital is not None:
             self.registered_capital = registered_capital
+        if organization_form is not None:
+            self.organization_form = organization_form
         if found_date is not None:
             self.found_date = found_date
         if business_term is not None:
@@ -115,7 +122,7 @@ class BusinessLicenseResult:
     def registration_number(self):
         """Gets the registration_number of this BusinessLicenseResult.
 
-          - 老版本营业执照对应注册号。  - 新三证合一版本营业执照对应社会保障号。 
+        - 老版本营业执照对应注册号。 - 新三证合一版本营业执照对应社会保障号。 
 
         :return: The registration_number of this BusinessLicenseResult.
         :rtype: str
@@ -126,7 +133,7 @@ class BusinessLicenseResult:
     def registration_number(self, registration_number):
         """Sets the registration_number of this BusinessLicenseResult.
 
-          - 老版本营业执照对应注册号。  - 新三证合一版本营业执照对应社会保障号。 
+        - 老版本营业执照对应注册号。 - 新三证合一版本营业执照对应社会保障号。 
 
         :param registration_number: The registration_number of this BusinessLicenseResult.
         :type registration_number: str
@@ -159,7 +166,7 @@ class BusinessLicenseResult:
     def type(self):
         """Gets the type of this BusinessLicenseResult.
 
-        公司/企业类型/主体类型。 
+        公司/企业类型/主体类型/类型。 
 
         :return: The type of this BusinessLicenseResult.
         :rtype: str
@@ -170,7 +177,7 @@ class BusinessLicenseResult:
     def type(self, type):
         """Sets the type of this BusinessLicenseResult.
 
-        公司/企业类型/主体类型。 
+        公司/企业类型/主体类型/类型。 
 
         :param type: The type of this BusinessLicenseResult.
         :type type: str
@@ -181,7 +188,7 @@ class BusinessLicenseResult:
     def address(self):
         """Gets the address of this BusinessLicenseResult.
 
-        住所/营业场所/企业住所。 
+        住所/营业场所/企业住所/主要经营场所/经营场所。 
 
         :return: The address of this BusinessLicenseResult.
         :rtype: str
@@ -192,7 +199,7 @@ class BusinessLicenseResult:
     def address(self, address):
         """Sets the address of this BusinessLicenseResult.
 
-        住所/营业场所/企业住所。 
+        住所/营业场所/企业住所/主要经营场所/经营场所。 
 
         :param address: The address of this BusinessLicenseResult.
         :type address: str
@@ -203,7 +210,7 @@ class BusinessLicenseResult:
     def legal_representative(self):
         """Gets the legal_representative of this BusinessLicenseResult.
 
-        法定代表人/负责人。 
+        法定代表人/负责人/执行事务合伙人/投资人/经营者。 
 
         :return: The legal_representative of this BusinessLicenseResult.
         :rtype: str
@@ -214,7 +221,7 @@ class BusinessLicenseResult:
     def legal_representative(self, legal_representative):
         """Sets the legal_representative of this BusinessLicenseResult.
 
-        法定代表人/负责人。 
+        法定代表人/负责人/执行事务合伙人/投资人/经营者。 
 
         :param legal_representative: The legal_representative of this BusinessLicenseResult.
         :type legal_representative: str
@@ -225,7 +232,7 @@ class BusinessLicenseResult:
     def registered_capital(self):
         """Gets the registered_capital of this BusinessLicenseResult.
 
-        注册资本。 
+        注册资本/出资额。 
 
         :return: The registered_capital of this BusinessLicenseResult.
         :rtype: str
@@ -236,7 +243,7 @@ class BusinessLicenseResult:
     def registered_capital(self, registered_capital):
         """Sets the registered_capital of this BusinessLicenseResult.
 
-        注册资本。 
+        注册资本/出资额。 
 
         :param registered_capital: The registered_capital of this BusinessLicenseResult.
         :type registered_capital: str
@@ -244,10 +251,32 @@ class BusinessLicenseResult:
         self._registered_capital = registered_capital
 
     @property
+    def organization_form(self):
+        """Gets the organization_form of this BusinessLicenseResult.
+
+        组成形式。 
+
+        :return: The organization_form of this BusinessLicenseResult.
+        :rtype: str
+        """
+        return self._organization_form
+
+    @organization_form.setter
+    def organization_form(self, organization_form):
+        """Sets the organization_form of this BusinessLicenseResult.
+
+        组成形式。 
+
+        :param organization_form: The organization_form of this BusinessLicenseResult.
+        :type organization_form: str
+        """
+        self._organization_form = organization_form
+
+    @property
     def found_date(self):
         """Gets the found_date of this BusinessLicenseResult.
 
-        成立日期。 
+        成立日期/注册日期。 
 
         :return: The found_date of this BusinessLicenseResult.
         :rtype: str
@@ -258,7 +287,7 @@ class BusinessLicenseResult:
     def found_date(self, found_date):
         """Sets the found_date of this BusinessLicenseResult.
 
-        成立日期。 
+        成立日期/注册日期。 
 
         :param found_date: The found_date of this BusinessLicenseResult.
         :type found_date: str

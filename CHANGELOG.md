@@ -1,3 +1,278 @@
+# 3.1.93 2024-04-25
+
+### HuaweiCloud SDK AAD
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowUnblockRecord**
+    - changes of response param
+      - `* unblock_record.block_id: string -> int64`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDeployTaskDetail**
+    - changes of response param
+      - `+ is_disable`
+      - `+ can_disable`
+  - **ListDeployTasks**
+    - changes of response param
+      - `+ is_disable`
+      - `+ can_disable`
+      - `+ result.can_disable`
+      - `+ result.is_disable`
+  - **ListAllApp**
+    - changes of response param
+      - `+ result.is_disable`
+      - `+ result.can_disable`
+  - **ShowAppDetailById**
+    - changes of response param
+      - `+ result.is_disable`
+      - `+ result.can_disable`
+      - `+ result.arrange_infos.can_disable`
+      - `+ result.arrange_infos.is_disable`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the following APIs:
+    - `ImportDataServiceExcel`
+    - `ExportDataServiceExcel`
+    - `ExportDataServiceZip`
+    - `ExportDataServiceExcelTemplate`
+    - `ListSecurityDlfDataWareHouses`
+    - `BatchUpdateSecurityDlfDataWareHouses`
+    - `DebugSecurityDlfDataWareHouses`
+    - `ListSecuritySensitiveDataOverviews`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `PublishApi`
+  - **DeleteApi**
+    - changes of request param
+      - `* workspace: optional -> required`
+  - **ListApicGroups**
+    - changes of request param
+      - `+ apig_type: enum value [APIG]`
+  - **ListApis**
+    - changes of request param
+      - `+ name`
+      - `+ description`
+      - `+ create_user`
+      - `+ start_time`
+      - `+ end_time`
+      - `+ tags`
+      - `+ api_type`
+      - `+ publish_status`
+      - `+ table_name`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateMigrationTask**
+    - changes of request param
+      - `+ source_instance.task_status`
+      - `+ source_instance.id`
+      - `+ source_instance.ip`
+      - `+ source_instance.port`
+      - `+ source_instance.name`
+      - `+ source_instance.proxy_multi_db`
+      - `+ source_instance.db`
+      - `+ target_instance.ip`
+      - `+ target_instance.port`
+      - `+ target_instance.addrs`
+      - `+ target_instance.proxy_multi_db`
+      - `+ target_instance.db`
+  - **ShowMigrationTask**
+    - changes of response param
+      - `+ source_instance.task_status`
+      - `+ source_instance.id`
+      - `+ source_instance.ip`
+      - `+ source_instance.port`
+      - `+ source_instance.name`
+      - `+ source_instance.proxy_multi_db`
+      - `+ source_instance.db`
+      - `+ target_instance.ip`
+      - `+ target_instance.port`
+      - `+ target_instance.addrs`
+      - `+ target_instance.proxy_multi_db`
+      - `+ target_instance.db`
+  - **StopMigrationTask**
+    - changes of response param
+      - `+ source_instance.task_status`
+      - `+ source_instance.id`
+      - `+ source_instance.ip`
+      - `+ source_instance.port`
+      - `+ source_instance.name`
+      - `+ source_instance.proxy_multi_db`
+      - `+ source_instance.db`
+      - `+ target_instance.ip`
+      - `+ target_instance.port`
+      - `+ target_instance.addrs`
+      - `+ target_instance.proxy_multi_db`
+      - `+ target_instance.db`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTables**
+    - changes of response param
+      - `* tables.create_time: int32 -> int64`
+      - `* tables.last_access_time: int32 -> int64`
+      - `* tables.table_size: int32 -> int64`
+  - **CreateFlinkSqlJob**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **UpdateFlinkSqlJob**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **CreateFlinkJarJob**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **UpdateFlinkJarJob**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **ShowFlinkJob**
+    - changes of response param
+      - `* is_success: boolean -> string`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListMetricsData**
+    - changes of response param
+      - `* data: list<map<string, string>> -> list<map<string, object>>`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.availability_zone`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the following APIs:
+    - `ListDeviceProxies`
+    - `CreateDeviceProxy`
+    - `ShowDeviceProxy`
+    - `UpdateDeviceProxy`
+    - `DeleteDeviceProxy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunCreateVideoModerationJob**
+    - changes of request param
+      - `+ seed`
+  - **RunCreateAudioStreamModerationJob**
+    - changes of request param
+      - `+ seed`
+  - **RunCreateDocumentModerationJob**
+    - changes of request param
+      - `+ seed`
+  - **RunCreateVideoStreamModerationJob**
+    - changes of request param
+      - `+ seed`
+  - **RunCreateAudioModerationJob**
+    - changes of request param
+      - `+ seed`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - Support the API `RecognizeBankReceipt`
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeBusinessLicense**
+    - changes of response param
+      - `+ result.organization_form`
+  - **RecognizeSmartDocumentRecognizer**
+    - changes of request param
+      - `+ formula`
+    - changes of response param
+      - `+ result.formula_result`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFirewall**
+    - changes of response param
+      - `+ firewall.ingress_rules.enabled`
+  - **ShowFirewall**
+    - changes of response param
+      - `+ firewall.ingress_rules.enabled`
+  - **UpdateFirewall**
+    - changes of response param
+      - `+ firewall.ingress_rules.enabled`
+  - **UpdateFirewallRules**
+    - changes of request param
+      - `+ firewall.ingress_rules.enabled`
+    - changes of response param
+      - `+ firewall.ingress_rules.enabled`
+  - **AddFirewallRules**
+    - changes of request param
+      - `+ firewall.ingress_rules.enabled`
+    - changes of response param
+      - `+ firewall.ingress_rules.enabled`
+  - **RemoveFirewallRules**
+    - changes of response param
+      - `+ firewall.ingress_rules.enabled`
+  - **AssociateSubnetFirewall**
+    - changes of response param
+      - `+ firewall.ingress_rules.enabled`
+  - **DisassociateSubnetFirewall**
+    - changes of response param
+      - `+ firewall.ingress_rules.enabled`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdatePolicyRuleStatus**
+    - changes of request param
+      - `+ ruletype: enum value [cc]`
+
 # 3.1.92 2024-04-18
 
 ### HuaweiCloud SDK AOM

@@ -37,15 +37,15 @@ class ShowPathByIdRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param catalog_id: 目录编号
+        :param catalog_id: 目录编号。
         :type catalog_id: str
-        :param limit: limit
+        :param limit: limit。
         :type limit: int
-        :param offset: offset
+        :param offset: offset。
         :type offset: int
         """
         
@@ -71,7 +71,7 @@ class ShowPathByIdRequest:
     def workspace(self):
         """Gets the workspace of this ShowPathByIdRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ShowPathByIdRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowPathByIdRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ShowPathByIdRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ShowPathByIdRequest.
         :type workspace: str
@@ -93,7 +93,7 @@ class ShowPathByIdRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ShowPathByIdRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ShowPathByIdRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ShowPathByIdRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ShowPathByIdRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ShowPathByIdRequest.
         :type dlm_type: str
@@ -115,7 +115,7 @@ class ShowPathByIdRequest:
     def catalog_id(self):
         """Gets the catalog_id of this ShowPathByIdRequest.
 
-        目录编号
+        目录编号。
 
         :return: The catalog_id of this ShowPathByIdRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ShowPathByIdRequest:
     def catalog_id(self, catalog_id):
         """Sets the catalog_id of this ShowPathByIdRequest.
 
-        目录编号
+        目录编号。
 
         :param catalog_id: The catalog_id of this ShowPathByIdRequest.
         :type catalog_id: str
@@ -137,7 +137,7 @@ class ShowPathByIdRequest:
     def limit(self):
         """Gets the limit of this ShowPathByIdRequest.
 
-        limit
+        limit。
 
         :return: The limit of this ShowPathByIdRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ShowPathByIdRequest:
     def limit(self, limit):
         """Sets the limit of this ShowPathByIdRequest.
 
-        limit
+        limit。
 
         :param limit: The limit of this ShowPathByIdRequest.
         :type limit: int
@@ -159,7 +159,7 @@ class ShowPathByIdRequest:
     def offset(self):
         """Gets the offset of this ShowPathByIdRequest.
 
-        offset
+        offset。
 
         :return: The offset of this ShowPathByIdRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class ShowPathByIdRequest:
     def offset(self, offset):
         """Sets the offset of this ShowPathByIdRequest.
 
-        offset
+        offset。
 
         :param offset: The offset of this ShowPathByIdRequest.
         :type offset: int

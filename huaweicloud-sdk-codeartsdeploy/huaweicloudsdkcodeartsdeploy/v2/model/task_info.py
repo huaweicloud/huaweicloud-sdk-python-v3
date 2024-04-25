@@ -42,10 +42,12 @@ class TaskInfo:
         'can_execute': 'bool',
         'can_copy': 'bool',
         'can_manage': 'bool',
+        'can_disable': 'bool',
         'app_component_list': 'list[AppComponentDao]',
         'role_id': 'int',
         'id': 'str',
         'release_id': 'int',
+        'is_disable': 'bool',
         'duration': 'str',
         'execution_state': 'str',
         'executor_id': 'str',
@@ -79,10 +81,12 @@ class TaskInfo:
         'can_execute': 'can_execute',
         'can_copy': 'can_copy',
         'can_manage': 'can_manage',
+        'can_disable': 'can_disable',
         'app_component_list': 'app_component_list',
         'role_id': 'role_id',
         'id': 'id',
         'release_id': 'release_id',
+        'is_disable': 'is_disable',
         'duration': 'duration',
         'execution_state': 'execution_state',
         'executor_id': 'executor_id',
@@ -90,7 +94,7 @@ class TaskInfo:
         'steps': 'steps'
     }
 
-    def __init__(self, task_id=None, name=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, state=None, execution_time=None, description=None, is_defaut_permission=None, template_id=None, owner=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, app_component_list=None, role_id=None, id=None, release_id=None, duration=None, execution_state=None, executor_id=None, executor_nick_name=None, steps=None):
+    def __init__(self, task_id=None, name=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, state=None, execution_time=None, description=None, is_defaut_permission=None, template_id=None, owner=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_disable=None, app_component_list=None, role_id=None, id=None, release_id=None, is_disable=None, duration=None, execution_state=None, executor_id=None, executor_nick_name=None, steps=None):
         """TaskInfo
 
         The model defined in huaweicloud sdk
@@ -145,6 +149,8 @@ class TaskInfo:
         :type can_copy: bool
         :param can_manage: 是否有编辑应用权限矩阵的权限
         :type can_manage: bool
+        :param can_disable: 是否有禁用应用的权限
+        :type can_disable: bool
         :param app_component_list: 应用和AOM应用组件对应关系
         :type app_component_list: list[:class:`huaweicloudsdkcodeartsdeploy.v2.AppComponentDao`]
         :param role_id: 角色ID,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
@@ -153,6 +159,8 @@ class TaskInfo:
         :type id: str
         :param release_id: 部署记录序列号
         :type release_id: int
+        :param is_disable: 当前应用是否被禁用
+        :type is_disable: bool
         :param duration: 部署时间
         :type duration: str
         :param execution_state: 部署状态
@@ -192,10 +200,12 @@ class TaskInfo:
         self._can_execute = None
         self._can_copy = None
         self._can_manage = None
+        self._can_disable = None
         self._app_component_list = None
         self._role_id = None
         self._id = None
         self._release_id = None
+        self._is_disable = None
         self._duration = None
         self._execution_state = None
         self._executor_id = None
@@ -253,6 +263,8 @@ class TaskInfo:
             self.can_copy = can_copy
         if can_manage is not None:
             self.can_manage = can_manage
+        if can_disable is not None:
+            self.can_disable = can_disable
         if app_component_list is not None:
             self.app_component_list = app_component_list
         if role_id is not None:
@@ -261,6 +273,8 @@ class TaskInfo:
             self.id = id
         if release_id is not None:
             self.release_id = release_id
+        if is_disable is not None:
+            self.is_disable = is_disable
         if duration is not None:
             self.duration = duration
         if execution_state is not None:
@@ -823,6 +837,28 @@ class TaskInfo:
         self._can_manage = can_manage
 
     @property
+    def can_disable(self):
+        """Gets the can_disable of this TaskInfo.
+
+        是否有禁用应用的权限
+
+        :return: The can_disable of this TaskInfo.
+        :rtype: bool
+        """
+        return self._can_disable
+
+    @can_disable.setter
+    def can_disable(self, can_disable):
+        """Sets the can_disable of this TaskInfo.
+
+        是否有禁用应用的权限
+
+        :param can_disable: The can_disable of this TaskInfo.
+        :type can_disable: bool
+        """
+        self._can_disable = can_disable
+
+    @property
     def app_component_list(self):
         """Gets the app_component_list of this TaskInfo.
 
@@ -909,6 +945,28 @@ class TaskInfo:
         :type release_id: int
         """
         self._release_id = release_id
+
+    @property
+    def is_disable(self):
+        """Gets the is_disable of this TaskInfo.
+
+        当前应用是否被禁用
+
+        :return: The is_disable of this TaskInfo.
+        :rtype: bool
+        """
+        return self._is_disable
+
+    @is_disable.setter
+    def is_disable(self, is_disable):
+        """Sets the is_disable of this TaskInfo.
+
+        当前应用是否被禁用
+
+        :param is_disable: The is_disable of this TaskInfo.
+        :type is_disable: bool
+        """
+        self._is_disable = is_disable
 
     @property
     def duration(self):

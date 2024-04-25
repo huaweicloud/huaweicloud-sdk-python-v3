@@ -18,20 +18,51 @@ class CreateQuotasOrderResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'order_id': 'str'
     }
 
     attribute_map = {
+        'order_id': 'order_id'
     }
 
-    def __init__(self):
+    def __init__(self, order_id=None):
         """CreateQuotasOrderResponse
 
         The model defined in huaweicloud sdk
 
+        :param order_id: 订单ID
+        :type order_id: str
         """
         
         super(CreateQuotasOrderResponse, self).__init__()
+
+        self._order_id = None
         self.discriminator = None
+
+        if order_id is not None:
+            self.order_id = order_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this CreateQuotasOrderResponse.
+
+        订单ID
+
+        :return: The order_id of this CreateQuotasOrderResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateQuotasOrderResponse.
+
+        订单ID
+
+        :param order_id: The order_id of this CreateQuotasOrderResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

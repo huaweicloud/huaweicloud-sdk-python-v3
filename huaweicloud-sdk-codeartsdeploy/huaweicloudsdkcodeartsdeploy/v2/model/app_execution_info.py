@@ -20,6 +20,7 @@ class AppExecutionInfo:
         'id': 'str',
         'name': 'str',
         'duration': 'str',
+        'is_disable': 'bool',
         'project_id': 'str',
         'project_name': 'str',
         'is_care': 'bool',
@@ -30,6 +31,7 @@ class AppExecutionInfo:
         'can_copy': 'bool',
         'can_manage': 'bool',
         'can_create_env': 'bool',
+        'can_disable': 'bool',
         'deploy_system': 'str',
         'create_user_id': 'str',
         'create_tenant_id': 'str',
@@ -48,6 +50,7 @@ class AppExecutionInfo:
         'id': 'id',
         'name': 'name',
         'duration': 'duration',
+        'is_disable': 'is_disable',
         'project_id': 'project_id',
         'project_name': 'project_name',
         'is_care': 'is_care',
@@ -58,6 +61,7 @@ class AppExecutionInfo:
         'can_copy': 'can_copy',
         'can_manage': 'can_manage',
         'can_create_env': 'can_create_env',
+        'can_disable': 'can_disable',
         'deploy_system': 'deploy_system',
         'create_user_id': 'create_user_id',
         'create_tenant_id': 'create_tenant_id',
@@ -72,7 +76,7 @@ class AppExecutionInfo:
         'arrange_infos': 'arrange_infos'
     }
 
-    def __init__(self, id=None, name=None, duration=None, project_id=None, project_name=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, deploy_system=None, create_user_id=None, create_tenant_id=None, create_time=None, update_time=None, execution_time=None, end_time=None, execution_state=None, release_id=None, executor_id=None, executor_nick_name=None, arrange_infos=None):
+    def __init__(self, id=None, name=None, duration=None, is_disable=None, project_id=None, project_name=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, can_disable=None, deploy_system=None, create_user_id=None, create_tenant_id=None, create_time=None, update_time=None, execution_time=None, end_time=None, execution_state=None, release_id=None, executor_id=None, executor_nick_name=None, arrange_infos=None):
         """AppExecutionInfo
 
         The model defined in huaweicloud sdk
@@ -83,6 +87,8 @@ class AppExecutionInfo:
         :type name: str
         :param duration: 部署时间
         :type duration: str
+        :param is_disable: 当前应用是否被禁用
+        :type is_disable: bool
         :param project_id: 项目ID
         :type project_id: str
         :param project_name: 项目名称
@@ -103,6 +109,8 @@ class AppExecutionInfo:
         :type can_manage: bool
         :param can_create_env: 是否有创建环境的权限
         :type can_create_env: bool
+        :param can_disable: 是否有禁用应用的权限
+        :type can_disable: bool
         :param deploy_system: 部署类型模式，包括deployTemplate、ansible、shell
         :type deploy_system: str
         :param create_user_id: 应用创建者用户ID
@@ -134,6 +142,7 @@ class AppExecutionInfo:
         self._id = None
         self._name = None
         self._duration = None
+        self._is_disable = None
         self._project_id = None
         self._project_name = None
         self._is_care = None
@@ -144,6 +153,7 @@ class AppExecutionInfo:
         self._can_copy = None
         self._can_manage = None
         self._can_create_env = None
+        self._can_disable = None
         self._deploy_system = None
         self._create_user_id = None
         self._create_tenant_id = None
@@ -164,6 +174,8 @@ class AppExecutionInfo:
             self.name = name
         if duration is not None:
             self.duration = duration
+        if is_disable is not None:
+            self.is_disable = is_disable
         if project_id is not None:
             self.project_id = project_id
         if project_name is not None:
@@ -184,6 +196,8 @@ class AppExecutionInfo:
             self.can_manage = can_manage
         if can_create_env is not None:
             self.can_create_env = can_create_env
+        if can_disable is not None:
+            self.can_disable = can_disable
         if deploy_system is not None:
             self.deploy_system = deploy_system
         if create_user_id is not None:
@@ -274,6 +288,28 @@ class AppExecutionInfo:
         :type duration: str
         """
         self._duration = duration
+
+    @property
+    def is_disable(self):
+        """Gets the is_disable of this AppExecutionInfo.
+
+        当前应用是否被禁用
+
+        :return: The is_disable of this AppExecutionInfo.
+        :rtype: bool
+        """
+        return self._is_disable
+
+    @is_disable.setter
+    def is_disable(self, is_disable):
+        """Sets the is_disable of this AppExecutionInfo.
+
+        当前应用是否被禁用
+
+        :param is_disable: The is_disable of this AppExecutionInfo.
+        :type is_disable: bool
+        """
+        self._is_disable = is_disable
 
     @property
     def project_id(self):
@@ -494,6 +530,28 @@ class AppExecutionInfo:
         :type can_create_env: bool
         """
         self._can_create_env = can_create_env
+
+    @property
+    def can_disable(self):
+        """Gets the can_disable of this AppExecutionInfo.
+
+        是否有禁用应用的权限
+
+        :return: The can_disable of this AppExecutionInfo.
+        :rtype: bool
+        """
+        return self._can_disable
+
+    @can_disable.setter
+    def can_disable(self, can_disable):
+        """Sets the can_disable of this AppExecutionInfo.
+
+        是否有禁用应用的权限
+
+        :param can_disable: The can_disable of this AppExecutionInfo.
+        :type can_disable: bool
+        """
+        self._can_disable = can_disable
 
     @property
     def deploy_system(self):

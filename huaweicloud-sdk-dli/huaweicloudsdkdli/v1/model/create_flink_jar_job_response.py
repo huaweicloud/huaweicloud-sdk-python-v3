@@ -18,7 +18,7 @@ class CreateFlinkJarJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'is_success': 'bool',
+        'is_success': 'str',
         'message': 'str',
         'job': 'FlinkJobStatus'
     }
@@ -35,7 +35,7 @@ class CreateFlinkJarJobResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param is_success: 执行请求是否成功。“true”表示请求执行成功。
-        :type is_success: bool
+        :type is_success: str
         :param message: 消息内容
         :type message: str
         :param job: 
@@ -63,7 +63,7 @@ class CreateFlinkJarJobResponse(SdkResponse):
         执行请求是否成功。“true”表示请求执行成功。
 
         :return: The is_success of this CreateFlinkJarJobResponse.
-        :rtype: bool
+        :rtype: str
         """
         return self._is_success
 
@@ -74,7 +74,7 @@ class CreateFlinkJarJobResponse(SdkResponse):
         执行请求是否成功。“true”表示请求执行成功。
 
         :param is_success: The is_success of this CreateFlinkJarJobResponse.
-        :type is_success: bool
+        :type is_success: str
         """
         self._is_success = is_success
 

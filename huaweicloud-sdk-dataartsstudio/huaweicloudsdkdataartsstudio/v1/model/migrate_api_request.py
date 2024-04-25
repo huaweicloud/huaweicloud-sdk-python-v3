@@ -33,9 +33,9 @@ class MigrateApiRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
         :param body: Body of the MigrateApiRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApiMoveParaDTO`
@@ -58,7 +58,7 @@ class MigrateApiRequest:
     def workspace(self):
         """Gets the workspace of this MigrateApiRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this MigrateApiRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class MigrateApiRequest:
     def workspace(self, workspace):
         """Sets the workspace of this MigrateApiRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this MigrateApiRequest.
         :type workspace: str
@@ -80,7 +80,7 @@ class MigrateApiRequest:
     def dlm_type(self):
         """Gets the dlm_type of this MigrateApiRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this MigrateApiRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class MigrateApiRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this MigrateApiRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this MigrateApiRequest.
         :type dlm_type: str

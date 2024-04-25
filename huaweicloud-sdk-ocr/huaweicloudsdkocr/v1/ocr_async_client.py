@@ -168,6 +168,73 @@ class OcrAsyncClient(Client):
 
         return http_info
 
+    def recognize_bank_receipt_async(self, request):
+        """银行回单识别
+
+        支持对银行回单版式进行文字识别及键值对提取，实现高效的自动化结构化返回。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RecognizeBankReceipt
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeBankReceiptRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBankReceiptResponse`
+        """
+        http_info = self._recognize_bank_receipt_http_info(request)
+        return self._call_api(**http_info)
+
+    def recognize_bank_receipt_async_invoker(self, request):
+        http_info = self._recognize_bank_receipt_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_bank_receipt_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/bank-receipt",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeBankReceiptResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def recognize_bankcard_async(self, request):
         """银行卡识别
 

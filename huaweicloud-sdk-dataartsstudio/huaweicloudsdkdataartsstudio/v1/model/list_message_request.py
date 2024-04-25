@@ -37,15 +37,15 @@ class ListMessageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace: 工作空间id
+        :param workspace: 工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type workspace: str
-        :param dlm_type: dlm版本类型
+        :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
         :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据
+        :param limit: 查询条数, 即查询Y条数据。
         :type limit: int
-        :param api_name: api名称
+        :param api_name: api名称。
         :type api_name: str
         """
         
@@ -72,7 +72,7 @@ class ListMessageRequest:
     def workspace(self):
         """Gets the workspace of this ListMessageRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The workspace of this ListMessageRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ListMessageRequest:
     def workspace(self, workspace):
         """Sets the workspace of this ListMessageRequest.
 
-        工作空间id
+        工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param workspace: The workspace of this ListMessageRequest.
         :type workspace: str
@@ -94,7 +94,7 @@ class ListMessageRequest:
     def dlm_type(self):
         """Gets the dlm_type of this ListMessageRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :return: The dlm_type of this ListMessageRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ListMessageRequest:
     def dlm_type(self, dlm_type):
         """Sets the dlm_type of this ListMessageRequest.
 
-        dlm版本类型
+        数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
         :param dlm_type: The dlm_type of this ListMessageRequest.
         :type dlm_type: str
@@ -138,7 +138,7 @@ class ListMessageRequest:
     def limit(self):
         """Gets the limit of this ListMessageRequest.
 
-        查询条数, 即查询Y条数据
+        查询条数, 即查询Y条数据。
 
         :return: The limit of this ListMessageRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListMessageRequest:
     def limit(self, limit):
         """Sets the limit of this ListMessageRequest.
 
-        查询条数, 即查询Y条数据
+        查询条数, 即查询Y条数据。
 
         :param limit: The limit of this ListMessageRequest.
         :type limit: int
@@ -160,7 +160,7 @@ class ListMessageRequest:
     def api_name(self):
         """Gets the api_name of this ListMessageRequest.
 
-        api名称
+        api名称。
 
         :return: The api_name of this ListMessageRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class ListMessageRequest:
     def api_name(self, api_name):
         """Sets the api_name of this ListMessageRequest.
 
-        api名称
+        api名称。
 
         :param api_name: The api_name of this ListMessageRequest.
         :type api_name: str
