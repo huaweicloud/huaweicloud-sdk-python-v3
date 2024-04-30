@@ -31,7 +31,7 @@ class DataSource:
         'database_count': 'int',
         'stream_count': 'int',
         'table_count': 'int',
-        'data_size': 'int',
+        'data_size': 'float',
         'databases': 'list[Database]',
         'folders': 'list[ObsFolder]',
         'css_indices': 'list[CssIndex]',
@@ -96,7 +96,7 @@ class DataSource:
         :param table_count: 表总数
         :type table_count: int
         :param data_size: 数据大小
-        :type data_size: int
+        :type data_size: float
         :param databases: 数据库统计信息
         :type databases: list[:class:`huaweicloudsdkdataartsstudio.v1.Database`]
         :param folders: 顶层目录统计信息
@@ -489,7 +489,7 @@ class DataSource:
         数据大小
 
         :return: The data_size of this DataSource.
-        :rtype: int
+        :rtype: float
         """
         return self._data_size
 
@@ -500,7 +500,7 @@ class DataSource:
         数据大小
 
         :param data_size: The data_size of this DataSource.
-        :type data_size: int
+        :type data_size: float
         """
         self._data_size = data_size
 

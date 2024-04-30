@@ -49,7 +49,7 @@ class HttpPutBody:
         :type certificate_value: str
         :param private_key: HTTPS协议使用的私钥，当证书开启时必传。  &gt; PEM编码格式。
         :type private_key: str
-        :param certificate_source: 证书来源,1：华为云托管证书,0：自有证书, 默认值0。  &gt; 证书开启时必传
+        :param certificate_source: 证书来源,0：自有证书。  &gt; 证书开启时必传
         :type certificate_source: int
         :param http2_status: 是否使用HTTP2.0，on：是，off：否。  &gt; 默认关闭，https_status&#x3D;off时，该值不生效。
         :type http2_status: str
@@ -175,7 +175,7 @@ class HttpPutBody:
     def certificate_source(self):
         """Gets the certificate_source of this HttpPutBody.
 
-        证书来源,1：华为云托管证书,0：自有证书, 默认值0。  > 证书开启时必传
+        证书来源,0：自有证书。  > 证书开启时必传
 
         :return: The certificate_source of this HttpPutBody.
         :rtype: int
@@ -186,7 +186,7 @@ class HttpPutBody:
     def certificate_source(self, certificate_source):
         """Sets the certificate_source of this HttpPutBody.
 
-        证书来源,1：华为云托管证书,0：自有证书, 默认值0。  > 证书开启时必传
+        证书来源,0：自有证书。  > 证书开启时必传
 
         :param certificate_source: The certificate_source of this HttpPutBody.
         :type certificate_source: int

@@ -20,6 +20,7 @@ class CreateTopicReq:
         'name': 'str',
         'brokers': 'list[str]',
         'queue_num': 'float',
+        'queues': 'list[CreateTopicReqQueues]',
         'permission': 'str',
         'message_type': 'str'
     }
@@ -28,24 +29,27 @@ class CreateTopicReq:
         'name': 'name',
         'brokers': 'brokers',
         'queue_num': 'queue_num',
+        'queues': 'queues',
         'permission': 'permission',
         'message_type': 'message_type'
     }
 
-    def __init__(self, name=None, brokers=None, queue_num=None, permission=None, message_type=None):
+    def __init__(self, name=None, brokers=None, queue_num=None, queues=None, permission=None, message_type=None):
         """CreateTopicReq
 
         The model defined in huaweicloud sdk
 
         :param name: 主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
         :type name: str
-        :param brokers: 关联的代理。
+        :param brokers: 关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
         :type brokers: list[str]
         :param queue_num: 队列数，范围1~50。
         :type queue_num: float
-        :param permission: 权限。
+        :param queues: 队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        :type queues: list[:class:`huaweicloudsdkrocketmq.v2.CreateTopicReqQueues`]
+        :param permission: 权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
         :type permission: str
-        :param message_type: 消息类型（RocketMQ实例5.x版本才包含此参数）。
+        :param message_type: 消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
         :type message_type: str
         """
         
@@ -54,6 +58,7 @@ class CreateTopicReq:
         self._name = None
         self._brokers = None
         self._queue_num = None
+        self._queues = None
         self._permission = None
         self._message_type = None
         self.discriminator = None
@@ -64,6 +69,8 @@ class CreateTopicReq:
             self.brokers = brokers
         if queue_num is not None:
             self.queue_num = queue_num
+        if queues is not None:
+            self.queues = queues
         if permission is not None:
             self.permission = permission
         if message_type is not None:
@@ -95,7 +102,7 @@ class CreateTopicReq:
     def brokers(self):
         """Gets the brokers of this CreateTopicReq.
 
-        关联的代理。
+        关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
         :return: The brokers of this CreateTopicReq.
         :rtype: list[str]
@@ -106,7 +113,7 @@ class CreateTopicReq:
     def brokers(self, brokers):
         """Sets the brokers of this CreateTopicReq.
 
-        关联的代理。
+        关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
         :param brokers: The brokers of this CreateTopicReq.
         :type brokers: list[str]
@@ -136,10 +143,32 @@ class CreateTopicReq:
         self._queue_num = queue_num
 
     @property
+    def queues(self):
+        """Gets the queues of this CreateTopicReq.
+
+        队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
+
+        :return: The queues of this CreateTopicReq.
+        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.CreateTopicReqQueues`]
+        """
+        return self._queues
+
+    @queues.setter
+    def queues(self, queues):
+        """Sets the queues of this CreateTopicReq.
+
+        队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
+
+        :param queues: The queues of this CreateTopicReq.
+        :type queues: list[:class:`huaweicloudsdkrocketmq.v2.CreateTopicReqQueues`]
+        """
+        self._queues = queues
+
+    @property
     def permission(self):
         """Gets the permission of this CreateTopicReq.
 
-        权限。
+        权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
 
         :return: The permission of this CreateTopicReq.
         :rtype: str
@@ -150,7 +179,7 @@ class CreateTopicReq:
     def permission(self, permission):
         """Sets the permission of this CreateTopicReq.
 
-        权限。
+        权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
 
         :param permission: The permission of this CreateTopicReq.
         :type permission: str
@@ -161,7 +190,7 @@ class CreateTopicReq:
     def message_type(self):
         """Gets the message_type of this CreateTopicReq.
 
-        消息类型（RocketMQ实例5.x版本才包含此参数）。
+        消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
 
         :return: The message_type of this CreateTopicReq.
         :rtype: str
@@ -172,7 +201,7 @@ class CreateTopicReq:
     def message_type(self, message_type):
         """Sets the message_type of this CreateTopicReq.
 
-        消息类型（RocketMQ实例5.x版本才包含此参数）。
+        消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
 
         :param message_type: The message_type of this CreateTopicReq.
         :type message_type: str

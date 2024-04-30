@@ -53,7 +53,7 @@ class HttpGetBody:
         :type certificate_value: str
         :param expire_time: 证书过期时间。  &gt; UTC时间。
         :type expire_time: int
-        :param certificate_source: 证书来源,1：华为云托管证书,0：自有证书。
+        :param certificate_source: 证书来源,0：自有证书。
         :type certificate_source: int
         :param certificate_type: 证书类型。server：国际证书；server_sm：国密证书。
         :type certificate_type: str
@@ -189,7 +189,7 @@ class HttpGetBody:
     def certificate_source(self):
         """Gets the certificate_source of this HttpGetBody.
 
-        证书来源,1：华为云托管证书,0：自有证书。
+        证书来源,0：自有证书。
 
         :return: The certificate_source of this HttpGetBody.
         :rtype: int
@@ -200,7 +200,7 @@ class HttpGetBody:
     def certificate_source(self, certificate_source):
         """Sets the certificate_source of this HttpGetBody.
 
-        证书来源,1：华为云托管证书,0：自有证书。
+        证书来源,0：自有证书。
 
         :param certificate_source: The certificate_source of this HttpGetBody.
         :type certificate_source: int

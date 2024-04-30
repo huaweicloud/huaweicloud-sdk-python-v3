@@ -21,7 +21,7 @@ class ObsFolder:
         'folder_guid': 'str',
         'folder_qualified_name': 'str',
         'object_count': 'int',
-        'data_size': 'int'
+        'data_size': 'float'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class ObsFolder:
         :param object_count: 对象总数
         :type object_count: int
         :param data_size: 数据量
-        :type data_size: int
+        :type data_size: float
         """
         
         
@@ -164,7 +164,7 @@ class ObsFolder:
         数据量
 
         :return: The data_size of this ObsFolder.
-        :rtype: int
+        :rtype: float
         """
         return self._data_size
 
@@ -175,7 +175,7 @@ class ObsFolder:
         数据量
 
         :param data_size: The data_size of this ObsFolder.
-        :type data_size: int
+        :type data_size: float
         """
         self._data_size = data_size
 

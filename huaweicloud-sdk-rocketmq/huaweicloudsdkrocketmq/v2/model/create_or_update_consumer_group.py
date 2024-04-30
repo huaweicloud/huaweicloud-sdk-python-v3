@@ -43,7 +43,7 @@ class CreateOrUpdateConsumerGroup:
 
         :param name: 消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
         :type name: str
-        :param brokers: 关联的代理列表。
+        :param brokers: 关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
         :type brokers: list[str]
         :param broadcast: 是否广播。
         :type broadcast: bool
@@ -51,7 +51,7 @@ class CreateOrUpdateConsumerGroup:
         :type retry_max_time: int
         :param enabled: 是否可以消费。
         :type enabled: bool
-        :param consume_orderly: 是否按序消费。
+        :param consume_orderly: 是否按序消费（仅RocketMQ实例5.x版本需要填写此参数）。
         :type consume_orderly: bool
         :param group_desc: 消费组描述，长度0~200个字符。
         :type group_desc: str
@@ -109,7 +109,7 @@ class CreateOrUpdateConsumerGroup:
     def brokers(self):
         """Gets the brokers of this CreateOrUpdateConsumerGroup.
 
-        关联的代理列表。
+        关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
         :return: The brokers of this CreateOrUpdateConsumerGroup.
         :rtype: list[str]
@@ -120,7 +120,7 @@ class CreateOrUpdateConsumerGroup:
     def brokers(self, brokers):
         """Sets the brokers of this CreateOrUpdateConsumerGroup.
 
-        关联的代理列表。
+        关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
         :param brokers: The brokers of this CreateOrUpdateConsumerGroup.
         :type brokers: list[str]
@@ -197,7 +197,7 @@ class CreateOrUpdateConsumerGroup:
     def consume_orderly(self):
         """Gets the consume_orderly of this CreateOrUpdateConsumerGroup.
 
-        是否按序消费。
+        是否按序消费（仅RocketMQ实例5.x版本需要填写此参数）。
 
         :return: The consume_orderly of this CreateOrUpdateConsumerGroup.
         :rtype: bool
@@ -208,7 +208,7 @@ class CreateOrUpdateConsumerGroup:
     def consume_orderly(self, consume_orderly):
         """Sets the consume_orderly of this CreateOrUpdateConsumerGroup.
 
-        是否按序消费。
+        是否按序消费（仅RocketMQ实例5.x版本需要填写此参数）。
 
         :param consume_orderly: The consume_orderly of this CreateOrUpdateConsumerGroup.
         :type consume_orderly: bool

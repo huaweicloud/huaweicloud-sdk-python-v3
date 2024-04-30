@@ -37,15 +37,15 @@ class AosClient(Client):
 
         创建私有provider（CreatePrivateProvider）
         
-        创建一个私有的空provider。若用户给予了provider_version和function_graph_urn，则在创建私有provider的同时，还会在私有provider下创建一个私有provider版本。
+        创建一个私有的空provider。如果用户给予了provider_version和function_graph_urn，则在创建私有provider的同时，还会在私有provider下创建一个私有provider版本。
           * 私有provider允许用户将自定义的provider注册到RFS中，并仅提供给当前用户使用。
           * 如果同名私有provider在当前账户中已经存在，则会返回409。
           * 版本号遵循语义化版本号（Semantic Version），为用户自定义。
-          * 在本API中，provider_version和function_graph_urn需要搭配使用，若只指定其中一个参数，则会返回400。
+          * 在本API中，provider_version和function_graph_urn需要搭配使用，如果只指定其中一个参数，则会返回400。
           * 资源编排服务只会对function_graph_urn进行浅校验，如是否符合正则，是否仅指定为当前region等。并不会深度校验，即用户是否存在权限调用，是否真实存在等。
           * 该API会返回provider_source字段，该字段按照“huawei.com/private-provider/{provider_name}”的形式拼接。关于provider_name和provider_source字段在模板中的使用细节，详见下方描述中。
-          * 若用户期望使用名称中不含有大写英文的provider，可以按照如下展示将provider_source字段指定为模板中定义的required_providers中的source参数。
-          * 若用户期望使用名称含有大写英文的provider，需要将provider_name完全转化为小写英文创建。同时用户既可以在模板中使用API返回的provider_source参数，也可以在模板中以 “huawei.com/private-provider”为固定前缀，按照原含大写英文的provider_name，拼写provider_source参数。
+          * 如果用户期望使用名称中不含有大写英文的provider，可以按照如下展示将provider_source字段指定为模板中定义的required_providers中的source参数。
+          * 如果用户期望使用名称含有大写英文的provider，需要将provider_name完全转化为小写英文创建。同时用户既可以在模板中使用API返回的provider_source参数，也可以在模板中以 “huawei.com/private-provider”为固定前缀，按照原含大写英文的provider_name，拼写provider_source参数。
         
         以HCL格式的模板为例，模板中引用私有provider的语法如下：
         &#x60;&#x60;&#x60;
@@ -124,7 +124,7 @@ class AosClient(Client):
           1. 私有provider为用户自行定义，提供给RFS的provider插件，RFS不负责校验其内部逻辑是否正确。
           2. RFS不负责维护私有provider的生命周期。用户使用私有provider部署的资源栈，由于私有provider缺失或问题，导致资源栈无法继续部署管理的，RFS不负责提供解决方案。
           3. RFS不负责保障私有provider的信息安全。用户使用私有provider部署的资源栈，由于模板中存在敏感数据，进而导致敏感信息泄露给第三方相关资源的，RFS不承担其相关责任。
-          4. 当前调用私有provider过程中增加了网络因素，因此使用私有provider部署的失败概率会增加。若出现因网络原因导致的部署失败，可以增加重试操作。
+          4. 当前调用私有provider过程中增加了网络因素，因此使用私有provider部署的失败概率会增加。如果出现因网络原因导致的部署失败，可以增加重试操作。
           5. 当前RFS会同步调用用户在FG中定义的一系列方法，单次方法需要确保运行时间不超过30s，否则会极大增加失败概率。
           6. 当前仅支持在模板中固定私有provider版本，不支持&gt;,&gt;&#x3D;,&lt;,&lt;&#x3D;,~&gt;等定义宽松版本的表达式。
         
@@ -196,7 +196,7 @@ class AosClient(Client):
         创建私有provider版本（CreatePrivateProviderVersion）
         
           * provider的版本号需遵循语义化版本号（Semantic Version），为用户自定义。
-          * 若provider_name和provider_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+          * 如果provider_name和provider_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
           * 资源编排服务只会对function_graph_urn进行浅校验，如是否符合正则，是否仅指定为当前region等。并不会深度校验，即用户是否存在权限调用，是否真实存在等。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -277,10 +277,10 @@ class AosClient(Client):
         如果不希望通过执行计划进行部署操作，也可以选择调用DeployStack进行直接部署
         
         关于执行计划的过期失效：
-          1. 若指定资源栈下有多个执行计划，则在执行某个执行计划后（无论结果是否成功），剩余所有的执行计划将过期失效；
-          2. 若调用ApplyExecutionPlan时，指定的执行计划已经过期失效，则返回403
+          1. 如果指定资源栈下有多个执行计划，则在执行某个执行计划后（无论结果是否成功），剩余所有的执行计划将过期失效；
+          2. 如果调用ApplyExecutionPlan时，指定的执行计划已经过期失效，则返回403
         
-        若资源栈状态处于非终态（即以&#x60;IN_PROGRESS&#x60;结尾，详细见下方）状态时，则不允许执行执行计划，并返回403。非终态状态包括但不限于以下状态：
+        如果资源栈状态处于非终态（即以&#x60;IN_PROGRESS&#x60;结尾，详细见下方）状态时，则不允许执行执行计划，并返回403。非终态状态包括但不限于以下状态：
           * 正在部署（DEPLOYMENT_IN_PROGRESS）
           * 正在删除（DELETION_IN_PROGRESS）
           * 正在回滚（ROLLBACK_IN_PROGRESS）
@@ -364,11 +364,11 @@ class AosClient(Client):
         执行计划不会做过多深层的检查和校验，如用户是否有权限生成、修改资源等
         
         **注意：**
-          * 创建执行计划时，指定的资源栈必须存在。若指定的资源栈不存在，则返回404，用户可通过调用创建资源栈（CreateStack）API来创建资源栈。
-          * 若请求中不含有template_body和template_uri，则返回400
-          * 若资源栈进行了某次部署操作，则在该次部署操作前生成的执行计划将全部失效
-          * 执行计划只代表生成时刻的结果，若执行计划生成后，用户手动修改资源状态，则执行计划不会自动更新
-          * 若资源栈状态处于&#x60;DEPLOYMENT_IN_PROGRESS&#x60;、&#x60;ROLLBACK_IN_PROGRESS&#x60;、&#x60;DELETION_IN_PROGRESS&#x60;等状态时，则不允许创建执行计划，并返回403
+          * 创建执行计划时，指定的资源栈必须存在。如果指定的资源栈不存在，则返回404，用户可通过调用创建资源栈（CreateStack）API来创建资源栈。
+          * 如果请求中不含有template_body和template_uri，则返回400
+          * 如果资源栈进行了某次部署操作，则在该次部署操作前生成的执行计划将全部失效
+          * 执行计划只代表生成时刻的结果，如果执行计划生成后，用户手动修改资源状态，则执行计划不会自动更新
+          * 如果资源栈状态处于&#x60;DEPLOYMENT_IN_PROGRESS&#x60;、&#x60;ROLLBACK_IN_PROGRESS&#x60;、&#x60;DELETION_IN_PROGRESS&#x60;等状态时，则不允许创建执行计划，并返回403
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -441,7 +441,7 @@ class AosClient(Client):
         
         删除指定的执行计划
         
-        若执行计划状态处于&#x60;CREATION_IN_PROGRESS&#x60;、&#x60;APPLY_IN_PROGRESS&#x60;状态时，则不允许删除并返回403
+        如果执行计划状态处于&#x60;CREATION_IN_PROGRESS&#x60;、&#x60;APPLY_IN_PROGRESS&#x60;状态时，则不允许删除并返回403
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -519,9 +519,9 @@ class AosClient(Client):
         此API可以基于一份已有的执行计划中增量的资源进行询价，当前支持询价的计费模式有包周期计费、按需计费、免费，暂不支持其他形式的计费模式，例如竞价计费模式等。
         
         注：
-          * 由于某些资源的属性值含有默认值，且该属性和询价参数相关。若用户的模板中描述的资源没有声明这些属性，则询价结果可能存在偏差。
+          * 由于某些资源的属性值含有默认值，且该属性和询价参数相关。如果用户的模板中描述的资源没有声明这些属性，则询价结果可能存在偏差。
           * 询价结果仅为预估结果，具体请以实际为准。
-          * 若用户在模板中使用了depends_on参数，如A资源询价必要字段依赖于B资源的创建，则A资源不支持询价。
+          * 如果用户在模板中使用了depends_on参数，如A资源询价必要字段依赖于B资源的创建，则A资源不支持询价。
           * 暂不支持传入data sources的flavor.id的场景的询价。
           * 暂不支持镜像询价。
           * 如果A资源的询价必要字段设置了sensitive &#x3D; true，则A资源不支持询价。
@@ -643,7 +643,7 @@ class AosClient(Client):
         
         此API用于获取指定执行计划的详细内容（即执行计划项目），用户可通过此API得知指定执行计划在执行后，资源栈中的资源会发生何种变化
         
-        若执行计划状态为&#x60;CREATION_IN_PROGRESS&#x60;或&#x60;CREATION_FAILED&#x60;，则不返回执行计划项目列表
+        如果执行计划状态为&#x60;CREATION_IN_PROGRESS&#x60;或&#x60;CREATION_FAILED&#x60;，则不返回执行计划项目列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1451,7 +1451,7 @@ class AosClient(Client):
           * 删除失败（DELETION_FAILED）
         
         如果获取成功，则以临时重定向形式返回模板下载链接（OBS Pre Signed地址，有效期为5分钟），大多数的客户端会进行自动重定向并下载模板；
-        若未进行自动重定向，请参考HTTP的重定向规则获取模板下载链接，手动下载模板。
+        如果未进行自动重定向，请参考HTTP的重定向规则获取模板下载链接，手动下载模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1524,8 +1524,8 @@ class AosClient(Client):
         
         此API用于列举资源栈某一次或全部的部署事件
         
-        * 若给予deployment_id，则会将deployment_id作为查询条件，返回对应某一次部署的资源栈事件；若不给予deployment_id，则返回全量的资源栈事件
-        * 若给定的deployment_id对应的部署不存在，则返回404
+        * 如果给予deployment_id，则会将deployment_id作为查询条件，返回对应某一次部署的资源栈事件；如果不给予deployment_id，则返回全量的资源栈事件
+        * 如果给定的deployment_id对应的部署不存在，则返回404
         * 可以使用filter作为过滤器，过滤出指定事件类型（event_type）、资源类型（resource_type）、资源名称（resource_name）的资源栈事件
         * 可以使用field选择数据应返回的属性，属性事件类型（event_type）不可配置，一定会返回，可选择的属性有逝去时间（elapsed_seconds）、事件消息（event_message）、 资源ID键（resource_id_key）、资源ID值（resource_id_value）、资源键（resource_key）、资源类型（resource_type）、资源名称（resource_name）和时间戳（timestamp）
         * 事件返回将以时间降序排列
@@ -1838,11 +1838,11 @@ class AosClient(Client):
         
         更新资源栈的属性，该API可以根据用户给予的信息对资源栈的属性进行更新，可以更新资源栈的“description”、“enable_deletion_protection”、\&quot;enable_auto_rollback\&quot;、\&quot;agencies\&quot;四个属性中的一个或多个
         
-        该API只会更新用户给予的信息中所涉及的字段；若某字段未给予，则不会对该资源栈属性进行更新
+        该API只会更新用户给予的信息中所涉及的字段；如果某字段未给予，则不会对该资源栈属性进行更新
         
         注：所有属性的更新都是覆盖式更新。即，所给予的参数将被完全覆盖至资源栈已有的属性上
         
-        例如，若要新增agencies，请通过GetStackMetadata获取该资源栈原有的agencies信息，将新旧agencies信息进行整合后再调用UpdateStack
+        例如，如果要新增agencies，请通过GetStackMetadata获取该资源栈原有的agencies信息，将新旧agencies信息进行整合后再调用UpdateStack
         
         * 如果资源栈状态处于非终态（状态以&#x60;IN_PROGRESS&#x60;结尾）状态时，则不允许更新。包括但不限于以下状态：
           * 正在部署（DEPLOYMENT_IN_PROGRESS）
@@ -1925,7 +1925,7 @@ class AosClient(Client):
         
         此API用于在指定资源栈集下生成多个资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
         
-        此API可以通过var_overrides参数，指定创建资源栈实例的参数值，进行参数覆盖。若var_overrides参数未给予，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。
+        此API可以通过var_overrides参数，指定创建资源栈实例的参数值，进行参数覆盖。如果var_overrides参数未给予，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。
         
         通过DeployStackSet API更新资源栈集参数后，资源栈实例中已经被覆盖的参数不会被更新，仍然保留覆盖值。
         
@@ -2380,8 +2380,8 @@ class AosClient(Client):
         此API用于列举指定资源栈集下指定局点（region）或指定成员账户（stack_domain_id）或全部资源栈实例
         
         * 可以使用filter作为过滤器，过滤出指定局点（region）或指定成员账户（stack_domain_id）下的资源栈实例
-        * 可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。若未给予sort_key和sort_dir，则默认按照创建时间降序排序。
-        * 若指定资源栈集下没有任何资源栈实例，则返回空list
+        * 可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。如果未给予sort_key和sort_dir，则默认按照创建时间降序排序。
+        * 如果指定资源栈集下没有任何资源栈实例，则返回空list
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2463,8 +2463,8 @@ class AosClient(Client):
         列举指定资源栈集下所有的资源栈集的操作。
         
         可以使用filter作为过滤器，过滤出指定操作状态（status）或操作类型（action）下的资源栈集操作。
-        可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。若未给予sort_key和sort_dir，则默认按照创建时间降序排序。
-        若指定资源栈集下没有任何资源栈集操作，则返回空list。
+        可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。如果未给予sort_key和sort_dir，则默认按照创建时间降序排序。
+        如果指定资源栈集下没有任何资源栈集操作，则返回空list。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2546,7 +2546,7 @@ class AosClient(Client):
         此API用于列举当前用户（domain）当前局点（region）下全部资源栈集。
         
         * 可以使用filter作为过滤器，过滤出指定权限模型（permission_model）下的资源栈集。
-        * 可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。若未给予sort_key和sort_dir，则默认按照创建时间降序排序。
+        * 可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。如果未给予sort_key和sort_dir，则默认按照创建时间降序排序。
         * 注意：目前暂时返回全量资源栈集信息，即不支持分页
         * 如果没有任何资源栈集，则返回空list
         
@@ -2845,7 +2845,7 @@ class AosClient(Client):
         此API用于获取指定资源栈集的模板。
         
         如果获取成功，则以临时重定向形式返回模板下载链接（OBS Pre Signed地址，有效期为5分钟），大多数的客户端会进行自动重定向并下载模板；
-        若未进行自动重定向，请参考HTTP的重定向规则获取模板下载链接，手动下载模板。
+        如果未进行自动重定向，请参考HTTP的重定向规则获取模板下载链接，手动下载模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2918,7 +2918,7 @@ class AosClient(Client):
         
         此API用于更新并部署指定资源栈实例集合，并返回资源栈集操作ID（stack_set_operation_id）
         
-        此API可以通过var_overrides参数，更新指定资源栈实例的参数值，进行参数覆盖。若var_overrides参数未给予，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。用户只可以更新已经存在的资源栈实例，如果用户想要增加额外的资源栈实例，请使用CreateStackInstances API。
+        此API可以通过var_overrides参数，更新指定资源栈实例的参数值，进行参数覆盖。如果var_overrides参数未给予，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。用户只可以更新已经存在的资源栈实例，如果用户想要增加额外的资源栈实例，请使用CreateStackInstances API。
         
         通过DeployStackSet API更新资源栈集参数后，资源栈实例中已经被覆盖的参数不会被更新，仍然保留覆盖值。
         
@@ -2999,13 +2999,13 @@ class AosClient(Client):
         
         该API可以根据用户给予的信息对资源栈集的属性进行更新，可以更新资源栈集的“stack_set_description”、\&quot;initial_stack_description\&quot;、\&quot;permission_model\&quot;、“administration_agency_name”、\&quot;managed_agency_name\&quot;、“administration_agency_urn”六个属性中的一个或多个。
         
-        该API只会更新用户给予的信息中所涉及的字段；若某字段未给予，则不会对该资源栈集属性进行更新。
+        该API只会更新用户给予的信息中所涉及的字段；如果某字段未给予，则不会对该资源栈集属性进行更新。
         
         注：
           * 所有属性的更新都是覆盖式更新。即，所给予的参数将被完全覆盖至资源栈已有的属性上。
           * 只有在permission_model&#x3D;SELF_MANAGED时，才可更新administration_agency_name、managed_agency_name和administration_agency_urn。
           * permission_model目前只支持更新SELF_MANAGED
-          * 若资源栈集的状态是OPERATION_IN_PROGRESS，不允许更新资源栈集。
+          * 如果资源栈集的状态是OPERATION_IN_PROGRESS，不允许更新资源栈集。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3078,9 +3078,9 @@ class AosClient(Client):
         
         此API用于解析用户输入的模板中的参数（variable），将解析模板中的所有variable块并返回
         
-        * 若用户传入的模板中定义了variable参数，则返回200和所有variable
-        * 若用户传入的模板中没有定义variable参数，则返回200和空对象
-        * 若用户请求非法或传入的模板非法，则返回400
+        * 如果用户传入的模板中定义了variable参数，则返回200和所有variable
+        * 如果用户传入的模板中没有定义variable参数，则返回200和空对象
+        * 如果用户请求非法或传入的模板非法，则返回400
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3226,7 +3226,7 @@ class AosClient(Client):
         此API用于删除某个模板版本
         
           * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
-          * 若模板下只存在唯一模板版本，此模板版本将无法被删除，如果需要删除此模板版本，请调用DeleteTemplate。模板服务不允许存在没有模板版本的模板
+          * 如果模板下只存在唯一模板版本，此模板版本将无法被删除，如果需要删除此模板版本，请调用DeleteTemplate。模板服务不允许存在没有模板版本的模板
         
         **请谨慎操作**
         
@@ -3307,9 +3307,9 @@ class AosClient(Client):
           * 注意：目前返回全量模板版本信息，即不支持分页
           * 如果没有任何模板版本，则返回空list
           * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
-          * 若模板不存在则返回404
+          * 如果模板不存在则返回404
         
-        ListTemplateVersions返回的信息只包含模板版本摘要信息（具体摘要信息见ListTemplateVersionsResponseBody），若用户需要了解模板版本内容，请调用ShowTemplateVersionContent
+        ListTemplateVersions返回的信息只包含模板版本摘要信息（具体摘要信息见ListTemplateVersionsResponseBody），如果用户需要了解模板版本内容，请调用ShowTemplateVersionContent
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3385,9 +3385,9 @@ class AosClient(Client):
           * 默认按照生成时间降序排序，最新生成的模板排列在最前面
           * 注意：目前返回全量模板信息，即不支持分页
           * 如果没有任何模板，则返回空list
-          * 若用户需要详细的模板版本信息，请调用ListTemplateVersions
+          * 如果用户需要详细的模板版本信息，请调用ListTemplateVersions
         
-        ListTemplates返回的信息只包含模板摘要信息（具体摘要信息见ListTemplatesResponseBody），若用户需要详细的某个模板信息，请调用ShowTemplateMetadata
+        ListTemplates返回的信息只包含模板摘要信息（具体摘要信息见ListTemplatesResponseBody），如果用户需要详细的某个模板信息，请调用ShowTemplateMetadata
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3456,7 +3456,7 @@ class AosClient(Client):
         
         此API用于获取当前模板的元数据信息
         
-        具体信息见ShowTemplateMetadataResponseBody，若想查看模板下全部模板版本，请调用ListTemplateVersions。
+        具体信息见ShowTemplateMetadataResponseBody，如果想查看模板下全部模板版本，请调用ListTemplateVersions。
         
           * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
@@ -3534,7 +3534,7 @@ class AosClient(Client):
           * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
           * 此api会以临时重定向形式返回模板内容的下载链接，用户通过下载获取模板版本内容（OBS Pre Signed地址，有效期为5分钟）
         
-        ShowTemplateVersionContent返回的信息只包含模板版本内容，若想知道模板版本的元数据，请调用ShowTemplateVersionMetadata
+        ShowTemplateVersionContent返回的信息只包含模板版本内容，如果想知道模板版本的元数据，请调用ShowTemplateVersionMetadata
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3611,7 +3611,7 @@ class AosClient(Client):
         
           * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
-        ShowTemplateVersionMetadata返回的信息只包含模板版本元数据信息（具体摘要信息见ShowTemplateVersionMetadataResponseBody），若用户需要了解模板版本内容，请调用ShowTemplateVersionContent
+        ShowTemplateVersionMetadata返回的信息只包含模板版本元数据信息（具体摘要信息见ShowTemplateVersionMetadataResponseBody），如果用户需要了解模板版本内容，请调用ShowTemplateVersionContent
         
         Please refer to HUAWEI cloud API Explorer for details.
 

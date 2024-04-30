@@ -10,10 +10,13 @@ class CcmRegion:
                         "https://ccm.cn-north-4.myhuaweicloud.com")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://ccm.ap-southeast-3.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://ccm.eu-west-101.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod

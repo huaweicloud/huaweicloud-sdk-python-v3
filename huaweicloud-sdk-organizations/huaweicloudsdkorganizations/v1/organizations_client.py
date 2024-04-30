@@ -32,6 +32,136 @@ class OrganizationsClient(Client):
 
         return client_builder
 
+    def close_account(self, request):
+        """关闭账号
+
+        关闭账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CloseAccount
+        :type request: :class:`huaweicloudsdkorganizations.v1.CloseAccountRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.CloseAccountResponse`
+        """
+        http_info = self._close_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def close_account_invoker(self, request):
+        http_info = self._close_account_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _close_account_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/accounts/{account_id}/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "CloseAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'account_id' in local_var_params:
+            path_params['account_id'] = local_var_params['account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_account(self, request):
+        """创建账号
+
+        创建一个账号，生成的账号将自动成为调用此接口的账号所属组织的成员。此操作只能由组织的管理账号调用。组织云服务将在新账号中创建所需的服务关联委托和账号访问委托。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAccount
+        :type request: :class:`huaweicloudsdkorganizations.v1.CreateAccountRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.CreateAccountResponse`
+        """
+        http_info = self._create_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_account_invoker(self, request):
+        http_info = self._create_account_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_account_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/accounts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def invite_account(self, request):
         """邀请账号加入组织
 

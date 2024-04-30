@@ -21,7 +21,7 @@ class CssIndex:
         'index_guid': 'str',
         'index_qualified_name': 'str',
         'index_doc_count': 'int',
-        'index_data_size': 'int'
+        'index_data_size': 'float'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class CssIndex:
         :param index_doc_count: 索引中文档总数
         :type index_doc_count: int
         :param index_data_size: 索引数据量大小
-        :type index_data_size: int
+        :type index_data_size: float
         """
         
         
@@ -164,7 +164,7 @@ class CssIndex:
         索引数据量大小
 
         :return: The index_data_size of this CssIndex.
-        :rtype: int
+        :rtype: float
         """
         return self._index_data_size
 
@@ -175,7 +175,7 @@ class CssIndex:
         索引数据量大小
 
         :param index_data_size: The index_data_size of this CssIndex.
-        :type index_data_size: int
+        :type index_data_size: float
         """
         self._index_data_size = index_data_size
 

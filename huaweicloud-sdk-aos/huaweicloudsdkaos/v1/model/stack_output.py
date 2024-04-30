@@ -45,7 +45,7 @@ class StackOutput:
         :type type: str
         :param value: 资源栈输出的值
         :type value: str
-        :param sensitive: 标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回&#x60;&lt;sensitive&gt;&#x60;
+        :param sensitive: 标识该资源栈输出是否为敏感信息，由用户在模板中定义  如果用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回&#x60;&lt;sensitive&gt;&#x60;
         :type sensitive: bool
         """
         
@@ -161,7 +161,7 @@ class StackOutput:
     def sensitive(self):
         """Gets the sensitive of this StackOutput.
 
-        标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>`
+        标识该资源栈输出是否为敏感信息，由用户在模板中定义  如果用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>`
 
         :return: The sensitive of this StackOutput.
         :rtype: bool
@@ -172,7 +172,7 @@ class StackOutput:
     def sensitive(self, sensitive):
         """Sets the sensitive of this StackOutput.
 
-        标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>`
+        标识该资源栈输出是否为敏感信息，由用户在模板中定义  如果用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>`
 
         :param sensitive: The sensitive of this StackOutput.
         :type sensitive: bool

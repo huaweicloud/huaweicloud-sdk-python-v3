@@ -32,7 +32,7 @@ class EstimateExecutionPlanPriceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param currency: 币种，枚举值   * &#x60;CNY&#x60; - 元，中国站返回的币种   * &#x60;USD&#x60; - 美元，国际站返回的币种
+        :param currency: 币种，枚举值   * [&#x60;CNY&#x60; - 元，中国站返回的币种](tag:hws)[&#x60;USD&#x60; - 美元，国际站返回的币种](tag:hws_hk)[&#x60;USD&#x60; - 美元，欧洲站返回的币种](tag:hws_eu)
         :type currency: str
         :param items: 执行计划中所有资源的询价结果
         :type items: list[:class:`huaweicloudsdkaos.v1.ItemsResponse`]
@@ -53,7 +53,7 @@ class EstimateExecutionPlanPriceResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this EstimateExecutionPlanPriceResponse.
 
-        币种，枚举值   * `CNY` - 元，中国站返回的币种   * `USD` - 美元，国际站返回的币种
+        币种，枚举值   * [`CNY` - 元，中国站返回的币种](tag:hws)[`USD` - 美元，国际站返回的币种](tag:hws_hk)[`USD` - 美元，欧洲站返回的币种](tag:hws_eu)
 
         :return: The currency of this EstimateExecutionPlanPriceResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class EstimateExecutionPlanPriceResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this EstimateExecutionPlanPriceResponse.
 
-        币种，枚举值   * `CNY` - 元，中国站返回的币种   * `USD` - 美元，国际站返回的币种
+        币种，枚举值   * [`CNY` - 元，中国站返回的币种](tag:hws)[`USD` - 美元，国际站返回的币种](tag:hws_hk)[`USD` - 美元，欧洲站返回的币种](tag:hws_eu)
 
         :param currency: The currency of this EstimateExecutionPlanPriceResponse.
         :type currency: str

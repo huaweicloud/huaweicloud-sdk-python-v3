@@ -29,7 +29,7 @@ class RetainAllResourcesTypeHolder:
 
         The model defined in huaweicloud sdk
 
-        :param retain_all_resources: 删除资源栈是否保留资源的标志位，如果不传默认为false，即默认不保留资源（删除资源栈后会删除资源栈中的资源）  * DeleteStackEnhanced API中，若该参数未在RequestBody中给予，则删除时不会保留资源栈中的资源*
+        :param retain_all_resources: 删除资源栈是否保留资源的标志位，如果不传默认为false，即默认不保留资源（删除资源栈后会删除资源栈中的资源）  * DeleteStackEnhanced API中，如果该参数未在RequestBody中给予，则删除时不会保留资源栈中的资源*
         :type retain_all_resources: bool
         """
         
@@ -45,7 +45,7 @@ class RetainAllResourcesTypeHolder:
     def retain_all_resources(self):
         """Gets the retain_all_resources of this RetainAllResourcesTypeHolder.
 
-        删除资源栈是否保留资源的标志位，如果不传默认为false，即默认不保留资源（删除资源栈后会删除资源栈中的资源）  * DeleteStackEnhanced API中，若该参数未在RequestBody中给予，则删除时不会保留资源栈中的资源*
+        删除资源栈是否保留资源的标志位，如果不传默认为false，即默认不保留资源（删除资源栈后会删除资源栈中的资源）  * DeleteStackEnhanced API中，如果该参数未在RequestBody中给予，则删除时不会保留资源栈中的资源*
 
         :return: The retain_all_resources of this RetainAllResourcesTypeHolder.
         :rtype: bool
@@ -56,7 +56,7 @@ class RetainAllResourcesTypeHolder:
     def retain_all_resources(self, retain_all_resources):
         """Sets the retain_all_resources of this RetainAllResourcesTypeHolder.
 
-        删除资源栈是否保留资源的标志位，如果不传默认为false，即默认不保留资源（删除资源栈后会删除资源栈中的资源）  * DeleteStackEnhanced API中，若该参数未在RequestBody中给予，则删除时不会保留资源栈中的资源*
+        删除资源栈是否保留资源的标志位，如果不传默认为false，即默认不保留资源（删除资源栈后会删除资源栈中的资源）  * DeleteStackEnhanced API中，如果该参数未在RequestBody中给予，则删除时不会保留资源栈中的资源*
 
         :param retain_all_resources: The retain_all_resources of this RetainAllResourcesTypeHolder.
         :type retain_all_resources: bool

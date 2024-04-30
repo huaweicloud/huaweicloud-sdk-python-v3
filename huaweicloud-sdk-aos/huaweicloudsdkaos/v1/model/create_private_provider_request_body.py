@@ -45,7 +45,7 @@ class CreatePrivateProviderRequestBody:
         :type provider_version: str
         :param version_description: 私有provider版本（provider version）的描述。可用于客户识别并管理私有provider的版本。注意：provider版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建
         :type version_description: str
-        :param function_graph_urn: FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给与了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
+        :param function_graph_urn: FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给予了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
         :type function_graph_urn: str
         """
         
@@ -160,7 +160,7 @@ class CreatePrivateProviderRequestBody:
     def function_graph_urn(self):
         """Gets the function_graph_urn of this CreatePrivateProviderRequestBody.
 
-        FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给与了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
+        FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给予了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
 
         :return: The function_graph_urn of this CreatePrivateProviderRequestBody.
         :rtype: str
@@ -171,7 +171,7 @@ class CreatePrivateProviderRequestBody:
     def function_graph_urn(self, function_graph_urn):
         """Sets the function_graph_urn of this CreatePrivateProviderRequestBody.
 
-        FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给与了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
+        FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给予了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
 
         :param function_graph_urn: The function_graph_urn of this CreatePrivateProviderRequestBody.
         :type function_graph_urn: str

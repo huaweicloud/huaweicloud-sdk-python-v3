@@ -21,7 +21,7 @@ class Database:
         'database_guid': 'str',
         'database_qualified_name': 'str',
         'table_count': 'int',
-        'data_size': 'int'
+        'data_size': 'float'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class Database:
         :param table_count: 数据库中表数目
         :type table_count: int
         :param data_size: 数据量大小
-        :type data_size: int
+        :type data_size: float
         """
         
         
@@ -164,7 +164,7 @@ class Database:
         数据量大小
 
         :return: The data_size of this Database.
-        :rtype: int
+        :rtype: float
         """
         return self._data_size
 
@@ -175,7 +175,7 @@ class Database:
         数据量大小
 
         :param data_size: The data_size of this Database.
-        :type data_size: int
+        :type data_size: float
         """
         self._data_size = data_size
 

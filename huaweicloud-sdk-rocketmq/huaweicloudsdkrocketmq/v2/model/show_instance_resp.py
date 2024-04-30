@@ -36,6 +36,7 @@ class ShowInstanceResp:
         'subnet_name': 'str',
         'subnet_cidr': 'str',
         'available_zones': 'list[str]',
+        'available_zone_names': 'list[str]',
         'user_id': 'str',
         'user_name': 'str',
         'maintain_begin': 'str',
@@ -67,6 +68,7 @@ class ShowInstanceResp:
         'public_broker_address': 'str',
         'grpc_address': 'str',
         'public_grpc_address': 'str',
+        'enterprise_project_id': 'str',
         'tags': 'list[TagEntity]',
         'total_storage_space': 'int',
         'resource_spec_code': 'str'
@@ -92,6 +94,7 @@ class ShowInstanceResp:
         'subnet_name': 'subnet_name',
         'subnet_cidr': 'subnet_cidr',
         'available_zones': 'available_zones',
+        'available_zone_names': 'available_zone_names',
         'user_id': 'user_id',
         'user_name': 'user_name',
         'maintain_begin': 'maintain_begin',
@@ -123,12 +126,13 @@ class ShowInstanceResp:
         'public_broker_address': 'public_broker_address',
         'grpc_address': 'grpc_address',
         'public_grpc_address': 'public_grpc_address',
+        'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
         'total_storage_space': 'total_storage_space',
         'resource_spec_code': 'resource_spec_code'
     }
 
-    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, namesrv_address=None, broker_address=None, public_namesrv_address=None, public_broker_address=None, grpc_address=None, public_grpc_address=None, tags=None, total_storage_space=None, resource_spec_code=None):
+    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, available_zone_names=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, namesrv_address=None, broker_address=None, public_namesrv_address=None, public_broker_address=None, grpc_address=None, public_grpc_address=None, enterprise_project_id=None, tags=None, total_storage_space=None, resource_spec_code=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -149,7 +153,7 @@ class ShowInstanceResp:
         :type engine_version: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param charging_mode: [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
+        :param charging_mode: [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
         :type charging_mode: int
         :param vpc_id: 私有云ID。
         :type vpc_id: str
@@ -169,8 +173,10 @@ class ShowInstanceResp:
         :type subnet_name: str
         :param subnet_cidr: 子网路由（仅RocketMQ 5.x版本会显示此字段）。
         :type subnet_cidr: str
-        :param available_zones: IO未售罄的可用区列表。
+        :param available_zones: 可用区ID列表。
         :type available_zones: list[str]
+        :param available_zone_names: 可用区名称列表。
+        :type available_zone_names: list[str]
         :param user_id: 用户ID。
         :type user_id: str
         :param user_name: 用户名。
@@ -233,6 +239,8 @@ class ShowInstanceResp:
         :type grpc_address: str
         :param public_grpc_address: 公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
         :type public_grpc_address: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
         :param total_storage_space: 总存储空间。
@@ -262,6 +270,7 @@ class ShowInstanceResp:
         self._subnet_name = None
         self._subnet_cidr = None
         self._available_zones = None
+        self._available_zone_names = None
         self._user_id = None
         self._user_name = None
         self._maintain_begin = None
@@ -293,6 +302,7 @@ class ShowInstanceResp:
         self._public_broker_address = None
         self._grpc_address = None
         self._public_grpc_address = None
+        self._enterprise_project_id = None
         self._tags = None
         self._total_storage_space = None
         self._resource_spec_code = None
@@ -336,6 +346,8 @@ class ShowInstanceResp:
             self.subnet_cidr = subnet_cidr
         if available_zones is not None:
             self.available_zones = available_zones
+        if available_zone_names is not None:
+            self.available_zone_names = available_zone_names
         if user_id is not None:
             self.user_id = user_id
         if user_name is not None:
@@ -398,6 +410,8 @@ class ShowInstanceResp:
             self.grpc_address = grpc_address
         if public_grpc_address is not None:
             self.public_grpc_address = public_grpc_address
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
         if total_storage_space is not None:
@@ -585,7 +599,7 @@ class ShowInstanceResp:
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
+        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
 
         :return: The charging_mode of this ShowInstanceResp.
         :rtype: int
@@ -596,7 +610,7 @@ class ShowInstanceResp:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
+        [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs)
 
         :param charging_mode: The charging_mode of this ShowInstanceResp.
         :type charging_mode: int
@@ -805,7 +819,7 @@ class ShowInstanceResp:
     def available_zones(self):
         """Gets the available_zones of this ShowInstanceResp.
 
-        IO未售罄的可用区列表。
+        可用区ID列表。
 
         :return: The available_zones of this ShowInstanceResp.
         :rtype: list[str]
@@ -816,12 +830,34 @@ class ShowInstanceResp:
     def available_zones(self, available_zones):
         """Sets the available_zones of this ShowInstanceResp.
 
-        IO未售罄的可用区列表。
+        可用区ID列表。
 
         :param available_zones: The available_zones of this ShowInstanceResp.
         :type available_zones: list[str]
         """
         self._available_zones = available_zones
+
+    @property
+    def available_zone_names(self):
+        """Gets the available_zone_names of this ShowInstanceResp.
+
+        可用区名称列表。
+
+        :return: The available_zone_names of this ShowInstanceResp.
+        :rtype: list[str]
+        """
+        return self._available_zone_names
+
+    @available_zone_names.setter
+    def available_zone_names(self, available_zone_names):
+        """Sets the available_zone_names of this ShowInstanceResp.
+
+        可用区名称列表。
+
+        :param available_zone_names: The available_zone_names of this ShowInstanceResp.
+        :type available_zone_names: list[str]
+        """
+        self._available_zone_names = available_zone_names
 
     @property
     def user_id(self):
@@ -1504,6 +1540,28 @@ class ShowInstanceResp:
         :type public_grpc_address: str
         """
         self._public_grpc_address = public_grpc_address
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowInstanceResp.
+
+        企业项目ID。
+
+        :return: The enterprise_project_id of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowInstanceResp.
+
+        企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowInstanceResp.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def tags(self):

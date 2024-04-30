@@ -31,9 +31,9 @@ class KmsStructure:
 
         The model defined in huaweicloud sdk
 
-        :param id: 解密时，资源编排服务应该使用的KMS秘钥的ID，通常是加密时所使用的秘钥ID
+        :param id: 解密时，资源编排服务应该使用的KMS密钥的ID，通常是加密时所使用的密钥ID
         :type id: str
-        :param cipher_text: 数据加密秘钥所对应的密文
+        :param cipher_text: 数据加密密钥所对应的密文
         :type cipher_text: str
         """
         
@@ -50,7 +50,7 @@ class KmsStructure:
     def id(self):
         """Gets the id of this KmsStructure.
 
-        解密时，资源编排服务应该使用的KMS秘钥的ID，通常是加密时所使用的秘钥ID
+        解密时，资源编排服务应该使用的KMS密钥的ID，通常是加密时所使用的密钥ID
 
         :return: The id of this KmsStructure.
         :rtype: str
@@ -61,7 +61,7 @@ class KmsStructure:
     def id(self, id):
         """Sets the id of this KmsStructure.
 
-        解密时，资源编排服务应该使用的KMS秘钥的ID，通常是加密时所使用的秘钥ID
+        解密时，资源编排服务应该使用的KMS密钥的ID，通常是加密时所使用的密钥ID
 
         :param id: The id of this KmsStructure.
         :type id: str
@@ -72,7 +72,7 @@ class KmsStructure:
     def cipher_text(self):
         """Gets the cipher_text of this KmsStructure.
 
-        数据加密秘钥所对应的密文
+        数据加密密钥所对应的密文
 
         :return: The cipher_text of this KmsStructure.
         :rtype: str
@@ -83,7 +83,7 @@ class KmsStructure:
     def cipher_text(self, cipher_text):
         """Sets the cipher_text of this KmsStructure.
 
-        数据加密秘钥所对应的密文
+        数据加密密钥所对应的密文
 
         :param cipher_text: The cipher_text of this KmsStructure.
         :type cipher_text: str
