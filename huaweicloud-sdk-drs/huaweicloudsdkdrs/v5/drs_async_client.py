@@ -3415,6 +3415,75 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def show_health_compare_job_detail_async(self, request):
+        """查询健康对比任务详情
+
+        查询健康对比任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHealthCompareJobDetail
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowHealthCompareJobDetailRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowHealthCompareJobDetailResponse`
+        """
+        http_info = self._show_health_compare_job_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_health_compare_job_detail_async_invoker(self, request):
+        http_info = self._show_health_compare_job_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_health_compare_job_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/health-compare-jobs/{compare_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHealthCompareJobDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'compare_job_id' in local_var_params:
+            path_params['compare_job_id'] = local_var_params['compare_job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_health_compare_job_list_async(self, request):
         """查询健康对比列表
 
@@ -3459,6 +3528,75 @@ class DrsAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_health_object_compare_job_overview_async(self, request):
+        """获取健康对比对象级对比概览
+
+        获取健康对比对象级对比概览。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHealthObjectCompareJobOverview
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowHealthObjectCompareJobOverviewRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowHealthObjectCompareJobOverviewResponse`
+        """
+        http_info = self._show_health_object_compare_job_overview_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_health_object_compare_job_overview_async_invoker(self, request):
+        http_info = self._show_health_object_compare_job_overview_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_health_object_compare_job_overview_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/health-compare-jobs/object/{compare_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHealthObjectCompareJobOverviewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'compare_job_id' in local_var_params:
+            path_params['compare_job_id'] = local_var_params['compare_job_id']
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -4457,6 +4595,75 @@ class DrsAsyncClient(Client):
         path_params = {}
         if 'async_job_id' in local_var_params:
             path_params['async_job_id'] = local_var_params['async_job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_compare_policy_async(self, request):
+        """修改对比策略
+
+        修改周期性对比的对比策略，目前仅MySQL-&gt;MySQL、MySQL-&gt;GaussDB(for MySQL)、MySQL-&gt;GaussDB(DWS)、GaussDB(for MySQL)-&gt;MySQL同步任务，MySQL-&gt;MySQL、MySQL-&gt;GaussDB(for MySQL)迁移任务，MySQL-&gt;MySQL、MySQL-&gt;GaussDB(for MySQL)、GaussDB(for MySQL)-&gt;GaussDB(for MySQL)、DDM-&gt;DDM、DDS-DDS灾备任务支持对比策略设置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateComparePolicy
+        :type request: :class:`huaweicloudsdkdrs.v5.UpdateComparePolicyRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.UpdateComparePolicyResponse`
+        """
+        http_info = self._update_compare_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_compare_policy_async_invoker(self, request):
+        http_info = self._update_compare_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_compare_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/compare-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateComparePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
 
         query_params = []
 

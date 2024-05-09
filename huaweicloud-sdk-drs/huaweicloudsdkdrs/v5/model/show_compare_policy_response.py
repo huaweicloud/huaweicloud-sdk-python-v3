@@ -52,7 +52,7 @@ class ShowComparePolicyResponse(SdkResponse):
         :type begin_time: str
         :param end_time: 对比结束时间。
         :type end_time: str
-        :param compare_type: 对比类型。 - object：对象对比 - lines：行对比 - contents：内容对比 - account：用户对比
+        :param compare_type: 对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
         :type compare_type: list[str]
         :param next_compare_time: 下次对比时间，UTC时间，例如：2023-06-12T08:00:00Z
         :type next_compare_time: str
@@ -183,7 +183,7 @@ class ShowComparePolicyResponse(SdkResponse):
     def compare_type(self):
         """Gets the compare_type of this ShowComparePolicyResponse.
 
-        对比类型。 - object：对象对比 - lines：行对比 - contents：内容对比 - account：用户对比
+        对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
         :return: The compare_type of this ShowComparePolicyResponse.
         :rtype: list[str]
@@ -194,7 +194,7 @@ class ShowComparePolicyResponse(SdkResponse):
     def compare_type(self, compare_type):
         """Sets the compare_type of this ShowComparePolicyResponse.
 
-        对比类型。 - object：对象对比 - lines：行对比 - contents：内容对比 - account：用户对比
+        对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
         :param compare_type: The compare_type of this ShowComparePolicyResponse.
         :type compare_type: list[str]

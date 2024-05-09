@@ -39,7 +39,7 @@ class ListDataLevelTableCompareJobsRequest:
         :type x_language: str
         :param job_id: 任务ID。
         :type job_id: str
-        :param limit: 每页显示的条目数量。
+        :param limit: 每页显示的条目数量，最大值1000。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
@@ -109,7 +109,7 @@ class ListDataLevelTableCompareJobsRequest:
     def limit(self):
         """Gets the limit of this ListDataLevelTableCompareJobsRequest.
 
-        每页显示的条目数量。
+        每页显示的条目数量，最大值1000。
 
         :return: The limit of this ListDataLevelTableCompareJobsRequest.
         :rtype: int
@@ -120,7 +120,7 @@ class ListDataLevelTableCompareJobsRequest:
     def limit(self, limit):
         """Sets the limit of this ListDataLevelTableCompareJobsRequest.
 
-        每页显示的条目数量。
+        每页显示的条目数量，最大值1000。
 
         :param limit: The limit of this ListDataLevelTableCompareJobsRequest.
         :type limit: int

@@ -31,6 +31,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         'handler': 'str',
         'memory_size': 'int',
         'gpu_memory': 'int',
+        'gpu_type': 'str',
         'cpu': 'int',
         'code_type': 'str',
         'code_url': 'str',
@@ -71,7 +72,6 @@ class ShowFunctionConfigResponse(SdkResponse):
         'apig_route_enable': 'bool',
         'heartbeat_handler': 'str',
         'enable_class_isolation': 'bool',
-        'gpu_type': 'str',
         'allow_ephemeral_storage': 'bool',
         'network_controller': 'NetworkControlConfig',
         'is_return_stream': 'bool'
@@ -91,6 +91,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         'handler': 'handler',
         'memory_size': 'memory_size',
         'gpu_memory': 'gpu_memory',
+        'gpu_type': 'gpu_type',
         'cpu': 'cpu',
         'code_type': 'code_type',
         'code_url': 'code_url',
@@ -131,13 +132,12 @@ class ShowFunctionConfigResponse(SdkResponse):
         'apig_route_enable': 'apig_route_enable',
         'heartbeat_handler': 'heartbeat_handler',
         'enable_class_isolation': 'enable_class_isolation',
-        'gpu_type': 'gpu_type',
         'allow_ephemeral_storage': 'allow_ephemeral_storage',
         'network_controller': 'network_controller',
         'is_return_stream': 'is_return_stream'
     }
 
-    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, is_bridge_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None, allow_ephemeral_storage=None, network_controller=None, is_return_stream=None):
+    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, is_bridge_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None, apig_route_enable=None, heartbeat_handler=None, enable_class_isolation=None, allow_ephemeral_storage=None, network_controller=None, is_return_stream=None):
         """ShowFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -168,6 +168,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type memory_size: int
         :param gpu_memory: 函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
         :type gpu_memory: int
+        :param gpu_type: 显卡类型。
+        :type gpu_type: str
         :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
         :type cpu: int
         :param code_type: 函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
@@ -248,8 +250,6 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type heartbeat_handler: str
         :param enable_class_isolation: 类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
         :type enable_class_isolation: bool
-        :param gpu_type: 显卡类型。
-        :type gpu_type: str
         :param allow_ephemeral_storage: 是否支持配置临时存储。
         :type allow_ephemeral_storage: bool
         :param network_controller: 
@@ -273,6 +273,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._handler = None
         self._memory_size = None
         self._gpu_memory = None
+        self._gpu_type = None
         self._cpu = None
         self._code_type = None
         self._code_url = None
@@ -313,7 +314,6 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._apig_route_enable = None
         self._heartbeat_handler = None
         self._enable_class_isolation = None
-        self._gpu_type = None
         self._allow_ephemeral_storage = None
         self._network_controller = None
         self._is_return_stream = None
@@ -345,6 +345,8 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.memory_size = memory_size
         if gpu_memory is not None:
             self.gpu_memory = gpu_memory
+        if gpu_type is not None:
+            self.gpu_type = gpu_type
         if cpu is not None:
             self.cpu = cpu
         if code_type is not None:
@@ -425,8 +427,6 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.heartbeat_handler = heartbeat_handler
         if enable_class_isolation is not None:
             self.enable_class_isolation = enable_class_isolation
-        if gpu_type is not None:
-            self.gpu_type = gpu_type
         if allow_ephemeral_storage is not None:
             self.allow_ephemeral_storage = allow_ephemeral_storage
         if network_controller is not None:
@@ -719,6 +719,28 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type gpu_memory: int
         """
         self._gpu_memory = gpu_memory
+
+    @property
+    def gpu_type(self):
+        """Gets the gpu_type of this ShowFunctionConfigResponse.
+
+        显卡类型。
+
+        :return: The gpu_type of this ShowFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._gpu_type
+
+    @gpu_type.setter
+    def gpu_type(self, gpu_type):
+        """Sets the gpu_type of this ShowFunctionConfigResponse.
+
+        显卡类型。
+
+        :param gpu_type: The gpu_type of this ShowFunctionConfigResponse.
+        :type gpu_type: str
+        """
+        self._gpu_type = gpu_type
 
     @property
     def cpu(self):
@@ -1583,28 +1605,6 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type enable_class_isolation: bool
         """
         self._enable_class_isolation = enable_class_isolation
-
-    @property
-    def gpu_type(self):
-        """Gets the gpu_type of this ShowFunctionConfigResponse.
-
-        显卡类型。
-
-        :return: The gpu_type of this ShowFunctionConfigResponse.
-        :rtype: str
-        """
-        return self._gpu_type
-
-    @gpu_type.setter
-    def gpu_type(self, gpu_type):
-        """Sets the gpu_type of this ShowFunctionConfigResponse.
-
-        显卡类型。
-
-        :param gpu_type: The gpu_type of this ShowFunctionConfigResponse.
-        :type gpu_type: str
-        """
-        self._gpu_type = gpu_type
 
     @property
     def allow_ephemeral_storage(self):

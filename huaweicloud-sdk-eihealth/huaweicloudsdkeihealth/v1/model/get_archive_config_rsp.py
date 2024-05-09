@@ -18,17 +18,15 @@ class GetArchiveConfigRsp:
 
     openapi_types = {
         'region_id': 'str',
-        'current_region': 'bool',
-        'bucket_name': 'str'
+        'current_region': 'bool'
     }
 
     attribute_map = {
         'region_id': 'region_id',
-        'current_region': 'current_region',
-        'bucket_name': 'bucket_name'
+        'current_region': 'current_region'
     }
 
-    def __init__(self, region_id=None, current_region=None, bucket_name=None):
+    def __init__(self, region_id=None, current_region=None):
         """GetArchiveConfigRsp
 
         The model defined in huaweicloud sdk
@@ -37,23 +35,18 @@ class GetArchiveConfigRsp:
         :type region_id: str
         :param current_region: 该区域是否是当前设置的归档区域
         :type current_region: bool
-        :param bucket_name: 归档桶名称
-        :type bucket_name: str
         """
         
         
 
         self._region_id = None
         self._current_region = None
-        self._bucket_name = None
         self.discriminator = None
 
         if region_id is not None:
             self.region_id = region_id
         if current_region is not None:
             self.current_region = current_region
-        if bucket_name is not None:
-            self.bucket_name = bucket_name
 
     @property
     def region_id(self):
@@ -98,28 +91,6 @@ class GetArchiveConfigRsp:
         :type current_region: bool
         """
         self._current_region = current_region
-
-    @property
-    def bucket_name(self):
-        """Gets the bucket_name of this GetArchiveConfigRsp.
-
-        归档桶名称
-
-        :return: The bucket_name of this GetArchiveConfigRsp.
-        :rtype: str
-        """
-        return self._bucket_name
-
-    @bucket_name.setter
-    def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this GetArchiveConfigRsp.
-
-        归档桶名称
-
-        :param bucket_name: The bucket_name of this GetArchiveConfigRsp.
-        :type bucket_name: str
-        """
-        self._bucket_name = bucket_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

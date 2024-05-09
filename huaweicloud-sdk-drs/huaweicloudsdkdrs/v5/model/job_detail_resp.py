@@ -46,7 +46,8 @@ class JobDetailResp:
         'connection_management': 'ConnectionManagement',
         'public_ip_list': 'list[PublicIpConfig]',
         'bind_public_ip_state': 'str',
-        'children': 'list[FailedToBindEipChildInfo]'
+        'children': 'list[FailedToBindEipChildInfo]',
+        'is_writable': 'str'
     }
 
     attribute_map = {
@@ -79,10 +80,11 @@ class JobDetailResp:
         'connection_management': 'connection_management',
         'public_ip_list': 'public_ip_list',
         'bind_public_ip_state': 'bind_public_ip_state',
-        'children': 'children'
+        'children': 'children',
+        'is_writable': 'is_writable'
     }
 
-    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None):
+    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_writable=None):
         """JobDetailResp
 
         The model defined in huaweicloud sdk
@@ -147,6 +149,8 @@ class JobDetailResp:
         :type bind_public_ip_state: str
         :param children: 多任务时，存在子任务绑定失败时，返回子任务的信息
         :type children: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
+        :param is_writable: 解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
+        :type is_writable: str
         """
         
         
@@ -181,6 +185,7 @@ class JobDetailResp:
         self._public_ip_list = None
         self._bind_public_ip_state = None
         self._children = None
+        self._is_writable = None
         self.discriminator = None
 
         if id is not None:
@@ -243,6 +248,8 @@ class JobDetailResp:
             self.bind_public_ip_state = bind_public_ip_state
         if children is not None:
             self.children = children
+        if is_writable is not None:
+            self.is_writable = is_writable
 
     @property
     def id(self):
@@ -843,6 +850,28 @@ class JobDetailResp:
         :type children: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
         """
         self._children = children
+
+    @property
+    def is_writable(self):
+        """Gets the is_writable of this JobDetailResp.
+
+        解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
+
+        :return: The is_writable of this JobDetailResp.
+        :rtype: str
+        """
+        return self._is_writable
+
+    @is_writable.setter
+    def is_writable(self, is_writable):
+        """Sets the is_writable of this JobDetailResp.
+
+        解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
+
+        :param is_writable: The is_writable of this JobDetailResp.
+        :type is_writable: str
+        """
+        self._is_writable = is_writable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

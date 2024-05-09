@@ -23,6 +23,7 @@ class UpdateFunctionConfigRequestBody:
         'handler': 'str',
         'memory_size': 'int',
         'gpu_memory': 'int',
+        'gpu_type': 'str',
         'user_data': 'str',
         'encrypted_user_data': 'str',
         'xrole': 'str',
@@ -48,8 +49,7 @@ class UpdateFunctionConfigRequestBody:
         'restore_hook_handler': 'str',
         'restore_hook_timeout': 'int',
         'heartbeat_handler': 'str',
-        'enable_class_isolation': 'bool',
-        'gpu_type': 'str'
+        'enable_class_isolation': 'bool'
     }
 
     attribute_map = {
@@ -59,6 +59,7 @@ class UpdateFunctionConfigRequestBody:
         'handler': 'handler',
         'memory_size': 'memory_size',
         'gpu_memory': 'gpu_memory',
+        'gpu_type': 'gpu_type',
         'user_data': 'user_data',
         'encrypted_user_data': 'encrypted_user_data',
         'xrole': 'xrole',
@@ -84,11 +85,10 @@ class UpdateFunctionConfigRequestBody:
         'restore_hook_handler': 'restore_hook_handler',
         'restore_hook_timeout': 'restore_hook_timeout',
         'heartbeat_handler': 'heartbeat_handler',
-        'enable_class_isolation': 'enable_class_isolation',
-        'gpu_type': 'gpu_type'
+        'enable_class_isolation': 'enable_class_isolation'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None, heartbeat_handler=None, enable_class_isolation=None, gpu_type=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None, heartbeat_handler=None, enable_class_isolation=None):
         """UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -105,6 +105,8 @@ class UpdateFunctionConfigRequestBody:
         :type memory_size: int
         :param gpu_memory: 函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
         :type gpu_memory: int
+        :param gpu_type: 显卡类型。
+        :type gpu_type: str
         :param user_data: 用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host&#x3D;{host_ip}，最多定义20个，总长度不超过4KB。
         :type user_data: str
         :param encrypted_user_data: 用户自定义的name/value信息，用于需要加密的配置。
@@ -157,8 +159,6 @@ class UpdateFunctionConfigRequestBody:
         :type heartbeat_handler: str
         :param enable_class_isolation: 类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
         :type enable_class_isolation: bool
-        :param gpu_type: 显卡类型。
-        :type gpu_type: str
         """
         
         
@@ -169,6 +169,7 @@ class UpdateFunctionConfigRequestBody:
         self._handler = None
         self._memory_size = None
         self._gpu_memory = None
+        self._gpu_type = None
         self._user_data = None
         self._encrypted_user_data = None
         self._xrole = None
@@ -195,7 +196,6 @@ class UpdateFunctionConfigRequestBody:
         self._restore_hook_timeout = None
         self._heartbeat_handler = None
         self._enable_class_isolation = None
-        self._gpu_type = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -205,6 +205,8 @@ class UpdateFunctionConfigRequestBody:
         self.memory_size = memory_size
         if gpu_memory is not None:
             self.gpu_memory = gpu_memory
+        if gpu_type is not None:
+            self.gpu_type = gpu_type
         if user_data is not None:
             self.user_data = user_data
         if encrypted_user_data is not None:
@@ -257,8 +259,6 @@ class UpdateFunctionConfigRequestBody:
             self.heartbeat_handler = heartbeat_handler
         if enable_class_isolation is not None:
             self.enable_class_isolation = enable_class_isolation
-        if gpu_type is not None:
-            self.gpu_type = gpu_type
 
     @property
     def func_name(self):
@@ -391,6 +391,28 @@ class UpdateFunctionConfigRequestBody:
         :type gpu_memory: int
         """
         self._gpu_memory = gpu_memory
+
+    @property
+    def gpu_type(self):
+        """Gets the gpu_type of this UpdateFunctionConfigRequestBody.
+
+        显卡类型。
+
+        :return: The gpu_type of this UpdateFunctionConfigRequestBody.
+        :rtype: str
+        """
+        return self._gpu_type
+
+    @gpu_type.setter
+    def gpu_type(self, gpu_type):
+        """Sets the gpu_type of this UpdateFunctionConfigRequestBody.
+
+        显卡类型。
+
+        :param gpu_type: The gpu_type of this UpdateFunctionConfigRequestBody.
+        :type gpu_type: str
+        """
+        self._gpu_type = gpu_type
 
     @property
     def user_data(self):
@@ -939,28 +961,6 @@ class UpdateFunctionConfigRequestBody:
         :type enable_class_isolation: bool
         """
         self._enable_class_isolation = enable_class_isolation
-
-    @property
-    def gpu_type(self):
-        """Gets the gpu_type of this UpdateFunctionConfigRequestBody.
-
-        显卡类型。
-
-        :return: The gpu_type of this UpdateFunctionConfigRequestBody.
-        :rtype: str
-        """
-        return self._gpu_type
-
-    @gpu_type.setter
-    def gpu_type(self, gpu_type):
-        """Sets the gpu_type of this UpdateFunctionConfigRequestBody.
-
-        显卡类型。
-
-        :param gpu_type: The gpu_type of this UpdateFunctionConfigRequestBody.
-        :type gpu_type: str
-        """
-        self._gpu_type = gpu_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

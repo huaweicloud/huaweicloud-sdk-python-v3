@@ -37,7 +37,7 @@ class SmartVideoLayerConfig:
         :type video_url: str
         :param video_cover_url: 视频封面文件的URL。
         :type video_cover_url: str
-        :param display_duration: 视频显示时长。单位s * 0：表示一直显示。
+        :param display_duration: 视频显示时长。单位s * 0 显示时长规则：若携带reply_texts，reply_audios，与播放语音内容时长保持一致； 未携带场景，与匹配的关键词语音内容时长保持一致
         :type display_duration: int
         """
         
@@ -102,7 +102,7 @@ class SmartVideoLayerConfig:
     def display_duration(self):
         """Gets the display_duration of this SmartVideoLayerConfig.
 
-        视频显示时长。单位s * 0：表示一直显示。
+        视频显示时长。单位s * 0 显示时长规则：若携带reply_texts，reply_audios，与播放语音内容时长保持一致； 未携带场景，与匹配的关键词语音内容时长保持一致
 
         :return: The display_duration of this SmartVideoLayerConfig.
         :rtype: int
@@ -113,7 +113,7 @@ class SmartVideoLayerConfig:
     def display_duration(self, display_duration):
         """Sets the display_duration of this SmartVideoLayerConfig.
 
-        视频显示时长。单位s * 0：表示一直显示。
+        视频显示时长。单位s * 0 显示时长规则：若携带reply_texts，reply_audios，与播放语音内容时长保持一致； 未携带场景，与匹配的关键词语音内容时长保持一致
 
         :param display_duration: The display_duration of this SmartVideoLayerConfig.
         :type display_duration: int

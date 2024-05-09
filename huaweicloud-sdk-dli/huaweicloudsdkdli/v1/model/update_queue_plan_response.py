@@ -19,7 +19,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     openapi_types = {
         'queue_name': 'str',
-        'plan_id': 'str',
+        'plan_id': 'int',
         'is_success': 'bool',
         'message': 'str'
     }
@@ -39,7 +39,7 @@ class UpdateQueuePlanResponse(SdkResponse):
         :param queue_name: 定时扩缩容计划对应的队列名称
         :type queue_name: str
         :param plan_id: 扩缩容计划的ID编号
-        :type plan_id: str
+        :type plan_id: int
         :param is_success: 请求执行是否成功。“true”表示请求执行成功。
         :type is_success: bool
         :param message: 系统提示信息，执行成功时，信息可能为空。
@@ -92,7 +92,7 @@ class UpdateQueuePlanResponse(SdkResponse):
         扩缩容计划的ID编号
 
         :return: The plan_id of this UpdateQueuePlanResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._plan_id
 
@@ -103,7 +103,7 @@ class UpdateQueuePlanResponse(SdkResponse):
         扩缩容计划的ID编号
 
         :param plan_id: The plan_id of this UpdateQueuePlanResponse.
-        :type plan_id: str
+        :type plan_id: int
         """
         self._plan_id = plan_id
 

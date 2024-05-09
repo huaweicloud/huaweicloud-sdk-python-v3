@@ -1783,6 +1783,77 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def create_compare_result_file_async(self, request):
+        """导出对比任务结果文件
+
+        导出对比任务结果文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCompareResultFile
+        :type request: :class:`huaweicloudsdkdrs.v3.CreateCompareResultFileRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareResultFileResponse`
+        """
+        http_info = self._create_compare_result_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_compare_result_file_async_invoker(self, request):
+        http_info = self._create_compare_result_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_compare_result_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}/compare/result/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCompareResultFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'region' in local_var_params:
+            header_params['Region'] = local_var_params['region']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_compare_task_async(self, request):
         """创建对比任务
 
@@ -1919,6 +1990,75 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def create_object_level_compare_job_async(self, request):
+        """创建对象级对比任务
+
+        创建对象级对比任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateObjectLevelCompareJob
+        :type request: :class:`huaweicloudsdkdrs.v3.CreateObjectLevelCompareJobRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.CreateObjectLevelCompareJobResponse`
+        """
+        http_info = self._create_object_level_compare_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_object_level_compare_job_async_invoker(self, request):
+        http_info = self._create_object_level_compare_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_object_level_compare_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}/object/compare",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateObjectLevelCompareJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_compare_job_async(self, request):
         """取消对比任务
 
@@ -1967,6 +2107,81 @@ class DrsAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_compare_result_file_async(self, request):
+        """下载对比任务结果文件
+
+        下载对比任务结果文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadCompareResultFile
+        :type request: :class:`huaweicloudsdkdrs.v3.DownloadCompareResultFileRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.DownloadCompareResultFileResponse`
+        """
+        http_info = self._download_compare_result_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_compare_result_file_async_invoker(self, request):
+        http_info = self._download_compare_result_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_compare_result_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}/compare/result/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadCompareResultFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'compare_type' in local_var_params:
+            query_params.append(('compare_type', local_var_params['compare_type']))
+        if 'compare_job_id' in local_var_params:
+            query_params.append(('compare_job_id', local_var_params['compare_job_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'region' in local_var_params:
+            header_params['Region'] = local_var_params['region']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2276,6 +2491,83 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def list_content_compare_difference_async(self, request):
+        """查询内容对比差异
+
+        查询内容对比差异。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListContentCompareDifference
+        :type request: :class:`huaweicloudsdkdrs.v3.ListContentCompareDifferenceRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.ListContentCompareDifferenceResponse`
+        """
+        http_info = self._list_content_compare_difference_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_content_compare_difference_async_invoker(self, request):
+        http_info = self._list_content_compare_difference_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_content_compare_difference_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}/compare/{compare_job_id}/content-difference",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListContentCompareDifferenceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'compare_job_id' in local_var_params:
+            path_params['compare_job_id'] = local_var_params['compare_job_id']
+
+        query_params = []
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'db_name' in local_var_params:
+            query_params.append(('db_name', local_var_params['db_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_content_compare_overview_async(self, request):
         """查询内容对比总览
 
@@ -2549,6 +2841,148 @@ class DrsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_obeject_level_compare_detail_async(self, request):
+        """查询对象对比任务详情
+
+        查询对象对比任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListObejectLevelCompareDetail
+        :type request: :class:`huaweicloudsdkdrs.v3.ListObejectLevelCompareDetailRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.ListObejectLevelCompareDetailResponse`
+        """
+        http_info = self._list_obeject_level_compare_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_obeject_level_compare_detail_async_invoker(self, request):
+        http_info = self._list_obeject_level_compare_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_obeject_level_compare_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}/object/compare/{compare_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObejectLevelCompareDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'compare_type' in local_var_params:
+            path_params['compare_type'] = local_var_params['compare_type']
+
+        query_params = []
+        if 'compare_job_id' in local_var_params:
+            query_params.append(('compare_job_id', local_var_params['compare_job_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_obeject_level_compare_overview_async(self, request):
+        """查询对象对比任务概览
+
+        查询对象对比任务概览。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListObejectLevelCompareOverview
+        :type request: :class:`huaweicloudsdkdrs.v3.ListObejectLevelCompareOverviewRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.ListObejectLevelCompareOverviewResponse`
+        """
+        http_info = self._list_obeject_level_compare_overview_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_obeject_level_compare_overview_async_invoker(self, request):
+        http_info = self._list_obeject_level_compare_overview_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_obeject_level_compare_overview_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}/object/compare",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObejectLevelCompareOverviewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:

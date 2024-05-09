@@ -22,7 +22,8 @@ class VideoProcess:
         'hls_storage_type': 'str',
         'rotate': 'int',
         'adaptation': 'str',
-        'upsample': 'int'
+        'upsample': 'int',
+        'hls_segment_type': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class VideoProcess:
         'hls_storage_type': 'hls_storage_type',
         'rotate': 'rotate',
         'adaptation': 'adaptation',
-        'upsample': 'upsample'
+        'upsample': 'upsample',
+        'hls_segment_type': 'hls_segment_type'
     }
 
-    def __init__(self, hls_init_count=None, hls_init_interval=None, hls_storage_type=None, rotate=None, adaptation=None, upsample=None):
+    def __init__(self, hls_init_count=None, hls_init_interval=None, hls_storage_type=None, rotate=None, adaptation=None, upsample=None, hls_segment_type=None):
         """VideoProcess
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class VideoProcess:
         :type adaptation: str
         :param upsample: 是否开启上采样，如支持从480P的片源转为720P，可取值为:  - 0：表示上采样关闭， - 1：表示上采样开启. 
         :type upsample: int
+        :param hls_segment_type: HLS切片类型。  取值如下所示： - mpegts：ts切片 - fmp4：fmp4切片  不设置默认为ts切片。 
+        :type hls_segment_type: str
         """
         
         
@@ -61,6 +65,7 @@ class VideoProcess:
         self._rotate = None
         self._adaptation = None
         self._upsample = None
+        self._hls_segment_type = None
         self.discriminator = None
 
         if hls_init_count is not None:
@@ -75,6 +80,8 @@ class VideoProcess:
             self.adaptation = adaptation
         if upsample is not None:
             self.upsample = upsample
+        if hls_segment_type is not None:
+            self.hls_segment_type = hls_segment_type
 
     @property
     def hls_init_count(self):
@@ -207,6 +214,28 @@ class VideoProcess:
         :type upsample: int
         """
         self._upsample = upsample
+
+    @property
+    def hls_segment_type(self):
+        """Gets the hls_segment_type of this VideoProcess.
+
+        HLS切片类型。  取值如下所示： - mpegts：ts切片 - fmp4：fmp4切片  不设置默认为ts切片。 
+
+        :return: The hls_segment_type of this VideoProcess.
+        :rtype: str
+        """
+        return self._hls_segment_type
+
+    @hls_segment_type.setter
+    def hls_segment_type(self, hls_segment_type):
+        """Sets the hls_segment_type of this VideoProcess.
+
+        HLS切片类型。  取值如下所示： - mpegts：ts切片 - fmp4：fmp4切片  不设置默认为ts切片。 
+
+        :param hls_segment_type: The hls_segment_type of this VideoProcess.
+        :type hls_segment_type: str
+        """
+        self._hls_segment_type = hls_segment_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

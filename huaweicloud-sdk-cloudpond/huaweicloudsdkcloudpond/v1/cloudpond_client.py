@@ -866,6 +866,82 @@ class CloudPondClient(Client):
 
         return http_info
 
+    def list_supported_zones(self, request):
+        """查询支持的地区列表
+
+        查询支持智能边缘小站接入的华为云地区列表。
+        - 该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ies:zone:list
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSupportedZones
+        :type request: :class:`huaweicloudsdkcloudpond.v1.ListSupportedZonesRequest`
+        :rtype: :class:`huaweicloudsdkcloudpond.v1.ListSupportedZonesResponse`
+        """
+        http_info = self._list_supported_zones_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_supported_zones_invoker(self, request):
+        http_info = self._list_supported_zones_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_supported_zones_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupportedZonesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+            collection_formats['sort_key'] = 'multi'
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def _call_api(self, **kwargs):
         try:
             return self.do_http_request(**kwargs)

@@ -468,6 +468,8 @@ class GesAsyncClient(Client):
         query_params = []
         if 'keep_backup' in local_var_params:
             query_params.append(('keep_backup', local_var_params['keep_backup']))
+        if 'delete_eip' in local_var_params:
+            query_params.append(('delete_eip', local_var_params['delete_eip']))
 
         header_params = {}
 

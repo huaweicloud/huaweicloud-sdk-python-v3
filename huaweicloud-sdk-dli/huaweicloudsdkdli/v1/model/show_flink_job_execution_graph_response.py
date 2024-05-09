@@ -18,7 +18,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'is_success': 'bool',
+        'is_success': 'str',
         'message': 'str',
         'execute_graph': 'FlinkJobExecutionGraph'
     }
@@ -35,7 +35,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param is_success: 请求是否成功
-        :type is_success: bool
+        :type is_success: str
         :param message: 消息内容。
         :type message: str
         :param execute_graph: 
@@ -63,7 +63,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
         请求是否成功
 
         :return: The is_success of this ShowFlinkJobExecutionGraphResponse.
-        :rtype: bool
+        :rtype: str
         """
         return self._is_success
 
@@ -74,7 +74,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
         请求是否成功
 
         :param is_success: The is_success of this ShowFlinkJobExecutionGraphResponse.
-        :type is_success: bool
+        :type is_success: str
         """
         self._is_success = is_success
 

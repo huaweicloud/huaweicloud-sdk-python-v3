@@ -643,6 +643,69 @@ class BssintlClient(Client):
 
         return http_info
 
+    def create_enterprise_project_auth(self, request):
+        """开通客户企业项目权限
+
+        客户在自建平台开通客户企业项目权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateEnterpriseProjectAuth
+        :type request: :class:`huaweicloudsdkbssintl.v2.CreateEnterpriseProjectAuthRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.CreateEnterpriseProjectAuthResponse`
+        """
+        http_info = self._create_enterprise_project_auth_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_enterprise_project_auth_invoker(self, request):
+        http_info = self._create_enterprise_project_auth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_enterprise_project_auth_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/enterprises/enterprise-projects/authority",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnterpriseProjectAuthResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_enterprise_realname_authentication(self, request):
         """申请企业实名认证
 
@@ -1781,6 +1844,71 @@ class BssintlClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sub_customer_budget(self, request):
+        """批量查询客户预算
+
+        功能描述：批量查询客户预算
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSubCustomerBudget
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListSubCustomerBudgetRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListSubCustomerBudgetResponse`
+        """
+        http_info = self._list_sub_customer_budget_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sub_customer_budget_invoker(self, request):
+        http_info = self._list_sub_customer_budget_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sub_customer_budget_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/sub-customers/budget/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubCustomerBudgetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

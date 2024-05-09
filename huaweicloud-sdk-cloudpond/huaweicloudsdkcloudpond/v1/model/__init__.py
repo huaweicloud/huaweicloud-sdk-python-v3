@@ -26,6 +26,8 @@ from huaweicloudsdkcloudpond.v1.model.list_storage_pools_request import ListStor
 from huaweicloudsdkcloudpond.v1.model.list_storage_pools_response import ListStoragePoolsResponse
 from huaweicloudsdkcloudpond.v1.model.list_supported_regions_request import ListSupportedRegionsRequest
 from huaweicloudsdkcloudpond.v1.model.list_supported_regions_response import ListSupportedRegionsResponse
+from huaweicloudsdkcloudpond.v1.model.list_supported_zones_request import ListSupportedZonesRequest
+from huaweicloudsdkcloudpond.v1.model.list_supported_zones_response import ListSupportedZonesResponse
 from huaweicloudsdkcloudpond.v1.model.location_detail import LocationDetail
 from huaweicloudsdkcloudpond.v1.model.market_options import MarketOptions
 from huaweicloudsdkcloudpond.v1.model.metric_data_detail import MetricDataDetail
@@ -56,3 +58,4 @@ from huaweicloudsdkcloudpond.v1.model.update_edge_site_request import UpdateEdge
 from huaweicloudsdkcloudpond.v1.model.update_edge_site_request_body import UpdateEdgeSiteRequestBody
 from huaweicloudsdkcloudpond.v1.model.update_edge_site_response import UpdateEdgeSiteResponse
 from huaweicloudsdkcloudpond.v1.model.update_location import UpdateLocation
+from huaweicloudsdkcloudpond.v1.model.zone_detail import ZoneDetail

@@ -20,6 +20,7 @@ class TriggerProcess:
         'time_window': 'int',
         'reply_mode': 'str',
         'layer_config': 'SmartLayerConfig',
+        'extra_layer_config': 'SmartLayerConfig',
         'reply_texts': 'list[str]',
         'reply_audios': 'list[ReplyAudioInfo]',
         'reply_order': 'str',
@@ -30,13 +31,14 @@ class TriggerProcess:
         'time_window': 'time_window',
         'reply_mode': 'reply_mode',
         'layer_config': 'layer_config',
+        'extra_layer_config': 'extra_layer_config',
         'reply_texts': 'reply_texts',
         'reply_audios': 'reply_audios',
         'reply_order': 'reply_order',
         'reply_role': 'reply_role'
     }
 
-    def __init__(self, time_window=None, reply_mode=None, layer_config=None, reply_texts=None, reply_audios=None, reply_order=None, reply_role=None):
+    def __init__(self, time_window=None, reply_mode=None, layer_config=None, extra_layer_config=None, reply_texts=None, reply_audios=None, reply_order=None, reply_role=None):
         """TriggerProcess
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class TriggerProcess:
         :type reply_mode: str
         :param layer_config: 
         :type layer_config: :class:`huaweicloudsdkmetastudio.v1.SmartLayerConfig`
+        :param extra_layer_config: 
+        :type extra_layer_config: :class:`huaweicloudsdkmetastudio.v1.SmartLayerConfig`
         :param reply_texts: 回复话术集
         :type reply_texts: list[str]
         :param reply_audios: 回复音频集。填写audio_url。
@@ -62,6 +66,7 @@ class TriggerProcess:
         self._time_window = None
         self._reply_mode = None
         self._layer_config = None
+        self._extra_layer_config = None
         self._reply_texts = None
         self._reply_audios = None
         self._reply_order = None
@@ -74,6 +79,8 @@ class TriggerProcess:
             self.reply_mode = reply_mode
         if layer_config is not None:
             self.layer_config = layer_config
+        if extra_layer_config is not None:
+            self.extra_layer_config = extra_layer_config
         if reply_texts is not None:
             self.reply_texts = reply_texts
         if reply_audios is not None:
@@ -144,6 +151,24 @@ class TriggerProcess:
         :type layer_config: :class:`huaweicloudsdkmetastudio.v1.SmartLayerConfig`
         """
         self._layer_config = layer_config
+
+    @property
+    def extra_layer_config(self):
+        """Gets the extra_layer_config of this TriggerProcess.
+
+        :return: The extra_layer_config of this TriggerProcess.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartLayerConfig`
+        """
+        return self._extra_layer_config
+
+    @extra_layer_config.setter
+    def extra_layer_config(self, extra_layer_config):
+        """Sets the extra_layer_config of this TriggerProcess.
+
+        :param extra_layer_config: The extra_layer_config of this TriggerProcess.
+        :type extra_layer_config: :class:`huaweicloudsdkmetastudio.v1.SmartLayerConfig`
+        """
+        self._extra_layer_config = extra_layer_config
 
     @property
     def reply_texts(self):

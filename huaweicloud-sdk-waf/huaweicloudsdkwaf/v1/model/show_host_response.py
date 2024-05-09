@@ -96,7 +96,7 @@ class ShowHostResponse(SdkResponse):
         :type hostname: str
         :param policyid: 防护域名的防护策略id
         :type policyid: str
-        :param domainid: 帐号ID,对应华为云控制台用户名-&gt;我的凭证-&gt;帐号ID
+        :param domainid: 账号ID,对应华为云控制台用户名-&gt;我的凭证-&gt;账号ID
         :type domainid: str
         :param projectid: 项目ID，对应华为云控制台用户名-&gt;我的凭证-&gt;项目列表-&gt;项目ID
         :type projectid: str
@@ -322,7 +322,7 @@ class ShowHostResponse(SdkResponse):
     def domainid(self):
         """Gets the domainid of this ShowHostResponse.
 
-        帐号ID,对应华为云控制台用户名->我的凭证->帐号ID
+        账号ID,对应华为云控制台用户名->我的凭证->账号ID
 
         :return: The domainid of this ShowHostResponse.
         :rtype: str
@@ -333,7 +333,7 @@ class ShowHostResponse(SdkResponse):
     def domainid(self, domainid):
         """Sets the domainid of this ShowHostResponse.
 
-        帐号ID,对应华为云控制台用户名->我的凭证->帐号ID
+        账号ID,对应华为云控制台用户名->我的凭证->账号ID
 
         :param domainid: The domainid of this ShowHostResponse.
         :type domainid: str

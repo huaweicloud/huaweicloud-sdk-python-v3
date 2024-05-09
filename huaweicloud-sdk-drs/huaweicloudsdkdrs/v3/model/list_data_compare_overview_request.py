@@ -47,7 +47,7 @@ class ListDataCompareOverviewRequest:
         :type compare_job_id: str
         :param status: 对比状态。 - 0：对比不一致 - 2：对比一致 - 3：目标库表不存在 - 4：对比失败 - 5：正在对比中 - 6：等待对比中 - 7：任务已取消 - 8：源库为空 - 9：目标库为空 - 10：源库和目标库都为空 - 11：源表不存在 - 12：目标表不存在 - 13：原表和目标表都不存在 - 14：源数据库连接失败 - 15：目标库数据库连接失败 - 16：源数据库执行SQL超时 - 17：目标数据库执行SQL超时 - 18：源数据库执行SQL错误 - 19：目标数据库执行SQL错误 - 20：源库和目标库都不存在 - 21：源库不存在 - 22：目标库不存在 - 23：行数为亿行，未进行对比 - 27：超时
         :type status: int
-        :param limit: 每页显示的条目数量。
+        :param limit: 每页显示的条目数量，最大值1000。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
@@ -166,7 +166,7 @@ class ListDataCompareOverviewRequest:
     def limit(self):
         """Gets the limit of this ListDataCompareOverviewRequest.
 
-        每页显示的条目数量。
+        每页显示的条目数量，最大值1000。
 
         :return: The limit of this ListDataCompareOverviewRequest.
         :rtype: int
@@ -177,7 +177,7 @@ class ListDataCompareOverviewRequest:
     def limit(self, limit):
         """Sets the limit of this ListDataCompareOverviewRequest.
 
-        每页显示的条目数量。
+        每页显示的条目数量，最大值1000。
 
         :param limit: The limit of this ListDataCompareOverviewRequest.
         :type limit: int

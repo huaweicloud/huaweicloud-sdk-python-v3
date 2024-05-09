@@ -21,7 +21,6 @@ class UpdateFunctionCodeRequestBody:
         'code_url': 'str',
         'code_filename': 'str',
         'func_code': 'FuncCode',
-        'depend_list': 'list[str]',
         'depend_version_list': 'list[str]'
     }
 
@@ -30,11 +29,10 @@ class UpdateFunctionCodeRequestBody:
         'code_url': 'code_url',
         'code_filename': 'code_filename',
         'func_code': 'func_code',
-        'depend_list': 'depend_list',
         'depend_version_list': 'depend_version_list'
     }
 
-    def __init__(self, code_type=None, code_url=None, code_filename=None, func_code=None, depend_list=None, depend_version_list=None):
+    def __init__(self, code_type=None, code_url=None, code_filename=None, func_code=None, depend_version_list=None):
         """UpdateFunctionCodeRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,8 +45,6 @@ class UpdateFunctionCodeRequestBody:
         :type code_filename: str
         :param func_code: 
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
-        :param depend_list: 依赖id列表
-        :type depend_list: list[str]
         :param depend_version_list: 依赖版本id列表
         :type depend_version_list: list[str]
         """
@@ -59,7 +55,6 @@ class UpdateFunctionCodeRequestBody:
         self._code_url = None
         self._code_filename = None
         self._func_code = None
-        self._depend_list = None
         self._depend_version_list = None
         self.discriminator = None
 
@@ -69,8 +64,6 @@ class UpdateFunctionCodeRequestBody:
         if code_filename is not None:
             self.code_filename = code_filename
         self.func_code = func_code
-        if depend_list is not None:
-            self.depend_list = depend_list
         if depend_version_list is not None:
             self.depend_version_list = depend_version_list
 
@@ -157,28 +150,6 @@ class UpdateFunctionCodeRequestBody:
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         """
         self._func_code = func_code
-
-    @property
-    def depend_list(self):
-        """Gets the depend_list of this UpdateFunctionCodeRequestBody.
-
-        依赖id列表
-
-        :return: The depend_list of this UpdateFunctionCodeRequestBody.
-        :rtype: list[str]
-        """
-        return self._depend_list
-
-    @depend_list.setter
-    def depend_list(self, depend_list):
-        """Sets the depend_list of this UpdateFunctionCodeRequestBody.
-
-        依赖id列表
-
-        :param depend_list: The depend_list of this UpdateFunctionCodeRequestBody.
-        :type depend_list: list[str]
-        """
-        self._depend_list = depend_list
 
     @property
     def depend_version_list(self):

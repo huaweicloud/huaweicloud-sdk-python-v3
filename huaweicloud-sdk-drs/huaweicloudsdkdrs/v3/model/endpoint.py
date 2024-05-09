@@ -39,7 +39,8 @@ class Endpoint:
         'ssl_cert_name': 'str',
         'ssl_link': 'bool',
         'topic': 'str',
-        'cluster_mode': 'str'
+        'cluster_mode': 'str',
+        'kafka_security_config': 'KafkaSecurity'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class Endpoint:
         'ssl_cert_name': 'ssl_cert_name',
         'ssl_link': 'ssl_link',
         'topic': 'topic',
-        'cluster_mode': 'cluster_mode'
+        'cluster_mode': 'cluster_mode',
+        'kafka_security_config': 'kafka_security_config'
     }
 
-    def __init__(self, db_type=None, az_code=None, region=None, inst_id=None, vpc_id=None, subnet_id=None, security_group_id=None, project_id=None, db_name=None, db_password=None, db_port=None, db_user=None, inst_name=None, ip=None, mongo_ha_mode=None, safe_mode=None, ssl_cert_password=None, ssl_cert_check_sum=None, ssl_cert_key=None, ssl_cert_name=None, ssl_link=None, topic=None, cluster_mode=None):
+    def __init__(self, db_type=None, az_code=None, region=None, inst_id=None, vpc_id=None, subnet_id=None, security_group_id=None, project_id=None, db_name=None, db_password=None, db_port=None, db_user=None, inst_name=None, ip=None, mongo_ha_mode=None, safe_mode=None, ssl_cert_password=None, ssl_cert_check_sum=None, ssl_cert_key=None, ssl_cert_name=None, ssl_link=None, topic=None, cluster_mode=None, kafka_security_config=None):
         """Endpoint
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class Endpoint:
         :type topic: str
         :param cluster_mode: MongDB集群4.0及以上版本，当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写，值为：Sharding4.0+。
         :type cluster_mode: str
+        :param kafka_security_config: 
+        :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
         """
         
         
@@ -146,6 +150,7 @@ class Endpoint:
         self._ssl_link = None
         self._topic = None
         self._cluster_mode = None
+        self._kafka_security_config = None
         self.discriminator = None
 
         if db_type is not None:
@@ -194,6 +199,8 @@ class Endpoint:
             self.topic = topic
         if cluster_mode is not None:
             self.cluster_mode = cluster_mode
+        if kafka_security_config is not None:
+            self.kafka_security_config = kafka_security_config
 
     @property
     def db_type(self):
@@ -700,6 +707,24 @@ class Endpoint:
         :type cluster_mode: str
         """
         self._cluster_mode = cluster_mode
+
+    @property
+    def kafka_security_config(self):
+        """Gets the kafka_security_config of this Endpoint.
+
+        :return: The kafka_security_config of this Endpoint.
+        :rtype: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
+        """
+        return self._kafka_security_config
+
+    @kafka_security_config.setter
+    def kafka_security_config(self, kafka_security_config):
+        """Sets the kafka_security_config of this Endpoint.
+
+        :param kafka_security_config: The kafka_security_config of this Endpoint.
+        :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
+        """
+        self._kafka_security_config = kafka_security_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

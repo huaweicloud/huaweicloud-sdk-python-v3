@@ -19,7 +19,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        '_from': 'str',
+        '_from': 'int',
         'total': 'int',
         'log': 'list[str]'
     }
@@ -39,7 +39,7 @@ class ShowSparkJobLogResponse(SdkResponse):
         :param id: 批处理作业的id。
         :type id: str
         :param _from: 日志起始索引。
-        :type _from: str
+        :type _from: int
         :param total: 日志的总记录数。
         :type total: int
         :param log: 显示当前批处理作业日志。
@@ -92,7 +92,7 @@ class ShowSparkJobLogResponse(SdkResponse):
         日志起始索引。
 
         :return: The _from of this ShowSparkJobLogResponse.
-        :rtype: str
+        :rtype: int
         """
         return self.__from
 
@@ -103,7 +103,7 @@ class ShowSparkJobLogResponse(SdkResponse):
         日志起始索引。
 
         :param _from: The _from of this ShowSparkJobLogResponse.
-        :type _from: str
+        :type _from: int
         """
         self.__from = _from
 

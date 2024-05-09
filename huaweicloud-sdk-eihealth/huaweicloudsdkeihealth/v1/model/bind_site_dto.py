@@ -17,6 +17,7 @@ class BindSiteDto:
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'receptor': 'ReceptorDrugFile',
         'bounding_box': 'BoundingBoxDto',
         'remove_ion': 'bool',
@@ -26,6 +27,7 @@ class BindSiteDto:
     }
 
     attribute_map = {
+        'name': 'name',
         'receptor': 'receptor',
         'bounding_box': 'bounding_box',
         'remove_ion': 'remove_ion',
@@ -34,11 +36,13 @@ class BindSiteDto:
         'add_hydrogen': 'add_hydrogen'
     }
 
-    def __init__(self, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
+    def __init__(self, name=None, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
         """BindSiteDto
 
         The model defined in huaweicloud sdk
 
+        :param name: 靶点名称
+        :type name: str
         :param receptor: 
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
         :param bounding_box: 
@@ -55,6 +59,7 @@ class BindSiteDto:
         
         
 
+        self._name = None
         self._receptor = None
         self._bounding_box = None
         self._remove_ion = None
@@ -63,6 +68,8 @@ class BindSiteDto:
         self._add_hydrogen = None
         self.discriminator = None
 
+        if name is not None:
+            self.name = name
         self.receptor = receptor
         if bounding_box is not None:
             self.bounding_box = bounding_box
@@ -74,6 +81,28 @@ class BindSiteDto:
             self.remove_ligand = remove_ligand
         if add_hydrogen is not None:
             self.add_hydrogen = add_hydrogen
+
+    @property
+    def name(self):
+        """Gets the name of this BindSiteDto.
+
+        靶点名称
+
+        :return: The name of this BindSiteDto.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this BindSiteDto.
+
+        靶点名称
+
+        :param name: The name of this BindSiteDto.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def receptor(self):

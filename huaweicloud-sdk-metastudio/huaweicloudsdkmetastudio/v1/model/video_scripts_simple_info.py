@@ -19,6 +19,7 @@ class VideoScriptsSimpleInfo:
     openapi_types = {
         'script_name': 'str',
         'script_description': 'str',
+        'view_mode': 'str',
         'model_asset_id': 'str',
         'model_asset_type': 'str',
         'voice_config': 'VoiceConfig',
@@ -32,6 +33,7 @@ class VideoScriptsSimpleInfo:
     attribute_map = {
         'script_name': 'script_name',
         'script_description': 'script_description',
+        'view_mode': 'view_mode',
         'model_asset_id': 'model_asset_id',
         'model_asset_type': 'model_asset_type',
         'voice_config': 'voice_config',
@@ -42,7 +44,7 @@ class VideoScriptsSimpleInfo:
         'review_config': 'review_config'
     }
 
-    def __init__(self, script_name=None, script_description=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None):
+    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None):
         """VideoScriptsSimpleInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class VideoScriptsSimpleInfo:
         :type script_name: str
         :param script_description: 剧本描述。
         :type script_description: str
+        :param view_mode: 横竖屏类型。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+        :type view_mode: str
         :param model_asset_id: 数字人模型资产ID。
         :type model_asset_id: str
         :param model_asset_type: 数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
@@ -73,6 +77,7 @@ class VideoScriptsSimpleInfo:
 
         self._script_name = None
         self._script_description = None
+        self._view_mode = None
         self._model_asset_id = None
         self._model_asset_type = None
         self._voice_config = None
@@ -87,6 +92,8 @@ class VideoScriptsSimpleInfo:
             self.script_name = script_name
         if script_description is not None:
             self.script_description = script_description
+        if view_mode is not None:
+            self.view_mode = view_mode
         if model_asset_id is not None:
             self.model_asset_id = model_asset_id
         if model_asset_type is not None:
@@ -147,6 +154,28 @@ class VideoScriptsSimpleInfo:
         :type script_description: str
         """
         self._script_description = script_description
+
+    @property
+    def view_mode(self):
+        """Gets the view_mode of this VideoScriptsSimpleInfo.
+
+        横竖屏类型。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :return: The view_mode of this VideoScriptsSimpleInfo.
+        :rtype: str
+        """
+        return self._view_mode
+
+    @view_mode.setter
+    def view_mode(self, view_mode):
+        """Sets the view_mode of this VideoScriptsSimpleInfo.
+
+        横竖屏类型。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
+
+        :param view_mode: The view_mode of this VideoScriptsSimpleInfo.
+        :type view_mode: str
+        """
+        self._view_mode = view_mode
 
     @property
     def model_asset_id(self):

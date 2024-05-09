@@ -37,7 +37,7 @@ class BatchJobActionReq:
         :type action: str
         :param job_id: 任务ID（集群模式 取父任务的任务ID）。
         :type job_id: str
-        :param _property: 操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/zh-cn_topic_0295171516.html)
+        :param _property: 操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html)
         :type _property: str
         """
         
@@ -100,7 +100,7 @@ class BatchJobActionReq:
     def _property(self):
         """Gets the _property of this BatchJobActionReq.
 
-        操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/zh-cn_topic_0295171516.html)
+        操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html)
 
         :return: The _property of this BatchJobActionReq.
         :rtype: str
@@ -111,7 +111,7 @@ class BatchJobActionReq:
     def _property(self, _property):
         """Sets the _property of this BatchJobActionReq.
 
-        操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/zh-cn_topic_0295171516.html)
+        操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html)
 
         :param _property: The _property of this BatchJobActionReq.
         :type _property: str

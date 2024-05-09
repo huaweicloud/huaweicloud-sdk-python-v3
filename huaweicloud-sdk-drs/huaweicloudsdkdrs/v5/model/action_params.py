@@ -25,7 +25,8 @@ class ActionParams:
         'compare_task_param': 'CompareTaskParams',
         'is_sync_re_edit': 'bool',
         'force_delete': 'bool',
-        'public_ip_config': 'PublicIpConfig'
+        'public_ip_config': 'PublicIpConfig',
+        'replay_config': 'ReplayConfigInfo'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ActionParams:
         'compare_task_param': 'compare_task_param',
         'is_sync_re_edit': 'is_sync_re_edit',
         'force_delete': 'force_delete',
-        'public_ip_config': 'public_ip_config'
+        'public_ip_config': 'public_ip_config',
+        'replay_config': 'replay_config'
     }
 
-    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, force_delete=None, public_ip_config=None):
+    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, force_delete=None, public_ip_config=None, replay_config=None):
         """ActionParams
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ActionParams:
         :type force_delete: bool
         :param public_ip_config: 
         :type public_ip_config: :class:`huaweicloudsdkdrs.v5.PublicIpConfig`
+        :param replay_config: 
+        :type replay_config: :class:`huaweicloudsdkdrs.v5.ReplayConfigInfo`
         """
         
         
@@ -76,6 +80,7 @@ class ActionParams:
         self._is_sync_re_edit = None
         self._force_delete = None
         self._public_ip_config = None
+        self._replay_config = None
         self.discriminator = None
 
         if endpoints is not None:
@@ -96,6 +101,8 @@ class ActionParams:
             self.force_delete = force_delete
         if public_ip_config is not None:
             self.public_ip_config = public_ip_config
+        if replay_config is not None:
+            self.replay_config = replay_config
 
     @property
     def endpoints(self):
@@ -282,6 +289,24 @@ class ActionParams:
         :type public_ip_config: :class:`huaweicloudsdkdrs.v5.PublicIpConfig`
         """
         self._public_ip_config = public_ip_config
+
+    @property
+    def replay_config(self):
+        """Gets the replay_config of this ActionParams.
+
+        :return: The replay_config of this ActionParams.
+        :rtype: :class:`huaweicloudsdkdrs.v5.ReplayConfigInfo`
+        """
+        return self._replay_config
+
+    @replay_config.setter
+    def replay_config(self, replay_config):
+        """Sets the replay_config of this ActionParams.
+
+        :param replay_config: The replay_config of this ActionParams.
+        :type replay_config: :class:`huaweicloudsdkdrs.v5.ReplayConfigInfo`
+        """
+        self._replay_config = replay_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

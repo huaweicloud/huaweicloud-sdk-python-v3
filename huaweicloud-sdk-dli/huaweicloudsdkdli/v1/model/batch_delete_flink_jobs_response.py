@@ -18,80 +18,47 @@ class BatchDeleteFlinkJobsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'is_success': 'bool',
-        'message': 'str'
+        'body': 'list[FlinkSuccessResponse]'
     }
 
     attribute_map = {
-        'is_success': 'is_success',
-        'message': 'message'
+        'body': 'body'
     }
 
-    def __init__(self, is_success=None, message=None):
+    def __init__(self, body=None):
         """BatchDeleteFlinkJobsResponse
 
         The model defined in huaweicloud sdk
 
-        :param is_success: 执行请求是否成功。“true”表示请求执行成功。
-        :type is_success: bool
-        :param message: 系统提示信息，执行成功时，信息可能为空。
-        :type message: str
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]
         """
         
         super(BatchDeleteFlinkJobsResponse, self).__init__()
 
-        self._is_success = None
-        self._message = None
+        self._body = None
         self.discriminator = None
 
-        if is_success is not None:
-            self.is_success = is_success
-        if message is not None:
-            self.message = message
+        if body is not None:
+            self.body = body
 
     @property
-    def is_success(self):
-        """Gets the is_success of this BatchDeleteFlinkJobsResponse.
+    def body(self):
+        """Gets the body of this BatchDeleteFlinkJobsResponse.
 
-        执行请求是否成功。“true”表示请求执行成功。
-
-        :return: The is_success of this BatchDeleteFlinkJobsResponse.
-        :rtype: bool
+        :return: The body of this BatchDeleteFlinkJobsResponse.
+        :rtype: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]
         """
-        return self._is_success
+        return self._body
 
-    @is_success.setter
-    def is_success(self, is_success):
-        """Sets the is_success of this BatchDeleteFlinkJobsResponse.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this BatchDeleteFlinkJobsResponse.
 
-        执行请求是否成功。“true”表示请求执行成功。
-
-        :param is_success: The is_success of this BatchDeleteFlinkJobsResponse.
-        :type is_success: bool
+        :param body: The body of this BatchDeleteFlinkJobsResponse.
+        :type body: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]
         """
-        self._is_success = is_success
-
-    @property
-    def message(self):
-        """Gets the message of this BatchDeleteFlinkJobsResponse.
-
-        系统提示信息，执行成功时，信息可能为空。
-
-        :return: The message of this BatchDeleteFlinkJobsResponse.
-        :rtype: str
-        """
-        return self._message
-
-    @message.setter
-    def message(self, message):
-        """Sets the message of this BatchDeleteFlinkJobsResponse.
-
-        系统提示信息，执行成功时，信息可能为空。
-
-        :param message: The message of this BatchDeleteFlinkJobsResponse.
-        :type message: str
-        """
-        self._message = message
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -55,7 +55,7 @@ class ListContentCompareDetailRequest:
         :type db_name: str
         :param type: 类型。 compare：对比 unCompare：无法对比
         :type type: str
-        :param limit: 每页显示的条目数量。
+        :param limit: 每页显示的条目数量，最大值1000。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
@@ -224,7 +224,7 @@ class ListContentCompareDetailRequest:
     def limit(self):
         """Gets the limit of this ListContentCompareDetailRequest.
 
-        每页显示的条目数量。
+        每页显示的条目数量，最大值1000。
 
         :return: The limit of this ListContentCompareDetailRequest.
         :rtype: int
@@ -235,7 +235,7 @@ class ListContentCompareDetailRequest:
     def limit(self, limit):
         """Sets the limit of this ListContentCompareDetailRequest.
 
-        每页显示的条目数量。
+        每页显示的条目数量，最大值1000。
 
         :param limit: The limit of this ListContentCompareDetailRequest.
         :type limit: int

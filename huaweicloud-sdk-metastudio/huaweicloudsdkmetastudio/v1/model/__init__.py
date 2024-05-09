@@ -316,6 +316,7 @@ from huaweicloudsdkmetastudio.v1.model.smart_image_layer_config import SmartImag
 from huaweicloudsdkmetastudio.v1.model.smart_layer_config import SmartLayerConfig
 from huaweicloudsdkmetastudio.v1.model.smart_live_job import SmartLiveJob
 from huaweicloudsdkmetastudio.v1.model.smart_live_room_base_info import SmartLiveRoomBaseInfo
+from huaweicloudsdkmetastudio.v1.model.smart_text_layer_config import SmartTextLayerConfig
 from huaweicloudsdkmetastudio.v1.model.smart_video_layer_config import SmartVideoLayerConfig
 from huaweicloudsdkmetastudio.v1.model.start_smart_chat_job_request import StartSmartChatJobRequest
 from huaweicloudsdkmetastudio.v1.model.start_smart_chat_job_response import StartSmartChatJobResponse

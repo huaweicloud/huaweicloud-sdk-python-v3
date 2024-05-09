@@ -41,13 +41,13 @@ class HealthCompareJob:
 
         :param id: 对比任务ID。
         :type id: str
-        :param type: 对比类型。 - object：对象对比 - lines：行对比 - contents：内容对比 - account：用户对比
+        :param type: 对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
         :type type: str
         :param status: 状态。 - WAITING_FOR_RUNNING：等待启动中 - RUNNING：运行中 - SUCCESSFUL：完成 - FAILED：失败 - CANCELLED：已取消 - TIMEOUT_INTERRUPT：超时中断 - FULL_DOING：全量校验中 - INCRE_DOING：增量校验中
         :type status: str
-        :param start_time: 对比开始时间。
+        :param start_time: 对比开始时间，UTC时间。
         :type start_time: str
-        :param end_time: 对比结束时间。
+        :param end_time: 对比结束时间，UTC时间。
         :type end_time: str
         :param compute_type: 对比计算资源。
         :type compute_type: str
@@ -102,7 +102,7 @@ class HealthCompareJob:
     def type(self):
         """Gets the type of this HealthCompareJob.
 
-        对比类型。 - object：对象对比 - lines：行对比 - contents：内容对比 - account：用户对比
+        对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
         :return: The type of this HealthCompareJob.
         :rtype: str
@@ -113,7 +113,7 @@ class HealthCompareJob:
     def type(self, type):
         """Sets the type of this HealthCompareJob.
 
-        对比类型。 - object：对象对比 - lines：行对比 - contents：内容对比 - account：用户对比
+        对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
         :param type: The type of this HealthCompareJob.
         :type type: str
@@ -146,7 +146,7 @@ class HealthCompareJob:
     def start_time(self):
         """Gets the start_time of this HealthCompareJob.
 
-        对比开始时间。
+        对比开始时间，UTC时间。
 
         :return: The start_time of this HealthCompareJob.
         :rtype: str
@@ -157,7 +157,7 @@ class HealthCompareJob:
     def start_time(self, start_time):
         """Sets the start_time of this HealthCompareJob.
 
-        对比开始时间。
+        对比开始时间，UTC时间。
 
         :param start_time: The start_time of this HealthCompareJob.
         :type start_time: str
@@ -168,7 +168,7 @@ class HealthCompareJob:
     def end_time(self):
         """Gets the end_time of this HealthCompareJob.
 
-        对比结束时间。
+        对比结束时间，UTC时间。
 
         :return: The end_time of this HealthCompareJob.
         :rtype: str
@@ -179,7 +179,7 @@ class HealthCompareJob:
     def end_time(self, end_time):
         """Sets the end_time of this HealthCompareJob.
 
-        对比结束时间。
+        对比结束时间，UTC时间。
 
         :param end_time: The end_time of this HealthCompareJob.
         :type end_time: str

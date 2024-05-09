@@ -63,7 +63,7 @@ class ListDataCompareDetailRequest:
         :type target_db_name: str
         :param query_tb_name: 表名过滤关键字。
         :type query_tb_name: str
-        :param limit: 每页显示的条目数量。
+        :param limit: 每页显示的条目数量，最大值1000。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
@@ -282,7 +282,7 @@ class ListDataCompareDetailRequest:
     def limit(self):
         """Gets the limit of this ListDataCompareDetailRequest.
 
-        每页显示的条目数量。
+        每页显示的条目数量，最大值1000。
 
         :return: The limit of this ListDataCompareDetailRequest.
         :rtype: int
@@ -293,7 +293,7 @@ class ListDataCompareDetailRequest:
     def limit(self, limit):
         """Sets the limit of this ListDataCompareDetailRequest.
 
-        每页显示的条目数量。
+        每页显示的条目数量，最大值1000。
 
         :param limit: The limit of this ListDataCompareDetailRequest.
         :type limit: int

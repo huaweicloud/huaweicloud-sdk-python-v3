@@ -82,6 +82,8 @@ from huaweicloudsdkcae.v1.model.create_timer_rule_response import CreateTimerRul
 from huaweicloudsdkcae.v1.model.create_volume_req import CreateVolumeReq
 from huaweicloudsdkcae.v1.model.create_volume_request import CreateVolumeRequest
 from huaweicloudsdkcae.v1.model.create_volume_response import CreateVolumeResponse
+from huaweicloudsdkcae.v1.model.create_vpc_egress_request import CreateVpcEgressRequest
+from huaweicloudsdkcae.v1.model.create_vpc_egress_response import CreateVpcEgressResponse
 from huaweicloudsdkcae.v1.model.cron_trigger_scheduler import CronTriggerScheduler
 from huaweicloudsdkcae.v1.model.delete_application_request import DeleteApplicationRequest
 from huaweicloudsdkcae.v1.model.delete_application_response import DeleteApplicationResponse
@@ -99,8 +101,11 @@ from huaweicloudsdkcae.v1.model.delete_timer_rule_request import DeleteTimerRule
 from huaweicloudsdkcae.v1.model.delete_timer_rule_response import DeleteTimerRuleResponse
 from huaweicloudsdkcae.v1.model.delete_volume_request import DeleteVolumeRequest
 from huaweicloudsdkcae.v1.model.delete_volume_response import DeleteVolumeResponse
+from huaweicloudsdkcae.v1.model.delete_vpc_egress_request import DeleteVpcEgressRequest
+from huaweicloudsdkcae.v1.model.delete_vpc_egress_response import DeleteVpcEgressResponse
 from huaweicloudsdkcae.v1.model.domain_item import DomainItem
 from huaweicloudsdkcae.v1.model.domain_kind_obj import DomainKindObj
+from huaweicloudsdkcae.v1.model.egress_cidr import EgressCidr
 from huaweicloudsdkcae.v1.model.eip_kind_obj import EipKindObj
 from huaweicloudsdkcae.v1.model.environment_item import EnvironmentItem
 from huaweicloudsdkcae.v1.model.environment_kind_obj import EnvironmentKindObj
@@ -150,6 +155,8 @@ from huaweicloudsdkcae.v1.model.list_timer_rules_request import ListTimerRulesRe
 from huaweicloudsdkcae.v1.model.list_timer_rules_response import ListTimerRulesResponse
 from huaweicloudsdkcae.v1.model.list_volumes_request import ListVolumesRequest
 from huaweicloudsdkcae.v1.model.list_volumes_response import ListVolumesResponse
+from huaweicloudsdkcae.v1.model.list_vpc_egress_request import ListVpcEgressRequest
+from huaweicloudsdkcae.v1.model.list_vpc_egress_response import ListVpcEgressResponse
 from huaweicloudsdkcae.v1.model.meta_cert import MetaCert
 from huaweicloudsdkcae.v1.model.meta_domain import MetaDomain
 from huaweicloudsdkcae.v1.model.metadata_response import MetadataResponse
@@ -207,3 +214,7 @@ from huaweicloudsdkcae.v1.model.volume_configuration_data_volume import VolumeCo
 from huaweicloudsdkcae.v1.model.volume_configuration_mount_info import VolumeConfigurationMountInfo
 from huaweicloudsdkcae.v1.model.volume_kind_obj import VolumeKindObj
 from huaweicloudsdkcae.v1.model.volume_spec import VolumeSpec
+from huaweicloudsdkcae.v1.model.vpc_egress_kind_obj import VpcEgressKindObj
+from huaweicloudsdkcae.v1.model.vpc_egress_request_body import VpcEgressRequestBody
+from huaweicloudsdkcae.v1.model.vpc_egress_request_body_spec import VpcEgressRequestBodySpec
+from huaweicloudsdkcae.v1.model.vpc_egress_response_body_spec import VpcEgressResponseBodySpec

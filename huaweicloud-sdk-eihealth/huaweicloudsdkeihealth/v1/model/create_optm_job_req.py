@@ -21,6 +21,7 @@ class CreateOptmJobReq:
         'smiles': 'str',
         'molecule_file': 'DrugFile',
         'binding_site': 'BindSiteDto',
+        'binding_sites': 'list[BindSiteDto]',
         'weak_constraints': 'list[WeakConstraintDto]',
         'strong_constraints': 'list[StrongConstraintDto]',
         'sampler_mixin_weight': 'float',
@@ -33,6 +34,7 @@ class CreateOptmJobReq:
         'smiles': 'smiles',
         'molecule_file': 'molecule_file',
         'binding_site': 'binding_site',
+        'binding_sites': 'binding_sites',
         'weak_constraints': 'weak_constraints',
         'strong_constraints': 'strong_constraints',
         'sampler_mixin_weight': 'sampler_mixin_weight',
@@ -40,7 +42,7 @@ class CreateOptmJobReq:
         'num_trials': 'num_trials'
     }
 
-    def __init__(self, basic_info=None, smiles=None, molecule_file=None, binding_site=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, model_ids=None, num_trials=None):
+    def __init__(self, basic_info=None, smiles=None, molecule_file=None, binding_site=None, binding_sites=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, model_ids=None, num_trials=None):
         """CreateOptmJobReq
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class CreateOptmJobReq:
         :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
         :param binding_site: 
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindSiteDto`
+        :param binding_sites: 受体列表和受体是二选一的关系，受体列表优先级最高
+        :type binding_sites: list[:class:`huaweicloudsdkeihealth.v1.BindSiteDto`]
         :param weak_constraints: 弱约束集合
         :type weak_constraints: list[:class:`huaweicloudsdkeihealth.v1.WeakConstraintDto`]
         :param strong_constraints: 强约束集合
@@ -71,6 +75,7 @@ class CreateOptmJobReq:
         self._smiles = None
         self._molecule_file = None
         self._binding_site = None
+        self._binding_sites = None
         self._weak_constraints = None
         self._strong_constraints = None
         self._sampler_mixin_weight = None
@@ -85,6 +90,8 @@ class CreateOptmJobReq:
             self.molecule_file = molecule_file
         if binding_site is not None:
             self.binding_site = binding_site
+        if binding_sites is not None:
+            self.binding_sites = binding_sites
         if weak_constraints is not None:
             self.weak_constraints = weak_constraints
         if strong_constraints is not None:
@@ -171,6 +178,28 @@ class CreateOptmJobReq:
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindSiteDto`
         """
         self._binding_site = binding_site
+
+    @property
+    def binding_sites(self):
+        """Gets the binding_sites of this CreateOptmJobReq.
+
+        受体列表和受体是二选一的关系，受体列表优先级最高
+
+        :return: The binding_sites of this CreateOptmJobReq.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.BindSiteDto`]
+        """
+        return self._binding_sites
+
+    @binding_sites.setter
+    def binding_sites(self, binding_sites):
+        """Sets the binding_sites of this CreateOptmJobReq.
+
+        受体列表和受体是二选一的关系，受体列表优先级最高
+
+        :param binding_sites: The binding_sites of this CreateOptmJobReq.
+        :type binding_sites: list[:class:`huaweicloudsdkeihealth.v1.BindSiteDto`]
+        """
+        self._binding_sites = binding_sites
 
     @property
     def weak_constraints(self):

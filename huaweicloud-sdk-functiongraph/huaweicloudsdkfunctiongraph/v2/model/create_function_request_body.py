@@ -26,6 +26,7 @@ class CreateFunctionRequestBody:
         'func_vpc': 'FuncVpc',
         'memory_size': 'int',
         'gpu_memory': 'int',
+        'gpu_type': 'str',
         'code_type': 'str',
         'code_url': 'str',
         'code_filename': 'str',
@@ -59,6 +60,7 @@ class CreateFunctionRequestBody:
         'func_vpc': 'func_vpc',
         'memory_size': 'memory_size',
         'gpu_memory': 'gpu_memory',
+        'gpu_type': 'gpu_type',
         'code_type': 'code_type',
         'code_url': 'code_url',
         'code_filename': 'code_filename',
@@ -82,7 +84,7 @@ class CreateFunctionRequestBody:
         'enable_dynamic_memory': 'enable_dynamic_memory'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None):
         """CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class CreateFunctionRequestBody:
         :type memory_size: int
         :param gpu_memory: 函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
         :type gpu_memory: int
+        :param gpu_type: 显卡类型。
+        :type gpu_type: str
         :param code_type: 函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
         :type code_type: str
         :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
@@ -160,6 +164,7 @@ class CreateFunctionRequestBody:
         self._func_vpc = None
         self._memory_size = None
         self._gpu_memory = None
+        self._gpu_type = None
         self._code_type = None
         self._code_url = None
         self._code_filename = None
@@ -195,6 +200,8 @@ class CreateFunctionRequestBody:
         self.memory_size = memory_size
         if gpu_memory is not None:
             self.gpu_memory = gpu_memory
+        if gpu_type is not None:
+            self.gpu_type = gpu_type
         self.code_type = code_type
         if code_url is not None:
             self.code_url = code_url
@@ -430,6 +437,28 @@ class CreateFunctionRequestBody:
         :type gpu_memory: int
         """
         self._gpu_memory = gpu_memory
+
+    @property
+    def gpu_type(self):
+        """Gets the gpu_type of this CreateFunctionRequestBody.
+
+        显卡类型。
+
+        :return: The gpu_type of this CreateFunctionRequestBody.
+        :rtype: str
+        """
+        return self._gpu_type
+
+    @gpu_type.setter
+    def gpu_type(self, gpu_type):
+        """Sets the gpu_type of this CreateFunctionRequestBody.
+
+        显卡类型。
+
+        :param gpu_type: The gpu_type of this CreateFunctionRequestBody.
+        :type gpu_type: str
+        """
+        self._gpu_type = gpu_type
 
     @property
     def code_type(self):

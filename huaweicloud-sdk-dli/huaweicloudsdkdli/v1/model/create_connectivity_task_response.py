@@ -20,7 +20,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'task_id': 'str'
+        'task_id': 'int'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         :param task_id: 请求id
-        :type task_id: str
+        :type task_id: int
         """
         
         super(CreateConnectivityTaskResponse, self).__init__()
@@ -107,7 +107,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
         请求id
 
         :return: The task_id of this CreateConnectivityTaskResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._task_id
 
@@ -118,7 +118,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
         请求id
 
         :param task_id: The task_id of this CreateConnectivityTaskResponse.
-        :type task_id: str
+        :type task_id: int
         """
         self._task_id = task_id
 

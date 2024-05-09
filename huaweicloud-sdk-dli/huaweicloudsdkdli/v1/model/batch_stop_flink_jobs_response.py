@@ -18,7 +18,7 @@ class BatchStopFlinkJobsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[SuccessResponse]'
+        'body': 'list[FlinkSuccessResponse]'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class BatchStopFlinkJobsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: list[:class:`huaweicloudsdkdli.v1.SuccessResponse`]
+        :type body: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]
         """
         
         super(BatchStopFlinkJobsResponse, self).__init__()
@@ -47,7 +47,7 @@ class BatchStopFlinkJobsResponse(SdkResponse):
         """Gets the body of this BatchStopFlinkJobsResponse.
 
         :return: The body of this BatchStopFlinkJobsResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.SuccessResponse`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]
         """
         return self._body
 
@@ -56,7 +56,7 @@ class BatchStopFlinkJobsResponse(SdkResponse):
         """Sets the body of this BatchStopFlinkJobsResponse.
 
         :param body: The body of this BatchStopFlinkJobsResponse.
-        :type body: list[:class:`huaweicloudsdkdli.v1.SuccessResponse`]
+        :type body: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]
         """
         self._body = body
 

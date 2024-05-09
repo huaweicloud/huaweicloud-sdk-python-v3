@@ -22,6 +22,7 @@ class StartSmartChatJobResponse(SdkResponse):
         'rtc_room_info': 'RTCRoomInfoList',
         'chat_subtitle_config': 'ChatSubtitleConfig',
         'video_config': 'ChatVideoConfigRsp',
+        'chat_video_type': 'str',
         'x_request_id': 'str'
     }
 
@@ -30,10 +31,11 @@ class StartSmartChatJobResponse(SdkResponse):
         'rtc_room_info': 'rtc_room_info',
         'chat_subtitle_config': 'chat_subtitle_config',
         'video_config': 'video_config',
+        'chat_video_type': 'chat_video_type',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, x_request_id=None):
+    def __init__(self, job_id=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, chat_video_type=None, x_request_id=None):
         """StartSmartChatJobResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class StartSmartChatJobResponse(SdkResponse):
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.ChatVideoConfigRsp`
+        :param chat_video_type: 智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+        :type chat_video_type: str
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -56,6 +60,7 @@ class StartSmartChatJobResponse(SdkResponse):
         self._rtc_room_info = None
         self._chat_subtitle_config = None
         self._video_config = None
+        self._chat_video_type = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -67,6 +72,8 @@ class StartSmartChatJobResponse(SdkResponse):
             self.chat_subtitle_config = chat_subtitle_config
         if video_config is not None:
             self.video_config = video_config
+        if chat_video_type is not None:
+            self.chat_video_type = chat_video_type
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -145,6 +152,28 @@ class StartSmartChatJobResponse(SdkResponse):
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.ChatVideoConfigRsp`
         """
         self._video_config = video_config
+
+    @property
+    def chat_video_type(self):
+        """Gets the chat_video_type of this StartSmartChatJobResponse.
+
+        智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+
+        :return: The chat_video_type of this StartSmartChatJobResponse.
+        :rtype: str
+        """
+        return self._chat_video_type
+
+    @chat_video_type.setter
+    def chat_video_type(self, chat_video_type):
+        """Sets the chat_video_type of this StartSmartChatJobResponse.
+
+        智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+
+        :param chat_video_type: The chat_video_type of this StartSmartChatJobResponse.
+        :type chat_video_type: str
+        """
+        self._chat_video_type = chat_video_type
 
     @property
     def x_request_id(self):

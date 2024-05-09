@@ -27,7 +27,8 @@ class CreateSmartChatRoomReq:
         'background_config': 'BackgroundConfigInfo',
         'layer_config': 'list[LayerConfig]',
         'review_config': 'ReviewConfig',
-        'chat_subtitle_config': 'ChatSubtitleConfig'
+        'chat_subtitle_config': 'ChatSubtitleConfig',
+        'chat_video_type': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CreateSmartChatRoomReq:
         'background_config': 'background_config',
         'layer_config': 'layer_config',
         'review_config': 'review_config',
-        'chat_subtitle_config': 'chat_subtitle_config'
+        'chat_subtitle_config': 'chat_subtitle_config',
+        'chat_video_type': 'chat_video_type'
     }
 
-    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, robot_id=None, concurrency=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None):
+    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, robot_id=None, concurrency=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None):
         """CreateSmartChatRoomReq
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class CreateSmartChatRoomReq:
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param chat_subtitle_config: 
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
+        :param chat_video_type: 智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+        :type chat_video_type: str
         """
         
         
@@ -86,6 +90,7 @@ class CreateSmartChatRoomReq:
         self._layer_config = None
         self._review_config = None
         self._chat_subtitle_config = None
+        self._chat_video_type = None
         self.discriminator = None
 
         self.room_name = room_name
@@ -109,6 +114,8 @@ class CreateSmartChatRoomReq:
             self.review_config = review_config
         if chat_subtitle_config is not None:
             self.chat_subtitle_config = chat_subtitle_config
+        if chat_video_type is not None:
+            self.chat_video_type = chat_video_type
 
     @property
     def room_name(self):
@@ -331,6 +338,28 @@ class CreateSmartChatRoomReq:
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
         """
         self._chat_subtitle_config = chat_subtitle_config
+
+    @property
+    def chat_video_type(self):
+        """Gets the chat_video_type of this CreateSmartChatRoomReq.
+
+        智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+
+        :return: The chat_video_type of this CreateSmartChatRoomReq.
+        :rtype: str
+        """
+        return self._chat_video_type
+
+    @chat_video_type.setter
+    def chat_video_type(self, chat_video_type):
+        """Sets the chat_video_type of this CreateSmartChatRoomReq.
+
+        智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+
+        :param chat_video_type: The chat_video_type of this CreateSmartChatRoomReq.
+        :type chat_video_type: str
+        """
+        self._chat_video_type = chat_video_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

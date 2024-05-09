@@ -37,9 +37,9 @@ class BackgroundConfigInfo:
 
         :param background_type: 背景类型。 - IMAGE：图片背景，指定图片用作分身数字人背景。 - COLOR：纯色背景，指定颜色RGB值作为分身数字人背景。
         :type background_type: str
-        :param background_config: 背景文件的URL。 &gt; * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 &gt; * background_type&#x3D;COLOR时需要填写。
+        :param background_config: 背景文件的URL。 &gt; * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 &gt; * background_type&#x3D;IMAGE时需要填写。
         :type background_config: str
-        :param background_color_config: 纯色背景的RGB颜色值。 &gt; * background_type&#x3D;IMAGE时需要填写。
+        :param background_color_config: 纯色背景的RGB颜色值。 &gt; * background_type&#x3D;COLOR时需要填写。
         :type background_color_config: str
         :param background_asset_id: 背景资产ID。 &gt; * 背景是背景图片时，填图片资产ID。
         :type background_asset_id: str
@@ -87,7 +87,7 @@ class BackgroundConfigInfo:
     def background_config(self):
         """Gets the background_config of this BackgroundConfigInfo.
 
-        背景文件的URL。 > * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 > * background_type=COLOR时需要填写。
+        背景文件的URL。 > * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 > * background_type=IMAGE时需要填写。
 
         :return: The background_config of this BackgroundConfigInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class BackgroundConfigInfo:
     def background_config(self, background_config):
         """Sets the background_config of this BackgroundConfigInfo.
 
-        背景文件的URL。 > * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 > * background_type=COLOR时需要填写。
+        背景文件的URL。 > * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 > * background_type=IMAGE时需要填写。
 
         :param background_config: The background_config of this BackgroundConfigInfo.
         :type background_config: str
@@ -109,7 +109,7 @@ class BackgroundConfigInfo:
     def background_color_config(self):
         """Gets the background_color_config of this BackgroundConfigInfo.
 
-        纯色背景的RGB颜色值。 > * background_type=IMAGE时需要填写。
+        纯色背景的RGB颜色值。 > * background_type=COLOR时需要填写。
 
         :return: The background_color_config of this BackgroundConfigInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class BackgroundConfigInfo:
     def background_color_config(self, background_color_config):
         """Sets the background_color_config of this BackgroundConfigInfo.
 
-        纯色背景的RGB颜色值。 > * background_type=IMAGE时需要填写。
+        纯色背景的RGB颜色值。 > * background_type=COLOR时需要填写。
 
         :param background_color_config: The background_color_config of this BackgroundConfigInfo.
         :type background_color_config: str

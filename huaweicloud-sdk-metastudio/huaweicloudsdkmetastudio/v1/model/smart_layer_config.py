@@ -22,7 +22,8 @@ class SmartLayerConfig:
         'position': 'LayerPositionConfig',
         'size': 'LayerSizeConfig',
         'image_config': 'SmartImageLayerConfig',
-        'video_config': 'SmartVideoLayerConfig'
+        'video_config': 'SmartVideoLayerConfig',
+        'text_config': 'SmartTextLayerConfig'
     }
 
     attribute_map = {
@@ -31,15 +32,16 @@ class SmartLayerConfig:
         'position': 'position',
         'size': 'size',
         'image_config': 'image_config',
-        'video_config': 'video_config'
+        'video_config': 'video_config',
+        'text_config': 'text_config'
     }
 
-    def __init__(self, layer_type=None, asset_id=None, position=None, size=None, image_config=None, video_config=None):
+    def __init__(self, layer_type=None, asset_id=None, position=None, size=None, image_config=None, video_config=None, text_config=None):
         """SmartLayerConfig
 
         The model defined in huaweicloud sdk
 
-        :param layer_type: 图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层
+        :param layer_type: 图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 文本图层
         :type layer_type: str
         :param asset_id: 图层所需资产的资产id，外部资产信息无需填写
         :type asset_id: str
@@ -51,6 +53,8 @@ class SmartLayerConfig:
         :type image_config: :class:`huaweicloudsdkmetastudio.v1.SmartImageLayerConfig`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.SmartVideoLayerConfig`
+        :param text_config: 
+        :type text_config: :class:`huaweicloudsdkmetastudio.v1.SmartTextLayerConfig`
         """
         
         
@@ -61,6 +65,7 @@ class SmartLayerConfig:
         self._size = None
         self._image_config = None
         self._video_config = None
+        self._text_config = None
         self.discriminator = None
 
         self.layer_type = layer_type
@@ -73,12 +78,14 @@ class SmartLayerConfig:
             self.image_config = image_config
         if video_config is not None:
             self.video_config = video_config
+        if text_config is not None:
+            self.text_config = text_config
 
     @property
     def layer_type(self):
         """Gets the layer_type of this SmartLayerConfig.
 
-        图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层
+        图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 文本图层
 
         :return: The layer_type of this SmartLayerConfig.
         :rtype: str
@@ -89,7 +96,7 @@ class SmartLayerConfig:
     def layer_type(self, layer_type):
         """Sets the layer_type of this SmartLayerConfig.
 
-        图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层
+        图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 文本图层
 
         :param layer_type: The layer_type of this SmartLayerConfig.
         :type layer_type: str
@@ -189,6 +196,24 @@ class SmartLayerConfig:
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.SmartVideoLayerConfig`
         """
         self._video_config = video_config
+
+    @property
+    def text_config(self):
+        """Gets the text_config of this SmartLayerConfig.
+
+        :return: The text_config of this SmartLayerConfig.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartTextLayerConfig`
+        """
+        return self._text_config
+
+    @text_config.setter
+    def text_config(self, text_config):
+        """Sets the text_config of this SmartLayerConfig.
+
+        :param text_config: The text_config of this SmartLayerConfig.
+        :type text_config: :class:`huaweicloudsdkmetastudio.v1.SmartTextLayerConfig`
+        """
+        self._text_config = text_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,15 +18,17 @@ class DeleteGraph2Request:
 
     openapi_types = {
         'graph_id': 'str',
-        'keep_backup': 'bool'
+        'keep_backup': 'bool',
+        'delete_eip': 'bool'
     }
 
     attribute_map = {
         'graph_id': 'graph_id',
-        'keep_backup': 'keep_backup'
+        'keep_backup': 'keep_backup',
+        'delete_eip': 'delete_eip'
     }
 
-    def __init__(self, graph_id=None, keep_backup=None):
+    def __init__(self, graph_id=None, keep_backup=None, delete_eip=None):
         """DeleteGraph2Request
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class DeleteGraph2Request:
         :type graph_id: str
         :param keep_backup: 删除图后是否保留备份，默认保留1个自动备份和2个手动备份。该查询参数为空时，表示不保留。
         :type keep_backup: bool
+        :param delete_eip: 是否同时删除EIP。
+        :type delete_eip: bool
         """
         
         
 
         self._graph_id = None
         self._keep_backup = None
+        self._delete_eip = None
         self.discriminator = None
 
         self.graph_id = graph_id
         if keep_backup is not None:
             self.keep_backup = keep_backup
+        if delete_eip is not None:
+            self.delete_eip = delete_eip
 
     @property
     def graph_id(self):
@@ -90,6 +97,28 @@ class DeleteGraph2Request:
         :type keep_backup: bool
         """
         self._keep_backup = keep_backup
+
+    @property
+    def delete_eip(self):
+        """Gets the delete_eip of this DeleteGraph2Request.
+
+        是否同时删除EIP。
+
+        :return: The delete_eip of this DeleteGraph2Request.
+        :rtype: bool
+        """
+        return self._delete_eip
+
+    @delete_eip.setter
+    def delete_eip(self, delete_eip):
+        """Sets the delete_eip of this DeleteGraph2Request.
+
+        是否同时删除EIP。
+
+        :param delete_eip: The delete_eip of this DeleteGraph2Request.
+        :type delete_eip: bool
+        """
+        self._delete_eip = delete_eip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

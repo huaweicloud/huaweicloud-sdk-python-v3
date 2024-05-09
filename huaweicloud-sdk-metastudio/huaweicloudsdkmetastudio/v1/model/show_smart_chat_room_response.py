@@ -29,6 +29,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         'layer_config': 'list[LayerConfig]',
         'review_config': 'ReviewConfig',
         'chat_subtitle_config': 'ChatSubtitleConfig',
+        'chat_video_type': 'str',
         'room_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
@@ -48,6 +49,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         'layer_config': 'layer_config',
         'review_config': 'review_config',
         'chat_subtitle_config': 'chat_subtitle_config',
+        'chat_video_type': 'chat_video_type',
         'room_id': 'room_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -55,7 +57,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, robot_id=None, concurrency=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, room_id=None, create_time=None, update_time=None, cover_url=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, robot_id=None, concurrency=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, room_id=None, create_time=None, update_time=None, cover_url=None, x_request_id=None):
         """ShowSmartChatRoomResponse
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class ShowSmartChatRoomResponse(SdkResponse):
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param chat_subtitle_config: 
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
+        :param chat_video_type: 智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+        :type chat_video_type: str
         :param room_id: 对话ID。
         :type room_id: str
         :param create_time: 智能交互对话创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -107,6 +111,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         self._layer_config = None
         self._review_config = None
         self._chat_subtitle_config = None
+        self._chat_video_type = None
         self._room_id = None
         self._create_time = None
         self._update_time = None
@@ -135,6 +140,8 @@ class ShowSmartChatRoomResponse(SdkResponse):
             self.review_config = review_config
         if chat_subtitle_config is not None:
             self.chat_subtitle_config = chat_subtitle_config
+        if chat_video_type is not None:
+            self.chat_video_type = chat_video_type
         if room_id is not None:
             self.room_id = room_id
         if create_time is not None:
@@ -367,6 +374,28 @@ class ShowSmartChatRoomResponse(SdkResponse):
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
         """
         self._chat_subtitle_config = chat_subtitle_config
+
+    @property
+    def chat_video_type(self):
+        """Gets the chat_video_type of this ShowSmartChatRoomResponse.
+
+        智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+
+        :return: The chat_video_type of this ShowSmartChatRoomResponse.
+        :rtype: str
+        """
+        return self._chat_video_type
+
+    @chat_video_type.setter
+    def chat_video_type(self, chat_video_type):
+        """Sets the chat_video_type of this ShowSmartChatRoomResponse.
+
+        智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
+
+        :param chat_video_type: The chat_video_type of this ShowSmartChatRoomResponse.
+        :type chat_video_type: str
+        """
+        self._chat_video_type = chat_video_type
 
     @property
     def room_id(self):

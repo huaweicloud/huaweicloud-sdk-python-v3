@@ -23,7 +23,8 @@ class CompareResultInfo:
         'line_compare_overview_infos': 'list[LineCompareOverviewInfo]',
         'line_compare_detail_infos': 'list[TableLineCompareDetailInfo]',
         'content_compare_overview_infos': 'list[ContentCompareOverviewInfo]',
-        'content_compare_detail_infos': 'list[ContentCompareDetailInfo]'
+        'content_compare_detail_infos': 'list[ContentCompareDetailInfo]',
+        'content_diff_detail_info': 'ContentDiffDetailInfo'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CompareResultInfo:
         'line_compare_overview_infos': 'line_compare_overview_infos',
         'line_compare_detail_infos': 'line_compare_detail_infos',
         'content_compare_overview_infos': 'content_compare_overview_infos',
-        'content_compare_detail_infos': 'content_compare_detail_infos'
+        'content_compare_detail_infos': 'content_compare_detail_infos',
+        'content_diff_detail_info': 'content_diff_detail_info'
     }
 
-    def __init__(self, objects_compare_overview_info=None, objects_compare_detail_infos=None, data_compare_task_list=None, line_compare_overview_infos=None, line_compare_detail_infos=None, content_compare_overview_infos=None, content_compare_detail_infos=None):
+    def __init__(self, objects_compare_overview_info=None, objects_compare_detail_infos=None, data_compare_task_list=None, line_compare_overview_infos=None, line_compare_detail_infos=None, content_compare_overview_infos=None, content_compare_detail_infos=None, content_diff_detail_info=None):
         """CompareResultInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CompareResultInfo:
         :type content_compare_overview_infos: list[:class:`huaweicloudsdkdrs.v5.ContentCompareOverviewInfo`]
         :param content_compare_detail_infos: 内容对比详情信息体。
         :type content_compare_detail_infos: list[:class:`huaweicloudsdkdrs.v5.ContentCompareDetailInfo`]
+        :param content_diff_detail_info: 
+        :type content_diff_detail_info: :class:`huaweicloudsdkdrs.v5.ContentDiffDetailInfo`
         """
         
         
@@ -66,6 +70,7 @@ class CompareResultInfo:
         self._line_compare_detail_infos = None
         self._content_compare_overview_infos = None
         self._content_compare_detail_infos = None
+        self._content_diff_detail_info = None
         self.discriminator = None
 
         if objects_compare_overview_info is not None:
@@ -82,6 +87,8 @@ class CompareResultInfo:
             self.content_compare_overview_infos = content_compare_overview_infos
         if content_compare_detail_infos is not None:
             self.content_compare_detail_infos = content_compare_detail_infos
+        if content_diff_detail_info is not None:
+            self.content_diff_detail_info = content_diff_detail_info
 
     @property
     def objects_compare_overview_info(self):
@@ -232,6 +239,24 @@ class CompareResultInfo:
         :type content_compare_detail_infos: list[:class:`huaweicloudsdkdrs.v5.ContentCompareDetailInfo`]
         """
         self._content_compare_detail_infos = content_compare_detail_infos
+
+    @property
+    def content_diff_detail_info(self):
+        """Gets the content_diff_detail_info of this CompareResultInfo.
+
+        :return: The content_diff_detail_info of this CompareResultInfo.
+        :rtype: :class:`huaweicloudsdkdrs.v5.ContentDiffDetailInfo`
+        """
+        return self._content_diff_detail_info
+
+    @content_diff_detail_info.setter
+    def content_diff_detail_info(self, content_diff_detail_info):
+        """Sets the content_diff_detail_info of this CompareResultInfo.
+
+        :param content_diff_detail_info: The content_diff_detail_info of this CompareResultInfo.
+        :type content_diff_detail_info: :class:`huaweicloudsdkdrs.v5.ContentDiffDetailInfo`
+        """
+        self._content_diff_detail_info = content_diff_detail_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

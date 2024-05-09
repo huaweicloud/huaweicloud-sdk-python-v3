@@ -1,3 +1,354 @@
+# 3.1.95 2024-05-09
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - Support the APIs `CreateEnterpriseProjectAuth`, `ListSubCustomerBudget`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - Support the APIs `ListVpcEgress`, `CreateVpcEgress`, `DeleteVpcEgress`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CBH
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeInstanceNetwork**
+    - changes of response param
+      - `- nics`
+      - `- public_eip_statu`
+      - `* status: string -> boolean`
+      - `* security_grp_status: string -> boolean`
+
+### HuaweiCloud SDK CloudPond
+
+- _Features_
+  - Support the API `ListSupportedZones`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support the APIs `ImportFlinkJobSavepoint`, `ExecuteFlinkJobSavepoint`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSparkJobLog**
+    - changes of response param
+      - `* from: string -> int32`
+  - **CreateConnectivityTask**
+    - changes of response param
+      - `* task_id: string -> int64`
+  - **UpdateQueuePlan**
+    - changes of response param
+      - `* plan_id: string -> int64`
+  - **BatchRunFlinkJobs**
+    - changes of response param
+      - `* is_success: boolean -> string`
+      - `* : list<SuccessResponse> -> list<FlinkSuccessResponse>`
+  - **BatchStopFlinkJobs**
+    - changes of response param
+      - `* is_success: boolean -> string`
+      - `* : list<SuccessResponse> -> list<FlinkSuccessResponse>`
+  - **BatchDeleteFlinkJobs**
+    - changes of response param
+      - `- is_success`
+      - `- message`
+  - **ExportFlinkJobs**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **ListElasticResourcePoolScaleRecords**
+    - changes of response param
+      - `* count: int32 -> int64`
+  - **ShowFlinkJobExecutionGraph**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **ImportFlinkJobs**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **DeleteFlinkJob**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **ShowFlinkJob**
+    - changes of response param
+      - `* job_detail.job_config.root_id: int32 -> int64`
+  - **ListFlinkJobs**
+    - changes of response param
+      - `* job_list.total_count: int32 -> int64`
+      - `* job_list.jobs.job_config.root_id: int32 -> int64`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the following APIs:
+    - `ListObejectLevelCompareOverview`
+    - `CreateObjectLevelCompareJob`
+    - `ListObejectLevelCompareDetail`
+    - `ListContentCompareDifference`
+    - `DownloadCompareResultFile`
+    - `CreateCompareResultFile`
+    - `ShowHealthCompareJobDetail`
+    - `ShowHealthObjectCompareJobOverview`
+    - `UpdateComparePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchCreateJobs**
+    - changes of request param
+      - `+ jobs.source_endpoint.kafka_security_config`
+  - **BatchValidateConnections**
+    - changes of request param
+      - `+ jobs.kafka_security_config.endpoint_algorithm`
+      - `+ jobs.kafka_security_config.sasl_mechanism`
+      - `+ jobs.kafka_security_config.delegation_tokens`
+      - `+ jobs.kafka_security_config.enable_key_store`
+      - `+ jobs.kafka_security_config.key_store_key`
+      - `+ jobs.kafka_security_config.key_store_key_name`
+      - `+ jobs.kafka_security_config.key_store_password`
+      - `+ jobs.kafka_security_config.set_private_key_password`
+      - `+ jobs.kafka_security_config.key_password`
+      - `+ jobs.kafka_security_config.type: enum value [SASL_PLAINTEXT,SSL]`
+  - **ShowJobList**
+    - changes of response param
+      - `+ jobs.children.job_direction: enum value [no-dbs]`
+      - `- jobs.children.job_direction: enum value [non-dbs]`
+  - **BatchUpdateJob**
+    - changes of request param
+      - `+ jobs.source_endpoint.kafka_security_config`
+  - **BatchListJobDetails**
+    - changes of response param
+      - `+ results.source_endpoint.kafka_security_config`
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.is_writable`
+      - `+ jobs.compare_result.content_diff_detail_info`
+      - `+ jobs.compare_result.content_compare_overview_infos.status: enum value [WAIT_FOR_COMPARE,CANCELED]`
+  - **UpdateBatchAsyncJobs**
+    - changes of request param
+      - `+ jobs.type: enum value [notify]`
+  - **ShowJobDetail**
+    - changes of request param
+      - `+ type: enum value [is_writable,cloud_connection]`
+    - changes of response param
+      - `+ job.is_writable`
+      - `+ job.compare_result.content_diff_detail_info`
+      - `+ job.compare_result.content_compare_overview_infos.status: enum value [WAIT_FOR_COMPARE,CANCELED]`
+  - **UpdateJob**
+    - changes of request param
+      - `+ job.type: enum value [notify]`
+  - **ExecuteJobAction**
+    - changes of request param
+      - `+ job.action_name: enum value [set_writable,cloud_connection]`
+      - `+ job.action_params.replay_config`
+  - **BatchExecuteJobActions**
+    - changes of request param
+      - `+ jobs.action_name: enum value [set_writable,cloud_connection]`
+      - `+ jobs.action_params.replay_config`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - Support the API `ChangeVpc`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - Support the following APIs:
+    - `CreateSearchJob`
+    - `ShowSearchJob`
+    - `CreateMolBatchDownloadTask`
+    - `ShowMolBatchDownloadTask`
+    - `ListDrugDatabase`
+    - `CreateDrugDatabase`
+    - `UpdateDrugDatabase`
+    - `DeleteDrugDatabase`
+    - `AddDrugDatabaseFile`
+    - `ListCssCluster`
+    - `CreateCssCluster`
+    - `ListTermTenantCssCluster`
+    - `ValidateCssConnection`
+    - `DeleteCssCluster`
+    - `UpdateDrugJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UploadData**
+    - changes of request param
+      - `- target_folder`
+      - `- part_number`
+      - `- total_part`
+      - `- multipart_id`
+      - `- file_name`
+      - `- md5`
+      - `+ target_folder`
+      - `+ part_number`
+      - `+ total_part`
+      - `+ multipart_id`
+      - `+ file_name`
+      - `+ md5`
+  - **DownloadData**
+    - changes of request param
+      - `+ range_start`
+      - `+ range_end`
+  - **ListArchiveConfigs**
+    - changes of response param
+      - `- configs.bucket_name`
+  - **CreateOptmJob**
+    - changes of request param
+      - `+ binding_sites`
+      - `+ binding_site.name`
+  - **ShowOptmJob**
+    - changes of response param
+      - `+ binding_sites`
+      - `+ binding_site.name`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateFunctionCode**
+    - changes of request param
+      - `- depend_list`
+  - **CreateFunction**
+    - changes of request param
+      - `+ gpu_type`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the following APIs:
+    - `ListStarRocksDataReplications`
+    - `CreateStarRocksDataReplication`
+    - `DeleteStarRocksDataReplication`
+    - `CheckDataBaseConfig`
+    - `CheckTableConfig`
+    - `ListStarRocksDataReplicationConfig`
+    - `ListStarRocksDbParameters`
+    - `ListStarRocksDataBases`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateGraph2**
+    - changes of request param
+      - `+ graph.is_dynamic_graph`
+  - **DeleteGraph2**
+    - changes of request param
+      - `+ delete_eip`
+
+### HuaweiCloud SDK MetaStudio
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **StartSmartChatJob**
+    - changes of response param
+      - `+ chat_video_type`
+  - **ShowSmartChatJob**
+    - changes of response param
+      - `+ chat_video_type`
+  - **CreateSmartChatRoom**
+    - changes of request param
+      - `+ chat_video_type`
+  - **ShowSmartChatRoom**
+    - changes of response param
+      - `+ chat_video_type`
+  - **UpdateSmartChatRoom**
+    - changes of request param
+      - `+ chat_video_type`
+    - changes of response param
+      - `+ chat_video_type`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ interaction_rules.trigger.extra_layer_config`
+      - `+ interaction_rules.trigger.layer_config.text_config`
+      - `+ interaction_rules.trigger.layer_config.layer_type: enum value [TEXT]`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ interaction_rules.trigger.extra_layer_config`
+      - `+ interaction_rules.trigger.layer_config.text_config`
+      - `+ interaction_rules.trigger.layer_config.layer_type: enum value [TEXT]`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ interaction_rules.trigger.extra_layer_config`
+      - `+ interaction_rules.trigger.layer_config.text_config`
+      - `+ interaction_rules.trigger.layer_config.layer_type: enum value [TEXT]`
+    - changes of response param
+      - `+ interaction_rules.trigger.extra_layer_config`
+      - `+ interaction_rules.trigger.layer_config.text_config`
+      - `+ interaction_rules.trigger.layer_config.layer_type: enum value [TEXT]`
+  - **UpdateInteractionRuleGroup**
+    - changes of request param
+      - `+ interaction_rules.trigger.extra_layer_config`
+      - `+ interaction_rules.trigger.layer_config.text_config`
+      - `+ interaction_rules.trigger.layer_config.layer_type: enum value [TEXT]`
+    - changes of response param
+      - `+ interaction_rules.trigger.extra_layer_config`
+      - `+ interaction_rules.trigger.layer_config.text_config`
+      - `+ interaction_rules.trigger.layer_config.layer_type: enum value [TEXT]`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `+ view_mode`
+  - **ShowVideoScript**
+    - changes of response param
+      - `+ view_mode`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `+ view_mode`
+  - **CreateInteractionRuleGroup**
+    - changes of request param
+      - `+ interaction_rules.trigger.extra_layer_config`
+      - `+ interaction_rules.trigger.layer_config.text_config`
+      - `+ interaction_rules.trigger.layer_config.layer_type: enum value [TEXT]`
+  - **ListInteractionRuleGroups**
+    - changes of response param
+      - `+ interaction_rule_groups.interaction_rules.trigger.extra_layer_config`
+      - `+ interaction_rule_groups.interaction_rules.trigger.layer_config.text_config`
+      - `+ interaction_rule_groups.interaction_rules.trigger.layer_config.layer_type: enum value [TEXT]`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTranscodingTask**
+    - changes of request param
+      - `+ video_process.hls_segment_type`
+
 # 3.1.94 2024-04-30
 
 ### HuaweiCloud SDK AOS

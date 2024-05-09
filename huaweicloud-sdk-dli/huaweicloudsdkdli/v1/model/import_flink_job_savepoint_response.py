@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SuccessResponse:
+class ImportFlinkJobSavepointResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,7 +18,7 @@ class SuccessResponse:
     sensitive_list = []
 
     openapi_types = {
-        'is_success': 'bool',
+        'is_success': 'str',
         'message': 'str'
     }
 
@@ -27,17 +28,17 @@ class SuccessResponse:
     }
 
     def __init__(self, is_success=None, message=None):
-        """SuccessResponse
+        """ImportFlinkJobSavepointResponse
 
         The model defined in huaweicloud sdk
 
         :param is_success: 执行请求是否成功。“true”表示请求执行成功。
-        :type is_success: bool
+        :type is_success: str
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         """
         
-        
+        super(ImportFlinkJobSavepointResponse, self).__init__()
 
         self._is_success = None
         self._message = None
@@ -50,44 +51,44 @@ class SuccessResponse:
 
     @property
     def is_success(self):
-        """Gets the is_success of this SuccessResponse.
+        """Gets the is_success of this ImportFlinkJobSavepointResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
-        :return: The is_success of this SuccessResponse.
-        :rtype: bool
+        :return: The is_success of this ImportFlinkJobSavepointResponse.
+        :rtype: str
         """
         return self._is_success
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this SuccessResponse.
+        """Sets the is_success of this ImportFlinkJobSavepointResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
-        :param is_success: The is_success of this SuccessResponse.
-        :type is_success: bool
+        :param is_success: The is_success of this ImportFlinkJobSavepointResponse.
+        :type is_success: str
         """
         self._is_success = is_success
 
     @property
     def message(self):
-        """Gets the message of this SuccessResponse.
+        """Gets the message of this ImportFlinkJobSavepointResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
-        :return: The message of this SuccessResponse.
+        :return: The message of this ImportFlinkJobSavepointResponse.
         :rtype: str
         """
         return self._message
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SuccessResponse.
+        """Sets the message of this ImportFlinkJobSavepointResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
-        :param message: The message of this SuccessResponse.
+        :param message: The message of this ImportFlinkJobSavepointResponse.
         :type message: str
         """
         self._message = message
@@ -134,7 +135,7 @@ class SuccessResponse:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SuccessResponse):
+        if not isinstance(other, ImportFlinkJobSavepointResponse):
             return False
 
         return self.__dict__ == other.__dict__

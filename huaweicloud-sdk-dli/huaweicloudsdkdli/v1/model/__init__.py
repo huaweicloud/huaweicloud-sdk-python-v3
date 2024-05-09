@@ -159,6 +159,9 @@ from huaweicloudsdkdli.v1.model.enhanced_connection import EnhancedConnection
 from huaweicloudsdkdli.v1.model.enhanced_connection_host import EnhancedConnectionHost
 from huaweicloudsdkdli.v1.model.enhanced_connection_privilege import EnhancedConnectionPrivilege
 from huaweicloudsdkdli.v1.model.enhanced_connection_resource import EnhancedConnectionResource
+from huaweicloudsdkdli.v1.model.execute_flink_job_savepoint_request import ExecuteFlinkJobSavepointRequest
+from huaweicloudsdkdli.v1.model.execute_flink_job_savepoint_request_body import ExecuteFlinkJobSavepointRequestBody
+from huaweicloudsdkdli.v1.model.execute_flink_job_savepoint_response import ExecuteFlinkJobSavepointResponse
 from huaweicloudsdkdli.v1.model.export_flink_jobs_request import ExportFlinkJobsRequest
 from huaweicloudsdkdli.v1.model.export_flink_jobs_request_body import ExportFlinkJobsRequestBody
 from huaweicloudsdkdli.v1.model.export_flink_jobs_response import ExportFlinkJobsResponse
@@ -180,9 +183,13 @@ from huaweicloudsdkdli.v1.model.flink_metric_list import FlinkMetricList
 from huaweicloudsdkdli.v1.model.flink_sql_job_template import FlinkSqlJobTemplate
 from huaweicloudsdkdli.v1.model.flink_sql_job_template_id import FlinkSqlJobTemplateId
 from huaweicloudsdkdli.v1.model.flink_sql_job_template_list import FlinkSqlJobTemplateList
+from huaweicloudsdkdli.v1.model.flink_success_response import FlinkSuccessResponse
 from huaweicloudsdkdli.v1.model.flink_template import FlinkTemplate
 from huaweicloudsdkdli.v1.model.global_variable import GlobalVariable
 from huaweicloudsdkdli.v1.model.ief_event import IefEvent
+from huaweicloudsdkdli.v1.model.import_flink_job_savepoint_request import ImportFlinkJobSavepointRequest
+from huaweicloudsdkdli.v1.model.import_flink_job_savepoint_request_body import ImportFlinkJobSavepointRequestBody
+from huaweicloudsdkdli.v1.model.import_flink_job_savepoint_response import ImportFlinkJobSavepointResponse
 from huaweicloudsdkdli.v1.model.import_flink_jobs_request import ImportFlinkJobsRequest
 from huaweicloudsdkdli.v1.model.import_flink_jobs_request_body import ImportFlinkJobsRequestBody
 from huaweicloudsdkdli.v1.model.import_flink_jobs_response import ImportFlinkJobsResponse
@@ -339,7 +346,6 @@ from huaweicloudsdkdli.v1.model.sql_sample_template import SqlSampleTemplate
 from huaweicloudsdkdli.v1.model.state import State
 from huaweicloudsdkdli.v1.model.stop_flink_jobs_request_body import StopFlinkJobsRequestBody
 from huaweicloudsdkdli.v1.model.sub_job import SubJob
-from huaweicloudsdkdli.v1.model.success_response import SuccessResponse
 from huaweicloudsdkdli.v1.model.table import Table
 from huaweicloudsdkdli.v1.model.table_privilege import TablePrivilege
 from huaweicloudsdkdli.v1.model.table_user_privilege import TableUserPrivilege

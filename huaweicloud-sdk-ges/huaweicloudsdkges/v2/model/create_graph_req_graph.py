@@ -37,7 +37,8 @@ class CreateGraphReqGraph:
         'product_type': 'str',
         'vertex_id_type': 'CreateGraphReqGraphVertexIdType',
         'enable_multi_label': 'bool',
-        'capacity_ratio': 'int'
+        'capacity_ratio': 'int',
+        'is_dynamic_graph': 'bool'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class CreateGraphReqGraph:
         'product_type': 'product_type',
         'vertex_id_type': 'vertex_id_type',
         'enable_multi_label': 'enable_multi_label',
-        'capacity_ratio': 'capacity_ratio'
+        'capacity_ratio': 'capacity_ratio',
+        'is_dynamic_graph': 'is_dynamic_graph'
     }
 
-    def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None, enable_multi_label=None, capacity_ratio=None):
+    def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None, enable_multi_label=None, capacity_ratio=None, is_dynamic_graph=None):
         """CreateGraphReqGraph
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class CreateGraphReqGraph:
         :type enable_multi_label: bool
         :param capacity_ratio: 图的容量倍率。该参数只有持久化版百亿规格图支持，且从2.3.18版本后开始支持。
         :type capacity_ratio: int
+        :param is_dynamic_graph: 是否为动态图
+        :type is_dynamic_graph: bool
         """
         
         
@@ -136,6 +140,7 @@ class CreateGraphReqGraph:
         self._vertex_id_type = None
         self._enable_multi_label = None
         self._capacity_ratio = None
+        self._is_dynamic_graph = None
         self.discriminator = None
 
         self.name = name
@@ -173,6 +178,8 @@ class CreateGraphReqGraph:
             self.enable_multi_label = enable_multi_label
         if capacity_ratio is not None:
             self.capacity_ratio = capacity_ratio
+        if is_dynamic_graph is not None:
+            self.is_dynamic_graph = is_dynamic_graph
 
     @property
     def name(self):
@@ -619,6 +626,28 @@ class CreateGraphReqGraph:
         :type capacity_ratio: int
         """
         self._capacity_ratio = capacity_ratio
+
+    @property
+    def is_dynamic_graph(self):
+        """Gets the is_dynamic_graph of this CreateGraphReqGraph.
+
+        是否为动态图
+
+        :return: The is_dynamic_graph of this CreateGraphReqGraph.
+        :rtype: bool
+        """
+        return self._is_dynamic_graph
+
+    @is_dynamic_graph.setter
+    def is_dynamic_graph(self, is_dynamic_graph):
+        """Sets the is_dynamic_graph of this CreateGraphReqGraph.
+
+        是否为动态图
+
+        :param is_dynamic_graph: The is_dynamic_graph of this CreateGraphReqGraph.
+        :type is_dynamic_graph: bool
+        """
+        self._is_dynamic_graph = is_dynamic_graph
 
     def to_dict(self):
         """Returns the model properties as a dict"""
