@@ -21,6 +21,8 @@ from huaweicloudsdkcdn.v2.model.cache_rules import CacheRules
 from huaweicloudsdkcdn.v2.model.cache_url_parameter_filter import CacheUrlParameterFilter
 from huaweicloudsdkcdn.v2.model.cache_url_parameter_filter_get_body import CacheUrlParameterFilterGetBody
 from huaweicloudsdkcdn.v2.model.cdn_ips import CdnIps
+from huaweicloudsdkcdn.v2.model.certificates_get_body import CertificatesGetBody
+from huaweicloudsdkcdn.v2.model.certificates_put_body import CertificatesPutBody
 from huaweicloudsdkcdn.v2.model.common_remote_auth import CommonRemoteAuth
 from huaweicloudsdkcdn.v2.model.compress import Compress
 from huaweicloudsdkcdn.v2.model.configs import Configs

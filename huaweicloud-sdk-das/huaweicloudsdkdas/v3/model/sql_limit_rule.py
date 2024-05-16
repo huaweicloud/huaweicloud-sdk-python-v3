@@ -20,17 +20,19 @@ class SqlLimitRule:
         'id': 'str',
         'sql_type': 'str',
         'pattern': 'str',
-        'max_concurrency': 'int'
+        'max_concurrency': 'int',
+        'max_waiting': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'sql_type': 'sql_type',
         'pattern': 'pattern',
-        'max_concurrency': 'max_concurrency'
+        'max_concurrency': 'max_concurrency',
+        'max_waiting': 'max_waiting'
     }
 
-    def __init__(self, id=None, sql_type=None, pattern=None, max_concurrency=None):
+    def __init__(self, id=None, sql_type=None, pattern=None, max_concurrency=None, max_waiting=None):
         """SqlLimitRule
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class SqlLimitRule:
         :type pattern: str
         :param max_concurrency: 最大并发数
         :type max_concurrency: int
+        :param max_waiting: 最大等待时间
+        :type max_waiting: int
         """
         
         
@@ -51,12 +55,15 @@ class SqlLimitRule:
         self._sql_type = None
         self._pattern = None
         self._max_concurrency = None
+        self._max_waiting = None
         self.discriminator = None
 
         self.id = id
         self.sql_type = sql_type
         self.pattern = pattern
         self.max_concurrency = max_concurrency
+        if max_waiting is not None:
+            self.max_waiting = max_waiting
 
     @property
     def id(self):
@@ -145,6 +152,28 @@ class SqlLimitRule:
         :type max_concurrency: int
         """
         self._max_concurrency = max_concurrency
+
+    @property
+    def max_waiting(self):
+        """Gets the max_waiting of this SqlLimitRule.
+
+        最大等待时间
+
+        :return: The max_waiting of this SqlLimitRule.
+        :rtype: int
+        """
+        return self._max_waiting
+
+    @max_waiting.setter
+    def max_waiting(self, max_waiting):
+        """Sets the max_waiting of this SqlLimitRule.
+
+        最大等待时间
+
+        :param max_waiting: The max_waiting of this SqlLimitRule.
+        :type max_waiting: int
+        """
+        self._max_waiting = max_waiting
 
     def to_dict(self):
         """Returns the model properties as a dict"""

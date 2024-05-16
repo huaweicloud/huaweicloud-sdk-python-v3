@@ -19,6 +19,7 @@ class CreateSqlJobRequestBody:
     openapi_types = {
         'sql': 'str',
         'engine_type': 'str',
+        'current_catalog': 'str',
         'currentdb': 'str',
         'queue_name': 'str',
         'conf': 'list[str]',
@@ -28,13 +29,14 @@ class CreateSqlJobRequestBody:
     attribute_map = {
         'sql': 'sql',
         'engine_type': 'engine_type',
+        'current_catalog': 'current_catalog',
         'currentdb': 'currentdb',
         'queue_name': 'queue_name',
         'conf': 'conf',
         'tags': 'tags'
     }
 
-    def __init__(self, sql=None, engine_type=None, currentdb=None, queue_name=None, conf=None, tags=None):
+    def __init__(self, sql=None, engine_type=None, current_catalog=None, currentdb=None, queue_name=None, conf=None, tags=None):
         """CreateSqlJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateSqlJobRequestBody:
         :type sql: str
         :param engine_type: 待提交作业的队列引擎名称，名称只能包含英文字母。
         :type engine_type: str
+        :param current_catalog: 待提交作业的表默认catalog。
+        :type current_catalog: str
         :param currentdb: SQL语句执行所在的数据库。当创建新数据库时，不需要提供此参数。
         :type currentdb: str
         :param queue_name: 待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
@@ -57,6 +61,7 @@ class CreateSqlJobRequestBody:
 
         self._sql = None
         self._engine_type = None
+        self._current_catalog = None
         self._currentdb = None
         self._queue_name = None
         self._conf = None
@@ -66,6 +71,8 @@ class CreateSqlJobRequestBody:
         self.sql = sql
         if engine_type is not None:
             self.engine_type = engine_type
+        if current_catalog is not None:
+            self.current_catalog = current_catalog
         if currentdb is not None:
             self.currentdb = currentdb
         if queue_name is not None:
@@ -118,6 +125,28 @@ class CreateSqlJobRequestBody:
         :type engine_type: str
         """
         self._engine_type = engine_type
+
+    @property
+    def current_catalog(self):
+        """Gets the current_catalog of this CreateSqlJobRequestBody.
+
+        待提交作业的表默认catalog。
+
+        :return: The current_catalog of this CreateSqlJobRequestBody.
+        :rtype: str
+        """
+        return self._current_catalog
+
+    @current_catalog.setter
+    def current_catalog(self, current_catalog):
+        """Sets the current_catalog of this CreateSqlJobRequestBody.
+
+        待提交作业的表默认catalog。
+
+        :param current_catalog: The current_catalog of this CreateSqlJobRequestBody.
+        :type current_catalog: str
+        """
+        self._current_catalog = current_catalog
 
     @property
     def currentdb(self):

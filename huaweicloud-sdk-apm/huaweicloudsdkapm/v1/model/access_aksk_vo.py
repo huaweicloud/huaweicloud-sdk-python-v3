@@ -24,7 +24,9 @@ class AccessAkskVO:
         'ak': 'str',
         'sk': 'str',
         'status': 'str',
-        'descp': 'str'
+        'descp': 'str',
+        'gmt_create_timestamp': 'int',
+        'gmt_modify_timestamp': 'int'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class AccessAkskVO:
         'ak': 'ak',
         'sk': 'sk',
         'status': 'status',
-        'descp': 'descp'
+        'descp': 'descp',
+        'gmt_create_timestamp': 'gmt_create_timestamp',
+        'gmt_modify_timestamp': 'gmt_modify_timestamp'
     }
 
-    def __init__(self, id=None, gmt_create=None, gmt_modify=None, inner_domain_id=None, ak=None, sk=None, status=None, descp=None):
+    def __init__(self, id=None, gmt_create=None, gmt_modify=None, inner_domain_id=None, ak=None, sk=None, status=None, descp=None, gmt_create_timestamp=None, gmt_modify_timestamp=None):
         """AccessAkskVO
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class AccessAkskVO:
         :type status: str
         :param descp: ak/sk的描述信息。
         :type descp: str
+        :param gmt_create_timestamp: ak/sk的生成时间戳。
+        :type gmt_create_timestamp: int
+        :param gmt_modify_timestamp: ak/sk的修改时间戳。
+        :type gmt_modify_timestamp: int
         """
         
         
@@ -71,6 +79,8 @@ class AccessAkskVO:
         self._sk = None
         self._status = None
         self._descp = None
+        self._gmt_create_timestamp = None
+        self._gmt_modify_timestamp = None
         self.discriminator = None
 
         if id is not None:
@@ -89,6 +99,10 @@ class AccessAkskVO:
             self.status = status
         if descp is not None:
             self.descp = descp
+        if gmt_create_timestamp is not None:
+            self.gmt_create_timestamp = gmt_create_timestamp
+        if gmt_modify_timestamp is not None:
+            self.gmt_modify_timestamp = gmt_modify_timestamp
 
     @property
     def id(self):
@@ -265,6 +279,50 @@ class AccessAkskVO:
         :type descp: str
         """
         self._descp = descp
+
+    @property
+    def gmt_create_timestamp(self):
+        """Gets the gmt_create_timestamp of this AccessAkskVO.
+
+        ak/sk的生成时间戳。
+
+        :return: The gmt_create_timestamp of this AccessAkskVO.
+        :rtype: int
+        """
+        return self._gmt_create_timestamp
+
+    @gmt_create_timestamp.setter
+    def gmt_create_timestamp(self, gmt_create_timestamp):
+        """Sets the gmt_create_timestamp of this AccessAkskVO.
+
+        ak/sk的生成时间戳。
+
+        :param gmt_create_timestamp: The gmt_create_timestamp of this AccessAkskVO.
+        :type gmt_create_timestamp: int
+        """
+        self._gmt_create_timestamp = gmt_create_timestamp
+
+    @property
+    def gmt_modify_timestamp(self):
+        """Gets the gmt_modify_timestamp of this AccessAkskVO.
+
+        ak/sk的修改时间戳。
+
+        :return: The gmt_modify_timestamp of this AccessAkskVO.
+        :rtype: int
+        """
+        return self._gmt_modify_timestamp
+
+    @gmt_modify_timestamp.setter
+    def gmt_modify_timestamp(self, gmt_modify_timestamp):
+        """Sets the gmt_modify_timestamp of this AccessAkskVO.
+
+        ak/sk的修改时间戳。
+
+        :param gmt_modify_timestamp: The gmt_modify_timestamp of this AccessAkskVO.
+        :type gmt_modify_timestamp: int
+        """
+        self._gmt_modify_timestamp = gmt_modify_timestamp
 
     def to_dict(self):
         """Returns the model properties as a dict"""

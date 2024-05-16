@@ -41,11 +41,11 @@ class CreateTtsAuditionRequestBody:
         :type text: str
         :param emotion: 音色ID。
         :type emotion: str
-        :param speed: 语速。
+        :param speed: 语速。 默认值100，最小值50，最大值200。 &gt; * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 &gt; * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
         :type speed: int
-        :param pitch: 音高。
+        :param pitch: 音高。 默认值100，最小值50，最大值200。
         :type pitch: int
-        :param volume: 音量。
+        :param volume: 音量。 默认值140，最小值90，最大值240。
         :type volume: int
         """
         
@@ -115,7 +115,7 @@ class CreateTtsAuditionRequestBody:
     def speed(self):
         """Gets the speed of this CreateTtsAuditionRequestBody.
 
-        语速。
+        语速。 默认值100，最小值50，最大值200。 > * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 > * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
         :return: The speed of this CreateTtsAuditionRequestBody.
         :rtype: int
@@ -126,7 +126,7 @@ class CreateTtsAuditionRequestBody:
     def speed(self, speed):
         """Sets the speed of this CreateTtsAuditionRequestBody.
 
-        语速。
+        语速。 默认值100，最小值50，最大值200。 > * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 > * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
         :param speed: The speed of this CreateTtsAuditionRequestBody.
         :type speed: int
@@ -137,7 +137,7 @@ class CreateTtsAuditionRequestBody:
     def pitch(self):
         """Gets the pitch of this CreateTtsAuditionRequestBody.
 
-        音高。
+        音高。 默认值100，最小值50，最大值200。
 
         :return: The pitch of this CreateTtsAuditionRequestBody.
         :rtype: int
@@ -148,7 +148,7 @@ class CreateTtsAuditionRequestBody:
     def pitch(self, pitch):
         """Sets the pitch of this CreateTtsAuditionRequestBody.
 
-        音高。
+        音高。 默认值100，最小值50，最大值200。
 
         :param pitch: The pitch of this CreateTtsAuditionRequestBody.
         :type pitch: int
@@ -159,7 +159,7 @@ class CreateTtsAuditionRequestBody:
     def volume(self):
         """Gets the volume of this CreateTtsAuditionRequestBody.
 
-        音量。
+        音量。 默认值140，最小值90，最大值240。
 
         :return: The volume of this CreateTtsAuditionRequestBody.
         :rtype: int
@@ -170,7 +170,7 @@ class CreateTtsAuditionRequestBody:
     def volume(self, volume):
         """Sets the volume of this CreateTtsAuditionRequestBody.
 
-        音量。
+        音量。 默认值140，最小值90，最大值240。
 
         :param volume: The volume of this CreateTtsAuditionRequestBody.
         :type volume: int

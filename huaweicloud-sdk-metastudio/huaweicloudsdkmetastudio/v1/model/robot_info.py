@@ -22,6 +22,7 @@ class RobotInfo:
         'room_id': 'str',
         'app_id': 'str',
         'app_type': 'int',
+        'app_key': 'str',
         'language': 'LanguageEnum',
         'create_time': 'str',
         'update_time': 'str',
@@ -29,7 +30,8 @@ class RobotInfo:
         'cbs_project_id': 'str',
         'llm_url': 'str',
         'is_stream': 'bool',
-        'chat_rounds': 'int'
+        'chat_rounds': 'int',
+        'role_id': 'str'
     }
 
     attribute_map = {
@@ -38,6 +40,7 @@ class RobotInfo:
         'room_id': 'room_id',
         'app_id': 'app_id',
         'app_type': 'app_type',
+        'app_key': 'app_key',
         'language': 'language',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -45,10 +48,11 @@ class RobotInfo:
         'cbs_project_id': 'cbs_project_id',
         'llm_url': 'llm_url',
         'is_stream': 'is_stream',
-        'chat_rounds': 'chat_rounds'
+        'chat_rounds': 'chat_rounds',
+        'role_id': 'role_id'
     }
 
-    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None):
+    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, role_id=None):
         """RobotInfo
 
         The model defined in huaweicloud sdk
@@ -61,8 +65,10 @@ class RobotInfo:
         :type room_id: str
         :param app_id: 第三方应用ID。
         :type app_id: str
-        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
+        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
         :type app_type: int
+        :param app_key: 应用的AccessKey或帐号。
+        :type app_key: str
         :param language: 
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -79,6 +85,8 @@ class RobotInfo:
         :type is_stream: bool
         :param chat_rounds: 支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
         :type chat_rounds: int
+        :param role_id: 奇妙问角色ID。
+        :type role_id: str
         """
         
         
@@ -88,6 +96,7 @@ class RobotInfo:
         self._room_id = None
         self._app_id = None
         self._app_type = None
+        self._app_key = None
         self._language = None
         self._create_time = None
         self._update_time = None
@@ -96,6 +105,7 @@ class RobotInfo:
         self._llm_url = None
         self._is_stream = None
         self._chat_rounds = None
+        self._role_id = None
         self.discriminator = None
 
         if robot_id is not None:
@@ -108,6 +118,8 @@ class RobotInfo:
             self.app_id = app_id
         if app_type is not None:
             self.app_type = app_type
+        if app_key is not None:
+            self.app_key = app_key
         if language is not None:
             self.language = language
         if create_time is not None:
@@ -124,6 +136,8 @@ class RobotInfo:
             self.is_stream = is_stream
         if chat_rounds is not None:
             self.chat_rounds = chat_rounds
+        if role_id is not None:
+            self.role_id = role_id
 
     @property
     def robot_id(self):
@@ -217,7 +231,7 @@ class RobotInfo:
     def app_type(self):
         """Gets the app_type of this RobotInfo.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
         :return: The app_type of this RobotInfo.
         :rtype: int
@@ -228,12 +242,34 @@ class RobotInfo:
     def app_type(self, app_type):
         """Sets the app_type of this RobotInfo.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
         :param app_type: The app_type of this RobotInfo.
         :type app_type: int
         """
         self._app_type = app_type
+
+    @property
+    def app_key(self):
+        """Gets the app_key of this RobotInfo.
+
+        应用的AccessKey或帐号。
+
+        :return: The app_key of this RobotInfo.
+        :rtype: str
+        """
+        return self._app_key
+
+    @app_key.setter
+    def app_key(self, app_key):
+        """Sets the app_key of this RobotInfo.
+
+        应用的AccessKey或帐号。
+
+        :param app_key: The app_key of this RobotInfo.
+        :type app_key: str
+        """
+        self._app_key = app_key
 
     @property
     def language(self):
@@ -406,6 +442,28 @@ class RobotInfo:
         :type chat_rounds: int
         """
         self._chat_rounds = chat_rounds
+
+    @property
+    def role_id(self):
+        """Gets the role_id of this RobotInfo.
+
+        奇妙问角色ID。
+
+        :return: The role_id of this RobotInfo.
+        :rtype: str
+        """
+        return self._role_id
+
+    @role_id.setter
+    def role_id(self, role_id):
+        """Sets the role_id of this RobotInfo.
+
+        奇妙问角色ID。
+
+        :param role_id: The role_id of this RobotInfo.
+        :type role_id: str
+        """
+        self._role_id = role_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

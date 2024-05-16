@@ -18,11 +18,13 @@ class HttpGetBody:
 
     openapi_types = {
         'https_status': 'str',
+        'certificate_type': 'str',
+        'certificate_source': 'int',
         'certificate_name': 'str',
         'certificate_value': 'str',
         'expire_time': 'int',
-        'certificate_source': 'int',
-        'certificate_type': 'str',
+        'enc_certificate_value': 'str',
+        'certificates': 'list[CertificatesGetBody]',
         'http2_status': 'str',
         'tls_version': 'str',
         'ocsp_stapling_status': 'str'
@@ -30,33 +32,39 @@ class HttpGetBody:
 
     attribute_map = {
         'https_status': 'https_status',
+        'certificate_type': 'certificate_type',
+        'certificate_source': 'certificate_source',
         'certificate_name': 'certificate_name',
         'certificate_value': 'certificate_value',
         'expire_time': 'expire_time',
-        'certificate_source': 'certificate_source',
-        'certificate_type': 'certificate_type',
+        'enc_certificate_value': 'enc_certificate_value',
+        'certificates': 'certificates',
         'http2_status': 'http2_status',
         'tls_version': 'tls_version',
         'ocsp_stapling_status': 'ocsp_stapling_status'
     }
 
-    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, expire_time=None, certificate_source=None, certificate_type=None, http2_status=None, tls_version=None, ocsp_stapling_status=None):
+    def __init__(self, https_status=None, certificate_type=None, certificate_source=None, certificate_name=None, certificate_value=None, expire_time=None, enc_certificate_value=None, certificates=None, http2_status=None, tls_version=None, ocsp_stapling_status=None):
         """HttpGetBody
 
         The model defined in huaweicloud sdk
 
         :param https_status: HTTPS证书是否启用，on：开启，off：关闭。
         :type https_status: str
+        :param certificate_type: 证书类型。server：国际证书；server_sm：国密证书。
+        :type certificate_type: str
+        :param certificate_source: 证书来源，1：华为云托管证书，0：自有证书。
+        :type certificate_source: int
         :param certificate_name: 证书名字。
         :type certificate_name: str
         :param certificate_value: HTTPS协议使用的证书内容，PEM编码格式。
         :type certificate_value: str
         :param expire_time: 证书过期时间。  &gt; UTC时间。
         :type expire_time: int
-        :param certificate_source: 证书来源,0：自有证书。
-        :type certificate_source: int
-        :param certificate_type: 证书类型。server：国际证书；server_sm：国密证书。
-        :type certificate_type: str
+        :param enc_certificate_value: 国密证书加密证书内容，PEM编码格式。
+        :type enc_certificate_value: str
+        :param certificates: 
+        :type certificates: list[:class:`huaweicloudsdkcdn.v2.CertificatesGetBody`]
         :param http2_status: 是否使用HTTP2.0，on：是，off：否。
         :type http2_status: str
         :param tls_version: 传输层安全性协议。
@@ -68,11 +76,13 @@ class HttpGetBody:
         
 
         self._https_status = None
+        self._certificate_type = None
+        self._certificate_source = None
         self._certificate_name = None
         self._certificate_value = None
         self._expire_time = None
-        self._certificate_source = None
-        self._certificate_type = None
+        self._enc_certificate_value = None
+        self._certificates = None
         self._http2_status = None
         self._tls_version = None
         self._ocsp_stapling_status = None
@@ -80,16 +90,20 @@ class HttpGetBody:
 
         if https_status is not None:
             self.https_status = https_status
+        if certificate_type is not None:
+            self.certificate_type = certificate_type
+        if certificate_source is not None:
+            self.certificate_source = certificate_source
         if certificate_name is not None:
             self.certificate_name = certificate_name
         if certificate_value is not None:
             self.certificate_value = certificate_value
         if expire_time is not None:
             self.expire_time = expire_time
-        if certificate_source is not None:
-            self.certificate_source = certificate_source
-        if certificate_type is not None:
-            self.certificate_type = certificate_type
+        if enc_certificate_value is not None:
+            self.enc_certificate_value = enc_certificate_value
+        if certificates is not None:
+            self.certificates = certificates
         if http2_status is not None:
             self.http2_status = http2_status
         if tls_version is not None:
@@ -118,6 +132,50 @@ class HttpGetBody:
         :type https_status: str
         """
         self._https_status = https_status
+
+    @property
+    def certificate_type(self):
+        """Gets the certificate_type of this HttpGetBody.
+
+        证书类型。server：国际证书；server_sm：国密证书。
+
+        :return: The certificate_type of this HttpGetBody.
+        :rtype: str
+        """
+        return self._certificate_type
+
+    @certificate_type.setter
+    def certificate_type(self, certificate_type):
+        """Sets the certificate_type of this HttpGetBody.
+
+        证书类型。server：国际证书；server_sm：国密证书。
+
+        :param certificate_type: The certificate_type of this HttpGetBody.
+        :type certificate_type: str
+        """
+        self._certificate_type = certificate_type
+
+    @property
+    def certificate_source(self):
+        """Gets the certificate_source of this HttpGetBody.
+
+        证书来源，1：华为云托管证书，0：自有证书。
+
+        :return: The certificate_source of this HttpGetBody.
+        :rtype: int
+        """
+        return self._certificate_source
+
+    @certificate_source.setter
+    def certificate_source(self, certificate_source):
+        """Sets the certificate_source of this HttpGetBody.
+
+        证书来源，1：华为云托管证书，0：自有证书。
+
+        :param certificate_source: The certificate_source of this HttpGetBody.
+        :type certificate_source: int
+        """
+        self._certificate_source = certificate_source
 
     @property
     def certificate_name(self):
@@ -186,48 +244,44 @@ class HttpGetBody:
         self._expire_time = expire_time
 
     @property
-    def certificate_source(self):
-        """Gets the certificate_source of this HttpGetBody.
+    def enc_certificate_value(self):
+        """Gets the enc_certificate_value of this HttpGetBody.
 
-        证书来源,0：自有证书。
+        国密证书加密证书内容，PEM编码格式。
 
-        :return: The certificate_source of this HttpGetBody.
-        :rtype: int
-        """
-        return self._certificate_source
-
-    @certificate_source.setter
-    def certificate_source(self, certificate_source):
-        """Sets the certificate_source of this HttpGetBody.
-
-        证书来源,0：自有证书。
-
-        :param certificate_source: The certificate_source of this HttpGetBody.
-        :type certificate_source: int
-        """
-        self._certificate_source = certificate_source
-
-    @property
-    def certificate_type(self):
-        """Gets the certificate_type of this HttpGetBody.
-
-        证书类型。server：国际证书；server_sm：国密证书。
-
-        :return: The certificate_type of this HttpGetBody.
+        :return: The enc_certificate_value of this HttpGetBody.
         :rtype: str
         """
-        return self._certificate_type
+        return self._enc_certificate_value
 
-    @certificate_type.setter
-    def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this HttpGetBody.
+    @enc_certificate_value.setter
+    def enc_certificate_value(self, enc_certificate_value):
+        """Sets the enc_certificate_value of this HttpGetBody.
 
-        证书类型。server：国际证书；server_sm：国密证书。
+        国密证书加密证书内容，PEM编码格式。
 
-        :param certificate_type: The certificate_type of this HttpGetBody.
-        :type certificate_type: str
+        :param enc_certificate_value: The enc_certificate_value of this HttpGetBody.
+        :type enc_certificate_value: str
         """
-        self._certificate_type = certificate_type
+        self._enc_certificate_value = enc_certificate_value
+
+    @property
+    def certificates(self):
+        """Gets the certificates of this HttpGetBody.
+
+        :return: The certificates of this HttpGetBody.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.CertificatesGetBody`]
+        """
+        return self._certificates
+
+    @certificates.setter
+    def certificates(self, certificates):
+        """Sets the certificates of this HttpGetBody.
+
+        :param certificates: The certificates of this HttpGetBody.
+        :type certificates: list[:class:`huaweicloudsdkcdn.v2.CertificatesGetBody`]
+        """
+        self._certificates = certificates
 
     @property
     def http2_status(self):

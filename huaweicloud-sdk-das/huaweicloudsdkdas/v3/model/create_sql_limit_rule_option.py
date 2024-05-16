@@ -19,16 +19,18 @@ class CreateSqlLimitRuleOption:
     openapi_types = {
         'sql_type': 'str',
         'max_concurrency': 'int',
+        'max_waiting': 'int',
         'pattern': 'str'
     }
 
     attribute_map = {
         'sql_type': 'sql_type',
         'max_concurrency': 'max_concurrency',
+        'max_waiting': 'max_waiting',
         'pattern': 'pattern'
     }
 
-    def __init__(self, sql_type=None, max_concurrency=None, pattern=None):
+    def __init__(self, sql_type=None, max_concurrency=None, max_waiting=None, pattern=None):
         """CreateSqlLimitRuleOption
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class CreateSqlLimitRuleOption:
         :type sql_type: str
         :param max_concurrency: 最大并发数
         :type max_concurrency: int
+        :param max_waiting: 最大等待时间
+        :type max_waiting: int
         :param pattern: SQL限流规则。限流规则以~分隔关键字，例如select~a。规则举例详细说明：例如关键字是\&quot;select~a\&quot;, 含义为：select以及a为该并发控制所包含的两个关键字，~为关键字间隔符，即若执行SQL命令包含select与a两个关键字视为命中此条并发控制规则。
         :type pattern: str
         """
@@ -45,11 +49,14 @@ class CreateSqlLimitRuleOption:
 
         self._sql_type = None
         self._max_concurrency = None
+        self._max_waiting = None
         self._pattern = None
         self.discriminator = None
 
         self.sql_type = sql_type
         self.max_concurrency = max_concurrency
+        if max_waiting is not None:
+            self.max_waiting = max_waiting
         self.pattern = pattern
 
     @property
@@ -95,6 +102,28 @@ class CreateSqlLimitRuleOption:
         :type max_concurrency: int
         """
         self._max_concurrency = max_concurrency
+
+    @property
+    def max_waiting(self):
+        """Gets the max_waiting of this CreateSqlLimitRuleOption.
+
+        最大等待时间
+
+        :return: The max_waiting of this CreateSqlLimitRuleOption.
+        :rtype: int
+        """
+        return self._max_waiting
+
+    @max_waiting.setter
+    def max_waiting(self, max_waiting):
+        """Sets the max_waiting of this CreateSqlLimitRuleOption.
+
+        最大等待时间
+
+        :param max_waiting: The max_waiting of this CreateSqlLimitRuleOption.
+        :type max_waiting: int
+        """
+        self._max_waiting = max_waiting
 
     @property
     def pattern(self):

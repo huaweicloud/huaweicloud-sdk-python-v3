@@ -18,8 +18,8 @@ class TimeRange:
 
     openapi_types = {
         'sql_time_zone': 'str',
-        'start_time': 'str',
-        'end_time': 'str',
+        'start_time': 'int',
+        'end_time': 'int',
         'start_time_gt': 'bool',
         'end_time_lt': 'bool'
     }
@@ -39,10 +39,10 @@ class TimeRange:
 
         :param sql_time_zone: 时区信息，默认为“UTC”。
         :type sql_time_zone: str
-        :param start_time: 搜索起始时间（UTC时间，毫秒级）。
-        :type start_time: str
-        :param end_time: 搜索起始时间（UTC时间，毫秒级）。
-        :type end_time: str
+        :param start_time: 搜索起始时间（UTC时间，毫秒级）
+        :type start_time: int
+        :param end_time: 搜索结束时间（UTC时间，毫秒级）。
+        :type end_time: int
         :param start_time_gt: 搜索是否包含起始时间点，默认为false。
         :type start_time_gt: bool
         :param end_time_lt: 搜索是否包含结束时间点，默认为false。
@@ -93,10 +93,10 @@ class TimeRange:
     def start_time(self):
         """Gets the start_time of this TimeRange.
 
-        搜索起始时间（UTC时间，毫秒级）。
+        搜索起始时间（UTC时间，毫秒级）
 
         :return: The start_time of this TimeRange.
-        :rtype: str
+        :rtype: int
         """
         return self._start_time
 
@@ -104,10 +104,10 @@ class TimeRange:
     def start_time(self, start_time):
         """Sets the start_time of this TimeRange.
 
-        搜索起始时间（UTC时间，毫秒级）。
+        搜索起始时间（UTC时间，毫秒级）
 
         :param start_time: The start_time of this TimeRange.
-        :type start_time: str
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -115,10 +115,10 @@ class TimeRange:
     def end_time(self):
         """Gets the end_time of this TimeRange.
 
-        搜索起始时间（UTC时间，毫秒级）。
+        搜索结束时间（UTC时间，毫秒级）。
 
         :return: The end_time of this TimeRange.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -126,10 +126,10 @@ class TimeRange:
     def end_time(self, end_time):
         """Sets the end_time of this TimeRange.
 
-        搜索起始时间（UTC时间，毫秒级）。
+        搜索结束时间（UTC时间，毫秒级）。
 
         :param end_time: The end_time of this TimeRange.
-        :type end_time: str
+        :type end_time: int
         """
         self._end_time = end_time
 

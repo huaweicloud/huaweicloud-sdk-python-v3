@@ -61,7 +61,8 @@ class AppSearchParam:
         self.business_id = business_id
         self.region = region
         self.page = page
-        self.page_size = page_size
+        if page_size is not None:
+            self.page_size = page_size
         if keyword is not None:
             self.keyword = keyword
 

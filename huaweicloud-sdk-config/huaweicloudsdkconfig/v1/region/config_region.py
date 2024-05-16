@@ -7,7 +7,8 @@ class ConfigRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CONFIG")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://rms.myhuaweicloud.com")
+                        "https://rms.myhuaweicloud.com",
+                        "https://rms.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

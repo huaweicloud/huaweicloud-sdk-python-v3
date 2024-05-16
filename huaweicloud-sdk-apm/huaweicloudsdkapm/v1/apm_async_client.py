@@ -1427,6 +1427,70 @@ class ApmAsyncClient(Client):
 
         return http_info
 
+    def show_flame_line_tree_async(self, request):
+        """show_flame_line_tree
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFlameLineTree
+        :type request: :class:`huaweicloudsdkapm.v1.ShowFlameLineTreeRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ShowFlameLineTreeResponse`
+        """
+        http_info = self._show_flame_line_tree_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flame_line_tree_async_invoker(self, request):
+        http_info = self._show_flame_line_tree_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flame_line_tree_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/view/profiling/flame-line-tree",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlameLineTreeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_open_region_async(self, request):
         """查询开通的region
 
@@ -1666,6 +1730,207 @@ class ApmAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_business_async(self, request):
+        """创建链路追踪应用
+
+        创建链路追踪应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateBusiness
+        :type request: :class:`huaweicloudsdkapm.v1.CreateBusinessRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.CreateBusinessResponse`
+        """
+        http_info = self._create_business_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_business_async_invoker(self, request):
+        http_info = self._create_business_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_business_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/tracing/business/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBusinessResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_access_point_async(self, request):
+        """获取链路追踪应用接入地址
+
+        获取链路追踪应用接入地址
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAccessPoint
+        :type request: :class:`huaweicloudsdkapm.v1.ShowAccessPointRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ShowAccessPointResponse`
+        """
+        http_info = self._show_access_point_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_access_point_async_invoker(self, request):
+        http_info = self._show_access_point_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_access_point_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/tracing/access/get-access-point/{business_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAccessPointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'business_id' in local_var_params:
+            path_params['business_id'] = local_var_params['business_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_token_async(self, request):
+        """获取链路追踪应用的token
+
+        获取链路追踪应用的token
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowToken
+        :type request: :class:`huaweicloudsdkapm.v1.ShowTokenRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ShowTokenResponse`
+        """
+        http_info = self._show_token_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_token_async_invoker(self, request):
+        http_info = self._show_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_token_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/tracing/business/token/{business_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTokenResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'business_id' in local_var_params:
+            path_params['business_id'] = local_var_params['business_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2202,6 +2467,75 @@ class ApmAsyncClient(Client):
             query_params.append(('env_id', local_var_params['env_id']))
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_monitor_item_detail_async(self, request):
+        """获取一个监控项的详情
+
+        获取一个监控项的详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMonitorItemDetail
+        :type request: :class:`huaweicloudsdkapm.v1.ShowMonitorItemDetailRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ShowMonitorItemDetailResponse`
+        """
+        http_info = self._show_monitor_item_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_monitor_item_detail_async_invoker(self, request):
+        http_info = self._show_monitor_item_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_monitor_item_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/apm-service/monitor-item-mgr/get-monitor-item-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMonitorItemDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'monitor_item_id' in local_var_params:
+            query_params.append(('monitor_item_id', local_var_params['monitor_item_id']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
 
         form_params = {}
 

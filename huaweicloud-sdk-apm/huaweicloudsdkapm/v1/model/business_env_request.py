@@ -54,7 +54,8 @@ class BusinessEnvRequest:
         self.discriminator = None
 
         self.business_id = business_id
-        self.region = region
+        if region is not None:
+            self.region = region
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:

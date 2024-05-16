@@ -18,15 +18,17 @@ class DeleteSqlLimitRulesBody:
 
     openapi_types = {
         'datastore_type': 'str',
-        'sql_limit_rule_ids': 'list[str]'
+        'sql_limit_rule_ids': 'list[str]',
+        'database_name': 'str'
     }
 
     attribute_map = {
         'datastore_type': 'datastore_type',
-        'sql_limit_rule_ids': 'sql_limit_rule_ids'
+        'sql_limit_rule_ids': 'sql_limit_rule_ids',
+        'database_name': 'database_name'
     }
 
-    def __init__(self, datastore_type=None, sql_limit_rule_ids=None):
+    def __init__(self, datastore_type=None, sql_limit_rule_ids=None, database_name=None):
         """DeleteSqlLimitRulesBody
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class DeleteSqlLimitRulesBody:
         :type datastore_type: str
         :param sql_limit_rule_ids: SQL限流规则ID
         :type sql_limit_rule_ids: list[str]
+        :param database_name: 数据库名（PostgreSQL必填）
+        :type database_name: str
         """
         
         
 
         self._datastore_type = None
         self._sql_limit_rule_ids = None
+        self._database_name = None
         self.discriminator = None
 
         self.datastore_type = datastore_type
         self.sql_limit_rule_ids = sql_limit_rule_ids
+        if database_name is not None:
+            self.database_name = database_name
 
     @property
     def datastore_type(self):
@@ -89,6 +96,28 @@ class DeleteSqlLimitRulesBody:
         :type sql_limit_rule_ids: list[str]
         """
         self._sql_limit_rule_ids = sql_limit_rule_ids
+
+    @property
+    def database_name(self):
+        """Gets the database_name of this DeleteSqlLimitRulesBody.
+
+        数据库名（PostgreSQL必填）
+
+        :return: The database_name of this DeleteSqlLimitRulesBody.
+        :rtype: str
+        """
+        return self._database_name
+
+    @database_name.setter
+    def database_name(self, database_name):
+        """Sets the database_name of this DeleteSqlLimitRulesBody.
+
+        数据库名（PostgreSQL必填）
+
+        :param database_name: The database_name of this DeleteSqlLimitRulesBody.
+        :type database_name: str
+        """
+        self._database_name = database_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

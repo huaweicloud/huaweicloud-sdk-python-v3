@@ -25,7 +25,8 @@ class SmartDocumentRecognizerRequestBody:
         'return_excel': 'bool',
         'form': 'bool',
         'formula': 'bool',
-        'kv_map': 'str'
+        'kv_map': 'str',
+        'pdf_page_number': 'int'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class SmartDocumentRecognizerRequestBody:
         'return_excel': 'return_excel',
         'form': 'form',
         'formula': 'formula',
-        'kv_map': 'kv_map'
+        'kv_map': 'kv_map',
+        'pdf_page_number': 'pdf_page_number'
     }
 
-    def __init__(self, data=None, url=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None):
+    def __init__(self, data=None, url=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None, pdf_page_number=None):
         """SmartDocumentRecognizerRequestBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class SmartDocumentRecognizerRequestBody:
         :type formula: bool
         :param kv_map: 需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\&quot;名称\&quot;：\&quot;小明\&quot;}的键值对，若传入{\&quot;名称\&quot;：\&quot;姓名\&quot;}的kv_map，则返回结果为{“姓名”：“小明”}。  &gt; 参数传入示例： - \&quot;kv_map\&quot;:\&quot;{\\\&quot;名称\\\&quot;:\\\&quot;姓名\\\&quot;}\&quot; 
         :type kv_map: str
+        :param pdf_page_number: 指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
+        :type pdf_page_number: int
         """
         
         
@@ -76,6 +80,7 @@ class SmartDocumentRecognizerRequestBody:
         self._form = None
         self._formula = None
         self._kv_map = None
+        self._pdf_page_number = None
         self.discriminator = None
 
         if data is not None:
@@ -96,6 +101,8 @@ class SmartDocumentRecognizerRequestBody:
             self.formula = formula
         if kv_map is not None:
             self.kv_map = kv_map
+        if pdf_page_number is not None:
+            self.pdf_page_number = pdf_page_number
 
     @property
     def data(self):
@@ -294,6 +301,28 @@ class SmartDocumentRecognizerRequestBody:
         :type kv_map: str
         """
         self._kv_map = kv_map
+
+    @property
+    def pdf_page_number(self):
+        """Gets the pdf_page_number of this SmartDocumentRecognizerRequestBody.
+
+        指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
+
+        :return: The pdf_page_number of this SmartDocumentRecognizerRequestBody.
+        :rtype: int
+        """
+        return self._pdf_page_number
+
+    @pdf_page_number.setter
+    def pdf_page_number(self, pdf_page_number):
+        """Sets the pdf_page_number of this SmartDocumentRecognizerRequestBody.
+
+        指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
+
+        :param pdf_page_number: The pdf_page_number of this SmartDocumentRecognizerRequestBody.
+        :type pdf_page_number: int
+        """
+        self._pdf_page_number = pdf_page_number
 
     def to_dict(self):
         """Returns the model properties as a dict"""

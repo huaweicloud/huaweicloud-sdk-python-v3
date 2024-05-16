@@ -82,7 +82,8 @@ class AgentSearchParam:
         if order_by_status is not None:
             self.order_by_status = order_by_status
         self.page = page
-        self.page_size = page_size
+        if page_size is not None:
+            self.page_size = page_size
         if keyword is not None:
             self.keyword = keyword
 

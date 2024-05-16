@@ -32,6 +32,538 @@ class CodeArtsInspectorAsyncClient(Client):
 
         return client_builder
 
+    def add_group_async(self, request):
+        """批量创建主机组
+
+        批量创建主机组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddGroup
+        :type request: :class:`huaweicloudsdkcodeartsinspector.v3.AddGroupRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.AddGroupResponse`
+        """
+        http_info = self._add_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_group_async_invoker(self, request):
+        http_info = self._add_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/hostscan/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_group_async(self, request):
+        """删除主机组
+
+        删除主机组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGroup
+        :type request: :class:`huaweicloudsdkcodeartsinspector.v3.DeleteGroupRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.DeleteGroupResponse`
+        """
+        http_info = self._delete_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_group_async_invoker(self, request):
+        http_info = self._delete_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/hostscan/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_groups_async(self, request):
+        """获取主机组列表
+
+        获取主机组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGroups
+        :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ListGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ListGroupsResponse`
+        """
+        http_info = self._list_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_groups_async_invoker(self, request):
+        http_info = self._list_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/hostscan/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_host_results_async(self, request):
+        """获取主机漏洞扫描结果
+
+        获取主机漏洞扫描结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHostResults
+        :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ListHostResultsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ListHostResultsResponse`
+        """
+        http_info = self._list_host_results_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_host_results_async_invoker(self, request):
+        http_info = self._list_host_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_host_results_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/hostscan/hosts/{host_id}/sys-vulns",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostResultsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'host_id' in local_var_params:
+            path_params['host_id'] = local_var_params['host_id']
+
+        query_params = []
+        if 'scan_id' in local_var_params:
+            query_params.append(('scan_id', local_var_params['scan_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_start_host_tasks_async(self, request):
+        """批量启动或取消主机扫描任务
+
+        批量启动或取消主机漏洞扫描任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchStartHostTasks
+        :type request: :class:`huaweicloudsdkcodeartsinspector.v3.BatchStartHostTasksRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.BatchStartHostTasksResponse`
+        """
+        http_info = self._batch_start_host_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_start_host_tasks_async_invoker(self, request):
+        http_info = self._batch_start_host_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_start_host_tasks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/hostscan/hosts/scan",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStartHostTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_hosts_async(self, request):
+        """批量创建主机资产
+
+        批量创建租户的主机资产
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateHosts
+        :type request: :class:`huaweicloudsdkcodeartsinspector.v3.BatchCreateHostsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.BatchCreateHostsResponse`
+        """
+        http_info = self._batch_create_hosts_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_hosts_async_invoker(self, request):
+        http_info = self._batch_create_hosts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_hosts_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/hostscan/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateHostsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_host_async(self, request):
+        """删除主机资产
+
+        删除租户的主机资产
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHost
+        :type request: :class:`huaweicloudsdkcodeartsinspector.v3.DeleteHostRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.DeleteHostResponse`
+        """
+        http_info = self._delete_host_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_host_async_invoker(self, request):
+        http_info = self._delete_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_host_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/hostscan/hosts/delete/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'host_id' in local_var_params:
+            path_params['host_id'] = local_var_params['host_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hosts_async(self, request):
+        """获取主机资产
+
+        获取租户的主机资产列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHosts
+        :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ListHostsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ListHostsResponse`
+        """
+        http_info = self._list_hosts_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hosts_async_invoker(self, request):
+        http_info = self._list_hosts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hosts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/hostscan/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def download_task_report_async(self, request):
         """下载网站扫描报告
 

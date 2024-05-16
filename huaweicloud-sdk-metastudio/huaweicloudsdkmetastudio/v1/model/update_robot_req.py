@@ -24,7 +24,8 @@ class UpdateRobotReq:
         'huawei_ei_cbs': 'HuaweiEiCbs',
         'iflytek_aiui_config': 'IflytekAiuiConfig',
         'iflytek_spark': 'IflytekSpark',
-        'third_party_model_config': 'ThirdPartyModelConfig'
+        'third_party_model_config': 'ThirdPartyModelConfig',
+        'mobvoi_config': 'MobvoiConfig'
     }
 
     attribute_map = {
@@ -35,17 +36,18 @@ class UpdateRobotReq:
         'huawei_ei_cbs': 'huawei_ei_cbs',
         'iflytek_aiui_config': 'iflytek_aiui_config',
         'iflytek_spark': 'iflytek_spark',
-        'third_party_model_config': 'third_party_model_config'
+        'third_party_model_config': 'third_party_model_config',
+        'mobvoi_config': 'mobvoi_config'
     }
 
-    def __init__(self, name=None, app_type=None, room_id=None, language=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None):
+    def __init__(self, name=None, app_type=None, room_id=None, language=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
         """UpdateRobotReq
 
         The model defined in huaweicloud sdk
 
         :param name: 应用名称。
         :type name: str
-        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
+        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
         :type app_type: int
         :param room_id: 智能交互对话房间ID。
         :type room_id: str
@@ -59,6 +61,8 @@ class UpdateRobotReq:
         :type iflytek_spark: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
         :param third_party_model_config: 
         :type third_party_model_config: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
+        :param mobvoi_config: 
+        :type mobvoi_config: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`
         """
         
         
@@ -71,6 +75,7 @@ class UpdateRobotReq:
         self._iflytek_aiui_config = None
         self._iflytek_spark = None
         self._third_party_model_config = None
+        self._mobvoi_config = None
         self.discriminator = None
 
         if name is not None:
@@ -89,6 +94,8 @@ class UpdateRobotReq:
             self.iflytek_spark = iflytek_spark
         if third_party_model_config is not None:
             self.third_party_model_config = third_party_model_config
+        if mobvoi_config is not None:
+            self.mobvoi_config = mobvoi_config
 
     @property
     def name(self):
@@ -116,7 +123,7 @@ class UpdateRobotReq:
     def app_type(self):
         """Gets the app_type of this UpdateRobotReq.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
         :return: The app_type of this UpdateRobotReq.
         :rtype: int
@@ -127,7 +134,7 @@ class UpdateRobotReq:
     def app_type(self, app_type):
         """Sets the app_type of this UpdateRobotReq.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
         :param app_type: The app_type of this UpdateRobotReq.
         :type app_type: int
@@ -245,6 +252,24 @@ class UpdateRobotReq:
         :type third_party_model_config: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
         """
         self._third_party_model_config = third_party_model_config
+
+    @property
+    def mobvoi_config(self):
+        """Gets the mobvoi_config of this UpdateRobotReq.
+
+        :return: The mobvoi_config of this UpdateRobotReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`
+        """
+        return self._mobvoi_config
+
+    @mobvoi_config.setter
+    def mobvoi_config(self, mobvoi_config):
+        """Sets the mobvoi_config of this UpdateRobotReq.
+
+        :param mobvoi_config: The mobvoi_config of this UpdateRobotReq.
+        :type mobvoi_config: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`
+        """
+        self._mobvoi_config = mobvoi_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

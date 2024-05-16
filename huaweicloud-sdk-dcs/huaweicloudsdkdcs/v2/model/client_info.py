@@ -23,7 +23,7 @@ class ClientInfo:
         'name': 'str',
         'cmd': 'str',
         'age': 'int',
-        'idle': 'str',
+        'idle': 'int',
         'db': 'str',
         'flags': 'str',
         'sub': 'int',
@@ -82,7 +82,7 @@ class ClientInfo:
         :param age: 已连接时长（单位：秒）
         :type age: int
         :param idle: 空闲时长（单位：秒）
-        :type idle: str
+        :type idle: int
         :param db: 该客户端正在使用的数据库 ID
         :type db: str
         :param flags: 客户端标志
@@ -320,7 +320,7 @@ class ClientInfo:
         空闲时长（单位：秒）
 
         :return: The idle of this ClientInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._idle
 
@@ -331,7 +331,7 @@ class ClientInfo:
         空闲时长（单位：秒）
 
         :param idle: The idle of this ClientInfo.
-        :type idle: str
+        :type idle: int
         """
         self._idle = idle
 

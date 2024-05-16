@@ -8120,6 +8120,73 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def check_star_rocks_resource(self, request):
+        """StarRocks资源检查
+
+        StarRocks资源检查。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckStarRocksResource
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CheckStarRocksResourceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckStarRocksResourceResponse`
+        """
+        http_info = self._check_star_rocks_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_star_rocks_resource_invoker(self, request):
+        http_info = self._check_star_rocks_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_star_rocks_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/starrocks/resource-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckStarRocksResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def check_table_config(self, request):
         """HTAP数据同步表配置校验
 
@@ -8258,6 +8325,144 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def create_star_rocks_database_user(self, request):
+        """创建数据库账号
+
+        创建StarRocks数据库账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateStarRocksDatabaseUser
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateStarRocksDatabaseUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateStarRocksDatabaseUserResponse`
+        """
+        http_info = self._create_star_rocks_database_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_star_rocks_database_user_invoker(self, request):
+        http_info = self._create_star_rocks_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_star_rocks_database_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStarRocksDatabaseUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_starrocks_instance(self, request):
+        """创建StarRocks实例
+
+        创建StarRocks实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateStarrocksInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateStarrocksInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateStarrocksInstanceResponse`
+        """
+        http_info = self._create_starrocks_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_starrocks_instance_invoker(self, request):
+        http_info = self._create_starrocks_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_starrocks_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStarrocksInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_star_rocks_data_replication(self, request):
         """删除StarRocks数据同步
 
@@ -8313,6 +8518,420 @@ class GaussDBClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_star_rocks_database_user(self, request):
+        """删除数据库账户
+
+        删除StarRocks数据库账户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteStarRocksDatabaseUser
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteStarRocksDatabaseUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteStarRocksDatabaseUserResponse`
+        """
+        http_info = self._delete_star_rocks_database_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_star_rocks_database_user_invoker(self, request):
+        http_info = self._delete_star_rocks_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_star_rocks_database_user_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStarRocksDatabaseUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_starrocks_instance(self, request):
+        """删除StarRocks实例
+
+        删除StarRocks实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteStarrocksInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteStarrocksInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteStarrocksInstanceResponse`
+        """
+        http_info = self._delete_starrocks_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_starrocks_instance_invoker(self, request):
+        http_info = self._delete_starrocks_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_starrocks_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/{starrocks_instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStarrocksInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'starrocks_instance_id' in local_var_params:
+            path_params['starrocks_instance_id'] = local_var_params['starrocks_instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_htap_data_store(self, request):
+        """HTAP引擎资源查询
+
+        HTAP引擎资源查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHtapDataStore
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListHtapDataStoreRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListHtapDataStoreResponse`
+        """
+        http_info = self._list_htap_data_store_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_htap_data_store_invoker(self, request):
+        http_info = self._list_htap_data_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_htap_data_store_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/htap/datastores/{engine_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHtapDataStoreResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine_name' in local_var_params:
+            path_params['engine_name'] = local_var_params['engine_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_htap_flavor(self, request):
+        """HTAP查询规格信息
+
+        HTAP查询规格信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHtapFlavor
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListHtapFlavorRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListHtapFlavorResponse`
+        """
+        http_info = self._list_htap_flavor_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_htap_flavor_invoker(self, request):
+        http_info = self._list_htap_flavor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_htap_flavor_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/htap/flavors/{engine_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHtapFlavorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine_name' in local_var_params:
+            path_params['engine_name'] = local_var_params['engine_name']
+
+        query_params = []
+        if 'availability_zone_mode' in local_var_params:
+            query_params.append(('availability_zone_mode', local_var_params['availability_zone_mode']))
+        if 'spec_code' in local_var_params:
+            query_params.append(('spec_code', local_var_params['spec_code']))
+        if 'version_name' in local_var_params:
+            query_params.append(('version_name', local_var_params['version_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_htap_instance_info(self, request):
+        """查询HTAP实例列表
+
+        查询HTAP实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHtapInstanceInfo
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListHtapInstanceInfoRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListHtapInstanceInfoResponse`
+        """
+        http_info = self._list_htap_instance_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_htap_instance_info_invoker(self, request):
+        http_info = self._list_htap_instance_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_htap_instance_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/htap",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHtapInstanceInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_htap_storage_type(self, request):
+        """获取HTAP实例存储类型
+
+        获取HTAP实例存储类型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHtapStorageType
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListHtapStorageTypeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListHtapStorageTypeResponse`
+        """
+        http_info = self._list_htap_storage_type_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_htap_storage_type_invoker(self, request):
+        http_info = self._list_htap_storage_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_htap_storage_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/htap/storage-type/{database}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHtapStorageTypeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database' in local_var_params:
+            path_params['database'] = local_var_params['database']
+
+        query_params = []
+        if 'version_name' in local_var_params:
+            query_params.append(('version_name', local_var_params['version_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -8593,6 +9212,422 @@ class GaussDBClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_starrocks_instance_info(self, request):
+        """查询StarRocks实例
+
+        查询StarRocks实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListStarrocksInstanceInfo
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListStarrocksInstanceInfoRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListStarrocksInstanceInfoResponse`
+        """
+        http_info = self._list_starrocks_instance_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_starrocks_instance_info_invoker(self, request):
+        http_info = self._list_starrocks_instance_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_starrocks_instance_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/{starrocks_instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStarrocksInstanceInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'starrocks_instance_id' in local_var_params:
+            path_params['starrocks_instance_id'] = local_var_params['starrocks_instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restart_starrocks_instance(self, request):
+        """重启StarRocks实例
+
+        重启StarRocks实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RestartStarrocksInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.RestartStarrocksInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.RestartStarrocksInstanceResponse`
+        """
+        http_info = self._restart_starrocks_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def restart_starrocks_instance_invoker(self, request):
+        http_info = self._restart_starrocks_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_starrocks_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{starrocks_instance_id}/starrocks/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartStarrocksInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'starrocks_instance_id' in local_var_params:
+            path_params['starrocks_instance_id'] = local_var_params['starrocks_instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restart_starrocks_node(self, request):
+        """重启StarRocks节点
+
+        重启StarRocks节点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RestartStarrocksNode
+        :type request: :class:`huaweicloudsdkgaussdb.v3.RestartStarrocksNodeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.RestartStarrocksNodeResponse`
+        """
+        http_info = self._restart_starrocks_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def restart_starrocks_node_invoker(self, request):
+        http_info = self._restart_starrocks_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_starrocks_node_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{starrocks_instance_id}/starrocks/{starrocks_node_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartStarrocksNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'starrocks_node_id' in local_var_params:
+            path_params['starrocks_node_id'] = local_var_params['starrocks_node_id']
+        if 'starrocks_instance_id' in local_var_params:
+            path_params['starrocks_instance_id'] = local_var_params['starrocks_instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_star_rocks_database_user(self, request):
+        """查询数据库账户
+
+        查询StarRocks数据库账户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowStarRocksDatabaseUser
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowStarRocksDatabaseUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowStarRocksDatabaseUserResponse`
+        """
+        http_info = self._show_star_rocks_database_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_star_rocks_database_user_invoker(self, request):
+        http_info = self._show_star_rocks_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_star_rocks_database_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStarRocksDatabaseUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_star_rocks_database_user_password(self, request):
+        """修改数据库账号密码
+
+        修改StarRocks数据库账号密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateStarRocksDatabaseUserPassword
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateStarRocksDatabaseUserPasswordRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateStarRocksDatabaseUserPasswordResponse`
+        """
+        http_info = self._update_star_rocks_database_user_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_star_rocks_database_user_password_invoker(self, request):
+        http_info = self._update_star_rocks_database_user_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_star_rocks_database_user_password_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/users/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStarRocksDatabaseUserPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_star_rocks_database_user_permission(self, request):
+        """修改数据库账号权限
+
+        修改StarRocks数据库账号权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateStarRocksDatabaseUserPermission
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateStarRocksDatabaseUserPermissionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateStarRocksDatabaseUserPermissionResponse`
+        """
+        http_info = self._update_star_rocks_database_user_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_star_rocks_database_user_permission_invoker(self, request):
+        http_info = self._update_star_rocks_database_user_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_star_rocks_database_user_permission_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/users/permission",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStarRocksDatabaseUserPermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

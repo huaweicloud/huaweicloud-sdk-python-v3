@@ -93,7 +93,8 @@ class RawTableView:
         self._latest = None
         self.discriminator = None
 
-        self.view_type = view_type
+        if view_type is not None:
+            self.view_type = view_type
         self.collector_name = collector_name
         self.metric_set = metric_set
         self.title = title

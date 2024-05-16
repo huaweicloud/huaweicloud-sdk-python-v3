@@ -78,7 +78,8 @@ class LayerConfig:
             self.asset_id = asset_id
         if group_id is not None:
             self.group_id = group_id
-        self.position = position
+        if position is not None:
+            self.position = position
         if size is not None:
             self.size = size
         if image_config is not None:

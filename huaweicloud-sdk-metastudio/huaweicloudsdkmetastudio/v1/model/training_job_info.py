@@ -32,7 +32,8 @@ class TrainingJobInfo:
         'lastupdate_time': 'int',
         'voice_authorization_url': 'str',
         'create_type': 'CreateType',
-        'tag': 'JobTag'
+        'tag': 'JobTag',
+        'phone': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class TrainingJobInfo:
         'lastupdate_time': 'lastupdate_time',
         'voice_authorization_url': 'voice_authorization_url',
         'create_type': 'create_type',
-        'tag': 'tag'
+        'tag': 'tag',
+        'phone': 'phone'
     }
 
-    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None):
+    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, create_type=None, tag=None, phone=None):
         """TrainingJobInfo
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class TrainingJobInfo:
         :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
         :param tag: 
         :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
+        :param phone: 手机号
+        :type phone: str
         """
         
         
@@ -111,6 +115,7 @@ class TrainingJobInfo:
         self._voice_authorization_url = None
         self._create_type = None
         self._tag = None
+        self._phone = None
         self.discriminator = None
 
         if job_type is not None:
@@ -145,6 +150,8 @@ class TrainingJobInfo:
             self.create_type = create_type
         if tag is not None:
             self.tag = tag
+        if phone is not None:
+            self.phone = phone
 
     @property
     def job_type(self):
@@ -481,6 +488,28 @@ class TrainingJobInfo:
         :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
         """
         self._tag = tag
+
+    @property
+    def phone(self):
+        """Gets the phone of this TrainingJobInfo.
+
+        手机号
+
+        :return: The phone of this TrainingJobInfo.
+        :rtype: str
+        """
+        return self._phone
+
+    @phone.setter
+    def phone(self, phone):
+        """Sets the phone of this TrainingJobInfo.
+
+        手机号
+
+        :param phone: The phone of this TrainingJobInfo.
+        :type phone: str
+        """
+        self._phone = phone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

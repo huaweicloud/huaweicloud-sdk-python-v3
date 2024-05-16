@@ -38,7 +38,8 @@ class OpenGaussInstanceRequestBody:
         'sharding_num': 'int',
         'coordinator_num': 'int',
         'replica_num': 'int',
-        'enable_force_switch': 'bool'
+        'enable_force_switch': 'bool',
+        'enable_single_float_ip': 'bool'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class OpenGaussInstanceRequestBody:
         'sharding_num': 'sharding_num',
         'coordinator_num': 'coordinator_num',
         'replica_num': 'replica_num',
-        'enable_force_switch': 'enable_force_switch'
+        'enable_force_switch': 'enable_force_switch',
+        'enable_single_float_ip': 'enable_single_float_ip'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None, enable_force_switch=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None, enable_force_switch=None, enable_single_float_ip=None):
         """OpenGaussInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class OpenGaussInstanceRequestBody:
         :type replica_num: int
         :param enable_force_switch: enable_force_switch表示是否开启备机强升主功能，enable_force_switch&#x3D;true表示开启备机强升主功能，enable_force_switch&#x3D;false表示关闭，默认关闭。仅支持1.2.2及以上版本。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
         :type enable_force_switch: bool
+        :param enable_single_float_ip: 单浮动IP策略，仅主备版支持。默认值是false，表示不开启单浮动IP策略。 取值范围： true：开启单浮动IP策略，实例将只有一个浮动IP绑定主节点，如果发生主备倒换，浮动IP不会发生变化。 false：不开启单浮动IP策略，每个节点都会绑定一个浮动IP，如果发生主备倒换，浮动IP会发生变化。 说明： 仅支持3.206及以上版本的主备版实例。
+        :type enable_single_float_ip: bool
         """
         
         
@@ -141,6 +145,7 @@ class OpenGaussInstanceRequestBody:
         self._coordinator_num = None
         self._replica_num = None
         self._enable_force_switch = None
+        self._enable_single_float_ip = None
         self.discriminator = None
 
         self.name = name
@@ -176,6 +181,8 @@ class OpenGaussInstanceRequestBody:
             self.replica_num = replica_num
         if enable_force_switch is not None:
             self.enable_force_switch = enable_force_switch
+        if enable_single_float_ip is not None:
+            self.enable_single_float_ip = enable_single_float_ip
 
     @property
     def name(self):
@@ -640,6 +647,28 @@ class OpenGaussInstanceRequestBody:
         :type enable_force_switch: bool
         """
         self._enable_force_switch = enable_force_switch
+
+    @property
+    def enable_single_float_ip(self):
+        """Gets the enable_single_float_ip of this OpenGaussInstanceRequestBody.
+
+        单浮动IP策略，仅主备版支持。默认值是false，表示不开启单浮动IP策略。 取值范围： true：开启单浮动IP策略，实例将只有一个浮动IP绑定主节点，如果发生主备倒换，浮动IP不会发生变化。 false：不开启单浮动IP策略，每个节点都会绑定一个浮动IP，如果发生主备倒换，浮动IP会发生变化。 说明： 仅支持3.206及以上版本的主备版实例。
+
+        :return: The enable_single_float_ip of this OpenGaussInstanceRequestBody.
+        :rtype: bool
+        """
+        return self._enable_single_float_ip
+
+    @enable_single_float_ip.setter
+    def enable_single_float_ip(self, enable_single_float_ip):
+        """Sets the enable_single_float_ip of this OpenGaussInstanceRequestBody.
+
+        单浮动IP策略，仅主备版支持。默认值是false，表示不开启单浮动IP策略。 取值范围： true：开启单浮动IP策略，实例将只有一个浮动IP绑定主节点，如果发生主备倒换，浮动IP不会发生变化。 false：不开启单浮动IP策略，每个节点都会绑定一个浮动IP，如果发生主备倒换，浮动IP会发生变化。 说明： 仅支持3.206及以上版本的主备版实例。
+
+        :param enable_single_float_ip: The enable_single_float_ip of this OpenGaussInstanceRequestBody.
+        :type enable_single_float_ip: bool
+        """
+        self._enable_single_float_ip = enable_single_float_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

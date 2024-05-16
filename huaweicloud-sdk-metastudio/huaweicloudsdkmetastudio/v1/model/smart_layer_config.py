@@ -71,7 +71,8 @@ class SmartLayerConfig:
         self.layer_type = layer_type
         if asset_id is not None:
             self.asset_id = asset_id
-        self.position = position
+        if position is not None:
+            self.position = position
         if size is not None:
             self.size = size
         if image_config is not None:

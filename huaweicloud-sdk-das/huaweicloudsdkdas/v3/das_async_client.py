@@ -507,14 +507,17 @@ class DasAsyncClient(Client):
     def create_sql_limit_rules_async(self, request):
         """创建SQL限流规则
 
-        添加SQL限流规则。目前仅支持MySQL数据库。
-        使用限制如下：
+        添加SQL限流规则。目前仅支持MySQL和PostgreSQL数据库。
+        MySQL使用限制如下：
         1.规则举例详细说明：例如关键字是\&quot;select~a\&quot;, 含义为：select以及a为该并发控制所包含的两个关键字，~为关键字间隔符，即若执行SQL命令包含select与a两个关键字视为命中此条并发控制规则。
         2.当SQL语句匹配多条限流规则时，优先生效最新添加的规则，之前的规则不再生效。
         3.限流规则关键字有顺序要求，只会按顺序匹配。如：a~and~b 只会匹配 xxx a&gt;1 and b&gt;2，而不会匹配 xxx b&gt;2 and a&gt;1。
         4.关键字可能大小写敏感，请执行 \&quot;show variables like &#39;rds_sqlfilter_case_sensitive&#39;或者到实例参数设置页面进行确认。
         5.部分版本只读实例不允许设置限流规则，如果要设置限流规则，请到主实例上进行添加。
         6.系统表不限制、不涉及数据查询的不限制、root账号在特定版本下不限制。
+        PostgreSQL使用限制如下：
+        1.无法添加相同QUERY_ID或SQL语句的规则。
+        2.使用SQL语句添加规则时，需要确保存在数据库表，如：select * from test，需要确保数据库中有test表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -793,7 +796,7 @@ class DasAsyncClient(Client):
     def delete_sql_limit_rules_async(self, request):
         """删除SQL限流规则
 
-        删除SQL限流规则。目前仅支持MySQL数据库
+        删除SQL限流规则。目前仅支持MySQL和PostgreSQL数据库
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -862,7 +865,7 @@ class DasAsyncClient(Client):
     def export_slow_query_logs_async(self, request):
         """导出慢SQL数据
 
-        DAS收集慢SQL开关打开后，一次性导出指定时间范围内的慢SQL数据，支持分页滚动获取。该功能仅支持付费实例。
+        DAS收集慢SQL开关打开后，一次性导出指定时间范围内的慢SQL数据，支持分页滚动获取。免费实例仅支持查看最近一小时数据。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -936,10 +939,79 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def export_slow_sql_statistics_async(self, request):
+        """导出慢SQL统计数据
+
+        慢SQL开关打开后，导出慢SQL统计数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportSlowSqlStatistics
+        :type request: :class:`huaweicloudsdkdas.v3.ExportSlowSqlStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowSqlStatisticsResponse`
+        """
+        http_info = self._export_slow_sql_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_slow_sql_statistics_async_invoker(self, request):
+        http_info = self._export_slow_sql_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_slow_sql_statistics_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slow-sql-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportSlowSqlStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def export_slow_sql_templates_details_async(self, request):
         """导出慢SQL模板列表。
 
-        慢SQL开关打开后，导出慢SQL模板列表。该功能仅支持付费实例。查询时间间隔最长一天。
+        慢SQL开关打开后，导出慢SQL模板列表。免费实例仅支持查看最近一小时数据。查询时间间隔最长一天。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1634,7 +1706,7 @@ class DasAsyncClient(Client):
     def list_sql_limit_rules_async(self, request):
         """查询SQL限流规则列表
 
-        查询SQL限流规则。目前仅支持MySQL数据库。
+        查询SQL限流规则。目前仅支持MySQL和PostgreSQL数据库。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1675,6 +1747,8 @@ class DasAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'datastore_type' in local_var_params:
             query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -2371,6 +2445,75 @@ class DasAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'db_user_id' in local_var_params:
             path_params['db_user_id'] = local_var_params['db_user_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sql_limit_rules_async(self, request):
+        """修改SQL限流规则
+
+        修改SQL限流规则。目前仅支持PostgreSQL数据库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSqlLimitRules
+        :type request: :class:`huaweicloudsdkdas.v3.UpdateSqlLimitRulesRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.UpdateSqlLimitRulesResponse`
+        """
+        http_info = self._update_sql_limit_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sql_limit_rules_async_invoker(self, request):
+        http_info = self._update_sql_limit_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sql_limit_rules_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSqlLimitRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 

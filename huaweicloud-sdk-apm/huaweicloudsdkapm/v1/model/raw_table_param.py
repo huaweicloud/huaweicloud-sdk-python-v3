@@ -95,9 +95,12 @@ class RawTableParam:
         self.page_size = page_size
         if order_by is not None:
             self.order_by = order_by
-        self.search_word = search_word
-        self.instance_id = instance_id
-        self.monitor_item_id = monitor_item_id
+        if search_word is not None:
+            self.search_word = search_word
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if monitor_item_id is not None:
+            self.monitor_item_id = monitor_item_id
         self.env_id = env_id
         self.start_time = start_time
         self.end_time = end_time

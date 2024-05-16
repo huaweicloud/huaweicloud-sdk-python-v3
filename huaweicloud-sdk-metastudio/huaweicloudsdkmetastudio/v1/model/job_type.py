@@ -9,9 +9,12 @@ class JobType:
     """
     allowed enum values
     """
+    LLM_MAJOR = "LLM_MAJOR"
+    LLM_MINOR = "LLM_MINOR"
     BASIC = "BASIC"
     MIDDLE = "MIDDLE"
     ADVANCE = "ADVANCE"
+    THIRD_PARTY = "THIRD_PARTY"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

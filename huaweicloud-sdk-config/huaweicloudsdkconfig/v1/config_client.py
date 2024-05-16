@@ -4645,7 +4645,7 @@ class ConfigClient(Client):
     def show_resource_relations(self, request):
         """列举资源关系
 
-        指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为\&quot;in\&quot; 或者\&quot;out\&quot;
+        指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为\&quot;in\&quot; 或者\&quot;out\&quot;。资源关系依赖开启资源记录器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4716,7 +4716,7 @@ class ConfigClient(Client):
     def show_resource_relations_detail(self, request):
         """列举资源关系详情
 
-        指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为“in”或者“out”，需要当帐号有rms:resources:getRelation权限。
+        指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为“in”或者“out”，需要当帐号有rms:resources:getRelation权限。资源关系依赖开启资源记录器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4917,6 +4917,8 @@ class ConfigClient(Client):
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
             collection_formats['tags'] = 'multi'
+        if 'resource_deleted' in local_var_params:
+            query_params.append(('resource_deleted', local_var_params['resource_deleted']))
 
         header_params = {}
 
@@ -5081,6 +5083,8 @@ class ConfigClient(Client):
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
             collection_formats['tags'] = 'multi'
+        if 'resource_deleted' in local_var_params:
+            query_params.append(('resource_deleted', local_var_params['resource_deleted']))
 
         header_params = {}
 
@@ -5447,6 +5451,8 @@ class ConfigClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'resource_deleted' in local_var_params:
+            query_params.append(('resource_deleted', local_var_params['resource_deleted']))
 
         header_params = {}
 
@@ -5527,6 +5533,8 @@ class ConfigClient(Client):
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
             collection_formats['tags'] = 'multi'
+        if 'resource_deleted' in local_var_params:
+            query_params.append(('resource_deleted', local_var_params['resource_deleted']))
 
         header_params = {}
 

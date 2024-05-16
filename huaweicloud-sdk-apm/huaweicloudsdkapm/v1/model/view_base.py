@@ -27,7 +27,7 @@ class ViewBase:
         'span': 'bool',
         'span_field': 'str',
         'order_by': 'str',
-        'latest': 'str',
+        'latest': 'bool',
         'view_type': 'str'
     }
 
@@ -72,7 +72,7 @@ class ViewBase:
         :param order_by: 排序规则。
         :type order_by: str
         :param latest: 是否只展示最近一笔数据。
-        :type latest: str
+        :type latest: bool
         :param view_type: 视图类型。
         :type view_type: str
         """
@@ -345,7 +345,7 @@ class ViewBase:
         是否只展示最近一笔数据。
 
         :return: The latest of this ViewBase.
-        :rtype: str
+        :rtype: bool
         """
         return self._latest
 
@@ -356,7 +356,7 @@ class ViewBase:
         是否只展示最近一笔数据。
 
         :param latest: The latest of this ViewBase.
-        :type latest: str
+        :type latest: bool
         """
         self._latest = latest
 

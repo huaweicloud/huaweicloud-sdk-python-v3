@@ -19,15 +19,17 @@ class ListDrugDatabaseResponse(SdkResponse):
 
     openapi_types = {
         'databases': 'list[DrugDatabaseDto]',
-        'count': 'int'
+        'count': 'int',
+        'cur_user_count': 'int'
     }
 
     attribute_map = {
         'databases': 'databases',
-        'count': 'count'
+        'count': 'count',
+        'cur_user_count': 'cur_user_count'
     }
 
-    def __init__(self, databases=None, count=None):
+    def __init__(self, databases=None, count=None, cur_user_count=None):
         """ListDrugDatabaseResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListDrugDatabaseResponse(SdkResponse):
         :type databases: list[:class:`huaweicloudsdkeihealth.v1.DrugDatabaseDto`]
         :param count: 数据库总数
         :type count: int
+        :param cur_user_count: 当前用户数据库总数
+        :type cur_user_count: int
         """
         
         super(ListDrugDatabaseResponse, self).__init__()
 
         self._databases = None
         self._count = None
+        self._cur_user_count = None
         self.discriminator = None
 
         if databases is not None:
             self.databases = databases
         if count is not None:
             self.count = count
+        if cur_user_count is not None:
+            self.cur_user_count = cur_user_count
 
     @property
     def databases(self):
@@ -92,6 +99,28 @@ class ListDrugDatabaseResponse(SdkResponse):
         :type count: int
         """
         self._count = count
+
+    @property
+    def cur_user_count(self):
+        """Gets the cur_user_count of this ListDrugDatabaseResponse.
+
+        当前用户数据库总数
+
+        :return: The cur_user_count of this ListDrugDatabaseResponse.
+        :rtype: int
+        """
+        return self._cur_user_count
+
+    @cur_user_count.setter
+    def cur_user_count(self, cur_user_count):
+        """Sets the cur_user_count of this ListDrugDatabaseResponse.
+
+        当前用户数据库总数
+
+        :param cur_user_count: The cur_user_count of this ListDrugDatabaseResponse.
+        :type cur_user_count: int
+        """
+        self._cur_user_count = cur_user_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

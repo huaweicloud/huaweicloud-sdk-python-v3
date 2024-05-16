@@ -30,6 +30,7 @@ class ResourceEntity:
         'created': 'str',
         'updated': 'str',
         'provisioning_state': 'str',
+        'state': 'str',
         'tags': 'dict(str, str)',
         'properties': 'dict(str, object)'
     }
@@ -48,11 +49,12 @@ class ResourceEntity:
         'created': 'created',
         'updated': 'updated',
         'provisioning_state': 'provisioning_state',
+        'state': 'state',
         'tags': 'tags',
         'properties': 'properties'
     }
 
-    def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, tags=None, properties=None):
+    def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, state=None, tags=None, properties=None):
         """ResourceEntity
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class ResourceEntity:
         :type updated: str
         :param provisioning_state: 资源操作状态
         :type provisioning_state: str
+        :param state: 资源状态，保有中（Normal）/已删除(Deleted)
+        :type state: str
         :param tags: 资源Tag
         :type tags: dict(str, str)
         :param properties: 资源详细属性
@@ -104,6 +108,7 @@ class ResourceEntity:
         self._created = None
         self._updated = None
         self._provisioning_state = None
+        self._state = None
         self._tags = None
         self._properties = None
         self.discriminator = None
@@ -134,6 +139,8 @@ class ResourceEntity:
             self.updated = updated
         if provisioning_state is not None:
             self.provisioning_state = provisioning_state
+        if state is not None:
+            self.state = state
         if tags is not None:
             self.tags = tags
         if properties is not None:
@@ -424,6 +431,28 @@ class ResourceEntity:
         :type provisioning_state: str
         """
         self._provisioning_state = provisioning_state
+
+    @property
+    def state(self):
+        """Gets the state of this ResourceEntity.
+
+        资源状态，保有中（Normal）/已删除(Deleted)
+
+        :return: The state of this ResourceEntity.
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this ResourceEntity.
+
+        资源状态，保有中（Normal）/已删除(Deleted)
+
+        :param state: The state of this ResourceEntity.
+        :type state: str
+        """
+        self._state = state
 
     @property
     def tags(self):

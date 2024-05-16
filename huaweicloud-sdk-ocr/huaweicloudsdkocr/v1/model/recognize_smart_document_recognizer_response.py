@@ -18,29 +18,36 @@ class RecognizeSmartDocumentRecognizerResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'list[SmartDocumentRecognizerResult]'
+        'result': 'list[SmartDocumentRecognizerResult]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'result': 'result'
+        'result': 'result',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, result=None):
+    def __init__(self, result=None, x_request_id=None):
         """RecognizeSmartDocumentRecognizerResponse
 
         The model defined in huaweicloud sdk
 
         :param result: 调用成功时返回的结果列表，按页面顺序返回，列表第一项为第一页识别结果，依次类推。 调用失败时无此字段。 
         :type result: list[:class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerResult`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(RecognizeSmartDocumentRecognizerResponse, self).__init__()
 
         self._result = None
+        self._x_request_id = None
         self.discriminator = None
 
         if result is not None:
             self.result = result
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def result(self):
@@ -63,6 +70,24 @@ class RecognizeSmartDocumentRecognizerResponse(SdkResponse):
         :type result: list[:class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerResult`]
         """
         self._result = result
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this RecognizeSmartDocumentRecognizerResponse.
+
+        :return: The x_request_id of this RecognizeSmartDocumentRecognizerResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this RecognizeSmartDocumentRecognizerResponse.
+
+        :param x_request_id: The x_request_id of this RecognizeSmartDocumentRecognizerResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

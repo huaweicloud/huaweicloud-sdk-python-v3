@@ -23,6 +23,7 @@ class QueryLtsLogParams:
         'is_count': 'bool',
         'keywords': 'str',
         'line_num': 'str',
+        'time__': 'str',
         'is_desc': 'bool',
         'search_type': 'str',
         'limit': 'int',
@@ -37,6 +38,7 @@ class QueryLtsLogParams:
         'is_count': 'is_count',
         'keywords': 'keywords',
         'line_num': 'line_num',
+        'time__': '__time__',
         'is_desc': 'is_desc',
         'search_type': 'search_type',
         'limit': 'limit',
@@ -44,7 +46,7 @@ class QueryLtsLogParams:
         'is_iterative': 'is_iterative'
     }
 
-    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, is_desc=None, search_type=None, limit=None, highlight=None, is_iterative=None):
+    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, time__=None, is_desc=None, search_type=None, limit=None, highlight=None, is_iterative=None):
         """QueryLtsLogParams
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class QueryLtsLogParams:
         :type keywords: str
         :param line_num: 日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time 和 end_time 之间。
         :type line_num: str
+        :param time__: 若已开启自定义时间功能，需要使用该字段进行分页查询。
+        :type time__: str
         :param is_desc: 顺序或者倒序查询, 默认为false(顺序查询)
         :type is_desc: bool
         :param search_type: 首次查询为 “init”, 分页查询时为 “forwards”或者“backwards”, 默认为首次查询“init”, 与 is_desc 参数配合进行分页查询。
@@ -81,6 +85,7 @@ class QueryLtsLogParams:
         self._is_count = None
         self._keywords = None
         self._line_num = None
+        self._time__ = None
         self._is_desc = None
         self._search_type = None
         self._limit = None
@@ -98,6 +103,8 @@ class QueryLtsLogParams:
             self.keywords = keywords
         if line_num is not None:
             self.line_num = line_num
+        if time__ is not None:
+            self.time__ = time__
         if is_desc is not None:
             self.is_desc = is_desc
         if search_type is not None:
@@ -240,6 +247,28 @@ class QueryLtsLogParams:
         :type line_num: str
         """
         self._line_num = line_num
+
+    @property
+    def time__(self):
+        """Gets the time__ of this QueryLtsLogParams.
+
+        若已开启自定义时间功能，需要使用该字段进行分页查询。
+
+        :return: The time__ of this QueryLtsLogParams.
+        :rtype: str
+        """
+        return self._time__
+
+    @time__.setter
+    def time__(self, time__):
+        """Sets the time__ of this QueryLtsLogParams.
+
+        若已开启自定义时间功能，需要使用该字段进行分页查询。
+
+        :param time__: The time__ of this QueryLtsLogParams.
+        :type time__: str
+        """
+        self._time__ = time__
 
     @property
     def is_desc(self):

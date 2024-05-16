@@ -18,29 +18,36 @@ class RecognizeThailandIdcardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'ThailandIdcardResult'
+        'result': 'ThailandIdcardResult',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'result': 'result'
+        'result': 'result',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, result=None):
+    def __init__(self, result=None, x_request_id=None):
         """RecognizeThailandIdcardResponse
 
         The model defined in huaweicloud sdk
 
         :param result: 
         :type result: :class:`huaweicloudsdkocr.v1.ThailandIdcardResult`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(RecognizeThailandIdcardResponse, self).__init__()
 
         self._result = None
+        self._x_request_id = None
         self.discriminator = None
 
         if result is not None:
             self.result = result
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def result(self):
@@ -59,6 +66,24 @@ class RecognizeThailandIdcardResponse(SdkResponse):
         :type result: :class:`huaweicloudsdkocr.v1.ThailandIdcardResult`
         """
         self._result = result
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this RecognizeThailandIdcardResponse.
+
+        :return: The x_request_id of this RecognizeThailandIdcardResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this RecognizeThailandIdcardResponse.
+
+        :param x_request_id: The x_request_id of this RecognizeThailandIdcardResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

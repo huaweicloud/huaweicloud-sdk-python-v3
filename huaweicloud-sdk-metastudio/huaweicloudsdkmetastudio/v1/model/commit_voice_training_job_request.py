@@ -18,15 +18,17 @@ class CommitVoiceTrainingJobRequest:
 
     openapi_types = {
         'x_app_user_id': 'str',
-        'job_id': 'str'
+        'job_id': 'str',
+        'body': 'CommitJobReq'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'body': 'body'
     }
 
-    def __init__(self, x_app_user_id=None, job_id=None):
+    def __init__(self, x_app_user_id=None, job_id=None, body=None):
         """CommitVoiceTrainingJobRequest
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class CommitVoiceTrainingJobRequest:
         :type x_app_user_id: str
         :param job_id: 任务id。
         :type job_id: str
+        :param body: Body of the CommitVoiceTrainingJobRequest
+        :type body: :class:`huaweicloudsdkmetastudio.v1.CommitJobReq`
         """
         
         
 
         self._x_app_user_id = None
         self._job_id = None
+        self._body = None
         self.discriminator = None
 
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
         self.job_id = job_id
+        if body is not None:
+            self.body = body
 
     @property
     def x_app_user_id(self):
@@ -90,6 +97,24 @@ class CommitVoiceTrainingJobRequest:
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def body(self):
+        """Gets the body of this CommitVoiceTrainingJobRequest.
+
+        :return: The body of this CommitVoiceTrainingJobRequest.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CommitJobReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this CommitVoiceTrainingJobRequest.
+
+        :param body: The body of this CommitVoiceTrainingJobRequest.
+        :type body: :class:`huaweicloudsdkmetastudio.v1.CommitJobReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

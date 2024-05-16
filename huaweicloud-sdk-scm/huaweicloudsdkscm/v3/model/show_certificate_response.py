@@ -33,6 +33,7 @@ class ShowCertificateResponse(SdkResponse):
         'validity_period': 'int',
         'validation_method': 'str',
         'domain_type': 'str',
+        'multi_domain_type': 'str',
         'domain': 'str',
         'sans': 'str',
         'domain_count': 'int',
@@ -58,6 +59,7 @@ class ShowCertificateResponse(SdkResponse):
         'validity_period': 'validity_period',
         'validation_method': 'validation_method',
         'domain_type': 'domain_type',
+        'multi_domain_type': 'multi_domain_type',
         'domain': 'domain',
         'sans': 'sans',
         'domain_count': 'domain_count',
@@ -67,7 +69,7 @@ class ShowCertificateResponse(SdkResponse):
         'authentification': 'authentification'
     }
 
-    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, fingerprint=None, enterprise_project_id=None, authentification=None):
+    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, multi_domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, fingerprint=None, enterprise_project_id=None, authentification=None):
         """ShowCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -102,6 +104,8 @@ class ShowCertificateResponse(SdkResponse):
         :type validation_method: str
         :param domain_type: 域名类型，取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
         :type domain_type: str
+        :param multi_domain_type: 多域名类型，取值如下： - primary_single 主单 - primary_wildcard 主泛
+        :type multi_domain_type: str
         :param domain: 证书绑定域名。
         :type domain: str
         :param sans: 证书绑定的附加域名信息。
@@ -135,6 +139,7 @@ class ShowCertificateResponse(SdkResponse):
         self._validity_period = None
         self._validation_method = None
         self._domain_type = None
+        self._multi_domain_type = None
         self._domain = None
         self._sans = None
         self._domain_count = None
@@ -174,6 +179,8 @@ class ShowCertificateResponse(SdkResponse):
             self.validation_method = validation_method
         if domain_type is not None:
             self.domain_type = domain_type
+        if multi_domain_type is not None:
+            self.multi_domain_type = multi_domain_type
         if domain is not None:
             self.domain = domain
         if sans is not None:
@@ -518,6 +525,28 @@ class ShowCertificateResponse(SdkResponse):
         :type domain_type: str
         """
         self._domain_type = domain_type
+
+    @property
+    def multi_domain_type(self):
+        """Gets the multi_domain_type of this ShowCertificateResponse.
+
+        多域名类型，取值如下： - primary_single 主单 - primary_wildcard 主泛
+
+        :return: The multi_domain_type of this ShowCertificateResponse.
+        :rtype: str
+        """
+        return self._multi_domain_type
+
+    @multi_domain_type.setter
+    def multi_domain_type(self, multi_domain_type):
+        """Sets the multi_domain_type of this ShowCertificateResponse.
+
+        多域名类型，取值如下： - primary_single 主单 - primary_wildcard 主泛
+
+        :param multi_domain_type: The multi_domain_type of this ShowCertificateResponse.
+        :type multi_domain_type: str
+        """
+        self._multi_domain_type = multi_domain_type
 
     @property
     def domain(self):

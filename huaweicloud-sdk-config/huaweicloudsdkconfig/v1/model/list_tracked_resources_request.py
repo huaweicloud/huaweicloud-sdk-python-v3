@@ -24,7 +24,8 @@ class ListTrackedResourcesRequest:
         'marker': 'str',
         'id': 'str',
         'name': 'str',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'resource_deleted': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListTrackedResourcesRequest:
         'marker': 'marker',
         'id': 'id',
         'name': 'name',
-        'tags': 'tags'
+        'tags': 'tags',
+        'resource_deleted': 'resource_deleted'
     }
 
-    def __init__(self, region_id=None, ep_id=None, type=None, limit=None, marker=None, id=None, name=None, tags=None):
+    def __init__(self, region_id=None, ep_id=None, type=None, limit=None, marker=None, id=None, name=None, tags=None, resource_deleted=None):
         """ListTrackedResourcesRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListTrackedResourcesRequest:
         :type name: str
         :param tags: 标签列表
         :type tags: list[str]
+        :param resource_deleted: 是否查询已删除的资源。默认为false，不查询已删除的资源
+        :type resource_deleted: bool
         """
         
         
@@ -71,6 +75,7 @@ class ListTrackedResourcesRequest:
         self._id = None
         self._name = None
         self._tags = None
+        self._resource_deleted = None
         self.discriminator = None
 
         if region_id is not None:
@@ -89,6 +94,8 @@ class ListTrackedResourcesRequest:
             self.name = name
         if tags is not None:
             self.tags = tags
+        if resource_deleted is not None:
+            self.resource_deleted = resource_deleted
 
     @property
     def region_id(self):
@@ -265,6 +272,28 @@ class ListTrackedResourcesRequest:
         :type tags: list[str]
         """
         self._tags = tags
+
+    @property
+    def resource_deleted(self):
+        """Gets the resource_deleted of this ListTrackedResourcesRequest.
+
+        是否查询已删除的资源。默认为false，不查询已删除的资源
+
+        :return: The resource_deleted of this ListTrackedResourcesRequest.
+        :rtype: bool
+        """
+        return self._resource_deleted
+
+    @resource_deleted.setter
+    def resource_deleted(self, resource_deleted):
+        """Sets the resource_deleted of this ListTrackedResourcesRequest.
+
+        是否查询已删除的资源。默认为false，不查询已删除的资源
+
+        :param resource_deleted: The resource_deleted of this ListTrackedResourcesRequest.
+        :type resource_deleted: bool
+        """
+        self._resource_deleted = resource_deleted
 
     def to_dict(self):
         """Returns the model properties as a dict"""

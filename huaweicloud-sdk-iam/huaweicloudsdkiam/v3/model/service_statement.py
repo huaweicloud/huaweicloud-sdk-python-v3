@@ -20,7 +20,7 @@ class ServiceStatement:
         'action': 'list[str]',
         'effect': 'str',
         'condition': 'dict(str, dict(str, list[str]))',
-        'resource': 'list[str]'
+        'resource': 'object'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ServiceStatement:
         :param condition: 
         :type condition: dict(str, dict(str, list[str]))
         :param resource: 资源。规则如下： &gt; - 可填 * 的五段式：&lt;service-name&gt;:&lt;region&gt;:&lt;account-id&gt;:&lt;resource-type&gt;:&lt;resource-path&gt;，例：\&quot;obs:*:*:bucket:*\&quot;。 &gt; - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
-        :type resource: list[str]
+        :type resource: object
         """
         
         
@@ -129,7 +129,7 @@ class ServiceStatement:
         资源。规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
 
         :return: The resource of this ServiceStatement.
-        :rtype: list[str]
+        :rtype: object
         """
         return self._resource
 
@@ -140,7 +140,7 @@ class ServiceStatement:
         资源。规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
 
         :param resource: The resource of this ServiceStatement.
-        :type resource: list[str]
+        :type resource: object
         """
         self._resource = resource
 

@@ -43,6 +43,9 @@ from huaweicloudsdkdas.v3.model.execution_plan import ExecutionPlan
 from huaweicloudsdkdas.v3.model.explain import Explain
 from huaweicloudsdkdas.v3.model.export_slow_query_logs_request import ExportSlowQueryLogsRequest
 from huaweicloudsdkdas.v3.model.export_slow_query_logs_response import ExportSlowQueryLogsResponse
+from huaweicloudsdkdas.v3.model.export_slow_sql_statistics_request import ExportSlowSqlStatisticsRequest
+from huaweicloudsdkdas.v3.model.export_slow_sql_statistics_request_body import ExportSlowSqlStatisticsRequestBody
+from huaweicloudsdkdas.v3.model.export_slow_sql_statistics_response import ExportSlowSqlStatisticsResponse
 from huaweicloudsdkdas.v3.model.export_slow_sql_templates_details_request import ExportSlowSqlTemplatesDetailsRequest
 from huaweicloudsdkdas.v3.model.export_slow_sql_templates_details_response import ExportSlowSqlTemplatesDetailsResponse
 from huaweicloudsdkdas.v3.model.export_sql_statements_request import ExportSqlStatementsRequest
@@ -75,11 +78,9 @@ from huaweicloudsdkdas.v3.model.list_sql_limit_rules_response import ListSqlLimi
 from huaweicloudsdkdas.v3.model.metadata_lock import MetadataLock
 from huaweicloudsdkdas.v3.model.process import Process
 from huaweicloudsdkdas.v3.model.query_sql_plan_body import QuerySqlPlanBody
-from huaweicloudsdkdas.v3.model.quotas import Quotas
 from huaweicloudsdkdas.v3.model.register_db_user_request import RegisterDbUserRequest
 from huaweicloudsdkdas.v3.model.register_db_user_request_body import RegisterDbUserRequestBody
 from huaweicloudsdkdas.v3.model.register_db_user_response import RegisterDbUserResponse
-from huaweicloudsdkdas.v3.model.resource import Resource
 from huaweicloudsdkdas.v3.model.share_conn_user_info import ShareConnUserInfo
 from huaweicloudsdkdas.v3.model.show_api_version_request import ShowApiVersionRequest
 from huaweicloudsdkdas.v3.model.show_api_version_response import ShowApiVersionResponse
@@ -100,6 +101,7 @@ from huaweicloudsdkdas.v3.model.show_sql_switch_status_response import ShowSqlSw
 from huaweicloudsdkdas.v3.model.show_tuning_request import ShowTuningRequest
 from huaweicloudsdkdas.v3.model.show_tuning_response import ShowTuningResponse
 from huaweicloudsdkdas.v3.model.slow_log import SlowLog
+from huaweicloudsdkdas.v3.model.slow_sql_statistics import SlowSqlStatistics
 from huaweicloudsdkdas.v3.model.slow_sql_template import SlowSqlTemplate
 from huaweicloudsdkdas.v3.model.sql_limit_rule import SqlLimitRule
 from huaweicloudsdkdas.v3.model.tb_pos_info import TbPosInfo
@@ -108,4 +110,8 @@ from huaweicloudsdkdas.v3.model.top_sql_trend_item import TopSqlTrendItem
 from huaweicloudsdkdas.v3.model.update_db_user_request import UpdateDbUserRequest
 from huaweicloudsdkdas.v3.model.update_db_user_request_body import UpdateDbUserRequestBody
 from huaweicloudsdkdas.v3.model.update_db_user_response import UpdateDbUserResponse
+from huaweicloudsdkdas.v3.model.update_sql_limit_rule_option import UpdateSqlLimitRuleOption
+from huaweicloudsdkdas.v3.model.update_sql_limit_rules_body import UpdateSqlLimitRulesBody
+from huaweicloudsdkdas.v3.model.update_sql_limit_rules_request import UpdateSqlLimitRulesRequest
+from huaweicloudsdkdas.v3.model.update_sql_limit_rules_response import UpdateSqlLimitRulesResponse
 

@@ -1,3 +1,419 @@
+# 3.1.96 2024-05-16
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowMonitorItemDetail`
+    - `CreateBusiness`
+    - `ShowToken`
+    - `ShowAccessPoint`
+    - `ShowFlameLineTree`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAkSk**
+    - 响应参数变更
+      - `+ access_ak_sk_models.gmt_create_timestamp`
+      - `+ access_ak_sk_models.gmt_modify_timestamp`
+  - **ListEnvTags**
+    - 请求参数变更
+      - `- tag_id`
+      - `- tag_name`
+      - `- env_id`
+      - `- descp`
+      - `- env_id_list`
+      - `- tag_id_list`
+      - `- add_env_id_list`
+      - `- add_tag_id_list`
+      - `- remove_tag_id_list`
+      - `- remove_env_id_list`
+  - **ShowAkSks**
+    - 响应参数变更
+      - `+ access_ak_sk_models.gmt_create_timestamp`
+      - `+ access_ak_sk_models.gmt_modify_timestamp`
+  - **ShowMonitorItemViewConfig**
+    - 响应参数变更
+      - `* view_row_list.view_list.latest: string -> boolean`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃接口`UpdateDomainFullConfig`、`ShowDomainFullConfig`
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.https.enc_certificate_value`
+      - `+ configs.https.certificates`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.https.enc_certificate_value`
+      - `+ configs.https.enc_private_key`
+      - `+ configs.https.certificates`
+
+### HuaweiCloud SDK CodeArtsInspector
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListHosts`
+    - `BatchCreateHosts`
+    - `DeleteHost`
+    - `BatchStartHostTasks`
+    - `ListHostResults`
+    - `ListGroups`
+    - `AddGroup`
+    - `DeleteGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CountTrackedResources**
+    - 请求参数变更
+      - `+ resource_deleted`
+  - **ShowTrackedResourceDetail**
+    - 响应参数变更
+      - `+ state`
+  - **ShowResourceById**
+    - 响应参数变更
+      - `+ state`
+  - **ShowResourceDetail**
+    - 响应参数变更
+      - `+ state`
+  - **ListResources**
+    - 响应参数变更
+      - `+ state`
+      - `+ resources.state`
+  - **ListTrackedResources**
+    - 请求参数变更
+      - `+ resource_deleted`
+    - 响应参数变更
+      - `+ state`
+      - `+ resources.state`
+  - **ListTrackedResourceTags**
+    - 请求参数变更
+      - `+ resource_deleted`
+  - **CollectTrackedResourcesSummary**
+    - 请求参数变更
+      - `+ resource_deleted`
+  - **ListAllResources**
+    - 响应参数变更
+      - `+ state`
+      - `+ resources.state`
+  - **ShowResourceHistory**
+    - 响应参数变更
+      - `+ state`
+      - `+ items.resource.state`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListSecurityMemberSyncTasks`
+    - `ShowSecurityMemberSyncTask`
+    - `ListSecurityAssignedQueues`
+    - `CreateSecurityAssignedQueue`
+    - `UpdateSecurityAssignedQueue`
+    - `DeleteSecurityAssignedQueue`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListClients**
+    - 响应参数变更
+      - `* clients.idle: string -> int32`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSqlJob**
+    - 请求参数变更
+      - `+ current_catalog`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListUpdatableVersion**
+    - 请求参数变更
+      - `+ type`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDrugDatabase**
+    - 响应参数变更
+      - `+ cur_user_count`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateStarrocksInstance`
+    - `ListStarrocksInstanceInfo`
+    - `DeleteStarrocksInstance`
+    - `RestartStarrocksInstance`
+    - `RestartStarrocksNode`
+    - `CheckStarRocksResource`
+    - `ListHtapDataStore`
+    - `ListHtapStorageType`
+    - `ListHtapFlavor`
+    - `ListHtapInstanceInfo`
+    - `ShowStarRocksDatabaseUser`
+    - `CreateStarRocksDatabaseUser`
+    - `DeleteStarRocksDatabaseUser`
+    - `UpdateStarRocksDatabaseUserPassword`
+    - `UpdateStarRocksDatabaseUserPermission`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持接口`RestoreInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDbInstance**
+    - 请求参数变更
+      - `+ enable_single_float_ip`
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomPolicies**
+    - 响应参数变更
+      - `* roles.policy.Statement.Resource: list<string> -> object`
+  - **CreateCloudServiceCustomPolicy**
+    - 请求参数变更
+      - `* role.policy.Statement.Resource: list<string> -> object`
+    - 响应参数变更
+      - `* role.policy.Statement.Resource: list<string> -> object`
+  - **ShowCustomPolicy**
+    - 响应参数变更
+      - `* role.policy.Statement.Resource: list<string> -> object`
+  - **UpdateCloudServiceCustomPolicy**
+    - 请求参数变更
+      - `* role.policy.Statement.Resource: list<string> -> object`
+    - 响应参数变更
+      - `* role.policy.Statement.Resource: list<string> -> object`
+  - **CreateTemporaryAccessKeyByToken**
+    - 请求参数变更
+      - `* auth.identity.policy.Statement.Resource: list<string> -> object`
+  - **CreateTemporaryAccessKeyByAgency**
+    - 请求参数变更
+      - `* auth.identity.policy.Statement.Resource: list<string> -> object`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 支持接口`SetDeviceControlDefaultValues`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLogs**
+    - 请求参数变更
+      - `+ __time__`
+  - **ListStructuredLogsWithTimeRange**
+    - 请求参数变更
+      - `* time_range.start_time: string -> int64`
+      - `* time_range.end_time: string -> int64`
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateLargeFile`
+    - `ListHotQuestion`
+    - `CreateHotQuestion`
+    - `ShowHotQuestion`
+    - `UpdateHotQuestion`
+    - `DeleteHotQuestion`
+    - `ListKnowledgeSkill`
+    - `CreateKnowledgeSkill`
+    - `ShowKnowledgeSkill`
+    - `UpdateKnowledgeSkill`
+    - `DeleteKnowledgeSkill`
+    - `ExportKnowledgeSkill`
+    - `ListKnowledgeIntent`
+    - `CreateKnowledgeIntent`
+    - `ShowKnowledgeIntent`
+    - `UpdateKnowledgeIntent`
+    - `DeleteKnowledgeIntent`
+    - `CreateIntentAndQuestion`
+    - `ListKnowledgeQuestion`
+    - `CreateKnowledgeQuestion`
+    - `ShowKnowledgeQuestion`
+    - `UpdateKnowledgeQuestion`
+    - `DeleteKnowledgeQuestion`
+    - `UpdateBatchKnowledgeQuestion`
+    - `CreateBatchKnowledgeQuestion`
+    - `ListWelcomeSpeech`
+    - `CreateWelcomeSpeech`
+    - `ShowWelcomeSpeech`
+    - `UpdateWelcomeSpeech`
+    - `DeleteWelcomeSpeech`
+    - `ShowWelcomeSpeechSwitch`
+    - `UpdateWelcomeSpeechSwitch`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRobot**
+    - 响应参数变更
+      - `+ app_key`
+      - `+ role_id`
+  - **UpdateRobot**
+    - 请求参数变更
+      - `+ mobvoi_config`
+  - **CreateTrainingBasicJob**
+    - 请求参数变更
+      - `+ phone`
+  - **CreateTrainingMiddleJob**
+    - 请求参数变更
+      - `+ phone`
+  - **CreateTrainingAdvanceJob**
+    - 请求参数变更
+      - `+ phone`
+  - **ShowVoiceTrainingJob**
+    - 响应参数变更
+      - `+ phone`
+      - `+ job_type: enum value [LLM_MAJOR,LLM_MINOR,THIRD_PARTY]`
+  - **CreateRobot**
+    - 请求参数变更
+      - `+ mobvoi_config`
+  - **ListRobot**
+    - 响应参数变更
+      - `+ app_key`
+      - `+ role_id`
+      - `+ data.app_key`
+      - `+ data.role_id`
+  - **ListVoiceTrainingJob**
+    - 响应参数变更
+      - `+ phone`
+      - `+ jobs.phone`
+      - `+ jobs.job_type: enum value [LLM_MAJOR,LLM_MINOR,THIRD_PARTY]`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeSmartDocumentRecognizer**
+    - 请求参数变更
+      - `+ pdf_page_number`
+
+### HuaweiCloud SDK RGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ListControls`
+    - `ListControlViolations`
+    - `ShowControl`
+    - `ListEnabledControls`
+    - `ListControlsForAccount`
+    - `ShowComplianceStatusForAccount`
+    - `ShowComplianceStatusForOrganizationUnit`
+    - `ShowControlsForOrganizationUnit`
+    - `ListConfigRuleCompliance`
+    - `ListDriftDetails`
+    - `RegisterOrganizationalUnit`
+    - `ReRegisterOrganizationalUnit`
+    - `DeregisterOrganizationalUnit`
+    - `ListOperation`
+    - `ShowOperation`
+    - `ShowManagedOrganizationalUnit`
+    - `DeleteManagedOrganizationalUnits`
+    - `ListManagedOrganizationalUnits`
+    - `EnrollAccount`
+    - `UnEnrollAccount`
+    - `UpdateManagedAccount`
+    - `ShowManagedAccount`
+    - `ListManagedAccountsForParent`
+    - `ListManagedAccounts`
+    - `CreateAccount`
+    - `ShowManagedCoreAccount`
+    - `ShowHomeRegion`
+    - `CheckLaunch`
+    - `SetupLandingZone`
+    - `ShowLandingZoneStatus`
+    - `ShowAvailableUpdates`
+    - `ShowLandingZoneConfiguration`
+    - `ShowLandingZoneIdentityCenter`
+    - `ShowTemplateDeployParams`
+    - `CreateTemplate`
+    - `DeleteTemplate`
+    - `ListPredefinedTemplates`
+
+### HuaweiCloud SDK SCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCertificate**
+    - 响应参数变更
+      - `+ multi_domain_type`
+
+### HuaweiCloud SDK Workspace
+
+- _新增特性_
+  - 支持接口`ShowJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.95 2024-05-09
 
 ### HuaweiCloud SDK BSSINTL

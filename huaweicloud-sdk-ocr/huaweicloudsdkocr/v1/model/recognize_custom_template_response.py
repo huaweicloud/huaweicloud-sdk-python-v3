@@ -19,15 +19,17 @@ class RecognizeCustomTemplateResponse(SdkResponse):
 
     openapi_types = {
         'result': 'object',
-        'template_id': 'str'
+        'template_id': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'result': 'result',
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, result=None, template_id=None):
+    def __init__(self, result=None, template_id=None, x_request_id=None):
         """RecognizeCustomTemplateResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class RecognizeCustomTemplateResponse(SdkResponse):
         :type result: object
         :param template_id: 调用成功时返回调用模板id。 调用失败时无此字段。 
         :type template_id: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(RecognizeCustomTemplateResponse, self).__init__()
 
         self._result = None
         self._template_id = None
+        self._x_request_id = None
         self.discriminator = None
 
         if result is not None:
             self.result = result
         if template_id is not None:
             self.template_id = template_id
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def result(self):
@@ -92,6 +99,24 @@ class RecognizeCustomTemplateResponse(SdkResponse):
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this RecognizeCustomTemplateResponse.
+
+        :return: The x_request_id of this RecognizeCustomTemplateResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this RecognizeCustomTemplateResponse.
+
+        :param x_request_id: The x_request_id of this RecognizeCustomTemplateResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -55,7 +55,7 @@ class UpdateDigitalAssetRequestBody:
         :type asset_type: str
         :param asset_state: 资产状态。 * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务
         :type asset_state: str
-        :param asset_owner: 项目ID。 &gt; * 仅管理员帐号可设置此参数。
+        :param asset_owner: 项目ID。 &gt; * 仅管理员账号可设置此参数。
         :type asset_owner: str
         :param review_config: 
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -196,7 +196,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_owner(self):
         """Gets the asset_owner of this UpdateDigitalAssetRequestBody.
 
-        项目ID。 > * 仅管理员帐号可设置此参数。
+        项目ID。 > * 仅管理员账号可设置此参数。
 
         :return: The asset_owner of this UpdateDigitalAssetRequestBody.
         :rtype: str
@@ -207,7 +207,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_owner(self, asset_owner):
         """Sets the asset_owner of this UpdateDigitalAssetRequestBody.
 
-        项目ID。 > * 仅管理员帐号可设置此参数。
+        项目ID。 > * 仅管理员账号可设置此参数。
 
         :param asset_owner: The asset_owner of this UpdateDigitalAssetRequestBody.
         :type asset_owner: str

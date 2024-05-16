@@ -17,60 +17,28 @@ class TagParam:
     sensitive_list = []
 
     openapi_types = {
-        'tag_id': 'int',
-        'tag_name': 'str',
-        'env_id': 'int',
-        'descp': 'str',
         'business_id': 'int',
-        'env_id_list': 'list[int]',
-        'tag_id_list': 'list[int]',
         'keyword': 'str',
         'page_enable': 'bool',
         'page_number': 'int',
-        'page_size': 'int',
-        'add_env_id_list': 'list[int]',
-        'add_tag_id_list': 'list[int]',
-        'remove_tag_id_list': 'list[int]',
-        'remove_env_id_list': 'list[int]'
+        'page_size': 'int'
     }
 
     attribute_map = {
-        'tag_id': 'tag_id',
-        'tag_name': 'tag_name',
-        'env_id': 'env_id',
-        'descp': 'descp',
         'business_id': 'business_id',
-        'env_id_list': 'env_id_list',
-        'tag_id_list': 'tag_id_list',
         'keyword': 'keyword',
         'page_enable': 'page_enable',
         'page_number': 'page_number',
-        'page_size': 'page_size',
-        'add_env_id_list': 'add_env_id_list',
-        'add_tag_id_list': 'add_tag_id_list',
-        'remove_tag_id_list': 'remove_tag_id_list',
-        'remove_env_id_list': 'remove_env_id_list'
+        'page_size': 'page_size'
     }
 
-    def __init__(self, tag_id=None, tag_name=None, env_id=None, descp=None, business_id=None, env_id_list=None, tag_id_list=None, keyword=None, page_enable=None, page_number=None, page_size=None, add_env_id_list=None, add_tag_id_list=None, remove_tag_id_list=None, remove_env_id_list=None):
+    def __init__(self, business_id=None, keyword=None, page_enable=None, page_number=None, page_size=None):
         """TagParam
 
         The model defined in huaweicloud sdk
 
-        :param tag_id: 环境标签id。
-        :type tag_id: int
-        :param tag_name: 环境标签名称。
-        :type tag_name: str
-        :param env_id: 环境id。
-        :type env_id: int
-        :param descp: 描述信息。
-        :type descp: str
         :param business_id: 应用id。
         :type business_id: int
-        :param env_id_list: 环境id列表。
-        :type env_id_list: list[int]
-        :param tag_id_list: 环境标签id列表。
-        :type tag_id_list: list[int]
         :param keyword: 关键字。
         :type keyword: str
         :param page_enable: 是否分页。
@@ -79,48 +47,18 @@ class TagParam:
         :type page_number: int
         :param page_size: 当前页码。
         :type page_size: int
-        :param add_env_id_list: 新增环境id列表。
-        :type add_env_id_list: list[int]
-        :param add_tag_id_list: 新增环境标签id列表。
-        :type add_tag_id_list: list[int]
-        :param remove_tag_id_list: 移除环境标签id列表。
-        :type remove_tag_id_list: list[int]
-        :param remove_env_id_list: 移除的环境id列表。
-        :type remove_env_id_list: list[int]
         """
         
         
 
-        self._tag_id = None
-        self._tag_name = None
-        self._env_id = None
-        self._descp = None
         self._business_id = None
-        self._env_id_list = None
-        self._tag_id_list = None
         self._keyword = None
         self._page_enable = None
         self._page_number = None
         self._page_size = None
-        self._add_env_id_list = None
-        self._add_tag_id_list = None
-        self._remove_tag_id_list = None
-        self._remove_env_id_list = None
         self.discriminator = None
 
-        if tag_id is not None:
-            self.tag_id = tag_id
-        if tag_name is not None:
-            self.tag_name = tag_name
-        if env_id is not None:
-            self.env_id = env_id
-        if descp is not None:
-            self.descp = descp
         self.business_id = business_id
-        if env_id_list is not None:
-            self.env_id_list = env_id_list
-        if tag_id_list is not None:
-            self.tag_id_list = tag_id_list
         if keyword is not None:
             self.keyword = keyword
         if page_enable is not None:
@@ -129,102 +67,6 @@ class TagParam:
             self.page_number = page_number
         if page_size is not None:
             self.page_size = page_size
-        if add_env_id_list is not None:
-            self.add_env_id_list = add_env_id_list
-        if add_tag_id_list is not None:
-            self.add_tag_id_list = add_tag_id_list
-        if remove_tag_id_list is not None:
-            self.remove_tag_id_list = remove_tag_id_list
-        if remove_env_id_list is not None:
-            self.remove_env_id_list = remove_env_id_list
-
-    @property
-    def tag_id(self):
-        """Gets the tag_id of this TagParam.
-
-        环境标签id。
-
-        :return: The tag_id of this TagParam.
-        :rtype: int
-        """
-        return self._tag_id
-
-    @tag_id.setter
-    def tag_id(self, tag_id):
-        """Sets the tag_id of this TagParam.
-
-        环境标签id。
-
-        :param tag_id: The tag_id of this TagParam.
-        :type tag_id: int
-        """
-        self._tag_id = tag_id
-
-    @property
-    def tag_name(self):
-        """Gets the tag_name of this TagParam.
-
-        环境标签名称。
-
-        :return: The tag_name of this TagParam.
-        :rtype: str
-        """
-        return self._tag_name
-
-    @tag_name.setter
-    def tag_name(self, tag_name):
-        """Sets the tag_name of this TagParam.
-
-        环境标签名称。
-
-        :param tag_name: The tag_name of this TagParam.
-        :type tag_name: str
-        """
-        self._tag_name = tag_name
-
-    @property
-    def env_id(self):
-        """Gets the env_id of this TagParam.
-
-        环境id。
-
-        :return: The env_id of this TagParam.
-        :rtype: int
-        """
-        return self._env_id
-
-    @env_id.setter
-    def env_id(self, env_id):
-        """Sets the env_id of this TagParam.
-
-        环境id。
-
-        :param env_id: The env_id of this TagParam.
-        :type env_id: int
-        """
-        self._env_id = env_id
-
-    @property
-    def descp(self):
-        """Gets the descp of this TagParam.
-
-        描述信息。
-
-        :return: The descp of this TagParam.
-        :rtype: str
-        """
-        return self._descp
-
-    @descp.setter
-    def descp(self, descp):
-        """Sets the descp of this TagParam.
-
-        描述信息。
-
-        :param descp: The descp of this TagParam.
-        :type descp: str
-        """
-        self._descp = descp
 
     @property
     def business_id(self):
@@ -247,50 +89,6 @@ class TagParam:
         :type business_id: int
         """
         self._business_id = business_id
-
-    @property
-    def env_id_list(self):
-        """Gets the env_id_list of this TagParam.
-
-        环境id列表。
-
-        :return: The env_id_list of this TagParam.
-        :rtype: list[int]
-        """
-        return self._env_id_list
-
-    @env_id_list.setter
-    def env_id_list(self, env_id_list):
-        """Sets the env_id_list of this TagParam.
-
-        环境id列表。
-
-        :param env_id_list: The env_id_list of this TagParam.
-        :type env_id_list: list[int]
-        """
-        self._env_id_list = env_id_list
-
-    @property
-    def tag_id_list(self):
-        """Gets the tag_id_list of this TagParam.
-
-        环境标签id列表。
-
-        :return: The tag_id_list of this TagParam.
-        :rtype: list[int]
-        """
-        return self._tag_id_list
-
-    @tag_id_list.setter
-    def tag_id_list(self, tag_id_list):
-        """Sets the tag_id_list of this TagParam.
-
-        环境标签id列表。
-
-        :param tag_id_list: The tag_id_list of this TagParam.
-        :type tag_id_list: list[int]
-        """
-        self._tag_id_list = tag_id_list
 
     @property
     def keyword(self):
@@ -379,94 +177,6 @@ class TagParam:
         :type page_size: int
         """
         self._page_size = page_size
-
-    @property
-    def add_env_id_list(self):
-        """Gets the add_env_id_list of this TagParam.
-
-        新增环境id列表。
-
-        :return: The add_env_id_list of this TagParam.
-        :rtype: list[int]
-        """
-        return self._add_env_id_list
-
-    @add_env_id_list.setter
-    def add_env_id_list(self, add_env_id_list):
-        """Sets the add_env_id_list of this TagParam.
-
-        新增环境id列表。
-
-        :param add_env_id_list: The add_env_id_list of this TagParam.
-        :type add_env_id_list: list[int]
-        """
-        self._add_env_id_list = add_env_id_list
-
-    @property
-    def add_tag_id_list(self):
-        """Gets the add_tag_id_list of this TagParam.
-
-        新增环境标签id列表。
-
-        :return: The add_tag_id_list of this TagParam.
-        :rtype: list[int]
-        """
-        return self._add_tag_id_list
-
-    @add_tag_id_list.setter
-    def add_tag_id_list(self, add_tag_id_list):
-        """Sets the add_tag_id_list of this TagParam.
-
-        新增环境标签id列表。
-
-        :param add_tag_id_list: The add_tag_id_list of this TagParam.
-        :type add_tag_id_list: list[int]
-        """
-        self._add_tag_id_list = add_tag_id_list
-
-    @property
-    def remove_tag_id_list(self):
-        """Gets the remove_tag_id_list of this TagParam.
-
-        移除环境标签id列表。
-
-        :return: The remove_tag_id_list of this TagParam.
-        :rtype: list[int]
-        """
-        return self._remove_tag_id_list
-
-    @remove_tag_id_list.setter
-    def remove_tag_id_list(self, remove_tag_id_list):
-        """Sets the remove_tag_id_list of this TagParam.
-
-        移除环境标签id列表。
-
-        :param remove_tag_id_list: The remove_tag_id_list of this TagParam.
-        :type remove_tag_id_list: list[int]
-        """
-        self._remove_tag_id_list = remove_tag_id_list
-
-    @property
-    def remove_env_id_list(self):
-        """Gets the remove_env_id_list of this TagParam.
-
-        移除的环境id列表。
-
-        :return: The remove_env_id_list of this TagParam.
-        :rtype: list[int]
-        """
-        return self._remove_env_id_list
-
-    @remove_env_id_list.setter
-    def remove_env_id_list(self, remove_env_id_list):
-        """Sets the remove_env_id_list of this TagParam.
-
-        移除的环境id列表。
-
-        :param remove_env_id_list: The remove_env_id_list of this TagParam.
-        :type remove_env_id_list: list[int]
-        """
-        self._remove_env_id_list = remove_env_id_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

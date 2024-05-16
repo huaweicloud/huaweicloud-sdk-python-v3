@@ -2472,6 +2472,73 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def create_large_file_async(self, request):
+        """创建大文件
+
+        该接口用于创建大文件（超过5G），获取分段上传URL。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateLargeFile
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateLargeFileRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateLargeFileResponse`
+        """
+        http_info = self._create_large_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_large_file_async_invoker(self, request):
+        http_info = self._create_large_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_large_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/large-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLargeFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_file_async(self, request):
         """删除文件
 
@@ -2518,6 +2585,1640 @@ class MetaStudioAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_hot_question_async(self, request):
+        """创建热点问题
+
+        该接口用于创建热点问题。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateHotQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateHotQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateHotQuestionResponse`
+        """
+        http_info = self._create_hot_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_hot_question_async_invoker(self, request):
+        http_info = self._create_hot_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_hot_question_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-question",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHotQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_hot_question_async(self, request):
+        """删除热点问题
+
+        该接口用于删除热点问题。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHotQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteHotQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteHotQuestionResponse`
+        """
+        http_info = self._delete_hot_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_hot_question_async_invoker(self, request):
+        http_info = self._delete_hot_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_hot_question_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-question/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHotQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hot_question_async(self, request):
+        """查询热点问题列表
+
+        该接口用于查询热点问题列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHotQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListHotQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListHotQuestionResponse`
+        """
+        http_info = self._list_hot_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hot_question_async_invoker(self, request):
+        http_info = self._list_hot_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hot_question_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-question",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHotQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_hot_question_async(self, request):
+        """查询热点问题详情
+
+        该接口用于查询热点问题详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHotQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowHotQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowHotQuestionResponse`
+        """
+        http_info = self._show_hot_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_hot_question_async_invoker(self, request):
+        http_info = self._show_hot_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_hot_question_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-question/{hot_question_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHotQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hot_question_id' in local_var_params:
+            path_params['hot_question_id'] = local_var_params['hot_question_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_hot_question_async(self, request):
+        """修改热点问题
+
+        该接口用于修改热点问题。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateHotQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateHotQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateHotQuestionResponse`
+        """
+        http_info = self._update_hot_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_hot_question_async_invoker(self, request):
+        http_info = self._update_hot_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_hot_question_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-question/{hot_question_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHotQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hot_question_id' in local_var_params:
+            path_params['hot_question_id'] = local_var_params['hot_question_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_intent_and_question_async(self, request):
+        """创建知识库意图和问法
+
+        该接口用于创建知识库意图和问法。一个意图包含一个主题，一个答案，若干个问法等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateIntentAndQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateIntentAndQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateIntentAndQuestionResponse`
+        """
+        http_info = self._create_intent_and_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_intent_and_question_async_invoker(self, request):
+        http_info = self._create_intent_and_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_intent_and_question_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/intent-question",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIntentAndQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_knowledge_intent_async(self, request):
+        """创建知识库意图
+
+        该接口用于创建知识库意图。一个意图包含一个主题，一个答案，若干个问法等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateKnowledgeIntent
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeIntentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeIntentResponse`
+        """
+        http_info = self._create_knowledge_intent_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_knowledge_intent_async_invoker(self, request):
+        http_info = self._create_knowledge_intent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_knowledge_intent_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/intent",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKnowledgeIntentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_knowledge_intent_async(self, request):
+        """删除知识库意图
+
+        该接口用于删除知识库意图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteKnowledgeIntent
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteKnowledgeIntentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteKnowledgeIntentResponse`
+        """
+        http_info = self._delete_knowledge_intent_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_knowledge_intent_async_invoker(self, request):
+        http_info = self._delete_knowledge_intent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_knowledge_intent_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/intent/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKnowledgeIntentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_knowledge_intent_async(self, request):
+        """查询知识库意图列表
+
+        该接口用于查询知识库意图列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListKnowledgeIntent
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListKnowledgeIntentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListKnowledgeIntentResponse`
+        """
+        http_info = self._list_knowledge_intent_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_knowledge_intent_async_invoker(self, request):
+        http_info = self._list_knowledge_intent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_knowledge_intent_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/intent",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKnowledgeIntentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'skill_id' in local_var_params:
+            query_params.append(('skill_id', local_var_params['skill_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_knowledge_intent_async(self, request):
+        """查询知识库意图详情
+
+        该接口用于查询知识库意图详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKnowledgeIntent
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowKnowledgeIntentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowKnowledgeIntentResponse`
+        """
+        http_info = self._show_knowledge_intent_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_knowledge_intent_async_invoker(self, request):
+        http_info = self._show_knowledge_intent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_knowledge_intent_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/intent/{intent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKnowledgeIntentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'intent_id' in local_var_params:
+            path_params['intent_id'] = local_var_params['intent_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_knowledge_intent_async(self, request):
+        """修改知识库意图
+
+        该接口用于修改知识库意图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateKnowledgeIntent
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeIntentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeIntentResponse`
+        """
+        http_info = self._update_knowledge_intent_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_knowledge_intent_async_invoker(self, request):
+        http_info = self._update_knowledge_intent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_knowledge_intent_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/intent/{intent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKnowledgeIntentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'intent_id' in local_var_params:
+            path_params['intent_id'] = local_var_params['intent_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_batch_knowledge_question_async(self, request):
+        """批量创建知识库问法
+
+        该接口用于批量创建知识库问法。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateBatchKnowledgeQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateBatchKnowledgeQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateBatchKnowledgeQuestionResponse`
+        """
+        http_info = self._create_batch_knowledge_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_batch_knowledge_question_async_invoker(self, request):
+        http_info = self._create_batch_knowledge_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_batch_knowledge_question_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/question-batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBatchKnowledgeQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_knowledge_question_async(self, request):
+        """创建知识库问法
+
+        该接口用于创建知识库问法。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateKnowledgeQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeQuestionResponse`
+        """
+        http_info = self._create_knowledge_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_knowledge_question_async_invoker(self, request):
+        http_info = self._create_knowledge_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_knowledge_question_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/question",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKnowledgeQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_knowledge_question_async(self, request):
+        """删除知识库问法
+
+        该接口用于删除知识库问法。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteKnowledgeQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteKnowledgeQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteKnowledgeQuestionResponse`
+        """
+        http_info = self._delete_knowledge_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_knowledge_question_async_invoker(self, request):
+        http_info = self._delete_knowledge_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_knowledge_question_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/question/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKnowledgeQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_knowledge_question_async(self, request):
+        """查询知识库问法列表
+
+        该接口用于查询知识库问法列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListKnowledgeQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListKnowledgeQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListKnowledgeQuestionResponse`
+        """
+        http_info = self._list_knowledge_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_knowledge_question_async_invoker(self, request):
+        http_info = self._list_knowledge_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_knowledge_question_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/question",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKnowledgeQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'intent_id' in local_var_params:
+            query_params.append(('intent_id', local_var_params['intent_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_knowledge_question_async(self, request):
+        """查询知识库问法详情
+
+        该接口用于查询知识库问法详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKnowledgeQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowKnowledgeQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowKnowledgeQuestionResponse`
+        """
+        http_info = self._show_knowledge_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_knowledge_question_async_invoker(self, request):
+        http_info = self._show_knowledge_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_knowledge_question_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/question/{question_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKnowledgeQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'question_id' in local_var_params:
+            path_params['question_id'] = local_var_params['question_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_batch_knowledge_question_async(self, request):
+        """批量修改知识库问法
+
+        该接口用于批量修改知识库问法。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateBatchKnowledgeQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateBatchKnowledgeQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateBatchKnowledgeQuestionResponse`
+        """
+        http_info = self._update_batch_knowledge_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_batch_knowledge_question_async_invoker(self, request):
+        http_info = self._update_batch_knowledge_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_batch_knowledge_question_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/question-batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBatchKnowledgeQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_knowledge_question_async(self, request):
+        """修改知识库问法
+
+        该接口用于修改知识库问法。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateKnowledgeQuestion
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeQuestionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeQuestionResponse`
+        """
+        http_info = self._update_knowledge_question_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_knowledge_question_async_invoker(self, request):
+        http_info = self._update_knowledge_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_knowledge_question_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/question/{question_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKnowledgeQuestionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'question_id' in local_var_params:
+            path_params['question_id'] = local_var_params['question_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_knowledge_skill_async(self, request):
+        """创建知识库技能
+
+        该接口用于创建知识库技能。一个技能用于特定场景的交互问答，包含若干个意图等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateKnowledgeSkill
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeSkillRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeSkillResponse`
+        """
+        http_info = self._create_knowledge_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_knowledge_skill_async_invoker(self, request):
+        http_info = self._create_knowledge_skill_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_knowledge_skill_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/skill",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKnowledgeSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_knowledge_skill_async(self, request):
+        """删除知识库技能
+
+        该接口用于删除知识库技能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteKnowledgeSkill
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteKnowledgeSkillRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteKnowledgeSkillResponse`
+        """
+        http_info = self._delete_knowledge_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_knowledge_skill_async_invoker(self, request):
+        http_info = self._delete_knowledge_skill_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_knowledge_skill_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/skill/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKnowledgeSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_knowledge_skill_async(self, request):
+        """导出知识库技能
+
+        该接口用于导出知识库技能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportKnowledgeSkill
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ExportKnowledgeSkillRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ExportKnowledgeSkillResponse`
+        """
+        http_info = self._export_knowledge_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_knowledge_skill_async_invoker(self, request):
+        http_info = self._export_knowledge_skill_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_knowledge_skill_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/skill/{skill_id}/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportKnowledgeSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+        if 'export_type' in local_var_params:
+            query_params.append(('export_type', local_var_params['export_type']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_knowledge_skill_async(self, request):
+        """查询知识库技能列表
+
+        该接口用于查询知识库技能列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListKnowledgeSkill
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListKnowledgeSkillRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListKnowledgeSkillResponse`
+        """
+        http_info = self._list_knowledge_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_knowledge_skill_async_invoker(self, request):
+        http_info = self._list_knowledge_skill_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_knowledge_skill_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/skill",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKnowledgeSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_knowledge_skill_async(self, request):
+        """查询知识库技能详情
+
+        该接口用于查询知识库技能详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKnowledgeSkill
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowKnowledgeSkillRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowKnowledgeSkillResponse`
+        """
+        http_info = self._show_knowledge_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_knowledge_skill_async_invoker(self, request):
+        http_info = self._show_knowledge_skill_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_knowledge_skill_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/skill/{skill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKnowledgeSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_knowledge_skill_async(self, request):
+        """修改知识库技能
+
+        该接口用于修改知识库技能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateKnowledgeSkill
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeSkillRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeSkillResponse`
+        """
+        http_info = self._update_knowledge_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_knowledge_skill_async_invoker(self, request):
+        http_info = self._update_knowledge_skill_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_knowledge_skill_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/knowledge/skill/{skill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKnowledgeSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -5254,6 +6955,8 @@ class MetaStudioAsyncClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -7259,6 +8962,481 @@ class MetaStudioAsyncClient(Client):
         path_params = {}
         if 'script_id' in local_var_params:
             path_params['script_id'] = local_var_params['script_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_welcome_speech_async(self, request):
+        """创建欢迎词
+
+        该接口用于创建欢迎词。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateWelcomeSpeech
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateWelcomeSpeechRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateWelcomeSpeechResponse`
+        """
+        http_info = self._create_welcome_speech_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_welcome_speech_async_invoker(self, request):
+        http_info = self._create_welcome_speech_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_welcome_speech_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/welcome-speech",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWelcomeSpeechResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_welcome_speech_async(self, request):
+        """删除欢迎词
+
+        该接口用于删除欢迎词。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteWelcomeSpeech
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteWelcomeSpeechRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteWelcomeSpeechResponse`
+        """
+        http_info = self._delete_welcome_speech_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_welcome_speech_async_invoker(self, request):
+        http_info = self._delete_welcome_speech_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_welcome_speech_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/welcome-speech/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWelcomeSpeechResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_welcome_speech_async(self, request):
+        """查询欢迎词列表
+
+        该接口用于查询欢迎词列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListWelcomeSpeech
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListWelcomeSpeechRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListWelcomeSpeechResponse`
+        """
+        http_info = self._list_welcome_speech_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_welcome_speech_async_invoker(self, request):
+        http_info = self._list_welcome_speech_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_welcome_speech_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/welcome-speech",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWelcomeSpeechResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_welcome_speech_async(self, request):
+        """查询欢迎词详情
+
+        该接口用于查询欢迎词详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowWelcomeSpeech
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowWelcomeSpeechRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowWelcomeSpeechResponse`
+        """
+        http_info = self._show_welcome_speech_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_welcome_speech_async_invoker(self, request):
+        http_info = self._show_welcome_speech_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_welcome_speech_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/welcome-speech/{welcome_speech_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWelcomeSpeechResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'welcome_speech_id' in local_var_params:
+            path_params['welcome_speech_id'] = local_var_params['welcome_speech_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_welcome_speech_switch_async(self, request):
+        """查询欢迎词功能开关
+
+        该接口用于查询欢迎词功能开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowWelcomeSpeechSwitch
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowWelcomeSpeechSwitchRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowWelcomeSpeechSwitchResponse`
+        """
+        http_info = self._show_welcome_speech_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_welcome_speech_switch_async_invoker(self, request):
+        http_info = self._show_welcome_speech_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_welcome_speech_switch_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/welcome-speech-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWelcomeSpeechSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_welcome_speech_async(self, request):
+        """修改欢迎词
+
+        该接口用于修改欢迎词。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateWelcomeSpeech
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateWelcomeSpeechRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateWelcomeSpeechResponse`
+        """
+        http_info = self._update_welcome_speech_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_welcome_speech_async_invoker(self, request):
+        http_info = self._update_welcome_speech_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_welcome_speech_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/welcome-speech/{welcome_speech_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWelcomeSpeechResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'welcome_speech_id' in local_var_params:
+            path_params['welcome_speech_id'] = local_var_params['welcome_speech_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_welcome_speech_switch_async(self, request):
+        """修改欢迎词功能开关
+
+        该接口用于修改欢迎词功能开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateWelcomeSpeechSwitch
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateWelcomeSpeechSwitchRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateWelcomeSpeechSwitchResponse`
+        """
+        http_info = self._update_welcome_speech_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_welcome_speech_switch_async_invoker(self, request):
+        http_info = self._update_welcome_speech_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_welcome_speech_switch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/welcome-speech-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWelcomeSpeechSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

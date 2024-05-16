@@ -53,8 +53,10 @@ class AlarmNotifyListRequest:
         self._region = None
         self.discriminator = None
 
-        self.page = page
-        self.page_size = page_size
+        if page is not None:
+            self.page = page
+        if page_size is not None:
+            self.page_size = page_size
         self.alarm_data_id = alarm_data_id
         self.region = region
 

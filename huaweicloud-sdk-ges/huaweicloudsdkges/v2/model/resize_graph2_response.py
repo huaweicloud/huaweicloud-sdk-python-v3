@@ -30,7 +30,7 @@ class ResizeGraph2Response(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 扩容图任务ID。请求失败时字段为空。
+        :param job_id: 变更图规格任务ID。请求失败时字段为空。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class ResizeGraph2Response(SdkResponse):
     def job_id(self):
         """Gets the job_id of this ResizeGraph2Response.
 
-        扩容图任务ID。请求失败时字段为空。
+        变更图规格任务ID。请求失败时字段为空。
 
         :return: The job_id of this ResizeGraph2Response.
         :rtype: str
@@ -57,7 +57,7 @@ class ResizeGraph2Response(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this ResizeGraph2Response.
 
-        扩容图任务ID。请求失败时字段为空。
+        变更图规格任务ID。请求失败时字段为空。
 
         :param job_id: The job_id of this ResizeGraph2Response.
         :type job_id: str

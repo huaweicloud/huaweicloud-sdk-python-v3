@@ -3032,6 +3032,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def create_security_assigned_queue(self, request):
+        """分配队列资源给指定空间
+
+        分配队列资源给指定空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSecurityAssignedQueue
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityAssignedQueueRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecurityAssignedQueueResponse`
+        """
+        http_info = self._create_security_assigned_queue_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_assigned_queue_invoker(self, request):
+        http_info = self._create_security_assigned_queue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_assigned_queue_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission/queue/assigned-source",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityAssignedQueueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_security_data_classification_rule(self, request):
         """创建识别规则
 
@@ -4924,6 +4991,73 @@ class DataArtsStudioClient(Client):
             header_params['workspace'] = local_var_params['workspace']
         if 'x_project_id' in local_var_params:
             header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_security_assigned_queue(self, request):
+        """删除当前空间下分配的队列资源
+
+        删除当前空间下分配的队列资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSecurityAssignedQueue
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecurityAssignedQueueRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecurityAssignedQueueResponse`
+        """
+        http_info = self._delete_security_assigned_queue_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_security_assigned_queue_invoker(self, request):
+        http_info = self._delete_security_assigned_queue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_security_assigned_queue_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/security/permission/queue/assigned-source/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityAssignedQueueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -10347,6 +10481,79 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_security_assigned_queues(self, request):
+        """查询当前空间下分配的队列资源
+
+        查询当前空间下分配的队列资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityAssignedQueues
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityAssignedQueuesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityAssignedQueuesResponse`
+        """
+        http_info = self._list_security_assigned_queues_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_assigned_queues_invoker(self, request):
+        http_info = self._list_security_assigned_queues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_assigned_queues_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission/queue/assigned-source",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityAssignedQueuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_data_classification_rule_groups(self, request):
         """查询规则组列表
 
@@ -10762,6 +10969,87 @@ class DataArtsStudioClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_member_sync_tasks(self, request):
+        """查询用户同步列表
+
+        查询用户同步列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityMemberSyncTasks
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityMemberSyncTasksRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityMemberSyncTasksResponse`
+        """
+        http_info = self._list_security_member_sync_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_member_sync_tasks_invoker(self, request):
+        http_info = self._list_security_member_sync_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_member_sync_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/member-sync-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityMemberSyncTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'cluster_type' in local_var_params:
+            query_params.append(('cluster_type', local_var_params['cluster_type']))
+        if 'cluster_name' in local_var_params:
+            query_params.append(('cluster_name', local_var_params['cluster_name']))
+        if 'sync_status' in local_var_params:
+            query_params.append(('sync_status', local_var_params['sync_status']))
+        if 'schedule_status' in local_var_params:
+            query_params.append(('schedule_status', local_var_params['schedule_status']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order_by_asc' in local_var_params:
+            query_params.append(('order_by_asc', local_var_params['order_by_asc']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -17276,6 +17564,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_security_member_sync_task(self, request):
+        """查询单个用户同步任务
+
+        查询单个用户同步任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecurityMemberSyncTask
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityMemberSyncTaskRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowSecurityMemberSyncTaskResponse`
+        """
+        http_info = self._show_security_member_sync_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_member_sync_task_invoker(self, request):
+        http_info = self._show_security_member_sync_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_member_sync_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/member-sync-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityMemberSyncTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_security_permission_set(self, request):
         """查询权限集
 
@@ -18976,6 +19331,75 @@ class DataArtsStudioClient(Client):
             header_params['Authorization'] = local_var_params['authorization']
         if 'host' in local_var_params:
             header_params['Host'] = local_var_params['host']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_assigned_queue(self, request):
+        """修改当前空间下分配的队列资源
+
+        修改当前空间下分配的队列资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityAssignedQueue
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityAssignedQueueRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityAssignedQueueResponse`
+        """
+        http_info = self._update_security_assigned_queue_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_assigned_queue_invoker(self, request):
+        http_info = self._update_security_assigned_queue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_assigned_queue_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/permission/queue/assigned-source/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityAssignedQueueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 

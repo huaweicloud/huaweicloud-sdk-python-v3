@@ -103,8 +103,10 @@ class AlarmDataListRequest:
         self._env_list = None
         self.discriminator = None
 
-        self.page = page
-        self.page_size = page_size
+        if page is not None:
+            self.page = page
+        if page_size is not None:
+            self.page_size = page_size
         if region is not None:
             self.region = region
         if app_name is not None:

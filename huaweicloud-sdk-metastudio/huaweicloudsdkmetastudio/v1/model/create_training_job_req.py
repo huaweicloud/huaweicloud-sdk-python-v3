@@ -22,7 +22,8 @@ class CreateTrainingJobReq:
         'sex': 'str',
         'voice_name': 'str',
         'language': 'str',
-        'create_type': 'CreateType'
+        'create_type': 'CreateType',
+        'phone': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateTrainingJobReq:
         'sex': 'sex',
         'voice_name': 'voice_name',
         'language': 'language',
-        'create_type': 'create_type'
+        'create_type': 'create_type',
+        'phone': 'phone'
     }
 
-    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None):
+    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None, phone=None):
         """CreateTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateTrainingJobReq:
         :type language: str
         :param create_type: 
         :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
+        :param phone: 手机号
+        :type phone: str
         """
         
         
@@ -61,6 +65,7 @@ class CreateTrainingJobReq:
         self._voice_name = None
         self._language = None
         self._create_type = None
+        self._phone = None
         self.discriminator = None
 
         if tag is not None:
@@ -74,6 +79,8 @@ class CreateTrainingJobReq:
             self.language = language
         if create_type is not None:
             self.create_type = create_type
+        if phone is not None:
+            self.phone = phone
 
     @property
     def tag(self):
@@ -198,6 +205,28 @@ class CreateTrainingJobReq:
         :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
         """
         self._create_type = create_type
+
+    @property
+    def phone(self):
+        """Gets the phone of this CreateTrainingJobReq.
+
+        手机号
+
+        :return: The phone of this CreateTrainingJobReq.
+        :rtype: str
+        """
+        return self._phone
+
+    @phone.setter
+    def phone(self, phone):
+        """Sets the phone of this CreateTrainingJobReq.
+
+        手机号
+
+        :param phone: The phone of this CreateTrainingJobReq.
+        :type phone: str
+        """
+        self._phone = phone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

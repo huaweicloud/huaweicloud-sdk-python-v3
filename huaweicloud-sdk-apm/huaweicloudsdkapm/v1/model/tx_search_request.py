@@ -82,7 +82,8 @@ class TxSearchRequest:
         if request_id is not None:
             self.request_id = request_id
         self.page_no = page_no
-        self.page_size = page_size
+        if page_size is not None:
+            self.page_size = page_size
 
     @property
     def business_id(self):

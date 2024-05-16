@@ -929,10 +929,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainFullConfigRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainFullConfigResponse`
         """
+        warnings.warn("Method 'show_domain_full_config' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_full_config_http_info(request)
         return self._call_api(**http_info)
 
     def show_domain_full_config_invoker(self, request):
+        warnings.warn("Method 'show_domain_full_config_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_domain_full_config_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2371,10 +2373,12 @@ class CdnClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateDomainFullConfigRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainFullConfigResponse`
         """
+        warnings.warn("Method 'update_domain_full_config' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_domain_full_config_http_info(request)
         return self._call_api(**http_info)
 
     def update_domain_full_config_invoker(self, request):
+        warnings.warn("Method 'update_domain_full_config_invoker' of CdnClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_domain_full_config_http_info(request)
         return SyncInvoker(self, http_info)
 

@@ -65,7 +65,8 @@ class InstanceSearchParam:
 
         self.env_id = env_id
         self.page = page
-        self.page_size = page_size
+        if page_size is not None:
+            self.page_size = page_size
         if keyword is not None:
             self.keyword = keyword
         if status is not None:

@@ -19,16 +19,18 @@ class ListUpdatableVersionRequest:
     openapi_types = {
         'cluster_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'type': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'type': 'type'
     }
 
-    def __init__(self, cluster_id=None, offset=None, limit=None):
+    def __init__(self, cluster_id=None, offset=None, limit=None, type=None):
         """ListUpdatableVersionRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ListUpdatableVersionRequest:
         :type offset: int
         :param limit: 条目数
         :type limit: int
+        :param type: 升级类型 cluster:集群升级 hotpatch:热补丁升级
+        :type type: str
         """
         
         
@@ -46,6 +50,7 @@ class ListUpdatableVersionRequest:
         self._cluster_id = None
         self._offset = None
         self._limit = None
+        self._type = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
@@ -53,6 +58,8 @@ class ListUpdatableVersionRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if type is not None:
+            self.type = type
 
     @property
     def cluster_id(self):
@@ -119,6 +126,28 @@ class ListUpdatableVersionRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def type(self):
+        """Gets the type of this ListUpdatableVersionRequest.
+
+        升级类型 cluster:集群升级 hotpatch:热补丁升级
+
+        :return: The type of this ListUpdatableVersionRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListUpdatableVersionRequest.
+
+        升级类型 cluster:集群升级 hotpatch:热补丁升级
+
+        :param type: The type of this ListUpdatableVersionRequest.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

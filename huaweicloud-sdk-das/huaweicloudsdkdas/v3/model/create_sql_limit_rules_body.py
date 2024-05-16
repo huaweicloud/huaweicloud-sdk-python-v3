@@ -18,15 +18,17 @@ class CreateSqlLimitRulesBody:
 
     openapi_types = {
         'datastore_type': 'str',
-        'sql_limit_rules': 'list[CreateSqlLimitRuleOption]'
+        'sql_limit_rules': 'list[CreateSqlLimitRuleOption]',
+        'database_name': 'str'
     }
 
     attribute_map = {
         'datastore_type': 'datastore_type',
-        'sql_limit_rules': 'sql_limit_rules'
+        'sql_limit_rules': 'sql_limit_rules',
+        'database_name': 'database_name'
     }
 
-    def __init__(self, datastore_type=None, sql_limit_rules=None):
+    def __init__(self, datastore_type=None, sql_limit_rules=None, database_name=None):
         """CreateSqlLimitRulesBody
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class CreateSqlLimitRulesBody:
         :type datastore_type: str
         :param sql_limit_rules: 需要创建的SQL限流规则列表，一次最多创建5个
         :type sql_limit_rules: list[:class:`huaweicloudsdkdas.v3.CreateSqlLimitRuleOption`]
+        :param database_name: 数据库名（PostgreSQL必填）
+        :type database_name: str
         """
         
         
 
         self._datastore_type = None
         self._sql_limit_rules = None
+        self._database_name = None
         self.discriminator = None
 
         self.datastore_type = datastore_type
         self.sql_limit_rules = sql_limit_rules
+        if database_name is not None:
+            self.database_name = database_name
 
     @property
     def datastore_type(self):
@@ -89,6 +96,28 @@ class CreateSqlLimitRulesBody:
         :type sql_limit_rules: list[:class:`huaweicloudsdkdas.v3.CreateSqlLimitRuleOption`]
         """
         self._sql_limit_rules = sql_limit_rules
+
+    @property
+    def database_name(self):
+        """Gets the database_name of this CreateSqlLimitRulesBody.
+
+        数据库名（PostgreSQL必填）
+
+        :return: The database_name of this CreateSqlLimitRulesBody.
+        :rtype: str
+        """
+        return self._database_name
+
+    @database_name.setter
+    def database_name(self, database_name):
+        """Sets the database_name of this CreateSqlLimitRulesBody.
+
+        数据库名（PostgreSQL必填）
+
+        :param database_name: The database_name of this CreateSqlLimitRulesBody.
+        :type database_name: str
+        """
+        self._database_name = database_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

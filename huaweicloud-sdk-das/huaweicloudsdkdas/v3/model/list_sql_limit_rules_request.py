@@ -21,6 +21,7 @@ class ListSqlLimitRulesRequest:
         'offset': 'int',
         'limit': 'int',
         'datastore_type': 'str',
+        'database_name': 'str',
         'x_language': 'str'
     }
 
@@ -29,10 +30,11 @@ class ListSqlLimitRulesRequest:
         'offset': 'offset',
         'limit': 'limit',
         'datastore_type': 'datastore_type',
+        'database_name': 'database_name',
         'x_language': 'X-Language'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, datastore_type=None, x_language=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, datastore_type=None, database_name=None, x_language=None):
         """ListSqlLimitRulesRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListSqlLimitRulesRequest:
         :type limit: int
         :param datastore_type: 数据库类型
         :type datastore_type: str
+        :param database_name: 数据库名（PostgreSQL必填）
+        :type database_name: str
         :param x_language: 语言
         :type x_language: str
         """
@@ -55,6 +59,7 @@ class ListSqlLimitRulesRequest:
         self._offset = None
         self._limit = None
         self._datastore_type = None
+        self._database_name = None
         self._x_language = None
         self.discriminator = None
 
@@ -64,6 +69,8 @@ class ListSqlLimitRulesRequest:
         if limit is not None:
             self.limit = limit
         self.datastore_type = datastore_type
+        if database_name is not None:
+            self.database_name = database_name
         if x_language is not None:
             self.x_language = x_language
 
@@ -154,6 +161,28 @@ class ListSqlLimitRulesRequest:
         :type datastore_type: str
         """
         self._datastore_type = datastore_type
+
+    @property
+    def database_name(self):
+        """Gets the database_name of this ListSqlLimitRulesRequest.
+
+        数据库名（PostgreSQL必填）
+
+        :return: The database_name of this ListSqlLimitRulesRequest.
+        :rtype: str
+        """
+        return self._database_name
+
+    @database_name.setter
+    def database_name(self, database_name):
+        """Sets the database_name of this ListSqlLimitRulesRequest.
+
+        数据库名（PostgreSQL必填）
+
+        :param database_name: The database_name of this ListSqlLimitRulesRequest.
+        :type database_name: str
+        """
+        self._database_name = database_name
 
     @property
     def x_language(self):
