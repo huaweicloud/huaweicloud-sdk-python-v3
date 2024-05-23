@@ -72,10 +72,6 @@ setup(
     install_requires=INSTALL_REQUIRES,
     tests_require=TESTS_REQUIRES,
     python_requires=">=2.7,!=3.0.*,!=3.1.*,!=3.2.*",
-    extras_require={
-        "python_version>'2.7'": ["certifi>=2022.12.7"],
-        "python_version=='2.7'": ["futures>=3.3.0", "configparser>=4.0.2"]
-    },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
