@@ -35,7 +35,8 @@ class PermissionSetPermission:
         'column_name': 'str',
         'row_level_security': 'str',
         'sync_status': 'str',
-        'sync_msg': 'str'
+        'sync_msg': 'str',
+        'url': 'str'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class PermissionSetPermission:
         'column_name': 'column_name',
         'row_level_security': 'row_level_security',
         'sync_status': 'sync_status',
-        'sync_msg': 'sync_msg'
+        'sync_msg': 'sync_msg',
+        'url': 'url'
     }
 
-    def __init__(self, id=None, permission_set_id=None, project_id=None, instance_id=None, permission_type=None, permission_action=None, permission_actions=None, permission_action_code=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None, sync_status=None, sync_msg=None):
+    def __init__(self, id=None, permission_set_id=None, project_id=None, instance_id=None, permission_type=None, permission_action=None, permission_actions=None, permission_action_code=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None, sync_status=None, sync_msg=None, url=None):
         """PermissionSetPermission
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class PermissionSetPermission:
         :type sync_status: str
         :param sync_msg: 同步信息
         :type sync_msg: str
+        :param url: url路径名称。
+        :type url: str
         """
         
         
@@ -126,6 +130,7 @@ class PermissionSetPermission:
         self._row_level_security = None
         self._sync_status = None
         self._sync_msg = None
+        self._url = None
         self.discriminator = None
 
         if id is not None:
@@ -166,6 +171,8 @@ class PermissionSetPermission:
             self.sync_status = sync_status
         if sync_msg is not None:
             self.sync_msg = sync_msg
+        if url is not None:
+            self.url = url
 
     @property
     def id(self):
@@ -584,6 +591,28 @@ class PermissionSetPermission:
         :type sync_msg: str
         """
         self._sync_msg = sync_msg
+
+    @property
+    def url(self):
+        """Gets the url of this PermissionSetPermission.
+
+        url路径名称。
+
+        :return: The url of this PermissionSetPermission.
+        :rtype: str
+        """
+        return self._url
+
+    @url.setter
+    def url(self, url):
+        """Sets the url of this PermissionSetPermission.
+
+        url路径名称。
+
+        :param url: The url of this PermissionSetPermission.
+        :type url: str
+        """
+        self._url = url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

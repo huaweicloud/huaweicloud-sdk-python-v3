@@ -24,7 +24,8 @@ class PolicyAssignmentRequestBody:
         'policy_filter': 'PolicyFilterDefinition',
         'custom_policy': 'CustomPolicy',
         'policy_definition_id': 'str',
-        'parameters': 'dict(str, PolicyParameterValue)'
+        'parameters': 'dict(str, PolicyParameterValue)',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class PolicyAssignmentRequestBody:
         'policy_filter': 'policy_filter',
         'custom_policy': 'custom_policy',
         'policy_definition_id': 'policy_definition_id',
-        'parameters': 'parameters'
+        'parameters': 'parameters',
+        'tags': 'tags'
     }
 
-    def __init__(self, policy_assignment_type=None, name=None, description=None, period=None, policy_filter=None, custom_policy=None, policy_definition_id=None, parameters=None):
+    def __init__(self, policy_assignment_type=None, name=None, description=None, period=None, policy_filter=None, custom_policy=None, policy_definition_id=None, parameters=None, tags=None):
         """PolicyAssignmentRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class PolicyAssignmentRequestBody:
         :type policy_definition_id: str
         :param parameters: 规则参数
         :type parameters: dict(str, PolicyParameterValue)
+        :param tags: 
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
         
         
@@ -71,6 +75,7 @@ class PolicyAssignmentRequestBody:
         self._custom_policy = None
         self._policy_definition_id = None
         self._parameters = None
+        self._tags = None
         self.discriminator = None
 
         if policy_assignment_type is not None:
@@ -88,6 +93,8 @@ class PolicyAssignmentRequestBody:
             self.policy_definition_id = policy_definition_id
         if parameters is not None:
             self.parameters = parameters
+        if tags is not None:
+            self.tags = tags
 
     @property
     def policy_assignment_type(self):
@@ -256,6 +263,24 @@ class PolicyAssignmentRequestBody:
         :type parameters: dict(str, PolicyParameterValue)
         """
         self._parameters = parameters
+
+    @property
+    def tags(self):
+        """Gets the tags of this PolicyAssignmentRequestBody.
+
+        :return: The tags of this PolicyAssignmentRequestBody.
+        :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this PolicyAssignmentRequestBody.
+
+        :param tags: The tags of this PolicyAssignmentRequestBody.
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -5761,6 +5761,418 @@ class ConfigAsyncClient(Client):
 
         return http_info
 
+    def count_resources_by_tag_async(self, request):
+        """查询资源实例数量
+
+        使用标签过滤实例，标签管理服务需要提供按标签过滤各服务实例并汇总显示在列表中，需要各服务提供查询能力。注意：tags, tags_any, not_tags, not_tags_any等字段支持的tag的数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountResourcesByTag
+        :type request: :class:`huaweicloudsdkconfig.v1.CountResourcesByTagRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CountResourcesByTagResponse`
+        """
+        http_info = self._count_resources_by_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_resources_by_tag_async_invoker(self, request):
+        http_info = self._count_resources_by_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_resources_by_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/{resource_type}/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountResourcesByTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resources_by_tag_async(self, request):
+        """查询资源实例列表
+
+        使用标签过滤实例，标签管理服务需要提供按标签过滤各服务实例并汇总显示在列表中，需要各服务提供查询能力。注意：tags, tags_any, not_tags, not_tags_any等字段支持的tag的数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourcesByTag
+        :type request: :class:`huaweicloudsdkconfig.v1.ListResourcesByTagRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListResourcesByTagResponse`
+        """
+        http_info = self._list_resources_by_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resources_by_tag_async_invoker(self, request):
+        http_info = self._list_resources_by_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resources_by_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/{resource_type}/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcesByTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tags_for_resource_async(self, request):
+        """查询资源标签
+
+        查询指定实例的标签信息。标签管理服务需要使用该接口查询指定实例的全部标签数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTagsForResource
+        :type request: :class:`huaweicloudsdkconfig.v1.ListTagsForResourceRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListTagsForResourceResponse`
+        """
+        http_info = self._list_tags_for_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tags_for_resource_async_invoker(self, request):
+        http_info = self._list_tags_for_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_for_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsForResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tags_for_resource_type_async(self, request):
+        """查询项目标签
+
+        查询租户在指定Project中实例类型的所有资源标签集合。标签管理服务需要能够列出当前租户全部已使用的资源标签集合，为各服务Console打资源标签和过滤实例时提供标签联想功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTagsForResourceType
+        :type request: :class:`huaweicloudsdkconfig.v1.ListTagsForResourceTypeRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListTagsForResourceTypeResponse`
+        """
+        http_info = self._list_tags_for_resource_type_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tags_for_resource_type_async_invoker(self, request):
+        http_info = self._list_tags_for_resource_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_for_resource_type_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsForResourceTypeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def tag_resource_async(self, request):
+        """批量添加资源标签
+
+        此接口为幂等接口。为指定实例批量添加或删除标签，标签管理服务需要使用该接口批量管理实例的标签。一个资源上最多有20个标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for TagResource
+        :type request: :class:`huaweicloudsdkconfig.v1.TagResourceRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.TagResourceResponse`
+        """
+        http_info = self._tag_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def tag_resource_async_invoker(self, request):
+        http_info = self._tag_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _tag_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "TagResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def un_tag_resource_async(self, request):
+        """批量删除资源标签
+
+        此接口为幂等接口。为指定实例批量添加或删除标签，标签管理服务需要使用该接口批量管理实例的标签。一个资源上最多有20个标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UnTagResource
+        :type request: :class:`huaweicloudsdkconfig.v1.UnTagResourceRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.UnTagResourceResponse`
+        """
+        http_info = self._un_tag_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def un_tag_resource_async_invoker(self, request):
+        http_info = self._un_tag_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _un_tag_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnTagResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_tracker_config_async(self, request):
         """创建或更新记录器
 

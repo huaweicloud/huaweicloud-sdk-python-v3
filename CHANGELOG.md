@@ -1,3 +1,173 @@
+# 3.1.97 2024-05-23
+
+### HuaweiCloud SDK APM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowMonitorItemDetail**
+    - changes of response param
+      - `+ config_item_list`
+      - `+ collector_id`
+      - `+ interval`
+
+### HuaweiCloud SDK AS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateScalingGroup**
+    - changes of request param
+      - `+ tags`
+  - **ListScalingGroups**
+    - changes of response param
+      - `+ scaling_groups.tags`
+  - **ShowScalingGroup**
+    - changes of response param
+      - `+ scaling_group.tags`
+
+### HuaweiCloud SDK Config
+
+- _Features_
+  - Support the following APIs:
+    - `ListResourcesByTag`
+    - `CountResourcesByTag`
+    - `TagResource`
+    - `UnTagResource`
+    - `ListTagsForResource`
+    - `ListTagsForResourceType`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPolicyAssignment**
+    - changes of response param
+      - `+ tags`
+  - **UpdatePolicyAssignment**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ tags`
+  - **ShowAggregatePolicyAssignmentDetail**
+    - changes of response param
+      - `+ tags`
+  - **CreatePolicyAssignments**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ tags`
+  - **ListPolicyAssignments**
+    - changes of response param
+      - `+ tags`
+      - `+ value.tags`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSecurityPermissionSetPermission**
+    - changes of response param
+      - `+ url`
+  - **CreateSecurityPermissionSetPermission**
+    - changes of request param
+      - `+ url`
+    - changes of response param
+      - `+ url`
+  - **ListSecurityPermissionSetPermissions**
+    - changes of response param
+      - `+ url`
+      - `+ permissions.url`
+  - **ListSecurityDlfDataWareHouses**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the APIs `ShowRedisBigKeys`, `ShowPasswordlessConfig`, `UpdatePasswordlessConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **OfflineNodes**
+    - changes of request param
+      - `* x-auth-token: optional -> required`
+
+### HuaweiCloud SDK MetaStudio
+
+- _Features_
+  - Support the following APIs:
+    - `ShowAgency`
+    - `CreateAgencyWithRoleType`
+    - `DeleteAgencyWithRoleType`
+    - `ListHotWords`
+    - `CreateHotWords`
+    - `ShowHotWords`
+    - `UpdateHotWords`
+    - `DeleteHotWords`
+    - `ShowHotWordsSwitch`
+    - `UpdateHotWordsSwitch`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `CheckTextLanguage`
+  - **ShowRobot**
+    - changes of response param
+      - `+ is_ifly_production`
+      - `+ tail_silence_time`
+      - `+ sis_region`
+      - `+ sis_project_id`
+  - **UpdateRobot**
+    - changes of request param
+      - `+ tail_silence_time`
+      - `+ huawei_ei_cbs.sis_region`
+      - `+ huawei_ei_cbs.sis_project_id`
+      - `+ iflytek_aiui_config.is_production`
+      - `+ iflytek_spark.is_production`
+      - `+ third_party_model_config.sis_region`
+      - `+ third_party_model_config.sis_project_id`
+      - `+ mobvoi_config.sis_region`
+      - `+ mobvoi_config.sis_project_id`
+  - **CreateRobot**
+    - changes of request param
+      - `+ tail_silence_time`
+      - `+ huawei_ei_cbs.sis_region`
+      - `+ huawei_ei_cbs.sis_project_id`
+      - `+ iflytek_aiui_config.is_production`
+      - `+ iflytek_spark.is_production`
+      - `+ third_party_model_config.sis_region`
+      - `+ third_party_model_config.sis_project_id`
+      - `+ mobvoi_config.sis_region`
+      - `+ mobvoi_config.sis_project_id`
+  - **ListRobot**
+    - changes of response param
+      - `+ is_ifly_production`
+      - `+ tail_silence_time`
+      - `+ sis_region`
+      - `+ sis_project_id`
+      - `+ data.is_ifly_production`
+      - `+ data.tail_silence_time`
+      - `+ data.sis_region`
+      - `+ data.sis_project_id`
+  - **ListDigitalHumanVideo**
+    - changes of request param
+      - `+ job_id`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the API `DownloadErrorlog`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.96 2024-05-16
 
 ### HuaweiCloud SDK APM

@@ -48,7 +48,8 @@ class ScalingGroups:
         'activity_type': 'str',
         'multi_az_priority_policy': 'str',
         'iam_agency_name': 'str',
-        'description': 'str'
+        'description': 'str',
+        'tags': 'list[TagsSingleValue]'
     }
 
     attribute_map = {
@@ -83,10 +84,11 @@ class ScalingGroups:
         'activity_type': 'activity_type',
         'multi_az_priority_policy': 'multi_az_priority_policy',
         'iam_agency_name': 'iam_agency_name',
-        'description': 'description'
+        'description': 'description',
+        'tags': 'tags'
     }
 
-    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, cloud_location_id=None, enterprise_project_id=None, activity_type=None, multi_az_priority_policy=None, iam_agency_name=None, description=None):
+    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, cloud_location_id=None, enterprise_project_id=None, activity_type=None, multi_az_priority_policy=None, iam_agency_name=None, description=None, tags=None):
         """ScalingGroups
 
         The model defined in huaweicloud sdk
@@ -155,6 +157,8 @@ class ScalingGroups:
         :type iam_agency_name: str
         :param description: 伸缩组描述信息
         :type description: str
+        :param tags: 添加到伸缩组的标签。
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
         """
         
         
@@ -191,6 +195,7 @@ class ScalingGroups:
         self._multi_az_priority_policy = None
         self._iam_agency_name = None
         self._description = None
+        self._tags = None
         self.discriminator = None
 
         if scaling_group_name is not None:
@@ -257,6 +262,8 @@ class ScalingGroups:
             self.iam_agency_name = iam_agency_name
         if description is not None:
             self.description = description
+        if tags is not None:
+            self.tags = tags
 
     @property
     def scaling_group_name(self):
@@ -961,6 +968,28 @@ class ScalingGroups:
         :type description: str
         """
         self._description = description
+
+    @property
+    def tags(self):
+        """Gets the tags of this ScalingGroups.
+
+        添加到伸缩组的标签。
+
+        :return: The tags of this ScalingGroups.
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ScalingGroups.
+
+        添加到伸缩组的标签。
+
+        :param tags: The tags of this ScalingGroups.
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

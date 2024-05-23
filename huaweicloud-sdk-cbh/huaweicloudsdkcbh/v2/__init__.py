@@ -10,11 +10,12 @@ from huaweicloudsdkcbh.v2.model.authorize_csms_and_kms_request_body import Autho
 from huaweicloudsdkcbh.v2.model.availability_zones import AvailabilityZones
 from huaweicloudsdkcbh.v2.model.batch_create_instance_tag_request import BatchCreateInstanceTagRequest
 from huaweicloudsdkcbh.v2.model.batch_create_instance_tag_response import BatchCreateInstanceTagResponse
-from huaweicloudsdkcbh.v2.model.cbh_instances import CBHInstances
 from huaweicloudsdkcbh.v2.model.cbs_get_resource_id_tags import CbsGetResourceIdTags
 from huaweicloudsdkcbh.v2.model.cbs_get_spec_info import CbsGetSpecInfo
 from huaweicloudsdkcbh.v2.model.change_instance_request_body import ChangeInstanceRequestBody
 from huaweicloudsdkcbh.v2.model.change_instance_security_groups import ChangeInstanceSecurityGroups
+from huaweicloudsdkcbh.v2.model.change_instance_type_request import ChangeInstanceTypeRequest
+from huaweicloudsdkcbh.v2.model.change_instance_type_response import ChangeInstanceTypeResponse
 from huaweicloudsdkcbh.v2.model.common_cbh_request_body import CommonCbhRequestBody
 from huaweicloudsdkcbh.v2.model.count_instances_by_tag_request import CountInstancesByTagRequest
 from huaweicloudsdkcbh.v2.model.count_instances_by_tag_response import CountInstancesByTagResponse
@@ -43,6 +44,8 @@ from huaweicloudsdkcbh.v2.model.list_specifications_request import ListSpecifica
 from huaweicloudsdkcbh.v2.model.list_specifications_response import ListSpecificationsResponse
 from huaweicloudsdkcbh.v2.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkcbh.v2.model.list_tags_response import ListTagsResponse
+from huaweicloudsdkcbh.v2.model.login_instance_admin_request import LoginInstanceAdminRequest
+from huaweicloudsdkcbh.v2.model.login_instance_admin_response import LoginInstanceAdminResponse
 from huaweicloudsdkcbh.v2.model.login_instance_request import LoginInstanceRequest
 from huaweicloudsdkcbh.v2.model.login_instance_response import LoginInstanceResponse
 from huaweicloudsdkcbh.v2.model.match import Match
@@ -84,6 +87,9 @@ from huaweicloudsdkcbh.v2.model.start_instance_request import StartInstanceReque
 from huaweicloudsdkcbh.v2.model.start_instance_response import StartInstanceResponse
 from huaweicloudsdkcbh.v2.model.stop_instance_request import StopInstanceRequest
 from huaweicloudsdkcbh.v2.model.stop_instance_response import StopInstanceResponse
+from huaweicloudsdkcbh.v2.model.switch_instance_vpc_request import SwitchInstanceVpcRequest
+from huaweicloudsdkcbh.v2.model.switch_instance_vpc_response import SwitchInstanceVpcResponse
+from huaweicloudsdkcbh.v2.model.switch_virtual_private_cloud_request_body import SwitchVirtualPrivateCloudRequestBody
 from huaweicloudsdkcbh.v2.model.tags import Tags
 from huaweicloudsdkcbh.v2.model.uninstall_instance_eip_request import UninstallInstanceEipRequest
 from huaweicloudsdkcbh.v2.model.uninstall_instance_eip_response import UninstallInstanceEipResponse

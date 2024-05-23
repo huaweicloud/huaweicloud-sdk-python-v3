@@ -5789,6 +5789,75 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def show_passwordless_config(self, request):
+        """获取GeminiDB Redis的免密配置
+
+        获取GeminiDB Redis的免密配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPasswordlessConfig
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowPasswordlessConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowPasswordlessConfigResponse`
+        """
+        http_info = self._show_passwordless_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_passwordless_config_invoker(self, request):
+        http_info = self._show_passwordless_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_passwordless_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/passwordless-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPasswordlessConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_pause_resume_stutus(self, request):
         """获取容灾实例数据同步状态
 
@@ -5965,6 +6034,73 @@ class GaussDBforNoSQLClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_redis_big_keys(self, request):
+        """查询Redis实例的大key
+
+        支持查询Redis实例的大key。value长度大于bigkeys-string-threshold参数的string类型的key或者元素数大于bigkeys-composite-threshold参数的hash/list/zset/set/stream类型key，会被判断为大key。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRedisBigKeys
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisBigKeysRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisBigKeysResponse`
+        """
+        http_info = self._show_redis_big_keys_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_redis_big_keys_invoker(self, request):
+        http_info = self._show_redis_big_keys_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_redis_big_keys_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/big-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRedisBigKeysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -6880,6 +7016,73 @@ class GaussDBforNoSQLClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/name",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateInstanceNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_passwordless_config(self, request):
+        """支持修改GeminiDB Redis的免密配置
+
+        支持修改GeminiDB Redis的免密配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePasswordlessConfig
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdatePasswordlessConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdatePasswordlessConfigResponse`
+        """
+        http_info = self._update_passwordless_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_passwordless_config_invoker(self, request):
+        http_info = self._update_passwordless_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_passwordless_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/passwordless-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePasswordlessConfigResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

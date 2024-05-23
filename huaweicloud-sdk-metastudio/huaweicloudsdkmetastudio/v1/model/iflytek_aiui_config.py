@@ -19,16 +19,18 @@ class IflytekAiuiConfig:
     openapi_types = {
         'app_id': 'str',
         'app_key': 'str',
-        'api_secret': 'str'
+        'api_secret': 'str',
+        'is_production': 'bool'
     }
 
     attribute_map = {
         'app_id': 'app_id',
         'app_key': 'app_key',
-        'api_secret': 'api_secret'
+        'api_secret': 'api_secret',
+        'is_production': 'is_production'
     }
 
-    def __init__(self, app_id=None, app_key=None, api_secret=None):
+    def __init__(self, app_id=None, app_key=None, api_secret=None, is_production=None):
         """IflytekAiuiConfig
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class IflytekAiuiConfig:
         :type app_key: str
         :param api_secret: AIUI API密钥。
         :type api_secret: str
+        :param is_production: 是否为正式环境
+        :type is_production: bool
         """
         
         
@@ -46,6 +50,7 @@ class IflytekAiuiConfig:
         self._app_id = None
         self._app_key = None
         self._api_secret = None
+        self._is_production = None
         self.discriminator = None
 
         if app_id is not None:
@@ -54,6 +59,8 @@ class IflytekAiuiConfig:
             self.app_key = app_key
         if api_secret is not None:
             self.api_secret = api_secret
+        if is_production is not None:
+            self.is_production = is_production
 
     @property
     def app_id(self):
@@ -120,6 +127,28 @@ class IflytekAiuiConfig:
         :type api_secret: str
         """
         self._api_secret = api_secret
+
+    @property
+    def is_production(self):
+        """Gets the is_production of this IflytekAiuiConfig.
+
+        是否为正式环境
+
+        :return: The is_production of this IflytekAiuiConfig.
+        :rtype: bool
+        """
+        return self._is_production
+
+    @is_production.setter
+    def is_production(self, is_production):
+        """Sets the is_production of this IflytekAiuiConfig.
+
+        是否为正式环境
+
+        :param is_production: The is_production of this IflytekAiuiConfig.
+        :type is_production: bool
+        """
+        self._is_production = is_production
 
     def to_dict(self):
         """Returns the model properties as a dict"""

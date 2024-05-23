@@ -45,7 +45,7 @@ class ImageMediaTaggingReq:
         :type language: str
         :param threshold: 置信度的阈值（0~100），低于此置信数的标签，将不会返回。  默认值：60。  最小值：0。  最大值：100。  默认值：0。
         :type threshold: float
-        :param limit: 最多返回的tag数（取值范围：1~150），默认值： 50
+        :param limit: 最多返回的tag数（取值范围：1~150），默认值： 10。
         :type limit: int
         """
         
@@ -161,7 +161,7 @@ class ImageMediaTaggingReq:
     def limit(self):
         """Gets the limit of this ImageMediaTaggingReq.
 
-        最多返回的tag数（取值范围：1~150），默认值： 50
+        最多返回的tag数（取值范围：1~150），默认值： 10。
 
         :return: The limit of this ImageMediaTaggingReq.
         :rtype: int
@@ -172,7 +172,7 @@ class ImageMediaTaggingReq:
     def limit(self, limit):
         """Sets the limit of this ImageMediaTaggingReq.
 
-        最多返回的tag数（取值范围：1~150），默认值： 50
+        最多返回的tag数（取值范围：1~150），默认值： 10。
 
         :param limit: The limit of this ImageMediaTaggingReq.
         :type limit: int

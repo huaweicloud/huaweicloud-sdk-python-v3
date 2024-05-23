@@ -19,16 +19,20 @@ class MobvoiConfig:
     openapi_types = {
         'app_key': 'str',
         'app_secret': 'str',
-        'role_id': 'str'
+        'role_id': 'str',
+        'sis_region': 'int',
+        'sis_project_id': 'str'
     }
 
     attribute_map = {
         'app_key': 'app_key',
         'app_secret': 'app_secret',
-        'role_id': 'role_id'
+        'role_id': 'role_id',
+        'sis_region': 'sis_region',
+        'sis_project_id': 'sis_project_id'
     }
 
-    def __init__(self, app_key=None, app_secret=None, role_id=None):
+    def __init__(self, app_key=None, app_secret=None, role_id=None, sis_region=None, sis_project_id=None):
         """MobvoiConfig
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class MobvoiConfig:
         :type app_secret: str
         :param role_id: 奇妙问角色ID。
         :type role_id: str
+        :param sis_region: SIS所在区域
+        :type sis_region: int
+        :param sis_project_id: SIS所在区域的projectId
+        :type sis_project_id: str
         """
         
         
@@ -46,6 +54,8 @@ class MobvoiConfig:
         self._app_key = None
         self._app_secret = None
         self._role_id = None
+        self._sis_region = None
+        self._sis_project_id = None
         self.discriminator = None
 
         if app_key is not None:
@@ -54,6 +64,10 @@ class MobvoiConfig:
             self.app_secret = app_secret
         if role_id is not None:
             self.role_id = role_id
+        if sis_region is not None:
+            self.sis_region = sis_region
+        if sis_project_id is not None:
+            self.sis_project_id = sis_project_id
 
     @property
     def app_key(self):
@@ -120,6 +134,50 @@ class MobvoiConfig:
         :type role_id: str
         """
         self._role_id = role_id
+
+    @property
+    def sis_region(self):
+        """Gets the sis_region of this MobvoiConfig.
+
+        SIS所在区域
+
+        :return: The sis_region of this MobvoiConfig.
+        :rtype: int
+        """
+        return self._sis_region
+
+    @sis_region.setter
+    def sis_region(self, sis_region):
+        """Sets the sis_region of this MobvoiConfig.
+
+        SIS所在区域
+
+        :param sis_region: The sis_region of this MobvoiConfig.
+        :type sis_region: int
+        """
+        self._sis_region = sis_region
+
+    @property
+    def sis_project_id(self):
+        """Gets the sis_project_id of this MobvoiConfig.
+
+        SIS所在区域的projectId
+
+        :return: The sis_project_id of this MobvoiConfig.
+        :rtype: str
+        """
+        return self._sis_project_id
+
+    @sis_project_id.setter
+    def sis_project_id(self, sis_project_id):
+        """Sets the sis_project_id of this MobvoiConfig.
+
+        SIS所在区域的projectId
+
+        :param sis_project_id: The sis_project_id of this MobvoiConfig.
+        :type sis_project_id: str
+        """
+        self._sis_project_id = sis_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

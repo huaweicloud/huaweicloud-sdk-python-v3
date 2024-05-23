@@ -99,6 +99,75 @@ class CbhClient(Client):
 
         return http_info
 
+    def change_instance_type(self, request):
+        """修改单机堡垒机实例类型
+
+        修改单机堡垒机实例类型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeInstanceType
+        :type request: :class:`huaweicloudsdkcbh.v2.ChangeInstanceTypeRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v2.ChangeInstanceTypeResponse`
+        """
+        http_info = self._change_instance_type_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_instance_type_invoker(self, request):
+        http_info = self._change_instance_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_instance_type_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cbs/instance/type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeInstanceTypeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'server_id' in local_var_params:
+            query_params.append(('server_id', local_var_params['server_id']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'is_auto_pay' in local_var_params:
+            query_params.append(('is_auto_pay', local_var_params['is_auto_pay']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def count_instances_by_tag(self, request):
         """统计符合标签条件的实例数量
 
@@ -732,6 +801,71 @@ class CbhClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def login_instance_admin(self, request):
+        """用户登录堡垒机实例admin的console
+
+        用户登录堡垒机实例admin的console。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for LoginInstanceAdmin
+        :type request: :class:`huaweicloudsdkcbh.v2.LoginInstanceAdminRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v2.LoginInstanceAdminResponse`
+        """
+        http_info = self._login_instance_admin_http_info(request)
+        return self._call_api(**http_info)
+
+    def login_instance_admin_invoker(self, request):
+        http_info = self._login_instance_admin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _login_instance_admin_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cbs/instances/{server_id}/admin-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "LoginInstanceAdminResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1625,6 +1759,71 @@ class CbhClient(Client):
             "resource_path": "/v2/{project_id}/cbs/instance/stop",
             "request_type": request.__class__.__name__,
             "response_type": "StopInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_instance_vpc(self, request):
+        """切换堡垒机虚拟私有云
+
+        切换堡垒机虚拟私有云
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchInstanceVpc
+        :type request: :class:`huaweicloudsdkcbh.v2.SwitchInstanceVpcRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v2.SwitchInstanceVpcResponse`
+        """
+        http_info = self._switch_instance_vpc_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_instance_vpc_invoker(self, request):
+        http_info = self._switch_instance_vpc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_instance_vpc_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cbs/instance/vpc",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchInstanceVpcResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

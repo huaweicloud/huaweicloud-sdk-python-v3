@@ -21,6 +21,7 @@ class UpdateRobotReq:
         'app_type': 'int',
         'room_id': 'str',
         'language': 'LanguageEnum',
+        'tail_silence_time': 'int',
         'huawei_ei_cbs': 'HuaweiEiCbs',
         'iflytek_aiui_config': 'IflytekAiuiConfig',
         'iflytek_spark': 'IflytekSpark',
@@ -33,6 +34,7 @@ class UpdateRobotReq:
         'app_type': 'app_type',
         'room_id': 'room_id',
         'language': 'language',
+        'tail_silence_time': 'tail_silence_time',
         'huawei_ei_cbs': 'huawei_ei_cbs',
         'iflytek_aiui_config': 'iflytek_aiui_config',
         'iflytek_spark': 'iflytek_spark',
@@ -40,7 +42,7 @@ class UpdateRobotReq:
         'mobvoi_config': 'mobvoi_config'
     }
 
-    def __init__(self, name=None, app_type=None, room_id=None, language=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
+    def __init__(self, name=None, app_type=None, room_id=None, language=None, tail_silence_time=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
         """UpdateRobotReq
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class UpdateRobotReq:
         :type room_id: str
         :param language: 
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param tail_silence_time: 语音识别后端点静音时长默认500ms
+        :type tail_silence_time: int
         :param huawei_ei_cbs: 
         :type huawei_ei_cbs: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
         :param iflytek_aiui_config: 
@@ -71,6 +75,7 @@ class UpdateRobotReq:
         self._app_type = None
         self._room_id = None
         self._language = None
+        self._tail_silence_time = None
         self._huawei_ei_cbs = None
         self._iflytek_aiui_config = None
         self._iflytek_spark = None
@@ -86,6 +91,8 @@ class UpdateRobotReq:
             self.room_id = room_id
         if language is not None:
             self.language = language
+        if tail_silence_time is not None:
+            self.tail_silence_time = tail_silence_time
         if huawei_ei_cbs is not None:
             self.huawei_ei_cbs = huawei_ei_cbs
         if iflytek_aiui_config is not None:
@@ -180,6 +187,28 @@ class UpdateRobotReq:
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         self._language = language
+
+    @property
+    def tail_silence_time(self):
+        """Gets the tail_silence_time of this UpdateRobotReq.
+
+        语音识别后端点静音时长默认500ms
+
+        :return: The tail_silence_time of this UpdateRobotReq.
+        :rtype: int
+        """
+        return self._tail_silence_time
+
+    @tail_silence_time.setter
+    def tail_silence_time(self, tail_silence_time):
+        """Sets the tail_silence_time of this UpdateRobotReq.
+
+        语音识别后端点静音时长默认500ms
+
+        :param tail_silence_time: The tail_silence_time of this UpdateRobotReq.
+        :type tail_silence_time: int
+        """
+        self._tail_silence_time = tail_silence_time
 
     @property
     def huawei_ei_cbs(self):

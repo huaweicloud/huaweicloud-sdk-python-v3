@@ -30,6 +30,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         'policy_definition_id': 'str',
         'custom_policy': 'CustomPolicy',
         'parameters': 'dict(str, PolicyParameterValue)',
+        'tags': 'list[ResourceTag]',
         'created_by': 'str'
     }
 
@@ -46,10 +47,11 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         'policy_definition_id': 'policy_definition_id',
         'custom_policy': 'custom_policy',
         'parameters': 'parameters',
+        'tags': 'tags',
         'created_by': 'created_by'
     }
 
-    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, created_by=None):
+    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, tags=None, created_by=None):
         """ShowAggregatePolicyAssignmentDetailResponse
 
         The model defined in huaweicloud sdk
@@ -78,6 +80,8 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         :type custom_policy: :class:`huaweicloudsdkconfig.v1.CustomPolicy`
         :param parameters: 规则参数
         :type parameters: dict(str, PolicyParameterValue)
+        :param tags: 
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         :param created_by: 规则的创建者
         :type created_by: str
         """
@@ -96,6 +100,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         self._policy_definition_id = None
         self._custom_policy = None
         self._parameters = None
+        self._tags = None
         self._created_by = None
         self.discriminator = None
 
@@ -123,6 +128,8 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
             self.custom_policy = custom_policy
         if parameters is not None:
             self.parameters = parameters
+        if tags is not None:
+            self.tags = tags
         if created_by is not None:
             self.created_by = created_by
 
@@ -381,6 +388,24 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         :type parameters: dict(str, PolicyParameterValue)
         """
         self._parameters = parameters
+
+    @property
+    def tags(self):
+        """Gets the tags of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        :return: The tags of this ShowAggregatePolicyAssignmentDetailResponse.
+        :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        :param tags: The tags of this ShowAggregatePolicyAssignmentDetailResponse.
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        self._tags = tags
 
     @property
     def created_by(self):

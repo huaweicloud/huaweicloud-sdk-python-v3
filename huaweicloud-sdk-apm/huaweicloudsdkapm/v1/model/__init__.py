@@ -24,6 +24,8 @@ from huaweicloudsdkapm.v1.model.cmdb_tag_entity import CmdbTagEntity
 from huaweicloudsdkapm.v1.model.collector_category_info import CollectorCategoryInfo
 from huaweicloudsdkapm.v1.model.collector_config_model import CollectorConfigModel
 from huaweicloudsdkapm.v1.model.config_item import ConfigItem
+from huaweicloudsdkapm.v1.model.config_item_override import ConfigItemOverride
+from huaweicloudsdkapm.v1.model.config_item_value import ConfigItemValue
 from huaweicloudsdkapm.v1.model.create_ak_sk_request import CreateAkSkRequest
 from huaweicloudsdkapm.v1.model.create_ak_sk_response import CreateAkSkResponse
 from huaweicloudsdkapm.v1.model.create_aksk_model import CreateAkskModel
@@ -81,6 +83,8 @@ from huaweicloudsdkapm.v1.model.list_supported_region_request import ListSupport
 from huaweicloudsdkapm.v1.model.list_supported_region_response import ListSupportedRegionResponse
 from huaweicloudsdkapm.v1.model.monitor_item import MonitorItem
 from huaweicloudsdkapm.v1.model.monitor_item_entity import MonitorItemEntity
+from huaweicloudsdkapm.v1.model.object_array_patterns import ObjectArrayPatterns
+from huaweicloudsdkapm.v1.model.option_value import OptionValue
 from huaweicloudsdkapm.v1.model.order_param import OrderParam
 from huaweicloudsdkapm.v1.model.raw_table_param import RawTableParam
 from huaweicloudsdkapm.v1.model.raw_table_view import RawTableView

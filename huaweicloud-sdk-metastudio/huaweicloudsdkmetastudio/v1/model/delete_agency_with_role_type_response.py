@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CheckTextLanguageRequest:
+class DeleteAgencyWithRoleTypeResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,47 +18,47 @@ class CheckTextLanguageRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'LanguageCheckInfoReq'
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, body=None):
-        """CheckTextLanguageRequest
+    def __init__(self, x_request_id=None):
+        """DeleteAgencyWithRoleTypeResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: Body of the CheckTextLanguageRequest
-        :type body: :class:`huaweicloudsdkmetastudio.v1.LanguageCheckInfoReq`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
-        
+        super(DeleteAgencyWithRoleTypeResponse, self).__init__()
 
-        self._body = None
+        self._x_request_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
-    def body(self):
-        """Gets the body of this CheckTextLanguageRequest.
+    def x_request_id(self):
+        """Gets the x_request_id of this DeleteAgencyWithRoleTypeResponse.
 
-        :return: The body of this CheckTextLanguageRequest.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageCheckInfoReq`
+        :return: The x_request_id of this DeleteAgencyWithRoleTypeResponse.
+        :rtype: str
         """
-        return self._body
+        return self._x_request_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CheckTextLanguageRequest.
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DeleteAgencyWithRoleTypeResponse.
 
-        :param body: The body of this CheckTextLanguageRequest.
-        :type body: :class:`huaweicloudsdkmetastudio.v1.LanguageCheckInfoReq`
+        :param x_request_id: The x_request_id of this DeleteAgencyWithRoleTypeResponse.
+        :type x_request_id: str
         """
-        self._body = body
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -101,7 +102,7 @@ class CheckTextLanguageRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CheckTextLanguageRequest):
+        if not isinstance(other, DeleteAgencyWithRoleTypeResponse):
             return False
 
         return self.__dict__ == other.__dict__

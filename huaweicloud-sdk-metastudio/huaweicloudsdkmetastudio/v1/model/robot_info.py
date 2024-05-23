@@ -31,7 +31,11 @@ class RobotInfo:
         'llm_url': 'str',
         'is_stream': 'bool',
         'chat_rounds': 'int',
-        'role_id': 'str'
+        'is_ifly_production': 'bool',
+        'tail_silence_time': 'int',
+        'role_id': 'str',
+        'sis_region': 'int',
+        'sis_project_id': 'str'
     }
 
     attribute_map = {
@@ -49,10 +53,14 @@ class RobotInfo:
         'llm_url': 'llm_url',
         'is_stream': 'is_stream',
         'chat_rounds': 'chat_rounds',
-        'role_id': 'role_id'
+        'is_ifly_production': 'is_ifly_production',
+        'tail_silence_time': 'tail_silence_time',
+        'role_id': 'role_id',
+        'sis_region': 'sis_region',
+        'sis_project_id': 'sis_project_id'
     }
 
-    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, role_id=None):
+    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, is_ifly_production=None, tail_silence_time=None, role_id=None, sis_region=None, sis_project_id=None):
         """RobotInfo
 
         The model defined in huaweicloud sdk
@@ -85,8 +93,16 @@ class RobotInfo:
         :type is_stream: bool
         :param chat_rounds: 支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
         :type chat_rounds: int
+        :param is_ifly_production: 是否为正式环境
+        :type is_ifly_production: bool
+        :param tail_silence_time: 语音识别后端点静音时长默认500ms
+        :type tail_silence_time: int
         :param role_id: 奇妙问角色ID。
         :type role_id: str
+        :param sis_region: SIS所在区域
+        :type sis_region: int
+        :param sis_project_id: SIS所在区域的projectId
+        :type sis_project_id: str
         """
         
         
@@ -105,7 +121,11 @@ class RobotInfo:
         self._llm_url = None
         self._is_stream = None
         self._chat_rounds = None
+        self._is_ifly_production = None
+        self._tail_silence_time = None
         self._role_id = None
+        self._sis_region = None
+        self._sis_project_id = None
         self.discriminator = None
 
         if robot_id is not None:
@@ -136,8 +156,16 @@ class RobotInfo:
             self.is_stream = is_stream
         if chat_rounds is not None:
             self.chat_rounds = chat_rounds
+        if is_ifly_production is not None:
+            self.is_ifly_production = is_ifly_production
+        if tail_silence_time is not None:
+            self.tail_silence_time = tail_silence_time
         if role_id is not None:
             self.role_id = role_id
+        if sis_region is not None:
+            self.sis_region = sis_region
+        if sis_project_id is not None:
+            self.sis_project_id = sis_project_id
 
     @property
     def robot_id(self):
@@ -444,6 +472,50 @@ class RobotInfo:
         self._chat_rounds = chat_rounds
 
     @property
+    def is_ifly_production(self):
+        """Gets the is_ifly_production of this RobotInfo.
+
+        是否为正式环境
+
+        :return: The is_ifly_production of this RobotInfo.
+        :rtype: bool
+        """
+        return self._is_ifly_production
+
+    @is_ifly_production.setter
+    def is_ifly_production(self, is_ifly_production):
+        """Sets the is_ifly_production of this RobotInfo.
+
+        是否为正式环境
+
+        :param is_ifly_production: The is_ifly_production of this RobotInfo.
+        :type is_ifly_production: bool
+        """
+        self._is_ifly_production = is_ifly_production
+
+    @property
+    def tail_silence_time(self):
+        """Gets the tail_silence_time of this RobotInfo.
+
+        语音识别后端点静音时长默认500ms
+
+        :return: The tail_silence_time of this RobotInfo.
+        :rtype: int
+        """
+        return self._tail_silence_time
+
+    @tail_silence_time.setter
+    def tail_silence_time(self, tail_silence_time):
+        """Sets the tail_silence_time of this RobotInfo.
+
+        语音识别后端点静音时长默认500ms
+
+        :param tail_silence_time: The tail_silence_time of this RobotInfo.
+        :type tail_silence_time: int
+        """
+        self._tail_silence_time = tail_silence_time
+
+    @property
     def role_id(self):
         """Gets the role_id of this RobotInfo.
 
@@ -464,6 +536,50 @@ class RobotInfo:
         :type role_id: str
         """
         self._role_id = role_id
+
+    @property
+    def sis_region(self):
+        """Gets the sis_region of this RobotInfo.
+
+        SIS所在区域
+
+        :return: The sis_region of this RobotInfo.
+        :rtype: int
+        """
+        return self._sis_region
+
+    @sis_region.setter
+    def sis_region(self, sis_region):
+        """Sets the sis_region of this RobotInfo.
+
+        SIS所在区域
+
+        :param sis_region: The sis_region of this RobotInfo.
+        :type sis_region: int
+        """
+        self._sis_region = sis_region
+
+    @property
+    def sis_project_id(self):
+        """Gets the sis_project_id of this RobotInfo.
+
+        SIS所在区域的projectId
+
+        :return: The sis_project_id of this RobotInfo.
+        :rtype: str
+        """
+        return self._sis_project_id
+
+    @sis_project_id.setter
+    def sis_project_id(self, sis_project_id):
+        """Sets the sis_project_id of this RobotInfo.
+
+        SIS所在区域的projectId
+
+        :param sis_project_id: The sis_project_id of this RobotInfo.
+        :type sis_project_id: str
+        """
+        self._sis_project_id = sis_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

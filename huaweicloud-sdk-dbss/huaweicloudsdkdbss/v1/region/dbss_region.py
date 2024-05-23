@@ -52,6 +52,8 @@ class DbssRegion:
                         "https://dbss.tr-west-1.myhuaweicloud.com")
     CN_EAST_5 = Region("cn-east-5",
                         "https://dbss.cn-east-5.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://dbss.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-2": CN_SOUTH_2,
@@ -77,6 +79,7 @@ class DbssRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "tr-west-1": TR_WEST_1,
         "cn-east-5": CN_EAST_5,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

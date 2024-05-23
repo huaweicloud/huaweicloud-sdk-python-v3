@@ -39,13 +39,13 @@ class CreateBusinessModel:
 
         :param name: 应用名字
         :type name: str
-        :param eps_id: 企业项目ID
+        :param eps_id: 企业项目ID，默认值为“0”，表示默认项目的ID。
         :type eps_id: str
         :param display_name: CMDB树显示的名称
         :type display_name: str
         :param descp: 描述
         :type descp: str
-        :param cmdb_datasource_type: 新建类型
+        :param cmdb_datasource_type: 默认值为SKYWALKING。
         :type cmdb_datasource_type: str
         """
         
@@ -59,10 +59,12 @@ class CreateBusinessModel:
         self.discriminator = None
 
         self.name = name
-        self.eps_id = eps_id
+        if eps_id is not None:
+            self.eps_id = eps_id
         self.display_name = display_name
         self.descp = descp
-        self.cmdb_datasource_type = cmdb_datasource_type
+        if cmdb_datasource_type is not None:
+            self.cmdb_datasource_type = cmdb_datasource_type
 
     @property
     def name(self):
@@ -90,7 +92,7 @@ class CreateBusinessModel:
     def eps_id(self):
         """Gets the eps_id of this CreateBusinessModel.
 
-        企业项目ID
+        企业项目ID，默认值为“0”，表示默认项目的ID。
 
         :return: The eps_id of this CreateBusinessModel.
         :rtype: str
@@ -101,7 +103,7 @@ class CreateBusinessModel:
     def eps_id(self, eps_id):
         """Sets the eps_id of this CreateBusinessModel.
 
-        企业项目ID
+        企业项目ID，默认值为“0”，表示默认项目的ID。
 
         :param eps_id: The eps_id of this CreateBusinessModel.
         :type eps_id: str
@@ -156,7 +158,7 @@ class CreateBusinessModel:
     def cmdb_datasource_type(self):
         """Gets the cmdb_datasource_type of this CreateBusinessModel.
 
-        新建类型
+        默认值为SKYWALKING。
 
         :return: The cmdb_datasource_type of this CreateBusinessModel.
         :rtype: str
@@ -167,7 +169,7 @@ class CreateBusinessModel:
     def cmdb_datasource_type(self, cmdb_datasource_type):
         """Sets the cmdb_datasource_type of this CreateBusinessModel.
 
-        新建类型
+        默认值为SKYWALKING。
 
         :param cmdb_datasource_type: The cmdb_datasource_type of this CreateBusinessModel.
         :type cmdb_datasource_type: str

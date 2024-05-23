@@ -440,6 +440,201 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def create_agency_with_role_type(self, request):
+        """创建委托
+
+        该接口用于创建委托。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAgencyWithRoleType
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateAgencyWithRoleTypeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateAgencyWithRoleTypeResponse`
+        """
+        http_info = self._create_agency_with_role_type_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_agency_with_role_type_invoker(self, request):
+        http_info = self._create_agency_with_role_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agency_with_role_type_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/agency/{role_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgencyWithRoleTypeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'role_type' in local_var_params:
+            path_params['role_type'] = local_var_params['role_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_agency_with_role_type(self, request):
+        """删除委托
+
+        该接口用于删除项目下委托。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAgencyWithRoleType
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteAgencyWithRoleTypeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteAgencyWithRoleTypeResponse`
+        """
+        http_info = self._delete_agency_with_role_type_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_agency_with_role_type_invoker(self, request):
+        http_info = self._delete_agency_with_role_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_agency_with_role_type_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-human-chat/agency/{role_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAgencyWithRoleTypeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'role_type' in local_var_params:
+            path_params['role_type'] = local_var_params['role_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_agency(self, request):
+        """查询委托
+
+        该接口用于查询项目下委托
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAgency
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAgencyRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAgencyResponse`
+        """
+        http_info = self._show_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_agency_invoker(self, request):
+        http_info = self._show_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'role_type' in local_var_params:
+            query_params.append(('role_type', local_var_params['role_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_dialog_url(self, request):
         """创建对话链接
 
@@ -1767,6 +1962,8 @@ class MetaStudioClient(Client):
             query_params.append(('asset_name', local_var_params['asset_name']))
         if 'job_type' in local_var_params:
             query_params.append(('job_type', local_var_params['job_type']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -2916,6 +3113,485 @@ class MetaStudioClient(Client):
         path_params = {}
         if 'hot_question_id' in local_var_params:
             path_params['hot_question_id'] = local_var_params['hot_question_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_hot_words(self, request):
+        """创建热词记录
+
+        该接口用于创建热词记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateHotWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateHotWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateHotWordsResponse`
+        """
+        http_info = self._create_hot_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_hot_words_invoker(self, request):
+        http_info = self._create_hot_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_hot_words_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-words",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHotWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_hot_words(self, request):
+        """删除热词记录
+
+        该接口用于删除热词记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteHotWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteHotWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteHotWordsResponse`
+        """
+        http_info = self._delete_hot_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_hot_words_invoker(self, request):
+        http_info = self._delete_hot_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_hot_words_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-words/{hot_words_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHotWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hot_words_id' in local_var_params:
+            path_params['hot_words_id'] = local_var_params['hot_words_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hot_words(self, request):
+        """查询热词记录列表
+
+        该接口用于查询热词记录列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHotWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListHotWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListHotWordsResponse`
+        """
+        http_info = self._list_hot_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hot_words_invoker(self, request):
+        http_info = self._list_hot_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_hot_words_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-words",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHotWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_hot_words(self, request):
+        """查询配置热词记录详情
+
+        该接口用于查询热词记录详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHotWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowHotWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowHotWordsResponse`
+        """
+        http_info = self._show_hot_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_hot_words_invoker(self, request):
+        http_info = self._show_hot_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_hot_words_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-words/{hot_words_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHotWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hot_words_id' in local_var_params:
+            path_params['hot_words_id'] = local_var_params['hot_words_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_hot_words_switch(self, request):
+        """查询热词功能开关
+
+        该接口用于查询热词功能开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHotWordsSwitch
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowHotWordsSwitchRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowHotWordsSwitchResponse`
+        """
+        http_info = self._show_hot_words_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_hot_words_switch_invoker(self, request):
+        http_info = self._show_hot_words_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_hot_words_switch_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-words-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHotWordsSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'robot_id' in local_var_params:
+            query_params.append(('robot_id', local_var_params['robot_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_hot_words(self, request):
+        """修改热词记录
+
+        该接口用于修改热词记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateHotWords
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateHotWordsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateHotWordsResponse`
+        """
+        http_info = self._update_hot_words_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_hot_words_invoker(self, request):
+        http_info = self._update_hot_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_hot_words_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-words/{hot_words_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHotWordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hot_words_id' in local_var_params:
+            path_params['hot_words_id'] = local_var_params['hot_words_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_hot_words_switch(self, request):
+        """修改热词功能开关
+
+        该接口用于修改热词功能开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateHotWordsSwitch
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateHotWordsSwitchRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateHotWordsSwitchResponse`
+        """
+        http_info = self._update_hot_words_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_hot_words_switch_invoker(self, request):
+        http_info = self._update_hot_words_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_hot_words_switch_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/hot-words-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHotWordsSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -5782,71 +6458,6 @@ class MetaStudioClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def check_text_language(self, request):
-        """检测音色与文本的语言一致性
-
-        检测音色与文本的语言一致性，音色与文本不一致会导致报错
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CheckTextLanguage
-        :type request: :class:`huaweicloudsdkmetastudio.v1.CheckTextLanguageRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.CheckTextLanguageResponse`
-        """
-        http_info = self._check_text_language_http_info(request)
-        return self._call_api(**http_info)
-
-    def check_text_language_invoker(self, request):
-        http_info = self._check_text_language_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _check_text_language_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/smart-live-rooms-scripts/language-check",
-            "request_type": request.__class__.__name__,
-            "response_type": "CheckTextLanguageResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

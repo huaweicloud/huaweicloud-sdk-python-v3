@@ -1,3 +1,173 @@
+# 3.1.97 2024-05-23
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowMonitorItemDetail**
+    - 响应参数变更
+      - `+ config_item_list`
+      - `+ collector_id`
+      - `+ interval`
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateScalingGroup**
+    - 请求参数变更
+      - `+ tags`
+  - **ListScalingGroups**
+    - 响应参数变更
+      - `+ scaling_groups.tags`
+  - **ShowScalingGroup**
+    - 响应参数变更
+      - `+ scaling_group.tags`
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListResourcesByTag`
+    - `CountResourcesByTag`
+    - `TagResource`
+    - `UnTagResource`
+    - `ListTagsForResource`
+    - `ListTagsForResourceType`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPolicyAssignment**
+    - 响应参数变更
+      - `+ tags`
+  - **UpdatePolicyAssignment**
+    - 请求参数变更
+      - `+ tags`
+    - 响应参数变更
+      - `+ tags`
+  - **ShowAggregatePolicyAssignmentDetail**
+    - 响应参数变更
+      - `+ tags`
+  - **CreatePolicyAssignments**
+    - 请求参数变更
+      - `+ tags`
+    - 响应参数变更
+      - `+ tags`
+  - **ListPolicyAssignments**
+    - 响应参数变更
+      - `+ tags`
+      - `+ value.tags`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSecurityPermissionSetPermission**
+    - 响应参数变更
+      - `+ url`
+  - **CreateSecurityPermissionSetPermission**
+    - 请求参数变更
+      - `+ url`
+    - 响应参数变更
+      - `+ url`
+  - **ListSecurityPermissionSetPermissions**
+    - 响应参数变更
+      - `+ url`
+      - `+ permissions.url`
+  - **ListSecurityDlfDataWareHouses**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持接口`ShowRedisBigKeys`、`ShowPasswordlessConfig`、`UpdatePasswordlessConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **OfflineNodes**
+    - 请求参数变更
+      - `* x-auth-token: optional -> required`
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowAgency`
+    - `CreateAgencyWithRoleType`
+    - `DeleteAgencyWithRoleType`
+    - `ListHotWords`
+    - `CreateHotWords`
+    - `ShowHotWords`
+    - `UpdateHotWords`
+    - `DeleteHotWords`
+    - `ShowHotWordsSwitch`
+    - `UpdateHotWordsSwitch`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CheckTextLanguage`
+  - **ShowRobot**
+    - 响应参数变更
+      - `+ is_ifly_production`
+      - `+ tail_silence_time`
+      - `+ sis_region`
+      - `+ sis_project_id`
+  - **UpdateRobot**
+    - 请求参数变更
+      - `+ tail_silence_time`
+      - `+ huawei_ei_cbs.sis_region`
+      - `+ huawei_ei_cbs.sis_project_id`
+      - `+ iflytek_aiui_config.is_production`
+      - `+ iflytek_spark.is_production`
+      - `+ third_party_model_config.sis_region`
+      - `+ third_party_model_config.sis_project_id`
+      - `+ mobvoi_config.sis_region`
+      - `+ mobvoi_config.sis_project_id`
+  - **CreateRobot**
+    - 请求参数变更
+      - `+ tail_silence_time`
+      - `+ huawei_ei_cbs.sis_region`
+      - `+ huawei_ei_cbs.sis_project_id`
+      - `+ iflytek_aiui_config.is_production`
+      - `+ iflytek_spark.is_production`
+      - `+ third_party_model_config.sis_region`
+      - `+ third_party_model_config.sis_project_id`
+      - `+ mobvoi_config.sis_region`
+      - `+ mobvoi_config.sis_project_id`
+  - **ListRobot**
+    - 响应参数变更
+      - `+ is_ifly_production`
+      - `+ tail_silence_time`
+      - `+ sis_region`
+      - `+ sis_project_id`
+      - `+ data.is_ifly_production`
+      - `+ data.tail_silence_time`
+      - `+ data.sis_region`
+      - `+ data.sis_project_id`
+  - **ListDigitalHumanVideo**
+    - 请求参数变更
+      - `+ job_id`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`DownloadErrorlog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.96 2024-05-16
 
 ### HuaweiCloud SDK APM

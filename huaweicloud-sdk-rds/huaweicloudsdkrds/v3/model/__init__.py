@@ -163,6 +163,8 @@ from huaweicloudsdkrds.v3.model.delete_sqlserver_db_user_request import DeleteSq
 from huaweicloudsdkrds.v3.model.delete_sqlserver_db_user_response import DeleteSqlserverDbUserResponse
 from huaweicloudsdkrds.v3.model.diagnosis_instances_info_result import DiagnosisInstancesInfoResult
 from huaweicloudsdkrds.v3.model.diagnosis_item_result import DiagnosisItemResult
+from huaweicloudsdkrds.v3.model.download_errorlog_request import DownloadErrorlogRequest
+from huaweicloudsdkrds.v3.model.download_errorlog_response import DownloadErrorlogResponse
 from huaweicloudsdkrds.v3.model.download_info_rsp import DownloadInfoRsp
 from huaweicloudsdkrds.v3.model.download_slowlog_request import DownloadSlowlogRequest
 from huaweicloudsdkrds.v3.model.download_slowlog_response import DownloadSlowlogResponse
@@ -177,6 +179,7 @@ from huaweicloudsdkrds.v3.model.error_log import ErrorLog
 from huaweicloudsdkrds.v3.model.error_log_item import ErrorLogItem
 from huaweicloudsdkrds.v3.model.error_response import ErrorResponse
 from huaweicloudsdkrds.v3.model.error_rsp import ErrorRsp
+from huaweicloudsdkrds.v3.model.errorlog_download_info import ErrorlogDownloadInfo
 from huaweicloudsdkrds.v3.model.errorlog_for_lts_request import ErrorlogForLtsRequest
 from huaweicloudsdkrds.v3.model.execute_privilege_database_user_role_request import ExecutePrivilegeDatabaseUserRoleRequest
 from huaweicloudsdkrds.v3.model.execute_privilege_database_user_role_response import ExecutePrivilegeDatabaseUserRoleResponse

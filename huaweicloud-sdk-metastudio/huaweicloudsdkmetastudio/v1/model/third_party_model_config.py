@@ -21,7 +21,9 @@ class ThirdPartyModelConfig:
         'app_key': 'str',
         'llm_url': 'str',
         'is_stream': 'bool',
-        'chat_rounds': 'int'
+        'chat_rounds': 'int',
+        'sis_region': 'int',
+        'sis_project_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ThirdPartyModelConfig:
         'app_key': 'app_key',
         'llm_url': 'llm_url',
         'is_stream': 'is_stream',
-        'chat_rounds': 'chat_rounds'
+        'chat_rounds': 'chat_rounds',
+        'sis_region': 'sis_region',
+        'sis_project_id': 'sis_project_id'
     }
 
-    def __init__(self, app_id=None, app_key=None, llm_url=None, is_stream=None, chat_rounds=None):
+    def __init__(self, app_id=None, app_key=None, llm_url=None, is_stream=None, chat_rounds=None, sis_region=None, sis_project_id=None):
         """ThirdPartyModelConfig
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ThirdPartyModelConfig:
         :type is_stream: bool
         :param chat_rounds: 支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
         :type chat_rounds: int
+        :param sis_region: SIS所在区域
+        :type sis_region: int
+        :param sis_project_id: SIS所在区域的projectId
+        :type sis_project_id: str
         """
         
         
@@ -56,6 +64,8 @@ class ThirdPartyModelConfig:
         self._llm_url = None
         self._is_stream = None
         self._chat_rounds = None
+        self._sis_region = None
+        self._sis_project_id = None
         self.discriminator = None
 
         if app_id is not None:
@@ -68,6 +78,10 @@ class ThirdPartyModelConfig:
             self.is_stream = is_stream
         if chat_rounds is not None:
             self.chat_rounds = chat_rounds
+        if sis_region is not None:
+            self.sis_region = sis_region
+        if sis_project_id is not None:
+            self.sis_project_id = sis_project_id
 
     @property
     def app_id(self):
@@ -178,6 +192,50 @@ class ThirdPartyModelConfig:
         :type chat_rounds: int
         """
         self._chat_rounds = chat_rounds
+
+    @property
+    def sis_region(self):
+        """Gets the sis_region of this ThirdPartyModelConfig.
+
+        SIS所在区域
+
+        :return: The sis_region of this ThirdPartyModelConfig.
+        :rtype: int
+        """
+        return self._sis_region
+
+    @sis_region.setter
+    def sis_region(self, sis_region):
+        """Sets the sis_region of this ThirdPartyModelConfig.
+
+        SIS所在区域
+
+        :param sis_region: The sis_region of this ThirdPartyModelConfig.
+        :type sis_region: int
+        """
+        self._sis_region = sis_region
+
+    @property
+    def sis_project_id(self):
+        """Gets the sis_project_id of this ThirdPartyModelConfig.
+
+        SIS所在区域的projectId
+
+        :return: The sis_project_id of this ThirdPartyModelConfig.
+        :rtype: str
+        """
+        return self._sis_project_id
+
+    @sis_project_id.setter
+    def sis_project_id(self, sis_project_id):
+        """Sets the sis_project_id of this ThirdPartyModelConfig.
+
+        SIS所在区域的projectId
+
+        :param sis_project_id: The sis_project_id of this ThirdPartyModelConfig.
+        :type sis_project_id: str
+        """
+        self._sis_project_id = sis_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

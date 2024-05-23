@@ -19,16 +19,20 @@ class HuaweiEiCbs:
     openapi_types = {
         'app_id': 'str',
         'region': 'int',
-        'cbs_project_id': 'str'
+        'cbs_project_id': 'str',
+        'sis_region': 'int',
+        'sis_project_id': 'str'
     }
 
     attribute_map = {
         'app_id': 'app_id',
         'region': 'region',
-        'cbs_project_id': 'cbs_project_id'
+        'cbs_project_id': 'cbs_project_id',
+        'sis_region': 'sis_region',
+        'sis_project_id': 'sis_project_id'
     }
 
-    def __init__(self, app_id=None, region=None, cbs_project_id=None):
+    def __init__(self, app_id=None, region=None, cbs_project_id=None, sis_region=None, sis_project_id=None):
         """HuaweiEiCbs
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class HuaweiEiCbs:
         :type region: int
         :param cbs_project_id: CBS所在区域的projectId
         :type cbs_project_id: str
+        :param sis_region: SIS所在区域
+        :type sis_region: int
+        :param sis_project_id: SIS所在区域的projectId
+        :type sis_project_id: str
         """
         
         
@@ -46,6 +54,8 @@ class HuaweiEiCbs:
         self._app_id = None
         self._region = None
         self._cbs_project_id = None
+        self._sis_region = None
+        self._sis_project_id = None
         self.discriminator = None
 
         if app_id is not None:
@@ -54,6 +64,10 @@ class HuaweiEiCbs:
             self.region = region
         if cbs_project_id is not None:
             self.cbs_project_id = cbs_project_id
+        if sis_region is not None:
+            self.sis_region = sis_region
+        if sis_project_id is not None:
+            self.sis_project_id = sis_project_id
 
     @property
     def app_id(self):
@@ -120,6 +134,50 @@ class HuaweiEiCbs:
         :type cbs_project_id: str
         """
         self._cbs_project_id = cbs_project_id
+
+    @property
+    def sis_region(self):
+        """Gets the sis_region of this HuaweiEiCbs.
+
+        SIS所在区域
+
+        :return: The sis_region of this HuaweiEiCbs.
+        :rtype: int
+        """
+        return self._sis_region
+
+    @sis_region.setter
+    def sis_region(self, sis_region):
+        """Sets the sis_region of this HuaweiEiCbs.
+
+        SIS所在区域
+
+        :param sis_region: The sis_region of this HuaweiEiCbs.
+        :type sis_region: int
+        """
+        self._sis_region = sis_region
+
+    @property
+    def sis_project_id(self):
+        """Gets the sis_project_id of this HuaweiEiCbs.
+
+        SIS所在区域的projectId
+
+        :return: The sis_project_id of this HuaweiEiCbs.
+        :rtype: str
+        """
+        return self._sis_project_id
+
+    @sis_project_id.setter
+    def sis_project_id(self, sis_project_id):
+        """Sets the sis_project_id of this HuaweiEiCbs.
+
+        SIS所在区域的projectId
+
+        :param sis_project_id: The sis_project_id of this HuaweiEiCbs.
+        :type sis_project_id: str
+        """
+        self._sis_project_id = sis_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

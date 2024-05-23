@@ -28,7 +28,8 @@ class PermissionSetPermissionCreateDTO:
         'namespace': 'str',
         'table_name': 'str',
         'column_name': 'str',
-        'row_level_security': 'str'
+        'row_level_security': 'str',
+        'url': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class PermissionSetPermissionCreateDTO:
         'namespace': 'namespace',
         'table_name': 'table_name',
         'column_name': 'column_name',
-        'row_level_security': 'row_level_security'
+        'row_level_security': 'row_level_security',
+        'url': 'url'
     }
 
-    def __init__(self, dw_id=None, permission_type=None, permission_actions=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None):
+    def __init__(self, dw_id=None, permission_type=None, permission_actions=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None, url=None):
         """PermissionSetPermissionCreateDTO
 
         The model defined in huaweicloud sdk
@@ -67,14 +69,16 @@ class PermissionSetPermissionCreateDTO:
         :type database_name: str
         :param schema_name: 模式名称
         :type schema_name: str
-        :param namespace: 命名空间
+        :param namespace: 命名空间。无效参数，待下线。
         :type namespace: str
         :param table_name: 表名称
         :type table_name: str
         :param column_name: 列名称
         :type column_name: str
-        :param row_level_security: 行级策略
+        :param row_level_security: 行级策略。无效参数，待下线。
         :type row_level_security: str
+        :param url: url路径名称, MRS存算分离或者HIVE指定location场景下使用。
+        :type url: str
         """
         
         
@@ -91,6 +95,7 @@ class PermissionSetPermissionCreateDTO:
         self._table_name = None
         self._column_name = None
         self._row_level_security = None
+        self._url = None
         self.discriminator = None
 
         if dw_id is not None:
@@ -117,6 +122,8 @@ class PermissionSetPermissionCreateDTO:
             self.column_name = column_name
         if row_level_security is not None:
             self.row_level_security = row_level_security
+        if url is not None:
+            self.url = url
 
     @property
     def dw_id(self):
@@ -298,7 +305,7 @@ class PermissionSetPermissionCreateDTO:
     def namespace(self):
         """Gets the namespace of this PermissionSetPermissionCreateDTO.
 
-        命名空间
+        命名空间。无效参数，待下线。
 
         :return: The namespace of this PermissionSetPermissionCreateDTO.
         :rtype: str
@@ -309,7 +316,7 @@ class PermissionSetPermissionCreateDTO:
     def namespace(self, namespace):
         """Sets the namespace of this PermissionSetPermissionCreateDTO.
 
-        命名空间
+        命名空间。无效参数，待下线。
 
         :param namespace: The namespace of this PermissionSetPermissionCreateDTO.
         :type namespace: str
@@ -364,7 +371,7 @@ class PermissionSetPermissionCreateDTO:
     def row_level_security(self):
         """Gets the row_level_security of this PermissionSetPermissionCreateDTO.
 
-        行级策略
+        行级策略。无效参数，待下线。
 
         :return: The row_level_security of this PermissionSetPermissionCreateDTO.
         :rtype: str
@@ -375,12 +382,34 @@ class PermissionSetPermissionCreateDTO:
     def row_level_security(self, row_level_security):
         """Sets the row_level_security of this PermissionSetPermissionCreateDTO.
 
-        行级策略
+        行级策略。无效参数，待下线。
 
         :param row_level_security: The row_level_security of this PermissionSetPermissionCreateDTO.
         :type row_level_security: str
         """
         self._row_level_security = row_level_security
+
+    @property
+    def url(self):
+        """Gets the url of this PermissionSetPermissionCreateDTO.
+
+        url路径名称, MRS存算分离或者HIVE指定location场景下使用。
+
+        :return: The url of this PermissionSetPermissionCreateDTO.
+        :rtype: str
+        """
+        return self._url
+
+    @url.setter
+    def url(self, url):
+        """Sets the url of this PermissionSetPermissionCreateDTO.
+
+        url路径名称, MRS存算分离或者HIVE指定location场景下使用。
+
+        :param url: The url of this PermissionSetPermissionCreateDTO.
+        :type url: str
+        """
+        self._url = url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

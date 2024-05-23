@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class LanguageCheckInfoReq:
+class TagsReq:
 
     """
     Attributes:
@@ -17,78 +17,51 @@ class LanguageCheckInfoReq:
     sensitive_list = []
 
     openapi_types = {
-        'target_language': 'str',
-        'shoot_script': 'list[LiveShootScriptItem]'
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
-        'target_language': 'target_language',
-        'shoot_script': 'shoot_script'
+        'tags': 'tags'
     }
 
-    def __init__(self, target_language=None, shoot_script=None):
-        """LanguageCheckInfoReq
+    def __init__(self, tags=None):
+        """TagsReq
 
         The model defined in huaweicloud sdk
 
-        :param target_language: 目标语言
-        :type target_language: str
-        :param shoot_script: 用户传来的剧本文本信息
-        :type shoot_script: list[:class:`huaweicloudsdkmetastudio.v1.LiveShootScriptItem`]
+        :param tags: 标签列表。租户权限时该字段必选，op_service权限时和sys_tags二选一。
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
         
         
 
-        self._target_language = None
-        self._shoot_script = None
+        self._tags = None
         self.discriminator = None
 
-        self.target_language = target_language
-        self.shoot_script = shoot_script
+        if tags is not None:
+            self.tags = tags
 
     @property
-    def target_language(self):
-        """Gets the target_language of this LanguageCheckInfoReq.
+    def tags(self):
+        """Gets the tags of this TagsReq.
 
-        目标语言
+        标签列表。租户权限时该字段必选，op_service权限时和sys_tags二选一。
 
-        :return: The target_language of this LanguageCheckInfoReq.
-        :rtype: str
+        :return: The tags of this TagsReq.
+        :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
-        return self._target_language
+        return self._tags
 
-    @target_language.setter
-    def target_language(self, target_language):
-        """Sets the target_language of this LanguageCheckInfoReq.
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this TagsReq.
 
-        目标语言
+        标签列表。租户权限时该字段必选，op_service权限时和sys_tags二选一。
 
-        :param target_language: The target_language of this LanguageCheckInfoReq.
-        :type target_language: str
+        :param tags: The tags of this TagsReq.
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
-        self._target_language = target_language
-
-    @property
-    def shoot_script(self):
-        """Gets the shoot_script of this LanguageCheckInfoReq.
-
-        用户传来的剧本文本信息
-
-        :return: The shoot_script of this LanguageCheckInfoReq.
-        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.LiveShootScriptItem`]
-        """
-        return self._shoot_script
-
-    @shoot_script.setter
-    def shoot_script(self, shoot_script):
-        """Sets the shoot_script of this LanguageCheckInfoReq.
-
-        用户传来的剧本文本信息
-
-        :param shoot_script: The shoot_script of this LanguageCheckInfoReq.
-        :type shoot_script: list[:class:`huaweicloudsdkmetastudio.v1.LiveShootScriptItem`]
-        """
-        self._shoot_script = shoot_script
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +105,7 @@ class LanguageCheckInfoReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, LanguageCheckInfoReq):
+        if not isinstance(other, TagsReq):
             return False
 
         return self.__dict__ == other.__dict__

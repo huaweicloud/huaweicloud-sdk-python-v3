@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CheckTextLanguageResponse(SdkResponse):
+class UpdateHotWordsSwitchResponse(SdkResponse):
 
     """
     Attributes:
@@ -18,51 +18,47 @@ class CheckTextLanguageResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'str'
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'result': 'result'
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, result=None):
-        """CheckTextLanguageResponse
+    def __init__(self, x_request_id=None):
+        """UpdateHotWordsSwitchResponse
 
         The model defined in huaweicloud sdk
 
-        :param result: 语言检测状态。 * MATCHED: 匹配 * UNMATCHED: 不匹配
-        :type result: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
-        super(CheckTextLanguageResponse, self).__init__()
+        super(UpdateHotWordsSwitchResponse, self).__init__()
 
-        self._result = None
+        self._x_request_id = None
         self.discriminator = None
 
-        if result is not None:
-            self.result = result
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
-    def result(self):
-        """Gets the result of this CheckTextLanguageResponse.
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateHotWordsSwitchResponse.
 
-        语言检测状态。 * MATCHED: 匹配 * UNMATCHED: 不匹配
-
-        :return: The result of this CheckTextLanguageResponse.
+        :return: The x_request_id of this UpdateHotWordsSwitchResponse.
         :rtype: str
         """
-        return self._result
+        return self._x_request_id
 
-    @result.setter
-    def result(self, result):
-        """Sets the result of this CheckTextLanguageResponse.
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateHotWordsSwitchResponse.
 
-        语言检测状态。 * MATCHED: 匹配 * UNMATCHED: 不匹配
-
-        :param result: The result of this CheckTextLanguageResponse.
-        :type result: str
+        :param x_request_id: The x_request_id of this UpdateHotWordsSwitchResponse.
+        :type x_request_id: str
         """
-        self._result = result
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -106,7 +102,7 @@ class CheckTextLanguageResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CheckTextLanguageResponse):
+        if not isinstance(other, UpdateHotWordsSwitchResponse):
             return False
 
         return self.__dict__ == other.__dict__
